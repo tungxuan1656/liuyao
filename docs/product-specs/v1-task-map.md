@@ -6,16 +6,16 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F01 — Domain contracts
 
-| Task    | Change                                                                            | Evidence            |
-| ------- | --------------------------------------------------------------------------------- | ------------------- |
-| F01-T01 | Define bottom-to-top six-line tuple and `LineValue` semantics                     | Type tests          |
-| F01-T02 | Define stable IDs for trigrams, hexagrams, palaces, and rulesets                       | Uniqueness tests    |
-| F01-T03 | Define `liuyao-standard-v1`                                                       | Public API test     |
-| F01-T04 | Define input and structured result types                                          | Type tests          |
-| F01-T05 | Define domain error types for invalid or unsupported input                        | Error tests         |
-| F01-T06 | Add runtime validation for exactly six values in `6..9`                           | Invalid-input tests |
-| F01-T07 | Define line position helpers without reversing domain order                       | Position tests      |
-| F01-T08 | Create reusable fixture helpers for later golden tests                            | Test review         |
+| Task    | Change                                                           | Evidence            |
+| ------- | ---------------------------------------------------------------- | ------------------- |
+| F01-T01 | Define bottom-to-top six-line tuple and `LineValue` semantics    | Type tests          |
+| F01-T02 | Define stable IDs for trigrams, hexagrams, palaces, and rulesets | Uniqueness tests    |
+| F01-T03 | Define `liuyao-standard-v1`                                      | Public API test     |
+| F01-T04 | Define input and structured result types                         | Type tests          |
+| F01-T05 | Define domain error types for invalid or unsupported input       | Error tests         |
+| F01-T06 | Add runtime validation for exactly six values in `6..9`          | Invalid-input tests |
+| F01-T07 | Define line position helpers without reversing domain order      | Position tests      |
+| F01-T08 | Create reusable fixture helpers for later golden tests           | Test review         |
 
 ## F02 — Hexagram calculation
 
@@ -66,20 +66,20 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F05 — Knowledge
 
-| Task    | Change                                                                    | Evidence            |
-| ------- | ------------------------------------------------------------------------- | ------------------- |
-| F05-T01 | Define knowledge entity, term, rule, source, and source-reference schemas | Schema tests        |
+| Task    | Change                                                                                 | Evidence            |
+| ------- | -------------------------------------------------------------------------------------- | ------------------- |
+| F05-T01 | Define knowledge entity, term, rule, source, and source-reference schemas              | Schema tests        |
 | F05-T02 | Define stable IDs for knowledge entities, terms, rules, sources, and source references | ID tests            |
-| F05-T03 | Add display metadata for all 8 trigrams                                   | Count check         |
-| F05-T04 | Add display metadata for all 64 hexagrams                                 | Count check         |
-| F05-T05 | Add V1 terminology required by result screens                             | Required-term audit |
-| F05-T06 | Add V1 rule explanations for displayed deterministic facts                | Required-rule audit |
-| F05-T07 | Add bibliographic source metadata                                         | Source audit        |
-| F05-T08 | Add source locations when chapter, section, or page is known              | Content review      |
-| F05-T09 | Remove or rewrite unlicensed modern text                                  | Licensing review    |
-| F05-T10 | Validate duplicate IDs and broken references                              | Package tests       |
-| F05-T11 | Expose read-only lookup APIs                                              | Package tests       |
-| F05-T12 | Expose local normalized search APIs                                       | Search tests        |
+| F05-T03 | Add display metadata for all 8 trigrams                                                | Count check         |
+| F05-T04 | Add display metadata for all 64 hexagrams                                              | Count check         |
+| F05-T05 | Add V1 terminology required by result screens                                          | Required-term audit |
+| F05-T06 | Add V1 rule explanations for displayed deterministic facts                             | Required-rule audit |
+| F05-T07 | Add bibliographic source metadata                                                      | Source audit        |
+| F05-T08 | Add source locations when chapter, section, or page is known                           | Content review      |
+| F05-T09 | Remove or rewrite unlicensed modern text                                               | Licensing review    |
+| F05-T10 | Validate duplicate IDs and broken references                                           | Package tests       |
+| F05-T11 | Expose read-only lookup APIs                                                           | Package tests       |
+| F05-T12 | Expose local normalized search APIs                                                    | Search tests        |
 
 ## F06 — Reading flow
 
@@ -167,20 +167,20 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F11 — Quality hardening
 
-| Task    | Change                                                               | Evidence            |
-| ------- | -------------------------------------------------------------------- | ------------------- |
-| F11-T01 | Add complete golden fixtures for supported deterministic rules       | `pnpm test`         |
-| F11-T02 | Add regression fixtures for every corrected domain bug               | Test review         |
-| F11-T03 | Audit keyboard navigation                                            | Accessibility check |
-| F11-T04 | Audit visible labels and accessible names                            | Accessibility check |
-| F11-T05 | Audit focus order and focus visibility                               | Accessibility check |
-| F11-T06 | Audit color contrast                                                 | Accessibility check |
-| F11-T07 | Verify layout at narrow mobile, tablet, and desktop widths           | Responsive matrix   |
+| Task    | Change                                                                                        | Evidence            |
+| ------- | --------------------------------------------------------------------------------------------- | ------------------- |
+| F11-T01 | Add complete golden fixtures for supported deterministic rules                                | `pnpm test`         |
+| F11-T02 | Add regression fixtures for every corrected domain bug                                        | Test review         |
+| F11-T03 | Audit keyboard navigation                                                                     | Accessibility check |
+| F11-T04 | Audit visible labels and accessible names                                                     | Accessibility check |
+| F11-T05 | Audit focus order and focus visibility                                                        | Accessibility check |
+| F11-T06 | Audit color contrast                                                                          | Accessibility check |
+| F11-T07 | Verify layout at narrow mobile, tablet, and desktop widths                                    | Responsive matrix   |
 | F11-T08 | Verify long labels in the approved primary language and long source names do not break layout | Content matrix      |
-| F11-T09 | Verify empty, invalid, offline, update, and calculation-error states | State matrix        |
-| F11-T10 | Verify no blocking console errors in release flows                   | Browser check       |
-| F11-T11 | Run supported-browser release matrix                                 | Manual matrix       |
-| F11-T12 | Run `./init.sh` and read-only merge checks                           | Verification log    |
+| F11-T09 | Verify empty, invalid, offline, update, and calculation-error states                          | State matrix        |
+| F11-T10 | Verify no blocking console errors in release flows                                            | Browser check       |
+| F11-T11 | Run supported-browser release matrix                                                          | Manual matrix       |
+| F11-T12 | Run `./init.sh` and read-only merge checks                                                    | Verification log    |
 
 ## F12 — Product identity
 
@@ -205,24 +205,24 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F13 — Production delivery
 
-| Task    | Change                                                                           | Evidence               |
-| ------- | -------------------------------------------------------------------------------- | ---------------------- |
-| F13-T01 | Define production hosting requirements from `docs/release.md`                    | Decision record        |
-| F13-T02 | Select a static hosting provider                                                 | Product Owner approval |
-| F13-T03 | Select and register the production domain                                        | Domain record          |
-| F13-T04 | Configure DNS and HTTPS                                                          | Production check       |
-| F13-T05 | Configure SPA route fallback                                                     | Direct-route check     |
-| F13-T06 | Configure safe cache behavior for HTML, service worker, and fingerprinted assets | Header audit           |
-| F13-T07 | Define build command, output directory, and Node/pnpm versions                   | Deploy config review   |
-| F13-T08 | Add preview deployment for release review                                        | Preview URL check      |
-| F13-T09 | Add production deployment from the approved main revision                        | Workflow check         |
-| F13-T10 | Prevent production deployment when required CI fails                             | Workflow check         |
-| F13-T11 | Stamp app version and build revision into production diagnostics                 | Settings check         |
-| F13-T12 | Verify manifest URLs and base paths on the production domain                     | PWA check              |
-| F13-T13 | Add production security headers supported by the host                            | Header audit           |
-| F13-T14 | Document the rollback command or provider action                                 | Runbook review         |
+| Task    | Change                                                                            | Evidence               |
+| ------- | --------------------------------------------------------------------------------- | ---------------------- |
+| F13-T01 | Define production hosting requirements from `docs/release.md`                     | Decision record        |
+| F13-T02 | Select a static hosting provider                                                  | Product Owner approval |
+| F13-T03 | Select and register the production domain                                         | Domain record          |
+| F13-T04 | Configure DNS and HTTPS                                                           | Production check       |
+| F13-T05 | Configure SPA route fallback                                                      | Direct-route check     |
+| F13-T06 | Configure safe cache behavior for HTML, service worker, and fingerprinted assets  | Header audit           |
+| F13-T07 | Define build command, output directory, and Node/pnpm versions                    | Deploy config review   |
+| F13-T08 | Add preview deployment for release review                                         | Preview URL check      |
+| F13-T09 | Add production deployment from the approved main revision                         | Workflow check         |
+| F13-T10 | Prevent production deployment when required CI fails                              | Workflow check         |
+| F13-T11 | Stamp app version and build revision into production diagnostics                  | Settings check         |
+| F13-T12 | Verify manifest URLs and base paths on the production domain                      | PWA check              |
+| F13-T13 | Add production security headers supported by the host                             | Header audit           |
+| F13-T14 | Document the rollback command or provider action                                  | Runbook review         |
 | F13-T15 | Exercise the hosting rollback mechanism in Preview before first production launch | Rollback log           |
-| F13-T16 | Run the production smoke test after deployment                                   | Smoke-test log         |
+| F13-T16 | Run the production smoke test after deployment                                    | Smoke-test log         |
 
 ## F14 — Product polish and trust
 
@@ -247,23 +247,23 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F15 — Launch
 
-| Task    | Change                                                            | Evidence              |
-| ------- | ----------------------------------------------------------------- | --------------------- |
-| F15-T01 | Freeze the release candidate revision                             | Commit reference      |
-| F15-T02 | Set the V1 semantic version                                       | Version audit         |
-| F15-T03 | Write concise release notes                                       | Release record        |
-| F15-T04 | Run all repository verification commands                          | Verification log      |
-| F15-T05 | Run the full desktop and mobile user-flow matrix                  | QA record             |
-| F15-T06 | Run install, offline, update, and recovery scenarios              | PWA QA record         |
-| F15-T07 | Verify production name, logo, icons, metadata, and social preview | Identity audit        |
-| F15-T08 | Verify privacy, licensing, disclaimer, and security links         | Trust audit           |
-| F15-T09 | Deploy the release candidate to production                        | Deploy record         |
-| F15-T10 | Run the production smoke test                                     | Smoke-test log        |
+| Task    | Change                                                                     | Evidence              |
+| ------- | -------------------------------------------------------------------------- | --------------------- |
+| F15-T01 | Freeze the release candidate revision                                      | Commit reference      |
+| F15-T02 | Set the V1 semantic version                                                | Version audit         |
+| F15-T03 | Write concise release notes                                                | Release record        |
+| F15-T04 | Run all repository verification commands                                   | Verification log      |
+| F15-T05 | Run the full desktop and mobile user-flow matrix                           | QA record             |
+| F15-T06 | Run install, offline, update, and recovery scenarios                       | PWA QA record         |
+| F15-T07 | Verify production name, logo, icons, metadata, and social preview          | Identity audit        |
+| F15-T08 | Verify privacy, licensing, disclaimer, and security links                  | Trust audit           |
+| F15-T09 | Deploy the release candidate to production                                 | Deploy record         |
+| F15-T10 | Run the production smoke test                                              | Smoke-test log        |
 | F15-T11 | Confirm rollback procedure and any previous production target are recorded | Runbook check         |
-| F15-T12 | Create the Git tag or GitHub release for V1                       | Release URL           |
-| F15-T13 | Update README status from early development to released V1        | README review         |
-| F15-T14 | Record known limitations without hiding them                      | Release notes         |
-| F15-T15 | Verify the public product from a clean browser profile            | Fresh-user check      |
-| F15-T16 | Verify the installed PWA from a clean supported device or browser | Install check         |
-| F15-T17 | Check production again after service-worker activation            | Post-activation smoke |
-| F15-T18 | Open follow-up issues for non-blocking post-V1 defects            | Issue links           |
+| F15-T12 | Create the Git tag or GitHub release for V1                                | Release URL           |
+| F15-T13 | Update README status from early development to released V1                 | README review         |
+| F15-T14 | Record known limitations without hiding them                               | Release notes         |
+| F15-T15 | Verify the public product from a clean browser profile                     | Fresh-user check      |
+| F15-T16 | Verify the installed PWA from a clean supported device or browser          | Install check         |
+| F15-T17 | Check production again after service-worker activation                     | Post-activation smoke |
+| F15-T18 | Open follow-up issues for non-blocking post-V1 defects                     | Issue links           |
