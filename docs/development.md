@@ -75,4 +75,4 @@ pnpm test
 pnpm build
 ```
 
-CI runs these read-only checks on pull requests and pushes to `main`.
+CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires a clean Git diff. This verifies the harness orchestration and prevents fixers from hiding repository drift.
