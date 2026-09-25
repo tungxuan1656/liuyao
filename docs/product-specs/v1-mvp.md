@@ -1,6 +1,6 @@
 # V1 MVP
 
-This document owns the V1 feature set, dependency order, and release acceptance. It does not track execution status.
+This document owns the V1 feature set, dependency order, and launch acceptance. It does not track execution status.
 
 ## Product outcome
 
@@ -30,7 +30,7 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 
 `F01-F10` → `F11 Quality hardening`
 `F10` + `F12` → `F13 Production delivery`
-`F06-F10` + `F12` → `F14 Product polish and trust`
+`F06-F10` + `F12` + `F13` → `F14 Product polish and trust`
 `F11` + `F13` + `F14` → `F15 Launch`
 
 ## Feature catalog
@@ -50,7 +50,7 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 | F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass             |
 | F12 | Product identity         | —                  | Final name, language, logo, icons, manifest, metadata, and asset rights are approved            |
 | F13 | Production delivery      | F10, F12           | A production domain deploys through a repeatable flow with HTTPS and rollback                   |
-| F14 | Product polish and trust | F06-F10, F12       | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready |
+| F14 | Product polish and trust | F06-F10, F12, F13  | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready |
 | F15 | Launch                   | F11, F13, F14      | Release candidate is versioned, deployed, smoke-tested, documented, and usable immediately      |
 
 ## Fixed V1 rules
@@ -66,9 +66,9 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 - Do not require an account, backend, analytics SDK, or AI service.
 - Treat product name, logo, domain, and deployment as release work, not optional polish.
 
-## Release acceptance
+## Pre-deploy release-candidate gate
 
-V1 is releasable when all conditions are true:
+A revision can deploy to production only when all pre-deploy checks pass:
 
 - [ ] All 8 trigram fixtures pass.
 - [ ] All 64 primary hexagram fixtures pass.
@@ -81,15 +81,24 @@ V1 is releasable when all conditions are true:
 - [ ] Every curated knowledge entry follows `LICENSING.md`.
 - [ ] Final product name, primary language, logo, icon set, and metadata are approved.
 - [ ] Browser title, manifest, install UI, app header, and social preview use the approved identity.
-- [ ] The production domain serves HTTPS with correct direct-route behavior.
-- [ ] The installed PWA completes core flows while offline.
 - [ ] App updates do not silently destroy an active reading draft.
 - [ ] Privacy, licensing, security, and product disclaimer surfaces are reviewed.
-- [ ] Desktop and mobile release matrices pass on supported browsers.
-- [ ] The production smoke test passes after deploy.
-- [ ] A rollback path has been exercised before launch.
+- [ ] Desktop and mobile release matrices pass on the supported-browser contract in `docs/release.md`.
+- [ ] A rollback drill passes in preview before the first production launch.
 - [ ] No account, backend, analytics SDK, or AI dependency exists.
 - [ ] `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build` pass.
+
+## Post-deploy launch gate
+
+V1 is launched only when all production checks pass:
+
+- [ ] The production domain serves HTTPS with correct direct-route behavior.
+- [ ] The production smoke test passes.
+- [ ] Core reading and knowledge flows work offline after one successful production load.
+- [ ] Production manifest, icons, metadata, and canonical URLs are correct.
+- [ ] No blocking console or network errors appear in production smoke flows.
+- [ ] The deployed production revision and rollback procedure are recorded.
+- [ ] The release record, semantic version, and known limitations are published.
 
 ## Canonical detail
 
