@@ -18,6 +18,18 @@ If a table is required to calculate a result, place it in `@liuyao/core`.
 | Source           | Bibliographic metadata                                           |
 | Source reference | Link from an entry or rule to a source location                  |
 
+## ID ownership
+
+`@liuyao/knowledge` owns stable IDs for:
+
+- knowledge entities;
+- terms;
+- rules;
+- sources;
+- source references.
+
+Knowledge records can reference core-owned trigram, hexagram, palace, or ruleset IDs. `@liuyao/core` does not import or define knowledge-owned IDs.
+
 ## Required fields
 
 Every knowledge entity needs:
