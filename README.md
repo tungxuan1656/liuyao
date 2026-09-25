@@ -1,117 +1,88 @@
 # LiuYao
 
-LiuYao is a software platform for **Lục Hào / Liu Yao divination**, based on the classical I Ching (Kinh Dịch).
+[![CI](https://github.com/tungxuan1656/liuyao/actions/workflows/ci.yml/badge.svg)](https://github.com/tungxuan1656/liuyao/actions/workflows/ci.yml)
 
----
+LiuYao is an offline-first web application for **Lục Hào (Liu Yao / Six Lines)** divination and structured I Ching reference knowledge.
 
-## Architecture Principles
+> **Status:** early development. The repository currently provides the monorepo foundation, PWA shell, minimal deterministic line logic, and knowledge-package scaffolding. It is not yet a complete divination application.
 
-> **Core Rule**: The Liu Yao calculation engine must be completely independent from React, browser APIs, persistence, backend APIs, and UI frameworks.
+## V1 direction
 
-The web application is only the first consumer of the Liu Yao domain engine. The architecture is intentionally designed as a monorepo from day one to support future consumers (React Native/Expo mobile app, backend APIs, CLI tools, and validation tools) while keeping dependencies minimal and avoiding premature abstractions.
+The first usable version is focused on:
+
+- casting or entering a six-line reading;
+- calculating and identifying deterministic hexagram data;
+- displaying reading facts and rules;
+- browsing structured Liu Yao knowledge;
+- working offline through the PWA shell;
+- settings required by those flows.
+
+Automated interpretation, accounts, cloud sync, and AI are outside the V1 core scope.
+
+## Architecture
 
 ```text
-                  @liuyao/core (Pure domain calculation)
-                    ▲   ▲   ▲
-                    │   │   │
-                   web  api mobile (Future consumers)
+apps/web
+  ├──> @liuyao/core       deterministic domain calculations
+  └──> @liuyao/knowledge  structured reference knowledge
 ```
 
----
+The web app is a consumer of reusable packages. Domain calculations do not depend on React, the DOM, persistence, or network access.
 
-## Workspace Structure
+See [ARCHITECTURE.md](ARCHITECTURE.md) for boundaries and dependency direction.
+
+## Repository
 
 ```text
-liuyao/
-├── apps/
-│   └── web/                 # @liuyao/web: React 19 + Vite + PWA (Offline shell)
-│       ├── src/
-│       ├── public/
-│       ├── index.html
-│       ├── package.json
-│       ├── tsconfig.json
-│       └── vite.config.ts
-│
-├── packages/
-│   ├── liuyao-core/         # @liuyao/core: Pure TypeScript calculation engine
-│   │   ├── src/
-│   │   ├── tests/
-│   │   ├── package.json
-│   │   └── tsconfig.json
-│   │
-│   └── knowledge/           # @liuyao/knowledge: Structured data & reference models
-│       ├── data/
-│       ├── src/
-│       ├── tests/
-│       ├── package.json
-│       └── tsconfig.json
-│
-├── package.json
-├── pnpm-workspace.yaml
-├── pnpm-lock.yaml
-├── tsconfig.base.json
-├── eslint.config.js
-├── .prettierrc
-├── .gitignore
-├── .editorconfig
-├── .node-version
-└── README.md
+apps/
+└── web/                  React + Vite + PWA
+
+packages/
+├── liuyao-core/          pure TypeScript domain engine
+└── knowledge/            structured knowledge package
+
+docs/
+├── design-docs/          durable engineering principles
+├── product-specs/        durable product scope
+└── development.md        local workflow and verification
 ```
 
-### Applications
+Agent-facing navigation starts at [AGENTS.md](AGENTS.md).
 
-- **`@liuyao/web`** (`apps/web`): React 19 single-page web app configured as an installable Progressive Web App (PWA) with offline shell caching via `vite-plugin-pwa`.
+## Getting started
 
-### Shared Packages
+Requirements:
 
-- **`@liuyao/core`** (`packages/liuyao-core`): Deterministic domain logic for Liu Yao hexagrams, lines, and divination calculations. Zero dependencies on React, Vite, or the DOM.
-- **`@liuyao/knowledge`** (`packages/knowledge`): Structured reference data, terminology, classical sources, and dataset models for I Ching & Liu Yao.
-
-### Future Architecture
-
-The monorepo structure is prepared to evolve naturally to accommodate:
-
-- `apps/api` (Backend API)
-- `apps/mobile` (React Native / Expo mobile app)
-- `apps/admin` (Knowledge management application)
-- `packages/contracts` (Shared API contracts and schemas)
-
-_Note: These packages do not exist yet to prevent premature abstraction and unnecessary overhead._
-
----
-
-## Development & Commands
-
-### Prerequisites
-
-- **Node.js**: `22.x` (LTS)
-- **pnpm**: `^12.0.0`
-
-### Setup
+- Node.js 22
+- pnpm 12.5.1
 
 ```bash
-# Install dependencies across all workspaces
 pnpm install
+pnpm dev
 ```
 
-### Available Commands
+## Verification
 
-| Command             | Description                                                                                     |
-| ------------------- | ----------------------------------------------------------------------------------------------- |
-| `pnpm dev`          | Starts the web PWA development server on Vite                                                   |
-| `pnpm build`        | Compiles workspace packages (`@liuyao/core`, `@liuyao/knowledge`) and builds the web PWA bundle |
-| `pnpm test`         | Runs the Vitest test suite across the monorepo                                                  |
-| `pnpm typecheck`    | Typechecks all packages and apps with TypeScript strict mode                                    |
-| `pnpm lint`         | Lints the repository using flat ESLint                                                          |
-| `pnpm format`       | Formats all files with Prettier                                                                 |
-| `pnpm format:check` | Verifies formatting with Prettier                                                               |
+| Command | Purpose |
+| --- | --- |
+| `pnpm format:check` | Check formatting |
+| `pnpm lint` | Run ESLint |
+| `pnpm typecheck` | Type-check all workspaces |
+| `pnpm test` | Run package tests |
+| `pnpm build` | Build packages and the web app |
 
----
+Tests live in `packages/*/tests`. Applications under `apps/` do not own test suites.
 
-## Git Workflow & Quality Gates
+See [docs/development.md](docs/development.md) for the full development contract.
 
-This repository uses:
+## Contributing
 
-- **Husky**: Git hooks management.
-- **Commitlint**: Enforces Conventional Commits (`type(scope): description`).
-- **Lint-staged**: Runs ESLint and Prettier on staged files before commit.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+
+## Security
+
+Report security issues according to [SECURITY.md](SECURITY.md).
+
+## License
+
+Licensed under the [MIT License](LICENSE).
