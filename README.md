@@ -63,13 +63,13 @@ pnpm dev
 
 ## Verification
 
-| Command | Purpose |
-| --- | --- |
-| `pnpm format:check` | Check formatting |
-| `pnpm lint` | Run ESLint |
-| `pnpm typecheck` | Type-check all workspaces |
-| `pnpm test` | Run package tests |
-| `pnpm build` | Build packages and the web app |
+| Command             | Purpose                        |
+| ------------------- | ------------------------------ |
+| `pnpm format:check` | Check formatting               |
+| `pnpm lint`         | Run ESLint                     |
+| `pnpm typecheck`    | Type-check all workspaces      |
+| `pnpm test`         | Run package tests              |
+| `pnpm build`        | Build packages and the web app |
 
 Tests live in `packages/*/tests`. Applications under `apps/` do not own test suites.
 
