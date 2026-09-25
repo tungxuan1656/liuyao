@@ -36,17 +36,8 @@ jobs:
           test -x init.sh
           bash -n init.sh
 
-      - name: Check formatting
-        run: pnpm format:check
+      - name: Run agent harness
+        run: ./init.sh
 
-      - name: Lint
-        run: pnpm lint
-
-      - name: Type-check
-        run: pnpm typecheck
-
-      - name: Test packages
-        run: pnpm test
-
-      - name: Build
-        run: pnpm build
+      - name: Require clean working tree
+        run: git diff --exit-code
