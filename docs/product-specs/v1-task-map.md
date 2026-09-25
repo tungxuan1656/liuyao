@@ -222,7 +222,9 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F13-T13 | Add production security headers supported by the host                             | Header audit           |
 | F13-T14 | Document the rollback command or provider action                                  | Runbook review         |
 | F13-T15 | Exercise the hosting rollback mechanism in Preview before first production launch | Rollback log           |
-| F13-T16 | Run the production smoke test after deployment                                    | Smoke-test log         |
+| F13-T16 | Define the production smoke-test procedure used by launch                          | Runbook review         |
+| F13-T17 | Add canonical production URL metadata after domain selection                        | Production audit       |
+| F13-T18 | Review host logging and confirm app code does not log question text                  | Privacy audit          |
 
 ## F14 — Product polish and trust
 
@@ -238,12 +240,10 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F14-T08 | Link the security reporting path                                        | Link audit             |
 | F14-T09 | Add canonical page title and description metadata                       | Metadata audit         |
 | F14-T10 | Add Open Graph or equivalent social preview metadata                    | Social preview         |
-| F14-T11 | Add canonical production URL metadata after domain selection            | Production audit       |
-| F14-T12 | Add robots and sitemap behavior appropriate to the chosen public pages  | Crawl check            |
-| F14-T13 | Review host logging and confirm app code does not log question text     | Privacy audit          |
-| F14-T14 | Audit third-party packages and assets for license compatibility         | Dependency audit       |
-| F14-T15 | Check production bundle for accidental secrets or development endpoints | Build audit            |
-| F14-T16 | Verify all public links and source references are valid                 | Link audit             |
+| F14-T11 | Add robots and sitemap behavior appropriate to the chosen public pages  | Crawl check      |
+| F14-T12 | Audit third-party packages and assets for license compatibility         | Dependency audit |
+| F14-T13 | Check production bundle for accidental secrets or development endpoints | Build audit      |
+| F14-T14 | Verify all public links and source references are valid                 | Link audit       |
 
 ## F15 — Launch
 
