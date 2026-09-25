@@ -8,10 +8,12 @@ This document owns durable product boundaries. Detailed V1 behavior lives in the
 - `@liuyao/core` defines line values and detects changing lines.
 - `@liuyao/knowledge` exposes package metadata and a data directory.
 - Package Vitest suites verify the current core and knowledge APIs.
+- The repository has CI but no production deployment workflow.
+- Current public name, manifest metadata, and favicon are provisional until product identity is approved.
 
 ## Intended V1
 
-V1 is an offline-first web tool for deterministic Liu Yao reading construction and reference lookup.
+V1 is an offline-first web product for deterministic Liu Yao reading construction and reference lookup.
 
 It includes:
 
@@ -21,9 +23,13 @@ It includes:
 - a result board that separates facts from explanation;
 - a local Liu Yao knowledge browser;
 - settings and diagnostics required by the V1 flows;
-- PWA operation without a required network after the first successful load.
+- PWA operation without a required network after the first successful load;
+- approved product name, logo, icons, interface copy, and public metadata;
+- a production domain with HTTPS and a repeatable deployment path;
+- privacy, licensing, security, and product-use information required for a public release;
+- launch verification and rollback readiness.
 
-See `docs/product-specs/v1-mvp.md` for the canonical V1 feature set and acceptance criteria.
+See `docs/product-specs/v1-mvp.md` for the canonical V1 feature set and release acceptance.
 
 ## V1 non-goals
 
@@ -35,6 +41,7 @@ See `docs/product-specs/v1-mvp.md` for the canonical V1 feature set and acceptan
 - Month Command, Day Spirit, Empty Branches, solar-term boundaries, or other calendar-based analysis.
 - Six Spirits, because V1 does not yet define a calendar convention.
 - Multiple selectable rulesets.
+- Product analytics or behavioral tracking.
 
 ## Later phases
 
