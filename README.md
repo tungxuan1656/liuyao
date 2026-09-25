@@ -85,4 +85,6 @@ Report security issues according to [SECURITY.md](SECURITY.md).
 
 ## License
 
-Licensed under the [MIT License](LICENSE).
+Software and repository documentation are licensed under **AGPL-3.0-only**. Original curated knowledge and content under `packages/knowledge/data/` are **All Rights Reserved** unless a file states otherwise.
+
+See [LICENSING.md](LICENSING.md) for the complete licensing boundary and [LICENSE](LICENSE) for the AGPL-3.0 text.
