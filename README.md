@@ -53,7 +53,7 @@ Agent-facing navigation starts at [AGENTS.md](AGENTS.md).
 
 Requirements:
 
-- Node.js 22
+- Node.js 24 LTS
 - pnpm 12.5.1
 
 ```bash
