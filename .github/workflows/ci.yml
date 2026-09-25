@@ -40,4 +40,4 @@ jobs:
         run: ./init.sh
 
       - name: Require clean working tree
-        run: git diff --exit-code
+        run: test -z "$(git status --porcelain)"
