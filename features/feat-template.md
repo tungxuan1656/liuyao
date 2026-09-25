@@ -1,4 +1,4 @@
-# feat-<id> — <title>
+# <id> — <title>
 
 ## Goal
 
@@ -22,7 +22,7 @@
 
 ## Plan
 
-Keep bounded work here. Link `docs/plans/feat-<id>.md` only when the task meets the substantial-work rule in `AGENTS.md`.
+Keep bounded work here. Link `docs/plans/<id>.md` only when the task meets the substantial-work rule in `AGENTS.md`.
 
 1. <Step.>
 2. <Step.>
