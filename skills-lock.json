@@ -43,12 +43,6 @@
       "skillPath": "skills/executing-plans/SKILL.md",
       "computedHash": "bf9b6758123e5a107054401fb600347593e669d2bed3f98df4d7c0300860f084"
     },
-    "expo-data-fetching": {
-      "source": "expo/skills",
-      "sourceType": "github",
-      "skillPath": "plugins/expo/skills/expo-data-fetching/SKILL.md",
-      "computedHash": "422197195d96fd32036f92001cebd1590caf6445ba338aabc0c0b0cff5fa8977"
-    },
     "find-skills": {
       "source": "tungxuan1656/harness-slim",
       "sourceType": "github",
@@ -59,7 +53,7 @@
       "source": "anthropics/skills",
       "sourceType": "github",
       "skillPath": "skills/frontend-design/SKILL.md",
-      "computedHash": "4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336"
+      "computedHash": "89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576"
     },
     "git-commit": {
       "source": "tungxuan1656/harness-slim",
@@ -101,7 +95,7 @@
       "source": "shadcn-ui/ui",
       "sourceType": "github",
       "skillPath": "skills/shadcn/SKILL.md",
-      "computedHash": "c1a68ee06a668aced9ab2b5fbdea5f989864123794eb2e056b339a072dbb7f10"
+      "computedHash": "f615de216e085a84e31593ad0fa9062232adc40cd87b7c7ab2b8e49abf6500be"
     },
     "simple-english": {
       "source": "tungxuan1656/harness-slim",
@@ -121,12 +115,6 @@
       "skillPath": "skills/systematic-debugging/SKILL.md",
       "computedHash": "1d68a2033dd44e9089b83d2326400634d2df02aa9e913c742c77252dfed4efed"
     },
-    "telegram-bot": {
-      "source": "claude-office-skills/skills",
-      "sourceType": "github",
-      "skillPath": "telegram-bot/SKILL.md",
-      "computedHash": "8c9554098e2f9c4baa53980e09f3bd7374034c1948e73341b691a33ebb473db9"
-    },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
@@ -137,7 +125,7 @@
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/react-view-transitions/SKILL.md",
-      "computedHash": "b1be40dfc6e714612020c7583b574cc4c92a1b5bc185a7dd3eea5c0123653d1c"
+      "computedHash": "2033ef20681c90d4f93deee719e55e019c254e496d9bf80381c27cc539292001"
     },
     "verification-before-completion": {
       "source": "tungxuan1656/harness-slim",
