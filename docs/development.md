@@ -22,15 +22,18 @@ pnpm dev
 Tests belong only to packages.
 
 ```text
-packages/*/tests   allowed
-apps/*/tests       not allowed
-apps/**/*.test.*   not allowed
-apps/**/*.spec.*   not allowed
+packages/*/tests        allowed
+apps/**/tests/**         not allowed
+apps/**/__tests__/**     not allowed
+apps/**/*.test.*         not allowed
+apps/**/*.spec.*         not allowed
 ```
 
 Use package tests for reusable domain behavior and data contracts. Validate applications through type-checking, builds, linting, and direct UI/PWA verification.
 
 If application code contains reusable Liu Yao logic that needs unit tests, move the logic into the owning package first.
+
+`pnpm test` enforces this placement policy before invoking each workspace package test script recursively.
 
 ## Commands
 
@@ -38,7 +41,7 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | --------------------------------- | ----------------------------------- |
 | `pnpm dev`                        | Web development server              |
 | `pnpm build`                      | All workspace builds                |
-| `pnpm test`                       | Vitest package suites               |
+| `pnpm test`                       | Enforce placement + package tests   |
 | `pnpm typecheck`                  | All workspace type checks           |
 | `pnpm lint`                       | Repository ESLint                   |
 | `pnpm format`                     | Write Prettier formatting           |
@@ -75,4 +78,4 @@ pnpm test
 pnpm build
 ```
 
-CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires a clean Git diff. This verifies the harness orchestration and prevents fixers from hiding repository drift.
+CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the harness orchestration and prevents fixers from hiding tracked or untracked repository drift.
