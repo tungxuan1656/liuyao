@@ -14,7 +14,8 @@ The Product Owner must approve these decisions before production launch:
 - one-sentence product description;
 - tagline, if used;
 - logo mark and wordmark direction;
-- theme and background colors.
+- theme and background colors;
+- approved typography: Cinzel for headings and Noto Sans for body and data (see `docs/product-specs/ui-layout.md`).
 
 Do not treat a repository or package name as the public product name by default.
 

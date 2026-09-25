@@ -4,16 +4,17 @@ This file routes repository documentation. Each durable fact has one canonical o
 
 ## Product
 
-| Read when                                        | Source                                    | Owns                                             |
-| ------------------------------------------------ | ----------------------------------------- | ------------------------------------------------ |
-| You need product boundaries                      | `docs/product-specs/product-scope.md`     | Current capability, V1 scope, non-goals          |
-| You plan V1 work                                 | `docs/product-specs/v1-mvp.md`            | V1 feature set, dependencies, release acceptance |
-| You implement V1 tasks                           | `docs/product-specs/v1-task-map.md`       | End-to-end task decomposition                    |
-| You decide name, logo, icons, or public metadata | `docs/product-specs/product-identity.md`  | Product identity and release assets              |
-| You change reading creation                      | `docs/product-specs/reading-flow.md`      | Casting and direct-entry user flow               |
-| You change result UI                             | `docs/product-specs/reading-result.md`    | Result content and fact presentation             |
-| You change reference browsing                    | `docs/product-specs/knowledge-browser.md` | Library and rule-explanation behavior            |
-| You change settings                              | `docs/product-specs/settings.md`          | V1 settings and diagnostics                      |
+| Read when                                          | Source                                    | Owns                                             |
+| -------------------------------------------------- | ----------------------------------------- | ------------------------------------------------ |
+| You need product boundaries                        | `docs/product-specs/product-scope.md`     | Current capability, V1 scope, non-goals          |
+| You plan V1 work                                   | `docs/product-specs/v1-mvp.md`            | V1 feature set, dependencies, release acceptance |
+| You implement V1 tasks                             | `docs/product-specs/v1-task-map.md`       | End-to-end task decomposition                    |
+| You decide name, logo, icons, or public metadata   | `docs/product-specs/product-identity.md`  | Product identity and release assets              |
+| You change reading creation                        | `docs/product-specs/reading-flow.md`      | Casting and direct-entry user flow               |
+| You change result UI                               | `docs/product-specs/reading-result.md`    | Result content and fact presentation             |
+| You change reference browsing                      | `docs/product-specs/knowledge-browser.md` | Library and rule-explanation behavior            |
+| You change settings                                | `docs/product-specs/settings.md`          | V1 settings and diagnostics                      |
+| You change UI layout, navigation, or design tokens | `docs/product-specs/ui-layout.md`         | Web UI layout, navigation, and component tokens  |
 
 ## Engineering and release
 
