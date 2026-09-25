@@ -60,7 +60,8 @@ Packages currently have no runtime dependency on each other. Add a package edge 
 | UI, PWA, routing, or product composition | `apps/web` |
 | Product scope or durable behavior | `docs/product-specs/` |
 | Engineering principle | `docs/design-docs/` |
-| Repository verification contract | `docs/development.md` and `init.sh` |
+| Verification policy and commands | `docs/development.md` |
+| Executable agent verification workflow | `init.sh` |
 | Temporary feature execution state | `features/`, `feature_index.json`, `progress.md` |
 
 Do not move durable facts into feature or progress records.
@@ -77,10 +78,7 @@ The current core implementation only detects and counts changing lines. Broader 
 
 ## Verification ownership
 
-- Package behavior is verified by tests under `packages/*/tests`.
-- Applications under `apps/*` do not own test suites.
-- Repository-wide commands are defined in `docs/development.md`.
-- Agent verification is orchestrated by `init.sh`.
+`docs/development.md` owns the verification and test-placement contract. `init.sh` implements the agent-facing full workflow from that contract.
 
 ## Related docs
 
