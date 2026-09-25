@@ -49,7 +49,7 @@ Execution plan: `docs/plans/feat-001.md`.
 - Evidence: `./init.sh` and `pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build` passed on 2026-09-25. ESLint reported one non-blocking shadcn Button fast-refresh export warning.
 - F00-T01/T02: web build resolves `@/lib/utils`; `components.json` records `new-york` and CSS variables; Button primitive and semantic tokens audited.
 - F00-T03: browser navigation `/` → `/library`, direct `/library/hexagram/42` reload, and focused `/casting` checked; library detail keeps root nav, casting hides it.
-- F00-T04: browser loaded all five font faces via local 200 responses; built CSS references local `/fonts/` assets only. `apps/web/public/fonts/README.md` records a 537,700-byte payload, pinned sources, CJK subsets, and OFL notices. F10 owns install-time precaching.
-- F00-T05: browser checked 390px mobile bottom nav (64px), 1024px desktop top nav (56px), content offsets, selected Library tab, and no horizontal overflow. Safe-area CSS uses `env(safe-area-inset-bottom)`; device-specific inset remains for F06 integration.
+- F00-T04: browser loaded all five font faces via local 200 responses, including 六 from the nine-glyph CJK subset; built CSS references local `/fonts/` assets only. `apps/web/public/fonts/README.md` records a 538,052-byte payload, pinned sources, CJK subsets, and per-family OFL notices. F10 owns install-time precaching.
+- F00-T05: browser checked 390px mobile bottom nav (64px), 1024px desktop top nav (56px), content offsets, selected Library tab, desktop Online badge, Back to Library link, and no horizontal overflow. All Button sizes provide at least 44px targets; border and focus tokens meet the 3:1 non-text contrast requirement. Safe-area CSS uses `env(safe-area-inset-bottom)`; device-specific inset remains for F06 integration.
 - Dependency check: none.
 - Next: Open the verified PR and address review findings before merge.

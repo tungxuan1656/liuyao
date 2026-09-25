@@ -6,7 +6,7 @@ import { ROUTES } from './route-paths';
 
 export { ROUTES } from './route-paths';
 
-function RouteShell({ title }: { title: string }) {
+function RouteShell({ title, libraryDetail = false }: { title: string; libraryDetail?: boolean }) {
   return createElement(
     'main',
     { className: 'mx-auto max-w-3xl space-y-4 p-6' },
@@ -16,17 +16,26 @@ function RouteShell({ title }: { title: string }) {
       { className: 'text-muted-foreground' },
       'This destination is not implemented yet.',
     ),
-    createElement(
-      Link,
-      { className: 'underline underline-offset-4', to: ROUTES.home },
-      'Return to home',
-    ),
+    libraryDetail
+      ? createElement(
+          Link,
+          { className: 'underline underline-offset-4', to: ROUTES.library },
+          '← Back to Library',
+        )
+      : createElement(
+          Link,
+          { className: 'underline underline-offset-4', to: ROUTES.home },
+          'Return to home',
+        ),
   );
 }
 
 function LibraryDetailRoute() {
   const { entityType, id } = useParams();
-  return createElement(RouteShell, { title: `Library detail: ${entityType ?? ''} / ${id ?? ''}` });
+  return createElement(RouteShell, {
+    title: `Library detail: ${entityType ?? ''} / ${id ?? ''}`,
+    libraryDetail: true,
+  });
 }
 
 function RouteLayout() {

@@ -24,6 +24,10 @@
   display: none;
 }
 
+.app-network-status {
+  display: none;
+}
+
 .app-navigation-links {
   display: grid;
   width: 100%;
@@ -94,10 +98,34 @@
     align-items: center;
     gap: 9px;
     color: inherit;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif', 'Noto Serif CJK', serif;
     font-size: 0.92rem;
     letter-spacing: 0.035em;
     text-decoration: none;
+  }
+
+  .app-network-status {
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted-foreground, #666);
+    font-size: 0.75rem;
+  }
+
+  .app-network-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  .app-network-status.is-online .app-network-indicator {
+    background: #28704a;
+  }
+
+  .app-network-status.is-offline .app-network-indicator {
+    background: #9a5700;
   }
 
   .app-brand-mark {
