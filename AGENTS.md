@@ -8,6 +8,7 @@ LiuYao is a pnpm monorepo for an offline-first Liu Yao PWA. Keep domain calculat
 - Accepted engineering principles → `docs/design-docs/core-beliefs.md`
 - Product scope and non-goals → `docs/product-specs/product-scope.md`
 - Commands, tests, and local workflow → `docs/development.md`
+- Licensing boundaries → `LICENSING.md`
 - Human project overview → `README.md`
 
 ## Repository map
@@ -30,6 +31,7 @@ scripts/                repository verification helpers
 - Keep reusable Liu Yao calculation logic out of `apps/*`. Move it into `@liuyao/core` and test it there.
 - Keep structured reference content in `@liuyao/knowledge`. Do not mix reference prose or source data into calculation code.
 - Treat future behavior as `Intended` or `Proposed`. Do not describe unimplemented behavior as current capability.
+- Keep curated knowledge and content under `packages/knowledge/data/` separate from the AGPL software license. Follow `LICENSING.md`.
 - Update the canonical document when a product rule, architecture boundary, command, or verification contract changes.
 
 ## Verification
