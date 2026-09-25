@@ -31,17 +31,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Check formatting
-        run: pnpm format:check
+      - name: Validate agent harness
+        run: |
+          test -x init.sh
+          bash -n init.sh
 
-      - name: Lint
-        run: pnpm lint
+      - name: Run agent harness
+        run: ./init.sh
 
-      - name: Type-check
-        run: pnpm typecheck
-
-      - name: Test packages
-        run: pnpm test
-
-      - name: Build
-        run: pnpm build
+      - name: Require clean working tree
+        run: git diff --exit-code

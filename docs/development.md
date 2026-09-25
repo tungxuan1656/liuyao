@@ -51,9 +51,21 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 - Commit message validation uses Conventional Commits.
 - Pre-push runs the TypeScript length check, type-checking, and tests.
 
+## Agent harness
+
+`./init.sh` is the agent-facing full workflow. It uses repository-supported fixers first, then runs independent verification with bounded parallelism.
+
+It performs:
+
+1. Prettier write.
+2. ESLint fix and TypeScript length checks.
+3. Type-check, build, and package tests.
+
+The script does not install dependencies. Run `pnpm install` separately when the workspace is not bootstrapped.
+
 ## Full verification
 
-Run before merging:
+Read-only verification before merging:
 
 ```bash
 pnpm format:check
@@ -63,4 +75,4 @@ pnpm test
 pnpm build
 ```
 
-CI runs the same repository checks on pull requests and pushes to `main`.
+CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires a clean Git diff. This verifies the harness orchestration and prevents fixers from hiding repository drift.
