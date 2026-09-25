@@ -4,7 +4,7 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Log template
 
-## YYYY-MM-DD — feat-<id>
+## YYYY-MM-DD — <id>
 
 **State**: todo
 **Done**: —
