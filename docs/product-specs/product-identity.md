@@ -14,8 +14,7 @@ The Product Owner must approve these decisions before production launch:
 - one-sentence product description;
 - tagline, if used;
 - logo mark and wordmark direction;
-- theme and background colors;
-- production domain.
+- theme and background colors.
 
 Do not treat a repository or package name as the public product name by default.
 
@@ -47,8 +46,9 @@ Use the approved identity consistently in:
 - PWA theme colors;
 - install surfaces;
 - social sharing metadata;
-- README product description;
-- production domain.
+- README product description.
+
+The production domain belongs to `docs/release.md` and F13. Product identity consumes that URL after selection; it does not own the domain decision.
 
 ## Rules
 
