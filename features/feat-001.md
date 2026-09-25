@@ -37,13 +37,15 @@ Tailwind, shadcn/ui new-york, routing, path aliases, base tokens, local fonts, a
 
 Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md`.
 
+Execution plan: `docs/plans/feat-001.md`.
+
 ## Dependencies
 
 - None.
 
 ## Handoff
 
-- State: todo
+- State: active
 - Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- Dependency check: none.
+- Next: Implement F00-T01–T05 and collect the task-map evidence.
