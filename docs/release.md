@@ -28,11 +28,15 @@ The hosting provider and production domain remain release decisions until the Pr
 → full CI
 → production build
 → preview verification
+→ pre-deploy release-candidate gate
 → production deploy
 → production smoke test
+→ post-deploy launch gate
 → release record
 
-Do not deploy a revision that fails the V1 release acceptance in `docs/product-specs/v1-mvp.md`.
+Do not deploy a revision that fails the applicable pre-deploy release-candidate checks in `docs/product-specs/v1-mvp.md`.
+
+Evaluate the post-deploy launch gate only after the production deployment exists.
 
 ## Hosting contract
 
@@ -63,22 +67,46 @@ Keep:
 
 ## Rollback
 
-Before launch, verify one rollback path:
+Before the first production launch, exercise the host rollback mechanism in Preview.
 
-1. identify the previous known-good revision;
-2. redeploy or restore that artifact;
-3. confirm the previous service worker becomes active safely;
-4. run the production smoke test again.
+Use two known-good preview deployments or another provider-supported rollback drill. Confirm that the restored revision activates its service worker safely and passes the smoke flow.
+
+After each production deployment:
+
+1. record the deployed commit or immutable artifact;
+2. record the provider action or command that restores a known-good revision;
+3. for later releases, identify the previous production revision before deploying the candidate;
+4. after an actual rollback, run the production smoke test again.
+
+The first production launch does not require a nonexistent previous production revision.
+
+## Supported browsers
+
+Use this V1 release matrix:
+
+| Browser | Platforms | Required V1 behavior |
+| --- | --- | --- |
+| Chrome, latest stable | Windows or macOS desktop; Android | Web use and offline flows. Installation when the browser exposes install support. |
+| Safari, latest stable | macOS; iOS or iPadOS | Web use and offline flows. Home-screen installation when the platform exposes it. |
+| Edge, latest stable | Windows or macOS desktop | Web use and offline flows. Installation when the browser exposes install support. |
+
+"Latest stable" means the public stable release available when the release candidate is frozen.
+
+Record the exact browser and OS versions used in release evidence.
+
+Other modern browsers are best-effort in V1 and are not launch-blocking.
+
+PWA installation is required only on a supported browser and platform that exposes an installation path. Normal web use must remain functional when installation is unavailable.
 
 ## Production smoke test
 
-After every production release, verify:
+After every production deployment, verify:
 
 - home loads over HTTPS;
 - direct navigation works;
 - all three reading-entry methods can reach a result;
 - knowledge lookup works;
-- PWA installation is valid on a supported browser;
+- PWA installation works where the supported-browser contract requires it;
 - offline reload works after one online load;
 - favicon and product metadata are correct;
 - no blocking console or network errors appear.
