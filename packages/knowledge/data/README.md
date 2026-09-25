@@ -1,40 +1,35 @@
-# LiuYao Knowledge Data
+# LiuYao knowledge data
 
-This directory stores structured knowledge, reference data, terminology, and classical sources for Liu Yao / I Ching divination.
+This directory stores structured reference content for `@liuyao/knowledge`.
 
-## Intended Data Models
+## Canonical boundary
 
-Future structured datasets will be added here:
+Read `docs/design-docs/knowledge-model.md` before adding data.
 
-1. **Trigrams (Bát Quái)**:
-   - Qian (Càn), Dui (Đoài), Li (Ly), Zhen (Chấn), Xun (Tốn), Kan (Khảm), Gen (Cấn), Kun (Khôn)
-   - Elements, polarities, directions, symbols
+This directory can contain:
 
-2. **Hexagrams (64 Quẻ Kinh Dịch)**:
-   - Name, characters, order (King Wen sequence), upper/lower trigrams, traditional judgment summaries
+- display metadata for trigrams and hexagrams;
+- glossary terms;
+- authored rule explanations;
+- bibliographic source metadata;
+- source references.
 
-3. **Eight Palaces (Bát Cung)**:
-   - Categorization of the 64 hexagrams into the 8 Palaces
-   - Line change sequences (Ben, Chu, Er, San, Si, Wu, Youhun, Guihun)
+Do not put calculation-required lookup tables here.
 
-4. **Na Jia Data (Nạp Giáp)**:
-   - Heavenly Stem (Thiên Can) and Earthly Branch (Địa Chi) assignments per line
+If a table changes a Liu Yao calculation result, it belongs in `@liuyao/core`.
 
-5. **Six Relatives (Lục Thân)**:
-   - Phụ Mẫu (Parents), Huynh Đệ (Siblings), Tử Tôn (Children), Thê Tài (Wealth/Wife), Quan Quỷ (Officer/Ghost)
+## V1 content
 
-6. **Six Spirits / Six Beasts (Lục Thú)**:
-   - Thanh Long, Chu Tước, Câu Trận, Đằng Xà, Bạch Hổ, Huyền Vũ
+V1 requires display metadata for all 8 trigrams and 64 hexagrams.
 
-7. **Classical Rules & Sources**:
-   - Tăng San Bốc Dịch (Zeng Shan Bu Yi)
-   - Bốc Phệ Chính Tông (Bu Shi Zheng Zong)
-   - Terminologies and interpretations
+V1 also requires the terms and rule explanations needed by the result view and knowledge browser.
 
-> **Note**: This data is separate from `@liuyao/core`. `@liuyao/core` performs deterministic calculations; `@liuyao/knowledge` provides structured reference data and descriptions.
+Full 384-line commentary is not required for V1.
 
 ## Licensing
 
 Original curated knowledge and authored content in this directory are **All Rights Reserved** unless a specific file states otherwise.
 
-See [the data license](LICENSE) and the repository-wide [licensing policy](../../../LICENSING.md) before adding or reusing material.
+Read `LICENSING.md` before adding or reusing material.
+
+Do not copy modern translations or commentary without permission.

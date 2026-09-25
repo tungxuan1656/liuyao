@@ -4,9 +4,10 @@ LiuYao is a pnpm monorepo for an offline-first Liu Yao PWA. Keep deterministic d
 
 ## Start here
 
+- Documentation routes → `docs/index.md`
 - Architecture and dependency boundaries → `ARCHITECTURE.md`
-- Engineering principles → `docs/design-docs/core-beliefs.md`
 - Product scope and non-goals → `docs/product-specs/product-scope.md`
+- V1 feature and acceptance map → `docs/product-specs/v1-mvp.md`
 - Development and verification → `docs/development.md`
 - Licensing boundaries → `LICENSING.md`
 - Feature state → `feature_index.json`
@@ -32,11 +33,11 @@ init.sh                  agent verification and fix workflow
 
 Choose the lightest artifact level that keeps work safe and resumable.
 
-| Mode           | Use when                                                                                                                                               |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| No feature     | Read-only work or a clear, reversible change that can finish safely in one session.                                                                    |
-| Inline feature | Scope, acceptance, evidence, or handoff should persist, but execution remains one bounded unit.                                                        |
-| External plan  | Use only when at least two substantial signals apply: >=4 files, >=2 workspaces, breaking API or migration, phased rollback, or multi-agent ownership. |
+| Mode | Use when |
+| --- | --- |
+| No feature | Read-only work or a clear, reversible change that can finish safely in one session. |
+| Inline feature | Scope, acceptance, evidence, or handoff must persist, but execution remains one bounded unit. |
+| External plan | Use only when at least two substantial signals apply: >=4 files, >=2 workspaces, breaking API or migration, phased rollback, or multi-agent ownership. |
 
 Do not create a feature, plan, or progress record only because the harness supports them.
 
