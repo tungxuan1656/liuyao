@@ -221,7 +221,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F13-T12 | Verify manifest URLs and base paths on the production domain                     | PWA check              |
 | F13-T13 | Add production security headers supported by the host                            | Header audit           |
 | F13-T14 | Document the rollback command or provider action                                 | Runbook review         |
-| F13-T15 | Exercise rollback to a previous known-good revision                              | Rollback log           |
+| F13-T15 | Exercise the hosting rollback mechanism in Preview before first production launch | Rollback log           |
 | F13-T16 | Run the production smoke test after deployment                                   | Smoke-test log         |
 
 ## F14 — Product polish and trust
@@ -259,7 +259,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F15-T08 | Verify privacy, licensing, disclaimer, and security links         | Trust audit           |
 | F15-T09 | Deploy the release candidate to production                        | Deploy record         |
 | F15-T10 | Run the production smoke test                                     | Smoke-test log        |
-| F15-T11 | Confirm rollback target and rollback procedure remain available   | Runbook check         |
+| F15-T11 | Confirm rollback procedure and any previous production target are recorded | Runbook check         |
 | F15-T12 | Create the Git tag or GitHub release for V1                       | Release URL           |
 | F15-T13 | Update README status from early development to released V1        | README review         |
 | F15-T14 | Record known limitations without hiding them                      | Release notes         |
