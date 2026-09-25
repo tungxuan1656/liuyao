@@ -41,3 +41,11 @@ Run the full verification suite before requesting review:
 ```bash
 pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build
 ```
+
+## Licensing
+
+By submitting code or repository documentation, you agree that your contribution is provided under **AGPL-3.0-only** unless a different written agreement applies.
+
+Do not submit proprietary or third-party knowledge content unless you have the rights required for the repository to use it. Curated knowledge under `packages/knowledge/data/` follows the separate terms in `LICENSING.md`.
+
+Future commercial dual licensing can require additional contributor permission. Maintainers must review contributor-license implications before accepting contributions that materially affect relicensing options.
