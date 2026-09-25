@@ -20,15 +20,15 @@ All current runtime behavior is local to the browser. The repository has no back
 
 ## Code map
 
-| Area | Owns | Must not own |
-| --- | --- | --- |
-| `apps/web` | UI, PWA behavior, package composition, user-facing flows | Reusable Liu Yao calculation rules |
-| `packages/liuyao-core` | Deterministic input types and Liu Yao calculations | React, DOM, storage, persistence, network, reference prose |
-| `packages/knowledge` | Structured reference data, terminology, source metadata, access APIs | App UI and hidden calculation rules |
-| `packages/knowledge/data` | Curated knowledge content and source material | Application behavior |
-| `docs/` | Durable product and engineering truth | Volatile execution state |
-| `features/`, `feature_index.json`, `progress.md` | Tracked execution state and handoff | Durable architecture or product rules |
-| `scripts/`, `init.sh` | Mechanical repository verification | Domain behavior |
+| Area                                             | Owns                                                                 | Must not own                                               |
+| ------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `apps/web`                                       | UI, PWA behavior, package composition, user-facing flows             | Reusable Liu Yao calculation rules                         |
+| `packages/liuyao-core`                           | Deterministic input types and Liu Yao calculations                   | React, DOM, storage, persistence, network, reference prose |
+| `packages/knowledge`                             | Structured reference data, terminology, source metadata, access APIs | App UI and hidden calculation rules                        |
+| `packages/knowledge/data`                        | Curated knowledge content and source material                        | Application behavior                                       |
+| `docs/`                                          | Durable product and engineering truth                                | Volatile execution state                                   |
+| `features/`, `feature_index.json`, `progress.md` | Tracked execution state and handoff                                  | Durable architecture or product rules                      |
+| `scripts/`, `init.sh`                            | Mechanical repository verification                                   | Domain behavior                                            |
 
 ## Dependency direction
 
@@ -52,17 +52,17 @@ Packages currently have no runtime dependency on each other. Add a package edge 
 
 ## Change placement
 
-| Change | Canonical location |
-| --- | --- |
-| Liu Yao calculation or deterministic rule | `packages/liuyao-core` |
-| Structured terminology or reference knowledge | `packages/knowledge` |
-| Curated knowledge dataset or authored content | `packages/knowledge/data` |
-| UI, PWA, routing, or product composition | `apps/web` |
-| Product scope or durable behavior | `docs/product-specs/` |
-| Engineering principle | `docs/design-docs/` |
-| Verification policy and commands | `docs/development.md` |
-| Executable agent verification workflow | `init.sh` |
-| Temporary feature execution state | `features/`, `feature_index.json`, `progress.md` |
+| Change                                        | Canonical location                               |
+| --------------------------------------------- | ------------------------------------------------ |
+| Liu Yao calculation or deterministic rule     | `packages/liuyao-core`                           |
+| Structured terminology or reference knowledge | `packages/knowledge`                             |
+| Curated knowledge dataset or authored content | `packages/knowledge/data`                        |
+| UI, PWA, routing, or product composition      | `apps/web`                                       |
+| Product scope or durable behavior             | `docs/product-specs/`                            |
+| Engineering principle                         | `docs/design-docs/`                              |
+| Verification policy and commands              | `docs/development.md`                            |
+| Executable agent verification workflow        | `init.sh`                                        |
+| Temporary feature execution state             | `features/`, `feature_index.json`, `progress.md` |
 
 Do not move durable facts into feature or progress records.
 
