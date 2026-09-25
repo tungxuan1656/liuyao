@@ -4,6 +4,16 @@ This document owns the end-to-end V1 task decomposition. Task IDs are stable pla
 
 A feature is not done when code exists. It is done when its implementation, content, error states, integration, and verification evidence are complete.
 
+## F00 — Web UI foundation
+
+| Task    | Change                                                                             | Evidence            |
+| ------- | ---------------------------------------------------------------------------------- | ------------------- |
+| F00-T01 | Configure Tailwind CSS, PostCSS, and path aliases (`@/*`) in `apps/web`            | Build check         |
+| F00-T02 | Initialize shadcn/ui with `new-york` style, CSS variables, and base design tokens  | Component audit     |
+| F00-T03 | Define SPA route infrastructure, router provider, and route constants              | Routing smoke check |
+| F00-T04 | Install, bundle, and self-host local typography assets without remote CDN          | Offline asset audit |
+| F00-T05 | Establish AppShell primitives, responsive breakpoints, and iOS safe-area utilities | Responsive check    |
+
 ## F01 — Domain contracts
 
 | Task    | Change                                                           | Evidence            |
@@ -47,22 +57,17 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F03-T09 | Build six structured line results                    | Snapshot tests          |
 | F03-T10 | Expose board facts without explanatory prose         | API review              |
 
-## F04 — Casting
+## F04 — Casting core
 
-| Task    | Change                                                               | Evidence            |
-| ------- | -------------------------------------------------------------------- | ------------------- |
-| F04-T01 | Define one normalized casting result consumed by core                | Integration test    |
-| F04-T02 | Build method selector for manual, automatic, and direct input        | UI check            |
-| F04-T03 | Build sequential manual entry from first to sixth line               | Manual flow         |
-| F04-T04 | Let the user correct a manual line before calculation                | Recovery check      |
-| F04-T05 | Generate automatic coin tosses with browser cryptographic randomness | Bounds tests        |
-| F04-T06 | Map three-coin outcomes to `6,7,8,9` with the required distribution  | Mapping tests       |
-| F04-T07 | Show the generated line result clearly after each automatic cast     | UI check            |
-| F04-T08 | Build direct six-line input with explicit line positions             | Validation check    |
-| F04-T09 | Prevent calculation before six valid lines exist                     | UI check            |
-| F04-T10 | Normalize all methods into the same core input                       | Equivalence tests   |
-| F04-T11 | Add reset and start-over behavior without stale values               | Flow check          |
-| F04-T12 | Make all casting controls keyboard and touch usable                  | Accessibility check |
+| Task    | Change                                                               | Evidence           |
+| ------- | -------------------------------------------------------------------- | ------------------ |
+| F04-T01 | Define normalized casting result model consumed by core              | Integration test   |
+| F04-T02 | Implement secure random generation adapter using browser crypto      | Bounds tests       |
+| F04-T03 | Implement three-coin outcome distribution model (1/8, 3/8, 3/8, 1/8) | Distribution tests |
+| F04-T04 | Map three-coin outcomes to `6,7,8,9` `LineValue`                     | Mapping tests      |
+| F04-T05 | Implement `CastingService` producing typed `CoinTossResult`          | Service tests      |
+| F04-T06 | Normalize sequential and direct inputs into core `LineValue` tuple   | Equivalence tests  |
+| F04-T07 | Add table-driven tests verifying coin generation bounds and mapping  | Unit test suite    |
 
 ## F05 — Knowledge
 
@@ -83,57 +88,63 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F06 — Reading flow
 
-| Task    | Change                                                      | Evidence          |
-| ------- | ----------------------------------------------------------- | ----------------- |
-| F06-T01 | Replace the scaffold screen with product navigation         | Manual check      |
-| F06-T02 | Build the Home entry point                                  | Manual check      |
-| F06-T03 | Build New Reading entry point                               | Manual check      |
-| F06-T04 | Add optional question text with clear session-only behavior | Refresh check     |
-| F06-T05 | Add method selection and in-memory draft state              | Flow check        |
-| F06-T06 | Preserve draft state when moving between steps              | Navigation check  |
-| F06-T07 | Add safe back navigation before calculation                 | Navigation check  |
-| F06-T08 | Connect normalized input to `@liuyao/core`                  | Integration check |
-| F06-T09 | Show actionable invalid and incomplete input states         | Error-state check |
-| F06-T10 | Keep entered values after recoverable errors                | Error-state check |
-| F06-T11 | Confirm before replacing an existing completed reading      | Flow check        |
-| F06-T12 | Apply approved product name and interface language          | Identity audit    |
+| Task    | Change                                                                               | Evidence          |
+| ------- | ------------------------------------------------------------------------------------ | ----------------- |
+| F06-T01 | Replace scaffold screen with AppShell (BottomNav on compact, TopNav on wide)         | Manual check      |
+| F06-T02 | Build the Home entry point at `/`                                                    | Manual check      |
+| F06-T03 | Build New Reading entry state with question and method selectors                     | Manual check      |
+| F06-T04 | Add optional question text with clear session-only behavior                          | Refresh check     |
+| F06-T05 | Add method selection and in-memory draft state for sequential and direct entry       | Flow check        |
+| F06-T06 | Preserve draft state when moving between steps                                       | Navigation check  |
+| F06-T07 | Add Back, Reset, and Cancel navigation safety with AlertDialog confirmation          | Navigation check  |
+| F06-T08 | Connect normalized input to `@liuyao/core`                                           | Integration check |
+| F06-T09 | Show actionable invalid and incomplete input states                                  | Error-state check |
+| F06-T10 | Keep entered values after recoverable errors                                         | Error-state check |
+| F06-T11 | Confirm via AlertDialog before replacing an existing completed reading               | Flow check        |
+| F06-T12 | Apply approved product name and interface language                                   | Identity audit    |
+| F06-T13 | Implement mobile safe-area inset handling for fixed navigation and content container | Device check      |
+| F06-T14 | Implement casting flow isolation (hide bottom navigation during active line input)   | UI check          |
+| F06-T15 | Preserve active completed reading across root-tab navigation until explicit restart  | Navigation check  |
 
 ## F07 — Result view
 
-| Task    | Change                                                     | Evidence                |
-| ------- | ---------------------------------------------------------- | ----------------------- |
-| F07-T01 | Show primary hexagram identity                             | UI check                |
-| F07-T02 | Show changed hexagram only when changes exist              | UI check                |
-| F07-T03 | Show upper and lower trigram identities                    | UI check                |
-| F07-T04 | Show palace and palace element                             | Fixture-backed UI check |
-| F07-T05 | Render sixth line at top and first line at bottom          | Position audit          |
-| F07-T06 | Show Yin/Yang and changing state                           | UI check                |
-| F07-T07 | Show Na Jia stem and branch                                | Fixture-backed UI check |
-| F07-T08 | Show Five Element and Six Relative                         | Fixture-backed UI check |
-| F07-T09 | Show Shi and Ying markers                                  | Fixture-backed UI check |
-| F07-T10 | Show changed polarity for moving lines                     | UI check                |
-| F07-T11 | Link explainable facts to canonical rule IDs               | Link audit              |
-| F07-T12 | Render fact, rule, and source as separate concepts         | Content review          |
-| F07-T13 | Add no-change state without an empty changed-hexagram card | UI check                |
-| F07-T14 | Keep full input available when calculation fails           | Recovery check          |
-| F07-T15 | Avoid generated interpretation or predictive verdicts      | Scope review            |
+| Task    | Change                                                                            | Evidence                |
+| ------- | --------------------------------------------------------------------------------- | ----------------------- |
+| F07-T01 | Show primary hexagram identity                                                    | UI check                |
+| F07-T02 | Show changed hexagram only when changes exist                                     | UI check                |
+| F07-T03 | Show upper and lower trigram identities for primary and changed hexagrams         | UI check                |
+| F07-T04 | Show palace and palace element                                                    | Fixture-backed UI check |
+| F07-T05 | Render sixth line at top and first line at bottom                                 | Position audit          |
+| F07-T06 | Show Yin/Yang and moving indicators (6 as ✕, 9 as ○) via SVG/CSS YaoSymbol        | UI check                |
+| F07-T07 | Show Na Jia stem and branch                                                       | Fixture-backed UI check |
+| F07-T08 | Show Five Element and Six Relative                                                | Fixture-backed UI check |
+| F07-T09 | Show Shi and Ying markers                                                         | Fixture-backed UI check |
+| F07-T10 | Show changed polarity for moving lines                                            | UI check                |
+| F07-T11 | Link explainable facts to ruleset-backed rule IDs and canonical source references | Link audit              |
+| F07-T12 | Render fact, rule, and source as separate concepts                                | Content review          |
+| F07-T13 | Add no-change state without an empty changed-hexagram card                        | UI check                |
+| F07-T14 | Keep full input available when calculation fails                                  | Recovery check          |
+| F07-T15 | Avoid generated interpretation or predictive verdicts                             | Scope review            |
+| F07-T16 | Implement Wide Master-Detail layout and Compact Drawer-backed Fact Inspector      | Responsive UI check     |
+| F07-T17 | Support keyboard navigation, focus management, and non-drag dismissal for Drawer  | Accessibility check     |
 
 ## F08 — Knowledge browser
 
-| Task    | Change                                           | Evidence      |
-| ------- | ------------------------------------------------ | ------------- |
-| F08-T01 | Build Library navigation                         | Manual check  |
-| F08-T02 | Add trigram list                                 | Count check   |
-| F08-T03 | Add hexagram list                                | Count check   |
-| F08-T04 | Add term list                                    | Content check |
-| F08-T05 | Add local search input                           | Search check  |
-| F08-T06 | Normalize supported names and aliases for search | Search tests  |
-| F08-T07 | Add clear no-results state                       | UI check      |
-| F08-T08 | Add canonical detail page for each entity type   | Manual check  |
-| F08-T09 | Show related entities and rule references        | Link audit    |
-| F08-T10 | Show source metadata and locations               | Content audit |
-| F08-T11 | Support direct links to canonical detail content | Reload check  |
-| F08-T12 | Verify all V1 knowledge while offline            | Offline check |
+| Task    | Change                                                                          | Evidence      |
+| ------- | ------------------------------------------------------------------------------- | ------------- |
+| F08-T01 | Build Library navigation with category tabs (Hexagrams, Trigrams, Terms, Rules) | Manual check  |
+| F08-T02 | Add trigram list                                                                | Count check   |
+| F08-T03 | Add hexagram list                                                               | Count check   |
+| F08-T04 | Add term list                                                                   | Content check |
+| F08-T05 | Add rule list with category filters                                             | Content check |
+| F08-T06 | Add local search input                                                          | Search check  |
+| F08-T07 | Normalize supported names and aliases for search                                | Search tests  |
+| F08-T08 | Add clear no-results state                                                      | UI check      |
+| F08-T09 | Add canonical detail page for each entity type                                  | Manual check  |
+| F08-T10 | Show related entities and rule references                                       | Link audit    |
+| F08-T11 | Show source metadata and locations                                              | Content audit |
+| F08-T12 | Support direct links to canonical detail content                                | Reload check  |
+| F08-T13 | Verify all V1 knowledge while offline                                           | Offline check |
 
 ## F09 — Settings and diagnostics
 
@@ -171,37 +182,40 @@ A feature is not done when code exists. It is done when its implementation, cont
 | ------- | --------------------------------------------------------------------------------------------- | ------------------- |
 | F11-T01 | Add complete golden fixtures for supported deterministic rules                                | `pnpm test`         |
 | F11-T02 | Add regression fixtures for every corrected domain bug                                        | Test review         |
-| F11-T03 | Audit keyboard navigation                                                                     | Accessibility check |
+| F11-T03 | Audit keyboard navigation, focus visibility, and focus trap in Drawer / Dialogs               | Accessibility check |
 | F11-T04 | Audit visible labels and accessible names                                                     | Accessibility check |
 | F11-T05 | Audit focus order and focus visibility                                                        | Accessibility check |
-| F11-T06 | Audit color contrast                                                                          | Accessibility check |
-| F11-T07 | Verify layout at narrow mobile, tablet, and desktop widths                                    | Responsive matrix   |
+| F11-T06 | Audit text contrast (≥4.5:1 / ≥3:1) and non-text UI boundary contrast (≥3:1)                  | Accessibility check |
+| F11-T07 | Verify layout at compact mobile with safe-area insets, tablet, and wide desktop               | Responsive matrix   |
 | F11-T08 | Verify long labels in the approved primary language and long source names do not break layout | Content matrix      |
 | F11-T09 | Verify empty, invalid, offline, update, and calculation-error states                          | State matrix        |
 | F11-T10 | Verify no blocking console errors in release flows                                            | Browser check       |
 | F11-T11 | Run supported-browser release matrix                                                          | Manual matrix       |
 | F11-T12 | Run `./init.sh` and read-only merge checks                                                    | Verification log    |
+| F11-T13 | Audit interactive touch target sizing (≥44×44px) across compact and mobile views              | Accessibility check |
 
 ## F12 — Product identity
 
-| Task    | Change                                                                              | Evidence               |
-| ------- | ----------------------------------------------------------------------------------- | ---------------------- |
-| F12-T01 | Review existing naming ideas and define naming criteria                             | Decision note          |
-| F12-T02 | Approve the final public product name                                               | Product Owner approval |
-| F12-T03 | Approve the PWA short name                                                          | Manifest review        |
-| F12-T04 | Confirm V1 primary interface language and terminology                               | Copy review            |
-| F12-T05 | Write the one-sentence public product description                                   | Copy review            |
-| F12-T06 | Decide whether V1 uses a tagline                                                    | Product Owner approval |
-| F12-T07 | Check name conflicts, domain availability, and obvious trademark risk before launch | Research record        |
-| F12-T08 | Design and approve the logo mark and wordmark                                       | Asset review           |
-| F12-T09 | Keep an editable vector master for approved marks                                   | Asset audit            |
-| F12-T10 | Export favicon, 192, 512, maskable, and Apple touch icons                           | PWA audit              |
-| F12-T11 | Create the social sharing image                                                     | Metadata preview       |
-| F12-T12 | Approve theme and background colors                                                 | Visual review          |
-| F12-T13 | Replace provisional page title, description, manifest name, and favicon             | Metadata audit         |
-| F12-T14 | Set the correct HTML language                                                       | HTML audit             |
-| F12-T15 | Document ownership and rights for every brand asset                                 | Rights audit           |
-| F12-T16 | Verify app header, browser tab, install UI, and README use one identity             | Cross-surface audit    |
+| Task    | Change                                                                                  | Evidence               |
+| ------- | --------------------------------------------------------------------------------------- | ---------------------- |
+| F12-T01 | Review existing naming ideas and define naming criteria                                 | Decision note          |
+| F12-T02 | Approve the final public product name                                                   | Product Owner approval |
+| F12-T03 | Approve the PWA short name                                                              | Manifest review        |
+| F12-T04 | Confirm V1 primary interface language and terminology                                   | Copy review            |
+| F12-T05 | Write the one-sentence public product description                                       | Copy review            |
+| F12-T06 | Decide whether V1 uses a tagline                                                        | Product Owner approval |
+| F12-T07 | Check name conflicts, domain availability, and obvious trademark risk before launch     | Research record        |
+| F12-T08 | Design and approve the logo mark and wordmark                                           | Asset review           |
+| F12-T09 | Keep an editable vector master for approved marks                                       | Asset audit            |
+| F12-T10 | Export favicon, 192, 512, maskable, and Apple touch icons                               | PWA audit              |
+| F12-T11 | Create the social sharing image                                                         | Metadata preview       |
+| F12-T12 | Approve theme and background colors                                                     | Visual review          |
+| F12-T13 | Replace provisional page title, description, manifest name, and favicon                 | Metadata audit         |
+| F12-T14 | Set the correct HTML language                                                           | HTML audit             |
+| F12-T15 | Document ownership and rights for every brand asset                                     | Rights audit           |
+| F12-T16 | Verify app header, browser tab, install UI, and README use one identity                 | Cross-surface audit    |
+| F12-T17 | Approve Noto Serif, Noto Sans, Noto CJK, and Latin Cinzel typography stack              | Product Owner approval |
+| F12-T18 | Bundle and self-host approved fonts locally with payload budget and CJK subsetting plan | Font payload audit     |
 
 ## F13 — Production delivery
 

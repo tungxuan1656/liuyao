@@ -17,7 +17,7 @@ The browser does not contain automated divination conclusions.
 ## Navigation
 
 Library
-→ Trigrams, Hexagrams, or Terms
+→ Trigrams, Hexagrams, Terms, or Rules
 → List or search
 → Detail
 

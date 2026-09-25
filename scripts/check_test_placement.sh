@@ -6,7 +6,10 @@ if [ ! -d apps ]; then
   exit 0
 fi
 
-mapfile -t violations < <(
+violations=()
+while IFS= read -r line; do
+  [ -n "$line" ] && violations+=("$line")
+done < <(
   find apps \
     \( -type d \( -name tests -o -name __tests__ \) \
     -o -type f \( -name '*.test.*' -o -name '*.spec.*' \) \) \

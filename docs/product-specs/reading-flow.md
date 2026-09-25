@@ -65,4 +65,6 @@ A user can return to the current draft before calculation.
 
 After calculation, starting a new reading replaces the current in-memory reading only after an explicit action.
 
+Navigating between root destinations (Reading, Library, Settings) preserves the active completed reading.
+
 V1 has no reading history.
