@@ -14,10 +14,10 @@ This document owns the V1 production delivery, deployment, rollback, and post-de
 
 Use three delivery contexts:
 
-| Context | Purpose |
-| --- | --- |
-| Local | Development through `pnpm dev` |
-| Preview | Review a production build before merge or release |
+| Context    | Purpose                                                 |
+| ---------- | ------------------------------------------------------- |
+| Local      | Development through `pnpm dev`                          |
+| Preview    | Review a production build before merge or release       |
 | Production | Public V1 deployment from the approved release revision |
 
 The hosting provider and production domain remain release decisions until the Product Owner selects them.
