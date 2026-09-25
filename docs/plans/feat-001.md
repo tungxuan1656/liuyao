@@ -39,3 +39,4 @@
 
 - **2026-09-25 — Selected design:** Implement the documented F00 design in `docs/product-specs/ui-layout.md`; no new product identity or visual direction is approved here.
 - **2026-09-25 — Delivery boundary:** Route shells and AppShell primitives are foundation only. Full destination screens and draft-safety behavior remain F06–F09.
+- **2026-09-25 — Workspace:** The user explicitly selected the existing checkout on `feat/feat-001-web-ui-foundation` for this batch. Do not create another workspace; this overrides the original dispatch's new-worktree instruction.
