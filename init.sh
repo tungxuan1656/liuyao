@@ -9,8 +9,7 @@ FORMAT_TASKS=(
 )
 
 LINT_TASKS=(
-  "pnpm exec eslint . --fix"
-  "bash scripts/check_ts_length.sh"
+  "pnpm exec eslint . --fix && bash scripts/check_ts_length.sh"
 )
 
 BUILD_TASKS=(
