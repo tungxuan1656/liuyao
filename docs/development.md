@@ -34,15 +34,15 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 ## Commands
 
-| Command | Scope |
-| --- | --- |
-| `pnpm dev` | Web development server |
-| `pnpm build` | All workspace builds |
-| `pnpm test` | Vitest package suites |
-| `pnpm typecheck` | All workspace type checks |
-| `pnpm lint` | Repository ESLint |
-| `pnpm format` | Write Prettier formatting |
-| `pnpm format:check` | Check Prettier formatting |
+| Command                           | Scope                               |
+| --------------------------------- | ----------------------------------- |
+| `pnpm dev`                        | Web development server              |
+| `pnpm build`                      | All workspace builds                |
+| `pnpm test`                       | Vitest package suites               |
+| `pnpm typecheck`                  | All workspace type checks           |
+| `pnpm lint`                       | Repository ESLint                   |
+| `pnpm format`                     | Write Prettier formatting           |
+| `pnpm format:check`               | Check Prettier formatting           |
 | `bash scripts/check_ts_length.sh` | Enforce TypeScript file-size limits |
 
 ## Git hooks
