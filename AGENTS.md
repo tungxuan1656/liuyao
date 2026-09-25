@@ -106,6 +106,6 @@ For no-feature work, do not modify feature or progress state.
 ## Verification
 
 - Agent full workflow: `./init.sh`
-- Read-only CI parity: `pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build`
+- Read-only project checks: `pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build`
 
 <!-- harness-slim 1.4.0 · generated 2026-09-25 · managed harness lifecycle; preserve repository-specific routes and rules -->
