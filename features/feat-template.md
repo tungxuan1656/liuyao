@@ -35,7 +35,7 @@ Keep bounded work here. Link `docs/plans/<id>.md` only when the task meets the s
 
 - State: todo
 - Evidence: —
-- Blockers: none
-- Next: <One action.>
+- Dependency check: pending
+- Next: Verify dependencies, then select the feature for implementation.
 
 <!-- harness-slim 1.4.0 · generated 2026-09-25 -->

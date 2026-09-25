@@ -59,5 +59,5 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 - State: todo
 - Evidence: —
-- Blockers: none
-- Next: Check dependency status, then select this feature for implementation.
+- Dependency check: pending
+- Next: Verify dependencies, then select this feature for implementation.
