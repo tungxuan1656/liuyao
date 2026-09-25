@@ -84,11 +84,11 @@ The first production launch does not require a nonexistent previous production r
 
 Use this V1 release matrix:
 
-| Browser | Platforms | Required V1 behavior |
-| --- | --- | --- |
+| Browser               | Platforms                         | Required V1 behavior                                                              |
+| --------------------- | --------------------------------- | --------------------------------------------------------------------------------- |
 | Chrome, latest stable | Windows or macOS desktop; Android | Web use and offline flows. Installation when the browser exposes install support. |
-| Safari, latest stable | macOS; iOS or iPadOS | Web use and offline flows. Home-screen installation when the platform exposes it. |
-| Edge, latest stable | Windows or macOS desktop | Web use and offline flows. Installation when the browser exposes install support. |
+| Safari, latest stable | macOS; iOS or iPadOS              | Web use and offline flows. Home-screen installation when the platform exposes it. |
+| Edge, latest stable   | Windows or macOS desktop          | Web use and offline flows. Installation when the browser exposes install support. |
 
 "Latest stable" means the public stable release available when the release candidate is frozen.
 
