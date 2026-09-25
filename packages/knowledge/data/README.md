@@ -32,3 +32,9 @@ Future structured datasets will be added here:
    - Terminologies and interpretations
 
 > **Note**: This data is separate from `@liuyao/core`. `@liuyao/core` performs deterministic calculations; `@liuyao/knowledge` provides structured reference data and descriptions.
+
+## Licensing
+
+Original curated knowledge and authored content in this directory are **All Rights Reserved** unless a specific file states otherwise.
+
+See [the data license](LICENSE) and the repository-wide [licensing policy](../../../LICENSING.md) before adding or reusing material.

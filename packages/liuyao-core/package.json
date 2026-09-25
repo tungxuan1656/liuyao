@@ -15,5 +15,6 @@
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
-  }
+  },
+  "license": "AGPL-3.0-only"
 }
