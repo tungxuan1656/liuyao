@@ -10,48 +10,59 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 
 ## Feature graph
 
-`F12 Product identity` → `F06 Reading flow`
-`F12 Product identity` → `F09 Settings`
-`F12 Product identity` → `F13 Production delivery`
+```text
+F01 Domain contracts
+├── F02 Hexagram calculation ──┐
+│                               ├──→ F09 Settings ──→ F10
+├── F03 Liu Yao board ─────────┼───────┐
+│                               │       │
+├── F04 Casting core ──────────┤       │
+│                               ▼       ▼
+│                              F06 Reading flow
+│                                       │
+└── F05 Knowledge ─────────────┬────────┤
+                               │        ▼
+                               │       F07 Result view
+                               │        │
+                               ▼        ▼
+                           F08 Library  F10 Offline hardening
 
-`F01 Domain contracts`
-→ `F02 Hexagram calculation`
-→ `F03 Liu Yao board`
-→ `F06 Reading flow`
-→ `F07 Result view`
-→ `F10 Offline hardening`
+F00 Web UI foundation ──┬→ F06 Reading flow
+                        ├→ F07 Result view
+                        ├→ F08 Knowledge browser
+                        └→ F09 Settings
 
-`F01` → `F04 Casting` → `F06`
+F12 Product identity ──┬→ F06-T12 (Brand/language integration)
+                       ├→ F13 Production delivery
+                       ├→ F14 Product polish and trust
+                       └→ F15 Launch
 
-`F01` → `F05 Knowledge` → `F07`
-`F05` → `F08 Knowledge browser` → `F10`
-
-`F02` + `F05` → `F09 Settings` → `F10`
-
-`F01-F10` → `F11 Quality hardening`
-`F10` + `F12` → `F13 Production delivery`
-`F06-F10` + `F12` → `F14 Product polish and trust`
-`F11` + `F13` + `F14` → `F15 Launch`
+F01-F10 → F11 Quality hardening
+F10 + F12 → F13 Production delivery
+F06-F10 + F12 → F14 Product polish and trust
+F11 + F13 + F14 → F15 Launch
+```
 
 ## Feature catalog
 
-| ID  | Feature                  | Depends on         | Done when                                                                                        |
-| --- | ------------------------ | ------------------ | ------------------------------------------------------------------------------------------------ |
-| F01 | Domain contracts         | —                  | Line order, values, stable IDs, errors, and ruleset contracts are fixed and tested               |
-| F02 | Hexagram calculation     | F01                | All 64 primary hexagrams and moving-line transformations match fixtures                          |
-| F03 | Liu Yao board            | F02                | Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures                             |
-| F04 | Casting                  | F01                | Manual, automatic, and direct input produce equivalent valid core inputs                         |
-| F05 | Knowledge                | F01                | V1 entities, terms, rules, and sources are local, licensed, and validated                        |
-| F06 | Reading flow             | F02, F03, F04, F12 | A user can start, complete, recover, and restart a reading without hidden state                  |
-| F07 | Result view              | F03, F05, F06      | The board shows deterministic facts with linked explanations and clear states                    |
-| F08 | Knowledge browser        | F05                | A user can browse, search, and deep-link V1 reference content offline                            |
-| F09 | Settings                 | F02, F05, F12      | A user can inspect versions, conventions, product identity, and PWA state                        |
-| F10 | Offline hardening        | F06-F09            | Core V1 flows survive network loss, reload, install, and safe app updates                        |
-| F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass              |
-| F12 | Product identity         | —                  | Final name, language, logo, icons, manifest, metadata, and asset rights are approved             |
-| F13 | Production delivery      | F10, F12           | Hosting, domain, deployment, cache, diagnostics, rollback, and smoke-test paths are launch-ready |
-| F14 | Product polish and trust | F06-F10, F12       | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready  |
-| F15 | Launch                   | F11, F13, F14      | Release candidate is versioned, deployed, smoke-tested, documented, and usable immediately       |
+| ID  | Feature                  | Depends on         | Done when                                                                                              |
+| --- | ------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| F00 | Web UI foundation        | —                  | Tailwind, shadcn/ui new-york, routing, path aliases, base tokens, local fonts, and AppShell primitives |
+| F01 | Domain contracts         | —                  | Line order, values, stable IDs, errors, and ruleset contracts are fixed and tested                     |
+| F02 | Hexagram calculation     | F01                | All 64 primary hexagrams and moving-line transformations match fixtures                                |
+| F03 | Liu Yao board            | F02                | Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures                                   |
+| F04 | Casting core             | F01                | Coin outcome model, secure random generation adapter, LineValue mapping, and normalized casting output |
+| F05 | Knowledge                | F01                | V1 entities, terms, rules, and sources are local, licensed, and validated                              |
+| F06 | Reading flow             | F00, F03, F04      | A user can start, complete, recover, and restart a reading; active reading preserved across root tabs  |
+| F07 | Result view              | F00, F03, F05, F06 | Single-pane / split-pane layouts show deterministic facts with upper/lower trigrams and rule links     |
+| F08 | Knowledge browser        | F00, F05           | A user can browse, search, and deep-link V1 reference content (hexagrams, trigrams, terms, rules)      |
+| F09 | Settings                 | F00, F02, F05      | A user can inspect versions, conventions, PWA state, and offline readiness                             |
+| F10 | Offline hardening        | F06-F09            | Core V1 flows survive network loss, reload, install, and safe app updates                              |
+| F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass                    |
+| F12 | Product identity         | —                  | Final name, language, logo, icons, manifest, metadata, font bundle budget, and asset rights approved   |
+| F13 | Production delivery      | F10, F12           | Hosting, domain, deployment, cache, diagnostics, rollback, and smoke-test paths are launch-ready       |
+| F14 | Product polish and trust | F06-F10, F12       | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready        |
+| F15 | Launch                   | F11, F13, F14      | Release candidate is versioned, deployed, smoke-tested, documented, and usable immediately             |
 
 ## Fixed V1 rules
 

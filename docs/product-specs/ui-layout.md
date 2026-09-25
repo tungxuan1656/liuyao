@@ -28,6 +28,7 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 - **Font Delivery & Offline Requirement**:
   - All fonts must be bundled and self-hosted locally within the application distribution.
   - No external Google Fonts, CDN links, or remote network requests are allowed at runtime.
+  - Production font payload must be audited with documented CJK subsetting to keep bundle sizes within offline constraints.
 
 ### Yao line symbol rendering
 
@@ -64,11 +65,15 @@ Level 2: Focused Flows (Modal Input Session)
 
 Root destinations represent persistent, top-level hubs:
 
-- **Mobile / Compact (`< 768px`)**: Fixed Bottom Navigation Bar (`border-t bg-background/95 backdrop-blur z-50`).
-  - Height: `h-16` plus `env(safe-area-inset-bottom)`.
-  - Main scrollable content must have bottom padding accounting for `h-16 + env(safe-area-inset-bottom)` to prevent content occlusion.
-- **Tablet & Desktop (`>= 768px`)**: Fixed Top Header Navigation Bar (`h-14 border-b bg-background/95 backdrop-blur z-50`).
-  - Placed horizontally with brand mark on the left, tab links in the center/right, and network status badge.
+- **Navigation modes**:
+  - **Bottom Nav (`< 768px`)**: Fixed Bottom Navigation Bar (`border-t bg-background/95 backdrop-blur z-50`).
+    - Height: `h-16` plus `env(safe-area-inset-bottom)`.
+    - Main scrollable content must have bottom padding accounting for `h-16 + env(safe-area-inset-bottom)` to prevent content occlusion.
+  - **Top Nav (`>= 768px`)**: Fixed Top Header Navigation Bar (`h-14 border-b bg-background/95 backdrop-blur z-50`).
+    - Placed horizontally with brand mark on the left, tab links in the center/right, and network status badge.
+- **State preservation across root tabs**:
+  - Switching between root destinations (Reading, Library, Settings) must not destroy an active completed reading.
+  - An active reading result is preserved in browser memory across tab switches until the user explicitly triggers `[ New Reading ]` or reloads the application.
 
 #### 1. Tab 1: Reading (`/`)
 
@@ -129,18 +134,23 @@ Used during active line input before calculation. Governed by the rules in `read
   - **Back**: Returns to the previous input step within the sequential flow; preserves all entered lines.
   - **Reset**: Clears all entered lines while remaining inside the current casting mode.
   - **Cancel / Exit**: Discards active input lines and returns to the Reading destination (`/`). When entered lines exist, clicking `[ Cancel ]` triggers an `AlertDialog`: _"Discard active lines and return to reading setup?"_.
-  - **Browser Back / Navigation Protection**: Intercept browser history or page unload events when entered lines exist, displaying the same confirmation prompt.
+  - **Navigation Protection**:
+    - _Internal SPA navigation_: Intercept any route change away from `/casting` while lines are entered and prompt via `AlertDialog`.
+    - _Browser unload / refresh_: Attach a browser-native `beforeunload` listener while lines are entered to prompt confirmation on tab close or page reload when supported.
   - Upon completing line 6 (or clicking Calculate in direct mode), the engine calculates the reading and navigates to the Reading destination (`/`) in its Result state.
 
 ---
 
 ## Responsive layout specifications
 
-### Breakpoint definitions
+### Layout modes
 
-- **Mobile (`< 768px`)**: Single-column vertical layout, thumb-zone controls, fixed Bottom Navigation with safe-area padding, Drawers for contextual facts.
-- **Tablet (`768px .. 1023px`)**: Top Header navigation, 2-column casting and library grids.
-- **Desktop (`>= 1024px`)**: Top Header navigation, Master-Detail split views (max container width: `max-w-7xl mx-auto`).
+- **Navigation modes**:
+  - Bottom Nav: `< 768px` (mobile viewport with safe-area insets)
+  - Top Nav: `>= 768px` (tablet and desktop viewports)
+- **Result display modes**:
+  - Single-pane layout: `< 1024px` (full-width board with bottom-anchored Drawer for contextual facts)
+  - Split-pane layout: `>= 1024px` (Master-Detail split view with persistent Fact Inspector, container max width `max-w-7xl mx-auto`)
 
 ---
 
@@ -148,7 +158,7 @@ Used during active line input before calculation. Governed by the rules in `read
 
 The result view presents deterministic facts separated from explanatory prose, matching `reading-result.md`:
 
-#### 1. Wide result layout (`>= 1024px` Master-Detail):
+#### 1. Split-pane result layout (`>= 1024px` Master-Detail):
 
 - **Left pane (7 / 12 columns) — Hexagram Board**:
   - **Hexagram summary header**:
@@ -174,7 +184,7 @@ The result view presents deterministic facts separated from explanatory prose, m
     - **Hover**: Optional transient preview; does not override an explicitly clicked/selected fact.
   - Action footer: includes `[ View in Library ]` linking to canonical Level 1 reference for deeper reading.
 
-#### 2. Compact result layout (`< 1024px` Board + Adaptive Drawer):
+#### 2. Single-pane result layout (`< 1024px` Board + Adaptive Drawer):
 
 - **Main viewport**:
   - Displays the full-width Hexagram Board with compact rows and clear Upper/Lower Trigram headers.
@@ -207,8 +217,8 @@ The result view presents deterministic facts separated from explanatory prose, m
 
 - `<YaoSymbol value={6|7|8|9} size="sm"|"md"|"lg" />`: Pure SVG/CSS rendering of solid, broken, and moving line symbols.
 - `<HexagramBoard reading={result} onSelectLine={(lineIndex) => ...} />`: Responsive 6-line board with upper/lower trigram indicators.
-- `<CoinTossStage onTossComplete={(value) => ...} />`: Animated 3-coin toss stage using cryptographic randomness.
-- `<FactInspector fact={selectedFact} />`: Authoritative explanation renderer, embedded inline on wide screens or inside `<Drawer>` on compact screens.
+- `<CoinTossStage onTossComplete={(result) => ...} />`: Renders animated 3-coin toss outcomes provided by `CastingService`. The UI component displays outcomes and animations; it does not own randomness generation directly.
+- `<FactInspector fact={selectedFact} />`: Ruleset-backed explanation renderer, embedded inline in split-pane views or inside `<Drawer>` in single-pane views.
 - `<AppShell />`: Master layout wrapping TopNav (desktop), BottomNav (mobile with safe area), and main scroll container.
 
 ---
@@ -216,10 +226,11 @@ The result view presents deterministic facts separated from explanatory prose, m
 ## Invariants and safety rules
 
 1. **Deterministic Rule Attribution Invariant**:
-   - Every deterministic rule explanation displayed in production fact inspections must trace to at least one canonical source reference (identifying rule ID, ruleset, source work, and location).
+   - Every deterministic rule explanation displayed in production fact inspections must trace to at least one canonical source reference (identifying rule ID, applicable ruleset, source work, and source location when known).
    - Explanations are ruleset-backed explanations for `liuyao-standard-v1`, not personal interpretations.
-2. **In-Memory Draft Safety**:
+2. **In-Memory Draft & Reading Safety**:
    - Any action that would discard entered casting lines or replace an active completed reading must require explicit user confirmation via an `AlertDialog`.
+   - Navigating between Level 0 root tabs (Reading, Library, Settings) must preserve the active completed reading in memory.
 3. **PWA Update Safety**:
    - A newly waiting service worker must display a non-blocking toast/banner.
    - The application must never trigger an automatic page reload while a casting input flow or completed reading result is active.

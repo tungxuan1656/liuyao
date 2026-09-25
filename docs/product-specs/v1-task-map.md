@@ -4,6 +4,16 @@ This document owns the end-to-end V1 task decomposition. Task IDs are stable pla
 
 A feature is not done when code exists. It is done when its implementation, content, error states, integration, and verification evidence are complete.
 
+## F00 — Web UI foundation
+
+| Task    | Change                                                                             | Evidence            |
+| ------- | ---------------------------------------------------------------------------------- | ------------------- |
+| F00-T01 | Configure Tailwind CSS, PostCSS, and path aliases (`@/*`) in `apps/web`            | Build check         |
+| F00-T02 | Initialize shadcn/ui with `new-york` style, CSS variables, and base design tokens  | Component audit     |
+| F00-T03 | Define SPA route infrastructure, router provider, and route constants              | Routing smoke check |
+| F00-T04 | Install, bundle, and self-host local typography assets without remote CDN          | Offline asset audit |
+| F00-T05 | Establish AppShell primitives, responsive breakpoints, and iOS safe-area utilities | Responsive check    |
+
 ## F01 — Domain contracts
 
 | Task    | Change                                                           | Evidence            |
@@ -47,22 +57,17 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F03-T09 | Build six structured line results                    | Snapshot tests          |
 | F03-T10 | Expose board facts without explanatory prose         | API review              |
 
-## F04 — Casting
+## F04 — Casting core
 
-| Task    | Change                                                               | Evidence            |
-| ------- | -------------------------------------------------------------------- | ------------------- |
-| F04-T01 | Define one normalized casting result consumed by core                | Integration test    |
-| F04-T02 | Build method selector for manual, automatic, and direct input        | UI check            |
-| F04-T03 | Build sequential manual entry from first to sixth line               | Manual flow         |
-| F04-T04 | Let the user correct a manual line before calculation                | Recovery check      |
-| F04-T05 | Generate automatic coin tosses with browser cryptographic randomness | Bounds tests        |
-| F04-T06 | Map three-coin outcomes to `6,7,8,9` with the required distribution  | Mapping tests       |
-| F04-T07 | Show the generated line result clearly after each automatic cast     | UI check            |
-| F04-T08 | Build direct six-line input with explicit line positions             | Validation check    |
-| F04-T09 | Prevent calculation before six valid lines exist                     | UI check            |
-| F04-T10 | Normalize all methods into the same core input                       | Equivalence tests   |
-| F04-T11 | Add reset and start-over behavior without stale values               | Flow check          |
-| F04-T12 | Make all casting controls keyboard and touch usable                  | Accessibility check |
+| Task    | Change                                                               | Evidence           |
+| ------- | -------------------------------------------------------------------- | ------------------ |
+| F04-T01 | Define normalized casting result model consumed by core              | Integration test   |
+| F04-T02 | Implement secure random generation adapter using browser crypto      | Bounds tests       |
+| F04-T03 | Implement three-coin outcome distribution model (1/8, 3/8, 3/8, 1/8) | Distribution tests |
+| F04-T04 | Map three-coin outcomes to `6,7,8,9` `LineValue`                     | Mapping tests      |
+| F04-T05 | Implement `CastingService` producing typed `CoinTossResult`          | Service tests      |
+| F04-T06 | Normalize sequential and direct inputs into core `LineValue` tuple   | Equivalence tests  |
+| F04-T07 | Add table-driven tests verifying coin generation bounds and mapping  | Unit test suite    |
 
 ## F05 — Knowledge
 
@@ -99,6 +104,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F06-T12 | Apply approved product name and interface language                                   | Identity audit    |
 | F06-T13 | Implement mobile safe-area inset handling for fixed navigation and content container | Device check      |
 | F06-T14 | Implement casting flow isolation (hide bottom navigation during active line input)   | UI check          |
+| F06-T15 | Preserve active completed reading across root-tab navigation until explicit restart  | Navigation check  |
 
 ## F07 — Result view
 
@@ -190,26 +196,26 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F12 — Product identity
 
-| Task    | Change                                                                                        | Evidence               |
-| ------- | --------------------------------------------------------------------------------------------- | ---------------------- |
-| F12-T01 | Review existing naming ideas and define naming criteria                                       | Decision note          |
-| F12-T02 | Approve the final public product name                                                         | Product Owner approval |
-| F12-T03 | Approve the PWA short name                                                                    | Manifest review        |
-| F12-T04 | Confirm V1 primary interface language and terminology                                         | Copy review            |
-| F12-T05 | Write the one-sentence public product description                                             | Copy review            |
-| F12-T06 | Decide whether V1 uses a tagline                                                              | Product Owner approval |
-| F12-T07 | Check name conflicts, domain availability, and obvious trademark risk before launch           | Research record        |
-| F12-T08 | Design and approve the logo mark and wordmark                                                 | Asset review           |
-| F12-T09 | Keep an editable vector master for approved marks                                             | Asset audit            |
-| F12-T10 | Export favicon, 192, 512, maskable, and Apple touch icons                                     | PWA audit              |
-| F12-T11 | Create the social sharing image                                                               | Metadata preview       |
-| F12-T12 | Approve theme and background colors                                                           | Visual review          |
-| F12-T13 | Replace provisional page title, description, manifest name, and favicon                       | Metadata audit         |
-| F12-T14 | Set the correct HTML language                                                                 | HTML audit             |
-| F12-T15 | Document ownership and rights for every brand asset                                           | Rights audit           |
-| F12-T16 | Verify app header, browser tab, install UI, and README use one identity                       | Cross-surface audit    |
-| F12-T17 | Approve Noto Serif, Noto Sans, Noto CJK, and Latin Cinzel typography stack                    | Product Owner approval |
-| F12-T18 | Bundle and self-host approved fonts locally without external CDN or Google Fonts dependencies | Build audit            |
+| Task    | Change                                                                                  | Evidence               |
+| ------- | --------------------------------------------------------------------------------------- | ---------------------- |
+| F12-T01 | Review existing naming ideas and define naming criteria                                 | Decision note          |
+| F12-T02 | Approve the final public product name                                                   | Product Owner approval |
+| F12-T03 | Approve the PWA short name                                                              | Manifest review        |
+| F12-T04 | Confirm V1 primary interface language and terminology                                   | Copy review            |
+| F12-T05 | Write the one-sentence public product description                                       | Copy review            |
+| F12-T06 | Decide whether V1 uses a tagline                                                        | Product Owner approval |
+| F12-T07 | Check name conflicts, domain availability, and obvious trademark risk before launch     | Research record        |
+| F12-T08 | Design and approve the logo mark and wordmark                                           | Asset review           |
+| F12-T09 | Keep an editable vector master for approved marks                                       | Asset audit            |
+| F12-T10 | Export favicon, 192, 512, maskable, and Apple touch icons                               | PWA audit              |
+| F12-T11 | Create the social sharing image                                                         | Metadata preview       |
+| F12-T12 | Approve theme and background colors                                                     | Visual review          |
+| F12-T13 | Replace provisional page title, description, manifest name, and favicon                 | Metadata audit         |
+| F12-T14 | Set the correct HTML language                                                           | HTML audit             |
+| F12-T15 | Document ownership and rights for every brand asset                                     | Rights audit           |
+| F12-T16 | Verify app header, browser tab, install UI, and README use one identity                 | Cross-surface audit    |
+| F12-T17 | Approve Noto Serif, Noto Sans, Noto CJK, and Latin Cinzel typography stack              | Product Owner approval |
+| F12-T18 | Bundle and self-host approved fonts locally with payload budget and CJK subsetting plan | Font payload audit     |
 
 ## F13 — Production delivery
 
