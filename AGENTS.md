@@ -56,12 +56,9 @@ If baseline verification fails, record the failure. Fix it only when the current
 - Write repository documentation in English.
 - Keep each durable fact in one canonical document.
 - Link to canonical truth instead of copying it into feature or progress records.
-- Put tests only in `packages/*/tests`.
-- Do not add test files under `apps/*`.
-- Keep reusable Liu Yao calculations out of `apps/*`.
-- Keep `@liuyao/core` independent from React, DOM APIs, browser storage, persistence, and network access.
-- Keep structured reference content in `@liuyao/knowledge`.
-- Keep curated knowledge under `packages/knowledge/data/` separate from the AGPL software license.
+- Follow dependency and change-placement boundaries in `ARCHITECTURE.md`.
+- Follow test-placement and verification policy in `docs/development.md`.
+- Follow licensing boundaries in `LICENSING.md`.
 - Treat future behavior as `Intended` or `Proposed`; never present it as implemented.
 - Treat `.agents/skills/` as installed tooling during product work unless the user asks to maintain skills.
 - Update `init.sh` when repository verification commands or declared workspaces change.
@@ -106,6 +103,6 @@ For no-feature work, do not modify feature or progress state.
 ## Verification
 
 - Agent full workflow: `./init.sh`
-- Read-only project checks: `pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build`
+- Read-only verification contract: `docs/development.md`
 
 <!-- harness-slim 1.4.0 · generated 2026-09-25 · managed harness lifecycle; preserve repository-specific routes and rules -->
