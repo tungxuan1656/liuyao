@@ -9,7 +9,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | Task    | Change                                                                            | Evidence            |
 | ------- | --------------------------------------------------------------------------------- | ------------------- |
 | F01-T01 | Define bottom-to-top six-line tuple and `LineValue` semantics                     | Type tests          |
-| F01-T02 | Define stable IDs for trigrams, hexagrams, palaces, rules, and knowledge entities | Uniqueness tests    |
+| F01-T02 | Define stable IDs for trigrams, hexagrams, palaces, and rulesets                       | Uniqueness tests    |
 | F01-T03 | Define `liuyao-standard-v1`                                                       | Public API test     |
 | F01-T04 | Define input and structured result types                                          | Type tests          |
 | F01-T05 | Define domain error types for invalid or unsupported input                        | Error tests         |
@@ -69,7 +69,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | Task    | Change                                                                    | Evidence            |
 | ------- | ------------------------------------------------------------------------- | ------------------- |
 | F05-T01 | Define knowledge entity, term, rule, source, and source-reference schemas | Schema tests        |
-| F05-T02 | Define stable ID conventions for knowledge data                           | ID tests            |
+| F05-T02 | Define stable IDs for knowledge entities, terms, rules, sources, and source references | ID tests            |
 | F05-T03 | Add display metadata for all 8 trigrams                                   | Count check         |
 | F05-T04 | Add display metadata for all 64 hexagrams                                 | Count check         |
 | F05-T05 | Add V1 terminology required by result screens                             | Required-term audit |
@@ -176,7 +176,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F11-T05 | Audit focus order and focus visibility                               | Accessibility check |
 | F11-T06 | Audit color contrast                                                 | Accessibility check |
 | F11-T07 | Verify layout at narrow mobile, tablet, and desktop widths           | Responsive matrix   |
-| F11-T08 | Verify long Vietnamese labels and source names do not break layout   | Content matrix      |
+| F11-T08 | Verify long labels in the approved primary language and long source names do not break layout | Content matrix      |
 | F11-T09 | Verify empty, invalid, offline, update, and calculation-error states | State matrix        |
 | F11-T10 | Verify no blocking console errors in release flows                   | Browser check       |
 | F11-T11 | Run supported-browser release matrix                                 | Manual matrix       |
