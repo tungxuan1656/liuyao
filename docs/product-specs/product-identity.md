@@ -15,7 +15,7 @@ The Product Owner must approve these decisions before production launch:
 - tagline, if used;
 - logo mark and wordmark direction;
 - theme and background colors;
-- approved typography: Cinzel for headings and Noto Sans for body and data (see `docs/product-specs/ui-layout.md`).
+- approved typography stack: Noto Serif for Vietnamese headings and hexagram names, Noto Sans for body and data, explicit Noto CJK for Han characters, and Cinzel restricted to Latin-only brand marks (see `docs/product-specs/ui-layout.md`).
 
 Do not treat a repository or package name as the public product name by default.
 
@@ -54,7 +54,7 @@ The production domain belongs to `docs/release.md` and F13. Product identity con
 ## Rules
 
 - Keep product naming independent from package identifiers.
-- Use local or system typography for core V1 flows.
+- Use local or system typography for core V1 flows; bundle and self-host all approved fonts locally for offline-first PWA operation.
 - Do not require a remote font, icon CDN, or branding API.
 - Keep logo text readable when the mark is hidden.
 - Give decorative branding accessible treatment that does not pollute screen-reader output.

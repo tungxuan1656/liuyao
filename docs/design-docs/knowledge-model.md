@@ -44,7 +44,7 @@ Every rule needs:
 - a stable rule ID;
 - a category;
 - a concise explanation;
-- zero or more source references.
+- at least one source reference for any rule displayed in production result explanations.
 
 Every source needs:
 
