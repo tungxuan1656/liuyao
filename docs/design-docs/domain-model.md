@@ -21,14 +21,14 @@ Views can reverse the visual order. Domain arrays must not reverse it.
 
 Use stable IDs for domain references.
 
-Required ID classes:
+Core-owned ID classes:
 
 - trigram;
 - hexagram;
 - palace;
-- rule;
-- knowledge entity;
 - ruleset.
+
+Rule, term, source, and knowledge-entity IDs belong to `@liuyao/knowledge`.
 
 Display names do not act as identifiers.
 
@@ -74,4 +74,4 @@ The result contains IDs and structured facts. It does not contain explanatory pr
 
 `@liuyao/core` owns constants and tables required to calculate these fields.
 
-`@liuyao/knowledge` can describe the same stable IDs. It must not become a runtime dependency of the calculation engine.
+`@liuyao/knowledge` can reference core-owned domain IDs when it describes them. `@liuyao/core` must not know that knowledge entities, rules, terms, or sources exist.
