@@ -10,8 +10,8 @@ if [ -z "$base_sha" ] || [ -z "$head_sha" ]; then
 fi
 
 web=false
-worker=false
-tma=false
+core=false
+knowledge=false
 shared=false
 lockfile_changed=false
 
@@ -22,14 +22,19 @@ while IFS= read -r file; do
     apps/web/*)
       web=true
       ;;
-    apps/worker/*)
-      worker=true
+    packages/liuyao-core/*)
+      core=true
+      web=true
       ;;
-    apps/tma/*)
-      tma=true
+    packages/knowledge/*)
+      knowledge=true
+      web=true
       ;;
-    package.json|pnpm-workspace.yaml|init.sh|.lintstagedrc.cjs|.github/workflows/verify-code.yml|scripts/check_ts_length.sh|scripts/detect_ci_scope.sh)
+    package.json|pnpm-workspace.yaml|tsconfig.base.json|eslint.config.js|.prettierrc|.lintstagedrc.cjs|commitlint.config.cjs|scripts/*|.github/*)
       shared=true
+      web=true
+      core=true
+      knowledge=true
       ;;
     pnpm-lock.yaml)
       lockfile_changed=true
@@ -44,26 +49,42 @@ if [ "$lockfile_changed" = true ]; then
     web=true
   fi
 
-  if grep -qE '^[+-][[:space:]]{2}apps/worker:' <<<"$lock_diff"; then
-    worker=true
+  if grep -qE '^[+-][[:space:]]{2}packages/liuyao-core:' <<<"$lock_diff"; then
+    core=true
+    web=true
   fi
 
-  if grep -qE '^[+-][[:space:]]{2}apps/tma:' <<<"$lock_diff"; then
-    tma=true
+  if grep -qE '^[+-][[:space:]]{2}packages/knowledge:' <<<"$lock_diff"; then
+    knowledge=true
+    web=true
   fi
 
   if grep -qE '^[+-][[:space:]]{2}\.:' <<<"$lock_diff"; then
     shared=true
+    web=true
+    core=true
+    knowledge=true
   fi
 
-  if [ "$web" = false ] && [ "$worker" = false ] && [ "$tma" = false ] && [ "$shared" = false ]; then
+  if [ "$web" = false ] && [ "$core" = false ] && [ "$knowledge" = false ] && [ "$shared" = false ]; then
     shared=true
+    web=true
+    core=true
+    knowledge=true
   fi
 fi
 
-{
-  echo "web=$web"
-  echo "worker=$worker"
-  echo "tma=$tma"
-  echo "shared=$shared"
-} >>"${GITHUB_OUTPUT:?GITHUB_OUTPUT is required}"
+if [ -n "${GITHUB_OUTPUT:-}" ]; then
+  {
+    echo "web=$web"
+    echo "core=$core"
+    echo "knowledge=$knowledge"
+    echo "shared=$shared"
+  } >>"$GITHUB_OUTPUT"
+else
+  echo "Scope detection result:"
+  echo "  web=$web"
+  echo "  core=$core"
+  echo "  knowledge=$knowledge"
+  echo "  shared=$shared"
+fi

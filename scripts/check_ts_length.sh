@@ -117,6 +117,8 @@ while IFS= read -r -d '' file; do
   [[ "$file" == *.d.ts ]] && continue
   [[ "$file" == *"/dist/"* ]] && continue
   [[ "$file" == *"/build/"* ]] && continue
+  [[ "$file" == ".agents/"* ]] && continue
+  [[ "$file" == "node_modules/"* ]] && continue
   [[ ! -f "$file" ]] && continue
 
   read -r type max <<< "$(detect_type_and_limit "$file")"
