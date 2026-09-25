@@ -30,7 +30,7 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 
 `F01-F10` → `F11 Quality hardening`
 `F10` + `F12` → `F13 Production delivery`
-`F06-F10` + `F12` + `F13` → `F14 Product polish and trust`
+`F06-F10` + `F12` → `F14 Product polish and trust`
 `F11` + `F13` + `F14` → `F15 Launch`
 
 ## Feature catalog
@@ -49,8 +49,8 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 | F10 | Offline hardening        | F06-F09            | Core V1 flows survive network loss, reload, install, and safe app updates                       |
 | F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass             |
 | F12 | Product identity         | —                  | Final name, language, logo, icons, manifest, metadata, and asset rights are approved            |
-| F13 | Production delivery      | F10, F12           | A production domain deploys through a repeatable flow with HTTPS and rollback                   |
-| F14 | Product polish and trust | F06-F10, F12, F13  | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready |
+| F13 | Production delivery      | F10, F12           | Hosting, domain, deployment, cache, diagnostics, rollback, and smoke-test paths are launch-ready |
+| F14 | Product polish and trust | F06-F10, F12       | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready |
 | F15 | Launch                   | F11, F13, F14      | Release candidate is versioned, deployed, smoke-tested, documented, and usable immediately      |
 
 ## Fixed V1 rules
