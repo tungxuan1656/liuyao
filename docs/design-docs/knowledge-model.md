@@ -10,13 +10,13 @@ If a table is required to calculate a result, place it in `@liuyao/core`.
 
 ## V1 entities
 
-| Entity | Owns |
-| --- | --- |
+| Entity           | Owns                                                             |
+| ---------------- | ---------------------------------------------------------------- |
 | Knowledge entity | Display metadata and authored explanation for a stable domain ID |
-| Term | Glossary term, aliases, and definition |
-| Rule | Explanation of one deterministic rule |
-| Source | Bibliographic metadata |
-| Source reference | Link from an entry or rule to a source location |
+| Term             | Glossary term, aliases, and definition                           |
+| Rule             | Explanation of one deterministic rule                            |
+| Source           | Bibliographic metadata                                           |
+| Source reference | Link from an entry or rule to a source location                  |
 
 ## Required fields
 

@@ -27,18 +27,18 @@ Render the sixth line at the top and the first line at the bottom.
 
 Each primary line can show:
 
-| Field | V1 |
-| --- | --- |
-| Position | Required |
-| Yin or Yang | Required |
-| Changing state | Required |
-| Na Jia stem | Required |
-| Na Jia branch | Required |
-| Five Element | Required |
-| Six Relative | Required |
-| Shi or Ying | When applicable |
-| Six Spirit | Not in V1 |
-| Day or month strength | Not in V1 |
+| Field                 | V1              |
+| --------------------- | --------------- |
+| Position              | Required        |
+| Yin or Yang           | Required        |
+| Changing state        | Required        |
+| Na Jia stem           | Required        |
+| Na Jia branch         | Required        |
+| Five Element          | Required        |
+| Six Relative          | Required        |
+| Shi or Ying           | When applicable |
+| Six Spirit            | Not in V1       |
+| Day or month strength | Not in V1       |
 
 The domain result keeps positions in bottom-to-top order. Only the view reverses the visual order.
 

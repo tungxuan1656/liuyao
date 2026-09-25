@@ -29,11 +29,11 @@ The app generates six three-coin outcomes.
 Each line must follow this distribution:
 
 | Value | Probability |
-| --- | ---: |
-| 6 | 1/8 |
-| 7 | 3/8 |
-| 8 | 3/8 |
-| 9 | 1/8 |
+| ----- | ----------: |
+| 6     |         1/8 |
+| 7     |         3/8 |
+| 8     |         3/8 |
+| 9     |         1/8 |
 
 Use browser cryptographic randomness. Do not use `Math.random()` or time-based formulas.
 

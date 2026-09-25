@@ -9,12 +9,12 @@ A user can create a six-line Liu Yao reading, inspect deterministic board facts,
 ## Feature graph
 
 `F01 Domain contracts`
-  → `F02 Hexagram calculation`
-  → `F03 Liu Yao board`
-  → `F06 Reading flow`
-  → `F07 Result view`
-  → `F10 Offline hardening`
-  → `F11 Release`
+→ `F02 Hexagram calculation`
+→ `F03 Liu Yao board`
+→ `F06 Reading flow`
+→ `F07 Result view`
+→ `F10 Offline hardening`
+→ `F11 Release`
 
 `F01` → `F04 Casting` → `F06`
 
@@ -25,19 +25,19 @@ A user can create a six-line Liu Yao reading, inspect deterministic board facts,
 
 ## Feature catalog
 
-| ID | Feature | Depends on | Done when |
-| --- | --- | --- | --- |
-| F01 | Domain contracts | — | Line order, values, stable IDs, and ruleset contracts are fixed and tested |
-| F02 | Hexagram calculation | F01 | All 64 primary hexagrams and moving-line transformations match fixtures |
-| F03 | Liu Yao board | F02 | Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures |
-| F04 | Casting | F01 | Manual, automatic, and direct input produce valid six-line inputs |
-| F05 | Knowledge | F01 | V1 entities, terms, rules, and sources are local and validated |
-| F06 | Reading flow | F02, F03, F04 | A user can complete each entry method and reach a result |
-| F07 | Result view | F03, F05, F06 | The board shows deterministic facts and linked explanations |
-| F08 | Knowledge browser | F05 | A user can browse and search V1 reference content offline |
-| F09 | Settings | F02, F05 | A user can inspect versions, ruleset, and PWA state |
-| F10 | Offline hardening | F06, F07, F08, F09 | Core V1 flows work after network loss |
-| F11 | Release hardening | F01-F10 | Required fixtures, quality checks, accessibility, and manual flows pass |
+| ID  | Feature              | Depends on         | Done when                                                                  |
+| --- | -------------------- | ------------------ | -------------------------------------------------------------------------- |
+| F01 | Domain contracts     | —                  | Line order, values, stable IDs, and ruleset contracts are fixed and tested |
+| F02 | Hexagram calculation | F01                | All 64 primary hexagrams and moving-line transformations match fixtures    |
+| F03 | Liu Yao board        | F02                | Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures       |
+| F04 | Casting              | F01                | Manual, automatic, and direct input produce valid six-line inputs          |
+| F05 | Knowledge            | F01                | V1 entities, terms, rules, and sources are local and validated             |
+| F06 | Reading flow         | F02, F03, F04      | A user can complete each entry method and reach a result                   |
+| F07 | Result view          | F03, F05, F06      | The board shows deterministic facts and linked explanations                |
+| F08 | Knowledge browser    | F05                | A user can browse and search V1 reference content offline                  |
+| F09 | Settings             | F02, F05           | A user can inspect versions, ruleset, and PWA state                        |
+| F10 | Offline hardening    | F06, F07, F08, F09 | Core V1 flows work after network loss                                      |
+| F11 | Release hardening    | F01-F10            | Required fixtures, quality checks, accessibility, and manual flows pass    |
 
 ## Fixed V1 rules
 

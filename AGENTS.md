@@ -33,11 +33,11 @@ init.sh                  agent verification and fix workflow
 
 Choose the lightest artifact level that keeps work safe and resumable.
 
-| Mode | Use when |
-| --- | --- |
-| No feature | Read-only work or a clear, reversible change that can finish safely in one session. |
-| Inline feature | Scope, acceptance, evidence, or handoff must persist, but execution remains one bounded unit. |
-| External plan | Use only when at least two substantial signals apply: >=4 files, >=2 workspaces, breaking API or migration, phased rollback, or multi-agent ownership. |
+| Mode           | Use when                                                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| No feature     | Read-only work or a clear, reversible change that can finish safely in one session.                                                                    |
+| Inline feature | Scope, acceptance, evidence, or handoff must persist, but execution remains one bounded unit.                                                          |
+| External plan  | Use only when at least two substantial signals apply: >=4 files, >=2 workspaces, breaking API or migration, phased rollback, or multi-agent ownership. |
 
 Do not create a feature, plan, or progress record only because the harness supports them.
 

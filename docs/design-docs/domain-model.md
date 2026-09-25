@@ -9,11 +9,11 @@ This document owns V1 domain contracts and line conventions for `@liuyao/core`.
 A six-line tuple is always stored from first line to sixth line. The first line is the bottom line.
 
 | Value | Primary polarity | Changes | Changed polarity |
-| --- | --- | --- | --- |
-| 6 | Yin | Yes | Yang |
-| 7 | Yang | No | Yang |
-| 8 | Yin | No | Yin |
-| 9 | Yang | Yes | Yin |
+| ----- | ---------------- | ------- | ---------------- |
+| 6     | Yin              | Yes     | Yang             |
+| 7     | Yang             | No      | Yang             |
+| 8     | Yin              | No      | Yin              |
+| 9     | Yang             | Yes     | Yin              |
 
 Views can reverse the visual order. Domain arrays must not reverse it.
 
