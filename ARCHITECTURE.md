@@ -20,12 +20,12 @@ All current runtime behavior is local to the browser. The repository has no back
 
 ## Code map
 
-| Area | Responsibility |
-| --- | --- |
-| `apps/web` | Render the PWA and compose package APIs into user-facing flows. |
-| `packages/liuyao-core` | Own deterministic Liu Yao input types and calculation logic. |
-| `packages/knowledge` | Own structured reference data, terminology, source metadata, and access APIs. |
-| `scripts` | Own repository-level mechanical checks that are not package logic. |
+| Area                   | Responsibility                                                                |
+| ---------------------- | ----------------------------------------------------------------------------- |
+| `apps/web`             | Render the PWA and compose package APIs into user-facing flows.               |
+| `packages/liuyao-core` | Own deterministic Liu Yao input types and calculation logic.                  |
+| `packages/knowledge`   | Own structured reference data, terminology, source metadata, and access APIs. |
+| `scripts`              | Own repository-level mechanical checks that are not package logic.            |
 
 ## Boundaries
 
