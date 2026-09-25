@@ -4,7 +4,7 @@ This document owns the local development, test-placement, and verification contr
 
 ## Environment
 
-- Node.js: `22` from `.node-version`
+- Node.js: `24` LTS from `.node-version`
 - Package manager: `pnpm@12.5.1` from the root `package.json`
 - Workspace roots: `apps/*` and `packages/*`
 
