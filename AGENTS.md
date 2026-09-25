@@ -43,7 +43,7 @@ Do not create a feature, plan, or progress record only because the harness suppo
 ## Start feature work
 
 1. Read `feature_index.json`.
-2. Read the selected `features/feat-<id>.md`.
+2. Read the selected `features/<id>.md`.
 3. Read the latest relevant block in `progress.md`.
 4. Read only the canonical documents linked by the feature.
 5. Inspect the working tree before running fixers.
@@ -65,6 +65,8 @@ If baseline verification fails, record the failure. Fix it only when the current
 
 ## Feature state
 
+- Each `feature_index.json` entry uses `id`, `title`, `status`, and `depends_on`; `depends_on` contains feature IDs.
+- Feature IDs include the `feat-` prefix (for example `feat-001`). The matching feature file is `features/<id>.md`.
 - Use only `todo`, `active`, `blocked`, or `done`.
 - Keep zero or one feature `active`.
 - Activate `todo` work only after the user selects or approves it.
@@ -72,6 +74,7 @@ If baseline verification fails, record the failure. Fix it only when the current
 - Keep feature work inside its recorded scope and acceptance criteria.
 - Keep bounded plans inside the feature file.
 - Link an external plan only when the task meets the substantial-work rule above.
+- When an external plan is first needed, create `docs/plans/` and store it as `docs/plans/<id>.md`.
 
 ## Feature done
 
