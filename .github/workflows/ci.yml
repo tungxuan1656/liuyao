@@ -31,6 +31,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Validate agent harness
+        run: |
+          test -x init.sh
+          bash -n init.sh
+
       - name: Check formatting
         run: pnpm format:check
 
