@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "pnpm --filter @liuyao/web dev",
     "build": "pnpm -r run build",
-    "test": "vitest run",
+    "test": "bash scripts/check_test_placement.sh && pnpm -r run test",
     "typecheck": "pnpm -r run typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
