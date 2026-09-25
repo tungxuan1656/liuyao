@@ -35,23 +35,23 @@ V1 is not complete when the calculation engine works. V1 is complete only when t
 
 ## Feature catalog
 
-| ID  | Feature                  | Depends on          | Done when |
-| --- | ------------------------ | ------------------- | --------- |
-| F01 | Domain contracts         | —                   | Line order, values, stable IDs, errors, and ruleset contracts are fixed and tested |
-| F02 | Hexagram calculation     | F01                 | All 64 primary hexagrams and moving-line transformations match fixtures |
-| F03 | Liu Yao board            | F02                 | Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures |
-| F04 | Casting                  | F01                 | Manual, automatic, and direct input produce equivalent valid core inputs |
-| F05 | Knowledge                | F01                 | V1 entities, terms, rules, and sources are local, licensed, and validated |
-| F06 | Reading flow             | F02, F03, F04, F12 | A user can start, complete, recover, and restart a reading without hidden state |
-| F07 | Result view              | F03, F05, F06      | The board shows deterministic facts with linked explanations and clear states |
-| F08 | Knowledge browser        | F05                 | A user can browse, search, and deep-link V1 reference content offline |
-| F09 | Settings                 | F02, F05, F12      | A user can inspect versions, conventions, product identity, and PWA state |
-| F10 | Offline hardening        | F06-F09            | Core V1 flows survive network loss, reload, install, and safe app updates |
-| F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass |
-| F12 | Product identity         | —                   | Final name, language, logo, icons, manifest, metadata, and asset rights are approved |
-| F13 | Production delivery      | F10, F12           | A production domain deploys through a repeatable flow with HTTPS and rollback |
+| ID  | Feature                  | Depends on         | Done when                                                                                       |
+| --- | ------------------------ | ------------------ | ----------------------------------------------------------------------------------------------- |
+| F01 | Domain contracts         | —                  | Line order, values, stable IDs, errors, and ruleset contracts are fixed and tested              |
+| F02 | Hexagram calculation     | F01                | All 64 primary hexagrams and moving-line transformations match fixtures                         |
+| F03 | Liu Yao board            | F02                | Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures                            |
+| F04 | Casting                  | F01                | Manual, automatic, and direct input produce equivalent valid core inputs                        |
+| F05 | Knowledge                | F01                | V1 entities, terms, rules, and sources are local, licensed, and validated                       |
+| F06 | Reading flow             | F02, F03, F04, F12 | A user can start, complete, recover, and restart a reading without hidden state                 |
+| F07 | Result view              | F03, F05, F06      | The board shows deterministic facts with linked explanations and clear states                   |
+| F08 | Knowledge browser        | F05                | A user can browse, search, and deep-link V1 reference content offline                           |
+| F09 | Settings                 | F02, F05, F12      | A user can inspect versions, conventions, product identity, and PWA state                       |
+| F10 | Offline hardening        | F06-F09            | Core V1 flows survive network loss, reload, install, and safe app updates                       |
+| F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass             |
+| F12 | Product identity         | —                  | Final name, language, logo, icons, manifest, metadata, and asset rights are approved            |
+| F13 | Production delivery      | F10, F12           | A production domain deploys through a repeatable flow with HTTPS and rollback                   |
 | F14 | Product polish and trust | F06-F10, F12       | Copy, legal surfaces, SEO metadata, security posture, and visible edge states are release-ready |
-| F15 | Launch                   | F11, F13, F14      | Release candidate is versioned, deployed, smoke-tested, documented, and usable immediately |
+| F15 | Launch                   | F11, F13, F14      | Release candidate is versioned, deployed, smoke-tested, documented, and usable immediately      |
 
 ## Fixed V1 rules
 
