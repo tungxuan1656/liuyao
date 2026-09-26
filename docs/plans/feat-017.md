@@ -53,10 +53,10 @@
 - Consumes: TRIGRAM_IDS, HEXAGRAM_IDS, PALACE_IDS, and identifyHexagram(lower, upper).
 - Produces: Runtime-frozen public inventories and a private ID-to-index lookup used by identifyHexagram.
 
-- [ ] Add a regression that checks Object.isFrozen(TRIGRAM_IDS), rejects reverse() and splice() through a mutable cast, and still calculates six yang lines as hexagram-01.
-- [ ] Run pnpm --filter @liuyao/core test -- hexagrams.test.ts. The new runtime-freeze assertion must fail before the fix.
-- [ ] Freeze all exported inventory arrays in contracts.ts with Object.freeze([... ] as const).
-- [ ] Replace both TRIGRAM_IDS.indexOf() calls in identifyHexagram with a private, frozen index record:
+- [x] Add a regression that checks Object.isFrozen(TRIGRAM_IDS), rejects reverse() and splice() through a mutable cast, and still calculates six yang lines as hexagram-01.
+- [x] Run pnpm --filter @liuyao/core test -- hexagrams.test.ts. It failed before the fix with hexagram-02 instead of hexagram-01 after reverse().
+- [x] Freeze all exported inventory arrays in contracts.ts with Object.freeze([... ] as const).
+- [x] Replace both TRIGRAM_IDS.indexOf() calls in identifyHexagram with a private, frozen index record:
 
 ```ts
 const TRIGRAM_INDEX: Readonly<Record<TrigramId, number>> = Object.freeze({
@@ -71,8 +71,8 @@ const TRIGRAM_INDEX: Readonly<Record<TrigramId, number>> = Object.freeze({
 });
 ```
 
-- [ ] Run pnpm --filter @liuyao/core test -- hexagrams.test.ts.
-- [ ] Commit as fix(core): isolate and freeze ID inventories.
+- [x] Run pnpm --filter @liuyao/core test -- hexagrams.test.ts (13 files, 154 tests passed).
+- [x] Commit as fix(core): isolate and freeze ID inventories.
 
 ### Task 2: Freeze casting snapshots
 

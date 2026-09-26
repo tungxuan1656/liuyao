@@ -1,8 +1,25 @@
 import { describe, expect, it } from 'vitest';
-import { HEXAGRAM_IDS, TRIGRAM_IDS, identifyHexagram } from '../src/index';
+import {
+  HEXAGRAM_IDS,
+  PALACE_IDS,
+  TRIGRAM_IDS,
+  calculateHexagram,
+  identifyHexagram,
+} from '../src/index';
 import { HEXAGRAM_FIXTURES } from './hexagram-fixtures';
 
 describe('canonical hexagram mapping', () => {
+  it('cannot be changed through the public trigram inventory', () => {
+    const mutableIds = TRIGRAM_IDS as unknown as string[];
+
+    expect(Object.isFrozen(TRIGRAM_IDS)).toBe(true);
+    expect(Object.isFrozen(HEXAGRAM_IDS)).toBe(true);
+    expect(Object.isFrozen(PALACE_IDS)).toBe(true);
+    expect(() => mutableIds.reverse()).toThrow();
+    expect(() => mutableIds.splice(0, 1)).toThrow();
+    expect(calculateHexagram({ lines: [7, 7, 7, 7, 7, 7] }).primaryHexagramId).toBe('hexagram-01');
+  });
+
   it('matches every independently sourced lower/upper pair', () => {
     expect(HEXAGRAM_FIXTURES).toHaveLength(64);
     for (const { lower, upper, id } of HEXAGRAM_FIXTURES) {
