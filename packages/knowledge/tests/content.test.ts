@@ -167,6 +167,12 @@ describe('curated V1 content', () => {
     expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.provenance).toContain(
       'https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93',
     );
+    expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.author).toBe(
+      'Yehe Laoren (野鶴老人), as catalogued by Chinese Text Project; later transmission/editing is associated with Li Wenhui (李文輝).',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.provenance).toContain(
+      'https://ctext.org/wiki.pl?if=en&res=497805',
+    );
     expect(SOURCES.find(({ id }) => id === 'source-liuyao-v1-contract')?.provenance).toContain(
       'packages/liuyao-core/src/contracts.ts',
     );

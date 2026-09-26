@@ -10,7 +10,9 @@
     "types": ["vite/client", "vite-plugin-pwa/react"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@liuyao/core": ["../../packages/liuyao-core/src/index.ts"],
+      "@liuyao/knowledge": ["../../packages/knowledge/src/index.ts"]
     }
   },
   "include": ["src", "vite.config.ts"]

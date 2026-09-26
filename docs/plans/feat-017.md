@@ -28,9 +28,9 @@
 - Use fact IDs such as result.primaryHexagramId and line.relative. getRulesForFact() returns immutable rule records.
 - Cite rule-reading-result-fields to the project contract. Cite domain rules to verified Zhouyi or Zengshan Buyi sections.
 - Compare core source inventories and the core King Wen grid from knowledge tests. Do not add a knowledge-to-core runtime edge.
-- Use a checked-in CJK coverage manifest. Test that the knowledge catalog is present in the manifest, and verify generated WOFF2 cmap coverage with FontTools.
-- Change package exports to the built ESM and declaration files. Run a Node smoke check after the workspace build.
-- Build packages before typechecking because package type exports resolve to generated declarations. Run build, typecheck, export smoke check, and tests as ordered verification stages.
+- Use a checked-in local app CJK coverage manifest. Test that the knowledge catalog and required UI glyphs are present, and verify generated WOFF2 cmap coverage with FontTools.
+- Change package exports to the built ESM and declaration files. Resolve workspace TypeScript imports to package source in the web tsconfig, then run runtime and declaration smoke checks after the workspace build.
+- Typecheck before building so a clean checkout proves typecheck does not depend on generated declarations. Run typecheck, build, export smoke check, and tests as ordered verification stages.
 - Add .js extensions to production relative imports in the two packages. The current emitted ESM keeps extensionless specifiers, which Node cannot resolve.
 - Keep Vite development hot reload on source with a development-only export condition; default Node imports resolve to built ESM.
 
@@ -283,6 +283,44 @@ for name in ("noto-serif-cjk-knowledge.woff2", "noto-sans-cjk-knowledge.woff2"):
 - [x] Append one material result block to progress.md.
 - [x] Commit as docs: record feat-017 verification and handoff.
 - [x] Push feat/017-preflow-hardening and open PR #17 against main. Stop before merge.
+
+### Task 8: Resolve PR #17 review findings
+
+**Files:**
+
+- Modify: apps/web/tsconfig.json
+- Modify: init.sh
+- Modify: apps/web/scripts/update-cjk-coverage.mjs
+- Modify: apps/web/public/fonts/cjk-coverage.txt
+- Modify: apps/web/public/fonts/noto-*-cjk-app.woff2
+- Create: apps/web/scripts/check-cjk-font-cmap.py
+- Modify: apps/web/package.json
+- Modify: .github/workflows/ci.yml
+- Modify: apps/web/src/index.css
+- Modify: apps/web/public/fonts/README.md
+- Modify: apps/web/public/fonts/NOTICE.md
+- Modify: packages/knowledge/data/sources.ts
+- Test: packages/knowledge/tests/entities.test.ts
+- Test: packages/knowledge/tests/content.test.ts
+- Modify: features/feat-017.md
+- Modify: feature_index.json
+- Modify: progress.md
+
+**Interfaces:**
+
+- Consumes: Workspace TypeScript imports, local app CJK text, the bundled CJK WOFF2 files, and the Zengshan Buyi source record.
+- Produces: Clean-checkout typecheck without generated package dist, complete local app CJK font coverage checked in CI, and corrected cautious author metadata.
+
+- [x] Reproduce `pnpm typecheck` after deleting both ignored package `dist/` directories; the web package initially failed with TS2307 for both workspace imports.
+- [x] Keep Node runtime exports pointed to built ESM, and add web-only TypeScript path mappings to package source so documented clean-checkout typecheck does not require a build.
+- [x] Run `pnpm typecheck` again with both package `dist/` directories absent; make `./init.sh` typecheck before build to keep CI from masking the contract.
+- [x] Preserve a post-build package declaration smoke check as well as the existing Node runtime export smoke check.
+- [x] Add required app CJK glyph `六` to the deterministic coverage generator and test; include knowledge-catalog strings and required UI CJK in the manifest.
+- [x] Rename the coverage concept and CJK subset assets from knowledge-only to local app CJK coverage; regenerate both pinned WOFF2 subsets.
+- [x] Add a FontTools cmap checker script and run it in CI with pinned FontTools 4.66.0 and Brotli 1.2.0.
+- [x] Correct `source-zengshan-buyi` author wording to identify Yehe Laoren (野鶴老人) as catalogued by Chinese Text Project, with later transmission/editing associated with Li Wenhui (李文輝); add a metadata regression.
+- [x] Run focused tests, package type/runtime smoke checks, `./init.sh`, and verify both actual WOFF2 cmaps against every manifest codepoint.
+- [x] Update feat-017 verification evidence and append a review-follow-up progress block. Keep PR #17 open and do not merge.
 
 ## Verification commands
 

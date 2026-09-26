@@ -140,6 +140,7 @@ describe('@liuyao/knowledge display entities', () => {
     const manifest = new Set(manifestCharacters);
 
     expect([...required]).toEqual(expect.arrayContaining(['，', '。', '；', '（', '）']));
+    expect(manifest).toContain('六');
     expect(manifestCharacters).toEqual(
       [...new Set(manifestCharacters)].sort(
         (left, right) => left.codePointAt(0)! - right.codePointAt(0)!,

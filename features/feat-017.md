@@ -22,8 +22,8 @@ Make the core, casting, knowledge, package, and font contracts safe before readi
 - [x] Every knowledge entity has an explanation and every rule has a category.
 - [x] Production fact definitions map all result fields to rules; every mapped rule has a source reference.
 - [x] Knowledge tests detect core ID or 64-hexagram grid drift without a runtime package dependency.
-- [x] Workspace package exports resolve built ESM and declaration files; a Node smoke check passes.
-- [x] Local CJK knowledge text is covered by both bundled CJK fonts.
+- [x] Workspace typecheck passes without built package dist; built ESM and declaration exports pass package smoke checks.
+- [x] Local app CJK text, including UI glyph 六, is covered by both bundled CJK fonts and an automated cmap check.
 - [x] ./init.sh passes.
 
 ## Relevant docs
@@ -45,7 +45,7 @@ Make the core, casting, knowledge, package, and font contracts safe before readi
 
 ## Handoff
 
-- State: done locally; [PR #17](https://github.com/tungxuan1656/liuyao/pull/17) is open against main; fresh review pending.
-- Evidence: Final ./init.sh passed with 155 core tests in 13 files and 41 knowledge tests in 7 files; typecheck, builds, package-export smoke check, test-placement check, format, and TypeScript length checks passed. Lint reported one pre-existing Fast Refresh warning at apps/web/src/components/ui/button.tsx:49. Both CJK font cmaps cover all 92 manifest codepoints. Mutation regressions reproduced the incorrect hexagram and mutable cast snapshot before their fixes.
-- Blockers: Fresh PR review is pending; this branch has not been merged.
-- Next: Address review feedback on PR #17 and wait for approval.
+- State: done locally; PR #17 contains the review follow-up on `feat/017-preflow-hardening`, remains open against main, and is not merged.
+- Evidence: After removing both ignored package `dist/` directories, `pnpm typecheck` passed. `./init.sh` then passed with typecheck before build, package runtime/declaration smoke checks, test placement, 155 core tests in 13 files, and 41 knowledge tests in 7 files. FontTools 4.66.0 and Brotli 1.2.0 verified exact cmap coverage of all 96 manifest codepoints in both CJK app fonts. Formatting and TypeScript length checks passed; lint reported one pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
+- Blockers: Fresh review and approval of the updated PR head are pending; do not merge before that review.
+- Next: Wait for fresh review of PR #17 and address any new findings.

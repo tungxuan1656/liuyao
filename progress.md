@@ -167,3 +167,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: GitHub reports the PR head and base as `feat/017-preflow-hardening` → `main`. Final `./init.sh`, explicit format/lint checks, pre-push typecheck/tests, Node package-export smoke check, and the CJK cmap verification passed.
 **Blockers**: Fresh PR review and approval are pending; no merge is claimed.
 **Next**: Address review feedback on PR #17 and wait for approval.
+
+## 2026-09-26 — feat-017 PR #17 review follow-up
+
+**State**: done locally; PR #17 is updated on `feat/017-preflow-hardening`, open against `main`, and awaiting fresh review.
+**Done**: Fixed clean-checkout TypeScript resolution while keeping runtime exports on built ESM; added declaration export smoke coverage; restored app UI glyph 六 to generated CJK coverage and renamed the subsets; added an automated WOFF2 cmap check to CI; corrected Zengshan Buyi attribution with Chinese Text Project provenance.
+**Evidence**: With both package `dist/` directories removed, `pnpm typecheck` passed and `./init.sh` passed typecheck before build, package runtime/declaration checks, test placement, all 155 core tests and 41 knowledge tests. FontTools 4.66.0 and Brotli 1.2.0 confirmed exact 96-codepoint cmap coverage in both bundled CJK app fonts. Lint reported the pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
+**Blockers**: Fresh review and approval are pending; PR #17 has not been merged.
+**Next**: Wait for fresh review of the updated PR head and address any new findings.

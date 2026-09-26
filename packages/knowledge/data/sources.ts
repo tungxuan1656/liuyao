@@ -28,13 +28,13 @@ export const SOURCES = [
     id: 'source-zengshan-buyi',
     title: 'Zengshan Buyi (增刪卜易; Added and Subtracted Divinations)',
     author:
-      'Traditionally attributed to Liu Bowen (劉伯溫); attribution is not independently verified here.',
+      'Yehe Laoren (野鶴老人), as catalogued by Chinese Text Project; later transmission/editing is associated with Li Wenhui (李文輝).',
     publication:
       'Traditional text; edition, composition date, and publication history are not asserted here.',
     rights:
       'Classical original text is in the public domain. This record contains original bibliographic paraphrase only and no copied transcription or translation.',
     provenance:
-      'The cited text is hosted by Wikisource at https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93. Chapter locators refer to the main work; contributor-added appendices are not cited as the book text.',
+      'Chinese Text Project catalogues the author as 野鶴老人 at https://ctext.org/wiki.pl?if=en&res=497805; its volume 2 colophon records additions by 李文輝 at https://ctext.org/wiki.pl?chapter=157683&if=en. The cited text is also hosted by Wikisource at https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93. Chapter locators refer to the main work; contributor-added appendices are not cited as the book text.',
   },
   {
     id: 'source-liuyao-v1-contract',

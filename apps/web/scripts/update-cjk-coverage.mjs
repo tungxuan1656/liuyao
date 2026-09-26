@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { knowledgeCatalog } from '@liuyao/knowledge';
 
 const CJK_CHARACTER = /[\p{Script=Han}\u3000-\u303f\uff00-\uffef]/u;
+const REQUIRED_APP_CJK = ['六'];
 const fontDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../public/fonts');
 
 function catalogText(value) {
@@ -15,7 +16,7 @@ function catalogText(value) {
 
 const characters = [
   ...new Set(
-    catalogText(knowledgeCatalog).flatMap(text =>
+    [...catalogText(knowledgeCatalog), ...REQUIRED_APP_CJK].flatMap(text =>
       [...text].filter(char => CJK_CHARACTER.test(char)),
     ),
   ),

@@ -91,18 +91,17 @@ run_parallel "format" "${FORMAT_TASKS[@]}"
 echo "=== Lint ==="
 run_parallel "lint" "${LINT_TASKS[@]}"
 
+echo "=== Typecheck ==="
+run_parallel "typecheck" "${TYPECHECK_TASKS[@]}" || true
+
 echo "=== Build ==="
 BUILD_STATUS=0
 run_parallel "build" "${BUILD_TASKS[@]}" || BUILD_STATUS=$?
 
 if [ "$BUILD_STATUS" -eq 0 ]; then
-  echo "=== Typecheck ==="
-  run_parallel "typecheck" "${TYPECHECK_TASKS[@]}" || true
-
   echo "=== Package exports ==="
   run_parallel "package exports" "${PACKAGE_EXPORT_TASKS[@]}" || true
 else
-  echo "SKIP [typecheck] workspace build failed" >&2
   echo "SKIP [package exports] workspace build failed" >&2
   STATUS=1
 fi
