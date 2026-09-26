@@ -1,6 +1,6 @@
 # Liu Yao Board Implementation Plan
 
-> **Execution:** Follow repository implementation and verification rules. Checked steps reflect observed evidence. The isolation plan revision `b42d121` received fresh plan approval; PR #14 at its corrected head still requires fresh approval.
+> **Execution:** Follow repository implementation and verification rules. Checked steps reflect observed evidence. The isolation plan revision `b42d121cf1be3afa6e4726ec6b9e538220ad56cb` received fresh plan approval; PR #14 at its corrected head still requires fresh approval.
 
 **Goal:** Produce fixture-backed Eight Palace, Shi/Ying, Na Jia, element, and Six Relative facts for every primary hexagram.
 

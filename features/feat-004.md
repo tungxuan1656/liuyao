@@ -55,4 +55,4 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 - State: done locally; PR review and merge pending.
 - Evidence: After PR #14 review feedback, public palace and Na Jia lookup results are readonly and isolated; regressions mutate returned values and confirm later helper and board facts remain unchanged. `./init.sh` passed 127 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fresh PR review remains pending.
 - Dependency check: feat-003 is done; feat-002 is done.
-- Next: Obtain fresh PR review feedback, address it, and merge only after approval; do not treat the pending plan feedback as PR approval.
+- Next: Obtain fresh PR #14 review approval on the updated head, then merge; the plan review is already approved.
