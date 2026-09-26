@@ -1,5 +1,5 @@
-import type { LineValue, SixLines } from './contracts';
-import { InvalidReadingInputError } from './validation';
+import type { LineValue, SixLines } from './contracts.js';
+import { InvalidReadingInputError } from './validation.js';
 
 export type LinePosition = 1 | 2 | 3 | 4 | 5 | 6;
 

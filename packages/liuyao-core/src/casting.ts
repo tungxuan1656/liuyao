@@ -1,5 +1,5 @@
-import type { HexagramReadingInput, LineValue } from './contracts';
-import { validateSixLines } from './validation';
+import type { HexagramReadingInput, LineValue } from './contracts.js';
+import { validateSixLines } from './validation.js';
 
 export type CoinBit = 0 | 1;
 export type CoinBitSource = () => CoinBit;
@@ -67,16 +67,19 @@ export class CastingService {
       }
       coins[index] = bit;
     }
-    return { coins, line: mapCoinsToLine(coins) };
+    return Object.freeze({ coins: Object.freeze(coins), line: mapCoinsToLine(coins) });
   }
 
   cast(): CastingResult {
-    const tosses = Array.from({ length: 6 }, () =>
-      this.toss(),
-    ) as unknown as CastingResult['tosses'];
-    return {
+    const tosses = Object.freeze(
+      Array.from({ length: 6 }, () => this.toss()) as unknown as CastingResult['tosses'],
+    );
+    const input = normalizeCastingInput(tosses.map(toss => toss.line));
+    Object.freeze(input.lines);
+    Object.freeze(input);
+    return Object.freeze({
       tosses,
-      input: normalizeCastingInput(tosses.map(toss => toss.line)),
-    };
+      input,
+    });
   }
 }

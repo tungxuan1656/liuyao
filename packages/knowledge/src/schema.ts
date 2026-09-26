@@ -86,6 +86,7 @@ export interface TrigramEntity {
   readonly name: string;
   readonly han: string;
   readonly aliases: readonly string[];
+  readonly explanation: string;
 }
 
 export interface HexagramEntity {
@@ -94,6 +95,7 @@ export interface HexagramEntity {
   readonly name: string;
   readonly han: string;
   readonly aliases: readonly string[];
+  readonly explanation: string;
   readonly kingWenNumber: number;
   readonly upperTrigramId: TrigramId;
   readonly lowerTrigramId: TrigramId;
@@ -108,11 +110,40 @@ export interface KnowledgeTerm {
   readonly definition: string;
 }
 
+export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' | 'classification';
+
 export interface KnowledgeRule {
   readonly id: `rule-${string}`;
   readonly ruleset: 'liuyao-standard-v1';
   readonly title: string;
   readonly explanation: string;
+  readonly category: KnowledgeRuleCategory;
+}
+
+export type KnowledgeFactId =
+  | 'result.ruleset'
+  | 'result.lines'
+  | 'result.primaryHexagramId'
+  | 'result.changedHexagramId'
+  | 'result.lowerTrigramId'
+  | 'result.upperTrigramId'
+  | 'result.palaceId'
+  | 'result.palaceElement'
+  | 'result.shiPosition'
+  | 'result.yingPosition'
+  | 'line.position'
+  | 'line.inputValue'
+  | 'line.polarity'
+  | 'line.changing'
+  | 'line.naJiaStem'
+  | 'line.naJiaBranch'
+  | 'line.element'
+  | 'line.relative'
+  | 'line.shiYing';
+
+export interface FactDefinition {
+  readonly id: KnowledgeFactId;
+  readonly ruleIds: readonly KnowledgeRule['id'][];
 }
 
 export interface KnowledgeSource {

@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
 import { HEXAGRAMS } from '../data/hexagrams';
 import { TRIGRAMS } from '../data/trigrams';
 import type { KnowledgeCatalog } from '../src/schema';
+import { knowledgeCatalog } from '../src/catalog';
 import { validateKnowledgeCatalog } from '../src/validation';
 
 // Independent display fixture: upper trigram per row, lower trigram per column.
@@ -26,6 +28,15 @@ const EXPECTED_HEXAGRAM_GRID = [
   '26:Da Chu|41:Sun|22:Bi|27:Yi|18:Gu|04:Meng|52:Gen|23:Bo',
   '11:Tai|19:Lin|36:Ming Yi|24:Fu|46:Sheng|07:Shi|15:Qian|02:Kun',
 ] as const;
+
+const CJK_CHARACTER = /[\p{Script=Han}\u3000-\u303f\uff00-\uffef]/u;
+
+function catalogText(value: unknown): string[] {
+  if (typeof value === 'string') return [value];
+  if (Array.isArray(value)) return value.flatMap(catalogText);
+  if (value !== null && typeof value === 'object') return Object.values(value).flatMap(catalogText);
+  return [];
+}
 
 describe('@liuyao/knowledge display entities', () => {
   it('provides eight trigrams with unique IDs', () => {
@@ -112,5 +123,29 @@ describe('@liuyao/knowledge display entities', () => {
       references: [],
     };
     expect(() => validateKnowledgeCatalog(catalog)).not.toThrow();
+  });
+
+  it('covers all CJK characters and punctuation in the knowledge catalog', () => {
+    const required = new Set(
+      catalogText(knowledgeCatalog).flatMap(text =>
+        [...text].filter(char => CJK_CHARACTER.test(char)),
+      ),
+    );
+    const manifestCharacters = [
+      ...readFileSync(
+        new URL('../../../apps/web/public/fonts/cjk-coverage.txt', import.meta.url),
+        'utf8',
+      ),
+    ];
+    const manifest = new Set(manifestCharacters);
+
+    expect([...required]).toEqual(expect.arrayContaining(['，', '。', '；', '（', '）']));
+    expect(manifest).toContain('六');
+    expect(manifestCharacters).toEqual(
+      [...new Set(manifestCharacters)].sort(
+        (left, right) => left.codePointAt(0)! - right.codePointAt(0)!,
+      ),
+    );
+    expect([...required].filter(char => !manifest.has(char))).toEqual([]);
   });
 });

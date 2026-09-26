@@ -31,6 +31,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install font verification dependencies
+        run: python -m pip install fonttools==4.66.0 brotli==1.2.0
+
+      - name: Verify CJK font cmap coverage
+        run: python apps/web/scripts/check-cjk-font-cmap.py
+
       - name: Validate agent harness
         run: |
           test -x init.sh

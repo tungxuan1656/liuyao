@@ -1,5 +1,5 @@
-import type { LineValue, SixLines, TrigramId } from './contracts';
-import { linePolarity } from './polarity';
+import type { LineValue, SixLines, TrigramId } from './contracts.js';
+import { linePolarity } from './polarity.js';
 
 /** Keys are bottom-to-top; 1 is yang, 0 is yin. */
 const TRIGRAM_BY_PATTERN: Record<string, TrigramId> = {

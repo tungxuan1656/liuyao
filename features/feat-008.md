@@ -55,6 +55,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 - `feat-004`
 - `feat-006`
 - `feat-007`
+- `feat-017`
 
 ## Handoff
 

@@ -1,8 +1,12 @@
-import { RULE_SET_ID, type HexagramCalculationResult, type ResultLinePosition } from './contracts';
-import { identifyHexagram } from './hexagrams';
-import { isChangingLine, transformChangingLines } from './polarity';
-import { identifyTrigrams } from './trigrams';
-import { validateReadingInput } from './validation';
+import {
+  RULE_SET_ID,
+  type HexagramCalculationResult,
+  type ResultLinePosition,
+} from './contracts.js';
+import { identifyHexagram } from './hexagrams.js';
+import { isChangingLine, transformChangingLines } from './polarity.js';
+import { identifyTrigrams } from './trigrams.js';
+import { validateReadingInput } from './validation.js';
 
 export function calculateHexagram(input: unknown): HexagramCalculationResult {
   const { lines } = validateReadingInput(input);

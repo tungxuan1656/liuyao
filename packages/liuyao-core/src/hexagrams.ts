@@ -1,4 +1,15 @@
-import { TRIGRAM_IDS, type HexagramId, type TrigramId } from './contracts';
+import type { HexagramId, TrigramId } from './contracts.js';
+
+const TRIGRAM_INDEX: Readonly<Record<TrigramId, number>> = Object.freeze({
+  'trigram-heaven': 0,
+  'trigram-lake': 1,
+  'trigram-fire': 2,
+  'trigram-thunder': 3,
+  'trigram-wind': 4,
+  'trigram-water': 5,
+  'trigram-mountain': 6,
+  'trigram-earth': 7,
+});
 
 /** King Wen IDs: rows are upper trigrams, columns are lower, both in TRIGRAM_IDS order. */
 const HEXAGRAM_BY_UPPER_AND_LOWER = [
@@ -13,8 +24,8 @@ const HEXAGRAM_BY_UPPER_AND_LOWER = [
 ] as const;
 
 export function identifyHexagram(lower: TrigramId, upper: TrigramId): HexagramId {
-  const row = HEXAGRAM_BY_UPPER_AND_LOWER[TRIGRAM_IDS.indexOf(upper)];
-  const number = row?.[TRIGRAM_IDS.indexOf(lower)];
+  const row = HEXAGRAM_BY_UPPER_AND_LOWER[TRIGRAM_INDEX[upper]];
+  const number = row?.[TRIGRAM_INDEX[lower]];
   if (!number) throw new Error(`Unknown hexagram pair: ${lower}, ${upper}`);
   return `hexagram-${number}`;
 }

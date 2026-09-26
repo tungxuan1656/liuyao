@@ -4,15 +4,15 @@ These fonts are self-hosted for offline use. The source files and licensing term
 
 ## Assets and subsets
 
-| Asset                           | Use                                    | Subset / coverage                                                                                                                                                                                                  |   Bytes |
-| ------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------: |
-| `noto-serif-vietnamese.woff2`   | Noto Serif headings and hexagram names | Latin U+0020–U+024F; combining marks U+0300–U+036F, U+1AB0–U+1AFF, U+1DC0–U+1DFF; Latin Extended Additional U+1E00–U+1FFF where present upstream. Retains Vietnamese precomposed letters and combining-mark forms. | 247,752 |
-| `noto-sans-vietnamese.woff2`    | Noto Sans body, data, and controls     | Same Latin and combining-mark ranges as Noto Serif.                                                                                                                                                                | 238,644 |
-| `noto-serif-cjk-nine-han.woff2` | Noto Serif CJK heading fallback        | Exactly 乾坤震巽坎離艮兌六 (U+4E7E, U+5764, U+9707, U+5DFD, U+574E, U+96E2, U+826E, U+514C, U+516D).                                                                                                               |   6,000 |
-| `noto-sans-cjk-nine-han.woff2`  | Noto Sans CJK body/data fallback       | Exactly 乾坤震巽坎離艮兌六 (the same nine Han characters).                                                                                                                                                         |   4,692 |
-| `cinzel-latin.woff2`            | Latin-only brand/decorative use        | Printable Latin codepoints U+0020–U+024F that exist in the upstream Cinzel font (299 encoded characters); no CJK subset.                                                                                           |  40,964 |
+| Asset                         | Use                                    | Subset / coverage                                                                                                                                                                                                  |   Bytes |
+| ----------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------: |
+| `noto-serif-vietnamese.woff2` | Noto Serif headings and hexagram names | Latin U+0020–U+024F; combining marks U+0300–U+036F, U+1AB0–U+1AFF, U+1DC0–U+1DFF; Latin Extended Additional U+1E00–U+1FFF where present upstream. Retains Vietnamese precomposed letters and combining-mark forms. | 247,752 |
+| `noto-sans-vietnamese.woff2`  | Noto Sans body, data, and controls     | Same Latin and combining-mark ranges as Noto Serif.                                                                                                                                                                | 238,644 |
+| `noto-serif-cjk-app.woff2`    | Noto Serif CJK heading fallback        | The 96 unique codepoints in `cjk-coverage.txt`: 91 Han characters and 5 CJK punctuation/full-width characters, including the UI brand glyph 六.                                                                    |  41,340 |
+| `noto-sans-cjk-app.woff2`     | Noto Sans CJK body/data fallback       | The same 96 codepoints listed in `cjk-coverage.txt`.                                                                                                                                                               |  30,928 |
+| `cinzel-latin.woff2`          | Latin-only brand/decorative use        | Printable Latin codepoints U+0020–U+024F that exist in the upstream Cinzel font (299 encoded characters); no CJK subset.                                                                                           |  40,964 |
 
-All five assets are WOFF2. Each Noto CJK font contains exactly the nine Han codepoints listed above (the original eight plus 六) and no unrelated codepoints. The Vietnamese fonts retain both precomposed Vietnamese characters and combining marks (including U+0300, U+0301, U+0303, U+0309, U+0323, U+0306, and U+031B).
+All five assets are WOFF2. Each Noto CJK app font contains exactly the 96 codepoints in `cjk-coverage.txt` and no unrelated codepoints. The sorted manifest is generated from every string in the built `knowledgeCatalog` plus required CJK characters used by the app UI, including Han text, CJK punctuation, and full-width characters. The Vietnamese fonts retain both precomposed Vietnamese characters and combining marks (including U+0300, U+0301, U+0303, U+0309, U+0323, U+0306, and U+031B).
 
 ## Provenance and licenses
 
@@ -28,22 +28,38 @@ All five assets are WOFF2. Each Noto CJK font contains exactly the nine Han code
 
 ## Reproduction
 
-With the pinned source files downloaded from the URLs above and FontTools/Brotli available, the WOFF2 subset conversion was performed with these settings (outputs are saved under this directory):
+Regenerate the local app CJK manifest and both fonts from the pinned upstream source files. Run these commands from the repository root; `cd` moves to this directory for subsetting:
 
 ```sh
-python3 -m pip install fonttools==4.66.0 brotli==1.2.0
+pnpm --filter @liuyao/knowledge build
+pnpm --dir apps/web run update:cjk-coverage
+cd apps/web/public/fonts
+trap 'rm -f NotoSerifSC.ttf NotoSansSC.ttf' EXIT
+curl --fail --location 'https://raw.githubusercontent.com/google/fonts/23e54b51ddffbc7713c583748e3bd86f62b1fa4a/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf' --output NotoSerifSC.ttf
+curl --fail --location 'https://raw.githubusercontent.com/google/fonts/23e54b51ddffbc7713c583748e3bd86f62b1fa4a/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf' --output NotoSansSC.ttf
+uv run --with fonttools==4.66.0 --with brotli==1.2.0 pyftsubset NotoSerifSC.ttf --output-file=noto-serif-cjk-app.woff2 --flavor=woff2 --text-file=cjk-coverage.txt --layout-features='*'
+uv run --with fonttools==4.66.0 --with brotli==1.2.0 pyftsubset NotoSansSC.ttf --output-file=noto-sans-cjk-app.woff2 --flavor=woff2 --text-file=cjk-coverage.txt --layout-features='*'
+```
+
+Verify that each generated WOFF2 cmap matches the complete manifest exactly. CI runs this same checked-in script with pinned FontTools and Brotli versions:
+
+```sh
+uv run --with fonttools==4.66.0 --with brotli==1.2.0 python ../../scripts/check-cjk-font-cmap.py
+```
+
+The existing Vietnamese and Cinzel assets were subset from the same pinned commit with these settings:
+
+```sh
 pyftsubset NotoSerif.ttf --output-file=noto-serif-vietnamese.woff2 --flavor=woff2 --unicodes='U+0020-024F,U+0300-036F,U+1AB0-1AFF,U+1DC0-1DFF,U+1E00-1FFF' --layout-features='*'
 pyftsubset NotoSans.ttf --output-file=noto-sans-vietnamese.woff2 --flavor=woff2 --unicodes='U+0020-024F,U+0300-036F,U+1AB0-1AFF,U+1DC0-1DFF,U+1E00-1FFF' --layout-features='*'
-pyftsubset NotoSerifSC.ttf --output-file=noto-serif-cjk-nine-han.woff2 --flavor=woff2 --text='乾坤震巽坎離艮兌六' --layout-features='*'
-pyftsubset NotoSansSC.ttf --output-file=noto-sans-cjk-nine-han.woff2 --flavor=woff2 --text='乾坤震巽坎離艮兌六' --layout-features='*'
 pyftsubset Cinzel.ttf --output-file=cinzel-latin.woff2 --flavor=woff2 --unicodes='U+0020-024F' --layout-features='*'
 ```
 
 For the final Cinzel build, the family/full/PostScript name records (IDs 1, 4, 6, 16, and 17) were additionally rewritten as described above after subsetting. Upstream variable TTF names in the URLs are given for provenance; use files downloaded from those exact pinned URLs as the `*.ttf` inputs in the commands.
 
-## CSS integration instructions
+## CSS integration
 
-Define the following local faces in `apps/web/src/index.css` (or its designated font stylesheet); these declarations are provided as integration guidance and are not duplicated in this asset-only change. Leave the Noto variable axes open for weight/width selection. Cinzel is deliberately registered under its renamed family alias.
+The CJK faces omit `unicode-range`, so the local CJK fonts can render every character in the app manifest. Noto variable axes stay open for weight and width selection. Cinzel is registered under its renamed family alias.
 
 ```css
 @font-face {
@@ -62,19 +78,17 @@ Define the following local faces in `apps/web/src/index.css` (or its designated 
 }
 @font-face {
   font-family: 'Noto Serif CJK';
-  src: url('/fonts/noto-serif-cjk-nine-han.woff2') format('woff2');
+  src: url('/fonts/noto-serif-cjk-app.woff2') format('woff2');
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  unicode-range: U+4E7E, U+5764, U+9707, U+5DFD, U+574E, U+96E2, U+826E, U+514C, U+516D;
 }
 @font-face {
   font-family: 'Noto Sans CJK';
-  src: url('/fonts/noto-sans-cjk-nine-han.woff2') format('woff2');
+  src: url('/fonts/noto-sans-cjk-app.woff2') format('woff2');
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  unicode-range: U+4E7E, U+5764, U+9707, U+5DFD, U+574E, U+96E2, U+826E, U+514C, U+516D;
 }
 @font-face {
   font-family: 'Liuyao Cinzel';

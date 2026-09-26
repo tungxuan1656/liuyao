@@ -1,4 +1,4 @@
-import type { FiveElement, HexagramId, PalaceId, ResultLinePosition } from './contracts';
+import type { FiveElement, HexagramId, PalaceId, ResultLinePosition } from './contracts.js';
 
 export interface PalaceClassification {
   readonly palaceId: PalaceId;

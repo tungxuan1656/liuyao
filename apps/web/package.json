@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check:package-exports": "node scripts/check-package-exports.mjs && tsc --noEmit -p tsconfig.package-types.json",
+    "update:cjk-coverage": "node scripts/update-cjk-coverage.mjs"
   },
   "dependencies": {
     "@liuyao/core": "workspace:*",

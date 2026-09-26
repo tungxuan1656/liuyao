@@ -1,5 +1,5 @@
-import { listKnowledgeEntities, listRules, listTerms } from './catalog';
-import type { KnowledgeEntity, KnowledgeRule, KnowledgeTerm } from './schema';
+import { listKnowledgeEntities, listRules, listTerms } from './catalog.js';
+import type { KnowledgeEntity, KnowledgeRule, KnowledgeTerm } from './schema.js';
 
 export type KnowledgeSearchRecord = KnowledgeEntity | KnowledgeTerm | KnowledgeRule;
 

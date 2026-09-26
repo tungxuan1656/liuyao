@@ -1,17 +1,17 @@
-export * from './contracts';
-export * from './positions';
-export * from './validation';
-export * from './polarity';
-export * from './trigrams';
-export * from './hexagrams';
-export * from './calculation';
-export * from './palaces';
-export * from './na-jia';
-export * from './board';
-export * from './casting';
+export * from './contracts.js';
+export * from './positions.js';
+export * from './validation.js';
+export * from './polarity.js';
+export * from './trigrams.js';
+export * from './hexagrams.js';
+export * from './calculation.js';
+export * from './palaces.js';
+export * from './na-jia.js';
+export * from './board.js';
+export * from './casting.js';
 
-import type { HexagramReadingInput, LineValue } from './contracts';
-import { isChangingLine } from './polarity';
+import type { HexagramReadingInput, LineValue } from './contracts.js';
+import { isChangingLine } from './polarity.js';
 
 export interface MinimalReadingSummary {
   hasChangingLines: boolean;

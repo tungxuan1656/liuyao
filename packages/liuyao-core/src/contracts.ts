@@ -7,7 +7,7 @@ export type SixLines = readonly [LineValue, LineValue, LineValue, LineValue, Lin
 export const RULE_SET_ID = 'liuyao-standard-v1' as const;
 export type RuleSetId = typeof RULE_SET_ID;
 
-export const TRIGRAM_IDS = [
+export const TRIGRAM_IDS = Object.freeze([
   'trigram-heaven',
   'trigram-lake',
   'trigram-fire',
@@ -16,10 +16,10 @@ export const TRIGRAM_IDS = [
   'trigram-water',
   'trigram-mountain',
   'trigram-earth',
-] as const;
+] as const);
 export type TrigramId = (typeof TRIGRAM_IDS)[number];
 
-export const HEXAGRAM_IDS = [
+export const HEXAGRAM_IDS = Object.freeze([
   'hexagram-01',
   'hexagram-02',
   'hexagram-03',
@@ -84,10 +84,10 @@ export const HEXAGRAM_IDS = [
   'hexagram-62',
   'hexagram-63',
   'hexagram-64',
-] as const;
+] as const);
 export type HexagramId = (typeof HEXAGRAM_IDS)[number];
 
-export const PALACE_IDS = [
+export const PALACE_IDS = Object.freeze([
   'palace-heaven',
   'palace-lake',
   'palace-fire',
@@ -96,7 +96,7 @@ export const PALACE_IDS = [
   'palace-water',
   'palace-mountain',
   'palace-earth',
-] as const;
+] as const);
 export type PalaceId = (typeof PALACE_IDS)[number];
 
 export type HeavenlyStem =

@@ -13,8 +13,15 @@ LINT_TASKS=(
 )
 
 BUILD_TASKS=(
-  "pnpm typecheck"
   "pnpm build"
+)
+
+TYPECHECK_TASKS=(
+  "pnpm typecheck"
+)
+
+PACKAGE_EXPORT_TASKS=(
+  "pnpm --dir apps/web run check:package-exports"
 )
 
 TEST_TASKS=(
@@ -56,6 +63,7 @@ run_parallel() {
 
   local command
   local pid
+  local phase_status=0
   local -a pids=()
 
   for command in "$@"; do
@@ -64,15 +72,17 @@ run_parallel() {
 
     if [ "${#pids[@]}" -ge "$MAX_JOBS" ]; then
       for pid in "${pids[@]}"; do
-        wait "$pid" || STATUS=1
+        wait "$pid" || { STATUS=1; phase_status=1; }
       done
       pids=()
     fi
   done
 
   for pid in "${pids[@]}"; do
-    wait "$pid" || STATUS=1
+    wait "$pid" || { STATUS=1; phase_status=1; }
   done
+
+  return "$phase_status"
 }
 
 echo "=== Format ==="
@@ -81,8 +91,23 @@ run_parallel "format" "${FORMAT_TASKS[@]}"
 echo "=== Lint ==="
 run_parallel "lint" "${LINT_TASKS[@]}"
 
-echo "=== Build and test ==="
-run_parallel "build/test" "${BUILD_TASKS[@]}" "${TEST_TASKS[@]}"
+echo "=== Typecheck ==="
+run_parallel "typecheck" "${TYPECHECK_TASKS[@]}" || true
+
+echo "=== Build ==="
+BUILD_STATUS=0
+run_parallel "build" "${BUILD_TASKS[@]}" || BUILD_STATUS=$?
+
+if [ "$BUILD_STATUS" -eq 0 ]; then
+  echo "=== Package exports ==="
+  run_parallel "package exports" "${PACKAGE_EXPORT_TASKS[@]}" || true
+else
+  echo "SKIP [package exports] workspace build failed" >&2
+  STATUS=1
+fi
+
+echo "=== Test ==="
+run_parallel "test" "${TEST_TASKS[@]}" || true
 
 if [ "$STATUS" -ne 0 ]; then
   echo "=== Verification failed ===" >&2

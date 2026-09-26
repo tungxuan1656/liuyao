@@ -1,12 +1,14 @@
-import { HEXAGRAMS } from '../data/hexagrams';
-import { REFERENCES } from '../data/references';
-import { RULES } from '../data/rules';
-import { SOURCES } from '../data/sources';
-import { TERMS } from '../data/terms';
-import { TRIGRAMS } from '../data/trigrams';
+import { HEXAGRAMS } from '../data/hexagrams.js';
+import { FACTS } from '../data/facts.js';
+import { REFERENCES } from '../data/references.js';
+import { RULES } from '../data/rules.js';
+import { SOURCES } from '../data/sources.js';
+import { TERMS } from '../data/terms.js';
+import { TRIGRAMS } from '../data/trigrams.js';
 import type {
   HexagramEntity,
   HexagramId,
+  KnowledgeFactId,
   KnowledgeCatalog,
   KnowledgeEntity,
   KnowledgeRule,
@@ -15,8 +17,8 @@ import type {
   SourceReference,
   TrigramEntity,
   TrigramId,
-} from './schema';
-import { validateKnowledgeCatalog } from './validation';
+} from './schema.js';
+import { validateKnowledgeCatalog } from './validation.js';
 
 function deepFreeze<T>(value: T): T {
   if (value !== null && typeof value === 'object' && !Object.isFrozen(value)) {
@@ -73,6 +75,19 @@ const sourceById = new Map<KnowledgeSource['id'], KnowledgeSource>(
 const referenceById = new Map<SourceReference['id'], SourceReference>(
   references.map(reference => [reference.id, reference]),
 );
+const emptyRules: readonly KnowledgeRule[] = Object.freeze([]);
+const rulesByFactId = new Map<KnowledgeFactId, readonly KnowledgeRule[]>(
+  FACTS.map(({ id, ruleIds }) => [
+    id,
+    deepFreeze(
+      ruleIds.map(ruleId => {
+        const rule = ruleById.get(ruleId);
+        if (!rule) throw new Error(`Unknown rule ${ruleId} mapped to fact ${id}`);
+        return rule;
+      }),
+    ),
+  ]),
+);
 
 export function listKnowledgeEntities(): readonly KnowledgeEntity[] {
   return entities;
@@ -105,6 +120,9 @@ export function listRules(): readonly KnowledgeRule[] {
 }
 export function getRule(id: KnowledgeRule['id']): KnowledgeRule | undefined {
   return ruleById.get(id);
+}
+export function getRulesForFact(factId: KnowledgeFactId): readonly KnowledgeRule[] {
+  return rulesByFactId.get(factId) ?? emptyRules;
 }
 export function listSources(): readonly KnowledgeSource[] {
   return sources;

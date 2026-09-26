@@ -1,4 +1,4 @@
-import type { KnowledgeTerm } from '../src/schema';
+import type { KnowledgeTerm } from '../src/schema.js';
 
 export const TERMS = [
   {

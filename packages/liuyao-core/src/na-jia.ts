@@ -1,4 +1,4 @@
-import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from './contracts';
+import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from './contracts.js';
 
 export type NaJiaSide = 'inner' | 'outer';
 

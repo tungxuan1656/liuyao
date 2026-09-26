@@ -1,17 +1,18 @@
 # LiuYao Knowledge Data
 
-This directory contains curated terminology, concise ruleset explanations, and source metadata. `terms.ts`, `rules.ts`, `sources.ts`, and `references.ts` conform to the record interfaces in `packages/knowledge/src/schema.ts`. They are deliberately self-contained and do not import `@liuyao/core`.
+This directory contains curated terminology, entity explanations, concise ruleset explanations, and source metadata. The data files conform to the record interfaces in `packages/knowledge/src/schema.ts`. They are deliberately self-contained and do not import `@liuyao/core` at runtime.
 
-The stable trigram IDs and King Wen upper/lower trigram grid in this package intentionally duplicate the corresponding contract/table in `@liuyao/core`. Keep both lists and the grid in sync when either changes. This duplication avoids introducing a runtime dependency from knowledge data to the calculation package.
+The stable trigram IDs and King Wen upper/lower trigram grid in this package intentionally duplicate the corresponding contract/table in `@liuyao/core`. A knowledge test parses both core inventories and the core grid and checks them against these knowledge records. This test-only contract guard avoids introducing a runtime dependency from knowledge data to the calculation package.
 
 ## Current content
 
+- `TRIGRAMS` and `HEXAGRAMS` provide display metadata and concise explanations for all 72 entities. Hexagram explanations state the upper and lower trigrams and King Wen number.
 - `TERMS` explains the fields and classifications used by `ReadingResult` and `PrimaryLineResult`, including all ten heavenly stems, twelve earthly branches, five elements, and five Six Relative categories.
-- `RULES` contains explicit `rule-*` identifiers, each keyed to `liuyao-standard-v1`. They describe deterministic conventions and do not make predictions.
-- `SOURCES` provides bibliographic metadata for the Zhouyi and Jingshi Yizhuan, publication statements that avoid asserting unknown dates, rights notes, and provenance URLs. The recorded provider URLs are `https://ctext.org/book-of-changes` and `https://ctext.org/jingshi-yizhuan/zh`. They identify the cited provider/work records, not a page citation. No Jingshi section locator or operational-rule reference is supplied: its section locations and direct support for the V1 operational rules are unknown/unverified and must not be inferred from the URL.
-- `REFERENCES` connect the Zhouyi only to the general `term-trigram` record at the Shuo Gua discussion of eight trigrams and associated qualities. This locator does not support the ruleset's specific bottom/top line ordering. Bibliographic inclusion is not a claim that a source contains every later operational table or rule.
+- `RULES` contains explicit `rule-*` identifiers, a category, and an explanation for each `liuyao-standard-v1` convention. They describe deterministic conventions and do not make predictions.
+- `SOURCES` provides bibliographic metadata for the Zhouyi, Jingshi Yizhuan, Zengshan Buyi, and this project's V1 calculation contract. The Jingshi Yizhuan record is historical context only; it is not used as evidence for an operational rule.
+- `REFERENCES` link all ten result rules to source locations. Project-contract references document exact implementation conventions. Zengshan Buyi locators identify chapters 3–7 and 11–12 for selected palace, Na Jia, moving-change, Five Element, and Six Relative topics. They do not claim that one school defines every later Liu Yao procedure. The Zhouyi reference links `term-trigram` to the Shuo Gua discussion of the eight trigrams and their associated qualities.
 
-The records do not reproduce source text or modern translations. Rule explanations are original factual summaries of the V1 calculation conventions, not quotations or claims that the cited classical works establish every implementation detail. Classical works are public domain; provider websites and modern editions/translations may have separate rights. Source records describe only the classical works, not a blanket license to provider content.
+The records do not reproduce source text or modern translations. Explanations are original concise summaries. Classical works are public domain; provider websites and modern editions/translations may have separate rights. Source records do not grant a blanket license to provider content.
 
 ## Licensing
 

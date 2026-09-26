@@ -1,4 +1,4 @@
-import type { LineValue, Polarity, SixLines } from './contracts';
+import type { LineValue, Polarity, SixLines } from './contracts.js';
 
 /** Old yin and old yang are the moving lines. */
 export function isChangingLine(value: LineValue): boolean {

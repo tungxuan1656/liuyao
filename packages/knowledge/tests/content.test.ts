@@ -1,35 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
+import { FACTS } from '../data/facts';
+import { HEXAGRAMS } from '../data/hexagrams';
 import { REFERENCES } from '../data/references';
 import { RULES } from '../data/rules';
 import { SOURCES } from '../data/sources';
 import { TERMS } from '../data/terms';
-
-// Every displayed field in packages/liuyao-core/src/contracts.ts is mapped to
-// a stable explanatory rule; keep this exhaustive when that contract changes.
-const RESULT_RULES = {
-  ruleset: 'rule-reading-result-fields',
-  lines: 'rule-line-position-order',
-  primaryHexagramId: 'rule-trigram-composition',
-  changedHexagramId: 'rule-moving-line-change',
-  lowerTrigramId: 'rule-trigram-composition',
-  upperTrigramId: 'rule-trigram-composition',
-  palaceId: 'rule-palace-and-markers',
-  palaceElement: 'rule-palace-and-markers',
-  shiPosition: 'rule-palace-and-markers',
-  yingPosition: 'rule-palace-and-markers',
-} as const;
-const LINE_RULES = {
-  position: 'rule-line-position-order',
-  inputValue: 'rule-line-polarity-values',
-  polarity: 'rule-line-polarity-values',
-  changing: 'rule-moving-line-change',
-  naJiaStem: 'rule-na-jia-assignment',
-  naJiaBranch: 'rule-na-jia-assignment',
-  element: 'rule-branch-element',
-  relative: 'rule-six-relative-classification',
-  shiYing: 'rule-palace-and-markers',
-} as const;
+import { TRIGRAMS } from '../data/trigrams';
+import { getRule, getRulesForFact } from '../src/catalog';
 
 function contractFields(interfaceName: string): string[] {
   const contracts = readFileSync(
@@ -46,12 +24,40 @@ describe('curated V1 content', () => {
   const ruleIds = new Set(RULES.map(({ id }) => id));
   const sourceIds = new Set(SOURCES.map(({ id }) => id));
 
-  it('maps every ReadingResult and line fact to an existing stable explanatory rule', () => {
-    expect(Object.keys(RESULT_RULES).sort()).toEqual(contractFields('ReadingResult').sort());
-    expect(Object.keys(LINE_RULES).sort()).toEqual(contractFields('PrimaryLineResult').sort());
-    for (const [field, ruleId] of Object.entries({ ...RESULT_RULES, ...LINE_RULES })) {
-      expect(ruleIds, `${field}: ${ruleId}`).toContain(ruleId);
+  it('maps every ReadingResult and line field through the production fact registry', () => {
+    const resultFields = FACTS.filter(({ id }) => id.startsWith('result.')).map(({ id }) =>
+      id.slice('result.'.length),
+    );
+    const lineFields = FACTS.filter(({ id }) => id.startsWith('line.')).map(({ id }) =>
+      id.slice('line.'.length),
+    );
+
+    expect(resultFields.sort()).toEqual(contractFields('ReadingResult').sort());
+    expect(lineFields.sort()).toEqual(contractFields('PrimaryLineResult').sort());
+    expect(new Set(FACTS.map(({ id }) => id)).size).toBe(FACTS.length);
+
+    for (const fact of FACTS) {
+      const rules = getRulesForFact(fact.id);
+      expect(
+        rules.map(({ id }) => id),
+        fact.id,
+      ).toEqual(fact.ruleIds);
+      expect(Object.isFrozen(rules), fact.id).toBe(true);
+      for (const rule of rules) {
+        expect(ruleIds, `${fact.id}: ${rule.id}`).toContain(rule.id);
+        expect(rule).toBe(getRule(rule.id));
+      }
     }
+    for (const rule of RULES) {
+      expect(
+        FACTS.some(fact => fact.ruleIds.some(ruleId => ruleId === rule.id)),
+        rule.id,
+      ).toBe(true);
+    }
+    expect(getRulesForFact('line.relative').map(({ id }) => id)).toEqual([
+      'rule-five-element-cycles',
+      'rule-six-relative-classification',
+    ]);
   });
 
   it('covers ReadingResult and PrimaryLineResult facts with terms and explanatory rules', () => {
@@ -96,6 +102,21 @@ describe('curated V1 content', () => {
     }
   });
 
+  it('explains every entity and assigns each rule a supported category and source', () => {
+    const entities = [...TRIGRAMS, ...HEXAGRAMS];
+    const categories = new Set(['metadata', 'structure', 'transformation', 'classification']);
+    const referencedRuleIds = new Set(
+      REFERENCES.flatMap(({ targetIds }) => targetIds.filter(id => String(id).startsWith('rule-'))),
+    );
+
+    expect(entities).toHaveLength(72);
+    for (const entity of entities) expect(entity.explanation.trim(), entity.id).not.toBe('');
+    for (const rule of RULES) {
+      expect(categories, rule.id).toContain(rule.category);
+      expect(referencedRuleIds, rule.id).toContain(rule.id);
+    }
+  });
+
   it('covers every V1 stem, branch, element, and Six Relative label', () => {
     for (const stem of ['jia', 'yi', 'bing', 'ding', 'wu', 'ji', 'geng', 'xin', 'ren', 'gui']) {
       expect(termIds, `missing stem ${stem}`).toContain(`term-stem-${stem}`);
@@ -129,14 +150,31 @@ describe('curated V1 content', () => {
   });
 
   it('links source metadata only to existing content records', () => {
-    expect(SOURCES.map(({ id }) => id)).toEqual(['source-zhouyi', 'source-jingshi-yizhuan']);
+    expect(SOURCES.map(({ id }) => id)).toEqual([
+      'source-zhouyi',
+      'source-jingshi-yizhuan',
+      'source-zengshan-buyi',
+      'source-liuyao-v1-contract',
+    ]);
     for (const source of SOURCES) {
-      expect(source.provenance).toMatch(/https:\/\//);
+      expect(source.provenance.length).toBeGreaterThan(0);
       expect(source.publication.length).toBeGreaterThan(0);
       expect(source.rights.length).toBeGreaterThan(0);
     }
     expect(SOURCES.find(({ id }) => id === 'source-jingshi-yizhuan')?.provenance).toContain(
       'https://ctext.org/jingshi-yizhuan/zh',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.provenance).toContain(
+      'https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.author).toBe(
+      'Yehe Laoren (野鶴老人), as catalogued by Chinese Text Project; later transmission/editing is associated with Li Wenhui (李文輝).',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.provenance).toContain(
+      'https://ctext.org/wiki.pl?if=en&res=497805',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-liuyao-v1-contract')?.provenance).toContain(
+      'packages/liuyao-core/src/contracts.ts',
     );
     for (const reference of REFERENCES) {
       expect(sourceIds, reference.id).toContain(reference.sourceId);
@@ -148,22 +186,22 @@ describe('curated V1 content', () => {
         ).toBe(true);
       }
     }
-    expect(REFERENCES).toEqual([
-      {
-        id: 'reference-zhouyi-trigram-associations',
-        sourceId: 'source-zhouyi',
-        targetIds: ['term-trigram'],
-        location:
-          'Shuo Gua (說卦傳), discussion of the eight trigrams and their associated qualities.',
-      },
+    expect(REFERENCES.map(({ id }) => id)).toEqual([
+      'reference-zhouyi-trigram-associations',
+      'reference-contract-reading-result',
+      'reference-zengshan-palace-markers',
+      'reference-zengshan-na-jia',
+      'reference-zengshan-moving-change',
+      'reference-zengshan-five-elements',
+      'reference-zengshan-six-relatives',
     ]);
-    expect(
-      REFERENCES.every(
-        ({ location }) =>
-          location === undefined ||
-          location ===
-            'Shuo Gua (說卦傳), discussion of the eight trigrams and their associated qualities.',
-      ),
-    ).toBe(true);
+    expect(REFERENCES.find(({ id }) => id === 'reference-zhouyi-trigram-associations')).toEqual({
+      id: 'reference-zhouyi-trigram-associations',
+      sourceId: 'source-zhouyi',
+      targetIds: ['term-trigram'],
+      location:
+        'Shuo Gua（說卦傳），discussion of the eight trigrams and their associated qualities。',
+    });
+    expect(REFERENCES.every(({ location }) => location && location.trim().length > 0)).toBe(true);
   });
 });
