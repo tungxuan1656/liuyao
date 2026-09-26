@@ -31,3 +31,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed; the 390×844px route measurements, keyboard focus, and navigation checks are recorded in `features/feat-001.md`.
 **Blockers**: none for the fix; merge approval remains pending.
 **Next**: Review and merge the follow-up PR, then close feat-001.
+
+## 2026-09-26 — feat-001
+
+**State**: done; PR #11 merged as `2f2936c`.
+**Done**: Added 44×44px minimum target dimensions and visible keyboard focus to the shared placeholder Return to home link, preserving destinations; completed the follow-up handoff.
+**Evidence**: Fresh Codex review approved PR #11 at `052bd46`; GitHub `verify` and GitGuardian checks passed. `./init.sh` and the browser measurements/navigation checks are recorded in `features/feat-001.md`.
+**Blockers**: none.
+**Next**: Begin feat-002 domain contracts.
