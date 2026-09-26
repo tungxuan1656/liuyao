@@ -13,7 +13,7 @@
 - Follow `features/feat-002.md`, the F01 rows of `docs/product-specs/v1-task-map.md`, and the fixed conventions in `docs/product-specs/v1-mvp.md`.
 - Use only `liuyao-standard-v1`; store lines first through sixth, bottom to top; `6` and `9` change.
 - Keep package logic deterministic, browser-independent, and free of network, persistence, UI, reference prose, and future F02/F03 calculations.
-- Keep `feature_index.json` with feat-002 as the sole active feature until merge. Preserve the pre-existing activation change when committing the plan.
+- The coordinator selected feat-002 and changed its state from `todo` on the base branch to `active` in this checkout before implementation. Keep it the sole active feature until PR merge, synchronized with the handoff in `features/feat-002.md`.
 - Inspect the worktree before the write-capable `./init.sh`; run it only when unrelated edits will not be rewritten. Package tests belong in `packages/liuyao-core/tests`, never `apps/web`.
 
 ---
@@ -45,7 +45,7 @@
 
 **Interfaces:** Export `validateSixLines(value: unknown): SixLines` accepting exactly six integers in `6..9`, and `validateReadingInput(value: unknown): HexagramReadingInput` reading the raw object's `lines` and `ruleset` fields. An absent ruleset defaults to `liuyao-standard-v1`; a different supplied ruleset throws `UnsupportedRuleSetError`, while malformed input or lines throw `InvalidReadingInputError`. Export position helpers with position 1 mapped to index 0 and position 6 to index 5; never reverse the underlying tuple for display.
 
-- [ ] Write failing tests for short/long/non-array input, fractional/out-of-range/non-number members, unsupported ruleset, and valid boundary values `6,7,8,9`.
+- [ ] Write failing tests for short/long/non-array input, fractional/out-of-range/non-number members, and valid boundary values `6,7,8,9`. Explicitly test that `validateReadingInput({ lines })` defaults an omitted ruleset to `liuyao-standard-v1`, an unknown ruleset throws `UnsupportedRuleSetError`, and malformed raw objects or lines throw `InvalidReadingInputError`; fixture defaults alone do not prove the validator behavior.
 - [ ] Write failing tests for position bounds, all six index mappings, and unchanged bottom-to-top line order.
 - [ ] Implement minimal typed errors, boundary validation, and position helpers; rerun targeted package tests and typecheck.
 - [ ] Commit this independently testable validation and order slice.
@@ -68,4 +68,5 @@
 - **2026-09-26 — Identity:** Pick explicit, stable domain IDs and test uniqueness rather than derive IDs from localized names or array offsets. Keep the one supported ruleset literal.
 - **2026-09-26 — Boundary:** TypeScript tuples do not validate untyped runtime input. Validate before treating imported, user-entered, or deserialized values as `SixLines`.
 - **2026-09-26 — Plan review:** Validate the raw reading object's ruleset separately from its line tuple; normalize omission to the sole supported ruleset and reject a different supplied ID with a distinct typed error. Test complete fixed ID inventories as well as uniqueness.
+- **2026-09-26 — Follow-up plan review:** Require direct validator tests for defaulting and both concrete error classes. The coordinator activated feat-002 from the base branch's `todo` state before implementation; the PR retains `active` until merge.
 - **2026-09-26 — Workspace:** Use the assigned current checkout and branch; do not create another Orca worktree.
