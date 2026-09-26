@@ -127,3 +127,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: The worker passed `./init.sh` with 153 core tests and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. GitHub `verify` and GitGuardian passed; one pre-existing non-failing web `react-refresh` warning remains.
 **Blockers**: none.
 **Next**: Read the canonical F05 requirements and licensing boundaries, then commit the feat-006 implementation plan and request review.
+
+## 2026-09-26 — feat-006
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F05-T01–T12: typed schemas, stable IDs, 8/64 entity metadata, V1 terms and rules, source metadata, validated references, readonly lookups, and offline normalized search. Source locations remain absent where unverified.
+**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 31 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web `react-refresh` warning remains. The first web build failed on a missing optional native Tailwind binding; a forced frozen-lockfile reinstall restored it before the successful full run. Details: `docs/plans/feat-006.md`.
+**Blockers**: Fresh plan and PR review approval and merge remain; no unverified source locator was invented.
+**Next**: Submit the current head for fresh plan and PR review, address findings, then hand off for merge.

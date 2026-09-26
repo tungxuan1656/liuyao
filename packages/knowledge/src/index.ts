@@ -1,4 +1,9 @@
+import { listSources } from './catalog';
+
 export const KNOWLEDGE_PACKAGE_VERSION = '0.1.0';
+
+export * from './catalog';
+export * from './search';
 
 export interface KnowledgeMetadata {
   name: string;
@@ -14,6 +19,6 @@ export function getKnowledgeMetadata(): KnowledgeMetadata {
     name: 'LiuYao Structured Knowledge Base',
     description:
       'Structured terminology, hexagram reference data, and classical sources for Lục Hào divination',
-    sourceCount: 2,
+    sourceCount: listSources().length,
   };
 }

@@ -1,40 +1,18 @@
 # LiuYao Knowledge Data
 
-This directory stores structured knowledge, reference data, terminology, and classical sources for Liu Yao / I Ching divination.
+This directory contains curated terminology, concise ruleset explanations, and source metadata. `terms.ts`, `rules.ts`, `sources.ts`, and `references.ts` conform to the record interfaces in `packages/knowledge/src/schema.ts`. They are deliberately self-contained and do not import `@liuyao/core`.
 
-## Intended Data Models
+The stable trigram IDs and King Wen upper/lower trigram grid in this package intentionally duplicate the corresponding contract/table in `@liuyao/core`. Keep both lists and the grid in sync when either changes. This duplication avoids introducing a runtime dependency from knowledge data to the calculation package.
 
-Future structured datasets will be added here:
+## Current content
 
-1. **Trigrams (Bát Quái)**:
-   - Qian (Càn), Dui (Đoài), Li (Ly), Zhen (Chấn), Xun (Tốn), Kan (Khảm), Gen (Cấn), Kun (Khôn)
-   - Elements, polarities, directions, symbols
+- `TERMS` explains the fields and classifications used by `ReadingResult` and `PrimaryLineResult`, including all ten heavenly stems, twelve earthly branches, five elements, and five Six Relative categories.
+- `RULES` contains explicit `rule-*` identifiers, each keyed to `liuyao-standard-v1`. They describe deterministic conventions and do not make predictions.
+- `SOURCES` provides bibliographic metadata for the Zhouyi and Jingshi Yizhuan, publication statements that avoid asserting unknown dates, rights notes, and provenance URLs. The recorded provider URLs are `https://ctext.org/book-of-changes` and `https://ctext.org/jingshi-yizhuan/zh`. They identify the cited provider/work records, not a page citation. No Jingshi section locator or operational-rule reference is supplied: its section locations and direct support for the V1 operational rules are unknown/unverified and must not be inferred from the URL.
+- `REFERENCES` connect the Zhouyi only to the general `term-trigram` record at the Shuo Gua discussion of eight trigrams and associated qualities. This locator does not support the ruleset's specific bottom/top line ordering. Bibliographic inclusion is not a claim that a source contains every later operational table or rule.
 
-2. **Hexagrams (64 Quẻ Kinh Dịch)**:
-   - Name, characters, order (King Wen sequence), upper/lower trigrams, traditional judgment summaries
-
-3. **Eight Palaces (Bát Cung)**:
-   - Categorization of the 64 hexagrams into the 8 Palaces
-   - Line change sequences (Ben, Chu, Er, San, Si, Wu, Youhun, Guihun)
-
-4. **Na Jia Data (Nạp Giáp)**:
-   - Heavenly Stem (Thiên Can) and Earthly Branch (Địa Chi) assignments per line
-
-5. **Six Relatives (Lục Thân)**:
-   - Phụ Mẫu (Parents), Huynh Đệ (Siblings), Tử Tôn (Children), Thê Tài (Wealth/Wife), Quan Quỷ (Officer/Ghost)
-
-6. **Six Spirits / Six Beasts (Lục Thú)**:
-   - Thanh Long, Chu Tước, Câu Trận, Đằng Xà, Bạch Hổ, Huyền Vũ
-
-7. **Classical Rules & Sources**:
-   - Tăng San Bốc Dịch (Zeng Shan Bu Yi)
-   - Bốc Phệ Chính Tông (Bu Shi Zheng Zong)
-   - Terminologies and interpretations
-
-> **Note**: This data is separate from `@liuyao/core`. `@liuyao/core` performs deterministic calculations; `@liuyao/knowledge` provides structured reference data and descriptions.
+The records do not reproduce source text or modern translations. Rule explanations are original factual summaries of the V1 calculation conventions, not quotations or claims that the cited classical works establish every implementation detail. Classical works are public domain; provider websites and modern editions/translations may have separate rights. Source records describe only the classical works, not a blanket license to provider content.
 
 ## Licensing
 
-Original curated knowledge and authored content in this directory are **All Rights Reserved** unless a specific file states otherwise.
-
-See [the data license](LICENSE) and the repository-wide [licensing policy](../../../LICENSING.md) before adding or reusing material.
+The package manifest's `AGPL-3.0-only` license applies to its AGPL-licensed software, not to the curated data in this directory. Original curated knowledge and authored content here are **All Rights Reserved** unless a specific file states otherwise. The package is marked private because it contains material with distinct licensing terms and is not publishable as a homogeneous AGPL package. See [the data license](LICENSE) and the repository-wide [licensing policy](../../../LICENSING.md) before adding or reusing material.
