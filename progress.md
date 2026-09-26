@@ -87,3 +87,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed 127 core tests in 12 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing, non-failing web lint warning remains.
 **Blockers**: Updated PR head requires fresh review approval.
 **Next**: Request fresh PR #14 review on the corrected head and address any findings before merge.
+
+## 2026-09-26 — feat-004
+
+**State**: done; PR #14 squash-merged as `994ba1afcc1dcf190808d693dd5f701f06eb4246`.
+**Done**: Completed F03-T01–T10 and addressed review findings for isolated readonly lookup results and feature documentation.
+**Evidence**: Fresh Codex review approved head `5dee51279af59c264fed6681ee0caa1d505685fe`; GitHub `verify` and GitGuardian passed. The worker passed `./init.sh` with 127 core tests and 2 knowledge tests, format, lint, typecheck, and build; final docs-only changes passed focused format/diff/pre-push checks.
+**Blockers**: none.
+**Next**: Activate feat-005 Casting core.

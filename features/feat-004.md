@@ -48,11 +48,11 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Implementation plan
 
-- `docs/plans/feat-004.md` (implementation and local verification recorded; PR review pending).
+- `docs/plans/feat-004.md` (approved; implementation and local verification recorded).
 
 ## Handoff
 
-- State: done locally; PR review and merge pending.
-- Evidence: After PR #14 review feedback, public palace and Na Jia lookup results are readonly and isolated; regressions mutate returned values and confirm later helper and board facts remain unchanged. `./init.sh` passed 127 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fresh PR review remains pending.
+- State: done; PR #14 merged by squash as `994ba1afcc1dcf190808d693dd5f701f06eb4246`.
+- Evidence: Fresh Codex review approved PR head `5dee51279af59c264fed6681ee0caa1d505685fe`; GitHub `verify` and GitGuardian checks passed. The worker's `./init.sh` passed 127 core tests in 12 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. The final documentation-only commit passed format, diff, pre-push lint, typecheck, and tests. One pre-existing, non-failing web `react-refresh` warning remains.
 - Dependency check: feat-003 is done; feat-002 is done.
-- Next: Obtain fresh PR #14 review approval on the updated head, then merge; the plan review is already approved.
+- Next: Activate feat-005 after confirming its dependency and canonical task map.

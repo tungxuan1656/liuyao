@@ -1,6 +1,6 @@
 # Liu Yao Board Implementation Plan
 
-> **Execution:** Follow repository implementation and verification rules. Checked steps reflect observed evidence. The isolation plan revision `b42d121cf1be3afa6e4726ec6b9e538220ad56cb` received fresh plan approval; PR #14 at its corrected head still requires fresh approval.
+> **Execution:** Follow repository implementation and verification rules. Checked steps reflect observed evidence. The isolation plan revision `b42d121cf1be3afa6e4726ec6b9e538220ad56cb` received fresh plan approval; PR #14 was approved and squash-merged.
 
 **Goal:** Produce fixture-backed Eight Palace, Shi/Ying, Na Jia, element, and Six Relative facts for every primary hexagram.
 
@@ -68,14 +68,15 @@
 - [x] Update Observed now to describe merged F02 and completed F03 accurately, and architecture runtime summary to reflect the board calculation.
 - [x] Inspect working tree; run `./init.sh` and record output evidence and limitations. Read-only checks are a final optional follow-up if the tree is safe and stable.
 - [x] Check F03-T01–T10 and acceptance only after evidence passes; mark feature done, append one material progress block, and record one concrete next action.
-- [ ] Commit/push changes, open PR, and send Orca `merge_ready` with exact PR URL, head, tests, and limitations; await fresh review approval before settling task.
+- [x] Commit and push the changes, open PR #14, send `merge_ready`, obtain fresh review approval, and squash-merge the approved head.
 
 ## Verification evidence
 
 - Observed: 64 palace+Shi/Ying classifications; 16 side-specific Na Jia trigram assignments (48 line entries); 12 branch-element mappings; all five relatives across 25 element pairs; board snapshots and public API validation are covered by the F03 fixtures/tests. See the canonical task map at `docs/product-specs/v1-task-map.md` for task evidence requirements.
 - Observed: Parent-run `./init.sh` passed: 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint emitted one pre-existing, non-failing web `react-refresh` warning. This documentation update did not rerun validation.
 - Observed after PR #14 isolation fix: `./init.sh` passed format, lint, TypeScript length check, typecheck, build, 127 core tests in 12 files, and 2 knowledge tests. The two new regressions mutate helper output and assert later helper and `calculateReading` results remain unchanged. The existing non-failing web `react-refresh` warning persists.
-- Handoff: Fresh PR #14 review found a mutable lookup-result leak at head `a7a7e54`; it is locally corrected and verified, but the updated PR head needs fresh review. See `features/feat-004.md` for the next action.
+- Final: Fresh PR #14 review approved head `5dee51279af59c264fed6681ee0caa1d505685fe`; GitHub `verify` and GitGuardian checks passed, and the PR was squash-merged as `994ba1afcc1dcf190808d693dd5f701f06eb4246`. The final documentation-only update passed format, diff, pre-push lint, typecheck, and tests; implementation verification remained unchanged.
+- Handoff: feat-004 is complete. See `features/feat-004.md` for its evidence and the next feature action.
 
 ## Open issues
 
