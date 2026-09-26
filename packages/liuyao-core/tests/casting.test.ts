@@ -96,13 +96,46 @@ describe('casting core', () => {
     expect(calculateReading(result.input)).toEqual(calculateReading({ lines: result.input.lines }));
   });
 
+  it('freezes the cast snapshot and keeps raw coins aligned with each line value', () => {
+    const stream = triples.slice(0, 6).flatMap(({ coins }) => coins);
+    let calls = 0;
+    const result = new CastingService(() => stream[calls++] as 0 | 1).cast();
+    const mutableResult = result as unknown as {
+      tosses: { coins: number[]; line: number }[];
+      input: { lines: number[] };
+    };
+
+    expect(Object.isFrozen(result)).toBe(true);
+    expect(Object.isFrozen(result.tosses)).toBe(true);
+    expect(Object.isFrozen(result.input)).toBe(true);
+    expect(Object.isFrozen(result.input.lines)).toBe(true);
+    for (const toss of result.tosses) {
+      expect(Object.isFrozen(toss)).toBe(true);
+      expect(Object.isFrozen(toss.coins)).toBe(true);
+    }
+
+    expect(() => {
+      mutableResult.tosses[0]!.coins[0] = 1;
+    }).toThrow();
+    expect(() => {
+      mutableResult.input.lines[0] = 9;
+    }).toThrow();
+    expect(result.tosses.map(toss => mapCoinsToLine(toss.coins))).toEqual(
+      result.tosses.map(toss => toss.line),
+    );
+    expect(result.input.lines).toEqual(result.tosses.map(toss => toss.line));
+  });
+
   it('uses exactly three source calls per toss and rejects invalid source output', () => {
     let calls = 0;
     const service = new CastingService(() => {
       calls += 1;
       return 1;
     });
-    expect(service.toss()).toEqual({ coins: [1, 1, 1], line: 9 });
+    const toss = service.toss();
+    expect(toss).toEqual({ coins: [1, 1, 1], line: 9 });
+    expect(Object.isFrozen(toss)).toBe(true);
+    expect(Object.isFrozen(toss.coins)).toBe(true);
     expect(calls).toBe(3);
     for (const invalid of [2, -1, 0.5, Number.NaN, '1', undefined]) {
       expect(() => new CastingService(() => invalid as 0).toss()).toThrow(TypeError);

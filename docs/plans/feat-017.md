@@ -86,13 +86,13 @@ const TRIGRAM_INDEX: Readonly<Record<TrigramId, number>> = Object.freeze({
 - Consumes: CastingService.toss() and CastingService.cast().
 - Produces: Runtime-frozen CoinTossResult and CastingResult values with unchanged line order.
 
-- [ ] Add a cast regression that checks the result, each toss, each coin tuple, the toss array, the input object, and its lines array with Object.isFrozen.
-- [ ] Add mutation attempts for one coin bit and one input line. Assert that each attempt throws and that toss line values still match the input lines.
-- [ ] Run pnpm --filter @liuyao/core test -- casting.test.ts. The new freeze assertions must fail before the fix.
-- [ ] Freeze the copied coin tuple before returning from toss().
-- [ ] Freeze the toss result, the six-toss array, the normalized input lines, the input object, and the outer cast result.
-- [ ] Run pnpm --filter @liuyao/core test -- casting.test.ts.
-- [ ] Commit as fix(core): freeze casting result snapshots.
+- [x] Add a cast regression that checks the result, each toss, each coin tuple, the toss array, the input object, and its lines array with Object.isFrozen.
+- [x] Add mutation attempts for one coin bit and one input line. Assert that each attempt throws and that toss line values still match the input lines.
+- [x] Run pnpm --filter @liuyao/core test -- casting.test.ts. The new freeze assertion failed before the fix because the cast result was mutable.
+- [x] Freeze the copied coin tuple before returning from toss().
+- [x] Freeze the toss result, the six-toss array, the normalized input lines, the input object, and the outer cast result.
+- [x] Run pnpm --filter @liuyao/core test -- casting.test.ts (13 files, 155 tests passed).
+- [x] Commit as fix(core): freeze casting result snapshots.
 
 ### Task 3: Complete knowledge entity, rule, and source records
 
