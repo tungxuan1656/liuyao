@@ -207,3 +207,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed: 41 knowledge tests in 7 files, 155 core tests in 13 files, format, lint/length, typecheck, build, package exports, and test placement. One pre-existing non-failing Fast Refresh warning remains at `apps/web/src/components/ui/button.tsx:49`. Identity decision and earlier direct UI flow/viewports are recorded in `docs/plans/feat-007.md`.
 **Blockers**: Updated PR head still needs plan/PR review. PWA update-badge removal is deferred to feat-011.
 **Next**: Send the verified updated head for plan/PR review and address any findings.
+
+## 2026-09-27 — feat-007 identity decision recorded
+
+**State**: active; plan/PR review pending.
+**Done**: Recorded the explicit approval of Lục Hào as final public name and English as primary interface language in the canonical identity spec. Marked feat-013 F12-T02 complete; kept F12-T04 and all other identity tasks open. Restored the dated provisional-identity decision in the feat-007 plan and reconciled its later approval record.
+**Evidence**: `docs/product-specs/product-identity.md` owns the approval and remaining identity scope; `features/feat-013.md` records T02 complete and T04 open. Feat-007 plan and handoff link to the canonical decision.
+**Blockers**: Feat-007 plan/PR review remains pending; feat-013 identity work remains todo.
+**Next**: Complete feat-007 PR review and merge; leave remaining feat-013 identity decisions for its separately selected feature.

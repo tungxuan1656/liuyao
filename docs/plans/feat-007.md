@@ -15,7 +15,7 @@
 - Reading/question/draft state is in-memory only; refresh may erase it. No history, account, backend, analytics, or generated interpretation.
 - Tests belong in `packages/*/tests`, not under `apps/web`; verify app behavior by typecheck/build and direct browser interaction.
 - Preserve mobile safe areas, responsive navigation, keyboard/accessibility basics, and local/offline operation.
-- Product identity remains provisional until Product Owner approval; do not describe provisional branding as approved.
+- Apply only the approved product name and interface language in this flow; broader release identity decisions remain in `docs/product-specs/product-identity.md` and feat-013.
 
 ---
 
@@ -23,8 +23,10 @@
 
 - 2026-09-26: Keep reading/session state in the existing web app runtime rather than storage; root-tab preservation is achieved by retaining the app-level session while routed destinations change. Reload intentionally starts a fresh session, consistent with `reading-flow.md`.
 - 2026-09-26: Do not implement result-board facts or explanations owned by F07. F06 shows a completion/reading summary using the normalized core output and keeps input recoverable; integrate only existing result contracts needed to demonstrate completion.
+- 2026-09-26: F12 product identity is not approved in `product-identity.md`; retain the repository's current Vietnamese interface conventions and flag branding as provisional rather than asserting F06 has Product Owner approval.
 - 2026-09-27: The user approved the reading-flow UI public name **Lục Hào** and primary interface language **English**. The existing home header and navigation use Lục Hào, and the reading-flow copy is English, so F06-T12 is complete for this feature. This does not approve release metadata or the broader identity/assets owned by feat-013.
 - 2026-09-26: Protect destructive transitions (discarding entered lines and replacing a completed reading) with the existing/native-compatible AlertDialog interaction pattern; preserve draft values on recoverable validation failures.
+- 2026-09-27: Product Owner explicitly approved **Lục Hào** as the final public name and **English** as the primary interface language. This completes F06-T12 and feat-013 F12-T02. F12-T04 remains open because terminology has not been confirmed; other release identity decisions and assets also remain open. Canonical decision: `docs/product-specs/product-identity.md`.
 
 ## Work stages
 
@@ -56,18 +58,18 @@
 
 **Files:** `features/feat-007.md`, `feature_index.json`, `progress.md`, this plan; amend architecture/product-scope summaries only for observed behavior.
 
-- [x] Record evidence against F06-T01–11 and T13–15, run direct compact/wide browser smoke and `./init.sh`, and inspect the working tree before fixers. F06-T12 remains blocked on unapproved Product Owner identity; retain explicit blocked status.
+- [x] Record evidence against F06-T01–15, run direct compact/wide browser smoke and `./init.sh`, and inspect the working tree before fixers. F06-T12 is complete for the approved Lục Hào name and English interface; see the canonical decision in `docs/product-specs/product-identity.md`.
 - [x] Commit and push feature implementation; open draft PR #18 on `tungxuan1656/feat-007-reading-flow` and update its handoff records.
 - [ ] Obtain plan/PR review, address blocking findings, reverify every updated head, and report each new head.
-- [ ] Mark feat-007 done only after F06-T12 identity approval and all acceptance criteria pass; otherwise retain the blocked handoff and next action.
+- [ ] Mark feat-007 done only after plan/PR review and all acceptance criteria pass; retain the active handoff until then.
 
 ## Verification evidence (2026-09-27)
 
-`./init.sh` passed formatting, lint/length, typecheck, build, package exports, test placement, 41 knowledge tests in 7 files, and 155 core tests in 13 files. Initial lint findings in this branch (native dialog cleanup and colocated session hook Fast Refresh) were corrected; the pre-existing button Fast Refresh warning remains.
+`./init.sh` passed formatting, lint/length, typecheck, build, package exports, test placement, 41 knowledge tests in 7 files, and 155 core tests in 13 files. ESLint reported one existing non-failing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
 
 Direct browser smoke used 1024×576 and compact 390×844 emulation. Home showed optional session-only question and all three methods; `/casting` hid root navigation; direct and sequential manual values `[7, 8, 9, 8, 7, 6]` both produced primary `hexagram-63` and changed `hexagram-42`; automatic browser-crypto casting completed with generated values. Checked incomplete guidance, manual Back value retention, Reset/Cancel confirmation, blocked browser Back followed by Keep editing, confirmed discard, completed-reading replacement decline/accept, Reading/Library/Settings tab preservation, and refresh clearing the active reading/question.
 
-F06-T12 is complete for this reading-flow UI: the user approved Lục Hào as the public name and English as the primary interface language; current UI uses both. `docs/product-specs/product-identity.md` still owns broader release identity decisions and feat-013 remains todo. Application tests are not added because `docs/development.md` forbids tests under `apps/web`; direct browser interaction is the UI evidence.
+F06-T12 is complete for this reading-flow UI. The user's approval of Lục Hào and English is recorded canonically in `docs/product-specs/product-identity.md`; broader release identity decisions and assets remain with feat-013. Application tests are not added because `docs/development.md` forbids tests under `apps/web`; direct browser interaction is the UI evidence.
 
 ## Review follow-up (2026-09-27)
 

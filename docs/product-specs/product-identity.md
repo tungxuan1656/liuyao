@@ -4,13 +4,12 @@ This document owns the public V1 product identity and release assets.
 
 ## Release decisions
 
-The current repository name, page title, manifest name, and favicon are provisional.
+The Product Owner approved **Lục Hào** as the final public product name and **English** as the V1 primary interface language on 2026-09-27. The approval does not cover the PWA short name, terminology, description, tagline, visual identity, release metadata, or assets; these remain pending.
 
-The Product Owner must approve these decisions before production launch:
+The Product Owner must approve these remaining decisions before production launch:
 
-- final public product name;
 - short PWA name;
-- primary interface language;
+- terminology;
 - one-sentence product description;
 - tagline, if used;
 - logo mark and wordmark direction;
@@ -62,7 +61,7 @@ The production domain belongs to `docs/release.md` and F13. Product identity con
 
 ## Acceptance
 
-- [ ] The Product Owner approves the final name and release metadata.
+- [ ] The approved public name and primary interface language are applied consistently in the release metadata.
 - [ ] Browser tab, installed PWA, app header, and social preview use the same identity.
 - [ ] Required icon sizes pass manifest and install checks.
 - [ ] Branding assets have documented usage rights.

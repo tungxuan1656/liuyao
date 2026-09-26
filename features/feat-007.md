@@ -31,7 +31,7 @@ A user can start, complete, recover, and restart a reading; active reading prese
 
 - Implementation plan and decision log: `docs/plans/feat-007.md` (plan-only commit `4240b6c`).
 - Full verification passed: `./init.sh` ran format, lint/length, typecheck, build, package exports, test placement, 41 knowledge tests in 7 files, and 155 core tests in 13 files. One pre-existing non-failing Fast Refresh warning remains at `apps/web/src/components/ui/button.tsx:49`. Previous direct browser viewport/state-transition evidence is in `docs/plans/feat-007.md`.
-- F06-T12 is complete for the reading-flow UI: its visible product name and interface language match the user's approval documented in the plan. Release metadata and other identity work remain owned by feat-013.
+- F06-T12 is complete for the reading-flow UI: its visible product name and interface language match the approval recorded in `docs/product-specs/product-identity.md`. Release metadata and other identity work remain owned by feat-013.
 
 ## Tasks
 
@@ -63,6 +63,6 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 ## Handoff
 
 - State: active; implementation and acceptance criteria are locally verified; PR #18 remains draft with plan/PR review pending.
-- Evidence: Existing direct browser flows/viewports and this revision's `./init.sh` evidence are in `docs/plans/feat-007.md`. The user-approved UI identity decision and audit are also recorded there. PR: https://github.com/tungxuan1656/liuyao/pull/18.
+- Evidence: Existing direct browser flows/viewports and this revision's `./init.sh` evidence are in `docs/plans/feat-007.md`. The approved name and language are recorded canonically in `docs/product-specs/product-identity.md`. PR: https://github.com/tungxuan1656/liuyao/pull/18.
 - Dependency check: passed; feat-001, feat-004, feat-005, and feat-017 are done. F06-T12 applies to the reading-flow UI and is complete. Broader release identity remains under feat-013.
 - Next: Send the updated head for plan/PR review, address any further findings, and only then complete the PR handoff.
