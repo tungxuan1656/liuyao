@@ -39,3 +39,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Fresh Codex review approved PR #11 at `052bd46`; GitHub `verify` and GitGuardian checks passed. `./init.sh` and the browser measurements/navigation checks are recorded in `features/feat-001.md`.
 **Blockers**: none.
 **Next**: Begin feat-002 domain contracts.
+
+## 2026-09-26 — feat-002
+
+**State**: active; implementation complete, pending PR review and merge.
+**Done**: F01-T01–T08 domain contracts, typed errors and validation, stable IDs, ordered positions, and reusable package fixtures.
+**Evidence**: `pnpm --filter @liuyao/core test` passed 29 tests; `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Details are in `features/feat-002.md`.
+**Blockers**: none; one pre-existing non-failing web lint warning remains outside F01 scope.
+**Next**: Review and merge the feat-002 PR, then mark feat-002 done.
