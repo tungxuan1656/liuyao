@@ -215,3 +215,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `docs/product-specs/product-identity.md` owns the approval and remaining identity scope; `features/feat-013.md` records T02 complete and T04 open. Feat-007 plan and handoff link to the canonical decision.
 **Blockers**: Feat-007 plan/PR review remains pending; feat-013 identity work remains todo.
 **Next**: Complete feat-007 PR review and merge; leave remaining feat-013 identity decisions for its separately selected feature.
+
+## 2026-09-27 — feat-007 complete
+
+**State**: done; PR #18 merged at `dda7973c12d4191ae43f4260fe661c49717e04ef`.
+**Done**: Closed feat-007 after PR review and acceptance. F06-T12 is complete for the approved Lục Hào name and English interface; broader identity tasks remain with feat-013.
+**Evidence**: PR head `08d19d5` passed CI `verify` and GitGuardian; code review had no blocking findings. `./init.sh` previously passed, with evidence in `docs/plans/feat-007.md`.
+**Blockers**: none for feat-007.
+**Next**: Activate feat-008, already selected in the user's feat-007–012 batch.

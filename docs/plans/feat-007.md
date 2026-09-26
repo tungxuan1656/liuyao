@@ -60,8 +60,8 @@
 
 - [x] Record evidence against F06-T01–15, run direct compact/wide browser smoke and `./init.sh`, and inspect the working tree before fixers. F06-T12 is complete for the approved Lục Hào name and English interface; see the canonical decision in `docs/product-specs/product-identity.md`.
 - [x] Commit and push feature implementation; open draft PR #18 on `tungxuan1656/feat-007-reading-flow` and update its handoff records.
-- [ ] Obtain plan/PR review, address blocking findings, reverify every updated head, and report each new head.
-- [ ] Mark feat-007 done only after plan/PR review and all acceptance criteria pass; retain the active handoff until then.
+- [x] Obtain plan/PR review, address blocking findings, reverify every updated head, and report each new head. PR #18 head `08d19d5` passed CI `verify` and GitGuardian; code review had no blocking findings.
+- [x] Mark feat-007 done after review and all acceptance criteria passed; PR #18 merged at `dda7973c12d4191ae43f4260fe661c49717e04ef`.
 
 ## Verification evidence (2026-09-27)
 
@@ -77,3 +77,9 @@ F06-T12 is complete for this reading-flow UI. The user's approval of Lục Hào 
 - Reset and discard confirmations cannot render together; blocked navigation and explicit cancel share one discard dialog. `ConfirmationDialog` generates unique title/description IDs with React `useId`.
 - Removed the stray `[features/feat-007.md#7450]` artifact from the feature record. PWA update-badge removal remains deferred to feat-011 and was not changed.
 - Full verification for this revision: `./init.sh` passed format, lint/length, typecheck, build, package exports, test placement, 41 knowledge tests in 7 files, and 155 core tests in 13 files. ESLint reported only the existing non-failing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
+
+## Closure evidence (2026-09-27)
+
+- PR #18 head `08d19d5` passed CI `verify` and GitGuardian; code review reported no blocking findings.
+- PR #18 was merged at `dda7973c12d4191ae43f4260fe661c49717e04ef`. `./init.sh` had passed before merge; detailed output is recorded above.
+- Feature accepted and closed. Feat-008 is already selected in the user's feat-007–012 batch and may be activated next.

@@ -62,7 +62,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: active; implementation and acceptance criteria are locally verified; PR #18 remains draft with plan/PR review pending.
-- Evidence: Existing direct browser flows/viewports and this revision's `./init.sh` evidence are in `docs/plans/feat-007.md`. The approved name and language are recorded canonically in `docs/product-specs/product-identity.md`. PR: https://github.com/tungxuan1656/liuyao/pull/18.
-- Dependency check: passed; feat-001, feat-004, feat-005, and feat-017 are done. F06-T12 applies to the reading-flow UI and is complete. Broader release identity remains under feat-013.
-- Next: Send the updated head for plan/PR review, address any further findings, and only then complete the PR handoff.
+- State: done; PR #18 was merged at `dda7973c12d4191ae43f4260fe661c49717e04ef`.
+- Evidence: PR #18 head `08d19d5` passed CI `verify` and GitGuardian; code review had no blocking findings. The updated head was merged; `./init.sh` had passed. Direct browser flows/viewports and prior verification evidence are in `docs/plans/feat-007.md`. The approved name and language are recorded canonically in `docs/product-specs/product-identity.md`. PR: https://github.com/tungxuan1656/liuyao/pull/18.
+- Dependency check: passed; feat-001, feat-004, feat-005, and feat-017 are done. F06-T12 is complete for the approved Lục Hào name and English interface; broader release identity remains under feat-013.
+- Next: Activate feat-008, already selected in the user's feat-007–012 batch.
