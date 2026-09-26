@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useId, useRef, type ReactNode } from 'react';
 
 type ConfirmationDialogProps = {
   title: string;
@@ -18,6 +18,7 @@ export function ConfirmationDialog({
   onCancel,
 }: ConfirmationDialogProps) {
   const ref = useRef<HTMLDialogElement>(null);
+  const id = useId();
 
   useEffect(() => {
     const dialog = ref.current;
@@ -28,16 +29,16 @@ export function ConfirmationDialog({
   return (
     <dialog
       role="alertdialog"
-      aria-labelledby="confirmation-title"
-      aria-describedby="confirmation-description"
+      aria-labelledby={`${id}-title`}
+      aria-describedby={`${id}-description`}
       className="confirmation-dialog"
       onCancel={event => {
         event.preventDefault();
         onCancel();
       }}
     >
-      <h2 id="confirmation-title">{title}</h2>
-      <div id="confirmation-description">{children}</div>
+      <h2 id={`${id}-title`}>{title}</h2>
+      <div id={`${id}-description`}>{children}</div>
       <div className="dialog-actions">
         <button type="button" onClick={onCancel}>
           {cancelLabel}

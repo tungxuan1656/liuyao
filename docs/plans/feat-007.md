@@ -23,7 +23,7 @@
 
 - 2026-09-26: Keep reading/session state in the existing web app runtime rather than storage; root-tab preservation is achieved by retaining the app-level session while routed destinations change. Reload intentionally starts a fresh session, consistent with `reading-flow.md`.
 - 2026-09-26: Do not implement result-board facts or explanations owned by F07. F06 shows a completion/reading summary using the normalized core output and keeps input recoverable; integrate only existing result contracts needed to demonstrate completion.
-- 2026-09-26: F12 product identity is not approved in `product-identity.md`; retain the repository's current Vietnamese interface conventions and flag branding as provisional rather than asserting F06 has Product Owner approval.
+- 2026-09-27: The user approved the reading-flow UI public name **Lục Hào** and primary interface language **English**. The existing home header and navigation use Lục Hào, and the reading-flow copy is English, so F06-T12 is complete for this feature. This does not approve release metadata or the broader identity/assets owned by feat-013.
 - 2026-09-26: Protect destructive transitions (discarding entered lines and replacing a completed reading) with the existing/native-compatible AlertDialog interaction pattern; preserve draft values on recoverable validation failures.
 
 ## Work stages
@@ -33,7 +33,7 @@
 **Files:** `apps/web/src/App.tsx`, `apps/web/src/App.css`, `apps/web/src/components/app-shell.tsx`, `apps/web/src/components/navigation.tsx`, `apps/web/src/routes.ts`, and local UI components as needed; identity audit evidence in feature record.
 
 - [x] Replace the scaffold with Reading home and responsive BottomNav (<768px)/TopNav (>=768px); use existing font, design-token, and safe-area patterns.
-- [x] Directly verify `/` at compact 390×844 and wide 1024×576 viewports, home navigation, safe-area content clearance, and identity/language consistency without claiming unapproved brand decisions.
+- [x] Directly verify `/` at compact 390×844 and wide 1024×576 viewports, home navigation, safe-area content clearance, and identity/language consistency. Re-audited the existing Lục Hào header/navigation and English reading-flow copy against the user's approval for F06-T12.
 
 ### Task 2: Session and entry methods (F06-T03–06, T15)
 
@@ -48,7 +48,7 @@
 **Files:** `apps/web/src/routes.ts`, casting flow components, `apps/web/src/App.css`, and package tests only if a reusable core contract regression is needed.
 
 - [x] Implement focused `/casting` flow with bottom nav hidden, sequential steps for manual/automatic input, and direct six-line entry in visual sixth-to-first order while retaining canonical first-to-sixth data order.
-- [x] Implement Back, Reset, Cancel, and replacement safety using native modal `alertdialog` confirmation where destructive; add browser-native unload protection for entered lines when supported.
+- [x] Implement Back, Reset, Cancel, and replacement safety using native modal `alertdialog` confirmation where destructive; add browser-native unload protection for entered lines when supported. Cancel now confirms before discarding a typed question, destructive dialogs are mutually exclusive, and each dialog uses unique title/description IDs.
 - [x] Reject incomplete/invalid input actionably without clearing entered values; calculate only exactly six valid values through `@liuyao/core`, then return to active Reading result state.
 - [x] Directly exercise cancellation, reset, back preservation, incomplete recovery, successful completion, replacement confirmation/decline, and all root-tab preservation transitions.
 
@@ -67,4 +67,11 @@
 
 Direct browser smoke used 1024×576 and compact 390×844 emulation. Home showed optional session-only question and all three methods; `/casting` hid root navigation; direct and sequential manual values `[7, 8, 9, 8, 7, 6]` both produced primary `hexagram-63` and changed `hexagram-42`; automatic browser-crypto casting completed with generated values. Checked incomplete guidance, manual Back value retention, Reset/Cancel confirmation, blocked browser Back followed by Keep editing, confirmed discard, completed-reading replacement decline/accept, Reading/Library/Settings tab preservation, and refresh clearing the active reading/question.
 
-F06-T12 remains blocked: `docs/product-specs/product-identity.md` has no approved public name or primary language and feat-013 is todo. Current provisional Lục Hào branding/English copy were retained without claiming approval, per coordinator direction. Application tests are not added because `docs/development.md` forbids tests under `apps/web`; direct browser interaction is the UI evidence.
+F06-T12 is complete for this reading-flow UI: the user approved Lục Hào as the public name and English as the primary interface language; current UI uses both. `docs/product-specs/product-identity.md` still owns broader release identity decisions and feat-013 remains todo. Application tests are not added because `docs/development.md` forbids tests under `apps/web`; direct browser interaction is the UI evidence.
+
+## Review follow-up (2026-09-27)
+
+- Cancel from casting setup now asks for confirmation when a question was typed, even if no lines were entered; confirmation discards the draft, while canceling the confirmation preserves it.
+- Reset and discard confirmations cannot render together; blocked navigation and explicit cancel share one discard dialog. `ConfirmationDialog` generates unique title/description IDs with React `useId`.
+- Removed the stray `[features/feat-007.md#7450]` artifact from the feature record. PWA update-badge removal remains deferred to feat-011 and was not changed.
+- Full verification for this revision: `./init.sh` passed format, lint/length, typecheck, build, package exports, test placement, 41 knowledge tests in 7 files, and 155 core tests in 13 files. ESLint reported only the existing non-failing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.

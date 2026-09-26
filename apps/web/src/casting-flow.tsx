@@ -62,7 +62,7 @@ export function CastingFlow() {
   }
 
   function cancelFlow() {
-    if (hasInput) setDiscard(true);
+    if (hasInput || draft?.question.trim()) setDiscard(true);
     else {
       setDraft(null);
       navigate(ROUTES.home);
@@ -218,7 +218,7 @@ export function CastingFlow() {
       {!canCalculate && draft.method === 'manual' && step === 5 && (
         <p role="status">Enter line 6 before calculating. Your previous lines are preserved.</p>
       )}
-      {resetLines && (
+      {blocker.state !== 'blocked' && !discard && resetLines && (
         <ConfirmationDialog
           title="Reset all lines?"
           confirmLabel="Reset lines"
@@ -236,24 +236,19 @@ export function CastingFlow() {
           {error}
         </p>
       )}
-      {blocker.state === 'blocked' && (
+      {(blocker.state === 'blocked' || discard) && (
         <ConfirmationDialog
-          title="Discard active lines?"
-          confirmLabel="Discard and leave"
-          onCancel={() => blocker.reset()}
+          title={hasInput ? 'Discard active lines?' : 'Discard reading setup?'}
+          confirmLabel={hasInput ? 'Discard and leave' : 'Discard setup'}
+          onCancel={() => {
+            if (blocker.state === 'blocked') blocker.reset();
+            setDiscard(false);
+          }}
           onConfirm={discardAndGoHome}
         >
-          Discard active lines and return to reading setup?
-        </ConfirmationDialog>
-      )}
-      {discard && (
-        <ConfirmationDialog
-          title="Discard active lines?"
-          confirmLabel="Discard and return"
-          onCancel={() => setDiscard(false)}
-          onConfirm={discardAndGoHome}
-        >
-          Discard active lines and return to reading setup?
+          {hasInput
+            ? 'Discard active lines and return to reading setup?'
+            : 'Discard the question and casting method and return to reading setup?'}
         </ConfirmationDialog>
       )}
     </main>

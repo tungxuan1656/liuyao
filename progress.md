@@ -199,3 +199,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed with 155 core tests and 41 knowledge tests; direct UI flows/viewports and identity limitation are recorded in `docs/plans/feat-007.md` and `features/feat-007.md`.
 **Blockers**: Plan/PR review pending; feat-013 has not approved the public name or primary language required by F06-T12.
 **Next**: Resolve current-head review feedback and obtain Product Owner identity approval through feat-013; only then complete T12 and mark feat-007 done.
+
+## 2026-09-27 — feat-007 review follow-up
+
+**State**: active; implementation acceptance complete locally; PR #18 plan/PR review remains pending.
+**Done**: Confirmed user approval of Lục Hào and English for the reading-flow UI, completed F06-T12 for this scope, preserved broader identity decisions for feat-013, and fixed typed-question cancel safety, stacked confirmation dialogs, duplicate dialog IDs, and a stray feature-record artifact.
+**Evidence**: `./init.sh` passed: 41 knowledge tests in 7 files, 155 core tests in 13 files, format, lint/length, typecheck, build, package exports, and test placement. One pre-existing non-failing Fast Refresh warning remains at `apps/web/src/components/ui/button.tsx:49`. Identity decision and earlier direct UI flow/viewports are recorded in `docs/plans/feat-007.md`.
+**Blockers**: Updated PR head still needs plan/PR review. PWA update-badge removal is deferred to feat-011.
+**Next**: Send the verified updated head for plan/PR review and address any findings.
