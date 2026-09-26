@@ -14,13 +14,13 @@
     {
       "id": "feat-002",
       "title": "Domain contracts",
-      "status": "active",
+      "status": "done",
       "depends_on": []
     },
     {
       "id": "feat-003",
       "title": "Hexagram calculation",
-      "status": "todo",
+      "status": "active",
       "depends_on": ["feat-002"]
     },
     {

@@ -56,7 +56,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: implementation complete; active pending PR review and merge.
+- State: done; PR #12 merged by squash at `8761e4aa84dcb4ef71816ca03e61f26871f576d9`.
 - Evidence: F01-T01–T08 package tests and `./init.sh` above; plan committed before implementation.
 - Dependency check: none; feat-002 is the sole active feature.
-- Next: Review and merge the feat-002 PR, then mark the feature done.
+- Next: feat-003 is active; implement F02 after confirming its canonical task map and architecture constraints.
