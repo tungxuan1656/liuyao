@@ -50,7 +50,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: todo
-- Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- State: active; selected from the user-approved feat-001–012 batch after feat-005 merged.
+- Evidence: `feature_index.json` records feat-002 and feat-005 done; canonical F05 scope is in `docs/product-specs/v1-task-map.md`.
+- Dependency check: passed; feat-002 is done.
+- Next: Inspect the working tree, read the canonical F05 requirements and licensing boundaries, then commit the implementation plan and request review.

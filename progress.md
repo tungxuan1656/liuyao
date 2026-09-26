@@ -119,3 +119,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed with 153 core tests in 13 files and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing non-failing web `react-refresh` warning remains.
 **Blockers**: Updated PR head requires fresh review approval.
 **Next**: Request fresh review of PR #15 on the corrected head and address any findings.
+
+## 2026-09-26 — feat-005 merged; feat-006 activated
+
+**State**: feat-005 done; feat-006 active.
+**Done**: Squash-merged PR #15 as `bcc89d0` after fresh plan and PR review approval of exact head `5e7815ae35cec1a94b4454f2cc5afac3cdc218c2`; activated feat-006 Knowledge from the user-approved batch.
+**Evidence**: The worker passed `./init.sh` with 153 core tests and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. GitHub `verify` and GitGuardian passed; one pre-existing non-failing web `react-refresh` warning remains.
+**Blockers**: none.
+**Next**: Read the canonical F05 requirements and licensing boundaries, then commit the feat-006 implementation plan and request review.

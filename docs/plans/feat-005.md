@@ -62,9 +62,9 @@
 
 - [x] Inspect working tree before fixers; run `./init.sh`, record exact pass counts and any non-failing warnings, then confirm each F04 acceptance item.
 - [x] Mark feat-005 done only after all acceptance and harness checks pass; append one material progress block and record one concrete next action.
-- [ ] Commit and push scoped implementation, open PR, send merge-ready with head and verification, and wait for fresh PR review approval before settlement.
+- [x] Commit and push scoped implementation, open PR, send merge-ready with head and verification, and wait for fresh PR review approval before settlement.
 
-**Evidence:** Parent-run `./init.sh` passed again after the sparse-triple fix with 153 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. Lint reported one pre-existing non-failing `react-refresh` warning at `apps/web/src/components/ui/button.tsx:49`. Feature acceptance and all F04 implementation tasks are recorded complete; fresh PR review/approval remains pending.
+**Evidence:** Parent-run `./init.sh` passed again after the sparse-triple fix with 153 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. Lint reported one pre-existing non-failing `react-refresh` warning at `apps/web/src/components/ui/button.tsx:49`. Fresh plan and PR reviews approved exact head `5e7815ae35cec1a94b4454f2cc5afac3cdc218c2` against base `215ceb3c0f98c03916003465366adf43a105f164`; GitHub `verify` and GitGuardian passed. PR #15 was squash-merged as `bcc89d0`; the PR description reports 153 core tests. Feature acceptance and all F04 implementation tasks are complete.
 
 ## Verification budget
 
