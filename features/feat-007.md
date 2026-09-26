@@ -64,7 +64,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: active; implementation locally verified; PR pending plan review.
-- Evidence: `./init.sh` passed (155 core, 41 knowledge tests); direct browser flows and viewports are documented in `docs/plans/feat-007.md`.
+- State: blocked; PR #18 is draft and the plan/PR review is pending.
+- Evidence: `./init.sh` passed (155 core, 41 knowledge tests); direct browser flows and viewports are documented in `docs/plans/feat-007.md`. PR: https://github.com/tungxuan1656/liuyao/pull/18.
 - Dependency check: passed; feat-001, feat-004, feat-005, and feat-017 are done. F06-T12 is blocked until Product Owner approves the name and primary language in feat-013.
-- Next: Receive plan-review result, then commit/push the implementation and open its PR; keep the feature not-done until the identity blocker clears.
+- Next: Resolve plan/PR review feedback; then obtain the Product Owner identity decision through feat-013, finish T12, and complete feat-007. Do not mark done before that approval.

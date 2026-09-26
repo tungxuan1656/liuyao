@@ -56,11 +56,12 @@
 
 **Files:** `features/feat-007.md`, `feature_index.json`, `progress.md`, this plan; amend architecture/product-scope summaries only for observed behavior.
 
-- [x] Record evidence against F06-T01–11 and T13–15, run direct compact/wide browser smoke and `./init.sh`, and inspect the working tree before fixers. F06-T12 remains blocked on unapproved Product Owner identity; keep feat-007 active for PR review and handoff, not done.
-- [ ] Mark feat-007 done only after F06-T12 identity approval and all acceptance criteria pass; otherwise retain explicit blocked status and next action in the feature handoff and progress record.
-- [ ] Commit and push feature implementation; open PR; stop editing a reported head pending review, address blocking feedback, reverify and report each updated head.
+- [x] Record evidence against F06-T01–11 and T13–15, run direct compact/wide browser smoke and `./init.sh`, and inspect the working tree before fixers. F06-T12 remains blocked on unapproved Product Owner identity; retain explicit blocked status.
+- [x] Commit and push feature implementation; open draft PR #18 on `tungxuan1656/feat-007-reading-flow` and update its handoff records.
+- [ ] Obtain plan/PR review, address blocking findings, reverify every updated head, and report each new head.
+- [ ] Mark feat-007 done only after F06-T12 identity approval and all acceptance criteria pass; otherwise retain the blocked handoff and next action.
 
-## Verification evidence (2026-09-26)
+## Verification evidence (2026-09-27)
 
 `./init.sh` passed formatting, lint/length, typecheck, build, package exports, test placement, 41 knowledge tests in 7 files, and 155 core tests in 13 files. Initial lint findings in this branch (native dialog cleanup and colocated session hook Fast Refresh) were corrected; the pre-existing button Fast Refresh warning remains.
 
