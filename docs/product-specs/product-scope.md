@@ -7,7 +7,7 @@ This document owns durable product boundaries. Detailed V1 behavior lives in the
 - `apps/web` is an installable React and Vite PWA shell.
 - `@liuyao/core` validates line values, identifies primary and changed hexagrams, and calculates structured Eight Palace, Shi/Ying, Na Jia, element, and Six Relative board facts.
 - `@liuyao/core` deterministically maps three coin bits to line values, provides an injected-source casting service, and normalizes sequential and direct six-line input; `apps/web` supplies the browser crypto adapter.
-- `@liuyao/knowledge` exposes package metadata and a data directory.
+- `@liuyao/knowledge` provides local display metadata for all 8 trigrams and 64 hexagrams, result-fact terms and rules, bibliographic records, validated readonly lookups, and normalized search.
 - Package Vitest suites verify the current core and knowledge APIs.
 - The repository has CI but no production deployment workflow.
 - Current public name, manifest metadata, and favicon are provisional until product identity is approved.

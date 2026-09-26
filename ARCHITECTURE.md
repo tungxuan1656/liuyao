@@ -74,7 +74,7 @@ Do not move durable facts into feature or progress records.
 4. The UI reads descriptive material from `@liuyao/knowledge`.
 5. The UI renders facts and reference knowledge.
 
-The core validates reading input, maps three coin bits to line values, provides an injected-source casting service and normalizers, identifies primary and changed hexagrams from six lines, reports changing positions, and calculates structured primary-hexagram board facts including palace, Shi/Ying, Na Jia, elements, and Six Relatives. The web layer adapts browser `crypto.getRandomValues` to the injected coin-bit source; core uses no browser globals.
+The core validates reading input, maps three coin bits to line values, provides an injected-source casting service and normalizers, identifies primary and changed hexagrams from six lines, reports changing positions, and calculates structured primary-hexagram board facts including palace, Shi/Ying, Na Jia, elements, and Six Relatives. The web layer adapts browser `crypto.getRandomValues` to the injected coin-bit source; core uses no browser globals. The knowledge package validates local reference records and exposes readonly lookup and normalized search APIs without calculating facts.
 
 ## Verification ownership
 
