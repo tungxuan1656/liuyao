@@ -25,6 +25,7 @@
 - 2026-09-26: Search normalizes case, Unicode combining marks, punctuation, and spacing locally. Return canonical readonly records in deterministic catalog order; never return mutable shared state.
 - 2026-09-26: A source-reference record must link an existing source and at least one existing knowledge entity, term, or rule. Validator rejects duplicates, missing references, malformed IDs, and unsupported rulesets before lookup construction.
 - 2026-09-26 review: Package builds include `data/*.ts` because runtime lookups import curated records. Keep the package private: its AGPL reader code and All-Rights-Reserved content cannot be represented by one homogeneous package license field. Type-check package tests separately without adding a runtime dependency on core.
+- 2026-09-26 review: Keep the 64-name/number/trigram expected fixture independent of catalog data; compare displayed result fields to the core contract in package tests only, without a runtime core import.
 
 ## Work stages
 
@@ -34,7 +35,7 @@
 
 **Interfaces:** `KnowledgeEntity`, `KnowledgeTerm`, `KnowledgeRule`, `KnowledgeSource`, `SourceReference`, `KnowledgeCatalog`; `validateKnowledgeCatalog(catalog: KnowledgeCatalog): void` throws for duplicate IDs, invalid shapes, broken references or unsupported ruleset. Entity IDs follow the core's existing patterns; other IDs use their namespace prefixes.
 
-- [x] Test valid fixtures, invalid/missing fields, duplicate IDs within and across collections, broken entity/rule/source links, unsupported ruleset, and duplicate source-reference IDs.
+- [x] Test valid fixtures, invalid/missing fields, duplicate IDs within and across collections, broken entity/rule/term/source links (including a `term-missing` regression), unsupported ruleset, and duplicate source-reference IDs.
 - [x] Implement typed readonly contracts and runtime validation with descriptive errors; run `pnpm --filter @liuyao/knowledge test` and `pnpm --filter @liuyao/knowledge typecheck`.
 
 ### Task 2: Curated V1 catalog and provenance (F05-T03–T09)
@@ -43,12 +44,12 @@
 
 **Interfaces:** `catalog: KnowledgeCatalog` combines exactly 8 `TrigramEntity`, 64 `HexagramEntity`, result-board terms and explanatory rules, and source/reference records. Each entity has a stable ID, canonical display name, and supported aliases; each hexagram has its King Wen number and upper/lower trigram IDs.
 
-- [x] Test the 8/64 counts, exact stable IDs, representative known name/pair cases and all 64 unique upper/lower pairs.
+- [x] Test the 8/64 counts, exact stable IDs, and all 64 unique upper/lower pairs. An independent rights-safe grid fixture asserts each hexagram's name, King Wen number, and upper/lower trigram IDs, rather than deriving expected values from the catalog's own matrix.
 - [x] Write original concise display records and test required result concepts: yin/yang, moving lines, upper/lower trigrams, primary/changed hexagram, palace, Shi/Ying, Na Jia stems/branches, Five Elements, Six Relatives and five relations.
-- [x] Add short explanatory rules keyed by stable IDs for displayed deterministic facts, explicitly distinguishing convention from prediction; audit coverage against `ReadingResult` and line fields in core.
+- [x] Add short explanatory rules keyed by stable IDs for displayed deterministic facts, explicitly distinguishing convention from prediction. Assert an exhaustive mapping of all `ReadingResult` and `PrimaryLineResult` field names against core contracts and check every mapped rule ID exists (see field-to-rule map below).
 - [x] Add bibliographic records with provenance/rights and only verified source locations; audit every reference link and every authored description against `LICENSING.md`. Run focused tests.
 
-### Task 3: Readonly lookup and normalized local search (F05-T10–T12)
+### Task 3: Readonly lookup and normalized local search (F05-T11–T12)
 
 **Files:** Create `packages/knowledge/src/catalog.ts`, `packages/knowledge/src/search.ts`, `packages/knowledge/tests/lookup.test.ts`, `packages/knowledge/tests/search.test.ts`; modify `packages/knowledge/src/index.ts`.
 
@@ -68,6 +69,28 @@
 
 ## Verification budget
 
+### Displayed fact-to-rule map
+
+| Result fields                                              | Stable rule ID               |
+| ---------------------------------------------------------- | ---------------------------- |
+| `ruleset`                                                  | `rule-reading-result-fields` |
+| `lines`                                                    | `rule-line-position-order`   |
+| `primaryHexagramId`, `lowerTrigramId`, `upperTrigramId`    | `rule-trigram-composition`   |
+| `changedHexagramId`                                        | `rule-moving-line-change`    |
+| `palaceId`, `palaceElement`, `shiPosition`, `yingPosition` | `rule-palace-and-markers`    |
+
+| Primary line fields        | Stable rule ID                     |
+| -------------------------- | ---------------------------------- |
+| `position`                 | `rule-line-position-order`         |
+| `inputValue`, `polarity`   | `rule-line-polarity-values`        |
+| `changing`                 | `rule-moving-line-change`          |
+| `naJiaStem`, `naJiaBranch` | `rule-na-jia-assignment`           |
+| `element`                  | `rule-branch-element`              |
+| `relative`                 | `rule-six-relative-classification` |
+| `shiYing`                  | `rule-palace-and-markers`          |
+
+`tests/content.test.ts` reads the core contract as a test-only fixture to fail on added/removed fields; runtime knowledge code does not depend on core. `rule-five-element-cycles` additionally explains the classification cycle behind `relative` and is checked as required rule content.
+
 - Package tests establish schema integrity, identity and 8/64 completeness, required term/rule coverage, source-reference integrity, immutability, and normalized search.
 - Source inspection establishes independent authored wording, rights metadata, and honest absent citation locations; no test can prove copyright ownership.
 - `./init.sh` checks repository format, lint, TypeScript length, typecheck, build, and package tests. Record any unrelated non-failing warnings separately.
@@ -75,3 +98,5 @@
 ## Verification evidence (2026-09-26)
 
 `./init.sh` passed format, lint and TypeScript length checks, typecheck, build, and package tests: 31 knowledge tests in 6 files and 153 core tests in 13 files. Lint reported the pre-existing non-failing `react-refresh/only-export-components` warning at `apps/web/src/components/ui/button.tsx:49`. The first run failed web build because this worktree lacked the optional `@tailwindcss/oxide-darwin-arm64` binding; `pnpm install --frozen-lockfile --force` restored the binding without source or lockfile changes, and the subsequent complete `./init.sh` passed. Focused package tests cover F05-T01–T12; source records contain original factual paraphrases and explicitly omit unverified Jingshi locations. No initial red-test transcript was retained, so checked coverage steps assert current tests rather than an observed initial failure.
+
+Review correction: `./init.sh` passed again after adding the broken-term-reference regression, all-64 independent fixture, and exhaustive result/line field-to-rule mapping. The current run passed format, lint, TypeScript length, typecheck, build, test placement, 34 knowledge tests across 6 files, and 153 core tests across 13 files. The same pre-existing non-failing web Fast Refresh warning remains at `apps/web/src/components/ui/button.tsx:49`.

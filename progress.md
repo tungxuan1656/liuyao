@@ -135,3 +135,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 31 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web `react-refresh` warning remains. The first web build failed on a missing optional native Tailwind binding; a forced frozen-lockfile reinstall restored it before the successful full run. Details: `docs/plans/feat-006.md`.
 **Blockers**: Fresh plan and PR review approval and merge remain; no unverified source locator was invented.
 **Next**: Submit the current head for fresh plan and PR review, address findings, then hand off for merge.
+
+## 2026-09-26 — feat-006 plan review follow-up
+
+**State**: done locally; fresh plan and PR review pending.
+**Done**: Resolved plan review findings with broken-term-reference validation, independent 64-hexagram identity fixtures, and exhaustive displayed-fact-to-rule coverage; removed duplicate task ownership of F05-T10.
+**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 34 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web Fast Refresh lint warning remains; details are in `docs/plans/feat-006.md`.
+**Blockers**: Current-head plan and PR approval and merge remain pending.
+**Next**: Request fresh plan review on the corrected head, then resolve any findings before requesting PR review.

@@ -51,8 +51,8 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 ## Plan and evidence
 
 - Implementation plan and decision log: `docs/plans/feat-006.md` (plan-only commit `50aef2e`).
-- Package tests: 31 knowledge tests in 6 files cover schema/IDs, 8/64 metadata, result terminology and rules, source links, lookup immutability, and normalized search.
-- Full `./init.sh` passed format, lint, TypeScript length, typecheck, build, 31 knowledge tests, and 153 core tests. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`.
+- Package tests: 34 knowledge tests in 6 files cover schema/IDs, independent 8/64 metadata, exhaustive result field-to-rule coverage, source links, lookup immutability, and normalized search.
+- Full `./init.sh` passed format, lint, TypeScript length, typecheck, build, 34 knowledge tests, and 153 core tests. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`.
 - First harness run failed on a missing optional native Tailwind binding in this checkout. `pnpm install --frozen-lockfile --force` restored it without source changes; fresh full verification passed.
 
 ## Handoff

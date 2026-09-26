@@ -1,13 +1,58 @@
 import { describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
 import { REFERENCES } from '../data/references';
 import { RULES } from '../data/rules';
 import { SOURCES } from '../data/sources';
 import { TERMS } from '../data/terms';
 
+// Every displayed field in packages/liuyao-core/src/contracts.ts is mapped to
+// a stable explanatory rule; keep this exhaustive when that contract changes.
+const RESULT_RULES = {
+  ruleset: 'rule-reading-result-fields',
+  lines: 'rule-line-position-order',
+  primaryHexagramId: 'rule-trigram-composition',
+  changedHexagramId: 'rule-moving-line-change',
+  lowerTrigramId: 'rule-trigram-composition',
+  upperTrigramId: 'rule-trigram-composition',
+  palaceId: 'rule-palace-and-markers',
+  palaceElement: 'rule-palace-and-markers',
+  shiPosition: 'rule-palace-and-markers',
+  yingPosition: 'rule-palace-and-markers',
+} as const;
+const LINE_RULES = {
+  position: 'rule-line-position-order',
+  inputValue: 'rule-line-polarity-values',
+  polarity: 'rule-line-polarity-values',
+  changing: 'rule-moving-line-change',
+  naJiaStem: 'rule-na-jia-assignment',
+  naJiaBranch: 'rule-na-jia-assignment',
+  element: 'rule-branch-element',
+  relative: 'rule-six-relative-classification',
+  shiYing: 'rule-palace-and-markers',
+} as const;
+
+function contractFields(interfaceName: string): string[] {
+  const contracts = readFileSync(
+    new URL('../../liuyao-core/src/contracts.ts', import.meta.url),
+    'utf8',
+  );
+  const body = contracts.match(new RegExp(`export interface ${interfaceName} \\{([^}]+)\\}`))?.[1];
+  if (!body) throw new Error(`Missing ${interfaceName} in core contracts`);
+  return [...body.matchAll(/^\s*(\w+)\??:/gm)].map(match => match[1]!);
+}
+
 describe('curated V1 content', () => {
   const termIds = new Set(TERMS.map(({ id }) => id));
   const ruleIds = new Set(RULES.map(({ id }) => id));
   const sourceIds = new Set(SOURCES.map(({ id }) => id));
+
+  it('maps every ReadingResult and line fact to an existing stable explanatory rule', () => {
+    expect(Object.keys(RESULT_RULES).sort()).toEqual(contractFields('ReadingResult').sort());
+    expect(Object.keys(LINE_RULES).sort()).toEqual(contractFields('PrimaryLineResult').sort());
+    for (const [field, ruleId] of Object.entries({ ...RESULT_RULES, ...LINE_RULES })) {
+      expect(ruleIds, `${field}: ${ruleId}`).toContain(ruleId);
+    }
+  });
 
   it('covers ReadingResult and PrimaryLineResult facts with terms and explanatory rules', () => {
     const requiredTerms = [

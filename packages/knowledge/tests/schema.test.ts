@@ -148,6 +148,13 @@ describe('knowledge schema and validation', () => {
       }),
     ],
     [
+      'broken term reference',
+      (catalog: KnowledgeCatalog) => ({
+        ...catalog,
+        references: [{ ...catalog.references[0], targetIds: ['term-missing'] }],
+      }),
+    ],
+    [
       'missing hexagram trigram',
       (catalog: KnowledgeCatalog) => ({
         ...catalog,
