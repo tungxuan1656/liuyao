@@ -46,9 +46,13 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 - `feat-002`
 
+## Implementation plan
+
+- `docs/plans/feat-003.md` (plan only; implementation not started).
+
 ## Handoff
 
-- State: todo
+- State: active; plan ready, implementation pending
 - Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- Dependency check: `feat-002` is done.
+- Next: Execute the F02 plan without implementing F03 board facts.
