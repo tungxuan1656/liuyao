@@ -74,7 +74,7 @@ Do not move durable facts into feature or progress records.
 4. The UI reads descriptive material from `@liuyao/knowledge`.
 5. The UI renders facts and reference knowledge.
 
-The core validates reading input, identifies primary and changed hexagrams from six lines, and reports changing positions. F03 board calculations remain future work.
+The core validates reading input, identifies primary and changed hexagrams from six lines, reports changing positions, and calculates structured primary-hexagram board facts including palace, Shi/Ying, Na Jia, elements, and Six Relatives.
 
 ## Verification ownership
 

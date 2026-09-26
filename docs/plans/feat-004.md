@@ -1,6 +1,6 @@
 # Liu Yao Board Implementation Plan
 
-> **Execution:** Follow repository implementation and verification rules. Check off steps after evidence is observed. Submit this plan for Orca review before implementation.
+> **Execution:** Follow repository implementation and verification rules. Check off steps after evidence is observed. The plan revision at `28e13b6` is pending fresh feedback; do not treat that as approval.
 
 **Goal:** Produce fixture-backed Eight Palace, Shi/Ying, Na Jia, element, and Six Relative facts for every primary hexagram.
 
@@ -35,8 +35,8 @@
 
 **Interfaces:** `identifyPalace(hexagramId: HexagramId): { palaceId: PalaceId; palaceElement: FiveElement; shiPosition: ResultLinePosition; yingPosition: ResultLinePosition }`.
 
-- [ ] Transcribe all 64 independent expected `(hexagram ID, palace ID, Shi, Ying)` tuples from Jing's eight palace rows, independently resolve named hexagrams to King Wen IDs with the F02 Stanford fixture, annotate both fixture sources and verify exactly eight entries per palace and every stable ID once.
-- [ ] Run `pnpm --filter @liuyao/core test` with failing palace fixtures, then implement pure palace lookup and element mapping; verify all 64 fixtures, eight elements, and wraparound markers.
+- [x] Transcribe all 64 independent expected `(hexagram ID, palace ID, Shi, Ying)` tuples from Jing's eight palace rows, independently resolve named hexagrams to King Wen IDs with the F02 Stanford fixture, annotate both fixture sources and verify exactly eight entries per palace and every stable ID once.
+- [x] Implement pure palace lookup and element mapping; verify all 64 fixtures, eight elements, and wraparound markers with `pnpm --filter @liuyao/core test`. Historical red-phase output was not retained.
 
 ### Task 2: Na Jia and branch elements (F03-T04–T07)
 
@@ -44,8 +44,8 @@
 
 **Interfaces:** `assignNaJia(trigram: TrigramId, side: 'inner' | 'outer'): readonly [ { stem: HeavenlyStem; branch: EarthlyBranch }, { stem: HeavenlyStem; branch: EarthlyBranch }, { stem: HeavenlyStem; branch: EarthlyBranch } ]`; `branchElement(branch: EarthlyBranch): FiveElement`.
 
-- [ ] Add independent 8 × 2 × 3 stem/branch fixture cases from the cited Na Jia verse/table; assert both sides of every trigram, especially heaven `jia/ren` and earth `yi/gui`, and all 12 branch-to-element cases.
-- [ ] Observe failing fixture tests, then implement explicit, complete side-specific tables and element map; run focused tests and package typecheck.
+- [x] Add independent 8 × 2 × 3 stem/branch fixture cases from the cited Na Jia verse/table; assert both sides of every trigram, especially heaven `jia/ren` and earth `yi/gui`, and all 12 branch-to-element cases.
+- [x] Implement explicit, complete side-specific tables and element map; run focused tests and package typecheck. Historical red-phase output was not retained.
 
 ### Task 3: Six Relatives and full board (F03-T08–T10)
 
@@ -53,23 +53,24 @@
 
 **Interfaces:** `sixRelative(palaceElement: FiveElement, lineElement: FiveElement): SixRelative`; `calculateReading(input: unknown): ReadingResult`. Reuse `calculateHexagram` and `validateReadingInput` for unchanged validation semantics; build exactly six `PrimaryLineResult` values by position with polarity, moving flag, Na Jia stem/branch, branch element, Six Relative, and optional Shi/Ying markers.
 
-- [ ] Test all 25 palace/line-element combinations against five generation/control relations; add independently expected board snapshots for pure heaven, pure earth, mixed inner/outer trigrams, moving input, no changes, and invalid input.
-- [ ] Observe failures before implementation. Compose the six facts without reversing input or mutating it; preserve existing F02 API and return only typed IDs/enums/numbers/booleans, never explanatory prose.
-- [ ] Run package tests and typecheck; audit public exports, six ordered results, 64 classifications, all five relations, and the absence of new dependency edges.
+- [x] Test all 25 palace/line-element combinations against five generation/control relations; add independently expected board snapshots for pure heaven, pure earth, mixed inner/outer trigrams, moving input, no changes, and invalid input.
+- [x] Compose the six facts without reversing input or mutating it; preserve existing F02 API and return only typed IDs/enums/numbers/booleans, never explanatory prose. Historical red-phase output was not retained.
+- [x] Run package tests and typecheck; audit public exports, six ordered results, 64 classifications, all five relations, and the absence of new dependency edges.
 
 ### Task 4: Documentation, verification, and handoff
 
 **Files:** Modify `docs/product-specs/product-scope.md`, `ARCHITECTURE.md`, `features/feat-004.md`, `feature_index.json`, `progress.md`, and this plan. Do not change other features.
 
-- [ ] Update Observed now to describe merged F02 and completed F03 accurately, and architecture runtime summary to reflect the board calculation.
-- [ ] Inspect working tree; run `./init.sh`, record exact output evidence and known limitations. If safe, run read-only `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build` as final clean-tree checks.
-- [ ] Check F03-T01–T10 and acceptance only after evidence passes; mark feature done, append one material progress block, and record one concrete next action.
+- [x] Update Observed now to describe merged F02 and completed F03 accurately, and architecture runtime summary to reflect the board calculation.
+- [x] Inspect working tree; run `./init.sh` and record output evidence and limitations. Read-only checks are a final optional follow-up if the tree is safe and stable.
+- [x] Check F03-T01–T10 and acceptance only after evidence passes; mark feature done, append one material progress block, and record one concrete next action.
 - [ ] Commit/push changes, open PR, and send Orca `merge_ready` with exact PR URL, head, tests, and limitations; await fresh review approval before settling task.
 
 ## Verification evidence
 
-- Planned: 64 independently transcribed palace+Shi/Ying fixtures; full 16 side-specific Na Jia trigram assignments (48 line entries); 12 branch elements; all five relatives across the 25 element pairs; structured board snapshots and public API validation.
-- Planned: `pnpm --filter @liuyao/core test`, package typecheck, `./init.sh`; record actual totals/results here and in the feature handoff only after execution.
+- Observed: 64 palace+Shi/Ying classifications; 16 side-specific Na Jia trigram assignments (48 line entries); 12 branch-element mappings; all five relatives across 25 element pairs; board snapshots and public API validation are covered by the F03 fixtures/tests. See the canonical task map at `docs/product-specs/v1-task-map.md` for task evidence requirements.
+- Observed: Parent-run `./init.sh` passed: 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint emitted one pre-existing, non-failing web `react-refresh` warning. This documentation update did not rerun validation.
+- Handoff: Plan revision `28e13b6` is pending fresh feedback. PR review and merge remain outstanding; see `features/feat-004.md` for the next action.
 
 ## Open issues
 

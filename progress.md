@@ -71,3 +71,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Feature dependency records in `feature_index.json` and `features/feat-004.md` were checked before activation.
 **Blockers**: none.
 **Next**: Commit `docs/plans/feat-004.md` and obtain fresh Orca plan review.
+
+## 2026-09-26 — feat-004
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F03-T01–T10: Eight Palace and Shi/Ying classification, Na Jia stems and branches, element mapping, Six Relatives, and six structured board lines; updated the product-scope and architecture summaries.
+**Evidence**: Parent-run `./init.sh` passed 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fixture and acceptance details remain linked in `features/feat-004.md` and `docs/product-specs/v1-task-map.md`.
+**Blockers**: Plan revision `28e13b6` is pending fresh feedback; PR review and merge are not complete.
+**Next**: Obtain fresh PR review feedback, address it, and merge after approval.
