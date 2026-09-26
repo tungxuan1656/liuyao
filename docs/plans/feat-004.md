@@ -1,6 +1,6 @@
 # Liu Yao Board Implementation Plan
 
-> **Execution:** Follow repository implementation and verification rules. Check off steps after evidence is observed. The plan revision at `28e13b6` is pending fresh feedback; do not treat that as approval.
+> **Execution:** Follow repository implementation and verification rules. Checked steps reflect observed evidence. The isolation plan revision `b42d121` received fresh plan approval; PR #14 at its corrected head still requires fresh approval.
 
 **Goal:** Produce fixture-backed Eight Palace, Shi/Ying, Na Jia, element, and Six Relative facts for every primary hexagram.
 
@@ -35,7 +35,7 @@
 
 **Files:** Create `packages/liuyao-core/src/palaces.ts`, `packages/liuyao-core/tests/palace-fixtures.ts`, `packages/liuyao-core/tests/palaces.test.ts`.
 
-**Interfaces:** `identifyPalace(hexagramId: HexagramId): { palaceId: PalaceId; palaceElement: FiveElement; shiPosition: ResultLinePosition; yingPosition: ResultLinePosition }`.
+**Interfaces:** `identifyPalace(hexagramId: HexagramId): PalaceClassification`, where `PalaceClassification` has `readonly palaceId: PalaceId`, `readonly palaceElement: FiveElement`, `readonly shiPosition: ResultLinePosition`, and `readonly yingPosition: ResultLinePosition`.
 
 - [x] Transcribe all 64 independent expected `(hexagram ID, palace ID, Shi, Ying)` tuples from Jing's eight palace rows, independently resolve named hexagrams to King Wen IDs with the F02 Stanford fixture, annotate both fixture sources and verify exactly eight entries per palace and every stable ID once.
 - [x] Implement pure palace lookup and element mapping; verify all 64 fixtures, eight elements, and wraparound markers with `pnpm --filter @liuyao/core test`. Historical red-phase output was not retained.
@@ -45,7 +45,7 @@
 
 **Files:** Create `packages/liuyao-core/src/na-jia.ts`, `packages/liuyao-core/tests/na-jia.test.ts`.
 
-**Interfaces:** `assignNaJia(trigram: TrigramId, side: 'inner' | 'outer'): readonly [ { stem: HeavenlyStem; branch: EarthlyBranch }, { stem: HeavenlyStem; branch: EarthlyBranch }, { stem: HeavenlyStem; branch: EarthlyBranch } ]`; `branchElement(branch: EarthlyBranch): FiveElement`.
+**Interfaces:** `assignNaJia(trigram: TrigramId, side: 'inner' | 'outer'): readonly [NaJiaAssignment, NaJiaAssignment, NaJiaAssignment]`, where `NaJiaAssignment` has `readonly stem: HeavenlyStem` and `readonly branch: EarthlyBranch`; `branchElement(branch: EarthlyBranch): FiveElement`.
 
 - [x] Add independent 8 × 2 × 3 stem/branch fixture cases from the cited Na Jia verse/table; assert both sides of every trigram, especially heaven `jia/ren` and earth `yi/gui`, and all 12 branch-to-element cases.
 - [x] Implement explicit, complete side-specific tables and element map; run focused tests and package typecheck. Historical red-phase output was not retained.
