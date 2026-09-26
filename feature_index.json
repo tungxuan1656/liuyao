@@ -45,13 +45,13 @@
       "id": "feat-007",
       "title": "Reading flow",
       "status": "todo",
-      "depends_on": ["feat-001", "feat-004", "feat-005"]
+      "depends_on": ["feat-001", "feat-004", "feat-005", "feat-017"]
     },
     {
       "id": "feat-008",
       "title": "Result view",
       "status": "todo",
-      "depends_on": ["feat-001", "feat-004", "feat-006", "feat-007"]
+      "depends_on": ["feat-001", "feat-004", "feat-006", "feat-007", "feat-017"]
     },
     {
       "id": "feat-009",
@@ -111,6 +111,12 @@
       "title": "Launch",
       "status": "todo",
       "depends_on": ["feat-012", "feat-014", "feat-015"]
+    },
+    {
+      "id": "feat-017",
+      "title": "Pre-flow hardening",
+      "status": "active",
+      "depends_on": ["feat-001", "feat-002", "feat-003", "feat-004", "feat-005", "feat-006"]
     }
   ]
 }
