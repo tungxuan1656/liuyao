@@ -274,14 +274,14 @@ for name in ("noto-serif-cjk-knowledge.woff2", "noto-sans-cjk-knowledge.woff2"):
 - Modify: docs/plans/feat-017.md
 - Modify: progress.md
 
-- [ ] Add feat-017 with dependencies on feat-001 through feat-006.
-- [ ] Add feat-017 as a dependency of feat-007 and feat-008. Keep both features todo.
-- [ ] Run ./init.sh after all implementation and font changes.
-- [ ] Review every acceptance criterion in features/feat-017.md against code, tests, source references, font cmap checks, and command output.
-- [ ] Record exact verification counts, the existing lint warning, and the PR state in features/feat-017.md.
-- [ ] Mark feat-017 done only after every acceptance criterion passes.
-- [ ] Append one material result block to progress.md.
-- [ ] Commit as docs(feat-017): record hardening evidence.
+- [x] Add feat-017 with dependencies on feat-001 through feat-006.
+- [x] Add feat-017 as a dependency of feat-007 and feat-008. Keep both features todo.
+- [x] Run ./init.sh after all implementation and font changes.
+- [x] Review every acceptance criterion in features/feat-017.md against code, tests, source references, font cmap checks, and command output.
+- [x] Record exact verification counts, the existing lint warning, and the current PR state in features/feat-017.md.
+- [x] Mark feat-017 done only after every acceptance criterion passes.
+- [x] Append one material result block to progress.md.
+- [x] Commit as docs: record feat-017 verification and handoff.
 - [ ] Push feat/017-preflow-hardening and open a PR against main. Stop before merge.
 
 ## Verification commands

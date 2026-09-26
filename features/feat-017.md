@@ -17,14 +17,14 @@ Make the core, casting, knowledge, package, and font contracts safe before readi
 
 ## Acceptance
 
-- [ ] Core inventory mutation cannot change hexagram calculation.
-- [ ] Casting results and nested raw toss data are immutable at runtime.
-- [ ] Every knowledge entity has an explanation and every rule has a category.
-- [ ] Production fact definitions map all result fields to rules; every mapped rule has a source reference.
-- [ ] Knowledge tests detect core ID or 64-hexagram grid drift without a runtime package dependency.
-- [ ] Workspace package exports resolve built ESM and declaration files; a Node smoke check passes.
-- [ ] Local CJK knowledge text is covered by both bundled CJK fonts.
-- [ ] ./init.sh passes.
+- [x] Core inventory mutation cannot change hexagram calculation.
+- [x] Casting results and nested raw toss data are immutable at runtime.
+- [x] Every knowledge entity has an explanation and every rule has a category.
+- [x] Production fact definitions map all result fields to rules; every mapped rule has a source reference.
+- [x] Knowledge tests detect core ID or 64-hexagram grid drift without a runtime package dependency.
+- [x] Workspace package exports resolve built ESM and declaration files; a Node smoke check passes.
+- [x] Local CJK knowledge text is covered by both bundled CJK fonts.
+- [x] ./init.sh passes.
 
 ## Relevant docs
 
@@ -45,6 +45,7 @@ Make the core, casting, knowledge, package, and font contracts safe before readi
 
 ## Handoff
 
-- State: active
-- Evidence: Baseline ./init.sh passed with 34 knowledge tests, 153 core tests, and one existing Fast Refresh warning.
-- Next: Implement Task 1 in docs/plans/feat-017.md.
+- State: done locally; PR creation and review pending.
+- Evidence: Final ./init.sh passed with 155 core tests in 13 files and 41 knowledge tests in 7 files; typecheck, builds, package-export smoke check, test-placement check, format, and TypeScript length checks passed. Lint reported one pre-existing Fast Refresh warning at apps/web/src/components/ui/button.tsx:49. Both CJK font cmaps cover all 92 manifest codepoints. Mutation regressions reproduced the incorrect hexagram and mutable cast snapshot before their fixes.
+- Blockers: PR creation and fresh review are pending; this branch has not been merged.
+- Next: Push feat/017-preflow-hardening and open a PR targeting main.

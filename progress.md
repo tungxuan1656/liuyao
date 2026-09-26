@@ -151,3 +151,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Fresh plan and PR reviews approved exact head `e6382698f88fdfdaa573b49a4c051cd6fa6409aa`; GitHub `verify` and GitGuardian passed. `./init.sh` passed with 34 knowledge tests and 153 core tests; one pre-existing non-failing web Fast Refresh warning remains. Evidence and sourcing limits are in `docs/plans/feat-006.md`.
 **Blockers**: none.
 **Next**: Stop after feat-006 as instructed; leave later features todo until selected again.
+
+## 2026-09-26 — feat-017 pre-flow hardening
+
+**State**: done locally; PR creation and fresh review pending.
+**Done**: Hardened core ID inventories and casting snapshots, completed the knowledge entity/rule/source model, added production fact-to-rule lookup and core drift tests, switched package defaults to built Node ESM, and expanded local CJK font coverage. Added feat-017 as a dependency of feat-007 and feat-008; both remain todo.
+**Evidence**: Final `./init.sh` passed with 155 core tests in 13 files and 41 knowledge tests in 7 files. Build, typecheck, Node package-export smoke check, test placement, formatting, and TypeScript length checks passed. The only lint output was one pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`. FontTools 4.66.0/Brotli 1.2.0 verified 92/92 manifest codepoints in each CJK font. Mutation regressions reproduced the bad hexagram mapping and mutable casting snapshot before the fixes.
+**Blockers**: PR creation and fresh review are pending; this branch has not been merged.
+**Next**: Push `feat/017-preflow-hardening` and open a PR targeting `main`.
