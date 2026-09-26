@@ -23,6 +23,8 @@
 - 2026-09-26: Inject the bit source into a deterministic `CastingService` in core. Keep `crypto.getRandomValues` strictly in `apps/web/src/lib/browser-coin-source.ts`, created at composition time and not during module evaluation. Generate each bit from the low bit of a cryptographic random byte; reject absent crypto rather than silently downgrading to `Math.random`.
 - 2026-09-26: The public `CoinTossResult` carries exactly three coin bits and their mapped `LineValue`; a six-line casting result carries the six outcomes and normalized `HexagramReadingInput`. Sequential entries append first line first; direct entries accept a six-value bottom-to-top array. Validate via existing `validateSixLines` and do not reverse either entry method.
 
+- 2026-09-26 plan review: Keep `normalizeCastingInput` public as the shared normalizer behind sequential and direct APIs. Assert it directly on copied bottom-to-top valid input and invalid/incomplete arrays in `packages/liuyao-core/tests/casting.test.ts`, in addition to testing both entry APIs.
+
 ## Work stages
 
 ### Task 1: Deterministic outcome and normalization (F04-T01, T03, T04, T06, T07)
@@ -31,10 +33,13 @@
 
 **Interfaces:** `type CoinBit = 0 | 1`; `type CoinTossResult = { readonly coins: readonly [CoinBit, CoinBit, CoinBit]; readonly line: LineValue }`; `mapCoinsToLine(coins: readonly [CoinBit, CoinBit, CoinBit]): LineValue`; `normalizeCastingInput(lines: unknown): HexagramReadingInput`; `normalizeSequentialInput(lines: unknown): HexagramReadingInput`; `normalizeDirectInput(lines: unknown): HexagramReadingInput`.
 
-- [ ] Write eight table cases for the ordered bit triples with expected mapped values and counts 1/3/3/1; verify the failing test with `pnpm --filter @liuyao/core test`.
-- [ ] Implement the sum mapping with runtime bit validation; assert invalid bit, shape, and non-integer cases reject.
-- [ ] Write table cases for all six distinct values/order positions, equivalent sequential/direct input, incomplete input, invalid line, and compatibility with `calculateHexagram` and `calculateReading`.
-- [ ] Implement both normalizers using `validateSixLines`, returning a copied `HexagramReadingInput` without reversing values; run the focused core tests and typecheck.
+- [x] Write eight table cases for the ordered bit triples with expected mapped values and counts 1/3/3/1; verify the failing test with `pnpm --filter @liuyao/core test`.
+- [x] Implement the sum mapping with runtime bit validation; assert invalid bit, shape, and non-integer cases reject.
+- [x] Write table cases for all six distinct values/order positions, equivalent sequential/direct input, incomplete input, invalid line, and compatibility with `calculateHexagram` and `calculateReading`.
+- [x] Test `normalizeCastingInput` directly with valid copied bottom-to-top order and invalid/incomplete arrays.
+- [x] Implement both normalizers using `validateSixLines`, returning a copied `HexagramReadingInput` without reversing values; run the focused core tests and typecheck.
+
+**Evidence:** `packages/liuyao-core/tests/casting.test.ts` directly covers the shared normalizer and both entry APIs, all eight ordered triples, exact 1/3/3/1 counts, invalid bits and shapes, input ordering/copying, rejection cases, and calculation integration. `pnpm --filter @liuyao/core test` passed 152 tests across 13 files after the direct assertion; `pnpm --filter @liuyao/core typecheck` passed before that test-only addition.
 
 ### Task 2: Casting service and browser source (F04-T02, T05, T07)
 
@@ -42,17 +47,21 @@
 
 **Interfaces:** `type CoinBitSource = () => CoinBit`; `class CastingService` receives `CoinBitSource` in its constructor, exposes `toss(): CoinTossResult` and `cast(): CastingResult`, whose `tosses` has six ordered results and `input` is `HexagramReadingInput`. Web exports `createBrowserCastingService(): CastingService` and `createBrowserCoinSource(): CoinBitSource`.
 
-- [ ] Test controlled bit-stream cases, exactly three calls per toss and eighteen per cast, six-line output ordering, source bounds rejection, and no silent fallback.
-- [ ] Implement deterministic service; test `cast().input` in core calculation and run core tests/typecheck.
-- [ ] Implement web adapter with `globalThis.crypto.getRandomValues` on a `Uint8Array(1)` per bit; absence must throw. Inspect import direction and run web typecheck/build. No web unit tests or UI are added.
+- [x] Test controlled bit-stream cases, exactly three calls per toss and eighteen per cast, six-line output ordering, source bounds rejection, and no silent fallback.
+- [x] Implement deterministic service; test `cast().input` in core calculation and run core tests/typecheck.
+- [x] Implement web adapter with `globalThis.crypto.getRandomValues` on a `Uint8Array(1)` per bit; absence must throw. Inspect import direction and run web typecheck/build. No web unit tests or UI are added.
+
+**Evidence:** Core tests verify the three/eighteen source call counts, runtime source-bit rejection, ordered six-line output, and calculation compatibility. Inspection of `apps/web/src/lib/browser-coin-source.ts` confirms one-byte `globalThis.crypto.getRandomValues`, low-bit extraction, explicit failure when crypto is unavailable, and composition-time service creation. Parent-run `./init.sh` passed typecheck, build, and package tests, including 152 core tests and 2 knowledge tests; no UI or app tests were added.
 
 ### Task 3: Evidence, handoff, and review
 
 **Files:** Modify `features/feat-005.md`, `feature_index.json`, `progress.md`, `ARCHITECTURE.md`, `docs/product-specs/product-scope.md` only where behavior became observed; update this plan's checked steps and evidence.
 
-- [ ] Inspect working tree before fixers; run `./init.sh`, record exact pass counts and any non-failing warnings, then confirm each F04 acceptance item.
-- [ ] Mark feat-005 done only after all acceptance and harness checks pass; append one material progress block and record one concrete next action.
+- [x] Inspect working tree before fixers; run `./init.sh`, record exact pass counts and any non-failing warnings, then confirm each F04 acceptance item.
+- [x] Mark feat-005 done only after all acceptance and harness checks pass; append one material progress block and record one concrete next action.
 - [ ] Commit and push scoped implementation, open PR, send merge-ready with head and verification, and wait for fresh PR review approval before settlement.
+
+**Evidence:** Parent-run `./init.sh` passed with 152 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. Lint reported one pre-existing non-failing `react-refresh` warning at `apps/web/src/components/ui/button.tsx:49`. Feature acceptance and all F04 implementation tasks are recorded complete; PR review/approval remains pending.
 
 ## Verification budget
 
