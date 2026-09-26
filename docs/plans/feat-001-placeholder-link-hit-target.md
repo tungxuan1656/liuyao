@@ -31,9 +31,10 @@
 
 ### Task 2: Verification and handoff
 
-**Files:** Modify `features/feat-001.md` and append to `progress.md`; include the already-active `feature_index.json` status in the final commit.
+**Files:** Modify `feature_index.json` and `features/feat-001.md`; append to `progress.md`.
 
-- [ ] Run `./init.sh`; if it changes unrelated files, inspect rather than silently include them. Run the read-only verification in `docs/development.md` if needed to substantiate the handoff.
+- [ ] Inspect `git status` and `git diff` before running `./init.sh`, which runs write-capable fixers. Run it only when unrelated user changes will not be rewritten; otherwise coordinate first. Inspect any fixer output rather than silently including unrelated changes. Run the read-only verification in `docs/development.md` if needed to substantiate the handoff.
+- [ ] Transition feat-001 in `feature_index.json` from `done` to `active` for this follow-up, because merged PR #10 left the index done while this review finding is unresolved. Keep it `active` in the follow-up PR; transition `active` to `done` only after that PR merges and acceptance is confirmed.
 - [ ] Record the P2 review finding, route-size/focus/navigation evidence, verification results, and PR handoff in `features/feat-001.md`. Append one material update to `progress.md` noting PR #10 merged and follow-up PR pending; keep feat-001 active until merge.
 - [ ] Commit only scoped work, push this branch, and open a follow-up PR against `main` with verification evidence and any limitations.
 
@@ -47,3 +48,4 @@
 
 - **2026-09-26 — Scope:** Address the P2 in the shared F00 placeholder component rather than introducing destination-specific styling or later-feature screens.
 - **2026-09-26 — Verification:** Use direct UI measurement for app-only behavior because `docs/development.md` disallows app test files.
+- **2026-09-26 — Plan review:** Record the explicit feat-001 status transition and the pre-`./init.sh` working-tree guard; both are required even for this narrow follow-up because the harness runs write-capable fixers.
