@@ -5,6 +5,9 @@ export * from './polarity';
 export * from './trigrams';
 export * from './hexagrams';
 export * from './calculation';
+export * from './palaces';
+export * from './na-jia';
+export * from './board';
 
 import type { HexagramReadingInput, LineValue } from './contracts';
 import { isChangingLine } from './polarity';

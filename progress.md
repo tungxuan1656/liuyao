@@ -63,3 +63,27 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Fresh Codex review approved PR #13 at `7ef963b`; GitHub `verify` and GitGuardian checks passed. The worker ran 113 core tests, package typecheck, and `./init.sh`; the reviewer ran 84 focused tests and core typecheck. Fixture provenance and source errata are documented in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
 **Blockers**: none.
 **Next**: Activate feat-004 Liu Yao board.
+
+## 2026-09-26 — feat-004
+
+**State**: active; plan and implementation not started.
+**Done**: Activated F03 Liu Yao board after feat-003 merged; dependencies feat-002 and feat-003 are done.
+**Evidence**: Feature dependency records in `feature_index.json` and `features/feat-004.md` were checked before activation.
+**Blockers**: none.
+**Next**: Commit `docs/plans/feat-004.md` and obtain fresh Orca plan review.
+
+## 2026-09-26 — feat-004
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F03-T01–T10: Eight Palace and Shi/Ying classification, Na Jia stems and branches, element mapping, Six Relatives, and six structured board lines; updated the product-scope and architecture summaries.
+**Evidence**: Parent-run `./init.sh` passed 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fixture and acceptance details remain linked in `features/feat-004.md` and `docs/product-specs/v1-task-map.md`.
+**Blockers**: Plan revision `28e13b6` is pending fresh feedback; PR review and merge are not complete.
+**Next**: Obtain fresh PR review feedback, address it, and merge after approval.
+
+## 2026-09-26 — feat-004 PR review follow-up
+
+**State**: done locally; PR #14 fresh review and merge pending.
+**Done**: Isolated public palace and Na Jia lookup results after reviewer found mutation could corrupt later board facts; added runtime mutation regressions.
+**Evidence**: `./init.sh` passed 127 core tests in 12 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing, non-failing web lint warning remains.
+**Blockers**: Updated PR head requires fresh review approval.
+**Next**: Request fresh PR #14 review on the corrected head and address any findings before merge.

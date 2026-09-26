@@ -16,9 +16,9 @@ Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures.
 
 ## Acceptance
 
-- [ ] Complete all F03 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
-- [ ] Meet the V1 completion condition: Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures.
-- [ ] Pass the repository verification workflow in `./init.sh`.
+- [x] Complete all F03 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
+- [x] Meet the V1 completion condition: Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures.
+- [x] Pass the repository verification workflow in `./init.sh`.
 
 ## Relevant docs
 
@@ -29,16 +29,16 @@ Palace, Shi/Ying, Na Jia, elements, and Six Relatives match fixtures.
 
 ## Tasks
 
-- [ ] F03-T01 — Add Eight Palace classification
-- [ ] F03-T02 — Add palace element mapping
-- [ ] F03-T03 — Add Shi and Ying line positions
-- [ ] F03-T04 — Add Na Jia Heavenly Stem assignments
-- [ ] F03-T05 — Add Na Jia Earthly Branch assignments
-- [ ] F03-T06 — Cover inner and outer trigram assignments separately
-- [ ] F03-T07 — Map Earthly Branches to Five Elements
-- [ ] F03-T08 — Derive Six Relatives from palace and line elements
-- [ ] F03-T09 — Build six structured line results
-- [ ] F03-T10 — Expose board facts without explanatory prose
+- [x] F03-T01 — Add Eight Palace classification
+- [x] F03-T02 — Add palace element mapping
+- [x] F03-T03 — Add Shi and Ying line positions
+- [x] F03-T04 — Add Na Jia Heavenly Stem assignments
+- [x] F03-T05 — Add Na Jia Earthly Branch assignments
+- [x] F03-T06 — Cover inner and outer trigram assignments separately
+- [x] F03-T07 — Map Earthly Branches to Five Elements
+- [x] F03-T08 — Derive Six Relatives from palace and line elements
+- [x] F03-T09 — Build six structured line results
+- [x] F03-T10 — Expose board facts without explanatory prose
 
 Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md`.
 
@@ -46,9 +46,13 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 - `feat-003`
 
+## Implementation plan
+
+- `docs/plans/feat-004.md` (implementation and local verification recorded; PR review pending).
+
 ## Handoff
 
-- State: todo
-- Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- State: done locally; PR review and merge pending.
+- Evidence: After PR #14 review feedback, public palace and Na Jia lookup results are readonly and isolated; regressions mutate returned values and confirm later helper and board facts remain unchanged. `./init.sh` passed 127 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fresh PR review remains pending.
+- Dependency check: feat-003 is done; feat-002 is done.
+- Next: Obtain fresh PR #14 review approval on the updated head, then merge; the plan review is already approved.

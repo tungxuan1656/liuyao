@@ -154,7 +154,7 @@ export interface ReadingResult {
   yingPosition: ResultLinePosition;
 }
 
-/** F02-only facts; board fields in ReadingResult are calculated by F03. */
+/** F02 hexagram facts; ReadingResult adds the primary hexagram's F03 board fields. */
 export interface HexagramCalculationResult {
   ruleset: RuleSetId;
   primaryHexagramId: HexagramId;
