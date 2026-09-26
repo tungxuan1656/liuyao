@@ -64,7 +64,7 @@
 **Files:** Modify `features/feat-006.md`, `feature_index.json`, `progress.md`, this plan; modify `ARCHITECTURE.md` and `docs/product-specs/product-scope.md` only to reflect observed behavior.
 
 - [x] Inspect tree, run `./init.sh`, record exact test counts and warnings, and audit F05-T01–T12 evidence.
-- [ ] Mark feat-006 done only after acceptance passes; append one material progress block with concrete next action.
+- [x] Mark feat-006 done locally after acceptance passes; record that review and merge remain pending in the feature handoff and append a material progress block with a concrete next action.
 - [ ] Commit and push implementation, open PR, send current-head review notice, address fresh plan/PR findings and reverify changed behavior before approval.
 
 ## Verification budget
