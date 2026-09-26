@@ -9,6 +9,7 @@ export const RULES = [
     title: 'Reading result fields',
     explanation:
       'The result carries its ruleset, primary and changed figure identifiers, lower and upper trigram identifiers, palace and palace element, and the Shi and Ying positions. These are calculated classifications, not predictions.',
+    category: 'metadata',
   },
   {
     id: 'rule-line-position-order',
@@ -16,6 +17,7 @@ export const RULES = [
     title: 'Line ordering',
     explanation:
       'The six line records are ordered from the bottom upward and have positions one through six in that order.',
+    category: 'structure',
   },
   {
     id: 'rule-line-polarity-values',
@@ -23,6 +25,7 @@ export const RULES = [
     title: 'Line values and polarity',
     explanation:
       'Input values six and eight are yin; values seven and nine are yang. The value remains reported for the primary line.',
+    category: 'classification',
   },
   {
     id: 'rule-moving-line-change',
@@ -30,6 +33,7 @@ export const RULES = [
     title: 'Moving-line change',
     explanation:
       'Values six and nine mark moving lines. Their polarity reverses to form the changed figure; stationary lines retain their polarity. With no moving lines there is no changed-figure identifier.',
+    category: 'transformation',
   },
   {
     id: 'rule-trigram-composition',
@@ -37,6 +41,7 @@ export const RULES = [
     title: 'Trigram composition',
     explanation:
       'Lines one through three form the lower trigram and lines four through six form the upper trigram; the pair identifies the primary figure.',
+    category: 'structure',
   },
   {
     id: 'rule-palace-and-markers',
@@ -44,6 +49,7 @@ export const RULES = [
     title: 'Palace and line markers',
     explanation:
       'The primary figure is classified to a palace under this ruleset. Its palace classification supplies one Shi position and one Ying position, reported as bottom-up line numbers.',
+    category: 'classification',
   },
   {
     id: 'rule-na-jia-assignment',
@@ -51,6 +57,7 @@ export const RULES = [
     title: 'Na Jia line assignment',
     explanation:
       'Each primary line receives a stem and branch through the assignment for its trigram side and line position. The first three lines use the lower trigram; the last three use the upper trigram.',
+    category: 'classification',
   },
   {
     id: 'rule-branch-element',
@@ -58,6 +65,7 @@ export const RULES = [
     title: 'Branch element association',
     explanation:
       'The line element is the conventional element associated with its assigned earthly branch: Zi and Hai water; Chou, Chen, Wei, and Xu earth; Yin and Mao wood; Si and Wu fire; Shen and You metal.',
+    category: 'classification',
   },
   {
     id: 'rule-five-element-cycles',
@@ -65,6 +73,7 @@ export const RULES = [
     title: 'Five-element cycles',
     explanation:
       'The generation sequence is wood, fire, earth, metal, water, then wood. The control sequence is wood controls earth, earth controls water, water controls fire, fire controls metal, and metal controls wood.',
+    category: 'classification',
   },
   {
     id: 'rule-six-relative-classification',
@@ -72,5 +81,6 @@ export const RULES = [
     title: 'Six Relative classification',
     explanation:
       'Relative to the palace element: equal is Sibling; palace generates line is Child; palace controls line is Wealth; line controls palace is Official-Ghost; line generates palace is Parent. These are five categories.',
+    category: 'classification',
   },
 ] as const satisfies readonly KnowledgeRule[];

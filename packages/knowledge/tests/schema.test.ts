@@ -5,13 +5,21 @@ import { validateKnowledgeCatalog } from '../src/validation';
 function validCatalog(): KnowledgeCatalog {
   return {
     entities: [
-      { kind: 'trigram', id: 'trigram-heaven', name: 'Qian', han: '乾', aliases: ['Heaven'] },
+      {
+        kind: 'trigram',
+        id: 'trigram-heaven',
+        name: 'Qian',
+        han: '乾',
+        aliases: ['Heaven'],
+        explanation: 'Three yang lines represent Heaven.',
+      },
       {
         kind: 'hexagram',
         id: 'hexagram-01',
         name: 'Qian',
         han: '乾',
         aliases: [],
+        explanation: 'Upper Heaven over lower Heaven.',
         kingWenNumber: 1,
         upperTrigramId: 'trigram-heaven',
         lowerTrigramId: 'trigram-heaven',
@@ -31,6 +39,7 @@ function validCatalog(): KnowledgeCatalog {
         ruleset: 'liuyao-standard-v1',
         title: 'Line order',
         explanation: 'Lines are read from bottom to top.',
+        category: 'structure',
       },
     ],
     sources: [
@@ -50,7 +59,7 @@ function validCatalog(): KnowledgeCatalog {
         targetIds: ['term-yin-yang', 'rule-lines-bottom-to-top'],
       },
     ],
-  };
+  } as unknown as KnowledgeCatalog;
 }
 
 const validate = (catalog: unknown): void => validateKnowledgeCatalog(catalog as KnowledgeCatalog);
@@ -71,6 +80,28 @@ describe('knowledge schema and validation', () => {
       {
         ...validCatalog(),
         entities: [{ kind: 'trigram', id: 'trigram-heaven', name: 'Qian', aliases: [] }],
+      },
+    ],
+    [
+      'missing entity explanation',
+      {
+        ...validCatalog(),
+        entities: [
+          {
+            kind: 'trigram',
+            id: 'trigram-heaven',
+            name: 'Qian',
+            han: '乾',
+            aliases: ['Heaven'],
+          },
+        ],
+      },
+    ],
+    [
+      'empty entity explanation',
+      {
+        ...validCatalog(),
+        entities: [{ ...validCatalog().entities[0], explanation: '  ' }],
       },
     ],
     [
@@ -126,6 +157,27 @@ describe('knowledge schema and validation', () => {
   });
 
   it.each([
+    [
+      'missing rule category',
+      (catalog: KnowledgeCatalog) => ({
+        ...catalog,
+        rules: [
+          {
+            id: catalog.rules[0]!.id,
+            ruleset: catalog.rules[0]!.ruleset,
+            title: catalog.rules[0]!.title,
+            explanation: catalog.rules[0]!.explanation,
+          },
+        ],
+      }),
+    ],
+    [
+      'unknown rule category',
+      (catalog: KnowledgeCatalog) => ({
+        ...catalog,
+        rules: [{ ...catalog.rules[0], category: 'unclassified' }],
+      }),
+    ],
     [
       'unsupported ruleset',
       (catalog: KnowledgeCatalog) => ({

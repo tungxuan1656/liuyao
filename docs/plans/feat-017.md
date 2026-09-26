@@ -115,25 +115,25 @@ const TRIGRAM_INDEX: Readonly<Record<TrigramId, number>> = Object.freeze({
 - Consumes: KnowledgeEntity, KnowledgeRule, KnowledgeSource, and SourceReference.
 - Produces: Required entity explanations, typed rule categories, and traceable references for every result rule.
 
-- [ ] Add a valid-catalog fixture with entity explanations and a rule category.
-- [ ] Add validator regressions for a missing or empty entity explanation, a missing category, and an unknown category.
-- [ ] Run pnpm --filter @liuyao/knowledge test -- schema.test.ts. The new validation cases must fail before the schema change.
-- [ ] Add explanation to both entity interfaces. Add category to KnowledgeRule, with this type:
+- [x] Add a valid-catalog fixture with entity explanations and a rule category.
+- [x] Add validator regressions for a missing or empty entity explanation, a missing category, and an unknown category.
+- [x] Run pnpm --filter @liuyao/knowledge test -- schema.test.ts. Before the schema change, the valid fixture failed because explanation was rejected as an unexpected field.
+- [x] Add explanation to both entity interfaces. Add category to KnowledgeRule, with this type:
 
 ```ts
 export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' | 'classification';
 ```
 
-- [ ] Require non-empty explanations and one supported category in validateKnowledgeCatalog.
-- [ ] Add original trigram explanations. Give every hexagram a concise structural explanation from its upper and lower trigram names.
-- [ ] Assign each current rule to one category. Keep the existing stable rule IDs.
-- [ ] Add a project-contract source for rule-reading-result-fields.
-- [ ] Add source references for the remaining rules. Use Zhouyi Shuo Gua and Zengshan Buyi chapters 3–7 and 11–12. Do not cite the contributor-added appendix as the book text.
-- [ ] Keep source descriptions original. Update the data README to distinguish source context from a claim of universal ruleset authority.
-- [ ] Assert that all 72 entities have non-empty explanations and all ten rules have a supported category.
-- [ ] Assert that every rule used for production facts has at least one reference to an existing source.
-- [ ] Run pnpm --filter @liuyao/knowledge test.
-- [ ] Commit as feat(knowledge): add sourced fact explanations.
+- [x] Require non-empty explanations and one supported category in validateKnowledgeCatalog.
+- [x] Add original trigram explanations. Give every hexagram a concise structural explanation from its upper and lower trigram names.
+- [x] Assign each current rule to one category. Keep the existing stable rule IDs.
+- [x] Add a project-contract source for result-field and line conventions.
+- [x] Add source references for the remaining rules. Use Zhouyi Shuo Gua and Zengshan Buyi chapters 3–7 and 11–12. Do not cite the contributor-added appendix as the book text.
+- [x] Keep source descriptions original. Update the data README to distinguish source context from a claim of universal ruleset authority.
+- [x] Assert that all 72 entities have non-empty explanations and all ten rules have a supported category.
+- [x] Assert that every rule used for production facts has at least one reference to an existing source.
+- [x] Run pnpm --filter @liuyao/knowledge test (6 files, 39 tests passed) and pnpm --filter @liuyao/knowledge typecheck.
+- [x] Commit as feat(knowledge): add sourced fact explanations.
 
 ### Task 4: Add the production fact registry and drift guard
 

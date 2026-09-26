@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
+import { HEXAGRAMS } from '../data/hexagrams';
 import { REFERENCES } from '../data/references';
 import { RULES } from '../data/rules';
 import { SOURCES } from '../data/sources';
 import { TERMS } from '../data/terms';
+import { TRIGRAMS } from '../data/trigrams';
 
 // Every displayed field in packages/liuyao-core/src/contracts.ts is mapped to
 // a stable explanatory rule; keep this exhaustive when that contract changes.
@@ -96,6 +98,21 @@ describe('curated V1 content', () => {
     }
   });
 
+  it('explains every entity and assigns each rule a supported category and source', () => {
+    const entities = [...TRIGRAMS, ...HEXAGRAMS];
+    const categories = new Set(['metadata', 'structure', 'transformation', 'classification']);
+    const referencedRuleIds = new Set(
+      REFERENCES.flatMap(({ targetIds }) => targetIds.filter(id => String(id).startsWith('rule-'))),
+    );
+
+    expect(entities).toHaveLength(72);
+    for (const entity of entities) expect(entity.explanation.trim(), entity.id).not.toBe('');
+    for (const rule of RULES) {
+      expect(categories, rule.id).toContain(rule.category);
+      expect(referencedRuleIds, rule.id).toContain(rule.id);
+    }
+  });
+
   it('covers every V1 stem, branch, element, and Six Relative label', () => {
     for (const stem of ['jia', 'yi', 'bing', 'ding', 'wu', 'ji', 'geng', 'xin', 'ren', 'gui']) {
       expect(termIds, `missing stem ${stem}`).toContain(`term-stem-${stem}`);
@@ -129,14 +146,25 @@ describe('curated V1 content', () => {
   });
 
   it('links source metadata only to existing content records', () => {
-    expect(SOURCES.map(({ id }) => id)).toEqual(['source-zhouyi', 'source-jingshi-yizhuan']);
+    expect(SOURCES.map(({ id }) => id)).toEqual([
+      'source-zhouyi',
+      'source-jingshi-yizhuan',
+      'source-zengshan-buyi',
+      'source-liuyao-v1-contract',
+    ]);
     for (const source of SOURCES) {
-      expect(source.provenance).toMatch(/https:\/\//);
+      expect(source.provenance.length).toBeGreaterThan(0);
       expect(source.publication.length).toBeGreaterThan(0);
       expect(source.rights.length).toBeGreaterThan(0);
     }
     expect(SOURCES.find(({ id }) => id === 'source-jingshi-yizhuan')?.provenance).toContain(
       'https://ctext.org/jingshi-yizhuan/zh',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.provenance).toContain(
+      'https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93',
+    );
+    expect(SOURCES.find(({ id }) => id === 'source-liuyao-v1-contract')?.provenance).toContain(
+      'packages/liuyao-core/src/contracts.ts',
     );
     for (const reference of REFERENCES) {
       expect(sourceIds, reference.id).toContain(reference.sourceId);
@@ -148,22 +176,22 @@ describe('curated V1 content', () => {
         ).toBe(true);
       }
     }
-    expect(REFERENCES).toEqual([
-      {
-        id: 'reference-zhouyi-trigram-associations',
-        sourceId: 'source-zhouyi',
-        targetIds: ['term-trigram'],
-        location:
-          'Shuo Gua (說卦傳), discussion of the eight trigrams and their associated qualities.',
-      },
+    expect(REFERENCES.map(({ id }) => id)).toEqual([
+      'reference-zhouyi-trigram-associations',
+      'reference-contract-reading-result',
+      'reference-zengshan-palace-markers',
+      'reference-zengshan-na-jia',
+      'reference-zengshan-moving-change',
+      'reference-zengshan-five-elements',
+      'reference-zengshan-six-relatives',
     ]);
-    expect(
-      REFERENCES.every(
-        ({ location }) =>
-          location === undefined ||
-          location ===
-            'Shuo Gua (說卦傳), discussion of the eight trigrams and their associated qualities.',
-      ),
-    ).toBe(true);
+    expect(REFERENCES.find(({ id }) => id === 'reference-zhouyi-trigram-associations')).toEqual({
+      id: 'reference-zhouyi-trigram-associations',
+      sourceId: 'source-zhouyi',
+      targetIds: ['term-trigram'],
+      location:
+        'Shuo Gua (說卦傳), discussion of the eight trigrams and their associated qualities.',
+    });
+    expect(REFERENCES.every(({ location }) => location && location.trim().length > 0)).toBe(true);
   });
 });

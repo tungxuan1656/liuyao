@@ -24,4 +24,25 @@ export const SOURCES = [
     provenance:
       'A work associated with Han-dynasty scholar Jing Fang and his Changes interpretation. Bibliographic provider: Chinese Text Project, https://ctext.org/jingshi-yizhuan/zh. Catalogued as historical context only; this record does not assert that the complete later operational Liu Yao tables occur in this work.',
   },
+  {
+    id: 'source-zengshan-buyi',
+    title: 'Zengshan Buyi (增刪卜易; Added and Subtracted Divinations)',
+    author:
+      'Traditionally attributed to Liu Bowen (劉伯溫); attribution is not independently verified here.',
+    publication:
+      'Traditional text; edition, composition date, and publication history are not asserted here.',
+    rights:
+      'Classical original text is in the public domain. This record contains original bibliographic paraphrase only and no copied transcription or translation.',
+    provenance:
+      'The cited text is hosted by Wikisource at https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93. Chapter locators refer to the main work; contributor-added appendices are not cited as the book text.',
+  },
+  {
+    id: 'source-liuyao-v1-contract',
+    title: 'LiuYao V1 calculation contract',
+    author: 'LiuYao project maintainers',
+    publication: 'Repository source contract and deterministic V1 implementation.',
+    rights: 'Project source code is licensed under AGPL-3.0-only.',
+    provenance:
+      'The core contracts and calculations at packages/liuyao-core/src/contracts.ts, calculation.ts, and board.ts define the exact result fields and V1 conventions implemented by this repository.',
+  },
 ] as const satisfies readonly KnowledgeSource[];

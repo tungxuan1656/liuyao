@@ -1,3 +1,4 @@
+import { TRIGRAMS } from './trigrams';
 import type { HexagramEntity, HexagramId, TrigramId } from '../src/schema';
 
 export type HexagramRecord = HexagramEntity & { readonly han: string };
@@ -92,6 +93,10 @@ const DISPLAY: readonly (readonly [string, string])[] = [
   ['Wei Ji', '未濟'],
 ];
 
+const TRIGRAM_NAME_BY_ID: Readonly<Record<TrigramId, string>> = Object.freeze(
+  Object.fromEntries(TRIGRAMS.map(({ id, name }) => [id, name])) as Record<TrigramId, string>,
+);
+
 function pairForKingWenNumber(number: string): readonly [TrigramId, TrigramId] {
   const rows: readonly (readonly string[])[] = HEXAGRAM_BY_UPPER_AND_LOWER;
   const upperIndex = rows.findIndex(row => row.includes(number));
@@ -119,6 +124,7 @@ export const HEXAGRAMS = DISPLAY.map(([name, han], index) => {
     name,
     han,
     aliases: [],
+    explanation: `Upper ${TRIGRAM_NAME_BY_ID[upperTrigramId]} over lower ${TRIGRAM_NAME_BY_ID[lowerTrigramId]} in King Wen figure ${index + 1}.`,
     kingWenNumber: index + 1,
     upperTrigramId,
     lowerTrigramId,

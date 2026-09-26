@@ -1,4 +1,10 @@
-import type { KnowledgeCatalog, KnowledgeEntity, KnowledgeRecordId, TrigramId } from './schema';
+import type {
+  KnowledgeCatalog,
+  KnowledgeEntity,
+  KnowledgeRecordId,
+  KnowledgeRuleCategory,
+  TrigramId,
+} from './schema';
 
 const TRIGRAM_IDS = new Set<TrigramId>([
   'trigram-heaven',
@@ -11,6 +17,12 @@ const TRIGRAM_IDS = new Set<TrigramId>([
   'trigram-earth',
 ]);
 const RULESET_ID = 'liuyao-standard-v1';
+const RULE_CATEGORIES = new Set<KnowledgeRuleCategory>([
+  'metadata',
+  'structure',
+  'transformation',
+  'classification',
+]);
 const HEXAGRAM_ID = /^hexagram-(0[1-9]|[1-5][0-9]|6[0-4])$/;
 const RECORD_ID: Record<string, RegExp> = {
   term: /^term-[a-z0-9]+(?:-[a-z0-9]+)*$/,
@@ -81,13 +93,14 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       fail(path, 'expected an object');
     const kind = (raw as Record<string, unknown>).kind;
     if (kind === 'trigram') {
-      const item = record(raw, path, ['kind', 'id', 'name', 'han', 'aliases']);
+      const item = record(raw, path, ['kind', 'id', 'name', 'han', 'aliases', 'explanation']);
       if (typeof item.id !== 'string' || !TRIGRAM_IDS.has(item.id as TrigramId))
         fail(`${path}.id`, 'expected a core trigram ID');
       const entityId = register(item.id, path);
       text(item.name, `${path}.name`);
       text(item.han, `${path}.han`);
       stringArray(item.aliases, `${path}.aliases`);
+      text(item.explanation, `${path}.explanation`);
       entityIds.add(entityId);
       trigramIds.add(entityId);
     } else if (kind === 'hexagram') {
@@ -97,6 +110,7 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
         'name',
         'han',
         'aliases',
+        'explanation',
         'kingWenNumber',
         'upperTrigramId',
         'lowerTrigramId',
@@ -107,6 +121,7 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       text(item.name, `${path}.name`);
       text(item.han, `${path}.han`);
       stringArray(item.aliases, `${path}.aliases`);
+      text(item.explanation, `${path}.explanation`);
       const kingWenNumber = Number(item.id.slice('hexagram-'.length));
       if (item.kingWenNumber !== kingWenNumber)
         fail(`${path}.kingWenNumber`, 'must match the number in the hexagram ID');
@@ -133,13 +148,19 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
   });
   (root.rules as unknown[]).forEach((raw, index) => {
     const path = `catalog.rules[${index}]`;
-    const item = record(raw, path, ['id', 'ruleset', 'title', 'explanation']);
+    const item = record(raw, path, ['id', 'ruleset', 'title', 'explanation', 'category']);
     id(item.id, `${path}.id`, 'rule');
     ruleIds.add(register(item.id, path));
     if (item.ruleset !== RULESET_ID)
       fail(`${path}.ruleset`, `unsupported ruleset "${String(item.ruleset)}"`);
     text(item.title, `${path}.title`);
     text(item.explanation, `${path}.explanation`);
+    if (
+      typeof item.category !== 'string' ||
+      !RULE_CATEGORIES.has(item.category as KnowledgeRuleCategory)
+    ) {
+      fail(`${path}.category`, 'expected a supported rule category');
+    }
   });
   (root.sources as unknown[]).forEach((raw, index) => {
     const path = `catalog.sources[${index}]`;
