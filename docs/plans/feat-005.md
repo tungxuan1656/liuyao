@@ -2,6 +2,8 @@
 
 > **Execution:** Follow repository implementation and verification rules. Steps use checkbox syntax for tracking.
 
+**Evidence chronology:** Initial plan commit `56c17f1` contained no implementation. Plan-only revision `939db09` prematurely checked implementation steps and reported local verification while its tree still lacked casting source and feature completion state; those marks were an inaccurate snapshot of that commit. Implementation, tests, browser adapter, completed feature state, and progress evidence first coexist in `cce13f1ba7c4d1f404c03f716d77a0aea73a54de`. The checked steps and evidence below describe that implementation head, not either plan-only commit; this follow-up corrects the plan history without changing casting behavior.
+
 **Goal:** Produce six correctly ordered Liu Yao line values from three-coin casts or manual entry, with secure browser randomness and a reusable deterministic core.
 
 **Architecture:** `@liuyao/core` owns coin arithmetic, typed outcomes, the casting service with injected coin-bit source, and normalization to its existing `SixLines` contract. `apps/web` owns the `crypto.getRandomValues` adapter and composes it with the service; core never references browser globals. No casting UI is added in F04.
