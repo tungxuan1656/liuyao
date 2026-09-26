@@ -175,3 +175,43 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: With both package `dist/` directories removed, `pnpm typecheck` passed and `./init.sh` passed typecheck before build, package runtime/declaration checks, test placement, all 155 core tests and 41 knowledge tests. FontTools 4.66.0 and Brotli 1.2.0 confirmed exact 96-codepoint cmap coverage in both bundled CJK app fonts. Lint reported the pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
 **Blockers**: Fresh review and approval are pending; PR #17 has not been merged.
 **Next**: Wait for fresh review of the updated PR head and address any new findings.
+
+## 2026-09-26 — feat-007 activated
+
+**State**: active; implementation plan pending commit and review.
+**Done**: Selected feat-007 Reading flow and confirmed its dependencies are done; scoped work to F06-T01–15 and the V1 reading completion condition.
+**Evidence**: `feature_index.json` and `features/feat-007.md` record feat-001, feat-004, feat-005, and feat-017 done; canonical acceptance is in `docs/product-specs/v1-task-map.md` and `docs/product-specs/reading-flow.md`.
+**Blockers**: none.
+**Next**: Commit `docs/plans/feat-007.md` and request plan review before implementing.
+
+## 2026-09-26 — feat-007 implementation verified
+
+**State**: active; implementation verified locally; PR pending plan review.
+**Done**: Implemented F06-T01–11 and T13–15: app/home shell, session-only draft, automatic/manual/direct casting, core calculation, recovery and confirmation dialogs, focused casting route, and active result retention across root tabs. F06-T12 remains blocked until Product Owner identity approval; retained current provisional Lục Hào/English copy without claiming approval.
+**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests; only the pre-existing `apps/web/src/components/ui/button.tsx:49` Fast Refresh warning remains. Direct browser evidence for 390×844 and 1024×576 layouts, all entry methods, reset/cancel/replacement safety, root-tab retention, and refresh recovery is in `docs/plans/feat-007.md`.
+**Blockers**: Plan review result pending; F06-T12 needs Product Owner approval through feat-013, which remains todo.
+**Next**: Obtain plan-review result, then commit/push the implementation and open a PR without marking feat-007 done until F06-T12 is approved.
+
+## 2026-09-27 — feat-007 draft PR
+
+**State**: blocked; PR #18 is open as a draft and plan/PR review is pending.
+**Done**: Pushed the F06 implementation on `tungxuan1656/feat-007-reading-flow` and opened [PR #18](https://github.com/tungxuan1656/liuyao/pull/18). Updated the feature index/handoff to blocked because F06-T12 needs Product Owner approval; kept later features todo.
+**Evidence**: `./init.sh` passed with 155 core tests and 41 knowledge tests; direct UI flows/viewports and identity limitation are recorded in `docs/plans/feat-007.md` and `features/feat-007.md`.
+**Blockers**: Plan/PR review pending; feat-013 has not approved the public name or primary language required by F06-T12.
+**Next**: Resolve current-head review feedback and obtain Product Owner identity approval through feat-013; only then complete T12 and mark feat-007 done.
+
+## 2026-09-27 — feat-007 review follow-up
+
+**State**: active; implementation acceptance complete locally; PR #18 plan/PR review remains pending.
+**Done**: Confirmed user approval of Lục Hào and English for the reading-flow UI, completed F06-T12 for this scope, preserved broader identity decisions for feat-013, and fixed typed-question cancel safety, stacked confirmation dialogs, duplicate dialog IDs, and a stray feature-record artifact.
+**Evidence**: `./init.sh` passed: 41 knowledge tests in 7 files, 155 core tests in 13 files, format, lint/length, typecheck, build, package exports, and test placement. One pre-existing non-failing Fast Refresh warning remains at `apps/web/src/components/ui/button.tsx:49`. Identity decision and earlier direct UI flow/viewports are recorded in `docs/plans/feat-007.md`.
+**Blockers**: Updated PR head still needs plan/PR review. PWA update-badge removal is deferred to feat-011.
+**Next**: Send the verified updated head for plan/PR review and address any findings.
+
+## 2026-09-27 — feat-007 identity decision recorded
+
+**State**: active; plan/PR review pending.
+**Done**: Recorded the explicit approval of Lục Hào as final public name and English as primary interface language in the canonical identity spec. Marked feat-013 F12-T02 complete; kept F12-T04 and all other identity tasks open. Restored the dated provisional-identity decision in the feat-007 plan and reconciled its later approval record.
+**Evidence**: `docs/product-specs/product-identity.md` owns the approval and remaining identity scope; `features/feat-013.md` records T02 complete and T04 open. Feat-007 plan and handoff link to the canonical decision.
+**Blockers**: Feat-007 plan/PR review remains pending; feat-013 identity work remains todo.
+**Next**: Complete feat-007 PR review and merge; leave remaining feat-013 identity decisions for its separately selected feature.

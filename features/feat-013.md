@@ -30,7 +30,7 @@ Final name, language, logo, icons, manifest, metadata, font bundle budget, and a
 ## Tasks
 
 - [ ] F12-T01 — Review existing naming ideas and define naming criteria
-- [ ] F12-T02 — Approve the final public product name
+- [x] F12-T02 — Approve the final public product name (Lục Hào; approved 2026-09-27, see `docs/product-specs/product-identity.md`)
 - [ ] F12-T03 — Approve the PWA short name
 - [ ] F12-T04 — Confirm V1 primary interface language and terminology
 - [ ] F12-T05 — Write the one-sentence public product description
@@ -57,6 +57,6 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 ## Handoff
 
 - State: todo
-- Evidence: —
+- Evidence: Product Owner approved Lục Hào as the final public name and English as the primary interface language on 2026-09-27. F12-T02 is complete; F12-T04 remains open because terminology is not yet confirmed. See `docs/product-specs/product-identity.md`.
 - Dependency check: pending
 - Next: Verify dependencies, then select this feature for implementation.
