@@ -66,7 +66,7 @@
 - [x] Inspect tree, run `./init.sh`, record exact test counts and warnings, and audit F05-T01–T12 evidence.
 - [x] Mark feat-006 done locally after acceptance passes; record that review and merge remain pending in the feature handoff and append a material progress block with a concrete next action.
 - [x] Commit and push implementation and open PR #16.
-- [ ] Obtain current-head plan and PR review approval, address any fresh findings, and reverify changed behavior before merge handoff.
+- [x] Obtain current-head plan and PR review approval, address fresh findings, reverify changed behavior, and squash-merge PR #16.
 
 ## Verification budget
 

@@ -57,7 +57,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: done locally; PR review and merge pending.
-- Evidence: local tests and full harness pass; exact evidence and sourcing limitations are in `docs/plans/feat-006.md`.
+- State: done; PR #16 squash-merged as `691f80d724f332f49a2c295e4e484a3d6cbdcbe5`.
+- Evidence: fresh plan and PR reviews approved exact head `e6382698f88fdfdaa573b49a4c051cd6fa6409aa`; GitHub `verify` and GitGuardian passed. Full `./init.sh` passed with 34 knowledge tests and 153 core tests; one pre-existing non-failing web Fast Refresh warning remains. Details and sourcing limits are in `docs/plans/feat-006.md`.
 - Dependency check: passed; feat-002 is done.
-- Next: Submit the verified implementation for fresh plan and PR review, then resolve any findings before merge.
+- Next: Stop after feat-006 as instructed; leave later features todo until selected again.
