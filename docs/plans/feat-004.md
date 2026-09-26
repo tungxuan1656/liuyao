@@ -14,6 +14,7 @@
 - F03-T01–T10 and evidence in `docs/product-specs/v1-task-map.md` are canonical.
 - No UI, persistence, network, calendar, Six Spirits, interpretation, or explanatory prose in core results.
 - Keep F02 `calculateHexagram` behavior and existing F01 public contracts compatible.
+- Public lookup outputs must not expose writable shared table records; nested Na Jia assignment fields and palace classification fields are readonly, and runtime mutation of one result must not alter later lookup or board output.
 
 ---
 
@@ -26,6 +27,7 @@
 - Palace sequence Shi positions are `[6,1,2,3,4,5,4,3]`; Ying is opposite by three positions (wrap at six). Pure-hexagram Shi is sixth and Ying third. These are positional markers only; no divinatory interpretation.
 - Na Jia associates inner positions 1–3 and outer positions 4–6 with their respective trigram, including distinct heaven `jia/ren` and earth `yi/gui` stem pairs. The primary line's branch supplies its element; palace element supplies the reference for five relations: equal sibling, palace generates line child, palace controls line wealth, line controls palace official-ghost, line generates palace parent.
 - **Decision log:** 2026-09-26: Use explicit source-backed 64 palace fixtures rather than derive expected tests from runtime classification; use explicit trigram-side tables rather than derive branch order from arithmetic. Preserve F01's `ReadingResult` as the full board contract and add a separate public calculation function. Jing's historical palace listing order differs from common chart order, but the public result has only a stable `PalaceId`, no palace sequence number: reorder complete palace rows without changing any `(HexagramId, PalaceId, Shi, Ying)` fixture. Retain the existing `PALACE_IDS` order solely for stable IDs, not divinatory meaning. "Six Relatives" uses the five F01 relation labels, not a sixth added category. Do not attribute the later complete operational table solely to the early received Jing text.
+- **Decision log:** 2026-09-26 PR #14 review: Explicit lookup tables remain private; public lookup results must be isolated from private mutable records and typed readonly at every nested level. Verify resistance to caller mutation rather than relying on TypeScript readonly alone, which does not protect runtime values.
 
 ## File structure and staged work
 
@@ -37,6 +39,7 @@
 
 - [x] Transcribe all 64 independent expected `(hexagram ID, palace ID, Shi, Ying)` tuples from Jing's eight palace rows, independently resolve named hexagrams to King Wen IDs with the F02 Stanford fixture, annotate both fixture sources and verify exactly eight entries per palace and every stable ID once.
 - [x] Implement pure palace lookup and element mapping; verify all 64 fixtures, eight elements, and wraparound markers with `pnpm --filter @liuyao/core test`. Historical red-phase output was not retained.
+- [ ] Return readonly palace classification fields without exposing mutable shared map values; mutate a returned helper result through a runtime cast, then verify both later `identifyPalace` and `calculateReading` facts remain correct.
 
 ### Task 2: Na Jia and branch elements (F03-T04–T07)
 
@@ -46,6 +49,7 @@
 
 - [x] Add independent 8 × 2 × 3 stem/branch fixture cases from the cited Na Jia verse/table; assert both sides of every trigram, especially heaven `jia/ren` and earth `yi/gui`, and all 12 branch-to-element cases.
 - [x] Implement explicit, complete side-specific tables and element map; run focused tests and package typecheck. Historical red-phase output was not retained.
+- [ ] Return readonly inner/outer assignment tuples with readonly nested stem/branch fields without exposing mutable shared table values; mutate a returned helper result through a runtime cast, then verify later `assignNaJia` and `calculateReading` facts remain correct.
 
 ### Task 3: Six Relatives and full board (F03-T08–T10)
 
@@ -70,7 +74,7 @@
 
 - Observed: 64 palace+Shi/Ying classifications; 16 side-specific Na Jia trigram assignments (48 line entries); 12 branch-element mappings; all five relatives across 25 element pairs; board snapshots and public API validation are covered by the F03 fixtures/tests. See the canonical task map at `docs/product-specs/v1-task-map.md` for task evidence requirements.
 - Observed: Parent-run `./init.sh` passed: 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint emitted one pre-existing, non-failing web `react-refresh` warning. This documentation update did not rerun validation.
-- Handoff: Plan revision `28e13b6` is pending fresh feedback. PR review and merge remain outstanding; see `features/feat-004.md` for the next action.
+- Handoff: Fresh PR #14 review found a mutable public lookup-result leak at head `a7a7e54`; isolation regression and new plan review are pending. See `features/feat-004.md` for the next action.
 
 ## Open issues
 
