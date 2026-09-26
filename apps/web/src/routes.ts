@@ -28,7 +28,11 @@ function RouteShell({ title, libraryDetail = false }: { title: string; libraryDe
         )
       : createElement(
           Link,
-          { className: 'underline underline-offset-4', to: ROUTES.home },
+          {
+            className:
+              'inline-flex min-h-11 min-w-11 items-center underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
+            to: ROUTES.home,
+          },
           'Return to home',
         ),
   );
