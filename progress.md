@@ -55,3 +55,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `pnpm --filter @liuyao/core test` passed 113 tests, package typecheck passed, and `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Independent fixture provenance and source errata are recorded in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
 **Blockers**: none for local verification; review and merge remain.
 **Next**: Submit the verified F02 revision for Orca review.
+
+## 2026-09-26 — feat-003
+
+**State**: done; PR #13 squash-merged as `ef2a99b`.
+**Done**: Completed F02-T01–T10: polarity and trigram identification, the 64-hexagram mapping, moving-line transformations, and the structured calculation API. Updated the architecture summary to reflect F02 and reserved board calculations for F03.
+**Evidence**: Fresh Codex review approved PR #13 at `7ef963b`; GitHub `verify` and GitGuardian checks passed. The worker ran 113 core tests, package typecheck, and `./init.sh`; the reviewer ran 84 focused tests and core typecheck. Fixture provenance and source errata are documented in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
+**Blockers**: none.
+**Next**: Activate feat-004 Liu Yao board.

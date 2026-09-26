@@ -16,9 +16,9 @@ All 64 primary hexagrams and moving-line transformations match fixtures.
 
 ## Acceptance
 
-- [ ] Complete all F02 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
-- [ ] Meet the V1 completion condition: All 64 primary hexagrams and moving-line transformations match fixtures.
-- [ ] Pass the repository verification workflow in `./init.sh`.
+- [x] Complete all F02 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
+- [x] Meet the V1 completion condition: All 64 primary hexagrams and moving-line transformations match fixtures.
+- [x] Pass the repository verification workflow in `./init.sh`.
 
 ## Relevant docs
 
@@ -48,11 +48,11 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Implementation plan
 
-- `docs/plans/feat-003.md` (implementation and verification recorded; review and merge pending).
+- `docs/plans/feat-003.md` (implementation and verification recorded; PR #13 merged).
 
 ## Handoff
 
-- State: active; implementation verified locally, pending Orca review/merge
-- Evidence: `pnpm --filter @liuyao/core test` (113 tests), `pnpm --filter @liuyao/core typecheck`, and `./init.sh` pass. The 64 primary and eight trigram fixtures are in `packages/liuyao-core/tests/`; Stanford Encyclopedia of Philosophy Yijing Appendices 1 and 3 supply the independent source. The fixture comment records two apparent source-code typos (#37 and #45) and their figure-backed corrections. One existing non-failing web lint warning remains outside F02.
+- State: done; PR #13 squash-merged as `ef2a99b`.
+- Evidence: GitHub `verify` and GitGuardian checks passed at reviewed head `7ef963b`. `pnpm --filter @liuyao/core test` passed 113 tests, package typecheck passed, and `./init.sh` passed format, lint, length check, typecheck, build, and package tests. The fresh PR review passed 84 focused tests and core typecheck. The 64 primary and eight trigram fixtures use Stanford Encyclopedia of Philosophy Yijing Appendices 1 and 3; source errata for #37 and #45 and their figure-backed corrections are recorded in `packages/liuyao-core/tests/hexagram-fixtures.ts`. One existing non-failing web lint warning remains outside F02.
 - Dependency check: `feat-002` is done.
-- Next: Obtain fresh Orca review of PR #13, then close the feature after accepted integration.
+- Next: Activate feat-004, which depends on feat-003.
