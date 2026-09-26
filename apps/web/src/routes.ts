@@ -1,6 +1,8 @@
 import { createElement } from 'react';
 import { createBrowserRouter, Link, Outlet, useParams } from 'react-router-dom';
 import App from './App';
+import { ReadingSessionProvider } from './reading-session';
+import { CastingFlow } from './casting-flow';
 import { AppShell } from './components/app-shell';
 import { ROUTES } from './route-paths';
 
@@ -47,7 +49,11 @@ function LibraryDetailRoute() {
 }
 
 function RouteLayout() {
-  return createElement(AppShell, null, createElement(Outlet));
+  return createElement(
+    ReadingSessionProvider,
+    null,
+    createElement(AppShell, null, createElement(Outlet)),
+  );
 }
 
 export const router = createBrowserRouter([
@@ -57,7 +63,7 @@ export const router = createBrowserRouter([
       { path: ROUTES.home, element: createElement(App) },
       { path: ROUTES.library, element: createElement(RouteShell, { title: 'Library' }) },
       { path: ROUTES.settings, element: createElement(RouteShell, { title: 'Settings' }) },
-      { path: ROUTES.casting, element: createElement(RouteShell, { title: 'Casting' }) },
+      { path: ROUTES.casting, element: createElement(CastingFlow) },
       { path: '/library/:entityType/:id', element: createElement(LibraryDetailRoute) },
     ],
   },
