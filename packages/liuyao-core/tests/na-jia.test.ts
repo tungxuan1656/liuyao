@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from '../src/contracts';
+import { calculateReading } from '../src/board';
 import { assignNaJia, branchElement } from '../src/na-jia';
 
 interface ExpectedNaJia {
@@ -217,5 +218,26 @@ describe('Na Jia', () => {
     for (const [branch, element] of EXPECTED_BRANCH_ELEMENTS) {
       expect(branchElement(branch), branch).toBe(element);
     }
+  });
+
+  it('isolates the public assignments from runtime mutation', () => {
+    const lines = [7, 7, 7, 7, 7, 7] as const;
+    const boardBeforeMutation = calculateReading({ lines });
+    const exposed = assignNaJia('trigram-heaven', 'inner') as unknown as {
+      stem: string;
+      branch: string;
+    }[];
+
+    exposed[0]!.stem = 'gui';
+    exposed[0]!.branch = 'hai';
+    exposed.reverse();
+    exposed.push({ stem: 'yi', branch: 'mao' });
+
+    expect(assignNaJia('trigram-heaven', 'inner')).toEqual([
+      { stem: 'jia', branch: 'zi' },
+      { stem: 'jia', branch: 'yin' },
+      { stem: 'jia', branch: 'chen' },
+    ]);
+    expect(calculateReading({ lines })).toEqual(boardBeforeMutation);
   });
 });

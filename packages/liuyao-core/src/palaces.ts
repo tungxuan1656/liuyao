@@ -1,10 +1,10 @@
 import type { FiveElement, HexagramId, PalaceId, ResultLinePosition } from './contracts';
 
 export interface PalaceClassification {
-  palaceId: PalaceId;
-  palaceElement: FiveElement;
-  shiPosition: ResultLinePosition;
-  yingPosition: ResultLinePosition;
+  readonly palaceId: PalaceId;
+  readonly palaceElement: FiveElement;
+  readonly shiPosition: ResultLinePosition;
+  readonly yingPosition: ResultLinePosition;
 }
 
 const PALACE_ELEMENTS: Record<PalaceId, FiveElement> = {
@@ -148,5 +148,5 @@ const CLASSIFICATIONS = new Map<HexagramId, PalaceClassification>(
 export function identifyPalace(hexagramId: HexagramId): PalaceClassification {
   const classification = CLASSIFICATIONS.get(hexagramId);
   if (!classification) throw new Error(`Unknown hexagram ID: ${hexagramId}`);
-  return classification;
+  return { ...classification };
 }

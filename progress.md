@@ -79,3 +79,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Parent-run `./init.sh` passed 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fixture and acceptance details remain linked in `features/feat-004.md` and `docs/product-specs/v1-task-map.md`.
 **Blockers**: Plan revision `28e13b6` is pending fresh feedback; PR review and merge are not complete.
 **Next**: Obtain fresh PR review feedback, address it, and merge after approval.
+
+## 2026-09-26 — feat-004 PR review follow-up
+
+**State**: done locally; PR #14 fresh review and merge pending.
+**Done**: Isolated public palace and Na Jia lookup results after reviewer found mutation could corrupt later board facts; added runtime mutation regressions.
+**Evidence**: `./init.sh` passed 127 core tests in 12 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing, non-failing web lint warning remains.
+**Blockers**: Updated PR head requires fresh review approval.
+**Next**: Request fresh PR #14 review on the corrected head and address any findings before merge.

@@ -3,11 +3,15 @@ import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from './cont
 export type NaJiaSide = 'inner' | 'outer';
 
 export interface NaJiaAssignment {
-  stem: HeavenlyStem;
-  branch: EarthlyBranch;
+  readonly stem: HeavenlyStem;
+  readonly branch: EarthlyBranch;
 }
 
-type NaJiaTrigramAssignment = readonly [NaJiaAssignment, NaJiaAssignment, NaJiaAssignment];
+type NaJiaTrigramAssignment = readonly [
+  Readonly<NaJiaAssignment>,
+  Readonly<NaJiaAssignment>,
+  Readonly<NaJiaAssignment>,
+];
 
 type NaJiaTable = Record<TrigramId, Record<NaJiaSide, NaJiaTrigramAssignment>>;
 
@@ -128,7 +132,11 @@ const BRANCH_ELEMENTS: Record<EarthlyBranch, FiveElement> = {
 
 /** Returns the trigram's three Na Jia assignments from the bottom line upward. */
 export function assignNaJia(trigram: TrigramId, side: NaJiaSide): NaJiaTrigramAssignment {
-  return NA_JIA_TABLE[trigram][side];
+  const assignments = NA_JIA_TABLE[trigram][side];
+  return assignments.map(({ stem, branch }) => ({
+    stem,
+    branch,
+  })) as unknown as NaJiaTrigramAssignment;
 }
 
 /** Returns the traditional five-element association for an earthly branch. */
