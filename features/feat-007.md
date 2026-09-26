@@ -27,6 +27,12 @@ A user can start, complete, recover, and restart a reading; active reading prese
 - `docs/product-specs/product-scope.md`
 - `ARCHITECTURE.md`
 
+## Plan and evidence
+
+- Implementation plan and decision log: `docs/plans/feat-007.md` (plan-only commit pending).
+
+[features/feat-007.md#7450]
+
 ## Tasks
 
 - [ ] F06-T01 — Replace scaffold screen with AppShell (BottomNav on compact, TopNav on wide)
@@ -56,7 +62,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: todo
+- State: active
 - Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- Dependency check: passed; feat-001, feat-004, feat-005, and feat-017 are done.
+- Next: Implement the canonical F06 tasks and gather direct UI and repository verification evidence.

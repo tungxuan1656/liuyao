@@ -175,3 +175,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: With both package `dist/` directories removed, `pnpm typecheck` passed and `./init.sh` passed typecheck before build, package runtime/declaration checks, test placement, all 155 core tests and 41 knowledge tests. FontTools 4.66.0 and Brotli 1.2.0 confirmed exact 96-codepoint cmap coverage in both bundled CJK app fonts. Lint reported the pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
 **Blockers**: Fresh review and approval are pending; PR #17 has not been merged.
 **Next**: Wait for fresh review of the updated PR head and address any new findings.
+
+## 2026-09-26 — feat-007 activated
+
+**State**: active; implementation plan pending commit and review.
+**Done**: Selected feat-007 Reading flow and confirmed its dependencies are done; scoped work to F06-T01–15 and the V1 reading completion condition.
+**Evidence**: `feature_index.json` and `features/feat-007.md` record feat-001, feat-004, feat-005, and feat-017 done; canonical acceptance is in `docs/product-specs/v1-task-map.md` and `docs/product-specs/reading-flow.md`.
+**Blockers**: none.
+**Next**: Commit `docs/plans/feat-007.md` and request plan review before implementing.
