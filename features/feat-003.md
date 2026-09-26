@@ -48,11 +48,11 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Implementation plan
 
-- `docs/plans/feat-003.md` (plan only; implementation not started).
+- `docs/plans/feat-003.md` (implementation and verification recorded; review and merge pending).
 
 ## Handoff
 
 - State: active; implementation verified locally, pending Orca review/merge
 - Evidence: `pnpm --filter @liuyao/core test` (113 tests), `pnpm --filter @liuyao/core typecheck`, and `./init.sh` pass. The 64 primary and eight trigram fixtures are in `packages/liuyao-core/tests/`; Stanford Encyclopedia of Philosophy Yijing Appendices 1 and 3 supply the independent source. The fixture comment records two apparent source-code typos (#37 and #45) and their figure-backed corrections. One existing non-failing web lint warning remains outside F02.
 - Dependency check: `feat-002` is done.
-- Next: Obtain Orca review of the implementation and verification, then close the feature after accepted integration.
+- Next: Obtain fresh Orca review of PR #13, then close the feature after accepted integration.
