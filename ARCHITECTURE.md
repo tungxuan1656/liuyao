@@ -74,7 +74,7 @@ Do not move durable facts into feature or progress records.
 4. The UI reads descriptive material from `@liuyao/knowledge`.
 5. The UI renders facts and reference knowledge.
 
-The current core implementation only detects and counts changing lines. Broader Liu Yao calculations remain future work.
+The core validates reading input, identifies primary and changed hexagrams from six lines, and reports changing positions. F03 board calculations remain future work.
 
 ## Verification ownership
 
