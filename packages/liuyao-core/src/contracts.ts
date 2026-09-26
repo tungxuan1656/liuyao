@@ -153,3 +153,13 @@ export interface ReadingResult {
   shiPosition: ResultLinePosition;
   yingPosition: ResultLinePosition;
 }
+
+/** F02-only facts; board fields in ReadingResult are calculated by F03. */
+export interface HexagramCalculationResult {
+  ruleset: RuleSetId;
+  primaryHexagramId: HexagramId;
+  changedHexagramId: HexagramId | null;
+  lowerTrigramId: TrigramId;
+  upperTrigramId: TrigramId;
+  changingPositions: readonly ResultLinePosition[];
+}

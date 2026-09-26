@@ -47,3 +47,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `pnpm --filter @liuyao/core test` passed 29 tests; `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Details are in `features/feat-002.md`.
 **Blockers**: none; one pre-existing non-failing web lint warning remains outside F01 scope.
 **Next**: feat-003 is active; implement F02 after confirming its canonical task map and architecture constraints.
+
+## 2026-09-26 — feat-003
+
+**State**: active; implementation locally verified, pending Orca review and merge.
+**Done**: F02-T01–T10 polarity, eight trigram patterns, 64 King Wen identities, moving-line transformations, and structured calculation API; retained F03 board work outside this scope.
+**Evidence**: `pnpm --filter @liuyao/core test` passed 113 tests, package typecheck passed, and `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Independent fixture provenance and source errata are recorded in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
+**Blockers**: none for local verification; review and merge remain.
+**Next**: Submit the verified F02 revision for Orca review.

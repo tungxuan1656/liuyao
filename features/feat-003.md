@@ -29,16 +29,16 @@ All 64 primary hexagrams and moving-line transformations match fixtures.
 
 ## Tasks
 
-- [ ] F02-T01 — Implement polarity conversion for `6,7,8,9`
-- [ ] F02-T02 — Encode all 8 trigram polarity patterns
-- [ ] F02-T03 — Identify lower and upper trigrams from six lines
-- [ ] F02-T04 — Add the canonical 64-hexagram mapping
-- [ ] F02-T05 — Identify the primary hexagram
-- [ ] F02-T06 — Transform only changing lines
-- [ ] F02-T07 — Identify the changed hexagram when changes exist
-- [ ] F02-T08 — Return no changed hexagram when no line changes
-- [ ] F02-T09 — Return one structured calculation result
-- [ ] F02-T10 — Add regression fixtures for mixed moving-line combinations
+- [x] F02-T01 — Implement polarity conversion for `6,7,8,9`
+- [x] F02-T02 — Encode all 8 trigram polarity patterns
+- [x] F02-T03 — Identify lower and upper trigrams from six lines
+- [x] F02-T04 — Add the canonical 64-hexagram mapping
+- [x] F02-T05 — Identify the primary hexagram
+- [x] F02-T06 — Transform only changing lines
+- [x] F02-T07 — Identify the changed hexagram when changes exist
+- [x] F02-T08 — Return no changed hexagram when no line changes
+- [x] F02-T09 — Return one structured calculation result
+- [x] F02-T10 — Add regression fixtures for mixed moving-line combinations
 
 Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md`.
 
@@ -52,7 +52,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: active; plan ready, implementation pending
-- Evidence: —
+- State: active; implementation verified locally, pending Orca review/merge
+- Evidence: `pnpm --filter @liuyao/core test` (113 tests), `pnpm --filter @liuyao/core typecheck`, and `./init.sh` pass. The 64 primary and eight trigram fixtures are in `packages/liuyao-core/tests/`; Stanford Encyclopedia of Philosophy Yijing Appendices 1 and 3 supply the independent source. The fixture comment records two apparent source-code typos (#37 and #45) and their figure-backed corrections. One existing non-failing web lint warning remains outside F02.
 - Dependency check: `feat-002` is done.
-- Next: Execute the F02 plan without implementing F03 board facts.
+- Next: Obtain Orca review of the implementation and verification, then close the feature after accepted integration.

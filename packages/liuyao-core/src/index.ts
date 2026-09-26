@@ -1,17 +1,17 @@
 export * from './contracts';
 export * from './positions';
 export * from './validation';
+export * from './polarity';
+export * from './trigrams';
+export * from './hexagrams';
+export * from './calculation';
 
 import type { HexagramReadingInput, LineValue } from './contracts';
+import { isChangingLine } from './polarity';
 
 export interface MinimalReadingSummary {
   hasChangingLines: boolean;
   changingLineCount: number;
-}
-
-/** Returns true for old/moving lines (6 and 9). */
-export function isChangingLine(value: LineValue): boolean {
-  return value === 6 || value === 9;
 }
 
 /** Counts changing lines in their stored bottom-to-top order. */
