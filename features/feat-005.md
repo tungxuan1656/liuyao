@@ -45,7 +45,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: todo
-- Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- State: active
+- Evidence: `feat-002` is done; canonical F04 acceptance and task evidence are in `docs/product-specs/v1-mvp.md` and `docs/product-specs/v1-task-map.md`.
+- Dependency check: passed; `feat-002` is done.
+- Next: Commit an implementation plan and obtain fresh plan review before continuing implementation.

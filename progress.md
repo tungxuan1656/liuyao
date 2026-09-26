@@ -95,3 +95,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Fresh Codex review approved head `5dee51279af59c264fed6681ee0caa1d505685fe`; GitHub `verify` and GitGuardian passed. The worker passed `./init.sh` with 127 core tests and 2 knowledge tests, format, lint, typecheck, and build; final docs-only changes passed focused format/diff/pre-push checks.
 **Blockers**: none.
 **Next**: Activate feat-005 Casting core.
+
+## 2026-09-26 — feat-005
+
+**State**: active; feat-002 dependency is done.
+**Done**: Selected F04 Casting core from the user-approved feat-001–012 batch and confirmed its canonical task map and product scope.
+**Evidence**: `feature_index.json` records feat-002 done and feat-005 active; F04 tasks and acceptance are defined in `docs/product-specs/v1-task-map.md` and `features/feat-005.md`.
+**Blockers**: none.
+**Next**: Commit the implementation plan and request fresh plan review.
