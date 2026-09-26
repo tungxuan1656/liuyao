@@ -34,7 +34,7 @@
 
 **Interfaces:** Export `LineValue = 6 | 7 | 8 | 9`, `SixLines` as a readonly six-element tuple, `RuleSetId` with sole value `liuyao-standard-v1`, stable trigram/hexagram/palace ID contracts, `HexagramReadingInput`, and structured result types that future F02/F03 calculations can populate. Preserve `inspectReading`, `isChangingLine`, and `countChangingLines` as existing exports.
 
-- [x] Add compile-time assignability assertions for six positions, allowed values, input, and result types; add runtime tests for the ruleset and ID cardinality/uniqueness (8 trigrams, 64 hexagrams, 8 palaces).
+- [x] Add compile-time assignability assertions for six positions, allowed values, input, and result types; add runtime tests for the ruleset and exact independent ID inventories with uniqueness (8 trigrams, 64 hexagrams, 8 palaces).
 - [x] Add contracts and barrel exports; run `pnpm --filter @liuyao/core test` and `pnpm --filter @liuyao/core typecheck`.
 
 ### Task 2: Runtime validation and ordered positions (F01-T05–T07)
@@ -72,4 +72,5 @@
 - **2026-09-26 — Plan review:** Validate the raw reading object's ruleset separately from its line tuple; normalize omission to the sole supported ruleset and reject a different supplied ID with a distinct typed error. Test complete fixed ID inventories as well as uniqueness.
 - **2026-09-26 — Follow-up plan review:** Require direct validator tests for defaulting and both concrete error classes. The coordinator activated feat-002 from the base branch's `todo` state before implementation; the PR retains `active` until merge.
 - **2026-09-26 — PR review:** The package's original build/typecheck tsconfig included `src` only, so the compile-time test assertions were not checked despite passing Vitest. Add a no-emit test project to package typecheck without changing build output; mark this gate complete only after verification.
+- **2026-09-26 — ID inventory review:** Cardinality and uniqueness alone allow a renamed ID. Contract tests now compare each fixed inventory against independent expected literal IDs, including the sole ruleset.
 - **2026-09-26 — Workspace:** Use the assigned current checkout and branch; do not create another Orca worktree.
