@@ -282,7 +282,7 @@ for name in ("noto-serif-cjk-knowledge.woff2", "noto-sans-cjk-knowledge.woff2"):
 - [x] Mark feat-017 done only after every acceptance criterion passes.
 - [x] Append one material result block to progress.md.
 - [x] Commit as docs: record feat-017 verification and handoff.
-- [ ] Push feat/017-preflow-hardening and open a PR against main. Stop before merge.
+- [x] Push feat/017-preflow-hardening and open PR #17 against main. Stop before merge.
 
 ## Verification commands
 

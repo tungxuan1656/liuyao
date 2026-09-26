@@ -45,7 +45,7 @@ Make the core, casting, knowledge, package, and font contracts safe before readi
 
 ## Handoff
 
-- State: done locally; PR creation and review pending.
+- State: done locally; [PR #17](https://github.com/tungxuan1656/liuyao/pull/17) is open against main; fresh review pending.
 - Evidence: Final ./init.sh passed with 155 core tests in 13 files and 41 knowledge tests in 7 files; typecheck, builds, package-export smoke check, test-placement check, format, and TypeScript length checks passed. Lint reported one pre-existing Fast Refresh warning at apps/web/src/components/ui/button.tsx:49. Both CJK font cmaps cover all 92 manifest codepoints. Mutation regressions reproduced the incorrect hexagram and mutable cast snapshot before their fixes.
-- Blockers: PR creation and fresh review are pending; this branch has not been merged.
-- Next: Push feat/017-preflow-hardening and open a PR targeting main.
+- Blockers: Fresh PR review is pending; this branch has not been merged.
+- Next: Address review feedback on PR #17 and wait for approval.

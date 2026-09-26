@@ -159,3 +159,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Final `./init.sh` passed with 155 core tests in 13 files and 41 knowledge tests in 7 files. Build, typecheck, Node package-export smoke check, test placement, formatting, and TypeScript length checks passed. The only lint output was one pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`. FontTools 4.66.0/Brotli 1.2.0 verified 92/92 manifest codepoints in each CJK font. Mutation regressions reproduced the bad hexagram mapping and mutable casting snapshot before the fixes.
 **Blockers**: PR creation and fresh review are pending; this branch has not been merged.
 **Next**: Push `feat/017-preflow-hardening` and open a PR targeting `main`.
+
+## 2026-09-26 — feat-017 PR handoff
+
+**State**: PR #17 is open against `main`; fresh review is pending.
+**Done**: Pushed `feat/017-preflow-hardening` and opened [PR #17](https://github.com/tungxuan1656/liuyao/pull/17). The PR contains the verified hardening work and is not merged.
+**Evidence**: GitHub reports the PR head and base as `feat/017-preflow-hardening` → `main`. Final `./init.sh`, explicit format/lint checks, pre-push typecheck/tests, Node package-export smoke check, and the CJK cmap verification passed.
+**Blockers**: Fresh PR review and approval are pending; no merge is claimed.
+**Next**: Address review feedback on PR #17 and wait for approval.
