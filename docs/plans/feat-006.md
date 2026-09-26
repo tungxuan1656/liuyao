@@ -1,0 +1,72 @@
+# Knowledge Implementation Plan
+
+> **Execution:** Follow the repository's implementation and verification rules. Use `subagent-driven-development` or `executing-plans` only when installed and appropriate. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Deliver local, licensed, validated V1 knowledge for every deterministic result fact and all 8 trigrams and 64 hexagrams.
+
+**Architecture:** `packages/knowledge/data` owns curated records and provenance; `packages/knowledge/src` owns typed contracts, validation, immutable access, and local search. Reuse the existing stable core entity IDs without adding a runtime package dependency. Keep explanations separate from calculations and UI.
+
+**Tech Stack:** TypeScript, Vitest, pnpm.
+
+## Global Constraints
+
+- F05-T01–T12 and their evidence in `docs/product-specs/v1-task-map.md` are canonical.
+- `liuyao-standard-v1` is the only V1 ruleset; line positions are bottom-to-top.
+- Do not copy modern copyrighted prose or invent source locations or disputed interpretations. Write short original factual descriptions and record rights/provenance.
+- No network, persistence, React, or hidden calculation rules in knowledge; tests only in `packages/*/tests`.
+- Keep data rights under `packages/knowledge/data/LICENSE`, distinct from the AGPL software license.
+
+---
+
+## Decision log
+
+- 2026-09-26: Keep core's `trigram-*` and `hexagram-01`–`hexagram-64` IDs stable. Introduce namespaced `term-*`, `rule-*`, `source-*`, and `reference-*` IDs for curated records. Include ruleset ID on rule records rather than deriving rules from knowledge.
+- 2026-09-26: Store bibliographic references as catalog metadata, not proof of a particular modern interpretation. A location is optional and present only for a verifiable section; unknown page/chapter locations remain absent.
+- 2026-09-26: Search normalizes case, Unicode combining marks, punctuation, and spacing locally. Return canonical readonly records in deterministic catalog order; never return mutable shared state.
+- 2026-09-26: A source-reference record must link an existing source and at least one existing knowledge entity, term, or rule. Validator rejects duplicates, missing references, malformed IDs, and unsupported rulesets before lookup construction.
+
+## Work stages
+
+### Task 1: Contracts and catalog identity (F05-T01–T02, T10)
+
+**Files:** Create `packages/knowledge/src/schema.ts`, `packages/knowledge/src/validation.ts`, `packages/knowledge/tests/schema.test.ts`; modify `packages/knowledge/src/index.ts`.
+
+**Interfaces:** `KnowledgeEntity`, `KnowledgeTerm`, `KnowledgeRule`, `KnowledgeSource`, `SourceReference`, `KnowledgeCatalog`; `validateKnowledgeCatalog(catalog: KnowledgeCatalog): void` throws for duplicate IDs, invalid shapes, broken references or unsupported ruleset. Entity IDs follow the core's existing patterns; other IDs use their namespace prefixes.
+
+- [ ] Test valid fixtures, invalid/missing fields, duplicate IDs within and across collections, broken entity/rule/source links, unsupported ruleset, and duplicate source-reference IDs; confirm tests fail before implementation.
+- [ ] Implement typed readonly contracts and runtime validation with descriptive errors; run `pnpm --filter @liuyao/knowledge test` and `pnpm --filter @liuyao/knowledge typecheck`.
+
+### Task 2: Curated V1 catalog and provenance (F05-T03–T09)
+
+**Files:** Create focused catalog files under `packages/knowledge/data/` for trigrams, hexagrams, terms, rules, sources, and references; rewrite `packages/knowledge/data/README.md` for actual data and usage rights; add `packages/knowledge/tests/catalog.test.ts`.
+
+**Interfaces:** `catalog: KnowledgeCatalog` combines exactly 8 `TrigramEntity`, 64 `HexagramEntity`, result-board terms and explanatory rules, and source/reference records. Each entity has a stable ID, canonical display name, and supported aliases; each hexagram has its King Wen number and upper/lower trigram IDs.
+
+- [ ] Test the 8/64 counts, exact stable IDs, representative known name/pair cases and all 64 unique upper/lower pairs; verify the initial coverage tests fail.
+- [ ] Write original concise display records and test required result concepts: yin/yang, moving lines, upper/lower trigrams, primary/changed hexagram, palace, Shi/Ying, Na Jia stems/branches, Five Elements, Six Relatives and five relations.
+- [ ] Add short explanatory rules keyed by stable IDs for displayed deterministic facts, explicitly distinguishing convention from prediction; audit coverage against `ReadingResult` and line fields in core.
+- [ ] Add bibliographic records with provenance/rights and only verified source locations; audit every reference link and every authored description against `LICENSING.md`. Run focused tests.
+
+### Task 3: Readonly lookup and normalized local search (F05-T10–T12)
+
+**Files:** Create `packages/knowledge/src/catalog.ts`, `packages/knowledge/src/search.ts`, `packages/knowledge/tests/lookup.test.ts`, `packages/knowledge/tests/search.test.ts`; modify `packages/knowledge/src/index.ts`.
+
+**Interfaces:** Public list/get functions return immutable catalog record copies by canonical ID and `undefined` for missing IDs; `searchKnowledge(query: string)` returns readonly matches across entities, terms and rules, matching normalized names and aliases with stable ordering.
+
+- [ ] Test mutation resistance for nested records, arrays, lists and search results; test missing IDs and identity stability.
+- [ ] Test case, diacritics, Unicode normalization, spacing, punctuation, aliases, empty query, and no-match behavior without network calls.
+- [ ] Implement access and search; run focused package tests/typecheck and inspect exported API boundaries.
+
+### Task 4: Verification and handoff
+
+**Files:** Modify `features/feat-006.md`, `feature_index.json`, `progress.md`, this plan; modify `ARCHITECTURE.md` and `docs/product-specs/product-scope.md` only to reflect observed behavior.
+
+- [ ] Inspect tree, run `./init.sh`, record exact test counts and warnings, and audit F05-T01–T12 evidence.
+- [ ] Mark feat-006 done only after acceptance passes; append one material progress block with concrete next action.
+- [ ] Commit and push implementation, open PR, send current-head review notice, address fresh plan/PR findings and reverify changed behavior before approval.
+
+## Verification budget
+
+- Package tests establish schema integrity, identity and 8/64 completeness, required term/rule coverage, source-reference integrity, immutability, and normalized search.
+- Source inspection establishes independent authored wording, rights metadata, and honest absent citation locations; no test can prove copyright ownership.
+- `./init.sh` checks repository format, lint, TypeScript length, typecheck, build, and package tests. Record any unrelated non-failing warnings separately.
