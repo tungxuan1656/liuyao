@@ -34,7 +34,7 @@
 
 **Interfaces:** Export `LineValue = 6 | 7 | 8 | 9`, `SixLines` as a readonly six-element tuple, `RuleSetId` with sole value `liuyao-standard-v1`, stable trigram/hexagram/palace ID contracts, `HexagramReadingInput`, and structured result types that future F02/F03 calculations can populate. Preserve `inspectReading`, `isChangingLine`, and `countChangingLines` as existing exports.
 
-- [ ] Write compile-time assignability assertions for six positions, allowed values, input, and result types; add runtime tests for public ruleset constant and all unique ID members.
+- [ ] Write compile-time assignability assertions for six positions, allowed values, input, and result types; add runtime tests asserting the complete intended ID inventories (8 trigrams, 64 hexagrams, 8 palaces, 1 ruleset) and uniqueness, so partial sets fail.
 - [ ] Run `pnpm --filter @liuyao/core test` and `pnpm --filter @liuyao/core typecheck`; confirm the new tests fail before the contracts exist.
 - [ ] Add only the contracts and barrel exports needed for those tests; rerun package tests and typecheck.
 - [ ] Commit this independently testable contract slice.
@@ -43,7 +43,7 @@
 
 **Files:** Create `packages/liuyao-core/src/validation.ts` and `packages/liuyao-core/src/positions.ts`; modify `packages/liuyao-core/src/index.ts`; test `packages/liuyao-core/tests/validation.test.ts` and `packages/liuyao-core/tests/positions.test.ts`.
 
-**Interfaces:** Export a boundary that accepts `unknown` and returns `SixLines` only for exactly six integers in `6..9`; distinguish invalid input from unsupported ruleset through typed errors. Export position helpers with position 1 mapped to index 0 and position 6 to index 5; never reverse the underlying tuple for display.
+**Interfaces:** Export `validateSixLines(value: unknown): SixLines` accepting exactly six integers in `6..9`, and `validateReadingInput(value: unknown): HexagramReadingInput` reading the raw object's `lines` and `ruleset` fields. An absent ruleset defaults to `liuyao-standard-v1`; a different supplied ruleset throws `UnsupportedRuleSetError`, while malformed input or lines throw `InvalidReadingInputError`. Export position helpers with position 1 mapped to index 0 and position 6 to index 5; never reverse the underlying tuple for display.
 
 - [ ] Write failing tests for short/long/non-array input, fractional/out-of-range/non-number members, unsupported ruleset, and valid boundary values `6,7,8,9`.
 - [ ] Write failing tests for position bounds, all six index mappings, and unchanged bottom-to-top line order.
@@ -67,4 +67,5 @@
 - **2026-09-26 — Scope:** Contracts may name future structured facts but must not compute hexagrams, palaces, or board facts assigned to F02/F03. Use the existing feature record as the accepted design.
 - **2026-09-26 — Identity:** Pick explicit, stable domain IDs and test uniqueness rather than derive IDs from localized names or array offsets. Keep the one supported ruleset literal.
 - **2026-09-26 — Boundary:** TypeScript tuples do not validate untyped runtime input. Validate before treating imported, user-entered, or deserialized values as `SixLines`.
+- **2026-09-26 — Plan review:** Validate the raw reading object's ruleset separately from its line tuple; normalize omission to the sole supported ruleset and reject a different supplied ID with a distinct typed error. Test complete fixed ID inventories as well as uniqueness.
 - **2026-09-26 — Workspace:** Use the assigned current checkout and branch; do not create another Orca worktree.
