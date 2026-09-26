@@ -4,7 +4,7 @@ import type {
   KnowledgeRecordId,
   KnowledgeRuleCategory,
   TrigramId,
-} from './schema';
+} from './schema.js';
 
 const TRIGRAM_IDS = new Set<TrigramId>([
   'trigram-heaven',

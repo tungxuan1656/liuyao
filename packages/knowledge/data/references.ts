@@ -1,4 +1,4 @@
-import type { SourceReference } from '../src/schema';
+import type { SourceReference } from '../src/schema.js';
 
 export const REFERENCES = [
   {

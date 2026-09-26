@@ -1,4 +1,4 @@
-import type { KnowledgeRule } from '../src/schema';
+import type { KnowledgeRule } from '../src/schema.js';
 
 const RULESET = 'liuyao-standard-v1' as const;
 

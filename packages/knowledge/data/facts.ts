@@ -1,4 +1,4 @@
-import type { FactDefinition } from '../src/schema';
+import type { FactDefinition } from '../src/schema.js';
 
 /** Rules that explain each deterministic ReadingResult and PrimaryLineResult fact. */
 export const FACTS = [

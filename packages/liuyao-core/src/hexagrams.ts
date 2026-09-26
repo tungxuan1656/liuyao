@@ -1,4 +1,4 @@
-import type { HexagramId, TrigramId } from './contracts';
+import type { HexagramId, TrigramId } from './contracts.js';
 
 const TRIGRAM_INDEX: Readonly<Record<TrigramId, number>> = Object.freeze({
   'trigram-heaven': 0,

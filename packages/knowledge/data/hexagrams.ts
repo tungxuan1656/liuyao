@@ -1,5 +1,5 @@
-import { TRIGRAMS } from './trigrams';
-import type { HexagramEntity, HexagramId, TrigramId } from '../src/schema';
+import { TRIGRAMS } from './trigrams.js';
+import type { HexagramEntity, HexagramId, TrigramId } from '../src/schema.js';
 
 export type HexagramRecord = HexagramEntity & { readonly han: string };
 

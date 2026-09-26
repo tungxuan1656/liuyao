@@ -1,5 +1,5 @@
-import type { HexagramReadingInput, LineValue } from './contracts';
-import { validateSixLines } from './validation';
+import type { HexagramReadingInput, LineValue } from './contracts.js';
+import { validateSixLines } from './validation.js';
 
 export type CoinBit = 0 | 1;
 export type CoinBitSource = () => CoinBit;

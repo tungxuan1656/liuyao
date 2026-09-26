@@ -1,4 +1,4 @@
-import type { KnowledgeSource } from '../src/schema';
+import type { KnowledgeSource } from '../src/schema.js';
 
 export const SOURCES = [
   {

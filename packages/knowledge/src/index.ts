@@ -1,10 +1,10 @@
-import { listSources } from './catalog';
+import { listSources } from './catalog.js';
 
 export const KNOWLEDGE_PACKAGE_VERSION = '0.1.0';
 
-export * from './catalog';
-export * from './search';
-export type { FactDefinition, KnowledgeFactId, KnowledgeRuleCategory } from './schema';
+export * from './catalog.js';
+export * from './search.js';
+export type { FactDefinition, KnowledgeFactId, KnowledgeRuleCategory } from './schema.js';
 
 export interface KnowledgeMetadata {
   name: string;

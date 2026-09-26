@@ -31,6 +31,8 @@
 - Use a checked-in CJK coverage manifest. Test that the knowledge catalog is present in the manifest, and verify generated WOFF2 cmap coverage with FontTools.
 - Change package exports to the built ESM and declaration files. Run a Node smoke check after the workspace build.
 - Build packages before typechecking because package type exports resolve to generated declarations. Run build, typecheck, export smoke check, and tests as ordered verification stages.
+- Add .js extensions to production relative imports in the two packages. The current emitted ESM keeps extensionless specifiers, which Node cannot resolve.
+- Keep Vite development hot reload on source with a development-only export condition; default Node imports resolve to built ESM.
 
 ## Source evidence
 
@@ -181,7 +183,10 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 **Files:**
 
 - Modify: packages/liuyao-core/package.json
+- Modify: packages/liuyao-core/src/*.ts relative imports
 - Modify: packages/knowledge/package.json
+- Modify: packages/knowledge/src/*.ts relative imports
+- Modify: packages/knowledge/data/*.ts relative imports
 - Modify: apps/web/package.json
 - Create: apps/web/scripts/check-package-exports.mjs
 - Modify: init.sh
@@ -191,16 +196,18 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 - Consumes: Workspace package builds and the @liuyao/web workspace links.
 - Produces: ESM and TypeScript declaration exports from each package's dist directory.
 
-- [ ] Add check:package-exports to the web package scripts.
-- [ ] Make the smoke script import calculateHexagram from @liuyao/core and getRulesForFact from @liuyao/knowledge.
-- [ ] In the smoke script, assert that six yang lines return hexagram-01 and getRulesForFact('line.relative') returns the Six Relative rule.
-- [ ] Use Node's built-in assert module and fail with a nonzero process status if either package import or assertion fails.
-- [ ] Change core exports to types: ./dist/index.d.ts and import/default: ./dist/index.js.
-- [ ] Change knowledge exports to types: ./dist/src/index.d.ts and import/default: ./dist/src/index.js.
-- [ ] Split init.sh into ordered build, typecheck, package-export smoke check, and test stages. Ensure the Node check is skipped if pnpm build fails.
-- [ ] Run pnpm build, pnpm typecheck, and pnpm --dir apps/web run check:package-exports in that order.
-- [ ] Run bash scripts/check_test_placement.sh.
-- [ ] Commit as build: export built workspace packages.
+- [x] Add check:package-exports to the web package scripts.
+- [x] Make the smoke script import calculateHexagram from @liuyao/core and getRulesForFact from @liuyao/knowledge.
+- [x] In the smoke script, assert that six yang lines return hexagram-01 and getRulesForFact('line.relative') returns the Six Relative rule.
+- [x] Use Node's built-in assert module and fail with a nonzero process status if either package import or assertion fails.
+- [x] Change core exports to types: ./dist/index.d.ts and import/default: ./dist/index.js.
+- [x] Change knowledge exports to types: ./dist/src/index.d.ts and import/default: ./dist/src/index.js.
+- [x] Preserve Vite source resolution in development while leaving Node's default import condition on dist.
+- [x] Add .js extensions to production relative imports so emitted ESM and declarations resolve under Node package rules.
+- [x] Split init.sh into ordered build, typecheck, package-export smoke check, and test stages. Ensure the Node check is skipped if pnpm build fails.
+- [x] Run pnpm build, pnpm typecheck, and pnpm --dir apps/web run check:package-exports in that order.
+- [x] Run bash scripts/check_test_placement.sh (pass).
+- [x] Commit as build(tooling): export built workspace packages.
 
 ### Task 6: Expand the offline CJK font subset
 

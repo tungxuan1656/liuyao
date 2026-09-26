@@ -1,4 +1,4 @@
-import type { TrigramEntity } from '../src/schema';
+import type { TrigramEntity } from '../src/schema.js';
 
 export type TrigramRecord = TrigramEntity;
 

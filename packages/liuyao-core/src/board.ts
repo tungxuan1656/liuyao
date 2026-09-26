@@ -5,12 +5,12 @@ import type {
   ResultLinePosition,
   SixPrimaryLineResults,
   SixRelative,
-} from './contracts';
-import { calculateHexagram } from './calculation';
-import { branchElement, assignNaJia } from './na-jia';
-import { isChangingLine, linePolarity } from './polarity';
-import { identifyPalace } from './palaces';
-import { validateReadingInput } from './validation';
+} from './contracts.js';
+import { calculateHexagram } from './calculation.js';
+import { branchElement, assignNaJia } from './na-jia.js';
+import { isChangingLine, linePolarity } from './polarity.js';
+import { identifyPalace } from './palaces.js';
+import { validateReadingInput } from './validation.js';
 
 /** Classify a line element by its five-element relation to the palace element. */
 export function sixRelative(palaceElement: FiveElement, lineElement: FiveElement): SixRelative {

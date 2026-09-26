@@ -1,10 +1,10 @@
-import { HEXAGRAMS } from '../data/hexagrams';
-import { FACTS } from '../data/facts';
-import { REFERENCES } from '../data/references';
-import { RULES } from '../data/rules';
-import { SOURCES } from '../data/sources';
-import { TERMS } from '../data/terms';
-import { TRIGRAMS } from '../data/trigrams';
+import { HEXAGRAMS } from '../data/hexagrams.js';
+import { FACTS } from '../data/facts.js';
+import { REFERENCES } from '../data/references.js';
+import { RULES } from '../data/rules.js';
+import { SOURCES } from '../data/sources.js';
+import { TERMS } from '../data/terms.js';
+import { TRIGRAMS } from '../data/trigrams.js';
 import type {
   HexagramEntity,
   HexagramId,
@@ -17,8 +17,8 @@ import type {
   SourceReference,
   TrigramEntity,
   TrigramId,
-} from './schema';
-import { validateKnowledgeCatalog } from './validation';
+} from './schema.js';
+import { validateKnowledgeCatalog } from './validation.js';
 
 function deepFreeze<T>(value: T): T {
   if (value !== null && typeof value === 'object' && !Object.isFrozen(value)) {
