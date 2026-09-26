@@ -20,15 +20,15 @@ All current runtime behavior is local to the browser. The repository has no back
 
 ## Code map
 
-| Area                                             | Owns                                                                 | Must not own                                               |
-| ------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `apps/web`                                       | UI, PWA behavior, package composition, user-facing flows             | Reusable Liu Yao calculation rules                         |
-| `packages/liuyao-core`                           | Deterministic input types and Liu Yao calculations                   | React, DOM, storage, persistence, network, reference prose |
-| `packages/knowledge`                             | Structured reference data, terminology, source metadata, access APIs | App UI and hidden calculation rules                        |
-| `packages/knowledge/data`                        | Curated knowledge content and source material                        | Application behavior                                       |
-| `docs/`                                          | Durable product and engineering truth                                | Volatile execution state                                   |
-| `features/`, `feature_index.json`, `progress.md` | Tracked execution state and handoff                                  | Durable architecture or product rules                      |
-| `scripts/`, `init.sh`                            | Mechanical repository verification                                   | Domain behavior                                            |
+| Area                                             | Owns                                                                             | Must not own                                                             |
+| ------------------------------------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `apps/web`                                       | UI, PWA behavior, package composition, user-facing flows, browser crypto adapter | Reusable Liu Yao calculation rules                                       |
+| `packages/liuyao-core`                           | Deterministic input types, casting outcomes, and Liu Yao calculations            | React, DOM, browser APIs, storage, persistence, network, reference prose |
+| `packages/knowledge`                             | Structured reference data, terminology, source metadata, access APIs             | App UI and hidden calculation rules                                      |
+| `packages/knowledge/data`                        | Curated knowledge content and source material                                    | Application behavior                                                     |
+| `docs/`                                          | Durable product and engineering truth                                            | Volatile execution state                                                 |
+| `features/`, `feature_index.json`, `progress.md` | Tracked execution state and handoff                                              | Durable architecture or product rules                                    |
+| `scripts/`, `init.sh`                            | Mechanical repository verification                                               | Domain behavior                                                          |
 
 ## Dependency direction
 
@@ -74,7 +74,7 @@ Do not move durable facts into feature or progress records.
 4. The UI reads descriptive material from `@liuyao/knowledge`.
 5. The UI renders facts and reference knowledge.
 
-The core validates reading input, identifies primary and changed hexagrams from six lines, reports changing positions, and calculates structured primary-hexagram board facts including palace, Shi/Ying, Na Jia, elements, and Six Relatives.
+The core validates reading input, maps three coin bits to line values, provides an injected-source casting service and normalizers, identifies primary and changed hexagrams from six lines, reports changing positions, and calculates structured primary-hexagram board facts including palace, Shi/Ying, Na Jia, elements, and Six Relatives. The web layer adapts browser `crypto.getRandomValues` to the injected coin-bit source; core uses no browser globals.
 
 ## Verification ownership
 

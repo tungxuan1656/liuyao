@@ -103,3 +103,19 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `feature_index.json` records feat-002 done and feat-005 active; F04 tasks and acceptance are defined in `docs/product-specs/v1-task-map.md` and `features/feat-005.md`.
 **Blockers**: none.
 **Next**: Commit the implementation plan and request fresh plan review.
+
+## 2026-09-26 — feat-005
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F04-T01–T07: deterministic three-coin outcomes, injected casting service, normalized direct/sequential inputs, and a web-only browser crypto adapter; updated observed architecture and product summaries.
+**Evidence**: Parent-run `./init.sh` passed with 152 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`. Plan and focused evidence are in `docs/plans/feat-005.md`.
+**Blockers**: Fresh PR review and merge remain outstanding; no PR approval is claimed.
+**Next**: Submit the verified changes for fresh PR review and address any findings.
+
+## 2026-09-26 — feat-005 PR review follow-up
+
+**State**: done locally; PR #15 fresh review and merge pending.
+**Done**: Corrected plan evidence chronology and rejected sparse three-coin arrays that could bypass iteration validation; added a regression.
+**Evidence**: `./init.sh` passed with 153 core tests in 13 files and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing non-failing web `react-refresh` warning remains.
+**Blockers**: Updated PR head requires fresh review approval.
+**Next**: Request fresh review of PR #15 on the corrected head and address any findings.
