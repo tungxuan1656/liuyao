@@ -3,7 +3,7 @@ import type { KnowledgeSource } from '../src/schema.js';
 export const SOURCES = [
   {
     id: 'source-zhouyi',
-    title: 'Zhouyi (周易; Book of Changes)',
+    title: 'Zhouyi（周易；Book of Changes）',
     author:
       'Traditionally associated with King Wen and the Duke of Zhou; received text of composite authorship.',
     publication:

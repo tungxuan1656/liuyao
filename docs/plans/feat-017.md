@@ -214,12 +214,15 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 **Files:**
 
 - Create: apps/web/public/fonts/cjk-coverage.txt
+- Create: apps/web/scripts/update-cjk-coverage.mjs
 - Create: apps/web/public/fonts/noto-serif-cjk-knowledge.woff2
 - Create: apps/web/public/fonts/noto-sans-cjk-knowledge.woff2
 - Delete: apps/web/public/fonts/noto-serif-cjk-nine-han.woff2
 - Delete: apps/web/public/fonts/noto-sans-cjk-nine-han.woff2
 - Modify: apps/web/public/fonts/README.md
+- Modify: apps/web/public/fonts/NOTICE.md
 - Modify: apps/web/src/index.css
+- Modify: apps/web/package.json
 - Test: packages/knowledge/tests/entities.test.ts
 
 **Interfaces:**
@@ -227,11 +230,12 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 - Consumes: CJK codepoints in the complete local knowledge catalog.
 - Produces: A coverage manifest and two self-hosted WOFF2 fonts that include every manifested codepoint.
 
-- [ ] Add a knowledge test that extracts CJK characters from knowledgeCatalog and asserts that each appears in cjk-coverage.txt.
-- [ ] Run pnpm --filter @liuyao/knowledge test -- entities.test.ts. The new manifest coverage assertion must fail before the manifest changes.
-- [ ] Generate the manifest from all entity, term, rule, source, and reference records. Include CJK punctuation used by those records.
-- [ ] Test CJK Han, CJK punctuation, and full-width characters against cjk-coverage.txt.
-- [ ] Regenerate both CJK fonts from the pinned Noto SC sources with FontTools 4.66.0 and Brotli 1.2.0. Use --text-file=cjk-coverage.txt:
+- [x] Add a knowledge test that extracts CJK characters from knowledgeCatalog and asserts that each appears in cjk-coverage.txt.
+- [x] Run pnpm --filter @liuyao/knowledge test -- entities.test.ts. The new assertion failed with 92 missing codepoints before the manifest was generated.
+- [x] Generate the manifest from all entity, term, rule, source, and reference records. Include the CJK punctuation used by the source metadata.
+- [x] Add a deterministic update:cjk-coverage script that reads the built knowledge catalog and writes sorted unique codepoints.
+- [x] Test CJK Han, CJK punctuation, and full-width characters against cjk-coverage.txt.
+- [x] Regenerate both CJK fonts from the pinned Noto SC sources with FontTools 4.66.0 and Brotli 1.2.0. Use --text-file=cjk-coverage.txt:
 
 ```sh
 cd apps/web/public/fonts
@@ -239,10 +243,10 @@ pyftsubset NotoSerifSC.ttf --output-file=noto-serif-cjk-knowledge.woff2 --flavor
 pyftsubset NotoSansSC.ttf --output-file=noto-sans-cjk-knowledge.woff2 --flavor=woff2 --text-file=cjk-coverage.txt --layout-features='*'
 ```
 
-- [ ] Rename the two font assets to *-cjk-knowledge.woff2.
-- [ ] Remove the nine-character unicode-range from both CJK @font-face rules. Update their URLs in index.css.
-- [ ] Update the font README with the exact manifest, font names, subset counts, and regeneration commands.
-- [ ] Run this cmap check with FontTools 4.66.0 and Brotli 1.2.0:
+- [x] Replace the old nine-character assets with the two *-cjk-knowledge.woff2 subsets.
+- [x] Remove the nine-character unicode-range from both CJK @font-face rules. Update their URLs in index.css.
+- [x] Update the font README and NOTICE with manifest counts, asset names, subset sizes, and regeneration commands.
+- [x] Run this cmap check with FontTools 4.66.0 and Brotli 1.2.0:
 
 ```python
 from pathlib import Path
@@ -256,8 +260,8 @@ for name in ("noto-serif-cjk-knowledge.woff2", "noto-sans-cjk-knowledge.woff2"):
     assert not missing, (name, sorted(missing))
 ```
 
-- [ ] Run pnpm --filter @liuyao/knowledge test -- entities.test.ts and pnpm --filter @liuyao/web build.
-- [ ] Commit as fix(web): cover local knowledge CJK text.
+- [x] Run pnpm --filter @liuyao/knowledge test -- entities.test.ts (7 files, 41 tests), knowledge typecheck, pnpm --filter @liuyao/web build, test placement check, and the cmap check.
+- [x] Commit as fix(web): cover local knowledge CJK text.
 
 ### Task 7: Complete feature gates, verification, and PR handoff
 

@@ -194,7 +194,7 @@ describe('curated V1 content', () => {
       sourceId: 'source-zhouyi',
       targetIds: ['term-trigram'],
       location:
-        'Shuo Gua (說卦傳), discussion of the eight trigrams and their associated qualities.',
+        'Shuo Gua（說卦傳），discussion of the eight trigrams and their associated qualities。',
     });
     expect(REFERENCES.every(({ location }) => location && location.trim().length > 0)).toBe(true);
   });
