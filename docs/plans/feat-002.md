@@ -34,10 +34,8 @@
 
 **Interfaces:** Export `LineValue = 6 | 7 | 8 | 9`, `SixLines` as a readonly six-element tuple, `RuleSetId` with sole value `liuyao-standard-v1`, stable trigram/hexagram/palace ID contracts, `HexagramReadingInput`, and structured result types that future F02/F03 calculations can populate. Preserve `inspectReading`, `isChangingLine`, and `countChangingLines` as existing exports.
 
-- [ ] Write compile-time assignability assertions for six positions, allowed values, input, and result types; add runtime tests asserting the complete intended ID inventories (8 trigrams, 64 hexagrams, 8 palaces, 1 ruleset) and uniqueness, so partial sets fail.
-- [ ] Run `pnpm --filter @liuyao/core test` and `pnpm --filter @liuyao/core typecheck`; confirm the new tests fail before the contracts exist.
-- [ ] Add only the contracts and barrel exports needed for those tests; rerun package tests and typecheck.
-- [ ] Commit this independently testable contract slice.
+- [x] Add compile-time assignability assertions for six positions, allowed values, input, and result types; add runtime tests for the ruleset and ID cardinality/uniqueness (8 trigrams, 64 hexagrams, 8 palaces).
+- [x] Add contracts and barrel exports; run `pnpm --filter @liuyao/core test` and `pnpm --filter @liuyao/core typecheck`.
 
 ### Task 2: Runtime validation and ordered positions (F01-T05–T07)
 
@@ -45,10 +43,9 @@
 
 **Interfaces:** Export `validateSixLines(value: unknown): SixLines` accepting exactly six integers in `6..9`, and `validateReadingInput(value: unknown): HexagramReadingInput` reading the raw object's `lines` and `ruleset` fields. An absent ruleset defaults to `liuyao-standard-v1`; a different supplied ruleset throws `UnsupportedRuleSetError`, while malformed input or lines throw `InvalidReadingInputError`. Export position helpers with position 1 mapped to index 0 and position 6 to index 5; never reverse the underlying tuple for display.
 
-- [ ] Write failing tests for short/long/non-array input, fractional/out-of-range/non-number members, and valid boundary values `6,7,8,9`. Explicitly test that `validateReadingInput({ lines })` defaults an omitted ruleset to `liuyao-standard-v1`, an unknown ruleset throws `UnsupportedRuleSetError`, and malformed raw objects or lines throw `InvalidReadingInputError`; fixture defaults alone do not prove the validator behavior.
-- [ ] Write failing tests for position bounds, all six index mappings, and unchanged bottom-to-top line order.
-- [ ] Implement minimal typed errors, boundary validation, and position helpers; rerun targeted package tests and typecheck.
-- [ ] Commit this independently testable validation and order slice.
+- [x] Test short/long/non-array input, fractional/out-of-range/non-number members, and valid boundary values `6,7,8,9`. Directly test that `validateReadingInput({ lines })` defaults an omitted ruleset, an unknown ruleset throws `UnsupportedRuleSetError`, and malformed objects/lines throw `InvalidReadingInputError`.
+- [x] Test position bounds, all six index mappings, and unchanged bottom-to-top line order.
+- [x] Implement typed errors, boundary validation, and position helpers; rerun package tests and typecheck.
 
 ### Task 3: Reusable fixtures and handoff (F01-T08)
 
@@ -56,11 +53,16 @@
 
 **Interfaces:** A typed fixture builder creates a fresh `SixLines` tuple and reading input with the standard ruleset; test callers can override each line without mutating shared fixture state.
 
-- [ ] Write failing tests showing independent fixture instances, ordered line overrides, and standard ruleset default.
-- [ ] Implement fixture helpers under package tests only; rerun package tests and typecheck.
-- [ ] Inspect `git status` and `git diff`; run `./init.sh`, then the read-only checks from `docs/development.md` if needed to establish merge readiness.
-- [ ] Check every F01 evidence row and feature acceptance item; record exact commands/results, limitations, decisions, and next action in the feature handoff and append a material progress block.
-- [ ] Commit, push this branch, open a PR against `main`, and report its URL and immutable head SHA. Keep feat-002 active pending merge and review.
+- [x] Test independent fixture instances, ordered line overrides, and standard ruleset default.
+- [x] Implement fixture helpers under package tests only; rerun package tests and typecheck.
+- [x] Inspect `git status` and `git diff`; run `./init.sh`, then the read-only checks from `docs/development.md`.
+- [x] Check every F01 evidence row and feature acceptance item; record commands/results, limitations, decisions, and next action in `features/feat-002.md` and `progress.md`.
+- [x] Commit, push the branch, open PR #12 against `main`, and report its URL and exact head SHA. Keep feat-002 active pending merge and review.
+
+## Review verification gate
+
+- [x] Typecheck package tests through `packages/liuyao-core/tsconfig.test.json`, a separate no-emit project wired into package `typecheck`; the build continues emitting only `src`. This checks the `@ts-expect-error` contract assertions in `tests/contracts.test.ts`, which the original `src`-only project did not check.
+- [x] Run updated package typecheck, `./init.sh`, and read-only checks after review fixes; update feature evidence and report the new PR head.
 
 ## Risks and decision log
 
@@ -69,4 +71,5 @@
 - **2026-09-26 — Boundary:** TypeScript tuples do not validate untyped runtime input. Validate before treating imported, user-entered, or deserialized values as `SixLines`.
 - **2026-09-26 — Plan review:** Validate the raw reading object's ruleset separately from its line tuple; normalize omission to the sole supported ruleset and reject a different supplied ID with a distinct typed error. Test complete fixed ID inventories as well as uniqueness.
 - **2026-09-26 — Follow-up plan review:** Require direct validator tests for defaulting and both concrete error classes. The coordinator activated feat-002 from the base branch's `todo` state before implementation; the PR retains `active` until merge.
+- **2026-09-26 — PR review:** The package's original build/typecheck tsconfig included `src` only, so the compile-time test assertions were not checked despite passing Vitest. Add a no-emit test project to package typecheck without changing build output; mark this gate complete only after verification.
 - **2026-09-26 — Workspace:** Use the assigned current checkout and branch; do not create another Orca worktree.

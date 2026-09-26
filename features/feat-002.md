@@ -42,12 +42,12 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Evidence and decisions
 
-- F01-T01/T04: `packages/liuyao-core/tests/contracts.test.ts` checks tuple length, allowed values, and complete typed structured result, including the six primary-line facts specified by `docs/design-docs/domain-model.md`.
+- F01-T01/T04: `packages/liuyao-core/tests/contracts.test.ts` checks tuple length, allowed values, and complete typed structured result, including the six primary-line facts specified by `docs/design-docs/domain-model.md`. The package `typecheck` script now compiles `src` and `tests` via the no-emit `tsconfig.test.json`, so `@ts-expect-error` assertions are checked; the package build still emits only `src`.
 - F01-T02/T03: contract tests check public `liuyao-standard-v1` and cardinality/uniqueness of eight trigram, 64 hexagram, and eight palace IDs. IDs are explicit and independent of display names; hexagram IDs use `hexagram-01` through `hexagram-64` without calculating the mapping.
 - F01-T05/T06: `packages/liuyao-core/tests/validation.test.ts` checks invalid input, exactly six integers from 6 to 9, sparse arrays, distinct unsupported-ruleset error, and default ruleset normalization.
 - F01-T07: `packages/liuyao-core/tests/positions.test.ts` checks all six position/index mappings, bounds, and unchanged bottom-to-top tuple order.
 - F01-T08: `packages/liuyao-core/tests/fixtures.test.ts` checks fresh fixture instances, position overrides, and the standard ruleset default; helpers stay in package tests for future golden fixtures.
-- `pnpm --filter @liuyao/core test` passed: five files, 29 tests; package typecheck passed. `./init.sh` passed format, lint, TypeScript length check, typecheck, build, and package tests. Lint reports one pre-existing non-failing React Fast Refresh warning in `apps/web/src/components/ui/button.tsx`.
+- `pnpm --filter @liuyao/core test` passed: five files, 29 tests; package typecheck covering tests passed. After the PR review fix, `./init.sh` passed format, lint, TypeScript length check, typecheck, build, and package tests; read-only `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build` passed. Lint reports one pre-existing non-failing React Fast Refresh warning in `apps/web/src/components/ui/button.tsx`.
 - Input retains the scaffold's optional datetime/timezone fields, but F01 calculations do not use them. Structured result types name future F02/F03 facts without implementing their calculations; no web, persistence, network, or knowledge logic was added.
 
 ## Dependencies
