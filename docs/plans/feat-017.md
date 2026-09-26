@@ -142,6 +142,7 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 - Modify: packages/knowledge/src/schema.ts
 - Create: packages/knowledge/data/facts.ts
 - Modify: packages/knowledge/src/catalog.ts
+- Modify: packages/knowledge/data/README.md
 - Test: packages/knowledge/tests/content.test.ts
 - Test: packages/knowledge/tests/core-contracts.test.ts
 
@@ -150,8 +151,8 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 - Consumes: ReadingResult and PrimaryLineResult field names as the test-only contract.
 - Produces: FactDefinition, KnowledgeFactId, and getRulesForFact(factId).
 
-- [ ] Move the current result and line mappings from content.test.ts into production FACTS.
-- [ ] Use these mappings:
+- [x] Move the current result and line mappings from content.test.ts into production FACTS.
+- [x] Use these mappings:
 
 | Fact IDs                                                                                     | Rule ID                                                    |
 | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
@@ -165,15 +166,15 @@ export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' 
 | line.element                                                                                 | rule-branch-element                                        |
 | line.relative                                                                                | rule-five-element-cycles, rule-six-relative-classification |
 
-- [ ] Define each registry record as { id: KnowledgeFactId; ruleIds: readonly KnowledgeRule['id'][] }.
-- [ ] Export getRulesForFact(factId: KnowledgeFactId): readonly KnowledgeRule[] from catalog.ts. Return the existing immutable catalog rule records.
-- [ ] Test that getRulesForFact('line.relative') returns both rule-five-element-cycles and rule-six-relative-classification.
-- [ ] Test every registry fact against field names parsed from the core contracts. Do not keep a second field-to-rule fixture in tests.
-- [ ] Add a source-reading drift test. Parse TRIGRAM_IDS and HEXAGRAM_IDS from core contracts.ts, then parse HEXAGRAM_BY_UPPER_AND_LOWER from core hexagrams.ts.
-- [ ] Compare both parsed ID arrays with knowledge data. For all 64 knowledge hexagrams, use the core trigram order to index the parsed grid and compare the King Wen ID.
-- [ ] Keep this check under packages/knowledge/tests; do not add a runtime core import.
-- [ ] Run pnpm --filter @liuyao/knowledge test.
-- [ ] Commit as feat(knowledge): expose production fact rules.
+- [x] Define each registry record as { id: KnowledgeFactId; ruleIds: readonly KnowledgeRule['id'][] }.
+- [x] Export getRulesForFact(factId: KnowledgeFactId): readonly KnowledgeRule[] from catalog.ts. Return the existing immutable catalog rule records.
+- [x] Test that getRulesForFact('line.relative') returns both rule-five-element-cycles and rule-six-relative-classification.
+- [x] Test every registry fact against field names parsed from the core contracts. Do not keep a second field-to-rule fixture in tests.
+- [x] Add a source-reading drift test. Parse TRIGRAM_IDS and HEXAGRAM_IDS from core contracts.ts, then parse HEXAGRAM_BY_UPPER_AND_LOWER from core hexagrams.ts.
+- [x] Compare both parsed ID arrays with knowledge data. For all 64 knowledge hexagrams, use the core trigram order to index the parsed grid and compare the King Wen ID.
+- [x] Keep this check under packages/knowledge/tests; do not add a runtime core import. Document the test-only drift guard.
+- [x] Run pnpm --filter @liuyao/knowledge test (7 files, 40 tests passed) and typecheck.
+- [x] Commit as feat(knowledge): expose production fact rules.
 
 ### Task 5: Export built packages and verify Node resolution
 

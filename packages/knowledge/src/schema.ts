@@ -120,6 +120,32 @@ export interface KnowledgeRule {
   readonly category: KnowledgeRuleCategory;
 }
 
+export type KnowledgeFactId =
+  | 'result.ruleset'
+  | 'result.lines'
+  | 'result.primaryHexagramId'
+  | 'result.changedHexagramId'
+  | 'result.lowerTrigramId'
+  | 'result.upperTrigramId'
+  | 'result.palaceId'
+  | 'result.palaceElement'
+  | 'result.shiPosition'
+  | 'result.yingPosition'
+  | 'line.position'
+  | 'line.inputValue'
+  | 'line.polarity'
+  | 'line.changing'
+  | 'line.naJiaStem'
+  | 'line.naJiaBranch'
+  | 'line.element'
+  | 'line.relative'
+  | 'line.shiYing';
+
+export interface FactDefinition {
+  readonly id: KnowledgeFactId;
+  readonly ruleIds: readonly KnowledgeRule['id'][];
+}
+
 export interface KnowledgeSource {
   readonly id: `source-${string}`;
   readonly title: string;

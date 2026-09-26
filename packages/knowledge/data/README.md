@@ -2,7 +2,7 @@
 
 This directory contains curated terminology, entity explanations, concise ruleset explanations, and source metadata. The data files conform to the record interfaces in `packages/knowledge/src/schema.ts`. They are deliberately self-contained and do not import `@liuyao/core` at runtime.
 
-The stable trigram IDs and King Wen upper/lower trigram grid in this package intentionally duplicate the corresponding contract/table in `@liuyao/core`. Keep both lists and the grid in sync when either changes. This duplication avoids introducing a runtime dependency from knowledge data to the calculation package.
+The stable trigram IDs and King Wen upper/lower trigram grid in this package intentionally duplicate the corresponding contract/table in `@liuyao/core`. A knowledge test parses both core inventories and the core grid and checks them against these knowledge records. This test-only contract guard avoids introducing a runtime dependency from knowledge data to the calculation package.
 
 ## Current content
 

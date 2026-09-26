@@ -1,4 +1,5 @@
 import { HEXAGRAMS } from '../data/hexagrams';
+import { FACTS } from '../data/facts';
 import { REFERENCES } from '../data/references';
 import { RULES } from '../data/rules';
 import { SOURCES } from '../data/sources';
@@ -7,6 +8,7 @@ import { TRIGRAMS } from '../data/trigrams';
 import type {
   HexagramEntity,
   HexagramId,
+  KnowledgeFactId,
   KnowledgeCatalog,
   KnowledgeEntity,
   KnowledgeRule,
@@ -73,6 +75,19 @@ const sourceById = new Map<KnowledgeSource['id'], KnowledgeSource>(
 const referenceById = new Map<SourceReference['id'], SourceReference>(
   references.map(reference => [reference.id, reference]),
 );
+const emptyRules: readonly KnowledgeRule[] = Object.freeze([]);
+const rulesByFactId = new Map<KnowledgeFactId, readonly KnowledgeRule[]>(
+  FACTS.map(({ id, ruleIds }) => [
+    id,
+    deepFreeze(
+      ruleIds.map(ruleId => {
+        const rule = ruleById.get(ruleId);
+        if (!rule) throw new Error(`Unknown rule ${ruleId} mapped to fact ${id}`);
+        return rule;
+      }),
+    ),
+  ]),
+);
 
 export function listKnowledgeEntities(): readonly KnowledgeEntity[] {
   return entities;
@@ -105,6 +120,9 @@ export function listRules(): readonly KnowledgeRule[] {
 }
 export function getRule(id: KnowledgeRule['id']): KnowledgeRule | undefined {
   return ruleById.get(id);
+}
+export function getRulesForFact(factId: KnowledgeFactId): readonly KnowledgeRule[] {
+  return rulesByFactId.get(factId) ?? emptyRules;
 }
 export function listSources(): readonly KnowledgeSource[] {
   return sources;
