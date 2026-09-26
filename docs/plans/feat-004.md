@@ -19,13 +19,13 @@
 
 ## Sources and convention decisions
 
-- Eight Palace oracle: [UAYA Foundation, Eight Palaces, complete 8 × 8 table](https://uaya.org/zh/learn/iching/advanced-studies/wen-wang-gua/hexagram-skeleton/eight-palaces/) (palace rows, five generations, wandering/returning). Cross-check with [Jing Shi Yi Zhuan (京氏易傳), upper volume](https://www.yanyilundao.com/b13), which lists palace sequences, and [Zhang Jiming, Jing Fang Na Jia study](https://www.zhangjiming.cn/12949.html), sections on eight palaces and Shi positions.
-- Na Jia oracle: [Zhang Jiming, Jing Fang Na Jia study](https://www.zhangjiming.cn/12949.html), section beginning `乾金甲子外壬午` through all eight trigram branch sequences. Cross-check the inner/outer tables and branch elements in [CosmicTao, Na Jia reference](https://www.cosmictao.com/zh/library/najia). These sources document the convention but are not product prose to import.
+- Eight Palace oracle: the received [Jing Shi Yi Zhuan (京氏易傳)](https://ctext.org/jingshi-yizhuan/zhs), whose eight named palace sequences list the membership of all 64 hexagrams. Cross-check the numerical 8 × 8 grouping in [UAYA Foundation, Eight Palaces](https://uaya.org/zh/learn/iching/advanced-studies/wen-wang-gua/hexagram-skeleton/eight-palaces/) where available; use [Bu Shi Zheng Zong (卜筮正宗), 安世應訣](https://www.quanxue.cn/qt_mingxiang/boshi/boshi07.html) for pure, generational, wandering, and returning Shi positions. The F02 Stanford fixture supplies independent King Wen numbers for the classical hexagram names.
+- Na Jia oracle: [Bu Shi Zheng Zong, 裝卦納甲表](https://www.quanxue.cn/qt_mingxiang/boshi/boshi07.html), the explicit traditional inner/outer stem-branch table, cross-checked against [Qinding Xieji Bianfang Shu, 納甲](https://www.shidianguji.com/book/SK1619/chapter/1l9llosnxdd0i) and [Zhang Jiming, Jing Fang Na Jia study](https://www.zhangjiming.cn/12949.html), section beginning `乾金甲子外壬午`. These sources document the received operational convention, not proof that every later line assignment originated in the earliest text.
 - Hexagram number/polarity oracle stays `tests/hexagram-fixtures.ts`, sourced independently from the [Stanford Encyclopedia of Philosophy Yijing appendices 1 and 3](https://plato.stanford.edu/entries/chinese-change/appendix.html).
 - Choose palace from the primary hexagram's 64-entry table, not changed-hexagram identity. Palace elements: heaven/lake metal, fire fire, thunder/wind wood, water water, mountain/earth earth.
 - Palace sequence Shi positions are `[6,1,2,3,4,5,4,3]`; Ying is opposite by three positions (wrap at six). Pure-hexagram Shi is sixth and Ying third. These are positional markers only; no divinatory interpretation.
 - Na Jia associates inner positions 1–3 and outer positions 4–6 with their respective trigram, including distinct heaven `jia/ren` and earth `yi/gui` stem pairs. The primary line's branch supplies its element; palace element supplies the reference for five relations: equal sibling, palace generates line child, palace controls line wealth, line controls palace official-ghost, line generates palace parent.
-- **Decision log:** 2026-09-26: Use explicit source-backed 64 palace fixtures rather than derive expected tests from runtime classification; use explicit trigram-side tables rather than derive branch order from arithmetic. Preserve F01's `ReadingResult` as the full board contract and add a separate public calculation function. No unresolved convention conflicts identified in the sources above; if research exposes one, stop and ask coordinator before fixing a convention.
+- **Decision log:** 2026-09-26: Use explicit source-backed 64 palace fixtures rather than derive expected tests from runtime classification; use explicit trigram-side tables rather than derive branch order from arithmetic. Preserve F01's `ReadingResult` as the full board contract and add a separate public calculation function. Jing's historical palace listing order differs from common chart order, but the public result has only a stable `PalaceId`, no palace sequence number: reorder complete palace rows without changing any `(HexagramId, PalaceId, Shi, Ying)` fixture. Retain the existing `PALACE_IDS` order solely for stable IDs, not divinatory meaning. "Six Relatives" uses the five F01 relation labels, not a sixth added category. Do not attribute the later complete operational table solely to the early received Jing text.
 
 ## File structure and staged work
 
@@ -35,7 +35,7 @@
 
 **Interfaces:** `identifyPalace(hexagramId: HexagramId): { palaceId: PalaceId; palaceElement: FiveElement; shiPosition: ResultLinePosition; yingPosition: ResultLinePosition }`.
 
-- [ ] Transcribe all 64 independent expected `(hexagram ID, palace ID, Shi, Ying)` tuples from the eight palace source table, annotate fixture provenance and verify exactly eight entries per palace and every stable ID once.
+- [ ] Transcribe all 64 independent expected `(hexagram ID, palace ID, Shi, Ying)` tuples from Jing's eight palace rows, independently resolve named hexagrams to King Wen IDs with the F02 Stanford fixture, annotate both fixture sources and verify exactly eight entries per palace and every stable ID once.
 - [ ] Run `pnpm --filter @liuyao/core test` with failing palace fixtures, then implement pure palace lookup and element mapping; verify all 64 fixtures, eight elements, and wraparound markers.
 
 ### Task 2: Na Jia and branch elements (F03-T04–T07)
@@ -49,7 +49,7 @@
 
 ### Task 3: Six Relatives and full board (F03-T08–T10)
 
-**Files:** Create `packages/liuyao-core/src/board.ts`, `packages/liuyao-core/tests/board.test.ts`; modify `packages/liuyao-core/src/index.ts`, `packages/liuyao-core/src/contracts.ts` (only outdated F02 comment).
+**Files:** Create `packages/liuyao-core/src/board.ts`, `packages/liuyao-core/tests/board.test.ts`; modify `packages/liuyao-core/src/index.ts`. Update `packages/liuyao-core/src/contracts.ts:157` only if its pre-implementation statement that board fields "are calculated by F03" remains misleading after F03 completion; keep the distinct F02-only type.
 
 **Interfaces:** `sixRelative(palaceElement: FiveElement, lineElement: FiveElement): SixRelative`; `calculateReading(input: unknown): ReadingResult`. Reuse `calculateHexagram` and `validateReadingInput` for unchanged validation semantics; build exactly six `PrimaryLineResult` values by position with polarity, moving flag, Na Jia stem/branch, branch element, Six Relative, and optional Shi/Ying markers.
 
@@ -73,4 +73,4 @@
 
 ## Open issues
 
-- None at plan creation; escalate any source conflict before assigning a disputed convention.
+- None affecting the stable output tuples; palace-listing order is non-behavioral because no order is exposed. Escalate any source conflict that changes assignments before adopting a disputed convention.
