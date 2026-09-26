@@ -27,7 +27,13 @@ function isCoinBit(value: unknown): value is CoinBit {
 
 /** Map three coin bits to a line value (0 contributes 2; 1 contributes 3). */
 export function mapCoinsToLine(coins: readonly [CoinBit, CoinBit, CoinBit]): LineValue {
-  if (!Array.isArray(coins) || coins.length !== 3 || !coins.every(isCoinBit)) {
+  if (
+    !Array.isArray(coins) ||
+    coins.length !== 3 ||
+    !isCoinBit(coins[0]) ||
+    !isCoinBit(coins[1]) ||
+    !isCoinBit(coins[2])
+  ) {
     throw new TypeError('Coins must be an array of exactly three bits (0 or 1).');
   }
   const total = coins.reduce((sum, bit) => sum + (bit === 0 ? 2 : 3), 0);

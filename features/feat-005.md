@@ -47,6 +47,6 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 ## Handoff
 
 - State: done locally; PR review and merge pending.
-- Evidence: `./init.sh` passed with 152 core tests in 13 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, build, and package tests passed. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`. Focused test/typecheck evidence and implementation decisions are in `docs/plans/feat-005.md`.
+- Evidence: `./init.sh` passed after the sparse-coin regression with 153 core tests in 13 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, build, and package tests passed. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`. Focused test/typecheck evidence and implementation decisions are in `docs/plans/feat-005.md`.
 - Dependency check: passed; `feat-002` is done.
-- Next: Submit the verified changes for fresh PR review and address any findings; no PR approval is claimed.
+- Next: Obtain fresh review of PR #15 after the sparse-coin fix and address any findings; no PR approval is claimed.

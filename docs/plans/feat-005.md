@@ -26,6 +26,7 @@
 - 2026-09-26: The public `CoinTossResult` carries exactly three coin bits and their mapped `LineValue`; a six-line casting result carries the six outcomes and normalized `HexagramReadingInput`. Sequential entries append first line first; direct entries accept a six-value bottom-to-top array. Validate via existing `validateSixLines` and do not reverse either entry method.
 
 - 2026-09-26 plan review: Keep `normalizeCastingInput` public as the shared normalizer behind sequential and direct APIs. Assert it directly on copied bottom-to-top valid input and invalid/incomplete arrays in `packages/liuyao-core/tests/casting.test.ts`, in addition to testing both entry APIs.
+- 2026-09-26 PR review: Array iteration skips holes, so validate all three coin indices explicitly before summing. Add a sparse-triple regression to reject an otherwise possible out-of-domain result.
 
 ## Work stages
 
@@ -41,7 +42,7 @@
 - [x] Test `normalizeCastingInput` directly with valid copied bottom-to-top order and invalid/incomplete arrays.
 - [x] Implement both normalizers using `validateSixLines`, returning a copied `HexagramReadingInput` without reversing values; run the focused core tests and typecheck.
 
-**Evidence:** `packages/liuyao-core/tests/casting.test.ts` directly covers the shared normalizer and both entry APIs, all eight ordered triples, exact 1/3/3/1 counts, invalid bits and shapes, input ordering/copying, rejection cases, and calculation integration. `pnpm --filter @liuyao/core test` passed 152 tests across 13 files after the direct assertion; `pnpm --filter @liuyao/core typecheck` passed before that test-only addition.
+**Evidence:** `packages/liuyao-core/tests/casting.test.ts` directly covers the shared normalizer and both entry APIs, all eight ordered triples, exact 1/3/3/1 counts, invalid bits and shapes including sparse triples, input ordering/copying, rejection cases, and calculation integration. `pnpm --filter @liuyao/core test` passed 153 tests across 13 files after the sparse regression.
 
 ### Task 2: Casting service and browser source (F04-T02, T05, T07)
 
@@ -53,7 +54,7 @@
 - [x] Implement deterministic service; test `cast().input` in core calculation and run core tests/typecheck.
 - [x] Implement web adapter with `globalThis.crypto.getRandomValues` on a `Uint8Array(1)` per bit; absence must throw. Inspect import direction and run web typecheck/build. No web unit tests or UI are added.
 
-**Evidence:** Core tests verify the three/eighteen source call counts, runtime source-bit rejection, ordered six-line output, and calculation compatibility. Inspection of `apps/web/src/lib/browser-coin-source.ts` confirms one-byte `globalThis.crypto.getRandomValues`, low-bit extraction, explicit failure when crypto is unavailable, and composition-time service creation. Parent-run `./init.sh` passed typecheck, build, and package tests, including 152 core tests and 2 knowledge tests; no UI or app tests were added.
+**Evidence:** Core tests verify the three/eighteen source call counts, runtime source-bit rejection, ordered six-line output, and calculation compatibility. Inspection of `apps/web/src/lib/browser-coin-source.ts` confirms one-byte `globalThis.crypto.getRandomValues`, low-bit extraction, explicit failure when crypto is unavailable, and composition-time service creation. Parent-run `./init.sh` passed typecheck, build, and package tests, including 153 core tests and 2 knowledge tests; no UI or app tests were added.
 
 ### Task 3: Evidence, handoff, and review
 
@@ -63,7 +64,7 @@
 - [x] Mark feat-005 done only after all acceptance and harness checks pass; append one material progress block and record one concrete next action.
 - [ ] Commit and push scoped implementation, open PR, send merge-ready with head and verification, and wait for fresh PR review approval before settlement.
 
-**Evidence:** Parent-run `./init.sh` passed with 152 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. Lint reported one pre-existing non-failing `react-refresh` warning at `apps/web/src/components/ui/button.tsx:49`. Feature acceptance and all F04 implementation tasks are recorded complete; PR review/approval remains pending.
+**Evidence:** Parent-run `./init.sh` passed again after the sparse-triple fix with 153 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. Lint reported one pre-existing non-failing `react-refresh` warning at `apps/web/src/components/ui/button.tsx:49`. Feature acceptance and all F04 implementation tasks are recorded complete; fresh PR review/approval remains pending.
 
 ## Verification budget
 

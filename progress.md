@@ -111,3 +111,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Parent-run `./init.sh` passed with 152 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`. Plan and focused evidence are in `docs/plans/feat-005.md`.
 **Blockers**: Fresh PR review and merge remain outstanding; no PR approval is claimed.
 **Next**: Submit the verified changes for fresh PR review and address any findings.
+
+## 2026-09-26 — feat-005 PR review follow-up
+
+**State**: done locally; PR #15 fresh review and merge pending.
+**Done**: Corrected plan evidence chronology and rejected sparse three-coin arrays that could bypass iteration validation; added a regression.
+**Evidence**: `./init.sh` passed with 153 core tests in 13 files and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing non-failing web `react-refresh` warning remains.
+**Blockers**: Updated PR head requires fresh review approval.
+**Next**: Request fresh review of PR #15 on the corrected head and address any findings.

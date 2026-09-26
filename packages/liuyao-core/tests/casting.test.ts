@@ -43,6 +43,7 @@ describe('casting core', () => {
     { coins: [0, -1, 1] },
     { coins: [0, 1, 1.5] },
     { coins: [0, 1, Number.NaN] },
+    { coins: Object.assign(new Array(3), { 0: 0, 1: 1 }) },
   ])('rejects invalid coin data $coins', ({ coins }) => {
     expect(() => mapCoinsToLine(coins as never)).toThrow(TypeError);
   });
