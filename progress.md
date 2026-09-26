@@ -63,3 +63,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Fresh Codex review approved PR #13 at `7ef963b`; GitHub `verify` and GitGuardian checks passed. The worker ran 113 core tests, package typecheck, and `./init.sh`; the reviewer ran 84 focused tests and core typecheck. Fixture provenance and source errata are documented in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
 **Blockers**: none.
 **Next**: Activate feat-004 Liu Yao board.
+
+## 2026-09-26 — feat-004
+
+**State**: active; plan and implementation not started.
+**Done**: Activated F03 Liu Yao board after feat-003 merged; dependencies feat-002 and feat-003 are done.
+**Evidence**: Feature dependency records in `feature_index.json` and `features/feat-004.md` were checked before activation.
+**Blockers**: none.
+**Next**: Commit `docs/plans/feat-004.md` and obtain fresh Orca plan review.

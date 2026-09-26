@@ -48,7 +48,7 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: todo
+- State: active
 - Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- Dependency check: feat-003 is done; feat-002 is done.
+- Next: Commit `docs/plans/feat-004.md` for fresh Orca plan review, then implement F03.
