@@ -239,3 +239,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed after the module split. At 390px, changed board contains only polarity and changed trigram identities; no-change has no changed board. With drawer open at 390px, active element was Close, overflow hidden, dialog present. Resize to 900px removed dialog, restored focus to trigger, cleared overflow; back to 768px retained trigger focus, reopened dialog, relocked overflow. Full evidence in `features/feat-008.md`.
 **Blockers**: Coordinator validation and dependency-state confirmation.
 **Next**: Coordinator validates feat-008 implementation and browser evidence.
+
+## 2026-09-27 — feat-008 compact drawer visibility fix
+
+**State**: implementation complete; coordinator validation pending.
+**Done**: Changed the drawer’s CSS wide-hide breakpoint to 900px, matching the 899px compact layout boundary.
+**Evidence**: On Vite, open drawer at 768, 800, and 864px computed `display: block` and `visibility: visible`; focus remained on Close, body overflow was hidden, and one dialog was present. Escape at 864px dismissed, restored trigger focus, and unlocked body scroll. At 900px drawer was absent and wide inspector visible. `./init.sh` and `git diff --check` passed.
+**Blockers**: Coordinator validation and dependency-state confirmation.
+**Next**: Coordinator validates the final feat-008 result view.
