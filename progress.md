@@ -373,3 +373,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: F11-T01 covers 8 independently composed full pure-board fixtures, 14 moving cases, 8 changing-trigram cases, and direct/sequential equivalence; core suite has 176 tests and `./init.sh` passed. Fixture provenance is independent; no exhaustive all-combinations claim is made. Native Safari 26.5/macOS 26.5.1 confirmed home load only; Safari UI automation failed. iOS 26.5 launched without page confirmation. Android OS/Chrome was queried, then emulator went offline and preview exited without page evidence. Edge was absent. F11-T11 remains unchecked.
 **Blockers**: Browser release matrix remains incomplete; other unchecked F11 tasks remain as documented in `features/feat-012.md`.
 **Next**: Coordinator validates F11-T01 evidence and the corrected T11 matrix record; continue only the remaining open task evidence.
+
+## 2026-09-27 — feat-012 Safari and compact Chromium QA
+
+**State**: active; coordinator validation pending.
+**Done**: Recorded native Safari WebDriver release-flow evidence and fresh compact Chromium console/touch-target samples. Kept T10, T11 and T13 unchecked because the evidence is partial.
+**Evidence**: Safari 26.5/macOS 26.5.1 production `localhost:4187`: home, manual lines `7,8,9,6,7,8` → Ji Ji (63)/Sui (17), direct Library Qian, and Settings completed; sampled page errors and `unhandledrejection` were empty. Safari console endpoint unsupported, offline and question persistence not verified. Chromium 390×844 at `localhost:4326`: visible fact link minimums recorded in T13, inspector close 44×44 and dialog actions ≥129×44; dialog flow interrupted by stale element. Sampled reading/result/drawer console and uncaught buffers empty; offline `/result` showed “No active result.” Update banner dimensions were not measured and no waiting worker was present. Earlier mobile/Android/Edge limitations remain; no full release matrix is claimed.
+**Blockers**: Remaining T09/T10/T11/T13 evidence and other unchecked quality tasks; coordinator validation.
+**Next**: Continue the open feat-012 evidence items and have the coordinator validate this browser evidence.
