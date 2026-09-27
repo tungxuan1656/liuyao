@@ -434,7 +434,7 @@
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .result-page {
     gap: 1rem;
   }
