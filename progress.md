@@ -389,3 +389,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: iPhone 17 Pro simulator iOS 26.5 (runtime 23F77; system 26.5.1) Safari accessibility tree/screenshots from temporary server port 4332 confirmed home, Library, direct Qian detail and Settings. No casting/result, offline, or nonzero safe-area measurement; screenshots are outside the repo under `.../opencode/liuyao-ios-qa`. Android Pixel_2 Android 14 API 34 emulator Chrome 142.0.7444.171 remained at FirstRunActivity despite stable temporary server port 4331, so there is no app-page evidence. T07 and T11 remain unchecked; no other task status changed.
 **Blockers**: Nonzero safe-area evidence and supported-browser matrix remain incomplete; coordinator validation.
 **Next**: Continue open feat-012 evidence items and have the coordinator validate the recorded simulator/browser evidence.
+
+## 2026-09-27 — feat-012 evidence waiver recorded
+
+**State**: active; docs-only closure preparation pending coordinator validation, PR/CI, and merge.
+**Done**: Recorded the user's explicit acceptance of waiving remaining feat-012 evidence gaps without marking the incomplete task checkboxes or acceptance criteria passed. Updated the handoff to prohibit marking done or changing `feature_index.json` before PR merge.
+**Evidence**: `./init.sh` passed on prior clean code HEAD `2ab96995c843b01cd4bca0140426e39c9b5d6298` (176 core tests, 41 knowledge tests; existing Fast Refresh warning); it was not rerun for this docs-only update. Observed evidence and explicit gaps remain in `features/feat-012.md`. Edge/Android similarity is user-reported without exact versions/screenshots, not independently observed. Waivers cover missing complete contrast inventory, nonzero safe-area measurement, calculation-error runtime, full console sweep, supported-browser matrix (including Safari/iOS offline/casting), and rendered update-banner dimensions.
+**Blockers**: Coordinator validation, PR/CI, and merge are pending; waived evidence remains incomplete and is not claimed as passed.
+**Next**: Coordinator validates the waiver record and proceeds through PR/CI/merge gates; close feat-012 only after merge.
