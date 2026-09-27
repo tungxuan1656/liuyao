@@ -10,7 +10,8 @@ const validValues = [6, 7, 8, 9] as const;
 
 export function CastingFlow() {
   const navigate = useNavigate();
-  const { draft, setDraft, completeReading } = useReadingSession();
+  const { draft, setDraft, completeReading, isUpdateAccepted, clearUpdateAccepted } =
+    useReadingSession();
   const [error, setError] = useState('');
   const isCompleting = useRef(false);
   const isLeavingAfterDiscard = useRef(false);
@@ -25,12 +26,16 @@ export function CastingFlow() {
   useEffect(() => {
     if (!hasInput) return;
     const warnBeforeUnload = (event: BeforeUnloadEvent) => {
+      if (isUpdateAccepted()) {
+        clearUpdateAccepted();
+        return;
+      }
       event.preventDefault();
       event.returnValue = '';
     };
     window.addEventListener('beforeunload', warnBeforeUnload);
     return () => window.removeEventListener('beforeunload', warnBeforeUnload);
-  }, [hasInput]);
+  }, [hasInput, isUpdateAccepted, clearUpdateAccepted]);
 
   function finish(values: number[]) {
     try {

@@ -11,7 +11,13 @@ import { ConfirmationDialog } from './confirmation-dialog';
 import './pwa-update-banner.css';
 
 export function PwaUpdateBanner() {
-  const { draft, reading } = useReadingSession();
+  const {
+    draft,
+    reading,
+    question,
+    method,
+    acceptUpdate: signalUpdateAccepted,
+  } = useReadingSession();
   const { pathname } = useLocation();
   const [snapshot, setSnapshot] = useState<PwaUpdateSnapshot>(getPwaUpdateSnapshot);
   const [dismissed, setDismissed] = useState(false);
@@ -32,10 +38,11 @@ export function PwaUpdateBanner() {
 
   if ((!snapshot.updateAvailable || dismissed) && online) return null;
 
-  const hasUnsavedReading = Boolean(draft || reading);
+  const hasUnsavedReading = Boolean(question.trim() || method !== 'automatic' || draft || reading);
 
   async function acceptUpdate() {
     setConfirming(false);
+    signalUpdateAccepted();
     await applyPwaUpdate();
   }
 
@@ -52,7 +59,7 @@ export function PwaUpdateBanner() {
           </div>
         </aside>
       ) : snapshot.updateAvailable && !dismissed ? (
-        <aside className="pwa-update-banner" aria-labelledby="pwa-update-title">
+        <aside className="pwa-update-banner" role="status" aria-labelledby="pwa-update-title">
           <div className="pwa-update-copy">
             <span className="pwa-update-mark" aria-hidden="true">
               更
@@ -90,7 +97,9 @@ export function PwaUpdateBanner() {
           <p>
             {draft
               ? 'Your reading draft and question are only in memory. Reloading will erase them.'
-              : 'Your completed reading is only in memory. Reloading will erase it.'}
+              : reading
+                ? 'Your completed reading is only in memory. Reloading will erase it.'
+                : 'Your entered question or selected casting method is only in memory. Reloading will erase it.'}
             {pathname === '/casting' &&
               draft &&
               ' The active casting screen will also be reloaded.'}

@@ -123,7 +123,7 @@ export function SettingsPage() {
                   ? 'Available'
                   : installSupported === false
                     ? 'Install prompt unavailable'
-                    : 'Not reported by this browser'}
+                    : 'Install availability not reported'}
             </dd>
           </div>
           <div>
@@ -143,7 +143,7 @@ export function SettingsPage() {
             <dd>
               {pwaSnapshot.offlineReady
                 ? 'App is ready to work offline'
-                : 'Offline readiness has not been reported'}
+                : 'Offline readiness not confirmed'}
             </dd>
           </div>
         </dl>

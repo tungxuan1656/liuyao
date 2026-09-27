@@ -296,6 +296,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: Combined update-worker lifecycle, draft-safe acceptance, actual offline state, and the full recovery matrix require coordinator/fixer integration verification.
 **Next**: Coordinator validates the combined UI/fixer lanes, especially service-worker registration and draft-safe update behavior.
 
+## 2026-09-27 — feat-011 update-safety correction
+
+**State**: UI safety correction implemented locally; coordinator validation pending.
+**Done**: Lifted the home question and casting method into the in-memory reading session. Update confirmation now covers entered question/non-default method, draft, or completed reading. Explicit update acceptance signals the casting unload guard to stand down only for that reload; ordinary in-app navigation remains blocked when lines exist. Added status semantics and repositioned the banner clear of the top flow header; clarified unconfirmed Settings states. F10-T06/T07 are unchecked pending two-build evidence.
+**Evidence**: `./init.sh` passed format, lint/length (one existing Fast Refresh warning), typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests. `git diff --check` passed. Prior production preview confirmed the offline indicator/routes and session-only loss on reload, but no waiting update existed to exercise Later, confirmation, or acceptance.
+**Blockers**: Two-build update lifecycle and intentional-apply behavior still need browser evidence and coordinator review.
+**Next**: Coordinator validates the corrected UI and combined worker lifecycle; F10-T06/T07 remain unchecked until two-build browser evidence exists.
+
 ## 2026-09-27 — feat-009 complete
 
 **State**: done; PR #20 merged as `c18c1b379211c095987a919d295c5492b0b0dbdf`.
