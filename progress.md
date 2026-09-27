@@ -271,3 +271,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Corrected test evidence is 41 knowledge-package tests total; `packages/knowledge/tests/search.test.ts` has 3 tests. Offline built-preview reload was verified for `/library` and `/library/hexagram/hexagram-01` only; other routes were not individually checked offline. Catalog references cover 10 rules and `term-trigram` only, with no hexagram/trigram references and no references for 54 terms. UI source metadata/location behavior is supported only where catalog references exist; unreferenced mappings are not claimed as citations.
 **Blockers**: Coordinator validation remains pending; catalog source-reference coverage is limited.
 **Next**: Coordinator validates the implementation and evidence, including the documented source-coverage limits.
+
+## 2026-09-27 — feat-009 complete
+
+**State**: done; PR #20 merged as `c18c1b379211c095987a919d295c5492b0b0dbdf`.
+**Done**: Closed the Knowledge browser feature after PR #20 head `d5bdb631553971a71a44b4ecc48bb78d94e788a1` passed CI `verify` and GitGuardian. Recorded the merged status and catalog sourcing limits in the feature handoff.
+**Evidence**: `./init.sh` and browser checks are recorded in `features/feat-009.md` and prior progress entries. Catalog references cover only 10 rules and `term-trigram`; there are no hexagram/trigram references or references for 54 of 55 terms, and no catalog-defined term-rule associations. Offline built-preview reload was checked only for `/library` and `/library/hexagram/hexagram-01`.
+**Blockers**: none for feat-009.
+**Next**: Activate feat-010 Settings, already selected by the user.
