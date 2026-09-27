@@ -71,7 +71,9 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: implementation complete locally; coordinator validation pending.
+- State: done; PR #21 merged as `1a205250bb2a592b8280e9eb3e1316247a385c1d`.
 - Evidence: see the Evidence section above.
 - Dependency check: feat-001, feat-003, and feat-006 are done.
-- Next: Coordinator validates F09 scope and evidence; do not mark done until coordinator acceptance.
+- Merge: PR #21 head `5a43db89c04110d5c60ae8629ffc4e10624c2357` passed CI `verify` and GitGuardian, then merged at `1a205250bb2a592b8280e9eb3e1316247a385c1d`.
+- Handoff limits: No real offline transition or waiting service-worker update was available for browser verification. Settings only inspects an existing registration; service-worker registration and draft-safe update behavior remain assigned to feat-011. No standalone privacy policy exists; Privacy links to the in-page session-only data statement.
+- Next: Activate feat-011 Offline hardening, already selected by the user.

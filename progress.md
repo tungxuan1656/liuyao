@@ -295,3 +295,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` and browser checks are recorded in `features/feat-009.md` and prior progress entries. Catalog references cover only 10 rules and `term-trigram`; there are no hexagram/trigram references or references for 54 of 55 terms, and no catalog-defined term-rule associations. Offline built-preview reload was checked only for `/library` and `/library/hexagram/hexagram-01`.
 **Blockers**: none for feat-009.
 **Next**: Activate feat-010 Settings, already selected by the user.
+
+## 2026-09-27 — feat-010 complete
+
+**State**: done; PR #21 merged as `1a205250bb2a592b8280e9eb3e1316247a385c1d`.
+**Done**: Closed Settings after PR #21 head `5a43db89c04110d5c60ae8629ffc4e10624c2357` passed CI `verify` and GitGuardian. Recorded merged status and verification limits in the feature handoff.
+**Evidence**: `./init.sh` and browser checks are recorded in `features/feat-010.md` and preceding progress entries. Browser checks covered 390×844 and 1440×900 layouts and truthful available browser states. No real offline transition or waiting service-worker update was verified; update registration and draft-safe application remain feat-011 scope.
+**Blockers**: none for feat-010.
+**Next**: Activate feat-011 Offline hardening, already selected by the user.
