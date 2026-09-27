@@ -1,0 +1,112 @@
+.pwa-update-banner {
+  position: fixed;
+  z-index: 60;
+  inset: auto 0.75rem calc(76px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  max-width: 54rem;
+  max-height: min(40vh, 18rem);
+  overflow: auto;
+  min-height: 4.5rem;
+  margin-inline: auto;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--border, #dedede);
+  border-radius: 0.65rem;
+  background: color-mix(in oklab, var(--background, white) 96%, transparent);
+  box-shadow: 0 10px 36px rgb(0 0 0 / 14%);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.pwa-update-copy {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.85rem;
+}
+.pwa-update-mark {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--border, #dedede);
+  border-radius: 50%;
+  font-family: var(--font-serif, serif);
+}
+.pwa-update-copy h2 {
+  margin: 0;
+  font-family: var(--font-serif, serif);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.pwa-update-copy p {
+  margin: 0.2rem 0 0;
+  color: var(--muted-foreground, #666);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.pwa-update-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pwa-update-actions button {
+  min-width: 4rem;
+  min-height: 44px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border, #dedede);
+  border-radius: 0.4rem;
+  font: inherit;
+  cursor: pointer;
+}
+.pwa-update-later {
+  background: var(--background, white);
+  color: var(--foreground, #242424);
+}
+.pwa-update-accept {
+  background: var(--foreground, #242424);
+  color: var(--background, white);
+}
+.pwa-update-actions button:focus-visible {
+  outline: 2px solid var(--ring, #2858c5);
+  outline-offset: 2px;
+}
+.pwa-offline-banner {
+  justify-content: flex-start;
+}
+.pwa-offline-banner > div h2 {
+  margin: 0;
+  font-family: var(--font-serif, serif);
+  font-size: 1rem;
+}
+.pwa-offline-banner > div p {
+  margin: 0.2rem 0 0;
+  color: var(--muted-foreground, #666);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 520px) {
+  .pwa-update-banner {
+    align-items: center;
+    flex-direction: row;
+    gap: 0.65rem;
+    padding: 0.65rem 0.75rem;
+  }
+  .pwa-update-copy {
+    align-items: flex-start;
+  }
+  .pwa-update-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+  }
+  .pwa-update-actions button {
+    min-height: 44px;
+    padding: 0.35rem 0.55rem;
+  }
+}

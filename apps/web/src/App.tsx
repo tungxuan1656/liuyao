@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import type { ReadingMethod } from './reading-session';
 import { useReadingSession } from './reading-session';
 import { ROUTES } from './route-paths';
 import { ConfirmationDialog } from './components/confirmation-dialog';
@@ -8,9 +7,8 @@ import './App.css';
 
 export default function App() {
   const navigate = useNavigate();
-  const { draft, reading, setDraft, clearReading } = useReadingSession();
-  const [question, setQuestion] = useState('');
-  const [method, setMethod] = useState<ReadingMethod>('automatic');
+  const { draft, reading, question, method, setDraft, setQuestion, setMethod, clearSession } =
+    useReadingSession();
   const [replaceReading, setReplaceReading] = useState(false);
 
   const entryQuestion = draft?.question ?? question;
@@ -26,21 +24,8 @@ export default function App() {
   }
 
   function confirmReplacement() {
-    clearReading();
-    setDraft(null);
-    setQuestion('');
-    setMethod('automatic');
+    clearSession();
     setReplaceReading(false);
-  }
-
-  function updateQuestion(value: string) {
-    if (draft) setDraft({ ...draft, question: value });
-    else setQuestion(value);
-  }
-
-  function updateMethod(value: ReadingMethod) {
-    if (draft) setDraft({ ...draft, method: value });
-    else setMethod(value);
   }
 
   return (
@@ -98,7 +83,11 @@ export default function App() {
             id="reading-question"
             rows={3}
             value={entryQuestion}
-            onChange={event => updateQuestion(event.target.value)}
+            onChange={event =>
+              draft
+                ? setDraft({ ...draft, question: event.target.value })
+                : setQuestion(event.target.value)
+            }
             placeholder="What would you like to reflect on?"
           />
           <p className="session-note">
@@ -119,7 +108,9 @@ export default function App() {
                   name="casting-method"
                   value={value}
                   checked={entryMethod === value}
-                  onChange={() => updateMethod(value)}
+                  onChange={() =>
+                    draft ? setDraft({ ...draft, method: value }) : setMethod(value)
+                  }
                 />
                 {label}
               </label>
