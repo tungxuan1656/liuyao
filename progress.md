@@ -397,3 +397,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed on prior clean code HEAD `2ab96995c843b01cd4bca0140426e39c9b5d6298` (176 core tests, 41 knowledge tests; existing Fast Refresh warning); it was not rerun for this docs-only update. Observed evidence and explicit gaps remain in `features/feat-012.md`. Edge/Android similarity is user-reported without exact versions/screenshots, not independently observed. Waivers cover missing complete contrast inventory, nonzero safe-area measurement, calculation-error runtime, full console sweep, supported-browser matrix (including Safari/iOS offline/casting), and rendered update-banner dimensions.
 **Blockers**: Coordinator validation, PR/CI, and merge are pending; waived evidence remains incomplete and is not claimed as passed.
 **Next**: Coordinator validates the waiver record and proceeds through PR/CI/merge gates; close feat-012 only after merge.
+
+## 2026-09-27 — feat-012 complete
+
+**State**: done by explicit user-approved evidence waiver; PR #23 merged to `main` at `486b01a70fe700b45b15e7487c8a03ef4485219f`.
+**Done**: Closed feat-012 after merge. The feature index and handoff now record completion while leaving incomplete task checkboxes and acceptance criteria unchecked; the waiver is not represented as verification.
+**Evidence**: PR #23 head `f8ecc580fab76c9fd0cb2bb12e4ed6688221e3e5` passed CI `verify` and GitGuardian. `./init.sh` passed with 176 core tests and 41 knowledge tests (existing non-failing Fast Refresh warning). Remaining exceptions are detailed in `features/feat-012.md`: incomplete contrast inventory, no nonzero safe-area measurement, no calculation-error runtime, no full console sweep, incomplete supported-browser matrix, and no rendered update-banner size measurement.
+**Blockers**: None for feat-012. Release-matrix checks remain recommended separately and are not claimed complete.
+**Next**: No further feat-012 action; address remaining release-matrix checks separately if selected.
