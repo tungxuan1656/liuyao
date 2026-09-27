@@ -247,3 +247,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: On Vite, open drawer at 768, 800, and 864px computed `display: block` and `visibility: visible`; focus remained on Close, body overflow was hidden, and one dialog was present. Escape at 864px dismissed, restored trigger focus, and unlocked body scroll. At 900px drawer was absent and wide inspector visible. `./init.sh` and `git diff --check` passed.
 **Blockers**: Coordinator validation and dependency-state confirmation.
 **Next**: Coordinator validates the final feat-008 result view.
+
+## 2026-09-27 — feat-008 complete
+
+**State**: done; PR #19 merged at `93df44096fd0eabbb5c6a65cb3a9e2205f6e90d1`.
+**Done**: Closed feat-008 after PR #19 head `5b27046d8e64ed5a23ca757050a61c10a256be00` passed CI `verify` and GitGuardian. Updated the result-view handoff and feature index to reflect merged completion.
+**Evidence**: `./init.sh` and browser checks are recorded in `features/feat-008.md` and earlier progress entries. Forced calculation failure was code-audited but not runtime-forced.
+**Blockers**: none for feat-008.
+**Next**: Activate feat-009, already selected in the user's feat-007–012 batch.
