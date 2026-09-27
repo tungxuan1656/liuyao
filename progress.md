@@ -335,3 +335,65 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: No required remote runtime APIs/assets were found in reading, casting, result, Library, or Settings; core assets are same-origin and precached, external GitHub/source links are user-initiated. Observed browser requests were same-origin, but no exhaustive network/cross-browser audit is claimed. With no `beforeinstallprompt` event observed (API exists; unsupported browser not proven), the user completed question/manual casting (lines `7, 8, 9, 6, 7, 8`) to Ji Ji/Sui, opened Library Qian detail and Settings without installing. Prior production offline/recovery and two-build draft-safe update evidence is recorded in `features/feat-011.md`. Native `beforeunload` prompt absence remains unconfirmed; intentional update reload completed and `isUpdateAccepted` suppresses the guard.
 **Blockers**: Coordinator/PR gate only; browser verification is a subset and does not claim full cross-browser coverage.
 **Next**: Coordinator validates the complete feat-011 evidence and proceeds through the PR gate.
+
+## 2026-09-27 — feat-011 complete
+
+**State**: done; PR #22 merged as `a70c8f3e145536cd48db84dd9c2e61b7c14f1265`.
+**Done**: Closed Offline hardening after PR #22 head `509a079c45fa82809749384ba03bb566a720e96f` passed CI `verify` and GitGuardian. Recorded merged status and QA limits in the feature handoff.
+**Evidence**: `./init.sh`, production offline/recovery, draft-safe two-build update, source/build audit, and no-install normal-use browser evidence are recorded in `features/feat-011.md` and preceding progress entries. QA was limited to tested Chromium sessions; it was not a full cross-browser or exhaustive network audit. Native `beforeunload` prompt absence was not definitively observable, though intentional UI update reload completed and `isUpdateAccepted` suppresses the guard for accepted updates.
+**Blockers**: none for feat-011.
+**Next**: Activate feat-012 Quality hardening, already selected by the user.
+
+## 2026-09-27 — feat-012 UI audit continuation
+
+**State**: UI lane advanced; coordinator validation pending.
+**Done**: Production-preview Chromium checks covered the home-to-manual-reading/result flow, fact drawer focus containment/return, native discard dialog keyboard actions, library empty search, settings and result empty state. Viewports 390×844, 768×900, 1024×900, and 1440×1000 had no horizontal document overflow. Checked visible labels/names and representative 44px controls. Changed the shared muted text token after contrast review identified insufficient contrast.
+**Evidence**: `agent-browser 0.26.0` with Chromium. Drawer received initial focus, Tab stayed in drawer, Escape closed it and restored trigger focus. Discard dialog opened with “Keep editing” focused; Tab reached “Discard and leave”; Escape returned to casting. Only Chromium tested; safe-area emulation unavailable; invalid/offline/update/calculation-error flows and post-token contrast/non-text contrast remain unverified. `./init.sh` and `git diff --check` results recorded after final edits below.
+**Blockers**: F11-T01 completeness needs coordinator review; F11-T11 supported browser matrix incomplete. Several failure/update-state and contrast checks remain open.
+**Next**: Rebuild and measure contrast after token adjustment, then finish safe-area/failure/update checks and request coordinator validation.
+
+## 2026-09-27 — feat-012 post-build UI audit
+
+**State**: UI lane remains active; coordinator validation pending.
+**Done**: Rechecked the rebuilt production CSS asset and verified Chromium resolves the changed muted token (`oklch(0.44 0 0)`). Confirmed a real waiting-update banner was present in the preview and linked reusable feat-011 two-build/offline evidence from the feature record.
+**Evidence**: `./init.sh` passed after source changes (format, lint with one existing Fast Refresh warning, typecheck, build, package exports, placement, 155 core and 41 knowledge tests). `git diff --check` passed. Contrast computation returned invalid 1.01 values despite resolved colors, so no contrast pass is claimed. Preview browser/storage state was contaminated by an older worker/asset and only the UI token was verifiable after the current bundle loaded.
+**Blockers**: F11-T06 requires valid contrast formula results and UI-boundary measurements; F11-T09 still lacks invalid-input and calculation-error recovery evidence (reuse feat-011 offline/update evidence as linked). Safe-area-specific browser emulation, comprehensive interactive-class sizing, full flow console review, and Safari/Edge/iOS matrix are incomplete.
+**Next**: Repair contrast-measurement method, exercise invalid/error cases via bounded injection/source audit, and complete available control-target and console checks. Keep T11 open unless all supported browser engines/platforms required by the matrix are actually available and tested.
+
+**Follow-up evidence**: Fixed the measurement formula (previous custom parser incorrectly treated OKLCH lightness as sRGB); representative muted small text `oklch(0.44 0 0)` on white is 4.94:1 by WCAG relative luminance. Settings audit found product-info links with 40px width; added 44px minimum width. The production preview later returned 404 after rebuild, so this final CSS fix is not browser-verified. Source audit confirms calculation exceptions retain draft values and render `role=alert`; runtime injection remains incomplete.
+
+**Fresh preview follow-up**: Built the current web app and served it on isolated port 4317, then rebuilt after a measured 21.6px library search field defect, added `min-height: 44px`, and verified 44px field height on isolated port 4318. At 390px, category tabs (≥69×48), navigation (117×44), Settings footer links (44–53×44), result-record links (343×91.4), and manual flow controls (all ≥44px high) were measured. Representative muted/secondary text pairs measured 4.94:1 and 4.62:1; remaining non-text boundaries and control classes are pending. Safe-area env() is supported but zero-valued without device emulation. Fresh home/library/empty-search logs showed no console or uncaught errors. Full direct-entry, drawer/banner/dialog touch audit, invalid/error runtime cases, complete console flow, non-zero inset, and Safari/Edge/iOS matrix remain blockers.
+
+**Continuation evidence**: Rebuilt on a fresh preview at port 4320 and measured the result focus ring at 5.65:1 over result paper; strengthened it to `#334b32`, calculated at 8.17:1 on result paper and 9.1:1 on drawer paper. Direct-entry controls at 390px measured 301×44 selects and Calculate, 82.5×44 Cancel, and 343×44 Reset lines; no horizontal document overflow. Invalid-option injection was rejected by native select and Calculate remained disabled; this did not invoke the validation-error message. iPhone 14 UA/device emulation did not provide non-zero safe-area insets. Chrome 153.0.8010.53, Safari 26.5/safaridriver, and iOS simulators are installed/available; Edge was not found. No Safari/iOS simulator/Edge matrix runs were made. Remaining blockers documented in `features/feat-012.md`.
+
+## 2026-09-27 — feat-012 fixture and browser evidence reconciliation
+
+**State**: active; coordinator validation pending.
+**Done**: Updated F11-T01 with the pure-board golden fixture evidence and corrected the supported-browser evidence in F11-T11. Other task statuses remain unchanged.
+**Evidence**: F11-T01 covers 8 independently composed full pure-board fixtures, 14 moving cases, 8 changing-trigram cases, and direct/sequential equivalence; core suite has 176 tests and `./init.sh` passed. Fixture provenance is independent; no exhaustive all-combinations claim is made. Native Safari 26.5/macOS 26.5.1 confirmed home load only; Safari UI automation failed. iOS 26.5 launched without page confirmation. Android OS/Chrome was queried, then emulator went offline and preview exited without page evidence. Edge was absent. F11-T11 remains unchecked.
+**Blockers**: Browser release matrix remains incomplete; other unchecked F11 tasks remain as documented in `features/feat-012.md`.
+**Next**: Coordinator validates F11-T01 evidence and the corrected T11 matrix record; continue only the remaining open task evidence.
+
+## 2026-09-27 — feat-012 Safari and compact Chromium QA
+
+**State**: active; coordinator validation pending.
+**Done**: Recorded native Safari WebDriver release-flow evidence and fresh compact Chromium console/touch-target samples. Kept T10, T11 and T13 unchecked because the evidence is partial.
+**Evidence**: Safari 26.5/macOS 26.5.1 production `localhost:4187`: home, manual lines `7,8,9,6,7,8` → Ji Ji (63)/Sui (17), direct Library Qian, and Settings completed; sampled page errors and `unhandledrejection` were empty. Safari console endpoint unsupported, offline and question persistence not verified. Chromium 390×844 at `localhost:4326`: visible fact link minimums recorded in T13, inspector close 44×44 and dialog actions ≥129×44; dialog flow interrupted by stale element. Sampled reading/result/drawer console and uncaught buffers empty; offline `/result` showed “No active result.” Update banner dimensions were not measured and no waiting worker was present. Earlier mobile/Android/Edge limitations remain; no full release matrix is claimed.
+**Blockers**: Remaining T09/T10/T11/T13 evidence and other unchecked quality tasks; coordinator validation.
+**Next**: Continue the open feat-012 evidence items and have the coordinator validate this browser evidence.
+
+## 2026-09-27 — feat-012 iOS and Android simulator evidence
+
+**State**: active; coordinator validation pending.
+**Done**: Recorded actual iPhone simulator Safari page evidence and the Android emulator startup limitation; kept F11-T07 and F11-T11 unchecked.
+**Evidence**: iPhone 17 Pro simulator iOS 26.5 (runtime 23F77; system 26.5.1) Safari accessibility tree/screenshots from temporary server port 4332 confirmed home, Library, direct Qian detail and Settings. No casting/result, offline, or nonzero safe-area measurement; screenshots are outside the repo under `.../opencode/liuyao-ios-qa`. Android Pixel_2 Android 14 API 34 emulator Chrome 142.0.7444.171 remained at FirstRunActivity despite stable temporary server port 4331, so there is no app-page evidence. T07 and T11 remain unchecked; no other task status changed.
+**Blockers**: Nonzero safe-area evidence and supported-browser matrix remain incomplete; coordinator validation.
+**Next**: Continue open feat-012 evidence items and have the coordinator validate the recorded simulator/browser evidence.
+
+## 2026-09-27 — feat-012 evidence waiver recorded
+
+**State**: active; docs-only closure preparation pending coordinator validation, PR/CI, and merge.
+**Done**: Recorded the user's explicit acceptance of waiving remaining feat-012 evidence gaps without marking the incomplete task checkboxes or acceptance criteria passed. Updated the handoff to prohibit marking done or changing `feature_index.json` before PR merge.
+**Evidence**: `./init.sh` passed on prior clean code HEAD `2ab96995c843b01cd4bca0140426e39c9b5d6298` (176 core tests, 41 knowledge tests; existing Fast Refresh warning); it was not rerun for this docs-only update. Observed evidence and explicit gaps remain in `features/feat-012.md`. Edge/Android similarity is user-reported without exact versions/screenshots, not independently observed. Waivers cover missing complete contrast inventory, nonzero safe-area measurement, calculation-error runtime, full console sweep, supported-browser matrix (including Safari/iOS offline/casting), and rendered update-banner dimensions.
+**Blockers**: Coordinator validation, PR/CI, and merge are pending; waived evidence remains incomplete and is not claimed as passed.
+**Next**: Coordinator validates the waiver record and proceeds through PR/CI/merge gates; close feat-012 only after merge.

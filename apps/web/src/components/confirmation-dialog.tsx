@@ -23,11 +23,13 @@ export function ConfirmationDialog({
   useEffect(() => {
     const dialog = ref.current;
     dialog?.showModal();
+    dialog?.querySelector<HTMLButtonElement>('.dialog-actions button')?.focus();
     return () => dialog?.close();
   }, []);
 
   return (
     <dialog
+      ref={ref}
       role="alertdialog"
       aria-labelledby={`${id}-title`}
       aria-describedby={`${id}-description`}

@@ -68,13 +68,13 @@
     {
       "id": "feat-011",
       "title": "Offline hardening",
-      "status": "active",
+      "status": "done",
       "depends_on": ["feat-007", "feat-008", "feat-009", "feat-010"]
     },
     {
       "id": "feat-012",
       "title": "Quality hardening",
-      "status": "todo",
+      "status": "active",
       "depends_on": [
         "feat-002",
         "feat-003",

@@ -4,7 +4,8 @@
   --result-paper-deep: #ece7db;
   --result-ink: #292a25;
   --result-muted: #67675e;
-  --result-line: #c8c2b4;
+  --result-line: #4f4c44;
+  --result-editorial-rule: #c8c2b4;
   --result-accent: #52684e;
   width: min(100%, 1320px);
   margin: 0 auto;
@@ -21,7 +22,7 @@
   justify-content: space-between;
   gap: 1.5rem;
   padding: 0.5rem 0 1.25rem;
-  border-bottom: 1px solid var(--result-line);
+  border-bottom: 1px solid var(--result-editorial-rule);
 }
 .result-header h1,
 .result-empty h1 {
@@ -83,6 +84,17 @@
   text-align: left;
   cursor: pointer;
 }
+.fact-link:hover,
+.fact-link:focus-visible {
+  border-bottom-style: solid;
+}
+.fact-link:focus-visible,
+.result-back-link:focus-visible,
+.inspector-close:focus-visible,
+.source-entry a:focus-visible {
+  outline: 3px solid #334b32;
+  outline-offset: 3px;
+}
 .fact-link:hover {
   border-color: var(--result-accent);
   color: var(--result-accent);
@@ -116,7 +128,7 @@
   justify-content: space-between;
   gap: 0.5rem;
   padding-bottom: 0.65rem;
-  border-bottom: 1px solid var(--result-line);
+  border-bottom: 1px solid var(--result-editorial-rule);
 }
 .hexagram-heading h2 {
   margin: 0.25rem 0 0;
@@ -240,7 +252,7 @@
   align-items: center;
   gap: 0.35rem;
   min-height: 50px;
-  border-bottom: 1px solid color-mix(in srgb, var(--result-line), transparent 35%);
+  border-bottom: 1px solid color-mix(in srgb, var(--result-editorial-rule), transparent 35%);
 }
 .line-fact-position {
   font-family: var(--font-serif);
@@ -380,9 +392,8 @@
 .drawer-scrim {
   position: absolute;
   inset: 0;
-  width: 100%;
-  border: 0;
-  background: rgb(24 25 22 / 42%);
+  background: rgb(24 25 22 / 58%);
+  cursor: pointer;
 }
 .fact-drawer {
   position: absolute;
@@ -414,7 +425,7 @@
 }
 .result-page :focus-visible,
 .result-empty :focus-visible {
-  outline: 2px solid var(--result-accent);
+  outline: 3px solid #334b32;
   outline-offset: 3px;
 }
 .fact-link:focus-visible,
@@ -422,8 +433,6 @@
 .inspector-close:focus-visible,
 .source-entry a:focus-visible {
   border-radius: 3px;
-  outline: 2px solid var(--result-accent);
-  outline-offset: 3px;
 }
 .drawer-layer[hidden] {
   display: none;
@@ -486,7 +495,7 @@
   }
   .trigram-pair .fact-link {
     flex-basis: 100%;
-    min-height: 40px;
+    min-height: 44px;
     padding-inline: 0.15rem;
     font-size: 0.65rem;
   }
@@ -494,7 +503,7 @@
     grid-template-columns: 1fr;
   }
   .palace-facts .fact-link {
-    min-height: 38px;
+    min-height: 44px;
     padding-inline: 0.1rem;
     font-size: 0.68rem;
   }
@@ -516,6 +525,7 @@
     gap: 0;
     padding-inline: 0.16rem;
     font-size: 0.66rem;
+    min-height: 44px;
   }
   .line-fact-row .fact-link > span:first-child {
     font-size: 0.57rem;

@@ -76,7 +76,9 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: active; all F10 acceptance evidence recorded; coordinator/PR gate pending.
+- State: done; PR #22 merged as `a70c8f3e145536cd48db84dd9c2e61b7c14f1265`.
 - Evidence: `./init.sh` passed as noted above. Production-build offline/recovery checks at `localhost:4188`, isolated two-build update checks at `localhost:4192`, source/build audit, and no-install normal-use browser session are detailed above. Browser scope and native prompt observability limits are explicit.
 - Dependency check: feat-007, feat-008, feat-009, and feat-010 are done.
-- Next: Coordinator validates the complete F10 evidence and proceeds with the coordinator/PR gate; no task-level evidence remains outstanding.
+- Merge: PR #22 head `509a079c45fa82809749384ba03bb566a720e96f` passed CI `verify` and GitGuardian, then merged at `a70c8f3e145536cd48db84dd9c2e61b7c14f1265`.
+- Verification limits: Browser QA covered the tested Chromium production-build and isolated two-build fixture sessions, not a full cross-browser matrix or exhaustive network audit. Native `beforeunload` prompt absence was not definitively observable; the intentional UI update reload completed and `isUpdateAccepted` code guard suppresses that prompt for accepted updates.
+- Next: Activate feat-012 Quality hardening, already selected by the user.
