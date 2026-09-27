@@ -280,6 +280,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: Update-available action and real offline behavior were not exercised; standalone privacy policy does not yet exist.
 **Next**: Coordinator validates feat-010 implementation and evidence.
 
+## 2026-09-27 — feat-010 update-state correction
+
+**State**: implementation complete locally; coordinator validation pending.
+**Done**: Removed Settings' `useRegisterSW` registration and nonfunctional update action after review found they conflicted with Vite PWA `autoUpdate` and could reload in-memory readings. Settings now inspects an existing service-worker registration and distinguishes unsupported, unregistered, no-waiting, and waiting states without registering or applying updates. Corrected install availability to report unavailable only after the browser's install prompt event is observed.
+**Evidence**: Fresh `./init.sh` passed after the correction: lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests. Existing Fast Refresh warning only. Agent-browser at 390×844 and 1440×900 showed no overflow and accurately reported “No service worker is registered”; no other registration state was available. See `features/feat-010.md` for details.
+**Blockers**: No service-worker registration/update flow or draft-safe update handling is implemented here; that work belongs to feat-011. No waiting update or real offline browser transition has been verified.
+**Next**: Coordinator validates feat-010; service-worker registration/update safety remains assigned to feat-011.
+
 ## 2026-09-27 — feat-009 complete
 
 **State**: done; PR #20 merged as `c18c1b379211c095987a919d295c5492b0b0dbdf`.

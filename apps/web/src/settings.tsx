@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { KNOWLEDGE_PACKAGE_VERSION } from '@liuyao/knowledge';
 import { RULE_SET_ID } from '@liuyao/core';
-import { useRegisterSW } from 'virtual:pwa-register/react';
 import './settings.css';
 
 const appVersion = __APP_VERSION__;
@@ -12,11 +11,13 @@ type InstallChoiceEvent = Event & {
   userChoice?: Promise<{ outcome: 'accepted' | 'dismissed'; platform: string }>;
 };
 
+type UpdateStatus = 'checking' | 'unsupported' | 'unregistered' | 'no-waiting' | 'waiting';
+
 export function SettingsPage() {
   const [online, setOnline] = useState<boolean | null>(() =>
     'onLine' in navigator ? navigator.onLine : null,
   );
-  const [installSupported, setInstallSupported] = useState<boolean | null>(null);
+  const [installSupported, setInstallSupported] = useState(false);
   const [installPrompt, setInstallPrompt] = useState<InstallChoiceEvent | null>(null);
   const [installed, setInstalled] = useState(
     () =>
@@ -24,10 +25,7 @@ export function SettingsPage() {
       Boolean((navigator as Navigator & { standalone?: boolean }).standalone),
   );
   const [installMessage, setInstallMessage] = useState('');
-  const {
-    needRefresh: [needRefresh],
-    updateServiceWorker,
-  } = useRegisterSW();
+  const [updateStatus, setUpdateStatus] = useState<UpdateStatus>('checking');
 
   useEffect(() => {
     const updateNetwork = () => {
@@ -42,11 +40,44 @@ export function SettingsPage() {
       }
     };
     const updateInstalled = () => setInstalled(true);
+    let disposed = false;
+    let registration: ServiceWorkerRegistration | undefined;
+    const syncUpdateStatus = () => {
+      if (disposed || !registration) return;
+      setUpdateStatus(registration.waiting ? 'waiting' : 'no-waiting');
+    };
+    const watchInstallingWorker = () => {
+      registration?.installing?.addEventListener('statechange', syncUpdateStatus);
+      syncUpdateStatus();
+    };
     window.addEventListener('online', updateNetwork);
     window.addEventListener('offline', updateNetwork);
     window.addEventListener('beforeinstallprompt', captureInstall);
     window.addEventListener('appinstalled', updateInstalled);
+    if (!('serviceWorker' in navigator)) {
+      setUpdateStatus('unsupported');
+    } else {
+      void navigator.serviceWorker
+        .getRegistration()
+        .then(found => {
+          if (disposed) return;
+          registration = found;
+          if (!registration) {
+            setUpdateStatus('unregistered');
+            return;
+          }
+          registration.addEventListener('updatefound', watchInstallingWorker);
+          registration.installing?.addEventListener('statechange', syncUpdateStatus);
+          syncUpdateStatus();
+        })
+        .catch(() => {
+          if (!disposed) setUpdateStatus('unsupported');
+        });
+    }
     return () => {
+      disposed = true;
+      registration?.removeEventListener('updatefound', watchInstallingWorker);
+      registration?.installing?.removeEventListener('statechange', syncUpdateStatus);
       window.removeEventListener('online', updateNetwork);
       window.removeEventListener('offline', updateNetwork);
       window.removeEventListener('beforeinstallprompt', captureInstall);
@@ -113,25 +144,24 @@ export function SettingsPage() {
           </div>
           <div>
             <dt>App update</dt>
-            <dd>{needRefresh ? 'A new version is ready' : 'No update is reported'}</dd>
+            <dd>
+              {updateStatus === 'checking'
+                ? 'Checking existing registration…'
+                : updateStatus === 'unsupported'
+                  ? 'Service-worker status is not available'
+                  : updateStatus === 'unregistered'
+                    ? 'No service worker is registered'
+                    : updateStatus === 'waiting'
+                      ? 'A service-worker update is waiting'
+                      : 'No waiting service-worker update'}
+            </dd>
           </div>
         </dl>
-        {(installPrompt || needRefresh) && (
+        {installPrompt && (
           <div className="settings-actions">
-            {installPrompt && (
-              <button type="button" className="settings-action" onClick={installApp}>
-                Install app
-              </button>
-            )}
-            {needRefresh && (
-              <button
-                type="button"
-                className="settings-action"
-                onClick={() => void updateServiceWorker(true)}
-              >
-                Apply update
-              </button>
-            )}
+            <button type="button" className="settings-action" onClick={installApp}>
+              Install app
+            </button>
           </div>
         )}
         {installMessage && (
