@@ -288,6 +288,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: No service-worker registration/update flow or draft-safe update handling is implemented here; that work belongs to feat-011. No waiting update or real offline browser transition has been verified.
 **Next**: Coordinator validates feat-010; service-worker registration/update safety remains assigned to feat-011.
 
+## 2026-09-27 — feat-011 UI lane
+
+**State**: UI implementation complete locally; coordinator validation pending.
+**Done**: Added a global PWA update banner with explicit Later and Update now actions, a confirmation before reloading when a draft or completed reading remains in React memory, a visible offline notice, and Settings status/readiness subscribed to the shared PWA store. Preserved the parallel fixer's dirty PWA registration/store files.
+**Evidence**: Final `./init.sh` passed format, lint/length (one existing Fast Refresh warning), typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests. Production preview rendered Settings and a direct hexagram route at 390×844 with no horizontal overflow; offline-emulated direct route remained rendered, but Chromium still reported online. Preview reported offline readiness and install availability, but no waiting update existed to test the update prompt. See `features/feat-011.md`.
+**Blockers**: Combined update-worker lifecycle, draft-safe acceptance, actual offline state, and the full recovery matrix require coordinator/fixer integration verification.
+**Next**: Coordinator validates the combined UI/fixer lanes, especially service-worker registration and draft-safe update behavior.
+
 ## 2026-09-27 — feat-009 complete
 
 **State**: done; PR #20 merged as `c18c1b379211c095987a919d295c5492b0b0dbdf`.

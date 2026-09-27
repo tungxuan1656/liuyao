@@ -26,7 +26,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
+      injectRegister: null,
       includeAssets: ['favicon.svg'],
       manifest: {
         name: 'LiuYao - Lục Hào',
@@ -45,10 +46,10 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
         cleanupOutdatedCaches: true,
-        clientsClaim: true,
-        skipWaiting: true,
+        clientsClaim: false,
+        skipWaiting: false,
       },
     }),
   ],

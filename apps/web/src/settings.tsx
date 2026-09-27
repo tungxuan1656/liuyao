@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { KNOWLEDGE_PACKAGE_VERSION } from '@liuyao/knowledge';
 import { RULE_SET_ID } from '@liuyao/core';
+import { getPwaUpdateSnapshot, subscribePwaUpdate, type PwaUpdateSnapshot } from './lib/pwa-update';
 import './settings.css';
 
 const appVersion = __APP_VERSION__;
@@ -11,13 +12,13 @@ type InstallChoiceEvent = Event & {
   userChoice?: Promise<{ outcome: 'accepted' | 'dismissed'; platform: string }>;
 };
 
-type UpdateStatus = 'checking' | 'unsupported' | 'unregistered' | 'no-waiting' | 'waiting';
+type UpdateStatus = 'checking' | 'unsupported' | 'unreported' | 'waiting';
 
 export function SettingsPage() {
   const [online, setOnline] = useState<boolean | null>(() =>
     'onLine' in navigator ? navigator.onLine : null,
   );
-  const [installSupported, setInstallSupported] = useState(false);
+  const [installSupported, setInstallSupported] = useState<boolean | null>(null);
   const [installPrompt, setInstallPrompt] = useState<InstallChoiceEvent | null>(null);
   const [installed, setInstalled] = useState(
     () =>
@@ -25,9 +26,17 @@ export function SettingsPage() {
       Boolean((navigator as Navigator & { standalone?: boolean }).standalone),
   );
   const [installMessage, setInstallMessage] = useState('');
-  const [updateStatus, setUpdateStatus] = useState<UpdateStatus>('checking');
+  const [updateStatus, setUpdateStatus] = useState<UpdateStatus>(() =>
+    'serviceWorker' in navigator ? 'checking' : 'unsupported',
+  );
+  const [pwaSnapshot, setPwaSnapshot] = useState<PwaUpdateSnapshot>(getPwaUpdateSnapshot);
 
   useEffect(() => {
+    const unsubscribePwa = subscribePwaUpdate(() => {
+      const next = getPwaUpdateSnapshot();
+      setPwaSnapshot(next);
+      setUpdateStatus(next.updateAvailable ? 'waiting' : 'unreported');
+    });
     const updateNetwork = () => {
       if ('onLine' in navigator) setOnline(navigator.onLine);
     };
@@ -40,44 +49,19 @@ export function SettingsPage() {
       }
     };
     const updateInstalled = () => setInstalled(true);
-    let disposed = false;
-    let registration: ServiceWorkerRegistration | undefined;
-    const syncUpdateStatus = () => {
-      if (disposed || !registration) return;
-      setUpdateStatus(registration.waiting ? 'waiting' : 'no-waiting');
-    };
-    const watchInstallingWorker = () => {
-      registration?.installing?.addEventListener('statechange', syncUpdateStatus);
-      syncUpdateStatus();
-    };
     window.addEventListener('online', updateNetwork);
     window.addEventListener('offline', updateNetwork);
     window.addEventListener('beforeinstallprompt', captureInstall);
     window.addEventListener('appinstalled', updateInstalled);
-    if (!('serviceWorker' in navigator)) {
-      setUpdateStatus('unsupported');
-    } else {
-      void navigator.serviceWorker
-        .getRegistration()
-        .then(found => {
-          if (disposed) return;
-          registration = found;
-          if (!registration) {
-            setUpdateStatus('unregistered');
-            return;
-          }
-          registration.addEventListener('updatefound', watchInstallingWorker);
-          registration.installing?.addEventListener('statechange', syncUpdateStatus);
-          syncUpdateStatus();
-        })
-        .catch(() => {
-          if (!disposed) setUpdateStatus('unsupported');
-        });
-    }
+    setUpdateStatus(
+      'serviceWorker' in navigator
+        ? getPwaUpdateSnapshot().updateAvailable
+          ? 'waiting'
+          : 'unreported'
+        : 'unsupported',
+    );
     return () => {
-      disposed = true;
-      registration?.removeEventListener('updatefound', watchInstallingWorker);
-      registration?.installing?.removeEventListener('statechange', syncUpdateStatus);
+      unsubscribePwa();
       window.removeEventListener('online', updateNetwork);
       window.removeEventListener('offline', updateNetwork);
       window.removeEventListener('beforeinstallprompt', captureInstall);
@@ -138,7 +122,7 @@ export function SettingsPage() {
                 : installSupported === true
                   ? 'Available'
                   : installSupported === false
-                    ? 'Not available in this browser'
+                    ? 'Install prompt unavailable'
                     : 'Not reported by this browser'}
             </dd>
           </div>
@@ -149,11 +133,17 @@ export function SettingsPage() {
                 ? 'Checking existing registration…'
                 : updateStatus === 'unsupported'
                   ? 'Service-worker status is not available'
-                  : updateStatus === 'unregistered'
-                    ? 'No service worker is registered'
-                    : updateStatus === 'waiting'
-                      ? 'A service-worker update is waiting'
-                      : 'No waiting service-worker update'}
+                  : updateStatus === 'waiting'
+                    ? 'A service-worker update is waiting'
+                    : 'Update availability has not been reported'}
+            </dd>
+          </div>
+          <div>
+            <dt>Offline readiness</dt>
+            <dd>
+              {pwaSnapshot.offlineReady
+                ? 'App is ready to work offline'
+                : 'Offline readiness has not been reported'}
             </dd>
           </div>
         </dl>

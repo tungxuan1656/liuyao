@@ -8,6 +8,7 @@ import { AppShell } from './components/app-shell';
 import { ROUTES } from './route-paths';
 import { LibraryDetailPage, LibraryPage } from './library';
 import { SettingsPage } from './settings';
+import { PwaUpdateBanner } from './components/pwa-update-banner';
 
 export { ROUTES } from './route-paths';
 
@@ -15,7 +16,7 @@ function RouteLayout() {
   return createElement(
     ReadingSessionProvider,
     null,
-    createElement(AppShell, null, createElement(Outlet)),
+    createElement(AppShell, null, createElement(PwaUpdateBanner), createElement(Outlet)),
   );
 }
 
