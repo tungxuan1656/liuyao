@@ -1,15 +1,16 @@
 import { createElement } from 'react';
-import { createBrowserRouter, Link, Outlet, useParams } from 'react-router-dom';
+import { createBrowserRouter, Link, Outlet } from 'react-router-dom';
 import App from './App';
 import { ReadingSessionProvider } from './reading-session';
 import { CastingFlow } from './casting-flow';
 import { ResultView } from './result-view';
 import { AppShell } from './components/app-shell';
 import { ROUTES } from './route-paths';
+import { LibraryDetailPage, LibraryPage } from './library';
 
 export { ROUTES } from './route-paths';
 
-function RouteShell({ title, libraryDetail = false }: { title: string; libraryDetail?: boolean }) {
+function RouteShell({ title }: { title: string }) {
   return createElement(
     'main',
     { className: 'mx-auto max-w-3xl space-y-4 p-6' },
@@ -19,34 +20,16 @@ function RouteShell({ title, libraryDetail = false }: { title: string; libraryDe
       { className: 'text-muted-foreground' },
       'This destination is not implemented yet.',
     ),
-    libraryDetail
-      ? createElement(
-          Link,
-          {
-            className:
-              'inline-flex min-h-11 min-w-11 items-center underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
-            to: ROUTES.library,
-          },
-          '← Back to Library',
-        )
-      : createElement(
-          Link,
-          {
-            className:
-              'inline-flex min-h-11 min-w-11 items-center underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
-            to: ROUTES.home,
-          },
-          'Return to home',
-        ),
+    createElement(
+      Link,
+      {
+        className:
+          'inline-flex min-h-11 min-w-11 items-center underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
+        to: ROUTES.home,
+      },
+      'Return to home',
+    ),
   );
-}
-
-function LibraryDetailRoute() {
-  const { entityType, id } = useParams();
-  return createElement(RouteShell, {
-    title: `Library detail: ${entityType ?? ''} / ${id ?? ''}`,
-    libraryDetail: true,
-  });
 }
 
 function RouteLayout() {
@@ -62,11 +45,11 @@ export const router = createBrowserRouter([
     element: createElement(RouteLayout),
     children: [
       { path: ROUTES.home, element: createElement(App) },
-      { path: ROUTES.library, element: createElement(RouteShell, { title: 'Library' }) },
+      { path: ROUTES.library, element: createElement(LibraryPage) },
       { path: ROUTES.settings, element: createElement(RouteShell, { title: 'Settings' }) },
       { path: ROUTES.casting, element: createElement(CastingFlow) },
       { path: ROUTES.result, element: createElement(ResultView) },
-      { path: '/library/:entityType/:id', element: createElement(LibraryDetailRoute) },
+      { path: '/library/:entityType/:id', element: createElement(LibraryDetailPage) },
     ],
   },
 ]);

@@ -247,3 +247,27 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: On Vite, open drawer at 768, 800, and 864px computed `display: block` and `visibility: visible`; focus remained on Close, body overflow was hidden, and one dialog was present. Escape at 864px dismissed, restored trigger focus, and unlocked body scroll. At 900px drawer was absent and wide inspector visible. `./init.sh` and `git diff --check` passed.
 **Blockers**: Coordinator validation and dependency-state confirmation.
 **Next**: Coordinator validates the final feat-008 result view.
+
+## 2026-09-27 — feat-008 complete
+
+**State**: done; PR #19 merged at `93df44096fd0eabbb5c6a65cb3a9e2205f6e90d1`.
+**Done**: Closed feat-008 after PR #19 head `5b27046d8e64ed5a23ca757050a61c10a256be00` passed CI `verify` and GitGuardian. Updated the result-view handoff and feature index to reflect merged completion.
+**Evidence**: `./init.sh` and browser checks are recorded in `features/feat-008.md` and earlier progress entries. Forced calculation failure was code-audited but not runtime-forced.
+**Blockers**: none for feat-008.
+**Next**: Activate feat-009, already selected in the user's feat-007–012 batch.
+
+## 2026-09-27 — feat-009
+
+**State**: active; implementation and assigned browser checks complete, coordinator validation pending.
+**Done**: Built Library category browsing and filters, local search/no-results UI, canonical list/detail routing, related figure links, rule detail references, and source metadata/location display. Exported required record types from the knowledge package public entry.
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 196 package tests; lint reports one pre-existing Fast Refresh warning in `apps/web/src/components/ui/button.tsx`. Agent-browser verified compact (390×844) and wide (1440×900), category counts (64/8/55/10), alias search (`heaven` → Qian), no-results state, direct detail reload, related links, rule source/location, and offline reload of built-preview `/library` and hexagram detail. Development-server offline failure was not treated as PWA evidence.
+**Blockers**: No known implementation blocker; term-to-rule associations are absent in the existing knowledge catalog.
+**Next**: Coordinator reviews the implementation and verification evidence.
+
+## 2026-09-27 — feat-009 evidence clarification
+
+**State**: active; coordinator validation pending.
+**Done**: Clarified the source-coverage boundary for F08-T10/T11 in `features/feat-009.md`; prior progress entry is preserved as append-only history.
+**Evidence**: Corrected test evidence is 41 knowledge-package tests total; `packages/knowledge/tests/search.test.ts` has 3 tests. Offline built-preview reload was verified for `/library` and `/library/hexagram/hexagram-01` only; other routes were not individually checked offline. Catalog references cover 10 rules and `term-trigram` only, with no hexagram/trigram references and no references for 54 terms. UI source metadata/location behavior is supported only where catalog references exist; unreferenced mappings are not claimed as citations.
+**Blockers**: Coordinator validation remains pending; catalog source-reference coverage is limited.
+**Next**: Coordinator validates the implementation and evidence, including the documented source-coverage limits.

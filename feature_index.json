@@ -50,13 +50,13 @@
     {
       "id": "feat-008",
       "title": "Result view",
-      "status": "active",
+      "status": "done",
       "depends_on": ["feat-001", "feat-004", "feat-006", "feat-007", "feat-017"]
     },
     {
       "id": "feat-009",
       "title": "Knowledge browser",
-      "status": "todo",
+      "status": "active",
       "depends_on": ["feat-001", "feat-006"]
     },
     {
