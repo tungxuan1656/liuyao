@@ -139,8 +139,9 @@
 }
 .library-clear {
   display: grid;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
   flex: 0 0 auto;
   place-items: center;
   border: 0;
@@ -162,8 +163,8 @@
   scrollbar-width: none;
 }
 .rule-filters button {
-  min-height: 36px;
-  padding: 0.4rem 0.75rem;
+  min-height: 44px;
+  padding: 0.55rem 0.75rem;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: transparent;

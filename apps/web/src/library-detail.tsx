@@ -32,8 +32,6 @@ export function LibraryDetailPage() {
     );
 
   const related = getRelatedFigures(record);
-  const rules = 'kind' in record ? [] : 'definition' in record ? [] : [record];
-
   return (
     <main className="library-detail">
       <Link className="detail-back" to={ROUTES.library}>
@@ -91,18 +89,6 @@ export function LibraryDetailPage() {
                 </Link>
               ))}
             </div>
-          </section>
-        )}
-        {rules.length > 0 && (
-          <section className="detail-section">
-            <h2>Rule reference</h2>
-            {rules.map(rule => (
-              <Link className="rule-reference" key={rule.id} to={recordPath(rule)}>
-                <span>{rule.category}</span>
-                <strong>{rule.title}</strong>
-                <p>{rule.explanation}</p>
-              </Link>
-            ))}
           </section>
         )}
         {references.length > 0 && (

@@ -37,13 +37,12 @@ export function LibraryPage() {
       </header>
 
       <section className="library-browser" aria-label="Browse knowledge">
-        <nav className="library-tabs" aria-label="Knowledge categories" role="tablist">
+        <nav className="library-tabs" aria-label="Knowledge categories">
           {categories.map(({ id, label }) => (
             <button
               key={id}
               type="button"
-              role="tab"
-              aria-selected={category === id}
+              aria-pressed={category === id}
               className={`library-tab${category === id ? ' is-selected' : ''}`}
               onClick={() => setCategory(id)}
             >
