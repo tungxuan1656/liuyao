@@ -272,6 +272,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: Coordinator validation remains pending; catalog source-reference coverage is limited.
 **Next**: Coordinator validates the implementation and evidence, including the documented source-coverage limits.
 
+## 2026-09-27 — feat-010 implementation
+
+**State**: implementation complete locally; coordinator validation pending.
+**Done**: Replaced the Settings placeholder with responsive diagnostics for app/package versions, ruleset, live connection status, browser-qualified install status, update availability, fixed line conventions, and information links. Kept update application user-triggered and added no account, sync, history, analytics, or cloud controls.
+**Evidence**: `./init.sh` passed: format, lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests. One pre-existing non-failing Fast Refresh warning remains in `apps/web/src/components/ui/button.tsx`. Agent-browser checked 390×844 and 1440×900 layouts with no horizontal overflow; the install state varied with exposed browser evidence. No waiting update or real offline transition was available for browser verification. Details and limits are in `features/feat-010.md`.
+**Blockers**: Update-available action and real offline behavior were not exercised; standalone privacy policy does not yet exist.
+**Next**: Coordinator validates feat-010 implementation and evidence.
+
 ## 2026-09-27 — feat-009 complete
 
 **State**: done; PR #20 merged as `c18c1b379211c095987a919d295c5492b0b0dbdf`.
