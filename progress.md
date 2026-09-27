@@ -271,3 +271,27 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Corrected test evidence is 41 knowledge-package tests total; `packages/knowledge/tests/search.test.ts` has 3 tests. Offline built-preview reload was verified for `/library` and `/library/hexagram/hexagram-01` only; other routes were not individually checked offline. Catalog references cover 10 rules and `term-trigram` only, with no hexagram/trigram references and no references for 54 terms. UI source metadata/location behavior is supported only where catalog references exist; unreferenced mappings are not claimed as citations.
 **Blockers**: Coordinator validation remains pending; catalog source-reference coverage is limited.
 **Next**: Coordinator validates the implementation and evidence, including the documented source-coverage limits.
+
+## 2026-09-27 — feat-010 implementation
+
+**State**: implementation complete locally; coordinator validation pending.
+**Done**: Replaced the Settings placeholder with responsive diagnostics for app/package versions, ruleset, live connection status, browser-qualified install status, update availability, fixed line conventions, and information links. Kept update application user-triggered and added no account, sync, history, analytics, or cloud controls.
+**Evidence**: `./init.sh` passed: format, lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests. One pre-existing non-failing Fast Refresh warning remains in `apps/web/src/components/ui/button.tsx`. Agent-browser checked 390×844 and 1440×900 layouts with no horizontal overflow; the install state varied with exposed browser evidence. No waiting update or real offline transition was available for browser verification. Details and limits are in `features/feat-010.md`.
+**Blockers**: Update-available action and real offline behavior were not exercised; standalone privacy policy does not yet exist.
+**Next**: Coordinator validates feat-010 implementation and evidence.
+
+## 2026-09-27 — feat-010 update-state correction
+
+**State**: implementation complete locally; coordinator validation pending.
+**Done**: Removed Settings' `useRegisterSW` registration and nonfunctional update action after review found they conflicted with Vite PWA `autoUpdate` and could reload in-memory readings. Settings now inspects an existing service-worker registration and distinguishes unsupported, unregistered, no-waiting, and waiting states without registering or applying updates. Corrected install availability to report unavailable only after the browser's install prompt event is observed.
+**Evidence**: Fresh `./init.sh` passed after the correction: lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests. Existing Fast Refresh warning only. Agent-browser at 390×844 and 1440×900 showed no overflow and accurately reported “No service worker is registered”; no other registration state was available. See `features/feat-010.md` for details.
+**Blockers**: No service-worker registration/update flow or draft-safe update handling is implemented here; that work belongs to feat-011. No waiting update or real offline browser transition has been verified.
+**Next**: Coordinator validates feat-010; service-worker registration/update safety remains assigned to feat-011.
+
+## 2026-09-27 — feat-009 complete
+
+**State**: done; PR #20 merged as `c18c1b379211c095987a919d295c5492b0b0dbdf`.
+**Done**: Closed the Knowledge browser feature after PR #20 head `d5bdb631553971a71a44b4ecc48bb78d94e788a1` passed CI `verify` and GitGuardian. Recorded the merged status and catalog sourcing limits in the feature handoff.
+**Evidence**: `./init.sh` and browser checks are recorded in `features/feat-009.md` and prior progress entries. Catalog references cover only 10 rules and `term-trigram`; there are no hexagram/trigram references or references for 54 of 55 terms, and no catalog-defined term-rule associations. Offline built-preview reload was checked only for `/library` and `/library/hexagram/hexagram-01`.
+**Blockers**: none for feat-009.
+**Next**: Activate feat-010 Settings, already selected by the user.
