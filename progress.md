@@ -223,3 +223,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: PR head `08d19d5` passed CI `verify` and GitGuardian; code review had no blocking findings. `./init.sh` previously passed, with evidence in `docs/plans/feat-007.md`.
 **Blockers**: none for feat-007.
 **Next**: Activate feat-008, already selected in the user's feat-007–012 batch.
+
+## 2026-09-27 — feat-008 browser validation follow-up
+
+**State**: implementation complete; coordinator validation pending.
+**Done**: Improved compact result readability by stacking primary and changed hexagram boards at 390px. Added guards to keep keyboard focus inside the compact drawer.
+**Evidence**: `./init.sh` passed after latest code edits; `git diff --check` passed. Browser checks showed the one-control drawer retains focus on Close after Tab and Shift+Tab. A real mouse click on the scrim dismissed the dialog, restored focus to the triggering trigram, and unlocked body scrolling; CSS-selector click was inconclusive. Earlier checks for no-change/changed results and wide layout remain recorded in `features/feat-008.md`. F07-T14 is code-audited, not runtime-forced: `finish` catches calculation errors and copies all submitted values to the draft.
+**Blockers**: Forced calculation failure was not reproduced; dependency-state confirmation remains for coordinator validation.
+**Next**: Coordinator reviews evidence and decides whether forced-failure runtime coverage is required.

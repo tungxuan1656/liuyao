@@ -46,8 +46,10 @@ export function CastingFlow() {
       });
       isCompleting.current = true;
       setError('');
-      navigate(ROUTES.home);
+      navigate(ROUTES.result);
     } catch (cause) {
+      // Keep the entered values in the draft so the user can correct and retry.
+      if (draft) setDraft({ ...draft, lines: [...values] });
       setError(cause instanceof Error ? cause.message : 'Check the six line values and try again.');
     }
   }
