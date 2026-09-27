@@ -125,6 +125,7 @@
   font: 1.65rem/1 var(--font-serif);
 }
 .library-search input {
+  min-height: 44px;
   width: 100%;
   min-width: 0;
   border: 0;

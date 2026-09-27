@@ -62,6 +62,13 @@ describe('casting core', () => {
     },
   );
 
+  it('calculates equivalent results from direct and sequential entries', () => {
+    const values = [6, 7, 8, 9, 6, 7];
+    expect(calculateReading(normalizeDirectInput(values))).toEqual(
+      calculateReading(normalizeSequentialInput(values)),
+    );
+  });
+
   it.each([
     { lines: [] },
     { lines: [6, 7, 8, 9, 6] },

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { FiveElement } from '../src/contracts';
 import { InvalidReadingInputError, RULE_SET_ID, calculateReading, sixRelative } from '../src/index';
+import { PURE_BOARD_FIXTURES } from './pure-board-fixtures';
 
 const ELEMENTS: readonly FiveElement[] = ['wood', 'fire', 'earth', 'metal', 'water'];
 
@@ -25,6 +26,32 @@ describe('Six Relatives', () => {
 });
 
 describe('public board calculation', () => {
+  it.each(PURE_BOARD_FIXTURES)('matches the independent pure-board golden for $id', fixture => {
+    const result = calculateReading({ lines: fixture.lines });
+    expect(result).toEqual({
+      ruleset: RULE_SET_ID,
+      primaryHexagramId: fixture.id,
+      changedHexagramId: null,
+      lowerTrigramId: fixture.trigram,
+      upperTrigramId: fixture.trigram,
+      palaceId: fixture.palace,
+      palaceElement: fixture.palaceElement,
+      shiPosition: 6,
+      yingPosition: 3,
+      lines: fixture.board.map(([naJiaStem, naJiaBranch, element, relative, shiYing], index) => ({
+        position: (index + 1) as 1 | 2 | 3 | 4 | 5 | 6,
+        inputValue: fixture.lines[index],
+        polarity: fixture.lines[index] === 7 ? 'yang' : 'yin',
+        changing: false,
+        naJiaStem,
+        naJiaBranch,
+        element,
+        relative,
+        ...(shiYing ? { shiYing } : {}),
+      })),
+    });
+  });
+
   it('returns a bottom-to-top pure-heaven board snapshot', () => {
     expect(calculateReading({ lines: [7, 7, 7, 7, 7, 7] })).toEqual({
       ruleset: RULE_SET_ID,

@@ -21,4 +21,17 @@ describe('trigrams', () => {
       upperTrigramId: 'trigram-mountain',
     });
   });
+
+  it.each([
+    [[9, 9, 9], 'trigram-heaven'],
+    [[9, 9, 6], 'trigram-lake'],
+    [[9, 6, 9], 'trigram-fire'],
+    [[9, 6, 6], 'trigram-thunder'],
+    [[6, 9, 9], 'trigram-wind'],
+    [[6, 9, 6], 'trigram-water'],
+    [[6, 6, 9], 'trigram-mountain'],
+    [[6, 6, 6], 'trigram-earth'],
+  ] as const)('identifies changing values %s by polarity', (lines, expected) => {
+    expect(identifyTrigram(lines)).toBe(expected);
+  });
 });

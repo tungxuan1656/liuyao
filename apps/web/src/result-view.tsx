@@ -13,6 +13,7 @@ export function ResultView() {
   const [selectedFact, setSelectedFact] = useState<FactSelection | null>(null);
   const [compact, setCompact] = useState(() => window.matchMedia('(max-width: 899px)').matches);
   const closeButton = useRef<HTMLButtonElement>(null);
+  const drawerRef = useRef<HTMLElement>(null);
   const returnFocus = useRef<HTMLElement | null>(null);
   const overflowBeforeDrawer = useRef<string | null>(null);
   useEffect(() => {
@@ -44,7 +45,7 @@ export function ResultView() {
         overflowBeforeDrawer.current = document.body.style.overflow;
       }
       document.body.style.overflow = 'hidden';
-      closeButton.current?.focus();
+      requestAnimationFrame(() => drawerRef.current?.focus());
     }
     const getFocusable = () => {
       const drawer = document.querySelector<HTMLElement>('.fact-drawer');
@@ -84,7 +85,7 @@ export function ResultView() {
         event.target instanceof Node &&
         !document.querySelector('.fact-drawer')?.contains(event.target)
       ) {
-        closeButton.current?.focus();
+        drawerRef.current?.focus();
       }
     };
     document.addEventListener('keydown', onKeyDown);
@@ -234,19 +235,20 @@ export function ResultView() {
             if (event.target === event.currentTarget) closeInspector();
           }}
         >
-          <button
-            className="drawer-scrim"
-            type="button"
-            aria-label="Close fact inspector"
-            onClick={closeInspector}
-          />
+          <div className="drawer-scrim" aria-hidden="true" onClick={closeInspector} />
           <aside
+            ref={drawerRef}
             className="fact-drawer"
             role="dialog"
             aria-modal="true"
             aria-label={`${selectedFact.label} fact details`}
+            tabIndex={-1}
           >
-            <FactInspector fact={selectedFact} close={closeInspector} closeRef={closeButton} />
+            <FactInspector
+              fact={selectedFact}
+              close={closeInspector}
+              closeRef={compact ? closeButton : undefined}
+            />
           </aside>
         </div>
       )}
