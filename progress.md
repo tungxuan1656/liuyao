@@ -381,3 +381,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Safari 26.5/macOS 26.5.1 production `localhost:4187`: home, manual lines `7,8,9,6,7,8` → Ji Ji (63)/Sui (17), direct Library Qian, and Settings completed; sampled page errors and `unhandledrejection` were empty. Safari console endpoint unsupported, offline and question persistence not verified. Chromium 390×844 at `localhost:4326`: visible fact link minimums recorded in T13, inspector close 44×44 and dialog actions ≥129×44; dialog flow interrupted by stale element. Sampled reading/result/drawer console and uncaught buffers empty; offline `/result` showed “No active result.” Update banner dimensions were not measured and no waiting worker was present. Earlier mobile/Android/Edge limitations remain; no full release matrix is claimed.
 **Blockers**: Remaining T09/T10/T11/T13 evidence and other unchecked quality tasks; coordinator validation.
 **Next**: Continue the open feat-012 evidence items and have the coordinator validate this browser evidence.
+
+## 2026-09-27 — feat-012 iOS and Android simulator evidence
+
+**State**: active; coordinator validation pending.
+**Done**: Recorded actual iPhone simulator Safari page evidence and the Android emulator startup limitation; kept F11-T07 and F11-T11 unchecked.
+**Evidence**: iPhone 17 Pro simulator iOS 26.5 (runtime 23F77; system 26.5.1) Safari accessibility tree/screenshots from temporary server port 4332 confirmed home, Library, direct Qian detail and Settings. No casting/result, offline, or nonzero safe-area measurement; screenshots are outside the repo under `.../opencode/liuyao-ios-qa`. Android Pixel_2 Android 14 API 34 emulator Chrome 142.0.7444.171 remained at FirstRunActivity despite stable temporary server port 4331, so there is no app-page evidence. T07 and T11 remain unchecked; no other task status changed.
+**Blockers**: Nonzero safe-area evidence and supported-browser matrix remain incomplete; coordinator validation.
+**Next**: Continue open feat-012 evidence items and have the coordinator validate the recorded simulator/browser evidence.
