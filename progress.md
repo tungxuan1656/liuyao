@@ -319,3 +319,19 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` and browser checks are recorded in `features/feat-010.md` and preceding progress entries. Browser checks covered 390×844 and 1440×900 layouts and truthful available browser states. No real offline transition or waiting service-worker update was verified; update registration and draft-safe application remain feat-011 scope.
 **Blockers**: none for feat-010.
 **Next**: Activate feat-011 Offline hardening, already selected by the user.
+
+## 2026-09-27 — feat-011 production browser QA
+
+**State**: active; production-browser evidence recorded; coordinator final validation pending.
+**Done**: Verified service-worker control, offline routes/settings/banner, online→offline→reload→online recovery, and a two-build waiting-update flow that preserves the active question, manual method, and lines until explicit acceptance. Updated F10 task evidence without marking the feature complete.
+**Evidence**: On production build `localhost:4188`, shell/fonts were precached and observed requests were same-origin. Offline route/settings and banner worked during the controlled connectivity/reload sequence. Isolated v1→v2 fixture at `localhost:4192` produced a distinct waiting worker via conditional 200; Later and Keep reading preserved state; accepted Update now reloaded into v2 and cleared the in-memory draft. Native `beforeunload` prompt absence was not definitively observable, although intentional reload completed; `isUpdateAccepted` code guard suppresses it. QA covers this browser subset only, not a full cross-browser matrix. F10-T03 and T08 remain unchecked for insufficient evidence; acceptance remains unchecked.
+**Blockers**: Coordinator validation; evidence does not yet establish absence of remote runtime dependencies across all core flows or normal use when installation is unavailable.
+**Next**: Coordinator validates feat-011 evidence and determines whether F10-T03/T08 need further verification.
+
+## 2026-09-27 — feat-011 final evidence update
+
+**State**: active; F10-T01–T10 evidence recorded; coordinator/PR gate pending.
+**Done**: Completed source/build audit for remote runtime dependencies and verified normal browser use without installing in a production-fixture session. Marked all F10 tasks and acceptance criteria supported by the combined implementation, test, and browser evidence; kept feat-011 active for final coordinator/PR validation.
+**Evidence**: No required remote runtime APIs/assets were found in reading, casting, result, Library, or Settings; core assets are same-origin and precached, external GitHub/source links are user-initiated. Observed browser requests were same-origin, but no exhaustive network/cross-browser audit is claimed. With no `beforeinstallprompt` event observed (API exists; unsupported browser not proven), the user completed question/manual casting (lines `7, 8, 9, 6, 7, 8`) to Ji Ji/Sui, opened Library Qian detail and Settings without installing. Prior production offline/recovery and two-build draft-safe update evidence is recorded in `features/feat-011.md`. Native `beforeunload` prompt absence remains unconfirmed; intentional update reload completed and `isUpdateAccepted` suppresses the guard.
+**Blockers**: Coordinator/PR gate only; browser verification is a subset and does not claim full cross-browser coverage.
+**Next**: Coordinator validates the complete feat-011 evidence and proceeds through the PR gate.
