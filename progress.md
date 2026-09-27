@@ -255,3 +255,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` and browser checks are recorded in `features/feat-008.md` and earlier progress entries. Forced calculation failure was code-audited but not runtime-forced.
 **Blockers**: none for feat-008.
 **Next**: Activate feat-009, already selected in the user's feat-007–012 batch.
+
+## 2026-09-27 — feat-009
+
+**State**: active; implementation and assigned browser checks complete, coordinator validation pending.
+**Done**: Built Library category browsing and filters, local search/no-results UI, canonical list/detail routing, related figure links, rule detail references, and source metadata/location display. Exported required record types from the knowledge package public entry.
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 196 package tests; lint reports one pre-existing Fast Refresh warning in `apps/web/src/components/ui/button.tsx`. Agent-browser verified compact (390×844) and wide (1440×900), category counts (64/8/55/10), alias search (`heaven` → Qian), no-results state, direct detail reload, related links, rule source/location, and offline reload of built-preview `/library` and hexagram detail. Development-server offline failure was not treated as PWA evidence.
+**Blockers**: No known implementation blocker; term-to-rule associations are absent in the existing knowledge catalog.
+**Next**: Coordinator reviews the implementation and verification evidence.

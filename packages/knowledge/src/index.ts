@@ -4,7 +4,16 @@ export const KNOWLEDGE_PACKAGE_VERSION = '0.1.0';
 
 export * from './catalog.js';
 export * from './search.js';
-export type { FactDefinition, KnowledgeFactId, KnowledgeRuleCategory } from './schema.js';
+export type {
+  FactDefinition,
+  KnowledgeEntity,
+  KnowledgeRule,
+  KnowledgeRuleCategory,
+  KnowledgeTerm,
+  KnowledgeSource,
+  SourceReference,
+  KnowledgeFactId,
+} from './schema.js';
 
 export interface KnowledgeMetadata {
   name: string;
