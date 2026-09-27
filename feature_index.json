@@ -44,13 +44,13 @@
     {
       "id": "feat-007",
       "title": "Reading flow",
-      "status": "active",
+      "status": "done",
       "depends_on": ["feat-001", "feat-004", "feat-005", "feat-017"]
     },
     {
       "id": "feat-008",
       "title": "Result view",
-      "status": "todo",
+      "status": "active",
       "depends_on": ["feat-001", "feat-004", "feat-006", "feat-007", "feat-017"]
     },
     {

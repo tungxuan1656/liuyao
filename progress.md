@@ -215,3 +215,35 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `docs/product-specs/product-identity.md` owns the approval and remaining identity scope; `features/feat-013.md` records T02 complete and T04 open. Feat-007 plan and handoff link to the canonical decision.
 **Blockers**: Feat-007 plan/PR review remains pending; feat-013 identity work remains todo.
 **Next**: Complete feat-007 PR review and merge; leave remaining feat-013 identity decisions for its separately selected feature.
+
+## 2026-09-27 — feat-007 complete
+
+**State**: done; PR #18 merged at `dda7973c12d4191ae43f4260fe661c49717e04ef`.
+**Done**: Closed feat-007 after PR review and acceptance. F06-T12 is complete for the approved Lục Hào name and English interface; broader identity tasks remain with feat-013.
+**Evidence**: PR head `08d19d5` passed CI `verify` and GitGuardian; code review had no blocking findings. `./init.sh` previously passed, with evidence in `docs/plans/feat-007.md`.
+**Blockers**: none for feat-007.
+**Next**: Activate feat-008, already selected in the user's feat-007–012 batch.
+
+## 2026-09-27 — feat-008 browser validation follow-up
+
+**State**: implementation complete; coordinator validation pending.
+**Done**: Improved compact result readability by stacking primary and changed hexagram boards at 390px. Added guards to keep keyboard focus inside the compact drawer.
+**Evidence**: `./init.sh` passed after latest code edits; `git diff --check` passed. Browser checks showed the one-control drawer retains focus on Close after Tab and Shift+Tab. A real mouse click on the scrim dismissed the dialog, restored focus to the triggering trigram, and unlocked body scrolling; CSS-selector click was inconclusive. Earlier checks for no-change/changed results and wide layout remain recorded in `features/feat-008.md`. F07-T14 is code-audited, not runtime-forced: `finish` catches calculation errors and copies all submitted values to the draft.
+**Blockers**: Forced calculation failure was not reproduced; dependency-state confirmation remains for coordinator validation.
+**Next**: Coordinator reviews evidence and decides whether forced-failure runtime coverage is required.
+
+## 2026-09-27 — feat-008 interim result semantics and responsive review
+
+**State**: implementation complete; coordinator validation pending.
+**Done**: Applied coordinator decision to limit the changed board to changed polarity and trigram identities. Unified compact/drawer breakpoint through 899px; added drawer resize cleanup and refocus; added accessible Yao symbols and an honest unavailable changed-hexagram state.
+**Evidence**: `./init.sh` passed after the module split. At 390px, changed board contains only polarity and changed trigram identities; no-change has no changed board. With drawer open at 390px, active element was Close, overflow hidden, dialog present. Resize to 900px removed dialog, restored focus to trigger, cleared overflow; back to 768px retained trigger focus, reopened dialog, relocked overflow. Full evidence in `features/feat-008.md`.
+**Blockers**: Coordinator validation and dependency-state confirmation.
+**Next**: Coordinator validates feat-008 implementation and browser evidence.
+
+## 2026-09-27 — feat-008 compact drawer visibility fix
+
+**State**: implementation complete; coordinator validation pending.
+**Done**: Changed the drawer’s CSS wide-hide breakpoint to 900px, matching the 899px compact layout boundary.
+**Evidence**: On Vite, open drawer at 768, 800, and 864px computed `display: block` and `visibility: visible`; focus remained on Close, body overflow was hidden, and one dialog was present. Escape at 864px dismissed, restored trigger focus, and unlocked body scroll. At 900px drawer was absent and wide inspector visible. `./init.sh` and `git diff --check` passed.
+**Blockers**: Coordinator validation and dependency-state confirmation.
+**Next**: Coordinator validates the final feat-008 result view.

@@ -3,6 +3,7 @@ import { createBrowserRouter, Link, Outlet, useParams } from 'react-router-dom';
 import App from './App';
 import { ReadingSessionProvider } from './reading-session';
 import { CastingFlow } from './casting-flow';
+import { ResultView } from './result-view';
 import { AppShell } from './components/app-shell';
 import { ROUTES } from './route-paths';
 
@@ -64,6 +65,7 @@ export const router = createBrowserRouter([
       { path: ROUTES.library, element: createElement(RouteShell, { title: 'Library' }) },
       { path: ROUTES.settings, element: createElement(RouteShell, { title: 'Settings' }) },
       { path: ROUTES.casting, element: createElement(CastingFlow) },
+      { path: ROUTES.result, element: createElement(ResultView) },
       { path: '/library/:entityType/:id', element: createElement(LibraryDetailRoute) },
     ],
   },

@@ -16,9 +16,17 @@ Single-pane / split-pane layouts show deterministic facts with upper/lower trigr
 
 ## Acceptance
 
-- [ ] Complete all F07 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
-- [ ] Meet the V1 completion condition: Single-pane / split-pane layouts show deterministic facts with upper/lower trigrams and rule links.
-- [ ] Pass the repository verification workflow in `./init.sh`.
+- [x] Complete all F07 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
+- [x] Meet the V1 completion condition: Single-pane / split-pane layouts show deterministic facts with upper/lower trigrams and rule links.
+- [x] Pass the repository verification workflow in `./init.sh`.
+
+## Design direction
+
+- Quiet editorial: warm restrained canvas, ink-like line diagram, clear fact hierarchy.
+- Wide screens keep the line board and fact inspector together; compact screens open a keyboard-accessible inspector drawer.
+- The result screen presents calculated facts and source knowledge only. It does not generate interpretation or prediction.
+- Interim F07 decision (coordinator): the changed board shows the changed polarity diagram and changed upper/lower trigram identities only. Primary Na Jia, element, relative, Shi, and Ying facts remain on the primary board and dedicated line-facts section; they are not duplicated as changed-board facts.
+- At widths through 899px, use the compact single-pane board and inspector drawer. At 900px and wider, use wide master-detail.
 
 ## Relevant docs
 
@@ -29,23 +37,29 @@ Single-pane / split-pane layouts show deterministic facts with upper/lower trigr
 
 ## Tasks
 
-- [ ] F07-T01 — Show primary hexagram identity
-- [ ] F07-T02 — Show changed hexagram only when changes exist
-- [ ] F07-T03 — Show upper and lower trigram identities for primary and changed hexagrams
-- [ ] F07-T04 — Show palace and palace element
-- [ ] F07-T05 — Render sixth line at top and first line at bottom
-- [ ] F07-T06 — Show Yin/Yang and moving indicators (6 as ✕, 9 as ○) via SVG/CSS YaoSymbol
-- [ ] F07-T07 — Show Na Jia stem and branch
-- [ ] F07-T08 — Show Five Element and Six Relative
-- [ ] F07-T09 — Show Shi and Ying markers
-- [ ] F07-T10 — Show changed polarity for moving lines
-- [ ] F07-T11 — Link explainable facts to ruleset-backed rule IDs and canonical source references
-- [ ] F07-T12 — Render fact, rule, and source as separate concepts
-- [ ] F07-T13 — Add no-change state without an empty changed-hexagram card
-- [ ] F07-T14 — Keep full input available when calculation fails
-- [ ] F07-T15 — Avoid generated interpretation or predictive verdicts
-- [ ] F07-T16 — Implement Wide Master-Detail layout and Compact Drawer-backed Fact Inspector
-- [ ] F07-T17 — Support keyboard navigation, focus management, and non-drag dismissal for Drawer
+- [x] F07-T01 — Show primary hexagram identity
+- [x] F07-T02 — Show changed hexagram only when changes exist
+- [x] F07-T03 — Show upper and lower trigram identities for primary and changed hexagrams
+- [x] F07-T04 — Show palace and palace element
+- [x] F07-T05 — Render sixth line at top and first line at bottom
+- [x] F07-T06 — Show Yin/Yang and moving indicators (6 as ✕, 9 as ○) via SVG/CSS YaoSymbol
+- [x] F07-T07 — Show Na Jia stem and branch
+- [x] F07-T08 — Show Five Element and Six Relative
+- [x] F07-T09 — Show Shi and Ying markers
+- [x] F07-T10 — Show changed polarity for moving lines
+- [x] F07-T11 — Link explainable facts to ruleset-backed rule IDs and canonical source references
+- [x] F07-T12 — Render fact, rule, and source as separate concepts
+- [x] F07-T13 — Add no-change state without an empty changed-hexagram card
+- [x] F07-T14 — Keep full input available when calculation fails
+- [x] F07-T15 — Avoid generated interpretation or predictive verdicts
+- [x] F07-T16 — Implement Wide Master-Detail layout and Compact Drawer-backed Fact Inspector
+- [x] F07-T17 — Support keyboard navigation, focus management, and non-drag dismissal for Drawer
+
+## Plan
+
+1. Add the result route and deterministic result/knowledge composition, preserving root-session navigation.
+2. Render primary and optional changed hexagrams, line facts, rule and source citations, and accessible inspector behavior.
+3. Validate with `./init.sh` and direct wide/compact UI checks where available.
 
 Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md`.
 
@@ -59,7 +73,8 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- State: todo
-- Evidence: —
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- State: implementation complete; awaiting coordinator validation.
+- Coordinator decision implemented: changed board shows the new polarity diagram and changed upper/lower trigram identities only. It no longer repeats the primary Na Jia, element, relative, Shi, or Ying facts; the primary board and dedicated line-facts section retain those values. Compact breakpoint is max-width 899px; wide master-detail starts at 900px. A resize across the breakpoint updates the compact drawer lifecycle, body scroll lock, and focus restoration.
+- Evidence: latest `./init.sh` passed after the result modules were split. **CSS drawer visibility fix:** changed `.drawer-layer` wide hide breakpoint from 768px to 900px to match compact behavior through 899px. With a fact inspector open, at 768, 800, and 864px, `getComputedStyle(.drawer-layer)` returned `display: block`, `visibility: visible`; focus was Close, body overflow hidden, one dialog present. Escape at 864px removed the dialog, returned focus to the triggering Upper trigram button, and unlocked body scrolling. At 900px the drawer was absent and wide inspector computed `display: block`. This corrects earlier evidence that reported the drawer existed in the DOM at intermediate widths without confirming visibility; those previous DOM-only checks did not prove the drawer was visible. On Vite `http://127.0.0.1:5173`, at 390×844 changed input `6,7,8,9,6,7` produced one changed panel with six Changed polarity labels, no Shi/Ying markers, and distinct changed trigrams 巽 Xun / 兌 Dui. No-change input `7,7,7,7,7,7` displayed no changed panel and retained six dedicated line-fact rows. Earlier 1024px layout measured `601px 320px`. Yao symbol reported role=img and aria-label Yang. Forced calculation failure remains code-audited, not runtime-forced. Screenshot records are unchanged and prior compact screenshot predates stacking.
+- Dependency check: existing feature dependencies assumed completed; coordinator to confirm.
+- Next: Coordinator validates the implementation and recorded browser evidence.

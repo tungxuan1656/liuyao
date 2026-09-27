@@ -71,6 +71,9 @@ export default function App() {
           {reading.result.changedHexagramId && (
             <p>Changed hexagram: {reading.result.changedHexagramId}</p>
           )}
+          <Link className="reading-link" to={ROUTES.result}>
+            View result
+          </Link>
           <p className="session-note">
             This reading is held in memory and will be cleared if you reload the app.
           </p>
