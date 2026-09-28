@@ -31,54 +31,57 @@ export default function App() {
   return (
     <main className="reading-page">
       <header className="reading-heading">
-        <p className="eyebrow">Reading workspace</p>
+        <p className="eyebrow">Không gian gieo quẻ</p>
         <h1>Lục Hào</h1>
         <p>
-          Create a six-line reading. Your question and active reading remain in this browser session
-          only.
+          Lập quẻ sáu hào. Câu hỏi và quẻ đang thực hiện chỉ được giữ trong phiên trình duyệt này.
         </p>
       </header>
 
       {reading ? (
         <section className="reading-card" aria-labelledby="completed-reading-heading">
-          <p className="eyebrow">Reading complete</p>
-          <h2 id="completed-reading-heading">{reading.question || 'Untitled reading'}</h2>
+          <p className="eyebrow">Đã lập quẻ</p>
+          <h2 id="completed-reading-heading">{reading.question || 'Quẻ chưa đặt tên'}</h2>
           <p>
-            Method:{' '}
+            Phương pháp:{' '}
             {reading.method === 'automatic'
-              ? 'Automatic casting'
+              ? 'Gieo tự động'
               : reading.method === 'manual'
-                ? 'Manual casting'
-                : 'Direct input'}
+                ? 'Gieo thủ công'
+                : 'Nhập trực tiếp'}
           </p>
-          <p>Lines, first to sixth: {reading.lines.join(', ')}</p>
-          <p>Primary hexagram: {reading.result.primaryHexagramId}</p>
+          <p>Các hào, từ hào một đến hào sáu: {reading.lines.join(', ')}</p>
+          <p>Mã quẻ chính: {reading.result.primaryHexagramId}</p>
           {reading.result.changedHexagramId && (
-            <p>Changed hexagram: {reading.result.changedHexagramId}</p>
+            <p>Mã quẻ biến: {reading.result.changedHexagramId}</p>
           )}
           <Link className="reading-link" to={ROUTES.result}>
-            View result
+            Xem kết quả
           </Link>
           <p className="session-note">
-            This reading is held in memory and will be cleared if you reload the app.
+            Quẻ này chỉ được giữ trong bộ nhớ và sẽ bị xóa nếu bạn tải lại ứng dụng.
           </p>
           <div className="flow-actions">
             <Link className="reading-link" to={ROUTES.library}>
-              Library
+              Thư viện
             </Link>
             <Link className="reading-link" to={ROUTES.settings}>
-              Settings
+              Cài đặt
             </Link>
             <button type="button" onClick={() => setReplaceReading(true)}>
-              New Reading
+              Lập quẻ mới
             </button>
           </div>
         </section>
       ) : (
         <section className="reading-card" aria-labelledby="new-reading-heading">
-          <h2 id="new-reading-heading">New Reading</h2>
-          {draft && <p role="status">A reading draft is in progress. Continue it or start over.</p>}
-          <label htmlFor="reading-question">Question (optional)</label>
+          <h2 id="new-reading-heading">Lập quẻ mới</h2>
+          {draft && (
+            <p role="status">
+              Bạn đang có bản gieo quẻ chưa hoàn tất. Hãy tiếp tục hoặc bắt đầu lại.
+            </p>
+          )}
+          <label htmlFor="reading-question">Câu hỏi (không bắt buộc)</label>
           <textarea
             id="reading-question"
             rows={3}
@@ -88,18 +91,19 @@ export default function App() {
                 ? setDraft({ ...draft, question: event.target.value })
                 : setQuestion(event.target.value)
             }
-            placeholder="What would you like to reflect on?"
+            placeholder="Bạn muốn suy ngẫm về điều gì?"
           />
           <p className="session-note">
-            Question is session-only and is not saved or backed up. Reloading can erase it.
+            Câu hỏi chỉ tồn tại trong phiên này, không được lưu hoặc sao lưu. Tải lại ứng dụng có
+            thể làm mất câu hỏi.
           </p>
           <fieldset>
-            <legend>Casting method</legend>
+            <legend>Phương pháp lập quẻ</legend>
             {(
               [
-                ['automatic', 'Automatic casting'],
-                ['manual', 'Manual casting'],
-                ['direct', 'Direct entry'],
+                ['automatic', 'Gieo tự động'],
+                ['manual', 'Gieo thủ công'],
+                ['direct', 'Nhập trực tiếp'],
               ] as const
             ).map(([value, label]) => (
               <label className="method-option" key={value}>
@@ -117,22 +121,22 @@ export default function App() {
             ))}
           </fieldset>
           <button type="button" onClick={begin}>
-            {draft ? 'Continue Casting' : 'Start Casting'}
+            {draft ? 'Tiếp tục gieo quẻ' : 'Bắt đầu gieo quẻ'}
           </button>
           <p className="session-note">
-            Draft and question exist only in memory; no history or backup is available.
+            Bản gieo và câu hỏi chỉ tồn tại trong bộ nhớ; không có lịch sử hoặc bản sao lưu.
           </p>
         </section>
       )}
       {replaceReading && (
         <ConfirmationDialog
-          title="Start a new reading?"
-          confirmLabel="Replace reading"
-          cancelLabel="Keep current reading"
+          title="Lập quẻ mới?"
+          confirmLabel="Thay quẻ hiện tại"
+          cancelLabel="Giữ quẻ hiện tại"
           onCancel={() => setReplaceReading(false)}
           onConfirm={confirmReplacement}
         >
-          Starting a new reading replaces the current completed reading in memory.
+          Bắt đầu quẻ mới sẽ thay thế quẻ đã hoàn tất đang được giữ trong bộ nhớ.
         </ConfirmationDialog>
       )}
     </main>

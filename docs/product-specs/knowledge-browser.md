@@ -2,6 +2,8 @@
 
 This document owns V1 reference browsing behavior.
 
+The interface uses Vietnamese labels. English terms below describe behavior, not approved interface copy. See `vietnamese-language.md` for canonical terminology.
+
 ## Scope
 
 V1 exposes local reference content for:
@@ -16,8 +18,8 @@ The browser does not contain automated divination conclusions.
 
 ## Navigation
 
-Library
-→ Trigrams, Hexagrams, Terms, or Rules
+Thư viện
+→ Quái, Quẻ, Thuật ngữ hoặc Quy tắc
 → List or search
 → Detail
 
@@ -29,11 +31,14 @@ Search runs locally.
 
 Support matches against the normalized fields that exist in the knowledge dataset, such as:
 
-- Vietnamese display name;
-- Chinese character;
-- romanized alias;
+- canonical Vietnamese name;
+- reviewed Vietnamese alias;
 - stable ID;
 - glossary term.
+
+Prefer matches that preserve Vietnamese diacritics when the query contains them, so distinct names such as Càn and Cấn do not collide. For queries without diacritics, allow accent-insensitive matching and fold Vietnamese `đ` to `d`. Stable IDs are searchable by their full identifier without treating English fragments inside IDs as prose aliases.
+
+Do not include Han characters, English aliases, or Chinese romanizations in the local knowledge catalog. Stable IDs remain technical identifiers and are not prose. Follow `vietnamese-language.md` for the canonical language and terminology rules.
 
 Do not call a remote search service.
 
@@ -42,7 +47,7 @@ Do not call a remote search service.
 A detail page can show:
 
 - stable ID;
-- names and aliases;
+- Vietnamese names and aliases;
 - concise authored explanation;
 - related entities;
 - applicable rule IDs;

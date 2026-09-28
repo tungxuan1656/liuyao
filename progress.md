@@ -16,6 +16,70 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-09-28 — feat-018 web localization and verification
+
+**State**: active on `feat/018-vietnamese-language`; implementation and verification are committed locally, with final workflow, push, and PR remaining.
+**Done**: Localized the web reading, casting, result, Library, Settings, accessibility copy, HTML/PWA metadata, and related product-spec examples. Removed CJK-only runtime fonts, font coverage scripts, licensing copies, and CI machinery while keeping Vietnamese/Latin fonts. Completed production browser review at 390×844 and 1440×900, including all casting modes, confirmation/recovery, results and fact explanations, Library search/categories/no-results/details, Settings, and service-worker offline loading.
+**Evidence**: `./init.sh` passed (format, lint with one existing warning, typecheck, build, package exports, and 217 package tests); production manifest and HTML both report `vi`, no Han characters appeared in sampled rendered/accessibility text, six direct `7` inputs yielded `hexagram-01` / Thuần Càn, and offline Library navigation worked under the service worker. Update-ready and install-prompt states were not forced. Detailed checklist: `docs/plans/feat-018.md`.
+**Blockers**: none; PWA update/install prompt states remain untested and are recorded as such.
+**Next**: Run the final repository workflow, push `feat/018-vietnamese-language`, and open the PR.
+
+## 2026-09-28 — feat-018 pull request opened
+
+**State**: done; PR #24 is open for review.
+**Done**: Pushed the verified implementation and created [PR #24](https://github.com/tungxuan1656/liuyao/pull/24). Updated the feature index and handoff to reflect completion and review status.
+**Evidence**: `./init.sh` passed before push; branch `feat/018-vietnamese-language` tracks `origin/feat/018-vietnamese-language`.
+**Blockers**: none; PWA update-ready and install-prompt states remain untested as noted in the PR.
+**Next**: Address review feedback, then merge PR #24.
+
+## 2026-09-28 — feat-018 search review fixes
+
+**State**: active follow-up on `feat/018-vietnamese-language`; PR #24 is open.
+**Done**: Reproduced the two review findings in knowledge search. Updated normalization to prefer diacritic-preserving matches for accented queries, use accent-insensitive fallback otherwise, fold `đ` to `d`, and match stable IDs only as identifiers. Added regression coverage for Đoài/doai, Càn versus Cấn, Thuần Càn versus Thuần Cấn, and the requested hexagram/trigram/term/rule IDs.
+**Evidence**: `pnpm --filter @liuyao/knowledge test` passed (41 tests); `pnpm --filter @liuyao/knowledge typecheck` passed.
+**Blockers**: none.
+**Next**: Run the full repository workflow, commit the search fix, and push it to PR #24.
+
+## 2026-09-28 — feat-018 search fixes pushed
+
+**State**: done; PR #24 has the review fixes and is awaiting CI.
+**Done**: Committed and pushed the search normalization, ID matching, regression tests, and matching search-spec clarification to PR #24.
+**Evidence**: `./init.sh` passed on the implementation; knowledge tests passed (41/41), knowledge typecheck passed, and the branch head is `8a9d8b7`. GitHub reports the PR as mergeable; CI for the new head is queued.
+**Blockers**: none; wait for CI completion.
+**Next**: Confirm CI is green, then merge PR #24.
+
+## 2026-09-28 — feat-018 planning
+
+**State**: todo; implementation not started.
+**Done**: Recorded the approved Vietnamese-only product language, no-Han display rule, canonical language spec, and staged implementation plan for web UI and knowledge.
+**Evidence**: `docs/product-specs/vietnamese-language.md`, `features/feat-018.md`, and `docs/plans/feat-018.md`; working tree was clean before these planning changes.
+**Blockers**: The canonical Vietnamese domain glossary requires review before data translation.
+**Next**: Activate feat-018 after confirming feat-012 is done.
+
+## 2026-09-28 — feat-018 activated
+
+**State**: active on `feat/018-vietnamese-language`.
+**Done**: User approved branch-based implementation, a plan-first commit, separate commits per implementation stage, and PR creation after verification. Dependencies are satisfied; plan defines the remaining work and verification gates.
+**Evidence**: `feature_index.json` records feat-018 as the sole active feature; plan is `docs/plans/feat-018.md`.
+**Blockers**: Final Vietnamese Liu Yao terminology requires editorial/source review before bulk catalog translation.
+**Next**: Review Vietnamese reference sources and add the canonical glossary; commit that stage before implementation.
+
+## 2026-09-28 — feat-018 glossary
+
+**State**: active on `feat/018-vietnamese-language`.
+**Done**: Added canonical Vietnamese names for all trigrams and hexagrams, core Liu Yao terms, and source notes before catalog translation.
+**Evidence**: `docs/product-specs/vietnamese-language.md`; names and ordering cross-checked against the Vietnamese Wikipedia hexagram list, and terminology against Vietnamese-language Liu Yao references. Commit: pending.
+**Blockers**: none for the knowledge localization stage.
+**Next**: Commit the glossary, then localize catalog fields and add no-Han contract tests.
+
+## 2026-09-28 — feat-018 knowledge localization
+
+**State**: active on `feat/018-vietnamese-language`.
+**Done**: Localized all knowledge entities, terms, rules, source descriptions, references, and package metadata; removed the Han display field; kept stable IDs and core pair mappings. Added full-catalog CJK, canonical-name, and Vietnamese search assertions.
+**Evidence**: `pnpm --filter @liuyao/knowledge test` (7 files, 41 tests passed); `pnpm --filter @liuyao/knowledge typecheck`; `git diff --check`.
+**Blockers**: none.
+**Next**: Commit the knowledge package stage, then localize the reading and navigation UI.
+
 ## 2026-09-25 — feat-001
 
 **State**: done, pending PR review and merge.

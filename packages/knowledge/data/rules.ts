@@ -6,81 +6,81 @@ export const RULES = [
   {
     id: 'rule-reading-result-fields',
     ruleset: RULESET,
-    title: 'Reading result fields',
+    title: 'Các trường của kết quả gieo quẻ',
     explanation:
-      'The result carries its ruleset, primary and changed figure identifiers, lower and upper trigram identifiers, palace and palace element, and the Shi and Ying positions. These are calculated classifications, not predictions.',
+      'Kết quả gồm mã quy ước tính, mã quẻ chính và quẻ biến, mã nội quái và ngoại quái, cung và ngũ hành của cung, cùng vị trí hào Thế và hào Ứng. Đây là các giá trị phân loại được tính ra, không phải lời dự đoán.',
     category: 'metadata',
   },
   {
     id: 'rule-line-position-order',
     ruleset: RULESET,
-    title: 'Line ordering',
+    title: 'Thứ tự các hào',
     explanation:
-      'The six line records are ordered from the bottom upward and have positions one through six in that order.',
+      'Sáu hào được xếp từ dưới lên; vị trí của chúng lần lượt là một đến sáu theo thứ tự đó.',
     category: 'structure',
   },
   {
     id: 'rule-line-polarity-values',
     ruleset: RULESET,
-    title: 'Line values and polarity',
+    title: 'Giá trị hào và tính âm dương',
     explanation:
-      'Input values six and eight are yin; values seven and nine are yang. The value remains reported for the primary line.',
+      'Giá trị đầu vào 6 và 8 là âm; giá trị 7 và 9 là dương. Kết quả vẫn ghi lại giá trị đầu vào của hào trong quẻ chính.',
     category: 'classification',
   },
   {
     id: 'rule-moving-line-change',
     ruleset: RULESET,
-    title: 'Moving-line change',
+    title: 'Hào động và sự biến đổi',
     explanation:
-      'Values six and nine mark moving lines. Their polarity reverses to form the changed figure; stationary lines retain their polarity. With no moving lines there is no changed-figure identifier.',
+      'Giá trị 6 và 9 đánh dấu hào động. Tính âm dương của các hào này đổi để tạo quẻ biến; hào tĩnh giữ nguyên tính âm dương. Nếu không có hào động thì không có mã quẻ biến.',
     category: 'transformation',
   },
   {
     id: 'rule-trigram-composition',
     ruleset: RULESET,
-    title: 'Trigram composition',
+    title: 'Cấu tạo quẻ từ hai quái',
     explanation:
-      'Lines one through three form the lower trigram and lines four through six form the upper trigram; the pair identifies the primary figure.',
+      'Hào một đến hào ba tạo thành nội quái; hào bốn đến hào sáu tạo thành ngoại quái. Cặp quái này xác định quẻ chính.',
     category: 'structure',
   },
   {
     id: 'rule-palace-and-markers',
     ruleset: RULESET,
-    title: 'Palace and line markers',
+    title: 'Cung và dấu hào',
     explanation:
-      'The primary figure is classified to a palace under this ruleset. Its palace classification supplies one Shi position and one Ying position, reported as bottom-up line numbers.',
+      'Theo quy ước tính này, quẻ chính được xếp vào một cung. Cách phân cung xác định một vị trí hào Thế và một vị trí hào Ứng; các vị trí được ghi bằng số đếm từ dưới lên.',
     category: 'classification',
   },
   {
     id: 'rule-na-jia-assignment',
     ruleset: RULESET,
-    title: 'Na Jia line assignment',
+    title: 'Gán thiên can và địa chi theo Nạp Giáp',
     explanation:
-      'Each primary line receives a stem and branch through the assignment for its trigram side and line position. The first three lines use the lower trigram; the last three use the upper trigram.',
+      'Mỗi hào của quẻ chính được gán thiên can và địa chi theo quái chứa hào đó và vị trí của hào. Ba hào đầu dùng nội quái; ba hào cuối dùng ngoại quái.',
     category: 'classification',
   },
   {
     id: 'rule-branch-element',
     ruleset: RULESET,
-    title: 'Branch element association',
+    title: 'Ngũ hành gắn với địa chi',
     explanation:
-      'The line element is the conventional element associated with its assigned earthly branch: Zi and Hai water; Chou, Chen, Wei, and Xu earth; Yin and Mao wood; Si and Wu fire; Shen and You metal.',
+      'Ngũ hành của hào lấy theo địa chi đã gán: Tý và Hợi thuộc Thủy; Sửu, Thìn, Mùi và Tuất thuộc Thổ; Dần và Mão thuộc Mộc; Tỵ và Ngọ thuộc Hỏa; Thân và Dậu thuộc Kim.',
     category: 'classification',
   },
   {
     id: 'rule-five-element-cycles',
     ruleset: RULESET,
-    title: 'Five-element cycles',
+    title: 'Quan hệ tương sinh và tương khắc của ngũ hành',
     explanation:
-      'The generation sequence is wood, fire, earth, metal, water, then wood. The control sequence is wood controls earth, earth controls water, water controls fire, fire controls metal, and metal controls wood.',
+      'Chiều tương sinh là Mộc sinh Hỏa, Hỏa sinh Thổ, Thổ sinh Kim, Kim sinh Thủy, rồi Thủy sinh Mộc. Chiều tương khắc là Mộc khắc Thổ, Thổ khắc Thủy, Thủy khắc Hỏa, Hỏa khắc Kim, rồi Kim khắc Mộc.',
     category: 'classification',
   },
   {
     id: 'rule-six-relative-classification',
     ruleset: RULESET,
-    title: 'Six Relative classification',
+    title: 'Phân loại Lục thân',
     explanation:
-      'Relative to the palace element: equal is Sibling; palace generates line is Child; palace controls line is Wealth; line controls palace is Official-Ghost; line generates palace is Parent. These are five categories.',
+      'So với ngũ hành của cung: cùng hành là Huynh đệ; cung sinh hào là Tử tôn; cung khắc hào là Thê tài; hào khắc cung là Quan quỷ; hào sinh cung là Phụ mẫu. Bộ phân loại gồm năm loại.',
     category: 'classification',
   },
 ] as const satisfies readonly KnowledgeRule[];

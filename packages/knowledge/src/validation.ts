@@ -93,12 +93,11 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       fail(path, 'expected an object');
     const kind = (raw as Record<string, unknown>).kind;
     if (kind === 'trigram') {
-      const item = record(raw, path, ['kind', 'id', 'name', 'han', 'aliases', 'explanation']);
+      const item = record(raw, path, ['kind', 'id', 'name', 'aliases', 'explanation']);
       if (typeof item.id !== 'string' || !TRIGRAM_IDS.has(item.id as TrigramId))
         fail(`${path}.id`, 'expected a core trigram ID');
       const entityId = register(item.id, path);
       text(item.name, `${path}.name`);
-      text(item.han, `${path}.han`);
       stringArray(item.aliases, `${path}.aliases`);
       text(item.explanation, `${path}.explanation`);
       entityIds.add(entityId);
@@ -108,7 +107,6 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
         'kind',
         'id',
         'name',
-        'han',
         'aliases',
         'explanation',
         'kingWenNumber',
@@ -119,7 +117,6 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
         fail(`${path}.id`, 'expected a core hexagram ID from hexagram-01 through hexagram-64');
       const entityId = register(item.id, path);
       text(item.name, `${path}.name`);
-      text(item.han, `${path}.han`);
       stringArray(item.aliases, `${path}.aliases`);
       text(item.explanation, `${path}.explanation`);
       const kingWenNumber = Number(item.id.slice('hexagram-'.length));

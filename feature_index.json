@@ -117,6 +117,12 @@
       "title": "Pre-flow hardening",
       "status": "done",
       "depends_on": ["feat-001", "feat-002", "feat-003", "feat-004", "feat-005", "feat-006"]
+    },
+    {
+      "id": "feat-018",
+      "title": "Vietnamese product language",
+      "status": "done",
+      "depends_on": ["feat-012"]
     }
   ]
 }

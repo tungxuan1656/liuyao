@@ -19,22 +19,6 @@
 }
 
 @font-face {
-  font-family: 'Noto Serif CJK';
-  src: url('/fonts/noto-serif-cjk-app.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans CJK';
-  src: url('/fonts/noto-sans-cjk-app.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Liuyao Cinzel';
   src: url('/fonts/cinzel-latin.woff2') format('woff2');
   font-style: normal;
@@ -44,8 +28,8 @@
 }
 
 @theme inline {
-  --font-sans: 'Noto Sans', 'Noto Sans CJK', sans-serif;
-  --font-serif: 'Noto Serif', 'Noto Serif CJK', serif;
+  --font-sans: 'Noto Sans', sans-serif;
+  --font-serif: 'Noto Serif', serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

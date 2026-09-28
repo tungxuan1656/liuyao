@@ -84,7 +84,6 @@ export interface TrigramEntity {
   readonly kind: 'trigram';
   readonly id: TrigramId;
   readonly name: string;
-  readonly han: string;
   readonly aliases: readonly string[];
   readonly explanation: string;
 }
@@ -93,7 +92,6 @@ export interface HexagramEntity {
   readonly kind: 'hexagram';
   readonly id: HexagramId;
   readonly name: string;
-  readonly han: string;
   readonly aliases: readonly string[];
   readonly explanation: string;
   readonly kingWenNumber: number;

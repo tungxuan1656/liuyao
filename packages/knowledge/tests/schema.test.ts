@@ -8,18 +8,16 @@ function validCatalog(): KnowledgeCatalog {
       {
         kind: 'trigram',
         id: 'trigram-heaven',
-        name: 'Qian',
-        han: '乾',
-        aliases: ['Heaven'],
-        explanation: 'Three yang lines represent Heaven.',
+        name: 'Càn',
+        aliases: [],
+        explanation: 'Quái có ba hào dương, tượng trưng cho trời.',
       },
       {
         kind: 'hexagram',
         id: 'hexagram-01',
-        name: 'Qian',
-        han: '乾',
+        name: 'Thuần Càn',
         aliases: [],
-        explanation: 'Upper Heaven over lower Heaven.',
+        explanation: 'Nội quái Càn và ngoại quái Càn.',
         kingWenNumber: 1,
         upperTrigramId: 'trigram-heaven',
         lowerTrigramId: 'trigram-heaven',
@@ -28,28 +26,28 @@ function validCatalog(): KnowledgeCatalog {
     terms: [
       {
         id: 'term-yin-yang',
-        name: 'Yin and yang',
-        aliases: ['yin-yang'],
-        definition: 'Two complementary qualities.',
+        name: 'Âm dương',
+        aliases: [],
+        definition: 'Hai tính đối đãi được dùng để mô tả các hào.',
       },
     ],
     rules: [
       {
         id: 'rule-lines-bottom-to-top',
         ruleset: 'liuyao-standard-v1',
-        title: 'Line order',
-        explanation: 'Lines are read from bottom to top.',
+        title: 'Thứ tự các hào',
+        explanation: 'Các hào được đọc từ dưới lên.',
         category: 'structure',
       },
     ],
     sources: [
       {
         id: 'source-classic',
-        title: 'Classic',
-        author: 'Author',
-        publication: 'Edition',
-        rights: 'Public domain',
-        provenance: 'Cataloged from the edition.',
+        title: 'Kinh điển',
+        author: 'Tác giả',
+        publication: 'Ấn bản',
+        rights: 'Thuộc phạm vi công cộng',
+        provenance: 'Thông tin được ghi nhận từ ấn bản.',
       },
     ],
     references: [
@@ -76,10 +74,10 @@ describe('knowledge schema and validation', () => {
       { ...validCatalog(), entities: [{ kind: 'trigram', id: 'trigram-heaven', aliases: [] }] },
     ],
     [
-      'missing Han character field',
+      'unexpected Han character field',
       {
         ...validCatalog(),
-        entities: [{ kind: 'trigram', id: 'trigram-heaven', name: 'Qian', aliases: [] }],
+        entities: [{ ...validCatalog().entities[0], han: '乾' }],
       },
     ],
     [
@@ -90,9 +88,8 @@ describe('knowledge schema and validation', () => {
           {
             kind: 'trigram',
             id: 'trigram-heaven',
-            name: 'Qian',
-            han: '乾',
-            aliases: ['Heaven'],
+            name: 'Càn',
+            aliases: [],
           },
         ],
       },

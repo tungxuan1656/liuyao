@@ -102,11 +102,11 @@ export function ResultView() {
   if (!reading)
     return (
       <main className="result-empty">
-        <p className="result-kicker">No active result</p>
-        <h1>Start with a reading</h1>
-        <p>Your completed reading is held in memory for this browser session.</p>
+        <p className="result-kicker">Chưa có kết quả</p>
+        <h1>Bắt đầu bằng cách gieo quẻ</h1>
+        <p>Quẻ đã hoàn tất chỉ được giữ trong bộ nhớ của phiên trình duyệt này.</p>
         <Link className="result-primary-link" to={ROUTES.home}>
-          Return to Reading
+          Quay lại trang gieo quẻ
         </Link>
       </main>
     );
@@ -122,15 +122,16 @@ export function ResultView() {
     <main className="result-page">
       <header className="result-header">
         <div>
-          <p className="result-kicker">Reading result · {reading.result.ruleset}</p>
-          <h1>{reading.question || 'Untitled reading'}</h1>
+          <p className="result-kicker">
+            Kết quả gieo quẻ · Mã quy ước tính: {reading.result.ruleset}
+          </p>
+          <h1>{reading.question || 'Quẻ chưa đặt tên'}</h1>
           <p className="result-session-note">
-            Facts calculated from your six lines. This reading stays in memory for this session
-            only.
+            Các dữ kiện được tính từ sáu hào. Quẻ này chỉ được giữ trong bộ nhớ của phiên hiện tại.
           </p>
         </div>
         <Link to={ROUTES.home} className="result-back-link">
-          Reading setup
+          Trang gieo quẻ
         </Link>
       </header>
       <div className="result-layout">
@@ -138,7 +139,7 @@ export function ResultView() {
           <FactButton
             fact={{
               id: 'result.primaryHexagramId',
-              label: 'Primary hexagram',
+              label: 'Quẻ chính',
               value: hexagramLabel(reading.result.primaryHexagramId),
             }}
             onSelect={selectFact}
@@ -157,18 +158,16 @@ export function ResultView() {
               />
             ) : reading.result.changedHexagramId ? (
               <p className="no-change-note" role="status">
-                Changed hexagram details are unavailable.
+                Không có thông tin về quẻ biến.
               </p>
             ) : (
-              <p className="no-change-note">
-                No moving lines. This reading has no changed hexagram.
-              </p>
+              <p className="no-change-note">Không có hào động nên quẻ này không có quẻ biến.</p>
             )}
           </div>
           <section className="line-facts" aria-labelledby="line-facts-heading">
             <div className="line-facts-heading">
-              <h2 id="line-facts-heading">Line facts</h2>
-              <span>Sixth line at top</span>
+              <h2 id="line-facts-heading">Thông tin các hào</h2>
+              <span>Hào sáu ở trên</span>
             </div>
             {[...reading.result.lines].reverse().map(line => (
               <div className="line-fact-row" key={line.position}>
@@ -176,9 +175,9 @@ export function ResultView() {
                   {line.position}
                   <small>
                     {line.position === reading.result.shiPosition
-                      ? 'Shi'
+                      ? 'Thế'
                       : line.position === reading.result.yingPosition
-                        ? 'Ying'
+                        ? 'Ứng'
                         : ''}
                   </small>
                 </span>
@@ -186,42 +185,46 @@ export function ResultView() {
                 <FactButton
                   fact={{
                     id: 'line.naJiaStem',
-                    label: 'Na Jia',
+                    label: 'Nạp Giáp',
                     value: `${stemName(line.naJiaStem)} ${branchName(line.naJiaBranch)}`,
                   }}
                   onSelect={selectFact}
                 />
                 <FactButton
-                  fact={{ id: 'line.element', label: 'Element', value: elementName(line.element) }}
+                  fact={{ id: 'line.element', label: 'Ngũ hành', value: elementName(line.element) }}
                   onSelect={selectFact}
                 />
                 <FactButton
                   fact={{
                     id: 'line.relative',
-                    label: 'Relative',
+                    label: 'Lục thân',
                     value: relativeName(line.relative),
                   }}
                   onSelect={selectFact}
                 />
                 <span className="line-input-value">
                   {line.inputValue}
-                  {line.changing ? ' · moving' : ''}
-                  {line.changing && <small> → {line.polarity === 'yin' ? 'Yang' : 'Yin'}</small>}
+                  {line.changing ? ' · động' : ''}
+                  {line.changing && <small> → {line.polarity === 'yin' ? 'Dương' : 'Âm'}</small>}
                 </span>
               </div>
             ))}
           </section>
         </div>
-        <aside className="wide-inspector" aria-label="Fact inspector">
+        <aside className="wide-inspector" aria-label="Giải thích dữ kiện">
           {selectedFact ? (
             <FactInspector fact={selectedFact} close={closeInspector} />
           ) : (
             <div className="inspector-prompt">
-              <p className="result-kicker">Fact inspector</p>
-              <h2>Explore a result fact</h2>
-              <p>Select any underlined fact to see its rule and source references.</p>
+              <p className="result-kicker">Giải thích dữ kiện</p>
+              <h2>Khám phá dữ kiện của kết quả</h2>
+              <p>Chọn dữ kiện được gạch chân để xem quy tắc và nguồn tham khảo.</p>
               <FactButton
-                fact={{ id: 'result.ruleset', label: 'Ruleset', value: reading.result.ruleset }}
+                fact={{
+                  id: 'result.ruleset',
+                  label: 'Quy ước tính',
+                  value: reading.result.ruleset,
+                }}
                 onSelect={selectFact}
               />
             </div>
@@ -241,7 +244,7 @@ export function ResultView() {
             className="fact-drawer"
             role="dialog"
             aria-modal="true"
-            aria-label={`${selectedFact.label} fact details`}
+            aria-label={`Chi tiết dữ kiện: ${selectedFact.label}`}
             tabIndex={-1}
           >
             <FactInspector

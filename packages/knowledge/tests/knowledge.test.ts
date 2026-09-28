@@ -8,7 +8,7 @@ describe('@liuyao/knowledge', () => {
 
   it('returns valid knowledge metadata', () => {
     const meta = getKnowledgeMetadata();
-    expect(meta.name).toContain('LiuYao');
+    expect(meta.name).toContain('Lục Hào');
     expect(meta.sourceCount).toBeGreaterThan(0);
   });
 });

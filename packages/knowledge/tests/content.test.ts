@@ -110,6 +110,72 @@ describe('curated V1 content', () => {
     );
 
     expect(entities).toHaveLength(72);
+    expect(HEXAGRAMS.map(({ name }) => name)).toEqual([
+      'Thuần Càn',
+      'Thuần Khôn',
+      'Thủy Lôi Truân',
+      'Sơn Thủy Mông',
+      'Thủy Thiên Nhu',
+      'Thiên Thủy Tụng',
+      'Địa Thủy Sư',
+      'Thủy Địa Tỷ',
+      'Phong Thiên Tiểu Súc',
+      'Thiên Trạch Lý',
+      'Địa Thiên Thái',
+      'Thiên Địa Bĩ',
+      'Thiên Hỏa Đồng Nhân',
+      'Hỏa Thiên Đại Hữu',
+      'Địa Sơn Khiêm',
+      'Lôi Địa Dự',
+      'Trạch Lôi Tùy',
+      'Sơn Phong Cổ',
+      'Địa Trạch Lâm',
+      'Phong Địa Quan',
+      'Hỏa Lôi Phệ Hạp',
+      'Sơn Hỏa Bí',
+      'Sơn Địa Bác',
+      'Địa Lôi Phục',
+      'Thiên Lôi Vô Vọng',
+      'Thiên Sơn Đại Súc',
+      'Sơn Lôi Di',
+      'Trạch Phong Đại Quá',
+      'Thuần Khảm',
+      'Thuần Ly',
+      'Trạch Sơn Hàm',
+      'Lôi Phong Hằng',
+      'Thiên Sơn Độn',
+      'Lôi Thiên Đại Tráng',
+      'Hỏa Địa Tấn',
+      'Địa Hỏa Minh Di',
+      'Phong Hỏa Gia Nhân',
+      'Hỏa Trạch Khuê',
+      'Thủy Sơn Kiển',
+      'Lôi Thủy Giải',
+      'Sơn Trạch Tổn',
+      'Phong Lôi Ích',
+      'Trạch Thiên Quải',
+      'Thiên Phong Cấu',
+      'Trạch Địa Tụy',
+      'Địa Phong Thăng',
+      'Trạch Thủy Khốn',
+      'Thủy Phong Tỉnh',
+      'Trạch Hỏa Cách',
+      'Hỏa Phong Đỉnh',
+      'Thuần Chấn',
+      'Thuần Cấn',
+      'Phong Sơn Tiệm',
+      'Lôi Trạch Quy Muội',
+      'Lôi Hỏa Phong',
+      'Hỏa Sơn Lữ',
+      'Thuần Tốn',
+      'Thuần Đoài',
+      'Phong Thủy Hoán',
+      'Thủy Trạch Tiết',
+      'Phong Trạch Trung Phu',
+      'Lôi Sơn Tiểu Quá',
+      'Thủy Hỏa Ký Tế',
+      'Hỏa Thủy Vị Tế',
+    ]);
     for (const entity of entities) expect(entity.explanation.trim(), entity.id).not.toBe('');
     for (const rule of RULES) {
       expect(categories, rule.id).toContain(rule.category);
@@ -145,7 +211,7 @@ describe('curated V1 content', () => {
     }
     const parent = TERMS.find(({ id }) => id === 'term-relative-parent');
     expect(parent?.definition).toBe(
-      'Six Relative assigned when the line element generates the palace element.',
+      'Loại Lục thân được gán khi ngũ hành của hào sinh ngũ hành của cung.',
     );
   });
 
@@ -168,14 +234,16 @@ describe('curated V1 content', () => {
       'https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93',
     );
     expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.author).toBe(
-      'Yehe Laoren (野鶴老人), as catalogued by Chinese Text Project; later transmission/editing is associated with Li Wenhui (李文輝).',
+      'Dự án Văn bản Trung Hoa ghi tác giả là Dã Hạc Lão Nhân; quá trình truyền bản và biên tập về sau có liên hệ với Lý Văn Huy.',
     );
     expect(SOURCES.find(({ id }) => id === 'source-zengshan-buyi')?.provenance).toContain(
       'https://ctext.org/wiki.pl?if=en&res=497805',
     );
-    expect(SOURCES.find(({ id }) => id === 'source-liuyao-v1-contract')?.provenance).toContain(
-      'packages/liuyao-core/src/contracts.ts',
-    );
+    const projectContract = SOURCES.find(({ id }) => id === 'source-liuyao-v1-contract');
+    expect(projectContract?.provenance).toContain('packages/liuyao-core/src/contracts.ts');
+    expect(projectContract?.provenance).toContain('calculation.ts');
+    expect(projectContract?.provenance).toContain('board.ts');
+    expect(projectContract?.rights).toContain('AGPL-3.0-only');
     for (const reference of REFERENCES) {
       expect(sourceIds, reference.id).toContain(reference.sourceId);
       expect(reference.targetIds.length, reference.id).toBeGreaterThan(0);
@@ -199,8 +267,7 @@ describe('curated V1 content', () => {
       id: 'reference-zhouyi-trigram-associations',
       sourceId: 'source-zhouyi',
       targetIds: ['term-trigram'],
-      location:
-        'Shuo Gua（說卦傳），discussion of the eight trigrams and their associated qualities。',
+      location: 'Thiên Thuyết Quái, phần bàn về tám quái và các thuộc tính gắn với chúng.',
     });
     expect(REFERENCES.every(({ location }) => location && location.trim().length > 0)).toBe(true);
   });

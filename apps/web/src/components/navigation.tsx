@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { ROUTES } from '../route-paths';
 
 const destinations = [
-  { label: 'Reading', path: ROUTES.home, icon: '☯' },
-  { label: 'Library', path: ROUTES.library, icon: '▤' },
-  { label: 'Settings', path: ROUTES.settings, icon: '⚙' },
+  { label: 'Gieo quẻ', path: ROUTES.home, icon: '⌂' },
+  { label: 'Thư viện', path: ROUTES.library, icon: '▤' },
+  { label: 'Cài đặt', path: ROUTES.settings, icon: '⚙' },
 ] as const;
 
 function isCurrentDestination(pathname: string, path: string) {
@@ -29,10 +29,10 @@ export function Navigation() {
   }, []);
 
   return (
-    <nav className="app-navigation" aria-label="Main navigation">
-      <Link className="app-brand" to={ROUTES.home} aria-label="Lục Hào home">
+    <nav className="app-navigation" aria-label="Điều hướng chính">
+      <Link className="app-brand" to={ROUTES.home} aria-label="Trang chủ Lục Hào">
         <span className="app-brand-mark" aria-hidden="true">
-          六
+          <span aria-hidden="true">☯</span>
         </span>
         <span>Lục Hào</span>
       </Link>
@@ -56,7 +56,7 @@ export function Navigation() {
       </div>
       <span className={`app-network-status${online ? ' is-online' : ' is-offline'}`} role="status">
         <span className="app-network-indicator" aria-hidden="true" />
-        {online ? 'Online' : 'Offline'}
+        {online ? 'Có mạng' : 'Ngoại tuyến'}
       </span>
     </nav>
   );

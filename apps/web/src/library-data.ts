@@ -14,10 +14,10 @@ import { ROUTES } from './route-paths';
 
 export type Category = 'hexagrams' | 'trigrams' | 'terms' | 'rules';
 export const categories: readonly { id: Category; label: string }[] = [
-  { id: 'hexagrams', label: 'Hexagrams' },
-  { id: 'trigrams', label: 'Trigrams' },
-  { id: 'terms', label: 'Terms' },
-  { id: 'rules', label: 'Rules' },
+  { id: 'hexagrams', label: 'Quẻ' },
+  { id: 'trigrams', label: 'Quái' },
+  { id: 'terms', label: 'Thuật ngữ' },
+  { id: 'rules', label: 'Quy tắc' },
 ];
 export const ruleCategories = [
   'all',

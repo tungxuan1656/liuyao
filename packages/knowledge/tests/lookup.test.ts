@@ -54,7 +54,7 @@ describe('knowledge catalog lookup', () => {
     expect(() => (list as unknown as unknown[]).push(trigram)).toThrow();
     expect(() => (trigram.aliases as unknown as string[]).push('mutable')).toThrow();
     expect(() => Object.assign(trigram, { name: 'changed' })).toThrow();
-    expect(getTrigram('trigram-heaven')?.name).toBe('Qian');
+    expect(getTrigram('trigram-heaven')?.name).toBe('Càn');
   });
 
   it('deep-freezes the exported catalog and its nested records', () => {
@@ -69,6 +69,6 @@ describe('knowledge catalog lookup', () => {
       (knowledgeCatalog.entities[0]?.aliases as unknown as string[]).push('mutable'),
     ).toThrow();
     expect(() => Object.assign(knowledgeCatalog.entities[0]!, { name: 'changed' })).toThrow();
-    expect(getTrigram('trigram-heaven')?.name).toBe('Qian');
+    expect(getTrigram('trigram-heaven')?.name).toBe('Càn');
   });
 });

@@ -2,6 +2,8 @@
 
 This document owns the V1 user interface layout, information architecture, navigation hierarchy, responsive breakpoints, design tokens, component selection, and desktop/mobile adaptation for `apps/web`.
 
+The interface uses Vietnamese labels. Any English interface labels in this document are semantic placeholders, not approved user-facing copy. See `vietnamese-language.md` for canonical terminology.
+
 Domain behaviors, input validation, result content, reference data schemas, and diagnostics content are owned by their respective canonical documents (`reading-flow.md`, `reading-result.md`, `knowledge-browser.md`, `settings.md`). This document specifies only how those capabilities are presented and composed responsively.
 
 ---
@@ -16,19 +18,15 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 
 ### Typography
 
-- **Headings & Hexagram Names**: `Noto Serif` (`font-serif`).
-  - Provides full, balanced diacritics coverage for Vietnamese titles (e.g., _Thuần Càn_, _Thiên Phong Cấu_, _Hỏa Thiên Đại Hữu_) without glyph clipping or mismatched font fallbacks.
-- **Body, Data, & Form Controls**: `Noto Sans` (`font-sans`).
-  - Provides crisp, neutral legibility for line details, glossary terms, rule explanations, and UI controls.
-- **Han Characters (Hán tự)**:
-  - Explicit fallback: `Noto Serif CJK` for headings and `Noto Sans CJK` for body/data.
-  - Ensures glyphs such as 乾, 坤, 震, 巽, 坎, 離, 艮, 兌 render harmoniously without falling back to system OS default fonts.
+- **Headings & Hexagram Names**: `Noto Serif` (`font-serif`) with complete Vietnamese diacritic coverage.
+- **Body, Data, & Form Controls**: `Noto Sans` (`font-sans`) with complete Vietnamese diacritic coverage.
+- **Language**: Render Vietnamese only. Do not add Han-character text or a CJK font fallback for knowledge content; see `vietnamese-language.md`.
 - **Brand / Decorative Latin Text**:
   - `Cinzel` is restricted exclusively to the Latin-only logo mark, brand title, and decorative Roman numbers. It must not be used for general Vietnamese headings.
 - **Font Delivery & Offline Requirement**:
   - All fonts must be bundled and self-hosted locally within the application distribution.
   - No external Google Fonts, CDN links, or remote network requests are allowed at runtime.
-  - Production font payload must be audited with documented CJK subsetting to keep bundle sizes within offline constraints.
+  - Keep only the locally bundled fonts required for the Vietnamese interface. Do not bundle CJK-only fonts.
 
 ### Yao line symbol rendering
 
@@ -46,17 +44,17 @@ The application organizes all product views into three distinct architectural le
 
 ```text
 Level 0: Root Destinations (Bottom Nav on Mobile / Top Nav on Desktop)
-├── Tab 1: Reading (Active Session)  ──> Path: /
-├── Tab 2: Library (Reference Hub)   ──> Path: /library
-└── Tab 3: Settings (Diagnostics)    ──> Path: /settings
+├── Tab 1: Gieo quẻ (Phiên hiện tại) ──> Path: /
+├── Tab 2: Thư viện (Tra cứu)         ──> Path: /library
+└── Tab 3: Cài đặt (Chẩn đoán)        ──> Path: /settings
 
 Level 1: Sub-Pages (Deep Reference Browsing)
-└── Library Detail (Entity/Rule)     ──> Path: /library/:entityType/:id
-    (Root navigation remains visible; Top Bar displays [ < Back to Library ])
+└── Chi tiết thư viện (mục/quy tắc)  ──> Path: /library/:entityType/:id
+    (Giữ điều hướng gốc; thanh trên cùng hiển thị [ < Quay lại thư viện ])
 
-Level 2: Focused Flows (Modal Input Session)
-└── Reading Input Flow               ──> Path: /casting
-    (Root navigation is strictly HIDDEN; Top Bar displays [ Cancel / Exit ])
+Level 2: Luồng tập trung (Phiên nhập liệu)
+└── Luồng lập quẻ                    ──> Path: /casting
+    (Ẩn điều hướng gốc; thanh trên cùng hiển thị [ Hủy ])
 ```
 
 ---
@@ -72,28 +70,28 @@ Root destinations represent persistent, top-level hubs:
   - **Top Nav (`>= 768px`)**: Fixed Top Header Navigation Bar (`h-14 border-b bg-background/95 backdrop-blur z-50`).
     - Placed horizontally with brand mark on the left, tab links in the center/right, and network status badge.
 - **State preservation across root tabs**:
-  - Switching between root destinations (Reading, Library, Settings) must not destroy an active completed reading.
-  - An active reading result is preserved in browser memory across tab switches until the user explicitly triggers `[ New Reading ]` or reloads the application.
+  - Switching between root destinations (Gieo quẻ, Thư viện, Cài đặt) must not destroy an active completed reading.
+  - An active reading result is preserved in browser memory across tab switches until the user explicitly triggers `[ Lập quẻ mới ]` or reloads the application.
 
-#### 1. Tab 1: Reading (`/`)
+#### 1. Tab 1: Gieo quẻ (`/`)
 
 Represents the primary divination workspace. Follows states defined in `reading-flow.md` and `reading-result.md`:
 
-- **Reading entry state** (when no calculated reading exists in memory):
-  - Displays optional question input, casting method selector (Automatic, Manual, Direct), and primary CTA: `[ Start Casting ]` $\rightarrow$ navigates to Level 2 (`/casting`).
-- **Reading result state** (when active calculated reading exists in memory):
+- **Trạng thái bắt đầu gieo quẻ** (khi chưa có kết quả trong bộ nhớ):
+  - Hiển thị ô nhập câu hỏi không bắt buộc, lựa chọn phương pháp (Gieo tự động, Gieo thủ công, Nhập trực tiếp) và nút `[ Bắt đầu gieo quẻ ]` để mở luồng `/casting`.
+- **Trạng thái kết quả** (khi có quẻ đã tính trong bộ nhớ):
   - Displays the full Hexagram Result Board (see Result Layout below).
-  - Header displays a clear `[ New Reading ]` action. Clicking it triggers an `AlertDialog` confirming draft replacement before wiping in-memory state.
+  - Phần đầu trang hiển thị nút `[ Lập quẻ mới ]`. Nút này mở hộp thoại xác nhận trước khi thay quẻ trong bộ nhớ.
 
-#### 2. Tab 2: Library (`/library`)
+#### 2. Tab 2: Thư viện (`/library`)
 
 The read-only knowledge reference hub (behavior defined in `knowledge-browser.md`):
 
-- Local search input matching Vietnamese names, Hanzi, and romanized aliases.
-- Category navigation using shadcn `Tabs`: _64 Hexagrams_ | _8 Trigrams_ | _Terms_ | _Rules_.
+- Local search input matching canonical Vietnamese names and reviewed Vietnamese aliases.
+- Điều hướng danh mục bằng `Tabs`: _Quẻ_ | _Quái_ | _Thuật ngữ_ | _Quy tắc_.
 - Grid/list of reference cards. Tapping any card opens its Level 1 Sub-Page.
 
-#### 3. Tab 3: Settings (`/settings`)
+#### 3. Tab 3: Cài đặt (`/settings`)
 
 Diagnostics and system state (content defined in `settings.md`):
 
@@ -104,40 +102,40 @@ Diagnostics and system state (content defined in `settings.md`):
 
 ---
 
-### Level 1 — Sub-pages (Browse details)
+### Level 1 — Trang con (Tra cứu chi tiết)
 
-- Used for exploring individual hexagrams, trigrams, terms, and rule definitions from the Library.
+- Dùng để tra cứu từng quẻ, quái, thuật ngữ và định nghĩa quy tắc trong Thư viện.
 - **Navigation state**:
   - The Bottom Navigation Bar **remains visible** on mobile so users can switch tabs at any time.
-  - The top bar provides an explicit `[ < Back to Library ]` button.
+  - Thanh trên cùng có nút `[ Quay lại thư viện ]`.
   - Supports deep-linking, browser history navigation, and direct route reloads.
 
 ---
 
-### Level 2 — Focused flow: Reading input (`/casting`)
+### Level 2 — Luồng tập trung: Nhập hào (`/casting`)
 
 Used during active line input before calculation. Governed by the rules in `reading-flow.md`:
 
 - **Navigation state**:
   - The primary Root Navigation (Bottom Nav) is **strictly hidden** to eliminate distraction and prevent accidental draft loss.
-  - Top bar provides an explicit `[ Cancel ]` button and input status indicator.
+  - Thanh trên cùng có nút `[ Hủy ]` và trạng thái nhập liệu.
 - **Input modes**:
   - **Sequential mode (Manual casting & Automatic coin casting)**:
-    - Step indicator: `Line 1 of 6` through `Line 6 of 6`.
+    - Chỉ báo bước: `Hào 1 trên 6` đến `Hào 6 trên 6`.
     - Bottom-to-top sequence.
-    - Provides a `[ < Back ]` button to return to the previous line without clearing prior lines.
+    - Có nút `[ Quay lại ]` để về hào trước mà không xóa dữ liệu đã nhập.
   - **Direct-entry mode**:
     - All 6 line positions are visible simultaneously on one screen.
     - Presented visually in board orientation from Line 6 (top) down to Line 1 (bottom), while keeping canonical domain state in bottom-to-top order (1 to 6).
-    - Primary CTA: `[ Calculate ]` (disabled until all 6 positions contain valid `6..9` values).
+    - Nút chính `[ Tính quẻ ]` bị vô hiệu hóa cho đến khi cả sáu vị trí có giá trị hợp lệ từ `6` đến `9`.
 - **Navigation safety semantics**:
-  - **Back**: Returns to the previous input step within the sequential flow; preserves all entered lines.
-  - **Reset**: Clears all entered lines while remaining inside the current casting mode.
-  - **Cancel / Exit**: Discards active input lines and returns to the Reading destination (`/`). When entered lines exist, clicking `[ Cancel ]` triggers an `AlertDialog`: _"Discard active lines and return to reading setup?"_.
+  - **Quay lại**: Về bước nhập trước trong luồng tuần tự và giữ các hào đã nhập.
+  - **Xóa các hào**: Xóa toàn bộ hào đã nhập nhưng giữ nguyên phương pháp lập quẻ.
+  - **Hủy / Rời đi**: Bỏ dữ liệu hào đang nhập và về trang gieo quẻ (`/`). Nếu đã nhập hào, nút `[ Hủy ]` mở hộp thoại: _"Bỏ các hào đang nhập và quay lại trang gieo quẻ?"_.
   - **Navigation Protection**:
-    - _Internal SPA navigation_: Intercept any route change away from `/casting` while lines are entered and prompt via `AlertDialog`.
-    - _Browser unload / refresh_: Attach a browser-native `beforeunload` listener while lines are entered to prompt confirmation on tab close or page reload when supported.
-  - Upon completing line 6 (or clicking Calculate in direct mode), the engine calculates the reading and navigates to the Reading destination (`/`) in its Result state.
+    - _Điều hướng trong ứng dụng_: Chặn chuyển khỏi `/casting` khi đã nhập hào và yêu cầu xác nhận.
+    - _Đóng hoặc tải lại trình duyệt_: Dùng sự kiện `beforeunload` khi đã nhập hào để yêu cầu xác nhận nếu trình duyệt hỗ trợ.
+  - Khi hoàn tất hào sáu hoặc chọn `[ Tính quẻ ]` ở chế độ nhập trực tiếp, ứng dụng tính quẻ và mở kết quả tại `/`.
 
 ---
 
@@ -162,19 +160,19 @@ The result view presents deterministic facts separated from explanatory prose, m
 
 - **Left pane (7 / 12 columns) — Hexagram Board**:
   - **Hexagram summary header**:
-    - Primary Hexagram name (`Noto Serif`), Upper Trigram name/symbol, Lower Trigram name/symbol.
-    - Eight Palace identity and Palace Five Element.
-    - Changed Hexagram name, Upper Trigram, Lower Trigram (rendered only when moving lines exist; omitted entirely when all lines are static).
+    - Tên Quẻ chính (`Noto Serif`), tên Ngoại quái và Nội quái.
+    - Tên Cung và Ngũ hành của cung.
+    - Tên Quẻ biến, Ngoại quái và Nội quái khi có hào động. Không hiển thị quẻ biến nếu không có hào động.
   - **6-Line Board**:
-    - Stacked vertically from Line 6 (top) down to Line 1 (bottom).
+    - Xếp dọc từ Hào sáu ở trên đến Hào một ở dưới.
     - Each line row displays:
-      - Line position number (`6` to `1`).
-      - Visual Yin/Yang bar glyph (`<YaoSymbol>`).
-      - Moving line indicator: `✕` (6 / Old Yin) or `○` (9 / Old Yang) with direction arrow to changed polarity.
-      - Na Jia Heavenly Stem & Earthly Branch.
-      - Branch Five Element.
-      - Six Relative badge (e.g., _Parent_, _Officer/Ghost_).
-      - Shi (Self) or Ying (Other) marker badge.
+      - Vị trí hào từ `6` đến `1`.
+      - Ký hiệu âm/dương qua `<YaoSymbol>`.
+      - Dấu hào động: `✕` cho giá trị `6` hoặc `○` cho giá trị `9`, cùng mũi tên chỉ âm dương sau biến đổi.
+      - Thiên can và địa chi theo phép Nạp Giáp.
+      - Ngũ hành của địa chi.
+      - Nhãn Lục thân: Huynh đệ, Tử tôn, Thê tài, Quan quỷ hoặc Phụ mẫu.
+      - Dấu hào Thế hoặc hào Ứng.
 - **Right pane (5 / 12 columns) — Fact Inspector Panel**:
   - Sticky container (`<FactInspector>`).
   - Displays the documented, ruleset-backed explanation and source reference for the currently selected item.
@@ -182,19 +180,19 @@ The result view presents deterministic facts separated from explanatory prose, m
     - **Click / Tap / Keyboard Enter**: Selects the fact and makes it persistently active in the inspector.
     - **Keyboard Tab / Focus**: Focuses the line or fact badge; pressing Enter/Space selects it.
     - **Hover**: Optional transient preview; does not override an explicitly clicked/selected fact.
-  - Action footer: includes `[ View in Library ]` linking to canonical Level 1 reference for deeper reading.
+  - Chân trang có nút `[ Xem trong thư viện ]` để mở mục tra cứu tương ứng.
 
 #### 2. Single-pane result layout (`< 1024px` Board + Adaptive Drawer):
 
 - **Main viewport**:
-  - Displays the full-width Hexagram Board with compact rows and clear Upper/Lower Trigram headers.
+  - Hiển thị bảng quẻ toàn chiều rộng với hàng gọn và nhãn Nội quái/Ngoại quái rõ ràng.
   - Minimum touch target height for each line row is `48px`.
 - **Fact inspection via Drawer**:
   - Tapping any line row or badge opens a bottom-anchored `Drawer`.
   - Displays the exact same documented explanation and source reference as the desktop panel.
   - **Dismissal requirements**:
     - Downward drag/swipe gesture.
-    - Explicit, visible `[ Close ]` button with `aria-label="Close fact details"`.
+    - Nút `[ Đóng ]` hiển thị rõ với `aria-label="Đóng phần giải thích dữ kiện"`.
     - `Escape` key press.
     - Proper focus trapping inside the drawer while open, restoring focus to the triggering element upon close.
 

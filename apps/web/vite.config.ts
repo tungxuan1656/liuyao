@@ -30,9 +30,10 @@ export default defineConfig({
       injectRegister: null,
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'LiuYao - Lục Hào',
-        short_name: 'LiuYao',
-        description: 'Liu Yao / I Ching Divination Application',
+        lang: 'vi',
+        name: 'Lục Hào',
+        short_name: 'Lục Hào',
+        description: 'Ứng dụng Lục Hào lập quẻ và tra cứu quy tắc tính toán.',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',

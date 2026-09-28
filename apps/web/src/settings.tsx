@@ -74,7 +74,7 @@ export function SettingsPage() {
     await installPrompt.prompt();
     const choice = await installPrompt.userChoice;
     setInstallMessage(
-      choice.outcome === 'accepted' ? 'Installation started.' : 'Installation was not started.',
+      choice.outcome === 'accepted' ? 'Đã bắt đầu cài đặt.' : 'Chưa bắt đầu cài đặt.',
     );
     setInstallPrompt(null);
   }
@@ -82,9 +82,9 @@ export function SettingsPage() {
   return (
     <main className="settings-page">
       <header className="settings-heading">
-        <p className="settings-kicker">Lục Hào / App details</p>
-        <h1>Settings</h1>
-        <p>Check this app’s versions, connection, and fixed reading conventions.</p>
+        <p className="settings-kicker">Lục Hào / Thông tin ứng dụng</p>
+        <h1>Cài đặt</h1>
+        <p>Xem phiên bản ứng dụng, trạng thái kết nối và quy ước gieo quẻ cố định.</p>
       </header>
 
       <section className="settings-section" aria-labelledby="settings-system-heading">
@@ -93,64 +93,64 @@ export function SettingsPage() {
             className={`settings-orbit${online === false ? ' is-offline' : ''}`}
             aria-hidden="true"
           >
-            六
+            ☯
           </span>
           <div>
-            <h2 id="settings-system-heading">System status</h2>
-            <p>Signals reported by this browser and app.</p>
+            <h2 id="settings-system-heading">Trạng thái hệ thống</h2>
+            <p>Thông tin do trình duyệt và ứng dụng báo cáo.</p>
           </div>
         </div>
         <dl className="settings-facts">
           <div>
-            <dt>Connection</dt>
+            <dt>Kết nối</dt>
             <dd>
               {online === null ? (
-                'Not reported by this browser'
+                'Trình duyệt chưa báo cáo'
               ) : (
                 <span className={`settings-state${online ? ' is-ready' : ' is-waiting'}`}>
                   <i aria-hidden="true" />
-                  {online ? 'Online' : 'Offline'}
+                  {online ? 'Có mạng' : 'Ngoại tuyến'}
                 </span>
               )}
             </dd>
           </div>
           <div>
-            <dt>Installation</dt>
+            <dt>Cài đặt ứng dụng</dt>
             <dd>
               {installed
-                ? 'Installed on this device'
+                ? 'Đã cài trên thiết bị này'
                 : installSupported === true
-                  ? 'Available'
+                  ? 'Có thể cài đặt'
                   : installSupported === false
-                    ? 'Install prompt unavailable'
-                    : 'Install availability not reported'}
+                    ? 'Không có lời nhắc cài đặt'
+                    : 'Chưa có thông tin về khả năng cài đặt'}
             </dd>
           </div>
           <div>
-            <dt>App update</dt>
+            <dt>Cập nhật ứng dụng</dt>
             <dd>
               {updateStatus === 'checking'
-                ? 'Checking existing registration…'
+                ? 'Đang kiểm tra đăng ký hiện có…'
                 : updateStatus === 'unsupported'
-                  ? 'Service-worker status is not available'
+                  ? 'Không có thông tin về trạng thái chương trình nền'
                   : updateStatus === 'waiting'
-                    ? 'A service-worker update is waiting'
-                    : 'Update availability has not been reported'}
+                    ? 'Bản cập nhật đang chờ'
+                    : 'Chưa có thông tin về bản cập nhật'}
             </dd>
           </div>
           <div>
-            <dt>Offline readiness</dt>
+            <dt>Khả năng hoạt động ngoại tuyến</dt>
             <dd>
               {pwaSnapshot.offlineReady
-                ? 'App is ready to work offline'
-                : 'Offline readiness not confirmed'}
+                ? 'Ứng dụng có thể hoạt động ngoại tuyến'
+                : 'Chưa xác nhận khả năng hoạt động ngoại tuyến'}
             </dd>
           </div>
         </dl>
         {installPrompt && (
           <div className="settings-actions">
             <button type="button" className="settings-action" onClick={installApp}>
-              Install app
+              Cài đặt ứng dụng
             </button>
           </div>
         )}
@@ -164,16 +164,16 @@ export function SettingsPage() {
       <section className="settings-section" aria-labelledby="settings-version-heading">
         <div className="settings-section-heading">
           <span className="settings-glyph" aria-hidden="true">
-            文
+            Aa
           </span>
           <div>
-            <h2 id="settings-version-heading">Versions</h2>
-            <p>Local software and calculation rules.</p>
+            <h2 id="settings-version-heading">Phiên bản</h2>
+            <p>Phần mềm cục bộ và quy tắc tính toán.</p>
           </div>
         </div>
         <dl className="settings-facts settings-versions">
           <div>
-            <dt>Web app</dt>
+            <dt>Ứng dụng web</dt>
             <dd>{appVersion}</dd>
           </div>
           <div>
@@ -185,7 +185,7 @@ export function SettingsPage() {
             <dd>{KNOWLEDGE_PACKAGE_VERSION}</dd>
           </div>
           <div>
-            <dt>Ruleset</dt>
+            <dt>Mã quy ước tính</dt>
             <dd>
               <code>{RULE_SET_ID}</code>
             </dd>
@@ -202,49 +202,49 @@ export function SettingsPage() {
             ☰
           </span>
           <div>
-            <h2 id="settings-conventions-heading">Reading conventions</h2>
-            <p>These rules are fixed for this version.</p>
+            <h2 id="settings-conventions-heading">Quy ước gieo quẻ</h2>
+            <p>Các quy tắc này được cố định trong phiên bản hiện tại.</p>
           </div>
         </div>
         <ul className="settings-convention-list">
           <li>
-            <span>Line order</span>
-            <strong>First to sixth, bottom to top</strong>
+            <span>Thứ tự hào</span>
+            <strong>Từ hào một đến hào sáu, từ dưới lên</strong>
           </li>
           <li>
-            <span>Changing lines</span>
-            <strong>Values 6 and 9</strong>
+            <span>Hào động</span>
+            <strong>Giá trị 6 và 9</strong>
           </li>
           <li>
-            <span>Calendar analysis</span>
-            <strong>Not included in V1</strong>
+            <span>Phân tích lịch</span>
+            <strong>Không có trong phiên bản 1</strong>
           </li>
         </ul>
       </section>
 
       <footer className="settings-footer">
         <p id="settings-privacy">
-          Reading questions stay in this browser session and are not sent to an account or cloud
-          service.
+          Câu hỏi gieo quẻ chỉ tồn tại trong phiên trình duyệt này, không được gửi tới tài khoản
+          hoặc dịch vụ đám mây.
         </p>
-        <nav aria-label="Product information">
+        <nav aria-label="Thông tin sản phẩm">
           <a href="https://github.com/tungxuan1656/liuyao#readme" target="_blank" rel="noreferrer">
-            About
+            Giới thiệu
           </a>
           <a
             href="https://github.com/tungxuan1656/liuyao/blob/main/LICENSE"
             target="_blank"
             rel="noreferrer"
           >
-            License
+            Giấy phép
           </a>
-          <a href="#settings-privacy">Privacy</a>
+          <a href="#settings-privacy">Quyền riêng tư</a>
           <a
             href="https://github.com/tungxuan1656/liuyao/blob/main/SECURITY.md"
             target="_blank"
             rel="noreferrer"
           >
-            Security
+            Bảo mật
           </a>
         </nav>
       </footer>
