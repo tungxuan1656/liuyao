@@ -490,3 +490,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed. Oracle reviewed the implementation. Headless Chrome 148 registered a waiting worker and cancellation was observed; a synthetic casting `beforeunload` was prevented. Successful takeover/reload and rejected/no-op acceptance were not runtime-tested. User approved code-inspection evidence for these gaps; automated regression is deferred to feat-025.
 - Handoff: feat-021 implementation complete on `feat/021-transient-update-bypass`; integration and issue #27 closure remain.
 - Next: Integrate feat-021 and confirm issue #27 closed, then start feat-022.
+
+# 2026-09-28 — feat-022
+
+- Result: Changed-board trigrams link to their Library identities instead of primary-result fact inspectors. Rule inspectors link internally to Library; source links remain separate.
+- Verification: `./init.sh` passed. No new fact mapping requires a test. Browser interaction was not verified; the navigation paths were inspected in source.
+- Handoff: feat-022 implementation complete on `feat/022-changed-result-facts`; integration and issue #28 closure remain.
+- Next: Integrate feat-022 and confirm issue #28 closed before starting feat-023.

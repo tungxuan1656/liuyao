@@ -17,12 +17,12 @@ Attribute displayed result facts accurately and link applicable rule explanation
 
 ## Acceptance
 
-- [ ] Changed upper/lower trigram controls do not reuse primary-result fact IDs.
-- [ ] Changed trigram identity uses explicit changed facts or has no fact inspector.
-- [ ] Applicable rule inspectors link internally to the Library.
-- [ ] Source-reference links remain distinct; fact, rule, and source remain distinct.
-- [ ] New fact mappings have tests.
-- [ ] `./init.sh` passes.
+- [x] Changed upper/lower trigram controls do not reuse primary-result fact IDs.
+- [x] Changed trigram identity uses explicit changed facts or has no fact inspector.
+- [x] Applicable rule inspectors link internally to the Library.
+- [x] Source-reference links remain distinct; fact, rule, and source remain distinct.
+- [x] New fact mappings have tests (not applicable: no new mappings were added).
+- [x] `./init.sh` passes.
 
 ## Relevant docs
 
@@ -41,7 +41,7 @@ Attribute displayed result facts accurately and link applicable rule explanation
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #28 confirmed; implementation not started.
-- Dependency check: feat-008 is done; feat-019 remains todo.
-- Next: Verify dependencies, then select the feature for implementation.
+- State: done
+- Evidence: Changed-board trigram identities link directly to their own Library entries instead of selecting primary-result fact IDs. Rule entries link to Library rule details; source references retain separate external links. No fact mappings were added, so mapping tests are not applicable. `./init.sh` passed on 2026-09-28 (one existing lint warning). Browser interaction was not verified; source navigation and typecheck/build were inspected.
+- Dependency check: feat-008 and feat-019 are done.
+- Next: Integrate the branch and close issue #28 after confirmed merge.

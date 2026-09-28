@@ -1,5 +1,7 @@
 import type { PrimaryLineResult, ReadingResult } from '@liuyao/core';
+import { Link } from 'react-router-dom';
 import { FactButton, type FactSelection } from './result-facts';
+import { ROUTES } from './route-paths';
 import {
   branchName,
   elementName,
@@ -65,22 +67,45 @@ export function HexagramBoard({
         </span>
       </div>
       <div className="trigram-pair">
-        <FactButton
-          fact={{
-            id: 'result.upperTrigramId',
-            label: 'Ngoại quái',
-            value: trigramLabel(trigramIds?.upper ?? result.upperTrigramId),
-          }}
-          onSelect={select}
-        />
-        <FactButton
-          fact={{
-            id: 'result.lowerTrigramId',
-            label: 'Nội quái',
-            value: trigramLabel(trigramIds?.lower ?? result.lowerTrigramId),
-          }}
-          onSelect={select}
-        />
+        {changed ? (
+          <>
+            <Link
+              className="fact-link"
+              to={ROUTES.libraryDetail('trigram', trigramIds?.upper ?? result.upperTrigramId)}
+            >
+              <span>Ngoại quái</span>
+              <strong>{trigramLabel(trigramIds?.upper ?? result.upperTrigramId)}</strong>
+              <span aria-hidden="true">↗</span>
+            </Link>
+            <Link
+              className="fact-link"
+              to={ROUTES.libraryDetail('trigram', trigramIds?.lower ?? result.lowerTrigramId)}
+            >
+              <span>Nội quái</span>
+              <strong>{trigramLabel(trigramIds?.lower ?? result.lowerTrigramId)}</strong>
+              <span aria-hidden="true">↗</span>
+            </Link>
+          </>
+        ) : (
+          <>
+            <FactButton
+              fact={{
+                id: 'result.upperTrigramId',
+                label: 'Ngoại quái',
+                value: trigramLabel(trigramIds?.upper ?? result.upperTrigramId),
+              }}
+              onSelect={select}
+            />
+            <FactButton
+              fact={{
+                id: 'result.lowerTrigramId',
+                label: 'Nội quái',
+                value: trigramLabel(trigramIds?.lower ?? result.lowerTrigramId),
+              }}
+              onSelect={select}
+            />
+          </>
+        )}
       </div>
       {changed ? (
         <ol

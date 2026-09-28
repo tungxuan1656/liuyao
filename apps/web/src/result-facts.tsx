@@ -1,6 +1,8 @@
 import type { RefObject } from 'react';
 import { getSource, getRulesForFact, listSourceReferences } from '@liuyao/knowledge';
 import type { KnowledgeFactId } from '@liuyao/knowledge';
+import { Link } from 'react-router-dom';
+import { ROUTES } from './route-paths';
 
 export type FactSelection = { id: KnowledgeFactId; label: string; value: string };
 
@@ -61,6 +63,7 @@ export function FactInspector({
               <h4>{rule.title}</h4>
               <p>{rule.explanation}</p>
               <code>{rule.id}</code>
+              <Link to={ROUTES.libraryDetail('rule', rule.id)}>Mở quy tắc trong Thư viện</Link>
             </article>
           ))
         ) : (
