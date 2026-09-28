@@ -16,12 +16,12 @@ Allow the intentional update reload without letting a failed update bypass draft
 
 ## Acceptance
 
-- [ ] Failed or no-op update application cannot leave the bypass armed.
-- [ ] Ordinary close/reload with entered casting lines retains unload protection.
-- [ ] Accepted updates can reload without the casting guard blocking them.
-- [ ] Cancellation never arms the bypass.
-- [ ] Regression coverage exercises unsuccessful update application.
-- [ ] `./init.sh` passes.
+- [x] Failed or no-op update application cannot leave the bypass armed (code review; runtime not tested).
+- [x] Ordinary close/reload with entered casting lines retains unload protection (code review and synthetic `beforeunload` event; native prompt not tested).
+- [x] Accepted updates can reload without the casting guard blocking them (code review; runtime takeover/reload not tested).
+- [x] Cancellation never arms the bypass (code review and browser confirmation cancellation).
+- [x] Regression coverage exercises unsuccessful update application (exception: no executable regression in this feature; user approved code-inspection evidence and deferral to feat-025).
+- [x] `./init.sh` passes.
 
 ## Relevant docs
 
@@ -39,7 +39,7 @@ Allow the intentional update reload without letting a failed update bypass draft
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #27 confirmed; implementation not started.
+- State: done, with user-approved runtime and automated-regression limitations.
+- Evidence: Oracle's read-only review of PR #37 at `af6884004314337a7d6bba177944be2590fb4aa6` found no blocking code defect. No-op, rejection and cancellation cannot arm the bypass; only `onNeedReload` arms it immediately before reload, and casting `beforeunload` consumes it once. The draft-safe confirmation UI remains unchanged. `./init.sh` passed on 2026-09-28. Headless Chrome 148 on macOS registered a real waiting worker and showed cancellation; a synthetic `beforeunload` after entering a line was prevented. Actual takeover/reload and rejected/no-op acceptance were **not runtime-tested**. The user approved code inspection as an explicit exception; executable regression coverage is deferred to feat-025.
 - Dependency check: feat-011 is done.
-- Next: Verify dependencies, then select the feature for implementation.
+- Next: Integrate the branch, close issue #27 after merge, and add release-flow E2E coverage in feat-025.
