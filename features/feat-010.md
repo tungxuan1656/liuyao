@@ -16,9 +16,9 @@ A user can inspect versions, conventions, PWA state, and offline readiness.
 
 ## Acceptance
 
-- [ ] Complete all F09 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
-- [ ] Meet the V1 completion condition: A user can inspect versions, conventions, PWA state, and offline readiness.
-- [ ] Pass the repository verification workflow in `./init.sh`.
+- [ ] Complete all F09 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`. The handoff records versions, conventions, links, and conditional install-state handling, but the current browser check had no service worker registered and did not exercise an update-available registration state; no real offline transition was verified.
+- [ ] Meet the V1 completion condition: A user can inspect versions, conventions, PWA state, and offline readiness. The recorded checks support versions, conventions, and the unregistered-worker state, but do not verify offline readiness or an actual online/offline transition.
+- [x] Pass the repository verification workflow in `./init.sh`. The handoff records `./init.sh` passing after the update-state correction, including typecheck, build, package exports, and tests; PR #21's `verify` CI check also passed.
 
 ## Relevant docs
 

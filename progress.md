@@ -518,3 +518,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `pnpm test:release` passed 12/12 on Playwright 1.63.0 / Chromium 153.0.8010.12 / macOS 26.5.1. `./init.sh` passed. Synthetic install-event handling is not native installation; other unverified F11 items remain listed in feat-012.
 - Handoff: feat-025 implementation complete on `feat/025-release-e2e`; PR integration and issue #31 closure remain.
 - Next: Merge feat-025 after CI, close issue #31, then start feat-026.
+
+# 2026-09-28 — feat-026
+
+- Result: The V1 result layout contract now uses the implemented 900px breakpoint, close/Escape/scrim drawer dismissal, and feat-024's per-line automatic casting panel. Feat-009 and feat-010 acceptance records now distinguish supported PR evidence from incomplete original task checks; feat-012 waivers remain unchecked.
+- Verification: `git diff --check` and targeted Prettier checks passed. No new runtime behavior was introduced or claimed.
+- Handoff: feat-026 documentation changes are complete on `feat/026-spec-evidence-reconciliation`; PR integration and issue #32 closure remain.
+- Next: Integrate feat-026 and confirm issue #32 closed before starting feat-027.

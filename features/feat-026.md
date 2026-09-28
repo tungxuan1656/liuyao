@@ -18,12 +18,12 @@ Restore agreement between canonical V1 behavior, implementation, and feature com
 
 ## Acceptance
 
-- [ ] Canonical result breakpoint is explicitly chosen and code/spec agree.
-- [ ] Drawer dismissal contract matches intended V1 UX.
-- [ ] Automatic-casting contract agrees with feat-024.
-- [ ] feat-009 and feat-010 acceptance state matches recorded evidence and merged state.
-- [ ] feat-012 waivers remain distinct from verified passes; no record claims uncollected evidence.
-- [ ] `git diff --check` and documentation verification pass.
+- [x] Canonical result breakpoint is explicitly chosen and code/spec agree.
+- [x] Drawer dismissal contract matches intended V1 UX.
+- [x] Automatic-casting contract agrees with feat-024.
+- [x] feat-009 and feat-010 acceptance state matches recorded evidence and merged state.
+- [x] feat-012 waivers remain distinct from verified passes; no record claims uncollected evidence.
+- [x] `git diff --check` and documentation verification pass.
 
 ## Relevant docs
 
@@ -45,7 +45,7 @@ Restore agreement between canonical V1 behavior, implementation, and feature com
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #32 confirmed; contract decisions remain proposed.
+- State: done
+- Evidence: User chose the implemented 900px breakpoint and close-button/Escape/scrim dismissal. The canonical UI layout now agrees with those choices and feat-024's per-line panel without claiming swipe or coin animation. Feat-009 and feat-010 checkboxes were reconciled against their original PR evidence: their repository checks are recorded as passed, while incomplete F08/F09 task evidence remains unchecked. Feat-012's waived F11 checks remain unchecked. `git diff --check` and targeted Prettier documentation checks passed on 2026-09-28. PR integration remains pending.
 - Dependency check: feat-024 and feat-025 are prerequisites.
-- Next: Verify dependencies, then select the feature for implementation.
+- Next: Integrate the PR and confirm issue #32 closed after merge.

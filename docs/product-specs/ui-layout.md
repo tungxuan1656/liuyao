@@ -148,8 +148,8 @@ Used during active line input before calculation. Governed by the rules in `read
   - Bottom Nav: `< 768px` (mobile viewport with safe-area insets)
   - Top Nav: `>= 768px` (tablet and desktop viewports)
 - **Result display modes**:
-  - Single-pane layout: `< 1024px` (full-width board with bottom-anchored Drawer for contextual facts)
-  - Split-pane layout: `>= 1024px` (Master-Detail split view with persistent Fact Inspector, container max width `max-w-7xl mx-auto`)
+  - Single-pane layout: `< 900px` (full-width board with bottom-anchored Drawer for contextual facts)
+  - Split-pane layout: `>= 900px` (Master-Detail split view with persistent Fact Inspector, container max width `max-w-7xl mx-auto`)
 
 ---
 
@@ -157,7 +157,7 @@ Used during active line input before calculation. Governed by the rules in `read
 
 The result view presents deterministic facts separated from explanatory prose, matching `reading-result.md`:
 
-#### 1. Split-pane result layout (`>= 1024px` Master-Detail):
+#### 1. Split-pane result layout (`>= 900px` Master-Detail):
 
 - **Left pane (7 / 12 columns) — Hexagram Board**:
   - **Hexagram summary header**:
@@ -183,19 +183,20 @@ The result view presents deterministic facts separated from explanatory prose, m
     - **Hover**: Optional transient preview; does not override an explicitly clicked/selected fact.
   - Chân trang có nút `[ Xem trong thư viện ]` để mở mục tra cứu tương ứng.
 
-#### 2. Single-pane result layout (`< 1024px` Board + Adaptive Drawer):
+#### 2. Single-pane result layout (`< 900px` Board + Adaptive Drawer):
 
 - **Main viewport**:
   - Hiển thị bảng quẻ toàn chiều rộng với hàng gọn và nhãn Nội quái/Ngoại quái rõ ràng.
   - Minimum touch target height for each line row is `48px`.
 - **Fact inspection via Drawer**:
-  - Tapping any line row or badge opens a bottom-anchored `Drawer`.
+  - Selecting a fact button opens a bottom-anchored `Drawer`.
   - Displays the exact same documented explanation and source reference as the desktop panel.
   - **Dismissal requirements**:
-    - Downward drag/swipe gesture.
-    - Nút `[ Đóng ]` hiển thị rõ với `aria-label="Đóng phần giải thích dữ kiện"`.
+    - The visible `[ Đóng ]` button has `aria-label="Đóng phần giải thích dữ kiện"`.
     - `Escape` key press.
-    - Proper focus trapping inside the drawer while open, restoring focus to the triggering element upon close.
+    - Clicking the scrim.
+    - Keep keyboard focus inside the drawer while open, and restore focus to the triggering element upon close.
+    - Swipe or drag dismissal is not implemented.
 
 ---
 
@@ -216,7 +217,11 @@ The result view presents deterministic facts separated from explanatory prose, m
 
 - `<YaoSymbol value={6|7|8|9} size="sm"|"md"|"lg" />`: Pure SVG/CSS rendering of solid, broken, and moving line symbols.
 - `<HexagramBoard reading={result} onSelectLine={(lineIndex) => ...} />`: Responsive 6-line board with upper/lower trigram indicators.
-- `<CoinTossStage onTossComplete={(result) => ...} />`: Renders animated 3-coin toss outcomes provided by `CastingService`. The UI component displays outcomes and animations; it does not own randomness generation directly.
+- `<AutomaticCastingPanel step={step} lines={lines} tosses={tosses} onBack={...} onNext={...} onToss={...} onFinish={...} />`:
+  - Shows the current line number and six-line toss progress.
+  - Once the current line has been cast, announces its value and three coin bits in a live status; the most recently cast line is marked as such.
+  - Provides `[ Quay lại ]`, disabled on the first line. For an already-cast line, provides `[ Tiếp theo ]`, except on the completed sixth line, where it provides `[ Tính quẻ ]`. For the next uncast line, provides `[ Gieo hào ]`.
+  - Displays toss evidence without a claimed coin animation. Randomness is provided by the casting flow, not owned by this panel.
 - `<FactInspector fact={selectedFact} />`: Ruleset-backed explanation renderer, embedded inline in split-pane views or inside `<Drawer>` in single-pane views.
 - `<AppShell />`: Master layout wrapping TopNav (desktop), BottomNav (mobile with safe area), and main scroll container.
 
