@@ -3,6 +3,7 @@ import type { KnowledgeEntity } from '@liuyao/knowledge';
 import { ROUTES } from './route-paths';
 import {
   getRecord,
+  getApplicableRules,
   getReferences,
   getRelatedFigures,
   recordDescription,
@@ -32,6 +33,7 @@ export function LibraryDetailPage() {
     );
 
   const related = getRelatedFigures(record);
+  const applicableRules = getApplicableRules(record);
   return (
     <main className="library-detail">
       <Link className="detail-back" to={ROUTES.library}>
@@ -85,6 +87,19 @@ export function LibraryDetailPage() {
                 <Link key={item.id} className="related-link" to={recordPath(item)}>
                   <span>{item.kind === 'trigram' ? 'Quái' : 'Quẻ'}</span>
                   <strong>{item.name}</strong>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+        {applicableRules.length > 0 && (
+          <section className="detail-section">
+            <h2>Quy tắc áp dụng</h2>
+            <div className="related-grid">
+              {applicableRules.map(rule => (
+                <Link key={rule.id} className="related-link" to={recordPath(rule)}>
+                  <span>Quy tắc</span>
+                  <strong>{rule.title}</strong>
                 </Link>
               ))}
             </div>

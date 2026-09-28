@@ -4,8 +4,14 @@ export const REFERENCES = [
   {
     id: 'reference-zhouyi-trigram-associations',
     sourceId: 'source-zhouyi',
-    targetIds: ['term-trigram'],
+    targetIds: ['term-trigram', 'trigram-heaven'],
     location: 'Thiên Thuyết Quái, phần bàn về tám quái và các thuộc tính gắn với chúng.',
+  },
+  {
+    id: 'reference-zhouyi-hexagram-qian',
+    sourceId: 'source-zhouyi',
+    targetIds: ['hexagram-01'],
+    location: 'Lời quẻ Thuần Càn.',
   },
   {
     id: 'reference-contract-reading-result',

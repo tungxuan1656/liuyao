@@ -10,6 +10,7 @@ export const TRIGRAMS = [
     name: 'Càn',
     aliases: [],
     explanation: 'Quái có ba hào dương, tượng trưng cho trời.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -17,6 +18,7 @@ export const TRIGRAMS = [
     name: 'Đoài',
     aliases: [],
     explanation: 'Quái có thứ tự hào từ dưới lên là dương, dương, âm; tượng trưng cho đầm.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -24,6 +26,7 @@ export const TRIGRAMS = [
     name: 'Ly',
     aliases: [],
     explanation: 'Quái có thứ tự hào từ dưới lên là dương, âm, dương; tượng trưng cho lửa.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -31,6 +34,7 @@ export const TRIGRAMS = [
     name: 'Chấn',
     aliases: [],
     explanation: 'Quái có thứ tự hào từ dưới lên là dương, âm, âm; tượng trưng cho sấm.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -38,6 +42,7 @@ export const TRIGRAMS = [
     name: 'Tốn',
     aliases: [],
     explanation: 'Quái có thứ tự hào từ dưới lên là âm, dương, dương; tượng trưng cho gió.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -45,6 +50,7 @@ export const TRIGRAMS = [
     name: 'Khảm',
     aliases: [],
     explanation: 'Quái có thứ tự hào từ dưới lên là âm, dương, âm; tượng trưng cho nước.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -52,6 +58,7 @@ export const TRIGRAMS = [
     name: 'Cấn',
     aliases: [],
     explanation: 'Quái có thứ tự hào từ dưới lên là âm, âm, dương; tượng trưng cho núi.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
   {
     kind: 'trigram',
@@ -59,5 +66,6 @@ export const TRIGRAMS = [
     name: 'Khôn',
     aliases: [],
     explanation: 'Quái có ba hào âm, tượng trưng cho đất.',
+    applicableRuleIds: ['rule-trigram-composition'],
   },
 ] as const satisfies readonly TrigramRecord[];

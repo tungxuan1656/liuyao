@@ -497,3 +497,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed. No new fact mapping requires a test. Browser interaction was not verified; the navigation paths were inspected in source.
 - Handoff: feat-022 implementation complete on `feat/022-changed-result-facts`; integration and issue #28 closure remain.
 - Next: Integrate feat-022 and confirm issue #28 closed before starting feat-023.
+
+# 2026-09-28 — feat-023
+
+- Result: V1 Library term/entity details link explicitly modeled applicable rules. Source references support hexagrams and trigrams as well as terms and rules without conflating rules with sources.
+- Verification: `./init.sh` passed; knowledge regression tests cover accepted/retrievable figure references and broken targets. Browser interaction was not tested.
+- Handoff: feat-023 implementation complete on `feat/023-library-relationships`; integration and issue #30 closure remain.
+- Next: Integrate feat-023 and confirm issue #30 closed before starting feat-024.

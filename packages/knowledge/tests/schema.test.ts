@@ -67,6 +67,25 @@ describe('knowledge schema and validation', () => {
     expect(() => validateKnowledgeCatalog(validCatalog())).not.toThrow();
   });
 
+  it.each(['hexagram-01', 'trigram-heaven'] as const)(
+    'accepts source references to %s',
+    targetId => {
+      const catalog = validCatalog();
+      const withEntityReference: KnowledgeCatalog = {
+        ...catalog,
+        references: [
+          ...catalog.references,
+          {
+            id: `reference-${targetId}`,
+            sourceId: 'source-classic',
+            targetIds: [targetId],
+          },
+        ],
+      };
+      expect(() => validateKnowledgeCatalog(withEntityReference)).not.toThrow();
+    },
+  );
+
   it.each([
     ['missing catalog collection', { ...validCatalog(), rules: undefined }],
     [

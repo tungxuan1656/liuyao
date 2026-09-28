@@ -53,6 +53,8 @@ A detail page can show:
 - applicable rule IDs;
 - source references.
 
+V1 term, trigram, and hexagram records can declare applicable rule IDs. Detail pages link declared rules to their canonical Library detail pages; do not infer associations for records without declared rules. Rule relationships and source references remain distinct.
+
 Source references identify a work, section, chapter, or page when that information is available.
 
 ## Content boundary

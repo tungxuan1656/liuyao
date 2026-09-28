@@ -130,21 +130,21 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F08 — Knowledge browser
 
-| Task    | Change                                                                          | Evidence      |
-| ------- | ------------------------------------------------------------------------------- | ------------- |
-| F08-T01 | Build Library navigation with category tabs (Hexagrams, Trigrams, Terms, Rules) | Manual check  |
-| F08-T02 | Add trigram list                                                                | Count check   |
-| F08-T03 | Add hexagram list                                                               | Count check   |
-| F08-T04 | Add term list                                                                   | Content check |
-| F08-T05 | Add rule list with category filters                                             | Content check |
-| F08-T06 | Add local search input                                                          | Search check  |
-| F08-T07 | Normalize supported names and aliases for search                                | Search tests  |
-| F08-T08 | Add clear no-results state                                                      | UI check      |
-| F08-T09 | Add canonical detail page for each entity type                                  | Manual check  |
-| F08-T10 | Show related entities and rule references                                       | Link audit    |
-| F08-T11 | Show source metadata and locations                                              | Content audit |
-| F08-T12 | Support direct links to canonical detail content                                | Reload check  |
-| F08-T13 | Verify all V1 knowledge while offline                                           | Offline check |
+| Task    | Change                                                                                                                    | Evidence      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| F08-T01 | Build Library navigation with category tabs (Hexagrams, Trigrams, Terms, Rules)                                           | Manual check  |
+| F08-T02 | Add trigram list                                                                                                          | Count check   |
+| F08-T03 | Add hexagram list                                                                                                         | Count check   |
+| F08-T04 | Add term list                                                                                                             | Content check |
+| F08-T05 | Add rule list with category filters                                                                                       | Content check |
+| F08-T06 | Add local search input                                                                                                    | Search check  |
+| F08-T07 | Normalize supported names and aliases for search                                                                          | Search tests  |
+| F08-T08 | Add clear no-results state                                                                                                | UI check      |
+| F08-T09 | Add canonical detail page for each entity type                                                                            | Manual check  |
+| F08-T10 | Show related entities and applicable rule references on term, trigram, and hexagram detail pages where explicitly modeled | Link audit    |
+| F08-T11 | Show source metadata and locations                                                                                        | Content audit |
+| F08-T12 | Support direct links to canonical detail content                                                                          | Reload check  |
+| F08-T13 | Verify all V1 knowledge while offline                                                                                     | Offline check |
 
 ## F09 — Settings and diagnostics
 

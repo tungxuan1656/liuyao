@@ -7,7 +7,7 @@ import { RULES } from '../data/rules';
 import { SOURCES } from '../data/sources';
 import { TERMS } from '../data/terms';
 import { TRIGRAMS } from '../data/trigrams';
-import { getRule, getRulesForFact } from '../src/catalog';
+import { getRule, getRulesForFact, getSourceReference } from '../src/catalog';
 
 function contractFields(interfaceName: string): string[] {
   const contracts = readFileSync(
@@ -249,13 +249,17 @@ describe('curated V1 content', () => {
       expect(reference.targetIds.length, reference.id).toBeGreaterThan(0);
       for (const id of reference.targetIds) {
         expect(
-          RULES.some(rule => String(rule.id) === id) || TERMS.some(term => String(term.id) === id),
+          RULES.some(rule => String(rule.id) === id) ||
+            TERMS.some(term => String(term.id) === id) ||
+            TRIGRAMS.some(entity => String(entity.id) === id) ||
+            HEXAGRAMS.some(entity => String(entity.id) === id),
           `${reference.id} targets ${id}`,
         ).toBe(true);
       }
     }
     expect(REFERENCES.map(({ id }) => id)).toEqual([
       'reference-zhouyi-trigram-associations',
+      'reference-zhouyi-hexagram-qian',
       'reference-contract-reading-result',
       'reference-zengshan-palace-markers',
       'reference-zengshan-na-jia',
@@ -266,9 +270,18 @@ describe('curated V1 content', () => {
     expect(REFERENCES.find(({ id }) => id === 'reference-zhouyi-trigram-associations')).toEqual({
       id: 'reference-zhouyi-trigram-associations',
       sourceId: 'source-zhouyi',
-      targetIds: ['term-trigram'],
+      targetIds: ['term-trigram', 'trigram-heaven'],
       location: 'Thiên Thuyết Quái, phần bàn về tám quái và các thuộc tính gắn với chúng.',
     });
     expect(REFERENCES.every(({ location }) => location && location.trim().length > 0)).toBe(true);
+  });
+
+  it('keeps source references to a hexagram and trigram retrievable', () => {
+    expect(getSourceReference('reference-zhouyi-hexagram-qian')?.targetIds).toContain(
+      'hexagram-01',
+    );
+    expect(getSourceReference('reference-zhouyi-trigram-associations')?.targetIds).toContain(
+      'trigram-heaven',
+    );
   });
 });

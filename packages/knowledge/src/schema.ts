@@ -86,6 +86,7 @@ export interface TrigramEntity {
   readonly name: string;
   readonly aliases: readonly string[];
   readonly explanation: string;
+  readonly applicableRuleIds?: readonly KnowledgeRule['id'][];
 }
 
 export interface HexagramEntity {
@@ -97,6 +98,7 @@ export interface HexagramEntity {
   readonly kingWenNumber: number;
   readonly upperTrigramId: TrigramId;
   readonly lowerTrigramId: TrigramId;
+  readonly applicableRuleIds?: readonly KnowledgeRule['id'][];
 }
 
 export type KnowledgeEntity = TrigramEntity | HexagramEntity;
@@ -106,6 +108,7 @@ export interface KnowledgeTerm {
   readonly name: string;
   readonly aliases: readonly string[];
   readonly definition: string;
+  readonly applicableRuleIds?: readonly KnowledgeRule['id'][];
 }
 
 export type KnowledgeRuleCategory = 'metadata' | 'structure' | 'transformation' | 'classification';

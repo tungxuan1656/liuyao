@@ -17,11 +17,11 @@ Align Library relationship behavior and source-reference validation with the sup
 
 ## Acceptance
 
-- [ ] Canonical V1 F08-T10 specification explicitly resolves term/entity-to-rule relationships.
-- [ ] If supported, applicable rule IDs are modeled and rendered.
-- [ ] Reference validation accepts hexagrams, trigrams, terms, and rules while rejecting broken targets.
-- [ ] Regression coverage proves hexagram/trigram references are accepted and retrievable.
-- [ ] `./init.sh` passes.
+- [x] Canonical V1 F08-T10 specification explicitly resolves term/entity-to-rule relationships.
+- [x] If supported, applicable rule IDs are modeled and rendered.
+- [x] Reference validation accepts hexagrams, trigrams, terms, and rules while rejecting broken targets.
+- [x] Regression coverage proves hexagram/trigram references are accepted and retrievable.
+- [x] `./init.sh` passes.
 
 ## Relevant docs
 
@@ -40,7 +40,7 @@ Align Library relationship behavior and source-reference validation with the sup
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #30 confirmed; relationship scope remains a proposed decision.
+- State: done
+- Evidence: User confirmed V1 term/entity-to-rule links; F08-T10 and the knowledge-browser spec now state the relationship contract. Optional `applicableRuleIds` on terms and entities are checked against existing rules and rendered as internal Library links, separate from sources. Reference validation and tests cover all schema-supported target types and reject missing targets; catalog examples for `hexagram-01` and `trigram-heaven` are retrievable. `./init.sh` passed on 2026-09-28 (one existing lint warning). Browser interaction was not tested.
 - Dependency check: feat-009 is done.
-- Next: Verify dependencies, then select the feature for implementation.
+- Next: Integrate PR and confirm issue #30 closed after merge.
