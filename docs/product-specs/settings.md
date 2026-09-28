@@ -2,6 +2,8 @@
 
 This document owns the V1 Settings and diagnostics screen.
 
+User-facing labels and messages use Vietnamese. See `vietnamese-language.md` for canonical terminology.
+
 ## V1 content
 
 Show:

@@ -18,13 +18,13 @@ All user-facing web copy and local knowledge content use reviewed Vietnamese ter
 
 ## Acceptance
 
-- [ ] All visible UI copy, accessible names, user-facing statuses/errors, page metadata, and knowledge prose are Vietnamese.
-- [ ] No user-facing knowledge record or rendered app content displays Han characters, English aliases, or Chinese romanizations.
-- [ ] A reviewed glossary controls canonical terminology and all 8 trigram and 64 hexagram display names.
-- [ ] Knowledge search uses Vietnamese names and reviewed aliases, remains local, and tolerates Vietnamese diacritic/case variations.
-- [ ] Stable IDs and deterministic results are unchanged; the knowledge package validates the Vietnamese content contract.
-- [ ] Offline delivery no longer precaches unused CJK-only fonts or depends on CJK-only coverage tooling.
-- [ ] `./init.sh` passes and browser review covers the main flows on compact mobile and wide desktop.
+- [x] All visible UI copy, accessible names, user-facing statuses/errors, page metadata, and knowledge prose are Vietnamese.
+- [x] No user-facing knowledge record or rendered app content displays Han characters, English aliases, or Chinese romanizations.
+- [x] A reviewed glossary controls canonical terminology and all 8 trigram and 64 hexagram display names.
+- [x] Knowledge search uses Vietnamese names and reviewed aliases, remains local, and tolerates Vietnamese diacritic/case variations.
+- [x] Stable IDs and deterministic results are unchanged; the knowledge package validates the Vietnamese content contract.
+- [x] Offline delivery no longer precaches unused CJK-only fonts or depends on CJK-only coverage tooling.
+- [x] `./init.sh` passes and browser review covers the main flows on compact mobile and wide desktop.
 
 ## Relevant docs
 
@@ -49,7 +49,7 @@ Implementation stages and file ownership are in `docs/plans/feat-018.md`.
 
 ## Handoff
 
-- State: active; user approved branch-based implementation, staged commits, and PR creation on 2026-09-28.
-- Evidence: Vietnamese-only language decision and terminology boundary recorded in `docs/product-specs/vietnamese-language.md` on 2026-09-28. Canonical 8-trigram and 64-hexagram names and core terminology were reviewed before catalog translation. Knowledge contract tests assert all names, Vietnamese search behavior, stable core mappings, and no Han/CJK text in catalog fields; knowledge test (41/41) and typecheck pass.
+- State: done locally; push and PR remain.
+- Evidence: `./init.sh` passed format, lint (one existing non-failing `react-refresh/only-export-components` warning), typecheck, build, package exports, test placement, and 217 package tests (41 knowledge + 176 core). Production-preview checks at 390×844 and 1440×900 covered home, all casting methods, cancellation/reset, changed and unchanged results, fact explanations, Library categories/search/no-results/hexagram and rule details, Settings, and real service-worker offline loading; sampled rendered text and accessibility names were Vietnamese with no Han characters. HTML and PWA manifest language are `vi`; the service worker precaches Vietnamese/Latin fonts and no CJK fonts. A deterministic direct input of six `7` values produced the unchanged `hexagram-01` / Thuần Càn result. The update-ready banner and install/update prompt states were not forced. See `docs/plans/feat-018.md` for the verification checklist.
 - Dependency check: feat-012 is done.
-- Next: Commit the knowledge package stage, then localize the reading and navigation UI.
+- Next: Run the final repository workflow, push `feat/018-vietnamese-language`, and open the pull request.

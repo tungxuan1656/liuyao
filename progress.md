@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-09-28 — feat-018 web localization and verification
+
+**State**: active on `feat/018-vietnamese-language`; implementation and verification are committed locally, with final workflow, push, and PR remaining.
+**Done**: Localized the web reading, casting, result, Library, Settings, accessibility copy, HTML/PWA metadata, and related product-spec examples. Removed CJK-only runtime fonts, font coverage scripts, licensing copies, and CI machinery while keeping Vietnamese/Latin fonts. Completed production browser review at 390×844 and 1440×900, including all casting modes, confirmation/recovery, results and fact explanations, Library search/categories/no-results/details, Settings, and service-worker offline loading.
+**Evidence**: `./init.sh` passed (format, lint with one existing warning, typecheck, build, package exports, and 217 package tests); production manifest and HTML both report `vi`, no Han characters appeared in sampled rendered/accessibility text, six direct `7` inputs yielded `hexagram-01` / Thuần Càn, and offline Library navigation worked under the service worker. Update-ready and install-prompt states were not forced. Detailed checklist: `docs/plans/feat-018.md`.
+**Blockers**: none; PWA update/install prompt states remain untested and are recorded as such.
+**Next**: Run the final repository workflow, push `feat/018-vietnamese-language`, and open the PR.
+
 ## 2026-09-28 — feat-018 planning
 
 **State**: todo; implementation not started.

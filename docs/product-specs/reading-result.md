@@ -2,6 +2,8 @@
 
 This document owns the V1 result content and presentation rules.
 
+User-facing labels use the Vietnamese terms in `vietnamese-language.md`.
+
 ## Content order
 
 1. Primary hexagram.

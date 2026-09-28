@@ -4,17 +4,17 @@ This document owns the public V1 product identity and release assets.
 
 ## Release decisions
 
-The Product Owner approved **Lục Hào** as the final public product name on 2026-09-27. On 2026-09-28, the Product Owner superseded the earlier English-language decision and approved Vietnamese as the only user-facing language, including the knowledge catalog, with no Han characters displayed. `docs/product-specs/vietnamese-language.md` owns the language and terminology rules. The PWA short name, final terminology review, description, tagline, visual identity, release metadata, and assets remain pending.
+The Product Owner approved **Lục Hào** as the final public product name on 2026-09-27. On 2026-09-28, the Product Owner superseded the earlier English-language decision and approved Vietnamese as the only user-facing language, including the knowledge catalog, with no Han characters displayed. `docs/product-specs/vietnamese-language.md` owns the language and terminology rules. The PWA short name, final terminology review, tagline, visual identity, release metadata, and assets remain pending. The current metadata description is an implementation draft, not approved launch copy.
 
 The Product Owner must approve these remaining decisions before production launch:
 
 - short PWA name;
 - final terminology and copy review (see `docs/product-specs/vietnamese-language.md`);
-- one-sentence product description;
+- one-sentence product description (the current implementation draft is not approved launch copy);
 - tagline, if used;
 - logo mark and wordmark direction;
 - theme and background colors;
-- approved typography stack for Vietnamese content and brand marks (see `docs/product-specs/ui-layout.md`); CJK text is not part of the approved user-facing language.
+- approved typography stack for Vietnamese content and brand marks (see `docs/product-specs/ui-layout.md`).
 
 Do not treat a repository or package name as the public product name by default.
 

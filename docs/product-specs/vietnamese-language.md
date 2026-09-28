@@ -54,7 +54,7 @@ Use the following canonical display names for trigrams and hexagrams. They follo
 
 | Concept                  | Tên chuẩn               | Ghi chú                                                                                                                              |
 | ------------------------ | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Ruleset                  | Quy ước tính            | Mã quy ước vẫn giữ nguyên; không trình bày mã như tên tiếng Việt.                                                                    |
+| Ruleset                  | Quy ước tính            | Mã quy ước vẫn giữ nguyên và cần nhãn tiếng Việt khi được hiển thị; không trình bày mã như tên tiếng Việt.                           |
 | Primary hexagram         | Quẻ chính               | Quẻ tạo từ sáu giá trị hào ban đầu.                                                                                                  |
 | Changed hexagram         | Quẻ biến                | Chỉ có khi có ít nhất một hào động.                                                                                                  |
 | Trigram                  | Quái                    | Tên riêng dùng Càn, Đoài, Ly, Chấn, Tốn, Khảm, Cấn, Khôn.                                                                            |

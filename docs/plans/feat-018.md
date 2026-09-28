@@ -60,7 +60,7 @@
 - [x] Translate source titles, authors, publication/rights/provenance descriptions, and reference locations into Vietnamese or Latin-script Vietnamese transliteration. Keep source URLs and rights statements accurate; do not invent editions, quotations, or page locations.
 - [x] Update search tests to cover Vietnamese canonical names, reviewed aliases, diacritic/case normalization, no-match behavior, and the absence of Han/English alias matching. Preserve stable result ordering.
 - [x] Run `pnpm --filter @liuyao/knowledge test` and `pnpm --filter @liuyao/knowledge typecheck`.
-- [ ] Commit the knowledge schema, catalog, and tests as `feat(knowledge): localize Vietnamese reference catalog`.
+- [x] Commit the knowledge schema, catalog, and tests as `feat(knowledge): localize Vietnamese reference catalog` (`b69cd9a`).
 
 ### Task 3: Localize reading setup, casting, and shared dialogs
 
@@ -68,12 +68,12 @@
 
 **Consumes:** Language rules and glossary from Tasks 1–2.
 
-- [ ] Translate every visible label, heading, placeholder, method name, line instruction, empty/incomplete state, confirmation, and navigation/accessibility name in these files.
-- [ ] Keep input values (`automatic`, `manual`, `direct`), route paths, and calculation contracts unchanged; translate only their presentation labels.
-- [ ] Replace every decorative Han glyph in navigation, Library, Settings, and PWA banners with a non-text icon or existing non-Han treatment. Mark decorative replacements `aria-hidden` and provide Vietnamese accessible names where needed.
-- [ ] Map caught user-facing errors to Vietnamese copy in the web layer. Keep internal developer diagnostics and stable error mechanics unchanged; show a Vietnamese fallback for unknown failures.
-- [ ] Build the app and directly verify home, question entry, all three casting methods, validation/recovery messages, cancel/reset confirmations, and navigation labels.
-- [ ] Commit reading and navigation copy as `feat(web): localize reading and navigation in Vietnamese`.
+- [x] Translate every visible label, heading, placeholder, method name, line instruction, empty/incomplete state, confirmation, and navigation/accessibility name in these files.
+- [x] Keep input values (`automatic`, `manual`, `direct`), route paths, and calculation contracts unchanged; translate only their presentation labels.
+- [x] Replace every decorative Han glyph in navigation, Library, Settings, and PWA banners with a non-text icon or existing non-Han treatment. Mark decorative replacements `aria-hidden` and provide Vietnamese accessible names where needed.
+- [x] Map caught user-facing errors to Vietnamese copy in the web layer. Keep internal developer diagnostics and stable error mechanics unchanged; show a Vietnamese fallback for unknown failures.
+- [x] Build the app and directly verify home, question entry, manual/direct/automatic casting, cancellation and reset confirmations, and navigation labels; recoverable incomplete-entry copy is verified during direct-entry flow.
+- [x] Commit reading and navigation copy as `feat(web): localize reading and navigation in Vietnamese` (`47374b8`).
 
 ### Task 4: Localize result and knowledge browsing surfaces
 
@@ -81,44 +81,44 @@
 
 **Consumes:** Vietnamese knowledge contract and names from Task 2.
 
-- [ ] Translate all result headings, field labels, line values/statuses, fact controls, drawers, no-result states, category names, rule filters, source labels, and accessible names.
-- [ ] Remove all rendering and search dependencies on `record.han`; render the Vietnamese canonical entity name from the knowledge package.
-- [ ] Display technical IDs only as unchanged machine-readable values with Vietnamese labels. Do not expose English property names as natural-language copy.
-- [ ] Keep result facts and calculation data unchanged; do not add interpretive or predictive prose.
-- [ ] Build and directly verify primary/changed result content, fact drawers, related-entity links, Library search/categories/no-results, all detail types, and source-reference states.
-- [ ] Commit result and knowledge-browser copy as `feat(web): localize results and knowledge browser`.
+- [x] Translate all result headings, field labels, line values/statuses, fact controls, drawers, no-result states, category names, rule filters, source labels, and accessible names.
+- [x] Remove all rendering and search dependencies on `record.han`; render the Vietnamese canonical entity name from the knowledge package.
+- [x] Display technical IDs only as unchanged machine-readable values with Vietnamese labels. Do not expose English property names as natural-language copy.
+- [x] Keep result facts and calculation data unchanged; do not add interpretive or predictive prose.
+- [x] Build and directly verify unchanged/changed results, fact drawers, Library search/categories/no-results, all four detail types, related trigram links, and populated/missing source-reference states.
+- [x] Commit result and knowledge-browser copy as `feat(web): localize results and knowledge browser` (`0c12f45`).
 
 ### Task 5: Localize Settings, PWA messages, and document metadata
 
-**Files:** Modify `apps/web/src/settings.tsx`, `components/pwa-update-banner.tsx`, `apps/web/index.html`, and `apps/web/vite.config.ts`. Clarify copy ownership in `docs/product-specs/reading-flow.md`, `reading-result.md`, `settings.md`, and `ui-layout.md` where examples could be read as literal English UI copy.
+**Files:** Modify `apps/web/src/settings.tsx`, `components/pwa-update-banner.tsx`, `apps/web/index.html`, and `apps/web/vite.config.ts`. Clarify copy ownership in `docs/product-specs/reading-flow.md`, `reading-result.md`, `knowledge-browser.md`, `settings.md`, and `ui-layout.md` where examples could be read as literal English UI copy.
 
-- [ ] Translate system, install, update, offline, version, ruleset, convention, legal-link, and feedback labels. Preserve exact package names and ruleset IDs as technical identifiers.
-- [ ] Translate all offline/update banners and confirmation-dialog messages, including the distinctions between question, draft, and completed-reading loss.
-- [ ] Set the root HTML language to `vi`; write the page description and PWA manifest description in Vietnamese. Retain the approved product name and existing manifest/icon behavior.
-- [ ] Link affected product specs to `vietnamese-language.md`; keep implementation-facing docs in English, but mark any English interface examples as semantic placeholders until the glossary supplies approved Vietnamese copy.
-- [ ] Verify online/offline/update-ready copy and Settings status in the browser; do not claim an update state that was not exercised.
-- [ ] Commit Settings and PWA metadata copy as `feat(web): localize settings and PWA metadata`.
+- [x] Translate system, install, update, offline, version, ruleset, convention, legal-link, and feedback labels. Preserve exact package names and ruleset IDs as technical identifiers.
+- [x] Translate all offline/update banners and confirmation-dialog messages, including the distinctions between question, draft, and completed-reading loss.
+- [x] Set the root HTML language to `vi`; write the page description and PWA manifest description in Vietnamese. Retain the approved product name and existing manifest/icon behavior.
+- [x] Link affected product specs to `vietnamese-language.md`; keep implementation-facing docs in English, but mark any English interface examples as semantic placeholders until the glossary supplies approved Vietnamese copy.
+- [x] Verify online/offline copy and Settings status in a service-worker-controlled production preview. Update-ready copy was not forced and remains unverified.
+- [x] Commit Settings and PWA metadata copy as `feat(web): localize settings and PWA metadata` (`019348c`).
 
 ### Task 6: Remove CJK-only fonts and coverage machinery
 
 **Files:** Modify `apps/web/src/index.css`, `apps/web/package.json`, `apps/web/public/fonts/README.md`, `apps/web/public/fonts/NOTICE.md`, `packages/knowledge/tests/entities.test.ts`, and `.github/workflows/ci.yml`; remove `apps/web/public/fonts/{noto-serif-cjk-app.woff2,noto-sans-cjk-app.woff2,cjk-coverage.txt,Noto-Serif-CJK-OFL.txt,Noto-Sans-CJK-OFL.txt}` and the two CJK-only scripts.
 
-- [ ] Remove CJK `@font-face` entries and any CJK-only required glyph list. Keep Vietnamese Noto faces, Latin brand font, their upstream notices, and current offline font behavior.
-- [ ] Remove the `update:cjk-coverage` package script, CJK font-map test, and CI setup/step used only by that test. Preserve unrelated CI checks and font licensing records.
-- [ ] Update font documentation to list only shipped assets and Vietnamese coverage; remove CJK generation instructions and stale character counts.
-- [ ] Run the production build and inspect the PWA asset manifest to confirm the removed CJK fonts are not emitted or precached.
-- [ ] Commit CJK-only delivery removal as `build(web): remove unused CJK font assets`.
+- [x] Remove CJK `@font-face` entries and any CJK-only required glyph list. Keep Vietnamese Noto faces, Latin brand font, their upstream notices, and current offline font behavior.
+- [x] Remove the `update:cjk-coverage` package script, CJK font-map test, and CI setup/step used only by that test. Preserve unrelated CI checks and font licensing records.
+- [x] Update font documentation to list only shipped assets and Vietnamese coverage; remove CJK generation instructions and stale character counts.
+- [x] Run the production build and inspect the generated manifest and service worker to confirm Vietnamese/Latin fonts remain while removed CJK fonts are not emitted or precached.
+- [x] Commit CJK-only delivery removal as `build(web): remove unused CJK font assets` (`e1bb8e1`).
 
 ### Task 7: Cross-surface language and regression verification
 
 **Files:** Update `features/feat-018.md`, `feature_index.json`, and `progress.md` only after implementation evidence exists; update canonical language/product docs only for accepted terminology or observed behavior.
 
-- [ ] Run `pnpm --filter @liuyao/knowledge test`, `pnpm --filter @liuyao/knowledge typecheck`, and `./init.sh`.
-- [ ] In a production preview, inspect the web app at 390×844 and 1440×900. Exercise home, direct/manual/automatic casting, result facts and dialogs, Library search/details, Settings, and available offline/PWA states.
-- [ ] Verify `document.documentElement.lang === 'vi'`, all sampled visible and accessibility-tree copy is Vietnamese, and no Han characters appear in rendered text.
-- [ ] Compare representative calculation inputs/results and all stable knowledge IDs with the pre-change contracts; record exact evidence and untested browser states.
-- [ ] Check formatting, TypeScript, tests, build, package exports, offline asset output, and working-tree diff; update feature acceptance and handoff only when evidence supports each claim.
-- [ ] Commit evidence and feature handoff as `docs(feat-018): record Vietnamese language verification`.
+- [x] Run `pnpm --filter @liuyao/knowledge test`, `pnpm --filter @liuyao/knowledge typecheck`, and `./init.sh`.
+- [x] In a production preview, inspect the web app at 390×844 and 1440×900. Exercise home, direct/manual/automatic casting, result facts and dialogs, Library search/details, Settings, and offline states.
+- [x] Verify `document.documentElement.lang === 'vi'`, sampled visible and accessibility-tree copy is Vietnamese, and no Han characters appear in rendered text.
+- [x] Compare representative calculation inputs/results and stable knowledge IDs with the pre-change contracts; record exact evidence and untested browser states.
+- [x] Check formatting, TypeScript, tests, build, package exports, offline asset output, and working-tree diff; update feature acceptance and handoff only when evidence supports each claim.
+- [x] Commit evidence and feature handoff as `docs(feat-018): record Vietnamese language verification`.
 
 ## Verification budget
 

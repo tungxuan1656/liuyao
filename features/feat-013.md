@@ -32,7 +32,7 @@ Final name, language, logo, icons, manifest, metadata, font bundle budget, and a
 - [ ] F12-T01 — Review existing naming ideas and define naming criteria
 - [x] F12-T02 — Approve the final public product name (Lục Hào; approved 2026-09-27, see `docs/product-specs/product-identity.md`)
 - [ ] F12-T03 — Approve the PWA short name
-- [ ] F12-T04 — Confirm V1 primary interface language and terminology
+- [x] F12-T04 — Confirm V1 primary interface language and terminology (Vietnamese-only approved 2026-09-28; see `docs/product-specs/vietnamese-language.md`)
 - [ ] F12-T05 — Write the one-sentence public product description
 - [ ] F12-T06 — Decide whether V1 uses a tagline
 - [ ] F12-T07 — Check name conflicts, domain availability, and obvious trademark risk before launch
@@ -45,8 +45,8 @@ Final name, language, logo, icons, manifest, metadata, font bundle budget, and a
 - [ ] F12-T14 — Set the correct HTML language
 - [ ] F12-T15 — Document ownership and rights for every brand asset
 - [ ] F12-T16 — Verify app header, browser tab, install UI, and README use one identity
-- [ ] F12-T17 — Approve Noto Serif, Noto Sans, Noto CJK, and Latin Cinzel typography stack
-- [ ] F12-T18 — Bundle and self-host approved fonts locally with payload budget and CJK subsetting plan
+- [x] F12-T17 — Approve Noto Serif, Noto Sans, and Latin Cinzel typography stack; do not require CJK fonts (approved for Vietnamese-only UI 2026-09-28)
+- [x] F12-T18 — Bundle and self-host the approved Latin/Vietnamese fonts locally; no CJK subsetting plan is required
 
 Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md`.
 
@@ -57,6 +57,6 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 ## Handoff
 
 - State: todo
-- Evidence: Product Owner approved Lục Hào as the final public name on 2026-09-27, then superseded the English-language decision with Vietnamese-only user-facing language and no displayed Han characters on 2026-09-28. F12-T02 is complete; F12-T04 remains open until the canonical terminology receives final review. See `docs/product-specs/product-identity.md` and `docs/product-specs/vietnamese-language.md`.
-- Dependency check: pending
-- Next: Verify dependencies, then select this feature for implementation.
+- Evidence: Product Owner approved Lục Hào as the final public name on 2026-09-27, then superseded the English-language decision with Vietnamese-only user-facing language and no displayed Han characters on 2026-09-28. feat-018 finalized the Vietnamese glossary and localized knowledge and web surfaces; CJK-only fonts and coverage tooling were removed. See `docs/product-specs/product-identity.md`, `docs/product-specs/vietnamese-language.md`, and `docs/plans/feat-018.md`.
+- Dependency check: pending for the remaining F12 identity, asset, metadata, and release decisions.
+- Next: Complete the outstanding non-language F12 approvals and close feat-013 through its own acceptance criteria.

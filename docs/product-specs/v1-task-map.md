@@ -215,7 +215,7 @@ A feature is not done when code exists. It is done when its implementation, cont
 | F12-T15 | Document ownership and rights for every brand asset                                     | Rights audit           |
 | F12-T16 | Verify app header, browser tab, install UI, and README use one identity                 | Cross-surface audit    |
 | F12-T17 | Approve Vietnamese typography and Latin brand-font stack; do not require CJK fonts      | Product Owner approval |
-| F12-T18 | Bundle and self-host approved fonts locally with payload budget and CJK subsetting plan | Font payload audit     |
+| F12-T18 | Bundle and self-host approved fonts locally with payload budget; no CJK subset required | Font payload audit     |
 
 ## F13 — Production delivery
 

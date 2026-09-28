@@ -2,15 +2,17 @@
 
 This document owns V1 reading creation behavior.
 
+User-facing labels use Vietnamese. English terms below describe behavior, not approved interface copy. See `vietnamese-language.md` for canonical labels.
+
 ## Flow
 
-Home
-→ New Reading
-→ Select method
-→ Enter or cast six lines
-→ Validate input
-→ Calculate
-→ Reading Result
+Trang gieo quẻ
+→ Lập quẻ mới
+→ Chọn phương pháp
+→ Nhập hoặc gieo sáu hào
+→ Kiểm tra dữ liệu
+→ Tính quẻ
+→ Kết quả gieo quẻ
 
 ## Methods
 
@@ -65,6 +67,6 @@ A user can return to the current draft before calculation.
 
 After calculation, starting a new reading replaces the current in-memory reading only after an explicit action.
 
-Navigating between root destinations (Reading, Library, Settings) preserves the active completed reading.
+Navigating between root destinations (Gieo quẻ, Thư viện, Cài đặt) preserves the active completed reading.
 
 V1 has no reading history.

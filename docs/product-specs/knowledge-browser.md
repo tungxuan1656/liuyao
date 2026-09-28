@@ -2,6 +2,8 @@
 
 This document owns V1 reference browsing behavior.
 
+The interface uses Vietnamese labels. English terms below describe behavior, not approved interface copy. See `vietnamese-language.md` for canonical terminology.
+
 ## Scope
 
 V1 exposes local reference content for:
@@ -16,8 +18,8 @@ The browser does not contain automated divination conclusions.
 
 ## Navigation
 
-Library
-→ Trigrams, Hexagrams, Terms, or Rules
+Thư viện
+→ Quái, Quẻ, Thuật ngữ hoặc Quy tắc
 → List or search
 → Detail
 
