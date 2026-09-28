@@ -18,15 +18,15 @@ export function LibraryDetailPage() {
     return (
       <main className="library-detail">
         <Link className="detail-back" to={ROUTES.library}>
-          ← Library
+          ← Quay lại thư viện
         </Link>
         <section className="library-empty">
           <span className="empty-symbol" aria-hidden="true">
             ?
           </span>
-          <h1>Entry not found</h1>
-          <p>This address does not match an entry in the local library.</p>
-          <Link to={ROUTES.library}>Browse the library</Link>
+          <h1>Không tìm thấy mục</h1>
+          <p>Địa chỉ này không khớp với mục nào trong thư viện trên thiết bị.</p>
+          <Link to={ROUTES.library}>Mở thư viện</Link>
         </section>
       </main>
     );
@@ -35,28 +35,29 @@ export function LibraryDetailPage() {
   return (
     <main className="library-detail">
       <Link className="detail-back" to={ROUTES.library}>
-        ← Back to Library
+        ← Quay lại thư viện
       </Link>
       <article className="detail-sheet">
         <header className="detail-heading">
           <div className="detail-title-block">
             <p className="library-kicker">
-              {entityType}
+              {({ hexagram: 'Quẻ', trigram: 'Quái', term: 'Thuật ngữ', rule: 'Quy tắc' } as const)[
+                entityType as 'hexagram' | 'trigram' | 'term' | 'rule'
+              ] ?? 'Mục'}
               {'kingWenNumber' in record
-                ? ` · King Wen ${record.kingWenNumber}`
+                ? ` · Số thứ tự ${record.kingWenNumber}`
                 : 'category' in record
-                  ? ` · ${record.category}`
+                  ? ` · ${({ metadata: 'Thông tin', structure: 'Cấu trúc', transformation: 'Biến đổi', classification: 'Phân loại' } as const)[record.category]}`
                   : ''}
             </p>
             <h1>{recordName(record)}</h1>
-            {'han' in record && <p className="detail-han">{record.han}</p>}
           </div>
           <span className="detail-id">{record.id}</span>
         </header>
         <p className="detail-description">{recordDescription(record)}</p>
         {'upperTrigramId' in record && (
           <section className="detail-section">
-            <h2>Made from two trigrams</h2>
+            <h2>Gồm hai quái</h2>
             <div className="related-grid">
               {[record.upperTrigramId, record.lowerTrigramId].map((trigramId, index) => {
                 const trigram = related.find(item => item.id === trigramId);
@@ -67,9 +68,8 @@ export function LibraryDetailPage() {
                       className="related-link"
                       to={recordPath(trigram)}
                     >
-                      <span>{index === 0 ? 'Upper' : 'Lower'}</span>
+                      <span>{index === 0 ? 'Ngoại quái' : 'Nội quái'}</span>
                       <strong>{trigram.name}</strong>
-                      <span className="related-han">{trigram.han}</span>
                     </Link>
                   )
                 );
@@ -79,13 +79,12 @@ export function LibraryDetailPage() {
         )}
         {related.length > 0 && !('upperTrigramId' in record) && (
           <section className="detail-section">
-            <h2>Related figures</h2>
+            <h2>Quẻ liên quan</h2>
             <div className="related-grid">
               {related.map((item: KnowledgeEntity) => (
                 <Link key={item.id} className="related-link" to={recordPath(item)}>
-                  <span>{item.kind}</span>
+                  <span>{item.kind === 'trigram' ? 'Quái' : 'Quẻ'}</span>
                   <strong>{item.name}</strong>
-                  <span className="related-han">{item.han}</span>
                 </Link>
               ))}
             </div>
@@ -93,28 +92,28 @@ export function LibraryDetailPage() {
         )}
         {references.length > 0 && (
           <section className="detail-section source-section">
-            <h2>Sources &amp; locations</h2>
+            <h2>Nguồn và vị trí tra cứu</h2>
             {references.map(reference => (
               <div className="source-record" key={reference.id}>
                 <h3>{reference.source.title}</h3>
                 <p className="source-author">{reference.source.author}</p>
                 <dl>
                   <div>
-                    <dt>Publication</dt>
+                    <dt>Thông tin xuất bản</dt>
                     <dd>{reference.source.publication}</dd>
                   </div>
                   {reference.location && (
                     <div>
-                      <dt>Location</dt>
+                      <dt>Vị trí trích dẫn</dt>
                       <dd>{reference.location}</dd>
                     </div>
                   )}
                   <div>
-                    <dt>Rights</dt>
+                    <dt>Quyền sử dụng</dt>
                     <dd>{reference.source.rights}</dd>
                   </div>
                   <div>
-                    <dt>Provenance</dt>
+                    <dt>Xuất xứ</dt>
                     <dd>{reference.source.provenance}</dd>
                   </div>
                 </dl>
@@ -123,7 +122,7 @@ export function LibraryDetailPage() {
           </section>
         )}
         {references.length === 0 && (
-          <p className="source-unavailable">No source location is recorded for this entry.</p>
+          <p className="source-unavailable">Chưa ghi nhận vị trí nguồn cho mục này.</p>
         )}
       </article>
     </main>

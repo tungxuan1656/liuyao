@@ -15,7 +15,7 @@ export function YaoSymbol({ line }: { line: PrimaryLineResult }) {
     <span
       className={`yao-symbol${yang ? ' is-yang' : ''}`}
       role="img"
-      aria-label={`${yang ? 'Yang' : 'Yin'}${line.changing ? ', moving' : ''}`}
+      aria-label={`${yang ? 'Dương' : 'Âm'}${line.changing ? ', động' : ''}`}
     >
       {yang ? (
         <i />
@@ -45,16 +45,16 @@ export function HexagramBoard({
   return (
     <section
       className={`hexagram-panel${changed ? ' changed-panel' : ''}`}
-      aria-label={changed ? 'Changed hexagram' : 'Primary hexagram'}
+      aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'}
     >
       <div className="hexagram-heading">
         <div>
-          <p className="result-kicker">{changed ? 'After moving lines' : 'Primary figure'}</p>
+          <p className="result-kicker">{changed ? 'Sau khi đổi hào động' : 'Quẻ chính'}</p>
           <h2>
             {changed
               ? changedId
                 ? hexagramLabel(changedId)
-                : 'Changed hexagram unavailable'
+                : 'Không có thông tin quẻ biến'
               : hexagramLabel(result.primaryHexagramId)}
           </h2>
         </div>
@@ -68,7 +68,7 @@ export function HexagramBoard({
         <FactButton
           fact={{
             id: 'result.upperTrigramId',
-            label: 'Upper trigram',
+            label: 'Ngoại quái',
             value: trigramLabel(trigramIds?.upper ?? result.upperTrigramId),
           }}
           onSelect={select}
@@ -76,7 +76,7 @@ export function HexagramBoard({
         <FactButton
           fact={{
             id: 'result.lowerTrigramId',
-            label: 'Lower trigram',
+            label: 'Nội quái',
             value: trigramLabel(trigramIds?.lower ?? result.lowerTrigramId),
           }}
           onSelect={select}
@@ -85,7 +85,7 @@ export function HexagramBoard({
       {changed ? (
         <ol
           className="hexagram-lines"
-          aria-label="Changed polarity, sixth line at top and first at bottom"
+          aria-label="Tính âm dương sau biến đổi; hào sáu ở trên, hào một ở dưới"
         >
           {lines.map(line => {
             const polarity = line.changing
@@ -97,13 +97,13 @@ export function HexagramBoard({
               <li key={line.position}>
                 <span className="line-marker" aria-hidden="true" />
                 <YaoSymbol line={{ ...line, polarity, changing: false }} />
-                <span className="line-note">Changed polarity</span>
+                <span className="line-note">Đã đổi âm dương</span>
               </li>
             );
           })}
         </ol>
       ) : (
-        <ol className="hexagram-lines" aria-label="Lines, sixth at top and first at bottom">
+        <ol className="hexagram-lines" aria-label="Các hào, hào sáu ở trên và hào một ở dưới">
           {lines.map(line => {
             const branch = branchName(line.naJiaBranch);
             const stem = stemName(line.naJiaStem);
@@ -111,9 +111,9 @@ export function HexagramBoard({
               <li key={line.position}>
                 <span className="line-marker">
                   {line.position === result.shiPosition
-                    ? 'Shi'
+                    ? 'Thế'
                     : line.position === result.yingPosition
-                      ? 'Ying'
+                      ? 'Ứng'
                       : ''}
                 </span>
                 <YaoSymbol line={line} />
@@ -130,15 +130,27 @@ export function HexagramBoard({
           <FactButton
             fact={{
               id: 'result.palaceId',
-              label: 'Palace',
-              value: result.palaceId.replace('palace-', '').replace(/-/g, ' '),
+              label: 'Cung',
+              value:
+                (
+                  {
+                    'palace-heaven': 'Càn',
+                    'palace-lake': 'Đoài',
+                    'palace-fire': 'Ly',
+                    'palace-thunder': 'Chấn',
+                    'palace-wind': 'Tốn',
+                    'palace-water': 'Khảm',
+                    'palace-mountain': 'Cấn',
+                    'palace-earth': 'Khôn',
+                  } as const
+                )[result.palaceId] ?? 'Không xác định',
             }}
             onSelect={select}
           />
           <FactButton
             fact={{
               id: 'result.palaceElement',
-              label: 'Palace element',
+              label: 'Ngũ hành của cung',
               value: elementName(result.palaceElement),
             }}
             onSelect={select}

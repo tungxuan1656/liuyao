@@ -16,7 +16,7 @@ export function FactButton({
       className="fact-link"
       type="button"
       onClick={() => onSelect(fact)}
-      aria-label={`${fact.label}: ${fact.value}. Explain this fact`}
+      aria-label={`${fact.label}: ${fact.value}. Xem giải thích dữ kiện này`}
     >
       <span>{fact.label}</span>
       <strong>{fact.value}</strong>
@@ -40,21 +40,21 @@ export function FactInspector({
   return (
     <div className="inspector-content">
       <div className="inspector-topline">
-        <p className="result-kicker">Fact inspector</p>
+        <p className="result-kicker">Giải thích dữ kiện</p>
         <button
           ref={closeRef}
           className="inspector-close"
           onClick={close}
           type="button"
-          aria-label="Close fact inspector"
+          aria-label="Đóng phần giải thích dữ kiện"
         >
-          Close
+          Đóng
         </button>
       </div>
       <h2>{fact.label}</h2>
       <p className="inspector-value">{fact.value}</p>
       <section className="inspector-section">
-        <h3>Rule</h3>
+        <h3>Quy tắc</h3>
         {rules.length ? (
           rules.map(rule => (
             <article className="rule-entry" key={rule.id}>
@@ -64,11 +64,11 @@ export function FactInspector({
             </article>
           ))
         ) : (
-          <p>No rule is mapped to this fact.</p>
+          <p>Chưa có quy tắc được liên kết với dữ kiện này.</p>
         )}
       </section>
       <section className="inspector-section">
-        <h3>Sources</h3>
+        <h3>Nguồn tham khảo</h3>
         {references.length ? (
           references.map(reference => {
             const source = getSource(reference.sourceId);
@@ -84,16 +84,16 @@ export function FactInspector({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Open source
+                    Mở nguồn tham khảo
                   </a>
                 ) : (
-                  <span>Source details only</span>
+                  <span>Chỉ có thông tin nguồn</span>
                 )}
               </article>
             );
           })
         ) : (
-          <p>No source reference is recorded for this rule.</p>
+          <p>Chưa ghi nhận nguồn tham khảo cho quy tắc này.</p>
         )}
       </section>
     </div>
