@@ -26,6 +26,27 @@ describe('Six Relatives', () => {
 });
 
 describe('public board calculation', () => {
+  it('keeps static polarity and changes only the moving line in a one-moving-line reading', () => {
+    const result = calculateReading({ lines: [9, 7, 7, 8, 8, 8] });
+
+    expect(result.changedHexagramId).not.toBeNull();
+    expect(
+      result.lines.map(({ position, inputValue, polarity, changing }) => ({
+        position,
+        inputValue,
+        polarity,
+        changing,
+      })),
+    ).toEqual([
+      { position: 1, inputValue: 9, polarity: 'yang', changing: true },
+      { position: 2, inputValue: 7, polarity: 'yang', changing: false },
+      { position: 3, inputValue: 7, polarity: 'yang', changing: false },
+      { position: 4, inputValue: 8, polarity: 'yin', changing: false },
+      { position: 5, inputValue: 8, polarity: 'yin', changing: false },
+      { position: 6, inputValue: 8, polarity: 'yin', changing: false },
+    ]);
+  });
+
   it.each(PURE_BOARD_FIXTURES)('matches the independent pure-board golden for $id', fixture => {
     const result = calculateReading({ lines: fixture.lines });
     expect(result).toEqual({
