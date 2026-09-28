@@ -39,11 +39,11 @@
 **Produces:** A reviewed glossary for the eight trigrams, 64 hexagrams, line/polarity terms, stems/branches, Five Elements, Six Relatives, palace, and Shi/Ying. The glossary is the editorial source for Tasks 2–4.
 
 - [ ] Inventory each knowledge field and every UI surface in the Files table. Classify text as Vietnamese content, a technical identifier, a source URL, or developer-only diagnostic.
-- [ ] Record one canonical Vietnamese name and any accepted Vietnamese search aliases for each entity and recurring term. Use full Vietnamese diacritics.
-- [ ] Verify hexagram names and Liu Yao terms against Vietnamese-language reference material; record review notes and avoid asserting a disputed school convention as universal.
+- [x] Record one canonical Vietnamese name for each trigram and hexagram, plus reviewed core terms, in `docs/product-specs/vietnamese-language.md`. Use full Vietnamese diacritics.
+- [x] Cross-check the 64 names and ordering against a Vietnamese-language reference and cross-check core Liu Yao terms against Vietnamese usage; record sources and avoid asserting a disputed school convention as universal.
 - [ ] Confirm bibliographic titles and names use Vietnamese or Latin transliteration, with URLs retained for traceability and no Han-script text in local records.
-- [ ] Update the language spec with the accepted glossary table before translating the dataset. Keep the table as the single canonical owner of approved Vietnamese domain labels.
-- [ ] Commit the approved glossary and language decision as `docs(feat-018): define Vietnamese Liu Yao terminology`.
+- [x] Update the language spec with the glossary table before translating the dataset. Keep the table as the single canonical owner of approved Vietnamese domain labels.
+- [x] Commit the approved glossary and language decision as `docs(feat-018): define Vietnamese Liu Yao terminology`.
 
 ### Task 2: Localize and validate the knowledge package
 

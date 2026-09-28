@@ -32,6 +32,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: Final Vietnamese Liu Yao terminology requires editorial/source review before bulk catalog translation.
 **Next**: Review Vietnamese reference sources and add the canonical glossary; commit that stage before implementation.
 
+## 2026-09-28 — feat-018 glossary
+
+**State**: active on `feat/018-vietnamese-language`.
+**Done**: Added canonical Vietnamese names for all trigrams and hexagrams, core Liu Yao terms, and source notes before catalog translation.
+**Evidence**: `docs/product-specs/vietnamese-language.md`; names and ordering cross-checked against the Vietnamese Wikipedia hexagram list, and terminology against Vietnamese-language Liu Yao references. Commit: pending.
+**Blockers**: none for the knowledge localization stage.
+**Next**: Commit the glossary, then localize catalog fields and add no-Han contract tests.
+
 ## 2026-09-25 — feat-001
 
 **State**: done, pending PR review and merge.
