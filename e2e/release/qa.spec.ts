@@ -60,6 +60,7 @@ test('release routes and reading flows have no console or page errors', async ({
   await page.goto('/library/hexagram/hexagram-01');
   await expect(page.getByRole('heading', { name: 'Thuần Càn' })).toBeVisible();
 
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/');
   await page.getByRole('textbox', { name: 'Câu hỏi (không bắt buộc)' }).fill('QA sweep');
   await page.getByRole('radio', { name: 'Nhập trực tiếp' }).check();
@@ -68,7 +69,6 @@ test('release routes and reading flows have no console or page errors', async ({
     await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
-  await page.setViewportSize({ width: 390, height: 844 });
   const trigger = page.getByRole('button', { name: /Quẻ chính:.*Xem giải thích dữ kiện này/ });
   await trigger.focus();
   await trigger.press('Enter');
