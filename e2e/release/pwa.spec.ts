@@ -52,7 +52,7 @@ test.describe('production PWA behavior', () => {
     await expect(page.getByRole('heading', { name: 'Thư viện' })).toBeVisible();
   });
 
-  test('keeps a synthetic install prompt available after SPA navigation (app handling only)', async ({
+  test('clears a synthetic install prompt after appinstalled (app handling only)', async ({
     page,
   }) => {
     await page.goto('/');
@@ -69,6 +69,14 @@ test.describe('production PWA behavior', () => {
     await page.getByRole('link', { name: 'Cài đặt' }).click();
 
     await expect(page.getByRole('button', { name: 'Cài đặt ứng dụng' })).toBeVisible();
+    await page.evaluate(() => window.dispatchEvent(new Event('appinstalled')));
+
+    await expect(page.getByRole('button', { name: 'Cài đặt ứng dụng' })).toHaveCount(0);
+    await expect(page.getByText('Đã cài trên thiết bị này')).toBeVisible();
+
+    await page.goBack();
+    await page.getByRole('link', { name: 'Cài đặt' }).click();
+    await expect(page.getByRole('button', { name: 'Cài đặt ứng dụng' })).toHaveCount(0);
   });
 
   test('preserves a casting draft until a real waiting production worker is explicitly accepted', async ({
