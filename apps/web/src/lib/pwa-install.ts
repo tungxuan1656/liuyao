@@ -28,6 +28,8 @@ export function initPwaInstall(): void {
     event.preventDefault();
     publish(choice);
   });
+
+  window.addEventListener('appinstalled', () => publish(null));
 }
 
 export function getPwaInstallSnapshot(): PwaInstallSnapshot {
