@@ -135,3 +135,44 @@ test('result drawer closes with Escape and restores focus to its trigger', async
   await expect(drawer).toBeHidden();
   await expect(trigger).toBeFocused();
 });
+
+test('result drawer opens after resizing a rendered desktop result and follows later resizes', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1024, height: 900 });
+  await startReading(page, 'Nhập trực tiếp');
+  for (const [index, value] of sixLines.entries()) {
+    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+  }
+  await page.getByRole('button', { name: 'Tính quẻ' }).click();
+
+  const trigger = page.getByRole('button', { name: /Quẻ chính:.*Xem giải thích dữ kiện này/ });
+  await expect(page.locator('.wide-inspector')).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await trigger.focus();
+  await trigger.press('Enter');
+
+  const drawer = page.getByRole('dialog', { name: /Chi tiết dữ kiện/ });
+  await expect(drawer).toBeVisible();
+  await expect(drawer).toBeFocused();
+  await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('hidden');
+  await page.keyboard.press('Escape');
+  await expect(drawer).toBeHidden();
+  await expect(trigger).toBeFocused();
+
+  await trigger.press('Enter');
+  await expect(drawer).toBeVisible();
+  await page.setViewportSize({ width: 1024, height: 900 });
+  await expect(drawer).toBeHidden();
+  await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('');
+  await expect(
+    page.locator('.wide-inspector').getByRole('heading', { name: 'Quẻ chính' }),
+  ).toBeVisible();
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(drawer).toBeVisible();
+  await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('hidden');
+  await page.keyboard.press('Escape');
+  await expect(drawer).toBeHidden();
+  await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('');
+});
