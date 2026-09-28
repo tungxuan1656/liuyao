@@ -16,11 +16,11 @@ Keep install-prompt availability when the browser event fires outside Settings.
 
 ## Acceptance
 
-- [ ] Application bootstrap listens for `beforeinstallprompt` independent of route.
-- [ ] A prompt captured on Home remains usable after navigation to Settings and clears after accepted or dismissed use.
-- [ ] Browsers without the event retain truthful install/standalone state.
-- [ ] Browser/E2E evidence covers Home capture through Settings use.
-- [ ] `./init.sh` passes.
+- [x] Application bootstrap listens for `beforeinstallprompt` independent of route.
+- [x] A prompt captured on Home remains usable after navigation to Settings and clears after accepted or dismissed use.
+- [x] Browsers without the event retain truthful install/standalone state.
+- [x] Browser/E2E evidence covers Home capture through Settings use.
+- [x] `./init.sh` passes.
 
 ## Relevant docs
 
@@ -39,7 +39,7 @@ Keep install-prompt availability when the browser event fires outside Settings.
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #26 confirmed; implementation not started.
+- State: done
+- Evidence: App startup registers an install-prompt store. Headless Chromium browser test dispatched a mock cancelable `beforeinstallprompt` on Home (`preventDefault` confirmed), navigated to Settings, used its install action, and observed dismissal feedback plus action removal. This is simulated event evidence, not a native browser install. Existing standalone check remains. `./init.sh` passed on 2026-09-28 (one existing lint warning).
 - Dependency check: feat-010 is done.
-- Next: Verify dependencies, then select the feature for implementation.
+- Next: Integrate the verified branch and close issue #26 after confirmed merge.

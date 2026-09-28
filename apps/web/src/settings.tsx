@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react';
 import { KNOWLEDGE_PACKAGE_VERSION } from '@liuyao/knowledge';
 import { RULE_SET_ID } from '@liuyao/core';
 import { getPwaUpdateSnapshot, subscribePwaUpdate, type PwaUpdateSnapshot } from './lib/pwa-update';
+import {
+  getPwaInstallSnapshot,
+  subscribePwaInstall,
+  triggerPwaInstallPrompt,
+} from './lib/pwa-install';
 import './settings.css';
 
 const appVersion = __APP_VERSION__;
 const coreVersion = __CORE_VERSION__;
-
-type InstallChoiceEvent = Event & {
-  prompt?: () => Promise<void>;
-  userChoice?: Promise<{ outcome: 'accepted' | 'dismissed'; platform: string }>;
-};
 
 type UpdateStatus = 'checking' | 'unsupported' | 'unreported' | 'waiting';
 
@@ -18,8 +18,10 @@ export function SettingsPage() {
   const [online, setOnline] = useState<boolean | null>(() =>
     'onLine' in navigator ? navigator.onLine : null,
   );
-  const [installSupported, setInstallSupported] = useState<boolean | null>(null);
-  const [installPrompt, setInstallPrompt] = useState<InstallChoiceEvent | null>(null);
+  const [installPrompt, setInstallPrompt] = useState(getPwaInstallSnapshot().prompt);
+  const [installSupported, setInstallSupported] = useState<boolean | null>(() =>
+    installPrompt ? true : null,
+  );
   const [installed, setInstalled] = useState(
     () =>
       window.matchMedia('(display-mode: standalone)').matches ||
@@ -40,18 +42,14 @@ export function SettingsPage() {
     const updateNetwork = () => {
       if ('onLine' in navigator) setOnline(navigator.onLine);
     };
-    const captureInstall = (event: Event) => {
-      const choice = event as InstallChoiceEvent;
-      if (typeof choice.prompt === 'function' && choice.userChoice) {
-        event.preventDefault();
-        setInstallSupported(true);
-        setInstallPrompt(choice);
-      }
-    };
+    const unsubscribeInstall = subscribePwaInstall(() => {
+      const next = getPwaInstallSnapshot().prompt;
+      setInstallPrompt(next);
+      setInstallSupported(next ? true : false);
+    });
     const updateInstalled = () => setInstalled(true);
     window.addEventListener('online', updateNetwork);
     window.addEventListener('offline', updateNetwork);
-    window.addEventListener('beforeinstallprompt', captureInstall);
     window.addEventListener('appinstalled', updateInstalled);
     setUpdateStatus(
       'serviceWorker' in navigator
@@ -62,21 +60,22 @@ export function SettingsPage() {
     );
     return () => {
       unsubscribePwa();
+      unsubscribeInstall();
       window.removeEventListener('online', updateNetwork);
       window.removeEventListener('offline', updateNetwork);
-      window.removeEventListener('beforeinstallprompt', captureInstall);
       window.removeEventListener('appinstalled', updateInstalled);
     };
   }, []);
 
   async function installApp() {
-    if (!installPrompt?.prompt || !installPrompt.userChoice) return;
-    await installPrompt.prompt();
-    const choice = await installPrompt.userChoice;
-    setInstallMessage(
-      choice.outcome === 'accepted' ? 'Đã bắt đầu cài đặt.' : 'Chưa bắt đầu cài đặt.',
-    );
-    setInstallPrompt(null);
+    try {
+      const choice = await triggerPwaInstallPrompt();
+      if (!choice) return;
+      setInstallMessage(choice === 'accepted' ? 'Đã bắt đầu cài đặt.' : 'Chưa bắt đầu cài đặt.');
+      setInstallPrompt(null);
+    } catch {
+      setInstallMessage('Không thể bắt đầu cài đặt.');
+    }
   }
 
   return (
