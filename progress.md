@@ -469,3 +469,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: PR #23 head `f8ecc580fab76c9fd0cb2bb12e4ed6688221e3e5` passed CI `verify` and GitGuardian. `./init.sh` passed with 176 core tests and 41 knowledge tests (existing non-failing Fast Refresh warning). Remaining exceptions are detailed in `features/feat-012.md`: incomplete contrast inventory, no nonzero safe-area measurement, no calculation-error runtime, no full console sweep, incomplete supported-browser matrix, and no rendered update-banner size measurement.
 **Blockers**: None for feat-012. Release-matrix checks remain recommended separately and are not claimed complete.
 **Next**: No further feat-012 action; address remaining release-matrix checks separately if selected.
+
+# 2026-09-28 — feat-019
+
+- Result: Corrected changed-board labels so only moving lines announce a polarity change; added one-moving-line coverage for all six positions.
+- Verification: `./init.sh` passed; lint reported one pre-existing warning and zero errors.
+- Handoff: feat-019 implementation complete on `feat/019-static-line-annotations`; integration and issue #25 closure remain.
+- Next: Integrate feat-019 and confirm issue #25 closed before starting feat-020.

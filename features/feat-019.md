@@ -15,10 +15,10 @@ Show accurate changed-board annotations and polarity for moving and static lines
 
 ## Acceptance
 
-- [ ] Only moving lines are labeled as changed; static lines are unchanged or unannotated.
-- [ ] Polarity is correct at all six positions, and a no-change reading omits the changed board.
-- [ ] Regression coverage verifies one moving line.
-- [ ] `./init.sh` passes.
+- [x] Only moving lines are labeled as changed; static lines are unchanged or unannotated.
+- [x] Polarity is correct at all six positions, and a no-change reading omits the changed board.
+- [x] Regression coverage verifies one moving line.
+- [x] `./init.sh` passes.
 
 ## Relevant docs
 
@@ -36,7 +36,7 @@ Show accurate changed-board annotations and polarity for moving and static lines
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #25 confirmed; implementation not started.
+- State: done
+- Evidence: Changed-board labels are gated by `line.changing`; the existing changed-board visibility guard remains intact. A one-moving-line six-position regression was added in `packages/liuyao-core/tests/board.test.ts`. `./init.sh` passed (format, lint with one existing warning, typecheck, build, package exports, tests) on 2026-09-28.
 - Dependency check: feat-008 is done.
-- Next: Verify dependencies, then select the feature for implementation.
+- Next: Integrate the verified feature branch and close issue #25 after confirming completion.

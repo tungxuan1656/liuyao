@@ -97,7 +97,7 @@ export function HexagramBoard({
               <li key={line.position}>
                 <span className="line-marker" aria-hidden="true" />
                 <YaoSymbol line={{ ...line, polarity, changing: false }} />
-                <span className="line-note">Đã đổi âm dương</span>
+                <span className="line-note">{line.changing ? 'Đã đổi âm dương' : ''}</span>
               </li>
             );
           })}
