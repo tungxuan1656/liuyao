@@ -40,6 +40,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none.
 **Next**: Run the full repository workflow, commit the search fix, and push it to PR #24.
 
+## 2026-09-28 — feat-018 search fixes pushed
+
+**State**: done; PR #24 has the review fixes and is awaiting CI.
+**Done**: Committed and pushed the search normalization, ID matching, regression tests, and matching search-spec clarification to PR #24.
+**Evidence**: `./init.sh` passed on the implementation; knowledge tests passed (41/41), knowledge typecheck passed, and the branch head is `8a9d8b7`. GitHub reports the PR as mergeable; CI for the new head is queued.
+**Blockers**: none; wait for CI completion.
+**Next**: Confirm CI is green, then merge PR #24.
+
 ## 2026-09-28 — feat-018 planning
 
 **State**: todo; implementation not started.
