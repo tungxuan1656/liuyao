@@ -17,12 +17,12 @@ Provide repeatable web/release evidence for high-risk application flows and clos
 
 ## Acceptance
 
-- [ ] A repository-level web E2E/release location respects current test-placement policy.
-- [ ] Automate the issue's deterministic scenarios where browser APIs allow.
-- [ ] Record browser/OS versions for remaining manual matrix runs.
-- [ ] Complete or explicitly retain only genuinely non-automatable F11 gaps.
-- [ ] Revisit F11-T06/T07/T09/T10/T11/T13 status based on evidence.
-- [ ] `./init.sh` and the release-flow suite pass.
+- [x] A repository-level web E2E/release location respects current test-placement policy.
+- [x] Automate the issue's deterministic scenarios where browser APIs allow.
+- [x] Record browser/OS versions for remaining manual matrix runs.
+- [x] Complete or explicitly retain only genuinely non-automatable F11 gaps.
+- [x] Revisit F11-T06/T07/T09/T10/T11/T13 status based on evidence.
+- [x] `./init.sh` and the release-flow suite pass.
 
 ## Relevant docs
 
@@ -32,8 +32,9 @@ Provide repeatable web/release evidence for high-risk application flows and clos
 
 ## Plan
 
-1. Establish the repository-level web release suite and automate supported high-risk scenarios.
-2. Record remaining manual evidence and reconcile feat-012 status without overstating coverage.
+1. Establish a root `e2e/release/` Playwright Chromium suite, its `test:release` command, CI gate, and narrow documentation exception for integration tests outside `apps/**`. Keep `pnpm test` package-only.
+2. Add deterministic casting/result, navigation, Library and keyboard/dialog scenarios against a dedicated Vite server. Run true offline/PWA scenarios against a production preview with an active worker; separate synthetic install/update event tests from native-browser evidence.
+3. Record exact browser/OS versions and actual scenario results in this feature; reconcile feat-012 F11-T06/T07/T09/T10/T11/T13 without turning untested checks into passes.
 
 ## Verify
 
@@ -42,7 +43,7 @@ Provide repeatable web/release evidence for high-risk application flows and clos
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #31 confirmed; implementation not started.
-- Dependency check: feat-012 is done; runtime prerequisites feat-019, feat-020, feat-021, and feat-024 remain todo.
-- Next: Verify dependencies, then select the feature for implementation.
+- State: done
+- Evidence: User approved Playwright at root. `e2e/release/` is a documented integration-test exception; `pnpm test` remains package-only. On 2026-09-28, `pnpm test:release` passed 12/12 in Playwright 1.63.0, bundled Chrome for Testing 153.0.8010.12 on macOS 26.5.1 (Darwin 25.5.0 arm64); `./init.sh` passed. Coverage: manual/direct equivalence, six automatic coin outcomes and displayed line values, one-moving-line changed board, session navigation, Library direct/search, drawer Escape/focus, SW-controlled offline route reload, real two-build waiting-worker draft preservation and accepted takeover/reload, Chromium console/page-error samples across casting/Library/drawer, and 44×44 update-banner controls at 390×844. A synthetic install event checks retained app handling across navigation only; it does not prove native installability. Core tests from feat-024, not E2E, validate the internal immutable snapshot. Remaining F11 gaps are recorded in feat-012; no supported-browser matrix or nonzero safe-area evidence was obtained in this feature. CI verification and integration remain pending.
+- Dependency check: feat-012, feat-019, feat-020, feat-021 and feat-024 are done.
+- Next: Confirm CI, integrate the PR, and close issue #31 only after merge.

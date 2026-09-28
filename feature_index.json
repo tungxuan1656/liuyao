@@ -163,7 +163,7 @@
     {
       "id": "feat-025",
       "title": "Add web release-flow regression coverage",
-      "status": "todo",
+      "status": "done",
       "depends_on": ["feat-012", "feat-019", "feat-020", "feat-021", "feat-024"]
     },
     {
