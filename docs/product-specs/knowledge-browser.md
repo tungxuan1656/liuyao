@@ -36,6 +36,8 @@ Support matches against the normalized fields that exist in the knowledge datase
 - stable ID;
 - glossary term.
 
+Prefer matches that preserve Vietnamese diacritics when the query contains them, so distinct names such as Càn and Cấn do not collide. For queries without diacritics, allow accent-insensitive matching and fold Vietnamese `đ` to `d`. Stable IDs are searchable by their full identifier without treating English fragments inside IDs as prose aliases.
+
 Do not include Han characters, English aliases, or Chinese romanizations in the local knowledge catalog. Stable IDs remain technical identifiers and are not prose. Follow `vietnamese-language.md` for the canonical language and terminology rules.
 
 Do not call a remote search service.

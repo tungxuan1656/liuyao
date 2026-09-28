@@ -32,6 +32,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none; PWA update-ready and install-prompt states remain untested as noted in the PR.
 **Next**: Address review feedback, then merge PR #24.
 
+## 2026-09-28 — feat-018 search review fixes
+
+**State**: active follow-up on `feat/018-vietnamese-language`; PR #24 is open.
+**Done**: Reproduced the two review findings in knowledge search. Updated normalization to prefer diacritic-preserving matches for accented queries, use accent-insensitive fallback otherwise, fold `đ` to `d`, and match stable IDs only as identifiers. Added regression coverage for Đoài/doai, Càn versus Cấn, Thuần Càn versus Thuần Cấn, and the requested hexagram/trigram/term/rule IDs.
+**Evidence**: `pnpm --filter @liuyao/knowledge test` passed (41 tests); `pnpm --filter @liuyao/knowledge typecheck` passed.
+**Blockers**: none.
+**Next**: Run the full repository workflow, commit the search fix, and push it to PR #24.
+
 ## 2026-09-28 — feat-018 planning
 
 **State**: todo; implementation not started.
