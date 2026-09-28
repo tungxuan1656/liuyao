@@ -13,7 +13,7 @@ export function ConfirmationDialog({
   title,
   children,
   confirmLabel,
-  cancelLabel = 'Keep editing',
+  cancelLabel = 'Tiếp tục chỉnh sửa',
   onConfirm,
   onCancel,
 }: ConfirmationDialogProps) {

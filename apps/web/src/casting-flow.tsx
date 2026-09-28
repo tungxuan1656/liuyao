@@ -52,10 +52,10 @@ export function CastingFlow() {
       isCompleting.current = true;
       setError('');
       navigate(ROUTES.result);
-    } catch (cause) {
+    } catch {
       // Keep the entered values in the draft so the user can correct and retry.
       if (draft) setDraft({ ...draft, lines: [...values] });
-      setError(cause instanceof Error ? cause.message : 'Check the six line values and try again.');
+      setError('Không thể tính quẻ. Hãy kiểm tra đủ sáu giá trị hào từ 6 đến 9 rồi thử lại.');
     }
   }
 
@@ -90,18 +90,18 @@ export function CastingFlow() {
     try {
       const values = createBrowserCastingService().cast().input.lines;
       finish([...values]);
-    } catch (cause) {
-      setError(cause instanceof Error ? cause.message : 'Secure casting is unavailable.');
+    } catch {
+      setError('Không thể gieo tự động an toàn trên trình duyệt này. Hãy chọn phương pháp khác.');
     }
   }
 
   if (!draft) {
     return (
       <main className="reading-page">
-        <h1>New Reading</h1>
-        <p role="status">Choose a method to begin.</p>
+        <h1>Lập quẻ mới</h1>
+        <p role="status">Chọn một phương pháp để bắt đầu.</p>
         <button type="button" onClick={() => navigate(ROUTES.home)}>
-          Return to Reading
+          Quay lại trang gieo quẻ
         </button>
       </main>
     );
@@ -116,47 +116,47 @@ export function CastingFlow() {
     <main className="reading-page casting-page">
       <header className="flow-header">
         <button type="button" onClick={cancelFlow}>
-          Cancel
+          Hủy
         </button>
         <p>
           {direct
-            ? 'Direct entry'
+            ? 'Nhập trực tiếp'
             : draft.method === 'automatic'
-              ? 'Automatic casting'
-              : 'Manual casting'}
+              ? 'Gieo tự động'
+              : 'Gieo thủ công'}
         </p>
       </header>
       <h1>
         {direct
-          ? 'Enter six lines'
+          ? 'Nhập sáu hào'
           : draft.method === 'automatic'
-            ? 'Cast your reading'
-            : `Line ${step + 1} of 6`}
+            ? 'Gieo quẻ'
+            : `Hào ${step + 1} trên 6`}
       </h1>
       {draft.question && (
-        <p className="question-summary">Question (session only): {draft.question}</p>
+        <p className="question-summary">Câu hỏi (chỉ trong phiên này): {draft.question}</p>
       )}
       {draft.method === 'automatic' ? (
         <section className="reading-card">
-          <p>Six line values will be generated with browser cryptographic randomness.</p>
+          <p>Sáu giá trị hào sẽ được tạo bằng bộ sinh số ngẫu nhiên an toàn của trình duyệt.</p>
           <button type="button" onClick={castAutomatically}>
-            Cast six lines
+            Gieo sáu hào
           </button>
         </section>
       ) : direct ? (
         <section
           className="reading-card line-entry-list"
-          aria-label="Enter line values, sixth line first"
+          aria-label="Nhập giá trị hào, bắt đầu từ hào sáu"
         >
           {[5, 4, 3, 2, 1, 0].map(index => (
             <label key={index}>
-              Line {index + 1}
+              Hào {index + 1}
               <select
-                aria-label={`Line ${index + 1}`}
+                aria-label={`Hào ${index + 1}`}
                 value={lines[index] ?? ''}
                 onChange={event => updateLine(index, event.target.value)}
               >
-                <option value="">Choose value</option>
+                <option value="">Chọn giá trị</option>
                 {validValues.map(value => (
                   <option key={value} value={value}>
                     {value}
@@ -166,18 +166,18 @@ export function CastingFlow() {
             </label>
           ))}
           <button type="button" disabled={!canCalculate} onClick={() => finish(lines)}>
-            Calculate
+            Tính quẻ
           </button>
         </section>
       ) : (
         <section className="reading-card">
-          <label htmlFor="manual-line">Line value ({step + 1}, first line first)</label>
+          <label htmlFor="manual-line">Giá trị hào {step + 1} (bắt đầu từ hào một)</label>
           <select
             id="manual-line"
             value={lines[step] ?? ''}
             onChange={event => updateLine(step, event.target.value)}
           >
-            <option value="">Choose value</option>
+            <option value="">Chọn giá trị</option>
             {validValues.map(value => (
               <option key={value} value={value}>
                 {value}
@@ -190,7 +190,7 @@ export function CastingFlow() {
               disabled={step === 0}
               onClick={() => setDraft({ ...draft, step: step - 1 })}
             >
-              Back
+              Quay lại
             </button>
             {step < 5 ? (
               <button
@@ -198,11 +198,11 @@ export function CastingFlow() {
                 disabled={!validValues.includes(lines[step] as (typeof validValues)[number])}
                 onClick={() => setDraft({ ...draft, step: step + 1 })}
               >
-                Next line
+                Hào tiếp theo
               </button>
             ) : (
               <button type="button" disabled={!canCalculate} onClick={() => finish(lines)}>
-                Calculate
+                Tính quẻ
               </button>
             )}
           </div>
@@ -217,25 +217,25 @@ export function CastingFlow() {
           setError('');
         }}
       >
-        Reset lines
+        Xóa các hào
       </button>
       {!canCalculate && draft.method === 'direct' && (
-        <p role="status">Enter a valid value for each of the six lines before calculating.</p>
+        <p role="status">Hãy nhập giá trị hợp lệ cho cả sáu hào trước khi tính quẻ.</p>
       )}
       {!canCalculate && draft.method === 'manual' && step === 5 && (
-        <p role="status">Enter line 6 before calculating. Your previous lines are preserved.</p>
+        <p role="status">Hãy nhập hào sáu trước khi tính quẻ. Các hào đã nhập vẫn được giữ lại.</p>
       )}
       {blocker.state !== 'blocked' && !discard && resetLines && (
         <ConfirmationDialog
-          title="Reset all lines?"
-          confirmLabel="Reset lines"
+          title="Xóa toàn bộ các hào?"
+          confirmLabel="Xóa các hào"
           onCancel={() => setResetLines(false)}
           onConfirm={() => {
             if (draft) setDraft({ ...draft, lines: [], step: 0 });
             setResetLines(false);
           }}
         >
-          This clears every entered line but keeps your question and casting method.
+          Thao tác này xóa mọi hào đã nhập nhưng vẫn giữ câu hỏi và phương pháp gieo quẻ.
         </ConfirmationDialog>
       )}
       {error && (
@@ -245,8 +245,8 @@ export function CastingFlow() {
       )}
       {(blocker.state === 'blocked' || discard) && (
         <ConfirmationDialog
-          title={hasInput ? 'Discard active lines?' : 'Discard reading setup?'}
-          confirmLabel={hasInput ? 'Discard and leave' : 'Discard setup'}
+          title={hasInput ? 'Bỏ các hào đang nhập?' : 'Bỏ thông tin lập quẻ?'}
+          confirmLabel={hasInput ? 'Bỏ và rời đi' : 'Bỏ thông tin'}
           onCancel={() => {
             if (blocker.state === 'blocked') blocker.reset();
             setDiscard(false);
@@ -254,8 +254,8 @@ export function CastingFlow() {
           onConfirm={discardAndGoHome}
         >
           {hasInput
-            ? 'Discard active lines and return to reading setup?'
-            : 'Discard the question and casting method and return to reading setup?'}
+            ? 'Bỏ các hào đang nhập và quay lại trang gieo quẻ?'
+            : 'Bỏ câu hỏi và phương pháp gieo quẻ rồi quay lại trang gieo quẻ?'}
         </ConfirmationDialog>
       )}
     </main>
