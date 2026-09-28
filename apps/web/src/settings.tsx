@@ -68,10 +68,14 @@ export function SettingsPage() {
   }, []);
 
   async function installApp() {
-    const choice = await triggerPwaInstallPrompt();
-    if (!choice) return;
-    setInstallMessage(choice === 'accepted' ? 'Đã bắt đầu cài đặt.' : 'Chưa bắt đầu cài đặt.');
-    setInstallPrompt(null);
+    try {
+      const choice = await triggerPwaInstallPrompt();
+      if (!choice) return;
+      setInstallMessage(choice === 'accepted' ? 'Đã bắt đầu cài đặt.' : 'Chưa bắt đầu cài đặt.');
+      setInstallPrompt(null);
+    } catch {
+      setInstallMessage('Không thể bắt đầu cài đặt.');
+    }
   }
 
   return (
