@@ -123,6 +123,60 @@
       "title": "Vietnamese product language",
       "status": "done",
       "depends_on": ["feat-012"]
+    },
+    {
+      "id": "feat-019",
+      "title": "Correct static-line changed annotations",
+      "status": "todo",
+      "depends_on": ["feat-008"]
+    },
+    {
+      "id": "feat-020",
+      "title": "Capture PWA install prompts globally",
+      "status": "todo",
+      "depends_on": ["feat-010"]
+    },
+    {
+      "id": "feat-021",
+      "title": "Make update acceptance bypass transient",
+      "status": "todo",
+      "depends_on": ["feat-011"]
+    },
+    {
+      "id": "feat-022",
+      "title": "Correct changed-result facts and Library links",
+      "status": "todo",
+      "depends_on": ["feat-008", "feat-019"]
+    },
+    {
+      "id": "feat-023",
+      "title": "Complete Library rule and source relationships",
+      "status": "todo",
+      "depends_on": ["feat-009"]
+    },
+    {
+      "id": "feat-024",
+      "title": "Preserve automatic-casting evidence and align UX contract",
+      "status": "todo",
+      "depends_on": ["feat-007"]
+    },
+    {
+      "id": "feat-025",
+      "title": "Add web release-flow regression coverage",
+      "status": "todo",
+      "depends_on": ["feat-012", "feat-019", "feat-020", "feat-021", "feat-024"]
+    },
+    {
+      "id": "feat-026",
+      "title": "Reconcile product specs and feature lifecycle evidence",
+      "status": "todo",
+      "depends_on": ["feat-024", "feat-025"]
+    },
+    {
+      "id": "feat-027",
+      "title": "Make Library ID search exact and show complete relationships",
+      "status": "todo",
+      "depends_on": ["feat-009"]
     }
   ]
 }
