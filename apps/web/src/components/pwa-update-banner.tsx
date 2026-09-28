@@ -42,8 +42,14 @@ export function PwaUpdateBanner() {
 
   async function acceptUpdate() {
     setConfirming(false);
-    signalUpdateAccepted();
-    await applyPwaUpdate();
+    try {
+      await applyPwaUpdate(() => {
+        signalUpdateAccepted();
+        window.location.reload();
+      });
+    } catch {
+      // Keep the current page and any in-memory reading when the update fails.
+    }
   }
 
   return (

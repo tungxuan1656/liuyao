@@ -13,6 +13,7 @@ const initialSnapshot: PwaUpdateSnapshot = {
 let snapshot = initialSnapshot;
 let initialized = false;
 let updateServiceWorker: ((reloadPage?: boolean) => Promise<void>) | undefined;
+let onNeedReload: (() => void) | undefined;
 const subscribers = new Set<() => void>();
 
 function publish(update: Partial<PwaUpdateSnapshot>) {
@@ -37,6 +38,11 @@ export function initPwaUpdate(): void {
     onNeedRefresh() {
       publish({ updateAvailable: true });
     },
+    onNeedReload() {
+      const reload = onNeedReload;
+      onNeedReload = undefined;
+      reload?.();
+    },
     onOfflineReady() {
       publish({ offlineReady: true });
     },
@@ -52,7 +58,13 @@ export function getPwaUpdateSnapshot(): PwaUpdateSnapshot {
   return snapshot;
 }
 
-export async function applyPwaUpdate(): Promise<void> {
+export async function applyPwaUpdate(reload: () => void): Promise<void> {
   if (!updateServiceWorker || !snapshot.updateAvailable) return;
-  await updateServiceWorker(true);
+  onNeedReload = reload;
+  try {
+    await updateServiceWorker(true);
+  } catch (error) {
+    onNeedReload = undefined;
+    throw error;
+  }
 }

@@ -483,3 +483,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed. Headless Chromium simulated Home `beforeinstallprompt` → Settings use → dismissed outcome and cleared action; native install was not tested.
 - Handoff: feat-020 implementation complete on `feat/020-global-install-prompt`; integration and issue #26 closure remain.
 - Next: Integrate feat-020 and confirm issue #26 closed before starting feat-021.
+
+# 2026-09-28 — feat-021
+
+- Result: Update bypass is armed only in the service-worker takeover reload callback, not when update acceptance is clicked; failed/no-op application and cancellation cannot arm it by code inspection.
+- Verification: `./init.sh` passed. Oracle reviewed the implementation. Headless Chrome 148 registered a waiting worker and cancellation was observed; a synthetic casting `beforeunload` was prevented. Successful takeover/reload and rejected/no-op acceptance were not runtime-tested. User approved code-inspection evidence for these gaps; automated regression is deferred to feat-025.
+- Handoff: feat-021 implementation complete on `feat/021-transient-update-bypass`; integration and issue #27 closure remain.
+- Next: Integrate feat-021 and confirm issue #27 closed, then start feat-022.
