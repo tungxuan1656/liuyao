@@ -40,6 +40,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none for the knowledge localization stage.
 **Next**: Commit the glossary, then localize catalog fields and add no-Han contract tests.
 
+## 2026-09-28 — feat-018 knowledge localization
+
+**State**: active on `feat/018-vietnamese-language`.
+**Done**: Localized all knowledge entities, terms, rules, source descriptions, references, and package metadata; removed the Han display field; kept stable IDs and core pair mappings. Added full-catalog CJK, canonical-name, and Vietnamese search assertions.
+**Evidence**: `pnpm --filter @liuyao/knowledge test` (7 files, 41 tests passed); `pnpm --filter @liuyao/knowledge typecheck`; `git diff --check`.
+**Blockers**: none.
+**Next**: Commit the knowledge package stage, then localize the reading and navigation UI.
+
 ## 2026-09-25 — feat-001
 
 **State**: done, pending PR review and merge.

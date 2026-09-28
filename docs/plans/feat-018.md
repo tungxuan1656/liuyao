@@ -38,10 +38,10 @@
 
 **Produces:** A reviewed glossary for the eight trigrams, 64 hexagrams, line/polarity terms, stems/branches, Five Elements, Six Relatives, palace, and Shi/Ying. The glossary is the editorial source for Tasks 2–4.
 
-- [ ] Inventory each knowledge field and every UI surface in the Files table. Classify text as Vietnamese content, a technical identifier, a source URL, or developer-only diagnostic.
+- [x] Inventory knowledge fields and catalog surfaces. Classify text as Vietnamese content, technical identifiers, source URLs, or developer-only diagnostics.
 - [x] Record one canonical Vietnamese name for each trigram and hexagram, plus reviewed core terms, in `docs/product-specs/vietnamese-language.md`. Use full Vietnamese diacritics.
 - [x] Cross-check the 64 names and ordering against a Vietnamese-language reference and cross-check core Liu Yao terms against Vietnamese usage; record sources and avoid asserting a disputed school convention as universal.
-- [ ] Confirm bibliographic titles and names use Vietnamese or Latin transliteration, with URLs retained for traceability and no Han-script text in local records.
+- [x] Confirm bibliographic titles and names use Vietnamese or Latin transliteration, with URLs retained for traceability and no Han-script text in local records.
 - [x] Update the language spec with the glossary table before translating the dataset. Keep the table as the single canonical owner of approved Vietnamese domain labels.
 - [x] Commit the approved glossary and language decision as `docs(feat-018): define Vietnamese Liu Yao terminology`.
 
@@ -53,13 +53,13 @@
 
 **Produces:** A knowledge catalog whose natural-language display fields are Vietnamese and whose entity schema has no `han` field. Existing IDs and record links remain unchanged.
 
-- [ ] Add a knowledge test that traverses entity names, aliases, explanations, term names/definitions, rule titles/explanations, source metadata, and reference locations; assert none contain Han characters or CJK punctuation/full-width characters.
-- [ ] Add independent assertions for all eight canonical Vietnamese trigram names and all 64 canonical Vietnamese hexagram names from the reviewed glossary.
-- [ ] Update schema fixtures and validator expectations to remove `han`; require non-empty Vietnamese display fields without changing record IDs or cross-reference validation.
-- [ ] Translate trigram and hexagram names/explanations, term names/aliases/definitions, and rule titles/explanations using the reviewed glossary. Replace English and Mandarin romanized aliases with only reviewed Vietnamese aliases.
-- [ ] Translate source titles, authors, publication/rights/provenance descriptions, and reference locations into Vietnamese or Latin-script Vietnamese transliteration. Keep source URLs and rights statements accurate; do not invent editions, quotations, or page locations.
-- [ ] Update search tests to cover Vietnamese canonical names, reviewed aliases, diacritic/case normalization, no-match behavior, and the absence of Han/English alias matching. Preserve stable result ordering.
-- [ ] Run `pnpm --filter @liuyao/knowledge test` and `pnpm --filter @liuyao/knowledge typecheck`.
+- [x] Add a knowledge test that traverses entity names, aliases, explanations, term names/definitions, rule titles/explanations, source metadata, and reference locations; assert none contain Han characters or CJK punctuation/full-width characters.
+- [x] Add independent assertions for all eight canonical Vietnamese trigram names and all 64 canonical Vietnamese hexagram names from the reviewed glossary.
+- [x] Update schema fixtures and validator expectations to remove `han`; require non-empty Vietnamese display fields without changing record IDs or cross-reference validation.
+- [x] Translate trigram and hexagram names/explanations, term names/aliases/definitions, and rule titles/explanations using the reviewed glossary. Replace English and Mandarin romanized aliases with only reviewed Vietnamese aliases.
+- [x] Translate source titles, authors, publication/rights/provenance descriptions, and reference locations into Vietnamese or Latin-script Vietnamese transliteration. Keep source URLs and rights statements accurate; do not invent editions, quotations, or page locations.
+- [x] Update search tests to cover Vietnamese canonical names, reviewed aliases, diacritic/case normalization, no-match behavior, and the absence of Han/English alias matching. Preserve stable result ordering.
+- [x] Run `pnpm --filter @liuyao/knowledge test` and `pnpm --filter @liuyao/knowledge typecheck`.
 - [ ] Commit the knowledge schema, catalog, and tests as `feat(knowledge): localize Vietnamese reference catalog`.
 
 ### Task 3: Localize reading setup, casting, and shared dialogs

@@ -20,7 +20,7 @@ export function normalizeKnowledgeQuery(value: string): string {
 }
 
 function searchableText(record: KnowledgeSearchRecord): readonly string[] {
-  if ('kind' in record) return [record.name, record.han, ...record.aliases];
+  if ('kind' in record) return [record.name, ...record.aliases];
   if ('definition' in record) return [record.name, ...record.aliases, record.definition];
   return [record.title, record.explanation];
 }

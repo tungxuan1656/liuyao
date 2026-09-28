@@ -22,13 +22,12 @@ export interface KnowledgeMetadata {
 }
 
 /**
- * Returns basic information about the LiuYao knowledge repository.
+ * Returns basic information about the Lục Hào knowledge repository.
  */
 export function getKnowledgeMetadata(): KnowledgeMetadata {
   return {
-    name: 'LiuYao Structured Knowledge Base',
-    description:
-      'Structured terminology, hexagram reference data, and classical sources for Lục Hào divination',
+    name: 'Kho tri thức Lục Hào',
+    description: 'Thuật ngữ, dữ liệu tham khảo về quẻ và thông tin thư mục kinh điển.',
     sourceCount: listSources().length,
   };
 }

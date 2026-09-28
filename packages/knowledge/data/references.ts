@@ -5,8 +5,7 @@ export const REFERENCES = [
     id: 'reference-zhouyi-trigram-associations',
     sourceId: 'source-zhouyi',
     targetIds: ['term-trigram'],
-    location:
-      'Shuo Gua（說卦傳），discussion of the eight trigrams and their associated qualities。',
+    location: 'Thiên Thuyết Quái, phần bàn về tám quái và các thuộc tính gắn với chúng.',
   },
   {
     id: 'reference-contract-reading-result',
@@ -17,36 +16,36 @@ export const REFERENCES = [
       'rule-line-polarity-values',
       'rule-trigram-composition',
     ],
-    location: 'ReadingResult, PrimaryLineResult, and the V1 calculation functions.',
+    location: 'Các cấu trúc dữ liệu kết quả gieo quẻ, kết quả từng hào và hàm tính phiên bản 1.',
   },
   {
     id: 'reference-zengshan-palace-markers',
     sourceId: 'source-zengshan-buyi',
     targetIds: ['rule-palace-and-markers'],
-    location: 'Book 1, chapters 3 (Eight Palaces) and 6 (Shi and Ying).',
+    location: 'Quyển 1, chương 3 (Bát cung) và chương 6 (Thế và Ứng).',
   },
   {
     id: 'reference-zengshan-na-jia',
     sourceId: 'source-zengshan-buyi',
     targetIds: ['rule-na-jia-assignment'],
-    location: 'Book 1, chapter 4 (Hun Tian Jiazi / Na Jia).',
+    location: 'Quyển 1, chương 4 (Nạp Giáp).',
   },
   {
     id: 'reference-zengshan-moving-change',
     sourceId: 'source-zengshan-buyi',
     targetIds: ['rule-moving-line-change'],
-    location: 'Book 1, chapter 7 (moving lines and change).',
+    location: 'Quyển 1, chương 7 (hào động và sự biến đổi).',
   },
   {
     id: 'reference-zengshan-five-elements',
     sourceId: 'source-zengshan-buyi',
     targetIds: ['rule-branch-element', 'rule-five-element-cycles'],
-    location: 'Book 1, chapters 11–12 (Five Element generation and control).',
+    location: 'Quyển 1, chương 11–12 (ngũ hành tương sinh và tương khắc).',
   },
   {
     id: 'reference-zengshan-six-relatives',
     sourceId: 'source-zengshan-buyi',
     targetIds: ['rule-six-relative-classification'],
-    location: 'Book 1, chapter 5 (Six Relatives).',
+    location: 'Quyển 1, chương 5 (Lục thân).',
   },
 ] as const satisfies readonly SourceReference[];

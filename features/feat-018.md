@@ -50,6 +50,6 @@ Implementation stages and file ownership are in `docs/plans/feat-018.md`.
 ## Handoff
 
 - State: active; user approved branch-based implementation, staged commits, and PR creation on 2026-09-28.
-- Evidence: Vietnamese-only language decision and terminology boundary recorded in `docs/product-specs/vietnamese-language.md` on 2026-09-28. Canonical 8-trigram and 64-hexagram names and a core terminology glossary were added before catalog translation. Plan commit precedes implementation commits.
+- Evidence: Vietnamese-only language decision and terminology boundary recorded in `docs/product-specs/vietnamese-language.md` on 2026-09-28. Canonical 8-trigram and 64-hexagram names and core terminology were reviewed before catalog translation. Knowledge contract tests assert all names, Vietnamese search behavior, stable core mappings, and no Han/CJK text in catalog fields; knowledge test (41/41) and typecheck pass.
 - Dependency check: feat-012 is done.
-- Next: Commit the glossary and source notes, then localize and validate the knowledge package.
+- Next: Commit the knowledge package stage, then localize the reading and navigation UI.
