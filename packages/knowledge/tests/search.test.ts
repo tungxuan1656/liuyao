@@ -32,6 +32,20 @@ describe('local knowledge search', () => {
         id,
       ).toContain(id);
     }
+    expect(searchKnowledge(' HEXAGRAM—01 ').map(match => match.record.id)).toEqual(['hexagram-01']);
+    expect(searchKnowledge('TRIGRAM-HEAVEN').map(match => match.record.id)).toContain(
+      'trigram-heaven',
+    );
+    expect(searchKnowledge('hexagram-0').map(match => match.record.id)).not.toContain(
+      'hexagram-01',
+    );
+    expect(searchKnowledge('rule-na').map(match => match.record.id)).not.toContain(
+      'rule-na-jia-assignment',
+    );
+    expect(searchKnowledge('term-na').map(match => match.record.id)).not.toContain('term-na-jia');
+    expect(searchKnowledge('trigram-heav').map(match => match.record.id)).not.toContain(
+      'trigram-heaven',
+    );
     expect(searchKnowledge('乾')).toEqual([]);
     for (const nonVietnameseAlias of ['Qian', 'Heaven', 'Yin line', 'Na Jia', 'Wu Xing']) {
       expect(searchKnowledge(nonVietnameseAlias), nonVietnameseAlias).toEqual([]);

@@ -118,12 +118,10 @@ export function getRelatedFigures(record: LibraryRecord): KnowledgeEntity[] {
         (item): item is KnowledgeEntity => Boolean(item),
       )
     : 'kind' in record && record.kind === 'trigram'
-      ? listKnowledgeEntities()
-          .filter(
-            (item): item is Extract<KnowledgeEntity, { kind: 'hexagram' }> =>
-              item.kind === 'hexagram' &&
-              (item.upperTrigramId === record.id || item.lowerTrigramId === record.id),
-          )
-          .slice(0, 6)
+      ? listKnowledgeEntities().filter(
+          (item): item is Extract<KnowledgeEntity, { kind: 'hexagram' }> =>
+            item.kind === 'hexagram' &&
+            (item.upperTrigramId === record.id || item.lowerTrigramId === record.id),
+        )
       : [];
 }

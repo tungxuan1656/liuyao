@@ -1,5 +1,4 @@
 import { Link, useParams } from 'react-router-dom';
-import type { KnowledgeEntity } from '@liuyao/knowledge';
 import { ROUTES } from './route-paths';
 import {
   getRecord,
@@ -81,11 +80,17 @@ export function LibraryDetailPage() {
         )}
         {related.length > 0 && !('upperTrigramId' in record) && (
           <section className="detail-section">
-            <h2>Quẻ liên quan</h2>
+            <h2>
+              Quẻ liên quan <span className="related-count">{related.length} quẻ</span>
+            </h2>
             <div className="related-grid">
-              {related.map((item: KnowledgeEntity) => (
+              {related.map(item => (
                 <Link key={item.id} className="related-link" to={recordPath(item)}>
-                  <span>{item.kind === 'trigram' ? 'Quái' : 'Quẻ'}</span>
+                  <span>
+                    {'kingWenNumber' in item
+                      ? `Quẻ số ${String(item.kingWenNumber).padStart(2, '0')}`
+                      : 'Quái'}
+                  </span>
                   <strong>{item.name}</strong>
                 </Link>
               ))}

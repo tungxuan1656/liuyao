@@ -17,11 +17,11 @@ Make stable-ID search predictable and prevent related-hexagram results from disa
 
 ## Acceptance
 
-- [ ] Full stable ID queries resolve exactly as documented.
-- [ ] Partial technical IDs return no ID match, or the spec explicitly supports partial matching.
-- [ ] Tests cover exact and partial ID behavior.
-- [ ] Trigram detail shows all related hexagrams or clearly indicates total and access to the rest.
-- [ ] `./init.sh` passes.
+- [x] Full stable ID queries resolve exactly as documented.
+- [x] Partial technical IDs return no ID match, or the spec explicitly supports partial matching.
+- [x] Tests cover exact and partial ID behavior.
+- [x] Trigram detail shows all related hexagrams or clearly indicates total and access to the rest.
+- [x] `./init.sh` passes.
 
 ## Relevant docs
 
@@ -39,7 +39,7 @@ Make stable-ID search predictable and prevent related-hexagram results from disa
 
 ## Handoff
 
-- State: todo
-- Evidence: Issue #33 confirmed; implementation not started.
+- State: done
+- Evidence: Full normalized stable IDs now match exactly, while partial technical IDs no longer match by ID; package regression tests cover `hexagram-0`, `rule-na`, term/trigram fragments and full IDs without changing Vietnamese prose/alias matching. Trigram detail renders all related hexagrams and their count. `./init.sh` passed on 2026-09-28 (one existing lint warning), and the 12-test release suite passed before the final regression-test-only edit; responsive browser behavior was not visually inspected.
 - Dependency check: feat-009 is done.
-- Next: Verify dependencies, then select the feature for implementation.
+- Next: Integrate PR and confirm issue #33 closed after merge.

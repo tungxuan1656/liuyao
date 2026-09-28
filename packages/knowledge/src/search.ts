@@ -60,7 +60,7 @@ export function searchKnowledge(query: string): readonly KnowledgeSearchMatch[] 
   for (const [kind, records] of collections) {
     for (const record of records) {
       const fields = searchableText(record);
-      const idQuery = query.includes('-') && normalizeExact(fields.id).includes(exactQuery);
+      const idQuery = normalizeExact(fields.id) === exactQuery;
       const exactMatch =
         idQuery || fields.prose.some(text => normalizeExact(text).includes(exactQuery));
       const foldedMatch =
