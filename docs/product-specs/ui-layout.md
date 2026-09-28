@@ -124,6 +124,7 @@ Used during active line input before calculation. Governed by the rules in `read
     - Chỉ báo bước: `Hào 1 trên 6` đến `Hào 6 trên 6`.
     - Bottom-to-top sequence.
     - Có nút `[ Quay lại ]` để về hào trước mà không xóa dữ liệu đã nhập.
+    - Automatic mode has one explicit three-coin toss action per line. Show its generated outcome before moving to the next line; revisiting a completed line must preserve its original toss. Reset discards the complete automatic draft before any new tosses.
   - **Direct-entry mode**:
     - All 6 line positions are visible simultaneously on one screen.
     - Presented visually in board orientation from Line 6 (top) down to Line 1 (bottom), while keeping canonical domain state in bottom-to-top order (1 to 6).

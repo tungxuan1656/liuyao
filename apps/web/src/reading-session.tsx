@@ -1,5 +1,11 @@
 import { createContext, useContext, useRef, useState, type ReactNode } from 'react';
-import type { LineValue, ReadingResult } from '@liuyao/core';
+import {
+  createAutomaticTossSnapshot,
+  type AutomaticTossSnapshot,
+  type CoinTossResult,
+  type LineValue,
+  type ReadingResult,
+} from '@liuyao/core';
 
 export type ReadingMethod = 'automatic' | 'manual' | 'direct';
 
@@ -8,14 +14,23 @@ type ReadingDraft = {
   method: ReadingMethod;
   lines: number[];
   step: number;
+  tosses?: readonly CoinTossResult[];
 };
 
-type ActiveReading = {
+type ReadingBase = {
   question: string;
-  method: ReadingMethod;
   lines: readonly LineValue[];
   result: ReadingResult;
 };
+
+type ReadingCompletion = ReadingBase & {
+  method: ReadingMethod;
+  tosses?: readonly CoinTossResult[];
+};
+
+export type ActiveReading =
+  | (ReadingBase & { method: 'automatic'; tosses: AutomaticTossSnapshot })
+  | (ReadingBase & { method: 'manual' | 'direct'; tosses?: never });
 
 type ReadingSessionValue = {
   question: string;
@@ -25,7 +40,7 @@ type ReadingSessionValue = {
   setQuestion: (question: string) => void;
   setMethod: (method: ReadingMethod) => void;
   setDraft: (draft: ReadingDraft | null) => void;
-  completeReading: (reading: ActiveReading) => void;
+  completeReading: (reading: ReadingCompletion) => void;
   clearReading: () => void;
   clearSession: () => void;
   updateAccepted: boolean;
@@ -55,7 +70,29 @@ export function ReadingSessionProvider({ children }: { children: ReactNode }) {
         setMethod,
         setDraft,
         completeReading: nextReading => {
-          setReading(nextReading);
+          if (nextReading.method === 'automatic') {
+            if (!nextReading.tosses) {
+              throw new TypeError('Automatic readings require six toss records.');
+            }
+            const tosses = createAutomaticTossSnapshot(nextReading.tosses);
+            if (tosses.some((toss, index) => toss.line !== nextReading.lines[index])) {
+              throw new TypeError('Automatic toss evidence must match the reading lines.');
+            }
+            setReading({
+              question: nextReading.question,
+              method: 'automatic',
+              lines: nextReading.lines,
+              result: nextReading.result,
+              tosses,
+            });
+          } else {
+            setReading({
+              question: nextReading.question,
+              method: nextReading.method,
+              lines: nextReading.lines,
+              result: nextReading.result,
+            });
+          }
           setDraft(null);
         },
         clearReading: () => setReading(null),

@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import {
   CastingService,
+  appendAutomaticToss,
+  createAutomaticTossSnapshot,
   InvalidReadingInputError,
   calculateHexagram,
   calculateReading,
@@ -131,6 +133,35 @@ describe('casting core', () => {
       result.tosses.map(toss => toss.line),
     );
     expect(result.input.lines).toEqual(result.tosses.map(toss => toss.line));
+  });
+
+  it('assembles immutable six-line evidence from incremental tosses', () => {
+    const stream = triples.slice(0, 6).flatMap(({ coins }) => coins);
+    let calls = 0;
+    const service = new CastingService(() => stream[calls++] as 0 | 1);
+    let tosses = [] as ReturnType<typeof service.toss>[];
+    for (let index = 0; index < 6; index += 1) {
+      const previous = tosses;
+      tosses = [...appendAutomaticToss(tosses, service.toss())];
+      expect(previous).not.toBe(tosses);
+    }
+
+    const snapshot = createAutomaticTossSnapshot(tosses);
+    expect(snapshot).toHaveLength(6);
+    expect(snapshot.map(toss => toss.line)).toEqual([6, 7, 7, 7, 8, 8]);
+    expect(Object.isFrozen(snapshot)).toBe(true);
+    expect(snapshot.every(toss => Object.isFrozen(toss) && Object.isFrozen(toss.coins))).toBe(true);
+    expect(() => createAutomaticTossSnapshot(tosses.slice(0, 5))).toThrow(TypeError);
+    expect(() =>
+      createAutomaticTossSnapshot(
+        tosses.map((toss, index) => (index === 0 ? { ...toss, line: 9 } : toss)),
+      ),
+    ).toThrow(TypeError);
+  });
+
+  it('rejects appending after six tosses', () => {
+    const toss = new CastingService(() => 0).toss();
+    expect(() => appendAutomaticToss(Array(6).fill(toss), toss)).toThrow(TypeError);
   });
 
   it('uses exactly three source calls per toss and rejects invalid source output', () => {
