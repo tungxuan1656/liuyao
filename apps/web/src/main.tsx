@@ -4,8 +4,10 @@ import { RouterProvider } from 'react-router-dom';
 import './index.css';
 import { router } from './routes';
 import { initPwaUpdate } from './lib/pwa-update';
+import { initPwaInstall } from './lib/pwa-install';
 
 initPwaUpdate();
+initPwaInstall();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

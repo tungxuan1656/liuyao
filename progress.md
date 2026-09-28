@@ -476,3 +476,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed; lint reported one pre-existing warning and zero errors.
 - Handoff: feat-019 implementation complete on `feat/019-static-line-annotations`; integration and issue #25 closure remain.
 - Next: Integrate feat-019 and confirm issue #25 closed before starting feat-020.
+
+# 2026-09-28 — feat-020
+
+- Result: Install prompt is captured at application startup and retained across navigation until Settings uses it.
+- Verification: `./init.sh` passed. Headless Chromium simulated Home `beforeinstallprompt` → Settings use → dismissed outcome and cleared action; native install was not tested.
+- Handoff: feat-020 implementation complete on `feat/020-global-install-prompt`; integration and issue #26 closure remain.
+- Next: Integrate feat-020 and confirm issue #26 closed before starting feat-021.
