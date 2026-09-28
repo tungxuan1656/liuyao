@@ -511,3 +511,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed. Core package tests cover toss snapshot integrity. UI flow was inspected in source but not browser-tested; web E2E was not added.
 - Handoff: feat-024 implementation complete on `feat/024-automatic-toss-evidence`; integration and issue #29 closure remain.
 - Next: Integrate feat-024 and confirm issue #29 closed before starting feat-025.
+
+# 2026-09-28 — feat-025
+
+- Result: Added root Playwright release E2E with deterministic casting, Library, offline and real two-build PWA update scenarios; CI now runs the suite. Reassessed F11 gaps in feat-012 without claiming a full release matrix.
+- Verification: `pnpm test:release` passed 12/12 on Playwright 1.63.0 / Chromium 153.0.8010.12 / macOS 26.5.1. `./init.sh` passed. Synthetic install-event handling is not native installation; other unverified F11 items remain listed in feat-012.
+- Handoff: feat-025 implementation complete on `feat/025-release-e2e`; PR integration and issue #31 closure remain.
+- Next: Merge feat-025 after CI, close issue #31, then start feat-026.
