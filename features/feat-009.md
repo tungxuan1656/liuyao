@@ -16,9 +16,9 @@ A user can browse, search, and deep-link V1 reference content (hexagrams, trigra
 
 ## Acceptance
 
-- [ ] Complete all F08 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`.
-- [ ] Meet the V1 completion condition: A user can browse, search, and deep-link V1 reference content (hexagrams, trigrams, terms, rules).
-- [ ] Pass the repository verification workflow in `./init.sh`.
+- [ ] Complete all F08 tasks and their evidence requirements in `docs/product-specs/v1-task-map.md`. The merged evidence confirms the tested library behavior, but does not establish the canonical F08-T10 coverage for related entities and applicable rule references across term, trigram, and hexagram details where modeled; the recorded browser check covers a trigram-to-hexagram link only.
+- [x] Meet the V1 completion condition: A user can browse, search, and deep-link V1 reference content (hexagrams, trigrams, terms, rules). PR #20 handoff records category counts, local search and alias behavior, and direct hexagram and rule detail URLs; merged PR evidence verifies library lists and detail navigation.
+- [x] Pass the repository verification workflow in `./init.sh`. The PR #20 handoff records a passing `./init.sh` run, including lint, typecheck, build, package exports, and knowledge tests; PR #20's `verify` CI check also passed.
 
 ## Relevant docs
 
