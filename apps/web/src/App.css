@@ -288,6 +288,56 @@
   grid-column: 1 / -1;
 }
 
+.automatic-casting h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+}
+
+.toss-progress {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+
+.toss-progress span {
+  display: grid;
+  min-height: 2.5rem;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
+.toss-progress .is-cast {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.toss-result {
+  display: grid;
+  min-height: 7rem;
+  place-content: center;
+  gap: 0.35rem;
+  padding: 1rem;
+  border-inline-start: 3px solid var(--primary);
+  background: var(--accent);
+  text-align: center;
+}
+
+.toss-result strong {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.toss-result span {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
 .error-message {
   padding: 0.75rem;
   border-inline-start: 3px solid var(--destructive);

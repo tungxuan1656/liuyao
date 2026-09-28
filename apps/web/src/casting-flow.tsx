@@ -1,10 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
-import { calculateReading, normalizeDirectInput, normalizeSequentialInput } from '@liuyao/core';
+import {
+  appendAutomaticToss,
+  calculateReading,
+  normalizeDirectInput,
+  normalizeSequentialInput,
+} from '@liuyao/core';
 import { useBlocker, useNavigate } from 'react-router-dom';
 import { ROUTES } from './route-paths';
 import { createBrowserCastingService } from './lib/browser-coin-source';
 import { useReadingSession } from './reading-session';
 import { ConfirmationDialog } from './components/confirmation-dialog';
+import { AutomaticCastingPanel } from './automatic-casting-panel';
 
 const validValues = [6, 7, 8, 9] as const;
 
@@ -17,8 +23,9 @@ export function CastingFlow() {
   const isLeavingAfterDiscard = useRef(false);
   const [resetLines, setResetLines] = useState(false);
   const [discard, setDiscard] = useState(false);
+  const isTossing = useRef(false);
   const lines = draft?.lines ?? [];
-  const hasInput = lines.length > 0;
+  const hasInput = lines.length > 0 || (draft?.tosses?.length ?? 0) > 0;
   const blocker = useBlocker(
     () => hasInput && !isCompleting.current && !isLeavingAfterDiscard.current,
   );
@@ -48,6 +55,7 @@ export function CastingFlow() {
         method: draft?.method ?? 'manual',
         lines: input.lines,
         result: calculateReading(input),
+        ...(draft?.method === 'automatic' ? { tosses: draft.tosses } : {}),
       });
       isCompleting.current = true;
       setError('');
@@ -86,12 +94,31 @@ export function CastingFlow() {
     }
   }
 
-  function castAutomatically() {
+  function castAutomaticLine() {
+    if (
+      isTossing.current ||
+      !draft ||
+      draft.method !== 'automatic' ||
+      draft.step !== (draft.tosses?.length ?? 0) ||
+      (draft.tosses?.length ?? 0) >= 6
+    ) {
+      return;
+    }
+    isTossing.current = true;
     try {
-      const values = createBrowserCastingService().cast().input.lines;
-      finish([...values]);
+      const toss = createBrowserCastingService().toss();
+      const tosses = appendAutomaticToss(draft.tosses ?? [], toss);
+      setDraft({
+        ...draft,
+        tosses,
+        lines: [...lines, toss.line],
+        step: Math.min(tosses.length - 1, 5),
+      });
+      setError('');
     } catch {
       setError('Không thể gieo tự động an toàn trên trình duyệt này. Hãy chọn phương pháp khác.');
+    } finally {
+      isTossing.current = false;
     }
   }
 
@@ -137,12 +164,15 @@ export function CastingFlow() {
         <p className="question-summary">Câu hỏi (chỉ trong phiên này): {draft.question}</p>
       )}
       {draft.method === 'automatic' ? (
-        <section className="reading-card">
-          <p>Sáu giá trị hào sẽ được tạo bằng bộ sinh số ngẫu nhiên an toàn của trình duyệt.</p>
-          <button type="button" onClick={castAutomatically}>
-            Gieo sáu hào
-          </button>
-        </section>
+        <AutomaticCastingPanel
+          step={step}
+          lines={lines}
+          tosses={draft.tosses ?? []}
+          onBack={() => setDraft({ ...draft, step: step - 1 })}
+          onNext={() => setDraft({ ...draft, step: step + 1 })}
+          onToss={castAutomaticLine}
+          onFinish={() => finish(lines)}
+        />
       ) : direct ? (
         <section
           className="reading-card line-entry-list"
@@ -213,7 +243,7 @@ export function CastingFlow() {
         className="secondary-action"
         onClick={() => {
           if (hasInput) setResetLines(true);
-          else if (draft) setDraft({ ...draft, lines: [], step: 0 });
+          else if (draft) setDraft({ ...draft, lines: [], step: 0, tosses: [] });
           setError('');
         }}
       >
@@ -231,7 +261,7 @@ export function CastingFlow() {
           confirmLabel="Xóa các hào"
           onCancel={() => setResetLines(false)}
           onConfirm={() => {
-            if (draft) setDraft({ ...draft, lines: [], step: 0 });
+            if (draft) setDraft({ ...draft, lines: [], step: 0, tosses: [] });
             setResetLines(false);
           }}
         >

@@ -26,7 +26,7 @@ The flow starts with the first line and ends with the sixth line.
 
 ### Automatic casting
 
-The app generates six three-coin outcomes.
+The user casts one line at a time, from the first (bottom) to the sixth (top). Each action generates one three-coin outcome and reveals its line value. The user proceeds to the next line until all six outcomes are present; the app then calculates the reading. Keep the six raw three-coin outcomes with the active in-memory automatic reading. Returning to an already cast line must not generate or replace its outcome without an explicit reset.
 
 Each line must follow this distribution:
 

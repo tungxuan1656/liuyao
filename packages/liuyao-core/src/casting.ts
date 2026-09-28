@@ -21,6 +21,48 @@ export type CastingResult = {
   readonly input: HexagramReadingInput;
 };
 
+export type AutomaticTossSnapshot = readonly [
+  CoinTossResult,
+  CoinTossResult,
+  CoinTossResult,
+  CoinTossResult,
+  CoinTossResult,
+  CoinTossResult,
+];
+
+function copyValidatedToss(toss: CoinTossResult): CoinTossResult {
+  const copiedCoins = [...toss.coins] as [CoinBit, CoinBit, CoinBit];
+  if (mapCoinsToLine(copiedCoins) !== toss.line) {
+    throw new TypeError('Each toss line must match its three coin values.');
+  }
+  return Object.freeze({ coins: Object.freeze(copiedCoins), line: toss.line });
+}
+
+/** Copy and freeze six bottom-to-top tosses, rejecting mismatched coin/line evidence. */
+export function createAutomaticTossSnapshot(
+  tosses: readonly CoinTossResult[],
+): AutomaticTossSnapshot {
+  if (!Array.isArray(tosses) || tosses.length !== 6) {
+    throw new TypeError('An automatic toss snapshot must contain exactly six tosses.');
+  }
+
+  const snapshot = tosses.map(copyValidatedToss) as unknown as AutomaticTossSnapshot;
+
+  return Object.freeze(snapshot);
+}
+
+/** Append one line's evidence without mutating the prior sequence. */
+export function appendAutomaticToss(
+  tosses: readonly CoinTossResult[],
+  toss: CoinTossResult,
+): readonly CoinTossResult[] {
+  if (!Array.isArray(tosses) || tosses.length >= 6) {
+    throw new TypeError('An automatic reading cannot contain more than six tosses.');
+  }
+  tosses.forEach(copyValidatedToss);
+  return Object.freeze([...tosses.map(copyValidatedToss), copyValidatedToss(toss)]);
+}
+
 function isCoinBit(value: unknown): value is CoinBit {
   return value === 0 || value === 1;
 }

@@ -504,3 +504,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed; knowledge regression tests cover accepted/retrievable figure references and broken targets. Browser interaction was not tested.
 - Handoff: feat-023 implementation complete on `feat/023-library-relationships`; integration and issue #30 closure remain.
 - Next: Integrate feat-023 and confirm issue #30 closed before starting feat-024.
+
+# 2026-09-28 — feat-024
+
+- Result: Automatic casting now proceeds one line at a time; six immutable three-coin outcomes remain with the active reading, without invented manual/direct tosses.
+- Verification: `./init.sh` passed. Core package tests cover toss snapshot integrity. UI flow was inspected in source but not browser-tested; web E2E was not added.
+- Handoff: feat-024 implementation complete on `feat/024-automatic-toss-evidence`; integration and issue #29 closure remain.
+- Next: Integrate feat-024 and confirm issue #29 closed before starting feat-025.
