@@ -141,6 +141,7 @@ export function ResultView() {
               id: 'result.primaryHexagramId',
               label: 'Quẻ chính',
               value: hexagramLabel(reading.result.primaryHexagramId),
+              libraryTarget: { kind: 'hexagram', id: reading.result.primaryHexagramId },
             }}
             onSelect={selectFact}
           />

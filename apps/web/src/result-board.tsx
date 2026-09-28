@@ -93,6 +93,7 @@ export function HexagramBoard({
                 id: 'result.upperTrigramId',
                 label: 'Ngoại quái',
                 value: trigramLabel(trigramIds?.upper ?? result.upperTrigramId),
+                libraryTarget: { kind: 'trigram', id: trigramIds?.upper ?? result.upperTrigramId },
               }}
               onSelect={select}
             />
@@ -101,12 +102,24 @@ export function HexagramBoard({
                 id: 'result.lowerTrigramId',
                 label: 'Nội quái',
                 value: trigramLabel(trigramIds?.lower ?? result.lowerTrigramId),
+                libraryTarget: { kind: 'trigram', id: trigramIds?.lower ?? result.lowerTrigramId },
               }}
               onSelect={select}
             />
           </>
         )}
       </div>
+      {changed && changedId && (
+        <FactButton
+          fact={{
+            id: 'result.changedHexagramId',
+            label: 'Quẻ biến',
+            value: hexagramLabel(changedId),
+            libraryTarget: { kind: 'hexagram', id: changedId },
+          }}
+          onSelect={select}
+        />
+      )}
       {changed ? (
         <ol
           className="hexagram-lines"
