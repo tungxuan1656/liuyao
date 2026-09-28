@@ -20,7 +20,7 @@ Allow the intentional update reload without letting a failed update bypass draft
 - [x] Ordinary close/reload with entered casting lines retains unload protection (code review and synthetic `beforeunload` event; native prompt not tested).
 - [x] Accepted updates can reload without the casting guard blocking them (code review; runtime takeover/reload not tested).
 - [x] Cancellation never arms the bypass (code review and browser confirmation cancellation).
-- [x] Regression coverage exercises unsuccessful update application (user-approved code-review evidence only; executable E2E deferred to feat-025).
+- [x] Regression coverage exercises unsuccessful update application (exception: no executable regression in this feature; user approved code-inspection evidence and deferral to feat-025).
 - [x] `./init.sh` passes.
 
 ## Relevant docs
@@ -40,6 +40,6 @@ Allow the intentional update reload without letting a failed update bypass draft
 ## Handoff
 
 - State: done, with user-approved runtime and automated-regression limitations.
-- Evidence: Oracle reviewed the callback implementation and confirmed that no-op, rejection and cancellation cannot arm the bypass; only `onNeedReload` arms it immediately before reload, and the casting `beforeunload` handler consumes it once. `./init.sh` passed on 2026-09-28. Headless Chrome 148 on macOS registered a real waiting worker and showed the cancellation dialog; a synthetic `beforeunload` event after entering a line was prevented. The browser fixture did not establish actual takeover/reload or a rejected/no-op acceptance. The user explicitly approved code-inspection evidence for these paths; runtime is **not tested**, and executable regression coverage is deferred to feat-025.
+- Evidence: Oracle's read-only review of PR #37 at `af6884004314337a7d6bba177944be2590fb4aa6` found no blocking code defect. No-op, rejection and cancellation cannot arm the bypass; only `onNeedReload` arms it immediately before reload, and casting `beforeunload` consumes it once. The draft-safe confirmation UI remains unchanged. `./init.sh` passed on 2026-09-28. Headless Chrome 148 on macOS registered a real waiting worker and showed cancellation; a synthetic `beforeunload` after entering a line was prevented. Actual takeover/reload and rejected/no-op acceptance were **not runtime-tested**. The user approved code inspection as an explicit exception; executable regression coverage is deferred to feat-025.
 - Dependency check: feat-011 is done.
 - Next: Integrate the branch, close issue #27 after merge, and add release-flow E2E coverage in feat-025.
