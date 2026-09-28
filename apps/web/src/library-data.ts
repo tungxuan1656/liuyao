@@ -68,6 +68,13 @@ export function getReferences(id: string) {
     );
 }
 
+export function getApplicableRules(record: LibraryRecord): KnowledgeRule[] {
+  if (!('applicableRuleIds' in record) || !record.applicableRuleIds) return [];
+  return record.applicableRuleIds
+    .map(ruleId => getRule(ruleId))
+    .filter((rule): rule is KnowledgeRule => Boolean(rule));
+}
+
 export function getLibraryRecords(category: Category, query: string): readonly LibraryRecord[] {
   const matches = query.trim() ? searchKnowledge(query) : null;
   return matches

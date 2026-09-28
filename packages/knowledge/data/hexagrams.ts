@@ -127,5 +127,6 @@ export const HEXAGRAMS = DISPLAY_NAMES.map((name, index) => {
     kingWenNumber: index + 1,
     upperTrigramId,
     lowerTrigramId,
+    applicableRuleIds: ['rule-trigram-composition'],
   };
 }) as readonly HexagramRecord[];

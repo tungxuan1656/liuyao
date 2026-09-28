@@ -85,6 +85,7 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
   const ruleIds = new Set<string>();
   const sourceIds = new Set<string>();
   const references: { sourceId: string; targetIds: readonly string[]; path: string }[] = [];
+  const applicableRuleRefs: { ruleIds: readonly string[]; path: string }[] = [];
   const trigramIds = new Set<string>();
 
   (root.entities as unknown[]).forEach((raw, index) => {
@@ -93,13 +94,21 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       fail(path, 'expected an object');
     const kind = (raw as Record<string, unknown>).kind;
     if (kind === 'trigram') {
-      const item = record(raw, path, ['kind', 'id', 'name', 'aliases', 'explanation']);
+      const item = record(raw, path, [
+        'kind',
+        'id',
+        'name',
+        'aliases',
+        'explanation',
+        ...(hasApplicableRules(raw) ? ['applicableRuleIds'] : []),
+      ]);
       if (typeof item.id !== 'string' || !TRIGRAM_IDS.has(item.id as TrigramId))
         fail(`${path}.id`, 'expected a core trigram ID');
       const entityId = register(item.id, path);
       text(item.name, `${path}.name`);
       stringArray(item.aliases, `${path}.aliases`);
       text(item.explanation, `${path}.explanation`);
+      validateApplicableRuleIds(item.applicableRuleIds, `${path}.applicableRuleIds`);
       entityIds.add(entityId);
       trigramIds.add(entityId);
     } else if (kind === 'hexagram') {
@@ -112,6 +121,7 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
         'kingWenNumber',
         'upperTrigramId',
         'lowerTrigramId',
+        ...(hasApplicableRules(raw) ? ['applicableRuleIds'] : []),
       ]);
       if (typeof item.id !== 'string' || !HEXAGRAM_ID.test(item.id))
         fail(`${path}.id`, 'expected a core hexagram ID from hexagram-01 through hexagram-64');
@@ -119,6 +129,7 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       text(item.name, `${path}.name`);
       stringArray(item.aliases, `${path}.aliases`);
       text(item.explanation, `${path}.explanation`);
+      validateApplicableRuleIds(item.applicableRuleIds, `${path}.applicableRuleIds`);
       const kingWenNumber = Number(item.id.slice('hexagram-'.length));
       if (item.kingWenNumber !== kingWenNumber)
         fail(`${path}.kingWenNumber`, 'must match the number in the hexagram ID');
@@ -136,12 +147,19 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
 
   (root.terms as unknown[]).forEach((raw, index) => {
     const path = `catalog.terms[${index}]`;
-    const item = record(raw, path, ['id', 'name', 'aliases', 'definition']);
+    const item = record(raw, path, [
+      'id',
+      'name',
+      'aliases',
+      'definition',
+      ...(hasApplicableRules(raw) ? ['applicableRuleIds'] : []),
+    ]);
     id(item.id, `${path}.id`, 'term');
     termIds.add(register(item.id, path));
     text(item.name, `${path}.name`);
     stringArray(item.aliases, `${path}.aliases`);
     text(item.definition, `${path}.definition`);
+    validateApplicableRuleIds(item.applicableRuleIds, `${path}.applicableRuleIds`);
   });
   (root.rules as unknown[]).forEach((raw, index) => {
     const path = `catalog.rules[${index}]`;
@@ -210,6 +228,22 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       }
     }
   }
+  for (const reference of applicableRuleRefs) {
+    for (const ruleId of reference.ruleIds) {
+      if (!ruleIds.has(ruleId)) fail(reference.path, `missing rule "${ruleId}"`);
+    }
+  }
+
+  function validateApplicableRuleIds(value: unknown, path: string): void {
+    if (value === undefined) return;
+    if (!Array.isArray(value)) fail(path, 'expected an array of rule IDs');
+    stringArray(value, path);
+    applicableRuleRefs.push({ ruleIds: value, path });
+  }
+}
+
+function hasApplicableRules(value: unknown): boolean {
+  return value !== null && typeof value === 'object' && 'applicableRuleIds' in value;
 }
 
 function itemHasLocation(value: unknown): boolean {
