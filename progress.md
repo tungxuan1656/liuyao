@@ -16,6 +16,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-09-28 — feat-018 planning
+
+**State**: todo; implementation not started.
+**Done**: Recorded the approved Vietnamese-only product language, no-Han display rule, canonical language spec, and staged implementation plan for web UI and knowledge.
+**Evidence**: `docs/product-specs/vietnamese-language.md`, `features/feat-018.md`, and `docs/plans/feat-018.md`; working tree was clean before these planning changes.
+**Blockers**: The canonical Vietnamese domain glossary requires review before data translation.
+**Next**: Activate feat-018 after confirming feat-012 is done.
+
+## 2026-09-28 — feat-018 activated
+
+**State**: active on `feat/018-vietnamese-language`.
+**Done**: User approved branch-based implementation, a plan-first commit, separate commits per implementation stage, and PR creation after verification. Dependencies are satisfied; plan defines the remaining work and verification gates.
+**Evidence**: `feature_index.json` records feat-018 as the sole active feature; plan is `docs/plans/feat-018.md`.
+**Blockers**: Final Vietnamese Liu Yao terminology requires editorial/source review before bulk catalog translation.
+**Next**: Review Vietnamese reference sources and add the canonical glossary; commit that stage before implementation.
+
 ## 2026-09-25 — feat-001
 
 **State**: done, pending PR review and merge.

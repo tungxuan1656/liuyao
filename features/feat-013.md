@@ -57,6 +57,6 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 ## Handoff
 
 - State: todo
-- Evidence: Product Owner approved Lục Hào as the final public name and English as the primary interface language on 2026-09-27. F12-T02 is complete; F12-T04 remains open because terminology is not yet confirmed. See `docs/product-specs/product-identity.md`.
+- Evidence: Product Owner approved Lục Hào as the final public name on 2026-09-27, then superseded the English-language decision with Vietnamese-only user-facing language and no displayed Han characters on 2026-09-28. F12-T02 is complete; F12-T04 remains open until the canonical terminology receives final review. See `docs/product-specs/product-identity.md` and `docs/product-specs/vietnamese-language.md`.
 - Dependency check: pending
 - Next: Verify dependencies, then select this feature for implementation.

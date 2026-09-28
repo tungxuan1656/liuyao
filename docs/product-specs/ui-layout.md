@@ -16,13 +16,9 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 
 ### Typography
 
-- **Headings & Hexagram Names**: `Noto Serif` (`font-serif`).
-  - Provides full, balanced diacritics coverage for Vietnamese titles (e.g., _Thuần Càn_, _Thiên Phong Cấu_, _Hỏa Thiên Đại Hữu_) without glyph clipping or mismatched font fallbacks.
-- **Body, Data, & Form Controls**: `Noto Sans` (`font-sans`).
-  - Provides crisp, neutral legibility for line details, glossary terms, rule explanations, and UI controls.
-- **Han Characters (Hán tự)**:
-  - Explicit fallback: `Noto Serif CJK` for headings and `Noto Sans CJK` for body/data.
-  - Ensures glyphs such as 乾, 坤, 震, 巽, 坎, 離, 艮, 兌 render harmoniously without falling back to system OS default fonts.
+- **Headings & Hexagram Names**: `Noto Serif` (`font-serif`) with complete Vietnamese diacritic coverage.
+- **Body, Data, & Form Controls**: `Noto Sans` (`font-sans`) with complete Vietnamese diacritic coverage.
+- **Language**: Render Vietnamese only. Do not add Han-character text or a CJK font fallback for knowledge content; see `vietnamese-language.md`.
 - **Brand / Decorative Latin Text**:
   - `Cinzel` is restricted exclusively to the Latin-only logo mark, brand title, and decorative Roman numbers. It must not be used for general Vietnamese headings.
 - **Font Delivery & Offline Requirement**:
@@ -89,7 +85,7 @@ Represents the primary divination workspace. Follows states defined in `reading-
 
 The read-only knowledge reference hub (behavior defined in `knowledge-browser.md`):
 
-- Local search input matching Vietnamese names, Hanzi, and romanized aliases.
+- Local search input matching canonical Vietnamese names and reviewed Vietnamese aliases.
 - Category navigation using shadcn `Tabs`: _64 Hexagrams_ | _8 Trigrams_ | _Terms_ | _Rules_.
 - Grid/list of reference cards. Tapping any card opens its Level 1 Sub-Page.
 

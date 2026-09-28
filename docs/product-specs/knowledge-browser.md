@@ -29,11 +29,12 @@ Search runs locally.
 
 Support matches against the normalized fields that exist in the knowledge dataset, such as:
 
-- Vietnamese display name;
-- Chinese character;
-- romanized alias;
+- canonical Vietnamese name;
+- reviewed Vietnamese alias;
 - stable ID;
 - glossary term.
+
+Do not include Han characters, English aliases, or Chinese romanizations in the local knowledge catalog. Stable IDs remain technical identifiers and are not prose. Follow `vietnamese-language.md` for the canonical language and terminology rules.
 
 Do not call a remote search service.
 
@@ -42,7 +43,7 @@ Do not call a remote search service.
 A detail page can show:
 
 - stable ID;
-- names and aliases;
+- Vietnamese names and aliases;
 - concise authored explanation;
 - related entities;
 - applicable rule IDs;
