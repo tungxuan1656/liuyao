@@ -525,3 +525,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `git diff --check` and targeted Prettier checks passed. No new runtime behavior was introduced or claimed.
 - Handoff: feat-026 documentation changes are complete on `feat/026-spec-evidence-reconciliation`; PR integration and issue #32 closure remain.
 - Next: Integrate feat-026 and confirm issue #32 closed before starting feat-027.
+
+# 2026-09-28 — feat-027
+
+- Result: Library ID search now requires a full stable identifier; partial technical IDs no longer match by ID. Trigram details list all related hexagrams with a count.
+- Verification: `./init.sh` passed, including knowledge regression tests. The release suite passed 12/12 before the final test-only edit; no responsive browser visual check was performed.
+- Handoff: feat-027 implementation complete on `feat/027-library-search-relationships`; PR integration and issue #33 closure remain.
+- Next: Merge feat-027 after CI and confirm issue #33 closed.
