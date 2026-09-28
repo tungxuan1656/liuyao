@@ -24,6 +24,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none; PWA update/install prompt states remain untested and are recorded as such.
 **Next**: Run the final repository workflow, push `feat/018-vietnamese-language`, and open the PR.
 
+## 2026-09-28 — feat-018 pull request opened
+
+**State**: done; PR #24 is open for review.
+**Done**: Pushed the verified implementation and created [PR #24](https://github.com/tungxuan1656/liuyao/pull/24). Updated the feature index and handoff to reflect completion and review status.
+**Evidence**: `./init.sh` passed before push; branch `feat/018-vietnamese-language` tracks `origin/feat/018-vietnamese-language`.
+**Blockers**: none; PWA update-ready and install-prompt states remain untested as noted in the PR.
+**Next**: Address review feedback, then merge PR #24.
+
 ## 2026-09-28 — feat-018 planning
 
 **State**: todo; implementation not started.
