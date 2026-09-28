@@ -18,15 +18,15 @@ export function SettingsPage() {
   const [online, setOnline] = useState<boolean | null>(() =>
     'onLine' in navigator ? navigator.onLine : null,
   );
-  const [installPrompt, setInstallPrompt] = useState(getPwaInstallSnapshot().prompt);
+  const [installSnapshot, setInstallSnapshot] = useState(getPwaInstallSnapshot);
+  const installPrompt = installSnapshot.prompt;
   const [installSupported, setInstallSupported] = useState<boolean | null>(() =>
     installPrompt ? true : null,
   );
-  const [installed, setInstalled] = useState(
-    () =>
-      window.matchMedia('(display-mode: standalone)').matches ||
-      Boolean((navigator as Navigator & { standalone?: boolean }).standalone),
-  );
+  const installed =
+    installSnapshot.installed ||
+    window.matchMedia('(display-mode: standalone)').matches ||
+    Boolean((navigator as Navigator & { standalone?: boolean }).standalone);
   const [installMessage, setInstallMessage] = useState('');
   const [updateStatus, setUpdateStatus] = useState<UpdateStatus>(() =>
     'serviceWorker' in navigator ? 'checking' : 'unsupported',
@@ -43,14 +43,12 @@ export function SettingsPage() {
       if ('onLine' in navigator) setOnline(navigator.onLine);
     };
     const unsubscribeInstall = subscribePwaInstall(() => {
-      const next = getPwaInstallSnapshot().prompt;
-      setInstallPrompt(next);
-      setInstallSupported(next ? true : false);
+      const next = getPwaInstallSnapshot();
+      setInstallSnapshot(next);
+      setInstallSupported(next.prompt ? true : false);
     });
-    const updateInstalled = () => setInstalled(true);
     window.addEventListener('online', updateNetwork);
     window.addEventListener('offline', updateNetwork);
-    window.addEventListener('appinstalled', updateInstalled);
     setUpdateStatus(
       'serviceWorker' in navigator
         ? getPwaUpdateSnapshot().updateAvailable
@@ -63,7 +61,6 @@ export function SettingsPage() {
       unsubscribeInstall();
       window.removeEventListener('online', updateNetwork);
       window.removeEventListener('offline', updateNetwork);
-      window.removeEventListener('appinstalled', updateInstalled);
     };
   }, []);
 
@@ -72,7 +69,7 @@ export function SettingsPage() {
       const choice = await triggerPwaInstallPrompt();
       if (!choice) return;
       setInstallMessage(choice === 'accepted' ? 'Đã bắt đầu cài đặt.' : 'Chưa bắt đầu cài đặt.');
-      setInstallPrompt(null);
+      setInstallSnapshot(getPwaInstallSnapshot());
     } catch {
       setInstallMessage('Không thể bắt đầu cài đặt.');
     }

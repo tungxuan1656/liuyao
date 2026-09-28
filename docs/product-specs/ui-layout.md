@@ -181,7 +181,7 @@ The result view presents deterministic facts separated from explanatory prose, m
     - **Click / Tap / Keyboard Enter**: Selects the fact and makes it persistently active in the inspector.
     - **Keyboard Tab / Focus**: Focuses the line or fact badge; pressing Enter/Space selects it.
     - **Hover**: Optional transient preview; does not override an explicitly clicked/selected fact.
-  - Chân trang có nút `[ Xem trong thư viện ]` để mở mục tra cứu tương ứng.
+  - Footer shows `Xem trong thư viện: <fact label>` only when the selected fact has an explicit canonical Library entity target (such as a hexagram or trigram). Facts without a direct entity target have no footer link; their linked rules remain accessible in the inspector.
 
 #### 2. Single-pane result layout (`< 900px` Board + Adaptive Drawer):
 

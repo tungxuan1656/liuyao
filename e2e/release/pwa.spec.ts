@@ -79,6 +79,26 @@ test.describe('production PWA behavior', () => {
     await expect(page.getByRole('button', { name: 'Cài đặt ứng dụng' })).toHaveCount(0);
   });
 
+  test('retains synthetic installed state before Settings mounts (app handling only)', async ({
+    page,
+  }) => {
+    await page.goto('/');
+    await page.evaluate(() => {
+      const prompt = new Event('beforeinstallprompt', { cancelable: true });
+      Object.defineProperties(prompt, {
+        prompt: { value: async () => undefined },
+        userChoice: { value: Promise.resolve({ outcome: 'accepted', platform: 'test' }) },
+      });
+      window.dispatchEvent(prompt);
+      window.dispatchEvent(new Event('appinstalled'));
+    });
+
+    await page.getByRole('link', { name: 'Cài đặt' }).click();
+
+    await expect(page.getByText('Đã cài trên thiết bị này')).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Cài đặt ứng dụng' })).toHaveCount(0);
+  });
+
   test('preserves a casting draft until a real waiting production worker is explicitly accepted', async ({
     page,
   }) => {
