@@ -176,3 +176,89 @@ test('result drawer opens after resizing a rendered desktop result and follows l
   await expect(drawer).toBeHidden();
   await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('');
 });
+
+test('result fact inspectors link canonical entities from desktop and mobile', async ({ page }) => {
+  const oneMovingLine = [6, 7, 8, 7, 8, 7] as const;
+  await page.setViewportSize({ width: 1024, height: 900 });
+  await startReading(page, 'Nhập trực tiếp');
+  for (const [index, value] of oneMovingLine.entries()) {
+    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+  }
+  await page.getByRole('button', { name: 'Tính quẻ' }).click();
+
+  const primary = page.getByRole('region', { name: 'Quẻ chính' });
+  const changed = page.getByRole('region', { name: 'Quẻ biến' });
+  const inspector = page.locator('.wide-inspector');
+
+  const expectCanonicalDestination = async (
+    trigger: import('@playwright/test').Locator,
+    kind: 'hexagram' | 'trigram',
+    displayedName: string,
+    expectedId?: string,
+  ) => {
+    const factLabel = await trigger.locator('span').first().innerText();
+    await trigger.click();
+    await expect(inspector.getByRole('heading', { name: factLabel, exact: true })).toBeVisible();
+    const footerLink = inspector.locator('.inspector-footer a');
+    await expect(footerLink).toHaveText(`Xem trong thư viện: ${factLabel}`);
+    const href = await footerLink.getAttribute('href');
+    expect(href).toMatch(new RegExp(`/library/${kind}/${kind}-[a-z0-9-]+$`));
+    const id = href!.split('/').at(-1)!;
+    if (expectedId) expect(id).toBe(expectedId);
+    await footerLink.click();
+    await expect(page).toHaveURL(new RegExp(`/library/${kind}/${id}$`));
+    await expect(page.getByRole('heading', { name: displayedName, exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Không tìm thấy mục' })).toHaveCount(0);
+    await page.goBack();
+    await expect(inspector).toBeVisible();
+  };
+
+  const primaryHexagramId = `hexagram-${(await primary.locator('.hexagram-number').innerText()).trim()}`;
+  await expectCanonicalDestination(
+    page.getByRole('button', { name: /Quẻ chính:.*Xem giải thích dữ kiện này/ }),
+    'hexagram',
+    await primary.getByRole('heading').innerText(),
+    primaryHexagramId,
+  );
+  const changedHexagramId = `hexagram-${(await changed.locator('.hexagram-number').innerText()).trim()}`;
+  await expectCanonicalDestination(
+    changed.getByRole('button', { name: /Quẻ biến:.*Xem giải thích dữ kiện này/ }),
+    'hexagram',
+    await changed.getByRole('heading').innerText(),
+    changedHexagramId,
+  );
+
+  for (const label of ['Ngoại quái', 'Nội quái']) {
+    const trigger = primary.getByRole('button', {
+      name: new RegExp(`${label}:.*Xem giải thích dữ kiện này`),
+    });
+    const displayedName = await trigger.locator('strong').innerText();
+    await expectCanonicalDestination(trigger, 'trigram', displayedName);
+  }
+
+  await primary.getByRole('button', { name: /Cung:.*Xem giải thích dữ kiện này/ }).click();
+  await expect(inspector.locator('.inspector-footer')).toHaveCount(0);
+  await expect(
+    inspector.getByRole('link', { name: 'Mở quy tắc trong Thư viện' }).first(),
+  ).toBeVisible();
+  await inspector.getByRole('button', { name: 'Đóng phần giải thích dữ kiện' }).click();
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  const mobilePrimary = page.getByRole('button', {
+    name: /Quẻ chính:.*Xem giải thích dữ kiện này/,
+  });
+  await mobilePrimary.click();
+  const drawer = page.getByRole('dialog', { name: /Chi tiết dữ kiện/ });
+  await expect(drawer).toBeVisible();
+  const mobileFooter = drawer.locator('.inspector-footer a');
+  await expect(mobileFooter).toHaveAttribute(
+    'href',
+    new RegExp(`/library/hexagram/${primaryHexagramId}$`),
+  );
+  await mobileFooter.click();
+  await expect(page).toHaveURL(new RegExp(`/library/hexagram/${primaryHexagramId}$`));
+  await expect(
+    page.getByRole('heading', { name: await primary.getByRole('heading').innerText() }),
+  ).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Không tìm thấy mục' })).toHaveCount(0);
+});

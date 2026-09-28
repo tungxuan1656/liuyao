@@ -4,7 +4,15 @@ import type { KnowledgeFactId } from '@liuyao/knowledge';
 import { Link } from 'react-router-dom';
 import { ROUTES } from './route-paths';
 
-export type FactSelection = { id: KnowledgeFactId; label: string; value: string };
+type FactLibraryTarget =
+  { kind: 'hexagram'; id: `hexagram-${string}` } | { kind: 'trigram'; id: `trigram-${string}` };
+
+export type FactSelection = {
+  id: KnowledgeFactId;
+  label: string;
+  value: string;
+  libraryTarget?: FactLibraryTarget;
+};
 
 export function FactButton({
   fact,
@@ -99,6 +107,13 @@ export function FactInspector({
           <p>Chưa ghi nhận nguồn tham khảo cho quy tắc này.</p>
         )}
       </section>
+      {fact.libraryTarget && (
+        <footer className="inspector-footer">
+          <Link to={ROUTES.libraryDetail(fact.libraryTarget.kind, fact.libraryTarget.id)}>
+            Xem trong thư viện: {fact.label}
+          </Link>
+        </footer>
+      )}
     </div>
   );
 }
