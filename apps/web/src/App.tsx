@@ -66,7 +66,7 @@ export default function App() {
   }
 
   return (
-    <main className="mx-auto max-w-lg px-5 py-16 flex flex-col gap-8">
+    <main className="mx-auto max-w-2xl px-5 py-16 flex flex-col gap-8">
       {/* Header */}
       <div className="flex flex-col gap-1">
         <h1 className="font-heading text-2xl font-semibold tracking-wider uppercase">Lục Hào</h1>
@@ -162,12 +162,12 @@ export default function App() {
                       setMethod(nextMethod);
                     }
                   }}
-                  className="gap-0 border border-border"
+                  className="gap-0"
                 >
                   {methods.map(({ value, label, detail }) => (
                     <FieldLabel
                       key={value}
-                      className={`flex-row items-center gap-3 px-4 py-3.5 border-b border-border last:border-b-0 cursor-pointer transition-colors w-full ${
+                      className={`flex-row items-center gap-3 px-4 py-3.5 cursor-pointer transition-colors w-full ${
                         entryMethod === value ? 'bg-neutral-900' : 'hover:bg-muted'
                       }`}
                     >
@@ -181,14 +181,10 @@ export default function App() {
                           }
                         />
                         <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                          <span
-                            className={`text-sm font-medium normal-case tracking-normal ${entryMethod === value ? 'text-white' : 'text-foreground'}`}
-                          >
+                          <span className={`text-sm font-medium normal-case tracking-normal`}>
                             {label}
                           </span>
-                          <span
-                            className={`text-xs normal-case tracking-normal font-normal ${entryMethod === value ? 'text-neutral-400' : 'text-muted-foreground'}`}
-                          >
+                          <span className={`text-xs normal-case tracking-normal font-normal`}>
                             {detail}
                           </span>
                         </div>
