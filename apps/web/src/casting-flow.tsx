@@ -14,7 +14,7 @@ import { DirectCastingPanel } from './direct-casting-panel';
 import { ManualCastingPanel } from './manual-casting-panel';
 import { CastingFlowDialogs } from './casting-flow-dialogs';
 import { Button } from './components/ui/button';
-import { Card } from './components/ui/card';
+import { ManualCastingActions } from './manual-casting-actions';
 
 export function CastingFlow() {
   const navigate = useNavigate();
@@ -209,38 +209,13 @@ export function CastingFlow() {
       ) : (
         <>
           <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
-          <Card className="manual-actions">
-            <div className="flow-actions">
-              <Button
-                type="button"
-                variant="outline"
-                className="casting-back-action"
-                disabled={step === 0}
-                onClick={() => setDraft({ ...draft, step: step - 1 })}
-              >
-                Quay lại
-              </Button>
-              {step < 5 ? (
-                <Button
-                  type="button"
-                  className="casting-primary-action"
-                  disabled={lines[step] === undefined}
-                  onClick={() => setDraft({ ...draft, step: step + 1 })}
-                >
-                  Hào tiếp theo
-                </Button>
-              ) : (
-                <Button
-                  type="button"
-                  className="casting-primary-action"
-                  disabled={lines.length < 6 || lines.some(line => line === undefined)}
-                  onClick={() => finish(lines)}
-                >
-                  Tính quẻ
-                </Button>
-              )}
-            </div>
-          </Card>
+          <ManualCastingActions
+            step={step}
+            lines={lines}
+            onBack={() => setDraft({ ...draft, step: step - 1 })}
+            onNext={() => setDraft({ ...draft, step: step + 1 })}
+            onFinish={() => finish(lines)}
+          />
         </>
       )}
       <Button
