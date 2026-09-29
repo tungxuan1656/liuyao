@@ -39,10 +39,10 @@ export function AutomaticCastingPanel({
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
     <Card
-      className="flex flex-col gap-0 border-0 shadow-none bg-white text-neutral-900 rounded-none overflow-hidden"
+      className="flex flex-col gap-0 border border-border shadow-none bg-white text-neutral-900 rounded-none overflow-hidden"
       aria-label="Gieo từng hào"
     >
-      <CardHeader className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-b-0 gap-4">
+      <CardHeader className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-b border-border gap-4">
         <ToggleGroup
           aria-label="Số lượng đồng xu"
           value={[method]}
@@ -70,7 +70,7 @@ export function AutomaticCastingPanel({
         <span className="text-sm text-neutral-500 whitespace-nowrap">{revealedCount} / 6 hào</span>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)] min-h-[400px] p-0">
-        <div className="flex flex-col justify-center p-4 md:p-8 md:pr-6 border-b md:border-b-0 md:border-r border-neutral-100 bg-neutral-50">
+        <div className="flex flex-col justify-center p-4 md:p-8 md:pr-6 border-b md:border-b-0 md:border-r border-border bg-neutral-50">
           <CastingHexagram
             lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
             step={step}
@@ -80,7 +80,7 @@ export function AutomaticCastingPanel({
           className="min-w-0 relative grid grid-rows-[190px_80px] md:grid-rows-[300px_100px]"
           aria-label="Sân khấu gieo đồng xu"
         >
-          <div className="relative overflow-hidden isolate h-full bg-neutral-100 flex items-center justify-center">
+          <div className="relative overflow-hidden isolate h-full bg-neutral-50 flex items-center justify-center border-b border-border">
             <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
           </div>
           <div
@@ -119,7 +119,7 @@ export function AutomaticCastingPanel({
           </div>
         </section>
       </CardContent>
-      <CardFooter className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-t border-neutral-100">
+      <CardFooter className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-t border-border">
         <Button
           type="button"
           variant="ghost"

@@ -78,10 +78,10 @@ export function ResultView() {
 
   return (
     <main className="w-full max-w-6xl mx-auto text-neutral-900 grid gap-6">
-      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 py-4 mb-2">
+      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 py-4 mb-2 border-b border-border">
         <div>
-          <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-1">
-            Kết quả gieo quẻ · Mã quy ước tính: {reading.result.ruleset}
+          <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium mb-1">
+            Kết quả gieo quẻ · Quy ước: {reading.result.ruleset}
           </p>
           <h1 className="text-2xl md:text-4xl font-medium mt-1 mb-2">
             {reading.question || 'Quẻ chưa đặt tên'}
@@ -208,14 +208,14 @@ export function ResultView() {
         </div>
 
         <aside
-          className="hidden md:block sticky top-20 min-h-[350px] w-80 shrink-0 pl-6 border-l border-neutral-200"
+          className="hidden md:block sticky top-20 min-h-[350px] w-80 shrink-0 pl-6 border-l border-border"
           aria-label="Giải thích dữ kiện"
         >
           {selectedFact ? (
             <FactInspector fact={selectedFact} close={closeInspector} />
           ) : (
             <div className="py-4">
-              <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-2">
+              <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium mb-2">
                 Giải thích dữ kiện
               </p>
               <h2 className="text-xl font-medium mb-2">Khám phá dữ kiện của kết quả</h2>

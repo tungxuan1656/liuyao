@@ -158,7 +158,7 @@ export default function App() {
                     : setQuestion(event.target.value)
                 }
                 placeholder="Bạn muốn suy ngẫm về điều gì?"
-                className="mt-2 resize-none bg-neutral-50 border-0 focus-visible:ring-1 focus-visible:ring-neutral-900 placeholder:text-neutral-300 text-neutral-800"
+                className="mt-2 resize-none bg-white border border-border focus-visible:ring-1 focus-visible:ring-neutral-900 placeholder:text-neutral-300 text-neutral-800"
               />
               <FieldDescription className="text-xs text-neutral-400 mt-1.5">
                 Câu hỏi chỉ tồn tại trong phiên này, không được lưu hoặc sao lưu.
@@ -167,7 +167,7 @@ export default function App() {
 
             {/* Method selection */}
             <FieldSet>
-              <FieldLegend className="text-sm font-medium text-neutral-700 mb-3">
+              <FieldLegend className="text-sm font-medium text-neutral-600 mb-3">
                 Phương pháp lập quẻ
               </FieldLegend>
               <RadioGroup
@@ -181,20 +181,20 @@ export default function App() {
                     setMethod(nextMethod);
                   }
                 }}
-                className="flex flex-col gap-2"
+                className="flex flex-col"
               >
                 {methods.map(({ value, label, detail, glyph }) => (
                   <FieldLabel
                     key={value}
-                    className={`flex items-center gap-4 p-4 cursor-pointer transition-colors ${
+                    className={`flex items-center gap-4 px-4 py-3.5 cursor-pointer transition-colors border-b border-border first:border-t ${
                       entryMethod === value
-                        ? 'bg-neutral-900 text-white'
-                        : 'bg-neutral-50 text-neutral-700 hover:bg-neutral-100'
+                        ? 'bg-neutral-900 text-white border-neutral-900'
+                        : 'bg-white text-neutral-900 hover:bg-neutral-50'
                     }`}
                   >
                     <Field orientation="horizontal" className="flex gap-4 items-center w-full">
                       <span
-                        className={`font-serif text-xl w-6 text-center shrink-0 ${entryMethod === value ? 'text-white' : 'text-neutral-400'}`}
+                        className={`font-serif text-lg w-5 text-center shrink-0 ${entryMethod === value ? 'text-neutral-300' : 'text-neutral-400'}`}
                         aria-hidden="true"
                       >
                         {glyph}
@@ -206,7 +206,7 @@ export default function App() {
                           {label}
                         </span>
                         <span
-                          className={`text-xs mt-0.5 ${entryMethod === value ? 'text-neutral-300' : 'text-neutral-500'}`}
+                          className={`text-xs mt-0.5 ${entryMethod === value ? 'text-neutral-400' : 'text-neutral-400'}`}
                         >
                           {detail}
                         </span>

@@ -40,25 +40,17 @@ export function LibraryPage() {
 
   return (
     <main className="w-full max-w-[920px] mx-auto text-foreground">
-      <header className="flex min-w-0 min-h-[204px] py-6 items-center justify-between">
-        <div className="min-w-0 max-w-[590px]">
-          <p className="mb-2 text-muted-foreground text-sm tracking-wide">Cẩm nang Lục Hào</p>
+      <header className="flex min-w-0 min-h-[160px] py-6 items-center">
+        <div className="min-w-0">
+          <p className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
+            Cẩm nang Lục Hào
+          </p>
           <h1 className="m-0 font-serif text-4xl md:text-5xl font-medium tracking-tight">
             Thư viện
-            <span className="text-foreground" aria-hidden="true">
-              .
-            </span>
           </h1>
-          <p className="mt-4 max-w-[35rem] text-muted-foreground text-base leading-relaxed">
+          <p className="mt-3 max-w-[35rem] text-muted-foreground text-base leading-relaxed">
             Tra cứu quẻ, quái, thuật ngữ và quy tắc tính quẻ.
           </p>
-        </div>
-        <div
-          className="flex w-[88px] h-[88px] mr-5 items-center justify-center flex-col shrink-0 rotate-3 text-foreground"
-          aria-hidden="true"
-        >
-          <span className="font-serif text-3xl">☯</span>
-          <small className="mt-1 text-[10px] tracking-widest">TRA CỨU</small>
         </div>
       </header>
 
@@ -160,12 +152,12 @@ export function LibraryPage() {
         )}
         {shown.length ? (
           <div
-            className={`grid min-w-0 grid-cols-1 sm:grid-cols-2 ${category === 'hexagrams' ? 'md:grid-cols-3' : ''} border-t-0 gap-y-1 mt-2`}
+            className={`grid min-w-0 grid-cols-1 sm:grid-cols-2 ${category === 'hexagrams' ? 'md:grid-cols-3' : ''} mt-2 border-t border-border`}
           >
             {shown.map(record => (
               <Link
                 key={record.id}
-                className="flex min-w-0 min-h-[86px] px-3 py-3 items-center gap-3 text-foreground hover:bg-secondary/50 transition-none sm:transition-colors no-underline"
+                className="flex min-w-0 min-h-[80px] px-3 py-3 items-center gap-3 text-foreground hover:bg-neutral-50 border-b border-border transition-colors no-underline"
                 to={recordPath(record)}
               >
                 <span
