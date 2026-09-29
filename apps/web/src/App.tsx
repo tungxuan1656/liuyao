@@ -66,7 +66,7 @@ export default function App() {
   }
 
   return (
-    <main className="mx-auto max-w-sm px-4 py-16 flex flex-col gap-8">
+    <main className="mx-auto max-w-lg px-5 py-16 flex flex-col gap-8">
       {/* Header */}
       <div className="flex flex-col gap-1">
         <h1 className="font-heading text-2xl font-semibold tracking-wider uppercase">Lục Hào</h1>
@@ -141,6 +141,7 @@ export default function App() {
                       : setQuestion(event.target.value)
                   }
                   placeholder="Bạn muốn suy ngẫm về điều gì?"
+                  className="px-3 border border-border border-b-border focus-visible:border-b-ring"
                 />
                 <FieldDescription>
                   Câu hỏi chỉ tồn tại trong phiên này, không được lưu hoặc sao lưu.
@@ -166,8 +167,8 @@ export default function App() {
                   {methods.map(({ value, label, detail }) => (
                     <FieldLabel
                       key={value}
-                      className={`flex-row items-center gap-3 px-4 py-3 border-b border-border last:border-b-0 cursor-pointer transition-colors w-full ${
-                        entryMethod === value ? 'bg-foreground text-background' : 'hover:bg-muted'
+                      className={`flex-row items-center gap-3 px-4 py-3.5 border-b border-border last:border-b-0 cursor-pointer transition-colors w-full ${
+                        entryMethod === value ? 'bg-neutral-900' : 'hover:bg-muted'
                       }`}
                     >
                       <Field orientation="horizontal" className="gap-3 w-full">
@@ -175,18 +176,18 @@ export default function App() {
                           value={value}
                           className={
                             entryMethod === value
-                              ? 'border-background data-checked:border-background'
+                              ? 'border-white [&_.radio-indicator]:bg-white'
                               : ''
                           }
                         />
                         <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                           <span
-                            className={`text-sm font-medium normal-case tracking-normal ${entryMethod === value ? 'text-background' : 'text-foreground'}`}
+                            className={`text-sm font-medium normal-case tracking-normal ${entryMethod === value ? 'text-white' : 'text-foreground'}`}
                           >
                             {label}
                           </span>
                           <span
-                            className={`text-xs normal-case tracking-normal font-normal ${entryMethod === value ? 'text-background/60' : 'text-muted-foreground'}`}
+                            className={`text-xs normal-case tracking-normal font-normal ${entryMethod === value ? 'text-neutral-400' : 'text-muted-foreground'}`}
                           >
                             {detail}
                           </span>
