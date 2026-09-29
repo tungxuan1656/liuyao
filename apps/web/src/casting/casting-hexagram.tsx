@@ -10,36 +10,58 @@ export function CastingHexagram({
   step: number;
 }) {
   return (
-    <section className="forming-hexagram" aria-label="Quẻ đang hình thành">
-      <h2>Quẻ đang hình thành</h2>
-      <ol className="forming-lines" aria-label="Hào sáu ở trên, hào một ở dưới">
-        {[5, 4, 3, 2, 1, 0].map(index => {
+    <section className="flex flex-col gap-3" aria-label="Quẻ đang hình thành">
+      <h2 className="text-xs font-medium text-neutral-500 tracking-wide uppercase">
+        Quẻ đang hình thành
+      </h2>
+      <ol className="flex flex-col-reverse gap-2" aria-label="Hào sáu ở trên, hào một ở dưới">
+        {[0, 1, 2, 3, 4, 5].map(index => {
           const value = lines[index];
           const yang = value === 7 || value === 9;
+          const isCurrent = index === step;
           return (
             <li
               key={index}
-              className={`${index === step ? 'is-current' : ''}${value !== undefined ? ' is-filled' : ''}`}
-              aria-current={index === step ? 'step' : undefined}
+              className={`flex items-center gap-3 py-1 transition-opacity ${
+                value === undefined && !isCurrent ? 'opacity-30' : 'opacity-100'
+              }`}
+              aria-current={isCurrent ? 'step' : undefined}
             >
-              <span className="forming-position">
+              <span
+                className={`w-4 text-center text-[11px] shrink-0 font-medium ${
+                  isCurrent ? 'text-neutral-900' : 'text-neutral-400'
+                }`}
+                aria-hidden="true"
+              >
                 {index + 1}
                 <span className="sr-only">. Hào {index + 1}</span>
               </span>
-              {value !== undefined ? (
-                <YaoSymbol
-                  key={value}
-                  className="forming-symbol"
-                  polarity={yang ? 'yang' : 'yin'}
-                  changing={value === 6 || value === 9}
-                />
-              ) : (
-                <span className="forming-empty" aria-hidden="true" />
-              )}
-              <span className="forming-name">
+              <div className="w-20 shrink-0">
+                {value !== undefined ? (
+                  <YaoSymbol
+                    key={value}
+                    polarity={yang ? 'yang' : 'yin'}
+                    changing={value === 6 || value === 9}
+                  />
+                ) : (
+                  <span
+                    className={`block h-2 rounded-full ${isCurrent ? 'bg-neutral-300 w-full' : 'bg-neutral-100 w-full'}`}
+                    aria-hidden="true"
+                  />
+                )}
+              </div>
+              <span
+                className={`text-xs leading-none ${
+                  value !== undefined
+                    ? 'text-neutral-700'
+                    : isCurrent
+                      ? 'text-neutral-400'
+                      : 'text-neutral-200'
+                }`}
+              >
                 {value !== undefined
                   ? getLinePresentation(value).name
-                  : index === step
+                  : isCurrent
                     ? 'Chờ gieo'
                     : '—'}
               </span>
@@ -47,8 +69,9 @@ export function CastingHexagram({
           );
         })}
       </ol>
-      <p>
-        Gieo từ hào dưới cùng · <strong>○ Dương động · × Âm động</strong>
+      <p className="text-[11px] text-neutral-400 leading-relaxed border-t border-neutral-100 pt-3 mt-1">
+        Gieo từ hào dưới cùng ·{' '}
+        <strong className="font-medium text-neutral-600">○ Dương động · × Âm động</strong>
       </p>
     </section>
   );

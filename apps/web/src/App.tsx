@@ -6,14 +6,6 @@ import { getLinePresentation } from './line-value-presentation';
 import { ConfirmationDialog } from './components/confirmation-dialog';
 import { Button } from './components/ui/button';
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from './components/ui/card';
-import {
   Field,
   FieldDescription,
   FieldGroup,
@@ -25,9 +17,24 @@ import { RadioGroup, RadioGroupItem } from './components/ui/radio-group';
 import { Textarea } from './components/ui/textarea';
 
 const methods = [
-  { value: 'automatic', label: 'Gieo tự động', detail: 'Để ứng dụng gieo ba đồng xu.' },
-  { value: 'manual', label: 'Gieo thủ công', detail: 'Tự ghi lại kết quả từng lần gieo.' },
-  { value: 'direct', label: 'Nhập trực tiếp', detail: 'Nhập sáu hào đã có sẵn.' },
+  {
+    value: 'automatic',
+    label: 'Gieo tự động',
+    detail: 'Để ứng dụng gieo ba đồng xu.',
+    glyph: '◎',
+  },
+  {
+    value: 'manual',
+    label: 'Gieo thủ công',
+    detail: 'Tự ghi lại kết quả từng lần gieo.',
+    glyph: '◐',
+  },
+  {
+    value: 'direct',
+    label: 'Nhập trực tiếp',
+    detail: 'Nhập sáu hào đã có sẵn.',
+    glyph: '≡',
+  },
 ] as const;
 
 export default function App() {
@@ -54,135 +61,181 @@ export default function App() {
   }
 
   return (
-    <main className="mx-auto max-w-xl p-6 flex flex-col gap-10">
-      <header className="text-center flex flex-col gap-2">
-        <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+    <main className="mx-auto max-w-lg px-5 py-12 flex flex-col gap-12">
+      {/* Hero header */}
+      <header className="flex flex-col gap-3">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
           Không gian chiêm nghiệm
         </p>
-        <h1 className="text-4xl font-serif font-bold">Lục Hào</h1>
-        <p className="text-muted-foreground">Lập quẻ sáu hào, từng bước rõ ràng và riêng tư.</p>
+        <h1 className="text-5xl font-serif font-medium tracking-tight leading-none text-neutral-900">
+          Lục Hào
+        </h1>
+        <p className="text-neutral-500 leading-relaxed max-w-[38ch]">
+          Lập quẻ sáu hào, từng bước rõ ràng và riêng tư.
+        </p>
       </header>
 
+      {/* Content area */}
       {reading ? (
-        <Card className="border-0 shadow-none" aria-labelledby="completed-reading-heading">
-          <CardHeader>
-            <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+        <div className="flex flex-col gap-6" aria-labelledby="completed-reading-heading">
+          <div className="flex flex-col gap-1">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
               Đã lập quẻ
             </p>
-            <CardTitle id="completed-reading-heading">
+            <h2
+              id="completed-reading-heading"
+              className="text-2xl font-serif font-medium text-neutral-900"
+            >
               {reading.question || 'Quẻ chưa đặt tên'}
-            </CardTitle>
-            <CardDescription>
+            </h2>
+            <p className="text-sm text-neutral-500">
               {reading.method === 'automatic'
                 ? 'Gieo tự động'
                 : reading.method === 'manual'
                   ? 'Gieo thủ công'
                   : 'Nhập trực tiếp'}
-              {' · '}Mã quẻ chính {reading.result.primaryHexagramId}
-              {reading.result.changedHexagramId &&
-                ` · Quẻ biến ${reading.result.changedHexagramId}`}
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-sm flex flex-col gap-2">
-            <p>
-              Các hào, từ hào một đến hào sáu:{' '}
-              {reading.lines.map(l => getLinePresentation(l).name).join(', ')}
             </p>
-            <p className="text-xs text-muted-foreground text-center mt-4">
-              Quẻ này chỉ được giữ trong bộ nhớ và sẽ bị xóa nếu bạn tải lại ứng dụng.
-            </p>
-          </CardContent>
-          <CardFooter className="flex flex-col sm:flex-row gap-2 mt-4">
-            <Button render={<Link to={ROUTES.result} />}>Xem kết quả</Button>
-            <Button variant="outline" render={<Link to={ROUTES.library} />}>
-              Thư viện
+          </div>
+
+          <div className="text-sm text-neutral-700 leading-relaxed p-4 bg-neutral-50">
+            <span className="block text-xs text-neutral-400 mb-1">
+              Các hào, từ hào một đến hào sáu
+            </span>
+            {reading.lines.map(l => getLinePresentation(l).name).join(' · ')}
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <Button className="w-full h-11" render={<Link to={ROUTES.result} />}>
+              Xem kết quả
             </Button>
-            <Button variant="outline" render={<Link to={ROUTES.settings} />}>
-              Cài đặt
-            </Button>
-            <Button variant="outline" onClick={() => setReplaceReading(true)}>
-              Lập quẻ mới
-            </Button>
-          </CardFooter>
-        </Card>
-      ) : (
-        <Card className="border-0 shadow-none" aria-labelledby="new-reading-heading">
-          <CardHeader>
-            <CardTitle id="new-reading-heading">Lập quẻ mới</CardTitle>
-            <CardDescription>
-              Chọn cách lập quẻ phù hợp. Bạn có thể thay đổi lựa chọn trước khi bắt đầu.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <FieldGroup className="flex flex-col gap-6">
-              <Field>
-                <FieldLabel htmlFor="reading-question">Câu hỏi (không bắt buộc)</FieldLabel>
-                <Textarea
-                  id="reading-question"
-                  rows={3}
-                  value={entryQuestion}
-                  onChange={event =>
-                    draft
-                      ? setDraft({ ...draft, question: event.target.value })
-                      : setQuestion(event.target.value)
-                  }
-                  placeholder="Bạn muốn suy ngẫm về điều gì?"
-                />
-                <FieldDescription>
-                  Câu hỏi chỉ tồn tại trong phiên này, không được lưu hoặc sao lưu.
-                </FieldDescription>
-              </Field>
-              <FieldSet className="flex flex-col gap-3">
-                <FieldLegend>Phương pháp lập quẻ</FieldLegend>
-                <RadioGroup
-                  aria-label="Phương pháp lập quẻ"
-                  value={entryMethod}
-                  onValueChange={value => {
-                    const nextMethod = value as (typeof methods)[number]['value'];
-                    if (draft) {
-                      setDraft({ ...draft, method: nextMethod });
-                    } else {
-                      setMethod(nextMethod);
-                    }
-                  }}
-                  className="flex flex-col gap-3"
-                >
-                  {methods.map(({ value, label, detail }) => (
-                    <FieldLabel
-                      key={value}
-                      className="flex items-center gap-2 p-3 bg-muted/50 cursor-pointer hover:bg-muted"
-                    >
-                      <Field orientation="horizontal" className="flex gap-3 items-start">
-                        <RadioGroupItem id={`method-${value}`} value={value} />
-                        <span className="flex flex-col">
-                          <strong>{label}</strong>
-                          <small>{detail}</small>
-                        </span>
-                      </Field>
-                    </FieldLabel>
-                  ))}
-                </RadioGroup>
-              </FieldSet>
-            </FieldGroup>
-            {draft && (
-              <p
-                className="text-sm font-medium text-muted-foreground mt-4 text-center"
-                role="status"
+            <div className="grid grid-cols-3 gap-2">
+              <Button
+                variant="outline"
+                className="h-10 text-sm"
+                render={<Link to={ROUTES.library} />}
               >
-                Bạn đang có bản gieo quẻ chưa hoàn tất. Tiếp tục để giữ lại tiến trình.
-              </p>
-            )}
-          </CardContent>
-          <CardFooter className="flex flex-col gap-4 mt-6">
+                Thư viện
+              </Button>
+              <Button
+                variant="outline"
+                className="h-10 text-sm"
+                render={<Link to={ROUTES.settings} />}
+              >
+                Cài đặt
+              </Button>
+              <Button
+                variant="outline"
+                className="h-10 text-sm"
+                onClick={() => setReplaceReading(true)}
+              >
+                Lập quẻ mới
+              </Button>
+            </div>
+          </div>
+
+          <p className="text-xs text-neutral-400 text-center">
+            Quẻ chỉ được giữ trong bộ nhớ và sẽ bị xóa nếu bạn tải lại ứng dụng.
+          </p>
+        </div>
+      ) : (
+        <div className="flex flex-col gap-8" aria-labelledby="new-reading-heading">
+          <FieldGroup className="flex flex-col gap-6">
+            {/* Question field */}
+            <Field>
+              <FieldLabel
+                htmlFor="reading-question"
+                className="text-sm font-medium text-neutral-700"
+              >
+                Câu hỏi <span className="text-neutral-400 font-normal">(không bắt buộc)</span>
+              </FieldLabel>
+              <Textarea
+                id="reading-question"
+                rows={3}
+                value={entryQuestion}
+                onChange={event =>
+                  draft
+                    ? setDraft({ ...draft, question: event.target.value })
+                    : setQuestion(event.target.value)
+                }
+                placeholder="Bạn muốn suy ngẫm về điều gì?"
+                className="mt-2 resize-none bg-neutral-50 border-0 focus-visible:ring-1 focus-visible:ring-neutral-900 placeholder:text-neutral-300 text-neutral-800"
+              />
+              <FieldDescription className="text-xs text-neutral-400 mt-1.5">
+                Câu hỏi chỉ tồn tại trong phiên này, không được lưu hoặc sao lưu.
+              </FieldDescription>
+            </Field>
+
+            {/* Method selection */}
+            <FieldSet>
+              <FieldLegend className="text-sm font-medium text-neutral-700 mb-3">
+                Phương pháp lập quẻ
+              </FieldLegend>
+              <RadioGroup
+                aria-label="Phương pháp lập quẻ"
+                value={entryMethod}
+                onValueChange={value => {
+                  const nextMethod = value as (typeof methods)[number]['value'];
+                  if (draft) {
+                    setDraft({ ...draft, method: nextMethod });
+                  } else {
+                    setMethod(nextMethod);
+                  }
+                }}
+                className="flex flex-col gap-2"
+              >
+                {methods.map(({ value, label, detail, glyph }) => (
+                  <FieldLabel
+                    key={value}
+                    className={`flex items-center gap-4 p-4 cursor-pointer transition-colors ${
+                      entryMethod === value
+                        ? 'bg-neutral-900 text-white'
+                        : 'bg-neutral-50 text-neutral-700 hover:bg-neutral-100'
+                    }`}
+                  >
+                    <Field orientation="horizontal" className="flex gap-4 items-center w-full">
+                      <span
+                        className={`font-serif text-xl w-6 text-center shrink-0 ${entryMethod === value ? 'text-white' : 'text-neutral-400'}`}
+                        aria-hidden="true"
+                      >
+                        {glyph}
+                      </span>
+                      <span className="flex flex-col flex-1 min-w-0">
+                        <span
+                          className={`font-medium text-sm ${entryMethod === value ? 'text-white' : 'text-neutral-900'}`}
+                        >
+                          {label}
+                        </span>
+                        <span
+                          className={`text-xs mt-0.5 ${entryMethod === value ? 'text-neutral-300' : 'text-neutral-500'}`}
+                        >
+                          {detail}
+                        </span>
+                      </span>
+                      <RadioGroupItem id={`method-${value}`} value={value} className="sr-only" />
+                    </Field>
+                  </FieldLabel>
+                ))}
+              </RadioGroup>
+            </FieldSet>
+          </FieldGroup>
+
+          {draft && (
+            <p className="text-sm text-neutral-500 text-center py-2 bg-neutral-50" role="status">
+              Bạn đang có bản gieo quẻ chưa hoàn tất. Tiếp tục để giữ lại tiến trình.
+            </p>
+          )}
+
+          <div className="flex flex-col gap-3">
             <Button className="w-full h-12 text-base" type="button" onClick={begin}>
               {draft ? 'Tiếp tục gieo quẻ' : 'Bắt đầu gieo quẻ'}
             </Button>
-            <p className="text-xs text-muted-foreground text-center mt-4">
+            <p className="text-xs text-neutral-400 text-center">
               Bản gieo chỉ tồn tại trong bộ nhớ phiên này. Tải lại ứng dụng có thể làm mất dữ liệu.
             </p>
-          </CardFooter>
-        </Card>
+          </div>
+        </div>
       )}
+
       {replaceReading && (
         <ConfirmationDialog
           title="Lập quẻ mới?"

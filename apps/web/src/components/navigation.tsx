@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { BookOpen, Home, Settings } from 'lucide-react';
 import { ROUTES } from '../route-paths';
-import { buttonVariants } from './ui/button';
 
 const destinations = [
   { label: 'Gieo quẻ', path: ROUTES.home, icon: Home },
@@ -31,32 +30,49 @@ export function Navigation() {
   }, []);
 
   return (
-    <nav className="app-navigation" aria-label="Điều hướng chính">
-      <Link className="app-brand" to={ROUTES.home} aria-label="Trang chủ Lục Hào">
-        <span className="app-brand-mark" aria-hidden="true">
-          <span aria-hidden="true">☯</span>
+    <nav
+      className="flex items-center justify-between px-5 py-3 border-b border-neutral-100"
+      aria-label="Điều hướng chính"
+    >
+      <Link
+        className="flex items-center gap-2 text-sm font-medium text-neutral-900 no-underline"
+        to={ROUTES.home}
+        aria-label="Trang chủ Lục Hào"
+      >
+        <span className="font-serif text-base leading-none" aria-hidden="true">
+          ☯
         </span>
-        <span>Lục Hào</span>
+        <span className="font-serif font-semibold tracking-wide">Lục Hào</span>
       </Link>
-      <div className="app-navigation-links">
+
+      <div className="flex items-center gap-1">
         {destinations.map(({ label, path, icon: Icon }) => {
           const current = isCurrentDestination(pathname, path);
           return (
             <Link
               key={label}
-              data-slot="button"
-              className={`${buttonVariants({ variant: 'ghost' })} app-navigation-link${current ? ' is-current' : ''}`}
+              className={`flex items-center gap-1.5 px-3 py-2 text-sm no-underline transition-colors ${
+                current ? 'text-neutral-900 font-medium' : 'text-neutral-500 hover:text-neutral-900'
+              }`}
               to={path}
               aria-current={current ? 'page' : undefined}
             >
-              <Icon data-icon="inline-start" aria-hidden="true" />
+              <Icon size={14} aria-hidden="true" strokeWidth={current ? 2.5 : 2} />
               <span>{label}</span>
             </Link>
           );
         })}
       </div>
-      <span className={`app-network-status${online ? ' is-online' : ' is-offline'}`} role="status">
-        <span className="app-network-indicator" aria-hidden="true" />
+
+      <span
+        className="flex items-center gap-1.5 text-xs text-neutral-400"
+        role="status"
+        aria-label={online ? 'Đang kết nối' : 'Ngoại tuyến'}
+      >
+        <span
+          className={`w-1.5 h-1.5 rounded-full ${online ? 'bg-neutral-400' : 'bg-neutral-300'}`}
+          aria-hidden="true"
+        />
         {online ? 'Có mạng' : 'Ngoại tuyến'}
       </span>
     </nav>

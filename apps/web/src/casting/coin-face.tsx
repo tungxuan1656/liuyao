@@ -1,33 +1,22 @@
-import type { CSSProperties } from 'react';
-import { coinIdentities } from './coin-identities';
-
 export function CoinFace({ value, name }: { value: number; name?: string }) {
-  const identity = coinIdentities.find(coin => coin.name === name);
+  const isHeads = Boolean(value);
   return (
     <span
-      className={`coin-face ${value ? 'is-heads' : 'is-tails'}${identity ? ' has-identity' : ''}`}
-      style={
-        identity
-          ? ({
-              '--coin-accent': identity.dark,
-              '--coin-light': identity.light,
-              '--coin-color': identity.color,
-              '--coin-ink': identity.ink,
-            } as CSSProperties)
-          : undefined
-      }
+      className={`flex flex-col items-center justify-center w-14 h-14 rounded-full border-2 transition-all select-none ${
+        isHeads
+          ? 'bg-neutral-900 border-neutral-900 text-white'
+          : 'bg-white border-neutral-300 text-neutral-400'
+      }`}
     >
-      {identity && (
-        <span className="coin-identity-label" aria-hidden="true">
-          {identity.label}
-        </span>
+      {name && (
+        <span className="text-[9px] leading-none mb-0.5 font-medium opacity-70">{name}</span>
       )}
-      <span className="coin-glyph" aria-hidden="true">
-        {value ? '☀' : '☾'}
+      <span className="text-xl leading-none" aria-hidden="true">
+        {isHeads ? '☀' : '☾'}
       </span>
       <span className="sr-only">
         {name ? `${name}, ` : ''}
-        {value ? 'mặt trời' : 'mặt trăng'}
+        {isHeads ? 'mặt trời' : 'mặt trăng'}
       </span>
     </span>
   );

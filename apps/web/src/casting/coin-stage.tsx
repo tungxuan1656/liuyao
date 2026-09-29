@@ -51,18 +51,20 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
     ? Array.from({ length: count }, (_, index) => (index + flipPhase) % 2)
     : (revealed ?? toss?.coins ?? []);
 
+  const labels4 = ['Địa', 'Thủy', 'Hỏa', 'Phong'];
+
   return (
     <div
-      className={`casting-stage${busy ? ' is-casting' : ''}`}
+      className="flex items-center justify-center w-full h-full"
       aria-label={busy ? 'Đang gieo đồng xu' : 'Kết quả đồng xu'}
     >
-      <div className={`coin-grid coin-grid-${count}`}>
+      <div
+        className={`flex items-end justify-center gap-3 ${busy ? 'opacity-70' : 'opacity-100'} transition-opacity`}
+      >
         {Array.from({ length: count }, (_, index) => (
-          <div className={`stage-coin stage-coin-${index}`} key={index}>
+          <div key={index} className="flex flex-col items-center gap-1.5">
             <CoinFace value={faces[index] ?? 0} name={count === 4 ? coinNames[index] : undefined} />
-            {count === 4 && (
-              <span className="stage-coin-label">{['Địa', 'Thủy', 'Hỏa', 'Phong'][index]}</span>
-            )}
+            {count === 4 && <span className="text-[10px] text-neutral-400">{labels4[index]}</span>}
           </div>
         ))}
       </div>
