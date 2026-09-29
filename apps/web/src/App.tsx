@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useReadingSession } from './reading-session';
 import { ROUTES } from './route-paths';
+import { getLinePresentation } from './line-value-presentation';
 import { ConfirmationDialog } from './components/confirmation-dialog';
 import { Button } from './components/ui/button';
 import {
@@ -22,7 +23,6 @@ import {
 } from './components/ui/field';
 import { RadioGroup, RadioGroupItem } from './components/ui/radio-group';
 import { Textarea } from './components/ui/textarea';
-import './App.css';
 
 const methods = [
   { value: 'automatic', label: 'Gieo tự động', detail: 'Để ứng dụng gieo ba đồng xu.' },
@@ -54,17 +54,21 @@ export default function App() {
   }
 
   return (
-    <main className="home-page">
-      <header className="home-heading">
-        <p className="home-eyebrow">Không gian chiêm nghiệm</p>
-        <h1>Lục Hào</h1>
-        <p>Lập quẻ sáu hào, từng bước rõ ràng và riêng tư.</p>
+    <main className="mx-auto max-w-xl p-6 flex flex-col gap-10">
+      <header className="text-center flex flex-col gap-2">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+          Không gian chiêm nghiệm
+        </p>
+        <h1 className="text-4xl font-serif font-bold">Lục Hào</h1>
+        <p className="text-muted-foreground">Lập quẻ sáu hào, từng bước rõ ràng và riêng tư.</p>
       </header>
 
       {reading ? (
-        <Card className="home-card" aria-labelledby="completed-reading-heading">
+        <Card className="border-0 shadow-none" aria-labelledby="completed-reading-heading">
           <CardHeader>
-            <p className="home-eyebrow">Đã lập quẻ</p>
+            <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+              Đã lập quẻ
+            </p>
             <CardTitle id="completed-reading-heading">
               {reading.question || 'Quẻ chưa đặt tên'}
             </CardTitle>
@@ -79,13 +83,16 @@ export default function App() {
                 ` · Quẻ biến ${reading.result.changedHexagramId}`}
             </CardDescription>
           </CardHeader>
-          <CardContent className="home-reading-content">
-            <p>Các hào, từ hào một đến hào sáu: {reading.lines.join(', ')}</p>
-            <p className="home-session-note">
+          <CardContent className="text-sm flex flex-col gap-2">
+            <p>
+              Các hào, từ hào một đến hào sáu:{' '}
+              {reading.lines.map(l => getLinePresentation(l).name).join(', ')}
+            </p>
+            <p className="text-xs text-muted-foreground text-center mt-4">
               Quẻ này chỉ được giữ trong bộ nhớ và sẽ bị xóa nếu bạn tải lại ứng dụng.
             </p>
           </CardContent>
-          <CardFooter className="home-reading-actions">
+          <CardFooter className="flex flex-col sm:flex-row gap-2 mt-4">
             <Button render={<Link to={ROUTES.result} />}>Xem kết quả</Button>
             <Button variant="outline" render={<Link to={ROUTES.library} />}>
               Thư viện
@@ -99,7 +106,7 @@ export default function App() {
           </CardFooter>
         </Card>
       ) : (
-        <Card className="home-card" aria-labelledby="new-reading-heading">
+        <Card className="border-0 shadow-none" aria-labelledby="new-reading-heading">
           <CardHeader>
             <CardTitle id="new-reading-heading">Lập quẻ mới</CardTitle>
             <CardDescription>
@@ -107,7 +114,7 @@ export default function App() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <FieldGroup className="home-form-fields">
+            <FieldGroup className="flex flex-col gap-6">
               <Field>
                 <FieldLabel htmlFor="reading-question">Câu hỏi (không bắt buộc)</FieldLabel>
                 <Textarea
@@ -125,7 +132,7 @@ export default function App() {
                   Câu hỏi chỉ tồn tại trong phiên này, không được lưu hoặc sao lưu.
                 </FieldDescription>
               </Field>
-              <FieldSet className="home-method-set">
+              <FieldSet className="flex flex-col gap-3">
                 <FieldLegend>Phương pháp lập quẻ</FieldLegend>
                 <RadioGroup
                   aria-label="Phương pháp lập quẻ"
@@ -138,13 +145,16 @@ export default function App() {
                       setMethod(nextMethod);
                     }
                   }}
-                  className="home-method-options"
+                  className="flex flex-col gap-3"
                 >
                   {methods.map(({ value, label, detail }) => (
-                    <FieldLabel key={value} className="home-method-option">
-                      <Field orientation="horizontal" className="home-method-field">
+                    <FieldLabel
+                      key={value}
+                      className="flex items-center gap-2 p-3 bg-muted/50 cursor-pointer hover:bg-muted"
+                    >
+                      <Field orientation="horizontal" className="flex gap-3 items-start">
                         <RadioGroupItem id={`method-${value}`} value={value} />
-                        <span className="home-method-copy">
+                        <span className="flex flex-col">
                           <strong>{label}</strong>
                           <small>{detail}</small>
                         </span>
@@ -155,16 +165,19 @@ export default function App() {
               </FieldSet>
             </FieldGroup>
             {draft && (
-              <p className="home-draft-note" role="status">
+              <p
+                className="text-sm font-medium text-muted-foreground mt-4 text-center"
+                role="status"
+              >
                 Bạn đang có bản gieo quẻ chưa hoàn tất. Tiếp tục để giữ lại tiến trình.
               </p>
             )}
           </CardContent>
-          <CardFooter className="home-form-footer">
-            <button className="home-primary-action" type="button" onClick={begin}>
+          <CardFooter className="flex flex-col gap-4 mt-6">
+            <Button className="w-full h-12 text-base" type="button" onClick={begin}>
               {draft ? 'Tiếp tục gieo quẻ' : 'Bắt đầu gieo quẻ'}
-            </button>
-            <p className="home-session-note">
+            </Button>
+            <p className="text-xs text-muted-foreground text-center mt-4">
               Bản gieo chỉ tồn tại trong bộ nhớ phiên này. Tải lại ứng dụng có thể làm mất dữ liệu.
             </p>
           </CardFooter>

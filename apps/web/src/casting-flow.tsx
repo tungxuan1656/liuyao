@@ -134,10 +134,17 @@ export function CastingFlow() {
 
   if (!draft) {
     return (
-      <main className="reading-page">
-        <h1>Lập quẻ mới</h1>
-        <p role="status">Chọn một phương pháp để bắt đầu.</p>
-        <Button type="button" onClick={() => navigate(ROUTES.home)}>
+      <main className="flex flex-col items-center justify-center min-h-[50vh] gap-6 text-center">
+        <h1 className="text-3xl font-medium text-neutral-900 tracking-tight">Lập quẻ mới</h1>
+        <p className="text-neutral-500" role="status">
+          Chọn một phương pháp để bắt đầu.
+        </p>
+        <Button
+          type="button"
+          variant="outline"
+          className="rounded-none border-neutral-200 hover:bg-neutral-100"
+          onClick={() => navigate(ROUTES.home)}
+        >
           Quay lại trang gieo quẻ
         </Button>
       </main>
@@ -147,19 +154,18 @@ export function CastingFlow() {
   const direct = draft.method === 'direct';
   const step = Math.min(draft.step, 5);
   return (
-    <main
-      className={`reading-page casting-page${draft.method === 'automatic' ? ' automatic-casting-page' : ''}`}
-    >
-      <header className="flow-header">
+    <main className="w-full max-w-4xl mx-auto flex flex-col gap-3 md:gap-4 p-4 md:p-8 text-neutral-900">
+      <header className="flex items-center gap-2 text-neutral-500 mb-2">
         <Button
           type="button"
           variant="ghost"
-          className="casting-cancel-action"
+          className="p-0 h-auto font-normal text-neutral-900 bg-transparent border-0 hover:bg-transparent"
           onClick={cancelFlow}
         >
           Hủy
         </Button>
-        <p>
+        <span>/</span>
+        <p className="text-sm">
           {direct
             ? 'Nhập trực tiếp'
             : draft.method === 'automatic'
@@ -167,7 +173,7 @@ export function CastingFlow() {
               : 'Gieo thủ công'}
         </p>
       </header>
-      <h1>
+      <h1 className="text-[clamp(2rem,4vw,2.8rem)] font-medium tracking-tight mb-2 md:mb-4">
         {direct
           ? 'Nhập sáu hào'
           : draft.method === 'automatic'
@@ -175,7 +181,9 @@ export function CastingFlow() {
             : `Hào ${step + 1} trên 6`}
       </h1>
       {draft.question && (
-        <p className="question-summary">Câu hỏi (chỉ trong phiên này): {draft.question}</p>
+        <p className="text-sm md:text-base text-neutral-600 mb-4">
+          Câu hỏi (chỉ trong phiên này): {draft.question}
+        </p>
       )}
       {draft.method === 'automatic' ? (
         <AutomaticCastingPanel
@@ -194,7 +202,7 @@ export function CastingFlow() {
         <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
       ) : (
         <>
-          <section className="manual-casting-workspace" aria-label="Gieo thủ công">
+          <section className="grid gap-3" aria-label="Gieo thủ công">
             <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
             <ManualCastingActions
               step={step}
@@ -208,8 +216,8 @@ export function CastingFlow() {
       )}
       <Button
         type="button"
-        variant="outline"
-        className="secondary-action casting-reset-action"
+        variant="ghost"
+        className="self-center w-auto mt-4 text-sm text-neutral-500 hover:text-neutral-900 border-0 bg-transparent hover:bg-transparent"
         onClick={() => {
           if (hasInput) setResetLines(true);
           else if (draft) {
@@ -230,7 +238,7 @@ export function CastingFlow() {
         Xóa các hào
       </Button>
       {error && (
-        <p className="error-message" role="alert">
+        <p className="text-red-500 text-center mt-4" role="alert">
           {error}
         </p>
       )}

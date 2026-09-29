@@ -8,7 +8,6 @@ import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
 import { describeLineValue, getLinePresentation } from './line-value-presentation';
 import { YaoSymbol } from './components/yao-symbol';
 import type { useReadingSession } from './reading-session';
-import './casting/input-workspace.css';
 
 type Draft = NonNullable<ReturnType<typeof useReadingSession>['draft']>;
 
@@ -54,11 +53,14 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
   }
 
   return (
-    <Card className="manual-coin-card input-workspace" aria-label={`Đồng xu cho hào ${step + 1}`}>
-      <CardHeader className="input-workspace-header">
+    <Card
+      className="min-w-0 overflow-hidden w-full border-0 shadow-none bg-white text-neutral-900"
+      aria-label={`Đồng xu cho hào ${step + 1}`}
+    >
+      <CardHeader className="flex flex-col sm:flex-row sm:items-stretch justify-between gap-4 p-0 pb-4">
         <div>
-          <CardTitle>Hào {step + 1}</CardTitle>
-          <p>Chạm từng đồng xu để nhập mặt đã gieo.</p>
+          <CardTitle className="text-lg font-medium">Hào {step + 1}</CardTitle>
+          <p className="mt-1 text-sm text-neutral-500">Chạm từng đồng xu để nhập mặt đã gieo.</p>
         </div>
         <ToggleGroup
           aria-label="Số lượng đồng xu"
@@ -76,51 +78,74 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
             });
           }}
           disabled={(draft.manualTosses?.some(Boolean) ?? false) || draft.lines.length > 0}
-          className="input-method-switch"
+          className="flex flex-wrap w-full sm:w-auto"
         >
-          <ToggleGroupItem value="three-coin">Ba đồng xu</ToggleGroupItem>
-          <ToggleGroupItem value="four-coin">Bốn đồng xu</ToggleGroupItem>
+          <ToggleGroupItem
+            value="three-coin"
+            className="flex-1 min-h-[44px] rounded-none data-[state=on]:bg-neutral-900 data-[state=on]:text-white"
+          >
+            Ba đồng xu
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            value="four-coin"
+            className="flex-1 min-h-[44px] rounded-none data-[state=on]:bg-neutral-900 data-[state=on]:text-white"
+          >
+            Bốn đồng xu
+          </ToggleGroupItem>
         </ToggleGroup>
       </CardHeader>
-      <CardContent className="input-workspace-content">
-        <div className="manual-workspace-grid">
-          <CastingHexagram
-            lines={Array.from({ length: 6 }, (_, index) =>
-              draft.manualConfirmed?.[index] ? draft.manualTosses?.[index]?.line : undefined,
-            )}
-            step={step}
-          />
-          <div className="manual-coin-workspace">
-            <div className={`manual-coins manual-coins-${count}`}>
+      <CardContent className="grid gap-5 p-0">
+        <div className="grid grid-cols-1 md:grid-cols-[0.72fr_1.28fr] items-stretch gap-5">
+          <div className="min-w-0 p-4 border-0 bg-neutral-50 md:order-none order-last">
+            <CastingHexagram
+              lines={Array.from({ length: 6 }, (_, index) =>
+                draft.manualConfirmed?.[index] ? draft.manualTosses?.[index]?.line : undefined,
+              )}
+              step={step}
+            />
+          </div>
+          <div className="grid content-start gap-4 min-w-0">
+            <div
+              className={`grid place-items-center gap-4 py-4 grid-cols-2 ${count === 3 ? '[&>*:first-child]:col-span-2' : ''}`}
+            >
               {coins.map((coin, index) => (
                 <Button
                   type="button"
                   variant="ghost"
-                  className="manual-coin-control"
+                  className="grid justify-items-center content-start gap-2 min-w-[44px] min-h-[44px] p-2 hover:bg-transparent h-auto"
                   key={index}
                   aria-pressed={Boolean(coin)}
                   disabled={confirmed}
                   aria-label={`${count === 4 ? coinNames[index] + ', ' : `Đồng xu ${index + 1}, `}${coin ? 'mặt trời' : 'mặt trăng'}. Chạm để lật.`}
                   onClick={() => flip(index)}
                 >
-                  <CoinFace value={coin} name={count === 4 ? coinNames[index] : undefined} />
-                  <span>
+                  <div
+                    className={`w-[clamp(3.7rem,10vw,5rem)] transition-transform duration-300 ${confirmed ? '' : 'active:scale-95'}`}
+                  >
+                    <CoinFace value={coin} name={count === 4 ? coinNames[index] : undefined} />
+                  </div>
+                  <span className="text-sm text-neutral-500">
                     {count === 4 ? ['Địa', 'Thủy', 'Hỏa', 'Phong'][index] : `Đồng ${index + 1}`}
                   </span>
                 </Button>
               ))}
             </div>
-            <div className="manual-outcome" aria-live="polite">
+            <div
+              className="grid min-h-[96px] justify-items-center content-center gap-1.5 text-center"
+              aria-live="polite"
+            >
               {line === undefined || !presentation ? (
-                <span>Chọn mặt từng đồng xu</span>
+                <span className="text-neutral-500">Chọn mặt từng đồng xu</span>
               ) : (
                 <>
                   <YaoSymbol
                     polarity={line === 7 || line === 9 ? 'yang' : 'yin'}
                     changing={line === 6 || line === 9}
                   />
-                  <strong data-line-value={line}>{presentation.name}</strong>
-                  <span>
+                  <strong data-line-value={line} className="font-medium">
+                    {presentation.name}
+                  </strong>
+                  <span className="text-sm text-neutral-500">
                     {describeLineValue(line)}
                     {confirmed ? ' · đã xác nhận' : ' · chưa xác nhận'}
                   </span>
@@ -129,6 +154,7 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
             </div>
             <Button
               type="button"
+              className="w-full min-h-[46px] rounded-none bg-neutral-900 text-white hover:bg-neutral-800 border-0 disabled:bg-neutral-200 disabled:text-neutral-500"
               disabled={confirmed || !previous}
               onClick={() => {
                 if (!previous) return;
@@ -144,7 +170,7 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
               {confirmed ? 'Đã xác nhận hào' : 'Xác nhận hào'}
             </Button>
             {step === 5 && draft.lines[5] === undefined && (
-              <p role="status">
+              <p className="text-sm text-neutral-500 text-center" role="status">
                 Hãy nhập hào sáu trước khi tính quẻ. Các hào đã nhập vẫn được giữ lại.
               </p>
             )}
