@@ -4,6 +4,7 @@ import { coinNames } from './casting/coin-names';
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 import { describeLineValue, getLinePresentation } from './line-value-presentation';
+import { YaoSymbol } from './components/yao-symbol';
 import type { useReadingSession } from './reading-session';
 
 type Draft = NonNullable<ReturnType<typeof useReadingSession>['draft']>;
@@ -99,6 +100,10 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
           <span>Chọn mặt từng đồng xu</span>
         ) : (
           <>
+            <YaoSymbol
+              polarity={line === 7 || line === 9 ? 'yang' : 'yin'}
+              changing={line === 6 || line === 9}
+            />
             <strong data-line-value={line}>{presentation.name}</strong>
             <span>
               {describeLineValue(line)}

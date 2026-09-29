@@ -91,7 +91,9 @@ test('automatic casting keeps the primary action stationary before and after a r
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
   await startReading(page, 'Gieo tự động');
+  await expect(page.locator('.casting-stage')).toHaveAttribute('data-renderer', 'ready');
 
   const primaryAction = page.locator('.casting-primary-action');
   const before = await primaryAction.boundingBox();
@@ -99,6 +101,9 @@ test('automatic casting keeps the primary action stationary before and after a r
   expect(before).not.toBeNull();
 
   await primaryAction.click();
+  await expect(primaryAction).toBeDisabled();
+  await expect(page.locator('.casting-stage')).toHaveClass(/is-casting/);
+  await expect(page.locator('.toss-result')).toHaveCount(0);
   const evidence = page
     .getByRole('status')
     .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });

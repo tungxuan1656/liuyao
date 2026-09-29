@@ -1,16 +1,35 @@
-import { coinNames } from './coin-names';
+import type { CSSProperties } from 'react';
+import { coinIdentities } from './coin-identities';
 
 export function CoinFace({ value, name }: { value: number; name?: string }) {
-  const emblems: Record<string, string> = { Đất: '◇', Nước: '≈', Lửa: '△', Gió: '〰' };
+  const identity = coinIdentities.find(coin => coin.name === name);
   return (
-    <span className={`coin-face ${value ? 'is-heads' : 'is-tails'}`}>
-      {name && (
-        <span
-          className={`coin-emblem emblem-${coinNames.indexOf(name as (typeof coinNames)[number])}`}
+    <span
+      className={`coin-face ${value ? 'is-heads' : 'is-tails'}${identity ? ' has-identity' : ''}`}
+      style={
+        identity
+          ? ({
+              '--coin-accent': identity.dark,
+              '--coin-light': identity.light,
+              '--coin-color': identity.color,
+              '--coin-ink': identity.ink,
+            } as CSSProperties)
+          : undefined
+      }
+    >
+      {identity && (
+        <svg
+          className="coin-element-symbol"
+          viewBox="0 0 24 24"
           aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
-          {emblems[name]}
-        </span>
+          <path d={identity.path} />
+        </svg>
       )}
       <svg className="coin-sun" viewBox="0 0 32 32" aria-hidden="true">
         <circle cx="16" cy="16" r="5" />

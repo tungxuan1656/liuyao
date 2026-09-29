@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from './route-paths';
 import { useReadingSession } from './reading-session';
 import { FactButton, FactInspector, type FactSelection } from './result-facts';
-import { HexagramBoard, YaoSymbol } from './result-board';
+import { HexagramBoard } from './result-board';
+import { YaoSymbol } from './components/yao-symbol';
 import { branchName, elementName, hexagramLabel, relativeName, stemName } from './result-labels';
 import './result-view.css';
 
@@ -182,7 +183,7 @@ export function ResultView() {
                         : ''}
                   </small>
                 </span>
-                <YaoSymbol line={line} />
+                <YaoSymbol polarity={line.polarity} changing={line.changing} />
                 <FactButton
                   fact={{
                     id: 'line.naJiaStem',

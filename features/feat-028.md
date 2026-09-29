@@ -32,8 +32,8 @@ Support user-matched physical tosses and the selected three- or four-coin castin
 
 ## Handoff
 
-- State: active on PR #49; the user-approved 3D redesign replaces the shell/dish concept.
-- Verification: `./init.sh` passed (225 package tests, one existing lint warning); release E2E passed 16/16. Desktop 1280×900 and mobile 390×844 completed six fixed four-coin outcomes, revisit, and calculation. Action Y stayed at 700.14px and 706.75px respectively. Reduced motion, unavailable/lost WebGL, mid-flight reset, cancellation, and production offline scene loading passed browser checks.
-- Visual evidence: reviewed launch/contact/camera frame captures at 200/450/750/1000/1300ms plus final desktop/mobile boards. Coins have visible thickness, distinct rotations, asymmetric landing positions, and readable sun/moon faces. Lowered launch height after detecting proximity to the upper stage edge. Mobile actions fit within 844px height.
-- Limits: frame captures and desktop Chromium viewport emulation do not establish physical-phone frame pacing. The lazy 3D chunk adds about 133kB gzip and produces a non-blocking Vite size warning.
-- Next: Review the updated PR preview live on desktop and a physical phone before accepting motion quality and marking the feature done.
+- State: active on PR #49; the readability follow-up adds always-on toss animation, shared moving-line symbols, and four elemental coin palettes.
+- Verification: `./init.sh` passed (225 package tests, one existing lint warning); release E2E passed 16/16, including an active toss under reduced-motion emulation. Browser checks confirmed changed flight pixels and delayed reveal for WebGL and DOM fallback under reduced motion, both moving markers at 24×24px, and mid-flight reset without a stale reveal. Mobile direct/result screens have no horizontal overflow; the primary board shows four expected moving markers.
+- Visual evidence: reviewed desktop 1280×900 and mobile 390×844 elemental faces, circle/cross markers, DOM fallback, and the mobile result board. Shared icon paths and palettes identify both faces in 3D and DOM. Previous six-line/revisit and offline evidence is recorded in progress history.
+- Limits: viewport emulation does not establish physical-phone frame pacing. The lazy 3D chunk adds about 134kB gzip and produces a non-blocking Vite size warning.
+- Next: Review the updated PR preview for motion and elemental-symbol readability on the user's device before marking the feature done.

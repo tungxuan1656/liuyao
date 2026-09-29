@@ -1,6 +1,7 @@
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 import { describeLineValue, getLinePresentation } from './line-value-presentation';
+import { YaoSymbol } from './components/yao-symbol';
 
 const validValues = [6, 7, 8, 9] as const;
 
@@ -9,24 +10,6 @@ type Props = {
   onChange: (index: number, value: string) => void;
   onFinish: () => void;
 };
-
-function DirectYaoSymbol({ value }: { value: (typeof validValues)[number] }) {
-  const yang = value === 7 || value === 9;
-  const moving = value === 6 || value === 9;
-  return (
-    <span className={`direct-yao-symbol ${yang ? 'is-yang' : 'is-yin'}`} aria-hidden="true">
-      {yang ? (
-        <i />
-      ) : (
-        <>
-          <i />
-          <i />
-        </>
-      )}
-      {moving && <b>{value === 6 ? '✕' : '○'}</b>}
-    </span>
-  );
-}
 
 export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
   const canCalculate = Array.from({ length: 6 }, (_, index) =>
@@ -55,7 +38,10 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
                   aria-label={`${presentation.name}, ${describeLineValue(value)}`}
                   onClick={() => onChange(index, String(value))}
                 >
-                  <DirectYaoSymbol value={value} />
+                  <YaoSymbol
+                    polarity={value === 7 || value === 9 ? 'yang' : 'yin'}
+                    changing={value === 6 || value === 9}
+                  />
                   <span className="line-choice-copy">
                     <strong>{presentation.name}</strong>
                     <small>{describeLineValue(value)}</small>

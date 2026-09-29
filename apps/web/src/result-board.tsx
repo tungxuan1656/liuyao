@@ -1,4 +1,5 @@
-import type { PrimaryLineResult, ReadingResult } from '@liuyao/core';
+import type { ReadingResult } from '@liuyao/core';
+import { YaoSymbol } from './components/yao-symbol';
 import { Link } from 'react-router-dom';
 import { FactButton, type FactSelection } from './result-facts';
 import { ROUTES } from './route-paths';
@@ -11,26 +12,6 @@ import {
   trigramLabel,
 } from './result-labels';
 
-export function YaoSymbol({ line }: { line: PrimaryLineResult }) {
-  const yang = line.polarity === 'yang';
-  return (
-    <span
-      className={`yao-symbol${yang ? ' is-yang' : ''}`}
-      role="img"
-      aria-label={`${yang ? 'Dương' : 'Âm'}${line.changing ? ', động' : ''}`}
-    >
-      {yang ? (
-        <i />
-      ) : (
-        <>
-          <i />
-          <i />
-        </>
-      )}
-      {line.changing && <b aria-hidden="true">{line.inputValue === 6 ? '✕' : '○'}</b>}
-    </span>
-  );
-}
 export function HexagramBoard({
   result,
   changed = false,
@@ -134,7 +115,7 @@ export function HexagramBoard({
             return (
               <li key={line.position}>
                 <span className="line-marker" aria-hidden="true" />
-                <YaoSymbol line={{ ...line, polarity, changing: false }} />
+                <YaoSymbol polarity={polarity} />
                 <span className="line-note">{line.changing ? 'Đã đổi âm dương' : ''}</span>
               </li>
             );
@@ -154,7 +135,7 @@ export function HexagramBoard({
                       ? 'Ứng'
                       : ''}
                 </span>
-                <YaoSymbol line={line} />
+                <YaoSymbol polarity={line.polarity} changing={line.changing} />
                 <span className="line-note">
                   {stem} {branch} · {elementName(line.element)} · {relativeName(line.relative)}
                 </span>

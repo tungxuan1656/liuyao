@@ -1,5 +1,6 @@
 import type { CoinTossResult } from '@liuyao/core';
 import { getLinePresentation } from '../line-value-presentation';
+import { YaoSymbol } from '../components/yao-symbol';
 
 export function CastingHexagram({
   tosses,
@@ -28,21 +29,16 @@ export function CastingHexagram({
                 {index + 1}
                 <span className="sr-only">. Hào {index + 1}</span>
               </span>
-              <span
-                key={value ?? 'empty'}
-                className={`forming-symbol${toss ? (yang ? ' is-yang' : ' is-yin') : ' is-empty'}`}
-                aria-hidden="true"
-              >
-                {toss ? (
-                  <>
-                    <i />
-                    {!yang && <i />}
-                    {(value === 6 || value === 9) && <b>{value === 6 ? '×' : '○'}</b>}
-                  </>
-                ) : (
-                  <span />
-                )}
-              </span>
+              {toss ? (
+                <YaoSymbol
+                  key={value}
+                  className="forming-symbol"
+                  polarity={yang ? 'yang' : 'yin'}
+                  changing={value === 6 || value === 9}
+                />
+              ) : (
+                <span className="forming-empty" aria-hidden="true" />
+              )}
               <span className="forming-name">
                 {value
                   ? getLinePresentation(value).name
@@ -56,7 +52,9 @@ export function CastingHexagram({
           );
         })}
       </ol>
-      <p>Gieo từ hào dưới cùng</p>
+      <p>
+        Gieo từ hào dưới cùng · <strong>○ Dương động · × Âm động</strong>
+      </p>
     </section>
   );
 }

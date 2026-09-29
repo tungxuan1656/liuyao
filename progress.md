@@ -555,3 +555,10 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed with 225 package tests; release E2E passed 16/16. Direct desktop/mobile checks completed six fixed four-coin outcomes, revisit, and calculation with stationary actions. Reduced motion, fallback, context loss, reset, cancel, and production offline lazy loading passed. Reviewed launch/contact/reveal frame captures at both viewport sizes.
 **Limits**: Physical-phone frame pacing remains unverified; the 3D chunk adds approximately 133kB gzip. Feature remains active pending live preview motion acceptance.
 **Next**: Review the updated PR preview on desktop and a physical phone.
+
+## 2026-09-29 — feat-028 always-on motion and readable identities
+
+**State**: active; user requested three concrete follow-up changes on PR #49.
+**Changed**: Explicit tosses now animate regardless of reduced-motion preferences, including a cancellable DOM fallback. Added a shared `YaoSymbol` for automatic/manual/direct casting and result boards, with fixed 24px high-contrast SVG moving markers. Four-coin faces now share gold/blue/red/white palettes and large mountain/drop/flame/wind paths across textures, DOM controls, and a named legend.
+**Evidence**: `./init.sh` passed (225 package tests); release E2E passed 16/16. Reduced-motion browser checks verified changed flight pixels, animation-length reveal, both moving markers, mobile layout, and mid-flight reset in WebGL and fallback modes. Reviewed desktop/mobile face captures and mobile direct/result layouts; no horizontal overflow.
+**Next**: Review the updated preview on the user's device for motion and elemental-symbol readability; keep the feature active until visual acceptance.

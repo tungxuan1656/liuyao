@@ -5,6 +5,7 @@ import { getLinePresentation, describeLineValue } from './line-value-presentatio
 import { CoinStage } from './casting/coin-stage';
 import { coinNames } from './casting/coin-names';
 import { CastingHexagram } from './casting/casting-hexagram';
+import { CoinLegend } from './casting/coin-legend';
 import './casting/casting-workspace.css';
 
 type Props = {
@@ -61,6 +62,7 @@ export function AutomaticCastingPanel({
       <div className="casting-workspace-body">
         <CastingHexagram tosses={tosses} step={step} busy={busy} />
         <section className="casting-theater" aria-label="Sân khấu gieo đồng xu">
+          {count === 4 && <CoinLegend />}
           <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
           <div className="casting-copy" aria-live="polite">
             {completed && toss ? (

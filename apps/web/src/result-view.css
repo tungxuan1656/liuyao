@@ -173,34 +173,8 @@
   font-weight: 700;
   text-align: right;
 }
-.yao-symbol {
-  position: relative;
-  display: inline-flex;
-  height: 18px;
-  width: 68px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 7px;
-}
-.yao-symbol i {
-  display: block;
-  height: 8px;
-  flex: 1;
-  border-radius: 1px;
-  background: var(--result-ink);
-}
-.yao-symbol b {
-  position: absolute;
-  inset: -4px auto auto 50%;
-  z-index: 1;
-  transform: translateX(-50%);
+.changed-panel .yao-glyph {
   color: var(--result-accent);
-  font-size: 0.83rem;
-  line-height: 1;
-  text-shadow: 0 0 2px var(--result-paper);
-}
-.changed-panel .yao-symbol i {
-  background: var(--result-accent);
 }
 .line-note {
   overflow: hidden;
@@ -483,12 +457,8 @@
     font-size: 1.1rem;
   }
   .hexagram-lines li {
-    grid-template-columns: 23px 49px minmax(0, 1fr);
+    grid-template-columns: 23px 76px minmax(0, 1fr);
     gap: 0.2rem;
-  }
-  .yao-symbol {
-    width: 47px;
-    gap: 5px;
   }
   .line-marker {
     font-size: 0.6rem;
@@ -512,11 +482,8 @@
     font-size: 0.78rem;
   }
   .line-fact-row {
-    grid-template-columns: 29px 42px repeat(3, minmax(0, 1fr));
+    grid-template-columns: 29px 68px repeat(3, minmax(0, 1fr));
     gap: 0.15rem;
-  }
-  .line-fact-row .yao-symbol {
-    width: 40px;
   }
   .line-fact-row .fact-link {
     display: grid;

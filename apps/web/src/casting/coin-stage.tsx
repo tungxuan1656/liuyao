@@ -15,16 +15,7 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const scene = useRef<ReturnType<typeof createCoinScene> | null>(null);
   const [state, setState] = useState<'loading' | 'ready' | 'fallback'>('loading');
-  const [reduced, setReduced] = useState(
-    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-  );
-
-  useEffect(() => {
-    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const change = () => setReduced(preference.matches);
-    preference.addEventListener('change', change);
-    return () => preference.removeEventListener('change', change);
-  }, []);
+  const fallback = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -58,9 +49,26 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
   }, []);
 
   useEffect(() => {
-    if (state === 'ready') scene.current?.update(count, toss, busy && !reduced, onComplete);
-    if (busy && (reduced || state === 'fallback')) onComplete();
-  }, [count, toss, busy, reduced, state, onComplete]);
+    if (state === 'ready') scene.current?.update(count, toss, busy, onComplete);
+    if (!busy || state !== 'fallback') return;
+    // Explicit casting always animates, including without WebGL or with reduced motion.
+    const animations = Array.from(fallback.current!.children).map((coin, index) =>
+      coin.animate(
+        [
+          { translate: '0 0', rotate: '0deg' },
+          { translate: '0 -65px', rotate: `${index % 2 ? -160 : 160}deg`, offset: 0.4 },
+          { translate: '0 0', rotate: `${index % 2 ? -360 : 360}deg`, offset: 0.82 },
+          { translate: '0 -4px', rotate: `${index % 2 ? -365 : 365}deg`, offset: 0.9 },
+          { translate: '0 0', rotate: `${index % 2 ? -360 : 360}deg` },
+        ],
+        { duration: 1450, delay: index * 45, easing: 'ease-in-out' },
+      ),
+    );
+    void Promise.all(animations.map(animation => animation.finished))
+      .then(onComplete)
+      .catch(() => {});
+    return () => animations.forEach(animation => animation.cancel());
+  }, [count, toss, busy, state, onComplete]);
 
   return (
     <div
@@ -70,7 +78,7 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
     >
       <div ref={host} className="coin-canvas" hidden={state === 'fallback'} />
       {state !== 'ready' && (
-        <div className="coin-static-scene">
+        <div ref={fallback} className="coin-static-scene">
           {Array.from({ length: count }, (_, index) => (
             <div className={`static-coin static-coin-${index}`} key={index}>
               <CoinFace

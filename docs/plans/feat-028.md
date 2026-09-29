@@ -26,3 +26,12 @@ The user approved the replacement concept and inline execution on PR #49 on 2026
 - [x] Replace obsolete turtle/dish styling with ivory, ink, and bronze workspace styling. Keep mobile actions stationary.
 - [x] Update existing release scenarios for named-only results; verify all six outcomes, revisit/reset, reduced motion, fallback, and offline loading.
 - [x] Run `./init.sh` and `pnpm test:release`; inspect desktop/mobile animation frames and record the evidence and limitations before pushing PR #49.
+
+## Readability follow-up — 2026-09-29
+
+User requested always-on toss animation, prominent moving lines, and gold/blue/red/white elemental coins.
+
+1. Remove the reduced-motion bypass; animate the DOM fallback with cancellable completion.
+2. Share `components/yao-symbol.tsx` across casting, direct/manual entry, and result boards. Use fixed-size SVG markers.
+3. Share elemental icon paths and palettes between generated textures, DOM faces, and a named stage legend.
+4. Verify actual frame changes under reduced motion, both moving markers at desktop/mobile widths, both faces of all four coins, reset/fallback, and release regressions. Run `./init.sh` before pushing.

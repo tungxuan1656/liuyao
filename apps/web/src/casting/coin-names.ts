@@ -1,1 +1,3 @@
-export const coinNames = ['Đất', 'Nước', 'Lửa', 'Gió'] as const;
+import { coinIdentities } from './coin-identities';
+
+export const coinNames = coinIdentities.map(coin => coin.name);

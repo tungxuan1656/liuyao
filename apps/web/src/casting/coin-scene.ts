@@ -20,6 +20,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import type { CoinTossResult } from '@liuyao/core';
 import { createCoinTexture } from './coin-texture';
 import { poseCamera, poseCoins, TOSS_DURATION } from './coin-motion';
+import { coinIdentities } from './coin-identities';
 
 export function createCoinScene(host: HTMLElement) {
   const renderer = new WebGLRenderer({
@@ -80,18 +81,27 @@ export function createCoinScene(host: HTMLElement) {
     const body = new CylinderGeometry(0.55, 0.55, 0.12, 64);
     const rim = new TorusGeometry(0.514, 0.018, 8, 64);
     geometries.push(body, rim);
-    const edge = new MeshStandardMaterial({ color: 0x9f783f, metalness: 0.8, roughness: 0.32 });
-    materials.push(edge);
     for (let i = 0; i < count; i++) {
+      const edge = new MeshStandardMaterial({
+        color: count === 4 ? coinIdentities[i]!.dark : 0x9f783f,
+        metalness: 0.65,
+        roughness: 0.38,
+      });
+      materials.push(edge);
       const faces = [true, false].map(heads => {
         const map = createCoinTexture(heads, count === 4 ? i : undefined);
         map.anisotropy = Math.min(renderer.capabilities.getMaxAnisotropy(), 4);
         textures.push(map);
-        const material = new MeshStandardMaterial({ map, metalness: 0.58, roughness: 0.43 });
+        const material = new MeshStandardMaterial({
+          map,
+          metalness: count === 4 ? 0.25 : 0.58,
+          roughness: 0.5,
+        });
         materials.push(material);
         return material;
       });
       const coin = new Group();
+      coin.scale.setScalar(1.16);
       const mesh = new Mesh(body, [edge, ...faces]);
       mesh.castShadow = true;
       mesh.receiveShadow = true;

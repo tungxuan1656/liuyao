@@ -386,20 +386,26 @@
   color: #4f514d;
 }
 
-.element-0 .coin-face {
-  --coin-accent: #746b4d;
+.coin-face.has-identity {
+  background: radial-gradient(circle at 30% 20%, var(--coin-light), var(--coin-color) 70%);
+  color: var(--coin-ink);
 }
-
-.element-1 .coin-face {
-  --coin-accent: #63767a;
+.coin-element-symbol {
+  position: absolute;
+  width: 42%;
+  height: 42%;
+  top: 15%;
+  left: 29%;
+  z-index: 1;
 }
-
-.element-2 .coin-face {
-  --coin-accent: #8d6953;
-}
-
-.element-3 .coin-face {
-  --coin-accent: #6d7467;
+.coin-face.has-identity .coin-sun,
+.coin-face.has-identity .coin-moon {
+  position: absolute;
+  width: 32%;
+  height: 32%;
+  bottom: 11%;
+  left: 34%;
+  stroke-width: 2.4;
 }
 
 .coin-sun,
@@ -416,23 +422,6 @@
 .coin-face.is-heads .coin-moon,
 .coin-face.is-tails .coin-sun {
   display: none;
-}
-
-.coin-emblem {
-  position: absolute;
-  top: 9%;
-  right: 9%;
-  z-index: 2;
-  display: grid;
-  width: 23%;
-  aspect-ratio: 1;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  background: #f2eee0;
-  color: var(--coin-accent);
-  font: 600 0.7rem/1 var(--font-serif);
-  pointer-events: none;
 }
 
 .casting-action-bar,
@@ -547,33 +536,6 @@
   border-color: #52685a;
   background: #eef2ed;
   box-shadow: inset 0 0 0 1px #52685a;
-}
-
-.direct-yao-symbol {
-  position: relative;
-  display: inline-flex;
-  width: 54px;
-  height: 14px;
-  align-items: center;
-  justify-self: center;
-  gap: 6px;
-}
-
-.direct-yao-symbol i {
-  display: block;
-  height: 6px;
-  flex: 1;
-  border-radius: 1px;
-  background: currentColor;
-}
-
-.direct-yao-symbol b {
-  position: absolute;
-  inset: -4px auto auto 50%;
-  transform: translateX(-50%);
-  color: #7a5c45;
-  font-size: 0.72rem;
-  line-height: 1;
 }
 
 .line-choice-copy {

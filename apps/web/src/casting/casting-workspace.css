@@ -103,9 +103,9 @@
 }
 .forming-lines li {
   display: grid;
-  grid-template-columns: 16px minmax(60px, 1fr) 90px;
+  grid-template-columns: 14px minmax(70px, 1fr) 90px;
   align-items: center;
-  gap: 14px;
+  gap: 8px;
   height: 38px;
   padding: 0 8px;
   border-radius: 3px;
@@ -120,34 +120,22 @@
   font-size: 0.65rem;
 }
 .forming-name {
-  font-size: 0.74rem;
+  font-size: 0.78rem;
+  color: var(--foreground);
   white-space: nowrap;
 }
-.forming-symbol {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  height: 20px;
-  color: var(--foreground);
-}
-.forming-symbol i {
-  flex: 1;
-  height: 8px;
-  background: currentColor;
+.forming-symbol .yao-strokes {
   animation: yao-ink 380ms ease-out both;
   transform-origin: left;
 }
-.forming-symbol b {
-  position: absolute;
-  left: calc(100% + 3px);
-  top: -2px;
-  color: var(--bronze);
-  font: 700 12px var(--font-sans);
-}
-.forming-symbol.is-empty > span {
-  width: 100%;
+.forming-empty {
+  margin-right: 30px;
   border-bottom: 1px dashed #bcb8ac;
+}
+.forming-hexagram > p strong {
+  display: block;
+  margin-top: 6px;
+  color: #7f3024;
 }
 .forming-lines li:not(.is-current):not(.is-filled) {
   opacity: 0.7;
@@ -176,6 +164,36 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+.coin-legend {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+.coin-legend li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  color: var(--foreground);
+}
+.coin-legend svg {
+  width: 26px;
+  height: 26px;
+  padding: 3px;
+  color: var(--coin-ink);
+  background: var(--coin-color);
+  border: 1px solid #344c5e40;
+  border-radius: 50%;
 }
 .automatic-casting-page .casting-copy {
   display: grid;
@@ -315,13 +333,10 @@
     gap: 1px;
   }
   .forming-lines li {
-    grid-template-columns: 20px 110px 1fr;
-    gap: 20px;
-    height: 25px;
+    grid-template-columns: 20px 140px 1fr;
+    gap: 10px;
+    height: 28px;
     padding-inline: 10px;
-  }
-  .forming-symbol i {
-    height: 6px;
   }
   .forming-hexagram > p {
     display: none;
@@ -350,11 +365,5 @@
   }
   .automatic-casting-page .question-summary {
     font-size: 0.8rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .forming-symbol i {
-    animation: none;
   }
 }
