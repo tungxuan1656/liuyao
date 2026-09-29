@@ -562,3 +562,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Changed**: Explicit tosses now animate regardless of reduced-motion preferences, including a cancellable DOM fallback. Added a shared `YaoSymbol` for automatic/manual/direct casting and result boards, with fixed 24px high-contrast SVG moving markers. Four-coin faces now share gold/blue/red/white palettes and large mountain/drop/flame/wind paths across textures, DOM controls, and a named legend.
 **Evidence**: `./init.sh` passed (225 package tests); release E2E passed 16/16. Reduced-motion browser checks verified changed flight pixels, animation-length reveal, both moving markers, mobile layout, and mid-flight reset in WebGL and fallback modes. Reviewed desktop/mobile face captures and mobile direct/result layouts; no horizontal overflow.
 **Next**: Review the updated preview on the user's device for motion and elemental-symbol readability; keep the feature active until visual acceptance.
+
+## 2026-09-29 — feat-028 Base UI replacement plan
+
+**State**: active on `feat/028-coin-casting`. The user superseded the 3D design and requested full-shadcn migration on this branch.
+**Done**: Replaced the execution plan with staged Base UI migration, fixed coin flips, page redesign, cleanup, and verification. The user selected six vertical direct-input rows. Canonical specs mark the new presentation as intended and the flip timing as proposed.
+**Evidence**: CLI decoded preset `b59jufSZGa` as Sera/Neutral/Lucide/Noto Sans/Noto Serif. `info --json` reports the existing base as Radix. CLI help confirms explicit `--base base`, `--pointer`, and reinstallation flags.
+**Limit**: Planning only. The application and dependencies still match commit `46441cc`.
+**Next**: Review `docs/plans/feat-028.md`, then execute Task 1 inline on the current branch.
