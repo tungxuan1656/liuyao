@@ -122,7 +122,9 @@ test.describe('production PWA behavior', () => {
       await page.getByRole('radio', { name: 'Gieo thủ công' }).check();
       await page.getByRole('button', { name: 'Bắt đầu gieo quẻ' }).click();
       await expect(page.getByRole('heading', { name: 'Hào 1 trên 6' })).toBeVisible();
-      await page.getByLabel('Giá trị hào 1 (bắt đầu từ hào một)').selectOption('7');
+      const coins = page.locator('.manual-coins button');
+      await coins.nth(0).click();
+      await expect(page.locator('.manual-outcome')).toContainText('Kết quả hào 7');
 
       fixture.selectVersion(2);
       await page.evaluate(async () => {
@@ -140,7 +142,7 @@ test.describe('production PWA behavior', () => {
         .toBe(true);
 
       await expect(page.getByRole('heading', { name: 'Hào 1 trên 6' })).toBeVisible();
-      await expect(page.getByLabel('Giá trị hào 1 (bắt đầu từ hào một)')).toHaveValue('7');
+      await expect(page.locator('.manual-outcome')).toContainText('Kết quả hào 7');
       await expect(
         page.getByRole('heading', { name: 'Đã có bản cập nhật ứng dụng' }),
       ).toBeVisible();

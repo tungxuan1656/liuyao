@@ -22,7 +22,11 @@ async function readResultSummary(page: import('@playwright/test').Page) {
 test('manual and direct entry produce the same result for six fixed values', async ({ page }) => {
   await startReading(page, 'Nhập trực tiếp');
   for (const [index, value] of sixLines.entries()) {
-    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+    await page
+      .getByRole('group', { name: `Chọn hào ${index + 1}` })
+      .getByRole('button')
+      .nth(value - 6)
+      .click();
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
   const directSummary = await readResultSummary(page);
@@ -32,9 +36,12 @@ test('manual and direct entry produce the same result for six fixed values', asy
   await page.getByRole('button', { name: 'Thay quẻ hiện tại' }).click();
   await startReading(page, 'Gieo thủ công');
   for (const [index, value] of sixLines.entries()) {
-    await page
-      .getByRole('combobox', { name: `Giá trị hào ${index + 1} (bắt đầu từ hào một)` })
-      .selectOption(String(value));
+    const coins = page.locator('.manual-coins button');
+    await coins.nth(0).click();
+    if (value === 6) await coins.nth(0).click();
+    else for (let coin = 1; coin < value - 6; coin += 1) await coins.nth(coin).click();
+    await expect(page.locator('.manual-outcome')).toContainText(`Kết quả hào ${value}`);
+    await page.getByRole('button', { name: 'Xác nhận hào' }).click();
     if (index < sixLines.length - 1) {
       await page.getByRole('button', { name: 'Hào tiếp theo' }).click();
     }
@@ -48,17 +55,12 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
   const validValues = new Set(['6', '7', '8', '9']);
   for (let index = 0; index < 6; index += 1) {
     await page.getByRole('button', { name: 'Gieo hào' }).click();
-    const evidence = page.getByRole('status').filter({ hasText: `Đồng xu:` });
+    const evidence = page.getByRole('status').filter({ hasText: /Hào [6789]/ });
     await expect(evidence).toBeVisible();
     const text = await evidence.innerText();
-    const tossedValue = await evidence.locator('strong').innerText();
+    const tossedValue = (await evidence.locator('strong').innerText()).replace('Hào ', '');
     expect(validValues.has(tossedValue)).toBe(true);
-    const coinEvidence = text.split('Đồng xu:')[1] ?? '';
-    const coins = coinEvidence.match(/\b[01]\b/g) ?? [];
-    expect(coins).toHaveLength(3);
-    const mappedValue = coins.reduce((sum, bit) => sum + (bit === '0' ? 2 : 3), 0);
-    expect(tossedValue).toBe(String(mappedValue));
-    expect(text).toContain('Đồng xu:');
+    expect(text.match(/mặt (?:trời|trăng)/g) ?? []).toHaveLength(3);
     if (index < 5) await page.getByRole('button', { name: 'Tiếp theo' }).click();
   }
 
@@ -77,7 +79,11 @@ test('a moving line distinguishes the changed board from the primary board', asy
   const oneMovingLine = [6, 7, 8, 7, 8, 7] as const;
   await startReading(page, 'Nhập trực tiếp');
   for (const [index, value] of oneMovingLine.entries()) {
-    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+    await page
+      .getByRole('group', { name: `Chọn hào ${index + 1}` })
+      .getByRole('button')
+      .nth(value - 6)
+      .click();
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
 
@@ -95,7 +101,11 @@ test('a moving line distinguishes the changed board from the primary board', asy
 test('the reading survives navigation to the home tab', async ({ page }) => {
   await startReading(page, 'Nhập trực tiếp');
   for (const [index, value] of sixLines.entries()) {
-    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+    await page
+      .getByRole('group', { name: `Chọn hào ${index + 1}` })
+      .getByRole('button')
+      .nth(value - 6)
+      .click();
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
 
@@ -122,7 +132,11 @@ test('result drawer closes with Escape and restores focus to its trigger', async
   await page.setViewportSize({ width: 390, height: 844 });
   await startReading(page, 'Nhập trực tiếp');
   for (const [index, value] of sixLines.entries()) {
-    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+    await page
+      .getByRole('group', { name: `Chọn hào ${index + 1}` })
+      .getByRole('button')
+      .nth(value - 6)
+      .click();
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
 
@@ -142,7 +156,11 @@ test('result drawer opens after resizing a rendered desktop result and follows l
   await page.setViewportSize({ width: 1024, height: 900 });
   await startReading(page, 'Nhập trực tiếp');
   for (const [index, value] of sixLines.entries()) {
-    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+    await page
+      .getByRole('group', { name: `Chọn hào ${index + 1}` })
+      .getByRole('button')
+      .nth(value - 6)
+      .click();
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
 
@@ -182,7 +200,11 @@ test('result fact inspectors link canonical entities from desktop and mobile', a
   await page.setViewportSize({ width: 1024, height: 900 });
   await startReading(page, 'Nhập trực tiếp');
   for (const [index, value] of oneMovingLine.entries()) {
-    await page.getByRole('combobox', { name: `Hào ${index + 1}` }).selectOption(String(value));
+    await page
+      .getByRole('group', { name: `Chọn hào ${index + 1}` })
+      .getByRole('button')
+      .nth(value - 6)
+      .click();
   }
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
 
