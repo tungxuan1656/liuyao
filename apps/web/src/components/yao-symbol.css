@@ -1,0 +1,50 @@
+.yao-glyph {
+  display: inline-grid;
+  grid-template-columns: minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  min-width: 0;
+  height: 26px;
+  color: var(--result-ink, #29362f);
+}
+.yao-glyph {
+  color: var(--foreground, var(--result-ink, #29362f));
+}
+.yao-strokes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.yao-strokes i {
+  display: block;
+  flex: 1;
+  height: 8px;
+  background: currentColor;
+}
+.yao-marker {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.yao-marker svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yao-glyph.is-moving .yao-marker {
+  background: #7f3024;
+  color: #fff8ec;
+}
+.yao-glyph.is-moving .yao-strokes {
+  color: #7f3024;
+}
+.line-choice-button .yao-glyph {
+  width: 100%;
+  max-width: 78px;
+  justify-self: center;
+}
+.manual-outcome .yao-glyph {
+  width: 130px;
+}

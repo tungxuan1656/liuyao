@@ -1,12 +1,14 @@
 .library-page,
 .library-detail {
   width: min(100%, 920px);
+  min-width: 0;
   margin: 0 auto;
   color: var(--foreground);
 }
 
 .library-heading {
   display: flex;
+  min-width: 0;
   min-height: 204px;
   padding: 1.5rem 0 1.75rem;
   align-items: center;
@@ -15,6 +17,7 @@
 }
 
 .library-heading-copy {
+  min-width: 0;
   max-width: 590px;
 }
 .library-kicker {
@@ -49,6 +52,7 @@
   border: 1px solid #a94d36;
   color: #a94d36;
   transform: rotate(4deg);
+  flex: 0 0 auto;
 }
 .library-seal span {
   font: 2.1rem/1 var(--font-serif);
@@ -60,7 +64,11 @@
 }
 
 .library-browser {
+  min-width: 0;
   padding: 1.5rem 0 2rem;
+}
+.library-browser > * {
+  min-width: 0;
 }
 .library-tabs {
   display: flex;
@@ -97,8 +105,26 @@
 .library-tab.is-selected::after {
   background: #9d5b38;
 }
+@media (max-width: 480px) {
+  .library-tabs {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .library-tab {
+    min-height: 44px;
+    height: auto;
+    padding: 0.65rem 0.5rem;
+    white-space: normal;
+  }
+  .library-tab::after {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+}
 .library-toolbar {
   display: flex;
+  min-width: 0;
   margin: 1.1rem 0 0.65rem;
   align-items: center;
   justify-content: space-between;
@@ -182,6 +208,7 @@
 }
 .library-list {
   display: grid;
+  min-width: 0;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--border);
 }
@@ -253,6 +280,28 @@
   justify-items: center;
   text-align: center;
 }
+.library-empty [data-slot='empty-header'] {
+  gap: 0.5rem;
+}
+.library-empty [data-slot='empty-title'] {
+  margin: 0.5rem 0 0;
+  font: 500 1.4rem var(--font-serif);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.library-empty [data-slot='empty-description'] {
+  max-width: 26rem;
+  color: var(--muted-foreground);
+  line-height: 1.55;
+}
+.library-search-label {
+  display: block;
+  min-width: 0;
+  flex: 1;
+}
+.library-search-label .library-search {
+  width: 100%;
+}
 .empty-symbol {
   color: #9d5b38;
   font: 2.5rem/1 var(--font-serif);
@@ -304,6 +353,7 @@
   color: var(--foreground);
 }
 .detail-sheet {
+  min-width: 0;
   max-width: 740px;
   margin: 0.9rem auto 0;
   padding: clamp(1.1rem, 4vw, 2.5rem);
@@ -343,7 +393,7 @@
 }
 .related-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(155px, 100%), 1fr));
   gap: 0.55rem;
 }
 .related-link {

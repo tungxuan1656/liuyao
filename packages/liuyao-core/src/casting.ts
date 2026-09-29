@@ -3,9 +3,17 @@ import { validateSixLines } from './validation.js';
 
 export type CoinBit = 0 | 1;
 export type CoinBitSource = () => CoinBit;
+export type CoinCount = 3 | 4;
+export type CastingMethod = 'three-coin' | 'four-coin';
+export type CoinSet =
+  readonly [CoinBit, CoinBit, CoinBit] | readonly [CoinBit, CoinBit, CoinBit, CoinBit];
+export type ThreeCoinSet = readonly [CoinBit, CoinBit, CoinBit];
+export type FourCoinSet = readonly [CoinBit, CoinBit, CoinBit, CoinBit];
 
 export type CoinTossResult = {
-  readonly coins: readonly [CoinBit, CoinBit, CoinBit];
+  readonly coins: CoinSet;
+  readonly method: CastingMethod;
+  readonly coinCount: CoinCount;
   readonly line: LineValue;
 };
 
@@ -30,12 +38,29 @@ export type AutomaticTossSnapshot = readonly [
   CoinTossResult,
 ];
 
-function copyValidatedToss(toss: CoinTossResult): CoinTossResult {
-  const copiedCoins = [...toss.coins] as [CoinBit, CoinBit, CoinBit];
-  if (mapCoinsToLine(copiedCoins) !== toss.line) {
-    throw new TypeError('Each toss line must match its three coin values.');
+function copyValidatedToss(toss: CoinTossResult, method?: CastingMethod): CoinTossResult {
+  if (!toss || !Array.isArray(toss.coins)) {
+    throw new TypeError('Each toss must include coin evidence.');
   }
-  return Object.freeze({ coins: Object.freeze(copiedCoins), line: toss.line });
+  const copiedCoins = [...toss.coins] as CoinBit[];
+  const count = copiedCoins.length;
+  const expectedMethod: CastingMethod | undefined =
+    count === 3 ? 'three-coin' : count === 4 ? 'four-coin' : undefined;
+  if (
+    !expectedMethod ||
+    toss.method !== expectedMethod ||
+    toss.coinCount !== count ||
+    (method !== undefined && toss.method !== method) ||
+    mapCoinsToLine(copiedCoins as unknown as CoinSet) !== toss.line
+  ) {
+    throw new TypeError('Each toss method, coin count, and line must match its coin evidence.');
+  }
+  return Object.freeze({
+    coins: Object.freeze(copiedCoins) as unknown as CoinSet,
+    method: toss.method,
+    coinCount: toss.coinCount,
+    line: toss.line,
+  });
 }
 
 /** Copy and freeze six bottom-to-top tosses, rejecting mismatched coin/line evidence. */
@@ -46,7 +71,10 @@ export function createAutomaticTossSnapshot(
     throw new TypeError('An automatic toss snapshot must contain exactly six tosses.');
   }
 
-  const snapshot = tosses.map(copyValidatedToss) as unknown as AutomaticTossSnapshot;
+  const method = tosses[0]?.method;
+  const snapshot = tosses.map(toss =>
+    copyValidatedToss(toss, method),
+  ) as unknown as AutomaticTossSnapshot;
 
   return Object.freeze(snapshot);
 }
@@ -59,8 +87,9 @@ export function appendAutomaticToss(
   if (!Array.isArray(tosses) || tosses.length >= 6) {
     throw new TypeError('An automatic reading cannot contain more than six tosses.');
   }
-  tosses.forEach(copyValidatedToss);
-  return Object.freeze([...tosses.map(copyValidatedToss), copyValidatedToss(toss)]);
+  const method = tosses[0]?.method ?? toss.method;
+  const copiedTosses = tosses.map(value => copyValidatedToss(value, method));
+  return Object.freeze([...copiedTosses, copyValidatedToss(toss, method)]);
 }
 
 function isCoinBit(value: unknown): value is CoinBit {
@@ -68,18 +97,24 @@ function isCoinBit(value: unknown): value is CoinBit {
 }
 
 /** Map three coin bits to a line value (0 contributes 2; 1 contributes 3). */
-export function mapCoinsToLine(coins: readonly [CoinBit, CoinBit, CoinBit]): LineValue {
+export function mapCoinsToLine(coins: CoinSet, method?: CastingMethod): LineValue {
   if (
     !Array.isArray(coins) ||
-    coins.length !== 3 ||
-    !isCoinBit(coins[0]) ||
-    !isCoinBit(coins[1]) ||
-    !isCoinBit(coins[2])
+    (coins.length !== 3 && coins.length !== 4) ||
+    (method !== undefined && method !== (coins.length === 3 ? 'three-coin' : 'four-coin'))
   ) {
-    throw new TypeError('Coins must be an array of exactly three bits (0 or 1).');
+    throw new TypeError('Coins must be three or four valid bits and match the selected method.');
   }
-  const total = coins.reduce((sum, bit) => sum + (bit === 0 ? 2 : 3), 0);
-  return total as LineValue;
+  for (const bit of coins) {
+    if (!isCoinBit(bit)) throw new TypeError('Coins must contain only 0 or 1 bits.');
+  }
+  if (coins.length === 3) {
+    const total = coins.reduce((sum, bit) => sum + (bit === 0 ? 2 : 3), 0);
+    return total as LineValue;
+  }
+  const weights = [8, 4, 2, 1] as const;
+  const total = coins.reduce((sum, bit, index) => sum + bit * weights[index]!, 0);
+  return (total === 0 ? 6 : total <= 5 ? 7 : total <= 12 ? 8 : 9) as LineValue;
 }
 
 /** Normalize an untrusted bottom-to-top six-line array into a copied reading input. */
@@ -100,8 +135,9 @@ export function normalizeDirectInput(lines: unknown): HexagramReadingInput {
 export class CastingService {
   constructor(private readonly source: CoinBitSource) {}
 
-  toss(): CoinTossResult {
-    const coins: [CoinBit, CoinBit, CoinBit] = [0, 0, 0];
+  toss(method: CastingMethod = 'three-coin'): CoinTossResult {
+    const coinCount: CoinCount = method === 'three-coin' ? 3 : 4;
+    const coins: CoinBit[] = Array.from({ length: coinCount }, () => 0);
     for (let index = 0; index < coins.length; index += 1) {
       const bit: unknown = this.source();
       if (!isCoinBit(bit)) {
@@ -109,12 +145,17 @@ export class CastingService {
       }
       coins[index] = bit;
     }
-    return Object.freeze({ coins: Object.freeze(coins), line: mapCoinsToLine(coins) });
+    return Object.freeze({
+      coins: Object.freeze(coins) as unknown as CoinSet,
+      method,
+      coinCount,
+      line: mapCoinsToLine(coins as unknown as CoinSet, method),
+    });
   }
 
-  cast(): CastingResult {
+  cast(method: CastingMethod = 'three-coin'): CastingResult {
     const tosses = Object.freeze(
-      Array.from({ length: 6 }, () => this.toss()) as unknown as CastingResult['tosses'],
+      Array.from({ length: 6 }, () => this.toss(method)) as unknown as CastingResult['tosses'],
     );
     const input = normalizeCastingInput(tosses.map(toss => toss.line));
     Object.freeze(input.lines);

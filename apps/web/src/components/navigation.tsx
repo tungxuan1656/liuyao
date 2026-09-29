@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { BookOpen, Home, Settings } from 'lucide-react';
 import { ROUTES } from '../route-paths';
+import { buttonVariants } from './ui/button';
 
 const destinations = [
-  { label: 'Gieo quẻ', path: ROUTES.home, icon: '⌂' },
-  { label: 'Thư viện', path: ROUTES.library, icon: '▤' },
-  { label: 'Cài đặt', path: ROUTES.settings, icon: '⚙' },
+  { label: 'Gieo quẻ', path: ROUTES.home, icon: Home },
+  { label: 'Thư viện', path: ROUTES.library, icon: BookOpen },
+  { label: 'Cài đặt', path: ROUTES.settings, icon: Settings },
 ] as const;
 
 function isCurrentDestination(pathname: string, path: string) {
@@ -37,18 +39,17 @@ export function Navigation() {
         <span>Lục Hào</span>
       </Link>
       <div className="app-navigation-links">
-        {destinations.map(({ label, path, icon }) => {
+        {destinations.map(({ label, path, icon: Icon }) => {
           const current = isCurrentDestination(pathname, path);
           return (
             <Link
-              className={`app-navigation-link${current ? ' is-current' : ''}`}
-              to={path}
               key={label}
+              data-slot="button"
+              className={`${buttonVariants({ variant: 'ghost' })} app-navigation-link${current ? ' is-current' : ''}`}
+              to={path}
               aria-current={current ? 'page' : undefined}
             >
-              <span className="app-navigation-icon" aria-hidden="true">
-                {icon}
-              </span>
+              <Icon data-icon="inline-start" aria-hidden="true" />
               <span>{label}</span>
             </Link>
           );

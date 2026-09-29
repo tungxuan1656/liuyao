@@ -11,9 +11,12 @@ type AppShellProps = {
 export function AppShell({ children, focused }: AppShellProps) {
   const { pathname } = useLocation();
   const isFocused = focused ?? pathname === ROUTES.casting;
+  const hasMobileNavigation = !isFocused;
 
   return (
-    <div className={`app-shell${isFocused ? ' app-shell-focused' : ''}`}>
+    <div
+      className={`app-shell${isFocused ? ' app-shell-focused' : ''}${hasMobileNavigation ? ' app-shell-with-navigation' : ''}`}
+    >
       {!isFocused && <Navigation />}
       <div className="app-shell-content">{children}</div>
     </div>

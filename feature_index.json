@@ -177,6 +177,12 @@
       "title": "Make Library ID search exact and show complete relationships",
       "status": "done",
       "depends_on": ["feat-009"]
+    },
+    {
+      "id": "feat-028",
+      "title": "shadcn UI migration and coin casting modes",
+      "status": "active",
+      "depends_on": ["feat-005", "feat-007"]
     }
   ]
 }

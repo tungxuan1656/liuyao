@@ -12,8 +12,14 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 
 ### Component system
 
-- V1 web UI will use **shadcn/ui** with the **`new-york`** style.
-- Visual properties: subtle borders (`border-border`), restrained corner radii (`rounded-md`, 4–6px), high typographic discipline, and minimal decorative elevation.
+- **Intended replacement:** All web routes use official **shadcn/ui** components with **Base UI** primitives and preset **`b59jufSZGa`**.
+- The preset selects **Sera**, neutral base/theme/chart colors, Lucide icons, Noto Sans body text, and Noto Serif headings. Use its default radius and subtle menu accent.
+- Enable the preset's pointer-cursor option. Use semantic theme tokens and built-in component variants for controls.
+- Use white surfaces, neutral text, subtle borders, and consistent spacing. Avoid ornamental frames, paper textures, metallic gradients, and decorative shadows.
+- Application layouts compose shadcn components. Domain renderers cover coin faces, yao symbols, and hexagram geometry.
+- Base UI owns control behavior, modal focus, and keyboard interactions. Remove Radix dependencies and duplicate control implementations.
+- Scope includes Home, all casting modes, results, Library, Settings, navigation, confirmations, and PWA feedback.
+- This replacement is not implemented yet. The existing `new-york` controls and 3D scene are superseded implementation targets.
 - Single codebase with responsive CSS utility classes (Tailwind breakpoints). Never maintain separate codebases or separate component trees for mobile and desktop.
 
 ### Typography
@@ -22,7 +28,7 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 - **Body, Data, & Form Controls**: `Noto Sans` (`font-sans`) with complete Vietnamese diacritic coverage.
 - **Language**: Render Vietnamese only. Do not add Han-character text or a CJK font fallback for knowledge content; see `vietnamese-language.md`.
 - **Brand / Decorative Latin Text**:
-  - `Cinzel` is restricted exclusively to the Latin-only logo mark, brand title, and decorative Roman numbers. It must not be used for general Vietnamese headings.
+  - **Intended:** Use Noto Serif for the brand title. Remove the Cinzel asset and declaration after its final consumer migrates.
 - **Font Delivery & Offline Requirement**:
   - All fonts must be bundled and self-hosted locally within the application distribution.
   - No external Google Fonts, CDN links, or remote network requests are allowed at runtime.
@@ -79,6 +85,9 @@ Represents the primary divination workspace. Follows states defined in `reading-
 
 - **Trạng thái bắt đầu gieo quẻ** (khi chưa có kết quả trong bộ nhớ):
   - Hiển thị ô nhập câu hỏi không bắt buộc, lựa chọn phương pháp (Gieo tự động, Gieo thủ công, Nhập trực tiếp) và nút `[ Bắt đầu gieo quẻ ]` để mở luồng `/casting`.
+  - **Intended composition:** Use one centered `Card`, with `CardHeader`, `CardContent`, and `CardFooter`. The content width is approximately 720px.
+  - Use `FieldGroup`, `Field`, `Textarea`, and a labeled `RadioGroup`. Show one full-width primary action and one concise session-storage note.
+  - Use the neutral preset for navigation and form controls. Keep the heading and optional question prominent.
 - **Trạng thái kết quả** (khi có quẻ đã tính trong bộ nhớ):
   - Displays the full Hexagram Result Board (see Result Layout below).
   - Phần đầu trang hiển thị nút `[ Lập quẻ mới ]`. Nút này mở hộp thoại xác nhận trước khi thay quẻ trong bộ nhớ.
@@ -124,10 +133,30 @@ Used during active line input before calculation. Governed by the rules in `read
     - Chỉ báo bước: `Hào 1 trên 6` đến `Hào 6 trên 6`.
     - Bottom-to-top sequence.
     - Có nút `[ Quay lại ]` để về hào trước mà không xóa dữ liệu đã nhập.
-    - Automatic mode has one explicit three-coin toss action per line. Show its generated outcome before moving to the next line; revisiting a completed line must preserve its original toss. Reset discards the complete automatic draft before any new tosses.
+    - **Intended replacement:** Automatic and manual modes share a neutral `Card` workspace and the same coin arrangement.
+    - The header contains a single-select `ToggleGroup` for three/four coins and the completed-line count. Existing draft rules control when selection is locked.
+    - Desktop places the forming hexagram beside the coin area. Mobile stacks the compact hexagram above the coins.
+    - Fill slots from bottom to top. Keep line names and moving markers aligned. Empty slots use placeholders distinct from completed yang lines.
+    - Three coins occupy a fixed triangle: one centered above two lower coins. All three use the same neutral surface.
+    - Four coins occupy a fixed square: Earth at top-left, Water at top-right, Fire at bottom-left, and Wind at bottom-right.
+    - Use yellow, blue, red, and gray coin surfaces respectively. Show the labels **Địa**, **Thủy**, **Hỏa**, and **Phong** below the coins.
+    - Every coin face uses a large Unicode **☀** or **☾**. Request text presentation and provide Vietnamese accessible face labels.
+    - Color identifies the four weighted coins. Color never identifies heads/tails by itself. Elemental pictograms and engraved textures are removed.
+    - Automatic coins flip repeatedly in place, then show the predetermined faces. Remove Three.js, WebGL, canvas textures, camera motion, and airborne trajectories.
+    - **Proposed timing:** Four 300ms flip cycles, with a total duration of 1200ms. Use horizontal CSS scaling and swap glyphs at edge-on frames.
+    - Keep each coin center, the stage height, the result region, and the action bar stationary throughout the flip and reveal.
+    - Explicit tosses animate under reduced-motion preferences. Reset, cancel, or unmount cancels completion. Revisits show stored faces without replay.
+    - Manual coins use shadcn `Button` controls. Each activation flips one face to match a physical toss. Manual input never generates random faces.
+    - Manual confirmation records the line. The shared hexagram shows confirmed lines, while the current preview remains separate.
+    - **Visual acceptance:** Review the actual flip, Unicode readability, both coin arrangements, and final outcomes on desktop and mobile.
   - **Direct-entry mode**:
-    - All 6 line positions are visible simultaneously on one screen.
+    - All six line positions are available on one page, without a step-by-step wizard. Small viewports can scroll vertically.
     - Presented visually in board orientation from Line 6 (top) down to Line 1 (bottom), while keeping canonical domain state in bottom-to-top order (1 to 6).
+    - **Intended, user-selected layout:** Use six vertical rows, never a two-column list of line positions. All rows remain mounted on one scrollable page.
+    - Each row uses a single-select `ToggleGroup`. Desktop places its four choices across the row. Mobile uses a two-by-two choice grid.
+    - Show the shared yao symbol, canonical name, and a short static/moving label. Place the transformation explanation in one shared legend.
+    - Keep the selected state, focus ring, and moving marker distinct. Do not compress labels or allow symbols to overlap adjacent choices.
+    - Each position offers four explicit named choices: **Lão âm**, **Thiếu dương**, **Thiếu âm**, and **Lão dương**. Show the yao symbol and canonical name; omit numeric values from visible and accessible copy.
     - Nút chính `[ Tính quẻ ]` bị vô hiệu hóa cho đến khi cả sáu vị trí có giá trị hợp lệ từ `6` đến `9`.
 - **Navigation safety semantics**:
   - **Quay lại**: Về bước nhập trước trong luồng tuần tự và giữ các hào đã nhập.
@@ -148,7 +177,7 @@ Used during active line input before calculation. Governed by the rules in `read
   - Bottom Nav: `< 768px` (mobile viewport with safe-area insets)
   - Top Nav: `>= 768px` (tablet and desktop viewports)
 - **Result display modes**:
-  - Single-pane layout: `< 900px` (full-width board with bottom-anchored Drawer for contextual facts)
+  - Single-pane layout: `< 900px` (full-width board with the intended bottom-anchored Base UI Sheet for contextual facts)
   - Split-pane layout: `>= 900px` (Master-Detail split view with persistent Fact Inspector, container max width `max-w-7xl mx-auto`)
 
 ---
@@ -183,13 +212,13 @@ The result view presents deterministic facts separated from explanatory prose, m
     - **Hover**: Optional transient preview; does not override an explicitly clicked/selected fact.
   - Footer shows `Xem trong thư viện: <fact label>` only when the selected fact has an explicit canonical Library entity target (such as a hexagram or trigram). Facts without a direct entity target have no footer link; their linked rules remain accessible in the inspector.
 
-#### 2. Single-pane result layout (`< 900px` Board + Adaptive Drawer):
+#### 2. Single-pane result layout (`< 900px` Board + Adaptive Sheet):
 
 - **Main viewport**:
   - Hiển thị bảng quẻ toàn chiều rộng với hàng gọn và nhãn Nội quái/Ngoại quái rõ ràng.
   - Minimum touch target height for each line row is `48px`.
-- **Fact inspection via Drawer**:
-  - Selecting a fact button opens a bottom-anchored `Drawer`.
+- **Fact inspection via Sheet**:
+  - **Intended replacement:** Selecting a fact button opens a shadcn Base UI `Sheet` with `side="bottom"`.
   - Displays the exact same documented explanation and source reference as the desktop panel.
   - **Dismissal requirements**:
     - The visible `[ Đóng ]` button has `aria-label="Đóng phần giải thích dữ kiện"`.
@@ -204,25 +233,31 @@ The result view presents deterministic facts separated from explanatory prose, m
 
 ### shadcn/ui components
 
-- `Button`: Primary actions, method selector, step navigation.
-- `Card`: Hexagram overview, casting stages, library browsing cards.
+- **Intended inventory:** Install components from the official `@shadcn` registry using the Base UI configuration. Add only components with actual consumers.
+- `Button`: Primary actions, manual coin controls, step navigation, and router-link actions through `render`.
+- `Card`: Home form, hexagram overview, casting workspace, Library records, and Settings sections.
 - `Badge`: Shi/Ying markers, Five Element badges, ruleset indicators.
-- `Tabs`: Casting method selector, library category switcher.
-- `Drawer`: shadcn/ui Drawer for compact-screen fact inspection.
+- `RadioGroup`: Home method selection.
+- `ToggleGroup`: Coin-count selection, direct-line choices, and Library rule filters.
+- `Tabs`: Library category switcher.
+- `Sheet`: Base UI bottom sheet for compact-screen fact inspection.
 - `AlertDialog`: Destructive confirmation modals (canceling casting flow, replacing existing reading draft).
-- `Input`: Question draft, library search bar.
+- `Field`, `Textarea`: Optional question and labeled form structure.
+- `InputGroup`: Library search and its clear action.
+- `Alert`, `Empty`: PWA feedback, errors, and empty states.
 - `Separator`: Structural section dividers.
 
 ### Custom domain components
 
-- `<YaoSymbol value={6|7|8|9} size="sm"|"md"|"lg" />`: Pure SVG/CSS rendering of solid, broken, and moving line symbols.
+- `<YaoSymbol polarity="yin"|"yang" changing={boolean} />`: Shared CSS line geometry and SVG moving markers across casting, direct input, and result boards. Reserve a fixed 24px marker column on every line. Moving lines use dark vermilion strokes and a high-contrast white circle (yang) or cross (yin) in a vermilion badge. Keep markers separate from names and bars; never rely on color alone.
 - `<HexagramBoard reading={result} onSelectLine={(lineIndex) => ...} />`: Responsive 6-line board with upper/lower trigram indicators.
 - `<AutomaticCastingPanel step={step} lines={lines} tosses={tosses} onBack={...} onNext={...} onToss={...} onFinish={...} />`:
   - Shows the current line number and six-line toss progress.
-  - Once the current line has been cast, announces its value and three coin bits in a live status; the most recently cast line is marked as such.
+  - Presents automatic outcomes with canonical names and symbols, without numeric values. Marks the current line in the forming hexagram and reveals each line only after its animation completes.
   - Provides `[ Quay lại ]`, disabled on the first line. For an already-cast line, provides `[ Tiếp theo ]`, except on the completed sixth line, where it provides `[ Tính quẻ ]`. For the next uncast line, provides `[ Gieo hào ]`.
-  - Displays toss evidence without a claimed coin animation. Randomness is provided by the casting flow, not owned by this panel.
-- `<FactInspector fact={selectedFact} />`: Ruleset-backed explanation renderer, embedded inline in split-pane views or inside `<Drawer>` in single-pane views.
+  - Displays the outcome evidence. The casting flow provides the predetermined random outcome; animation must not determine or alter it.
+- Manual coin controls show independently adjustable heads/tails faces, expose each coin's identity accessibly, and provide an explicit line-confirm action.
+- `<FactInspector fact={selectedFact} />`: Ruleset-backed explanation renderer, embedded inline in split-pane views or inside the intended Base UI `Sheet` in single-pane views.
 - `<AppShell />`: Master layout wrapping TopNav (desktop), BottomNav (mobile with safe area), and main scroll container.
 
 ---

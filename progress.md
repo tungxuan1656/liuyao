@@ -532,3 +532,49 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed, including knowledge regression tests. The release suite passed 12/12 before the final test-only edit; no responsive browser visual check was performed.
 - Handoff: feat-027 implementation complete on `feat/027-library-search-relationships`; PR integration and issue #33 closure remain.
 - Next: Merge feat-027 after CI and confirm issue #33 closed.
+
+## 2026-09-28 — feat-028 implementation handoff
+
+**State**: active on `feat/028-coin-casting`; automated verification passed, visual and complete-flow validation remain.
+**Done**: Implemented manual per-coin confirmation, direct six-line choices, and three-/four-coin automatic casting. Split casting presentation into focused components to meet the TypeScript file-size limit.
+**Evidence**: `./init.sh` passed after the split (format, lint with two warnings, typecheck, build, 225 package tests, and package exports). Browser checks sampled desktop/iPhone coin faces and stable stage heights (242px desktop; 220px mobile); non-reduced animation was active at 80/450/900/1400ms, revealed by 1900ms with unchanged stage height, while reduced motion revealed immediately. Core tests exhaustively cover three-/four-coin mappings. Manual/direct browser checks were partial; complete six-line completion/revisit/reset remains unverified.
+**Blockers**: Meaningful mobile and desktop live-animation visual review is still required; timing samples alone do not establish motion quality.
+**Next**: Record live-animation visual review on mobile and desktop, then validate full six-line completion, revisit, and reset before finalizing acceptance.
+
+## 2026-09-29 — feat-028 casting UX refinement
+
+**State**: implementation refined on `feat/028-coin-casting`; live visual review is still required before marking the feature done.
+**Changed**: Replaced bare 6/7/8/9 result headlines with Lão âm / Thiếu dương / Thiếu âm / Lão dương terminology, stabilized the automatic-casting result/action regions, simplified the shell/coin/dish visual language, shortened and staggered motion, and routed casting controls through the shared shadcn-style Button/Card/UI primitives. The destructive confirmation dialog now uses the shared alert-dialog primitive with centered overlay and open animation.
+**Tests**: Release E2E expectations were updated for canonical line names and a mobile regression test now checks that the automatic primary action does not shift vertically after a reveal.
+**Remaining**: Run repository verification and perform the required desktop/mobile live-animation visual review before checking feat-028 motion acceptance.
+
+## 2026-09-29 — feat-028 3D casting redesign
+
+**State**: active; implemented the user-approved replacement concept on PR #49.
+**Changed**: Replaced turtle/dish animation with a lazy Three.js bronze-coin stage, staggered launch/contact, camera reveal, and six-line forming hexagram. Removed numeric outcome copy from casting modes. Scene completion replaces the independent reveal timer; reset cancels motion. Added static fallback for unavailable/lost WebGL.
+**Evidence**: `./init.sh` passed with 225 package tests; release E2E passed 16/16. Direct desktop/mobile checks completed six fixed four-coin outcomes, revisit, and calculation with stationary actions. Reduced motion, fallback, context loss, reset, cancel, and production offline lazy loading passed. Reviewed launch/contact/reveal frame captures at both viewport sizes.
+**Limits**: Physical-phone frame pacing remains unverified; the 3D chunk adds approximately 133kB gzip. Feature remains active pending live preview motion acceptance.
+**Next**: Review the updated PR preview on desktop and a physical phone.
+
+## 2026-09-29 — feat-028 always-on motion and readable identities
+
+**State**: active; user requested three concrete follow-up changes on PR #49.
+**Changed**: Explicit tosses now animate regardless of reduced-motion preferences, including a cancellable DOM fallback. Added a shared `YaoSymbol` for automatic/manual/direct casting and result boards, with fixed 24px high-contrast SVG moving markers. Four-coin faces now share gold/blue/red/white palettes and large mountain/drop/flame/wind paths across textures, DOM controls, and a named legend.
+**Evidence**: `./init.sh` passed (225 package tests); release E2E passed 16/16. Reduced-motion browser checks verified changed flight pixels, animation-length reveal, both moving markers, mobile layout, and mid-flight reset in WebGL and fallback modes. Reviewed desktop/mobile face captures and mobile direct/result layouts; no horizontal overflow.
+**Next**: Review the updated preview on the user's device for motion and elemental-symbol readability; keep the feature active until visual acceptance.
+
+## 2026-09-29 — feat-028 Base UI replacement plan
+
+**State**: active on `feat/028-coin-casting`. The user superseded the 3D design and requested full-shadcn migration on this branch.
+**Done**: Replaced the execution plan with staged Base UI migration, fixed coin flips, page redesign, cleanup, and verification. The user selected six vertical direct-input rows. Canonical specs mark the new presentation as intended and the flip timing as proposed.
+**Evidence**: CLI decoded preset `b59jufSZGa` as Sera/Neutral/Lucide/Noto Sans/Noto Serif. `info --json` reports the existing base as Radix. CLI help confirms explicit `--base base`, `--pointer`, and reinstallation flags.
+**Limit**: Planning only. The application and dependencies still match commit `46441cc`.
+**Next**: Review `docs/plans/feat-028.md`, then execute Task 1 inline on the current branch.
+
+## 2026-09-29 — feat-028 Base UI migration verified
+
+**State**: active on `feat/028-coin-casting`; implementation is locally verified.
+**Done**: Completed the approved Sera/Base UI migration across casting modes, routes, and shared controls; replaced Three.js with predetermined DOM/CSS coin flips and fixed responsive layout defects found in browser review.
+**Evidence**: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audits at 320/390/1280px verified direct-choice sizing, manual action targets, Library tabs, stable coin centers, alternating faces under normal/reduced motion, and Home mouse/keyboard navigation.
+**Blockers**: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs report sourcemap-location and >500KB chunk warnings.
+**Next**: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.

@@ -1,68 +1,121 @@
-import type { CoinTossResult } from '@liuyao/core';
+import type { CastingMethod, CoinTossResult } from '@liuyao/core';
+import { Button } from './components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
+import { Separator } from './components/ui/separator';
+import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
+import { getLinePresentation, describeLineValue } from './line-value-presentation';
+import { CoinStage } from './casting/coin-stage';
+import { coinNames } from './casting/coin-names';
+import { CastingHexagram } from './casting/casting-hexagram';
+import './casting/casting-workspace.css';
 
-type AutomaticCastingPanelProps = {
+type Props = {
   step: number;
-  lines: number[];
   tosses: readonly CoinTossResult[];
+  method: CastingMethod;
+  busy: boolean;
+  onMethodChange: (method: CastingMethod) => void;
   onBack: () => void;
   onNext: () => void;
   onToss: () => void;
   onFinish: () => void;
+  onAnimationComplete: () => void;
 };
 
 export function AutomaticCastingPanel({
   step,
-  lines,
   tosses,
+  method,
+  busy,
+  onMethodChange,
   onBack,
   onNext,
   onToss,
   onFinish,
-}: AutomaticCastingPanelProps) {
+  onAnimationComplete,
+}: Props) {
+  const toss = tosses[step];
+  const count = method === 'three-coin' ? 3 : 4;
+  const completed = Boolean(toss) && !busy;
+  const final = completed && step === 5;
+  const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
-    <section className="reading-card automatic-casting" aria-labelledby="automatic-line-title">
-      <p className="eyebrow">Từng hào · từ dưới lên</p>
-      <h2 id="automatic-line-title">Hào {step + 1} trên 6</h2>
-      <div className="toss-progress" aria-label={`${tosses.length} trên 6 hào đã gieo`}>
-        {Array.from({ length: 6 }, (_, index) => (
-          <span key={index} className={index < tosses.length ? 'is-cast' : ''}>
-            {index + 1}
-          </span>
-        ))}
-      </div>
-      {lines[step] !== undefined && (
-        <div className="toss-result" role="status" aria-live="polite">
-          <span>
-            Hào {step + 1}
-            {step === tosses.length - 1 ? ' vừa gieo' : ''}
-          </span>
-          <strong>{lines[step]}</strong>
-          <span>Đồng xu: {tosses[step]?.coins.join(' · ')}</span>
-        </div>
-      )}
-      <p>
-        {tosses.length < 6
-          ? 'Mỗi lần gieo tạo một hào bằng nguồn ngẫu nhiên an toàn của trình duyệt.'
-          : 'Đã đủ sáu hào. Kiểm tra kết quả rồi tính quẻ.'}
-      </p>
-      <div className="flow-actions">
-        <button type="button" disabled={step === 0} onClick={onBack}>
+    <Card className="automatic-casting" aria-label="Gieo từng hào">
+      <CardHeader className="casting-workspace-header">
+        <ToggleGroup
+          aria-label="Số lượng đồng xu"
+          value={[method]}
+          onValueChange={value => {
+            if (value[0]) onMethodChange(value[0] as CastingMethod);
+          }}
+          disabled={busy || tosses.length > 0}
+          className="casting-method-switch"
+        >
+          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu">
+            Ba đồng xu
+          </ToggleGroupItem>
+          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu">
+            Bốn đồng xu
+          </ToggleGroupItem>
+        </ToggleGroup>
+        <span className="casting-count">{revealedCount} / 6 hào</span>
+      </CardHeader>
+      <CardContent className="casting-workspace-body">
+        <CastingHexagram
+          lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
+          step={step}
+        />
+        <section className="casting-theater" aria-label="Sân khấu gieo đồng xu">
+          <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
+          <div className="casting-copy" aria-live="polite">
+            {completed && toss ? (
+              <div className="toss-result" role="status">
+                <div className="toss-result-heading">
+                  <span>Hào {step + 1}</span>
+                  <strong data-line-value={toss.line}>{getLinePresentation(toss.line).name}</strong>
+                </div>
+                <span className="sr-only">{describeLineValue(toss.line)}</span>
+                <span className="coin-evidence">
+                  {toss.coins
+                    .map(
+                      (coin, index) =>
+                        `${count === 4 ? `${coinNames[index]}: ` : ''}${coin ? 'mặt trời' : 'mặt trăng'}`,
+                    )
+                    .join(' · ')}
+                </span>
+              </div>
+            ) : (
+              <div className="casting-status-placeholder" role="status">
+                <span>Hào {step + 1}</span>
+                <p>{busy ? 'Đồng xu đang rơi…' : 'Tĩnh tâm, rồi gieo một hào.'}</p>
+              </div>
+            )}
+          </div>
+        </section>
+      </CardContent>
+      <Separator />
+      <CardFooter className="casting-action-bar">
+        <Button
+          type="button"
+          variant="ghost"
+          className="casting-back-action"
+          disabled={step === 0 || busy}
+          onClick={onBack}
+        >
           Quay lại
-        </button>
-        {step < tosses.length && step === 5 && tosses.length === 6 ? (
-          <button type="button" onClick={onFinish}>
-            Tính quẻ
-          </button>
-        ) : step < tosses.length ? (
-          <button type="button" onClick={onNext}>
-            Tiếp theo
-          </button>
-        ) : (
-          <button type="button" onClick={onToss}>
-            Gieo hào
-          </button>
-        )}
-      </div>
-    </section>
+        </Button>
+        <span className="casting-action-hint">
+          {final ? 'Sáu hào đã đủ' : 'Mỗi lần gieo, một hào thành hình'}
+        </span>
+        <Button
+          type="button"
+          className="casting-primary-action"
+          disabled={busy}
+          onClick={final ? onFinish : completed ? onNext : onToss}
+        >
+          {busy ? 'Đang gieo…' : final ? 'Tính quẻ' : completed ? 'Tiếp theo' : 'Gieo hào'}
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }

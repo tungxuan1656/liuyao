@@ -2,3 +2,4 @@
 bash scripts/check_ts_length.sh
 pnpm typecheck
 pnpm test
+pnpm test:release

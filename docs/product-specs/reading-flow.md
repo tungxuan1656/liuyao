@@ -20,15 +20,19 @@ Trang gieo quẻ
 
 The user performs the physical casting outside the app.
 
-The app collects one final line value at a time: `6`, `7`, `8`, or `9`.
+For each line, the user flips three or four individual virtual coins to match the physical toss, then confirms the line. The app derives the numeric line value internally but presents only the canonical name and symbol: **Lão âm**, **Thiếu dương**, **Thiếu âm**, or **Lão dương**. Casting controls, results, and accessible labels omit numeric line values.
 
-The flow starts with the first line and ends with the sixth line.
+The flow starts with the first (bottom) line and ends with the sixth (top) line. Returning to a completed line preserves its coin faces and outcome unless the user explicitly resets the draft.
 
 ### Automatic casting
 
-The user casts one line at a time, from the first (bottom) to the sixth (top). Each action generates one three-coin outcome and reveals its line value. The user proceeds to the next line until all six outcomes are present; the app then calculates the reading. Keep the six raw three-coin outcomes with the active in-memory automatic reading. Returning to an already cast line must not generate or replace its outcome without an explicit reset.
+The user casts one line at a time, from the first (bottom) to the sixth (top). For each line, the app obtains one cryptographically random outcome before animation begins. Animation completion reveals the stored outcome in the forming hexagram. The outcome must not change during or after animation. Keep the six raw outcomes with the active in-memory automatic reading. Returning to an already cast line preserves its outcome unless the user explicitly resets the draft. Prevent repeat actions during animation.
 
-Each line must follow this distribution:
+**Intended presentation replacement:** Coins flip repeatedly in place, then show the stored faces. The flip uses DOM/CSS and requires no WebGL renderer. Explicit tosses animate even when the device requests reduced motion. Reset or cancellation must prevent stale animation completion. `ui-layout.md` owns coin geometry, colors, and motion timing.
+
+Each line uses either three or four coins, selected as part of the casting method. For three coins, heads contributes `1` and tails contributes `0`; map the number of heads `0 → 6`, `1 → 7`, `2 → 8`, `3 → 9` (probabilities `1:3:3:1`). Four-coin outcomes use individually identified Earth, Water, Fire, and Wind coins, with weights `8`, `4`, `2`, and `1` respectively; heads is `1` and tails is `0`. Map weighted totals `0 → 6`, `1–5 → 7`, `6–12 → 8`, `13–15 → 9` (probabilities `1:5:7:3`).
+
+Three-coin lines therefore follow this distribution:
 
 | Value | Probability |
 | ----- | ----------: |
@@ -37,11 +41,20 @@ Each line must follow this distribution:
 | 8     |         3/8 |
 | 9     |         1/8 |
 
-Use browser cryptographic randomness. Do not use `Math.random()` or time-based formulas.
+Four-coin lines follow this distribution:
+
+| Value | Probability |
+| ----- | ----------: |
+| 6     |        1/16 |
+| 7     |        5/16 |
+| 8     |        7/16 |
+| 9     |        3/16 |
+
+Use browser cryptographic randomness for automatic outcomes. Do not use `Math.random()` or time-based formulas. Coin appearance and animation are specified in `ui-layout.md`; the coin mapping is a product-defined randomization model, not a traditional Liu Yao doctrinal claim.
 
 ### Direct input
 
-The user enters all six final line values directly.
+The user selects all six line values simultaneously, with four named options per line: **Lão âm** — moving yin, **Thiếu dương** — static yang, **Thiếu âm** — static yin, or **Lão dương** — moving yang. Show the canonical name and yao symbol without numeric values.
 
 Use the same bottom-to-top domain order as other methods.
 

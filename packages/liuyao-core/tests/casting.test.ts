@@ -37,15 +37,46 @@ describe('casting core', () => {
     expect([...counts.values()]).toEqual([1, 3, 3, 1]);
   });
 
+  it('maps all four-coin outcomes and has the exact 1/5/7/3 distribution', () => {
+    const counts = new Map<number, number>([
+      [6, 0],
+      [7, 0],
+      [8, 0],
+      [9, 0],
+    ]);
+    for (let value = 0; value < 16; value += 1) {
+      const coins = [8, 4, 2, 1].map(weight => (value & weight ? 1 : 0)) as [
+        0 | 1,
+        0 | 1,
+        0 | 1,
+        0 | 1,
+      ];
+      const line = mapCoinsToLine(coins);
+      counts.set(line, counts.get(line)! + 1);
+      expect(line).toBe(value === 0 ? 6 : value <= 5 ? 7 : value <= 12 ? 8 : 9);
+    }
+    expect([...counts.values()]).toEqual([1, 5, 7, 3]);
+  });
+
+  it('supports explicit four-coin casts while retaining three-coin defaults', () => {
+    const three = new CastingService(() => 1).toss();
+    const four = new CastingService(() => 1).toss('four-coin');
+    expect(three).toEqual({ coins: [1, 1, 1], method: 'three-coin', coinCount: 3, line: 9 });
+    expect(four).toEqual({ coins: [1, 1, 1, 1], method: 'four-coin', coinCount: 4, line: 9 });
+    expect(
+      new CastingService(() => 0).cast('four-coin').tosses.every(toss => toss.coinCount === 4),
+    ).toBe(true);
+  });
+
   it.each([
     { coins: [] },
     { coins: [0, 1] },
-    { coins: [0, 1, 0, 1] },
+    { coins: [0, 1, 0, 1, 0] },
     { coins: [0, 1, 2] },
     { coins: [0, -1, 1] },
     { coins: [0, 1, 1.5] },
     { coins: [0, 1, Number.NaN] },
-    { coins: Object.assign(new Array(3), { 0: 0, 1: 1 }) },
+    { coins: Object.assign(new Array(4), { 0: 0, 1: 1, 2: 0 }) },
   ])('rejects invalid coin data $coins', ({ coins }) => {
     expect(() => mapCoinsToLine(coins as never)).toThrow(TypeError);
   });
@@ -171,7 +202,7 @@ describe('casting core', () => {
       return 1;
     });
     const toss = service.toss();
-    expect(toss).toEqual({ coins: [1, 1, 1], line: 9 });
+    expect(toss).toEqual({ coins: [1, 1, 1], method: 'three-coin', coinCount: 3, line: 9 });
     expect(Object.isFrozen(toss)).toBe(true);
     expect(Object.isFrozen(toss.coins)).toBe(true);
     expect(calls).toBe(3);

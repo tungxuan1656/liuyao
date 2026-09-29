@@ -8,6 +8,10 @@ import {
   triggerPwaInstallPrompt,
 } from './lib/pwa-install';
 import './settings.css';
+import { Card, CardContent } from './components/ui/card';
+import { Badge } from './components/ui/badge';
+import { Button } from './components/ui/button';
+import { Alert, AlertTitle, AlertDescription } from './components/ui/alert';
 
 const appVersion = __APP_VERSION__;
 const coreVersion = __CORE_VERSION__;
@@ -83,140 +87,149 @@ export function SettingsPage() {
         <p>Xem phiên bản ứng dụng, trạng thái kết nối và quy ước gieo quẻ cố định.</p>
       </header>
 
-      <section className="settings-section" aria-labelledby="settings-system-heading">
-        <div className="settings-section-heading">
-          <span
-            className={`settings-orbit${online === false ? ' is-offline' : ''}`}
-            aria-hidden="true"
-          >
-            ☯
-          </span>
-          <div>
-            <h2 id="settings-system-heading">Trạng thái hệ thống</h2>
-            <p>Thông tin do trình duyệt và ứng dụng báo cáo.</p>
+      <Card className="settings-section" aria-labelledby="settings-system-heading">
+        <CardContent className="p-5">
+          <div className="settings-section-heading">
+            <span
+              className={`settings-orbit${online === false ? ' is-offline' : ''}`}
+              aria-hidden="true"
+            >
+              ☯
+            </span>
+            <div>
+              <h2 id="settings-system-heading">Trạng thái hệ thống</h2>
+              <p>Thông tin do trình duyệt và ứng dụng báo cáo.</p>
+            </div>
           </div>
-        </div>
-        <dl className="settings-facts">
-          <div>
-            <dt>Kết nối</dt>
-            <dd>
-              {online === null ? (
-                'Trình duyệt chưa báo cáo'
-              ) : (
-                <span className={`settings-state${online ? ' is-ready' : ' is-waiting'}`}>
-                  <i aria-hidden="true" />
-                  {online ? 'Có mạng' : 'Ngoại tuyến'}
-                </span>
-              )}
-            </dd>
-          </div>
-          <div>
-            <dt>Cài đặt ứng dụng</dt>
-            <dd>
-              {installed
-                ? 'Đã cài trên thiết bị này'
-                : installSupported === true
-                  ? 'Có thể cài đặt'
-                  : installSupported === false
-                    ? 'Không có lời nhắc cài đặt'
-                    : 'Chưa có thông tin về khả năng cài đặt'}
-            </dd>
-          </div>
-          <div>
-            <dt>Cập nhật ứng dụng</dt>
-            <dd>
-              {updateStatus === 'checking'
-                ? 'Đang kiểm tra đăng ký hiện có…'
-                : updateStatus === 'unsupported'
-                  ? 'Không có thông tin về trạng thái chương trình nền'
-                  : updateStatus === 'waiting'
-                    ? 'Bản cập nhật đang chờ'
-                    : 'Chưa có thông tin về bản cập nhật'}
-            </dd>
-          </div>
-          <div>
-            <dt>Khả năng hoạt động ngoại tuyến</dt>
-            <dd>
-              {pwaSnapshot.offlineReady
-                ? 'Ứng dụng có thể hoạt động ngoại tuyến'
-                : 'Chưa xác nhận khả năng hoạt động ngoại tuyến'}
-            </dd>
-          </div>
-        </dl>
-        {installPrompt && (
-          <div className="settings-actions">
-            <button type="button" className="settings-action" onClick={installApp}>
-              Cài đặt ứng dụng
-            </button>
-          </div>
-        )}
-        {installMessage && (
-          <p className="settings-feedback" role="status">
-            {installMessage}
-          </p>
-        )}
-      </section>
+          <dl className="settings-facts">
+            <div>
+              <dt>Kết nối</dt>
+              <dd>
+                {online === null ? (
+                  'Trình duyệt chưa báo cáo'
+                ) : (
+                  <Badge
+                    variant={online ? 'default' : 'secondary'}
+                    className={`settings-state${online ? ' is-ready' : ' is-waiting'}`}
+                  >
+                    {online ? 'Có mạng' : 'Ngoại tuyến'}
+                  </Badge>
+                )}
+              </dd>
+            </div>
+            <div>
+              <dt>Cài đặt ứng dụng</dt>
+              <dd>
+                {installed
+                  ? 'Đã cài trên thiết bị này'
+                  : installSupported === true
+                    ? 'Có thể cài đặt'
+                    : installSupported === false
+                      ? 'Không có lời nhắc cài đặt'
+                      : 'Chưa có thông tin về khả năng cài đặt'}
+              </dd>
+            </div>
+            <div>
+              <dt>Cập nhật ứng dụng</dt>
+              <dd>
+                {updateStatus === 'checking'
+                  ? 'Đang kiểm tra đăng ký hiện có…'
+                  : updateStatus === 'unsupported'
+                    ? 'Không có thông tin về trạng thái chương trình nền'
+                    : updateStatus === 'waiting'
+                      ? 'Bản cập nhật đang chờ'
+                      : 'Chưa có thông tin về bản cập nhật'}
+              </dd>
+            </div>
+            <div>
+              <dt>Khả năng hoạt động ngoại tuyến</dt>
+              <dd>
+                {pwaSnapshot.offlineReady
+                  ? 'Ứng dụng có thể hoạt động ngoại tuyến'
+                  : 'Chưa xác nhận khả năng hoạt động ngoại tuyến'}
+              </dd>
+            </div>
+          </dl>
+          {installPrompt && (
+            <div className="settings-actions">
+              <Button type="button" className="settings-action" onClick={installApp}>
+                Cài đặt ứng dụng
+              </Button>
+            </div>
+          )}
+          {installMessage && (
+            <Alert className="settings-feedback" role="status">
+              <AlertTitle>Trạng thái cài đặt</AlertTitle>
+              <AlertDescription>{installMessage}</AlertDescription>
+            </Alert>
+          )}
+        </CardContent>
+      </Card>
 
-      <section className="settings-section" aria-labelledby="settings-version-heading">
-        <div className="settings-section-heading">
-          <span className="settings-glyph" aria-hidden="true">
-            Aa
-          </span>
-          <div>
-            <h2 id="settings-version-heading">Phiên bản</h2>
-            <p>Phần mềm cục bộ và quy tắc tính toán.</p>
+      <Card className="settings-section" aria-labelledby="settings-version-heading">
+        <CardContent className="p-5">
+          <div className="settings-section-heading">
+            <span className="settings-glyph" aria-hidden="true">
+              Aa
+            </span>
+            <div>
+              <h2 id="settings-version-heading">Phiên bản</h2>
+              <p>Phần mềm cục bộ và quy tắc tính toán.</p>
+            </div>
           </div>
-        </div>
-        <dl className="settings-facts settings-versions">
-          <div>
-            <dt>Ứng dụng web</dt>
-            <dd>{appVersion}</dd>
-          </div>
-          <div>
-            <dt>@liuyao/core</dt>
-            <dd>{coreVersion}</dd>
-          </div>
-          <div>
-            <dt>@liuyao/knowledge</dt>
-            <dd>{KNOWLEDGE_PACKAGE_VERSION}</dd>
-          </div>
-          <div>
-            <dt>Mã quy ước tính</dt>
-            <dd>
-              <code>{RULE_SET_ID}</code>
-            </dd>
-          </div>
-        </dl>
-      </section>
+          <dl className="settings-facts settings-versions">
+            <div>
+              <dt>Ứng dụng web</dt>
+              <dd>{appVersion}</dd>
+            </div>
+            <div>
+              <dt>@liuyao/core</dt>
+              <dd>{coreVersion}</dd>
+            </div>
+            <div>
+              <dt>@liuyao/knowledge</dt>
+              <dd>{KNOWLEDGE_PACKAGE_VERSION}</dd>
+            </div>
+            <div>
+              <dt>Mã quy ước tính</dt>
+              <dd>
+                <code>{RULE_SET_ID}</code>
+              </dd>
+            </div>
+          </dl>
+        </CardContent>
+      </Card>
 
-      <section
+      <Card
         className="settings-section settings-conventions"
         aria-labelledby="settings-conventions-heading"
       >
-        <div className="settings-section-heading">
-          <span className="settings-glyph settings-lines" aria-hidden="true">
-            ☰
-          </span>
-          <div>
-            <h2 id="settings-conventions-heading">Quy ước gieo quẻ</h2>
-            <p>Các quy tắc này được cố định trong phiên bản hiện tại.</p>
+        <CardContent className="p-5">
+          <div className="settings-section-heading">
+            <span className="settings-glyph settings-lines" aria-hidden="true">
+              ☰
+            </span>
+            <div>
+              <h2 id="settings-conventions-heading">Quy ước gieo quẻ</h2>
+              <p>Các quy tắc này được cố định trong phiên bản hiện tại.</p>
+            </div>
           </div>
-        </div>
-        <ul className="settings-convention-list">
-          <li>
-            <span>Thứ tự hào</span>
-            <strong>Từ hào một đến hào sáu, từ dưới lên</strong>
-          </li>
-          <li>
-            <span>Hào động</span>
-            <strong>Giá trị 6 và 9</strong>
-          </li>
-          <li>
-            <span>Phân tích lịch</span>
-            <strong>Không có trong phiên bản 1</strong>
-          </li>
-        </ul>
-      </section>
+          <ul className="settings-convention-list">
+            <li>
+              <span>Thứ tự hào</span>
+              <strong>Từ hào một đến hào sáu, từ dưới lên</strong>
+            </li>
+            <li>
+              <span>Hào động</span>
+              <strong>Giá trị 6 và 9</strong>
+            </li>
+            <li>
+              <span>Phân tích lịch</span>
+              <strong>Không có trong phiên bản 1</strong>
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
 
       <footer className="settings-footer">
         <p id="settings-privacy">
