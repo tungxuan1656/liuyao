@@ -1,5 +1,8 @@
 import { mapCoinsToLine, type CastingMethod, type CoinTossResult } from '@liuyao/core';
 import { CoinFace, coinNames } from './automatic-casting-panel';
+import { Button } from './components/ui/button';
+import { Card } from './components/ui/card';
+import { describeLineValue, getLinePresentation } from './line-value-presentation';
 import type { useReadingSession } from './reading-session';
 
 type Draft = NonNullable<ReturnType<typeof useReadingSession>['draft']>;
@@ -16,6 +19,7 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
   const coins = previous ? [...previous.coins] : Array.from({ length: count }, () => 0 as 0 | 1);
   const line = previous?.line;
   const confirmed = draft.manualConfirmed?.[step] ?? false;
+  const presentation = line === undefined ? null : getLinePresentation(line);
 
   function flip(index: number) {
     if (confirmed) return;
@@ -45,12 +49,15 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
   }
 
   return (
-    <section className="reading-card manual-coin-card" aria-label={`Đồng xu cho hào ${step + 1}`}>
+    <Card className="manual-coin-card" aria-label={`Đồng xu cho hào ${step + 1}`}>
       <div className="casting-method-switch" role="group" aria-label="Số lượng đồng xu">
         {(['three-coin', 'four-coin'] as const).map((method: CastingMethod) => (
-          <button
+          <Button
             key={method}
             type="button"
+            size="sm"
+            variant={draft.coinMethod === method ? 'secondary' : 'ghost'}
+            className="casting-method-button"
             aria-pressed={draft.coinMethod === method}
             disabled={(draft.manualTosses?.some(Boolean) ?? false) || draft.lines.length > 0}
             onClick={() =>
@@ -65,14 +72,15 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
             }
           >
             {method === 'three-coin' ? 'Ba đồng xu' : 'Bốn đồng xu'}
-          </button>
+          </Button>
         ))}
       </div>
       <p>Chạm từng đồng xu để khớp với lần gieo bên ngoài.</p>
       <div className="manual-coins">
         {coins.map((coin, index) => (
-          <button
+          <Button
             type="button"
+            variant="ghost"
             className="manual-coin-control"
             key={index}
             aria-pressed={Boolean(coin)}
@@ -82,22 +90,25 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
           >
             <CoinFace value={coin} name={count === 4 ? coinNames[index] : undefined} />
             <span>{count === 4 ? coinNames[index] : `Đồng ${index + 1}`}</span>
-          </button>
+          </Button>
         ))}
       </div>
-      <p className="manual-outcome" aria-live="polite">
-        {line === undefined ? (
-          'Chọn mặt từng đồng xu'
+      <div className="manual-outcome" aria-live="polite">
+        {line === undefined || !presentation ? (
+          <span>Chọn mặt từng đồng xu</span>
         ) : (
           <>
-            Kết quả hào <strong>{line}</strong>
-            {confirmed ? '' : ' · chưa xác nhận'}
+            <strong data-line-value={line}>{presentation.name}</strong>
+            <span>
+              {describeLineValue(line)} · giá trị {line}
+              {confirmed ? ' · đã xác nhận' : ' · chưa xác nhận'}
+            </span>
           </>
         )}
-      </p>
-      <button
+      </div>
+      <Button
         type="button"
-        disabled={confirmed}
+        disabled={confirmed || !previous}
         onClick={() => {
           if (!previous) return;
           const all = [...(draft.manualTosses ?? [])];
@@ -110,10 +121,10 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
         }}
       >
         {confirmed ? 'Đã xác nhận hào' : 'Xác nhận hào'}
-      </button>
+      </Button>
       {step === 5 && draft.lines[5] === undefined && (
         <p role="status">Hãy nhập hào sáu trước khi tính quẻ. Các hào đã nhập vẫn được giữ lại.</p>
       )}
-    </section>
+    </Card>
   );
 }

@@ -13,6 +13,8 @@ import { AutomaticCastingPanel } from './automatic-casting-panel';
 import { DirectCastingPanel } from './direct-casting-panel';
 import { ManualCastingPanel } from './manual-casting-panel';
 import { CastingFlowDialogs } from './casting-flow-dialogs';
+import { Button } from './components/ui/button';
+import { Card } from './components/ui/card';
 
 export function CastingFlow() {
   const navigate = useNavigate();
@@ -141,7 +143,7 @@ export function CastingFlow() {
           tossAnimationTimer.current = null;
           setIsTossAnimating(false);
           isTossing.current = false;
-        }, 1750);
+        }, 1250);
       } else {
         isTossing.current = false;
       }
@@ -157,9 +159,9 @@ export function CastingFlow() {
       <main className="reading-page">
         <h1>Lập quẻ mới</h1>
         <p role="status">Chọn một phương pháp để bắt đầu.</p>
-        <button type="button" onClick={() => navigate(ROUTES.home)}>
+        <Button type="button" onClick={() => navigate(ROUTES.home)}>
           Quay lại trang gieo quẻ
-        </button>
+        </Button>
       </main>
     );
   }
@@ -169,9 +171,9 @@ export function CastingFlow() {
   return (
     <main className="reading-page casting-page">
       <header className="flow-header">
-        <button type="button" onClick={cancelFlow}>
+        <Button type="button" variant="ghost" className="casting-cancel-action" onClick={cancelFlow}>
           Hủy
-        </button>
+        </Button>
         <p>
           {direct
             ? 'Nhập trực tiếp'
@@ -207,39 +209,44 @@ export function CastingFlow() {
       ) : (
         <>
           <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
-          <section className="reading-card manual-actions">
+          <Card className="manual-actions">
             <div className="flow-actions">
-              <button
+              <Button
                 type="button"
+                variant="outline"
+                className="casting-back-action"
                 disabled={step === 0}
                 onClick={() => setDraft({ ...draft, step: step - 1 })}
               >
                 Quay lại
-              </button>
+              </Button>
               {step < 5 ? (
-                <button
+                <Button
                   type="button"
+                  className="casting-primary-action"
                   disabled={lines[step] === undefined}
                   onClick={() => setDraft({ ...draft, step: step + 1 })}
                 >
                   Hào tiếp theo
-                </button>
+                </Button>
               ) : (
-                <button
+                <Button
                   type="button"
+                  className="casting-primary-action"
                   disabled={lines.length < 6 || lines.some(line => line === undefined)}
                   onClick={() => finish(lines)}
                 >
                   Tính quẻ
-                </button>
+                </Button>
               )}
             </div>
-          </section>
+          </Card>
         </>
       )}
-      <button
+      <Button
         type="button"
-        className="secondary-action"
+        variant="outline"
+        className="secondary-action casting-reset-action"
         onClick={() => {
           if (hasInput) setResetLines(true);
           else if (draft) {
@@ -258,7 +265,7 @@ export function CastingFlow() {
         }}
       >
         Xóa các hào
-      </button>
+      </Button>
       {error && (
         <p className="error-message" role="alert">
           {error}
