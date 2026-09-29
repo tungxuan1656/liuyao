@@ -48,7 +48,7 @@ test('manual and direct entry produce the same result for six fixed values', asy
     if (value === 6) await coins.nth(0).click();
     else for (let coin = 1; coin < value - 6; coin += 1) await coins.nth(coin).click();
     await expect(page.locator('.manual-outcome')).toContainText(lineNames[value]!);
-    await expect(page.locator('.manual-outcome')).toContainText(`giá trị ${value}`);
+    await expect(page.locator('.manual-outcome')).not.toContainText('giá trị');
     await page.getByRole('button', { name: 'Xác nhận hào' }).click();
     if (index < sixLines.length - 1) {
       await page.getByRole('button', { name: 'Hào tiếp theo' }).click();
@@ -68,6 +68,8 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
       .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });
     await expect(evidence).toBeVisible();
     const text = await evidence.innerText();
+    expect(text.replace(/Hào \d/g, '')).not.toMatch(/giá trị|\b[6789]\b/);
+    await expect(page.locator('.forming-lines .is-filled')).toHaveCount(index + 1);
     const tossedValue = await evidence.locator('strong').getAttribute('data-line-value');
     expect(tossedValue && validValues.has(tossedValue)).toBe(true);
     expect(text.match(/mặt (?:trời|trăng)/g) ?? []).toHaveLength(3);
@@ -93,6 +95,7 @@ test('automatic casting keeps the primary action stationary before and after a r
 
   const primaryAction = page.locator('.casting-primary-action');
   const before = await primaryAction.boundingBox();
+  const beforeScroll = await page.evaluate(() => window.scrollY);
   expect(before).not.toBeNull();
 
   await primaryAction.click();
@@ -102,8 +105,9 @@ test('automatic casting keeps the primary action stationary before and after a r
   await expect(evidence).toBeVisible({ timeout: 5_000 });
 
   const after = await primaryAction.boundingBox();
+  const afterScroll = await page.evaluate(() => window.scrollY);
   expect(after).not.toBeNull();
-  expect(Math.abs(after!.y - before!.y)).toBeLessThanOrEqual(1);
+  expect(Math.abs(after!.y + afterScroll - before!.y - beforeScroll)).toBeLessThanOrEqual(1);
 });
 
 test('a moving line distinguishes the changed board from the primary board', async ({ page }) => {

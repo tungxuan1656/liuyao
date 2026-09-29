@@ -52,7 +52,7 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
                   variant={selected ? 'secondary' : 'outline'}
                   className="line-choice-button"
                   aria-pressed={selected}
-                  aria-label={`${presentation.name}, ${describeLineValue(value)}, giá trị ${value}`}
+                  aria-label={`${presentation.name}, ${describeLineValue(value)}`}
                   onClick={() => onChange(index, String(value))}
                 >
                   <DirectYaoSymbol value={value} />
@@ -60,7 +60,6 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
                     <strong>{presentation.name}</strong>
                     <small>{describeLineValue(value)}</small>
                   </span>
-                  <span className="line-choice-value">{value}</span>
                 </Button>
               );
             })}

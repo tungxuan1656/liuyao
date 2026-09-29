@@ -50,7 +50,7 @@ test('release routes and reading flows have no console or page errors', async ({
     if (value === 6) await coins.nth(0).click();
     else for (let coin = 1; coin < value - 6; coin += 1) await coins.nth(coin).click();
     await expect(page.locator('.manual-outcome')).toContainText(lineNames[value]!);
-    await expect(page.locator('.manual-outcome')).toContainText(`giá trị ${value}`);
+    await expect(page.locator('.manual-outcome')).not.toContainText('giá trị');
     await page.getByRole('button', { name: 'Xác nhận hào' }).click();
     if (index < sixLines.length - 1)
       await page.getByRole('button', { name: 'Hào tiếp theo' }).click();

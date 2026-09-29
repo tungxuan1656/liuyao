@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   appendAutomaticToss,
   calculateReading,
@@ -27,7 +27,6 @@ export function CastingFlow() {
   const [discard, setDiscard] = useState(false);
   const [isTossAnimating, setIsTossAnimating] = useState(false);
   const isTossing = useRef(false);
-  const tossAnimationTimer = useRef<number | null>(null);
   const lines = draft?.lines ?? [];
   const hasInput =
     lines.length > 0 || (draft?.tosses?.length ?? 0) > 0 || (draft?.manualTosses?.length ?? 0) > 0;
@@ -35,21 +34,10 @@ export function CastingFlow() {
     () => hasInput && !isCompleting.current && !isLeavingAfterDiscard.current,
   );
 
-  function clearTossAnimation() {
-    if (tossAnimationTimer.current !== null) {
-      window.clearTimeout(tossAnimationTimer.current);
-      tossAnimationTimer.current = null;
-    }
+  const clearTossAnimation = useCallback(() => {
     isTossing.current = false;
     setIsTossAnimating(false);
-  }
-
-  useEffect(
-    () => () => {
-      if (tossAnimationTimer.current !== null) window.clearTimeout(tossAnimationTimer.current);
-    },
-    [],
-  );
+  }, []);
 
   useEffect(() => {
     if (!hasInput) return;
@@ -84,7 +72,7 @@ export function CastingFlow() {
     } catch {
       // Keep the entered values in the draft so the user can correct and retry.
       if (draft) setDraft({ ...draft, lines: [...values] });
-      setError('Không thể tính quẻ. Hãy kiểm tra đủ sáu giá trị hào từ 6 đến 9 rồi thử lại.');
+      setError('Không thể tính quẻ. Hãy kiểm tra đủ sáu hào rồi thử lại.');
     }
   }
 
@@ -137,20 +125,10 @@ export function CastingFlow() {
         step: Math.min(tosses.length - 1, 5),
       });
       setError('');
-      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        setIsTossAnimating(true);
-        tossAnimationTimer.current = window.setTimeout(() => {
-          tossAnimationTimer.current = null;
-          setIsTossAnimating(false);
-          isTossing.current = false;
-        }, 1250);
-      } else {
-        isTossing.current = false;
-      }
+      setIsTossAnimating(true);
     } catch {
+      clearTossAnimation();
       setError('Không thể gieo tự động an toàn trên trình duyệt này. Hãy chọn phương pháp khác.');
-    } finally {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) isTossing.current = false;
     }
   }
 
@@ -169,7 +147,9 @@ export function CastingFlow() {
   const direct = draft.method === 'direct';
   const step = Math.min(draft.step, 5);
   return (
-    <main className="reading-page casting-page">
+    <main
+      className={`reading-page casting-page${draft.method === 'automatic' ? ' automatic-casting-page' : ''}`}
+    >
       <header className="flow-header">
         <Button
           type="button"
@@ -203,6 +183,7 @@ export function CastingFlow() {
           tosses={draft.tosses ?? []}
           method={draft.coinMethod}
           busy={isTossAnimating}
+          onAnimationComplete={clearTossAnimation}
           onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
           onBack={() => setDraft({ ...draft, step: step - 1 })}
           onNext={() => setDraft({ ...draft, step: step + 1 })}

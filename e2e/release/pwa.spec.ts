@@ -125,7 +125,7 @@ test.describe('production PWA behavior', () => {
       const coins = page.locator('.manual-coins button');
       await coins.nth(0).click();
       await expect(page.locator('.manual-outcome')).toContainText('Thiếu dương');
-      await expect(page.locator('.manual-outcome')).toContainText('giá trị 7');
+      await expect(page.locator('.manual-outcome')).not.toContainText('giá trị');
 
       fixture.selectVersion(2);
       await page.evaluate(async () => {

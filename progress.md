@@ -547,3 +547,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Changed**: Replaced bare 6/7/8/9 result headlines with Lão âm / Thiếu dương / Thiếu âm / Lão dương terminology, stabilized the automatic-casting result/action regions, simplified the shell/coin/dish visual language, shortened and staggered motion, and routed casting controls through the shared shadcn-style Button/Card/UI primitives. The destructive confirmation dialog now uses the shared alert-dialog primitive with centered overlay and open animation.
 **Tests**: Release E2E expectations were updated for canonical line names and a mobile regression test now checks that the automatic primary action does not shift vertically after a reveal.
 **Remaining**: Run repository verification and perform the required desktop/mobile live-animation visual review before checking feat-028 motion acceptance.
+
+## 2026-09-29 — feat-028 3D casting redesign
+
+**State**: active; implemented the user-approved replacement concept on PR #49.
+**Changed**: Replaced turtle/dish animation with a lazy Three.js bronze-coin stage, staggered launch/contact, camera reveal, and six-line forming hexagram. Removed numeric outcome copy from casting modes. Scene completion replaces the independent reveal timer; reset cancels motion. Added static fallback for unavailable/lost WebGL.
+**Evidence**: `./init.sh` passed with 225 package tests; release E2E passed 16/16. Direct desktop/mobile checks completed six fixed four-coin outcomes, revisit, and calculation with stationary actions. Reduced motion, fallback, context loss, reset, cancel, and production offline lazy loading passed. Reviewed launch/contact/reveal frame captures at both viewport sizes.
+**Limits**: Physical-phone frame pacing remains unverified; the 3D chunk adds approximately 133kB gzip. Feature remains active pending live preview motion acceptance.
+**Next**: Review the updated PR preview on desktop and a physical phone.

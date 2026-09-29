@@ -1,5 +1,6 @@
 import { mapCoinsToLine, type CastingMethod, type CoinTossResult } from '@liuyao/core';
-import { CoinFace, coinNames } from './automatic-casting-panel';
+import { CoinFace } from './casting/coin-face';
+import { coinNames } from './casting/coin-names';
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 import { describeLineValue, getLinePresentation } from './line-value-presentation';
@@ -100,7 +101,7 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
           <>
             <strong data-line-value={line}>{presentation.name}</strong>
             <span>
-              {describeLineValue(line)} · giá trị {line}
+              {describeLineValue(line)}
               {confirmed ? ' · đã xác nhận' : ' · chưa xác nhận'}
             </span>
           </>
