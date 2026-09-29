@@ -19,7 +19,7 @@ async function startReading(page: import('@playwright/test').Page, method: strin
 }
 
 async function readResultSummary(page: import('@playwright/test').Page) {
-  await expect(page.getByRole('heading', { name: 'Deterministic scenario' })).toBeVisible();
+  await expect(page.getByText('Deterministic scenario', { exact: true })).toBeVisible();
   return {
     primary: await page.getByRole('region', { name: 'Quẻ chính' }).innerText(),
     lines: await page.getByRole('region', { name: 'Thông tin các hào' }).innerText(),
@@ -77,7 +77,7 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
   }
 
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
-  await expect(page.getByRole('heading', { name: 'Deterministic scenario' })).toBeVisible();
+  await expect(page.getByText('Deterministic scenario', { exact: true })).toBeVisible();
   const rows = page.locator('.line-fact-row');
   await expect(rows).toHaveCount(6);
   for (const row of await rows.all()) {
@@ -208,7 +208,7 @@ test('the reading survives navigation to the home tab', async ({ page }) => {
   await page.getByRole('button', { name: 'Tính quẻ' }).click();
 
   await page.getByRole('link', { name: 'Gieo quẻ', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Deterministic scenario' })).toBeVisible();
+  await expect(page.getByText('Deterministic scenario', { exact: true })).toBeVisible();
   await expect(
     page.getByText(`Các hào, từ hào một đến hào sáu: ${sixLines.join(', ')}`),
   ).toBeVisible();
