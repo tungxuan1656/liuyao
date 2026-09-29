@@ -155,6 +155,7 @@ export function AutomaticCastingPanel({
                   '--coin-index': index,
                   '--coin-x': `${(index - (count - 1) / 2) * (method === 'four-coin' ? 72 : 84)}px`,
                   '--coin-tilt': `${index % 2 ? 18 : -20}deg`,
+                  '--coin-delay': `${0.28 + index * 0.08}s`,
                 } as CSSProperties
               }
             >

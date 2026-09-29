@@ -12,6 +12,13 @@ function collectPageErrors(page: Page) {
   return errors;
 }
 
+const lineNames: Record<number, string> = {
+  6: 'Lão âm',
+  7: 'Thiếu dương',
+  8: 'Thiếu âm',
+  9: 'Lão dương',
+};
+
 async function startReading(page: Page, method: string) {
   await page.goto('/');
   await page.getByRole('textbox', { name: 'Câu hỏi (không bắt buộc)' }).fill('QA sweep');
@@ -42,7 +49,8 @@ test('release routes and reading flows have no console or page errors', async ({
     await coins.nth(0).click();
     if (value === 6) await coins.nth(0).click();
     else for (let coin = 1; coin < value - 6; coin += 1) await coins.nth(coin).click();
-    await expect(page.locator('.manual-outcome')).toContainText(`Kết quả hào ${value}`);
+    await expect(page.locator('.manual-outcome')).toContainText(lineNames[value]!);
+    await expect(page.locator('.manual-outcome')).toContainText(`giá trị ${value}`);
     await page.getByRole('button', { name: 'Xác nhận hào' }).click();
     if (index < sixLines.length - 1)
       await page.getByRole('button', { name: 'Hào tiếp theo' }).click();
@@ -56,9 +64,11 @@ test('release routes and reading flows have no console or page errors', async ({
   await startReading(page, 'Gieo tự động');
   for (let index = 0; index < 6; index += 1) {
     await page.getByRole('button', { name: 'Gieo hào' }).click();
-    const evidence = page.getByRole('status').filter({ hasText: /Hào [6789]/ });
+    const evidence = page
+      .getByRole('status')
+      .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });
     await expect(evidence).toBeVisible({ timeout: 5_000 });
-    await expect(evidence.locator('strong')).toContainText(/Hào [6789]/);
+    await expect(evidence.locator('strong')).toHaveAttribute('data-line-value', /[6789]/);
     await expect(evidence).toContainText(/mặt (trời|trăng)/);
     if (index < 5) await page.getByRole('button', { name: 'Tiếp theo' }).click();
   }

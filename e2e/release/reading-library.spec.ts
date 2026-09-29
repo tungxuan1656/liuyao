@@ -2,6 +2,13 @@ import { expect, test } from '@playwright/test';
 
 const sixLines = [6, 7, 8, 9, 6, 7] as const;
 
+const lineNames: Record<number, string> = {
+  6: 'Lão âm',
+  7: 'Thiếu dương',
+  8: 'Thiếu âm',
+  9: 'Lão dương',
+};
+
 async function startReading(page: import('@playwright/test').Page, method: string) {
   await page.goto('/');
   await page
@@ -40,7 +47,8 @@ test('manual and direct entry produce the same result for six fixed values', asy
     await coins.nth(0).click();
     if (value === 6) await coins.nth(0).click();
     else for (let coin = 1; coin < value - 6; coin += 1) await coins.nth(coin).click();
-    await expect(page.locator('.manual-outcome')).toContainText(`Kết quả hào ${value}`);
+    await expect(page.locator('.manual-outcome')).toContainText(lineNames[value]!);
+    await expect(page.locator('.manual-outcome')).toContainText(`giá trị ${value}`);
     await page.getByRole('button', { name: 'Xác nhận hào' }).click();
     if (index < sixLines.length - 1) {
       await page.getByRole('button', { name: 'Hào tiếp theo' }).click();
@@ -55,11 +63,13 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
   const validValues = new Set(['6', '7', '8', '9']);
   for (let index = 0; index < 6; index += 1) {
     await page.getByRole('button', { name: 'Gieo hào' }).click();
-    const evidence = page.getByRole('status').filter({ hasText: /Hào [6789]/ });
+    const evidence = page
+      .getByRole('status')
+      .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });
     await expect(evidence).toBeVisible();
     const text = await evidence.innerText();
-    const tossedValue = (await evidence.locator('strong').innerText()).replace('Hào ', '');
-    expect(validValues.has(tossedValue)).toBe(true);
+    const tossedValue = await evidence.locator('strong').getAttribute('data-line-value');
+    expect(tossedValue && validValues.has(tossedValue)).toBe(true);
     expect(text.match(/mặt (?:trời|trăng)/g) ?? []).toHaveLength(3);
     if (index < 5) await page.getByRole('button', { name: 'Tiếp theo' }).click();
   }
@@ -73,6 +83,28 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
       validValues.has((await row.locator('.line-input-value').innerText()).trim().charAt(0)),
     ).toBe(true);
   }
+});
+
+
+test('automatic casting keeps the primary action stationary before and after a reveal', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await startReading(page, 'Gieo tự động');
+
+  const primaryAction = page.locator('.casting-primary-action');
+  const before = await primaryAction.boundingBox();
+  expect(before).not.toBeNull();
+
+  await primaryAction.click();
+  const evidence = page
+    .getByRole('status')
+    .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });
+  await expect(evidence).toBeVisible({ timeout: 5_000 });
+
+  const after = await primaryAction.boundingBox();
+  expect(after).not.toBeNull();
+  expect(Math.abs(after!.y - before!.y)).toBeLessThanOrEqual(1);
 });
 
 test('a moving line distinguishes the changed board from the primary board', async ({ page }) => {

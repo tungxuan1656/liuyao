@@ -124,7 +124,8 @@ test.describe('production PWA behavior', () => {
       await expect(page.getByRole('heading', { name: 'Hào 1 trên 6' })).toBeVisible();
       const coins = page.locator('.manual-coins button');
       await coins.nth(0).click();
-      await expect(page.locator('.manual-outcome')).toContainText('Kết quả hào 7');
+      await expect(page.locator('.manual-outcome')).toContainText('Thiếu dương');
+      await expect(page.locator('.manual-outcome')).toContainText('giá trị 7');
 
       fixture.selectVersion(2);
       await page.evaluate(async () => {
@@ -142,7 +143,7 @@ test.describe('production PWA behavior', () => {
         .toBe(true);
 
       await expect(page.getByRole('heading', { name: 'Hào 1 trên 6' })).toBeVisible();
-      await expect(page.locator('.manual-outcome')).toContainText('Kết quả hào 7');
+      await expect(page.locator('.manual-outcome')).toContainText('Thiếu dương');
       await expect(
         page.getByRole('heading', { name: 'Đã có bản cập nhật ứng dụng' }),
       ).toBeVisible();
