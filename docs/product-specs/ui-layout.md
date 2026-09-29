@@ -124,10 +124,13 @@ Used during active line input before calculation. Governed by the rules in `read
     - Chỉ báo bước: `Hào 1 trên 6` đến `Hào 6 trên 6`.
     - Bottom-to-top sequence.
     - Có nút `[ Quay lại ]` để về hào trước mà không xóa dữ liệu đã nhập.
-    - Automatic mode has one explicit three-coin toss action per line. Show its generated outcome before moving to the next line; revisiting a completed line must preserve its original toss. Reset discards the complete automatic draft before any new tosses.
+    - Manual mode shows three or four separately flippable virtual coins for the current line. The user can set each face to match a physical toss and confirms the line before proceeding. Provide a distinct central sun face for heads and moon face for tails. Four-coin mode identifies Earth, Water, Fire, and Wind with small marks on both sides of each coin; use no letters. These are visual identifiers, not a claim about traditional Liu Yao doctrine. Preserve completed coin faces and values when revisiting a line; explicit draft reset is required to discard them.
+    - Automatic mode has one explicit toss action per line, using the selected three- or four-coin method. Animate a turtle shell with a natural inertial shake and tip, followed by individually staggered coin falls and restrained contact/settle wobble. Do not use synchronized repetitive coin spins or bounces. Reveal the already-determined outcome after the coins settle. Keep the casting stage stable, and keep text and controls stationary throughout. Prevent repeat actions while the animation runs. Revisiting a completed line preserves its original outcome; explicit draft reset is required before new outcomes. Respect reduced-motion preferences with an immediate or minimal-motion reveal.
+    - **Highest-priority motion criterion:** Visually review the animation on mobile and desktop. Shell motion and each staggered coin fall must feel continuous and inertial, without layout shift or motion that feels dropped, choppy, or mechanically synchronized. A generic claim that the animation is “smooth” is not sufficient evidence; record the mobile and desktop visual review.
   - **Direct-entry mode**:
     - All 6 line positions are visible simultaneously on one screen.
     - Presented visually in board orientation from Line 6 (top) down to Line 1 (bottom), while keeping canonical domain state in bottom-to-top order (1 to 6).
+    - Each position offers four explicit choices: yin, yang, moving yin, or moving yang (values `6`, `7`, `8`, or `9`).
     - Nút chính `[ Tính quẻ ]` bị vô hiệu hóa cho đến khi cả sáu vị trí có giá trị hợp lệ từ `6` đến `9`.
 - **Navigation safety semantics**:
   - **Quay lại**: Về bước nhập trước trong luồng tuần tự và giữ các hào đã nhập.
@@ -219,9 +222,10 @@ The result view presents deterministic facts separated from explanatory prose, m
 - `<HexagramBoard reading={result} onSelectLine={(lineIndex) => ...} />`: Responsive 6-line board with upper/lower trigram indicators.
 - `<AutomaticCastingPanel step={step} lines={lines} tosses={tosses} onBack={...} onNext={...} onToss={...} onFinish={...} />`:
   - Shows the current line number and six-line toss progress.
-  - Once the current line has been cast, announces its value and three coin bits in a live status; the most recently cast line is marked as such.
+  - Presents the automatic three- or four-coin outcome and line value in an accessible live status after the reveal; the most recently cast line is marked as such.
   - Provides `[ Quay lại ]`, disabled on the first line. For an already-cast line, provides `[ Tiếp theo ]`, except on the completed sixth line, where it provides `[ Tính quẻ ]`. For the next uncast line, provides `[ Gieo hào ]`.
-  - Displays toss evidence without a claimed coin animation. Randomness is provided by the casting flow, not owned by this panel.
+  - Displays the outcome evidence. The casting flow provides the predetermined random outcome; animation must not determine or alter it.
+- Manual coin controls show independently adjustable heads/tails faces, expose each coin's identity accessibly, and provide an explicit line-confirm action.
 - `<FactInspector fact={selectedFact} />`: Ruleset-backed explanation renderer, embedded inline in split-pane views or inside `<Drawer>` in single-pane views.
 - `<AppShell />`: Master layout wrapping TopNav (desktop), BottomNav (mobile with safe area), and main scroll container.
 

@@ -1,6 +1,7 @@
 import { createContext, useContext, useRef, useState, type ReactNode } from 'react';
 import {
   createAutomaticTossSnapshot,
+  type CastingMethod,
   type AutomaticTossSnapshot,
   type CoinTossResult,
   type LineValue,
@@ -14,7 +15,11 @@ type ReadingDraft = {
   method: ReadingMethod;
   lines: number[];
   step: number;
+  coinMethod: CastingMethod;
   tosses?: readonly CoinTossResult[];
+  manualTosses?: readonly (CoinTossResult | undefined)[];
+  manualConfirmed?: readonly boolean[];
+  manualPreviewLines?: readonly (number | undefined)[];
 };
 
 type ReadingBase = {

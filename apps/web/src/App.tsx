@@ -19,7 +19,7 @@ export default function App() {
       navigate(ROUTES.casting);
       return;
     }
-    setDraft({ question, method, lines: [], step: 0 });
+    setDraft({ question, method, coinMethod: 'three-coin', lines: [], step: 0 });
     navigate(ROUTES.casting);
   }
 

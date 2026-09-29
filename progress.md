@@ -532,3 +532,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Verification: `./init.sh` passed, including knowledge regression tests. The release suite passed 12/12 before the final test-only edit; no responsive browser visual check was performed.
 - Handoff: feat-027 implementation complete on `feat/027-library-search-relationships`; PR integration and issue #33 closure remain.
 - Next: Merge feat-027 after CI and confirm issue #33 closed.
+
+## 2026-09-28 — feat-028 implementation handoff
+
+**State**: active on `feat/028-coin-casting`; automated verification passed, visual and complete-flow validation remain.
+**Done**: Implemented manual per-coin confirmation, direct six-line choices, and three-/four-coin automatic casting. Split casting presentation into focused components to meet the TypeScript file-size limit.
+**Evidence**: `./init.sh` passed after the split (format, lint with two warnings, typecheck, build, 225 package tests, and package exports). Browser checks sampled desktop/iPhone coin faces and stable stage heights (242px desktop; 220px mobile); non-reduced animation was active at 80/450/900/1400ms, revealed by 1900ms with unchanged stage height, while reduced motion revealed immediately. Core tests exhaustively cover three-/four-coin mappings. Manual/direct browser checks were partial; complete six-line completion/revisit/reset remains unverified.
+**Blockers**: Meaningful mobile and desktop live-animation visual review is still required; timing samples alone do not establish motion quality.
+**Next**: Record live-animation visual review on mobile and desktop, then validate full six-line completion, revisit, and reset before finalizing acceptance.

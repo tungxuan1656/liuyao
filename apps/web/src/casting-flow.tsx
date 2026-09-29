@@ -9,10 +9,10 @@ import { useBlocker, useNavigate } from 'react-router-dom';
 import { ROUTES } from './route-paths';
 import { createBrowserCastingService } from './lib/browser-coin-source';
 import { useReadingSession } from './reading-session';
-import { ConfirmationDialog } from './components/confirmation-dialog';
 import { AutomaticCastingPanel } from './automatic-casting-panel';
-
-const validValues = [6, 7, 8, 9] as const;
+import { DirectCastingPanel } from './direct-casting-panel';
+import { ManualCastingPanel } from './manual-casting-panel';
+import { CastingFlowDialogs } from './casting-flow-dialogs';
 
 export function CastingFlow() {
   const navigate = useNavigate();
@@ -23,11 +23,30 @@ export function CastingFlow() {
   const isLeavingAfterDiscard = useRef(false);
   const [resetLines, setResetLines] = useState(false);
   const [discard, setDiscard] = useState(false);
+  const [isTossAnimating, setIsTossAnimating] = useState(false);
   const isTossing = useRef(false);
+  const tossAnimationTimer = useRef<number | null>(null);
   const lines = draft?.lines ?? [];
-  const hasInput = lines.length > 0 || (draft?.tosses?.length ?? 0) > 0;
+  const hasInput =
+    lines.length > 0 || (draft?.tosses?.length ?? 0) > 0 || (draft?.manualTosses?.length ?? 0) > 0;
   const blocker = useBlocker(
     () => hasInput && !isCompleting.current && !isLeavingAfterDiscard.current,
+  );
+
+  function clearTossAnimation() {
+    if (tossAnimationTimer.current !== null) {
+      window.clearTimeout(tossAnimationTimer.current);
+      tossAnimationTimer.current = null;
+    }
+    isTossing.current = false;
+    setIsTossAnimating(false);
+  }
+
+  useEffect(
+    () => () => {
+      if (tossAnimationTimer.current !== null) window.clearTimeout(tossAnimationTimer.current);
+    },
+    [],
   );
 
   useEffect(() => {
@@ -85,6 +104,7 @@ export function CastingFlow() {
   }
 
   function discardAndGoHome() {
+    clearTossAnimation();
     setDraft(null);
     setDiscard(false);
     if (blocker.state === 'blocked') blocker.proceed();
@@ -106,7 +126,7 @@ export function CastingFlow() {
     }
     isTossing.current = true;
     try {
-      const toss = createBrowserCastingService().toss();
+      const toss = createBrowserCastingService().toss(draft.coinMethod);
       const tosses = appendAutomaticToss(draft.tosses ?? [], toss);
       setDraft({
         ...draft,
@@ -115,10 +135,20 @@ export function CastingFlow() {
         step: Math.min(tosses.length - 1, 5),
       });
       setError('');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        setIsTossAnimating(true);
+        tossAnimationTimer.current = window.setTimeout(() => {
+          tossAnimationTimer.current = null;
+          setIsTossAnimating(false);
+          isTossing.current = false;
+        }, 1750);
+      } else {
+        isTossing.current = false;
+      }
     } catch {
       setError('Không thể gieo tự động an toàn trên trình duyệt này. Hãy chọn phương pháp khác.');
     } finally {
-      isTossing.current = false;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) isTossing.current = false;
     }
   }
 
@@ -136,9 +166,6 @@ export function CastingFlow() {
 
   const direct = draft.method === 'direct';
   const step = Math.min(draft.step, 5);
-  const canCalculate = Array.from({ length: 6 }, (_, index) =>
-    validValues.includes(lines[index] as (typeof validValues)[number]),
-  ).every(Boolean);
   return (
     <main className="reading-page casting-page">
       <header className="flow-header">
@@ -166,128 +193,103 @@ export function CastingFlow() {
       {draft.method === 'automatic' ? (
         <AutomaticCastingPanel
           step={step}
-          lines={lines}
           tosses={draft.tosses ?? []}
+          method={draft.coinMethod}
+          busy={isTossAnimating}
+          onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
           onBack={() => setDraft({ ...draft, step: step - 1 })}
           onNext={() => setDraft({ ...draft, step: step + 1 })}
           onToss={castAutomaticLine}
           onFinish={() => finish(lines)}
         />
       ) : direct ? (
-        <section
-          className="reading-card line-entry-list"
-          aria-label="Nhập giá trị hào, bắt đầu từ hào sáu"
-        >
-          {[5, 4, 3, 2, 1, 0].map(index => (
-            <label key={index}>
-              Hào {index + 1}
-              <select
-                aria-label={`Hào ${index + 1}`}
-                value={lines[index] ?? ''}
-                onChange={event => updateLine(index, event.target.value)}
-              >
-                <option value="">Chọn giá trị</option>
-                {validValues.map(value => (
-                  <option key={value} value={value}>
-                    {value}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ))}
-          <button type="button" disabled={!canCalculate} onClick={() => finish(lines)}>
-            Tính quẻ
-          </button>
-        </section>
+        <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
       ) : (
-        <section className="reading-card">
-          <label htmlFor="manual-line">Giá trị hào {step + 1} (bắt đầu từ hào một)</label>
-          <select
-            id="manual-line"
-            value={lines[step] ?? ''}
-            onChange={event => updateLine(step, event.target.value)}
-          >
-            <option value="">Chọn giá trị</option>
-            {validValues.map(value => (
-              <option key={value} value={value}>
-                {value}
-              </option>
-            ))}
-          </select>
-          <div className="flow-actions">
-            <button
-              type="button"
-              disabled={step === 0}
-              onClick={() => setDraft({ ...draft, step: step - 1 })}
-            >
-              Quay lại
-            </button>
-            {step < 5 ? (
+        <>
+          <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
+          <section className="reading-card manual-actions">
+            <div className="flow-actions">
               <button
                 type="button"
-                disabled={!validValues.includes(lines[step] as (typeof validValues)[number])}
-                onClick={() => setDraft({ ...draft, step: step + 1 })}
+                disabled={step === 0}
+                onClick={() => setDraft({ ...draft, step: step - 1 })}
               >
-                Hào tiếp theo
+                Quay lại
               </button>
-            ) : (
-              <button type="button" disabled={!canCalculate} onClick={() => finish(lines)}>
-                Tính quẻ
-              </button>
-            )}
-          </div>
-        </section>
+              {step < 5 ? (
+                <button
+                  type="button"
+                  disabled={lines[step] === undefined}
+                  onClick={() => setDraft({ ...draft, step: step + 1 })}
+                >
+                  Hào tiếp theo
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  disabled={lines.length < 6 || lines.some(line => line === undefined)}
+                  onClick={() => finish(lines)}
+                >
+                  Tính quẻ
+                </button>
+              )}
+            </div>
+          </section>
+        </>
       )}
       <button
         type="button"
         className="secondary-action"
         onClick={() => {
           if (hasInput) setResetLines(true);
-          else if (draft) setDraft({ ...draft, lines: [], step: 0, tosses: [] });
+          else if (draft) {
+            clearTossAnimation();
+            setDraft({
+              ...draft,
+              lines: [],
+              step: 0,
+              tosses: [],
+              manualTosses: [],
+              manualConfirmed: [],
+              manualPreviewLines: [],
+            });
+          }
           setError('');
         }}
       >
         Xóa các hào
       </button>
-      {!canCalculate && draft.method === 'direct' && (
-        <p role="status">Hãy nhập giá trị hợp lệ cho cả sáu hào trước khi tính quẻ.</p>
-      )}
-      {!canCalculate && draft.method === 'manual' && step === 5 && (
-        <p role="status">Hãy nhập hào sáu trước khi tính quẻ. Các hào đã nhập vẫn được giữ lại.</p>
-      )}
-      {blocker.state !== 'blocked' && !discard && resetLines && (
-        <ConfirmationDialog
-          title="Xóa toàn bộ các hào?"
-          confirmLabel="Xóa các hào"
-          onCancel={() => setResetLines(false)}
-          onConfirm={() => {
-            if (draft) setDraft({ ...draft, lines: [], step: 0, tosses: [] });
-            setResetLines(false);
-          }}
-        >
-          Thao tác này xóa mọi hào đã nhập nhưng vẫn giữ câu hỏi và phương pháp gieo quẻ.
-        </ConfirmationDialog>
-      )}
       {error && (
         <p className="error-message" role="alert">
           {error}
         </p>
       )}
-      {(blocker.state === 'blocked' || discard) && (
-        <ConfirmationDialog
-          title={hasInput ? 'Bỏ các hào đang nhập?' : 'Bỏ thông tin lập quẻ?'}
-          confirmLabel={hasInput ? 'Bỏ và rời đi' : 'Bỏ thông tin'}
-          onCancel={() => {
-            if (blocker.state === 'blocked') blocker.reset();
-            setDiscard(false);
-          }}
-          onConfirm={discardAndGoHome}
-        >
-          {hasInput
-            ? 'Bỏ các hào đang nhập và quay lại trang gieo quẻ?'
-            : 'Bỏ câu hỏi và phương pháp gieo quẻ rồi quay lại trang gieo quẻ?'}
-        </ConfirmationDialog>
-      )}
+      <CastingFlowDialogs
+        resetLines={resetLines}
+        discard={discard}
+        hasInput={hasInput}
+        isBlocked={blocker.state === 'blocked'}
+        onResetCancel={() => setResetLines(false)}
+        onResetConfirm={() => {
+          clearTossAnimation();
+          if (draft)
+            setDraft({
+              ...draft,
+              lines: [],
+              step: 0,
+              tosses: [],
+              manualTosses: [],
+              manualConfirmed: [],
+              manualPreviewLines: [],
+            });
+          setResetLines(false);
+        }}
+        onDiscardCancel={() => {
+          if (blocker.state === 'blocked') blocker.reset();
+          setDiscard(false);
+        }}
+        onDiscardConfirm={discardAndGoHome}
+      />
     </main>
   );
 }
