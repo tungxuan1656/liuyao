@@ -1,5 +1,6 @@
 import { Button } from './components/ui/button';
-import { Card } from './components/ui/card';
+import { Card, CardFooter } from './components/ui/card';
+import './casting/input-workspace.css';
 
 type Props = {
   step: number;
@@ -15,8 +16,8 @@ export function ManualCastingActions({ step, lines, onBack, onNext, onFinish }: 
   const allLinesReady = lines.length >= 6 && !lines.some(line => line === undefined);
 
   return (
-    <Card className="manual-actions">
-      <div className="flow-actions">
+    <Card className="manual-actions input-workspace">
+      <CardFooter className="flow-actions">
         <Button
           type="button"
           variant="outline"
@@ -34,7 +35,7 @@ export function ManualCastingActions({ step, lines, onBack, onNext, onFinish }: 
         >
           {isLastLine ? 'Tính quẻ' : 'Hào tiếp theo'}
         </Button>
-      </div>
+      </CardFooter>
     </Card>
   );
 }

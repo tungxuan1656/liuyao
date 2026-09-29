@@ -1,5 +1,14 @@
 import type { ReactNode } from 'react';
-import { AlertDialog } from './ui/alert-dialog';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from './ui/alert-dialog';
 
 type ConfirmationDialogProps = {
   title: string;
@@ -20,13 +29,25 @@ export function ConfirmationDialog({
 }: ConfirmationDialogProps) {
   return (
     <AlertDialog
-      title={title}
-      confirmLabel={confirmLabel}
-      cancelLabel={cancelLabel}
-      onConfirm={onConfirm}
-      onCancel={onCancel}
+      open
+      onOpenChange={open => {
+        if (!open) onCancel();
+      }}
     >
-      {children}
+      <AlertDialogContent>
+        <AlertDialogHeader>
+          <AlertDialogTitle>{title}</AlertDialogTitle>
+          <AlertDialogDescription>{children}</AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel data-dialog-cancel onClick={onCancel}>
+            {cancelLabel}
+          </AlertDialogCancel>
+          <AlertDialogAction variant="destructive" onClick={onConfirm}>
+            {confirmLabel}
+          </AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
     </AlertDialog>
   );
 }

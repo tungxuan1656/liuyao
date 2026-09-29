@@ -1,35 +1,32 @@
-import type { CoinTossResult } from '@liuyao/core';
+import type { LineValue } from '@liuyao/core';
 import { getLinePresentation } from '../line-value-presentation';
 import { YaoSymbol } from '../components/yao-symbol';
 
 export function CastingHexagram({
-  tosses,
+  lines,
   step,
-  busy,
 }: {
-  tosses: readonly CoinTossResult[];
+  lines: readonly (LineValue | undefined)[];
   step: number;
-  busy: boolean;
 }) {
   return (
     <section className="forming-hexagram" aria-label="Quẻ đang hình thành">
       <h2>Quẻ đang hình thành</h2>
       <ol className="forming-lines" aria-label="Hào sáu ở trên, hào một ở dưới">
         {[5, 4, 3, 2, 1, 0].map(index => {
-          const toss = busy && index === step ? undefined : tosses[index];
-          const value = toss?.line;
+          const value = lines[index];
           const yang = value === 7 || value === 9;
           return (
             <li
               key={index}
-              className={`${index === step ? 'is-current' : ''}${toss ? ' is-filled' : ''}`}
+              className={`${index === step ? 'is-current' : ''}${value !== undefined ? ' is-filled' : ''}`}
               aria-current={index === step ? 'step' : undefined}
             >
               <span className="forming-position">
                 {index + 1}
                 <span className="sr-only">. Hào {index + 1}</span>
               </span>
-              {toss ? (
+              {value !== undefined ? (
                 <YaoSymbol
                   key={value}
                   className="forming-symbol"
@@ -40,12 +37,10 @@ export function CastingHexagram({
                 <span className="forming-empty" aria-hidden="true" />
               )}
               <span className="forming-name">
-                {value
+                {value !== undefined
                   ? getLinePresentation(value).name
                   : index === step
-                    ? busy
-                      ? 'Đang gieo…'
-                      : 'Chờ gieo'
+                    ? 'Chờ gieo'
                     : '—'}
               </span>
             </li>

@@ -570,3 +570,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: CLI decoded preset `b59jufSZGa` as Sera/Neutral/Lucide/Noto Sans/Noto Serif. `info --json` reports the existing base as Radix. CLI help confirms explicit `--base base`, `--pointer`, and reinstallation flags.
 **Limit**: Planning only. The application and dependencies still match commit `46441cc`.
 **Next**: Review `docs/plans/feat-028.md`, then execute Task 1 inline on the current branch.
+
+## 2026-09-29 — feat-028 Base UI migration verified
+
+**State**: active on `feat/028-coin-casting`; implementation is locally verified.
+**Done**: Completed the approved Sera/Base UI migration across casting modes, routes, and shared controls; replaced Three.js with predetermined DOM/CSS coin flips and fixed responsive layout defects found in browser review.
+**Evidence**: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audits at 320/390/1280px verified direct-choice sizing, manual action targets, Library tabs, stable coin centers, alternating faces under normal/reduced motion, and Home mouse/keyboard navigation.
+**Blockers**: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs report sourcemap-location and >500KB chunk warnings.
+**Next**: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.

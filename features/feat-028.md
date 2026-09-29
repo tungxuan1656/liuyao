@@ -14,15 +14,15 @@ Deliver a consistent Base UI interface with simple three-/four-coin casting and 
 ## Acceptance
 
 - [ ] Manual mode lets users set each individual coin to match a physical toss, confirms each line, and preserves completed lines on revisit unless explicitly reset.
-- [ ] Three- and four-coin line values and distributions match `reading-flow.md`.
-- [ ] Automatic outcomes are generated before animation, revealed without changing, and cannot be retriggered while animating.
-- [ ] Preset and Base UI configuration match `ui-layout.md` across all web routes.
-- [ ] Three.js, Radix, obsolete renderers, and duplicated control styling are removed.
+- [x] Three- and four-coin line values and distributions match `reading-flow.md`.
+- [x] Automatic outcomes are generated before animation, revealed without changing, and cannot be retriggered while animating.
+- [x] Preset and Base UI configuration match `ui-layout.md` across all web routes.
+- [x] Three.js, Radix, obsolete renderers, and duplicated control styling are removed.
 - [ ] Triangle/square coin layouts, Unicode faces, and in-place flips pass desktop/mobile visual review.
-- [ ] All casting modes show named outcomes without numeric 6/7/8/9; direct mode exposes all six rows at once.
+- [x] All casting modes show named outcomes without numeric 6/7/8/9; direct mode exposes all six rows at once.
 - [ ] The coin visuals, reduced-motion behavior, responsive layout, stable action-bar position, and keyboard/screen-reader behavior meet `ui-layout.md`.
 - [ ] No history or persistence is added; prior completed readings remain available on revisit unless the user explicitly resets or starts over.
-- [ ] Relevant tests and repository verification pass.
+- [x] Relevant tests and repository verification pass.
 
 ## Dependencies
 
@@ -35,7 +35,7 @@ Deliver a consistent Base UI interface with simple three-/four-coin casting and 
 
 ## Handoff
 
-- State: active on `feat/028-coin-casting`, PR #49. The user superseded the 3D direction and selected six vertical direct-input rows.
-- Evidence: Planning inspected preset decoding, CLI migration flags, current components, and affected routes. Earlier runtime evidence remains in progress history.
-- Limit: The application still uses the previous implementation. The new plan has no implementation or runtime-verification claim.
-- Next: Obtain review of the replacement plan, then execute Task 1 inline on this branch.
+- State: active on `feat/028-coin-casting`, PR #49; implementation and automated verification are complete locally.
+- Evidence: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audit at 320/390/1280px verified direct-choice widths, manual action targets, Library tabs, fixed coin centers, alternating glyphs, and Home mouse/keyboard navigation.
+- Limit: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs include sourcemap-location and >500KB chunk warnings.
+- Next: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.

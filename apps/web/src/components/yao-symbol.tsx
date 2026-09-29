@@ -11,7 +11,7 @@ export function YaoSymbol({ polarity, changing = false, className = '' }: Props)
   const yang = polarity === 'yang';
   return (
     <span
-      className={`yao-glyph${changing ? ' is-moving' : ''} ${className}`}
+      className={`yao-glyph${changing ? ' is-moving' : ''}${className ? ` ${className}` : ''}`}
       role="img"
       aria-label={`${yang ? 'Dương' : 'Âm'}${changing ? ', động' : ''}`}
     >

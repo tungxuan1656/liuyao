@@ -1,0 +1,247 @@
+.input-workspace {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.input-workspace [data-slot='card-content'],
+.input-workspace [data-slot='card-footer'],
+.direct-entry-content,
+.direct-line-row,
+.line-choices,
+.manual-casting-workspace,
+.manual-workspace-grid,
+.manual-actions,
+.manual-actions .flow-actions {
+  min-width: 0;
+}
+
+.direct-line-row > .line-choices {
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.input-workspace-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-workspace-header p {
+  margin: 0.35rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+}
+
+.input-method-switch {
+  flex-wrap: wrap;
+}
+.input-method-switch [data-slot='toggle-group-item'] {
+  min-height: 44px;
+}
+.input-workspace-content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.manual-coins {
+  display: grid;
+  place-items: center;
+  gap: 1rem 1.4rem;
+  padding: 1rem 0;
+}
+.manual-coins-3 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.manual-coins-3 > :first-child {
+  grid-column: 1 / -1;
+}
+.manual-coins-4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.manual-coin-control {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
+}
+.manual-coin-control .coin-face {
+  width: clamp(3.7rem, 10vw, 5rem);
+}
+.manual-coin-control[aria-pressed='true'] .coin-face {
+  animation: manual-coin-turn 320ms ease-out;
+}
+@keyframes manual-coin-turn {
+  0% {
+    transform: rotateY(0) scaleX(1);
+  }
+  48% {
+    transform: rotateY(90deg) scaleX(0.08);
+  }
+  100% {
+    transform: rotateY(180deg) scaleX(1);
+  }
+}
+.manual-coin-control > span:last-child {
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+}
+.manual-coin-control .coin-identity-label {
+  display: none;
+}
+.manual-outcome {
+  display: grid;
+  min-height: 96px;
+  justify-items: center;
+  align-content: center;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+.direct-entry-content {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.65rem;
+}
+.direct-line-row {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.direct-line-position {
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.line-choices {
+  display: grid !important;
+  width: 100% !important;
+  min-width: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem !important;
+}
+.line-choice-button {
+  flex: 1 1 0;
+  flex-shrink: 1;
+  min-width: 0;
+  width: 100%;
+  padding-inline: 0.35rem;
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  align-items: center;
+  justify-items: stretch;
+  gap: 0.5rem;
+  min-height: 64px;
+  padding: 0.55rem;
+  text-align: left;
+  white-space: normal;
+}
+.line-choice-copy {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+.line-choice-copy strong {
+  font-size: 0.84rem;
+  line-height: 1.2;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.line-choice-copy small {
+  color: var(--muted-foreground);
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+.direct-calculate {
+  width: 100%;
+  min-height: 46px;
+}
+
+.manual-actions .flow-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.75rem;
+}
+.manual-actions .flow-actions > button {
+  min-width: 0;
+  flex: 1 1 8rem;
+  width: auto;
+}
+
+.manual-casting-workspace {
+  display: grid;
+  gap: 0.75rem;
+}
+.manual-workspace-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  align-items: stretch;
+  gap: 1.25rem;
+}
+.manual-workspace-grid > .forming-hexagram {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--muted, #f5f4f0);
+}
+.manual-workspace-grid .forming-lines li {
+  grid-template-columns: 1rem minmax(2rem, 0.55fr) minmax(5.5rem, 1fr);
+}
+.manual-coin-workspace {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .manual-workspace-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .manual-workspace-grid > .forming-hexagram {
+    order: -1;
+  }
+  .manual-actions .flow-actions > button {
+    flex-basis: 7rem;
+  }
+  .input-workspace-header {
+    align-items: stretch;
+  }
+  .input-method-switch {
+    width: 100%;
+  }
+  .input-method-switch [data-slot='toggle-group-item'] {
+    flex: 1;
+  }
+  .direct-line-row {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+  .line-choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .line-choice-button {
+    min-height: 68px;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 0.25rem;
+    padding: 0.45rem 0.25rem;
+    text-align: center;
+  }
+  .line-choice-copy {
+    justify-items: center;
+  }
+  .line-choice-copy strong {
+    font-size: 0.78rem;
+  }
+}

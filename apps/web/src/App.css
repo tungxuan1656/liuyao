@@ -50,6 +50,21 @@
   text-decoration: none;
 }
 
+.app-navigation-link[data-slot='button'] {
+  height: 44px;
+  border: 0;
+  font-size: inherit;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.app-navigation-link[data-slot='button']:hover,
+.app-navigation-link[data-slot='button'].is-current {
+  color: var(--foreground);
+  background: var(--accent);
+}
+
 .app-navigation-link:hover,
 .app-navigation-link.is-current {
   color: var(--foreground, #242424);
@@ -670,7 +685,191 @@
   }
 }
 
+/* Home-only presentation. Casting rules below remain unchanged. */
+.home-page {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  display: grid;
+  align-content: start;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  padding-top: clamp(1rem, 5vh, 3.5rem);
+}
+
+.app-shell-with-navigation .app-shell-content:has(.home-page) {
+  padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px) + 2rem);
+}
+
+.home-heading {
+  display: grid;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+.home-heading h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 8vw, 4.25rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.home-heading > p:last-child {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+.home-eyebrow {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-card {
+  border-radius: 0.75rem;
+  box-shadow: 0 18px 55px rgb(0 0 0 / 5%);
+}
+
+.home-card [data-slot='card-header'] {
+  gap: 0.65rem;
+}
+
+.home-card [data-slot='card-title'] {
+  font-size: clamp(1.25rem, 4vw, 1.6rem);
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+.home-card [data-slot='card-description'] {
+  max-width: 42rem;
+  line-height: 1.65;
+}
+.home-form-fields {
+  gap: 1.75rem;
+}
+.home-page [data-slot='field-label'] {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.home-page textarea {
+  min-height: 7rem;
+  resize: vertical;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.home-method-set {
+  gap: 0;
+}
+.home-method-set legend {
+  margin-bottom: 0.75rem;
+}
+.home-method-options {
+  gap: 0.65rem;
+}
+
+.home-method-option {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--background);
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease;
+}
+
+.home-method-option:has([data-checked]) {
+  border-color: var(--foreground);
+  background: color-mix(in oklab, var(--muted) 48%, var(--background));
+}
+
+.home-method-field {
+  min-height: 64px;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.75rem 0.9rem;
+}
+.home-method-field [data-slot='radio-group-item'] {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: 0 0 auto;
+}
+.home-method-copy {
+  display: grid;
+  gap: 0.2rem;
+}
+.home-method-copy strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.home-method-copy small {
+  color: var(--muted-foreground);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.home-draft-note {
+  margin: 1rem 0 0;
+  border-inline-start: 3px solid var(--ring);
+  padding: 0.65rem 0.85rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
+.home-form-footer {
+  display: grid;
+  gap: 0.8rem;
+  align-items: stretch;
+}
+.home-primary-action {
+  width: 100%;
+  min-height: 3rem;
+}
+.home-session-note {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+.home-reading-content {
+  display: grid;
+  gap: 0.75rem;
+}
+.home-reading-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+.home-reading-actions {
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-method-option {
+    transition: none;
+  }
+}
+
 @media (max-width: 560px) {
+  .home-card [data-slot='card-header'],
+  .home-card [data-slot='card-content'],
+  .home-card [data-slot='card-footer'] {
+    padding-inline: 1rem;
+  }
+
+  .home-reading-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .home-reading-actions > :first-child {
+    grid-column: 1 / -1;
+  }
   .automatic-casting,
   .manual-coin-card,
   .direct-entry,

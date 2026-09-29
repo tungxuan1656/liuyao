@@ -12,6 +12,17 @@ import {
 } from './library-data';
 import type { Category, RuleFilter } from './library-data';
 import './library.css';
+import { Tabs, TabsList, TabsTrigger } from './components/ui/tabs';
+import { InputGroup, InputGroupInput, InputGroupAddon } from './components/ui/input-group';
+import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
+import { Button } from './components/ui/button';
+import {
+  Empty,
+  EmptyHeader,
+  EmptyTitle,
+  EmptyDescription,
+  EmptyContent,
+} from './components/ui/empty';
 
 export function LibraryPage() {
   const [category, setCategory] = useState<Category>('hexagrams');
@@ -37,55 +48,71 @@ export function LibraryPage() {
       </header>
 
       <section className="library-browser" aria-label="Tra cứu tri thức">
-        <nav className="library-tabs" aria-label="Danh mục tri thức">
-          {categories.map(({ id, label }) => (
-            <button
-              key={id}
-              type="button"
-              aria-pressed={category === id}
-              className={`library-tab${category === id ? ' is-selected' : ''}`}
-              onClick={() => setCategory(id)}
-            >
-              {label}
-            </button>
-          ))}
-        </nav>
+        <Tabs value={category} onValueChange={value => value && setCategory(value as Category)}>
+          <TabsList className="library-tabs" aria-label="Danh mục tri thức">
+            {categories.map(({ id, label }) => (
+              <TabsTrigger key={id} value={id} className="library-tab">
+                {label}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </Tabs>
         <div className="library-toolbar">
-          <label className="library-search">
-            <span className="library-search-icon" aria-hidden="true">
-              ⌕
-            </span>
+          <label className="library-search-label">
             <span className="sr-only">Tìm theo tên và phần mô tả</span>
-            <input
-              type="search"
-              value={query}
-              onChange={event => setQuery(event.target.value)}
-              placeholder="Tìm trong thư viện"
-            />
-            {query && (
-              <button
-                type="button"
-                className="library-clear"
-                onClick={() => setQuery('')}
-                aria-label="Xóa nội dung tìm kiếm"
-              >
-                ×
-              </button>
-            )}
+            <InputGroup className="library-search">
+              <InputGroupAddon>
+                <span className="library-search-icon" aria-hidden="true">
+                  ⌕
+                </span>
+              </InputGroupAddon>
+              <InputGroupInput
+                type="search"
+                value={query}
+                onChange={event => setQuery(event.target.value)}
+                placeholder="Tìm trong thư viện"
+              />
+              {query && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  type="button"
+                  className="library-clear"
+                  onClick={() => setQuery('')}
+                  aria-label="Xóa nội dung tìm kiếm"
+                >
+                  ×
+                </Button>
+              )}
+            </InputGroup>
           </label>
           <span className="library-count" aria-live="polite">
             {shown.length} mục
           </span>
         </div>
         {category === 'rules' && (
-          <div className="rule-filters" aria-label="Lọc quy tắc">
+          <ToggleGroup
+            value={[ruleFilter]}
+            onValueChange={value => setRuleFilter((value[0] as RuleFilter | undefined) ?? 'all')}
+            className="rule-filters"
+            aria-label="Lọc quy tắc"
+          >
             {ruleCategories.map(filter => (
-              <button
+              <ToggleGroupItem
                 key={filter}
-                type="button"
-                aria-pressed={ruleFilter === filter}
-                className={ruleFilter === filter ? 'is-active' : ''}
-                onClick={() => setRuleFilter(filter)}
+                value={filter}
+                aria-label={
+                  filter === 'all'
+                    ? 'Tất cả quy tắc'
+                    : (
+                        {
+                          metadata: 'Thông tin',
+                          structure: 'Cấu trúc',
+                          transformation: 'Biến đổi',
+                          classification: 'Phân loại',
+                        } as const
+                      )[filter]
+                }
               >
                 {filter === 'all'
                   ? 'Tất cả quy tắc'
@@ -97,9 +124,9 @@ export function LibraryPage() {
                         classification: 'Phân loại',
                       } as const
                     )[filter]}
-              </button>
+              </ToggleGroupItem>
             ))}
-          </div>
+          </ToggleGroup>
         )}
         {shown.length ? (
           <div className={`library-list library-list-${category}`}>
@@ -130,18 +157,24 @@ export function LibraryPage() {
             ))}
           </div>
         ) : (
-          <div className="library-empty" role="status">
-            <span className="empty-symbol" aria-hidden="true">
-              ∅
-            </span>
-            <h2>Không tìm thấy mục nào</h2>
-            <p>Thử tên khác hoặc xóa nội dung tìm kiếm để xem toàn bộ danh mục.</p>
-            {query && (
-              <button type="button" onClick={() => setQuery('')}>
-                Xóa nội dung tìm kiếm
-              </button>
-            )}
-          </div>
+          <Empty className="library-empty">
+            <EmptyHeader>
+              <span className="empty-symbol" aria-hidden="true">
+                ∅
+              </span>
+              <EmptyTitle>Không tìm thấy mục nào</EmptyTitle>
+              <EmptyDescription>
+                Thử tên khác hoặc xóa nội dung tìm kiếm để xem toàn bộ danh mục.
+              </EmptyDescription>
+            </EmptyHeader>
+            <EmptyContent>
+              {query && (
+                <Button variant="outline" type="button" onClick={() => setQuery('')}>
+                  Xóa nội dung tìm kiếm
+                </Button>
+              )}
+            </EmptyContent>
+          </Empty>
         )}
         <p className="library-local-note">
           <span aria-hidden="true">◉</span> Nội dung tra cứu được lưu trên thiết bị này.

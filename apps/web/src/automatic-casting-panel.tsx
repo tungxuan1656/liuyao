@@ -1,11 +1,12 @@
 import type { CastingMethod, CoinTossResult } from '@liuyao/core';
 import { Button } from './components/ui/button';
-import { Card } from './components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
+import { Separator } from './components/ui/separator';
+import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
 import { getLinePresentation, describeLineValue } from './line-value-presentation';
 import { CoinStage } from './casting/coin-stage';
 import { coinNames } from './casting/coin-names';
 import { CastingHexagram } from './casting/casting-hexagram';
-import { CoinLegend } from './casting/coin-legend';
 import './casting/casting-workspace.css';
 
 type Props = {
@@ -40,29 +41,31 @@ export function AutomaticCastingPanel({
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
     <Card className="automatic-casting" aria-label="Gieo từng hào">
-      <header className="casting-workspace-header">
-        <div className="casting-method-switch" role="group" aria-label="Số lượng đồng xu">
-          {(['three-coin', 'four-coin'] as const).map(value => (
-            <Button
-              key={value}
-              type="button"
-              size="sm"
-              variant={method === value ? 'secondary' : 'ghost'}
-              className="casting-method-button"
-              aria-pressed={method === value}
-              onClick={() => onMethodChange(value)}
-              disabled={busy || tosses.length > 0}
-            >
-              {value === 'three-coin' ? 'Ba đồng xu' : 'Bốn đồng xu'}
-            </Button>
-          ))}
-        </div>
+      <CardHeader className="casting-workspace-header">
+        <ToggleGroup
+          aria-label="Số lượng đồng xu"
+          value={[method]}
+          onValueChange={value => {
+            if (value[0]) onMethodChange(value[0] as CastingMethod);
+          }}
+          disabled={busy || tosses.length > 0}
+          className="casting-method-switch"
+        >
+          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu">
+            Ba đồng xu
+          </ToggleGroupItem>
+          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu">
+            Bốn đồng xu
+          </ToggleGroupItem>
+        </ToggleGroup>
         <span className="casting-count">{revealedCount} / 6 hào</span>
-      </header>
-      <div className="casting-workspace-body">
-        <CastingHexagram tosses={tosses} step={step} busy={busy} />
+      </CardHeader>
+      <CardContent className="casting-workspace-body">
+        <CastingHexagram
+          lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
+          step={step}
+        />
         <section className="casting-theater" aria-label="Sân khấu gieo đồng xu">
-          {count === 4 && <CoinLegend />}
           <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
           <div className="casting-copy" aria-live="polite">
             {completed && toss ? (
@@ -89,8 +92,9 @@ export function AutomaticCastingPanel({
             )}
           </div>
         </section>
-      </div>
-      <footer className="casting-action-bar">
+      </CardContent>
+      <Separator />
+      <CardFooter className="casting-action-bar">
         <Button
           type="button"
           variant="ghost"
@@ -111,7 +115,7 @@ export function AutomaticCastingPanel({
         >
           {busy ? 'Đang gieo…' : final ? 'Tính quẻ' : completed ? 'Tiếp theo' : 'Gieo hào'}
         </Button>
-      </footer>
+      </CardFooter>
     </Card>
   );
 }

@@ -194,14 +194,16 @@ export function CastingFlow() {
         <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
       ) : (
         <>
-          <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
-          <ManualCastingActions
-            step={step}
-            lines={lines}
-            onBack={() => setDraft({ ...draft, step: step - 1 })}
-            onNext={() => setDraft({ ...draft, step: step + 1 })}
-            onFinish={() => finish(lines)}
-          />
+          <section className="manual-casting-workspace" aria-label="Gieo thủ công">
+            <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
+            <ManualCastingActions
+              step={step}
+              lines={lines}
+              onBack={() => setDraft({ ...draft, step: step - 1 })}
+              onNext={() => setDraft({ ...draft, step: step + 1 })}
+              onFinish={() => finish(lines)}
+            />
+          </section>
         </>
       )}
       <Button

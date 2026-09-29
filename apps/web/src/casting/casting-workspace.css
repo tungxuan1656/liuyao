@@ -48,6 +48,9 @@
   gap: 1rem;
   border-bottom: 1px solid var(--border);
 }
+.automatic-casting .casting-workspace-header {
+  display: flex;
+}
 
 .automatic-casting-page .casting-method-switch {
   background: #eeebe2;
@@ -76,6 +79,9 @@
   display: grid;
   grid-template-columns: 35% minmax(0, 1fr);
   min-height: 400px;
+}
+.automatic-casting .casting-workspace-body {
+  padding: 0;
 }
 
 .forming-hexagram {
@@ -156,45 +162,6 @@
   border-radius: 0;
   background: radial-gradient(ellipse at 48% 58%, #f1e8d3 0%, #f7f3e9 43%, #faf8f2 75%);
 }
-.coin-canvas {
-  position: absolute;
-  inset: 0;
-}
-.coin-canvas canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.coin-legend {
-  position: absolute;
-  z-index: 1;
-  top: 12px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
-}
-.coin-legend li {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.75rem;
-  color: var(--foreground);
-}
-.coin-legend svg {
-  width: 26px;
-  height: 26px;
-  padding: 3px;
-  color: var(--coin-ink);
-  background: var(--coin-color);
-  border: 1px solid #344c5e40;
-  border-radius: 50%;
-}
 .automatic-casting-page .casting-copy {
   display: grid;
   height: 100px;
@@ -241,6 +208,9 @@
   padding: 1.2rem 1.7rem;
   border-top: 1px solid var(--border);
 }
+.automatic-casting .casting-action-bar {
+  display: flex;
+}
 .automatic-casting-page .casting-back-action {
   border-color: transparent;
   background: transparent;
@@ -265,26 +235,89 @@
   font-size: 0.8rem;
 }
 
-.coin-static-scene {
+.coin-grid {
   position: absolute;
   inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1.15rem 2.6rem;
 }
-.static-coin {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+.coin-grid-3 {
+  grid-template: auto auto / repeat(2, 6rem);
 }
-.static-coin-0 {
-  transform: translate(-115%, 0) rotate(-22deg);
+.coin-grid-3 .stage-coin-0 {
+  grid-column: 1 / -1;
 }
-.static-coin-1 {
-  transform: translate(-55%, -100%) rotate(32deg);
+.coin-grid-4 {
+  grid-template: repeat(2, auto) / repeat(2, 6rem);
 }
-.static-coin-2 {
-  transform: translate(30%, 10%) rotate(-9deg);
+.stage-coin {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
 }
-.static-coin-3 {
-  transform: translate(90%, -100%) rotate(46deg);
+.coin-face {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 4.6rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid var(--coin-accent, #657267);
+  color: var(--coin-ink, #29362f);
+  background: radial-gradient(
+    circle at 35% 28%,
+    #fffdf7 0,
+    var(--coin-light, #dce4dc) 42%,
+    var(--coin-color, #96a497) 100%
+  );
+  box-shadow:
+    0 5px 12px #29362f2e,
+    inset 0 1px 2px #fff;
+  transition: transform 300ms ease;
+}
+.coin-glyph {
+  font: 2.15rem/1 sans-serif;
+}
+.coin-identity-label,
+.stage-coin-label {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+.is-casting .coin-face {
+  animation: coin-flip 300ms ease-in-out infinite;
+}
+.stage-coin:nth-child(2) .coin-face {
+  animation-delay: 35ms;
+}
+.stage-coin:nth-child(3) .coin-face {
+  animation-delay: 70ms;
+}
+.stage-coin:nth-child(4) .coin-face {
+  animation-delay: 105ms;
+}
+@keyframes coin-flip {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.04);
+  }
+}
+.is-casting .coin-glyph {
+  font-size: 0;
+}
+.is-casting .coin-glyph::before {
+  content: '☀';
+  font: 2.15rem/1 sans-serif;
+  animation: glyph-switch 300ms steps(1, end) infinite;
+}
+@keyframes glyph-switch {
+  50% {
+    content: '☾';
+  }
 }
 
 @keyframes yao-ink {

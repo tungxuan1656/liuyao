@@ -8,98 +8,28 @@ import { HexagramBoard } from './result-board';
 import { YaoSymbol } from './components/yao-symbol';
 import { branchName, elementName, hexagramLabel, relativeName, stemName } from './result-labels';
 import './result-view.css';
+import { Sheet, SheetContent, SheetDescription, SheetTitle } from './components/ui/sheet';
 
 export function ResultView() {
   const { reading } = useReadingSession();
   const [selectedFact, setSelectedFact] = useState<FactSelection | null>(null);
   const [compact, setCompact] = useState(() => window.matchMedia('(max-width: 899px)').matches);
-  const closeButton = useRef<HTMLButtonElement>(null);
-  const drawerRef = useRef<HTMLElement>(null);
   const returnFocus = useRef<HTMLElement | null>(null);
-  const overflowBeforeDrawer = useRef<string | null>(null);
   useEffect(() => {
     const media = window.matchMedia('(max-width: 899px)');
     const update = () => {
       if (!media.matches) {
-        if (overflowBeforeDrawer.current !== null) {
-          document.body.style.overflow = overflowBeforeDrawer.current;
-          overflowBeforeDrawer.current = null;
-        }
         requestAnimationFrame(() => returnFocus.current?.focus());
-      } else if (selectedFact && overflowBeforeDrawer.current === null) {
-        overflowBeforeDrawer.current = document.body.style.overflow;
-        document.body.style.overflow = 'hidden';
       }
       setCompact(media.matches);
     };
     media.addEventListener('change', update);
     return () => media.removeEventListener('change', update);
-  }, [selectedFact]);
+  }, []);
   const closeInspector = () => {
     setSelectedFact(null);
     requestAnimationFrame(() => returnFocus.current?.focus());
   };
-  useEffect(() => {
-    if (!selectedFact) return;
-    if (compact) {
-      if (overflowBeforeDrawer.current === null) {
-        overflowBeforeDrawer.current = document.body.style.overflow;
-      }
-      document.body.style.overflow = 'hidden';
-      requestAnimationFrame(() => drawerRef.current?.focus());
-    }
-    const getFocusable = () => {
-      const drawer = document.querySelector<HTMLElement>('.fact-drawer');
-      return Array.from(
-        drawer?.querySelectorAll<HTMLElement>(
-          'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
-        ) ?? [],
-      ).filter(element => element.getClientRects().length > 0);
-    };
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        event.preventDefault();
-        closeInspector();
-      }
-      if (event.key === 'Tab') {
-        if (!compact) return;
-        const focusable = getFocusable();
-        if (!focusable.length) return;
-        const last = focusable[focusable.length - 1]!;
-        const first = focusable[0]!;
-        const activeIndex = focusable.indexOf(document.activeElement as HTMLElement);
-        if (event.shiftKey && activeIndex <= 0) {
-          event.preventDefault();
-          last.focus();
-        } else if (
-          !event.shiftKey &&
-          (activeIndex === focusable.length - 1 || activeIndex === -1)
-        ) {
-          event.preventDefault();
-          first.focus();
-        }
-      }
-    };
-    const onFocusIn = (event: FocusEvent) => {
-      if (
-        compact &&
-        event.target instanceof Node &&
-        !document.querySelector('.fact-drawer')?.contains(event.target)
-      ) {
-        drawerRef.current?.focus();
-      }
-    };
-    document.addEventListener('keydown', onKeyDown);
-    if (compact) document.addEventListener('focusin', onFocusIn);
-    return () => {
-      document.removeEventListener('keydown', onKeyDown);
-      document.removeEventListener('focusin', onFocusIn);
-      if (overflowBeforeDrawer.current !== null) {
-        document.body.style.overflow = overflowBeforeDrawer.current;
-        overflowBeforeDrawer.current = null;
-      }
-    };
-  }, [selectedFact, compact]);
   if (!reading)
     return (
       <main className="result-empty">
@@ -233,30 +163,26 @@ export function ResultView() {
           )}
         </aside>
       </div>
-      {selectedFact && compact && (
-        <div
-          className="drawer-layer"
-          onMouseDown={event => {
-            if (event.target === event.currentTarget) closeInspector();
-          }}
+      <Sheet
+        open={Boolean(selectedFact && compact)}
+        onOpenChange={open => {
+          if (!open) closeInspector();
+        }}
+      >
+        <SheetContent
+          side={compact ? 'bottom' : 'right'}
+          showCloseButton={false}
+          className="fact-sheet"
         >
-          <div className="drawer-scrim" aria-hidden="true" onClick={closeInspector} />
-          <aside
-            ref={drawerRef}
-            className="fact-drawer"
-            role="dialog"
-            aria-modal="true"
-            aria-label={`Chi tiết dữ kiện: ${selectedFact.label}`}
-            tabIndex={-1}
-          >
-            <FactInspector
-              fact={selectedFact}
-              close={closeInspector}
-              closeRef={compact ? closeButton : undefined}
-            />
-          </aside>
-        </div>
-      )}
+          {selectedFact && (
+            <>
+              <SheetTitle className="sr-only">Chi tiết dữ kiện: {selectedFact.label}</SheetTitle>
+              <SheetDescription className="sr-only">Quy tắc và nguồn tham khảo</SheetDescription>
+              <FactInspector fact={selectedFact} close={closeInspector} />
+            </>
+          )}
+        </SheetContent>
+      </Sheet>
     </main>
   );
 }

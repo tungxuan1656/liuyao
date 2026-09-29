@@ -140,9 +140,7 @@ test('waiting-update banner controls meet 44px touch targets at 390x844', async 
       )
       .toBe(true);
 
-    const banner = page
-      .getByRole('status')
-      .filter({ has: page.getByRole('heading', { name: 'Đã có bản cập nhật ứng dụng' }) });
+    const banner = page.getByRole('status').filter({ hasText: 'Đã có bản cập nhật ứng dụng' });
     await expect(banner).toBeVisible();
     const controls = [
       page.getByRole('button', { name: 'Để sau' }),

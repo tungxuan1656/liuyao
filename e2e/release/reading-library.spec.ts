@@ -87,13 +87,70 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
   }
 });
 
+test('automatic casting uses three or four DOM coins and reveals fixed toss faces', async ({
+  page,
+}) => {
+  await startReading(page, 'Gieo tự động');
+  const method = page.getByRole('group', { name: 'Số lượng đồng xu' });
+  await expect(method.getByRole('button', { name: 'Ba đồng xu' })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+
+  const stage = page.locator('.casting-stage');
+  await expect(stage.locator('.coin-face')).toHaveCount(3);
+  await expect(stage.locator('.coin-grid')).toHaveClass(/coin-grid-3/);
+  const primaryAction = page.getByRole('button', { name: 'Gieo hào' });
+  await primaryAction.click();
+  await expect(stage).toHaveClass(/is-casting/);
+  await expect(stage.locator('.coin-face')).toHaveCount(3);
+  const initialBusyFaces = await stage
+    .locator('.coin-face')
+    .evaluateAll(faces => faces.map(face => (face.classList.contains('is-heads') ? 1 : 0)));
+  await expect
+    .poll(async () =>
+      stage
+        .locator('.coin-face')
+        .evaluateAll(faces => faces.map(face => (face.classList.contains('is-heads') ? 1 : 0))),
+    )
+    .not.toEqual(initialBusyFaces);
+
+  const result = page
+    .getByRole('status')
+    .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });
+  await expect(result).toBeVisible();
+  await expect(stage).not.toHaveClass(/is-casting/);
+  const finalFaces = await stage
+    .locator('.coin-face')
+    .evaluateAll(faces => faces.map(face => (face.classList.contains('is-heads') ? 1 : 0)));
+  const evidence = (await result.locator('.coin-evidence').innerText()).match(
+    /mặt (?:trời|trăng)/g,
+  );
+  expect(evidence).not.toBeNull();
+  expect(finalFaces).toEqual(evidence!.map(face => (face === 'mặt trời' ? 1 : 0)));
+
+  await page.getByRole('button', { name: 'Xóa các hào' }).click();
+  await expect(page.getByRole('alertdialog', { name: 'Xóa toàn bộ các hào?' })).toBeVisible();
+  await page.getByRole('button', { name: 'Tiếp tục chỉnh sửa' }).click();
+  await expect(result).toBeVisible();
+  await page.getByRole('button', { name: 'Xóa các hào' }).click();
+  await page.getByRole('button', { name: 'Xóa các hào', exact: true }).last().click();
+  await expect(page.getByText('0 / 6 hào')).toBeVisible();
+  await expect(stage.locator('.coin-face')).toHaveCount(3);
+
+  await method.getByRole('button', { name: 'Bốn đồng xu' }).click();
+  await expect(stage.locator('.coin-face')).toHaveCount(4);
+  await expect(stage.locator('.coin-grid')).toHaveClass(/coin-grid-4/);
+});
+
 test('automatic casting keeps the primary action stationary before and after a reveal', async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await startReading(page, 'Gieo tự động');
-  await expect(page.locator('.casting-stage')).toHaveAttribute('data-renderer', 'ready');
+  const stage = page.locator('.casting-stage');
+  await expect(stage.locator('.coin-face')).toHaveCount(3);
 
   const primaryAction = page.locator('.casting-primary-action');
   const before = await primaryAction.boundingBox();
@@ -102,8 +159,9 @@ test('automatic casting keeps the primary action stationary before and after a r
 
   await primaryAction.click();
   await expect(primaryAction).toBeDisabled();
-  await expect(page.locator('.casting-stage')).toHaveClass(/is-casting/);
-  await expect(page.locator('.toss-result')).toHaveCount(0);
+  await expect(stage).toHaveClass(/is-casting/);
+  await expect(stage.locator('.coin-face')).toHaveCount(3);
+  await expect(stage.locator('.coin-face').first()).toHaveCSS('animation-name', 'coin-flip');
   const evidence = page
     .getByRole('status')
     .filter({ hasText: /Lão âm|Thiếu dương|Thiếu âm|Lão dương/ });
@@ -212,7 +270,9 @@ test('result drawer opens after resizing a rendered desktop result and follows l
 
   const drawer = page.getByRole('dialog', { name: /Chi tiết dữ kiện/ });
   await expect(drawer).toBeVisible();
-  await expect(drawer).toBeFocused();
+  await expect
+    .poll(() => drawer.evaluate(element => element.contains(document.activeElement)))
+    .toBe(true);
   await expect.poll(() => page.evaluate(() => document.body.style.overflow)).toBe('hidden');
   await page.keyboard.press('Escape');
   await expect(drawer).toBeHidden();
@@ -258,9 +318,11 @@ test('result fact inspectors link canonical entities from desktop and mobile', a
     displayedName: string,
     expectedId?: string,
   ) => {
-    const factLabel = await trigger.locator('span').first().innerText();
+    const factLabel = (await trigger.locator('span').first().textContent())?.trim() ?? '';
     await trigger.click();
-    await expect(inspector.getByRole('heading', { name: factLabel, exact: true })).toBeVisible();
+    await expect(
+      inspector.getByRole('heading', { name: new RegExp(factLabel, 'i') }),
+    ).toBeVisible();
     const footerLink = inspector.locator('.inspector-footer a');
     await expect(footerLink).toHaveText(`Xem trong thư viện: ${factLabel}`);
     const href = await footerLink.getAttribute('href');
@@ -269,24 +331,25 @@ test('result fact inspectors link canonical entities from desktop and mobile', a
     if (expectedId) expect(id).toBe(expectedId);
     await footerLink.click();
     await expect(page).toHaveURL(new RegExp(`/library/${kind}/${id}$`));
-    await expect(page.getByRole('heading', { name: displayedName, exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: new RegExp(displayedName, 'i') })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Không tìm thấy mục' })).toHaveCount(0);
     await page.goBack();
     await expect(inspector).toBeVisible();
   };
 
+  const primaryName = (await primary.getByRole('heading').textContent())?.trim() ?? '';
   const primaryHexagramId = `hexagram-${(await primary.locator('.hexagram-number').innerText()).trim()}`;
   await expectCanonicalDestination(
     page.getByRole('button', { name: /Quẻ chính:.*Xem giải thích dữ kiện này/ }),
     'hexagram',
-    await primary.getByRole('heading').innerText(),
+    (await primary.getByRole('heading').textContent())?.trim() ?? '',
     primaryHexagramId,
   );
   const changedHexagramId = `hexagram-${(await changed.locator('.hexagram-number').innerText()).trim()}`;
   await expectCanonicalDestination(
     changed.getByRole('button', { name: /Quẻ biến:.*Xem giải thích dữ kiện này/ }),
     'hexagram',
-    await changed.getByRole('heading').innerText(),
+    (await changed.getByRole('heading').textContent())?.trim() ?? '',
     changedHexagramId,
   );
 
@@ -319,8 +382,6 @@ test('result fact inspectors link canonical entities from desktop and mobile', a
   );
   await mobileFooter.click();
   await expect(page).toHaveURL(new RegExp(`/library/hexagram/${primaryHexagramId}$`));
-  await expect(
-    page.getByRole('heading', { name: await primary.getByRole('heading').innerText() }),
-  ).toBeVisible();
+  await expect(page.getByRole('heading', { name: new RegExp(primaryName, 'i') })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Không tìm thấy mục' })).toHaveCount(0);
 });

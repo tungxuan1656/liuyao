@@ -144,9 +144,7 @@ test.describe('production PWA behavior', () => {
 
       await expect(page.getByRole('heading', { name: 'Hào 1 trên 6' })).toBeVisible();
       await expect(page.locator('.manual-outcome')).toContainText('Thiếu dương');
-      await expect(
-        page.getByRole('heading', { name: 'Đã có bản cập nhật ứng dụng' }),
-      ).toBeVisible();
+      await expect(page.getByText('Đã có bản cập nhật ứng dụng', { exact: true })).toBeVisible();
 
       await page.getByRole('button', { name: 'Cập nhật ngay' }).click();
       await expect(
