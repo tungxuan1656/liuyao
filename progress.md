@@ -540,3 +540,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed after the split (format, lint with two warnings, typecheck, build, 225 package tests, and package exports). Browser checks sampled desktop/iPhone coin faces and stable stage heights (242px desktop; 220px mobile); non-reduced animation was active at 80/450/900/1400ms, revealed by 1900ms with unchanged stage height, while reduced motion revealed immediately. Core tests exhaustively cover three-/four-coin mappings. Manual/direct browser checks were partial; complete six-line completion/revisit/reset remains unverified.
 **Blockers**: Meaningful mobile and desktop live-animation visual review is still required; timing samples alone do not establish motion quality.
 **Next**: Record live-animation visual review on mobile and desktop, then validate full six-line completion, revisit, and reset before finalizing acceptance.
+
+
+## 2026-09-29 — feat-028 casting UX refinement
+
+**State**: implementation refined on `feat/028-coin-casting`; live visual review is still required before marking the feature done.
+**Changed**: Replaced bare 6/7/8/9 result headlines with Lão âm / Thiếu dương / Thiếu âm / Lão dương terminology, stabilized the automatic-casting result/action regions, simplified the shell/coin/dish visual language, shortened and staggered motion, and routed casting controls through the shared shadcn-style Button/Card/UI primitives. The destructive confirmation dialog now uses the shared alert-dialog primitive with centered overlay and open animation.
+**Tests**: Release E2E expectations were updated for canonical line names and a mobile regression test now checks that the automatic primary action does not shift vertically after a reveal.
+**Remaining**: Run repository verification and perform the required desktop/mobile live-animation visual review before checking feat-028 motion acceptance.

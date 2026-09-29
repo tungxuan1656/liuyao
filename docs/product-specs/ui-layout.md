@@ -130,7 +130,7 @@ Used during active line input before calculation. Governed by the rules in `read
   - **Direct-entry mode**:
     - All 6 line positions are visible simultaneously on one screen.
     - Presented visually in board orientation from Line 6 (top) down to Line 1 (bottom), while keeping canonical domain state in bottom-to-top order (1 to 6).
-    - Each position offers four explicit choices: yin, yang, moving yin, or moving yang (values `6`, `7`, `8`, or `9`).
+    - Each position offers four explicit named choices: **Lão âm (6)**, **Thiếu dương (7)**, **Thiếu âm (8)**, and **Lão dương (9)**. Show the yao symbol and canonical name prominently; keep the numeric value as secondary metadata.
     - Nút chính `[ Tính quẻ ]` bị vô hiệu hóa cho đến khi cả sáu vị trí có giá trị hợp lệ từ `6` đến `9`.
 - **Navigation safety semantics**:
   - **Quay lại**: Về bước nhập trước trong luồng tuần tự và giữ các hào đã nhập.
@@ -222,7 +222,7 @@ The result view presents deterministic facts separated from explanatory prose, m
 - `<HexagramBoard reading={result} onSelectLine={(lineIndex) => ...} />`: Responsive 6-line board with upper/lower trigram indicators.
 - `<AutomaticCastingPanel step={step} lines={lines} tosses={tosses} onBack={...} onNext={...} onToss={...} onFinish={...} />`:
   - Shows the current line number and six-line toss progress.
-  - Presents the automatic three- or four-coin outcome and line value in an accessible live status after the reveal; the most recently cast line is marked as such.
+  - Presents the automatic three- or four-coin outcome using the canonical line name (Lão âm, Thiếu dương, Thiếu âm, Lão dương) as the primary accessible result, with the numeric value as secondary metadata; the most recently cast line is marked as such.
   - Provides `[ Quay lại ]`, disabled on the first line. For an already-cast line, provides `[ Tiếp theo ]`, except on the completed sixth line, where it provides `[ Tính quẻ ]`. For the next uncast line, provides `[ Gieo hào ]`.
   - Displays the outcome evidence. The casting flow provides the predetermined random outcome; animation must not determine or alter it.
 - Manual coin controls show independently adjustable heads/tails faces, expose each coin's identity accessibly, and provide an explicit line-confirm action.

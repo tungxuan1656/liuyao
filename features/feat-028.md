@@ -16,8 +16,8 @@ Support user-matched physical tosses and the selected three- or four-coin castin
 - [ ] Three- and four-coin line values and distributions match `reading-flow.md`.
 - [ ] Automatic outcomes are generated before animation, revealed without changing, and cannot be retriggered while animating.
 - [ ] **Highest-priority motion criterion:** The shell has a natural inertial shake/tip; coins fall individually with staggered timing and restrained contact/settle wobble, without synchronized repetitive spins or bounces. Visually review smoothness on mobile and desktop, confirm no layout shift or dropped-feeling motion, and record that review (a generic “smooth” claim is insufficient).
-- [ ] Direct mode exposes all six rows at once with yin, yang, moving yin, and moving yang choices.
-- [ ] The coin visuals, reduced-motion behavior, responsive layout, and keyboard/screen-reader behavior meet `ui-layout.md`.
+- [ ] Direct mode exposes all six rows at once with named Lão âm, Thiếu dương, Thiếu âm, and Lão dương choices, with numeric 6/7/8/9 shown only as secondary metadata.
+- [ ] The coin visuals, reduced-motion behavior, responsive layout, stable action-bar position, and keyboard/screen-reader behavior meet `ui-layout.md`.
 - [ ] No history or persistence is added; prior completed readings remain available on revisit unless the user explicitly resets or starts over.
 - [ ] Relevant tests and repository verification pass.
 

@@ -20,7 +20,7 @@ Trang gieo quẻ
 
 The user performs the physical casting outside the app.
 
-For each line, the user flips three or four individual virtual coins to match the physical toss, then confirms the line. The app derives and displays the line value: `6`, `7`, `8`, or `9`.
+For each line, the user flips three or four individual virtual coins to match the physical toss, then confirms the line. The app derives the numeric line value (`6`, `7`, `8`, or `9`) but presents the canonical line name as the primary result: **Lão âm (6)**, **Thiếu dương (7)**, **Thiếu âm (8)**, or **Lão dương (9)**. The number remains secondary metadata.
 
 The flow starts with the first (bottom) line and ends with the sixth (top) line. Returning to a completed line preserves its coin faces and outcome unless the user explicitly resets the draft.
 
@@ -52,7 +52,7 @@ Use browser cryptographic randomness for automatic outcomes. Do not use `Math.ra
 
 ### Direct input
 
-The user selects all six line values simultaneously, with one of four options per line: moving yin (`6`), yang (`7`), yin (`8`), or moving yang (`9`).
+The user selects all six line values simultaneously, with four named options per line: **Lão âm** — moving yin (`6`), **Thiếu dương** — static yang (`7`), **Thiếu âm** — static yin (`8`), or **Lão dương** — moving yang (`9`). The canonical name and yao symbol are primary; the number is secondary metadata.
 
 Use the same bottom-to-top domain order as other methods.
 
