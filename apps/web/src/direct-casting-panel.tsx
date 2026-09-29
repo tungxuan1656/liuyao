@@ -14,10 +14,7 @@ function DirectYaoSymbol({ value }: { value: (typeof validValues)[number] }) {
   const yang = value === 7 || value === 9;
   const moving = value === 6 || value === 9;
   return (
-    <span
-      className={`direct-yao-symbol ${yang ? 'is-yang' : 'is-yin'}`}
-      aria-hidden="true"
-    >
+    <span className={`direct-yao-symbol ${yang ? 'is-yang' : 'is-yin'}`} aria-hidden="true">
       {yang ? (
         <i />
       ) : (

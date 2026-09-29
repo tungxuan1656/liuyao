@@ -34,9 +34,7 @@ export function CoinFace({
     Gió: '〰',
   };
   return (
-    <span
-      className={`coin-face ${value ? 'is-heads' : 'is-tails'}${compact ? ' is-compact' : ''}`}
-    >
+    <span className={`coin-face ${value ? 'is-heads' : 'is-tails'}${compact ? ' is-compact' : ''}`}>
       {name && (
         <span
           className={`coin-emblem emblem-${coinNames.indexOf(name as (typeof coinNames)[number])}`}
