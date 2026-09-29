@@ -658,8 +658,8 @@
 
 .casting-copy {
   display: grid;
-  min-height: 142px;
-  grid-template-rows: auto 1fr;
+  height: 154px;
+  grid-template-rows: 28px minmax(0, 1fr);
   align-content: start;
   gap: 0.55rem;
 }
@@ -671,9 +671,11 @@
 
 .casting-status-placeholder,
 .toss-result {
-  min-height: 98px;
+  height: 100%;
+  min-height: 0;
   display: grid;
   align-content: center;
+  box-sizing: border-box;
 }
 
 .casting-status-placeholder {
@@ -1010,7 +1012,7 @@
   }
 
   .casting-copy {
-    min-height: 150px;
+    height: 170px;
   }
 
   .direct-line-row {
