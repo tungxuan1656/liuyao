@@ -541,7 +541,6 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: Meaningful mobile and desktop live-animation visual review is still required; timing samples alone do not establish motion quality.
 **Next**: Record live-animation visual review on mobile and desktop, then validate full six-line completion, revisit, and reset before finalizing acceptance.
 
-
 ## 2026-09-29 — feat-028 casting UX refinement
 
 **State**: implementation refined on `feat/028-coin-casting`; live visual review is still required before marking the feature done.

@@ -171,7 +171,12 @@ export function CastingFlow() {
   return (
     <main className="reading-page casting-page">
       <header className="flow-header">
-        <Button type="button" variant="ghost" className="casting-cancel-action" onClick={cancelFlow}>
+        <Button
+          type="button"
+          variant="ghost"
+          className="casting-cancel-action"
+          onClick={cancelFlow}
+        >
           Hủy
         </Button>
         <p>
@@ -205,7 +210,11 @@ export function CastingFlow() {
           onFinish={() => finish(lines)}
         />
       ) : direct ? (
-        <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
+        <DirectCastingPanel
+          lines={lines}
+          onChange={updateLine}
+          onFinish={() => finish(lines)}
+        />
       ) : (
         <>
           <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />

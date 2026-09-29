@@ -85,7 +85,6 @@ test('automatic casting exposes six valid values and visible coin evidence', asy
   }
 });
 
-
 test('automatic casting keeps the primary action stationary before and after a reveal', async ({
   page,
 }) => {

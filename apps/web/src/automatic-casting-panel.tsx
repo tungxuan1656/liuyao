@@ -34,7 +34,9 @@ export function CoinFace({
     Gió: '〰',
   };
   return (
-    <span className={`coin-face ${value ? 'is-heads' : 'is-tails'}${compact ? ' is-compact' : ''}`}>
+    <span
+      className={`coin-face ${value ? 'is-heads' : 'is-tails'}${compact ? ' is-compact' : ''}`}
+    >
       {name && (
         <span
           className={`coin-emblem emblem-${coinNames.indexOf(name as (typeof coinNames)[number])}`}
@@ -71,7 +73,10 @@ function TurtleShell() {
         d="M30 65c4-25 22-43 50-43s46 18 50 43c-10 9-27 14-50 14S40 74 30 65Z"
       />
       <path className="shell-outline" d="M30 65c4-25 22-43 50-43s46 18 50 43" />
-      <path className="shell-grid" d="M80 24v49M47 48l33 25 33-25M58 31l-7 33m51-33 7 33M39 63h82" />
+      <path
+        className="shell-grid"
+        d="M80 24v49M47 48l33 25 33-25M58 31l-7 33m51-33 7 33M39 63h82"
+      />
       <path className="shell-base" d="M27 66c14 8 32 12 53 12s39-4 53-12" />
       <path className="shell-feet" d="M51 76l-4 9m24-6-2 10m40-13 4 9M89 79l2 10" />
     </svg>
@@ -81,7 +86,9 @@ function TurtleShell() {
 function CoinArt({ value, name }: { value: number; name?: string }) {
   return (
     <div
-      className={`casting-coin ${value ? 'is-heads' : 'is-tails'} ${name ? `element-${coinNames.indexOf(name as (typeof coinNames)[number])}` : ''}`}
+      className={`casting-coin ${value ? 'is-heads' : 'is-tails'} ${
+        name ? `element-${coinNames.indexOf(name as (typeof coinNames)[number])}` : ''
+      }`}
     >
       <CoinFace value={value} name={name} />
     </div>
@@ -106,7 +113,11 @@ export function AutomaticCastingPanel({
 
   const isCompletedLine = step < tosses.length;
   const isFinalCompletedLine = isCompletedLine && step === 5 && tosses.length === 6;
-  const primaryLabel = isFinalCompletedLine ? 'Tính quẻ' : isCompletedLine ? 'Tiếp theo' : 'Gieo hào';
+  const primaryLabel = isFinalCompletedLine
+    ? 'Tính quẻ'
+    : isCompletedLine
+      ? 'Tiếp theo'
+      : 'Gieo hào';
   const primaryAction = isFinalCompletedLine ? onFinish : isCompletedLine ? onNext : onToss;
   const presentation = toss ? getLinePresentation(toss.line) : null;
 

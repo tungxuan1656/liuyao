@@ -14,7 +14,10 @@ function DirectYaoSymbol({ value }: { value: (typeof validValues)[number] }) {
   const yang = value === 7 || value === 9;
   const moving = value === 6 || value === 9;
   return (
-    <span className={`direct-yao-symbol ${yang ? 'is-yang' : 'is-yin'}`} aria-hidden="true">
+    <span
+      className={`direct-yao-symbol ${yang ? 'is-yang' : 'is-yin'}`}
+      aria-hidden="true"
+    >
       {yang ? (
         <i />
       ) : (
@@ -67,12 +70,15 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
           </div>
         </div>
       ))}
-      <Button type="button" className="direct-calculate" disabled={!canCalculate} onClick={onFinish}>
+      <Button
+        type="button"
+        className="direct-calculate"
+        disabled={!canCalculate}
+        onClick={onFinish}
+      >
         Tính quẻ
       </Button>
-      {!canCalculate && (
-        <p role="status">Hãy chọn đủ sáu hào trước khi tính quẻ.</p>
-      )}
+      {!canCalculate && <p role="status">Hãy chọn đủ sáu hào trước khi tính quẻ.</p>}
     </Card>
   );
 }
