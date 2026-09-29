@@ -49,7 +49,7 @@ export function ResultView() {
 
   if (!reading)
     return (
-      <main className="max-w-2xl py-8 text-neutral-900 mx-auto">
+      <main className="mx-auto max-w-2xl px-5 py-10 text-foreground sm:py-14">
         <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-2">
           Chưa có kết quả
         </p>
@@ -58,7 +58,7 @@ export function ResultView() {
           Quẻ đã hoàn tất chỉ được giữ trong bộ nhớ của phiên trình duyệt này.
         </p>
         <Link
-          className="inline-flex items-center min-h-[44px] px-4 bg-neutral-900 text-white hover:bg-neutral-800 transition-colors"
+          className="inline-flex min-h-11 items-center border border-foreground bg-foreground px-4 text-background transition-colors hover:bg-background hover:text-foreground"
           to={ROUTES.home}
         >
           Quay lại trang gieo quẻ
@@ -77,7 +77,7 @@ export function ResultView() {
     : undefined;
 
   return (
-    <main className="w-full max-w-6xl mx-auto text-neutral-900 grid gap-6">
+    <main className="mx-auto grid w-full max-w-6xl gap-6 px-4 text-foreground sm:px-6">
       <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 py-4 mb-2 border-b border-border">
         <div>
           <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium mb-1">
@@ -99,7 +99,7 @@ export function ResultView() {
       </header>
 
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        <div className="flex-1 grid gap-4 min-w-0 w-full">
+        <div className="grid min-w-0 w-full flex-1 gap-4">
           <FactButton
             fact={{
               id: 'result.primaryHexagramId',

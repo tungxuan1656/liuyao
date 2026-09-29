@@ -77,7 +77,7 @@ export function SettingsPage() {
   }
 
   return (
-    <main className="mx-auto max-w-2xl px-5 py-12 flex flex-col gap-12">
+    <main className="mx-auto flex w-full max-w-2xl flex-col gap-10 px-5 py-10 sm:gap-12 sm:py-14">
       <header className="flex flex-col gap-3">
         <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
           Lục Hào / Thông tin ứng dụng
@@ -196,7 +196,7 @@ export function SettingsPage() {
           </p>
         </div>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <li className="flex flex-col gap-2 p-4 bg-neutral-50">
+          <li className="flex flex-col gap-2 border border-border p-4 bg-card">
             <span className="text-[11px] text-neutral-400 uppercase tracking-wider">
               Thứ tự hào
             </span>
@@ -204,13 +204,13 @@ export function SettingsPage() {
               Từ hào một đến hào sáu, từ dưới lên
             </strong>
           </li>
-          <li className="flex flex-col gap-2 p-4 bg-neutral-50">
+          <li className="flex flex-col gap-2 border border-border p-4 bg-card">
             <span className="text-[11px] text-neutral-400 uppercase tracking-wider">Hào động</span>
             <strong className="text-sm font-medium leading-relaxed text-neutral-800">
               Lão Âm và Lão Dương
             </strong>
           </li>
-          <li className="flex flex-col gap-2 p-4 bg-neutral-50">
+          <li className="flex flex-col gap-2 border border-border p-4 bg-card">
             <span className="text-[11px] text-neutral-400 uppercase tracking-wider">
               Phân tích lịch
             </span>

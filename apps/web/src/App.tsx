@@ -66,10 +66,10 @@ export default function App() {
   }
 
   return (
-    <main className="mx-auto max-w-2xl px-5 py-16 flex flex-col gap-8">
+    <main className="mx-auto flex w-full max-w-2xl flex-col gap-8 px-5 py-10 sm:py-14">
       {/* Header */}
       <div className="flex flex-col gap-1">
-        <h1 className="font-heading text-2xl font-semibold tracking-wider uppercase">Lục Hào</h1>
+        <h1 className="font-serif text-3xl font-medium tracking-tight sm:text-4xl">Lục Hào</h1>
         <p className="text-muted-foreground text-sm leading-relaxed">
           Lập quẻ sáu hào, từng bước rõ ràng và riêng tư.
         </p>
@@ -77,7 +77,7 @@ export default function App() {
 
       {/* Content */}
       {reading ? (
-        <Card>
+        <Card className="rounded-none shadow-none ring-1 ring-border">
           <CardHeader className="border-b">
             <CardTitle>Quẻ hiện tại</CardTitle>
             <CardDescription>
@@ -117,7 +117,7 @@ export default function App() {
           </CardFooter>
         </Card>
       ) : (
-        <Card>
+        <Card className="rounded-none shadow-none ring-1 ring-border">
           <CardHeader className="border-b">
             <CardTitle>Gieo quẻ mới</CardTitle>
             <CardDescription>Đặt câu hỏi và chọn cách lập quẻ.</CardDescription>
@@ -168,17 +168,15 @@ export default function App() {
                     <FieldLabel
                       key={value}
                       className={`flex-row items-center gap-3 px-4 py-3.5 cursor-pointer transition-colors w-full ${
-                        entryMethod === value ? 'bg-neutral-900' : 'hover:bg-muted'
+                        entryMethod === value
+                          ? 'bg-secondary text-foreground'
+                          : 'border-b border-border hover:bg-muted/60'
                       }`}
                     >
                       <Field orientation="horizontal" className="gap-3 w-full">
                         <RadioGroupItem
                           value={value}
-                          className={
-                            entryMethod === value
-                              ? 'border-white [&_.radio-indicator]:bg-white'
-                              : ''
-                          }
+                          className={entryMethod === value ? 'border-foreground' : ''}
                         />
                         <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                           <span className={`text-sm font-medium normal-case tracking-normal`}>

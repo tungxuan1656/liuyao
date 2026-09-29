@@ -63,7 +63,7 @@ export function LibraryDetailPage() {
   const related = getRelatedFigures(record);
   const applicableRules = getApplicableRules(record);
   return (
-    <main className="w-full max-w-[920px] mx-auto py-1 pb-8 text-foreground">
+    <main className="mx-auto w-full max-w-[920px] px-4 py-1 pb-8 text-foreground sm:px-6">
       <Button
         variant="ghost"
         size="sm"
@@ -76,7 +76,7 @@ export function LibraryDetailPage() {
       >
         ← Quay lại thư viện
       </Button>
-      <Card className="min-w-0 max-w-[740px] mx-auto mt-4 p-4 sm:p-6 md:p-10 border-0 shadow-none bg-transparent">
+      <Card className="mx-auto mt-4 min-w-0 max-w-[740px] rounded-none border border-border bg-card p-4 shadow-none ring-0 sm:p-6 md:p-10">
         <CardContent className="p-0">
           <header className="flex items-start justify-between gap-4">
             <div className="grid gap-2">
@@ -96,14 +96,14 @@ export function LibraryDetailPage() {
             </div>
             <Badge
               variant="outline"
-              className="max-w-[45%] break-words text-muted-foreground text-xs text-right border-0 shadow-none"
+              className="max-w-[45%] break-words text-right text-xs text-muted-foreground"
             >
               {record.id}
             </Badge>
           </header>
           <p className="my-7 font-serif text-lg leading-relaxed">{recordDescription(record)}</p>
           {'upperTrigramId' in record && (
-            <section className="mt-8 pt-4 border-t-0">
+            <section className="mt-8 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">Gồm hai quái</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {[record.upperTrigramId, record.lowerTrigramId].map((trigramId, index) => {
@@ -112,7 +112,7 @@ export function LibraryDetailPage() {
                     trigram && (
                       <Link
                         key={`${index}-${trigramId}`}
-                        className="grid min-h-[82px] p-3 grid-cols-[1fr_auto] gap-1 border-0 bg-secondary/50 hover:bg-secondary text-foreground no-underline"
+                        className="grid min-h-[82px] grid-cols-[1fr_auto] gap-1 border border-border p-3 text-foreground no-underline transition-colors hover:bg-muted/50"
                         to={recordPath(trigram)}
                       >
                         <span className="text-muted-foreground text-xs capitalize">
@@ -129,7 +129,7 @@ export function LibraryDetailPage() {
             </section>
           )}
           {related.length > 0 && !('upperTrigramId' in record) && (
-            <section className="mt-8 pt-4 border-t-0">
+            <section className="mt-8 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">
                 Quẻ liên quan{' '}
                 <span className="ml-2 text-muted-foreground font-sans text-sm font-normal">
@@ -140,7 +140,7 @@ export function LibraryDetailPage() {
                 {related.map(item => (
                   <Link
                     key={item.id}
-                    className="grid min-h-[82px] p-3 grid-cols-[1fr_auto] gap-1 border-0 bg-secondary/50 hover:bg-secondary text-foreground no-underline"
+                    className="grid min-h-[82px] grid-cols-[1fr_auto] gap-1 border border-border p-3 text-foreground no-underline transition-colors hover:bg-muted/50"
                     to={recordPath(item)}
                   >
                     <span className="text-muted-foreground text-xs capitalize">
@@ -155,13 +155,13 @@ export function LibraryDetailPage() {
             </section>
           )}
           {applicableRules.length > 0 && (
-            <section className="mt-8 pt-4 border-t-0">
+            <section className="mt-8 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">Quy tắc áp dụng</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {applicableRules.map(rule => (
                   <Link
                     key={rule.id}
-                    className="grid min-h-[82px] p-3 grid-cols-[1fr_auto] gap-1 border-0 bg-secondary/50 hover:bg-secondary text-foreground no-underline"
+                    className="grid min-h-[82px] grid-cols-[1fr_auto] gap-1 border border-border p-3 text-foreground no-underline transition-colors hover:bg-muted/50"
                     to={recordPath(rule)}
                   >
                     <span className="text-muted-foreground text-xs capitalize">Quy tắc</span>
@@ -172,7 +172,7 @@ export function LibraryDetailPage() {
             </section>
           )}
           {references.length > 0 && (
-            <section className="mt-8 pt-4 border-t-0">
+            <section className="mt-8 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">Nguồn và vị trí tra cứu</h2>
               {references.map(reference => (
                 <div

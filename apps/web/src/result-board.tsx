@@ -27,10 +27,10 @@ export function HexagramBoard({
   const changedId = changed ? result.changedHexagramId : null;
   return (
     <section
-      className={`min-w-0 p-4 bg-neutral-50 ${changed ? 'bg-neutral-100' : ''}`}
+      className={`min-w-0 border border-border bg-card p-4 ${changed ? 'bg-muted/40' : ''}`}
       aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'}
     >
-      <div className="flex items-start justify-between gap-2 pb-2 mb-2 border-b border-neutral-200">
+      <div className="mb-2 flex items-start justify-between gap-2 border-b border-border pb-2">
         <div>
           <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-1">
             {changed ? 'Sau khi đổi hào động' : 'Quẻ chính'}

@@ -154,7 +154,7 @@ export function CastingFlow() {
   const direct = draft.method === 'direct';
   const step = Math.min(draft.step, 5);
   return (
-    <main className="w-full max-w-4xl mx-auto flex flex-col gap-3 md:gap-4 p-4 md:p-8 text-neutral-900">
+    <main className="mx-auto flex w-full max-w-4xl flex-col gap-3 p-4 text-foreground sm:gap-4 sm:p-6 md:p-8">
       <header className="flex items-center gap-2 text-neutral-500 mb-2">
         <Button
           type="button"

@@ -39,8 +39,8 @@ export function LibraryPage() {
   const shown = category === 'rules' ? filterRules(records, ruleFilter) : records;
 
   return (
-    <main className="w-full max-w-[920px] mx-auto text-foreground">
-      <header className="flex min-w-0 min-h-[160px] py-6 items-center">
+    <main className="mx-auto w-full max-w-[920px] px-4 text-foreground sm:px-6">
+      <header className="flex min-h-[140px] min-w-0 items-center py-6 sm:min-h-[160px]">
         <div className="min-w-0">
           <p className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
             Cẩm nang Lục Hào
@@ -57,14 +57,14 @@ export function LibraryPage() {
       <section className="min-w-0 py-6" aria-label="Tra cứu tri thức">
         <Tabs value={category} onValueChange={value => value && setCategory(value as Category)}>
           <TabsList
-            className="flex overflow-x-auto gap-1 border-b-0 scrollbar-none w-full grid-cols-2 sm:flex bg-transparent p-0"
+            className="flex w-full gap-1 overflow-x-auto border-b border-border bg-transparent p-0 scrollbar-none"
             aria-label="Danh mục tri thức"
           >
             {categories.map(({ id, label }) => (
               <TabsTrigger
                 key={id}
                 value={id}
-                className="relative min-h-[44px] sm:min-h-[48px] px-2 sm:px-4 py-2 sm:py-2.5 border-0 bg-transparent text-muted-foreground whitespace-normal sm:whitespace-nowrap cursor-pointer data-[state=active]:text-foreground data-[state=active]:font-semibold data-[state=active]:shadow-none data-[state=active]:bg-transparent"
+                className="relative min-h-11 shrink-0 whitespace-nowrap border-0 border-b-2 border-transparent bg-transparent px-3 py-2 text-muted-foreground shadow-none transition-colors data-[state=active]:border-foreground data-[state=active]:bg-transparent data-[state=active]:font-medium data-[state=active]:text-foreground data-[state=active]:shadow-none sm:px-4"
               >
                 {label}
               </TabsTrigger>
@@ -74,7 +74,7 @@ export function LibraryPage() {
         <div className="flex min-w-0 mt-4 mb-3 items-center justify-between gap-2 sm:gap-4">
           <label className="block min-w-0 flex-1">
             <span className="sr-only">Tìm theo tên và phần mô tả</span>
-            <InputGroup className="flex w-full sm:max-w-[470px] min-h-[46px] px-3 items-center gap-2 border-0 bg-secondary rounded-md focus-within:ring-2 focus-within:ring-foreground">
+            <InputGroup className="flex min-h-11 w-full items-center gap-2 rounded-none border border-input bg-background px-3 focus-within:ring-2 focus-within:ring-ring sm:max-w-[470px]">
               <InputGroupAddon>
                 <span
                   className="text-muted-foreground font-serif text-2xl leading-none"
@@ -157,7 +157,7 @@ export function LibraryPage() {
             {shown.map(record => (
               <Link
                 key={record.id}
-                className="flex min-w-0 min-h-[80px] px-3 py-3 items-center gap-3 text-foreground hover:bg-neutral-50 border-b border-border transition-colors no-underline"
+                className="flex min-h-[80px] min-w-0 items-center gap-3 border-b border-border px-3 py-3 text-foreground no-underline transition-colors hover:bg-muted/50 focus-visible:relative focus-visible:z-10"
                 to={recordPath(record)}
               >
                 <span

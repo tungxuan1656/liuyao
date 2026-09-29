@@ -39,7 +39,7 @@ export function AutomaticCastingPanel({
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
     <Card
-      className="flex flex-col gap-0 border border-border shadow-none bg-white text-neutral-900 rounded-none overflow-hidden"
+      className="flex flex-col gap-0 overflow-hidden rounded-none border border-border bg-card text-foreground shadow-none ring-0"
       aria-label="Gieo từng hào"
     >
       <CardHeader className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-b border-border gap-4">
@@ -50,19 +50,19 @@ export function AutomaticCastingPanel({
             if (value[0]) onMethodChange(value[0] as CastingMethod);
           }}
           disabled={busy || tosses.length > 0}
-          className="bg-neutral-100 border-0"
+          className="border border-border bg-background"
         >
           <ToggleGroupItem
             value="three-coin"
             aria-label="Ba đồng xu"
-            className="min-h-[44px] text-sm data-[state=on]:bg-neutral-900 data-[state=on]:text-white rounded-none"
+            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
           >
             Ba đồng xu
           </ToggleGroupItem>
           <ToggleGroupItem
             value="four-coin"
             aria-label="Bốn đồng xu"
-            className="min-h-[44px] text-sm data-[state=on]:bg-neutral-900 data-[state=on]:text-white rounded-none"
+            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
           >
             Bốn đồng xu
           </ToggleGroupItem>
@@ -70,17 +70,17 @@ export function AutomaticCastingPanel({
         <span className="text-sm text-neutral-500 whitespace-nowrap">{revealedCount} / 6 hào</span>
       </CardHeader>
       <CardContent className="grid grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)] min-h-[400px] p-0">
-        <div className="flex flex-col justify-center p-4 md:p-8 md:pr-6 border-b md:border-b-0 md:border-r border-border bg-neutral-50">
+        <div className="flex flex-col justify-center border-b border-border bg-muted/30 p-4 md:border-b-0 md:border-r md:p-8 md:pr-6">
           <CastingHexagram
             lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
             step={step}
           />
         </div>
         <section
-          className="min-w-0 relative grid grid-rows-[190px_80px] md:grid-rows-[300px_100px]"
+          className="relative grid min-w-0 grid-rows-[190px_80px] md:grid-rows-[300px_100px]"
           aria-label="Sân khấu gieo đồng xu"
         >
-          <div className="relative overflow-hidden isolate h-full bg-neutral-50 flex items-center justify-center border-b border-border">
+          <div className="relative isolate flex h-full items-center justify-center overflow-hidden border-b border-border bg-muted/30">
             <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
           </div>
           <div
@@ -134,7 +134,7 @@ export function AutomaticCastingPanel({
         </span>
         <Button
           type="button"
-          className="w-36 min-h-[46px] rounded-none bg-neutral-900 text-white hover:bg-neutral-800 border-0"
+          className="min-h-11 w-36 rounded-none border border-foreground bg-foreground text-background hover:bg-background hover:text-foreground"
           disabled={busy}
           onClick={final ? onFinish : completed ? onNext : onToss}
         >
