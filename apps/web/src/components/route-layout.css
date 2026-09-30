@@ -1,0 +1,52 @@
+.route-page {
+  width: min(100%, var(--route-width, 80rem));
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding: 1rem 1rem 1.5rem;
+}
+
+.route-page--reading,
+.route-page--detail {
+  --route-width: 42rem;
+}
+.route-page--casting {
+  --route-width: 56rem;
+}
+.route-page--reference,
+.route-page--result {
+  --route-width: 80rem;
+}
+
+.route-casting-container {
+  width: min(100%, 56rem);
+  box-sizing: border-box;
+  margin-inline: auto;
+}
+.route-casting-container > main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1rem 1rem 1.5rem;
+}
+
+.route-sections {
+  display: grid;
+  gap: 1.5rem;
+}
+.route-section {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .route-page {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+  .route-sections {
+    gap: 2rem;
+  }
+  .route-casting-container > main {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+}

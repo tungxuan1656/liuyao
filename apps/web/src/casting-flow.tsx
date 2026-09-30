@@ -1,14 +1,9 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
-import {
-  appendAutomaticToss,
-  calculateReading,
-  normalizeDirectInput,
-  normalizeSequentialInput,
-} from '@liuyao/core';
+import { useEffect, useRef, useState } from 'react';
+import { calculateReading, normalizeDirectInput, normalizeSequentialInput } from '@liuyao/core';
 import { useBlocker, useNavigate } from 'react-router-dom';
 import { ROUTES } from './route-paths';
-import { createBrowserCastingService } from './lib/browser-coin-source';
 import { useReadingSession } from './reading-session';
+import { useAutomaticToss } from './use-automatic-toss';
 import { AutomaticCastingPanel } from './automatic-casting-panel';
 import { DirectCastingPanel } from './direct-casting-panel';
 import { ManualCastingPanel } from './manual-casting-panel';
@@ -25,19 +20,13 @@ export function CastingFlow() {
   const isLeavingAfterDiscard = useRef(false);
   const [resetLines, setResetLines] = useState(false);
   const [discard, setDiscard] = useState(false);
-  const [isTossAnimating, setIsTossAnimating] = useState(false);
-  const isTossing = useRef(false);
+  const automaticToss = useAutomaticToss(draft, setDraft, setError);
   const lines = draft?.lines ?? [];
   const hasInput =
     lines.length > 0 || (draft?.tosses?.length ?? 0) > 0 || (draft?.manualTosses?.length ?? 0) > 0;
   const blocker = useBlocker(
     () => hasInput && !isCompleting.current && !isLeavingAfterDiscard.current,
   );
-
-  const clearTossAnimation = useCallback(() => {
-    isTossing.current = false;
-    setIsTossAnimating(false);
-  }, []);
 
   useEffect(() => {
     if (!hasInput) return;
@@ -94,7 +83,7 @@ export function CastingFlow() {
   }
 
   function discardAndGoHome() {
-    clearTossAnimation();
+    automaticToss.cancelAnimation();
     setDraft(null);
     setDiscard(false);
     if (blocker.state === 'blocked') blocker.proceed();
@@ -104,40 +93,19 @@ export function CastingFlow() {
     }
   }
 
-  function castAutomaticLine() {
-    if (
-      isTossing.current ||
-      !draft ||
-      draft.method !== 'automatic' ||
-      draft.step !== (draft.tosses?.length ?? 0) ||
-      (draft.tosses?.length ?? 0) >= 6
-    ) {
-      return;
-    }
-    isTossing.current = true;
-    try {
-      const toss = createBrowserCastingService().toss(draft.coinMethod);
-      const tosses = appendAutomaticToss(draft.tosses ?? [], toss);
-      setDraft({
-        ...draft,
-        tosses,
-        lines: [...lines, toss.line],
-        step: Math.min(tosses.length - 1, 5),
-      });
-      setError('');
-      setIsTossAnimating(true);
-    } catch {
-      clearTossAnimation();
-      setError('Không thể gieo tự động an toàn trên trình duyệt này. Hãy chọn phương pháp khác.');
-    }
-  }
-
   if (!draft) {
     return (
-      <main className="reading-page">
-        <h1>Lập quẻ mới</h1>
-        <p role="status">Chọn một phương pháp để bắt đầu.</p>
-        <Button type="button" onClick={() => navigate(ROUTES.home)}>
+      <main className="flex flex-col items-center justify-center min-h-[50vh] gap-6 text-center">
+        <h1 className="text-3xl font-medium text-neutral-900 tracking-tight">Lập quẻ mới</h1>
+        <p className="text-neutral-500" role="status">
+          Chọn một phương pháp để bắt đầu.
+        </p>
+        <Button
+          type="button"
+          variant="outline"
+          className="rounded-none border-neutral-200 hover:bg-neutral-100"
+          onClick={() => navigate(ROUTES.home)}
+        >
           Quay lại trang gieo quẻ
         </Button>
       </main>
@@ -146,20 +114,20 @@ export function CastingFlow() {
 
   const direct = draft.method === 'direct';
   const step = Math.min(draft.step, 5);
+  const animationGeneration = automaticToss.animationGeneration;
   return (
-    <main
-      className={`reading-page casting-page${draft.method === 'automatic' ? ' automatic-casting-page' : ''}`}
-    >
-      <header className="flow-header">
+    <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 pt-4 pb-6 text-foreground md:gap-8 md:px-6 md:pt-6 md:pb-8">
+      <header className="-mb-2 flex items-center gap-2 text-neutral-500">
         <Button
           type="button"
           variant="ghost"
-          className="casting-cancel-action"
+          className="p-0 h-auto font-normal text-neutral-900 bg-transparent border-0 hover:bg-transparent"
           onClick={cancelFlow}
         >
           Hủy
         </Button>
-        <p>
+        <span>/</span>
+        <p className="text-sm">
           {direct
             ? 'Nhập trực tiếp'
             : draft.method === 'automatic'
@@ -167,34 +135,38 @@ export function CastingFlow() {
               : 'Gieo thủ công'}
         </p>
       </header>
-      <h1>
-        {direct
-          ? 'Nhập sáu hào'
-          : draft.method === 'automatic'
-            ? 'Gieo quẻ'
-            : `Hào ${step + 1} trên 6`}
-      </h1>
-      {draft.question && (
-        <p className="question-summary">Câu hỏi (chỉ trong phiên này): {draft.question}</p>
-      )}
+      <div className="grid gap-2">
+        <h1 className="text-[clamp(2rem,4vw,2.8rem)] font-medium tracking-tight">
+          {direct
+            ? 'Nhập sáu hào'
+            : draft.method === 'automatic'
+              ? 'Gieo quẻ'
+              : `Hào ${step + 1} trên 6`}
+        </h1>
+        {draft.question && (
+          <p className="text-sm md:text-base text-neutral-600">
+            Câu hỏi (chỉ trong phiên này): {draft.question}
+          </p>
+        )}
+      </div>
       {draft.method === 'automatic' ? (
         <AutomaticCastingPanel
           step={step}
           tosses={draft.tosses ?? []}
           method={draft.coinMethod}
-          busy={isTossAnimating}
-          onAnimationComplete={clearTossAnimation}
+          busy={automaticToss.isTossAnimating}
+          onAnimationComplete={() => automaticToss.clearAnimation(animationGeneration)}
           onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
           onBack={() => setDraft({ ...draft, step: step - 1 })}
-          onNext={() => setDraft({ ...draft, step: step + 1 })}
-          onToss={castAutomaticLine}
+          onNext={automaticToss.advance}
+          onToss={() => automaticToss.cast()}
           onFinish={() => finish(lines)}
         />
       ) : direct ? (
         <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
       ) : (
         <>
-          <section className="manual-casting-workspace" aria-label="Gieo thủ công">
+          <section className="grid gap-4" aria-label="Gieo thủ công">
             <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
             <ManualCastingActions
               step={step}
@@ -206,34 +178,36 @@ export function CastingFlow() {
           </section>
         </>
       )}
-      <Button
-        type="button"
-        variant="outline"
-        className="secondary-action casting-reset-action"
-        onClick={() => {
-          if (hasInput) setResetLines(true);
-          else if (draft) {
-            clearTossAnimation();
-            setDraft({
-              ...draft,
-              lines: [],
-              step: 0,
-              tosses: [],
-              manualTosses: [],
-              manualConfirmed: [],
-              manualPreviewLines: [],
-            });
-          }
-          setError('');
-        }}
-      >
-        Xóa các hào
-      </Button>
-      {error && (
-        <p className="error-message" role="alert">
-          {error}
-        </p>
-      )}
+      <div className="grid justify-items-center gap-2">
+        <Button
+          type="button"
+          variant="ghost"
+          className="self-center w-auto text-sm text-neutral-500 hover:text-neutral-900 border-0 bg-transparent hover:bg-transparent"
+          onClick={() => {
+            if (hasInput) setResetLines(true);
+            else if (draft) {
+              automaticToss.cancelAnimation();
+              setDraft({
+                ...draft,
+                lines: [],
+                step: 0,
+                tosses: [],
+                manualTosses: [],
+                manualConfirmed: [],
+                manualPreviewLines: [],
+              });
+            }
+            setError('');
+          }}
+        >
+          Xóa các hào
+        </Button>
+        {error && (
+          <p className="text-red-500 text-center" role="alert">
+            {error}
+          </p>
+        )}
+      </div>
       <CastingFlowDialogs
         resetLines={resetLines}
         discard={discard}
@@ -241,7 +215,7 @@ export function CastingFlow() {
         isBlocked={blocker.state === 'blocked'}
         onResetCancel={() => setResetLines(false)}
         onResetConfirm={() => {
-          clearTossAnimation();
+          automaticToss.cancelAnimation();
           if (draft)
             setDraft({
               ...draft,

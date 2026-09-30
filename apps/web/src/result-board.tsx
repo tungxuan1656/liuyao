@@ -27,13 +27,15 @@ export function HexagramBoard({
   const changedId = changed ? result.changedHexagramId : null;
   return (
     <section
-      className={`hexagram-panel${changed ? ' changed-panel' : ''}`}
+      className={`min-w-0 border border-border bg-card p-4 sm:p-6 ${changed ? 'bg-muted/40' : ''}`}
       aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'}
     >
-      <div className="hexagram-heading">
+      <div className="mb-2 flex items-start justify-between gap-2 border-b border-border pb-2">
         <div>
-          <p className="result-kicker">{changed ? 'Sau khi đổi hào động' : 'Quẻ chính'}</p>
-          <h2>
+          <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-1">
+            {changed ? 'Sau khi đổi hào động' : 'Quẻ chính'}
+          </p>
+          <h2 className="text-lg font-medium m-0">
             {changed
               ? changedId
                 ? hexagramLabel(changedId)
@@ -41,30 +43,38 @@ export function HexagramBoard({
               : hexagramLabel(result.primaryHexagramId)}
           </h2>
         </div>
-        <span className="hexagram-number">
+        <span className="text-xl text-neutral-400 font-serif">
           {changed
             ? (changedId?.replace('hexagram-', '') ?? '—')
             : result.primaryHexagramId.replace('hexagram-', '')}
         </span>
       </div>
-      <div className="trigram-pair">
+      <div className="flex flex-wrap gap-2 py-1 mb-2">
         {changed ? (
           <>
             <Link
-              className="fact-link"
+              className="flex-1 min-w-[130px] min-h-[44px] inline-flex items-center justify-between gap-1 px-2 py-1 text-xs text-neutral-500 hover:text-neutral-900 border-b border-dotted border-neutral-300 hover:border-solid hover:border-neutral-900 transition-all"
               to={ROUTES.libraryDetail('trigram', trigramIds?.upper ?? result.upperTrigramId)}
             >
               <span>Ngoại quái</span>
-              <strong>{trigramLabel(trigramIds?.upper ?? result.upperTrigramId)}</strong>
-              <span aria-hidden="true">↗</span>
+              <strong className="text-neutral-900 text-right font-semibold">
+                {trigramLabel(trigramIds?.upper ?? result.upperTrigramId)}
+              </strong>
+              <span aria-hidden="true" className="text-[0.7rem] text-neutral-400">
+                ↗
+              </span>
             </Link>
             <Link
-              className="fact-link"
+              className="flex-1 min-w-[130px] min-h-[44px] inline-flex items-center justify-between gap-1 px-2 py-1 text-xs text-neutral-500 hover:text-neutral-900 border-b border-dotted border-neutral-300 hover:border-solid hover:border-neutral-900 transition-all"
               to={ROUTES.libraryDetail('trigram', trigramIds?.lower ?? result.lowerTrigramId)}
             >
               <span>Nội quái</span>
-              <strong>{trigramLabel(trigramIds?.lower ?? result.lowerTrigramId)}</strong>
-              <span aria-hidden="true">↗</span>
+              <strong className="text-neutral-900 text-right font-semibold">
+                {trigramLabel(trigramIds?.lower ?? result.lowerTrigramId)}
+              </strong>
+              <span aria-hidden="true" className="text-[0.7rem] text-neutral-400">
+                ↗
+              </span>
             </Link>
           </>
         ) : (
@@ -91,19 +101,21 @@ export function HexagramBoard({
         )}
       </div>
       {changed && changedId && (
-        <FactButton
-          fact={{
-            id: 'result.changedHexagramId',
-            label: 'Quẻ biến',
-            value: hexagramLabel(changedId),
-            libraryTarget: { kind: 'hexagram', id: changedId },
-          }}
-          onSelect={select}
-        />
+        <div className="mb-2">
+          <FactButton
+            fact={{
+              id: 'result.changedHexagramId',
+              label: 'Quẻ biến',
+              value: hexagramLabel(changedId),
+              libraryTarget: { kind: 'hexagram', id: changedId },
+            }}
+            onSelect={select}
+          />
+        </div>
       )}
       {changed ? (
         <ol
-          className="hexagram-lines"
+          className="result-board-lines flex flex-col gap-1 my-3 p-0 list-none"
           aria-label="Tính âm dương sau biến đổi; hào sáu ở trên, hào một ở dưới"
         >
           {lines.map(line => {
@@ -113,30 +125,48 @@ export function HexagramBoard({
                 : 'yin'
               : line.polarity;
             return (
-              <li key={line.position}>
-                <span className="line-marker" aria-hidden="true" />
-                <YaoSymbol polarity={polarity} />
-                <span className="line-note">{line.changing ? 'Đã đổi âm dương' : ''}</span>
+              <li
+                key={line.position}
+                className="min-h-12 grid grid-cols-[24px_56px_minmax(0,1fr)] items-center gap-2"
+              >
+                <span
+                  className="text-[0.6rem] font-bold text-neutral-900 text-right"
+                  aria-hidden="true"
+                />
+                <div className="text-neutral-900 flex justify-center">
+                  <YaoSymbol polarity={polarity} />
+                </div>
+                <span className="overflow-hidden text-[0.65rem] text-neutral-500 whitespace-nowrap text-ellipsis">
+                  {line.changing ? 'Đã đổi âm dương' : ''}
+                </span>
               </li>
             );
           })}
         </ol>
       ) : (
-        <ol className="hexagram-lines" aria-label="Các hào, hào sáu ở trên và hào một ở dưới">
+        <ol
+          className="result-board-lines flex flex-col gap-1 my-3 p-0 list-none"
+          aria-label="Các hào, hào sáu ở trên và hào một ở dưới"
+        >
           {lines.map(line => {
             const branch = branchName(line.naJiaBranch);
             const stem = stemName(line.naJiaStem);
             return (
-              <li key={line.position}>
-                <span className="line-marker">
+              <li
+                key={line.position}
+                className="min-h-12 grid grid-cols-[24px_56px_minmax(0,1fr)] items-center gap-2"
+              >
+                <span className="text-[0.6rem] font-bold text-neutral-900 text-right">
                   {line.position === result.shiPosition
                     ? 'Thế'
                     : line.position === result.yingPosition
                       ? 'Ứng'
                       : ''}
                 </span>
-                <YaoSymbol polarity={line.polarity} changing={line.changing} />
-                <span className="line-note">
+                <div className="flex justify-center">
+                  <YaoSymbol polarity={line.polarity} changing={line.changing} />
+                </div>
+                <span className="overflow-hidden text-[0.65rem] text-neutral-500 whitespace-nowrap text-ellipsis">
                   {stem} {branch} · {elementName(line.element)} · {relativeName(line.relative)}
                 </span>
               </li>
@@ -145,7 +175,7 @@ export function HexagramBoard({
         </ol>
       )}
       {!changed && (
-        <div className="palace-facts">
+        <div className="grid grid-cols-1 gap-2 mt-4 pt-4 border-t border-neutral-200">
           <FactButton
             fact={{
               id: 'result.palaceId',

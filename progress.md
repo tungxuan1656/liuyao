@@ -578,3 +578,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audits at 320/390/1280px verified direct-choice sizing, manual action targets, Library tabs, stable coin centers, alternating faces under normal/reduced motion, and Home mouse/keyboard navigation.
 **Blockers**: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs report sourcemap-location and >500KB chunk warnings.
 **Next**: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.
+
+## 2026-09-30 — feat-028 casting layout and flow follow-up
+
+**State**: active on `feat/028-coin-casting`; broader acceptance remains open.
+**Done**: Implemented the shared sitewide spacing contract and refined casting UI. Parent browser QA verified four-coin one-press casting from 1/6 through 6/6, revisit preserving 2/6, result navigation, and visible desktop aside. Result widths matched the viewport content widths at 320px (305px), 390px (375px), and 1280px (1265px); board rows measured 48px.
+**Evidence**: Final `./init.sh` and `git diff --check` passed with 225 package tests. After the global 320px body minimum was removed, browser checks reconfirmed no horizontal overflow on Casting and Result at 320/390/1280px; Result rows remained 48px and its desktop inspector visible.
+**Blockers**: `pnpm test:release` is absent from the current root and web package scripts; its older 17/17 result does not verify this follow-up. User preview, physical-phone motion, and remaining feature criteria are unverified; no new evidence is claimed for manual mode, three-coin, reset-mid-animation, keyboard, or reduced motion.
+**Next**: Present the updated preview, verify remaining acceptance criteria, and resolve stale release-check references before marking the feature done.

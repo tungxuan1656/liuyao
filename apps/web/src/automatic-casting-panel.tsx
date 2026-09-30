@@ -1,11 +1,10 @@
 import type { CastingMethod, CoinTossResult } from '@liuyao/core';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
-import { Separator } from './components/ui/separator';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
 import { getLinePresentation, describeLineValue } from './line-value-presentation';
 import { CoinStage } from './casting/coin-stage';
-import { coinNames } from './casting/coin-names';
+import { coinIdentities } from './casting/coin-identities';
 import { CastingHexagram } from './casting/casting-hexagram';
 import './casting/casting-workspace.css';
 
@@ -38,10 +37,14 @@ export function AutomaticCastingPanel({
   const count = method === 'three-coin' ? 3 : 4;
   const completed = Boolean(toss) && !busy;
   const final = completed && step === 5;
+  const successorExists = Boolean(tosses[step + 1]);
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
-    <Card className="automatic-casting" aria-label="Gieo từng hào">
-      <CardHeader className="casting-workspace-header">
+    <Card
+      className="flex flex-col gap-0 overflow-hidden rounded-none border border-border bg-card text-foreground shadow-none ring-0"
+      aria-label="Gieo từng hào"
+    >
+      <CardHeader className="flex flex-row items-center justify-between p-4 md:px-6 md:py-4 border-b border-border gap-4">
         <ToggleGroup
           aria-label="Số lượng đồng xu"
           value={[method]}
@@ -49,71 +52,103 @@ export function AutomaticCastingPanel({
             if (value[0]) onMethodChange(value[0] as CastingMethod);
           }}
           disabled={busy || tosses.length > 0}
-          className="casting-method-switch"
+          className="border border-border bg-background"
         >
-          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu">
+          <ToggleGroupItem
+            value="three-coin"
+            aria-label="Ba đồng xu"
+            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
+          >
             Ba đồng xu
           </ToggleGroupItem>
-          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu">
+          <ToggleGroupItem
+            value="four-coin"
+            aria-label="Bốn đồng xu"
+            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
+          >
             Bốn đồng xu
           </ToggleGroupItem>
         </ToggleGroup>
-        <span className="casting-count">{revealedCount} / 6 hào</span>
+        <span className="text-sm text-neutral-500 whitespace-nowrap">{revealedCount} / 6 hào</span>
       </CardHeader>
-      <CardContent className="casting-workspace-body">
-        <CastingHexagram
-          lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
-          step={step}
-        />
-        <section className="casting-theater" aria-label="Sân khấu gieo đồng xu">
-          <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
-          <div className="casting-copy" aria-live="polite">
+      <CardContent className="grid grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)] min-h-[360px] p-0">
+        <div className="flex flex-col justify-center border-b border-border bg-muted/30 p-4 md:border-b-0 md:border-r md:p-6">
+          <CastingHexagram
+            lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
+            step={step}
+          />
+        </div>
+        <section
+          className="relative grid min-w-0 grid-rows-[190px_80px] md:grid-rows-[300px_100px]"
+          aria-label="Sân khấu gieo đồng xu"
+        >
+          <div className="relative isolate flex h-full items-center justify-center overflow-hidden border-b border-border bg-muted/30">
+            <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
+          </div>
+          <div
+            className="grid grid-rows-1 p-4 md:px-6 md:pb-4 text-center h-[80px] md:h-[100px]"
+            aria-live="polite"
+          >
             {completed && toss ? (
-              <div className="toss-result" role="status">
-                <div className="toss-result-heading">
-                  <span>Hào {step + 1}</span>
-                  <strong data-line-value={toss.line}>{getLinePresentation(toss.line).name}</strong>
+              <div className="h-full flex flex-col items-center justify-center gap-1" role="status">
+                <div className="flex items-baseline gap-3">
+                  <span className="text-xs text-neutral-500">Hào {step + 1}</span>
+                  <strong data-line-value={toss.line} className="font-medium text-xl md:text-2xl">
+                    {getLinePresentation(toss.line).name}
+                  </strong>
                 </div>
                 <span className="sr-only">{describeLineValue(toss.line)}</span>
-                <span className="coin-evidence">
+                <span className="max-w-[370px] text-xs leading-relaxed text-neutral-500">
                   {toss.coins
                     .map(
                       (coin, index) =>
-                        `${count === 4 ? `${coinNames[index]}: ` : ''}${coin ? 'mặt trời' : 'mặt trăng'}`,
+                        `${count === 4 ? `${coinIdentities[index]?.label}: ` : ''}${coin ? 'mặt trời' : 'mặt trăng'}`,
                     )
                     .join(' · ')}
                 </span>
               </div>
             ) : (
-              <div className="casting-status-placeholder" role="status">
-                <span>Hào {step + 1}</span>
-                <p>{busy ? 'Đồng xu đang rơi…' : 'Tĩnh tâm, rồi gieo một hào.'}</p>
+              <div
+                className="h-full flex flex-col items-center justify-center gap-1 text-neutral-500"
+                role="status"
+              >
+                <span className="text-xs">Hào {step + 1}</span>
+                <p className="m-0 text-lg md:text-xl font-normal">
+                  {busy ? 'Đồng xu đang rơi…' : 'Tĩnh tâm, rồi gieo một hào.'}
+                </p>
               </div>
             )}
           </div>
         </section>
       </CardContent>
-      <Separator />
-      <CardFooter className="casting-action-bar">
+      <CardFooter className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-t border-border">
         <Button
           type="button"
           variant="ghost"
-          className="casting-back-action"
+          className="w-auto border-0 bg-transparent text-neutral-900 px-0 hover:bg-transparent"
           disabled={step === 0 || busy}
           onClick={onBack}
         >
           Quay lại
         </Button>
-        <span className="casting-action-hint">
+        <span className="hidden md:inline text-xs text-neutral-500">
           {final ? 'Sáu hào đã đủ' : 'Mỗi lần gieo, một hào thành hình'}
         </span>
         <Button
           type="button"
-          className="casting-primary-action"
+          className="min-h-11 w-36 rounded-none border border-foreground bg-foreground text-background hover:bg-background hover:text-foreground"
           disabled={busy}
           onClick={final ? onFinish : completed ? onNext : onToss}
         >
-          {busy ? 'Đang gieo…' : final ? 'Tính quẻ' : completed ? 'Tiếp theo' : 'Gieo hào'}
+          {busy
+            ? 'Đang gieo…'
+            : final
+              ? 'Tính quẻ'
+              : completed
+                ? successorExists
+                  ? 'Tiếp theo'
+                  : 'Gieo hào tiếp'
+                : 'Gieo hào'}
         </Button>
       </CardFooter>
     </Card>

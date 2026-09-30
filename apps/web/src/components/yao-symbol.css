@@ -2,31 +2,27 @@
   display: inline-grid;
   grid-template-columns: minmax(0, 1fr) 24px;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   width: 100%;
   min-width: 0;
-  height: 26px;
-  color: var(--result-ink, #29362f);
-}
-.yao-glyph {
-  color: var(--foreground, var(--result-ink, #29362f));
+  height: 24px;
+  color: var(--foreground);
 }
 .yao-strokes {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .yao-strokes i {
   display: block;
   flex: 1;
-  height: 8px;
+  height: 6px;
   background: currentColor;
 }
 .yao-marker {
   display: block;
   width: 24px;
   height: 24px;
-  border-radius: 4px;
 }
 .yao-marker svg {
   display: block;
@@ -34,17 +30,41 @@
   height: 100%;
 }
 .yao-glyph.is-moving .yao-marker {
-  background: #7f3024;
-  color: #fff8ec;
+  color: #8f2e24;
 }
 .yao-glyph.is-moving .yao-strokes {
-  color: #7f3024;
+  color: var(--foreground);
 }
-.line-choice-button .yao-glyph {
-  width: 100%;
-  max-width: 78px;
-  justify-self: center;
+
+.forming-hexagram .yao-glyph {
+  grid-template-columns: 72px 24px;
+  gap: 4px;
+  width: 100px;
+  height: 24px;
 }
-.manual-outcome .yao-glyph {
-  width: 130px;
+
+.forming-hexagram .yao-strokes {
+  width: 72px;
+  gap: 10px;
+}
+
+.forming-hexagram .yao-strokes i {
+  flex: 1;
+  width: auto;
+}
+
+.forming-hexagram .yao-marker {
+  width: 24px;
+  height: 24px;
+}
+
+.forming-hexagram-symbol {
+  display: flex;
+  width: 100px;
+  min-width: 0;
+  justify-content: flex-start;
+}
+
+.forming-hexagram .forming-hexagram-row > :last-child {
+  min-width: 0;
 }

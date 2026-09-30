@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CoinTossResult } from '@liuyao/core';
 import { CoinFace } from './coin-face';
-import { coinNames } from './coin-names';
+import { coinIdentities } from './coin-identities';
 
 type Props = {
   count: number;
@@ -53,15 +53,17 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
 
   return (
     <div
-      className={`casting-stage${busy ? ' is-casting' : ''}`}
+      className="flex items-center justify-center w-full h-full"
       aria-label={busy ? 'Đang gieo đồng xu' : 'Kết quả đồng xu'}
     >
-      <div className={`coin-grid coin-grid-${count}`}>
+      <div
+        className={`coin-arrangement ${count === 3 ? 'coin-arrangement--three' : 'coin-arrangement--four'} ${busy ? 'opacity-70' : 'opacity-100'} transition-opacity`}
+      >
         {Array.from({ length: count }, (_, index) => (
-          <div className={`stage-coin stage-coin-${index}`} key={index}>
-            <CoinFace value={faces[index] ?? 0} name={count === 4 ? coinNames[index] : undefined} />
+          <div key={index} className="coin-position flex flex-col items-center gap-1.5">
+            <CoinFace value={faces[index] ?? 0} identityIndex={count === 4 ? index : undefined} />
             {count === 4 && (
-              <span className="stage-coin-label">{['Địa', 'Thủy', 'Hỏa', 'Phong'][index]}</span>
+              <span className="text-xs text-neutral-600">{coinIdentities[index]?.label}</span>
             )}
           </div>
         ))}
