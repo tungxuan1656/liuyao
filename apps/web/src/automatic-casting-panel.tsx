@@ -19,6 +19,7 @@ type Props = {
   onToss: () => void;
   onFinish: () => void;
   onAnimationComplete: () => void;
+  onReset: () => void;
 };
 
 export function AutomaticCastingPanel({
@@ -32,6 +33,7 @@ export function AutomaticCastingPanel({
   onToss,
   onFinish,
   onAnimationComplete,
+  onReset,
 }: Props) {
   const toss = tosses[step];
   const count = method === 'three-coin' ? 3 : 4;
@@ -40,11 +42,8 @@ export function AutomaticCastingPanel({
   const successorExists = Boolean(tosses[step + 1]);
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
-    <Card
-      className="flex flex-col gap-0 overflow-hidden rounded-none border border-border bg-card text-foreground shadow-none ring-0"
-      aria-label="Gieo từng hào"
-    >
-      <CardHeader className="flex flex-row items-center justify-between p-4 md:px-6 md:py-4 border-b border-border gap-4">
+    <Card className="casting-workspace" aria-label="Gieo từng hào">
+      <CardHeader className="casting-workspace-header">
         <ToggleGroup
           aria-label="Số lượng đồng xu"
           value={[method]}
@@ -71,26 +70,23 @@ export function AutomaticCastingPanel({
         </ToggleGroup>
         <span className="text-sm text-neutral-500 whitespace-nowrap">{revealedCount} / 6 hào</span>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)] min-h-[360px] p-0">
-        <div className="flex flex-col justify-center border-b border-border bg-muted/30 p-4 md:border-b-0 md:border-r md:p-6">
+      <CardContent className="casting-workspace-content">
+        <div className="casting-hexagram-column">
           <CastingHexagram
             lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
             step={step}
           />
         </div>
-        <section
-          className="relative grid min-w-0 grid-rows-[190px_80px] md:grid-rows-[300px_100px]"
-          aria-label="Sân khấu gieo đồng xu"
-        >
-          <div className="relative isolate flex h-full items-center justify-center overflow-hidden border-b border-border bg-muted/30">
+        <section className="casting-coin-workspace-stage" aria-label="Sân khấu gieo đồng xu">
+          <div className="casting-coin-stage">
             <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
           </div>
-          <div
-            className="grid grid-rows-1 p-4 md:px-6 md:pb-4 text-center h-[80px] md:h-[100px]"
-            aria-live="polite"
-          >
+          <div className="casting-result-region" aria-live="polite">
             {completed && toss ? (
-              <div className="h-full flex flex-col items-center justify-center gap-1" role="status">
+              <div
+                className="flex h-full flex-col items-center justify-center gap-1 overflow-hidden"
+                role="status"
+              >
                 <div className="flex items-baseline gap-3">
                   <span className="text-xs text-neutral-500">Hào {step + 1}</span>
                   <strong data-line-value={toss.line} className="font-medium text-xl md:text-2xl">
@@ -98,7 +94,7 @@ export function AutomaticCastingPanel({
                   </strong>
                 </div>
                 <span className="sr-only">{describeLineValue(toss.line)}</span>
-                <span className="max-w-[370px] text-xs leading-relaxed text-neutral-500">
+                <span className="max-w-92.5 text-xs leading-snug text-neutral-500">
                   {toss.coins
                     .map(
                       (coin, index) =>
@@ -121,35 +117,36 @@ export function AutomaticCastingPanel({
           </div>
         </section>
       </CardContent>
-      <CardFooter className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-t border-border">
+      <CardFooter className="casting-workspace-footer">
         <Button
           type="button"
           variant="ghost"
-          className="w-auto border-0 bg-transparent text-neutral-900 px-0 hover:bg-transparent"
+          size={'sm'}
           disabled={step === 0 || busy}
           onClick={onBack}
         >
           Quay lại
         </Button>
-        <span className="hidden md:inline text-xs text-neutral-500">
-          {final ? 'Sáu hào đã đủ' : 'Mỗi lần gieo, một hào thành hình'}
-        </span>
-        <Button
-          type="button"
-          className="min-h-11 w-36 rounded-none border border-foreground bg-foreground text-background hover:bg-background hover:text-foreground"
-          disabled={busy}
-          onClick={final ? onFinish : completed ? onNext : onToss}
-        >
-          {busy
-            ? 'Đang gieo…'
-            : final
-              ? 'Tính quẻ'
-              : completed
-                ? successorExists
-                  ? 'Tiếp theo'
-                  : 'Gieo hào tiếp'
-                : 'Gieo hào'}
-        </Button>
+        <div className="flex gap-4">
+          <Button type="button" variant="ghost" size={'sm'} onClick={onReset}>
+            Xóa các hào
+          </Button>
+          <Button
+            type="button"
+            disabled={busy}
+            onClick={final ? onFinish : completed ? onNext : onToss}
+          >
+            {busy
+              ? 'Đang gieo…'
+              : final
+                ? 'Tính quẻ'
+                : completed
+                  ? successorExists
+                    ? 'Tiếp theo'
+                    : 'Gieo hào tiếp'
+                  : 'Gieo hào'}
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );

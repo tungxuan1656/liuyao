@@ -187,7 +187,7 @@ Used during active line input before calculation. Governed by the rules in `read
     - Chỉ báo bước: `Hào 1 trên 6` đến `Hào 6 trên 6`.
     - Bottom-to-top sequence.
     - Có nút `[ Quay lại ]` để về hào trước mà không xóa dữ liệu đã nhập.
-    - **Intended replacement:** Automatic and manual modes share a neutral `Card` workspace and the same coin arrangement.
+    - **Intended replacement:** Automatic and manual modes share one neutral `Card` workspace composition: the same route heading, card header, forming-hexagram column, coin stage, result region, action bar, and reset placement. Do not give manual mode a separate step heading, nested card, boxed coin buttons, or detached navigation card.
     - The header contains a single-select `ToggleGroup` for three/four coins and the completed-line count. Existing draft rules control when selection is locked.
     - Desktop places the forming hexagram beside the coin area. Mobile stacks the compact hexagram above the coins.
     - Fill slots from bottom to top. Each position reserves columns for its number, line geometry, moving marker, and canonical name. Keep completed strokes high contrast, including moving lines; keep the marker outside the line strokes. Empty slots use a quiet placeholder distinct from completed yang lines, with the current empty slot distinguishable from later slots.
@@ -203,8 +203,8 @@ Used during active line input before calculation. Governed by the rules in `read
     - Keep each coin center, the stage height, the result region, and the action bar stationary throughout the flip and reveal.
     - Keep the stage and result region compact but stable across states: waiting, flipping, revealed, and revisiting a saved line. Do not use a tall, empty desktop stage as the default visual composition.
     - Explicit tosses animate under reduced-motion preferences. Reset, cancel, or unmount cancels completion. Revisits show stored faces without replay.
-    - Manual coins use shadcn `Button` controls. Each activation flips one face to match a physical toss. Manual input never generates random faces.
-    - Manual confirmation records the line. The shared hexagram shows confirmed lines, while the current preview remains separate.
+    - Manual coins use shadcn `Button` controls with the same 64px faces, centers, labels, and surrounding stage as automatic coins. Each activation flips one face to match a physical toss; the click target and focus state remain clear without boxing the coin and label. Manual input never generates random faces.
+    - Manual confirmation appears in the shared action bar, at the position of automatic `[ Gieo hào ]`. Before confirmation, the current line preview appears in the shared result region and remains editable. Confirmation locks its coin faces and records the line in the forming hexagram. Back/next navigation preserves confirmed lines; the reset confirmation clears them.
     - **Visual acceptance:** Review the actual flip, Unicode readability, both coin arrangements, and final outcomes on desktop and mobile.
     - The action bar labels the first toss `[ Gieo hào ]`, the next uncast toss `[ Gieo hào tiếp ]`, saved-line navigation `[ Tiếp theo ]`, and completion `[ Tính quẻ ]`. `reading-flow.md` owns their transitions and evidence preservation.
   - **Direct-entry mode**:

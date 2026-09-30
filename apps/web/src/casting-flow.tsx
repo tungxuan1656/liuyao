@@ -9,7 +9,6 @@ import { DirectCastingPanel } from './direct-casting-panel';
 import { ManualCastingPanel } from './manual-casting-panel';
 import { CastingFlowDialogs } from './casting-flow-dialogs';
 import { Button } from './components/ui/button';
-import { ManualCastingActions } from './manual-casting-actions';
 
 export function CastingFlow() {
   const navigate = useNavigate();
@@ -82,6 +81,26 @@ export function CastingFlow() {
     }
   }
 
+  function resetCasting() {
+    if (hasInput) {
+      setResetLines(true);
+      return;
+    }
+    automaticToss.cancelAnimation();
+    if (draft) {
+      setDraft({
+        ...draft,
+        lines: [],
+        step: 0,
+        tosses: [],
+        manualTosses: [],
+        manualConfirmed: [],
+        manualPreviewLines: [],
+      });
+    }
+    setError('');
+  }
+
   function discardAndGoHome() {
     automaticToss.cancelAnimation();
     setDraft(null);
@@ -137,11 +156,7 @@ export function CastingFlow() {
       </header>
       <div className="grid gap-2">
         <h1 className="text-[clamp(2rem,4vw,2.8rem)] font-medium tracking-tight">
-          {direct
-            ? 'Nhập sáu hào'
-            : draft.method === 'automatic'
-              ? 'Gieo quẻ'
-              : `Hào ${step + 1} trên 6`}
+          {direct ? 'Nhập sáu hào' : draft.method === 'automatic' ? 'Gieo quẻ' : 'Gieo quẻ'}
         </h1>
         {draft.question && (
           <p className="text-sm md:text-base text-neutral-600">
@@ -161,53 +176,38 @@ export function CastingFlow() {
           onNext={automaticToss.advance}
           onToss={() => automaticToss.cast()}
           onFinish={() => finish(lines)}
+          onReset={resetCasting}
         />
       ) : direct ? (
         <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
       ) : (
-        <>
-          <section className="grid gap-4" aria-label="Gieo thủ công">
-            <ManualCastingPanel draft={draft} step={step} setDraft={setDraft} />
-            <ManualCastingActions
-              step={step}
-              lines={lines}
-              onBack={() => setDraft({ ...draft, step: step - 1 })}
-              onNext={() => setDraft({ ...draft, step: step + 1 })}
-              onFinish={() => finish(lines)}
-            />
-          </section>
-        </>
+        <ManualCastingPanel
+          draft={draft}
+          step={step}
+          setDraft={setDraft}
+          onBack={() => setDraft({ ...draft, step: step - 1 })}
+          onNext={() => setDraft({ ...draft, step: step + 1 })}
+          onFinish={() => finish(lines)}
+          onReset={resetCasting}
+        />
       )}
-      <div className="grid justify-items-center gap-2">
-        <Button
-          type="button"
-          variant="ghost"
-          className="self-center w-auto text-sm text-neutral-500 hover:text-neutral-900 border-0 bg-transparent hover:bg-transparent"
-          onClick={() => {
-            if (hasInput) setResetLines(true);
-            else if (draft) {
-              automaticToss.cancelAnimation();
-              setDraft({
-                ...draft,
-                lines: [],
-                step: 0,
-                tosses: [],
-                manualTosses: [],
-                manualConfirmed: [],
-                manualPreviewLines: [],
-              });
-            }
-            setError('');
-          }}
-        >
-          Xóa các hào
-        </Button>
-        {error && (
-          <p className="text-red-500 text-center" role="alert">
-            {error}
-          </p>
-        )}
-      </div>
+      {direct && (
+        <div className="grid justify-items-center gap-2">
+          <Button
+            type="button"
+            variant="ghost"
+            className="text-sm text-neutral-500"
+            onClick={resetCasting}
+          >
+            Xóa các hào
+          </Button>
+        </div>
+      )}
+      {error && (
+        <p className="text-red-500 text-center" role="alert">
+          {error}
+        </p>
+      )}
       <CastingFlowDialogs
         resetLines={resetLines}
         discard={discard}

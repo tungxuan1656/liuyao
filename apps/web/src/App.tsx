@@ -123,7 +123,7 @@ export default function App() {
             <CardTitle>Gieo quẻ mới</CardTitle>
             <CardDescription>Đặt câu hỏi và chọn cách lập quẻ.</CardDescription>
           </CardHeader>
-          <CardContent className="pt-6">
+          <CardContent>
             <FieldGroup>
               {/* Question field */}
               <Field>
@@ -168,10 +168,8 @@ export default function App() {
                   {methods.map(({ value, label, detail }) => (
                     <FieldLabel
                       key={value}
-                      className={`flex-row items-center gap-3 px-4 py-3.5 cursor-pointer transition-colors w-full ${
-                        entryMethod === value
-                          ? 'bg-secondary text-foreground'
-                          : 'border-b border-border hover:bg-muted/60'
+                      className={`flex-row items-center gap-3 px-4 border-b-0! last:border-b! cursor-pointer transition-colors w-full ${
+                        entryMethod === value ? 'bg-secondary text-foreground' : 'hover:bg-muted/60'
                       }`}
                     >
                       <Field orientation="horizontal" className="gap-3 w-full">

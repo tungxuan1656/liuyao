@@ -13,7 +13,7 @@ Deliver a consistent Base UI interface with simple three-/four-coin casting and 
 
 ## Acceptance
 
-- [ ] Manual mode lets users set each individual coin to match a physical toss, confirms each line, and preserves completed lines on revisit unless explicitly reset.
+- [x] Manual mode lets users set each individual coin to match a physical toss, confirms each line, and preserves completed lines on revisit unless explicitly reset.
 - [x] Three- and four-coin line values and distributions match `reading-flow.md`.
 - [x] Automatic outcomes are generated before animation, revealed without changing, and cannot be retriggered while animating.
 - [x] Preset and Base UI configuration match `ui-layout.md` across all web routes.
@@ -35,7 +35,7 @@ Deliver a consistent Base UI interface with simple three-/four-coin casting and 
 
 ## Handoff
 
-- State: active on `feat/028-coin-casting`; implementation and broader acceptance remain in progress.
-- Evidence: Final `./init.sh` and `git diff --check` passed; the earlier progress record reports a 17/17 release-scenario run before this follow-up. Browser QA verified four-coin casting from 1/6 through 6/6 with one-press next, revisit preserving 2/6, and result navigation. On the final CSS, Casting and Result had no horizontal overflow at 320px, 390px, or 1280px; Result board rows were 48px and its desktop inspector remained visible. Sitewide spacing and casting UI follow `docs/product-specs/ui-layout.md` and `docs/product-specs/reading-flow.md`.
-- Limits: `pnpm test:release` is absent from the current root and web package scripts, so its old evidence does not verify this follow-up. User preview, physical-phone motion, and broader feat-028 criteria remain unverified. Do not infer manual mode, three-coin, reset-mid-animation, keyboard, or reduced-motion acceptance from the new browser evidence. Earlier evidence remains recorded in `progress.md`.
-- Next: Review the updated preview and verify remaining acceptance criteria; resolve the stale release-check references before declaring the feature done.
+- State: active; manual and automatic casting share the workspace. Broader acceptance remains open.
+- Evidence: Final `./init.sh` and `git diff --check` passed. Browser QA at 320px completed six manual lines, revisited locked faces, reset through confirmation, and opened the result. The shared footer stayed at one vertical position across waiting, animation, reveal, and six-line manual completion; reset and primary actions fit at 320px and 390px. An explicit automatic toss remained busy under emulated reduced motion, then revealed one saved result. A completed reading survived in-app navigation and cleared after confirmed “Lập mới.”
+- Limits: `pnpm test:release` is absent from root and web scripts. User preview, physical-phone motion, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and complete desktop/mobile flip review remain unverified.
+- Next: Review the preview and verify the remaining visual, assistive-technology, and session-boundary criteria before marking the feature done.

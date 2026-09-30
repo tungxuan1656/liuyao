@@ -586,3 +586,19 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Final `./init.sh` and `git diff --check` passed with 225 package tests. After the global 320px body minimum was removed, browser checks reconfirmed no horizontal overflow on Casting and Result at 320/390/1280px; Result rows remained 48px and its desktop inspector visible.
 **Blockers**: `pnpm test:release` is absent from the current root and web package scripts; its older 17/17 result does not verify this follow-up. User preview, physical-phone motion, and remaining feature criteria are unverified; no new evidence is claimed for manual mode, three-coin, reset-mid-animation, keyboard, or reduced motion.
 **Next**: Present the updated preview, verify remaining acceptance criteria, and resolve stale release-check references before marking the feature done.
+
+## 2026-09-30 — feat-028 shared manual casting workspace
+
+**Result**: Manual and automatic casting now share the same card structure, coin arrangement, result region, and action bar. Manual coins remain individually editable until confirmation; confirmed lines remain locked on revisit. The obsolete detached manual action card was removed.
+
+**Evidence**: `./init.sh` and `git diff --check` passed. Desktop browser review verified the shared layout; at 320px and 390px, four-coin manual casting had no horizontal overflow and preserved clearance for focus outlines. Browser interaction verified selection, confirmation, and next-line navigation.
+
+**Remaining**: User preview and the other unchecked feat-028 acceptance criteria still need verification. Do not mark the feature done from this UI follow-up alone.
+
+## 2026-09-30 — feat-028 shared footer and state review
+
+**Result**: Moved reset into both sequential workspaces. Fixed clipped mobile actions and vertical footer movement when a line appears. Kept direct-entry reset separate.
+
+**Evidence**: Final `./init.sh` and `git diff --check` passed. Browser QA at 320px completed six manual lines and opened Result; a confirmed line retained its faces on revisit. Reset required confirmation after input and cleared all lines. At 320px and 390px, all footer buttons fit the Card. At 320px the footer stayed at the same vertical position through automatic waiting, reduced-motion toss, reveal, and manual six-line completion. A completed result survived Library-to-Home navigation and was removed by confirmed “Lập mới.” Keyboard Space flipped a focused coin; Tab exposed its focus outline.
+
+**Remaining**: User preview, physical-phone motion, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and full visual flip review. Keep feat-028 active.
