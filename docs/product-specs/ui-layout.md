@@ -94,6 +94,7 @@ Use Noto Serif for page headings and hexagram names. Use Noto Sans for card titl
   - **Old Yin / 6**: `✕` — Yin changing to Yang.
   - **Old Yang / 9**: `○` — Yang changing to Yin.
   - Keep the marker beside the stroke in a reserved column. Do not put either marker in a solid black square or weaken the completed line's strokes to emphasize the marker.
+- **Forming hexagram geometry (`/casting`)**: Keep six compact rows with fixed columns for the position number, symbol, and canonical line name. Give every completed line a 72px-wide stroke area and a 6px stroke height; split yin into equal segments with a visible 10px center gap. Reserve a 24px marker column immediately after the strokes with a 4px gap, including on static lines, so the stroke length never changes when a moving marker appears. Align every row's number, stroke, marker, and name on the same baseline at mobile and desktop widths. Preserve the existing row order, value-to-symbol mapping, accessible labels, and quiet empty-line placeholders. Limit geometry overrides to the forming hexagram; other `<YaoSymbol>` usages must not acquire a wider line or narrower marker spacing by accident.
 
 ---
 

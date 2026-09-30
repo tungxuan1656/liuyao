@@ -4,8 +4,9 @@ import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card'
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
 import { getLinePresentation, describeLineValue } from './line-value-presentation';
 import { CoinStage } from './casting/coin-stage';
-import { coinNames } from './casting/coin-names';
+import { coinIdentities } from './casting/coin-identities';
 import { CastingHexagram } from './casting/casting-hexagram';
+import './casting/casting-workspace.css';
 
 type Props = {
   step: number;
@@ -36,13 +37,14 @@ export function AutomaticCastingPanel({
   const count = method === 'three-coin' ? 3 : 4;
   const completed = Boolean(toss) && !busy;
   const final = completed && step === 5;
+  const successorExists = Boolean(tosses[step + 1]);
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
     <Card
       className="flex flex-col gap-0 overflow-hidden rounded-none border border-border bg-card text-foreground shadow-none ring-0"
       aria-label="Gieo từng hào"
     >
-      <CardHeader className="flex flex-row items-center justify-between p-4 md:px-7 md:py-5 border-b border-border gap-4">
+      <CardHeader className="flex flex-row items-center justify-between p-4 md:px-6 md:py-4 border-b border-border gap-4">
         <ToggleGroup
           aria-label="Số lượng đồng xu"
           value={[method]}
@@ -69,8 +71,8 @@ export function AutomaticCastingPanel({
         </ToggleGroup>
         <span className="text-sm text-neutral-500 whitespace-nowrap">{revealedCount} / 6 hào</span>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)] min-h-[400px] p-0">
-        <div className="flex flex-col justify-center border-b border-border bg-muted/30 p-4 md:border-b-0 md:border-r md:p-8 md:pr-6">
+      <CardContent className="grid grid-cols-1 md:grid-cols-[35%_minmax(0,1fr)] min-h-[360px] p-0">
+        <div className="flex flex-col justify-center border-b border-border bg-muted/30 p-4 md:border-b-0 md:border-r md:p-6">
           <CastingHexagram
             lines={tosses.map((toss, index) => (busy && index === step ? undefined : toss.line))}
             step={step}
@@ -100,7 +102,7 @@ export function AutomaticCastingPanel({
                   {toss.coins
                     .map(
                       (coin, index) =>
-                        `${count === 4 ? `${coinNames[index]}: ` : ''}${coin ? 'mặt trời' : 'mặt trăng'}`,
+                        `${count === 4 ? `${coinIdentities[index]?.label}: ` : ''}${coin ? 'mặt trời' : 'mặt trăng'}`,
                     )
                     .join(' · ')}
                 </span>
@@ -138,7 +140,15 @@ export function AutomaticCastingPanel({
           disabled={busy}
           onClick={final ? onFinish : completed ? onNext : onToss}
         >
-          {busy ? 'Đang gieo…' : final ? 'Tính quẻ' : completed ? 'Tiếp theo' : 'Gieo hào'}
+          {busy
+            ? 'Đang gieo…'
+            : final
+              ? 'Tính quẻ'
+              : completed
+                ? successorExists
+                  ? 'Tiếp theo'
+                  : 'Gieo hào tiếp'
+                : 'Gieo hào'}
         </Button>
       </CardFooter>
     </Card>

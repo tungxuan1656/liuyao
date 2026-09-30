@@ -1,0 +1,42 @@
+.coin-arrangement {
+  --coin-size: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(var(--coin-size), 1fr));
+  align-items: center;
+  justify-items: center;
+  width: min(100%, 22rem);
+  margin-inline: auto;
+}
+
+.coin-arrangement--four .coin-position {
+  grid-column: auto;
+}
+.coin-arrangement--three .coin-position:first-child {
+  grid-column: 1 / -1;
+}
+
+.coin-face {
+  color: #35424a;
+  border-color: #75828a;
+  background: #fff;
+}
+.coin-face--identified {
+  color: var(--coin-ink);
+  border-color: var(--coin-dark);
+  background: var(--coin-light);
+}
+.coin-face--identified.coin-face--heads {
+  background: var(--coin-color);
+  color: var(--coin-ink);
+}
+.coin-face--identified.coin-face--tails {
+  background: var(--coin-light);
+  color: var(--coin-ink);
+}
+
+@media (min-width: 768px) {
+  .coin-arrangement {
+    --coin-size: 5rem;
+    gap: 1.25rem;
+  }
+}

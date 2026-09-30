@@ -14,7 +14,10 @@ export function CastingHexagram({
       <h2 className="text-xs font-medium text-neutral-500 tracking-wide uppercase">
         Quẻ đang hình thành
       </h2>
-      <ol className="flex flex-col-reverse gap-2" aria-label="Hào sáu ở trên, hào một ở dưới">
+      <ol
+        className="forming-hexagram flex flex-col-reverse gap-1.5"
+        aria-label="Hào sáu ở trên, hào một ở dưới"
+      >
         {[0, 1, 2, 3, 4, 5].map(index => {
           const value = lines[index];
           const yang = value === 7 || value === 9;
@@ -22,13 +25,13 @@ export function CastingHexagram({
           return (
             <li
               key={index}
-              className={`flex items-center gap-3 py-1 transition-opacity ${
+              className={`forming-hexagram-row grid grid-cols-[24px_100px_minmax(0,1fr)] items-center gap-3 py-1 transition-opacity ${
                 value === undefined && !isCurrent ? 'opacity-30' : 'opacity-100'
               }`}
               aria-current={isCurrent ? 'step' : undefined}
             >
               <span
-                className={`w-4 text-center text-[11px] shrink-0 font-medium ${
+                className={`w-6 text-center text-[11px] shrink-0 font-medium ${
                   isCurrent ? 'text-neutral-900' : 'text-neutral-400'
                 }`}
                 aria-hidden="true"
@@ -36,7 +39,7 @@ export function CastingHexagram({
                 {index + 1}
                 <span className="sr-only">. Hào {index + 1}</span>
               </span>
-              <div className="w-20 shrink-0">
+              <div className="forming-hexagram-symbol">
                 {value !== undefined ? (
                   <YaoSymbol
                     key={value}
@@ -45,7 +48,7 @@ export function CastingHexagram({
                   />
                 ) : (
                   <span
-                    className={`block h-2 rounded-full ${isCurrent ? 'bg-neutral-300 w-full' : 'bg-neutral-100 w-full'}`}
+                    className={`block h-2 w-[72px] rounded-full ${isCurrent ? 'bg-neutral-300' : 'bg-neutral-100'}`}
                     aria-hidden="true"
                   />
                 )}

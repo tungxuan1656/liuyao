@@ -27,7 +27,7 @@ export function HexagramBoard({
   const changedId = changed ? result.changedHexagramId : null;
   return (
     <section
-      className={`min-w-0 border border-border bg-card p-4 ${changed ? 'bg-muted/40' : ''}`}
+      className={`min-w-0 border border-border bg-card p-4 sm:p-6 ${changed ? 'bg-muted/40' : ''}`}
       aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'}
     >
       <div className="mb-2 flex items-start justify-between gap-2 border-b border-border pb-2">
@@ -115,7 +115,7 @@ export function HexagramBoard({
       )}
       {changed ? (
         <ol
-          className="flex flex-col gap-1 my-2 p-0 list-none"
+          className="result-board-lines flex flex-col gap-1 my-3 p-0 list-none"
           aria-label="Tính âm dương sau biến đổi; hào sáu ở trên, hào một ở dưới"
         >
           {lines.map(line => {
@@ -127,7 +127,7 @@ export function HexagramBoard({
             return (
               <li
                 key={line.position}
-                className="min-h-[25px] grid grid-cols-[24px_72px_1fr] items-center gap-2"
+                className="min-h-12 grid grid-cols-[24px_56px_minmax(0,1fr)] items-center gap-2"
               >
                 <span
                   className="text-[0.6rem] font-bold text-neutral-900 text-right"
@@ -145,7 +145,7 @@ export function HexagramBoard({
         </ol>
       ) : (
         <ol
-          className="flex flex-col gap-1 my-2 p-0 list-none"
+          className="result-board-lines flex flex-col gap-1 my-3 p-0 list-none"
           aria-label="Các hào, hào sáu ở trên và hào một ở dưới"
         >
           {lines.map(line => {
@@ -154,7 +154,7 @@ export function HexagramBoard({
             return (
               <li
                 key={line.position}
-                className="min-h-[25px] grid grid-cols-[24px_72px_1fr] items-center gap-2"
+                className="min-h-12 grid grid-cols-[24px_56px_minmax(0,1fr)] items-center gap-2"
               >
                 <span className="text-[0.6rem] font-bold text-neutral-900 text-right">
                   {line.position === result.shiPosition

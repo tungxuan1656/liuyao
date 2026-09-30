@@ -4,6 +4,7 @@ import { useReadingSession } from './reading-session';
 import { ROUTES } from './route-paths';
 import { getLinePresentation } from './line-value-presentation';
 import { ConfirmationDialog } from './components/confirmation-dialog';
+import './components/route-layout.css';
 import { Button } from './components/ui/button';
 import {
   Card,
@@ -66,7 +67,7 @@ export default function App() {
   }
 
   return (
-    <main className="mx-auto flex w-full max-w-2xl flex-col gap-8 px-5 py-10 sm:py-14">
+    <main className="route-page route-page--reading route-sections text-foreground">
       {/* Header */}
       <div className="flex flex-col gap-1">
         <h1 className="font-serif text-3xl font-medium tracking-tight sm:text-4xl">Lục Hào</h1>

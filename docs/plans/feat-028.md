@@ -192,3 +192,29 @@ The implementer owns the following evidence. Existing release scenarios are the 
 - [ ] Present the updated preview for user visual review before marking the feature done.
 
 Repeat checks only when later changes invalidate their evidence. Browser emulation does not establish physical-phone appearance or frame pacing.
+
+## Task 7 — Normalize the sitewide composition (approved follow-up)
+
+**Goal:** Implement the shared composition and spacing contract in `ui-layout.md` without changing the selected fonts, control dimensions, touch targets, or domain calculations.
+
+**Ownership:** Designer owns `apps/web/src/App.tsx`, `components/app-shell.tsx`, `components/navigation.tsx`, `result-view.tsx`, `result-board.tsx`, `result-facts.tsx`, `library-browser.tsx`, `library-detail.tsx`, `settings.tsx`, `direct-casting-panel.tsx`, and their presentation CSS. No other lane edits these files.
+
+- [ ] Establish reusable route/container, card, header, group, and row rhythm with existing utilities or small shared layout styles; avoid duplicated near-identical per-route spacing.
+- [ ] Apply 16px/24px route gutters, 16px/24px card padding, 24px mobile/32px desktop section rhythm, and documented width variants across every route. Preserve the existing shadcn preset and Noto fonts.
+- [ ] Ensure the result board's mobile interactive rows meet the documented 48px minimum; preserve the 900px split and fact inspection behavior.
+- [ ] Review Home, result, Library index/detail, Settings, and direct input at 320px, 390px, and 1280px, including overflow and keyboard focus.
+
+## Task 8 — Unify casting visuals and one-press next toss
+
+**Ownership:** Designer owns `apps/web/src/automatic-casting-panel.tsx`, `manual-casting-panel.tsx`, `casting/coin-face.tsx`, `casting/coin-stage.tsx`, `casting/casting-hexagram.tsx`, `components/yao-symbol.tsx`, `components/yao-symbol.css`, `casting/casting-workspace.css`, `casting/input-workspace.css`. Fixer owns only `apps/web/src/casting-flow.tsx` and `apps/web/src/manual-casting-actions.tsx` if needed. Coordinate the action contract; no concurrent edits to the same file.
+
+- [ ] Designer: share triangle/square coin geometry in manual and automatic modes. Render 64px faces and labels in the 2×2 four-coin stage; keep stage and footer stable during animation.
+- [ ] Designer: align forming-hexagram columns and replace boxed moving symbols with high-contrast unboxed markers, preserving semantic labels and line value mapping.
+- [ ] Fixer: when a completed automatic line has an uncast successor, advance and trigger one cryptographic toss on the same activation. Preserve existing evidence on revisits, prevent repeat actions while busy, and keep sixth-line completion unchanged. Coordinate the `onNext` contract with designer before edits.
+- [ ] Verify all six lines, back/revisit, reset/cancel mid-animation, three/four coins, and one-press behavior via direct UI inspection. Application test placement remains restricted by `docs/development.md`.
+
+## Task 9 — Reconcile, verify, and hand off
+
+- [ ] Reconcile both ownership lanes, run `./init.sh` and `git diff --check`, and inspect unintended changes.
+- [ ] Verify screens and interaction states at 320×720, 390×844, and 1280×900 using direct browser inspection; capture findings, including limitations of simulated mobile.
+- [ ] Update `features/feat-028.md` and append a `progress.md` block only for a changed result or blocker. Do not mark the feature done until its outstanding acceptance criteria and user preview review pass.

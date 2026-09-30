@@ -39,8 +39,8 @@ export function LibraryPage() {
   const shown = category === 'rules' ? filterRules(records, ruleFilter) : records;
 
   return (
-    <main className="mx-auto w-full max-w-[920px] px-4 text-foreground sm:px-6">
-      <header className="flex min-h-[140px] min-w-0 items-center py-6 sm:min-h-[160px]">
+    <main className="route-page route-page--reference text-foreground">
+      <header className="flex min-w-0 items-center">
         <div className="min-w-0">
           <p className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
             Cẩm nang Lục Hào
@@ -54,7 +54,7 @@ export function LibraryPage() {
         </div>
       </header>
 
-      <section className="min-w-0 py-6" aria-label="Tra cứu tri thức">
+      <section className="min-w-0 pt-6" aria-label="Tra cứu tri thức">
         <Tabs value={category} onValueChange={value => value && setCategory(value as Category)}>
           <TabsList
             className="flex w-full gap-1 overflow-x-auto border-b border-border bg-transparent p-0 scrollbar-none"

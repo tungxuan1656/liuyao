@@ -33,7 +33,7 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
       <CardContent className="grid gap-3 p-0">
         {[5, 4, 3, 2, 1, 0].map(index => (
           <div
-            className="flex flex-col sm:flex-row sm:items-center gap-3 py-3 border-b border-neutral-100"
+            className="flex flex-col sm:flex-row sm:items-center gap-3 py-4 border-b border-neutral-100"
             key={index}
           >
             <span className="text-sm font-semibold text-neutral-500 w-20">Hào {index + 1}</span>

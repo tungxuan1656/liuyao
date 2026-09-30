@@ -27,7 +27,7 @@ export function LibraryDetailPage() {
   const references = getReferences(record?.id ?? '');
   if (!record)
     return (
-      <main className="w-full max-w-[920px] mx-auto py-1 pb-8 text-foreground">
+      <main className="route-page route-page--detail text-foreground">
         <Button
           variant="ghost"
           size="sm"
@@ -40,7 +40,7 @@ export function LibraryDetailPage() {
         >
           ← Quay lại thư viện
         </Button>
-        <Card className="grid min-h-[250px] p-8 place-content-center text-center border-0 shadow-none bg-transparent">
+        <Card className="mt-6 grid min-h-[250px] p-8 place-content-center text-center border-0 shadow-none bg-transparent">
           <CardContent className="p-6">
             <span className="text-foreground font-serif text-4xl" aria-hidden="true">
               ?
@@ -63,7 +63,7 @@ export function LibraryDetailPage() {
   const related = getRelatedFigures(record);
   const applicableRules = getApplicableRules(record);
   return (
-    <main className="mx-auto w-full max-w-[920px] px-4 py-1 pb-8 text-foreground sm:px-6">
+    <main className="route-page route-page--detail text-foreground">
       <Button
         variant="ghost"
         size="sm"
@@ -76,7 +76,7 @@ export function LibraryDetailPage() {
       >
         ← Quay lại thư viện
       </Button>
-      <Card className="mx-auto mt-4 min-w-0 max-w-[740px] rounded-none border border-border bg-card p-4 shadow-none ring-0 sm:p-6 md:p-10">
+      <Card className="mx-auto mt-6 min-w-0 max-w-[42rem] rounded-none border border-border bg-card p-4 shadow-none ring-0 sm:p-6">
         <CardContent className="p-0">
           <header className="flex items-start justify-between gap-4">
             <div className="grid gap-2">
@@ -101,9 +101,9 @@ export function LibraryDetailPage() {
               {record.id}
             </Badge>
           </header>
-          <p className="my-7 font-serif text-lg leading-relaxed">{recordDescription(record)}</p>
+          <p className="my-6 font-serif text-lg leading-relaxed">{recordDescription(record)}</p>
           {'upperTrigramId' in record && (
-            <section className="mt-8 border-t border-border pt-4">
+            <section className="mt-6 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">Gồm hai quái</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {[record.upperTrigramId, record.lowerTrigramId].map((trigramId, index) => {
@@ -129,7 +129,7 @@ export function LibraryDetailPage() {
             </section>
           )}
           {related.length > 0 && !('upperTrigramId' in record) && (
-            <section className="mt-8 border-t border-border pt-4">
+            <section className="mt-6 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">
                 Quẻ liên quan{' '}
                 <span className="ml-2 text-muted-foreground font-sans text-sm font-normal">
@@ -155,7 +155,7 @@ export function LibraryDetailPage() {
             </section>
           )}
           {applicableRules.length > 0 && (
-            <section className="mt-8 border-t border-border pt-4">
+            <section className="mt-6 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">Quy tắc áp dụng</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {applicableRules.map(rule => (
@@ -172,7 +172,7 @@ export function LibraryDetailPage() {
             </section>
           )}
           {references.length > 0 && (
-            <section className="mt-8 border-t border-border pt-4">
+            <section className="mt-6 border-t border-border pt-4">
               <h2 className="mb-3 font-serif text-base font-semibold">Nguồn và vị trí tra cứu</h2>
               {references.map(reference => (
                 <div

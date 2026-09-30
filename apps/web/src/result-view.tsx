@@ -8,6 +8,8 @@ import { HexagramBoard } from './result-board';
 import { YaoSymbol } from './components/yao-symbol';
 import { branchName, elementName, hexagramLabel, relativeName, stemName } from './result-labels';
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from './components/ui/sheet';
+import './components/route-layout.css';
+import './result-view.css';
 
 function getYaoName(value: number) {
   switch (value) {
@@ -49,7 +51,7 @@ export function ResultView() {
 
   if (!reading)
     return (
-      <main className="mx-auto max-w-2xl px-5 py-10 text-foreground sm:py-14">
+      <main className="route-page route-page--reading text-foreground">
         <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-2">
           Chưa có kết quả
         </p>
@@ -77,8 +79,8 @@ export function ResultView() {
     : undefined;
 
   return (
-    <main className="mx-auto grid w-full max-w-6xl gap-6 px-4 text-foreground sm:px-6">
-      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 py-4 mb-2 border-b border-border">
+    <main className="route-page route-page--result grid gap-6 text-foreground">
+      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-border">
         <div>
           <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium mb-1">
             Kết quả gieo quẻ · Quy ước: {reading.result.ruleset}
@@ -98,8 +100,8 @@ export function ResultView() {
         </Link>
       </header>
 
-      <div className="flex flex-col md:flex-row gap-6 items-start">
-        <div className="grid min-w-0 w-full flex-1 gap-4">
+      <div className="result-layout flex min-w-0 items-start gap-6">
+        <div className="grid min-w-0 w-full flex-1 gap-6">
           <FactButton
             fact={{
               id: 'result.primaryHexagramId',
@@ -109,7 +111,7 @@ export function ResultView() {
             }}
             onSelect={selectFact}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <HexagramBoard result={reading.result} select={selectFact} />
             {changedHexagram ? (
               <HexagramBoard
@@ -146,7 +148,7 @@ export function ResultView() {
             <div className="grid gap-1">
               {[...reading.result.lines].reverse().map(line => (
                 <div
-                  className="flex items-center gap-2 md:gap-4 min-h-[50px] py-1 border-b border-neutral-100 last:border-0"
+                  className="result-line-row grid min-w-0 grid-cols-[2rem_3rem_minmax(0,1fr)] items-center gap-x-2 gap-y-1 border-b border-neutral-100 py-2 last:border-0"
                   key={line.position}
                 >
                   <div className="w-8 text-center shrink-0">
@@ -159,11 +161,23 @@ export function ResultView() {
                           : ''}
                     </small>
                   </div>
-                  <div className="w-16 shrink-0 flex justify-center">
+                  <div className="w-12 shrink-0 flex justify-center">
                     <YaoSymbol polarity={line.polarity} changing={line.changing} />
                   </div>
 
-                  <div className="flex-1 grid grid-cols-3 gap-1 md:gap-2">
+                  <div className="result-line-value min-w-0 text-right flex flex-col items-end justify-center">
+                    <span className="text-[0.65rem] text-neutral-500 font-medium">
+                      {getYaoName(line.inputValue)}
+                      {line.changing ? ' · động' : ''}
+                    </span>
+                    {line.changing && (
+                      <small className="text-neutral-900 text-[0.65rem] mt-0.5">
+                        → {line.polarity === 'yin' ? 'Dương' : 'Âm'}
+                      </small>
+                    )}
+                  </div>
+
+                  <div className="result-line-facts col-span-3 grid min-w-0 grid-cols-3 gap-1 md:gap-2">
                     <FactButton
                       fact={{
                         id: 'line.naJiaStem',
@@ -189,18 +203,6 @@ export function ResultView() {
                       onSelect={selectFact}
                     />
                   </div>
-
-                  <div className="w-24 text-right shrink-0 flex flex-col items-end justify-center">
-                    <span className="text-[0.65rem] text-neutral-500 font-medium">
-                      {getYaoName(line.inputValue)}
-                      {line.changing ? ' · động' : ''}
-                    </span>
-                    {line.changing && (
-                      <small className="text-neutral-900 text-[0.65rem] mt-0.5">
-                        → {line.polarity === 'yin' ? 'Dương' : 'Âm'}
-                      </small>
-                    )}
-                  </div>
                 </div>
               ))}
             </div>
@@ -208,7 +210,7 @@ export function ResultView() {
         </div>
 
         <aside
-          className="hidden md:block sticky top-20 min-h-[350px] w-80 shrink-0 pl-6 border-l border-border"
+          className="result-fact-inspector hidden sticky top-20 min-h-[350px] w-[min(32%,24rem)] shrink-0 pl-6 border-l border-border"
           aria-label="Giải thích dữ kiện"
         >
           {selectedFact ? (
@@ -244,7 +246,7 @@ export function ResultView() {
         <SheetContent
           side={compact ? 'bottom' : 'right'}
           showCloseButton={false}
-          className="border-0 rounded-t-xl md:rounded-none bg-white p-6 max-h-[85vh] md:max-h-screen overflow-y-auto w-full md:max-w-md shadow-none"
+          className="border-0 rounded-t-xl lg:rounded-none bg-white p-6 max-h-[85vh] lg:max-h-screen overflow-y-auto w-full lg:max-w-md shadow-none"
         >
           {selectedFact && (
             <>

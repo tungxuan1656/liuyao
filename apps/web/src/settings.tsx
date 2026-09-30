@@ -77,7 +77,7 @@ export function SettingsPage() {
   }
 
   return (
-    <main className="mx-auto flex w-full max-w-2xl flex-col gap-10 px-5 py-10 sm:gap-12 sm:py-14">
+    <main className="mx-auto flex w-full max-w-[45rem] flex-col gap-8 px-4 py-8 text-foreground sm:gap-8 sm:px-6 sm:py-10 md:gap-10 md:py-12">
       <header className="flex flex-col gap-3">
         <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
           Lục Hào / Thông tin ứng dụng

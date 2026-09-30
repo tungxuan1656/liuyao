@@ -31,7 +31,7 @@ export function Navigation() {
 
   return (
     <nav
-      className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-b border-border bg-background px-4 py-3 sm:flex-nowrap sm:px-6"
+      className="flex min-h-14 flex-wrap items-center justify-between gap-x-3 gap-y-2 border-b border-border bg-background px-4 py-2 sm:flex-nowrap sm:px-6 md:h-14 md:min-h-14"
       aria-label="Điều hướng chính"
     >
       <Link

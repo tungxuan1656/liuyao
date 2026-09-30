@@ -35,7 +35,7 @@ Deliver a consistent Base UI interface with simple three-/four-coin casting and 
 
 ## Handoff
 
-- State: active on `feat/028-coin-casting`, PR #49; implementation and automated verification are complete locally.
-- Evidence: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audit at 320/390/1280px verified direct-choice widths, manual action targets, Library tabs, fixed coin centers, alternating glyphs, and Home mouse/keyboard navigation.
-- Limit: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs include sourcemap-location and >500KB chunk warnings.
-- Next: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.
+- State: active on `feat/028-coin-casting`; implementation and broader acceptance remain in progress.
+- Evidence: Final `./init.sh` and `git diff --check` passed; the earlier progress record reports a 17/17 release-scenario run before this follow-up. Browser QA verified four-coin casting from 1/6 through 6/6 with one-press next, revisit preserving 2/6, and result navigation. On the final CSS, Casting and Result had no horizontal overflow at 320px, 390px, or 1280px; Result board rows were 48px and its desktop inspector remained visible. Sitewide spacing and casting UI follow `docs/product-specs/ui-layout.md` and `docs/product-specs/reading-flow.md`.
+- Limits: `pnpm test:release` is absent from the current root and web package scripts, so its old evidence does not verify this follow-up. User preview, physical-phone motion, and broader feat-028 criteria remain unverified. Do not infer manual mode, three-coin, reset-mid-animation, keyboard, or reduced-motion acceptance from the new browser evidence. Earlier evidence remains recorded in `progress.md`.
+- Next: Review the updated preview and verify remaining acceptance criteria; resolve the stale release-check references before declaring the feature done.

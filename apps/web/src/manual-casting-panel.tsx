@@ -1,13 +1,14 @@
 import { mapCoinsToLine, type CastingMethod, type CoinTossResult } from '@liuyao/core';
 import { CoinFace } from './casting/coin-face';
 import { CastingHexagram } from './casting/casting-hexagram';
-import { coinNames } from './casting/coin-names';
+import { coinIdentities } from './casting/coin-identities';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
 import { describeLineValue, getLinePresentation } from './line-value-presentation';
 import { YaoSymbol } from './components/yao-symbol';
 import type { useReadingSession } from './reading-session';
+import './casting/casting-workspace.css';
 
 type Draft = NonNullable<ReturnType<typeof useReadingSession>['draft']>;
 
@@ -96,7 +97,7 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
       </CardHeader>
       <CardContent className="grid gap-5 p-0">
         <div className="grid grid-cols-1 md:grid-cols-[0.72fr_1.28fr] items-stretch gap-5">
-          <div className="min-w-0 p-4 border-0 bg-neutral-50 md:order-none order-last">
+          <div className="min-w-0 p-4 border-0 bg-neutral-50 order-first md:order-none">
             <CastingHexagram
               lines={Array.from({ length: 6 }, (_, index) =>
                 draft.manualConfirmed?.[index] ? draft.manualTosses?.[index]?.line : undefined,
@@ -106,7 +107,7 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
           </div>
           <div className="grid content-start gap-4 min-w-0">
             <div
-              className={`grid place-items-center gap-4 py-4 grid-cols-2 ${count === 3 ? '[&>*:first-child]:col-span-2' : ''}`}
+              className={`coin-arrangement grid place-items-center gap-4 py-4 ${count === 3 ? 'coin-arrangement--three' : 'coin-arrangement--four'}`}
             >
               {coins.map((coin, index) => (
                 <Button
@@ -116,16 +117,16 @@ export function ManualCastingPanel({ draft, step, setDraft }: Props) {
                   key={index}
                   aria-pressed={Boolean(coin)}
                   disabled={confirmed}
-                  aria-label={`${count === 4 ? coinNames[index] + ', ' : `Đồng xu ${index + 1}, `}${coin ? 'mặt trời' : 'mặt trăng'}. Chạm để lật.`}
+                  aria-label={`${count === 4 ? `${coinIdentities[index]?.label}, ` : `Đồng xu ${index + 1}, `}${coin ? 'mặt trời' : 'mặt trăng'}. Chạm để lật.`}
                   onClick={() => flip(index)}
                 >
                   <div
-                    className={`w-[clamp(3.7rem,10vw,5rem)] transition-transform duration-300 ${confirmed ? '' : 'active:scale-95'}`}
+                    className={`w-16 transition-transform duration-300 ${confirmed ? '' : 'active:scale-95'}`}
                   >
-                    <CoinFace value={coin} name={count === 4 ? coinNames[index] : undefined} />
+                    <CoinFace value={coin} identityIndex={count === 4 ? index : undefined} />
                   </div>
-                  <span className="text-sm text-neutral-500">
-                    {count === 4 ? ['Địa', 'Thủy', 'Hỏa', 'Phong'][index] : `Đồng ${index + 1}`}
+                  <span className="text-sm text-neutral-600">
+                    {count === 4 ? coinIdentities[index]?.label : `Đồng ${index + 1}`}
                   </span>
                 </Button>
               ))}
