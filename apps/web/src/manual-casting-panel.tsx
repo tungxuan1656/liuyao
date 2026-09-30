@@ -65,10 +65,12 @@ export function ManualCastingPanel({
   }
 
   return (
-    <Card className="casting-workspace" aria-label="Gieo từng hào">
+    <Card aria-label="Gieo từng hào">
       <CardHeader className="casting-workspace-header">
         <ToggleGroup
           aria-label="Số lượng đồng xu"
+          variant="outline"
+          size="lg"
           value={[draft.coinMethod]}
           onValueChange={value => {
             const method = value[0] as CastingMethod | undefined;
@@ -83,27 +85,21 @@ export function ManualCastingPanel({
             });
           }}
           disabled={(draft.manualTosses?.some(Boolean) ?? false) || draft.lines.length > 0}
-          className="border border-border bg-background"
+          className="grid w-full grid-cols-1 sm:flex sm:w-fit"
         >
-          <ToggleGroupItem
-            value="three-coin"
-            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
-          >
+          <ToggleGroupItem value="three-coin" className="w-full sm:w-auto">
             Ba đồng xu
           </ToggleGroupItem>
-          <ToggleGroupItem
-            value="four-coin"
-            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
-          >
+          <ToggleGroupItem value="four-coin" className="w-full sm:w-auto">
             Bốn đồng xu
           </ToggleGroupItem>
         </ToggleGroup>
-        <span className="text-sm text-neutral-500 whitespace-nowrap">
+        <span className="text-sm text-muted-foreground whitespace-nowrap">
           {draft.manualConfirmed?.filter(Boolean).length ?? 0} / 6 hào
         </span>
       </CardHeader>
       <CardContent className="casting-workspace-content">
-        <div>
+        <div className="casting-hexagram-column">
           <CastingHexagram
             lines={Array.from({ length: 6 }, (_, index) =>
               draft.manualConfirmed?.[index] ? draft.manualTosses?.[index]?.line : undefined,
@@ -128,7 +124,7 @@ export function ManualCastingPanel({
                   onClick={() => flip(index)}
                 >
                   <CoinFace value={coin} identityIndex={count === 4 ? index : undefined} />
-                  <span className="text-sm text-neutral-600">
+                  <span className="text-sm text-muted-foreground">
                     {count === 4 ? coinIdentities[index]?.label : `Đồng ${index + 1}`}
                   </span>
                 </Button>
@@ -137,13 +133,13 @@ export function ManualCastingPanel({
           </div>
           <div className="casting-result-region" aria-live="polite">
             {line === undefined || !presentation ? (
-              <span className="text-neutral-500">Chọn mặt từng đồng xu</span>
+              <span className="text-muted-foreground">Chọn mặt từng đồng xu</span>
             ) : (
               <>
                 <strong data-line-value={line} className="font-medium">
                   {presentation.name}
                 </strong>
-                <span className="text-sm text-neutral-500">
+                <span className="text-sm text-muted-foreground">
                   {describeLineValue(line)}
                   {confirmed ? ' · đã xác nhận' : ' · chưa xác nhận'}
                 </span>
@@ -152,28 +148,17 @@ export function ManualCastingPanel({
           </div>
         </section>
       </CardContent>
-      <CardFooter className="casting-workspace-footer casting-manual-footer">
-        <Button
-          type="button"
-          variant="outline"
-          className="casting-back-action"
-          disabled={step === 0}
-          onClick={onBack}
-        >
+      <CardFooter className="casting-workspace-footer">
+        <Button type="button" variant="outline" disabled={step === 0} onClick={onBack}>
           Quay lại
         </Button>
         {confirmed ? (
-          <Button
-            type="button"
-            className="casting-primary-action"
-            onClick={step === 5 ? onFinish : onNext}
-          >
+          <Button type="button" onClick={step === 5 ? onFinish : onNext}>
             {step === 5 ? 'Tính quẻ' : 'Tiếp theo'}
           </Button>
         ) : (
           <Button
             type="button"
-            className="casting-primary-action"
             disabled={!previous}
             onClick={() => {
               if (!previous) return;
@@ -189,7 +174,7 @@ export function ManualCastingPanel({
             Xác nhận hào
           </Button>
         )}
-        <Button type="button" variant="ghost" className="casting-reset-action" onClick={onReset}>
+        <Button type="button" variant="ghost" onClick={onReset}>
           Xóa các hào
         </Button>
       </CardFooter>

@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, Home, Settings } from 'lucide-react';
+import { ArrowLeft, BookOpen, House, Settings2 } from 'lucide-react';
 import { ROUTES } from '../route-paths';
+import { cn } from '../lib/utils';
+import { Badge } from './ui/badge';
 
 const destinations = [
-  { label: 'Gieo quẻ', path: ROUTES.home, icon: Home },
+  { label: 'Gieo quẻ', path: ROUTES.home, icon: House },
   { label: 'Thư viện', path: ROUTES.library, icon: BookOpen },
-  { label: 'Cài đặt', path: ROUTES.settings, icon: Settings },
+  { label: 'Cài đặt', path: ROUTES.settings, icon: Settings2 },
 ] as const;
 
 function isCurrentDestination(pathname: string, path: string) {
-  return path === ROUTES.home
-    ? pathname === path
-    : pathname === path || pathname.startsWith(`${path}/`);
+  if (path === ROUTES.home) {
+    return pathname === ROUTES.home || pathname === ROUTES.casting || pathname === ROUTES.result;
+  }
+  return pathname === path || pathname.startsWith(`${path}/`);
 }
 
 export function Navigation() {
@@ -29,54 +32,111 @@ export function Navigation() {
     };
   }, []);
 
+  const mobileParent =
+    pathname === ROUTES.casting || pathname === ROUTES.result
+      ? ROUTES.home
+      : pathname.startsWith(`${ROUTES.library}/`)
+        ? ROUTES.library
+        : null;
+  const mobileTitle =
+    pathname === ROUTES.casting
+      ? 'Lập quẻ'
+      : pathname === ROUTES.result
+        ? 'Kết quả'
+        : pathname.startsWith(`${ROUTES.library}/`)
+          ? 'Chi tiết thư viện'
+          : 'Lục Hào';
+
   return (
-    <nav
-      className="flex min-h-14 flex-wrap items-center justify-between gap-x-3 gap-y-2 border-b border-border bg-background px-4 py-2 sm:flex-nowrap sm:px-6 md:h-14 md:min-h-14"
-      aria-label="Điều hướng chính"
-    >
-      <Link
-        className="flex items-center gap-2 text-sm font-medium text-neutral-900 no-underline"
-        to={ROUTES.home}
-        aria-label="Trang chủ Lục Hào"
-      >
-        <span className="font-serif text-base leading-none" aria-hidden="true">
-          ☯
-        </span>
-        <span className="font-serif font-semibold tracking-wide">Lục Hào</span>
-      </Link>
+    <>
+      <header className="border-b bg-background">
+        <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
+          <div className="flex min-w-0 items-center gap-2 md:hidden">
+            {mobileParent ? (
+              <Link
+                to={mobileParent}
+                className="inline-flex size-11 shrink-0 items-center justify-center text-foreground"
+                aria-label={
+                  mobileParent === ROUTES.library ? 'Quay lại thư viện' : 'Quay lại trang gieo quẻ'
+                }
+              >
+                <ArrowLeft aria-hidden="true" />
+              </Link>
+            ) : (
+              <span className="font-serif text-2xl" aria-hidden="true">
+                ☯
+              </span>
+            )}
+            <span className="truncate font-serif text-lg font-semibold">{mobileTitle}</span>
+          </div>
 
-      <div className="order-3 flex w-full items-center justify-center gap-1 sm:order-none sm:w-auto sm:justify-start">
-        {destinations.map(({ label, path, icon: Icon }) => {
-          const current = isCurrentDestination(pathname, path);
-          return (
-            <Link
-              key={label}
-              className={`flex min-h-10 items-center gap-1.5 border-b-2 px-2 py-2 text-sm no-underline transition-colors sm:px-3 ${
-                current
-                  ? 'border-foreground font-medium text-foreground'
-                  : 'border-transparent text-muted-foreground hover:text-foreground'
-              }`}
-              to={path}
-              aria-current={current ? 'page' : undefined}
-            >
-              <Icon size={14} aria-hidden="true" strokeWidth={current ? 2.5 : 2} />
-              <span>{label}</span>
-            </Link>
-          );
-        })}
-      </div>
+          <Link
+            to={ROUTES.home}
+            className="hidden items-center gap-2 text-foreground no-underline md:inline-flex"
+            aria-label="Trang chủ Lục Hào"
+          >
+            <span className="font-serif text-2xl" aria-hidden="true">
+              ☯
+            </span>
+            <span className="font-serif text-xl font-semibold">Lục Hào</span>
+          </Link>
 
-      <span
-        className="flex items-center gap-1.5 text-xs text-neutral-400"
-        role="status"
-        aria-label={online ? 'Đang kết nối' : 'Ngoại tuyến'}
+          <nav className="hidden items-center gap-1 md:flex" aria-label="Điều hướng chính">
+            {destinations.map(({ label, path, icon: Icon }) => {
+              const current = isCurrentDestination(pathname, path);
+              return (
+                <Link
+                  key={path}
+                  to={path}
+                  aria-current={current ? 'page' : undefined}
+                  className={cn(
+                    'inline-flex min-h-11 items-center gap-2 border-b-2 px-4 text-sm font-medium transition-colors',
+                    current
+                      ? 'border-foreground text-foreground'
+                      : 'border-transparent text-muted-foreground hover:text-foreground',
+                  )}
+                >
+                  <Icon aria-hidden="true" className="size-4" />
+                  {label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <Badge
+            variant="secondary"
+            role="status"
+            aria-label={online ? 'Đang kết nối' : 'Ngoại tuyến'}
+          >
+            {online ? 'Có mạng' : 'Ngoại tuyến'}
+          </Badge>
+        </div>
+      </header>
+
+      <nav
+        className="fixed inset-x-0 bottom-0 z-20 border-t bg-background pb-[env(safe-area-inset-bottom)] md:hidden"
+        aria-label="Các trang chính"
       >
-        <span
-          className={`w-1.5 h-1.5 rounded-full ${online ? 'bg-neutral-400' : 'bg-neutral-300'}`}
-          aria-hidden="true"
-        />
-        {online ? 'Có mạng' : 'Ngoại tuyến'}
-      </span>
-    </nav>
+        <div className="grid grid-cols-3">
+          {destinations.map(({ label, path, icon: Icon }) => {
+            const current = isCurrentDestination(pathname, path);
+            return (
+              <Link
+                key={path}
+                to={path}
+                aria-current={current ? 'page' : undefined}
+                className={cn(
+                  'flex min-h-16 flex-col items-center justify-center gap-1 text-xs font-medium transition-colors',
+                  current ? 'text-foreground' : 'text-muted-foreground',
+                )}
+              >
+                <Icon aria-hidden="true" className="size-5" />
+                <span>{label}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+    </>
   );
 }

@@ -602,3 +602,33 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Final `./init.sh` and `git diff --check` passed. Browser QA at 320px completed six manual lines and opened Result; a confirmed line retained its faces on revisit. Reset required confirmation after input and cleared all lines. At 320px and 390px, all footer buttons fit the Card. At 320px the footer stayed at the same vertical position through automatic waiting, reduced-motion toss, reveal, and manual six-line completion. A completed result survived Library-to-Home navigation and was removed by confirmed “Lập mới.” Keyboard Space flipped a focused coin; Tab exposed its focus outline.
 
 **Remaining**: User preview, physical-phone motion, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and full visual flip review. Keep feat-028 active.
+
+## 2026-09-30 — feat-028 responsive bento redesign
+
+**Result**: Reorganized Home, casting, Result, Library, Library detail, and Settings around content-led shadcn cards. Added a mobile contextual back bar and persistent bottom tabs, including during casting; desktop uses a top navigation header without an application back link. Kept the installed Sera/Base UI preset, domain calculations, session behavior, and confirmation gates.
+
+**Evidence**: Final `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests; `git diff --check` passed. Direct browser review at 320px, 390px, and 1440px covered navigation, automatic and direct casting layouts, six-line direct completion, Result fact Sheet, Library search/list, a rule detail, Settings, and offline feedback. The inspected routes had no horizontal document overflow. Mobile Library tabs were changed to two rows at 320px, and result fact controls were made readable with a 44px minimum target.
+
+**Remaining**: Existing feat-028 acceptance still needs user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, and session-boundary checks. Keep the feature active.
+
+**Next**: Review the redesigned preview and complete the remaining casting acceptance checks before closing feat-028.
+
+## 2026-09-30 — feat-028 closure and PR handoff
+
+**Result**: Marked feat-028 done at the user's explicit request and prepared the responsive bento redesign for PR review. This is a directed closure with the unchecked acceptance criteria in `features/feat-028.md` still unverified.
+
+**Evidence**: Fresh `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The prior browser review covered 320px, 390px, and 1440px layouts and primary route flows.
+
+**Remaining**: Physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, complete desktop/mobile flip review, and user preview are unverified. `pnpm test:release` is not defined.
+
+**Next**: Review the PR and perform the remaining visual, assistive-technology, and session-boundary checks.
+
+## 2026-09-30 — PR #52 review fixes
+
+**Result**: Fixed the defects found while reviewing PR #52 against the shadcn and shadcn-ui skills. The automatic-casting primary action no longer clips against the card at 320px; the two-row Library tab list sizes to its content; search clear, rule filters, tab triggers, and remaining default-size buttons reach the 44px target; section titles expose heading roles; list rows use `divide-y`; the mobile casting border seam is 1px; and the dead `route-page--*` modifiers and stale canonical-doc statements are gone.
+
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. Chromium at 320px re-measured the fixed surfaces: footer buttons 0px clipped, tab list 100px with no label overlap and 44px triggers, clear button 44x44, filter toggles 44px, fact buttons 54px, heading roles level 2 (level 3 for Library records), 1px hexagram/coin seam, and no horizontal document overflow. Desktop at 1440px kept the 1280px wrapper, a 52px single-row tab list, and the three-column record grid. `pnpm dlx shadcn@latest preset resolve` confirmed preset `b59jumGwPA`.
+
+**Remaining**: Preview at 360-420px, user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and complete desktop/mobile flip review are still unverified. `pnpm test:release` is not defined.
+
+**Next**: Push the fixes to `refactor/ui-ux-web` for PR #52 review.

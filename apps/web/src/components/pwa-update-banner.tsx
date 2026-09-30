@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { RefreshCw, WifiOff } from 'lucide-react';
 import {
   applyPwaUpdate,
   getPwaUpdateSnapshot,
@@ -8,7 +9,6 @@ import {
 } from '../lib/pwa-update';
 import { useReadingSession } from '../reading-session';
 import { ConfirmationDialog } from './confirmation-dialog';
-import './pwa-update-banner.css';
 import { Alert, AlertTitle, AlertDescription } from './ui/alert';
 import { Button } from './ui/button';
 
@@ -57,42 +57,34 @@ export function PwaUpdateBanner() {
   return (
     <>
       {!online ? (
-        <Alert className="pwa-update-banner pwa-offline-banner" role="status">
-          <span className="pwa-update-mark" aria-hidden="true">
-            ◌
-          </span>
-          <div>
-            <AlertTitle>Bạn đang ngoại tuyến</AlertTitle>
-            <AlertDescription>
-              Một số chức năng của ứng dụng vẫn dùng được trên thiết bị này.
-            </AlertDescription>
-          </div>
+        <Alert
+          className="fixed inset-x-4 bottom-[calc(5rem+env(safe-area-inset-bottom))] z-30 mx-auto max-w-xl md:bottom-4"
+          role="status"
+        >
+          <WifiOff aria-hidden="true" />
+          <AlertTitle>Bạn đang ngoại tuyến</AlertTitle>
+          <AlertDescription>
+            Một số chức năng của ứng dụng vẫn dùng được trên thiết bị này.
+          </AlertDescription>
         </Alert>
       ) : snapshot.updateAvailable && !dismissed ? (
-        <Alert className="pwa-update-banner" role="status" aria-labelledby="pwa-update-title">
-          <div className="pwa-update-copy">
-            <span className="pwa-update-mark" aria-hidden="true">
-              ↻
-            </span>
-            <div>
-              <AlertTitle id="pwa-update-title">Đã có bản cập nhật ứng dụng</AlertTitle>
-              <AlertDescription>
-                Tải lại trang để dùng phiên bản mới
-                {hasUnsavedReading ? ' và xóa dữ liệu gieo quẻ đang lưu trong bộ nhớ' : ''}.
-              </AlertDescription>
-            </div>
-          </div>
-          <div className="pwa-update-actions">
-            <Button
-              variant="outline"
-              className="pwa-update-later"
-              type="button"
-              onClick={() => setDismissed(true)}
-            >
+        <Alert
+          className="fixed inset-x-4 bottom-[calc(5rem+env(safe-area-inset-bottom))] z-30 mx-auto max-w-xl md:bottom-4"
+          role="status"
+          aria-labelledby="pwa-update-title"
+        >
+          <RefreshCw aria-hidden="true" />
+          <AlertTitle id="pwa-update-title">Đã có bản cập nhật ứng dụng</AlertTitle>
+          <AlertDescription>
+            Tải lại trang để dùng phiên bản mới
+            {hasUnsavedReading ? ' và xóa dữ liệu gieo quẻ đang lưu trong bộ nhớ' : ''}.
+          </AlertDescription>
+          <div className="col-span-full flex flex-wrap gap-2">
+            <Button variant="outline" size="lg" type="button" onClick={() => setDismissed(true)}>
               Để sau
             </Button>
             <Button
-              className="pwa-update-accept"
+              size="lg"
               type="button"
               onClick={() => (hasUnsavedReading ? setConfirming(true) : void acceptUpdate())}
             >

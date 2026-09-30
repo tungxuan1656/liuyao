@@ -1,6 +1,18 @@
 import type { ReadingResult } from '@liuyao/core';
-import { YaoSymbol } from './components/yao-symbol';
 import { Link } from 'react-router-dom';
+import { YaoSymbol } from './components/yao-symbol';
+import { Badge } from './components/ui/badge';
+import { Button } from './components/ui/button';
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from './components/ui/card';
+import { Separator } from './components/ui/separator';
 import { FactButton, type FactSelection } from './result-facts';
 import { ROUTES } from './route-paths';
 import {
@@ -25,83 +37,76 @@ export function HexagramBoard({
 }) {
   const lines = [...result.lines].reverse();
   const changedId = changed ? result.changedHexagramId : null;
+  const upperId = trigramIds?.upper ?? result.upperTrigramId;
+  const lowerId = trigramIds?.lower ?? result.lowerTrigramId;
+
   return (
-    <section
-      className={`min-w-0 border border-border bg-card p-4 sm:p-6 ${changed ? 'bg-muted/40' : ''}`}
-      aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'}
-    >
-      <div className="mb-2 flex items-start justify-between gap-2 border-b border-border pb-2">
-        <div>
-          <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-1">
-            {changed ? 'Sau khi đổi hào động' : 'Quẻ chính'}
-          </p>
-          <h2 className="text-lg font-medium m-0">
+    <Card aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'} className="min-w-0">
+      <CardHeader>
+        <CardTitle role="heading" aria-level={2}>
+          {changed ? 'Quẻ biến' : 'Quẻ chính'}
+        </CardTitle>
+        <CardDescription>
+          {changed ? 'Sau khi đổi các hào động' : 'Sáu hào từ dưới lên trên'}
+        </CardDescription>
+        <CardAction>
+          <Badge variant="outline">
             {changed
-              ? changedId
-                ? hexagramLabel(changedId)
-                : 'Không có thông tin quẻ biến'
-              : hexagramLabel(result.primaryHexagramId)}
-          </h2>
-        </div>
-        <span className="text-xl text-neutral-400 font-serif">
+              ? (changedId?.replace('hexagram-', '') ?? '—')
+              : result.primaryHexagramId.replace('hexagram-', '')}
+          </Badge>
+        </CardAction>
+      </CardHeader>
+      <CardContent className="flex min-w-0 flex-col gap-4">
+        <h2 className="font-serif text-2xl font-semibold">
           {changed
-            ? (changedId?.replace('hexagram-', '') ?? '—')
-            : result.primaryHexagramId.replace('hexagram-', '')}
-        </span>
-      </div>
-      <div className="flex flex-wrap gap-2 py-1 mb-2">
-        {changed ? (
-          <>
-            <Link
-              className="flex-1 min-w-[130px] min-h-[44px] inline-flex items-center justify-between gap-1 px-2 py-1 text-xs text-neutral-500 hover:text-neutral-900 border-b border-dotted border-neutral-300 hover:border-solid hover:border-neutral-900 transition-all"
-              to={ROUTES.libraryDetail('trigram', trigramIds?.upper ?? result.upperTrigramId)}
-            >
-              <span>Ngoại quái</span>
-              <strong className="text-neutral-900 text-right font-semibold">
-                {trigramLabel(trigramIds?.upper ?? result.upperTrigramId)}
-              </strong>
-              <span aria-hidden="true" className="text-[0.7rem] text-neutral-400">
-                ↗
-              </span>
-            </Link>
-            <Link
-              className="flex-1 min-w-[130px] min-h-[44px] inline-flex items-center justify-between gap-1 px-2 py-1 text-xs text-neutral-500 hover:text-neutral-900 border-b border-dotted border-neutral-300 hover:border-solid hover:border-neutral-900 transition-all"
-              to={ROUTES.libraryDetail('trigram', trigramIds?.lower ?? result.lowerTrigramId)}
-            >
-              <span>Nội quái</span>
-              <strong className="text-neutral-900 text-right font-semibold">
-                {trigramLabel(trigramIds?.lower ?? result.lowerTrigramId)}
-              </strong>
-              <span aria-hidden="true" className="text-[0.7rem] text-neutral-400">
-                ↗
-              </span>
-            </Link>
-          </>
-        ) : (
-          <>
-            <FactButton
-              fact={{
-                id: 'result.upperTrigramId',
-                label: 'Ngoại quái',
-                value: trigramLabel(trigramIds?.upper ?? result.upperTrigramId),
-                libraryTarget: { kind: 'trigram', id: trigramIds?.upper ?? result.upperTrigramId },
-              }}
-              onSelect={select}
-            />
-            <FactButton
-              fact={{
-                id: 'result.lowerTrigramId',
-                label: 'Nội quái',
-                value: trigramLabel(trigramIds?.lower ?? result.lowerTrigramId),
-                libraryTarget: { kind: 'trigram', id: trigramIds?.lower ?? result.lowerTrigramId },
-              }}
-              onSelect={select}
-            />
-          </>
-        )}
-      </div>
-      {changed && changedId && (
-        <div className="mb-2">
+            ? changedId
+              ? hexagramLabel(changedId)
+              : 'Không có thông tin quẻ biến'
+            : hexagramLabel(result.primaryHexagramId)}
+        </h2>
+        <div className="grid gap-2">
+          {changed ? (
+            <>
+              <Button
+                variant="outline"
+                size="lg"
+                render={<Link to={ROUTES.libraryDetail('trigram', upperId)} />}
+              >
+                Ngoại quái · {trigramLabel(upperId)}
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                render={<Link to={ROUTES.libraryDetail('trigram', lowerId)} />}
+              >
+                Nội quái · {trigramLabel(lowerId)}
+              </Button>
+            </>
+          ) : (
+            <>
+              <FactButton
+                fact={{
+                  id: 'result.upperTrigramId',
+                  label: 'Ngoại quái',
+                  value: trigramLabel(upperId),
+                  libraryTarget: { kind: 'trigram', id: upperId },
+                }}
+                onSelect={select}
+              />
+              <FactButton
+                fact={{
+                  id: 'result.lowerTrigramId',
+                  label: 'Nội quái',
+                  value: trigramLabel(lowerId),
+                  libraryTarget: { kind: 'trigram', id: lowerId },
+                }}
+                onSelect={select}
+              />
+            </>
+          )}
+        </div>
+        {changed && changedId && (
           <FactButton
             fact={{
               id: 'result.changedHexagramId',
@@ -111,71 +116,48 @@ export function HexagramBoard({
             }}
             onSelect={select}
           />
-        </div>
-      )}
-      {changed ? (
+        )}
+        <Separator />
         <ol
-          className="result-board-lines flex flex-col gap-1 my-3 p-0 list-none"
-          aria-label="Tính âm dương sau biến đổi; hào sáu ở trên, hào một ở dưới"
+          className="flex flex-col divide-y"
+          aria-label={
+            changed
+              ? 'Tính âm dương sau biến đổi; hào sáu ở trên, hào một ở dưới'
+              : 'Các hào, hào sáu ở trên và hào một ở dưới'
+          }
         >
           {lines.map(line => {
-            const polarity = line.changing
-              ? line.polarity === 'yin'
-                ? 'yang'
-                : 'yin'
-              : line.polarity;
+            const polarity =
+              changed && line.changing ? (line.polarity === 'yin' ? 'yang' : 'yin') : line.polarity;
             return (
               <li
                 key={line.position}
-                className="min-h-12 grid grid-cols-[24px_56px_minmax(0,1fr)] items-center gap-2"
+                className="grid min-h-12 min-w-0 grid-cols-[2rem_5rem_minmax(0,1fr)] items-center gap-2"
               >
-                <span
-                  className="text-[0.6rem] font-bold text-neutral-900 text-right"
-                  aria-hidden="true"
-                />
-                <div className="text-neutral-900 flex justify-center">
-                  <YaoSymbol polarity={polarity} />
-                </div>
-                <span className="overflow-hidden text-[0.65rem] text-neutral-500 whitespace-nowrap text-ellipsis">
-                  {line.changing ? 'Đã đổi âm dương' : ''}
+                <span className="text-sm font-medium">
+                  {changed
+                    ? line.position
+                    : line.position === result.shiPosition
+                      ? 'Thế'
+                      : line.position === result.yingPosition
+                        ? 'Ứng'
+                        : line.position}
+                </span>
+                <YaoSymbol polarity={polarity} changing={!changed && line.changing} />
+                <span className="min-w-0 truncate text-sm text-muted-foreground">
+                  {changed
+                    ? line.changing
+                      ? 'Đã đổi âm dương'
+                      : 'Giữ nguyên'
+                    : `${stemName(line.naJiaStem)} ${branchName(line.naJiaBranch)} · ${elementName(line.element)} · ${relativeName(line.relative)}`}
                 </span>
               </li>
             );
           })}
         </ol>
-      ) : (
-        <ol
-          className="result-board-lines flex flex-col gap-1 my-3 p-0 list-none"
-          aria-label="Các hào, hào sáu ở trên và hào một ở dưới"
-        >
-          {lines.map(line => {
-            const branch = branchName(line.naJiaBranch);
-            const stem = stemName(line.naJiaStem);
-            return (
-              <li
-                key={line.position}
-                className="min-h-12 grid grid-cols-[24px_56px_minmax(0,1fr)] items-center gap-2"
-              >
-                <span className="text-[0.6rem] font-bold text-neutral-900 text-right">
-                  {line.position === result.shiPosition
-                    ? 'Thế'
-                    : line.position === result.yingPosition
-                      ? 'Ứng'
-                      : ''}
-                </span>
-                <div className="flex justify-center">
-                  <YaoSymbol polarity={line.polarity} changing={line.changing} />
-                </div>
-                <span className="overflow-hidden text-[0.65rem] text-neutral-500 whitespace-nowrap text-ellipsis">
-                  {stem} {branch} · {elementName(line.element)} · {relativeName(line.relative)}
-                </span>
-              </li>
-            );
-          })}
-        </ol>
-      )}
+      </CardContent>
       {!changed && (
-        <div className="grid grid-cols-1 gap-2 mt-4 pt-4 border-t border-neutral-200">
+        <CardFooter className="flex-col items-stretch gap-2">
           <FactButton
             fact={{
               id: 'result.palaceId',
@@ -204,8 +186,8 @@ export function HexagramBoard({
             }}
             onSelect={select}
           />
-        </div>
+        </CardFooter>
       )}
-    </section>
+    </Card>
   );
 }

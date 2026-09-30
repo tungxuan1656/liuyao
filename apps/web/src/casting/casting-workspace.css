@@ -1,3 +1,4 @@
+/* Coin and hexagram geometry is domain-specific; card and control chrome stays with shadcn. */
 .coin-arrangement {
   --coin-size: 4rem;
   display: grid;
@@ -8,17 +9,9 @@
   gap: 1rem;
   margin-inline: auto;
 }
-
-.coin-arrangement--four .coin-position {
-  grid-column: auto;
-}
-.coin-arrangement--three .coin-position:first-child {
-  grid-column: 1 / -1;
-}
 .coin-arrangement--three > :first-child {
   grid-column: 1 / -1;
 }
-
 .coin-face {
   color: #35424a;
   border-color: #75828a;
@@ -31,55 +24,30 @@
 }
 .coin-face--identified.coin-face--heads {
   background: var(--coin-color);
-  color: var(--coin-ink);
-}
-.coin-face--identified.coin-face--tails {
-  background: var(--coin-light);
-  color: var(--coin-ink);
 }
 
-@media (min-width: 768px) {
-  .coin-arrangement {
-    gap: 1rem;
-  }
-}
-
-.casting-workspace {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 0;
-  background: var(--card);
-  color: var(--foreground);
-  box-shadow: none;
-}
 .casting-workspace-header {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid var(--border);
 }
 .casting-workspace-content {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   min-width: 0;
-  padding: 0;
 }
 .casting-hexagram-column {
   display: flex;
-  /* height: 300px;
-  min-height: 300px; */
-  overflow: hidden;
-  justify-content: center;
+  min-width: 0;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
+  /* Top/left/right only: the coin stage below or beside owns the shared edge. */
+  border: 1px solid var(--border);
+  border-bottom: 0;
   background: color-mix(in oklch, var(--muted) 30%, transparent);
-  border-bottom: 1px solid var(--border);
 }
 .casting-hexagram-column > section {
   width: 100%;
@@ -98,73 +66,53 @@
 }
 .casting-coin-workspace-stage {
   display: grid;
-  grid-template-rows: 190px minmax(80px, auto);
+  grid-template-rows: 232px 96px;
   min-width: 0;
 }
 .casting-coin-stage {
   position: relative;
   display: flex;
+  min-width: 0;
   align-items: center;
   justify-content: center;
-  min-width: 0;
-  height: 100%;
   overflow: hidden;
+  border: 1px solid var(--border);
   background: color-mix(in oklch, var(--muted) 30%, transparent);
-  border-bottom: 1px solid var(--border);
 }
 .casting-result-region {
   display: grid;
-  height: 96px;
+  min-width: 0;
   min-height: 96px;
-  overflow: hidden;
   align-content: center;
   justify-items: center;
   gap: 0.25rem;
   padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-top: 0;
   text-align: center;
 }
 .casting-workspace-footer {
   display: flex;
   min-height: 72px;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem;
-  border-top: 1px solid var(--border);
-}
-.casting-workspace-footer > button {
-  flex: 0 1 auto;
-  min-width: 0;
-  white-space: normal;
+  gap: 0.75rem;
 }
 .casting-workspace-footer button {
   min-height: 44px;
 }
-.casting-manual-footer .casting-primary-action {
-  min-width: 9rem;
-  border: 1px solid var(--foreground);
-  border-radius: 0;
-  background: var(--foreground);
-  color: var(--background);
+/* Narrow layouts wrap labels and reflow the action row instead of clipping against the card edge. */
+.casting-workspace-footer button {
+  flex: 0 1 auto;
+  height: auto;
+  min-width: 0;
+  white-space: normal;
 }
-.casting-workspace-footer .casting-back-action {
-  border: 0;
-  background: transparent;
-}
-.casting-reset-action {
-  flex: 0 0 auto !important;
-  min-width: 44px;
-  min-height: 44px;
-  margin-left: auto;
-  padding-inline: 0.5rem;
-  color: var(--muted-foreground);
-  font-size: 0.7rem;
-  letter-spacing: normal;
-}
-.casting-reset-action:hover {
-  background: transparent;
-  color: var(--foreground);
+.casting-workspace-footer > div {
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .manual-coin-button {
   display: grid;
@@ -176,8 +124,6 @@
   gap: 0.375rem;
   padding: 0;
   border-color: transparent;
-  border-radius: 9999px;
-  outline-offset: 2px;
   background: transparent;
   color: inherit;
   text-transform: none;
@@ -192,86 +138,15 @@
 .manual-coin-button > .coin-face {
   pointer-events: none;
 }
-.manual-coin-button > span:not(.coin-face) {
-  margin-top: 0;
-  white-space: nowrap;
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
 .manual-coin-button:focus-visible {
   outline: 2px solid var(--ring);
   outline-offset: 2px;
 }
-.casting-workspace-header [role='group'] {
-  min-width: 0;
-}
-@media (max-width: 420px) {
-  .casting-workspace-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  .casting-workspace-header [role='group'] {
-    max-width: 100%;
-  }
-  .casting-workspace-header [role='group'] button {
-    min-height: 44px;
-    padding-inline: 0.65rem;
-    font-size: 0.8rem;
-  }
-  .casting-result-region {
-    height: 104px;
-    min-height: 104px;
-  }
-  .casting-coin-workspace-stage {
-    grid-template-rows: 232px 104px;
-  }
-  .casting-hexagram-column {
-    /* height: 300px; */
-    /* min-height: 300px; */
-    padding-block: 0.5rem;
-  }
-  .casting-workspace-footer {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 44px 44px;
-    gap: 0.5rem;
-    padding: 0.75rem;
-  }
-  .casting-workspace-footer .casting-back-action {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .casting-workspace-footer .casting-primary-action {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
-    min-width: 0;
-    padding-inline: 0.5rem;
-    font-size: 0.7rem;
-    letter-spacing: normal;
-  }
-  .casting-workspace-footer .casting-reset-action {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    justify-self: end;
-  }
-}
 @media (min-width: 768px) {
   .casting-workspace-content {
     grid-template-columns: minmax(220px, 35%) minmax(0, 1fr);
-    min-height: 270px;
   }
   .casting-hexagram-column {
-    border-right: 1px solid var(--border);
-    border-bottom: 0;
-    padding: 1.5rem;
-  }
-  .casting-hexagram-column {
-    /* height: 313px;
-    min-height: 313px; */
-  }
-  .casting-coin-workspace-stage {
-    grid-template-rows: 232px 96px;
+    border-right: 0;
   }
 }
