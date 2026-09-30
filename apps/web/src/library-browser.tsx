@@ -62,7 +62,7 @@ export function LibraryPage() {
   const categoryLabel = categories.find(item => item.id === category)?.label ?? 'Thư viện';
 
   return (
-    <main className="route-page route-page--reference flex flex-col gap-6">
+    <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
         <Badge variant="secondary">Cẩm nang Lục Hào</Badge>
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">Thư viện</h1>
@@ -74,18 +74,20 @@ export function LibraryPage() {
       <div className="grid items-start gap-6 lg:grid-cols-12">
         <Card className="min-w-0 lg:col-span-8">
           <CardHeader>
-            <CardTitle>Tra cứu tri thức</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Tra cứu tri thức
+            </CardTitle>
             <CardDescription>Chọn danh mục và tìm theo tên hoặc nội dung.</CardDescription>
           </CardHeader>
           <CardContent className="flex min-w-0 flex-col gap-6">
             <Tabs value={category} onValueChange={value => value && setCategory(value as Category)}>
               <TabsList
                 variant="line"
-                className="grid h-auto w-full grid-cols-2 sm:flex sm:w-fit"
+                className="grid h-auto! w-full grid-cols-2 sm:flex sm:w-fit"
                 aria-label="Danh mục tri thức"
               >
                 {categories.map(({ id, label }) => (
-                  <TabsTrigger key={id} value={id}>
+                  <TabsTrigger key={id} value={id} className="min-h-11">
                     {label}
                   </TabsTrigger>
                 ))}
@@ -105,9 +107,11 @@ export function LibraryPage() {
                   placeholder="Tìm trong thư viện"
                 />
                 {query && (
-                  <InputGroupAddon align="inline-end">
+                  <InputGroupAddon align="inline-end" className="py-0">
+                    {/* The dialog-like clear control keeps the 44px touch target required by ui-layout.md. */}
                     <InputGroupButton
                       size="icon-sm"
+                      className="size-11"
                       onClick={() => setQuery('')}
                       aria-label="Xóa nội dung tìm kiếm"
                     >
@@ -120,6 +124,7 @@ export function LibraryPage() {
             {category === 'rules' && (
               <ToggleGroup
                 aria-label="Lọc quy tắc"
+                size="lg"
                 value={[ruleFilter]}
                 onValueChange={value =>
                   setRuleFilter((value[0] as RuleFilter | undefined) ?? 'all')
@@ -137,7 +142,9 @@ export function LibraryPage() {
         </Card>
         <Card className="lg:col-span-4">
           <CardHeader>
-            <CardTitle>{categoryLabel}</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              {categoryLabel}
+            </CardTitle>
             <CardDescription>Tri thức tham khảo có sẵn trên thiết bị.</CardDescription>
             <CardAction>
               <Badge variant="outline" aria-live="polite">
@@ -161,7 +168,9 @@ export function LibraryPage() {
           {shown.map(record => (
             <Card key={record.id} size="sm" className="min-w-0">
               <CardHeader>
-                <CardTitle>{formatName(recordName(record))}</CardTitle>
+                <CardTitle role="heading" aria-level={3}>
+                  {formatName(recordName(record))}
+                </CardTitle>
                 <CardDescription className="line-clamp-3">
                   {recordDescription(record)}
                 </CardDescription>
@@ -193,14 +202,16 @@ export function LibraryPage() {
       ) : (
         <Empty>
           <EmptyHeader>
-            <EmptyTitle>Không tìm thấy mục nào</EmptyTitle>
+            <EmptyTitle role="heading" aria-level={2}>
+              Không tìm thấy mục nào
+            </EmptyTitle>
             <EmptyDescription>
               Thử tên khác hoặc xóa nội dung tìm kiếm để xem toàn bộ danh mục.
             </EmptyDescription>
           </EmptyHeader>
           {query && (
             <EmptyContent>
-              <Button variant="outline" onClick={() => setQuery('')}>
+              <Button variant="outline" size="lg" onClick={() => setQuery('')}>
                 Xóa nội dung tìm kiếm
               </Button>
             </EmptyContent>

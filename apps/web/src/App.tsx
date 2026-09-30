@@ -56,7 +56,7 @@ export default function App() {
   }
 
   return (
-    <main className="route-page route-page--reading flex flex-col gap-6">
+    <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
         <Badge variant="secondary">Không gian suy ngẫm</Badge>
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
@@ -71,7 +71,9 @@ export default function App() {
         {reading ? (
           <Card className="min-w-0 lg:col-span-7">
             <CardHeader>
-              <CardTitle>Quẻ hiện tại</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Quẻ hiện tại
+              </CardTitle>
               <CardDescription>{reading.question || 'Quẻ chưa đặt tên'}</CardDescription>
               <CardAction>
                 <Badge variant="secondary">Trong phiên này</Badge>
@@ -110,7 +112,9 @@ export default function App() {
         ) : (
           <Card className="min-w-0 lg:col-span-7">
             <CardHeader>
-              <CardTitle>Gieo quẻ mới</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Gieo quẻ mới
+              </CardTitle>
               <CardDescription>
                 Đặt câu hỏi nếu muốn, rồi chọn cách lập quẻ phù hợp.
               </CardDescription>
@@ -182,7 +186,9 @@ export default function App() {
         <div className="grid min-w-0 gap-6 lg:col-span-5">
           <Card>
             <CardHeader>
-              <CardTitle>Quy trình</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Quy trình
+              </CardTitle>
               <CardDescription>Ba bước để xem một quẻ Lục Hào.</CardDescription>
             </CardHeader>
             <CardContent>
@@ -204,7 +210,9 @@ export default function App() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Thư viện tri thức</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Thư viện tri thức
+              </CardTitle>
               <CardDescription>
                 Quẻ, quái, thuật ngữ và quy tắc được tổ chức để tra cứu.
               </CardDescription>

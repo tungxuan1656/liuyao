@@ -13,7 +13,7 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 ### Component system
 
 - The web routes use official **shadcn/ui** components with **Base UI** primitives and preset **`b59jumGwPA`**.
-- The preset selects **Sera**, neutral base/theme/chart colors, Lucide icons, Noto Sans body text, and Noto Serif headings. Use its default radius and subtle menu accent.
+- The preset selects **Sera**: neutral base, taupe theme, neutral charts, Lucide icons, Noto Sans body text, Noto Serif headings, and a square radius. Use its subtle menu accent. Verify the installed values with `pnpm dlx shadcn@latest preset resolve`.
 - Enable the preset's pointer-cursor option. Use semantic theme tokens and built-in component variants for controls.
 - Use the installed preset surfaces, typography, borders, and spacing. Avoid ornamental frames, paper textures, metallic gradients, and decorative shadows.
 - Application layouts compose shadcn components. Domain renderers cover coin faces, yao symbols, and hexagram geometry.
@@ -126,11 +126,11 @@ Used during active line input before calculation. Governed by the rules in `read
 - **Navigation safety semantics**:
   - **Quay lại**: Về bước nhập trước trong luồng tuần tự và giữ các hào đã nhập.
   - **Xóa các hào**: Xóa toàn bộ hào đã nhập nhưng giữ nguyên phương pháp lập quẻ.
-  - **Hủy / Rời đi**: Bỏ dữ liệu hào đang nhập và về trang gieo quẻ (`/`). Nếu đã nhập hào, nút `[ Hủy ]` mở hộp thoại: _"Bỏ các hào đang nhập và quay lại trang gieo quẻ?"_.
+  - **Hủy / Rời đi**: Bỏ dữ liệu hào đang nhập và về trang gieo quẻ (`/`). Nút `[ Hủy ]` mở hộp thoại xác nhận: _"Bỏ các hào đang nhập và rời khỏi phiên gieo quẻ?"_ khi đã nhập hào, hoặc _"Bỏ câu hỏi và phương pháp gieo quẻ rồi rời khỏi phiên gieo quẻ?"_ khi chỉ có câu hỏi hoặc phương pháp.
   - **Navigation Protection**:
     - _Điều hướng trong ứng dụng_: Chặn chuyển khỏi `/casting` khi đã nhập hào và yêu cầu xác nhận.
     - _Đóng hoặc tải lại trình duyệt_: Dùng sự kiện `beforeunload` khi đã nhập hào để yêu cầu xác nhận nếu trình duyệt hỗ trợ.
-  - Khi hoàn tất hào sáu hoặc chọn `[ Tính quẻ ]` ở chế độ nhập trực tiếp, ứng dụng tính quẻ và mở kết quả tại `/`.
+  - Khi hoàn tất hào sáu hoặc chọn `[ Tính quẻ ]` ở chế độ nhập trực tiếp, ứng dụng tính quẻ và mở kết quả tại `/result`.
 
 ---
 
@@ -215,8 +215,8 @@ The result view presents deterministic facts separated from explanatory prose, m
 ### Custom domain components
 
 - `<YaoSymbol polarity="yin"|"yang" changing={boolean} />`: Shared CSS line geometry and SVG moving markers across casting, direct input, and result boards. Reserve a fixed 24px marker column on every line. Draw moving markers as high-contrast `○` (yang) or `✕` (yin) on the same neutral surface as the strokes; do not enclose them in solid tiles or dim the strokes. Keep markers separate from names and bars; never rely on color alone.
-- `<HexagramBoard reading={result} onSelectLine={(lineIndex) => ...} />`: Responsive 6-line board with upper/lower trigram indicators.
-- `<AutomaticCastingPanel step={step} lines={lines} tosses={tosses} onBack={...} onNext={...} onToss={...} onFinish={...} />`:
+- `<HexagramBoard result={result} changed={boolean} trigramIds={{ upper, lower }} select={selectFact} />`: Responsive 6-line board with upper/lower trigram indicators.
+- `<AutomaticCastingPanel step={step} tosses={tosses} method={method} busy={busy} onMethodChange={...} onBack={...} onNext={...} onToss={...} onFinish={...} onAnimationComplete={...} onReset={...} />`:
   - Shows the current line number and six-line toss progress.
   - Presents automatic outcomes with canonical names and symbols, without numeric values. Marks the current line in the forming hexagram and reveals each line only after its animation completes.
   - Provides `[ Quay lại ]`, disabled on the first line. For a newly revealed line with an uncast successor, provides `[ Gieo hào tiếp ]` and begins the next toss with that activation. For a revisited line whose successor is already cast, provides `[ Tiếp theo ]` to show saved evidence without another toss. The first uncast slot provides `[ Gieo hào ]`; the completed sixth slot provides `[ Tính quẻ ]`.

@@ -43,7 +43,9 @@ export function HexagramBoard({
   return (
     <Card aria-label={changed ? 'Quẻ biến' : 'Quẻ chính'} className="min-w-0">
       <CardHeader>
-        <CardTitle>{changed ? 'Quẻ biến' : 'Quẻ chính'}</CardTitle>
+        <CardTitle role="heading" aria-level={2}>
+          {changed ? 'Quẻ biến' : 'Quẻ chính'}
+        </CardTitle>
         <CardDescription>
           {changed ? 'Sau khi đổi các hào động' : 'Sáu hào từ dưới lên trên'}
         </CardDescription>
@@ -68,12 +70,14 @@ export function HexagramBoard({
             <>
               <Button
                 variant="outline"
+                size="lg"
                 render={<Link to={ROUTES.libraryDetail('trigram', upperId)} />}
               >
                 Ngoại quái · {trigramLabel(upperId)}
               </Button>
               <Button
                 variant="outline"
+                size="lg"
                 render={<Link to={ROUTES.libraryDetail('trigram', lowerId)} />}
               >
                 Nội quái · {trigramLabel(lowerId)}
@@ -115,7 +119,7 @@ export function HexagramBoard({
         )}
         <Separator />
         <ol
-          className="flex flex-col"
+          className="flex flex-col divide-y"
           aria-label={
             changed
               ? 'Tính âm dương sau biến đổi; hào sáu ở trên, hào một ở dưới'
@@ -128,7 +132,7 @@ export function HexagramBoard({
             return (
               <li
                 key={line.position}
-                className="grid min-h-12 min-w-0 grid-cols-[2rem_5rem_minmax(0,1fr)] items-center gap-2 border-b last:border-b-0"
+                className="grid min-h-12 min-w-0 grid-cols-[2rem_5rem_minmax(0,1fr)] items-center gap-2"
               >
                 <span className="text-sm font-medium">
                   {changed

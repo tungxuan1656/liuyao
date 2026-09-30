@@ -48,16 +48,20 @@ export function LibraryDetailPage() {
 
   if (!record)
     return (
-      <main className="route-page route-page--detail">
+      <main className="route-page">
         <Empty>
           <EmptyHeader>
-            <EmptyTitle>Không tìm thấy mục</EmptyTitle>
+            <EmptyTitle role="heading" aria-level={1}>
+              Không tìm thấy mục
+            </EmptyTitle>
             <EmptyDescription>
               Địa chỉ này không khớp với mục nào trong thư viện trên thiết bị.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button render={<Link to={ROUTES.library} />}>Mở thư viện</Button>
+            <Button size="lg" render={<Link to={ROUTES.library} />}>
+              Mở thư viện
+            </Button>
           </EmptyContent>
         </Empty>
       </main>
@@ -76,7 +80,7 @@ export function LibraryDetailPage() {
     'upperTrigramId' in record ? [record.upperTrigramId, record.lowerTrigramId] : [];
 
   return (
-    <main className="route-page route-page--detail flex flex-col gap-6">
+    <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
         <Badge variant="secondary">Thư viện / {category}</Badge>
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
@@ -90,7 +94,9 @@ export function LibraryDetailPage() {
       <div className="grid items-start gap-6 lg:grid-cols-12">
         <Card className="min-w-0 lg:col-span-8">
           <CardHeader>
-            <CardTitle>Tổng quan</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Tổng quan
+            </CardTitle>
             <CardDescription>
               {category}
               {recordMeta ? ` · ${recordMeta}` : ''}
@@ -104,11 +110,13 @@ export function LibraryDetailPage() {
 
         <Card className="lg:col-span-4">
           <CardHeader>
-            <CardTitle>Tra cứu tiếp</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Tra cứu tiếp
+            </CardTitle>
             <CardDescription>Xem các mục khác trong cẩm nang.</CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button variant="outline" render={<Link to={ROUTES.library} />}>
+            <Button variant="outline" size="lg" render={<Link to={ROUTES.library} />}>
               Mở thư viện <ArrowRight data-icon="inline-end" />
             </Button>
           </CardFooter>
@@ -117,7 +125,9 @@ export function LibraryDetailPage() {
         {trigramIds.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>
-              <CardTitle>Gồm hai quái</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Gồm hai quái
+              </CardTitle>
               <CardDescription>Ngoại quái ở trên, nội quái ở dưới.</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-3 sm:grid-cols-2">
@@ -144,7 +154,9 @@ export function LibraryDetailPage() {
         {related.length > 0 && trigramIds.length === 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>
-              <CardTitle>Quẻ liên quan</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Quẻ liên quan
+              </CardTitle>
               <CardDescription>{related.length} quẻ liên kết với mục này.</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-3 sm:grid-cols-2">
@@ -169,7 +181,9 @@ export function LibraryDetailPage() {
         {applicableRules.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>
-              <CardTitle>Quy tắc áp dụng</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Quy tắc áp dụng
+              </CardTitle>
               <CardDescription>Quy tắc tính liên quan đến mục này.</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-3">
@@ -190,16 +204,18 @@ export function LibraryDetailPage() {
 
         <Card className="min-w-0 lg:col-span-12">
           <CardHeader>
-            <CardTitle>Nguồn và vị trí tra cứu</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Nguồn và vị trí tra cứu
+            </CardTitle>
             <CardDescription>Thông tin xuất xứ của mục tham khảo.</CardDescription>
           </CardHeader>
           <CardContent>
             {references.length > 0 ? (
-              <div className="grid items-start gap-4 md:grid-cols-2">
+              <div className="flex flex-col divide-y">
                 {references.map(reference => (
                   <article
                     key={reference.id}
-                    className="flex flex-col gap-3 border-b pb-4 last:border-b-0 last:pb-0"
+                    className="flex flex-col gap-3 py-4 first:pt-0 last:pb-0"
                   >
                     <div>
                       <h3 className="font-semibold">{reference.source.title}</h3>

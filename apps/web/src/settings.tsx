@@ -86,7 +86,7 @@ export function SettingsPage() {
   }
 
   return (
-    <main className="route-page route-page--reference flex flex-col gap-6">
+    <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
         <Badge variant="secondary">Thông tin ứng dụng</Badge>
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">Cài đặt</h1>
@@ -98,7 +98,9 @@ export function SettingsPage() {
       <div className="grid items-start gap-6 lg:grid-cols-12">
         <Card className="lg:col-span-7">
           <CardHeader>
-            <CardTitle>Trạng thái hệ thống</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Trạng thái hệ thống
+            </CardTitle>
             <CardDescription>Thông tin do trình duyệt và ứng dụng báo cáo.</CardDescription>
           </CardHeader>
           <CardContent>
@@ -164,7 +166,9 @@ export function SettingsPage() {
 
         <Card className="lg:col-span-5">
           <CardHeader>
-            <CardTitle>Phiên bản</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Phiên bản
+            </CardTitle>
             <CardDescription>Phần mềm và bộ quy tắc cục bộ.</CardDescription>
           </CardHeader>
           <CardContent>
@@ -191,7 +195,9 @@ export function SettingsPage() {
 
         <Card className="lg:col-span-8">
           <CardHeader>
-            <CardTitle>Quy ước gieo quẻ</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Quy ước gieo quẻ
+            </CardTitle>
             <CardDescription>Các quy tắc cố định trong phiên bản hiện tại.</CardDescription>
           </CardHeader>
           <CardContent>
@@ -214,7 +220,9 @@ export function SettingsPage() {
 
         <Card className="lg:col-span-4">
           <CardHeader>
-            <CardTitle>Quyền riêng tư</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              Quyền riêng tư
+            </CardTitle>
             <CardDescription>Dữ liệu chỉ trong phiên hiện tại.</CardDescription>
           </CardHeader>
           <CardContent>

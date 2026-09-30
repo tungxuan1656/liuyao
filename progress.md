@@ -622,3 +622,13 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Remaining**: Physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, complete desktop/mobile flip review, and user preview are unverified. `pnpm test:release` is not defined.
 
 **Next**: Review the PR and perform the remaining visual, assistive-technology, and session-boundary checks.
+
+## 2026-09-30 — PR #52 review fixes
+
+**Result**: Fixed the defects found while reviewing PR #52 against the shadcn and shadcn-ui skills. The automatic-casting primary action no longer clips against the card at 320px; the two-row Library tab list sizes to its content; search clear, rule filters, tab triggers, and remaining default-size buttons reach the 44px target; section titles expose heading roles; list rows use `divide-y`; the mobile casting border seam is 1px; and the dead `route-page--*` modifiers and stale canonical-doc statements are gone.
+
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. Chromium at 320px re-measured the fixed surfaces: footer buttons 0px clipped, tab list 100px with no label overlap and 44px triggers, clear button 44x44, filter toggles 44px, fact buttons 54px, heading roles level 2 (level 3 for Library records), 1px hexagram/coin seam, and no horizontal document overflow. Desktop at 1440px kept the 1280px wrapper, a 52px single-row tab list, and the three-column record grid. `pnpm dlx shadcn@latest preset resolve` confirmed preset `b59jumGwPA`.
+
+**Remaining**: Preview at 360-420px, user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and complete desktop/mobile flip review are still unverified. `pnpm test:release` is not defined.
+
+**Next**: Push the fixes to `refactor/ui-ux-web` for PR #52 review.

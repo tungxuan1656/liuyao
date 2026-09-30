@@ -124,14 +124,16 @@ export function CastingFlow() {
 
   if (!draft) {
     return (
-      <main className="route-page route-page--casting">
+      <main className="route-page">
         <Empty role="status">
           <EmptyHeader>
-            <EmptyTitle>Lập quẻ mới</EmptyTitle>
+            <EmptyTitle role="heading" aria-level={1}>
+              Lập quẻ mới
+            </EmptyTitle>
             <EmptyDescription>Chọn một phương pháp để bắt đầu.</EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button variant="outline" onClick={() => navigate(ROUTES.home)}>
+            <Button variant="outline" size="lg" onClick={() => navigate(ROUTES.home)}>
               Đến trang gieo quẻ
             </Button>
           </EmptyContent>
@@ -144,7 +146,7 @@ export function CastingFlow() {
   const step = Math.min(draft.step, 5);
   const animationGeneration = automaticToss.animationGeneration;
   return (
-    <main className="route-page route-page--casting flex flex-col gap-6">
+    <main className="route-page flex flex-col gap-6">
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div className="flex flex-col gap-2">
           <Badge variant="secondary">
@@ -161,7 +163,7 @@ export function CastingFlow() {
             <p className="max-w-2xl text-muted-foreground">Câu hỏi: {draft.question}</p>
           )}
         </div>
-        <Button type="button" variant="outline" onClick={cancelFlow}>
+        <Button type="button" variant="outline" size="lg" onClick={cancelFlow}>
           Hủy phiên gieo
         </Button>
       </header>
@@ -199,7 +201,7 @@ export function CastingFlow() {
             />
           )}
           {direct && (
-            <Button type="button" variant="ghost" onClick={resetCasting}>
+            <Button type="button" variant="ghost" size="lg" onClick={resetCasting}>
               Xóa các hào
             </Button>
           )}
@@ -212,7 +214,9 @@ export function CastingFlow() {
         </div>
         <Card className="xl:col-span-4">
           <CardHeader>
-            <CardTitle>{direct ? 'Thứ tự sáu hào' : 'Tiến trình gieo'}</CardTitle>
+            <CardTitle role="heading" aria-level={2}>
+              {direct ? 'Thứ tự sáu hào' : 'Tiến trình gieo'}
+            </CardTitle>
             <CardDescription>
               {direct
                 ? 'Nhập từ hào một ở dưới lên hào sáu ở trên.'

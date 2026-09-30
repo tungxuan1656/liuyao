@@ -75,24 +75,23 @@ export function FactInspector({
       <section className="flex flex-col gap-3">
         <h3 className="font-semibold">Quy tắc</h3>
         {rules.length ? (
-          rules.map(rule => (
-            <article
-              key={rule.id}
-              className="flex flex-col gap-2 border-b pb-3 last:border-b-0 last:pb-0"
-            >
-              <h4 className="font-medium">{rule.title}</h4>
-              <p className="text-muted-foreground">{rule.explanation}</p>
-              <code className="break-all text-xs text-muted-foreground">{rule.id}</code>
-              <Button
-                variant="link"
-                size="lg"
-                className="h-auto min-h-11 whitespace-normal text-left"
-                render={<Link to={ROUTES.libraryDetail('rule', rule.id)} />}
-              >
-                Mở quy tắc trong Thư viện
-              </Button>
-            </article>
-          ))
+          <div className="flex flex-col divide-y">
+            {rules.map(rule => (
+              <article key={rule.id} className="flex flex-col gap-2 py-3 first:pt-0 last:pb-0">
+                <h4 className="font-medium">{rule.title}</h4>
+                <p className="text-muted-foreground">{rule.explanation}</p>
+                <code className="break-all text-xs text-muted-foreground">{rule.id}</code>
+                <Button
+                  variant="link"
+                  size="lg"
+                  className="h-auto min-h-11 whitespace-normal text-left"
+                  render={<Link to={ROUTES.libraryDetail('rule', rule.id)} />}
+                >
+                  Mở quy tắc trong Thư viện
+                </Button>
+              </article>
+            ))}
+          </div>
         ) : (
           <p className="text-muted-foreground">Chưa có quy tắc được liên kết với dữ kiện này.</p>
         )}
@@ -101,35 +100,37 @@ export function FactInspector({
       <section className="flex flex-col gap-3">
         <h3 className="font-semibold">Nguồn tham khảo</h3>
         {references.length ? (
-          references.map(reference => {
-            const source = getSource(reference.sourceId);
-            if (!source) return null;
-            const url = sourceUrl(source.provenance);
-            return (
-              <article
-                key={reference.id}
-                className="flex flex-col gap-2 border-b pb-3 last:border-b-0 last:pb-0"
-              >
-                <h4 className="font-medium">{source.title}</h4>
-                <p className="text-muted-foreground">
-                  {source.author}
-                  {reference.location ? ` · ${reference.location}` : ''}
-                </p>
-                {url ? (
-                  <Button
-                    variant="link"
-                    size="lg"
-                    className="h-auto min-h-11 whitespace-normal text-left"
-                    render={<a href={url} target="_blank" rel="noreferrer" />}
-                  >
-                    Mở nguồn tham khảo
-                  </Button>
-                ) : (
-                  <p className="text-muted-foreground">Chỉ có thông tin nguồn</p>
-                )}
-              </article>
-            );
-          })
+          <div className="flex flex-col divide-y">
+            {references.map(reference => {
+              const source = getSource(reference.sourceId);
+              if (!source) return null;
+              const url = sourceUrl(source.provenance);
+              return (
+                <article
+                  key={reference.id}
+                  className="flex flex-col gap-2 py-3 first:pt-0 last:pb-0"
+                >
+                  <h4 className="font-medium">{source.title}</h4>
+                  <p className="text-muted-foreground">
+                    {source.author}
+                    {reference.location ? ` · ${reference.location}` : ''}
+                  </p>
+                  {url ? (
+                    <Button
+                      variant="link"
+                      size="lg"
+                      className="h-auto min-h-11 whitespace-normal text-left"
+                      render={<a href={url} target="_blank" rel="noreferrer" />}
+                    >
+                      Mở nguồn tham khảo
+                    </Button>
+                  ) : (
+                    <p className="text-muted-foreground">Chỉ có thông tin nguồn</p>
+                  )}
+                </article>
+              );
+            })}
+          </div>
         ) : (
           <p className="text-muted-foreground">Chưa ghi nhận nguồn tham khảo cho quy tắc này.</p>
         )}

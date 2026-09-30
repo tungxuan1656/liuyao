@@ -29,7 +29,9 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
   return (
     <Card aria-label="Nhập giá trị hào, bắt đầu từ hào sáu">
       <CardHeader>
-        <CardTitle>Chọn sáu hào</CardTitle>
+        <CardTitle role="heading" aria-level={2}>
+          Chọn sáu hào
+        </CardTitle>
         <CardDescription>Chọn một giá trị cho từng hào. Bắt đầu từ hào sáu.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">

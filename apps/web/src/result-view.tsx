@@ -72,16 +72,20 @@ export function ResultView() {
 
   if (!reading)
     return (
-      <main className="route-page route-page--result">
+      <main className="route-page">
         <Empty>
           <EmptyHeader>
-            <EmptyTitle>Bắt đầu bằng cách gieo quẻ</EmptyTitle>
+            <EmptyTitle role="heading" aria-level={1}>
+              Bắt đầu bằng cách gieo quẻ
+            </EmptyTitle>
             <EmptyDescription>
               Quẻ đã hoàn tất chỉ được giữ trong bộ nhớ của phiên trình duyệt này.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button render={<Link to={ROUTES.home} />}>Đến trang gieo quẻ</Button>
+            <Button size="lg" render={<Link to={ROUTES.home} />}>
+              Đến trang gieo quẻ
+            </Button>
           </EmptyContent>
         </Empty>
       </main>
@@ -98,7 +102,7 @@ export function ResultView() {
     : undefined;
 
   return (
-    <main className="route-page route-page--result flex flex-col gap-6">
+    <main className="route-page flex flex-col gap-6">
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div className="flex min-w-0 flex-col gap-2">
           <Badge variant="secondary">Kết quả gieo quẻ · {reading.result.ruleset}</Badge>
@@ -110,7 +114,7 @@ export function ResultView() {
             hiện tại.
           </p>
         </div>
-        <Button variant="outline" render={<Link to={ROUTES.home} />}>
+        <Button variant="outline" size="lg" render={<Link to={ROUTES.home} />}>
           Trang gieo quẻ
         </Button>
       </header>
@@ -119,7 +123,9 @@ export function ResultView() {
         <div className="grid min-w-0 w-full flex-1 gap-6">
           <Card>
             <CardHeader>
-              <CardTitle>Tổng quan</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Tổng quan
+              </CardTitle>
               <CardDescription>Quẻ được tạo từ sáu hào đã nhập.</CardDescription>
               <CardAction>
                 <Badge variant="outline">Quẻ chính</Badge>
@@ -153,7 +159,9 @@ export function ResultView() {
             ) : (
               <Card>
                 <CardHeader>
-                  <CardTitle>Quẻ biến</CardTitle>
+                  <CardTitle role="heading" aria-level={2}>
+                    Quẻ biến
+                  </CardTitle>
                   <CardDescription>
                     {reading.result.changedHexagramId
                       ? 'Không có thông tin về quẻ biến.'
@@ -166,14 +174,16 @@ export function ResultView() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Thông tin các hào</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Thông tin các hào
+              </CardTitle>
               <CardDescription>Hào sáu ở trên. Mở một dữ kiện để xem cách tính.</CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-col">
+            <CardContent className="flex flex-col divide-y">
               {[...reading.result.lines].reverse().map(line => (
                 <section
                   key={line.position}
-                  className="flex min-w-0 flex-col gap-3 border-b py-4 first:pt-0 last:border-b-0 last:pb-0"
+                  className="flex min-w-0 flex-col gap-3 py-4 first:pt-0 last:pb-0"
                   aria-label={`Hào ${line.position}`}
                 >
                   <div className="flex min-w-0 flex-wrap items-center gap-3">
@@ -233,7 +243,9 @@ export function ResultView() {
         >
           <Card>
             <CardHeader>
-              <CardTitle>Giải thích dữ kiện</CardTitle>
+              <CardTitle role="heading" aria-level={2}>
+                Giải thích dữ kiện
+              </CardTitle>
               <CardDescription>Quy tắc và nguồn liên quan đến mục đang chọn.</CardDescription>
             </CardHeader>
             <CardContent>

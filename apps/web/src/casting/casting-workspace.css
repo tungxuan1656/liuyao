@@ -44,7 +44,9 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  /* Top/left/right only: the coin stage below or beside owns the shared edge. */
   border: 1px solid var(--border);
+  border-bottom: 0;
   background: color-mix(in oklch, var(--muted) 30%, transparent);
 }
 .casting-hexagram-column > section {
@@ -99,6 +101,18 @@
 }
 .casting-workspace-footer button {
   min-height: 44px;
+}
+/* Narrow layouts wrap labels and reflow the action row instead of clipping against the card edge. */
+.casting-workspace-footer button {
+  flex: 0 1 auto;
+  height: auto;
+  min-width: 0;
+  white-space: normal;
+}
+.casting-workspace-footer > div {
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .manual-coin-button {
   display: grid;
