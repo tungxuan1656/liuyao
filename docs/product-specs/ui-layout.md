@@ -12,67 +12,35 @@ Domain behaviors, input validation, result content, reference data schemas, and 
 
 ### Component system
 
-- **Intended replacement:** All web routes use official **shadcn/ui** components with **Base UI** primitives and preset **`b59jufSZGa`**.
+- The web routes use official **shadcn/ui** components with **Base UI** primitives and preset **`b59jumGwPA`**.
 - The preset selects **Sera**, neutral base/theme/chart colors, Lucide icons, Noto Sans body text, and Noto Serif headings. Use its default radius and subtle menu accent.
 - Enable the preset's pointer-cursor option. Use semantic theme tokens and built-in component variants for controls.
-- Use white surfaces, neutral text, subtle borders, and consistent spacing. Avoid ornamental frames, paper textures, metallic gradients, and decorative shadows.
+- Use the installed preset surfaces, typography, borders, and spacing. Avoid ornamental frames, paper textures, metallic gradients, and decorative shadows.
 - Application layouts compose shadcn components. Domain renderers cover coin faces, yao symbols, and hexagram geometry.
 - Base UI owns control behavior, modal focus, and keyboard interactions. Remove Radix dependencies and duplicate control implementations.
 - Scope includes Home, all casting modes, results, Library, Settings, navigation, confirmations, and PWA feedback.
 - The rules below describe the target interface. Audit the implementation against them; do not treat a documented target as proof that it is implemented.
 - Single codebase with responsive CSS utility classes (Tailwind breakpoints). Never maintain separate codebases or separate component trees for mobile and desktop.
 
-### Shared composition and spacing contract
+### Bento composition and responsive layout
 
-The reference pattern gallery is an example of consistent components, not a page layout to copy. Do not arrange product routes as a masonry gallery. Assemble each route around its task, using the same hierarchy within equivalent cards, forms, lists, and action areas.
+The main routes arrange task-relevant shadcn `Card` components in an asymmetric grid. A wider card holds the current action or primary evidence; narrower cards provide context, related links, or status. Cards may have different natural heights. Do not add empty cells, decorative data, fixed heights, or nested full-inset cards merely to complete a rectangle.
 
-| Role          | Spacing | Application                                                                              |
-| ------------- | ------: | ---------------------------------------------------------------------------------------- |
-| Tight         |     4px | A label and its value, or an icon and its adjacent text.                                 |
-| Related       |     8px | A heading and its description; a field label and control; text within one list item.     |
-| Control group |    12px | Adjacent choices, compact result facts, and closely related rows.                        |
-| Component     |    16px | Fields in one form, regular list rows, and content inside a compact panel.               |
-| Content group |    24px | Separate groups inside a card; sibling panels in a responsive grid.                      |
-| Section       |    32px | Distinct sections on one route. Use 24px on screens below 768px.                         |
-| Major break   |    48px | A deliberately separate route-level region; never the default gap between every section. |
+- Use `CardHeader`, `CardTitle`, `CardDescription`, `CardAction`, `CardContent`, and `CardFooter` according to each card's content. Keep their installed inset, border, shadow, radius, and type treatment.
+- Use `Button`, `Badge`, `Field`, `InputGroup`, `RadioGroup`, `Tabs`, `ToggleGroup`, `Alert`, `Empty`, `Separator`, and `Sheet` through their installed APIs. Preserve the Sera preset and semantic color tokens. Custom CSS is reserved for route grids, the result breakpoint, and Liu Yao domain graphics.
+- The content wrapper is centered at 1280px maximum, with 16px mobile and 24px desktop gutters. Use a single column on mobile. Desktop grids use twelve columns where the task needs a wider primary card and a narrower companion; reference results use two or three columns when their content fits.
+- Use 24px between major sibling cards, 16px in compact lists, and component-owned spacing within cards. Do not override button or field dimensions to align a screenshot.
+- Headers use one semantic page heading, a short description, and an optional contextual badge. Card titles remain card titles; route headings do not imitate cards.
+- At 320px and wider, keep all content within the viewport. Library tabs use two rows on narrow mobile screens. Rule filters wrap. Casting actions and result facts stay reachable above the fixed mobile navigation.
 
-- Use the 4px spacing scale above for layout. A component can use another value for geometry, such as a coin diameter or a minimum touch target; do not turn that exception into a new page gap.
-- Route content has 16px horizontal gutters below 768px and 24px at or above 768px. Use 16px top and 24px bottom padding on mobile; use 24px top and 32px bottom padding on larger screens. Add safe-area and fixed-navigation clearance separately at the shell level.
-- Route headers use 8px between title and supporting text. A breadcrumb or back action precedes the title by 16px. Separate the route header from its first content section by 24px, on both mobile and desktop.
-- Choose one route-width variant: focused form/reference detail `max-w-2xl` (672px); casting workspace `max-w-4xl` (896px); Library index and wide result `max-w-7xl` (1280px). Center the wrapper. Do not increase its inner padding with viewport width just because unused desktop space exists.
-- Give equivalent surfaces the same geometry: 1px neutral border, white background, no decorative shadow, and the preset radius. Use 16px card padding below 768px and 24px at or above 768px. Nested muted surfaces use 12px or 16px padding, not another full card inset.
-- A card header follows title → short description → optional trailing action. Use 8px between title and description and 16px from the header to the body. A footer action follows the body by 24px. If the header, body, or footer has a divider, keep its inset aligned with the card content.
-- Avoid stacked insets: a route gutter, an outer card, and a nested panel must not each add a full 24px inset on the same axis. Use the nested-surface rule or a divider instead.
-- Keep shadcn preset button, input, textarea, and toggle dimensions and all existing minimum interactive targets. Normalize the gaps around controls, not the controls themselves. A clickable line row stays at least 48px high on compact screens; all other interactive targets stay at least 44 × 44px.
-
-### Reusable content patterns
-
-| Pattern              | Composition                                                                                               | Use and boundary                                                                                                                                 |
-| -------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Route header         | Optional back/breadcrumb, serif page title, concise supporting text.                                      | Same title rhythm across Home, casting, result, Library, details, and Settings. Never use a large blank spacer as a substitute for a header.     |
-| Group card           | Header, related content, optional footer action; identical inset and divider alignment.                   | Forms, casting workspace, grouped result facts, and coherent settings groups. Do not wrap every reference row in another card.                   |
-| Field group          | Visible label, control, nearby hint/error; 8px within a field and 16px between fields.                    | Question, search, direct input, and any settings control. Errors remain adjacent to their field.                                                 |
-| Choice group         | One group label, clearly selected options, consistent 12px choice gap.                                    | Casting method, coin count, direct-line values, and Library filters. Preserve focus and selected state without relying only on color.            |
-| Data row             | Primary text and secondary information aligned to stable columns; 12px internal gap and a subtle divider. | Library results, settings facts, result facts. Keep the same row padding within a list; on mobile stack secondary text rather than shrinking it. |
-| Empty/status block   | Short heading or status, one explanatory sentence, optional next action.                                  | No reading, no Library results, loading/error, PWA status. Keep the action tied to the state rather than adding a blank panel.                   |
-| Domain visualization | Coin, yao, or hexagram renderer inside the same surface, type, and spacing hierarchy.                     | Domain geometry is custom; card, row, label, divider, and action patterns are not custom per route.                                              |
-
-Use Noto Serif for page headings and hexagram names. Use Noto Sans for card titles, labels, controls, body text, and data. Preserve the current self-hosted font choices; the reference gallery does not replace LiuYao typography. Use consistent type roles instead of copying the gallery's small uppercase text everywhere: page heading, section/card heading, body, then secondary caption. Critical values and line names remain readable at body size or larger; do not render them as faint captions.
-
-### Route application and responsive density
-
-| Route                                       | Width and composition                                                                                                     | Mobile treatment                                                                                      |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Home (`/`, no reading)                      | Focused form width; one form card with question, method group, then primary action.                                       | Single column; 16px card inset; no empty hero-height spacer.                                          |
-| Casting (`/casting`)                        | Workspace width; shared card hierarchy across automatic and manual modes. Direct input keeps six vertically ordered rows. | Compact forming hexagram above coins; 24px section gap; actions after results, not overlaid on coins. |
-| Result (`/`, completed)                     | Wide width; board and inspector split at 900px as described below.                                                        | Board first, facts in a bottom sheet; line targets remain at least 48px high.                         |
-| Library (`/library`)                        | Wide width; search, tabs, then consistent list/grid of reference records.                                                 | One column, same route gutter and row rhythm; search and tabs do not create a second page inset.      |
-| Library detail (`/library/:entityType/:id`) | Focused detail width; back action, heading, structured reference content.                                                 | Same route header and card inset as Home; do not jump to a larger nested detail-card inset.           |
-| Settings (`/settings`)                      | Focused width; distinct groups separated by section spacing; data rows use one shared rhythm.                             | One column; section gap 24px; avoid oversized spaces between title and first group.                   |
-
-- Change the number of columns only when the content needs it. Desktop uses 24px between sibling panels but does not enlarge every field or internal list gap.
-- Do not force equal heights across unrelated cards. Align repeated headers, insets, row padding, and actions; allow content to determine card height.
-- At 320px and wider, prevent horizontal scrolling in the casting workspace, direct choices, Library tabs, and result facts. Preserve readable line names and control hit areas; wrap or stack secondary text first.
+| Route                                       | Card arrangement                                                                                                                                                                                                        |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home (`/`)                                  | Primary form or current-reading card spans the larger desktop column. Process and Library cards occupy the companion column; the privacy note follows.                                                                  |
+| Casting (`/casting`)                        | The existing shared casting workspace remains the primary card. A concise progress card occupies the companion column on wide screens and follows the workspace on mobile. Direct input retains six vertical line rows. |
+| Result (`/result`)                          | Summary, primary and changed hexagram boards, and line facts form the main column. The ruleset-backed fact inspector is a persistent companion at 900px and wider, and a bottom `Sheet` below that breakpoint.          |
+| Library (`/library`)                        | A search and category card leads, with a compact category-context card beside it. Reference records form a one-, two-, or three-column grid by available width.                                                         |
+| Library detail (`/library/:entityType/:id`) | Overview, related figures, applicable rules, and sources occupy separate content cards. Long source lists flow naturally.                                                                                               |
+| Settings (`/settings`)                      | System state, versions, conventions, and privacy occupy cards sized by content.                                                                                                                                         |
 
 ### Typography
 
@@ -100,88 +68,27 @@ Use Noto Serif for page headings and hexagram names. Use Noto Sans for card titl
 
 ## Information architecture and navigation hierarchy
 
-The application organizes all product views into three distinct architectural levels:
+The three root destinations are Gieo quẻ (`/`), Thư viện (`/library`), and Cài đặt (`/settings`). `/casting` and `/result` belong to Gieo quẻ; `/library/:entityType/:id` belongs to Thư viện.
 
-```text
-Level 0: Root Destinations (Bottom Nav on Mobile / Top Nav on Desktop)
-├── Tab 1: Gieo quẻ (Phiên hiện tại) ──> Path: /
-├── Tab 2: Thư viện (Tra cứu)         ──> Path: /library
-└── Tab 3: Cài đặt (Chẩn đoán)        ──> Path: /settings
+- Below 768px, a compact top bar shows the brand on root destinations and a contextual back link on casting, result, and Library detail. A fixed three-tab bottom navigation remains visible on every route, including casting. The shell reserves the tab bar height and safe-area inset below content.
+- At 768px and wider, the top header shows the brand, three destination links, and connection status. There is no application back link in this header. The header stays in document flow.
+- The current root destination is indicated with `aria-current="page"` in both navigation variants. In-app navigation during an unfinished cast remains protected by the confirmation behavior in `reading-flow.md`.
+- Route changes scroll to the beginning of the new page. A completed reading persists across root-tab navigation within the browser session. Reloading the application can clear it.
+- Library details support direct links and browser history. On mobile their top-bar back link leads to the Library root; on desktop users navigate through the top header or browser history.
 
-Level 1: Sub-Pages (Deep Reference Browsing)
-└── Chi tiết thư viện (mục/quy tắc)  ──> Path: /library/:entityType/:id
-    (Giữ điều hướng gốc; thanh trên cùng hiển thị [ < Quay lại thư viện ])
+### Root destination content
 
-Level 2: Luồng tập trung (Phiên nhập liệu)
-└── Luồng lập quẻ                    ──> Path: /casting
-    (Ẩn điều hướng gốc; thanh trên cùng hiển thị [ Hủy ])
-```
-
----
-
-### Level 0 — Root destinations
-
-Root destinations represent persistent, top-level hubs:
-
-- **Navigation modes**:
-  - **Bottom Nav (`< 768px`)**: Fixed Bottom Navigation Bar (`border-t bg-background/95 backdrop-blur z-50`).
-    - Height: `h-16` plus `env(safe-area-inset-bottom)`.
-    - Main scrollable content must have bottom padding accounting for `h-16 + env(safe-area-inset-bottom)` to prevent content occlusion.
-  - **Top Nav (`>= 768px`)**: Fixed Top Header Navigation Bar (`h-14 border-b bg-background/95 backdrop-blur z-50`).
-    - Placed horizontally with brand mark on the left, tab links in the center/right, and network status badge.
-- **State preservation across root tabs**:
-  - Switching between root destinations (Gieo quẻ, Thư viện, Cài đặt) must not destroy an active completed reading.
-  - An active reading result is preserved in browser memory across tab switches until the user explicitly triggers `[ Lập quẻ mới ]` or reloads the application.
-
-#### 1. Tab 1: Gieo quẻ (`/`)
-
-Represents the primary divination workspace. Follows states defined in `reading-flow.md` and `reading-result.md`:
-
-- **Trạng thái bắt đầu gieo quẻ** (khi chưa có kết quả trong bộ nhớ):
-  - Hiển thị ô nhập câu hỏi không bắt buộc, lựa chọn phương pháp (Gieo tự động, Gieo thủ công, Nhập trực tiếp) và nút `[ Bắt đầu gieo quẻ ]` để mở luồng `/casting`.
-  - **Intended composition:** Use one centered `Card`, with `CardHeader`, `CardContent`, and `CardFooter`. The content width is approximately 720px.
-  - Use `FieldGroup`, `Field`, `Textarea`, and a labeled `RadioGroup`. Show one full-width primary action and one concise session-storage note.
-  - Use the neutral preset for navigation and form controls. Keep the heading and optional question prominent.
-- **Trạng thái kết quả** (khi có quẻ đã tính trong bộ nhớ):
-  - Displays the full Hexagram Result Board (see Result Layout below).
-  - Phần đầu trang hiển thị nút `[ Lập quẻ mới ]`. Nút này mở hộp thoại xác nhận trước khi thay quẻ trong bộ nhớ.
-
-#### 2. Tab 2: Thư viện (`/library`)
-
-The read-only knowledge reference hub (behavior defined in `knowledge-browser.md`):
-
-- Local search input matching canonical Vietnamese names and reviewed Vietnamese aliases.
-- Điều hướng danh mục bằng `Tabs`: _Quẻ_ | _Quái_ | _Thuật ngữ_ | _Quy tắc_.
-- Grid/list of reference cards. Tapping any card opens its Level 1 Sub-Page.
-
-#### 3. Tab 3: Cài đặt (`/settings`)
-
-Diagnostics and system state (content defined in `settings.md`):
-
-- PWA install prompt button (when supported by browser).
-- Online/offline indicator and cache readiness state.
-- Version stamping: web app, `@liuyao/core`, `@liuyao/knowledge`, ruleset ID `liuyao-standard-v1`.
-- Legal, privacy, and licensing links.
-
----
-
-### Level 1 — Trang con (Tra cứu chi tiết)
-
-- Dùng để tra cứu từng quẻ, quái, thuật ngữ và định nghĩa quy tắc trong Thư viện.
-- **Navigation state**:
-  - The Bottom Navigation Bar **remains visible** on mobile so users can switch tabs at any time.
-  - Thanh trên cùng có nút `[ Quay lại thư viện ]`.
-  - Supports deep-linking, browser history navigation, and direct route reloads.
-
----
+- Home offers optional question input, the three casting methods, and a primary action. A completed reading replaces the form with the current hexagram and an explicit confirmed new-reading action.
+- Library offers local search, category tabs, optional rule filters, and reference record cards. Each record has a clear detail link.
+- Settings presents browser state, PWA install/update availability, package and ruleset versions, casting conventions, privacy, and product links.
 
 ### Level 2 — Luồng tập trung: Nhập hào (`/casting`)
 
 Used during active line input before calculation. Governed by the rules in `reading-flow.md`:
 
 - **Navigation state**:
-  - The primary Root Navigation (Bottom Nav) is **strictly hidden** to eliminate distraction and prevent accidental draft loss.
-  - Thanh trên cùng có nút `[ Hủy ]` và trạng thái nhập liệu.
+  - The mobile root tabs remain visible. The route displays a separate cancel action and a method label. Leaving an unfinished cast still requires confirmation.
+  - The desktop header retains the root destinations; it has no back action.
 - **Input modes**:
   - **Sequential mode (Manual casting & Automatic coin casting)**:
     - Chỉ báo bước: `Hào 1 trên 6` đến `Hào 6 trên 6`.
@@ -232,15 +139,15 @@ Used during active line input before calculation. Governed by the rules in `read
 ### Layout modes
 
 - **Navigation modes**:
-  - Bottom Nav: `< 768px` (mobile viewport with safe-area insets)
-  - Top Nav: `>= 768px` (tablet and desktop viewports)
+  - Mobile top bar and Bottom Nav: `< 768px` (with safe-area insets)
+  - Desktop Top Nav: `>= 768px`
 - **Result display modes**:
   - Single-pane layout: `< 900px` (full-width board with the intended bottom-anchored Base UI Sheet for contextual facts)
   - Split-pane layout: `>= 900px` (Master-Detail split view with persistent Fact Inspector, container max width `max-w-7xl mx-auto`)
 
 ---
 
-### Reading result layout (`/`)
+### Reading result layout (`/result`)
 
 The result view presents deterministic facts separated from explanatory prose, matching `reading-result.md`:
 

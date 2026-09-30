@@ -9,6 +9,15 @@ import {
 } from './lib/pwa-install';
 import { Button } from './components/ui/button';
 import { Alert, AlertTitle, AlertDescription } from './components/ui/alert';
+import { Badge } from './components/ui/badge';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from './components/ui/card';
 
 const appVersion = __APP_VERSION__;
 const coreVersion = __CORE_VERSION__;
@@ -77,188 +86,187 @@ export function SettingsPage() {
   }
 
   return (
-    <main className="mx-auto flex w-full max-w-[45rem] flex-col gap-8 px-4 py-8 text-foreground sm:gap-8 sm:px-6 sm:py-10 md:gap-10 md:py-12">
-      <header className="flex flex-col gap-3">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
-          Lục Hào / Thông tin ứng dụng
-        </p>
-        <h1 className="text-5xl font-serif font-medium tracking-tight text-neutral-900">Cài đặt</h1>
-        <p className="text-neutral-500 leading-relaxed">
-          Xem phiên bản ứng dụng, trạng thái kết nối và quy ước gieo quẻ cố định.
+    <main className="route-page route-page--reference flex flex-col gap-6">
+      <header className="flex flex-col gap-2">
+        <Badge variant="secondary">Thông tin ứng dụng</Badge>
+        <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">Cài đặt</h1>
+        <p className="max-w-2xl text-muted-foreground">
+          Trạng thái thiết bị, phiên bản và các quy ước đang dùng để lập quẻ.
         </p>
       </header>
 
-      <section aria-labelledby="settings-system-heading" className="flex flex-col gap-4">
-        <div className="flex flex-col gap-1 pb-4 border-b border-neutral-100">
-          <h2 className="text-base font-semibold text-neutral-900" id="settings-system-heading">
-            Trạng thái hệ thống
-          </h2>
-          <p className="text-sm text-neutral-500">Thông tin do trình duyệt và ứng dụng báo cáo.</p>
-        </div>
-        <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">Kết nối</dt>
-            <dd className="text-sm font-medium text-neutral-800">
-              {online === null ? 'Trình duyệt chưa báo cáo' : online ? 'Có mạng' : 'Ngoại tuyến'}
-            </dd>
-          </div>
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">
-              Cài đặt ứng dụng
-            </dt>
-            <dd className="text-sm font-medium text-neutral-800">
-              {installed
-                ? 'Đã cài trên thiết bị này'
-                : installSupported === true
-                  ? 'Có thể cài đặt'
-                  : installSupported === false
-                    ? 'Không có lời nhắc cài đặt'
-                    : 'Chưa có thông tin'}
-            </dd>
-          </div>
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">Cập nhật</dt>
-            <dd className="text-sm font-medium text-neutral-800">
-              {updateStatus === 'checking'
-                ? 'Đang kiểm tra…'
-                : updateStatus === 'unsupported'
-                  ? 'Chưa có thông tin'
-                  : updateStatus === 'waiting'
-                    ? 'Bản cập nhật đang chờ'
-                    : 'Chưa có bản cập nhật'}
-            </dd>
-          </div>
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">
-              Hoạt động ngoại tuyến
-            </dt>
-            <dd className="text-sm font-medium text-neutral-800">
-              {pwaSnapshot.offlineReady ? 'Sẵn sàng' : 'Chưa xác nhận'}
-            </dd>
-          </div>
-        </dl>
-        {installPrompt && (
-          <Button type="button" onClick={installApp} className="self-start h-10">
-            Cài đặt ứng dụng
-          </Button>
-        )}
-        {installMessage && (
-          <Alert role="status">
-            <AlertTitle>Trạng thái cài đặt</AlertTitle>
-            <AlertDescription>{installMessage}</AlertDescription>
-          </Alert>
-        )}
-      </section>
+      <div className="grid items-start gap-6 lg:grid-cols-12">
+        <Card className="lg:col-span-7">
+          <CardHeader>
+            <CardTitle>Trạng thái hệ thống</CardTitle>
+            <CardDescription>Thông tin do trình duyệt và ứng dụng báo cáo.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <dl className="grid gap-6 sm:grid-cols-2">
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Kết nối</dt>
+                <dd className="font-medium">
+                  {online === null
+                    ? 'Trình duyệt chưa báo cáo'
+                    : online
+                      ? 'Có mạng'
+                      : 'Ngoại tuyến'}
+                </dd>
+              </div>
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Cài đặt ứng dụng</dt>
+                <dd className="font-medium">
+                  {installed
+                    ? 'Đã cài trên thiết bị này'
+                    : installSupported === true
+                      ? 'Có thể cài đặt'
+                      : installSupported === false
+                        ? 'Không có lời nhắc cài đặt'
+                        : 'Chưa có thông tin'}
+                </dd>
+              </div>
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Cập nhật</dt>
+                <dd className="font-medium">
+                  {updateStatus === 'checking'
+                    ? 'Đang kiểm tra…'
+                    : updateStatus === 'unsupported'
+                      ? 'Chưa có thông tin'
+                      : updateStatus === 'waiting'
+                        ? 'Bản cập nhật đang chờ'
+                        : 'Chưa có bản cập nhật'}
+                </dd>
+              </div>
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Hoạt động ngoại tuyến</dt>
+                <dd className="font-medium">
+                  {pwaSnapshot.offlineReady ? 'Sẵn sàng' : 'Chưa xác nhận'}
+                </dd>
+              </div>
+            </dl>
+          </CardContent>
+          {(installPrompt || installMessage) && (
+            <CardFooter className="flex-col items-start gap-3">
+              {installPrompt && (
+                <Button size="lg" onClick={installApp}>
+                  Cài đặt ứng dụng
+                </Button>
+              )}
+              {installMessage && (
+                <Alert role="status">
+                  <AlertTitle>Trạng thái cài đặt</AlertTitle>
+                  <AlertDescription>{installMessage}</AlertDescription>
+                </Alert>
+              )}
+            </CardFooter>
+          )}
+        </Card>
 
-      <section aria-labelledby="settings-version-heading" className="flex flex-col gap-4">
-        <div className="flex flex-col gap-1 pb-4 border-b border-neutral-100">
-          <h2 className="text-base font-semibold text-neutral-900" id="settings-version-heading">
-            Phiên bản
-          </h2>
-          <p className="text-sm text-neutral-500">Phần mềm cục bộ và quy tắc tính toán.</p>
-        </div>
-        <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">Ứng dụng web</dt>
-            <dd className="text-sm font-medium text-neutral-800">{appVersion}</dd>
-          </div>
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">@liuyao/core</dt>
-            <dd className="text-sm font-medium text-neutral-800">{coreVersion}</dd>
-          </div>
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">
-              @liuyao/knowledge
-            </dt>
-            <dd className="text-sm font-medium text-neutral-800">{KNOWLEDGE_PACKAGE_VERSION}</dd>
-          </div>
-          <div className="flex flex-col gap-1 py-3 border-b border-neutral-50">
-            <dt className="text-[11px] text-neutral-400 uppercase tracking-wider">
-              Mã quy ước tính
-            </dt>
-            <dd className="text-sm font-medium text-neutral-800">
-              <code className="text-xs bg-neutral-100 px-1.5 py-0.5 font-mono">{RULE_SET_ID}</code>
-            </dd>
-          </div>
-        </dl>
-      </section>
+        <Card className="lg:col-span-5">
+          <CardHeader>
+            <CardTitle>Phiên bản</CardTitle>
+            <CardDescription>Phần mềm và bộ quy tắc cục bộ.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <dl className="grid gap-4">
+              <div className="flex flex-wrap justify-between gap-2">
+                <dt className="text-muted-foreground">Ứng dụng web</dt>
+                <dd className="font-medium">{appVersion}</dd>
+              </div>
+              <div className="flex flex-wrap justify-between gap-2">
+                <dt className="text-muted-foreground">@liuyao/core</dt>
+                <dd className="font-medium">{coreVersion}</dd>
+              </div>
+              <div className="flex flex-wrap justify-between gap-2">
+                <dt className="text-muted-foreground">@liuyao/knowledge</dt>
+                <dd className="font-medium">{KNOWLEDGE_PACKAGE_VERSION}</dd>
+              </div>
+              <div className="flex flex-wrap justify-between gap-2">
+                <dt className="text-muted-foreground">Mã quy ước tính</dt>
+                <dd className="break-all font-mono text-xs">{RULE_SET_ID}</dd>
+              </div>
+            </dl>
+          </CardContent>
+        </Card>
 
-      <section aria-labelledby="settings-conventions-heading" className="flex flex-col gap-4">
-        <div className="flex flex-col gap-1 pb-4 border-b border-neutral-100">
-          <h2
-            className="text-base font-semibold text-neutral-900"
-            id="settings-conventions-heading"
-          >
-            Quy ước gieo quẻ
-          </h2>
-          <p className="text-sm text-neutral-500">
-            Các quy tắc này được cố định trong phiên bản hiện tại.
-          </p>
-        </div>
-        <ul className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <li className="flex flex-col gap-2 border border-border p-4 bg-card">
-            <span className="text-[11px] text-neutral-400 uppercase tracking-wider">
-              Thứ tự hào
-            </span>
-            <strong className="text-sm font-medium leading-relaxed text-neutral-800">
-              Từ hào một đến hào sáu, từ dưới lên
-            </strong>
-          </li>
-          <li className="flex flex-col gap-2 border border-border p-4 bg-card">
-            <span className="text-[11px] text-neutral-400 uppercase tracking-wider">Hào động</span>
-            <strong className="text-sm font-medium leading-relaxed text-neutral-800">
-              Lão Âm và Lão Dương
-            </strong>
-          </li>
-          <li className="flex flex-col gap-2 border border-border p-4 bg-card">
-            <span className="text-[11px] text-neutral-400 uppercase tracking-wider">
-              Phân tích lịch
-            </span>
-            <strong className="text-sm font-medium leading-relaxed text-neutral-800">
-              Không có trong phiên bản 1
-            </strong>
-          </li>
-        </ul>
-      </section>
+        <Card className="lg:col-span-8">
+          <CardHeader>
+            <CardTitle>Quy ước gieo quẻ</CardTitle>
+            <CardDescription>Các quy tắc cố định trong phiên bản hiện tại.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <dl className="grid gap-6 sm:grid-cols-2">
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Thứ tự hào</dt>
+                <dd className="font-medium">Từ hào một đến hào sáu, từ dưới lên</dd>
+              </div>
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Hào động</dt>
+                <dd className="font-medium">Lão Âm và Lão Dương</dd>
+              </div>
+              <div className="flex flex-col gap-1">
+                <dt className="text-muted-foreground">Phân tích lịch</dt>
+                <dd className="font-medium">Không có trong phiên bản 1</dd>
+              </div>
+            </dl>
+          </CardContent>
+        </Card>
 
-      <footer className="flex flex-col gap-4 pt-6 border-t border-neutral-100">
-        <p className="text-sm text-neutral-400 leading-relaxed" id="settings-privacy">
-          Câu hỏi gieo quẻ chỉ tồn tại trong phiên trình duyệt này, không được gửi tới tài khoản
-          hoặc dịch vụ đám mây.
-        </p>
-        <nav aria-label="Thông tin sản phẩm" className="flex flex-wrap gap-x-5 gap-y-2">
-          <a
-            className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors no-underline"
-            href="https://github.com/tungxuan1656/liuyao#readme"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Giới thiệu
-          </a>
-          <a
-            className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors no-underline"
-            href="https://github.com/tungxuan1656/liuyao/blob/main/LICENSE"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Giấy phép
-          </a>
-          <a
-            className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors no-underline"
-            href="#settings-privacy"
-          >
-            Quyền riêng tư
-          </a>
-          <a
-            className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors no-underline"
-            href="https://github.com/tungxuan1656/liuyao/blob/main/SECURITY.md"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Bảo mật
-          </a>
-        </nav>
-      </footer>
+        <Card className="lg:col-span-4">
+          <CardHeader>
+            <CardTitle>Quyền riêng tư</CardTitle>
+            <CardDescription>Dữ liệu chỉ trong phiên hiện tại.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p id="settings-privacy" className="text-muted-foreground">
+              Câu hỏi gieo quẻ không được gửi tới tài khoản hoặc dịch vụ đám mây.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <nav aria-label="Thông tin sản phẩm" className="flex flex-wrap gap-3">
+              <Button
+                variant="link"
+                size="lg"
+                render={
+                  <a
+                    href="https://github.com/tungxuan1656/liuyao#readme"
+                    target="_blank"
+                    rel="noreferrer"
+                  />
+                }
+              >
+                Giới thiệu
+              </Button>
+              <Button
+                variant="link"
+                size="lg"
+                render={
+                  <a
+                    href="https://github.com/tungxuan1656/liuyao/blob/main/LICENSE"
+                    target="_blank"
+                    rel="noreferrer"
+                  />
+                }
+              >
+                Giấy phép
+              </Button>
+              <Button
+                variant="link"
+                size="lg"
+                render={
+                  <a
+                    href="https://github.com/tungxuan1656/liuyao/blob/main/SECURITY.md"
+                    target="_blank"
+                    rel="noreferrer"
+                  />
+                }
+              >
+                Bảo mật
+              </Button>
+            </nav>
+          </CardFooter>
+        </Card>
+      </div>
     </main>
   );
 }

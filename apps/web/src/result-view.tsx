@@ -7,7 +7,30 @@ import { FactButton, FactInspector, type FactSelection } from './result-facts';
 import { HexagramBoard } from './result-board';
 import { YaoSymbol } from './components/yao-symbol';
 import { branchName, elementName, hexagramLabel, relativeName, stemName } from './result-labels';
-import { Sheet, SheetContent, SheetDescription, SheetTitle } from './components/ui/sheet';
+import { Badge } from './components/ui/badge';
+import { Button } from './components/ui/button';
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from './components/ui/card';
+import {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyTitle,
+} from './components/ui/empty';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+} from './components/ui/sheet';
 import './components/route-layout.css';
 import './result-view.css';
 
@@ -35,9 +58,7 @@ export function ResultView() {
   useEffect(() => {
     const media = window.matchMedia('(max-width: 899px)');
     const update = () => {
-      if (!media.matches) {
-        requestAnimationFrame(() => returnFocus.current?.focus());
-      }
+      if (!media.matches) requestAnimationFrame(() => returnFocus.current?.focus());
       setCompact(media.matches);
     };
     media.addEventListener('change', update);
@@ -51,20 +72,18 @@ export function ResultView() {
 
   if (!reading)
     return (
-      <main className="route-page route-page--reading text-foreground">
-        <p className="text-xs font-semibold tracking-wider uppercase text-neutral-500 mb-2">
-          Chưa có kết quả
-        </p>
-        <h1 className="text-3xl font-medium mb-4">Bắt đầu bằng cách gieo quẻ</h1>
-        <p className="text-neutral-600 mb-4">
-          Quẻ đã hoàn tất chỉ được giữ trong bộ nhớ của phiên trình duyệt này.
-        </p>
-        <Link
-          className="inline-flex min-h-11 items-center border border-foreground bg-foreground px-4 text-background transition-colors hover:bg-background hover:text-foreground"
-          to={ROUTES.home}
-        >
-          Quay lại trang gieo quẻ
-        </Link>
+      <main className="route-page route-page--result">
+        <Empty>
+          <EmptyHeader>
+            <EmptyTitle>Bắt đầu bằng cách gieo quẻ</EmptyTitle>
+            <EmptyDescription>
+              Quẻ đã hoàn tất chỉ được giữ trong bộ nhớ của phiên trình duyệt này.
+            </EmptyDescription>
+          </EmptyHeader>
+          <EmptyContent>
+            <Button render={<Link to={ROUTES.home} />}>Đến trang gieo quẻ</Button>
+          </EmptyContent>
+        </Empty>
       </main>
     );
 
@@ -79,39 +98,47 @@ export function ResultView() {
     : undefined;
 
   return (
-    <main className="route-page route-page--result grid gap-6 text-foreground">
-      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-border">
-        <div>
-          <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium mb-1">
-            Kết quả gieo quẻ · Quy ước: {reading.result.ruleset}
-          </p>
-          <h1 className="text-2xl md:text-4xl font-medium mt-1 mb-2">
-            {reading.question || 'Quẻ chưa đặt tên'}
+    <main className="route-page route-page--result flex flex-col gap-6">
+      <header className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex min-w-0 flex-col gap-2">
+          <Badge variant="secondary">Kết quả gieo quẻ · {reading.result.ruleset}</Badge>
+          <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
+            {reading.question || hexagramLabel(reading.result.primaryHexagramId)}
           </h1>
-          <p className="max-w-[62ch] text-sm text-neutral-500 m-0">
-            Các dữ kiện được tính từ sáu hào. Quẻ này chỉ được giữ trong bộ nhớ của phiên hiện tại.
+          <p className="max-w-2xl text-muted-foreground">
+            Chọn từng dữ kiện để xem quy tắc và nguồn tham khảo. Quẻ này chỉ được giữ trong phiên
+            hiện tại.
           </p>
         </div>
-        <Link
-          to={ROUTES.home}
-          className="inline-flex min-h-[44px] items-center px-3 text-sm text-neutral-900 hover:text-neutral-600"
-        >
+        <Button variant="outline" render={<Link to={ROUTES.home} />}>
           Trang gieo quẻ
-        </Link>
+        </Button>
       </header>
 
       <div className="result-layout flex min-w-0 items-start gap-6">
         <div className="grid min-w-0 w-full flex-1 gap-6">
-          <FactButton
-            fact={{
-              id: 'result.primaryHexagramId',
-              label: 'Quẻ chính',
-              value: hexagramLabel(reading.result.primaryHexagramId),
-              libraryTarget: { kind: 'hexagram', id: reading.result.primaryHexagramId },
-            }}
-            onSelect={selectFact}
-          />
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle>Tổng quan</CardTitle>
+              <CardDescription>Quẻ được tạo từ sáu hào đã nhập.</CardDescription>
+              <CardAction>
+                <Badge variant="outline">Quẻ chính</Badge>
+              </CardAction>
+            </CardHeader>
+            <CardContent>
+              <FactButton
+                fact={{
+                  id: 'result.primaryHexagramId',
+                  label: 'Quẻ chính',
+                  value: hexagramLabel(reading.result.primaryHexagramId),
+                  libraryTarget: { kind: 'hexagram', id: reading.result.primaryHexagramId },
+                }}
+                onSelect={selectFact}
+              />
+            </CardContent>
+          </Card>
+
+          <div className="grid min-w-0 gap-6 lg:grid-cols-2">
             <HexagramBoard result={reading.result} select={selectFact} />
             {changedHexagram ? (
               <HexagramBoard
@@ -123,61 +150,52 @@ export function ResultView() {
                 }}
                 select={selectFact}
               />
-            ) : reading.result.changedHexagramId ? (
-              <p
-                className="text-sm text-neutral-500 p-4 border-l-2 border-neutral-900"
-                role="status"
-              >
-                Không có thông tin về quẻ biến.
-              </p>
             ) : (
-              <p className="text-sm text-neutral-500 p-4 border-l-2 border-neutral-900">
-                Không có hào động nên quẻ này không có quẻ biến.
-              </p>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Quẻ biến</CardTitle>
+                  <CardDescription>
+                    {reading.result.changedHexagramId
+                      ? 'Không có thông tin về quẻ biến.'
+                      : 'Không có hào động nên quẻ này không có quẻ biến.'}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
             )}
           </div>
 
-          <section className="pt-2" aria-labelledby="line-facts-heading">
-            <div className="flex items-baseline justify-between gap-2 pb-2 mb-2">
-              <h2 id="line-facts-heading" className="text-xl font-medium m-0">
-                Thông tin các hào
-              </h2>
-              <span className="text-xs text-neutral-500">Hào sáu ở trên</span>
-            </div>
-
-            <div className="grid gap-1">
+          <Card>
+            <CardHeader>
+              <CardTitle>Thông tin các hào</CardTitle>
+              <CardDescription>Hào sáu ở trên. Mở một dữ kiện để xem cách tính.</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col">
               {[...reading.result.lines].reverse().map(line => (
-                <div
-                  className="result-line-row grid min-w-0 grid-cols-[2rem_3rem_minmax(0,1fr)] items-center gap-x-2 gap-y-1 border-b border-neutral-100 py-2 last:border-0"
+                <section
                   key={line.position}
+                  className="flex min-w-0 flex-col gap-3 border-b py-4 first:pt-0 last:border-b-0 last:pb-0"
+                  aria-label={`Hào ${line.position}`}
                 >
-                  <div className="w-8 text-center shrink-0">
-                    <span className="text-base font-medium">{line.position}</span>
-                    <small className="block min-h-[0.8rem] text-[0.6rem] font-semibold text-neutral-900">
-                      {line.position === reading.result.shiPosition
-                        ? 'Thế'
-                        : line.position === reading.result.yingPosition
-                          ? 'Ứng'
-                          : ''}
-                    </small>
-                  </div>
-                  <div className="w-12 shrink-0 flex justify-center">
+                  <div className="flex min-w-0 flex-wrap items-center gap-3">
+                    <Badge variant="outline">Hào {line.position}</Badge>
                     <YaoSymbol polarity={line.polarity} changing={line.changing} />
-                  </div>
-
-                  <div className="result-line-value min-w-0 text-right flex flex-col items-end justify-center">
-                    <span className="text-[0.65rem] text-neutral-500 font-medium">
+                    <span className="font-medium">
                       {getYaoName(line.inputValue)}
                       {line.changing ? ' · động' : ''}
                     </span>
+                    {line.position === reading.result.shiPosition && (
+                      <Badge variant="secondary">Thế</Badge>
+                    )}
+                    {line.position === reading.result.yingPosition && (
+                      <Badge variant="secondary">Ứng</Badge>
+                    )}
                     {line.changing && (
-                      <small className="text-neutral-900 text-[0.65rem] mt-0.5">
+                      <span className="text-muted-foreground">
                         → {line.polarity === 'yin' ? 'Dương' : 'Âm'}
-                      </small>
+                      </span>
                     )}
                   </div>
-
-                  <div className="result-line-facts col-span-3 grid min-w-0 grid-cols-3 gap-1 md:gap-2">
+                  <div className="grid min-w-0 gap-2 sm:grid-cols-3">
                     <FactButton
                       fact={{
                         id: 'line.naJiaStem',
@@ -203,37 +221,41 @@ export function ResultView() {
                       onSelect={selectFact}
                     />
                   </div>
-                </div>
+                </section>
               ))}
-            </div>
-          </section>
+            </CardContent>
+          </Card>
         </div>
 
         <aside
-          className="result-fact-inspector hidden sticky top-20 min-h-[350px] w-[min(32%,24rem)] shrink-0 pl-6 border-l border-border"
+          className="result-fact-inspector hidden sticky top-6 w-[min(32%,24rem)] shrink-0"
           aria-label="Giải thích dữ kiện"
         >
-          {selectedFact ? (
-            <FactInspector fact={selectedFact} close={closeInspector} />
-          ) : (
-            <div className="py-4">
-              <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 font-medium mb-2">
-                Giải thích dữ kiện
-              </p>
-              <h2 className="text-xl font-medium mb-2">Khám phá dữ kiện của kết quả</h2>
-              <p className="text-sm text-neutral-500 leading-relaxed mb-4">
-                Chọn dữ kiện được gạch chân để xem quy tắc và nguồn tham khảo.
-              </p>
-              <FactButton
-                fact={{
-                  id: 'result.ruleset',
-                  label: 'Quy ước tính',
-                  value: reading.result.ruleset,
-                }}
-                onSelect={selectFact}
-              />
-            </div>
-          )}
+          <Card>
+            <CardHeader>
+              <CardTitle>Giải thích dữ kiện</CardTitle>
+              <CardDescription>Quy tắc và nguồn liên quan đến mục đang chọn.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              {selectedFact ? (
+                <FactInspector fact={selectedFact} close={closeInspector} />
+              ) : (
+                <div className="flex flex-col gap-4">
+                  <p className="text-muted-foreground">
+                    Chọn một dữ kiện trong bảng quẻ để xem giải thích.
+                  </p>
+                  <FactButton
+                    fact={{
+                      id: 'result.ruleset',
+                      label: 'Quy ước tính',
+                      value: reading.result.ruleset,
+                    }}
+                    onSelect={selectFact}
+                  />
+                </div>
+              )}
+            </CardContent>
+          </Card>
         </aside>
       </div>
 
@@ -244,15 +266,19 @@ export function ResultView() {
         }}
       >
         <SheetContent
-          side={compact ? 'bottom' : 'right'}
+          side="bottom"
           showCloseButton={false}
-          className="border-0 rounded-t-xl lg:rounded-none bg-white p-6 max-h-[85vh] lg:max-h-screen overflow-y-auto w-full lg:max-w-md shadow-none"
+          className="max-h-[85dvh] overflow-y-auto"
         >
           {selectedFact && (
             <>
-              <SheetTitle className="sr-only">Chi tiết dữ kiện: {selectedFact.label}</SheetTitle>
-              <SheetDescription className="sr-only">Quy tắc và nguồn tham khảo</SheetDescription>
-              <FactInspector fact={selectedFact} close={closeInspector} />
+              <SheetHeader>
+                <SheetTitle>Chi tiết dữ kiện: {selectedFact.label}</SheetTitle>
+                <SheetDescription>Quy tắc và nguồn tham khảo</SheetDescription>
+              </SheetHeader>
+              <div className="px-8 pb-8">
+                <FactInspector fact={selectedFact} close={closeInspector} />
+              </div>
             </>
           )}
         </SheetContent>

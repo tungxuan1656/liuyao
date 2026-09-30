@@ -9,6 +9,16 @@ import { DirectCastingPanel } from './direct-casting-panel';
 import { ManualCastingPanel } from './manual-casting-panel';
 import { CastingFlowDialogs } from './casting-flow-dialogs';
 import { Button } from './components/ui/button';
+import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
+import { Badge } from './components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
+import {
+  Empty,
+  EmptyContent,
+  EmptyDescription,
+  EmptyHeader,
+  EmptyTitle,
+} from './components/ui/empty';
 
 export function CastingFlow() {
   const navigate = useNavigate();
@@ -101,7 +111,7 @@ export function CastingFlow() {
     setError('');
   }
 
-  function discardAndGoHome() {
+  function discardAndLeave() {
     automaticToss.cancelAnimation();
     setDraft(null);
     setDiscard(false);
@@ -114,19 +124,18 @@ export function CastingFlow() {
 
   if (!draft) {
     return (
-      <main className="flex flex-col items-center justify-center min-h-[50vh] gap-6 text-center">
-        <h1 className="text-3xl font-medium text-neutral-900 tracking-tight">Lập quẻ mới</h1>
-        <p className="text-neutral-500" role="status">
-          Chọn một phương pháp để bắt đầu.
-        </p>
-        <Button
-          type="button"
-          variant="outline"
-          className="rounded-none border-neutral-200 hover:bg-neutral-100"
-          onClick={() => navigate(ROUTES.home)}
-        >
-          Quay lại trang gieo quẻ
-        </Button>
+      <main className="route-page route-page--casting">
+        <Empty role="status">
+          <EmptyHeader>
+            <EmptyTitle>Lập quẻ mới</EmptyTitle>
+            <EmptyDescription>Chọn một phương pháp để bắt đầu.</EmptyDescription>
+          </EmptyHeader>
+          <EmptyContent>
+            <Button variant="outline" onClick={() => navigate(ROUTES.home)}>
+              Đến trang gieo quẻ
+            </Button>
+          </EmptyContent>
+        </Empty>
       </main>
     );
   }
@@ -135,79 +144,93 @@ export function CastingFlow() {
   const step = Math.min(draft.step, 5);
   const animationGeneration = automaticToss.animationGeneration;
   return (
-    <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 pt-4 pb-6 text-foreground md:gap-8 md:px-6 md:pt-6 md:pb-8">
-      <header className="-mb-2 flex items-center gap-2 text-neutral-500">
-        <Button
-          type="button"
-          variant="ghost"
-          className="p-0 h-auto font-normal text-neutral-900 bg-transparent border-0 hover:bg-transparent"
-          onClick={cancelFlow}
-        >
-          Hủy
-        </Button>
-        <span>/</span>
-        <p className="text-sm">
-          {direct
-            ? 'Nhập trực tiếp'
-            : draft.method === 'automatic'
-              ? 'Gieo tự động'
-              : 'Gieo thủ công'}
-        </p>
-      </header>
-      <div className="grid gap-2">
-        <h1 className="text-[clamp(2rem,4vw,2.8rem)] font-medium tracking-tight">
-          {direct ? 'Nhập sáu hào' : draft.method === 'automatic' ? 'Gieo quẻ' : 'Gieo quẻ'}
-        </h1>
-        {draft.question && (
-          <p className="text-sm md:text-base text-neutral-600">
-            Câu hỏi (chỉ trong phiên này): {draft.question}
-          </p>
-        )}
-      </div>
-      {draft.method === 'automatic' ? (
-        <AutomaticCastingPanel
-          step={step}
-          tosses={draft.tosses ?? []}
-          method={draft.coinMethod}
-          busy={automaticToss.isTossAnimating}
-          onAnimationComplete={() => automaticToss.clearAnimation(animationGeneration)}
-          onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
-          onBack={() => setDraft({ ...draft, step: step - 1 })}
-          onNext={automaticToss.advance}
-          onToss={() => automaticToss.cast()}
-          onFinish={() => finish(lines)}
-          onReset={resetCasting}
-        />
-      ) : direct ? (
-        <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
-      ) : (
-        <ManualCastingPanel
-          draft={draft}
-          step={step}
-          setDraft={setDraft}
-          onBack={() => setDraft({ ...draft, step: step - 1 })}
-          onNext={() => setDraft({ ...draft, step: step + 1 })}
-          onFinish={() => finish(lines)}
-          onReset={resetCasting}
-        />
-      )}
-      {direct && (
-        <div className="grid justify-items-center gap-2">
-          <Button
-            type="button"
-            variant="ghost"
-            className="text-sm text-neutral-500"
-            onClick={resetCasting}
-          >
-            Xóa các hào
-          </Button>
+    <main className="route-page route-page--casting flex flex-col gap-6">
+      <header className="flex flex-wrap items-start justify-between gap-3">
+        <div className="flex flex-col gap-2">
+          <Badge variant="secondary">
+            {direct
+              ? 'Nhập trực tiếp'
+              : draft.method === 'automatic'
+                ? 'Gieo tự động'
+                : 'Gieo thủ công'}
+          </Badge>
+          <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
+            {direct ? 'Nhập sáu hào' : 'Gieo quẻ'}
+          </h1>
+          {draft.question && (
+            <p className="max-w-2xl text-muted-foreground">Câu hỏi: {draft.question}</p>
+          )}
         </div>
-      )}
-      {error && (
-        <p className="text-red-500 text-center" role="alert">
-          {error}
-        </p>
-      )}
+        <Button type="button" variant="outline" onClick={cancelFlow}>
+          Hủy phiên gieo
+        </Button>
+      </header>
+      <div className="grid items-start gap-6 xl:grid-cols-12">
+        <div className="min-w-0 xl:col-span-8">
+          {draft.method === 'automatic' ? (
+            <AutomaticCastingPanel
+              step={step}
+              tosses={draft.tosses ?? []}
+              method={draft.coinMethod}
+              busy={automaticToss.isTossAnimating}
+              onAnimationComplete={() => automaticToss.clearAnimation(animationGeneration)}
+              onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
+              onBack={() => setDraft({ ...draft, step: step - 1 })}
+              onNext={automaticToss.advance}
+              onToss={() => automaticToss.cast()}
+              onFinish={() => finish(lines)}
+              onReset={resetCasting}
+            />
+          ) : direct ? (
+            <DirectCastingPanel
+              lines={lines}
+              onChange={updateLine}
+              onFinish={() => finish(lines)}
+            />
+          ) : (
+            <ManualCastingPanel
+              draft={draft}
+              step={step}
+              setDraft={setDraft}
+              onBack={() => setDraft({ ...draft, step: step - 1 })}
+              onNext={() => setDraft({ ...draft, step: step + 1 })}
+              onFinish={() => finish(lines)}
+              onReset={resetCasting}
+            />
+          )}
+          {direct && (
+            <Button type="button" variant="ghost" onClick={resetCasting}>
+              Xóa các hào
+            </Button>
+          )}
+          {error && (
+            <Alert variant="destructive" role="alert">
+              <AlertTitle>Không thể tính quẻ</AlertTitle>
+              <AlertDescription>{error}</AlertDescription>
+            </Alert>
+          )}
+        </div>
+        <Card className="xl:col-span-4">
+          <CardHeader>
+            <CardTitle>{direct ? 'Thứ tự sáu hào' : 'Tiến trình gieo'}</CardTitle>
+            <CardDescription>
+              {direct
+                ? 'Nhập từ hào một ở dưới lên hào sáu ở trên.'
+                : 'Mỗi lần gieo tạo một hào, từ dưới lên trên.'}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-3">
+            <Badge variant="outline">
+              {lines.filter(value => value >= 6 && value <= 9).length} / 6 hào
+            </Badge>
+            <p className="text-muted-foreground">
+              {direct
+                ? 'Chọn đúng tên của từng hào. Bạn có thể sửa trước khi tính quẻ.'
+                : 'Kết quả từng lần gieo được giữ trong phiên cho đến khi bạn xóa hoặc rời đi.'}
+            </p>
+          </CardContent>
+        </Card>
+      </div>
       <CastingFlowDialogs
         resetLines={resetLines}
         discard={discard}
@@ -232,7 +255,7 @@ export function CastingFlow() {
           if (blocker.state === 'blocked') blocker.reset();
           setDiscard(false);
         }}
-        onDiscardConfirm={discardAndGoHome}
+        onDiscardConfirm={discardAndLeave}
       />
     </main>
   );

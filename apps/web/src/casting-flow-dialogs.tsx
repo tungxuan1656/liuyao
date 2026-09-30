@@ -41,8 +41,8 @@ export function CastingFlowDialogs({
           onConfirm={onDiscardConfirm}
         >
           {hasInput
-            ? 'Bỏ các hào đang nhập và quay lại trang gieo quẻ?'
-            : 'Bỏ câu hỏi và phương pháp gieo quẻ rồi quay lại trang gieo quẻ?'}
+            ? 'Bỏ các hào đang nhập và rời khỏi phiên gieo quẻ?'
+            : 'Bỏ câu hỏi và phương pháp gieo quẻ rồi rời khỏi phiên gieo quẻ?'}
         </ConfirmationDialog>
       )}
     </>

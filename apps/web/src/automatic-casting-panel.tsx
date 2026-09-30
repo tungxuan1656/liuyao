@@ -42,33 +42,29 @@ export function AutomaticCastingPanel({
   const successorExists = Boolean(tosses[step + 1]);
   const revealedCount = tosses.length - (busy ? 1 : 0);
   return (
-    <Card className="casting-workspace" aria-label="Gieo từng hào">
+    <Card aria-label="Gieo từng hào">
       <CardHeader className="casting-workspace-header">
         <ToggleGroup
           aria-label="Số lượng đồng xu"
+          variant="outline"
+          size="lg"
           value={[method]}
           onValueChange={value => {
             if (value[0]) onMethodChange(value[0] as CastingMethod);
           }}
           disabled={busy || tosses.length > 0}
-          className="border border-border bg-background"
+          className="grid w-full grid-cols-1 sm:flex sm:w-fit"
         >
-          <ToggleGroupItem
-            value="three-coin"
-            aria-label="Ba đồng xu"
-            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
-          >
+          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu" className="w-full sm:w-auto">
             Ba đồng xu
           </ToggleGroupItem>
-          <ToggleGroupItem
-            value="four-coin"
-            aria-label="Bốn đồng xu"
-            className="min-h-11 rounded-none text-sm data-[state=on]:bg-foreground data-[state=on]:text-background"
-          >
+          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu" className="w-full sm:w-auto">
             Bốn đồng xu
           </ToggleGroupItem>
         </ToggleGroup>
-        <span className="text-sm text-neutral-500 whitespace-nowrap">{revealedCount} / 6 hào</span>
+        <span className="text-sm text-muted-foreground whitespace-nowrap">
+          {revealedCount} / 6 hào
+        </span>
       </CardHeader>
       <CardContent className="casting-workspace-content">
         <div className="casting-hexagram-column">
@@ -88,13 +84,13 @@ export function AutomaticCastingPanel({
                 role="status"
               >
                 <div className="flex items-baseline gap-3">
-                  <span className="text-xs text-neutral-500">Hào {step + 1}</span>
+                  <span className="text-xs text-muted-foreground">Hào {step + 1}</span>
                   <strong data-line-value={toss.line} className="font-medium text-xl md:text-2xl">
                     {getLinePresentation(toss.line).name}
                   </strong>
                 </div>
                 <span className="sr-only">{describeLineValue(toss.line)}</span>
-                <span className="max-w-92.5 text-xs leading-snug text-neutral-500">
+                <span className="max-w-92.5 text-xs leading-snug text-muted-foreground">
                   {toss.coins
                     .map(
                       (coin, index) =>
@@ -105,7 +101,7 @@ export function AutomaticCastingPanel({
               </div>
             ) : (
               <div
-                className="h-full flex flex-col items-center justify-center gap-1 text-neutral-500"
+                className="h-full flex flex-col items-center justify-center gap-1 text-muted-foreground"
                 role="status"
               >
                 <span className="text-xs">Hào {step + 1}</span>

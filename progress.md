@@ -602,3 +602,23 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Final `./init.sh` and `git diff --check` passed. Browser QA at 320px completed six manual lines and opened Result; a confirmed line retained its faces on revisit. Reset required confirmation after input and cleared all lines. At 320px and 390px, all footer buttons fit the Card. At 320px the footer stayed at the same vertical position through automatic waiting, reduced-motion toss, reveal, and manual six-line completion. A completed result survived Library-to-Home navigation and was removed by confirmed “Lập mới.” Keyboard Space flipped a focused coin; Tab exposed its focus outline.
 
 **Remaining**: User preview, physical-phone motion, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and full visual flip review. Keep feat-028 active.
+
+## 2026-09-30 — feat-028 responsive bento redesign
+
+**Result**: Reorganized Home, casting, Result, Library, Library detail, and Settings around content-led shadcn cards. Added a mobile contextual back bar and persistent bottom tabs, including during casting; desktop uses a top navigation header without an application back link. Kept the installed Sera/Base UI preset, domain calculations, session behavior, and confirmation gates.
+
+**Evidence**: Final `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests; `git diff --check` passed. Direct browser review at 320px, 390px, and 1440px covered navigation, automatic and direct casting layouts, six-line direct completion, Result fact Sheet, Library search/list, a rule detail, Settings, and offline feedback. The inspected routes had no horizontal document overflow. Mobile Library tabs were changed to two rows at 320px, and result fact controls were made readable with a 44px minimum target.
+
+**Remaining**: Existing feat-028 acceptance still needs user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, and session-boundary checks. Keep the feature active.
+
+**Next**: Review the redesigned preview and complete the remaining casting acceptance checks before closing feat-028.
+
+## 2026-09-30 — feat-028 closure and PR handoff
+
+**Result**: Marked feat-028 done at the user's explicit request and prepared the responsive bento redesign for PR review. This is a directed closure with the unchecked acceptance criteria in `features/feat-028.md` still unverified.
+
+**Evidence**: Fresh `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The prior browser review covered 320px, 390px, and 1440px layouts and primary route flows.
+
+**Remaining**: Physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, complete desktop/mobile flip review, and user preview are unverified. `pnpm test:release` is not defined.
+
+**Next**: Review the PR and perform the remaining visual, assistive-technology, and session-boundary checks.
