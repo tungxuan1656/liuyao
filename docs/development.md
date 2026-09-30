@@ -29,9 +29,7 @@ apps/**/*.test.*         not allowed
 apps/**/*.spec.*         not allowed
 ```
 
-The root `e2e/release/` suite is the single integration-test exception: it contains Playwright browser tests for release-level application behavior. Do not add app-owned unit tests or browser scenarios there without scenario ownership approval. `pnpm test` remains placement-checked package tests only; run `pnpm test:release` separately. Install its browser with `pnpm exec playwright install chromium` locally; CI installs Chromium with system dependencies.
-
-Use package tests for reusable domain behavior and data contracts. Validate applications through type-checking, builds, linting, and direct UI/PWA verification.
+Use package tests for reusable domain behavior and data contracts. Validate application behavior with deterministic code evidence from type-checking, builds, linting, and package tests. Verify UI and PWA behavior with direct computer-use checks rather than browser automation suites.
 
 If application code contains reusable Liu Yao logic that needs unit tests, move the logic into the owning package first.
 
@@ -44,7 +42,6 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | `pnpm dev`                        | Web development server              |
 | `pnpm build`                      | All workspace builds                |
 | `pnpm test`                       | Enforce placement + package tests   |
-| `pnpm test:release`               | Playwright release browser tests    |
 | `pnpm typecheck`                  | All workspace type checks           |
 | `pnpm lint`                       | Repository ESLint                   |
 | `pnpm format`                     | Write Prettier formatting           |
@@ -55,7 +52,7 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 - Pre-commit runs lint-staged formatting and lint checks.
 - Commit message validation uses Conventional Commits.
-- Pre-push runs the TypeScript length check, type-checking, and tests.
+- Pre-push runs the TypeScript length check, type-checking, and package tests.
 
 ## Agent harness
 
