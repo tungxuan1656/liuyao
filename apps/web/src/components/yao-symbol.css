@@ -30,7 +30,7 @@
   height: 100%;
 }
 .yao-glyph.is-moving .yao-marker {
-  color: #8f2e24;
+  color: var(--moving-marker);
 }
 .yao-glyph.is-moving .yao-strokes {
   color: var(--foreground);

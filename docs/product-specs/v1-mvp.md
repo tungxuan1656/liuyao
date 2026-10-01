@@ -56,7 +56,7 @@ F11 + F13 + F14 → F15 Launch
 | F06 | Reading flow             | F00, F03, F04      | A user can start, complete, recover, and restart a reading; active reading preserved across root tabs  |
 | F07 | Result view              | F00, F03, F05, F06 | Single-pane / split-pane layouts show deterministic facts with upper/lower trigrams and rule links     |
 | F08 | Knowledge browser        | F00, F05           | A user can browse, search, and deep-link V1 reference content (hexagrams, trigrams, terms, rules)      |
-| F09 | Settings                 | F00, F02, F05      | A user can inspect versions, conventions, PWA state, and offline readiness                             |
+| F09 | Settings                 | F00, F02, F05      | A user can inspect versions, conventions, PWA state, offline readiness, and select Light or Dark       |
 | F10 | Offline hardening        | F06-F09            | Core V1 flows survive network loss, reload, install, and safe app updates                              |
 | F11 | Quality hardening        | F01-F10            | Golden tests, accessibility, responsive behavior, browsers, and failure states pass                    |
 | F12 | Product identity         | —                  | Final name, language, logo, icons, manifest, metadata, font bundle budget, and asset rights approved   |
@@ -76,6 +76,21 @@ F11 + F13 + F14 → F15 Launch
 - Do not generate automated divination conclusions.
 - Do not require an account, backend, analytics SDK, or AI service.
 - Treat product name, logo, domain, and deployment as release work, not optional polish.
+
+## Theme preference
+
+- Use Light when the user has not selected a theme.
+- Let the user choose Light or Dark in Settings.
+- Apply the saved choice across all routes and match the browser color scheme.
+- Save the choice on the device and restore it before the app appears, including offline launches.
+- Keep the current Light palette unchanged.
+- Use this palette for Dark:
+  - Background: `#151B1E`
+  - Surface: `#1E2629`
+  - Muted surface: `#283235`
+  - Foreground: `#E7EEEA`
+  - Muted foreground: `#B3C1BD`
+  - Border: `#3B484B`
 
 ## Pre-deploy release-candidate gate
 

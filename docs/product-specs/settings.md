@@ -18,6 +18,14 @@ Show:
 
 Show the app version and browser state directly. Place package versions and the ruleset ID in collapsed technical details.
 
+## Theme
+
+- Default to Light until the user selects a theme in Settings.
+- Offer exactly two choices: Sáng (Light) and Tối (Dark). Do not follow the operating-system color scheme.
+- Apply the choice to every route immediately, remember it on the device, and restore it before first paint, including offline launches.
+- Set `color-scheme` and the `theme-color` metadata from the active theme.
+- The canonical palettes live in `docs/product-specs/v1-mvp.md`. The Light palette stays unchanged.
+
 ## Conventions
 
 Show the fixed V1 conventions that affect results:

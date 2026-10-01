@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Ứng dụng Lục Hào lập quẻ và tra cứu quy tắc tính toán." />
+    <meta name="theme-color" content="#ffffff" />
+    <script>
+      // Restore the saved theme before first paint. Keep the key in sync with src/lib/theme.ts.
+      try {
+        if (localStorage.getItem('liuyao-theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#151b1e');
+        }
+      } catch {
+        // Storage unavailable: keep the default light theme.
+      }
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Lục Hào</title>
   </head>

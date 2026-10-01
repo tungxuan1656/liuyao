@@ -5,9 +5,11 @@ import './index.css';
 import { router } from './routes';
 import { initPwaUpdate } from './lib/pwa-update';
 import { initPwaInstall } from './lib/pwa-install';
+import { initTheme } from './lib/theme';
 
 initPwaUpdate();
 initPwaInstall();
+initTheme();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

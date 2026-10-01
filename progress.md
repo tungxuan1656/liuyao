@@ -650,3 +650,29 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: The pre-push hook passed workspace typecheck and all 225 package tests. `git diff --check` passed. Browser review confirmed that the input group shows only its bottom focus border.
 **Blockers**: None.
 **Next**: Review PR #53.
+
+## 2026-10-01 — feat-030 Light and Dark theme preference
+
+**Result**: Added the F09-T11 theme preference. Settings gains a Giao diện card with Sáng/Tối choices; the choice persists on the device, applies to every route before first paint through an `index.html` bootstrap, and drives `color-scheme` and `theme-color`. The Dark palette now fills the canonical semantic tokens from `docs/product-specs/v1-mvp.md`; the Light palette is unchanged. The moving-line marker and four-coin labels moved onto tokens so both stay readable in Dark.
+
+**Evidence**: Final `./init.sh` passed (format, lint, typecheck, build, package exports, 225 package tests). Chromium reviewed the production build: default Light with empty storage; Tối set `html.dark` with body `#151B1E`, surface `#1E2629`, muted text `#B3C1BD`, and `theme-color` `#151b1e` on `/`, `/library`, `/settings`, and `/result`; reload restored the class by `DOMContentLoaded`; with the service worker active and the preview server stopped, `/` and `/settings` still loaded with the saved dark theme; 390×844 settings had no horizontal overflow. Light keeps `#8f2e24` for moving markers; Dark renders `#e8836f` (6.5:1, up from 2.1:1).
+
+**Limits**: PWA manifest theme colors and the favicon remain Light-only identity assets. Chromium-only review; physical-device rendering unverified. No package-level test exists for the theme module because app test files are not allowed.
+
+**Next**: Review the uncommitted theme changes and commit them.
+
+## 2026-10-01 — feat-030 storage-failure review fix
+
+**Result**: Updated the Settings appearance control to initialize from the active document theme, so route remounts keep the selection aligned when localStorage writes fail. Corrected the feat-030 handoff to include the committed implementation and this review fix.
+
+**Evidence**: With writes to `liuyao-theme` forced to fail, selecting Tối applied Dark; after navigating Home and returning to Settings, Tối remained active and selected, with no page errors. `./init.sh` passed format, lint, typecheck, build, package exports, and package tests.
+
+**Next**: Commit the review fix.
+
+## 2026-10-01 — feat-030 PR handoff
+
+**State**: PR #54 is open against `main`.
+**Done**: Pushed `feat/030` with the theme implementation and storage-failure review fix.
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The pre-push hook passed typecheck and all package tests. Chromium review covered persistence, offline launch, responsive Settings, theme contrast, and storage-write failure.
+**Blockers**: None.
+**Next**: Review PR #54.

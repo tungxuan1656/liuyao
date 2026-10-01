@@ -189,6 +189,12 @@
       "title": "Compact casting and mobile header navigation",
       "status": "done",
       "depends_on": ["feat-028"]
+    },
+    {
+      "id": "feat-030",
+      "title": "Light and Dark theme preference",
+      "status": "done",
+      "depends_on": ["feat-010"]
     }
   ]
 }

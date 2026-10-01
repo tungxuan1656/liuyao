@@ -40,7 +40,7 @@ The main routes arrange task-relevant shadcn `Card` components in an asymmetric 
 | Result (`/result`)                          | Hexagram boards and line facts form the main column. The fact inspector stays beside them at 900px and wider, with a bottom `Sheet` below. |
 | Library (`/library`)                        | One search and category card, followed by the result count and a responsive reference grid.                                                |
 | Library detail (`/library/:entityType/:id`) | Definitions, related figures, rules, and sources occupy content cards. Source metadata expands on request.                                 |
-| Settings (`/settings`)                      | Browser state, app version, and product information occupy cards. Technical details expand within the version card.                        |
+| Settings (`/settings`)                      | Theme selection, browser state, app version, and product information occupy cards. Technical details expand within the version card.       |
 
 ### Interface copy
 
@@ -91,7 +91,7 @@ The three root destinations are Gieo quẻ (`/`), Thư viện (`/library`), and 
 - Home offers optional question input, the three casting methods, and a primary action. A completed reading replaces the form with the current hexagram and an explicit confirmed new-reading action.
 - Library offers local search, category tabs, optional rule filters, and reference record cards.
 - Each reference card is one keyboard-accessible detail link, with a trailing arrow and visible focus and hover states.
-- Settings presents browser state, PWA install/update availability, package and ruleset versions, casting conventions, privacy, and product links.
+- Settings presents theme selection, browser state, PWA install/update availability, package and ruleset versions, casting conventions, privacy, and product links.
 
 ### Level 2 — Luồng tập trung: Nhập hào (`/casting`)
 
