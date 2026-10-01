@@ -742,3 +742,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: The corpus still has 73 records, 119 claims, and 43 citations. Full verification and fingerprint checks run before the pilot commit.
 **Blockers**: None.
 **Next**: Continue the approved next batch in a separate feature and commit each reviewed content group.
+
+## 2026-10-01 — feat-033 pilot commentary comparisons
+
+**State**: active. The foundation is committed as `111929a`.
+**Done**: Added PBC and NTT summaries for all 24 pilot line positions and separate Dụng cửu/Dụng lục readings. Preserved distinct Trình Di/Chu Hy interpretations. Recorded and visually confirmed the PBC PDF 66 and NTT PDF 144 Khôn label errors.
+**Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
+**Blockers**: None.
+**Next**: Verify and commit these comparisons, then author Truân, Mông, Nhu, and Sư.

@@ -59,9 +59,13 @@ Their explanations do not automatically establish Na Jia, palace, or interpretat
 | `BPCT-03` | PDF 9, chapter 1, V                        | The Wood example says Metal controls Wood, then labels Quan quỷ as Wood.                                       | Use the general relation stated above the example. For a Wood palace, Quan quỷ is Metal.                                |
 | `BPCT-04` | PDF 429–430, supplementary casting section | Two mixed outcomes receive the same Thiếu dương label. The chapter 1 description distinguishes their polarity. | Resolve the line class against PDF 11–12 and the drawn symbols before importing this appendix.                          |
 
-The pilot also records NHL PDF 139 labeling Khôn's fourth line as “Lục cửu”.
-Its Chinese heading and line position support the normalized label “Lục tứ”.
-See the [Khôn record](../../packages/knowledge/data/hexagrams/hexagram-02.json) for the discrepancy evidence.
+The [Khôn record](../../packages/knowledge/data/hexagrams/hexagram-02.json) owns three additional label discrepancies:
+
+- NHL PDF 139 labels the fourth line as “Lục cửu”. Its Chinese heading supports “Lục tứ”.
+- PBC PDF 66 and NTT PDF 144 label the final line as Thượng cửu in Chinese.
+  Their Vietnamese labels and commentary support Thượng lục.
+
+The pilot line comparisons preserve distinct Trình Di and Chu Hy readings, including Khôn's fifth line and the special passages.
 
 These findings do not exhaust the edition's errors.
 Record each additional discrepancy with its location and resolution evidence.

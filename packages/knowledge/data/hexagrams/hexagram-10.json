@@ -48,15 +48,27 @@
     "reviewedAt": "2026-10-01",
     "method": "source-comparison",
     "evidenceCitationIds": [
-      "citation-nhl-p166-167-commentary",
       "citation-nhl-p166-commentary",
-      "citation-nhl-p167-commentary",
-      "citation-nhl-p168-commentary",
       "citation-nhl-p59-61-technical",
+      "citation-nhl-p168-commentary",
+      "citation-pbc-p135-136-commentary",
       "citation-ntt-p248-249-commentary",
-      "citation-pbc-p135-136-commentary"
+      "citation-nhl-p166-167-commentary",
+      "citation-pbc-p137-138-pilot-lines",
+      "citation-ntt-p250-251-pilot-lines",
+      "citation-nhl-p167-commentary",
+      "citation-pbc-p138-139-pilot-lines",
+      "citation-ntt-p251-252-pilot-lines",
+      "citation-pbc-p139-pilot-lines",
+      "citation-ntt-p252-254-pilot-lines",
+      "citation-pbc-p139-140-pilot-lines",
+      "citation-ntt-p254-255-pilot-lines",
+      "citation-pbc-p140-141-pilot-lines",
+      "citation-ntt-p255-256-pilot-lines",
+      "citation-pbc-p141-pilot-lines",
+      "citation-ntt-p256-257-pilot-lines"
     ],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+    "note": "Rà lại các nhận định pilot và bổ sung diễn giải hào PBC/NTT sau khi đọc đoạn đầy đủ. Giữ riêng Trình Di, Chu Hy và đoạn Dụng cửu/Dụng lục. Đã xem ảnh trang có lỗi nhãn Khôn. Chưa có xác nhận của chuyên gia độc lập."
   },
   "rights": {
     "basis": "original-summary-and-structured-facts",
@@ -84,6 +96,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-10-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào đầu theo người mới bước ra đời, chưa bị tập quán xấu làm đổi bản chất. Giữ sự trong sạch, làm đúng nghĩa vụ ở vị trí của mình và không chạy theo danh lợi giúp tránh lỗi.",
+          "citationIds": ["citation-pbc-p137-138-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-10-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải bước đi ban đầu theo việc yên với hoàn cảnh vốn có. Tiến lên để làm việc và thực hiện chí hướng khác với tiến chỉ nhằm thoát nghèo hèn hay cầu lợi.",
+          "citationIds": ["citation-ntt-p250-251-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -99,6 +130,25 @@
           "citationIds": ["citation-nhl-p167-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-10-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem đường bằng là tâm thế của người giữ đức trung dù không gặp thời và không có người ứng viện. Gần hoàn cảnh dễ bị cuốn theo quyền thế càng cần giữ lòng yên và không tự rối loạn.",
+          "citationIds": ["citation-pbc-p138-139-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-10-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di gắn đường bằng với nội tâm yên tĩnh, không bị lợi lộc và ham muốn làm rối. Có tài muốn tiến vẫn cần giữ chính bền trong cách tự xử ấy.",
+          "citationIds": ["citation-ntt-p251-252-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -116,6 +166,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-10-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt nguy cơ ở tài yếu nhưng ý muốn tiến lại quá cứng, không biết lượng sức. Hình ảnh thị lực và bước đi hạn chế nhắc rằng chí muốn mạnh không thay thế được năng lực và vị trí phù hợp.",
+          "citationIds": ["citation-pbc-p139-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-10-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào ba là tài không đủ mà chí lại muốn cứng, nên không thể giữ đường đi đúng và bền. Cố bước vào chỗ nguy bằng sự nóng nảy, thô suất dẫn đến hại.",
+          "citationIds": ["citation-ntt-p252-254-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -131,6 +200,25 @@
           "citationIds": ["citation-nhl-p167-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-10-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đối chiếu hào bốn với hào ba: có sức cương nhưng biết dùng thái độ mềm và dè dặt để tự giữ. Cùng ở chỗ nguy, cách giữ chí hướng khác nhau dẫn đến kết quả khác nhau.",
+          "citationIds": ["citation-pbc-p139-140-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-10-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào bốn ở gần người có quyền lực, có sức cương nhưng chí mềm. Biết lo sợ, tự xử thuận và rời chỗ nguy là điều kiện của kết quả tốt về sau.",
+          "citationIds": ["citation-ntt-p254-255-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -148,6 +236,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-10-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu răn người có tài và quyền lực đừng chuyên quyết chỉ vì địa vị thuận lợi. Dù có trung chính, hành động một chiều và ỷ thế vẫn có thể gây nguy.",
+          "citationIds": ["citation-pbc-p140-141-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-10-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di khuyên người ở ngôi tôn đừng chỉ dùng sự quyết đoán riêng. Ngay cả người sáng và mạnh vẫn cần nghe lời bàn của người khác; tự chuyên có thể nguy dù việc định làm là chính đáng.",
+          "citationIds": ["citation-ntt-p255-256-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -163,6 +270,25 @@
           "citationIds": ["citation-nhl-p168-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-10-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào cuối như sự xét lại toàn bộ hành vi của một đời người. Lời tốt lớn chỉ được đặt trong điều kiện quá trình ấy trọn vẹn từ đầu đến cuối, không phải một hành động riêng lẻ.",
+          "citationIds": ["citation-pbc-p141-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-10-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di coi hào cuối là lúc xét lại con đường đã đi. Kết quả tốt lớn gắn với việc đầu cuối đều chu toàn và hành vi phù hợp, nên phải xét toàn bộ quá trình.",
+          "citationIds": ["citation-ntt-p256-257-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]

@@ -49,16 +49,31 @@
     "method": "source-comparison",
     "evidenceCitationIds": [
       "citation-nhl-p131-commentary",
-      "citation-nhl-p132-commentary",
-      "citation-nhl-p133-134-commentary",
-      "citation-nhl-p133-commentary",
-      "citation-nhl-p134-135-commentary",
-      "citation-nhl-p134-commentary",
       "citation-nhl-p59-61-technical",
+      "citation-pbc-p30-31-commentary",
       "citation-ntt-p80-81-commentary",
-      "citation-pbc-p30-31-commentary"
+      "citation-nhl-p132-commentary",
+      "citation-pbc-p35-36-pilot-lines",
+      "citation-ntt-p83-pilot-lines",
+      "citation-pbc-p36-37-pilot-lines",
+      "citation-ntt-p84-pilot-lines",
+      "citation-ntt-p84-85-pilot-lines",
+      "citation-nhl-p133-commentary",
+      "citation-pbc-p37-38-pilot-lines",
+      "citation-ntt-p85-pilot-lines",
+      "citation-pbc-p38-39-pilot-lines",
+      "citation-ntt-p86-pilot-lines",
+      "citation-nhl-p133-134-commentary",
+      "citation-pbc-p39-40-pilot-lines",
+      "citation-ntt-p87-pilot-lines",
+      "citation-nhl-p134-commentary",
+      "citation-pbc-p40-41-pilot-lines",
+      "citation-ntt-p88-pilot-lines",
+      "citation-nhl-p134-135-commentary",
+      "citation-pbc-p41-42-pilot-lines",
+      "citation-ntt-p89-pilot-lines"
     ],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+    "note": "Rà lại các nhận định pilot và bổ sung diễn giải hào PBC/NTT sau khi đọc đoạn đầy đủ. Giữ riêng Trình Di, Chu Hy và đoạn Dụng cửu/Dụng lục. Đã xem ảnh trang có lỗi nhãn Khôn. Chưa có xác nhận của chuyên gia độc lập."
   },
   "rights": {
     "basis": "original-summary-and-structured-facts",
@@ -86,6 +101,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-01-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu coi rồng ẩn là người có tài nhưng thời cơ và sức lực còn hạn chế. Người ấy cần tu dưỡng, còn người dùng nhân tài cần bồi dưỡng và chờ lúc thích hợp.",
+          "citationIds": ["citation-pbc-p35-36-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trong bản Ngô Tất Tố dịch, Trình Di xem hào đầu là khí dương mới sinh và người có đức còn ở cảnh hàn vi. Chưa đến lúc tự đem tài ra làm việc nên cần ẩn náu và chờ thời.",
+          "citationIds": ["citation-ntt-p83-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -101,6 +135,35 @@
           "citationIds": ["citation-nhl-p132-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-01-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào hai và hào năm là hai người có đức cùng cần tìm đến nhau. Việc lớn đòi hỏi sự phối hợp và lợi ích chung, không chỉ tài năng của một cá nhân.",
+          "citationIds": ["citation-pbc-p36-37-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải thích sự gặp gỡ ở hào hai theo cả hai phía: người tài ở dưới cần vua có đức, vua cần người tài để hoàn thành công việc. Người trong thiên hạ cũng được lợi khi thấy người có đức lớn.",
+          "citationIds": ["citation-ntt-p84-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-01-line-2-ntt-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy phân biệt người có đức rồng hiện với người đi xem quẻ: người xem thông thường không tự nhận mình là đại nhân, mà được lợi khi gặp người ấy. Nếu bản thân có đức tương xứng thì mới xét quan hệ với đại nhân ở hào năm.",
+          "citationIds": ["citation-ntt-p84-85-pilot-lines"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -118,6 +181,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-01-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Theo Phan Bội Châu, hào ba ở vị trí bị trách nhiệm từ trên và dưới cùng dồn tới. Tự rèn luyện liên tục và giữ sự cảnh giác giúp người quân tử tránh lỗi trong hoàn cảnh khó xử.",
+          "citationIds": ["citation-pbc-p37-38-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào ba ở cuối thể dưới, có đức nhưng chưa rời địa vị thấp. Càng được chú ý càng cần cố gắng và lo giữ mình; lời răn làm rõ điều kiện tránh lỗi trong chỗ nguy.",
+          "citationIds": ["citation-ntt-p85-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -133,6 +215,25 @@
           "citationIds": ["citation-nhl-p133-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-01-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải thích hào bốn là lúc đã có khả năng tiến nhưng chưa được vội tiến. Chọn tiến hay lui phải dựa vào thời cơ; chữ hoặc giữ khả năng lựa chọn ấy.",
+          "citationIds": ["citation-pbc-p38-39-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di hiểu chữ hoặc là chưa quyết định hẳn. Nhảy lên hay ở lại đều cần hợp thời để đến chỗ yên ổn, thay vì coi tiến lên là lựa chọn cố định.",
+          "citationIds": ["citation-ntt-p86-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -150,6 +251,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-01-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu gắn rồng bay với người có đức và địa vị tương xứng. Người ở trên vẫn cần người tài ở dưới cùng làm việc; thành tựu này phải có quá trình tu dưỡng trước đó.",
+          "citationIds": ["citation-pbc-p39-40-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào năm là người có đức đã ở ngôi cao. Người ấy cần gặp người tài ở dưới để cùng làm việc; thiên hạ cũng được lợi khi gặp người đứng đầu có đức.",
+          "citationIds": ["citation-ntt-p87-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -165,6 +285,25 @@
           "citationIds": ["citation-nhl-p134-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-01-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt nguy cơ ở sự quá mức, không ở bản thân tài đức. Khi địa vị và sức mạnh đã lên cực điểm, biết khiêm nhường và biến thông giúp tránh hối tiếc.",
+          "citationIds": ["citation-pbc-p40-41-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải thích hào cuối đã vượt mức trung chính và đắc thời của hào năm. Biết xét tiến, lui, còn và mất là cách tránh lỗi do tiếp tục ở trạng thái quá cực.",
+          "citationIds": ["citation-ntt-p88-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -182,6 +321,35 @@
           "citationIds": ["citation-nhl-p134-135-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-01-special-pbc-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu coi Dụng cửu là đoạn bổ sung về biến dịch, không phải một vị trí hào thông thường. Từ sáu dương cùng biến, ông suy rộng đến lý tưởng bình đẳng không ai đứng đầu; đây là lớp diễn giải xã hội riêng của tác giả.",
+          "citationIds": ["citation-pbc-p41-42-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-01-special-ntt-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải Dụng cửu theo cách xử trong thể quá cứng: cương và nhu cần hỗ trợ để được vừa phải. Không đem sức cương làm người đi trước thiên hạ là trọng tâm lời tốt theo cách đọc này.",
+          "citationIds": ["citation-ntt-p89-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-01-special-ntt-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc Dụng cửu theo phép chiêm khi sáu hào dương của Càn đều biến sang âm. Cương đổi thành nhu là hình tượng của lời tốt; quan điểm này được giữ riêng với cách giải đạo đức của Trình Di.",
+          "citationIds": ["citation-ntt-p89-pilot-lines"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]

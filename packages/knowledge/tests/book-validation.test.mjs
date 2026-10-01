@@ -41,11 +41,11 @@ describe('book corpus publication boundary', () => {
     expect(report.hexagrams.missingIds).toHaveLength(60);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({
       overviewHexagrams: 4,
-      reviewedLinePositions: 0,
+      reviewedLinePositions: 24,
     });
     expect(
       report.lines.byAuthor.find(row => row.author === 'Phan Bội Châu').missingPilotPositions,
-    ).toHaveLength(24);
+    ).toHaveLength(0);
   });
 
   it.each([

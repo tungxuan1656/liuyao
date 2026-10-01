@@ -4,8 +4,8 @@
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
   "records": { "authored": 73, "released": 73, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 119, "missingCitationIds": [] },
-  "citations": { "total": 43 },
+  "claims": { "total": 175, "missingCitationIds": [] },
+  "citations": { "total": 99 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 4,
@@ -87,64 +87,14 @@
       {
         "author": "Phan Bội Châu",
         "overviewHexagrams": 4,
-        "reviewedLinePositions": 0,
-        "missingPilotPositions": [
-          { "hexagramId": "hexagram-01", "position": 1 },
-          { "hexagramId": "hexagram-01", "position": 2 },
-          { "hexagramId": "hexagram-01", "position": 3 },
-          { "hexagramId": "hexagram-01", "position": 4 },
-          { "hexagramId": "hexagram-01", "position": 5 },
-          { "hexagramId": "hexagram-01", "position": 6 },
-          { "hexagramId": "hexagram-02", "position": 1 },
-          { "hexagramId": "hexagram-02", "position": 2 },
-          { "hexagramId": "hexagram-02", "position": 3 },
-          { "hexagramId": "hexagram-02", "position": 4 },
-          { "hexagramId": "hexagram-02", "position": 5 },
-          { "hexagramId": "hexagram-02", "position": 6 },
-          { "hexagramId": "hexagram-06", "position": 1 },
-          { "hexagramId": "hexagram-06", "position": 2 },
-          { "hexagramId": "hexagram-06", "position": 3 },
-          { "hexagramId": "hexagram-06", "position": 4 },
-          { "hexagramId": "hexagram-06", "position": 5 },
-          { "hexagramId": "hexagram-06", "position": 6 },
-          { "hexagramId": "hexagram-10", "position": 1 },
-          { "hexagramId": "hexagram-10", "position": 2 },
-          { "hexagramId": "hexagram-10", "position": 3 },
-          { "hexagramId": "hexagram-10", "position": 4 },
-          { "hexagramId": "hexagram-10", "position": 5 },
-          { "hexagramId": "hexagram-10", "position": 6 }
-        ]
+        "reviewedLinePositions": 24,
+        "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
         "overviewHexagrams": 4,
-        "reviewedLinePositions": 0,
-        "missingPilotPositions": [
-          { "hexagramId": "hexagram-01", "position": 1 },
-          { "hexagramId": "hexagram-01", "position": 2 },
-          { "hexagramId": "hexagram-01", "position": 3 },
-          { "hexagramId": "hexagram-01", "position": 4 },
-          { "hexagramId": "hexagram-01", "position": 5 },
-          { "hexagramId": "hexagram-01", "position": 6 },
-          { "hexagramId": "hexagram-02", "position": 1 },
-          { "hexagramId": "hexagram-02", "position": 2 },
-          { "hexagramId": "hexagram-02", "position": 3 },
-          { "hexagramId": "hexagram-02", "position": 4 },
-          { "hexagramId": "hexagram-02", "position": 5 },
-          { "hexagramId": "hexagram-02", "position": 6 },
-          { "hexagramId": "hexagram-06", "position": 1 },
-          { "hexagramId": "hexagram-06", "position": 2 },
-          { "hexagramId": "hexagram-06", "position": 3 },
-          { "hexagramId": "hexagram-06", "position": 4 },
-          { "hexagramId": "hexagram-06", "position": 5 },
-          { "hexagramId": "hexagram-06", "position": 6 },
-          { "hexagramId": "hexagram-10", "position": 1 },
-          { "hexagramId": "hexagram-10", "position": 2 },
-          { "hexagramId": "hexagram-10", "position": 3 },
-          { "hexagramId": "hexagram-10", "position": 4 },
-          { "hexagramId": "hexagram-10", "position": 5 },
-          { "hexagramId": "hexagram-10", "position": 6 }
-        ]
+        "reviewedLinePositions": 24,
+        "missingPilotPositions": []
       }
     ]
   },
@@ -306,6 +256,22 @@
       "resolution": "Chuẩn hóa nhãn thành Lục tứ theo vị trí thứ tư và tính âm của hào; giữ dấu vết lỗi bản cung cấp."
     },
     {
+      "recordId": "hexagram-02",
+      "id": "discrepancy-pbc-khun-line-six",
+      "status": "resolved",
+      "description": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn.",
+      "citationIds": ["citation-pbc-p66-pilot-lines"],
+      "resolution": "Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai."
+    },
+    {
+      "recordId": "hexagram-02",
+      "id": "discrepancy-ntt-khun-line-six",
+      "status": "resolved",
+      "description": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn.",
+      "citationIds": ["citation-ntt-p144-pilot-lines"],
+      "resolution": "Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai."
+    },
+    {
       "recordId": "rule-six-relative-classification",
       "id": "discrepancy-bpct-wood-official",
       "status": "resolved",
@@ -404,6 +370,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-03", "hexagram-04", "hexagram-05", "hexagram-07"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Truân, Mông, Nhu, Sư; bổ sung đối chiếu hào PBC/NTT ở bốn quẻ mẫu. Nhóm Lục Hào tiếp theo: BPCT Chương 5, mục 1–4 về Dụng thần, Thế–Ứng, Nguyên thần, Cừu thần và Kỵ thần (PDF 67–68). Mới định vị, chưa rà soát đủ điều kiện và lớp chú giải."
+    "note": "Tiếp tục Truân, Mông, Nhu, Sư và BPCT Chương 5, mục 1–4 (PDF 67–68). Các vị trí hào ở bốn quẻ pilot đã có diễn giải NHL, PBC và NTT; đây là các đoạn tóm tắt có dẫn nguồn, không phải toàn bộ mọi lớp chú giải."
   }
 }

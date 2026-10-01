@@ -49,15 +49,27 @@
     "method": "source-comparison",
     "evidenceCitationIds": [
       "citation-nhl-p153-commentary",
-      "citation-nhl-p154-155-commentary",
-      "citation-nhl-p154-commentary",
-      "citation-nhl-p155-156-commentary",
-      "citation-nhl-p155-commentary",
       "citation-nhl-p59-61-technical",
+      "citation-nhl-p154-commentary",
+      "citation-pbc-p100-101-commentary",
       "citation-ntt-p196-197-commentary",
-      "citation-pbc-p100-101-commentary"
+      "citation-pbc-p104-pilot-lines",
+      "citation-ntt-p199-201-pilot-lines",
+      "citation-pbc-p104-105-pilot-lines",
+      "citation-ntt-p201-202-pilot-lines",
+      "citation-nhl-p154-155-commentary",
+      "citation-pbc-p105-106-pilot-lines",
+      "citation-ntt-p202-204-pilot-lines",
+      "citation-nhl-p155-commentary",
+      "citation-pbc-p106-107-pilot-lines",
+      "citation-ntt-p204-205-pilot-lines",
+      "citation-pbc-p107-108-pilot-lines",
+      "citation-ntt-p206-pilot-lines",
+      "citation-nhl-p155-156-commentary",
+      "citation-pbc-p108-pilot-lines",
+      "citation-ntt-p207-208-pilot-lines"
     ],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+    "note": "Rà lại các nhận định pilot và bổ sung diễn giải hào PBC/NTT sau khi đọc đoạn đầy đủ. Giữ riêng Trình Di, Chu Hy và đoạn Dụng cửu/Dụng lục. Đã xem ảnh trang có lỗi nhãn Khôn. Chưa có xác nhận của chuyên gia độc lập."
   },
   "rights": {
     "basis": "original-summary-and-structured-facts",
@@ -85,6 +97,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-06-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu khuyên người yếu ở hào đầu đừng dựa thế người hỗ trợ mà kéo dài tranh chấp. Chấp nhận lời trách nhỏ để việc được phân rõ và dừng lại là kết quả tốt của hào này.",
+          "citationIds": ["citation-pbc-p104-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-06-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải lời hào đầu theo người yếu ở dưới nhưng có ứng viện. Không theo đuổi tranh chấp lâu dài giúp chỉ chịu điều tiếng nhỏ và tránh hậu quả lớn hơn.",
+          "citationIds": ["citation-ntt-p199-201-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -100,6 +131,25 @@
           "citationIds": ["citation-nhl-p154-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-06-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải lui về và tránh đi theo việc xét nghĩa, tài lực và thế lực thực tế. Khi không thể đối địch với phía mạnh hơn, thu mình vào vị trí nhỏ giúp tránh tự chuốc họa.",
+          "citationIds": ["citation-pbc-p104-105-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-06-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt việc không thắng kiện trong thế hai hào cương đối đầu nhưng địa vị không ngang nhau. Lui về, tránh đối địch và tự ở quy mô nhỏ mới là điều kiện tránh lỗi.",
+          "citationIds": ["citation-ntt-p201-202-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -117,6 +167,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-06-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào ba là người không ham kiện, giữ phần lợi đã có và sống đúng mực giữa hoàn cảnh dễ tranh chấp. Nếu phải theo người trên thì không tìm công riêng trong vụ việc ấy.",
+          "citationIds": ["citation-pbc-p105-106-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-06-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di hiểu hưởng đức cũ là giữ phận sẵn có, vẫn biết lo trong chỗ hiểm. Theo người trên làm việc thì phần thành công không từ mình mà ra; biết dừng việc kiện là điều được đề cao.",
+          "citationIds": ["citation-ntt-p202-204-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -132,6 +201,25 @@
           "citationIds": ["citation-nhl-p155-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-06-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào bốn như sự đổi tính ham kiện. Khi nhận ra không thể kiện, người ấy cần bình tâm, trở về lẽ phải và giữ cách sống chính đáng.",
+          "citationIds": ["citation-pbc-p106-107-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-06-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di coi trở lại mệnh là trở lại lẽ chính. Người cương mà thiếu trung chính cần dẹp lòng nóng giận, đổi sự bất an thành yên với điều đúng mới được tốt.",
+          "citationIds": ["citation-ntt-p204-205-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -149,6 +237,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-06-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu tách hai phía của lời tốt: người xử kiện cần tài sáng và đức công chính; người đi kiện được lợi khi gặp người xử như vậy. Đức trung chính của người xét xử là điều kiện quyết định.",
+          "citationIds": ["citation-pbc-p107-108-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-06-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào năm là người có đức trung chính ở ngôi tôn để giải quyết tranh chấp. Lời tốt dựa vào việc xử kiện hợp đức ấy.",
+          "citationIds": ["citation-ntt-p206-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -164,6 +271,25 @@
           "citationIds": ["citation-nhl-p155-156-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-06-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem phần thưởng do tranh kiện cực đoan như thứ có thể nhanh chóng mất đi. Thắng kiện hay được ban chức không tự tạo ra sự đáng kính nếu cách đạt được chúng là bất chính.",
+          "citationIds": ["citation-pbc-p108-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-06-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di răn người cương cực theo kiện đến cùng: phần thưởng do tranh thắng không thể bảo đảm yên ổn. Được ban phẩm phục bằng cách ấy cũng không đủ tạo sự kính trọng.",
+          "citationIds": ["citation-ntt-p207-208-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]

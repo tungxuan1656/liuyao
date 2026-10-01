@@ -3,6 +3,7 @@ import type { BookRecord, BookCitation, BookSource, BookManifest } from './book-
 import manifest from '../data/manifest.json' with { type: 'json' };
 import sources from '../data/sources.json' with { type: 'json' };
 import citations0 from '../data/citations/pilot.json' with { type: 'json' };
+import citations1 from '../data/citations/pilot-comparisons.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -151,6 +152,9 @@ export const BOOK_RECORDS = [
   record71,
   record72,
 ] as unknown as readonly BookRecord[];
-export const BOOK_CITATIONS = [...citations0.citations] as readonly BookCitation[];
+export const BOOK_CITATIONS = [
+  ...citations0.citations,
+  ...citations1.citations,
+] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

@@ -49,17 +49,34 @@
     "method": "source-comparison",
     "evidenceCitationIds": [
       "citation-nhl-p137-commentary",
-      "citation-nhl-p138-139-commentary",
-      "citation-nhl-p138-commentary",
-      "citation-nhl-p139-140-commentary",
-      "citation-nhl-p139-commentary",
-      "citation-nhl-p140-141-commentary",
-      "citation-nhl-p140-commentary",
       "citation-nhl-p59-61-technical",
+      "citation-pbc-p58-59-commentary",
       "citation-ntt-p129-130-commentary",
-      "citation-pbc-p58-59-commentary"
+      "citation-nhl-p138-commentary",
+      "citation-pbc-p61-62-pilot-lines",
+      "citation-ntt-p136-138-pilot-lines",
+      "citation-nhl-p138-139-commentary",
+      "citation-pbc-p63-pilot-lines",
+      "citation-ntt-p138-139-pilot-lines",
+      "citation-nhl-p139-commentary",
+      "citation-pbc-p63-64-pilot-lines",
+      "citation-ntt-p140-141-pilot-lines",
+      "citation-pbc-p64-65-pilot-lines",
+      "citation-ntt-p141-142-pilot-lines",
+      "citation-nhl-p139-140-commentary",
+      "citation-pbc-p65-66-pilot-lines",
+      "citation-ntt-p142-144-pilot-lines",
+      "citation-ntt-p143-pilot-lines",
+      "citation-nhl-p140-commentary",
+      "citation-pbc-p66-67-pilot-lines",
+      "citation-ntt-p144-145-pilot-lines",
+      "citation-nhl-p140-141-commentary",
+      "citation-pbc-p67-pilot-lines",
+      "citation-ntt-p145-146-pilot-lines",
+      "citation-pbc-p66-pilot-lines",
+      "citation-ntt-p144-pilot-lines"
     ],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+    "note": "Rà lại các nhận định pilot và bổ sung diễn giải hào PBC/NTT sau khi đọc đoạn đầy đủ. Giữ riêng Trình Di, Chu Hy và đoạn Dụng cửu/Dụng lục. Đã xem ảnh trang có lỗi nhãn Khôn. Chưa có xác nhận của chuyên gia độc lập."
   },
   "rights": {
     "basis": "original-summary-and-structured-facts",
@@ -87,6 +104,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-02-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu dùng quá trình từ sương đến băng để nhắc phòng ngừa khi mầm họa còn nhỏ. Sự tích lũy theo thời gian khiến việc bỏ qua dấu hiệu ban đầu có thể dẫn đến hậu quả lớn.",
+          "citationIds": ["citation-pbc-p61-62-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc dấu sương như lời cảnh báo khi sự phát triển còn rất nhỏ. Ông liên hệ hình ảnh ấy với việc ngăn mầm xấu từ đầu, trước khi nó tăng thành thế lực lớn.",
+          "citationIds": ["citation-ntt-p136-138-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -102,6 +138,25 @@
           "citationIds": ["citation-nhl-p138-139-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-02-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu gắn sự ngay thẳng bên trong, đúng mực bên ngoài và độ lượng rộng với trung chính. Ông nhấn mạnh rằng nhu thuận chỉ tốt trong điều kiện ấy, không phải mọi sự mềm thuận đều tốt.",
+          "citationIds": ["citation-pbc-p63-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy thẳng, vuông và lớn để mô tả đạo Khôn trung chính. Không phải tập được ông giải theo sự tự nhiên của đạo Khôn và cách hành động ung dung, đúng đạo của thánh nhân.",
+          "citationIds": ["citation-ntt-p138-139-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -119,6 +174,25 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-02-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Theo Phan Bội Châu, người có điều tốt cần biết giữ kín, nhưng vẫn phát huy đúng lúc. Khi theo người trên làm việc, nên hoàn thành nghĩa vụ và nhường công thay vì tự nhận hết thành quả.",
+          "citationIds": ["citation-pbc-p63-64-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải việc giữ điều tốt bên trong theo đạo người ở dưới: làm trọn chức trách mà không nhận công. Giữ kín không có nghĩa là né việc; khi điều nghĩa cần làm xuất hiện thì phải hành động đúng lúc.",
+          "citationIds": ["citation-ntt-p140-141-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -134,6 +208,25 @@
           "citationIds": ["citation-nhl-p139-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-02-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào bốn vào hoàn cảnh tài lực thấp mà địa vị gần người trên. Giữ kín và thận trọng giúp tránh lỗi; không có tiếng khen là giới hạn của cách tự giữ ấy.",
+          "citationIds": ["citation-pbc-p64-65-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hình ảnh thắt túi trong lúc quan hệ trên dưới bị ngăn cách. Giấu kín khả năng và giữ mình cẩn mật giúp tránh hại, đồng thời không tạo ra danh tiếng.",
+          "citationIds": ["citation-ntt-p141-142-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -151,6 +244,35 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-02-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải xiêm vàng qua đức trung và thái độ khiêm hạ. Ông phân biệt vẻ đẹp bên ngoài với đạo đức bên trong, yêu cầu phẩm chất bên trong làm gốc cho sự biểu hiện ra ngoài.",
+          "citationIds": ["citation-pbc-p65-66-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc xiêm vàng như lời răn giữ đức trung chính và phận ở dưới theo đạo làm tôi. Ông không dùng lời tốt của hào này để biện hộ việc tự chiếm ngôi tôn; đây là cách giảng riêng trong hệ quan niệm của ông.",
+          "citationIds": ["citation-ntt-p142-144-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-02-line-5-ntt-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải hào năm theo đức trung thuận bên trong biểu hiện ra ngoài dù ở ngôi tôn. Ông giữ điều kiện người xem có phẩm chất trung tín, cung kính và làm việc phù hợp; lời tốt không bảo đảm cho mục đích phản loạn hay mạo hiểm.",
+          "citationIds": ["citation-ntt-p143-pilot-lines"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     },
@@ -166,6 +288,25 @@
           "citationIds": ["citation-nhl-p140-commentary"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-02-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem giao tranh ở hào cuối là hậu quả của hai phía cùng phát triển đến cực điểm và đối kháng. Cả hai đều tổn hại; biết dừng và biến thông trước khi quá mức là trọng tâm lời răn.",
+          "citationIds": ["citation-pbc-p66-67-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào cuối là âm đã đến cực điểm mà vẫn tiến, nên phát sinh tranh giành với dương. Hình ảnh máu hai màu diễn tả tổn thương của cả hai bên khi không biết dừng.",
+          "citationIds": ["citation-ntt-p144-145-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
       ]
@@ -184,6 +325,35 @@
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
+        },
+        {
+          "id": "hexagram-02-special-pbc-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu hiểu Dụng lục qua sáu âm của Khôn biến thành sáu dương của Càn. Ông liên hệ sự chính bền lâu dài với công phu học tập và thực hành giúp thay đổi khí chất từ nhu nhược sang cương cường.",
+          "citationIds": ["citation-pbc-p67-pilot-lines"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-02-special-ntt-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem Dụng lục là cách dùng tính âm vốn mềm và khó giữ thường. Lợi ở sự chính bền lâu dài, nhờ đó có thể đi đến kết quả lớn ở cuối.",
+          "citationIds": ["citation-ntt-p145-146-pilot-lines"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-02-special-ntt-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đặt Dụng lục trong trường hợp sáu âm của Khôn đều biến thành dương. Đổi sang tính cương giúp giữ chính lâu dài; đây là cách giải về lời chiêm có điều kiện, không thay thế các quan điểm khác.",
+          "citationIds": ["citation-ntt-p145-146-pilot-lines"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
         }
       ]
     }
@@ -195,6 +365,20 @@
       "description": "Bản PDF phiên âm hào bốn thành “Lục cửu”, trong khi tiêu đề chữ và phần dịch xác định hào bốn là âm.",
       "citationIds": ["citation-nhl-p139-commentary"],
       "resolution": "Chuẩn hóa nhãn thành Lục tứ theo vị trí thứ tư và tính âm của hào; giữ dấu vết lỗi bản cung cấp."
+    },
+    {
+      "id": "discrepancy-pbc-khun-line-six",
+      "status": "resolved",
+      "description": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn.",
+      "citationIds": ["citation-pbc-p66-pilot-lines"],
+      "resolution": "Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai."
+    },
+    {
+      "id": "discrepancy-ntt-khun-line-six",
+      "status": "resolved",
+      "description": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn.",
+      "citationIds": ["citation-ntt-p144-pilot-lines"],
+      "resolution": "Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai."
     }
   ]
 }

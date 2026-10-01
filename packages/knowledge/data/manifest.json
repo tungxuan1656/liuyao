@@ -3,7 +3,7 @@
   "corpusId": "book-backed-knowledge-v1",
   "language": "vi",
   "sourceFile": "sources.json",
-  "citationFiles": ["citations/pilot.json"],
+  "citationFiles": ["citations/pilot.json", "citations/pilot-comparisons.json"],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
     "trigrams/trigram-lake.json",
@@ -214,6 +214,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-03", "hexagram-04", "hexagram-05", "hexagram-07"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Truân, Mông, Nhu, Sư; bổ sung đối chiếu hào PBC/NTT ở bốn quẻ mẫu. Nhóm Lục Hào tiếp theo: BPCT Chương 5, mục 1–4 về Dụng thần, Thế–Ứng, Nguyên thần, Cừu thần và Kỵ thần (PDF 67–68). Mới định vị, chưa rà soát đủ điều kiện và lớp chú giải."
+    "note": "Tiếp tục Truân, Mông, Nhu, Sư và BPCT Chương 5, mục 1–4 (PDF 67–68). Các vị trí hào ở bốn quẻ pilot đã có diễn giải NHL, PBC và NTT; đây là các đoạn tóm tắt có dẫn nguồn, không phải toàn bộ mọi lớp chú giải."
   }
 }

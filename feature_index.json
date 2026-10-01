@@ -207,6 +207,12 @@
       "title": "Book-backed JSON knowledge foundation and pilot",
       "status": "done",
       "depends_on": ["feat-031"]
+    },
+    {
+      "id": "feat-033",
+      "title": "Reviewed knowledge batch two",
+      "status": "todo",
+      "depends_on": ["feat-032"]
     }
   ]
 }
