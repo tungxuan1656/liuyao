@@ -1,11 +1,11 @@
 import type { CastingMethod, CoinTossResult } from '@liuyao/core';
+import { ArrowLeft, RotateCcw } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
-import { getLinePresentation, describeLineValue } from './line-value-presentation';
 import { CoinStage } from './casting/coin-stage';
-import { coinIdentities } from './casting/coin-identities';
 import { CastingHexagram } from './casting/casting-hexagram';
+import { CastingOutcome } from './casting/casting-outcome';
 import './casting/casting-workspace.css';
 
 type Props = {
@@ -53,17 +53,19 @@ export function AutomaticCastingPanel({
             if (value[0]) onMethodChange(value[0] as CastingMethod);
           }}
           disabled={busy || tosses.length > 0}
-          className="grid w-full grid-cols-1 sm:flex sm:w-fit"
         >
-          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu" className="w-full sm:w-auto">
-            Ba đồng xu
+          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu">
+            3 xu
           </ToggleGroupItem>
-          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu" className="w-full sm:w-auto">
-            Bốn đồng xu
+          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu">
+            4 xu
           </ToggleGroupItem>
         </ToggleGroup>
-        <span className="text-sm text-muted-foreground whitespace-nowrap">
-          {revealedCount} / 6 hào
+        <span
+          className="text-sm text-muted-foreground whitespace-nowrap"
+          aria-label={`${revealedCount} trên 6 hào đã gieo`}
+        >
+          {revealedCount}/6
         </span>
       </CardHeader>
       <CardContent className="casting-workspace-content">
@@ -73,76 +75,57 @@ export function AutomaticCastingPanel({
             step={step}
           />
         </div>
-        <section className="casting-coin-workspace-stage" aria-label="Sân khấu gieo đồng xu">
-          <div className="casting-coin-stage">
-            <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
-          </div>
-          <div className="casting-result-region" aria-live="polite">
-            {completed && toss ? (
-              <div
-                className="flex h-full flex-col items-center justify-center gap-1 overflow-hidden"
-                role="status"
-              >
-                <div className="flex items-baseline gap-3">
-                  <span className="text-xs text-muted-foreground">Hào {step + 1}</span>
-                  <strong data-line-value={toss.line} className="font-medium text-xl md:text-2xl">
-                    {getLinePresentation(toss.line).name}
-                  </strong>
-                </div>
-                <span className="sr-only">{describeLineValue(toss.line)}</span>
-                <span className="max-w-92.5 text-xs leading-snug text-muted-foreground">
-                  {toss.coins
-                    .map(
-                      (coin, index) =>
-                        `${count === 4 ? `${coinIdentities[index]?.label}: ` : ''}${coin ? 'mặt trời' : 'mặt trăng'}`,
-                    )
-                    .join(' · ')}
-                </span>
-              </div>
-            ) : (
-              <div
-                className="h-full flex flex-col items-center justify-center gap-1 text-muted-foreground"
-                role="status"
-              >
-                <span className="text-xs">Hào {step + 1}</span>
-                <p className="m-0 text-lg md:text-xl font-normal">
-                  {busy ? 'Đồng xu đang rơi…' : 'Tĩnh tâm, rồi gieo một hào.'}
-                </p>
-              </div>
-            )}
-          </div>
+        <section className="casting-coin-stage" aria-label="Đồng xu">
+          <CoinStage count={count} toss={toss} busy={busy} onComplete={onAnimationComplete} />
         </section>
+        <CastingOutcome step={step} value={completed ? toss?.line : undefined} busy={busy} />
       </CardContent>
       <CardFooter className="casting-workspace-footer">
         <Button
           type="button"
           variant="ghost"
-          size={'sm'}
+          size="icon-lg"
+          aria-label="Quay lại hào trước"
+          title="Quay lại hào trước"
           disabled={step === 0 || busy}
           onClick={onBack}
         >
-          Quay lại
+          <ArrowLeft aria-hidden="true" />
         </Button>
-        <div className="flex gap-4">
-          <Button type="button" variant="ghost" size={'sm'} onClick={onReset}>
-            Xóa các hào
-          </Button>
-          <Button
-            type="button"
-            disabled={busy}
-            onClick={final ? onFinish : completed ? onNext : onToss}
-          >
-            {busy
-              ? 'Đang gieo…'
-              : final
-                ? 'Tính quẻ'
-                : completed
-                  ? successorExists
-                    ? 'Tiếp theo'
-                    : 'Gieo hào tiếp'
-                  : 'Gieo hào'}
-          </Button>
-        </div>
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon-lg"
+          aria-label="Xóa các hào"
+          title="Xóa các hào"
+          onClick={onReset}
+        >
+          <RotateCcw aria-hidden="true" />
+        </Button>
+        <Button
+          type="button"
+          size="lg"
+          disabled={busy}
+          aria-label={completed && !final && !successorExists ? 'Gieo hào tiếp' : undefined}
+          onClick={final ? onFinish : completed ? onNext : onToss}
+        >
+          {busy ? (
+            'Đang gieo…'
+          ) : final ? (
+            'Tính quẻ'
+          ) : completed ? (
+            successorExists ? (
+              'Tiếp theo'
+            ) : (
+              <>
+                <span className="sm:hidden">Gieo tiếp</span>
+                <span className="hidden sm:inline">Gieo hào tiếp</span>
+              </>
+            )
+          ) : (
+            'Gieo hào'
+          )}
+        </Button>
       </CardFooter>
     </Card>
   );

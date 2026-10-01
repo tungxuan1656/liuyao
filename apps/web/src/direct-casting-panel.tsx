@@ -1,13 +1,6 @@
 import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from './components/ui/card';
+import { Card, CardContent, CardFooter } from './components/ui/card';
 import { Separator } from './components/ui/separator';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
 import { getLinePresentation } from './line-value-presentation';
@@ -28,12 +21,6 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
 
   return (
     <Card aria-label="Nhập giá trị hào, bắt đầu từ hào sáu">
-      <CardHeader>
-        <CardTitle role="heading" aria-level={2}>
-          Chọn sáu hào
-        </CardTitle>
-        <CardDescription>Chọn một giá trị cho từng hào. Bắt đầu từ hào sáu.</CardDescription>
-      </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {[5, 4, 3, 2, 1, 0].map(index => (
           <div className="flex flex-col gap-4" key={index}>
@@ -61,7 +48,7 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
                       key={value}
                       value={String(value)}
                       aria-label={`${presentation.name}, ${presentation.polarity}, ${presentation.motion}${presentation.changesTo ? `, biến thành ${presentation.changesTo}` : ''}`}
-                      // The yao symbol and two lines of text need more height than a standard toggle.
+                      // The yao symbol and name need more height than a standard toggle.
                       className="h-auto min-h-16 min-w-0 flex-col gap-1 px-2 py-2"
                     >
                       <YaoSymbol
@@ -69,9 +56,6 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
                         changing={value === 6 || value === 9}
                       />
                       <span>{presentation.name}</span>
-                      <span className="text-muted-foreground">
-                        {value === 6 || value === 9 ? 'Hào động' : 'Hào tĩnh'}
-                      </span>
                     </ToggleGroupItem>
                   );
                 })}
@@ -87,7 +71,11 @@ export function DirectCastingPanel({ lines, onChange, onFinish }: Props) {
         </Button>
         {!canCalculate && (
           <p className="text-muted-foreground" role="status">
-            Hãy chọn đủ sáu hào trước khi tính quẻ.
+            {
+              lines.filter(value => validValues.includes(value as (typeof validValues)[number]))
+                .length
+            }
+            /6 hào
           </p>
         )}
       </CardFooter>

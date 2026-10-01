@@ -17,9 +17,7 @@ export function AppShell({ children }: AppShellProps) {
   return (
     <div className="flex min-h-dvh flex-col bg-muted/30">
       <Navigation />
-      <div className="min-w-0 flex-1 pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0">
-        {children}
-      </div>
+      <div className="min-w-0 flex-1">{children}</div>
     </div>
   );
 }

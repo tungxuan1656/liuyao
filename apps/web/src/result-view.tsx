@@ -6,24 +6,11 @@ import { useReadingSession } from './reading-session';
 import { FactButton, FactInspector, type FactSelection } from './result-facts';
 import { HexagramBoard } from './result-board';
 import { YaoSymbol } from './components/yao-symbol';
-import { branchName, elementName, hexagramLabel, relativeName, stemName } from './result-labels';
+import { branchName, elementName, relativeName, stemName } from './result-labels';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from './components/ui/card';
-import {
-  Empty,
-  EmptyContent,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyTitle,
-} from './components/ui/empty';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
+import { Empty, EmptyContent, EmptyHeader, EmptyTitle } from './components/ui/empty';
 import {
   Sheet,
   SheetContent,
@@ -76,11 +63,8 @@ export function ResultView() {
         <Empty>
           <EmptyHeader>
             <EmptyTitle role="heading" aria-level={1}>
-              Bắt đầu bằng cách gieo quẻ
+              Chưa có quẻ
             </EmptyTitle>
-            <EmptyDescription>
-              Quẻ đã hoàn tất chỉ được giữ trong bộ nhớ của phiên trình duyệt này.
-            </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
             <Button size="lg" render={<Link to={ROUTES.home} />}>
@@ -105,14 +89,9 @@ export function ResultView() {
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div className="flex min-w-0 flex-col gap-2">
-          <Badge variant="secondary">Kết quả gieo quẻ · {reading.result.ruleset}</Badge>
           <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
-            {reading.question || hexagramLabel(reading.result.primaryHexagramId)}
+            {reading.question || 'Kết quả'}
           </h1>
-          <p className="max-w-2xl text-muted-foreground">
-            Chọn từng dữ kiện để xem quy tắc và nguồn tham khảo. Quẻ này chỉ được giữ trong phiên
-            hiện tại.
-          </p>
         </div>
         <Button variant="outline" size="lg" render={<Link to={ROUTES.home} />}>
           Trang gieo quẻ
@@ -121,29 +100,6 @@ export function ResultView() {
 
       <div className="result-layout flex min-w-0 items-start gap-6">
         <div className="grid min-w-0 w-full flex-1 gap-6">
-          <Card>
-            <CardHeader>
-              <CardTitle role="heading" aria-level={2}>
-                Tổng quan
-              </CardTitle>
-              <CardDescription>Quẻ được tạo từ sáu hào đã nhập.</CardDescription>
-              <CardAction>
-                <Badge variant="outline">Quẻ chính</Badge>
-              </CardAction>
-            </CardHeader>
-            <CardContent>
-              <FactButton
-                fact={{
-                  id: 'result.primaryHexagramId',
-                  label: 'Quẻ chính',
-                  value: hexagramLabel(reading.result.primaryHexagramId),
-                  libraryTarget: { kind: 'hexagram', id: reading.result.primaryHexagramId },
-                }}
-                onSelect={selectFact}
-              />
-            </CardContent>
-          </Card>
-
           <div className="grid min-w-0 gap-6 lg:grid-cols-2">
             <HexagramBoard result={reading.result} select={selectFact} />
             {changedHexagram ? (
@@ -165,7 +121,7 @@ export function ResultView() {
                   <CardDescription>
                     {reading.result.changedHexagramId
                       ? 'Không có thông tin về quẻ biến.'
-                      : 'Không có hào động nên quẻ này không có quẻ biến.'}
+                      : 'Không có hào động.'}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -177,7 +133,6 @@ export function ResultView() {
               <CardTitle role="heading" aria-level={2}>
                 Thông tin các hào
               </CardTitle>
-              <CardDescription>Hào sáu ở trên. Mở một dữ kiện để xem cách tính.</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col divide-y">
               {[...reading.result.lines].reverse().map(line => (
@@ -246,25 +201,12 @@ export function ResultView() {
               <CardTitle role="heading" aria-level={2}>
                 Giải thích dữ kiện
               </CardTitle>
-              <CardDescription>Quy tắc và nguồn liên quan đến mục đang chọn.</CardDescription>
             </CardHeader>
             <CardContent>
               {selectedFact ? (
                 <FactInspector fact={selectedFact} close={closeInspector} />
               ) : (
-                <div className="flex flex-col gap-4">
-                  <p className="text-muted-foreground">
-                    Chọn một dữ kiện trong bảng quẻ để xem giải thích.
-                  </p>
-                  <FactButton
-                    fact={{
-                      id: 'result.ruleset',
-                      label: 'Quy ước tính',
-                      value: reading.result.ruleset,
-                    }}
-                    onSelect={selectFact}
-                  />
-                </div>
+                <p className="text-muted-foreground">Chọn dữ kiện để xem giải thích.</p>
               )}
             </CardContent>
           </Card>
@@ -284,11 +226,11 @@ export function ResultView() {
         >
           {selectedFact && (
             <>
-              <SheetHeader>
-                <SheetTitle>Chi tiết dữ kiện: {selectedFact.label}</SheetTitle>
+              <SheetHeader className="sr-only">
+                <SheetTitle>{selectedFact.label}</SheetTitle>
                 <SheetDescription>Quy tắc và nguồn tham khảo</SheetDescription>
               </SheetHeader>
-              <div className="px-8 pb-8">
+              <div className="p-8">
                 <FactInspector fact={selectedFact} close={closeInspector} />
               </div>
             </>

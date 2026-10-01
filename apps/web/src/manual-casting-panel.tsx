@@ -1,11 +1,12 @@
 import { mapCoinsToLine, type CastingMethod, type CoinTossResult } from '@liuyao/core';
+import { ArrowLeft, RotateCcw } from 'lucide-react';
 import { CoinFace } from './casting/coin-face';
 import { CastingHexagram } from './casting/casting-hexagram';
+import { CastingOutcome } from './casting/casting-outcome';
 import { coinIdentities } from './casting/coin-identities';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
-import { describeLineValue, getLinePresentation } from './line-value-presentation';
 import type { useReadingSession } from './reading-session';
 import './casting/casting-workspace.css';
 
@@ -35,7 +36,6 @@ export function ManualCastingPanel({
   const coins = previous ? [...previous.coins] : Array.from({ length: count }, () => 0 as 0 | 1);
   const line = previous?.line;
   const confirmed = draft.manualConfirmed?.[step] ?? false;
-  const presentation = line === undefined ? null : getLinePresentation(line);
 
   function flip(index: number) {
     if (confirmed) return;
@@ -85,17 +85,19 @@ export function ManualCastingPanel({
             });
           }}
           disabled={(draft.manualTosses?.some(Boolean) ?? false) || draft.lines.length > 0}
-          className="grid w-full grid-cols-1 sm:flex sm:w-fit"
         >
-          <ToggleGroupItem value="three-coin" className="w-full sm:w-auto">
-            Ba đồng xu
+          <ToggleGroupItem value="three-coin" aria-label="Ba đồng xu">
+            3 xu
           </ToggleGroupItem>
-          <ToggleGroupItem value="four-coin" className="w-full sm:w-auto">
-            Bốn đồng xu
+          <ToggleGroupItem value="four-coin" aria-label="Bốn đồng xu">
+            4 xu
           </ToggleGroupItem>
         </ToggleGroup>
-        <span className="text-sm text-muted-foreground whitespace-nowrap">
-          {draft.manualConfirmed?.filter(Boolean).length ?? 0} / 6 hào
+        <span
+          className="text-sm text-muted-foreground whitespace-nowrap"
+          aria-label={`${draft.manualConfirmed?.filter(Boolean).length ?? 0} trên 6 hào đã xác nhận`}
+        >
+          {draft.manualConfirmed?.filter(Boolean).length ?? 0}/6
         </span>
       </CardHeader>
       <CardContent className="casting-workspace-content">
@@ -107,58 +109,64 @@ export function ManualCastingPanel({
             step={step}
           />
         </div>
-        <section className="casting-coin-workspace-stage" aria-label="Sân khấu gieo đồng xu">
-          <div className="casting-coin-stage">
-            <div
-              className={`coin-arrangement ${count === 3 ? 'coin-arrangement--three' : 'coin-arrangement--four'}`}
-            >
-              {coins.map((coin, index) => (
-                <Button
-                  type="button"
-                  variant="ghost"
-                  className="manual-coin-button"
-                  key={index}
-                  aria-pressed={Boolean(coin)}
-                  disabled={confirmed}
-                  aria-label={`${count === 4 ? `${coinIdentities[index]?.label}, ` : `Đồng xu ${index + 1}, `}${coin ? 'mặt trời' : 'mặt trăng'}. Chạm để lật.`}
-                  onClick={() => flip(index)}
-                >
-                  <CoinFace value={coin} identityIndex={count === 4 ? index : undefined} />
-                  <span className="text-sm text-muted-foreground">
-                    {count === 4 ? coinIdentities[index]?.label : `Đồng ${index + 1}`}
+        <section className="casting-coin-stage" aria-label="Đồng xu">
+          <div
+            className={`coin-arrangement ${count === 3 ? 'coin-arrangement--three' : 'coin-arrangement--four'}`}
+          >
+            {coins.map((coin, index) => (
+              <Button
+                type="button"
+                variant="ghost"
+                className="manual-coin-button"
+                key={index}
+                aria-pressed={Boolean(coin)}
+                disabled={confirmed}
+                aria-label={`${count === 4 ? `${coinIdentities[index]?.label}, ` : `Đồng xu ${index + 1}, `}${coin ? 'mặt trời' : 'mặt trăng'}. Chạm để lật.`}
+                onClick={() => flip(index)}
+              >
+                <CoinFace value={coin} identityIndex={count === 4 ? index : undefined} />
+                {count === 4 && (
+                  <span className="text-xs text-muted-foreground">
+                    {coinIdentities[index]?.label}
                   </span>
-                </Button>
-              ))}
-            </div>
-          </div>
-          <div className="casting-result-region" aria-live="polite">
-            {line === undefined || !presentation ? (
-              <span className="text-muted-foreground">Chọn mặt từng đồng xu</span>
-            ) : (
-              <>
-                <strong data-line-value={line} className="font-medium">
-                  {presentation.name}
-                </strong>
-                <span className="text-sm text-muted-foreground">
-                  {describeLineValue(line)}
-                  {confirmed ? ' · đã xác nhận' : ' · chưa xác nhận'}
-                </span>
-              </>
-            )}
+                )}
+              </Button>
+            ))}
           </div>
         </section>
+        <CastingOutcome step={step} value={line} manual confirmed={confirmed} />
       </CardContent>
       <CardFooter className="casting-workspace-footer">
-        <Button type="button" variant="outline" disabled={step === 0} onClick={onBack}>
-          Quay lại
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon-lg"
+          aria-label="Quay lại hào trước"
+          title="Quay lại hào trước"
+          disabled={step === 0}
+          onClick={onBack}
+        >
+          <ArrowLeft aria-hidden="true" />
+        </Button>
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon-lg"
+          aria-label="Xóa các hào"
+          title="Xóa các hào"
+          onClick={onReset}
+        >
+          <RotateCcw aria-hidden="true" />
         </Button>
         {confirmed ? (
-          <Button type="button" onClick={step === 5 ? onFinish : onNext}>
+          <Button type="button" size="lg" onClick={step === 5 ? onFinish : onNext}>
             {step === 5 ? 'Tính quẻ' : 'Tiếp theo'}
           </Button>
         ) : (
           <Button
             type="button"
+            size="lg"
+            aria-label="Xác nhận hào"
             disabled={!previous}
             onClick={() => {
               if (!previous) return;
@@ -171,12 +179,10 @@ export function ManualCastingPanel({
               setDraft({ ...draft, manualTosses: all, manualConfirmed: confirmations, lines });
             }}
           >
-            Xác nhận hào
+            <span className="sm:hidden">Xác nhận</span>
+            <span className="hidden sm:inline">Xác nhận hào</span>
           </Button>
         )}
-        <Button type="button" variant="ghost" onClick={onReset}>
-          Xóa các hào
-        </Button>
       </CardFooter>
     </Card>
   );

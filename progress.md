@@ -632,3 +632,21 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Remaining**: Preview at 360-420px, user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and complete desktop/mobile flip review are still unverified. `pnpm test:release` is not defined.
 
 **Next**: Push the fixes to `refactor/ui-ux-web` for PR #52 review.
+
+## 2026-10-01 — feat-029 compact casting and header navigation
+
+**Result**: Completed the approved layout on `feat/compact-casting-mobile`. Both sequential workspaces place the hexagram beside the coins, with one outcome row and compact actions below. Mobile header icons replace bottom tabs. Connection status remains in Settings. Updated the canonical layout contract.
+
+**Evidence**: Final `./init.sh` passed with 225 package tests; `git diff --check` passed. Chromium review covered 320×568, 390×664, and 1440×900 without horizontal overflow. The automatic footer stayed at 517px through six busy/revealed states. Manual confirmation/revisit, reset, cancel, draft protection, reading retention, and keyboard coin activation passed.
+
+**Limits**: Physical-phone rendering and actual screen-reader announcements remain unverified. Existing verification warnings remain.
+
+**Next**: Review the interface on the user's phone. Changes remain uncommitted.
+
+## 2026-10-01 — feat-029 PR handoff
+
+**State**: PR #53 is open.
+**Done**: Pushed `feat/compact-casting-mobile` and opened PR #53.
+**Evidence**: The pre-push hook passed workspace typecheck and all 225 package tests. `git diff --check` passed. Browser review confirmed that the input group shows only its bottom focus border.
+**Blockers**: None.
+**Next**: Review PR #53.

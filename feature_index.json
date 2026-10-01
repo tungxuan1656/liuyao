@@ -183,6 +183,12 @@
       "title": "shadcn UI migration and coin casting modes",
       "status": "done",
       "depends_on": ["feat-005", "feat-007"]
+    },
+    {
+      "id": "feat-029",
+      "title": "Compact casting and mobile header navigation",
+      "status": "done",
+      "depends_on": ["feat-028"]
     }
   ]
 }

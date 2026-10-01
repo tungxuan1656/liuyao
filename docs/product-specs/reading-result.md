@@ -15,13 +15,15 @@ User-facing labels use the Vietnamese terms in `vietnamese-language.md`.
 
 Show:
 
-- stable hexagram ID and traditional display name;
+- traditional display name;
 - upper and lower trigram names;
 - Eight Palace identity;
 - palace element;
 - changed hexagram identity when applicable.
 
 Do not show a changed hexagram when no line changes.
+
+Keep stable IDs in result data and reference links. Do not show them as interface labels.
 
 ## Board
 

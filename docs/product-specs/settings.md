@@ -16,6 +16,8 @@ Show:
 - online or offline state;
 - update availability when a new app version is waiting.
 
+Show the app version and browser state directly. Place package versions and the ruleset ID in collapsed technical details.
+
 ## Conventions
 
 Show the fixed V1 conventions that affect results:
@@ -26,6 +28,8 @@ Show the fixed V1 conventions that affect results:
 - calendar-based analysis is not part of V1.
 
 These values are read-only in V1.
+
+Keep conventions in the same technical details disclosure.
 
 ## Actions
 

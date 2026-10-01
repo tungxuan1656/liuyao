@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, BookOpen, LockKeyhole, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpen } from 'lucide-react';
 import { useReadingSession } from './reading-session';
 import { ROUTES } from './route-paths';
 import { getLinePresentation } from './line-value-presentation';
@@ -10,7 +10,6 @@ import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -33,9 +32,9 @@ import { Textarea } from './components/ui/textarea';
 import './components/route-layout.css';
 
 const methods = [
-  { value: 'automatic', label: 'Gieo tự động', detail: 'Ứng dụng gieo từng hào bằng đồng xu.' },
-  { value: 'manual', label: 'Gieo thủ công', detail: 'Ghi lại từng đồng xu bạn đã gieo.' },
-  { value: 'direct', label: 'Nhập trực tiếp', detail: 'Nhập sáu hào khi đã có kết quả.' },
+  { value: 'automatic', label: 'Gieo tự động', detail: 'Ứng dụng gieo đồng xu cho từng hào.' },
+  { value: 'manual', label: 'Gieo thủ công', detail: 'Ghi lại mặt xu từ lần gieo của bạn.' },
+  { value: 'direct', label: 'Nhập trực tiếp', detail: 'Chọn sáu hào từ kết quả đã có.' },
 ] as const;
 
 export default function App() {
@@ -58,26 +57,17 @@ export default function App() {
   return (
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
-        <Badge variant="secondary">Không gian suy ngẫm</Badge>
-        <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
-          Một câu hỏi. Sáu hào.
-        </h1>
-        <p className="max-w-2xl text-muted-foreground">
-          Lập quẻ, xem từng dữ kiện và tra cứu nguồn tri thức ngay trên thiết bị của bạn.
-        </p>
+        <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">Gieo quẻ</h1>
       </header>
 
-      <div className="grid items-start gap-6 lg:grid-cols-12">
+      <div className="flex min-w-0 max-w-3xl flex-col gap-6">
         {reading ? (
-          <Card className="min-w-0 lg:col-span-7">
+          <Card>
             <CardHeader>
               <CardTitle role="heading" aria-level={2}>
                 Quẻ hiện tại
               </CardTitle>
-              <CardDescription>{reading.question || 'Quẻ chưa đặt tên'}</CardDescription>
-              <CardAction>
-                <Badge variant="secondary">Trong phiên này</Badge>
-              </CardAction>
+              {reading.question && <CardDescription>{reading.question}</CardDescription>}
             </CardHeader>
             <CardContent className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
@@ -110,35 +100,21 @@ export default function App() {
             </CardFooter>
           </Card>
         ) : (
-          <Card className="min-w-0 lg:col-span-7">
-            <CardHeader>
-              <CardTitle role="heading" aria-level={2}>
-                Gieo quẻ mới
-              </CardTitle>
-              <CardDescription>
-                Đặt câu hỏi nếu muốn, rồi chọn cách lập quẻ phù hợp.
-              </CardDescription>
-              <CardAction>
-                <Sparkles aria-hidden="true" className="size-5 text-muted-foreground" />
-              </CardAction>
-            </CardHeader>
+          <Card>
             <CardContent>
               <FieldGroup>
                 <Field>
                   <FieldLabel htmlFor="reading-question">Câu hỏi (không bắt buộc)</FieldLabel>
                   <Textarea
                     id="reading-question"
+                    placeholder="Bạn muốn hỏi về điều gì?"
                     value={entryQuestion}
                     onChange={event =>
                       draft
                         ? setDraft({ ...draft, question: event.target.value })
                         : setQuestion(event.target.value)
                     }
-                    placeholder="Bạn muốn suy ngẫm về điều gì?"
                   />
-                  <FieldDescription>
-                    Câu hỏi chỉ tồn tại trong phiên trình duyệt này.
-                  </FieldDescription>
                 </Field>
                 <FieldSet>
                   <FieldLegend>Phương pháp lập quẻ</FieldLegend>
@@ -176,65 +152,39 @@ export default function App() {
                 {draft ? 'Tiếp tục gieo quẻ' : 'Bắt đầu gieo quẻ'}{' '}
                 <ArrowRight data-icon="inline-end" />
               </Button>
-              <p className="text-xs text-muted-foreground">
-                Dữ liệu chưa hoàn tất có thể mất khi tải lại trang.
-              </p>
             </CardFooter>
           </Card>
         )}
-
-        <div className="grid min-w-0 gap-6 lg:col-span-5">
-          <Card>
-            <CardHeader>
-              <CardTitle role="heading" aria-level={2}>
-                Quy trình
-              </CardTitle>
-              <CardDescription>Ba bước để xem một quẻ Lục Hào.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ol className="flex flex-col gap-4">
-                <li className="flex gap-3">
-                  <Badge variant="outline">01</Badge>
-                  <span>Chọn cách gieo hoặc nhập sáu hào.</span>
-                </li>
-                <li className="flex gap-3">
-                  <Badge variant="outline">02</Badge>
-                  <span>Xem quẻ chính, quẻ biến và từng hào.</span>
-                </li>
-                <li className="flex gap-3">
-                  <Badge variant="outline">03</Badge>
-                  <span>Chạm vào dữ kiện để tra cứu quy tắc và nguồn.</span>
-                </li>
-              </ol>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle role="heading" aria-level={2}>
-                Thư viện tri thức
-              </CardTitle>
-              <CardDescription>
-                Quẻ, quái, thuật ngữ và quy tắc được tổ chức để tra cứu.
-              </CardDescription>
-            </CardHeader>
-            <CardFooter>
-              <Button variant="outline" size="lg" render={<Link to={ROUTES.library} />}>
-                <BookOpen data-icon="inline-start" /> Mở thư viện
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
+        <Card>
+          <CardHeader>
+            <CardTitle role="heading" aria-level={2}>
+              Các bước xem quẻ
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ol className="flex flex-col gap-4">
+              <li className="flex items-start gap-3">
+                <Badge variant="outline">1</Badge>
+                <span>Chọn phương pháp và lập sáu hào.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Badge variant="outline">2</Badge>
+                <span>Xem quẻ chính, quẻ biến và dữ kiện từng hào.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Badge variant="outline">3</Badge>
+                <span>Mở dữ kiện để xem giải thích và nguồn tham khảo.</span>
+              </li>
+            </ol>
+          </CardContent>
+          <CardFooter>
+            <Button variant="outline" size="lg" render={<Link to={ROUTES.library} />}>
+              <BookOpen data-icon="inline-start" /> Mở thư viện
+              <ArrowRight data-icon="inline-end" />
+            </Button>
+          </CardFooter>
+        </Card>
       </div>
-
-      <Card size="sm">
-        <CardContent className="flex items-start gap-3">
-          <LockKeyhole aria-hidden="true" className="size-5 shrink-0 text-muted-foreground" />
-          <p className="text-muted-foreground">
-            Quẻ và câu hỏi chỉ được giữ trong bộ nhớ của phiên hiện tại. Ứng dụng có thể hoạt động
-            ngoại tuyến sau khi tải xong.
-          </p>
-        </CardContent>
-      </Card>
 
       {replaceReading && (
         <ConfirmationDialog
@@ -247,7 +197,7 @@ export default function App() {
             setReplaceReading(false);
           }}
         >
-          Bắt đầu quẻ mới sẽ thay thế quẻ đã hoàn tất đang được giữ trong bộ nhớ.
+          Quẻ hiện tại sẽ bị xóa.
         </ConfirmationDialog>
       )}
     </main>

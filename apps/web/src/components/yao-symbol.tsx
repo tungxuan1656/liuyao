@@ -25,10 +25,10 @@ export function YaoSymbol({ polarity, changing = false, className = '' }: Props)
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="3"
+            strokeWidth="1.5"
             strokeLinecap="round"
           >
-            {yang ? <circle cx="12" cy="12" r="7" /> : <path d="m6 6 12 12M18 6 6 18" />}
+            {yang ? <circle cx="12" cy="12" r="6" /> : <path d="m7 7 10 10M17 7 7 17" />}
           </svg>
         )}
       </span>

@@ -1,6 +1,7 @@
 import type { LineValue } from '@liuyao/core';
 import { getLinePresentation } from '../line-value-presentation';
 import { YaoSymbol } from '../components/yao-symbol';
+import { cn } from '../lib/utils';
 
 export function CastingHexagram({
   lines,
@@ -10,12 +11,9 @@ export function CastingHexagram({
   step: number;
 }) {
   return (
-    <section className="flex flex-col gap-3" aria-label="Quẻ đang hình thành">
-      <h2 className="text-xs font-medium text-neutral-500 tracking-wide uppercase">
-        Quẻ đang hình thành
-      </h2>
+    <section aria-label="Quẻ đang hình thành">
       <ol
-        className="forming-hexagram flex flex-col-reverse gap-1.5"
+        className="forming-hexagram flex flex-col-reverse gap-1"
         aria-label="Hào sáu ở trên, hào một ở dưới"
       >
         {[0, 1, 2, 3, 4, 5].map(index => {
@@ -25,19 +23,22 @@ export function CastingHexagram({
           return (
             <li
               key={index}
-              className={`forming-hexagram-row grid grid-cols-[24px_100px_minmax(0,1fr)] items-center gap-3 py-1 transition-opacity ${
-                value === undefined && !isCurrent ? 'opacity-30' : 'opacity-100'
-              }`}
+              className={cn(
+                'forming-hexagram-row grid w-fit max-w-full grid-cols-[12px_minmax(0,100px)] items-center gap-1 transition-opacity',
+                value === undefined && !isCurrent ? 'opacity-30' : 'opacity-100',
+                isCurrent && 'bg-muted',
+              )}
               aria-current={isCurrent ? 'step' : undefined}
+              aria-label={`Hào ${index + 1}: ${value === undefined ? 'Chờ gieo' : getLinePresentation(value).name}`}
             >
               <span
-                className={`w-6 text-center text-[11px] shrink-0 font-medium ${
-                  isCurrent ? 'text-neutral-900' : 'text-neutral-400'
-                }`}
+                className={cn(
+                  'text-center text-xs font-medium',
+                  isCurrent ? 'text-foreground' : 'text-muted-foreground',
+                )}
                 aria-hidden="true"
               >
                 {index + 1}
-                <span className="sr-only">. Hào {index + 1}</span>
               </span>
               <div className="forming-hexagram-symbol">
                 {value !== undefined ? (
@@ -48,34 +49,18 @@ export function CastingHexagram({
                   />
                 ) : (
                   <span
-                    className={`block h-2 w-[72px] rounded-full ${isCurrent ? 'bg-neutral-300' : 'bg-neutral-100'}`}
+                    className={cn(
+                      'forming-hexagram-placeholder block h-1',
+                      isCurrent ? 'bg-muted-foreground/50' : 'bg-muted',
+                    )}
                     aria-hidden="true"
                   />
                 )}
               </div>
-              <span
-                className={`text-xs leading-none ${
-                  value !== undefined
-                    ? 'text-neutral-700'
-                    : isCurrent
-                      ? 'text-neutral-400'
-                      : 'text-neutral-200'
-                }`}
-              >
-                {value !== undefined
-                  ? getLinePresentation(value).name
-                  : isCurrent
-                    ? 'Chờ gieo'
-                    : '—'}
-              </span>
             </li>
           );
         })}
       </ol>
-      <p className="text-[11px] text-neutral-400 leading-relaxed border-t border-neutral-100 pt-3 mt-1">
-        Gieo từ hào dưới cùng ·{' '}
-        <strong className="font-medium text-neutral-600">○ Dương động · × Âm động</strong>
-      </p>
     </section>
   );
 }

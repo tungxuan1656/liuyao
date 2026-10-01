@@ -1,23 +1,9 @@
-import { ArrowRight } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 import { ROUTES } from './route-paths';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from './components/ui/card';
-import {
-  Empty,
-  EmptyContent,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyTitle,
-} from './components/ui/empty';
+import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
+import { Empty, EmptyContent, EmptyHeader, EmptyTitle } from './components/ui/empty';
 import {
   getRecord,
   getApplicableRules,
@@ -33,7 +19,6 @@ function formatName(name: string) {
   return ['6', '7', '8', '9'].includes(name) ? getLinePresentation(Number(name)).name : name;
 }
 
-const kinds = { hexagram: 'Quẻ', trigram: 'Quái', term: 'Thuật ngữ', rule: 'Quy tắc' } as const;
 const ruleCategories = {
   metadata: 'Thông tin',
   structure: 'Cấu trúc',
@@ -54,9 +39,6 @@ export function LibraryDetailPage() {
             <EmptyTitle role="heading" aria-level={1}>
               Không tìm thấy mục
             </EmptyTitle>
-            <EmptyDescription>
-              Địa chỉ này không khớp với mục nào trong thư viện trên thiết bị.
-            </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
             <Button size="lg" render={<Link to={ROUTES.library} />}>
@@ -69,10 +51,9 @@ export function LibraryDetailPage() {
 
   const related = getRelatedFigures(record);
   const applicableRules = getApplicableRules(record);
-  const category = kinds[entityType as keyof typeof kinds] ?? 'Mục';
   const recordMeta =
     'kingWenNumber' in record
-      ? `Số thứ tự ${record.kingWenNumber}`
+      ? `Quẻ ${String(record.kingWenNumber).padStart(2, '0')}`
       : 'category' in record
         ? ruleCategories[record.category]
         : undefined;
@@ -82,53 +63,35 @@ export function LibraryDetailPage() {
   return (
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
-        <Badge variant="secondary">Thư viện / {category}</Badge>
+        <Button
+          variant="link"
+          size="lg"
+          className="self-start"
+          render={<Link to={ROUTES.library} />}
+        >
+          Thư viện
+        </Button>
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
           {formatName(recordName(record))}
         </h1>
-        <p className="max-w-2xl text-muted-foreground">
-          {recordMeta ?? 'Nội dung tham khảo được lưu trên thiết bị.'}
-        </p>
+        {recordMeta && <Badge variant="outline">{recordMeta}</Badge>}
       </header>
 
       <div className="grid items-start gap-6 lg:grid-cols-12">
-        <Card className="min-w-0 lg:col-span-8">
-          <CardHeader>
-            <CardTitle role="heading" aria-level={2}>
-              Tổng quan
-            </CardTitle>
-            <CardDescription>
-              {category}
-              {recordMeta ? ` · ${recordMeta}` : ''}
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="flex flex-col gap-4">
-            <code className="break-all text-xs text-muted-foreground">{record.id}</code>
-            <p className="font-serif text-lg leading-relaxed">{recordDescription(record)}</p>
-          </CardContent>
-        </Card>
-
-        <Card className="lg:col-span-4">
-          <CardHeader>
-            <CardTitle role="heading" aria-level={2}>
-              Tra cứu tiếp
-            </CardTitle>
-            <CardDescription>Xem các mục khác trong cẩm nang.</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <Button variant="outline" size="lg" render={<Link to={ROUTES.library} />}>
-              Mở thư viện <ArrowRight data-icon="inline-end" />
-            </Button>
-          </CardFooter>
-        </Card>
+        {!('kingWenNumber' in record) && (
+          <Card className="min-w-0 lg:col-span-12">
+            <CardContent>
+              <p className="font-serif text-lg leading-relaxed">{recordDescription(record)}</p>
+            </CardContent>
+          </Card>
+        )}
 
         {trigramIds.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>
               <CardTitle role="heading" aria-level={2}>
-                Gồm hai quái
+                Cấu trúc quẻ
               </CardTitle>
-              <CardDescription>Ngoại quái ở trên, nội quái ở dưới.</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-3 sm:grid-cols-2">
               {trigramIds.map((trigramId, index) => {
@@ -157,7 +120,6 @@ export function LibraryDetailPage() {
               <CardTitle role="heading" aria-level={2}>
                 Quẻ liên quan
               </CardTitle>
-              <CardDescription>{related.length} quẻ liên kết với mục này.</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-3 sm:grid-cols-2">
               {related.map(item => (
@@ -184,7 +146,6 @@ export function LibraryDetailPage() {
               <CardTitle role="heading" aria-level={2}>
                 Quy tắc áp dụng
               </CardTitle>
-              <CardDescription>Quy tắc tính liên quan đến mục này.</CardDescription>
             </CardHeader>
             <CardContent className="grid gap-3">
               {applicableRules.map(rule => (
@@ -202,15 +163,14 @@ export function LibraryDetailPage() {
           </Card>
         )}
 
-        <Card className="min-w-0 lg:col-span-12">
-          <CardHeader>
-            <CardTitle role="heading" aria-level={2}>
-              Nguồn và vị trí tra cứu
-            </CardTitle>
-            <CardDescription>Thông tin xuất xứ của mục tham khảo.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            {references.length > 0 ? (
+        {references.length > 0 && (
+          <Card className="min-w-0 lg:col-span-12">
+            <CardHeader>
+              <CardTitle role="heading" aria-level={2}>
+                Nguồn tham khảo
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
               <div className="flex flex-col divide-y">
                 {references.map(reference => (
                   <article
@@ -219,36 +179,39 @@ export function LibraryDetailPage() {
                   >
                     <div>
                       <h3 className="font-semibold">{reference.source.title}</h3>
-                      <p className="text-muted-foreground">{reference.source.author}</p>
-                    </div>
-                    <dl className="grid gap-3">
-                      <div>
-                        <dt className="text-muted-foreground">Thông tin xuất bản</dt>
-                        <dd className="break-words">{reference.source.publication}</dd>
-                      </div>
                       {reference.location && (
-                        <div>
-                          <dt className="text-muted-foreground">Vị trí trích dẫn</dt>
-                          <dd className="break-words">{reference.location}</dd>
-                        </div>
+                        <p className="text-muted-foreground">{reference.location}</p>
                       )}
-                      <div>
-                        <dt className="text-muted-foreground">Quyền sử dụng</dt>
-                        <dd className="break-words">{reference.source.rights}</dd>
-                      </div>
-                      <div>
-                        <dt className="text-muted-foreground">Xuất xứ</dt>
-                        <dd className="break-words">{reference.source.provenance}</dd>
-                      </div>
-                    </dl>
+                    </div>
+                    <details>
+                      <summary className="min-h-11 cursor-pointer content-center text-muted-foreground">
+                        Thông tin nguồn
+                      </summary>
+                      <dl className="grid gap-3">
+                        <div>
+                          <dt className="text-muted-foreground">Tác giả</dt>
+                          <dd className="break-words">{reference.source.author}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-muted-foreground">Thông tin xuất bản</dt>
+                          <dd className="break-words">{reference.source.publication}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-muted-foreground">Quyền sử dụng</dt>
+                          <dd className="break-words">{reference.source.rights}</dd>
+                        </div>
+                        <div>
+                          <dt className="text-muted-foreground">Xuất xứ</dt>
+                          <dd className="break-words">{reference.source.provenance}</dd>
+                        </div>
+                      </dl>
+                    </details>
                   </article>
                 ))}
               </div>
-            ) : (
-              <p className="text-muted-foreground">Chưa ghi nhận vị trí nguồn cho mục này.</p>
-            )}
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        )}
       </div>
     </main>
   );

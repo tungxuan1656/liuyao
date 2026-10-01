@@ -20,9 +20,11 @@ export type FactSelection = {
 export function FactButton({
   fact,
   onSelect,
+  hideLabel = false,
 }: {
   fact: FactSelection;
   onSelect: (fact: FactSelection) => void;
+  hideLabel?: boolean;
 }) {
   // Each fact needs its label and value visible at narrow board widths.
   return (
@@ -34,7 +36,7 @@ export function FactButton({
       onClick={() => onSelect(fact)}
       aria-label={`${fact.label}: ${fact.value}. Xem giải thích dữ kiện này`}
     >
-      <span>{fact.label}</span>
+      <span className={hideLabel ? 'sr-only' : undefined}>{fact.label}</span>
       <strong className="max-w-full break-words font-semibold">{fact.value}</strong>
     </Button>
   );
@@ -80,20 +82,19 @@ export function FactInspector({
               <article key={rule.id} className="flex flex-col gap-2 py-3 first:pt-0 last:pb-0">
                 <h4 className="font-medium">{rule.title}</h4>
                 <p className="text-muted-foreground">{rule.explanation}</p>
-                <code className="break-all text-xs text-muted-foreground">{rule.id}</code>
                 <Button
                   variant="link"
                   size="lg"
                   className="h-auto min-h-11 whitespace-normal text-left"
                   render={<Link to={ROUTES.libraryDetail('rule', rule.id)} />}
                 >
-                  Mở quy tắc trong Thư viện
+                  Xem quy tắc
                 </Button>
               </article>
             ))}
           </div>
         ) : (
-          <p className="text-muted-foreground">Chưa có quy tắc được liên kết với dữ kiện này.</p>
+          <p className="text-muted-foreground">Chưa có quy tắc liên quan.</p>
         )}
       </section>
       <Separator />
@@ -122,17 +123,15 @@ export function FactInspector({
                       className="h-auto min-h-11 whitespace-normal text-left"
                       render={<a href={url} target="_blank" rel="noreferrer" />}
                     >
-                      Mở nguồn tham khảo
+                      Xem nguồn
                     </Button>
-                  ) : (
-                    <p className="text-muted-foreground">Chỉ có thông tin nguồn</p>
-                  )}
+                  ) : null}
                 </article>
               );
             })}
           </div>
         ) : (
-          <p className="text-muted-foreground">Chưa ghi nhận nguồn tham khảo cho quy tắc này.</p>
+          <p className="text-muted-foreground">Chưa có nguồn tham khảo.</p>
         )}
       </section>
       {fact.libraryTarget && (
@@ -146,7 +145,7 @@ export function FactInspector({
               <Link to={ROUTES.libraryDetail(fact.libraryTarget.kind, fact.libraryTarget.id)} />
             }
           >
-            Xem trong thư viện: {fact.label}
+            Xem trong thư viện
           </Button>
         </>
       )}

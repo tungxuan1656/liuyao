@@ -2,7 +2,7 @@
 export const coinIdentities = [
   {
     name: 'Đất',
-    label: 'Địa',
+    label: 'I',
     light: '#ffe097',
     color: '#d6a237',
     dark: '#815016',
@@ -10,7 +10,7 @@ export const coinIdentities = [
   },
   {
     name: 'Nước',
-    label: 'Thủy',
+    label: 'II',
     light: '#8bdaee',
     color: '#2879b6',
     dark: '#123f73',
@@ -18,7 +18,7 @@ export const coinIdentities = [
   },
   {
     name: 'Lửa',
-    label: 'Hỏa',
+    label: 'III',
     light: '#ff9c72',
     color: '#c44732',
     dark: '#79261c',
@@ -26,7 +26,7 @@ export const coinIdentities = [
   },
   {
     name: 'Gió',
-    label: 'Phong',
+    label: 'IV',
     light: '#ffffff',
     color: '#d7dfe3',
     dark: '#7b8c98',

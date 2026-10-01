@@ -1,17 +1,8 @@
 import type { ReadingResult } from '@liuyao/core';
 import { Link } from 'react-router-dom';
 import { YaoSymbol } from './components/yao-symbol';
-import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from './components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card';
 import { Separator } from './components/ui/separator';
 import { FactButton, type FactSelection } from './result-facts';
 import { ROUTES } from './route-paths';
@@ -36,7 +27,7 @@ export function HexagramBoard({
   select: (fact: FactSelection) => void;
 }) {
   const lines = [...result.lines].reverse();
-  const changedId = changed ? result.changedHexagramId : null;
+  const hexagramId = changed ? result.changedHexagramId : result.primaryHexagramId;
   const upperId = trigramIds?.upper ?? result.upperTrigramId;
   const lowerId = trigramIds?.lower ?? result.lowerTrigramId;
 
@@ -46,25 +37,22 @@ export function HexagramBoard({
         <CardTitle role="heading" aria-level={2}>
           {changed ? 'Quẻ biến' : 'Quẻ chính'}
         </CardTitle>
-        <CardDescription>
-          {changed ? 'Sau khi đổi các hào động' : 'Sáu hào từ dưới lên trên'}
-        </CardDescription>
-        <CardAction>
-          <Badge variant="outline">
-            {changed
-              ? (changedId?.replace('hexagram-', '') ?? '—')
-              : result.primaryHexagramId.replace('hexagram-', '')}
-          </Badge>
-        </CardAction>
       </CardHeader>
       <CardContent className="flex min-w-0 flex-col gap-4">
-        <h2 className="font-serif text-2xl font-semibold">
-          {changed
-            ? changedId
-              ? hexagramLabel(changedId)
-              : 'Không có thông tin quẻ biến'
-            : hexagramLabel(result.primaryHexagramId)}
-        </h2>
+        {hexagramId ? (
+          <FactButton
+            hideLabel
+            fact={{
+              id: changed ? 'result.changedHexagramId' : 'result.primaryHexagramId',
+              label: changed ? 'Quẻ biến' : 'Quẻ chính',
+              value: hexagramLabel(hexagramId),
+              libraryTarget: { kind: 'hexagram', id: hexagramId },
+            }}
+            onSelect={select}
+          />
+        ) : (
+          <p>Không có thông tin quẻ biến</p>
+        )}
         <div className="grid gap-2">
           {changed ? (
             <>
@@ -106,17 +94,6 @@ export function HexagramBoard({
             </>
           )}
         </div>
-        {changed && changedId && (
-          <FactButton
-            fact={{
-              id: 'result.changedHexagramId',
-              label: 'Quẻ biến',
-              value: hexagramLabel(changedId),
-              libraryTarget: { kind: 'hexagram', id: changedId },
-            }}
-            onSelect={select}
-          />
-        )}
         <Separator />
         <ol
           className="flex flex-col divide-y"
@@ -145,11 +122,13 @@ export function HexagramBoard({
                 </span>
                 <YaoSymbol polarity={polarity} changing={!changed && line.changing} />
                 <span className="min-w-0 truncate text-sm text-muted-foreground">
-                  {changed
-                    ? line.changing
-                      ? 'Đã đổi âm dương'
-                      : 'Giữ nguyên'
-                    : `${stemName(line.naJiaStem)} ${branchName(line.naJiaBranch)} · ${elementName(line.element)} · ${relativeName(line.relative)}`}
+                  {changed ? (
+                    <span className={line.changing ? undefined : 'sr-only'}>
+                      {line.changing ? 'Đổi âm dương' : 'Giữ nguyên'}
+                    </span>
+                  ) : (
+                    `${stemName(line.naJiaStem)} ${branchName(line.naJiaBranch)} · ${elementName(line.element)} · ${relativeName(line.relative)}`
+                  )}
                 </span>
               </li>
             );
