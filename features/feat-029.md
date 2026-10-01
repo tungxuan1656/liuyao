@@ -35,8 +35,8 @@ Keep the forming hexagram, coins, outcome, and primary action visible together o
 
 ## Handoff
 
-- State: done on `feat/compact-casting-mobile`; changes remain uncommitted.
-- Evidence: final `./init.sh` and `git diff --check` passed with 225 package tests. Chromium review covered 320×568, 390×664, and 1440×900. The footer stayed at 517px through six automatic busy/revealed states on both mobile sizes. Three-coin completion, manual confirmation/revisit, reset, cancel, draft protection, completed-reading retention, and keyboard coin activation passed.
+- State: done; PR #53 is open from `feat/compact-casting-mobile`.
+- Evidence: final `./init.sh` and `git diff --check` passed with 225 package tests. Chromium review covered 320×568, 390×664, and 1440×900. The footer stayed at 517px through six automatic busy/revealed states on both mobile sizes. Three-coin completion, manual confirmation/revisit, reset, cancel, draft protection, completed-reading retention, and keyboard coin activation passed. The pre-push hook passed typecheck and all 225 package tests. A browser focus check confirmed that the input group shows only its bottom focus border.
 - Limits: physical-phone rendering and actual screen-reader announcements remain unverified. Existing lint, font-resolution, sourcemap, and bundle-size warnings remain.
 - Blockers: none.
-- Next: review the updated interface on the user's phone.
+- Next: review PR #53.

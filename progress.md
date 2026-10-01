@@ -642,3 +642,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Limits**: Physical-phone rendering and actual screen-reader announcements remain unverified. Existing verification warnings remain.
 
 **Next**: Review the interface on the user's phone. Changes remain uncommitted.
+
+## 2026-10-01 — feat-029 PR handoff
+
+**State**: PR #53 is open.
+**Done**: Pushed `feat/compact-casting-mobile` and opened PR #53.
+**Evidence**: The pre-push hook passed workspace typecheck and all 225 package tests. `git diff --check` passed. Browser review confirmed that the input group shows only its bottom focus border.
+**Blockers**: None.
+**Next**: Review PR #53.
