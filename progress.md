@@ -716,3 +716,13 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The pre-push hook passed typecheck and all package tests. Chromium review covered persistence, offline launch, responsive Settings, theme contrast, and storage-write failure.
 **Blockers**: None.
 **Next**: Review PR #54.
+
+## 2026-10-01 — feat-031 book-backed domain documentation
+
+**Result**: Added the supplied-book source catalog, V1 board derivations, and intended knowledge quality contract. Documented current TypeScript storage and proposed JSON/database options. Updated canonical routes and the release evidence gate. Recorded four source discrepancies and the unresolved relationship between product coin symbols and traditional physical faces.
+
+**Evidence**: Fresh `./init.sh` passed with 225 package tests. Local documentation links and four PDF fingerprints passed. Documentation tables match eight trigram patterns, 64 palace memberships, and 48 Na Jia assignments in current code. `git diff --check` passed.
+
+**Limits**: This is focused documentation review. Runtime records and fixtures still need individual supplied-book provenance. Full commentary review and JSON migration are not implemented. Supplied PDFs remain user-provided inputs.
+
+**Next**: Select the supplied-book audit of runtime knowledge records and calculation fixtures.

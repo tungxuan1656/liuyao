@@ -74,7 +74,13 @@ Do not move durable facts into feature or progress records.
 4. The UI reads descriptive material from `@liuyao/knowledge`.
 5. The UI renders facts and reference knowledge.
 
-The core validates reading input, maps three coin bits to line values, provides an injected-source casting service and normalizers, identifies primary and changed hexagrams from six lines, reports changing positions, and calculates structured primary-hexagram board facts including palace, Shi/Ying, Na Jia, elements, and Six Relatives. The web layer adapts browser `crypto.getRandomValues` to the injected coin-bit source; core uses no browser globals. The knowledge package validates local reference records and exposes readonly lookup and normalized search APIs without calculating facts.
+The core validates input, maps three-/four-coin outcomes, and normalizes six lines.
+It identifies primary and changed hexagrams, changing positions, and primary-board palace, Shi/Ying, Na Jia, elements, and Six Relatives.
+The web layer adapts `crypto.getRandomValues` to the injected coin-bit source. The core uses no browser globals.
+
+The knowledge package validates local TypeScript records and exposes readonly lookup and normalized search APIs.
+The web build bundles these records for offline use.
+The supplied PDFs in `docs/books/` are research inputs outside the runtime flow.
 
 ## Verification ownership
 
@@ -84,5 +90,7 @@ The core validates reading input, maps three coin bits to line values, provides 
 
 - Engineering principles → `docs/design-docs/core-beliefs.md`
 - Product scope → `docs/product-specs/product-scope.md`
+- Domain derivations → `docs/design-docs/liuyao-ruleset-v1.md`
+- Knowledge storage → `docs/design-docs/knowledge-model.md`
 - Development and verification → `docs/development.md`
 - Agent operating contract → `AGENTS.md`

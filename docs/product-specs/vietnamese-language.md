@@ -16,6 +16,11 @@ This document owns the user-facing language and terminology rules for the Lục 
 
 Use the following canonical display names for trigrams and hexagrams. They follow the Vietnamese names in the listed reference; the table is a name glossary, not an endorsement of interpretations on that page.
 
+The supplied books use spelling variants such as Kiền/Càn, Li/Ly, Đoái/Đoài, and Tỉ/Tỷ.
+Keep the canonical display names below and retain useful variants as aliases during reviewed content changes.
+The [source catalog](../references/book-sources.md) identifies the editions used for domain review.
+Name normalization does not establish that an explanation is supported by a book.
+
 ### Bát quái
 
 | Stable ID          | Vietnamese name | Association |

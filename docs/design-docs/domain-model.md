@@ -2,6 +2,8 @@
 
 This document owns V1 domain contracts and line conventions for `@liuyao/core`.
 
+The [Liu Yao ruleset](liuyao-ruleset-v1.md) owns board derivations and source locations.
+
 ## Line contract
 
 `LineValue = 6 | 7 | 8 | 9`.
@@ -43,7 +45,7 @@ The V1 calculation input contains:
 
 Question text belongs to the web draft, not the core calculation input.
 
-The current scaffold accepts optional date and timezone fields. V1 calculation must not depend on them.
+The current contract accepts optional date and timezone fields. V1 calculation must not depend on them.
 
 ## Reading result
 
