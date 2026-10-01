@@ -28,9 +28,9 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 **State**: active; safe-area CSS changes are implemented, but native iOS retest and naming research remain.
 **Done**: Added viewport edge-to-edge support and top/bottom safe-area spacing for the app header, shell, and bottom sheet.
-**Evidence**: Browser safe-area simulation at 390×844 reported 59px top and 34px bottom insets. This does not verify rendering on physical iOS. The OS treatment remains a hypothesis, not a confirmed root cause. Full repository verification is recorded separately in this handoff.
+**Evidence**: Designer-reported browser safe-area simulation at 390×844 showed 59px top and 34px bottom insets; this does not verify physical iOS. The OS treatment remains a hypothesis, not a confirmed root cause. `./init.sh` passed format, lint (0 errors; four existing Fast Refresh warnings), typecheck, build, package exports, test placement, 44 knowledge tests, and 181 core tests. The build emitted font-resolution, sourcemap, and large-chunk warnings. `git diff --check` passed.
 **Blockers**: Retest the installed PWA on physical iOS; complete name-conflict, domain-availability, and obvious trademark-risk research. Final terminology/copy review remains open.
-**Next**: Run `./init.sh`, publish the verified follow-up to PR #55, then retest the installed PWA and complete naming research. Keep feat-013 active.
+**Next**: Retest the installed PWA on physical iOS and complete naming research. Keep feat-013 active; the implementation follow-up is published to PR #55.
 
 ## 2026-10-01 — feat-013 approved identity slice
 
