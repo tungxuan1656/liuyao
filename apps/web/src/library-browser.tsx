@@ -78,7 +78,7 @@ export function LibraryPage() {
             <FieldLabel htmlFor="library-search" className="sr-only">
               Tìm kiếm
             </FieldLabel>
-            <InputGroup className="h-11">
+            <InputGroup className="h-11 pl-3">
               <InputGroupAddon>
                 <Search aria-hidden="true" />
               </InputGroupAddon>
