@@ -37,23 +37,30 @@ Place each file at the `localInputPath` recorded in the JSON source inventory be
 
 This inventory records focused V1 review. It does not claim a complete review of the 2,453 PDF pages.
 
-| Topic                                 | Location                                                                              | Evidence boundary                                                                                                      |
-| ------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Five Element cycles and Six Relatives | `BPCT`, chapter 1, IV–V, PDF 9 (printed 3)                                            | General rules reviewed. The worked Wood example contains a contradictory element.                                      |
-| Earthly Branch elements               | `BPCT`, chapter 1, III, PDF 8 (printed 2)                                             | Branch associations used by the V1 board.                                                                              |
-| Trigram symbols and elements          | `BPCT`, chapter 1, VIII–IX, PDF 10–11 (printed 4–5)                                   | Symbols require visual inspection.                                                                                     |
-| Three-coin casting and moving lines   | `BPCT`, chapter 1, X, PDF 11–12 (printed 5–6)                                         | Describes physical coin faces and line classes.                                                                        |
-| Palace membership                     | `BPCT`, chapter 1, XI, PDF 12–13 (printed 6–7). Chapter 4, PDF 49–66 (printed 38–55). | The chapter 4 headings resolve the incomplete Khảm list. Full board annotations need separate review.                  |
-| Na Jia                                | `BPCT`, chapter 1, XII, PDF 13 (printed 7)                                            | All eight inner/outer sequences reviewed.                                                                              |
-| Shi/Ying                              | `BPCT`, chapter 1, XIII, PDF 14–15 (printed 8–9)                                      | Palace sequence and marker separation reviewed.                                                                        |
-| Basic terminology                     | `NHL`, chapter 4, PDF 59–74                                                           | Structure and moving-line discussion reviewed. PDF 73 gives Tụng changing to Lý.                                       |
-| Classical text and editorial context  | `NTT`, PDF 2–8, 938. `PBC`, PDF 2, 9–10, 15–16, 655.                                  | Title pages, introductions, colophon, and selected endnotes reviewed. Unreleased commentary remains unaudited.         |
-| Truân, Mông, Nhu, and Sư              | `NHL`, PDF 142–152, 157–159. `PBC`, PDF 73–99, 110–118. `NTT`, PDF 155–195, 209–221.  | Overviews and all six positions reviewed. The JSON records preserve selected author readings and their exact locators. |
+| Topic                                 | Location                                                                                    | Evidence boundary                                                                                                      |
+| ------------------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Five Element cycles and Six Relatives | `BPCT`, chapter 1, IV–V, PDF 9 (printed 3)                                                  | General rules reviewed. The worked Wood example contains a contradictory element.                                      |
+| Earthly Branch elements               | `BPCT`, chapter 1, III, PDF 8 (printed 2)                                                   | Branch associations used by the V1 board.                                                                              |
+| Trigram symbols and elements          | `BPCT`, chapter 1, VIII–IX, PDF 10–11 (printed 4–5)                                         | Symbols require visual inspection.                                                                                     |
+| Three-coin casting and moving lines   | `BPCT`, chapter 1, X, PDF 11–12 (printed 5–6)                                               | Describes physical coin faces and line classes.                                                                        |
+| Palace membership                     | `BPCT`, chapter 1, XI, PDF 12–13 (printed 6–7). Chapter 4, PDF 49–66 (printed 38–55).       | The chapter 4 headings resolve the incomplete Khảm list. Full board annotations need separate review.                  |
+| Na Jia                                | `BPCT`, chapter 1, XII, PDF 13 (printed 7)                                                  | All eight inner/outer sequences reviewed.                                                                              |
+| Shi/Ying                              | `BPCT`, chapter 1, XIII, PDF 14–15 (printed 8–9)                                            | Palace sequence and marker separation reviewed.                                                                        |
+| Basic terminology                     | `NHL`, chapter 4, PDF 59–74                                                                 | Structure and moving-line discussion reviewed. PDF 73 gives Tụng changing to Lý.                                       |
+| Classical text and editorial context  | `NTT`, PDF 2–8, 938. `PBC`, PDF 2, 9–10, 15–16, 655.                                        | Title pages, introductions, colophon, and selected endnotes reviewed. Unreleased commentary remains unaudited.         |
+| Truân, Mông, Nhu, and Sư              | `NHL`, PDF 142–152, 157–159. `PBC`, PDF 73–99, 110–118. `NTT`, PDF 155–195, 209–221.        | Overviews and all six positions reviewed. The JSON records preserve selected author readings and their exact locators. |
+| Tỷ, Tiểu Súc, Thái, and Bĩ            | `NHL`, PDF 160–165, 169–175. `PBC`, PDF 119–134, 142–162, 655. `NTT`, PDF 222–247, 259–283. | Complete passages, footnotes, headings, and diagrams reviewed. Selected interpretations remain attributed.             |
 
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
 These records do not activate automated interpretation.
+
+The [Phi–Phục and Lục thú citation collection](../../packages/knowledge/data/citations/batch-three-advanced.json)
+records chapter 5, sections 5–7, PDF 68–69 (printed 56–57).
+Related evidence includes chapter 1, XIV, PDF 15; chapter 4, PDF 49–50; and chapter 6 commentary, PDF 98–99.
+The records separate source definitions, worked examples, and conditional interpretation.
+The exclusions below keep ambiguous wording outside released claims.
 
 The three Chu Dịch commentaries support classical meanings.
 Their explanations do not automatically establish Na Jia, palace, or interpretation rules.
@@ -86,6 +93,34 @@ NTT PDF 183 and 221 refer readers to end-of-book criticism.
 That section was not located in this supplied PDF, which ends with Vị Tế, a blank page, and the colophon.
 The Mông summaries retain the historical setting of punishment passages.
 They do not claim review of the missing criticism.
+
+The [Tỷ](../../packages/knowledge/data/hexagrams/hexagram-08.json),
+[Tiểu Súc](../../packages/knowledge/data/hexagrams/hexagram-09.json),
+[Thái](../../packages/knowledge/data/hexagrams/hexagram-11.json), and
+[Bĩ](../../packages/knowledge/data/hexagrams/hexagram-12.json) records own seven further discrepancies.
+These concern a line reference, an inner trigram, polarity counts, a response pair, missing negation, and inner/outer positions.
+PBC PDF 160 and its endnote 13 on PDF 655 also conflict with the three outer lines in the Bĩ diagram.
+The resolutions use complete passages and rendered pages; the electronic correction does not override the diagram.
+
+The selected comparisons preserve different readings of Tiểu Súc's first two lines and Bĩ's first and fourth lines.
+Thái's fifth line retains uncertainty about historical identity and different uses of its marriage image.
+These interpretations do not become fixed calculation rules.
+
+### Advanced exclusions
+
+- BPCT PDF 68, Phi thần type 2, says “năm loại Lục thú”.
+  PDF 15 lists six Lục thú, while PDF 97, footnote 13, explains five Lục thân categories.
+  Those passages do not establish which meaning type 2 intended.
+  The released article covers the supported meanings and does not silently replace Lục thú with Lục thân.
+- BPCT PDF 69 says Đằng Xà “thuộc Mộc”.
+  PDF 39 discusses Đằng Xà on a Mộc line, but does not establish the spirit's own element.
+  The records retain its symbolic meaning without assigning an intrinsic element.
+- BPCT PDF 69 ends with language about many favorable or adverse spirits.
+  PDF 98–99 gives priority to Lục thân and sinh khắc.
+  The released comparisons retain that context and do not turn names into a count-based score.
+
+The selected summaries retain historical context for gender roles, birth omens, and official punishment.
+They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.
 
 These findings do not exhaust the edition's errors.
 Record each additional discrepancy with its location and resolution evidence.

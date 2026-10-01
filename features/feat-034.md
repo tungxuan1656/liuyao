@@ -19,9 +19,9 @@ Automated interpretation, calendar calculations, UI changes, and complete corpus
 - [x] Four quẻ preserve stable IDs, reviewed structures, source spelling variants, and attributed line summaries.
 - [x] Advanced records preserve conditions, textual layers, and unresolved evidence boundaries.
 - [x] Each released claim has passage review and an exact supplied-edition citation.
-- [ ] Each content group has a separate verified commit.
-- [ ] Coverage and the manifest identify remaining gaps and the next exact batch.
-- [ ] `./init.sh`, PDF fingerprint/freshness checks, and `git diff --check` pass.
+- [x] Each content group has a separate verified commit.
+- [x] Coverage and the manifest identify remaining gaps and the next exact batch.
+- [x] `./init.sh`, PDF fingerprint/freshness checks, and `git diff --check` pass.
 
 ## Relevant docs
 
@@ -40,9 +40,9 @@ Continue the approved JSON design and batch sequence with an inline plan.
 
 ## Handoff
 
-- State: active.
+- State: done.
 - Evidence: Both groups pass `./init.sh` with 263 tests and PDF fingerprint/freshness checks. Coverage is 100 records, 427 claims, 303 locators; 12/64 quẻ and 72/384 positions.
-- Commits: Four quẻ `c5bf201`.
+- Commits: Four quẻ `c5bf201`; advanced BPCT `5fa328c`.
 - Exclusions: Phi thần type 2 and Đằng Xà’s own element remain outside released claims because the wording is unclear.
 - Blockers: none.
-- Next: Commit the advanced group, then reconcile source documentation and complete the handoff.
+- Next: Review Đồng Nhân, Đại Hữu, Khiêm, Dự and BPCT chapter 5, sections 8–10 (Tứ sinh, Nguyệt phá, Tuần không; PDF 70), as recorded in the manifest.

@@ -795,3 +795,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. The four-quẻ group is committed as `c5bf201`.
 - Blockers: none for the selected claims. The two excluded passages need clearer evidence before later publication.
 - Next: Commit this group, then reconcile source documentation and complete the handoff.
+
+## 2026-10-01 — feat-034 completed handoff
+
+- Status: done.
+- Result: Completed both selected tracks and reconciled the source inventory with exact passage locations, seven supported discrepancy resolutions, and explicit advanced exclusions. Reviewed content, quality, and model documents remain accurate; they link the canonical coverage report.
+- Commits: Four quẻ `c5bf201`; Phi–Phục and Lục thú `5fa328c`.
+- Evidence: Final `./init.sh` passed 263 tests. Coverage remains incomplete: 100 records, 427 cited claims, 303 locators; 12/64 quẻ and 72/384 positions in each commentary book. PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none for this batch. Phi thần type 2 and Đằng Xà’s own element remain excluded pending clearer source evidence.
+- Next: Review Đồng Nhân, Đại Hữu, Khiêm, Dự and BPCT chapter 5, sections 8–10 (Tứ sinh, Nguyệt phá, Tuần không; PDF 70).
