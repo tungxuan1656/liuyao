@@ -30,17 +30,17 @@ The main routes arrange task-relevant shadcn `Card` components in an asymmetric 
 - Use `Button`, `Badge`, `Field`, `InputGroup`, `RadioGroup`, `Tabs`, `ToggleGroup`, `Alert`, `Empty`, `Separator`, and `Sheet` through their installed APIs. Preserve the Sera preset and semantic color tokens. Custom CSS is reserved for route grids, the result breakpoint, and Liu Yao domain graphics.
 - The content wrapper is centered at 1280px maximum, with 16px mobile and 24px desktop gutters. Use a single column on mobile. Desktop grids use twelve columns where the task needs a wider primary card and a narrower companion; reference results use two or three columns when their content fits.
 - Use 24px between major sibling cards, 16px in compact lists, and component-owned spacing within cards. Do not override button or field dimensions to align a screenshot.
-- Headers use one semantic page heading, a short description, and an optional contextual badge. Card titles remain card titles; route headings do not imitate cards.
-- At 320px and wider, keep all content within the viewport. Library tabs use two rows on narrow mobile screens. Rule filters wrap. Casting actions and result facts stay reachable above the fixed mobile navigation.
+- Headers use one semantic page heading. Add descriptions or badges only when they provide information that the main content does not show.
+- At 320px and wider, keep all content within the viewport. Library tabs use two rows on narrow mobile screens. Rule filters wrap.
 
-| Route                                       | Card arrangement                                                                                                                                                                                                        |
-| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Home (`/`)                                  | Primary form or current-reading card spans the larger desktop column. Process and Library cards occupy the companion column; the privacy note follows.                                                                  |
-| Casting (`/casting`)                        | The existing shared casting workspace remains the primary card. A concise progress card occupies the companion column on wide screens and follows the workspace on mobile. Direct input retains six vertical line rows. |
-| Result (`/result`)                          | Summary, primary and changed hexagram boards, and line facts form the main column. The ruleset-backed fact inspector is a persistent companion at 900px and wider, and a bottom `Sheet` below that breakpoint.          |
-| Library (`/library`)                        | A search and category card leads, with a compact category-context card beside it. Reference records form a one-, two-, or three-column grid by available width.                                                         |
-| Library detail (`/library/:entityType/:id`) | Overview, related figures, applicable rules, and sources occupy separate content cards. Long source lists flow naturally.                                                                                               |
-| Settings (`/settings`)                      | System state, versions, conventions, and privacy occupy cards sized by content.                                                                                                                                         |
+| Route                                       | Card arrangement                                                                                                                                                                                               |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home (`/`)                                  | Primary form or current-reading card spans the larger desktop column. Process and Library cards occupy the companion column; the privacy note follows.                                                         |
+| Casting (`/casting`)                        | The shared casting workspace remains the primary card. A progress card occupies the companion column only on wide screens. Direct input retains six vertical line rows.                                        |
+| Result (`/result`)                          | Summary, primary and changed hexagram boards, and line facts form the main column. The ruleset-backed fact inspector is a persistent companion at 900px and wider, and a bottom `Sheet` below that breakpoint. |
+| Library (`/library`)                        | A search and category card leads, with a compact category-context card beside it. Reference records form a one-, two-, or three-column grid by available width.                                                |
+| Library detail (`/library/:entityType/:id`) | Overview, related figures, applicable rules, and sources occupy separate content cards. Long source lists flow naturally.                                                                                      |
+| Settings (`/settings`)                      | System state, versions, conventions, and privacy occupy cards sized by content.                                                                                                                                |
 
 ### Typography
 
@@ -62,7 +62,7 @@ The main routes arrange task-relevant shadcn `Card` components in an asymmetric 
   - **Old Yin / 6**: `✕` — Yin changing to Yang.
   - **Old Yang / 9**: `○` — Yang changing to Yin.
   - Keep the marker beside the stroke in a reserved column. Do not put either marker in a solid black square or weaken the completed line's strokes to emphasize the marker.
-- **Forming hexagram geometry (`/casting`)**: Keep six compact rows with fixed columns for the position number, symbol, and canonical line name. Give every completed line a 72px-wide stroke area and a 6px stroke height; split yin into equal segments with a visible 10px center gap. Reserve a 24px marker column immediately after the strokes with a 4px gap, including on static lines, so the stroke length never changes when a moving marker appears. Align every row's number, stroke, marker, and name on the same baseline at mobile and desktop widths. Preserve the existing row order, value-to-symbol mapping, accessible labels, and quiet empty-line placeholders. Limit geometry overrides to the forming hexagram; other `<YaoSymbol>` usages must not acquire a wider line or narrower marker spacing by accident.
+- **Forming hexagram geometry (`/casting`)**: Keep six compact rows with columns for the position number and symbol. Show canonical names through accessible row labels, not repeated visible text. Target a 72px stroke width, with responsive compression to 52px at 320px. Keep the 6px stroke height, 10px yin gap, 24px moving-marker column, and 4px marker gap. Static and moving lines use identical stroke widths. Highlight the current row without weakening completed strokes. Preserve bottom-to-top order, value mapping, and quiet empty placeholders. Scope geometry overrides to the forming hexagram.
 
 ---
 
@@ -70,10 +70,11 @@ The main routes arrange task-relevant shadcn `Card` components in an asymmetric 
 
 The three root destinations are Gieo quẻ (`/`), Thư viện (`/library`), and Cài đặt (`/settings`). `/casting` and `/result` belong to Gieo quẻ; `/library/:entityType/:id` belongs to Thư viện.
 
-- Below 768px, a compact top bar shows the brand on root destinations and a contextual back link on casting, result, and Library detail. A fixed three-tab bottom navigation remains visible on every route, including casting. The shell reserves the tab bar height and safe-area inset below content.
-- At 768px and wider, the top header shows the brand, three destination links, and connection status. There is no application back link in this header. The header stays in document flow.
+- Below 768px, the top bar shows a Home-linked brand on root destinations and a contextual back link on casting, result, and Library detail. Library and Settings icon links sit on the right with Vietnamese accessible names and 44px targets. There is no bottom tab bar or reserved tab-bar space.
+- At 768px and wider, the top header shows the brand and three destination links. There is no application back link in this header. The header stays in document flow.
+- Connection status appears in Settings, not in the global header.
 - The current root destination is indicated with `aria-current="page"` in both navigation variants. In-app navigation during an unfinished cast remains protected by the confirmation behavior in `reading-flow.md`.
-- Route changes scroll to the beginning of the new page. A completed reading persists across root-tab navigation within the browser session. Reloading the application can clear it.
+- Route changes scroll to the beginning of the new page. A completed reading persists across root-destination navigation within the browser session. Reloading the application can clear it.
 - Library details support direct links and browser history. On mobile their top-bar back link leads to the Library root; on desktop users navigate through the top header or browser history.
 
 ### Root destination content
@@ -87,7 +88,7 @@ The three root destinations are Gieo quẻ (`/`), Thư viện (`/library`), and 
 Used during active line input before calculation. Governed by the rules in `reading-flow.md`:
 
 - **Navigation state**:
-  - The mobile root tabs remain visible. The route displays a separate cancel action and a method label. Leaving an unfinished cast still requires confirmation.
+  - Mobile header navigation remains available. The route displays a separate cancel action; the method badge appears only on desktop. Leaving an unfinished cast still requires confirmation.
   - The desktop header retains the root destinations; it has no back action.
 - **Input modes**:
   - **Sequential mode (Manual casting & Automatic coin casting)**:
@@ -95,9 +96,12 @@ Used during active line input before calculation. Governed by the rules in `read
     - Bottom-to-top sequence.
     - Có nút `[ Quay lại ]` để về hào trước mà không xóa dữ liệu đã nhập.
     - **Intended replacement:** Automatic and manual modes share one neutral `Card` workspace composition: the same route heading, card header, forming-hexagram column, coin stage, result region, action bar, and reset placement. Do not give manual mode a separate step heading, nested card, boxed coin buttons, or detached navigation card.
-    - The header contains a single-select `ToggleGroup` for three/four coins and the completed-line count. Existing draft rules control when selection is locked.
-    - Desktop places the forming hexagram beside the coin area. Mobile stacks the compact hexagram above the coins.
-    - Fill slots from bottom to top. Each position reserves columns for its number, line geometry, moving marker, and canonical name. Keep completed strokes high contrast, including moving lines; keep the marker outside the line strokes. Empty slots use a quiet placeholder distinct from completed yang lines, with the current empty slot distinguishable from later slots.
+    - The header contains one row with a single-select `ToggleGroup` labeled `3 xu` / `4 xu` and one completed-line count. Existing draft rules control when selection is locked.
+    - Both mobile and desktop place the forming hexagram beside the coin area. One shared outcome row appears below them, followed by the action bar. Do not add inner frames or separate result cards.
+    - Fill slots from bottom to top. Each position reserves columns for its number, line geometry, and moving marker. Keep completed strokes high contrast, including moving lines; keep the marker outside the line strokes. Empty slots use a quiet placeholder distinct from completed yang lines, with the current empty slot distinguishable from later slots.
+    - Remove the visible forming-hexagram heading, per-row names, transformation legend, and coin-face transcript. Accessible labels retain this information. Show the latest canonical name once, beside its line position.
+    - Keep the hexagram, coins, latest outcome, and primary action visible together at 320×568 and 390×664 without a question. Long questions, text zoom, and shorter viewports can scroll.
+    - Use 44px icon buttons for previous-line navigation and reset. Preserve their accessible names and reset confirmation. Mobile can show `Gieo tiếp` / `Xác nhận` with the full action names available accessibly.
     - Make the forming hexagram large enough to read its yin gap and moving markers on a 320px viewport. Keep row heights, line stroke widths, marker width, and label alignment identical for completed slots. Do not use a black marker tile or tiny placeholder strokes in completed slots.
     - Three coins occupy a fixed triangle: one centered above two lower coins. All three use the same neutral surface. Automatic and manual stages use the same centers and face size.
     - Four coins occupy a fixed two-column, two-row square: Earth at top-left, Water at top-right, Fire at bottom-left, and Wind at bottom-right. Automatic and manual stages use the same square and order; never shrink four coins to force them into a single row.
@@ -107,7 +111,7 @@ Used during active line input before calculation. Governed by the rules in `read
     - Target a 64px coin face for both methods; keep at least 12px clear space between adjacent coin faces and leave room below for the identity label. Shrink the surrounding stage before shrinking a coin. Keep coin and label text legible at 320px.
     - Automatic coins flip repeatedly in place, then show the predetermined faces. Remove Three.js, WebGL, canvas textures, camera motion, and airborne trajectories.
     - **Proposed timing:** Four 300ms flip cycles, with a total duration of 1200ms. Use horizontal CSS scaling and swap glyphs at edge-on frames.
-    - Keep each coin center, the stage height, the result region, and the action bar stationary throughout the flip and reveal.
+    - Keep each coin center, the stage height, the result region, and the action bar stationary throughout the flip and reveal. Reserve a 184px shared visualization row and a 28px outcome row. Two 64px coin faces, 6px label gaps, 16px labels, and a 12px row gap determine the visualization height.
     - Keep the stage and result region compact but stable across states: waiting, flipping, revealed, and revisiting a saved line. Do not use a tall, empty desktop stage as the default visual composition.
     - Explicit tosses animate under reduced-motion preferences. Reset, cancel, or unmount cancels completion. Revisits show stored faces without replay.
     - Manual coins use shadcn `Button` controls with the same 64px faces, centers, labels, and surrounding stage as automatic coins. Each activation flips one face to match a physical toss; the click target and focus state remain clear without boxing the coin and label. Manual input never generates random faces.
@@ -223,7 +227,7 @@ The result view presents deterministic facts separated from explanatory prose, m
   - Displays the outcome evidence. The casting flow provides the predetermined random outcome; animation must not determine or alter it.
 - Manual coin controls show independently adjustable heads/tails faces, expose each coin's identity accessibly, and provide an explicit line-confirm action.
 - `<FactInspector fact={selectedFact} />`: Ruleset-backed explanation renderer, embedded inline in split-pane views or inside the intended Base UI `Sheet` in single-pane views.
-- `<AppShell />`: Master layout wrapping TopNav (desktop), BottomNav (mobile with safe area), and main scroll container.
+- `<AppShell />`: Master layout wrapping responsive header navigation and the main content.
 
 ---
 
@@ -234,7 +238,7 @@ The result view presents deterministic facts separated from explanatory prose, m
    - Explanations are ruleset-backed explanations for `liuyao-standard-v1`, not personal interpretations.
 2. **In-Memory Draft & Reading Safety**:
    - Any action that would discard entered casting lines or replace an active completed reading must require explicit user confirmation via an `AlertDialog`.
-   - Navigating between Level 0 root tabs (Reading, Library, Settings) must preserve the active completed reading in memory.
+   - Navigating between root destinations (Reading, Library, Settings) must preserve the active completed reading in memory.
 3. **PWA Update Safety**:
    - A newly waiting service worker must display a non-blocking toast/banner.
    - The application must never trigger an automatic page reload while a casting input flow or completed reading result is active.

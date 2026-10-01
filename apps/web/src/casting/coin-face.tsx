@@ -25,7 +25,7 @@ export function CoinFace({ value, name, identityIndex }: CoinFaceProps) {
         <span className="text-[9px] leading-none mb-0.5 font-medium opacity-70">{name}</span>
       )}
       <span className="text-xl leading-none" aria-hidden="true">
-        {isHeads ? '☀' : '☾'}
+        {isHeads ? '☀︎' : '☾︎'}
       </span>
       <span className="sr-only">
         {name ? `${name}, ` : ''}

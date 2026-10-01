@@ -2,20 +2,20 @@
 .coin-arrangement {
   --coin-size: 4rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(var(--coin-size), 1fr));
+  grid-template-columns: repeat(2, var(--coin-size));
   align-items: center;
   justify-items: center;
-  width: min(100%, 22rem);
-  gap: 1rem;
+  width: max-content;
+  gap: 0.75rem;
   margin-inline: auto;
 }
 .coin-arrangement--three > :first-child {
   grid-column: 1 / -1;
 }
 .coin-face {
-  color: #35424a;
-  border-color: #75828a;
-  background: #fff;
+  color: var(--foreground);
+  border-color: var(--muted-foreground);
+  background: var(--background);
 }
 .coin-face--identified {
   color: var(--coin-ink);
@@ -28,46 +28,27 @@
 
 .casting-workspace-header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 .casting-workspace-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 140px;
+  grid-template-rows: 184px 28px;
+  align-items: center;
+  gap: 1rem 0.75rem;
   min-width: 0;
 }
 .casting-hexagram-column {
   display: flex;
   min-width: 0;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  /* Top/left/right only: the coin stage below or beside owns the shared edge. */
-  border: 1px solid var(--border);
-  border-bottom: 0;
-  background: color-mix(in oklch, var(--muted) 30%, transparent);
+  justify-content: flex-start;
 }
 .casting-hexagram-column > section {
   width: 100%;
-  gap: 0.5rem;
-}
-.casting-hexagram-column .forming-hexagram {
-  gap: 0.125rem;
-}
-.casting-hexagram-column .forming-hexagram-row {
-  padding-block: 0.125rem;
-}
-.casting-hexagram-column > section > p {
-  margin-top: 0;
-  padding-top: 0.375rem;
-  line-height: 1.25;
-}
-.casting-coin-workspace-stage {
-  display: grid;
-  grid-template-rows: 232px 96px;
-  min-width: 0;
 }
 .casting-coin-stage {
   position: relative;
@@ -75,55 +56,35 @@
   min-width: 0;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: color-mix(in oklch, var(--muted) 30%, transparent);
 }
 .casting-result-region {
-  display: grid;
+  grid-column: 1 / -1;
+  display: flex;
   min-width: 0;
-  min-height: 96px;
-  align-content: center;
-  justify-items: center;
-  gap: 0.25rem;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  border-top: 0;
-  text-align: center;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .casting-workspace-footer {
-  display: flex;
-  min-height: 72px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
-.casting-workspace-footer button {
-  min-height: 44px;
-}
-/* Narrow layouts wrap labels and reflow the action row instead of clipping against the card edge. */
-.casting-workspace-footer button {
-  flex: 0 1 auto;
-  height: auto;
-  min-width: 0;
-  white-space: normal;
-}
-.casting-workspace-footer > div {
-  min-width: 0;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+.casting-workspace-footer > :last-child {
+  justify-self: end;
 }
 .manual-coin-button {
   display: grid;
-  width: 80px;
-  min-width: 80px;
-  min-height: 94px;
+  width: var(--coin-size);
+  height: auto;
+  min-width: var(--coin-size);
+  min-height: var(--coin-size);
   justify-items: center;
   align-content: start;
   gap: 0.375rem;
   padding: 0;
-  border-color: transparent;
+  border: 0;
   background: transparent;
   color: inherit;
   text-transform: none;
@@ -144,9 +105,16 @@
 }
 @media (min-width: 768px) {
   .casting-workspace-content {
-    grid-template-columns: minmax(220px, 35%) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    column-gap: 2rem;
   }
   .casting-hexagram-column {
-    border-right: 0;
+    justify-content: center;
+  }
+  .casting-hexagram-column > section {
+    width: max-content;
+  }
+  .coin-arrangement {
+    column-gap: 2rem;
   }
 }

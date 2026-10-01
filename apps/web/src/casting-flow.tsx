@@ -149,7 +149,7 @@ export function CastingFlow() {
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div className="flex flex-col gap-2">
-          <Badge variant="secondary">
+          <Badge variant="secondary" className="hidden md:inline-flex">
             {direct
               ? 'Nhập trực tiếp'
               : draft.method === 'automatic'
@@ -163,8 +163,15 @@ export function CastingFlow() {
             <p className="max-w-2xl text-muted-foreground">Câu hỏi: {draft.question}</p>
           )}
         </div>
-        <Button type="button" variant="outline" size="lg" onClick={cancelFlow}>
-          Hủy phiên gieo
+        <Button
+          type="button"
+          variant="outline"
+          size="lg"
+          aria-label="Hủy phiên gieo"
+          onClick={cancelFlow}
+        >
+          <span className="md:hidden">Hủy</span>
+          <span className="hidden md:inline">Hủy phiên gieo</span>
         </Button>
       </header>
       <div className="grid items-start gap-6 xl:grid-cols-12">
@@ -212,7 +219,7 @@ export function CastingFlow() {
             </Alert>
           )}
         </div>
-        <Card className="xl:col-span-4">
+        <Card className="hidden xl:col-span-4 xl:flex">
           <CardHeader>
             <CardTitle role="heading" aria-level={2}>
               {direct ? 'Thứ tự sáu hào' : 'Tiến trình gieo'}
