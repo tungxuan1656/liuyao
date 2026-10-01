@@ -50,6 +50,11 @@ This inventory records focused V1 review. It does not claim a complete review of
 | Classical text and editorial context  | `NTT`, PDF 2–8, 938. `PBC`, PDF 2, 9–10, 15–16, 655.                                  | Title pages, introductions, colophon, and selected endnotes reviewed. Unreleased commentary remains unaudited.         |
 | Truân, Mông, Nhu, and Sư              | `NHL`, PDF 142–152, 157–159. `PBC`, PDF 73–99, 110–118. `NTT`, PDF 155–195, 209–221.  | Overviews and all six positions reviewed. The JSON records preserve selected author readings and their exact locators. |
 
+The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
+records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
+Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
+These records do not activate automated interpretation.
+
 The three Chu Dịch commentaries support classical meanings.
 Their explanations do not automatically establish Na Jia, palace, or interpretation rules.
 `NHL`, PDF 74, explicitly distinguishes classical line text from later Five Element divination.

@@ -18,7 +18,7 @@ Automated interpretation, calendar behavior, UI changes, and complete corpus cer
 
 - [x] Pilot comparisons preserve author attribution, special passages, and exact edition locators.
 - [x] Four additional quẻ have source-reviewed structure and six cited line summaries.
-- [ ] Advanced records preserve source conditions and remain descriptive knowledge.
+- [x] Advanced records preserve source conditions and remain descriptive knowledge.
 - [ ] Each content group has passage review, valid references, and a separate verified commit.
 - [ ] Coverage and the next batch reflect the released corpus.
 - [ ] `./init.sh`, fingerprint/freshness checks, and `git diff --check` pass.
@@ -41,6 +41,6 @@ Execute inline under the approved content sequence and the user's continuation r
 ## Handoff
 
 - State: active.
-- Evidence: Pilot comparisons and four new quẻ pass `./init.sh` with 263 tests and PDF fingerprint checks.
+- Evidence: All content groups pass `./init.sh` with 263 tests and PDF fingerprint/freshness checks.
 - Blockers: none.
-- Next: Author BPCT chapter 5, sections 1–4.
+- Next: Reconcile documentation and record the handoff after committing the advanced group.

@@ -759,3 +759,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed all 263 tests. PDF fingerprints match; generated imports and coverage were regenerated. No source PDF or core calculation changed.
 - Blockers: none.
 - Next: Commit this group, then author BPCT chapter 5, sections 1–4.
+
+## 2026-10-01 — feat-033 advanced BPCT group
+
+- Status: active.
+- Result: Added four Dụng/Nguyên/Kỵ/Cừu terms and three articles covering question-specific selection, Thế–Ứng roles, and conditional effects. Extended the existing Thế/Ứng terms. Kept Vĩnh Cao's footnotes separate from Vương Hồng Tự's chapter text; preserved dynamic, strength, calendar, and protection conditions.
+- Coverage: 84 records, 303 claims, 202 locators; advanced coverage is partial. No calendar or automated interpretation behavior was added.
+- Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `65d88fd`.
+- Blockers: none.
+- Next: Commit this group, then reconcile canonical documentation and complete the feature handoff.

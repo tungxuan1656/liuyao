@@ -4,23 +4,34 @@
   "type": "term",
   "title": "Hào Thế",
   "aliases": ["Thế"],
-  "topicIds": ["topic-liuyao-foundations"],
+  "topicIds": ["topic-liuyao-foundations", "topic-liuyao-advanced"],
   "claims": [
     {
       "id": "term-shi-line-definition",
       "kind": "structural-fact",
       "text": "Hào được đánh dấu là vị trí Thế trong cách phân cung đang dùng.",
       "citationIds": ["citation-bpct-p14-technical"]
+    },
+    {
+      "id": "term-shi-line-interpretation",
+      "kind": "author-interpretation",
+      "text": "Trong mục 2 của Thập Bát Luận, Vương Hồng Tự dùng Thế cho phía mình; một số việc hỏi trực tiếp về bản thân chọn Thế làm Dụng thần. Vai cụ thể vẫn tùy câu hỏi, như hai ví dụ đất mai táng trong cùng mục.",
+      "citationIds": ["citation-bpct-ch5-shi-ying"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": ["Phân biệt dấu Thế–Ứng do phân cung xác định với vai diễn giải theo việc hỏi."]
     }
   ],
-  "relatedIds": [],
+  "relatedIds": ["term-useful-spirit", "article-shi-ying-as-useful-spirit"],
   "review": {
     "status": "reviewed",
     "reviewer": "Codex",
     "reviewedAt": "2026-10-01",
     "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p14-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-bpct-ch5-shi-ying"],
+    "note": "Đối chiếu vị trí Thế–Ứng ở PDF 14 và vai diễn giải có điều kiện trong Chương 5, mục 2, PDF 67. Không thay đổi thuật toán phân cung hay tự chọn Dụng thần; chưa có xác nhận của chuyên gia độc lập."
   },
   "rights": {
     "basis": "original-summary-and-structured-facts",
