@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getStoredTheme, setTheme, type Theme } from '../lib/theme';
+import { getCurrentTheme, setTheme, type Theme } from '../lib/theme';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Field, FieldContent, FieldDescription, FieldLabel, FieldTitle } from './ui/field';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
@@ -10,7 +10,7 @@ const themeOptions: { value: Theme; label: string; detail: string }[] = [
 ];
 
 export function AppearanceSetting() {
-  const [theme, setThemePreference] = useState<Theme>(getStoredTheme);
+  const [theme, setThemePreference] = useState<Theme>(getCurrentTheme);
 
   function selectTheme(next: Theme) {
     setThemePreference(next);

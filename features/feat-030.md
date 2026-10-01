@@ -47,11 +47,12 @@ A user can choose Light or Dark in Settings, and every route keeps that choice a
 - Light restore: selecting Sáng returned every route to the Light rendering and kept the moving-line marker at `#8f2e24`; `--moving-marker` in Dark is `#e8836f` (6.5:1 on the dark background; the Light literal measured 2.1:1 there).
 - Four-coin labels use `text-muted-foreground` (`#B3C1BD` in Dark, `#5d5d5d` in Light) instead of the `#525252` literal (2.4:1 in Dark).
 - Settings at 390×844: appearance card 358px, both options 318×75, no horizontal overflow. No page errors or console output on `/`, `/settings`, or `/library`.
+- With theme storage writes forced to fail, selecting Tối applied Dark. After visiting Home and returning to Settings, Tối remained active and selected.
 
 ## Handoff
 
-- State: done; changes are uncommitted.
+- State: done; the original implementation is committed as `977c7c7`, and this branch includes the review fix.
 - Evidence: see the Evidence section above.
 - Dependency check: feat-010 is done.
 - Limits: verification used Chromium only; physical-device rendering is unverified. The PWA manifest theme colors and the favicon stay Light-only identity assets and belong to the identity work. The theme module has no package-level test because app test files are not allowed by `docs/development.md`.
-- Next: Review the uncommitted theme changes and commit them.
+- Next: No further work is planned for feat-030.

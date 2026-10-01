@@ -660,3 +660,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Limits**: PWA manifest theme colors and the favicon remain Light-only identity assets. Chromium-only review; physical-device rendering unverified. No package-level test exists for the theme module because app test files are not allowed.
 
 **Next**: Review the uncommitted theme changes and commit them.
+
+## 2026-10-01 — feat-030 storage-failure review fix
+
+**Result**: Updated the Settings appearance control to initialize from the active document theme, so route remounts keep the selection aligned when localStorage writes fail. Corrected the feat-030 handoff to include the committed implementation and this review fix.
+
+**Evidence**: With writes to `liuyao-theme` forced to fail, selecting Tối applied Dark; after navigating Home and returning to Settings, Tối remained active and selected, with no page errors. `./init.sh` passed format, lint, typecheck, build, package exports, and package tests.
+
+**Next**: Commit the review fix.
