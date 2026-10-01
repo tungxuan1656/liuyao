@@ -106,7 +106,7 @@ Used during active line input before calculation. Governed by the rules in `read
     - Make the forming hexagram large enough to read its yin gap and moving markers on a 320px viewport. Keep row heights, line stroke widths, marker width, and label alignment identical for completed slots. Do not use a black marker tile or tiny placeholder strokes in completed slots.
     - Three coins occupy a fixed triangle: one centered above two lower coins. All three use the same neutral surface. Automatic and manual stages use the same centers and face size.
     - Four coins occupy a fixed two-column, two-row square: Earth at top-left, Water at top-right, Fire at bottom-left, and Wind at bottom-right. Automatic and manual stages use the same square and order; never shrink four coins to force them into a single row.
-    - Use yellow, blue, red, and gray coin surfaces respectively. Show the labels **Địa**, **Thủy**, **Hỏa**, and **Phong** below the coins.
+    - Use yellow, blue, red, and gray coin surfaces respectively. Show the labels **I**, **II**, **III**, and **IV** below the coins in both automatic and manual casting.
     - Every coin face uses a large Unicode **☀** or **☾**. Request text presentation and provide Vietnamese accessible face labels.
     - Color identifies the four weighted coins. Color never identifies heads/tails by itself. Elemental pictograms and engraved textures are removed.
     - Target a 64px coin face for both methods; keep at least 12px clear space between adjacent coin faces and leave room below for the identity label. Shrink the surrounding stage before shrinking a coin. Keep coin and label text legible at 320px.
