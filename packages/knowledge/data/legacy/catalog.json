@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-03",
-        "name": "Thủy Lôi Truân",
-        "aliases": [],
-        "explanation": "Quẻ số 3 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Khảm.",
-        "kingWenNumber": 3,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-04",
-        "name": "Sơn Thủy Mông",
-        "aliases": [],
-        "explanation": "Quẻ số 4 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Cấn.",
-        "kingWenNumber": 4,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-05",
-        "name": "Thủy Thiên Nhu",
-        "aliases": [],
-        "explanation": "Quẻ số 5 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Khảm.",
-        "kingWenNumber": 5,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-heaven",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-07",
-        "name": "Địa Thủy Sư",
-        "aliases": [],
-        "explanation": "Quẻ số 7 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Khôn.",
-        "kingWenNumber": 7,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-08",
         "name": "Thủy Địa Tỷ",
         "aliases": [],

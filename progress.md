@@ -750,3 +750,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
 **Blockers**: None.
 **Next**: Verify and commit these comparisons, then author Truân, Mông, Nhu, and Sư.
+
+## 2026-10-01 — feat-033 four-quẻ source review
+
+- Status: active.
+- Result: Released Truân, Mông, Nhu, and Sư with three-book overviews and all six positions. Preserved selected Chu Hy differences, including Nhu's final line and Sư's “dư thi”. Recorded five source-label/reference discrepancies with visual and passage evidence. Corrected NTT's supplied-edition year from its PDF 938 colophon and recorded missing referenced end criticism.
+- Coverage: 77 records, 274 claims, 194 locators; 8/64 quẻ and 48/384 positions. The remaining 56 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed all 263 tests. PDF fingerprints match; generated imports and coverage were regenerated. No source PDF or core calculation changed.
+- Blockers: none.
+- Next: Commit this group, then author BPCT chapter 5, sections 1–4.

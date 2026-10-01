@@ -3,7 +3,11 @@
   "corpusId": "book-backed-knowledge-v1",
   "language": "vi",
   "sourceFile": "sources.json",
-  "citationFiles": ["citations/pilot.json", "citations/pilot-comparisons.json"],
+  "citationFiles": [
+    "citations/pilot.json",
+    "citations/pilot-comparisons.json",
+    "citations/batch-two-hexagrams.json"
+  ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
     "trigrams/trigram-lake.json",
@@ -77,7 +81,11 @@
     "terms/term-branch-shen.json",
     "terms/term-branch-you.json",
     "terms/term-branch-xu.json",
-    "terms/term-branch-hai.json"
+    "terms/term-branch-hai.json",
+    "hexagrams/hexagram-03.json",
+    "hexagrams/hexagram-04.json",
+    "hexagrams/hexagram-05.json",
+    "hexagrams/hexagram-07.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -152,7 +160,11 @@
     "term-branch-shen",
     "term-branch-you",
     "term-branch-xu",
-    "term-branch-hai"
+    "term-branch-hai",
+    "hexagram-03",
+    "hexagram-04",
+    "hexagram-05",
+    "hexagram-07"
   ],
   "topics": [
     {
@@ -212,8 +224,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-03", "hexagram-04", "hexagram-05", "hexagram-07"],
+    "hexagramIds": ["hexagram-08", "hexagram-09", "hexagram-11", "hexagram-12"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Truân, Mông, Nhu, Sư và BPCT Chương 5, mục 1–4 (PDF 67–68). Các vị trí hào ở bốn quẻ pilot đã có diễn giải NHL, PBC và NTT; đây là các đoạn tóm tắt có dẫn nguồn, không phải toàn bộ mọi lớp chú giải."
+    "note": "Tiếp tục Tỷ, Tiểu Súc, Thái, Bĩ. BPCT Chương 5, mục 1–4 (PDF 67–68) đang là phần còn lại của đợt này. Tám quẻ đã có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

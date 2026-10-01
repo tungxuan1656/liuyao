@@ -11,12 +11,12 @@ The [JSON source inventory](../../packages/knowledge/data/sources.json) owns run
 Runtime IDs use `source-book-<key>` with lowercase keys.
 Page numbers count PDF pages from one, including covers.
 
-| Key    | Supplied source                   | PDF pages | Edition evidence                                                                                                          | Use                                                                        |
-| ------ | --------------------------------- | --------: | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `BPCT` | Tăng bổ Bốc Phệ Chính Tông        |       467 | Vương Hồng Tự compilation. Vĩnh Cao translates and annotates the Vietnamese text, identified on PDF pages 1–3.            | Liu Yao board rules and attributed advanced doctrine.                      |
-| `PBC`  | Quốc văn Chu Dịch diễn giải       |       655 | Phan Bội Châu. Chương Thâu discusses manuscript and edition history on PDF pages 9–10.                                    | Hexagram names, classical text, and attributed commentary.                 |
-| `NTT`  | Kinh Dịch trọn bộ                 |       938 | Ngô Tất Tố translates and annotates. The title page names Nhà xuất bản Văn Học. An exact publication year is unconfirmed. | Classical terminology and commentary associated with Trình Di and Chu Hy.  |
-| `NHL`  | Kinh Dịch — Đạo của người quân tử |       393 | Nguyễn Hiến Lê. PDF page 2 reports correction against a ninth Văn Học reprint and Alfred Huang, dated 2014-11-01.         | Introductory terminology, hexagram structure, and attributed explanations. |
+| Key    | Supplied source                   | PDF pages | Edition evidence                                                                                                               | Use                                                                        |
+| ------ | --------------------------------- | --------: | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| `BPCT` | Tăng bổ Bốc Phệ Chính Tông        |       467 | Vương Hồng Tự compilation. Vĩnh Cao translates and annotates the Vietnamese text, identified on PDF pages 1–3.                 | Liu Yao board rules and attributed advanced doctrine.                      |
+| `PBC`  | Quốc văn Chu Dịch diễn giải       |       655 | Phan Bội Châu. Chương Thâu discusses manuscript and edition history on PDF pages 9–10.                                         | Hexagram names, classical text, and attributed commentary.                 |
+| `NTT`  | Kinh Dịch trọn bộ                 |       938 | Ngô Tất Tố translates and annotates. The title page names Nhà xuất bản Văn Học. PDF 938 dates printing and deposit to Q1 2004. | Classical terminology and commentary associated with Trình Di and Chu Hy.  |
+| `NHL`  | Kinh Dịch — Đạo của người quân tử |       393 | Nguyễn Hiến Lê. PDF page 2 reports correction against a ninth Văn Học reprint and Alfred Huang, dated 2014-11-01.              | Introductory terminology, hexagram structure, and attributed explanations. |
 
 All four PDFs contain extractable text.
 Some diagrams and blank pages contain little text.
@@ -37,17 +37,18 @@ Place each file at the `localInputPath` recorded in the JSON source inventory be
 
 This inventory records focused V1 review. It does not claim a complete review of the 2,453 PDF pages.
 
-| Topic                                 | Location                                                                              | Evidence boundary                                                                                              |
-| ------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Five Element cycles and Six Relatives | `BPCT`, chapter 1, IV–V, PDF 9 (printed 3)                                            | General rules reviewed. The worked Wood example contains a contradictory element.                              |
-| Earthly Branch elements               | `BPCT`, chapter 1, III, PDF 8 (printed 2)                                             | Branch associations used by the V1 board.                                                                      |
-| Trigram symbols and elements          | `BPCT`, chapter 1, VIII–IX, PDF 10–11 (printed 4–5)                                   | Symbols require visual inspection.                                                                             |
-| Three-coin casting and moving lines   | `BPCT`, chapter 1, X, PDF 11–12 (printed 5–6)                                         | Describes physical coin faces and line classes.                                                                |
-| Palace membership                     | `BPCT`, chapter 1, XI, PDF 12–13 (printed 6–7). Chapter 4, PDF 49–66 (printed 38–55). | The chapter 4 headings resolve the incomplete Khảm list. Full board annotations need separate review.          |
-| Na Jia                                | `BPCT`, chapter 1, XII, PDF 13 (printed 7)                                            | All eight inner/outer sequences reviewed.                                                                      |
-| Shi/Ying                              | `BPCT`, chapter 1, XIII, PDF 14–15 (printed 8–9)                                      | Palace sequence and marker separation reviewed.                                                                |
-| Basic terminology                     | `NHL`, chapter 4, PDF 59–74                                                           | Structure and moving-line discussion reviewed. PDF 73 gives Tụng changing to Lý.                               |
-| Classical text and editorial context  | `NTT`, PDF 2–8. `PBC`, PDF 2, 9–10, 15–16.                                            | Title pages, contents, introductions, and terminology reviewed. Commentary beyond the pilot remains unaudited. |
+| Topic                                 | Location                                                                              | Evidence boundary                                                                                                      |
+| ------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Five Element cycles and Six Relatives | `BPCT`, chapter 1, IV–V, PDF 9 (printed 3)                                            | General rules reviewed. The worked Wood example contains a contradictory element.                                      |
+| Earthly Branch elements               | `BPCT`, chapter 1, III, PDF 8 (printed 2)                                             | Branch associations used by the V1 board.                                                                              |
+| Trigram symbols and elements          | `BPCT`, chapter 1, VIII–IX, PDF 10–11 (printed 4–5)                                   | Symbols require visual inspection.                                                                                     |
+| Three-coin casting and moving lines   | `BPCT`, chapter 1, X, PDF 11–12 (printed 5–6)                                         | Describes physical coin faces and line classes.                                                                        |
+| Palace membership                     | `BPCT`, chapter 1, XI, PDF 12–13 (printed 6–7). Chapter 4, PDF 49–66 (printed 38–55). | The chapter 4 headings resolve the incomplete Khảm list. Full board annotations need separate review.                  |
+| Na Jia                                | `BPCT`, chapter 1, XII, PDF 13 (printed 7)                                            | All eight inner/outer sequences reviewed.                                                                              |
+| Shi/Ying                              | `BPCT`, chapter 1, XIII, PDF 14–15 (printed 8–9)                                      | Palace sequence and marker separation reviewed.                                                                        |
+| Basic terminology                     | `NHL`, chapter 4, PDF 59–74                                                           | Structure and moving-line discussion reviewed. PDF 73 gives Tụng changing to Lý.                                       |
+| Classical text and editorial context  | `NTT`, PDF 2–8, 938. `PBC`, PDF 2, 9–10, 15–16, 655.                                  | Title pages, introductions, colophon, and selected endnotes reviewed. Unreleased commentary remains unaudited.         |
+| Truân, Mông, Nhu, and Sư              | `NHL`, PDF 142–152, 157–159. `PBC`, PDF 73–99, 110–118. `NTT`, PDF 155–195, 209–221.  | Overviews and all six positions reviewed. The JSON records preserve selected author readings and their exact locators. |
 
 The three Chu Dịch commentaries support classical meanings.
 Their explanations do not automatically establish Na Jia, palace, or interpretation rules.
@@ -69,6 +70,17 @@ The [Khôn record](../../packages/knowledge/data/hexagrams/hexagram-02.json) own
   Their Vietnamese labels and commentary support Thượng lục.
 
 The pilot line comparisons preserve distinct Trình Di and Chu Hy readings, including Khôn's fifth line and the special passages.
+
+The [Truân](../../packages/knowledge/data/hexagrams/hexagram-03.json),
+[Mông](../../packages/knowledge/data/hexagrams/hexagram-04.json), and
+[Nhu](../../packages/knowledge/data/hexagrams/hexagram-05.json) records own further label and response-reference discrepancies.
+Their resolutions use related passages and rendered pages.
+Nhu preserves different readings of its final line; Sư preserves different readings of “dư thi”.
+
+NTT PDF 183 and 221 refer readers to end-of-book criticism.
+That section was not located in this supplied PDF, which ends with Vị Tế, a blank page, and the colophon.
+The Mông summaries retain the historical setting of punishment passages.
+They do not claim review of the missing criticism.
 
 These findings do not exhaust the edition's errors.
 Record each additional discrepancy with its location and resolution evidence.

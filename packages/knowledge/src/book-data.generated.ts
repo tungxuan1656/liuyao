@@ -4,6 +4,7 @@ import manifest from '../data/manifest.json' with { type: 'json' };
 import sources from '../data/sources.json' with { type: 'json' };
 import citations0 from '../data/citations/pilot.json' with { type: 'json' };
 import citations1 from '../data/citations/pilot-comparisons.json' with { type: 'json' };
+import citations2 from '../data/citations/batch-two-hexagrams.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -77,6 +78,10 @@ import record69 from '../data/terms/term-branch-shen.json' with { type: 'json' }
 import record70 from '../data/terms/term-branch-you.json' with { type: 'json' };
 import record71 from '../data/terms/term-branch-xu.json' with { type: 'json' };
 import record72 from '../data/terms/term-branch-hai.json' with { type: 'json' };
+import record73 from '../data/hexagrams/hexagram-03.json' with { type: 'json' };
+import record74 from '../data/hexagrams/hexagram-04.json' with { type: 'json' };
+import record75 from '../data/hexagrams/hexagram-05.json' with { type: 'json' };
+import record76 from '../data/hexagrams/hexagram-07.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -151,10 +156,15 @@ export const BOOK_RECORDS = [
   record70,
   record71,
   record72,
+  record73,
+  record74,
+  record75,
+  record76,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
   ...citations1.citations,
+  ...citations2.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

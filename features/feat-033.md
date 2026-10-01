@@ -17,7 +17,7 @@ Automated interpretation, calendar behavior, UI changes, and complete corpus cer
 ## Acceptance
 
 - [x] Pilot comparisons preserve author attribution, special passages, and exact edition locators.
-- [ ] Four additional quẻ have source-reviewed structure and six cited line summaries.
+- [x] Four additional quẻ have source-reviewed structure and six cited line summaries.
 - [ ] Advanced records preserve source conditions and remain descriptive knowledge.
 - [ ] Each content group has passage review, valid references, and a separate verified commit.
 - [ ] Coverage and the next batch reflect the released corpus.
@@ -40,8 +40,7 @@ Execute inline under the approved content sequence and the user's continuation r
 
 ## Handoff
 
-- State: todo. The pilot comparisons land in this PR; `feat-013` keeps the single active slot until its physical-iOS retest finishes.
-- Evidence: Pilot comparisons pass `./init.sh` with 263 tests and corpus fingerprint/freshness checks.
+- State: active.
+- Evidence: Pilot comparisons and four new quẻ pass `./init.sh` with 263 tests and PDF fingerprint checks.
 - Blockers: none.
-- Next: Author Truân, Mông, Nhu, and Sư.
-- Follow-up: the remaining batches continue in the next PR.
+- Next: Author BPCT chapter 5, sections 1–4.

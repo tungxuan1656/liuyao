@@ -3,19 +3,24 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 73, "released": 73, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 175, "missingCitationIds": [] },
-  "citations": { "total": 99 },
+  "records": { "authored": 77, "released": 77, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 274, "missingCitationIds": [] },
+  "citations": { "total": 194 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 4,
+    "reviewed": 8,
     "expected": 64,
-    "reviewedIds": ["hexagram-01", "hexagram-02", "hexagram-06", "hexagram-10"],
-    "missingIds": [
+    "reviewedIds": [
+      "hexagram-01",
+      "hexagram-02",
+      "hexagram-06",
+      "hexagram-10",
       "hexagram-03",
       "hexagram-04",
       "hexagram-05",
-      "hexagram-07",
+      "hexagram-07"
+    ],
+    "missingIds": [
       "hexagram-08",
       "hexagram-09",
       "hexagram-11",
@@ -75,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 24,
+    "reviewedPositions": 48,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 4,
-        "reviewedLinePositions": 24,
+        "overviewHexagrams": 8,
+        "reviewedLinePositions": 48,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 4,
-        "reviewedLinePositions": 24,
+        "overviewHexagrams": 8,
+        "reviewedLinePositions": 48,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 4,
-        "reviewedLinePositions": 24,
+        "overviewHexagrams": 8,
+        "reviewedLinePositions": 48,
         "missingPilotPositions": []
       }
     ]
@@ -136,14 +141,32 @@
       "title": "64 quẻ",
       "track": "classical",
       "status": "partial",
-      "releasedRecordIds": ["hexagram-01", "hexagram-02", "hexagram-06", "hexagram-10"]
+      "releasedRecordIds": [
+        "hexagram-01",
+        "hexagram-02",
+        "hexagram-06",
+        "hexagram-10",
+        "hexagram-03",
+        "hexagram-04",
+        "hexagram-05",
+        "hexagram-07"
+      ]
     },
     {
       "id": "topic-line-commentary",
       "title": "384 vị trí hào và diễn giải",
       "track": "classical",
       "status": "partial",
-      "releasedRecordIds": ["hexagram-01", "hexagram-02", "hexagram-06", "hexagram-10"]
+      "releasedRecordIds": [
+        "hexagram-01",
+        "hexagram-02",
+        "hexagram-06",
+        "hexagram-10",
+        "hexagram-03",
+        "hexagram-04",
+        "hexagram-05",
+        "hexagram-07"
+      ]
     },
     {
       "id": "topic-casting",
@@ -298,15 +321,51 @@
       "description": "Danh sách cung Khảm ở trang 13 chỉ có bảy tên dù ghi tám quẻ.",
       "citationIds": ["citation-bpct-p12-14-technical", "citation-bpct-p52-technical"],
       "resolution": "Bổ sung Trạch Hỏa Cách ở vị trí thứ năm theo mục tương ứng trong Chương 4, trang PDF 52."
+    },
+    {
+      "recordId": "hexagram-03",
+      "id": "discrepancy-ntt-truan-overview",
+      "status": "resolved",
+      "description": "NTT PDF 156 gọi Chín Năm là hào dương ở dưới âm và là chủ lập quẻ trong đoạn Bản nghĩa.",
+      "citationIds": ["citation-ntt-q03-overview-ntt", "citation-ntt-q03-line-1-ntt"],
+      "resolution": "Đối chiếu PDF 159–160, nơi Trình Di và Chu Hy giải hào đầu có tài ở dưới, cùng cấu trúc quẻ trên PDF 155. Giữ hào đầu là Chín Đầu; không chuyển câu ghi nhầm Chín Năm thành sự kiện cấu trúc."
+    },
+    {
+      "recordId": "hexagram-03",
+      "id": "discrepancy-nhl-truan-self-response",
+      "status": "resolved",
+      "description": "NHL PDF 144 ghi hào cuối ứng với hào 6, tức tự ứng.",
+      "citationIds": ["citation-nhl-q03-line-6-nhl", "citation-nhl-p59-61-technical"],
+      "resolution": "Theo các cặp vị trí tương ứng 1–4, 2–5, 3–6, hào cuối đối với hào ba; cả hai là âm nên không giúp nhau trong cách giảng này. Bản tóm tắt chỉ giữ ý thiếu trợ giúp, không lặp dẫn chiếu tự ứng."
+    },
+    {
+      "recordId": "hexagram-04",
+      "id": "discrepancy-ntt-mong-response",
+      "status": "resolved",
+      "description": "NTT PDF 170 ghi Chín Hai và Sáu Hai âm dương ứng nhau trong đoạn Bản nghĩa.",
+      "citationIds": ["citation-ntt-q04-overview-ntt", "citation-ntt-q04-line-2-ntt"],
+      "resolution": "Cùng đoạn gọi trẻ thơ là hào năm; PDF 173 và 178 xác định cặp hai–năm. Giữ đối tượng ứng là Sáu Năm, không tạo hai hào ở cùng vị trí."
+    },
+    {
+      "recordId": "hexagram-05",
+      "id": "discrepancy-pbc-nhu-final-label",
+      "status": "resolved",
+      "description": "PBC PDF 97 ghi chữ Hán Thượng cửu ở hào cuối, trong khi tiêu đề tiếng Việt gọi Thượng lục.",
+      "citationIds": ["citation-pbc-q05-line-6-pbc", "citation-nhl-q05-overview-nhl"],
+      "resolution": "Ảnh cấu trúc quẻ và lời giảng PBC PDF 98 xác định hào cuối âm. Giữ nhãn Thượng lục; không dùng nhãn Hán sai để đổi cấu trúc."
+    },
+    {
+      "recordId": "hexagram-05",
+      "id": "discrepancy-ntt-nhu-final-label",
+      "status": "resolved",
+      "description": "NTT PDF 193 ghi Thượng cửu trong chữ Hán và dịch nghĩa Hào Chín Trên, nhưng phiên âm gọi Thượng Lục.",
+      "citationIds": ["citation-ntt-q05-line-6-ntt", "citation-nhl-q05-overview-nhl"],
+      "resolution": "Lời giảng của cả Trình Di và Chu Hy trên PDF 193–194 xác định hào cuối âm. Đối chiếu cấu trúc quẻ; giữ Thượng lục."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-03",
-      "hexagram-04",
-      "hexagram-05",
-      "hexagram-07",
       "hexagram-08",
       "hexagram-09",
       "hexagram-11",
@@ -368,8 +427,8 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-03", "hexagram-04", "hexagram-05", "hexagram-07"],
+    "hexagramIds": ["hexagram-08", "hexagram-09", "hexagram-11", "hexagram-12"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Truân, Mông, Nhu, Sư và BPCT Chương 5, mục 1–4 (PDF 67–68). Các vị trí hào ở bốn quẻ pilot đã có diễn giải NHL, PBC và NTT; đây là các đoạn tóm tắt có dẫn nguồn, không phải toàn bộ mọi lớp chú giải."
+    "note": "Tiếp tục Tỷ, Tiểu Súc, Thái, Bĩ. BPCT Chương 5, mục 1–4 (PDF 67–68) đang là phần còn lại của đợt này. Tám quẻ đã có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

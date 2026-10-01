@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-07",
+  "type": "hexagram",
+  "title": "Địa Thủy Sư",
+  "aliases": ["Sư"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-07-structure",
+      "kind": "structural-fact",
+      "text": "Địa Thủy Sư có ngoại quái Khôn và nội quái Khảm. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q07-overview-nhl",
+        "citation-pbc-q07-overview-pbc",
+        "citation-ntt-q07-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-07-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giải Sư là đám đông hoặc quân đội. Dùng quân cần chính đáng và người chỉ huy lão thành; ông dẫn Phan Bội Châu nhấn mạnh chiến tranh nguy hại nên không coi chữ tốt như niềm vui chiến thắng.",
+      "citationIds": ["citation-nhl-q07-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-07-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu đặt Sư trong việc tập hợp và dẫn dắt số đông giữa hiểm. Chính nghĩa chưa đủ: phải chọn người đủ tài, đức và uy tín; dùng quân là việc bất đắc dĩ, mục đích an dân mới định nghĩa kết quả tốt.",
+      "citationIds": ["citation-pbc-q07-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-07-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải Sư theo sự tập hợp nhiều người và vai trò người chỉ huy ở hào hai. Dùng quân gây hại nên cần chính nghĩa, được lòng người và người có tài đức đáng tin, không chỉ người vốn ở ngôi cao.",
+      "citationIds": ["citation-ntt-q07-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-water", "trigram-earth"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q07-overview-nhl",
+      "citation-pbc-q07-overview-pbc",
+      "citation-ntt-q07-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q07-line-1-nhl",
+      "citation-pbc-q07-line-1-pbc",
+      "citation-ntt-q07-line-1-ntt",
+      "citation-ntt-q07-line-1-chu-hy",
+      "citation-nhl-q07-line-2-nhl",
+      "citation-pbc-q07-line-2-pbc",
+      "citation-ntt-q07-line-2-ntt",
+      "citation-nhl-q07-line-3-nhl",
+      "citation-pbc-q07-line-3-pbc",
+      "citation-ntt-q07-line-3-ntt",
+      "citation-ntt-q07-line-3-chu-hy",
+      "citation-nhl-q07-line-4-nhl",
+      "citation-pbc-q07-line-4-pbc",
+      "citation-ntt-q07-line-4-ntt",
+      "citation-nhl-q07-line-5-nhl",
+      "citation-pbc-q07-line-5-pbc",
+      "citation-ntt-q07-line-5-ntt",
+      "citation-ntt-q07-line-5-chu-hy",
+      "citation-nhl-q07-line-6-nhl",
+      "citation-pbc-q07-line-6-pbc",
+      "citation-ntt-q07-line-6-ntt",
+      "citation-ntt-q07-line-6-chu-hy"
+    ],
+    "note": "Đã đọc đoạn tổng quan, sáu hào và chú thích ở ba sách; xem ảnh cấu trúc và các trang có lỗi dẫn chiếu. Diễn giải Trình Di và Chu Hy được giữ riêng khi có khác biệt. Đây là các đoạn tóm tắt được chọn, không phải toàn bộ chú giải; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yin", "yin", "yin", "yin"],
+    "kingWenNumber": 7,
+    "upperTrigramId": "trigram-earth",
+    "lowerTrigramId": "trigram-water",
+    "claimIds": ["hexagram-07-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-07-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem lúc xuất quân cần kỷ luật và tổ chức ngay từ đầu. Nghiêm mà hợp lý giữ được lòng người; thiếu phép tắc dễ dẫn tới kết quả xấu.",
+          "citationIds": ["citation-nhl-q07-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-07-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hai yêu cầu ở đầu việc quân: danh nghĩa chính đáng và hiệu lệnh có tiết chế. Không có kỷ luật là điều kiện của lời hung, dù mới bắt đầu hành động.",
+          "citationIds": ["citation-pbc-q07-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-07-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di phân biệt luật về chính nghĩa với luật về hiệu lệnh. Quân có thể may thắng mà vẫn bị coi là hung nếu hại dân, trái nghĩa hoặc thiếu kỷ luật; thắng không thay thế các điều kiện ấy.",
+          "citationIds": ["citation-ntt-q07-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-07-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải luật là phép và “phủ tàng” là không khéo. Lời răn của ông đặt ở việc giữ phép và thận trọng từ lúc bắt đầu ra quân, khác cách Trình Di tách thắng lợi khỏi chính nghĩa.",
+          "citationIds": ["citation-ntt-q07-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-07-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào hai là người chỉ huy duy nhất có sức cương ở giữa và được hào năm tin giao việc. Giữ mức vừa phải giúp hoàn thành trách nhiệm và được người trên ban thưởng.",
+          "citationIds": ["citation-nhl-q07-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-07-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào hai đủ tài, giữ trung và được hào năm giao quyền chỉ huy. Ban mệnh nhiều lần là cách nâng uy tín của người gánh việc an nguy; ông không hiểu chữ ba như số lần cố định.",
+          "citationIds": ["citation-pbc-q07-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-07-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải quyền tự quyết trong việc quân phải đi cùng mức vừa phải, vừa uy nghiêm vừa ôn hòa. Sự tin dùng và ban mệnh từ người trên giúp người chỉ huy có uy tín để hoàn thành nhiệm vụ.",
+          "citationIds": ["citation-ntt-q07-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-07-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hình ảnh chở thây về theo người tài yếu, không trung chính mà vẫn nhận việc chỉ huy. Tình cảnh ấy báo sự thất bại nặng trong cách dùng người.",
+          "citationIds": ["citation-nhl-q07-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-07-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào ba như người thiếu tài và không trung chính mà đứng đầu một nhóm quân. Nhận chức vượt năng lực dẫn tới cảnh quân thua, phải chở xác về.",
+          "citationIds": ["citation-pbc-q07-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-07-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc “dư thi” theo nghĩa nhiều người cùng làm chủ việc quân. Hào hai đã được tin cậy nhưng quyền chỉ huy lại bị chia cho người khác; sự thiếu chuyên nhất là nguyên nhân của lời hung.",
+          "citationIds": ["citation-ntt-q07-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-07-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc “dư thi” như quân thua rối, khiêng xác về. Người tài yếu nhưng chí cứng, không trung chính và phạm vào việc không thuộc phận mình là điều kiện của hình ảnh ấy.",
+          "citationIds": ["citation-ntt-q07-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-07-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào bốn biết liệu sức và lui quân khi không đủ khả năng tiến. Giữ quân khỏi tổn thất là cách không mắc lỗi, dù không giành thắng lợi.",
+          "citationIds": ["citation-nhl-q07-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-07-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải lui đóng quân như chọn rút khi sức không đủ. Bảo toàn lực lượng theo thế thực tế là cách dùng quân phù hợp, không tự đồng nghĩa với nhút nhát.",
+          "citationIds": ["citation-pbc-q07-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-07-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải phép hành binh theo thời thế và điều nên làm. Nếu đúng lúc phải lui thì rút quân là hợp lẽ thường và không có lỗi.",
+          "citationIds": ["citation-ntt-q07-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-07-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê phân biệt có lý do phòng vệ với chọn đúng người cầm quân. Phải giao người có tài, kinh nghiệm và giữ trung; dùng người kém hoặc để họ xen quyền có thể hỏng việc dù danh nghĩa đúng.",
+          "citationIds": ["citation-nhl-q07-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-07-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hình ảnh thú vào ruộng như phải ứng địch để giữ điều cần bảo vệ. Cần giao người lão thành có tài đức; dùng người không đủ sức vẫn dẫn tới thất bại dù lý do xuất quân chính đáng.",
+          "citationIds": ["citation-pbc-q07-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-07-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt việc xuất quân trong cảnh phải ngăn hại cho dân, khác việc chủ động tìm chiến tranh. Giao hào hai làm chủ nhưng lại cho nhiều người cùng chỉ huy vẫn là sai cách dùng người dù mục đích chính.",
+          "citationIds": ["citation-ntt-q07-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-07-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải hào năm không chủ động gây chiến mà phải ứng địch. Việc ủy nhiệm phải chuyên dốc vào người được chọn; để người khác xen vào khiến thất bại dù mục đích ban đầu chính đáng.",
+          "citationIds": ["citation-ntt-q07-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-07-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào cuối là lúc việc quân đã xong và cần thưởng công. Người có chiến công nhưng thiếu đức có thể nhận phần thưởng; không nên giao họ trách nhiệm trị nước.",
+          "citationIds": ["citation-nhl-q07-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-07-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu phân biệt dùng tài chiến đấu với giao việc kiến thiết sau chiến tranh. Người thiếu đức có thể được thưởng tương xứng công lao, nhưng việc quốc gia cần người vừa có tài vừa có đức.",
+          "citationIds": ["citation-pbc-q07-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-07-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào cuối theo việc xét công và ban thưởng sau chiến tranh. Người tiểu nhân có công có thể được thưởng, nhưng không thể vì công ấy mà giao đất nước và quyền làm chính sự.",
+          "citationIds": ["citation-ntt-q07-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-07-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc lời hào cuối theo chế độ phong thưởng thời xưa. Người tiểu nhân dù có công chỉ nên nhận vật thưởng, không được cấp đất và quyền trị; ông cũng hạn chế việc người ấy tự dùng lời chiêm này.",
+          "citationIds": ["citation-ntt-q07-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": []
+}
