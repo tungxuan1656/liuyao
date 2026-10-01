@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import { RefreshCw, WifiOff } from 'lucide-react';
 import {
   applyPwaUpdate,
@@ -9,7 +8,7 @@ import {
 } from '../lib/pwa-update';
 import { useReadingSession } from '../reading-session';
 import { ConfirmationDialog } from './confirmation-dialog';
-import { Alert, AlertTitle, AlertDescription } from './ui/alert';
+import { Alert, AlertTitle } from './ui/alert';
 import { Button } from './ui/button';
 
 export function PwaUpdateBanner() {
@@ -20,7 +19,6 @@ export function PwaUpdateBanner() {
     method,
     acceptUpdate: signalUpdateAccepted,
   } = useReadingSession();
-  const { pathname } = useLocation();
   const [snapshot, setSnapshot] = useState<PwaUpdateSnapshot>(getPwaUpdateSnapshot);
   const [dismissed, setDismissed] = useState(false);
   const [confirming, setConfirming] = useState(false);
@@ -62,10 +60,7 @@ export function PwaUpdateBanner() {
           role="status"
         >
           <WifiOff aria-hidden="true" />
-          <AlertTitle>Bạn đang ngoại tuyến</AlertTitle>
-          <AlertDescription>
-            Một số chức năng của ứng dụng vẫn dùng được trên thiết bị này.
-          </AlertDescription>
+          <AlertTitle>Đang ngoại tuyến</AlertTitle>
         </Alert>
       ) : snapshot.updateAvailable && !dismissed ? (
         <Alert
@@ -74,11 +69,7 @@ export function PwaUpdateBanner() {
           aria-labelledby="pwa-update-title"
         >
           <RefreshCw aria-hidden="true" />
-          <AlertTitle id="pwa-update-title">Đã có bản cập nhật ứng dụng</AlertTitle>
-          <AlertDescription>
-            Tải lại trang để dùng phiên bản mới
-            {hasUnsavedReading ? ' và xóa dữ liệu gieo quẻ đang lưu trong bộ nhớ' : ''}.
-          </AlertDescription>
+          <AlertTitle id="pwa-update-title">Có bản cập nhật</AlertTitle>
           <div className="col-span-full flex flex-wrap gap-2">
             <Button variant="outline" size="lg" type="button" onClick={() => setDismissed(true)}>
               Để sau
@@ -101,16 +92,7 @@ export function PwaUpdateBanner() {
           onCancel={() => setConfirming(false)}
           onConfirm={() => void acceptUpdate()}
         >
-          <p>
-            {draft
-              ? 'Bản gieo quẻ và câu hỏi chỉ được lưu trong bộ nhớ. Tải lại trang sẽ xóa chúng.'
-              : reading
-                ? 'Quẻ đã hoàn tất chỉ được lưu trong bộ nhớ. Tải lại trang sẽ xóa quẻ.'
-                : 'Câu hỏi hoặc phương pháp gieo quẻ đã chọn chỉ được lưu trong bộ nhớ. Tải lại trang sẽ xóa chúng.'}
-            {pathname === '/casting' &&
-              draft &&
-              ' Màn hình gieo quẻ hiện tại cũng sẽ được tải lại.'}
-          </p>
+          <p>Tải lại trang sẽ xóa quẻ, câu hỏi và phương pháp đã chọn.</p>
         </ConfirmationDialog>
       )}
     </>

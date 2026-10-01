@@ -30,7 +30,7 @@ export function CastingFlowDialogs({
           onCancel={onResetCancel}
           onConfirm={onResetConfirm}
         >
-          Thao tác này xóa mọi hào đã nhập nhưng vẫn giữ câu hỏi và phương pháp gieo quẻ.
+          Câu hỏi và phương pháp gieo được giữ lại.
         </ConfirmationDialog>
       )}
       {(isBlocked || discard) && (
@@ -40,9 +40,7 @@ export function CastingFlowDialogs({
           onCancel={onDiscardCancel}
           onConfirm={onDiscardConfirm}
         >
-          {hasInput
-            ? 'Bỏ các hào đang nhập và rời khỏi phiên gieo quẻ?'
-            : 'Bỏ câu hỏi và phương pháp gieo quẻ rồi rời khỏi phiên gieo quẻ?'}
+          {hasInput ? 'Các hào đã nhập sẽ bị xóa.' : 'Câu hỏi và phương pháp đã chọn sẽ bị xóa.'}
         </ConfirmationDialog>
       )}
     </>

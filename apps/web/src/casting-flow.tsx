@@ -10,15 +10,7 @@ import { ManualCastingPanel } from './manual-casting-panel';
 import { CastingFlowDialogs } from './casting-flow-dialogs';
 import { Button } from './components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
-import { Badge } from './components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
-import {
-  Empty,
-  EmptyContent,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyTitle,
-} from './components/ui/empty';
+import { Empty, EmptyContent, EmptyHeader, EmptyTitle } from './components/ui/empty';
 
 export function CastingFlow() {
   const navigate = useNavigate();
@@ -130,7 +122,6 @@ export function CastingFlow() {
             <EmptyTitle role="heading" aria-level={1}>
               Lập quẻ mới
             </EmptyTitle>
-            <EmptyDescription>Chọn một phương pháp để bắt đầu.</EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
             <Button variant="outline" size="lg" onClick={() => navigate(ROUTES.home)}>
@@ -149,19 +140,14 @@ export function CastingFlow() {
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div className="flex flex-col gap-2">
-          <Badge variant="secondary" className="hidden md:inline-flex">
+          <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
             {direct
-              ? 'Nhập trực tiếp'
+              ? 'Nhập sáu hào'
               : draft.method === 'automatic'
                 ? 'Gieo tự động'
                 : 'Gieo thủ công'}
-          </Badge>
-          <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
-            {direct ? 'Nhập sáu hào' : 'Gieo quẻ'}
           </h1>
-          {draft.question && (
-            <p className="max-w-2xl text-muted-foreground">Câu hỏi: {draft.question}</p>
-          )}
+          {draft.question && <p className="max-w-2xl text-muted-foreground">{draft.question}</p>}
         </div>
         <Button
           type="button"
@@ -174,73 +160,45 @@ export function CastingFlow() {
           <span className="hidden md:inline">Hủy phiên gieo</span>
         </Button>
       </header>
-      <div className="grid items-start gap-6 xl:grid-cols-12">
-        <div className="min-w-0 xl:col-span-8">
-          {draft.method === 'automatic' ? (
-            <AutomaticCastingPanel
-              step={step}
-              tosses={draft.tosses ?? []}
-              method={draft.coinMethod}
-              busy={automaticToss.isTossAnimating}
-              onAnimationComplete={() => automaticToss.clearAnimation(animationGeneration)}
-              onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
-              onBack={() => setDraft({ ...draft, step: step - 1 })}
-              onNext={automaticToss.advance}
-              onToss={() => automaticToss.cast()}
-              onFinish={() => finish(lines)}
-              onReset={resetCasting}
-            />
-          ) : direct ? (
-            <DirectCastingPanel
-              lines={lines}
-              onChange={updateLine}
-              onFinish={() => finish(lines)}
-            />
-          ) : (
-            <ManualCastingPanel
-              draft={draft}
-              step={step}
-              setDraft={setDraft}
-              onBack={() => setDraft({ ...draft, step: step - 1 })}
-              onNext={() => setDraft({ ...draft, step: step + 1 })}
-              onFinish={() => finish(lines)}
-              onReset={resetCasting}
-            />
-          )}
-          {direct && (
-            <Button type="button" variant="ghost" size="lg" onClick={resetCasting}>
-              Xóa các hào
-            </Button>
-          )}
-          {error && (
-            <Alert variant="destructive" role="alert">
-              <AlertTitle>Không thể tính quẻ</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
-        </div>
-        <Card className="hidden xl:col-span-4 xl:flex">
-          <CardHeader>
-            <CardTitle role="heading" aria-level={2}>
-              {direct ? 'Thứ tự sáu hào' : 'Tiến trình gieo'}
-            </CardTitle>
-            <CardDescription>
-              {direct
-                ? 'Nhập từ hào một ở dưới lên hào sáu ở trên.'
-                : 'Mỗi lần gieo tạo một hào, từ dưới lên trên.'}
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="flex flex-col gap-3">
-            <Badge variant="outline">
-              {lines.filter(value => value >= 6 && value <= 9).length} / 6 hào
-            </Badge>
-            <p className="text-muted-foreground">
-              {direct
-                ? 'Chọn đúng tên của từng hào. Bạn có thể sửa trước khi tính quẻ.'
-                : 'Kết quả từng lần gieo được giữ trong phiên cho đến khi bạn xóa hoặc rời đi.'}
-            </p>
-          </CardContent>
-        </Card>
+      <div className="min-w-0 max-w-4xl">
+        {draft.method === 'automatic' ? (
+          <AutomaticCastingPanel
+            step={step}
+            tosses={draft.tosses ?? []}
+            method={draft.coinMethod}
+            busy={automaticToss.isTossAnimating}
+            onAnimationComplete={() => automaticToss.clearAnimation(animationGeneration)}
+            onMethodChange={coinMethod => setDraft({ ...draft, coinMethod })}
+            onBack={() => setDraft({ ...draft, step: step - 1 })}
+            onNext={automaticToss.advance}
+            onToss={() => automaticToss.cast()}
+            onFinish={() => finish(lines)}
+            onReset={resetCasting}
+          />
+        ) : direct ? (
+          <DirectCastingPanel lines={lines} onChange={updateLine} onFinish={() => finish(lines)} />
+        ) : (
+          <ManualCastingPanel
+            draft={draft}
+            step={step}
+            setDraft={setDraft}
+            onBack={() => setDraft({ ...draft, step: step - 1 })}
+            onNext={() => setDraft({ ...draft, step: step + 1 })}
+            onFinish={() => finish(lines)}
+            onReset={resetCasting}
+          />
+        )}
+        {direct && (
+          <Button type="button" variant="ghost" size="lg" onClick={resetCasting}>
+            Xóa các hào
+          </Button>
+        )}
+        {error && (
+          <Alert variant="destructive" role="alert">
+            <AlertTitle>Không thể tính quẻ</AlertTitle>
+            <AlertDescription>{error}</AlertDescription>
+          </Alert>
+        )}
       </div>
       <CastingFlowDialogs
         resetLines={resetLines}

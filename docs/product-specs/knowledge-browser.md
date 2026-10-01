@@ -46,7 +46,6 @@ Do not call a remote search service.
 
 A detail page can show:
 
-- stable ID;
 - Vietnamese names and aliases;
 - concise authored explanation;
 - related entities;
@@ -56,6 +55,9 @@ A detail page can show:
 V1 term, trigram, and hexagram records can declare applicable rule IDs. Detail pages link declared rules to their canonical Library detail pages; do not infer associations for records without declared rules. Rule relationships and source references remain distinct.
 
 Source references identify a work, section, chapter, or page when that information is available.
+
+Keep stable IDs for lookup and routing. Do not show them as interface labels.
+Show source titles and reference locations directly. Collapse author, publication, rights, and provenance metadata until the user requests it.
 
 ## Content boundary
 

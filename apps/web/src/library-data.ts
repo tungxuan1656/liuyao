@@ -42,10 +42,6 @@ export function recordDescription(record: LibraryRecord) {
   return 'explanation' in record ? record.explanation : record.definition;
 }
 
-export function recordKind(record: LibraryRecord) {
-  return 'kind' in record ? record.kind : 'definition' in record ? 'term' : 'rule';
-}
-
 export function getRecord(type: string, id: string) {
   if (type === 'term') return getTerm(id as KnowledgeTerm['id']);
   if (type === 'rule') return getRule(id as KnowledgeRule['id']);

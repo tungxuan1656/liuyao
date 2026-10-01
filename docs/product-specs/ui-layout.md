@@ -33,14 +33,22 @@ The main routes arrange task-relevant shadcn `Card` components in an asymmetric 
 - Headers use one semantic page heading. Add descriptions or badges only when they provide information that the main content does not show.
 - At 320px and wider, keep all content within the viewport. Library tabs use two rows on narrow mobile screens. Rule filters wrap.
 
-| Route                                       | Card arrangement                                                                                                                                                                                               |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Home (`/`)                                  | Primary form or current-reading card spans the larger desktop column. Process and Library cards occupy the companion column; the privacy note follows.                                                         |
-| Casting (`/casting`)                        | The shared casting workspace remains the primary card. A progress card occupies the companion column only on wide screens. Direct input retains six vertical line rows.                                        |
-| Result (`/result`)                          | Summary, primary and changed hexagram boards, and line facts form the main column. The ruleset-backed fact inspector is a persistent companion at 900px and wider, and a bottom `Sheet` below that breakpoint. |
-| Library (`/library`)                        | A search and category card leads, with a compact category-context card beside it. Reference records form a one-, two-, or three-column grid by available width.                                                |
-| Library detail (`/library/:entityType/:id`) | Overview, related figures, applicable rules, and sources occupy separate content cards. Long source lists flow naturally.                                                                                      |
-| Settings (`/settings`)                      | System state, versions, conventions, and privacy occupy cards sized by content.                                                                                                                                |
+| Route                                       | Card arrangement                                                                                                                           |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Home (`/`)                                  | A form or current-reading card, followed by one card with reading steps and a Library link.                                                |
+| Casting (`/casting`)                        | One casting workspace with its own progress indicator. Direct input retains six vertical line rows.                                        |
+| Result (`/result`)                          | Hexagram boards and line facts form the main column. The fact inspector stays beside them at 900px and wider, with a bottom `Sheet` below. |
+| Library (`/library`)                        | One search and category card, followed by the result count and a responsive reference grid.                                                |
+| Library detail (`/library/:entityType/:id`) | Definitions, related figures, rules, and sources occupy content cards. Source metadata expands on request.                                 |
+| Settings (`/settings`)                      | Browser state, app version, and product information occupy cards. Technical details expand within the version card.                        |
+
+### Interface copy
+
+- Keep page titles, control labels, reading facts, reference definitions, and actionable feedback.
+- Use question placeholders and short method descriptions to guide reading entry.
+- Remove introductory badges, repeated instructions, internal record IDs, and descriptions that repeat a title or control.
+- Show data-loss warnings in confirmation dialogs. Keep the general privacy information in Settings.
+- Follow `settings.md` for diagnostics and `knowledge-browser.md` for source content.
 
 ### Typography
 
@@ -81,7 +89,8 @@ The three root destinations are Gieo quẻ (`/`), Thư viện (`/library`), and 
 ### Root destination content
 
 - Home offers optional question input, the three casting methods, and a primary action. A completed reading replaces the form with the current hexagram and an explicit confirmed new-reading action.
-- Library offers local search, category tabs, optional rule filters, and reference record cards. Each record has a clear detail link.
+- Library offers local search, category tabs, optional rule filters, and reference record cards.
+- Each reference card is one keyboard-accessible detail link, with a trailing arrow and visible focus and hover states.
 - Settings presents browser state, PWA install/update availability, package and ruleset versions, casting conventions, privacy, and product links.
 
 ### Level 2 — Luồng tập trung: Nhập hào (`/casting`)
@@ -89,7 +98,7 @@ The three root destinations are Gieo quẻ (`/`), Thư viện (`/library`), and 
 Used during active line input before calculation. Governed by the rules in `reading-flow.md`:
 
 - **Navigation state**:
-  - Mobile header navigation remains available. The route displays a separate cancel action; the method badge appears only on desktop. Leaving an unfinished cast still requires confirmation.
+  - Mobile header navigation remains available. The page heading names the method, with a separate cancel action. Leaving an unfinished cast still requires confirmation.
   - The desktop header retains the root destinations; it has no back action.
 - **Input modes**:
   - **Sequential mode (Manual casting & Automatic coin casting)**:
@@ -124,7 +133,7 @@ Used during active line input before calculation. Governed by the rules in `read
     - Presented visually in board orientation from Line 6 (top) down to Line 1 (bottom), while keeping canonical domain state in bottom-to-top order (1 to 6).
     - **Intended, user-selected layout:** Use six vertical rows, never a two-column list of line positions. All rows remain mounted on one scrollable page.
     - Each row uses a single-select `ToggleGroup`. Desktop places its four choices across the row. Mobile uses a two-by-two choice grid.
-    - Show the shared yao symbol, canonical name, and a short static/moving label. Place the transformation explanation in one shared legend.
+    - Show the shared yao symbol and canonical name. Keep polarity, moving state, and transformation details in accessible labels.
     - Keep the selected state, focus ring, and moving marker distinct. Do not compress labels or allow symbols to overlap adjacent choices.
     - Each position offers four explicit named choices: **Lão âm**, **Thiếu dương**, **Thiếu âm**, and **Lão dương**. Show the yao symbol and canonical name; omit numeric values from visible and accessible copy.
     - Nút chính `[ Tính quẻ ]` bị vô hiệu hóa cho đến khi cả sáu vị trí có giá trị hợp lệ từ `6` đến `9`.
