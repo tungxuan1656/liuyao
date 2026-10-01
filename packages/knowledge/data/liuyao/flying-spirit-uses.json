@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "article-flying-spirit-uses",
+  "type": "article",
+  "title": "Các cách dùng Phi thần trong BPCT",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-flying-spirit-uses-other-palace",
+      "kind": "author-interpretation",
+      "text": "Ở loại 3, Vương Hồng Tự nói năm loại từ cung khác gửi vào cung đang xét tạo Tài, Quan, Phụ, Huynh và Tử. Cách dùng Phi thần ở đây khác nghĩa hào phủ trên Phục thần của loại 1.",
+      "citationIds": ["citation-bpct-ch5-flying-spirit"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": ["Giữ cách gọi của mục này; chưa suy ra thuật toán chuyển cung hoặc gán hào."]
+    },
+    {
+      "id": "article-flying-spirit-uses-inner-outer",
+      "kind": "author-interpretation",
+      "text": "Ở loại 4, nội tĩnh và ngoại động được gọi là ngoại phi nhập nội. Ở loại 5, ngoại tĩnh và nội động được gọi là nội phi nhập ngoại.",
+      "citationIds": ["citation-bpct-ch5-flying-spirit"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Nguồn nói hai hào trên và dưới; không tự gán thành cặp vị trí tương ứng 1–4, 2–5, 3–6."
+      ]
+    },
+    {
+      "id": "article-flying-spirit-uses-both-moving",
+      "kind": "author-interpretation",
+      "text": "Ở loại 6, khi cả trong lẫn ngoài đều động, Vương Hồng Tự gọi là Phi khứ. Điều kiện động cả hai phía phải đi cùng cách gọi này.",
+      "citationIds": ["citation-bpct-ch5-flying-spirit"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": [
+    "term-flying-spirit",
+    "term-hidden-spirit",
+    "term-lower-trigram",
+    "term-upper-trigram",
+    "term-moving-line"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch5-flying-spirit"],
+    "note": "Đã đọc và xem ảnh PDF 68–69. Giữ nghĩa loại 1 ở thuật ngữ Phi thần, các nghĩa loại 3–6 ở bài này. Loại 2 ghi năm loại Lục thú chưa đủ rõ để nhập làm định nghĩa hoặc sửa thành Lục thân; phần ấy được loại khỏi các lời đã phát hành. Không coi bài này là toàn bộ sáu loại đã xác minh; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

@@ -7,6 +7,7 @@ import citations1 from '../data/citations/pilot-comparisons.json' with { type: '
 import citations2 from '../data/citations/batch-two-hexagrams.json' with { type: 'json' };
 import citations3 from '../data/citations/batch-two-advanced.json' with { type: 'json' };
 import citations4 from '../data/citations/batch-three-hexagrams.json' with { type: 'json' };
+import citations5 from '../data/citations/batch-three-advanced.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -95,6 +96,18 @@ import record84 from '../data/hexagrams/hexagram-08.json' with { type: 'json' };
 import record85 from '../data/hexagrams/hexagram-09.json' with { type: 'json' };
 import record86 from '../data/hexagrams/hexagram-11.json' with { type: 'json' };
 import record87 from '../data/hexagrams/hexagram-12.json' with { type: 'json' };
+import record88 from '../data/terms/term-flying-spirit.json' with { type: 'json' };
+import record89 from '../data/terms/term-hidden-spirit.json' with { type: 'json' };
+import record90 from '../data/terms/term-six-spirits.json' with { type: 'json' };
+import record91 from '../data/terms/term-spirit-qinglong.json' with { type: 'json' };
+import record92 from '../data/terms/term-spirit-zhuque.json' with { type: 'json' };
+import record93 from '../data/terms/term-spirit-gouchen.json' with { type: 'json' };
+import record94 from '../data/terms/term-spirit-tengshe.json' with { type: 'json' };
+import record95 from '../data/terms/term-spirit-baihu.json' with { type: 'json' };
+import record96 from '../data/terms/term-spirit-xuanwu.json' with { type: 'json' };
+import record97 from '../data/liuyao/flying-spirit-uses.json' with { type: 'json' };
+import record98 from '../data/liuyao/hidden-spirit-method.json' with { type: 'json' };
+import record99 from '../data/liuyao/six-spirits-context.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -184,6 +197,18 @@ export const BOOK_RECORDS = [
   record85,
   record86,
   record87,
+  record88,
+  record89,
+  record90,
+  record91,
+  record92,
+  record93,
+  record94,
+  record95,
+  record96,
+  record97,
+  record98,
+  record99,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -191,6 +216,7 @@ export const BOOK_CITATIONS = [
   ...citations2.citations,
   ...citations3.citations,
   ...citations4.citations,
+  ...citations5.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

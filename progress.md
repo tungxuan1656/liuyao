@@ -786,3 +786,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests; supplied PDF fingerprints, generated-output freshness, and diff checks passed.
 - Blockers: none.
 - Next: Commit this group, then finish BPCT chapter 5, sections 5–7 with related passages.
+
+## 2026-10-01 — feat-034 Phi–Phục and Lục thú group
+
+- Status: active.
+- Result: Added nine terms and three articles from BPCT chapter 5, sections 5–7. Checked Phi–Phục examples against the chapter 4 boards and Lục thú conditions against chapter 6 commentary. Excluded the unclear type-2 Phi wording and Đằng Xà element attribution; selected historical examples retain their context.
+- Coverage: 100 records, 427 claims, 303 locators; 12/64 quẻ and 72/384 positions. Advanced coverage remains partial.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. The four-quẻ group is committed as `c5bf201`.
+- Blockers: none for the selected claims. The two excluded passages need clearer evidence before later publication.
+- Next: Commit this group, then reconcile source documentation and complete the handoff.

@@ -8,7 +8,8 @@
     "citations/pilot-comparisons.json",
     "citations/batch-two-hexagrams.json",
     "citations/batch-two-advanced.json",
-    "citations/batch-three-hexagrams.json"
+    "citations/batch-three-hexagrams.json",
+    "citations/batch-three-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -98,7 +99,19 @@
     "hexagrams/hexagram-08.json",
     "hexagrams/hexagram-09.json",
     "hexagrams/hexagram-11.json",
-    "hexagrams/hexagram-12.json"
+    "hexagrams/hexagram-12.json",
+    "terms/term-flying-spirit.json",
+    "terms/term-hidden-spirit.json",
+    "terms/term-six-spirits.json",
+    "terms/term-spirit-qinglong.json",
+    "terms/term-spirit-zhuque.json",
+    "terms/term-spirit-gouchen.json",
+    "terms/term-spirit-tengshe.json",
+    "terms/term-spirit-baihu.json",
+    "terms/term-spirit-xuanwu.json",
+    "liuyao/flying-spirit-uses.json",
+    "liuyao/hidden-spirit-method.json",
+    "liuyao/six-spirits-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -188,7 +201,19 @@
     "hexagram-08",
     "hexagram-09",
     "hexagram-11",
-    "hexagram-12"
+    "hexagram-12",
+    "term-flying-spirit",
+    "term-hidden-spirit",
+    "term-six-spirits",
+    "term-spirit-qinglong",
+    "term-spirit-zhuque",
+    "term-spirit-gouchen",
+    "term-spirit-tengshe",
+    "term-spirit-baihu",
+    "term-spirit-xuanwu",
+    "article-flying-spirit-uses",
+    "article-hidden-spirit-method",
+    "article-six-spirits-context"
   ],
   "topics": [
     {
@@ -250,6 +275,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-13", "hexagram-14", "hexagram-15", "hexagram-16"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Đồng Nhân, Đại Hữu, Khiêm, Dự. BPCT Chương 5, mục 5–7 (PDF 68–69) đang là phần còn lại của đợt này. Mười hai quẻ đã có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Đồng Nhân, Đại Hữu, Khiêm, Dự và BPCT Chương 5, mục 8–10: Tứ sinh, Nguyệt phá, Tuần không (PDF 70). Mười hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–7 có các thuật ngữ và diễn giải được chọn. Nghĩa loại 2 Phi thần và gán ngũ hành riêng cho Đằng Xà chưa được nhập vì chưa đủ rõ. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

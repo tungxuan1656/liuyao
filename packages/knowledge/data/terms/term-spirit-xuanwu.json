@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "term-spirit-xuanwu",
+  "type": "term",
+  "title": "Huyền Vũ",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-spirit-xuanwu-meaning",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự gắn Huyền Vũ với tư tình và trộm cướp. Cùng mục vẫn nêu trường hợp Quan có Huyền Vũ sinh Thế, an tĩnh thì không đáng sợ về liên lụy.",
+      "citationIds": ["citation-bpct-ch5-six-spirits"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ đây là hình tượng và cách giảng của nguồn; cần xét vai hào và điều kiện đi kèm."
+      ]
+    }
+  ],
+  "relatedIds": ["term-six-spirits", "article-six-spirits-context", "term-shi-line"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch5-six-spirits"],
+    "note": "Đã đọc Chương 5, mục 5–7 cùng các đoạn liên quan; đối chiếu ảnh bảng Phi–Phục ở PDF 49–50 và lời chú giải Lục thú ở PDF 98–99. Diễn giải có điều kiện được giữ theo lớp tác giả. Đây là phần kiến thức mô tả được chọn, không phải luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

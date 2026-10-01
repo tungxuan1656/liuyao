@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 88, "released": 88, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 401, "missingCitationIds": [] },
-  "citations": { "total": 297 },
+  "records": { "authored": 100, "released": 100, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 427, "missingCitationIds": [] },
+  "citations": { "total": 303 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 12,
@@ -269,7 +269,19 @@
         "term-enemy-spirit",
         "article-useful-spirit-selection",
         "article-shi-ying-as-useful-spirit",
-        "article-origin-adverse-and-enemy-spirits"
+        "article-origin-adverse-and-enemy-spirits",
+        "term-flying-spirit",
+        "term-hidden-spirit",
+        "term-six-spirits",
+        "term-spirit-qinglong",
+        "term-spirit-zhuque",
+        "term-spirit-gouchen",
+        "term-spirit-tengshe",
+        "term-spirit-baihu",
+        "term-spirit-xuanwu",
+        "article-flying-spirit-uses",
+        "article-hidden-spirit-method",
+        "article-six-spirits-context"
       ]
     },
     {
@@ -516,6 +528,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-13", "hexagram-14", "hexagram-15", "hexagram-16"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Đồng Nhân, Đại Hữu, Khiêm, Dự. BPCT Chương 5, mục 5–7 (PDF 68–69) đang là phần còn lại của đợt này. Mười hai quẻ đã có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Đồng Nhân, Đại Hữu, Khiêm, Dự và BPCT Chương 5, mục 8–10: Tứ sinh, Nguyệt phá, Tuần không (PDF 70). Mười hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–7 có các thuật ngữ và diễn giải được chọn. Nghĩa loại 2 Phi thần và gán ngũ hành riêng cho Đằng Xà chưa được nhập vì chưa đủ rõ. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
