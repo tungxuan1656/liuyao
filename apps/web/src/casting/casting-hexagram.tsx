@@ -24,7 +24,7 @@ export function CastingHexagram({
             <li
               key={index}
               className={cn(
-                'forming-hexagram-row grid grid-cols-[12px_minmax(0,100px)] items-center gap-1 transition-opacity',
+                'forming-hexagram-row grid w-fit max-w-full grid-cols-[12px_minmax(0,100px)] items-center gap-1 transition-opacity',
                 value === undefined && !isCurrent ? 'opacity-30' : 'opacity-100',
                 isCurrent && 'bg-muted',
               )}

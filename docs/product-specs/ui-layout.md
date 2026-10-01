@@ -62,7 +62,8 @@ The main routes arrange task-relevant shadcn `Card` components in an asymmetric 
   - **Old Yin / 6**: `✕` — Yin changing to Yang.
   - **Old Yang / 9**: `○` — Yang changing to Yin.
   - Keep the marker beside the stroke in a reserved column. Do not put either marker in a solid black square or weaken the completed line's strokes to emphasize the marker.
-- **Forming hexagram geometry (`/casting`)**: Keep six compact rows with columns for the position number and symbol. Show canonical names through accessible row labels, not repeated visible text. Target a 72px stroke width, with responsive compression to 52px at 320px. Keep the 6px stroke height, 10px yin gap, 24px moving-marker column, and 4px marker gap. Static and moving lines use identical stroke widths. Highlight the current row without weakening completed strokes. Preserve bottom-to-top order, value mapping, and quiet empty placeholders. Scope geometry overrides to the forming hexagram.
+  - Draw compact, centered glyphs with a shared 1.5px stroke inside the 24px marker slot. Keep the muted red accent and rounded stroke ends. Do not use a heavy, control-like outline.
+- **Forming hexagram geometry (`/casting`)**: Keep six compact rows with columns for the position number and symbol. Show canonical names through accessible row labels, not repeated visible text. Target a 72px stroke width, with responsive compression to 52px at 320px. Keep the 6px stroke height, 10px yin gap, 24px moving-marker column, and 4px marker gap. Static and moving lines use identical stroke widths. Size each row to its number, symbol, and marker slot, not the full casting column. Highlight the current row without weakening completed strokes. Preserve bottom-to-top order, value mapping, and quiet empty placeholders. Scope geometry overrides to the forming hexagram.
 
 ---
 
