@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "term-branch-shen",
+  "type": "term",
+  "title": "Thân",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-branch-shen-definition",
+      "kind": "structural-fact",
+      "text": "Thân là một trong mười hai địa chi.",
+      "citationIds": ["citation-bpct-p8-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p8-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

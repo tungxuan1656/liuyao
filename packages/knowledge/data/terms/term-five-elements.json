@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-five-elements",
+  "type": "term",
+  "title": "Ngũ hành",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-five-elements-definition",
+      "kind": "structural-fact",
+      "text": "Năm hành Kim, Mộc, Thủy, Hỏa, Thổ dùng cho các quan hệ và phân loại trong quy ước này.",
+      "citationIds": ["citation-bpct-p9-technical", "citation-bpct-p11-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p11-technical", "citation-bpct-p9-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-branch-element", "rule-five-element-cycles"]
+}

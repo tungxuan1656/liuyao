@@ -76,7 +76,7 @@ describe('@liuyao/knowledge display entities', () => {
       id: 'hexagram-01',
       name: 'Thuần Càn',
       kingWenNumber: 1,
-      aliases: [],
+      aliases: expect.arrayContaining(['Bát Thuần Càn', 'Kiền', 'Càn vi Thiên']),
       upperTrigramId: 'trigram-heaven',
       lowerTrigramId: 'trigram-heaven',
     });

@@ -71,7 +71,7 @@ The script does not install dependencies. Run `pnpm install` separately when the
 
 ## Full verification
 
-Read-only verification before merging:
+Verification before merging:
 
 ```bash
 pnpm format:check
@@ -80,5 +80,9 @@ pnpm typecheck
 pnpm test
 pnpm build
 ```
+
+Knowledge build and type-check commands validate the JSON corpus and refresh generated imports and coverage.
+Use `pnpm --filter @liuyao/knowledge validate:corpus --check` to verify generated files without rewriting them.
+The [data guide](../packages/knowledge/data/README.md) defines the source-review workflow.
 
 CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the harness orchestration and prevents fixers from hiding tracked or untracked repository drift.

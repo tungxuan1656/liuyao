@@ -21,24 +21,29 @@ The application does not read books dynamically to construct a board.
 
 ## Observed storage
 
-The current source records are declarative TypeScript files under `packages/knowledge/data/`.
-There is no JSON content store or knowledge database.
-The package imports these files locally, validates the catalog, and exposes readonly lookup and search APIs.
-The web build bundles the curated records for offline access.
+The authored corpus uses UTF-8 JSON under `packages/knowledge/data/`.
+`manifest.json` selects record files, citations, and reviewed release IDs.
+The package validates JSON Schema and cross-file invariants before type-checking or building.
+It generates runtime imports and [coverage](../../packages/knowledge/reports/coverage.json) from those files.
 
-The [data directory guide](../../packages/knowledge/data/README.md) maps record files to their responsibilities.
-`packages/knowledge/src/schema.ts` defines the current record shapes.
-Under `packages/knowledge/src/`, `catalog.ts`, `validation.ts`, and `search.ts` own package access, structural validation, and search.
+`src/book-catalog.ts` exposes released records, citation locations, and edition metadata through readonly APIs.
+`src/book-adapter.ts` maps reviewed entities, terms, rules, and citations into the existing catalog interfaces.
+`data/legacy/catalog.json` retains unmigrated records with an explicit `unaudited` status.
+Compatibility lists still contain all 64 hexagrams. Their presence does not imply supplied-book review.
+
+The [data directory guide](../../packages/knowledge/data/README.md) maps content files and verification commands.
+`src/book-schema.ts` defines the richer readonly types. `src/schema.ts` retains the compatibility shapes.
+The web build bundles this local data for offline access.
 
 ## Storage assessment
 
-**Proposed recommendation:** Keep canonical knowledge in versioned files for the current offline product.
-Use JSON when a content editor or independent tooling needs a language-neutral authoring format.
-Preserve the package APIs and validation boundary if that migration is selected.
+**Observed choice:** Versioned JSON is the authored content source.
+The compatibility adapter preserves existing package interfaces.
+A database remains a future option.
 
 | Option                           | Fit                                                     | Requirement                                                                 |
 | -------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Current TypeScript records       | Current runtime and small curated changes               | Review content and preserve schema checks.                                  |
+| TypeScript compatibility exports | Adapted access to current JSON records                  | Review content and preserve schema checks.                                  |
 | JSON files                       | Content editing, import/export, and independent tooling | Validate at the package boundary. Keep one authored source.                 |
 | Local database such as IndexedDB | Future saved readings or a large local index            | Define migrations and recovery. Keep canonical reference content versioned. |
 | Server database                  | Future shared editing or synchronization                | Define ownership, publication, and an offline snapshot contract.            |
@@ -48,17 +53,16 @@ For current data volume and topology, it adds no required calculation capability
 Saved readings and curated knowledge have different lifecycles.
 Adding reading history does not require moving reference knowledge into the same store.
 
-If JSON becomes canonical, generate any runtime TypeScript representation from it.
+Generate runtime TypeScript imports from the canonical JSON.
 Do not maintain equivalent JSON and TypeScript records by hand.
 Schema changes and new package dependencies require selected implementation work.
-This assessment does not introduce a database or approve a file migration.
+This implementation does not introduce a database.
 
-## Proposed JSON corpus
+## JSON corpus
 
-**Status: Proposed.** The requested user-facing corpus uses UTF-8 JSON as its sole authored content source.
-JSON Schema validates each collection before publication.
-Existing package lookup interfaces receive adapters during the selected migration.
-The proposed layout follows [Knowledge content](../product-specs/knowledge-content.md).
+**Status: Implemented for the reviewed pilot.** JSON Schema validates each collection before publication.
+Existing lookup interfaces use a compatibility adapter.
+The collection layout follows [Knowledge content](../product-specs/knowledge-content.md).
 
 ```text
 packages/knowledge/data/
@@ -73,9 +77,10 @@ packages/knowledge/data/
   lessons/                  learning articles linked to existing claims
 ```
 
-The directories are proposed collections, not scaffolded files.
-JSON replaces equivalent authored TypeScript content during migration.
-Generated runtime representations have a reproducible build path.
+The pilot populates trigrams, hexagrams, terms, casting, and foundational Liu Yao records.
+Learning articles and advanced topics remain incomplete.
+JSON replaces equivalent authored TypeScript content.
+Generated runtime imports follow the manifest.
 Calculation-required data follows the ownership boundary above.
 
 ### Record contract
@@ -156,7 +161,7 @@ The [knowledge quality](../product-specs/knowledge-quality.md) contract owns the
 
 Generate a coverage report from the authored records.
 Build the released catalog from manifest-selected reviewed content.
-Preserve readonly local lookup and search during the migration.
+The adapter preserves readonly local lookup and search.
 Verify offline loading and content size when integrating the expanded corpus.
 
 ## V1 entities
@@ -212,9 +217,8 @@ Identify a work and its edition separately when adding the supplied books.
 An old original text does not establish rights for a modern translation or editorial additions.
 The current `SourceReference.location` string can record a chapter, section, PDF page, and printed page.
 
-**Proposed schema extension:** Add structured edition fingerprints, page locators, and review metadata when the content audit needs mechanical checks.
-Preserve existing IDs during any selected migration.
-The extension is not implemented in the current schema.
+The JSON corpus records edition fingerprints, page locators, and review metadata.
+The adapter preserves existing domain and knowledge IDs.
 
 ## V1 content
 

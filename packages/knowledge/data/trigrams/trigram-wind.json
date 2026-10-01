@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "trigram-wind",
+  "type": "trigram",
+  "title": "Tốn",
+  "aliases": [],
+  "topicIds": ["topic-trigrams", "topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "trigram-wind-pattern",
+      "kind": "structural-fact",
+      "text": "Quái Tốn có ba hào; đọc từ dưới lên là âm, dương, dương.",
+      "citationIds": ["citation-bpct-p10-11-technical"]
+    },
+    {
+      "id": "trigram-wind-element",
+      "kind": "structural-fact",
+      "text": "Trong hệ ngũ hành dùng để lập bảng Lục Hào, Tốn thuộc Mộc.",
+      "citationIds": ["citation-bpct-p11-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p10-11-technical", "citation-bpct-p11-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yang"],
+    "symbol": "☴",
+    "element": "wood",
+    "claimIds": ["trigram-wind-pattern", "trigram-wind-element"]
+  }
+}

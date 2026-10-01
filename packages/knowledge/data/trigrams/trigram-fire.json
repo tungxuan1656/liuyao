@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "trigram-fire",
+  "type": "trigram",
+  "title": "Ly",
+  "aliases": ["Li"],
+  "topicIds": ["topic-trigrams", "topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "trigram-fire-pattern",
+      "kind": "structural-fact",
+      "text": "Quái Ly có ba hào; đọc từ dưới lên là dương, âm, dương.",
+      "citationIds": ["citation-bpct-p10-11-technical"]
+    },
+    {
+      "id": "trigram-fire-element",
+      "kind": "structural-fact",
+      "text": "Trong hệ ngũ hành dùng để lập bảng Lục Hào, Ly thuộc Hỏa.",
+      "citationIds": ["citation-bpct-p11-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p10-11-technical", "citation-bpct-p11-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yang"],
+    "symbol": "☲",
+    "element": "fire",
+    "claimIds": ["trigram-fire-pattern", "trigram-fire-element"]
+  }
+}

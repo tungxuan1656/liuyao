@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "term-stem-xin",
+  "type": "term",
+  "title": "Tân",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-stem-xin-definition",
+      "kind": "structural-fact",
+      "text": "Tân là một trong mười thiên can.",
+      "citationIds": ["citation-bpct-p8-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p8-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-10",
+  "type": "hexagram",
+  "title": "Thiên Trạch Lý",
+  "aliases": ["Lý", "Lí", "Thiên Trạch Lí"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-10-structure",
+      "kind": "structural-fact",
+      "text": "Thiên Trạch Lý có ngoại quái Càn và nội quái Đoài. Hào được đếm từ dưới lên.",
+      "citationIds": ["citation-nhl-p166-commentary", "citation-nhl-p59-61-technical"]
+    },
+    {
+      "id": "hexagram-10-nhl-overview",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giải thích Lý qua cách ứng xử khi sự mềm thuận, vui vẻ gặp sức cương mạnh. Sáu hào được đọc như những lời nhắc về sự chất phác, biết sức mình, thận trọng và tránh tự phụ.",
+      "citationIds": ["citation-nhl-p166-commentary", "citation-nhl-p168-commentary"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-10-pbc-overview",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu liên hệ Lý với lễ và cách đứng vững trong quan hệ xã hội. Sự hòa duyệt của nội Đoài khi ứng phó với tính cương của ngoại Càn là trọng tâm cách ông giảng hình ảnh gặp nguy mà giữ được mình.",
+      "citationIds": ["citation-pbc-p135-136-commentary"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-10-ntt-overview",
+      "kind": "author-interpretation",
+      "text": "Trong bản Ngô Tất Tố dịch, Trình Di đọc Lý như con đường ứng xử của con người, còn Chu Hy nhấn mạnh sự hòa thuận của Đoài khi theo Càn. Hai lớp bình luận đều gắn khả năng vượt chỗ nguy với cách hành xử phù hợp.",
+      "citationIds": ["citation-ntt-p248-249-commentary"],
+      "attribution": {
+        "author": "Trình Di; Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-lake", "trigram-heaven"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-p166-167-commentary",
+      "citation-nhl-p166-commentary",
+      "citation-nhl-p167-commentary",
+      "citation-nhl-p168-commentary",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-p248-249-commentary",
+      "citation-pbc-p135-136-commentary"
+    ],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yin", "yang", "yang", "yang"],
+    "kingWenNumber": 10,
+    "upperTrigramId": "trigram-heaven",
+    "lowerTrigramId": "trigram-lake",
+    "claimIds": ["hexagram-10-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-10-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Bước đầu ra đời cần giữ sự giản dị, trong sạch và chí hướng ban đầu. Theo lời giảng, tiến bước với phẩm chất ấy giúp tránh lỗi.",
+          "citationIds": ["citation-nhl-p166-167-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-10-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Hình ảnh đường bằng nói về sự bình thản và giữ đạo trung. Dù thiếu người hợp sức, người học vẫn cần bền với đường chính.",
+          "citationIds": ["citation-nhl-p167-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-10-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Không đánh giá đúng năng lực mà tự phụ tiến vào việc lớn sẽ gặp nguy. Hình ảnh người nhìn và đi khó khăn được dùng để răn việc vượt quá khả năng thực.",
+          "citationIds": ["citation-nhl-p167-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-10-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Gặp nơi nguy hiểm cần giữ sự dè dặt và cảnh giác. Nguyễn Hiến Lê đối chiếu hào này với hào ba để nhấn mạnh tác dụng của việc biết sợ và biết thận trọng.",
+          "citationIds": ["citation-nhl-p167-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-10-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Ở vị trí có quyền lực, quyết đoán quá mức có thể thành tự phụ. Ngay cả ý định đúng cũng cần được thực hiện với sự cân nhắc về nguy cơ.",
+          "citationIds": ["citation-nhl-p168-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-10-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Cuối quá trình cần nhìn lại cách sống và hành động đã qua. Nguyễn Hiến Lê đọc hào này như sự tổng kết toàn quẻ, đánh giá kết quả theo mức trọn vẹn của cách ứng xử.",
+          "citationIds": ["citation-nhl-p168-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": []
+}

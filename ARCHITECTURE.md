@@ -78,7 +78,8 @@ The core validates input, maps three-/four-coin outcomes, and normalizes six lin
 It identifies primary and changed hexagrams, changing positions, and primary-board palace, Shi/Ying, Na Jia, elements, and Six Relatives.
 The web layer adapts `crypto.getRandomValues` to the injected coin-bit source. The core uses no browser globals.
 
-The knowledge package validates local TypeScript records and exposes readonly lookup and normalized search APIs.
+The knowledge package validates authored JSON and exposes readonly lookup and normalized search APIs.
+The [knowledge model](docs/design-docs/knowledge-model.md) defines reviewed releases and unaudited compatibility records.
 The web build bundles these records for offline use.
 The supplied PDFs in `docs/books/` are research inputs outside the runtime flow.
 

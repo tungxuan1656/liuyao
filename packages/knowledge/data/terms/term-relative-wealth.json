@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-relative-wealth",
+  "type": "term",
+  "title": "Thê tài",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-relative-wealth-definition",
+      "kind": "structural-fact",
+      "text": "Loại Lục thân được gán khi ngũ hành của cung khắc ngũ hành của hào.",
+      "citationIds": ["citation-bpct-p9-technical", "citation-bpct-p14-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-bpct-p9-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-six-relative-classification"]
+}

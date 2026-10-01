@@ -1,7 +1,7 @@
 # Book-backed knowledge content
 
-**Status: Proposed.** This document owns the user-facing content taxonomy, coverage, and batch acceptance for the supplied-book corpus.
-It does not claim that the corpus exists or that advanced calculation behavior is implemented.
+This document owns the user-facing content taxonomy, coverage, and batch acceptance for the supplied-book corpus.
+The JSON pilot exists. Full commentary, advanced content, and expanded browsing remain intended.
 
 ## Content flow
 
@@ -57,8 +57,8 @@ Those behaviors require their own specification and selected implementation work
 | Book and chapter JSON, with a topic index                       | Preserves the supplied books' organization.                             | Repeats concepts and complicates comparison between authors. |
 | One complete catalog JSON                                       | Simple initial import.                                                  | Large edits, review conflicts, and weak batch isolation.     |
 
-The proposed approach uses topic records and per-hexagram JSON.
-The [knowledge model](../design-docs/knowledge-model.md#proposed-json-corpus) defines its storage contract.
+The implemented pilot uses topic records and per-hexagram JSON.
+The [knowledge model](../design-docs/knowledge-model.md#json-corpus) defines its storage contract.
 
 ## Batch sequence
 
@@ -75,7 +75,8 @@ Each pilot hexagram includes its six line positions.
 The pilot exercises pure and mixed hexagrams, moving-line examples, and special passages before bulk authoring.
 Every batch ends with a reviewed coverage report and one concrete next batch.
 The user selected concurrent progress on both tracks, with small cited batches.
-The storage contract and delivery design remain proposed until approved.
+The user approved the JSON storage contract and this delivery sequence.
+The [generated coverage report](../../packages/knowledge/reports/coverage.json) identifies the released pilot and remaining gaps.
 
 ## Batch acceptance
 

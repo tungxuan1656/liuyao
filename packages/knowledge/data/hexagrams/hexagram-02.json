@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-02",
+  "type": "hexagram",
+  "title": "Thuần Khôn",
+  "aliases": ["Bát Thuần Khôn", "Khôn vi Địa"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-02-structure",
+      "kind": "structural-fact",
+      "text": "Thuần Khôn có ngoại quái Khôn và nội quái Khôn. Hào được đếm từ dưới lên.",
+      "citationIds": ["citation-nhl-p137-commentary", "citation-nhl-p59-61-technical"]
+    },
+    {
+      "id": "hexagram-02-nhl-overview",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê trình bày Khôn qua tính nhu thuận và khả năng nuôi dưỡng, thành hình của đất. Lời khuyên theo sau và giữ sự bền chính được đặt trong hoàn cảnh người ở vị thế cần phối hợp với người khởi xướng.",
+      "citationIds": ["citation-nhl-p137-commentary"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-02-pbc-overview",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu nhấn mạnh sự phối hợp giữa đức kiện của Càn và đức thuận của Khôn. Ông đọc lời về được bạn và mất bạn như lời nhắc chọn người cùng chí hướng, không hạn định thành chỉ dẫn phương hướng tuyệt đối.",
+      "citationIds": ["citation-pbc-p58-59-commentary"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-02-ntt-overview",
+      "kind": "author-interpretation",
+      "text": "Trong bản Ngô Tất Tố dịch, Trình Di phân biệt sự bền chính của Càn với sự bền chính mang tính mềm thuận của Khôn. Hình ảnh ngựa cái kết hợp khả năng đi mạnh với tính thuận, làm rõ cách hành động của quẻ.",
+      "citationIds": ["citation-ntt-p129-130-commentary"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-earth"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-p137-commentary",
+      "citation-nhl-p138-139-commentary",
+      "citation-nhl-p138-commentary",
+      "citation-nhl-p139-140-commentary",
+      "citation-nhl-p139-commentary",
+      "citation-nhl-p140-141-commentary",
+      "citation-nhl-p140-commentary",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-p129-130-commentary",
+      "citation-pbc-p58-59-commentary"
+    ],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yin", "yin", "yin", "yin", "yin"],
+    "kingWenNumber": 2,
+    "upperTrigramId": "trigram-earth",
+    "lowerTrigramId": "trigram-earth",
+    "claimIds": ["hexagram-02-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-02-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Từ sương mỏng có thể nhận ra quá trình dẫn tới băng dày. Nguyễn Hiến Lê đọc hào này như lời nhắc nhận biết dấu hiệu sớm và đề phòng ngay từ đầu.",
+          "citationIds": ["citation-nhl-p138-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-02-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Các hình ảnh thẳng, vuông và lớn diễn tả phẩm chất ngay thẳng, đúng mực và rộng rãi. Phần giảng gắn việc tu dưỡng với lòng kính và nghĩa trong giao tiếp.",
+          "citationIds": ["citation-nhl-p138-139-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-02-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Giữ đức tốt bên trong và làm tròn phần việc khi theo người trên. Hào này khuyên hoàn thành trách nhiệm mà không nhận hết công về mình.",
+          "citationIds": ["citation-nhl-p139-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-02-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Miệng túi được buộc kín tượng trưng cho sự giữ gìn lời nói và hành động. Trong hoàn cảnh khó xử, kín đáo giúp tránh lỗi dù chưa tạo được danh tiếng.",
+          "citationIds": ["citation-nhl-p139-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-02-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Hình ảnh xiêm vàng biểu thị đức trung và thái độ khiêm hạ. Ở vị trí cao, phẩm chất bên trong cần thể hiện ra công việc mà vẫn giữ sự nhún nhường.",
+          "citationIds": ["citation-nhl-p139-140-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-02-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Cuộc giao tranh giữa rồng ở đồng nội biểu thị sự đối kháng khi phát triển tới cực điểm. Nguyễn Hiến Lê nhấn mạnh tổn hại cho cả hai phía khi tranh chấp vượt giới hạn.",
+          "citationIds": ["citation-nhl-p140-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [
+    {
+      "id": "hexagram-02-special",
+      "title": "Dụng lục",
+      "claims": [
+        {
+          "id": "hexagram-02-special-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê trình bày nhiều cách giải thích Dụng lục. Cách hiểu của tiên nho về sáu hào âm cùng biến được đặt cạnh các thuyết khác; ý nghĩa chính bền lâu dài cần được đọc trong từng cách giải, không tự động trở thành một quy tắc đoán duy nhất.",
+          "citationIds": ["citation-nhl-p140-141-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "discrepancy-nhl-khun-line-four",
+      "status": "resolved",
+      "description": "Bản PDF phiên âm hào bốn thành “Lục cửu”, trong khi tiêu đề chữ và phần dịch xác định hào bốn là âm.",
+      "citationIds": ["citation-nhl-p139-commentary"],
+      "resolution": "Chuẩn hóa nhãn thành Lục tứ theo vị trí thứ tư và tính âm của hào; giữ dấu vết lỗi bản cung cấp."
+    }
+  ]
+}

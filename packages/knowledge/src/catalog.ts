@@ -20,13 +20,7 @@ import type {
 } from './schema.js';
 import { validateKnowledgeCatalog } from './validation.js';
 
-function deepFreeze<T>(value: T): T {
-  if (value !== null && typeof value === 'object' && !Object.isFrozen(value)) {
-    Object.freeze(value);
-    for (const child of Object.values(value)) deepFreeze(child);
-  }
-  return value;
-}
+import { deepFreeze } from './immutable.js';
 
 // The content records are authored separately; the schema validator is the runtime boundary.
 export const knowledgeCatalog: KnowledgeCatalog = {

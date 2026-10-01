@@ -201,6 +201,12 @@
       "title": "Book-backed domain documentation",
       "status": "done",
       "depends_on": ["feat-004", "feat-005", "feat-006"]
+    },
+    {
+      "id": "feat-032",
+      "title": "Book-backed JSON knowledge foundation and pilot",
+      "status": "done",
+      "depends_on": ["feat-031"]
     }
   ]
 }

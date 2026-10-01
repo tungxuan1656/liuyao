@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rule-branch-element",
+  "type": "rule",
+  "title": "Ngũ hành gắn với địa chi",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "rule-branch-element-claim",
+      "kind": "calculation-rule",
+      "text": "Ngũ hành của hào được xác định theo địa chi: Tý, Hợi thuộc Thủy; Dần, Mão thuộc Mộc; Tỵ, Ngọ thuộc Hỏa; Thân, Dậu thuộc Kim; Sửu, Thìn, Mùi, Tuất thuộc Thổ.",
+      "citationIds": ["citation-bpct-p8-technical", "citation-bpct-p14-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-bpct-p8-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "ruleset": "liuyao-standard-v1",
+  "category": "classification",
+  "tables": [
+    {
+      "kind": "branch-elements",
+      "claimIds": ["rule-branch-element-claim"],
+      "rows": [
+        {
+          "branchId": "term-branch-zi",
+          "element": "water"
+        },
+        {
+          "branchId": "term-branch-chou",
+          "element": "earth"
+        },
+        {
+          "branchId": "term-branch-yin",
+          "element": "wood"
+        },
+        {
+          "branchId": "term-branch-mao",
+          "element": "wood"
+        },
+        {
+          "branchId": "term-branch-chen",
+          "element": "earth"
+        },
+        {
+          "branchId": "term-branch-si",
+          "element": "fire"
+        },
+        {
+          "branchId": "term-branch-wu",
+          "element": "fire"
+        },
+        {
+          "branchId": "term-branch-wei",
+          "element": "earth"
+        },
+        {
+          "branchId": "term-branch-shen",
+          "element": "metal"
+        },
+        {
+          "branchId": "term-branch-you",
+          "element": "metal"
+        },
+        {
+          "branchId": "term-branch-xu",
+          "element": "earth"
+        },
+        {
+          "branchId": "term-branch-hai",
+          "element": "water"
+        }
+      ]
+    }
+  ]
+}

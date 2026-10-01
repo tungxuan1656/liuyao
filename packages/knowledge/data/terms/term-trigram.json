@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-trigram",
+  "type": "term",
+  "title": "Quái",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "term-trigram-definition",
+      "kind": "structural-fact",
+      "text": "Hình gồm ba hào; nội quái và ngoại quái kết hợp thành một quẻ sáu hào.",
+      "citationIds": ["citation-bpct-p10-11-technical", "citation-bpct-p14-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p10-11-technical", "citation-bpct-p14-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-trigram-composition"]
+}

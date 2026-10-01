@@ -7,7 +7,8 @@ See [Licensing](../../LICENSING.md) for usage rights.
 ## Source inventory
 
 The keys below identify these exact files for documentation review.
-They do not replace the runtime source IDs in `packages/knowledge/data/sources.ts`.
+The [JSON source inventory](../../packages/knowledge/data/sources.json) owns runtime work IDs, edition IDs, fingerprints, and bibliographic metadata.
+Runtime IDs use `source-book-<key>` with lowercase keys.
 Page numbers count PDF pages from one, including covers.
 
 | Key    | Supplied source                                                                                    | PDF pages | Edition evidence                                                                                                          | Use                                                                        |
@@ -24,31 +25,26 @@ An electronic file date does not establish a book publication date.
 
 ### File fingerprints
 
-| Key    | SHA-256                                                            |
-| ------ | ------------------------------------------------------------------ |
-| `BPCT` | `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a` |
-| `PBC`  | `cbe589d41b3285a8287800a0ed3789c5c0324fba6c80f35e9c27a25377a4d2d6` |
-| `NTT`  | `2ac72f723af153ecfd7e15389d1037119d30c8405830471c75f9ed3f0f94f4fd` |
-| `NHL`  | `9967d19f5ecd805ba6a14bad22e4456040a05d959a633452d3a85a14c92d619e` |
-
-When a file changes, recheck its fingerprint, page locations, and affected claims.
-Keep the supplied filenames unchanged during documentation work.
+Use the SHA-256 values in the [JSON source inventory](../../packages/knowledge/data/sources.json).
+`pnpm --filter @liuyao/knowledge validate:corpus --check-books` verifies all four supplied inputs.
+When a file changes, repeat its passage and locator review.
+Keep the supplied filenames unchanged.
 
 ## Reviewed locations
 
 This inventory records focused V1 review. It does not claim a complete review of the 2,453 PDF pages.
 
-| Topic                                 | Location                                                                              | Evidence boundary                                                                                      |
-| ------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Five Element cycles and Six Relatives | `BPCT`, chapter 1, IV–V, PDF 9 (printed 3)                                            | General rules reviewed. The worked Wood example contains a contradictory element.                      |
-| Earthly Branch elements               | `BPCT`, chapter 1, III, PDF 8 (printed 2)                                             | Branch associations used by the V1 board.                                                              |
-| Trigram symbols and elements          | `BPCT`, chapter 1, VIII–IX, PDF 10–11 (printed 4–5)                                   | Symbols require visual inspection.                                                                     |
-| Three-coin casting and moving lines   | `BPCT`, chapter 1, X, PDF 11–12 (printed 5–6)                                         | Describes physical coin faces and line classes.                                                        |
-| Palace membership                     | `BPCT`, chapter 1, XI, PDF 12–13 (printed 6–7). Chapter 4, PDF 49–66 (printed 38–55). | The chapter 4 headings resolve the incomplete Khảm list. Full board annotations need separate review.  |
-| Na Jia                                | `BPCT`, chapter 1, XII, PDF 13 (printed 7)                                            | All eight inner/outer sequences reviewed.                                                              |
-| Shi/Ying                              | `BPCT`, chapter 1, XIII, PDF 14–15 (printed 8–9)                                      | Palace sequence and marker separation reviewed.                                                        |
-| Basic terminology                     | `NHL`, chapter 4, PDF 59–74                                                           | Structure and moving-line discussion reviewed. PDF 73 gives Tụng changing to Lý.                       |
-| Classical text and editorial context  | `NTT`, PDF 2–8. `PBC`, PDF 2, 9–10, 15–16.                                            | Title pages, contents, introductions, and terminology reviewed. Detailed commentary remains unaudited. |
+| Topic                                 | Location                                                                              | Evidence boundary                                                                                              |
+| ------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Five Element cycles and Six Relatives | `BPCT`, chapter 1, IV–V, PDF 9 (printed 3)                                            | General rules reviewed. The worked Wood example contains a contradictory element.                              |
+| Earthly Branch elements               | `BPCT`, chapter 1, III, PDF 8 (printed 2)                                             | Branch associations used by the V1 board.                                                                      |
+| Trigram symbols and elements          | `BPCT`, chapter 1, VIII–IX, PDF 10–11 (printed 4–5)                                   | Symbols require visual inspection.                                                                             |
+| Three-coin casting and moving lines   | `BPCT`, chapter 1, X, PDF 11–12 (printed 5–6)                                         | Describes physical coin faces and line classes.                                                                |
+| Palace membership                     | `BPCT`, chapter 1, XI, PDF 12–13 (printed 6–7). Chapter 4, PDF 49–66 (printed 38–55). | The chapter 4 headings resolve the incomplete Khảm list. Full board annotations need separate review.          |
+| Na Jia                                | `BPCT`, chapter 1, XII, PDF 13 (printed 7)                                            | All eight inner/outer sequences reviewed.                                                                      |
+| Shi/Ying                              | `BPCT`, chapter 1, XIII, PDF 14–15 (printed 8–9)                                      | Palace sequence and marker separation reviewed.                                                                |
+| Basic terminology                     | `NHL`, chapter 4, PDF 59–74                                                           | Structure and moving-line discussion reviewed. PDF 73 gives Tụng changing to Lý.                               |
+| Classical text and editorial context  | `NTT`, PDF 2–8. `PBC`, PDF 2, 9–10, 15–16.                                            | Title pages, contents, introductions, and terminology reviewed. Commentary beyond the pilot remains unaudited. |
 
 The three Chu Dịch commentaries support classical meanings.
 Their explanations do not automatically establish Na Jia, palace, or interpretation rules.
@@ -62,6 +58,10 @@ Their explanations do not automatically establish Na Jia, palace, or interpretat
 | `BPCT-02` | PDF 13, chapter 1, XII                     | The Na Jia row labels Khôn as Wood.                                                                            | The palace list on the same page and chapter 4, PDF 62, identify Khôn as Earth. The can/branch sequence agrees with V1. |
 | `BPCT-03` | PDF 9, chapter 1, V                        | The Wood example says Metal controls Wood, then labels Quan quỷ as Wood.                                       | Use the general relation stated above the example. For a Wood palace, Quan quỷ is Metal.                                |
 | `BPCT-04` | PDF 429–430, supplementary casting section | Two mixed outcomes receive the same Thiếu dương label. The chapter 1 description distinguishes their polarity. | Resolve the line class against PDF 11–12 and the drawn symbols before importing this appendix.                          |
+
+The pilot also records NHL PDF 139 labeling Khôn's fourth line as “Lục cửu”.
+Its Chinese heading and line position support the normalized label “Lục tứ”.
+See the [Khôn record](../../packages/knowledge/data/hexagrams/hexagram-02.json) for the discrepancy evidence.
 
 These findings do not exhaust the edition's errors.
 Record each additional discrepancy with its location and resolution evidence.

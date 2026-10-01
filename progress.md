@@ -726,3 +726,19 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Limits**: This is focused documentation review. Runtime records and fixtures still need individual supplied-book provenance. Full commentary review and JSON migration are not implemented. Supplied PDFs remain user-provided inputs.
 
 **Next**: Select the supplied-book audit of runtime knowledge records and calculation fixtures.
+
+## 2026-10-01 — feat-032 JSON pilot and package migration
+
+**State**: done for the approved pilot.
+**Done**: Added four fingerprinted source editions, strict schemas, cited JSON records, release checks, generated coverage, and readonly book APIs. Existing lookups use reviewed JSON plus an explicitly unaudited compatibility snapshot.
+**Evidence**: `./init.sh` passes with 263 package tests. Corpus fingerprint/freshness checks and `git diff --check` pass. Codex compared pilot passages and rendered symbol/table pages. Chromium loaded Càn and edition metadata after the production server stopped.
+**Limits**: Coverage is 4/64 quẻ and 24/384 line positions. PBC/NTT line commentary and independent specialist approval remain missing. The main JS bundle is approximately 679kB, 197kB gzip. Existing build/lint warnings remain.
+**Next**: Continue Truân, Mông, Nhu, Sư and BPCT chapter 5, sections 1–4, PDF 67–68. Include the missing PBC/NTT pilot line comparisons. Changes remain uncommitted.
+
+## 2026-10-01 — feat-032 pre-commit source review
+
+**State**: done for the pilot.
+**Done**: Rechecked authored claims against their cited passages and inspected the PBC/NTT Lý diagrams. Added BPCT PDF 13 to the Thiên can and Địa chi definitions so their Nạp Giáp clauses have direct evidence.
+**Evidence**: The corpus still has 73 records, 119 claims, and 43 citations. Full verification and fingerprint checks run before the pilot commit.
+**Blockers**: None.
+**Next**: Continue the approved next batch in a separate feature and commit each reviewed content group.

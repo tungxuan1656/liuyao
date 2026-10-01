@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "source-book-bpct",
+      "title": "Tăng bổ Bốc Phệ Chính Tông",
+      "author": "Vương Hồng Tự",
+      "contributors": ["Vĩnh Cao — dịch và chú giải"],
+      "editions": [
+        {
+          "id": "edition-bpct-supplied",
+          "label": "Bản PDF do người dùng cung cấp",
+          "sha256": "713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a",
+          "pdfPageCount": 467,
+          "localInputPath": "docs/books/Tăng bổ bốc phệ chính tông.pdf",
+          "publication": {
+            "publisher": null,
+            "year": null,
+            "note": "Năm xuất bản chưa xác định từ bản cung cấp. Ngày hiệu đính bản điện tử không phải năm xuất bản."
+          },
+          "rights": {
+            "status": "unconfirmed",
+            "use": "research-only",
+            "note": "PDF, bản dịch và chú giải giữ quyền của chủ sở hữu; bộ dữ liệu chỉ chứa sự kiện và diễn giải mới, không phân phối sách."
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-book-pbc",
+      "title": "Quốc văn Chu Dịch diễn giải",
+      "author": "Phan Bội Châu",
+      "contributors": [],
+      "editions": [
+        {
+          "id": "edition-pbc-supplied",
+          "label": "Bản PDF do người dùng cung cấp",
+          "sha256": "cbe589d41b3285a8287800a0ed3789c5c0324fba6c80f35e9c27a25377a4d2d6",
+          "pdfPageCount": 655,
+          "localInputPath": "docs/books/Quốc văn chu dịch diễn giải Phan Bội Châu.pdf",
+          "publication": {
+            "publisher": null,
+            "year": null,
+            "note": "Năm xuất bản chưa xác định từ bản cung cấp. Ngày hiệu đính bản điện tử không phải năm xuất bản."
+          },
+          "rights": {
+            "status": "unconfirmed",
+            "use": "research-only",
+            "note": "PDF, bản dịch và chú giải giữ quyền của chủ sở hữu; bộ dữ liệu chỉ chứa sự kiện và diễn giải mới, không phân phối sách."
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-book-ntt",
+      "title": "Kinh Dịch trọn bộ",
+      "author": "Trình Di; Chu Hy",
+      "contributors": ["Ngô Tất Tố — dịch và chú giải"],
+      "editions": [
+        {
+          "id": "edition-ntt-supplied",
+          "label": "Bản PDF do người dùng cung cấp",
+          "sha256": "2ac72f723af153ecfd7e15389d1037119d30c8405830471c75f9ed3f0f94f4fd",
+          "pdfPageCount": 938,
+          "localInputPath": "docs/books/Kinh dịch Ngô Tất Tố.pdf",
+          "publication": {
+            "publisher": "Nhà xuất bản Văn Học",
+            "year": null,
+            "note": "Năm xuất bản chưa xác định từ bản cung cấp. Ngày hiệu đính bản điện tử không phải năm xuất bản."
+          },
+          "rights": {
+            "status": "unconfirmed",
+            "use": "research-only",
+            "note": "PDF, bản dịch và chú giải giữ quyền của chủ sở hữu; bộ dữ liệu chỉ chứa sự kiện và diễn giải mới, không phân phối sách."
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-book-nhl",
+      "title": "Kinh Dịch — Đạo của người quân tử",
+      "author": "Nguyễn Hiến Lê",
+      "contributors": [],
+      "editions": [
+        {
+          "id": "edition-nhl-supplied",
+          "label": "Bản PDF do người dùng cung cấp",
+          "sha256": "9967d19f5ecd805ba6a14bad22e4456040a05d959a633452d3a85a14c92d619e",
+          "pdfPageCount": 393,
+          "localInputPath": "docs/books/Kinh dịch đạo của người quân tử Nguyễn Hiến Lê.pdf",
+          "publication": {
+            "publisher": null,
+            "year": null,
+            "note": "Năm xuất bản chưa xác định từ bản cung cấp. Ngày hiệu đính bản điện tử không phải năm xuất bản."
+          },
+          "rights": {
+            "status": "unconfirmed",
+            "use": "research-only",
+            "note": "PDF, bản dịch và chú giải giữ quyền của chủ sở hữu; bộ dữ liệu chỉ chứa sự kiện và diễn giải mới, không phân phối sách."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-01",
+  "type": "hexagram",
+  "title": "Thuần Càn",
+  "aliases": ["Bát Thuần Càn", "Kiền", "Càn vi Thiên"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-01-structure",
+      "kind": "structural-fact",
+      "text": "Thuần Càn có ngoại quái Càn và nội quái Càn. Hào được đếm từ dưới lên.",
+      "citationIds": ["citation-nhl-p131-commentary", "citation-nhl-p59-61-technical"]
+    },
+    {
+      "id": "hexagram-01-nhl-overview",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê trình bày Càn qua đức cương kiện của trời và các phẩm chất đạo đức của người quân tử. Ông phân biệt lời quẻ với những lớp diễn giải về vũ trụ và đạo đức được bổ sung trong phần Truyện.",
+      "citationIds": ["citation-nhl-p131-commentary"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-01-pbc-overview",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải thích bốn đức của Càn như một quá trình: khởi đầu tốt, phát triển thuận lợi rồi giữ điều chính đến khi việc thành. Ví dụ về cây giúp người học thấy các giai đoạn nối tiếp và trở lại điểm khởi đầu.",
+      "citationIds": ["citation-pbc-p30-31-commentary"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-01-ntt-overview",
+      "kind": "author-interpretation",
+      "text": "Trong bản Ngô Tất Tố dịch, Trình Di phân biệt trời như hình thể với Càn như tính mạnh mẽ không ngừng. Bốn đức được trình bày theo sự khởi sinh, phát triển, thích hợp và hoàn thành của muôn vật.",
+      "citationIds": ["citation-ntt-p80-81-commentary"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-heaven"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-p131-commentary",
+      "citation-nhl-p132-commentary",
+      "citation-nhl-p133-134-commentary",
+      "citation-nhl-p133-commentary",
+      "citation-nhl-p134-135-commentary",
+      "citation-nhl-p134-commentary",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-p80-81-commentary",
+      "citation-pbc-p30-31-commentary"
+    ],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yang", "yang", "yang", "yang"],
+    "kingWenNumber": 1,
+    "upperTrigramId": "trigram-heaven",
+    "lowerTrigramId": "trigram-heaven",
+    "claimIds": ["hexagram-01-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-01-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Hình ảnh rồng còn ẩn nói về tài đức chưa đến lúc đem ra sử dụng. Theo cách giảng của Nguyễn Hiến Lê, giai đoạn này dành cho việc rèn luyện và chờ thời.",
+          "citationIds": ["citation-nhl-p132-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-01-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Rồng đã xuất hiện ở mặt đất tượng trưng cho tài đức bắt đầu có thể giúp đời. Nguyễn Hiến Lê nhấn mạnh việc gặp người có tài đức và giữ sự thành tín, thận trọng.",
+          "citationIds": ["citation-nhl-p132-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-01-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Ở ranh giới cuối nội quái, người quân tử phải vừa nỗ lực vừa tự cảnh giác. Sự cẩn trọng giúp tránh lỗi trong một vị thế còn chông chênh.",
+          "citationIds": ["citation-nhl-p133-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-01-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Hình ảnh rồng có thể nhảy lên hoặc ở lại vực diễn tả lựa chọn tùy thời. Cần xem xét thời cơ và chuẩn bị năng lực trước khi tiến thêm.",
+          "citationIds": ["citation-nhl-p133-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-01-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Rồng bay trên trời biểu thị vị thế thuận lợi để tài đức phát huy. Nguyễn Hiến Lê giải thích việc gặp đại nhân là sự phối hợp giữa những người có đức và năng lực.",
+          "citationIds": ["citation-nhl-p133-134-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-01-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Rồng lên quá cao biểu thị sức mạnh đã tới cực điểm. Tiếp tục tiến mà thiếu khả năng lui có thể dẫn tới hối tiếc; lời giảng khuyên biết dừng và rút lui đúng lúc.",
+          "citationIds": ["citation-nhl-p134-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [
+    {
+      "id": "hexagram-01-special",
+      "title": "Dụng cửu",
+      "claims": [
+        {
+          "id": "hexagram-01-special-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê ghi nhận nhiều cách giải thích Dụng cửu và xem ý nghĩa của đoạn này còn khó xác định. Ông dẫn cách hiểu của Chu Hy về trường hợp sáu hào dương cùng biến, bên cạnh những cách đọc khác; đây là một quan điểm có tác giả, không được mặc định thành quy tắc đoán chung.",
+          "citationIds": ["citation-nhl-p134-135-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    }
+  ]
+}

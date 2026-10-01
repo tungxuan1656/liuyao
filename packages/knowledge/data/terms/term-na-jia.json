@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-na-jia",
+  "type": "term",
+  "title": "Nạp Giáp",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-na-jia-definition",
+      "kind": "structural-fact",
+      "text": "Phép gán thiên can và địa chi cho các hào thông qua nội quái và ngoại quái.",
+      "citationIds": ["citation-bpct-p13-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p13-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-na-jia-assignment"]
+}

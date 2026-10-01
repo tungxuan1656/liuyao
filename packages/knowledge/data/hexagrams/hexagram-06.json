@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-06",
+  "type": "hexagram",
+  "title": "Thiên Thủy Tụng",
+  "aliases": ["Tụng"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-06-structure",
+      "kind": "structural-fact",
+      "text": "Thiên Thủy Tụng có ngoại quái Càn và nội quái Khảm. Hào được đếm từ dưới lên.",
+      "citationIds": ["citation-nhl-p153-commentary", "citation-nhl-p59-61-technical"]
+    },
+    {
+      "id": "hexagram-06-nhl-overview",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đọc Tụng như lời răn về tranh chấp: làm rõ điều oan rồi biết dừng, tìm người xét xử công minh và tránh đẩy vụ việc tới cùng. Ông cũng dẫn lời Đại tượng về việc cẩn thận từ lúc bắt đầu để giảm nguy cơ kiện tụng.",
+      "citationIds": ["citation-nhl-p153-commentary", "citation-nhl-p154-commentary"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-06-pbc-overview",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải thích Tụng là tranh biện hoặc kiện cáo khi sức mạnh ở trên gặp sự hiểm ở dưới. Việc kiện chỉ nhằm phân biệt đúng sai; sau khi đã rõ nên dừng và nhờ người có đức, có tài xét xử.",
+      "citationIds": ["citation-pbc-p100-101-commentary"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-06-ntt-overview",
+      "kind": "author-interpretation",
+      "text": "Trong bản Ngô Tất Tố dịch, Trình Di giải thích thế trời đi lên và nước đi xuống như hai xu hướng trái nhau. Tranh kiện phải dựa vào sự thật, giữ mức vừa phải và nhờ người công minh quyết đoán.",
+      "citationIds": ["citation-ntt-p196-197-commentary"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-water", "trigram-heaven"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-p153-commentary",
+      "citation-nhl-p154-155-commentary",
+      "citation-nhl-p154-commentary",
+      "citation-nhl-p155-156-commentary",
+      "citation-nhl-p155-commentary",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-p196-197-commentary",
+      "citation-pbc-p100-101-commentary"
+    ],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yin", "yang", "yang", "yang"],
+    "kingWenNumber": 6,
+    "upperTrigramId": "trigram-heaven",
+    "lowerTrigramId": "trigram-water",
+    "claimIds": ["hexagram-06-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-06-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Tránh kéo dài tranh chấp dù có người mạnh đứng phía sau. Chấp nhận một ít lời trách và biết nhường có thể giúp vụ việc kết thúc ổn thỏa.",
+          "citationIds": ["citation-nhl-p154-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-06-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Khi thế lực và hoàn cảnh không cho phép thắng kiện, nên lui về và tránh đối đầu. Lời giảng đặt sự an toàn của người ở thế yếu lên trước ý muốn tranh thắng.",
+          "citationIds": ["citation-nhl-p154-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-06-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Giữ nền nếp và điều tốt đã có, hành xử đúng mực với sự cảnh giác. Nếu phải tham gia việc của người trên, nên giữ bổn phận và tránh ham công trong tranh chấp.",
+          "citationIds": ["citation-nhl-p154-155-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-06-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Bỏ ý muốn tranh kiện và trở lại với lẽ phải. Thay đổi cách xử sự, giữ yên và bền chính là hướng được lời hào khuyến khích.",
+          "citationIds": ["citation-nhl-p155-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-06-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Vai trò xét xử được đặt vào người có tài đức, trung chính và công minh. Nguyễn Hiến Lê cũng giải thích rằng người đi kiện được gặp người xét xử như vậy là điều thuận lợi.",
+          "citationIds": ["citation-nhl-p155-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-06-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Thắng lợi bằng việc theo đuổi kiện tụng đến cùng có thể không bền. Hình ảnh phần thưởng vừa nhận đã mất nhắc về cái giá và sự bất ổn của tranh thắng cực đoan.",
+          "citationIds": ["citation-nhl-p155-156-commentary"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": []
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "rule-moving-line-change",
+  "type": "rule",
+  "title": "Hào động và sự biến đổi",
+  "aliases": [],
+  "topicIds": ["topic-casting"],
+  "claims": [
+    {
+      "id": "rule-moving-line-change-claim",
+      "kind": "calculation-rule",
+      "text": "Hào dương động đổi thành âm; hào âm động đổi thành dương. Khi nhiều hào cùng động, đổi tất cả các hào đó để lập một quẻ biến. Những hào tĩnh giữ nguyên; quẻ hoàn toàn tĩnh không biến sang quẻ khác.",
+      "citationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "ruleset": "liuyao-standard-v1",
+  "category": "transformation"
+}

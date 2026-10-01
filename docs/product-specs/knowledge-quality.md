@@ -1,6 +1,6 @@
 # Knowledge quality
 
-This document owns the intended evidence and acceptance requirements for domain knowledge.
+This document owns the evidence and acceptance requirements for domain knowledge.
 The supplied books are the primary evidence for hexagram and Liu Yao content.
 File format and database choice do not establish correctness.
 
@@ -46,7 +46,7 @@ References to software fields can use the project contract directly.
 
 ## Review states
 
-These are intended content review states. They are separate from Harness feature statuses.
+The JSON corpus encodes these content review states. They are separate from Harness feature statuses.
 
 | State        | Meaning                                            | Publication                                           |
 | ------------ | -------------------------------------------------- | ----------------------------------------------------- |
@@ -55,9 +55,9 @@ These are intended content review states. They are separate from Harness feature
 | `disputed`   | A source conflict lacks a supported resolution     | Withhold the claim from calculation authority.        |
 | `superseded` | A reviewed replacement exists                      | Retain the replacement route in review history.       |
 
-The current runtime schema does not encode these states.
-Until selected implementation work adds that support, record review evidence in the owning content change.
-Passing schema validation does not imply a `reviewed` state.
+Record source review in each authored JSON record.
+The release manifest accepts reviewed records only.
+Schema validation does not establish source fidelity.
 
 ## Domain acceptance
 
@@ -78,15 +78,17 @@ Package tests protect reusable behavior. [Development](../development.md) owns t
 
 ## Current gap
 
-**Observed:** The runtime catalog provides 8 trigrams, 64 hexagrams, terms, rules, and source links.
-It uses TypeScript records and validates stable IDs and internal references.
-Its source records do not yet identify the four supplied PDF editions.
-Many entity and term records lack a passage reference to a supplied book.
-Existing calculation fixtures retain earlier source annotations.
+**Observed:** The reviewed JSON pilot records edition fingerprints, claim citations, attribution, and source-comparison metadata.
+The [coverage report](../../packages/knowledge/reports/coverage.json) distinguishes released content, missing commentary, and unaudited legacy records.
+Codex reviewed the cited pilot passages. Independent specialist approval is not claimed.
 
-**Intended:** The acceptance requirements above govern a future content audit and any dataset expansion.
-The book review in these documents supplies a starting point for that audit.
-It does not certify every runtime record or every fixture as reviewed against the supplied editions.
+The compatibility catalog still provides 8 trigrams and 64 hexagrams.
+Unmigrated records remain explicitly unaudited in the JSON snapshot.
+Existing core calculation fixtures retain their earlier source annotations.
+Compatibility checks establish agreement with current calculations, not an independent audit of those fixtures.
+
+**Intended:** Continue the supplied-book review across the remaining corpus.
+The publication gate applies to each new batch.
 
 ## Learning coverage
 

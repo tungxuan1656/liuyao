@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "rule-six-relative-classification",
+  "type": "rule",
+  "title": "Phân loại Lục thân",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "rule-six-relative-classification-claim",
+      "kind": "calculation-rule",
+      "text": "Lấy ngũ hành của cung làm mốc: cùng hành là Huynh đệ, cung sinh hào là Tử tôn, cung khắc hào là Thê tài, hào khắc cung là Quan quỷ và hào sinh cung là Phụ mẫu. Sách gọi năm quan hệ cùng với “Ta” là Lục thân.",
+      "citationIds": ["citation-bpct-p9-technical", "citation-bpct-p14-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-bpct-p9-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "ruleset": "liuyao-standard-v1",
+  "category": "classification",
+  "tables": [
+    {
+      "kind": "relative-relations",
+      "claimIds": ["rule-six-relative-classification-claim"],
+      "rows": [
+        {
+          "relation": "same",
+          "relativeId": "term-relative-sibling"
+        },
+        {
+          "relation": "palace-generates-line",
+          "relativeId": "term-relative-child"
+        },
+        {
+          "relation": "palace-controls-line",
+          "relativeId": "term-relative-wealth"
+        },
+        {
+          "relation": "line-controls-palace",
+          "relativeId": "term-relative-official-ghost"
+        },
+        {
+          "relation": "line-generates-palace",
+          "relativeId": "term-relative-parent"
+        }
+      ]
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "discrepancy-bpct-wood-official",
+      "status": "resolved",
+      "description": "Ví dụ trên trang 9 ghi Quan quỷ thuộc Mộc sau khi đã xác định Kim khắc Mộc.",
+      "citationIds": ["citation-bpct-p9-technical"],
+      "resolution": "Dùng quy tắc khắc Ta là Quan quỷ: với cung Mộc, Kim là Quan quỷ."
+    }
+  ]
+}
