@@ -10,6 +10,7 @@ import {
 import { Button } from './components/ui/button';
 import { Alert, AlertTitle, AlertDescription } from './components/ui/alert';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card';
+import { AppearanceSetting } from './components/appearance-setting';
 
 const appVersion = __APP_VERSION__;
 const coreVersion = __CORE_VERSION__;
@@ -84,6 +85,7 @@ export function SettingsPage() {
       </header>
 
       <div className="grid items-start gap-6 lg:grid-cols-12">
+        <AppearanceSetting />
         <Card className="lg:col-span-7">
           <CardHeader>
             <CardTitle role="heading" aria-level={2}>

@@ -63,7 +63,7 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
           <div key={index} className="coin-position flex flex-col items-center gap-1.5">
             <CoinFace value={faces[index] ?? 0} identityIndex={count === 4 ? index : undefined} />
             {count === 4 && (
-              <span className="text-xs text-neutral-600">{coinIdentities[index]?.label}</span>
+              <span className="text-xs text-muted-foreground">{coinIdentities[index]?.label}</span>
             )}
           </div>
         ))}

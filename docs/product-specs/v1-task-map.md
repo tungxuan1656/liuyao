@@ -148,18 +148,19 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F09 — Settings and diagnostics
 
-| Task    | Change                                                          | Evidence       |
-| ------- | --------------------------------------------------------------- | -------------- |
-| F09-T01 | Show web app version                                            | UI check       |
-| F09-T02 | Show `@liuyao/core` version                                     | UI check       |
-| F09-T03 | Show `@liuyao/knowledge` version                                | UI check       |
-| F09-T04 | Show ruleset ID                                                 | UI check       |
-| F09-T05 | Show online or offline state                                    | Browser check  |
-| F09-T06 | Show install state when the browser exposes it                  | Browser check  |
-| F09-T07 | Show update availability                                        | Update check   |
-| F09-T08 | Show fixed line and ruleset conventions                         | Content review |
-| F09-T09 | Link About, licensing, privacy, and security information        | Link audit     |
-| F09-T10 | Do not add account, sync, history, analytics, or cloud controls | Scope review   |
+| Task    | Change                                                          | Evidence                        |
+| ------- | --------------------------------------------------------------- | ------------------------------- |
+| F09-T01 | Show web app version                                            | UI check                        |
+| F09-T02 | Show `@liuyao/core` version                                     | UI check                        |
+| F09-T03 | Show `@liuyao/knowledge` version                                | UI check                        |
+| F09-T04 | Show ruleset ID                                                 | UI check                        |
+| F09-T05 | Show online or offline state                                    | Browser check                   |
+| F09-T06 | Show install state when the browser exposes it                  | Browser check                   |
+| F09-T07 | Show update availability                                        | Update check                    |
+| F09-T08 | Show fixed line and ruleset conventions                         | Content review                  |
+| F09-T09 | Link About, licensing, privacy, and security information        | Link audit                      |
+| F09-T10 | Do not add account, sync, history, analytics, or cloud controls | Scope review                    |
+| F09-T11 | Add a Light/Dark setting                                        | Browser, reload, offline checks |
 
 ## F10 — Offline hardening
 
