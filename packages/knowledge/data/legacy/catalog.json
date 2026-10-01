@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-08",
-        "name": "Thủy Địa Tỷ",
-        "aliases": [],
-        "explanation": "Quẻ số 8 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Khảm.",
-        "kingWenNumber": 8,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-09",
-        "name": "Phong Thiên Tiểu Súc",
-        "aliases": [],
-        "explanation": "Quẻ số 9 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Tốn.",
-        "kingWenNumber": 9,
-        "upperTrigramId": "trigram-wind",
-        "lowerTrigramId": "trigram-heaven",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-11",
-        "name": "Địa Thiên Thái",
-        "aliases": [],
-        "explanation": "Quẻ số 11 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Khôn.",
-        "kingWenNumber": 11,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-heaven",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-12",
-        "name": "Thiên Địa Bĩ",
-        "aliases": [],
-        "explanation": "Quẻ số 12 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Càn.",
-        "kingWenNumber": 12,
-        "upperTrigramId": "trigram-heaven",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-13",
         "name": "Thiên Hỏa Đồng Nhân",
         "aliases": [],

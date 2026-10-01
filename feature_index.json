@@ -213,6 +213,12 @@
       "title": "Reviewed knowledge batch two",
       "status": "done",
       "depends_on": ["feat-032"]
+    },
+    {
+      "id": "feat-034",
+      "title": "Reviewed knowledge batch three",
+      "status": "active",
+      "depends_on": ["feat-033"]
     }
   ]
 }

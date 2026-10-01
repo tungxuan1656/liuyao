@@ -12,7 +12,7 @@ import {
 
 describe('released book knowledge API', () => {
   it('exposes reviewed releases with stable IDs and attribution', () => {
-    expect(listBookRecords()).toHaveLength(84);
+    expect(listBookRecords()).toHaveLength(88);
     expect(listBookSources()).toHaveLength(4);
     expect(getBookSource('source-book-bpct')).toBe(listBookSources()[0]);
     for (const record of listBookRecords()) {
@@ -37,8 +37,9 @@ describe('released book knowledge API', () => {
     expect(qian.lines.map(line => line.position)).toEqual([1, 2, 3, 4, 5, 6]);
     expect(qian.specialPassages[0]?.title).toBe('Dụng cửu');
     expect(getBookRecord('hexagram-03')?.review.status).toBe('reviewed');
-    expect(getBookRecord('hexagram-08')).toBeUndefined();
-    expect(getHexagram('hexagram-08')).toBeDefined();
+    expect(getBookRecord('hexagram-08')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-13')).toBeUndefined();
+    expect(getHexagram('hexagram-13')).toBeDefined();
     expect(getHexagram('hexagram-01')?.explanation).toContain('Nguyễn Hiến Lê');
     expect(searchKnowledge('Bát Thuần Càn').some(hit => hit.record.id === 'hexagram-01')).toBe(
       true,

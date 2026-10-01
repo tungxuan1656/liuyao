@@ -6,6 +6,7 @@ import citations0 from '../data/citations/pilot.json' with { type: 'json' };
 import citations1 from '../data/citations/pilot-comparisons.json' with { type: 'json' };
 import citations2 from '../data/citations/batch-two-hexagrams.json' with { type: 'json' };
 import citations3 from '../data/citations/batch-two-advanced.json' with { type: 'json' };
+import citations4 from '../data/citations/batch-three-hexagrams.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -90,6 +91,10 @@ import record80 from '../data/terms/term-enemy-spirit.json' with { type: 'json' 
 import record81 from '../data/liuyao/useful-spirit-selection.json' with { type: 'json' };
 import record82 from '../data/liuyao/shi-ying-as-useful-spirit.json' with { type: 'json' };
 import record83 from '../data/liuyao/origin-adverse-and-enemy-spirits.json' with { type: 'json' };
+import record84 from '../data/hexagrams/hexagram-08.json' with { type: 'json' };
+import record85 from '../data/hexagrams/hexagram-09.json' with { type: 'json' };
+import record86 from '../data/hexagrams/hexagram-11.json' with { type: 'json' };
+import record87 from '../data/hexagrams/hexagram-12.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -175,12 +180,17 @@ export const BOOK_RECORDS = [
   record81,
   record82,
   record83,
+  record84,
+  record85,
+  record86,
+  record87,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
   ...citations1.citations,
   ...citations2.citations,
   ...citations3.citations,
+  ...citations4.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

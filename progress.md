@@ -777,3 +777,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: 84 released records, 303 cited claims, 202 locators; 8/64 quẻ and 48/384 positions in each of the three commentary books. Each group passed `./init.sh` with 263 tests, source fingerprints, generated-output freshness, and diff checks.
 - Blockers: none for this batch. Complete corpus review remains unfinished.
 - Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (Phi thần, Phục thần, Lục thú; PDF 68–69).
+
+## 2026-10-01 — feat-034 four-quẻ group
+
+- Status: active.
+- Result: Added Tỷ, Tiểu Súc, Thái, and Bĩ with three-book overviews and 24 positions. Preserved selected Trình Di/Chu Hy differences, source spelling variants, and seven visually checked source discrepancies. Removed the equivalent legacy records.
+- Coverage: 88 records, 401 claims, 297 locators; 12/64 quẻ and 72/384 positions in each commentary book. The remaining 52 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; supplied PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none.
+- Next: Commit this group, then finish BPCT chapter 5, sections 5–7 with related passages.
