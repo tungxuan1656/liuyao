@@ -16,6 +16,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-01 — feat-013 identity approvals and iOS install observation
+
+**State**: active; the approved identity decisions are recorded, but required naming research and a device safe-area fix remain.
+**Done**: Recorded approval of the supplied bagua mark/current wordmark treatment, current theme colors, and no-tagline decision. Recorded Product Owner waivers for the V1 editable vector master and social-sharing image without claiming either asset exists.
+**Evidence**: User reports installing and opening the PWA on a physical iOS device. The top blur obscures the title and buttons, and bottom safe spacing is insufficient. This is observed failure evidence, not a passed native install check. No code was changed in this docs-only update. Rights remain recorded as Product Owner project-use confirmation; creator is unidentified and no independent legal audit is claimed.
+**Blockers**: Fix and retest the iOS safe-area issue; complete outstanding name-conflict, domain-availability, and obvious trademark-risk research. Final terminology/copy review also remains tracked in `docs/product-specs/vietnamese-language.md`.
+**Next**: Fix the installed-PWA safe-area defect and retest title, controls, and bottom spacing; continue the required naming research before launch. The concurrent safe-area UI work remains with designer des-3.
+
+## 2026-10-01 — feat-013 safe-area implementation follow-up
+
+**State**: active; safe-area CSS changes are implemented, but native iOS retest and naming research remain.
+**Done**: Added viewport edge-to-edge support and top/bottom safe-area spacing for the app header, shell, and bottom sheet.
+**Evidence**: Browser safe-area simulation at 390×844 reported 59px top and 34px bottom insets. This does not verify rendering on physical iOS. The OS treatment remains a hypothesis, not a confirmed root cause. Full repository verification is recorded separately in this handoff.
+**Blockers**: Retest the installed PWA on physical iOS; complete name-conflict, domain-availability, and obvious trademark-risk research. Final terminology/copy review remains open.
+**Next**: Run `./init.sh`, publish the verified follow-up to PR #55, then retest the installed PWA and complete naming research. Keep feat-013 active.
+
 ## 2026-10-01 — feat-013 approved identity slice
 
 **State**: active; the approved product name, description, supplied bitmap identity, and icon/metadata implementation are in place. feat-013 remains incomplete.

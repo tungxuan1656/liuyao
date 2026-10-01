@@ -1,8 +1,28 @@
+:root {
+  --app-safe-area-top: env(safe-area-inset-top, 0px);
+  --app-safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+[data-app-header] {
+  padding-block-start: var(--app-safe-area-top);
+}
+
+[data-app-shell] {
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  padding-block-end: var(--app-safe-area-bottom);
+}
+
 .route-page {
   width: min(100%, 80rem);
   box-sizing: border-box;
   margin-inline: auto;
   padding: 1rem 1rem 1.5rem;
+}
+
+[data-slot='sheet-content'][data-side='bottom'] {
+  padding-block-end: var(--app-safe-area-bottom);
 }
 
 @media (min-width: 768px) {
