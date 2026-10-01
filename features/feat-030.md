@@ -51,8 +51,8 @@ A user can choose Light or Dark in Settings, and every route keeps that choice a
 
 ## Handoff
 
-- State: done; the original implementation is committed as `977c7c7`, and this branch includes the review fix.
+- State: done; PR #54 is open for review with the implementation and storage-failure review fix.
 - Evidence: see the Evidence section above.
 - Dependency check: feat-010 is done.
 - Limits: verification used Chromium only; physical-device rendering is unverified. The PWA manifest theme colors and the favicon stay Light-only identity assets and belong to the identity work. The theme module has no package-level test because app test files are not allowed by `docs/development.md`.
-- Next: No further work is planned for feat-030.
+- Next: Review PR #54.

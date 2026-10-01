@@ -668,3 +668,11 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: With writes to `liuyao-theme` forced to fail, selecting Tối applied Dark; after navigating Home and returning to Settings, Tối remained active and selected, with no page errors. `./init.sh` passed format, lint, typecheck, build, package exports, and package tests.
 
 **Next**: Commit the review fix.
+
+## 2026-10-01 — feat-030 PR handoff
+
+**State**: PR #54 is open against `main`.
+**Done**: Pushed `feat/030` with the theme implementation and storage-failure review fix.
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The pre-push hook passed typecheck and all package tests. Chromium review covered persistence, offline launch, responsive Settings, theme contrast, and storage-write failure.
+**Blockers**: None.
+**Next**: Review PR #54.
