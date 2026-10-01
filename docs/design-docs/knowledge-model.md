@@ -53,6 +53,112 @@ Do not maintain equivalent JSON and TypeScript records by hand.
 Schema changes and new package dependencies require selected implementation work.
 This assessment does not introduce a database or approve a file migration.
 
+## Proposed JSON corpus
+
+**Status: Proposed.** The requested user-facing corpus uses UTF-8 JSON as its sole authored content source.
+JSON Schema validates each collection before publication.
+Existing package lookup interfaces receive adapters during the selected migration.
+The proposed layout follows [Knowledge content](../product-specs/knowledge-content.md).
+
+```text
+packages/knowledge/data/
+  manifest.json             collection files, declared topics, schema version, and release selection
+  sources.json              works, supplied editions, fingerprints, and rights
+  citations/                edition-specific passage locators
+  terms/                    glossary records by topic
+  trigrams/                 eight entity records
+  hexagrams/                one record per hexagram, including six line entries
+  casting/                  casting explanations and reviewed examples
+  liuyao/                   foundational and advanced topic records
+  lessons/                  learning articles linked to existing claims
+```
+
+The directories are proposed collections, not scaffolded files.
+JSON replaces equivalent authored TypeScript content during migration.
+Generated runtime representations have a reproducible build path.
+Calculation-required data follows the ownership boundary above.
+
+### Record contract
+
+| Field           | Meaning                                                            |
+| --------------- | ------------------------------------------------------------------ |
+| `schemaVersion` | The selected collection schema version                             |
+| `id`            | A stable record ID, preserving current domain identities           |
+| `type`          | The collection-specific record type                                |
+| `title`         | The canonical Vietnamese display title                             |
+| `aliases`       | Reviewed Vietnamese search aliases                                 |
+| `topicIds`      | References to declared content topics                              |
+| `claims`        | Source-supported explanations and structural claims                |
+| `relatedIds`    | Explicit relationships to other records                            |
+| `review`        | Review status, evidence, date, and reviewer identity when reviewed |
+
+Type-specific schemas define trigram patterns, hexagram composition, six line entries, special passages, and rule categories.
+Calculation explanations identify their applicable ruleset.
+A substantive claim contains its own citation IDs.
+Interpretation claims also identify their attributed author or translator.
+Provenance for a record does not automatically support every claim inside it.
+The reviewed state of a record covers every included claim.
+If any included claim remains unresolved, the record cannot enter the released catalog as reviewed.
+
+The example below illustrates a draft rule record. It is not a released dataset entry.
+
+```json
+{
+  "schemaVersion": 1,
+  "id": "rule-line-position-order",
+  "type": "rule",
+  "title": "Thứ tự sáu hào",
+  "ruleset": "liuyao-standard-v1",
+  "category": "structure",
+  "aliases": [],
+  "topicIds": ["topic-casting"],
+  "claims": [
+    {
+      "id": "claim-line-order-bottom-to-top",
+      "kind": "structural-fact",
+      "text": "Sáu hào được lập từ dưới lên, từ hào sơ đến hào trên cùng.",
+      "citationIds": ["citation-bpct-ch1-x-p11"]
+    }
+  ],
+  "relatedIds": [],
+  "review": { "status": "draft" }
+}
+```
+
+### Citation contract
+
+Each citation identifies the source work and exact supplied edition.
+Its location includes chapter, section, PDF page range, and printed page range when available.
+Page numbers are one-based. Printed page labels can contain nonnumeric text.
+The source catalog's fingerprint binds page locators to the reviewed file.
+
+| Field                                                  | Meaning                                                          |
+| ------------------------------------------------------ | ---------------------------------------------------------------- |
+| `id`                                                   | Stable citation ID                                               |
+| `sourceId`                                             | Source work reference                                            |
+| `editionId`                                            | Fingerprinted edition reference                                  |
+| `location.chapter`                                     | Chapter title or number                                          |
+| `location.section`                                     | Section heading                                                  |
+| `location.pdfPageStart`, `location.pdfPageEnd`         | Exact source page range                                          |
+| `location.printedPageStart`, `location.printedPageEnd` | Printed labels when available                                    |
+| `textLayer`                                            | Original text, author commentary, translator note, or supplement |
+
+The user can read a formatted bibliographic citation offline.
+A PDF link is optional and requires an approved distribution path.
+Supplied local PDF paths are not production download links.
+
+### Validation and release
+
+Schema validation rejects invalid fields and unresolved identities.
+Corpus checks validate citation coverage, edition page bounds, collection completeness, and permitted review states.
+Source review establishes semantic fidelity and resolves textual discrepancies.
+The [knowledge quality](../product-specs/knowledge-quality.md) contract owns the evidence gate.
+
+Generate a coverage report from the authored records.
+Build the released catalog from manifest-selected reviewed content.
+Preserve readonly local lookup and search during the migration.
+Verify offline loading and content size when integrating the expanded corpus.
+
 ## V1 entities
 
 | Entity           | Owns                                                             |
