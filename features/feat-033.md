@@ -19,9 +19,9 @@ Automated interpretation, calendar behavior, UI changes, and complete corpus cer
 - [x] Pilot comparisons preserve author attribution, special passages, and exact edition locators.
 - [x] Four additional quẻ have source-reviewed structure and six cited line summaries.
 - [x] Advanced records preserve source conditions and remain descriptive knowledge.
-- [ ] Each content group has passage review, valid references, and a separate verified commit.
-- [ ] Coverage and the next batch reflect the released corpus.
-- [ ] `./init.sh`, fingerprint/freshness checks, and `git diff --check` pass.
+- [x] Each content group has passage review, valid references, and a separate verified commit.
+- [x] Coverage and the next batch reflect the released corpus.
+- [x] `./init.sh`, fingerprint/freshness checks, and `git diff --check` pass.
 
 ## Relevant docs
 
@@ -40,7 +40,8 @@ Execute inline under the approved content sequence and the user's continuation r
 
 ## Handoff
 
-- State: active.
-- Evidence: All content groups pass `./init.sh` with 263 tests and PDF fingerprint/freshness checks.
+- State: done.
+- Evidence: 84 records, 303 claims, 202 locators; 8/64 quẻ and 48/384 positions. All groups pass `./init.sh` with 263 tests and PDF fingerprint/freshness checks.
+- Commits: Pilot comparisons `e7f6fd6`; four quẻ `65d88fd`; advanced BPCT `fd5c011`.
 - Blockers: none.
-- Next: Reconcile documentation and record the handoff after committing the advanced group.
+- Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (PDF 68–69), as recorded in the manifest.

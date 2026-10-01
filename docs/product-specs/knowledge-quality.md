@@ -78,9 +78,9 @@ Package tests protect reusable behavior. [Development](../development.md) owns t
 
 ## Current gap
 
-**Observed:** The reviewed JSON pilot records edition fingerprints, claim citations, attribution, and source-comparison metadata.
+**Observed:** The reviewed JSON corpus records edition fingerprints, claim citations, attribution, and source-comparison metadata.
 The [coverage report](../../packages/knowledge/reports/coverage.json) distinguishes released content, missing commentary, and unaudited legacy records.
-Codex reviewed the cited pilot passages. Independent specialist approval is not claimed.
+Codex reviewed the cited passages in released batches. Independent specialist approval is not claimed.
 
 The compatibility catalog still provides 8 trigrams and 64 hexagrams.
 Unmigrated records remain explicitly unaudited in the JSON snapshot.

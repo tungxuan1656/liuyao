@@ -768,3 +768,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `65d88fd`.
 - Blockers: none.
 - Next: Commit this group, then reconcile canonical documentation and complete the feature handoff.
+
+## 2026-10-01 — feat-033 completed handoff
+
+- Status: done.
+- Result: Completed both selected content tracks. Reconciled content, model, quality, and source documents with the released corpus. Retained explicit incomplete coverage and linked the manifest's next batch.
+- Commits: Foundation `111929a`; pilot line comparisons `e7f6fd6`; Truân–Mông–Nhu–Sư `65d88fd`; advanced BPCT `fd5c011`.
+- Evidence: 84 released records, 303 cited claims, 202 locators; 8/64 quẻ and 48/384 positions in each of the three commentary books. Each group passed `./init.sh` with 263 tests, source fingerprints, generated-output freshness, and diff checks.
+- Blockers: none for this batch. Complete corpus review remains unfinished.
+- Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (Phi thần, Phục thần, Lục thú; PDF 68–69).

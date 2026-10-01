@@ -60,7 +60,7 @@ This implementation does not introduce a database.
 
 ## JSON corpus
 
-**Status: Implemented for the reviewed pilot.** JSON Schema validates each collection before publication.
+**Status: Implemented for released corpus batches.** JSON Schema validates each collection before publication.
 Existing lookup interfaces use a compatibility adapter.
 The collection layout follows [Knowledge content](../product-specs/knowledge-content.md).
 
@@ -77,8 +77,9 @@ packages/knowledge/data/
   lessons/                  learning articles linked to existing claims
 ```
 
-The pilot populates trigrams, hexagrams, terms, casting, and foundational Liu Yao records.
-Learning articles and advanced topics remain incomplete.
+Released batches populate trigrams, hexagrams, terms, casting, foundational Liu Yao, and selected advanced BPCT records.
+Full line commentary, learning articles, and advanced coverage remain incomplete.
+The [coverage report](../../packages/knowledge/reports/coverage.json) records current inventory and gaps.
 JSON replaces equivalent authored TypeScript content.
 Generated runtime imports follow the manifest.
 Calculation-required data follows the ownership boundary above.
