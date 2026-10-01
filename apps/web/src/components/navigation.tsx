@@ -58,9 +58,12 @@ export function Navigation() {
               className="inline-flex min-h-11 items-center gap-2"
               aria-label="Trang chủ Lục Hào"
             >
-              <span className="font-serif text-2xl" aria-hidden="true">
-                ☯
-              </span>
+              <img
+                src="/pwa-192x192.png"
+                alt=""
+                aria-hidden="true"
+                className="size-9 shrink-0 object-contain md:size-10"
+              />
               <span className="font-serif text-lg font-semibold">{mobileTitle}</span>
             </Link>
           )}
@@ -71,9 +74,12 @@ export function Navigation() {
           className="hidden items-center gap-2 text-foreground no-underline md:inline-flex"
           aria-label="Trang chủ Lục Hào"
         >
-          <span className="font-serif text-2xl" aria-hidden="true">
-            ☯
-          </span>
+          <img
+            src="/pwa-192x192.png"
+            alt=""
+            aria-hidden="true"
+            className="size-9 shrink-0 object-contain md:size-10"
+          />
           <span className="font-serif text-xl font-semibold">Lục Hào</span>
         </Link>
 

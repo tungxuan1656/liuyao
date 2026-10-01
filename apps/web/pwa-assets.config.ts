@@ -1,0 +1,25 @@
+import { defineConfig } from '@vite-pwa/assets-generator/config';
+
+export default defineConfig({
+  headLinkOptions: {
+    preset: '2023',
+  },
+  preset: {
+    transparent: {
+      sizes: [192, 512],
+      favicons: [[48, 'favicon.ico']],
+      padding: 0.05,
+    },
+    maskable: {
+      sizes: [512],
+      padding: 0.45,
+      resizeOptions: { fit: 'contain', background: 'white' },
+    },
+    apple: {
+      sizes: [180],
+      padding: 0.3,
+      resizeOptions: { fit: 'contain', background: 'white' },
+    },
+  },
+  images: ['public/luc-hao-icon-source.avif'],
+});
