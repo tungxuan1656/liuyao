@@ -16,7 +16,8 @@
     "citations/batch-five-advanced.json",
     "citations/batch-six-hexagrams.json",
     "citations/batch-six-advanced.json",
-    "citations/batch-seven-hexagrams.json"
+    "citations/batch-seven-hexagrams.json",
+    "citations/batch-seven-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -157,7 +158,13 @@
     "hexagrams/hexagram-25.json",
     "hexagrams/hexagram-26.json",
     "hexagrams/hexagram-27.json",
-    "hexagrams/hexagram-28.json"
+    "hexagrams/hexagram-28.json",
+    "terms/term-combination-meets-opposition.json",
+    "terms/term-opposition-meets-combination.json",
+    "terms/term-extinction-meets-generation.json",
+    "terms/term-control-meets-generation.json",
+    "liuyao/combination-opposition-turnarounds.json",
+    "liuyao/extinction-control-support.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -298,7 +305,13 @@
     "hexagram-25",
     "hexagram-26",
     "hexagram-27",
-    "hexagram-28"
+    "hexagram-28",
+    "term-combination-meets-opposition",
+    "term-opposition-meets-combination",
+    "term-extinction-meets-generation",
+    "term-control-meets-generation",
+    "article-combination-opposition-turnarounds",
+    "article-extinction-control-support"
   ],
   "topics": [
     {
@@ -360,6 +373,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-29", "hexagram-30", "hexagram-31", "hexagram-32"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Khảm, Ly, Hàm, Hằng. BPCT Chương 5, mục 15–16 (PDF 72–73) là phần còn lại của đợt này. Hai mươi tám quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Khảm, Ly, Hàm, Hằng và BPCT Chương 5, mục 17–18: Tiến thần / Thoái thần, Quẻ nghiệm và không nghiệm (PDF 73). Hai mươi tám quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–16 có các thuật ngữ và diễn giải được chọn. Những câu mơ hồ, ví dụ mâu thuẫn và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

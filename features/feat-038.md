@@ -19,10 +19,10 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 ## Acceptance
 
 - [x] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
-- [ ] Advanced records preserve source conditions and textual layers.
-- [ ] Each released claim has complete passage review and an exact edition citation.
-- [ ] Content groups have separate verified commits.
-- [ ] Coverage and manifest identify remaining gaps and the next batch.
+- [x] Advanced records preserve source conditions and textual layers.
+- [x] Each released claim has complete passage review and an exact edition citation.
+- [x] Content groups have separate verified commits.
+- [x] Coverage and manifest identify remaining gaps and the next batch.
 - [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
 
 ## Relevant docs
@@ -35,17 +35,17 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 
 1. Review complete classical passages, footnotes, diagrams, and source errors. Done.
 2. Author four quẻ, migrate legacy records, verify, and commit. Done.
-3. Review related BPCT passages, author conditional records, verify, and commit.
+3. Review related BPCT passages, author conditional records, verify, and commit. Done.
 4. Reconcile source documentation, verify, and commit the handoff.
 
 ## Evidence
 
-Classical batch: 139 records, 867 claims, 707 citations.
+Released corpus: 145 records, 885 claims, 716 citations.
 `./init.sh` passed (263 tests). Fingerprints, freshness, and diff checks passed.
-All 195 NHL citations have verified printed labels.
+All 195 NHL and nine new BPCT citations have verified printed labels.
 
 ## Handoff
 
 - State: active.
 - Blockers: none.
-- Next: Review BPCT sections 15–16 and their conditional context.
+- Next: Reconcile source documentation and verify the handoff.

@@ -15,6 +15,7 @@ import citations9 from '../data/citations/batch-five-advanced.json' with { type:
 import citations10 from '../data/citations/batch-six-hexagrams.json' with { type: 'json' };
 import citations11 from '../data/citations/batch-six-advanced.json' with { type: 'json' };
 import citations12 from '../data/citations/batch-seven-hexagrams.json' with { type: 'json' };
+import citations13 from '../data/citations/batch-seven-advanced.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -154,6 +155,12 @@ import record135 from '../data/hexagrams/hexagram-25.json' with { type: 'json' }
 import record136 from '../data/hexagrams/hexagram-26.json' with { type: 'json' };
 import record137 from '../data/hexagrams/hexagram-27.json' with { type: 'json' };
 import record138 from '../data/hexagrams/hexagram-28.json' with { type: 'json' };
+import record139 from '../data/terms/term-combination-meets-opposition.json' with { type: 'json' };
+import record140 from '../data/terms/term-opposition-meets-combination.json' with { type: 'json' };
+import record141 from '../data/terms/term-extinction-meets-generation.json' with { type: 'json' };
+import record142 from '../data/terms/term-control-meets-generation.json' with { type: 'json' };
+import record143 from '../data/liuyao/combination-opposition-turnarounds.json' with { type: 'json' };
+import record144 from '../data/liuyao/extinction-control-support.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -294,6 +301,12 @@ export const BOOK_RECORDS = [
   record136,
   record137,
   record138,
+  record139,
+  record140,
+  record141,
+  record142,
+  record143,
+  record144,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -309,6 +322,7 @@ export const BOOK_CITATIONS = [
   ...citations10.citations,
   ...citations11.citations,
   ...citations12.citations,
+  ...citations13.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

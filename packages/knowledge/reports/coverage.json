@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 139, "released": 139, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 867, "missingCitationIds": [] },
-  "citations": { "total": 707 },
+  "records": { "authored": 145, "released": 145, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 885, "missingCitationIds": [] },
+  "citations": { "total": 716 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 28,
@@ -336,7 +336,13 @@
         "term-resting-confined",
         "term-combination-control",
         "article-seasonal-strength-context",
-        "article-combination-control-context"
+        "article-combination-control-context",
+        "term-combination-meets-opposition",
+        "term-opposition-meets-combination",
+        "term-extinction-meets-generation",
+        "term-control-meets-generation",
+        "article-combination-opposition-turnarounds",
+        "article-extinction-control-support"
       ]
     },
     {
@@ -994,6 +1000,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-29", "hexagram-30", "hexagram-31", "hexagram-32"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Khảm, Ly, Hàm, Hằng. BPCT Chương 5, mục 15–16 (PDF 72–73) là phần còn lại của đợt này. Hai mươi tám quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Khảm, Ly, Hàm, Hằng và BPCT Chương 5, mục 17–18: Tiến thần / Thoái thần, Quẻ nghiệm và không nghiệm (PDF 73). Hai mươi tám quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–16 có các thuật ngữ và diễn giải được chọn. Những câu mơ hồ, ví dụ mâu thuẫn và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
