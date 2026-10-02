@@ -20,9 +20,9 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 - [x] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
 - [x] Advanced records preserve source conditions and textual layers.
 - [x] Each released claim has complete passage review and an exact edition citation.
-- [ ] Content groups have separate verified commits.
-- [ ] Coverage and manifest identify remaining gaps and the next batch.
-- [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
+- [x] Content groups have separate verified commits.
+- [x] Coverage and manifest identify remaining gaps and the next batch.
+- [x] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
 
 ## Relevant docs
 
@@ -37,16 +37,11 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 3. Review related BPCT passages, author conditional records, verify, and commit.
 4. Reconcile source documentation, verify, and commit the handoff.
 
-## Verification
-
-- Baseline, classical, and advanced `./init.sh`: pass; 263 tests.
-- Current corpus: 161 records, 1,111 claims, 916 citations.
-- Four quẻ add 100 claims, 96 citations, and seven resolved source discrepancies.
-- Advanced: four new records and moving-line context add 16 claims and eight citations.
-- Fingerprints, generated freshness, diff checks, all 251 NHL citations, and eight new BPCT printed locators: pass.
-
 ## Handoff
 
-- State: active.
-- Blockers: none.
-- Next: Reconcile source locations, discrepancies, exclusions, and the final handoff.
+- State: done.
+- Result: Eight new records and moving-line context add 116 claims and 104 citations. Seven source discrepancies have supported resolutions. Final review tightened seven classical summaries and one advanced condition.
+- Verification: `./init.sh` passed 263 tests. Fingerprints, generated freshness, 112 local documentation routes, and diff checks passed. Checked 251 NHL citations across 120 pages and eight new BPCT printed locators.
+- Commits: Classical `ea12e18`; BPCT `1610f8b`.
+- Blockers: none for selected content. Full coverage and independent specialist approval remain incomplete.
+- Next: Review the [manifest's next batch](../packages/knowledge/data/manifest.json).

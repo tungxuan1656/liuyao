@@ -78,6 +78,11 @@ Review covers NHL PDF 224–235, PBC PDF 294–328, and NTT PDF 483–533.
 It includes complete passages, six positions, available footnotes, rendered headings, diagrams, and discrepancy pages.
 Trình Di and Chu Hy retain separate readings, including Khảm's fourth and fifth lines and Hàm's third and fifth lines.
 
+The [batch-nine classical citations](../../packages/knowledge/data/citations/batch-nine-hexagrams.json) locate Độn, Đại Tráng, Tấn, and Minh Di.
+Review covers NHL PDF 236–247, PBC PDF 329–357, and NTT PDF 534–582, including the blank PDF 557.
+It includes complete passages, six positions, available footnotes, rendered headings, diagrams, and discrepancy pages.
+PBC endnotes 19–20 at PDF 655 were also read; their historical stories do not become verified history claims.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -132,6 +137,13 @@ cover BPCT chapter 5, sections 17–18, PDF 73–74 (printed 61–62).
 Related review covers chapter 6, sentence 52, PDF 92–93 (printed 78–79), and question 10, PDF 388–389 (printed 341–342).
 The records retain the affected spirit's role, strength, timing conditions, and the actual relationship of a person asking for another.
 Section 18's religious explanation remains attributed doctrine, without an empirical accuracy claim or application ritual requirement.
+
+The [balance, support, and Sinh/Vượng citations](../../packages/knowledge/data/citations/batch-nine-advanced.json)
+cover BPCT chapter 6, sentences 1–6, PDF 77–79 (printed 63–65).
+Related review includes casting at PDF 11–12, the stage list at PDF 16–17, Tứ sinh at PDF 70, and Vĩnh Cao's Ghi chú at PDF 403.
+Sentence 1 adds evidence and attributed context to the existing moving-line record.
+The new articles retain excess/deficiency, affected spirit, support strength, and sentence 6's Nhật thần scope.
+They distinguish author commentary from translator notes without adding a calendar, scoring, or prediction algorithm.
 
 NHL printed footer labels were checked on every page used by its released citations.
 The labels match the PDF numbers for those locations; the citation collections now include both.
@@ -243,6 +255,19 @@ Khảm keeps the conditions of its fifth-line no-error statement explicit.
 [Hàm](../../packages/knowledge/data/hexagrams/hexagram-31.json) preserves different following directions at line three and different limits on influence at line five.
 Hằng retains different readings of trinh in its first and third lines.
 
+The [Độn](../../packages/knowledge/data/hexagrams/hexagram-33.json),
+[Đại Tráng](../../packages/knowledge/data/hexagrams/hexagram-34.json),
+[Tấn](../../packages/knowledge/data/hexagrams/hexagram-35.json), and
+[Minh Di](../../packages/knowledge/data/hexagrams/hexagram-36.json) records own seven further source-discrepancy resolutions.
+They concern a missing negation, two line labels, a duplicated Chinese verb, a Vietnamese word, an added negation, and a reading mismatch.
+Rendered passages and the three commentaries support the selected meanings; the NHL Minh Di resolution does not rewrite its author's interpretation.
+
+Độn preserves the two readings of tiểu and the different aims of its second-line binding image.
+Đại Tráng retains each author's reading of dụng võng and the conditions of centrality versus correctness.
+Tấn preserves internal self-correction versus action within a private domain at its final line.
+Minh Di keeps Trình Di's adverse fourth-line reading and Chu Hy's expressly tentative alternative.
+Its second line separates NHL's recovery-then-strength reading from interpretations of rescue with a strong horse.
+
 The [Phản ngâm article](../../packages/knowledge/data/liuyao/reverse-chant-context.json)
 owns the Cấn naming resolution on BPCT PDF 71.
 The mountain examples and chapter 1 palace list support Cấn–Khôn despite the inconsistent Càn/Cần names in that paragraph.
@@ -276,6 +301,21 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
   NHL PDF 230 marks reference (1), whose content was not located during this review; it supports no released claim.
 - Khảm's captivity and Ly's military and punishment images retain their historical setting.
   Hàm and Hằng's gender-role images do not establish fixed modern roles or qualities.
+
+- Độn's month association differs between NHL PDF 236 and PBC PDF 329 / NTT PDF 535.
+  This batch does not derive a calendar conversion from those associations.
+  NTT PDF 538 starts its first-line explanation without an author label; the summary uses the explicit Trình Di passage at PDF 539.
+- NHL PDF 240 attributes its restrained reading of dụng võng to Chu Hy, unlike the daring reading in NTT PDF 552.
+  The underlying edition used by NHL remains unidentified; the records preserve the readings without reconstructing that edition.
+- Tấn's second and fifth lines are both yin.
+  Their shared central virtues do not establish an opposite-polarity formal response pair.
+  Its first-line patience preserves Trình Di's not-yet-appointed condition, rather than excusing neglect of an accepted duty.
+- NTT PDF 575 says con người khỏe mạnh beside the horse image.
+  The selected Minh Di summary retains effective rescue without deciding whether that wording is a typo or an image substitution.
+  Trình Di's fourth-line passage calls the fifth line the ruler; later passages assign the dark ruler to the final line.
+  These are contextual roles, not a universal position-to-ruler rule.
+- Độn's dependent-household roles, Tấn's rewards and punishment, and Minh Di's hunger, injury, and campaigns retain their historical setting.
+  They do not establish modern gender roles, medical treatment, fasting requirements, or instructions to harm others.
 
 ### Advanced exclusions
 
@@ -324,7 +364,7 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
 - BPCT PDF 73, section 16, places Tuyệt at the day beside hóa Tuyệt in its negative Thổ sentence.
   The attributed article preserves that wording and its adverse condition without deriving a complete priority table for day, month, and transformation.
 - BPCT PDF 78, sentence 4, calls Hợi–Mão–Mùi a Thủy cục; chapter 1, PDF 16, identifies it as Mộc.
-  This batch uses only the Dụng/Kỵ support distinction, not that paragraph's entire củng/hợp inventory.
+  The [support/control article](../../packages/knowledge/data/liuyao/support-and-control-context.json) retains the role distinction and selected examples, without importing the wrong element or a complete table.
 - Questions 12–13 contain illness outcomes and timing claims, including conflicting timing in the PDF 400 example.
   This batch selects support conditions and role distinctions, not medical predictions or evidence that the reported outcomes occurred.
 - Vĩnh Cao's footnote 9 at PDF 399 disputes the main text's Dụng thần selection for a letter.
@@ -339,6 +379,20 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
   The following inserted essay lacks clear author attribution and does not support released claims.
   The [proxy-context article](../../packages/knowledge/data/liuyao/divination-context-and-proxy-role.json) keeps religious and repetition judgments attributed.
   These judgments do not become an accuracy guarantee, user filter, ritual requirement, or recasting restriction.
+
+- BPCT PDF 77 illustrates change with three Giao becoming three Đơn, named Khôn and Càn.
+  The [moving-line record](../../packages/knowledge/data/casting/moving-lines.json) preserves the three-line versus six-line distinction established by chapter 1.
+  The example does not replace a complete six-line transformation rule.
+- BPCT PDF 78, sentence 3, has unclear negation in its older definition of a weak Dụng thần.
+  The [balance article](../../packages/knowledge/data/liuyao/balance-excess-and-deficiency.json) retains the critique of a narrow reading without reconstructing that sentence's exact condition.
+  Vĩnh Cao's footnote about seasonal authority remains a separate translator claim.
+- BPCT PDF 78 lists seven Phù and seven Củng examples.
+  Tuất-to-Sửu is absent from Phù and Sửu-to-Tuất from Củng; no complete table is inferred or equated with Tiến/Thoái.
+- Sentence 5's main commentary retains Hình while Vĩnh Cao's Ghi chú at PDF 403 rejects Tam Hình and Lục Hại.
+  The support/control article preserves both layers without treating either author's efficacy assertion as empirical validation.
+- Sentence 6's Sinh/Vượng explanation concerns Nhật thần, expressly excluding biến hào for that sentence.
+  The [day-context article](../../packages/knowledge/data/liuyao/growth-and-peak-day-context.json) keeps this scope and relative pace, without an exact forecast date.
+  The [Đế Vượng term](../../packages/knowledge/data/terms/term-peak-stage.json) adds a stage definition and the reviewed Fire-at-Ngọ example, not a complete twelve-stage branch table.
 
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
 They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.

@@ -906,3 +906,13 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Coverage: 153 records, 995 cited claims, 812 locators. Classical coverage is 32/64 quẻ and 192/384 positions per commentary book. Thirty-two quẻ retain unaudited compatibility content.
 - Blockers: none for selected claims. The missing Tiến entry, ambiguous attribution, unlocated reference, and reported outcomes remain outside released authority. Full coverage and independent specialist approval remain incomplete.
 - Next: Review Độn, Đại Tráng, Tấn, Minh Di and BPCT chapter 6, sentences 1–6 (PDF 77–79).
+
+## 2026-10-02 — feat-040 completed source audit and handoff
+
+- Status: done.
+- Result: Added Độn, Đại Tráng, Tấn, Minh Di and four BPCT records; extended moving-line evidence. Preserved distinct readings, seven source-discrepancy resolutions, conditional support, and Nhật thần scope. Tightened seven classical summaries and one advanced condition. Reconciled source locations and exclusions.
+- Commits: Classical `ea12e18`; BPCT `1610f8b`.
+- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 112 documentation routes, and diff checks passed. Checked 251 NHL citations across 120 pages and eight new BPCT printed locators.
+- Coverage: 161 records, 1,111 cited claims, 916 locators. Classical coverage is 36/64 quẻ and 216/384 positions per commentary book. Twenty-eight quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Unclear wording, incomplete tables, reported outcomes, full coverage, and independent specialist approval remain excluded or incomplete.
+- Next: Review Gia Nhân, Khuê, Kiển, Giải and BPCT chapter 6, sentences 7–11 (PDF 79–81).
