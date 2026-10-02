@@ -8,6 +8,9 @@ build/
 .vite/
 dev-dist/
 
+# Temporary PWA icon-generator input
+apps/web/public/luc-hao-icon-source.avif
+
 # Testing & Coverage
 coverage/
 *.lcov

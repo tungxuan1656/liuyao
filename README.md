@@ -1,8 +1,8 @@
-# LiuYao
+# Lục Hào
 
 [![CI](https://github.com/tungxuan1656/liuyao/actions/workflows/ci.yml/badge.svg)](https://github.com/tungxuan1656/liuyao/actions/workflows/ci.yml)
 
-LiuYao is an offline-first web application for **Lục Hào (Liu Yao / Six Lines)** divination and structured I Ching reference knowledge.
+Lập quẻ, tra cứu và lưu kết quả Lục Hào ngay trên thiết bị của bạn.
 
 > **Status:** early development. The repository currently provides the monorepo foundation, PWA shell, minimal deterministic line logic, and knowledge-package scaffolding. It is not yet a complete divination application.
 

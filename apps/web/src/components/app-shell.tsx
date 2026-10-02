@@ -15,7 +15,7 @@ export function AppShell({ children }: AppShellProps) {
   }, [pathname]);
 
   return (
-    <div className="flex min-h-dvh flex-col bg-muted/30">
+    <div data-app-shell className="flex min-h-dvh flex-col bg-muted/30">
       <Navigation />
       <div className="min-w-0 flex-1">{children}</div>
     </div>

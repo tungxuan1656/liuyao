@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logo Lục Hào — bản xem trước</title>
+    <style>
+      @font-face {
+        font-family: 'Noto Serif Preview';
+        src: url('../../../apps/web/public/fonts/noto-serif-vietnamese.woff2') format('woff2');
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+      }
+
+      :root {
+        color-scheme: light;
+        --page: oklch(0.97 0 0);
+        --surface: oklch(1 0 0);
+        --ink: oklch(0.08 0 0);
+        --muted: oklch(0.48 0 0);
+        --line: oklch(0.88 0 0);
+        --dark-surface: oklch(0.217329 0.010728 229.509796);
+        --dark-ink: oklch(0.942695 0.009146 161.345231);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font:
+          16px/1.55 system-ui,
+          sans-serif;
+      }
+
+      main {
+        width: min(100% - 40px, 1000px);
+        margin: 0 auto;
+        padding: 44px 0 64px;
+      }
+
+      h1,
+      h2,
+      .wordmark {
+        font-family: 'Noto Serif Preview', Georgia, serif;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3.3rem);
+        line-height: 1.12;
+        font-weight: 600;
+      }
+      h2 {
+        margin: 0;
+        font-size: 1.45rem;
+        line-height: 1.25;
+        font-weight: 600;
+      }
+      p {
+        margin: 0;
+      }
+
+      .intro {
+        max-width: 690px;
+        margin-bottom: 38px;
+      }
+      .intro p {
+        max-width: 620px;
+        margin-top: 14px;
+        color: var(--muted);
+      }
+      .section {
+        margin-top: 36px;
+      }
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 14px;
+      }
+      .section-heading p,
+      .caption {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .theme-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .theme-panel {
+        min-height: 208px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .theme-panel.dark {
+        border-color: oklch(0.391358 0.017461 213.24355);
+        background: var(--dark-surface);
+        color: var(--dark-ink);
+      }
+      .theme-panel.dark .lockup img {
+        background: white;
+      }
+      .panel-label {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .dark .panel-label {
+        color: oklch(0.798942 0.016372 176.957403);
+      }
+      .lockup {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .lockup img {
+        display: block;
+        width: 64px;
+        height: 64px;
+      }
+      .wordmark {
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        font-weight: 600;
+        letter-spacing: -0.035em;
+      }
+
+      .favicon-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .favicon-sample {
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+      .favicon-sample.dark {
+        border-color: oklch(0.391358 0.017461 213.24355);
+        background: var(--dark-surface);
+        color: var(--dark-ink);
+      }
+      .favicon-sample.dark .browser-tab img {
+        background: white;
+      }
+      .browser-tab {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        min-height: 48px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+      .dark .browser-tab {
+        border-color: oklch(0.391358 0.017461 213.24355);
+        background: oklch(0.262114 0.012678 222.552524);
+      }
+      .browser-tab img {
+        display: block;
+        flex: 0 0 auto;
+      }
+      .browser-tab .tab-name {
+        overflow: hidden;
+        color: var(--muted);
+        font-size: 0.83rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .caption {
+        margin-top: 12px;
+      }
+
+      .pwa-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .pwa-sample {
+        display: grid;
+        justify-items: center;
+        gap: 12px;
+        padding: 20px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+      .pwa-sample.dark {
+        border-color: oklch(0.391358 0.017461 213.24355);
+        background: var(--dark-surface);
+        color: var(--dark-ink);
+      }
+      .artboard {
+        position: relative;
+        display: grid;
+        width: min(100%, 192px);
+        aspect-ratio: 1;
+        place-items: center;
+        overflow: hidden;
+        background: var(--surface);
+      }
+      .dark .artboard {
+        background: oklch(0.262114 0.012678 222.552524);
+      }
+      .artboard > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .safe-area {
+        position: absolute;
+        width: 80%;
+        aspect-ratio: 1;
+        border: 1px dashed oklch(0.48 0 0 / 65%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .dark .safe-area {
+        border-color: oklch(0.8 0 0 / 70%);
+      }
+      .pwa-label {
+        text-align: center;
+      }
+      .pwa-label strong {
+        display: block;
+        font-weight: 600;
+      }
+      .pwa-label span {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .dark .pwa-label span {
+        color: oklch(0.798942 0.016372 176.957403);
+      }
+
+      .notes {
+        margin-top: 36px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .notes p + p {
+        margin-top: 8px;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: min(100% - 28px, 1000px);
+          padding-top: 30px;
+        }
+        .theme-grid,
+        .favicon-grid,
+        .pwa-grid {
+          grid-template-columns: 1fr;
+        }
+        .theme-panel {
+          min-height: 176px;
+        }
+        .section-heading {
+          display: block;
+        }
+        .section-heading p {
+          margin-top: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="intro">
+        <h1>Biểu tượng Lục Hào</h1>
+        <p>Lập quẻ, tra cứu và lưu kết quả Lục Hào ngay trên thiết bị của bạn.</p>
+      </header>
+
+      <section aria-labelledby="wordmark-heading">
+        <div class="section-heading">
+          <h2 id="wordmark-heading">Dấu và wordmark</h2>
+          <p>Ảnh gốc của Product Owner · giữ nguyên cả bát quái</p>
+        </div>
+        <div class="theme-grid">
+          <div class="theme-panel">
+            <span class="panel-label">Giao diện sáng</span>
+            <div class="lockup">
+              <img src="../../../apps/web/public/pwa-192x192.png" alt="" />
+              <span class="wordmark">Lục Hào</span>
+            </div>
+          </div>
+          <div class="theme-panel dark">
+            <span class="panel-label">Giao diện tối · dùng nguyên ảnh gốc</span>
+            <div class="lockup">
+              <img src="../../../apps/web/public/pwa-192x192.png" alt="" />
+              <span class="wordmark">Lục Hào</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="favicon-heading">
+        <div class="section-heading">
+          <h2 id="favicon-heading">Thử ở kích thước favicon</h2>
+          <p>Chỉ dùng dấu, không thu nhỏ wordmark</p>
+        </div>
+        <div class="favicon-grid">
+          <div class="favicon-sample">
+            <div class="browser-tab">
+              <img src="../../../apps/web/public/favicon.ico" width="16" height="16" alt="" />
+              <span class="tab-name">Lục Hào</span>
+            </div>
+            <p class="caption">16 × 16 px · nền sáng</p>
+          </div>
+          <div class="favicon-sample dark">
+            <div class="browser-tab">
+              <img src="../../../apps/web/public/favicon.ico" width="32" height="32" alt="" />
+              <span class="tab-name">Lục Hào</span>
+            </div>
+            <p class="caption">32 × 32 px · nền tối</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="pwa-heading">
+        <div class="section-heading">
+          <h2 id="pwa-heading">Thử vùng an toàn PWA</h2>
+          <p>So sánh biểu tượng thường, maskable và Apple touch</p>
+        </div>
+        <div class="pwa-grid">
+          <div class="pwa-sample">
+            <div class="artboard">
+              <img src="../../../apps/web/public/pwa-192x192.png" alt="" />
+            </div>
+            <p class="pwa-label"><strong>192 × 192 px</strong><span>biểu tượng PWA</span></p>
+          </div>
+          <div class="pwa-sample dark">
+            <div class="artboard">
+              <img src="../../../apps/web/public/pwa-512x512.png" alt="" />
+            </div>
+            <p class="pwa-label"><strong>512 × 512 px</strong><span>biểu tượng PWA</span></p>
+          </div>
+          <div class="pwa-sample">
+            <div class="artboard">
+              <img src="../../../apps/web/public/maskable-icon-512x512.png" alt="" />
+              <span class="safe-area" aria-hidden="true"></span>
+            </div>
+            <p class="pwa-label">
+              <strong>512 × 512 px</strong><span>maskable · vòng nét đứt là vùng an toàn 80%</span>
+            </p>
+          </div>
+          <div class="pwa-sample dark">
+            <div class="artboard">
+              <img src="../../../apps/web/public/apple-touch-icon-180x180.png" alt="" />
+            </div>
+            <p class="pwa-label"><strong>180 × 180 px</strong><span>Apple touch</span></p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="notes">
+        <p>
+          Đây là bản xem trước bộ biểu tượng xuất từ ảnh nguồn được chọn, không phải social sharing
+          image. Tagline chưa được chọn.
+        </p>
+        <p>
+          Ảnh nguồn được giữ nguyên, gồm cả bát quái; các biểu tượng chỉ thêm khoảng đệm để phù hợp
+          kích thước. Quyền sử dụng do Product Owner xác nhận, chưa phải kiểm toán pháp lý độc lập.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
