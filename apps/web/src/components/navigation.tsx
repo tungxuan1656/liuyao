@@ -65,7 +65,7 @@ export function Navigation() {
                 src="/pwa-192x192.png"
                 alt=""
                 aria-hidden="true"
-                className="size-9 shrink-0 object-contain md:size-10"
+                className="size-9 shrink-0 rounded-full object-contain md:size-10"
               />
               <span className="font-serif text-lg font-semibold">{mobileTitle}</span>
             </Link>
@@ -81,7 +81,7 @@ export function Navigation() {
             src="/pwa-192x192.png"
             alt=""
             aria-hidden="true"
-            className="size-9 shrink-0 object-contain md:size-10"
+            className="size-9 shrink-0 rounded-full object-contain md:size-10"
           />
           <span className="font-serif text-xl font-semibold">Lục Hào</span>
         </Link>
