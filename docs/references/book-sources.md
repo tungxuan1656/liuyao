@@ -61,6 +61,13 @@ cover Tùy, Cổ, Lâm, and Quán: NHL PDF 188–199, PBC PDF 197–228, and NTT
 Review includes complete passages, all six positions, footnotes, and rendered headings and discrepancy pages.
 The Quan display name remains stable; Quán and the supplied spelling variants are search aliases.
 
+The [batch-six classical citations](../../packages/knowledge/data/citations/batch-six-hexagrams.json) locate Phệ Hạp, Bí, Bác, and Phục.
+Review covers NHL PDF 200–211, PBC PDF 229–260, and NTT PDF 382–431.
+
+Review includes complete passages, six positions, footnotes, and rendered headings and discrepancy pages.
+Related evidence includes NHL chapter 5, PDF 94, and PBC endnote 18, PDF 655.
+Ngô Tất Tố's selected footnote citations remain separate from Trình Di and Chu Hy commentary.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -89,6 +96,17 @@ Phản ngâm records distinguish directional examples from line-branch oppositio
 All 14 listed Phục ngâm pairs were checked against Na Jia: changed Càn/Chấn halves preserve branches but change stems.
 The records retain Dụng, Thế, and Ứng conditions; they do not certify the reported outcomes.
 The ambiguous statements listed below remain outside released rules.
+
+The [seasonal-strength and combination/control citations](../../packages/knowledge/data/citations/batch-six-advanced.json)
+cover BPCT chapter 5, sections 13–14, PDF 72 (printed 60).
+Related passages include chapter 1, VI, PDF 10 (printed 4), and chapter 5, section 8, PDF 70 (printed 58).
+Chapter 6, PDF 85 and 87 (printed 71 and 73), cross-checks support, seasonal groups, and Hình/Hợp conditions.
+
+Vĩnh Cao's footnote 5 at PDF 85 explains the four season-end months.
+Review also covers part II, question 14, PDF 401–403 (printed 354–356).
+Its critical Ghi chú at PDF 403 remains a separate translator opinion.
+
+The records preserve conditions and the Thân-to-Tị exception without activating a calendar or classifier.
 
 NHL printed footer labels were checked on every page used by its released citations.
 The labels match the PDF numbers for those locations; the citation collections now include both.
@@ -160,6 +178,20 @@ Selected differences remain attributed: Tùy's final ritual image, Cổ's trigra
 Quán preserves differences in ritual purpose and who observes whom at the fifth line.
 Chu Hy's uncertainty at Lâm's second line remains explicit.
 
+The [Phệ Hạp](../../packages/knowledge/data/hexagrams/hexagram-21.json),
+[Bí](../../packages/knowledge/data/hexagrams/hexagram-22.json),
+[Bác](../../packages/knowledge/data/hexagrams/hexagram-23.json), and
+[Phục](../../packages/knowledge/data/hexagrams/hexagram-24.json) records own nine further source-error resolutions.
+These concern a line's polarity, trigram order and name, a quẻ name, copied Tượng text, humility, and footnote glyphs.
+
+NHL PDF 94 and NTT PDF 420 also call the first-yin quẻ Cấn where related passages identify Cấu.
+The resolutions use complete passages and rendered pages.
+Erroneous names do not become aliases.
+
+Selected differences remain attributed: Phệ Hạp's gold/arrow image, Bí's fourth and fifth lines, and Phục's timing and fourth line.
+Punishment and gender-role images retain their historical setting.
+The selected Phục summaries distinguish traditional text readings from a date-conversion or prediction algorithm.
+
 The [Phản ngâm article](../../packages/knowledge/data/liuyao/reverse-chant-context.json)
 owns the Cấn naming resolution on BPCT PDF 71.
 The mountain examples and chapter 1 palace list support Cấn–Khôn despite the inconsistent Càn/Cần names in that paragraph.
@@ -167,6 +199,15 @@ The mountain examples and chapter 1 palace list support Cấn–Khôn despite th
 The [Tứ sinh](../../packages/knowledge/data/terms/term-four-birthplaces.json) and
 [Trường Sinh](../../packages/knowledge/data/terms/term-growth-stage.json) records own two stage-list resolutions.
 The complete chapter 1 list and chapter 5 summary support the selected stage names and birthplaces.
+
+### Classical exclusions
+
+- Phệ Hạp's second-line explanations use ứng for the fifth line, although both positions are yin.
+  NTT PDF 391 explicitly says the fifth line has no response.
+  The selected second-line summaries do not turn that wording into a formal response-pair rule.
+- NHL PDF 209 gives a sequence around the seven-day phrase that differs from the explicit Cấu-to-Phục sequence at PDF 94.
+  The selected summary uses PDF 94 for that sequence.
+  The content of PDF 209's reference (1) was not located during this review and does not support a released timing claim.
 
 ### Advanced exclusions
 
@@ -202,6 +243,16 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
 - BPCT PDF 377, question 6, uses Phản ngâm in one sentence within its Phục ngâm answer.
   The released article uses the unambiguous statements and role-specific conditions around that sentence.
   It does not rely on the mixed label or silently replace it.
+
+- BPCT PDF 72, section 13, groups Hưu/Tù elements without assigning the two states separately.
+  The records preserve those groups and omit an inferred complete five-state table.
+- BPCT PDF 72, section 14, gives conditional alternatives for interpreting combination and control.
+  It does not resolve every mixed-support case.
+  The records do not infer a complete Boolean classifier.
+  Its three/seven wording supplies no probability calculation and does not become a forecast percentage.
+- BPCT PDF 72 uses Tam hình in the Thân-to-Tị exception, while Vĩnh Cao's Ghi chú at PDF 403 rejects Tam hình/Lục hại.
+  The [combination/control article](../../packages/knowledge/data/liuyao/combination-control-context.json) preserves both textual layers without combining them into one rule.
+  No exhaustive Tam hình table or outcome classifier is released.
 
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
 They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.
