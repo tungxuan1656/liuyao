@@ -9,6 +9,7 @@ Expand the next selected classical and Liu Yao groups with reviewed source evide
 - Add Đồng Nhân, Đại Hữu, Khiêm, and Dự with three-book overviews and all six line positions.
 - Add BPCT chapter 5, sections 8–10: Tứ sinh, Nguyệt phá, and Tuần không.
 - Resolve supported source errors and preserve author differences or explicit exclusions.
+- Audit existing citation metadata and repair stale knowledge documentation.
 
 ## Non-goals
 
@@ -19,9 +20,9 @@ Automated interpretation, calendar calculations, UI changes, and complete corpus
 - [x] Four quẻ preserve stable IDs, reviewed structures, source spelling variants, and attributed line summaries.
 - [x] Advanced records preserve source conditions and distinguish author text from translator notes.
 - [x] Each released claim has passage review and an exact supplied-edition citation.
-- [ ] Each content group has a separate verified commit.
-- [ ] Coverage and the manifest identify remaining gaps and the next exact batch.
-- [ ] `./init.sh`, PDF fingerprint/freshness checks, and `git diff --check` pass.
+- [x] Each content group has a separate verified commit.
+- [x] Coverage and the manifest identify remaining gaps and the next exact batch.
+- [x] `./init.sh`, PDF fingerprint/freshness checks, and `git diff --check` pass.
 
 ## Relevant docs
 
@@ -40,7 +41,8 @@ Continue the approved JSON design and batch sequence with an inline plan.
 
 ## Handoff
 
-- State: active.
-- Evidence: Both content groups passed `./init.sh` (263 tests), PDF fingerprints, generated-output freshness, and diff checks. Four-quẻ commit: `be42a75`.
-- Blockers: none.
-- Next: Commit the advanced group, reconcile source locations and documentation, then record the handoff.
+- State: done.
+- Result: Both selected groups released. Added printed labels to 84 existing NHL citations; checked all 109 NHL citations. Repaired stale validator documentation and cross-checked Tuần Không against chapter 6.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 51 local documentation targets, and diff checks passed. Content commits: `be42a75`, `b964a5d`.
+- Blockers: none for this batch. Ambiguous source examples remain excluded in the source document.
+- Next: Review Tùy, Cổ, Lâm, Quán and BPCT chapter 5, sections 11–12 (Phản ngâm, Phục ngâm; PDF 70–71).

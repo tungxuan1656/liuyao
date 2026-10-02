@@ -51,6 +51,11 @@ This inventory records focused V1 review. It does not claim a complete review of
 | Truân, Mông, Nhu, and Sư              | `NHL`, PDF 142–152, 157–159. `PBC`, PDF 73–99, 110–118. `NTT`, PDF 155–195, 209–221.        | Overviews and all six positions reviewed. The JSON records preserve selected author readings and their exact locators. |
 | Tỷ, Tiểu Súc, Thái, and Bĩ            | `NHL`, PDF 160–165, 169–175. `PBC`, PDF 119–134, 142–162, 655. `NTT`, PDF 222–247, 259–283. | Complete passages, footnotes, headings, and diagrams reviewed. Selected interpretations remain attributed.             |
 
+The [batch-four classical citations](../../packages/knowledge/data/citations/batch-four-hexagrams.json)
+cover Đồng Nhân, Đại Hữu, Khiêm, and Dự: NHL PDF 176–187, PBC PDF 163–196, and NTT PDF 284–332.
+Review includes complete passages, six positions, footnotes, and rendered headings and diagrams.
+Selected Ngô Tất Tố notes remain separate from Trình Di and Chu Hy commentary.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -61,6 +66,19 @@ records chapter 5, sections 5–7, PDF 68–69 (printed 56–57).
 Related evidence includes chapter 1, XIV, PDF 15; chapter 4, PDF 49–50; and chapter 6 commentary, PDF 98–99.
 The records separate source definitions, worked examples, and conditional interpretation.
 The exclusions below keep ambiguous wording outside released claims.
+
+The [Tứ sinh, Nguyệt phá, and Tuần không citations](../../packages/knowledge/data/citations/batch-four-advanced.json)
+cover chapter 5, sections 8–10, PDF 70 (printed 58).
+Related definitions appear in chapter 1, XVII, PDF 16–17 (printed 10–11),
+and chapter 2, XVIII–XIX, PDF 41 (printed 34).
+Vĩnh Cao's notes on PDF 68 and PDF 462 (printed 370) support the definition of trị nhật.
+Chapter 6 commentary at PDF 83, 85, and 90 (printed 69, 71, and 76) cross-checks the selected Tuần Không conditions.
+Review preserves compound conditions and the distinction between a line's effect and a favorable outcome.
+These records describe doctrine; calendar calculations remain outside their scope.
+
+NHL printed footer labels were checked on every page used by its released citations.
+The labels match the PDF numbers for those locations; the citation collections now include both.
+That correspondence does not establish page labels for other editions or uncited NHL pages.
 
 The three Chu Dịch commentaries support classical meanings.
 Their explanations do not automatically establish Na Jia, palace, or interpretation rules.
@@ -106,6 +124,21 @@ The selected comparisons preserve different readings of Tiểu Súc's first two 
 Thái's fifth line retains uncertainty about historical identity and different uses of its marriage image.
 These interpretations do not become fixed calculation rules.
 
+The [Đồng Nhân](../../packages/knowledge/data/hexagrams/hexagram-13.json),
+[Đại Hữu](../../packages/knowledge/data/hexagrams/hexagram-14.json), and
+[Dự](../../packages/knowledge/data/hexagrams/hexagram-16.json) records own six further resolutions.
+They concern missing negation, an inner trigram, a response polarity, a line tally, and two upper-trigram labels.
+Complete passages and rendered pages support the selected structures and meanings.
+
+Distinct readings remain attributed, including Đồng Nhân's fourth and fifth lines,
+Đại Hữu's third and fourth lines, Khiêm's final line, and Dự's third line.
+The [Khiêm record](../../packages/knowledge/data/hexagrams/hexagram-15.json) keeps Trình Di's self-discipline image
+separate from Chu Hy's local military reading.
+
+The [Tứ sinh](../../packages/knowledge/data/terms/term-four-birthplaces.json) and
+[Trường Sinh](../../packages/knowledge/data/terms/term-growth-stage.json) records own two stage-list resolutions.
+The complete chapter 1 list and chapter 5 summary support the selected stage names and birthplaces.
+
 ### Advanced exclusions
 
 - BPCT PDF 68, Phi thần type 2, says “năm loại Lục thú”.
@@ -118,6 +151,16 @@ These interpretations do not become fixed calculation rules.
 - BPCT PDF 69 ends with language about many favorable or adverse spirits.
   PDF 98–99 gives priority to Lục thân and sinh khắc.
   The released comparisons retain that context and do not turn names into a count-based score.
+- BPCT PDF 70 says Ngọ has Lâm Quan at Ngọ and calls this Thoái thần.
+  Chapter 1, PDF 16, places Fire's Lâm Quan at Tị; chapter 5, section 17, PDF 73, lists Ngọ changing to Tị as Thoái.
+  The wording on PDF 70 remains unclear. The selected article omits that example.
+- BPCT PDF 70, footnote 7, calls Dần điền thực for a Thân line broken in a Dần month.
+  The matching-day notes on PDF 68 and 462 require the same branch as the line being considered.
+  The released article retains the author's general conditions but omits this contradictory timing example.
+- BPCT PDF 16 places Fire's Tử at Tị, while PDF 70 places it at Dậu.
+  Only the selected Sinh, Mộ, and Tuyệt associations are imported; a complete twelve-stage branch table needs separate review.
+- BPCT PDF 41 names Kinh Trập in the Mão row but Vũ Thủy in its following calendar explanation.
+  The released definition uses branch opposition only. It does not import a date-conversion or solar-term boundary rule.
 
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
 They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.

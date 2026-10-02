@@ -822,3 +822,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. Four-quẻ group committed as `be42a75`.
 - Blockers: none for selected claims. Excluded passages need clearer evidence before publication.
 - Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-035 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks. Added printed locators to 84 NHL citations across three batches and checked all 109 NHL citations against 59 footer labels. Reconciled source locations and exclusions, added chapter 6 cross-checks for Tuần Không, and corrected stale model and directory documentation. Content and quality contracts remain accurate.
+- Commits: Four quẻ `be42a75`; Tứ sinh, Nguyệt phá, and Tuần không `b964a5d`.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 51 local documentation targets, and diff checks passed. Coverage remains incomplete: 117 records, 548 claims, 411 locators; 16/64 quẻ and 96/384 positions in each commentary book.
+- Blockers: none for this batch. Ambiguous and contradictory source examples remain explicitly excluded; no independent specialist approval is claimed.
+- Next: Review Tùy, Cổ, Lâm, Quán and BPCT chapter 5, sections 11–12 (Phản ngâm, Phục ngâm; PDF 70–71).

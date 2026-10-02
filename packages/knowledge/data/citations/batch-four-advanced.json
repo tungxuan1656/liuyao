@@ -146,6 +146,51 @@
       },
       "textLayer": "translator-note",
       "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch6-empty-support",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 6 — Tổng đoán Hoàng Kim Sách",
+        "section": "19–20 — Không có sinh trợ, động và xung",
+        "pdfPageStart": 83,
+        "pdfPageEnd": 83,
+        "printedPageStart": "69",
+        "printedPageEnd": "69"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch6-empty-strength",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 6 — Tổng đoán Hoàng Kim Sách",
+        "section": "26–27 — Vượng tướng và được trợ",
+        "pdfPageStart": 85,
+        "pdfPageEnd": 85,
+        "printedPageStart": "71",
+        "printedPageEnd": "71"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch6-moving-empty",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 6 — Tổng đoán Hoàng Kim Sách",
+        "section": "44 — Hào động lâm Không hoặc biến Không",
+        "pdfPageStart": 90,
+        "pdfPageEnd": 90,
+        "printedPageStart": "76",
+        "printedPageEnd": "76"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
     }
   ]
 }
