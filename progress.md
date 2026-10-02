@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-02 — feat-013 iOS header mitigation
+
+**State**: active; mitigation is implemented and browser-checked, but no native iOS fix is claimed.
+**Done**: Made the opaque app header sticky at the top with a deliberate local stacking context. Added Apple's standalone-capable and default status-bar metadata as a legacy compatibility choice, not a proposed cure. Preserved the dynamic HTML theme color and light initial/manifest color.
+**Evidence**: Apple Safari HTML Reference documents that `apple-mobile-web-app-status-bar-style` applies to capable web apps, and that `default` leaves web content below the status bar (https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html). Librarian research found no authoritative guaranteed blur mechanism; opaque sticky/header coverage is the best user-corroborated experiment. Agent-browser checks at 390×844 and 1440×900 confirmed the sticky header remains at viewport top after scrolling, has a fully opaque theme-matched background in light/dark mode, and updates the dynamic `theme-color` meta value. On mobile, home, direct casting, Library navigation, and cancel-confirmation dialog were usable; Dialog remains above the header with its focus/modal behavior. The app has no modal navigation drawer. `./init.sh` passed format, lint (0 errors; four existing Fast Refresh warnings), typecheck, build, package exports, test-placement checks, 44 knowledge tests, and 181 core tests. Existing font-resolution, sourcemap, and chunk-size build warnings remain. `git diff --check` passed. Physical iOS behavior, including the reported persistent gradient blur, remains unverified; normal scroll and top overscroll recurrence are explicit native retest cases.
+**Blockers**: Native iOS installed-PWA retest, including top overscroll, and outstanding name-conflict, domain-availability, and obvious trademark-risk research; final terminology/copy review remains open.
+**Next**: Ask the Product Owner to retest the installed PWA on physical iOS with normal scroll and top overscroll, then inspect header controls and bottom spacing. Keep feat-013 active and do not publish from this lane.
+
 ## 2026-10-01 — feat-013 identity approvals and iOS install observation
 
 **State**: active; the approved identity decisions are recorded, but required naming research and a device safe-area fix remain.

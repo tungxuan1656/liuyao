@@ -36,7 +36,7 @@ export function Navigation() {
           : 'Lục Hào';
 
   return (
-    <header data-app-header className="border-b bg-background">
+    <header data-app-header className="sticky top-0 z-20 isolate border-b bg-background">
       <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <div className="flex min-w-0 items-center gap-2 md:hidden">
           {mobileParent ? (
