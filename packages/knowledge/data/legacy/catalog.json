@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-25",
-        "name": "Thiên Lôi Vô Vọng",
-        "aliases": [],
-        "explanation": "Quẻ số 25 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Càn.",
-        "kingWenNumber": 25,
-        "upperTrigramId": "trigram-heaven",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-26",
-        "name": "Sơn Thiên Đại Súc",
-        "aliases": [],
-        "explanation": "Quẻ số 26 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Cấn.",
-        "kingWenNumber": 26,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-heaven",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-27",
-        "name": "Sơn Lôi Di",
-        "aliases": [],
-        "explanation": "Quẻ số 27 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Cấn.",
-        "kingWenNumber": 27,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-28",
-        "name": "Trạch Phong Đại Quá",
-        "aliases": [],
-        "explanation": "Quẻ số 28 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Đoài.",
-        "kingWenNumber": 28,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-29",
         "name": "Thuần Khảm",
         "aliases": [],

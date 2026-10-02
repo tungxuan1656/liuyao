@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-25",
+  "type": "hexagram",
+  "title": "Thiên Lôi Vô Vọng",
+  "aliases": ["Vô Vọng", "Vô Võng", "Thiên Lôi Vô Võng"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-25-structure",
+      "kind": "structural-fact",
+      "text": "Thiên Lôi Vô Vọng có ngoại quái Càn và nội quái Chấn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q25-overview-nhl",
+        "citation-pbc-q25-overview-pbc",
+        "citation-ntt-q25-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-25-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giảng Vô Vọng theo việc hợp lẽ chính, không làm càn từ tư ý. Ông xem hai hào giữa có đức trung chính là nền của lời hanh; hành động sai đường thì không nên đi.",
+      "citationIds": ["citation-nhl-q25-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-25-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu dùng tên Vô Võng và nhấn mạnh làm việc theo lẽ tự nhiên, đương nhiên, không xen tư dục. Đại Tượng nuôi vật theo mùa được ông đọc trong nghĩa thuận thời ấy.",
+      "citationIds": ["citation-pbc-q25-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-25-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đọc Vô Vọng theo lòng thành thực và đường chính. Khi đã ở trạng thái không càn, đi thêm thành quá mức là càn; điều này khác việc hành động đúng ở hào đầu.",
+      "citationIds": ["citation-ntt-q25-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-25-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải lợi về đường chính và chỉ ngăn sự đi không chính đáng. Ông giữ điều kiện này trong lời quẻ, thay vì coi mọi bước tiến đều trái nghĩa không càn.",
+      "citationIds": ["citation-ntt-q25-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-thunder", "trigram-heaven"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yin", "yang", "yang", "yang"],
+    "kingWenNumber": 25,
+    "upperTrigramId": "trigram-heaven",
+    "lowerTrigramId": "trigram-thunder",
+    "claimIds": ["hexagram-25-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-25-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào đầu dương ở nội quái là có bản chất thành thực. Đi theo điều đúng từ nền ấy thì tốt, không phải mọi hành động đều được lời tốt.",
+          "citationIds": ["citation-nhl-q25-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-25-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào đầu giữ lòng thực và hành động theo chính lý. Lời tốt thuộc sự đi đúng với Vô Vọng, không khuyến khích bước đi từ ý riêng.",
+          "citationIds": ["citation-pbc-q25-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-25-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào đầu cương thực, lấy lòng thành theo lý mà làm. Khởi sự trong điều kiện ấy khác đi thêm quá mức khi đã ở trong trạng thái không càn.",
+          "citationIds": ["citation-ntt-q25-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-25-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hào hai theo việc làm điều phải mà không tính trước lợi thu về. Hình ảnh cày và gặt nói cách đặt lòng khi làm việc, không hứa được mùa mà không lao động.",
+          "citationIds": ["citation-nhl-q25-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-25-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai làm việc hợp lẽ mà không mưu phần được từ trước. Thuận lý để làm là điều kiện của sự đi có lợi, không phải bỏ công việc cần làm.",
+          "citationIds": ["citation-pbc-q25-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-25-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc hào hai theo việc không khơi việc từ tư ý mà làm theo sự lý đã tới lúc. Ông vẫn cho phép sáng tạo hợp thời, không bắt mọi việc phải chờ người khác khởi đầu.",
+          "citationIds": ["citation-ntt-q25-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-25-line-2-tran-tiem-that",
+          "kind": "author-interpretation",
+          "text": "Trong Lời bàn của Tiên Nho, Trần Tiềm Thất phản biện các cách Trình Di giải cày, gặt vì ông thấy chúng không nhất quán. Giữ lời phản biện theo người được dẫn, không gán thành quan điểm của Ngô Tất Tố.",
+          "citationIds": ["citation-ntt-q25-line-2-tran-tiem-that"],
+          "attribution": {
+            "author": "Trần Tiềm Thất",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-25-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê dùng chuyện người khác được bò còn người trong làng chịu vạ để giảng tai họa không do mình gây. Vị hào thiếu trung chính là cách ông lý giải trong quẻ, không là bằng chứng người bị vạ đã làm sai.",
+          "citationIds": ["citation-nhl-q25-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-25-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc việc mất bò và người ấp chịu vạ theo tai họa bất ngờ dù không làm càn. Hình ảnh giữ trong hoàn cảnh lời hào, không xác định ai có tội trong một sự việc thực tế.",
+          "citationIds": ["citation-pbc-q25-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-25-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy chuyện được và mất bò để bàn sự được mất từ lòng mong riêng: lợi ở phía này kéo theo tổn ở phía khác. Ông đặt trọng tâm ở quan hệ được mất, khác cách nhấn mạnh người vô can chịu vạ.",
+          "citationIds": ["citation-ntt-q25-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-25-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc hào ba theo tai vạ không do làm càn, liên hệ vị hào chưa đúng với sự bị hỏi xét oan. Cách đọc này giữ riêng với trọng tâm được mất của Trình Di.",
+          "citationIds": ["citation-ntt-q25-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-25-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào bốn không có chính ứng, nên giữ điều đúng đã có. Bền với chính lý giúp tránh lỗi, không phải cố chấp với mọi lựa chọn cũ.",
+          "citationIds": ["citation-nhl-q25-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-25-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào bốn giữ vững chính đạo của mình, không chạy theo cầu ứng bên ngoài. Không lỗi phụ thuộc sự tự giữ ấy trong thời Vô Vọng.",
+          "citationIds": ["citation-pbc-q25-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-25-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào bốn theo việc bền với điều vốn có ở mình. Dương ở vị mềm có thể hạn chế sự quá cứng; đây là cách đọc riêng của lời hào.",
+          "citationIds": ["citation-ntt-q25-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-25-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc bệnh và thuốc ở hào năm như hình ảnh tai họa của người đã giữ đúng, không cần chạy chọt thêm. Cách đọc này thuộc lời giảng đạo lý cổ của tác giả.",
+          "citationIds": ["citation-nhl-q25-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Bệnh và thuốc là hình ảnh của chú giải cổ, không dùng làm khuyến cáo chẩn đoán, ngừng thuốc hoặc điều trị bệnh hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-25-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu dùng hình ảnh bệnh không do lỗi để nói sự can thiệp từ tư ý có thể làm lệch trạng thái vốn chính. Ông mở rộng sang hoàn cảnh bị nạn của người giữ đạo trong chú giải cổ.",
+          "citationIds": ["citation-pbc-q25-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Bệnh và thuốc là hình ảnh của chú giải cổ, không dùng làm khuyến cáo chẩn đoán, ngừng thuốc hoặc điều trị bệnh hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-25-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc thuốc theo phép ví sửa điều tà và nuôi điều chính. Với trạng thái đã không càn, thêm sự sửa không cần thiết lại thành càn trong cách giảng đạo lý này.",
+          "citationIds": ["citation-ntt-q25-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Bệnh và thuốc là hình ảnh của chú giải cổ, không dùng làm khuyến cáo chẩn đoán, ngừng thuốc hoặc điều trị bệnh hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-25-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào cuối đã tới chỗ cùng mà còn đi là quá thời, nên mắc tai họa. Biết thời để dừng là trọng tâm, không phải càng thành thực càng phải tiến.",
+          "citationIds": ["citation-nhl-q25-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-25-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào cuối ở thời không còn thích hợp để làm thêm. Hành động quá chỗ sẽ thành càn, dù phẩm chất ban đầu vẫn thuộc quẻ Vô Vọng.",
+          "citationIds": ["citation-pbc-q25-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-25-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào cuối không còn lý để đi thêm; đã cực mà vẫn đi thì mất nghĩa không càn. Lời bất lợi thuộc thời điểm và hành động ấy.",
+          "citationIds": ["citation-ntt-q25-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-vo-vong-second-label",
+      "status": "resolved",
+      "description": "NTT PDF 434 phần Chu Hy gọi hào ứng của hào năm là Chín Hai, khác hào Sáu Hai trong chính quẻ.",
+      "citationIds": [
+        "citation-ntt-q25-line-2-ntt",
+        "citation-ntt-q25-overview-chu-hy",
+        "citation-nhl-q25-overview-nhl",
+        "citation-pbc-q25-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 434 xác nhận chữ Chín. Tiêu đề hào hai, hình quẻ và ba phần cấu trúc đều cho hào hai âm; giữ Lục nhị và không đổi quan hệ hào hai với hào năm."
+    },
+    {
+      "id": "discrepancy-ntt-vo-vong-second-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 438 dòng Hán đầu hào hai dùng chữ phu thay chữ lục, nhưng dịch âm và dịch nghĩa đều gọi Lục Nhị.",
+      "citationIds": [
+        "citation-ntt-q25-line-2-ntt",
+        "citation-nhl-q25-line-2-nhl",
+        "citation-pbc-q25-line-2-pbc"
+      ],
+      "resolution": "Ảnh PDF 438 xác nhận chữ chép khác. Giữ nhãn Lục nhị theo hình quẻ, bản dịch và hai sách khác; không dùng chữ sai làm loại hào mới."
+    },
+    {
+      "id": "discrepancy-ntt-vo-vong-fifth-repeated-text",
+      "status": "resolved",
+      "description": "NTT PDF 442 dưới Lời kinh hào năm chép lại Tượng của hào bốn, khác dịch âm và dịch nghĩa về bệnh không do càn.",
+      "citationIds": [
+        "citation-ntt-q25-line-4-ntt",
+        "citation-ntt-q25-line-5-ntt",
+        "citation-nhl-q25-line-5-nhl",
+        "citation-pbc-q25-line-5-pbc"
+      ],
+      "resolution": "Ảnh PDF 442 xác nhận phần chép lặp. Bản dịch và Trình Di tiếp theo cùng bàn hình ảnh bệnh, khớp hai sách khác; giữ nghĩa của hào năm từ các phần ấy, không gán lời bốn cho hào năm."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q25-overview-nhl",
+      "citation-pbc-q25-overview-pbc",
+      "citation-ntt-q25-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-q25-overview-chu-hy",
+      "citation-nhl-q25-line-1-nhl",
+      "citation-pbc-q25-line-1-pbc",
+      "citation-ntt-q25-line-1-ntt",
+      "citation-nhl-q25-line-2-nhl",
+      "citation-pbc-q25-line-2-pbc",
+      "citation-ntt-q25-line-2-ntt",
+      "citation-ntt-q25-line-2-tran-tiem-that",
+      "citation-nhl-q25-line-3-nhl",
+      "citation-pbc-q25-line-3-pbc",
+      "citation-ntt-q25-line-3-ntt",
+      "citation-ntt-q25-line-3-chu-hy",
+      "citation-nhl-q25-line-4-nhl",
+      "citation-pbc-q25-line-4-pbc",
+      "citation-ntt-q25-line-4-ntt",
+      "citation-nhl-q25-line-5-nhl",
+      "citation-pbc-q25-line-5-pbc",
+      "citation-ntt-q25-line-5-ntt",
+      "citation-nhl-q25-line-6-nhl",
+      "citation-pbc-q25-line-6-pbc",
+      "citation-ntt-q25-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Các cách đọc được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo."
+  }
+}

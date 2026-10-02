@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-27",
+  "type": "hexagram",
+  "title": "Sơn Lôi Di",
+  "aliases": ["Di"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-27-structure",
+      "kind": "structural-fact",
+      "text": "Sơn Lôi Di có ngoại quái Cấn và nội quái Chấn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q27-overview-nhl",
+        "citation-pbc-q27-overview-pbc",
+        "citation-ntt-q27-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-27-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giảng Di là nuôi thân thể, tinh thần và chăm lo người khác. Cách nuôi phải chính đáng; cẩn thận lời nói và có chừng mực trong ăn uống là lời dạy dưỡng thân của chú giải cổ.",
+      "citationIds": ["citation-nhl-q27-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là quan điểm dưỡng thân, dưỡng đức trong sách cổ, không là chế độ dinh dưỡng hoặc phương pháp điều trị hiện đại."
+      ]
+    },
+    {
+      "id": "hexagram-27-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu phân biệt nuôi phần thân với nuôi đạo đức, tinh thần, đồng thời xét nuôi mình và nuôi người. Ông đặt chính đạo làm điều kiện, không đánh giá cách nuôi chỉ theo phần hưởng vật chất.",
+      "citationIds": ["citation-pbc-q27-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là quan điểm dưỡng thân, dưỡng đức trong sách cổ, không là chế độ dinh dưỡng hoặc phương pháp điều trị hiện đại."
+      ]
+    },
+    {
+      "id": "hexagram-27-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di mở rộng Di từ hình tượng cằm miệng sang nuôi đời sống, hình hài, đạo đức và người khác. Tự nuôi hay được nuôi đều cần theo chính đạo trong cách giảng của ông.",
+      "citationIds": ["citation-ntt-q27-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-thunder", "trigram-mountain"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yin", "yin", "yin", "yang"],
+    "kingWenNumber": 27,
+    "upperTrigramId": "trigram-mountain",
+    "lowerTrigramId": "trigram-thunder",
+    "claimIds": ["hexagram-27-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-27-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc rùa thiêng theo phần quý của tinh thần ở mình. Bỏ nó để thèm phần hưởng của người khác là sự mất bản lĩnh trong phép ví hào đầu.",
+          "citationIds": ["citation-nhl-q27-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-27-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu dùng rùa thiêng làm hình ảnh trí sáng tự nuôi, còn trễ cằm theo ham muốn bên ngoài. Hào đầu có tài mà để tư dục thắng thì tài ấy không còn đáng quý.",
+          "citationIds": ["citation-pbc-q27-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-27-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào đầu vốn có tài sáng đủ tự giữ nhưng động lòng với hào bốn, rồi đánh mất bản lĩnh. Chuyện rùa thiêng là phép ví của lời giảng, không khẳng định đặc tính sinh học của rùa.",
+          "citationIds": ["citation-ntt-q27-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-27-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào hai không tự nuôi, tìm hào đầu ở dưới thì đảo cách nuôi, tìm hào trên lại không có ứng. Đức trung chính không tự bảo đảm kết quả tốt trong hoàn cảnh quẻ Di này.",
+          "citationIds": ["citation-nhl-q27-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-27-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu phân biệt hai đường cầu nuôi của hào hai: xuống hào đầu là đảo lẽ thường, lên hào trên không có quan hệ ứng nên đi lại xấu. Ông đọc kết quả theo thời Di, không dùng đắc trung chính như lời tốt cố định.",
+          "citationIds": ["citation-pbc-q27-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-27-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào hai cầu nuôi ở đầu thì điên đảo, ở hào trên thì không đúng quan hệ ứng. Lời xấu thuộc hai cách cầu ấy trong mô hình nuôi của quẻ.",
+          "citationIds": ["citation-ntt-q27-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-27-line-2-ho-song-ho",
+          "kind": "author-interpretation",
+          "text": "Trong Lời bàn của Tiên Nho, Hồ Song Hồ giải sự khác nhau giữa hào hai và các hào bốn, năm bằng thể động và thể tĩnh. Giữ cách giải theo người được dẫn, không coi mọi lời điên đảo, trái thường đều cùng một kết quả.",
+          "citationIds": ["citation-ntt-q27-line-2-ho-song-ho"],
+          "attribution": {
+            "author": "Hồ Song Hồ",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-27-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào ba ở chỗ không trung chính, lại động quá nên tìm nuôi sai đường. Mười năm mang nghĩa cùng chót, không là hạn dự báo đúng mười năm.",
+          "citationIds": ["citation-nhl-q27-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-27-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba chạy theo chỗ có phần ăn, trái đạo nuôi chính. Ông đọc số mười theo sự cùng của số, không giới hạn lời răn trong một thời gian lịch mười năm.",
+          "citationIds": ["citation-pbc-q27-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-27-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào ba thiếu trung chính mà động cực, cách nuôi trái lý nên không có lợi. Mười năm biểu thị tới cùng vẫn không dùng cách ấy trong lời răn.",
+          "citationIds": ["citation-ntt-q27-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-27-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào bốn ở trên nhờ tài hào đầu để nuôi dân, khác cầu nuôi riêng thân. Biết hạ mình và cầu người có đức một cách tập trung, liên tục là điều kiện của lời tốt.",
+          "citationIds": ["citation-nhl-q27-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-27-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào bốn cầu tài đức của hào đầu để gánh trách nhiệm nuôi người. Hình ảnh hổ nói sự chuyên tâm và lòng cầu liên tục; đây là cách đọc khác việc cầu khẩu phúc ở hào hai.",
+          "citationIds": ["citation-pbc-q27-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-27-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào bốn nhờ người hiền ở dưới để việc nuôi thiên hạ không bị bỏ. Ông đọc hổ theo việc giữ uy nghiêm của người ở trên, đồng thời cần người giúp nối tiếp để công việc không đứt quãng.",
+          "citationIds": ["citation-ntt-q27-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-27-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc hổ ở hào bốn theo việc hạ mình cầu người giúp một cách chuyên nhất và có kế tiếp. Cách đọc này khác nhấn mạnh uy nghiêm trong lời Trình Di.",
+          "citationIds": ["citation-ntt-q27-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-27-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào năm có trách nhiệm nuôi người nhưng phải nhờ hào trên có tài. Giữ chính và tin người hiền thì tốt, song sức mình chưa đủ làm việc gian hiểm.",
+          "citationIds": ["citation-nhl-q27-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-27-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào năm nhờ người có đạo đức để nuôi cả thiên hạ, khác cầu nuôi chỉ cho mình. Cần tin bền người hiền; lời không vượt sông lớn giữ giới hạn sức khi gặp biến cố.",
+          "citationIds": ["citation-pbc-q27-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-27-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào năm ở người có ngôi nhưng chưa đủ tài, phải dốc lòng nhờ người hiền hào trên. Sự nhờ ấy giúp giữ lúc bình thường, chưa khiến bản thân đủ sức trước gian hiểm.",
+          "citationIds": ["citation-ntt-q27-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-27-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào trên là người có tài giúp hào năm nuôi dân. Trách nhiệm lớn cần luôn dè dặt mới tốt; sức gánh việc hiểm của người giúp khác giới hạn ở hào năm.",
+          "citationIds": ["citation-nhl-q27-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-27-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào trên ở người gánh việc nuôi thiên hạ thay người có ngôi. Càng trọng trách càng phải lo nguy và đem tài giải khó, không xem đó là chỗ chỉ hưởng yên.",
+          "citationIds": ["citation-pbc-q27-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-27-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào trên có tài cương, được hào năm tin cậy để nuôi thiên hạ. Lo sợ trách nhiệm và dốc sức giúp vượt nguy là điều kiện của lời tốt và lợi vượt sông lớn.",
+          "citationIds": ["citation-ntt-q27-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-di-footnote-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 470 chú thích 1 gọi chữ quan là Di, trong khi lời quẻ và tiêu đề dùng chữ Di.",
+      "citationIds": [
+        "citation-ntt-q27-footnote-glyph-ngo",
+        "citation-ntt-q27-overview-ntt",
+        "citation-nhl-q27-overview-nhl",
+        "citation-pbc-q27-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 470 xác nhận chữ quan trong chú thích. Giữ tên Di và nghĩa nuôi từ lời quẻ cùng chú giải, không nhập chữ bị gọi nhầm làm một tên quẻ khác."
+    },
+    {
+      "id": "discrepancy-ntt-di-final-danger-word",
+      "status": "resolved",
+      "description": "NTT PDF 470 bản dịch Tượng hào cuối viết ngu, khác chữ lệ trong dịch âm và lời giảng lo sợ nguy.",
+      "citationIds": [
+        "citation-ntt-q27-line-6-ntt",
+        "citation-nhl-q27-line-6-nhl",
+        "citation-pbc-q27-line-6-pbc"
+      ],
+      "resolution": "Ảnh PDF 470 xác nhận chữ ngu. Lời hào, dịch âm và Trình Di đều giữ nghĩa nguy và dè dặt; tóm tắt dùng nghĩa ấy, không gán sự ngu dốt cho hào trên."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q27-overview-nhl",
+      "citation-pbc-q27-overview-pbc",
+      "citation-ntt-q27-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q27-line-1-nhl",
+      "citation-pbc-q27-line-1-pbc",
+      "citation-ntt-q27-line-1-ntt",
+      "citation-nhl-q27-line-2-nhl",
+      "citation-pbc-q27-line-2-pbc",
+      "citation-ntt-q27-line-2-ntt",
+      "citation-ntt-q27-line-2-ho-song-ho",
+      "citation-nhl-q27-line-3-nhl",
+      "citation-pbc-q27-line-3-pbc",
+      "citation-ntt-q27-line-3-ntt",
+      "citation-nhl-q27-line-4-nhl",
+      "citation-pbc-q27-line-4-pbc",
+      "citation-ntt-q27-line-4-ntt",
+      "citation-ntt-q27-line-4-chu-hy",
+      "citation-nhl-q27-line-5-nhl",
+      "citation-pbc-q27-line-5-pbc",
+      "citation-ntt-q27-line-5-ntt",
+      "citation-nhl-q27-line-6-nhl",
+      "citation-pbc-q27-line-6-pbc",
+      "citation-ntt-q27-line-6-ntt",
+      "citation-ntt-q27-footnote-glyph-ngo"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Các cách đọc được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo. PDF 461 có hai đoạn cùng nhãn Chu Hy; không đổi nhãn dài thành Trình Di và không dùng đoạn ấy làm nhận định mới khi chưa kiểm tra được bản nền."
+  }
+}

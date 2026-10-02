@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 135, "released": 135, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 771, "missingCitationIds": [] },
-  "citations": { "total": 614 },
+  "records": { "authored": 139, "released": 139, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 867, "missingCitationIds": [] },
+  "citations": { "total": 707 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 24,
+    "reviewed": 28,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -34,13 +34,13 @@
       "hexagram-21",
       "hexagram-22",
       "hexagram-23",
-      "hexagram-24"
-    ],
-    "missingIds": [
+      "hexagram-24",
       "hexagram-25",
       "hexagram-26",
       "hexagram-27",
-      "hexagram-28",
+      "hexagram-28"
+    ],
+    "missingIds": [
       "hexagram-29",
       "hexagram-30",
       "hexagram-31",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 144,
+    "reviewedPositions": 168,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 24,
-        "reviewedLinePositions": 144,
+        "overviewHexagrams": 28,
+        "reviewedLinePositions": 168,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 24,
-        "reviewedLinePositions": 144,
+        "overviewHexagrams": 28,
+        "reviewedLinePositions": 168,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 24,
-        "reviewedLinePositions": 144,
+        "overviewHexagrams": 28,
+        "reviewedLinePositions": 168,
         "missingPilotPositions": []
       }
     ]
@@ -165,7 +165,11 @@
         "hexagram-21",
         "hexagram-22",
         "hexagram-23",
-        "hexagram-24"
+        "hexagram-24",
+        "hexagram-25",
+        "hexagram-26",
+        "hexagram-27",
+        "hexagram-28"
       ]
     },
     {
@@ -197,7 +201,11 @@
         "hexagram-21",
         "hexagram-22",
         "hexagram-23",
-        "hexagram-24"
+        "hexagram-24",
+        "hexagram-25",
+        "hexagram-26",
+        "hexagram-27",
+        "hexagram-28"
       ]
     },
     {
@@ -863,15 +871,86 @@
         "citation-pbc-q24-overview-pbc"
       ],
       "resolution": "Ảnh PDF 431 xác nhận chữ 後 trong chú thích. Lời quẻ Phục dùng 復; giữ tên và nghĩa trở lại từ lời quẻ, không nhập chữ gọi nhầm trong chú thích."
+    },
+    {
+      "recordId": "hexagram-25",
+      "id": "discrepancy-ntt-vo-vong-second-label",
+      "status": "resolved",
+      "description": "NTT PDF 434 phần Chu Hy gọi hào ứng của hào năm là Chín Hai, khác hào Sáu Hai trong chính quẻ.",
+      "citationIds": [
+        "citation-ntt-q25-line-2-ntt",
+        "citation-ntt-q25-overview-chu-hy",
+        "citation-nhl-q25-overview-nhl",
+        "citation-pbc-q25-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 434 xác nhận chữ Chín. Tiêu đề hào hai, hình quẻ và ba phần cấu trúc đều cho hào hai âm; giữ Lục nhị và không đổi quan hệ hào hai với hào năm."
+    },
+    {
+      "recordId": "hexagram-25",
+      "id": "discrepancy-ntt-vo-vong-second-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 438 dòng Hán đầu hào hai dùng chữ phu thay chữ lục, nhưng dịch âm và dịch nghĩa đều gọi Lục Nhị.",
+      "citationIds": [
+        "citation-ntt-q25-line-2-ntt",
+        "citation-nhl-q25-line-2-nhl",
+        "citation-pbc-q25-line-2-pbc"
+      ],
+      "resolution": "Ảnh PDF 438 xác nhận chữ chép khác. Giữ nhãn Lục nhị theo hình quẻ, bản dịch và hai sách khác; không dùng chữ sai làm loại hào mới."
+    },
+    {
+      "recordId": "hexagram-25",
+      "id": "discrepancy-ntt-vo-vong-fifth-repeated-text",
+      "status": "resolved",
+      "description": "NTT PDF 442 dưới Lời kinh hào năm chép lại Tượng của hào bốn, khác dịch âm và dịch nghĩa về bệnh không do càn.",
+      "citationIds": [
+        "citation-ntt-q25-line-4-ntt",
+        "citation-ntt-q25-line-5-ntt",
+        "citation-nhl-q25-line-5-nhl",
+        "citation-pbc-q25-line-5-pbc"
+      ],
+      "resolution": "Ảnh PDF 442 xác nhận phần chép lặp. Bản dịch và Trình Di tiếp theo cùng bàn hình ảnh bệnh, khớp hai sách khác; giữ nghĩa của hào năm từ các phần ấy, không gán lời bốn cho hào năm."
+    },
+    {
+      "recordId": "hexagram-26",
+      "id": "discrepancy-ntt-dai-suc-small-name",
+      "status": "resolved",
+      "description": "NTT PDF 457 phần Trình Di nói Tiểu Súc là sự chứa lớn trong lời hào cuối Đại Súc.",
+      "citationIds": [
+        "citation-ntt-q26-line-6-ntt",
+        "citation-nhl-q26-line-6-nhl",
+        "citation-pbc-q26-line-6-pbc"
+      ],
+      "resolution": "Ảnh PDF 457 xác nhận chữ Tiểu. Tiêu đề, diễn giải cả đoạn và hai sách khác đang bàn Đại Súc; tóm tắt giữ Đại Súc và không đổi danh tính Tiểu Súc."
+    },
+    {
+      "recordId": "hexagram-27",
+      "id": "discrepancy-ntt-di-footnote-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 470 chú thích 1 gọi chữ quan là Di, trong khi lời quẻ và tiêu đề dùng chữ Di.",
+      "citationIds": [
+        "citation-ntt-q27-footnote-glyph-ngo",
+        "citation-ntt-q27-overview-ntt",
+        "citation-nhl-q27-overview-nhl",
+        "citation-pbc-q27-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 470 xác nhận chữ quan trong chú thích. Giữ tên Di và nghĩa nuôi từ lời quẻ cùng chú giải, không nhập chữ bị gọi nhầm làm một tên quẻ khác."
+    },
+    {
+      "recordId": "hexagram-27",
+      "id": "discrepancy-ntt-di-final-danger-word",
+      "status": "resolved",
+      "description": "NTT PDF 470 bản dịch Tượng hào cuối viết ngu, khác chữ lệ trong dịch âm và lời giảng lo sợ nguy.",
+      "citationIds": [
+        "citation-ntt-q27-line-6-ntt",
+        "citation-nhl-q27-line-6-nhl",
+        "citation-pbc-q27-line-6-pbc"
+      ],
+      "resolution": "Ảnh PDF 470 xác nhận chữ ngu. Lời hào, dịch âm và Trình Di đều giữ nghĩa nguy và dè dặt; tóm tắt dùng nghĩa ấy, không gán sự ngu dốt cho hào trên."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-25",
-      "hexagram-26",
-      "hexagram-27",
-      "hexagram-28",
       "hexagram-29",
       "hexagram-30",
       "hexagram-31",
@@ -913,8 +992,8 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-25", "hexagram-26", "hexagram-27", "hexagram-28"],
+    "hexagramIds": ["hexagram-29", "hexagram-30", "hexagram-31", "hexagram-32"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Vô Vọng, Đại Súc, Di, Đại Quá và BPCT Chương 5, mục 15–16: Hợp xứ phùng xung / Xung trung phùng hợp, Tuyệt xứ phùng sinh / Khắc xứ phùng sinh (PDF 72–73). Hai mươi bốn quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–14 có các thuật ngữ và diễn giải được chọn. Những câu mơ hồ và ví dụ mâu thuẫn đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Khảm, Ly, Hàm, Hằng. BPCT Chương 5, mục 15–16 (PDF 72–73) là phần còn lại của đợt này. Hai mươi tám quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

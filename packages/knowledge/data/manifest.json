@@ -15,7 +15,8 @@
     "citations/batch-five-hexagrams.json",
     "citations/batch-five-advanced.json",
     "citations/batch-six-hexagrams.json",
-    "citations/batch-six-advanced.json"
+    "citations/batch-six-advanced.json",
+    "citations/batch-seven-hexagrams.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -152,7 +153,11 @@
     "terms/term-resting-confined.json",
     "terms/term-combination-control.json",
     "liuyao/seasonal-strength-context.json",
-    "liuyao/combination-control-context.json"
+    "liuyao/combination-control-context.json",
+    "hexagrams/hexagram-25.json",
+    "hexagrams/hexagram-26.json",
+    "hexagrams/hexagram-27.json",
+    "hexagrams/hexagram-28.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -289,7 +294,11 @@
     "term-resting-confined",
     "term-combination-control",
     "article-seasonal-strength-context",
-    "article-combination-control-context"
+    "article-combination-control-context",
+    "hexagram-25",
+    "hexagram-26",
+    "hexagram-27",
+    "hexagram-28"
   ],
   "topics": [
     {
@@ -349,8 +358,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-25", "hexagram-26", "hexagram-27", "hexagram-28"],
+    "hexagramIds": ["hexagram-29", "hexagram-30", "hexagram-31", "hexagram-32"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Vô Vọng, Đại Súc, Di, Đại Quá và BPCT Chương 5, mục 15–16: Hợp xứ phùng xung / Xung trung phùng hợp, Tuyệt xứ phùng sinh / Khắc xứ phùng sinh (PDF 72–73). Hai mươi bốn quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–14 có các thuật ngữ và diễn giải được chọn. Những câu mơ hồ và ví dụ mâu thuẫn đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Khảm, Ly, Hàm, Hằng. BPCT Chương 5, mục 15–16 (PDF 72–73) là phần còn lại của đợt này. Hai mươi tám quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
