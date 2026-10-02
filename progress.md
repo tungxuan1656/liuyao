@@ -745,7 +745,7 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 ## 2026-10-01 — feat-033 pilot commentary comparisons
 
-**State**: active. The foundation is committed as `111929a`.
+**State**: active. The foundation is committed as `da4f1ab`.
 **Done**: Added PBC and NTT summaries for all 24 pilot line positions and separate Dụng cửu/Dụng lục readings. Preserved distinct Trình Di/Chu Hy interpretations. Recorded and visually confirmed the PBC PDF 66 and NTT PDF 144 Khôn label errors.
 **Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
 **Blockers**: None.
@@ -765,7 +765,7 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Status: active.
 - Result: Added four Dụng/Nguyên/Kỵ/Cừu terms and three articles covering question-specific selection, Thế–Ứng roles, and conditional effects. Extended the existing Thế/Ứng terms. Kept Vĩnh Cao's footnotes separate from Vương Hồng Tự's chapter text; preserved dynamic, strength, calendar, and protection conditions.
 - Coverage: 84 records, 303 claims, 202 locators; advanced coverage is partial. No calendar or automated interpretation behavior was added.
-- Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `65d88fd`.
+- Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `fb93a79`.
 - Blockers: none.
 - Next: Commit this group, then reconcile canonical documentation and complete the feature handoff.
 
@@ -773,7 +773,7 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 - Status: done.
 - Result: Completed both selected content tracks. Reconciled content, model, quality, and source documents with the released corpus. Retained explicit incomplete coverage and linked the manifest's next batch.
-- Commits: Foundation `111929a`; pilot line comparisons `e7f6fd6`; Truân–Mông–Nhu–Sư `65d88fd`; advanced BPCT `fd5c011`.
+- Commits: Foundation `da4f1ab`; pilot line comparisons `33c7097`; Truân–Mông–Nhu–Sư `fb93a79`; advanced BPCT `69c4683`.
 - Evidence: 84 released records, 303 cited claims, 202 locators; 8/64 quẻ and 48/384 positions in each of the three commentary books. Each group passed `./init.sh` with 263 tests, source fingerprints, generated-output freshness, and diff checks.
 - Blockers: none for this batch. Complete corpus review remains unfinished.
 - Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (Phi thần, Phục thần, Lục thú; PDF 68–69).

@@ -42,6 +42,6 @@ Execute inline under the approved content sequence and the user's continuation r
 
 - State: done.
 - Evidence: 84 records, 303 claims, 202 locators; 8/64 quẻ and 48/384 positions. All groups pass `./init.sh` with 263 tests and PDF fingerprint/freshness checks.
-- Commits: Pilot comparisons `e7f6fd6`; four quẻ `65d88fd`; advanced BPCT `fd5c011`.
+- Commits: Pilot comparisons `33c7097`; four quẻ `fb93a79`; advanced BPCT `69c4683`.
 - Blockers: none.
 - Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (PDF 68–69), as recorded in the manifest.
