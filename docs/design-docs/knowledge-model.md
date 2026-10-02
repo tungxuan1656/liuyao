@@ -131,6 +131,36 @@ The example below illustrates a draft rule record. It is not a released dataset 
 }
 ```
 
+### Intended extended records
+
+Supporting claim → ordered explanation block, table, diagram, or worked example → declared dependency.
+
+These extensions are planned. The current schema does not encode lesson dependencies or project-contract evidence.
+
+- Give each learning block stable supporting claim IDs and an explicit position in its lesson.
+- Declare lesson sequence and prerequisites; reject missing prerequisite IDs and prerequisite cycles.
+- Reuse existing typed tables. Add representations only for inventoried content that requires them.
+- Bind table and diagram units to supporting claims, including labels, orientation, and source-specific alternatives.
+- Keep calculation-required tables in the core package.
+- Record accepted project conventions with a canonical document section and reviewed revision.
+- Keep project-contract evidence distinct from edition-specific book citations and source-comparison review.
+- Preserve stable record and claim IDs when migrating supported schema versions.
+- Keep JSON Schema, readonly types, public projections, and generated outputs consistent.
+
+Supporting dependencies establish evidence; ordinary `relatedIds` links establish navigation.
+The [quality contract](../product-specs/knowledge-quality.md#completion-and-later-corrections) owns publication and invalidation requirements for those dependencies.
+The [Library contract](../product-specs/knowledge-browser.md#topics-and-articles) owns unavailable related-link presentation.
+
+### Intended snapshot identity
+
+Expose an immutable identity for each released corpus snapshot through the public package API.
+Bind it to schema versions, release membership, records, citations, editions, discrepancies, review decisions, and accepted project-contract revisions.
+Include review scope and evidence state without treating source comparison as independent approval.
+The runtime snapshot excludes raw PDFs and draft prose.
+
+The [PWA contract](offline-pwa.md#intended-knowledge-scale-and-updates) owns asset loading and update behavior.
+Package version alone does not identify a reviewed corpus snapshot.
+
 ### Citation contract
 
 Each citation identifies the source work and exact supplied edition.

@@ -78,6 +78,14 @@ These flows are planned extensions. The current interface does not render their 
 - If commentary or an author layer is unavailable, show its unavailable state.
 - Keep compatibility metadata available for unmigrated quẻ without presenting it as reviewed commentary.
 
+### Trigrams terms and rules
+
+- Use the same claim-level presentation for released trigrams, terms, and rules.
+- Keep each explanation's conditions, author layers, and supporting citations together.
+- Render declared tables and diagrams with their evidence and source-specific labels.
+- Identify accepted project conventions and link their reviewed specification evidence.
+- Preserve compatibility navigation without using flattened prose as reviewed commentary.
+
 ### Topics and articles
 
 - Add topic browsing and article details alongside existing entity, term, and rule routes.
@@ -87,12 +95,15 @@ These flows are planned extensions. The current interface does not render their 
 - Show explicit empty states for topics without released content, including future learning articles.
 - When an article is released, include it through the existing collection contract.
 - Preserve declared related-record and rule links without inventing associations.
+- Render learning blocks in their declared sequence, with supporting claims and prerequisite links.
+- If a related target is not released, show an unavailable target without exposing draft prose or inventing a replacement.
 
 ### Shared presentation
 
 Use the [knowledge model](../design-docs/knowledge-model.md#access) for package access and offline data boundaries.
 Use [knowledge quality](knowledge-quality.md) for publication eligibility and review claims.
 Source comparison does not establish full-corpus coverage or independent specialist approval.
+Show the recorded review scope and released snapshot identity; an unavailable approval must not become a certification label.
 Keep source views usable on compact and wide screens, with keyboard access and direct offline detail links.
 Missing citations must produce an explicit unavailable state, without substitute sources.
 

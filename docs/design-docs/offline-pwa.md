@@ -56,3 +56,25 @@ Check at least:
 - offline knowledge search;
 - offline direct route reload;
 - update while a reading draft exists.
+
+## Intended knowledge scale and updates
+
+Released snapshot → measured assets and local queries → cached routes → user-accepted snapshot update.
+
+These checks extend the existing PWA contract; they have not been implemented for the expanded corpus.
+
+- Freeze numerical budgets and test devices before changing the knowledge loading strategy.
+- Measure raw/compressed payload, precache size, storage, cold loading, query latency, and peak memory.
+- Check actual released builds and separately labelled volume fixtures covering all inventoried groups, 64 quẻ, and 384 positions.
+- Keep synthetic volume content outside released knowledge and source-review evidence.
+- Enforce asset budgets mechanically; check runtime budgets on the recorded devices and browsers.
+- Verify all required knowledge assets are cached after one successful online load, including assets introduced by split loading.
+- Keep displayed content, citations, review metadata, and snapshot identity from the same immutable release.
+- Test two-version updates, interrupted asset retrieval, and rollback without mixing snapshots.
+- Preserve the existing draft-safe update acceptance flow.
+- Show the active snapshot identity offline in diagnostics.
+
+Repeat budget and offline checks when corpus size, schema, assets, or loading behavior changes.
+Before claiming full-volume delivery, test the actual complete authored snapshot; fixture results do not establish that claim.
+The [knowledge model](knowledge-model.md#intended-snapshot-identity) owns snapshot identity.
+The [release contract](../release.md) owns browser versions, hosting rollback, and production evidence.

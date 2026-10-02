@@ -43,6 +43,7 @@ Every published domain claim needs:
 A source title alone does not establish a claim.
 A project implementation establishes current behavior, not independent doctrinal evidence.
 References to software fields can use the project contract directly.
+Project conventions require an accepted specification section and reviewed revision, without fabricated book citations.
 
 ## Review states
 
@@ -103,6 +104,7 @@ Classify meaningful units as included content or explicit exclusions.
 Record blanks, edition notices, diagrams, missing passages, and attribution uncertainty separately.
 Each unit needs an authoring owner and an audit owner.
 An existing citation proves coverage of its supporting claim, not the entire chapter.
+Derive expected passages and author layers from source inspection, independently of the authored record count.
 
 The intended crosswalk is `docs/reviews/knowledge/source-inventory.md`.
 The [source catalog](../references/book-sources.md) remains the owner of edition locators and source discrepancies.
@@ -152,14 +154,42 @@ The ledger format and validation contract belong in the [knowledge model](../des
 Missing, rejected, stale, or unresolved included units must keep completion gates closed.
 Required specialist approval also keeps the final certification gate closed until recorded.
 
+Create the validation contract after source inventory, before further bulk authoring.
+Accept completed units incrementally while unfinished units keep global completion closed.
+Prove invalidation and restoration with isolated fixtures before final certification.
+Synthetic approvals in validation fixtures never count as specialist decisions for the corpus.
+
+Published explanations require current released supporting claims or accepted project-contract evidence.
+Reject missing, draft, disputed, superseded, stale, or circular supporting dependencies.
+Ordinary navigation relationships do not establish evidence; use the [model contract](../design-docs/knowledge-model.md#intended-extended-records) to distinguish them.
+
 Record, citation, attribution, source, or discrepancy changes reopen affected decisions.
 A reused claim change also reopens dependent explanations and expected fixtures.
+Follow supporting dependencies transitively through lessons, tables, diagrams, and worked examples.
 Regenerate coverage and repeat affected reviews before restoring approval.
 Retain the previous decisions as history, with their obsolete inputs clearly identified.
+
+Changes to release membership or project-contract revisions also invalidate affected evidence.
+Bind corpus-wide approval to the released snapshot; keep unaffected unit decisions valid for their unchanged inputs.
 
 Completion means that the declared supplied editions and included claims passed the recorded evidence gates.
 It does not establish absolute certainty, recover absent source text, or verify predictive efficacy.
 Release evidence must state unresolved source limitations and the exact reviewed snapshot.
+
+### Intended runtime fidelity
+
+Released record → public API → Library or result context → attributed explanation and its own evidence.
+
+Verify every released record's public representation, including trigrams, terms, rules, quẻ, and articles.
+Preserve claim identity, conditions, author layers, tables, diagrams, and evidence links during presentation.
+Check primary/changed quẻ and domain positions against explicit expected contexts.
+Keep unavailable content and accepted project conventions distinguishable from reviewed book commentary.
+Show review scope and snapshot identity without implying unrecorded independent approval.
+
+Package checks verify reusable projections and reference completeness.
+Direct web checks verify interaction, accessibility, rendered evidence, and offline routes under the [development contract](../development.md).
+Bind their evidence to the tested snapshot and projections; repeat affected checks after either changes.
+Runtime fidelity does not replace passage review or specialist approval.
 
 ## Learning coverage
 
