@@ -13,6 +13,7 @@ import citations7 from '../data/citations/batch-four-advanced.json' with { type:
 import citations8 from '../data/citations/batch-five-hexagrams.json' with { type: 'json' };
 import citations9 from '../data/citations/batch-five-advanced.json' with { type: 'json' };
 import citations10 from '../data/citations/batch-six-hexagrams.json' with { type: 'json' };
+import citations11 from '../data/citations/batch-six-advanced.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -143,6 +144,11 @@ import record126 from '../data/hexagrams/hexagram-21.json' with { type: 'json' }
 import record127 from '../data/hexagrams/hexagram-22.json' with { type: 'json' };
 import record128 from '../data/hexagrams/hexagram-23.json' with { type: 'json' };
 import record129 from '../data/hexagrams/hexagram-24.json' with { type: 'json' };
+import record130 from '../data/terms/term-prosperous-supported.json' with { type: 'json' };
+import record131 from '../data/terms/term-resting-confined.json' with { type: 'json' };
+import record132 from '../data/terms/term-combination-control.json' with { type: 'json' };
+import record133 from '../data/liuyao/seasonal-strength-context.json' with { type: 'json' };
+import record134 from '../data/liuyao/combination-control-context.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -274,6 +280,11 @@ export const BOOK_RECORDS = [
   record127,
   record128,
   record129,
+  record130,
+  record131,
+  record132,
+  record133,
+  record134,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -287,6 +298,7 @@ export const BOOK_CITATIONS = [
   ...citations8.citations,
   ...citations9.citations,
   ...citations10.citations,
+  ...citations11.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

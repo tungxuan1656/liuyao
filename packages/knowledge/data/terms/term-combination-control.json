@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "term-combination-control",
+  "type": "term",
+  "title": "Trong hợp có khắc",
+  "aliases": ["Hợp có khắc"],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-combination-control-definition",
+      "kind": "author-interpretation",
+      "text": "Mục 14 lấy hào Tí hóa Sửu và hào Tuất hóa Mão làm ví dụ có quan hệ hợp giữa chi, đồng thời hành của chi biến khắc hành của hào ban đầu. Nguồn yêu cầu xét thêm vượng suy và sinh khắc từ ngày, tháng, động hào.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-control",
+        "citation-bpct-ch1-combining-and-opposing-branches",
+        "citation-bpct-p8-technical",
+        "citation-bpct-p9-technical"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "term-combination-control-exception",
+      "kind": "author-interpretation",
+      "text": "Thân Kim hóa Tị Hỏa được mục 14 nêu riêng theo nghĩa hóa hợp, hóa Trường Sinh, dù không có Nhật Nguyệt và động hào tương sinh. Đoạn còn kèm điều kiện Dần và lời không thể luận cát.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-control",
+        "citation-bpct-ch5-metal-growth-at-si"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ ngoại lệ đúng chiều Thân hóa Tị; không suy mọi Hỏa biến đều sinh Kim hoặc mọi hợp đều tốt."
+      ]
+    }
+  ],
+  "relatedIds": [
+    "term-prosperous-supported",
+    "term-resting-confined",
+    "term-growth-stage",
+    "article-combination-control-context",
+    "rule-branch-element",
+    "rule-five-element-cycles"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-combination-control",
+      "citation-bpct-ch1-combining-and-opposing-branches",
+      "citation-bpct-p8-technical",
+      "citation-bpct-p9-technical",
+      "citation-bpct-ch5-metal-growth-at-si"
+    ],
+    "note": "Đã đọc và xem ảnh mục 13–14 PDF 72; đối chiếu địa chi xung hợp PDF 10, Kim Trường Sinh PDF 70, câu 26–27 và chú thích 5 PDF 85, câu 31 PDF 87. Đọc đầy đủ câu hỏi 14 cùng Ghi chú PDF 401–403, giữ phản biện của Vĩnh Cao riêng. Nhãn trang in đã kiểm tra; chưa xác nhận chiêm nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

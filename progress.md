@@ -867,3 +867,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit.
 - Blockers: none for selected claims. Ambiguous wording remains excluded.
 - Next: Commit this group, then review BPCT chapter 5, sections 13–14 and related evidence.
+
+## 2026-10-02 — feat-037 seasonal strength and combination/control group
+
+- Status: active.
+- Result: Added three terms and two articles for BPCT chapter 5, sections 13–14. Kept compound conditions, the directional Thân-to-Tị exception, and Vĩnh Cao's Tam hình objection separate from main commentary. No calendar, scoring, or automatic interpretation was added.
+- Coverage: 135 records, 771 claims, 614 locators; 24/64 quẻ and 144/384 positions. Advanced coverage remains partial.
+- Evidence: Initial full verification hit the 304-line generated import inventory. Fix `159797e` exempts only that generated file; an isolated probe still rejects oversized authored TypeScript. The subsequent `./init.sh` passed 263 tests; PDF fingerprints, generated freshness, and diff checks passed. Classical group committed as `3e01c29`.
+- Blockers: none for selected claims. Unspecified Hưu/Tù assignments and mixed support/control cases remain outside general classifiers.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.

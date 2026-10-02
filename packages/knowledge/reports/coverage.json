@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 130, "released": 130, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 754, "missingCitationIds": [] },
-  "citations": { "total": 606 },
+  "records": { "authored": 135, "released": 135, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 771, "missingCitationIds": [] },
+  "citations": { "total": 614 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 24,
@@ -323,7 +323,12 @@
         "term-line-reverse-chant",
         "term-repeated-chant",
         "article-reverse-chant-context",
-        "article-repeated-chant-context"
+        "article-repeated-chant-context",
+        "term-prosperous-supported",
+        "term-resting-confined",
+        "term-combination-control",
+        "article-seasonal-strength-context",
+        "article-combination-control-context"
       ]
     },
     {
@@ -910,6 +915,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-25", "hexagram-26", "hexagram-27", "hexagram-28"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Vô Vọng, Đại Súc, Di, Đại Quá. BPCT Chương 5, mục 13–14: Vượng tướng hưu tù, Trong hợp có khắc (PDF 72) là phần còn lại của đợt này. Hai mươi bốn quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Vô Vọng, Đại Súc, Di, Đại Quá và BPCT Chương 5, mục 15–16: Hợp xứ phùng xung / Xung trung phùng hợp, Tuyệt xứ phùng sinh / Khắc xứ phùng sinh (PDF 72–73). Hai mươi bốn quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–14 có các thuật ngữ và diễn giải được chọn. Những câu mơ hồ và ví dụ mâu thuẫn đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
