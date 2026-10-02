@@ -66,7 +66,7 @@ export function LibraryDetailPage() {
         <Button
           variant="link"
           size="lg"
-          className="self-start"
+          className="hidden self-start md:inline-flex"
           render={<Link to={ROUTES.library} />}
         >
           Thư viện

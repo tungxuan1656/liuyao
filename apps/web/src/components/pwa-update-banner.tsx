@@ -56,7 +56,7 @@ export function PwaUpdateBanner() {
     <>
       {!online ? (
         <Alert
-          className="fixed inset-x-4 bottom-[calc(5rem+env(safe-area-inset-bottom))] z-30 mx-auto max-w-xl md:bottom-4"
+          className="fixed inset-x-4 bottom-[calc(1rem+env(safe-area-inset-bottom))] z-30 mx-auto max-w-xl md:bottom-4"
           role="status"
         >
           <WifiOff aria-hidden="true" />
@@ -64,7 +64,7 @@ export function PwaUpdateBanner() {
         </Alert>
       ) : snapshot.updateAvailable && !dismissed ? (
         <Alert
-          className="fixed inset-x-4 bottom-[calc(5rem+env(safe-area-inset-bottom))] z-30 mx-auto max-w-xl md:bottom-4"
+          className="fixed inset-x-4 bottom-[calc(1rem+env(safe-area-inset-bottom))] z-30 mx-auto max-w-xl md:bottom-4"
           role="status"
           aria-labelledby="pwa-update-title"
         >

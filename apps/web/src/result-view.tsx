@@ -230,7 +230,7 @@ export function ResultView() {
                 <SheetTitle>{selectedFact.label}</SheetTitle>
                 <SheetDescription>Quy tắc và nguồn tham khảo</SheetDescription>
               </SheetHeader>
-              <div className="p-8">
+              <div className="p-4 sm:p-6">
                 <FactInspector fact={selectedFact} close={closeInspector} />
               </div>
             </>
