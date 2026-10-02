@@ -11,7 +11,8 @@
     "citations/batch-three-hexagrams.json",
     "citations/batch-three-advanced.json",
     "citations/batch-four-hexagrams.json",
-    "citations/batch-four-advanced.json"
+    "citations/batch-four-advanced.json",
+    "citations/batch-five-hexagrams.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -130,7 +131,11 @@
     "terms/term-leaving-decade.json",
     "liuyao/growth-store-and-extinction.json",
     "liuyao/month-break-conditions.json",
-    "liuyao/decade-empty-conditions.json"
+    "liuyao/decade-empty-conditions.json",
+    "hexagrams/hexagram-17.json",
+    "hexagrams/hexagram-18.json",
+    "hexagrams/hexagram-19.json",
+    "hexagrams/hexagram-20.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -249,7 +254,11 @@
     "term-leaving-decade",
     "article-growth-store-and-extinction",
     "article-month-break-conditions",
-    "article-decade-empty-conditions"
+    "article-decade-empty-conditions",
+    "hexagram-17",
+    "hexagram-18",
+    "hexagram-19",
+    "hexagram-20"
   ],
   "topics": [
     {
@@ -309,8 +318,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-17", "hexagram-18", "hexagram-19", "hexagram-20"],
+    "hexagramIds": ["hexagram-21", "hexagram-22", "hexagram-23", "hexagram-24"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán và BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71). Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–10 có các thuật ngữ và diễn giải được chọn. Các phần còn mơ hồ của Phi thần, Đằng Xà, Lâm Quan/Thoái và ví dụ điền thực vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Phệ Hạp, Bí, Bác, Phục. BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71) là phần còn lại của đợt này. Hai mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

@@ -831,3 +831,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 51 local documentation targets, and diff checks passed. Coverage remains incomplete: 117 records, 548 claims, 411 locators; 16/64 quẻ and 96/384 positions in each commentary book.
 - Blockers: none for this batch. Ambiguous and contradictory source examples remain explicitly excluded; no independent specialist approval is claimed.
 - Next: Review Tùy, Cổ, Lâm, Quán and BPCT chapter 5, sections 11–12 (Phản ngâm, Phục ngâm; PDF 70–71).
+
+## 2026-10-02 — feat-036 four-quẻ group
+
+- Status: active.
+- Result: Added Tùy, Cổ, Lâm, and Quán with three-book overviews and 24 positions. Preserved author differences, uncertain readings, and 13 visually checked source-error resolutions. Removed duplicate legacy records and retained the existing Quan display name with Quán aliases.
+- Coverage: 121 records, 644 claims, 503 locators; 20/64 quẻ and 120/384 positions in each commentary book. The remaining 44 quẻ retain unaudited compatibility content.
+- Evidence: After correcting the display-name change caught by compatibility tests, `./init.sh` passed 263 tests. PDF fingerprints, generated-output freshness, and diff checks passed before commit.
+- Blockers: none.
+- Next: Commit this group, then finish BPCT chapter 5, sections 11–12 and related evidence.

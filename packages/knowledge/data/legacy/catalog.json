@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-17",
-        "name": "Trạch Lôi Tùy",
-        "aliases": [],
-        "explanation": "Quẻ số 17 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Đoài.",
-        "kingWenNumber": 17,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-18",
-        "name": "Sơn Phong Cổ",
-        "aliases": [],
-        "explanation": "Quẻ số 18 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Cấn.",
-        "kingWenNumber": 18,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-19",
-        "name": "Địa Trạch Lâm",
-        "aliases": [],
-        "explanation": "Quẻ số 19 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Khôn.",
-        "kingWenNumber": 19,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-lake",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-20",
-        "name": "Phong Địa Quan",
-        "aliases": [],
-        "explanation": "Quẻ số 20 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Tốn.",
-        "kingWenNumber": 20,
-        "upperTrigramId": "trigram-wind",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-21",
         "name": "Hỏa Lôi Phệ Hạp",
         "aliases": [],

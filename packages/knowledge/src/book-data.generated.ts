@@ -10,6 +10,7 @@ import citations4 from '../data/citations/batch-three-hexagrams.json' with { typ
 import citations5 from '../data/citations/batch-three-advanced.json' with { type: 'json' };
 import citations6 from '../data/citations/batch-four-hexagrams.json' with { type: 'json' };
 import citations7 from '../data/citations/batch-four-advanced.json' with { type: 'json' };
+import citations8 from '../data/citations/batch-five-hexagrams.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -127,6 +128,10 @@ import record113 from '../data/terms/term-leaving-decade.json' with { type: 'jso
 import record114 from '../data/liuyao/growth-store-and-extinction.json' with { type: 'json' };
 import record115 from '../data/liuyao/month-break-conditions.json' with { type: 'json' };
 import record116 from '../data/liuyao/decade-empty-conditions.json' with { type: 'json' };
+import record117 from '../data/hexagrams/hexagram-17.json' with { type: 'json' };
+import record118 from '../data/hexagrams/hexagram-18.json' with { type: 'json' };
+import record119 from '../data/hexagrams/hexagram-19.json' with { type: 'json' };
+import record120 from '../data/hexagrams/hexagram-20.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -245,6 +250,10 @@ export const BOOK_RECORDS = [
   record114,
   record115,
   record116,
+  record117,
+  record118,
+  record119,
+  record120,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -255,6 +264,7 @@ export const BOOK_CITATIONS = [
   ...citations5.citations,
   ...citations6.citations,
   ...citations7.citations,
+  ...citations8.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

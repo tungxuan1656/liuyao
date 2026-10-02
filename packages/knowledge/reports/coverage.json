@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 117, "released": 117, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 548, "missingCitationIds": [] },
-  "citations": { "total": 411 },
+  "records": { "authored": 121, "released": 121, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 644, "missingCitationIds": [] },
+  "citations": { "total": 503 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 16,
+    "reviewed": 20,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -26,13 +26,13 @@
       "hexagram-13",
       "hexagram-14",
       "hexagram-15",
-      "hexagram-16"
-    ],
-    "missingIds": [
+      "hexagram-16",
       "hexagram-17",
       "hexagram-18",
       "hexagram-19",
-      "hexagram-20",
+      "hexagram-20"
+    ],
+    "missingIds": [
       "hexagram-21",
       "hexagram-22",
       "hexagram-23",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 96,
+    "reviewedPositions": 120,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 16,
-        "reviewedLinePositions": 96,
+        "overviewHexagrams": 20,
+        "reviewedLinePositions": 120,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 16,
-        "reviewedLinePositions": 96,
+        "overviewHexagrams": 20,
+        "reviewedLinePositions": 120,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 16,
-        "reviewedLinePositions": 96,
+        "overviewHexagrams": 20,
+        "reviewedLinePositions": 120,
         "missingPilotPositions": []
       }
     ]
@@ -157,7 +157,11 @@
         "hexagram-13",
         "hexagram-14",
         "hexagram-15",
-        "hexagram-16"
+        "hexagram-16",
+        "hexagram-17",
+        "hexagram-18",
+        "hexagram-19",
+        "hexagram-20"
       ]
     },
     {
@@ -181,7 +185,11 @@
         "hexagram-13",
         "hexagram-14",
         "hexagram-15",
-        "hexagram-16"
+        "hexagram-16",
+        "hexagram-17",
+        "hexagram-18",
+        "hexagram-19",
+        "hexagram-20"
       ]
     },
     {
@@ -573,15 +581,152 @@
         "citation-bpct-ch5-four-birthplaces"
       ],
       "resolution": "Ảnh PDF 16 có đủ mười hai tên với Tử trước Mộ và Tuyệt. Chính phần thân mục 8 PDF 70 cũng nhắc Tử. Giữ danh sách Chương 1; chưa nhập toàn bộ ánh xạ chi cho mười hai giai đoạn."
+    },
+    {
+      "recordId": "hexagram-17",
+      "id": "discrepancy-ntt-tuy-lake-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 333 đặt ký hiệu Khảm bên tên Đoài trong lời giải cấu trúc Tùy.",
+      "citationIds": [
+        "citation-ntt-q17-overview-ntt",
+        "citation-nhl-q17-overview-nhl",
+        "citation-pbc-q17-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 333 xác nhận ký hiệu không khớp chữ Đoài. Hai sách khác và hình quẻ đều cho ngoại Đoài, nội Chấn; giữ cấu trúc đó, không đổi ngoại quái thành Khảm."
+    },
+    {
+      "recordId": "hexagram-17",
+      "id": "discrepancy-pbc-tuy-name",
+      "status": "resolved",
+      "description": "PBC PDF 197 có một chỗ ghi tên quẻ Tây trong thân bài.",
+      "citationIds": ["citation-pbc-q17-overview-pbc", "citation-nhl-q17-overview-nhl"],
+      "resolution": "Ảnh PDF 197 xác nhận chữ Tây; tiêu đề và toàn bộ đoạn giải đều là Tùy. Giữ tên Tùy và không thêm Tây làm bí danh."
+    },
+    {
+      "recordId": "hexagram-17",
+      "id": "discrepancy-ntt-tuy-second-polarity",
+      "status": "resolved",
+      "description": "NTT PDF 342 giải hào năm nhưng gọi hào ứng là Chín Hai.",
+      "citationIds": ["citation-ntt-q17-line-5-ntt", "citation-ntt-q17-line-2-ntt"],
+      "resolution": "NTT PDF 343 ngay phần tiếp nói Sáu Hai, và lời hào hai PDF 338 cũng là Sáu Hai. Giữ hào hai âm; lỗi tên không đổi quan hệ ứng hai–năm."
+    },
+    {
+      "recordId": "hexagram-18",
+      "id": "discrepancy-pbc-co-second-number",
+      "status": "resolved",
+      "description": "PBC PDF 210 lời Hán hào hai ghi sơ cửu trong khi bản dịch và phần giảng nói cửu nhị.",
+      "citationIds": [
+        "citation-pbc-q18-line-2-pbc",
+        "citation-nhl-q18-line-2-nhl",
+        "citation-ntt-q18-line-2-ntt"
+      ],
+      "resolution": "Ảnh PDF 210 xác nhận chữ sơ cửu; vị hai, phần Dịch và hai sách khác đều là Chín Hai. Giữ lời hào ở vị hai, không chuyển thành hào đầu."
+    },
+    {
+      "recordId": "hexagram-18",
+      "id": "discrepancy-ntt-co-first-parent",
+      "status": "resolved",
+      "description": "NTT PDF 351 lời Tượng hào đầu ghi cán mẫu thay vì cán phụ.",
+      "citationIds": [
+        "citation-ntt-q18-line-1-ntt",
+        "citation-nhl-q18-line-1-nhl",
+        "citation-pbc-q18-line-1-pbc"
+      ],
+      "resolution": "Ảnh PDF 351 xác nhận chữ mẫu nhưng lời kinh, phần Dịch và phần Trình Di tiếp ở PDF 352 đều nói việc cha. Giữ nghĩa sửa việc cha cho hào đầu; không trộn với hào hai."
+    },
+    {
+      "recordId": "hexagram-18",
+      "id": "discrepancy-ntt-co-second-copied-tuy",
+      "status": "resolved",
+      "description": "NTT PDF 352–353 lời kinh và lời Tượng hào hai Cổ chép nội dung hào đầu Tùy.",
+      "citationIds": [
+        "citation-ntt-q18-line-2-ntt",
+        "citation-ntt-q17-line-1-ntt",
+        "citation-nhl-q18-line-2-nhl",
+        "citation-pbc-q18-line-2-pbc"
+      ],
+      "resolution": "Ảnh hai trang xác nhận phần Hán bị chép nhầm. Bản Dịch và phần Trình Di vẫn giảng sửa việc mẹ, không giữ cứng, khớp hai sách khác. Tóm tắt giữ nội dung Cổ hào hai; không lấy lời Hán lỗi làm chứng cứ riêng."
+    },
+    {
+      "recordId": "hexagram-19",
+      "id": "discrepancy-nhl-lam-earth-count",
+      "status": "resolved",
+      "description": "NHL PDF 194 nói Khôn có năm hào âm trước khi một rồi hai hào dương thay vào.",
+      "citationIds": ["citation-nhl-q19-overview-nhl", "citation-pbc-q19-overview-pbc"],
+      "resolution": "Ảnh PDF 194 xác nhận số năm. Khôn có sáu hào âm; hình Lâm ở hai sách có hai dương dưới và bốn âm trên. Giữ hình quẻ đã đối chiếu, không dùng phép đếm sai trong đoạn."
+    },
+    {
+      "recordId": "hexagram-19",
+      "id": "discrepancy-pbc-lam-yin-count",
+      "status": "resolved",
+      "description": "PBC PDF 217 có câu hai dương lâm bức một âm, khác câu sau và hình Lâm.",
+      "citationIds": [
+        "citation-pbc-q19-line-2-pbc",
+        "citation-pbc-q19-overview-pbc",
+        "citation-nhl-q19-overview-nhl"
+      ],
+      "resolution": "Ảnh PDF 217 phần sau cùng trang nói bốn âm; hình Lâm PDF 214 cũng có bốn âm. Giữ hai dương và bốn âm, không dùng số một làm cấu trúc."
+    },
+    {
+      "recordId": "hexagram-19",
+      "id": "discrepancy-pbc-lam-third-negation",
+      "status": "resolved",
+      "description": "PBC PDF 219 nói tội lỗi cũng đến nỗi lớn sau khi đã lo sửa, trái lời không lỗi và ý không kéo dài.",
+      "citationIds": [
+        "citation-pbc-q19-line-3-pbc",
+        "citation-nhl-q19-line-3-nhl",
+        "citation-ntt-q19-line-3-ntt"
+      ],
+      "resolution": "Ảnh PDF 219 xác nhận thiếu phủ định trong câu tiếng Việt. Lời hào và đoạn PDF 218, chữ bất trường cùng hai sách khác đều giải lo sửa thì lỗi không kéo dài; giữ nghĩa có điều kiện ấy."
+    },
+    {
+      "recordId": "hexagram-19",
+      "id": "discrepancy-ntt-lam-earth-image",
+      "status": "resolved",
+      "description": "NTT PDF 359 nói trên chằm có nước tạo Lâm, dù trước đó gọi đất trên chằm.",
+      "citationIds": [
+        "citation-ntt-q19-overview-ntt",
+        "citation-nhl-q19-overview-nhl",
+        "citation-pbc-q19-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 359 xác nhận chỗ không khớp. Tiêu đề, đoạn trước và lời Tượng PDF 361–362 đều cho đất trên chằm; giữ ngoại Khôn, nội Đoài."
+    },
+    {
+      "recordId": "hexagram-19",
+      "id": "discrepancy-ntt-lam-return-polarity",
+      "status": "resolved",
+      "description": "NTT PDF 360 phần Chu Hy gọi Phục có một khí âm, khác đoạn tính tám tháng sau đó.",
+      "citationIds": [
+        "citation-ntt-q19-overview-ntt",
+        "citation-ntt-q19-overview-chu-hy",
+        "citation-pbc-q19-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 360 xác nhận chữ âm. Trình Di PDF 361 và PBC PDF 215 đều xác định dương bắt đầu ở Phục rồi tăng thành Lâm. Giữ nghĩa một dương của Phục khi mô tả cách đếm, không tự tính lịch."
+    },
+    {
+      "recordId": "hexagram-19",
+      "id": "discrepancy-ntt-lam-first-label",
+      "status": "resolved",
+      "description": "NTT PDF 363 phần Tượng hào đầu gọi đối tượng là hào Hai.",
+      "citationIds": ["citation-ntt-q19-line-1-ntt"],
+      "resolution": "Ảnh PDF 363 xác nhận tên Hai; câu giải dương ở ngôi lẻ và ứng hào bốn thuộc hào đầu PDF 362. Giữ lời giải ở vị một, không gán quan hệ ứng bốn cho hào hai."
+    },
+    {
+      "recordId": "hexagram-20",
+      "id": "discrepancy-ntt-quan-second-negation",
+      "status": "resolved",
+      "description": "NTT PDF 375 kết lời Trình Di bằng câu hào Hai đã thấy rõ, trái các câu chỉ nhìn qua khe trước đó.",
+      "citationIds": [
+        "citation-ntt-q20-line-2-ntt",
+        "citation-nhl-q20-line-2-nhl",
+        "citation-pbc-q20-line-2-pbc"
+      ],
+      "resolution": "Ảnh PDF 375 xác nhận câu thiếu phủ định; phần tiếp PDF 376 nói chỉ dòm phảng phất và hai sách khác cùng giảng tầm nhìn hẹp. Giữ nghĩa chưa thấy rõ, không xóa hạn chế quan sát của hào hai."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-17",
-      "hexagram-18",
-      "hexagram-19",
-      "hexagram-20",
       "hexagram-21",
       "hexagram-22",
       "hexagram-23",
@@ -631,8 +776,8 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-17", "hexagram-18", "hexagram-19", "hexagram-20"],
+    "hexagramIds": ["hexagram-21", "hexagram-22", "hexagram-23", "hexagram-24"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán và BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71). Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–10 có các thuật ngữ và diễn giải được chọn. Các phần còn mơ hồ của Phi thần, Đằng Xà, Lâm Quan/Thoái và ví dụ điền thực vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Phệ Hạp, Bí, Bác, Phục. BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71) là phần còn lại của đợt này. Hai mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
