@@ -287,3 +287,11 @@ The [knowledge quality contract](../product-specs/knowledge-quality.md) defines 
 - V1 rules and source mapping → [Liu Yao ruleset](../design-docs/liuyao-ruleset-v1.md)
 - Content acceptance → [Knowledge quality](../product-specs/knowledge-quality.md)
 - Data ownership and storage → [Knowledge model](../design-docs/knowledge-model.md)
+
+## Reviewed display-name correction
+
+Đại Súc is Sơn Thiên: Cấn above Càn.
+NHL PDF 215, PBC PDF 268, and NTT PDF 446 agree on this structure.
+The legacy catalog and product glossary reversed the name to Thiên Sơn.
+The display-name correction preserves `hexagram-26` and its existing trigram IDs.
+The reversed name is not a source spelling variant.

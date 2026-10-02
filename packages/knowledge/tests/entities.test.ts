@@ -25,7 +25,7 @@ const EXPECTED_HEXAGRAM_GRID = [
   '34:Lôi Thiên Đại Tráng|54:Lôi Trạch Quy Muội|55:Lôi Hỏa Phong|51:Thuần Chấn|32:Lôi Phong Hằng|40:Lôi Thủy Giải|62:Lôi Sơn Tiểu Quá|16:Lôi Địa Dự',
   '09:Phong Thiên Tiểu Súc|61:Phong Trạch Trung Phu|37:Phong Hỏa Gia Nhân|42:Phong Lôi Ích|57:Thuần Tốn|59:Phong Thủy Hoán|53:Phong Sơn Tiệm|20:Phong Địa Quan',
   '05:Thủy Thiên Nhu|60:Thủy Trạch Tiết|63:Thủy Hỏa Ký Tế|03:Thủy Lôi Truân|48:Thủy Phong Tỉnh|29:Thuần Khảm|39:Thủy Sơn Kiển|08:Thủy Địa Tỷ',
-  '26:Thiên Sơn Đại Súc|41:Sơn Trạch Tổn|22:Sơn Hỏa Bí|27:Sơn Lôi Di|18:Sơn Phong Cổ|04:Sơn Thủy Mông|52:Thuần Cấn|23:Sơn Địa Bác',
+  '26:Sơn Thiên Đại Súc|41:Sơn Trạch Tổn|22:Sơn Hỏa Bí|27:Sơn Lôi Di|18:Sơn Phong Cổ|04:Sơn Thủy Mông|52:Thuần Cấn|23:Sơn Địa Bác',
   '11:Địa Thiên Thái|19:Địa Trạch Lâm|36:Địa Hỏa Minh Di|24:Địa Lôi Phục|46:Địa Phong Thăng|07:Địa Thủy Sư|15:Địa Sơn Khiêm|02:Thuần Khôn',
 ] as const;
 
