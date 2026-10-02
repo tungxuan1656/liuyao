@@ -243,6 +243,14 @@ Support:
 
 The API must work without network access.
 
+**Intended expanded access:** Web commentary and article views consume released records through the public package APIs.
+The application does not import authored JSON or generated corpus internals directly.
+The knowledge package owns reusable topic listing, release filtering, and article search when those capabilities are added.
+Preserve existing compatibility lookups and canonical IDs.
+The web layer owns presentation and combines a displayed quẻ ID with its selected domain position.
+Keep source PDFs outside runtime assets; citations remain readable offline without PDF distribution.
+The [Library specification](../product-specs/knowledge-browser.md#intended-book-backed-expansion) owns display behavior.
+
 ## Validation
 
 Structural validation checks shape and internal consistency.

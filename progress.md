@@ -943,3 +943,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: Final `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 158 local documentation targets, dependency graph, complete hào inventory, and diff checks passed. The prior 41 feature entries and current corpus remain unchanged.
 - Blockers: None for planning. No future content or audit feature has executed; specialist approval remains pending.
 - Next: Select feat-043 and build the source-to-record/exclusion crosswalk.
+
+## 2026-10-02 — feat-098–100 web integration planning
+
+- Status: todo; planning recorded, implementation not started.
+- Result: Added three web features for Library quẻ/hào details, contextual reading explanations, and topic/article/learning browsing with local search. Linked their intended contracts and dependencies into the roadmap. The backlog now contains 58 execution features.
+- Decision: Reuse released content without waiting for full-corpus certification. Complete feat-098 before its two dependents; future lessons do not block article browsing.
+- Evidence: `./init.sh` passed 263 tests with existing warnings. Corpus fingerprints, generated freshness, 163 local documentation targets, dependency graph, and diff checks passed. Prior feature entries, 384 audit items, corpus data, and application code remain unchanged.
+- Blockers: None for planning. Web behavior and direct UI checks remain unimplemented.
+- Next: Select feat-098 and assess implementation scope and external-plan criteria.

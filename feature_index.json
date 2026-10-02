@@ -635,6 +635,24 @@
       "title": "Verify audit invalidation and future correction workflow",
       "status": "todo",
       "depends_on": ["feat-096"]
+    },
+    {
+      "id": "feat-098",
+      "title": "Integrate reviewed quẻ and hào into Library details",
+      "status": "todo",
+      "depends_on": ["feat-009", "feat-023", "feat-032", "feat-041"]
+    },
+    {
+      "id": "feat-099",
+      "title": "Connect reading results to contextual quẻ and hào knowledge",
+      "status": "todo",
+      "depends_on": ["feat-098", "feat-008", "feat-022"]
+    },
+    {
+      "id": "feat-100",
+      "title": "Add topic article and learning browsing with local search",
+      "status": "todo",
+      "depends_on": ["feat-098", "feat-009", "feat-011", "feat-032"]
     }
   ]
 }

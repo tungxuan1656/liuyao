@@ -1,6 +1,6 @@
 # Knowledge completion and verification roadmap
 
-This document owns navigation and sequencing for the requested full supplied-book corpus.
+This document owns navigation and sequencing for the requested supplied-book corpus and its web integration.
 It was created on 2026-10-02 after feat-041.
 [Feature state](../feature_index.json) owns status and dependencies; each feature owns its scope and acceptance.
 The [coverage report](../packages/knowledge/reports/coverage.json) owns live dataset counts.
@@ -48,7 +48,7 @@ Positions are bottom-to-top; special Càn/Khôn passages are outside this count.
 
 ## Feature size and execution route
 
-The backlog groups work into **55 intended execution features** for the four supplied books.
+The backlog groups work into **58 intended execution features**: 55 corpus features and three web integration features.
 A feature closes a coherent content or audit group.
 Quẻ, hào, chapters, questions, diagrams, and source cells remain separately reviewable units inside it.
 
@@ -57,16 +57,21 @@ Quẻ, hào, chapters, questions, diagrams, and source cells remain separately r
 - Intended ledgers retain one record per quẻ and individual decisions for every source unit.
 - Ten group audit features cover foundations, tables, BPCT groups, classical traditions, and learning content.
 - Independent approval, final certification, and later correction checks have separate gates.
+- Three web features reuse released records for Library details, result explanations, and topic/article browsing.
 
-All execution features below start as `todo`.
-Only [feat-042](feat-042.md), which creates this roadmap, is selected in this session.
-Creating features does not execute authoring, audits, or certification.
+All execution features below start as `todo`; [feat-042](feat-042.md) records completed corpus-roadmap creation.
+Adding the web plans does not activate their implementation.
+Creating features does not execute authoring, audits, web changes, or certification.
 
 1. Select feat-043 and reconcile every supplied section/page with records or a specific exclusion.
 2. Complete the authoring chain, feat-044 through feat-066, committing coherent checkpoints within each feature.
 3. Implement audit evidence in feat-067; then select eligible quẻ and group audits.
 4. Reconcile all topic/source findings, obtain named specialist approval, and run final certification.
 5. Verify that future changes reopen affected evidence without erasing history.
+
+The web branch can start with existing released content before corpus authoring or certification finishes.
+Complete feat-098 first; feat-099 and feat-100 then reuse its source presentation.
+Future learning articles from feat-065 populate existing article routes when released; their absence does not block browser delivery.
 
 Keep at most one feature active and follow [repository lifecycle rules](../AGENTS.md#feature-state).
 Plans stay inline until selected work meets the repository criteria for an external plan.
@@ -85,6 +90,7 @@ Split a selected feature only when its checkpoints have distinct acceptance or b
 | All source groups and tables     | [084](feat-084.md)–[093](feat-093.md) | Every assigned unit and independent expected table passes.                                           |
 | Reconciliation and certification | [094](feat-094.md)–[096](feat-096.md) | Current decisions, resolved findings, and specialist approval satisfy all gates.                     |
 | Future correction workflow       | [097](feat-097.md)                    | Changed inputs invalidate affected decisions and require focused re-review.                          |
+| Web reference integration        | [098](feat-098.md)–[100](feat-100.md) | Released quẻ/hào, result contexts, and topic/article routes satisfy their web and offline checks.    |
 
 ## Source boundaries and coverage ownership
 
@@ -212,7 +218,25 @@ Source limitations and excluded uncertainty remain visible in the reviewed snaps
 Coverage counts do not establish numerical certainty or predictive efficacy.
 The [quality contract](../docs/product-specs/knowledge-quality.md#completion-and-later-corrections) defines what completion can establish.
 
+## Web integration branch
+
+These plans add reference views using the existing package boundaries.
+They preserve calculated results and do not activate automated interpretation or calendar analysis.
+The [Library specification](../docs/product-specs/knowledge-browser.md#intended-book-backed-expansion) and
+[result specification](../docs/product-specs/reading-result.md#intended-book-reference-contexts) own intended behavior.
+
+| Feature                 | Planned delivery                                                                         | Prerequisites                                                    |
+| ----------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| [feat-098](feat-098.md) | Quẻ overview, six hào, separate author layers, and passage citations in Library details. | Existing Library contracts and released corpus through feat-041. |
+| [feat-099](feat-099.md) | Correct primary/changed quẻ and selected-position explanations from reading results.     | feat-098 presentation and existing result/navigation contracts.  |
+| [feat-100](feat-100.md) | Topic groups, BPCT/classical/learning articles, local search, and offline detail routes. | feat-098 presentation and existing PWA/Library contracts.        |
+
+These features do not depend on corpus completion or independent certification.
+Their acceptance checks released and unavailable content, correct context, accessibility, and offline behavior.
+Suggested PR grouping follows these three deliveries, with coherent checkpoint commits inside each PR.
+
 ## Concrete next action
 
-Select feat-043 and build the source-to-record/exclusion crosswalk before resuming bulk authoring.
-The existing coverage report's next content group remains Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16.
+For web work, select feat-098 and integrate the existing released quẻ/hào content.
+For corpus authoring, feat-043 still owns the source-to-record/exclusion crosswalk before bulk authoring resumes.
+The next content group remains Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16.
