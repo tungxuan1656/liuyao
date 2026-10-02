@@ -68,6 +68,11 @@ Review includes complete passages, six positions, footnotes, and rendered headin
 Related evidence includes NHL chapter 5, PDF 94, and PBC endnote 18, PDF 655.
 Ngô Tất Tố's selected footnote citations remain separate from Trình Di and Chu Hy commentary.
 
+The [batch-seven classical citations](../../packages/knowledge/data/citations/batch-seven-hexagrams.json) locate Vô Vọng, Đại Súc, Di, and Đại Quá.
+Review covers NHL PDF 212–223, PBC PDF 261–293, and NTT PDF 433–482.
+It includes complete passages, six positions, footnotes, rendered headings, diagrams, and discrepancy pages.
+Selected Tiên Nho statements retain the named commentator's attribution through Ngô Tất Tố.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -107,6 +112,15 @@ Review also covers part II, question 14, PDF 401–403 (printed 354–356).
 Its critical Ghi chú at PDF 403 remains a separate translator opinion.
 
 The records preserve conditions and the Thân-to-Tị exception without activating a calendar or classifier.
+
+The [combination/opposition and recovery citations](../../packages/knowledge/data/citations/batch-seven-advanced.json)
+cover BPCT chapter 5, sections 15–16, PDF 72–73 (printed 60–61).
+Related evidence includes chapter 6, PDF 78, 84, and 94 (printed 64, 70, and 80).
+Review also covers complete questions 12–13 and their notes, PDF 393–401 (printed 346–354).
+Vĩnh Cao's footnotes 8 at PDF 72 and 9 at PDF 399 remain separate translator statements.
+
+The records distinguish whole-quẻ changes from effects on individual hào.
+They preserve the question's purpose, affected spirit, support strength, and conditional readings of Thổ at Tị.
 
 NHL printed footer labels were checked on every page used by its released citations.
 The labels match the PDF numbers for those locations; the citation collections now include both.
@@ -192,6 +206,22 @@ Selected differences remain attributed: Phệ Hạp's gold/arrow image, Bí's fo
 Punishment and gender-role images retain their historical setting.
 The selected Phục summaries distinguish traditional text readings from a date-conversion or prediction algorithm.
 
+The [Vô Vọng](../../packages/knowledge/data/hexagrams/hexagram-25.json),
+[Đại Súc](../../packages/knowledge/data/hexagrams/hexagram-26.json), and
+[Di](../../packages/knowledge/data/hexagrams/hexagram-27.json) records own six further source-error resolutions.
+These concern a line label, a Chinese numeral, copied fifth-line text, a quẻ name, a footnote glyph, and a danger word.
+Rendered pages and the surrounding translations and commentary support each resolution.
+
+Đại Súc is Sơn Thiên: Cấn above Càn.
+NHL PDF 215, PBC PDF 268, and NTT PDF 446 agree on this structure.
+The legacy catalog and product glossary reversed the name to Thiên Sơn.
+The correction preserves `hexagram-26` and its existing trigram IDs.
+The reversed name is not a source spelling variant.
+
+Vô Vọng preserves different readings of unplanned gain and unsolicited harm.
+Di keeps Trình Di's authority image separate from Chu Hy's focused request for help.
+[Đại Quá](../../packages/knowledge/data/hexagrams/hexagram-28.json) distinguishes Trình Di's self-caused danger from Chu Hy's moral reading of the final line.
+
 The [Phản ngâm article](../../packages/knowledge/data/liuyao/reverse-chant-context.json)
 owns the Cấn naming resolution on BPCT PDF 71.
 The mountain examples and chapter 1 palace list support Cấn–Khôn despite the inconsistent Càn/Cần names in that paragraph.
@@ -208,6 +238,13 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
 - NHL PDF 209 gives a sequence around the seven-day phrase that differs from the explicit Cấu-to-Phục sequence at PDF 94.
   The selected summary uses PDF 94 for that sequence.
   The content of PDF 209's reference (1) was not located during this review and does not support a released timing claim.
+- NTT PDF 461 labels both a long paragraph and its short counterpart as Chu Hy.
+  The selected Di overview uses the clearly attributed Trình Di passage at PDF 459–460.
+  This batch does not reassign the long paragraph or author a new claim from it without the underlying edition.
+- Đại Súc's third and sixth lines are both yang.
+  The commentaries' shared-purpose wording does not establish an opposite-polarity formal response pair.
+- Vô Vọng's illness/medicine and Di's nourishment images remain historical commentary, not medical or nutrition guidance.
+  Đại Quá's final-line summaries preserve danger and do not recommend self-harm.
 
 ### Advanced exclusions
 
@@ -253,6 +290,14 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
 - BPCT PDF 72 uses Tam hình in the Thân-to-Tị exception, while Vĩnh Cao's Ghi chú at PDF 403 rejects Tam hình/Lục hại.
   The [combination/control article](../../packages/knowledge/data/liuyao/combination-control-context.json) preserves both textual layers without combining them into one rule.
   No exhaustive Tam hình table or outcome classifier is released.
+- BPCT PDF 73, section 16, places Tuyệt at the day beside hóa Tuyệt in its negative Thổ sentence.
+  The attributed article preserves that wording and its adverse condition without deriving a complete priority table for day, month, and transformation.
+- BPCT PDF 78, sentence 4, calls Hợi–Mão–Mùi a Thủy cục; chapter 1, PDF 16, identifies it as Mộc.
+  This batch uses only the Dụng/Kỵ support distinction, not that paragraph's entire củng/hợp inventory.
+- Questions 12–13 contain illness outcomes and timing claims, including conflicting timing in the PDF 400 example.
+  This batch selects support conditions and role distinctions, not medical predictions or evidence that the reported outcomes occurred.
+- Vĩnh Cao's footnote 9 at PDF 399 disputes the main text's Dụng thần selection for a letter.
+  The [combination/opposition article](../../packages/knowledge/data/liuyao/combination-opposition-turnarounds.json) retains the disagreement instead of importing a unanimous worked example.
 
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
 They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.
@@ -287,11 +332,3 @@ The [knowledge quality contract](../product-specs/knowledge-quality.md) defines 
 - V1 rules and source mapping → [Liu Yao ruleset](../design-docs/liuyao-ruleset-v1.md)
 - Content acceptance → [Knowledge quality](../product-specs/knowledge-quality.md)
 - Data ownership and storage → [Knowledge model](../design-docs/knowledge-model.md)
-
-## Reviewed display-name correction
-
-Đại Súc is Sơn Thiên: Cấn above Càn.
-NHL PDF 215, PBC PDF 268, and NTT PDF 446 agree on this structure.
-The legacy catalog and product glossary reversed the name to Thiên Sơn.
-The display-name correction preserves `hexagram-26` and its existing trigram IDs.
-The reversed name is not a source spelling variant.

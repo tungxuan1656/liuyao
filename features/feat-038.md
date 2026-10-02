@@ -23,7 +23,7 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 - [x] Each released claim has complete passage review and an exact edition citation.
 - [x] Content groups have separate verified commits.
 - [x] Coverage and manifest identify remaining gaps and the next batch.
-- [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
+- [x] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
 
 ## Relevant docs
 
@@ -36,16 +36,18 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 1. Review complete classical passages, footnotes, diagrams, and source errors. Done.
 2. Author four quẻ, migrate legacy records, verify, and commit. Done.
 3. Review related BPCT passages, author conditional records, verify, and commit. Done.
-4. Reconcile source documentation, verify, and commit the handoff.
+4. Reconcile source documentation, verify, and commit the handoff. Done.
 
 ## Evidence
 
 Released corpus: 145 records, 885 claims, 716 citations.
 `./init.sh` passed (263 tests). Fingerprints, freshness, and diff checks passed.
 All 195 NHL and nine new BPCT citations have verified printed labels.
+Ninety-two local documentation routes passed review.
+Commits: name `743b17e`, classical `2443953`, advanced `31d8866`.
 
 ## Handoff
 
-- State: active.
+- State: done.
 - Blockers: none.
-- Next: Reconcile source documentation and verify the handoff.
+- Next: Review Khảm, Ly, Hàm, Hằng and BPCT sections 17–18, PDF 73.
