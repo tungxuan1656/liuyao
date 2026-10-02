@@ -20,6 +20,7 @@ import citations14 from '../data/citations/batch-eight-hexagrams.json' with { ty
 import citations15 from '../data/citations/batch-eight-advanced.json' with { type: 'json' };
 import citations16 from '../data/citations/batch-nine-hexagrams.json' with { type: 'json' };
 import citations17 from '../data/citations/batch-nine-advanced.json' with { type: 'json' };
+import citations18 from '../data/citations/batch-ten-hexagrams.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -181,6 +182,10 @@ import record157 from '../data/terms/term-peak-stage.json' with { type: 'json' }
 import record158 from '../data/liuyao/balance-excess-and-deficiency.json' with { type: 'json' };
 import record159 from '../data/liuyao/support-and-control-context.json' with { type: 'json' };
 import record160 from '../data/liuyao/growth-and-peak-day-context.json' with { type: 'json' };
+import record161 from '../data/hexagrams/hexagram-37.json' with { type: 'json' };
+import record162 from '../data/hexagrams/hexagram-38.json' with { type: 'json' };
+import record163 from '../data/hexagrams/hexagram-39.json' with { type: 'json' };
+import record164 from '../data/hexagrams/hexagram-40.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -343,6 +348,10 @@ export const BOOK_RECORDS = [
   record158,
   record159,
   record160,
+  record161,
+  record162,
+  record163,
+  record164,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -363,6 +372,7 @@ export const BOOK_CITATIONS = [
   ...citations15.citations,
   ...citations16.citations,
   ...citations17.citations,
+  ...citations18.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

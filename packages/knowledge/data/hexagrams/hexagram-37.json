@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-37",
+  "type": "hexagram",
+  "title": "Phong Hỏa Gia Nhân",
+  "aliases": ["Gia Nhân"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-37-structure",
+      "kind": "structural-fact",
+      "text": "Phong Hỏa Gia Nhân có ngoại quái Tốn và nội quái Ly. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q37-overview-nhl",
+        "citation-pbc-q37-overview-pbc",
+        "citation-ntt-q37-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-37-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đặt việc nhà trên sự ngay chính của mọi thành viên, kể cả cha mẹ, theo trật tự gia đình cổ. Tu thân làm gốc cho trị nhà và việc ngoài; lời nói cần có sự thực, hành động phải nhất quán.",
+      "citationIds": ["citation-nhl-q37-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+      ]
+    },
+    {
+      "id": "hexagram-37-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu xem đạo nhà là nền của việc nước, với trách nhiệm tương ứng của người trên và người dưới. Cả cha lẫn mẹ đều phải giữ phép; người trên không làm tròn phận mình thì không thể chỉ đòi người dưới làm đúng.",
+      "citationIds": ["citation-pbc-q37-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+      ]
+    },
+    {
+      "id": "hexagram-37-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt Gia Nhân trong các quan hệ thân thuộc có thứ tự của gia đình cổ. Muốn sửa nhà phải tự sửa mình: nói có nội dung thực, làm đều đặn, để cách sống của người trên có thể thành khuôn phép.",
+      "citationIds": ["citation-ntt-q37-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-fire", "trigram-wind"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yang", "yin", "yang", "yang"],
+    "kingWenNumber": 37,
+    "upperTrigramId": "trigram-wind",
+    "lowerTrigramId": "trigram-fire",
+    "claimIds": ["hexagram-37-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-37-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hào đầu theo việc phòng những thói lười và xa xỉ ngay khi lập nhà. Ngăn từ sớm là cách tránh điều phải hối về sau trong khuôn phép gia đình cổ.",
+          "citationIds": ["citation-nhl-q37-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu khuyên lập phép nhà từ đầu, trước khi ý riêng và thói quen khó sửa. Việc giữ nhà cần cả tình thân lẫn điều phải: quá nghiêm làm hại tình, quá chiều làm mất nghĩa.",
+          "citationIds": ["citation-pbc-q37-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào đầu là lúc cần phòng ngăn sớm để chí chưa đổi và đạo nhà còn giữ được. Để mất trật tự rồi mới dùng sức cưỡng lại vừa khó vừa dễ gây hối.",
+          "citationIds": ["citation-ntt-q37-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-37-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê gán hào hai cho người mềm ở vị thấp, không đủ sức gánh việc trị nhà theo cách nhìn của ông. Lời tốt thuộc việc giữ chính trong phần việc ăn uống ở trong nhà, theo vai phụ nữ của chú giải cổ.",
+          "citationIds": ["citation-nhl-q37-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai không đủ tài cương để tự làm chủ việc lớn của gia đình. Trong vai dâu hoặc con gái mà ông đặt cho hào này, thuận và giữ chính trong công việc trong nhà mới phù hợp lời tốt.",
+          "citationIds": ["citation-pbc-q37-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho tính quá mềm của hào hai không hợp làm người trị nhà, nhưng hợp vai phụ nữ ở trong theo trật tự cổ. Trung chính và làm đúng phần việc ăn uống là điều kiện của lời tốt trong cách giải ấy.",
+          "citationIds": ["citation-ntt-q37-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-37-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê so cách giữ nhà quá nghiêm với cách quá dễ dãi. Cả hai đều thiếu mức vừa phải; ông cho sự nghiêm tuy gây hối và nguy còn giữ được trật tự, còn quá chiều khiến nhà suy loạn.",
+          "citationIds": ["citation-nhl-q37-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại.",
+            "So sánh nghiêm và dễ dãi là nhận định của tác giả trong bối cảnh cổ, không khuyến khích cưỡng ép hay bạo hành gia đình."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba quá cương, khiến người nhà sợ và có thể sinh hối. Ông vẫn đặt việc giữ nghĩa cao hơn sự vui đùa quá mức, đồng thời xem cả nghiêm quá lẫn chiều quá là chưa đạt trung đạo.",
+          "citationIds": ["citation-pbc-q37-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại.",
+            "So sánh nghiêm và dễ dãi là nhận định của tác giả trong bối cảnh cổ, không khuyến khích cưỡng ép hay bạo hành gia đình."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào ba ở người quá cương, có thể làm tổn tình thân vì nghiêm. Theo phép trị nhà của ông, giữ kỷ cương như vậy còn hơn buông phép, nhưng cách tốt nhất vẫn cần mức vừa phải.",
+          "citationIds": ["citation-ntt-q37-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại.",
+            "So sánh nghiêm và dễ dãi là nhận định của tác giả trong bối cảnh cổ, không khuyến khích cưỡng ép hay bạo hành gia đình."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-37-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê theo cách đọc của Phan Bội Châu: phú gia là gia đạo thịnh, không chỉ làm tăng tiền của. Người mềm thuận mà đúng vị giúp các quan hệ trong nhà được hòa và làm tròn phận.",
+          "citationIds": ["citation-nhl-q37-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu phân biệt sự giàu về đạo nhà với giàu tiền của ở hào bốn. Mọi người trong nhà làm đúng phận và giữ hòa thuận mới là nội dung của lời rất tốt.",
+          "citationIds": ["citation-pbc-q37-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc hào bốn theo việc giữ được sự giàu có của gia đình. Mềm thuận ở đúng vị giúp bảo toàn của cải; cách đọc này giữ riêng với nghĩa gia đạo thịnh của Phan Bội Châu.",
+          "citationIds": ["citation-ntt-q37-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho hào bốn mềm mà ở ngôi cao, đúng vị nên có thể làm nhà giàu. Ý làm tăng sự giàu có khác trọng tâm giữ của trong lời Trình Di và nghĩa giàu đạo nhà của Phan Bội Châu.",
+          "citationIds": ["citation-ntt-q37-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-37-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê hiểu cách gia ở hào năm là đạt mức hoàn thiện của việc trị nhà. Người đứng đầu cương trung chính, cùng hào hai mềm trung chính, làm cho đạo nhà tốt mà không cần lo sợ.",
+          "citationIds": ["citation-nhl-q37-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc cách gia theo đạo nhà đến chỗ hoàn thiện, với hào hai và hào năm đều làm đúng phận trong ngoài. Cách trị ấy cần tình thân và lòng thành, không chỉ cưỡng người dưới theo phép.",
+          "citationIds": ["citation-pbc-q37-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho cách gia là đạo nhà đạt tột bậc nhờ người đứng đầu trung chính và người trong cùng giữ đúng. Tình yêu thương phải thành thực, khiến mọi người được cảm hóa, thay vì chỉ dùng sức ép để họ tuân theo.",
+          "citationIds": ["citation-ntt-q37-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc cách gia theo việc vua đến với nhà, và đặt lời chiêm trong chuyện cưới vợ của vua thời cổ. Đức trung chính của hai hào hai và năm là điều kiện của lời tốt; cách đọc đến nhà khác nghĩa tột bậc của Trình Di.",
+          "citationIds": ["citation-ntt-q37-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-37-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào cuối là kết quả lâu dài của việc trị nhà. Lòng thành cùng sự nghiêm giữ từ đầu tới cuối làm đạo nhà bền và phù hợp lời tốt.",
+          "citationIds": ["citation-nhl-q37-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho uy ở hào cuối bắt nguồn từ chính mình nghiêm chỉnh và thành thực. Đạo nhà lâu bền nhờ người trên tự giữ, không phải lấy hình phạt làm nguồn của uy.",
+          "citationIds": ["citation-pbc-q37-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-37-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt thành tín làm gốc và uy nghiêm làm phần giữ đạo nhà. Người trị nhà phải tự sửa thân cho mọi người kính phục, thay vì chỉ đòi người khác sợ mình.",
+          "citationIds": ["citation-ntt-q37-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Vai nam nữ, trên dưới và việc trị nhà thuộc trật tự gia đình của chú giải cổ; không quy định khả năng hay bổn phận cố định của người hiện đại."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-nhl-gia-nhan-second-reading",
+      "status": "resolved",
+      "description": "NHL PDF 249 dịch âm hào hai ghi vô du loại, khác chữ Hán 遂 và âm toại ở NTT PDF 587.",
+      "citationIds": [
+        "citation-nhl-q37-line-2-nhl",
+        "citation-ntt-q37-line-2-ntt",
+        "citation-pbc-q37-line-2-pbc"
+      ],
+      "resolution": "Ảnh xác nhận âm loại trong NHL. Giữ nghĩa không tự chuyên làm thành việc theo đoạn giảng NHL và hai sách khác; không nhập loại thành tên thuật ngữ. Âm tuy của PBC giữ như cách đọc của bản ấy, không sửa hàng loạt phiên âm."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q37-overview-nhl",
+      "citation-pbc-q37-overview-pbc",
+      "citation-ntt-q37-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q37-line-1-nhl",
+      "citation-pbc-q37-line-1-pbc",
+      "citation-ntt-q37-line-1-ntt",
+      "citation-nhl-q37-line-2-nhl",
+      "citation-pbc-q37-line-2-pbc",
+      "citation-ntt-q37-line-2-ntt",
+      "citation-nhl-q37-line-3-nhl",
+      "citation-pbc-q37-line-3-pbc",
+      "citation-ntt-q37-line-3-ntt",
+      "citation-nhl-q37-line-4-nhl",
+      "citation-pbc-q37-line-4-pbc",
+      "citation-ntt-q37-line-4-ntt",
+      "citation-ntt-q37-line-4-chu-hy",
+      "citation-nhl-q37-line-5-nhl",
+      "citation-pbc-q37-line-5-pbc",
+      "citation-ntt-q37-line-5-ntt",
+      "citation-ntt-q37-line-5-chu-hy",
+      "citation-nhl-q37-line-6-nhl",
+      "citation-pbc-q37-line-6-pbc",
+      "citation-ntt-q37-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Diễn giải mới giữ các lớp tác giả riêng. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập hoặc xác nhận năng lực dự báo. Giữ riêng nghĩa phú gia và cách gia của các tác giả; không nhập mô tả gió/lửa thành kiến thức vật lý hiện đại."
+  }
+}

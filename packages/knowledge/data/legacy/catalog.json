@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-37",
-        "name": "Phong Hỏa Gia Nhân",
-        "aliases": [],
-        "explanation": "Quẻ số 37 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Tốn.",
-        "kingWenNumber": 37,
-        "upperTrigramId": "trigram-wind",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-38",
-        "name": "Hỏa Trạch Khuê",
-        "aliases": [],
-        "explanation": "Quẻ số 38 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Ly.",
-        "kingWenNumber": 38,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-lake",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-39",
-        "name": "Thủy Sơn Kiển",
-        "aliases": [],
-        "explanation": "Quẻ số 39 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Khảm.",
-        "kingWenNumber": 39,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-mountain",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-40",
-        "name": "Lôi Thủy Giải",
-        "aliases": [],
-        "explanation": "Quẻ số 40 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Chấn.",
-        "kingWenNumber": 40,
-        "upperTrigramId": "trigram-thunder",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-41",
         "name": "Sơn Trạch Tổn",
         "aliases": [],

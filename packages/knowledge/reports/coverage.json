@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 161, "released": 161, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 1111, "missingCitationIds": [] },
-  "citations": { "total": 916 },
+  "records": { "authored": 165, "released": 165, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 1208, "missingCitationIds": [] },
+  "citations": { "total": 1009 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 36,
+    "reviewed": 40,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -46,13 +46,13 @@
       "hexagram-33",
       "hexagram-34",
       "hexagram-35",
-      "hexagram-36"
-    ],
-    "missingIds": [
+      "hexagram-36",
       "hexagram-37",
       "hexagram-38",
       "hexagram-39",
-      "hexagram-40",
+      "hexagram-40"
+    ],
+    "missingIds": [
       "hexagram-41",
       "hexagram-42",
       "hexagram-43",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 216,
+    "reviewedPositions": 240,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 36,
-        "reviewedLinePositions": 216,
+        "overviewHexagrams": 40,
+        "reviewedLinePositions": 240,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 36,
-        "reviewedLinePositions": 216,
+        "overviewHexagrams": 40,
+        "reviewedLinePositions": 240,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 36,
-        "reviewedLinePositions": 216,
+        "overviewHexagrams": 40,
+        "reviewedLinePositions": 240,
         "missingPilotPositions": []
       }
     ]
@@ -177,7 +177,11 @@
         "hexagram-33",
         "hexagram-34",
         "hexagram-35",
-        "hexagram-36"
+        "hexagram-36",
+        "hexagram-37",
+        "hexagram-38",
+        "hexagram-39",
+        "hexagram-40"
       ]
     },
     {
@@ -221,7 +225,11 @@
         "hexagram-33",
         "hexagram-34",
         "hexagram-35",
-        "hexagram-36"
+        "hexagram-36",
+        "hexagram-37",
+        "hexagram-38",
+        "hexagram-39",
+        "hexagram-40"
       ]
     },
     {
@@ -1173,15 +1181,62 @@
         "citation-ntt-q36-line-6-ntt"
       ],
       "resolution": "Ảnh xác nhận sự không khớp. Chữ Hán và hai sách khác đọc hối theo sự tối; giữ ý tối cùng trong lời NHL, không chép âm di làm tên khác của quẻ. Không sửa lời giải riêng của NHL về sự sáng bị hại."
+    },
+    {
+      "recordId": "hexagram-37",
+      "id": "discrepancy-nhl-gia-nhan-second-reading",
+      "status": "resolved",
+      "description": "NHL PDF 249 dịch âm hào hai ghi vô du loại, khác chữ Hán 遂 và âm toại ở NTT PDF 587.",
+      "citationIds": [
+        "citation-nhl-q37-line-2-nhl",
+        "citation-ntt-q37-line-2-ntt",
+        "citation-pbc-q37-line-2-pbc"
+      ],
+      "resolution": "Ảnh xác nhận âm loại trong NHL. Giữ nghĩa không tự chuyên làm thành việc theo đoạn giảng NHL và hai sách khác; không nhập loại thành tên thuật ngữ. Âm tuy của PBC giữ như cách đọc của bản ấy, không sửa hàng loạt phiên âm."
+    },
+    {
+      "recordId": "hexagram-38",
+      "id": "discrepancy-nhl-khue-third-polarity",
+      "status": "resolved",
+      "description": "NHL PDF 252 giảng hào ba là dương ở vị âm, trái nhãn Lục tam, bản dịch ngay trên và hình quẻ.",
+      "citationIds": [
+        "citation-nhl-q38-line-3-nhl",
+        "citation-pbc-q38-line-3-pbc",
+        "citation-ntt-q38-line-3-ntt"
+      ],
+      "resolution": "Ảnh xác nhận câu giảng sai cả tính hào và tính vị. Giữ hào ba âm ở vị dương theo đầu hào, hình quẻ và hai sách khác; không thay quan hệ ba–sáu."
+    },
+    {
+      "recordId": "hexagram-38",
+      "id": "discrepancy-ntt-khue-third-neighbors",
+      "status": "resolved",
+      "description": "NTT PDF 603 Trình Di dưới Tượng gọi hào ba ở giữa hai hào âm, khác phần giải trước và hai hào hai, bốn dương.",
+      "citationIds": [
+        "citation-ntt-q38-line-3-ntt",
+        "citation-ntt-q38-line-2-ntt",
+        "citation-ntt-q38-line-4-ntt",
+        "citation-nhl-q38-line-3-nhl",
+        "citation-pbc-q38-line-3-pbc"
+      ],
+      "resolution": "Ảnh xác nhận chữ âm. Giữ hai hào dương lân cận theo phần giải ở PDF 602, đầu hào và cấu trúc cả ba sách; không đổi hai và bốn thành âm."
+    },
+    {
+      "recordId": "hexagram-39",
+      "id": "discrepancy-ntt-kien-fifth-label",
+      "status": "resolved",
+      "description": "NTT PDF 620 Chu Hy gọi người lớn là hào Sáu Năm, khác Cửu ngũ và hình quẻ.",
+      "citationIds": [
+        "citation-ntt-q39-line-6-chu-hy",
+        "citation-ntt-q39-line-5-ntt",
+        "citation-nhl-q39-line-5-nhl",
+        "citation-pbc-q39-line-5-pbc"
+      ],
+      "resolution": "Ảnh xác nhận nhãn Sáu Năm. Giữ đối tượng ở vị năm dương, tức Chín Năm, theo đầu hào và cả ba hình quẻ; không chuyển người lớn sang hào khác."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-37",
-      "hexagram-38",
-      "hexagram-39",
-      "hexagram-40",
       "hexagram-41",
       "hexagram-42",
       "hexagram-43",
@@ -1211,8 +1266,8 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-37", "hexagram-38", "hexagram-39", "hexagram-40"],
+    "hexagramIds": ["hexagram-41", "hexagram-42", "hexagram-43", "hexagram-44"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải và BPCT Chương 6, câu 7–11 (PDF 79–81): Tử Mộ Tuyệt Không, Nhật thần, Nguyệt kiến, Tuế quân và Quái thân. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 1–6 có các diễn giải được chọn. Các câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Tổn, Ích, Quải, Cấu. BPCT Chương 6, câu 7–11 (PDF 79–81) là phần còn lại của đợt này. Bốn mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; phần chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
