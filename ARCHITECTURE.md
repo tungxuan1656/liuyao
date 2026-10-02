@@ -81,7 +81,7 @@ The web layer adapts `crypto.getRandomValues` to the injected coin-bit source. T
 The knowledge package validates authored JSON and exposes readonly lookup and normalized search APIs.
 The [knowledge model](docs/design-docs/knowledge-model.md) defines reviewed releases and unaudited compatibility records.
 The web build bundles these records for offline use.
-The supplied PDFs in `docs/books/` are research inputs outside the runtime flow.
+The supplied PDFs are research inputs outside the runtime flow. They stay local under `docs/books/` and are not versioned.
 
 ## Verification ownership
 

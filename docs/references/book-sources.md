@@ -7,16 +7,16 @@ See [Licensing](../../LICENSING.md) for usage rights.
 ## Source inventory
 
 The keys below identify these exact files for documentation review.
-The [JSON source inventory](../../packages/knowledge/data/sources.json) owns runtime work IDs, edition IDs, fingerprints, and bibliographic metadata.
+The [JSON source inventory](../../packages/knowledge/data/sources.json) owns runtime work IDs, edition IDs, fingerprints, local file paths, and bibliographic metadata.
 Runtime IDs use `source-book-<key>` with lowercase keys.
 Page numbers count PDF pages from one, including covers.
 
-| Key    | Supplied source                                                                                    | PDF pages | Edition evidence                                                                                                          | Use                                                                        |
-| ------ | -------------------------------------------------------------------------------------------------- | --------: | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `BPCT` | [Tăng bổ Bốc Phệ Chính Tông](<../books/Tăng bổ bốc phệ chính tông.pdf>)                            |       467 | Vương Hồng Tự compilation. Vĩnh Cao translates and annotates the Vietnamese text, identified on PDF pages 1–3.            | Liu Yao board rules and attributed advanced doctrine.                      |
-| `PBC`  | [Quốc văn Chu Dịch diễn giải](<../books/Quốc văn chu dịch diễn giải Phan Bội Châu.pdf>)            |       655 | Phan Bội Châu. Chương Thâu discusses manuscript and edition history on PDF pages 9–10.                                    | Hexagram names, classical text, and attributed commentary.                 |
-| `NTT`  | [Kinh Dịch trọn bộ](<../books/Kinh dịch Ngô Tất Tố.pdf>)                                           |       938 | Ngô Tất Tố translates and annotates. The title page names Nhà xuất bản Văn Học. An exact publication year is unconfirmed. | Classical terminology and commentary associated with Trình Di and Chu Hy.  |
-| `NHL`  | [Kinh Dịch — Đạo của người quân tử](<../books/Kinh dịch đạo của người quân tử Nguyễn Hiến Lê.pdf>) |       393 | Nguyễn Hiến Lê. PDF page 2 reports correction against a ninth Văn Học reprint and Alfred Huang, dated 2014-11-01.         | Introductory terminology, hexagram structure, and attributed explanations. |
+| Key    | Supplied source                   | PDF pages | Edition evidence                                                                                                          | Use                                                                        |
+| ------ | --------------------------------- | --------: | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `BPCT` | Tăng bổ Bốc Phệ Chính Tông        |       467 | Vương Hồng Tự compilation. Vĩnh Cao translates and annotates the Vietnamese text, identified on PDF pages 1–3.            | Liu Yao board rules and attributed advanced doctrine.                      |
+| `PBC`  | Quốc văn Chu Dịch diễn giải       |       655 | Phan Bội Châu. Chương Thâu discusses manuscript and edition history on PDF pages 9–10.                                    | Hexagram names, classical text, and attributed commentary.                 |
+| `NTT`  | Kinh Dịch trọn bộ                 |       938 | Ngô Tất Tố translates and annotates. The title page names Nhà xuất bản Văn Học. An exact publication year is unconfirmed. | Classical terminology and commentary associated with Trình Di and Chu Hy.  |
+| `NHL`  | Kinh Dịch — Đạo của người quân tử |       393 | Nguyễn Hiến Lê. PDF page 2 reports correction against a ninth Văn Học reprint and Alfred Huang, dated 2014-11-01.         | Introductory terminology, hexagram structure, and attributed explanations. |
 
 All four PDFs contain extractable text.
 Some diagrams and blank pages contain little text.
@@ -29,6 +29,9 @@ Use the SHA-256 values in the [JSON source inventory](../../packages/knowledge/d
 `pnpm --filter @liuyao/knowledge validate:corpus --check-books` verifies all four supplied inputs.
 When a file changes, repeat its passage and locator review.
 Keep the supplied filenames unchanged.
+
+The four PDFs are local research inputs and are not versioned in this repository.
+Place each file at the `localInputPath` recorded in the JSON source inventory before reviewing a passage.
 
 ## Reviewed locations
 
