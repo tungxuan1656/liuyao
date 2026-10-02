@@ -73,6 +73,11 @@ Review covers NHL PDF 212–223, PBC PDF 261–293, and NTT PDF 433–482.
 It includes complete passages, six positions, footnotes, rendered headings, diagrams, and discrepancy pages.
 Selected Tiên Nho statements retain the named commentator's attribution through Ngô Tất Tố.
 
+The [batch-eight classical citations](../../packages/knowledge/data/citations/batch-eight-hexagrams.json) locate Khảm, Ly, Hàm, and Hằng.
+Review covers NHL PDF 224–235, PBC PDF 294–328, and NTT PDF 483–533.
+It includes complete passages, six positions, available footnotes, rendered headings, diagrams, and discrepancy pages.
+Trình Di and Chu Hy retain separate readings, including Khảm's fourth and fifth lines and Hàm's third and fifth lines.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -121,6 +126,12 @@ Vĩnh Cao's footnotes 8 at PDF 72 and 9 at PDF 399 remain separate translator st
 
 The records distinguish whole-quẻ changes from effects on individual hào.
 They preserve the question's purpose, affected spirit, support strength, and conditional readings of Thổ at Tị.
+
+The [advance/retreat and proxy-context citations](../../packages/knowledge/data/citations/batch-eight-advanced.json)
+cover BPCT chapter 5, sections 17–18, PDF 73–74 (printed 61–62).
+Related review covers chapter 6, sentence 52, PDF 92–93 (printed 78–79), and question 10, PDF 388–389 (printed 341–342).
+The records retain the affected spirit's role, strength, timing conditions, and the actual relationship of a person asking for another.
+Section 18's religious explanation remains attributed doctrine, without an empirical accuracy claim or application ritual requirement.
 
 NHL printed footer labels were checked on every page used by its released citations.
 The labels match the PDF numbers for those locations; the citation collections now include both.
@@ -222,6 +233,16 @@ Vô Vọng preserves different readings of unplanned gain and unsolicited harm.
 Di keeps Trình Di's authority image separate from Chu Hy's focused request for help.
 [Đại Quá](../../packages/knowledge/data/hexagrams/hexagram-28.json) distinguishes Trình Di's self-caused danger from Chu Hy's moral reading of the final line.
 
+The [Khảm](../../packages/knowledge/data/hexagrams/hexagram-29.json),
+[Ly](../../packages/knowledge/data/hexagrams/hexagram-30.json), and
+[Hằng](../../packages/knowledge/data/hexagrams/hexagram-32.json) records own nine further source-error resolutions.
+They concern Dự's comparison number, line polarity and references, a Chinese numeral, and Hằng's name.
+Rendered pages, diagrams, surrounding translations, and related commentary support the resolutions.
+
+Khảm keeps the conditions of its fifth-line no-error statement explicit.
+[Hàm](../../packages/knowledge/data/hexagrams/hexagram-31.json) preserves different following directions at line three and different limits on influence at line five.
+Hằng retains different readings of trinh in its first and third lines.
+
 The [Phản ngâm article](../../packages/knowledge/data/liuyao/reverse-chant-context.json)
 owns the Cấn naming resolution on BPCT PDF 71.
 The mountain examples and chapter 1 palace list support Cấn–Khôn despite the inconsistent Càn/Cần names in that paragraph.
@@ -245,6 +266,16 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
   The commentaries' shared-purpose wording does not establish an opposite-polarity formal response pair.
 - Vô Vọng's illness/medicine and Di's nourishment images remain historical commentary, not medical or nutrition guidance.
   Đại Quá's final-line summaries preserve danger and do not recommend self-harm.
+- NTT PDF 499 labels two consecutive Ly first-line paragraphs as Trình Di.
+  The selected summary uses the first clearly attributed paragraph.
+  The second paragraph is not reassigned to Chu Hy without evidence from the underlying edition.
+- Ly's second-line explanations use response language toward the fifth line, although both positions are yin.
+  The records preserve their shared virtues without deriving an opposite-polarity formal response pair.
+- PBC PDF 312 illustrates Hàm through historical claims about animals changing species.
+  Those claims are not imported as biology facts.
+  NHL PDF 230 marks reference (1), whose content was not located during this review; it supports no released claim.
+- Khảm's captivity and Ly's military and punishment images retain their historical setting.
+  Hàm and Hằng's gender-role images do not establish fixed modern roles or qualities.
 
 ### Advanced exclusions
 
@@ -298,6 +329,16 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
   This batch selects support conditions and role distinctions, not medical predictions or evidence that the reported outcomes occurred.
 - Vĩnh Cao's footnote 9 at PDF 399 disputes the main text's Dụng thần selection for a letter.
   The [combination/opposition article](../../packages/knowledge/data/liuyao/combination-opposition-turnarounds.json) retains the disagreement instead of importing a unanimous worked example.
+- BPCT PDF 73, section 17, lists seven Tiến pairs and eight Thoái pairs.
+  Thìn-to-Mùi is absent from the Tiến list; Mùi-to-Thìn appears in the Thoái list.
+  The [advance/retreat article](../../packages/knowledge/data/liuyao/advancing-retreating-spirits.json) retains the listed pairs without inferring the missing forward entry or an exhaustive classifier.
+- BPCT PDF 388 calls the fifth line of Hằng Cửu ngũ in its first question-10 example.
+  The classical diagrams and commentary identify Lục ngũ.
+  The selected advanced conditions do not depend on that example's label, timing, or reported outcome.
+- Section 18 ends before the separator on PDF 74.
+  The following inserted essay lacks clear author attribution and does not support released claims.
+  The [proxy-context article](../../packages/knowledge/data/liuyao/divination-context-and-proxy-role.json) keeps religious and repetition judgments attributed.
+  These judgments do not become an accuracy guarantee, user filter, ritual requirement, or recasting restriction.
 
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
 They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.

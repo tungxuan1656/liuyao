@@ -896,3 +896,13 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Coverage: 145 records, 885 cited claims, 716 locators. Classical coverage is 28/64 quẻ and 168/384 positions per commentary book. Thirty-six quẻ retain unaudited compatibility content.
 - Blockers: none for selected claims. Ambiguous passages, reported health outcomes, complete coverage, and independent specialist approval remain outside this completed batch.
 - Next: Review Khảm, Ly, Hàm, Hằng and BPCT chapter 5, sections 17–18 (PDF 73).
+
+## 2026-10-02 — feat-039 completed source audit and handoff
+
+- Status: done.
+- Result: Added Khảm, Ly, Hàm, Hằng and four BPCT records. Preserved author differences and nine visually checked source-error resolutions. Kept conditional Tiến/Thoái effects, proxy relationships, and the source's religious setting explicit. Reconciled source locations and exclusions.
+- Commits: Classical `3b9ab7e`; BPCT `b7fce51`.
+- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 101 local documentation routes, and diff checks passed. Checked all 223 NHL citations across 108 cited pages and five new BPCT printed locators.
+- Coverage: 153 records, 995 cited claims, 812 locators. Classical coverage is 32/64 quẻ and 192/384 positions per commentary book. Thirty-two quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. The missing Tiến entry, ambiguous attribution, unlocated reference, and reported outcomes remain outside released authority. Full coverage and independent specialist approval remain incomplete.
+- Next: Review Độn, Đại Tráng, Tấn, Minh Di and BPCT chapter 6, sentences 1–6 (PDF 77–79).

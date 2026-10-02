@@ -20,9 +20,9 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 - [x] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
 - [x] Advanced records preserve source conditions and textual layers.
 - [x] Each released claim has complete passage review and an exact edition citation.
-- [ ] Content groups have separate verified commits.
-- [ ] Coverage and manifest identify remaining gaps and the next batch.
-- [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
+- [x] Content groups have separate verified commits.
+- [x] Coverage and manifest identify remaining gaps and the next batch.
+- [x] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
 
 ## Relevant docs
 
@@ -39,8 +39,9 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 
 ## Handoff
 
-- State: active.
-- Blockers: none.
-- Evidence: Classical review adds 95 claims, 91 citations, nine source-error resolutions. BPCT review adds four records, 15 claims, five citations; the incomplete Tiến list stays bounded.
-- Verification: `./init.sh` passes 263 tests; fingerprints and generated freshness pass.
-- Next: Commit the advanced group, then audit documentation and handoff.
+- State: done.
+- Evidence: Eight records add 110 claims and 96 citations; nine source errors resolved. Author differences and exclusions remain explicit.
+- Verification: `./init.sh` passes 263 tests; fingerprints, generated freshness, and 101 local documentation routes pass. Checked 223 NHL citations and five new BPCT printed locators.
+- Commits: Classical `3b9ab7e`; BPCT `b7fce51`.
+- Blockers: none for selected content.
+- Next: Review the [manifest's next batch](../packages/knowledge/data/manifest.json).
