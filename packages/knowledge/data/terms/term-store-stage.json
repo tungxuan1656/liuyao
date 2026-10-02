@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "term-store-stage",
+  "type": "term",
+  "title": "Mộ khố",
+  "aliases": ["Mộ", "Khố"],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-store-stage-definition",
+      "kind": "author-interpretation",
+      "text": "Vĩnh Cao giải Khố trong mục Tứ sinh là Mộ khố. Cách gọi này nối chữ Khố của phần liệt kê với Mộ trong câu nêu ba yếu tố cần xét.",
+      "citationIds": ["citation-bpct-ch5-store-note", "citation-bpct-ch5-four-birthplaces"],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      }
+    },
+    {
+      "id": "term-store-stage-locations",
+      "kind": "structural-fact",
+      "text": "Mục 8 đặt Mộ khố của Hỏa tại Tuất, Kim tại Sửu, Thủy và Thổ tại Thìn, Mộc tại Mùi.",
+      "citationIds": ["citation-bpct-ch5-four-birthplaces", "citation-bpct-ch1-life-cycle"]
+    }
+  ],
+  "relatedIds": [
+    "term-growth-stage",
+    "term-extinction-stage",
+    "article-growth-store-and-extinction"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-store-note",
+      "citation-bpct-ch5-four-birthplaces",
+      "citation-bpct-ch1-life-cycle"
+    ],
+    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

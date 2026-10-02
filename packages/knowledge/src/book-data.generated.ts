@@ -9,6 +9,7 @@ import citations3 from '../data/citations/batch-two-advanced.json' with { type: 
 import citations4 from '../data/citations/batch-three-hexagrams.json' with { type: 'json' };
 import citations5 from '../data/citations/batch-three-advanced.json' with { type: 'json' };
 import citations6 from '../data/citations/batch-four-hexagrams.json' with { type: 'json' };
+import citations7 from '../data/citations/batch-four-advanced.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -113,6 +114,19 @@ import record100 from '../data/hexagrams/hexagram-13.json' with { type: 'json' }
 import record101 from '../data/hexagrams/hexagram-14.json' with { type: 'json' };
 import record102 from '../data/hexagrams/hexagram-15.json' with { type: 'json' };
 import record103 from '../data/hexagrams/hexagram-16.json' with { type: 'json' };
+import record104 from '../data/terms/term-four-birthplaces.json' with { type: 'json' };
+import record105 from '../data/terms/term-growth-stage.json' with { type: 'json' };
+import record106 from '../data/terms/term-store-stage.json' with { type: 'json' };
+import record107 from '../data/terms/term-extinction-stage.json' with { type: 'json' };
+import record108 from '../data/terms/term-month-break.json' with { type: 'json' };
+import record109 from '../data/terms/term-true-month-break.json' with { type: 'json' };
+import record110 from '../data/terms/term-decade-empty.json' with { type: 'json' };
+import record111 from '../data/terms/term-effective-empty.json' with { type: 'json' };
+import record112 from '../data/terms/term-matching-day.json' with { type: 'json' };
+import record113 from '../data/terms/term-leaving-decade.json' with { type: 'json' };
+import record114 from '../data/liuyao/growth-store-and-extinction.json' with { type: 'json' };
+import record115 from '../data/liuyao/month-break-conditions.json' with { type: 'json' };
+import record116 from '../data/liuyao/decade-empty-conditions.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -218,6 +232,19 @@ export const BOOK_RECORDS = [
   record101,
   record102,
   record103,
+  record104,
+  record105,
+  record106,
+  record107,
+  record108,
+  record109,
+  record110,
+  record111,
+  record112,
+  record113,
+  record114,
+  record115,
+  record116,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -227,6 +254,7 @@ export const BOOK_CITATIONS = [
   ...citations4.citations,
   ...citations5.citations,
   ...citations6.citations,
+  ...citations7.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 104, "released": 104, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 525, "missingCitationIds": [] },
-  "citations": { "total": 398 },
+  "records": { "authored": 117, "released": 117, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 548, "missingCitationIds": [] },
+  "citations": { "total": 408 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 16,
@@ -289,7 +289,20 @@
         "term-spirit-xuanwu",
         "article-flying-spirit-uses",
         "article-hidden-spirit-method",
-        "article-six-spirits-context"
+        "article-six-spirits-context",
+        "term-four-birthplaces",
+        "term-growth-stage",
+        "term-store-stage",
+        "term-extinction-stage",
+        "term-month-break",
+        "term-true-month-break",
+        "term-decade-empty",
+        "term-effective-empty",
+        "term-matching-day",
+        "term-leaving-decade",
+        "article-growth-store-and-extinction",
+        "article-month-break-conditions",
+        "article-decade-empty-conditions"
       ]
     },
     {
@@ -536,6 +549,30 @@
       "description": "NTT PDF 321 tiêu đề Dự ghi Cấn trên, Khôn dưới, trái phần giải nghĩa ngay trang đó.",
       "citationIds": ["citation-ntt-q16-overview-ntt", "citation-nhl-q16-overview-nhl"],
       "resolution": "Ảnh tiêu đề NHL PDF 185 và hình quẻ PBC PDF 189 cho hào bốn dương, các hào còn lại âm. Cả phần giải nghĩa PBC PDF 189 và NTT PDF 321 đều nói Chấn trên Khôn dưới; giữ ngoại Chấn."
+    },
+    {
+      "recordId": "term-four-birthplaces",
+      "id": "discrepancy-bpct-four-birthplaces-fire-metal",
+      "status": "resolved",
+      "description": "BPCT PDF 17 dòng ba ghi Hỏa có Trường Sinh tại Tị, dòng bốn lại ghi Hỏa tại Dần.",
+      "citationIds": [
+        "citation-bpct-ch1-life-cycle-continuation",
+        "citation-bpct-ch1-life-cycle",
+        "citation-bpct-ch5-four-birthplaces"
+      ],
+      "resolution": "Ảnh PDF 16 phần liệt kê và PDF 70 mục 8 đều ghi Kim tại Tị, Hỏa tại Dần. Giữ bốn nơi khởi và năm hành theo hai đoạn đầy đủ; không tạo hai nơi khởi cho Hỏa."
+    },
+    {
+      "recordId": "term-growth-stage",
+      "id": "discrepancy-bpct-life-cycle-note-count",
+      "status": "resolved",
+      "description": "BPCT PDF 70 chú thích 6 nói mười hai yếu tố nhưng chỉ liệt kê mười một, thiếu Tử và đảo thứ tự Mộ–Tuyệt so với Chương 1.",
+      "citationIds": [
+        "citation-bpct-ch5-life-cycle-note",
+        "citation-bpct-ch1-life-cycle",
+        "citation-bpct-ch5-four-birthplaces"
+      ],
+      "resolution": "Ảnh PDF 16 có đủ mười hai tên với Tử trước Mộ và Tuyệt. Chính phần thân mục 8 PDF 70 cũng nhắc Tử. Giữ danh sách Chương 1; chưa nhập toàn bộ ánh xạ chi cho mười hai giai đoạn."
     }
   ],
   "unresolvedDiscrepancies": [],
@@ -596,6 +633,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-17", "hexagram-18", "hexagram-19", "hexagram-20"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán. BPCT Chương 5, mục 8–10 (PDF 70) là phần còn lại của đợt này. Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán và BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71). Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–10 có các thuật ngữ và diễn giải được chọn. Các phần còn mơ hồ của Phi thần, Đằng Xà, Lâm Quan/Thoái và ví dụ điền thực vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

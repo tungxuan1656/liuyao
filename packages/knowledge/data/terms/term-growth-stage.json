@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "term-growth-stage",
+  "type": "term",
+  "title": "Trường Sinh",
+  "aliases": ["Tràng Sinh"],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-growth-stage-definition",
+      "kind": "structural-fact",
+      "text": "Trong vòng được BPCT giới thiệu, Trường Sinh là giai đoạn khởi đầu của sự sinh và phát triển của ngũ hành. Tên này cũng dùng để chỉ nơi khởi của từng hành trong Tứ sinh.",
+      "citationIds": ["citation-bpct-ch1-life-cycle", "citation-bpct-ch5-four-birthplaces"]
+    },
+    {
+      "id": "term-growth-stage-cycle",
+      "kind": "structural-fact",
+      "text": "Danh sách ở Chương 1 gồm Trường Sinh, Mộc Dục, Quan Đới, Lâm Quan, Đế Vượng, Suy, Bệnh, Tử, Mộ, Tuyệt, Thai và Dưỡng. Đây là tên các giai đoạn trong hệ thống của nguồn.",
+      "citationIds": ["citation-bpct-ch1-life-cycle"]
+    }
+  ],
+  "relatedIds": [
+    "term-four-birthplaces",
+    "term-store-stage",
+    "term-extinction-stage",
+    "article-growth-store-and-extinction"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch1-life-cycle",
+      "citation-bpct-ch5-four-birthplaces",
+      "citation-bpct-ch5-life-cycle-note"
+    ],
+    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "discrepancies": [
+    {
+      "id": "discrepancy-bpct-life-cycle-note-count",
+      "status": "resolved",
+      "description": "BPCT PDF 70 chú thích 6 nói mười hai yếu tố nhưng chỉ liệt kê mười một, thiếu Tử và đảo thứ tự Mộ–Tuyệt so với Chương 1.",
+      "citationIds": [
+        "citation-bpct-ch5-life-cycle-note",
+        "citation-bpct-ch1-life-cycle",
+        "citation-bpct-ch5-four-birthplaces"
+      ],
+      "resolution": "Ảnh PDF 16 có đủ mười hai tên với Tử trước Mộ và Tuyệt. Chính phần thân mục 8 PDF 70 cũng nhắc Tử. Giữ danh sách Chương 1; chưa nhập toàn bộ ánh xạ chi cho mười hai giai đoạn."
+    }
+  ]
+}

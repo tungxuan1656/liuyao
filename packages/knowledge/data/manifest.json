@@ -10,7 +10,8 @@
     "citations/batch-two-advanced.json",
     "citations/batch-three-hexagrams.json",
     "citations/batch-three-advanced.json",
-    "citations/batch-four-hexagrams.json"
+    "citations/batch-four-hexagrams.json",
+    "citations/batch-four-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -116,7 +117,20 @@
     "hexagrams/hexagram-13.json",
     "hexagrams/hexagram-14.json",
     "hexagrams/hexagram-15.json",
-    "hexagrams/hexagram-16.json"
+    "hexagrams/hexagram-16.json",
+    "terms/term-four-birthplaces.json",
+    "terms/term-growth-stage.json",
+    "terms/term-store-stage.json",
+    "terms/term-extinction-stage.json",
+    "terms/term-month-break.json",
+    "terms/term-true-month-break.json",
+    "terms/term-decade-empty.json",
+    "terms/term-effective-empty.json",
+    "terms/term-matching-day.json",
+    "terms/term-leaving-decade.json",
+    "liuyao/growth-store-and-extinction.json",
+    "liuyao/month-break-conditions.json",
+    "liuyao/decade-empty-conditions.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -222,7 +236,20 @@
     "hexagram-13",
     "hexagram-14",
     "hexagram-15",
-    "hexagram-16"
+    "hexagram-16",
+    "term-four-birthplaces",
+    "term-growth-stage",
+    "term-store-stage",
+    "term-extinction-stage",
+    "term-month-break",
+    "term-true-month-break",
+    "term-decade-empty",
+    "term-effective-empty",
+    "term-matching-day",
+    "term-leaving-decade",
+    "article-growth-store-and-extinction",
+    "article-month-break-conditions",
+    "article-decade-empty-conditions"
   ],
   "topics": [
     {
@@ -284,6 +311,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-17", "hexagram-18", "hexagram-19", "hexagram-20"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán. BPCT Chương 5, mục 8–10 (PDF 70) là phần còn lại của đợt này. Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán và BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71). Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–10 có các thuật ngữ và diễn giải được chọn. Các phần còn mơ hồ của Phi thần, Đằng Xà, Lâm Quan/Thoái và ví dụ điền thực vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

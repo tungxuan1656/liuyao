@@ -813,3 +813,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed.
 - Blockers: none.
 - Next: Commit this group, then review BPCT chapter 5, sections 8–10 and related evidence.
+
+## 2026-10-02 — feat-035 Tứ sinh, Nguyệt phá, and Tuần không group
+
+- Status: active.
+- Result: Added ten terms and three articles from BPCT chapter 5, sections 8–10. Cross-checked stage lists and calendar definitions, preserved compound conditions, and separated Vĩnh Cao's notes. Excluded the unclear Lâm Quan/Thoái sentence and the contradictory điền thực example.
+- Coverage: 117 records, 548 claims, 408 locators; 16/64 quẻ and 96/384 positions. Advanced coverage remains partial.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. Four-quẻ group committed as `be42a75`.
+- Blockers: none for selected claims. Excluded passages need clearer evidence before publication.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
