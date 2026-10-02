@@ -17,12 +17,12 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 
 ## Acceptance
 
-- [ ] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
-- [ ] Advanced records preserve source conditions and textual layers.
-- [ ] Each released claim has complete passage review and an exact edition citation.
-- [ ] Content groups have separate verified commits.
-- [ ] Coverage and manifest identify remaining gaps and the next batch.
-- [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
+- [x] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
+- [x] Advanced records preserve source conditions and textual layers.
+- [x] Each released claim has complete passage review and an exact edition citation.
+- [x] Content groups have separate verified commits.
+- [x] Coverage and manifest identify remaining gaps and the next batch.
+- [x] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
 
 ## Relevant docs
 
@@ -37,11 +37,16 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 3. Review related BPCT passages, author conditional records, verify, and commit.
 4. Reconcile source documentation, verify, and commit the handoff.
 
+## Verification
+
+- `./init.sh`: 263 tests passed.
+- Fingerprints, generated freshness, 121 documentation routes, and diff checks passed.
+- Checked 279 NHL citations across 133 pages and six new BPCT printed locators.
+
 ## Handoff
 
-- State: active.
-- Blockers: none.
-- Evidence: Four classical records add 97 claims and 93 citations after complete passage review.
-- Classical commit: `a73209e`.
-- Advanced evidence: Seven records add 18 claims and six citations for BPCT sentences 7–11.
-- Next: Verify and commit BPCT records, then reconcile source documentation.
+- State: done.
+- Commits: Classical `a73209e`; BPCT `f780804`.
+- Result: Eleven new records; seven final fidelity corrections and reconciled source documentation.
+- Blockers: None for selected claims. Unclear passages remain excluded; full coverage and specialist review remain incomplete.
+- Next: Review Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16 (PDF 81–82).

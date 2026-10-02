@@ -83,6 +83,11 @@ Review covers NHL PDF 236–247, PBC PDF 329–357, and NTT PDF 534–582, inclu
 It includes complete passages, six positions, available footnotes, rendered headings, diagrams, and discrepancy pages.
 PBC endnotes 19–20 at PDF 655 were also read; their historical stories do not become verified history claims.
 
+The [batch-ten classical citations](../../packages/knowledge/data/citations/batch-ten-hexagrams.json) locate Gia Nhân, Khuê, Kiển, and Giải.
+Review covers NHL PDF 248–260, PBC PDF 358–394, and NTT PDF 583–635.
+It includes complete passages, six positions, footnotes, rendered headings, diagrams, and discrepancy pages.
+Khấu Kiến An's selected Tiên Nho explanation remains attributed through Ngô Tất Tố, separate from Trình Di and Chu Hy.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -144,6 +149,12 @@ Related review includes casting at PDF 11–12, the stage list at PDF 16–17, T
 Sentence 1 adds evidence and attributed context to the existing moving-line record.
 The new articles retain excess/deficiency, affected spirit, support strength, and sentence 6's Nhật thần scope.
 They distinguish author commentary from translator notes without adding a calendar, scoring, or prediction algorithm.
+
+The [stage, day/month/year, and Quái thân citations](../../packages/knowledge/data/citations/batch-ten-advanced.json)
+cover BPCT chapter 6, sentences 7–11, PDF 79–81 (printed 65–67), including Vĩnh Cao's footnote 3.
+Related review includes Quái thân and the stage list at PDF 15–17, calendar definitions at PDF 41, and chapter 5 at PDF 68/70.
+The records preserve the affected spirit, day/month distinction, conditional Tuế quân readings, and separate meanings of Thân.
+Calendar calculation and Quái thân placement remain outside the released behavior.
 
 NHL printed footer labels were checked on every page used by its released citations.
 The labels match the PDF numbers for those locations; the citation collections now include both.
@@ -268,6 +279,17 @@ Tấn preserves internal self-correction versus action within a private domain a
 Minh Di keeps Trình Di's adverse fourth-line reading and Chu Hy's expressly tentative alternative.
 Its second line separates NHL's recovery-then-strength reading from interpretations of rescue with a strong horse.
 
+The [Gia Nhân](../../packages/knowledge/data/hexagrams/hexagram-37.json),
+[Khuê](../../packages/knowledge/data/hexagrams/hexagram-38.json), and
+[Kiển](../../packages/knowledge/data/hexagrams/hexagram-39.json) records own four further source-discrepancy resolutions.
+They concern a reading mismatch, Khuê's third-line polarity and neighbors, and the fifth-line label in Chu Hy's Kiển explanation.
+Rendered passages, diagrams, and surrounding commentary support these bounded resolutions.
+
+Gia Nhân preserves different meanings of phú gia and cách gia.
+Khuê separates deep attachment from easy union at line five and preserves different speakers for the final-line marriage statement.
+Kiển retains Trình Di's limit of reduced difficulty beside Chu Hy's possibility of great achievement at the final line.
+[Giải](../../packages/knowledge/data/hexagrams/hexagram-40.json) separates readings of trinh and Khấu Kiến An's unified third-line symbolism.
+
 The [Phản ngâm article](../../packages/knowledge/data/liuyao/reverse-chant-context.json)
 owns the Cấn naming resolution on BPCT PDF 71.
 The mountain examples and chapter 1 palace list support Cấn–Khôn despite the inconsistent Càn/Cần names in that paragraph.
@@ -317,6 +339,16 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
 - Độn's dependent-household roles, Tấn's rewards and punishment, and Minh Di's hunger, injury, and campaigns retain their historical setting.
   They do not establish modern gender roles, medical treatment, fasting requirements, or instructions to harm others.
 
+- Khuê's first and fourth lines are both yang.
+  Shared-virtue response wording in NHL/PBC does not establish a formal opposite-polarity pair; Trình Di explicitly distinguishes this at NTT PDF 599.
+- NTT PDF 617 calls Chu Hy's Kiển fourth-line partner Chín Hai, although the second line is yin.
+  The passage does not establish whether the label or the target position needs correction; that statement remains excluded.
+- NHL PDF 256 lists Kiển's fifth-line friends as 1, 3, 5, including the recipient itself.
+  The selected summary omits that list without reconstructing its intended membership.
+- Gia Nhân's household roles and strictness remain historical judgments, without fixed modern duties or permission for coercion.
+  Khuê's mutilation and ghost images do not establish injury predictions, supernatural facts, or medical diagnoses.
+  Giải's quoted Hệ commentary assigning blame for sexual assault to its victim is excluded from released causal or ethical claims.
+
 ### Advanced exclusions
 
 - BPCT PDF 68, Phi thần type 2, says “năm loại Lục thú”.
@@ -336,7 +368,7 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
   The matching-day notes on PDF 68 and 462 require the same branch as the line being considered.
   The released article retains the author's general conditions but omits this contradictory timing example.
 - BPCT PDF 16 places Fire's Tử at Tị, while PDF 70 places it at Dậu.
-  Only the selected Sinh, Mộ, and Tuyệt associations are imported; a complete twelve-stage branch table needs separate review.
+  The conflicting Tử association remains excluded; a complete twelve-stage branch table needs separate review.
 - BPCT PDF 41 names Kinh Trập in the Mão row but Vũ Thủy in its following calendar explanation.
   The released definition uses branch opposition only. It does not import a date-conversion or solar-term boundary rule.
 
@@ -394,8 +426,20 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
   The [day-context article](../../packages/knowledge/data/liuyao/growth-and-peak-day-context.json) keeps this scope and relative pace, without an exact forecast date.
   The [Đế Vượng term](../../packages/knowledge/data/terms/term-peak-stage.json) adds a stage definition and the reviewed Fire-at-Ngọ example, not a complete twelve-stage branch table.
 
+- Sentence 7 treats Trường Sinh, Mộ, and Tuyệt at Nhật thần and biến hào; it excludes the other nine stage names at biến hào.
+  The [stage-scope article](../../packages/knowledge/data/liuyao/death-store-extinction-empty-context.json) keeps this beside sentence 6's narrower Nhật thần reading.
+  Death and hell imagery does not become a mortality forecast or evidence about an afterlife.
+- Sentence 8 lists xung khởi, xung thực, and xung tán without defining an exhaustive classifier there.
+  The [day/month article](../../packages/knowledge/data/liuyao/day-and-month-authority-context.json) retains supported effects and roles without inventing those classification rules.
+- Sentence 9 rejects favorable/adverse month readings based only on stage names; day and month authority retain different scopes in this commentary.
+  The [year article](../../packages/knowledge/data/liuyao/year-authority-context.json) preserves sentence 10's conditions instead of treating Tuế quân as invariably harmful.
+  Its imperial metaphor does not establish modern legal obligations or official involvement.
+- Sentence 11 defines Thân as Nguyệt quái thân; Vĩnh Cao's footnote 3 says some other works instead mean Thế.
+  The [Quái thân term](../../packages/knowledge/data/terms/term-hexagram-body.json) preserves both layers without identifying unnamed schools.
+  Chapter 1's placement instructions and example at PDF 15–16 do not become a released calculation table or algorithm.
+
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
-They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.
+This review does not certify every medical, self-harm, ritual, or punishment verse.
 
 These findings do not exhaust the edition's errors.
 Record each additional discrepancy with its location and resolution evidence.
