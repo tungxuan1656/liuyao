@@ -18,11 +18,11 @@ Automated interpretation, calendar calculations, UI changes, and complete corpus
 ## Acceptance
 
 - [x] Four quẻ preserve stable IDs, reviewed structures, aliases, and attributed line summaries.
-- [ ] Advanced records preserve source conditions and distinguish textual layers.
-- [ ] Each released claim has passage review and an exact supplied-edition citation.
+- [x] Advanced records preserve source conditions and distinguish textual layers.
+- [x] Each released claim has passage review and an exact supplied-edition citation.
 - [ ] Each content group has a separate verified commit.
-- [ ] Coverage and the manifest identify remaining gaps and the next exact batch.
-- [ ] `./init.sh`, PDF fingerprint/freshness checks, and `git diff --check` pass.
+- [x] Coverage and the manifest identify remaining gaps and the next exact batch.
+- [x] `./init.sh`, PDF fingerprint/freshness checks, and `git diff --check` pass.
 
 ## Relevant docs
 
@@ -44,10 +44,15 @@ Continue the approved JSON design and batch sequence with an inline plan.
 - Classical group: 121 records, 644 claims, 503 citations; 20/64 quẻ and 120/384 positions per commentary book.
 - Read complete passages and footnotes; visually checked 13 source errors and verified NHL footer locators.
 - Initial full verification caught a display-name change for Quan; restored the existing name and retained Quán as an alias.
-- After that correction, `./init.sh` passed 263 tests; PDF fingerprint/freshness and diff checks are required before the group commit.
+- After that correction, `./init.sh` passed 263 tests; PDF fingerprint/freshness and diff checks passed.
+
+- Classical group committed as `ccf713b`.
+- Advanced group: three terms and two articles; 126 records, 659 claims, 510 citations in the corpus.
+- Checked 14 Phục ngâm pairs against Nạp Giáp. Withheld ambiguous parentheticals and the mixed Phản/Phục name in question 6.
+- Final advanced `./init.sh` passed 263 tests; fingerprint/freshness and diff checks passed before commit.
 
 ## Handoff
 
 - State: active.
 - Blockers: none.
-- Next: Commit the verified classical group, then finish BPCT sections 11–12 and related evidence.
+- Next: Commit the advanced group, reconcile canonical source documentation, and complete the handoff.

@@ -840,3 +840,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: After correcting the display-name change caught by compatibility tests, `./init.sh` passed 263 tests. PDF fingerprints, generated-output freshness, and diff checks passed before commit.
 - Blockers: none.
 - Next: Commit this group, then finish BPCT chapter 5, sections 11–12 and related evidence.
+
+## 2026-10-02 — feat-036 Phản ngâm and Phục ngâm group
+
+- Status: active.
+- Result: Added three terms and two articles from BPCT chapter 5, sections 11–12. Preserved the distinction between directional examples and line-branch opposition. Checked 14 Phục ngâm pairs against Nạp Giáp, retained Dụng/Thế/Ứng conditions, and resolved a Cấn naming error. Ambiguous parentheticals and the mixed Phản/Phục name in question 6 remain excluded.
+- Coverage: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions. Advanced coverage remains partial.
+- Evidence: Final advanced `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit. Classical group committed as `ccf713b`.
+- Blockers: none for selected claims. Excluded wording needs clearer evidence before publication.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.

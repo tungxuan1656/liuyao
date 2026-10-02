@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 121, "released": 121, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 644, "missingCitationIds": [] },
-  "citations": { "total": 503 },
+  "records": { "authored": 126, "released": 126, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 659, "missingCitationIds": [] },
+  "citations": { "total": 510 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 20,
@@ -310,7 +310,12 @@
         "term-leaving-decade",
         "article-growth-store-and-extinction",
         "article-month-break-conditions",
-        "article-decade-empty-conditions"
+        "article-decade-empty-conditions",
+        "term-reverse-chant",
+        "term-line-reverse-chant",
+        "term-repeated-chant",
+        "article-reverse-chant-context",
+        "article-repeated-chant-context"
       ]
     },
     {
@@ -722,6 +727,17 @@
         "citation-pbc-q20-line-2-pbc"
       ],
       "resolution": "Ảnh PDF 375 xác nhận câu thiếu phủ định; phần tiếp PDF 376 nói chỉ dòm phảng phất và hai sách khác cùng giảng tầm nhìn hẹp. Giữ nghĩa chưa thấy rõ, không xóa hạn chế quan sát của hào hai."
+    },
+    {
+      "recordId": "article-reverse-chant-context",
+      "id": "discrepancy-bpct-reverse-chant-northeast",
+      "status": "resolved",
+      "description": "BPCT PDF 71 đoạn quái Đông Bắc ghi Càn, rồi ghi Cần vi Sơn và kết Càn–Khôn.",
+      "citationIds": [
+        "citation-bpct-ch5-reverse-chant-directions",
+        "citation-bpct-ch1-mountain-palace-name"
+      ],
+      "resolution": "Ảnh PDF 71 xác nhận các tên không khớp. Đoạn gắn Đông Bắc với Sửu, Dần, rồi nêu Sơn Địa Bác và Địa Sơn Khiêm. Danh sách cung ở XI PDF 13 xác định Cấn vi Sơn; giữ cặp Cấn–Khôn, không tạo Càn ở Đông Bắc."
     }
   ],
   "unresolvedDiscrepancies": [],
@@ -778,6 +794,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-21", "hexagram-22", "hexagram-23", "hexagram-24"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Phệ Hạp, Bí, Bác, Phục. BPCT Chương 5, mục 11–12: Phản ngâm, Phục ngâm (PDF 70–71) là phần còn lại của đợt này. Hai mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Phệ Hạp, Bí, Bác, Phục và BPCT Chương 5, mục 13–14: Vượng tướng hưu tù, Trong hợp có khắc (PDF 72). Hai mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–12 có các thuật ngữ và diễn giải được chọn. Những câu mơ hồ và ví dụ mâu thuẫn đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

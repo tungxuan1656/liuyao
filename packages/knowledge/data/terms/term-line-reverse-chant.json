@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "term-line-reverse-chant",
+  "type": "term",
+  "title": "Hào Phản ngâm",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-line-reverse-chant-definition",
+      "kind": "structural-fact",
+      "text": "Mục 11 gọi hào biến thành địa chi xung với chi ban đầu là hào Phản ngâm. Sáu cặp được nêu là Tí–Ngọ, Sửu–Mùi, Dần–Thân, Mão–Dậu, Thìn–Tuất và Tị–Hợi, theo cả hai chiều.",
+      "citationIds": [
+        "citation-bpct-ch5-reverse-chant-definition",
+        "citation-bpct-ch5-line-reverse-chant"
+      ]
+    },
+    {
+      "id": "term-line-reverse-chant-effect",
+      "kind": "author-interpretation",
+      "text": "Trong câu hỏi 5, Vương Hồng Tự phân biệt tên Phản ngâm với việc Dụng thần có biến thành xung khắc hay không. Muốn luận ảnh hưởng phải xét Dụng, không chỉ nhận ra một cặp chi xung.",
+      "citationIds": ["citation-bpct-part2-reverse-chant-effects"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": [
+    "term-reverse-chant",
+    "term-earthly-branch",
+    "term-useful-spirit",
+    "article-reverse-chant-context"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-reverse-chant-definition",
+      "citation-bpct-ch5-line-reverse-chant",
+      "citation-bpct-part2-reverse-chant-effects"
+    ],
+    "note": "Đã đọc và xem ảnh mục 11–12 PDF 70–71; đối chiếu bảng Nạp Giáp PDF 13 và toàn bộ câu hỏi 5–6 cùng ví dụ PDF 375–378. Các điều kiện và phạm vi được giữ theo đoạn; chỉ chọn diễn giải đủ rõ, chưa xác nhận chiêm nghiệm hoặc toàn bộ học thuyết, chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

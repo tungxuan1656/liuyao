@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "article-repeated-chant-context",
+  "type": "article",
+  "title": "Phục ngâm: nội, ngoại và điều kiện sinh khắc",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-repeated-chant-context-whole",
+      "kind": "author-interpretation",
+      "text": "Mục 12 nêu Càn đổi Chấn và Vô Vọng đổi Đại Tráng, theo cả hai chiều, là Phục ngâm ở cả nội lẫn ngoại. Dãy chi của cả hai phần giữ lại dù quẻ đổi.",
+      "citationIds": ["citation-bpct-ch5-repeated-chant", "citation-bpct-p13-technical"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-repeated-chant-context-outer",
+      "kind": "author-interpretation",
+      "text": "Các cặp được nêu cho ngoại quái là Cấu–Hằng, Độn–Tiểu Quá, Bĩ–Dự, Phong–Đồng Nhân, Lý–Quy Muội và Giải–Tụng. Phần ngoại đổi Càn/Chấn giữ Ngọ, Thân, Tuất; không gọi phần nội là Phục ngâm chỉ vì ngoại có trạng thái này.",
+      "citationIds": ["citation-bpct-ch5-repeated-chant", "citation-bpct-p13-technical"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-repeated-chant-context-inner",
+      "kind": "author-interpretation",
+      "text": "Các cặp được nêu cho nội quái là Đại Hữu–Phệ Hạp, Truân–Nhu, Đại Súc–Di, Tùy–Quải, Tiểu Súc–Ích và Thái–Phục. Phần nội đổi Càn/Chấn giữ Tí, Dần, Thìn; các cặp được nguồn trình bày theo cả hai chiều.",
+      "citationIds": ["citation-bpct-ch5-repeated-chant", "citation-bpct-p13-technical"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-repeated-chant-context-effect",
+      "kind": "author-interpretation",
+      "text": "Câu hỏi 6 lấy Phục ngâm làm hình ảnh trì trệ và ưu phiền, phân biệt phần trong với phần ngoài. Khi xét điều tốt xấu, nguồn vẫn yêu cầu xem sinh khắc của Dụng và vai Kỵ thần, không chỉ đọc tên trạng thái.",
+      "citationIds": ["citation-bpct-part2-repeated-chant-effects"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ đây là hình ảnh và phương pháp luận của nguồn, chưa cung cấp quy tắc kết luận cho mọi loại câu hỏi."
+      ]
+    },
+    {
+      "id": "article-repeated-chant-context-roles",
+      "kind": "author-interpretation",
+      "text": "Trong ví dụ Vô Vọng biến Đại Tráng, nguồn xét riêng Thế và Ứng được Nhật hoặc Nguyệt sinh, trong khi hào Huynh Đệ gặp Nguyệt phá. Các vai có điều kiện khác nhau; không gán cùng ảnh hưởng cho mọi người chỉ vì cùng một quẻ Phục ngâm.",
+      "citationIds": ["citation-bpct-part2-repeated-chant-effects"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Chỉ giữ cách phân biệt hào và nguồn sinh khắc; không phát hành dự đoán tai nạn hay chỉ dẫn nơi lánh nạn của câu chuyện."
+      ]
+    }
+  ],
+  "relatedIds": [
+    "term-repeated-chant",
+    "rule-na-jia-assignment",
+    "term-useful-spirit",
+    "term-adverse-spirit",
+    "term-shi-line",
+    "term-ying-line",
+    "term-month-break"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-repeated-chant",
+      "citation-bpct-p13-technical",
+      "citation-bpct-part2-repeated-chant-effects"
+    ],
+    "note": "Đã đọc và xem ảnh mục 12 PDF 71, đối chiếu Nạp Giáp PDF 13 và toàn bộ câu hỏi 6 cùng ví dụ PDF 377–378. Kiểm tra 14 cặp ví dụ: phần đổi đều là Càn/Chấn, chi giữ nhưng can đổi. Câu trong ngoặc cuối PDF 71 có phạm vi chưa rõ; PDF 377 dùng tên Phản ngâm trong một câu giữa lời Phục ngâm. Không dùng hai câu đó làm quy tắc riêng hoặc tự thay tên; chưa chứng nhận chiêm nghiệm, chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}
