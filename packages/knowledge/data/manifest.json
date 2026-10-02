@@ -9,7 +9,8 @@
     "citations/batch-two-hexagrams.json",
     "citations/batch-two-advanced.json",
     "citations/batch-three-hexagrams.json",
-    "citations/batch-three-advanced.json"
+    "citations/batch-three-advanced.json",
+    "citations/batch-four-hexagrams.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -111,7 +112,11 @@
     "terms/term-spirit-xuanwu.json",
     "liuyao/flying-spirit-uses.json",
     "liuyao/hidden-spirit-method.json",
-    "liuyao/six-spirits-context.json"
+    "liuyao/six-spirits-context.json",
+    "hexagrams/hexagram-13.json",
+    "hexagrams/hexagram-14.json",
+    "hexagrams/hexagram-15.json",
+    "hexagrams/hexagram-16.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -213,7 +218,11 @@
     "term-spirit-xuanwu",
     "article-flying-spirit-uses",
     "article-hidden-spirit-method",
-    "article-six-spirits-context"
+    "article-six-spirits-context",
+    "hexagram-13",
+    "hexagram-14",
+    "hexagram-15",
+    "hexagram-16"
   ],
   "topics": [
     {
@@ -273,8 +282,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-13", "hexagram-14", "hexagram-15", "hexagram-16"],
+    "hexagramIds": ["hexagram-17", "hexagram-18", "hexagram-19", "hexagram-20"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Đồng Nhân, Đại Hữu, Khiêm, Dự và BPCT Chương 5, mục 8–10: Tứ sinh, Nguyệt phá, Tuần không (PDF 70). Mười hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT mục 1–7 có các thuật ngữ và diễn giải được chọn. Nghĩa loại 2 Phi thần và gán ngũ hành riêng cho Đằng Xà chưa được nhập vì chưa đủ rõ. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Tùy, Cổ, Lâm, Quán. BPCT Chương 5, mục 8–10 (PDF 70) là phần còn lại của đợt này. Mười sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

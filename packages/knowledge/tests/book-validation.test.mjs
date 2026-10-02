@@ -36,12 +36,12 @@ describe('book corpus publication boundary', () => {
       ).toBe(true);
     const report = coverageReport({ ...corpus, checked: checkCorpus(corpus) });
     expect(report.complete).toBe(false);
-    expect(report.hexagrams.reviewed).toBe(12);
-    expect(report.lines.reviewedPositions).toBe(72);
-    expect(report.hexagrams.missingIds).toHaveLength(52);
+    expect(report.hexagrams.reviewed).toBe(16);
+    expect(report.lines.reviewedPositions).toBe(96);
+    expect(report.hexagrams.missingIds).toHaveLength(48);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({
-      overviewHexagrams: 12,
-      reviewedLinePositions: 72,
+      overviewHexagrams: 16,
+      reviewedLinePositions: 96,
     });
     expect(
       report.lines.byAuthor.find(row => row.author === 'Phan Bội Châu').missingPilotPositions,

@@ -804,3 +804,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: Final `./init.sh` passed 263 tests. Coverage remains incomplete: 100 records, 427 cited claims, 303 locators; 12/64 quẻ and 72/384 positions in each commentary book. PDF fingerprints, generated-output freshness, and diff checks passed.
 - Blockers: none for this batch. Phi thần type 2 and Đằng Xà’s own element remain excluded pending clearer source evidence.
 - Next: Review Đồng Nhân, Đại Hữu, Khiêm, Dự and BPCT chapter 5, sections 8–10 (Tứ sinh, Nguyệt phá, Tuần không; PDF 70).
+
+## 2026-10-02 — feat-035 four-quẻ group
+
+- Status: active.
+- Result: Added Đồng Nhân, Đại Hữu, Khiêm, and Dự with three-book overviews and 24 positions. Preserved distinct author readings, Ngô Tất Tố's selected translator note, and six supported source-error resolutions after visual inspection. Removed duplicate legacy records.
+- Coverage: 104 records, 525 claims, 398 locators; 16/64 quẻ and 96/384 positions in each commentary book. The remaining 48 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none.
+- Next: Commit this group, then review BPCT chapter 5, sections 8–10 and related evidence.

@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-13",
-        "name": "Thiên Hỏa Đồng Nhân",
-        "aliases": [],
-        "explanation": "Quẻ số 13 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Càn.",
-        "kingWenNumber": 13,
-        "upperTrigramId": "trigram-heaven",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-14",
-        "name": "Hỏa Thiên Đại Hữu",
-        "aliases": [],
-        "explanation": "Quẻ số 14 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Ly.",
-        "kingWenNumber": 14,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-heaven",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-15",
-        "name": "Địa Sơn Khiêm",
-        "aliases": [],
-        "explanation": "Quẻ số 15 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Khôn.",
-        "kingWenNumber": 15,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-mountain",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-16",
-        "name": "Lôi Địa Dự",
-        "aliases": [],
-        "explanation": "Quẻ số 16 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Chấn.",
-        "kingWenNumber": 16,
-        "upperTrigramId": "trigram-thunder",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-17",
         "name": "Trạch Lôi Tùy",
         "aliases": [],
