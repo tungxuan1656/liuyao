@@ -858,3 +858,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 74 local document targets, and diff checks passed. Coverage remains incomplete: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions per commentary book.
 - Blockers: none for selected content. Ambiguous statements remain excluded; no independent specialist approval is claimed.
 - Next: Review Phệ Hạp, Bí, Bác, Phục and BPCT chapter 5, sections 13–14 (Vượng tướng hưu tù, Trong hợp có khắc; PDF 72).
+
+## 2026-10-02 — feat-037 four-quẻ group
+
+- Status: active.
+- Result: Added Phệ Hạp, Bí, Bác, and Phục with three-book overviews and all 24 positions. Preserved Trình Di/Chu Hy differences, historical context, and nine visually checked source-error resolutions. Used NHL's explicit seven-quẻ sequence and excluded unclear wording; removed duplicate legacy records.
+- Coverage: 130 records, 754 claims, 606 locators; 24/64 quẻ and 144/384 positions in each commentary book. Forty quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit.
+- Blockers: none for selected claims. Ambiguous wording remains excluded.
+- Next: Commit this group, then review BPCT chapter 5, sections 13–14 and related evidence.

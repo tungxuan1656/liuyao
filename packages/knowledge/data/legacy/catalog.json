@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-21",
-        "name": "Hỏa Lôi Phệ Hạp",
-        "aliases": [],
-        "explanation": "Quẻ số 21 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Ly.",
-        "kingWenNumber": 21,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-22",
-        "name": "Sơn Hỏa Bí",
-        "aliases": [],
-        "explanation": "Quẻ số 22 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Cấn.",
-        "kingWenNumber": 22,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-23",
-        "name": "Sơn Địa Bác",
-        "aliases": [],
-        "explanation": "Quẻ số 23 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Cấn.",
-        "kingWenNumber": 23,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-24",
-        "name": "Địa Lôi Phục",
-        "aliases": [],
-        "explanation": "Quẻ số 24 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Khôn.",
-        "kingWenNumber": 24,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-25",
         "name": "Thiên Lôi Vô Vọng",
         "aliases": [],

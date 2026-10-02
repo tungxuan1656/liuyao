@@ -12,6 +12,7 @@ import citations6 from '../data/citations/batch-four-hexagrams.json' with { type
 import citations7 from '../data/citations/batch-four-advanced.json' with { type: 'json' };
 import citations8 from '../data/citations/batch-five-hexagrams.json' with { type: 'json' };
 import citations9 from '../data/citations/batch-five-advanced.json' with { type: 'json' };
+import citations10 from '../data/citations/batch-six-hexagrams.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -138,6 +139,10 @@ import record122 from '../data/terms/term-line-reverse-chant.json' with { type: 
 import record123 from '../data/terms/term-repeated-chant.json' with { type: 'json' };
 import record124 from '../data/liuyao/reverse-chant-context.json' with { type: 'json' };
 import record125 from '../data/liuyao/repeated-chant-context.json' with { type: 'json' };
+import record126 from '../data/hexagrams/hexagram-21.json' with { type: 'json' };
+import record127 from '../data/hexagrams/hexagram-22.json' with { type: 'json' };
+import record128 from '../data/hexagrams/hexagram-23.json' with { type: 'json' };
+import record129 from '../data/hexagrams/hexagram-24.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -265,6 +270,10 @@ export const BOOK_RECORDS = [
   record123,
   record124,
   record125,
+  record126,
+  record127,
+  record128,
+  record129,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -277,6 +286,7 @@ export const BOOK_CITATIONS = [
   ...citations7.citations,
   ...citations8.citations,
   ...citations9.citations,
+  ...citations10.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

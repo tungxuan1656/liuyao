@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-23",
+  "type": "hexagram",
+  "title": "Sơn Địa Bác",
+  "aliases": ["Bác"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-23-structure",
+      "kind": "structural-fact",
+      "text": "Sơn Địa Bác có ngoại quái Cấn và nội quái Khôn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q23-overview-nhl",
+        "citation-pbc-q23-overview-pbc",
+        "citation-ntt-q23-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-23-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đọc Bác theo thế tiêu mòn, người giữ đạo chính nên chờ thời và chuẩn bị thay vì tiến bừa. Hình núi tựa đất còn gợi người trên chăm nền dân để chỗ ở của mình được vững.",
+      "citationIds": ["citation-nhl-q23-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-23-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu xem lúc bị lấn không thích hợp phô trương hành động, nhưng vẫn có việc giữ và nuôi phần gốc. Lo người dưới được sống yên là cách làm bền nền cho người trên trong lời Tượng.",
+      "citationIds": ["citation-pbc-q23-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-23-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt Bác ở thế lực lấn dần đạo chính, nên thuận thời mà dừng để tự giữ. Núi bám đất làm hình ảnh nền dưới cần dày bền; yên nuôi người dưới giúp chỗ trên không sụt.",
+      "citationIds": ["citation-ntt-q23-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-earth", "trigram-mountain"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yin", "yin", "yin", "yin", "yang"],
+    "kingWenNumber": 23,
+    "upperTrigramId": "trigram-mountain",
+    "lowerTrigramId": "trigram-earth",
+    "claimIds": ["hexagram-23-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-23-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê lấy phá chân giường để giảng sự tiêu mòn bắt đầu từ nền thấp. Nếu tiếp tục, sự phá ấy sẽ làm mất chỗ giữ đạo chính.",
+          "citationIds": ["citation-nhl-q23-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-23-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc chân giường như nền của chỗ người giữ đạo yên thân. Phá từ dưới rồi đi lên khiến nền và chính đạo cùng nguy.",
+          "citationIds": ["citation-pbc-q23-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-23-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem đẽo chân giường theo việc sự lấn bắt đầu từ dưới, dần tiến tới người ở trên. Lời xấu răn sự mất nền chính, không chỉ miêu tả đồ vật hỏng.",
+          "citationIds": ["citation-ntt-q23-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-23-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho sự phá ở hào hai đã lên tới then hoặc sườn giường, nặng hơn bước ở chân. Đạo chính bị lấn thêm khi quá trình tiêu mòn cứ tiếp tục.",
+          "citationIds": ["citation-nhl-q23-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-23-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào hai cùng hào đầu đẩy sự phá lên then giường. Không có người cùng giúp khiến người bị lấn càng khó tự giữ.",
+          "citationIds": ["citation-pbc-q23-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-23-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt sự đẽo ở hào hai lên phần bễ của giường, thể hiện thế lấn đã tiến. Chưa có kẻ cùng giúp là lời nhắc cần sự hỗ trợ trước khi sự phá mạnh hơn.",
+          "citationIds": ["citation-ntt-q23-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-23-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hào ba bỏ nhóm gần mình để theo hào dương cuối có đạo chính. Chịu mất lòng nhóm cũ mà chọn điều đúng là điều kiện không lỗi.",
+          "citationIds": ["citation-nhl-q23-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-23-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba tách khỏi những người cùng gây tiêu mòn và ứng với hào trên. Không lỗi ở sự thay đổi lựa chọn, không tự có chỉ vì thuộc một phía.",
+          "citationIds": ["citation-pbc-q23-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-23-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào ba ở vị cứng, ứng người cứng nên khác các hào âm chung quanh. Có lòng theo đường chính giữa lúc tiêu bác giúp lời hào mang nghĩa không lỗi.",
+          "citationIds": ["citation-ntt-q23-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-23-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc sự phá giường tới da thịt theo tai họa đã bức thiết gần người nằm. Hình ảnh thể hiện mức lấn sâu trong bối cảnh quẻ, không xác định thương tích thực tế.",
+          "citationIds": ["citation-nhl-q23-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-23-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào bốn đã lên ngoại quái, sự phá không còn chỉ ở nền giường mà tới người. Lời xấu nhấn mạnh nguy đã sát, khác bước đầu còn ở phía dưới.",
+          "citationIds": ["citation-pbc-q23-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-23-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy da là phần ngoài thân thể để nói sự tiêu bác gần tới chính người. Vì nguy đã cận nên lời hào nói thẳng hung, không lặp lời mất chính của hai hào đầu.",
+          "citationIds": ["citation-ntt-q23-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-23-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc xâu cá và cung nhân theo hào năm dẫn những người cùng loại theo hào cuối có đạo chính. Ông xem đây là đường đổi sai sang đúng, khác thế tiêu diệt của những hào trước.",
+          "citationIds": ["citation-nhl-q23-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Xâu cá và cung nhân là phép ví trong bối cảnh chú giải cổ, không quy định phẩm chất cố định theo giới tính."
+          ]
+        },
+        {
+          "id": "hexagram-23-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào năm có vị và sức nhưng biết dẫn nhóm mình theo điều thiện ở hào cuối. Hình ảnh cung nhân chỉ phép ví trong bối cảnh cổ; lời lợi phụ thuộc sự chuyển theo đường chính.",
+          "citationIds": ["citation-pbc-q23-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Xâu cá và cung nhân là phép ví trong bối cảnh chú giải cổ, không quy định phẩm chất cố định theo giới tính."
+          ]
+        },
+        {
+          "id": "hexagram-23-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy xâu cá làm hình ảnh các hào âm được hào năm dẫn theo thứ tự để thuận hào dương trên. Cách đọc mở đường sửa đổi, không giữ mọi hào âm trong vai gây hại cố định.",
+          "citationIds": ["citation-ntt-q23-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Xâu cá và cung nhân là phép ví trong bối cảnh chú giải cổ, không quy định phẩm chất cố định theo giới tính."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-23-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc trái lớn còn lại theo mầm để sự sống tiếp tục, và dư theo quần chúng ủng hộ người có đạo. Phá hết người giữ nền cũng ví như tự phá chỗ che của mình.",
+          "citationIds": ["citation-nhl-q23-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-23-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu lấy trái chưa ăn làm hình ảnh khả năng sinh lại dù đang suy. Người có đạo được dân theo, còn người phá nền tới cùng sẽ tự mất chỗ dung thân trong phép ví này.",
+          "citationIds": ["citation-pbc-q23-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-23-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào dương cuối chưa mất gợi sự có thể sinh lại, người giữ đạo được dân chở đỡ. Ông phân biệt kết quả của người quân tử và tiểu nhân trong cùng cảnh, không gọi bản thân hào chín là tiểu nhân.",
+          "citationIds": ["citation-ntt-q23-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-nhl-bac-upper-trigram",
+      "status": "resolved",
+      "description": "NHL PDF 206 lời giải Thoán gọi ngoại quái là Chấn nhưng giảng đức ngưng.",
+      "citationIds": [
+        "citation-nhl-q23-overview-nhl",
+        "citation-pbc-q23-overview-pbc",
+        "citation-ntt-q23-overview-ntt"
+      ],
+      "resolution": "Ảnh PDF 206 xác nhận chữ Chấn. Tiêu đề Sơn Địa Bác, hình quẻ và hai sách khác đều cho ngoại Cấn; giữ Cấn trên Khôn."
+    },
+    {
+      "id": "discrepancy-ntt-bac-footnote-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 418 chú thích 1 gọi chữ 利 là Bác.",
+      "citationIds": [
+        "citation-ntt-q23-footnote-glyph-ngo",
+        "citation-ntt-q23-overview-ntt",
+        "citation-nhl-q23-overview-nhl",
+        "citation-pbc-q23-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 418 xác nhận chữ 利 trong chú thích. Tên Bác ở lời quẻ là 剝; không lấy chữ bị gọi nhầm trong chú thích làm tên hay nghĩa riêng của quẻ."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q23-overview-nhl",
+      "citation-pbc-q23-overview-pbc",
+      "citation-ntt-q23-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q23-line-1-nhl",
+      "citation-pbc-q23-line-1-pbc",
+      "citation-ntt-q23-line-1-ntt",
+      "citation-nhl-q23-line-2-nhl",
+      "citation-pbc-q23-line-2-pbc",
+      "citation-ntt-q23-line-2-ntt",
+      "citation-nhl-q23-line-3-nhl",
+      "citation-pbc-q23-line-3-pbc",
+      "citation-ntt-q23-line-3-ntt",
+      "citation-nhl-q23-line-4-nhl",
+      "citation-pbc-q23-line-4-pbc",
+      "citation-ntt-q23-line-4-ntt",
+      "citation-nhl-q23-line-5-nhl",
+      "citation-pbc-q23-line-5-pbc",
+      "citation-ntt-q23-line-5-ntt",
+      "citation-nhl-q23-line-6-nhl",
+      "citation-pbc-q23-line-6-pbc",
+      "citation-ntt-q23-line-6-ntt",
+      "citation-ntt-q23-footnote-glyph-ngo"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Giữ riêng cách đọc tác giả và bối cảnh cổ. Nhãn trang NHL được kiểm tra trên PDF; chưa có xác nhận chuyên gia độc lập và không chứng nhận toàn bộ sách hay giả thuyết lịch sử."
+  }
+}
