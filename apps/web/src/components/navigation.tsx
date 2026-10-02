@@ -37,7 +37,10 @@ export function Navigation() {
 
   return (
     <header data-app-header className="sticky top-0 z-20 isolate border-b bg-background">
-      <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
+      <div
+        data-app-header-content
+        className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-4"
+      >
         <div className="flex min-w-0 items-center gap-2 md:hidden">
           {mobileParent ? (
             <Link

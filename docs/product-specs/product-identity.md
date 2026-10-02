@@ -30,7 +30,7 @@ Export the required V1 set from those sources:
 - 512×512 PWA icon;
 - maskable PWA icon;
 - Apple touch icon;
-- light and dark variants only when the UI supports both.
+- one light-background icon set for V1. Although the UI supports light and dark themes, the Product Owner selected a single set; this is an explicit V1 exception to the general expectation of theme-specific variants. Do not generate dark-mode icon assets for V1.
 
 Do not create an editable vector master or social-sharing image for V1; the Product Owner waived both on 2026-10-01. Revisit them only if V1 scope changes.
 
@@ -48,6 +48,8 @@ Use the approved identity consistently in:
 - install surfaces;
 - social sharing metadata;
 - README product description.
+
+The PWA manifest `theme_color` and `background_color` remain statically `#ffffff`, matching the approved light-background icon set. The HTML `theme-color` starts at `#ffffff` and follows the active light/dark application theme at runtime; this does not imply separate dark icon assets or a platform-specific tint behavior.
 
 The production domain belongs to `docs/release.md` and F13. Product identity consumes that URL after selection; it does not own the domain decision.
 

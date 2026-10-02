@@ -37,16 +37,19 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 ## Commands
 
-| Command                           | Scope                               |
-| --------------------------------- | ----------------------------------- |
-| `pnpm dev`                        | Web development server              |
-| `pnpm build`                      | All workspace builds                |
-| `pnpm test`                       | Enforce placement + package tests   |
-| `pnpm typecheck`                  | All workspace type checks           |
-| `pnpm lint`                       | Repository ESLint                   |
-| `pnpm format`                     | Write Prettier formatting           |
-| `pnpm format:check`               | Check Prettier formatting           |
-| `bash scripts/check_ts_length.sh` | Enforce TypeScript file-size limits |
+| Command                                     | Scope                                                   |
+| ------------------------------------------- | ------------------------------------------------------- |
+| `pnpm dev`                                  | Web development server                                  |
+| `pnpm build`                                | All workspace builds                                    |
+| `pnpm test`                                 | Enforce placement + package tests                       |
+| `pnpm typecheck`                            | All workspace type checks                               |
+| `pnpm lint`                                 | Repository ESLint                                       |
+| `pnpm format`                               | Write Prettier formatting                               |
+| `pnpm format:check`                         | Check Prettier formatting                               |
+| `bash scripts/check_ts_length.sh`           | Enforce TypeScript file-size limits                     |
+| `pnpm --filter @liuyao/web generate:assets` | Regenerate the V1 PWA icon set from the approved source |
+
+The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/luc-hao-icon-source.avif` because its configuration reads a public-directory path. The command removes that copy after success, failure, or a handled interrupt; it does not modify the approved source image. If an uncatchable termination leaves the temporary file behind, remove that exact file before retrying. Concurrent generator runs are not supported.
 
 ## Git hooks
 

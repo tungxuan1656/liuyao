@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-02 — feat-013 PR review follow-up
+
+**State**: active; review fixes are implemented and verified, with physical-device safe-area/blur retest still pending.
+**Done**: Clarified the approved single light-background V1 icon set and the distinction between static white manifest colors and dynamic HTML theme color. Added horizontal safe-area spacing for header, route content, and bottom sheet. Replaced the asset-generation shell one-liner with a cleanup-safe Node script and documented its command and source-image behavior. Kept the harmless duplicate `includeAssets` entry unchanged.
+**Evidence**: Designer's final `./init.sh` passed after the source changes. Synthetic browser checks passed with 59px left/right insets at 844×390 and zero horizontal inset in portrait; this is not native-device evidence. Two asset generations reproduced the five generated icon hashes and the source hash. Controlled subprocess checks preserved generator failure exit 23 and returned 143 on SIGTERM; the temporary copy was removed in both cases. Targeted ESLint, Node syntax, Prettier, JSON parse, and `git diff --check` passed. F1-F3 from PR review are addressed; F4 is intentionally retained as harmless.
+**Blockers**: Retest on physical iOS in portrait and landscape, including initial view, normal scroll, top overscroll, controls, themes, all safe-area edges, and bottom spacing; blur recurrence and OS root cause remain unconfirmed. Naming/domain/trademark-risk research and final terminology/copy review remain open.
+**Next**: Ask the Product Owner to retest the installed PWA on physical iOS in portrait and landscape; keep feat-013 active and do not claim the candidate header mitigation fixes native behavior.
+
 ## 2026-10-02 — feat-013 iOS header mitigation
 
 **State**: active; mitigation is implemented and browser-checked, but no native iOS fix is claimed.

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "generate:assets": "cp ../../docs/design-docs/batquai.avif public/luc-hao-icon-source.avif && pwa-assets-generator; result=$?; rm -f public/luc-hao-icon-source.avif; exit \"$result\"",
+    "generate:assets": "node scripts/generate-assets.mjs",
     "typecheck": "tsc --noEmit",
     "check:package-exports": "node scripts/check-package-exports.mjs && tsc --noEmit -p tsconfig.package-types.json"
   },
