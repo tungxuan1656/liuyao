@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-34",
+  "type": "hexagram",
+  "title": "Lôi Thiên Đại Tráng",
+  "aliases": ["Đại Tráng"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-34-structure",
+      "kind": "structural-fact",
+      "text": "Lôi Thiên Đại Tráng có ngoại quái Chấn và nội quái Càn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q34-overview-nhl",
+        "citation-pbc-q34-overview-pbc",
+        "citation-ntt-q34-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-34-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đặt Đại Tráng ở sức dương đang lớn và hành động mạnh. Sức cần đi với đường chính, việc không hợp lễ thì dừng; lợi của quẻ không bảo đảm mọi cách dùng sức đều tốt.",
+      "citationIds": ["citation-nhl-q34-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-34-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu phân biệt sức mạnh đúng với việc cậy sức và kiêu. Có tài mạnh vẫn phải tự sửa, giữ chính và có mức thì mới hợp đạo Đại Tráng.",
+      "citationIds": ["citation-pbc-q34-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-34-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di giảng sức lớn theo sự cứng bên trong và động bên ngoài, nhưng giá trị đặt ở chính đính. Tự thắng điều riêng và không làm trái lễ là cách dùng sức được ông nhấn mạnh.",
+      "citationIds": ["citation-ntt-q34-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-heaven", "trigram-thunder"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yang", "yang", "yin", "yin"],
+    "kingWenNumber": 34,
+    "upperTrigramId": "trigram-thunder",
+    "lowerTrigramId": "trigram-heaven",
+    "claimIds": ["hexagram-34-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-34-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào đầu mới ở thấp mà đã ham tiến, giống sức chỉ ở ngón chân. Lời hữu phu được ông đọc theo hậu quả xấu chắc trong cách giảng cổ, không phải khen lòng thành.",
+          "citationIds": ["citation-nhl-q34-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-34-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào đầu ở người thiếu tài và vị mà cứ dùng sức tiến lên. Ông đọc hữu phu ở đây theo lời nhấn kết quả của sự liều, khác nghĩa tin thành ở chỗ khác.",
+          "citationIds": ["citation-pbc-q34-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-34-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào đầu không có ngôi mà chỉ cậy cứng để đi nên dễ thất bại. Hữu phu chỉ sức khẳng định của lời răn trong chú giải này, không là chứng cứ thực nghiệm về kết quả.",
+          "citationIds": ["citation-ntt-q34-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-34-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào hai tuy dương ở vị âm vẫn có trung và ứng hào năm trung. Trong thời mạnh, biết giữ mức và đường chính giúp tránh quá cương.",
+          "citationIds": ["citation-nhl-q34-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-34-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu coi đức trung của hào hai là cách hạn chế sự mạnh quá mức. Lời tốt phụ thuộc việc giữ chính, không sửa tính hào hoặc vị trí chỉ vì được khen trung.",
+          "citationIds": ["citation-pbc-q34-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-34-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho đức trung của hào hai khiến cách xử có mức trong thời Đại Tráng. Ông lấy trung để giải chính và lời tốt, dù hào dương ở vị chẵn.",
+          "citationIds": ["citation-ntt-q34-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-34-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho hào hai có trung nhưng chưa chính theo vị, nên phải nhờ trung để tìm chính. Lời tốt đặt ở việc giữ chính được, khác cách Trình Di lấy trung giải rằng chính đã có.",
+          "citationIds": ["citation-ntt-q34-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-34-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc quân tử dụng võng theo người có đức không cậy sức để làm càn. Hào ba quá cương và không trung, nên ngay cả giữ điều chính cũng còn nguy; dê mắc giậu ví sự ham húc mà tự vướng.",
+          "citationIds": ["citation-nhl-q34-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-34-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc dụng võng theo sự liều và coi thường trở ngại của người có địa vị. Ông không dùng quân tử ở đây để khen đức; quá cậy sức thì dù chính vẫn nguy, như dê mắc sừng trong giậu.",
+          "citationIds": ["citation-pbc-q34-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-34-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho người ở hào ba quá cương và muốn tiến, dùng mạnh hoặc coi trở ngại như không đều gây nguy. Quân tử được giải theo vị thế, không đồng nghĩa người có đức trong lời răn này.",
+          "citationIds": ["citation-ntt-q34-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-34-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc dụng võng theo việc coi vật cản như không, là dùng mạnh quá mức. Người xem dù chính vẫn gặp nguy trong thế quá cương; cách đọc trực tiếp trong bản NTT khác lời NHL gán cho Chu Hy rằng không dùng sức.",
+          "citationIds": ["citation-ntt-q34-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-34-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào bốn dẫn các hào dương khi sự cản đã mở, nên có thể tiến bằng sức vững. Giữ chính là điều kiện tránh hối, khác việc cứ dùng sức bất kể trở ngại.",
+          "citationIds": ["citation-nhl-q34-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-34-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu lấy giậu mở và trục xe mạnh làm hình ảnh người có tài giúp việc tiến. Hào bốn vẫn cần giữ chính để sức mạnh không gây hối.",
+          "citationIds": ["citation-pbc-q34-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-34-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào bốn có tài cương, trước không còn hào cương ngăn nên có đường tiến. Đúng vị không được giả định sẵn: giữ chính mới làm sự tiến vững và hết hối.",
+          "citationIds": ["citation-ntt-q34-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-34-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho hào bốn còn mạnh nhưng đã dương ở vị âm nên không quá cương như hào ba. Giữ chính giúp mất hối và tiến được; sự mềm đi của vị là một phần lời giải riêng này.",
+          "citationIds": ["citation-ntt-q34-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-34-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào năm mềm ở ngôi cao không nên áp bốn hào dương bằng sức. Thái độ vui và dễ dãi làm giảm sự hung hăng của người dưới; mất dê chỉ hình ảnh bỏ tính húc.",
+          "citationIds": ["citation-nhl-q34-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-34-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc mất dê theo bỏ cách dùng mạnh, lấy nhu trung để tiếp người mạnh. Hào năm tránh hối nhờ cách đối xử ấy, không phải nhờ mất một đàn vật nuôi.",
+          "citationIds": ["citation-pbc-q34-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-34-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào năm dùng trung và mềm để làm người cương không còn chống bằng sức. Mất dê biểu thị bỏ sự húc mạnh trong quan hệ này, không dự báo thiệt hại chăn nuôi.",
+          "citationIds": ["citation-ntt-q34-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-34-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc mất dê theo chất mềm trung làm mất sự mạnh mà không hối. Ông còn để ngỏ chữ dịch chỉ nơi dễ hoặc bãi; cách đọc từ này là nhận xét của chú giải, không tạo một địa điểm dự báo.",
+          "citationIds": ["citation-ntt-q34-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-34-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào cuối ham tiến quá mức nên mắc kẹt, không tiến hoặc lui được. Biết khó, bớt sự hăng và tự sửa là cách còn có thể chuyển tình thế.",
+          "citationIds": ["citation-nhl-q34-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-34-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào cuối ở thế dùng mạnh đã quá, tự làm mình bị vướng. Gian khó được đọc theo biết sợ và đổi cách xử, không bảo đảm cứ gặp khó thì kết quả tốt.",
+          "citationIds": ["citation-pbc-q34-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-34-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào cuối mềm nhưng ở chót động nên ham tiến mà mắc. Khó nhọc có thể làm giảm sự hăng để trở về cách phù hợp chất mềm; điều kiện đổi ấy mới gắn với lời tốt.",
+          "citationIds": ["citation-ntt-q34-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-nhl-dai-trang-fifth-word",
+      "status": "resolved",
+      "description": "NHL PDF 241 bản dịch hào năm dùng dễ dại, trong khi phần giảng ngay dưới dùng dễ dãi.",
+      "citationIds": [
+        "citation-nhl-q34-line-5-nhl",
+        "citation-pbc-q34-line-5-pbc",
+        "citation-ntt-q34-line-5-ntt"
+      ],
+      "resolution": "Ảnh xác nhận hai từ khác nhau. Giữ nghĩa vui và mềm trong phần giảng, được hai sách khác đối chiếu theo bỏ cậy sức; không biến dễ dại thành phẩm chất được khuyên."
+    },
+    {
+      "id": "discrepancy-ntt-dai-trang-final-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 556 dòng Hán Tượng hào cuối lặp cùng chữ chỉ tiến ở cả hai vế, khác dịch âm và nghĩa phân biệt lui với tiến.",
+      "citationIds": [
+        "citation-ntt-q34-line-6-ntt",
+        "citation-nhl-q34-line-6-nhl",
+        "citation-pbc-q34-line-6-pbc"
+      ],
+      "resolution": "Ảnh xác nhận chữ lặp. Giữ hai hướng không lui được, không tiến được theo lời hào, bản dịch và hai sách khác; không tạo thêm nghĩa từ lỗi chép dòng Tượng."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q34-overview-nhl",
+      "citation-pbc-q34-overview-pbc",
+      "citation-ntt-q34-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q34-line-1-nhl",
+      "citation-pbc-q34-line-1-pbc",
+      "citation-ntt-q34-line-1-ntt",
+      "citation-nhl-q34-line-2-nhl",
+      "citation-pbc-q34-line-2-pbc",
+      "citation-ntt-q34-line-2-ntt",
+      "citation-ntt-q34-line-2-chu-hy",
+      "citation-nhl-q34-line-3-nhl",
+      "citation-pbc-q34-line-3-pbc",
+      "citation-ntt-q34-line-3-ntt",
+      "citation-ntt-q34-line-3-chu-hy",
+      "citation-nhl-q34-line-4-nhl",
+      "citation-pbc-q34-line-4-pbc",
+      "citation-ntt-q34-line-4-ntt",
+      "citation-ntt-q34-line-4-chu-hy",
+      "citation-nhl-q34-line-5-nhl",
+      "citation-pbc-q34-line-5-pbc",
+      "citation-ntt-q34-line-5-ntt",
+      "citation-ntt-q34-line-5-chu-hy",
+      "citation-nhl-q34-line-6-nhl",
+      "citation-pbc-q34-line-6-pbc",
+      "citation-ntt-q34-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Cách đọc khác nhau giữ theo tác giả. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận chuyện lịch sử hoặc khả năng dự báo. Dụng võng được giữ riêng theo NHL và PBC, Trình Di, Chu Hy. NHL gán cách đọc của mình cho Chu Hy khác lời Chu Hy trong bản NTT; chưa xác định bản nền của NHL nên không sửa lời tác giả hoặc khẳng định mọi bản Chu Hy giống nhau."
+  }
+}

@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-33",
-        "name": "Thiên Sơn Độn",
-        "aliases": [],
-        "explanation": "Quẻ số 33 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Càn.",
-        "kingWenNumber": 33,
-        "upperTrigramId": "trigram-heaven",
-        "lowerTrigramId": "trigram-mountain",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-34",
-        "name": "Lôi Thiên Đại Tráng",
-        "aliases": [],
-        "explanation": "Quẻ số 34 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Chấn.",
-        "kingWenNumber": 34,
-        "upperTrigramId": "trigram-thunder",
-        "lowerTrigramId": "trigram-heaven",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-35",
-        "name": "Hỏa Địa Tấn",
-        "aliases": [],
-        "explanation": "Quẻ số 35 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Ly.",
-        "kingWenNumber": 35,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-36",
-        "name": "Địa Hỏa Minh Di",
-        "aliases": [],
-        "explanation": "Quẻ số 36 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Khôn.",
-        "kingWenNumber": 36,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-37",
         "name": "Phong Hỏa Gia Nhân",
         "aliases": [],

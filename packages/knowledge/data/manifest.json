@@ -19,7 +19,8 @@
     "citations/batch-seven-hexagrams.json",
     "citations/batch-seven-advanced.json",
     "citations/batch-eight-hexagrams.json",
-    "citations/batch-eight-advanced.json"
+    "citations/batch-eight-advanced.json",
+    "citations/batch-nine-hexagrams.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -174,7 +175,11 @@
     "terms/term-advancing-spirit.json",
     "terms/term-retreating-spirit.json",
     "liuyao/advancing-retreating-spirits.json",
-    "liuyao/divination-context-and-proxy-role.json"
+    "liuyao/divination-context-and-proxy-role.json",
+    "hexagrams/hexagram-33.json",
+    "hexagrams/hexagram-34.json",
+    "hexagrams/hexagram-35.json",
+    "hexagrams/hexagram-36.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -329,7 +334,11 @@
     "term-advancing-spirit",
     "term-retreating-spirit",
     "article-advancing-retreating-spirits",
-    "article-divination-context-and-proxy-role"
+    "article-divination-context-and-proxy-role",
+    "hexagram-33",
+    "hexagram-34",
+    "hexagram-35",
+    "hexagram-36"
   ],
   "topics": [
     {
@@ -389,8 +398,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-33", "hexagram-34", "hexagram-35", "hexagram-36"],
+    "hexagramIds": ["hexagram-37", "hexagram-38", "hexagram-39", "hexagram-40"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Độn, Đại Tráng, Tấn, Minh Di và BPCT Chương 6, câu 1–6 (PDF 77–79): động biến, trung hòa, quá và bất cập, trợ sinh và khắc, Sinh/Vượng. Ba mươi hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 5 mục 1–18 có các thuật ngữ và diễn giải được chọn. Các khoảng trống, câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải. BPCT Chương 6, câu 1–6 (PDF 77–79) là phần còn lại của đợt này. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

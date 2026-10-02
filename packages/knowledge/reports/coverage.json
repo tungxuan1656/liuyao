@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 153, "released": 153, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 995, "missingCitationIds": [] },
-  "citations": { "total": 812 },
+  "records": { "authored": 157, "released": 157, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 1095, "missingCitationIds": [] },
+  "citations": { "total": 908 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 32,
+    "reviewed": 36,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -42,13 +42,13 @@
       "hexagram-29",
       "hexagram-30",
       "hexagram-31",
-      "hexagram-32"
-    ],
-    "missingIds": [
+      "hexagram-32",
       "hexagram-33",
       "hexagram-34",
       "hexagram-35",
-      "hexagram-36",
+      "hexagram-36"
+    ],
+    "missingIds": [
       "hexagram-37",
       "hexagram-38",
       "hexagram-39",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 192,
+    "reviewedPositions": 216,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 32,
-        "reviewedLinePositions": 192,
+        "overviewHexagrams": 36,
+        "reviewedLinePositions": 216,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 32,
-        "reviewedLinePositions": 192,
+        "overviewHexagrams": 36,
+        "reviewedLinePositions": 216,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 32,
-        "reviewedLinePositions": 192,
+        "overviewHexagrams": 36,
+        "reviewedLinePositions": 216,
         "missingPilotPositions": []
       }
     ]
@@ -173,7 +173,11 @@
         "hexagram-29",
         "hexagram-30",
         "hexagram-31",
-        "hexagram-32"
+        "hexagram-32",
+        "hexagram-33",
+        "hexagram-34",
+        "hexagram-35",
+        "hexagram-36"
       ]
     },
     {
@@ -213,7 +217,11 @@
         "hexagram-29",
         "hexagram-30",
         "hexagram-31",
-        "hexagram-32"
+        "hexagram-32",
+        "hexagram-33",
+        "hexagram-34",
+        "hexagram-35",
+        "hexagram-36"
       ]
     },
     {
@@ -1075,15 +1083,97 @@
         "citation-pbc-q32-line-6-pbc"
       ],
       "resolution": "Ảnh xác nhận sự không khớp. Hình quẻ và ba lời giảng xác định hào cuối âm; giữ Thượng lục và nghĩa âm mềm quá động."
+    },
+    {
+      "recordId": "hexagram-33",
+      "id": "discrepancy-ntt-don-third-negation",
+      "status": "resolved",
+      "description": "NTT PDF 541 lời Trình Di dưới Tượng hào ba ghi có thể đương nổi việc lớn, trái lời Tượng không thể và phần giải trước.",
+      "citationIds": [
+        "citation-ntt-q33-line-3-ntt",
+        "citation-nhl-q33-line-3-nhl",
+        "citation-pbc-q33-line-3-pbc"
+      ],
+      "resolution": "Ảnh xác nhận chỗ thiếu phủ định. Giữ nghĩa không thể gánh việc lớn theo lời Tượng, phần giảng liền trước và hai sách khác; không đọc tình riêng ở hào ba thành năng lực việc lớn."
+    },
+    {
+      "recordId": "hexagram-33",
+      "id": "discrepancy-ntt-don-second-label",
+      "status": "resolved",
+      "description": "NTT PDF 543 Trình Di gọi người ứng với hào năm là Chín Hai, khác Lục Nhị và hình quẻ.",
+      "citationIds": [
+        "citation-ntt-q33-line-5-ntt",
+        "citation-ntt-q33-line-2-ntt",
+        "citation-nhl-q33-line-2-nhl",
+        "citation-pbc-q33-line-2-pbc"
+      ],
+      "resolution": "Ảnh xác nhận nhãn Chín Hai. Hào hai là âm ở cả ba hình quẻ và đầu hào; giữ Lục nhị, không đổi chính ứng hai và năm."
+    },
+    {
+      "recordId": "hexagram-34",
+      "id": "discrepancy-nhl-dai-trang-fifth-word",
+      "status": "resolved",
+      "description": "NHL PDF 241 bản dịch hào năm dùng dễ dại, trong khi phần giảng ngay dưới dùng dễ dãi.",
+      "citationIds": [
+        "citation-nhl-q34-line-5-nhl",
+        "citation-pbc-q34-line-5-pbc",
+        "citation-ntt-q34-line-5-ntt"
+      ],
+      "resolution": "Ảnh xác nhận hai từ khác nhau. Giữ nghĩa vui và mềm trong phần giảng, được hai sách khác đối chiếu theo bỏ cậy sức; không biến dễ dại thành phẩm chất được khuyên."
+    },
+    {
+      "recordId": "hexagram-34",
+      "id": "discrepancy-ntt-dai-trang-final-glyph",
+      "status": "resolved",
+      "description": "NTT PDF 556 dòng Hán Tượng hào cuối lặp cùng chữ chỉ tiến ở cả hai vế, khác dịch âm và nghĩa phân biệt lui với tiến.",
+      "citationIds": [
+        "citation-ntt-q34-line-6-ntt",
+        "citation-nhl-q34-line-6-nhl",
+        "citation-pbc-q34-line-6-pbc"
+      ],
+      "resolution": "Ảnh xác nhận chữ lặp. Giữ hai hướng không lui được, không tiến được theo lời hào, bản dịch và hai sách khác; không tạo thêm nghĩa từ lỗi chép dòng Tượng."
+    },
+    {
+      "recordId": "hexagram-35",
+      "id": "discrepancy-ntt-tan-second-label",
+      "status": "resolved",
+      "description": "NTT PDF 563 Chu Hy mở đoạn hào hai bằng Hào Sáu Năm, khác Lục Nhị ở đầu hào và bối cảnh không có ứng phía trên.",
+      "citationIds": [
+        "citation-ntt-q35-line-2-chu-hy",
+        "citation-ntt-q35-line-2-ntt",
+        "citation-nhl-q35-line-2-nhl",
+        "citation-pbc-q35-line-2-pbc"
+      ],
+      "resolution": "Ảnh xác nhận nhãn Năm. Giữ nhận định ở hào hai theo đầu hào và bối cảnh cả ba sách; hào năm vẫn là đối tượng vương mẫu được đoạn này nhắc tới."
+    },
+    {
+      "recordId": "hexagram-36",
+      "id": "discrepancy-ntt-minh-di-third-negation",
+      "status": "resolved",
+      "description": "NTT PDF 576 dịch âm Tượng hào ba thêm bất trong nãi đại bất đắc, khác dòng Hán và dịch nghĩa đều nói được.",
+      "citationIds": [
+        "citation-ntt-q36-line-3-ntt",
+        "citation-nhl-q36-line-3-nhl",
+        "citation-pbc-q36-line-3-pbc"
+      ],
+      "resolution": "Ảnh xác nhận bất trong dịch âm. Giữ nghĩa đạt được mục đích theo dòng Hán, bản dịch và hai sách khác; không đọc câu này thành không đạt."
+    },
+    {
+      "recordId": "hexagram-36",
+      "id": "discrepancy-nhl-minh-di-final-reading",
+      "status": "resolved",
+      "description": "NHL PDF 247 dòng Hán hào cuối dùng chữ hối, nhưng dịch âm và đoạn giảng gọi bất minh di.",
+      "citationIds": [
+        "citation-nhl-q36-line-6-nhl",
+        "citation-pbc-q36-line-6-pbc",
+        "citation-ntt-q36-line-6-ntt"
+      ],
+      "resolution": "Ảnh xác nhận sự không khớp. Chữ Hán và hai sách khác đọc hối theo sự tối; giữ ý tối cùng trong lời NHL, không chép âm di làm tên khác của quẻ. Không sửa lời giải riêng của NHL về sự sáng bị hại."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-33",
-      "hexagram-34",
-      "hexagram-35",
-      "hexagram-36",
       "hexagram-37",
       "hexagram-38",
       "hexagram-39",
@@ -1117,8 +1207,8 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-33", "hexagram-34", "hexagram-35", "hexagram-36"],
+    "hexagramIds": ["hexagram-37", "hexagram-38", "hexagram-39", "hexagram-40"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Độn, Đại Tráng, Tấn, Minh Di và BPCT Chương 6, câu 1–6 (PDF 77–79): động biến, trung hòa, quá và bất cập, trợ sinh và khắc, Sinh/Vượng. Ba mươi hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 5 mục 1–18 có các thuật ngữ và diễn giải được chọn. Các khoảng trống, câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải. BPCT Chương 6, câu 1–6 (PDF 77–79) là phần còn lại của đợt này. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

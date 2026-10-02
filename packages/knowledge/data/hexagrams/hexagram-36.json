@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-36",
+  "type": "hexagram",
+  "title": "Địa Hỏa Minh Di",
+  "aliases": ["Minh Di"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-36-structure",
+      "kind": "structural-fact",
+      "text": "Địa Hỏa Minh Di có ngoại quái Khôn và nội quái Ly. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q36-overview-nhl",
+        "citation-pbc-q36-overview-pbc",
+        "citation-ntt-q36-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-36-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đọc Minh Di theo sự sáng bị che hại, cần giữ sáng bên trong và tỏ mềm ở ngoài để qua khó. Chuyện Văn Vương và Cơ Tử là ví dụ trong chú giải cổ, không chứng nhận lịch sử hoặc mọi hành vi giả vờ.",
+      "citationIds": ["citation-nhl-q36-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-36-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu cho người gặp thế tối cần giấu sự sáng mà vẫn giữ chính. Trong việc trị người, ông còn răn tránh soi quá từng lỗi nhỏ, dùng sự rộng dung; hai bối cảnh không bị gộp thành một thủ thuật.",
+      "citationIds": ["citation-pbc-q36-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-36-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di cho bên trong giữ sáng, bên ngoài mềm để tự xử lúc bị hại. Ông cũng đối chiếu sáng xét quá mức khiến người mất chỗ dung thân với cách trị rộng, không lấy việc giấu sáng làm bỏ đường chính.",
+      "citationIds": ["citation-ntt-q36-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-fire", "trigram-earth"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yang", "yin", "yin", "yin"],
+    "kingWenNumber": 36,
+    "upperTrigramId": "trigram-earth",
+    "lowerTrigramId": "trigram-fire",
+    "claimIds": ["hexagram-36-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-36-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào đầu biết nguy từ sớm nên lui trước, dù phải thiếu thốn và chịu lời chê. Chim rũ cánh và ba ngày không ăn là hình ảnh khó khi rời thế hại, không khóa vào một lịch ngày.",
+          "citationIds": ["citation-nhl-q36-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Ba ngày không ăn là hình ảnh khó khi lui trong chú giải cổ, không là kỳ hạn dự báo hoặc yêu cầu nhịn ăn."
+          ]
+        },
+        {
+          "id": "hexagram-36-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào đầu ở người thấy mầm nguy từ xa, biết đi trước khi hại sâu. Khó khăn và lời trách không tự phủ định việc lui theo lẽ phải trong tình thế này.",
+          "citationIds": ["citation-pbc-q36-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Ba ngày không ăn là hình ảnh khó khi lui trong chú giải cổ, không là kỳ hạn dự báo hoặc yêu cầu nhịn ăn."
+          ]
+        },
+        {
+          "id": "hexagram-36-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào đầu sáng và ở xa thế tối, thấy điều nguy sớm nên đi dù gặp khó. Lời chủ trách nói người khác chưa hiểu việc ấy, không biến lời chê thành bằng chứng mọi quyết định rời đi đều đúng.",
+          "citationIds": ["citation-ntt-q36-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Ba ngày không ăn là hình ảnh khó khi lui trong chú giải cổ, không là kỳ hạn dự báo hoặc yêu cầu nhịn ăn."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-36-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào hai bị thương nhẹ mà có thể cứu nhanh bằng sức mạnh, như ngựa khỏe. Hình ảnh đùi trái và ngựa đặt ở việc thoát hại, không là chẩn đoán hoặc cách chữa bệnh.",
+          "citationIds": ["citation-nhl-q36-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Thương ở đùi và ngựa cứu là hình ảnh lời hào; không dùng làm chẩn đoán, cách chữa bệnh hoặc thời hạn hồi phục."
+          ]
+        },
+        {
+          "id": "hexagram-36-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai còn giữ đức nhu trung, bị hại chưa tới mức không thể cứu. Hành động cứu đủ nhanh và mạnh giúp tránh hại lớn hơn trong hình ảnh lời hào.",
+          "citationIds": ["citation-pbc-q36-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Thương ở đùi và ngựa cứu là hình ảnh lời hào; không dùng làm chẩn đoán, cách chữa bệnh hoặc thời hạn hồi phục."
+          ]
+        },
+        {
+          "id": "hexagram-36-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc đùi trái theo chỗ bị hại còn nhẹ, ngựa mạnh theo cách cứu đủ sức và kịp thời. Lời tốt chỉ việc thoát hại, không nói người này đã có thể làm nên việc lớn.",
+          "citationIds": ["citation-ntt-q36-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Thương ở đùi và ngựa cứu là hình ảnh lời hào; không dùng làm chẩn đoán, cách chữa bệnh hoặc thời hạn hồi phục."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-36-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào ba sáng ở phía đối lại hào cuối tối, có thể gặp đầu mối gây hại. Không gấp trong việc đánh dẹp là điều kiện của cách giải dùng quân trong bối cảnh cổ.",
+          "citationIds": ["citation-nhl-q36-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Dùng quân và trừ người đứng đầu là bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-36-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba có sáng và cương để trừ người đứng đầu thế tối. Việc ấy không được hấp tấp, cần xét sức và thời; lời giảng không là chỉ dẫn dùng bạo lực hiện đại.",
+          "citationIds": ["citation-pbc-q36-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Dùng quân và trừ người đứng đầu là bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-36-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào ba có thể bỏ người đứng đầu thế tối. Sau đó chưa thể sửa ngay mọi thói quen của người đã sống trong thế ấy; không vội chính là yêu cầu sửa dần sau khi bỏ đầu mối.",
+          "citationIds": ["citation-ntt-q36-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Dùng quân và trừ người đứng đầu là bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-36-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hào bốn theo người đã vào gần phía tối, hiểu được ý sâu nên có thể rời chỗ hại. Tính chính giúp ông giải việc ra cửa sân thành thoát khỏi nguy.",
+          "citationIds": ["citation-nhl-q36-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-36-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào bốn biết rõ ý của người tối nên rời đi để giữ mình. Vào bụng trái và ra cửa sân là hình ảnh hiểu nguồn hại rồi thoát, khác hành động gây hại cho người.",
+          "citationIds": ["citation-pbc-q36-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-36-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc hào bốn theo người gần quyền lực tối, chiều ý người trên để làm việc hại bên ngoài. Trong đoạn này ông gọi hào năm là vua; đây là vai của riêng cách giải, khác lời khen thoát nguy của hai tác giả Việt Nam.",
+          "citationIds": ["citation-ntt-q36-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-36-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy nói nghĩa hào bốn chưa rõ, rồi đưa cách hiểu tạm rằng người chưa vào chỗ tối sâu còn có thể đi. Ông phân biệt với hào năm phải giữ chính bằng che sáng và hào cuối đã tối cực; giữ tính chưa chắc của lời giải này.",
+          "citationIds": ["citation-ntt-q36-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-36-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào năm gần hào cuối tượng người cầm quyền rất tối, như Cơ Tử trong chuyện được dẫn. Giấu vẻ sáng bên ngoài mà trong lòng giữ chính là điều kiện của lời lợi.",
+          "citationIds": ["citation-nhl-q36-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-36-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào năm ở người trung, gần quyền lực tối nên khó đi xa. Che sự sáng bên ngoài nhưng giữ đường chính bên trong là cách tự xử được lời hào nhấn mạnh.",
+          "citationIds": ["citation-pbc-q36-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-36-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào năm gần người tối ở hào trên, không thể tỏ sáng trực tiếp như lúc yên. Cơ Tử là ví dụ trong chuyện cổ về giữ chính trong lòng, khác việc thật sự đánh mất đức sáng.",
+          "citationIds": ["citation-ntt-q36-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-36-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào cuối là người tối tới cùng chứ không còn là sự sáng đang bị hại. Từ vị cao sa xuống ví sự thất bại vì không làm sáng được người dưới.",
+          "citationIds": ["citation-nhl-q36-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-36-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào cuối tối cực ở ngôi cao, trái nhiệm vụ soi sáng người nên tự suy. Lên trời rồi xuống đất biểu thị sự mất vị do cách xử ấy trong lời giảng cổ.",
+          "citationIds": ["citation-pbc-q36-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-36-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào cuối ban đầu ở chỗ cao có khả năng soi khắp, nhưng vì tối nên trái đạo và mất vị. Lời cuối tách người gây tối với các hào trước chịu tối, không gộp thành cùng một vai.",
+          "citationIds": ["citation-ntt-q36-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-minh-di-third-negation",
+      "status": "resolved",
+      "description": "NTT PDF 576 dịch âm Tượng hào ba thêm bất trong nãi đại bất đắc, khác dòng Hán và dịch nghĩa đều nói được.",
+      "citationIds": [
+        "citation-ntt-q36-line-3-ntt",
+        "citation-nhl-q36-line-3-nhl",
+        "citation-pbc-q36-line-3-pbc"
+      ],
+      "resolution": "Ảnh xác nhận bất trong dịch âm. Giữ nghĩa đạt được mục đích theo dòng Hán, bản dịch và hai sách khác; không đọc câu này thành không đạt."
+    },
+    {
+      "id": "discrepancy-nhl-minh-di-final-reading",
+      "status": "resolved",
+      "description": "NHL PDF 247 dòng Hán hào cuối dùng chữ hối, nhưng dịch âm và đoạn giảng gọi bất minh di.",
+      "citationIds": [
+        "citation-nhl-q36-line-6-nhl",
+        "citation-pbc-q36-line-6-pbc",
+        "citation-ntt-q36-line-6-ntt"
+      ],
+      "resolution": "Ảnh xác nhận sự không khớp. Chữ Hán và hai sách khác đọc hối theo sự tối; giữ ý tối cùng trong lời NHL, không chép âm di làm tên khác của quẻ. Không sửa lời giải riêng của NHL về sự sáng bị hại."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q36-overview-nhl",
+      "citation-pbc-q36-overview-pbc",
+      "citation-ntt-q36-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q36-line-1-nhl",
+      "citation-pbc-q36-line-1-pbc",
+      "citation-ntt-q36-line-1-ntt",
+      "citation-nhl-q36-line-2-nhl",
+      "citation-pbc-q36-line-2-pbc",
+      "citation-ntt-q36-line-2-ntt",
+      "citation-nhl-q36-line-3-nhl",
+      "citation-pbc-q36-line-3-pbc",
+      "citation-ntt-q36-line-3-ntt",
+      "citation-nhl-q36-line-4-nhl",
+      "citation-pbc-q36-line-4-pbc",
+      "citation-ntt-q36-line-4-ntt",
+      "citation-ntt-q36-line-4-chu-hy",
+      "citation-nhl-q36-line-5-nhl",
+      "citation-pbc-q36-line-5-pbc",
+      "citation-ntt-q36-line-5-ntt",
+      "citation-nhl-q36-line-6-nhl",
+      "citation-pbc-q36-line-6-pbc",
+      "citation-ntt-q36-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Cách đọc khác nhau giữ theo tác giả. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận chuyện lịch sử hoặc khả năng dự báo. NTT PDF 575 dùng con người khỏe mạnh rồi nói ngựa mạnh; chỉ giữ nghĩa cứu đủ sức, không quyết định đây là lỗi chữ hay thay hình ảnh. Vai vua ở hào năm trong lời Trình Di hào bốn không bị đổi theo vai hào cuối ở các đoạn khác. Giữ nhận xét chưa rõ nghĩa của Chu Hy ở hào bốn."
+  }
+}
