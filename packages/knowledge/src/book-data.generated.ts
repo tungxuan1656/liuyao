@@ -16,6 +16,7 @@ import citations10 from '../data/citations/batch-six-hexagrams.json' with { type
 import citations11 from '../data/citations/batch-six-advanced.json' with { type: 'json' };
 import citations12 from '../data/citations/batch-seven-hexagrams.json' with { type: 'json' };
 import citations13 from '../data/citations/batch-seven-advanced.json' with { type: 'json' };
+import citations14 from '../data/citations/batch-eight-hexagrams.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -161,6 +162,10 @@ import record141 from '../data/terms/term-extinction-meets-generation.json' with
 import record142 from '../data/terms/term-control-meets-generation.json' with { type: 'json' };
 import record143 from '../data/liuyao/combination-opposition-turnarounds.json' with { type: 'json' };
 import record144 from '../data/liuyao/extinction-control-support.json' with { type: 'json' };
+import record145 from '../data/hexagrams/hexagram-29.json' with { type: 'json' };
+import record146 from '../data/hexagrams/hexagram-30.json' with { type: 'json' };
+import record147 from '../data/hexagrams/hexagram-31.json' with { type: 'json' };
+import record148 from '../data/hexagrams/hexagram-32.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -307,6 +312,10 @@ export const BOOK_RECORDS = [
   record142,
   record143,
   record144,
+  record145,
+  record146,
+  record147,
+  record148,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -323,6 +332,7 @@ export const BOOK_CITATIONS = [
   ...citations11.citations,
   ...citations12.citations,
   ...citations13.citations,
+  ...citations14.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

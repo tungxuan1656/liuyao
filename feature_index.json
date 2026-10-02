@@ -243,6 +243,12 @@
       "title": "Reviewed knowledge batch seven",
       "status": "done",
       "depends_on": ["feat-037"]
+    },
+    {
+      "id": "feat-039",
+      "title": "Reviewed knowledge batch eight",
+      "status": "active",
+      "depends_on": ["feat-038"]
     }
   ]
 }

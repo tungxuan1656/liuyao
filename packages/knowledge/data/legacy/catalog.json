@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-29",
-        "name": "Thuần Khảm",
-        "aliases": [],
-        "explanation": "Quẻ số 29 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Khảm.",
-        "kingWenNumber": 29,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-30",
-        "name": "Thuần Ly",
-        "aliases": [],
-        "explanation": "Quẻ số 30 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Ly.",
-        "kingWenNumber": 30,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-31",
-        "name": "Trạch Sơn Hàm",
-        "aliases": [],
-        "explanation": "Quẻ số 31 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Đoài.",
-        "kingWenNumber": 31,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-mountain",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-32",
-        "name": "Lôi Phong Hằng",
-        "aliases": [],
-        "explanation": "Quẻ số 32 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Chấn.",
-        "kingWenNumber": 32,
-        "upperTrigramId": "trigram-thunder",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-33",
         "name": "Thiên Sơn Độn",
         "aliases": [],

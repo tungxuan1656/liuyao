@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-31",
+  "type": "hexagram",
+  "title": "Trạch Sơn Hàm",
+  "aliases": ["Hàm"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-31-structure",
+      "kind": "structural-fact",
+      "text": "Trạch Sơn Hàm có ngoại quái Đoài và nội quái Cấn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q31-overview-nhl",
+        "citation-pbc-q31-overview-pbc",
+        "citation-ntt-q31-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-31-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giảng Hàm theo sự cảm nhau bằng lòng thành, không dùng tính toán riêng để buộc người đáp lại. Núi dưới hồ gợi lòng trống rộng để tiếp nhận; hình ảnh trai gái mở phần Hạ Kinh thuộc cách tổ chức và quan niệm của sách cổ.",
+      "citationIds": ["citation-nhl-q31-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
+      ]
+    },
+    {
+      "id": "hexagram-31-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu xem Hàm theo cảm và ứng tự nhiên giữa người với người. Lòng không thiên riêng giúp tiếp nhận rộng; hình ảnh hôn phối và thứ tự quẻ được ông đặt trong phép ví nhân sự cổ.",
+      "citationIds": ["citation-pbc-q31-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
+      ]
+    },
+    {
+      "id": "hexagram-31-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt cảm thông ở lòng thành và chính, không bị thành kiến riêng che. Hình ảnh núi có hồ gợi lòng biết nhận người, tránh chỉ nhận những người hợp sẵn ý mình.",
+      "citationIds": ["citation-ntt-q31-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-mountain", "trigram-lake"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yin", "yang", "yang", "yang", "yin"],
+    "kingWenNumber": 31,
+    "upperTrigramId": "trigram-lake",
+    "lowerTrigramId": "trigram-mountain",
+    "claimIds": ["hexagram-31-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-31-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc ngón chân theo sự cảm mới nhỏ ở hào đầu, hướng tới hào bốn. Lời hào chưa đặt kết luận tốt hay xấu cho sự khởi ý ấy.",
+          "citationIds": ["citation-nhl-q31-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-31-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào đầu ở thấp, sự cảm mới nảy và còn ít sức, như ngón chân chưa làm cả thân động. Chưa tiến sâu nên lời hào chưa quyết tốt xấu.",
+          "citationIds": ["citation-pbc-q31-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-31-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào đầu ứng với hào bốn, nhưng sự cảm mới bắt đầu và còn ở chỗ thấp. Ngón chân là hình ảnh động nhỏ, chưa tới mức có lời tốt xấu rõ.",
+          "citationIds": ["citation-ntt-q31-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-31-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc bắp chân theo sự vội động trước, dễ chạy theo cảm xúc. Biết ở yên và tự giữ bằng đức trung chính giúp lời hào chuyển sang tốt.",
+          "citationIds": ["citation-nhl-q31-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-31-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai dễ động trước khi cả thân đã quyết, nhưng có trung chính nên có thể tự giữ. Ở yên trong hoàn cảnh ấy là cách thuận lẽ, không phải cấm mọi hành động.",
+          "citationIds": ["citation-pbc-q31-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-31-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào hai ở người có tài và đức trung chính nhưng dễ động đi tìm người trên trước. Giữ đạo và đợi quan hệ tới đúng nhịp là điều kiện của lời tốt trong phép ví vai người cổ.",
+          "citationIds": ["citation-ntt-q31-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-31-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem đùi như phần không tự chủ mà động theo chân. Hào ba cứ theo sự động của hào bốn thay vì giữ cách xử của mình, nên tiến như vậy đáng tiếc.",
+          "citationIds": ["citation-nhl-q31-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-31-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba có tính nóng và dễ chạy theo sự động của hào bốn. Chấp lấy việc theo người làm chủ trương khiến mất tự chủ và đi tới hổ thẹn.",
+          "citationIds": ["citation-pbc-q31-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-31-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt sự theo của hào ba ở việc bị cuốn theo hào sáu mà mình thích. Có tài cương nhưng không tự giữ đường chính, chỉ cảm người mình đẹp lòng là điều đáng tiếc.",
+          "citationIds": ["citation-ntt-q31-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-31-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc hào ba theo việc chạy theo hai hào dưới đều đang muốn động. Đây là hướng theo khác Trình Di đặt ở hào sáu và hai tác giả Việt Nam đặt ở hào bốn; các cách đọc cùng răn không tự giữ nhưng không được gộp quan hệ.",
+          "citationIds": ["citation-ntt-q31-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-31-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giảng hào bốn theo lòng cảm người không tính phần đáp lại cho mình. Lo qua lo lại bằng ý riêng chỉ quy tụ những người mình đã nhắm, chưa có sự rộng lớn.",
+          "citationIds": ["citation-nhl-q31-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-31-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào bốn là chỗ của tâm, cần công chính và không tư riêng trong quan hệ. Cho để đợi trả, hoặc chỉ qua lại với người đã đáp mình, làm phạm vi cảm thông hẹp lại.",
+          "citationIds": ["citation-pbc-q31-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-31-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào bốn ở trái tim của sự cảm, cần chính bền và lòng không vướng riêng. Nếu chỉ tính chỗ mình muốn người đáp, sự cảm giới hạn ở bè bạn cùng loại thay vì thông rộng.",
+          "citationIds": ["citation-ntt-q31-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-31-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc thịt lưng theo chỗ khó cảm và không chứa ý riêng, nên không hối tiếc. Ông nêu vấn đề khoảng cách giữa người ở ngôi cao với người dưới, giữ đó như câu hỏi trong lời giảng.",
+          "citationIds": ["citation-nhl-q31-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-31-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu lấy thịt lưng đối với tim làm hình ảnh bỏ tư tâm để cảm người. Hào năm còn vướng quan hệ riêng nên được răn dùng lòng thành và điều chính mới không hối.",
+          "citationIds": ["citation-pbc-q31-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-31-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho người ở ngôi năm cần cảm thiên hạ bằng lòng thành, tránh chỉ vướng hào hai hoặc thích hào sáu. Thịt lưng trái tim gợi sự chống lại lòng riêng, không phải bỏ hết quan hệ với người.",
+          "citationIds": ["citation-ntt-q31-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-31-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho thịt lưng không cảm vật và không vướng riêng, nên có thể không hối dù chưa cảm được người. Cách đọc này giữ riêng với Trình Di yêu cầu chống tư tâm để mở rộng sự cảm.",
+          "citationIds": ["citation-ntt-q31-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-31-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem mép, má và lưỡi theo việc dùng lời khéo thay lòng thành để động người. Lời giảng răn sự trống thật trong cách nói, không cho mọi lời nói đều thiếu thành.",
+          "citationIds": ["citation-nhl-q31-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-31-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào cuối theo sự muốn cảm quá mức nhưng chỉ còn nịnh bằng miệng. Không có thực chất chân thành thì cách nói không đủ tạo cảm thông.",
+          "citationIds": ["citation-pbc-q31-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-31-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào cuối muốn làm người đẹp lòng tới cực điểm nhưng chỉ bày ra ở miệng. Sự mềm lời cần có lòng thành và việc thật mới phù hợp đạo cảm.",
+          "citationIds": ["citation-ntt-q31-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q31-overview-nhl",
+      "citation-pbc-q31-overview-pbc",
+      "citation-ntt-q31-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q31-line-1-nhl",
+      "citation-pbc-q31-line-1-pbc",
+      "citation-ntt-q31-line-1-ntt",
+      "citation-nhl-q31-line-2-nhl",
+      "citation-pbc-q31-line-2-pbc",
+      "citation-ntt-q31-line-2-ntt",
+      "citation-nhl-q31-line-3-nhl",
+      "citation-pbc-q31-line-3-pbc",
+      "citation-ntt-q31-line-3-ntt",
+      "citation-ntt-q31-line-3-chu-hy",
+      "citation-nhl-q31-line-4-nhl",
+      "citation-pbc-q31-line-4-pbc",
+      "citation-ntt-q31-line-4-ntt",
+      "citation-nhl-q31-line-5-nhl",
+      "citation-pbc-q31-line-5-pbc",
+      "citation-ntt-q31-line-5-ntt",
+      "citation-ntt-q31-line-5-chu-hy",
+      "citation-nhl-q31-line-6-nhl",
+      "citation-pbc-q31-line-6-pbc",
+      "citation-ntt-q31-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Cách đọc khác nhau được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo. Không nhập chuyện sinh vật biến loài trong PBC PDF 312 làm kiến thức sinh học. Các hướng theo khác nhau ở hào ba và nghĩa cảm được hay chỉ không hối ở hào năm được giữ riêng."
+  }
+}
