@@ -42,4 +42,6 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 - State: active.
 - Blockers: none.
 - Evidence: Four classical records add 97 claims and 93 citations after complete passage review.
-- Next: Verify and commit classical records, then review BPCT sentences 7–11.
+- Classical commit: `a73209e`.
+- Advanced evidence: Seven records add 18 claims and six citations for BPCT sentences 7–11.
+- Next: Verify and commit BPCT records, then reconcile source documentation.

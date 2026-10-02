@@ -22,7 +22,8 @@
     "citations/batch-eight-advanced.json",
     "citations/batch-nine-hexagrams.json",
     "citations/batch-nine-advanced.json",
-    "citations/batch-ten-hexagrams.json"
+    "citations/batch-ten-hexagrams.json",
+    "citations/batch-ten-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -189,7 +190,14 @@
     "hexagrams/hexagram-37.json",
     "hexagrams/hexagram-38.json",
     "hexagrams/hexagram-39.json",
-    "hexagrams/hexagram-40.json"
+    "hexagrams/hexagram-40.json",
+    "terms/term-death-stage.json",
+    "liuyao/death-store-extinction-empty-context.json",
+    "liuyao/day-and-month-authority-context.json",
+    "terms/term-year-authority.json",
+    "liuyao/year-authority-context.json",
+    "terms/term-hexagram-body.json",
+    "liuyao/hexagram-body-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -356,7 +364,14 @@
     "hexagram-37",
     "hexagram-38",
     "hexagram-39",
-    "hexagram-40"
+    "hexagram-40",
+    "term-death-stage",
+    "article-death-store-extinction-empty-context",
+    "article-day-and-month-authority-context",
+    "term-year-authority",
+    "article-year-authority-context",
+    "term-hexagram-body",
+    "article-hexagram-body-context"
   ],
   "topics": [
     {
@@ -418,6 +433,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-41", "hexagram-42", "hexagram-43", "hexagram-44"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tổn, Ích, Quải, Cấu. BPCT Chương 6, câu 7–11 (PDF 79–81) là phần còn lại của đợt này. Bốn mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; phần chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Tổn, Ích, Quải, Cấu và BPCT Chương 6, câu 12–16 (PDF 81–82): Thế–Ứng theo việc hỏi, động/biến, Không và nội/ngoại động. Bốn mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 7–11 có các diễn giải được chọn. Các bảng chưa đủ, phép lịch và các dự báo sức khỏe vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

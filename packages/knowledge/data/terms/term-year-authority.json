@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "term-year-authority",
+  "type": "term",
+  "title": "Tuế quân",
+  "aliases": ["Thái Tuế"],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-year-authority-definition",
+      "kind": "structural-fact",
+      "text": "Câu 10 BPCT gọi Tuế quân là Thái Tuế của năm. Đây là tên yếu tố năm trong chú giải, được ví với ngôi Thiên tử; tên không tự mang kết luận tốt hoặc xấu.",
+      "citationIds": ["citation-bpct-ch6-year-authority"]
+    }
+  ],
+  "relatedIds": [
+    "article-year-authority-context",
+    "term-useful-spirit",
+    "term-adverse-spirit",
+    "term-shi-line"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch6-year-authority"],
+    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

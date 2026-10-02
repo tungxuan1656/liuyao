@@ -21,6 +21,7 @@ import citations15 from '../data/citations/batch-eight-advanced.json' with { typ
 import citations16 from '../data/citations/batch-nine-hexagrams.json' with { type: 'json' };
 import citations17 from '../data/citations/batch-nine-advanced.json' with { type: 'json' };
 import citations18 from '../data/citations/batch-ten-hexagrams.json' with { type: 'json' };
+import citations19 from '../data/citations/batch-ten-advanced.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -186,6 +187,13 @@ import record161 from '../data/hexagrams/hexagram-37.json' with { type: 'json' }
 import record162 from '../data/hexagrams/hexagram-38.json' with { type: 'json' };
 import record163 from '../data/hexagrams/hexagram-39.json' with { type: 'json' };
 import record164 from '../data/hexagrams/hexagram-40.json' with { type: 'json' };
+import record165 from '../data/terms/term-death-stage.json' with { type: 'json' };
+import record166 from '../data/liuyao/death-store-extinction-empty-context.json' with { type: 'json' };
+import record167 from '../data/liuyao/day-and-month-authority-context.json' with { type: 'json' };
+import record168 from '../data/terms/term-year-authority.json' with { type: 'json' };
+import record169 from '../data/liuyao/year-authority-context.json' with { type: 'json' };
+import record170 from '../data/terms/term-hexagram-body.json' with { type: 'json' };
+import record171 from '../data/liuyao/hexagram-body-context.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -352,6 +360,13 @@ export const BOOK_RECORDS = [
   record162,
   record163,
   record164,
+  record165,
+  record166,
+  record167,
+  record168,
+  record169,
+  record170,
+  record171,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -373,6 +388,7 @@ export const BOOK_CITATIONS = [
   ...citations16.citations,
   ...citations17.citations,
   ...citations18.citations,
+  ...citations19.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;
