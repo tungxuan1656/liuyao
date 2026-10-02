@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 149, "released": 149, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 980, "missingCitationIds": [] },
-  "citations": { "total": 807 },
+  "records": { "authored": 153, "released": 153, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 995, "missingCitationIds": [] },
+  "citations": { "total": 812 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 32,
@@ -350,7 +350,11 @@
         "term-extinction-meets-generation",
         "term-control-meets-generation",
         "article-combination-opposition-turnarounds",
-        "article-extinction-control-support"
+        "article-extinction-control-support",
+        "term-advancing-spirit",
+        "term-retreating-spirit",
+        "article-advancing-retreating-spirits",
+        "article-divination-context-and-proxy-role"
       ]
     },
     {
@@ -1115,6 +1119,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-33", "hexagram-34", "hexagram-35", "hexagram-36"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Độn, Đại Tráng, Tấn, Minh Di. BPCT Chương 5, mục 17–18 (PDF 73–74) là phần còn lại của đợt này. Ba mươi hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Độn, Đại Tráng, Tấn, Minh Di và BPCT Chương 6, câu 1–6 (PDF 77–79): động biến, trung hòa, quá và bất cập, trợ sinh và khắc, Sinh/Vượng. Ba mươi hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 5 mục 1–18 có các thuật ngữ và diễn giải được chọn. Các khoảng trống, câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

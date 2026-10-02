@@ -17,6 +17,7 @@ import citations11 from '../data/citations/batch-six-advanced.json' with { type:
 import citations12 from '../data/citations/batch-seven-hexagrams.json' with { type: 'json' };
 import citations13 from '../data/citations/batch-seven-advanced.json' with { type: 'json' };
 import citations14 from '../data/citations/batch-eight-hexagrams.json' with { type: 'json' };
+import citations15 from '../data/citations/batch-eight-advanced.json' with { type: 'json' };
 import record0 from '../data/trigrams/trigram-heaven.json' with { type: 'json' };
 import record1 from '../data/trigrams/trigram-lake.json' with { type: 'json' };
 import record2 from '../data/trigrams/trigram-fire.json' with { type: 'json' };
@@ -166,6 +167,10 @@ import record145 from '../data/hexagrams/hexagram-29.json' with { type: 'json' }
 import record146 from '../data/hexagrams/hexagram-30.json' with { type: 'json' };
 import record147 from '../data/hexagrams/hexagram-31.json' with { type: 'json' };
 import record148 from '../data/hexagrams/hexagram-32.json' with { type: 'json' };
+import record149 from '../data/terms/term-advancing-spirit.json' with { type: 'json' };
+import record150 from '../data/terms/term-retreating-spirit.json' with { type: 'json' };
+import record151 from '../data/liuyao/advancing-retreating-spirits.json' with { type: 'json' };
+import record152 from '../data/liuyao/divination-context-and-proxy-role.json' with { type: 'json' };
 export const BOOK_RECORDS = [
   record0,
   record1,
@@ -316,6 +321,10 @@ export const BOOK_RECORDS = [
   record146,
   record147,
   record148,
+  record149,
+  record150,
+  record151,
+  record152,
 ] as unknown as readonly BookRecord[];
 export const BOOK_CITATIONS = [
   ...citations0.citations,
@@ -333,6 +342,7 @@ export const BOOK_CITATIONS = [
   ...citations12.citations,
   ...citations13.citations,
   ...citations14.citations,
+  ...citations15.citations,
 ] as readonly BookCitation[];
 export const BOOK_SOURCES = sources.sources as readonly BookSource[];
 export const BOOK_MANIFEST = manifest as BookManifest;

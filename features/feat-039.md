@@ -18,8 +18,8 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 ## Acceptance
 
 - [x] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
-- [ ] Advanced records preserve source conditions and textual layers.
-- [ ] Each released claim has complete passage review and an exact edition citation.
+- [x] Advanced records preserve source conditions and textual layers.
+- [x] Each released claim has complete passage review and an exact edition citation.
 - [ ] Content groups have separate verified commits.
 - [ ] Coverage and manifest identify remaining gaps and the next batch.
 - [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
@@ -41,5 +41,6 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 
 - State: active.
 - Blockers: none.
-- Evidence: Classical passages and rendered errors reviewed; 95 claims, 91 citations, nine source-error resolutions. Full verification and fingerprints pass (263 tests).
-- Next: Review BPCT sections 17–18 and related conditions.
+- Evidence: Classical review adds 95 claims, 91 citations, nine source-error resolutions. BPCT review adds four records, 15 claims, five citations; the incomplete Tiến list stays bounded.
+- Verification: `./init.sh` passes 263 tests; fingerprints and generated freshness pass.
+- Next: Commit the advanced group, then audit documentation and handoff.

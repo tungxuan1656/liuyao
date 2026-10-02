@@ -18,7 +18,8 @@
     "citations/batch-six-advanced.json",
     "citations/batch-seven-hexagrams.json",
     "citations/batch-seven-advanced.json",
-    "citations/batch-eight-hexagrams.json"
+    "citations/batch-eight-hexagrams.json",
+    "citations/batch-eight-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -169,7 +170,11 @@
     "hexagrams/hexagram-29.json",
     "hexagrams/hexagram-30.json",
     "hexagrams/hexagram-31.json",
-    "hexagrams/hexagram-32.json"
+    "hexagrams/hexagram-32.json",
+    "terms/term-advancing-spirit.json",
+    "terms/term-retreating-spirit.json",
+    "liuyao/advancing-retreating-spirits.json",
+    "liuyao/divination-context-and-proxy-role.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -320,7 +325,11 @@
     "hexagram-29",
     "hexagram-30",
     "hexagram-31",
-    "hexagram-32"
+    "hexagram-32",
+    "term-advancing-spirit",
+    "term-retreating-spirit",
+    "article-advancing-retreating-spirits",
+    "article-divination-context-and-proxy-role"
   ],
   "topics": [
     {
@@ -382,6 +391,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-33", "hexagram-34", "hexagram-35", "hexagram-36"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Độn, Đại Tráng, Tấn, Minh Di. BPCT Chương 5, mục 17–18 (PDF 73–74) là phần còn lại của đợt này. Ba mươi hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Độn, Đại Tráng, Tấn, Minh Di và BPCT Chương 6, câu 1–6 (PDF 77–79): động biến, trung hòa, quá và bất cập, trợ sinh và khắc, Sinh/Vượng. Ba mươi hai quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 5 mục 1–18 có các thuật ngữ và diễn giải được chọn. Các khoảng trống, câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
