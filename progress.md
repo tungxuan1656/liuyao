@@ -849,3 +849,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: Final advanced `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit. Classical group committed as `ccf713b`.
 - Blockers: none for selected claims. Excluded wording needs clearer evidence before publication.
 - Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-036 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks and reconciled source locations, discrepancy routes, and advanced exclusions. Reviewed content, quality, model, and data-directory contracts remain accurate. Checked all 138 NHL citations across 71 cited pages and seven new BPCT printed locators.
+- Commits: Four quẻ `ccf713b`; Phản ngâm and Phục ngâm `09e8a9f`.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 74 local document targets, and diff checks passed. Coverage remains incomplete: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions per commentary book.
+- Blockers: none for selected content. Ambiguous statements remain excluded; no independent specialist approval is claimed.
+- Next: Review Phệ Hạp, Bí, Bác, Phục and BPCT chapter 5, sections 13–14 (Vượng tướng hưu tù, Trong hợp có khắc; PDF 72).

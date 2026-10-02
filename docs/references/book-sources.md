@@ -56,6 +56,11 @@ cover Đồng Nhân, Đại Hữu, Khiêm, and Dự: NHL PDF 176–187, PBC PDF 
 Review includes complete passages, six positions, footnotes, and rendered headings and diagrams.
 Selected Ngô Tất Tố notes remain separate from Trình Di and Chu Hy commentary.
 
+The [batch-five classical citations](../../packages/knowledge/data/citations/batch-five-hexagrams.json)
+cover Tùy, Cổ, Lâm, and Quán: NHL PDF 188–199, PBC PDF 197–228, and NTT PDF 333–381.
+Review includes complete passages, all six positions, footnotes, and rendered headings and discrepancy pages.
+The Quan display name remains stable; Quán and the supplied spelling variants are search aliases.
+
 The [advanced citation collection](../../packages/knowledge/data/citations/batch-two-advanced.json)
 records BPCT chapter 5, sections 1–4, PDF 67–68 (printed 55–56).
 Review covers question-specific Dụng thần choices, conditional Nguyên/Kỵ/Cừu effects, and translator footnotes.
@@ -75,6 +80,15 @@ Vĩnh Cao's notes on PDF 68 and PDF 462 (printed 370) support the definition of 
 Chapter 6 commentary at PDF 83, 85, and 90 (printed 69, 71, and 76) cross-checks the selected Tuần Không conditions.
 Review preserves compound conditions and the distinction between a line's effect and a favorable outcome.
 These records describe doctrine; calendar calculations remain outside their scope.
+
+The [Phản ngâm and Phục ngâm citations](../../packages/knowledge/data/citations/batch-five-advanced.json)
+cover chapter 5, sections 11–12, PDF 70–71 (printed 58–59).
+Related evidence includes chapter 1, XI–XII, PDF 13 (printed 7),
+and part II, questions 5–6 with their examples, PDF 375–378 (printed 328–331).
+Phản ngâm records distinguish directional examples from line-branch opposition.
+All 14 listed Phục ngâm pairs were checked against Na Jia: changed Càn/Chấn halves preserve branches but change stems.
+The records retain Dụng, Thế, and Ứng conditions; they do not certify the reported outcomes.
+The ambiguous statements listed below remain outside released rules.
 
 NHL printed footer labels were checked on every page used by its released citations.
 The labels match the PDF numbers for those locations; the citation collections now include both.
@@ -135,6 +149,21 @@ Distinct readings remain attributed, including Đồng Nhân's fourth and fifth 
 The [Khiêm record](../../packages/knowledge/data/hexagrams/hexagram-15.json) keeps Trình Di's self-discipline image
 separate from Chu Hy's local military reading.
 
+The [Tùy](../../packages/knowledge/data/hexagrams/hexagram-17.json),
+[Cổ](../../packages/knowledge/data/hexagrams/hexagram-18.json),
+[Lâm](../../packages/knowledge/data/hexagrams/hexagram-19.json), and
+[Quán](../../packages/knowledge/data/hexagrams/hexagram-20.json) records own 13 further resolutions.
+These cover names, symbols, polarity counts, line references, missing negation, and copied text.
+NTT PDF 352–353 copies Tùy's first-line Chinese text into Cổ's second line; its Vietnamese translation and commentary retain Cổ's meaning.
+
+Selected differences remain attributed: Tùy's final ritual image, Cổ's trigram reading, and Lâm's bát nguyệt and first two lines.
+Quán preserves differences in ritual purpose and who observes whom at the fifth line.
+Chu Hy's uncertainty at Lâm's second line remains explicit.
+
+The [Phản ngâm article](../../packages/knowledge/data/liuyao/reverse-chant-context.json)
+owns the Cấn naming resolution on BPCT PDF 71.
+The mountain examples and chapter 1 palace list support Cấn–Khôn despite the inconsistent Càn/Cần names in that paragraph.
+
 The [Tứ sinh](../../packages/knowledge/data/terms/term-four-birthplaces.json) and
 [Trường Sinh](../../packages/knowledge/data/terms/term-growth-stage.json) records own two stage-list resolutions.
 The complete chapter 1 list and chapter 5 summary support the selected stage names and birthplaces.
@@ -162,6 +191,18 @@ The complete chapter 1 list and chapter 5 summary support the selected stage nam
 - BPCT PDF 41 names Kinh Trập in the Mão row but Vũ Thủy in its following calendar explanation.
   The released definition uses branch opposition only. It does not import a date-conversion or solar-term boundary rule.
 
+- BPCT PDF 70, section 11, names “Không” changing to Tốn and back as the only quẻ pair.
+  PDF 71 then presents four pairs through directional opposition.
+  These passages do not establish one exhaustive transition classifier.
+  The released article keeps directional examples separate from line-branch opposition.
+- BPCT PDF 71 ends section 12 by restricting Phục ngâm to Càn/Chấn and saying other quẻ have none.
+  Earlier paragraphs list 14 hexagram pairs, all changing Càn/Chấn in one or both halves.
+  The closing sentence's scope remains unclear.
+  The records retain the supported groups without using that sentence as a rejection rule.
+- BPCT PDF 377, question 6, uses Phản ngâm in one sentence within its Phục ngâm answer.
+  The released article uses the unambiguous statements and role-specific conditions around that sentence.
+  It does not rely on the mixed label or silently replace it.
+
 The selected summaries retain historical context for gender roles, birth omens, and official punishment.
 They do not claim exhaustive coverage of the medical, self-harm, ritual, or punishment verses in section 7.
 
@@ -188,7 +229,7 @@ Treat each layer according to its attribution.
 The current runtime catalog cites Chu Dịch, Kinh Thị Dịch Truyện, and Tăng San Bốc Dịch.
 Tăng San Bốc Dịch is a different work from `BPCT`.
 An existing citation cannot be relabeled as one of the supplied PDFs.
-The [knowledge quality contract](../product-specs/knowledge-quality.md) defines the intended supplied-book evidence gate.
+The [knowledge quality contract](../product-specs/knowledge-quality.md) defines the supplied-book evidence gate.
 
 ## Related documents
 
