@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "article-growth-and-peak-day-context",
+  "type": "article",
+  "title": "Trường Sinh và Đế Vượng: phạm vi Nhật thần ở câu 6",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-growth-and-peak-day-context-day-scope",
+      "kind": "author-interpretation",
+      "text": "Câu 6 xét Dụng thần gặp Trường Sinh hoặc Đế Vượng tại Nhật thần, cho rằng dù suy vẫn có khí. Tác giả nói rõ câu này không nói Sinh hoặc Vượng tại biến hào; không chuyển phạm vi sang chi biến.",
+      "citationIds": ["citation-bpct-ch6-growth-and-peak"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ phạm vi riêng của câu 6, không dùng nó để thay mọi cách xét Trường Sinh ở các đoạn khác."
+      ]
+    },
+    {
+      "id": "article-growth-and-peak-day-context-repeated-fire",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự dùng Ngọ Hỏa biến Ngọ Hỏa làm ví dụ Phục ngâm để bác việc chỉ thấy tên Đế Vượng mà cho tốt. Cần phân biệt giai đoạn ở Nhật thần với quan hệ giữa hào gốc và hào biến.",
+      "citationIds": ["citation-bpct-ch6-growth-and-peak"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Lời bác không có nghĩa mọi Phục ngâm đều xấu; đọc cùng những điều kiện sinh khắc của mục Phục ngâm."
+      ]
+    },
+    {
+      "id": "article-growth-and-peak-day-context-relative-pace",
+      "kind": "author-interpretation",
+      "text": "Trong phạm vi Nhật thần, câu 6 ví Trường Sinh với mới sinh nên phát triển chậm, Đế Vượng với trưởng thành nên nhanh. Đây là cách so nhịp tương đối của tác giả, không cho số ngày hoặc ngày xảy ra việc.",
+      "citationIds": ["citation-bpct-ch6-growth-and-peak"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": [
+    "term-growth-stage",
+    "term-peak-stage",
+    "term-repeated-chant",
+    "article-repeated-chant-context",
+    "article-growth-store-and-extinction"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch6-growth-and-peak"],
+    "note": "Đã đọc đầy đủ câu 1–6 và chú thích PDF 77–79, ghi chú Tam Hình PDF 403; đối chiếu phép gieo PDF 11–12, vòng Trường Sinh PDF 16–17, Tứ sinh PDF 70 và ngữ cảnh câu 7 PDF 79. Xem ảnh PDF 77–79, 403 và kiểm tra nhãn trang in. Giữ chính văn và lời người dịch riêng, chỉ chọn diễn giải đủ rõ; chưa xác nhận ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

@@ -18,8 +18,8 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 ## Acceptance
 
 - [x] Four quẻ preserve IDs, reviewed names, structures, aliases, and attribution.
-- [ ] Advanced records preserve source conditions and textual layers.
-- [ ] Each released claim has complete passage review and an exact edition citation.
+- [x] Advanced records preserve source conditions and textual layers.
+- [x] Each released claim has complete passage review and an exact edition citation.
 - [ ] Content groups have separate verified commits.
 - [ ] Coverage and manifest identify remaining gaps and the next batch.
 - [ ] `./init.sh`, fingerprints, generated freshness, and diff checks pass.
@@ -39,13 +39,14 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 
 ## Verification
 
-- Baseline and classical `./init.sh`: pass; 263 tests.
-- Classical corpus: 157 records, 1,095 claims, 908 citations.
+- Baseline, classical, and advanced `./init.sh`: pass; 263 tests.
+- Current corpus: 161 records, 1,111 claims, 916 citations.
 - Four quẻ add 100 claims, 96 citations, and seven resolved source discrepancies.
-- Fingerprints, generated freshness, and diff checks: pass.
+- Advanced: four new records and moving-line context add 16 claims and eight citations.
+- Fingerprints, generated freshness, diff checks, all 251 NHL citations, and eight new BPCT printed locators: pass.
 
 ## Handoff
 
 - State: active.
 - Blockers: none.
-- Next: Review BPCT chapter 6, sentences 1–6, and related translator notes.
+- Next: Reconcile source locations, discrepancies, exclusions, and the final handoff.

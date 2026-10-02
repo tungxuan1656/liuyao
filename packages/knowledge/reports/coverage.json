@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 157, "released": 157, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 1095, "missingCitationIds": [] },
-  "citations": { "total": 908 },
+  "records": { "authored": 161, "released": 161, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 1111, "missingCitationIds": [] },
+  "citations": { "total": 916 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 36,
@@ -362,7 +362,11 @@
         "term-advancing-spirit",
         "term-retreating-spirit",
         "article-advancing-retreating-spirits",
-        "article-divination-context-and-proxy-role"
+        "article-divination-context-and-proxy-role",
+        "term-peak-stage",
+        "article-balance-excess-and-deficiency",
+        "article-support-and-control-context",
+        "article-growth-and-peak-day-context"
       ]
     },
     {
@@ -1209,6 +1213,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-37", "hexagram-38", "hexagram-39", "hexagram-40"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải. BPCT Chương 6, câu 1–6 (PDF 77–79) là phần còn lại của đợt này. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải và BPCT Chương 6, câu 7–11 (PDF 79–81): Tử Mộ Tuyệt Không, Nhật thần, Nguyệt kiến, Tuế quân và Quái thân. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 1–6 có các diễn giải được chọn. Các câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "article-balance-excess-and-deficiency",
+  "type": "article",
+  "title": "Trung hòa, thái quá và bất cập trong BPCT",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-balance-excess-and-deficiency-principle",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự đọc lý trong câu 2 theo trung dung, dùng làm cách xem nhiều tác dụng khác nhau. Đây là nguyên tắc chú giải, không phải một công thức đã định thứ tự xử lý mọi tổ hợp.",
+      "citationIds": ["citation-bpct-ch6-balance-principle"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-balance-excess-and-deficiency-whole-context",
+      "kind": "author-interpretation",
+      "text": "Câu 3 xét thái quá và bất cập trong động tĩnh, sinh khắc, hợp xung, Không Phá, vượng suy, Mộ Tuyệt và hiện phục. Bớt khi quá, thêm khi thiếu là hướng điều chỉnh của lời giải, không chỉ đếm số Dụng thần.",
+      "citationIds": ["citation-bpct-ch6-excess-and-deficiency"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": ["Không rút việc thêm hoặc bớt thành điểm số hay kết quả tất định cho một quẻ."]
+    },
+    {
+      "id": "article-balance-excess-and-deficiency-older-reading",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự bác cách chú giải cũ giới hạn thái quá ở Dụng thần xuất hiện nhiều và bất cập ở một Dụng thần thiếu sức. Lý do ông nêu là mọi loại tác dụng trong quẻ đều có thể quá hoặc thiếu.",
+      "citationIds": ["citation-bpct-ch6-excess-and-deficiency"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Câu cũ về vượng và được mùa trong bản dịch chưa rõ phủ định; chỉ giữ sự phê bình phạm vi hẹp, không dựng điều kiện chi tiết từ câu ấy."
+      ]
+    },
+    {
+      "id": "article-balance-excess-and-deficiency-seasonal-authority",
+      "kind": "author-interpretation",
+      "text": "Vĩnh Cao chú thích lệnh là nắm quyền, minh họa hào Mộc vào mùa xuân. Lời giải từ này thuộc người dịch và giúp phân biệt có sức theo mùa với chỉ xuất hiện một lần.",
+      "citationIds": ["citation-bpct-ch6-seasonal-authority-note"],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      }
+    }
+  ],
+  "relatedIds": [
+    "term-useful-spirit",
+    "term-prosperous-supported",
+    "term-resting-confined",
+    "term-decade-empty",
+    "term-month-break",
+    "article-support-and-control-context"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch6-balance-principle",
+      "citation-bpct-ch6-excess-and-deficiency",
+      "citation-bpct-ch6-seasonal-authority-note"
+    ],
+    "note": "Đã đọc đầy đủ câu 1–6 và chú thích PDF 77–79, ghi chú Tam Hình PDF 403; đối chiếu phép gieo PDF 11–12, vòng Trường Sinh PDF 16–17, Tứ sinh PDF 70 và ngữ cảnh câu 7 PDF 79. Xem ảnh PDF 77–79, 403 và kiểm tra nhãn trang in. Giữ chính văn và lời người dịch riêng, chỉ chọn diễn giải đủ rõ; chưa xác nhận ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

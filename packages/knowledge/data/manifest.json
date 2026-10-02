@@ -20,7 +20,8 @@
     "citations/batch-seven-advanced.json",
     "citations/batch-eight-hexagrams.json",
     "citations/batch-eight-advanced.json",
-    "citations/batch-nine-hexagrams.json"
+    "citations/batch-nine-hexagrams.json",
+    "citations/batch-nine-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -179,7 +180,11 @@
     "hexagrams/hexagram-33.json",
     "hexagrams/hexagram-34.json",
     "hexagrams/hexagram-35.json",
-    "hexagrams/hexagram-36.json"
+    "hexagrams/hexagram-36.json",
+    "terms/term-peak-stage.json",
+    "liuyao/balance-excess-and-deficiency.json",
+    "liuyao/support-and-control-context.json",
+    "liuyao/growth-and-peak-day-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -338,7 +343,11 @@
     "hexagram-33",
     "hexagram-34",
     "hexagram-35",
-    "hexagram-36"
+    "hexagram-36",
+    "term-peak-stage",
+    "article-balance-excess-and-deficiency",
+    "article-support-and-control-context",
+    "article-growth-and-peak-day-context"
   ],
   "topics": [
     {
@@ -400,6 +409,6 @@
   "nextBatch": {
     "hexagramIds": ["hexagram-37", "hexagram-38", "hexagram-39", "hexagram-40"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải. BPCT Chương 6, câu 1–6 (PDF 77–79) là phần còn lại của đợt này. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Tiếp tục Gia Nhân, Khuê, Kiển, Giải và BPCT Chương 6, câu 7–11 (PDF 79–81): Tử Mộ Tuyệt Không, Nhật thần, Nguyệt kiến, Tuế quân và Quái thân. Ba mươi sáu quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 1–6 có các diễn giải được chọn. Các câu mơ hồ, bảng chưa đủ và dự báo sức khỏe đã ghi trong tài liệu nguồn vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
   }
 }
