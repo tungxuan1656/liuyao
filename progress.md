@@ -926,3 +926,20 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Coverage: 172 records, 1,226 cited claims, 1,015 locators. Classical coverage is 40/64 quẻ and 240/384 positions per commentary book. Twenty-four quẻ retain unaudited compatibility content.
 - Blockers: none for selected claims. Unclear references, full coverage, calendar algorithms, and independent specialist approval remain excluded or incomplete.
 - Next: Review Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16 (PDF 81–82).
+
+## 2026-10-02 — feat-042 complete-corpus roadmap
+
+- Status: active.
+- Result: Created 55 intended execution features for remaining authoring, audit tooling, sixteen four-quẻ audits, ten group audits, and independent certification. Preserved 384 separate hào acceptance items. The roadmap lists all 24 missing quẻ, source ownership, and chapter checkpoints for separate commits.
+- Decision: Group coherent work in features; retain detailed quẻ, hào, and passage decisions in acceptance items and future ledgers.
+- Evidence: Baseline `./init.sh` passed 263 tests. Final graph, coverage-unit, route, fingerprint, and repository checks remain pending.
+- Blockers: None for planning. Future independent approval requires a named specialist.
+- Next: Verify and commit the backlog; keep execution features `todo`.
+
+## 2026-10-02 — feat-042 completed roadmap and verification
+
+- Status: done.
+- Result: Created the complete intended backlog, feat-043 through feat-097, and a linked roadmap. Consolidated the draft into 55 execution features, retaining chapter checkpoints, sixteen four-quẻ audits with 384 distinct hào items, and ten group audits. Added versioned evidence, independent approval, and correction gates.
+- Evidence: Final `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 158 local documentation targets, dependency graph, complete hào inventory, and diff checks passed. The prior 41 feature entries and current corpus remain unchanged.
+- Blockers: None for planning. No future content or audit feature has executed; specialist approval remains pending.
+- Next: Select feat-043 and build the source-to-record/exclusion crosswalk.

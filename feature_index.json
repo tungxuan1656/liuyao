@@ -261,6 +261,380 @@
       "title": "Reviewed knowledge batch ten",
       "status": "done",
       "depends_on": ["feat-040"]
+    },
+    {
+      "id": "feat-042",
+      "title": "Plan complete knowledge authoring and verification",
+      "status": "done",
+      "depends_on": ["feat-041"]
+    },
+    {
+      "id": "feat-043",
+      "title": "Inventory every supplied-book section and exclusion",
+      "status": "todo",
+      "depends_on": ["feat-042"]
+    },
+    {
+      "id": "feat-044",
+      "title": "Reviewed quẻ 41–44 and BPCT sentences 12–16",
+      "status": "todo",
+      "depends_on": ["feat-043"]
+    },
+    {
+      "id": "feat-045",
+      "title": "Reviewed quẻ 45–48 and BPCT sentences 17–24",
+      "status": "todo",
+      "depends_on": ["feat-044"]
+    },
+    {
+      "id": "feat-046",
+      "title": "Reviewed quẻ 49–52 and BPCT sentences 25–32",
+      "status": "todo",
+      "depends_on": ["feat-045"]
+    },
+    {
+      "id": "feat-047",
+      "title": "Reviewed quẻ 53–56 and BPCT sentences 33–40",
+      "status": "todo",
+      "depends_on": ["feat-046"]
+    },
+    {
+      "id": "feat-048",
+      "title": "Reviewed quẻ 57–60 and BPCT sentences 41–48",
+      "status": "todo",
+      "depends_on": ["feat-047"]
+    },
+    {
+      "id": "feat-049",
+      "title": "Reviewed quẻ 61–64 and BPCT sentences 49–56",
+      "status": "todo",
+      "depends_on": ["feat-048"]
+    },
+    {
+      "id": "feat-050",
+      "title": "Complete BPCT chapter 6 sentences 57–69",
+      "status": "todo",
+      "depends_on": ["feat-049"]
+    },
+    {
+      "id": "feat-051",
+      "title": "Complete BPCT foundational chapters and front matter",
+      "status": "todo",
+      "depends_on": ["feat-050"]
+    },
+    {
+      "id": "feat-052",
+      "title": "Complete BPCT applications — Weather life career and wealth",
+      "status": "todo",
+      "depends_on": ["feat-051"]
+    },
+    {
+      "id": "feat-053",
+      "title": "Complete BPCT applications — Loss travel study marriage and household members",
+      "status": "todo",
+      "depends_on": ["feat-052"]
+    },
+    {
+      "id": "feat-054",
+      "title": "Complete BPCT applications — Housing boats and Xướng Gia",
+      "status": "todo",
+      "depends_on": ["feat-053"]
+    },
+    {
+      "id": "feat-055",
+      "title": "Complete BPCT applications — Illness remedies and absent travellers",
+      "status": "todo",
+      "depends_on": ["feat-054"]
+    },
+    {
+      "id": "feat-056",
+      "title": "Complete BPCT applications — Litigation spirits agriculture state conflict and flight",
+      "status": "todo",
+      "depends_on": ["feat-055"]
+    },
+    {
+      "id": "feat-057",
+      "title": "Complete BPCT eighteen questions and Hà Tri Chương",
+      "status": "todo",
+      "depends_on": ["feat-056"]
+    },
+    {
+      "id": "feat-058",
+      "title": "Complete BPCT casting supplements and book criticisms",
+      "status": "todo",
+      "depends_on": ["feat-057"]
+    },
+    {
+      "id": "feat-059",
+      "title": "Complete NHL introductory chapters and framing",
+      "status": "todo",
+      "depends_on": ["feat-058"]
+    },
+    {
+      "id": "feat-060",
+      "title": "Complete NTT and PBC introductory traditions and diagrams",
+      "status": "todo",
+      "depends_on": ["feat-059"]
+    },
+    {
+      "id": "feat-061",
+      "title": "Complete Hệ Từ Thượng across NHL and PBC",
+      "status": "todo",
+      "depends_on": ["feat-060"]
+    },
+    {
+      "id": "feat-062",
+      "title": "Complete Hệ Từ Hạ across NHL and PBC",
+      "status": "todo",
+      "depends_on": ["feat-061"]
+    },
+    {
+      "id": "feat-063",
+      "title": "Reconcile Càn and Khôn special classical passages",
+      "status": "todo",
+      "depends_on": ["feat-062"]
+    },
+    {
+      "id": "feat-064",
+      "title": "Resolve the six remaining legacy project definitions",
+      "status": "todo",
+      "depends_on": ["feat-063"]
+    },
+    {
+      "id": "feat-065",
+      "title": "Author ordered lessons and reviewed worked examples",
+      "status": "todo",
+      "depends_on": ["feat-064"]
+    },
+    {
+      "id": "feat-066",
+      "title": "Close the authoring inventory for all supplied sections",
+      "status": "todo",
+      "depends_on": ["feat-065"]
+    },
+    {
+      "id": "feat-067",
+      "title": "Implement versioned audit ledgers and completion gates",
+      "status": "todo",
+      "depends_on": ["feat-066"]
+    },
+    {
+      "id": "feat-068",
+      "title": "Audit quẻ 01–04 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041", "feat-063"]
+    },
+    {
+      "id": "feat-069",
+      "title": "Audit quẻ 05–08 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-070",
+      "title": "Audit quẻ 09–12 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-071",
+      "title": "Audit quẻ 13–16 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-072",
+      "title": "Audit quẻ 17–20 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-073",
+      "title": "Audit quẻ 21–24 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-074",
+      "title": "Audit quẻ 25–28 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-075",
+      "title": "Audit quẻ 29–32 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-076",
+      "title": "Audit quẻ 33–36 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-077",
+      "title": "Audit quẻ 37–40 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-041"]
+    },
+    {
+      "id": "feat-078",
+      "title": "Audit quẻ 41–44 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-044"]
+    },
+    {
+      "id": "feat-079",
+      "title": "Audit quẻ 45–48 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-045"]
+    },
+    {
+      "id": "feat-080",
+      "title": "Audit quẻ 49–52 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-046"]
+    },
+    {
+      "id": "feat-081",
+      "title": "Audit quẻ 53–56 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-047"]
+    },
+    {
+      "id": "feat-082",
+      "title": "Audit quẻ 57–60 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-048"]
+    },
+    {
+      "id": "feat-083",
+      "title": "Audit quẻ 61–64 and all twenty-four hào",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-049"]
+    },
+    {
+      "id": "feat-084",
+      "title": "Audit sources shared foundations casting and Liu Yao tables",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-051", "feat-058", "feat-064"]
+    },
+    {
+      "id": "feat-085",
+      "title": "Audit all sixty-nine BPCT chapter 6 sentences",
+      "status": "todo",
+      "depends_on": [
+        "feat-067",
+        "feat-040",
+        "feat-041",
+        "feat-044",
+        "feat-045",
+        "feat-046",
+        "feat-047",
+        "feat-048",
+        "feat-049",
+        "feat-050"
+      ]
+    },
+    {
+      "id": "feat-086",
+      "title": "Audit BPCT applications — Weather life career and wealth",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-052"]
+    },
+    {
+      "id": "feat-087",
+      "title": "Audit BPCT applications — Loss travel study marriage and household members",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-053"]
+    },
+    {
+      "id": "feat-088",
+      "title": "Audit BPCT applications — Housing boats and Xướng Gia",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-054"]
+    },
+    {
+      "id": "feat-089",
+      "title": "Audit BPCT applications — Illness remedies and absent travellers",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-055"]
+    },
+    {
+      "id": "feat-090",
+      "title": "Audit BPCT applications — Litigation spirits agriculture state conflict and flight",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-056"]
+    },
+    {
+      "id": "feat-091",
+      "title": "Audit BPCT questions Hà Tri casting supplements and criticisms",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-057", "feat-058"]
+    },
+    {
+      "id": "feat-092",
+      "title": "Audit classical traditions diagrams and all Hệ Từ chapters",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-059", "feat-060", "feat-061", "feat-062"]
+    },
+    {
+      "id": "feat-093",
+      "title": "Audit ordered lessons and every worked example",
+      "status": "todo",
+      "depends_on": ["feat-067", "feat-065"]
+    },
+    {
+      "id": "feat-094",
+      "title": "Close all topic audits contradictions and exclusions",
+      "status": "todo",
+      "depends_on": [
+        "feat-068",
+        "feat-069",
+        "feat-070",
+        "feat-071",
+        "feat-072",
+        "feat-073",
+        "feat-074",
+        "feat-075",
+        "feat-076",
+        "feat-077",
+        "feat-078",
+        "feat-079",
+        "feat-080",
+        "feat-081",
+        "feat-082",
+        "feat-083",
+        "feat-084",
+        "feat-085",
+        "feat-086",
+        "feat-087",
+        "feat-088",
+        "feat-089",
+        "feat-090",
+        "feat-091",
+        "feat-092",
+        "feat-093"
+      ]
+    },
+    {
+      "id": "feat-095",
+      "title": "Obtain independent specialist review of the full corpus",
+      "status": "todo",
+      "depends_on": ["feat-094"]
+    },
+    {
+      "id": "feat-096",
+      "title": "Certify corpus completion against the evidence gates",
+      "status": "todo",
+      "depends_on": ["feat-095"]
+    },
+    {
+      "id": "feat-097",
+      "title": "Verify audit invalidation and future correction workflow",
+      "status": "todo",
+      "depends_on": ["feat-096"]
     }
   ]
 }

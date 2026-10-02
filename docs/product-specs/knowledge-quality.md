@@ -90,6 +90,77 @@ Compatibility checks establish agreement with current calculations, not an indep
 **Intended:** Continue the supplied-book review across the remaining corpus.
 The publication gate applies to each new batch.
 
+## Full-corpus verification
+
+**Intended:** The [completion roadmap](../../features/knowledge-roadmap.md) separates authoring from subsequent audits.
+Creating these features does not execute their reviews.
+The current `reviewed` state records source comparison, not independent specialist certification.
+
+### Source inventory
+
+Account for every section and page of each supplied edition before declaring coverage complete.
+Classify meaningful units as included content or explicit exclusions.
+Record blanks, edition notices, diagrams, missing passages, and attribution uncertainty separately.
+Each unit needs an authoring owner and an audit owner.
+An existing citation proves coverage of its supporting claim, not the entire chapter.
+
+The intended crosswalk is `docs/reviews/knowledge/source-inventory.md`.
+The [source catalog](../references/book-sources.md) remains the owner of edition locators and source discrepancies.
+The crosswalk links to that catalog instead of copying its findings.
+
+Exclusions require a specific reason, source location, scope decision, and review.
+Missing or unclear text must remain visible.
+A broad exclusion cannot conceal an unfinished review.
+Separate complete classification of the supplied editions from complete coverage of included content.
+
+### Quẻ and line units
+
+Audit all 64 quẻ, including those already source-compared.
+Each quẻ has six separately accepted positions, numbered from bottom to top.
+This produces 384 position decisions and at least 1,152 required book-position cells across NHL, PBC, and NTT.
+Additional named commentary layers remain separate within those cells.
+In NTT, identify Trình Di, Chu Hy, other cited commentators, and translator notes when present.
+Do not imply that every author comments on every passage.
+
+For each position, inspect the full passage, context, diagrams, and relevant footnotes.
+Check polarity, labels, references to other lines, conditions, attribution, and paraphrase fidelity.
+Preserve legitimate author differences.
+Review supported source-error corrections against page images and corroborating passages.
+
+Audit the name, aliases, structure, overview, and actual Thoán/Tượng layers separately from line decisions.
+Càn/Khôn special passages require their own decisions and never create a seventh line.
+The intended per-quẻ ledger is `docs/reviews/knowledge/hexagram-XX.md`.
+
+### Group units and independent evidence
+
+Every foundation, casting, Liu Yao, tradition, and learning group needs a ledger covering its assigned inventory units.
+Audit all eight trigrams and all eight boards in each of the eight palaces.
+Check Na Jia, element relations, Thế/Ứng, Lục thân, and displayed annotations against independent expected evidence.
+Review each numbered BPCT sentence, application section, question, criticism, and actual Hệ Từ chapter.
+Learning explanations and worked examples must resolve to reviewed claims and independently checked outcomes.
+
+Each decision records unit and claim IDs, exact citations, findings, reviewer identity, date, and disposition.
+Bind it to the source fingerprint and reviewed record hash.
+Keep source comparison and independent specialist approval as distinct evidence fields.
+Specialist approval requires a named reviewer distinct from Codex and an explicit decision for every assigned unit.
+Unavailable specialist review remains pending.
+
+### Completion and later corrections
+
+**Intended:** Evidence-derived validation replaces the current report's fixed incomplete flag.
+The ledger format and validation contract belong in the [knowledge model](../design-docs/knowledge-model.md) when implemented.
+Missing, rejected, stale, or unresolved included units must keep completion gates closed.
+Required specialist approval also keeps the final certification gate closed until recorded.
+
+Record, citation, attribution, source, or discrepancy changes reopen affected decisions.
+A reused claim change also reopens dependent explanations and expected fixtures.
+Regenerate coverage and repeat affected reviews before restoring approval.
+Retain the previous decisions as history, with their obsolete inputs clearly identified.
+
+Completion means that the declared supplied editions and included claims passed the recorded evidence gates.
+It does not establish absolute certainty, recover absent source text, or verify predictive efficacy.
+Release evidence must state unresolved source limitations and the exact reviewed snapshot.
+
 ## Learning coverage
 
 V1 explains displayed facts and provides local reference lookup.
