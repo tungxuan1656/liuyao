@@ -17,6 +17,7 @@ Lesson authoring, complete-corpus certification, remote search, PDF distribution
 - [ ] Implement the [topic/article contract](../docs/product-specs/knowledge-browser.md#topics-and-articles).
 - [ ] Topic collections use manifest definitions and released records' `topicIds` through public APIs.
 - [ ] Article explanations retain named layers, conditions, citations, and declared relationships.
+- [ ] Learning blocks follow declared sequence; unreleased related targets show unavailable states without draft prose.
 - [ ] Local search covers released titles, aliases, and Vietnamese explanations with existing normalization semantics.
 - [ ] Pending learning topics show empty states; subsequently released lessons use the same routes and presentation.
 - [ ] Existing Library categories, exact-ID search, and canonical deep links remain usable.

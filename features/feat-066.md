@@ -20,6 +20,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Every included unit has complete released coverage; each exclusion has a reviewed specific reason.
 - [ ] No unowned or unreviewed unit remains; all 64 quẻ have six positions in the three commentary books.
 - [ ] Reconcile topics, legacy routes, and nextBatch without claiming independent certification.
+- [ ] Current evidence-derived reports retain open audit/specialist gates instead of treating authoring closure as certification.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs

@@ -22,6 +22,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] PBC introductions, Phàm Lệ, and end matter.
 - [ ] PBC surviving Thuyết Quái, Tự Quái, Tạp Quái.
 - [ ] Identify translator, commentator, and quoted-author roles.
+- [ ] Diagram units use the implemented feat-101 representation with orientation and supporting claims.
 - [ ] Record PBC’s absent Thuyết Quái chapter; NTT has no separate full Hệ Từ appendix.
 - [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.

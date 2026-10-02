@@ -1,8 +1,8 @@
-# feat-098 — Integrate reviewed quẻ and hào into Library details
+# feat-098 — Integrate reviewed reference records into Library details
 
 ## Goal
 
-Read released quẻ overviews and hào commentary with their authors and passage citations.
+Read released quẻ/hào, trigram, term, and rule explanations with conditions, attribution, and supporting evidence.
 
 ## Scope
 
@@ -17,6 +17,8 @@ Corpus authoring or certification, automated interpretation, calendar analysis, 
 - [ ] Implement the [expanded Library contract](../docs/product-specs/knowledge-browser.md#intended-book-backed-expansion) for quẻ and hào.
 - [ ] Overviews, six positions, and separate special passages resolve to released records.
 - [ ] Explanations retain author/translator layers, conditions, and exact citations.
+- [ ] Trigrams, terms, rules, tables, diagrams, and project conventions use the same claim-level presentation.
+- [ ] Recorded review scope and snapshot identity never imply absent independent approval.
 - [ ] Direct links select the correct position; invalid targets recover without mismatched content.
 - [ ] Missing commentary, missing layers, and legacy metadata have explicit distinct states.
 - [ ] Existing entity, term, rule, and source routes remain usable.
@@ -45,4 +47,4 @@ Corpus authoring or certification, automated interpretation, calendar analysis, 
 - State: todo.
 - Evidence: Design recorded; implementation and web verification have not started.
 - Dependencies: See [feature index](../feature_index.json); full-corpus completion is not required.
-- Next: Select this feature, confirm implementation scope, and assess external-plan criteria before coding.
+- Next: Complete feat-101, select this feature, and assess external-plan criteria before coding.

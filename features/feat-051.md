@@ -22,6 +22,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Chapter 3: Thông Huyền Phú and Túy Kim Phú.
 - [ ] Chapter 4: all 64 annotated boards.
 - [ ] Chapter 5: all eighteen discussions and inserted material.
+- [ ] Tables and diagrams use the implemented feat-101 evidence contract.
 - [ ] Reconcile existing selected records and attribution uncertainty; do not rewrite reviewed content without evidence.
 - [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.

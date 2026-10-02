@@ -18,6 +18,7 @@ Changing core results, generating predictions, adding calendar analysis, or auth
 - [ ] Quẻ overviews use the displayed ID; hào explanations also use the domain position, including 1 and 6.
 - [ ] Primary/changed contexts, moving/static labels, and no-change behavior remain distinct.
 - [ ] Selected commentary retains attribution, conditions, and citations from feat-098 presentation.
+- [ ] Fact-rule explanations preserve their own supporting claims and distinguish accepted project conventions.
 - [ ] Unavailable commentary preserves the result and offers a clear recovery path.
 - [ ] Library round trips preserve the active reading and reach the same quẻ/position.
 - [ ] Compact/wide interactions, keyboard dismissal, and focus restoration pass.

@@ -20,6 +20,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] 64 quẻ, 384 positions, minimum 1,152 three-book cells, and special passages.
 - [ ] All group ledgers, fixtures, source fingerprints, and specialist decisions.
 - [ ] Run the implemented completion gates; any stale or missing evidence rejects certification.
+- [ ] Feat-097 correction probes passed before certification; the released snapshot matches all approval inputs.
 - [ ] Remove unaudited legacy fallback, or explicitly classify retained software conventions.
 - [ ] Record edition-bound accuracy and remaining source limitations; do not assert predictive efficacy or absolute certainty.
 - [ ] Required verification passes; evidence and handoff are recorded.

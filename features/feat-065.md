@@ -21,6 +21,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Liu Yao board: casting, palaces, Thế/Ứng, Na Jia, elements, relatives.
 - [ ] Worked examples: explicit inputs, moving lines, changed quẻ, board facts.
 - [ ] Every block resolves to supporting claim IDs; expected outcomes are checked independently.
+- [ ] Persist block evidence, lesson sequence, and declared prerequisites through feat-101; reject unavailable support and prerequisite cycles.
 - [ ] Reference content does not activate browser, calendar, or interpretation changes.
 - [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.

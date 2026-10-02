@@ -20,6 +20,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Each of the four terms and two rules, with a stable replacement route.
 - [ ] Separate book-supported meaning from accepted software conventions.
 - [ ] Use the project contract for software fields; do not invent book citations.
+- [ ] Persist convention evidence and reviewed specification revisions through the implemented feat-101 contract.
 - [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.
 

@@ -278,7 +278,7 @@
       "id": "feat-044",
       "title": "Reviewed quẻ 41–44 and BPCT sentences 12–16",
       "status": "todo",
-      "depends_on": ["feat-043"]
+      "depends_on": ["feat-097"]
     },
     {
       "id": "feat-045",
@@ -320,7 +320,7 @@
       "id": "feat-051",
       "title": "Complete BPCT foundational chapters and front matter",
       "status": "todo",
-      "depends_on": ["feat-050"]
+      "depends_on": ["feat-050", "feat-101"]
     },
     {
       "id": "feat-052",
@@ -374,7 +374,7 @@
       "id": "feat-060",
       "title": "Complete NTT and PBC introductory traditions and diagrams",
       "status": "todo",
-      "depends_on": ["feat-059"]
+      "depends_on": ["feat-059", "feat-101"]
     },
     {
       "id": "feat-061",
@@ -398,13 +398,13 @@
       "id": "feat-064",
       "title": "Resolve the six remaining legacy project definitions",
       "status": "todo",
-      "depends_on": ["feat-063"]
+      "depends_on": ["feat-063", "feat-101"]
     },
     {
       "id": "feat-065",
       "title": "Author ordered lessons and reviewed worked examples",
       "status": "todo",
-      "depends_on": ["feat-064"]
+      "depends_on": ["feat-064", "feat-101"]
     },
     {
       "id": "feat-066",
@@ -416,7 +416,7 @@
       "id": "feat-067",
       "title": "Implement versioned audit ledgers and completion gates",
       "status": "todo",
-      "depends_on": ["feat-066"]
+      "depends_on": ["feat-101"]
     },
     {
       "id": "feat-068",
@@ -590,6 +590,7 @@
       "title": "Close all topic audits contradictions and exclusions",
       "status": "todo",
       "depends_on": [
+        "feat-066",
         "feat-068",
         "feat-069",
         "feat-070",
@@ -628,19 +629,19 @@
       "id": "feat-096",
       "title": "Certify corpus completion against the evidence gates",
       "status": "todo",
-      "depends_on": ["feat-095"]
+      "depends_on": ["feat-095", "feat-097"]
     },
     {
       "id": "feat-097",
       "title": "Verify audit invalidation and future correction workflow",
       "status": "todo",
-      "depends_on": ["feat-096"]
+      "depends_on": ["feat-067"]
     },
     {
       "id": "feat-098",
-      "title": "Integrate reviewed quẻ and hào into Library details",
+      "title": "Integrate reviewed reference records into Library details",
       "status": "todo",
-      "depends_on": ["feat-009", "feat-023", "feat-032", "feat-041"]
+      "depends_on": ["feat-009", "feat-023", "feat-032", "feat-041", "feat-101"]
     },
     {
       "id": "feat-099",
@@ -653,6 +654,24 @@
       "title": "Add topic article and learning browsing with local search",
       "status": "todo",
       "depends_on": ["feat-098", "feat-009", "feat-011", "feat-032"]
+    },
+    {
+      "id": "feat-101",
+      "title": "Complete extended knowledge records and provenance contracts",
+      "status": "todo",
+      "depends_on": ["feat-043"]
+    },
+    {
+      "id": "feat-102",
+      "title": "Verify released knowledge fidelity across package and web flows",
+      "status": "todo",
+      "depends_on": ["feat-098", "feat-099", "feat-100"]
+    },
+    {
+      "id": "feat-103",
+      "title": "Harden knowledge payload budgets and offline snapshot updates",
+      "status": "todo",
+      "depends_on": ["feat-102", "feat-011"]
     }
   ]
 }

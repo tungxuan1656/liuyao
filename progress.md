@@ -952,3 +952,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests with existing warnings. Corpus fingerprints, generated freshness, 163 local documentation targets, dependency graph, and diff checks passed. Prior feature entries, 384 audit items, corpus data, and application code remain unchanged.
 - Blockers: None for planning. Web behavior and direct UI checks remain unimplemented.
 - Next: Select feat-098 and assess implementation scope and external-plan criteria.
+
+## 2026-10-03 — feat-101–103 extended roadmap planning
+
+- Status: todo; planning recorded, implementation not started.
+- Result: Added extended-record/provenance contracts, package/web fidelity verification, and payload/offline snapshot hardening. Broadened Library plans to include trigrams, terms, rules, figures, and project conventions. The backlog now contains 61 execution features.
+- Decision: Sequence inventory → feat-101 → feat-067 → feat-097 before bulk authoring. Keep feat-066 closure required by final reconciliation. Web integration starts after feat-101 without waiting for full-corpus certification.
+- Evidence: `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 167 local documentation targets, dependency checks, and diff checks passed. All 384 audit items, corpus data, application code, and previous statuses remain unchanged.
+- Blockers: None for planning. Extended contracts, web fidelity, volume checks, and specialist approval remain unimplemented or pending.
+- Next: Select feat-043 and build the source-to-record/exclusion crosswalk, then complete feat-101.

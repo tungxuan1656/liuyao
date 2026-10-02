@@ -23,6 +23,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Classical traditions and learning.
 - [ ] Every discrepancy, alternative reading, and exclusion.
 - [ ] Every assigned source unit and claim has a current accepted decision, or a specifically reviewed exclusion.
+- [ ] Feat-066 authoring closure and all required unit audits are complete for the same snapshot.
 - [ ] Report 64 quẻ, 384 positions, and at least 1,152 book-position cells; count extra author layers separately.
 - [ ] A reviewer distinct from the original summarizer rechecks source corrections; preserve legitimate disagreements.
 - [ ] Required verification passes; evidence and handoff are recorded.

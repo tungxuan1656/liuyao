@@ -23,6 +23,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] NHL front matter, seven introductory chapters, 64 quẻ, Hệ Từ, and end matter.
 - [ ] Every page belongs to a section; blanks, diagrams, and incomplete passages have explicit dispositions.
 - [ ] Each meaningful section has an authoring and audit owner. Split oversized work before activation; never leave an unowned unit.
+- [ ] Expected passages, author layers, and source units come from inspection, independently of existing record counts.
 - [ ] Distinguish PDF pages from printed numbers. Confirm all planning anchors and absent headings.
 - [ ] Preserve reviewed records; identify their uncovered passages and existing exclusions.
 - [ ] Required verification passes; evidence and handoff are recorded.
