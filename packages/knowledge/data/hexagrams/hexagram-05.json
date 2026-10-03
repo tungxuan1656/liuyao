@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-05",
+  "type": "hexagram",
+  "title": "Thủy Thiên Nhu",
+  "aliases": ["Nhu"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-05-structure",
+      "kind": "structural-fact",
+      "text": "Thủy Thiên Nhu có ngoại quái Khảm và nội quái Càn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q05-overview-nhl",
+        "citation-pbc-q05-overview-pbc",
+        "citation-ntt-q05-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-05-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê phân biệt nghĩa nuôi dưỡng trong Tự quái với nghĩa chờ đợi trong Thoán. Sức mạnh ở dưới hiểm cần thành tín, giữ chính và biết chờ, đồng thời nuôi dưỡng mình.",
+      "citationIds": ["citation-nhl-q05-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-05-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Nhu là chờ thời khi sức mạnh gặp hiểm ở trước. Thành tín, chính bền và sự chuẩn bị đã có là nền cho việc chờ; hình ảnh ăn uống yên vui nói về nuôi sức và giữ tinh thần.",
+      "citationIds": ["citation-pbc-q05-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-05-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đọc Nhu như sức mạnh chưa thể tiến qua chỗ hiểm nên phải đợi. Người chờ cần thành tín, trung chính và nuôi tài đức; ông phân biệt đã chính mà tốt với phải giữ chính mới tốt.",
+      "citationIds": ["citation-ntt-q05-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-heaven", "trigram-water"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q05-overview-nhl",
+      "citation-pbc-q05-overview-pbc",
+      "citation-ntt-q05-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q05-line-1-nhl",
+      "citation-pbc-q05-line-1-pbc",
+      "citation-ntt-q05-line-1-ntt",
+      "citation-nhl-q05-line-2-nhl",
+      "citation-pbc-q05-line-2-pbc",
+      "citation-ntt-q05-line-2-ntt",
+      "citation-nhl-q05-line-3-nhl",
+      "citation-pbc-q05-line-3-pbc",
+      "citation-ntt-q05-line-3-ntt",
+      "citation-nhl-q05-line-4-nhl",
+      "citation-pbc-q05-line-4-pbc",
+      "citation-ntt-q05-line-4-ntt",
+      "citation-ntt-q05-line-4-chu-hy",
+      "citation-nhl-q05-line-5-nhl",
+      "citation-pbc-q05-line-5-pbc",
+      "citation-ntt-q05-line-5-ntt",
+      "citation-nhl-q05-line-6-nhl",
+      "citation-pbc-q05-line-6-pbc",
+      "citation-ntt-q05-line-6-ntt",
+      "citation-ntt-q05-line-6-chu-hy"
+    ],
+    "note": "Đã đọc đoạn tổng quan, sáu hào và chú thích ở ba sách; xem ảnh cấu trúc và các trang có lỗi dẫn chiếu. Diễn giải Trình Di và Chu Hy được giữ riêng khi có khác biệt. Đây là các đoạn tóm tắt được chọn, không phải toàn bộ chú giải; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yang", "yin", "yang", "yin"],
+    "kingWenNumber": 5,
+    "upperTrigramId": "trigram-water",
+    "lowerTrigramId": "trigram-heaven",
+    "claimIds": ["hexagram-05-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-05-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào đầu còn xa nguy hiểm. Giữ cách sống ổn định và không nóng vội tiến vào hiểm là điều kiện để không mắc lỗi.",
+          "citationIds": ["citation-nhl-q05-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-05-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải chờ ở đồng xa như còn cách hiểm nhiều. Người có sức tiến vẫn phải giữ thái độ thường, không vì đang an toàn mà khinh suất xông vào nạn.",
+          "citationIds": ["citation-pbc-q05-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-05-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào đầu ở chỗ rộng, xa hiểm. Không chỉ tạm ngừng bước mà tâm chí cũng cần yên với đạo thường; nóng nảy muốn tiến sẽ phá điều kiện không lỗi.",
+          "citationIds": ["citation-ntt-q05-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-05-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc bãi cát như đã gần hiểm hơn. Dù có lời chê nhỏ, giữ mức vừa phải và bình tĩnh chờ vẫn có thể kết thúc tốt.",
+          "citationIds": ["citation-nhl-q05-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-05-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào hai có tài cương mà ở vị nhu, lại giữ trung nên biết chọn thời tiến. Điều tiếng nhỏ không quyết định kết quả nếu vẫn giữ sự thung dung đúng mực.",
+          "citationIds": ["citation-pbc-q05-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-05-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải việc gần hiểm khiến xuất hiện chút điều tiếng. Tài cương ở chỗ mềm và giữ trung giúp người trong cuộc tự xử khoan hòa, chưa mắc vào hại lớn.",
+          "citationIds": ["citation-ntt-q05-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-05-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem bùn là chỗ sát hiểm, còn hào ba quá cứng nên tự dẫn họa đến. Biết kính thận vẫn có thể tránh thất bại; lời răn không loại bỏ khả năng sửa cách hành động.",
+          "citationIds": ["citation-nhl-q05-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-05-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải nguy hại theo sự quá nóng của người gần hiểm. Kính khi thường và thận khi gặp việc, lựa đúng lúc tiến lui, là điều kiện để tránh tự chuốc tai vạ.",
+          "citationIds": ["citation-pbc-q05-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-05-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào ba tự tiến quá sát chỗ hiểm nên dẫn tai họa. Kính thận và cân nhắc thời thế có thể tránh thất bại; ông nói lời răn nhằm sửa thời điểm tiến, không cấm tiến mãi.",
+          "citationIds": ["citation-ntt-q05-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-05-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hào bốn như đã vào hiểm và có thể bị thương. Tính nhu thuận, đúng vị giúp tìm được đường thoát thay vì tranh cứng trong cảnh ấy.",
+          "citationIds": ["citation-nhl-q05-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-05-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào bốn trong vùng hiểm tượng bằng máu. Nhu thuận và đúng vị còn cho phép tìm cách xử lý về sau, từ đó mới có thể ra khỏi nơi nguy hiểm.",
+          "citationIds": ["citation-pbc-q05-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-05-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào bốn ở đường tiến của ba hào dương nên bị thương và không thể cố giữ chỗ ở. Lui theo thời, không tranh cạnh, là cách tránh điều hung.",
+          "citationIds": ["citation-ntt-q05-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-05-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc hào bốn nhu mà giữ chính, đợi chứ không tiến thêm vào nơi gây hại. Nhờ cách ấy, người gặp cảnh bị thương vẫn có khả năng ra khỏi hang hiểm.",
+          "citationIds": ["citation-ntt-q05-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-05-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hình ảnh ăn uống yên vui theo hào năm cương, trung chính ở ngôi cao. Muốn sự an ổn bền thì vẫn phải giữ trung chính trong lúc hưởng vui.",
+          "citationIds": ["citation-nhl-q05-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-05-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào năm có tài và đức ở ngôi tôn, có thể đưa người ra khỏi hiểm. Hình ảnh rượu cơm chỉ sự an vui; giữ trung chính mới tránh mầm sai nảy trong cảnh thuận.",
+          "citationIds": ["citation-pbc-q05-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-05-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào năm có đức trung chính và làm trọn đạo mình. Vì vậy người ấy có thể yên vui đợi điều cần tới; lời tốt gắn với đức và cách xử sự ấy.",
+          "citationIds": ["citation-ntt-q05-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-05-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào cuối đã vào cực hiểm. Ba khách là ba hào dương ở Càn; ông đọc họ tới thong thả, còn sự kính trọng và nghe theo giúp hào cuối được cứu khỏi hiểm.",
+          "citationIds": ["citation-nhl-q05-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-05-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc ba khách không mời là ba hào dương cùng tiến lên khi thời chờ đã tới. Hào cuối nhu thuận, kính nhận họ nên có người giúp thoát hiểm; ông giải không xứng vị theo địa vị cao.",
+          "citationIds": ["citation-pbc-q05-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-05-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc vào hang như chờ đủ lâu rồi có chỗ yên ở, khác hình ảnh mắc hiểm. Ba hào dương tiến tới không cần giục; thành kính và không tranh với họ là điều kiện giữ được kết quả tốt.",
+          "citationIds": ["citation-ntt-q05-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-05-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc vào hang là rơi vào hiểm cực. Ba khách không mời là các hào dương cùng tiến; hào cuối không thể chống nên cần thuận và kính. Ông còn ghi chưa rõ nghĩa không đáng vị trong lời Tượng.",
+          "citationIds": ["citation-ntt-q05-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-pbc-nhu-final-label",
+      "status": "resolved",
+      "description": "PBC PDF 97 ghi chữ Hán Thượng cửu ở hào cuối, trong khi tiêu đề tiếng Việt gọi Thượng lục.",
+      "citationIds": ["citation-pbc-q05-line-6-pbc", "citation-nhl-q05-overview-nhl"],
+      "resolution": "Ảnh cấu trúc quẻ và lời giảng PBC PDF 98 xác định hào cuối âm. Giữ nhãn Thượng lục; không dùng nhãn Hán sai để đổi cấu trúc."
+    },
+    {
+      "id": "discrepancy-ntt-nhu-final-label",
+      "status": "resolved",
+      "description": "NTT PDF 193 ghi Thượng cửu trong chữ Hán và dịch nghĩa Hào Chín Trên, nhưng phiên âm gọi Thượng Lục.",
+      "citationIds": ["citation-ntt-q05-line-6-ntt", "citation-nhl-q05-overview-nhl"],
+      "resolution": "Lời giảng của cả Trình Di và Chu Hy trên PDF 193–194 xác định hào cuối âm. Đối chiếu cấu trúc quẻ; giữ Thượng lục."
+    }
+  ]
+}

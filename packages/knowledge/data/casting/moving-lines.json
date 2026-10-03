@@ -10,17 +10,38 @@
       "id": "rule-moving-line-change-claim",
       "kind": "calculation-rule",
       "text": "Hào dương động đổi thành âm; hào âm động đổi thành dương. Khi nhiều hào cùng động, đổi tất cả các hào đó để lập một quẻ biến. Những hào tĩnh giữ nguyên; quẻ hoàn toàn tĩnh không biến sang quẻ khác.",
-      "citationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"]
+      "citationIds": [
+        "citation-bpct-p11-12-technical",
+        "citation-nhl-p72-73-technical",
+        "citation-bpct-ch6-moving-and-still"
+      ]
+    },
+    {
+      "id": "rule-moving-line-change-change-outcome",
+      "kind": "author-interpretation",
+      "text": "Ở câu 1, Vương Hồng Tự giải Giao và Trùng là động, Đơn và Sách là tĩnh. Ông nói sự động có thể biến thành tốt hoặc xấu; tên hào động không tự cho kết luận có lợi.",
+      "citationIds": ["citation-bpct-ch6-moving-and-still"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Không dùng ví dụ ba Giao thành ba Đơn làm một quẻ sáu hào; phép ghép hai quái vẫn theo quy tắc đã dẫn."
+      ]
     }
   ],
   "relatedIds": [],
   "review": {
     "status": "reviewed",
     "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
+    "reviewedAt": "2026-10-02",
     "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+    "evidenceCitationIds": [
+      "citation-bpct-p11-12-technical",
+      "citation-nhl-p72-73-technical",
+      "citation-bpct-ch6-moving-and-still"
+    ],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập. Đã đọc và xem ảnh câu 1 PDF 77, đối chiếu phép gieo PDF 11–12. Giữ tách quái ba hào với quẻ sáu hào và không đồng nhất động với tốt."
   },
   "rights": {
     "basis": "original-summary-and-structured-facts",

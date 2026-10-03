@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "article-support-and-control-context",
+  "type": "article",
+  "title": "Sinh trợ và khắc xung: vai hào và sức Dụng thần",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-support-and-control-context-support-names",
+      "kind": "author-interpretation",
+      "text": "Câu 4 phân biệt sinh theo ngũ hành với phù, củng và hợp để trợ ta hoặc Dụng thần. Ví dụ Hợi phù Tí và Tí củng Hợi giữ chiều khác nhau của hai tên; danh sách ví dụ không được tự hoàn thành thành bảng.",
+      "citationIds": ["citation-bpct-ch6-support-and-combination"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Nguồn liệt kê bảy ví dụ Phù và bảy ví dụ Củng. Không dùng các tên này thay Tiến và Thoái hoặc suy ra một bảng đầy đủ."
+      ]
+    },
+    {
+      "id": "article-support-and-control-context-weak-useful-support",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự ví Dụng thần suy yếu bị xung mà được sinh, phù, củng hoặc hợp như mạ hạn gặp mưa. Hình ảnh tốt cần có đúng đối tượng thiếu sức được trợ, không chỉ có một quan hệ hợp trong quẻ.",
+      "citationIds": ["citation-bpct-ch6-support-and-combination"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-support-and-control-context-adverse-support",
+      "kind": "author-interpretation",
+      "text": "Nếu Kỵ thần suy yếu và bị xung phá lại được sinh trợ, câu 4 cho rằng sức gây hại tăng. Vì vậy cùng một quan hệ trợ có ý nghĩa khác khi tác động vào Dụng thần hoặc Kỵ thần.",
+      "citationIds": ["citation-bpct-ch6-support-and-combination"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": ["Xác định vai hào theo việc hỏi trước khi luận trợ có lợi hay gây hại."]
+    },
+    {
+      "id": "article-support-and-control-context-unsupported-useful-control",
+      "kind": "author-interpretation",
+      "text": "Câu 5 đặt hình ảnh sương hại cỏ ở Dụng thần suy yếu, không được sinh trợ, lại chịu khắc, hại, hình hoặc xung. Không bỏ điều kiện yếu và thiếu trợ để gán mọi xung thành kết quả xấu.",
+      "citationIds": ["citation-bpct-ch6-control-and-opposition"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-support-and-control-context-body-judgment",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự nói Hình, Khắc và Xung thường nghiệm, còn Lục Hại không nghiệm trong đoạn này. Đây là đánh giá của chính văn; không lấy lời ấy làm xác nhận thực nghiệm hoặc lý do phát hành bảng Hình, Hại đầy đủ.",
+      "citationIds": ["citation-bpct-ch6-control-and-opposition"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-support-and-control-context-translator-objection",
+      "kind": "author-interpretation",
+      "text": "Ở ghi chú sau câu hỏi 14, Vĩnh Cao cho Tam Hình và Lục Hại không nên đưa vào cách vận dụng sinh khắc. Lập trường này khác chính văn câu 5 vẫn giữ Hình; hai lớp văn bản phải được đọc riêng.",
+      "citationIds": ["citation-bpct-part2-punishment-relations-note"],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      },
+      "conditions": [
+        "Không nhập chuyện bệnh, chết hoặc lợi tiền trong các ví dụ kèm ghi chú làm kết quả dự báo."
+      ]
+    }
+  ],
+  "relatedIds": [
+    "term-useful-spirit",
+    "term-adverse-spirit",
+    "rule-five-element-cycles",
+    "article-origin-adverse-and-enemy-spirits",
+    "term-advancing-spirit",
+    "term-retreating-spirit"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch6-support-and-combination",
+      "citation-bpct-ch6-control-and-opposition",
+      "citation-bpct-part2-punishment-relations-note"
+    ],
+    "note": "Đã đọc đầy đủ câu 1–6 và chú thích PDF 77–79, ghi chú Tam Hình PDF 403; đối chiếu phép gieo PDF 11–12, vòng Trường Sinh PDF 16–17, Tứ sinh PDF 70 và ngữ cảnh câu 7 PDF 79. Xem ảnh PDF 77–79, 403 và kiểm tra nhãn trang in. Giữ chính văn và lời người dịch riêng, chỉ chọn diễn giải đủ rõ; chưa xác nhận ứng nghiệm hoặc có phê duyệt chuyên gia độc lập. Câu 4 PDF 78 gọi Hợi Mão Mùi là Thủy cục, khác Mộc cục Chương 1 PDF 16. Không nhập ví dụ sai hành; không thêm bảng Phù, Củng, Tam Hình hoặc Lục Hại."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

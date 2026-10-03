@@ -745,8 +745,184 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 ## 2026-10-01 — feat-033 pilot commentary comparisons
 
-**State**: active. The foundation is committed as `111929a`.
+**State**: active. The foundation is committed as `da4f1ab`.
 **Done**: Added PBC and NTT summaries for all 24 pilot line positions and separate Dụng cửu/Dụng lục readings. Preserved distinct Trình Di/Chu Hy interpretations. Recorded and visually confirmed the PBC PDF 66 and NTT PDF 144 Khôn label errors.
 **Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
 **Blockers**: None.
 **Next**: Verify and commit these comparisons, then author Truân, Mông, Nhu, and Sư.
+
+## 2026-10-01 — feat-033 four-quẻ source review
+
+- Status: active.
+- Result: Released Truân, Mông, Nhu, and Sư with three-book overviews and all six positions. Preserved selected Chu Hy differences, including Nhu's final line and Sư's “dư thi”. Recorded five source-label/reference discrepancies with visual and passage evidence. Corrected NTT's supplied-edition year from its PDF 938 colophon and recorded missing referenced end criticism.
+- Coverage: 77 records, 274 claims, 194 locators; 8/64 quẻ and 48/384 positions. The remaining 56 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed all 263 tests. PDF fingerprints match; generated imports and coverage were regenerated. No source PDF or core calculation changed.
+- Blockers: none.
+- Next: Commit this group, then author BPCT chapter 5, sections 1–4.
+
+## 2026-10-01 — feat-033 advanced BPCT group
+
+- Status: active.
+- Result: Added four Dụng/Nguyên/Kỵ/Cừu terms and three articles covering question-specific selection, Thế–Ứng roles, and conditional effects. Extended the existing Thế/Ứng terms. Kept Vĩnh Cao's footnotes separate from Vương Hồng Tự's chapter text; preserved dynamic, strength, calendar, and protection conditions.
+- Coverage: 84 records, 303 claims, 202 locators; advanced coverage is partial. No calendar or automated interpretation behavior was added.
+- Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `fb93a79`.
+- Blockers: none.
+- Next: Commit this group, then reconcile canonical documentation and complete the feature handoff.
+
+## 2026-10-01 — feat-033 completed handoff
+
+- Status: done.
+- Result: Completed both selected content tracks. Reconciled content, model, quality, and source documents with the released corpus. Retained explicit incomplete coverage and linked the manifest's next batch.
+- Commits: Foundation `da4f1ab`; pilot line comparisons `33c7097`; Truân–Mông–Nhu–Sư `fb93a79`; advanced BPCT `69c4683`.
+- Evidence: 84 released records, 303 cited claims, 202 locators; 8/64 quẻ and 48/384 positions in each of the three commentary books. Each group passed `./init.sh` with 263 tests, source fingerprints, generated-output freshness, and diff checks.
+- Blockers: none for this batch. Complete corpus review remains unfinished.
+- Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (Phi thần, Phục thần, Lục thú; PDF 68–69).
+
+## 2026-10-01 — feat-034 four-quẻ group
+
+- Status: active.
+- Result: Added Tỷ, Tiểu Súc, Thái, and Bĩ with three-book overviews and 24 positions. Preserved selected Trình Di/Chu Hy differences, source spelling variants, and seven visually checked source discrepancies. Removed the equivalent legacy records.
+- Coverage: 88 records, 401 claims, 297 locators; 12/64 quẻ and 72/384 positions in each commentary book. The remaining 52 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; supplied PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none.
+- Next: Commit this group, then finish BPCT chapter 5, sections 5–7 with related passages.
+
+## 2026-10-01 — feat-034 Phi–Phục and Lục thú group
+
+- Status: active.
+- Result: Added nine terms and three articles from BPCT chapter 5, sections 5–7. Checked Phi–Phục examples against the chapter 4 boards and Lục thú conditions against chapter 6 commentary. Excluded the unclear type-2 Phi wording and Đằng Xà element attribution; selected historical examples retain their context.
+- Coverage: 100 records, 427 claims, 303 locators; 12/64 quẻ and 72/384 positions. Advanced coverage remains partial.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. The four-quẻ group is committed as `c5bf201`.
+- Blockers: none for the selected claims. The two excluded passages need clearer evidence before later publication.
+- Next: Commit this group, then reconcile source documentation and complete the handoff.
+
+## 2026-10-01 — feat-034 completed handoff
+
+- Status: done.
+- Result: Completed both selected tracks and reconciled the source inventory with exact passage locations, seven supported discrepancy resolutions, and explicit advanced exclusions. Reviewed content, quality, and model documents remain accurate; they link the canonical coverage report.
+- Commits: Four quẻ `c5bf201`; Phi–Phục and Lục thú `5fa328c`.
+- Evidence: Final `./init.sh` passed 263 tests. Coverage remains incomplete: 100 records, 427 cited claims, 303 locators; 12/64 quẻ and 72/384 positions in each commentary book. PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none for this batch. Phi thần type 2 and Đằng Xà’s own element remain excluded pending clearer source evidence.
+- Next: Review Đồng Nhân, Đại Hữu, Khiêm, Dự and BPCT chapter 5, sections 8–10 (Tứ sinh, Nguyệt phá, Tuần không; PDF 70).
+
+## 2026-10-02 — feat-035 four-quẻ group
+
+- Status: active.
+- Result: Added Đồng Nhân, Đại Hữu, Khiêm, and Dự with three-book overviews and 24 positions. Preserved distinct author readings, Ngô Tất Tố's selected translator note, and six supported source-error resolutions after visual inspection. Removed duplicate legacy records.
+- Coverage: 104 records, 525 claims, 398 locators; 16/64 quẻ and 96/384 positions in each commentary book. The remaining 48 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none.
+- Next: Commit this group, then review BPCT chapter 5, sections 8–10 and related evidence.
+
+## 2026-10-02 — feat-035 Tứ sinh, Nguyệt phá, and Tuần không group
+
+- Status: active.
+- Result: Added ten terms and three articles from BPCT chapter 5, sections 8–10. Cross-checked stage lists and calendar definitions, preserved compound conditions, and separated Vĩnh Cao's notes. Excluded the unclear Lâm Quan/Thoái sentence and the contradictory điền thực example.
+- Coverage: 117 records, 548 claims, 408 locators; 16/64 quẻ and 96/384 positions. Advanced coverage remains partial.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. Four-quẻ group committed as `be42a75`.
+- Blockers: none for selected claims. Excluded passages need clearer evidence before publication.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-035 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks. Added printed locators to 84 NHL citations across three batches and checked all 109 NHL citations against 59 footer labels. Reconciled source locations and exclusions, added chapter 6 cross-checks for Tuần Không, and corrected stale model and directory documentation. Content and quality contracts remain accurate.
+- Commits: Four quẻ `be42a75`; Tứ sinh, Nguyệt phá, and Tuần không `b964a5d`.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 51 local documentation targets, and diff checks passed. Coverage remains incomplete: 117 records, 548 claims, 411 locators; 16/64 quẻ and 96/384 positions in each commentary book.
+- Blockers: none for this batch. Ambiguous and contradictory source examples remain explicitly excluded; no independent specialist approval is claimed.
+- Next: Review Tùy, Cổ, Lâm, Quán and BPCT chapter 5, sections 11–12 (Phản ngâm, Phục ngâm; PDF 70–71).
+
+## 2026-10-02 — feat-036 four-quẻ group
+
+- Status: active.
+- Result: Added Tùy, Cổ, Lâm, and Quán with three-book overviews and 24 positions. Preserved author differences, uncertain readings, and 13 visually checked source-error resolutions. Removed duplicate legacy records and retained the existing Quan display name with Quán aliases.
+- Coverage: 121 records, 644 claims, 503 locators; 20/64 quẻ and 120/384 positions in each commentary book. The remaining 44 quẻ retain unaudited compatibility content.
+- Evidence: After correcting the display-name change caught by compatibility tests, `./init.sh` passed 263 tests. PDF fingerprints, generated-output freshness, and diff checks passed before commit.
+- Blockers: none.
+- Next: Commit this group, then finish BPCT chapter 5, sections 11–12 and related evidence.
+
+## 2026-10-02 — feat-036 Phản ngâm and Phục ngâm group
+
+- Status: active.
+- Result: Added three terms and two articles from BPCT chapter 5, sections 11–12. Preserved the distinction between directional examples and line-branch opposition. Checked 14 Phục ngâm pairs against Nạp Giáp, retained Dụng/Thế/Ứng conditions, and resolved a Cấn naming error. Ambiguous parentheticals and the mixed Phản/Phục name in question 6 remain excluded.
+- Coverage: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions. Advanced coverage remains partial.
+- Evidence: Final advanced `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit. Classical group committed as `ccf713b`.
+- Blockers: none for selected claims. Excluded wording needs clearer evidence before publication.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-036 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks and reconciled source locations, discrepancy routes, and advanced exclusions. Reviewed content, quality, model, and data-directory contracts remain accurate. Checked all 138 NHL citations across 71 cited pages and seven new BPCT printed locators.
+- Commits: Four quẻ `ccf713b`; Phản ngâm and Phục ngâm `09e8a9f`.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 74 local document targets, and diff checks passed. Coverage remains incomplete: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions per commentary book.
+- Blockers: none for selected content. Ambiguous statements remain excluded; no independent specialist approval is claimed.
+- Next: Review Phệ Hạp, Bí, Bác, Phục and BPCT chapter 5, sections 13–14 (Vượng tướng hưu tù, Trong hợp có khắc; PDF 72).
+
+## 2026-10-02 — feat-037 four-quẻ group
+
+- Status: active.
+- Result: Added Phệ Hạp, Bí, Bác, and Phục with three-book overviews and all 24 positions. Preserved Trình Di/Chu Hy differences, historical context, and nine visually checked source-error resolutions. Used NHL's explicit seven-quẻ sequence and excluded unclear wording; removed duplicate legacy records.
+- Coverage: 130 records, 754 claims, 606 locators; 24/64 quẻ and 144/384 positions in each commentary book. Forty quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit.
+- Blockers: none for selected claims. Ambiguous wording remains excluded.
+- Next: Commit this group, then review BPCT chapter 5, sections 13–14 and related evidence.
+
+## 2026-10-02 — feat-037 seasonal strength and combination/control group
+
+- Status: active.
+- Result: Added three terms and two articles for BPCT chapter 5, sections 13–14. Kept compound conditions, the directional Thân-to-Tị exception, and Vĩnh Cao's Tam hình objection separate from main commentary. No calendar, scoring, or automatic interpretation was added.
+- Coverage: 135 records, 771 claims, 614 locators; 24/64 quẻ and 144/384 positions. Advanced coverage remains partial.
+- Evidence: Initial full verification hit the 304-line generated import inventory. Fix `159797e` exempts only that generated file; an isolated probe still rejects oversized authored TypeScript. The subsequent `./init.sh` passed 263 tests; PDF fingerprints, generated freshness, and diff checks passed. Classical group committed as `3e01c29`.
+- Blockers: none for selected claims. Unspecified Hưu/Tù assignments and mixed support/control cases remain outside general classifiers.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-037 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks. Reconciled source locations, nine discrepancy routes, and classical/advanced exclusions. Content, quality, model, and data-directory contracts remain accurate.
+- Commits: Classical `3e01c29`, generated-import verification `159797e`, BPCT `3dd5355`.
+- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, documentation targets, and diff checks passed. Checked all 167 NHL citations across 84 cited pages and eight new BPCT printed locators.
+- Coverage: 135 records, 771 cited claims, 614 locators. Classical coverage remains 24/64 quẻ and 144/384 positions per commentary book.
+- Blockers: none for selected claims. Ambiguous statements remain excluded. Full corpus and independent specialist review remain incomplete.
+- Next: Review Vô Vọng, Đại Súc, Di, Đại Quá and BPCT chapter 5, sections 15–16 (PDF 72–73).
+
+## 2026-10-02 — feat-038 completed source audit and handoff
+
+- Status: done.
+- Result: Added four reviewed quẻ and six BPCT records. Corrected Đại Súc's reversed display name. Preserved author differences, six visually checked source-error resolutions, conditional support, and translator objections. Reconciled source locators and exclusions.
+- Commits: Name `743b17e`, classical `2443953`, BPCT `31d8866`.
+- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 92 local documentation routes, and diff checks passed. Checked all 195 NHL citations across 96 cited pages and nine new BPCT printed locators.
+- Coverage: 145 records, 885 cited claims, 716 locators. Classical coverage is 28/64 quẻ and 168/384 positions per commentary book. Thirty-six quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Ambiguous passages, reported health outcomes, complete coverage, and independent specialist approval remain outside this completed batch.
+- Next: Review Khảm, Ly, Hàm, Hằng and BPCT chapter 5, sections 17–18 (PDF 73).
+
+## 2026-10-02 — feat-039 completed source audit and handoff
+
+- Status: done.
+- Result: Added Khảm, Ly, Hàm, Hằng and four BPCT records. Preserved author differences and nine visually checked source-error resolutions. Kept conditional Tiến/Thoái effects, proxy relationships, and the source's religious setting explicit. Reconciled source locations and exclusions.
+- Commits: Classical `3b9ab7e`; BPCT `b7fce51`.
+- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 101 local documentation routes, and diff checks passed. Checked all 223 NHL citations across 108 cited pages and five new BPCT printed locators.
+- Coverage: 153 records, 995 cited claims, 812 locators. Classical coverage is 32/64 quẻ and 192/384 positions per commentary book. Thirty-two quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. The missing Tiến entry, ambiguous attribution, unlocated reference, and reported outcomes remain outside released authority. Full coverage and independent specialist approval remain incomplete.
+- Next: Review Độn, Đại Tráng, Tấn, Minh Di and BPCT chapter 6, sentences 1–6 (PDF 77–79).
+
+## 2026-10-02 — feat-040 completed source audit and handoff
+
+- Status: done.
+- Result: Added Độn, Đại Tráng, Tấn, Minh Di and four BPCT records; extended moving-line evidence. Preserved distinct readings, seven source-discrepancy resolutions, conditional support, and Nhật thần scope. Tightened seven classical summaries and one advanced condition. Reconciled source locations and exclusions.
+- Commits: Classical `ea12e18`; BPCT `1610f8b`.
+- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 112 documentation routes, and diff checks passed. Checked 251 NHL citations across 120 pages and eight new BPCT printed locators.
+- Coverage: 161 records, 1,111 cited claims, 916 locators. Classical coverage is 36/64 quẻ and 216/384 positions per commentary book. Twenty-eight quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Unclear wording, incomplete tables, reported outcomes, full coverage, and independent specialist approval remain excluded or incomplete.
+- Next: Review Gia Nhân, Khuê, Kiển, Giải and BPCT chapter 6, sentences 7–11 (PDF 79–81).
+
+## 2026-10-02 — feat-041 completed source audit and handoff
+
+- Status: done.
+- Result: Added Gia Nhân, Khuê, Kiển, Giải and seven BPCT records. Preserved author differences, four visually checked source-error resolutions, conditional day, month, and year effects, and separate Thân meanings. Tightened seven classical summaries. Reconciled source locations and exclusions.
+- Commits: Classical `a73209e`; BPCT `f780804`.
+- Evidence: `./init.sh` passed 263 tests. Fingerprints, generated freshness, 121 documentation routes, and diff checks passed. Checked 279 NHL citations across 133 pages and six new BPCT printed locators.
+- Coverage: 172 records, 1,226 cited claims, 1,015 locators. Classical coverage is 40/64 quẻ and 240/384 positions per commentary book. Twenty-four quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Unclear references, full coverage, calendar algorithms, and independent specialist approval remain excluded or incomplete.
+- Next: Review Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16 (PDF 81–82).

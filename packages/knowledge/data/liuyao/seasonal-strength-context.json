@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "article-seasonal-strength-context",
+  "type": "article",
+  "title": "Vượng tướng và hưu tù: thời lệnh cùng sinh khắc",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-seasonal-strength-context-strong-but-controlled",
+      "kind": "author-interpretation",
+      "text": "Mục 13 xét hào đang vượng tướng nhưng bị Nhật thần cùng động hào khắc chế: trước mắt còn nhờ thời, qua thời thì chịu hại. Lời luận chỉ cho trạng thái hữu dụng tạm, không đồng nhất mạnh theo mùa với kết quả cuối.",
+      "citationIds": ["citation-bpct-ch5-seasonal-strength"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Đủ bối cảnh khắc chế được đoạn nêu; không đổi chữ cùng thành điều kiện chỉ cần một yếu tố."
+      ]
+    },
+    {
+      "id": "article-seasonal-strength-context-weak-but-supported",
+      "kind": "author-interpretation",
+      "text": "Cùng mục xét hào hưu tù được Nhật thần cùng động hào sinh phù: trước mắt chưa thuận, gặp thời mới có thể dùng. Sự chuyển trong lời giảng còn tùy trợ giúp và thời, không phải mọi hào yếu sẽ tự mạnh lên.",
+      "citationIds": ["citation-bpct-ch5-seasonal-strength"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-seasonal-strength-context-useful-versus-adverse",
+      "kind": "author-interpretation",
+      "text": "Câu 27 chương 6 giới hạn lời suy nhược được phù trợ cũng tốt vào Dụng thần. Khi Kỵ thần vô khí, tác giả lại không muốn nó được trợ; sức mạnh có lợi hay hại còn tùy vai của hào trong việc hỏi.",
+      "citationIds": ["citation-bpct-ch6-seasonal-strength"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Không lấy trợ giúp của Kỵ thần làm lợi cho Dụng thần chỉ vì cả hai cùng tăng sức."
+      ]
+    },
+    {
+      "id": "article-seasonal-strength-context-end-months",
+      "kind": "author-interpretation",
+      "text": "Vĩnh Cao giải bốn tháng Quí là tháng ba, sáu, chín và chạp trong chú thích 5. Chú thích làm rõ tên tháng của bảng mùa, không cung cấp phép đổi ngày dân sự hay mốc tiết khí để tính thời lệnh.",
+      "citationIds": ["citation-bpct-ch6-four-season-end-months-note"],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      },
+      "conditions": ["Giữ lớp chú thích riêng với lời chương 5; chưa dùng làm thuật toán lịch."]
+    }
+  ],
+  "relatedIds": [
+    "term-prosperous-supported",
+    "term-resting-confined",
+    "term-useful-spirit",
+    "term-adverse-spirit",
+    "rule-five-element-cycles"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-seasonal-strength",
+      "citation-bpct-ch6-seasonal-strength",
+      "citation-bpct-ch6-four-season-end-months-note"
+    ],
+    "note": "Đã đọc và xem ảnh mục 13–14 PDF 72; đối chiếu địa chi xung hợp PDF 10, Kim Trường Sinh PDF 70, câu 26–27 và chú thích 5 PDF 85, câu 31 PDF 87. Đọc đầy đủ câu hỏi 14 cùng Ghi chú PDF 401–403, giữ phản biện của Vĩnh Cao riêng. Nhãn trang in đã kiểm tra; chưa xác nhận chiêm nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

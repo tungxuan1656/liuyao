@@ -136,7 +136,7 @@ describe('curated V1 content', () => {
       'Sơn Địa Bác',
       'Địa Lôi Phục',
       'Thiên Lôi Vô Vọng',
-      'Thiên Sơn Đại Súc',
+      'Sơn Thiên Đại Súc',
       'Sơn Lôi Di',
       'Trạch Phong Đại Quá',
       'Thuần Khảm',

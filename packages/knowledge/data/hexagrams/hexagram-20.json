@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-20",
+  "type": "hexagram",
+  "title": "Phong Địa Quan",
+  "aliases": ["Quan", "Quán", "Phong Địa Quán"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-20-structure",
+      "kind": "structural-fact",
+      "text": "Phong Địa Quan có ngoại quái Tốn và nội quái Khôn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q20-overview-nhl",
+        "citation-pbc-q20-overview-pbc",
+        "citation-ntt-q20-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-20-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê phân biệt Quán là biểu thị để người nhìn và Quan là nhìn xem. Ông đọc hình ảnh đầu lễ theo lòng thành của người làm mẫu, quan trọng hơn vật cúng hoặc sự phô bày bên ngoài.",
+      "citationIds": ["citation-nhl-q20-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-20-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu lấy hai hào dương ở trên làm mẫu cho người dưới quan sát. Hình ảnh nghi lễ nhấn mạnh lòng thành và sức giáo hóa; thần đạo được ông giải theo sự thầm mầu, không chỉ theo quỷ thần.",
+      "citationIds": ["citation-pbc-q20-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-20-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt Quán ở người trên làm mẫu để người dưới nhìn mà cảm hóa. Ông lấy lòng kính khi bắt đầu lễ làm chuẩn phải giữ suốt lễ, không giải không cúng thành bỏ việc tế.",
+      "citationIds": ["citation-ntt-q20-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-earth", "trigram-wind"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yin", "yin", "yin", "yang", "yang"],
+    "kingWenNumber": 20,
+    "upperTrigramId": "trigram-wind",
+    "lowerTrigramId": "trigram-earth",
+    "claimIds": ["hexagram-20-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-20-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc trẻ nhìn theo tầm nhìn nông và xa người làm mẫu. Sự hạn hẹp có thể chưa bị trách ở người chưa hiểu, nhưng không đáp trách nhiệm của người cần có đức và hiểu biết.",
+          "citationIds": ["citation-nhl-q20-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-20-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào đầu ở xa nên cái nhìn chưa sâu. Người có trách nhiệm học và hiểu mà vẫn giữ cách nhìn trẻ nhỏ thì đáng tiếc, khác người chưa được học.",
+          "citationIds": ["citation-pbc-q20-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-20-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào đầu mềm ở thấp nên không nhận đầy đủ đạo của người trên. Cách nhìn hạn hẹp ấy không đủ cho vai quân tử cần hiểu và thực hành đạo.",
+          "citationIds": ["citation-ntt-q20-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-20-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hào hai nhìn qua khe cửa như cách thấy một phần từ bên trong. Ông đặt lời chấp nhận ở vai người nữ theo khuôn phép xã hội cổ, không dùng làm mẫu cho người có nhiệm vụ nhìn rộng.",
+          "citationIds": ["citation-nhl-q20-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người trong bối cảnh chú giải cổ; không chuyển lời hào thành giới hạn năng lực theo giới tính."
+          ]
+        },
+        {
+          "id": "hexagram-20-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào hai theo tầm nhìn hẹp, không thấy toàn bộ người và việc. Hình ảnh phụ nữ ở trong cửa thuộc cách giảng vai xã hội cổ, khác yêu cầu hiểu rộng của người gánh việc chung.",
+          "citationIds": ["citation-pbc-q20-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người trong bối cảnh chú giải cổ; không chuyển lời hào thành giới hạn năng lực theo giới tính."
+          ]
+        },
+        {
+          "id": "hexagram-20-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào hai chỉ thấy thấp thoáng người ở hào năm mà chưa thấy đủ đức của họ. Lời về người nữ và người quân tử dùng hai vai trong xã hội cổ để phân biệt yêu cầu của sự quan sát.",
+          "citationIds": ["citation-ntt-q20-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người trong bối cảnh chú giải cổ; không chuyển lời hào thành giới hạn năng lực theo giới tính."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-20-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hào ba theo việc tự xét khả năng và việc làm của mình để chọn tiến hoặc lui. Hướng nhìn ở đây là tự xét, khác chỉ ngước nhìn người ở hào năm.",
+          "citationIds": ["citation-nhl-q20-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-20-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải xem sự sinh của mình theo hành động và năng lực tự biểu lộ. Lấy đó làm căn cứ chọn tiến hay lui, tránh làm theo danh vị hoặc lòng ham tiến.",
+          "citationIds": ["citation-pbc-q20-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-20-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào ba ở lúc có thể tiến hoặc lui nên cần xét hành vi phát ra từ mình. Quyết định đúng phải hợp đạo và hoàn cảnh, không chỉ theo muốn gần người có ngôi.",
+          "citationIds": ["citation-ntt-q20-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-20-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào bốn gần hào năm nên thấy được đức và sự tốt của nước. Người có tài được dùng như khách đáng trọng có thể góp sức, không chỉ đến vì lợi riêng.",
+          "citationIds": ["citation-nhl-q20-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-20-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải quan sát vẻ sáng của nước theo việc nhận biết đức và cách trị của người trên. Người đủ tài đức có thể nhận việc như khách được trọng để giúp thực hiện điều tốt.",
+          "citationIds": ["citation-pbc-q20-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-20-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc vẻ sáng của nước qua đời sống và sự giáo hóa, rộng hơn chỉ nhìn một người. Người có tài thấy đạo tốt có thể được tôn làm khách để cùng giúp việc.",
+          "citationIds": ["citation-ntt-q20-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-20-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải người ở hào năm tự xét hành vi để làm mẫu cho người khác. Có phẩm chất quân tử và tránh lỗi thì sự biểu thị ấy mới đáp được vai ngôi cao.",
+          "citationIds": ["citation-nhl-q20-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-20-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho người đứng đầu phải nhìn tác dụng việc mình qua phong tục và hành vi của dân. Không chỉ tự nhận mình đúng; kết quả ở người dưới giúp xét sự giáo hóa của mình.",
+          "citationIds": ["citation-pbc-q20-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-20-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải xem sự sinh của mình ở hào năm theo việc nhìn dân để biết chính sự và giáo hóa của mình. Người làm mẫu phải có đức quân tử, không chỉ tự đánh giá trong lòng.",
+          "citationIds": ["citation-ntt-q20-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-20-line-5-alternative-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê còn nêu cách đặt câu khiến người khác nhìn hào năm như mẫu quân tử. Ông giữ cách đọc này bên cạnh cách hào năm tự xét mình, không gộp hai chủ thể quan sát thành một.",
+          "citationIds": ["citation-nhl-q20-line-5-alternative-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-20-line-5-alternative-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu còn đọc quân tử trong lời hào năm theo người đang cần học ở người trên. Cách giải ấy chuyển vai nhìn sang người dưới noi mẫu hào năm, khác cách người đứng đầu nhìn dân để xét mình.",
+          "citationIds": ["citation-pbc-q20-line-5-alternative-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-20-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào cuối ở người có đức được nhìn làm mẫu dù không ở ngôi làm chủ. Cần tự xét và giữ phẩm chất, vì sự noi theo của người khác vẫn khiến trách nhiệm còn.",
+          "citationIds": ["citation-nhl-q20-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-20-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào cuối không trực tiếp trị việc nhưng vẫn có đức và danh khiến người nhìn. Cần tiếp tục tu dưỡng, không tự mãn vì không còn ở ngôi.",
+          "citationIds": ["citation-pbc-q20-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-20-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào cuối không có chức vị nhưng đạo đức được người khác quan sát. Người ấy phải dè dặt và giữ đức quân tử, bởi cách làm của mình vẫn có ảnh hưởng.",
+          "citationIds": ["citation-ntt-q20-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-quan-second-negation",
+      "status": "resolved",
+      "description": "NTT PDF 375 kết lời Trình Di bằng câu hào Hai đã thấy rõ, trái các câu chỉ nhìn qua khe trước đó.",
+      "citationIds": [
+        "citation-ntt-q20-line-2-ntt",
+        "citation-nhl-q20-line-2-nhl",
+        "citation-pbc-q20-line-2-pbc"
+      ],
+      "resolution": "Ảnh PDF 375 xác nhận câu thiếu phủ định; phần tiếp PDF 376 nói chỉ dòm phảng phất và hai sách khác cùng giảng tầm nhìn hẹp. Giữ nghĩa chưa thấy rõ, không xóa hạn chế quan sát của hào hai."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q20-overview-nhl",
+      "citation-pbc-q20-overview-pbc",
+      "citation-ntt-q20-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q20-line-1-nhl",
+      "citation-pbc-q20-line-1-pbc",
+      "citation-ntt-q20-line-1-ntt",
+      "citation-nhl-q20-line-2-nhl",
+      "citation-pbc-q20-line-2-pbc",
+      "citation-ntt-q20-line-2-ntt",
+      "citation-nhl-q20-line-3-nhl",
+      "citation-pbc-q20-line-3-pbc",
+      "citation-ntt-q20-line-3-ntt",
+      "citation-nhl-q20-line-4-nhl",
+      "citation-pbc-q20-line-4-pbc",
+      "citation-ntt-q20-line-4-ntt",
+      "citation-nhl-q20-line-5-nhl",
+      "citation-pbc-q20-line-5-pbc",
+      "citation-ntt-q20-line-5-ntt",
+      "citation-nhl-q20-line-5-alternative-nhl",
+      "citation-pbc-q20-line-5-alternative-pbc",
+      "citation-nhl-q20-line-6-nhl",
+      "citation-pbc-q20-line-6-pbc",
+      "citation-ntt-q20-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép được ghi nhận. Các cách đọc khác nhau và chỗ tác giả chưa xác định được giữ riêng. Nhãn trang NHL được kiểm tra trên PDF; không chứng nhận toàn bộ sách, giả thuyết lịch sử hoặc phép tính lịch, chưa có xác nhận của chuyên gia độc lập."
+  }
+}

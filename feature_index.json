@@ -211,8 +211,56 @@
     {
       "id": "feat-033",
       "title": "Reviewed knowledge batch two",
-      "status": "todo",
+      "status": "done",
       "depends_on": ["feat-032"]
+    },
+    {
+      "id": "feat-034",
+      "title": "Reviewed knowledge batch three",
+      "status": "done",
+      "depends_on": ["feat-033"]
+    },
+    {
+      "id": "feat-035",
+      "title": "Reviewed knowledge batch four",
+      "status": "done",
+      "depends_on": ["feat-034"]
+    },
+    {
+      "id": "feat-036",
+      "title": "Reviewed knowledge batch five",
+      "status": "done",
+      "depends_on": ["feat-035"]
+    },
+    {
+      "id": "feat-037",
+      "title": "Reviewed knowledge batch six",
+      "status": "done",
+      "depends_on": ["feat-036"]
+    },
+    {
+      "id": "feat-038",
+      "title": "Reviewed knowledge batch seven",
+      "status": "done",
+      "depends_on": ["feat-037"]
+    },
+    {
+      "id": "feat-039",
+      "title": "Reviewed knowledge batch eight",
+      "status": "done",
+      "depends_on": ["feat-038"]
+    },
+    {
+      "id": "feat-040",
+      "title": "Reviewed knowledge batch nine",
+      "status": "done",
+      "depends_on": ["feat-039"]
+    },
+    {
+      "id": "feat-041",
+      "title": "Reviewed knowledge batch ten",
+      "status": "done",
+      "depends_on": ["feat-040"]
     }
   ]
 }

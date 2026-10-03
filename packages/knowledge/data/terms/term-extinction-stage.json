@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "term-extinction-stage",
+  "type": "term",
+  "title": "Tuyệt",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-extinction-stage-locations",
+      "kind": "structural-fact",
+      "text": "Mục 8 đặt Tuyệt của Hỏa tại Hợi, Kim tại Dần, Thủy và Thổ tại Tị, Mộc tại Thân. Đây là vị trí trong vòng ngũ hành của nguồn, không phải lời kết luận sống chết từ tên giai đoạn.",
+      "citationIds": ["citation-bpct-ch5-four-birthplaces", "citation-bpct-ch1-life-cycle"]
+    }
+  ],
+  "relatedIds": ["term-growth-stage", "term-store-stage", "article-growth-store-and-extinction"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch5-four-birthplaces", "citation-bpct-ch1-life-cycle"],
+    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

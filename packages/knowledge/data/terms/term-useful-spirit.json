@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "term-useful-spirit",
+  "type": "term",
+  "title": "Dụng thần",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-useful-spirit-definition",
+      "kind": "author-interpretation",
+      "text": "Theo Vương Hồng Tự, Dụng thần là hào được chọn làm đối tượng chính của việc xem. Lựa chọn dựa vào việc hỏi và quan hệ với người hỏi; sách dùng Lục thân hoặc trực tiếp Thế–Ứng trong những trường hợp cụ thể.",
+      "citationIds": [
+        "citation-bpct-ch5-selection",
+        "citation-bpct-ch5-shi-ying",
+        "citation-bpct-ch5-selection-answers"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["article-useful-spirit-selection", "article-shi-ying-as-useful-spirit"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-selection",
+      "citation-bpct-ch5-shi-ying",
+      "citation-bpct-ch5-selection-answers"
+    ],
+    "note": "Đã đọc đầy đủ Chương 5, mục 1–4 và các chú thích ở PDF 67–68, đối chiếu lời giới thiệu về tác giả và người dịch ở PDF 2–3. Đã xem ảnh trang và số trang in. Đây là diễn giải học thuật có điều kiện, không phải kết quả luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

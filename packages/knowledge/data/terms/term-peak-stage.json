@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "term-peak-stage",
+  "type": "term",
+  "title": "Đế Vượng",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-peak-stage-definition",
+      "kind": "structural-fact",
+      "text": "Đế Vượng là tên một giai đoạn trong vòng Trường Sinh được BPCT liệt kê, sau Lâm Quan và trước Suy. Câu 6 ví giai đoạn này với lúc trưởng thành đang mạnh.",
+      "citationIds": ["citation-bpct-ch1-life-cycle", "citation-bpct-ch6-growth-and-peak"]
+    },
+    {
+      "id": "term-peak-stage-fire-example",
+      "kind": "structural-fact",
+      "text": "BPCT nêu Hỏa có Đế Vượng ở Ngọ trong Chương 1 và câu 6 Chương 6. Đây là ví dụ của giai đoạn, không đủ để cho rằng mọi hào Hỏa gặp Ngọ đều tốt.",
+      "citationIds": ["citation-bpct-ch1-life-cycle", "citation-bpct-ch6-growth-and-peak"]
+    }
+  ],
+  "relatedIds": [
+    "term-growth-stage",
+    "term-prosperous-supported",
+    "article-growth-and-peak-day-context"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch1-life-cycle", "citation-bpct-ch6-growth-and-peak"],
+    "note": "Đã đọc đầy đủ câu 1–6 và chú thích PDF 77–79, ghi chú Tam Hình PDF 403; đối chiếu phép gieo PDF 11–12, vòng Trường Sinh PDF 16–17, Tứ sinh PDF 70 và ngữ cảnh câu 7 PDF 79. Xem ảnh PDF 77–79, 403 và kiểm tra nhãn trang in. Giữ chính văn và lời người dịch riêng, chỉ chọn diễn giải đủ rõ; chưa xác nhận ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

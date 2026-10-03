@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-26",
+  "type": "hexagram",
+  "title": "Sơn Thiên Đại Súc",
+  "aliases": ["Đại Súc"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-26-structure",
+      "kind": "structural-fact",
+      "text": "Sơn Thiên Đại Súc có ngoại quái Cấn và nội quái Càn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q26-overview-nhl",
+        "citation-pbc-q26-overview-pbc",
+        "citation-ntt-q26-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-26-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê phân biệt chứa, nuôi và ngăn trong nghĩa Súc. Lời quẻ nhấn mạnh tích lũy tài đức, còn lời hào xét ngăn sức tiến; học điều đúng và giữ chính là nền để đem tài ra dùng.",
+      "citationIds": ["citation-nhl-q26-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-26-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu phân biệt tích lũy đức học ở lời quẻ với ngăn giữ ở các hào. Học rộng cần chọn điều đúng và đem ra thực hành; được nuôi để giúp đời khác chỉ giữ phần lợi cho riêng mình.",
+      "citationIds": ["citation-pbc-q26-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-26-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di cho chứa ngăn và chứa họp liên hệ nhau trong Đại Súc. Học lời nói, việc làm của người trước phải xét cách dùng và ý nghĩa để nuôi đức, rồi đem tài giúp đời qua khó khăn.",
+      "citationIds": ["citation-ntt-q26-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-26-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy đọc Đại Súc theo sức cứng mạnh được ngăn và đức được làm mới. Trời ở trong núi là hình tượng để giảng sự chứa lớn, không phải một sự việc vật lý được khẳng định.",
+      "citationIds": ["citation-ntt-q26-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-heaven", "trigram-mountain"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yang", "yin", "yin", "yang"],
+    "kingWenNumber": 26,
+    "upperTrigramId": "trigram-mountain",
+    "lowerTrigramId": "trigram-heaven",
+    "claimIds": ["hexagram-26-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-26-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào đầu muốn tiến nhưng bị hào bốn ngăn. Biết dừng trước khi cố vượt sức cản giúp tránh nguy.",
+          "citationIds": ["citation-nhl-q26-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-26-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào đầu dưới thế ngăn của hào bốn. Có sức dương chưa đủ để tiến trong thời này, nên biết thôi là điều có lợi.",
+          "citationIds": ["citation-pbc-q26-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-26-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào đầu cương mạnh mà thế dưới không thắng nổi hào bốn ở trên. Quan hệ ứng trong Đại Súc mang nghĩa ngăn nhau, khác cách cứu viện ở quẻ khác.",
+          "citationIds": ["citation-ntt-q26-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-26-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc tháo bộ phận xe theo việc hào hai tự dừng khi bị hào năm ngăn. Được trung giúp biết thời và tránh lỗi.",
+          "citationIds": ["citation-nhl-q26-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-26-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai có sức tiến nhưng biết tự dừng cho hợp thế. Đức trung giúp nhận ra âm ở trên vẫn có thể ngăn dương ở dưới trong thời Đại Súc.",
+          "citationIds": ["citation-pbc-q26-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-26-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải tháo bánh xe theo việc lượng thế không thể tiến rồi tự thôi. Chất cứng có trung khiến hành động phù hợp hoàn cảnh, không cố vượt hào năm đang ngăn.",
+          "citationIds": ["citation-ntt-q26-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-26-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào ba và hào trên cùng cương, cùng chí tiến khi thế ngăn đã tới cực. Có đường đi vẫn cần giữ chính, biết khó và luyện tập việc phòng bị hằng ngày.",
+          "citationIds": ["citation-nhl-q26-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-26-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba và hào trên không ngăn nhau mà cùng tiến. Đây là ngoại lệ theo thời riêng của hai hào; có người đồng chí không thay việc chuẩn bị và đề phòng.",
+          "citationIds": ["citation-pbc-q26-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-26-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào ba được hào trên cùng chí nên có thế tiến nhanh. Tài mạnh và sự giúp đỡ vẫn phải đi cùng biết khó, giữ chính và thường luyện đồ dùng, phòng vệ.",
+          "citationIds": ["citation-ntt-q26-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-26-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê lấy trâu non bị ngăn làm hình ảnh ngăn điều sai từ lúc mới nảy. Chưa để sức chống phát triển thì việc ngăn dễ hơn.",
+          "citationIds": ["citation-nhl-q26-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình ảnh trâu và lợn trong phép ví ngăn điều sai của chú giải cổ, không chuyển thành hướng dẫn xử lý động vật hay trừng phạt người."
+          ]
+        },
+        {
+          "id": "hexagram-26-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc gông trâu non như phép ví chuẩn bị ngăn điều xấu trước khi phát lộ. Ông nhắc không câu nệ hình ảnh như một chỉ dẫn thực hành với trâu chưa có sừng.",
+          "citationIds": ["citation-pbc-q26-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình ảnh trâu và lợn trong phép ví ngăn điều sai của chú giải cổ, không chuyển thành hướng dẫn xử lý động vật hay trừng phạt người."
+          ]
+        },
+        {
+          "id": "hexagram-26-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy hình ảnh ngăn trâu non để giảng trách nhiệm ngăn điều sai từ đầu. Đợi điều xấu đã mạnh mới cấm thì tốn sức và dễ gây hại trong bối cảnh trị người của lời giảng cổ.",
+          "citationIds": ["citation-ntt-q26-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình ảnh trâu và lợn trong phép ví ngăn điều sai của chú giải cổ, không chuyển thành hướng dẫn xử lý động vật hay trừng phạt người."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-26-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc nanh lợn đã thiến theo cách ngăn ở nguyên nhân khiến sức gây hại phát ra. Chỉ chống biểu hiện bên ngoài thì nguyên nhân vẫn có thể tạo cách gây hại khác.",
+          "citationIds": ["citation-nhl-q26-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình ảnh trâu và lợn trong phép ví ngăn điều sai của chú giải cổ, không chuyển thành hướng dẫn xử lý động vật hay trừng phạt người."
+          ]
+        },
+        {
+          "id": "hexagram-26-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu dùng hình ảnh nanh lợn để phân biệt ngăn thủ đoạn với xử lý động lực từ gốc. Biết thời và nắm đúng chỗ then chốt giúp hạn chế việc phải dùng uy hình.",
+          "citationIds": ["citation-pbc-q26-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình ảnh trâu và lợn trong phép ví ngăn điều sai của chú giải cổ, không chuyển thành hướng dẫn xử lý động vật hay trừng phạt người."
+          ]
+        },
+        {
+          "id": "hexagram-26-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho chỉ dùng hình phạt chống ham muốn thì khó ngăn hết điều sai. Ông dùng hình ảnh lợn thiến để giảng việc tìm gốc, sửa giáo hóa và sinh kế trong cách trị nước cổ.",
+          "citationIds": ["citation-ntt-q26-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình ảnh trâu và lợn trong phép ví ngăn điều sai của chú giải cổ, không chuyển thành hướng dẫn xử lý động vật hay trừng phạt người."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-26-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào cuối là lúc sự ngăn đã tới chỗ cùng và đường mở ra. Tài đức được dùng rộng là kết quả của việc chuyển khỏi thế ngăn trong cách đọc này.",
+          "citationIds": ["citation-nhl-q26-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-26-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho sự ngăn tới cực thì đổi sang thông, hào trên cùng hào ba hợp chí tiến. Lời đường trời rộng mở thuộc giai đoạn chuyển của Đại Súc, không phải mọi sự ngăn đều tốt.",
+          "citationIds": ["citation-pbc-q26-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-26-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc hào cuối theo sự chứa tới cực rồi đổi mà thông. Ông dẫn Hồ tiên sinh cho chữ hà trong lời hào là thêm lầm; giữ cách bàn chữ ấy theo tác giả.",
+          "citationIds": ["citation-ntt-q26-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-26-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giữ chữ hà như tiếng cảm thán trước sự thông đạt. Sự chứa đã tới cực và không còn vướng là nghĩa hanh, khác cách Trình Di dẫn ý bỏ chữ hà.",
+          "citationIds": ["citation-ntt-q26-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-dai-suc-small-name",
+      "status": "resolved",
+      "description": "NTT PDF 457 phần Trình Di nói Tiểu Súc là sự chứa lớn trong lời hào cuối Đại Súc.",
+      "citationIds": [
+        "citation-ntt-q26-line-6-ntt",
+        "citation-nhl-q26-line-6-nhl",
+        "citation-pbc-q26-line-6-pbc"
+      ],
+      "resolution": "Ảnh PDF 457 xác nhận chữ Tiểu. Tiêu đề, diễn giải cả đoạn và hai sách khác đang bàn Đại Súc; tóm tắt giữ Đại Súc và không đổi danh tính Tiểu Súc."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q26-overview-nhl",
+      "citation-pbc-q26-overview-pbc",
+      "citation-ntt-q26-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-q26-overview-chu-hy",
+      "citation-nhl-q26-line-1-nhl",
+      "citation-pbc-q26-line-1-pbc",
+      "citation-ntt-q26-line-1-ntt",
+      "citation-nhl-q26-line-2-nhl",
+      "citation-pbc-q26-line-2-pbc",
+      "citation-ntt-q26-line-2-ntt",
+      "citation-nhl-q26-line-3-nhl",
+      "citation-pbc-q26-line-3-pbc",
+      "citation-ntt-q26-line-3-ntt",
+      "citation-nhl-q26-line-4-nhl",
+      "citation-pbc-q26-line-4-pbc",
+      "citation-ntt-q26-line-4-ntt",
+      "citation-nhl-q26-line-5-nhl",
+      "citation-pbc-q26-line-5-pbc",
+      "citation-ntt-q26-line-5-ntt",
+      "citation-nhl-q26-line-6-nhl",
+      "citation-pbc-q26-line-6-pbc",
+      "citation-ntt-q26-line-6-ntt",
+      "citation-ntt-q26-line-6-chu-hy"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Các cách đọc được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo. Tên Sơn Thiên sửa tên Thiên Sơn đảo trong dữ liệu cũ, giữ ID và cấu trúc Cấn trên Càn. Hợp chí giữa hai hào dương ba và sáu không được đổi thành chính ứng trái tính."
+  }
+}

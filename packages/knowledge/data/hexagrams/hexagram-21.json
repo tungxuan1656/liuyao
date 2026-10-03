@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-21",
+  "type": "hexagram",
+  "title": "Hỏa Lôi Phệ Hạp",
+  "aliases": ["Phệ Hạp"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-21-structure",
+      "kind": "structural-fact",
+      "text": "Hỏa Lôi Phệ Hạp có ngoại quái Ly và nội quái Chấn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q21-overview-nhl",
+        "citation-pbc-q21-overview-pbc",
+        "citation-ntt-q21-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-21-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đọc Phệ Hạp theo việc bỏ sự ngăn cách để tạo sự hợp. Trong bối cảnh hình ngục cổ, người xét việc phải có uy và sáng suốt, đồng thời biết mềm và thương người để tránh tàn khốc.",
+      "citationIds": ["citation-nhl-q21-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-21-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu lấy hình ảnh cắn vật cản trong miệng để giảng việc trừ ngăn cách giữa trên và dưới. Ông yêu cầu người xử việc kết hợp sức, sự hiểu rõ và mức mềm cứng thích hợp.",
+      "citationIds": ["citation-pbc-q21-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-21-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt trọng tâm ở việc xét ngục để biết thật giả trước khi ngăn ngừa và xử phạt. Sáng và uy cần đi với sự vừa phải, tránh cả nghiêm bạo lẫn quá khoan trong bối cảnh lời giảng cổ.",
+      "citationIds": ["citation-ntt-q21-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-thunder", "trigram-fire"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yin", "yang", "yin", "yang"],
+    "kingWenNumber": 21,
+    "upperTrigramId": "trigram-fire",
+    "lowerTrigramId": "trigram-thunder",
+    "claimIds": ["hexagram-21-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-21-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào đầu ở người chịu hình khi lỗi còn nhỏ, khác bốn hào giữa là người xử việc. Hình ảnh răn sớm nói về ngăn điều sai tích thành lỗi lớn trong hệ thống hình phạt cổ.",
+          "citationIds": ["citation-nhl-q21-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào đầu theo việc biết răn trước khi lỗi nhỏ thành lớn. Lời không lỗi trong cách giảng này chỉ kết quả tránh lỗi tiếp, không xóa hoàn cảnh đã có lỗi.",
+          "citationIds": ["citation-pbc-q21-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào đầu ở người không có ngôi, chịu răn khi mới có lỗi nhỏ. Biết sợ và không tiếp tục đi vào điều sai là điều kiện của lời không lỗi.",
+          "citationIds": ["citation-ntt-q21-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-21-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào hai trung chính nên có thể khiến người có lỗi chịu phục. Ở gần hào đầu cương mạnh làm việc khó hơn, là bối cảnh ông giải hình ảnh cắn thịt mềm mà vẫn gây đau.",
+          "citationIds": ["citation-nhl-q21-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai có đức trung chính nhưng gặp người cương cường ở hào đầu. Hình ảnh thịt mềm phân biệt việc dễ thu phục với sức chống lại vẫn phải xét trong lời hào.",
+          "citationIds": ["citation-pbc-q21-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc hào hai theo người xử việc có trung chính nên dễ được phục. Cưỡi hào đầu cương mạnh khiến mức xử không hoàn toàn nhẹ; lời giảng giữ trong bối cảnh hình ngục cổ.",
+          "citationIds": ["citation-ntt-q21-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-21-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào ba không trung chính nên xử việc khó được người phục, còn gặp oán như hình ảnh ngộ độc. Có chút hối vì cách xử chưa tốt, nhưng việc bỏ ngăn cách vẫn là nghĩa vụ trong cách giảng của ông.",
+          "citationIds": ["citation-nhl-q21-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt khó khăn của hào ba ở tài và vị chưa phù hợp nên người khác không phục. Hình ảnh cắn thịt cứng gặp độc nói sự chống lại ấy, không phải dự đoán ngộ độc thực phẩm.",
+          "citationIds": ["citation-pbc-q21-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào ba tự xử chưa đáng mà xử người nên dễ gặp oán và khó khăn. Không lỗi được đặt ở nghĩa cần trừ ngăn cách của quẻ, khác với khẳng định mọi cách xử của hào ba đều đúng.",
+          "citationIds": ["citation-ntt-q21-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-21-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào bốn có tài sáng và cương trực nhưng cần biết việc khó, giữ đường chính bền. Được lời tốt khi có cả hai điều kiện, không chỉ vì cương quyết.",
+          "citationIds": ["citation-nhl-q21-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu lấy mũi tên làm hình ảnh cương trực của người có trách nhiệm ở hào bốn. Tài sáng và mạnh vẫn phải đi cùng sự dè dặt trước khó khăn và giữ đúng bền lâu.",
+          "citationIds": ["citation-pbc-q21-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc vàng và tên theo tính cứng, thẳng của người gánh việc gần ngôi vua. Quá cứng dễ quả quyết sai; biết khó và chính bền mới phù hợp lời tốt.",
+          "citationIds": ["citation-ntt-q21-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải vàng và tên theo lệ nộp vật trước khi xét kiện được ông dẫn từ Chu Lễ. Cách đọc nghi thức này giữ riêng với nghĩa cứng và thẳng của Trình Di; biết khó, chính bền vẫn là điều kiện.",
+          "citationIds": ["citation-ntt-q21-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-21-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hào năm theo người mềm ở giữa ngôi cao, cần giữ đúng và thường lo sợ khi xử việc. Vàng gợi giá trị của vị và đức trung, không thành lời báo được tiền.",
+          "citationIds": ["citation-nhl-q21-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào năm nhu trung được hào bốn có tài giúp, nên có thể xử việc khó. Ngôi cao càng phải giữ chính và dè dặt; lời không lỗi phụ thuộc cách tự giữ ấy.",
+          "citationIds": ["citation-pbc-q21-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào năm dùng vị cao và hào bốn giúp để xử việc, dù bản thân là chất mềm. Có đức trung vẫn cần chính bền và nhớ nguy mới tránh lỗi.",
+          "citationIds": ["citation-ntt-q21-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cũng đọc kim ở hào năm theo vật nộp khi xét kiện, còn màu vàng biểu thị sự trung. Người mềm ở ngôi tôn phải chính bền và lo sợ mới hợp lời không lỗi.",
+          "citationIds": ["citation-ntt-q21-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-21-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào cuối ở người đã để lỗi tích tới mức lớn mà không biết răn. Hình ảnh hình phạt nặng cảnh báo hậu quả của việc tiếp tục điều sai trong bối cảnh cổ.",
+          "citationIds": ["citation-nhl-q21-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào cuối theo người không nghe lời đúng, để điều ác chồng chất nên khó gỡ. Hình ảnh tai và gông thuộc lời răn của hệ thống hình ngục cổ.",
+          "citationIds": ["citation-pbc-q21-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-21-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc hào cuối theo sự không chịu nghe và biết sớm, để tội lỗi tích tới cực điểm. Hình ảnh chịu hình đối chiếu với lời răn lúc mới sai ở hào đầu.",
+          "citationIds": ["citation-ntt-q21-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ vai người và hình ảnh xử phạt trong bối cảnh hình ngục cổ của lời giảng; không chuyển thành chỉ dẫn trừng phạt hiện đại."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-pbc-phe-hap-fifth-polarity",
+      "status": "resolved",
+      "description": "PBC PDF 235 trong lời giảng gọi hào năm là Cửu Ngũ, khác tiêu đề Lục Ngũ ở PDF 234.",
+      "citationIds": [
+        "citation-pbc-q21-line-5-pbc",
+        "citation-nhl-q21-line-5-nhl",
+        "citation-ntt-q21-line-5-ntt"
+      ],
+      "resolution": "Ảnh PDF 235 xác nhận chữ Cửu. Tiêu đề, hình quẻ và hai sách khác đều cho hào năm âm; giữ Lục ngũ, không đổi cấu trúc quẻ."
+    },
+    {
+      "id": "discrepancy-ntt-phe-hap-trigram-order",
+      "status": "resolved",
+      "description": "NTT PDF 383 phần Chu Hy có câu trên động dưới sáng, khác câu dưới sấm trên chớp ngay sau.",
+      "citationIds": [
+        "citation-ntt-q21-overview-order-chu-hy",
+        "citation-ntt-q21-overview-ntt",
+        "citation-nhl-q21-overview-nhl",
+        "citation-pbc-q21-overview-pbc"
+      ],
+      "resolution": "Ảnh PDF 383 xác nhận thứ tự bị đảo ở câu đầu. Hình Phệ Hạp và các đoạn cấu trúc đều cho nội Chấn động, ngoại Ly sáng; giữ thứ tự này."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q21-overview-nhl",
+      "citation-pbc-q21-overview-pbc",
+      "citation-ntt-q21-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q21-line-1-nhl",
+      "citation-pbc-q21-line-1-pbc",
+      "citation-ntt-q21-line-1-ntt",
+      "citation-nhl-q21-line-2-nhl",
+      "citation-pbc-q21-line-2-pbc",
+      "citation-ntt-q21-line-2-ntt",
+      "citation-nhl-q21-line-3-nhl",
+      "citation-pbc-q21-line-3-pbc",
+      "citation-ntt-q21-line-3-ntt",
+      "citation-nhl-q21-line-4-nhl",
+      "citation-pbc-q21-line-4-pbc",
+      "citation-ntt-q21-line-4-ntt",
+      "citation-ntt-q21-line-4-chu-hy",
+      "citation-nhl-q21-line-5-nhl",
+      "citation-pbc-q21-line-5-pbc",
+      "citation-ntt-q21-line-5-ntt",
+      "citation-ntt-q21-line-5-chu-hy",
+      "citation-nhl-q21-line-6-nhl",
+      "citation-pbc-q21-line-6-pbc",
+      "citation-ntt-q21-line-6-ntt",
+      "citation-ntt-q21-overview-order-chu-hy"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Giữ riêng cách đọc tác giả và bối cảnh cổ. Nhãn trang NHL được kiểm tra trên PDF; chưa có xác nhận chuyên gia độc lập và không chứng nhận toàn bộ sách hay giả thuyết lịch sử. Không dùng chữ ứng trong lời hào hai để suy quan hệ chính ứng hai–năm, vì hai hào cùng âm và NTT hào năm nói không có ứng."
+  }
+}

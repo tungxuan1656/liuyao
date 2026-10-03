@@ -1,7 +1,8 @@
 # Book-backed knowledge content
 
 This document owns the user-facing content taxonomy, coverage, and batch acceptance for the supplied-book corpus.
-The JSON pilot exists. Full commentary, advanced content, and expanded browsing remain intended.
+Reviewed JSON batches exist, including selected advanced BPCT topics.
+Full commentary, complete advanced coverage, and expanded browsing remain intended.
 
 ## Content flow
 
@@ -57,7 +58,7 @@ Those behaviors require their own specification and selected implementation work
 | Book and chapter JSON, with a topic index                       | Preserves the supplied books' organization.                             | Repeats concepts and complicates comparison between authors. |
 | One complete catalog JSON                                       | Simple initial import.                                                  | Large edits, review conflicts, and weak batch isolation.     |
 
-The implemented pilot uses topic records and per-hexagram JSON.
+The implemented corpus uses topic records and per-hexagram JSON.
 The [knowledge model](../design-docs/knowledge-model.md#json-corpus) defines its storage contract.
 
 ## Batch sequence
@@ -76,7 +77,7 @@ The pilot exercises pure and mixed hexagrams, moving-line examples, and special 
 Every batch ends with a reviewed coverage report and one concrete next batch.
 The user selected concurrent progress on both tracks, with small cited batches.
 The user approved the JSON storage contract and this delivery sequence.
-The [generated coverage report](../../packages/knowledge/reports/coverage.json) identifies the released pilot and remaining gaps.
+The [generated coverage report](../../packages/knowledge/reports/coverage.json) identifies released batches, remaining gaps, and the next group.
 
 ## Batch acceptance
 
@@ -103,6 +104,7 @@ Report missing entries, missing citations, disputed claims, and completed collec
 Map each relevant book section to corpus records or an explicit exclusion reason.
 Do not report a collection complete merely because JSON files exist.
 
-Track selected implementation work in repository feature records and a phased external plan.
+Track selected work in feature records when persistence is needed.
+Keep bounded content plans inline; use external plans only when the [repository criteria](../../AGENTS.md#assess-the-task) apply.
 Record the last reviewed batch and the next exact group so work can resume across sessions.
 The expected schema, package migration, content authoring, and browser integration justify separate delivery phases.

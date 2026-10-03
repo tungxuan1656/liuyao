@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-11",
+  "type": "hexagram",
+  "title": "Địa Thiên Thái",
+  "aliases": ["Thái"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-11-structure",
+      "kind": "structural-fact",
+      "text": "Địa Thiên Thái có ngoại quái Khôn và nội quái Càn. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q11-overview-nhl",
+        "citation-pbc-q11-overview-pbc",
+        "citation-ntt-q11-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-11-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giải Thái là sự thông thuận khi các phía gặp và hỗ trợ nhau. Càn ở dưới, Khôn ở trên diễn tả sự giao của khí, không phải đảo vị trí hình thể trời đất; sự thuận lợi vẫn cần cách giữ gìn.",
+      "citationIds": ["citation-nhl-q11-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-11-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu đọc Thái theo sự thông nhau của trên dưới và sự lớn lên của người giữ đạo. Ông phân biệt khí với hình thể trời đất và nhấn mạnh sửa chỗ quá, bù chỗ thiếu để đời sống được cân bằng.",
+      "citationIds": ["citation-pbc-q11-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-11-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt Thái trong sự thông nhau của hai khí và lòng thành giữa người trên với người dưới. Thời thuận vẫn có mức lớn nhỏ, lên xuống; người gánh việc phải dùng điều kiện trời đất để giúp dân.",
+      "citationIds": ["citation-ntt-q11-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-heaven", "trigram-earth"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q11-overview-nhl",
+      "citation-pbc-q11-overview-pbc",
+      "citation-ntt-q11-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q11-line-1-nhl",
+      "citation-pbc-q11-line-1-pbc",
+      "citation-ntt-q11-line-1-ntt",
+      "citation-nhl-q11-line-2-nhl",
+      "citation-pbc-q11-line-2-pbc",
+      "citation-ntt-q11-line-2-ntt",
+      "citation-nhl-q11-line-3-nhl",
+      "citation-pbc-q11-line-3-pbc",
+      "citation-ntt-q11-line-3-ntt",
+      "citation-nhl-q11-line-4-nhl",
+      "citation-pbc-q11-line-4-pbc",
+      "citation-ntt-q11-line-4-ntt",
+      "citation-ntt-q11-line-4-chu-hy",
+      "citation-nhl-q11-line-5-nhl",
+      "citation-pbc-q11-line-5-pbc",
+      "citation-ntt-q11-line-5-ntt",
+      "citation-ntt-q11-line-5-chu-hy",
+      "citation-nhl-q11-line-6-nhl",
+      "citation-pbc-q11-line-6-pbc",
+      "citation-ntt-q11-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép. Các cách đọc Trình Di, Chu Hy và hai tác giả Việt Nam được giữ riêng khi có khác biệt. Bộ dữ liệu chọn các diễn giải, không chứng nhận toàn bộ chú giải hoặc giả thuyết lịch sử; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yang", "yin", "yin", "yin"],
+    "kingWenNumber": 11,
+    "upperTrigramId": "trigram-earth",
+    "lowerTrigramId": "trigram-heaven",
+    "claimIds": ["hexagram-11-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-11-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc việc nhổ cỏ kéo theo cả rễ như các người có tài ở dưới cùng tiến. Người cùng chí giúp nhau thì có thể nhận việc trong thời thuận.",
+          "citationIds": ["citation-nhl-q11-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-11-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải ba hào dương cùng chí, dắt nhau tiến để gánh việc bên ngoài. Mục đích chung vượt khỏi lợi ích riêng của một người hoặc một nhà.",
+          "citationIds": ["citation-pbc-q11-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-11-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem người cương ở vị thấp cùng người hiền khác tiến lên khi gặp thời Thái. Dắt nhau và cùng làm điều thiện giúp thành việc, thay vì một người tự đứng riêng.",
+          "citationIds": ["citation-ntt-q11-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-11-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê nêu bốn yêu cầu cho người gánh việc Thái: bao dung, cương quyết, không bỏ sót người hay việc xa, và tránh bè phái. Mỗi yêu cầu đều cần giữ mức vừa phải để không biến thành tệ khác.",
+          "citationIds": ["citation-nhl-q11-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-11-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào hai được hào năm tin dùng nhưng cần đủ độ lượng, khí phách, kế hoạch và công tâm. Bốn đức ấy phải hợp đạo trung, không dung túng, liều lĩnh, vụn vặt hoặc tự cô lập.",
+          "citationIds": ["citation-pbc-q11-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-11-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt việc giữ Thái ở người được tin giao trách nhiệm. Bao dung, quyết đoán sửa tệ, lo cả việc xa và bỏ thiên tư bè đảng là bốn mặt cần có để hợp đường trung.",
+          "citationIds": ["citation-ntt-q11-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-11-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê lấy đường bằng thành dốc và đi rồi trở lại để răn rằng thịnh không kéo dài mãi. Giữ chính trong cảnh khó giúp tránh lỗi, dù lúc ấy còn thuận.",
+          "citationIds": ["citation-nhl-q11-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-11-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt hào ba ở chỗ Thái còn thịnh nhưng sắp qua giữa. Cần nghĩ tới gian nan và giữ chính từ khi còn thuận để có sức chống sự suy, thay vì chờ biến cố mới sửa.",
+          "citationIds": ["citation-pbc-q11-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-11-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào ba như lúc Thái đương thịnh mà đã cần biết lẽ đổi thay. Lo nghĩ và giữ chính bền trong hành động là cách kéo dài điều thuận, tránh coi hiện trạng là mãi mãi.",
+          "citationIds": ["citation-ntt-q11-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-11-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc ba hào âm cùng quay vào trong khi thời Thái đã quá nửa. Không có đức đầy đủ nhưng cùng ý hại chính đạo khiến họ theo nhau không cần hẹn.",
+          "citationIds": ["citation-nhl-q11-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-11-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào bốn và hai hào âm trên cùng muốn quay vào khi Thái đã quá nửa. Lòng cùng muốn lấn người giữ đạo làm họ tự kết hợp, không đợi lời rủ hay lợi ích ban thêm.",
+          "citationIds": ["citation-pbc-q11-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-11-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc ba hào âm cùng có chí trở xuống nơi của mình. Chữ không giàu mà theo nhau nói về chí giống nhau; ông dùng sự trở lại ấy để giải thời Thái đã qua giữa và sắp biến.",
+          "citationIds": ["citation-ntt-q11-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-11-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc ba hào âm cùng trở xuống như nhóm tiểu nhân hợp nhau làm hại chính đạo. Ông dùng lời chiêm để cảnh báo người quân tử, nhấn mạnh mặt cảnh giới hơn lời giải chí cùng trở xuống của Trình Di.",
+          "citationIds": ["citation-ntt-q11-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-11-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê dùng hình ảnh em gái Đế Ất lấy chồng thấp hơn để giải hào năm ở ngôi cao biết hạ mình theo người có tài ở hào hai. Khiêm nhường và tin người xứng đáng giúp thành việc Thái.",
+          "citationIds": ["citation-nhl-q11-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ phép ví hôn nhân trong bối cảnh lịch sử; giả thuyết về Đế Ất không được coi là sự kiện đã xác minh."
+          ]
+        },
+        {
+          "id": "hexagram-11-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem chuyện em gái nhà vua hạ giá là hình ảnh người ở ngôi cao chịu theo người hiền ở dưới. Ông dặn không câu nệ sự việc lịch sử; hai phía hợp chí và tin nhau mới được phúc.",
+          "citationIds": ["citation-pbc-q11-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ phép ví hôn nhân trong bối cảnh lịch sử; giả thuyết về Đế Ất không được coi là sự kiện đã xác minh."
+          ]
+        },
+        {
+          "id": "hexagram-11-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào năm mềm ở ngôi cao tin dùng người hiền cương minh ở hào hai. Ông bàn lễ gả con gái nhà vua xuống dưới nhưng chưa xác định Đế Ất là vua nào; giữ riêng sự chưa rõ lịch sử ấy.",
+          "citationIds": ["citation-ntt-q11-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ phép ví hôn nhân trong bối cảnh lịch sử; giả thuyết về Đế Ất không được coi là sự kiện đã xác minh."
+          ]
+        },
+        {
+          "id": "hexagram-11-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho Đế Ất có thể từng bói được hào này khi gả em gái, khác lời Phan Bội Châu dặn không câu nệ chuyện thực. Đây là giả thuyết chú giải của Chu Hy, không phải sự kiện lịch sử đã được bộ dữ liệu xác nhận.",
+          "citationIds": ["citation-ntt-q11-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ phép ví hôn nhân trong bối cảnh lịch sử; giả thuyết về Đế Ất không được coi là sự kiện đã xác minh."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-11-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc thành đổ về hào như thời thuận đã mất nền tảng. Không nên dùng quân; mệnh lệnh chỉ còn hiệu lực gần mình, và dù hành động chính vẫn khó tránh thất bại.",
+          "citationIds": ["citation-nhl-q11-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-11-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải thành sụp như Thái tới cuối chuyển sang Bĩ. Lòng người đã lìa thì khó huy động quần chúng; lời hào nhắc phải dự phòng trước khi đã loạn.",
+          "citationIds": ["citation-pbc-q11-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-11-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt thành sụt về rãnh ở lúc Thái đã hết, trên dưới không còn thông nhau. Dùng quân trong thế ấy thêm loạn; mệnh lệnh gần mình dù đúng vẫn khó cứu cuộc suy.",
+          "citationIds": ["citation-ntt-q11-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-thai-response",
+      "status": "resolved",
+      "description": "NTT PDF 264 ghi Chín Hai được Sáu Hai ở trên ứng với trong đoạn Chu Hy.",
+      "citationIds": ["citation-ntt-q11-line-2-ntt", "citation-ntt-q11-line-5-ntt"],
+      "resolution": "Trình Di trên PDF 263 và cả hai lớp ở PDF 269 xác định cặp Chín Hai–Sáu Năm. Ảnh cấu trúc cũng chỉ có hào năm âm ở giữa quẻ trên; không tạo hai hào ở vị hai."
+    }
+  ]
+}

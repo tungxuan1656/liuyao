@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "article-combination-control-context",
+  "type": "article",
+  "title": "Hợp có khắc: sức hào, chiều biến và ngoại lệ",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-combination-control-context-two-directions",
+      "kind": "author-interpretation",
+      "text": "Tí Thủy hóa Sửu Thổ và Tuất Thổ hóa Mão Mộc vừa hợp chi vừa gặp hành biến khắc lại hành ban đầu. Giữ hai chiều biến đúng ví dụ của mục 14; bảng xung hợp ở chương 1 xác nhận Tí–Sửu và Mão–Tuất là các cặp hợp.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-control",
+        "citation-bpct-ch1-combining-and-opposing-branches",
+        "citation-bpct-p8-technical",
+        "citation-bpct-p9-technical"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-combination-control-context-supported-case",
+      "kind": "author-interpretation",
+      "text": "Với các ví dụ trên, mục 14 luận theo hợp khi hào vượng tướng được Nhật Nguyệt sinh phò, hoặc trong quẻ có động hào sinh. Đoạn gắn cách luận với hoàn cảnh trợ giúp, không chỉ với cặp chi.",
+      "citationIds": ["citation-bpct-ch5-combination-control"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ nhóm vượng tướng và sinh phò, cùng nhánh động hào sinh được nguồn nối bằng hoặc; chưa giải các tổ hợp sinh khắc trái chiều thành một luật tổng quát."
+      ]
+    },
+    {
+      "id": "article-combination-control-context-controlled-case",
+      "kind": "author-interpretation",
+      "text": "Mục 14 luận theo khắc khi hào hưu tù mất thời lệnh, bị Nhật Nguyệt khắc, hoặc trong quẻ có động hào khắc. Cách xét này cần đặt cạnh điều kiện được sinh phò ở đoạn trước.",
+      "citationIds": ["citation-bpct-ch5-combination-control"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ điều kiện và nhánh hoặc của đoạn; không giảm thành quy tắc mọi hợp đều cứu được hào."
+      ]
+    },
+    {
+      "id": "article-combination-control-context-three-seven",
+      "kind": "author-interpretation",
+      "text": "Lời ba phần hợp, bảy phần khắc trong mục 14 nhấn mạnh mặt khắc của các ví dụ trước khi xét điều kiện. Đoạn không nêu mẫu thống kê hay cách tính xác suất cho từng việc.",
+      "citationIds": ["citation-bpct-ch5-combination-control"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": ["Không chuyển phần ba/bảy thành phần trăm dự báo hoặc điểm số."]
+    },
+    {
+      "id": "article-combination-control-context-shen-si",
+      "kind": "author-interpretation",
+      "text": "Nguồn giữ Thân hóa Tị là ngoại lệ hóa hợp và hóa Trường Sinh ngay cả khi không có trợ sinh từ Nhật Nguyệt và động hào. Mục 8 xác định Kim Trường Sinh ở Tị, dù theo sinh khắc thông thường Hỏa khắc Kim.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-control",
+        "citation-bpct-ch5-metal-growth-at-si",
+        "citation-bpct-p9-technical"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Ngoại lệ theo lời tác giả và đúng chiều hào biến; chưa xây bộ phân loại tự động."
+      ]
+    },
+    {
+      "id": "article-combination-control-context-yin-limit",
+      "kind": "author-interpretation",
+      "text": "Sau ngoại lệ Thân hóa Tị, mục 14 nêu ngày tháng Dần làm đủ Dần–Tị–Thân và Dần xung Thân, nên không thể luận cát. Câu 31 chương 6 còn xét đủ chi và động tĩnh khi bàn Hình, Hợp.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-control",
+        "citation-bpct-ch1-combining-and-opposing-branches",
+        "citation-bpct-ch6-complete-punishment-branches"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ nguyên phạm vi ngày tháng Dần của câu nguồn; không dựng bảng Tam hình toàn bộ hoặc kết luận từ hai chi riêng lẻ."
+      ]
+    },
+    {
+      "id": "article-combination-control-context-translator-objection",
+      "kind": "author-interpretation",
+      "text": "Trong Ghi chú của câu hỏi 14, Vĩnh Cao phản biện các ví dụ Tam hình và cho rằng Tam hình, Lục hại không nên dùng để giải đoán. Ý kiến này giữ riêng với phần chính vẫn dùng Tam hình, không tạo một kết luận đồng thuận giữa hai lớp văn bản.",
+      "citationIds": ["citation-bpct-part2-punishment-critical-note"],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      },
+      "conditions": [
+        "Ghi chú là quan điểm người dịch; không biến lời kể ứng nghiệm hoặc lời phản biện thành bằng chứng thực nghiệm."
+      ]
+    }
+  ],
+  "relatedIds": [
+    "term-combination-control",
+    "term-prosperous-supported",
+    "term-resting-confined",
+    "term-growth-stage",
+    "rule-branch-element",
+    "rule-five-element-cycles"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-combination-control",
+      "citation-bpct-ch1-combining-and-opposing-branches",
+      "citation-bpct-p8-technical",
+      "citation-bpct-p9-technical",
+      "citation-bpct-ch5-metal-growth-at-si",
+      "citation-bpct-ch6-complete-punishment-branches",
+      "citation-bpct-part2-punishment-critical-note"
+    ],
+    "note": "Đã đọc và xem ảnh mục 13–14 PDF 72; đối chiếu địa chi xung hợp PDF 10, Kim Trường Sinh PDF 70, câu 26–27 và chú thích 5 PDF 85, câu 31 PDF 87. Đọc đầy đủ câu hỏi 14 cùng Ghi chú PDF 401–403, giữ phản biện của Vĩnh Cao riêng. Nhãn trang in đã kiểm tra; chưa xác nhận chiêm nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

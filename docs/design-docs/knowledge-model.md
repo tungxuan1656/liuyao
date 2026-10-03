@@ -60,7 +60,7 @@ This implementation does not introduce a database.
 
 ## JSON corpus
 
-**Status: Implemented for the reviewed pilot.** JSON Schema validates each collection before publication.
+**Status: Implemented for released corpus batches.** JSON Schema validates each collection before publication.
 Existing lookup interfaces use a compatibility adapter.
 The collection layout follows [Knowledge content](../product-specs/knowledge-content.md).
 
@@ -77,8 +77,9 @@ packages/knowledge/data/
   lessons/                  learning articles linked to existing claims
 ```
 
-The pilot populates trigrams, hexagrams, terms, casting, and foundational Liu Yao records.
-Learning articles and advanced topics remain incomplete.
+Released batches populate trigrams, hexagrams, terms, casting, foundational Liu Yao, and selected advanced BPCT records.
+Full line commentary, learning articles, and advanced coverage remain incomplete.
+The [coverage report](../../packages/knowledge/reports/coverage.json) records current inventory and gaps.
 JSON replaces equivalent authored TypeScript content.
 Generated runtime imports follow the manifest.
 Calculation-required data follows the ownership boundary above.
@@ -188,8 +189,9 @@ Knowledge records can reference core-owned trigram, hexagram, palace, or ruleset
 
 ## Required fields
 
-The lists below describe the V1 authoring contract.
-The current schema defines runtime fields. [Knowledge quality](../product-specs/knowledge-quality.md) defines the stronger intended evidence gate.
+The lists below describe the V1 compatibility shapes.
+The authored JSON follows the record and citation contracts above.
+[Knowledge quality](../product-specs/knowledge-quality.md) owns evidence acceptance.
 
 Every knowledge entity needs:
 
@@ -213,7 +215,7 @@ Every source needs:
 - edition or publication metadata when known;
 - rights status when known.
 
-Identify a work and its edition separately when adding the supplied books.
+The JSON corpus identifies each supplied work and edition separately.
 An old original text does not establish rights for a modern translation or editorial additions.
 The current `SourceReference.location` string can record a chapter, section, PDF page, and printed page.
 
@@ -253,8 +255,9 @@ Package tests must reject:
 - broken internal references;
 - rule references to unknown sources.
 
-Supplied-book citation coverage and review states are intended checks, not current validator guarantees.
-Use [Knowledge quality](../product-specs/knowledge-quality.md) for their acceptance requirements.
+Corpus validation checks claim citations and requires reviewed records for release.
+It cannot verify that a paraphrase preserves source meaning.
+Use [Knowledge quality](../product-specs/knowledge-quality.md) for source-review acceptance.
 
 ## Licensing
 

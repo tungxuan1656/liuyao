@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "term-month-break",
+  "type": "term",
+  "title": "Nguyệt phá",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-month-break-definition",
+      "kind": "structural-fact",
+      "text": "Trong lệ BPCT, Nguyệt phá là chi xung với chi tháng đang xét: Dần–Thân, Mão–Dậu, Thìn–Tuất, Tị–Hợi, Ngọ–Tí và Mùi–Sửu. Bảng nêu cả hai chiều của mỗi cặp.",
+      "citationIds": ["citation-bpct-ch2-month-break-definition"],
+      "conditions": [
+        "Chỉ mô tả quan hệ trong bảng; chưa tính chi tháng từ ngày dương lịch hoặc ngày đầu tháng âm lịch."
+      ]
+    }
+  ],
+  "relatedIds": ["term-earthly-branch", "term-true-month-break", "article-month-break-conditions"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch2-month-break-definition"],
+    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

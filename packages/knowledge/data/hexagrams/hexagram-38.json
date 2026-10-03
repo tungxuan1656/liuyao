@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-38",
+  "type": "hexagram",
+  "title": "Hỏa Trạch Khuê",
+  "aliases": ["Khuê"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-38-structure",
+      "kind": "structural-fact",
+      "text": "Hỏa Trạch Khuê có ngoại quái Ly và nội quái Đoài. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q38-overview-nhl",
+        "citation-pbc-q38-overview-pbc",
+        "citation-ntt-q38-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-38-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đặt Khuê ở lúc người cùng chỗ mà chí hướng khác nhau, chỉ thuận cho việc nhỏ. Cần tìm chỗ chung khi chia lìa, nhưng ông cũng cho sự khác biệt có thể đúng nếu không theo điều sai của số đông.",
+      "citationIds": ["citation-nhl-q38-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-38-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu lấy hai hướng trái nhau của Ly và Đoài để giải sự chia lìa. Đức trung và quan hệ hào hai với hào năm còn cho phép làm việc nhỏ; khi người khác làm sai, giữ điều phải có thể đòi hỏi đứng khác họ.",
+      "citationIds": ["citation-pbc-q38-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-38-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di cho Khuê là sự lìa nhau của những người vốn có chỗ chung. Người chủ mềm, dù được hào hai giúp, chưa đủ sức hợp việc lớn; tìm chỗ đồng cần giữ nguyên lý đúng, không hòa theo số đông đang sai.",
+      "citationIds": ["citation-ntt-q38-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-lake", "trigram-fire"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yin", "yang", "yin", "yang"],
+    "kingWenNumber": 38,
+    "upperTrigramId": "trigram-fire",
+    "lowerTrigramId": "trigram-lake",
+    "claimIds": ["hexagram-38-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-38-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào đầu có người đồng chí ở hào bốn nên không cần đuổi theo điều đã mất một cách vội vã. Với người xấu, giữ giao tiếp để tránh chuốc oán khác với việc dùng hoặc tin họ.",
+          "citationIds": ["citation-nhl-q38-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-38-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào đầu và hào bốn cùng đức cương nên có thể gặp nhau sau lúc xa cách. Ông đọc gặp người xấu theo việc tránh gây thêm thù, không xem đó là chọn họ làm người tin dùng.",
+          "citationIds": ["citation-pbc-q38-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-38-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di phân biệt hào một và hào bốn cùng dương nên không có chính ứng, nhưng có thể tìm nhau vì cùng đức. Khi chia lìa, không gây oán với người xấu giúp tránh lỗi mà vẫn giữ khoảng cách với điều sai.",
+          "citationIds": ["citation-ntt-q38-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-38-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải gặp chủ trong ngõ theo hào hai tìm dịp quanh co để gặp hào năm vốn e ngại sự cương của mình. Không lỗi thuộc phép quyền biến trong lúc chống đối, không phải mọi cách lách đều được chấp nhận.",
+          "citationIds": ["citation-nhl-q38-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-38-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào hai cần tìm dịp gặp người chủ ở hào năm bằng đường linh hoạt trong lúc chia lìa. Cách tùy thời ấy còn phải giữ đạo, khác sự cố ý làm việc tà để đạt quan hệ.",
+          "citationIds": ["citation-pbc-q38-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-38-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem ngõ là cách tìm chỗ có thể gặp và thuyết phục người chủ hào năm. Sự linh hoạt cần lòng thành và ý giúp người hiểu điều đúng; bẻ cong đạo hoặc hạ mình trái nghĩa để cầu hợp sẽ gây lỗi.",
+          "citationIds": ["citation-ntt-q38-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-38-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào ba âm ở vị dương, muốn đến với hào sáu nhưng bị hào hai kéo lại và hào bốn ngăn trước. Các hình ảnh xe, bò và tổn thương nói sự trở cách; quan hệ đúng ba–sáu cuối cùng có thể hợp.",
+          "citationIds": ["citation-nhl-q38-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Xe, bò và hình phạt là hình tượng của lời hào và chú giải cổ; không dự báo thương tích hoặc chỉ dẫn gây hại."
+          ]
+        },
+        {
+          "id": "hexagram-38-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào ba bị hai hào dương lân cận làm khó trên đường tới hào sáu. Hình ảnh hình phạt diễn tả sự nghi và cản ban đầu; giữ mối hợp phải lẽ mới có thể đi đến kết quả sau.",
+          "citationIds": ["citation-pbc-q38-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Xe, bò và hình phạt là hình tượng của lời hào và chú giải cổ; không dự báo thương tích hoặc chỉ dẫn gây hại."
+          ]
+        },
+        {
+          "id": "hexagram-38-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào ba âm ở ngôi không đúng, lại bị hai hào dương hai và bốn ngăn trong quan hệ với hào sáu. Đầu khó nhưng cuối có thể hợp nếu mối kết hợp theo chính đạo, khác việc cầu hợp sai lệch.",
+          "citationIds": ["citation-ntt-q38-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Xe, bò và hình phạt là hình tượng của lời hào và chú giải cổ; không dự báo thương tích hoặc chỉ dẫn gây hại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-38-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đặt hào bốn giữa hai hào âm nên cô độc, nhưng có thể gặp hào đầu cùng đức cương. Kết hợp bằng lòng thành thì dù gặp nguy vẫn được lời không lỗi trong cách đọc này.",
+          "citationIds": ["citation-nhl-q38-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-38-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào bốn ở vị không đúng và giữa hai người khác chí, cần tìm người cùng đức là hào đầu. Thành thực kết hợp với hào đầu là điều kiện không lỗi, dù hoàn cảnh còn nguy.",
+          "citationIds": ["citation-pbc-q38-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-38-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào bốn không có chính ứng nhưng có thể hợp hào đầu cùng dương trong lúc chia lìa. Hai bên có lòng thành và tin nhau thì dù ở chỗ nguy vẫn được lời không lỗi; hợp sức còn là cách thực hiện chí chung.",
+          "citationIds": ["citation-ntt-q38-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-38-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc cắn vào da theo việc hào hai gắn bó sâu với hào năm, giúp người chủ mềm vượt ngờ vực. Nhờ sự giúp ấy, đi tới với nhau có thể tránh lỗi trong lúc chia lìa.",
+          "citationIds": ["citation-nhl-q38-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-38-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu lấy việc cắn xuyên lớp da mềm làm hình ảnh sự giúp đỡ sâu của hào hai với hào năm. Người chủ biết gặp người cùng đạo thì sự ngăn cách có thể tan, không phải cứ giữ ngôi cao là hết hối.",
+          "citationIds": ["citation-pbc-q38-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-38-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào năm ở người chủ mềm, tài không đủ nhưng được hào hai dương cương giúp. Cắn vào da nói sự gắn bó sâu để người giúp đưa đường đúng vào người chủ; biết tin dùng người hiền mới có thể làm việc.",
+          "citationIds": ["citation-ntt-q38-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-38-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc cắn vào da theo việc kết hợp với hào hai dễ như cắn phần mềm. Nghĩa dễ hợp này giữ riêng với nhấn mạnh sự gắn bó vào sâu của Trình Di và hai tác giả Việt Nam.",
+          "citationIds": ["citation-ntt-q38-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-38-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hào cuối theo người nghi quá mức, nhìn quan hệ với hào ba thành xấu và tưởng có điều đáng sợ. Sau khi biết lầm, người ở hào sáu bỏ thái độ đối địch để cầu hợp; mưa gợi sự hòa sau ngờ vực.",
+          "citationIds": ["citation-nhl-q38-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Lợn, quỷ, cung và hôn nhân là hình tượng giải sự ngờ vực trong chú giải cổ; không xác nhận hiện tượng siêu nhiên, chẩn đoán tâm lý hoặc chỉ dẫn bạo lực."
+          ]
+        },
+        {
+          "id": "hexagram-38-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào cuối ở cực chia lìa nên nghi việc của hào ba, từ ngờ đến định hại rồi mới bỏ nghi. Ông đọc lời không phải giặc, cầu dâu gia theo người ở hào sáu tự tỏ ý muốn hợp sau khi sửa sự hiểu sai.",
+          "citationIds": ["citation-pbc-q38-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Lợn, quỷ, cung và hôn nhân là hình tượng giải sự ngờ vực trong chú giải cổ; không xác nhận hiện tượng siêu nhiên, chẩn đoán tâm lý hoặc chỉ dẫn bạo lực."
+          ]
+        },
+        {
+          "id": "hexagram-38-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào cuối ở người nhìn mối chính ứng với hào ba qua sự ngờ vực rồi dần hiểu rõ. Không phải giặc chỉ hào ba là người có thể kết hợp, không phải kẻ hại; biết bỏ nghi và gặp nhau thì sự hòa mới thành.",
+          "citationIds": ["citation-ntt-q38-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Lợn, quỷ, cung và hôn nhân là hình tượng giải sự ngờ vực trong chú giải cổ; không xác nhận hiện tượng siêu nhiên, chẩn đoán tâm lý hoặc chỉ dẫn bạo lực."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-nhl-khue-third-polarity",
+      "status": "resolved",
+      "description": "NHL PDF 252 giảng hào ba là dương ở vị âm, trái nhãn Lục tam, bản dịch ngay trên và hình quẻ.",
+      "citationIds": [
+        "citation-nhl-q38-line-3-nhl",
+        "citation-pbc-q38-line-3-pbc",
+        "citation-ntt-q38-line-3-ntt"
+      ],
+      "resolution": "Ảnh xác nhận câu giảng sai cả tính hào và tính vị. Giữ hào ba âm ở vị dương theo đầu hào, hình quẻ và hai sách khác; không thay quan hệ ba–sáu."
+    },
+    {
+      "id": "discrepancy-ntt-khue-third-neighbors",
+      "status": "resolved",
+      "description": "NTT PDF 603 Trình Di dưới Tượng gọi hào ba ở giữa hai hào âm, khác phần giải trước và hai hào hai, bốn dương.",
+      "citationIds": [
+        "citation-ntt-q38-line-3-ntt",
+        "citation-ntt-q38-line-2-ntt",
+        "citation-ntt-q38-line-4-ntt",
+        "citation-nhl-q38-line-3-nhl",
+        "citation-pbc-q38-line-3-pbc"
+      ],
+      "resolution": "Ảnh xác nhận chữ âm. Giữ hai hào dương lân cận theo phần giải ở PDF 602, đầu hào và cấu trúc cả ba sách; không đổi hai và bốn thành âm."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q38-overview-nhl",
+      "citation-pbc-q38-overview-pbc",
+      "citation-ntt-q38-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q38-line-1-nhl",
+      "citation-pbc-q38-line-1-pbc",
+      "citation-ntt-q38-line-1-ntt",
+      "citation-nhl-q38-line-2-nhl",
+      "citation-pbc-q38-line-2-pbc",
+      "citation-ntt-q38-line-2-ntt",
+      "citation-nhl-q38-line-3-nhl",
+      "citation-pbc-q38-line-3-pbc",
+      "citation-ntt-q38-line-3-ntt",
+      "citation-nhl-q38-line-4-nhl",
+      "citation-pbc-q38-line-4-pbc",
+      "citation-ntt-q38-line-4-ntt",
+      "citation-nhl-q38-line-5-nhl",
+      "citation-pbc-q38-line-5-pbc",
+      "citation-ntt-q38-line-5-ntt",
+      "citation-ntt-q38-line-5-chu-hy",
+      "citation-nhl-q38-line-6-nhl",
+      "citation-pbc-q38-line-6-pbc",
+      "citation-ntt-q38-line-6-ntt"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Diễn giải mới giữ các lớp tác giả riêng. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập hoặc xác nhận năng lực dự báo. Một và bốn cùng dương: sự đồng chí không được nhập thành chính ứng trái tính. Giữ riêng chủ thể của lời không phải giặc ở hào sáu."
+  }
+}

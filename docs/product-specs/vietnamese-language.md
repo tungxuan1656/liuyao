@@ -20,6 +20,8 @@ The supplied books use spelling variants such as Kiền/Càn, Li/Ly, Đoái/Đo�
 Keep the canonical display names below and retain useful variants as aliases during reviewed content changes.
 The [source catalog](../references/book-sources.md) identifies the editions used for domain review.
 Name normalization does not establish that an explanation is supported by a book.
+The supplied-book review corrected Đại Súc to Sơn Thiên: Cấn above Càn.
+See the [source audit](../references/book-sources.md) for passage evidence.
 
 ### Bát quái
 
@@ -47,7 +49,7 @@ Name normalization does not establish that an explanation is supported by a book
 | `hexagram-07` | Địa Thủy Sư          | `hexagram-23` | Sơn Địa Bác         | `hexagram-39` | Thủy Sơn Kiển       | `hexagram-55` | Lôi Hỏa Phong         |
 | `hexagram-08` | Thủy Địa Tỷ          | `hexagram-24` | Địa Lôi Phục        | `hexagram-40` | Lôi Thủy Giải       | `hexagram-56` | Hỏa Sơn Lữ            |
 | `hexagram-09` | Phong Thiên Tiểu Súc | `hexagram-25` | Thiên Lôi Vô Vọng   | `hexagram-41` | Sơn Trạch Tổn       | `hexagram-57` | Thuần Tốn             |
-| `hexagram-10` | Thiên Trạch Lý       | `hexagram-26` | Thiên Sơn Đại Súc   | `hexagram-42` | Phong Lôi Ích       | `hexagram-58` | Thuần Đoài            |
+| `hexagram-10` | Thiên Trạch Lý       | `hexagram-26` | Sơn Thiên Đại Súc   | `hexagram-42` | Phong Lôi Ích       | `hexagram-58` | Thuần Đoài            |
 | `hexagram-11` | Địa Thiên Thái       | `hexagram-27` | Sơn Lôi Di          | `hexagram-43` | Trạch Thiên Quải    | `hexagram-59` | Phong Thủy Hoán       |
 | `hexagram-12` | Thiên Địa Bĩ         | `hexagram-28` | Trạch Phong Đại Quá | `hexagram-44` | Thiên Phong Cấu     | `hexagram-60` | Thủy Trạch Tiết       |
 | `hexagram-13` | Thiên Hỏa Đồng Nhân  | `hexagram-29` | Thuần Khảm          | `hexagram-45` | Trạch Địa Tụy       | `hexagram-61` | Phong Trạch Trung Phu |

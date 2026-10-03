@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-40",
+  "type": "hexagram",
+  "title": "Lôi Thủy Giải",
+  "aliases": ["Giải"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-40-structure",
+      "kind": "structural-fact",
+      "text": "Lôi Thủy Giải có ngoại quái Chấn và nội quái Khảm. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q40-overview-nhl",
+        "citation-pbc-q40-overview-pbc",
+        "citation-ntt-q40-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-40-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê cho sau khi thoát nạn cần theo đường dễ và khôi phục đời sống thường. Nếu việc phải làm còn lại thì xử sớm; khi không còn việc, không gây thêm phiền và gánh nặng cho dân.",
+      "citationIds": ["citation-nhl-q40-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-40-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu đọc Giải theo lúc cần tháo sự khó và cho người nghỉ. Không còn điều phải giải thì trở lại nếp thường; còn việc cần thiết thì làm sớm, tránh để nạn kéo dài hoặc bày thêm việc rối.",
+      "citationIds": ["citation-pbc-q40-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-40-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di cho đạo Giải cần khoan rộng sau nạn, phục lại trật tự thường và lòng dân yên. Có việc cần xử thì tranh thủ lúc đầu; nếu đã hết việc mà lại quấy nhiễu, sự ổn định vừa có sẽ khó giữ.",
+      "citationIds": ["citation-ntt-q40-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-40-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy phân biệt không có việc thì trở lại nghỉ với có việc thì đi sớm và về sớm. Cách giải của ông đặt cả sự trở về kịp lúc vào lời tốt, để việc giải nạn không biến thành sự làm phiền kéo dài.",
+      "citationIds": ["citation-ntt-q40-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-water", "trigram-thunder"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yin", "yang", "yin", "yin"],
+    "kingWenNumber": 40,
+    "upperTrigramId": "trigram-thunder",
+    "lowerTrigramId": "trigram-water",
+    "claimIds": ["hexagram-40-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-40-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào đầu ở lúc nạn vừa tan, chưa cần đặt thêm việc. Sự mềm của hào đầu được hào bốn cương ứng giúp, nên ở yên trong hoàn cảnh ấy phù hợp lời không lỗi.",
+          "citationIds": ["citation-nhl-q40-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-40-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào đầu ở bước nghỉ sau nạn, khi chưa có việc phải đảm đương. Mềm mà được hào bốn cương giúp tạo sự thích hợp; không lỗi thuộc thời ấy, không phải cứ ngồi yên là đúng.",
+          "citationIds": ["citation-pbc-q40-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-40-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho hào đầu và hào bốn cứng mềm giúp nhau, làm thế xử sự vừa phải sau lúc nguy. Giải đã bắt đầu mà không gây thêm việc không cần thiết là điều kiện của lời không lỗi.",
+          "citationIds": ["citation-ntt-q40-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-40-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giữ nghĩa trừ người làm hại ở hình ảnh ba cáo và giữ trung trực ở mũi tên vàng. Ông nêu ý kiến về các vị trí ứng với cáo nhưng chưa chắc, nên không lấy đó làm sự xác định của mình.",
+          "citationIds": ["citation-nhl-q40-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-40-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho ba cáo biểu thị người gian cần trừ, còn mũi tên vàng gợi gìn giữ người trung trực. Hào hai cương trung phải giữ chính, tránh dùng sức quá mức khi làm việc giải nạn.",
+          "citationIds": ["citation-pbc-q40-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-40-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào hai ở người cương trung giúp người chủ mềm tại hào năm chống sự mê hoặc. Ba cáo được ông ví với các hào âm ngoài vị vua; giữ trung trực giúp trừ hại mà không rơi vào cách làm quá cương.",
+          "citationIds": ["citation-ntt-q40-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-40-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy nói chưa rõ nghĩa hình tượng ba cáo và tên vàng, đồng thời giữ ý trừ hại, chính bền trong lời chiêm săn. Việc gán cáo cho các hào một, ba, sáu là cách nói của người khác được ông nêu, không phải kết luận đã xác định.",
+          "citationIds": ["citation-ntt-q40-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-40-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê lấy vừa đội vừa cưỡi để giải người có địa vị cao mà tài không xứng, dễ gây sự tranh giành. Trinh được ông đọc theo việc cứ giữ cách sai ấy thì còn hối, không phải cứ bền là tốt.",
+          "citationIds": ["citation-nhl-q40-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Tài, ngôi và đội/cưỡi thuộc cách phân tầng của tác giả cổ; không xác định giá trị con người theo nghề, của cải hoặc giới. Không nhập lời Hệ quy trách nhiệm xâm hại cho người bị hại."
+          ]
+        },
+        {
+          "id": "hexagram-40-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho hào ba giữ ngôi và quyền vượt tài đức nên tự gây sự chống lại mình. Ông đọc lời trinh lận theo việc bền giữ điều không xứng, khác sự chính bền được khen ở các hào khác.",
+          "citationIds": ["citation-pbc-q40-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Tài, ngôi và đội/cưỡi thuộc cách phân tầng của tác giả cổ; không xác định giá trị con người theo nghề, của cải hoặc giới. Không nhập lời Hệ quy trách nhiệm xâm hại cho người bị hại."
+          ]
+        },
+        {
+          "id": "hexagram-40-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào ba theo người tài không xứng với ngôi đang giữ. Dù cố làm việc chính đáng, người không xứng với ngôi vẫn bị ông xét là đáng hối; cách đọc ấy khác nghĩa cố giữ sai của hai tác giả Việt Nam.",
+          "citationIds": ["citation-ntt-q40-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Tài, ngôi và đội/cưỡi thuộc cách phân tầng của tác giả cổ; không xác định giá trị con người theo nghề, của cải hoặc giới. Không nhập lời Hệ quy trách nhiệm xâm hại cho người bị hại."
+          ]
+        },
+        {
+          "id": "hexagram-40-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho địa vị của hào ba không xứng tài, nên ngay cả được ngôi đúng cách cũng còn hối. Ông đọc không còn ở ngôi ấy là cách tránh hối, thêm việc rời ngôi vào nhận định của hào này.",
+          "citationIds": ["citation-ntt-q40-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Tài, ngôi và đội/cưỡi thuộc cách phân tầng của tác giả cổ; không xác định giá trị con người theo nghề, của cải hoặc giới. Không nhập lời Hệ quy trách nhiệm xâm hại cho người bị hại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-40-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho ngón chân cái là hào đầu, một mối gần gũi không thích hợp với trách nhiệm của hào bốn. Dứt sự kết giao ấy rồi người tốt mới có thể tới và tin nhau.",
+          "citationIds": ["citation-nhl-q40-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-40-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào bốn cần giải sự ràng buộc với hào đầu trước khi tìm người cùng đạo. Hợp nhau theo điều phải mới có bạn thành thực; chỉ cậy mối ứng mà bỏ nghĩa sẽ không đủ.",
+          "citationIds": ["citation-pbc-q40-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-40-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy hào đầu làm ngón chân, tức mối riêng kéo người có trách nhiệm ở hào bốn xuống chỗ thấp. Giải mối không hợp đạo ấy là điều kiện để người cùng chí tới và thành tín với nhau.",
+          "citationIds": ["citation-ntt-q40-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-40-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào năm cần bỏ người xấu để người tốt tiến, thay vì chỉ dựa vào danh vị của mình. Phu ở đây là sự nghiệm: người xấu thật sự lui mới chứng tỏ việc giải đã có kết quả.",
+          "citationIds": ["citation-nhl-q40-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-40-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt việc giải ở hào năm vào sự tách khỏi người xấu dù họ cùng loại với mình. Sự thành của việc ấy được nghiệm bằng việc họ lui, không chỉ bằng lời nói hay danh nghĩa quân tử.",
+          "citationIds": ["citation-pbc-q40-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-40-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào năm là người chủ việc Giải cần rời người xấu để đạo đúng có thể được thực hành. Có tin được ông đọc là có sự nghiệm ở việc nhóm người xấu lui, nhờ đó người tốt mới tiến.",
+          "citationIds": ["citation-ntt-q40-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-40-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho sau khi trong nước đã yên còn phải giải mối hại ở phía ngoài. Hình ảnh bắn chim cắt nhấn mạnh chuẩn bị tài và phương tiện, rồi đợi thời thích hợp mới hành động.",
+          "citationIds": ["citation-nhl-q40-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Chim cắt, bắn và việc trừ hại thuộc hình tượng chính trị cổ; không chỉ dẫn gây hại cho người hoặc động vật."
+          ]
+        },
+        {
+          "id": "hexagram-40-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem hào cuối xử mối hại còn ở ngoài sau khi bên trong được yên. Muốn giải được cần đủ khả năng, có phương tiện sẵn và chờ đúng thời; lời lợi không tách khỏi các điều kiện ấy.",
+          "citationIds": ["citation-pbc-q40-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Chim cắt, bắn và việc trừ hại thuộc hình tượng chính trị cổ; không chỉ dẫn gây hại cho người hoặc động vật."
+          ]
+        },
+        {
+          "id": "hexagram-40-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt chim cắt trên tường ở mối hại vừa rời trong mà chưa đi hẳn, còn cần giải. Người hành động phải chuẩn bị đủ phương tiện và chờ thời; thiếu một trong hai thì dễ vướng hoặc hỏng việc.",
+          "citationIds": ["citation-ntt-q40-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Chim cắt, bắn và việc trừ hại thuộc hình tượng chính trị cổ; không chỉ dẫn gây hại cho người hoặc động vật."
+          ]
+        },
+        {
+          "id": "hexagram-40-line-6-khau",
+          "kind": "author-interpretation",
+          "text": "Khấu Kiến An trong Lời bàn của Tiên Nho quy các hình tượng trừ hại ở quẻ Giải về hào ba, gồm cáo, ngón chân và chim cắt. Cách thống nhất đó giữ riêng với Trình Di, người gán ngón chân cho hào đầu; không gộp hai hệ giải thành một.",
+          "citationIds": ["citation-ntt-q40-line-6-khau"],
+          "attribution": {
+            "author": "Khấu Kiến An",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Chim cắt, bắn và việc trừ hại thuộc hình tượng chính trị cổ; không chỉ dẫn gây hại cho người hoặc động vật."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q40-overview-nhl",
+      "citation-pbc-q40-overview-pbc",
+      "citation-ntt-q40-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-ntt-q40-overview-chu-hy",
+      "citation-nhl-q40-line-1-nhl",
+      "citation-pbc-q40-line-1-pbc",
+      "citation-ntt-q40-line-1-ntt",
+      "citation-nhl-q40-line-2-nhl",
+      "citation-pbc-q40-line-2-pbc",
+      "citation-ntt-q40-line-2-ntt",
+      "citation-ntt-q40-line-2-chu-hy",
+      "citation-nhl-q40-line-3-nhl",
+      "citation-pbc-q40-line-3-pbc",
+      "citation-ntt-q40-line-3-ntt",
+      "citation-ntt-q40-line-3-chu-hy",
+      "citation-nhl-q40-line-4-nhl",
+      "citation-pbc-q40-line-4-pbc",
+      "citation-ntt-q40-line-4-ntt",
+      "citation-nhl-q40-line-5-nhl",
+      "citation-pbc-q40-line-5-pbc",
+      "citation-ntt-q40-line-5-ntt",
+      "citation-nhl-q40-line-6-nhl",
+      "citation-pbc-q40-line-6-pbc",
+      "citation-ntt-q40-line-6-ntt",
+      "citation-ntt-q40-line-6-khau"
+    ],
+    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Diễn giải mới giữ các lớp tác giả riêng. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập hoặc xác nhận năng lực dự báo. Giữ riêng chưa rõ hình tượng của Chu Hy hào hai, hai nghĩa trinh ở hào ba, và hệ quy hình tượng về hào ba của Khấu Kiến An trong Lời bàn của Tiên Nho. Không nhập lời quy trách nhiệm xâm hại cho người bị hại."
+  }
+}

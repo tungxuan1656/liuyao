@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "term-flying-spirit",
+  "type": "term",
+  "title": "Phi thần",
+  "aliases": ["Phi hào"],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-flying-spirit-definition",
+      "kind": "author-interpretation",
+      "text": "Trong nghĩa Phi–Phục ở loại đầu, Vương Hồng Tự gọi hào mà Phục thần ẩn bên dưới là Phi thần. Cần phân biệt hào hiện này với Dụng thần đang phục tàng.",
+      "citationIds": ["citation-bpct-ch5-flying-spirit"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Định nghĩa này giữ nghĩa của loại 1; không tự thay cho mọi cách dùng Phi thần trong cùng mục."
+      ]
+    }
+  ],
+  "relatedIds": ["term-hidden-spirit", "article-flying-spirit-uses"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch5-flying-spirit"],
+    "note": "Đã đọc Chương 5, mục 5–7 cùng các đoạn liên quan; đối chiếu ảnh bảng Phi–Phục ở PDF 49–50 và lời chú giải Lục thú ở PDF 98–99. Diễn giải có điều kiện được giữ theo lớp tác giả. Đây là phần kiến thức mô tả được chọn, không phải luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

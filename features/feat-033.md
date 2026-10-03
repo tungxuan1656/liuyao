@@ -17,11 +17,11 @@ Automated interpretation, calendar behavior, UI changes, and complete corpus cer
 ## Acceptance
 
 - [x] Pilot comparisons preserve author attribution, special passages, and exact edition locators.
-- [ ] Four additional quẻ have source-reviewed structure and six cited line summaries.
-- [ ] Advanced records preserve source conditions and remain descriptive knowledge.
-- [ ] Each content group has passage review, valid references, and a separate verified commit.
-- [ ] Coverage and the next batch reflect the released corpus.
-- [ ] `./init.sh`, fingerprint/freshness checks, and `git diff --check` pass.
+- [x] Four additional quẻ have source-reviewed structure and six cited line summaries.
+- [x] Advanced records preserve source conditions and remain descriptive knowledge.
+- [x] Each content group has passage review, valid references, and a separate verified commit.
+- [x] Coverage and the next batch reflect the released corpus.
+- [x] `./init.sh`, fingerprint/freshness checks, and `git diff --check` pass.
 
 ## Relevant docs
 
@@ -40,8 +40,8 @@ Execute inline under the approved content sequence and the user's continuation r
 
 ## Handoff
 
-- State: todo. The pilot comparisons land in this PR; `feat-013` keeps the single active slot until its physical-iOS retest finishes.
-- Evidence: Pilot comparisons pass `./init.sh` with 263 tests and corpus fingerprint/freshness checks.
+- State: done.
+- Evidence: 84 records, 303 claims, 202 locators; 8/64 quẻ and 48/384 positions. All groups pass `./init.sh` with 263 tests and PDF fingerprint/freshness checks.
+- Commits: Pilot comparisons `33c7097`; four quẻ `fb93a79`; advanced BPCT `69c4683`.
 - Blockers: none.
-- Next: Author Truân, Mông, Nhu, and Sư.
-- Follow-up: the remaining batches continue in the next PR.
+- Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (PDF 68–69), as recorded in the manifest.

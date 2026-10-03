@@ -115,6 +115,8 @@ print_suggestions() {
 # ------------------------
 while IFS= read -r -d '' file; do
   [[ "$file" == *.d.ts ]] && continue
+  # JSON import inventory; validate:corpus --check verifies generated content.
+  [[ "$file" == "packages/knowledge/src/book-data.generated.ts" ]] && continue
   [[ "$file" == *"/dist/"* ]] && continue
   [[ "$file" == *"/build/"* ]] && continue
   [[ "$file" == ".agents/"* ]] && continue

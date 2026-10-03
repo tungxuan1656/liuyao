@@ -11,8 +11,8 @@ import {
 } from '../src/index';
 
 describe('released book knowledge API', () => {
-  it('exposes the cited pilot with stable IDs and attribution', () => {
-    expect(listBookRecords()).toHaveLength(73);
+  it('exposes reviewed releases with stable IDs and attribution', () => {
+    expect(listBookRecords()).toHaveLength(172);
     expect(listBookSources()).toHaveLength(4);
     expect(getBookSource('source-book-bpct')).toBe(listBookSources()[0]);
     for (const record of listBookRecords()) {
@@ -36,8 +36,17 @@ describe('released book knowledge API', () => {
     if (qian?.type !== 'hexagram') throw new Error('Missing pilot hexagram');
     expect(qian.lines.map(line => line.position)).toEqual([1, 2, 3, 4, 5, 6]);
     expect(qian.specialPassages[0]?.title).toBe('Dụng cửu');
-    expect(getBookRecord('hexagram-03')).toBeUndefined();
-    expect(getHexagram('hexagram-03')).toBeDefined();
+    expect(getBookRecord('hexagram-03')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-08')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-13')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-17')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-21')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-25')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-29')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-33')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-37')?.review.status).toBe('reviewed');
+    expect(getBookRecord('hexagram-41')).toBeUndefined();
+    expect(getHexagram('hexagram-41')).toBeDefined();
     expect(getHexagram('hexagram-01')?.explanation).toContain('Nguyễn Hiến Lê');
     expect(searchKnowledge('Bát Thuần Càn').some(hit => hit.record.id === 'hexagram-01')).toBe(
       true,

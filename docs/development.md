@@ -51,6 +51,10 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/luc-hao-icon-source.avif` because its configuration reads a public-directory path. The command removes that copy after success, failure, or a handled interrupt; it does not modify the approved source image. If an uncatchable termination leaves the temporary file behind, remove that exact file before retrying. Concurrent generator runs are not supported.
 
+The length check excludes `packages/knowledge/src/book-data.generated.ts`, the JSON import inventory.
+Corpus validation generates it; `validate:corpus --check` verifies its freshness.
+Authored TypeScript and the generator retain their existing checks.
+
 ## Git hooks
 
 - Pre-commit runs lint-staged formatting and lint checks.

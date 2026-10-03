@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "article-combination-opposition-turnarounds",
+  "type": "article",
+  "title": "Hợp và xung: phạm vi biến chuyển, mục tiêu và Dụng thần",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-combination-opposition-turnarounds-combination-to-opposition",
+      "kind": "author-interpretation",
+      "text": "Mục 15 liệt kê ba dạng Hợp xứ phùng xung: quẻ Lục Hợp biến Lục Xung, Nhật Nguyệt xung với hào, và hào động biến thành xung. Giữ ba cấp được nguồn nêu, không gộp tác động lên hào thành việc cả quẻ đổi loại.",
+      "citationIds": ["citation-bpct-ch5-combination-opposition-turnarounds"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Tên gọi đặt trong ngữ cảnh hợp gặp xung; không gọi mọi cặp chi xung riêng lẻ là quẻ Lục Xung."
+      ]
+    },
+    {
+      "id": "article-combination-opposition-turnarounds-opposition-to-combination",
+      "kind": "author-interpretation",
+      "text": "Ba dạng Xung trung phùng hợp ở mục 15 là quẻ Lục Xung biến Lục Hợp, Nhật Nguyệt hợp với hào, và hào động biến thành hợp. Dạng có hợp ở một hào không đòi hỏi mọi hào của quẻ đều cùng hợp.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-opposition-turnarounds",
+        "citation-bpct-part2-combination-opposition-target"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-combination-opposition-turnarounds-purpose",
+      "kind": "author-interpretation",
+      "text": "Mục 15 đọc hợp rồi xung theo thành rồi tan, xung rồi hợp theo tan rồi thành. Câu 21 chương 6 phân biệt muốn việc thành với muốn việc tán: hợp gặp xung có thể thuận mục tiêu giải tán, còn trường hợp ngược lại phải xét mục tiêu tương ứng.",
+      "citationIds": [
+        "citation-bpct-ch5-combination-opposition-turnarounds",
+        "citation-bpct-ch6-combination-opposition-goal"
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách luận truyền thống theo việc hỏi, không chuyển thành lời hứa mọi kế hoạch sẽ thành hoặc thất bại."
+      ]
+    },
+    {
+      "id": "article-combination-opposition-turnarounds-affected-spirit",
+      "kind": "author-interpretation",
+      "text": "Câu hỏi 13 phân biệt xung Kỵ thần, hợp Dụng thần với xung Dụng thần, hợp Kỵ thần. Vì tác động hướng vào vai hào khác nhau nên không gán hợp luôn tốt hay xung luôn xấu.",
+      "citationIds": ["citation-bpct-part2-combination-opposition-target"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Chỉ ghi cách phân biệt của nguồn; không xác nhận kết quả chiêm nghiệm hoặc tạo bộ phân loại tự động."
+      ]
+    },
+    {
+      "id": "article-combination-opposition-turnarounds-translator-disagreement",
+      "kind": "author-interpretation",
+      "text": "Trong chú thích 9 của ví dụ văn thư, Vĩnh Cao không đồng ý chọn hào Thìn ở Ứng làm Dụng thần và đề nghị chọn Tuất ở Thế. Giữ lời phản biện riêng với phần chính, không dùng ví dụ này như một lựa chọn Dụng thần đã thống nhất.",
+      "citationIds": ["citation-bpct-part2-letter-useful-spirit-note"],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      }
+    }
+  ],
+  "relatedIds": [
+    "term-combination-meets-opposition",
+    "term-opposition-meets-combination",
+    "term-useful-spirit",
+    "term-adverse-spirit",
+    "rule-moving-line-change"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-ch5-combination-opposition-turnarounds",
+      "citation-bpct-part2-combination-opposition-target",
+      "citation-bpct-ch6-combination-opposition-goal",
+      "citation-bpct-part2-letter-useful-spirit-note"
+    ],
+    "note": "Đã đọc toàn bộ mục 15–16 PDF 72–73 và chú thích 8; đối chiếu câu 4 PDF 78, câu 21 PDF 84, câu 56 PDF 94, cùng câu hỏi 12–13 PDF 393–401 và chú thích. Xem ảnh các trang được chọn, kiểm tra nhãn trang in. Chỉ chọn điều kiện luận giải; chưa xác nhận chuyện ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

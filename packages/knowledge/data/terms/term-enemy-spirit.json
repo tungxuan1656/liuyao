@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "term-enemy-spirit",
+  "type": "term",
+  "title": "Cừu thần",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "term-enemy-spirit-definition",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự xác định Cừu thần bằng hai quan hệ đồng thời: khắc Nguyên thần và sinh phò Kỵ thần. Vì vậy phải biết Dụng thần, Nguyên thần và Kỵ thần trước khi dùng tên gọi này.",
+      "citationIds": ["citation-bpct-ch5-enemy"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": [
+    "term-useful-spirit",
+    "term-origin-spirit",
+    "term-adverse-spirit",
+    "article-origin-adverse-and-enemy-spirits"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch5-enemy"],
+    "note": "Đã đọc đầy đủ Chương 5, mục 1–4 và các chú thích ở PDF 67–68, đối chiếu lời giới thiệu về tác giả và người dịch ở PDF 2–3. Đã xem ảnh trang và số trang in. Đây là diễn giải học thuật có điều kiện, không phải kết quả luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

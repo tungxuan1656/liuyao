@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-04",
+  "type": "hexagram",
+  "title": "Sơn Thủy Mông",
+  "aliases": ["Mông"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-04-structure",
+      "kind": "structural-fact",
+      "text": "Sơn Thủy Mông có ngoại quái Cấn và nội quái Khảm. Hào được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q04-overview-nhl",
+        "citation-pbc-q04-overview-pbc",
+        "citation-ntt-q04-overview-ntt",
+        "citation-nhl-p59-61-technical"
+      ]
+    },
+    {
+      "id": "hexagram-04-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê xem Mông là lúc còn non và chưa hiểu rõ. Hào hai đóng vai người dạy, hào năm là người học biết nhún; sự thành thật và cách dạy đúng mực giúp mở mang hiểu biết.",
+      "citationIds": ["citation-nhl-q04-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-04-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Mông theo quan hệ thầy trò: người học chủ động tìm thầy, hai bên tin nhau và giữ chính lâu dài. Ông dùng hình ảnh hỏi bói để nói về lòng thành học hỏi, không coi đó là cách dùng bói để dạy.",
+      "citationIds": ["citation-pbc-q04-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-04-overview-ntt",
+      "kind": "author-interpretation",
+      "text": "Trình Di đặt Mông trong thế gặp hiểm mà chưa biết tiến đâu. Hào hai cương ở giữa giúp hào năm mở mang; người học phải thành tâm, người dạy giữ đúng đạo và nuôi điều chính từ khi còn non.",
+      "citationIds": ["citation-ntt-q04-overview-ntt"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    }
+  ],
+  "relatedIds": ["trigram-water", "trigram-mountain"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q04-overview-nhl",
+      "citation-pbc-q04-overview-pbc",
+      "citation-ntt-q04-overview-ntt",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-q04-line-1-nhl",
+      "citation-pbc-q04-line-1-pbc",
+      "citation-ntt-q04-line-1-ntt",
+      "citation-ntt-q04-line-1-chu-hy",
+      "citation-nhl-q04-line-2-nhl",
+      "citation-pbc-q04-line-2-pbc",
+      "citation-ntt-q04-line-2-ntt",
+      "citation-nhl-q04-line-3-nhl",
+      "citation-pbc-q04-line-3-pbc",
+      "citation-ntt-q04-line-3-ntt",
+      "citation-ntt-q04-line-3-chu-hy",
+      "citation-nhl-q04-line-4-nhl",
+      "citation-pbc-q04-line-4-pbc",
+      "citation-ntt-q04-line-4-ntt",
+      "citation-nhl-q04-line-5-nhl",
+      "citation-pbc-q04-line-5-pbc",
+      "citation-ntt-q04-line-5-ntt",
+      "citation-nhl-q04-line-6-nhl",
+      "citation-pbc-q04-line-6-pbc",
+      "citation-ntt-q04-line-6-ntt",
+      "citation-ntt-q04-line-6-chu-hy"
+    ],
+    "note": "Đã đọc đoạn tổng quan, sáu hào và chú thích ở ba sách; xem ảnh cấu trúc và các trang có lỗi dẫn chiếu. Diễn giải Trình Di và Chu Hy được giữ riêng khi có khác biệt. Đây là các đoạn tóm tắt được chọn, không phải toàn bộ chú giải; chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yin", "yin", "yin", "yang"],
+    "kingWenNumber": 4,
+    "upperTrigramId": "trigram-mountain",
+    "lowerTrigramId": "trigram-water",
+    "claimIds": ["hexagram-04-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-04-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hào đầu theo hình ảnh lịch sử dùng hình phạt để tháo sự ràng buộc của thói xấu. Đã sửa được thì phải dừng; tiếp tục quá mức gây hại cho việc giáo hóa.",
+          "citationIds": ["citation-nhl-q04-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ bối cảnh giáo hóa lịch sử; không dùng lời hào làm hướng dẫn trừng phạt người học."
+          ]
+        },
+        {
+          "id": "hexagram-04-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc gông cùm như thói xấu và hoàn cảnh trói buộc người chưa hiểu. Trong cách giáo hóa lịch sử ông mô tả, sự trừng trị chỉ nhằm mở đường; sau đó cần chuyển sang dạy bảo.",
+          "citationIds": ["citation-pbc-q04-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ bối cảnh giáo hóa lịch sử; không dùng lời hào làm hướng dẫn trừng phạt người học."
+          ]
+        },
+        {
+          "id": "hexagram-04-line-1-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào đầu theo phép trị dân thời xưa: làm rõ điều cấm trước rồi giáo hóa. Chỉ dùng hình phạt khiến người ta tránh tội mà chưa hiểu đạo; ông xem cách ấy là chưa hoàn thành việc mở mang.",
+          "citationIds": ["citation-ntt-q04-line-1-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ bối cảnh giáo hóa lịch sử; không dùng lời hào làm hướng dẫn trừng phạt người học."
+          ]
+        },
+        {
+          "id": "hexagram-04-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho việc mở mang có thể là tự sửa mình hoặc giúp người khác. Trong hình ảnh trừng giới thời xưa, cần có lúc tháo sự ràng buộc và chờ chuyển biến; không thể giữ người ta trong cưỡng chế liên tục.",
+          "citationIds": ["citation-ntt-q04-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là diễn giải giáo hóa lịch sử, không phải hướng dẫn trừng phạt người học."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-04-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào hai cương ở giữa nên biết bao dung người chưa hiểu và nhận trách nhiệm việc nhà. Sự gắn bó với hào năm giúp người có tài làm được việc.",
+          "citationIds": ["citation-nhl-q04-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-04-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào hai như người thầy có tài nhưng không quá cứng. Bao dung người còn yếu và được hào năm tin cậy mới đủ làm việc; ông ví với người con cảm hóa được cha.",
+          "citationIds": ["citation-pbc-q04-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-04-line-2-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho người mở mang cần rộng lượng, tiếp nhận điều thiện từ người khác và được hào năm tin dùng. Tài cương minh riêng mình không đủ nếu quan hệ trên dưới không gắn bó.",
+          "citationIds": ["citation-ntt-q04-line-2-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-04-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc hình ảnh người con gái chạy theo tiền như lời răn về việc thấy lợi rồi quên cách xử sự. Người mất tự chủ vì lợi không phù hợp để kết hợp trong tình thế của hào.",
+          "citationIds": ["citation-nhl-q04-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-04-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu mở rộng hình ảnh cô gái chạy theo người giàu sang việc dùng người. Đối tượng tham lợi quên nghĩa, sẵn sàng làm việc trái đạo vì tiền, không nên được chọn vào trách nhiệm.",
+          "citationIds": ["citation-pbc-q04-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-04-line-3-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào ba bỏ người chính ứng ở trên để chạy theo hào hai đang được nhiều người theo. Hình ảnh chồng vàng mô tả sự lựa chọn vì lợi khiến mất cách giữ mình.",
+          "citationIds": ["citation-ntt-q04-line-3-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-04-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc chồng vàng như người dùng tiền để ve vãn khiến đối tượng mất tự chủ. Ông còn đề nghị đọc chữ nói về nết theo nghĩa thiếu cẩn thận; đây là cách đọc riêng của ông.",
+          "citationIds": ["citation-ntt-q04-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-04-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào bốn bị cô lập khỏi hai hào cương có thể chỉ dẫn. Không gặp thầy bạn sáng suốt khiến tình trạng chưa hiểu bị kéo dài.",
+          "citationIds": ["citation-nhl-q04-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-04-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đặt sự khốn Mông ở việc người chưa hiểu lại không tìm thầy và bạn hiền. Xa hai hào dương có khả năng mở mang, người ấy thiếu cơ hội thoát khỏi sự mờ tối.",
+          "citationIds": ["citation-pbc-q04-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-04-line-4-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc sự khốn tối theo việc thiếu người cương minh giúp đỡ. Hào bốn xa những người có thể mở mang nên không có đường tự giải sự chưa hiểu.",
+          "citationIds": ["citation-ntt-q04-line-4-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-04-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê xem hào năm như người học mềm thuận, giữ mức vừa phải và tin người dạy ở hào hai. Biết nhận hướng dẫn là điều kiện của lời tốt.",
+          "citationIds": ["citation-nhl-q04-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-04-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hào năm như người ở ngôi cao biết hạ mình theo người tài ở hào hai. Lòng tin và thái độ chịu học giúp mở mang bản thân rồi mới có thể giúp người khác.",
+          "citationIds": ["citation-pbc-q04-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-04-line-5-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di đặt hào năm nhu thuận ở vai người cần được mở mang. Theo tài cương minh của hào hai và hạ chí mình để tìm người dạy là cách được tốt.",
+          "citationIds": ["citation-ntt-q04-line-5-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-04-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hào cuối theo việc dạy quá nghiêm dễ kích người học chống lại. Cần ngăn những điều xấu lôi kéo từ ngoài và giữ sự thuận hợp giữa người dạy với người học.",
+          "citationIds": ["citation-nhl-q04-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-04-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu phân biệt giúp người học tránh tác động xấu với công kích họ quá mức. Cứng bạo có thể gây phản kháng; cải thiện hoàn cảnh và ngăn điều cám dỗ mới giữ được sự thuận hợp.",
+          "citationIds": ["citation-pbc-q04-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-04-line-6-ntt",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hào cuối theo tình cảnh tối tăm cực độ và phép trị thời xưa. Chống sự làm loạn khác với tự hành xử tham bạo; người trên không làm dữ quá mới giữ được sự thuận hợp.",
+          "citationIds": ["citation-ntt-q04-line-6-ntt"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-04-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cho đánh trị quá ngặt sẽ trở thành làm hại. Cách phù hợp là ngăn cám dỗ từ ngoài để giữ tính chất chân thật; ông nói ý ấy có thể áp dụng rộng hơn việc dạy học.",
+          "citationIds": ["citation-ntt-q04-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-ntt-mong-response",
+      "status": "resolved",
+      "description": "NTT PDF 170 ghi Chín Hai và Sáu Hai âm dương ứng nhau trong đoạn Bản nghĩa.",
+      "citationIds": ["citation-ntt-q04-overview-ntt", "citation-ntt-q04-line-2-ntt"],
+      "resolution": "Cùng đoạn gọi trẻ thơ là hào năm; PDF 173 và 178 xác định cặp hai–năm. Giữ đối tượng ứng là Sáu Năm, không tạo hai hào ở cùng vị trí."
+    }
+  ]
+}

@@ -13,7 +13,7 @@ The [knowledge model](../../../docs/design-docs/knowledge-model.md) defines stor
 | `trigrams/`           | Eight reviewed entities and structural evidence                          |
 | `hexagrams/`          | Reviewed quẻ, six line positions, and separate special passages          |
 | `casting/`            | Casting rules and worked examples                                        |
-| `liuyao/`             | Foundational rules and source-transcribed reference tables               |
+| `liuyao/`             | Foundational rules, structured tables, and attributed advanced articles  |
 | `terms/`              | Reviewed definitions and aliases                                         |
 | `legacy/catalog.json` | Unmigrated compatibility content with an explicit `unaudited` status     |
 | `*.ts`                | Compatibility exports from the JSON adapter                              |

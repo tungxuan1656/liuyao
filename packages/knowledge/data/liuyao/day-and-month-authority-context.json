@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "article-day-and-month-authority-context",
+  "type": "article",
+  "title": "Nhật thần và Nguyệt kiến: vai hào, tác dụng và phạm vi",
+  "aliases": ["Nhật thần", "Nhật thìn", "Nguyệt kiến"],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-day-and-month-authority-context-day-actions",
+      "kind": "author-interpretation",
+      "text": "Vương Hồng Tự gọi Nhật thần là chủ sáu hào vì có nhiều tác dụng: xung, hợp, trợ hào yếu, chế hào mạnh và làm hào phục có cơ hội hiện. Các tác dụng có thể giúp hoặc hỏng việc, không đồng nghĩa Nhật thần luôn đem lợi.",
+      "citationIds": ["citation-bpct-ch6-day-authority"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Chưa định nghĩa hoặc lập bộ phân loại xung khởi, xung thực, xung tán từ riêng danh sách ở câu 8."
+      ]
+    },
+    {
+      "id": "article-day-and-month-authority-context-day-useful-adverse",
+      "kind": "author-interpretation",
+      "text": "Câu 8 dùng Kỵ thần vượng động và Dụng thần hưu tù làm hoàn cảnh của lời tốt khi Nhật thần chế Kỵ, sinh trợ Dụng. Ý chuyển bất lợi thành thuận cần giữ cả vai, sức và chiều tác động ấy.",
+      "citationIds": ["citation-bpct-ch6-day-authority"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Hình ảnh Hạng và Lưu là phép ví trong lời phú, không chứng minh hiệu quả dự báo."
+      ]
+    },
+    {
+      "id": "article-day-and-month-authority-context-month-useful-adverse",
+      "kind": "author-interpretation",
+      "text": "Câu 9 cho Nguyệt kiến có thể giúp hoặc hại. Nếu Kỵ thần động khắc Dụng lại được tháng sinh trợ thì sức hại tăng; nếu tháng chế Kỵ và sinh trợ Dụng thì tác dụng được tác giả xem là giúp việc.",
+      "citationIds": ["citation-bpct-ch6-month-authority"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "id": "article-day-and-month-authority-context-duration",
+      "kind": "author-interpretation",
+      "text": "Trong câu 9, Vương Hồng Tự giới hạn quyền của Nguyệt kiến trong tháng, còn Nhật thần vẫn có ảnh hưởng dù việc dài. Đây là phạm vi chú giải của tác giả, không cho ngày kết thúc hay công thức tính lịch.",
+      "citationIds": ["citation-bpct-ch6-month-authority"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Không đồng nhất tháng theo tiết khí của hệ thống với ngày đầu tháng âm lịch; chưa nhập phép chuyển đổi lịch."
+      ]
+    },
+    {
+      "id": "article-day-and-month-authority-context-month-cycle-exclusion",
+      "kind": "author-interpretation",
+      "text": "Câu 9 dùng Nguyệt phá, hưu tù, vượng tướng và sinh khắc để xét Nguyệt kiến. Tác giả bác việc lấy tên giai đoạn Trường Sinh/Đế Vượng ở tháng làm tốt, hoặc Suy/Bệnh/Tử/Mộ ở tháng làm xấu; vòng giai đoạn được đặt ở Nhật thần.",
+      "citationIds": ["citation-bpct-ch6-month-authority"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "conditions": [
+        "Giữ lập trường của đoạn BPCT, không tuyên bố mọi trường phái đều loại các cách xét ấy."
+      ]
+    }
+  ],
+  "relatedIds": [
+    "term-useful-spirit",
+    "term-adverse-spirit",
+    "term-prosperous-supported",
+    "term-resting-confined",
+    "term-month-break",
+    "article-month-break-conditions",
+    "article-growth-and-peak-day-context"
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-02",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-ch6-day-authority", "citation-bpct-ch6-month-authority"],
+    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}
