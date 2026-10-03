@@ -3,6 +3,7 @@
 This document owns the supplied PDF inventory, source locations, and known source discrepancies.
 The books support domain review. Their presence does not establish permission to redistribute them.
 See [Licensing](../../LICENSING.md) for usage rights.
+The section-to-record and owner crosswalk is in the [source-section inventory](../reviews/knowledge/source-inventory.md).
 
 ## Source inventory
 
@@ -165,6 +166,15 @@ Their explanations do not automatically establish Na Jia, palace, or interpretat
 `NHL`, PDF 74, explicitly distinguishes classical line text from later Five Element divination.
 
 ## Known discrepancies
+
+The source-section inspection also confirmed these edition locators:
+
+| Key    | Location                                        | Finding                                                                                                                                                                                                          |
+| ------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `PBC`  | Contents PDF 4; Cấn / canonical quẻ 52, PDF 493 | The contents lists Thuần Chấn and Thuần Cấn as quẻ 51, then Tiệm as 53. The body also labels Cấn as 51. Keep the source label and map the body section to canonical `hexagram-52`; quẻ 52 is present.            |
+| `NHL`  | Contents PDF 4–9; Ký Tế/Vị Tế, PDF 328/331      | The contents points to quẻ 63 at printed page 326 and quẻ 64 at 329. The observed body headings start at PDF 328 and 331. Use body headings for section locators; do not treat contents pages as section starts. |
+| `BPCT` | Chương 4, Chấn palace, PDF 57                   | A fresh image check confirms board 6 is Thủy Phong Tỉnh. Earlier extraction missed its heading.                                                                                                                  |
+| `BPCT` | Chương 6, PDF 80 and 95                         | A fresh image check confirms printed label 11 on PDF 80 and printed label 60 on PDF 95. Punctuation and adjacent glyphs obscured the earlier heading scan.                                                       |
 
 | Key       | Location                                   | Problem                                                                                                        | Review treatment                                                                                                        |
 | --------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
