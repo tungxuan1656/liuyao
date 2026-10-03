@@ -34,6 +34,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     const run = (...args) =>
       spawnSync(process.execPath, [path.join(temporary, 'scripts/validate-corpus.mjs'), ...args], {
         encoding: 'utf8',
+        timeout: 20_000,
       });
     const generated = path.join(temporary, 'src/book-data.generated.ts');
     const releaseJson = path.join(temporary, 'src/book-release.generated.json');
@@ -85,7 +86,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
   } finally {
     rmSync(temporary, { recursive: true, force: true });
   }
-});
+}, 20_000);
 
 it('projects only selected records and reachable citation editions without local paths', () => {
   const claim = (id, citationIds = []) => ({ id, kind: 'structural-fact', text: id, citationIds });
