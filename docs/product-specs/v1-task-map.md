@@ -197,28 +197,28 @@ A feature is not done when code exists. It is done when its implementation, cont
 
 ## F12 — Product identity
 
-| Task    | Change                                                                                  | Evidence                                                                                                                             |
-| ------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| F12-T01 | Review existing naming ideas and define naming criteria                                 | Decision note                                                                                                                        |
-| F12-T02 | Approve the final public product name                                                   | Product Owner approval                                                                                                               |
-| F12-T03 | Approve the PWA short name                                                              | Manifest review                                                                                                                      |
-| F12-T04 | Confirm V1 primary interface language and terminology                                   | Copy review                                                                                                                          |
-| F12-T05 | Write the one-sentence public product description                                       | Copy review                                                                                                                          |
-| F12-T06 | Decide whether V1 uses a tagline                                                        | No tagline approved 2026-10-01                                                                                                       |
-| F12-T07 | Check name conflicts, domain availability, and obvious trademark risk before launch     | Research record                                                                                                                      |
-| F12-T08 | Approve the supplied bagua mark and current wordmark treatment                          | Product Owner approval 2026-10-01                                                                                                    |
-| F12-T09 | Keep an editable vector master for approved marks                                       | Waived by Product Owner for V1 2026-10-01; not generated                                                                             |
-| F12-T10 | Export favicon, 192, 512, maskable, and Apple touch icons                               | PWA audit                                                                                                                            |
-| F12-T11 | Create the social sharing image                                                         | Waived by Product Owner for V1 2026-10-01; not generated                                                                             |
-| F12-T12 | Approve theme and background colors                                                     | Current colors approved 2026-10-01                                                                                                   |
-| F12-T13 | Replace provisional page title, description, manifest name, and favicon                 | Metadata audit                                                                                                                       |
-| F12-T14 | Set the correct HTML language                                                           | HTML audit                                                                                                                           |
-| F12-T15 | Document ownership and rights for every brand asset                                     | Rights audit                                                                                                                         |
-| F12-T16 | Verify app header, browser tab, install UI, and README use one identity                 | Cross-surface/device audit; user-reported iOS install exposed title/button blur and insufficient bottom safe spacing; retest pending |
-| F12-T17 | Approve Vietnamese typography and Latin brand-font stack; do not require CJK fonts      | Product Owner approval                                                                                                               |
-| F12-T18 | Bundle and self-host approved fonts locally with payload budget; no CJK subset required | Font payload audit                                                                                                                   |
+| Task    | Change                                                                                  | Evidence                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| F12-T01 | Review existing naming ideas and define naming criteria                                 | Decision note                                                                                                          |
+| F12-T02 | Approve the final public product name                                                   | Product Owner approval                                                                                                 |
+| F12-T03 | Approve the PWA short name                                                              | Manifest review                                                                                                        |
+| F12-T04 | Confirm V1 primary interface language and terminology                                   | Copy review                                                                                                            |
+| F12-T05 | Write the one-sentence public product description                                       | Copy review                                                                                                            |
+| F12-T07 | Check name conflicts, domain availability, and obvious trademark risk before launch     | Product Owner confirmed research complete 2026-10-03                                                                   |
+| F12-T08 | Approve the supplied bagua mark and current wordmark treatment                          | Product Owner approval 2026-10-01                                                                                      |
+| F12-T09 | Keep an editable vector master for approved marks                                       | Waived by Product Owner for V1 2026-10-01; not generated                                                               |
+| F12-T10 | Export favicon, 192, 512, maskable, and Apple touch icons                               | PWA audit                                                                                                              |
+| F12-T11 | Create the social sharing image                                                         | Waived by Product Owner for V1 2026-10-01; not generated                                                               |
+| F12-T12 | Approve theme and background colors                                                     | Current colors approved 2026-10-01                                                                                     |
+| F12-T13 | Replace provisional page title, description, manifest name, and favicon                 | Metadata audit                                                                                                         |
+| F12-T14 | Set the correct HTML language                                                           | HTML audit                                                                                                             |
+| F12-T15 | Document ownership and rights for every brand asset                                     | Rights audit                                                                                                           |
+| F12-T16 | Verify app header, browser tab, install UI, and README use one identity                 | Cross-surface audit; Product Owner confirmed the physical-iOS install retest passed 2026-10-03 after the safe-area fix |
+| F12-T17 | Approve Vietnamese typography and Latin brand-font stack; do not require CJK fonts      | Product Owner approval                                                                                                 |
+| F12-T18 | Bundle and self-host approved fonts locally with payload budget; no CJK subset required | Font payload audit                                                                                                     |
 
-For V1, the Product Owner waived F12-T09 and F12-T11 on 2026-10-01. These are excluded deliverables, not completed or generated assets. F12-T07 naming research remains required before launch. The reported iOS install issues are defects; they do not count as a passed install or safe-area check.
+For V1, the Product Owner waived F12-T09 and F12-T11 on 2026-10-01. These are excluded deliverables, not completed or generated assets.
+On 2026-10-03 the Product Owner confirmed that the F12-T07 name research is complete and the F12-T16 install retest passed; the repository records that confirmation without adding device or research evidence of its own.
 
 ## F13 — Production delivery
 

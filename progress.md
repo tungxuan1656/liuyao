@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-03 — feat-013
+
+**State**: done.
+**Done**: Closed product identity after the Product Owner confirmed the physical-iOS install retest and the launch research.
+**Evidence**: Product Owner confirmation (2026-10-03) covers the F12-T16 install retest and the F12-T07 name-conflict, domain-availability, and trademark-risk research; the repository adds no device or research artifact of its own. Earlier approvals, waivers, and browser-level checks remain recorded in the 2026-10-01 and 2026-10-02 blocks.
+**Blockers**: none.
+**Next**: None. Reopen if installed-PWA rendering or identity metadata regresses.
+
 ## 2026-10-02 — feat-013 PR review follow-up
 
 **State**: active; review fixes are implemented and verified, with physical-device safe-area/blur retest still pending.
