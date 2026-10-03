@@ -143,12 +143,12 @@ Use `tests/book-validation.test.mjs` for schema and cross-file fixtures. Use `te
 
 - [x] Confirm 173 protected V1 records/schema files are byte-identical to base. Passed.
 - [x] Run root `pnpm typecheck` to check the legacy union APIs, exports, and adapter compatibility. Passed.
-- [x] Run root `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build`. Passed; lint has zero errors and four baseline UI warnings. Cleanup removed six new-test warnings.
-- [x] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`. Passed: 172 records, 1,226 claims, 1,015 citations, and supplied-edition fingerprints.
-- [x] Run `./init.sh`. Receipt `sh_10215cc44001Abxn70zd09XAk5` passed format, lint (zero errors; four baseline warnings), typecheck, build, exports, test placement, and 352 tests. Corpus/book check passed: 172 records, 1,226 claims, 1,015 citations, and supplied-edition fingerprints.
-- [x] Record passed commands, test counts, evidence limits, and next action in the feature handoff. Do not mark feat-101 done before independent review and delivery gates.
+- [x] Run root `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build`. Reviewed-SHA checks passed with zero lint errors and four baseline warnings.
+- [x] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`. Passed: 172 records, 1,226 claims, 1,015 citations, and supplied-edition fingerprints; `vi_VN` and `sv_SE` checks passed.
+- [x] Run `./init.sh`. Receipt `sh_102393ac4001AJk2OSBMttFf5u` passed format, lint, typecheck, build, exports, length/placement checks, and 354 tests (181 core, 173 knowledge).
+- [x] Record verified implementation criteria, results, evidence limits, and delivery handoff. PR #62 awaits final-head CI and merge.
 
-**Current gate status:** Root format, lint, typecheck, 352 tests (181 core, 171 knowledge), build, exports, placement, corpus, and book fingerprint checks passed. Lint has zero errors and four baseline warnings; six new-test warnings were removed, then targeted lint, 20 tests, and typecheck passed. Protected V1 comparison passed for 173 files. Init `sh_10215cc44001Abxn70zd09XAk5` passed. Independent review, CI/PR, and acceptance remain pending; do not mark done.
+**Current gate status:** On reviewed SHA `ae1d1f5c647408bc38d9fa2cffe6db80f54c84c1`, init `sh_102393ac4001AJk2OSBMttFf5u` passed format, lint (zero errors; four baseline warnings), typecheck, build, exports, length/placement checks, and 354 tests (181 core, 173 knowledge). Corpus freshness and book fingerprints passed: 172 records, 1,226 claims, 1,015 citations; `vi_VN` and `sv_SE` checks passed. Protected V1 records/schema comparison passed for 173 files. PR #62 CI run `37130792089`, job `111225312559`, passed. The lifecycle commit needs final-head CI before merge; no merge is claimed.
 
 ## Verification and evidence boundaries
 
@@ -156,4 +156,4 @@ Use package-owned tests because repository policy disallows application test sui
 
 Structural validation does not establish source meaning. Snapshot review metadata describes the evidence present; it does not establish independent specialist approval. Do not implement audit-decision ledgers or bulk lesson/figure/convention authoring here; feat-067 owns later audit-decision binding.
 
-**Runtime evidence:** `assertReleaseEvidenceIntegrity` rechecks lesson review coverage for block supports and transitive dependencies. Release tests reject missing review evidence and omissions of direct or transitive support. This confirms structural coverage only; it does not certify source meaning or specialist approval.
+**Runtime evidence:** `assertReleaseEvidenceIntegrity` rechecks lesson review coverage for block supports and transitive dependencies. Release tests reject missing review evidence and omissions of direct or transitive support. This confirms structural coverage only; it does not certify source meaning or specialist approval. A nonblocking optional comparator declaration is deferred and is not an acceptance requirement.
