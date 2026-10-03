@@ -78,6 +78,8 @@ Every batch ends with a reviewed coverage report and one concrete next batch.
 The user selected concurrent progress on both tracks, with small cited batches.
 The user approved the JSON storage contract and this delivery sequence.
 The [generated coverage report](../../packages/knowledge/reports/coverage.json) identifies released batches, remaining gaps, and the next group.
+The [completion roadmap](../../features/knowledge-roadmap.md) routes all remaining authoring and later audit features.
+Their planned scope does not change released coverage or activate new product behavior.
 
 ## Batch acceptance
 

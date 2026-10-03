@@ -59,6 +59,54 @@ Source references identify a work, section, chapter, or page when that informati
 Keep stable IDs for lookup and routing. Do not show them as interface labels.
 Show source titles and reference locations directly. Collapse author, publication, rights, and provenance metadata until the user requests it.
 
+## Intended book-backed expansion
+
+Quẻ detail → overview → six hào → named commentary layers → passage citations.
+Topic group → released article → related knowledge and citations.
+
+These flows are planned extensions. The current interface does not render their full content.
+
+### Quẻ and hào
+
+- Use released records from the public knowledge APIs.
+- Show the overview and all available positions, numbered from bottom to top.
+- Preserve author, translator, and edition attribution for each explanation.
+- Keep conditions and differing interpretations attached to their supporting claims.
+- Display citations for each explanation, including PDF pages and printed labels when present.
+- Keep Càn/Khôn special passages separate from the six hào.
+- Preserve existing canonical quẻ URLs and add links to individual positions.
+- If commentary or an author layer is unavailable, show its unavailable state.
+- Keep compatibility metadata available for unmigrated quẻ without presenting it as reviewed commentary.
+
+### Trigrams terms and rules
+
+- Use the same claim-level presentation for released trigrams, terms, and rules.
+- Keep each explanation's conditions, author layers, and supporting citations together.
+- Render declared tables and diagrams with their evidence and source-specific labels.
+- Identify accepted project conventions and link their reviewed specification evidence.
+- Preserve compatibility navigation without using flattened prose as reviewed commentary.
+
+### Topics and articles
+
+- Add topic browsing and article details alongside existing entity, term, and rule routes.
+- Derive topics from the corpus manifest and content from released records.
+- Search released article titles, aliases, and Vietnamese explanations locally.
+- Preserve the existing Vietnamese normalization and exact-ID search contract.
+- Show explicit empty states for topics without released content, including future learning articles.
+- When an article is released, include it through the existing collection contract.
+- Preserve declared related-record and rule links without inventing associations.
+- Render learning blocks in their declared sequence, with supporting claims and prerequisite links.
+- If a related target is not released, show an unavailable target without exposing draft prose or inventing a replacement.
+
+### Shared presentation
+
+Use the [knowledge model](../design-docs/knowledge-model.md#access) for package access and offline data boundaries.
+Use [knowledge quality](knowledge-quality.md) for publication eligibility and review claims.
+Source comparison does not establish full-corpus coverage or independent specialist approval.
+Show the recorded review scope and released snapshot identity; an unavailable approval must not become a certification label.
+Keep source views usable on compact and wide screens, with keyboard access and direct offline detail links.
+Missing citations must produce an explicit unavailable state, without substitute sources.
+
 ## Content boundary
 
 Source evidence and content review follow [Knowledge quality](knowledge-quality.md).

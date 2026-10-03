@@ -9,6 +9,7 @@ LiuYao is a pnpm monorepo for an offline-first Liu Yao PWA. Keep deterministic d
 - Product scope and non-goals → `docs/product-specs/product-scope.md`
 - Quẻ and Liu Yao rules → `docs/design-docs/liuyao-ruleset-v1.md`
 - Knowledge evidence and supplied books → `docs/product-specs/knowledge-quality.md`
+- Knowledge completion and audit sequence → `features/knowledge-roadmap.md`
 - Development and verification → `docs/development.md`
 - Licensing boundaries → `LICENSING.md`
 - Feature state → `feature_index.json`

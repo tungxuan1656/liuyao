@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-03 — feat-013
+
+**State**: done.
+**Done**: Closed product identity after the Product Owner confirmed the physical-iOS install retest and the launch research.
+**Evidence**: Product Owner confirmation (2026-10-03) covers the F12-T16 install retest and the F12-T07 name-conflict, domain-availability, and trademark-risk research; the repository adds no device or research artifact of its own. Earlier approvals, waivers, and browser-level checks remain recorded in the 2026-10-01 and 2026-10-02 blocks.
+**Blockers**: none.
+**Next**: None. Reopen if installed-PWA rendering or identity metadata regresses.
+
 ## 2026-10-02 — feat-013 PR review follow-up
 
 **State**: active; review fixes are implemented and verified, with physical-device safe-area/blur retest still pending.
@@ -926,3 +934,38 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Coverage: 172 records, 1,226 cited claims, 1,015 locators. Classical coverage is 40/64 quẻ and 240/384 positions per commentary book. Twenty-four quẻ retain unaudited compatibility content.
 - Blockers: none for selected claims. Unclear references, full coverage, calendar algorithms, and independent specialist approval remain excluded or incomplete.
 - Next: Review Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16 (PDF 81–82).
+
+## 2026-10-02 — feat-042 complete-corpus roadmap
+
+- Status: active.
+- Result: Created 55 intended execution features for remaining authoring, audit tooling, sixteen four-quẻ audits, ten group audits, and independent certification. Preserved 384 separate hào acceptance items. The roadmap lists all 24 missing quẻ, source ownership, and chapter checkpoints for separate commits.
+- Decision: Group coherent work in features; retain detailed quẻ, hào, and passage decisions in acceptance items and future ledgers.
+- Evidence: Baseline `./init.sh` passed 263 tests. Final graph, coverage-unit, route, fingerprint, and repository checks remain pending.
+- Blockers: None for planning. Future independent approval requires a named specialist.
+- Next: Verify and commit the backlog; keep execution features `todo`.
+
+## 2026-10-02 — feat-042 completed roadmap and verification
+
+- Status: done.
+- Result: Created the complete intended backlog, feat-043 through feat-097, and a linked roadmap. Consolidated the draft into 55 execution features, retaining chapter checkpoints, sixteen four-quẻ audits with 384 distinct hào items, and ten group audits. Added versioned evidence, independent approval, and correction gates.
+- Evidence: Final `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 158 local documentation targets, dependency graph, complete hào inventory, and diff checks passed. The prior 41 feature entries and current corpus remain unchanged.
+- Blockers: None for planning. No future content or audit feature has executed; specialist approval remains pending.
+- Next: Select feat-043 and build the source-to-record/exclusion crosswalk.
+
+## 2026-10-02 — feat-098–100 web integration planning
+
+- Status: todo; planning recorded, implementation not started.
+- Result: Added three web features for Library quẻ/hào details, contextual reading explanations, and topic/article/learning browsing with local search. Linked their intended contracts and dependencies into the roadmap. The backlog now contains 58 execution features.
+- Decision: Reuse released content without waiting for full-corpus certification. Complete feat-098 before its two dependents; future lessons do not block article browsing.
+- Evidence: `./init.sh` passed 263 tests with existing warnings. Corpus fingerprints, generated freshness, 163 local documentation targets, dependency graph, and diff checks passed. Prior feature entries, 384 audit items, corpus data, and application code remain unchanged.
+- Blockers: None for planning. Web behavior and direct UI checks remain unimplemented.
+- Next: Select feat-098 and assess implementation scope and external-plan criteria.
+
+## 2026-10-03 — feat-101–103 extended roadmap planning
+
+- Status: todo; planning recorded, implementation not started.
+- Result: Added extended-record/provenance contracts, package/web fidelity verification, and payload/offline snapshot hardening. Broadened Library plans to include trigrams, terms, rules, figures, and project conventions. The backlog now contains 61 execution features.
+- Decision: Sequence inventory → feat-101 → feat-067 → feat-097 before bulk authoring. Keep feat-066 closure required by final reconciliation. Web integration starts after feat-101 without waiting for full-corpus certification.
+- Evidence: `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 167 local documentation targets, dependency checks, and diff checks passed. All 384 audit items, corpus data, application code, and previous statuses remain unchanged.
+- Blockers: None for planning. Extended contracts, web fidelity, volume checks, and specialist approval remain unimplemented or pending.
+- Next: Select feat-043 and build the source-to-record/exclusion crosswalk, then complete feat-101.
