@@ -4,6 +4,7 @@ export const KNOWLEDGE_PACKAGE_VERSION = '0.1.0';
 
 export * from './catalog.js';
 export * from './book-catalog.js';
+export { upcastBookRecordV1 } from './book-migration.js';
 export type * from './book-schema.js';
 export type { BookTable } from './book-tables.js';
 export type * from './book-schema-v2.js';

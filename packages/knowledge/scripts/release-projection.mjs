@@ -1,8 +1,8 @@
 /** Build the public, release-only payload from a corpus that passed validation. */
-import { createSnapshotIdentity } from './snapshot-identity.mjs';
+import { compareCanonicalStrings, createSnapshotIdentity } from './snapshot-identity.mjs';
 
 export function createReleaseProjection({ manifest, records, citations, sources }) {
-  const releaseIds = [...manifest.releaseIds].sort();
+  const releaseIds = [...manifest.releaseIds].sort(compareCanonicalStrings);
   const released = new Set(releaseIds);
   const selectedRecords = records.filter(record => released.has(record.id));
   const claimById = new Map();
@@ -74,9 +74,13 @@ export function createReleaseProjection({ manifest, records, citations, sources 
       const contract = contractsByPath.get(documentPath);
       if (!contract)
         throw new Error(`Release projection lacks accepted project contract ${documentPath}`);
-      return { documentPath, revision: contract.revision, sections: [...sections].sort() };
+      return {
+        documentPath,
+        revision: contract.revision,
+        sections: [...sections].sort(compareCanonicalStrings),
+      };
     })
-    .sort((left, right) => left.documentPath.localeCompare(right.documentPath));
+    .sort((left, right) => compareCanonicalStrings(left.documentPath, right.documentPath));
 
   for (const [claimId, claim] of claimById)
     for (const dependencyId of claim.dependsOnClaimIds ?? [])
@@ -87,7 +91,9 @@ export function createReleaseProjection({ manifest, records, citations, sources 
 
   const projection = {
     schemaVersion: manifest.schemaVersion,
-    recordSchemaVersions: [...new Set(selectedRecords.map(record => record.schemaVersion))].sort(),
+    recordSchemaVersions: [...new Set(selectedRecords.map(record => record.schemaVersion))].sort(
+      (left, right) => left - right,
+    ),
     corpusId: manifest.corpusId,
     language: manifest.language,
     releaseIds,

@@ -7,11 +7,11 @@ import {
   symlinkSync,
   writeFileSync,
 } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
-import { spawnSync } from 'node:child_process';
 import { expect, it } from 'vitest';
 import { createReleaseProjection } from '../scripts/release-projection.mjs';
 import { createSnapshotIdentity } from '../scripts/snapshot-identity.mjs';
@@ -196,6 +196,76 @@ it('canonicalizes declared reference sets but preserves semantic collection orde
   reorderedBlocks.blocks.reverse();
   expect(createSnapshotIdentity(base)).not.toBe(createSnapshotIdentity(reorderedBlocks));
   expect(createSnapshotIdentity({ a: 1, b: 2 })).toBe(createSnapshotIdentity({ b: 2, a: 1 }));
+});
+
+it('produces the same canonical identity under different process locales', () => {
+  const script = `
+    String.prototype.localeCompare = () => { throw new Error('localeCompare must not affect canonical identity'); };
+    import { createReleaseProjection } from ${JSON.stringify(new URL('../scripts/release-projection.mjs', import.meta.url).href)};
+    const recordIds = ['éclair', 'Zebra', 'apple', 'Ångström'];
+    const paths = ['docs/éclair.md', 'docs/Zebra.md', 'docs/apple.md', 'docs/Ångström.md'];
+    const records = recordIds.map((id, index) => ({
+      schemaVersion: 2,
+      id,
+      type: 'article',
+      title: id,
+      aliases: [],
+      topicIds: ['topic-fixture'],
+      claims:
+        index === 0
+          ? paths.map((documentPath, pathIndex) => ({
+              id: 'claim-' + pathIndex,
+              kind: 'project-convention',
+              text: 'Synthetic project evidence.',
+              citationIds: [],
+              projectEvidence: [{ documentPath, section: '## ' + id, revision: 'synthetic' }],
+            }))
+          : [],
+      relatedIds: [],
+      review: {
+        status: 'reviewed',
+        evidenceClaimIds: index === 0 ? paths.map((_, i) => 'claim-' + i) : [],
+      },
+    }));
+    const projection = createReleaseProjection({
+      manifest: {
+        schemaVersion: 1,
+        corpusId: 'locale-fixture',
+        language: 'vi',
+        releaseIds: [...recordIds].reverse(),
+        topics: [{ id: 'topic-fixture', title: 'Fixture', track: 'shared', status: 'partial' }],
+        projectContracts: paths.map(documentPath => ({
+          documentPath,
+          revision: 'synthetic',
+          sections: ['## éclair', '## Zebra', '## apple', '## Ångström'],
+        })).reverse(),
+      },
+      records,
+      citations: [],
+      sources: [],
+    });
+    console.log(JSON.stringify({
+      identity: projection.snapshotIdentity,
+      releaseIds: projection.releaseIds,
+      projectContractPaths: projection.projectContracts.map(contract => contract.documentPath),
+    }));
+  `;
+  const identities = ['en_US.UTF-8', 'vi_VN.UTF-8', 'tr_TR.UTF-8', 'C'].map(locale => {
+    const result = spawnSync(process.execPath, ['--input-type=module', '-e', script], {
+      encoding: 'utf8',
+      env: { ...process.env, LANG: locale, LC_ALL: locale },
+    });
+    expect(result.status, result.stderr).toBe(0);
+    return JSON.parse(result.stdout.trim());
+  });
+  expect(identities).toEqual([identities[0], identities[0], identities[0], identities[0]]);
+  expect(identities[0].releaseIds).toEqual(['Zebra', 'apple', 'Ångström', 'éclair']);
+  expect(identities[0].projectContractPaths).toEqual([
+    'docs/Zebra.md',
+    'docs/apple.md',
+    'docs/Ångström.md',
+    'docs/éclair.md',
+  ]);
 });
 
 it('projects released collections in authoring order and hashes semantic release changes', () => {

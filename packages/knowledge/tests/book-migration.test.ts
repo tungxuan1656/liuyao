@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import manifest from '../data/manifest.json';
-import { upcastBookRecordV1 } from '../src/book-migration.js';
+import { upcastBookRecordV1 } from '../src/index.js';
 import type { BookRecordV1 } from '../src/book-schema.js';
 import type { BookRecordV2 } from '../src/book-schema-v2.js';
 

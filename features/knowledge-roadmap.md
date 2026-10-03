@@ -64,7 +64,7 @@ Execution statuses live in [the feature index](../feature_index.json). Feat-101 
 Adding plans and changing dependencies does not activate their implementation.
 Creating features does not execute authoring, audits, web changes, or certification.
 
-1. Complete feat-101's approved representation, provenance, and release-snapshot contracts; runtime lesson-review coverage and full repository checks now pass, while `./init.sh` and final acceptance remain open in [the feature handoff](feat-101.md).
+1. Complete feat-101's approved representation, provenance, and release-snapshot contracts. Full checks and `./init.sh` passed before the current package hash-fix; reverify affected checks after that fix, then review/merge feat-101. Final acceptance remains open in [the feature handoff](feat-101.md).
 2. Complete feat-067 audit tooling and feat-097 correction probes before bulk authoring.
 3. Continue feat-044 through feat-066, interleaving eligible quẻ/group audits after their source batches finish.
 4. Reconcile topic/source findings, obtain named specialist approval, and certify the authored snapshot through feat-094–096.
@@ -252,7 +252,7 @@ The [quality contract](../docs/product-specs/knowledge-quality.md#intended-runti
 
 ## Concrete next action
 
-Implement Checkpoint 1 of [feat-101](feat-101.md): add strict version-2 schema/types and a tested non-mutating V1 upcast.
+Review and rerun affected checks for [feat-101](feat-101.md)'s current package hash-fix, then merge after review; Checkpoint 1 is already implemented.
 Preserve the version-1 schema path and all 172 authored V1 records.
 Then complete feat-067 audit tooling and feat-097 correction probes before bulk authoring. Web integration starts with feat-098 after feat-101.
 The next content group remains Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16.

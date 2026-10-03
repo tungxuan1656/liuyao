@@ -10,9 +10,32 @@ import {
   searchKnowledge,
   getBookSnapshotIdentity,
   resolveBookNavigation,
+  upcastBookRecordV1,
 } from '../src/index';
+import type { BookRecordV1 } from '../src/index';
 
 describe('released book knowledge API', () => {
+  it('exports the pure V1 upcast through the package entry point', () => {
+    const input = {
+      schemaVersion: 1,
+      id: 'article-public-upcast',
+      type: 'article',
+      title: 'Synthetic public API fixture',
+      aliases: [],
+      topicIds: ['topic-fixture'],
+      claims: [],
+      relatedIds: [],
+      review: { status: 'draft' },
+      rights: { basis: 'original-summary-and-structured-facts', license: 'All Rights Reserved' },
+    } as const satisfies BookRecordV1;
+    const result = upcastBookRecordV1(input);
+
+    expect(result).toEqual({ ...input, schemaVersion: 2 });
+    expect(result).not.toBe(input);
+    expect(result.claims).not.toBe(input.claims);
+    expect(input.schemaVersion).toBe(1);
+  });
+
   it('exposes an immutable snapshot identity and does not leak unavailable navigation targets', () => {
     const identity = getBookSnapshotIdentity();
     expect(identity).toMatch(/^liuyao-knowledge-snapshot-v1:sha256:[a-f0-9]{64}$/);
