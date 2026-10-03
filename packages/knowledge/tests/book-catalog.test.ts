@@ -8,9 +8,22 @@ import {
   getBookSource,
   getHexagram,
   searchKnowledge,
+  getBookSnapshotIdentity,
+  resolveBookNavigation,
 } from '../src/index';
 
 describe('released book knowledge API', () => {
+  it('exposes an immutable snapshot identity and does not leak unavailable navigation targets', () => {
+    const identity = getBookSnapshotIdentity();
+    expect(identity).toMatch(/^liuyao-knowledge-snapshot-v1:sha256:[a-f0-9]{64}$/);
+    expect(() => {
+      (identity as unknown as { value: string }).value = 'changed';
+    }).toThrow();
+    expect(resolveBookNavigation('draft-record-secret')).toEqual({ availability: 'unavailable' });
+    const known = listBookRecords()[0]!;
+    expect(resolveBookNavigation(known.id)).toEqual({ availability: 'available', record: known });
+  });
+
   it('exposes reviewed releases with stable IDs and attribution', () => {
     expect(listBookRecords()).toHaveLength(172);
     expect(listBookSources()).toHaveLength(4);
@@ -18,11 +31,30 @@ describe('released book knowledge API', () => {
     for (const record of listBookRecords()) {
       expect(record.review.status).toBe('reviewed');
       const claims = [
-        ...record.claims,
+        ...record.claims.map(claim => ({
+          id: claim.id,
+          citationIds: claim.citationIds as readonly string[],
+          kind: claim.kind,
+          attribution: claim.attribution,
+        })),
         ...(record.type === 'hexagram'
           ? [
-              ...record.lines.flatMap(line => line.claims),
-              ...record.specialPassages.flatMap(passage => passage.claims),
+              ...record.lines.flatMap(line =>
+                line.claims.map(claim => ({
+                  id: claim.id,
+                  citationIds: claim.citationIds as readonly string[],
+                  kind: claim.kind,
+                  attribution: claim.attribution,
+                })),
+              ),
+              ...record.specialPassages.flatMap(passage =>
+                passage.claims.map(claim => ({
+                  id: claim.id,
+                  citationIds: claim.citationIds as readonly string[],
+                  kind: claim.kind,
+                  attribution: claim.attribution,
+                })),
+              ),
             ]
           : []),
       ];

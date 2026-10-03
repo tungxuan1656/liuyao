@@ -1,0 +1,1773 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://liuyao.local/schemas/knowledge/record-v2.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    },
+    "type": {
+      "enum": ["trigram", "hexagram", "term", "rule", "article", "lesson"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "topicIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      },
+      "minItems": 1
+    },
+    "relatedIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "review": {
+      "$ref": "#/$defs/review"
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "basis": {
+          "enum": ["original-summary-and-structured-facts"]
+        },
+        "license": {
+          "const": "All Rights Reserved"
+        }
+      },
+      "required": ["basis", "license"]
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lineOrder": {
+          "const": "bottom-to-top"
+        },
+        "lines": {
+          "type": "array",
+          "items": {
+            "enum": ["yin", "yang"]
+          },
+          "minItems": 3,
+          "maxItems": 6
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "symbol": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "element": {
+          "enum": ["wood", "fire", "earth", "metal", "water"]
+        },
+        "kingWenNumber": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "upperTrigramId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "lowerTrigramId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        }
+      },
+      "required": ["lineOrder", "lines", "claimIds"]
+    },
+    "lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "position": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "polarity": {
+            "enum": ["yin", "yang"]
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/claim"
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["position", "polarity", "label", "claims"]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "specialPassages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/claim"
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["id", "title", "claims"]
+      },
+      "minItems": 0
+    },
+    "ruleset": {
+      "const": "liuyao-standard-v1"
+    },
+    "category": {
+      "enum": ["metadata", "structure", "transformation", "classification"]
+    },
+    "applicableRuleIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^rule-[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "tables": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "na-jia"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "trigramId": {
+                      "enum": [
+                        "trigram-heaven",
+                        "trigram-lake",
+                        "trigram-fire",
+                        "trigram-thunder",
+                        "trigram-wind",
+                        "trigram-water",
+                        "trigram-mountain",
+                        "trigram-earth"
+                      ]
+                    },
+                    "inner": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "stemId": {
+                            "type": "string",
+                            "pattern": "^term-stem-[a-z]+$"
+                          },
+                          "branchId": {
+                            "type": "string",
+                            "pattern": "^term-branch-[a-z]+$"
+                          }
+                        },
+                        "required": ["stemId", "branchId"]
+                      },
+                      "minItems": 3,
+                      "maxItems": 3
+                    },
+                    "outer": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "stemId": {
+                            "type": "string",
+                            "pattern": "^term-stem-[a-z]+$"
+                          },
+                          "branchId": {
+                            "type": "string",
+                            "pattern": "^term-branch-[a-z]+$"
+                          }
+                        },
+                        "required": ["stemId", "branchId"]
+                      },
+                      "minItems": 3,
+                      "maxItems": 3
+                    }
+                  },
+                  "required": ["trigramId", "inner", "outer"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "palaces"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "trigramId": {
+                      "enum": [
+                        "trigram-heaven",
+                        "trigram-lake",
+                        "trigram-fire",
+                        "trigram-thunder",
+                        "trigram-wind",
+                        "trigram-water",
+                        "trigram-mountain",
+                        "trigram-earth"
+                      ]
+                    },
+                    "element": {
+                      "enum": ["wood", "fire", "earth", "metal", "water"]
+                    },
+                    "hexagramIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^hexagram-(0[1-9]|[1-5][0-9]|6[0-4])$"
+                      },
+                      "minItems": 8,
+                      "maxItems": 8,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["trigramId", "element", "hexagramIds"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "markers"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "palaceSequence": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 8
+                    },
+                    "stage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "shiPosition": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 6
+                    },
+                    "yingPosition": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 6
+                    }
+                  },
+                  "required": ["palaceSequence", "stage", "shiPosition", "yingPosition"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "branch-elements"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "branchId": {
+                      "type": "string",
+                      "pattern": "^term-branch-[a-z]+$"
+                    },
+                    "element": {
+                      "enum": ["wood", "fire", "earth", "metal", "water"]
+                    }
+                  },
+                  "required": ["branchId", "element"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "element-cycles"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "from": {
+                      "enum": ["wood", "fire", "earth", "metal", "water"]
+                    },
+                    "relation": {
+                      "enum": ["generates", "controls"]
+                    },
+                    "to": {
+                      "enum": ["wood", "fire", "earth", "metal", "water"]
+                    }
+                  },
+                  "required": ["from", "relation", "to"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "relative-relations"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "relation": {
+                      "enum": [
+                        "same",
+                        "palace-generates-line",
+                        "palace-controls-line",
+                        "line-controls-palace",
+                        "line-generates-palace"
+                      ]
+                    },
+                    "relativeId": {
+                      "type": "string",
+                      "pattern": "^term-relative-[a-z-]+$"
+                    }
+                  },
+                  "required": ["relation", "relativeId"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "coin-outcomes"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "sapCount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 3
+                    },
+                    "nguaCount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 3
+                    },
+                    "lineClass": {
+                      "enum": ["young-yang", "young-yin", "old-yang", "old-yin"]
+                    },
+                    "polarity": {
+                      "enum": ["yin", "yang"]
+                    },
+                    "changing": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": ["sapCount", "nguaCount", "lineClass", "polarity", "changing"]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "const": "transformation"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "primaryHexagramId": {
+                      "type": "string",
+                      "pattern": "^hexagram-(0[1-9]|[1-5][0-9]|6[0-4])$"
+                    },
+                    "changedHexagramId": {
+                      "type": "string",
+                      "pattern": "^hexagram-(0[1-9]|[1-5][0-9]|6[0-4])$"
+                    },
+                    "movingPositions": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 6
+                      },
+                      "minItems": 1,
+                      "maxItems": 6,
+                      "uniqueItems": true
+                    },
+                    "primaryLines": {
+                      "type": "array",
+                      "items": {
+                        "enum": ["yin", "yang"]
+                      },
+                      "minItems": 6,
+                      "maxItems": 6
+                    },
+                    "changedLines": {
+                      "type": "array",
+                      "items": {
+                        "enum": ["yin", "yang"]
+                      },
+                      "minItems": 6,
+                      "maxItems": 6
+                    }
+                  },
+                  "required": [
+                    "primaryHexagramId",
+                    "changedHexagramId",
+                    "movingPositions",
+                    "primaryLines",
+                    "changedLines"
+                  ]
+                },
+                "minItems": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "sourceUnitIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "minItems": 1
+              },
+              "authorAlternatives": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "via": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": ["author", "description", "claimIds"]
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "claimIds", "rows"]
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "discrepancies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "status": {
+            "enum": ["resolved", "unresolved"]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "citationIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "resolution": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": ["id", "status", "description", "citationIds"],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "resolved"
+                }
+              }
+            },
+            "then": {
+              "required": ["resolution"]
+            }
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "prerequisiteLessonIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^lesson-[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lessonBlock"
+      },
+      "minItems": 1
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/figure"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "type",
+    "title",
+    "aliases",
+    "topicIds",
+    "claims",
+    "relatedIds",
+    "review",
+    "rights"
+  ],
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": [
+            "structural-fact",
+            "classical-meaning",
+            "author-interpretation",
+            "calculation-rule",
+            "project-convention"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "citationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "attribution": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "author": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "via": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": ["author"]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "dependsOnClaimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "projectEvidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/projectEvidence"
+          },
+          "minItems": 1
+        }
+      },
+      "required": ["id", "kind", "text", "citationIds"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": ["classical-meaning", "author-interpretation"]
+              }
+            }
+          },
+          "then": {
+            "required": ["attribution"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "project-convention"
+              }
+            },
+            "required": ["kind"]
+          },
+          "then": {
+            "required": ["projectEvidence"],
+            "properties": {
+              "citationIds": {
+                "maxItems": 0
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "citationIds": {
+                "minItems": 1
+              },
+              "projectEvidence": false
+            }
+          }
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": ["draft", "reviewed", "disputed", "superseded"]
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "method": {
+          "enum": ["source-comparison"]
+        },
+        "evidenceCitationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "evidenceClaimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": ["status"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "reviewed"
+              }
+            }
+          },
+          "then": {
+            "required": ["reviewer", "reviewedAt", "method", "evidenceCitationIds", "note"]
+          }
+        }
+      ]
+    },
+    "projectEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "documentPath": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": ["documentPath", "section", "revision"]
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^figure-[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": ["sequence", "placement", "transformation", "board", "plate"]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sourceUnitIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "labels": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            },
+            "required": ["id", "text", "claimIds"]
+          }
+        },
+        "claimIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "inspectionStatus": {
+          "enum": ["uninspected", "visually-inspected"]
+        },
+        "orientation": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "claimIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": ["description", "claimIds"]
+        },
+        "authorAlternatives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "author": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "via": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            },
+            "required": ["author", "description", "claimIds"]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "title",
+        "sourceUnitIds",
+        "labels",
+        "claimIds",
+        "inspectionStatus"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": ["sequence", "placement", "transformation", "board"]
+              }
+            },
+            "required": ["kind"]
+          },
+          "then": {
+            "properties": {
+              "sourceUnitIds": {
+                "minItems": 1
+              },
+              "labels": {
+                "minItems": 1
+              },
+              "claimIds": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "lessonBlock": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "position": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "kind": {
+              "enum": ["prose", "worked-example"]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "supportingClaimIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": ["id", "position", "kind", "text", "supportingClaimIds"]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            },
+            "position": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "kind": {
+              "enum": ["table", "figure"]
+            },
+            "target": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "enum": ["table", "figure"]
+                },
+                "recordId": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": ["kind", "recordId", "id"]
+            },
+            "supportingClaimIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": ["id", "position", "kind", "target", "supportingClaimIds"],
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "table"
+                  }
+                },
+                "required": ["kind"]
+              },
+              "then": {
+                "properties": {
+                  "target": {
+                    "properties": {
+                      "kind": {
+                        "const": "table"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^table-[a-z0-9]+(?:-[a-z0-9]+)*$"
+                      }
+                    }
+                  }
+                }
+              },
+              "else": {
+                "properties": {
+                  "target": {
+                    "properties": {
+                      "kind": {
+                        "const": "figure"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^figure-[a-z0-9]+(?:-[a-z0-9]+)*$"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "trigram"
+          }
+        }
+      },
+      "then": {
+        "required": ["structure"],
+        "properties": {
+          "id": {
+            "enum": [
+              "trigram-heaven",
+              "trigram-lake",
+              "trigram-fire",
+              "trigram-thunder",
+              "trigram-wind",
+              "trigram-water",
+              "trigram-mountain",
+              "trigram-earth"
+            ]
+          },
+          "structure": {
+            "required": ["symbol", "element"],
+            "properties": {
+              "lines": {
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "kingWenNumber": false,
+              "upperTrigramId": false,
+              "lowerTrigramId": false
+            }
+          },
+          "lines": false,
+          "specialPassages": false,
+          "ruleset": false,
+          "category": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "hexagram"
+          }
+        }
+      },
+      "then": {
+        "required": ["structure", "lines", "specialPassages"],
+        "properties": {
+          "id": {
+            "pattern": "^hexagram-(0[1-9]|[1-5][0-9]|6[0-4])$"
+          },
+          "structure": {
+            "required": ["kingWenNumber", "upperTrigramId", "lowerTrigramId"],
+            "properties": {
+              "lines": {
+                "minItems": 6,
+                "maxItems": 6
+              },
+              "symbol": false,
+              "element": false,
+              "upperTrigramId": {
+                "enum": [
+                  "trigram-heaven",
+                  "trigram-lake",
+                  "trigram-fire",
+                  "trigram-thunder",
+                  "trigram-wind",
+                  "trigram-water",
+                  "trigram-mountain",
+                  "trigram-earth"
+                ]
+              },
+              "lowerTrigramId": {
+                "enum": [
+                  "trigram-heaven",
+                  "trigram-lake",
+                  "trigram-fire",
+                  "trigram-thunder",
+                  "trigram-wind",
+                  "trigram-water",
+                  "trigram-mountain",
+                  "trigram-earth"
+                ]
+              }
+            }
+          },
+          "ruleset": false,
+          "category": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "term"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "id": {
+            "pattern": "^term-"
+          },
+          "structure": false,
+          "lines": false,
+          "specialPassages": false,
+          "ruleset": false,
+          "category": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "rule"
+          }
+        }
+      },
+      "then": {
+        "required": ["ruleset", "category"],
+        "properties": {
+          "id": {
+            "pattern": "^rule-"
+          },
+          "structure": false,
+          "lines": false,
+          "specialPassages": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "article"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "id": {
+            "pattern": "^article-"
+          },
+          "structure": false,
+          "lines": false,
+          "specialPassages": false,
+          "ruleset": false,
+          "category": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "lesson"
+          }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "required": ["sequence", "prerequisiteLessonIds", "blocks"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^lesson-[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "structure": false,
+          "lines": false,
+          "specialPassages": false,
+          "ruleset": false,
+          "category": false
+        }
+      },
+      "else": {
+        "properties": {
+          "sequence": false,
+          "prerequisiteLessonIds": false,
+          "blocks": false
+        }
+      }
+    }
+  ]
+}

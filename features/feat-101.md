@@ -1,48 +1,36 @@
-# feat-101 — Complete extended knowledge records and provenance contracts
+# feat-101 — Extended knowledge contracts
 
 ## Goal
 
-Represent lessons, source figures, and project conventions with explicit reusable evidence dependencies.
+Represent extended records, evidence dependencies, and release identity.
 
-## Scope
+## Scope and non-goals
 
-**Intended work:** Knowledge schemas, readonly types, public projections, release generation, and supported-version migration.
-
-## Non-goals
-
-Bulk authoring, calculation changes, web layout, remote storage, and specialist certification.
+Implement versioned schemas, non-mutating V1 upcast, evidence validation, release projection, and snapshot identity. Exclude bulk content, calculations, web/PWA behavior, and specialist certification.
 
 ## Acceptance
 
-- [ ] Implement the [extended record contract](../docs/design-docs/knowledge-model.md#intended-extended-records).
-- [ ] Lesson blocks resolve supporting claims; declared sequence and prerequisites validate without missing IDs or cycles.
-- [ ] Inventoried tables and diagrams retain unit evidence, orientation, and author alternatives.
-- [ ] Project conventions identify accepted specification sections and revisions without fabricated book citations.
-- [ ] Supporting dependencies require publishable evidence; navigation links retain distinct unavailable-target semantics.
-- [ ] JSON Schema and public types agree; stable identities and existing compatibility consumers survive migration.
-- [ ] Published payload excludes draft prose and exposes the [snapshot identity](../docs/design-docs/knowledge-model.md#intended-snapshot-identity).
-- [ ] Required verification and migration/rejection evidence are recorded.
+- [x] Implement the approved [record](../docs/design-docs/knowledge-model.md#approved-extended-record-contract) and [release](../docs/design-docs/knowledge-model.md#approved-release-projection-and-snapshot-identity) contracts.
+- [x] Validate lesson blocks, evidence, ordering, prerequisites, targets, and cycles at build time and runtime.
+- [x] Preserve figure/table evidence, orientation, source references, and alternatives.
+- [x] Validate project-convention evidence against registered sections and revisions without fabricated book citations.
+- [x] Keep evidence dependencies distinct from navigation and withhold unavailable-target details.
+- [x] Keep schemas, readonly public types, V1 migration, and compatibility APIs consistent.
+- [x] Generate a release-only payload without local paths or draft prose, with snapshot identity.
+- [x] Record test and verification evidence in the [plan](../docs/plans/feat-101.md).
 
-## Relevant docs
+Criteria pass; feat-101 stays active pending review, CI/PR, and coordinator decision.
 
-[Quality](../docs/product-specs/knowledge-quality.md), [content](../docs/product-specs/knowledge-content.md),
-[architecture](../ARCHITECTURE.md), [verification](../docs/development.md).
+## Evidence and limits
 
-## Plan
-
-1. Use feat-043 inventory to select required representations and document supported-version migration.
-2. Implement schema/type alignment, dependency checks, release projections, and snapshot generation.
-3. Verify legacy compatibility and rejection fixtures; commit coherent contract checkpoints.
-
-## Verify
-
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Package tests for migration, supporting references, project evidence, and draft-free runtime output.
+- Tests: C1 18; C2 107; knowledge 171; full suite 352 (181 core, 171 knowledge).
+- Format, lint, typecheck, test, build, corpus, book, and init checks passed. Four baseline lint warnings remain; six new-test warnings were fixed. 173 protected V1 records/schema files are unchanged.
+- No V2 content was authored. Structural evidence is not certification, specialist approval, or audit binding. Web/PWA, scale, and offline behavior are excluded.
+- Independent review, CI/PR, and final acceptance remain pending. Keep active.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Planning recorded; implementation has not started.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Complete feat-043, select this feature, and assess external-plan criteria before coding.
+- State: active; implementation and validation pass, delivery review remains.
+- See the [knowledge model](../docs/design-docs/knowledge-model.md#implemented-surface-and-limits) and [plan](../docs/plans/feat-101.md) for implementation evidence.
+- Blockers: Review, CI/PR, and acceptance.
+- Next: Coordinator commits the verified batch for risk review.

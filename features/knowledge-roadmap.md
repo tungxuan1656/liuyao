@@ -60,12 +60,12 @@ Quẻ, hào, chapters, questions, diagrams, and source cells remain separately r
 - Three web features reuse released records for Library details, result explanations, and topic/article browsing.
 - Three supporting features complete representation contracts, runtime fidelity, and measured offline delivery.
 
-All execution features below start as `todo`; [feat-042](feat-042.md) records completed corpus-roadmap creation.
+Execution statuses live in [the feature index](../feature_index.json). Feat-101 is active after the inventory phase; [feat-042](feat-042.md) records completed corpus-roadmap creation.
 Adding plans and changing dependencies does not activate their implementation.
 Creating features does not execute authoring, audits, web changes, or certification.
 
-1. Select feat-043 and reconcile every supplied section/page with records or a specific exclusion.
-2. Complete feat-101 representation contracts, feat-067 audit tooling, and feat-097 correction probes before bulk authoring.
+1. Complete feat-101's approved representation, provenance, and release-snapshot contracts; runtime lesson-review coverage and full repository checks now pass, while `./init.sh` and final acceptance remain open in [the feature handoff](feat-101.md).
+2. Complete feat-067 audit tooling and feat-097 correction probes before bulk authoring.
 3. Continue feat-044 through feat-066, interleaving eligible quẻ/group audits after their source batches finish.
 4. Reconcile topic/source findings, obtain named specialist approval, and certify the authored snapshot through feat-094–096.
 5. Repeat affected evidence checks after input changes; preserve earlier decisions and their reviewed inputs.
@@ -246,13 +246,13 @@ The [Library specification](../docs/product-specs/knowledge-browser.md#intended-
 These features do not depend on corpus completion or independent certification.
 Their acceptance checks released and unavailable content, correct context, accessibility, and offline behavior.
 Suggested PR grouping follows each coherent delivery, with checkpoint commits inside each PR.
-The [extended model](../docs/design-docs/knowledge-model.md#intended-extended-records) owns supporting versus navigation references.
+The [approved extended model](../docs/design-docs/knowledge-model.md#approved-extended-record-contract) owns supporting versus navigation references.
 The [quality contract](../docs/product-specs/knowledge-quality.md#intended-runtime-fidelity) owns fidelity evidence; the
 [PWA contract](../docs/design-docs/offline-pwa.md#intended-knowledge-scale-and-updates) owns volume and update behavior.
 
 ## Concrete next action
 
-Select feat-043 and build the source-to-record/exclusion crosswalk.
-Then complete feat-101; choose the early audit-tooling route or the web integration route according to the selected delivery.
-Bulk authoring starts after feat-067 and feat-097. Web integration starts with feat-098 after feat-101.
+Implement Checkpoint 1 of [feat-101](feat-101.md): add strict version-2 schema/types and a tested non-mutating V1 upcast.
+Preserve the version-1 schema path and all 172 authored V1 records.
+Then complete feat-067 audit tooling and feat-097 correction probes before bulk authoring. Web integration starts with feat-098 after feat-101.
 The next content group remains Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16.

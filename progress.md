@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-03 — feat-101 verification handoff
+
+**State**: active; implementation and repository verification pass, delivery review remains.
+**Done**: Reconciled schema, evidence-validation, release-projection, snapshot, and runtime lesson-review documentation. Kept acceptance and specialist/audit claims open.
+**Evidence**: `./init.sh` receipt `sh_10215cc44001Abxn70zd09XAk5` passed. Root format, lint, typecheck, build, exports, placement, and 352 tests passed (181 core, 171 knowledge); lint has four baseline warnings. Corpus/book checks passed for 172 records, 1,226 claims, 1,015 citations. Protected V1 records/schema comparison passed for 173 files. Runtime lesson tests cover direct and transitive support.
+**Blockers**: Independent review, CI/PR, and final feat-101 acceptance. No V2 lesson, figure, or project-convention content was authored.
+**Next**: Coordinator commits the verified batch and requests risk review; keep feat-101 active until review and delivery gates resolve.
+
 ## 2026-10-03 — feat-043
 
 **State**: done; source-section crosswalk and repository verification complete.

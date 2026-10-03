@@ -6,6 +6,9 @@ export * from './catalog.js';
 export * from './book-catalog.js';
 export type * from './book-schema.js';
 export type { BookTable } from './book-tables.js';
+export type * from './book-schema-v2.js';
+export type { BookNavigationResult } from './book-catalog.js';
+export type { BookSnapshotIdentity } from './book-snapshot.js';
 export * from './search.js';
 export type {
   FactDefinition,
