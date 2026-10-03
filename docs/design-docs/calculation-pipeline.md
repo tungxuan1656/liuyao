@@ -2,6 +2,9 @@
 
 This document owns the deterministic calculation order and calculation-data boundary in `@liuyao/core`.
 
+The [Liu Yao ruleset](liuyao-ruleset-v1.md) owns exact board tables, derivations, and supporting book passages.
+The [domain model](domain-model.md) owns input and result contracts.
+
 ## Flow
 
 Validated six lines
@@ -61,3 +64,6 @@ Use table-driven or golden fixtures.
 Minimum fixture coverage is defined in `docs/product-specs/v1-mvp.md`.
 
 Keep package tests under `packages/liuyao-core/tests` as required by `docs/development.md`.
+
+For independent source evidence and expected outcomes, follow [Knowledge quality](../product-specs/knowledge-quality.md).
+Agreement with existing fixtures does not certify the supplied-book provenance of those fixtures.

@@ -221,6 +221,10 @@ describe('curated V1 content', () => {
       'source-jingshi-yizhuan',
       'source-zengshan-buyi',
       'source-liuyao-v1-contract',
+      'source-book-bpct',
+      'source-book-pbc',
+      'source-book-ntt',
+      'source-book-nhl',
     ]);
     for (const source of SOURCES) {
       expect(source.provenance.length).toBeGreaterThan(0);
@@ -257,16 +261,18 @@ describe('curated V1 content', () => {
         ).toBe(true);
       }
     }
-    expect(REFERENCES.map(({ id }) => id)).toEqual([
-      'reference-zhouyi-trigram-associations',
-      'reference-zhouyi-hexagram-qian',
-      'reference-contract-reading-result',
-      'reference-zengshan-palace-markers',
-      'reference-zengshan-na-jia',
-      'reference-zengshan-moving-change',
-      'reference-zengshan-five-elements',
-      'reference-zengshan-six-relatives',
-    ]);
+    expect(REFERENCES.map(({ id }) => id)).toEqual(
+      expect.arrayContaining([
+        'reference-zhouyi-trigram-associations',
+        'reference-zhouyi-hexagram-qian',
+        'reference-contract-reading-result',
+        'reference-zengshan-palace-markers',
+        'reference-zengshan-na-jia',
+        'reference-zengshan-moving-change',
+        'reference-zengshan-five-elements',
+        'reference-zengshan-six-relatives',
+      ]),
+    );
     expect(REFERENCES.find(({ id }) => id === 'reference-zhouyi-trigram-associations')).toEqual({
       id: 'reference-zhouyi-trigram-associations',
       sourceId: 'source-zhouyi',

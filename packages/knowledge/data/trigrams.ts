@@ -1,71 +1,7 @@
+// Compatibility export; authored content lives in JSON.
+import { adaptedCatalog } from '../src/book-adapter.js';
 import type { TrigramEntity } from '../src/schema.js';
 
-export type TrigramRecord = TrigramEntity;
-
-/** Trigrams in the same order used by @liuyao/core. */
-export const TRIGRAMS = [
-  {
-    kind: 'trigram',
-    id: 'trigram-heaven',
-    name: 'Càn',
-    aliases: [],
-    explanation: 'Quái có ba hào dương, tượng trưng cho trời.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-lake',
-    name: 'Đoài',
-    aliases: [],
-    explanation: 'Quái có thứ tự hào từ dưới lên là dương, dương, âm; tượng trưng cho đầm.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-fire',
-    name: 'Ly',
-    aliases: [],
-    explanation: 'Quái có thứ tự hào từ dưới lên là dương, âm, dương; tượng trưng cho lửa.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-thunder',
-    name: 'Chấn',
-    aliases: [],
-    explanation: 'Quái có thứ tự hào từ dưới lên là dương, âm, âm; tượng trưng cho sấm.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-wind',
-    name: 'Tốn',
-    aliases: [],
-    explanation: 'Quái có thứ tự hào từ dưới lên là âm, dương, dương; tượng trưng cho gió.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-water',
-    name: 'Khảm',
-    aliases: [],
-    explanation: 'Quái có thứ tự hào từ dưới lên là âm, dương, âm; tượng trưng cho nước.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-mountain',
-    name: 'Cấn',
-    aliases: [],
-    explanation: 'Quái có thứ tự hào từ dưới lên là âm, âm, dương; tượng trưng cho núi.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-  {
-    kind: 'trigram',
-    id: 'trigram-earth',
-    name: 'Khôn',
-    aliases: [],
-    explanation: 'Quái có ba hào âm, tượng trưng cho đất.',
-    applicableRuleIds: ['rule-trigram-composition'],
-  },
-] as const satisfies readonly TrigramRecord[];
+export const TRIGRAMS = adaptedCatalog.entities.filter(
+  (entity): entity is TrigramEntity => entity.kind === 'trigram',
+) satisfies readonly TrigramEntity[];

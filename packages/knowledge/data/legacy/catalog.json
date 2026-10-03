@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "unaudited",
+  "note": "Compatibility content from the pre-book catalog. These records have not been certified against the supplied editions.",
+  "catalog": {
+    "entities": [
+      {
+        "kind": "hexagram",
+        "id": "hexagram-03",
+        "name": "Thủy Lôi Truân",
+        "aliases": [],
+        "explanation": "Quẻ số 3 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Khảm.",
+        "kingWenNumber": 3,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-04",
+        "name": "Sơn Thủy Mông",
+        "aliases": [],
+        "explanation": "Quẻ số 4 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Cấn.",
+        "kingWenNumber": 4,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-05",
+        "name": "Thủy Thiên Nhu",
+        "aliases": [],
+        "explanation": "Quẻ số 5 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Khảm.",
+        "kingWenNumber": 5,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-07",
+        "name": "Địa Thủy Sư",
+        "aliases": [],
+        "explanation": "Quẻ số 7 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Khôn.",
+        "kingWenNumber": 7,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-08",
+        "name": "Thủy Địa Tỷ",
+        "aliases": [],
+        "explanation": "Quẻ số 8 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Khảm.",
+        "kingWenNumber": 8,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-09",
+        "name": "Phong Thiên Tiểu Súc",
+        "aliases": [],
+        "explanation": "Quẻ số 9 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Tốn.",
+        "kingWenNumber": 9,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-11",
+        "name": "Địa Thiên Thái",
+        "aliases": [],
+        "explanation": "Quẻ số 11 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Khôn.",
+        "kingWenNumber": 11,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-12",
+        "name": "Thiên Địa Bĩ",
+        "aliases": [],
+        "explanation": "Quẻ số 12 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Càn.",
+        "kingWenNumber": 12,
+        "upperTrigramId": "trigram-heaven",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-13",
+        "name": "Thiên Hỏa Đồng Nhân",
+        "aliases": [],
+        "explanation": "Quẻ số 13 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Càn.",
+        "kingWenNumber": 13,
+        "upperTrigramId": "trigram-heaven",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-14",
+        "name": "Hỏa Thiên Đại Hữu",
+        "aliases": [],
+        "explanation": "Quẻ số 14 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Ly.",
+        "kingWenNumber": 14,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-15",
+        "name": "Địa Sơn Khiêm",
+        "aliases": [],
+        "explanation": "Quẻ số 15 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Khôn.",
+        "kingWenNumber": 15,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-16",
+        "name": "Lôi Địa Dự",
+        "aliases": [],
+        "explanation": "Quẻ số 16 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Chấn.",
+        "kingWenNumber": 16,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-17",
+        "name": "Trạch Lôi Tùy",
+        "aliases": [],
+        "explanation": "Quẻ số 17 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Đoài.",
+        "kingWenNumber": 17,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-18",
+        "name": "Sơn Phong Cổ",
+        "aliases": [],
+        "explanation": "Quẻ số 18 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Cấn.",
+        "kingWenNumber": 18,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-19",
+        "name": "Địa Trạch Lâm",
+        "aliases": [],
+        "explanation": "Quẻ số 19 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Khôn.",
+        "kingWenNumber": 19,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-20",
+        "name": "Phong Địa Quan",
+        "aliases": [],
+        "explanation": "Quẻ số 20 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Tốn.",
+        "kingWenNumber": 20,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-21",
+        "name": "Hỏa Lôi Phệ Hạp",
+        "aliases": [],
+        "explanation": "Quẻ số 21 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Ly.",
+        "kingWenNumber": 21,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-22",
+        "name": "Sơn Hỏa Bí",
+        "aliases": [],
+        "explanation": "Quẻ số 22 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Cấn.",
+        "kingWenNumber": 22,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-23",
+        "name": "Sơn Địa Bác",
+        "aliases": [],
+        "explanation": "Quẻ số 23 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Cấn.",
+        "kingWenNumber": 23,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-24",
+        "name": "Địa Lôi Phục",
+        "aliases": [],
+        "explanation": "Quẻ số 24 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Khôn.",
+        "kingWenNumber": 24,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-25",
+        "name": "Thiên Lôi Vô Vọng",
+        "aliases": [],
+        "explanation": "Quẻ số 25 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Càn.",
+        "kingWenNumber": 25,
+        "upperTrigramId": "trigram-heaven",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-26",
+        "name": "Thiên Sơn Đại Súc",
+        "aliases": [],
+        "explanation": "Quẻ số 26 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Cấn.",
+        "kingWenNumber": 26,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-27",
+        "name": "Sơn Lôi Di",
+        "aliases": [],
+        "explanation": "Quẻ số 27 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Cấn.",
+        "kingWenNumber": 27,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-28",
+        "name": "Trạch Phong Đại Quá",
+        "aliases": [],
+        "explanation": "Quẻ số 28 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Đoài.",
+        "kingWenNumber": 28,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-29",
+        "name": "Thuần Khảm",
+        "aliases": [],
+        "explanation": "Quẻ số 29 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Khảm.",
+        "kingWenNumber": 29,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-30",
+        "name": "Thuần Ly",
+        "aliases": [],
+        "explanation": "Quẻ số 30 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Ly.",
+        "kingWenNumber": 30,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-31",
+        "name": "Trạch Sơn Hàm",
+        "aliases": [],
+        "explanation": "Quẻ số 31 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Đoài.",
+        "kingWenNumber": 31,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-32",
+        "name": "Lôi Phong Hằng",
+        "aliases": [],
+        "explanation": "Quẻ số 32 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Chấn.",
+        "kingWenNumber": 32,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-33",
+        "name": "Thiên Sơn Độn",
+        "aliases": [],
+        "explanation": "Quẻ số 33 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Càn.",
+        "kingWenNumber": 33,
+        "upperTrigramId": "trigram-heaven",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-34",
+        "name": "Lôi Thiên Đại Tráng",
+        "aliases": [],
+        "explanation": "Quẻ số 34 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Chấn.",
+        "kingWenNumber": 34,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-35",
+        "name": "Hỏa Địa Tấn",
+        "aliases": [],
+        "explanation": "Quẻ số 35 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Ly.",
+        "kingWenNumber": 35,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-36",
+        "name": "Địa Hỏa Minh Di",
+        "aliases": [],
+        "explanation": "Quẻ số 36 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Khôn.",
+        "kingWenNumber": 36,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-37",
+        "name": "Phong Hỏa Gia Nhân",
+        "aliases": [],
+        "explanation": "Quẻ số 37 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Tốn.",
+        "kingWenNumber": 37,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-38",
+        "name": "Hỏa Trạch Khuê",
+        "aliases": [],
+        "explanation": "Quẻ số 38 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Ly.",
+        "kingWenNumber": 38,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-39",
+        "name": "Thủy Sơn Kiển",
+        "aliases": [],
+        "explanation": "Quẻ số 39 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Khảm.",
+        "kingWenNumber": 39,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-40",
+        "name": "Lôi Thủy Giải",
+        "aliases": [],
+        "explanation": "Quẻ số 40 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Chấn.",
+        "kingWenNumber": 40,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-41",
+        "name": "Sơn Trạch Tổn",
+        "aliases": [],
+        "explanation": "Quẻ số 41 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Cấn.",
+        "kingWenNumber": 41,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-42",
+        "name": "Phong Lôi Ích",
+        "aliases": [],
+        "explanation": "Quẻ số 42 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Tốn.",
+        "kingWenNumber": 42,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-43",
+        "name": "Trạch Thiên Quải",
+        "aliases": [],
+        "explanation": "Quẻ số 43 theo thứ tự Văn Vương, gồm nội quái Càn và ngoại quái Đoài.",
+        "kingWenNumber": 43,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-heaven",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-44",
+        "name": "Thiên Phong Cấu",
+        "aliases": [],
+        "explanation": "Quẻ số 44 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Càn.",
+        "kingWenNumber": 44,
+        "upperTrigramId": "trigram-heaven",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-45",
+        "name": "Trạch Địa Tụy",
+        "aliases": [],
+        "explanation": "Quẻ số 45 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Đoài.",
+        "kingWenNumber": 45,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-earth",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-46",
+        "name": "Địa Phong Thăng",
+        "aliases": [],
+        "explanation": "Quẻ số 46 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Khôn.",
+        "kingWenNumber": 46,
+        "upperTrigramId": "trigram-earth",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-47",
+        "name": "Trạch Thủy Khốn",
+        "aliases": [],
+        "explanation": "Quẻ số 47 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Đoài.",
+        "kingWenNumber": 47,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-48",
+        "name": "Thủy Phong Tỉnh",
+        "aliases": [],
+        "explanation": "Quẻ số 48 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Khảm.",
+        "kingWenNumber": 48,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-49",
+        "name": "Trạch Hỏa Cách",
+        "aliases": [],
+        "explanation": "Quẻ số 49 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Đoài.",
+        "kingWenNumber": 49,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-50",
+        "name": "Hỏa Phong Đỉnh",
+        "aliases": [],
+        "explanation": "Quẻ số 50 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Ly.",
+        "kingWenNumber": 50,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-51",
+        "name": "Thuần Chấn",
+        "aliases": [],
+        "explanation": "Quẻ số 51 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Chấn.",
+        "kingWenNumber": 51,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-thunder",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-52",
+        "name": "Thuần Cấn",
+        "aliases": [],
+        "explanation": "Quẻ số 52 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Cấn.",
+        "kingWenNumber": 52,
+        "upperTrigramId": "trigram-mountain",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-53",
+        "name": "Phong Sơn Tiệm",
+        "aliases": [],
+        "explanation": "Quẻ số 53 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Tốn.",
+        "kingWenNumber": 53,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-54",
+        "name": "Lôi Trạch Quy Muội",
+        "aliases": [],
+        "explanation": "Quẻ số 54 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Chấn.",
+        "kingWenNumber": 54,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-55",
+        "name": "Lôi Hỏa Phong",
+        "aliases": [],
+        "explanation": "Quẻ số 55 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Chấn.",
+        "kingWenNumber": 55,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-56",
+        "name": "Hỏa Sơn Lữ",
+        "aliases": [],
+        "explanation": "Quẻ số 56 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Ly.",
+        "kingWenNumber": 56,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-57",
+        "name": "Thuần Tốn",
+        "aliases": [],
+        "explanation": "Quẻ số 57 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Tốn.",
+        "kingWenNumber": 57,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-wind",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-58",
+        "name": "Thuần Đoài",
+        "aliases": [],
+        "explanation": "Quẻ số 58 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Đoài.",
+        "kingWenNumber": 58,
+        "upperTrigramId": "trigram-lake",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-59",
+        "name": "Phong Thủy Hoán",
+        "aliases": [],
+        "explanation": "Quẻ số 59 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Tốn.",
+        "kingWenNumber": 59,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-60",
+        "name": "Thủy Trạch Tiết",
+        "aliases": [],
+        "explanation": "Quẻ số 60 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Khảm.",
+        "kingWenNumber": 60,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-61",
+        "name": "Phong Trạch Trung Phu",
+        "aliases": [],
+        "explanation": "Quẻ số 61 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Tốn.",
+        "kingWenNumber": 61,
+        "upperTrigramId": "trigram-wind",
+        "lowerTrigramId": "trigram-lake",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-62",
+        "name": "Lôi Sơn Tiểu Quá",
+        "aliases": [],
+        "explanation": "Quẻ số 62 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Chấn.",
+        "kingWenNumber": 62,
+        "upperTrigramId": "trigram-thunder",
+        "lowerTrigramId": "trigram-mountain",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-63",
+        "name": "Thủy Hỏa Ký Tế",
+        "aliases": [],
+        "explanation": "Quẻ số 63 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Khảm.",
+        "kingWenNumber": 63,
+        "upperTrigramId": "trigram-water",
+        "lowerTrigramId": "trigram-fire",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "kind": "hexagram",
+        "id": "hexagram-64",
+        "name": "Hỏa Thủy Vị Tế",
+        "aliases": [],
+        "explanation": "Quẻ số 64 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Ly.",
+        "kingWenNumber": 64,
+        "upperTrigramId": "trigram-fire",
+        "lowerTrigramId": "trigram-water",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      }
+    ],
+    "terms": [
+      {
+        "id": "term-ruleset",
+        "name": "Quy ước tính",
+        "aliases": [],
+        "definition": "Bộ quy ước được dùng để tạo ra một kết quả gieo quẻ có thể tái lập."
+      },
+      {
+        "id": "term-primary-hexagram",
+        "name": "Quẻ chính",
+        "aliases": [],
+        "definition": "Quẻ gồm sáu hào được xác định trực tiếp từ các giá trị đầu vào.",
+        "applicableRuleIds": ["rule-trigram-composition"]
+      },
+      {
+        "id": "term-changed-hexagram",
+        "name": "Quẻ biến",
+        "aliases": [],
+        "definition": "Quẻ tạo ra khi đổi tính âm dương của từng hào động; không có quẻ biến nếu không có hào động.",
+        "applicableRuleIds": ["rule-moving-line-change", "rule-trigram-composition"]
+      },
+      {
+        "id": "term-line-value",
+        "name": "Giá trị hào",
+        "aliases": [],
+        "definition": "Giá trị đầu vào 6, 7, 8 hoặc 9, biểu thị tính âm dương và trạng thái động của hào.",
+        "applicableRuleIds": ["rule-line-polarity-values", "rule-moving-line-change"]
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-reading-result-fields",
+        "ruleset": "liuyao-standard-v1",
+        "title": "Các trường của kết quả gieo quẻ",
+        "explanation": "Kết quả gồm mã quy ước tính, mã quẻ chính và quẻ biến, mã nội quái và ngoại quái, cung và ngũ hành của cung, cùng vị trí hào Thế và hào Ứng. Đây là các giá trị phân loại được tính ra, không phải lời dự đoán.",
+        "category": "metadata"
+      },
+      {
+        "id": "rule-line-polarity-values",
+        "ruleset": "liuyao-standard-v1",
+        "title": "Giá trị hào và tính âm dương",
+        "explanation": "Giá trị đầu vào 6 và 8 là âm; giá trị 7 và 9 là dương. Kết quả vẫn ghi lại giá trị đầu vào của hào trong quẻ chính.",
+        "category": "classification"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-zhouyi",
+        "title": "Chu Dịch (Kinh Dịch)",
+        "author": "Theo truyền thống gắn với Chu Văn Vương và Chu Công; bản văn lưu truyền có nhiều lớp tác giả.",
+        "publication": "Bản kinh điển lưu truyền; mục này không khẳng định niên đại biên soạn hoặc lịch sử xuất bản.",
+        "rights": "Tác phẩm cổ; bản văn kinh điển được dẫn thuộc phạm vi công cộng. Mục này chỉ diễn đạt lại thông tin thư mục bằng lời riêng, không sao chép bản dịch.",
+        "provenance": "Bản Chu Dịch lưu truyền gồm lời quẻ và lời hào; phần Thập Dực lưu truyền có thiên Thuyết Quái bàn về các quái và thuộc tính gắn với chúng. Nguồn tra cứu thư mục: Dự án Văn bản Trung Hoa, https://ctext.org/book-of-changes."
+      },
+      {
+        "id": "source-jingshi-yizhuan",
+        "title": "Kinh Thị Dịch Truyện",
+        "author": "Tương truyền do Kinh Phòng biên soạn.",
+        "publication": "Văn bản cổ được quy cho Kinh Phòng; mục này không khẳng định niên đại biên soạn hoặc lịch sử xuất bản.",
+        "rights": "Tác phẩm cổ; bản văn kinh điển được dẫn thuộc phạm vi công cộng. Mục này chỉ diễn đạt lại thông tin thư mục bằng lời riêng, không sao chép bản dịch.",
+        "provenance": "Tác phẩm gắn với học giả Kinh Phòng thời Hán và cách giải Dịch của ông. Nguồn tra cứu thư mục: Dự án Văn bản Trung Hoa, https://ctext.org/jingshi-yizhuan/zh. Chỉ ghi nhận làm bối cảnh lịch sử; mục này không khẳng định tác phẩm có đầy đủ các bảng Lục Hào được dùng về sau."
+      },
+      {
+        "id": "source-zengshan-buyi",
+        "title": "Tăng San Bốc Dịch",
+        "author": "Dự án Văn bản Trung Hoa ghi tác giả là Dã Hạc Lão Nhân; quá trình truyền bản và biên tập về sau có liên hệ với Lý Văn Huy.",
+        "publication": "Văn bản truyền thống; mục này không khẳng định ấn bản, niên đại biên soạn hoặc lịch sử xuất bản.",
+        "rights": "Nguyên tác kinh điển thuộc phạm vi công cộng. Mục này chỉ diễn đạt lại thông tin thư mục bằng lời riêng, không sao chép nguyên văn hoặc bản dịch.",
+        "provenance": "Dự án Văn bản Trung Hoa ghi tác giả Dã Hạc Lão Nhân tại https://ctext.org/wiki.pl?if=en&res=497805; lời bạt quyển hai ghi phần bổ sung của Lý Văn Huy tại https://ctext.org/wiki.pl?chapter=157683&if=en. Văn bản được dẫn cũng có tại Wikisource: https://zh.wikisource.org/zh-hans/%E5%A2%9E%E5%88%AA%E5%8D%9C%E6%98%93. Các chương được dẫn thuộc chính văn; phần phụ lục do người đóng góp thêm không được xem là nội dung của sách."
+      },
+      {
+        "id": "source-liuyao-v1-contract",
+        "title": "Đặc tả tính toán Lục Hào phiên bản 1",
+        "author": "Nhóm duy trì dự án Lục Hào.",
+        "publication": "Đặc tả trong mã nguồn và phần triển khai xác định của phiên bản 1.",
+        "rights": "Mã nguồn dự án được cấp phép theo AGPL-3.0-only.",
+        "provenance": "Các hợp đồng và phép tính tại packages/liuyao-core/src/contracts.ts, calculation.ts và board.ts xác định các trường kết quả cùng quy ước phiên bản 1 mà kho mã này triển khai."
+      }
+    ],
+    "references": [
+      {
+        "id": "reference-zhouyi-trigram-associations",
+        "sourceId": "source-zhouyi",
+        "targetIds": ["term-trigram", "trigram-heaven"],
+        "location": "Thiên Thuyết Quái, phần bàn về tám quái và các thuộc tính gắn với chúng."
+      },
+      {
+        "id": "reference-zhouyi-hexagram-qian",
+        "sourceId": "source-zhouyi",
+        "targetIds": ["hexagram-01"],
+        "location": "Lời quẻ Thuần Càn."
+      },
+      {
+        "id": "reference-contract-reading-result",
+        "sourceId": "source-liuyao-v1-contract",
+        "targetIds": [
+          "rule-reading-result-fields",
+          "rule-line-position-order",
+          "rule-line-polarity-values",
+          "rule-trigram-composition"
+        ],
+        "location": "Các cấu trúc dữ liệu kết quả gieo quẻ, kết quả từng hào và hàm tính phiên bản 1."
+      },
+      {
+        "id": "reference-zengshan-palace-markers",
+        "sourceId": "source-zengshan-buyi",
+        "targetIds": ["rule-palace-and-markers"],
+        "location": "Quyển 1, chương 3 (Bát cung) và chương 6 (Thế và Ứng)."
+      },
+      {
+        "id": "reference-zengshan-na-jia",
+        "sourceId": "source-zengshan-buyi",
+        "targetIds": ["rule-na-jia-assignment"],
+        "location": "Quyển 1, chương 4 (Nạp Giáp)."
+      },
+      {
+        "id": "reference-zengshan-moving-change",
+        "sourceId": "source-zengshan-buyi",
+        "targetIds": ["rule-moving-line-change"],
+        "location": "Quyển 1, chương 7 (hào động và sự biến đổi)."
+      },
+      {
+        "id": "reference-zengshan-five-elements",
+        "sourceId": "source-zengshan-buyi",
+        "targetIds": ["rule-branch-element", "rule-five-element-cycles"],
+        "location": "Quyển 1, chương 11–12 (ngũ hành tương sinh và tương khắc)."
+      },
+      {
+        "id": "reference-zengshan-six-relatives",
+        "sourceId": "source-zengshan-buyi",
+        "targetIds": ["rule-six-relative-classification"],
+        "location": "Quyển 1, chương 5 (Lục thân)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-heavenly-stem",
+  "type": "term",
+  "title": "Thiên can",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-heavenly-stem-definition",
+      "kind": "structural-fact",
+      "text": "Một trong mười can; trong Nạp Giáp, thiên can được gán cho hào theo quái.",
+      "citationIds": ["citation-bpct-p8-technical", "citation-bpct-p13-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p8-technical", "citation-bpct-p13-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-na-jia-assignment"]
+}

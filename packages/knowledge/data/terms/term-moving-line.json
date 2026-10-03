@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-moving-line",
+  "type": "term",
+  "title": "Hào động",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-moving-line-definition",
+      "kind": "structural-fact",
+      "text": "Hào phát động sẽ đổi tính âm dương khi lập quẻ biến; trong phép ba đồng tiền được dẫn, đó là kết quả ba sấp hoặc ba ngửa.",
+      "citationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-moving-line-change"]
+}

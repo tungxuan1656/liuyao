@@ -54,6 +54,8 @@ Four-coin lines follow this distribution:
 
 Use browser cryptographic randomness for automatic outcomes. Do not use `Math.random()` or time-based formulas. Coin appearance and animation are specified in `ui-layout.md`; the coin mapping is a product-defined randomization model, not a traditional Liu Yao doctrinal claim.
 
+The [ruleset specification](../design-docs/liuyao-ruleset-v1.md#casting-evidence-boundary) records the supplied-book casting evidence and the unresolved physical-face correspondence.
+
 ### Direct input
 
 The user selects all six line values simultaneously, with four named options per line: **Lão âm** — moving yin, **Thiếu dương** — static yang, **Thiếu âm** — static yin, or **Lão dương** — moving yang. Show the canonical name and yao symbol without numeric values.

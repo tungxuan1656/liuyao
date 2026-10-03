@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-palace-element",
+  "type": "term",
+  "title": "Ngũ hành của cung",
+  "aliases": ["Hành của cung"],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-palace-element-definition",
+      "kind": "structural-fact",
+      "text": "Ngũ hành được gán cho cung của quẻ chính.",
+      "citationIds": ["citation-bpct-p14-technical", "citation-bpct-p11-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p11-technical", "citation-bpct-p14-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-palace-and-markers"]
+}

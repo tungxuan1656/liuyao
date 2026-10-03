@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "article-three-coin-casting",
+  "type": "article",
+  "title": "Gieo quẻ bằng ba đồng tiền",
+  "aliases": [],
+  "topicIds": ["topic-casting"],
+  "claims": [
+    {
+      "id": "claim-three-coin-outcomes",
+      "kind": "structural-fact",
+      "text": "Theo phép ba đồng tiền trong các đoạn đã đối chiếu: một sấp là dương tĩnh, hai sấp là âm tĩnh, ba sấp là dương động và ba ngửa là âm động. Gieo sáu lần và xếp lần lượt từ dưới lên.",
+      "citationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"],
+      "conditions": [
+        "Áp dụng cho cách gọi mặt sấp/ngửa trong các đoạn sách được dẫn.",
+        "Quan hệ giữa mặt tiền vật lý và biểu tượng mặt trời/mặt trăng trong ứng dụng chưa được xác lập. Phương pháp bốn đồng tiền của dự án cần được ghi nhận riêng."
+      ]
+    }
+  ],
+  "relatedIds": ["rule-line-position-order", "rule-moving-line-change"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "tables": [
+    {
+      "kind": "coin-outcomes",
+      "claimIds": ["claim-three-coin-outcomes"],
+      "rows": [
+        {
+          "sapCount": 0,
+          "nguaCount": 3,
+          "lineClass": "old-yin",
+          "polarity": "yin",
+          "changing": true
+        },
+        {
+          "sapCount": 1,
+          "nguaCount": 2,
+          "lineClass": "young-yang",
+          "polarity": "yang",
+          "changing": false
+        },
+        {
+          "sapCount": 2,
+          "nguaCount": 1,
+          "lineClass": "young-yin",
+          "polarity": "yin",
+          "changing": false
+        },
+        {
+          "sapCount": 3,
+          "nguaCount": 0,
+          "lineClass": "old-yang",
+          "polarity": "yang",
+          "changing": true
+        }
+      ]
+    }
+  ]
+}

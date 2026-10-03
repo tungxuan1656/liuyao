@@ -716,3 +716,37 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The pre-push hook passed typecheck and all package tests. Chromium review covered persistence, offline launch, responsive Settings, theme contrast, and storage-write failure.
 **Blockers**: None.
 **Next**: Review PR #54.
+
+## 2026-10-01 — feat-031 book-backed domain documentation
+
+**Result**: Added the supplied-book source catalog, V1 board derivations, and intended knowledge quality contract. Documented current TypeScript storage and proposed JSON/database options. Updated canonical routes and the release evidence gate. Recorded four source discrepancies and the unresolved relationship between product coin symbols and traditional physical faces.
+
+**Evidence**: Fresh `./init.sh` passed with 225 package tests. Local documentation links and four PDF fingerprints passed. Documentation tables match eight trigram patterns, 64 palace memberships, and 48 Na Jia assignments in current code. `git diff --check` passed.
+
+**Limits**: This is focused documentation review. Runtime records and fixtures still need individual supplied-book provenance. Full commentary review and JSON migration are not implemented. Supplied PDFs remain user-provided inputs.
+
+**Next**: Select the supplied-book audit of runtime knowledge records and calculation fixtures.
+
+## 2026-10-01 — feat-032 JSON pilot and package migration
+
+**State**: done for the approved pilot.
+**Done**: Added four fingerprinted source editions, strict schemas, cited JSON records, release checks, generated coverage, and readonly book APIs. Existing lookups use reviewed JSON plus an explicitly unaudited compatibility snapshot.
+**Evidence**: `./init.sh` passes with 263 package tests. Corpus fingerprint/freshness checks and `git diff --check` pass. Codex compared pilot passages and rendered symbol/table pages. Chromium loaded Càn and edition metadata after the production server stopped.
+**Limits**: Coverage is 4/64 quẻ and 24/384 line positions. PBC/NTT line commentary and independent specialist approval remain missing. The main JS bundle is approximately 679kB, 197kB gzip. Existing build/lint warnings remain.
+**Next**: Continue Truân, Mông, Nhu, Sư and BPCT chapter 5, sections 1–4, PDF 67–68. Include the missing PBC/NTT pilot line comparisons. Changes remain uncommitted.
+
+## 2026-10-01 — feat-032 pre-commit source review
+
+**State**: done for the pilot.
+**Done**: Rechecked authored claims against their cited passages and inspected the PBC/NTT Lý diagrams. Added BPCT PDF 13 to the Thiên can and Địa chi definitions so their Nạp Giáp clauses have direct evidence.
+**Evidence**: The corpus still has 73 records, 119 claims, and 43 citations. Full verification and fingerprint checks run before the pilot commit.
+**Blockers**: None.
+**Next**: Continue the approved next batch in a separate feature and commit each reviewed content group.
+
+## 2026-10-01 — feat-033 pilot commentary comparisons
+
+**State**: active. The foundation is committed as `111929a`.
+**Done**: Added PBC and NTT summaries for all 24 pilot line positions and separate Dụng cửu/Dụng lục readings. Preserved distinct Trình Di/Chu Hy interpretations. Recorded and visually confirmed the PBC PDF 66 and NTT PDF 144 Khôn label errors.
+**Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
+**Blockers**: None.
+**Next**: Verify and commit these comparisons, then author Truân, Mông, Nhu, and Sư.

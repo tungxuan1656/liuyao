@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-line-position",
+  "type": "term",
+  "title": "Vị trí hào",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "term-line-position-definition",
+      "kind": "structural-fact",
+      "text": "Thứ tự của hào, đánh số từ một đến sáu theo chiều từ dưới lên.",
+      "citationIds": ["citation-nhl-p59-61-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-nhl-p59-61-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-line-position-order"]
+}

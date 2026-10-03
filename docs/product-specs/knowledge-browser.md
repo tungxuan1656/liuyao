@@ -61,6 +61,9 @@ Show source titles and reference locations directly. Collapse author, publicatio
 
 ## Content boundary
 
+Source evidence and content review follow [Knowledge quality](knowledge-quality.md).
+The [source catalog](../references/book-sources.md) identifies the supplied editions and known discrepancies.
+
 Do not copy modern copyrighted translations or commentary without permission.
 
 Use original summaries, structured facts, public-domain material, or licensed text.

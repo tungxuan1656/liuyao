@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "citations": [
+    {
+      "id": "citation-bpct-p10-11-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "IX — Tượng của Bát quái",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 11,
+        "printedPageStart": "4",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p11-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "IX — Ngũ hành của Bát quái",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p11-12-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "X — Phép dùng đồng tiền thay cỏ thi",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 12,
+        "printedPageStart": "5",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p9-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9,
+        "printedPageStart": "3",
+        "printedPageEnd": "3"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p8-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "III — Địa chi; II — Thiên can",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p13-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "XII — Nạp Giáp trang quái ca",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 13,
+        "printedPageStart": "7",
+        "printedPageEnd": "7"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p12-14-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "XI–XIII — Bát cung và an Thế Ứng",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 14,
+        "printedPageStart": "6",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p14-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 1 — Phần cơ bản",
+        "section": "XIII — An Thế Ứng quyết",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p62-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 4 — Các quẻ",
+        "section": "Cung Khôn — Bát Thuần Khôn",
+        "pdfPageStart": 62,
+        "pdfPageEnd": 62,
+        "printedPageStart": "51",
+        "printedPageEnd": "51"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-bpct-p52-technical",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Chương 4 — Các quẻ",
+        "section": "Cung Khảm — Trạch Hỏa Cách",
+        "pdfPageStart": 52,
+        "pdfPageEnd": 52,
+        "printedPageStart": "41",
+        "printedPageEnd": "41"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-nhl-p59-61-technical",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Chương 4 — Thuật ngữ và quy tắc cần nhớ",
+        "section": "Thuật ngữ; Hào cửu — Hào lục",
+        "pdfPageStart": 59,
+        "pdfPageEnd": 61,
+        "printedPageStart": "59",
+        "printedPageEnd": "61"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-nhl-p72-73-technical",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Chương 4 — Thuật ngữ và quy tắc cần nhớ",
+        "section": "Động và biến",
+        "pdfPageStart": 72,
+        "pdfPageEnd": 73,
+        "printedPageStart": "72",
+        "printedPageEnd": "73"
+      },
+      "textLayer": "technical-exposition"
+    },
+    {
+      "id": "citation-nhl-p131-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Càn — cấu tạo và Thoán từ",
+        "pdfPageStart": 131,
+        "pdfPageEnd": 131,
+        "printedPageStart": "131",
+        "printedPageEnd": "131"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-p30-31-commentary",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thuần Càn — Soán từ",
+        "pdfPageStart": 30,
+        "pdfPageEnd": 31
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p80-81-commentary",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thuần Càn — Truyện của Trình Di; Bản nghĩa của Chu Hy",
+        "pdfPageStart": 80,
+        "pdfPageEnd": 81
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Chu Hy, qua bản dịch Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-p132-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Càn — Hào 1; Thuần Càn — Hào 2",
+        "pdfPageStart": 132,
+        "pdfPageEnd": 132,
+        "printedPageStart": "132",
+        "printedPageEnd": "132"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p133-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Càn — Hào 3; Thuần Càn — Hào 4",
+        "pdfPageStart": 133,
+        "pdfPageEnd": 133,
+        "printedPageStart": "133",
+        "printedPageEnd": "133"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p133-134-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Càn — Hào 5",
+        "pdfPageStart": 133,
+        "pdfPageEnd": 134,
+        "printedPageStart": "133",
+        "printedPageEnd": "134"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p134-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Càn — Hào 6",
+        "pdfPageStart": 134,
+        "pdfPageEnd": 134,
+        "printedPageStart": "134",
+        "printedPageEnd": "134"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p134-135-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Càn — Dụng cửu",
+        "pdfPageStart": 134,
+        "pdfPageEnd": 135,
+        "printedPageStart": "134",
+        "printedPageEnd": "135"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p137-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — cấu tạo và Thoán từ",
+        "pdfPageStart": 137,
+        "pdfPageEnd": 137,
+        "printedPageStart": "137",
+        "printedPageEnd": "137"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-p58-59-commentary",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thuần Khôn — Soán từ",
+        "pdfPageStart": 58,
+        "pdfPageEnd": 59
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p129-130-commentary",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thuần Khôn — Truyện của Trình Di; Bản nghĩa của Chu Hy",
+        "pdfPageStart": 129,
+        "pdfPageEnd": 130
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Chu Hy, qua bản dịch Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-p138-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — Hào 1",
+        "pdfPageStart": 138,
+        "pdfPageEnd": 138,
+        "printedPageStart": "138",
+        "printedPageEnd": "138"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p138-139-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — Hào 2",
+        "pdfPageStart": 138,
+        "pdfPageEnd": 139,
+        "printedPageStart": "138",
+        "printedPageEnd": "139"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p139-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — Hào 3; Thuần Khôn — Hào 4; Thuần Khôn — Lục tứ",
+        "pdfPageStart": 139,
+        "pdfPageEnd": 139,
+        "printedPageStart": "139",
+        "printedPageEnd": "139"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p139-140-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — Hào 5",
+        "pdfPageStart": 139,
+        "pdfPageEnd": 140,
+        "printedPageStart": "139",
+        "printedPageEnd": "140"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p140-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — Hào 6",
+        "pdfPageStart": 140,
+        "pdfPageEnd": 140,
+        "printedPageStart": "140",
+        "printedPageEnd": "140"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p140-141-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thuần Khôn — Dụng lục",
+        "pdfPageStart": 140,
+        "pdfPageEnd": 141,
+        "printedPageStart": "140",
+        "printedPageEnd": "141"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p153-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Thủy Tụng — cấu tạo và Thoán từ",
+        "pdfPageStart": 153,
+        "pdfPageEnd": 153,
+        "printedPageStart": "153",
+        "printedPageEnd": "153"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-p100-101-commentary",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thiên Thủy Tụng — Soán từ",
+        "pdfPageStart": 100,
+        "pdfPageEnd": 101
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p196-197-commentary",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thiên Thủy Tụng — Truyện của Trình Di; Bản nghĩa của Chu Hy",
+        "pdfPageStart": 196,
+        "pdfPageEnd": 197
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Chu Hy, qua bản dịch Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-p154-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Thủy Tụng — Hào 1; Thiên Thủy Tụng — Hào 2",
+        "pdfPageStart": 154,
+        "pdfPageEnd": 154,
+        "printedPageStart": "154",
+        "printedPageEnd": "154"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p154-155-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Thủy Tụng — Hào 3",
+        "pdfPageStart": 154,
+        "pdfPageEnd": 155,
+        "printedPageStart": "154",
+        "printedPageEnd": "155"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p155-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Thủy Tụng — Hào 4; Thiên Thủy Tụng — Hào 5",
+        "pdfPageStart": 155,
+        "pdfPageEnd": 155,
+        "printedPageStart": "155",
+        "printedPageEnd": "155"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p155-156-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Thủy Tụng — Hào 6",
+        "pdfPageStart": 155,
+        "pdfPageEnd": 156,
+        "printedPageStart": "155",
+        "printedPageEnd": "156"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p166-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Trạch Lý — cấu tạo và Thoán từ",
+        "pdfPageStart": 166,
+        "pdfPageEnd": 166,
+        "printedPageStart": "166",
+        "printedPageEnd": "166"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-p135-136-commentary",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thiên Trạch Lý — Soán từ",
+        "pdfPageStart": 135,
+        "pdfPageEnd": 136
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p248-249-commentary",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Chu Dịch Thượng Kinh",
+        "section": "Thiên Trạch Lý — Truyện của Trình Di; Bản nghĩa của Chu Hy",
+        "pdfPageStart": 248,
+        "pdfPageEnd": 249
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Chu Hy, qua bản dịch Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-p166-167-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Trạch Lý — Hào 1",
+        "pdfPageStart": 166,
+        "pdfPageEnd": 167,
+        "printedPageStart": "166",
+        "printedPageEnd": "167"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p167-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Trạch Lý — Hào 2; Thiên Trạch Lý — Hào 3; Thiên Trạch Lý — Hào 4",
+        "pdfPageStart": 167,
+        "pdfPageEnd": 167,
+        "printedPageStart": "167",
+        "printedPageEnd": "167"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p168-commentary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Kinh Thượng",
+        "section": "Thiên Trạch Lý — Hào 5; Thiên Trạch Lý — Hào 6",
+        "pdfPageStart": 168,
+        "pdfPageEnd": 168,
+        "printedPageStart": "168",
+        "printedPageEnd": "168"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-p73-technical",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Chương 4 — Thuật ngữ và quy tắc cần nhớ",
+        "section": "Động và biến — Tụng đổi hào sơ thành Lý",
+        "pdfPageStart": 73,
+        "pdfPageEnd": 73,
+        "printedPageStart": "73",
+        "printedPageEnd": "73"
+      },
+      "textLayer": "technical-exposition"
+    }
+  ]
+}

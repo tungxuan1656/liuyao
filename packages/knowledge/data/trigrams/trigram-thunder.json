@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "trigram-thunder",
+  "type": "trigram",
+  "title": "Chấn",
+  "aliases": [],
+  "topicIds": ["topic-trigrams", "topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "trigram-thunder-pattern",
+      "kind": "structural-fact",
+      "text": "Quái Chấn có ba hào; đọc từ dưới lên là dương, âm, âm.",
+      "citationIds": ["citation-bpct-p10-11-technical"]
+    },
+    {
+      "id": "trigram-thunder-element",
+      "kind": "structural-fact",
+      "text": "Trong hệ ngũ hành dùng để lập bảng Lục Hào, Chấn thuộc Mộc.",
+      "citationIds": ["citation-bpct-p11-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p10-11-technical", "citation-bpct-p11-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yin"],
+    "symbol": "☳",
+    "element": "wood",
+    "claimIds": ["trigram-thunder-pattern", "trigram-thunder-element"]
+  }
+}

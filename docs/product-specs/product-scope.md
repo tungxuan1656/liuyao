@@ -6,7 +6,7 @@ This document owns durable product boundaries. Detailed V1 behavior lives in the
 
 - `apps/web` is an installable React and Vite PWA with in-memory automatic, manual, and direct reading entry, recoverable drafts, and completed readings preserved across root tabs until explicit replacement or reload.
 - `@liuyao/core` validates line values, identifies primary and changed hexagrams, and calculates structured Eight Palace, Shi/Ying, Na Jia, element, and Six Relative board facts.
-- `@liuyao/core` deterministically maps three coin bits to line values, provides an injected-source casting service, and normalizes sequential and direct six-line input; `apps/web` supplies the browser crypto adapter.
+- `@liuyao/core` maps three- and four-coin outcomes to line values and normalizes sequential and direct input. `apps/web` supplies browser cryptographic randomness.
 - `@liuyao/knowledge` provides local display metadata for all 8 trigrams and 64 hexagrams, result-fact terms and rules, bibliographic records, validated readonly lookups, and normalized search.
 - Package Vitest suites verify the current core and knowledge APIs.
 - The repository has CI but no production deployment workflow.
@@ -31,6 +31,12 @@ It includes:
 - launch verification and rollback readiness.
 
 See `docs/product-specs/v1-mvp.md` for the canonical V1 feature set and release acceptance.
+
+## Domain evidence
+
+[Knowledge quality](knowledge-quality.md) owns the intended supplied-book evidence requirements for quẻ and Liu Yao knowledge.
+[Liu Yao ruleset](../design-docs/liuyao-ruleset-v1.md) records the current board derivations and supporting passages.
+The current runtime catalog is not fully audited against the supplied PDF editions.
 
 ## V1 non-goals
 

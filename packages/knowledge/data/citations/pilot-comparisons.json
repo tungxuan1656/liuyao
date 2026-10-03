@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 1,
+  "citations": [
+    {
+      "id": "citation-pbc-p35-36-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 35,
+        "pdfPageEnd": 36
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p36-37-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 36,
+        "pdfPageEnd": 37
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p37-38-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 37,
+        "pdfPageEnd": 38
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p38-39-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 38,
+        "pdfPageEnd": 39
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p39-40-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 39,
+        "pdfPageEnd": 40
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p40-41-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 40,
+        "pdfPageEnd": 41
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p83-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 83,
+        "pdfPageEnd": 83
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p84-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 84,
+        "pdfPageEnd": 84
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p85-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 85,
+        "pdfPageEnd": 85
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p86-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 86,
+        "pdfPageEnd": 86
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p87-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 87,
+        "pdfPageEnd": 87
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p88-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 88,
+        "pdfPageEnd": 88
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p84-85-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Hào 2 — Bản nghĩa và lời bàn của Chu Hy",
+        "pdfPageStart": 84,
+        "pdfPageEnd": 85
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-pbc-p41-42-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Dụng cửu",
+        "pdfPageStart": 41,
+        "pdfPageEnd": 42
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p89-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Càn",
+        "section": "Dụng cửu",
+        "pdfPageStart": 89,
+        "pdfPageEnd": 89
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Chu Hy"
+    },
+    {
+      "id": "citation-pbc-p61-62-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 61,
+        "pdfPageEnd": 62
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p63-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 63,
+        "pdfPageEnd": 63
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p63-64-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 63,
+        "pdfPageEnd": 64
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p64-65-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 64,
+        "pdfPageEnd": 65
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p65-66-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 65,
+        "pdfPageEnd": 66
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p66-67-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 66,
+        "pdfPageEnd": 67
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p136-138-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 136,
+        "pdfPageEnd": 138
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p138-139-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 138,
+        "pdfPageEnd": 139
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p140-141-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 140,
+        "pdfPageEnd": 141
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p141-142-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 141,
+        "pdfPageEnd": 142
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p142-144-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 142,
+        "pdfPageEnd": 144
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p144-145-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 144,
+        "pdfPageEnd": 145
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p143-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 5 — Bản nghĩa của Chu Hy",
+        "pdfPageStart": 143,
+        "pdfPageEnd": 143
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-pbc-p67-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Dụng lục",
+        "pdfPageStart": 67,
+        "pdfPageEnd": 67
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p145-146-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Dụng lục",
+        "pdfPageStart": 145,
+        "pdfPageEnd": 146
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Chu Hy"
+    },
+    {
+      "id": "citation-pbc-p66-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 6 — lỗi nhãn chữ Hán",
+        "pdfPageStart": 66,
+        "pdfPageEnd": 66
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p144-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khôn",
+        "section": "Hào 6 — lỗi nhãn chữ Hán",
+        "pdfPageStart": 144,
+        "pdfPageEnd": 144
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di; Ngô Tất Tố"
+    },
+    {
+      "id": "citation-pbc-p104-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 104,
+        "pdfPageEnd": 104
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p104-105-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 104,
+        "pdfPageEnd": 105
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p105-106-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 105,
+        "pdfPageEnd": 106
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p106-107-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 106,
+        "pdfPageEnd": 107
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p107-108-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 107,
+        "pdfPageEnd": 108
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p108-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 108,
+        "pdfPageEnd": 108
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p199-201-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 199,
+        "pdfPageEnd": 201
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p201-202-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 201,
+        "pdfPageEnd": 202
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p202-204-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 202,
+        "pdfPageEnd": 204
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p204-205-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 204,
+        "pdfPageEnd": 205
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p206-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 206,
+        "pdfPageEnd": 206
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p207-208-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụng",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 207,
+        "pdfPageEnd": 208
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-pbc-p137-138-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 137,
+        "pdfPageEnd": 138
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p138-139-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 138,
+        "pdfPageEnd": 139
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p139-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 139,
+        "pdfPageEnd": 139
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p139-140-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 139,
+        "pdfPageEnd": 140
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p140-141-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 140,
+        "pdfPageEnd": 141
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-p141-pilot-lines",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 141,
+        "pdfPageEnd": 141
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-p250-251-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 1 — diễn giải",
+        "pdfPageStart": 250,
+        "pdfPageEnd": 251
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p251-252-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 2 — diễn giải",
+        "pdfPageStart": 251,
+        "pdfPageEnd": 252
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p252-254-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 3 — diễn giải",
+        "pdfPageStart": 252,
+        "pdfPageEnd": 254
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p254-255-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 4 — diễn giải",
+        "pdfPageStart": 254,
+        "pdfPageEnd": 255
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p255-256-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 5 — diễn giải",
+        "pdfPageStart": 255,
+        "pdfPageEnd": 256
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-p256-257-pilot-lines",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Lý",
+        "section": "Hào 6 — diễn giải",
+        "pdfPageStart": 256,
+        "pdfPageEnd": 257
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    }
+  ]
+}

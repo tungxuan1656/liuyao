@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "id": "rule-na-jia-assignment",
+  "type": "rule",
+  "title": "Gán thiên can và địa chi theo Nạp Giáp",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "rule-na-jia-assignment-claim",
+      "kind": "calculation-rule",
+      "text": "An can chi từ hào sơ lên hào thượng. Nội quái dùng ba vị trí của phần nội; ngoại quái dùng ba vị trí của phần ngoại trong bảng Nạp Giáp tương ứng. Bảng này là dữ liệu tham khảo có dẫn nguồn, không thay thế bộ tính của ứng dụng.",
+      "citationIds": ["citation-bpct-p13-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-p13-technical",
+      "citation-bpct-p11-technical",
+      "citation-bpct-p62-technical"
+    ],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "ruleset": "liuyao-standard-v1",
+  "category": "classification",
+  "tables": [
+    {
+      "kind": "na-jia",
+      "claimIds": ["rule-na-jia-assignment-claim"],
+      "rows": [
+        {
+          "trigramId": "trigram-heaven",
+          "inner": [
+            {
+              "stemId": "term-stem-jia",
+              "branchId": "term-branch-zi"
+            },
+            {
+              "stemId": "term-stem-jia",
+              "branchId": "term-branch-yin"
+            },
+            {
+              "stemId": "term-stem-jia",
+              "branchId": "term-branch-chen"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-ren",
+              "branchId": "term-branch-wu"
+            },
+            {
+              "stemId": "term-stem-ren",
+              "branchId": "term-branch-shen"
+            },
+            {
+              "stemId": "term-stem-ren",
+              "branchId": "term-branch-xu"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-lake",
+          "inner": [
+            {
+              "stemId": "term-stem-ding",
+              "branchId": "term-branch-si"
+            },
+            {
+              "stemId": "term-stem-ding",
+              "branchId": "term-branch-mao"
+            },
+            {
+              "stemId": "term-stem-ding",
+              "branchId": "term-branch-chou"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-ding",
+              "branchId": "term-branch-hai"
+            },
+            {
+              "stemId": "term-stem-ding",
+              "branchId": "term-branch-you"
+            },
+            {
+              "stemId": "term-stem-ding",
+              "branchId": "term-branch-wei"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-fire",
+          "inner": [
+            {
+              "stemId": "term-stem-ji",
+              "branchId": "term-branch-mao"
+            },
+            {
+              "stemId": "term-stem-ji",
+              "branchId": "term-branch-chou"
+            },
+            {
+              "stemId": "term-stem-ji",
+              "branchId": "term-branch-hai"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-ji",
+              "branchId": "term-branch-you"
+            },
+            {
+              "stemId": "term-stem-ji",
+              "branchId": "term-branch-wei"
+            },
+            {
+              "stemId": "term-stem-ji",
+              "branchId": "term-branch-si"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-thunder",
+          "inner": [
+            {
+              "stemId": "term-stem-geng",
+              "branchId": "term-branch-zi"
+            },
+            {
+              "stemId": "term-stem-geng",
+              "branchId": "term-branch-yin"
+            },
+            {
+              "stemId": "term-stem-geng",
+              "branchId": "term-branch-chen"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-geng",
+              "branchId": "term-branch-wu"
+            },
+            {
+              "stemId": "term-stem-geng",
+              "branchId": "term-branch-shen"
+            },
+            {
+              "stemId": "term-stem-geng",
+              "branchId": "term-branch-xu"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-wind",
+          "inner": [
+            {
+              "stemId": "term-stem-xin",
+              "branchId": "term-branch-chou"
+            },
+            {
+              "stemId": "term-stem-xin",
+              "branchId": "term-branch-hai"
+            },
+            {
+              "stemId": "term-stem-xin",
+              "branchId": "term-branch-you"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-xin",
+              "branchId": "term-branch-wei"
+            },
+            {
+              "stemId": "term-stem-xin",
+              "branchId": "term-branch-si"
+            },
+            {
+              "stemId": "term-stem-xin",
+              "branchId": "term-branch-mao"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-water",
+          "inner": [
+            {
+              "stemId": "term-stem-wu",
+              "branchId": "term-branch-yin"
+            },
+            {
+              "stemId": "term-stem-wu",
+              "branchId": "term-branch-chen"
+            },
+            {
+              "stemId": "term-stem-wu",
+              "branchId": "term-branch-wu"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-wu",
+              "branchId": "term-branch-shen"
+            },
+            {
+              "stemId": "term-stem-wu",
+              "branchId": "term-branch-xu"
+            },
+            {
+              "stemId": "term-stem-wu",
+              "branchId": "term-branch-zi"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-mountain",
+          "inner": [
+            {
+              "stemId": "term-stem-bing",
+              "branchId": "term-branch-chen"
+            },
+            {
+              "stemId": "term-stem-bing",
+              "branchId": "term-branch-wu"
+            },
+            {
+              "stemId": "term-stem-bing",
+              "branchId": "term-branch-shen"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-bing",
+              "branchId": "term-branch-xu"
+            },
+            {
+              "stemId": "term-stem-bing",
+              "branchId": "term-branch-zi"
+            },
+            {
+              "stemId": "term-stem-bing",
+              "branchId": "term-branch-yin"
+            }
+          ]
+        },
+        {
+          "trigramId": "trigram-earth",
+          "inner": [
+            {
+              "stemId": "term-stem-yi",
+              "branchId": "term-branch-wei"
+            },
+            {
+              "stemId": "term-stem-yi",
+              "branchId": "term-branch-si"
+            },
+            {
+              "stemId": "term-stem-yi",
+              "branchId": "term-branch-mao"
+            }
+          ],
+          "outer": [
+            {
+              "stemId": "term-stem-gui",
+              "branchId": "term-branch-chou"
+            },
+            {
+              "stemId": "term-stem-gui",
+              "branchId": "term-branch-hai"
+            },
+            {
+              "stemId": "term-stem-gui",
+              "branchId": "term-branch-you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "discrepancy-bpct-khun-element",
+      "status": "resolved",
+      "description": "Bảng Nạp Giáp trang 13 ghi Khôn thuộc Mộc.",
+      "citationIds": [
+        "citation-bpct-p13-technical",
+        "citation-bpct-p11-technical",
+        "citation-bpct-p62-technical"
+      ],
+      "resolution": "Chuẩn hóa Khôn thuộc Thổ theo bảng ngũ hành của quái và mục Cung Khôn. Dãy can chi được giữ theo bảng Nạp Giáp."
+    }
+  ]
+}

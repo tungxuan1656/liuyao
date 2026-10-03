@@ -195,6 +195,24 @@
       "title": "Light and Dark theme preference",
       "status": "done",
       "depends_on": ["feat-010"]
+    },
+    {
+      "id": "feat-031",
+      "title": "Book-backed domain documentation",
+      "status": "done",
+      "depends_on": ["feat-004", "feat-005", "feat-006"]
+    },
+    {
+      "id": "feat-032",
+      "title": "Book-backed JSON knowledge foundation and pilot",
+      "status": "done",
+      "depends_on": ["feat-031"]
+    },
+    {
+      "id": "feat-033",
+      "title": "Reviewed knowledge batch two",
+      "status": "todo",
+      "depends_on": ["feat-032"]
     }
   ]
 }

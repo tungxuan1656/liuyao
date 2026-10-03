@@ -104,6 +104,7 @@ A revision can deploy to production only when all pre-deploy checks pass:
 - [ ] Moving-line tests cover `6 → Yang` and `9 → Yin`.
 - [ ] All three reading-entry methods reach the same result for equivalent input.
 - [ ] Every displayed rule explanation has a stable rule ID.
+- [ ] Published domain knowledge meets the supplied-book evidence gate in `docs/product-specs/knowledge-quality.md`.
 - [ ] Every curated knowledge entry follows `LICENSING.md`.
 - [ ] Final product name, primary language, logo, icon set, and metadata are approved.
 - [ ] Browser title, manifest, install UI, app header, and social preview use the approved identity.

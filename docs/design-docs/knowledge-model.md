@@ -2,11 +2,167 @@
 
 This document owns structured knowledge boundaries, schema classes, and source rules for `@liuyao/knowledge`.
 
+## Flow
+
+Reviewed source passage → curated record → schema validation → readonly lookup and search → web explanation.
+
+- Book identity and source discrepancies → [Supplied book sources](../references/book-sources.md)
+- Domain evidence and publication acceptance → [Knowledge quality](../product-specs/knowledge-quality.md)
+- Calculation tables and derivations → [Liu Yao ruleset](liuyao-ruleset-v1.md)
+
 ## Boundary
 
 `@liuyao/knowledge` explains domain IDs. It does not drive Liu Yao calculation.
 
 If a table is required to calculate a result, place it in `@liuyao/core`.
+
+Raw PDFs are research inputs. They are not runtime knowledge records or calculation inputs.
+The application does not read books dynamically to construct a board.
+
+## Observed storage
+
+The authored corpus uses UTF-8 JSON under `packages/knowledge/data/`.
+`manifest.json` selects record files, citations, and reviewed release IDs.
+The package validates JSON Schema and cross-file invariants before type-checking or building.
+It generates runtime imports and [coverage](../../packages/knowledge/reports/coverage.json) from those files.
+
+`src/book-catalog.ts` exposes released records, citation locations, and edition metadata through readonly APIs.
+`src/book-adapter.ts` maps reviewed entities, terms, rules, and citations into the existing catalog interfaces.
+`data/legacy/catalog.json` retains unmigrated records with an explicit `unaudited` status.
+Compatibility lists still contain all 64 hexagrams. Their presence does not imply supplied-book review.
+
+The [data directory guide](../../packages/knowledge/data/README.md) maps content files and verification commands.
+`src/book-schema.ts` defines the richer readonly types. `src/schema.ts` retains the compatibility shapes.
+The web build bundles this local data for offline access.
+
+## Storage assessment
+
+**Observed choice:** Versioned JSON is the authored content source.
+The compatibility adapter preserves existing package interfaces.
+A database remains a future option.
+
+| Option                           | Fit                                                     | Requirement                                                                 |
+| -------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------- |
+| TypeScript compatibility exports | Adapted access to current JSON records                  | Review content and preserve schema checks.                                  |
+| JSON files                       | Content editing, import/export, and independent tooling | Validate at the package boundary. Keep one authored source.                 |
+| Local database such as IndexedDB | Future saved readings or a large local index            | Define migrations and recovery. Keep canonical reference content versioned. |
+| Server database                  | Future shared editing or synchronization                | Define ownership, publication, and an offline snapshot contract.            |
+
+A database does not correct an inaccurate claim or missing citation.
+For current data volume and topology, it adds no required calculation capability.
+Saved readings and curated knowledge have different lifecycles.
+Adding reading history does not require moving reference knowledge into the same store.
+
+Generate runtime TypeScript imports from the canonical JSON.
+Do not maintain equivalent JSON and TypeScript records by hand.
+Schema changes and new package dependencies require selected implementation work.
+This implementation does not introduce a database.
+
+## JSON corpus
+
+**Status: Implemented for the reviewed pilot.** JSON Schema validates each collection before publication.
+Existing lookup interfaces use a compatibility adapter.
+The collection layout follows [Knowledge content](../product-specs/knowledge-content.md).
+
+```text
+packages/knowledge/data/
+  manifest.json             collection files, declared topics, schema version, and release selection
+  sources.json              works, supplied editions, fingerprints, and rights
+  citations/                edition-specific passage locators
+  terms/                    glossary records by topic
+  trigrams/                 eight entity records
+  hexagrams/                one record per hexagram, including six line entries
+  casting/                  casting explanations and reviewed examples
+  liuyao/                   foundational and advanced topic records
+  lessons/                  learning articles linked to existing claims
+```
+
+The pilot populates trigrams, hexagrams, terms, casting, and foundational Liu Yao records.
+Learning articles and advanced topics remain incomplete.
+JSON replaces equivalent authored TypeScript content.
+Generated runtime imports follow the manifest.
+Calculation-required data follows the ownership boundary above.
+
+### Record contract
+
+| Field           | Meaning                                                            |
+| --------------- | ------------------------------------------------------------------ |
+| `schemaVersion` | The selected collection schema version                             |
+| `id`            | A stable record ID, preserving current domain identities           |
+| `type`          | The collection-specific record type                                |
+| `title`         | The canonical Vietnamese display title                             |
+| `aliases`       | Reviewed Vietnamese search aliases                                 |
+| `topicIds`      | References to declared content topics                              |
+| `claims`        | Source-supported explanations and structural claims                |
+| `relatedIds`    | Explicit relationships to other records                            |
+| `review`        | Review status, evidence, date, and reviewer identity when reviewed |
+
+Type-specific schemas define trigram patterns, hexagram composition, six line entries, special passages, and rule categories.
+Calculation explanations identify their applicable ruleset.
+A substantive claim contains its own citation IDs.
+Interpretation claims also identify their attributed author or translator.
+Provenance for a record does not automatically support every claim inside it.
+The reviewed state of a record covers every included claim.
+If any included claim remains unresolved, the record cannot enter the released catalog as reviewed.
+
+The example below illustrates a draft rule record. It is not a released dataset entry.
+
+```json
+{
+  "schemaVersion": 1,
+  "id": "rule-line-position-order",
+  "type": "rule",
+  "title": "Thứ tự sáu hào",
+  "ruleset": "liuyao-standard-v1",
+  "category": "structure",
+  "aliases": [],
+  "topicIds": ["topic-casting"],
+  "claims": [
+    {
+      "id": "claim-line-order-bottom-to-top",
+      "kind": "structural-fact",
+      "text": "Sáu hào được lập từ dưới lên, từ hào sơ đến hào trên cùng.",
+      "citationIds": ["citation-bpct-ch1-x-p11"]
+    }
+  ],
+  "relatedIds": [],
+  "review": { "status": "draft" }
+}
+```
+
+### Citation contract
+
+Each citation identifies the source work and exact supplied edition.
+Its location includes chapter, section, PDF page range, and printed page range when available.
+Page numbers are one-based. Printed page labels can contain nonnumeric text.
+The source catalog's fingerprint binds page locators to the reviewed file.
+
+| Field                                                  | Meaning                                                          |
+| ------------------------------------------------------ | ---------------------------------------------------------------- |
+| `id`                                                   | Stable citation ID                                               |
+| `sourceId`                                             | Source work reference                                            |
+| `editionId`                                            | Fingerprinted edition reference                                  |
+| `location.chapter`                                     | Chapter title or number                                          |
+| `location.section`                                     | Section heading                                                  |
+| `location.pdfPageStart`, `location.pdfPageEnd`         | Exact source page range                                          |
+| `location.printedPageStart`, `location.printedPageEnd` | Printed labels when available                                    |
+| `textLayer`                                            | Original text, author commentary, translator note, or supplement |
+
+The user can read a formatted bibliographic citation offline.
+A PDF link is optional and requires an approved distribution path.
+Supplied local PDF paths are not production download links.
+
+### Validation and release
+
+Schema validation rejects invalid fields and unresolved identities.
+Corpus checks validate citation coverage, edition page bounds, collection completeness, and permitted review states.
+Source review establishes semantic fidelity and resolves textual discrepancies.
+The [knowledge quality](../product-specs/knowledge-quality.md) contract owns the evidence gate.
+
+Generate a coverage report from the authored records.
+Build the released catalog from manifest-selected reviewed content.
+The adapter preserves readonly local lookup and search.
+Verify offline loading and content size when integrating the expanded corpus.
 
 ## V1 entities
 
@@ -32,6 +188,9 @@ Knowledge records can reference core-owned trigram, hexagram, palace, or ruleset
 
 ## Required fields
 
+The lists below describe the V1 authoring contract.
+The current schema defines runtime fields. [Knowledge quality](../product-specs/knowledge-quality.md) defines the stronger intended evidence gate.
+
 Every knowledge entity needs:
 
 - a stable ID;
@@ -53,6 +212,13 @@ Every source needs:
 - author or traditional attribution when known;
 - edition or publication metadata when known;
 - rights status when known.
+
+Identify a work and its edition separately when adding the supplied books.
+An old original text does not establish rights for a modern translation or editorial additions.
+The current `SourceReference.location` string can record a chapter, section, PDF page, and printed page.
+
+The JSON corpus records edition fingerprints, page locators, and review metadata.
+The adapter preserves existing domain and knowledge IDs.
 
 ## V1 content
 
@@ -77,12 +243,18 @@ The API must work without network access.
 
 ## Validation
 
+Structural validation checks shape and internal consistency.
+Source review checks meaning and derivation. One cannot replace the other.
+
 Package tests must reject:
 
 - duplicate stable IDs;
 - missing required names;
 - broken internal references;
 - rule references to unknown sources.
+
+Supplied-book citation coverage and review states are intended checks, not current validator guarantees.
+Use [Knowledge quality](../product-specs/knowledge-quality.md) for their acceptance requirements.
 
 ## Licensing
 

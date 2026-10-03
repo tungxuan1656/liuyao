@@ -14,9 +14,15 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "typecheck": "tsc --noEmit -p tsconfig.test.json",
-    "test": "vitest run"
+    "build": "pnpm validate:corpus && tsc",
+    "typecheck": "pnpm validate:corpus && tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run",
+    "validate:corpus": "node scripts/validate-corpus.mjs"
   },
-  "license": "AGPL-3.0-only"
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "@liuyao/core": "workspace:*"
+  }
 }

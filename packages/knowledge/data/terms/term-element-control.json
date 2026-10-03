@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-element-control",
+  "type": "term",
+  "title": "Vòng tương khắc",
+  "aliases": ["Ngũ hành tương khắc"],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-element-control-definition",
+      "kind": "structural-fact",
+      "text": "Theo chiều khắc: Mộc khắc Thổ, Thổ khắc Thủy, Thủy khắc Hỏa, Hỏa khắc Kim, Kim khắc Mộc.",
+      "citationIds": ["citation-bpct-p9-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p9-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-five-element-cycles"]
+}

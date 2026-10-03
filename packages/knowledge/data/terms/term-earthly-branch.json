@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-earthly-branch",
+  "type": "term",
+  "title": "Địa chi",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-foundations"],
+  "claims": [
+    {
+      "id": "term-earthly-branch-definition",
+      "kind": "structural-fact",
+      "text": "Một trong mười hai chi; trong Nạp Giáp, địa chi được gán cho hào theo quái.",
+      "citationIds": ["citation-bpct-p8-technical", "citation-bpct-p13-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-bpct-p8-technical", "citation-bpct-p13-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-na-jia-assignment", "rule-branch-element"]
+}

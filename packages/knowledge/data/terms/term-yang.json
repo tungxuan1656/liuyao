@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "term-yang",
+  "type": "term",
+  "title": "Dương",
+  "aliases": ["Hào dương"],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "term-yang-definition",
+      "kind": "structural-fact",
+      "text": "Hào dương được biểu diễn bằng một vạch liền. Trong tên hào của kinh văn, “cửu” chỉ tính dương, không tự nó xác định hào có động hay không.",
+      "citationIds": ["citation-nhl-p59-61-technical"]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-01",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-nhl-p59-61-technical"],
+    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-line-polarity-values"]
+}
