@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-03 — feat-043
+
+**State**: done; source-section crosswalk and repository verification complete.
+**Done**: Partitioned all four supplied editions and mapped sections, dispositions, existing evidence, and author/audit routes in `docs/reviews/knowledge/source-inventory.md`; preserved source discrepancies in the canonical catalog.
+**Evidence**: External structural checks confirmed 2,453 pages, all four PDF fingerprints/counts, manifest/document/feature routes, and ordered PBC quẻ ranges. `./init.sh` passed: 263 tests (181 core, 82 knowledge), package exports, format, lint (0 errors; 4 existing warnings), typecheck, build (existing source-map/font/chunk warnings), and test placement. Knowledge corpus validation with `--check-books --check` and `git diff --check` passed.
+**Blockers**: Fine source-layer reconciliations, 1,152 book-position audit cells, specialist approval, and corpus certification remain open under routed owners; no passage-fidelity or certification claim is made.
+**Next**: After coordinator PR merge, select feat-101 and use this inventory to implement extended knowledge records and provenance contracts.
+
 ## 2026-10-03 — feat-013
 
 **State**: done.
