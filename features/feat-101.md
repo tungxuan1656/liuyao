@@ -1,48 +1,36 @@
-# feat-101 — Complete extended knowledge records and provenance contracts
+# feat-101 — Extended knowledge contracts
 
 ## Goal
 
-Represent lessons, source figures, and project conventions with explicit reusable evidence dependencies.
+Represent versioned knowledge records and evidence.
 
-## Scope
+## Scope and non-goals
 
-**Intended work:** Knowledge schemas, readonly types, public projections, release generation, and supported-version migration.
-
-## Non-goals
-
-Bulk authoring, calculation changes, web layout, remote storage, and specialist certification.
+Implement versioned schemas, V1 upcast, evidence checks, release projection, and snapshot identity. Exclude bulk content, calculations, UI, and specialist certification.
 
 ## Acceptance
 
-- [ ] Implement the [extended record contract](../docs/design-docs/knowledge-model.md#intended-extended-records).
-- [ ] Lesson blocks resolve supporting claims; declared sequence and prerequisites validate without missing IDs or cycles.
-- [ ] Inventoried tables and diagrams retain unit evidence, orientation, and author alternatives.
-- [ ] Project conventions identify accepted specification sections and revisions without fabricated book citations.
-- [ ] Supporting dependencies require publishable evidence; navigation links retain distinct unavailable-target semantics.
-- [ ] JSON Schema and public types agree; stable identities and existing compatibility consumers survive migration.
-- [ ] Published payload excludes draft prose and exposes the [snapshot identity](../docs/design-docs/knowledge-model.md#intended-snapshot-identity).
-- [ ] Required verification and migration/rejection evidence are recorded.
+- [x] Implement the approved [record](../docs/design-docs/knowledge-model.md#approved-extended-record-contract) and [release](../docs/design-docs/knowledge-model.md#approved-release-projection-and-snapshot-identity) contracts.
+- [x] Validate lesson evidence, ordering, prerequisites, targets, and cycles at build time and runtime.
+- [x] Preserve figure/table evidence, orientation, and alternatives.
+- [x] Validate project-convention evidence against registered sections and revisions without fabricated book citations.
+- [x] Separate evidence dependencies from navigation; withhold unavailable targets.
+- [x] Keep schemas, readonly public types, V1 migration, and compatibility APIs consistent.
+- [x] Generate a release-only payload without local paths or draft prose; include snapshot identity.
+- [x] Record test and verification evidence in the [plan](../docs/plans/feat-101.md).
 
-## Relevant docs
+Implementation criteria pass. PR #62 awaits final-head CI and merge.
 
-[Quality](../docs/product-specs/knowledge-quality.md), [content](../docs/product-specs/knowledge-content.md),
-[architecture](../ARCHITECTURE.md), [verification](../docs/development.md).
+## Evidence and limits
 
-## Plan
-
-1. Use feat-043 inventory to select required representations and document supported-version migration.
-2. Implement schema/type alignment, dependency checks, release projections, and snapshot generation.
-3. Verify legacy compatibility and rejection fixtures; commit coherent contract checkpoints.
-
-## Verify
-
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Package tests for migration, supporting references, project evidence, and draft-free runtime output.
+- Tests: C1 18; C2 107; knowledge 173; full suite 354 (181 core, 173 knowledge).
+- Format, lint, typecheck, test, build, corpus, book, and init passed. Four baseline lint warnings remain; six new-test warnings were fixed. 173 V1 files are unchanged.
+- No V2 content was authored. Structural evidence is not certification, specialist approval, or audit binding. UI and scale are excluded.
+- No specialist approval, audit binding, or corpus certification is claimed. PR #62 final-head CI and merge remain pending.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Planning recorded; implementation has not started.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Complete feat-043, select this feature, and assess external-plan criteria before coding.
+- State: done for implementation and local validation; PR #62 merge remains pending.
+- Evidence: Reviewed SHA `ae1d1f5c647408bc38d9fa2cffe6db80f54c84c1`; init receipt and checks are in the [plan](../docs/plans/feat-101.md). PR #62 CI run `37130792089`, job `111225312559`, passed.
+- Limits: No V2 content, feat-095 approval, feat-067 audit gates, or corpus certification is claimed.
+- Next: Coordinator checks CI on the final lifecycle commit and merges PR #62.

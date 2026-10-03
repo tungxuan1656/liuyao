@@ -16,6 +16,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-03 — feat-101 lifecycle finalization
+
+**State**: done for implementation/local validation; PR #62 awaits final-head CI and merge.
+**Done**: Set feat-101 done after all implementation criteria and reviewed-SHA verification passed; preserved certification and authoring boundaries.
+**Evidence**: Reviewed SHA `ae1d1f5c647408bc38d9fa2cffe6db80f54c84c1`; init `sh_102393ac4001AJk2OSBMttFf5u` passed with 354 tests (181 core, 173 knowledge), typecheck/build/exports/length/lint (4 baseline warnings), corpus/book freshness, and locale checks. 173 protected V1 files are unchanged. PR #62 CI run `37130792089`, job `111225312559`, passed.
+**Blockers**: Final-head CI and merge; no V2 content, independent feat-095 approval, feat-067 audit, or corpus certification is claimed.
+**Next**: Coordinator verifies CI on this lifecycle commit and merges PR #62.
+
+## 2026-10-03 — feat-101 verification handoff
+
+**State**: active; implementation and repository verification pass, delivery review remains.
+**Done**: Reconciled schema, evidence-validation, release-projection, snapshot, and runtime lesson-review documentation. Kept acceptance and specialist/audit claims open.
+**Evidence**: `./init.sh` receipt `sh_10215cc44001Abxn70zd09XAk5` passed. Root format, lint, typecheck, build, exports, placement, and 352 tests passed (181 core, 171 knowledge); lint has four baseline warnings. Corpus/book checks passed for 172 records, 1,226 claims, 1,015 citations. Protected V1 records/schema comparison passed for 173 files. Runtime lesson tests cover direct and transitive support.
+**Blockers**: Independent review, CI/PR, and final feat-101 acceptance. No V2 lesson, figure, or project-convention content was authored.
+**Next**: Coordinator commits the verified batch and requests risk review; keep feat-101 active until review and delivery gates resolve.
+
 ## 2026-10-03 — feat-043
 
 **State**: done; source-section crosswalk and repository verification complete.

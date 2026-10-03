@@ -94,6 +94,7 @@ export interface BookArticle extends BookRecordBase {
 }
 
 export type BookRecord = BookTrigram | BookHexagram | BookTerm | BookRule | BookArticle;
+export type BookRecordV1 = BookRecord;
 export type BookElement = 'wood' | 'fire' | 'earth' | 'metal' | 'water';
 
 export interface BookCitation {

@@ -1,13 +1,19 @@
 /** Cross-file checks complement JSON Schema; source meaning needs passage review. */
-export function checkCorpus({ manifest, sources, citations, records, legacy }) {
+import { checkEvidence } from './corpus-evidence.mjs';
+import { checkFigures } from './corpus-figures.mjs';
+import { checkLessons } from './corpus-lessons.mjs';
+import { checkProjectEvidence } from './corpus-projects.mjs';
+
+export function checkCorpus({ manifest, sources, citations, records, legacy, repositoryRoot }) {
   const fail = message => {
     throw new Error(`Invalid book corpus: ${message}`);
   };
-  const uniqueMap = (items, label) => {
+  const uniqueMap = (items, label, idKey = 'id') => {
     const result = new Map();
     for (const item of items) {
-      if (result.has(item.id)) fail(`duplicate ${label} ID ${item.id}`);
-      result.set(item.id, item);
+      const id = item[idKey];
+      if (result.has(id)) fail(`duplicate ${label} ID ${id}`);
+      result.set(id, item);
     }
     return result;
   };
@@ -30,12 +36,55 @@ export function checkCorpus({ manifest, sources, citations, records, legacy }) {
       .flat()
       .map(r => r.id),
   ]);
-  const claimsById = new Map();
-  const allClaims = record => [
-    ...record.claims,
-    ...(record.lines ?? []).flatMap(l => l.claims),
-    ...(record.specialPassages ?? []).flatMap(p => p.claims),
-  ];
+  const claimById = new Map();
+  const globalIds = new Map();
+  for (const record of records) {
+    if (legacyRecords.some(legacyRecord => legacyRecord.id === record.id))
+      fail(`${record.id}: also authored in legacy catalog`);
+  }
+  for (const [items, label] of [
+    [records, 'record'],
+    [sources, 'source'],
+    [citations, 'citation'],
+    [legacyRecords, 'legacy record'],
+  ]) {
+    for (const item of items) {
+      if (globalIds.has(item.id)) fail(`duplicate corpus ID ${item.id}`);
+      globalIds.set(item.id, label);
+    }
+  }
+  for (const record of records) {
+    const tableIds = new Set();
+    for (const table of record.tables ?? []) {
+      if (table.id === undefined) continue;
+      if (tableIds.has(table.id)) fail(`duplicate ${record.id} table ID ${table.id}`);
+      tableIds.add(table.id);
+    }
+    for (const table of record.tables ?? [])
+      checkSourceUnitIds(table.sourceUnitIds, `${record.id} table`, fail);
+    uniqueMap(record.specialPassages ?? [], `${record.id} special passage`);
+    uniqueMap(record.discrepancies ?? [], `${record.id} discrepancy`);
+    for (const figure of record.figures ?? [])
+      checkSourceUnitIds(figure.sourceUnitIds, `${record.id}.${figure.id} figure`, fail);
+    for (const figure of record.figures ?? []) uniqueMap(figure.labels ?? [], `${figure.id} label`);
+    for (const claim of allClaims(record)) {
+      if (globalIds.has(claim.id)) {
+        if (globalIds.get(claim.id) === 'claim') fail(`duplicate claim ${claim.id}`);
+        fail(`duplicate corpus ID ${claim.id}`);
+      }
+      globalIds.set(claim.id, 'claim');
+      claimById.set(claim.id, { record, claim });
+    }
+  }
+  const tableIdsByRecord = new Map(
+    records.map(record => [record.id, new Set((record.tables ?? []).map(table => table.id))]),
+  );
+  for (const record of records) {
+    for (const figure of record.figures ?? []) {
+      if (globalIds.has(figure.id)) fail(`duplicate corpus ID ${figure.id}`);
+      globalIds.set(figure.id, `figure in ${record.id}`);
+    }
+  }
   for (const citation of citations) {
     const entry = editionById.get(citation.editionId);
     if (!sourceById.has(citation.sourceId) || entry?.source.id !== citation.sourceId)
@@ -48,24 +97,23 @@ export function checkCorpus({ manifest, sources, citations, records, legacy }) {
     if (!knownIds.has(id)) fail(`${owner}: unknown record ${id}`);
   };
   for (const record of records) {
-    if (
-      Object.values(legacy.catalog)
-        .flat()
-        .some(r => r.id === record.id)
-    )
-      fail(`${record.id}: also authored in legacy catalog`);
     for (const topicId of record.topicIds)
       if (!topics.has(topicId)) fail(`${record.id}: unknown topic ${topicId}`);
     for (const id of [...record.relatedIds, ...(record.applicableRuleIds ?? [])])
       requireReference(id, record.id);
+    if (
+      record.type === 'lesson' &&
+      (record.schemaVersion !== 2 ||
+        record.sequence === undefined ||
+        !Array.isArray(record.prerequisiteLessonIds) ||
+        !Array.isArray(record.blocks))
+    )
+      fail(`${record.id}: version-2 lesson fields are required`);
     for (const id of record.applicableRuleIds ?? []) {
       if (recordById.get(id)?.type !== 'rule' && !legacy.catalog.rules.some(rule => rule.id === id))
         fail(`${record.id}: applicable rule ${id} is not a rule`);
     }
-    const localClaims = new Set(allClaims(record).map(c => c.id));
     for (const claim of allClaims(record)) {
-      if (claimsById.has(claim.id)) fail(`duplicate claim ${claim.id}`);
-      claimsById.set(claim.id, claim);
       for (const id of claim.citationIds)
         if (!citationById.has(id)) fail(`${claim.id}: unknown citation ${id}`);
       if (['author-interpretation', 'classical-meaning'].includes(claim.kind) && !claim.attribution)
@@ -91,13 +139,29 @@ export function checkCorpus({ manifest, sources, citations, records, legacy }) {
         if (!record.review.evidenceCitationIds?.includes(id))
           fail(`${record.id}: review evidence omits ${id}`);
     }
-    for (const structure of [record.structure, ...(record.tables ?? [])].filter(Boolean)) {
-      for (const id of structure.claimIds)
-        if (!localClaims.has(id))
+    for (const structure of [record.structure].filter(Boolean)) {
+      for (const id of structure.claimIds) {
+        if (
+          record.schemaVersion === 1 &&
+          !new Set(allClaims(record).map(claim => claim.id)).has(id)
+        )
           fail(`${record.id}: structural evidence names unknown claim ${id}`);
+        requireClaimReference(id, `${record.id} structure`);
+      }
     }
-    uniqueMap(record.specialPassages ?? [], `${record.id} special passage`);
-    uniqueMap(record.discrepancies ?? [], `${record.id} discrepancy`);
+    for (const table of record.tables ?? []) {
+      for (const id of table.claimIds) {
+        if (record.schemaVersion === 1 && !allClaims(record).some(claim => claim.id === id))
+          fail(`${record.id}: structural evidence names unknown claim ${id}`);
+        requireClaimReference(id, `${record.id} table`);
+      }
+      for (const alternative of table.authorAlternatives ?? [])
+        for (const id of alternative.claimIds) {
+          if (record.schemaVersion === 1 && !allClaims(record).some(claim => claim.id === id))
+            fail(`${record.id}: structural evidence names unknown claim ${id}`);
+          requireClaimReference(id, `${record.id} table alternative`);
+        }
+    }
     if (record.type === 'hexagram') {
       if (record.structure.kingWenNumber !== Number(record.id.slice(-2)))
         fail(`${record.id}: number does not match ID`);
@@ -122,16 +186,48 @@ export function checkCorpus({ manifest, sources, citations, records, legacy }) {
     }
     for (const table of record.tables ?? [])
       checkTable(table, record.id, recordById, requireReference, fail);
+    checkFigures(record, {
+      registerFigure(id) {
+        if (globalIds.get(id) !== `figure in ${record.id}`)
+          fail(`duplicate corpus ID ${id} (${globalIds.get(id) ?? 'unknown ID'} and figure)`);
+      },
+      requireClaimReference,
+      released,
+      fail,
+    });
   }
-  uniqueMap([...records, ...sources, ...citations, ...legacyRecords], 'corpus');
   for (const id of manifest.releaseIds) {
     if (recordById.get(id)?.review.status !== 'reviewed')
       fail(`${id}: release requires a reviewed authored record`);
   }
+  checkEvidence({ records, claimById, released, requireClaimReference, fail });
+  checkLessons({ records, recordById, tableIdsByRecord, released, requireClaimReference, fail });
+  checkProjectEvidence({ manifest, records, repositoryRoot, fail });
+  uniqueMap([...records, ...sources, ...citations, ...legacyRecords], 'corpus');
   for (const id of manifest.nextBatch.topicIds)
     if (!topics.has(id)) fail(`next batch: unknown topic ${id}`);
   for (const id of manifest.nextBatch.hexagramIds) requireReference(id, 'next batch');
-  return { recordById, citationById, allClaims };
+  return { recordById, citationById, allClaims, claimById };
+
+  function requireClaimReference(id, owner) {
+    if (!claimById.has(id)) fail(`${owner}: unknown claim ${id}`);
+  }
+}
+
+function allClaims(record) {
+  return [
+    ...record.claims,
+    ...(record.lines ?? []).flatMap(line => line.claims),
+    ...(record.specialPassages ?? []).flatMap(passage => passage.claims),
+  ];
+}
+
+function checkSourceUnitIds(ids, owner, fail) {
+  if (ids === undefined) return;
+  if (!Array.isArray(ids)) fail(`${owner}: sourceUnitIds must be an array`);
+  for (const id of ids)
+    if (typeof id !== 'string' || id.trim().length === 0)
+      fail(`${owner}: sourceUnitIds must contain non-empty IDs`);
 }
 
 function checkTable(table, owner, records, requireReference, fail) {

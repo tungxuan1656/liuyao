@@ -131,35 +131,123 @@ The example below illustrates a draft rule record. It is not a released dataset 
 }
 ```
 
-### Intended extended records
+<a id="intended-extended-records"></a>
 
-Supporting claim → ordered explanation block, table, diagram, or worked example → declared dependency.
+### Approved extended-record contract
 
-These extensions are planned. The current schema does not encode lesson dependencies or project-contract evidence.
+**Contract: approved for feat-101. Implementation: partial.** Existing authored records remain version 1; no production V2 lesson, figure, or project-convention content has been authored. The inventory selects the bounded representations; the [source inventory](../reviews/knowledge/source-inventory.md) remains the authority for observed source units. Implemented portions and limits are recorded below.
 
-- Give each learning block stable supporting claim IDs and an explicit position in its lesson.
-- Declare lesson sequence and prerequisites; reject missing prerequisite IDs and prerequisite cycles.
-- Reuse existing typed tables. Add representations only for inventoried content that requires them.
-- Bind table and diagram units to supporting claims, including labels, orientation, and source-specific alternatives.
-- Keep calculation-required tables in the core package.
-- Record accepted project conventions with a canonical document section and reviewed revision.
-- Keep project-contract evidence distinct from edition-specific book citations and source-comparison review.
-- Preserve stable record and claim IDs when migrating supported schema versions.
-- Keep JSON Schema, readonly types, public projections, and generated outputs consistent.
+| Contract                   | Version 2 fields and checks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Record dispatch            | Keep `schema/record.schema.json` as the unchanged version-1 schema. Dispatch integer `schemaVersion` 1 or 2 to its versioned schema; reject every other value. Version 2 retains version-1 fields and adds its own typed fields.                                                                                                                                                                                                                                                                                     |
+| Migration                  | Provide a tested, non-mutating version-1-to-version-2 upcast for callers that need it. Leave the 172 authored version-1 JSON records byte-for-byte unchanged, and preserve their record and claim IDs and compatibility APIs. Do not bulk-migrate lessons, figures, or conventions.                                                                                                                                                                                                                                  |
+| Lesson                     | A version-2 record with `type: "lesson"` has an ID in the `lesson-` namespace, positive integer `sequence`, unique `prerequisiteLessonIds`, and ordered `blocks`. Sequences are unique. Prerequisite IDs resolve to lessons and form an acyclic graph. Prerequisite-array order has no meaning.                                                                                                                                                                                                                      |
+| Lesson block               | Each block has stable lesson-scoped `id`, one-based `position`, `kind`, and non-empty `supportingClaimIds`. Array index `i` must have `position: i + 1`. `prose` and `worked-example` blocks require non-empty `text`. `table` and `figure` blocks require a typed `{kind, recordId, id}` target. Their support claims must exist and be included in the target's evidence.                                                                                                                                          |
+| Derivative review          | Version-2 review metadata adds `evidenceClaimIds`. A released lesson requires reviewed status and evidence IDs that resolve and cover every block's supporting claim. A released project-convention owner requires review evidence that covers its project-convention claims. This records review scope; it does not claim independent specialist approval.                                                                                                                                                          |
+| Claim dependencies         | Version-2 claims can declare `dependsOnClaimIds`. Claim dependencies form an acyclic graph. A released dependent requires each direct and transitive supporting claim to belong to a reviewed record already selected for release. A dependency never adds a draft or unselected record to release membership.                                                                                                                                                                                                       |
+| Project convention         | A version-2 `project-convention` claim has `citationIds: []` and non-empty `projectEvidence` entries containing `documentPath`, `section`, and `revision`. Other substantive book claims require citations and cannot use project evidence in place of them. Citation IDs are citation references, not claim-dependency edges.                                                                                                                                                                                       |
+| Accepted project contracts | The optional manifest `projectContracts` registry contains `documentPath`, `revision`, and accepted `sections`. `documentPath` is a repository-relative path to a canonical document, without path escape. Build-time checks require the file and heading to exist and the non-empty reviewed-revision identifier to match the registry. These checks establish structure, not acceptance. Revision changes invalidate affected evidence. Do not advance the manifest schema version solely for this optional field. |
+| Figure                     | A version-2 figure has stable `id`, bounded `kind`, `title`, and `inspectionStatus`. Non-plate kinds require non-empty `sourceUnitIds` and `claimIds`, plus ordered labels. Labels have stable figure-scoped IDs, non-empty text, and non-empty `claimIds`. Figures can retain `orientation` and attributed `authorAlternatives`, each bound to claim IDs. Kinds are `sequence`, `placement`, `transformation`, `board`, and `plate`. Do not store or copy image bytes. An uninspected `plate` is unreleasable.      |
+| Table                      | Reuse the existing typed table kinds and row structures. Add optional record-scoped stable `table-*` `id`, non-empty `sourceUnitIds` when present, and attributed `authorAlternatives`. Keep existing table `claimIds`; table alternatives also require claim IDs. Typed lesson targets identify a table by `{recordId, id}` and require matching evidence. Calculation tables remain in `@liuyao/core` and are unchanged.                                                                                           |
+| Navigation                 | Keep `relatedIds` as navigation only; they do not satisfy evidence or prerequisite checks. A bounded resolver returns either an available released record or an unavailable result, without exposing draft target details.                                                                                                                                                                                                                                                                                           |
+| Runtime sources            | Keep authored source types with required local input paths separate from sanitized released source types. Preserve `listBookRecords`, `getBookRecord`, citation, and source lookup entry points and released bibliographic fields. Do not expose local paths in the released projection.                                                                                                                                                                                                                             |
 
-Supporting dependencies establish evidence; ordinary `relatedIds` links establish navigation.
-The [quality contract](../product-specs/knowledge-quality.md#completion-and-later-corrections) owns publication and invalidation requirements for those dependencies.
-The [Library contract](../product-specs/knowledge-browser.md#topics-and-articles) owns unavailable related-link presentation.
+The following names and shapes are the approved TypeScript contract for implementation:
 
-### Intended snapshot identity
+```typescript
+type BookFigureKind = 'sequence' | 'placement' | 'transformation' | 'board' | 'plate';
+type BookFigure = {
+  id: `figure-${string}`;
+  kind: BookFigureKind;
+  title: string;
+  sourceUnitIds: readonly string[];
+  labels: readonly { id: string; text: string; claimIds: readonly string[] }[];
+  claimIds: readonly string[];
+  inspectionStatus: 'uninspected' | 'visually-inspected';
+  orientation?: { description: string; claimIds: readonly string[] };
+  authorAlternatives?: readonly {
+    author: string;
+    via?: string;
+    description: string;
+    claimIds: readonly string[];
+  }[];
+};
+type BookTableMetadata = {
+  id?: `table-${string}`;
+  sourceUnitIds?: readonly string[];
+  authorAlternatives?: readonly {
+    author: string;
+    via?: string;
+    description: string;
+    claimIds: readonly string[];
+  }[];
+};
+type BookLessonBlock =
+  | {
+      id: string;
+      position: number;
+      kind: 'prose' | 'worked-example';
+      text: string;
+      supportingClaimIds: readonly string[];
+    }
+  | {
+      id: string;
+      position: number;
+      kind: 'table' | 'figure';
+      target: { kind: 'table' | 'figure'; recordId: string; id: string };
+      supportingClaimIds: readonly string[];
+    };
+type ProjectEvidence = { documentPath: string; section: string; revision: string };
+```
 
-Expose an immutable identity for each released corpus snapshot through the public package API.
-Bind it to schema versions, release membership, records, citations, editions, discrepancies, review decisions, and accepted project-contract revisions.
-Include review scope and evidence state without treating source comparison as independent approval.
-The runtime snapshot excludes raw PDFs and draft prose.
+Version-2 records use the existing common record envelope (`id`, `title`, `aliases`, `topicIds`, `claims`, `relatedIds`, `review`, and `rights`) with `schemaVersion: 2`. Add optional `figures` and extended table metadata to the v2 envelope. A lesson uses `type: "lesson"`, `sequence`, `prerequisiteLessonIds`, and ordered `blocks`; a project-convention claim uses `kind: "project-convention"`, empty `citationIds`, and non-empty `projectEvidence`. Version-2 claims add optional `dependsOnClaimIds`; lesson review adds `evidenceClaimIds`. The version-1 manifest schema gains an optional `projectContracts` list with `{documentPath, revision, sections}`, where `sections` lists canonical heading strings. Do not advance its schema version only for this optional field.
 
-The [PWA contract](offline-pwa.md#intended-knowledge-scale-and-updates) owns asset loading and update behavior.
-Package version alone does not identify a reviewed corpus snapshot.
+Record, claim, citation, and figure IDs are corpus-global. Table IDs are record-scoped, block IDs are lesson-scoped, and label IDs are figure-scoped. Reject duplicate IDs within the applicable scope. Author alternatives carry attribution and evidence, not stable IDs. `sourceUnitIds` are non-empty source-inventory IDs, but this feature does not create a source-unit registry or resolve them to an independent owner. Repeated source-unit references are valid.
+
+Validate every declared claim reference across all records before release selection. The supporting-reference surfaces are `claim.dependsOnClaimIds`, `structure.claimIds`, record/line/special-passage claims, table `claimIds` and alternative `claimIds`, figure `claimIds`, label `claimIds`, orientation `claimIds`, figure-alternative `claimIds`, lesson-block `supportingClaimIds`, and lesson-review `evidenceClaimIds`. Each reference must resolve. Lesson review evidence must cover all block support claims. Project-convention record review evidence must cover its convention claims. Citation-bearing fields (`claim.citationIds`, review `evidenceCitationIds`, and discrepancy `citationIds`) resolve against citations and remain distinct from claim edges.
+
+Released owners require each direct and transitive supporting claim to belong to a reviewed record already included in `releaseIds`. Missing, cyclic, draft, disputed, superseded, or unselected support fails closed. Never add a supporting record to release membership automatically. For each already selected supporting record, project that record's citations, review evidence, and discrepancy citation evidence. A table or figure target's evidence must include every block support claim. A negative fixture with a figure kind and empty inventory/evidence is invalid. Reorder fixtures must reject duplicate child IDs but accept repeated source-unit references.
+
+Each non-plate figure requires non-empty `sourceUnitIds` and `claimIds`, plus at least one ordered label. This applies to `sequence`, `placement`, `transformation`, and `board`. Label array order is the source order; do not add a second position field. Every label needs non-empty claim evidence. Orientation and alternatives resolve their claim evidence. Keep label, order, and orientation formats bounded; do not add a generic diagram DSL. `plate` remains fail-closed until visually inspected. Do not invent or include image content.
+
+Use separate version-1 and version-2 readonly types. `BookRecordV1` is the current validated version-1 input, and `BookRecordV2` is the extended shape. `listBookRecords` and `getBookRecord` expose the explicit union `BookRecordV1 | BookRecordV2`; do not weaken V1-only fields to represent V2. Name the distinct source types `AuthoredBookSource` and `ReleasedBookSource`. The authored type requires local input paths; the released type omits them. The compatibility adapter must safely handle lesson and other non-entity record types, and preserve project-convention claim text without changing stable IDs. JSON Schema, readonly types, migration behavior, package exports, compatibility adapter, and public projection must agree. Structural validation establishes shape and declared links; it does not certify meaning or prove that a figure was inspected.
+
+The pure migration helper accepts a prevalidated `BookRecordV1` and returns `BookRecordV2`. It rejects null, arrays, non-objects, a missing version, and every version except `1`. It deep-copies the upcast and leaves the input unchanged. It does not import Ajv or another schema validator into `src/`. Build-time schema dispatch and tests reject malformed V1 fields. Test invalid fields through the corpus validator, and test helper guards and input immutability through the migration helper.
+
+For project evidence, resolve paths under the repository root and reject path escape. At build time, require an existing canonical documentation file, an existing heading, a non-empty reviewed-revision identifier, and an exact match to the accepted registry entry. Every released project-convention claim must also appear in its owner's review evidence. Structural agreement does not prove that the repository accepted the decision. Use fixtures with an existing canonical document and an explicit test revision; do not label fixture values as real approval. Bind the used accepted project evidence and its registry values to the snapshot. Runtime uses only validated project metadata in the release projection and does not read documentation files. Feat-067 owns later decision binding.
+
+Supporting dependencies establish evidence; ordinary `relatedIds` links establish navigation. Missing, draft, disputed, superseded, or unreleased evidence blocks released dependents. The [quality contract](../product-specs/knowledge-quality.md#completion-and-later-corrections) owns publication and invalidation requirements. The [Library contract](../product-specs/knowledge-browser.md#topics-and-articles) owns unavailable-link presentation.
+
+<a id="intended-snapshot-identity"></a>
+
+Each typed lesson target resolves by block kind, `recordId`, and child `id` within the specified record. Reject missing targets and mismatched owners or kinds. A released lesson requires the target's owning record in `releaseIds`. Reject duplicate or non-positive lesson sequence values.
+
+### Approved release projection and snapshot identity
+
+**Contract: approved for feat-101. Implementation: partial.** Validate every manifest-listed authored record, citation, source, and cross-file link. Generate runtime data from the validated release closure only:
+
+- Include released records and supporting records only when those records already appear in release membership.
+- Include citations reachable from released claims, plus required review and discrepancy evidence.
+- Include only referenced editions and sanitized source/bibliographic metadata.
+- Exclude draft prose, raw manifests, authored-source JSON imports, local PDF paths, and PDFs from runtime output.
+- Keep a thin generated TypeScript wrapper over the release-generated JSON when the package needs typed imports.
+- Retain runtime checks that reject ineligible records or broken release dependencies.
+
+Expose an immutable `getBookSnapshotIdentity()` value. Compute it at build time as versioned canonical JSON hashed with SHA-256. The identity format is `liuyao-knowledge-snapshot-v1:sha256:<64 lowercase hex characters>`. Bind the canonical payload to record and manifest schema versions, release membership, released records and claims, reachable citations, relevant source and edition bibliography/provenance metadata, discrepancies, review scope/evidence metadata, used accepted project-contract revisions and sections, and exact public topic metadata when topics appear in the projection. Hash only exact sanitized source metadata that the runtime projection exposes. Changes to unused project registry entries do not change identity unless those entries are public semantic metadata.
+
+Canonicalize object keys and only arrays defined here as sets: release membership, top-level record/citation collection membership, `claim.citationIds`, `claim.dependsOnClaimIds`, review `evidenceCitationIds` and `evidenceClaimIds`, discrepancy `citationIds`, `prerequisiteLessonIds`, `structure.claimIds`, table and figure `claimIds`, label/orientation/alternative `claimIds`, and block `supportingClaimIds`. Use field-aware canonicalization, never generic ID-array sorting. Preserve record claim order, lesson blocks, figure labels, table rows, sequence values, alternatives, `sourceUnitIds`, and source/bibliographic contributor order. Test that semantic order changes alter identity while set-reference reordering does not. Source provenance, public bibliography, release membership, records, claims, citations, discrepancies, review evidence, used accepted revisions, and exact projected topics must affect identity. Object-key order, draft-only edits, generation timestamps, local PDF paths, and unused non-public registry entries must not.
+
+The released runtime payload must be draft-free even when bundled. Snapshot metadata reports the review scope and evidence present; it does not claim independent specialist approval. Do not invent or imply an audit-decision ledger: feat-067 owns the later audit-decision binding. The [PWA contract](offline-pwa.md#intended-knowledge-scale-and-updates) owns asset loading and update behavior. Package version alone does not identify a reviewed corpus snapshot.
+
+### Implemented surface and limits
+
+- `scripts/record-schema-dispatch.mjs` dispatches authored records to the unchanged V1 schema or strict V2 schema. `scripts/validate-corpus.mjs` performs Ajv validation at build time. `src/book-migration.ts` provides the pure, deep-copy upcast for prevalidated `BookRecordV1` values; it does not perform full schema validation.
+- The schema and package type shapes are covered by schema-dispatch, V2-schema, and migration fixtures; C1 reports 18 focused tests passed. Cross-file behaviors are covered by dependency, figure, lesson, project-evidence, validation, and release fixtures; C2 reports 107 focused tests passed. Projection, catalog, snapshot, and runtime cases are covered by the knowledge package suite; the post-fix run reports 171 knowledge tests passed. Runtime tests reject missing lesson review evidence and omissions of direct or transitive block-support claims. The coordinator also reports root format, lint, typecheck, test, build, corpus, and supplied-book checks passed; see the [feat-101 handoff](../../features/feat-101.md) for exact commands and remaining delivery gates.
+- `scripts/corpus-checks.mjs` and its evidence, figure, lesson, and project helpers validate cross-file references, release evidence, lesson ordering and targets, bounded figure evidence, and project-document structure. Lesson review-evidence coverage checks run for lessons whose `review.status` is `reviewed`; draft lessons do not receive that coverage check. Project path and heading checks establish structural matches, not approval or semantic correctness.
+- `scripts/release-projection.mjs` generates the release-only payload at `src/book-release.generated.json`; `src/book-data.generated.ts` is its typed wrapper. The generated payload is outside authored `data/`, and local edition input paths are removed. Generation freshness checks cover the JSON and TypeScript outputs. The current generated projection has an empty `projectContracts` list; project metadata behavior is present in validation/projection code but is not exercised by released V2 content.
+- Public record lookup in `book-catalog.ts` uses `BookRecordVersioned` (`BookRecordV1 | BookRecordV2`). Public sources there use `ReleasedBookSource`, which omits edition `localInputPath`; authored sources retain it. The root `src/index.ts` re-exports `book-catalog.ts` APIs and versioned schema types. `getBookSnapshotIdentity()` exposes the generated, versioned identity.
+- Runtime integrity checks revalidate released records, claim/citation links, targets, source editions, project metadata, and lesson graph shape. `assertReleaseEvidenceIntegrity` also checks that each released lesson's review evidence covers every block-support claim and its direct and transitive claim dependencies; runtime tests cover missing, direct, and transitive evidence cases.
+- Runtime and build checks enforce release and evidence structure; they do not certify source meaning, specialist approval, audit decisions, or corpus completion. Format, lint, typecheck, test, build, corpus, supplied-book, and `./init.sh` checks passed. Independent review, CI/PR, and final feat-101 acceptance remain pending.
 
 ### Citation contract
 
