@@ -27,6 +27,18 @@ const validateCertificationSchema = createAuditSchemaValidator(
   readJson('../schema/audit-certification-v1.schema.json'),
   'audit certification schema',
 );
+const yieldToEventLoop = () => new Promise(resolve => setImmediate(resolve));
+
+async function yieldBeforeGateEvaluation() {
+  await yieldToEventLoop();
+}
+
+async function validateAuditLedgersYielding(ledgers, registry, context) {
+  await yieldToEventLoop();
+  const state = await validateAuditLedgers(ledgers, registry, context);
+  await yieldToEventLoop();
+  return state;
+}
 
 describe('evidence-derived audit gates', () => {
   it('keeps empty actual-like registry and ledger inputs closed', () => {
@@ -420,13 +432,17 @@ describe('evidence-derived audit gates', () => {
     expect(gates.totals.approvedDecisions).toBe(0);
     expect(gates.totals.releasedClaimsCovered).toBe(0);
 
-    const approved = approveSyntheticDecisions(ledgerState);
+    const approved = await approveSyntheticDecisions(ledgerState);
     const approvedState = { ...ledgerState, current: approved };
     approvedState.decisionSetSha256 = createHash('sha256')
       .update(JSON.stringify(canonicalize(approved.map(item => item.decision))))
       .digest('hex');
     context.decisionSetSha256 = approvedState.decisionSetSha256;
-    const certificationForApproved = makeSyntheticCertification(context, registry, approvedState);
+    const certificationForApproved = await makeSyntheticCertification(
+      context,
+      registry,
+      approvedState,
+    );
     expect(validateCertificationSchema(certificationForApproved).valid).toBe(true);
     const approvedGates = evaluateAuditGates({
       registry,
@@ -455,6 +471,7 @@ describe('evidence-derived audit gates', () => {
     context.records = [record];
     context.manifest = { ...manifest, releaseIds: [record.id], projectContracts: [] };
     expect(validateRegistrySchema(registry).valid).toBe(true);
+    await yieldToEventLoop();
     const mappedRegistryValidation = validateAuditRegistry(registry, {
       inventoryBytes,
       editionCatalog: new Map(
@@ -466,6 +483,7 @@ describe('evidence-derived audit gates', () => {
       authoredRecordIds: new Set(manifest.recordFiles.map(file => readJson(`../data/${file}`).id)),
     });
     expect(mappedRegistryValidation.valid, mappedRegistryValidation.errors.join('\n')).toBe(true);
+    await yieldToEventLoop();
     const sourceTarget = { kind: 'sourceunit', id: group.id };
     const sourceInputs = await computeAuditInputs(context, ['trigram-heaven-pattern'], {
       allowInMemoryFixtures: true,
@@ -498,6 +516,7 @@ describe('evidence-derived audit gates', () => {
         evidenceEditionIds: ['edition-bpct-supplied'],
       })
     ).inputs;
+    await yieldToEventLoop();
     const targetLedger = ledgers.find(
       ledger => ledger.scope.kind === 'group' && ledger.scope.id === group.id,
     );
@@ -515,6 +534,7 @@ describe('evidence-derived audit gates', () => {
       evidenceCitationIds: ['citation-bpct-p10-11-technical'],
       evidenceEditionIds: ['edition-bpct-supplied'],
     });
+    await yieldToEventLoop();
     const recordDecision = makeRecordDecision(record, recordInput.inputs, recordTarget);
     recordDecision.id = 'decision-covered-record';
     recordDecision.coveredClaimIds = releasedClaimIds;
@@ -552,14 +572,18 @@ describe('evidence-derived audit gates', () => {
       }))
       .filter(ledger => ledger.decisions.length);
     const validated = await validateAuditLedgers(deduplicated, registry, context);
+    await yieldToEventLoop();
     expect(validated.valid, validated.errors.slice(0, 10).join('\n')).toBe(true);
     expect(validateLedgerSchema(targetLedger).valid).toBe(true);
     expect(validation.valid).toBe(true);
+    await yieldBeforeGateEvaluation();
     const pendingGates = evaluateAuditGates({ registry, ledgerState: validated, context });
     expect(pendingGates.sourceReview).toBe(true);
     expect(pendingGates.independentUnitApprovals).toBe(false);
     expect(pendingGates.certification).toBe(false);
     expect(pendingGates.complete).toBe(false);
+    await yieldToEventLoop();
+    await yieldBeforeGateEvaluation();
     const gates = evaluateAuditGates({ registry, ledgerState: validated, context });
     expect(gates.sourceReview).toBe(true);
     expect(gates.totals.releasedClaimsRequired).toBe(2);
@@ -567,9 +591,10 @@ describe('evidence-derived audit gates', () => {
     expect(gates.independentUnitApprovals).toBe(false);
     expect(gates.certification).toBe(false);
     expect(gates.complete).toBe(false);
-
+    await yieldToEventLoop();
+    let approvalsUpdated = 0;
     for (const ledger of deduplicated)
-      for (const decision of ledger.decisions)
+      for (const decision of ledger.decisions) {
         decision.specialistReview = {
           status: 'approved',
           reviewerName: 'Synthetic independent reviewer',
@@ -578,11 +603,16 @@ describe('evidence-derived audit gates', () => {
           scope: 'Synthetic gate test only; not an actual approval.',
           note: 'In-memory test evidence only.',
         };
+        approvalsUpdated += 1;
+        if (approvalsUpdated % 64 === 0) await yieldToEventLoop();
+      }
     const approvedState = await validateAuditLedgers(deduplicated, registry, context);
+    await yieldToEventLoop();
     expect(approvedState.valid, approvedState.errors.slice(0, 10).join('\n')).toBe(true);
     context.decisionSetSha256 = approvedState.decisionSetSha256;
-    const certification = makeSyntheticCertification(context, registry, approvedState);
+    const certification = await makeSyntheticCertification(context, registry, approvedState);
     expect(validateCertificationSchema(certification).valid).toBe(true);
+    await yieldBeforeGateEvaluation();
     const completeGates = evaluateAuditGates({
       registry,
       ledgerState: approvedState,
@@ -593,21 +623,30 @@ describe('evidence-derived audit gates', () => {
     expect(completeGates.certification).toBe(true);
     expect(completeGates.sourceReview).toBe(true);
     expect(completeGates.complete).toBe(true);
+    await yieldToEventLoop();
 
-    const uncovered = structuredClone(approvedState);
-    const coveredRecord = uncovered.current.find(item => item.target.kind === 'record');
-    coveredRecord.decision.coveredClaimIds = [];
+    const approvedRecordDecision = approvedState.current.find(
+      item => item.target.kind === 'record',
+    ).decision;
+    const coveredRecordClaimIds = approvedRecordDecision.coveredClaimIds;
+    approvedRecordDecision.coveredClaimIds = [];
+    await yieldBeforeGateEvaluation();
     expect(
-      evaluateAuditGates({ registry, ledgerState: uncovered, context, certification }).complete,
+      evaluateAuditGates({ registry, ledgerState: approvedState, context, certification }).complete,
     ).toBe(false);
-    const staleLayer = structuredClone(approvedState);
-    staleLayer.current.find(item => item.target.kind === 'record').decision.layerResolution.layers =
-      [];
+    approvedRecordDecision.coveredClaimIds = coveredRecordClaimIds;
+
+    const recordLayerResolution = approvedRecordDecision.layerResolution;
+    approvedRecordDecision.layerResolution = { status: 'resolved', layers: [] };
+    await yieldBeforeGateEvaluation();
     expect(
-      evaluateAuditGates({ registry, ledgerState: staleLayer, context, certification }).complete,
+      evaluateAuditGates({ registry, ledgerState: approvedState, context, certification }).complete,
     ).toBe(false);
+    approvedRecordDecision.layerResolution = recordLayerResolution;
     const staleCertification = structuredClone(certification);
     staleCertification.decisionSetSha256 = 'f'.repeat(64);
+    await yieldToEventLoop();
+    await yieldBeforeGateEvaluation();
     expect(
       evaluateAuditGates({
         registry,
@@ -621,15 +660,22 @@ describe('evidence-derived audit gates', () => {
   it('keeps layer, discovery, and specialist rejection semantics separate', async () => {
     const { context } = auditContext();
     const { registry, ledgerState } = await completeValidatedSyntheticAudit(context);
+    await yieldToEventLoop();
     const pendingGates = evaluateAuditGates({ registry, ledgerState, context });
+    await yieldToEventLoop();
     expect(pendingGates.sourceReview).toBe(true);
     expect(pendingGates.independentUnitApprovals).toBe(false);
 
     const unresolvedLayer = structuredClone(ledgerState);
     const layerDecision = unresolvedLayer.current.find(item => item.target.kind === 'cell');
     layerDecision.decision.layerResolution.layers = [];
-    const layerGates = evaluateAuditGates({ registry, ledgerState: unresolvedLayer, context });
+    const layerGates = evaluateAuditGates({
+      registry,
+      ledgerState: unresolvedLayer,
+      context,
+    });
     expect(layerGates.sourceReview).toBe(false);
+    await yieldToEventLoop();
 
     const unresolvedDiscovery = structuredClone(registry);
     unresolvedDiscovery.groups[0].discoveryStatus = 'unresolved';
@@ -639,6 +685,7 @@ describe('evidence-derived audit gates', () => {
       context,
     });
     expect(discoveryGates.sourceReview).toBe(false);
+    await yieldToEventLoop();
 
     const rejected = structuredClone(ledgerState);
     const rejectedDecision = rejected.current.find(item => item.target.kind === 'cell').decision;
@@ -650,12 +697,17 @@ describe('evidence-derived audit gates', () => {
       scope: 'synthetic test',
       note: 'Synthetic rejection for gate behavior',
     };
-    const rejectedGates = evaluateAuditGates({ registry, ledgerState: rejected, context });
+    const rejectedGates = evaluateAuditGates({
+      registry,
+      ledgerState: rejected,
+      context,
+    });
     expect(rejectedGates.sourceReview).toBe(true);
     expect(rejectedGates.independentUnitApprovals).toBe(false);
     expect(rejectedGates.rejected).toContainEqual(
       expect.objectContaining({ reason: 'specialist-rejected' }),
     );
+    await yieldToEventLoop();
   }, 20000);
 
   it('counts a source-compared released claim separately from specialist approval', async () => {
@@ -793,6 +845,8 @@ describe('evidence-derived audit gates', () => {
     const { context } = auditContext();
     const { registry, ledgerState, certification, validation } =
       await completeValidatedSyntheticAudit(context);
+    await yieldToEventLoop();
+    await yieldToEventLoop();
     expect(validation.valid).toBe(true);
     expect(validateRegistrySchema(registry).valid).toBe(true);
     expect(
@@ -807,24 +861,28 @@ describe('evidence-derived audit gates', () => {
     const staleRevision = structuredClone(certification);
     staleRevision.registry.revision += 1;
     expect(validateCertificationSchema(staleRevision).valid).toBe(true);
+    await yieldBeforeGateEvaluation();
     const staleRevisionGates = evaluateAuditGates({
       registry,
       ledgerState,
       context,
       certification: staleRevision,
     });
+    await yieldToEventLoop();
     expect(staleRevisionGates.valid).toBe(true);
     expect(staleRevisionGates.certificationStatus).toBe('stale');
     expect(staleRevisionGates.complete).toBe(false);
 
     const staleSnapshot = structuredClone(certification);
     staleSnapshot.contentSnapshotIdentity = `liuyao-knowledge-snapshot-v1:sha256:${'f'.repeat(64)}`;
+    await yieldBeforeGateEvaluation();
     const staleSnapshotGates = evaluateAuditGates({
       registry,
       ledgerState,
       context,
       certification: staleSnapshot,
     });
+    await yieldToEventLoop();
     expect(staleSnapshotGates.valid).toBe(true);
     expect(staleSnapshotGates.certificationStatus).toBe('stale');
   }, 25_000);
@@ -895,6 +953,7 @@ async function completeValidatedSyntheticAudit(context) {
   });
   expect(validation.valid, validation.errors.join('\n')).toBe(true);
   expect(validateRegistrySchema(registry).valid).toBe(true);
+  await yieldToEventLoop();
 
   Object.assign(context, {
     manifest: { ...manifest, releaseIds: [], projectContracts: [] },
@@ -1024,15 +1083,19 @@ async function completeValidatedSyntheticAudit(context) {
     };
     ledger.decisions.push(decision);
     ledgerByScope.set(key, ledger);
+    if (decisionNumber % 64 === 0) await yieldToEventLoop();
   }
 
   const ledgers = [...ledgerByScope.values()];
-  for (const ledger of ledgers)
+  for (let index = 0; index < ledgers.length; index += 1) {
+    const ledger = ledgers[index];
     expect(
       validateLedgerSchema(ledger).valid,
       `${ledger.ledgerId}: ${JSON.stringify(validateLedgerSchema(ledger).errors)}`,
     ).toBe(true);
-  const ledgerState = await validateAuditLedgers(ledgers, registry, context);
+    if ((index + 1) % 64 === 0) await yieldToEventLoop();
+  }
+  const ledgerState = await validateAuditLedgersYielding(ledgers, registry, context);
   expect(ledgerState.valid, ledgerState.errors.slice(0, 10).join('\n')).toBe(true);
   expect(ledgerState.current).toHaveLength(targets.length);
   ledgerState.contentSnapshotIdentity = context.contentSnapshotIdentity;
@@ -1042,7 +1105,7 @@ async function completeValidatedSyntheticAudit(context) {
     ledgers,
     ledgerState,
     validation,
-    certification: makeSyntheticCertification(context, registry, ledgerState),
+    certification: await makeSyntheticCertification(context, registry, ledgerState),
   };
 }
 
@@ -1148,8 +1211,9 @@ function makeRecordDecision(record, inputs, target = { kind: 'record', id: recor
   };
 }
 
-function approveSyntheticDecisions(ledgerState) {
-  for (const { decision } of ledgerState.current) {
+async function approveSyntheticDecisions(ledgerState) {
+  for (let index = 0; index < ledgerState.current.length; index += 1) {
+    const { decision } = ledgerState.current[index];
     decision.specialistReview = {
       status: 'approved',
       reviewerName: 'Synthetic approved reviewer',
@@ -1158,11 +1222,12 @@ function approveSyntheticDecisions(ledgerState) {
       scope: 'Synthetic gate behavior only.',
       note: 'Never represents actual approval.',
     };
+    if ((index + 1) % 64 === 0) await yieldToEventLoop();
   }
   return ledgerState.current;
 }
 
-function makeSyntheticCertification(context, registry, ledgerState) {
+async function makeSyntheticCertification(context, registry, ledgerState) {
   return {
     schemaVersion: 1,
     contentSnapshotIdentity: context.contentSnapshotIdentity,
