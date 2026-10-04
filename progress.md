@@ -16,6 +16,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-04 — feat-097 coordinator verification receipt
+
+**State**: active; implementation criteria and assigned local verification pass, with final review and PR CI pending.
+**Done**: Recorded the coordinator's fresh verification receipt and protected-asset comparison. The earlier pending-verification note remains unchanged as history.
+**Evidence**: `./init.sh` receipt `sh_1065aa617001KhSL6yo2WJaB6D` passed: 405 tests (181 core, 224 knowledge), format, lint (0 errors; 4 baseline warnings), typecheck, build, package exports, test placement, length, and corpus/book freshness. 177 protected assets and both audit-status/coverage reports are byte-identical. All 14 synthetic probes pass in the 2,064-target full-floor fixture. Validators are unchanged; zero real decisions and no certification exist. No actual qualified review or corpus certification is claimed.
+**Blockers**: Final test-proof review and PR CI.
+**Next**: Commit the immutable test-proof, request final review, and complete PR CI; keep feat-097 active until coordinator acceptance.
+
+## 2026-10-04 — feat-097 correction probes
+
+**State**: active; implementation and local package checks pass, coordinator verification remains.
+**Done**: Added in-memory-only synthetic full-floor approvals, input/dependency invalidation probes, append-only correction-history coverage, and the human correction/reapproval route.
+**Evidence**: Knowledge tests pass (224/224); typecheck, build, format check, corpus/book checks, and `git diff --check` pass. Lint has 0 errors and four existing warnings. The workspace build reports existing sourcemap, font, and chunk warnings. Protected manifest/schema/source hashes and audit status/coverage files are unchanged. Synthetic targets number 2,064 as expected from 1,344 cells + 6 special + 518 source units + 17 exclusions + 172 records + 1 table + 1 figure + 4 lessons + 1 fixture. No actual source review or specialist approval is claimed.
+**Blockers**: Fresh `./init.sh` and coordinator verification remain. No production data, schemas, validators, real ledgers, or certification artifacts changed.
+**Next**: Coordinator runs assigned verification on the complete working tree and determines feat-097 acceptance.
+
 ## 2026-10-04 — feat-067 implementation accepted
 
 **State**: done for implementation and verified acceptance; PR #63 awaits final lifecycle-head CI and merge.
