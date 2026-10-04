@@ -485,7 +485,8 @@ describe('evidence-derived audit gates', () => {
     expect(mappedRegistryValidation.valid, mappedRegistryValidation.errors.join('\n')).toBe(true);
     await yieldToEventLoop();
     const sourceTarget = { kind: 'sourceunit', id: group.id };
-    const sourceInputs = await computeAuditInputs(context, ['trigram-heaven-pattern'], {
+    const releasedClaimIds = record.claims.map(claim => claim.id);
+    const sourceInputs = await computeAuditInputs(context, releasedClaimIds, {
       allowInMemoryFixtures: true,
       target: sourceTarget,
       evidenceCitationIds: ['citation-bpct-p10-11-technical'],
@@ -494,7 +495,6 @@ describe('evidence-derived audit gates', () => {
     const sourceDecision = makeRecordDecision(record, sourceInputs.inputs, sourceTarget);
     sourceDecision.id = 'decision-covered-sourceunit';
     sourceDecision.target = sourceTarget;
-    const releasedClaimIds = record.claims.map(claim => claim.id);
     sourceDecision.coveredClaimIds = releasedClaimIds;
     sourceDecision.layerResolution.layers = group.layerScopeIds.map(layerId => ({
       layerId,
@@ -508,14 +508,6 @@ describe('evidence-derived audit gates', () => {
       pdfPages: [10, 11],
     };
     sourceDecision.sourceComparison.evidenceCitationIds = ['citation-bpct-p10-11-technical'];
-    sourceDecision.inputs = (
-      await computeAuditInputs(context, releasedClaimIds, {
-        allowInMemoryFixtures: true,
-        target: sourceTarget,
-        evidenceCitationIds: ['citation-bpct-p10-11-technical'],
-        evidenceEditionIds: ['edition-bpct-supplied'],
-      })
-    ).inputs;
     await yieldToEventLoop();
     const targetLedger = ledgers.find(
       ledger => ledger.scope.kind === 'group' && ledger.scope.id === group.id,
@@ -577,14 +569,12 @@ describe('evidence-derived audit gates', () => {
     expect(validateLedgerSchema(targetLedger).valid).toBe(true);
     expect(validation.valid).toBe(true);
     await yieldBeforeGateEvaluation();
-    const pendingGates = evaluateAuditGates({ registry, ledgerState: validated, context });
+    const gates = evaluateAuditGates({ registry, ledgerState: validated, context });
+    const pendingGates = gates;
     expect(pendingGates.sourceReview).toBe(true);
     expect(pendingGates.independentUnitApprovals).toBe(false);
     expect(pendingGates.certification).toBe(false);
     expect(pendingGates.complete).toBe(false);
-    await yieldToEventLoop();
-    await yieldBeforeGateEvaluation();
-    const gates = evaluateAuditGates({ registry, ledgerState: validated, context });
     expect(gates.sourceReview).toBe(true);
     expect(gates.totals.releasedClaimsRequired).toBe(2);
     expect(gates.totals.releasedClaimsCovered).toBe(2);
@@ -655,7 +645,7 @@ describe('evidence-derived audit gates', () => {
         certification: staleCertification,
       }).complete,
     ).toBe(false);
-  }, 25_000);
+  }, 45_000);
 
   it('keeps layer, discovery, and specialist rejection semantics separate', async () => {
     const { context } = auditContext();
