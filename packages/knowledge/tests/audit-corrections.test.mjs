@@ -383,40 +383,74 @@ describe('isolated audit correction and approval invalidation probes', () => {
       target => target.kind === 'record' && target.id === scenario.lesson.id,
     );
     const binding = scenario.context.fixtureBindings[0];
-    const ownerFixtures = scenario.lesson.expectedFixtures;
-    const oldDecision = targetDecision(scenario, dependent);
-    const currentBinding = structuredClone(binding);
+    const originalOwnerFixtures = structuredClone(scenario.lesson.expectedFixtures);
+    const originalFixtureBindings = structuredClone(scenario.context.fixtureBindings);
+    const originalIndependentFixtures = structuredClone(scenario.independent.expectedFixtures);
+    const originalDecision = structuredClone(targetDecision(scenario, dependent));
+    const ledgerDecision = scenario.ledgers
+      .flatMap(ledger => ledger.decisions)
+      .find(decision => decision.id === originalDecision.id);
+    expect(ledgerDecision).toBeDefined();
+    const oldFixturePath = 'packages/knowledge/tests/fixtures/synthetic-old-expected-result.json';
     try {
       scenario.context.fixtureBindings.push({
         ...binding,
-        path: 'packages/knowledge/tests/fixtures/synthetic-old-expected-result.json',
+        path: oldFixturePath,
       });
       scenario.lesson.expectedFixtures.push({
-        path: 'packages/knowledge/tests/fixtures/synthetic-old-expected-result.json',
+        path: oldFixturePath,
         claimId: binding.claimId,
       });
-      scenario.context.fixtureBytes[
-        'packages/knowledge/tests/fixtures/synthetic-old-expected-result.json'
-      ] = Buffer.from('{"expected":"old synthetic binding"}');
+      scenario.context.fixtureBytes[oldFixturePath] = Buffer.from(
+        '{"expected":"old synthetic binding"}',
+      );
       const withOldBinding = await validateProbe(scenario, [dependent]);
+      expect(withOldBinding.valid).toBe(true);
       expect(withOldBinding.current[0].inputState.stale).toContain(
-        'fixtures:packages/knowledge/tests/fixtures/synthetic-old-expected-result.json:added',
+        `fixtures:${oldFixturePath}:added`,
       );
 
-      scenario.context.fixtureBindings.pop();
-      scenario.lesson.expectedFixtures = ownerFixtures;
-      delete scenario.context.fixtureBytes[
-        'packages/knowledge/tests/fixtures/synthetic-old-expected-result.json'
+      const acceptedOldInputs = await recomputeInputs(scenario, originalDecision);
+      ledgerDecision.inputs = structuredClone(acceptedOldInputs.inputs);
+      const approvedOldBinding = await validateProbe(scenario, [dependent]);
+      expect(approvedOldBinding.current[0].inputState).toEqual({ current: true, stale: [] });
+
+      const oldBinding = scenario.context.fixtureBindings.find(
+        item => item.path === oldFixturePath,
+      );
+      Object.assign(oldBinding, {
+        claimId: 'claim-correction-independent',
+        ownerId: scenario.independent.id,
+      });
+      scenario.independent.expectedFixtures = [
+        { path: oldFixturePath, claimId: 'claim-correction-independent' },
       ];
-      await expect(validateProbe(scenario, [dependent])).resolves.toMatchObject({ valid: true });
-      void oldDecision;
+      scenario.lesson.expectedFixtures = structuredClone(originalOwnerFixtures);
+      const removedBinding = await validateProbe(scenario, [dependent]);
+      expect(removedBinding.valid).toBe(true);
+      expect(removedBinding.current[0].inputState).toMatchObject({
+        current: false,
+        stale: expect.arrayContaining([
+          `records:${scenario.lesson.id}:changed`,
+          `fixtures:${oldFixturePath}:removed`,
+        ]),
+      });
+      expect(evaluateWithProbeState(scenario, removedBinding).complete).toBe(false);
     } finally {
-      scenario.context.fixtureBindings = [currentBinding];
-      scenario.lesson.expectedFixtures = ownerFixtures;
-      delete scenario.context.fixtureBytes[
-        'packages/knowledge/tests/fixtures/synthetic-old-expected-result.json'
-      ];
+      scenario.context.fixtureBindings = structuredClone(originalFixtureBindings);
+      scenario.lesson.expectedFixtures = structuredClone(originalOwnerFixtures);
+      if (originalIndependentFixtures === undefined) delete scenario.independent.expectedFixtures;
+      else scenario.independent.expectedFixtures = structuredClone(originalIndependentFixtures);
+      ledgerDecision.inputs = structuredClone(originalDecision.inputs);
+      delete scenario.context.fixtureBytes[oldFixturePath];
     }
+    expect(scenario.context.fixtureBindings).toEqual(originalFixtureBindings);
+    expect(scenario.lesson.expectedFixtures).toEqual(originalOwnerFixtures);
+    expect(scenario.lesson.expectedFixtures).toHaveLength(1);
+    const restored = await validateProbe(scenario, [dependent]);
+    expect(restored.valid).toBe(true);
+    expect(restored.current[0].inputState).toEqual({ current: true, stale: [] });
+    expect(evaluateWithProbeState(scenario, restored).complete).toBe(true);
   }, 30_000);
 
   it('rejects structural dependency cycles and missing support instead of treating them as stale review', async () => {
@@ -431,10 +465,16 @@ describe('isolated audit correction and approval invalidation probes', () => {
       const missing = await validateProbe(scenario, [lessonTarget]);
       expect(missing.valid).toBe(false);
       expect(missing.errors.join('\n')).toMatch(/Missing structural claim dependency/);
+      const missingGates = evaluateWithProbeState(scenario, missing);
+      expect(missingGates.valid).toBe(false);
+      expect(missingGates.complete).toBe(false);
       scenario.lesson.claims[0].dependsOnClaimIds = ['claim-correction-dependent'];
       const cyclic = await validateProbe(scenario, [lessonTarget]);
       expect(cyclic.valid).toBe(false);
       expect(cyclic.errors.join('\n')).toMatch(/Cyclic claim dependency/);
+      const cyclicGates = evaluateWithProbeState(scenario, cyclic);
+      expect(cyclicGates.valid).toBe(false);
+      expect(cyclicGates.complete).toBe(false);
     } finally {
       scenario.lesson.claims[0].dependsOnClaimIds = originalDependencies;
     }

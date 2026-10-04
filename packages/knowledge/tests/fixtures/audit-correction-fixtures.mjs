@@ -828,7 +828,11 @@ export function evaluateWithProbeState(scenario, probeState) {
   }
   return evaluateAuditGates({
     registry: scenario.registry,
-    ledgerState: { ...scenario.ledgerState, current },
+    ledgerState: {
+      ...scenario.ledgerState,
+      errors: [...new Set([...scenario.ledgerState.errors, ...probeState.errors])],
+      current,
+    },
     context: scenario.context,
     certification: scenario.certification,
   });
