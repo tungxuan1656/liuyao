@@ -653,7 +653,21 @@ async function makeDecision(target, index, context, registry, records) {
   return decision;
 }
 
+let approvedCorrectionBaselinePromise;
+
 export async function createApprovedCorrectionScenario() {
+  approvedCorrectionBaselinePromise ??= buildApprovedCorrectionScenario();
+  const baseline = await approvedCorrectionBaselinePromise;
+  const { validateRegistry, validateLedger, validateRecord, ...scenarioData } = baseline;
+  return {
+    ...structuredClone(scenarioData),
+    validateRegistry,
+    validateLedger,
+    validateRecord,
+  };
+}
+
+async function buildApprovedCorrectionScenario() {
   const { records, lesson, support, prerequisite, independent } = makeRecords();
   const registry = makeRegistry();
   for (let index = 1; index <= 168; index += 1) {

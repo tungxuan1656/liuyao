@@ -82,6 +82,34 @@ describe('isolated audit correction and approval invalidation probes', () => {
     await yieldToEventLoop();
   }, 30_000);
 
+  it('isolates cloned scenarios while preserving their internal record and decision links', async () => {
+    const first = await createApprovedCorrectionScenario();
+    const second = await createApprovedCorrectionScenario();
+    const firstCurrent = itemForTarget(first.ledgerState.current, {
+      kind: 'record',
+      id: first.lesson.id,
+    });
+    const firstLedgerDecision = first.ledgers
+      .flatMap(ledger => ledger.decisions)
+      .find(decision => decision.id === firstCurrent.decision.id);
+
+    expect(first).not.toBe(second);
+    expect(first.records).not.toBe(second.records);
+    expect(first.context.records).toBe(first.records);
+    expect(first.lesson).toBe(first.records.find(record => record.id === first.lesson.id));
+    expect(firstCurrent.decision).toBe(firstLedgerDecision);
+
+    first.lesson.title = 'Mutated first scenario only';
+    first.context.fixtureBytes['synthetic-isolation-probe'] = Buffer.from('first only');
+    first.registry.registryRevision += 1;
+
+    expect(second.lesson.title).toBe('Synthetic dependent lesson');
+    expect(second.context.fixtureBytes['synthetic-isolation-probe']).toBeUndefined();
+    expect(second.registry.registryRevision).toBe(1);
+    expect(second.targets).toHaveLength(2064);
+    expect(second.gates.complete).toBe(true);
+  }, 30_000);
+
   it('stales record text, title, and metadata while an unrelated unit retains its approval', async () => {
     const scenario = await createApprovedCorrectionScenario();
     const recordTarget = getTarget(
