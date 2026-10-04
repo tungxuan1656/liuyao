@@ -302,7 +302,7 @@ The selected NTT comparisons were checked against the supplied PDF images: Phong
 
 All 52 citations for Tổn, Ích, Quải, and Cấu attributed to Nguyễn Hiến Lê were checked against the footer images on NHL PDF 261–273. The printed-page labels visible on those images match the PDF page numbers, 261–273; the citations retain the PDF locations and include matching printed-page fields.
 
-BPCT chapter 6 sentences 12–16 have separate numbered verse and Vương Hồng Tự commentary citations in [batch eleven](../../packages/knowledge/data/citations/batch-eleven.json). No translator notes are attached to these five labels; the footnote at sentence 11 remains with its existing citation. Sentence 13's historical relationship examples and sentence 16's horse image remain bounded, source-attributed summaries. Chapter-wide coverage remains open.
+BPCT chapter 6 sentences 12–16 have separate numbered verse and Vương Hồng Tự commentary citations in [batch eleven](../../packages/knowledge/data/citations/batch-eleven-advanced.json). No translator notes are attached to these five labels; the footnote at sentence 11 remains with its existing citation. Sentence 13's historical relationship examples and sentence 16's horse image remain bounded, source-attributed summaries. Chapter-wide coverage remains open.
 
 The [Gia Nhân](../../packages/knowledge/data/hexagrams/hexagram-37.json),
 [Khuê](../../packages/knowledge/data/hexagrams/hexagram-38.json), and
