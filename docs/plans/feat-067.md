@@ -138,9 +138,9 @@
 - [x] Run focused audit tests and `pnpm --filter @liuyao/knowledge validate:corpus --check`.
 - [x] Run `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build`.
 - [x] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` locally when all supplied PDFs are available; report any environmental skip without substituting CI evidence.
-- [ ] Run `./init.sh` and record the exact result. Do not broaden scope to fix unrelated baseline failures. Prior writer execution was reported; coordinator's fresh receipt is pending.
+- [x] Run `./init.sh` and record the exact result. Do not broaden scope to fix unrelated baseline failures.
 - [x] Compare authored V1 records and generated public release JSON/TypeScript to the pre-feature baseline; require byte identity because no content change is planned.
-- [ ] Confirm no real audit decisions or certification were manufactured, all links resolve, and feature acceptance reflects evidence rather than intended work. The real ledger is empty and certification is absent; final route/review confirmation remains pending.
+- [x] Confirm no real audit decisions or certification were manufactured, all links resolve, and feature acceptance reflects evidence rather than intended work. The real ledger is empty and certification is absent.
 - [x] Record verified commands, results, blockers, and one concrete next action in the feature handoff and append-only progress record.
 
 ## Verification Matrix
@@ -173,15 +173,13 @@
 | CI has recorded PDF SHAs but no local PDF files                                                                          | Structural/freshness checks work without claiming PDF presence or visual review.                                                                                                       |
 | No meaningful corpus-content change in feat-067                                                                          | Authored V1 files and generated public release JSON/TypeScript remain byte-identical.                                                                                                  |
 
-## Handoff
-
 ## Current evidence and handoff
 
-- **State:** Implementation and coordinator validation passed; feat-067 remains active pending exact-SHA review, CI/PR, and final acceptance.
-- **Verification:** Coordinator `./init.sh`, receipt `sh_10575faea001SigKv3L0CXTuyy`, passed: 387 tests (181 core, 206 knowledge), format, lint (0 errors, 4 baseline warnings), typecheck, build, exports, placement, length, and corpus/book freshness. `pnpm --filter @liuyao/knowledge validate:corpus --require-complete` exited 1 as expected because both gates are closed: 2,057 missing decisions, zero current decisions, 0/1,226 released claims covered, and certification absent. The earlier 29 focused audit tests passed. No source audit or specialist approval is claimed.
-- **Protected identity:** 175 protected files (172 V1 records, V1 schema, release JSON, and typed wrapper) are byte-identical to base. Snapshot identity is unchanged at `da736ea2c73cabe55317ca8babe86e0ea022b4bd6c52c576fc95c0c82191c67e`.
+- **State:** Done for implementation and verified acceptance; PR #63 awaits final lifecycle-head CI and merge.
+- **Exact-SHA review:** On `9a347b365a554fd85767d0ece97b67d5a5fcdbea`, review closed F1/F2/F3/F7 with no material findings; 37 focused tests reproduced. The 175 protected outputs/data files were unchanged.
+- **Coordinator verification:** Fresh `./init.sh` receipt `sh_105d93047001obGaDflxxH16W3` passed 391 tests (181 core, 210 knowledge), typecheck, build, exports, length, lint (four baseline warnings), and corpus/book freshness. `--require-complete` exited 1 as expected with closed gates. CI run `37186502264`, job `111389426336`, and Cloudflare/GitGuardian passed for PR #63 head `9a347b3`; final lifecycle-head CI and merge remain pending.
+- **Protected identity:** 175 protected files (172 V1 records, V1 schema, release JSON, and typed wrapper) remain byte-identical; snapshot identity is unchanged at `da736ea2c73cabe55317ca8babe86e0ea022b4bd6c52c576fc95c0c82191c67e`.
 - **Observed gates:** Registry has 1,344 cells, 6 specials, 518 groups, and 17 exclusions. Fourteen layer rosters and 518 group discoveries remain unresolved. All 2,057 required targets lack current decisions; released claim coverage is 0/1,226. No source review or certification is claimed.
 - **Report shape:** The coordinator approved the generated `gates.sourceReview` and `gates.certification` objects as the canonical report representation. `complete` remains derived from both required gates and validation; this clarification does not weaken evidence, approval, or stale-input conditions.
-- **Review findings:** F4 is a bounded validator limit: it enforces cell/special counts, group/exclusion count equality, and listed BPCT censuses, but not full group/exclusion floors or all NTT/NHL/postscript membership. The 518/17 values are current projection counts, not machine-enforced minima; inventory closure still requires review. F5 is conservative: absent-layer `non-content` and `source-omission` bases are structurally allowed only for exclusion targets; other targets require `inspected-page`. F6 remains open: corpus validation passes an empty `fixtureBindings` list and has no authored fixture bindings, so fixture coverage is not demonstrated. These findings do not waive acceptance or assert source facts/approval.
-- **Verification boundary:** The recorded receipt and protected-file comparison apply to the earlier checked revision. Concurrent F1/F2 code changes remain pending, and the F7 nonempty-release regression has not yet passed. Do not treat earlier checks as validation of their resulting head.
-- **Next:** After F1/F2 and F7 changes land, rerun required checks on the resulting SHA, then complete exact-SHA review and CI/PR. Keep feat-067 active until every original acceptance criterion passes.
+- **Proof limits:** F4-F6 limits above remain as documented in the canonical model: census validation is bounded, absent-layer basis is restricted, and no real fixture bindings are registered. These are implementation evidence limits, not claims of source facts, specialist approval, or certified corpus completion. The audited gate state remains closed: 2,057 missing decisions, zero current, 0/1,226 released claims covered, and certification absent.
+- **Next:** Merge PR #63 after final lifecycle-head CI passes, then activate feat-097 for the correction drill. Do not claim the PR is merged.

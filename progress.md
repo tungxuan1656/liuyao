@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-04 — feat-067 implementation accepted
+
+**State**: done for implementation and verified acceptance; PR #63 awaits final lifecycle-head CI and merge.
+**Done**: Closed feat-067 implementation criteria after exact-SHA review and coordinator validation; retained open real-audit and certification gates.
+**Evidence**: Reviewed SHA `9a347b365a554fd85767d0ece97b67d5a5fcdbea`; F1/F2/F3/F7 closed without material findings, 37 focused tests passed. `./init.sh` receipt `sh_105d93047001obGaDflxxH16W3` passed 391 tests (181 core, 210 knowledge), typecheck/build/exports/length/lint and corpus/book checks. CI run `37186502264` job `111389426336` passed. 175 protected files remain unchanged. Audit gates are closed: 2,057 decisions missing, 0/1,226 claims covered, no certification.
+**Blockers**: Final lifecycle-head CI and PR #63 merge. No source audit or specialist approval is claimed.
+**Next**: Merge PR #63 after final-head CI, then activate feat-097 for the correction drill.
+
 ## 2026-10-04 — feat-067 coordinator verification
 
 **State**: active; coordinator verification passed, with exact-SHA review and CI/PR pending.
