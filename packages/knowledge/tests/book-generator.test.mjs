@@ -3,6 +3,7 @@ import {
   mkdtempSync,
   mkdirSync,
   readFileSync,
+  renameSync,
   rmSync,
   symlinkSync,
   writeFileSync,
@@ -22,38 +23,140 @@ const require = createRequire(import.meta.url);
 it('reproduces generated output and rejects stale or unlisted authoring files', () => {
   const temporary = mkdtempSync(path.join(tmpdir(), 'liuyao-corpus-test-'));
   try {
+    const repositoryRoot = path.join(temporary, 'repo');
+    const temporaryPackage = path.join(repositoryRoot, 'packages/knowledge');
     for (const directory of ['scripts', 'schema', 'data'])
-      cpSync(path.join(root, directory), path.join(temporary, directory), { recursive: true });
-    mkdirSync(path.join(temporary, 'src'));
-    mkdirSync(path.join(temporary, 'node_modules'));
+      cpSync(path.join(root, directory), path.join(temporaryPackage, directory), {
+        recursive: true,
+      });
+    cpSync(path.join(root, 'src'), path.join(temporaryPackage, 'src'), { recursive: true });
+    cpSync(
+      path.resolve(root, '../../docs/reviews/knowledge'),
+      path.join(repositoryRoot, 'docs/reviews/knowledge'),
+      { recursive: true },
+    );
+    cpSync(
+      path.resolve(root, '../../feature_index.json'),
+      path.join(repositoryRoot, 'feature_index.json'),
+    );
+    mkdirSync(path.join(temporaryPackage, 'node_modules'));
     for (const name of ['ajv', 'ajv-formats', 'prettier'])
       symlinkSync(
         path.dirname(require.resolve(`${name}/package.json`)),
-        path.join(temporary, 'node_modules', name),
+        path.join(temporaryPackage, 'node_modules', name),
       );
     const run = (...args) =>
-      spawnSync(process.execPath, [path.join(temporary, 'scripts/validate-corpus.mjs'), ...args], {
-        encoding: 'utf8',
-        timeout: 20_000,
-      });
-    const generated = path.join(temporary, 'src/book-data.generated.ts');
-    const releaseJson = path.join(temporary, 'src/book-release.generated.json');
+      spawnSync(
+        process.execPath,
+        [path.join(temporaryPackage, 'scripts/validate-corpus.mjs'), ...args],
+        {
+          encoding: 'utf8',
+          timeout: 30_000,
+        },
+      );
+    const generated = path.join(temporaryPackage, 'src/book-data.generated.ts');
+    const releaseJson = path.join(temporaryPackage, 'src/book-release.generated.json');
+    const auditStatus = path.join(temporaryPackage, 'reports/audit-status.json');
+    const coverageReport = path.join(temporaryPackage, 'reports/coverage.json');
     const first = run();
     expect(first.status, first.stderr).toBe(0);
     const original = readFileSync(generated, 'utf8');
+    const originalAudit = readFileSync(auditStatus, 'utf8');
+    const originalCoverage = readFileSync(coverageReport, 'utf8');
+    const originalRelease = readFileSync(releaseJson, 'utf8');
+    const originalWrapper = readFileSync(generated, 'utf8');
     expect(run('--check').status).toBe(0);
     expect(run().status).toBe(0);
     expect(readFileSync(generated, 'utf8')).toBe(original);
+    expect(readFileSync(auditStatus, 'utf8')).toBe(originalAudit);
+    writeFileSync(auditStatus, originalAudit);
+    expect(readFileSync(coverageReport, 'utf8')).toBe(originalCoverage);
+    const audit = JSON.parse(originalAudit);
+    expect(audit.registry.counts).toMatchObject({
+      overviewCells: 192,
+      positionCells: 1152,
+      hexagramCells: 1344,
+      specialPassages: 6,
+      groups: 518,
+      exclusions: 17,
+    });
+    expect(audit.totals).toMatchObject({
+      releasedClaimsCovered: 0,
+      releasedClaimsRequired: 1226,
+      currentDecisions: 0,
+    });
+    expect(audit.gates.sourceReview.status).toBe('closed');
+    expect(audit.gates.certification.status).toBe('closed');
+    expect(JSON.parse(originalCoverage).complete).toBe(false);
+    const protectedFiles = [
+      ...JSON.parse(
+        readFileSync(path.join(temporaryPackage, 'data/manifest.json'), 'utf8'),
+      ).recordFiles.map(file => path.join(temporaryPackage, 'data', file)),
+      releaseJson,
+      generated,
+    ];
+    const protectedBytes = protectedFiles.map(file => readFileSync(file));
+
+    writeFileSync(auditStatus, `${originalAudit.trim()} `);
+    const staleAudit = run('--check');
+    expect(staleAudit.status).not.toBe(0);
+    expect(staleAudit.stderr).toContain('Stale generated corpus output: reports/audit-status.json');
+    writeFileSync(auditStatus, originalAudit);
+    const requireComplete = run('--require-complete');
+    expect(requireComplete.status).not.toBe(0);
+    expect(requireComplete.stderr).toContain('Audit completion gates are closed');
+    expect(readFileSync(auditStatus, 'utf8')).toBe(originalAudit);
+    const unknownOption = run('--unknown-audit-mode');
+    expect(unknownOption.status).not.toBe(0);
+    expect(unknownOption.stderr).toContain('Unknown corpus validation option');
+
+    const expectedRegistry = path.join(
+      repositoryRoot,
+      'docs/reviews/knowledge/expected-units.json',
+    );
+    const registryBefore = readFileSync(expectedRegistry, 'utf8');
+    const manifestPath = path.join(temporaryPackage, 'data/manifest.json');
+    const mutatedRegistry = JSON.parse(registryBefore);
+    mutatedRegistry.counts.groups -= 1;
+    writeFileSync(expectedRegistry, JSON.stringify(mutatedRegistry, null, 2) + '\n');
+    const invalidRegistry = run();
+    expect(invalidRegistry.status).not.toBe(0);
+    expect(invalidRegistry.stderr).toMatch(/Expected-unit registry invalid/);
+    writeFileSync(expectedRegistry, registryBefore);
+
+    const standaloneCheckBooks = run('--check-books');
+    expect(standaloneCheckBooks.status).not.toBe(0);
+    expect(standaloneCheckBooks.stderr).toContain('ENOENT');
+
+    const changedRegistry = JSON.parse(registryBefore);
+    changedRegistry.registryRevision += 1;
+    writeFileSync(expectedRegistry, JSON.stringify(changedRegistry, null, 2) + '\n');
+    const changedRegistryResult = run();
+    expect(changedRegistryResult.status, changedRegistryResult.stderr).toBe(0);
+    const changedAudit = readFileSync(auditStatus, 'utf8');
+    expect(changedAudit).not.toBe(originalAudit);
+    expect(JSON.parse(changedAudit).gates.sourceReview.status).toBe('closed');
+    expect(readFileSync(releaseJson, 'utf8')).toBe(originalRelease);
+    expect(readFileSync(generated, 'utf8')).toBe(originalWrapper);
+    writeFileSync(expectedRegistry, registryBefore);
+
+    const ledgerRoot = path.join(repositoryRoot, 'docs/reviews/knowledge/ledgers');
+    const ledgerHold = `${ledgerRoot}.hold`;
+    renameSync(ledgerRoot, ledgerHold);
+    const missingLedgerRoot = run();
+    expect(missingLedgerRoot.status).not.toBe(0);
+    expect(missingLedgerRoot.stderr).toContain('Ledger root is required');
+    renameSync(ledgerHold, ledgerRoot);
+
     const release = readFileSync(releaseJson, 'utf8');
     expect(release).not.toContain('draft-marker');
     expect(release).not.toContain('localInputPath');
     expect(release).not.toContain('data/manifest.json');
     expect(readFileSync(generated, 'utf8')).not.toMatch(/\.\.\/data\//);
     expect(readFileSync(generated, 'utf8')).toContain('"./book-release.generated.json"');
-    const manifestPath = path.join(temporary, 'data/manifest.json');
     const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
     const draftRecord = JSON.parse(
-      readFileSync(path.join(temporary, 'data/terms/term-yang.json'), 'utf8'),
+      readFileSync(path.join(temporaryPackage, 'data/terms/term-yang.json'), 'utf8'),
     );
     draftRecord.id = 'term-synthetic-c3-draft';
     draftRecord.claims = draftRecord.claims.map((claim, index) => ({
@@ -61,7 +164,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
       id: `claim-synthetic-c3-draft-${index + 1}`,
       text: 'UNIQUE_DRAFT_PROSE_MARKER',
     }));
-    const draftPath = path.join(temporary, 'data/terms/term-synthetic-c3-draft.json');
+    const draftPath = path.join(temporaryPackage, 'data/terms/term-synthetic-c3-draft.json');
     const beforeDraftIdentity = JSON.parse(readFileSync(releaseJson, 'utf8')).snapshotIdentity;
     draftRecord.review.status = 'draft';
     draftRecord.title = 'UNIQUE_DRAFT_TITLE_MARKER';
@@ -79,14 +182,18 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     expect(stale.status).not.toBe(0);
     expect(stale.stderr).toContain('Stale generated corpus output');
     expect(run().status).toBe(0);
-    writeFileSync(path.join(temporary, 'data/terms/unlisted.json'), '{}');
+    writeFileSync(path.join(temporaryPackage, 'data/terms/unlisted.json'), '{}');
     const unlisted = run();
     expect(unlisted.status).not.toBe(0);
     expect(unlisted.stderr).toContain('Unlisted authored JSON: terms/unlisted.json');
+    protectedFiles.forEach((file, index) =>
+      expect(readFileSync(file)).toEqual(protectedBytes[index]),
+    );
+    expect(readFileSync(releaseJson, 'utf8')).toBe(releaseAfterDraftEdit);
   } finally {
     rmSync(temporary, { recursive: true, force: true });
   }
-}, 20_000);
+}, 40_000);
 
 it('projects only selected records and reachable citation editions without local paths', () => {
   const claim = (id, citationIds = []) => ({ id, kind: 'structural-fact', text: id, citationIds });
