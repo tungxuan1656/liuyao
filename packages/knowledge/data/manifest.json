@@ -23,7 +23,9 @@
     "citations/batch-nine-hexagrams.json",
     "citations/batch-nine-advanced.json",
     "citations/batch-ten-hexagrams.json",
-    "citations/batch-ten-advanced.json"
+    "citations/batch-ten-advanced.json",
+    "citations/batch-eleven-hexagrams.json",
+    "citations/batch-eleven-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -197,7 +199,12 @@
     "terms/term-year-authority.json",
     "liuyao/year-authority-context.json",
     "terms/term-hexagram-body.json",
-    "liuyao/hexagram-body-context.json"
+    "liuyao/hexagram-body-context.json",
+    "hexagrams/hexagram-41.json",
+    "hexagrams/hexagram-42.json",
+    "hexagrams/hexagram-43.json",
+    "hexagrams/hexagram-44.json",
+    "liuyao/shi-ying-interaction-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -365,6 +372,11 @@
     "hexagram-38",
     "hexagram-39",
     "hexagram-40",
+    "hexagram-41",
+    "hexagram-42",
+    "hexagram-43",
+    "hexagram-44",
+    "article-shi-ying-interaction-context",
     "term-death-stage",
     "article-death-store-extinction-empty-context",
     "article-day-and-month-authority-context",

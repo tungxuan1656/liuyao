@@ -16,6 +16,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-05 — feat-044 implementation finalized
+
+**State**: done for implementation and local acceptance; exact-SHA review, PR, and merge remain pending.
+**Done**: Completed full-source review and attribution-applicability follow-up for the authored quẻ 41–44 and BPCT 12–16 batch; recorded the feature as done without claiming merged delivery or audit completion.
+**Evidence**: Coordinator run `sh_10819f80b00103gkUOz5438OgP` passed generation, `./init.sh`, format, lint, corpus `--check-books --check`, and diff checks; 416 tests passed (181 core, 235 knowledge). Full-source review and ora-11/ora-12 findings are recorded in [feat-044](features/feat-044.md).
+**Blockers**: Exact-SHA review and PR/merge remain. Audit decisions, audits 078/085, independent specialist approval, rights clearance, and certification remain incomplete.
+**Next**: Coordinator commits the explicitly owned batch paths and requests exact-SHA review.
+
+## 2026-10-05 — feat-044 verification handoff
+
+**State**: active; assigned repository verification passed, with final attribution applicability review and delivery gates pending.
+**Done**: Removed the Hồ Vân Phong clause from the Chu Hy caution claim; retained its attribution and citation span. Ora-11 accepted the earlier P1–P4 correction snapshot.
+**Evidence**: Coordinator shell `sh_10819f80b00103gkUOz5438OgP` passed validator refresh, `./init.sh`, format check, lint, corpus `--check-books --check`, and diff checks. Tests: 416 (181 core, 235 knowledge). Corpus: 177 records, 1,395 claims, 1,265 citations, 44 released quẻ, and 264 line positions. Four nonfatal web lint warnings and build font, sourcemap, and chunk warnings remain.
+**Blockers**: Fresh ora-12 review of the one-claim attribution delta is pending. Audits 078/085, independent specialist approval, and certification remain incomplete.
+**Next**: Reconcile ora-12's attribution applicability review, then proceed with coordinator commit, exact-SHA review, and PR gates.
+
 ## 2026-10-04 — feat-097 implementation verified
 
 **State**: done for implementation and locally verified acceptance; PR #64 current-head CI and merge pending.

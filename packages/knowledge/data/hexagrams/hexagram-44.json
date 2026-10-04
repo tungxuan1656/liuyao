@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-44",
+  "type": "hexagram",
+  "title": "Thiên Phong Cấu",
+  "aliases": ["Cấu"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-44-structure",
+      "kind": "structural-fact",
+      "text": "Thiên Phong Cấu có nội quái Tốn và ngoại quái Càn; sáu hào được ghi theo thứ tự từ dưới lên.",
+      "citationIds": [
+        "citation-pbc-q44-overview-classical-text",
+        "citation-ntt-q44-overview-classical-text",
+        "citation-nhl-q44-line-1-classical-text",
+        "citation-nhl-q44-line-2-classical-text",
+        "citation-nhl-q44-line-3-classical-text",
+        "citation-nhl-q44-line-4-classical-text",
+        "citation-nhl-q44-line-5-classical-text",
+        "citation-nhl-q44-line-6-classical-text",
+        "citation-pbc-q44-line-1-classical-text",
+        "citation-pbc-q44-line-2-classical-text",
+        "citation-pbc-q44-line-3-classical-text",
+        "citation-pbc-q44-line-4-classical-text",
+        "citation-pbc-q44-line-5-classical-text",
+        "citation-pbc-q44-line-6-classical-text",
+        "citation-ntt-q44-line-1-classical-text",
+        "citation-ntt-q44-line-2-classical-text",
+        "citation-ntt-q44-line-3-classical-text",
+        "citation-ntt-q44-line-4-classical-text",
+        "citation-ntt-q44-line-5-classical-text",
+        "citation-ntt-q44-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giải Cấu là gặp và hào âm mới sinh, khuyên không để điều nhỏ tăng lên; câu Tự Quái in “Cấn” dù tiêu đề và phần còn lại xác định Cấu.",
+      "citationIds": ["citation-nhl-q44-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Câu Tự Quái in “Cấn”; giữ đúng sai biệt được in, không tự sửa thành tên khác."
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu nối Cấu với cuộc gặp sau Quải, gió dưới trời và hào âm đầu tiên gặp dương; phần chính trị là ví dụ riêng của ông.",
+      "citationIds": ["citation-pbc-q44-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-44-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải Cấu là cuộc gặp sau quyết định, với gió dưới trời và hào âm mới gặp dương.",
+      "citationIds": ["citation-ntt-q44-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-44-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải quẻ Cấu theo nghĩa gặp gỡ, đồng thời nêu cách giải gắn với mùa và sự biến đổi.",
+      "citationIds": ["citation-ntt-q44-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-44-overview-ntt-q44-overview-tien-nho-phung-hau-trai",
+      "kind": "author-interpretation",
+      "text": "Phùng Hậu Trai nói rằng trong Kinh Dịch cổ dùng một dạng chữ nghĩa là gặp; các bản đời sau đổi sang dạng khác cùng âm và nghĩa gặp, còn Tạp Quái và bản của Trịch Huyền vẫn dùng dạng thứ nhất.",
+      "citationIds": ["citation-ntt-q44-overview-tien-nho-phung-hau-trai"],
+      "attribution": {
+        "author": "Phùng Hậu Trai",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-44-note-1",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải cụm từ này theo nghĩa phân loại hoặc tách riêng.",
+      "citationIds": ["citation-ntt-q44-note-1"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-44-note-2",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố ghi ở chú thích 2, PDF 696, chữ được đọc là “cấu”.",
+      "citationIds": ["citation-ntt-q44-note-2"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-44-note-3",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố ghi ở chú thích 3, PDF 697, một dạng chữ khác cũng đọc là “cấu”.",
+      "citationIds": ["citation-ntt-q44-note-3"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-heaven", "trigram-wind"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yang", "yang", "yang", "yang"],
+    "kingWenNumber": 44,
+    "upperTrigramId": "trigram-heaven",
+    "lowerTrigramId": "trigram-wind",
+    "claimIds": ["hexagram-44-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-44-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Cần ngăn hào âm mới từ sớm; hình ảnh kim loại và heo yếu gắn với cảnh giác trước điều nhỏ có thể lớn lên.",
+          "citationIds": ["citation-nhl-q44-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào âm đầu tuy yếu nhưng có thể lớn lên; lời bàn khuyên chú ý điều kiện từ đầu và đừng xem nhẹ.",
+          "citationIds": ["citation-pbc-q44-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào âm đầu sẽ lớn nếu được tiến; cần ngăn từ khi nó còn yếu.",
+          "citationIds": ["citation-ntt-q44-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải kim loại ngăn giữ là trạng thái yên đáng lợi, còn hào âm tiến lên là điều cần dè chừng.",
+          "citationIds": ["citation-ntt-q44-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-44-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào hai giữ hào đầu như cá trong túi, không để nó gặp hào bốn; ông liên hệ nguy cơ với cách cư xử thiếu của hào bốn.",
+          "citationIds": ["citation-nhl-q44-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào hai giữ cá lại, không biến nó thành khách; ở gần nên có thể giữ, còn để gặp ngoài thì dễ mất kiểm soát.",
+          "citationIds": ["citation-pbc-q44-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Cá là hào âm đầu do hào hai liền kề giữ lại; không nên để nó chia sự gặp gỡ sang hào bốn.",
+          "citationIds": ["citation-ntt-q44-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Ông xem cá là âm và túi là khả năng hào hai giữ nó; lời răn về khách ngăn cuộc gặp lan rộng.",
+          "citationIds": ["citation-ntt-q44-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-44-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào ba muốn gặp hào đầu nhưng hào hai đã giữ hào ấy nên không yên; cẩn trọng giúp hạn chế lỗi.",
+          "citationIds": ["citation-nhl-q44-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào ba không gặp được hào đầu vì hào hai đã gặp; chuyển động khó và có nguy nhưng nếu dừng thì lỗi không lớn.",
+          "citationIds": ["citation-pbc-q44-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào ba không yên giữa hào một và hai, muốn gặp nhưng khó rời; cẩn trọng có thể giới hạn lỗi.",
+          "citationIds": ["citation-ntt-q44-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào ba không yên hoặc tiến được do vị trí và không gặp; nguy nhưng không nhất thiết thành lỗi lớn.",
+          "citationIds": ["citation-ntt-q44-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-44-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Túi trống vì hào đầu đã gặp hào hai; theo cách giải của ông, hào bốn không giữ được người dưới.",
+          "citationIds": ["citation-nhl-q44-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào bốn mất cuộc gặp với hào đầu vào hào hai; ông quy kết quả ấy cho người trên không giữ được người dưới.",
+          "citationIds": ["citation-pbc-q44-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào bốn mất người phía dưới vì không có đức thích hợp; túi rỗng chỉ cuộc gặp đã chuyển sang chỗ khác.",
+          "citationIds": ["citation-ntt-q44-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào đầu đã gặp hào hai, khiến hào bốn không còn cá của mình.",
+          "citationIds": ["citation-ntt-q44-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-44-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào năm che chở phía dưới mà không phô đức; hình ảnh cây cỏ gắn với sự che phủ và lợi đến từ trời.",
+          "citationIds": ["citation-nhl-q44-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Người đứng giữa che chở phía dưới và nhờ khiêm nhường mà gặp người có tài; giai thoại lịch sử vẫn là ví dụ của PBC.",
+          "citationIds": ["citation-pbc-q44-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Người đứng đầu khiêm nhường tìm người có tài ở dưới; lòng thành và đức thích hợp khiến cuộc gặp có thể thành.",
+          "citationIds": ["citation-ntt-q44-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy ví Cửu ngũ cứng và giữ đường giữa như cây kỷ che quả dưa; cuộc gặp cần được giữ kín và đúng thời.",
+          "citationIds": ["citation-ntt-q44-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-note-4",
+          "kind": "author-interpretation",
+          "text": "Ngô Tất Tố kể lại điển tích Cao Tông và Phó Duyệt trong chú thích; đây là lời dẫn nguồn, không phải xác minh độc lập.",
+          "citationIds": ["citation-ntt-q44-note-4"],
+          "attribution": {
+            "author": "Ngô Tất Tố"
+          },
+          "conditions": [
+            "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+          ]
+        },
+        {
+          "id": "hexagram-44-note-5",
+          "kind": "author-interpretation",
+          "text": "Ngô Tất Tố kể lại điển tích Văn Vương và Khương Thượng trong chú thích; đây là lời dẫn nguồn, không phải xác minh độc lập.",
+          "citationIds": ["citation-ntt-q44-note-5"],
+          "attribution": {
+            "author": "Ngô Tất Tố"
+          },
+          "conditions": [
+            "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-44-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào trên gặp bằng sừng, biểu thị cứng quá; ông đọc “không lỗi” là không còn ai khác để trách và phân biệt với PBC.",
+          "citationIds": ["citation-nhl-q44-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào trên gặp bằng sừng, là cách cứng quá gây hối; giữ lời giải riêng của PBC, không nâng thành quy tắc chung.",
+          "citationIds": ["citation-pbc-q44-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Sừng là sự cứng ở cực điểm; tìm gặp từ vị trí quá cao và cứng khiến đáng tiếc.",
+          "citationIds": ["citation-ntt-q44-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Ông cũng giải sừng là sự cứng ở trên cùng; giữ cách đọc riêng với Trình Di.",
+          "citationIds": ["citation-ntt-q44-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Giữ hình tượng chính trị và quan hệ vai vế trong văn cảnh cổ; không suy thành quy tắc phổ quát hoặc dự báo cho cá nhân hiện đại."
+          ]
+        },
+        {
+          "id": "hexagram-44-line-6-ntt-q44-line-6-ly-long-son",
+          "kind": "author-interpretation",
+          "text": "Lý Long Sơn cho việc hào trên không gặp hào âm đầu là đáng tiếc nhưng tránh được nguy cơ; đây là lời Tiên Nho riêng.",
+          "citationIds": ["citation-ntt-q44-line-6-ly-long-son"],
+          "attribution": {
+            "author": "Lý Long Sơn",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-44-line-6-ntt-q44-line-6-ho-van-phong",
+          "kind": "author-interpretation",
+          "text": "Hồ Vân Phong so sánh hào ba và hào sáu: không gặp hào âm đầu tự nó không phải lỗi khi cuộc gặp ấy không thích hợp.",
+          "citationIds": ["citation-ntt-q44-line-6-ho-van-phong"],
+          "attribution": {
+            "author": "Hồ Vân Phong",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-44-note-6",
+          "kind": "author-interpretation",
+          "text": "Ngô Tất Tố phân biệt cách dịch “không thể đổ lỗi cho ai” với các cách dùng khác mang nghĩa “không có lỗi” và với ngữ pháp của câu.",
+          "citationIds": ["citation-ntt-q44-note-6"],
+          "attribution": {
+            "author": "Ngô Tất Tố"
+          },
+          "conditions": [
+            "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "OpenCode Fixer",
+    "reviewedAt": "2026-10-04",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-pbc-q44-overview-classical-text",
+      "citation-ntt-q44-overview-classical-text",
+      "citation-nhl-q44-line-1-classical-text",
+      "citation-nhl-q44-line-2-classical-text",
+      "citation-nhl-q44-line-3-classical-text",
+      "citation-nhl-q44-line-4-classical-text",
+      "citation-nhl-q44-line-5-classical-text",
+      "citation-nhl-q44-line-6-classical-text",
+      "citation-pbc-q44-line-1-classical-text",
+      "citation-pbc-q44-line-2-classical-text",
+      "citation-pbc-q44-line-3-classical-text",
+      "citation-pbc-q44-line-4-classical-text",
+      "citation-pbc-q44-line-5-classical-text",
+      "citation-pbc-q44-line-6-classical-text",
+      "citation-ntt-q44-line-1-classical-text",
+      "citation-ntt-q44-line-2-classical-text",
+      "citation-ntt-q44-line-3-classical-text",
+      "citation-ntt-q44-line-4-classical-text",
+      "citation-ntt-q44-line-5-classical-text",
+      "citation-ntt-q44-line-6-classical-text",
+      "citation-nhl-q44-overview-nhl",
+      "citation-pbc-q44-overview-pbc",
+      "citation-ntt-q44-overview-trinh-di",
+      "citation-ntt-q44-overview-chu-hy",
+      "citation-ntt-q44-overview-tien-nho-phung-hau-trai",
+      "citation-ntt-q44-note-1",
+      "citation-ntt-q44-note-2",
+      "citation-ntt-q44-note-3",
+      "citation-nhl-q44-line-1-nhl",
+      "citation-pbc-q44-line-1-pbc",
+      "citation-ntt-q44-line-1-trinh-di",
+      "citation-ntt-q44-line-1-chu-hy",
+      "citation-nhl-q44-line-2-nhl",
+      "citation-pbc-q44-line-2-pbc",
+      "citation-ntt-q44-line-2-trinh-di",
+      "citation-ntt-q44-line-2-chu-hy",
+      "citation-nhl-q44-line-3-nhl",
+      "citation-pbc-q44-line-3-pbc",
+      "citation-ntt-q44-line-3-trinh-di",
+      "citation-ntt-q44-line-3-chu-hy",
+      "citation-nhl-q44-line-4-nhl",
+      "citation-pbc-q44-line-4-pbc",
+      "citation-ntt-q44-line-4-trinh-di",
+      "citation-ntt-q44-line-4-chu-hy",
+      "citation-nhl-q44-line-5-nhl",
+      "citation-pbc-q44-line-5-pbc",
+      "citation-ntt-q44-line-5-trinh-di",
+      "citation-ntt-q44-line-5-chu-hy",
+      "citation-ntt-q44-note-4",
+      "citation-ntt-q44-note-5",
+      "citation-nhl-q44-line-6-nhl",
+      "citation-pbc-q44-line-6-pbc",
+      "citation-ntt-q44-line-6-trinh-di",
+      "citation-ntt-q44-line-6-chu-hy",
+      "citation-ntt-q44-line-6-ly-long-son",
+      "citation-ntt-q44-line-6-ho-van-phong",
+      "citation-ntt-q44-note-6"
+    ],
+    "note": "Đối chiếu nội dung tóm lược với các lớp văn bản, lời bàn, bổ sung và chú thích được ghi trong ma trận nguồn. Đây là ghi nhận đối chiếu nguồn, không phải phê duyệt chuyên gia độc lập, kiểm toán feat-078, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
+  }
+}

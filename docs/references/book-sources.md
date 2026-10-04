@@ -289,6 +289,21 @@ Tấn preserves internal self-correction versus action within a private domain a
 Minh Di keeps Trình Di's adverse fourth-line reading and Chu Hy's expressly tentative alternative.
 Its second line separates NHL's recovery-then-strength reading from interpretations of rescue with a strong horse.
 
+### Quẻ 41–44 selected coverage
+
+The [Tổn](../../packages/knowledge/data/hexagrams/hexagram-41.json),
+[Ích](../../packages/knowledge/data/hexagrams/hexagram-42.json),
+[Quải](../../packages/knowledge/data/hexagrams/hexagram-43.json), and
+[Cấu](../../packages/knowledge/data/hexagrams/hexagram-44.json) records add attributed summaries for the inspected overviews, supplied main-commentary layers, named NTT supplements, and NTT notes. These records are source-compared selections, not a completion of feat-078's per-cell audit, a full inventory of each edition, independent specialist approval, rights clearance, or certification.
+
+Quải's third-line summaries preserve NHL's stated uncertainty and NTT's separate Trình Di proposals and Chu Hy's reading of the printed text; no wording is selected or normalized. Cấu retains NHL's printed “Cấn” in its Tự Quái sentence without emendation. NTT's attributed 垢/遘 discussion is retained as reported; 姤 is not added or normalized.
+
+The selected NTT comparisons were checked against the supplied PDF images: Phong Lôi Ích PDF 654 and 657, 662–667; Quải PDF 678–683; and Cấu PDF 694. The PDF fingerprint was rechecked against `sources.json` before inspection. At PDF 666, Ngô Tất Tố's note 1 says that Trình Di changes the printed graph 大 (mộc) to 益 (ích) and translates the phrase as “đạo ích”; the printed graph conflicts with the stated gloss. This note ends on PDF 666. The released note summarizes this report without reproducing Han text or deciding which reading is correct. Separately, note 3 compares the readings of “mười bằng” and the punctuation/continuation of Trình Di's reading across PDF 666–667. Quải's notes 9 and 10 separately say that two occurrences are read as “hiệu” and one as “hào”, without locating those occurrences; note 3 gives a different one-quẻ/one-hào location mapping, so the notes' counts and locations remain unresolved rather than reconciled here. The selected Tiên Nho passage on PDF 669–670 records Chu Hy's caution that vigilance is not confined to the moment when yin declines and yang flourishes; even after petty people have declined, gentlemen must not forget caution.
+
+All 52 citations for Tổn, Ích, Quải, and Cấu attributed to Nguyễn Hiến Lê were checked against the footer images on NHL PDF 261–273. The printed-page labels visible on those images match the PDF page numbers, 261–273; the citations retain the PDF locations and include matching printed-page fields.
+
+BPCT chapter 6 sentences 12–16 have separate numbered verse and Vương Hồng Tự commentary citations in [batch eleven](../../packages/knowledge/data/citations/batch-eleven-advanced.json). No translator notes are attached to these five labels; the footnote at sentence 11 remains with its existing citation. Sentence 13's historical relationship examples and sentence 16's horse image remain bounded, source-attributed summaries. Chapter-wide coverage remains open.
+
 The [Gia Nhân](../../packages/knowledge/data/hexagrams/hexagram-37.json),
 [Khuê](../../packages/knowledge/data/hexagrams/hexagram-38.json), and
 [Kiển](../../packages/knowledge/data/hexagrams/hexagram-39.json) records own four further source-discrepancy resolutions.

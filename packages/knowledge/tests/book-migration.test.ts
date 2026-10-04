@@ -66,14 +66,14 @@ describe('V1 book record upcast', () => {
     expect(validateV2(result)).toBe(true);
   });
 
-  it('upcasts and schema-validates every one of the 172 authored V1 records', () => {
+  it('upcasts and schema-validates every authored V1 record', () => {
     const records = manifest.recordFiles.map(
       file =>
         JSON.parse(
           readFileSync(new URL(`../data/${file}`, import.meta.url), 'utf8'),
         ) as BookRecordV1,
     );
-    expect(records).toHaveLength(172);
+    expect(records).toHaveLength(177);
     for (const record of records) {
       const converted = upcastBookRecordV1(record);
       expect(converted.schemaVersion).toBe(2);
