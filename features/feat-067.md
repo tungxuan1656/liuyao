@@ -6,10 +6,10 @@ Make audit completeness and stale-evidence rejection machine-checkable.
 
 ## Scope
 
-**Intended work:**
+**Implemented surface:**
 
-- Intended review artifacts under docs/reviews/knowledge/, linked to record and citation IDs.
-- Knowledge validation, generated coverage, schema contracts, and package tests.
+- Inventory-bound expected units, scoped ledgers, strict schemas, and optional certification loading under `docs/reviews/knowledge/`.
+- Structural validation, input-freshness checks, closed-by-default gates, separate audit status, and package tests.
 
 ## Non-goals
 
@@ -36,19 +36,18 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Agree the ledger schema after inventory and feat-101, before bulk authoring.
-2. Implement validators, evidence-derived reports, and rejection tests.
-3. Verify missing/stale evidence probes and commit.
+Follow the [approved audit contract](../docs/design-docs/knowledge-model.md#approved-versioned-audit-contract) and [implementation plan](../docs/plans/feat-067.md). The implementation exists; all original acceptance criteria remain pending final review and delivery gates.
 
 ## Verify
 
 - `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
+- `pnpm --filter @liuyao/knowledge validate:corpus --check`
+- Optional local source-file check when supplied PDFs are available: `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active; implementation and local verification are recorded, but acceptance remains open.
+- Evidence: Coordinator receipt `sh_10575faea001SigKv3L0CXTuyy` passed `./init.sh`: 387 tests (181 core, 206 knowledge), format, lint (0 errors; 4 baseline warnings), typecheck, build, exports, placement, length, and corpus/book freshness. All 175 protected files remain unchanged. `--require-complete` exited 1 as expected with both gates closed: 2,057 decisions missing, zero current, 0/1,226 released claims covered, and certification absent. No source audit or approval is claimed; exact-SHA review and CI/PR remain pending. See the [plan](../docs/plans/feat-067.md).
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Complete feat-101, select this feature, and assess external-plan criteria before coding.
+- Next: Obtain the coordinator's fresh `./init.sh` receipt, then complete exact-SHA review and CI/PR; keep feat-067 active until all original acceptance criteria and delivery gates pass.

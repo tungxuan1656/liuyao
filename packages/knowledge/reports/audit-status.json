@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "contentSnapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:da736ea2c73cabe55317ca8babe86e0ea022b4bd6c52c576fc95c0c82191c67e",
+  "registry": {
+    "sha256": "a7b59006378bdcd04fd944b68e232416dc198fb98838c9c6c30d7d84fef6bb5c",
+    "revision": 1,
+    "counts": {
+      "overviewCells": 192,
+      "positionCells": 1152,
+      "hexagramCells": 1344,
+      "specialPassages": 6,
+      "groups": 518,
+      "exclusions": 17
+    }
+  },
+  "decisionSetSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "reviewEvidenceIdentity": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "gates": {
+    "sourceReview": {
+      "status": "closed",
+      "counts": {
+        "required": 2057,
+        "current": 0,
+        "missing": 2057,
+        "stale": 0,
+        "rejected": 0,
+        "specialistRejected": 0,
+        "unresolved": 0
+      },
+      "reasons": [
+        { "code": "unresolved-layer-roster", "count": 14 },
+        { "code": "unresolved-source-discovery", "count": 518 },
+        { "code": "missing-decision", "count": 2057 },
+        { "code": "released-claim-coverage-incomplete", "count": 1226 }
+      ]
+    },
+    "certification": {
+      "status": "closed",
+      "state": "missing",
+      "counts": {
+        "current": 0,
+        "required": 2057,
+        "missing": 1,
+        "stale": 0,
+        "rejected": 0,
+        "specialistRejected": 0,
+        "unresolved": 0
+      },
+      "reasons": [{ "code": "certification-absent", "count": 1 }]
+    }
+  },
+  "complete": false,
+  "featureCoverage": {
+    "feat-068": { "required": 91, "current": 0 },
+    "feat-069": { "required": 84, "current": 0 },
+    "feat-070": { "required": 84, "current": 0 },
+    "feat-071": { "required": 84, "current": 0 },
+    "feat-072": { "required": 84, "current": 0 },
+    "feat-073": { "required": 84, "current": 0 },
+    "feat-074": { "required": 84, "current": 0 },
+    "feat-075": { "required": 85, "current": 0 },
+    "feat-076": { "required": 84, "current": 0 },
+    "feat-077": { "required": 84, "current": 0 },
+    "feat-078": { "required": 84, "current": 0 },
+    "feat-079": { "required": 84, "current": 0 },
+    "feat-080": { "required": 84, "current": 0 },
+    "feat-081": { "required": 84, "current": 0 },
+    "feat-082": { "required": 84, "current": 0 },
+    "feat-083": { "required": 84, "current": 0 },
+    "feat-084": { "required": 89, "current": 0 },
+    "feat-085": { "required": 70, "current": 0 },
+    "feat-086": { "required": 6, "current": 0 },
+    "feat-087": { "required": 7, "current": 0 },
+    "feat-088": { "required": 4, "current": 0 },
+    "feat-089": { "required": 5, "current": 0 },
+    "feat-090": { "required": 9, "current": 0 },
+    "feat-091": { "required": 201, "current": 0 },
+    "feat-092": { "required": 142, "current": 0 }
+  },
+  "totals": {
+    "releasedClaimsCovered": 0,
+    "releasedClaimsRequired": 1226,
+    "overviewCells": 192,
+    "positionCells": 1152,
+    "hexagramCells": 1344,
+    "specialPassages": 6,
+    "groups": 518,
+    "exclusions": 17,
+    "acceptedDecisions": 0,
+    "approvedDecisions": 0,
+    "currentDecisions": 0,
+    "rejectedDecisions": 0,
+    "unresolvedDecisions": 2057
+  }
+}

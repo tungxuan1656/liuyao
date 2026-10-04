@@ -1,4 +1,4 @@
-export function coverageReport({ manifest, records, citations, legacy, checked }) {
+export function coverageReport({ manifest, records, citations, legacy, checked, auditStatus }) {
   const released = new Set(manifest.releaseIds);
   const reviewed = records.filter(r => released.has(r.id) && r.review.status === 'reviewed');
   const hexagrams = reviewed.filter(r => r.type === 'hexagram');
@@ -12,7 +12,7 @@ export function coverageReport({ manifest, records, citations, legacy, checked }
   return {
     schemaVersion: 1,
     corpusId: manifest.corpusId,
-    complete: false,
+    complete: auditStatus?.complete ?? false,
     evidenceNote:
       'Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.',
     records: {
@@ -68,5 +68,6 @@ export function coverageReport({ manifest, records, citations, legacy, checked }
       ['entities', 'terms', 'rules'].map(key => [key, legacy.catalog[key].map(r => r.id)]),
     ),
     nextBatch: manifest.nextBatch,
+    ...(auditStatus ? { audit: auditStatus.gates } : {}),
   };
 }

@@ -9,9 +9,18 @@ import { checkCorpus } from './corpus-checks.mjs';
 import { coverageReport } from './corpus-coverage.mjs';
 import { recordSchemaName } from './record-schema-dispatch.mjs';
 import { createReleaseProjection } from './release-projection.mjs';
+import { loadAuditReview } from './audit-loader.mjs';
+import { createAuditStatus } from './audit-status.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dataRoot = path.join(root, 'data');
+const repositoryRoot = path.resolve(root, '../..');
+const checkOnly = process.argv.includes('--check');
+const requireComplete = process.argv.includes('--require-complete');
+const supportedFlags = new Set(['--check', '--check-books', '--require-complete']);
+for (const flag of process.argv.slice(2))
+  if (flag.startsWith('--') && !supportedFlags.has(flag))
+    throw new Error(`Unknown corpus validation option: ${flag}`);
 const ajv = new Ajv({ allErrors: true, strictTypes: false, strictRequired: false });
 addFormats(ajv);
 const readJson = async file => JSON.parse(await readFile(file, 'utf8'));
@@ -74,7 +83,7 @@ const checked = checkCorpus({
   citations,
   records,
   legacy,
-  repositoryRoot: path.resolve(root, '../..'),
+  repositoryRoot,
 });
 if (process.argv.includes('--check-books')) {
   for (const source of sources)
@@ -87,9 +96,35 @@ if (process.argv.includes('--check-books')) {
         throw new Error(`${edition.id}: supplied PDF fingerprint changed`);
     }
 }
-const report = coverageReport({ manifest, records, citations, legacy, checked });
-await saveGenerated('reports/coverage.json', JSON.stringify(report));
+const review = await loadAuditReview({
+  repositoryRoot,
+  context: {
+    manifest,
+    records,
+    citations,
+    sources,
+    repositoryRoot,
+    fixtureBindings: [],
+  },
+});
 const projection = createReleaseProjection({ manifest, records, citations, sources });
+const auditStatus = createAuditStatus({
+  context: {
+    manifest,
+    records,
+    citations,
+    sources,
+    repositoryRoot,
+    fixtureBindings: [],
+    contentSnapshotIdentity: projection.snapshotIdentity,
+  },
+  review,
+});
+if (requireComplete && !auditStatus.complete)
+  throw new Error('Audit completion gates are closed (--require-complete)');
+const report = coverageReport({ manifest, records, citations, legacy, checked, auditStatus });
+await saveGenerated('reports/coverage.json', JSON.stringify(report));
+await saveGenerated('reports/audit-status.json', JSON.stringify(auditStatus));
 await saveGenerated('src/book-release.generated.json', `${JSON.stringify(projection, null, 2)}\n`);
 const generated =
   [
@@ -119,8 +154,7 @@ async function saveGenerated(relative, content) {
     throw error;
   });
   if (previous === formatted) return;
-  if (process.argv.includes('--check'))
-    throw new Error(`Stale generated corpus output: ${relative}`);
+  if (checkOnly) throw new Error(`Stale generated corpus output: ${relative}`);
   await mkdir(path.dirname(file), { recursive: true });
   const temporary = `${file}.${process.pid}.tmp`;
   await writeFile(temporary, formatted);

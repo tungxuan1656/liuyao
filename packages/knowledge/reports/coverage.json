@@ -1276,5 +1276,39 @@
     "hexagramIds": ["hexagram-41", "hexagram-42", "hexagram-43", "hexagram-44"],
     "topicIds": ["topic-liuyao-advanced"],
     "note": "Tiếp tục Tổn, Ích, Quải, Cấu và BPCT Chương 6, câu 12–16 (PDF 81–82): Thế–Ứng theo việc hỏi, động/biến, Không và nội/ngoại động. Bốn mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 7–11 có các diễn giải được chọn. Các bảng chưa đủ, phép lịch và các dự báo sức khỏe vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+  },
+  "audit": {
+    "sourceReview": {
+      "status": "closed",
+      "counts": {
+        "required": 2057,
+        "current": 0,
+        "missing": 2057,
+        "stale": 0,
+        "rejected": 0,
+        "specialistRejected": 0,
+        "unresolved": 0
+      },
+      "reasons": [
+        { "code": "unresolved-layer-roster", "count": 14 },
+        { "code": "unresolved-source-discovery", "count": 518 },
+        { "code": "missing-decision", "count": 2057 },
+        { "code": "released-claim-coverage-incomplete", "count": 1226 }
+      ]
+    },
+    "certification": {
+      "status": "closed",
+      "state": "missing",
+      "counts": {
+        "current": 0,
+        "required": 2057,
+        "missing": 1,
+        "stale": 0,
+        "rejected": 0,
+        "specialistRejected": 0,
+        "unresolved": 0
+      },
+      "reasons": [{ "code": "certification-absent", "count": 1 }]
+    }
   }
 }

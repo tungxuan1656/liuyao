@@ -16,6 +16,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-04 — feat-067 coordinator verification
+
+**State**: active; coordinator verification passed, with exact-SHA review and CI/PR pending.
+**Done**: Recorded fresh `./init.sh` receipt and expected fail-closed completion check.
+**Evidence**: Receipt `sh_10575faea001SigKv3L0CXTuyy` passed 387 tests (181 core, 206 knowledge), format, lint (0 errors; 4 baseline warnings), typecheck, build, exports, placement, length, and corpus/book freshness. All 175 protected files remain unchanged. `validate:corpus --require-complete` exited 1 as expected: both gates closed, 2,057 decisions missing, zero current, 0/1,226 released claims covered, certification absent. No source audit or approval is claimed.
+**Blockers**: Exact-SHA review and CI/PR; feat-067 acceptance remains open.
+**Next**: Complete exact-SHA review and CI/PR while keeping feat-067 active.
+
+## 2026-10-04 — feat-067 bounded documentation handoff
+
+**State**: active; implementation and assigned root checks are reported complete, but feature acceptance and delivery remain open.
+**Done**: Updated the canonical audit implementation status, package route, plan evidence, and feature handoff. Preserved all original feat-067 acceptance criteria as pending.
+**Evidence**: 29 focused audit tests; root format, lint (0 errors; 4 baseline warnings), typecheck, 387 tests (181 core, 206 knowledge), build, corpus/book freshness, and protected identity checks passed. Registry has 2,057 required targets, zero current decisions, and 0/1,226 covered released claims. No source audit or certification is claimed. Report-shape mismatch is documented in the model and plan.
+**Blockers**: Coordinator's fresh `./init.sh` receipt, contract mismatch resolution, exact-SHA review, CI/PR, and final acceptance. Prior init execution was reported but not independently receipted here.
+**Next**: Resolve the report-shape mismatch and complete coordinator verification/review; keep feat-067 active until all acceptance criteria pass.
+
 ## 2026-10-03 — feat-101 lifecycle finalization
 
 **State**: done for implementation/local validation; PR #62 awaits final-head CI and merge.

@@ -1,6 +1,6 @@
 # Supplied-book source inventory
 
-This crosswalk owns source section → existing record, uncovered work, exclusion or non-content disposition, and planned author/audit owner. It classifies all 2,453 PDF pages. It is not a passage-fidelity audit, a specialist review, or a certification.
+This crosswalk owns source section → existing record, uncovered work, exclusion or non-content disposition, and planned author/audit owner. It classifies all 2,453 PDF pages. It is not a passage-fidelity audit, a specialist review, or a certification. The planned machine projection and decision rules are owned by the [knowledge-model audit contract](../../design-docs/knowledge-model.md#approved-versioned-audit-contract); this crosswalk remains the source-unit authority.
 
 Edition identity, fingerprints, bibliography, rights, and discrepancy resolutions remain in [Book sources](../../references/book-sources.md) and [`sources.json`](../../../packages/knowledge/data/sources.json). Corpus claims and release requirements remain in [Knowledge quality](../../product-specs/knowledge-quality.md). Stable record and citation contracts remain in [Knowledge model](../../design-docs/knowledge-model.md). The roadmap routes all planned authoring and audit features in [Knowledge roadmap](../../../features/knowledge-roadmap.md).
 

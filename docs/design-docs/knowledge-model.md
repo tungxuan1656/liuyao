@@ -214,7 +214,7 @@ Use separate version-1 and version-2 readonly types. `BookRecordV1` is the curre
 
 The pure migration helper accepts a prevalidated `BookRecordV1` and returns `BookRecordV2`. It rejects null, arrays, non-objects, a missing version, and every version except `1`. It deep-copies the upcast and leaves the input unchanged. It does not import Ajv or another schema validator into `src/`. Build-time schema dispatch and tests reject malformed V1 fields. Test invalid fields through the corpus validator, and test helper guards and input immutability through the migration helper.
 
-For project evidence, resolve paths under the repository root and reject path escape. At build time, require an existing canonical documentation file, an existing heading, a non-empty reviewed-revision identifier, and an exact match to the accepted registry entry. Every released project-convention claim must also appear in its owner's review evidence. Structural agreement does not prove that the repository accepted the decision. Use fixtures with an existing canonical document and an explicit test revision; do not label fixture values as real approval. Bind the used accepted project evidence and its registry values to the snapshot. Runtime uses only validated project metadata in the release projection and does not read documentation files. Feat-067 owns later decision binding.
+For project evidence, resolve paths under the repository root and reject path escape. At build time, require an existing canonical documentation file, an existing heading, a non-empty reviewed-revision identifier, and an exact match to the accepted registry entry. Every released project-convention claim must also appear in its owner's review evidence. Structural agreement does not prove that the repository accepted the decision. Use fixtures with an existing canonical document and an explicit test revision; do not label fixture values as real approval. Bind the used accepted project evidence and its registry values to the snapshot. Runtime uses only validated project metadata in the release projection and does not read documentation files. Feat-067 separately binds audit decisions to current project revisions.
 
 Supporting dependencies establish evidence; ordinary `relatedIds` links establish navigation. Missing, draft, disputed, superseded, or unreleased evidence blocks released dependents. The [quality contract](../product-specs/knowledge-quality.md#completion-and-later-corrections) owns publication and invalidation requirements. The [Library contract](../product-specs/knowledge-browser.md#topics-and-articles) owns unavailable-link presentation.
 
@@ -237,7 +237,7 @@ Expose an immutable `getBookSnapshotIdentity()` value. Compute it at build time 
 
 Canonicalize object keys and only arrays defined here as sets: release membership, top-level record/citation collection membership, `claim.citationIds`, `claim.dependsOnClaimIds`, review `evidenceCitationIds` and `evidenceClaimIds`, discrepancy `citationIds`, `prerequisiteLessonIds`, `structure.claimIds`, table and figure `claimIds`, label/orientation/alternative `claimIds`, and block `supportingClaimIds`. Use field-aware canonicalization, never generic ID-array sorting. Preserve record claim order, lesson blocks, figure labels, table rows, sequence values, alternatives, `sourceUnitIds`, and source/bibliographic contributor order. Test that semantic order changes alter identity while set-reference reordering does not. Source provenance, public bibliography, release membership, records, claims, citations, discrepancies, review evidence, used accepted revisions, and exact projected topics must affect identity. Object-key order, draft-only edits, generation timestamps, local PDF paths, and unused non-public registry entries must not.
 
-The released runtime payload must be draft-free even when bundled. Snapshot metadata reports the review scope and evidence present; it does not claim independent specialist approval. Do not invent or imply an audit-decision ledger: feat-067 owns the later audit-decision binding. The [PWA contract](offline-pwa.md#intended-knowledge-scale-and-updates) owns asset loading and update behavior. Package version alone does not identify a reviewed corpus snapshot.
+The released runtime payload must be draft-free even when bundled. Snapshot metadata reports the review scope and evidence present; it does not claim independent specialist approval. Feat-067 stores audit decisions and status separately; they do not change the public runtime identity or imply approval in the release payload. The [PWA contract](offline-pwa.md#intended-knowledge-scale-and-updates) owns asset loading and update behavior. Package version alone does not identify a reviewed corpus snapshot.
 
 ### Implemented surface and limits
 
@@ -247,7 +247,284 @@ The released runtime payload must be draft-free even when bundled. Snapshot meta
 - `scripts/release-projection.mjs` generates the release-only payload at `src/book-release.generated.json`; `src/book-data.generated.ts` is its typed wrapper. The generated payload is outside authored `data/`, and local edition input paths are removed. Generation freshness checks cover the JSON and TypeScript outputs. The current generated projection has an empty `projectContracts` list; project metadata behavior is present in validation/projection code but is not exercised by released V2 content.
 - Public record lookup in `book-catalog.ts` uses `BookRecordVersioned` (`BookRecordV1 | BookRecordV2`). Public sources there use `ReleasedBookSource`, which omits edition `localInputPath`; authored sources retain it. The root `src/index.ts` re-exports `book-catalog.ts` APIs and versioned schema types. `getBookSnapshotIdentity()` exposes the generated, versioned identity.
 - Runtime integrity checks revalidate released records, claim/citation links, targets, source editions, project metadata, and lesson graph shape. `assertReleaseEvidenceIntegrity` also checks that each released lesson's review evidence covers every block-support claim and its direct and transitive claim dependencies; runtime tests cover missing, direct, and transitive evidence cases.
-- Runtime and build checks enforce release and evidence structure; they do not certify source meaning, specialist approval, audit decisions, or corpus completion. Format, lint, typecheck, test, build, corpus, supplied-book, and `./init.sh` checks passed. Independent review, CI/PR, and final feat-101 acceptance remain pending.
+- Runtime and build checks enforce release and evidence structure; they do not certify source meaning, specialist approval, audit decisions, or corpus completion. Format, lint, typecheck, test, build, corpus, supplied-book, and `./init.sh` checks passed. PR #62 awaits final-head CI and merge; see the [feat-101 handoff](../../features/feat-101.md) for its current delivery state.
+
+### Approved versioned audit contract
+
+**Contract: approved for feat-067.** This section owns the audit data contract. The [source inventory](../reviews/knowledge/source-inventory.md) remains the canonical source-unit crosswalk; audit artifacts project its IDs and obligations without replacing it. The [quality contract](../product-specs/knowledge-quality.md#full-corpus-verification) owns evidence acceptance. Feat-097 owns correction probes, feat-095 owns actual specialist review, and feat-096 owns final certification. The implementation validates the registry and scoped audit artifacts, derives closed-by-default gates, and generates a separate report. These structural checks do not establish source review or specialist approval. The schema paths are `packages/knowledge/schema/expected-units-v1.schema.json`, `audit-ledger-v1.schema.json`, and `audit-certification-v1.schema.json`.
+
+#### Version-1 registry
+
+Store the explicit projection in `docs/reviews/knowledge/expected-units.json`. Inventory Markdown remains for humans; never parse headings or guessed count ranges to create expected units. Define `inventory.sha256` as SHA-256 of the exact inventory bytes. When its revision changes, update the inventory and registry together. A schema-valid smaller projection is not sufficient evidence that inventory closure was reviewed. Review the paired inventory/registry revision change against source evidence; hash and count checks prevent accidental shrinkage but cannot prove a revised inventory is semantically complete.
+
+The version-1 registry has this exact top-level JSON shape. Arrays and nested IDs are explicit projection data, not parser output. This empty structural example is not the real inventory or valid evidence. It uses integer revision/count fields; the populated hexagram, group, and exclusion entry shapes and invariants are described below:
+
+```json
+{
+  "schemaVersion": 1,
+  "registryId": "knowledge-expected-units-v1",
+  "registryRevision": 1,
+  "inventory": {
+    "path": "docs/reviews/knowledge/source-inventory.md",
+    "sha256": "<64 lowercase hex>"
+  },
+  "counts": {
+    "overviewCells": 192,
+    "positionCells": 1152,
+    "hexagramCells": 1344,
+    "specialPassages": 6,
+    "groups": 0,
+    "exclusions": 0
+  },
+  "layers": [
+    {
+      "id": "<stable inventory ID>",
+      "editionId": "<edition ID>",
+      "class": "original-text",
+      "label": "<observed source label>",
+      "sourceAnchor": { "inventoryAnchor": "<inventory locator>", "citationIds": [] },
+      "rosterStatus": "unresolved"
+    }
+  ],
+  "hexagrams": [],
+  "specialPassages": [],
+  "groups": [],
+  "exclusions": [
+    {
+      "id": "<stable inventory ID>",
+      "sourceUnitId": "<stable inventory ID>",
+      "kind": "<inventory disposition>",
+      "inventoryAnchor": "<inventory locator>",
+      "editionId": "<edition ID>",
+      "auditFeatureId": "<feature ID>",
+      "layerScopeIds": ["<edition-scoped layer ID>"]
+    }
+  ]
+}
+```
+
+The registry shape is normative; its example rows and counts are placeholders, not facts from the current inventory. Actual `groups` and `exclusions` are integer counts computed from all projected rows. Omit inapplicable optional fields rather than inventing values. Populate IDs, anchors, and citation links only from verified inventory/corpus data. The closed layer vocabulary is `original-text`, `translation`, `author-commentary`, `commentator`, `translator-note`, and `supplement`; it names observed classes, not per-cell presence. `groups[].kind` is `content` or `non-content`; `discoveryStatus` is `unresolved` or `resolved`. Each `layerScopeIds` value references an ID in the registry's `layers` array, scoped to its edition; do not combine books into one assumed layer roster. Start each uninspected layer and meaningful group at `unresolved`; known vocabulary does not establish which layers are present in any scope. Unknown fine units and layers remain required obligations; a `mapped` denominator alone never proves full inventory closure. Stable cell and special-obligation IDs may be registry-owned keys derived from an established parent/edition relationship; they identify audit obligations, not newly asserted source-fact IDs. A special obligation references its existing canonical source-unit parent until the source inventory records a finer stable child ID.
+
+The top-level properties are exactly `schemaVersion`, `registryId`, `registryRevision`, `inventory`, `counts`, `layers`, `hexagrams`, `specialPassages`, `groups`, and `exclusions`. `registryRevision` is a positive integer incremented on projection revisions. Reject additional properties throughout. `parentId` and `number` are present only when established by the source inventory; `recordIds` is optional and maps only existing authored records. Registry source IDs, edition IDs, audit/author feature IDs, inventory anchors, and citation IDs must resolve to their owning inventories/catalogs. `hexagrams[].requiredCells` is exactly `overview` plus positions 1–6; each book binds its source unit, edition, pages, and edition-specific layer scope. The six special entries are edition-specific and cross-reference their parent hexagram and source-unit ID. Registry `counts` are exact array expansions: hexagram cells equal `64 × 3 × 7 = 1,344`; overview cells equal `64 × 3 = 192`; position cells equal `64 × 3 × 6 = 1,152`; `specialPassages` is six. In implementation, `hexagrams` contains the 64 parent units; required cell targets are expanded as hexagram × required cell × three editions. `groups` and `exclusions` counts equal their corresponding array lengths. Enforce these equalities and the minimum inventory census in the preceding section.
+
+A populated hexagram entry has `id`, `number`, `auditFeatureId`, the exact `requiredCells` list, `books`, and `specialPassageIds`. Each book has `editionId`, `sourceUnitId`, `pdfPageStart`, `pdfPageEnd`, and `layerScopeIds`. Each special row has `id`, `hexagramId`, `editionId`, `sourceUnitId`, `auditFeatureId`, and `layerScopeIds`. A special-obligation `id` may be registry-owned and derived from its edition and canonical parent (for example, `special-pbc-hexagram-01`); it identifies the audit obligation, not a newly asserted source passage ID. Its `sourceUnitId` remains the existing inventory parent until the inventory assigns a finer stable source-unit ID. A group has `id`, optional inventory-supported `parentId`/`number`, `kind`, `group`, `editionId`, page bounds, author/audit feature IDs, `layerScopeIds`, `discoveryStatus`, and optional mapped `recordIds`. An exclusion has `id`, `sourceUnitId`, `kind`, `inventoryAnchor`, `editionId`, `auditFeatureId`, and `layerScopeIds`. All page ranges are positive and ordered; all references resolve and have the correct edition and ownership.
+
+Every identifier follows the stable IDs already assigned by the canonical inventory. Validate edition and feature IDs against their authoritative catalogs; `layers[].sourceAnchor` uses an inventory anchor and existing citation IDs only. Do not synthesize new citations or define record/claim inventory by string transformation.
+
+Project every known stable inventory ID and explicit parent/child obligation, with source edition, locator, group, and author/audit routing. Use established ranges only. Reuse inventory IDs; do not derive ad hoc IDs from accent stripping or display labels. Count a parent and its required children according to their distinct obligations; one cannot silently replace or double-count the other. Preserve these established counts: 64 boards; chapter 5 items 01–18 plus a separate unnumbered postscript; chapter 6 labels 01–69; 18 questions; Hà Tri entries 01–60; casting I as its known `bpct-casting-I` parent only (its four definitions have no stable child IDs or individual page locators), casting II entries 01–64, IV entries 01–08, V entries 01–18, and VI entries 01–11; criticisms I–XV; NTT's nine named introduction figures and notes 01–12; and NHL's seven introduction units and Part II framing. Do not invent a casting-III unit: the inventory records an inspected transition without a III heading. Include established PBC/NHL Hệ Từ chapters, front matter, diagrams, classical groups, and explicit exclusions. Do not invent source-layer rows, citations, or child IDs from headings/counts. The six edition-specific Càn/Khôn special units remain separate from line positions.
+
+Registry validation binds the exact inventory-byte hash, registry schema/revision, declared counts, exact hexagram/cell expansion, special IDs, edition/source references, and parent/child references. Enforce floors and identities of 64 hexagrams, 384 position units, 192 overview cells, 1,152 position cells, and 1,344 combined cells. Enforce exact contiguous numbered censuses: 64 boards, chapter-5 items 01–18 plus its unnumbered postscript, chapter-6 labels 01–69, questions 01–18, Hà Tri entries 01–60, casting registers I 01–64, II 01–64, IV 01–08, V 01–18, VI 01–11, and criticisms I–XV. NTT's nine named figures and notes 01–12, plus NHL's seven introduction units and Part II framing, remain explicit expected-unit rows. These bounds prevent accidental shrinkage; only source inspection and review-gated inventory-plus-registry changes can establish newly discovered source closure. They do not prove that a manually updated inventory and registry are semantically complete. Inventory candidates are navigation only, never evidence of presence or absence.
+
+#### Version-1 decisions and evidence
+
+Store one ledger per scope under `docs/reviews/knowledge/ledgers/`. Its envelope is `{ "schemaVersion": 1, "ledgerId": "...", "scope": { "kind": "hexagram|group", "id": "..." }, "decisions": [] }`. Each decision is a strict version-1 object with only the fields shown below; each nested object also rejects additional properties. The example is a record-backed accepted entry and demonstrates required evidence/input closure:
+
+```json
+{
+  "schemaVersion": 1,
+  "id": "<stable decision ID>",
+  "target": {
+    "kind": "cell",
+    "hexagramId": "hexagram-01",
+    "editionId": "<edition ID>",
+    "cell": "overview"
+  },
+  "revision": 1,
+  "supersedes": null,
+  "disposition": "accepted",
+  "findings": "<source comparison findings>",
+  "locator": { "citationIds": ["<citation ID>"], "editionId": "<edition ID>", "pdfPages": [1, 1] },
+  "coveredClaimIds": ["<exact authored claim ID>"],
+  "layerResolution": { "status": "unresolved", "layers": [] },
+  "exclusionReview": null,
+  "sourceComparison": {
+    "identity": "<actual comparison identity>",
+    "reviewer": "<actual reviewer identity>",
+    "date": "<date>",
+    "scope": "<reviewed scope>",
+    "evidenceCitationIds": ["<citation ID>"]
+  },
+  "specialistReview": {
+    "status": "pending",
+    "reviewerName": null,
+    "reviewerRole": null,
+    "reviewedAt": null,
+    "scope": "<requested specialist scope>",
+    "note": "<pending reason>"
+  },
+  "authoredScope": "records",
+  "inputs": {
+    "records": [{ "id": "<record ID>", "sha256": "<64 lowercase hex>", "released": true }],
+    "citations": [{ "id": "<citation ID>", "sha256": "<64 lowercase hex>" }],
+    "editions": [{ "id": "<edition ID>", "sha256": "<64 lowercase hex>" }],
+    "projectContracts": [{ "documentPath": "<document path>", "revision": "<contract revision>" }],
+    "fixtures": []
+  },
+  "recordedAt": "<date-time>",
+  "recordedBy": "<actual identity>"
+}
+```
+
+`target` is strict and discriminated. A cell target has exactly `kind`, `hexagramId`, `editionId`, and `cell` (`overview` or `position-1` through `position-6`); special, source-unit, and exclusion targets identify registered IDs; record targets identify current mapped records; table, figure, lesson, and fixture targets identify current typed IDs with owner/child references. Every target must resolve; unknown, malformed, deleted, or retired targets fail structurally and require explicit artifact repair. Malformed ID/hash syntax, unknown schema versions/fields, duplicate target heads, and malformed revision chains are structural errors. `locator.editionId` and `pdfPages` are required when applicable; source-unit decisions require exact locators. Exclusions require `exclusionReview` with `reason`, exact `locator`, `scope`, and actual `reviewer`; non-content dispositions require accounting, not invented doctrine. A missing layer roster or empty scope is unresolved, never vacuously accepted. To resolve a scope, `layerResolution.layers` must account for every layer ID in the target's registered `layerScopeIds`, exactly once, with `presence` (`present` or `absent`), nonempty citation IDs, and basis `inspected-page`, `non-content`, or `source-omission`. `layerResolution.status` remains unresolved until this closure is established; unknown registry rosters and out-of-scope layer IDs keep the gate closed. Do not assume every cell has every vocabulary class or omit required source-book layers by author assertion. `specialistReview` always records status, scope, and note; pending review uses null reviewer name/role/date, while approved/rejected review records the actual name, role, and date. `supersedes` is null or names a prior `{id, revision}`; derive the current chain head without writing `supersededBy` into historical entries.
+
+The `target` variants have these exact keys (additional properties are forbidden):
+
+```json
+[
+  { "kind": "cell", "hexagramId": "hexagram-01", "editionId": "<edition ID>", "cell": "overview" },
+  { "kind": "special", "id": "<registered special ID>" },
+  { "kind": "sourceunit", "id": "<registered source-unit ID>" },
+  { "kind": "exclusion", "id": "<registered exclusion ID>" },
+  { "kind": "record", "id": "<current mapped record ID>" },
+  { "kind": "table", "id": "<table target ID>", "ownerId": "<owner ID>", "childId": "<child ID>" },
+  {
+    "kind": "figure",
+    "id": "<figure target ID>",
+    "ownerId": "<owner ID>",
+    "childId": "<child ID>"
+  },
+  {
+    "kind": "lesson",
+    "id": "<lesson target ID>",
+    "ownerId": "<owner ID>",
+    "childId": "<child ID>"
+  },
+  {
+    "kind": "fixture",
+    "id": "<fixture target ID>",
+    "ownerId": "<owner ID>",
+    "childId": "<child ID>"
+  }
+]
+```
+
+The array contains separate target alternatives; its placeholder values are not real registered IDs. Fixture IDs and owner/child bindings must be explicitly registered or recorded against owning claims. When target kind is `exclusion`, `exclusionReview` has exactly `{ "reason": "...", "locator": { "citationIds": ["..."], "editionId": "...", "pdfPages": [1, 1] }, "scope": "...", "reviewer": "..." }`; it is null for other targets. Per-layer objects have exactly `layerId`, `presence`, `citationIds`, and `basis`.
+
+The `specialistReview` object always contains exactly `status`, `reviewerName`, `reviewerRole`, `reviewedAt`, `scope`, and `note`. For `pending`, the three reviewer fields are null. For `approved` or `rejected`, they contain actual values. `sourceComparison` always contains exactly `identity`, `reviewer`, `date`, `scope`, and `evidenceCitationIds`. `layerResolution` contains exactly `status` and `layers`; its status is `resolved` only when every required in-scope registered layer has exactly one decision, otherwise `unresolved`. Ledger and decision IDs, revisions, and scoped target IDs are unique. A ledger may contain decisions only for its declared scope.
+
+`authoredScope: "none"` is valid only when the target maps to no current authored record IDs in the registry and manifest. It requires `coveredClaimIds: []`; it does not waive source, locator, layer, or source-comparison evidence, and it does not accept absent authored claims automatically. Otherwise use `"records"`, name the exact nonempty `coveredClaimIds`, and derive record IDs and complete support closure from those claims. Registry `recordIds` are optional typed mappings to currently existing authored records; a mapped record that is deleted or retired is an invalid target requiring explicit registry/ledger repair, not a missing-input shortcut. For `none`, require a registered target with no record mapping and verify against the current manifest; omitting optional `inputs.records` is not evidence. Fixtures likewise need an explicit registry or ledger binding to owning claims; arbitrary fixture dependencies cannot be omitted.
+
+Derive current inputs from exact direct and transitive closure: record/claim canonical hashes and release flags, citations, edition SHAs, used project-contract revisions, and registered expected-fixture paths/hashes. Compare the derived ID set and hashes to the recorded `inputs`. If an input ID is unknown, malformed, or targets a deleted/retired object, fail structurally and require explicit repair. If all IDs still resolve but a dependency was added or removed, or a current hash/release/revision differs, mark the decision stale and keep gates closed. Missing a newly required binding and retaining an obsolete-but-valid binding are stale evidence, not reasons to silently accept or structurally reject the whole corpus. Test both with a formerly valid decision fixture. Missing required structural dependencies and cycles remain fatal, as in feat-101.
+
+Hash review, attribution, discrepancy, and support evidence. Reuse feat-101 deterministic SHA-256 canonicalization, UTF-16 object-key comparison, field-aware set handling, and declared array semantics. Keep revision history append-only: `supersedes` points to an earlier decision revision; derive one chain head/current decision. Do not require editing old entries with `supersededBy`. Duplicate heads, malformed chains, unknown targets, and duplicate current decisions are structural errors. A decision/target's current record scope covers exact `coveredClaimIds`; a record-backed accepted decision cannot be widened beyond those claims.
+
+Source comparison has only actual `identity`, `reviewer`, `date`, `scope`, and `evidenceCitationIds`. Do not create a reviewer registry or require registry identity/revision. Specialist metadata is separate and records pending/approved/rejected state, actual reviewer name/role/date/scope/note. Only actual qualifying review under feat-095 can establish specialist approval; schema validation, reviewer-name blocklists, or identity-string comparisons cannot prove identity, independence, or qualification. Actual certification belongs to feat-096. Synthetic in-memory tests establish validator behavior only and never count as real source comparison or specialist approval.
+
+#### Gates, coverage, and generated status
+
+Every current released claim must have a current accepted decision that covers that exact claim, or a precise reviewed exclusion permitted by the quality contract. Derive required released claim IDs and coverage from the current manifest/records; report `releasedClaimsCovered` (distinct currently covered claim IDs) and `releasedClaimsRequired` (all current required released claim IDs). A registry may map record IDs to source units, but it cannot leave newly released claims outside accepted current evidence and still report complete. Include all required claim surfaces, including record/line/special claims, tables, figures, labels, orientation, alternatives, review claims, lesson blocks/typed targets, and prerequisite support. Derive table, figure, lesson, typed-target, and fixture requirements from feat-101 relationships and registered bindings; bind expected fixtures to their owning claims and do not fabricate source-unit IDs.
+
+Support closure includes tables, figures, labels, orientation, author alternatives, lesson blocks and typed targets, review claims, prerequisites, and expected-fixture dependencies. A changed input reopens affected decisions transitively; unaffected decisions stay current. Missing or stale current bindings close affected gates. Valid partial, stale, rejected, unresolved, or unapproved evidence is not a structural corpus error; normal release validation continues with gates closed. `--require-complete` fails on any closed required gate. Malformed schemas, unknown IDs/targets, deleted or retired mapped targets, duplicate current decisions, broken revision chains, missing structural dependencies, and cycles remain fatal.
+
+The real ledgers directory must exist and be committed. Add `README.md` or `.gitkeep` at implementation time so Git retains the directory. A missing ledger root is structural failure; an existing empty root is valid and reports zero decisions with gates closed. Certification is an optional artifact and remains absent until actual review; absence is not a normal-validation error. Completion requires every applicable audit and specialist gate; a passing boolean never waives or implies certification.
+
+#### Generated audit status and certification
+
+Generate `packages/knowledge/reports/audit-status.json` separately from the public content release. Its version-1 shape is:
+
+```json
+{
+  "schemaVersion": 1,
+  "contentSnapshotIdentity": "<unchanged feat-101 snapshot identity>",
+  "registry": {
+    "sha256": "<64 lowercase hex>",
+    "revision": 1,
+    "counts": {
+      "overviewCells": 192,
+      "positionCells": 1152,
+      "hexagramCells": 1344,
+      "specialPassages": 6,
+      "groups": 0,
+      "exclusions": 0
+    }
+  },
+  "decisionSetSha256": "<64 lowercase hex>",
+  "reviewEvidenceIdentity": "<sha256 of canonical scoped ledger path/hash identity>",
+  "gates": {
+    "sourceReview": {
+      "status": "open|closed",
+      "counts": {
+        "required": 0,
+        "current": 0,
+        "missing": 0,
+        "stale": 0,
+        "rejected": 0,
+        "specialistRejected": 0,
+        "unresolved": 0
+      },
+      "reasons": [{ "code": "<reason code>", "count": 0 }]
+    },
+    "certification": {
+      "status": "open|closed",
+      "state": "missing",
+      "counts": {
+        "current": 0,
+        "required": 0,
+        "missing": 0,
+        "stale": 0,
+        "rejected": 0,
+        "specialistRejected": 0,
+        "unresolved": 0
+      },
+      "reasons": [{ "code": "<reason code>", "count": 0 }]
+    }
+  },
+  "complete": false,
+  "featureCoverage": {
+    "<feature ID>": { "required": 0, "current": 0 }
+  },
+  "totals": {
+    "releasedClaimsCovered": 0,
+    "releasedClaimsRequired": 0,
+    "overviewCells": 192,
+    "positionCells": 1152,
+    "hexagramCells": 1344,
+    "specialPassages": 6,
+    "groups": 0,
+    "exclusions": 0,
+    "acceptedDecisions": 0,
+    "approvedDecisions": 0,
+    "currentDecisions": 0,
+    "rejectedDecisions": 0,
+    "unresolvedDecisions": 0
+  }
+}
+```
+
+`gates.sourceReview` and `gates.certification` are report objects with `status`, derived counts, and reason codes; certification also reports its state. `complete` is true only when both required gates and structural validation pass. This generated report shape is distinct from internal validator results, which use booleans. All report counts are integer derived values. Registry counts match the exact registry arrays; report cell totals are the required denominator, not accepted/audited counts. `decisionSetSha256` hashes only current decisions. `reviewEvidenceIdentity` hashes canonical JSON containing scoped current ledger paths and their file hashes; it is separate from released-content identity. Audit status has no timestamp or self-referential field. A passing gate is not itself a certification claim. Report 192 overview cells, 1,152 position cells, and 1,344 combined hexagram cells accurately; authored hexagram count is not an audit count.
+
+The optional version-1 certification artifact has this exact shape:
+
+```json
+{
+  "schemaVersion": 1,
+  "contentSnapshotIdentity": "<unchanged feat-101 snapshot identity>",
+  "registry": {
+    "sha256": "<64 lowercase hex>",
+    "revision": 1
+  },
+  "decisionSetSha256": "<64 lowercase hex>",
+  "specialistReview": {
+    "reviewerName": "<actual named reviewer>",
+    "reviewerRole": "<actual role>",
+    "reviewedAt": "<date-time>",
+    "scope": "<certification scope>",
+    "decision": "approved"
+  }
+}
+```
+
+Reject additional properties. This artifact is absent until actual feat-096 certification; never use test data as corpus evidence. A structurally valid but stale artifact keeps the certification gate closed; malformed shape or hashes fail validation. The schema does not establish the reviewer's identity or qualifications.
+
+If optional certification exists, bind its decision to the content snapshot identity, registry SHA/revision, current decision-set SHA, and actual named specialist review metadata. Exclude the certification artifact from its own identity to prevent a hash cycle. Keep missing certification closed without changing normal validation. Do not change feat-101 snapshot meaning, public API, generated release JSON/TypeScript, or introduce a certified runtime identity. With no meaningful content change, existing authored V1 records and release outputs remain byte-identical.
+
+CI validates recorded edition SHA values and source-catalog provenance without requiring local PDFs. `--check-books` remains an explicit local fingerprint check; PDF availability does not prove inspection. Keep validator fixtures synthetic and in memory inside package tests, never under real ledger/certification paths. The current real ledger root contains no decisions, and no certification artifact exists.
+
+#### Observed feat-067 implementation status
+
+The registry, strict schemas, validators, ledger loading, input-freshness checks, gate evaluation, and separate audit report are implemented. Current generated evidence reports 1,344 cells, six special obligations, 518 groups, and 17 exclusions. Fourteen layer rosters and all 518 group discoveries remain unresolved. Of 2,057 required targets, zero have current decisions; zero of 1,226 released claims are covered. Source review and certification are closed, `complete` is false, and no source audit or specialist approval is claimed. The 172 protected V1 records, schema, release JSON, and typed wrapper remain unchanged; snapshot identity remains `da736ea2c73cabe55317ca8babe86e0ea022b4bd6c52c576fc95c0c82191c67e`.
+
+The coordinator approved the generated gate-object representation shown above as the canonical report shape. This representation clarifies report fields; it does not alter gate conditions, source-comparison or specialist-approval requirements, or stale-evidence handling. See the [feat-067 plan](../plans/feat-067.md) for verification and handoff evidence.
 
 ### Citation contract
 
