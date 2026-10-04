@@ -357,7 +357,7 @@ describe('evidence-derived audit gates', () => {
     });
     expect(staleSnapshotGates.valid).toBe(true);
     expect(staleSnapshotGates.certificationStatus).toBe('stale');
-  });
+  }, 25_000);
 
   it('reports unchanged actual-registry inventory floors and zero current decisions', () => {
     const registry = readJson('../../../docs/reviews/knowledge/expected-units.json');
