@@ -2,6 +2,11 @@ import { createHash } from 'node:crypto';
 import { canonicalize, compareCanonicalStrings } from './snapshot-identity.mjs';
 import { compareAuditInputs, computeAuditInputs } from './audit-inputs.mjs';
 import { createAuditSchemaValidator } from './audit-schema.mjs';
+import {
+  expectedLayersForTarget,
+  listExpectedAuditTargets,
+  recordClaimIds,
+} from './audit-targets.mjs';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,7 +28,7 @@ export async function validateAuditLedgers(ledgers, registry, context) {
   const seenLedgers = new Set();
   const seenDecisionIds = new Set();
   const byTarget = new Map();
-  const expectedTargets = new Set(listAuditTargets(registry, context).map(targetKey));
+  const expectedTargets = new Set(listExpectedAuditTargets(registry, context).map(targetKey));
 
   for (const ledger of ledgers) {
     const shape = validateLedgerShape(ledger);
@@ -78,18 +83,13 @@ export async function validateAuditLedgers(ledgers, registry, context) {
         );
 
       const mappedRecords = targetRecords(decision.target, registry, context);
-      const mappedClaims = mappedRecords.flatMap(id => {
-        const record = context.records.find(item => item.id === id);
-        return record ? targetClaimIds(decision.target, record) : [];
-      });
+      const relevantClaims = targetClaimIndex(decision.target, registry, context);
       if (decision.authoredScope === 'records' || decision.coveredClaimIds.length) {
         if (!decision.coveredClaimIds.length)
           errors.push(`${decision.id}: records scope has no claims`);
         for (const id of decision.coveredClaimIds)
-          if (mappedRecords.length && !mappedClaims.includes(id))
+          if (!relevantClaims.has(id))
             errors.push(`${decision.id}: claim ${id} is unrelated to target records`);
-          else if (!mappedRecords.length && !claimIsOwnedByTarget(id, decision.target, context))
-            errors.push(`${decision.id}: claim ${id} is unrelated to target`);
       }
       if (decision.authoredScope === 'none') {
         if (decision.coveredClaimIds.length || decision.inputs.records.length)
@@ -102,11 +102,22 @@ export async function validateAuditLedgers(ledgers, registry, context) {
         )
           errors.push(`${decision.id}: authoredScope none cannot hide a released record mapping`);
       }
-      if (
-        decision.authoredScope === 'records' &&
-        decision.inputs.records.some(input => !mappedRecords.includes(input.id))
-      )
-        errors.push(`${decision.id}: recorded inputs include records unrelated to its target`);
+      const currentInputs = await computeAuditInputs(context, decision.coveredClaimIds, {
+        allowInMemoryFixtures: true,
+        target: decision.target,
+        evidenceCitationIds: [
+          ...decision.locator.citationIds,
+          ...decision.sourceComparison.evidenceCitationIds,
+          ...decision.layerResolution.layers.flatMap(layer => layer.citationIds),
+          ...(decision.exclusionReview?.locator.citationIds ?? []),
+        ],
+        evidenceEditionIds: [decision.locator.editionId],
+      }).catch(error => {
+        errors.push(`${decision.id}: ${error.message}`);
+        return null;
+      });
+      if (decision.authoredScope === 'none' && currentInputs?.inputs.records.length)
+        errors.push(`${decision.id}: authoredScope none cannot hide transitive record inputs`);
       const mappedAuthors = mappedRecords
         .flatMap(id => context.records.find(record => record.id === id)?.claims ?? [])
         .map(claim => claim.attribution?.author?.trim().toLocaleLowerCase('en-US'))
@@ -119,27 +130,18 @@ export async function validateAuditLedgers(ledgers, registry, context) {
         .map(value => value.trim().toLocaleLowerCase('en-US'));
       if (mappedAuthors.some(author => reviewerIds.includes(author)))
         errors.push(`${decision.id}: reviewer matches a mapped claim author`);
-      const expectedLayerIds = targetLayers(decision.target, registry, context);
+      const expectedLayerIds = expectedLayersForTarget(
+        decision.target,
+        registry,
+        context,
+        decision.coveredClaimIds,
+      );
       validateLayerResolution(decision, expectedLayerIds, context, errors);
       if (decision.target.kind === 'exclusion' && !decision.exclusionReview)
         errors.push(`${decision.id}: exclusion requires exclusionReview evidence`);
-      let inputState = { current: false, stale: ['inputs-not-checked'] };
-      try {
-        const current = await computeAuditInputs(context, decision.coveredClaimIds, {
-          allowInMemoryFixtures: true,
-          target: decision.target,
-          evidenceCitationIds: [
-            ...decision.locator.citationIds,
-            ...decision.sourceComparison.evidenceCitationIds,
-            ...decision.layerResolution.layers.flatMap(layer => layer.citationIds),
-            ...(decision.exclusionReview?.locator.citationIds ?? []),
-          ],
-          evidenceEditionIds: [decision.locator.editionId],
-        });
-        inputState = compareAuditInputs(decision.inputs, current, context);
-      } catch (error) {
-        errors.push(`${decision.id}: ${error.message}`);
-      }
+      const inputState = currentInputs
+        ? compareAuditInputs(decision.inputs, currentInputs, context)
+        : { current: false, stale: ['inputs-not-checked'] };
       decisions.push({ decision, ledgerId: ledger.ledgerId, inputState });
       const versions = byTarget.get(key) ?? [];
       versions.push({ decision, inputState });
@@ -218,43 +220,6 @@ export async function validateAuditLedgers(ledgers, registry, context) {
   };
 }
 
-function listAuditTargets(registry, context) {
-  const targets = [];
-  for (const hex of registry.hexagrams)
-    for (const book of hex.books)
-      for (const cell of hex.requiredCells)
-        targets.push({ kind: 'cell', hexagramId: hex.id, editionId: book.editionId, cell });
-  for (const item of registry.specialPassages) targets.push({ kind: 'special', id: item.id });
-  for (const item of registry.groups) targets.push({ kind: 'sourceunit', id: item.id });
-  for (const item of registry.exclusions) targets.push({ kind: 'exclusion', id: item.id });
-  for (const record of context.records) {
-    if (!context.manifest.releaseIds.includes(record.id)) continue;
-    targets.push({ kind: 'record', id: record.id });
-    for (const table of record.tables ?? [])
-      if (table.id)
-        targets.push({ kind: 'table', id: table.id, ownerId: record.id, childId: table.id });
-    for (const figure of record.figures ?? [])
-      targets.push({ kind: 'figure', id: figure.id, ownerId: record.id, childId: figure.id });
-    if (record.type === 'lesson') {
-      for (const block of record.blocks ?? [])
-        targets.push({
-          kind: 'lesson',
-          id: `${record.id}/${block.id}`,
-          ownerId: record.id,
-          childId: block.id,
-        });
-    }
-  }
-  for (const binding of context.fixtureBindings ?? [])
-    targets.push({
-      kind: 'fixture',
-      id: binding.path,
-      ownerId: binding.ownerId,
-      childId: binding.claimId,
-    });
-  return targets;
-}
-
 function isInScope(target, scope, registry) {
   if (scope.kind === 'hexagram') {
     if (target.hexagramId === scope.id || target.id === scope.id) return true;
@@ -314,49 +279,6 @@ function targetPages(target, registry) {
   return undefined;
 }
 
-function targetLayers(target, registry, context) {
-  if (target.kind === 'cell') {
-    const hex = registry.hexagrams.find(item => item.id === target.hexagramId);
-    return hex?.books.find(book => book.editionId === target.editionId)?.layerScopeIds ?? [];
-  }
-  for (const collection of ['specialPassages', 'groups', 'exclusions']) {
-    const found = registry[collection].find(item => item.id === target.id);
-    if (found) return found.layerScopeIds;
-  }
-  const ownerId = target.ownerId ?? (target.kind === 'record' ? target.id : undefined);
-  if (ownerId) {
-    const groupLayers = registry.groups
-      .filter(group => group.recordIds?.includes(ownerId))
-      .flatMap(group => group.layerScopeIds);
-    const record = context.records.find(item => item.id === ownerId);
-    const childUnits =
-      target.kind === 'table'
-        ? (record?.tables?.find(item => item.id === target.childId)?.sourceUnitIds ?? [])
-        : target.kind === 'figure'
-          ? (record?.figures?.find(item => item.id === target.childId)?.sourceUnitIds ?? [])
-          : [];
-    const childLayers = registry.groups
-      .filter(group => childUnits.includes(group.id))
-      .flatMap(group => group.layerScopeIds);
-    const evidenceClaims = targetClaimIds(target, record ?? {});
-    const evidenceCitations = evidenceClaims.flatMap(
-      id => allClaims(record ?? {}).find(claim => claim.id === id)?.citationIds ?? [],
-    );
-    const editions = new Set(
-      context.citations
-        .filter(item => evidenceCitations.includes(item.id))
-        .map(item => item.editionId),
-    );
-    const citationLayers = registry.layers
-      .filter(layer => editions.has(layer.editionId))
-      .map(layer => layer.id);
-    const layers = [...groupLayers, ...childLayers, ...citationLayers];
-    if (layers.length) return [...new Set(layers)];
-  }
-  if (['table', 'figure', 'lesson', 'fixture', 'record'].includes(target.kind)) return [];
-  return [];
-}
-
 function targetRecords(target, registry, context) {
   let mapped = [];
   if (target.kind === 'cell' && context.records.some(record => record.id === target.hexagramId))
@@ -382,6 +304,15 @@ function targetRecords(target, registry, context) {
     target.kind === 'fixture'
   )
     mapped = context.manifest.releaseIds.includes(target.ownerId) ? [target.ownerId] : [];
+  if (target.kind === 'fixture' && mapped.length) {
+    const binding = context.fixtureBindings?.find(
+      item =>
+        item.path === target.id &&
+        item.ownerId === target.ownerId &&
+        item.claimId === target.childId,
+    );
+    if (!binding) mapped = [];
+  }
   for (const id of mapped)
     if (!actual.has(id)) throw new Error(`Deleted or retired mapped record ${id}`);
   return mapped;
@@ -409,36 +340,56 @@ function targetHasReleasedRecordMapping(target, registry, context) {
         .find(item => item.id === target.id)
         ?.recordIds?.some(id => releaseIds.has(id)),
     );
+  if (target.kind === 'fixture')
+    return Boolean(
+      context.fixtureBindings?.some(
+        item =>
+          item.path === target.id &&
+          item.ownerId === target.ownerId &&
+          item.claimId === target.childId,
+      ),
+    );
+  if (target.kind === 'lesson') {
+    const record = context.records.find(item => item.id === target.ownerId);
+    const block = record?.blocks?.find(item => item.id === target.childId);
+    const owningClaims = allClaims(record ?? {});
+    return Boolean(
+      block &&
+      block.supportingClaimIds?.length &&
+      block.supportingClaimIds.every(id => owningClaims.some(claim => claim.id === id)),
+    );
+  }
   return false;
 }
 
-function claimIsOwnedByTarget(claimId, target, context) {
-  const record = context.records.find(
-    item => item.id === (target.ownerId ?? target.id ?? target.hexagramId),
+function targetClaimIndex(target, registry, context) {
+  const relevant = new Set();
+  const records = new Map(context.records.map(record => [record.id, record]));
+  const owners = targetRecords(target, registry, context);
+  for (const ownerId of owners) {
+    const record = records.get(ownerId);
+    if (record) {
+      for (const id of targetClaimIds(target, record)) relevant.add(id);
+    }
+  }
+  const claims = new Map(
+    context.records.flatMap(record => allClaims(record).map(claim => [claim.id, claim])),
   );
-  if (!record) return false;
-  const claimIds = targetClaimIds(target, record);
-  return claimIds.includes(claimId);
+  const pending = [...relevant];
+  while (pending.length) {
+    const claim = claims.get(pending.pop());
+    for (const id of claim?.dependsOnClaimIds ?? [])
+      if (!relevant.has(id)) {
+        relevant.add(id);
+        pending.push(id);
+      }
+  }
+  return relevant;
 }
 
 function targetClaimIds(target, record) {
   if (target.kind === 'fixture') return [target.childId];
-  if (target.kind === 'record') {
-    return [
-      ...allClaims(record).map(claim => claim.id),
-      ...(record.tables ?? []).flatMap(table => [
-        ...(table.claimIds ?? []),
-        ...(table.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
-      ]),
-      ...(record.figures ?? []).flatMap(figure => [
-        ...(figure.claimIds ?? []),
-        ...(figure.labels ?? []).flatMap(item => item.claimIds ?? []),
-        ...(figure.orientation?.claimIds ?? []),
-        ...(figure.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
-      ]),
-      ...(record.blocks ?? []).flatMap(block => block.supportingClaimIds ?? []),
-    ];
-  }
+  if (target.kind === 'record') return recordClaimIds(record);
   if (target.kind === 'table') {
     const table = record.tables?.find(item => item.id === target.childId);
     return [
@@ -455,10 +406,8 @@ function targetClaimIds(target, record) {
       ...(figure?.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
     ];
   }
-  if (target.kind === 'lesson' && target.id.includes('/'))
-    return record.blocks?.find(item => item.id === target.childId)?.supportingClaimIds ?? [];
   if (target.kind === 'lesson')
-    return (record.blocks ?? []).flatMap(block => block.supportingClaimIds ?? []);
+    return record.blocks?.find(item => item.id === target.childId)?.supportingClaimIds ?? [];
   return allClaims(record).map(claim => claim.id);
 }
 

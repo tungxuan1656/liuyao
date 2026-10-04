@@ -1,8 +1,13 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
-import { evaluateAuditGates, requireCompleteAudit } from '../scripts/audit-gates.mjs';
+import {
+  evaluateAuditGates,
+  listRequiredAuditTargets,
+  requireCompleteAudit,
+} from '../scripts/audit-gates.mjs';
 import { validateAuditLedgers } from '../scripts/audit-decisions.mjs';
+import { expectedLayersForTarget } from '../scripts/audit-targets.mjs';
 import { computeAuditInputs } from '../scripts/audit-inputs.mjs';
 import { createAuditSchemaValidator } from '../scripts/audit-schema.mjs';
 import { validateAuditRegistry } from '../scripts/audit-registry.mjs';
@@ -82,6 +87,293 @@ describe('evidence-derived audit gates', () => {
     expect(gates.totals.releasedClaimsRequired).toBe(2);
   });
 
+  it('uses the same released lesson/prerequisite targets in gate and ledger validation', async () => {
+    const { context, owner } = auditContext();
+    owner.type = 'lesson';
+    owner.blocks = [{ id: 'block-one', supportingClaimIds: ['claim-owner'] }];
+    owner.prerequisiteLessonIds = ['lesson-prerequisite'];
+    owner.claims[0].dependsOnClaimIds = [];
+    owner.claims[0].citationIds = ['citation-support'];
+    owner.review.evidenceClaimIds = [];
+    const prerequisite = {
+      schemaVersion: 2,
+      id: 'lesson-prerequisite',
+      type: 'lesson',
+      title: 'Prerequisite',
+      aliases: [],
+      topicIds: ['topic-test'],
+      claims: [
+        {
+          id: 'claim-prerequisite',
+          kind: 'structural-fact',
+          text: 'Prerequisite claim.',
+          citationIds: ['citation-support'],
+        },
+      ],
+      relatedIds: [],
+      prerequisiteLessonIds: [],
+      blocks: [{ id: 'prerequisite-block', supportingClaimIds: ['claim-prerequisite'] }],
+      review: { status: 'reviewed', evidenceCitationIds: ['citation-support'] },
+      rights: { basis: 'original-summary-and-structured-facts', license: 'All Rights Reserved' },
+    };
+    context.records.push(prerequisite);
+    context.manifest.releaseIds.push(prerequisite.id);
+    context.fixtureBindings = [];
+    context.records[0].figures = [];
+    const registry = minimalRegistry({ resolved: true });
+    registry.groups[0].recordIds = ['article-owner', 'article-support', 'lesson-prerequisite'];
+    const required = listRequiredAuditTargets(registry, context);
+    expect(required.some(target => target.kind === 'record' && target.id === owner.id)).toBe(true);
+    expect(required.some(target => target.kind === 'record' && target.id === prerequisite.id)).toBe(
+      true,
+    );
+    expect(required).toContainEqual({
+      kind: 'lesson',
+      id: 'article-owner/block-one',
+      ownerId: 'article-owner',
+      childId: 'block-one',
+    });
+    expect(required).not.toContainEqual({
+      kind: 'lesson',
+      id: 'lesson-prerequisite',
+      ownerId: 'lesson-prerequisite',
+      childId: 'lesson-prerequisite',
+    });
+    const decisions = [];
+    for (const target of required) {
+      const isPrerequisite =
+        (target.kind === 'record' && target.id === 'lesson-prerequisite') ||
+        target.ownerId === 'lesson-prerequisite';
+      const isSupportRecord = target.kind === 'record' && target.id === 'article-support';
+      const coveredClaimIds =
+        target.kind === 'sourceunit'
+          ? ['claim-owner', 'claim-support', 'claim-prerequisite']
+          : target.kind === 'record'
+            ? isSupportRecord
+              ? ['claim-support']
+              : isPrerequisite
+                ? ['claim-prerequisite']
+                : ['claim-owner']
+            : isPrerequisite
+              ? ['claim-prerequisite']
+              : ['claim-owner'];
+      const inputResult = await computeAuditInputs(context, coveredClaimIds, {
+        allowInMemoryFixtures: true,
+        target,
+        evidenceCitationIds: ['citation-owner', 'citation-support'],
+        evidenceEditionIds: ['edition-test'],
+      });
+      const decision = makeRecordDecision(
+        target.ownerId === 'lesson-prerequisite' ||
+          (target.kind === 'record' && target.id === 'lesson-prerequisite')
+          ? prerequisite
+          : target.kind === 'record' && target.id === 'article-support'
+            ? context.records.find(item => item.id === 'article-support')
+            : owner,
+        inputResult.inputs,
+        target,
+      );
+      decision.id = `decision-required-target-${decisions.length}`;
+      decision.coveredClaimIds = coveredClaimIds;
+      const expectedLayers = expectedLayersForTarget(target, registry, context, coveredClaimIds);
+      decision.layerResolution.layers = expectedLayers.map(layerId => ({
+        layerId,
+        presence: 'present',
+        citationIds: ['citation-owner', 'citation-support'],
+        basis: 'inspected-page',
+      }));
+      if (target.kind === 'record' && target.id === 'lesson-prerequisite') {
+        decision.locator.citationIds = ['citation-support'];
+        decision.locator.pdfPages = [2, 2];
+      }
+      if (target.kind === 'lesson' && target.ownerId === 'lesson-prerequisite') {
+        decision.locator.citationIds = ['citation-support'];
+        decision.locator.pdfPages = [2, 2];
+      }
+      decisions.push(decision);
+    }
+    const ledger = {
+      schemaVersion: 1,
+      ledgerId: 'ledger-lesson-block',
+      scope: { kind: 'group', id: 'source-unit-test' },
+      decisions,
+    };
+    expect(validateLedgerSchema(ledger).valid).toBe(true);
+    const state = await validateAuditLedgers([ledger], registry, context);
+    expect(state.errors).toEqual([]);
+    expect(state.current).toHaveLength(required.length);
+    expect(state.current.every(item => item.inputState.current)).toBe(true);
+
+    const unsupportedLessonId = structuredClone(ledger);
+    unsupportedLessonId.decisions.push({
+      ...structuredClone(ledger.decisions[0]),
+      id: 'decision-orphan-prerequisite-lesson',
+      target: {
+        kind: 'lesson',
+        id: 'lesson-prerequisite',
+        ownerId: 'lesson-prerequisite',
+        childId: 'lesson-prerequisite',
+      },
+    });
+    expect(
+      (await validateAuditLedgers([unsupportedLessonId], registry, context)).errors.join('\n'),
+    ).toMatch(/unknown or retired audit target/);
+  });
+
+  it('validates exact child layer closure for records, figures, tables, lesson blocks, and fixtures', async () => {
+    const { context, owner } = auditContext();
+    context.manifest.releaseIds = [owner.id];
+    owner.type = 'lesson';
+    owner.blocks = [{ id: 'block-one', supportingClaimIds: ['claim-owner'] }];
+    owner.tables = [
+      { id: 'table-owner', kind: 'coin-outcomes', claimIds: ['claim-owner'], rows: [] },
+    ];
+    owner.figures.push({
+      id: 'figure-empty',
+      kind: 'plate',
+      title: 'Synthetic unsupported child',
+      sourceUnitIds: [],
+      labels: [],
+      claimIds: [],
+      inspectionStatus: 'uninspected',
+    });
+    const registry = minimalRegistry({ resolved: true });
+    registry.layers.push({
+      id: 'layer-owner-unrelated',
+      editionId: 'edition-owner-only',
+      class: 'author-commentary',
+      label: 'Unrelated owner group layer',
+      sourceAnchor: { inventoryAnchor: 'synthetic', citationIds: [] },
+      rosterStatus: 'resolved',
+    });
+    registry.groups[0].layerScopeIds = ['layer-owner-unrelated'];
+    owner.figures[0].sourceUnitIds = [];
+    owner.tables[0].sourceUnitIds = [];
+    context.fixtureBindings = [
+      { claimId: 'claim-owner', ownerId: owner.id, path: 'tests/fixtures/figure-expected.json' },
+    ];
+    owner.expectedFixtures = [
+      { path: 'tests/fixtures/figure-expected.json', claimId: 'claim-owner' },
+    ];
+    context.fixtureBytes = {
+      'tests/fixtures/figure-expected.json': Buffer.from('synthetic fixture'),
+    };
+    const noUnitFigure = {
+      kind: 'figure',
+      id: 'figure-owner',
+      ownerId: owner.id,
+      childId: 'figure-owner',
+    };
+    const targets = [
+      { kind: 'record', id: owner.id },
+      noUnitFigure,
+      { kind: 'table', id: 'table-owner', ownerId: owner.id, childId: 'table-owner' },
+      { kind: 'lesson', id: `${owner.id}/block-one`, ownerId: owner.id, childId: 'block-one' },
+      {
+        kind: 'fixture',
+        id: 'tests/fixtures/figure-expected.json',
+        ownerId: owner.id,
+        childId: 'claim-owner',
+      },
+    ];
+    expect(expectedLayersForTarget(noUnitFigure, registry, context, ['claim-owner'])).toEqual([
+      'layer-test',
+    ]);
+    owner.figures[0].sourceUnitIds = ['source-unit-test'];
+    owner.tables[0].sourceUnitIds = ['source-unit-test'];
+    const withUnitFigure = { ...noUnitFigure, childId: 'figure-owner' };
+    targets.push(withUnitFigure);
+    for (const target of targets) {
+      const inputs = await computeAuditInputs(context, ['claim-owner'], {
+        allowInMemoryFixtures: true,
+        target,
+        evidenceCitationIds: ['citation-owner'],
+        evidenceEditionIds: ['edition-test'],
+      });
+      const decision = makeRecordDecision(owner, inputs.inputs, target);
+      decision.id = `decision-child-scope-${targets.indexOf(target)}`;
+      const expected = expectedLayersForTarget(target, registry, context, ['claim-owner']);
+      decision.layerResolution.layers = expected.map(layerId => ({
+        layerId,
+        presence: 'present',
+        citationIds: ['citation-owner'],
+        basis: 'inspected-page',
+      }));
+      expect(expected.length, target.id).toBeGreaterThan(0);
+      const state = await validateAuditLedgers(
+        [
+          {
+            schemaVersion: 1,
+            ledgerId: `ledger-child-scope-${targets.indexOf(target)}`,
+            scope: { kind: 'group', id: 'source-unit-test' },
+            decisions: [decision],
+          },
+        ],
+        registry,
+        context,
+      );
+      expect(state.errors, `${target.kind}: ${state.errors.join('; ')}`).toEqual([]);
+      expect(state.current[0].inputState).toEqual({ current: true, stale: [] });
+      const gates = evaluateAuditGates({ registry, ledgerState: state, context });
+      expect(
+        gates.unresolved.some(
+          item =>
+            JSON.stringify(canonicalize(item.target)) === JSON.stringify(canonicalize(target)) &&
+            item.reason === 'unresolved-layers',
+        ),
+        `${target.kind} layer closure should not be unresolved`,
+      ).toBe(false);
+    }
+    expect(
+      expectedLayersForTarget(
+        { kind: 'figure', id: 'figure-empty', ownerId: owner.id, childId: 'figure-empty' },
+        registry,
+        context,
+        [],
+      ),
+    ).toEqual(['layer-owner-unrelated']);
+    const emptyScopeContext = structuredClone(context);
+    emptyScopeContext.records[0].claims[0].citationIds = [];
+    emptyScopeContext.records[0].claims[0].dependsOnClaimIds = [];
+    emptyScopeContext.records[0].figures[0].sourceUnitIds = [];
+    registry.groups[0].recordIds = [];
+    const unsupportedChild = { ...noUnitFigure };
+    expect(
+      expectedLayersForTarget(unsupportedChild, registry, emptyScopeContext, ['claim-owner']),
+    ).toEqual([]);
+    const unsupportedInputs = await computeAuditInputs(emptyScopeContext, ['claim-owner'], {
+      allowInMemoryFixtures: true,
+      target: unsupportedChild,
+      evidenceCitationIds: ['citation-owner'],
+      evidenceEditionIds: ['edition-test'],
+    });
+    const unsupportedDecision = makeRecordDecision(
+      emptyScopeContext.records[0],
+      unsupportedInputs.inputs,
+      unsupportedChild,
+    );
+    unsupportedDecision.id = 'decision-empty-layer-closure';
+    unsupportedDecision.coveredClaimIds = ['claim-owner'];
+    unsupportedDecision.layerResolution = { status: 'resolved', layers: [] };
+    const unsupportedState = await validateAuditLedgers(
+      [
+        {
+          schemaVersion: 1,
+          ledgerId: 'ledger-empty-layer-closure',
+          scope: { kind: 'group', id: 'source-unit-test' },
+          decisions: [unsupportedDecision],
+        },
+      ],
+      registry,
+      emptyScopeContext,
+    );
+    expect(unsupportedState.errors.join('\n')).toMatch(/empty layer scope is not proof/);
+    expect(expectedLayersForTarget(withUnitFigure, registry, context, ['claim-owner'])).toEqual([
+      'layer-owner-unrelated',
+      'layer-test',
+    ]);
+  });
+
   it('rejects stale certification binding and malformed certification metadata', () => {
     const { context } = auditContext();
     const registry = minimalRegistry({ resolved: true });
@@ -147,6 +439,184 @@ describe('evidence-derived audit gates', () => {
     expect(approvedGates.certification).toBe(true);
     expect(approvedGates.complete).toBe(true);
   }, 20_000);
+
+  it('opens every validated gate for a covered released claim without real approval or certification', async () => {
+    const { context } = auditContext();
+    const { registry, ledgers, validation } = await completeValidatedSyntheticAudit(context);
+    const record = readJson('../data/trigrams/trigram-heaven.json');
+    const manifest = readJson('../data/manifest.json');
+    const sources = readJson(`../data/${manifest.sourceFile}`).sources;
+    const citations = manifest.citationFiles.flatMap(file => readJson(`../data/${file}`).citations);
+    const inventoryBytes = readFileSync(
+      new URL('../../../docs/reviews/knowledge/source-inventory.md', import.meta.url),
+    );
+    const group = registry.groups.find(item => item.id === 'bpct-part1-ch01');
+    group.recordIds = [record.id];
+    context.records = [record];
+    context.manifest = { ...manifest, releaseIds: [record.id], projectContracts: [] };
+    expect(validateRegistrySchema(registry).valid).toBe(true);
+    const mappedRegistryValidation = validateAuditRegistry(registry, {
+      inventoryBytes,
+      editionCatalog: new Map(
+        sources.flatMap(source => source.editions.map(edition => [edition.id, edition])),
+      ),
+      sourceIds: new Set(sources.map(source => source.id)),
+      citationIds: new Map(citations.map(citation => [citation.id, citation])),
+      featureIds: new Set(readJson('../../../feature_index.json').features.map(item => item.id)),
+      authoredRecordIds: new Set(manifest.recordFiles.map(file => readJson(`../data/${file}`).id)),
+    });
+    expect(mappedRegistryValidation.valid, mappedRegistryValidation.errors.join('\n')).toBe(true);
+    const sourceTarget = { kind: 'sourceunit', id: group.id };
+    const sourceInputs = await computeAuditInputs(context, ['trigram-heaven-pattern'], {
+      allowInMemoryFixtures: true,
+      target: sourceTarget,
+      evidenceCitationIds: ['citation-bpct-p10-11-technical'],
+      evidenceEditionIds: ['edition-bpct-supplied'],
+    });
+    const sourceDecision = makeRecordDecision(record, sourceInputs.inputs, sourceTarget);
+    sourceDecision.id = 'decision-covered-sourceunit';
+    sourceDecision.target = sourceTarget;
+    const releasedClaimIds = record.claims.map(claim => claim.id);
+    sourceDecision.coveredClaimIds = releasedClaimIds;
+    sourceDecision.layerResolution.layers = group.layerScopeIds.map(layerId => ({
+      layerId,
+      presence: 'present',
+      citationIds: ['citation-bpct-p10-11-technical'],
+      basis: 'inspected-page',
+    }));
+    sourceDecision.locator = {
+      citationIds: ['citation-bpct-p10-11-technical'],
+      editionId: 'edition-bpct-supplied',
+      pdfPages: [10, 11],
+    };
+    sourceDecision.sourceComparison.evidenceCitationIds = ['citation-bpct-p10-11-technical'];
+    sourceDecision.inputs = (
+      await computeAuditInputs(context, releasedClaimIds, {
+        allowInMemoryFixtures: true,
+        target: sourceTarget,
+        evidenceCitationIds: ['citation-bpct-p10-11-technical'],
+        evidenceEditionIds: ['edition-bpct-supplied'],
+      })
+    ).inputs;
+    const targetLedger = ledgers.find(
+      ledger => ledger.scope.kind === 'group' && ledger.scope.id === group.id,
+    );
+    targetLedger.decisions = targetLedger.decisions.filter(
+      decision =>
+        JSON.stringify(canonicalize(decision.target)) !==
+        JSON.stringify(canonicalize(sourceTarget)),
+    );
+    targetLedger.decisions.push(sourceDecision);
+
+    const recordTarget = { kind: 'record', id: record.id };
+    const recordInput = await computeAuditInputs(context, releasedClaimIds, {
+      allowInMemoryFixtures: true,
+      target: recordTarget,
+      evidenceCitationIds: ['citation-bpct-p10-11-technical'],
+      evidenceEditionIds: ['edition-bpct-supplied'],
+    });
+    const recordDecision = makeRecordDecision(record, recordInput.inputs, recordTarget);
+    recordDecision.id = 'decision-covered-record';
+    recordDecision.coveredClaimIds = releasedClaimIds;
+    recordDecision.locator = sourceDecision.locator;
+    recordDecision.sourceComparison.evidenceCitationIds = ['citation-bpct-p10-11-technical'];
+    recordDecision.layerResolution.layers = group.layerScopeIds.map(layerId => ({
+      layerId,
+      presence: 'present',
+      citationIds: ['citation-bpct-p10-11-technical'],
+      basis: 'inspected-page',
+    }));
+    recordDecision.inputs = recordInput.inputs;
+    let recordLedger = ledgers.find(
+      ledger => ledger.scope.kind === 'group' && ledger.scope.id === group.id,
+    );
+    if (!recordLedger) {
+      recordLedger = {
+        schemaVersion: 1,
+        ledgerId: `ledger-synthetic-${group.id}`,
+        scope: { kind: 'group', id: group.id },
+        decisions: [],
+      };
+      ledgers.push(recordLedger);
+    }
+    recordLedger.decisions.push(recordDecision);
+
+    const allTargets = listRequiredAuditTargets(registry, context);
+    const targetKeys = new Set(allTargets.map(target => JSON.stringify(canonicalize(target))));
+    const deduplicated = ledgers
+      .map(ledger => ({
+        ...ledger,
+        decisions: ledger.decisions.filter(decision =>
+          targetKeys.has(JSON.stringify(canonicalize(decision.target))),
+        ),
+      }))
+      .filter(ledger => ledger.decisions.length);
+    const validated = await validateAuditLedgers(deduplicated, registry, context);
+    expect(validated.valid, validated.errors.slice(0, 10).join('\n')).toBe(true);
+    expect(validateLedgerSchema(targetLedger).valid).toBe(true);
+    expect(validation.valid).toBe(true);
+    const pendingGates = evaluateAuditGates({ registry, ledgerState: validated, context });
+    expect(pendingGates.sourceReview).toBe(true);
+    expect(pendingGates.independentUnitApprovals).toBe(false);
+    expect(pendingGates.certification).toBe(false);
+    expect(pendingGates.complete).toBe(false);
+    const gates = evaluateAuditGates({ registry, ledgerState: validated, context });
+    expect(gates.sourceReview).toBe(true);
+    expect(gates.totals.releasedClaimsRequired).toBe(2);
+    expect(gates.totals.releasedClaimsCovered).toBe(2);
+    expect(gates.independentUnitApprovals).toBe(false);
+    expect(gates.certification).toBe(false);
+    expect(gates.complete).toBe(false);
+
+    for (const ledger of deduplicated)
+      for (const decision of ledger.decisions)
+        decision.specialistReview = {
+          status: 'approved',
+          reviewerName: 'Synthetic independent reviewer',
+          reviewerRole: 'Synthetic test role',
+          reviewedAt: '2026-10-04T00:00:00Z',
+          scope: 'Synthetic gate test only; not an actual approval.',
+          note: 'In-memory test evidence only.',
+        };
+    const approvedState = await validateAuditLedgers(deduplicated, registry, context);
+    expect(approvedState.valid, approvedState.errors.slice(0, 10).join('\n')).toBe(true);
+    context.decisionSetSha256 = approvedState.decisionSetSha256;
+    const certification = makeSyntheticCertification(context, registry, approvedState);
+    expect(validateCertificationSchema(certification).valid).toBe(true);
+    const completeGates = evaluateAuditGates({
+      registry,
+      ledgerState: approvedState,
+      context,
+      certification,
+    });
+    expect(completeGates.independentUnitApprovals).toBe(true);
+    expect(completeGates.certification).toBe(true);
+    expect(completeGates.sourceReview).toBe(true);
+    expect(completeGates.complete).toBe(true);
+
+    const uncovered = structuredClone(approvedState);
+    const coveredRecord = uncovered.current.find(item => item.target.kind === 'record');
+    coveredRecord.decision.coveredClaimIds = [];
+    expect(
+      evaluateAuditGates({ registry, ledgerState: uncovered, context, certification }).complete,
+    ).toBe(false);
+    const staleLayer = structuredClone(approvedState);
+    staleLayer.current.find(item => item.target.kind === 'record').decision.layerResolution.layers =
+      [];
+    expect(
+      evaluateAuditGates({ registry, ledgerState: staleLayer, context, certification }).complete,
+    ).toBe(false);
+    const staleCertification = structuredClone(certification);
+    staleCertification.decisionSetSha256 = 'f'.repeat(64);
+    expect(
+      evaluateAuditGates({
+        registry,
+        ledgerState: approvedState,
+        context,
+        certification: staleCertification,
+      }).complete,
+    ).toBe(false);
+  }, 25_000);
 
   it('keeps layer, discovery, and specialist rejection semantics separate', async () => {
     const { context } = auditContext();

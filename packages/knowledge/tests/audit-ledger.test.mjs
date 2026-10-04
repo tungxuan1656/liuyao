@@ -261,6 +261,194 @@ describe('versioned audit input and decision contracts', () => {
     expect(state.errors.join('\n')).toMatch(/authoredScope none/);
   });
 
+  it('accepts exact transitive cross-record support and marks changed closure stale', async () => {
+    const { context, owner, support } = auditContext();
+    owner.claims[0].dependsOnClaimIds = ['claim-support'];
+    support.claims[0].dependsOnClaimIds = [];
+    const registry = minimalRegistry();
+    registry.groups[0].recordIds = [owner.id, support.id];
+    const target = {
+      kind: 'figure',
+      id: 'figure-owner',
+      ownerId: owner.id,
+      childId: 'figure-owner',
+    };
+    const inputResult = await computeAuditInputs(context, ['claim-owner'], {
+      allowInMemoryFixtures: true,
+      target,
+      evidenceCitationIds: ['citation-owner'],
+      evidenceEditionIds: ['edition-test'],
+    });
+    expect(inputResult.inputs.records.map(item => item.id).sort()).toEqual([
+      'article-owner',
+      'article-support',
+    ]);
+    const decision = {
+      id: 'decision-cross-record-figure',
+      target,
+      revision: 1,
+      supersedes: null,
+      disposition: 'accepted',
+      findings: 'Synthetic cross-record support closure.',
+      locator: { citationIds: ['citation-owner'], editionId: 'edition-test', pdfPages: [1, 1] },
+      coveredClaimIds: ['claim-owner'],
+      layerResolution: {
+        status: 'resolved',
+        layers: [
+          {
+            layerId: 'layer-test',
+            presence: 'present',
+            citationIds: ['citation-owner'],
+            basis: 'inspected-page',
+          },
+        ],
+      },
+      exclusionReview: null,
+      sourceComparison: {
+        identity: 'Independent comparison',
+        reviewer: 'Independent reviewer',
+        date: '2026-10-04',
+        scope: 'Cross-record dependency test.',
+        evidenceCitationIds: ['citation-owner'],
+      },
+      specialistReview: {
+        status: 'pending',
+        reviewerName: null,
+        reviewerRole: null,
+        reviewedAt: null,
+        scope: 'Pending',
+        note: '',
+      },
+      authoredScope: 'records',
+      inputs: inputResult.inputs,
+      recordedAt: '2026-10-04T00:00:00Z',
+      recordedBy: 'Synthetic test runner',
+    };
+    const ledger = {
+      schemaVersion: 1,
+      ledgerId: 'ledger-cross-record-figure',
+      scope: { kind: 'group', id: 'source-unit-test' },
+      decisions: [decision],
+    };
+    const supportTarget = { kind: 'record', id: support.id };
+    const supportInputs = await computeAuditInputs(context, ['claim-support'], {
+      allowInMemoryFixtures: true,
+      target: supportTarget,
+      evidenceCitationIds: ['citation-support'],
+      evidenceEditionIds: ['edition-test'],
+    });
+    const supportDecision = {
+      ...structuredClone(decision),
+      id: 'decision-unaffected-support-record',
+      target: supportTarget,
+      locator: { citationIds: ['citation-support'], editionId: 'edition-test', pdfPages: [2, 2] },
+      coveredClaimIds: ['claim-support'],
+      layerResolution: {
+        status: 'resolved',
+        layers: [
+          {
+            layerId: 'layer-test',
+            presence: 'present',
+            citationIds: ['citation-support'],
+            basis: 'inspected-page',
+          },
+        ],
+      },
+      sourceComparison: { ...decision.sourceComparison, evidenceCitationIds: ['citation-support'] },
+      inputs: supportInputs.inputs,
+    };
+    ledger.decisions.push(supportDecision);
+    const current = await validateAuditLedgers([ledger], registry, context);
+    expect(current.errors).toEqual([]);
+    expect(current.current.find(item => item.target.kind === 'figure').inputState).toEqual({
+      current: true,
+      stale: [],
+    });
+
+    const extraRecord = structuredClone(ledger);
+    extraRecord.decisions[0].inputs.records.push({
+      id: 'article-unrelated',
+      sha256: '0'.repeat(64),
+      released: false,
+    });
+    extraRecord.decisions[0].inputs.citations = [];
+    extraRecord.decisions[0].inputs.editions = [];
+    const withUnrelatedRecord = {
+      ...context,
+      records: [...context.records, { id: 'article-unrelated', claims: [] }],
+    };
+    const extraState = await validateAuditLedgers([extraRecord], registry, withUnrelatedRecord);
+    expect(extraState.errors).toEqual([]);
+    expect(extraState.current[0].inputState.current).toBe(false);
+    expect(extraState.current[0].inputState.stale).toContain('records:article-unrelated:removed');
+
+    const missingSupport = structuredClone(ledger);
+    missingSupport.decisions[0].inputs.records = missingSupport.decisions[0].inputs.records.filter(
+      item => item.id !== 'article-support',
+    );
+    const missingSupportState = await validateAuditLedgers([missingSupport], registry, context);
+    expect(missingSupportState.errors).toEqual([]);
+    expect(
+      missingSupportState.current.find(item => item.target.kind === 'figure').inputState.current,
+    ).toBe(false);
+    expect(
+      missingSupportState.current.find(item => item.target.kind === 'figure').inputState.stale,
+    ).toContain('records:article-support:added');
+
+    owner.claims[0].dependsOnClaimIds = [];
+    const removedDependency = await computeAuditInputs(context, ['claim-owner'], {
+      allowInMemoryFixtures: true,
+      target,
+      evidenceCitationIds: ['citation-owner'],
+      evidenceEditionIds: ['edition-test'],
+    });
+    const changedState = await validateAuditLedgers([ledger], registry, context);
+    expect(changedState.valid).toBe(true);
+    const affected = changedState.current.find(item => item.target.kind === 'figure');
+    const unaffected = changedState.current.find(item => item.target.id === support.id);
+    expect(affected.inputState.current).toBe(false);
+    expect(affected.inputState.stale).toContain('records:article-support:removed');
+    expect(unaffected.inputState).toEqual({ current: true, stale: [] });
+    expect(removedDependency.inputs.records.map(item => item.id)).toEqual(['article-owner']);
+
+    const addedSupport = {
+      schemaVersion: 2,
+      id: 'article-added-support',
+      type: 'article',
+      claims: [
+        {
+          id: 'claim-added-support',
+          kind: 'structural-fact',
+          text: 'New dependency support.',
+          citationIds: ['citation-support'],
+        },
+      ],
+    };
+    context.records.push(addedSupport);
+    owner.claims[0].dependsOnClaimIds = ['claim-added-support'];
+    const addedDependency = await computeAuditInputs(context, ['claim-owner'], {
+      allowInMemoryFixtures: true,
+      target,
+      evidenceCitationIds: ['citation-owner'],
+      evidenceEditionIds: ['edition-test'],
+    });
+    const addedState = await validateAuditLedgers([ledger], registry, context);
+    expect(addedState.valid).toBe(true);
+    expect(addedState.current[0].inputState.current).toBe(false);
+    expect(addedState.current[0].inputState.stale).toContain('records:article-added-support:added');
+    expect(addedDependency.claimIds).toContain('claim-added-support');
+    const unchangedSupport = await computeAuditInputs(context, ['claim-support'], {
+      allowInMemoryFixtures: true,
+      target: { kind: 'record', id: support.id },
+      evidenceCitationIds: ['citation-support'],
+      evidenceEditionIds: ['edition-test'],
+    });
+    expect(compareAuditInputs(unchangedSupport.inputs, unchangedSupport, context)).toEqual({
+      current: true,
+      stale: [],
+    });
+  });
+
   it('marks each valid input-closure field addition, removal, and changed value stale', () => {
     const { context } = auditContext();
     context.manifest.projectContracts = [];

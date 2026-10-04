@@ -4,6 +4,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { canonicalize, compareCanonicalStrings } from './snapshot-identity.mjs';
 import { createAuditSchemaValidator } from './audit-schema.mjs';
+import {
+  expectedLayersForTarget,
+  listExpectedAuditTargets,
+  recordClaimIds,
+} from './audit-targets.mjs';
 
 const packageRoot = fileURLToPath(new URL('../', import.meta.url));
 const certificationSchema = JSON.parse(
@@ -111,7 +116,12 @@ export function evaluateAuditGates({ registry, ledgerState, context, certificati
       independentUnitApprovals = false;
       continue;
     }
-    const expectedLayers = layersFor(target, registry, context);
+    const expectedLayers = expectedLayersForTarget(
+      target,
+      registry,
+      context,
+      decision.coveredClaimIds,
+    );
     const layersResolved =
       expectedLayers.length > 0 &&
       decision.layerResolution.status === 'resolved' &&
@@ -217,213 +227,7 @@ export function requireCompleteAudit(gates) {
 }
 
 export function listRequiredAuditTargets(registry, context) {
-  const targets = [];
-  for (const hex of registry.hexagrams)
-    for (const book of hex.books)
-      for (const cell of hex.requiredCells)
-        targets.push({ kind: 'cell', hexagramId: hex.id, editionId: book.editionId, cell });
-  for (const special of registry.specialPassages) targets.push({ kind: 'special', id: special.id });
-  for (const group of registry.groups) targets.push({ kind: 'sourceunit', id: group.id });
-  for (const exclusion of registry.exclusions)
-    targets.push({ kind: 'exclusion', id: exclusion.id });
-
-  // Derive record-level semantic support obligations from the current authored release.
-  for (const record of context.records) {
-    if (!context.manifest.releaseIds.includes(record.id)) continue;
-    targets.push({ kind: 'record', id: record.id });
-    for (const table of record.tables ?? [])
-      if (table.id)
-        targets.push({ kind: 'table', id: table.id, ownerId: record.id, childId: table.id });
-    for (const figure of record.figures ?? [])
-      targets.push({ kind: 'figure', id: figure.id, ownerId: record.id, childId: figure.id });
-    if (record.type === 'lesson') {
-      for (const block of record.blocks ?? [])
-        targets.push({
-          kind: 'lesson',
-          id: `${record.id}/${block.id}`,
-          ownerId: record.id,
-          childId: block.id,
-        });
-      for (const prerequisiteLessonId of record.prerequisiteLessonIds ?? []) {
-        const prerequisite = context.records.find(item => item.id === prerequisiteLessonId);
-        if (!prerequisite) continue;
-        targets.push({
-          kind: 'lesson',
-          id: prerequisite.id,
-          ownerId: prerequisite.id,
-          childId: prerequisite.id,
-        });
-      }
-    }
-  }
-  for (const binding of context.fixtureBindings ?? [])
-    targets.push({
-      kind: 'fixture',
-      id: binding.path,
-      ownerId: binding.ownerId,
-      childId: binding.claimId,
-    });
-  const seen = new Set();
-  return targets.filter(target => {
-    const key = targetKey(target);
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
-
-function layersFor(target, registry, context) {
-  if (target.kind === 'cell')
-    return (
-      registry.hexagrams
-        .find(item => item.id === target.hexagramId)
-        ?.books.find(book => book.editionId === target.editionId)?.layerScopeIds ?? []
-    );
-  for (const collection of ['specialPassages', 'groups', 'exclusions']) {
-    const found = registry[collection].find(item => item.id === target.id);
-    if (found) return found.layerScopeIds;
-  }
-  const ownerId = target.ownerId ?? (target.kind === 'record' ? target.id : undefined);
-  if (ownerId) {
-    const record = context.records.find(item => item.id === ownerId);
-    const recordLayers = registry.groups
-      .filter(group => group.recordIds?.includes(ownerId))
-      .flatMap(group => group.layerScopeIds);
-    const childUnits =
-      target.kind === 'figure'
-        ? (record?.figures?.find(item => item.id === target.childId)?.sourceUnitIds ?? [])
-        : target.kind === 'table'
-          ? (record?.tables?.find(item => item.id === target.childId)?.sourceUnitIds ?? [])
-          : [];
-    const childLayers = registry.groups
-      .filter(group => childUnits.includes(group.id))
-      .flatMap(group => group.layerScopeIds);
-    const claims =
-      target.kind === 'figure' || target.kind === 'table'
-        ? targetClaimIds(target, record ?? {})
-        : target.kind === 'lesson'
-          ? targetClaimIds(target, record ?? {})
-          : targetClaimIds({ kind: 'record', id: ownerId }, record ?? {});
-    const claimsWithCitations = [
-      ...allRecordClaims(record ?? {}),
-      ...(record?.tables ?? []).flatMap(table =>
-        (table.claimIds ?? []).map(id => ({ id, citationIds: table.citationIds ?? [] })),
-      ),
-      ...(record?.figures ?? []).flatMap(figure =>
-        (figure.claimIds ?? []).map(id => ({ id, citationIds: figure.citationIds ?? [] })),
-      ),
-      ...(record?.blocks ?? []).flatMap(block =>
-        (block.supportingClaimIds ?? []).map(id => ({ id, citationIds: block.citationIds ?? [] })),
-      ),
-    ];
-    const citations = claims.flatMap(id => {
-      const claim = claimsWithCitations.find(item => item.id === id);
-      if (claim) return claim.citationIds ?? [];
-      const table = (record?.tables ?? []).find(item =>
-        [
-          ...(item.claimIds ?? []),
-          ...(item.authorAlternatives ?? []).flatMap(row => row.claimIds ?? []),
-        ].includes(id),
-      );
-      if (table)
-        return [
-          ...(table.citationIds ?? []),
-          ...(table.authorAlternatives ?? [])
-            .filter(item => item.claimIds?.includes(id))
-            .flatMap(item => item.citationIds ?? []),
-        ];
-      const figure = (record?.figures ?? []).find(item =>
-        [
-          ...(item.claimIds ?? []),
-          ...(item.labels ?? []).flatMap(label => label.claimIds ?? []),
-          ...(item.orientation?.claimIds ?? []),
-          ...(item.authorAlternatives ?? []).flatMap(row => row.claimIds ?? []),
-        ].includes(id),
-      );
-      if (figure)
-        return [
-          ...(figure.citationIds ?? []),
-          ...(figure.labels ?? [])
-            .filter(item => item.claimIds?.includes(id))
-            .flatMap(item => item.citationIds ?? []),
-          ...(figure.orientation?.claimIds?.includes(id)
-            ? (figure.orientation.citationIds ?? [])
-            : []),
-          ...(figure.authorAlternatives ?? [])
-            .filter(item => item.claimIds?.includes(id))
-            .flatMap(item => item.citationIds ?? []),
-        ];
-      const block = (record?.blocks ?? []).find(item => item.supportingClaimIds?.includes(id));
-      return block?.citationIds ?? [];
-    });
-    const editions = new Set(
-      context.citations
-        .filter(citation => citations.includes(citation.id))
-        .map(citation => citation.editionId),
-    );
-    const citationLayers = registry.layers
-      .filter(layer => editions.has(layer.editionId))
-      .map(layer => layer.id);
-    const mapped = [...recordLayers, ...childLayers, ...citationLayers];
-    const childExpected =
-      target.kind === 'figure' || target.kind === 'table'
-        ? targetClaimIds(target, record ?? {}).length > 0 || childLayers.length > 0
-        : target.kind === 'lesson'
-          ? targetClaimIds(target, record ?? {}).length > 0
-          : false;
-    if (childExpected) return [...new Set([...childLayers, ...citationLayers])];
-    if (mapped.length) return [...new Set(mapped)];
-  }
-  return [];
-}
-
-function allRecordClaims(record) {
-  return [
-    ...(record.claims ?? []),
-    ...(record.lines ?? []).flatMap(line => line.claims ?? []),
-    ...(record.specialPassages ?? []).flatMap(item => item.claims ?? []),
-  ];
-}
-
-function targetClaimIds(target, record) {
-  if (target.kind === 'record')
-    return [
-      ...allRecordClaims(record).map(claim => claim.id),
-      ...(record.tables ?? []).flatMap(table => [
-        ...(table.claimIds ?? []),
-        ...(table.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
-      ]),
-      ...(record.figures ?? []).flatMap(figure => [
-        ...(figure.claimIds ?? []),
-        ...(figure.labels ?? []).flatMap(item => item.claimIds ?? []),
-        ...(figure.orientation?.claimIds ?? []),
-        ...(figure.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
-      ]),
-      ...(record.blocks ?? []).flatMap(block => block.supportingClaimIds ?? []),
-    ];
-  if (target.kind === 'figure') {
-    const figure = record.figures?.find(item => item.id === target.childId);
-    return [
-      ...(figure?.claimIds ?? []),
-      ...(figure?.labels ?? []).flatMap(item => item.claimIds ?? []),
-      ...(figure?.orientation?.claimIds ?? []),
-      ...(figure?.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
-    ];
-  }
-  if (target.kind === 'table') {
-    const table = record.tables?.find(item => item.id === target.childId);
-    return [
-      ...(table?.claimIds ?? []),
-      ...(table?.authorAlternatives ?? []).flatMap(item => item.claimIds ?? []),
-    ];
-  }
-  if (target.kind === 'lesson') {
-    if (target.childId && target.childId !== record.id)
-      return record.blocks?.find(item => item.id === target.childId)?.supportingClaimIds ?? [];
-    return (record.blocks ?? []).flatMap(block => block.supportingClaimIds ?? []);
-  }
-  if (target.kind === 'fixture') return [target.childId];
-  return [];
+  return listExpectedAuditTargets(registry, context);
 }
 
 function layerClosure(decision, expected) {
@@ -448,7 +252,7 @@ function allReleasedClaims(context) {
   const claimIds = [];
   for (const record of context.records) {
     if (!release.has(record.id)) continue;
-    claimIds.push(...targetClaimIds({ kind: 'record', id: record.id }, record));
+    claimIds.push(...recordClaimIds(record));
   }
   return [...new Set(claimIds)].sort(compareCanonicalStrings);
 }
