@@ -44,13 +44,13 @@ New interpretation, calendar, or UI behavior.
 
 ## Verify
 
-- `./init.sh` — coordinator receipt `sh_1065aa617001KhSL6yo2WJaB6D`.
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` — passed.
-- Confirm protected assets and audit-status/coverage reports remain byte-identical.
+- Coordinator `./init.sh` receipt `sh_1065aa617001KhSL6yo2WJaB6D`: 405 tests (181 core, 224 knowledge), format, lint (0 errors; 4 baseline warnings), typecheck, build, exports, placement, length, and corpus/book freshness passed.
+- Exact-head review at `4b7ea6b9121ac03b9afe6c35514e2d0d9d39ed0c`: F1/F2 closed with no material findings. Focused follow-up (2), correction suite (14), knowledge tests (224), typecheck, lint/format, and diff checks passed.
+- 177 protected assets and both audit reports remain byte-identical; zero real audit decisions and no certification exist.
 
 ## Handoff
 
-- State: active; implementation criteria and local verification pass; final review and CI remain pending.
-- Evidence: 14 synthetic correction probes pass; coordinator `./init.sh` receipt passes 405 tests (181 core, 224 knowledge), format, lint (0 errors; 4 baseline warnings), typecheck, build, exports, placement, length, and corpus/book freshness. 177 protected assets and both audit reports are unchanged. No actual decisions or certification exist; validators are unchanged.
+- State: done for implementation and locally verified acceptance; final PR delivery is pending.
+- Evidence: Exact-head review `4b7ea6b9121ac03b9afe6c35514e2d0d9d39ed0c` closed F1/F2 without material findings. Coordinator init and fresh pre-push validation passed; all 14 synthetic probes pass. Synthetic approvals remain in memory only. Validators are unchanged; no actual qualified review, audit decisions, or corpus certification is claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Commit this immutable test-proof, request final review, and complete PR CI; keep feat-097 active until coordinator acceptance.
+- Next: Complete current-head PR #64 CI and merge; then continue the feat-044 batch order. Watcher `sh_10673bc1d001Pmek1pV6cbOcRf` is pending; the earlier `a534eac` CI pass does not verify this head.
