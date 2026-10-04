@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-42",
+  "type": "hexagram",
+  "title": "Phong Lôi Ích",
+  "aliases": ["Ích"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-42-structure",
+      "kind": "structural-fact",
+      "text": "Phong Lôi Ích có nội quái Chấn và ngoại quái Tốn; sáu hào được ghi theo thứ tự từ dưới lên.",
+      "citationIds": [
+        "citation-pbc-q42-overview-classical-text",
+        "citation-ntt-q42-overview-classical-text",
+        "citation-nhl-q42-line-1-classical-text",
+        "citation-nhl-q42-line-2-classical-text",
+        "citation-nhl-q42-line-3-classical-text",
+        "citation-nhl-q42-line-4-classical-text",
+        "citation-nhl-q42-line-5-classical-text",
+        "citation-nhl-q42-line-6-classical-text",
+        "citation-pbc-q42-line-1-classical-text",
+        "citation-pbc-q42-line-2-classical-text",
+        "citation-pbc-q42-line-3-classical-text",
+        "citation-pbc-q42-line-4-classical-text",
+        "citation-pbc-q42-line-5-classical-text",
+        "citation-pbc-q42-line-6-classical-text",
+        "citation-ntt-q42-line-1-classical-text",
+        "citation-ntt-q42-line-2-classical-text",
+        "citation-ntt-q42-line-3-classical-text",
+        "citation-ntt-q42-line-4-classical-text",
+        "citation-ntt-q42-line-5-classical-text",
+        "citation-ntt-q42-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-42-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giải Ích là thêm lợi cho phía dưới và liên hệ gió với sấm; hành động cần đúng lúc, còn Tượng khuyên học điều hay và sửa lỗi.",
+      "citationIds": ["citation-nhl-q42-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-42-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu nối Ích với Tổn và giải lợi ích qua sự giúp đỡ lẫn nhau; các ví dụ xã hội thuộc luận giải riêng của ông.",
+      "citationIds": ["citation-pbc-q42-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-42-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di nối Ích với Tổn rồi giải gió và sấm là giúp nhau, đồng thời nêu việc giảm trên để ích dưới.",
+      "citationIds": ["citation-ntt-q42-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-42-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải Ích bằng sự chuyển hào dương từ quái trên xuống quái dưới và hình ảnh gió-sấm; đây là cách giải riêng.",
+      "citationIds": ["citation-ntt-q42-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-42-overview-ntt-q42-overview-tien-nho-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Lời Tiên Nho dẫn Chu Hy khuyên theo điều tốt và sửa lỗi kịp thời; giữ riêng với phần Bản nghĩa của ông.",
+      "citationIds": ["citation-ntt-q42-overview-tien-nho-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy, được dẫn trong lời Tiên Nho",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-42-note-1",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chú rằng theo Trình Di, chữ trong lời kinh được đổi thành chữ ích, nên dịch là “đạo ích”.",
+      "citationIds": ["citation-ntt-q42-note-1"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-42-note-2",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải ý “theo điều thiện” là noi theo hành vi tốt của người khác.",
+      "citationIds": ["citation-ntt-q42-note-2"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-42-note-3",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố đối chiếu cách Chu Hy hiểu “mười bằng” là hai mai rùa, có căn cứ trong sách Thực hóa chí, với cách Trình Di dịch “hoặc được ích, mười bạn giúp đầy, rùa không thể trái”; ông nói cách ngắt sau không có căn cứ trong sách.",
+      "citationIds": ["citation-ntt-q42-note-3"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-42-note-4",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải câu này là việc bói xác nhận kết quả.",
+      "citationIds": ["citation-ntt-q42-note-4"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-42-note-5",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố xác định cụm từ đang nói đến việc dời đô.",
+      "citationIds": ["citation-ntt-q42-note-5"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-42-note-6",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố ghi rằng lời giải của Chu Hy hiểu cụm từ theo phạm vi một phía.",
+      "citationIds": ["citation-ntt-q42-note-6"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-wind", "trigram-thunder"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yin", "yin", "yang", "yang"],
+    "kingWenNumber": 42,
+    "upperTrigramId": "trigram-wind",
+    "lowerTrigramId": "trigram-thunder",
+    "claimIds": ["hexagram-42-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-42-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Người ở vị trí thấp chỉ nên nhận việc lớn khi xét kỹ và làm chắc chắn; địa vị thấp là một điều kiện cần tính đến.",
+          "citationIds": ["citation-nhl-q42-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-42-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Người ở vị trí thấp có thể góp vào việc công lớn nếu làm trọn vẹn, cẩn trọng và được người trên tin dùng.",
+          "citationIds": ["citation-pbc-q42-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-42-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào đầu ở thấp có thể làm việc lớn nếu người trên dùng đúng tài năng; cần làm trọn vẹn để tránh lỗi.",
+          "citationIds": ["citation-ntt-q42-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào dưới nhận lợi từ trên nên cần đáp lại bằng việc lớn được làm đến nơi đến chốn.",
+          "citationIds": ["citation-ntt-q42-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-1-ntt-q42-line-1-tien-nho",
+          "kind": "author-interpretation",
+          "text": "Lời Tiên Nho dẫn Chu Hy phân biệt điềm tốt với việc có lỗi hay không; giữ hai nhận định riêng.",
+          "citationIds": ["citation-ntt-q42-line-1-tien-nho"],
+          "attribution": {
+            "author": "Chu Hy, được dẫn trong lời Tiên Nho",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-42-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào hai nhận được lợi bất ngờ và cần giữ điều chính bền; hình ảnh vua tế trời là ví dụ riêng trong lời giải.",
+          "citationIds": ["citation-nhl-q42-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-42-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào hai nhận sự trợ giúp quý bất ngờ và cần giữ chính; việc tế trời của vua là một hình ảnh riêng.",
+          "citationIds": ["citation-pbc-q42-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-42-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào hai mềm và trung nên nhận được lợi; hình ảnh cúng tế gắn với việc giữ chính lâu dài.",
+          "citationIds": ["citation-ntt-q42-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào mềm ở giữa và đúng vị trí nên nhận lợi bất ngờ; hình ảnh tế lễ được giải riêng với lời bàn của Trình Di.",
+          "citationIds": ["citation-ntt-q42-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-42-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Lợi có thể đến qua gian khó hoặc sự sửa dạy; cần thành thực và giữ đường trung, không coi hình phạt là tốt vô điều kiện.",
+          "citationIds": ["citation-nhl-q42-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-42-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Lợi có thể đến qua nghịch cảnh hoặc lời can gián; cần tự sửa thành thực và giữ đường trung để được tin.",
+          "citationIds": ["citation-pbc-q42-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-42-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trong tai biến đặc biệt, có thể hành động gấp để bảo vệ dân; cần thành thực, giữ trung và được người trên tin.",
+          "citationIds": ["citation-ntt-q42-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc nghịch cảnh như lời sửa dạy cho hào chưa đủ điều kiện nhận lợi; sự thành thực và trung chính vẫn là điều kiện.",
+          "citationIds": ["citation-ntt-q42-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-3-ntt-q42-line-3-chu-hy-tien-nho",
+          "kind": "author-interpretation",
+          "text": "Trong lời Tiên Nho, Chu Hy thuật lại và phê bình cách giải chức quan được quy cho Y Xuyên; đây là lời dẫn, không phải phát biểu trực tiếp độc lập của Y Xuyên.",
+          "citationIds": ["citation-ntt-q42-line-3-chu-hy-tien-nho"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-3-ntt-q42-line-3-y-xuyen",
+          "kind": "author-interpretation",
+          "text": "Y Xuyên được Chu Hy dẫn lại về cách giải theo chức quan lịch sử rồi bị phê bình; nguồn ở đây là lời thuật của Chu Hy.",
+          "citationIds": ["citation-ntt-q42-line-3-y-xuyen"],
+          "attribution": {
+            "author": "Y Xuyên, được Chu Hy dẫn lại",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-42-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào bốn trình bày đường trung với người trên để được chấp thuận; sự ủng hộ ấy gắn với việc lớn như dời đô.",
+          "citationIds": ["citation-nhl-q42-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-42-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Lời trình bày theo đường trung có thể được chấp thuận; ông dùng việc dời đô làm ví dụ về nương quyền lực.",
+          "citationIds": ["citation-pbc-q42-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-42-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Lục tứ mềm thuận, ở gần bậc trên; lòng thành theo đường trung giúp việc lớn thành, làm lợi cho người trên và được tin cậy để ích lợi đến với thiên hạ.",
+          "citationIds": ["citation-ntt-q42-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy nói hào bốn mềm thuận mà ở vị trí không thích hợp; nếu giữ được đường trung thì có thể dắt việc lớn và làm lợi cho người trên.",
+          "citationIds": ["citation-ntt-q42-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-42-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Lòng thành của người đứng đầu làm lợi cho dân; sự tin cậy của dân xác nhận đức ấy trong lời giải.",
+          "citationIds": ["citation-nhl-q42-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-42-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Lòng nhân thành của người đứng đầu làm lợi cho dân và được dân tin kính đáp lại.",
+          "citationIds": ["citation-pbc-q42-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-42-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy đức cứng và trung chính của Cửu ngũ để giải rằng nhà vua thành tâm làm lợi cho thiên hạ; hào hai ứng hợp, nên việc tốt đến mức không cần hỏi bói.",
+          "citationIds": ["citation-ntt-q42-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Người trên làm lợi cho người dưới, họ đáp lại bằng sự tin cậy; vì vậy lời tốt không cần hỏi bói.",
+          "citationIds": ["citation-ntt-q42-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-42-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Ham lợi quá mức và thiếu bền chí khiến người ta mất sự giúp đỡ; phần liên hệ Hệ Từ vẫn là lời bàn, không phải phép bói.",
+          "citationIds": ["citation-nhl-q42-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-42-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Người cầu lợi mà không bền chí có thể mất sự giúp đỡ và gặp đòn; lời kết nhắc sự đầy quá dễ mất, khiêm nhường thì được thêm.",
+          "citationIds": ["citation-pbc-q42-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-42-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào trên theo đuổi lợi không giới hạn nên mất người giúp; cần đổi đường.",
+          "citationIds": ["citation-ntt-q42-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-42-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào trên tìm lợi không giới hạn nên mất người trợ giúp; lời răn là phải đổi ý.",
+          "citationIds": ["citation-ntt-q42-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "OpenCode Fixer",
+    "reviewedAt": "2026-10-04",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-pbc-q42-overview-classical-text",
+      "citation-ntt-q42-overview-classical-text",
+      "citation-nhl-q42-line-1-classical-text",
+      "citation-nhl-q42-line-2-classical-text",
+      "citation-nhl-q42-line-3-classical-text",
+      "citation-nhl-q42-line-4-classical-text",
+      "citation-nhl-q42-line-5-classical-text",
+      "citation-nhl-q42-line-6-classical-text",
+      "citation-pbc-q42-line-1-classical-text",
+      "citation-pbc-q42-line-2-classical-text",
+      "citation-pbc-q42-line-3-classical-text",
+      "citation-pbc-q42-line-4-classical-text",
+      "citation-pbc-q42-line-5-classical-text",
+      "citation-pbc-q42-line-6-classical-text",
+      "citation-ntt-q42-line-1-classical-text",
+      "citation-ntt-q42-line-2-classical-text",
+      "citation-ntt-q42-line-3-classical-text",
+      "citation-ntt-q42-line-4-classical-text",
+      "citation-ntt-q42-line-5-classical-text",
+      "citation-ntt-q42-line-6-classical-text",
+      "citation-nhl-q42-overview-nhl",
+      "citation-pbc-q42-overview-pbc",
+      "citation-ntt-q42-overview-trinh-di",
+      "citation-ntt-q42-overview-chu-hy",
+      "citation-ntt-q42-overview-tien-nho-chu-hy",
+      "citation-ntt-q42-note-1",
+      "citation-ntt-q42-note-2",
+      "citation-ntt-q42-note-3",
+      "citation-ntt-q42-note-4",
+      "citation-ntt-q42-note-5",
+      "citation-ntt-q42-note-6",
+      "citation-nhl-q42-line-1-nhl",
+      "citation-pbc-q42-line-1-pbc",
+      "citation-ntt-q42-line-1-trinh-di",
+      "citation-ntt-q42-line-1-chu-hy",
+      "citation-ntt-q42-line-1-tien-nho",
+      "citation-nhl-q42-line-2-nhl",
+      "citation-pbc-q42-line-2-pbc",
+      "citation-ntt-q42-line-2-trinh-di",
+      "citation-ntt-q42-line-2-chu-hy",
+      "citation-nhl-q42-line-3-nhl",
+      "citation-pbc-q42-line-3-pbc",
+      "citation-ntt-q42-line-3-trinh-di",
+      "citation-ntt-q42-line-3-chu-hy",
+      "citation-ntt-q42-line-3-chu-hy-tien-nho",
+      "citation-ntt-q42-line-3-y-xuyen",
+      "citation-nhl-q42-line-4-nhl",
+      "citation-pbc-q42-line-4-pbc",
+      "citation-ntt-q42-line-4-trinh-di",
+      "citation-ntt-q42-line-4-chu-hy",
+      "citation-nhl-q42-line-5-nhl",
+      "citation-pbc-q42-line-5-pbc",
+      "citation-ntt-q42-line-5-trinh-di",
+      "citation-ntt-q42-line-5-chu-hy",
+      "citation-nhl-q42-line-6-nhl",
+      "citation-pbc-q42-line-6-pbc",
+      "citation-ntt-q42-line-6-trinh-di",
+      "citation-ntt-q42-line-6-chu-hy"
+    ],
+    "note": "Đối chiếu nội dung tóm lược với các lớp văn bản, lời bàn, bổ sung và chú thích được ghi trong ma trận nguồn. Đây là ghi nhận đối chiếu nguồn, không phải phê duyệt chuyên gia độc lập, kiểm toán feat-078, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
+  }
+}

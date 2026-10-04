@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 172, "released": 172, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 1226, "missingCitationIds": [] },
-  "citations": { "total": 1015 },
+  "records": { "authored": 177, "released": 177, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 1395, "missingCitationIds": [] },
+  "citations": { "total": 1265 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 40,
+    "reviewed": 44,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -50,13 +50,13 @@
       "hexagram-37",
       "hexagram-38",
       "hexagram-39",
-      "hexagram-40"
-    ],
-    "missingIds": [
+      "hexagram-40",
       "hexagram-41",
       "hexagram-42",
       "hexagram-43",
-      "hexagram-44",
+      "hexagram-44"
+    ],
+    "missingIds": [
       "hexagram-45",
       "hexagram-46",
       "hexagram-47",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 240,
+    "reviewedPositions": 264,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 40,
-        "reviewedLinePositions": 240,
+        "overviewHexagrams": 44,
+        "reviewedLinePositions": 264,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 40,
-        "reviewedLinePositions": 240,
+        "overviewHexagrams": 44,
+        "reviewedLinePositions": 264,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 40,
-        "reviewedLinePositions": 240,
+        "overviewHexagrams": 44,
+        "reviewedLinePositions": 264,
         "missingPilotPositions": []
       }
     ]
@@ -181,7 +181,11 @@
         "hexagram-37",
         "hexagram-38",
         "hexagram-39",
-        "hexagram-40"
+        "hexagram-40",
+        "hexagram-41",
+        "hexagram-42",
+        "hexagram-43",
+        "hexagram-44"
       ]
     },
     {
@@ -229,7 +233,11 @@
         "hexagram-37",
         "hexagram-38",
         "hexagram-39",
-        "hexagram-40"
+        "hexagram-40",
+        "hexagram-41",
+        "hexagram-42",
+        "hexagram-43",
+        "hexagram-44"
       ]
     },
     {
@@ -381,7 +389,8 @@
         "term-year-authority",
         "article-year-authority-context",
         "term-hexagram-body",
-        "article-hexagram-body-context"
+        "article-hexagram-body-context",
+        "article-shi-ying-interaction-context"
       ]
     },
     {
@@ -1244,10 +1253,6 @@
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-41",
-      "hexagram-42",
-      "hexagram-43",
-      "hexagram-44",
       "hexagram-45",
       "hexagram-46",
       "hexagram-47",
@@ -1281,9 +1286,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2057,
+        "required": 2062,
         "current": 0,
-        "missing": 2057,
+        "missing": 2062,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1292,8 +1297,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 14 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 2057 },
-        { "code": "released-claim-coverage-incomplete", "count": 1226 }
+        { "code": "missing-decision", "count": 2062 },
+        { "code": "released-claim-coverage-incomplete", "count": 1395 }
       ]
     },
     "certification": {
@@ -1301,7 +1306,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2057,
+        "required": 2062,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

@@ -36,16 +36,46 @@ describe('book corpus publication boundary', () => {
       ).toBe(true);
     const report = coverageReport({ ...corpus, checked: checkCorpus(corpus) });
     expect(report.complete).toBe(false);
-    expect(report.hexagrams.reviewed).toBe(40);
-    expect(report.lines.reviewedPositions).toBe(240);
-    expect(report.hexagrams.missingIds).toHaveLength(24);
+    expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
+    expect(
+      corpus.records.find(record => record.id === 'article-shi-ying-interaction-context'),
+    ).toMatchObject({
+      review: { status: 'reviewed', method: 'source-comparison' },
+      claims: [
+        { id: 'article-shi-ying-interaction-context-ch06-12' },
+        { id: 'article-shi-ying-interaction-context-ch06-13' },
+        { id: 'article-shi-ying-interaction-context-ch06-14' },
+        { id: 'article-shi-ying-interaction-context-ch06-15' },
+        { id: 'article-shi-ying-interaction-context-ch06-16' },
+      ],
+    });
+    for (const hexagram of [41, 42, 43, 44]) {
+      const record = corpus.records.find(item => item.id === `hexagram-${hexagram}`);
+      expect(record.lines).toHaveLength(6);
+      expect(record.review.status).toBe('reviewed');
+      expect(record.claims.some(claim => claim.kind === 'structural-fact')).toBe(true);
+    }
+    expect(report.hexagrams.reviewed).toBe(44);
+    expect(report.records.released).toBe(177);
+    expect(report.lines.reviewedPositions).toBe(264);
+    expect(report.hexagrams.missingIds).toHaveLength(20);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({
-      overviewHexagrams: 40,
-      reviewedLinePositions: 240,
+      overviewHexagrams: 44,
+      reviewedLinePositions: 264,
     });
     expect(
       report.lines.byAuthor.find(row => row.author === 'Phan Bội Châu').missingPilotPositions,
     ).toHaveLength(0);
+  });
+
+  it('publishes Feature 044 hexagrams and migrates their stable IDs out of legacy content', () => {
+    for (const hexagram of [41, 42, 43, 44]) {
+      expect(corpus.manifest.releaseIds).toContain(`hexagram-${hexagram}`);
+      expect(
+        corpus.legacy.catalog.entities.some(entity => entity.id === `hexagram-${hexagram}`),
+      ).toBe(false);
+    }
+    expect(corpus.manifest.releaseIds).toContain('article-shi-ying-interaction-context');
   });
 
   it.each([

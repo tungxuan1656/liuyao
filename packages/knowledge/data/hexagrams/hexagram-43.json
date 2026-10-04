@@ -1,0 +1,615 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-43",
+  "type": "hexagram",
+  "title": "Trạch Thiên Quải",
+  "aliases": ["Quải"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-43-structure",
+      "kind": "structural-fact",
+      "text": "Trạch Thiên Quải có nội quái Càn và ngoại quái Đoài; sáu hào được ghi theo thứ tự từ dưới lên.",
+      "citationIds": [
+        "citation-pbc-q43-overview-classical-text",
+        "citation-ntt-q43-overview-classical-text",
+        "citation-nhl-q43-line-1-classical-text",
+        "citation-nhl-q43-line-2-classical-text",
+        "citation-nhl-q43-line-3-classical-text",
+        "citation-nhl-q43-line-4-classical-text",
+        "citation-nhl-q43-line-5-classical-text",
+        "citation-nhl-q43-line-6-classical-text",
+        "citation-pbc-q43-line-1-classical-text",
+        "citation-pbc-q43-line-2-classical-text",
+        "citation-pbc-q43-line-3-classical-text",
+        "citation-pbc-q43-line-4-classical-text",
+        "citation-pbc-q43-line-5-classical-text",
+        "citation-pbc-q43-line-6-classical-text",
+        "citation-ntt-q43-line-1-classical-text",
+        "citation-ntt-q43-line-2-classical-text",
+        "citation-ntt-q43-line-3-classical-text",
+        "citation-ntt-q43-line-4-classical-text",
+        "citation-ntt-q43-line-5-classical-text",
+        "citation-ntt-q43-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-43-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê giải Quải bằng hình ảnh đầm trên trời và năm dương đối diện một âm; ông nhấn mạnh công bố, cảnh giác, kiềm chế hơn là chỉ dùng sức.",
+      "citationIds": ["citation-nhl-q43-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Quải là quyết hoặc tách, rồi bàn việc công bố, chuẩn bị bên trong, dè chừng dùng sức và làm lợi cho phía dưới.",
+      "citationIds": ["citation-pbc-q43-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di nối Quải với Ích và giải đầm trên trời, năm dương đối diện một âm; quyết đoán vẫn cần thận trọng.",
+      "citationIds": ["citation-ntt-q43-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải tên Quải và đức của hai quái theo cách riêng, không nhập với Trình Di hay dị bản ở hào ba.",
+      "citationIds": ["citation-ntt-q43-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-ntt-q43-overview-tien-nho-chu-hy-quoted-as-tien-nho",
+      "kind": "author-interpretation",
+      "text": "Trong lời Tiên Nho dẫn, Chu Hy đáp rằng không lúc nào không cần răn giữ lo sợ; lời răn ấy không chỉ dành riêng cho lúc Âm tiêu Dương lớn.",
+      "citationIds": ["citation-ntt-q43-overview-tien-nho-chu-hy-quoted-as-tien-nho"],
+      "attribution": {
+        "author": "Chu Hy, được dẫn trong lời Tiên Nho",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-ntt-q43-overview-tien-nho-truong-trung-khe",
+      "kind": "author-interpretation",
+      "text": "Trương Trung Khê có cách đọc riêng về lời Tượng liên quan việc giữ đức và làm lợi cho phía dưới.",
+      "citationIds": ["citation-ntt-q43-overview-tien-nho-truong-trung-khe"],
+      "attribution": {
+        "author": "Trương Trung Khê",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-ntt-q43-overview-ho-van-phong",
+      "kind": "author-interpretation",
+      "text": "Hồ Vân Phong được dẫn riêng về năm hào dương đối diện một hào âm.",
+      "citationIds": ["citation-ntt-q43-overview-ho-van-phong"],
+      "attribution": {
+        "author": "Hồ Vân Phong",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-ntt-q43-overview-ly-long-son",
+      "kind": "author-interpretation",
+      "text": "Lý Long Sơn có lời bình riêng về câu nói đến giữ đức và điều kiêng; lời này được ghi riêng, không phân xử các cách đọc khác.",
+      "citationIds": ["citation-ntt-q43-overview-ly-long-son"],
+      "attribution": {
+        "author": "Lý Long Sơn",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-overview-ntt-q43-overview-ho-van-phong-great-image",
+      "kind": "author-interpretation",
+      "text": "Hồ Vân Phong có lời giải riêng cho câu về giữ đức và điều kiêng bên cạnh các cách giải khác; không gộp lời của ba tác giả.",
+      "citationIds": ["citation-ntt-q43-overview-ho-van-phong-great-image"],
+      "attribution": {
+        "author": "Hồ Vân Phong",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-43-note-1",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố dẫn cách giải chữ quải của Trình Di theo nghĩa quyết định hoặc tách mở.",
+      "citationIds": ["citation-ntt-q43-note-1"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-2",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố nhắc lại cách giải quải và chuỗi liên tưởng về nghĩa.",
+      "citationIds": ["citation-ntt-q43-note-2"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-3",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố ghi rằng Chu Hy đọc chữ ở lời quẻ là “hiệu”, nghĩa là gọi; trong lời hào, chữ cùng dạng được đọc là “hào”, nghĩa là kêu.",
+      "citationIds": ["citation-ntt-q43-note-3"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-4",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố nêu chuyện Thuấn và Miêu như một ví dụ trong lời bàn về chấm dứt sức mạnh và dùng biện pháp văn trị.",
+      "citationIds": ["citation-ntt-q43-note-4"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-5",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải từ “quyết” là tháo mở, như khơi cho nước thoát.",
+      "citationIds": ["citation-ntt-q43-note-5"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-6",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải cụm từ này là dương khí tăng trưởng.",
+      "citationIds": ["citation-ntt-q43-note-6"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-7",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố nói bản dịch theo Trình Di.",
+      "citationIds": ["citation-ntt-q43-note-7"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-8",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố dẫn cách đọc khác của câu về giữ đức và điều kiêng, quy cách đọc ấy cho Trương Trung Khê; lời dẫn không phân xử dị bản.",
+      "citationIds": ["citation-ntt-q43-note-8"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-9",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố ghi chú 9 nói hai chữ được đọc là “hiệu”, một chữ được đọc là “hào”.",
+      "citationIds": ["citation-ntt-q43-note-9"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    },
+    {
+      "id": "hexagram-43-note-10",
+      "kind": "author-interpretation",
+      "text": "Trong chú thích 10, Ngô Tất Tố cũng ghi hai chữ được đọc là “hiệu”, một chữ được đọc là “hào”.",
+      "citationIds": ["citation-ntt-q43-note-10"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-lake", "trigram-heaven"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yang", "yang", "yang", "yang", "yin"],
+    "kingWenNumber": 43,
+    "upperTrigramId": "trigram-lake",
+    "lowerTrigramId": "trigram-heaven",
+    "claimIds": ["hexagram-43-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-43-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào ở thấp chưa đủ chuẩn bị; không nên tiến chỉ vì nóng lòng khi thắng lợi chưa chắc.",
+          "citationIds": ["citation-nhl-q43-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-43-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào thấp nên chờ đủ sức và đúng thời; tính trước khi tiến khác với tiến khi chưa chuẩn bị.",
+          "citationIds": ["citation-pbc-q43-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-43-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào đầu mạnh nhưng thấp và nôn nóng; tiến trước khi đủ sức và đúng thời sẽ thành quá mức.",
+          "citationIds": ["citation-ntt-q43-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-43-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào đầu tự hăng hái tiến từ dưới; không nên hành động trước khi thời chung đã sẵn.",
+          "citationIds": ["citation-ntt-q43-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-43-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Cảnh giác và báo cho mọi người chuẩn bị khiến nguy cơ bị đánh bất ngờ ban đêm bớt đáng ngại.",
+          "citationIds": ["citation-nhl-q43-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-43-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào hai cần cảnh giác và gọi mọi người cùng phòng bị; nhờ sẵn sàng mà biến cố đêm không nhất thiết gây lo.",
+          "citationIds": ["citation-pbc-q43-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-43-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Sợ nguy và chuẩn bị giúp hào hai đối phó cuộc đánh ban đêm mà không lo; biết thời quan trọng hơn vẻ ngoài của vị trí.",
+          "citationIds": ["citation-ntt-q43-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-43-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Hào hai cần giữ cảnh giác và chuẩn bị; sự trung vị giúp phân biệt phòng bị với dùng sức liều lĩnh.",
+          "citationIds": ["citation-ntt-q43-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-43-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Ông nói cụm mở đầu khó hiểu và sách giải khác nhau; cách ông đọc sự kết giao riêng với hào trên là một cách giải, không phải nghĩa chữ đã xác định.",
+          "citationIds": ["citation-nhl-q43-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Nguyễn Hiến Lê ghi cụm mở đầu khó hiểu và nêu các cách giải khác nhau; phần đọc tiếp theo là cách giải của riêng ông."
+          ]
+        },
+        {
+          "id": "hexagram-43-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Ông diễn giải hình ảnh mặt, sự riêng tư với hào âm trên và việc dứt bỏ; giữ cách đọc và ví dụ của ông, không chuẩn hóa dị bản.",
+          "citationIds": ["citation-pbc-q43-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-43-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di nói văn hào bị sai, thuật lại cách sắp chữ của Hổ An Định nhưng cho là chưa ổn, rồi nêu một đề nghị khác; không chọn một bản chữ.",
+          "citationIds": ["citation-ntt-q43-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Trình Di thuật lại hai đề nghị sửa văn; ảnh hiện có chưa xác nhận được chữ Hán cạnh tranh. Không chọn hoặc chuẩn hóa dị bản."
+          ]
+        },
+        {
+          "id": "hexagram-43-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải chữ Cưu là gò má và diễn giải cách đọc được in; điều này không xác nhận văn bản đã được hiệu chỉnh.",
+          "citationIds": ["citation-ntt-q43-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách Chu Hy giải bản văn được in; không dùng làm bằng chứng xác nhận một dị bản đã chuẩn hóa."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-43-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào bốn không vững và tiến khó; theo người khác thay vì dẫn đầu có thể tránh hối, nếu chịu nghe lời.",
+          "citationIds": ["citation-nhl-q43-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-43-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào bốn ngồi không yên và tiến khó; theo nhóm có thể tránh hối nhưng lời cảnh báo nói rằng khuyên bảo có thể không được tin.",
+          "citationIds": ["citation-pbc-q43-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-43-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Hào cứng ở vị trí không thuận, tiến không vững; theo nhóm và nghe lời mới có thể tránh hối.",
+          "citationIds": ["citation-ntt-q43-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-43-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy nói Cửu tứ ở ngôi không thích hợp, lòng không yên và khó tiến; nếu chịu theo hào dương phía trước thì có thể tránh hối, như dê để người khác đi trước và mình theo sau.",
+          "citationIds": ["citation-ntt-q43-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-43-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Hình ảnh cỏ nước chỉ hào âm gần bên; cần dứt sự dựa dẫm ấy và giữ đường giữa theo cách giải của tác giả.",
+          "citationIds": ["citation-nhl-q43-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-43-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Cỏ nước là hào âm gần; cần quyết định tách khỏi sự liên hệ ấy và giữ đường giữa.",
+          "citationIds": ["citation-pbc-q43-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-43-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Người đứng giữa gần hào âm nhưng cần quyết dứt khỏi nó; hình ảnh cỏ nước nhấn mạnh quyết tâm trong đường giữa.",
+          "citationIds": ["citation-ntt-q43-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-43-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy mượn rau sam để nói việc xử lý hào âm phải giữ đường giữa, không làm quá mức.",
+          "citationIds": ["citation-ntt-q43-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-43-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Hào âm cô độc ở trên không có người cứu giúp; đây là hình ảnh cổ, không phải dự báo cho cá nhân hiện đại.",
+          "citationIds": ["citation-nhl-q43-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          }
+        },
+        {
+          "id": "hexagram-43-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Hào âm cuối không gọi được người giúp và có kết cục xấu theo lời hào; giữ đây là lời cổ được PBC trình bày.",
+          "citationIds": ["citation-pbc-q43-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          }
+        },
+        {
+          "id": "hexagram-43-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Dương đã đến cực mạnh, hào âm cuối khó giữ ngôi; lời đoán được giải trong thời thế chính trị cổ.",
+          "citationIds": ["citation-ntt-q43-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-43-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Trong Bản nghĩa, Chu Hy giải hào âm mềm ở thời cùng cực, đảng loại đã hết nên không còn ai để kêu, cuối cùng gặp hung. Ông giữ lời này theo điều kiện của người xem: nếu người xem giữ đạo quân tử, phía đối địch gặp hung; nếu không thì ngược lại.",
+          "citationIds": ["citation-ntt-q43-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải cổ của Chu Hy; không đọc như dự báo cho cá nhân hiện đại."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "OpenCode Fixer",
+    "reviewedAt": "2026-10-04",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-pbc-q43-overview-classical-text",
+      "citation-ntt-q43-overview-classical-text",
+      "citation-nhl-q43-line-1-classical-text",
+      "citation-nhl-q43-line-2-classical-text",
+      "citation-nhl-q43-line-3-classical-text",
+      "citation-nhl-q43-line-4-classical-text",
+      "citation-nhl-q43-line-5-classical-text",
+      "citation-nhl-q43-line-6-classical-text",
+      "citation-pbc-q43-line-1-classical-text",
+      "citation-pbc-q43-line-2-classical-text",
+      "citation-pbc-q43-line-3-classical-text",
+      "citation-pbc-q43-line-4-classical-text",
+      "citation-pbc-q43-line-5-classical-text",
+      "citation-pbc-q43-line-6-classical-text",
+      "citation-ntt-q43-line-1-classical-text",
+      "citation-ntt-q43-line-2-classical-text",
+      "citation-ntt-q43-line-3-classical-text",
+      "citation-ntt-q43-line-4-classical-text",
+      "citation-ntt-q43-line-5-classical-text",
+      "citation-ntt-q43-line-6-classical-text",
+      "citation-nhl-q43-overview-nhl",
+      "citation-pbc-q43-overview-pbc",
+      "citation-ntt-q43-overview-trinh-di",
+      "citation-ntt-q43-overview-chu-hy",
+      "citation-ntt-q43-overview-tien-nho-chu-hy-quoted-as-tien-nho",
+      "citation-ntt-q43-overview-tien-nho-truong-trung-khe",
+      "citation-ntt-q43-overview-ho-van-phong",
+      "citation-ntt-q43-overview-ly-long-son",
+      "citation-ntt-q43-overview-ho-van-phong-great-image",
+      "citation-ntt-q43-note-1",
+      "citation-ntt-q43-note-2",
+      "citation-ntt-q43-note-3",
+      "citation-ntt-q43-note-4",
+      "citation-ntt-q43-note-5",
+      "citation-ntt-q43-note-6",
+      "citation-ntt-q43-note-7",
+      "citation-ntt-q43-note-8",
+      "citation-ntt-q43-note-9",
+      "citation-ntt-q43-note-10",
+      "citation-nhl-q43-line-1-nhl",
+      "citation-pbc-q43-line-1-pbc",
+      "citation-ntt-q43-line-1-trinh-di",
+      "citation-ntt-q43-line-1-chu-hy",
+      "citation-nhl-q43-line-2-nhl",
+      "citation-pbc-q43-line-2-pbc",
+      "citation-ntt-q43-line-2-trinh-di",
+      "citation-ntt-q43-line-2-chu-hy",
+      "citation-nhl-q43-line-3-nhl",
+      "citation-pbc-q43-line-3-pbc",
+      "citation-ntt-q43-line-3-trinh-di",
+      "citation-ntt-q43-line-3-chu-hy",
+      "citation-nhl-q43-line-4-nhl",
+      "citation-pbc-q43-line-4-pbc",
+      "citation-ntt-q43-line-4-trinh-di",
+      "citation-ntt-q43-line-4-chu-hy",
+      "citation-nhl-q43-line-5-nhl",
+      "citation-pbc-q43-line-5-pbc",
+      "citation-ntt-q43-line-5-trinh-di",
+      "citation-ntt-q43-line-5-chu-hy",
+      "citation-nhl-q43-line-6-nhl",
+      "citation-pbc-q43-line-6-pbc",
+      "citation-ntt-q43-line-6-trinh-di",
+      "citation-ntt-q43-line-6-chu-hy"
+    ],
+    "note": "Đối chiếu nội dung tóm lược với các lớp văn bản, lời bàn, bổ sung và chú thích được ghi trong ma trận nguồn. Đây là ghi nhận đối chiếu nguồn, không phải phê duyệt chuyên gia độc lập, kiểm toán feat-078, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
+  }
+}
