@@ -1,14 +1,14 @@
-# feat-095 — Obtain independent specialist review of the full corpus
+# feat-095 — Verify the full corpus with AI models
 
 ## Goal
 
-Obtain explicit independent approval for the reviewed snapshot.
+Obtain explicit AI verification approval for the reviewed snapshot.
 
 ## Scope
 
 **Intended work:**
 
-- A named Liu Yao/Kinh Dịch reviewer, distinct from Codex source comparison, and the frozen audit snapshot.
+- Separate AI review runs and the frozen audit snapshot under the [verification policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence).
 
 ## Non-goals
 
@@ -18,9 +18,10 @@ New interpretation, calendar, or UI behavior.
 
 - [ ] All 64 quẻ and 384 positions, with three-book cells and actual commentator layers.
 - [ ] Every foundation, table, application, tradition, lesson, and exclusion ledger.
-- [ ] Record reviewer identity, role, date, scope, hashes, findings, and explicit unit-level decisions.
+- [ ] Record model provider, model ID, review-run identity, role, date, scope, hashes, findings, and explicit unit-level decisions.
 - [ ] Resolve rejected units and repeat affected reviews before approval.
-- [ ] If no specialist is available, leave acceptance open; never substitute another Codex pass.
+- [ ] AI review passes are separate from authoring and source comparison; a different model and human specialist review are optional.
+- [ ] Missing review remains pending; model names, automated tests, and synthetic approvals do not establish actual verification.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -31,9 +32,9 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Freeze the completed audit snapshot and identify the specialist reviewer.
-2. Record the returned unit decisions and resolve rejected findings.
-3. Obtain explicit approval for the corrected snapshot, verify, and record the handoff.
+1. Freeze the completed audit snapshot and identify the AI reviewer model and review run.
+2. Review supplied passages and current inputs, record unit decisions, and resolve rejected findings.
+3. Obtain explicit verification approval for the corrected snapshot, verify, and record the handoff.
 
 ## Verify
 

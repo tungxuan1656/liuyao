@@ -420,7 +420,7 @@ describe('evidence-derived audit gates', () => {
     expect(malformed.errors.join('\n')).toMatch(/Malformed audit certification/);
   });
 
-  it('opens source review with complete source evidence before specialist approval', async () => {
+  it('opens completion after separate AI review without human specialist approval', async () => {
     const { context } = auditContext();
     const { registry, ledgerState, certification } = await completeValidatedSyntheticAudit(context);
     const gates = evaluateAuditGates({ registry, ledgerState, context, certification });
@@ -433,6 +433,19 @@ describe('evidence-derived audit gates', () => {
     expect(gates.totals.releasedClaimsCovered).toBe(0);
 
     const approved = await approveSyntheticDecisions(ledgerState);
+    for (const { decision } of approved) {
+      decision.specialistReview.reviewerName = 'fixture-provider/fixture-model (review-run-2)';
+      decision.specialistReview.reviewerRole = 'AI verification reviewer';
+      decision.specialistReview.note = 'Synthetic separate AI review; no human approval.';
+    }
+    expect(
+      validateLedgerSchema({
+        schemaVersion: 1,
+        ledgerId: 'ledger-ai-fixture',
+        scope: { kind: 'hexagram', id: 'hexagram-01' },
+        decisions: [approved[0].decision],
+      }).valid,
+    ).toBe(true);
     const approvedState = { ...ledgerState, current: approved };
     approvedState.decisionSetSha256 = createHash('sha256')
       .update(JSON.stringify(canonicalize(approved.map(item => item.decision))))
@@ -443,6 +456,9 @@ describe('evidence-derived audit gates', () => {
       registry,
       approvedState,
     );
+    certificationForApproved.specialistReview.reviewerName =
+      'fixture-provider/fixture-model (certification-run-3)';
+    certificationForApproved.specialistReview.reviewerRole = 'AI verification coordinator';
     expect(validateCertificationSchema(certificationForApproved).valid).toBe(true);
     const approvedGates = evaluateAuditGates({
       registry,

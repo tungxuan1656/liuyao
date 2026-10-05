@@ -62,7 +62,7 @@ If baseline verification fails, record the failure. Fix it only when the current
 - Follow dependency and change-placement boundaries in `ARCHITECTURE.md`.
 - Follow test-placement and verification policy in `docs/development.md`.
 - Follow licensing boundaries in `LICENSING.md`.
-- Knowledge authoring follows the [publication gate](docs/product-specs/knowledge-quality.md#publication-gate); corpus-wide specialist review and certification do not block sequential authoring.
+- Knowledge authoring follows the [publication gate](docs/product-specs/knowledge-quality.md#publication-gate); corpus-wide verification and certification do not block sequential authoring.
 - Treat future behavior as `Intended` or `Proposed`; never present it as implemented.
 - Treat `.agents/skills/` as installed tooling during product work unless the user asks to maintain skills.
 - Update `init.sh` when repository verification commands or declared workspaces change.
