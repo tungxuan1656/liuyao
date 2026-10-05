@@ -45,9 +45,13 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Decision log
+
+- The user authorized raising the Workbox file-size rule above 2 MiB after the integrated asset measured 2,615,592 bytes and exceeded the existing 2,424,832-byte ceiling. The cap is now 2,686,976 bytes (2 MiB + 576 KiB), leaving 71,384 bytes of headroom. This is the smallest 64-KiB-aligned value that accommodates the measured asset with at least 64 KiB reserved. Only the cap and matching comment changed; precaching and all other PWA behavior remain unchanged. This approval applies to feat-047 and does not establish a ceiling for later batches.
+
 ## Handoff
 
-- State: active on `feat/047-reviewed-que-53-56-bpct-33-40`; implementation in progress.
-- Evidence: Selected after feat-046 merged to `main` at `eb862ff2c5a734dbb8306a7258e1c93b6b5eda16`. Dependencies are satisfied; source review and delivery gates remain.
+- State: active on `feat/047-reviewed-que-53-56-bpct-33-40`; source authoring and integration are committed at `78eccf4a2830f63fa2ea69d3fe8acdc8372ca6f3`.
+- Evidence: `./init.sh` passed with 472 tests; `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passed with 192 records, 2,017 claims and 2,123 citations. Exact-head independent review and publication remain.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Review source passages and author the four quẻ plus BPCT sentences 33–40, then run required gates.
+- Next: Complete independent review, address findings, then publish one PR and verify exact-head CI before merge.
