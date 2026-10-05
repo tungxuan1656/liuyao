@@ -17,15 +17,15 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Quẻ 49: all six positions and each supplied commentary layer.
-- [ ] Quẻ 50: all six positions and each supplied commentary layer.
-- [ ] Quẻ 51: all six positions and each supplied commentary layer.
-- [ ] Quẻ 52: all six positions and each supplied commentary layer.
-- [ ] BPCT sentences 25–32: each numbered passage and its notes.
-- [ ] Replace the four legacy quẻ without changing stable IDs.
-- [ ] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Quẻ 49: all six positions and each supplied commentary layer.
+- [x] Quẻ 50: all six positions and each supplied commentary layer.
+- [x] Quẻ 51: all six positions and each supplied commentary layer.
+- [x] Quẻ 52: all six positions and each supplied commentary layer.
+- [x] BPCT sentences 25–32: each numbered passage and its notes.
+- [x] Replace the four legacy quẻ without changing stable IDs.
+- [x] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
+- [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -55,7 +55,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: implementation and local acceptance complete on `feat/046-reviewed-que-49-52-bpct-25-32` at `1f930f28633679fd646a8722c1cff4348b2208be`; independent review and delivery remain.
-- Evidence: Classical source component `0b07f981c700d89e4266d129d156e96409c65113` and BPCT component `89f18817a1f5a4f5b12b0890e8b3a50dd6e95385` report direct fingerprinted passage/image review. Integration `1f930f2` passed final `./init.sh` (461 tests) and `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` (187 records, 1,806 claims, 1,833 citations). Integration report: `feat-046-integration.md` in the session artifact store. Existing React-refresh, source-map, unresolved-font, and large-chunk warnings remain; direct browser/offline checks were not run. Source-review/certification gates remain separate and closed.
+- State: done; PR #73 merged to `main` at `eb862ff2c5a734dbb8306a7258e1c93b6b5eda16`.
+- Evidence: Final PR head `41e05a511de004390c5d56fbc34e310c10321e8d` passed GitHub `verify`, Cloudflare Pages, and GitGuardian. Fresh independent review returned `Merge verdict: OK with notes`, with no P0/P1/P2 findings. `./init.sh` passed format, lint/length, typecheck, build, package exports, and 461 tests. `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passed with 187 records, 1,806 claims, and 1,833 citations. Review report: `feat-046-independent-review.md` in the session artifact store. The approved 2,424,832-byte PWA cap leaves 76,516 bytes for the measured asset. Four Fast Refresh, five source-map, sixteen font-reference, and large-chunk warnings remain; no direct browser/offline check was run. Corpus-wide review and certification remain separate and closed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Obtain fresh independent review of the exact complete branch head; fix valid findings in new commits and repeat required checks/review.
+- Next: Activate feat-047 on a new branch from updated `main`; continue the selected range in dependency order.

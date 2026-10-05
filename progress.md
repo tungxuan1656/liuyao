@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-05 — feat-046 merged
+
+**State**: done and merged to `main` in PR #73 at `eb862ff2c5a734dbb8306a7258e1c93b6b5eda16`.
+**Done**: Added source-compared commentary for quẻ 49–52 and BPCT chapter 6 sentences 25–32, including citations, attribution, notes, discrepancies, legacy retirement, inventory routes, focused tests, and generated outputs. Applied the explicitly approved Workbox limit/comment change.
+**Evidence**: Final PR head `41e05a511de004390c5d56fbc34e310c10321e8d` passed GitHub `verify`, Cloudflare Pages, and GitGuardian. Independent review: `Merge verdict: OK with notes`, no P0/P1/P2 findings. `./init.sh` passed with 461 tests; corpus `--check-books --check` passed with 187 records, 1,806 claims, and 1,833 citations. See [feat-046](features/feat-046.md).
+**Blockers**: none for feat-046. Corpus-wide specialist audit/verification and certification remain separate open gates.
+**Next**: Continue with selected feat-047 from updated `main`.
+
 ## 2026-10-05 — feat-045 merged
 
 **State**: done and merged to `main` in PR #72 at `7e54934af4520ad897fdbb5bdd701053e6e7320f`.
