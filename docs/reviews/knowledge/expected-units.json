@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 1,
+  "registryRevision": 2,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "5ada1f8b41d97fe5f672144ce2b9da8da5fe85617fe5d821727fca3465cf3dc4"
+    "sha256": "7a50cff915f773f124bbf32a04f844cd804663e9645886f246fd6fe6beccbbec"
   },
   "counts": {
     "overviewCells": 192,
@@ -166,6 +166,21 @@
       "sourceAnchor": {
         "inventoryAnchor": "NHL     |",
         "citationIds": []
+      },
+      "rosterStatus": "unresolved"
+    },
+    {
+      "id": "layer-ntt-supplement",
+      "editionId": "edition-ntt-supplied",
+      "class": "supplement",
+      "label": "Named Tiên Nho supplement",
+      "sourceAnchor": {
+        "inventoryAnchor": "Selected citation metadata for NTT Quẻ 41 PDF 648",
+        "citationIds": [
+          "citation-ntt-q41-line-5-tien-nho",
+          "citation-ntt-q43-overview-tien-nho-chu-hy-quoted-as-tien-nho",
+          "citation-ntt-q44-line-6-ly-long-son"
+        ]
       },
       "rosterStatus": "unresolved"
     }
@@ -2253,7 +2268,8 @@
             "layer-ntt-original-text",
             "layer-ntt-translation",
             "layer-ntt-commentator",
-            "layer-ntt-translator-note"
+            "layer-ntt-translator-note",
+            "layer-ntt-supplement"
           ]
         },
         {
@@ -2304,7 +2320,8 @@
             "layer-ntt-original-text",
             "layer-ntt-translation",
             "layer-ntt-commentator",
-            "layer-ntt-translator-note"
+            "layer-ntt-translator-note",
+            "layer-ntt-supplement"
           ]
         },
         {
@@ -2355,7 +2372,8 @@
             "layer-ntt-original-text",
             "layer-ntt-translation",
             "layer-ntt-commentator",
-            "layer-ntt-translator-note"
+            "layer-ntt-translator-note",
+            "layer-ntt-supplement"
           ]
         },
         {
@@ -2406,7 +2424,8 @@
             "layer-ntt-original-text",
             "layer-ntt-translation",
             "layer-ntt-commentator",
-            "layer-ntt-translator-note"
+            "layer-ntt-translator-note",
+            "layer-ntt-supplement"
           ]
         },
         {

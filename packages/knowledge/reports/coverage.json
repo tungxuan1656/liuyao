@@ -4,8 +4,8 @@
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
   "records": { "authored": 177, "released": 177, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 1395, "missingCitationIds": [] },
-  "citations": { "total": 1265 },
+  "claims": { "total": 1428, "missingCitationIds": [] },
+  "citations": { "total": 1286 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 44,
@@ -1287,18 +1287,18 @@
       "status": "closed",
       "counts": {
         "required": 2062,
-        "current": 0,
-        "missing": 2062,
+        "current": 84,
+        "missing": 1978,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
         "unresolved": 0
       },
       "reasons": [
-        { "code": "unresolved-layer-roster", "count": 14 },
+        { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 2062 },
-        { "code": "released-claim-coverage-incomplete", "count": 1395 }
+        { "code": "missing-decision", "count": 1978 },
+        { "code": "released-claim-coverage-incomplete", "count": 1231 }
       ]
     },
     "certification": {
@@ -1311,9 +1311,13 @@
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
-        "unresolved": 0
+        "unresolved": 84
       },
-      "reasons": [{ "code": "certification-absent", "count": 1 }]
+      "reasons": [
+        { "code": "source-compared-without-specialist-approval", "count": 84 },
+        { "code": "certification-absent", "count": 1 },
+        { "code": "specialist-review-pending", "count": 84 }
+      ]
     }
   }
 }

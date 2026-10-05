@@ -36,6 +36,36 @@ function expectLineClaim(record: (typeof records)[number], position: number, id:
 }
 
 describe('batch eleven classical source corrections', () => {
+  it('integrates every proposed overview citation for hexagrams 41–44', () => {
+    const proposedIds = [
+      'citation-nhl-q41-overview-classical-text',
+      'citation-nhl-q41-overview-closing',
+      'citation-pbc-q41-overview-dai-tuong-pbc',
+      'citation-pbc-q41-overview-dai-tuong-classical-text',
+      'citation-pbc-q41-overview-phu-chu',
+      'citation-ntt-q41-overview-tien-nho-uong-nghien-chuong',
+      'citation-ntt-q41-overview-dai-tuong-classical-text',
+      'citation-ntt-q41-overview-dai-tuong-trinh-di',
+      'citation-ntt-q41-overview-dai-tuong-chu-hy',
+      'citation-nhl-q42-overview-classical-text',
+      'citation-pbc-q42-overview-tuong-classical',
+      'citation-pbc-q42-overview-tuong-pbc',
+      'citation-nhl-q43-overview-classical-text',
+      'citation-nhl-q43-overview-quai-phuc-comparison',
+      'citation-ntt-q43-overview-hang-binh-am',
+      'citation-nhl-q44-overview-nhl-closing-summary',
+      'citation-pbc-q44-overview-thoan-classical-text',
+      'citation-pbc-q44-overview-thoan-pbc',
+      'citation-pbc-q44-overview-dai-tuong-classical-text',
+      'citation-pbc-q44-overview-dai-tuong-pbc',
+      'citation-pbc-q44-overview-thay-thieu',
+    ];
+
+    expect(citations.citations).toHaveLength(261);
+    expect(new Set(citations.citations.map(item => item.id)).size).toBe(261);
+    for (const id of proposedIds) expect(citation(id).id).toBe(id);
+  });
+
   it('retains six populated line positions for each new hexagram and all 64 compatibility entries', () => {
     for (const record of records) {
       expect(record.lines.map(line => line.position)).toEqual([1, 2, 3, 4, 5, 6]);
@@ -63,7 +93,7 @@ describe('batch eleven classical source corrections', () => {
     expect(line5.citationIds).toContain('citation-ntt-q42-line-5-trinh-di');
     expect(citation('citation-ntt-q42-line-5-trinh-di').location).toMatchObject({
       pdfPageStart: 663,
-      pdfPageEnd: 665,
+      pdfPageEnd: 664,
     });
   });
 
@@ -81,7 +111,7 @@ describe('batch eleven classical source corrections', () => {
     expect(line5.citationIds).toContain('citation-ntt-q43-line-5-chu-hy');
     expect(citation('citation-ntt-q43-line-5-chu-hy').location).toMatchObject({
       pdfPageStart: 679,
-      pdfPageEnd: 681,
+      pdfPageEnd: 680,
     });
 
     const line6 = expectLineClaim(hexagram43, 6, 'hexagram-43-line-6-chu-hy');
@@ -166,9 +196,9 @@ describe('batch eleven classical source corrections', () => {
     });
   });
 
-  it('matches the printed labels on all 52 NHL citations to their inspected PDF pages', () => {
+  it('matches the printed labels on all 58 NHL citations to their inspected PDF pages', () => {
     const nhlCitations = citations.citations.filter(item => item.sourceId === 'source-book-nhl');
-    expect(nhlCitations).toHaveLength(52);
+    expect(nhlCitations).toHaveLength(58);
     for (const item of nhlCitations) {
       expect(item.location.printedPageStart).toBe(String(item.location.pdfPageStart));
       expect(item.location.printedPageEnd).toBe(String(item.location.pdfPageEnd));

@@ -35,6 +35,18 @@ describe('book corpus publication boundary', () => {
         `${record.id}: ${ajv.errorsText(validators.record.errors)}`,
       ).toBe(true);
     const report = coverageReport({ ...corpus, checked: checkCorpus(corpus) });
+    const claimCount = corpus.records.reduce(
+      (total, record) =>
+        total +
+        record.claims.length +
+        (record.lines ?? []).reduce((lineTotal, line) => lineTotal + line.claims.length, 0) +
+        (record.specialPassages ?? []).reduce(
+          (passageTotal, passage) => passageTotal + passage.claims.length,
+          0,
+        ),
+      0,
+    );
+    expect(claimCount).toBe(1428);
     expect(report.complete).toBe(false);
     expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
     expect(
