@@ -29,7 +29,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Limits
 
-Following the precedents in `feat-044` and `progress.md`, corpus-wide specialist review, rights clearance, and certification remain open in the broader audit track (`feat-078`, `feat-095`, `feat-096`); they do not block this authoring batch. This batch authors original Vietnamese summaries and structured facts without claiming full rights clearance or redistributing source books.
+This batch follows the [publication gate](../docs/product-specs/knowledge-quality.md#publication-gate). Corpus-wide specialist review and certification do not block authoring. This batch produces original Vietnamese summaries and structured facts without redistributing source books.
 
 ## Relevant docs
 

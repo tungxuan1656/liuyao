@@ -37,8 +37,7 @@ Every published domain claim needs:
 - a printed page when the edition provides one;
 - the applicable ruleset for a calculation claim;
 - attribution for commentary, translator notes, or supplementary content;
-- the original summary's author or review record;
-- documented content usage rights under [Licensing](../../LICENSING.md) (or research-only attribution with original non-infringing summaries during authoring phases).
+- the original summary's author or review record.
 
 A source title alone does not establish a claim.
 A project implementation establishes current behavior, not independent doctrinal evidence.
@@ -49,12 +48,12 @@ Project conventions require an accepted specification section and reviewed revis
 
 The JSON corpus encodes these content review states. They are separate from Harness feature statuses.
 
-| State        | Meaning                                            | Publication                                           |
-| ------------ | -------------------------------------------------- | ----------------------------------------------------- |
-| `draft`      | Passage located and claim extracted                | Keep outside released knowledge.                      |
-| `reviewed`   | Passage, attribution, and expected meaning checked | Eligible when rights and structural checks also pass. |
-| `disputed`   | A source conflict lacks a supported resolution     | Withhold the claim from calculation authority.        |
-| `superseded` | A reviewed replacement exists                      | Retain the replacement route in review history.       |
+| State        | Meaning                                            | Publication                                     |
+| ------------ | -------------------------------------------------- | ----------------------------------------------- |
+| `draft`      | Passage located and claim extracted                | Keep outside released knowledge.                |
+| `reviewed`   | Passage, attribution, and expected meaning checked | Eligible when structural checks also pass.      |
+| `disputed`   | A source conflict lacks a supported resolution     | Withhold the claim from calculation authority.  |
+| `superseded` | A reviewed replacement exists                      | Retain the replacement route in review history. |
 
 Record source review in each authored JSON record.
 The release manifest accepts reviewed records only.
@@ -204,8 +203,8 @@ The books alone do not select those software conventions.
 
 ## Publication gate
 
-Publish a content change only after its provenance, rights, structural validation, and domain review pass.
+Publish a content change only after its provenance, structural validation, and domain review pass.
 Release acceptance remains in [V1 MVP](v1-mvp.md).
 When the edition, rule, or explanation changes, repeat the affected evidence review.
 
-For iterative authoring features, claims pass the publication gate when they are derived as original Vietnamese summaries and structured facts with verified citations. Corpus-wide specialist review, rights clearance, and certification remain open in dedicated audit tracks (e.g., feat-078, feat-095, feat-096) and do not block batch authoring.
+Iterative authoring produces original Vietnamese summaries and structured facts with verified citations; every batch must pass the checks above. Domain review checks passages, attribution, and expected meaning; it does not claim independent specialist approval. Corpus-wide specialist review and certification remain separate in [feat-095](../../features/feat-095.md) and [feat-096](../../features/feat-096.md). They do not block batch authoring. [Licensing](../../LICENSING.md#third-party-material) defines source-use boundaries without a separate rights-clearance gate.
