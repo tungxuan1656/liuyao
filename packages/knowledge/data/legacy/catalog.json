@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-49",
-        "name": "Trạch Hỏa Cách",
-        "aliases": [],
-        "explanation": "Quẻ số 49 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Đoài.",
-        "kingWenNumber": 49,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-50",
-        "name": "Hỏa Phong Đỉnh",
-        "aliases": [],
-        "explanation": "Quẻ số 50 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Ly.",
-        "kingWenNumber": 50,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-51",
-        "name": "Thuần Chấn",
-        "aliases": [],
-        "explanation": "Quẻ số 51 theo thứ tự Văn Vương, gồm nội quái Chấn và ngoại quái Chấn.",
-        "kingWenNumber": 51,
-        "upperTrigramId": "trigram-thunder",
-        "lowerTrigramId": "trigram-thunder",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-52",
-        "name": "Thuần Cấn",
-        "aliases": [],
-        "explanation": "Quẻ số 52 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Cấn.",
-        "kingWenNumber": 52,
-        "upperTrigramId": "trigram-mountain",
-        "lowerTrigramId": "trigram-mountain",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-53",
         "name": "Phong Sơn Tiệm",
         "aliases": [],

@@ -27,7 +27,9 @@
     "citations/batch-eleven-hexagrams.json",
     "citations/batch-eleven-advanced.json",
     "citations/batch-twelve-hexagrams.json",
-    "citations/batch-twelve-advanced.json"
+    "citations/batch-twelve-advanced.json",
+    "citations/batch-thirteen-hexagrams.json",
+    "citations/batch-thirteen-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -211,7 +213,12 @@
     "hexagrams/hexagram-46.json",
     "hexagrams/hexagram-47.json",
     "hexagrams/hexagram-48.json",
-    "liuyao/useful-spirit-rescue-empty-combination-context.json"
+    "liuyao/useful-spirit-rescue-empty-combination-context.json",
+    "hexagrams/hexagram-49.json",
+    "hexagrams/hexagram-50.json",
+    "hexagrams/hexagram-51.json",
+    "hexagrams/hexagram-52.json",
+    "liuyao/hidden-movement-store-strength-and-branch-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -395,7 +402,12 @@
     "hexagram-46",
     "hexagram-47",
     "hexagram-48",
-    "article-useful-spirit-rescue-empty-combination-context"
+    "article-useful-spirit-rescue-empty-combination-context",
+    "hexagram-49",
+    "hexagram-50",
+    "hexagram-51",
+    "hexagram-52",
+    "article-hidden-movement-store-strength-and-branch-context"
   ],
   "topics": [
     {
@@ -455,8 +467,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-49", "hexagram-50", "hexagram-51", "hexagram-52"],
+    "hexagramIds": ["hexagram-53", "hexagram-54", "hexagram-55", "hexagram-56"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến tiếp tục Cách, Đỉnh, Chấn, Cấn và BPCT Phần I, Chương 6, câu 25–32. Bốn mươi tám quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 17–24 giữ riêng phú, bình giải và chú thích 4. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
+    "note": "Dự kiến tiếp tục Tiệm, Quy Muội, Phong, Lữ và BPCT Phần I, Chương 6, câu 33–40. Năm mươi hai quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 25–32 giữ riêng phú, bình giải và chú thích 5–6. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
   }
 }

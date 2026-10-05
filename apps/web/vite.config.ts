@@ -57,8 +57,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // The reviewed knowledge bundle slightly exceeds Workbox's default 2 MiB.
-        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024 + 64 * 1024,
+        // Keep the 52-quẻ reviewed bundle precached within a bounded 2 MiB + 320 KiB cap.
+        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024 + 320 * 1024,
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
         cleanupOutdatedCaches: true,
         clientsClaim: false,

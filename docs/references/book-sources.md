@@ -169,12 +169,12 @@ Their explanations do not automatically establish Na Jia, palace, or interpretat
 
 The source-section inspection also confirmed these edition locators:
 
-| Key    | Location                                        | Finding                                                                                                                                                                                                          |
-| ------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `PBC`  | Contents PDF 4; Cấn / canonical quẻ 52, PDF 493 | The contents lists Thuần Chấn and Thuần Cấn as quẻ 51, then Tiệm as 53. The body also labels Cấn as 51. Keep the source label and map the body section to canonical `hexagram-52`; quẻ 52 is present.            |
-| `NHL`  | Contents PDF 4–9; Ký Tế/Vị Tế, PDF 328/331      | The contents points to quẻ 63 at printed page 326 and quẻ 64 at 329. The observed body headings start at PDF 328 and 331. Use body headings for section locators; do not treat contents pages as section starts. |
-| `BPCT` | Chương 4, Chấn palace, PDF 57                   | A fresh image check confirms board 6 is Thủy Phong Tỉnh. Earlier extraction missed its heading.                                                                                                                  |
-| `BPCT` | Chương 6, PDF 80 and 95                         | A fresh image check confirms printed label 11 on PDF 80 and printed label 60 on PDF 95. Punctuation and adjacent glyphs obscured the earlier heading scan.                                                       |
+| Key    | Location                                        | Finding                                                                                                                                                                                                                                                     |
+| ------ | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `PBC`  | Contents PDF 5; Cấn / canonical quẻ 52, PDF 493 | The contents lists Bát Thuần Chấn and Bát Thuần Cấn as quẻ 51, then Tiệm as 53. PDF 4 starts the contents but ends at quẻ 31. The body also labels Cấn as 51. Keep the source label and map the body section to canonical `hexagram-52`; quẻ 52 is present. |
+| `NHL`  | Contents PDF 4–9; Ký Tế/Vị Tế, PDF 328/331      | The contents points to quẻ 63 at printed page 326 and quẻ 64 at 329. The observed body headings start at PDF 328 and 331. Use body headings for section locators; do not treat contents pages as section starts.                                            |
+| `BPCT` | Chương 4, Chấn palace, PDF 57                   | A fresh image check confirms board 6 is Thủy Phong Tỉnh. Earlier extraction missed its heading.                                                                                                                                                             |
+| `BPCT` | Chương 6, PDF 80 and 95                         | A fresh image check confirms printed label 11 on PDF 80 and printed label 60 on PDF 95. Punctuation and adjacent glyphs obscured the earlier heading scan.                                                                                                  |
 
 | Key       | Location                                   | Problem                                                                                                        | Review treatment                                                                                                        |
 | --------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -393,6 +393,83 @@ Note 5 on PDF 85 belongs to sentence 26 and is not moved into this batch.
 The previously cited Vĩnh Cao criticism on PDF 403 remains a separate dissent from main-text Hình usage.
 This comparison does not publish a complete Tam hình table, infer a priority algorithm for conflicting Không readings,
 calculate dates from the sentence-24 examples, or certify the reported efficacy of divination.
+
+### Quẻ 49-52 and BPCT 25-32 selected comparison
+
+The [batch-thirteen classical citations](../../packages/knowledge/data/citations/batch-thirteen-hexagrams.json)
+support original Vietnamese selections for [Cách](../../packages/knowledge/data/hexagrams/hexagram-49.json),
+[Đỉnh](../../packages/knowledge/data/hexagrams/hexagram-50.json),
+[Chấn](../../packages/knowledge/data/hexagrams/hexagram-51.json) and
+[Cấn](../../packages/knowledge/data/hexagrams/hexagram-52.json).
+The component source comparison inspected complete passages and rendered pages at NHL PDFs 286–296,
+PBC 467–500 and NTT 753–801, with the PBC contents at 4–5 checked separately.
+NHL's cited footer labels match those PDF numbers; no PBC/NTT printed folio is inferred.
+NHL/PBC figures and NTT quái prose and line passages provide distinct structural witnesses.
+Selected overviews and all six positions retain NHL, PBC, Trình Di and Chu Hy interpretations,
+plus separately attributed supplements and named material where present.
+The selections do not close feat-080's per-cell audit, source-unit remainder or full translation-layer mapping.
+
+Five bounded structural discrepancy records reside in the quẻ JSON, not in a corrected source edition:
+
+- PBC contents PDF 5 and body PDF 493 both label Cấn as 51. A fresh integration image check confirms
+  the repeated contents number and the body heading/figure/prose. Contents PDF 4 does not contain those entries.
+  Keep the source's 51 and map Cấn to canonical `hexagram-52`, supported by NHL's 52 and the three structures.
+- Chấn at PBC 491 / NTT 785 has a Lục tứ witness beside yang commentary, and NTT 782 calls the second
+  line Chín Hai beside Sáu Hai material. Preserve yin two and yang four from figures and corroborating passages.
+- NTT 783 names Sáu Năm in Chu Hy's Chấn line-two paragraph; PBC 490 has Cửu Nhị while explaining
+  Lục Nhị. Neither inconsistent name becomes a new structural relation.
+- NHL 295 calls Cấn's fourth line Hào 3, âm in its rendering; PBC 497 calls the third line Lục Tam
+  in the second-line Tiểu Tượng. Preserve yin four and yang three without rewriting either witness.
+- PBC 484 calls Đỉnh's fifth line Cửu Ngũ while its preceding explanation and line-five section at 485
+  call Lục Ngũ. The released fifth line remains yin.
+
+Other edition limitations remain observations in the records' review notes: Cách's misplaced/repeated
+upper-line Tiểu Tượng; Đỉnh's visually identical hình ốc forms carrying different glosses and tai/quai wording;
+Chấn's shortened line-five ending and unusual Thoán/Tượng openers; Cấn's repeated inner/outer mình,
+negation and noisy words, NTT note-3 printed-form mismatch, and NHL's Bĩ beside PBC's Bí in the closing list.
+No Han quotation, emended source text or definitive critical edition is published.
+
+All 14 attached NTT note labels are separate: Cách 1 at PDF 765; Đỉnh 1–4 at 777;
+Chấn 1–3 at 789; Cấn 1–5 at 800 and 6 at 801. Đỉnh note 4 retains Ngô Tất Tố's stated translation
+choice and distinct punishment glosses. Cấn note 3 does not select a corrected form.
+Cách's printed Trình Truyện passage at PBC 477 remains attributed through PBC, not reassigned to PBC himself.
+Đỉnh retains tử-as-master versus son and lộc vị versus food, competing hình ốc meanings and ngưng mệnh scopes.
+Chấn retains Chu Hy's uncertainty about ức, nine hills and seven days, and the two line-six trung readings.
+Cấn preserves PBC's unity reading beside Trình Di's non-sharing reading, and Trình Di's critical minister
+reading at line four beside Chu Hy's simpler no-fault reading. Chu Hy's proposed textual omissions stay opinions.
+
+Đỉnh's third and sixth lines are both yang; response wording does not establish an opposite-polarity pair.
+Political, ritual, punishment and family/gender hierarchy images do not establish modern obligations.
+PBC animal-change analogies and Hồ Vân Phong's seasonal analogy do not become biology.
+The Mục Liên anecdote is not verified miracle evidence or advice to endure violence.
+Anatomy/danger images do not become medical diagnoses or injury forecasts; day/mùa images supply no calendar algorithm.
+
+The [batch-thirteen advanced citations](../../packages/knowledge/data/citations/batch-thirteen-advanced.json)
+support the [BPCT 25–32 article](../../packages/knowledge/data/liuyao/hidden-movement-store-strength-and-branch-context.json).
+Every numbered verse is separate from Vương Hồng Tự's commentary: 25–27 at PDF 85 (printed 71),
+28–29 at 86 (72), 30 at 86–87 (72–73), and 31–32 at 87 (73).
+Sentence 30's second example and closing explanation continue onto 87 before sentence 31;
+sentence 24's continuation and sentences 33 onward are not absorbed.
+Vĩnh Cao's note 5 attaches to the season-end months in sentence 26, though its footer lies below 27.
+Note 6 attaches to sentence 30's rendering at 86 and explains tự as the chi in the quẻ; it is not sentence 31's note.
+These are the only attached notes in 25–32. Note 4 at PDF 84 belongs to 23; note 7 at 88 belongs to 36.
+
+BPCT PDF 1 assigns the Phú đoán to Lưu Bá Ôn and its commentary to Vương Hồng Tự;
+the new front-matter citation records this supplied-edition attribution, not verified historical authorship
+of individual verses. PDFs 2–3 support the compiler's account and Vĩnh Cao's translator/footnote role.
+An integration image check of PDF 1 confirms the credits. Older batch labels are not retrospectively changed.
+Vĩnh Cao's previously cited PDF-403 criticism remains a separate dissent, not an attached sentence-31 note.
+
+The article retains sentence 25's Nhật thần xung and separate moving-line statement without inventing
+an ám động/Nhật phá threshold; sentence 26's two directions of Mộ and conditional vượng/tướng Không;
+sentence 27's Dụng/Kỵ role distinction; and sentence 28's sinh/hợp directed toward the line harming Dụng.
+Sentence 29 permits control of a month-bearing line in the quẻ while 32 protects Dụng as Nguyệt kiến;
+both remain attributed without a new harmonization or priority rule. Sentence 30's Nhật thần biến hoại
+is source language tied to same-chi line examples, not transformation of a calendar day or blanket cancellation
+of day xung. Sentence 31's listed groups, missing-member examples and động/tĩnh conditions stay prose,
+not an executable/exhaustive table; no two-moving requirement is generalized to every Nhị hình or Tự hình.
+No minimum repeated-branch count, calendar boundary, scoring rule, automatic interpretation or efficacy
+certification is inferred. Global inventory, source audit, separate verification and certification remain open.
 
 ### Classical exclusions
 

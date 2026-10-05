@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-51",
+  "type": "hexagram",
+  "title": "Thuần Chấn",
+  "aliases": ["Chấn", "Bát Thuần Chấn"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-51-structure",
+      "kind": "structural-fact",
+      "text": "Thuần Chấn có nội quái Chấn, ngoại quái Chấn; vị trí một đến sáu tính từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q51-overview-structure",
+        "citation-pbc-q51-overview-structure",
+        "citation-ntt-q51-overview-structure",
+        "citation-nhl-q51-line-1-classical-text",
+        "citation-nhl-q51-line-2-classical-text",
+        "citation-nhl-q51-line-3-classical-text",
+        "citation-nhl-q51-line-4-classical-text",
+        "citation-nhl-q51-line-5-classical-text",
+        "citation-nhl-q51-line-6-classical-text",
+        "citation-pbc-q51-line-1-classical-text",
+        "citation-pbc-q51-line-2-classical-text",
+        "citation-pbc-q51-line-3-classical-text",
+        "citation-pbc-q51-line-4-classical-text",
+        "citation-pbc-q51-line-5-classical-text",
+        "citation-pbc-q51-line-6-classical-text",
+        "citation-ntt-q51-line-1-classical-text",
+        "citation-ntt-q51-line-2-classical-text",
+        "citation-ntt-q51-line-3-classical-text",
+        "citation-ntt-q51-line-4-classical-text",
+        "citation-ntt-q51-line-5-classical-text",
+        "citation-ntt-q51-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê nối Chấn với trưởng nam giữ trọng khí Đỉnh trong trật tự cổ. Sấm biểu hiện phát động; lo sợ để giữ gìn sửa mình dẫn tới vui sau đó. Không đánh mất muỗng và rượu tế giữa tiếng sấm là hình tinh thần vững để giữ tôn miếu, xã tắc.",
+      "citationIds": ["citation-nhl-q51-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu nối Chấn sau Đỉnh bằng vai trưởng nam làm chủ trọng khí. Ông đọc Chấn là sấm, động và kinh động; biết lo trước mới mong yên sau. Sấm xa mà không mất đồ tế hình dung người gặp biến vẫn giữ bình thường, chứ không chỉ sợ hãi thụ động.",
+      "citationIds": ["citation-pbc-q51-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-thoan-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Thoán bằng kính sợ, tự sửa và giữ phép tắc sau biến cố. Người không mất sự trấn tĩnh có thể giữ tôn miếu khi vua tránh ra ngoài; đó là vai chủ tế được mô tả trong văn cảnh cổ.",
+      "citationIds": ["citation-pbc-q51-overview-thoan-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-dai-tuong-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu đọc hai Chấn như sấm nối tiếp. Ông phân biệt khủng cụ ở tinh thần với tu tỉnh ở việc thực: xét lại và sửa mình không chỉ khi biến cố đã tới.",
+      "citationIds": ["citation-pbc-q51-overview-dai-tuong-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di phân biệt Chấn với động đơn thuần vì có thêm phấn phát và kinh sợ; một dương ở dưới hai âm được gắn với trưởng nam. Ông đọc lo rồi tự sửa, cùng thành kính khi tế, thành cách giữ yên trước uy sấm; sự không mất đồ tế biểu hiện không tự đánh mất mình.",
+      "citationIds": ["citation-ntt-q51-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải Chấn là động, tượng sấm, loại trưởng nam. Chủy là dụng cụ múc, xưởng là rượu tế theo mô tả cổ; biết lo thì không mất cái hệ trọng mình làm chủ. Đây là nghĩa lời chiêm của ông, không xác nhận hiệu lực nghi lễ.",
+      "citationIds": ["citation-ntt-q51-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-thoan-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di coi hanh vốn trong nghĩa Chấn. Lo để tự giữ, tự sửa khiến sau có phép tắc; sấm xa, gần đều gây kinh sợ. Ông cho Thoán thiếu câu không mất đồ tế và giải xuất bằng vua đi vắng, trưởng tử giữ tôn miếu làm chủ tế.",
+      "citationIds": ["citation-ntt-q51-overview-thoan-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-thoan-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy thuật và theo ý Trình Di về câu thiếu sau phần nhĩ dã, nhưng giải xuất là nối đời chủ tế; ông còn ghi một thuyết cho xuất là chữ chép lầm. Những đề xuất này giữ là ý kiến văn bản, không được dự án dùng để sửa lời kinh.",
+      "citationIds": ["citation-ntt-q51-overview-thoan-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-overview-dai-tuong-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di đọc sấm liên tiếp như lời nhắc tự sửa và xét lỗi. Phạm vi ông nói không chỉ lúc sấm nổ: gặp bất kỳ việc làm kinh sợ nào cũng cần xét lại mình.",
+      "citationIds": ["citation-ntt-q51-overview-dai-tuong-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-note-1-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chú chấn có nghĩa động mạnh và khiếp sợ.",
+      "citationIds": ["citation-ntt-q51-note-1-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-note-2-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chú con sinh là con vật dùng hy sinh trong văn cảnh tế lễ, không đề nghị một nghi thức cho người dùng.",
+      "citationIds": ["citation-ntt-q51-note-2-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-51-note-3-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố nói đại từ được đánh dấu trong câu chủ tế, theo Trình Di, chỉ con trưởng của vua chúa.",
+      "citationIds": ["citation-ntt-q51-note-3-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-thunder"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yin", "yang", "yin", "yin"],
+    "kingWenNumber": 51,
+    "upperTrigramId": "trigram-thunder",
+    "lowerTrigramId": "trigram-thunder",
+    "claimIds": ["hexagram-51-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-51-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê chỉ ra hào đầu lặp nghĩa Thoán nhưng thêm sau và tốt: ở đầu sấm động, biết lo trước rồi mới có vui về sau. Ông không thêm lời giảng độc lập khác ở vị này.",
+          "citationIds": ["citation-nhl-q51-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu coi sơ cửu làm thành Chấn và ở đầu thời động. Kính cẩn lo khi biến đến mới có vui sau; ông nối Tiểu Tượng với nghĩa đã giải trong Thoán, không tách lo sợ khỏi phép tự sửa.",
+          "citationIds": ["citation-pbc-q51-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc sơ vừa là chủ gây sự động vừa là đầu cuộc sợ. Biết sợ và đoái xét, tự tu tỉnh không trái phép tắc thì giữ yên; phúc và cười sau gắn với cách ứng xử ấy.",
+          "citationIds": ["citation-ntt-q51-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy nêu hào đầu là chủ làm nên Chấn ở đầu cuộc sợ để giải lời chiêm của nó. Ông không có một Tiểu Tượng riêng dài ở trang này.",
+          "citationIds": ["citation-ntt-q51-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-51-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải nhị nhu cưỡi sơ cương nên lo nguy, ngại mất của và tránh xa như lên chín gò. Trung chính và khéo xử là điều kiện giữ bình tĩnh, không chạy đuổi của; bảy ngày được vẫn là lời hào, không lịch hẹn hoàn tiền của sản phẩm.",
+          "citationIds": ["citation-nhl-q51-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc ức là đoán chừng, chưa xác nhận đã mất thật; vì quá lo nên tính tránh xa. Nhị trung chính tự giữ, sơ vốn không thù với nhị, nên vật trục và thất nhật đắc khuyên trấn tĩnh, để tự nhiên chứ không theo đuổi.",
+          "citationIds": ["citation-pbc-q51-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc ức là đoán và chín gò là cao nhiều tầng. Nhị lượng thế tránh uy cương nhưng giữ trung chính, không đem mình chạy theo vật mà mất tự chủ. Sáu ngôi hết thì bảy bắt đầu lại giải thời qua, việc đổi, rồi trở bình thường; đây là lý giải tượng, không phép tính ngày.",
+          "citationIds": ["citation-ntt-q51-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giữ nghĩa ức chưa rõ, và cũng chưa giải rõ tượng chín gò, bảy ngày. Mềm thuận trung chính giúp tự giữ nên không tìm mà tự được; giữ nguyên sự chưa biết của ông thay vì suy ra lịch hay số gò cụ thể.",
+          "citationIds": ["citation-ntt-q51-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yin",
+      "label": "Lục tam",
+      "claims": [
+        {
+          "id": "hexagram-51-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc âm ở vị dương là hình bất chính dẫn tới hoảng loạn khi động. Biết tránh chỗ sai và trở về chính thì mới không tai; đây là phán xét đạo đức trong lời giải, không chẩn đoán tâm lý người xem.",
+          "citationIds": ["citation-nhl-q51-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải tô tô như sợ tới rụng rời ngẩn ngơ vì tam ở chỗ không chính. Hành là nhân kinh sợ dời khỏi bất chính sang chính, nhờ vậy mới tránh tai, không phải cứ đi đâu cũng vô hại.",
+          "citationIds": ["citation-pbc-q51-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc tô tô là thần khí tan mất. Âm ở dương không chính khiến không yên trong lúc động; biết nhân sợ mà bỏ chỗ sai tới chỗ chính thì có thể không lỗi.",
+          "citationIds": ["citation-ntt-q51-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy cũng giải tô tô như tan tác tự mất vì âm ở chỗ không chính. Lời răn cho người xem là đổi khỏi bất chính khi lo sợ, không gắn vô sảnh với mọi sự di chuyển.",
+          "citationIds": ["citation-ntt-q51-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-51-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc tứ dương không trung, không chính, giữa hai âm dưới và hai âm trên nên gặp động không tự thoát được. Toại nê là hình chìm đắm trong cảnh ấy, không mô tả bùn hay tai nạn thật.",
+          "citationIds": ["citation-nhl-q51-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải tứ cương ở vị nhu, bất trung bất chính và hãm giữa bốn âm. Tụy nê nói đã chìm khó quay lại; Tiểu Tượng đọc chưa sáng vì chất dương không phát được tính sáng trong cảnh ấy.",
+          "citationIds": ["citation-pbc-q51-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di cho tứ mất cương chính và không trung, giữa các âm nên không tự phấn chấn. Muốn động cũng không nhổ lên được, gặp sợ cũng không tự giữ, vì vậy bèn đắm và chưa sáng.",
+          "citationIds": ["citation-ntt-q51-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải cứng ở chỗ mềm, không giữa không chính lại hãm trong âm là không tự phấn chấn. Ông giữ hình bèn đắm, không nêu một lời hứa thoát sau đó.",
+          "citationIds": ["citation-ntt-q51-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-51-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giữ hai khả năng vãng lai nói sấm tới lui hoặc chính hào năm tới lui. Dù đều nguy, ngũ có trung nên phải lo không mất đức ấy; giữ được trung mới làm công việc được.",
+          "citationIds": ["citation-nhl-q51-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc tới lui đều kinh nguy nhưng ngũ có sẵn đức trung. Vô táng răn giữ trung, hữu sự mừng có thể làm việc; công không tách khỏi sự bền giữ ấy.",
+          "citationIds": ["citation-pbc-q51-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải ngũ mềm lên cực không được, xuống lại phạm cương nên đều nguy. Ở vai vua chủ động phải ứng biến theo trung; cái vẫn có và thửa việc là đức trung cần giữ. Ông phân biệt điều này với trường hợp chủ động cương mạnh và có người giúp.",
+          "citationIds": ["citation-ntt-q51-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc ngũ ở thời động luôn có nguy, nhưng trung giúp không mất và còn có thể làm việc. Người xem phải không mất đức trung; chữ không mất không là đảm bảo tài sản trong mọi biến cố.",
+          "citationIds": ["citation-ntt-q51-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-51-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc âm trên sợ quá, không đủ tài để tiến nên chỉ phòng từ lúc động mới tới láng giềng. Ông giữ khác biệt: Chu Hi theo lời thuật của NHL đọc hôn cấu về gả cưới, còn cách ông dùng là bà con chê cười; lý do lời chê vẫn được ông đặt thành câu hỏi.",
+          "citationIds": ["citation-nhl-q51-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải cuối động chí mỏi, nhìn kinh ngạc nên tiến hung. Chỉ ngồi im cũng chưa đủ: phải lo xa khi nguy ở láng giềng để tránh lỗi, dù bà con có thể chê nhát. Tiểu Tượng gắn việc không lỗi với sự thấy nguy gần mà biết phòng trước.",
+          "citationIds": ["citation-pbc-q51-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di coi thượng nhu tới cực động làm chí tan, nhìn không yên; tiến trong cảnh ấy thì hung. Sợ từ trước khi nguy tới mình và chưa tới cực khiến biết đổi để khỏi lỗi, dù người cùng động oán vì mình không còn theo. Trung trong Tiểu Tượng được ông hiểu là đạo giữa.",
+          "citationIds": ["citation-ntt-q51-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc âm nhu ở cực động thành xơ xác, ngơ ngác; tiến thì hung. Nếu biết lo và tự tỉnh khi nguy chưa tới mình thì có thể không lỗi nhưng vẫn có lời dâu gia. Tiểu Tượng được ông đọc trung là trong lòng, khác Trình Di hiểu đạo giữa.",
+          "citationIds": ["citation-ntt-q51-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-51-line-6-supplement-pbc",
+          "kind": "author-interpretation",
+          "text": "PHỤ CHÚ cuối Chấn của Phan Bội Châu chú mỗi hào đều có chữ Chấn để triển khai ý không ai vào đời tránh hết cảnh nguy. Đây là lời bình của ông, không tuyên bố người dùng nào cũng đang gặp tai họa.",
+          "citationIds": ["citation-pbc-q51-line-6-supplement-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-q51-line-labels",
+      "status": "resolved",
+      "description": "PBC PDF 491 in nhãn Hán Lục tứ dưới đầu đề Cửu Tứ; NTT PDF 785 in Lục Tứ ở nhãn Hán và dịch âm nhưng dịch nghĩa cùng lời Trình Di gọi Chín Tư. NTT PDF 782 gọi Hào Chín Hai ở dịch nghĩa trong khi nhãn và các lời giải gọi Sáu Hai.",
+      "citationIds": [
+        "citation-pbc-q51-line-4-classical-text",
+        "citation-ntt-q51-line-4-classical-text",
+        "citation-ntt-q51-line-2-classical-text",
+        "citation-nhl-q51-overview-structure",
+        "citation-pbc-q51-overview-structure"
+      ],
+      "resolution": "Vị hai giữ âm, vị bốn giữ dương theo hình NHL/PBC, nhãn NHL và giải thích chất hào. Ghi nhãn nguồn trái nhau, không sửa chữ in hoặc tạo vị trí mới."
+    },
+    {
+      "id": "discrepancy-q51-line-2-reference",
+      "status": "resolved",
+      "description": "Trong đoạn Chu Hy ở hào hai, NTT PDF 783 gọi Sáu Năm cưỡi Chín Đầu. PBC PDF 490 có Cửu Nhị trong câu đang bàn bản chất âm của Lục Nhị.",
+      "citationIds": [
+        "citation-ntt-q51-line-2-chu-hy",
+        "citation-pbc-q51-line-2-pbc",
+        "citation-nhl-q51-line-2-nhl",
+        "citation-ntt-q51-line-2-classical-text"
+      ],
+      "resolution": "Cấu trúc và hào đang tóm tắt là vị hai âm theo nhãn, hình và toàn đoạn; không nhập các tên gọi trái nhau thành quan hệ năm–một hoặc nhị dương. Tóm tắt Chu Hy giữ phần nhu trung tự giữ và các chỗ ông chưa rõ, không chép lại câu tham chiếu sai."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker (AI source comparison)",
+    "reviewedAt": "2026-10-05",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q51-overview-structure",
+      "citation-pbc-q51-overview-structure",
+      "citation-ntt-q51-overview-structure",
+      "citation-nhl-q51-line-1-classical-text",
+      "citation-nhl-q51-line-2-classical-text",
+      "citation-nhl-q51-line-3-classical-text",
+      "citation-nhl-q51-line-4-classical-text",
+      "citation-nhl-q51-line-5-classical-text",
+      "citation-nhl-q51-line-6-classical-text",
+      "citation-pbc-q51-line-1-classical-text",
+      "citation-pbc-q51-line-2-classical-text",
+      "citation-pbc-q51-line-3-classical-text",
+      "citation-pbc-q51-line-4-classical-text",
+      "citation-pbc-q51-line-5-classical-text",
+      "citation-pbc-q51-line-6-classical-text",
+      "citation-ntt-q51-line-1-classical-text",
+      "citation-ntt-q51-line-2-classical-text",
+      "citation-ntt-q51-line-3-classical-text",
+      "citation-ntt-q51-line-4-classical-text",
+      "citation-ntt-q51-line-5-classical-text",
+      "citation-ntt-q51-line-6-classical-text",
+      "citation-nhl-q51-overview-nhl",
+      "citation-pbc-q51-overview-pbc",
+      "citation-pbc-q51-overview-thoan-pbc",
+      "citation-pbc-q51-overview-dai-tuong-pbc",
+      "citation-ntt-q51-overview-trinh-di",
+      "citation-ntt-q51-overview-chu-hy",
+      "citation-ntt-q51-overview-thoan-trinh-di",
+      "citation-ntt-q51-overview-thoan-chu-hy",
+      "citation-ntt-q51-overview-dai-tuong-trinh-di",
+      "citation-ntt-q51-note-1-ntt",
+      "citation-ntt-q51-note-2-ntt",
+      "citation-ntt-q51-note-3-ntt",
+      "citation-nhl-q51-line-1-nhl",
+      "citation-pbc-q51-line-1-pbc",
+      "citation-ntt-q51-line-1-trinh-di",
+      "citation-ntt-q51-line-1-chu-hy",
+      "citation-nhl-q51-line-2-nhl",
+      "citation-pbc-q51-line-2-pbc",
+      "citation-ntt-q51-line-2-trinh-di",
+      "citation-ntt-q51-line-2-chu-hy",
+      "citation-nhl-q51-line-3-nhl",
+      "citation-pbc-q51-line-3-pbc",
+      "citation-ntt-q51-line-3-trinh-di",
+      "citation-ntt-q51-line-3-chu-hy",
+      "citation-nhl-q51-line-4-nhl",
+      "citation-pbc-q51-line-4-pbc",
+      "citation-ntt-q51-line-4-trinh-di",
+      "citation-ntt-q51-line-4-chu-hy",
+      "citation-nhl-q51-line-5-nhl",
+      "citation-pbc-q51-line-5-pbc",
+      "citation-ntt-q51-line-5-trinh-di",
+      "citation-ntt-q51-line-5-chu-hy",
+      "citation-nhl-q51-line-6-nhl",
+      "citation-pbc-q51-line-6-pbc",
+      "citation-ntt-q51-line-6-trinh-di",
+      "citation-ntt-q51-line-6-chu-hy",
+      "citation-pbc-q51-line-6-supplement-pbc"
+    ],
+    "note": "Compared complete assigned passages and rendered pages: NHL 292–293; PBC 487–492; NTT 778–789. Original Vietnamese selections preserve commentary, notes and conditions; no source prose or Han quotation is redistributed. This is source comparison, not independent verification approval, an audit ledger decision or certification. Full quotation/translation-layer mapping and audit closure remain open. Edition limitations: NTT 786/PBC 491 lời Hán hào năm dừng ở hữu, khác câu hữu sự của NHL và phần diễn giải; giữ chứng tích, không bổ sung chữ nguồn. NTT 779 có khác biệt ở đầu Thoán, 781 in chữ quốc ngữ Tấn trong dòng Hán, 782 đặt đầu Thoán ở Tiểu Tượng. Đây không là văn bản Hán đã sửa. Lời thuật Chu Hi của NHL 293 không thay thế Chu Hy trong NTT 788. Giai thoại Mục Liên ở PBC 489 không xác minh phép lạ hoặc khuyên chịu bạo lực."
+  }
+}

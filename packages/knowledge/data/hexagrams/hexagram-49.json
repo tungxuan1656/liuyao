@@ -1,0 +1,732 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-49",
+  "type": "hexagram",
+  "title": "Trạch Hỏa Cách",
+  "aliases": ["Cách"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-49-structure",
+      "kind": "structural-fact",
+      "text": "Trạch Hỏa Cách có nội quái Ly, ngoại quái Đoài; vị trí một đến sáu tính từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q49-overview-structure",
+        "citation-pbc-q49-overview-structure",
+        "citation-ntt-q49-overview-structure",
+        "citation-nhl-q49-line-1-classical-text",
+        "citation-nhl-q49-line-2-classical-text",
+        "citation-nhl-q49-line-3-classical-text",
+        "citation-nhl-q49-line-4-classical-text",
+        "citation-nhl-q49-line-5-classical-text",
+        "citation-nhl-q49-line-6-classical-text",
+        "citation-pbc-q49-line-1-classical-text",
+        "citation-pbc-q49-line-2-classical-text",
+        "citation-pbc-q49-line-3-classical-text",
+        "citation-pbc-q49-line-4-classical-text",
+        "citation-pbc-q49-line-5-classical-text",
+        "citation-pbc-q49-line-6-classical-text",
+        "citation-ntt-q49-line-1-classical-text",
+        "citation-ntt-q49-line-2-classical-text",
+        "citation-ntt-q49-line-3-classical-text",
+        "citation-ntt-q49-line-4-classical-text",
+        "citation-ntt-q49-line-5-classical-text",
+        "citation-ntt-q49-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê nối Tỉnh với Cách bằng việc thay nước cũ, rồi giải Cách là đổi cũ. Nước Đoài và lửa Ly đối chọi; hình hai con gái khác hướng là ví dụ cổ về bất hòa. Ông coi cải cách cần thời cơ, chính đạo, xét việc sáng suốt và được lòng người; lòng tin hình thành khi người ta thấy kết quả, không sẵn có lúc bắt đầu.",
+      "citationIds": ["citation-nhl-q49-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-closing-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đọc sáu hào như các chặng từ khó khởi sự tới thành công. Ông tập hợp điều kiện thời, đạo, địa vị, tài đức, thận trọng, chí thành và hòa duyệt, đặt lòng tin cùng sự công tâm ở trọng tâm của việc cải cách.",
+      "citationIds": ["citation-nhl-q49-overview-closing-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu lấy giếng cần đổi nước để nối Tỉnh với Cách. Tệ cũ và hoàn cảnh mới làm nảy nhu cầu đổi, nhưng đổi trong gia đình hay xã hội đều không dễ: nền mới chưa thành khiến người ta nghi sợ. Ông đòi xét thời thế và nghĩa lý, chắc việc mới thông và chính, rồi mới mong hết hối tiếc.",
+      "citationIds": ["citation-pbc-q49-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-supplement-pbc",
+      "kind": "author-interpretation",
+      "text": "Trong PHỤ CHÚ, Phan Bội Châu nhấn mạnh hối vong: đổi không thích đáng có thể làm hiện tại khó khăn và cản bước về sau; khi hỏng rồi, hối tiếc không khôi phục được kết quả. Đây là lời răn thận trọng của ông.",
+      "citationIds": ["citation-pbc-q49-overview-supplement-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-thoan-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Thoán bằng nước lửa làm tắt nhau và hai con gái không hợp chí. Sáng suốt giúp xét việc, hòa duyệt giúp kết hợp người; mục đích chính và cách làm thích hợp khiến đổi đáng. Ông đọc thời Cách qua hoàn cảnh và lòng người, dẫn Thang, Võ cùng bốn mùa để triển khai nghĩa đổi.",
+      "citationIds": ["citation-pbc-q49-overview-thoan-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-thoan-supplement-pbc",
+      "kind": "author-interpretation",
+      "text": "PHỤ CHÚ của Phan Bội Châu phân biệt tức là tắt và tức là sinh, dùng quan hệ cũ mất, mới phát triển để diễn giải biến cách. Ông đối chiếu thế lực đã hiện thành với thế lực còn nuôi dưỡng; giữ đây là luận giải của ông, không là định luật tự nhiên hay bảo đảm thắng lợi.",
+      "citationIds": ["citation-pbc-q49-overview-thoan-supplement-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-menh-supplement-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu phân biệt nghĩa hẹp của cách mệnh là đổi chính lệnh với cách dùng rộng trong gia đình, nghề nghiệp, kinh tế và học thuật. Theo ông, nhiều sự đổi chỉ cần chữ cách; việc dùng thêm mệnh trong các trường hợp ấy là thói quen ngôn ngữ.",
+      "citationIds": ["citation-pbc-q49-overview-menh-supplement-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-dai-tuong-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu đọc lửa trong chằm thành tranh đấu và thay đổi. Đại Tượng gợi việc làm lịch để biết thứ tự mùa; ông mở rộng tới đổi thay trong ngày, tháng, năm và thời gian dài. Các ví dụ không cung cấp phép tính lịch cho sản phẩm.",
+      "citationIds": ["citation-pbc-q49-overview-dai-tuong-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di nối Cách với giếng cần đổi để sạch. Ông phân biệt nước lửa gặp nhau mà khắc chế trong Cách với hai bên đi trái nhau trong Khuê. Việc đổi nhằm bỏ hỏng để thông và chính; lòng người cần thời gian mới tin, đổi không có ích lớn hoặc lại gây hại vẫn đáng hối.",
+      "citationIds": ["citation-ntt-q49-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải Cách qua Đoài trên Ly dưới, nước lửa và hai gái không hợp chí. Nội sáng, ngoại hòa vui là điều kiện đổi hợp chính; nếu bất chính, việc mới không được tin và hối tiếc vẫn còn. Ông giữ điều kiện này trong lời chiêm, không coi mọi đổi thay đều tốt.",
+      "citationIds": ["citation-ntt-q49-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-tien-nho-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Trong Tiên Nho, Chu Hy thuật cách Trịnh Đông Hương đọc Cách như lò: đáy ở một, mặt ở hai, lưng ở ba–năm, miệng ở trên. Ông thấy cách lấy tượng ấy có chỗ hữu ích, nhưng đồng thời lưu ý tượng đã thất truyền và cách giải của Trịnh có chỗ bịa đặt; không xác nhận mọi tượng là đáng tin.",
+      "citationIds": ["citation-ntt-q49-overview-tien-nho-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-thoan-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải tương tức ở đây là làm tắt; đổi mới cần tuyên bố rành rọt để dân tin. Sáng giúp xét lý, vui giúp hòa người; đổi phải xứng đáng mới hết hối cũ và mới. Ông mở rộng nghĩa ấy qua bốn mùa và Thang, Võ đổi triều như thuận trời, ứng người trong học thuyết của mình.",
+      "citationIds": ["citation-ntt-q49-overview-thoan-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-thoan-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy phân biệt Khuê là trái nhau với Cách là làm tắt nhau. Ông nêu hai nghĩa tắt và sinh của tức, nhưng giữ cách giải tên quẻ bằng tượng nước lửa, không biến nó thành quy tắc dự đoán.",
+      "citationIds": ["citation-ntt-q49-overview-thoan-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-dai-tuong-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di coi bốn mùa là thay đổi lớn, rõ và có dấu vết nhất. Việc quan sát chuyển dịch nhật nguyệt tinh tú để lập lịch biểu hiện học theo tượng Cách và thuận thứ tự trời đất.",
+      "citationIds": ["citation-ntt-q49-overview-dai-tuong-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-dai-tuong-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy tóm nghĩa Đại Tượng ở sự đổi thay lớn của bốn mùa; lời này không chứa thuật toán đổi ngày tháng.",
+      "citationIds": ["citation-ntt-q49-overview-dai-tuong-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-overview-closing-pbc",
+      "kind": "author-interpretation",
+      "text": "PHỤ CHÚ cuối Cách của Phan Bội Châu đọc sáu chặng theo trình tự sắp đặt, chú trọng phu như tin và sự ủng hộ của đại đa số. Các lời khen Kemal, Lénine cùng kết luận về lịch sử cách mạng là đánh giá của ông, không chứng minh mọi cuộc đổi tuân một mẫu tất định.",
+      "citationIds": ["citation-pbc-q49-overview-closing-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-49-note-1-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chú chữ cách theo nghĩa cải cách, bỏ cũ để có mới.",
+      "citationIds": ["citation-ntt-q49-note-1-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-fire", "trigram-lake"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yang", "yin", "yang", "yang", "yang", "yin"],
+    "kingWenNumber": 49,
+    "upperTrigramId": "trigram-lake",
+    "lowerTrigramId": "trigram-fire",
+    "claimIds": ["hexagram-49-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yang",
+      "label": "Sơ cửu",
+      "claims": [
+        {
+          "id": "hexagram-49-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc da bò vàng như giữ bền đức trung và thuận. Hào đầu chưa đủ thời, địa vị thấp, cương mà không trung, lại không có ứng viện; chỉ có tính mạnh không đủ để khởi cải cách.",
+          "citationIds": ["citation-nhl-q49-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đòi thời, vị, tài và thẩm thận trước khi đổi. Sơ còn thấp, cương táo và chưa chín thời cơ nên phải dằn nóng vội, giữ trung thuận bền như bó bằng da trâu vàng; chữ cách ở đây nghĩa da, khác tên quẻ.",
+          "citationIds": ["citation-pbc-q49-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di xem hào đầu là thiếu thời, ngôi, tài và ứng viện. Chất dương ở Ly dễ nóng muốn lên; màu vàng và trâu nhắc trung, thuận để tự giữ chặt, chưa được làm càn.",
+          "citationIds": ["citation-ntt-q49-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy coi ngôi đầu không có ứng viện là chưa thể làm. Ông giải da dùng làm vật bền chặt, vàng là trung, trâu là thuận; lời chiêm hướng cố giữ, cho thấy sự thận trọng trước cải cách.",
+          "citationIds": ["citation-ntt-q49-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-49-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê cho hào hai nhu thuận, trung chính, sáng ở Ly và được ngũ trung chính giúp nên đủ tư cách đổi. Tuy cơ hội đã tới, vẫn phải chuẩn bị kỹ, khiến trên dưới đều tin rồi tiến mới tốt và không lỗi.",
+          "citationIds": ["citation-nhl-q49-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu coi nhị đủ thời, vị, tài, lại được ngũ hỗ trợ nhưng vẫn cần sắp đặt trước khi phá cũ dựng mới. Ông đặt tiến tốt sau điều kiện trên dưới đã tin.",
+          "citationIds": ["citation-pbc-q49-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di gắn nhị trung chính, sáng suốt và có vua cương cùng đức với quyền thực hiện đổi. Trong vai bề tôi ông không cho đi trước, phải đợi trên dưới tin; khi các điều kiện đã đủ mà không tiến thì bỏ lỡ thời có thể làm.",
+          "citationIds": ["citation-ntt-q49-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy coi nhu thuận trung chính và ứng viện ở trên là tư cách có thể cải cách. Ông vẫn răn đợi dĩ nhật rồi mới đổi; điều kiện chờ ấy nhằm ngăn biến cải vội vàng.",
+          "citationIds": ["citation-ntt-q49-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-2-supplement-pbc",
+          "kind": "author-interpretation",
+          "text": "PHỤ CHÚ của Phan Bội Châu so nhị và ngũ đủ đức, vị, tài, thời mà vẫn chờ dĩ nhật với sơ cần nuôi sức chờ. Ông coi Cách vừa cần vừa khó; chưa chín thời hay chưa đủ tài càng không được xem nhẹ.",
+          "citationIds": ["citation-pbc-q49-line-2-supplement-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-49-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê răn hào ba cương, không trung dễ tiến liều. Giữ chính, lo cẩn thận và xét kế hoạch ba lần mới có kết quả chắc; ông đọc phu ở đây là chắc chắn, không chỉ lòng tin.",
+          "citationIds": ["citation-nhl-q49-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu yêu cầu tam giữ chính, kính sợ và bàn với bạn đồng tâm, sửa kế hoạch đến chín để kết quả chắc. Ông đọc phu là chắc chắn; Tiểu Tượng còn răn quá nhiều bàn bạc sau khi đã tam tựu sẽ làm ít thành công.",
+          "citationIds": ["citation-pbc-q49-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di răn tam nóng đổi vì cương không trung, nhưng việc đáng đổi không thể bỏ. Giữ chính, kính sợ và xét công luận ba lần đều hợp thì mình và mọi người cùng tin, khi đó mới có thể thực hiện.",
+          "citationIds": ["citation-ntt-q49-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy coi quá cứng và ở cuối Ly là dễ nóng cải cách, nên có lời răn tiến hung và chính nguy. Thời vẫn đáng đổi; lời bàn ba lần đã nên và đích xác thì có tin, có thể đổi, không cần tìm đường khác.",
+          "citationIds": ["citation-ntt-q49-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-49-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê coi cương ở vị nhu là vừa mạnh vừa mềm, thích hợp thời Cách nên hết hối. Chỉ khi chí thành khiến trên dưới tin mới tiến hành đổi mệnh được tốt.",
+          "citationIds": ["citation-nhl-q49-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu cho tứ cương nhu phối hợp đúng lúc đổi và gần chặng thành công. Sửa chương trình hay thủ đoạn phải thêm chí thành, làm đại đa số tin việc vì công chứ không vì tư; tín chí là tin tinh thần chứ không chỉ hình thức.",
+          "citationIds": ["citation-pbc-q49-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di nêu tứ có thời, tài, thế và trách nhiệm đổi, cứng mềm xen nhau. Đổi phải xứng đáng và thi hành chí thành; trên dưới tin chí nhau là gốc khiến cải mệnh tốt.",
+          "citationIds": ["citation-ntt-q49-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy nói dương ở âm vốn có hối nhưng đã quá giữa quẻ, ở khoảng nước lửa và không thiên cương nhu nên đáng cải cách. Đức và thời ấy vẫn chưa đủ: phải có tín rồi mới đổi, mới hết hối và tốt.",
+          "citationIds": ["citation-ntt-q49-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-49-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc ngũ là đại nhân đủ thời, ngôi và đức cương trung chính. Công cuộc đổi xã hội sáng đẹp như hổ thay lông, người dân sẵn tin trước khi bói; đó là hình trong lời giải của ông, không là xác suất thành công.",
+          "citationIds": ["citation-nhl-q49-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu nhấn mạnh hổ không ví bản thân đại nhân mà ví thiên hạ đã đổi sáng đẹp nhờ đại nhân. Tài đức nuôi lâu khiến người đã tin khi mới bước lên, trước bói; đây là cách ông giải nghĩa vị chiêm.",
+          "citationIds": ["citation-pbc-q49-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc đại nhân cương trung chính ở ngôi tôn, đổi việc hợp thời và đáng nên sự lý rõ như vằn hổ. Ông đọc vị chiêm là chưa cần xem xét đã biết việc rất đáng và thiên hạ tự tin, khác lối nhấn mạnh chưa bói.",
+          "citationIds": ["citation-ntt-q49-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy lấy hổ làm tượng đại nhân và bộ lông đổi đẹp làm hình đổi mới mình, dân tới mức hoàn thành. Người xem phải đã được tin từ trước khi xem mới gánh được vai này; ông không bỏ điều kiện ấy khỏi lời chiêm.",
+          "citationIds": ["citation-ntt-q49-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-5-ho-van-phong",
+          "kind": "author-interpretation",
+          "text": "Hồ Vân Phong liên hệ hổ biến với cách ông mô tả lông thú đổi theo hạ–thu, rồi lấy Ly là hạ, Đoài là thu để giải tượng. Giữ đây là phép đọc tượng của ông, không xác minh sinh học của thú hay dựng lịch đổi lông.",
+          "citationIds": ["citation-ntt-q49-line-5-ho-van-phong"],
+          "attribution": {
+            "author": "Hồ Vân Phong",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-5-supplement-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu minh họa vị chiêm qua lời kể về dân đón quân Thang và Lê Thái Tổ khi việc chưa xong. Đây là ví dụ lòng tin theo PHỤ CHÚ của ông, không xác minh mọi chi tiết lịch sử hoặc chứng nhận hiệu quả bói.",
+          "citationIds": ["citation-pbc-q49-line-5-supplement-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-49-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê phân biệt quân tử thật đổi mình với tiểu nhân chỉ đổi ngoài mặt. Khi cải cách đã xong, tiếp tục đổi gây hậu hoạn; dừng ở chính đạo mới tốt. Ông thuật lời chê Nã Phá Luân của Phan Bội Châu để minh họa, không chứng minh mọi cuộc cải cách bằng ví dụ đó.",
+          "citationIds": ["citation-nhl-q49-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc hào cuối theo chặng hoàn thành: người hiểu đổi cả trong, người chưa hiểu cũng đổi ngoài mặt. Cần thủ thành và giữ chính, không phá tiếp nghiệp đã dựng; ông dùng Viên Thế Khải, Nã Phá Luân và Hoa Thịnh Đốn làm các ví dụ đánh giá chính trị của mình.",
+          "citationIds": ["citation-pbc-q49-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di coi đến cuối Cách, người lành đổi thực chất, người ngu tối đổi mặt theo lệnh đã đủ là thành. Đuổi trị họ mãi là quá; phải dung và giữ chính bền để việc đã đổi không lại mất. Đây là quan niệm giáo hóa trong trật tự cổ.",
+          "citationIds": ["citation-ntt-q49-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc Cách đã thành thì quân tử như báo đổi vằn, tiểu nhân đổi mặt theo. Việc đổi là bất đắc dĩ không thể làm quá; tài thượng lục cũng không gánh được việc lớn nữa, nên ở chính chứ không tiến.",
+          "citationIds": ["citation-ntt-q49-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-49-line-6-trinh-truyen",
+          "kind": "author-interpretation",
+          "text": "Phần Phan Bội Châu dịch thêm từ Trình Truyện phân biệt tính vốn thiện với tài khác nhau, rồi giải tự bạo và tự khí như hai cách không chịu hoặc tự bỏ việc thiện. Cách diện không được ông coi là bằng chứng tính người ác. Giữ nguyên quan niệm giáo hóa được thuật, không phân hạng năng lực người hiện đại.",
+          "citationIds": ["citation-pbc-q49-line-6-trinh-truyen"],
+          "attribution": {
+            "author": "Trình Truyện",
+            "via": "Phan Bội Châu — thuật và dịch Trình Truyện"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ của tác giả, không phải quy tắc Nạp Giáp, hướng dẫn hành động hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker (AI source comparison)",
+    "reviewedAt": "2026-10-05",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q49-overview-structure",
+      "citation-pbc-q49-overview-structure",
+      "citation-ntt-q49-overview-structure",
+      "citation-nhl-q49-line-1-classical-text",
+      "citation-nhl-q49-line-2-classical-text",
+      "citation-nhl-q49-line-3-classical-text",
+      "citation-nhl-q49-line-4-classical-text",
+      "citation-nhl-q49-line-5-classical-text",
+      "citation-nhl-q49-line-6-classical-text",
+      "citation-pbc-q49-line-1-classical-text",
+      "citation-pbc-q49-line-2-classical-text",
+      "citation-pbc-q49-line-3-classical-text",
+      "citation-pbc-q49-line-4-classical-text",
+      "citation-pbc-q49-line-5-classical-text",
+      "citation-pbc-q49-line-6-classical-text",
+      "citation-ntt-q49-line-1-classical-text",
+      "citation-ntt-q49-line-2-classical-text",
+      "citation-ntt-q49-line-3-classical-text",
+      "citation-ntt-q49-line-4-classical-text",
+      "citation-ntt-q49-line-5-classical-text",
+      "citation-ntt-q49-line-6-classical-text",
+      "citation-nhl-q49-overview-nhl",
+      "citation-nhl-q49-overview-closing-nhl",
+      "citation-pbc-q49-overview-pbc",
+      "citation-pbc-q49-overview-supplement-pbc",
+      "citation-pbc-q49-overview-thoan-pbc",
+      "citation-pbc-q49-overview-thoan-supplement-pbc",
+      "citation-pbc-q49-overview-menh-supplement-pbc",
+      "citation-pbc-q49-overview-dai-tuong-pbc",
+      "citation-ntt-q49-overview-trinh-di",
+      "citation-ntt-q49-overview-chu-hy",
+      "citation-ntt-q49-overview-tien-nho-chu-hy",
+      "citation-ntt-q49-overview-thoan-trinh-di",
+      "citation-ntt-q49-overview-thoan-chu-hy",
+      "citation-ntt-q49-overview-dai-tuong-trinh-di",
+      "citation-ntt-q49-overview-dai-tuong-chu-hy",
+      "citation-pbc-q49-overview-closing-pbc",
+      "citation-ntt-q49-note-1-ntt",
+      "citation-nhl-q49-line-1-nhl",
+      "citation-pbc-q49-line-1-pbc",
+      "citation-ntt-q49-line-1-trinh-di",
+      "citation-ntt-q49-line-1-chu-hy",
+      "citation-nhl-q49-line-2-nhl",
+      "citation-pbc-q49-line-2-pbc",
+      "citation-ntt-q49-line-2-trinh-di",
+      "citation-ntt-q49-line-2-chu-hy",
+      "citation-pbc-q49-line-2-supplement-pbc",
+      "citation-nhl-q49-line-3-nhl",
+      "citation-pbc-q49-line-3-pbc",
+      "citation-ntt-q49-line-3-trinh-di",
+      "citation-ntt-q49-line-3-chu-hy",
+      "citation-nhl-q49-line-4-nhl",
+      "citation-pbc-q49-line-4-pbc",
+      "citation-ntt-q49-line-4-trinh-di",
+      "citation-ntt-q49-line-4-chu-hy",
+      "citation-nhl-q49-line-5-nhl",
+      "citation-pbc-q49-line-5-pbc",
+      "citation-ntt-q49-line-5-trinh-di",
+      "citation-ntt-q49-line-5-chu-hy",
+      "citation-ntt-q49-line-5-ho-van-phong",
+      "citation-pbc-q49-line-5-supplement-pbc",
+      "citation-nhl-q49-line-6-nhl",
+      "citation-pbc-q49-line-6-pbc",
+      "citation-ntt-q49-line-6-trinh-di",
+      "citation-ntt-q49-line-6-chu-hy",
+      "citation-pbc-q49-line-6-trinh-truyen"
+    ],
+    "note": "Compared complete assigned passages and rendered pages: NHL 286–288; PBC 467–478; NTT 753–765. Original Vietnamese selections preserve commentary, notes and conditions; no source prose or Han quotation is redistributed. This is source comparison, not independent verification approval, an audit ledger decision or certification. Full quotation/translation-layer mapping and audit closure remain open. Edition limitations: NTT 764 đặt văn Tiểu Tượng dưới đầu LỜI KINH trước bản dịch âm Thượng Lục, rồi lặp Tiểu Tượng; PBC 476 cũng đặt đầu Tượng ở chỗ hào cuối. Không dựng lời Hán mới hoặc chọn bản hiệu đính. Lời bàn tính/tài ở PBC 477 được giữ đúng nhãn Trình Truyện qua PBC. PHỤ CHÚ sinh vật ở PBC 469 không được nhập làm sinh học."
+  }
+}

@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 182, "released": 182, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 1614, "missingCitationIds": [] },
-  "citations": { "total": 1560 },
+  "records": { "authored": 187, "released": 187, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 1806, "missingCitationIds": [] },
+  "citations": { "total": 1833 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 48,
+    "reviewed": 52,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -58,13 +58,13 @@
       "hexagram-45",
       "hexagram-46",
       "hexagram-47",
-      "hexagram-48"
-    ],
-    "missingIds": [
+      "hexagram-48",
       "hexagram-49",
       "hexagram-50",
       "hexagram-51",
-      "hexagram-52",
+      "hexagram-52"
+    ],
+    "missingIds": [
       "hexagram-53",
       "hexagram-54",
       "hexagram-55",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 288,
+    "reviewedPositions": 312,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 48,
-        "reviewedLinePositions": 288,
+        "overviewHexagrams": 52,
+        "reviewedLinePositions": 312,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 48,
-        "reviewedLinePositions": 288,
+        "overviewHexagrams": 52,
+        "reviewedLinePositions": 312,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 48,
-        "reviewedLinePositions": 288,
+        "overviewHexagrams": 52,
+        "reviewedLinePositions": 312,
         "missingPilotPositions": []
       }
     ]
@@ -189,7 +189,11 @@
         "hexagram-45",
         "hexagram-46",
         "hexagram-47",
-        "hexagram-48"
+        "hexagram-48",
+        "hexagram-49",
+        "hexagram-50",
+        "hexagram-51",
+        "hexagram-52"
       ]
     },
     {
@@ -245,7 +249,11 @@
         "hexagram-45",
         "hexagram-46",
         "hexagram-47",
-        "hexagram-48"
+        "hexagram-48",
+        "hexagram-49",
+        "hexagram-50",
+        "hexagram-51",
+        "hexagram-52"
       ]
     },
     {
@@ -399,7 +407,8 @@
         "term-hexagram-body",
         "article-hexagram-body-context",
         "article-shi-ying-interaction-context",
-        "article-useful-spirit-rescue-empty-combination-context"
+        "article-useful-spirit-rescue-empty-combination-context",
+        "article-hidden-movement-store-strength-and-branch-context"
       ]
     },
     {
@@ -1295,15 +1304,77 @@
         "citation-pbc-q47-line-6-classical-text"
       ],
       "resolution": "Chọn âm ở vị sáu theo hình quẻ NHL/PBC, nhãn tiếng Việt và lời giải cả ba sách. Không sửa nhãn Hán của edition NTT."
+    },
+    {
+      "recordId": "hexagram-50",
+      "id": "discrepancy-q50-line-5-reference",
+      "status": "resolved",
+      "description": "PBC PDF 484 gọi Cửu Ngũ trong lời Tiểu Tượng hào ba, trong khi phần trước trang ấy và hào năm ở PDF 485 gọi Lục Ngũ. Hình Đỉnh cũng có âm tại vị năm.",
+      "citationIds": [
+        "citation-pbc-q50-line-3-pbc",
+        "citation-pbc-q50-line-5-classical-text",
+        "citation-pbc-q50-overview-structure",
+        "citation-nhl-q50-overview-structure"
+      ],
+      "resolution": "Vị năm giữ âm và tên Lục ngũ theo hình cùng đoạn hào năm. Tóm tắt chỉ gọi ngũ; tên Cửu Ngũ ở nguồn được ghi tại đây, không dùng làm cực tính hay emend nguồn."
+    },
+    {
+      "recordId": "hexagram-51",
+      "id": "discrepancy-q51-line-labels",
+      "status": "resolved",
+      "description": "PBC PDF 491 in nhãn Hán Lục tứ dưới đầu đề Cửu Tứ; NTT PDF 785 in Lục Tứ ở nhãn Hán và dịch âm nhưng dịch nghĩa cùng lời Trình Di gọi Chín Tư. NTT PDF 782 gọi Hào Chín Hai ở dịch nghĩa trong khi nhãn và các lời giải gọi Sáu Hai.",
+      "citationIds": [
+        "citation-pbc-q51-line-4-classical-text",
+        "citation-ntt-q51-line-4-classical-text",
+        "citation-ntt-q51-line-2-classical-text",
+        "citation-nhl-q51-overview-structure",
+        "citation-pbc-q51-overview-structure"
+      ],
+      "resolution": "Vị hai giữ âm, vị bốn giữ dương theo hình NHL/PBC, nhãn NHL và giải thích chất hào. Ghi nhãn nguồn trái nhau, không sửa chữ in hoặc tạo vị trí mới."
+    },
+    {
+      "recordId": "hexagram-51",
+      "id": "discrepancy-q51-line-2-reference",
+      "status": "resolved",
+      "description": "Trong đoạn Chu Hy ở hào hai, NTT PDF 783 gọi Sáu Năm cưỡi Chín Đầu. PBC PDF 490 có Cửu Nhị trong câu đang bàn bản chất âm của Lục Nhị.",
+      "citationIds": [
+        "citation-ntt-q51-line-2-chu-hy",
+        "citation-pbc-q51-line-2-pbc",
+        "citation-nhl-q51-line-2-nhl",
+        "citation-ntt-q51-line-2-classical-text"
+      ],
+      "resolution": "Cấu trúc và hào đang tóm tắt là vị hai âm theo nhãn, hình và toàn đoạn; không nhập các tên gọi trái nhau thành quan hệ năm–một hoặc nhị dương. Tóm tắt Chu Hy giữ phần nhu trung tự giữ và các chỗ ông chưa rõ, không chép lại câu tham chiếu sai."
+    },
+    {
+      "recordId": "hexagram-52",
+      "id": "discrepancy-q52-pbc-number",
+      "status": "resolved",
+      "description": "Mục lục PBC PDF 5 ghi cả Bát Thuần Chấn và Bát Thuần Cấn là 51, rồi Tiệm là 53. Đầu thân bài Cấn ở PDF 493 cũng in 51, nhưng tên, hình và phần giải đều là Cấn trên Cấn dưới.",
+      "citationIds": [
+        "citation-pbc-q52-contents-number",
+        "citation-pbc-q52-overview-structure",
+        "citation-nhl-q52-overview-structure",
+        "citation-ntt-q52-overview-structure"
+      ],
+      "resolution": "Giữ nguyên chứng tích số 51 của PBC và ánh xạ đoạn Cấn vào hexagram-52 theo nội dung Cấn và số 52 của NHL. Không xem quẻ 52 là thiếu, không đổi ID hoặc emend đầu đề nguồn."
+    },
+    {
+      "recordId": "hexagram-52",
+      "id": "discrepancy-q52-line-labels",
+      "status": "resolved",
+      "description": "NHL PDF 295 đặt dịch nghĩa Hào 3, âm ngay dưới nhãn Lục tứ. PBC PDF 497 gọi Lục Tam ở đoạn Tiểu Tượng hào hai dù đoạn đang giải Cửu Tam ở trên và hình Cấn có dương thứ ba.",
+      "citationIds": [
+        "citation-nhl-q52-line-4-classical-text",
+        "citation-pbc-q52-line-2-pbc",
+        "citation-pbc-q52-line-3-classical-text",
+        "citation-nhl-q52-overview-structure"
+      ],
+      "resolution": "Vị bốn giữ âm và là hào thứ tư, vị ba giữ dương, theo hình và các nhãn nhất quán của ba sách. Không đổi nhãn in; phần tóm tắt về người hai phải theo người ba không nhập nhãn Lục Tam thành cấu trúc mới."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-49",
-      "hexagram-50",
-      "hexagram-51",
-      "hexagram-52",
       "hexagram-53",
       "hexagram-54",
       "hexagram-55",
@@ -1321,17 +1392,17 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-49", "hexagram-50", "hexagram-51", "hexagram-52"],
+    "hexagramIds": ["hexagram-53", "hexagram-54", "hexagram-55", "hexagram-56"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến tiếp tục Cách, Đỉnh, Chấn, Cấn và BPCT Phần I, Chương 6, câu 25–32. Bốn mươi tám quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 17–24 giữ riêng phú, bình giải và chú thích 4. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
+    "note": "Dự kiến tiếp tục Tiệm, Quy Muội, Phong, Lữ và BPCT Phần I, Chương 6, câu 33–40. Năm mươi hai quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 25–32 giữ riêng phú, bình giải và chú thích 5–6. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2067,
+        "required": 2072,
         "current": 84,
-        "missing": 1983,
+        "missing": 1988,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1340,8 +1411,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 1983 },
-        { "code": "released-claim-coverage-incomplete", "count": 1417 }
+        { "code": "missing-decision", "count": 1988 },
+        { "code": "released-claim-coverage-incomplete", "count": 1609 }
       ]
     },
     "certification": {
@@ -1349,7 +1420,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2067,
+        "required": 2072,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
