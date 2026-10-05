@@ -18,7 +18,7 @@ New interpretation, calendar, or UI behavior.
 
 - [ ] Full source classification and complete in-scope coverage.
 - [ ] 64 quẻ, 384 positions, minimum 1,152 three-book cells, and special passages.
-- [ ] All group ledgers, fixtures, source fingerprints, and specialist decisions.
+- [ ] All group ledgers, fixtures, source fingerprints, and verification decisions under the [AI review policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence).
 - [ ] Run the implemented completion gates; any stale or missing evidence rejects certification.
 - [ ] Feat-097 correction probes passed before certification; the released snapshot matches all approval inputs.
 - [ ] Remove unaudited legacy fallback, or explicitly classify retained software conventions.
@@ -33,7 +33,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Confirm all audit and specialist decisions match the released snapshot.
+1. Confirm all audit and verification decisions match the released snapshot.
 2. Run completion gates and inspect every required coverage total.
 3. Record source limitations, verify, and commit the certified snapshot.
 

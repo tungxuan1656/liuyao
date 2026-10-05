@@ -29,7 +29,7 @@ Actual NTT commentators remain separate attribution layers within those cells.
 | Learning articles    | Pending                          | Build ordered lessons and independently checked examples from reviewed claims.               |
 
 Current source comparison records Codex passage review.
-It does not establish complete chapter coverage or independent specialist approval.
+It does not establish complete chapter coverage or independent verification approval.
 Four legacy terms and two legacy rules also remain; software conventions need project-contract evidence rather than invented book citations.
 
 ## Missing quẻ and hào
@@ -65,7 +65,7 @@ Execution statuses live in [the feature index](../feature_index.json); feat-101,
 Creating features does not execute authoring, audits, web changes, or certification.
 
 1. Complete remaining source authoring in feat-045–066; run eligible audits as their evidence prerequisites pass.
-2. Reconcile topic/source findings in feat-094, obtain independent specialist review in feat-095, and certify the corpus in feat-096.
+2. Reconcile topic/source findings in feat-094, obtain separate AI verification in feat-095, and certify the corpus in feat-096.
 3. Start web integration with feat-098 after feat-101; it uses released records and does not wait for full-corpus certification. Then complete feat-099–100 and runtime checks feat-102–103.
 4. Run independent production delivery feat-014–016 when convenient; it need not block corpus or web work.
 5. Repeat affected evidence checks after input changes; preserve earlier decisions and their reviewed inputs.
@@ -93,7 +93,7 @@ Split a selected feature only when its checkpoints have distinct acceptance or b
 | Conventions, learning, closure   | [064](feat-064.md)–[066](feat-066.md) | Legacy definitions resolve; lessons and every inventory unit have supported dispositions.                                       |
 | All quẻ and hào                  | [068](feat-068.md)–[083](feat-083.md) | 64 quẻ and 384 distinct position decisions pass with required layers.                                                           |
 | All source groups and tables     | [084](feat-084.md)–[093](feat-093.md) | Every assigned unit and independent expected table passes.                                                                      |
-| Reconciliation and certification | [094](feat-094.md)–[096](feat-096.md) | Current decisions, resolved findings, and specialist approval satisfy all gates.                                                |
+| Reconciliation and certification | [094](feat-094.md)–[096](feat-096.md) | Current decisions, resolved findings, and verification approval satisfy all gates.                                              |
 | Web reference integration        | [098](feat-098.md)–[100](feat-100.md) | Released quẻ/hào, result contexts, and topic/article routes satisfy web/offline checks; unreleased content has explicit states. |
 | Runtime fidelity and scale       | [102](feat-102.md)–[103](feat-103.md) | Snapshot-bound projections, rendered evidence, budgets, and offline updates pass.                                               |
 
@@ -216,13 +216,13 @@ Synthetic validation fixtures test gate behavior without establishing doctrine o
 
 ## Final gates and corrections
 
-| Feature                 | Planned work                                            |
-| ----------------------- | ------------------------------------------------------- |
-| [feat-094](feat-094.md) | Close all topic audits contradictions and exclusions    |
-| [feat-095](feat-095.md) | Obtain independent specialist review of the full corpus |
-| [feat-096](feat-096.md) | Certify corpus completion against the evidence gates    |
+| Feature                 | Planned work                                         |
+| ----------------------- | ---------------------------------------------------- |
+| [feat-094](feat-094.md) | Close all topic audits contradictions and exclusions |
+| [feat-095](feat-095.md) | Verify the full corpus with AI models                |
+| [feat-096](feat-096.md) | Certify corpus completion against the evidence gates |
 
-Final certification requires complete source classification, complete included coverage, current unit decisions, and named independent approval.
+Final certification requires complete source classification, complete included coverage, current unit decisions, and separate verification approval under the [AI review policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence).
 The [correction drill](feat-097.md) runs before authoring and remains a prerequisite for final certification.
 Source limitations and excluded uncertainty remain visible in the reviewed snapshot.
 Coverage counts do not establish numerical certainty or predictive efficacy.
@@ -255,4 +255,4 @@ The [quality contract](../docs/product-specs/knowledge-quality.md#intended-runti
 With feat-101, feat-067, and feat-097 complete, continue the remaining content sequence at feat-045 and start eligible audits as their prerequisites pass.
 The independent web lane can start at feat-098 using released records; then complete feat-099–100 and runtime checks feat-102–103 without waiting for feat-096.
 Run production delivery feat-014–016 independently when convenient.
-After all authoring and audits, complete feat-094–096 for corpus reconciliation, specialist review, and certification.
+After all authoring and audits, complete feat-094–096 for corpus reconciliation, AI verification, and certification.

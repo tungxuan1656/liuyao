@@ -24,6 +24,8 @@ Third-party texts, quotations, translations, datasets, images, and other materia
 
 Do not add third-party material to `packages/knowledge/data/` unless its provenance and usage rights are documented.
 
+Consulted research editions are used for local inspection and fact verification; their text is not redistributed in the repository. Knowledge authoring produces original summaries, structured domain facts, and source citations. Knowledge authoring, publication, and audit do not require a separate rights-clearance approval. Retain source rights metadata and the third-party material boundaries above.
+
 ## Trademarks
 
 The software license does not grant rights to project names, logos, product branding, or other trademarks.

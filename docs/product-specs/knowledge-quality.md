@@ -37,8 +37,7 @@ Every published domain claim needs:
 - a printed page when the edition provides one;
 - the applicable ruleset for a calculation claim;
 - attribution for commentary, translator notes, or supplementary content;
-- the original summary's author or review record;
-- documented content usage rights under [Licensing](../../LICENSING.md).
+- the original summary's author or review record.
 
 A source title alone does not establish a claim.
 A project implementation establishes current behavior, not independent doctrinal evidence.
@@ -49,12 +48,12 @@ Project conventions require an accepted specification section and reviewed revis
 
 The JSON corpus encodes these content review states. They are separate from Harness feature statuses.
 
-| State        | Meaning                                            | Publication                                           |
-| ------------ | -------------------------------------------------- | ----------------------------------------------------- |
-| `draft`      | Passage located and claim extracted                | Keep outside released knowledge.                      |
-| `reviewed`   | Passage, attribution, and expected meaning checked | Eligible when rights and structural checks also pass. |
-| `disputed`   | A source conflict lacks a supported resolution     | Withhold the claim from calculation authority.        |
-| `superseded` | A reviewed replacement exists                      | Retain the replacement route in review history.       |
+| State        | Meaning                                            | Publication                                     |
+| ------------ | -------------------------------------------------- | ----------------------------------------------- |
+| `draft`      | Passage located and claim extracted                | Keep outside released knowledge.                |
+| `reviewed`   | Passage, attribution, and expected meaning checked | Eligible when structural checks also pass.      |
+| `disputed`   | A source conflict lacks a supported resolution     | Withhold the claim from calculation authority.  |
+| `superseded` | A reviewed replacement exists                      | Retain the replacement route in review history. |
 
 Record source review in each authored JSON record.
 The release manifest accepts reviewed records only.
@@ -81,7 +80,7 @@ Package tests protect reusable behavior. [Development](../development.md) owns t
 
 **Observed:** The reviewed JSON corpus records edition fingerprints, claim citations, attribution, and source-comparison metadata.
 The [coverage report](../../packages/knowledge/reports/coverage.json) distinguishes released content, missing commentary, and unaudited legacy records.
-Codex reviewed the cited passages in released batches. Independent specialist approval is not claimed.
+Codex reviewed the cited passages in released batches. Separate corpus-wide verification approval is not claimed.
 
 The compatibility catalog still provides 8 trigrams and 64 hexagrams.
 Unmigrated records remain explicitly unaudited in the JSON snapshot.
@@ -95,7 +94,7 @@ The publication gate applies to each new batch.
 
 **Intended:** The [completion roadmap](../../features/knowledge-roadmap.md) separates authoring from subsequent audits.
 Creating these features does not execute their reviews.
-The current `reviewed` state records source comparison, not independent specialist certification.
+The current `reviewed` state records source comparison, not corpus-wide verification or certification.
 
 ### Source inventory
 
@@ -143,21 +142,25 @@ Learning explanations and worked examples must resolve to reviewed claims and in
 
 Each decision records unit and claim IDs, exact citations, findings, reviewer identity, date, and disposition.
 Bind it to the source fingerprint and reviewed record hash.
-Keep source comparison and independent specialist approval as distinct evidence fields.
-Specialist approval requires a named reviewer distinct from Codex and an explicit decision for every assigned unit.
-Unavailable specialist review remains pending.
+Keep source comparison and separate verification approval as distinct evidence fields.
+AI model reviewers can approve verification and certification; human specialist approval is not required.
+Use a separate review run from authoring and source comparison; a different model is optional.
+Verify each assigned unit against the supplied passages and current inputs, not only the author's summary.
+Record the model provider, model ID, review-run identity, date, scope, findings, and an explicit decision for each unit.
+Human review is optional; identify AI review as AI review, not human specialist certification.
+Missing review stays pending, and rejected or unresolved findings require correction before approval.
 
 ### Completion and later corrections
 
 **Intended:** Evidence-derived validation replaces the current report's fixed incomplete flag.
 The ledger format and validation contract belong in the [knowledge model](../design-docs/knowledge-model.md) when implemented.
 Missing, rejected, stale, or unresolved included units must keep completion gates closed.
-Required specialist approval also keeps the final certification gate closed until recorded.
+Required verification approval also keeps the final certification gate closed until recorded.
 
 Create the validation contract after source inventory, before further bulk authoring.
 Accept completed units incrementally while unfinished units keep global completion closed.
 Prove invalidation and restoration with isolated fixtures before final certification.
-Synthetic approvals in validation fixtures never count as specialist decisions for the corpus.
+Synthetic approvals in validation fixtures never count as verification decisions for the corpus.
 
 Published explanations require current released supporting claims or accepted project-contract evidence.
 Reject missing, draft, disputed, superseded, stale, or circular supporting dependencies.
@@ -189,7 +192,7 @@ Show review scope and snapshot identity without implying unrecorded independent 
 Package checks verify reusable projections and reference completeness.
 Direct web checks verify interaction, accessibility, rendered evidence, and offline routes under the [development contract](../development.md).
 Bind their evidence to the tested snapshot and projections; repeat affected checks after either changes.
-Runtime fidelity does not replace passage review or specialist approval.
+Runtime fidelity does not replace passage review or separate verification approval.
 
 ## Learning coverage
 
@@ -204,6 +207,8 @@ The books alone do not select those software conventions.
 
 ## Publication gate
 
-Publish a content change only after its provenance, rights, structural validation, and domain review pass.
+Publish a content change only after its provenance, structural validation, and domain review pass.
 Release acceptance remains in [V1 MVP](v1-mvp.md).
 When the edition, rule, or explanation changes, repeat the affected evidence review.
+
+Iterative authoring produces original Vietnamese summaries and structured facts with verified citations; every batch must pass the checks above. Domain review checks passages, attribution, and expected meaning; it does not claim corpus-wide verification approval. Corpus-wide verification and certification remain separate in [feat-095](../../features/feat-095.md) and [feat-096](../../features/feat-096.md). They do not block batch authoring. [Licensing](../../LICENSING.md#third-party-material) defines source-use boundaries without a separate rights-clearance gate.

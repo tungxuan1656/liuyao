@@ -16,7 +16,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Four edition fingerprints, exact citations, original-prose rights.
+- [ ] Four edition fingerprints, exact citations, and original summaries under the [publication gate](../docs/product-specs/knowledge-quality.md#publication-gate).
 - [ ] Vocabulary, aliases, and the six project definitions.
 - [ ] All eight trigram patterns and attributed associations.
 - [ ] Casting, moving lines, and every supplied transformation example.

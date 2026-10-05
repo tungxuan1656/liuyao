@@ -25,7 +25,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Every assigned source unit and claim has a current accepted decision, or a specifically reviewed exclusion.
 - [ ] Feat-066 authoring closure and all required unit audits are complete for the same snapshot.
 - [ ] Report 64 quẻ, 384 positions, and at least 1,152 book-position cells; count extra author layers separately.
-- [ ] A reviewer distinct from the original summarizer rechecks source corrections; preserve legitimate disagreements.
+- [ ] A separate AI review run rechecks source corrections under the [verification policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence); preserve legitimate disagreements.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs

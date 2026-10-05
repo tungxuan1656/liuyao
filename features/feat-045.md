@@ -24,8 +24,12 @@ New interpretation, calendar, or UI behavior.
 - [ ] BPCT sentences 17–24: each numbered passage and its notes.
 - [ ] Replace the four legacy quẻ without changing stable IDs.
 - [ ] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [ ] Source-compared claims in quẻ 45–48 and BPCT 17–24 pass the corpus publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.
+
+## Limits
+
+This batch follows the [publication gate](../docs/product-specs/knowledge-quality.md#publication-gate). Corpus-wide specialist review and certification do not block authoring. This batch produces original Vietnamese summaries and structured facts without redistributing source books.
 
 ## Relevant docs
 
