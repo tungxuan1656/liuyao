@@ -471,6 +471,84 @@ not an executable/exhaustive table; no two-moving requirement is generalized to 
 No minimum repeated-branch count, calendar boundary, scoring rule, automatic interpretation or efficacy
 certification is inferred. Global inventory, source audit, separate verification and certification remain open.
 
+### Quẻ 53-56 and BPCT 33-40 selected comparison
+
+[Batch-fourteen classical citations](../../packages/knowledge/data/citations/batch-fourteen-hexagrams.json)
+route to original Vietnamese selections for [Tiệm](../../packages/knowledge/data/hexagrams/hexagram-53.json),
+[Quy Muội](../../packages/knowledge/data/hexagrams/hexagram-54.json),
+[Phong](../../packages/knowledge/data/hexagrams/hexagram-55.json) and
+[Lữ](../../packages/knowledge/data/hexagrams/hexagram-56.json).
+Component source comparison read complete assigned passages and visually reviewed contact sheets covering
+NHL PDF 297–308, PBC 501–531 and NTT 802–851. Full-size focused NTT images at 813, 836, 847 and 851
+and an enlarged PBC heading/diagram composite were additionally inspected. Contact-sheet review is not
+individual full-size review of all pages. NHL/PBC diagrams and NTT named quái/line labels support the
+six-line structures; NHL printed folios match 297–308, while no PBC/NTT numerical folios were invented.
+All six positions retain NHL, PBC, Trình Di and Chu Hy separately; NTT transmission stays through
+Ngô Tất Tố. Supplements, additional commentators and translator notes are not merged into those layers.
+Complete original/translation-layer mapping, full rosters and per-cell audit remain open under feat-081.
+
+Bounded discrepancies and display resolutions are recorded in the quẻ JSON; resolution does not repair
+or certify the supplied text:
+
+- Tiệm preserves PBC/NTT line-five original forms beside the lăng/gò reading, and NHL/NTT line-six
+  forms beside quì/cloud readings. Hồ An Định, Trình Di and Chu Hy's proposals remain opinions.
+  NHL's tiểu nhân/tiểu tử, hãn/khản and hồng/sếu differences remain source-specific. NTT 803 labels
+  a Thoán passage Tượng; 805 has mixed script and an incomplete reading; 806 conflicts about speech;
+  808 has an inconsistent negative. PBC 506 calls yin nhị Cửu Nhị. None supplies reconstructed text.
+- Quy Muội keeps NTT 814's truncated Trình Di paragraph and 815's translation/negative discrepancy
+  visible, without supplying the absent ending. NTT 822's line-four Tượng original/reading forms differ.
+  Tu-as-waiting and tu-as-low-status-girl remain alternatives; Khâu Kiến An and Chu Hán Thượng are
+  separate commentators, with the latter's Lục Chấn testimony reported through him, not independently read.
+- Phong keeps NHL 304's ngũ versus PBC/NTT's thượng in the right-arm explanation. PBC 520 calls
+  Lục Nhị Cửu Nhị, and 522 describes ngũ inconsistently in its talent roster. NTT bái/mạt variants,
+  Chu Hy's supplied softness wording at 836 and line-six alternatives remain visible. NHL's choice of
+  PBC's line-six reading is identified as that choice, not an independent witness of identical meaning.
+- Lữ retains NTT 841's Sáu Trên/ngôi Năm and PBC 527/529/530's inconsistent position/polarity labels.
+  NHL/PBC's same-yin nhị/ngũ response wording does not redefine structural chính ứng. NTT minh thuận
+  beside commentary/note carefulness and PBC/NHL minh thận, and vô cữu/vô vưu at line two, remain distinct.
+  Trinh punctuation at line three, tư phủ's money/protection/sharp-axe readings and the line-five arrow
+  and thượng đãi explanations are not harmonized. NTT 847 repeats the Chu Hy heading before quoted
+  material and separately names Từ Tiến Trai and Hồ Song Phương; these remain supplemental attributions.
+
+All 24 attached numbered NTT notes remain represented: Tiệm 1–5 at PDF 813; Quy Muội 1–4 at 825;
+Phong 1–5 at 838 and 6–7 at 839; Lữ 1–8 at 851. Tiệm note 3 attributes Ngô Lâm Xuyên's opinion through NTT;
+identical notes 4–5 keep separate IDs. Lữ note 8 joins overlapping retained adjacent portions into
+Đoài/Tốn; it is not fixed-position polarity substitution, changed primary quái or Nạp Giáp transformation.
+PBC explicit PHỤ CHÚ and closing selections keep their own locators.
+
+Gender hierarchy, concubinage, sacrificial roles and political judgments stay historical author views,
+not modern duties. Named historical figures and religious/supernatural comparisons remain source
+illustrations, not independently verified history or efficacy. References to Tốn, Ngữ Lục, Hán thư,
+Thiên quan and Kinh Thi are supplied authors' testimony, not additional whole-work review.
+No medical, astronomical, calendar, ritual, predictive or automated-interpretation authority is released.
+
+[Batch-fourteen advanced citations](../../packages/knowledge/data/citations/batch-fourteen-advanced.json)
+support the [BPCT 33–40 article](../../packages/knowledge/data/liuyao/hidden-spirit-release-restraint-and-combination-context.json).
+Component review read full extracted context at PDFs 1–3, 86–91 and 403, and directly inspected individual
+images at 1–3, 87–90 and 403. Generated images 86/91 are not counted as inspected.
+Sentence 33 is on 87 (printed 73); sentence 34's verse crosses 87–88 (73–74), with commentary on 88;
+35–37 are complete on 88 (74); 38–40 are on 89 (75). The earlier inventory continuation lead for 37
+was incorrect: PDF 89 starts 38. Sentence 41 begins on 89 and continues at 90; it is not absorbed.
+No table or diagram occurs in the selected passages.
+
+Eight verse summaries report the supplied edition's Lưu Bá Ôn credits separately from eight
+Vương Hồng Tự commentaries transmitted by Vĩnh Cao; front-matter evidence is reused, not duplicated.
+Note 7's marker follows Tính dẫn in sentence 36 despite its footer after 37; note 8 follows trung hòa
+in sentence 39 despite its footer beneath later passages. These are the only attached notes in 33–40.
+Vĩnh Cao's reused PDF-403 criticism is separate dissent, not an attached note or new full question review.
+
+Sentence 33's hidden Dụng lâm Không differs from Phi Không in 35; 34 keeps support to Phục and
+xung khai of Phi as distinct targets. Sentence 36 preserves the commentator's Tính dẫn statement beside
+note 7's objection rather than resolving the inconsistency. Sentence 37's Nhật/Nguyệt authority stays
+attributed without harmonizing sentence 29 or erasing Vĩnh Cao's Hình/Hại dissent. Sentence 38 retains
+xung and xung/khắc of the Mộ line without a threshold/table or mortality/ritual advice. Sentence 39's
+Thân means Thế locally, not Nguyệt quái thân; no-official-position and moderate-control conditions stay
+beside note 8's self-question/vượng-Thế qualification. Sentence 40's Đức means hợp, not human morality;
+its four descriptions, hợp/xung warning and Kỵ counterpart do not invent a missing sinh hợp object or
+an exhaustive priority rule. No verse quotation, replacement translation or source repair is published.
+Source comparison supports bounded authoring only; feat-085's unit/layer audit and corpus-wide
+independent verification/certification remain open.
+
 ### Classical exclusions
 
 - Phệ Hạp's second-line explanations use ứng for the fifth line, although both positions are yin.
