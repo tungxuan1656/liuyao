@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "contentSnapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:1cc3e56aa56c0a1e1e715b4b5c2e0b18c67b7173a017b0cdf9c00364d2a42464",
+  "contentSnapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:cb00dae72abe47ed06578a27739ef2425ce644c4385496e5606d2a4b90167a5e",
   "registry": {
-    "sha256": "9ff23ca8016a18bc04a61ad7d252687b9a75d29532bc39382a7dfd6b5a4ad393",
-    "revision": 2,
+    "sha256": "c688848d98b1aeed3f9a03b125ab3fe3c34c9e23898963414c6afff5e62e8d37",
+    "revision": 3,
     "counts": {
       "overviewCells": 192,
       "positionCells": 1152,
@@ -19,9 +19,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2062,
+        "required": 2067,
         "current": 84,
-        "missing": 1978,
+        "missing": 1983,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -30,8 +30,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 1978 },
-        { "code": "released-claim-coverage-incomplete", "count": 1231 }
+        { "code": "missing-decision", "count": 1983 },
+        { "code": "released-claim-coverage-incomplete", "count": 1417 }
       ]
     },
     "certification": {
@@ -39,7 +39,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2062,
+        "required": 2067,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
@@ -83,7 +83,7 @@
   },
   "totals": {
     "releasedClaimsCovered": 197,
-    "releasedClaimsRequired": 1428,
+    "releasedClaimsRequired": 1614,
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
@@ -94,6 +94,6 @@
     "approvedDecisions": 0,
     "currentDecisions": 84,
     "rejectedDecisions": 0,
-    "unresolvedDecisions": 1978
+    "unresolvedDecisions": 1983
   }
 }

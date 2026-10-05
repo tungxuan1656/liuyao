@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-45",
-        "name": "Trạch Địa Tụy",
-        "aliases": [],
-        "explanation": "Quẻ số 45 theo thứ tự Văn Vương, gồm nội quái Khôn và ngoại quái Đoài.",
-        "kingWenNumber": 45,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-earth",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-46",
-        "name": "Địa Phong Thăng",
-        "aliases": [],
-        "explanation": "Quẻ số 46 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Khôn.",
-        "kingWenNumber": 46,
-        "upperTrigramId": "trigram-earth",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-47",
-        "name": "Trạch Thủy Khốn",
-        "aliases": [],
-        "explanation": "Quẻ số 47 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Đoài.",
-        "kingWenNumber": 47,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-48",
-        "name": "Thủy Phong Tỉnh",
-        "aliases": [],
-        "explanation": "Quẻ số 48 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Khảm.",
-        "kingWenNumber": 48,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-49",
         "name": "Trạch Hỏa Cách",
         "aliases": [],

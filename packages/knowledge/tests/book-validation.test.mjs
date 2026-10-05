@@ -46,7 +46,7 @@ describe('book corpus publication boundary', () => {
         ),
       0,
     );
-    expect(claimCount).toBe(1428);
+    expect(claimCount).toBe(1614);
     expect(report.complete).toBe(false);
     expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
     expect(
@@ -67,13 +67,13 @@ describe('book corpus publication boundary', () => {
       expect(record.review.status).toBe('reviewed');
       expect(record.claims.some(claim => claim.kind === 'structural-fact')).toBe(true);
     }
-    expect(report.hexagrams.reviewed).toBe(44);
-    expect(report.records.released).toBe(177);
-    expect(report.lines.reviewedPositions).toBe(264);
-    expect(report.hexagrams.missingIds).toHaveLength(20);
+    expect(report.hexagrams.reviewed).toBe(48);
+    expect(report.records.released).toBe(182);
+    expect(report.lines.reviewedPositions).toBe(288);
+    expect(report.hexagrams.missingIds).toHaveLength(16);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({
-      overviewHexagrams: 44,
-      reviewedLinePositions: 264,
+      overviewHexagrams: 48,
+      reviewedLinePositions: 288,
     });
     expect(
       report.lines.byAuthor.find(row => row.author === 'Phan Bội Châu').missingPilotPositions,
