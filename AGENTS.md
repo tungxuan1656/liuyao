@@ -62,6 +62,7 @@ If baseline verification fails, record the failure. Fix it only when the current
 - Follow dependency and change-placement boundaries in `ARCHITECTURE.md`.
 - Follow test-placement and verification policy in `docs/development.md`.
 - Follow licensing boundaries in `LICENSING.md`.
+- Knowledge authoring features (such as `feat-045`) create original summaries and structured domain facts without redistributing source texts; open corpus-wide specialist review, rights clearance, and certification gates are tracked in separate audit features (e.g. `feat-078`, `feat-095`, `feat-096`) and do not block sequential authoring.
 - Treat future behavior as `Intended` or `Proposed`; never present it as implemented.
 - Treat `.agents/skills/` as installed tooling during product work unless the user asks to maintain skills.
 - Update `init.sh` when repository verification commands or declared workspaces change.

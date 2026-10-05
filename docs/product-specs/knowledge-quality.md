@@ -38,7 +38,7 @@ Every published domain claim needs:
 - the applicable ruleset for a calculation claim;
 - attribution for commentary, translator notes, or supplementary content;
 - the original summary's author or review record;
-- documented content usage rights under [Licensing](../../LICENSING.md).
+- documented content usage rights under [Licensing](../../LICENSING.md) (or research-only attribution with original non-infringing summaries during authoring phases).
 
 A source title alone does not establish a claim.
 A project implementation establishes current behavior, not independent doctrinal evidence.
@@ -207,3 +207,5 @@ The books alone do not select those software conventions.
 Publish a content change only after its provenance, rights, structural validation, and domain review pass.
 Release acceptance remains in [V1 MVP](v1-mvp.md).
 When the edition, rule, or explanation changes, repeat the affected evidence review.
+
+For iterative authoring features, claims pass the publication gate when they are derived as original Vietnamese summaries and structured facts with verified citations. Corpus-wide specialist review, rights clearance, and certification remain open in dedicated audit tracks (e.g., feat-078, feat-095, feat-096) and do not block batch authoring.

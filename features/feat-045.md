@@ -24,8 +24,12 @@ New interpretation, calendar, or UI behavior.
 - [ ] BPCT sentences 17–24: each numbered passage and its notes.
 - [ ] Replace the four legacy quẻ without changing stable IDs.
 - [ ] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [ ] Source-compared claims in quẻ 45–48 and BPCT 17–24 pass the corpus publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.
+
+## Limits
+
+Following the precedents in `feat-044` and `progress.md`, corpus-wide specialist review, rights clearance, and certification remain open in the broader audit track (`feat-078`, `feat-095`, `feat-096`); they do not block this authoring batch. This batch authors original Vietnamese summaries and structured facts without claiming full rights clearance or redistributing source books.
 
 ## Relevant docs
 
