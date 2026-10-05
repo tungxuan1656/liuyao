@@ -46,5 +46,5 @@ Corpus authoring or certification, automated interpretation, calendar analysis, 
 
 - State: todo.
 - Evidence: Design recorded; implementation and web verification have not started.
-- Dependencies: See [feature index](../feature_index.json); full-corpus completion is not required.
-- Next: Complete feat-101, select this feature, and assess external-plan criteria before coding.
+- Dependencies: See [feature index](../feature_index.json); released content is usable without full-corpus certification.
+- Next: With feat-101 complete, select this feature and assess external-plan criteria before coding.
