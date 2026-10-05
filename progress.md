@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-05 — feat-078 scoped audit finalized
+
+**State**: done for scoped local implementation and audit acceptance; coordinator commit, exact-SHA review, PR, and merge remain pending.
+**Done**: Completed independent AI source comparison for four overviews and all 24 positions: 84 current accepted decisions, 308 layer entries, and a 197-claim union. Recorded source errors, exclusions, and remainders explicitly; this is not full-corpus closure.
+**Evidence**: Coordinator receipt `sh_10a410857001tx6Qv6i1EXnh2u` passed `./init.sh`, format, lint, corpus `--check-books --check`, and diff checks; 440 tests passed (181 core, 259 knowledge). See the [feat-078 ledgers](features/feat-078.md) and linked four JSON/Markdown records. External ora-44 report found no blockers in scope.
+**Blockers**: Specialist review is pending for all 84 decisions; approved decisions remain zero. Global gates remain closed; unresolved source rosters/discovery and certification remain. No full-corpus coverage or rights clearance is claimed.
+**Next**: Coordinator commits the exact owned batch and requests exact-SHA review, then opens the PR; do not activate feat-045 before feat-078 merges.
+
 ## 2026-10-05 — feat-044 implementation finalized
 
 **State**: done for implementation and local acceptance; exact-SHA review, PR, and merge remain pending.

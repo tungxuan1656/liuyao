@@ -17,6 +17,36 @@
       "attributedTo": "Nguyễn Hiến Lê"
     },
     {
+      "id": "citation-nhl-q41-overview-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Tổng quan và cấu trúc",
+        "pdfPageStart": 261,
+        "pdfPageEnd": 261,
+        "printedPageStart": "261",
+        "printedPageEnd": "261"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q41-overview-closing",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Đại ý quẻ — kết luận",
+        "pdfPageStart": 263,
+        "pdfPageEnd": 264,
+        "printedPageStart": "263",
+        "printedPageEnd": "264"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
       "id": "citation-nhl-q41-line-1-classical-text",
       "sourceId": "source-book-nhl",
       "editionId": "edition-nhl-supplied",
@@ -99,9 +129,9 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Hào 3 — diễn giải",
         "pdfPageStart": 262,
-        "pdfPageEnd": 262,
+        "pdfPageEnd": 263,
         "printedPageStart": "262",
-        "printedPageEnd": "262"
+        "printedPageEnd": "263"
       },
       "textLayer": "author-commentary",
       "attributedTo": "Nguyễn Hiến Lê"
@@ -223,6 +253,45 @@
       "attributedTo": "Phan Bội Châu"
     },
     {
+      "id": "citation-pbc-q41-overview-dai-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Đại Tượng Truyện — tổng quan",
+        "pdfPageStart": 397,
+        "pdfPageEnd": 398
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q41-overview-dai-tuong-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Đại Tượng Truyện — kinh văn",
+        "pdfPageStart": 397,
+        "pdfPageEnd": 398
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q41-overview-phu-chu",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Phụ chú — tổng kết ba nghĩa của Tổn",
+        "pdfPageStart": 403,
+        "pdfPageEnd": 403
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
       "id": "citation-pbc-q41-line-1-classical-text",
       "sourceId": "source-book-pbc",
       "editionId": "edition-pbc-supplied",
@@ -243,7 +312,7 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Hào 1 — diễn giải",
         "pdfPageStart": 398,
-        "pdfPageEnd": 398
+        "pdfPageEnd": 399
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -295,7 +364,7 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Hào 3 — diễn giải",
         "pdfPageStart": 399,
-        "pdfPageEnd": 400
+        "pdfPageEnd": 401
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -321,7 +390,7 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Hào 4 — diễn giải",
         "pdfPageStart": 401,
-        "pdfPageEnd": 401
+        "pdfPageEnd": 402
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -412,7 +481,7 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 636,
-        "pdfPageEnd": 640
+        "pdfPageEnd": 641
       },
       "textLayer": "author-commentary",
       "attributedTo": "Chu Hy"
@@ -442,6 +511,58 @@
       },
       "textLayer": "supplement",
       "attributedTo": "Hồ Vân Phong"
+    },
+    {
+      "id": "citation-ntt-q41-overview-tien-nho-uong-nghien-chuong",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Lời bàn Tiên Nho — hào 5",
+        "pdfPageStart": 648,
+        "pdfPageEnd": 648
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Uông Nghiện Chương, được dẫn trong lời Tiên Nho"
+    },
+    {
+      "id": "citation-ntt-q41-overview-dai-tuong-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Đại Tượng Truyện — tổng quan",
+        "pdfPageStart": 641,
+        "pdfPageEnd": 641
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn"
+    },
+    {
+      "id": "citation-ntt-q41-overview-dai-tuong-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Đại Tượng Truyện — giải nghĩa",
+        "pdfPageStart": 641,
+        "pdfPageEnd": 641
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q41-overview-dai-tuong-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Sơn Trạch Tổn",
+        "section": "Đại Tượng Truyện — Bản nghĩa",
+        "pdfPageStart": 641,
+        "pdfPageEnd": 641
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
     },
     {
       "id": "citation-ntt-q41-line-1-classical-text",
@@ -477,7 +598,7 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Hào 1 — diễn giải",
         "pdfPageStart": 641,
-        "pdfPageEnd": 642
+        "pdfPageEnd": 643
       },
       "textLayer": "author-commentary",
       "attributedTo": "Chu Hy"
@@ -581,7 +702,7 @@
         "chapter": "Quẻ Sơn Trạch Tổn",
         "section": "Hào 3 — diễn giải",
         "pdfPageStart": 645,
-        "pdfPageEnd": 645
+        "pdfPageEnd": 646
       },
       "textLayer": "supplement",
       "attributedTo": "Hồ Vân Phong"
@@ -732,6 +853,21 @@
       "attributedTo": "Nguyễn Hiến Lê"
     },
     {
+      "id": "citation-nhl-q42-overview-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Phong Lôi Ích",
+        "section": "Tổng quan và cấu trúc",
+        "pdfPageStart": 265,
+        "pdfPageEnd": 265,
+        "printedPageStart": "265",
+        "printedPageEnd": "265"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Nguyễn Hiến Lê"
+    },
+    {
       "id": "citation-nhl-q42-line-1-classical-text",
       "sourceId": "source-book-nhl",
       "editionId": "edition-nhl-supplied",
@@ -829,9 +965,9 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 4 — diễn giải",
         "pdfPageStart": 266,
-        "pdfPageEnd": 266,
+        "pdfPageEnd": 267,
         "printedPageStart": "266",
-        "printedPageEnd": "266"
+        "printedPageEnd": "267"
       },
       "textLayer": "original-text",
       "attributedTo": "Classical line text as presented by Nguyễn Hiến Lê"
@@ -844,9 +980,9 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 4 — diễn giải",
         "pdfPageStart": 266,
-        "pdfPageEnd": 266,
+        "pdfPageEnd": 267,
         "printedPageStart": "266",
-        "printedPageEnd": "266"
+        "printedPageEnd": "267"
       },
       "textLayer": "author-commentary",
       "attributedTo": "Nguyễn Hiến Lê"
@@ -919,7 +1055,7 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 404,
-        "pdfPageEnd": 406
+        "pdfPageEnd": 408
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn as presented and explained by Phan Bội Châu"
@@ -932,7 +1068,33 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 404,
-        "pdfPageEnd": 406
+        "pdfPageEnd": 408
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q42-overview-tuong-classical",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Phong Lôi Ích",
+        "section": "Đại Tượng — kinh văn",
+        "pdfPageStart": 408,
+        "pdfPageEnd": 408
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q42-overview-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Phong Lôi Ích",
+        "section": "Đại Tượng — Phan Bội Châu",
+        "pdfPageStart": 408,
+        "pdfPageEnd": 408
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -971,7 +1133,7 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 2 — diễn giải",
         "pdfPageStart": 409,
-        "pdfPageEnd": 410
+        "pdfPageEnd": 409
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn as presented by Phan Bội Châu"
@@ -984,7 +1146,7 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 2 — diễn giải",
         "pdfPageStart": 409,
-        "pdfPageEnd": 410
+        "pdfPageEnd": 409
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -1348,7 +1510,7 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 663,
-        "pdfPageEnd": 665
+        "pdfPageEnd": 664
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn"
@@ -1361,7 +1523,7 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 663,
-        "pdfPageEnd": 665
+        "pdfPageEnd": 664
       },
       "textLayer": "author-commentary",
       "attributedTo": "Trình Di"
@@ -1374,7 +1536,7 @@
         "chapter": "Quẻ Phong Lôi Ích",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 663,
-        "pdfPageEnd": 665
+        "pdfPageEnd": 664
       },
       "textLayer": "author-commentary",
       "attributedTo": "Chu Hy"
@@ -1429,6 +1591,36 @@
         "pdfPageEnd": 269,
         "printedPageStart": "268",
         "printedPageEnd": "269"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q43-overview-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Trạch Thiên Quải",
+        "section": "Tổng quan và cấu trúc",
+        "pdfPageStart": 268,
+        "pdfPageEnd": 268,
+        "printedPageStart": "268",
+        "printedPageEnd": "268"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q43-overview-quai-phuc-comparison",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Trạch Thiên Quải",
+        "section": "So sánh Quải và Phục",
+        "pdfPageStart": 270,
+        "pdfPageEnd": 270,
+        "printedPageStart": "270",
+        "printedPageEnd": "270"
       },
       "textLayer": "author-commentary",
       "attributedTo": "Nguyễn Hiến Lê"
@@ -1621,7 +1813,7 @@
         "chapter": "Quẻ Trạch Thiên Quải",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 415,
-        "pdfPageEnd": 416
+        "pdfPageEnd": 417
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn as presented and explained by Phan Bội Châu"
@@ -1634,7 +1826,7 @@
         "chapter": "Quẻ Trạch Thiên Quải",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 415,
-        "pdfPageEnd": 416
+        "pdfPageEnd": 417
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -1894,10 +2086,23 @@
         "chapter": "Quẻ Trạch Thiên Quải",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 673,
-        "pdfPageEnd": 673
+        "pdfPageEnd": 674
       },
       "textLayer": "supplement",
       "attributedTo": "Hồ Vân Phong"
+    },
+    {
+      "id": "citation-ntt-q43-overview-hang-binh-am",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Trạch Thiên Quải",
+        "section": "Tổng quan và cấu trúc",
+        "pdfPageStart": 673,
+        "pdfPageEnd": 673
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Hạng Bình Âm"
     },
     {
       "id": "citation-ntt-q43-line-1-classical-text",
@@ -2063,7 +2268,7 @@
         "chapter": "Quẻ Trạch Thiên Quải",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 679,
-        "pdfPageEnd": 681
+        "pdfPageEnd": 680
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn"
@@ -2076,7 +2281,7 @@
         "chapter": "Quẻ Trạch Thiên Quải",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 679,
-        "pdfPageEnd": 681
+        "pdfPageEnd": 680
       },
       "textLayer": "author-commentary",
       "attributedTo": "Trình Di"
@@ -2089,7 +2294,7 @@
         "chapter": "Quẻ Trạch Thiên Quải",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 679,
-        "pdfPageEnd": 681
+        "pdfPageEnd": 680
       },
       "textLayer": "author-commentary",
       "attributedTo": "Chu Hy"
@@ -2144,6 +2349,21 @@
         "pdfPageEnd": 271,
         "printedPageStart": "271",
         "printedPageEnd": "271"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q44-overview-nhl-closing-summary",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Thiên Phong Cấu",
+        "section": "Tổng quan — kết luận",
+        "pdfPageStart": 273,
+        "pdfPageEnd": 273,
+        "printedPageStart": "273",
+        "printedPageEnd": "273"
       },
       "textLayer": "author-commentary",
       "attributedTo": "Nguyễn Hiến Lê"
@@ -2336,7 +2556,7 @@
         "chapter": "Quẻ Thiên Phong Cấu",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 424,
-        "pdfPageEnd": 425
+        "pdfPageEnd": 427
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn as presented and explained by Phan Bội Châu"
@@ -2349,10 +2569,75 @@
         "chapter": "Quẻ Thiên Phong Cấu",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 424,
+        "pdfPageEnd": 427
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q44-overview-thoan-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Thiên Phong Cấu",
+        "section": "Thoán từ và Thoán truyện",
+        "pdfPageStart": 425,
+        "pdfPageEnd": 425
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q44-overview-thoan-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Thiên Phong Cấu",
+        "section": "Thoán từ — PHỤ CHÚ",
+        "pdfPageStart": 425,
         "pdfPageEnd": 425
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q44-overview-dai-tuong-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Thiên Phong Cấu",
+        "section": "Đại Tượng truyện",
+        "pdfPageStart": 427,
+        "pdfPageEnd": 427
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Kinh văn theo bản trình bày của Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q44-overview-dai-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Thiên Phong Cấu",
+        "section": "Đại Tượng truyện",
+        "pdfPageStart": 427,
+        "pdfPageEnd": 427
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q44-overview-thay-thieu",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Thiên Phong Cấu",
+        "section": "Tự Quái — PHỤ CHÚ",
+        "pdfPageStart": 424,
+        "pdfPageEnd": 424
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu, dẫn lời Thầy Thiệu"
     },
     {
       "id": "citation-pbc-q44-line-1-classical-text",
@@ -2466,7 +2751,7 @@
         "chapter": "Quẻ Thiên Phong Cấu",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 430,
-        "pdfPageEnd": 431
+        "pdfPageEnd": 430
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn as presented by Phan Bội Châu"
@@ -2479,7 +2764,7 @@
         "chapter": "Quẻ Thiên Phong Cấu",
         "section": "Hào 5 — diễn giải",
         "pdfPageStart": 430,
-        "pdfPageEnd": 431
+        "pdfPageEnd": 430
       },
       "textLayer": "author-commentary",
       "attributedTo": "Phan Bội Châu"
@@ -2518,7 +2803,7 @@
         "chapter": "Quẻ Thiên Phong Cấu",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 684,
-        "pdfPageEnd": 687
+        "pdfPageEnd": 688
       },
       "textLayer": "original-text",
       "attributedTo": "Kinh văn"
@@ -2531,7 +2816,7 @@
         "chapter": "Quẻ Thiên Phong Cấu",
         "section": "Tổng quan và cấu trúc",
         "pdfPageStart": 684,
-        "pdfPageEnd": 687
+        "pdfPageEnd": 688
       },
       "textLayer": "author-commentary",
       "attributedTo": "Trình Di"

@@ -12,6 +12,7 @@
       "text": "Sơn Trạch Tổn có nội quái Đoài và ngoại quái Cấn; sáu hào được ghi theo thứ tự từ dưới lên.",
       "citationIds": [
         "citation-pbc-q41-overview-classical-text",
+        "citation-nhl-q41-overview-classical-text",
         "citation-ntt-q41-overview-classical-text",
         "citation-nhl-q41-line-1-classical-text",
         "citation-nhl-q41-line-2-classical-text",
@@ -43,10 +44,40 @@
       }
     },
     {
+      "id": "hexagram-41-overview-nhl-closing",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê kết quẻ bằng cách nói Tổn không mặc nhiên xấu, Ích cũng không mặc nhiên tốt; nên xét việc và thời, giảm khi quá, thêm khi thiếu, và chịu phần thiệt của mình để giúp người.",
+      "citationIds": ["citation-nhl-q41-overview-closing"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      }
+    },
+    {
       "id": "hexagram-41-overview-pbc",
       "kind": "author-interpretation",
       "text": "Phan Bội Châu giải Tổn qua việc giảm dưới để thêm trên và nhấn mạnh phải xét lòng thành, mức độ, thời điểm cùng hệ quả xã hội.",
       "citationIds": ["citation-pbc-q41-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-41-overview-pbc-dai-tuong-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải lời Đại Tượng về trừng phẫn, trất dục là sửa cơn giận do khí huyết và lấp tư dục; ông phân biệt tình cảm hợp thiên lý với phẫn, dục do tư tình, rồi nêu thầy Nhan làm gương về sửa giận và lỗi.",
+      "citationIds": [
+        "citation-pbc-q41-overview-dai-tuong-classical-text",
+        "citation-pbc-q41-overview-dai-tuong-pbc"
+      ],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      }
+    },
+    {
+      "id": "hexagram-41-overview-pbc-phu-chu",
+      "kind": "author-interpretation",
+      "text": "Trong Phụ chú, Phan Bội Châu phân biệt Tổn kỉ, Tổn nhân và bỏ điều xấu để thêm điều lành; ở hào Thượng, ông nói nghĩa Tổn chuyển thành Ích, khác với nghĩa ở hào Nhị.",
+      "citationIds": ["citation-pbc-q41-overview-phu-chu"],
       "attribution": {
         "author": "Phan Bội Châu"
       }
@@ -62,10 +93,36 @@
       }
     },
     {
+      "id": "hexagram-41-overview-ntt-dai-tuong-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải hình tượng núi dưới chằm là bớt ở dưới để thêm ở trên; trong việc sửa mình, ông khuyên răn giận và lấp hết ham muốn.",
+      "citationIds": [
+        "citation-ntt-q41-overview-dai-tuong-classical-text",
+        "citation-ntt-q41-overview-dai-tuong-trinh-di"
+      ],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
       "id": "hexagram-41-overview-chu-hy",
       "kind": "author-interpretation",
       "text": "Chu Hy giải Tổn qua sự chuyển đổi hào giữa hai quái và ví dụ lễ tế; ông giữ riêng cách giải của mình với Trình Di.",
       "citationIds": ["citation-ntt-q41-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      }
+    },
+    {
+      "id": "hexagram-41-overview-ntt-dai-tuong-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Trong Bản nghĩa về Đại Tượng, Chu Hy nhấn mạnh quân tử phải tự sửa mình ở những điều cần giảm; đây là lời riêng, không nhập vào phần giải của Trình Di.",
+      "citationIds": [
+        "citation-ntt-q41-overview-dai-tuong-classical-text",
+        "citation-ntt-q41-overview-dai-tuong-chu-hy"
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
@@ -460,10 +517,20 @@
         {
           "id": "hexagram-41-line-5-ntt-q41-line-5-tien-nho",
           "kind": "author-interpretation",
-          "text": "Chu Hy được trích riêng về hình tượng hai quái trong lời Tượng; đây là lời Tiên Nho, không phải Bản nghĩa tại chỗ.",
+          "text": "Chu Hy xem hình tượng rùa trong Kinh Dịch là một phép tượng có nhiều ví dụ, trong đó quẻ Tổn và Ích đều nói đến rùa; đây là lời Tiên Nho, không phải Bản nghĩa tại chỗ.",
           "citationIds": ["citation-ntt-q41-line-5-tien-nho"],
           "attribution": {
             "author": "Chu Hy, được dẫn trong lời Tiên Nho",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "id": "hexagram-41-line-5-ntt-q41-line-5-uong-nghien-chuong",
+          "kind": "author-interpretation",
+          "text": "Uông Nghiện Chương xem Ly là rùa và cho rằng tuy Tổn, Ích không phải quẻ Ly, thông thể của chúng vẫn giống Ly.",
+          "citationIds": ["citation-ntt-q41-overview-tien-nho-uong-nghien-chuong"],
+          "attribution": {
+            "author": "Uông Nghiện Chương",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
@@ -518,8 +585,8 @@
   "specialPassages": [],
   "review": {
     "status": "reviewed",
-    "reviewer": "OpenCode Fixer",
-    "reviewedAt": "2026-10-04",
+    "reviewer": "Oracle subagent (AI source comparison)",
+    "reviewedAt": "2026-10-05",
     "method": "source-comparison",
     "evidenceCitationIds": [
       "citation-pbc-q41-overview-classical-text",
@@ -542,10 +609,18 @@
       "citation-ntt-q41-line-4-classical-text",
       "citation-ntt-q41-line-5-classical-text",
       "citation-ntt-q41-line-6-classical-text",
+      "citation-nhl-q41-overview-classical-text",
       "citation-nhl-q41-overview-nhl",
+      "citation-nhl-q41-overview-closing",
+      "citation-pbc-q41-overview-dai-tuong-pbc",
+      "citation-pbc-q41-overview-dai-tuong-classical-text",
+      "citation-pbc-q41-overview-phu-chu",
       "citation-pbc-q41-overview-pbc",
       "citation-ntt-q41-overview-trinh-di",
       "citation-ntt-q41-overview-chu-hy",
+      "citation-ntt-q41-overview-dai-tuong-trinh-di",
+      "citation-ntt-q41-overview-dai-tuong-chu-hy",
+      "citation-ntt-q41-overview-dai-tuong-classical-text",
       "citation-ntt-q41-overview-tien-nho-tu-tien-trai",
       "citation-ntt-q41-overview-ho-van-phong",
       "citation-ntt-q41-note-1",
@@ -580,11 +655,12 @@
       "citation-ntt-q41-line-5-trinh-di",
       "citation-ntt-q41-line-5-chu-hy",
       "citation-ntt-q41-line-5-tien-nho",
+      "citation-ntt-q41-overview-tien-nho-uong-nghien-chuong",
       "citation-nhl-q41-line-6-nhl",
       "citation-pbc-q41-line-6-pbc",
       "citation-ntt-q41-line-6-trinh-di",
       "citation-ntt-q41-line-6-chu-hy"
     ],
-    "note": "Đối chiếu nội dung tóm lược với các lớp văn bản, lời bàn, bổ sung và chú thích được ghi trong ma trận nguồn. Đây là ghi nhận đối chiếu nguồn, không phải phê duyệt chuyên gia độc lập, kiểm toán feat-078, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
+    "note": "Đối chiếu nguồn theo phạm vi trong báo cáo q41: các tóm lược và dẫn liệu đã chọn được so sánh với trang nguồn ghi nhận; không xác nhận toàn bộ các phần còn lại. citation-ntt-q41-overview-tien-nho-uong-nghien-chuong thuộc vị trí hào 5 (NTT PDF 648), dù tiền tố ID có chữ overview. Đây không phải phê duyệt chuyên gia độc lập, kiểm toán hoàn tất, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
   }
 }

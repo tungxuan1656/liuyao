@@ -36,58 +36,117 @@
     {
       "id": "hexagram-44-overview-nhl",
       "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê giải Cấu là gặp và hào âm mới sinh, khuyên không để điều nhỏ tăng lên; câu Tự Quái in “Cấn” dù tiêu đề và phần còn lại xác định Cấu.",
-      "citationIds": ["citation-nhl-q44-overview-nhl"],
+      "text": "Nguyễn Hiến Lê giải Cấu là gặp và hào âm mới sinh; ở phần Tự Quái, ông ghi quẻ tiếp sau Quải là “Cấn” (gặp gỡ), một lỗi in dù tiêu đề và nội dung quẻ xác định là Cấu. Phần kết quẻ khuyên chế ngự tiểu nhân từ sớm, nhưng giữ lượng bao dung và đức trung chính thay vì quá cương.",
+      "citationIds": [
+        "citation-nhl-q44-overview-nhl",
+        "citation-nhl-q44-overview-nhl-closing-summary"
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
       "conditions": [
-        "Câu Tự Quái in “Cấn”; giữ đúng sai biệt được in, không tự sửa thành tên khác."
+        "NHL PDF 271 in “Cấn” hai lần: trong câu Tự Quái về quẻ sau Quải và trong câu Thoán giảng về năm người con trai. Đây là lỗi in, không phải tên gọi hay dị bản; không thêm bí danh hoặc tự sửa.",
+        "Lời khuyên kết quẻ được ghi ở PDF 273 và dẫn bằng citation NHL đã tích hợp; giữ lời khuyên trong văn cảnh quẻ Cấu, không biến thành quy tắc phổ quát cho mọi tình huống."
       ]
     },
     {
       "id": "hexagram-44-overview-pbc",
       "kind": "author-interpretation",
-      "text": "Phan Bội Châu nối Cấu với cuộc gặp sau Quải, gió dưới trời và hào âm đầu tiên gặp dương; phần chính trị là ví dụ riêng của ông.",
-      "citationIds": ["citation-pbc-q44-overview-pbc"],
+      "text": "Phan Bội Châu nối Cấu với cuộc gặp sau Quải, gió dưới trời và hào âm đầu tiên gặp dương; trong PHỤ CHÚ trang 425, ông đọc “nữ” là tiểu nhân, “thú” là thân cận, rồi khuyên chớ thân tín hạng tiểu nhân dám đương địch với năm quân tử và dùng cách đọc ấy cho cả 64 quẻ.",
+      "citationIds": ["citation-pbc-q44-overview-classical-text", "citation-pbc-q44-overview-pbc"],
       "attribution": {
         "author": "Phan Bội Châu"
-      }
+      },
+      "conditions": [
+        "Đây là cách đọc của Phan Bội Châu trong lời giải Cấu và PHỤ CHÚ ở mục Soán từ (PDF 425), không phải PHỤ CHÚ Tự Quái ở PDF 424; phạm vi 64 quẻ là đề xuất phương pháp của ông, không phải cách giải duy nhất."
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-pbc-thoan",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Thoán rằng một hào âm mới sinh gặp năm hào dương, thế âm có thể lớn dần; trong PHỤ CHÚ ở trang 425, ông khuyên đề phòng từ lúc âm mới nảy, trước khi âm đã thịnh và dương suy.",
+      "citationIds": [
+        "citation-pbc-q44-overview-thoan-classical-text",
+        "citation-pbc-q44-overview-thoan-pbc"
+      ],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Phân biệt lời Thoán về một hào âm gặp năm hào dương với lời khuyên phòng ngừa trong PHỤ CHÚ (PDF 425); đây là cách diễn giải của Phan Bội Châu, không phải diễn tiến tất yếu cho mọi tình huống."
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-pbc-dai-tuong",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Đại Tượng rằng gió đi khắp dưới trời gợi việc quân trưởng thi hành mệnh lệnh và cáo dụ đến bốn phương, như gió lan khắp nơi.",
+      "citationIds": [
+        "citation-pbc-q44-overview-dai-tuong-classical-text",
+        "citation-pbc-q44-overview-dai-tuong-pbc"
+      ],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là lời giải Đại Tượng của Phan Bội Châu ở PDF 427 về việc thi hành mệnh lệnh và cáo dụ bốn phương; không ghép với lời Soán ở PDF 426 về khí âm dương và Cửu Ngũ."
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-pbc-thay-thieu",
+      "kind": "author-interpretation",
+      "text": "Trong PHỤ CHÚ Tự Quái, Phan Bội Châu dẫn lời Thầy Thiệu so sánh quẻ Phục sau Bác với quẻ Cấu sau Quải để khuyên đề phòng khi âm đã sinh mà dương chưa hết.",
+      "citationIds": ["citation-pbc-q44-overview-thay-thieu"],
+      "attribution": {
+        "author": "Phan Bội Châu",
+        "via": "dẫn lời Thầy Thiệu"
+      },
+      "conditions": [
+        "So sánh Phục sau Bác với Cấu sau Quải là lời Thầy Thiệu được Phan Bội Châu dẫn trong PHỤ CHÚ Tự Quái (PDF 424); lời khuyên đề phòng thuộc phạm vi phép so sánh này."
+      ]
     },
     {
       "id": "hexagram-44-overview-trinh-di",
       "kind": "author-interpretation",
-      "text": "Trình Di giải Cấu là cuộc gặp sau quyết định, với gió dưới trời và hào âm mới gặp dương.",
+      "text": "Trình Di giải Cấu là cuộc gặp sau khi vật đã chia tách: Kiền trên, Tốn dưới; gió đi khắp dưới trời và một hào âm mới sinh gặp dương.",
       "citationIds": ["citation-ntt-q44-overview-trinh-di"],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
+      },
+      "conditions": [
+        "Đây là lời giải khái quát quẻ Cấu của Trình Di qua bản dịch và chú giải của Ngô Tất Tố; không nhập với lời bình riêng của Chu Hy hoặc của người dịch."
+      ]
     },
     {
       "id": "hexagram-44-overview-chu-hy",
       "kind": "author-interpretation",
-      "text": "Chu Hy giải quẻ Cấu theo nghĩa gặp gỡ, đồng thời nêu cách giải gắn với mùa và sự biến đổi.",
+      "text": "Chu Hy nói Cấu đến tháng Năm sau quẻ Thuần Càn tháng Tư; một hào âm bất ngờ gặp năm hào dương như cuộc gặp chẳng hẹn mà gặp, trái chính đáng và làm hại khí dương.",
       "citationIds": ["citation-ntt-q44-overview-chu-hy"],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
+      },
+      "conditions": [
+        "Giới hạn ở lời Chu Hy được Ngô Tất Tố dẫn về tháng Tư Càn, tháng Năm Cấu và cuộc gặp một âm với năm dương; không suy thành dự báo lịch cho cá nhân."
+      ]
     },
     {
       "id": "hexagram-44-overview-ntt-q44-overview-tien-nho-phung-hau-trai",
       "kind": "author-interpretation",
-      "text": "Phùng Hậu Trai nói rằng trong Kinh Dịch cổ dùng một dạng chữ nghĩa là gặp; các bản đời sau đổi sang dạng khác cùng âm và nghĩa gặp, còn Tạp Quái và bản của Trịch Huyền vẫn dùng dạng thứ nhất.",
+      "text": "Phùng Hậu Trai nói dạng chữ cổ được dùng trong Kinh Dịch và được đọc là “cấu”; ông cho biết bản Kinh Dịch của Vương Thù đổi sang dạng chữ mới, còn Tạp Quái và bản Trịch Huyền vẫn dùng dạng cổ.",
       "citationIds": ["citation-ntt-q44-overview-tien-nho-phung-hau-trai"],
       "attribution": {
         "author": "Phùng Hậu Trai",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
+      },
+      "conditions": [
+        "NTT in tên quẻ bằng U+57A2, khác dạng U+59E4 ở NHL và PBC; dạng cổ được nêu trong lời Phùng Hậu Trai và chú thích 3 là U+9058. Không chuẩn hóa hoặc chép glyph vào runtime prose. Phùng Hậu Trai chỉ quy việc đổi dạng chữ cho bản của Vương Thù, không khái quát thành mọi bản đời sau."
+      ]
     },
     {
       "id": "hexagram-44-note-1",
       "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải cụm từ này theo nghĩa phân loại hoặc tách riêng.",
+      "text": "Ngô Tất Tố giải cụm “ghẽ ra” trong câu Trình Di “Cấu là gặp, quyết là ghẽ ra” theo nghĩa chia ra, tách ra hoặc phân biệt.",
       "citationIds": ["citation-ntt-q44-note-1"],
       "attribution": {
         "author": "Ngô Tất Tố"
@@ -99,25 +158,57 @@
     {
       "id": "hexagram-44-note-2",
       "kind": "author-interpretation",
-      "text": "Ngô Tất Tố ghi ở chú thích 2, PDF 696, chữ được đọc là “cấu”.",
+      "text": "Ngô Tất Tố ghi ở chú thích 2 rằng chữ tên quẻ được dùng trong bản NTT được đọc là “cấu”.",
       "citationIds": ["citation-ntt-q44-note-2"],
       "attribution": {
         "author": "Ngô Tất Tố"
       },
       "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+        "Chú thích 2 định danh dạng chữ tên quẻ được in trong NTT là U+57A2; giữ nguyên khác biệt chữ in, không chuẩn hóa."
       ]
     },
     {
       "id": "hexagram-44-note-3",
       "kind": "author-interpretation",
-      "text": "Ngô Tất Tố ghi ở chú thích 3, PDF 697, một dạng chữ khác cũng đọc là “cấu”.",
+      "text": "Ngô Tất Tố ghi ở chú thích 3 rằng chữ cổ được nêu trong lời Phùng Hậu Trai cũng được đọc là “cấu”.",
       "citationIds": ["citation-ntt-q44-note-3"],
       "attribution": {
         "author": "Ngô Tất Tố"
       },
       "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
+        "Chú thích 3 định danh dạng chữ cổ được nêu trong lời Phùng Hậu Trai là U+9058; giữ nguyên khác biệt chữ in, không chuẩn hóa."
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-ntt-thoan-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải Thoán rằng âm mềm mới sinh gặp dương cứng; trời đất gặp nhau nên muôn vật được sinh hóa, còn hào dương trung chính gặp nhau thì đạo vua tôi có thể thi hành trong thiên hạ.",
+      "citationIds": [
+        "citation-ntt-q44-overview-classical-text",
+        "citation-ntt-q44-overview-trinh-di"
+      ],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải Thoán của Trình Di qua bản dịch và chú giải của Ngô Tất Tố; tách lời giải này khỏi nguyên văn Thoán và các lời bàn khác trong sách."
+      ]
+    },
+    {
+      "id": "hexagram-44-overview-ntt-dai-tuong-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải Đại Tượng rằng gió đi khắp dưới trời là hình ảnh nhà vua thi hành mệnh lệnh và thông báo đến bốn phương.",
+      "citationIds": [
+        "citation-ntt-q44-overview-classical-text",
+        "citation-ntt-q44-overview-trinh-di"
+      ],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải Đại Tượng của Trình Di qua Ngô Tất Tố (PDF 688); việc thi hành mệnh lệnh và báo khắp bốn phương được gắn với tượng gió đi dưới trời của quẻ Cấu, không thành chỉ dẫn quản trị chung."
       ]
     }
   ],
@@ -383,7 +474,7 @@
         {
           "id": "hexagram-44-line-5-pbc",
           "kind": "author-interpretation",
-          "text": "Người đứng giữa che chở phía dưới và nhờ khiêm nhường mà gặp người có tài; giai thoại lịch sử vẫn là ví dụ của PBC.",
+          "text": "Phan Bội Châu nói Cửu Ngũ có đức dương cương, trung chính và ở vị nguyên thủ; biết khuất mình hạ hiền để quần dương che chở Sơ Lục như cây kỷ che dưa, đồng thời ngầm chứa đức tốt thay vì khoe khoang. Ông nói “hữu vận tự thiên” chỉ là hình dung vận tốt, chẳng phải sự thực.",
           "citationIds": ["citation-pbc-q44-line-5-pbc"],
           "attribution": {
             "author": "Phan Bội Châu"
@@ -408,7 +499,7 @@
         {
           "id": "hexagram-44-line-5-chu-hy",
           "kind": "author-interpretation",
-          "text": "Chu Hy ví Cửu ngũ cứng và giữ đường giữa như cây kỷ che quả dưa; cuộc gặp cần được giữ kín và đúng thời.",
+          "text": "Chu Hy ví Cửu Ngũ như cây kỷ che quả dưa: hào dương ở giữa và chính, làm chủ quẻ để phòng hào âm mới sinh. Nếu biết ngậm che văn vẻ, im lặng chế ngự nó thì có thể xoay lại cơ tạo hóa; “có sa tự trời” là hình dung việc vốn không mà thình lình có.",
           "citationIds": ["citation-ntt-q44-line-5-chu-hy"],
           "attribution": {
             "author": "Chu Hy",
@@ -452,7 +543,7 @@
         {
           "id": "hexagram-44-line-6-nhl",
           "kind": "author-interpretation",
-          "text": "Hào trên gặp bằng sừng, biểu thị cứng quá; ông đọc “không lỗi” là không còn ai khác để trách và phân biệt với PBC.",
+          "text": "Nguyễn Hiến Lê nhận xét các sách đều dịch “vô cữu” là “không có lỗi”; ông dẫn cách hiểu riêng của Phan Bội Châu: “không đổ lỗi cho ai được”.",
           "citationIds": ["citation-nhl-q44-line-6-nhl"],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
@@ -464,7 +555,7 @@
         {
           "id": "hexagram-44-line-6-pbc",
           "kind": "author-interpretation",
-          "text": "Hào trên gặp bằng sừng, là cách cứng quá gây hối; giữ lời giải riêng của PBC, không nâng thành quy tắc chung.",
+          "text": "Phan Bội Châu giải “vô cữu” là “vô sở quy cữu”: vì tội lỗi do mình làm ra nên không trách được ai.",
           "citationIds": ["citation-pbc-q44-line-6-pbc"],
           "attribution": {
             "author": "Phan Bội Châu"
@@ -489,7 +580,7 @@
         {
           "id": "hexagram-44-line-6-chu-hy",
           "kind": "author-interpretation",
-          "text": "Ông cũng giải sừng là sự cứng ở trên cùng; giữ cách đọc riêng với Trình Di.",
+          "text": "Chu Hy nói hào Thượng cứng ở bậc cao mà không có ngôi; không gặp người đáng gặp nên Tượng và Chiêm cũng giống hào Chín Ba.",
           "citationIds": ["citation-ntt-q44-line-6-chu-hy"],
           "attribution": {
             "author": "Chu Hy",
@@ -502,22 +593,28 @@
         {
           "id": "hexagram-44-line-6-ntt-q44-line-6-ly-long-son",
           "kind": "author-interpretation",
-          "text": "Lý Long Sơn cho việc hào trên không gặp hào âm đầu là đáng tiếc nhưng tránh được nguy cơ; đây là lời Tiên Nho riêng.",
+          "text": "Lý Long Sơn cho rằng hào trên cứng riêng, không hợp người nên đáng tiếc; khi âm lớn mà dương muốn hợp thì phải chế giữ nó, nếu chế không đúng sẽ bị hại. Riêng hào trên ở chót vót, không gần hào âm nên tránh được nỗi lo bất ngờ.",
           "citationIds": ["citation-ntt-q44-line-6-ly-long-son"],
           "attribution": {
             "author": "Lý Long Sơn",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "conditions": [
+            "Đây là lời Lý Long Sơn được Ngô Tất Tố dẫn khi giải hào Thượng; giữ các nhận xét về chế giữ và vị trí chót vót trong cách giải này, không nhập với Chu Hy hoặc Hồ Vân Phong."
+          ]
         },
         {
           "id": "hexagram-44-line-6-ntt-q44-line-6-ho-van-phong",
           "kind": "author-interpretation",
-          "text": "Hồ Vân Phong so sánh hào ba và hào sáu: không gặp hào âm đầu tự nó không phải lỗi khi cuộc gặp ấy không thích hợp.",
+          "text": "Hồ Vân Phong phân biệt hào ba và hào trên: hào ba cứng ở quẻ dưới, không gặp hào âm đầu nên nguy mà không lỗi lớn; hào trên cứng ở quẻ trên cũng không gặp hào âm đầu, mà cuộc gặp ấy vốn không chính đạo nên không gặp không thành lỗi.",
           "citationIds": ["citation-ntt-q44-line-6-ho-van-phong"],
           "attribution": {
             "author": "Hồ Vân Phong",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "conditions": [
+            "Đây là phép đối chiếu hào ba và hào trên của Hồ Vân Phong được Ngô Tất Tố dẫn; nhận xét không gặp hào âm đầu thuộc vị trí các hào trong quẻ Cấu, không phải quy tắc đạo đức phổ quát."
+          ]
         },
         {
           "id": "hexagram-44-note-6",
@@ -537,68 +634,74 @@
   "specialPassages": [],
   "review": {
     "status": "reviewed",
-    "reviewer": "OpenCode Fixer",
-    "reviewedAt": "2026-10-04",
+    "reviewer": "Oracle subagent (AI source comparison)",
+    "reviewedAt": "2026-10-05",
     "method": "source-comparison",
     "evidenceCitationIds": [
-      "citation-pbc-q44-overview-classical-text",
-      "citation-ntt-q44-overview-classical-text",
       "citation-nhl-q44-line-1-classical-text",
+      "citation-nhl-q44-line-1-nhl",
       "citation-nhl-q44-line-2-classical-text",
+      "citation-nhl-q44-line-2-nhl",
       "citation-nhl-q44-line-3-classical-text",
+      "citation-nhl-q44-line-3-nhl",
       "citation-nhl-q44-line-4-classical-text",
+      "citation-nhl-q44-line-4-nhl",
       "citation-nhl-q44-line-5-classical-text",
+      "citation-nhl-q44-line-5-nhl",
       "citation-nhl-q44-line-6-classical-text",
-      "citation-pbc-q44-line-1-classical-text",
-      "citation-pbc-q44-line-2-classical-text",
-      "citation-pbc-q44-line-3-classical-text",
-      "citation-pbc-q44-line-4-classical-text",
-      "citation-pbc-q44-line-5-classical-text",
-      "citation-pbc-q44-line-6-classical-text",
-      "citation-ntt-q44-line-1-classical-text",
-      "citation-ntt-q44-line-2-classical-text",
-      "citation-ntt-q44-line-3-classical-text",
-      "citation-ntt-q44-line-4-classical-text",
-      "citation-ntt-q44-line-5-classical-text",
-      "citation-ntt-q44-line-6-classical-text",
+      "citation-nhl-q44-line-6-nhl",
       "citation-nhl-q44-overview-nhl",
-      "citation-pbc-q44-overview-pbc",
-      "citation-ntt-q44-overview-trinh-di",
-      "citation-ntt-q44-overview-chu-hy",
-      "citation-ntt-q44-overview-tien-nho-phung-hau-trai",
+      "citation-nhl-q44-overview-nhl-closing-summary",
+      "citation-ntt-q44-line-1-chu-hy",
+      "citation-ntt-q44-line-1-classical-text",
+      "citation-ntt-q44-line-1-trinh-di",
+      "citation-ntt-q44-line-2-chu-hy",
+      "citation-ntt-q44-line-2-classical-text",
+      "citation-ntt-q44-line-2-trinh-di",
+      "citation-ntt-q44-line-3-chu-hy",
+      "citation-ntt-q44-line-3-classical-text",
+      "citation-ntt-q44-line-3-trinh-di",
+      "citation-ntt-q44-line-4-chu-hy",
+      "citation-ntt-q44-line-4-classical-text",
+      "citation-ntt-q44-line-4-trinh-di",
+      "citation-ntt-q44-line-5-chu-hy",
+      "citation-ntt-q44-line-5-classical-text",
+      "citation-ntt-q44-line-5-trinh-di",
+      "citation-ntt-q44-line-6-chu-hy",
+      "citation-ntt-q44-line-6-classical-text",
+      "citation-ntt-q44-line-6-ho-van-phong",
+      "citation-ntt-q44-line-6-ly-long-son",
+      "citation-ntt-q44-line-6-trinh-di",
       "citation-ntt-q44-note-1",
       "citation-ntt-q44-note-2",
       "citation-ntt-q44-note-3",
-      "citation-nhl-q44-line-1-nhl",
-      "citation-pbc-q44-line-1-pbc",
-      "citation-ntt-q44-line-1-trinh-di",
-      "citation-ntt-q44-line-1-chu-hy",
-      "citation-nhl-q44-line-2-nhl",
-      "citation-pbc-q44-line-2-pbc",
-      "citation-ntt-q44-line-2-trinh-di",
-      "citation-ntt-q44-line-2-chu-hy",
-      "citation-nhl-q44-line-3-nhl",
-      "citation-pbc-q44-line-3-pbc",
-      "citation-ntt-q44-line-3-trinh-di",
-      "citation-ntt-q44-line-3-chu-hy",
-      "citation-nhl-q44-line-4-nhl",
-      "citation-pbc-q44-line-4-pbc",
-      "citation-ntt-q44-line-4-trinh-di",
-      "citation-ntt-q44-line-4-chu-hy",
-      "citation-nhl-q44-line-5-nhl",
-      "citation-pbc-q44-line-5-pbc",
-      "citation-ntt-q44-line-5-trinh-di",
-      "citation-ntt-q44-line-5-chu-hy",
       "citation-ntt-q44-note-4",
       "citation-ntt-q44-note-5",
-      "citation-nhl-q44-line-6-nhl",
+      "citation-ntt-q44-note-6",
+      "citation-ntt-q44-overview-chu-hy",
+      "citation-ntt-q44-overview-classical-text",
+      "citation-ntt-q44-overview-tien-nho-phung-hau-trai",
+      "citation-ntt-q44-overview-trinh-di",
+      "citation-pbc-q44-line-1-classical-text",
+      "citation-pbc-q44-line-1-pbc",
+      "citation-pbc-q44-line-2-classical-text",
+      "citation-pbc-q44-line-2-pbc",
+      "citation-pbc-q44-line-3-classical-text",
+      "citation-pbc-q44-line-3-pbc",
+      "citation-pbc-q44-line-4-classical-text",
+      "citation-pbc-q44-line-4-pbc",
+      "citation-pbc-q44-line-5-classical-text",
+      "citation-pbc-q44-line-5-pbc",
+      "citation-pbc-q44-line-6-classical-text",
       "citation-pbc-q44-line-6-pbc",
-      "citation-ntt-q44-line-6-trinh-di",
-      "citation-ntt-q44-line-6-chu-hy",
-      "citation-ntt-q44-line-6-ly-long-son",
-      "citation-ntt-q44-line-6-ho-van-phong",
-      "citation-ntt-q44-note-6"
+      "citation-pbc-q44-overview-classical-text",
+      "citation-pbc-q44-overview-dai-tuong-classical-text",
+      "citation-pbc-q44-overview-dai-tuong-pbc",
+      "citation-pbc-q44-overview-pbc",
+      "citation-pbc-q44-overview-thay-thieu",
+      "citation-pbc-q44-overview-thoan-classical-text",
+      "citation-pbc-q44-overview-thoan-pbc"
     ],
-    "note": "Đối chiếu nội dung tóm lược với các lớp văn bản, lời bàn, bổ sung và chú thích được ghi trong ma trận nguồn. Đây là ghi nhận đối chiếu nguồn, không phải phê duyệt chuyên gia độc lập, kiểm toán feat-078, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
+    "note": "Đối chiếu nguồn theo phạm vi trong báo cáo q44: các claim và điều kiện đã sửa được so sánh với những trang cụ thể được ghi nhận; dẫn liệu NTT cho Đại Tượng của Trình Di bao gồm PDF 688. Phần Soán và Phụ chú trên PBC PDF 426, các lớp Tiểu Tượng chưa được thể hiện, phần dịch và các phần còn lại vẫn mở. Đây không phải đối chiếu toàn bộ nguồn, phê duyệt chuyên gia độc lập, kiểm toán hoàn tất, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
   }
 }
