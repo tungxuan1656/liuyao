@@ -1,6 +1,6 @@
 ---
 name: pi-feature-delivery
-description: Deliver an explicitly selected batch of LiuYao features through sequential Pi workers, fresh independent reviewers, and repository harness gates. Use for /features or resuming its batch. Do not use for unselected backlog work.
+description: Deliver an explicitly selected LiuYao feature batch through one branch and one PR per feature, with worker implementation, independent review, merge, and repository gates.
 ---
 
 # Pi Feature Delivery
@@ -16,9 +16,24 @@ The main Pi session owns coordination and final acceptance. Workers own scoped i
 - Treat `feature_index.json`, `features/<id>.md`, and `progress.md` as canonical feature records.
 - Treat Git, verification output, and subagent artifacts as evidence, not replacements for those records.
 - Do not depend on `pi-tasks` or maintain a second feature tracker.
-- Do not commit, push, create PRs, merge, or switch branches without explicit authority.
+- A new `/features` request authorizes branch creation, commits, pushes, one PR per selected feature, review fixes, and merge for that selection only.
+- A current user instruction that withholds an action overrides this default. A resume request preserves the checkpoint's original authority and adds none.
+- Never force-push, delete user branches, or expand the selected feature scope.
 
 All repository paths in this skill resolve from the repository root, not this skill directory.
+
+## Autonomous decisions
+
+- Resolve ordinary questions that the selected feature or plan does not answer.
+- Use canonical project documents, existing code, and established patterns as evidence.
+- Choose the smallest in-scope, reversible option when evidence does not determine one choice.
+- Record each material autonomous decision in `features/<id>.md` under `## Decision log`.
+- Record the question, decision, alternatives, rationale, evidence, and effect on scope or acceptance.
+- Add the section when it is absent. Keep this feature record as the canonical decision log.
+- Do not ask the user about routine implementation details or decisions supported by project evidence.
+- Stop and ask only when a decision needs user-only authority, changes selected scope, changes acceptance, or conflicts with canonical requirements.
+- Never infer legal rights, security approval, consent, credentials, or permission to expose data.
+- Keep a feature blocked when required external evidence or authorization is missing.
 
 ## Prepare
 
@@ -80,11 +95,26 @@ Feature and canonical acceptance paths:
 Checkout / branch / expected HEAD:
 Existing dirty paths and owners:
 Task / allowed read or write surfaces:
-Constraints: preserve unrelated edits, no Git publication or branch changes, no nested agents
+Constraints: preserve unrelated edits, no nested agents; parent owns branch and publication gates
 Assigned verification and expected evidence:
 Report: outcome, exact changed paths, acceptance results, commands and outcomes, artifacts, blocker and next action
 Stop: checkout mismatch, unexpected edits, ownership ambiguity, missing permission, or required scope expansion
 ```
+
+## Per-feature Git flow
+
+1. Start from the current `main` after the prior selected feature merges.
+2. Create one feature branch named `feat/<id>-<slug>`.
+3. Implement only the selected feature and commit each coherent, reviewable change.
+4. Run local feature verification before requesting independent review.
+5. Freeze the target at an exact commit SHA. Give a fresh read-only reviewer the feature acceptance, complete diff, and verification evidence.
+6. Fix valid findings in new commits, rerun affected checks, and request fresh review of the new SHA.
+7. Repeat until local acceptance and review pass. Then push the branch and create exactly one PR for the feature.
+8. Run exact-head CI and address PR findings through new commits and fresh review.
+9. Merge only after all required checks and reviews pass. Record the merge SHA and verify the updated `main`.
+10. Update feature and progress records, then start the next selected feature from `main`.
+
+Do not start another selected feature before the current feature merges and passes its completion gate.
 
 ## Per-feature gates
 
@@ -98,6 +128,7 @@ Stop: checkout mismatch, unexpected edits, ownership ambiguity, missing permissi
 - For substantial correction rounds, start a fresh worker with a compact handoff.
 - Resume an existing worker only for narrow continuation or reconciled recovery of its original task.
 - Require exact verification commands, results, and limitations in the worker report.
+- Record autonomous implementation decisions in the feature's `## Decision log`.
 - Wait for the writer to become terminal before transferring overlapping ownership.
 
 ### Integration and review
@@ -113,7 +144,8 @@ Stop: checkout mismatch, unexpected edits, ownership ambiguity, missing permissi
 - Block completion for valid P0/P1 findings or any unmet acceptance criterion, regardless of severity label.
 - Defer optional polish explicitly. Do not expand scope through review.
 - After fixes, run affected verification and obtain fresh review of the new target.
-- Allow at most two review rounds per feature. If blockers remain, record them and stop the batch.
+- Repeat the review/fix/commit/re-review loop until no valid P0/P1 finding or unmet acceptance criterion remains.
+- Defer optional P2 polish explicitly. Stop only for an unresolved blocker, repeated verification failure, or required scope expansion.
 
 ### Completion
 
