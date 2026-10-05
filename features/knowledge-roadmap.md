@@ -60,19 +60,19 @@ Quẻ, hào, chapters, questions, diagrams, and source cells remain separately r
 - Three web features reuse released records for Library details, result explanations, and topic/article browsing.
 - Three supporting features complete representation contracts, runtime fidelity, and measured offline delivery.
 
-Execution statuses live in [the feature index](../feature_index.json). Feat-101 is active after the inventory phase; [feat-042](feat-042.md) records completed corpus-roadmap creation.
-Adding plans and changing dependencies does not activate their implementation.
+Execution statuses live in [the feature index](../feature_index.json); feat-101, feat-067, and feat-097 are complete.
+[feat-042](feat-042.md) records creation of this roadmap. Adding plans and changing dependencies does not activate implementation.
 Creating features does not execute authoring, audits, web changes, or certification.
 
-1. Merge completed feat-101 after final-head checks, then activate feat-067 audit tooling before feat-097 correction probes and bulk authoring. PR #62 awaits final-head CI and merge; implementation and reviewed-SHA checks are complete [as recorded in the handoff](feat-101.md).
-2. Complete feat-067 audit tooling and feat-097 correction probes before bulk authoring.
-3. Continue feat-044 through feat-066, interleaving eligible quẻ/group audits after their source batches finish.
-4. Reconcile topic/source findings, obtain named specialist approval, and certify the authored snapshot through feat-094–096.
+1. Complete remaining source authoring in feat-045–066; run eligible audits as their evidence prerequisites pass.
+2. Reconcile topic/source findings in feat-094, obtain independent specialist review in feat-095, and certify the corpus in feat-096.
+3. After certification, deliver web integration in feat-098–100 and runtime fidelity/scale checks in feat-102–103.
+4. Run independent production delivery feat-014–016 when convenient; it need not block corpus work.
 5. Repeat affected evidence checks after input changes; preserve earlier decisions and their reviewed inputs.
 
-The web branch can use existing released content after feat-101, before corpus authoring or certification finishes.
-Complete feat-098 first; feat-099 and feat-100 then reuse its claim-level presentation.
-Feat-102 checks the released content across package and web contexts; feat-103 establishes measured payload and offline-update guards.
+Keep production delivery (feat-014–016) as an independent product lane; it does not block corpus authoring or audits.
+After feat-096 certifies the corpus, complete feat-098 first; feat-099 and feat-100 then reuse its claim-level presentation.
+Feat-102 checks released content across package and web contexts; feat-103 establishes measured payload and offline-update guards.
 Future learning articles from feat-065 populate existing article routes when released; their absence does not block browser delivery.
 Volume fixtures support early hardening. Actual complete authored builds must pass before full-volume delivery is claimed.
 
@@ -81,21 +81,21 @@ Plans stay inline until selected work meets the repository criteria for an exter
 If inventory reveals an unowned section, add bounded work and update the closing dependencies before proceeding.
 Split a selected feature only when its checkpoints have distinct acceptance or blocking requirements.
 
-| Phase                            | Features                              | Exit condition                                                                                       |
-| -------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Source inventory                 | [043](feat-043.md)                    | Every supplied unit has a disposition and authoring/audit owner.                                     |
-| Representation contracts         | [101](feat-101.md)                    | Lessons, figures, conventions, dependencies, and snapshot identity have compatible public contracts. |
-| Versioned audit evidence         | [067](feat-067.md)                    | Incremental decisions validate; missing or stale evidence keeps global completion closed.            |
-| Correction probes                | [097](feat-097.md)                    | Isolated probes invalidate affected and derived decisions before certification.                      |
-| Remaining quẻ and chapter 6      | [044](feat-044.md)–[050](feat-050.md) | Three-book content covers all 64 quẻ; remaining numbered passages are accounted for.                 |
-| BPCT source groups               | [051](feat-051.md)–[058](feat-058.md) | Parts I–III have complete included coverage and explicit exclusions.                                 |
-| Classical framing and wings      | [059](feat-059.md)–[063](feat-063.md) | Actual NHL/NTT/PBC introductions, diagrams, surviving wings, and special passages are accounted for. |
-| Conventions, learning, closure   | [064](feat-064.md)–[066](feat-066.md) | Legacy definitions resolve; lessons and every inventory unit have supported dispositions.            |
-| All quẻ and hào                  | [068](feat-068.md)–[083](feat-083.md) | 64 quẻ and 384 distinct position decisions pass with required layers.                                |
-| All source groups and tables     | [084](feat-084.md)–[093](feat-093.md) | Every assigned unit and independent expected table passes.                                           |
-| Reconciliation and certification | [094](feat-094.md)–[096](feat-096.md) | Current decisions, resolved findings, and specialist approval satisfy all gates.                     |
-| Web reference integration        | [098](feat-098.md)–[100](feat-100.md) | Released quẻ/hào, result contexts, and topic/article routes satisfy their web and offline checks.    |
-| Runtime fidelity and scale       | [102](feat-102.md)–[103](feat-103.md) | Snapshot-bound projections, rendered evidence, budgets, and offline updates pass.                    |
+| Phase                            | Features                              | Exit condition                                                                                                        |
+| -------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Source inventory                 | [043](feat-043.md)                    | Every supplied unit has a disposition and authoring/audit owner.                                                      |
+| Representation contracts         | [101](feat-101.md)                    | Lessons, figures, conventions, dependencies, and snapshot identity have compatible public contracts.                  |
+| Versioned audit evidence         | [067](feat-067.md)                    | Incremental decisions validate; missing or stale evidence keeps global completion closed.                             |
+| Correction probes                | [097](feat-097.md)                    | Isolated probes invalidate affected and derived decisions before certification.                                       |
+| Remaining quẻ and chapter 6      | [044](feat-044.md)–[050](feat-050.md) | Three-book content covers all 64 quẻ; remaining numbered passages are accounted for.                                  |
+| BPCT source groups               | [051](feat-051.md)–[058](feat-058.md) | Parts I–III have complete included coverage and explicit exclusions.                                                  |
+| Classical framing and wings      | [059](feat-059.md)–[063](feat-063.md) | Actual NHL/NTT/PBC introductions, diagrams, surviving wings, and special passages are accounted for.                  |
+| Conventions, learning, closure   | [064](feat-064.md)–[066](feat-066.md) | Legacy definitions resolve; lessons and every inventory unit have supported dispositions.                             |
+| All quẻ and hào                  | [068](feat-068.md)–[083](feat-083.md) | 64 quẻ and 384 distinct position decisions pass with required layers.                                                 |
+| All source groups and tables     | [084](feat-084.md)–[093](feat-093.md) | Every assigned unit and independent expected table passes.                                                            |
+| Reconciliation and certification | [094](feat-094.md)–[096](feat-096.md) | Current decisions, resolved findings, and specialist approval satisfy all gates.                                      |
+| Web reference integration        | [098](feat-098.md)–[100](feat-100.md) | After feat-096 certification, released quẻ/hào, result contexts, and topic/article routes satisfy web/offline checks. |
+| Runtime fidelity and scale       | [102](feat-102.md)–[103](feat-103.md) | Snapshot-bound projections, rendered evidence, budgets, and offline updates pass.                                     |
 
 ## Source boundaries and coverage ownership
 
@@ -235,16 +235,16 @@ They preserve calculated results and do not activate automated interpretation or
 The [Library specification](../docs/product-specs/knowledge-browser.md#intended-book-backed-expansion) and
 [result specification](../docs/product-specs/reading-result.md#intended-book-reference-contexts) own intended behavior.
 
-| Feature                 | Planned delivery                                                                            | Prerequisites                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [feat-098](feat-098.md) | Claim-level quẻ/hào, trigram, term, rule, and table/diagram details with evidence.          | feat-101 and existing Library/released-corpus contracts.        |
-| [feat-099](feat-099.md) | Correct primary/changed quẻ and selected-position explanations from reading results.        | feat-098 presentation and existing result/navigation contracts. |
-| [feat-100](feat-100.md) | Topic groups, BPCT/classical/learning articles, local search, and offline detail routes.    | feat-098 presentation and existing PWA/Library contracts.       |
-| [feat-102](feat-102.md) | Snapshot-bound fidelity checks across public records, rendered claims, and result contexts. | feat-098–100.                                                   |
-| [feat-103](feat-103.md) | Measured payload/query/cache budgets, consistent snapshots, offline updates, and rollback.  | feat-102 and existing offline hardening.                        |
+| Feature                 | Planned delivery                                                                            | Prerequisites                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [feat-098](feat-098.md) | Claim-level quẻ/hào, trigram, term, rule, and table/diagram details with evidence.          | feat-096 certification, feat-101, and existing Library contracts. |
+| [feat-099](feat-099.md) | Correct primary/changed quẻ and selected-position explanations from reading results.        | feat-098 presentation and existing result/navigation contracts.   |
+| [feat-100](feat-100.md) | Topic groups, BPCT/classical/learning articles, local search, and offline detail routes.    | feat-098 presentation and existing PWA/Library contracts.         |
+| [feat-102](feat-102.md) | Snapshot-bound fidelity checks across public records, rendered claims, and result contexts. | feat-098–100.                                                     |
+| [feat-103](feat-103.md) | Measured payload/query/cache budgets, consistent snapshots, offline updates, and rollback.  | feat-102 and existing offline hardening.                          |
 
-These features do not depend on corpus completion or independent certification.
-Their acceptance checks released and unavailable content, correct context, accessibility, and offline behavior.
+Web reference integration waits for feat-096 corpus certification so every presented reference comes from the certified snapshot.
+Acceptance checks still cover unavailable content, correct context, accessibility, and offline behavior.
 Suggested PR grouping follows each coherent delivery, with checkpoint commits inside each PR.
 The [approved extended model](../docs/design-docs/knowledge-model.md#approved-extended-record-contract) owns supporting versus navigation references.
 The [quality contract](../docs/product-specs/knowledge-quality.md#intended-runtime-fidelity) owns fidelity evidence; the
@@ -253,6 +253,6 @@ The [quality contract](../docs/product-specs/knowledge-quality.md#intended-runti
 ## Concrete next action
 
 Merge feat-101 after final-head CI confirms the [reviewed implementation](feat-101.md); Checkpoint 1 is complete.
-Then activate feat-067, followed by feat-097 before bulk authoring.
-Then complete feat-067 audit tooling and feat-097 correction probes before bulk authoring. Web integration starts with feat-098 after feat-101.
-The next content group remains Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16.
+Then complete feat-067 audit tooling and feat-097 correction probes before bulk authoring.
+Run the independent feat-014–016 product lane when convenient; keep the content sequence at feat-045 onward and start eligible audits as soon as their evidence prerequisites pass.
+After feat-094 reconciliation, feat-095 specialist review, and feat-096 certification, start web integration at feat-098, then complete feat-099–100 and runtime checks feat-102–103.

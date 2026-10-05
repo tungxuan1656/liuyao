@@ -10,7 +10,7 @@ Read released quẻ/hào, trigram, term, and rule explanations with conditions, 
 
 ## Non-goals
 
-Corpus authoring or certification, automated interpretation, calendar analysis, and PDF distribution.
+Corpus authoring, automated interpretation, calendar analysis, and PDF distribution.
 
 ## Acceptance
 
@@ -46,5 +46,5 @@ Corpus authoring or certification, automated interpretation, calendar analysis, 
 
 - State: todo.
 - Evidence: Design recorded; implementation and web verification have not started.
-- Dependencies: See [feature index](../feature_index.json); full-corpus completion is not required.
-- Next: Complete feat-101, select this feature, and assess external-plan criteria before coding.
+- Dependencies: See [feature index](../feature_index.json); corpus certification is required.
+- Next: After feat-096 certifies the corpus, select this feature and assess external-plan criteria before coding.
