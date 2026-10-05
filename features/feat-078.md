@@ -68,7 +68,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: done for scoped local implementation and audit acceptance; commit, exact-SHA review, PR, and merge remain pending.
+- State: complete and merged to `main` in PR #67 (`52b0c19bdb42102e74048fa44dc26354ad1d8a40`).
 - Evidence: Coordinator receipt `sh_10a410857001tx6Qv6i1EXnh2u` passed `./init.sh`, format, lint, corpus `--check-books --check`, and diff checks; 440 tests passed (181 core, 259 knowledge). The external ora-44 report found no blockers within this scope; it is not human specialist approval.
 - Limits: feat-095 qualified specialist review is pending for all 84 decisions; approved decisions remain zero. feat-096 certification, full source-corpus closure, and rights clearance remain outstanding. These bounded source comparisons do not claim full-corpus coverage.
-- Next: Coordinator commits the exact owned batch, requests exact-SHA review, then opens the PR. Do not activate feat-045 before feat-078 merges.
+- Next: Continue the selected knowledge sequence at feat-045.

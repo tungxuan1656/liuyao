@@ -49,9 +49,8 @@ The coordinator's final run passed generation, `./init.sh`, read-only format and
 
 ## Handoff
 
-- State: implementation, full-source review, and local acceptance are complete; exact-SHA review, PR, and merge remain pending.
-- Evidence: The five authored release IDs cover quẻ 41–44 and BPCT sentences 12–16. Ora-11 accepted P1–P4, and ora-12 accepted the final one-claim attribution-applicability correction with no blockers. Latest quẻ 43 hash: `9cfff47170714f8559d8f16680eb5903778a40b77315a433f8f5a6efec95cc30`; test hash: `7583df876dc3ee9b41bb3965a7ce8a380f6037bf99349752720879fda9bf2894`. Coordinator run `sh_10819f80b00103gkUOz5438OgP` passed generation, `./init.sh`, read-only format and lint checks, corpus `--check-books --check`, and diff checks. It reported 416 tests passing (181 core, 235 knowledge), 177 records, 1,395 claims, 1,265 citations, 44/64 quẻ, and 264/384 line positions. Four nonfatal web lint warnings and build font, sourcemap, and chunk warnings remain.
-- Limits: Audit decisions remain absent and audit gates remain closed. Audits 078/085, independent specialist approval, rights clearance, and certification are not complete. This batch does not claim any of them. The BPCT sentence 11 footnote was not moved into this batch.
-- Blocker: Exact-SHA review and coordinator PR/merge gates remain; the authored batch is not merged.
+- State: complete and merged to `main` in PR #66 (`d14a7b49c03140c938a18acc655693cfa0a0c880`).
+- Evidence: The five authored release IDs cover quẻ 41–44 and BPCT sentences 12–16. Ora-11 accepted P1–P4, and ora-12 accepted the final one-claim attribution-applicability correction with no blockers. Coordinator run `sh_10819f80b00103gkUOz5438OgP` passed generation, `./init.sh`, read-only format and lint checks, corpus `--check-books --check`, and diff checks. It reported 416 tests passing (181 core, 235 knowledge), 177 records, 1,395 claims, 1,265 citations, 44/64 quẻ, and 264/384 line positions. Four nonfatal web lint warnings and build font, sourcemap, and chunk warnings remain.
+- Limits: Audit decisions remain absent and audit gates remain closed. Independent specialist approval, rights clearance, and certification are not complete. This batch does not claim any of them. The BPCT sentence 11 footnote was not moved into this batch.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Coordinator commits the explicitly owned batch paths, then requests exact-SHA review and completes PR/merge gates.
+- Next: Continue the selected knowledge sequence at feat-045; feat-078 is also merged.

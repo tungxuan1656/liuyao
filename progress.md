@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-05 — feat-044 and feat-078 merged
+
+**State**: Both features are done and merged to `main`.
+**Done**: Confirmed feat-044 in PR #66 and feat-078 in PR #67. Their completion records now reflect the merged state; the feat-078 merge prerequisite no longer blocks feat-045.
+**Evidence**: Main contains `d14a7b49c03140c938a18acc655693cfa0a0c880` (feat-044) and `52b0c19bdb42102e74048fa44dc26354ad1d8a40` (feat-078). Feature-specific acceptance and verification evidence remains in [feat-044](features/feat-044.md) and [feat-078](features/feat-078.md).
+**Blockers**: Corpus-wide specialist review, rights clearance, and certification remain open; they do not block the next authoring feature.
+**Next**: Continue the selected sequence at feat-045.
+
 ## 2026-10-05 — feat-078 scoped audit finalized
 
 **State**: done for scoped local implementation and audit acceptance; coordinator commit, exact-SHA review, PR, and merge remain pending.
