@@ -1,0 +1,3455 @@
+{
+  "schemaVersion": 1,
+  "citations": [
+    {
+      "id": "citation-nhl-q45-overview-structure",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 274,
+        "pdfPageEnd": 274,
+        "printedPageStart": "274",
+        "printedPageEnd": "274"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-overview-structure",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 432,
+        "pdfPageEnd": 432
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-overview-structure",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 698,
+        "pdfPageEnd": 698
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-line-1-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 275,
+        "printedPageStart": "275",
+        "printedPageEnd": "275"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-line-2-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 275,
+        "printedPageStart": "275",
+        "printedPageEnd": "275"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-line-3-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 275,
+        "printedPageStart": "275",
+        "printedPageEnd": "275"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-line-4-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 276,
+        "printedPageStart": "275",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-line-5-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 276,
+        "pdfPageEnd": 276,
+        "printedPageStart": "276",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-line-6-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 276,
+        "pdfPageEnd": 276,
+        "printedPageStart": "276",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-line-1-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 435,
+        "pdfPageEnd": 436
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-line-2-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 436,
+        "pdfPageEnd": 436
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-line-3-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 436,
+        "pdfPageEnd": 437
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-line-4-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 437,
+        "pdfPageEnd": 437
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-line-5-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 437,
+        "pdfPageEnd": 438
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q45-line-6-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 438,
+        "pdfPageEnd": 439
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-line-1-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 703,
+        "pdfPageEnd": 705
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-line-2-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 705,
+        "pdfPageEnd": 707
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-line-3-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 707,
+        "pdfPageEnd": 708
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-line-4-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 708,
+        "pdfPageEnd": 709
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-line-5-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 709,
+        "pdfPageEnd": 711
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q45-line-6-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 711,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-overview-structure",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 277,
+        "pdfPageEnd": 277,
+        "printedPageStart": "277",
+        "printedPageEnd": "277"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-overview-structure",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 440,
+        "pdfPageEnd": 440
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-overview-structure",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 714,
+        "pdfPageEnd": 714
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-line-1-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 277,
+        "pdfPageEnd": 277,
+        "printedPageStart": "277",
+        "printedPageEnd": "277"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-line-2-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 277,
+        "pdfPageEnd": 278,
+        "printedPageStart": "277",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-line-3-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 278,
+        "printedPageStart": "278",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-line-4-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 278,
+        "printedPageStart": "278",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-line-5-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 278,
+        "printedPageStart": "278",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q46-line-6-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 279,
+        "printedPageStart": "278",
+        "printedPageEnd": "279"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-line-1-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 442,
+        "pdfPageEnd": 443
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-line-2-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 443,
+        "pdfPageEnd": 443
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-line-3-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 443,
+        "pdfPageEnd": 444
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-line-4-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 444,
+        "pdfPageEnd": 444
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-line-5-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 444,
+        "pdfPageEnd": 445
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q46-line-6-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 445,
+        "pdfPageEnd": 446
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-line-1-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 716,
+        "pdfPageEnd": 717
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-line-2-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 717,
+        "pdfPageEnd": 719
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-line-3-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 719,
+        "pdfPageEnd": 720
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-line-4-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 720,
+        "pdfPageEnd": 721
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-line-5-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 721,
+        "pdfPageEnd": 722
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q46-line-6-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 722,
+        "pdfPageEnd": 723
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-overview-structure",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 280,
+        "pdfPageEnd": 280,
+        "printedPageStart": "280",
+        "printedPageEnd": "280"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-overview-structure",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 447,
+        "pdfPageEnd": 447
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-overview-structure",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 724,
+        "pdfPageEnd": 724
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-line-1-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 280,
+        "pdfPageEnd": 281,
+        "printedPageStart": "280",
+        "printedPageEnd": "281"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-line-2-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 281,
+        "pdfPageEnd": 281,
+        "printedPageStart": "281",
+        "printedPageEnd": "281"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-line-3-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 281,
+        "pdfPageEnd": 281,
+        "printedPageStart": "281",
+        "printedPageEnd": "281"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-line-4-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 281,
+        "pdfPageEnd": 282,
+        "printedPageStart": "281",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-line-5-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 282,
+        "pdfPageEnd": 282,
+        "printedPageStart": "282",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q47-line-6-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 282,
+        "pdfPageEnd": 282,
+        "printedPageStart": "282",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-line-1-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 450,
+        "pdfPageEnd": 451
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-line-2-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 451,
+        "pdfPageEnd": 452
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-line-3-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 452,
+        "pdfPageEnd": 453
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-line-4-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 453,
+        "pdfPageEnd": 454
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-line-5-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 454,
+        "pdfPageEnd": 455
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q47-line-6-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 455,
+        "pdfPageEnd": 457
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-line-1-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 728,
+        "pdfPageEnd": 729
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-line-2-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 729,
+        "pdfPageEnd": 731
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-line-3-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 731,
+        "pdfPageEnd": 732
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-line-4-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 732,
+        "pdfPageEnd": 733
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-line-5-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 734,
+        "pdfPageEnd": 735
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q47-line-6-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 735,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-overview-structure",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 283,
+        "pdfPageEnd": 283,
+        "printedPageStart": "283",
+        "printedPageEnd": "283"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-overview-structure",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 458,
+        "pdfPageEnd": 458
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-overview-structure",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+        "pdfPageStart": 739,
+        "pdfPageEnd": 739
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-line-1-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 284,
+        "printedPageStart": "284",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-line-2-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 284,
+        "printedPageStart": "284",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-line-3-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 284,
+        "printedPageStart": "284",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-line-4-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 285,
+        "printedPageStart": "284",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-line-5-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 285,
+        "pdfPageEnd": 285,
+        "printedPageStart": "285",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q48-line-6-classical-text",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 285,
+        "pdfPageEnd": 285,
+        "printedPageStart": "285",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-line-1-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 462,
+        "pdfPageEnd": 462
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-line-2-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 462,
+        "pdfPageEnd": 463
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-line-3-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 463,
+        "pdfPageEnd": 464
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-line-4-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 464,
+        "pdfPageEnd": 464
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-line-5-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 464,
+        "pdfPageEnd": 465
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-pbc-q48-line-6-classical-text",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 465,
+        "pdfPageEnd": 466
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-line-1-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 743,
+        "pdfPageEnd": 745
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-line-2-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 745,
+        "pdfPageEnd": 746
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-line-3-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 746,
+        "pdfPageEnd": 748
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-line-4-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 748,
+        "pdfPageEnd": 749
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-line-5-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 749,
+        "pdfPageEnd": 750
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-ntt-q48-line-6-classical-text",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+        "pdfPageStart": 750,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+    },
+    {
+      "id": "citation-nhl-q45-overview-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 274,
+        "pdfPageEnd": 274,
+        "printedPageStart": "274",
+        "printedPageEnd": "274"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-overview-dai-tuong-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 274,
+        "pdfPageEnd": 274,
+        "printedPageStart": "274",
+        "printedPageEnd": "274"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-overview-closing-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 276,
+        "pdfPageEnd": 276,
+        "printedPageStart": "276",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q45-overview-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 432,
+        "pdfPageEnd": 434
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-overview-thoan-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 434,
+        "pdfPageEnd": 435
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-overview-dai-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 435,
+        "pdfPageEnd": 435
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q45-overview-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 698,
+        "pdfPageEnd": 700
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-overview-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 700,
+        "pdfPageEnd": 700
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-overview-thoan-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 701,
+        "pdfPageEnd": 703
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-overview-thoan-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 701,
+        "pdfPageEnd": 703
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-overview-dai-tuong-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 703,
+        "pdfPageEnd": 703
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-overview-dai-tuong-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 703,
+        "pdfPageEnd": 703
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-nhl-q45-line-1-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Nguyễn Hiến Lê",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 275,
+        "printedPageStart": "275",
+        "printedPageEnd": "275"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-line-2-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Nguyễn Hiến Lê",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 275,
+        "printedPageStart": "275",
+        "printedPageEnd": "275"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-line-3-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Nguyễn Hiến Lê",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 275,
+        "printedPageStart": "275",
+        "printedPageEnd": "275"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-line-4-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Nguyễn Hiến Lê",
+        "pdfPageStart": 275,
+        "pdfPageEnd": 276,
+        "printedPageStart": "275",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-line-5-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Nguyễn Hiến Lê",
+        "pdfPageStart": 276,
+        "pdfPageEnd": 276,
+        "printedPageStart": "276",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q45-line-6-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Nguyễn Hiến Lê",
+        "pdfPageStart": 276,
+        "pdfPageEnd": 276,
+        "printedPageStart": "276",
+        "printedPageEnd": "276"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q45-line-1-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Phan Bội Châu",
+        "pdfPageStart": 435,
+        "pdfPageEnd": 436
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-line-2-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Phan Bội Châu",
+        "pdfPageStart": 436,
+        "pdfPageEnd": 436
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-line-3-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Phan Bội Châu",
+        "pdfPageStart": 436,
+        "pdfPageEnd": 437
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-line-4-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Phan Bội Châu",
+        "pdfPageStart": 437,
+        "pdfPageEnd": 437
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-line-5-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Phan Bội Châu",
+        "pdfPageStart": 437,
+        "pdfPageEnd": 438
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q45-line-6-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Phan Bội Châu",
+        "pdfPageStart": 438,
+        "pdfPageEnd": 439
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q45-line-1-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Trình Di",
+        "pdfPageStart": 704,
+        "pdfPageEnd": 705
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-line-2-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Trình Di",
+        "pdfPageStart": 705,
+        "pdfPageEnd": 707
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-line-3-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Trình Di",
+        "pdfPageStart": 707,
+        "pdfPageEnd": 708
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-line-4-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Trình Di",
+        "pdfPageStart": 708,
+        "pdfPageEnd": 709
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-line-5-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Trình Di",
+        "pdfPageStart": 709,
+        "pdfPageEnd": 711
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-line-6-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Trình Di",
+        "pdfPageStart": 711,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q45-line-1-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 1 — Chu Hy",
+        "pdfPageStart": 704,
+        "pdfPageEnd": 704
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-2-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 706,
+        "pdfPageEnd": 706
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-3-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 3 — Chu Hy",
+        "pdfPageStart": 707,
+        "pdfPageEnd": 708
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-4-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 4 — Chu Hy",
+        "pdfPageStart": 709,
+        "pdfPageEnd": 709
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-5-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 5 — Chu Hy",
+        "pdfPageStart": 710,
+        "pdfPageEnd": 711
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-6-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 6 — Chu Hy",
+        "pdfPageStart": 711,
+        "pdfPageEnd": 711
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-2-chu-hy-tien-nho",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 706,
+        "pdfPageEnd": 706
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q45-line-2-chu-han-thuong",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Chu Hán Thương",
+        "pdfPageStart": 706,
+        "pdfPageEnd": 706
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hán Thương"
+    },
+    {
+      "id": "citation-ntt-q45-line-2-ho-song-ho",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Hào 2 — Hồ Song Hồ",
+        "pdfPageStart": 706,
+        "pdfPageEnd": 706
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Hồ Song Hồ"
+    },
+    {
+      "id": "citation-ntt-q45-note-1-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Chú thích 1 — Ngô Tất Tố",
+        "pdfPageStart": 712,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q45-note-2-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Chú thích 2 — Ngô Tất Tố",
+        "pdfPageStart": 712,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q45-note-3-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Chú thích 3 — Ngô Tất Tố",
+        "pdfPageStart": 712,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q45-note-4-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Chú thích 4 — Ngô Tất Tố",
+        "pdfPageStart": 712,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q45-note-5-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Chú thích 5 — Ngô Tất Tố",
+        "pdfPageStart": 712,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q45-note-6-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tụy",
+        "section": "Chú thích 6 — Ngô Tất Tố",
+        "pdfPageStart": 712,
+        "pdfPageEnd": 712
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-q46-overview-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 277,
+        "pdfPageEnd": 277,
+        "printedPageStart": "277",
+        "printedPageEnd": "277"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q46-overview-closing-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 279,
+        "pdfPageEnd": 279,
+        "printedPageStart": "279",
+        "printedPageEnd": "279"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q46-overview-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 440,
+        "pdfPageEnd": 441
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-overview-thoan-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 441,
+        "pdfPageEnd": 442
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-overview-dai-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 442,
+        "pdfPageEnd": 442
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q46-overview-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 714,
+        "pdfPageEnd": 714
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-overview-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 714,
+        "pdfPageEnd": 714
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-overview-thoan-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 715,
+        "pdfPageEnd": 716
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-overview-dai-tuong-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 716,
+        "pdfPageEnd": 716
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-overview-dai-tuong-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 716,
+        "pdfPageEnd": 716
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-nhl-q46-line-1-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Nguyễn Hiến Lê",
+        "pdfPageStart": 277,
+        "pdfPageEnd": 277,
+        "printedPageStart": "277",
+        "printedPageEnd": "277"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q46-line-2-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Nguyễn Hiến Lê",
+        "pdfPageStart": 277,
+        "pdfPageEnd": 278,
+        "printedPageStart": "277",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q46-line-3-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Nguyễn Hiến Lê",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 278,
+        "printedPageStart": "278",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q46-line-4-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Nguyễn Hiến Lê",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 278,
+        "printedPageStart": "278",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q46-line-5-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Nguyễn Hiến Lê",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 278,
+        "printedPageStart": "278",
+        "printedPageEnd": "278"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q46-line-6-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Nguyễn Hiến Lê",
+        "pdfPageStart": 278,
+        "pdfPageEnd": 279,
+        "printedPageStart": "278",
+        "printedPageEnd": "279"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q46-line-1-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Phan Bội Châu",
+        "pdfPageStart": 442,
+        "pdfPageEnd": 443
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-line-2-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Phan Bội Châu",
+        "pdfPageStart": 443,
+        "pdfPageEnd": 443
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-line-3-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Phan Bội Châu",
+        "pdfPageStart": 443,
+        "pdfPageEnd": 444
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-line-4-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Phan Bội Châu",
+        "pdfPageStart": 444,
+        "pdfPageEnd": 444
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-line-5-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Phan Bội Châu",
+        "pdfPageStart": 444,
+        "pdfPageEnd": 445
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q46-line-6-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Phan Bội Châu",
+        "pdfPageStart": 445,
+        "pdfPageEnd": 446
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q46-line-1-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Trình Di",
+        "pdfPageStart": 717,
+        "pdfPageEnd": 717
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-line-3-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Trình Di",
+        "pdfPageStart": 719,
+        "pdfPageEnd": 720
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-line-4-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Trình Di",
+        "pdfPageStart": 720,
+        "pdfPageEnd": 721
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-line-5-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Trình Di",
+        "pdfPageStart": 721,
+        "pdfPageEnd": 722
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-line-6-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Trình Di",
+        "pdfPageStart": 722,
+        "pdfPageEnd": 723
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q46-line-1-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 1 — Chu Hy",
+        "pdfPageStart": 717,
+        "pdfPageEnd": 717
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-3-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 3 — Chu Hy",
+        "pdfPageStart": 719,
+        "pdfPageEnd": 719
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-4-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 4 — Chu Hy",
+        "pdfPageStart": 720,
+        "pdfPageEnd": 721
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-5-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Chu Hy",
+        "pdfPageStart": 721,
+        "pdfPageEnd": 721
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-6-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 6 — Chu Hy",
+        "pdfPageStart": 723,
+        "pdfPageEnd": 723
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-2-chu-hy-printed-long",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 718,
+        "pdfPageEnd": 718
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-2-chu-hy-printed-short",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 718,
+        "pdfPageEnd": 718
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-2-chu-hy-printed-tuong",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 719,
+        "pdfPageEnd": 719
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q46-line-5-trinh-sa-tuy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Trình Sa Tùy",
+        "pdfPageStart": 722,
+        "pdfPageEnd": 722
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Sa Tùy"
+    },
+    {
+      "id": "citation-ntt-q46-line-5-ho-loi",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Hào 5 — Họ Lôi",
+        "pdfPageStart": 722,
+        "pdfPageEnd": 722
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Họ Lôi"
+    },
+    {
+      "id": "citation-ntt-q46-note-1-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Chú thích 1 — Ngô Tất Tố",
+        "pdfPageStart": 723,
+        "pdfPageEnd": 723
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q46-note-2-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Chú thích 2 — Ngô Tất Tố",
+        "pdfPageStart": 723,
+        "pdfPageEnd": 723
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q46-note-3-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Thăng",
+        "section": "Chú thích 3 — Ngô Tất Tố",
+        "pdfPageStart": 723,
+        "pdfPageEnd": 723
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-q47-overview-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 280,
+        "pdfPageEnd": 280,
+        "printedPageStart": "280",
+        "printedPageEnd": "280"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q47-overview-closing-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 282,
+        "pdfPageEnd": 282,
+        "printedPageStart": "282",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q47-overview-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 447,
+        "pdfPageEnd": 448
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-overview-thoan-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 448,
+        "pdfPageEnd": 449
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-overview-dai-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 449,
+        "pdfPageEnd": 450
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q47-overview-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 724,
+        "pdfPageEnd": 725
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-overview-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 725,
+        "pdfPageEnd": 725
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-overview-thoan-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 725,
+        "pdfPageEnd": 727
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-overview-thoan-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 725,
+        "pdfPageEnd": 727
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-overview-dai-tuong-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 727,
+        "pdfPageEnd": 727
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-overview-dai-tuong-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 727,
+        "pdfPageEnd": 727
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-nhl-q47-line-1-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Nguyễn Hiến Lê",
+        "pdfPageStart": 280,
+        "pdfPageEnd": 281,
+        "printedPageStart": "280",
+        "printedPageEnd": "281"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q47-line-2-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Nguyễn Hiến Lê",
+        "pdfPageStart": 281,
+        "pdfPageEnd": 281,
+        "printedPageStart": "281",
+        "printedPageEnd": "281"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q47-line-3-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Nguyễn Hiến Lê",
+        "pdfPageStart": 281,
+        "pdfPageEnd": 281,
+        "printedPageStart": "281",
+        "printedPageEnd": "281"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q47-line-4-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Nguyễn Hiến Lê",
+        "pdfPageStart": 281,
+        "pdfPageEnd": 282,
+        "printedPageStart": "281",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q47-line-5-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Nguyễn Hiến Lê",
+        "pdfPageStart": 282,
+        "pdfPageEnd": 282,
+        "printedPageStart": "282",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q47-line-6-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Nguyễn Hiến Lê",
+        "pdfPageStart": 282,
+        "pdfPageEnd": 282,
+        "printedPageStart": "282",
+        "printedPageEnd": "282"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q47-line-1-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Phan Bội Châu",
+        "pdfPageStart": 450,
+        "pdfPageEnd": 451
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-line-2-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Phan Bội Châu",
+        "pdfPageStart": 451,
+        "pdfPageEnd": 452
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-line-3-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Phan Bội Châu",
+        "pdfPageStart": 452,
+        "pdfPageEnd": 453
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-line-4-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Phan Bội Châu",
+        "pdfPageStart": 453,
+        "pdfPageEnd": 454
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-line-5-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Phan Bội Châu",
+        "pdfPageStart": 454,
+        "pdfPageEnd": 455
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q47-line-6-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Phan Bội Châu",
+        "pdfPageStart": 455,
+        "pdfPageEnd": 457
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q47-line-1-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Trình Di",
+        "pdfPageStart": 728,
+        "pdfPageEnd": 729
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-line-2-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Trình Di",
+        "pdfPageStart": 729,
+        "pdfPageEnd": 731
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-line-3-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Trình Di",
+        "pdfPageStart": 731,
+        "pdfPageEnd": 732
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-line-4-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Trình Di",
+        "pdfPageStart": 732,
+        "pdfPageEnd": 733
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-line-5-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Trình Di",
+        "pdfPageStart": 734,
+        "pdfPageEnd": 735
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-line-6-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Trình Di",
+        "pdfPageStart": 736,
+        "pdfPageEnd": 737
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q47-line-1-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 1 — Chu Hy",
+        "pdfPageStart": 728,
+        "pdfPageEnd": 728
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-line-2-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 730,
+        "pdfPageEnd": 730
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-line-3-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 3 — Chu Hy",
+        "pdfPageStart": 731,
+        "pdfPageEnd": 731
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-line-4-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 4 — Chu Hy",
+        "pdfPageStart": 733,
+        "pdfPageEnd": 733
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-line-5-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 5 — Chu Hy",
+        "pdfPageStart": 735,
+        "pdfPageEnd": 735
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-line-6-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Chu Hy",
+        "pdfPageStart": 736,
+        "pdfPageEnd": 736
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q47-line-6-phung-hoi-van",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Phùng Hội Vân",
+        "pdfPageStart": 736,
+        "pdfPageEnd": 737
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phùng Hội Vân"
+    },
+    {
+      "id": "citation-ntt-q47-line-6-ly-xuan-nien",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Lý Xuân Niên",
+        "pdfPageStart": 737,
+        "pdfPageEnd": 737
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Lý Xuân Niên"
+    },
+    {
+      "id": "citation-ntt-q47-line-6-khau-kien-an",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Hào 6 — Khâu Kiến An",
+        "pdfPageStart": 737,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Khâu Kiến An"
+    },
+    {
+      "id": "citation-ntt-q47-note-1-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Chú thích 1 — Ngô Tất Tố",
+        "pdfPageStart": 738,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q47-note-2-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Chú thích 2 — Ngô Tất Tố",
+        "pdfPageStart": 738,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q47-note-3-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Chú thích 3 — Ngô Tất Tố",
+        "pdfPageStart": 738,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q47-note-4-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Chú thích 4 — Ngô Tất Tố",
+        "pdfPageStart": 738,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q47-note-5-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Chú thích 5 — Ngô Tất Tố",
+        "pdfPageStart": 738,
+        "pdfPageEnd": 738
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-nhl-q48-overview-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 283,
+        "pdfPageEnd": 284,
+        "printedPageStart": "283",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q48-overview-closing-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Nguyễn Hiến Lê",
+        "pdfPageStart": 285,
+        "pdfPageEnd": 285,
+        "printedPageStart": "285",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q48-overview-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 458,
+        "pdfPageEnd": 460
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-overview-thoan-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 460,
+        "pdfPageEnd": 461
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-overview-dai-tuong-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 461,
+        "pdfPageEnd": 461
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q48-overview-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 739,
+        "pdfPageEnd": 742
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-overview-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 741,
+        "pdfPageEnd": 742
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-overview-tu-tien-trai",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Từ Tiến Trai",
+        "pdfPageStart": 739,
+        "pdfPageEnd": 739
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Từ Tiến Trai"
+    },
+    {
+      "id": "citation-ntt-q48-overview-ly-long-son",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Lý Long Sơn",
+        "pdfPageStart": 739,
+        "pdfPageEnd": 740
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Lý Long Sơn"
+    },
+    {
+      "id": "citation-ntt-q48-overview-truong-trung-khe",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Trương Trung Khê",
+        "pdfPageStart": 740,
+        "pdfPageEnd": 741
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trương Trung Khê"
+    },
+    {
+      "id": "citation-ntt-q48-overview-dai-tuong-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Trình Di",
+        "pdfPageStart": 743,
+        "pdfPageEnd": 743
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-overview-dai-tuong-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Tổng quan — Chu Hy",
+        "pdfPageStart": 743,
+        "pdfPageEnd": 743
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-nhl-q48-line-1-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Nguyễn Hiến Lê",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 284,
+        "printedPageStart": "284",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q48-line-2-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Nguyễn Hiến Lê",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 284,
+        "printedPageStart": "284",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q48-line-3-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Nguyễn Hiến Lê",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 284,
+        "printedPageStart": "284",
+        "printedPageEnd": "284"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q48-line-4-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Nguyễn Hiến Lê",
+        "pdfPageStart": 284,
+        "pdfPageEnd": 285,
+        "printedPageStart": "284",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q48-line-5-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Nguyễn Hiến Lê",
+        "pdfPageStart": 285,
+        "pdfPageEnd": 285,
+        "printedPageStart": "285",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-nhl-q48-line-6-nhl",
+      "sourceId": "source-book-nhl",
+      "editionId": "edition-nhl-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Nguyễn Hiến Lê",
+        "pdfPageStart": 285,
+        "pdfPageEnd": 285,
+        "printedPageStart": "285",
+        "printedPageEnd": "285"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Nguyễn Hiến Lê"
+    },
+    {
+      "id": "citation-pbc-q48-line-1-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Phan Bội Châu",
+        "pdfPageStart": 462,
+        "pdfPageEnd": 462
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-line-2-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Phan Bội Châu",
+        "pdfPageStart": 462,
+        "pdfPageEnd": 463
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-line-3-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Phan Bội Châu",
+        "pdfPageStart": 463,
+        "pdfPageEnd": 464
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-line-4-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Phan Bội Châu",
+        "pdfPageStart": 464,
+        "pdfPageEnd": 464
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-line-5-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Phan Bội Châu",
+        "pdfPageStart": 464,
+        "pdfPageEnd": 465
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-q48-line-6-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Phan Bội Châu",
+        "pdfPageStart": 465,
+        "pdfPageEnd": 466
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-ntt-q48-line-1-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Trình Di",
+        "pdfPageStart": 744,
+        "pdfPageEnd": 745
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-line-2-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Trình Di",
+        "pdfPageStart": 745,
+        "pdfPageEnd": 746
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-line-3-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Trình Di",
+        "pdfPageStart": 747,
+        "pdfPageEnd": 748
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-line-4-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Trình Di",
+        "pdfPageStart": 748,
+        "pdfPageEnd": 749
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-line-5-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Trình Di",
+        "pdfPageStart": 749,
+        "pdfPageEnd": 750
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-line-6-trinh-di",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Trình Di",
+        "pdfPageStart": 750,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-ntt-q48-line-1-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 1 — Chu Hy",
+        "pdfPageStart": 744,
+        "pdfPageEnd": 745
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-line-2-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 2 — Chu Hy",
+        "pdfPageStart": 746,
+        "pdfPageEnd": 746
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-line-3-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 3 — Chu Hy",
+        "pdfPageStart": 747,
+        "pdfPageEnd": 748
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-line-4-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 4 — Chu Hy",
+        "pdfPageStart": 748,
+        "pdfPageEnd": 749
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-line-5-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 5 — Chu Hy",
+        "pdfPageStart": 750,
+        "pdfPageEnd": 750
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-line-6-chu-hy",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Hào 6 — Chu Hy",
+        "pdfPageStart": 750,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chu Hy"
+    },
+    {
+      "id": "citation-ntt-q48-note-1-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 1 — Ngô Tất Tố",
+        "pdfPageStart": 751,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q48-note-2-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 2 — Ngô Tất Tố",
+        "pdfPageStart": 751,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q48-note-3-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 3 — Ngô Tất Tố",
+        "pdfPageStart": 751,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q48-note-4-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 4 — Ngô Tất Tố",
+        "pdfPageStart": 751,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q48-note-5-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 5 — Ngô Tất Tố",
+        "pdfPageStart": 751,
+        "pdfPageEnd": 751
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q48-note-6-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 6 — Ngô Tất Tố",
+        "pdfPageStart": 752,
+        "pdfPageEnd": 752
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-ntt-q48-note-7-ntt",
+      "sourceId": "source-book-ntt",
+      "editionId": "edition-ntt-supplied",
+      "location": {
+        "chapter": "Quẻ Tỉnh",
+        "section": "Chú thích 7 — Ngô Tất Tố",
+        "pdfPageStart": 752,
+        "pdfPageEnd": 752
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Ngô Tất Tố"
+    },
+    {
+      "id": "citation-pbc-q47-overview-closing-pbc",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "Quẻ Khốn",
+        "section": "Tổng quan — Phan Bội Châu",
+        "pdfPageStart": 456,
+        "pdfPageEnd": 457
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    }
+  ]
+}

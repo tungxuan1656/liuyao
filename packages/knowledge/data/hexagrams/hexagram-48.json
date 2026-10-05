@@ -1,0 +1,707 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-48",
+  "type": "hexagram",
+  "title": "Thủy Phong Tỉnh",
+  "aliases": ["Tỉnh"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-48-structure",
+      "kind": "structural-fact",
+      "text": "Thủy Phong Tỉnh gồm nội quái Tốn và ngoại quái Khảm; sáu vị trí được đếm từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q48-overview-structure",
+        "citation-pbc-q48-overview-structure",
+        "citation-ntt-q48-overview-structure",
+        "citation-nhl-q48-line-1-classical-text",
+        "citation-nhl-q48-line-2-classical-text",
+        "citation-nhl-q48-line-3-classical-text",
+        "citation-nhl-q48-line-4-classical-text",
+        "citation-nhl-q48-line-5-classical-text",
+        "citation-nhl-q48-line-6-classical-text",
+        "citation-pbc-q48-line-1-classical-text",
+        "citation-pbc-q48-line-2-classical-text",
+        "citation-pbc-q48-line-3-classical-text",
+        "citation-pbc-q48-line-4-classical-text",
+        "citation-pbc-q48-line-5-classical-text",
+        "citation-pbc-q48-line-6-classical-text",
+        "citation-ntt-q48-line-1-classical-text",
+        "citation-ntt-q48-line-2-classical-text",
+        "citation-ntt-q48-line-3-classical-text",
+        "citation-ntt-q48-line-4-classical-text",
+        "citation-ntt-q48-line-5-classical-text",
+        "citation-ntt-q48-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê đọc Khảm nước trên Tốn gỗ như gàu vào nước; ông còn đọc sáu nét thành mạch, đáy, lòng, nắp và miệng giếng. Giếng có chỗ và công dụng bền trong khi ấp đổi; bình vỡ gần lúc lấy nước nhắc làm việc cẩn thận đến cuối. Thoán gắn tính bền với hai–năm cương trung, Đại Tượng khuyên nuôi dân, dạy giúp nhau.",
+      "citationIds": ["citation-nhl-q48-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-closing-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê nhận các hào Tỉnh càng lên càng tốt, hào cuối là lúc hoàn thành việc múc, không phải cực cao phải đảo. Ông so với Đỉnh và một số quẻ khác, không dùng quy tắc cực tốt thành xấu cho mọi hào trên.",
+      "citationIds": ["citation-nhl-q48-overview-closing-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu lấy đồ gỗ đưa nước lên và hình sáu nét giếng để giải Tỉnh. Giếng có chỗ bền, không kiệt không tràn, giúp người không thiên vị; PHỤ CHÚ liên hệ chân tính, đạo trời và Phật tính như diễn giải triết học. Bình vỡ trước khi múc nhắc dò chỗ, bền làm và giữ khí cụ đến lúc thành.",
+      "citationIds": ["citation-pbc-q48-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-thoan-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Thoán bằng việc vào nước rồi đưa nước lên, sự nuôi người không cùng và đức hữu thường của hai–năm cương trung. Chưa đưa nước dùng được thì chưa có công, hỏng bình làm mất kết quả; đây là ví dụ thực hành việc đời trong cách giải của ông.",
+      "citationIds": ["citation-pbc-q48-overview-thoan-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-dai-tuong-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải nước trên cây theo nhựa đi lên; lạo dân là an ủi, giúp dân, khuyến tướng là khuyến khích dân hỗ trợ nhau. Ông dẫn phép tỉnh điền tám nhà và ruộng công để triển khai quan niệm ấy, rồi phê thuế cùng tư bản, mong phân ruộng và hạn chế tài sản.",
+      "citationIds": ["citation-pbc-q48-overview-dai-tuong-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế.",
+        "Mô tả tỉnh điền và ý kiến kinh tế là lời Phan Bội Châu trong source, không xác minh toàn bộ lịch sử, không thành chính sách sản phẩm hoặc mô hình kinh tế đã được chứng minh."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di nối chỗ cao khốn với trở xuống giếng, lấy đồ gỗ vào nước kéo lên. Đức giếng là bền chỗ, múc không hết và để không tràn, dụng giếng là mọi người đều dùng. Việc gần thành mà chưa dùng được chưa có công, bình hỏng làm mất dụng; Thoán gắn hữu thường với hai–năm cương trung.",
+      "citationIds": ["citation-ntt-q48-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải Tỉnh bằng Tốn gỗ vào nước Khảm để đưa nước lên, giếng không đổi cho mọi người sử dụng. Ông đọc gần hết dây mà bình hỏng thành lời răn kính cẩn lúc sắp xong; Thoán dùng tượng giải tên, thể giải lời và cương trung chỉ hai–năm.",
+      "citationIds": ["citation-ntt-q48-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-tu-tien-trai",
+      "kind": "author-interpretation",
+      "text": "Từ Tiến Trai đọc nét âm đầu thành mạch, hai nét dương hai–ba thành đá, âm bốn thành khoảng rỗng, dương năm thành nước sắp ra và âm trên thành chỗ rỗng, hợp thành hình giếng. Giữ cách đọc dương năm là nước khác NHL/PBC gọi nắp.",
+      "citationIds": ["citation-ntt-q48-overview-tu-tien-trai"],
+      "attribution": {
+        "author": "Từ Tiến Trai",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-ly-long-son",
+      "kind": "author-interpretation",
+      "text": "Lý Long Sơn thuật chọn mạch nước khi dựng ấp và chuyện Công Lưu; ông dùng âm–dương của Khảm để so nước giếng giữ bản tính với nước chảy đi, rồi ví sự giữ và mất với tinh huyết, nước mắt và nước mũi.",
+      "citationIds": ["citation-ntt-q48-overview-ly-long-son"],
+      "attribution": {
+        "author": "Lý Long Sơn",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế.",
+        "Chỉ ghi cách liên tưởng của Lý Long Sơn, không nhập giải thích ấy như sinh lý, thủy văn hoặc hướng dẫn sức khỏe được kiểm chứng."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-truong-trung-khe",
+      "kind": "author-interpretation",
+      "text": "Trương Trung Khê giải đức bền chỗ và người đi lại lấy nước bằng một thuyết nguồn quẻ: dưới Kiền, trên đoạn in Khốn rồi nói đổi Khôn thành Khảm, cứng mềm đầu–năm đổi chỗ. Giữ chữ Khốn in trong câu nguồn như sai khác, không tự sửa; cách giải không phải phép biến quẻ gieo.",
+      "citationIds": ["citation-ntt-q48-overview-truong-trung-khe"],
+      "attribution": {
+        "author": "Trương Trung Khê",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế.",
+        "Nguồn in Khốn/Khôn không thống nhất trong cùng lời bàn; không xác định dạng nguồn đúng hoặc suy ra thuật toán chuyển quẻ từ đó."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-dai-tuong-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di đọc nước được cây đưa lên như đồ múc nước, rồi bắt chước dụng và ơn của giếng để nuôi, an ủi dân và khuyến khích họ giúp nhau.",
+      "citationIds": ["citation-ntt-q48-overview-dai-tuong-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-overview-dai-tuong-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy đọc nước thấm nhuần đi lên cây, lạo dân là trị nuôi và khuyến tướng là dân nuôi nhau. Trong lời Tiên Nho ông không nhận cách đồ gỗ múc vì bình là sành, thiên về tân dịch lên ngọn cây; giữ chỗ ông nói e để không biến giả thuyết thành độc tôn.",
+      "citationIds": ["citation-ntt-q48-overview-dai-tuong-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-1-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chú Tỉnh có nghĩa giếng, làng và trạng thái tề chỉnh rõ ràng; tên quẻ ở đây vẫn lấy giếng.",
+      "citationIds": ["citation-ntt-q48-note-1-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-2-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải suối trong lời Lý Long Sơn là mạch nước.",
+      "citationIds": ["citation-ntt-q48-note-2-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-3-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố định danh Công Lưu là tổ nhà Chu trong lời dẫn của Lý Long Sơn; không xác minh độc lập điển tích.",
+      "citationIds": ["citation-ntt-q48-note-3-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-4-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố thuật cách Trình Di và người chú được ghi Trương Trung dùng chữ tỉnh đầu như động từ, chữ sau là danh từ; đây là giải cấu trúc vãng lai tỉnh tỉnh.",
+      "citationIds": ["citation-ntt-q48-note-4-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-5-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố làm rõ dùng giếng trong lời bàn là múc nước để sử dụng.",
+      "citationIds": ["citation-ntt-q48-note-5-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-6-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải đề bãi bằng một thứ cỏ có hạt ở miền bắc Trung Quốc, thường dùng cho gia súc; đây là chú từ của nguồn, không định danh loài thực vật đã kiểm chứng.",
+      "citationIds": ["citation-ntt-q48-note-6-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-48-note-7-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố ghi bản dịch phụ thành ếch nhái ở hào hai là theo Trình Di; giữ cách dịch này riêng với cá giếc trong NHL.",
+      "citationIds": ["citation-ntt-q48-note-7-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-wind", "trigram-water"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yang", "yang", "yin", "yang", "yin"],
+    "kingWenNumber": 48,
+    "upperTrigramId": "trigram-water",
+    "lowerTrigramId": "trigram-wind",
+    "claimIds": ["hexagram-48-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-48-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải giếng bùn ở hào đầu là thiếu tài và không có hào bốn giúp, chẳng có nước để người hoặc vật dùng. Giữ đây là phán đoán nhân sự trong hình tượng cổ, không gán nhãn giá trị cho người nghèo hay ở vị thấp.",
+          "citationIds": ["citation-nhl-q48-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu dùng hào dương ví mạch nước, âm đầu thấp không mạch thành giếng bùn bị bỏ. Tiểu Tượng thì xả được ông đọc là người đời không dùng; PHỤ CHÚ khuyên bồi dưỡng phẩm cách để đáng được biết, không lập quy luật người không được dùng đều có lỗi.",
+          "citationIds": ["citation-pbc-q48-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải đầu mềm thấp, không ứng viện nên không đưa nước tới người và vật, như giếng bùn bị bỏ, chim cũng không đến. Tiểu Tượng nói cái không giúp được bị đời bỏ; giữ cách giải tượng này, không dùng để quy lỗi người bị xã hội bỏ rơi.",
+          "citationIds": ["citation-ntt-q48-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải âm đầu không có mạch dương chảy lên, chỉ bùn nên người không ăn, chim không đến. Lời chú Tiểu Tượng gọi đó là bị đời bỏ, không là phân loại phẩm giá người hiện đại.",
+          "citationIds": ["citation-ntt-q48-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yang",
+      "label": "Cửu nhị",
+      "claims": [
+        {
+          "id": "hexagram-48-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải hai có tài cương nhưng ngôi thấp, không ứng viện trên, nên nước chỉ rỉ nuôi cá giếc như chum nứt. Khác đầu bất tài, hai bị hoàn cảnh làm không dùng được; nguồn cũng nêu hai cách hiểu giếng trong hang hay có hang.",
+          "citationIds": ["citation-nhl-q48-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải hai có tài nhưng không người trên kéo lên, thân cận đầu vô dụng nên nước chỉ nhỏ vào phụ, như chum rò. Tiểu Tượng vô dữ là không người giúp; PHỤ CHÚ phân biệt thiếu tài ở đầu với bị hoàn cảnh cản ở hai.",
+          "citationIds": ["citation-pbc-q48-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải hai có tài dương nhưng không ứng trên, chỉ liền xuống đầu nên nước như khe chảy xuống, chỉ rót cho loài vật nhỏ. Ông nêu phụ có thể là cóc hay ễnh ương; vò rò ví tài vốn dùng được mà mất đường dùng. Tiểu Tượng nhắc cần người trên kéo lên để thành công.",
+          "citationIds": ["citation-ntt-q48-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải hai cương ở giữa có tượng mạch nước, nhưng không ứng trên và liền đầu dưới nên công không lên; giữ tượng nước mạch khác với tình trạng chỉ bùn của đầu.",
+          "citationIds": ["citation-ntt-q48-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-48-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải ba có tài, đúng vị, muốn giúp nhưng còn thấp nên chưa được dùng như giếng sạch chưa ai múc. Nếu vua sáng dùng tài, mọi người mới được nhờ; không bỏ điều kiện có người biết dùng.",
+          "citationIds": ["citation-nhl-q48-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải ba có tài và tâm giúp đời nhưng còn ở dưới, như giếng trong chưa được dùng. Ông đọc tâm trắc và hành trắc theo sự đau lòng của người đi đường; vua sáng dùng tài khiến trên dưới được phúc. PHỤ CHÚ nhấn mạnh xã hội biết tiếc tài và người biết dụng, dẫn các nhân vật sử như ví dụ của mình.",
+          "citationIds": ["citation-pbc-q48-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải ba sạch, có tài và thiết tha thi hành, nhưng cương không giữa nên nóng cầu tiến hơn thái độ dùng thì làm, bỏ thì giấu. Vua sáng không đòi người hoàn hảo mới dùng; trên dưới đều nhờ tài ấy. Tiểu Tượng hành trắc nói nỗi lo không hành được đạo thúc tìm minh vương.",
+          "citationIds": ["citation-ntt-q48-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải điệp là không đọng dơ, giếng sạch chưa được ăn khiến người ngậm ngùi. Dương đúng vị ở đầu quẻ dưới mà chưa được dùng sinh tượng ấy; Tiểu Tượng hành trắc được ông đọc riêng là người đi đường xót, khác Trình Di lo không hành đạo.",
+          "citationIds": ["citation-ntt-q48-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yin",
+      "label": "Lục tứ",
+      "claims": [
+        {
+          "id": "hexagram-48-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải bốn mềm, tài vừa nhưng đúng vị, gần năm nên nhờ năm làm việc nhỏ. Xây thành và đáy giếng giữ nước dùng tạm minh họa không lỗi, không phải cùng công rộng của năm.",
+          "citationIds": ["citation-nhl-q48-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải bốn âm đúng vị, gần năm nên sửa được phần việc, như ghép gạch bờ và lòng giếng. Tiểu Tượng tu tỉnh chỉ giữ giếng không bỏ, chưa phải công lớn; không nhập chữ thu sửa giếng ở đây với thu múc ở sáu.",
+          "citationIds": ["citation-pbc-q48-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải bốn âm đúng vị, gần vua năm nhưng tài không đủ làm lợi rộng; tự sửa phần mình, không bỏ công nuôi thì không lỗi. Tiểu Tượng chỉ sửa giếng để không bị bỏ, giới hạn kết quả ở tránh lỗi.",
+          "citationIds": ["citation-ntt-q48-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải bốn đúng vị nhưng mềm không thành mạch nước, chỉ sửa chứ chưa ra công cho người. Nếu người xem tự sửa như vậy thì dù chưa có công vẫn tránh lỗi, không đồng nhất tránh lỗi với thành công lớn.",
+          "citationIds": ["citation-ntt-q48-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yang",
+      "label": "Cửu ngũ",
+      "claims": [
+        {
+          "id": "hexagram-48-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải năm cương trung ở ngôi cao, đem ơn tới dân như nước giếng sạch và lạnh múc ăn được; giữ hình ảnh công dụng, không kết luận về chất lượng nước uống thực tế.",
+          "citationIds": ["citation-nhl-q48-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải năm cương trung chính, ở ngôi tôn nên nước sạch lạnh lên mặt giếng được người ăn, như ơn trạch đến dân. Tiểu Tượng gắn phẩm chất và công dụng ấy với trung chính.",
+          "citationIds": ["citation-pbc-q48-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải năm cương trung chính ngôi tôn như suối ngọt sạch, lạnh dùng được, rất đẹp nhưng chưa nói cát vì cần nước tới tận trên mới hoàn thành. Tiểu Tượng gắn cái chí thiện ấy với trung chính; giữ khác cách NHL/PBC coi năm đã múc ăn.",
+          "citationIds": ["citation-ntt-q48-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải liệt là sạch, năm cương trung chính có công tới các loài nên có tượng nước dùng được. Người xem phải có đức tương ứng mới hợp tượng này.",
+          "citationIds": ["citation-ntt-q48-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yin",
+      "label": "Thượng lục",
+      "claims": [
+        {
+          "id": "hexagram-48-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê giải sáu là nước đã múc lên: mở cho mọi người dùng, không đậy lại và giúp đời bền. Cuối quẻ là thành công chứ không tất nhiên quá độ như nhiều hào trên khác.",
+          "citationIds": ["citation-nhl-q48-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải sáu múc xong rồi phải cho dùng chung, không giữ riêng và không ngừng giúp. Tiểu Tượng đại thành và PHỤ CHÚ đọc cuối Tỉnh–Đỉnh là hoàn thành, không là cực rồi biến xấu; lời kết chia sáu hào thành ba đoạn dưới, giữa, trên của công việc đưa nước ra.",
+          "citationIds": ["citation-pbc-q48-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải sáu đem nước lên cho mọi người dùng không che, ơn rộng lại thường độ không đổi. Ông coi cuối Tỉnh và Đỉnh là thành chứ không cực biến; Tiểu Tượng đại thành nói công giếng chỉ trọn ở hào trên.",
+          "citationIds": ["citation-ntt-q48-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-48-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy giải thu là múc; ông dẫn họ Triều hiểu kéo trục dây cũng được. Không che, nguồn chảy không cạn và cửa Khảm không lấp giải vì sao âm trên vẫn tốt; người xem còn phải có đức tin mới đạt nguyên cát.",
+          "citationIds": ["citation-ntt-q48-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker (AI source comparison)",
+    "reviewedAt": "2026-10-05",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q48-overview-structure",
+      "citation-pbc-q48-overview-structure",
+      "citation-ntt-q48-overview-structure",
+      "citation-nhl-q48-line-1-classical-text",
+      "citation-nhl-q48-line-2-classical-text",
+      "citation-nhl-q48-line-3-classical-text",
+      "citation-nhl-q48-line-4-classical-text",
+      "citation-nhl-q48-line-5-classical-text",
+      "citation-nhl-q48-line-6-classical-text",
+      "citation-pbc-q48-line-1-classical-text",
+      "citation-pbc-q48-line-2-classical-text",
+      "citation-pbc-q48-line-3-classical-text",
+      "citation-pbc-q48-line-4-classical-text",
+      "citation-pbc-q48-line-5-classical-text",
+      "citation-pbc-q48-line-6-classical-text",
+      "citation-ntt-q48-line-1-classical-text",
+      "citation-ntt-q48-line-2-classical-text",
+      "citation-ntt-q48-line-3-classical-text",
+      "citation-ntt-q48-line-4-classical-text",
+      "citation-ntt-q48-line-5-classical-text",
+      "citation-ntt-q48-line-6-classical-text",
+      "citation-nhl-q48-overview-nhl",
+      "citation-nhl-q48-overview-closing-nhl",
+      "citation-pbc-q48-overview-pbc",
+      "citation-pbc-q48-overview-thoan-pbc",
+      "citation-pbc-q48-overview-dai-tuong-pbc",
+      "citation-ntt-q48-overview-trinh-di",
+      "citation-ntt-q48-overview-chu-hy",
+      "citation-ntt-q48-overview-tu-tien-trai",
+      "citation-ntt-q48-overview-ly-long-son",
+      "citation-ntt-q48-overview-truong-trung-khe",
+      "citation-ntt-q48-overview-dai-tuong-trinh-di",
+      "citation-ntt-q48-overview-dai-tuong-chu-hy",
+      "citation-ntt-q48-note-1-ntt",
+      "citation-ntt-q48-note-2-ntt",
+      "citation-ntt-q48-note-3-ntt",
+      "citation-ntt-q48-note-4-ntt",
+      "citation-ntt-q48-note-5-ntt",
+      "citation-ntt-q48-note-6-ntt",
+      "citation-ntt-q48-note-7-ntt",
+      "citation-nhl-q48-line-1-nhl",
+      "citation-pbc-q48-line-1-pbc",
+      "citation-ntt-q48-line-1-trinh-di",
+      "citation-ntt-q48-line-1-chu-hy",
+      "citation-nhl-q48-line-2-nhl",
+      "citation-pbc-q48-line-2-pbc",
+      "citation-ntt-q48-line-2-trinh-di",
+      "citation-ntt-q48-line-2-chu-hy",
+      "citation-nhl-q48-line-3-nhl",
+      "citation-pbc-q48-line-3-pbc",
+      "citation-ntt-q48-line-3-trinh-di",
+      "citation-ntt-q48-line-3-chu-hy",
+      "citation-nhl-q48-line-4-nhl",
+      "citation-pbc-q48-line-4-pbc",
+      "citation-ntt-q48-line-4-trinh-di",
+      "citation-ntt-q48-line-4-chu-hy",
+      "citation-nhl-q48-line-5-nhl",
+      "citation-pbc-q48-line-5-pbc",
+      "citation-ntt-q48-line-5-trinh-di",
+      "citation-ntt-q48-line-5-chu-hy",
+      "citation-nhl-q48-line-6-nhl",
+      "citation-pbc-q48-line-6-pbc",
+      "citation-ntt-q48-line-6-trinh-di",
+      "citation-ntt-q48-line-6-chu-hy"
+    ],
+    "note": "Compared full supplied passages, page images, named commentary and notes for this quẻ. Original Vietnamese selections retain author differences and edition limitations; NTT translation blocks were inspected with their own printed labels. This is source comparison, not an audit decision, independent verification approval, rights clearance or certification. Unrepresented wording and audit layer closure remain open."
+  }
+}

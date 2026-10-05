@@ -25,7 +25,9 @@
     "citations/batch-ten-hexagrams.json",
     "citations/batch-ten-advanced.json",
     "citations/batch-eleven-hexagrams.json",
-    "citations/batch-eleven-advanced.json"
+    "citations/batch-eleven-advanced.json",
+    "citations/batch-twelve-hexagrams.json",
+    "citations/batch-twelve-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -204,7 +206,12 @@
     "hexagrams/hexagram-42.json",
     "hexagrams/hexagram-43.json",
     "hexagrams/hexagram-44.json",
-    "liuyao/shi-ying-interaction-context.json"
+    "liuyao/shi-ying-interaction-context.json",
+    "hexagrams/hexagram-45.json",
+    "hexagrams/hexagram-46.json",
+    "hexagrams/hexagram-47.json",
+    "hexagrams/hexagram-48.json",
+    "liuyao/useful-spirit-rescue-empty-combination-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -383,7 +390,12 @@
     "term-year-authority",
     "article-year-authority-context",
     "term-hexagram-body",
-    "article-hexagram-body-context"
+    "article-hexagram-body-context",
+    "hexagram-45",
+    "hexagram-46",
+    "hexagram-47",
+    "hexagram-48",
+    "article-useful-spirit-rescue-empty-combination-context"
   ],
   "topics": [
     {
@@ -443,8 +455,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-41", "hexagram-42", "hexagram-43", "hexagram-44"],
+    "hexagramIds": ["hexagram-49", "hexagram-50", "hexagram-51", "hexagram-52"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tổn, Ích, Quải, Cấu và BPCT Chương 6, câu 12–16 (PDF 81–82): Thế–Ứng theo việc hỏi, động/biến, Không và nội/ngoại động. Bốn mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 7–11 có các diễn giải được chọn. Các bảng chưa đủ, phép lịch và các dự báo sức khỏe vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Dự kiến tiếp tục Cách, Đỉnh, Chấn, Cấn và BPCT Phần I, Chương 6, câu 25–32. Bốn mươi tám quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 17–24 giữ riêng phú, bình giải và chú thích 4. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
   }
 }

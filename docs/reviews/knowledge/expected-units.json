@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 2,
+  "registryRevision": 3,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "7a50cff915f773f124bbf32a04f844cd804663e9645886f246fd6fe6beccbbec"
+    "sha256": "66bde49827fb4056d1ee2efa2a7c2e00b07ff76b356dd6ee7e44be7db1b44d38"
   },
   "counts": {
     "overviewCells": 192,
@@ -6186,7 +6186,7 @@
       "group": "BPCT chapter 6 labels",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 82,
-      "pdfPageEnd": 82,
+      "pdfPageEnd": 83,
       "authorFeatureId": "feat-045",
       "auditFeatureId": "feat-085",
       "layerScopeIds": [
@@ -6197,7 +6197,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 17
+      "number": 17,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-18",
@@ -6216,7 +6217,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 18
+      "number": 18,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-19",
@@ -6235,7 +6237,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 19
+      "number": 19,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-20",
@@ -6254,7 +6257,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 20
+      "number": 20,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-21",
@@ -6262,7 +6266,7 @@
       "group": "BPCT chapter 6 labels",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 83,
-      "pdfPageEnd": 83,
+      "pdfPageEnd": 84,
       "authorFeatureId": "feat-045",
       "auditFeatureId": "feat-085",
       "layerScopeIds": [
@@ -6273,7 +6277,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 21
+      "number": 21,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-22",
@@ -6292,7 +6297,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 22
+      "number": 22,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-23",
@@ -6311,7 +6317,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 23
+      "number": 23,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-24",
@@ -6319,7 +6326,7 @@
       "group": "BPCT chapter 6 labels",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 84,
-      "pdfPageEnd": 84,
+      "pdfPageEnd": 85,
       "authorFeatureId": "feat-045",
       "auditFeatureId": "feat-085",
       "layerScopeIds": [
@@ -6330,7 +6337,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch06",
-      "number": 24
+      "number": 24,
+      "recordIds": ["article-useful-spirit-rescue-empty-combination-context"]
     },
     {
       "id": "bpct-ch06-25",

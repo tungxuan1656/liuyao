@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 177, "released": 177, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 1428, "missingCitationIds": [] },
-  "citations": { "total": 1286 },
+  "records": { "authored": 182, "released": 182, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 1614, "missingCitationIds": [] },
+  "citations": { "total": 1560 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 44,
+    "reviewed": 48,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -54,13 +54,13 @@
       "hexagram-41",
       "hexagram-42",
       "hexagram-43",
-      "hexagram-44"
-    ],
-    "missingIds": [
+      "hexagram-44",
       "hexagram-45",
       "hexagram-46",
       "hexagram-47",
-      "hexagram-48",
+      "hexagram-48"
+    ],
+    "missingIds": [
       "hexagram-49",
       "hexagram-50",
       "hexagram-51",
@@ -80,25 +80,25 @@
     ]
   },
   "lines": {
-    "reviewedPositions": 264,
+    "reviewedPositions": 288,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 44,
-        "reviewedLinePositions": 264,
+        "overviewHexagrams": 48,
+        "reviewedLinePositions": 288,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 44,
-        "reviewedLinePositions": 264,
+        "overviewHexagrams": 48,
+        "reviewedLinePositions": 288,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 44,
-        "reviewedLinePositions": 264,
+        "overviewHexagrams": 48,
+        "reviewedLinePositions": 288,
         "missingPilotPositions": []
       }
     ]
@@ -185,7 +185,11 @@
         "hexagram-41",
         "hexagram-42",
         "hexagram-43",
-        "hexagram-44"
+        "hexagram-44",
+        "hexagram-45",
+        "hexagram-46",
+        "hexagram-47",
+        "hexagram-48"
       ]
     },
     {
@@ -237,7 +241,11 @@
         "hexagram-41",
         "hexagram-42",
         "hexagram-43",
-        "hexagram-44"
+        "hexagram-44",
+        "hexagram-45",
+        "hexagram-46",
+        "hexagram-47",
+        "hexagram-48"
       ]
     },
     {
@@ -390,7 +398,8 @@
         "article-year-authority-context",
         "term-hexagram-body",
         "article-hexagram-body-context",
-        "article-shi-ying-interaction-context"
+        "article-shi-ying-interaction-context",
+        "article-useful-spirit-rescue-empty-combination-context"
       ]
     },
     {
@@ -1248,15 +1257,49 @@
         "citation-pbc-q39-line-5-pbc"
       ],
       "resolution": "Ảnh xác nhận nhãn Sáu Năm. Giữ đối tượng ở vị năm dương, tức Chín Năm, theo đầu hào và cả ba hình quẻ; không chuyển người lớn sang hào khác."
+    },
+    {
+      "recordId": "hexagram-45",
+      "id": "discrepancy-q45-line-labels",
+      "status": "resolved",
+      "description": "NTT PDF 703–704 gọi Sơ Cửu/Hào Chín Đầu trong khi lời Chu Hy gọi Sáu Đầu; PBC PDF 438 và NTT PDF 711 in nhãn Hán Thượng cửu nhưng tiếng Việt và lời giải gọi Thượng lục.",
+      "citationIds": [
+        "citation-ntt-q45-line-1-classical-text",
+        "citation-ntt-q45-line-6-classical-text",
+        "citation-pbc-q45-line-6-classical-text",
+        "citation-nhl-q45-overview-structure"
+      ],
+      "resolution": "Cấu trúc phát hành giữ âm ở vị một và sáu theo hình quẻ NHL/PBC, các hào từ NHL và lời giải gọi âm trong cả ba sách. Ghi các nhãn in khác nhau, không sửa văn bản nguồn hoặc suy ra hào thứ bảy."
+    },
+    {
+      "recordId": "hexagram-47",
+      "id": "discrepancy-q47-nhl-response",
+      "status": "resolved",
+      "description": "NHL PDF 281 gọi hào ba dương ứng với hào đầu, rồi trong chính đoạn đó gọi người cứu là hào bốn.",
+      "citationIds": [
+        "citation-nhl-q47-line-1-classical-text",
+        "citation-pbc-q47-line-1-pbc",
+        "citation-ntt-q47-line-1-trinh-di",
+        "citation-nhl-q47-overview-structure"
+      ],
+      "resolution": "Hình quẻ và nhãn Lục tam xác định ba là âm; PBC/NTT cùng xác định chính ứng một–bốn. Cấu trúc và lời diễn giải chọn này không sử dụng mệnh đề ba dương trong NHL; giữ nó như sai khác nguồn, không đổi bản in."
+    },
+    {
+      "recordId": "hexagram-47",
+      "id": "discrepancy-q47-ntt-upper-label",
+      "status": "resolved",
+      "description": "NTT PDF 735 in nhãn Hán Thượng cửu nhưng Dịch âm/ nghĩa PDF 736 gọi Thượng lục, Hào Sáu Trên.",
+      "citationIds": [
+        "citation-ntt-q47-line-6-classical-text",
+        "citation-nhl-q47-overview-structure",
+        "citation-pbc-q47-line-6-classical-text"
+      ],
+      "resolution": "Chọn âm ở vị sáu theo hình quẻ NHL/PBC, nhãn tiếng Việt và lời giải cả ba sách. Không sửa nhãn Hán của edition NTT."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
     "entities": [
-      "hexagram-45",
-      "hexagram-46",
-      "hexagram-47",
-      "hexagram-48",
       "hexagram-49",
       "hexagram-50",
       "hexagram-51",
@@ -1278,17 +1321,17 @@
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-41", "hexagram-42", "hexagram-43", "hexagram-44"],
+    "hexagramIds": ["hexagram-49", "hexagram-50", "hexagram-51", "hexagram-52"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Tiếp tục Tổn, Ích, Quải, Cấu và BPCT Chương 6, câu 12–16 (PDF 81–82): Thế–Ứng theo việc hỏi, động/biến, Không và nội/ngoại động. Bốn mươi quẻ có tổng quan và sáu vị trí hào ở NHL, PBC, NTT; BPCT Chương 6 câu 7–11 có các diễn giải được chọn. Các bảng chưa đủ, phép lịch và các dự báo sức khỏe vẫn bị loại. Các lớp chú giải được chọn không chứng nhận toàn bộ sách."
+    "note": "Dự kiến tiếp tục Cách, Đỉnh, Chấn, Cấn và BPCT Phần I, Chương 6, câu 25–32. Bốn mươi tám quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 17–24 giữ riêng phú, bình giải và chú thích 4. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2062,
+        "required": 2067,
         "current": 84,
-        "missing": 1978,
+        "missing": 1983,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1297,8 +1340,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 1978 },
-        { "code": "released-claim-coverage-incomplete", "count": 1231 }
+        { "code": "missing-decision", "count": 1983 },
+        { "code": "released-claim-coverage-incomplete", "count": 1417 }
       ]
     },
     "certification": {
@@ -1306,7 +1349,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2062,
+        "required": 2067,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
