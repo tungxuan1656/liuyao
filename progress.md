@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-05 — feat-045 merged
+
+**State**: done and merged to `main` in PR #72 at `7e54934af4520ad897fdbb5bdd701053e6e7320f`.
+**Done**: Authored and released quẻ 45–48 and BPCT chapter 6 sentences 17–24 with claim-level source citations, attribution, inventory coverage, and tests. Applied the user-authorized narrow Workbox precache threshold adjustment.
+**Evidence**: Final PR head `0ede97ad9d8cc57b9d5716d4eb89b147dce31ca5` passed GitHub `verify`, Cloudflare Pages, and GitGuardian. Three fresh independent reviews returned `Merge verdict: OK` with no P0/P1/P2 findings. `./init.sh` passed, including 451 tests; corpus `--check-books --check` passed with 182 records, 1,614 claims, and 1,560 citations. Details are in [feat-045](features/feat-045.md).
+**Blockers**: none for feat-045. Corpus-wide independent specialist review and certification remain separate and open.
+**Next**: Stop here as instructed; wait for the user's explicit request before starting feat-046.
+
 ## 2026-10-05 — feat-044 and feat-078 merged
 
 **State**: Both features are done and merged to `main`.

@@ -51,10 +51,10 @@ This batch follows the [publication gate](../docs/product-specs/knowledge-qualit
 
 ## Handoff
 
-- State: active; implementation and local acceptance complete on `feat/045-reviewed-que-45-48-bpct-17-24`; PR and merge gates remain.
-- Evidence: Fresh independent review of `5252e856f37f30e3d79241fdb45d5e542b7a45af` returned `Merge verdict: OK`, with no P0/P1/P2 findings. Post-commit `./init.sh` passed format, lint/length, typecheck, build, package exports, and 451 tests. `validate:corpus --check-books --check` passed with 182 records, 1,614 claims, and 1,560 citations. Review report: `reports/feat-045-independent-review.md` in the session artifact store. Four pre-existing lint warnings and build sourcemap/chunk warnings remain; reviewer could not directly inspect physical/scanned source images.
+- State: done; PR #72 merged to `main` at `7e54934af4520ad897fdbb5bdd701053e6e7320f`.
+- Evidence: Final PR head `0ede97ad9d8cc57b9d5716d4eb89b147dce31ca5` passed GitHub `verify`, Cloudflare Pages, and GitGuardian checks. Fresh independent reviews of the implementation, acceptance handoff, and updated final head all returned `Merge verdict: OK` with no P0/P1/P2 findings. `./init.sh` passed format, lint/length, typecheck, build, package exports, and 451 tests. `validate:corpus --check-books --check` passed with 182 records, 1,614 claims, and 1,560 citations. The user-authorized 2,162,688-byte Workbox limit includes the measured 2,109,618-byte bundle. Four pre-existing lint warnings and build sourcemap/chunk warnings remain. Reviewer did not directly inspect source images; source-review/certification gates remain separate and closed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Commit this acceptance handoff, request fresh review of the final branch head, then push and open the one feat-045 PR.
+- Next: Stop after feat-045 and wait for the user's explicit request before starting feat-046.
 
 ## Decision log
 
