@@ -17,15 +17,15 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Quẻ 45: all six positions and each supplied commentary layer.
-- [ ] Quẻ 46: all six positions and each supplied commentary layer.
-- [ ] Quẻ 47: all six positions and each supplied commentary layer.
-- [ ] Quẻ 48: all six positions and each supplied commentary layer.
-- [ ] BPCT sentences 17–24: each numbered passage and its notes.
-- [ ] Replace the four legacy quẻ without changing stable IDs.
-- [ ] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
-- [ ] Source-compared claims in quẻ 45–48 and BPCT 17–24 pass the corpus publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Quẻ 45: all six positions and each supplied commentary layer.
+- [x] Quẻ 46: all six positions and each supplied commentary layer.
+- [x] Quẻ 47: all six positions and each supplied commentary layer.
+- [x] Quẻ 48: all six positions and each supplied commentary layer.
+- [x] BPCT sentences 17–24: each numbered passage and its notes.
+- [x] Replace the four legacy quẻ without changing stable IDs.
+- [x] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
+- [x] Source-compared claims in quẻ 45–48 and BPCT 17–24 pass the corpus publication gate; inventory dispositions and coverage are current.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Limits
 
@@ -51,10 +51,10 @@ This batch follows the [publication gate](../docs/product-specs/knowledge-qualit
 
 ## Handoff
 
-- State: active; implementation in progress on `feat/045-reviewed-que-45-48-bpct-17-24`.
-- Evidence: Dependencies feat-044 is done; feat-045 acceptance and source boundaries confirmed.
+- State: active; implementation and local acceptance complete on `feat/045-reviewed-que-45-48-bpct-17-24`; PR and merge gates remain.
+- Evidence: Fresh independent review of `5252e856f37f30e3d79241fdb45d5e542b7a45af` returned `Merge verdict: OK`, with no P0/P1/P2 findings. Post-commit `./init.sh` passed format, lint/length, typecheck, build, package exports, and 451 tests. `validate:corpus --check-books --check` passed with 182 records, 1,614 claims, and 1,560 citations. Review report: `reports/feat-045-independent-review.md` in the session artifact store. Four pre-existing lint warnings and build sourcemap/chunk warnings remain; reviewer could not directly inspect physical/scanned source images.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Review quẻ 45–48 and BPCT sentences 17–24 against the supplied editions.
+- Next: Commit this acceptance handoff, request fresh review of the final branch head, then push and open the one feat-045 PR.
 
 ## Decision log
 
