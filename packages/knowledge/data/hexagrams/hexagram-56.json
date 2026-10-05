@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "id": "hexagram-56",
+  "type": "hexagram",
+  "title": "Hỏa Sơn Lữ",
+  "aliases": ["Lữ"],
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "claims": [
+    {
+      "id": "hexagram-56-structure",
+      "kind": "structural-fact",
+      "text": "Hỏa Sơn Lữ có nội quái Cấn, ngoại quái Ly; vị trí một đến sáu tính từ dưới lên.",
+      "citationIds": [
+        "citation-nhl-q56-overview-structure",
+        "citation-pbc-q56-overview-structure",
+        "citation-ntt-q56-overview-structure",
+        "citation-nhl-q56-line-1-classical-text",
+        "citation-nhl-q56-line-2-classical-text",
+        "citation-nhl-q56-line-3-classical-text",
+        "citation-nhl-q56-line-4-classical-text",
+        "citation-nhl-q56-line-5-classical-text",
+        "citation-nhl-q56-line-6-classical-text",
+        "citation-pbc-q56-line-1-classical-text",
+        "citation-pbc-q56-line-2-classical-text",
+        "citation-pbc-q56-line-3-classical-text",
+        "citation-pbc-q56-line-4-classical-text",
+        "citation-pbc-q56-line-5-classical-text",
+        "citation-pbc-q56-line-6-classical-text",
+        "citation-ntt-q56-line-1-classical-text",
+        "citation-ntt-q56-line-2-classical-text",
+        "citation-ntt-q56-line-3-classical-text",
+        "citation-ntt-q56-line-4-classical-text",
+        "citation-ntt-q56-line-5-classical-text",
+        "citation-ntt-q56-line-6-classical-text"
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê nối Lữ sau thịnh cực Phong: mất chỗ ở nên đi tha phương. Lửa trên núi chỉ ở tạm; Lữ có thể hanh nhỏ nếu mềm trung thuận như ngũ, tĩnh như Cấn và sáng như Ly. Không quá cao để bị ghét, không mất tư cách để bị khinh là cách xử khó trong lời bình; Đại Tượng dùng minh thận, không để việc ngục kéo dài.",
+      "citationIds": ["citation-nhl-q56-overview-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-closing-nhl",
+      "kind": "author-interpretation",
+      "text": "Nguyễn Hiến Lê dẫn cảm tưởng Phan Bội Châu về Lữ khó xử, sáu lời hào không có chữ cát hay hanh và cần nhu, trung. Ông bày tỏ cảm thông với trải nghiệm lưu lạc vì đất nước của Phan Bội Châu; giữ đây là lời tôn kính và đánh giá của NHL, không là nguồn độc lập xác minh tiểu sử hay hiệu quả thực tế.",
+      "citationIds": ["citation-nhl-q56-overview-closing-nhl"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu giải Lữ là bỏ nhà làm khách khi thịnh lớn tới cực mất nơi cư trú. Núi cố định, lửa trên núi không ở mãi là tượng tạm. Hanh chỉ chút ít, còn lời cát cần người ở xa giữ chính, không làm chủ ở đất mình để tạo sự nghiệp lớn.",
+      "citationIds": ["citation-pbc-q56-overview-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-supplement-pbc",
+      "kind": "author-interpretation",
+      "text": "PHỤ CHÚ của Phan Bội Châu dùng Khổng Tử, Mạnh Tử gặp cùng và đối Trần Ích Tắc với Ky Tử, Sĩ Nhiếp để minh họa giữ nghĩa hay bỏ nghĩa ở xa. Chuyện lịch sử, công truyền dạy và lời phán đạo đức thuộc ví dụ do ông kể, không được xác nhận riêng. Ý được chọn là hoàn cảnh đổi vẫn có chính đạo và tình giữa khách với chủ.",
+      "citationIds": ["citation-pbc-q56-overview-supplement-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-thoan-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu lấy ngũ giữa Ly để giải nhu trung ở ngoài và thuận cương, trong dừng ngoài sáng. Lữ quá thấp dễ nhục, quá cao dễ họa nên phải lựa cơ mà không mất mình; thời nghĩa khó vì quá cương, quá nhu hay thiếu sáng đều không hợp. Đây là diễn giải tình thế của ông, không quy tắc bảo đảm du hành an toàn.",
+      "citationIds": ["citation-pbc-q56-overview-thoan-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-thoan-supplement-pbc",
+      "kind": "author-interpretation",
+      "text": "PHỤ CHÚ của Phan Bội Châu phân biệt thời nghĩa ở Lữ với thời dụng: cảnh Lữ ít mong công dụng, cốt không trái nghĩa; Khảm và Khuê còn nhiều công dụng. Giữ so sánh về lời dạy từng quẻ, không loại mọi khả năng hoạt động của người đi xa.",
+      "citationIds": ["citation-pbc-q56-overview-thoan-supplement-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-dai-tuong-pbc",
+      "kind": "author-interpretation",
+      "text": "Phan Bội Châu nhấn Đại Tượng lấy hình quẻ chứ không lấy nghĩa tên Lữ: lửa sáng và mau, núi dừng cẩn thận. Soi tình, thận trọng phán xử nhưng không trì trệ ngục là ý hình chính cổ, không là thủ tục pháp luật hay chỉ dẫn kết tội.",
+      "citationIds": ["citation-pbc-q56-overview-dai-tuong-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-closing-supplement-pbc",
+      "kind": "author-interpretation",
+      "text": "PHỤ CHÚ cuối quẻ của Phan Bội Châu đối quá thấp của sơ, quá cao của thượng, cương không trung của tam và thiếu viện của tứ với nhu trung của nhị ngũ. Sáu lời hào không có cát hay hanh vì tránh họa đã quý ở cảnh khách; lời quẻ vẫn có hanh nhỏ và cát kèm chính. Ông không nói mọi Lữ đều vĩnh viễn cùng khốn.",
+      "citationIds": ["citation-pbc-q56-overview-closing-supplement-pbc"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải núi đứng, lửa đi và bám ở ngoài thành tượng xa đi không ở, nối sau Phong cực thịnh mất chỗ. Tài quẻ cho hanh nhỏ nếu giữ điều chính của hành lữ, không mang nghĩa hanh lớn không điều kiện.",
+      "citationIds": ["citation-ntt-q56-overview-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy lấy núi dừng, lửa bốc làm tượng bỏ nơi ở thường. Ngũ mềm giữa ngoại quái, thuận dương hai phía, Cấn dừng và Ly bám sáng giúp hanh nhỏ chính bền. Không được vì ở tạm mà cẩu thả: đạo chính có ở mọi nơi trong cách đọc của ông.",
+      "citationIds": ["citation-ntt-q56-overview-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-thoan-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải nhu trung ở ngoài, theo cương hai phía và dừng nương sáng là điều kiện hanh nhỏ, hợp thời nghi. Chỗ giữa có cách riêng theo hành lữ; không có chủ cương trung và viện dưới để đạt đại hanh. Ông khen nghĩa tùy thời vì cảnh khách đặc biệt khó xử; bản cung cấp có nhãn Sáu Trên ở ngôi Năm, giữ là giới hạn chữ in.",
+      "citationIds": ["citation-ntt-q56-overview-thoan-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-thoan-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy đọc lời khen thời nghĩa của Lữ như nhấn thời cuộc khó xử, không thêm kết quả hanh lớn hoặc phép xác định vận hạn.",
+      "citationIds": ["citation-ntt-q56-overview-thoan-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-dai-tuong-trinh-di",
+      "kind": "author-interpretation",
+      "text": "Trình Di giải lửa cao soi rộng nhưng sáng không đủ để tự cậy, phải thận trọng như dừng. Lửa đi không ở cũng răn không để ngục đọng; ngục là việc bất đắc dĩ nên không giữ chậm người có tội. Giữ là tư tưởng hình chính của tác giả, không khẳng định tình trạng pháp lý của người đọc.",
+      "citationIds": ["citation-ntt-q56-overview-dai-tuong-trinh-di"],
+      "attribution": {
+        "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-overview-dai-tuong-chu-hy",
+      "kind": "author-interpretation",
+      "text": "Chu Hy giải việc hình cần thận trọng như núi, việc ngục không để chậm như lửa. Ông phối hai hình khác nhau thay vì chỉ chọn sự mau chóng.",
+      "citationIds": ["citation-ntt-q56-overview-dai-tuong-chu-hy"],
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-1-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải Lữ gồm đi đường và ở trọ, chỉ người hành lữ.",
+      "citationIds": ["citation-ntt-q56-note-1-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-2-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chú lữ khốn là cảnh ở trọ cùng khốn.",
+      "citationIds": ["citation-ntt-q56-note-2-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-3-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải thời nghi là cái nên phải theo từng thời.",
+      "citationIds": ["citation-ntt-q56-note-3-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-4-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải ghín là cẩn thận trong lời Đại Tượng.",
+      "citationIds": ["citation-ntt-q56-note-4-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-5-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố chỉ người đọc tới hào thượng của quẻ Tốn cho bàn tư phủ. Dẫn chiếu không có nghĩa đoạn Tốn đã được tác giả hồ sơ này kiểm toàn bộ.",
+      "citationIds": ["citation-ntt-q56-note-5-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-6-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố giải ý Chu Hy: đi đường cần tiền và vật giữ mình nên vẫn có thể giữ cách đọc tư là của; đây là lời hiểu của dịch giả, không đề xuất sửa chữ của dự án.",
+      "citationIds": ["citation-ntt-q56-note-6-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-7-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố xác định lời họ Từ được Hồ Song Phương nhắc là đoạn Từ Tiến Trai ngay trước.",
+      "citationIds": ["citation-ntt-q56-note-7-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    },
+    {
+      "id": "hexagram-56-note-8-ntt",
+      "kind": "author-interpretation",
+      "text": "Ngô Tất Tố diễn cách đắp đổi: ở Lữ lấy hào trên Cấn thay hào trên Ly để có Đoài, lấy hào dưới Ly thay hào dưới Cấn để có Tốn. Giữ là phép giải tượng trong chú thích về tư phủ, không đổi hai quái chính Ly trên Cấn dưới hoặc coi là biến hào Nạp Giáp.",
+      "citationIds": ["citation-ntt-q56-note-8-ntt"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+      ]
+    }
+  ],
+  "relatedIds": ["trigram-mountain", "trigram-fire"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "structure": {
+    "lineOrder": "bottom-to-top",
+    "lines": ["yin", "yin", "yang", "yang", "yin", "yang"],
+    "kingWenNumber": 56,
+    "upperTrigramId": "trigram-fire",
+    "lowerTrigramId": "trigram-mountain",
+    "claimIds": ["hexagram-56-structure"]
+  },
+  "lines": [
+    {
+      "position": 1,
+      "polarity": "yin",
+      "label": "Sơ lục",
+      "claims": [
+        {
+          "id": "hexagram-56-line-1-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc sơ nhu thấp như người ở đậu chí cùng, xử nhỏ nhen tham tỉ mỉ với chủ nên tự gây ghét và tai. Tỏa tỏa chỉ cách cư xử trong hình cổ, không kết luận nghèo hay yếu thì có lỗi.",
+          "citationIds": ["citation-nhl-q56-line-1-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-1-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu xem sơ nhu thấp lại không biết lựa thời, đối chủ quá tẳn mẳn và tham nhỏ nên tự lấy tai. Tiểu Tượng quy vào chí cùng chứ không biến thân phận khách thành tội sẵn.",
+          "citationIds": ["citation-pbc-q56-line-1-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-1-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc sơ nhu thấp, ở cảnh khốn mà chí nhỏ nên làm việc bỉ ổi tự chuốc hối nhục, dẫu có viện cũng khó công dụng. Ông còn phân biệt tai, sảnh khi đối nhau nhưng khi nói riêng đều thuộc vạ lo; giữ đó là nhận xét từ nghĩa.",
+          "citationIds": ["citation-ntt-q56-line-1-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-1-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy dùng nhu âm ngôi dưới trong thời khách làm cơ sở tượng nhỏ mọn và lời tai, không thêm một thuật đoán khác hoặc một thời điểm xảy ra họa.",
+          "citationIds": ["citation-ntt-q56-line-1-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-1-supplement-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu dẫn Kinh Thi trong PHỤ CHÚ để liên hệ nhỏ nhen cuối đường với lưu ly. Giữ là đối chiếu văn học của ông, không lấy câu dẫn làm phán quyết cho người mất nhà.",
+          "citationIds": ["citation-pbc-q56-line-1-supplement-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "polarity": "yin",
+      "label": "Lục nhị",
+      "claims": [
+        {
+          "id": "hexagram-56-line-2-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê coi nhị nhu trung chính, gặp ngũ nhu giữa và sáng như chủ tốt nên có chỗ an, giữ tiền và người hầu tin cẩn. Hai âm được ông gọi ứng trong lời bình; không đổi thành chính ứng khác cực trong cấu trúc của dự án.",
+          "citationIds": ["citation-nhl-q56-line-2-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-2-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu khen nhị nhu trung chính và ngũ văn minh giúp thành cảnh tốt: tới nơi trọ, giữ lữ phí và người hầu trinh tín. Tiểu Tượng nhấn người hầu đáng tin là căn cứ khỏi trách cuối; lời gọi hai âm chính ứng trong nguồn được giữ riêng, không dùng làm định nghĩa cấu trúc.",
+          "citationIds": ["citation-pbc-q56-line-2-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-2-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải nhị mềm thuận khiến người cùng, trung chính giữ cách cư xử và của cải; đồng, bộc được ông tách như người nhỏ trong và người khỏe ngoài đều tin. Không nói cát vì ở khách tránh nguy đã hay; nhị vẫn chưa bằng văn minh của ngũ được trên dưới giúp.",
+          "citationIds": ["citation-ntt-q56-line-2-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-2-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc nhà trọ là yên, có tiền là đủ, người hầu trinh tín là không bị lừa và có nương tựa. Nhị nhu trung chính tạo tình thế tốt trong hành lữ; giữ từng điều kiện, không hứa cho mọi người đi xa.",
+          "citationIds": ["citation-ntt-q56-line-2-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-2-supplement-pbc",
+          "kind": "author-interpretation",
+          "text": "PHỤ CHÚ của Phan Bội Châu dẫn Tấn Trùng Nhĩ với người theo hầu rồi chuyện Nguyễn Huỳnh Đức, Quang Trung và Gia Long để minh họa trung thành giúp người lưu lạc. Giữ truyện và đánh giá chính trị dưới tên tác giả, không xác nhận diễn biến hay chuyện viện binh bằng nguồn lịch sử độc lập.",
+          "citationIds": ["citation-pbc-q56-line-2-supplement-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "polarity": "yang",
+      "label": "Cửu tam",
+      "claims": [
+        {
+          "id": "hexagram-56-line-3-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc tam quá cương, không trung và tự cao làm mất lòng chủ, mất người hầu. Cháy nơi trọ là hình tự phá chỗ mình nương; dù xuất thân chính vẫn nguy vì trái cách xử cảnh khách, không lời dự báo hỏa hoạn.",
+          "citationIds": ["citation-nhl-q56-line-3-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-3-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu quy cháy trọ vào mất lòng người trên, mất tớ vào mất lòng người dưới do cương bạo và tự cao. Tâm sự có chính cũng không đủ khi hành xử trái thời; Tiểu Tượng nhấn cách đối dưới nên mất người hầu.",
+          "citationIds": ["citation-pbc-q56-line-3-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-3-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di giải cương không trung ở đầu trên Cấn như tự cao: không thuận trên thì mất chỗ yên, bạo với dưới thì mất lòng trinh tín của người hầu. Ly trên là hình cháy; ông gắn trinh vào sự trung tín bị mất trong phần luận, không đồng nhất với cách chia câu Chu Hy.",
+          "citationIds": ["citation-ntt-q56-line-3-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-3-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy dùng quá cứng không trung ở trên nội quái làm tượng và lời nguy. Ông nói mất người hầu không chỉ mất lòng, nên chữ trinh phải thuộc câu sau, giữ cách chia riêng đối với Trình Di; không tạo lời hào đã sửa.",
+          "citationIds": ["citation-ntt-q56-line-3-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "polarity": "yang",
+      "label": "Cửu tứ",
+      "claims": [
+        {
+          "id": "hexagram-56-line-4-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê coi tứ cương ở vị nhu, đầu ngoại quái biết hạ nên có nơi tạm, tiền và đồ hộ thân tượng búa, nhưng không viện đủ ở trên dưới nên không vui. Ông giữ thêm cách sách khác đọc tư phủ là búa bén để dọn đất gai làm nơi ở khi thiếu quán trọ, không bắt hai nghĩa trùng nhau.",
+          "citationIds": ["citation-nhl-q56-line-4-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-4-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc tứ thể cương dụng nhu, tự hạ nên được ở tạm, không bằng chỗ trọ của nhị. Tư là lữ phí, phủ là vật hộ thân; chưa đạt vị và mục đích, thiếu người gánh việc trên dưới nên lòng không vui. Giữ danh từ vị bất nhất của bản cung cấp, không dựa nó đổi cực hào.",
+          "citationIds": ["citation-pbc-q56-line-4-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-4-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di coi tứ cương mà cư nhu là hợp cách khách, được ngũ cùng và sơ ứng nên có nơi ở, của và dụng cụ. Nhưng không có người cương trên để phát tài chí, vị còn chưa đạt nên không vui. Ông giải ngũ ở Lữ không dùng nghĩa vua, do đó tứ chưa đạt vị đại thần, không kết tội riêng vì cương ở vị nhu.",
+          "citationIds": ["citation-ntt-q56-line-4-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-4-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy đọc tứ cương ở âm, đầu ngoại quái biết nhún nên có tượng được ở và tư phủ. Không phải chính vị, trên không dương cùng, dưới chỉ nhu ứng khiến không vui; được tài vật chưa đủ thực hiện chí.",
+          "citationIds": ["citation-ntt-q56-line-4-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-4-quoted-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Dưới nhãn Bản nghĩa của Chu Hy lặp lại, nguồn ghi lời bàn tư phủ có cách đọc là búa sắc và dẫn sang quẻ Tốn. Chu Hy đặt vấn đề hành lữ vừa cần vật giữ mình vừa cần tiền, nên cách đọc phải hợp đủ nghĩa, không tự quyết bỏ nghĩa của cải.",
+          "citationIds": ["citation-ntt-q56-line-4-quoted-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-4-tu-tien-trai",
+          "kind": "author-interpretation",
+          "text": "Từ Tiến Trai dẫn cách đổi chữ tư sang dạng đọc cùng âm để giải sắc bén, thuật chuyện mất búa vàng trong Hán thư và chú của Ứng Thiệu. Giữ đây là chứng cứ văn tự và dẫn truyện do ông đưa ra, không hiệu đính chữ tư hoặc xác minh chuyện ấy.",
+          "citationIds": ["citation-ntt-q56-line-4-tu-tien-trai"],
+          "attribution": {
+            "author": "Từ Tiến Trai",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-4-ho-song-phuong",
+          "kind": "author-interpretation",
+          "text": "Hồ Song Phương ghép cách đọc búa sắc của họ Từ với lời Ngữ Lục, đồng thời liên hệ tư với của ở hào hai. Ông giải búa bằng tượng gươm Ly và vàng Đoài trên cây Tốn, so được ở vị bốn Lữ với mất ở thượng Tốn. Giữ đây là tượng pháp được ông lập, không thành quy tắc Nạp Giáp.",
+          "citationIds": ["citation-ntt-q56-line-4-ho-song-phuong"],
+          "attribution": {
+            "author": "Hồ Song Phương",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "polarity": "yin",
+      "label": "Lục ngũ",
+      "claims": [
+        {
+          "id": "hexagram-56-line-5-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê không dùng ngũ làm vua ở Lữ, vì vua thành khách sẽ là mất nước. Lữ khách văn minh, nhu trung được lòng người như bắn trĩ hao ít một tên mà có tiếng khen và phúc lộc hoặc chức vị; không biến hình săn bắn thành hướng dẫn hành động.",
+          "citationIds": ["citation-nhl-q56-line-5-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-5-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu đọc ngũ chỉ là lữ nhân, không phải quốc quân. Văn minh nhu trung giúp hợp trên dưới; trĩ biểu hiện văn thái, một tên mất tượng hao chút mà cuối có khen và phúc. Thượng đãi được ông giải dự mệnh tới mình rồi có thể lên vị cao hơn, giữ khác cách giải nghe tới người trên.",
+          "citationIds": ["citation-pbc-q56-line-5-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-5-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di lấy trĩ Ly làm đạo văn minh, phát tên làm mất được trĩ nên nhấn bắn trúng để tới khen và phúc lộc. Ngũ không dùng nghĩa vua; thượng đãi là trên dưới cùng với, nhờ mềm thuận văn minh. Không nhập nghĩa hao một tên của Chu Hy vào cách đọc phát tên này.",
+          "citationIds": ["citation-ntt-q56-line-5-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-5-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy lấy trĩ văn vẻ sáng làm tượng Ly; ngũ nhu thuận văn minh trung, chủ Ly. Một tên hao chỉ chút, cuối có khen mệnh; thượng đãi là tiếng khen tới tai người trên, không nhất thiết thăng tới ngôi cao như lời PBC.",
+          "citationIds": ["citation-ntt-q56-line-5-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "polarity": "yang",
+      "label": "Thượng cửu",
+      "claims": [
+        {
+          "id": "hexagram-56-line-6-nhl",
+          "kind": "author-interpretation",
+          "text": "Nguyễn Hiến Lê đọc thượng khách ở trên chủ lại quá cương nên bị đuổi, như chim cháy tổ. Trước cười vì ở cao, sau khóc vì mất chỗ; mất bò do khinh suất là mất đức nhu thuận cần cho cảnh khách, không tiên đoán tổ cháy hay mất vật.",
+          "citationIds": ["citation-nhl-q56-line-6-nhl"],
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-6-pbc",
+          "kind": "author-interpretation",
+          "text": "Phan Bội Châu giải thượng cao nhất, quá cương trái đạo khách nên chủ không dung như chim mất tổ. Láu táu, kiêu khinh bỏ nhu thuận tượng mất trâu; chung mạc chi văn là không chịu nghe ai dạy, không chỉ chưa có tin báo mất vật.",
+          "citationIds": ["citation-pbc-q56-line-6-pbc"],
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-6-trinh-di",
+          "kind": "author-interpretation",
+          "text": "Trình Di đọc thượng cương không trung rất cao trong Ly, tượng chim và cháy. Đầu đắc ý rồi không ai cùng, khinh suất mất đức thuận tượng trâu nên hung. Ông giải chung mạc chi văn là tự mình không biết mất thuận; nếu biết đã tránh quá cực, giữ khác PBC nhấn không nghe lời dạy.",
+          "citationIds": ["citation-ntt-q56-line-6-trinh-di"],
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        },
+        {
+          "id": "hexagram-56-line-6-chu-hy",
+          "kind": "author-interpretation",
+          "text": "Chu Hy lấy cương ở trên Lữ và chót Ly, kiêu không thuận làm đạo hung. Tượng mất tổ và chuyển cười sang khóc diễn cảnh ấy, không đưa thêm thời hạn hay dự báo hỏa tai.",
+          "citationIds": ["citation-ntt-q56-line-6-chu-hy"],
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "conditions": [
+            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
+          ]
+        }
+      ]
+    }
+  ],
+  "specialPassages": [],
+  "discrepancies": [
+    {
+      "id": "discrepancy-q56-line-labels",
+      "status": "resolved",
+      "description": "NTT PDF 841 viết Sáu Trên ở ngôi Năm khi giải nhu đắc trung ở ngoại quái. PBC PDF 527 nói ở trong thời Lữ Ngũ giữa đoạn hào nhị, PDF 529 kể Tứ, Ngũ âm nhu trong đoạn hào tứ, PDF 530 gọi Cửu Nhị ở tổng kết dù nhị là âm.",
+      "citationIds": [
+        "citation-ntt-q56-overview-thoan-trinh-di",
+        "citation-pbc-q56-line-2-pbc",
+        "citation-pbc-q56-line-4-pbc",
+        "citation-pbc-q56-overview-closing-supplement-pbc",
+        "citation-nhl-q56-overview-structure",
+        "citation-pbc-q56-overview-structure"
+      ],
+      "resolution": "Giữ sáu vị âm âm dương dương âm dương theo hình và nhãn nhất quán. Tóm tắt từng ý được hỗ trợ mà để lộ nhãn bất nhất, không sửa chữ in hoặc dùng chúng lập cấu trúc mới."
+    },
+    {
+      "id": "discrepancy-q56-same-yin-response",
+      "status": "resolved",
+      "description": "NHL và PBC ở hào hai gọi nhị với ngũ cùng âm là ứng hay chính ứng; lời Trình Di nhấn nhị tự nhu trung chính, không dùng cặp ấy làm chính ứng.",
+      "citationIds": [
+        "citation-nhl-q56-line-2-nhl",
+        "citation-pbc-q56-line-2-pbc",
+        "citation-ntt-q56-line-2-trinh-di",
+        "citation-nhl-q56-overview-structure"
+      ],
+      "resolution": "Giữ quan hệ giúp đỡ theo từng tác giả. Không định nghĩa lại chính ứng âm dương hoặc dùng lời bình này cho bảng tính toán."
+    },
+    {
+      "id": "discrepancy-q56-classical-variants",
+      "status": "resolved",
+      "description": "NTT PDF 842 đọc minh thuận ở lời kinh và âm Đại Tượng trong khi lời bình và note 4 giải ghín, cẩn thận; NHL và PBC dùng minh thận. NTT PDF 844 Tiểu Tượng nhị dùng vô cữu, PBC PDF 527 dùng vô vưu.",
+      "citationIds": [
+        "citation-ntt-q56-overview-dai-tuong-trinh-di",
+        "citation-ntt-q56-note-4-ntt",
+        "citation-pbc-q56-overview-dai-tuong-pbc",
+        "citation-ntt-q56-line-2-classical-text",
+        "citation-pbc-q56-line-2-classical-text"
+      ],
+      "resolution": "Chọn nghĩa cẩn thận từ lời bình và chú giải riêng, giữ minh thuận và khác biệt vô cữu/vô vưu là chứng tích nguồn; không cung cấp bản kinh đã hiệu đính."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker (AI source comparison)",
+    "reviewedAt": "2026-10-05",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-nhl-q56-overview-structure",
+      "citation-pbc-q56-overview-structure",
+      "citation-ntt-q56-overview-structure",
+      "citation-nhl-q56-line-1-classical-text",
+      "citation-nhl-q56-line-2-classical-text",
+      "citation-nhl-q56-line-3-classical-text",
+      "citation-nhl-q56-line-4-classical-text",
+      "citation-nhl-q56-line-5-classical-text",
+      "citation-nhl-q56-line-6-classical-text",
+      "citation-pbc-q56-line-1-classical-text",
+      "citation-pbc-q56-line-2-classical-text",
+      "citation-pbc-q56-line-3-classical-text",
+      "citation-pbc-q56-line-4-classical-text",
+      "citation-pbc-q56-line-5-classical-text",
+      "citation-pbc-q56-line-6-classical-text",
+      "citation-ntt-q56-line-1-classical-text",
+      "citation-ntt-q56-line-2-classical-text",
+      "citation-ntt-q56-line-3-classical-text",
+      "citation-ntt-q56-line-4-classical-text",
+      "citation-ntt-q56-line-5-classical-text",
+      "citation-ntt-q56-line-6-classical-text",
+      "citation-nhl-q56-overview-nhl",
+      "citation-nhl-q56-overview-closing-nhl",
+      "citation-pbc-q56-overview-pbc",
+      "citation-pbc-q56-overview-supplement-pbc",
+      "citation-pbc-q56-overview-thoan-pbc",
+      "citation-pbc-q56-overview-thoan-supplement-pbc",
+      "citation-pbc-q56-overview-dai-tuong-pbc",
+      "citation-pbc-q56-overview-closing-supplement-pbc",
+      "citation-ntt-q56-overview-trinh-di",
+      "citation-ntt-q56-overview-chu-hy",
+      "citation-ntt-q56-overview-thoan-trinh-di",
+      "citation-ntt-q56-overview-thoan-chu-hy",
+      "citation-ntt-q56-overview-dai-tuong-trinh-di",
+      "citation-ntt-q56-overview-dai-tuong-chu-hy",
+      "citation-nhl-q56-line-1-nhl",
+      "citation-pbc-q56-line-1-pbc",
+      "citation-ntt-q56-line-1-trinh-di",
+      "citation-ntt-q56-line-1-chu-hy",
+      "citation-pbc-q56-line-1-supplement-pbc",
+      "citation-nhl-q56-line-2-nhl",
+      "citation-pbc-q56-line-2-pbc",
+      "citation-ntt-q56-line-2-trinh-di",
+      "citation-ntt-q56-line-2-chu-hy",
+      "citation-pbc-q56-line-2-supplement-pbc",
+      "citation-nhl-q56-line-3-nhl",
+      "citation-pbc-q56-line-3-pbc",
+      "citation-ntt-q56-line-3-trinh-di",
+      "citation-ntt-q56-line-3-chu-hy",
+      "citation-nhl-q56-line-4-nhl",
+      "citation-pbc-q56-line-4-pbc",
+      "citation-ntt-q56-line-4-trinh-di",
+      "citation-ntt-q56-line-4-chu-hy",
+      "citation-ntt-q56-line-4-quoted-chu-hy",
+      "citation-ntt-q56-line-4-tu-tien-trai",
+      "citation-ntt-q56-line-4-ho-song-phuong",
+      "citation-nhl-q56-line-5-nhl",
+      "citation-pbc-q56-line-5-pbc",
+      "citation-ntt-q56-line-5-trinh-di",
+      "citation-ntt-q56-line-5-chu-hy",
+      "citation-nhl-q56-line-6-nhl",
+      "citation-pbc-q56-line-6-pbc",
+      "citation-ntt-q56-line-6-trinh-di",
+      "citation-ntt-q56-line-6-chu-hy",
+      "citation-ntt-q56-note-1-ntt",
+      "citation-ntt-q56-note-2-ntt",
+      "citation-ntt-q56-note-3-ntt",
+      "citation-ntt-q56-note-4-ntt",
+      "citation-ntt-q56-note-5-ntt",
+      "citation-ntt-q56-note-6-ntt",
+      "citation-ntt-q56-note-7-ntt",
+      "citation-ntt-q56-note-8-ntt"
+    ],
+    "note": "Compared complete assigned overview, six-line passages, supplements and attached notes with extracted supplied PDFs and rendered contact sheets: NHL 306–308; PBC 524–531; NTT 840–851. NHL and PBC heading diagrams were visually checked; NTT structures were checked from named quái and line labels, without assuming a diagram is present. Original Vietnamese selections only; no source prose or Han quotation redistributed. This source comparison is not independent verification approval, an audit ledger decision or certification. Full original-text/translation-layer mapping and audit closure remain open. Edition limitations: PBC và NTT có nhãn vị bất nhất và minh thuận/minh thận, vô cữu/vô vưu được giữ. NTT 847 lặp nhãn Bản nghĩa của Chu Hy trước phần dẫn lời rồi đưa Từ Tiến Trai và Hồ Song Phương không nhãn Tiên Nho; giữ tác giả riêng và supplement cho phần này. Tư phủ có nghĩa của và vật hộ thân hoặc búa sắc; trinh của hào tam, phát tên ở ngũ và thượng đãi có cách đọc khác. Những dẫn Tốn, Ngữ Lục, Hán thư là bằng chứng được nguồn thuật, không thêm full review các tác phẩm được dẫn. Chuyện nhân vật trong phụ chú không thành lịch sử được chứng minh độc lập."
+  }
+}
