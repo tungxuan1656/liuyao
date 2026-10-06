@@ -18,7 +18,10 @@ The main Pi session owns coordination and final acceptance. Workers own scoped i
 - Do not depend on `pi-tasks` or maintain a second feature tracker.
 - A new `/features` request authorizes branch creation, commits, pushes, one PR per selected feature, review fixes, and merge for that selection only.
 - A current user instruction that withholds an action overrides this default. A resume request preserves the checkpoint's original authority and adds none.
+- Before merge, inspect GitHub's delete-branch-on-merge setting. If branch retention is required, disable automatic deletion before merging and restore the original repository setting afterward. Verify the branch ref after merge; use the recovery rule above if GitHub still deletes it.
 - Never force-push, delete user branches, or expand the selected feature scope.
+- Treat missing or changed Git state as a reconciliation task first. Verify local and remote refs, reviewed SHAs, and PR state before writing; do not ask the user when the intended state is recoverable from those records.
+- If a merged PR's source branch was deleted by GitHub and the local branch still points to the exact reviewed PR head, recreate the missing remote branch with a normal push. If the refs disagree, stop and ask before overwriting anything.
 
 All repository paths in this skill resolve from the repository root, not this skill directory.
 
@@ -26,12 +29,13 @@ All repository paths in this skill resolve from the repository root, not this sk
 
 - Resolve ordinary questions that the selected feature or plan does not answer.
 - Use canonical project documents, existing code, and established patterns as evidence.
+- Apply explicit user instructions and repository policy before choosing among options. Do not ask the user to repeat authority they already granted.
 - Choose the smallest in-scope, reversible option when evidence does not determine one choice.
 - Record each material autonomous decision in `features/<id>.md` under `## Decision log`.
 - Record the question, decision, alternatives, rationale, evidence, and effect on scope or acceptance.
 - Add the section when it is absent. Keep this feature record as the canonical decision log.
-- Do not ask the user about routine implementation details or decisions supported by project evidence.
-- Stop and ask only when a decision needs user-only authority, changes selected scope, changes acceptance, or conflicts with canonical requirements.
+- Do not ask the user to choose among routine, reversible options that stay within the selected feature and existing authority. Decide, record the rationale, and continue.
+- Stop and ask only when no safe in-scope choice exists, or the decision requires new user-only authority, changes selected scope or acceptance, or conflicts with canonical requirements.
 - Never infer legal rights, security approval, consent, credentials, or permission to expose data.
 - Keep a feature blocked when required external evidence or authorization is missing.
 
@@ -168,7 +172,7 @@ Reconcile live Git state and exact known run IDs before writes or redispatch.
 Resume only eligible runs through documented `pi-subagents` controls.
 Never start a replacement writer while the original can still write.
 
-If checkout state changes unexpectedly, stop writes and establish ownership with the user.
+If checkout state changes unexpectedly, pause writes and reconcile ownership from Git status, refs, PR head, and saved review target. Resume with the narrowest safe recovery when they agree; ask the user only when ownership or intended contents remain uncertain.
 If infrastructure fails, capture the exact error, run state, checkout identity, and partial diff.
 Use a reconciled same-protocol retry or ask for an execution-mode fallback. Never switch silently to another CLI.
 If verification repeatedly fails or scope must expand, record the blocker and stop the batch.
