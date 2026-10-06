@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-051 merged
+
+**State**: done and merged to `main` in PR #78 at `2d30586b7989c255209750b0bac23cd9efca30aa`.
+**Done**: Published BPCT front matter and Part I chapters 1–5 (PDF 1–76), including all 64 annotated boards, all 18 chapter 5 discussions, and the distinct unnumbered postscript. Added 15 V2 records, 960 claims/citations, and dispositions for 196 assigned obligations while preserving earlier released records and citations.
+**Evidence**: Exact-head independent reviews returned `OK WITH NOTES` with no P0/P1/P2 findings; final reviewed branch head `b98e555a476a130c5a3d83dab741555f547f3c36`. PR-head `verify` run 37417899865, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 544 tests (363 knowledge, 181 core); corpus `--check-books --check` and package-export checks passed. Knowledge test concurrency is capped at two workers after two CI runs exposed timeout/RPC contention; full verification and exact-head checks now pass.
+**Coverage**: Workbox precaches all 18 assets; integrated main asset 4,413,242 bytes under the measured 4,456,448-byte cap, leaving 43,206 bytes. Corpus source review and certification remain incomplete; no full-corpus audit or certification is claimed.
+**Blockers**: none for feat-051. Source ambiguities and unattributed layers remain explicitly recorded.
+**Next**: Continue with selected feat-052 from updated `main`.
+
 ## 2026-10-06 — feat-050 merged
 
 **State**: done and merged to `main` in PR #77 at `51bcdb956aacd434c7bceeb3893f10458db00eee`.

@@ -89,7 +89,8 @@ New interpretation, calendar, or UI behavior.
   worker `onTaskUpdate` RPC timeout. Limiting the knowledge suite to two workers passed locally
   in 61.8 seconds (363 tests); the test-specific timeout is restored to 60 seconds. The package
   test script now caps workers to reduce contention. Fresh `./init.sh` passes: 363 knowledge and
-  181 core tests. Exact-head CI must pass before merge.
+  181 core tests. Final PR-head `verify` run 37417899865, Cloudflare Pages, and GitGuardian all
+  pass at `b98e555a476a130c5a3d83dab741555f547f3c36`.
 - The first final full test run found two stale assumptions: all authored records were V1, and
   a synthetic record's layer scope equaled one group rather than its edition/record closure.
   Tests now dispatch V1/V2 and use the existing layer resolver; focused 28-test correction and
@@ -114,15 +115,13 @@ warnings remain non-blocking; this feature does not widen into unrelated UI/font
 
 ## Handoff
 
-- State: active on `feat/051-bpct-front-chapters-1-5`; implementation checkpoints and verification
-  are complete, not feature-done or merged. Parent retains index/progress ownership.
-- Evidence: Independent review of `4d530a19883875b5da6a3ace29019725ed3d1b6a` returned
-  OK WITH NOTES, with no P0/P1/P2 findings. The subsequent timeout-only correction has not yet
-  received fresh exact-head review. PR #78 is open; do not merge before updated-head review and
-  successful exact-head checks. No UI, calendar, classifier, new interpretation behavior,
-  audit/certification behavior, or source text/images are introduced.
-- Dependencies: feat-050 and feat-101 are done; see the unchanged feature index.
-- Blockers: none for implementation. Source ambiguities, missing labels/entries, unspecified
-  authors and non-authoritative historical assertions remain explicit limitations.
-- Next: Commit the evidence-based test-timeout correction, then obtain fresh independent review
-  and passing exact-head CI/Cloudflare/GitGuardian checks before merge or setting feat-051 done.
+- State: done and merged to `main` in PR #78 at `2d30586b7989c255209750b0bac23cd9efca30aa`.
+- Evidence: Final independent review at `b98e555a476a130c5a3d83dab741555f547f3c36` returned
+  OK WITH NOTES with no P0/P1/P2 findings. Exact-head `verify` run 37417899865, Cloudflare Pages,
+  and GitGuardian passed. `./init.sh` passed with 363 knowledge and 181 core tests; corpus and
+  package-export checks passed. Source review and certification gates remain closed; no corpus
+  audit, efficacy claim, or rights certification is implied.
+- Dependencies: feat-050 and feat-101 are done; see the feature index.
+- Blockers: none for feat-051. Source ambiguities, missing labels/entries, unspecified authors,
+  and non-authoritative historical assertions remain explicit limitations.
+- Next: Continue with selected feat-052 from this updated `main`.
