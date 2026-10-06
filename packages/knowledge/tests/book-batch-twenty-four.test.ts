@@ -106,4 +106,32 @@ describe('feat-057 question, experiment, chart and source-layer locators', () =>
     expect(unit('bpct-question-12-note-02').pdfPages).toEqual([394, 394]);
     expect(text(12, 'note-08')).toMatch(/khác tác giả hôm sau sinh/);
   });
+
+  it('keeps Q13–18 disagreement, label defects and the unsigned insertion separate', () => {
+    expect(unit('bpct-question-13-note-09').claimIds).toEqual([
+      'article-combination-opposition-turnarounds-translator-disagreement',
+    ]);
+    expect(text(13, 'example-07-experiment')).toMatch(/chưa chết hôm nay.*chết Thìn ngay hôm nay/);
+    expect(text(13, 'example-09-chart')).toMatch(/đều in Thế.*không chọn sửa/);
+    expect(text(14, 'critical-note')).toMatch(/Tí→Mão→Ngọ.*Mùi–Thìn/);
+    expect(text(14, 'critical-note')).toMatch(/không đầy đủ Q14/);
+    expect(text(16, 'query')).toMatch(/mười sau.*không sửa nhãn/);
+    expect(text(16, 'example-01-chart')).toMatch(/hoá Thìn.*không tự bỏ biến/);
+    expect(text(16, 'example-04-experiment')).toMatch(/nên nên chôn.*không đoán sửa phủ định/);
+    expect(text(18, 'answer')).toMatch(/không chứng minh người hỏi có lỗi/);
+    expect(text(18, 'example-01-experiment')).toMatch(/không về.*bình an/);
+    const insertion = getBookRecord('article-bpct-moving-lines-insertion')!;
+    expect(insertion.claims).toHaveLength(18);
+    expect(insertion.claims.every(c => c.attribution?.author.includes('không ký tên'))).toBe(true);
+    expect(insertion.claims.find(c => c.id.endsWith('4-example'))?.text).toMatch(
+      /mâu thuẫn sơ đang động/,
+    );
+    expect(insertion.claims.find(c => c.id.endsWith('6-rule'))?.text).toMatch(
+      /không xác định rõ.*gốc hay biến/,
+    );
+    expect(registry.groups.find(g => g.id === 'bpct-moving-lines-insertion')).toMatchObject({
+      parentId: 'bpct-part2-ch01-questions',
+      layerScopeIds: ['layer-bpct-uncredited-supplement'],
+    });
+  });
 });

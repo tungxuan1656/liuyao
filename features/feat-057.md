@@ -18,7 +18,7 @@ New interpretation, calendar, or UI behavior.
 
 - [x] Questions 1–6.
 - [x] Questions 7–12.
-- [ ] Questions 13–18.
+- [x] Questions 13–18.
 - [ ] Every Hà Tri Chương heading, explanation, and note.
 - [ ] Give each question and subordinate passage its own inventory disposition.
 - [ ] Distinguish the question, attributed experiment, example, and general conditional rule.
@@ -62,6 +62,8 @@ New interpretation, calendar, or UI behavior.
 - Questions1–6: inspected all source passages/images, added six original-summary articles,41 dated/repeated example contexts and41 separate chart observations,10 notes, six queries, five new answer summaries plus reused Q5 answer. Checkpoint corpus validates254 records/6951 claims/7197 citations; new cohort145 claims with146 dispositions. Baseline `./init.sh` passed181 core and3366 knowledge tests. Full final gates remain pending.
 
 - Questions7–12: checkpoint `bb12a1b` preserves Q1–6. Added six articles and54 separately located example contexts/experiments,52 charts (two Q9 passages have no chart),16 notes; Q10 answer reuses four existing claims. Cumulative332 new claims/334 dispositions,260 records/7138 claims/7384 citations,2258 registry groups. Source-specific tests retain two failed timing claims, different Thế/Ứng labels, repeated questioning and note disagreements.
+
+- Questions13–18: checkpoint `30f33a5` preserves Q1–12. Added six question articles,36 examples/experiments/charts, nine printed notes (Q13 note9 reuses the existing disagreement), Q12 separate conclusion, Q13 red emphasis and Q14 full detailed Ghi chú. The unsigned412 insertion has its own article and18 separate framing/rule/example/special dispositions using the existing uncredited-supplement layer. Cumulative481 new claims/484 mapped fine dispositions;267 records/7287 claims/7533 citations;2409 registry groups. Individual413 confirms folio-only366; Hà Tri release remains the next checkpoint.
 
 ## Handoff
 
