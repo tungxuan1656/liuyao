@@ -81,7 +81,7 @@ No speculative cap increase, PDF caching, split-bundle behavior or new UI is int
 
 ## Handoff
 
-- State: done on `feat/049-reviewed-que-61-64-bpct-49-56`, initial HEAD `046149cebf108ca0cac0deb80b0c9a4af61513ad`; done after local acceptance and verification.
+- State: active; implementation and local verification passed on `feat/049-reviewed-que-61-64-bpct-49-56` through `143550d12750938e447bc29df61686ab38da6900`.
 - Evidence: Source-comparison records and generated coverage reach 64/64 quẻ and 384/384 positions per source book. Coverage `complete` remains false; audit has 84 current prior decisions and 197 covered prior claims, not approval of this batch.
-- Blockers: none for selected authored claims. Ambiguous/missing source text and broad audit/verification remain visible and outside released authority.
-- Next: Independent acceptance review of this branch. Subsequent intended authoring is feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100); selection/activation remains with the user. No corpus audit or certification approval is claimed.
+- Blockers: none for selected authored claims. Exact-head independent acceptance review, PR checks, and merge remain.
+- Next: Complete fresh review of the exact branch head, then publish one PR and merge only after all required checks pass. No corpus audit or certification approval is claimed.
