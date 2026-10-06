@@ -31,7 +31,8 @@ New interpretation, calendar, or UI behavior.
 
 [Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
 [model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
-[licensing](../LICENSING.md), [verification](../docs/development.md).
+[licensing](../LICENSING.md), [verification](../docs/development.md),
+[implementation plan](../docs/plans/feat-051.md).
 
 ## Plan
 
@@ -47,7 +48,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active on `feat/051-bpct-front-chapters-1-5`, based on `main` at `ade8bed50fa6b223dc57aaba4a0a129dfa0e10d7`.
+- Evidence: feat-050 and feat-101 are done. The selected batch authorizes feat-051. The staged execution plan is in [docs/plans/feat-051.md](../docs/plans/feat-051.md). No feat-051 implementation verification has run.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Verify the BPCT source fingerprint and inspect assigned pages 1–76 before authoring.
