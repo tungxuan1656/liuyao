@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 202, "released": 202, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 2398, "missingCitationIds": [] },
-  "citations": { "total": 2662 },
+  "records": { "authored": 203, "released": 203, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 2459, "missingCitationIds": [] },
+  "citations": { "total": 2705 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -434,7 +434,8 @@
         "article-hidden-movement-store-strength-and-branch-context",
         "article-hidden-spirit-release-restraint-and-combination-context",
         "article-useful-spirit-avoidance-rescue-and-transformation-context",
-        "article-adverse-support-store-intervening-lines-and-release-context"
+        "article-adverse-support-store-intervening-lines-and-release-context",
+        "article-timing-relatives-body-spirits-and-sincerity-context"
       ]
     },
     {
@@ -1645,16 +1646,16 @@
   },
   "nextBatch": {
     "hexagramIds": [],
-    "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến BPCT Phần I, Chương 6, câu 57–69 (feat-050), PDF 94–100. Cả 64 quẻ có tổng quan và sáu vị trí với diễn giải được chọn từ NHL, PBC, NTT; câu 49–56 giữ riêng phú, bình giải và chú 10–11. Nhãn Tiên Nho trống ở Tiểu Quá tam không cung cấp bình. Không bổ sung Thoán/Tượng hoặc văn bản bị thiếu; tác giả, cách đọc khác và giới hạn nguồn vẫn riêng. Tác giả hóa và source comparison không đóng audit từng cell/layer, phê duyệt độc lập hoặc chứng nhận corpus; không phát hành phép lịch, classifier xung hay dự báo sức khỏe."
+    "topicIds": ["topic-liuyao-foundations"],
+    "note": "Dự kiến BPCT nền tảng và phần đầu sách (feat-051). Câu 57–69 (feat-050), PDF 94–100, đã có tóm tắt riêng phú, nghĩa tiếng Việt, bình, 12 mục ứng kỳ và chú 12–13; phần kết chương không đánh số giữ riêng. Các khác biệt và giới hạn nguồn không được sửa âm thầm. Các 64 quẻ và 384 vị trí vẫn chỉ là source comparison được chọn; audit từng unit/layer, kiểm chứng độc lập và chứng nhận corpus còn mở. Không phát hành phép lịch, classifier, dự báo sức khỏe hoặc nghi lễ ứng dụng."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2087,
+        "required": 2088,
         "current": 84,
-        "missing": 2003,
+        "missing": 2004,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1663,8 +1664,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 2003 },
-        { "code": "released-claim-coverage-incomplete", "count": 2201 }
+        { "code": "missing-decision", "count": 2004 },
+        { "code": "released-claim-coverage-incomplete", "count": 2262 }
       ]
     },
     "certification": {
@@ -1672,7 +1673,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2087,
+        "required": 2088,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
