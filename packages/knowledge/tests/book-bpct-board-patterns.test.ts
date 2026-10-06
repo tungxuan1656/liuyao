@@ -47,7 +47,7 @@ describe('BPCT chapter-four independent observed board patterns', () => {
       expect(unit.discoveryStatus).toBe('unresolved');
       for (const id of unit.recordIds ?? []) expect(getBookRecord(id)).toBeDefined();
     }
-    expect(registry.counts.groups).toBe(2861);
+    expect(registry.counts.groups).toBe(3074);
     expect(registry.counts.exclusions).toBe(17);
     expect(manifest.nextBatch.note).toMatch(/feat-059/);
     const source = getBookSource('source-book-bpct')!;

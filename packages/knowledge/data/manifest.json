@@ -44,7 +44,8 @@
     "citations/batch-twenty-two-advanced.json",
     "citations/batch-twenty-three-advanced.json",
     "citations/batch-twenty-four-advanced.json",
-    "citations/bpct-casting-criticisms.json"
+    "citations/bpct-casting-criticisms.json",
+    "citations/nhl-introduction-framing.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -333,7 +334,18 @@
     "liuyao/bpct-criticism-xii.json",
     "liuyao/bpct-criticism-xiii.json",
     "liuyao/bpct-criticism-xiv.json",
-    "liuyao/bpct-criticism-xv.json"
+    "liuyao/bpct-criticism-xv.json",
+    "foundations/nhl-foreword.json",
+    "foundations/nhl-introduction-01.json",
+    "foundations/nhl-introduction-02.json",
+    "foundations/nhl-introduction-03.json",
+    "foundations/nhl-introduction-04.json",
+    "foundations/nhl-introduction-05.json",
+    "foundations/nhl-introduction-06.json",
+    "foundations/nhl-introduction-07.json",
+    "foundations/nhl-part2-framing.json",
+    "foundations/nhl-retrospective.json",
+    "foundations/nhl-front-end-accounting.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -622,7 +634,18 @@
     "article-bpct-criticism-xii",
     "article-bpct-criticism-xiii",
     "article-bpct-criticism-xiv",
-    "article-bpct-criticism-xv"
+    "article-bpct-criticism-xv",
+    "article-nhl-foreword",
+    "article-nhl-introduction-01",
+    "article-nhl-introduction-02",
+    "article-nhl-introduction-03",
+    "article-nhl-introduction-04",
+    "article-nhl-introduction-05",
+    "article-nhl-introduction-06",
+    "article-nhl-introduction-07",
+    "article-nhl-part2-framing",
+    "article-nhl-retrospective",
+    "article-nhl-front-end-accounting"
   ],
   "topics": [
     {
@@ -684,6 +707,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-059: NHL PDF1–126, dẫn PhầnII127–130 và cuối sách388–393. feat-058 đối chiếu BPCT429–467, giữ I/II/IV,48 dòngII thực thấy và56 nghĩa vụ chưa tìm thấy,18 Tạp Sự,11 Tinh Sát,15 phê bình và467 trắng. Audit091/092, đối chiếu ấn bản, xác minh/certification còn mở; không tính lịch hay diễn giải tự động."
+    "note": "feat-059 đối chiếu NHL lời đầu/chương1–7 PDF10–126,framing127–130 và hồi tưởng389–392; front1–9/393 accounted,388 thuộc Hệ Từ Hạ. feat-060 tiếp PBC/NTT mở đầu,các hình và framing. Audit092/verification/certification còn mở; không tính lịch hay diễn giải tự động."
   }
 }

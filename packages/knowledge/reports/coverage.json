@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 287, "released": 287, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 7742, "missingCitationIds": [] },
-  "citations": { "total": 7988 },
+  "records": { "authored": 298, "released": 298, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 7950, "missingCitationIds": [] },
+  "citations": { "total": 8196 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -115,7 +115,18 @@
         "term-line-position",
         "term-polarity",
         "term-yin",
-        "term-yang"
+        "term-yang",
+        "article-nhl-foreword",
+        "article-nhl-introduction-01",
+        "article-nhl-introduction-02",
+        "article-nhl-introduction-03",
+        "article-nhl-introduction-04",
+        "article-nhl-introduction-05",
+        "article-nhl-introduction-06",
+        "article-nhl-introduction-07",
+        "article-nhl-part2-framing",
+        "article-nhl-retrospective",
+        "article-nhl-front-end-accounting"
       ]
     },
     {
@@ -1731,15 +1742,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-059: NHL PDF1–126, dẫn PhầnII127–130 và cuối sách388–393. feat-058 đối chiếu BPCT429–467, giữ I/II/IV,48 dòngII thực thấy và56 nghĩa vụ chưa tìm thấy,18 Tạp Sự,11 Tinh Sát,15 phê bình và467 trắng. Audit091/092, đối chiếu ấn bản, xác minh/certification còn mở; không tính lịch hay diễn giải tự động."
+    "note": "feat-059 đối chiếu NHL lời đầu/chương1–7 PDF10–126,framing127–130 và hồi tưởng389–392; front1–9/393 accounted,388 thuộc Hệ Từ Hạ. feat-060 tiếp PBC/NTT mở đầu,các hình và framing. Audit092/verification/certification còn mở; không tính lịch hay diễn giải tự động."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 4585,
+        "required": 4809,
         "current": 84,
-        "missing": 4501,
+        "missing": 4725,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1747,9 +1758,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 2861 },
-        { "code": "missing-decision", "count": 4501 },
-        { "code": "released-claim-coverage-incomplete", "count": 7545 }
+        { "code": "unresolved-source-discovery", "count": 3074 },
+        { "code": "missing-decision", "count": 4725 },
+        { "code": "released-claim-coverage-incomplete", "count": 7753 }
       ]
     },
     "certification": {
@@ -1757,7 +1768,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 4585,
+        "required": 4809,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
