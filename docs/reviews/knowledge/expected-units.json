@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 43,
+  "registryRevision": 44,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "85e5396a525dd115f8afc305a375f1f87832932a1dd35a63f7d034eaa46b18ae"
+    "sha256": "75b9ed23a838a7a080b8dfd04ac2bb038fec15f0221824fe31abd737b7859c9f"
   },
   "counts": {
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 1300,
+    "groups": 1485,
     "exclusions": 17
   },
   "layers": [
@@ -3976,7 +3976,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
     },
     {
       "id": "bpct-part1-ch20-supplement",
@@ -3991,9 +3992,11 @@
         "layer-bpct-original-text",
         "layer-bpct-translation",
         "layer-bpct-author-commentary",
-        "layer-bpct-translator-note"
+        "layer-bpct-translator-note",
+        "layer-bpct-uncredited-supplement"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
     },
     {
       "id": "bpct-part1-ch21",
@@ -4010,7 +4013,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
     },
     {
       "id": "bpct-part1-ch22",
@@ -4027,7 +4031,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
     },
     {
       "id": "bpct-part1-ch23",
@@ -26570,6 +26575,3164 @@
       "layerScopeIds": ["layer-bpct-translator-note"],
       "discoveryStatus": "unresolved",
       "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch20-opening",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 231,
+      "pdfPageEnd": 231,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-01",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 231,
+      "pdfPageEnd": 231,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-02",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 231,
+      "pdfPageEnd": 232,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-03",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 232,
+      "pdfPageEnd": 232,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-04",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 232,
+      "pdfPageEnd": 232,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-05",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 232,
+      "pdfPageEnd": 232,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-06",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 232,
+      "pdfPageEnd": 233,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-07",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 233,
+      "pdfPageEnd": 233,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-08",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 233,
+      "pdfPageEnd": 233,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-09",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 233,
+      "pdfPageEnd": 233,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-10",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 233,
+      "pdfPageEnd": 234,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-11",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 234,
+      "pdfPageEnd": 234,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-12",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 234,
+      "pdfPageEnd": 234,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-13",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 234,
+      "pdfPageEnd": 234,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-14",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 234,
+      "pdfPageEnd": 234,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-15",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 234,
+      "pdfPageEnd": 234,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-16",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 234,
+      "pdfPageEnd": 235,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-17",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 235,
+      "pdfPageEnd": 235,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-18",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 235,
+      "pdfPageEnd": 235,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-19",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 235,
+      "pdfPageEnd": 235,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-20",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 235,
+      "pdfPageEnd": 236,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-21",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 236,
+      "pdfPageEnd": 236,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-22",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 236,
+      "pdfPageEnd": 236,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-23",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 236,
+      "pdfPageEnd": 236,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-24",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 236,
+      "pdfPageEnd": 236,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-25",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 236,
+      "pdfPageEnd": 236,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-26",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 236,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-27",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-28",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-29",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-30",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-31",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 238,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-32",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 32",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 238,
+      "pdfPageEnd": 238,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-33",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 33",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 238,
+      "pdfPageEnd": 238,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-34",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 34",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 238,
+      "pdfPageEnd": 238,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-35",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 35",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 238,
+      "pdfPageEnd": 238,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-36",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 36",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 238,
+      "pdfPageEnd": 239,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-37",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 37",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 239,
+      "pdfPageEnd": 239,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-38",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 38",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 239,
+      "pdfPageEnd": 239,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-39",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 39",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 239,
+      "pdfPageEnd": 239,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-40",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 40",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 239,
+      "pdfPageEnd": 239,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-41",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 41",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 239,
+      "pdfPageEnd": 239,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-42",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 42",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 239,
+      "pdfPageEnd": 240,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-43",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 43",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 240,
+      "pdfPageEnd": 240,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-44",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 44",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 240,
+      "pdfPageEnd": 240,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-45",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 45",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 240,
+      "pdfPageEnd": 240,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-46",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 46",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 240,
+      "pdfPageEnd": 240,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-47",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 47",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 240,
+      "pdfPageEnd": 241,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-48",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 48",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 241,
+      "pdfPageEnd": 241,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-49",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 49",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 241,
+      "pdfPageEnd": 241,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-50",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 50",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 241,
+      "pdfPageEnd": 241,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-51",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 51",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 241,
+      "pdfPageEnd": 241,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-52",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 52",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 241,
+      "pdfPageEnd": 241,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-53",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 53",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 241,
+      "pdfPageEnd": 242,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-54",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 54",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 242,
+      "pdfPageEnd": 242,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-55",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 55",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 242,
+      "pdfPageEnd": 242,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-56",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 56",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 242,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-57",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 57",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 243,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-58",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 58",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 243,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-59",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 59",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 243,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-60",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 60",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 243,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-61",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 61",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 243,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-62",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 62",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-63",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 63",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-64",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 64",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-65",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 65",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-66",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 66",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-67",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 67",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-68",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 68",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 245,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-69",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 69",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 245,
+      "pdfPageEnd": 245,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-70",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 70",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 245,
+      "pdfPageEnd": 245,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-71",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 71",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 245,
+      "pdfPageEnd": 245,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-72",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 72",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 245,
+      "pdfPageEnd": 245,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-73",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — 73",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 245,
+      "pdfPageEnd": 246,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-opening",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 246,
+      "pdfPageEnd": 246,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-01",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 246,
+      "pdfPageEnd": 246,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-02",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 246,
+      "pdfPageEnd": 246,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-03",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 246,
+      "pdfPageEnd": 246,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-04",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 247,
+      "pdfPageEnd": 247,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-05",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 247,
+      "pdfPageEnd": 247,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-06",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 247,
+      "pdfPageEnd": 247,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-07",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 247,
+      "pdfPageEnd": 247,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-08",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 247,
+      "pdfPageEnd": 247,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-09",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 248,
+      "pdfPageEnd": 248,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-10",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 248,
+      "pdfPageEnd": 248,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-11",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 248,
+      "pdfPageEnd": 248,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-12",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 248,
+      "pdfPageEnd": 248,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-13",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 248,
+      "pdfPageEnd": 249,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-14",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 249,
+      "pdfPageEnd": 249,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-15",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 249,
+      "pdfPageEnd": 249,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-16",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 249,
+      "pdfPageEnd": 249,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-17",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 249,
+      "pdfPageEnd": 249,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-18",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 250,
+      "pdfPageEnd": 250,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-19",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 250,
+      "pdfPageEnd": 250,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-boat-20",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Thuyền Gia Trạch — boat-20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 250,
+      "pdfPageEnd": 250,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-01",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Hoa liễu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 235,
+      "pdfPageEnd": 235,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-02",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Nạp âm khác Thế",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-03",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Thực lộc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 237,
+      "pdfPageEnd": 237,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-04",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Tinh sát và tác giả",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 238,
+      "pdfPageEnd": 238,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-05",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Cung Tấn",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 240,
+      "pdfPageEnd": 240,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-06",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Đồng hào",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 242,
+      "pdfPageEnd": 242,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-07",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Hai dòng",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 242,
+      "pdfPageEnd": 242,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-08",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Hàm Trì",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 243,
+      "pdfPageEnd": 243,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-09",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Chủ tượng",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-10",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Sát chế",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 244,
+      "pdfPageEnd": 244,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-note-11",
+      "parentId": "bpct-part1-ch20",
+      "kind": "content",
+      "group": "Gia Trạch — Nhẫn",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 245,
+      "pdfPageEnd": 245,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-housing"]
+    },
+    {
+      "id": "bpct-ch20-supplement-opening",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 251,
+      "pdfPageEnd": 251,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-01",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 251,
+      "pdfPageEnd": 251,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-02",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 251,
+      "pdfPageEnd": 251,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-03",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 251,
+      "pdfPageEnd": 251,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-04",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 251,
+      "pdfPageEnd": 252,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-05",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 252,
+      "pdfPageEnd": 252,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-06",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 252,
+      "pdfPageEnd": 252,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-07",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 252,
+      "pdfPageEnd": 252,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-08",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 252,
+      "pdfPageEnd": 252,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-09",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 252,
+      "pdfPageEnd": 253,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-10",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 253,
+      "pdfPageEnd": 253,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-11",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 253,
+      "pdfPageEnd": 253,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-12",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 253,
+      "pdfPageEnd": 253,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-13",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 254,
+      "pdfPageEnd": 254,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-14",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 254,
+      "pdfPageEnd": 254,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-15",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 254,
+      "pdfPageEnd": 254,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-16",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 254,
+      "pdfPageEnd": 254,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-17",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 254,
+      "pdfPageEnd": 255,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-18",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 255,
+      "pdfPageEnd": 255,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-19",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 255,
+      "pdfPageEnd": 255,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-20",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 255,
+      "pdfPageEnd": 255,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-21",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 255,
+      "pdfPageEnd": 256,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-22",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 256,
+      "pdfPageEnd": 256,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-23",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 256,
+      "pdfPageEnd": 256,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-24",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 256,
+      "pdfPageEnd": 256,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-25",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 256,
+      "pdfPageEnd": 257,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-26",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 257,
+      "pdfPageEnd": 257,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-27",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 257,
+      "pdfPageEnd": 257,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-29",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 257,
+      "pdfPageEnd": 257,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-30",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 258,
+      "pdfPageEnd": 258,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-31",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 258,
+      "pdfPageEnd": 258,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-32",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 32",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 258,
+      "pdfPageEnd": 258,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-33",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 33",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 258,
+      "pdfPageEnd": 258,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-34",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 34",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 258,
+      "pdfPageEnd": 259,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-35",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 35",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 259,
+      "pdfPageEnd": 259,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-36",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 36",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 259,
+      "pdfPageEnd": 259,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-37",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 37",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 259,
+      "pdfPageEnd": 259,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-uncredited-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-38",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 38",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 259,
+      "pdfPageEnd": 260,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-39",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 39",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 260,
+      "pdfPageEnd": 260,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-40",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 40",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 260,
+      "pdfPageEnd": 260,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-41",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 41",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 260,
+      "pdfPageEnd": 260,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-42",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 42",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 261,
+      "pdfPageEnd": 261,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-43",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 43",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 261,
+      "pdfPageEnd": 261,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-44",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 44",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 261,
+      "pdfPageEnd": 261,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-45",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 45",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 261,
+      "pdfPageEnd": 262,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-46",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 46",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 262,
+      "pdfPageEnd": 262,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-47",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — 47",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 262,
+      "pdfPageEnd": 262,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-uncredited-supplement"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-note-01",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — Trục và Tuỳ",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 254,
+      "pdfPageEnd": 254,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-note-inline-12",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — Thừa",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 253,
+      "pdfPageEnd": 253,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch20-supplement-note-inline-40",
+      "parentId": "bpct-part1-ch20-supplement",
+      "kind": "content",
+      "group": "Tân Tăng Gia Trạch — Khanh",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 260,
+      "pdfPageEnd": 260,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-supplement"]
+    },
+    {
+      "id": "bpct-ch21-opening",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 263,
+      "pdfPageEnd": 263,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-01",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 263,
+      "pdfPageEnd": 263,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-02",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 263,
+      "pdfPageEnd": 263,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-03",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 263,
+      "pdfPageEnd": 263,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-04",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 264,
+      "pdfPageEnd": 264,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-05",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 264,
+      "pdfPageEnd": 264,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-06",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 264,
+      "pdfPageEnd": 264,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-07",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 264,
+      "pdfPageEnd": 264,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-08",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 264,
+      "pdfPageEnd": 265,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch21-note-01",
+      "parentId": "bpct-part1-ch21",
+      "kind": "content",
+      "group": "Châu Thuyền — Thuyền hộ",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 263,
+      "pdfPageEnd": 263,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-one-boats"]
+    },
+    {
+      "id": "bpct-ch22-opening",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 266,
+      "pdfPageEnd": 266,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-01",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 266,
+      "pdfPageEnd": 267,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-02",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 267,
+      "pdfPageEnd": 267,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-03",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 267,
+      "pdfPageEnd": 267,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-04",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 267,
+      "pdfPageEnd": 267,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-05",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 267,
+      "pdfPageEnd": 267,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-06",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 267,
+      "pdfPageEnd": 268,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-07",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 268,
+      "pdfPageEnd": 268,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-08",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 268,
+      "pdfPageEnd": 268,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-09",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 268,
+      "pdfPageEnd": 268,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-10",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 268,
+      "pdfPageEnd": 268,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-11",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 268,
+      "pdfPageEnd": 269,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-12",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 269,
+      "pdfPageEnd": 269,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-13",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 269,
+      "pdfPageEnd": 269,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-14",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 269,
+      "pdfPageEnd": 269,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-15",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 269,
+      "pdfPageEnd": 269,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-note-01",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — Chữ bổ Bản",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 266,
+      "pdfPageEnd": 266,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-note-02",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — Quy và Thi",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 266,
+      "pdfPageEnd": 266,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch22-note-03",
+      "parentId": "bpct-part1-ch22",
+      "kind": "content",
+      "group": "Xướng Gia — Túc ngạch và truy bồi",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 268,
+      "pdfPageEnd": 268,
+      "authorFeatureId": "feat-054",
+      "auditFeatureId": "feat-088",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
     }
   ],
   "exclusions": [

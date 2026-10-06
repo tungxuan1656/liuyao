@@ -1277,4 +1277,61 @@ assigned parents, all mapped to seven articles with760 separately cited claims. 
 237 are numbered units, seven openings, two closings,28 notes and two folio-only non-content
 units. No missing numbered passage is fabricated. Prior released records/citations are semantically
 unchanged. Source review/certification remain closed; global discovery and later feat-087 review
-are unresolved. The next authoring batch is feat-054, PDF231–269, not executed here.
+are unresolved. At feat-053 completion, feat-054, PDF231–269, was the next authoring batch; its source comparison is recorded below.
+
+## feat-054 source comparison
+
+The fingerprinted BPCT edition's PDF231–269 passages and all39 individual page images
+were inspected, along with boundary images230/270 and credits1–3. The four parent
+intervals remain231–250,251–262,263–265 and266–269. Printed labels are197–216,
+215–226,226–228 and228–231: they overlap/restart across units, not a single offset.
+There are no folio-only pages in this cohort. PDF265 contains chapter21 item8's
+closing commentary, not merely folio228. No diagrams or tables were observed.
+
+- Chapter20 has opening/1–73, followed by the separately headed **Thuyền Gia Trạch**
+  opening/1–20 within the same unit. Item73 has meaning on246 but no separate
+  commentary; the nested boat passages have no separate commentary. They must not
+  be conflated with chapter21. The nested mappings vary by passage: nhị is liệp mộc
+  in6 but rope in17; lục is rear rudder in3, chèo/mái che in11, rudder in19.
+- Chapter20 item7's phú says Đế Vượng whereas its commentary says Trường Sinh.
+  Item10's commentary elaborates the intervening-branch Môn/Lộ examples but gives
+  no separate account of the verse's house-exchange clause. Item43's rendering
+  changes the dragon/snake image. Item68's meaning prints a negative form involving
+  no Nhẫn where the phú/cách đọc describes accumulated Hình/Nhẫn;69 likewise has a
+  negative-form meaning. Keep the differences, not a repaired common sentence.
+- Chapter20 note2 explicitly remarks that the commentary uses natal nạp âm instead
+  of Thế. Note4, physically after31 on238, names29/30 and doubts the basis and original
+  authorship of the tinh sát account. Preserve both the printed numbers and location;
+  do not silently renumber the note or certify a later author. Note8 only gives two
+  Hàm Trì branch-group examples; it is not a complete calendar table.
+- The supplement has1–27 and29–47, with no28. Individual257 confirms the jump.
+  Item37 on259 has no independent Vietnamese meaning. Item1 has Thuỷ in the source
+  and meaning but Quỷ in the reading;47 has Quỷ in source/reading/commentary but Phụ
+  in the meaning. Note1 reports substituting Tuỳ for original Trục for metre.
+  Inline glosses at12/40 remain distinct from verse and commentary.
+- Supplement16/25/35/41 reject fixing mother/siblings/mother/father respectively to
+  nhị/tam/tứ/ngũ irrespective of Lục thân and question roles. Item36 retains the
+  qualification that ngũ khắc nhị can be favourable but moving to harm Trạch is not.
+  Item33's verse denies no-door while its commentary allows no main door or damage;
+  34 rejects the external-family inference attributed to Dịch Lâm Bổ Di.
+- Chapter21 has opening/1–8 and one note. Its original opening is about buying a
+  boat; the Vietnamese meaning says trading boat and note1 defines thuyền hộ as
+  people living on boats. Its commentary distinguishes trading/rental enquiries
+  from an owner's own enquiry using Gia Trạch. Phụ is boat or pilot according to
+  question, and Bạch Hổ's sail symbolism has both favourable and adverse conditions.
+- Chapter22 has opening/1–15 and three notes;15 has no commentary. Note1 reports a
+  missing original word and the translator's inserted Bản, not a recovered original.
+  Its historical roles are Thế proprietor, Ứng visitors, Tài working women and Quan
+  resident customers. Tử's motion, stillness and concealment are distinguished in6/10;
+  Quan sinh/hợp Thế is still favourable when moving in7. Item9's commentary literally
+  says supported Huynh still fails to suffice; no missing negative is invented.
+
+General compilation/phú/translation credits establish conventional attribution, not
+an individual author roster. The translator preface on3 reports moving Tân Tăng Gia
+Trạch here and mixing earlier/later material. Its verse and commentary therefore
+retain an uncredited-supplement attribution rather than certain Vương Hồng Tự/Lưu
+Bá Ôn authorship. Translator glosses use the general Vĩnh Cao credit with explicit
+uncertainty for unsigned inline notes. This is source comparison, not feat-088 audit,
+independent verification, corpus certification, rights clearance or predictive efficacy.
+All medical, safety, financial, gender/class, occupation and moral accusations remain
+attributed historical claims, not advice or authority over real people.
