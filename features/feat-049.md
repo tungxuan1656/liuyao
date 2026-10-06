@@ -25,7 +25,7 @@ New interpretation, calendar, or UI behavior.
 - [x] Replace the four legacy quẻ without changing stable IDs.
 - [x] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
 - [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -73,11 +73,15 @@ No speculative cap increase, PDF caching, split-bundle behavior or new UI is int
 - SHA-256 source checks and `validate:corpus --check-books --check`: baseline passed.
 - Knowledge package tests: passed 312 tests; newly authored batch contributes 11 cases.
 - Initial integration found typed `never[]` in empty legacy-array callbacks and the measured precache cap overflow. Both are bounded consequences of this batch and corrected; no unrelated failures were fixed.
-- Final full verification, package-export check and final diff inspection remain pending at this checkpoint.
+- Final `./init.sh`: passed format/fix, ESLint, TypeScript length checks, type-check, production builds and 493 tests (181 core + 312 knowledge). Existing font-resolution, sourcemap and large-chunk warnings remain unchanged/non-blocking.
+- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`: passed with 202 records, 2,398 claims, 2,662 citations, 64/64 quẻ and 384/384 positions. `pnpm format:check` and `git diff --check`: passed.
+- Built public package-export check from `apps/web` using Node and `@liuyao/knowledge`: passed deep equality for all five new records' claims/conditions/attributions, six-line structures and discrepancies (191 new claims), 202 released records, 64 stable compatibility quẻ and no local PDF paths. Generated SW explicitly includes `assets/index-DtlSMMtK.js` at 3,113,895 bytes below the new cap.
+- Prior generated 197 record objects and all 2,392 prior citation objects remain equal to initial HEAD; final semantic/diff inspection found no unrelated changes. All 153 local document routes in the changed feature/source/inventory documents resolve. Registry revision 7 binds inventory SHA-256 `6f0c22b08321ef9c0edf9811fcaebfd875fc20f77b63f0bb127fce74798084e5`.
+- Implementation checkpoint: `0bd626a7406f7e26b01e820f54ac8afef21574ee` (`feat(knowledge): review que 61-64 and BPCT sentences 49-56`). No push or PR.
 
 ## Handoff
 
-- State: active on `feat/049-reviewed-que-61-64-bpct-49-56`, initial HEAD `046149cebf108ca0cac0deb80b0c9a4af61513ad`; implementation complete, final verification pending.
+- State: done on `feat/049-reviewed-que-61-64-bpct-49-56`, initial HEAD `046149cebf108ca0cac0deb80b0c9a4af61513ad`; done after local acceptance and verification.
 - Evidence: Source-comparison records and generated coverage reach 64/64 quẻ and 384/384 positions per source book. Coverage `complete` remains false; audit has 84 current prior decisions and 197 covered prior claims, not approval of this batch.
 - Blockers: none for selected authored claims. Ambiguous/missing source text and broad audit/verification remain visible and outside released authority.
-- Next: Run final `./init.sh`, supplied-book/freshness validation and package-export checks; inspect the diff, then record completion. Subsequent intended authoring is feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100).
+- Next: Independent acceptance review of this branch. Subsequent intended authoring is feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100); selection/activation remains with the user. No corpus audit or certification approval is claimed.
