@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 254, "released": 254, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 6951, "missingCitationIds": [] },
-  "citations": { "total": 7197 },
+  "records": { "authored": 260, "released": 260, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 7138, "missingCitationIds": [] },
+  "citations": { "total": 7384 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -486,7 +486,13 @@
         "article-bpct-question-03",
         "article-bpct-question-04",
         "article-bpct-question-05",
-        "article-bpct-question-06"
+        "article-bpct-question-06",
+        "article-bpct-question-07",
+        "article-bpct-question-08",
+        "article-bpct-question-09",
+        "article-bpct-question-10",
+        "article-bpct-question-11",
+        "article-bpct-question-12"
       ]
     },
     {
@@ -1704,9 +1710,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 3761,
+        "required": 3955,
         "current": 84,
-        "missing": 3677,
+        "missing": 3871,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1714,9 +1720,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 2070 },
-        { "code": "missing-decision", "count": 3677 },
-        { "code": "released-claim-coverage-incomplete", "count": 6754 }
+        { "code": "unresolved-source-discovery", "count": 2258 },
+        { "code": "missing-decision", "count": 3871 },
+        { "code": "released-claim-coverage-incomplete", "count": 6941 }
       ]
     },
     "certification": {
@@ -1724,7 +1730,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 3761,
+        "required": 3955,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

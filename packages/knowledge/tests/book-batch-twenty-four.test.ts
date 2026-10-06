@@ -89,4 +89,21 @@ describe('feat-057 question, experiment, chart and source-layer locators', () =>
     expect(audit.complete).toBe(false);
     expect(registry.exclusions).toHaveLength(17);
   });
+
+  it('keeps failed timing, role differences and reused Tiến/Thoái evidence', () => {
+    expect(unit('bpct-question-10-answer').claimIds).toHaveLength(4);
+    expect(record(10).claims.some(c => c.id.endsWith('bpct-question-10-answer'))).toBe(false);
+    expect(text(7, 'example-10-experiment')).toMatch(/Canh Thân không thấy.*Nhâm Thân mới thấy/);
+    expect(text(7, 'example-14-experiment')).toMatch(/Ất Mão không mưa.*Tân Dậu/);
+    expect(text(7, 'example-03-chart')).toMatch(/Sửu Tử nhị ghi Thế.*không sửa/);
+    expect(text(7, 'note-14')).toMatch(/khác lý do tác giả/);
+    expect(text(9, 'example-07-experiment')).toMatch(/câu chuyện thứ hai riêng/);
+    expect(locators.some(u => u.id === 'bpct-question-09-example-06-chart')).toBe(false);
+    expect(locators.some(u => u.id === 'bpct-question-09-example-07-chart')).toBe(false);
+    expect(text(12, 'example-07-chart')).toMatch(/đều in Ứng.*giữ hai Ứng/);
+    expect(text(12, 'example-07-experiment')).toMatch(/đã biết tin.*đùa bói/);
+    expect(text(12, 'note-04')).toMatch(/không rõ ai hỏi.*không suy mẹ chết/);
+    expect(unit('bpct-question-12-note-02').pdfPages).toEqual([394, 394]);
+    expect(text(12, 'note-08')).toMatch(/khác tác giả hôm sau sinh/);
+  });
 });

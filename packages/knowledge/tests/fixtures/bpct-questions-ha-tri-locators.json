@@ -108,6 +108,123 @@
     "citationIds": ["citation-bpct-question-06-answer"]
   },
   {
+    "id": "bpct-question-07-query",
+    "parentId": "bpct-question-07",
+    "voice": "question",
+    "pdfPages": [378, 378],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-query"],
+    "citationIds": ["citation-bpct-question-07-query"]
+  },
+  {
+    "id": "bpct-question-07-answer",
+    "parentId": "bpct-question-07",
+    "voice": "conditional-rule",
+    "pdfPages": [378, 378],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-answer"],
+    "citationIds": ["citation-bpct-question-07-answer"]
+  },
+  {
+    "id": "bpct-question-08-query",
+    "parentId": "bpct-question-08",
+    "voice": "question",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-query"],
+    "citationIds": ["citation-bpct-question-08-query"]
+  },
+  {
+    "id": "bpct-question-08-answer",
+    "parentId": "bpct-question-08",
+    "voice": "conditional-rule",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-answer"],
+    "citationIds": ["citation-bpct-question-08-answer"]
+  },
+  {
+    "id": "bpct-question-09-query",
+    "parentId": "bpct-question-09",
+    "voice": "question",
+    "pdfPages": [385, 385],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-query"],
+    "citationIds": ["citation-bpct-question-09-query"]
+  },
+  {
+    "id": "bpct-question-09-answer",
+    "parentId": "bpct-question-09",
+    "voice": "conditional-rule",
+    "pdfPages": [385, 385],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-answer"],
+    "citationIds": ["citation-bpct-question-09-answer"]
+  },
+  {
+    "id": "bpct-question-10-query",
+    "parentId": "bpct-question-10",
+    "voice": "question",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-query"],
+    "citationIds": ["citation-bpct-question-10-query"]
+  },
+  {
+    "id": "bpct-question-10-answer",
+    "parentId": "bpct-question-10",
+    "voice": "conditional-rule-reused",
+    "pdfPages": [388, 388],
+    "recordId": "article-advancing-retreating-spirits",
+    "claimIds": [
+      "article-advancing-retreating-spirits-affected-role",
+      "article-advancing-retreating-spirits-advance-strength",
+      "article-advancing-retreating-spirits-retreat-strength",
+      "article-advancing-retreating-spirits-transition-obstacles"
+    ],
+    "citationIds": [
+      "citation-bpct-ch5-advancing-retreating-spirits",
+      "citation-bpct-part2-advance-retreat-conditions",
+      "citation-bpct-part2-advance-retreat-context"
+    ]
+  },
+  {
+    "id": "bpct-question-11-query",
+    "parentId": "bpct-question-11",
+    "voice": "question",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-query"],
+    "citationIds": ["citation-bpct-question-11-query"]
+  },
+  {
+    "id": "bpct-question-11-answer",
+    "parentId": "bpct-question-11",
+    "voice": "conditional-rule",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-answer"],
+    "citationIds": ["citation-bpct-question-11-answer"]
+  },
+  {
+    "id": "bpct-question-12-query",
+    "parentId": "bpct-question-12",
+    "voice": "question",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-query"],
+    "citationIds": ["citation-bpct-question-12-query"]
+  },
+  {
+    "id": "bpct-question-12-answer",
+    "parentId": "bpct-question-12",
+    "voice": "conditional-rule",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-answer"],
+    "citationIds": ["citation-bpct-question-12-answer"]
+  },
+  {
     "id": "bpct-question-01-example-01",
     "parentId": "bpct-question-01",
     "voice": "example-context",
@@ -1215,6 +1332,1446 @@
     "citationIds": ["citation-bpct-question-06-example-04-chart"]
   },
   {
+    "id": "bpct-question-07-example-01",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [378, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-01"],
+    "citationIds": ["citation-bpct-question-07-example-01"]
+  },
+  {
+    "id": "bpct-question-07-example-01-experiment",
+    "parentId": "bpct-question-07-example-01",
+    "voice": "attributed-experiment",
+    "pdfPages": [378, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-01-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-01-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-01-chart",
+    "parentId": "bpct-question-07-example-01",
+    "voice": "chart-observation",
+    "pdfPages": [378, 378],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-01-chart"],
+    "citationIds": ["citation-bpct-question-07-example-01-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-02",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-02"],
+    "citationIds": ["citation-bpct-question-07-example-02"]
+  },
+  {
+    "id": "bpct-question-07-example-02-experiment",
+    "parentId": "bpct-question-07-example-02",
+    "voice": "attributed-experiment",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-02-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-02-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-02-chart",
+    "parentId": "bpct-question-07-example-02",
+    "voice": "chart-observation",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-02-chart"],
+    "citationIds": ["citation-bpct-question-07-example-02-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-03",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-03"],
+    "citationIds": ["citation-bpct-question-07-example-03"]
+  },
+  {
+    "id": "bpct-question-07-example-03-experiment",
+    "parentId": "bpct-question-07-example-03",
+    "voice": "attributed-experiment",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-03-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-03-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-03-chart",
+    "parentId": "bpct-question-07-example-03",
+    "voice": "chart-observation",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-03-chart"],
+    "citationIds": ["citation-bpct-question-07-example-03-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-04",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-04"],
+    "citationIds": ["citation-bpct-question-07-example-04"]
+  },
+  {
+    "id": "bpct-question-07-example-04-experiment",
+    "parentId": "bpct-question-07-example-04",
+    "voice": "attributed-experiment",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-04-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-04-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-04-chart",
+    "parentId": "bpct-question-07-example-04",
+    "voice": "chart-observation",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-04-chart"],
+    "citationIds": ["citation-bpct-question-07-example-04-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-05",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-05"],
+    "citationIds": ["citation-bpct-question-07-example-05"]
+  },
+  {
+    "id": "bpct-question-07-example-05-experiment",
+    "parentId": "bpct-question-07-example-05",
+    "voice": "attributed-experiment",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-05-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-05-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-05-chart",
+    "parentId": "bpct-question-07-example-05",
+    "voice": "chart-observation",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-05-chart"],
+    "citationIds": ["citation-bpct-question-07-example-05-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-06",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-06"],
+    "citationIds": ["citation-bpct-question-07-example-06"]
+  },
+  {
+    "id": "bpct-question-07-example-06-experiment",
+    "parentId": "bpct-question-07-example-06",
+    "voice": "attributed-experiment",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-06-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-06-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-06-chart",
+    "parentId": "bpct-question-07-example-06",
+    "voice": "chart-observation",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-06-chart"],
+    "citationIds": ["citation-bpct-question-07-example-06-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-07",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-07"],
+    "citationIds": ["citation-bpct-question-07-example-07"]
+  },
+  {
+    "id": "bpct-question-07-example-07-experiment",
+    "parentId": "bpct-question-07-example-07",
+    "voice": "attributed-experiment",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-07-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-07-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-07-chart",
+    "parentId": "bpct-question-07-example-07",
+    "voice": "chart-observation",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-07-chart"],
+    "citationIds": ["citation-bpct-question-07-example-07-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-08",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [380, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-08"],
+    "citationIds": ["citation-bpct-question-07-example-08"]
+  },
+  {
+    "id": "bpct-question-07-example-08-experiment",
+    "parentId": "bpct-question-07-example-08",
+    "voice": "attributed-experiment",
+    "pdfPages": [380, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-08-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-08-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-08-chart",
+    "parentId": "bpct-question-07-example-08",
+    "voice": "chart-observation",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-08-chart"],
+    "citationIds": ["citation-bpct-question-07-example-08-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-09",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-09"],
+    "citationIds": ["citation-bpct-question-07-example-09"]
+  },
+  {
+    "id": "bpct-question-07-example-09-experiment",
+    "parentId": "bpct-question-07-example-09",
+    "voice": "attributed-experiment",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-09-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-09-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-09-chart",
+    "parentId": "bpct-question-07-example-09",
+    "voice": "chart-observation",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-09-chart"],
+    "citationIds": ["citation-bpct-question-07-example-09-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-10",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-10"],
+    "citationIds": ["citation-bpct-question-07-example-10"]
+  },
+  {
+    "id": "bpct-question-07-example-10-experiment",
+    "parentId": "bpct-question-07-example-10",
+    "voice": "attributed-experiment",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-10-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-10-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-10-chart",
+    "parentId": "bpct-question-07-example-10",
+    "voice": "chart-observation",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-10-chart"],
+    "citationIds": ["citation-bpct-question-07-example-10-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-11",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [381, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-11"],
+    "citationIds": ["citation-bpct-question-07-example-11"]
+  },
+  {
+    "id": "bpct-question-07-example-11-experiment",
+    "parentId": "bpct-question-07-example-11",
+    "voice": "attributed-experiment",
+    "pdfPages": [381, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-11-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-11-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-11-chart",
+    "parentId": "bpct-question-07-example-11",
+    "voice": "chart-observation",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-11-chart"],
+    "citationIds": ["citation-bpct-question-07-example-11-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-12",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-12"],
+    "citationIds": ["citation-bpct-question-07-example-12"]
+  },
+  {
+    "id": "bpct-question-07-example-12-experiment",
+    "parentId": "bpct-question-07-example-12",
+    "voice": "attributed-experiment",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-12-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-12-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-12-chart",
+    "parentId": "bpct-question-07-example-12",
+    "voice": "chart-observation",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-12-chart"],
+    "citationIds": ["citation-bpct-question-07-example-12-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-13",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-13"],
+    "citationIds": ["citation-bpct-question-07-example-13"]
+  },
+  {
+    "id": "bpct-question-07-example-13-experiment",
+    "parentId": "bpct-question-07-example-13",
+    "voice": "attributed-experiment",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-13-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-13-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-13-chart",
+    "parentId": "bpct-question-07-example-13",
+    "voice": "chart-observation",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-13-chart"],
+    "citationIds": ["citation-bpct-question-07-example-13-chart"]
+  },
+  {
+    "id": "bpct-question-07-example-14",
+    "parentId": "bpct-question-07",
+    "voice": "example-context",
+    "pdfPages": [382, 383],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-14"],
+    "citationIds": ["citation-bpct-question-07-example-14"]
+  },
+  {
+    "id": "bpct-question-07-example-14-experiment",
+    "parentId": "bpct-question-07-example-14",
+    "voice": "attributed-experiment",
+    "pdfPages": [382, 383],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-14-experiment"],
+    "citationIds": ["citation-bpct-question-07-example-14-experiment"]
+  },
+  {
+    "id": "bpct-question-07-example-14-chart",
+    "parentId": "bpct-question-07-example-14",
+    "voice": "chart-observation",
+    "pdfPages": [382, 382],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-example-14-chart"],
+    "citationIds": ["citation-bpct-question-07-example-14-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-01",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-01"],
+    "citationIds": ["citation-bpct-question-08-example-01"]
+  },
+  {
+    "id": "bpct-question-08-example-01-experiment",
+    "parentId": "bpct-question-08-example-01",
+    "voice": "attributed-experiment",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-01-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-01-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-01-chart",
+    "parentId": "bpct-question-08-example-01",
+    "voice": "chart-observation",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-01-chart"],
+    "citationIds": ["citation-bpct-question-08-example-01-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-02",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-02"],
+    "citationIds": ["citation-bpct-question-08-example-02"]
+  },
+  {
+    "id": "bpct-question-08-example-02-experiment",
+    "parentId": "bpct-question-08-example-02",
+    "voice": "attributed-experiment",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-02-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-02-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-02-chart",
+    "parentId": "bpct-question-08-example-02",
+    "voice": "chart-observation",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-02-chart"],
+    "citationIds": ["citation-bpct-question-08-example-02-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-03",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [383, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-03"],
+    "citationIds": ["citation-bpct-question-08-example-03"]
+  },
+  {
+    "id": "bpct-question-08-example-03-experiment",
+    "parentId": "bpct-question-08-example-03",
+    "voice": "attributed-experiment",
+    "pdfPages": [383, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-03-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-03-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-03-chart",
+    "parentId": "bpct-question-08-example-03",
+    "voice": "chart-observation",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-03-chart"],
+    "citationIds": ["citation-bpct-question-08-example-03-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-04",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-04"],
+    "citationIds": ["citation-bpct-question-08-example-04"]
+  },
+  {
+    "id": "bpct-question-08-example-04-experiment",
+    "parentId": "bpct-question-08-example-04",
+    "voice": "attributed-experiment",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-04-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-04-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-04-chart",
+    "parentId": "bpct-question-08-example-04",
+    "voice": "chart-observation",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-04-chart"],
+    "citationIds": ["citation-bpct-question-08-example-04-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-05",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-05"],
+    "citationIds": ["citation-bpct-question-08-example-05"]
+  },
+  {
+    "id": "bpct-question-08-example-05-experiment",
+    "parentId": "bpct-question-08-example-05",
+    "voice": "attributed-experiment",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-05-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-05-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-05-chart",
+    "parentId": "bpct-question-08-example-05",
+    "voice": "chart-observation",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-05-chart"],
+    "citationIds": ["citation-bpct-question-08-example-05-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-06",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [384, 385],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-06"],
+    "citationIds": ["citation-bpct-question-08-example-06"]
+  },
+  {
+    "id": "bpct-question-08-example-06-experiment",
+    "parentId": "bpct-question-08-example-06",
+    "voice": "attributed-experiment",
+    "pdfPages": [384, 385],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-06-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-06-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-06-chart",
+    "parentId": "bpct-question-08-example-06",
+    "voice": "chart-observation",
+    "pdfPages": [384, 384],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-06-chart"],
+    "citationIds": ["citation-bpct-question-08-example-06-chart"]
+  },
+  {
+    "id": "bpct-question-08-example-07",
+    "parentId": "bpct-question-08",
+    "voice": "example-context",
+    "pdfPages": [385, 385],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-07"],
+    "citationIds": ["citation-bpct-question-08-example-07"]
+  },
+  {
+    "id": "bpct-question-08-example-07-experiment",
+    "parentId": "bpct-question-08-example-07",
+    "voice": "attributed-experiment",
+    "pdfPages": [385, 385],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-07-experiment"],
+    "citationIds": ["citation-bpct-question-08-example-07-experiment"]
+  },
+  {
+    "id": "bpct-question-08-example-07-chart",
+    "parentId": "bpct-question-08-example-07",
+    "voice": "chart-observation",
+    "pdfPages": [385, 385],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-example-07-chart"],
+    "citationIds": ["citation-bpct-question-08-example-07-chart"]
+  },
+  {
+    "id": "bpct-question-09-example-01",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-01"],
+    "citationIds": ["citation-bpct-question-09-example-01"]
+  },
+  {
+    "id": "bpct-question-09-example-01-experiment",
+    "parentId": "bpct-question-09-example-01",
+    "voice": "attributed-experiment",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-01-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-01-experiment"]
+  },
+  {
+    "id": "bpct-question-09-example-01-chart",
+    "parentId": "bpct-question-09-example-01",
+    "voice": "chart-observation",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-01-chart"],
+    "citationIds": ["citation-bpct-question-09-example-01-chart"]
+  },
+  {
+    "id": "bpct-question-09-example-02",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-02"],
+    "citationIds": ["citation-bpct-question-09-example-02"]
+  },
+  {
+    "id": "bpct-question-09-example-02-experiment",
+    "parentId": "bpct-question-09-example-02",
+    "voice": "attributed-experiment",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-02-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-02-experiment"]
+  },
+  {
+    "id": "bpct-question-09-example-02-chart",
+    "parentId": "bpct-question-09-example-02",
+    "voice": "chart-observation",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-02-chart"],
+    "citationIds": ["citation-bpct-question-09-example-02-chart"]
+  },
+  {
+    "id": "bpct-question-09-example-03",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-03"],
+    "citationIds": ["citation-bpct-question-09-example-03"]
+  },
+  {
+    "id": "bpct-question-09-example-03-experiment",
+    "parentId": "bpct-question-09-example-03",
+    "voice": "attributed-experiment",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-03-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-03-experiment"]
+  },
+  {
+    "id": "bpct-question-09-example-03-chart",
+    "parentId": "bpct-question-09-example-03",
+    "voice": "chart-observation",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-03-chart"],
+    "citationIds": ["citation-bpct-question-09-example-03-chart"]
+  },
+  {
+    "id": "bpct-question-09-example-04",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [386, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-04"],
+    "citationIds": ["citation-bpct-question-09-example-04"]
+  },
+  {
+    "id": "bpct-question-09-example-04-experiment",
+    "parentId": "bpct-question-09-example-04",
+    "voice": "attributed-experiment",
+    "pdfPages": [386, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-04-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-04-experiment"]
+  },
+  {
+    "id": "bpct-question-09-example-04-chart",
+    "parentId": "bpct-question-09-example-04",
+    "voice": "chart-observation",
+    "pdfPages": [386, 386],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-04-chart"],
+    "citationIds": ["citation-bpct-question-09-example-04-chart"]
+  },
+  {
+    "id": "bpct-question-09-example-05",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-05"],
+    "citationIds": ["citation-bpct-question-09-example-05"]
+  },
+  {
+    "id": "bpct-question-09-example-05-experiment",
+    "parentId": "bpct-question-09-example-05",
+    "voice": "attributed-experiment",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-05-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-05-experiment"]
+  },
+  {
+    "id": "bpct-question-09-example-05-chart",
+    "parentId": "bpct-question-09-example-05",
+    "voice": "chart-observation",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-05-chart"],
+    "citationIds": ["citation-bpct-question-09-example-05-chart"]
+  },
+  {
+    "id": "bpct-question-09-example-06",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-06"],
+    "citationIds": ["citation-bpct-question-09-example-06"]
+  },
+  {
+    "id": "bpct-question-09-example-06-experiment",
+    "parentId": "bpct-question-09-example-06",
+    "voice": "attributed-experiment",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-06-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-06-experiment"]
+  },
+  {
+    "id": "bpct-question-09-example-07",
+    "parentId": "bpct-question-09",
+    "voice": "example-context",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-07"],
+    "citationIds": ["citation-bpct-question-09-example-07"]
+  },
+  {
+    "id": "bpct-question-09-example-07-experiment",
+    "parentId": "bpct-question-09-example-07",
+    "voice": "attributed-experiment",
+    "pdfPages": [387, 387],
+    "recordId": "article-bpct-question-09",
+    "claimIds": ["article-bpct-question-09-bpct-question-09-example-07-experiment"],
+    "citationIds": ["citation-bpct-question-09-example-07-experiment"]
+  },
+  {
+    "id": "bpct-question-10-example-01",
+    "parentId": "bpct-question-10",
+    "voice": "example-context",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-01"],
+    "citationIds": ["citation-bpct-question-10-example-01"]
+  },
+  {
+    "id": "bpct-question-10-example-01-experiment",
+    "parentId": "bpct-question-10-example-01",
+    "voice": "attributed-experiment",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-01-experiment"],
+    "citationIds": ["citation-bpct-question-10-example-01-experiment"]
+  },
+  {
+    "id": "bpct-question-10-example-01-chart",
+    "parentId": "bpct-question-10-example-01",
+    "voice": "chart-observation",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-01-chart"],
+    "citationIds": ["citation-bpct-question-10-example-01-chart"]
+  },
+  {
+    "id": "bpct-question-10-example-02",
+    "parentId": "bpct-question-10",
+    "voice": "example-context",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-02"],
+    "citationIds": ["citation-bpct-question-10-example-02"]
+  },
+  {
+    "id": "bpct-question-10-example-02-experiment",
+    "parentId": "bpct-question-10-example-02",
+    "voice": "attributed-experiment",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-02-experiment"],
+    "citationIds": ["citation-bpct-question-10-example-02-experiment"]
+  },
+  {
+    "id": "bpct-question-10-example-02-chart",
+    "parentId": "bpct-question-10-example-02",
+    "voice": "chart-observation",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-02-chart"],
+    "citationIds": ["citation-bpct-question-10-example-02-chart"]
+  },
+  {
+    "id": "bpct-question-10-example-03",
+    "parentId": "bpct-question-10",
+    "voice": "example-context",
+    "pdfPages": [388, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-03"],
+    "citationIds": ["citation-bpct-question-10-example-03"]
+  },
+  {
+    "id": "bpct-question-10-example-03-experiment",
+    "parentId": "bpct-question-10-example-03",
+    "voice": "attributed-experiment",
+    "pdfPages": [388, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-03-experiment"],
+    "citationIds": ["citation-bpct-question-10-example-03-experiment"]
+  },
+  {
+    "id": "bpct-question-10-example-03-chart",
+    "parentId": "bpct-question-10-example-03",
+    "voice": "chart-observation",
+    "pdfPages": [388, 388],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-03-chart"],
+    "citationIds": ["citation-bpct-question-10-example-03-chart"]
+  },
+  {
+    "id": "bpct-question-10-example-04",
+    "parentId": "bpct-question-10",
+    "voice": "example-context",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-04"],
+    "citationIds": ["citation-bpct-question-10-example-04"]
+  },
+  {
+    "id": "bpct-question-10-example-04-experiment",
+    "parentId": "bpct-question-10-example-04",
+    "voice": "attributed-experiment",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-04-experiment"],
+    "citationIds": ["citation-bpct-question-10-example-04-experiment"]
+  },
+  {
+    "id": "bpct-question-10-example-04-chart",
+    "parentId": "bpct-question-10-example-04",
+    "voice": "chart-observation",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-04-chart"],
+    "citationIds": ["citation-bpct-question-10-example-04-chart"]
+  },
+  {
+    "id": "bpct-question-10-example-05",
+    "parentId": "bpct-question-10",
+    "voice": "example-context",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-05"],
+    "citationIds": ["citation-bpct-question-10-example-05"]
+  },
+  {
+    "id": "bpct-question-10-example-05-experiment",
+    "parentId": "bpct-question-10-example-05",
+    "voice": "attributed-experiment",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-05-experiment"],
+    "citationIds": ["citation-bpct-question-10-example-05-experiment"]
+  },
+  {
+    "id": "bpct-question-10-example-05-chart",
+    "parentId": "bpct-question-10-example-05",
+    "voice": "chart-observation",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-10",
+    "claimIds": ["article-bpct-question-10-bpct-question-10-example-05-chart"],
+    "citationIds": ["citation-bpct-question-10-example-05-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-01",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [389, 390],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-01"],
+    "citationIds": ["citation-bpct-question-11-example-01"]
+  },
+  {
+    "id": "bpct-question-11-example-01-experiment",
+    "parentId": "bpct-question-11-example-01",
+    "voice": "attributed-experiment",
+    "pdfPages": [389, 390],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-01-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-01-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-01-chart",
+    "parentId": "bpct-question-11-example-01",
+    "voice": "chart-observation",
+    "pdfPages": [389, 389],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-01-chart"],
+    "citationIds": ["citation-bpct-question-11-example-01-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-02",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [390, 390],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-02"],
+    "citationIds": ["citation-bpct-question-11-example-02"]
+  },
+  {
+    "id": "bpct-question-11-example-02-experiment",
+    "parentId": "bpct-question-11-example-02",
+    "voice": "attributed-experiment",
+    "pdfPages": [390, 390],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-02-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-02-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-02-chart",
+    "parentId": "bpct-question-11-example-02",
+    "voice": "chart-observation",
+    "pdfPages": [390, 390],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-02-chart"],
+    "citationIds": ["citation-bpct-question-11-example-02-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-03",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [390, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-03"],
+    "citationIds": ["citation-bpct-question-11-example-03"]
+  },
+  {
+    "id": "bpct-question-11-example-03-experiment",
+    "parentId": "bpct-question-11-example-03",
+    "voice": "attributed-experiment",
+    "pdfPages": [390, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-03-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-03-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-03-chart",
+    "parentId": "bpct-question-11-example-03",
+    "voice": "chart-observation",
+    "pdfPages": [390, 390],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-03-chart"],
+    "citationIds": ["citation-bpct-question-11-example-03-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-04",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-04"],
+    "citationIds": ["citation-bpct-question-11-example-04"]
+  },
+  {
+    "id": "bpct-question-11-example-04-experiment",
+    "parentId": "bpct-question-11-example-04",
+    "voice": "attributed-experiment",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-04-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-04-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-04-chart",
+    "parentId": "bpct-question-11-example-04",
+    "voice": "chart-observation",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-04-chart"],
+    "citationIds": ["citation-bpct-question-11-example-04-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-05",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-05"],
+    "citationIds": ["citation-bpct-question-11-example-05"]
+  },
+  {
+    "id": "bpct-question-11-example-05-experiment",
+    "parentId": "bpct-question-11-example-05",
+    "voice": "attributed-experiment",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-05-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-05-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-05-chart",
+    "parentId": "bpct-question-11-example-05",
+    "voice": "chart-observation",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-05-chart"],
+    "citationIds": ["citation-bpct-question-11-example-05-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-06",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [391, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-06"],
+    "citationIds": ["citation-bpct-question-11-example-06"]
+  },
+  {
+    "id": "bpct-question-11-example-06-experiment",
+    "parentId": "bpct-question-11-example-06",
+    "voice": "attributed-experiment",
+    "pdfPages": [391, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-06-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-06-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-06-chart",
+    "parentId": "bpct-question-11-example-06",
+    "voice": "chart-observation",
+    "pdfPages": [391, 391],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-06-chart"],
+    "citationIds": ["citation-bpct-question-11-example-06-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-07",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [392, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-07"],
+    "citationIds": ["citation-bpct-question-11-example-07"]
+  },
+  {
+    "id": "bpct-question-11-example-07-experiment",
+    "parentId": "bpct-question-11-example-07",
+    "voice": "attributed-experiment",
+    "pdfPages": [392, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-07-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-07-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-07-chart",
+    "parentId": "bpct-question-11-example-07",
+    "voice": "chart-observation",
+    "pdfPages": [392, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-07-chart"],
+    "citationIds": ["citation-bpct-question-11-example-07-chart"]
+  },
+  {
+    "id": "bpct-question-11-example-08",
+    "parentId": "bpct-question-11",
+    "voice": "example-context",
+    "pdfPages": [392, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-08"],
+    "citationIds": ["citation-bpct-question-11-example-08"]
+  },
+  {
+    "id": "bpct-question-11-example-08-experiment",
+    "parentId": "bpct-question-11-example-08",
+    "voice": "attributed-experiment",
+    "pdfPages": [392, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-08-experiment"],
+    "citationIds": ["citation-bpct-question-11-example-08-experiment"]
+  },
+  {
+    "id": "bpct-question-11-example-08-chart",
+    "parentId": "bpct-question-11-example-08",
+    "voice": "chart-observation",
+    "pdfPages": [392, 392],
+    "recordId": "article-bpct-question-11",
+    "claimIds": ["article-bpct-question-11-bpct-question-11-example-08-chart"],
+    "citationIds": ["citation-bpct-question-11-example-08-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-01",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-01"],
+    "citationIds": ["citation-bpct-question-12-example-01"]
+  },
+  {
+    "id": "bpct-question-12-example-01-experiment",
+    "parentId": "bpct-question-12-example-01",
+    "voice": "attributed-experiment",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-01-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-01-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-01-chart",
+    "parentId": "bpct-question-12-example-01",
+    "voice": "chart-observation",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-01-chart"],
+    "citationIds": ["citation-bpct-question-12-example-01-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-02",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [393, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-02"],
+    "citationIds": ["citation-bpct-question-12-example-02"]
+  },
+  {
+    "id": "bpct-question-12-example-02-experiment",
+    "parentId": "bpct-question-12-example-02",
+    "voice": "attributed-experiment",
+    "pdfPages": [393, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-02-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-02-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-02-chart",
+    "parentId": "bpct-question-12-example-02",
+    "voice": "chart-observation",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-02-chart"],
+    "citationIds": ["citation-bpct-question-12-example-02-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-03",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-03"],
+    "citationIds": ["citation-bpct-question-12-example-03"]
+  },
+  {
+    "id": "bpct-question-12-example-03-experiment",
+    "parentId": "bpct-question-12-example-03",
+    "voice": "attributed-experiment",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-03-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-03-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-03-chart",
+    "parentId": "bpct-question-12-example-03",
+    "voice": "chart-observation",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-03-chart"],
+    "citationIds": ["citation-bpct-question-12-example-03-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-04",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-04"],
+    "citationIds": ["citation-bpct-question-12-example-04"]
+  },
+  {
+    "id": "bpct-question-12-example-04-experiment",
+    "parentId": "bpct-question-12-example-04",
+    "voice": "attributed-experiment",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-04-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-04-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-04-chart",
+    "parentId": "bpct-question-12-example-04",
+    "voice": "chart-observation",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-04-chart"],
+    "citationIds": ["citation-bpct-question-12-example-04-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-05",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [394, 395],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-05"],
+    "citationIds": ["citation-bpct-question-12-example-05"]
+  },
+  {
+    "id": "bpct-question-12-example-05-experiment",
+    "parentId": "bpct-question-12-example-05",
+    "voice": "attributed-experiment",
+    "pdfPages": [394, 395],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-05-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-05-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-05-chart",
+    "parentId": "bpct-question-12-example-05",
+    "voice": "chart-observation",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-05-chart"],
+    "citationIds": ["citation-bpct-question-12-example-05-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-06",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [395, 395],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-06"],
+    "citationIds": ["citation-bpct-question-12-example-06"]
+  },
+  {
+    "id": "bpct-question-12-example-06-experiment",
+    "parentId": "bpct-question-12-example-06",
+    "voice": "attributed-experiment",
+    "pdfPages": [395, 395],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-06-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-06-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-06-chart",
+    "parentId": "bpct-question-12-example-06",
+    "voice": "chart-observation",
+    "pdfPages": [395, 395],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-06-chart"],
+    "citationIds": ["citation-bpct-question-12-example-06-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-07",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-07"],
+    "citationIds": ["citation-bpct-question-12-example-07"]
+  },
+  {
+    "id": "bpct-question-12-example-07-experiment",
+    "parentId": "bpct-question-12-example-07",
+    "voice": "attributed-experiment",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-07-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-07-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-07-chart",
+    "parentId": "bpct-question-12-example-07",
+    "voice": "chart-observation",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-07-chart"],
+    "citationIds": ["citation-bpct-question-12-example-07-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-08",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-08"],
+    "citationIds": ["citation-bpct-question-12-example-08"]
+  },
+  {
+    "id": "bpct-question-12-example-08-experiment",
+    "parentId": "bpct-question-12-example-08",
+    "voice": "attributed-experiment",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-08-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-08-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-08-chart",
+    "parentId": "bpct-question-12-example-08",
+    "voice": "chart-observation",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-08-chart"],
+    "citationIds": ["citation-bpct-question-12-example-08-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-09",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-09"],
+    "citationIds": ["citation-bpct-question-12-example-09"]
+  },
+  {
+    "id": "bpct-question-12-example-09-experiment",
+    "parentId": "bpct-question-12-example-09",
+    "voice": "attributed-experiment",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-09-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-09-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-09-chart",
+    "parentId": "bpct-question-12-example-09",
+    "voice": "chart-observation",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-09-chart"],
+    "citationIds": ["citation-bpct-question-12-example-09-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-10",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-10"],
+    "citationIds": ["citation-bpct-question-12-example-10"]
+  },
+  {
+    "id": "bpct-question-12-example-10-experiment",
+    "parentId": "bpct-question-12-example-10",
+    "voice": "attributed-experiment",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-10-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-10-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-10-chart",
+    "parentId": "bpct-question-12-example-10",
+    "voice": "chart-observation",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-10-chart"],
+    "citationIds": ["citation-bpct-question-12-example-10-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-11",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-11"],
+    "citationIds": ["citation-bpct-question-12-example-11"]
+  },
+  {
+    "id": "bpct-question-12-example-11-experiment",
+    "parentId": "bpct-question-12-example-11",
+    "voice": "attributed-experiment",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-11-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-11-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-11-chart",
+    "parentId": "bpct-question-12-example-11",
+    "voice": "chart-observation",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-11-chart"],
+    "citationIds": ["citation-bpct-question-12-example-11-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-12",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [397, 398],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-12"],
+    "citationIds": ["citation-bpct-question-12-example-12"]
+  },
+  {
+    "id": "bpct-question-12-example-12-experiment",
+    "parentId": "bpct-question-12-example-12",
+    "voice": "attributed-experiment",
+    "pdfPages": [397, 398],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-12-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-12-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-12-chart",
+    "parentId": "bpct-question-12-example-12",
+    "voice": "chart-observation",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-12-chart"],
+    "citationIds": ["citation-bpct-question-12-example-12-chart"]
+  },
+  {
+    "id": "bpct-question-12-example-13",
+    "parentId": "bpct-question-12",
+    "voice": "example-context",
+    "pdfPages": [398, 398],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-13"],
+    "citationIds": ["citation-bpct-question-12-example-13"]
+  },
+  {
+    "id": "bpct-question-12-example-13-experiment",
+    "parentId": "bpct-question-12-example-13",
+    "voice": "attributed-experiment",
+    "pdfPages": [398, 398],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-13-experiment"],
+    "citationIds": ["citation-bpct-question-12-example-13-experiment"]
+  },
+  {
+    "id": "bpct-question-12-example-13-chart",
+    "parentId": "bpct-question-12-example-13",
+    "voice": "chart-observation",
+    "pdfPages": [398, 398],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-example-13-chart"],
+    "citationIds": ["citation-bpct-question-12-example-13-chart"]
+  },
+  {
     "id": "bpct-question-01-note-01",
     "parentId": "bpct-question-01",
     "voice": "translator-note",
@@ -1303,6 +2860,150 @@
     "recordId": "article-bpct-question-05",
     "claimIds": ["article-bpct-question-05-bpct-question-05-note-10"],
     "citationIds": ["citation-bpct-question-05-note-10"]
+  },
+  {
+    "id": "bpct-question-07-note-11",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-11"],
+    "citationIds": ["citation-bpct-question-07-note-11"]
+  },
+  {
+    "id": "bpct-question-07-note-12",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-12"],
+    "citationIds": ["citation-bpct-question-07-note-12"]
+  },
+  {
+    "id": "bpct-question-07-note-13",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [379, 379],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-13"],
+    "citationIds": ["citation-bpct-question-07-note-13"]
+  },
+  {
+    "id": "bpct-question-07-note-14",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-14"],
+    "citationIds": ["citation-bpct-question-07-note-14"]
+  },
+  {
+    "id": "bpct-question-07-note-15",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-15"],
+    "citationIds": ["citation-bpct-question-07-note-15"]
+  },
+  {
+    "id": "bpct-question-07-note-16",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [380, 380],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-16"],
+    "citationIds": ["citation-bpct-question-07-note-16"]
+  },
+  {
+    "id": "bpct-question-07-note-17",
+    "parentId": "bpct-question-07",
+    "voice": "translator-note",
+    "pdfPages": [381, 381],
+    "recordId": "article-bpct-question-07",
+    "claimIds": ["article-bpct-question-07-bpct-question-07-note-17"],
+    "citationIds": ["citation-bpct-question-07-note-17"]
+  },
+  {
+    "id": "bpct-question-08-note-18",
+    "parentId": "bpct-question-08",
+    "voice": "translator-note",
+    "pdfPages": [383, 383],
+    "recordId": "article-bpct-question-08",
+    "claimIds": ["article-bpct-question-08-bpct-question-08-note-18"],
+    "citationIds": ["citation-bpct-question-08-note-18"]
+  },
+  {
+    "id": "bpct-question-12-note-01",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [393, 393],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-01"],
+    "citationIds": ["citation-bpct-question-12-note-01"]
+  },
+  {
+    "id": "bpct-question-12-note-02",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-02"],
+    "citationIds": ["citation-bpct-question-12-note-02"]
+  },
+  {
+    "id": "bpct-question-12-note-03",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-03"],
+    "citationIds": ["citation-bpct-question-12-note-03"]
+  },
+  {
+    "id": "bpct-question-12-note-04",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [394, 394],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-04"],
+    "citationIds": ["citation-bpct-question-12-note-04"]
+  },
+  {
+    "id": "bpct-question-12-note-05",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [395, 395],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-05"],
+    "citationIds": ["citation-bpct-question-12-note-05"]
+  },
+  {
+    "id": "bpct-question-12-note-06",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-06"],
+    "citationIds": ["citation-bpct-question-12-note-06"]
+  },
+  {
+    "id": "bpct-question-12-note-07",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [396, 396],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-07"],
+    "citationIds": ["citation-bpct-question-12-note-07"]
+  },
+  {
+    "id": "bpct-question-12-note-08",
+    "parentId": "bpct-question-12",
+    "voice": "translator-note",
+    "pdfPages": [397, 397],
+    "recordId": "article-bpct-question-12",
+    "claimIds": ["article-bpct-question-12-bpct-question-12-note-08"],
+    "citationIds": ["citation-bpct-question-12-note-08"]
   },
   {
     "id": "bpct-questions-heading",
