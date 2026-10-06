@@ -149,6 +149,8 @@ describe('feat-058 BPCT casting supplements and criticism source dispositions', 
       locators.filter(u => u.id.startsWith('bpct-casting-VI-') && u.voice === 'meaning'),
     ).toHaveLength(11);
     expect(unit('bpct-casting-VI-01-verse').pdfPages).toEqual([451, 452]);
+    expect(unit('bpct-casting-VI-03-framing').pdfPages).toEqual([452, 453]);
+    expect(unit('bpct-casting-VI-06-framing').pdfPages).toEqual([454, 455]);
     expect(unit('bpct-casting-VI-03-verse').pdfPages).toEqual([453, 453]);
     expect(unit('bpct-casting-VI-06-verse').pdfPages).toEqual([455, 455]);
     expect(text('bpct-casting-VI-07-note-14')).toMatch(/Không mở rộng hai ví dụ/);

@@ -105,8 +105,15 @@ New interpretation, calendar, or UI behavior.
 - [x] `validate:corpus --check-books --check`, production export/preservation check,
       and `git diff --check` pass. Evidence: `/tmp/feat058/init-final.log`,
       `/tmp/feat058/corpus-check.log`, `/tmp/feat058/focused.log`, `/tmp/feat058/exports.log`.
-      Asset `index-DfAP_UaH.js`:10,384,705 bytes;10,485,760-byte cap;101,055 headroom;
+      Asset `index-CrXjOlkh.js`:10,384,705 bytes;10,485,760-byte cap;101,055 headroom;
       18 precache entries (build total10766.10KiB); PWA config byte-identical to activation.
+
+- [x] Final locator self-check extends VI-03 framing to452–453 and VI-06 framing
+      to454–455: headings precede their Vietnamese introductory propositions. Verse
+      locators remain453 and455 respectively. Framing correction full init passes4499
+      tests; knowledge99.13s. Bundle byte size/cap/headroom remain unchanged, fresh asset
+      `index-CrXjOlkh.js`; evidence `/tmp/feat058/framing-init.log`,
+      `/tmp/feat058/framing-corpus.log`, `/tmp/feat058/framing-exports.log`.
 
 ## Implementation evidence and limitations
 
