@@ -4,8 +4,8 @@
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
   "records": { "authored": 231, "released": 231, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 5121, "missingCitationIds": [] },
-  "citations": { "total": 5367 },
+  "claims": { "total": 5120, "missingCitationIds": [] },
+  "citations": { "total": 5366 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -1675,7 +1675,7 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-053: BPCT chương13–19, PDF166–230 (Thất Thoát, Xuất Hành, Cầu Sư, Học Quán, Hôn Nhân, Sản Dục, Tiến Nhân Khẩu). Feat-052 đã có tóm tắt đối chiếu nguồn cho chương7, Niên Thời không đánh số, chương9–12, PDF101–165; phần chèn đời vận giữ riêng, trang165 chỉ số in139. Các vai hỏi, khác lớp nghĩa/lời bình và chú thích phản bác vẫn được giữ. Chưa có kiểm chứng độc lập, phép lịch, bộ phân loại, diễn giải tự động hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
+    "note": "Dự kiến feat-054: BPCT chương20 và bổ túc Gia Trạch, chương21 Châu Thuyền, chương22 Xướng Gia, PDF231–269. Feat-053 đã có tóm tắt đối chiếu nguồn chương13–19, PDF166–230, giữ vai hỏi, lớp phú/nghĩa/lời bình,28 chú và khác biệt nguồn. Trang190/222 chỉ số in161/190, không phải đoạn tiếp; nhãn mở23 và khoảng số16/31/41 không được phục dựng. Chưa có kiểm chứng độc lập, phép lịch, diễn giải tự động, hướng dẫn sức khoẻ/an toàn/tài chính/xã hội hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
   },
   "audit": {
     "sourceReview": {
@@ -1693,7 +1693,7 @@
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1300 },
         { "code": "missing-decision", "count": 2884 },
-        { "code": "released-claim-coverage-incomplete", "count": 4924 }
+        { "code": "released-claim-coverage-incomplete", "count": 4923 }
       ]
     },
     "certification": {

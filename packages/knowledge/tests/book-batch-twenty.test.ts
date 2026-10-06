@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import locators from './fixtures/bpct-loss-household-locators.json';
 import registry from '../../../docs/reviews/knowledge/expected-units.json';
+import citations from '../data/citations/batch-twenty-advanced.json';
+import manifest from '../data/manifest.json';
+import audit from '../reports/audit-status.json';
+import coverage from '../reports/coverage.json';
 import { getBookCitation, getBookRecord } from '../src/index';
 
 const chapters = [
@@ -67,13 +71,13 @@ describe('feat-053 independently mapped source obligations', () => {
     });
     expect(locators.find(u => u.id === 'bpct-ch18-42')?.commentaryPages).toEqual([221, 221]);
     expect(locators.find(u => u.id === 'bpct-ch14-07')?.meaningPages).toBeNull();
+    expect(locators.find(u => u.id === 'bpct-ch13-34')?.meaningPages).toBeNull();
   });
 });
 
-// Checkpoints enter the manifest only after passage comparison; pending maps are not releases.
+// Every mapped chapter must now be released; a missing chapter must not silently skip tests.
 for (const [chapter, name] of chapters) {
-  const record = getBookRecord(`article-bpct-chapter-${name}`);
-  if (!record) continue;
+  const record = getBookRecord(`article-bpct-chapter-${name}`)!;
   describe(`feat-053 source-compared chapter ${chapter}`, () => {
     it.each(locators.filter(u => u.chapter === chapter))(
       'projects every actual layer of $id with its exact locator and attribution',
@@ -107,6 +111,19 @@ for (const [chapter, name] of chapters) {
           expect(claim!.conditions?.join(' ')).toMatch(/không dùng làm phép lịch/);
           expect(claim!.text).not.toMatch(/[\p{Script=Han}]/u);
           expect(claim!.attribution?.author).toBeTruthy();
+          if (suffix === 'verse') {
+            expect(claim!.attribution?.author).toMatch(/tín chỉ chung Lưu Bá Ôn/);
+            expect(claim!.attribution?.via).toMatch(/chưa xác lập tác giả riêng/);
+          } else if (suffix === 'rendering') {
+            expect(claim!.attribution?.author).toBe('Vĩnh Cao — nghĩa tiếng Việt');
+          } else if (suffix === 'commentary') {
+            expect(claim!.attribution?.author).toBe('Vương Hồng Tự');
+            expect(claim!.attribution?.via).toMatch(/không bảo đảm từng đoạn/);
+          } else if (suffix === 'discussion') {
+            expect(claim!.attribution?.author).toBe('Vĩnh Cao');
+          } else {
+            expect(claim!.attribution?.author).toMatch(/không ký tên/);
+          }
           for (const id of claim!.citationIds) {
             const citation = getBookCitation(id)!;
             expect(citation.editionId).toBe('edition-bpct-supplied');
@@ -114,6 +131,10 @@ for (const [chapter, name] of chapters) {
             expect(citation.attributedTo).toBe(claim!.attribution?.author);
             expect([citation.location.pdfPageStart, citation.location.pdfPageEnd]).toEqual(pages);
             expect(record.review.evidenceCitationIds).toContain(id);
+            const offset = chapter + 14;
+            expect([citation.location.printedPageStart, citation.location.printedPageEnd]).toEqual(
+              pages.map(p => String(p - offset)),
+            );
           }
         }
         expect(registry.groups.find(g => g.id === unit.id)?.recordIds).toContain(record.id);
@@ -228,5 +249,48 @@ describe('feat-053 childbirth and household non-authority', () => {
     expect(text(household, 'bpct-ch19-30-commentary')).toMatch(
       /riêng nhận trẻ bị bỏ.*không dùng quẻ/i,
     );
+  });
+});
+
+describe('feat-053 final release accounting', () => {
+  it('requires seven releases, all760 distinct claim citations and all283 unresolved obligations', () => {
+    expect(locators).toHaveLength(276);
+    expect(locators.filter(u => u.id.includes('-note-'))).toHaveLength(28);
+    expect(locators.filter(u => u.kind === 'non-content')).toHaveLength(2);
+    const records = chapters.map(([, name]) => getBookRecord(`article-bpct-chapter-${name}`)!);
+    expect(records.every(Boolean)).toBe(true);
+    const ids = records.flatMap(r => r.claims.flatMap(c => c.citationIds));
+    expect(ids).toHaveLength(760);
+    expect(new Set(ids).size).toBe(760);
+    expect(citations.citations.map(c => c.id).sort()).toEqual([...ids].sort());
+    const expectedClaims = locators.reduce(
+      (sum, u) =>
+        sum + [u.originalReadingPages, u.meaningPages, u.commentaryPages].filter(Boolean).length,
+      0,
+    );
+    expect(records.reduce((sum, r) => sum + r.claims.length, 0)).toBe(expectedClaims);
+    for (const record of records) {
+      expect(manifest.releaseIds).toContain(record.id);
+      expect(record.review.method).toBe('source-comparison');
+      expect(record.review.status).toBe('reviewed');
+      expect(record.review.note).toMatch(/Not individual full-size review/);
+      expect(record.review.evidenceCitationIds).toContain('citation-bpct-front-credits-phu');
+      expect(record.review.evidenceCitationIds).toContain(
+        'citation-bpct-front-credits-translation',
+      );
+      expect(JSON.stringify(record)).not.toMatch(/docs\/books\/|\.pdf["']/i);
+      expect(record).not.toHaveProperty('tables');
+      expect(record).not.toHaveProperty('figures');
+    }
+    expect(registry.groups.filter(g => g.authorFeatureId === 'feat-053')).toHaveLength(283);
+    expect(audit.featureCoverage['feat-087']).toEqual({ required: 283, current: 0 });
+    expect(registry.exclusions).toHaveLength(17);
+    expect(audit.complete).toBe(false);
+    expect(audit.gates.sourceReview.status).toBe('closed');
+    expect(audit.gates.certification.status).toBe('closed');
+    expect(coverage.records.released).toBe(231);
+    expect(coverage.claims.total).toBe(5120);
+    expect(coverage.citations.total).toBe(5366);
+    expect(manifest.nextBatch.note).toMatch(/feat-054.*PDF231–269/);
   });
 });

@@ -1156,7 +1156,7 @@ legal, medical or religious advice. All prior selected records remain unchanged.
 The [loss article](../../packages/knowledge/data/liuyao/bpct-chapter-thirteen-loss.json)
 compares PDF166–175 (printed139–148), all37 numbered clauses, opening/closing and five
 translator notes. The exact BPCT SHA and467-page count were checked. Full extracted
-PDF166–230 passages and contact sheets165–231 were read; individual images1–3,190,219,222
+PDF166–230 passages and contact sheets165–231 were read; individual images1–3,174,190,219–222,227
 were inspected. This is not full-size image review of every page. No table/diagram occurs.
 Front credits conventionally associate phú with Lưu Bá Ôn, compilation/commentary with
 Vương Hồng Tự, translation/notes with Vĩnh Cao; individual passage authorship remains uncertain.
@@ -1264,3 +1264,17 @@ hợp is not repaired. Item22 phú prints vi Phụ whereas reading/meaning/comme
 Phụ; the difference is explicit. Theft, character, health/death, contracts, money and abandoned-child
 claims remain non-authoritative source ideas, not safeguarding, legal or financial decisions.
 All seven units have bounded original summaries and unresolved later audit/verification gates.
+
+### Feat-053 final reconciliation
+
+Individual image174 confirms clause34 in chapter13 has no independently printed Vietnamese
+meaning, only phú/reading and commentary; the interim synthetic meaning was removed from the
+new batch before final release review. Along with chapter14 item7, it has an explicit absent
+meaning disposition and no translation-layer obligation. The final comparison inspected individual
+images1–3,174,190,219–222,227 in addition to contact sheets165–231, not every page individually.
+The registry retains all unrelated units and17 prior exclusions:276 stable children plus seven
+assigned parents, all mapped to seven articles with760 separately cited claims. Of the children,
+237 are numbered units, seven openings, two closings,28 notes and two folio-only non-content
+units. No missing numbered passage is fabricated. Prior released records/citations are semantically
+unchanged. Source review/certification remain closed; global discovery and later feat-087 review
+are unresolved. The next authoring batch is feat-054, PDF231–269, not executed here.

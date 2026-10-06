@@ -124,11 +124,24 @@
 - Regenerate via existing scripts: `packages/knowledge/src/book-release.generated.json` and reports
 - Update: `features/feat-053.md`
 
-- [ ] Register only source-compared content. Preserve prior records, citations, and release contracts.
-- [ ] Account for every assigned source unit and layer; bind registry to inventory bytes without altering unrelated obligations or opening audit gates.
-- [ ] Advance `nextBatch` to feat-054 with regression coverage.
-- [ ] Verify no PDF path or copied source prose/image enters released knowledge; compare prior released records/citations for semantic identity.
-- [ ] Rebuild knowledge before measuring integrated asset. If it exceeds current Workbox cap 5,570,560 bytes, increase only that cap to a measured value, retaining precaching and all other PWA behavior. Record size/cap/headroom and service-worker inclusion.
-- [ ] Run `./init.sh`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `pnpm --dir apps/web run check:package-exports`.
-- [ ] Inspect full diff; document image-inspection limits, residual ambiguities, and verification evidence. Keep feat-053 active until exact-head independent review and merge.
-- [ ] Commit final verification checkpoint.
+- [x] Register only source-compared content. Preserve prior records, citations, and release contracts.
+- [x] Account for every assigned source unit and layer; bind registry to inventory bytes without altering unrelated obligations or opening audit gates.
+- [x] Advance `nextBatch` to feat-054 with regression coverage.
+- [x] Verify no PDF path or copied source prose/image enters released knowledge; compare prior released records/citations for semantic identity.
+- [x] Rebuild knowledge before measuring integrated asset. If it exceeds current Workbox cap 5,570,560 bytes, increase only that cap to a measured value, retaining precaching and all other PWA behavior. Record size/cap/headroom and service-worker inclusion.
+- [x] Run `./init.sh`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `pnpm --dir apps/web run check:package-exports`.
+- [x] Inspect full diff; document image-inspection limits, residual ambiguities, and verification evidence. Keep feat-053 active until exact-head independent review and merge.
+- [x] Commit final verification checkpoint.
+
+## Checkpoint Evidence
+
+- Source map `cc27715`: fingerprint467 pages,276 pre-authoring children; focused323 tests and corpus/fingerprint freshness passed.
+- Chapter13 `0d2359a`: focused322 tests and corpus/fingerprint freshness passed.
+- Chapter14 `83d2ffd`: focused352 tests and corpus/fingerprint freshness passed.
+- Chapters15–16 `6902d30`: focused430 tests and corpus/fingerprint freshness passed.
+- Chapter17 `8d91fa6`: focused479 tests and corpus/fingerprint freshness passed.
+- Chapters18–19 `77d6cfb`: focused558 tests and corpus/fingerprint freshness passed.
+- Final reconciliation: focused559 tests; `./init.sh` passes2,901 tests; explicit corpus/fingerprint freshness and web package-export checks pass. Seven compiled public records/760 claims/citations match authoring exactly;224 earlier records and4,606 citations retain semantic identity. Assigned-document177 routes and diff whitespace pass. Final checkpoint follows these checks; feat-053 remains active for independent exact-head review.
+- Corrected source assumptions with coordinator approval: PDF190/222 are folio-only, not fragments; parent intervals unchanged. Individual174 additionally confirms no independent meaning in chapter13 item34; removed only the new synthetic rendering/citation/translation scope. Actual inspection boundary is complete extracted166–230, contact sheets165–231 and individual1–3,174,190,219–222,227; not every page full-size.
+- Fresh knowledge build precedes asset measurement:6,458,670-byte `index-CPiWXznf.js`, cap6,553,600, headroom94,930;18 entries precached and main asset present in SW. Only Workbox per-file limit changes. Existing Fast Refresh/Vite large-chunk warnings persist.
+- Failed interim checks were stale exact corpus count/queue assertions and the measured previous Workbox size limit, corrected within scope. No audit/certification or efficacy approval is claimed; global gates remain closed.

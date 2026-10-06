@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 42,
+  "registryRevision": 43,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "13150c833613349eca02162a5d53b4233e1cebc7f6c5eb4a125a155ea0f85401"
+    "sha256": "85e5396a525dd115f8afc305a375f1f87832932a1dd35a63f7d034eaa46b18ae"
   },
   "counts": {
     "overviewCells": 192,
@@ -22373,11 +22373,7 @@
       "pdfPageEnd": 174,
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
-      "layerScopeIds": [
-        "layer-bpct-original-text",
-        "layer-bpct-translation",
-        "layer-bpct-author-commentary"
-      ],
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-author-commentary"],
       "discoveryStatus": "unresolved",
       "recordIds": ["article-bpct-chapter-thirteen-loss"]
     },

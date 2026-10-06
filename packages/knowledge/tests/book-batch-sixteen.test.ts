@@ -131,7 +131,7 @@ describe('feat-049 quẻ 61-64 and BPCT 49-56', () => {
       }
     }
     expect(manifest.nextBatch.hexagramIds).toEqual([]);
-    expect(manifest.nextBatch.note).toMatch(/feat-053/);
+    expect(manifest.nextBatch.note).toMatch(/feat-054/);
   });
 
   it('retains all eight NTT notes, named supplements and uncredited endnote 21', () => {
