@@ -248,6 +248,6 @@ describe('feat-055 conditions, source disagreements and non-advice scope', () =>
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
     expect(audit.complete).toBe(false);
-    expect(manifest.nextBatch.note).toMatch(/feat-058/);
+    expect(manifest.nextBatch.note).toMatch(/feat-059/);
   });
 });

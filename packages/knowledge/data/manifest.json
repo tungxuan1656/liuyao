@@ -43,7 +43,8 @@
     "citations/batch-twenty-one-advanced.json",
     "citations/batch-twenty-two-advanced.json",
     "citations/batch-twenty-three-advanced.json",
-    "citations/batch-twenty-four-advanced.json"
+    "citations/batch-twenty-four-advanced.json",
+    "citations/bpct-casting-criticisms.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -313,7 +314,26 @@
     "liuyao/bpct-question-17.json",
     "liuyao/bpct-question-18.json",
     "liuyao/bpct-moving-lines-insertion.json",
-    "liuyao/bpct-ha-tri.json"
+    "liuyao/bpct-ha-tri.json",
+    "casting/bpct-casting-supplement.json",
+    "casting/bpct-trigram-transformations.json",
+    "liuyao/bpct-miscellaneous-cases.json",
+    "liuyao/bpct-star-supplement.json",
+    "liuyao/bpct-criticism-i.json",
+    "liuyao/bpct-criticism-ii.json",
+    "liuyao/bpct-criticism-iii.json",
+    "liuyao/bpct-criticism-iv.json",
+    "liuyao/bpct-criticism-v.json",
+    "liuyao/bpct-criticism-vi.json",
+    "liuyao/bpct-criticism-vii.json",
+    "liuyao/bpct-criticism-viii.json",
+    "liuyao/bpct-criticism-ix.json",
+    "liuyao/bpct-criticism-x.json",
+    "liuyao/bpct-criticism-xi.json",
+    "liuyao/bpct-criticism-xii.json",
+    "liuyao/bpct-criticism-xiii.json",
+    "liuyao/bpct-criticism-xiv.json",
+    "liuyao/bpct-criticism-xv.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -583,7 +603,26 @@
     "article-bpct-question-17",
     "article-bpct-question-18",
     "article-bpct-moving-lines-insertion",
-    "article-bpct-ha-tri"
+    "article-bpct-ha-tri",
+    "article-bpct-casting-supplement",
+    "article-bpct-trigram-transformations",
+    "article-bpct-miscellaneous-cases",
+    "article-bpct-star-supplement",
+    "article-bpct-criticism-i",
+    "article-bpct-criticism-ii",
+    "article-bpct-criticism-iii",
+    "article-bpct-criticism-iv",
+    "article-bpct-criticism-v",
+    "article-bpct-criticism-vi",
+    "article-bpct-criticism-vii",
+    "article-bpct-criticism-viii",
+    "article-bpct-criticism-ix",
+    "article-bpct-criticism-x",
+    "article-bpct-criticism-xi",
+    "article-bpct-criticism-xii",
+    "article-bpct-criticism-xiii",
+    "article-bpct-criticism-xiv",
+    "article-bpct-criticism-xv"
   ],
   "topics": [
     {
@@ -645,6 +684,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-058: BPCT Yếu Quyết Về Gieo Tiền PDF429–457 và phê bình I–XV PDF458–466; theo source inventory, không bịa mụcIII. feat-057 đối chiếu18 câu hỏi PDF365–412, bài chèn412, trang413 chỉ folio, Hà Tri60 câu/chú/kết PDF414–428. Giữ claim chọn trước/bất đồng/sai hẹn và thiếu nhãn; audit091, xác minh/certification còn mở. Không tính lịch, bộ diễn giải hay lời y tế/pháp lý/an toàn/tài chính."
+    "note": "Dự kiến feat-059: NHL PDF1–126, dẫn PhầnII127–130 và cuối sách388–393. feat-058 đối chiếu BPCT429–467, giữ I/II/IV,48 dòngII thực thấy và56 nghĩa vụ chưa tìm thấy,18 Tạp Sự,11 Tinh Sát,15 phê bình và467 trắng. Audit091/092, đối chiếu ấn bản, xác minh/certification còn mở; không tính lịch hay diễn giải tự động."
   }
 }
