@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 218, "released": 218, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 3419, "missingCitationIds": [] },
-  "citations": { "total": 3665 },
+  "records": { "authored": 224, "released": 224, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 4360, "missingCitationIds": [] },
+  "citations": { "total": 4606 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -450,7 +450,13 @@
         "article-timing-relatives-body-spirits-and-sincerity-context",
         "article-bpct-chapter-five-01-06",
         "article-bpct-chapter-five-07-12",
-        "article-bpct-chapter-five-13-18"
+        "article-bpct-chapter-five-13-18",
+        "article-bpct-chapter-seven-weather",
+        "article-bpct-nien-thoi",
+        "article-bpct-chapter-nine-life",
+        "article-bpct-chapter-ten-fame",
+        "article-bpct-chapter-eleven-office",
+        "article-bpct-chapter-twelve-wealth"
       ]
     },
     {
@@ -1662,15 +1668,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến BPCT ứng dụng Thiên Thời, Niên Thời, Thân Mệnh, Cầu Danh và Sĩ Hoạn (feat-052). Phần đầu và chương 1–5 (feat-051) đã có tóm tắt đầy đủ theo unit, công thức, lớp nghĩa/chú và 64 hình board quan sát riêng; bài thêm PDF 74–76 không ký tên giữ riêng. Các quẻ và câu phú trước vẫn là source comparison, không chứng nhận lịch, classifier, hiệu lực dự đoán, nghi lễ hoặc sức khỏe. Audit từng unit/layer, kiểm chứng độc lập và chứng nhận corpus còn mở."
+    "note": "Dự kiến feat-053: BPCT chương13–19, PDF166–230 (Thất Thoát, Xuất Hành, Cầu Sư, Học Quán, Hôn Nhân, Sản Dục, Tiến Nhân Khẩu). Feat-052 đã có tóm tắt đối chiếu nguồn cho chương7, Niên Thời không đánh số, chương9–12, PDF101–165; phần chèn đời vận giữ riêng, trang165 chỉ số in139. Các vai hỏi, khác lớp nghĩa/lời bình và chú thích phản bác vẫn được giữ. Chưa có kiểm chứng độc lập, phép lịch, bộ phân loại, diễn giải tự động hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2280,
+        "required": 2685,
         "current": 84,
-        "missing": 2196,
+        "missing": 2601,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1678,9 +1684,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
-        { "code": "unresolved-source-discovery", "count": 625 },
-        { "code": "missing-decision", "count": 2196 },
-        { "code": "released-claim-coverage-incomplete", "count": 3222 }
+        { "code": "unresolved-source-discovery", "count": 1024 },
+        { "code": "missing-decision", "count": 2601 },
+        { "code": "released-claim-coverage-incomplete", "count": 4163 }
       ]
     },
     "certification": {
@@ -1688,7 +1694,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2280,
+        "required": 2685,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

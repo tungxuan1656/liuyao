@@ -1027,3 +1027,126 @@ new interpretation behavior, independent audit approval or certification is rele
 Chapter-two prose units have no individual signed author. Their attribution names the supplied
 Vương Hồng Tự compilation, not a claim that he composed every formula or paragraph.
 The edition's generic Phú credit is not used to assign these poems to Lưu Bá Ôn.
+
+### Feat-052 application comparison — Thiên Thời
+
+BPCT PDFs 101–110 (printed85–94) have 44 numbered passages. Full extracted passages
+and contact-sheet images were inspected; this is not full-size individual review of every page.
+The [weather article](../../packages/knowledge/data/liuyao/bpct-chapter-seven-weather.json)
+keeps the Phú/original-reading summary, Vĩnh Cao's separately printed meaning and
+Vương Hồng Tự's commentary distinct. Generic edition credits do not prove authorship of each verse.
+Note1 at109 attaches to trợ-Phụ in43, not Phụ Mẫu as a relative. No diagram/table occurs.
+
+Weather roles remain question-specific: Tài means tạnh, not automatically sun;
+Tử denotes sun/moon appearances, Huynh wind/cloud, Quan thunder/dimness, with explicit
+season, strength, movement, support and obstruction conditions. All fourteen timing
+cases in43 are separately represented, including the printed tĩnh Không gặp chờ with
+missing encounter object and the unclear Nguyên hợp cục khắc; neither is repaired.
+Verse37's Xà differs from commentary's Thanh Long/Thìn; meaning39's Phúc Mộc differs
+from commentary's Mộc Tài. Verse42's đồng nhân is glossed as Huynh, not a mandatory
+hexagram identity. Verse34 is not a three-yin/three-yang classifier. Eclipse, dragon,
+weather accuracy and divine imagery remain attributed doctrine, not established events,
+meteorology, astronomy, forecasts, calendar computation or efficacy. Existing source-compared
+records stay unchanged; later feat-086 layer/unit audit and global gates remain open.
+
+### Feat-052 unnumbered Niên Thời
+
+The [year section](../../packages/knowledge/data/liuyao/bpct-nien-thoi.json) has36 passages,
+five separately attributed Vĩnh Cao notes and eleven illustration obligations at PDF111–118
+(printed94–101). It is not chapter8. Original/reading, meaning and commentary remain separate;
+36 has no commentary block. Complete extracted passages and contact-sheet images were compared.
+No tables/diagrams occur. Note1 belongs to3,2 to6,3 to10,4 to19,5 to20.
+
+The tứ xung Thân of3 differs from commentary's Tử sinh hợp Thế;13's hóa Phúc/Tài
+conditions are not repeated in the commentary;16 places Xà at Thế in the phú but lục
+in the commentary. Keep these differences, not a repaired consensus.31 distinguishes
+Thủy/Hỏa for hot/cold from Phụ/Tài for rain/drought, so it does not overwrite chapter7's
+question roles. The geographic examples Tí/Tề, Sửu/Ngô, Dần/Yên are not a complete map.
+Historical omen, dragon, earthquake, disease, warfare and imperial-administration accounts
+remain author testimony, not verified events, efficacy, modern politics or safety advice.
+The existing year/day/weather terms are cross-references, not merged source-unit identities.
+
+### Feat-052 Thân Mệnh and inserted lifetime essay
+
+The [life article](../../packages/knowledge/data/liuyao/bpct-chapter-nine-life.json) covers80
+numbered passages and all attached notes at PDF119–137, then the distinct inserted essay at
+137–141 (whole chapter printed101–123). Full extracted context and contact sheets were read;
+individual137 confirms the red inserted heading, website credit and30-item original roster.
+Thirty separately located Vietnamese items start at138 and end141; their individual translator
+is not identified. The essay is not verse81, Vương Hồng Tự's commentary or a signed Vĩnh Cao note.
+Note1 attaches to13,2 to25,3 to41,4 to43,5 to53. No table/diagram occurs.
+
+Six separate contexts in18 cover wealth, office, children, old age, lifespan and rejected
+periods. The rejection of Dịch Lâm Bổ Di's30/30/60-year scheme is the author's testimony,
+not proof of a replacement's efficacy. The inserted essay's item8 says a poor person in a rich
+house in the Hán source but the Vietnamese says a miser in a rich house. Other awkward/malformed
+words and repeated negatives are retained as limitations, not reconstructed critical text.
+Items19–23 of the supplement qualify each relative's Thế role, and20 allows fame without office;
+these are that supplement's opinions, not a rewrite of the80 main passages.
+
+Observed name differences remain source-specific:37 has Quách Uy in the phú versus Quách Anh
+in reading/meaning;42's Trần labels differ from its Trần Bình commentary;45's Hứa Tử Hòa differs
+from Hứa Bình Hòa;65's Lý Lệnh Bá differs from Lý Ngụy Công.58's Long/Phúc phrase is rendered
+using Long/Lộc Mã and inconsistent spouse wording.75's lung/voice,76's milk and all health,
+lifespan, disability, birth, marriage, adultery, rank and character claims stay historical views,
+not diagnoses, forecasts, facts about current people or ethical obligations.51's suicide account
+and53/55's fidelity/coercion language do not advise self-harm, victim blame or forced marriage.
+Historical examples are separately cited reports, never verified efficacy. No source correction,
+modern calendar, interpretation engine, psychological/medical assessment or global approval is added.
+
+### Feat-052 Cầu Danh
+
+The [fame article](../../packages/knowledge/data/liuyao/bpct-chapter-ten-fame.json) has the
+unnumbered opening/closing and26 observed labelled passages at142–148 (printed118–124).
+PDF143's individual image confirms two label5 blocks;05a/05b preserve these, not a renumbered
+26.1 and the closing have no commentary. Four Vĩnh Cao notes stay separate:1 attaches3,
+2 to9,3 to14,4 to the closing. Complete extracted context/contact sheets and focused143
+were inspected; no diagram/table appears. The21 historical illustration has its own obligation.
+
+The two Phụ/Quan roles, rival Huynh, assisting Nhật and differing question-owner roles stay
+conditional.7 allows Tài-only assistance with Phụ Không but rejects Tài/Quan both moving;
+23's phú says Không while commentary says Mộ/Tuyệt, not a silently repaired identity.
+24's Quái Thân differs from25's self-Thế or child-Tử. Contemporary exam success, appointments,
+recognition, bribery, travel safety, illness, lifespan, timing and predictive accuracy are not
+inferred from these historical claims. The final continuation of25 is on148, before the
+separate closing verse and note4; no next-chapter content is absorbed.
+
+### Feat-052 Sĩ Hoạn
+
+The [office article](../../packages/knowledge/data/liuyao/bpct-chapter-eleven-office.json)
+accounts for26 labels and a separate closing verse starting154 and continuing155
+(printed129–130);155 was inspected in the contact sheet. Three notes at150/153 attach4,
+6 and19 respectively. Full extracted context and contact sheets were reviewed; no table or
+diagram appears. Each source layer and exact continuation has its own evidence.
+
+6 has the Tuế clause in reading/meaning but no separately printed original Hán line;
+no original is supplied.10's Phúc in phú differs from the Tài/Phụ conditions of commentary.
+13 reverses Huynh hóa Quỷ in phú to Quỷ hóa Huynh in commentary; both stay visible.
+5's hidden-Quan warning and16's retained-office Quan under Thế are not harmonized by rewriting.
+7's outside-patrol exception,9's patrol/administration movement contrast,23's ordinary office
+versus active military question and26's Tử for monks/Daoists/court physicians stay separate.
+These are historical opinions, not civil-service, legal, medical, military, bribery, ethnic,
+travel, mortality or supernatural authority. No reported outcome is independent efficacy evidence.
+
+### Feat-052 Cầu Tài and folio-only165 correction
+
+The [wealth article](../../packages/knowledge/data/liuyao/bpct-chapter-twelve-wealth.json)
+covers opening,41 labelled passages, closing and two Vĩnh Cao dissent notes at156–164
+(printed130–138). Complete extracted text and contact-sheet images156–163, plus individual
+164–166, were inspected. PDF165 has only printed139, not the previously assumed closing
+fragment. The closing prose/verse is complete on164. The inventory keeps the exclusive
+chapter12 parent156–165 and gives165 its own non-content child, not a source omission;
+chapter13 begins166. No table/diagram occurs. Notes1/2 on158 attach10/11, not following clauses.
+
+10's Huynh thái quá claim is distinct from Vĩnh Cao's objection that the example merely
+shows Huynh sinh Tử sinh Tài.11's Quái Thân authority remains beside his doubtful-efficacy
+and Thế-strength qualification.15's author rejects the old Huynh hóa Quan reading in favor
+of two moving relatives; his testimony is not verification.03's useful Quan movement and09's
+obstruction keep their different Tử/Huynh conditions.12 includes Tài khắc Thế as coming toward
+the self;26–32 retain partnership, public office, cửu lưu, livestock, lending, shop-opening
+and object-specific borrowing roles.29's huyết Tài versus Vietnamese khó kiếm tiền stays a
+layer discrepancy.20's Thê in commentary is not silently corrected to Thế.24's seven timing
+cases and25's critique of element-only season pricing do not produce a calendar or financial
+classifier. Source statements about profits, theft, disease, death, gambling, prices, ritual
+sincerity and prediction do not establish efficacy or give financial, veterinary, safety,
+legal, medical or religious advice. All prior selected records remain unchanged.
