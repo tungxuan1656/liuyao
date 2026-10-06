@@ -139,10 +139,10 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Inspect complete items 1–6 on PDF 67–69, including examples and each textual layer.
-- [ ] Reconcile earlier selected claims without treating them as full item coverage or rewriting them without new evidence.
-- [ ] Add tests for each item's full bounds, claims, attribution, conditions, and exclusions.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect complete items 1–6 on PDF 67–69, including examples and each textual layer.
+- [x] Reconcile earlier selected claims without treating them as full item coverage or rewriting them without new evidence.
+- [x] Add tests for each item's full bounds, claims, attribution, conditions, and exclusions.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 9: Author chapter 5 items 7–12
 

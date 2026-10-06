@@ -980,3 +980,20 @@ no complete Hình table is inferred. XXV's ten points per watch, 24 minutes per 
 3:24 example conflict with its two-hour watch statement. Original summaries report these
 without supplying missing words, a modern calendar, stage algorithm, ritual or body assessment.
 The source inventory records unit-by-unit authoring routes; feat-084 and global gates remain open.
+
+### Feat-051 complete boards and discussions 1–6
+
+All 64 board figures on PDFs 49–66 are separately represented by source-unit ID, heading,
+six image-read polarities and printed annotations, actual Phục/Quái thân/Thế/Ứng dispositions,
+and their own full commentary bounds. No expectations came from the core calculator.
+The inventory's per-board table retains missing or conflicting markers and relational labels,
+including Đại Hữu lục-Thế, Hằng nhị-Thế, Di's two Thế labels, Vị Tế's ngũ-Ứng,
+Phục's absent Thế, Độn/Bí/Tiệm/Đại Quá/Đại Tráng relatives, Lý's swapped exterior branches,
+Sư's swapped Hợi/Dậu and Tỉnh's Canh exterior stems. None repairs source images or replaces
+previously reviewed calculation tables. Tỉnh's footnote 1 is separate from Đại Quá.
+The closing Độn-to-Đồng Nhân example stays separate with its Tí/Dần wording conflict.
+
+Full ch5 discussions 1–6 at PDFs 67–69 now include all five Dụng rosters, both burial-question
+roles, all three question/answer contexts, Nguyên/Kỵ/Cừu compound conditions, six Phi meanings,
+Phục method/criticism/examples and attached notes 1–4. Existing selected claims remain unchanged;
+new full-passage records do not treat prior citations as complete coverage.

@@ -316,3 +316,23 @@ describe('BPCT all 64 distinct board evidence units', () => {
     expect(doaiBoards.figures[7]?.labels).toHaveLength(6);
   });
 });
+
+import firstDiscussions from '../data/liuyao/bpct-chapter-five-01-06.json';
+describe('BPCT chapter-five discussions 1–6', () => {
+  it('retains each numbered unit, all six Phi senses and four attached notes', () => {
+    expect(getBookRecord(firstDiscussions.id)).toEqual(firstDiscussions);
+    for (let n = 1; n <= 6; n++)
+      expect(registry.groups.find(g => g.id === `bpct-ch05-0${n}`)?.recordIds).toContain(
+        firstDiscussions.id,
+      );
+    expect(firstDiscussions.claims.filter(c => c.id.includes('ch05-01-'))).toHaveLength(5);
+    expect(firstDiscussions.claims.filter(c => c.id.includes('ch05-05-type-'))).toHaveLength(6);
+    expect(firstDiscussions.claims.filter(c => c.id.includes('note-'))).toHaveLength(4);
+    expect(firstDiscussions.claims.find(c => c.id.endsWith('type-2'))?.text).toMatch(
+      /không tự thay/,
+    );
+    expect(
+      citations.citations.find(c => c.id.endsWith('ch05-03-in-law-roles'))?.location,
+    ).toMatchObject({ pdfPageStart: 67, pdfPageEnd: 68 });
+  });
+});

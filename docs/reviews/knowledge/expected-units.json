@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 22,
+  "registryRevision": 23,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "9723311056a74946b8c4cd7405af2820de33e821965cf176f6ca25dc438a5114"
+    "sha256": "69e916cc67982573b58726f0d39be89d464ca03b73a3271ded68e20988d14cf4"
   },
   "counts": {
     "overviewCells": 192,
@@ -5601,7 +5601,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 1
+      "number": 1,
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-02",
@@ -5620,7 +5621,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 2
+      "number": 2,
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-03",
@@ -5639,7 +5641,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 3
+      "number": 3,
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-04",
@@ -5658,7 +5661,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 4
+      "number": 4,
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-05",
@@ -5677,7 +5681,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 5
+      "number": 5,
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-06",
@@ -5696,7 +5701,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 6
+      "number": 6,
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-07",
@@ -15062,7 +15068,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-note-02",
@@ -15080,7 +15087,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-note-03",
@@ -15098,7 +15106,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-note-04",
@@ -15116,7 +15125,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-five-01-06"]
     },
     {
       "id": "bpct-ch05-note-05",
