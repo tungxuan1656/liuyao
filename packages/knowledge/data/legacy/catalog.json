@@ -6,50 +6,6 @@
     "entities": [
       {
         "kind": "hexagram",
-        "id": "hexagram-57",
-        "name": "Thuần Tốn",
-        "aliases": [],
-        "explanation": "Quẻ số 57 theo thứ tự Văn Vương, gồm nội quái Tốn và ngoại quái Tốn.",
-        "kingWenNumber": 57,
-        "upperTrigramId": "trigram-wind",
-        "lowerTrigramId": "trigram-wind",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-58",
-        "name": "Thuần Đoài",
-        "aliases": [],
-        "explanation": "Quẻ số 58 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Đoài.",
-        "kingWenNumber": 58,
-        "upperTrigramId": "trigram-lake",
-        "lowerTrigramId": "trigram-lake",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-59",
-        "name": "Phong Thủy Hoán",
-        "aliases": [],
-        "explanation": "Quẻ số 59 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Tốn.",
-        "kingWenNumber": 59,
-        "upperTrigramId": "trigram-wind",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-60",
-        "name": "Thủy Trạch Tiết",
-        "aliases": [],
-        "explanation": "Quẻ số 60 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Khảm.",
-        "kingWenNumber": 60,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-lake",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
         "id": "hexagram-61",
         "name": "Phong Trạch Trung Phu",
         "aliases": [],

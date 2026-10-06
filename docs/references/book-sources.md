@@ -549,6 +549,84 @@ an exhaustive priority rule. No verse quotation, replacement translation or sour
 Source comparison supports bounded authoring only; feat-085's unit/layer audit and corpus-wide
 independent verification/certification remain open.
 
+### Quẻ 57-60 and BPCT 41-48 selected comparison
+
+[Batch-fifteen classical citations](../../packages/knowledge/data/citations/batch-fifteen-hexagrams.json)
+support original Vietnamese selections for [Tốn](../../packages/knowledge/data/hexagrams/hexagram-57.json),
+[Đoài](../../packages/knowledge/data/hexagrams/hexagram-58.json),
+[Hoán](../../packages/knowledge/data/hexagrams/hexagram-59.json) and
+[Tiết](../../packages/knowledge/data/hexagrams/hexagram-60.json).
+Component comparison read complete extracted context at NHL PDFs 309–320, PBC 532–563 and NTT 852–894,
+and visually inspected contact sheets covering every assigned page. This is not individual full-size
+review of every page. An enlarged NHL/PBC eight-heading composite and full-size NTT images at
+860, 881, 884 and 894 were additionally inspected. NHL footer labels match 309–320;
+no numerical PBC/NTT folios are inferred. NHL/PBC diagrams and NTT named quái/six line headings
+provide separate structural witnesses; no NTT diagram is asserted. NTT 885 is blank except the web footer.
+
+All 24 positions retain NHL, PBC and Trình Di; Chu Hy is separately represented at 23 positions,
+not invented at Tiết six. NTT Hoán/Tiết Thoán and Đại Tượng have no separately labelled Chu Hy
+commentary in the inspected passages. NHL's fused overview explanation is not an artificial layer roster.
+PBC PHỤ CHÚ, named Tiên Nho and translator notes retain distinct citations and attribution.
+All attached NTT numbered notes remain separate: Tốn 1–3 at 862, 4–6 at 863; Hoán 1–5 at 884;
+Tiết 1 at 894. Đoài has none. Hoán duplicate note pairs 2/3 and 4/5 keep their separate call positions.
+
+Five resolved discrepancy entries record bounded selection/display decisions, not source repairs:
+
+- Tốn keeps NTT 860's missing negation, 861's omitted trinh and NHL 310's vô sở beside the
+  corroborated explanations. NTT 853's Tượng/Thoán labels and NHL's eight-name can list are not repaired.
+- Đoài preserves niệm/vong variants and NTT 867's first-line Tượng ending and unusual Chu Hy heading.
+  Chu Hy's upper-line three-yang description does not change the four yang of the complete figure.
+- Hoán retains yin four despite PBC 552's Cửu Tứ; NTT 881's misplaced fifth-line original Tượng
+  is not used as the fourth-line meaning. NTT 875's missing negation and 874's Tiệm/Sáu ngôi Ba
+  story do not supply corrected text or a transformation algorithm.
+- Tiết's same-yang two/five response wording is not formal opposite-polarity chính ứng.
+  NTT's mất cứng/mất đức is conduct criticism, not a polarity change; NHL's upper-line wording
+  does not add a seventh position. Tốn one/four likewise remain both yin.
+
+Tốn's tam-phẩm rosters, quoted Chu Hy criticism and upper-line trinh/hồ readings remain distinct.
+Đoài's upper-line conduct, attraction and withheld cát/hung judgments are not harmonized.
+Hoán preserves competing ghế, self/private-interest, royal-residence/stores and upper-line rescue readings;
+proposed địch/dịch and missing khứ remain attributed opinions, not a reconstructed edition.
+Tiết retains personal austerity versus permanent social enforcement, courtyard alternatives and
+conditional versus stronger line-three judgments. Named scholars and cited works are testimony
+through the supplied authors, not additional whole-work review. Sweating, wounds, physiology,
+hunting, death, gender hierarchy, political mobilization and miracles are historical imagery or opinions,
+not medical authority, forecasts, coercive duties, religious requirements or verified efficacy.
+Full original/translation per-cell mapping, layer rosters and feat-082 audit/remainder closure remain open.
+
+[Batch-fifteen advanced citations](../../packages/knowledge/data/citations/batch-fifteen-advanced.json)
+support the [BPCT 41–48 article](../../packages/knowledge/data/liuyao/useful-spirit-avoidance-rescue-and-transformation-context.json).
+Component review read full extracted context at PDFs 1–3, 88–93, 73, 79 and 403;
+individual images at 1–3, 89–92 and 403 were directly inspected. Generated 88/93 images are not
+counted as inspected; 73/79 are extracted-text comparisons only. No table/diagram occurs in 41–48.
+The PDF-403 chart is outside the selection and its annotations/outcomes are not newly reviewed content.
+
+Each verse keeps the supplied edition's Lưu Bá Ôn credits separate from Vương Hồng Tự commentary,
+transmitted by Vĩnh Cao. Shared front-matter citations report edition attributions, not verified
+historical authorship. Full bounds are 41: 89–90 (printed 75–76); 42–44: 90 (76);
+45 verse: 90–91 (76–77), commentary: 91 (77); 46–47: 91 (77);
+48 verse: 91–92 (77–78), commentary: 92 (78). Sentence 41's final explanation precedes label 42;
+48's rendering ends on 92 before commentary and label 49. Note 9 at 91 belongs to sentence 45's
+Thần marker despite the footer beneath 48; it explains twelve-stage terminology, not supernatural beings.
+It is the sole attached note. Note 8 belongs to 39 and note 10 to 50. Reused PDF-403 dissent remains
+Vĩnh Cao's separate objection to Hình/Hại, not an attached chapter-6 note or consensus.
+
+Sentence 41 distinguishes Nhật/Nguyệt control from the conditional moving Kỵ context, without
+unconditional Không/Phục immunity. Sentence 42 keeps rescue directed at the line harming Dụng;
+its Hỏa is not renamed Nguyên thần. Sentence 43's verse roster and shorter Mộ/Tuyệt commentary stay
+distinct; its rhetorical question is not structural impossibility. Sentence 44 keeps exit-Tuần conditions
+and Tiến versus Thoái/Phục ngâm, without immediate universal cancellation of Không.
+Sentence 45 separates stage imagery from the commentator's rejection of literal inference;
+46 retains Dụng/Hung contrasts and later-day language without calculating dates or overwriting sentence 6.
+Sentence 47's six local contexts are not a certified/exhaustive stage table; its Tài/Thế roles and
+unspecified rescue qualifications stay bounded. Sexuality, wife, family reputation and mortality
+judgments are not modern facts, duties, death forecasts or permission to control a partner.
+Sentence 48 separates hồi đầu khắc from Dụng sinh/hợp toward another line, keeps Thân unspecified,
+and retains the prerequisite about not sinh/hợp Thế Thân; Đức is relational language, not moral ranking.
+No copied verse, Han quotation, replacement translation, source repair, calendar, scoring,
+automated interpretation or efficacy certification is published. Feat-085's layer audit and
+inventory remainder, separate verification and corpus certification remain open.
+
 ### Classical exclusions
 
 - Phệ Hạp's second-line explanations use ứng for the fifth line, although both positions are yin.

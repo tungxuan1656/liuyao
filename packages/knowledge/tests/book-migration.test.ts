@@ -73,7 +73,7 @@ describe('V1 book record upcast', () => {
           readFileSync(new URL(`../data/${file}`, import.meta.url), 'utf8'),
         ) as BookRecordV1,
     );
-    expect(records).toHaveLength(192);
+    expect(records).toHaveLength(197);
     for (const record of records) {
       const converted = upcastBookRecordV1(record);
       expect(converted.schemaVersion).toBe(2);

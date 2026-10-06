@@ -45,9 +45,13 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Decision log
+
+- **Workbox file-size limit** — Question: how to handle the measured 2,872,385-byte integrated asset exceeding the 2,686,976-byte cap? Decision: raise the cap to 2,949,120 bytes (2 MiB + 832 KiB), leaving 76,735 bytes of headroom. Alternatives: block feat-048 release or alter caching behavior. Rationale: the user explicitly authorized this bounded increase; the value is the smallest 64-KiB-aligned limit that provides at least 64 KiB of reserve. Evidence: user approval in this session and the measured production build. Effect: only the Workbox maximum and matching comment changed; precaching and all other PWA behavior remain unchanged. This approval applies to feat-048 only and does not establish a ceiling for later batches.
+
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active; source components and integration are committed on `feat/048-reviewed-que-57-60-bpct-41-48` at `b1613e7310ae6073cfdd72b715d4a2b22ad1d66b`.
+- Evidence: `./init.sh` passed with 482 tests; `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passed with 197 records, 2,207 claims and 2,392 citations. Independent source review and publication remain.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Complete a fresh independent review, address findings, then publish one PR and verify exact-head CI before merge.
