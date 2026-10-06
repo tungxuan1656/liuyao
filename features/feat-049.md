@@ -81,7 +81,7 @@ No speculative cap increase, PDF caching, split-bundle behavior or new UI is int
 
 ## Handoff
 
-- State: active; implementation and local verification passed on `feat/049-reviewed-que-61-64-bpct-49-56` through `143550d12750938e447bc29df61686ab38da6900`.
-- Evidence: Source-comparison records and generated coverage reach 64/64 quẻ and 384/384 positions per source book. Coverage `complete` remains false; audit has 84 current prior decisions and 197 covered prior claims, not approval of this batch.
-- Blockers: none for selected authored claims. Exact-head independent acceptance review, PR checks, and merge remain.
-- Next: Complete fresh review of the exact branch head, then publish one PR and merge only after all required checks pass. No corpus audit or certification approval is claimed.
+- State: done; merged to `main` in PR #76 at squash commit `c6357316a47d10ae9c1c143f2291d5bd0f9836fc`.
+- Evidence: Fresh exact-head independent review at `27d685ac1c8d4f0cfa5b3f6be4989c759e6101a7` returned `OK WITH NOTES`, with no P0/P1/P2 findings. PR-head `verify`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 493 tests; corpus check passed with 202 records, 2,398 claims and 2,662 citations; package-export and precache checks passed.
+- Blockers: none for feat-049. Full-corpus audit and certification remain open; contact-sheet review does not claim individual full-size inspection of every classical page.
+- Next: Continue with selected feat-050. No corpus audit or certification approval is claimed.

@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-049 merged
+
+**State**: done and merged to `main` in PR #76 at `c6357316a47d10ae9c1c143f2291d5bd0f9836fc`.
+**Done**: Added source-compared quẻ 61–64 and BPCT chapter 6 sentences 49–56, registered 64 reviewed hexagrams, retired remaining legacy entities, and recorded source limitations. Raised only the measured Workbox per-file cap; all 18 entries remain precached.
+**Evidence**: Exact-head independent review returned `OK WITH NOTES`, with no P0/P1/P2 findings. PR-head `verify`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 493 tests; corpus validation passed with 202 records, 2,398 claims, and 2,662 citations. Package-export and service-worker inclusion checks passed. See [feat-049](features/feat-049.md).
+**Coverage**: 64/64 quẻ and 384/384 positions have selected source-compared coverage. Corpus audit and certification remain open; contact-sheet review is not full-size inspection of every classical page.
+**Blockers**: none for feat-049.
+**Next**: Continue with selected feat-050 from updated `main`.
+
 ## 2026-10-06 — feat-048 merged
 
 **State**: done and merged to `main` in PR #75 at `b662861d63ac65f167ed871f93cd890f5f7fface`.
