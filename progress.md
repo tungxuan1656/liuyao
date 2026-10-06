@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-055 merged
+
+**State**: done and merged to `main` in PR #83 at `d0848eb7de6e776b8e421acc21f53fa209ee7e2d`; reviewed head `ddc8c1932a62e00752bc6e7b6b3b09f31a3e8220`.
+**Done**: Added four source-compared BPCT application articles for chapters 23–26 (PDF 270–301), with 145 child units and 379 claim-specific citations. Preserved chapter layers and notes, question roles, source disagreements, and missing/repeated labels. PDF 279 remains a folio-only non-content disposition.
+**Evidence**: Independent exact-head review returned `OK`, no P0–P2 findings. PR-head verify run `37463702490`/job `112269320088`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 3,245 tests (181 core, 3,064 knowledge); corpus validation passed for 239 records, 5,993 claims, and 6,239 citations. Prior 235 records and 5,614 claims remain semantically unchanged. The 7,613,685-byte integrated asset fits the 8 MiB Workbox cap with 774,923 bytes reserve; all 18 precache entries remain.
+**Coverage**: 150 source obligations, including 145 child units, four chapter parents, and PDF 279, remain assigned to feat-089 audit. Source audit and corpus certification remain open; no efficacy or medical, legal, or travel advice is claimed.
+**Blockers**: none for feat-055.
+**Next**: Continue with selected feat-056 from updated `main`.
+
 ## 2026-10-06 — feat-054 merged
 
 **State**: done and merged to `main` in PR #81 at `7a9ceec25f5032f193149eab5894c768f126f4de`; reviewed PR head `f8530256ce39960ef64660f05b6e8a56eb929547`.

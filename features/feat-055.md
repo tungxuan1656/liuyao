@@ -58,7 +58,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active; implementation and local verification complete, independent review pending.
-- Evidence: Source inspection and implementation details are recorded above. Parent `./init.sh` passed 181 core and 3,064 knowledge tests; `validate:corpus --check-books --check` passed for 239 records, 5,993 claims, and 6,239 citations. `git diff --check` passed.
-- Dependencies: feat-054 is done; feat-089 source audit and corpus-wide certification remain open.
-- Next: Review the committed exact head independently, then publish one PR and require all exact-head checks before merge.
+- State: done; merged to `main` in PR #83 at `d0848eb7de6e776b8e421acc21f53fa209ee7e2d`; reviewed head `ddc8c1932a62e00752bc6e7b6b3b09f31a3e8220`.
+- Evidence: Independent exact-head review returned `OK` with no P0/P1/P2 findings. PR-head verify run `37463702490`/job `112269320088`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 181 core and 3,064 knowledge tests; corpus validation passed for 239 records, 5,993 claims, and 6,239 citations.
+- Result: Four BPCT articles contain 145 child units and 379 citations; 150 assigned obligations remain for feat-089 audit, including the four parent units and PDF 279 disposition. Prior released content is semantically preserved. The 7,613,685-byte integrated asset fits the 8 MiB Workbox cap with 774,923 bytes reserve; all 18 precache entries remain.
+- Blockers: none for feat-055; feat-089 source audit and corpus certification remain open. Source comparison does not establish efficacy or provide medical, legal, travel, calendar, or prediction advice.
+- Next: Continue with selected feat-056 from updated `main`.
