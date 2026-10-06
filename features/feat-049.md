@@ -47,7 +47,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active on `feat/049-reviewed-que-61-64-bpct-49-56`, based on `main` at `a55197d470c960b0a7b638aab519553559daa8d3`.
+- Evidence: feat-048 is merged and marked done; the selected batch authorizes feat-049. No implementation verification has run.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Inspect source pages for quẻ 61 and BPCT sentences 49–56, then implement only this feature.
