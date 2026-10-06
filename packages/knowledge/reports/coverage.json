@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 229, "released": 229, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 4897, "missingCitationIds": [] },
-  "citations": { "total": 5143 },
+  "records": { "authored": 231, "released": 231, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 5121, "missingCitationIds": [] },
+  "citations": { "total": 5367 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -461,7 +461,9 @@
         "article-bpct-chapter-fourteen-travel",
         "article-bpct-chapter-fifteen-teacher",
         "article-bpct-chapter-sixteen-study",
-        "article-bpct-chapter-seventeen-marriage"
+        "article-bpct-chapter-seventeen-marriage",
+        "article-bpct-chapter-eighteen-childbirth",
+        "article-bpct-chapter-nineteen-household"
       ]
     },
     {
@@ -1679,9 +1681,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2966,
+        "required": 2968,
         "current": 84,
-        "missing": 2882,
+        "missing": 2884,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1690,8 +1692,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1300 },
-        { "code": "missing-decision", "count": 2882 },
-        { "code": "released-claim-coverage-incomplete", "count": 4700 }
+        { "code": "missing-decision", "count": 2884 },
+        { "code": "released-claim-coverage-incomplete", "count": 4924 }
       ]
     },
     "certification": {
@@ -1699,7 +1701,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2966,
+        "required": 2968,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

@@ -201,3 +201,32 @@ describe('feat-053 marriage limitations and source differences', () => {
     expect(text('bpct-ch17-26-verse')).toMatch(/hợp Tài\/Quỷ hoà Quỷ.*hoá Quỷ/);
   });
 });
+
+describe('feat-053 childbirth and household non-authority', () => {
+  it('preserves all actual question roles, note disagreements and non-content222', () => {
+    const birth = getBookRecord('article-bpct-chapter-eighteen-childbirth')!;
+    const household = getBookRecord('article-bpct-chapter-nineteen-household')!;
+    const text = (record: typeof birth, suffix: string) =>
+      record.claims.find(c => c.id.endsWith(suffix))!.text;
+    expect(text(birth, 'bpct-ch18-05-commentary')).toMatch(/Tài sản phụ, Thai bào thai, Phúc con/);
+    expect(text(birth, 'bpct-ch18-28-commentary')).toMatch(/chuyên Thai, không Tử/);
+    expect(text(birth, 'bpct-ch18-21-commentary')).toMatch(/chưa qua tháng.*Chồng tự hỏi.*Thế/);
+    expect(text(birth, 'bpct-ch18-35-commentary')).toMatch(/câu sinh sản dùng gian.*riêng.*Tài/);
+    expect(text(birth, 'bpct-ch18-note-02-discussion')).toMatch(
+      /cung trái.*khăn phải.*không tự sửa/,
+    );
+    expect(text(birth, 'bpct-ch18-note-04-discussion')).toMatch(/Nội.*Ngoại.*không được cung cấp/);
+    expect(text(birth, 'bpct-ch18-07-verse')).toMatch(/Phú dùng Long.*cách đọc.*Thai/);
+    expect(text(birth, 'bpct-ch18-32-commentary')).toMatch(/thiên kiến giới.*không đánh giá/);
+    expect(text(birth, 'bpct-ch18-40-commentary')).toMatch(/cải tử hoàn sinh.*không.*kiểm chứng/);
+    expect(text(birth, 'bpct-ch18-folio-222-folio')).toMatch(/chỉ có số in190.*đã hết.*221/);
+    expect(text(household, 'bpct-ch19-01-commentary')).toMatch(
+      /Trẻ.*Tử.*người bơ vơ.*Tài.*bạn Huynh.*tôn trưởng Phụ/,
+    );
+    expect(text(household, 'bpct-ch19-15-commentary')).toMatch(/thiếu đối tượng.*không tự thêm/);
+    expect(text(household, 'bpct-ch19-22-verse')).toMatch(/vi Phụ.*vắng Phụ/);
+    expect(text(household, 'bpct-ch19-30-commentary')).toMatch(
+      /riêng nhận trẻ bị bỏ.*không dùng quẻ/i,
+    );
+  });
+});

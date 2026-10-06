@@ -1233,3 +1233,34 @@ intact. Coercion in07, gender authority in18, sexuality accusations in10/20, wid
 beauty/class judgments, reproduction and historical attendants in26 remain attributed source
 beliefs, not current duties, consent evidence, diagnosis or advice. All45 printed-label slots
 except the observed31 gap are accounted for, with no efficacy or later audit claim.
+
+### Feat-053 childbirth and household reception — chapters18–19
+
+The [childbirth article](../../packages/knowledge/data/liuyao/bpct-chapter-eighteen-childbirth.json)
+covers PDF212–222, printed180–190, opening, printed1–40/42, four notes and folio-only222.
+Individual image222 confirms no planned short fragment: item42 ends221; parent212–222 is
+unchanged with coordinator approval. No item41 is inferred. The
+[household article](../../packages/knowledge/data/liuyao/bpct-chapter-nineteen-household.json)
+covers PDF223–230, printed190–197, opening and30 clauses; chapter20 begins231 and remains
+outside this feature. No household footer note, table or diagram was observed. All passages and
+contact sheets were inspected; individual220 was additionally checked for note4 and item15
+of the household was compared to the extracted passage without supplying its unclear object.
+
+Childbirth note2 disputes the opening’s bow/towel placement against Nội tắc (boy’s bow left,
+girl’s towel right). Item04 phú uses Tài hoá Tử while commentary uses Tài hợp Phúc; item07
+phú/reading/meaning differ around Long/Thai as the joyous sign. Note4 reports Nội should be
+Ngoại, but the supplied image220 already prints Ngoại; the other original edition mentioned
+by the note is unavailable, so no reconstruction is claimed. Birth question Tử, pregnancy-existence
+question Thai, husband/self roles, third-party absent-father conditions and note3's month bound
+stay distinct. Intervening bà đỡ in a birth question differs from Tài when separately asking
+about a bà đỡ/vú em. Item32's devaluation of daughters and item40's revival promise are only
+historical source assertions, never endorsed values or efficacy evidence. No medical, pregnancy,
+feeding, sex-determination, due-date, delay, medication or emergency guidance is released.
+
+Household reception includes historical adoption, attendants and persons in distress with
+relation-specific roles, not modern rights to buy, retain or classify people. The opening’s tiện bế
+and Vietnamese affection wording remain distinct. Item15 commentary's incomplete object of
+hợp is not repaired. Item22 phú prints vi Phụ whereas reading/meaning/commentary say absent
+Phụ; the difference is explicit. Theft, character, health/death, contracts, money and abandoned-child
+claims remain non-authoritative source ideas, not safeguarding, legal or financial decisions.
+All seven units have bounded original summaries and unresolved later audit/verification gates.

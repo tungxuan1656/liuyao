@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 41,
+  "registryRevision": 42,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "6eedb6e0dd1dddcbff204654a67bc8ae242459bd831173874ad863f909f3a0f6"
+    "sha256": "13150c833613349eca02162a5d53b4233e1cebc7f6c5eb4a125a155ea0f85401"
   },
   "counts": {
     "overviewCells": 192,
@@ -3940,7 +3940,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-part1-ch19",
@@ -3957,7 +3958,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-part1-ch20",
@@ -24868,7 +24870,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-01",
@@ -24885,7 +24888,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-02",
@@ -24902,7 +24906,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-03",
@@ -24919,7 +24924,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-04",
@@ -24936,7 +24942,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-05",
@@ -24953,7 +24960,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-06",
@@ -24970,7 +24978,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-07",
@@ -24987,7 +24996,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-08",
@@ -25004,7 +25014,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-09",
@@ -25021,7 +25032,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-10",
@@ -25038,7 +25050,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-11",
@@ -25055,7 +25068,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-12",
@@ -25072,7 +25086,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-13",
@@ -25089,7 +25104,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-14",
@@ -25106,7 +25122,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-15",
@@ -25123,7 +25140,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-16",
@@ -25140,7 +25158,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-17",
@@ -25157,7 +25176,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-18",
@@ -25174,7 +25194,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-19",
@@ -25191,7 +25212,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-20",
@@ -25208,7 +25230,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-21",
@@ -25225,7 +25248,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-22",
@@ -25242,7 +25266,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-23",
@@ -25259,7 +25284,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-24",
@@ -25276,7 +25302,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-25",
@@ -25293,7 +25320,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-26",
@@ -25310,7 +25338,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-27",
@@ -25327,7 +25356,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-28",
@@ -25344,7 +25374,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-29",
@@ -25361,7 +25392,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-30",
@@ -25378,7 +25410,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-31",
@@ -25395,7 +25428,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-32",
@@ -25412,7 +25446,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-33",
@@ -25429,7 +25464,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-34",
@@ -25446,7 +25482,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-35",
@@ -25463,7 +25500,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-36",
@@ -25480,7 +25518,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-37",
@@ -25497,7 +25536,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-38",
@@ -25514,7 +25554,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-39",
@@ -25531,7 +25572,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-40",
@@ -25548,7 +25590,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-42",
@@ -25565,7 +25608,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-folio-222",
@@ -25578,7 +25622,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-uncredited-supplement"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch19-opening",
@@ -25595,7 +25640,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-01",
@@ -25612,7 +25658,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-02",
@@ -25629,7 +25676,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-03",
@@ -25646,7 +25694,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-04",
@@ -25663,7 +25712,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-05",
@@ -25680,7 +25730,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-06",
@@ -25697,7 +25748,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-07",
@@ -25714,7 +25766,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-08",
@@ -25731,7 +25784,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-09",
@@ -25748,7 +25802,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-10",
@@ -25765,7 +25820,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-11",
@@ -25782,7 +25838,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-12",
@@ -25799,7 +25856,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-13",
@@ -25816,7 +25874,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-14",
@@ -25833,7 +25892,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-15",
@@ -25850,7 +25910,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-16",
@@ -25867,7 +25928,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-17",
@@ -25884,7 +25946,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-18",
@@ -25901,7 +25964,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-19",
@@ -25918,7 +25982,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-20",
@@ -25935,7 +26000,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-21",
@@ -25952,7 +26018,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-22",
@@ -25969,7 +26036,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-23",
@@ -25986,7 +26054,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-24",
@@ -26003,7 +26072,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-25",
@@ -26020,7 +26090,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-26",
@@ -26037,7 +26108,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-27",
@@ -26054,7 +26126,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-28",
@@ -26071,7 +26144,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-29",
@@ -26088,7 +26162,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch19-30",
@@ -26105,7 +26180,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-ch13-note-01",
@@ -26454,7 +26530,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-translator-note"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-note-02",
@@ -26467,7 +26544,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-translator-note"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-note-03",
@@ -26480,7 +26558,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-translator-note"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-ch18-note-04",
@@ -26493,7 +26572,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-translator-note"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     }
   ],
   "exclusions": [

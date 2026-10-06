@@ -106,11 +106,11 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover Sản Dục PDF 212–222, including the folio-only PDF222 child (item42 on221).
-- [ ] Cover Tiến Nhân Khẩu PDF 223–230 and its complete source boundary.
-- [ ] Preserve health, childbirth, household, safety, and outcome content as historical source claims, not medical, safety, financial, or predictive guidance.
-- [ ] Test all closing and folio-only bounds, notes, roles, attribution, exclusions, and release projection.
-- [ ] Run focused tests and corpus freshness checks; commit checkpoint.
+- [x] Cover Sản Dục PDF 212–222, including the folio-only PDF222 child (item42 on221).
+- [x] Cover Tiến Nhân Khẩu PDF 223–230 and its complete source boundary.
+- [x] Preserve health, childbirth, household, safety, and outcome content as historical source claims, not medical, safety, financial, or predictive guidance.
+- [x] Test all closing and folio-only bounds, notes, roles, attribution, exclusions, and release projection.
+- [x] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 7: Reconcile release and verify
 
