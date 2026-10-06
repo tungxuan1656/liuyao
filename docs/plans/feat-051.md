@@ -109,11 +109,11 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Inspect each of the 24 board headings and complete diagrams listed under chapter 4 in the source inventory.
-- [ ] Keep shared-page board citations separate; a neighboring board's evidence does not cover the current board.
-- [ ] Verify the Chấn sixth board `Thủy Phong Tỉnh` against PDF 57's image.
-- [ ] Add tests for each board ID, citation bounds, figure evidence, and actual annotation presence.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect each of the 24 board headings and complete diagrams listed under chapter 4 in the source inventory.
+- [x] Keep shared-page board citations separate; a neighboring board's evidence does not cover the current board.
+- [x] Verify the Chấn sixth board `Thủy Phong Tỉnh` against PDF 57's image.
+- [x] Add tests for each board ID, citation bounds, figure evidence, and actual annotation presence.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 7: Author Khôn and Đoài palace boards
 

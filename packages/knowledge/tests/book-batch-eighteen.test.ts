@@ -235,3 +235,42 @@ describe('BPCT Càn, Khảm and Cấn boards', () => {
     );
   });
 });
+
+import chanBoards from '../data/liuyao/bpct-boards-chan.json';
+import tonBoards from '../data/liuyao/bpct-boards-ton.json';
+import lyBoards from '../data/liuyao/bpct-boards-ly.json';
+describe('BPCT Chấn, Tốn and Ly boards', () => {
+  it.each([chanBoards, tonBoards, lyBoards])(
+    'resolves every $id label and distinct board citation',
+    record => {
+      expect(record.figures).toHaveLength(8);
+      expect(getBookRecord(record.id)).toEqual(record);
+      for (const figure of record.figures) {
+        expect(figure.labels).toHaveLength(6);
+        const unit = registry.groups.find(g => g.id === figure.sourceUnitIds[0])!;
+        expect(unit.recordIds).toContain(record.id);
+        for (const label of figure.labels) {
+          const c = record.claims.find(c => c.id === label.claimIds[0])!;
+          expect(getBookCitation(c.citationIds[0]!)?.location).toMatchObject({
+            pdfPageStart: unit.pdfPageStart,
+            pdfPageEnd: unit.pdfPageStart,
+          });
+        }
+      }
+    },
+  );
+  it('protects image-confirmed Tỉnh, attached note ownership and unrepaired marker conflicts', () => {
+    expect(chanBoards.figures.find(f => f.sourceUnitIds.includes('bpct-board-30'))?.title).toMatch(
+      /TỈNH/,
+    );
+    expect(chanBoards.claims.find(c => c.id.endsWith('board-30-line-6'))?.text).toMatch(/Canh Tí/);
+    expect(chanBoards.claims.find(c => c.id.endsWith('board-28-line-2'))?.text).toMatch(/Thế/);
+    expect(chanBoards.claims.find(c => c.id.endsWith('note-01-note'))?.text).toMatch(
+      /marker thuộc Tỉnh/,
+    );
+    expect(
+      tonBoards.claims.find(c => c.id.endsWith('board-39-annotation-disposition'))?.text,
+    ).toMatch(/Thế in tại 4,1; Ứng in tại không có/);
+    expect(lyBoards.claims.find(c => c.id.endsWith('board-44-line-5'))?.text).toMatch(/Ứng/);
+  });
+});
