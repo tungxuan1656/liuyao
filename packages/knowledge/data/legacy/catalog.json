@@ -3,52 +3,7 @@
   "reviewStatus": "unaudited",
   "note": "Compatibility content from the pre-book catalog. These records have not been certified against the supplied editions.",
   "catalog": {
-    "entities": [
-      {
-        "kind": "hexagram",
-        "id": "hexagram-61",
-        "name": "Phong Trạch Trung Phu",
-        "aliases": [],
-        "explanation": "Quẻ số 61 theo thứ tự Văn Vương, gồm nội quái Đoài và ngoại quái Tốn.",
-        "kingWenNumber": 61,
-        "upperTrigramId": "trigram-wind",
-        "lowerTrigramId": "trigram-lake",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-62",
-        "name": "Lôi Sơn Tiểu Quá",
-        "aliases": [],
-        "explanation": "Quẻ số 62 theo thứ tự Văn Vương, gồm nội quái Cấn và ngoại quái Chấn.",
-        "kingWenNumber": 62,
-        "upperTrigramId": "trigram-thunder",
-        "lowerTrigramId": "trigram-mountain",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-63",
-        "name": "Thủy Hỏa Ký Tế",
-        "aliases": [],
-        "explanation": "Quẻ số 63 theo thứ tự Văn Vương, gồm nội quái Ly và ngoại quái Khảm.",
-        "kingWenNumber": 63,
-        "upperTrigramId": "trigram-water",
-        "lowerTrigramId": "trigram-fire",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "kind": "hexagram",
-        "id": "hexagram-64",
-        "name": "Hỏa Thủy Vị Tế",
-        "aliases": [],
-        "explanation": "Quẻ số 64 theo thứ tự Văn Vương, gồm nội quái Khảm và ngoại quái Ly.",
-        "kingWenNumber": 64,
-        "upperTrigramId": "trigram-fire",
-        "lowerTrigramId": "trigram-water",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      }
-    ],
+    "entities": [],
     "terms": [
       {
         "id": "term-ruleset",

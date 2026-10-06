@@ -33,7 +33,9 @@
     "citations/batch-fourteen-hexagrams.json",
     "citations/batch-fourteen-advanced.json",
     "citations/batch-fifteen-hexagrams.json",
-    "citations/batch-fifteen-advanced.json"
+    "citations/batch-fifteen-advanced.json",
+    "citations/batch-sixteen-hexagrams.json",
+    "citations/batch-sixteen-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -232,7 +234,12 @@
     "hexagrams/hexagram-58.json",
     "hexagrams/hexagram-59.json",
     "hexagrams/hexagram-60.json",
-    "liuyao/useful-spirit-avoidance-rescue-and-transformation-context.json"
+    "liuyao/useful-spirit-avoidance-rescue-and-transformation-context.json",
+    "hexagrams/hexagram-61.json",
+    "hexagrams/hexagram-62.json",
+    "hexagrams/hexagram-63.json",
+    "hexagrams/hexagram-64.json",
+    "liuyao/adverse-support-store-intervening-lines-and-release-context.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -431,7 +438,12 @@
     "hexagram-58",
     "hexagram-59",
     "hexagram-60",
-    "article-useful-spirit-avoidance-rescue-and-transformation-context"
+    "article-useful-spirit-avoidance-rescue-and-transformation-context",
+    "hexagram-61",
+    "hexagram-62",
+    "hexagram-63",
+    "hexagram-64",
+    "article-adverse-support-store-intervening-lines-and-release-context"
   ],
   "topics": [
     {
@@ -491,8 +503,8 @@
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
-    "hexagramIds": ["hexagram-61", "hexagram-62", "hexagram-63", "hexagram-64"],
+    "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến tiếp tục Trung Phu, Tiểu Quá, Ký Tế, Vị Tế và BPCT Phần I, Chương 6, câu 49–56 (feat-049). Sáu mươi quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 41–48 giữ riêng phú, bình giải và chú thích 9. Không bổ sung Chu Hy ở hào sáu Tiết khi nguồn không có nhãn riêng. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng giai đoạn đầy đủ, phép lịch hoặc dự báo sức khỏe."
+    "note": "Dự kiến BPCT Phần I, Chương 6, câu 57–69 (feat-050), PDF 94–100. Cả 64 quẻ có tổng quan và sáu vị trí với diễn giải được chọn từ NHL, PBC, NTT; câu 49–56 giữ riêng phú, bình giải và chú 10–11. Nhãn Tiên Nho trống ở Tiểu Quá tam không cung cấp bình. Không bổ sung Thoán/Tượng hoặc văn bản bị thiếu; tác giả, cách đọc khác và giới hạn nguồn vẫn riêng. Tác giả hóa và source comparison không đóng audit từng cell/layer, phê duyệt độc lập hoặc chứng nhận corpus; không phát hành phép lịch, classifier xung hay dự báo sức khỏe."
   }
 }

@@ -627,6 +627,100 @@ No copied verse, Han quotation, replacement translation, source repair, calendar
 automated interpretation or efficacy certification is published. Feat-085's layer audit and
 inventory remainder, separate verification and corpus certification remain open.
 
+### Quẻ 61-64 and BPCT 49-56 selected comparison
+
+[Batch-sixteen classical citations](../../packages/knowledge/data/citations/batch-sixteen-hexagrams.json)
+support original Vietnamese selections for [Trung Phu](../../packages/knowledge/data/hexagrams/hexagram-61.json),
+[Tiểu Quá](../../packages/knowledge/data/hexagrams/hexagram-62.json),
+[Ký Tế](../../packages/knowledge/data/hexagrams/hexagram-63.json) and
+[Vị Tế](../../packages/knowledge/data/hexagrams/hexagram-64.json).
+Component comparison read full passages at NHL PDF 321–333, PBC 564–600 and NTT 895–936;
+contact sheets covering every assigned page were directly inspected. This is not individual full-size
+review of every page. Full-size focused images at NHL 331, NTT 911/912/930/933 and PBC 655 were
+also inspected. NHL/PBC diagrams and NTT named quái/six line labels are distinct structural witnesses;
+NHL printed footer labels match PDF numbers, while no numerical PBC/NTT folios are inferred.
+
+All 24 positions retain NHL, PBC, Trình Di and Chu Hy separately, with NTT transmission attributed
+through Ngô Tất Tố. PBC explicit PHỤ CHÚ, Trương Trung Khê at NTT 900 and uncredited PBC endnote 21
+at 655 remain separate. All eight numbered NTT notes are represented: Trung Phu 1–2 at 904,
+Tiểu Quá 1–3 at 916, Ký Tế 1–2 at 926 and Vị Tế 1 at 936. NTT 912 has only an empty Tiên Nho
+heading after Tiểu Quá tam; no commentary is invented. None of these four NTT Thoán passages has
+a separately labelled Chu Hy block. Ký Tế Đại Tượng has only Trình Di; Vị Tế nhị lacks a separately
+printed Tiểu Tượng between its Chu Hy paragraph and tam. Do not supply absent text from other editions.
+Full original/translation mapping, layer rosters and feat-083 per-cell/source-unit audit remain open.
+
+Six bounded discrepancy records are display/selection decisions, not critical-edition repairs:
+
+- Trung Phu nhị/ngũ are both yang. NHL/PBC/Chu Hy response language is shared virtue or sentiment,
+  not an opposite-polarity formal chính ứng.
+- Tiểu Quá NTT 911 places tam's original Tiểu Tượng in the nhị section, while reading/meaning and
+  both authors explain the minister's limits; 912 contains tam's own Tiểu Tượng. Keep the nhị commentary
+  separately and do not import tam's meaning. Individual images confirm the layout.
+- Tiểu Quá nhị/ngũ stay yin despite shared-type response language. Trình Di explicitly says they do not
+  respond as opposite polarities at NTT 914. PBC/NTT's cương thất vị overview language does not make
+  yang tam structurally misplaced; NTT 912 says tam alone chính. PBC 578–579's repeated Cửu Nhị
+  wording remains a noted inconsistency beside Lục Nhị headings and the yin figures.
+- Ký Tế PBC 588 calls nhị Cửu Nhị in commentary/Tượng although its heading is Lục Nhị. Figures and
+  NHL/NTT witnesses retain yin two; the source wording is not repaired.
+- Vị Tế NHL 331 twice says five misplaced hào. Its six-line figure, six line passages and PBC 594/NTT 928
+  support all six positions; a full-size image confirms the erroneous five, not an extraction artifact.
+- Vị Tế NTT 930 original/reading says tail while meaning and Trình Di's Tượng paragraph say head.
+  Keep the first-line tail and limitation visible rather than reassigning this to the upper line.
+
+Other observed wording limitations remain in review notes rather than reconstructed prose:
+NTT 896's unusual negation about chính bền; Trung Phu mã xuất/mã thất, hàn/hà and missing-negation
+wording; PBC's Bĩ in the prison-quẻ list; Tiểu Quá's reduced/mixed Thoán opening and omitted reading;
+Ký Tế original line-five missing thược beside its reading, chờ/chớ, thăm dò, truncated PBC thược gloss
+and cửu/cứu ending; Vị Tế Tượng/Thoán opener, vô/vong hối and NTT 933's repeated contradictory
+Chu Hy tư chất phrases including ăn năn sẽ chết. The last passage is individually image-confirmed;
+only its clear opening and closing meaning is selected, not a completed or repaired paragraph.
+NHL 325/327 reference-1 content was not located and supports no released claim.
+
+Trung Phu preserves Trình Di/Chu Hy's tước/virtue beside NHL/PBC's wine illustration and inline Hệ Từ
+extension; PBC endnote 21's Vị Sinh story has no identified note author and does not advise self-harm.
+Tiểu Quá preserves amplified thunder in Trình Di beside attenuated thunder in NHL/PBC, PBC's quân-tử
+reading of đại cát, NHL's doubts about nhị and Chu Hy's uncertainty about phất quá ngộ chi and ngộ/quá.
+Ký Tế retains hanh tiểu versus proposed tiểu hanh, cloth versus vehicle-cover phất in note 2 and
+Trình Di's conditional war justification beside PBC's caution against provoking war.
+Vị Tế keeps Trình Di's ngật proposal beside Chu Hy's hất, extreme/kính and absent-bất proposals as opinions,
+PBC nonliteral drinking and special phu gloss, and Trình Di's inability to tế without position beside
+Chu Hy's possible action with self-cultivation/waiting. Named historical, religious, animal, medical,
+physiological, meteorological and technological examples are supplied-author testimony, not independently
+verified science/history, forecasts, modern gender/social obligations, coercion or ritual instructions.
+No current calendar, injury/health/mortality prediction, automated interpretation or efficacy is released.
+
+[Batch-sixteen advanced citations](../../packages/knowledge/data/citations/batch-sixteen-advanced.json)
+support the [BPCT 49–56 article](../../packages/knowledge/data/liuyao/adverse-support-store-intervening-lines-and-release-context.json).
+Full extracted context at 1–3, 91–95 and 403 was read; individual images at 1–3, 92–94 and 403
+were directly inspected. Generated 91/95 renders are not counted as individually inspected.
+No diagram or table occurs in the selected passages; the chart at 403 remains outside the selection.
+Full verse/commentary bounds are 49–51: 92 (printed 78); 52 verse: 92–93 (78–79), commentary: 93 (79);
+53: 93 (79); 54–56: 94 (80). Sentence 48's continuation and 57 onward are not absorbed.
+
+Every verse keeps the supplied edition's Lưu Bá Ôn credits separate from Vương Hồng Tự's commentary
+transmitted by Vĩnh Cao. Shared front-matter citations record edition credits, not verified historical
+authorship of each verse. Note 10 belongs to 50, despite its footer after label 52; it explicitly admits
+unclear commentary and supplies a Thủy/Thìn example. Note 11 attaches to vật in 53 and points to 32,
+calling vật a moving line locally. These are the only attached notes. Reused PDF-403 dissent is Vĩnh Cao's
+separate objection to Hình/Hại, not an attached note, whole-question audit or agreement with the main text.
+
+Sentence 49 preserves day/month support exceptions to cô hàn; lâm khởi/trị does not establish a universal
+Nhật-xung classifier. Sentence 50's terse thích nhật and unspecified Thân stay ambiguous; note 10's
+explanation does not rewrite the author. Sentence 51 keeps external gian obstruction distinct from
+inward Thế Không reluctance; Thê in one rendered line does not change the Thế of the reading/commentary.
+Sentence 52 preserves Giao/Trùng temporal convention and the two Dần/Mão Tiến/Thoái examples without
+changing casting polarity mechanics or supplying an exhaustive table. Sentence 53 keeps local Sinh-as-hợp,
+Thân-as-Thế for self-questions, Kỵ harming Dụng versus Dụng khắc Thế, and the Dụng sinh/hợp Ứng exception;
+the thi-Hương illness story is not verified outcome, health evidence or a reconstructed board.
+Sentence 54's original bát-form beside bất reading remains visible, with relative Hại, suy-vượng/sinh-khắc
+qualification and Tuyệt rescue; disease and gender accusations are attributed, not facts or judgments
+about current people. Sentence 55 retains four tĩnh/động and Không/non-Không contexts, with tán/thoát effects
+only in the fourth; missing strength thresholds, source-of-xung distinctions and cross-passage priority rules
+are not invented. Sentence 56 retains day and transformation Tuyệt plus sinh phù, not an unconditional
+rescue guarantee. No copied verse, Han quotation, replacement translation, source repair, complete classifier,
+stage/calendar table, scoring, automated interpretation or efficacy certification is published.
+Feat-085 discovery/layer audit, separate corpus verification and certification remain open.
+
 ### Classical exclusions
 
 - Phệ Hạp's second-line explanations use ứng for the fifth line, although both positions are yin.

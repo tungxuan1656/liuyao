@@ -95,7 +95,7 @@ The exclusive top-level partition is 1–3, 4–6, 7–8, 9–10, 11–12, 13–
 | `pbc-tu-quai`                |       651 | Author says sequence explanations already appear at quẻ heads and leaves this separate translation omitted.                | 060 → 092                                            | Source-reported omission; do not reconstruct.                                           |
 | `pbc-tap-quai`               |       652 | Author says the text is difficult and leaves it untranslated.                                                              | 060 → 092                                            | Source-reported omission; do not reconstruct.                                           |
 | `pbc-afterword`              |   653–654 | Phan Bội Châu afterword/retrospective and end marker.                                                                      | 060 → 092                                            | Uncovered as source content.                                                            |
-| `pbc-endnotes`               |       655 | Twenty-one numbered endnotes. Note 13 has one selected citation; it does not cover the other notes.                        | 060 → 092                                            | Selected coverage; 20 other notes and note links remain open.                           |
+| `pbc-endnotes`               |       655 | Twenty-one numbered endnotes. Selected citations include note 13 and feat-049 note 21; remaining notes/links need audit.   | 060 → 092                                            | Selected coverage; remaining notes and full note links stay open.                       |
 
 ### NTT — 938 pages
 
@@ -174,10 +174,10 @@ The exclusive partition uses front matter and source headings, 64 quẻ ranges, 
 | `ntt-hexagram-58`             |   864–873 | Quẻ 58 Đoài.                                                          | 048 → 082                    | Selected source-compared claims; audit layers and remainder open.            |
 | `ntt-hexagram-59`             |   874–885 | Quẻ 59 Hoán.                                                          | 048 → 082                    | Selected source-compared claims; audit layers and remainder open.            |
 | `ntt-hexagram-60`             |   886–894 | Quẻ 60 Tiết.                                                          | 048 → 082                    | Selected source-compared claims; audit layers and remainder open.            |
-| `ntt-hexagram-61`             |   895–904 | Quẻ 61 Trung Phu.                                                     | 049 → 083                    | Uncovered authoring.                                                         |
-| `ntt-hexagram-62`             |   905–916 | Quẻ 62 Tiểu Quá.                                                      | 049 → 083                    | Uncovered authoring.                                                         |
-| `ntt-hexagram-63`             |   917–926 | Quẻ 63 Ký Tế.                                                         | 049 → 083                    | Uncovered authoring.                                                         |
-| `ntt-hexagram-64`             |   927–936 | Quẻ 64 Vị Tế.                                                         | 049 → 083                    | Uncovered authoring.                                                         |
+| `ntt-hexagram-61`             |   895–904 | Quẻ 61 Trung Phu.                                                     | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.            |
+| `ntt-hexagram-62`             |   905–916 | Quẻ 62 Tiểu Quá.                                                      | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.            |
+| `ntt-hexagram-63`             |   917–926 | Quẻ 63 Ký Tế.                                                         | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.            |
+| `ntt-hexagram-64`             |   927–936 | Quẻ 64 Vị Tế.                                                         | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.            |
 | `ntt-blank-937`               |       937 | Blank page.                                                           | 060 → 092                    | Non-content disposition.                                                     |
 | `ntt-colophon-938`            |       938 | Printing/deposit colophon. Edition evidence, not commentary.          | 060 → 092                    | Edition evidence; no domain claim inferred.                                  |
 
@@ -282,10 +282,10 @@ The source body, not its contents pages, sets the quẻ starts. PDF 3 and PDF 39
 | `nhl-hexagram-58`         |   312–314 | Quẻ 58 Đoài.                                                                                             | 048 → 082                                        | Selected source-compared claims; audit layers and remainder open.              |
 | `nhl-hexagram-59`         |   315–317 | Quẻ 59 Hoán.                                                                                             | 048 → 082                                        | Selected source-compared claims; audit layers and remainder open.              |
 | `nhl-hexagram-60`         |   318–320 | Quẻ 60 Tiết.                                                                                             | 048 → 082                                        | Selected source-compared claims; audit layers and remainder open.              |
-| `nhl-hexagram-61`         |   321–323 | Quẻ 61 Trung Phu.                                                                                        | 049 → 083                                        | Uncovered authoring.                                                           |
-| `nhl-hexagram-62`         |   324–327 | Quẻ 62 Tiểu Quá.                                                                                         | 049 → 083                                        | Uncovered authoring.                                                           |
-| `nhl-hexagram-63`         |   328–330 | Quẻ 63 Ký Tế. Body heading PDF 328; contents points to printed page 326.                                 | 049 → 083                                        | Uncovered authoring; use observed body heading.                                |
-| `nhl-hexagram-64`         |   331–333 | Quẻ 64 Vị Tế. Body heading PDF 331; contents points to printed page 329.                                 | 049 → 083                                        | Uncovered authoring; use observed body heading.                                |
+| `nhl-hexagram-61`         |   321–323 | Quẻ 61 Trung Phu.                                                                                        | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.              |
+| `nhl-hexagram-62`         |   324–327 | Quẻ 62 Tiểu Quá.                                                                                         | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.              |
+| `nhl-hexagram-63`         |   328–330 | Quẻ 63 Ký Tế. Body heading PDF 328; contents points to printed page 326.                                 | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.              |
+| `nhl-hexagram-64`         |   331–333 | Quẻ 64 Vị Tế. Body heading PDF 331; contents points to printed page 329.                                 | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.              |
 | `nhl-he-tu-title`         |       334 | Hệ Từ Truyện / Đại Truyện title and transition; not a prose chapter.                                     | 061 → 092                                        | Non-content/title disposition.                                                 |
 | `nhl-he-tu-shang-01`      |   335–337 | Hệ Từ Thượng chapter 1.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                                        |
 | `nhl-he-tu-shang-02`      |   338–339 | Hệ Từ Thượng chapter 2.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                                        |
@@ -397,10 +397,10 @@ For every quẻ, derive the source-unit expectation before consulting authored c
 |      58 Đoài | `pbc/ntt/nhl-hexagram-58` | 539–545 | 864–873 | 312–314 | 048 → 082                    | Selected overviews and six positions in all three editions; audit closure remains open.                 |
 |      59 Hoán | `pbc/ntt/nhl-hexagram-59` | 546–555 | 874–885 | 315–317 | 048 → 082                    | Selected overviews and six positions in all three editions; audit closure remains open.                 |
 |      60 Tiết | `pbc/ntt/nhl-hexagram-60` | 556–563 | 886–894 | 318–320 | 048 → 082                    | Selected overviews and six positions in all three editions; audit closure remains open.                 |
-| 61 Trung Phu | `pbc/ntt/nhl-hexagram-61` | 564–573 | 895–904 | 321–323 | 049 → 083                    | Uncovered authoring in all three editions.                                                              |
-|  62 Tiểu Quá | `pbc/ntt/nhl-hexagram-62` | 574–582 | 905–916 | 324–327 | 049 → 083                    | Uncovered authoring in all three editions.                                                              |
-|     63 Ký Tế | `pbc/ntt/nhl-hexagram-63` | 583–591 | 917–926 | 328–330 | 049 → 083                    | Uncovered authoring in all three editions. NHL body start differs from contents.                        |
-|     64 Vị Tế | `pbc/ntt/nhl-hexagram-64` | 592–600 | 927–936 | 331–333 | 049 → 083                    | Uncovered authoring in all three editions. NHL body start differs from contents.                        |
+| 61 Trung Phu | `pbc/ntt/nhl-hexagram-61` | 564–573 | 895–904 | 321–323 | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.                                       |
+|  62 Tiểu Quá | `pbc/ntt/nhl-hexagram-62` | 574–582 | 905–916 | 324–327 | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.                                       |
+|     63 Ký Tế | `pbc/ntt/nhl-hexagram-63` | 583–591 | 917–926 | 328–330 | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.                                       |
+|     64 Vị Tế | `pbc/ntt/nhl-hexagram-64` | 592–600 | 927–936 | 331–333 | 049 → 083                    | Selected source-compared claims; audit layers and remainder open.                                       |
 
 ## BPCT registers for source-derived child units
 
@@ -460,7 +460,7 @@ The fresh image inspection confirmed every top-level printed label 1–69 in PDF
 | `bpct-ch06-25..32` | 25–27: 85; 28–30: 86; 31–32: 87                       | 046 — selected verse/commentary and notes 5–6; audit closure open.                |
 | `bpct-ch06-33..40` | 33–34: 87; 35–37: 88; 38–40: 89                       | 047 — selected verse/commentary and notes 7–8; audit closure open.                |
 | `bpct-ch06-41..48` | 41: 89; 42–45: 90; 46–48: 91                          | 048                                                                               |
-| `bpct-ch06-49..56` | 49–52: 92; 53: 93; 54–56: 94                          | 049                                                                               |
+| `bpct-ch06-49..56` | 49–52: 92; 53: 93; 54–56: 94                          | 049 — selected verse/commentary and notes 10–11; audit closure open.              |
 | `bpct-ch06-57..69` | 57–58: 94; 59–60: 95; 61–63: 96; 64–65: 97; 66–69: 99 | 050                                                                               |
 
 These are exact top-level printed-label starts. Continuations include 3 on PDF 78; 11 on 81; 14 on 82; 17 on 83; 21 on 84; 24 on 85; 30 on 87; 34 on 88; 41 on 90; 45 on 91; 48 on 92; 52 on 93; 58 on 95; 60 on 96; 63 on 97; 65 on 98; and 69 on 100. Cohort ownership is unchanged; this list does not map every clause or note boundary.
@@ -629,6 +629,31 @@ Verse and commentary remain separate; chapter-wide layers, examples and audit cl
 No complete stage table, calendar, classifier, automated interpretation, independent verification
 approval or certification is supplied.
 
+### Feat-049 selected routes and remaining source obligations
+
+Quẻ 61–64 map to [batch-sixteen classical citations](../../../packages/knowledge/data/citations/batch-sixteen-hexagrams.json)
+and `hexagram-61` through `hexagram-64`. Full passages and contact sheets at NHL PDF 321–333,
+PBC 564–600 and NTT 895–936 support selected overviews and all six positions, with NHL/PBC,
+Trình Di/Chu Hy, PBC supplements, Trương Trung Khê and NTT notes kept distinct. All eight attached
+NTT notes are separate (61: 1–2 at 904; 62: 1–3 at 916; 63: 1–2 at 926; 64: 1 at 936).
+PBC endnote 21 at 655 is separately mapped to quẻ 61 six with unconfirmed note authorship;
+it does not close `pbc-endnotes`. The empty Tiên Nho heading at NTT 912 supplies no text.
+Missing labelled Chu Hy Thoán blocks and Ký Tế Đại Tượng, and Vị Tế nhị Tiểu Tượng, are not invented.
+Text/label discrepancies, limited alternatives and historical imagery exclusions are in the records
+and [source findings](../../references/book-sources.md#quẻ-61-64-and-bpct-49-56-selected-comparison).
+This does not close feat-083 per-cell/layer rosters, source-unit remainder or separate verification.
+
+BPCT `bpct-ch06-49..56` maps to
+[the selected article](../../../packages/knowledge/data/liuyao/adverse-support-store-intervening-lines-and-release-context.json)
+and [batch-sixteen advanced citations](../../../packages/knowledge/data/citations/batch-sixteen-advanced.json).
+Complete numbered bounds: 49–51 PDF 92; 52 verse 92–93 and commentary 93; 53 PDF 93; 54–56 PDF 94.
+Verse and Vương Hồng Tự commentary stay separate, with Vĩnh Cao notes 10 (50, PDF 92) and 11
+(53, PDF 93). Neither footer placement nor the adjacent label changes note ownership.
+Shared front-matter credits and separate PDF-403 dissent are reused, not new whole-unit coverage.
+Sentences 48/57 onward remain outside this batch. Thích nhật ambiguity, Thê/Thế and bát/bất forms
+remain visible; no source repair, full classifier, medical/gender prediction, calendar or efficacy claim
+is released. Feat-085 discovery, layer mapping and independent verification remain open.
+
 ## Ownership and crosswalk rules
 
 The source-partition rows name the primary author and later audit feature for every unit. These IDs route planned work; they do not claim that the work is done. Feature 084 is only a cross-reference for shared foundations, tables, diagrams or casting claims that match its acceptance; it is not a second owner of an entire classical introduction or chapter.
@@ -636,7 +661,7 @@ The source-partition rows name the primary author and later audit feature for ev
 | Work class                                                         | Existing records/citations                                                                                                                                                                                          | Authoring route                                                            | Audit route                                                              |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Quẻ 01–40                                                          | Manifest-listed reviewed/released `packages/knowledge/data/hexagrams/hexagram-01.json` through `hexagram-40.json`, with citation files by prior batch. Quẻ 06 and 10 are authored records, not legacy-only entries. | Historical owners 032–041; preserve released records.                      | 068–077; audit all 40, including already reviewed units.                 |
-| Quẻ 41–64                                                          | Manifest-listed quẻ 41–60 have selected reviewed/released records; quẻ 61–64 remain uncovered. Source-unit and audit layer closure stay open.                                                                       | 044–049, four quẻ per feature.                                             | 078–083, four quẻ per feature.                                           |
+| Quẻ 41–64                                                          | Manifest-listed quẻ 41–64 have selected reviewed/released records; no quẻ authoring slot remains uncovered. Source-unit and audit layer closure stay open.                                                          | 044–049, four quẻ per feature.                                             | 078–083, four quẻ per feature.                                           |
 | Càn/Khôn special passages                                          | Existing records have selected special passages; do not treat as a seventh line.                                                                                                                                    | 063                                                                        | 068                                                                      |
 | BPCT foundations, boards and ch.5                                  | Selected source citations, records and some advanced material. A citation supports its cited claim, not its whole chapter or board set.                                                                             | 051                                                                        | 084                                                                      |
 | BPCT ch.6 labels 1–11                                              | Selected prior records/citations; completed authoring owners 040/041 remain historical owners; do not reopen or assign them new work here.                                                                          | Historical authors 040 (1–6), 041 (7–11); no new author assignment.        | 085 owns fixes within audit acceptance; 066/094 track inventory closure. |

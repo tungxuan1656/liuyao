@@ -42,7 +42,9 @@ describe('feat-045 source-compared quẻ 45–48 and BPCT 17–24', () => {
     expect(listHexagrams().find(item => item.id === record.id)?.kingWenNumber).toBe(
       record.structure.kingWenNumber,
     );
-    expect(legacy.catalog.entities.some(item => item.id === record.id)).toBe(false);
+    expect(legacy.catalog.entities.some((item: { id: string }) => item.id === record.id)).toBe(
+      false,
+    );
     expect(record.lines.map(line => line.position)).toEqual([1, 2, 3, 4, 5, 6]);
     expect(record.lines.map(line => line.polarity)).toEqual(record.structure.lines);
     for (const line of record.lines) {

@@ -1107,3 +1107,22 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 167 local documentation targets, dependency checks, and diff checks passed. All 384 audit items, corpus data, application code, and previous statuses remain unchanged.
 - Blockers: None for planning. Extended contracts, web fidelity, volume checks, and specialist approval remain unimplemented or pending.
 - Next: Select feat-043 and build the source-to-record/exclusion crosswalk, then complete feat-101.
+
+## 2026-10-06 — feat-049 authored source-compared batch
+
+- Status: active; implementation complete, final verification pending.
+- Result: Added quẻ 61–64 with all 24 positions and actual author layers, plus BPCT 49–56 with separate verses/commentaries and notes 10–11. Preserved eight NTT notes, named/anonymous supplements, source discrepancies and missing text. Removed only the four remaining legacy entities without changing IDs.
+- Evidence: Baseline full verification passed 482 tests and source fingerprints; package tests now pass 312. Coverage is 202 records, 2,398 claims, 2,662 citations, 64 quẻ and 384 positions. Inventory and registry revision/hash reconcile only this batch.
+- Offline: Measured integrated main asset 3,113,895 bytes exceeded prior 2,949,120 cap. Authorized measured increase to 3,211,264 keeps all 18 entries precached with 97,369 bytes reserve; no other PWA behavior changes.
+- Limitations: Source comparison is not corpus certification. Missing/ambiguous passages, layer rosters, remainder and independent verification stay open. No medical, gender, ritual, calendar, scoring or automatic-interpretation authority added.
+- Next: Finish full verification, exact package-export evidence and diff inspection, then close feat-049.
+
+## 2026-10-06 — feat-049 completed local acceptance and verification
+
+- Status: done; independent branch acceptance review remains the handoff gate, not corpus certification.
+- Result: Final classical authoring slots complete: 64 quẻ and 384 positions have selected source-compared coverage. BPCT 49–56 preserves all numbered verse/commentary layers and notes 10–11; actual absent commentary and source limitations remain explicit.
+- Commit: Implementation `0bd626a7406f7e26b01e820f54ac8afef21574ee`.
+- Evidence: Final `./init.sh` passed all checks and 493 tests (181 core + 312 knowledge). `validate:corpus --check-books --check`, format freshness, package-export comparison of five records/191 claims, SW precache inclusion, 153 documentation routes and final diff checks passed. All 197 prior released records and 2,392 prior citations remain semantically unchanged. Worktree had no unrelated changes.
+- Offline: `index-DtlSMMtK.js` is 3,113,895 bytes; cap 3,211,264; 97,369-byte reserve. All 18 assets stay precached and other PWA settings stay unchanged.
+- Limitations: Contact-sheet review is not full-size review of every classical page. Missing/ambiguous text, unlocated NHL reference, uncredited PBC note and author alternatives are retained without repair. Audit/verification/certification gates stay closed; no full corpus or efficacy approval claimed.
+- Next: Independent acceptance review of feat-049; then user selection of feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100).
