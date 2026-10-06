@@ -79,10 +79,10 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Inspect complete `Thông Huyền Phú` and `Túy Kim Phú` on PDF 43–48, including poem lines, explanations, notes, and attribution.
-- [ ] Preserve the two named works and their source layers as separate claims.
-- [ ] Add tests for both poems, their passage bounds, layer attribution, and source-backed exclusions.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect complete `Thông Huyền Phú` and `Túy Kim Phú` on PDF 43–48, including poem lines, explanations, notes, and attribution.
+- [x] Preserve the two named works and their source layers as separate claims.
+- [x] Add tests for both poems, their passage bounds, layer attribution, and source-backed exclusions.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 5: Author Càn, Khảm, and Cấn palace boards
 

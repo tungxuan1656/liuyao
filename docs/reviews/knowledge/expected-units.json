@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 12,
+  "registryRevision": 13,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "ddfd27635c6ef30c547ab0fec9bc43eae8efcef372cd4600ab24fc1875e16288"
+    "sha256": "6fca756f6d2ca4ee3152b7e2bd517cac1752e5851625b4e79bd4141c59e1a5b5"
   },
   "counts": {
     "overviewCells": 192,
@@ -3621,7 +3621,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-three-poems"]
     },
     {
       "id": "bpct-part1-ch04",
@@ -14902,7 +14903,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-three-poems"]
     },
     {
       "id": "bpct-ch03-tuy-kim",
@@ -14920,7 +14922,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-three-poems"]
     },
     {
       "id": "bpct-ch04-intro",

@@ -47,7 +47,7 @@ describe('book corpus publication boundary', () => {
         ),
       0,
     );
-    expect(claimCount).toBe(2653);
+    expect(claimCount).toBe(2759);
     expect(report.complete).toBe(false);
     expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
     expect(
@@ -69,7 +69,7 @@ describe('book corpus publication boundary', () => {
       expect(record.claims.some(claim => claim.kind === 'structural-fact')).toBe(true);
     }
     expect(report.hexagrams.reviewed).toBe(64);
-    expect(report.records.released).toBe(206);
+    expect(report.records.released).toBe(207);
     expect(report.lines.reviewedPositions).toBe(384);
     expect(report.hexagrams.missingIds).toHaveLength(0);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({

@@ -145,3 +145,38 @@ describe('BPCT chapter-two complete formulas', () => {
     );
   });
 });
+
+import poems from '../data/liuyao/bpct-chapter-three-poems.json';
+describe('BPCT chapter-three named poems', () => {
+  it('keeps both complete works and every actual layer distinct', () => {
+    for (const [work, count] of [
+      ['thong-huyen', 25],
+      ['tuy-kim', 10],
+    ] as const) {
+      for (const layer of ['verse', 'reading', 'rendering']) {
+        expect(poems.claims.filter(c => c.id.includes(`-${work}-${layer}-`))).toHaveLength(count);
+      }
+      expect(registry.groups.find(g => g.id === `bpct-ch03-${work}`)?.recordIds).toContain(
+        poems.id,
+      );
+    }
+    expect(getBookRecord(poems.id)).toEqual(poems);
+    expect(poems.claims.find(c => c.id.endsWith('tuy-kim-closing'))?.attribution.author).toMatch(
+      /không ký/,
+    );
+  });
+  it('protects original, reading and meaning continuations and disagreements', () => {
+    expect(
+      citations.citations.find(c => c.id.endsWith('thong-huyen-reading-25'))?.location,
+    ).toMatchObject({ pdfPageStart: 45, pdfPageEnd: 46 });
+    expect(
+      citations.citations.find(c => c.id.endsWith('tuy-kim-verse-06'))?.location,
+    ).toMatchObject({ pdfPageStart: 46, pdfPageEnd: 47 });
+    expect(poems.claims.find(c => c.id.endsWith('thong-huyen-rendering-11'))?.text).toMatch(
+      /Tài.*khác Huynh/,
+    );
+    expect(poems.claims.find(c => c.id.endsWith('tuy-kim-reading-09'))?.text).toMatch(
+      /Tài cứu.*Tử/,
+    );
+  });
+});
