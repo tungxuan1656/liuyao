@@ -1,10 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import registry from '../../../docs/reviews/knowledge/expected-units.json';
+import nien from '../data/liuyao/bpct-nien-thoi.json';
 import weather from '../data/liuyao/bpct-chapter-seven-weather.json';
 import citations from '../data/citations/batch-nineteen-advanced.json';
 import { getBookCitation, getBookRecord, listBookSources } from '../src/index';
 
 const checkpoints = [
+  { prefix: 'bpct-nien-', parent: 'bpct-part1-nien-thoi', record: nien, bounds: [111, 118] },
   { prefix: 'bpct-ch07-', parent: 'bpct-part1-ch07', record: weather, bounds: [101, 110] },
 ];
 
@@ -117,5 +119,34 @@ describe('feat-052 weather qualifications and exclusions', () => {
       /localInputPath|docs\/books|data:image|specialistReview/,
     );
     expect(JSON.stringify(listBookSources())).not.toContain('localInputPath');
+  });
+});
+
+describe('feat-052 unnumbered Niên Thời', () => {
+  it('keeps 36 passages, five attached notes, all illustrations and no chapter8', () => {
+    expect(nien.claims.filter(c => c.id.endsWith('-verse'))).toHaveLength(36);
+    expect(nien.claims.filter(c => c.id.endsWith('-commentary'))).toHaveLength(35);
+    expect(nien.claims.filter(c => c.id.includes('-note-'))).toHaveLength(5);
+    expect(nien.claims.filter(c => c.id.includes('-examples-'))).toHaveLength(11);
+    expect(nien.title).toContain('không đánh số chương');
+    expect(registry.groups.some(g => g.id === 'bpct-part1-ch08')).toBe(false);
+    expect(nien.claims.find(c => c.id.endsWith('31-commentary'))?.text).toMatch(/lạnh\/nóng/);
+    expect(nien.claims.find(c => c.id.endsWith('03-commentary'))?.text).toMatch(
+      /khác phú nói xung Thân/,
+    );
+  });
+  it.each([
+    ['03-verse', 111, 112],
+    ['07-commentary', 113, 113],
+    ['12-commentary', 114, 114],
+    ['18-rendering', 115, 115],
+    ['23-commentary', 116, 116],
+    ['35-verse', 117, 118],
+    ['36-rendering', 118, 118],
+  ])('retains exact continuation %s', (suffix, a, b) => {
+    expect(getBookCitation(`citation-bpct-nien-${suffix}`)?.location).toMatchObject({
+      pdfPageStart: a,
+      pdfPageEnd: b,
+    });
   });
 });

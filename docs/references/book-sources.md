@@ -1048,3 +1048,20 @@ hexagram identity. Verse34 is not a three-yin/three-yang classifier. Eclipse, dr
 weather accuracy and divine imagery remain attributed doctrine, not established events,
 meteorology, astronomy, forecasts, calendar computation or efficacy. Existing source-compared
 records stay unchanged; later feat-086 layer/unit audit and global gates remain open.
+
+### Feat-052 unnumbered Niên Thời
+
+The [year section](../../packages/knowledge/data/liuyao/bpct-nien-thoi.json) has36 passages,
+five separately attributed Vĩnh Cao notes and eleven illustration obligations at PDF111–118
+(printed94–101). It is not chapter8. Original/reading, meaning and commentary remain separate;
+36 has no commentary block. Complete extracted passages and contact-sheet images were compared.
+No tables/diagrams occur. Note1 belongs to3,2 to6,3 to10,4 to19,5 to20.
+
+The tứ xung Thân of3 differs from commentary's Tử sinh hợp Thế;13's hóa Phúc/Tài
+conditions are not repeated in the commentary;16 places Xà at Thế in the phú but lục
+in the commentary. Keep these differences, not a repaired consensus.31 distinguishes
+Thủy/Hỏa for hot/cold from Phụ/Tài for rain/drought, so it does not overwrite chapter7's
+question roles. The geographic examples Tí/Tề, Sửu/Ngô, Dần/Yên are not a complete map.
+Historical omen, dragon, earthquake, disease, warfare and imperial-administration accounts
+remain author testimony, not verified events, efficacy, modern politics or safety advice.
+The existing year/day/weather terms are cross-references, not merged source-unit identities.

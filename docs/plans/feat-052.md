@@ -61,11 +61,11 @@
 - Test: `packages/knowledge/tests/book-batch-nineteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Cover all passages, conditions, examples, and notes on PDF 111–118.
-- [ ] Keep Niên Thời a separate unnumbered unit between chapters 7 and 9; do not invent chapter 8.
-- [ ] Preserve overlaps with year/time concepts in chapter 7 as cross-references, not merged source units.
-- [ ] Test the full locator bounds, distinct unnumbered identity, layer attribution, and exclusions.
-- [ ] Run focused tests and the corpus validator; commit this checkpoint.
+- [x] Cover all passages, conditions, examples, and notes on PDF 111–118.
+- [x] Keep Niên Thời a separate unnumbered unit between chapters 7 and 9; do not invent chapter 8.
+- [x] Preserve overlaps with year/time concepts in chapter 7 as cross-references, not merged source units.
+- [x] Test the full locator bounds, distinct unnumbered identity, layer attribution, and exclusions.
+- [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 4: Author chapter 9 — Thân Mệnh
 
