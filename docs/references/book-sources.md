@@ -1616,3 +1616,65 @@ legal, tactical, safety, financial, ritual, self-harm or human-ownership authori
 released. All prior authored records/citations and exclusions remain semantically unchanged.
 Global layer rosters/discovery, feat-091 source audit, separate verification and corpus
 certification remain unfulfilled; this authoring comparison does not close their gates.
+
+## Feat-058 source comparison
+
+The worker compared complete PyMuPDF extraction artifacts `/tmp/feat058/429.txt`
+through `/tmp/feat058/467.txt` with individually opened full-page PNGs for every one
+of those39 pages (1.5x render,918x1188), plus boundary428 and credits1–3. Dense and
+shared-boundary pages were opened at the same full-page resolution, not as contact
+sheets. `inspection-artifacts.json` in that local directory records file hashes and
+render/extraction metadata. The467-page supplied BPCT fingerprint remains
+`713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`.
+The [passage register](../reviews/knowledge/source-inventory.md#feat-058-casting-supplements-and-criticisms-passage-register)
+owns stable unit IDs, source-layer locators and mappings, not accepted audit decisions.
+
+Printed labels restart:429–457 show388–416, while458–466 show366–374. The shared
+boundaries430/432/435/451 are real;467 is entirely blank, with no observed printed
+folio or further closing text. CriticismIII continues460, IV/VI are wholly460, X
+continues463, XI is wholly463, XII continues464, XIII continues465, XIV continues466,
+and XV is wholly466. Earlier navigation starts were not complete passage bounds.
+
+The II heading claims64 hexagrams/384 lines, but the supplied pages visibly enumerate
+only eight named entries (1–8), each with six transformations (48 rows), before IV
+begins. No III heading appears. Stable obligations II-09..64 remain: no corresponding
+entry observed in supplied pages; source-audit/edition reconciliation unresolved.
+They are not source-reported omissions. No missing names, rows or diagrams are
+fabricated. IV has eight diagrams and56 printed transformation rows; their selected
+line/branch annotations and transformations are image-read summaries, not reconstructed
+calculation fixtures. SectionI's two mixed outcomes both print Thiếu Dương; the new
+article retains the conflicting label rather than silently correcting it against
+chapter1. II's Tồn, IV's Sơ nhị/Sơ lục, and VI's repeated Kỷ stay visible.
+
+V has eighteen cases, with seven nested relational verses each in cases7/8 and
+multiple stanzas in4/6/16/17/18. Original/reading and Vietnamese meaning are separate;
+no independent prose commentary is printed. V8 relation6 has Hán and Vietnamese
+meaning but no separate Hán-Việt reading. V10 changes Tài minh to Tài giao; V11 changes
+Tài minh/Tử vượng to Tài hưng/Tử động; V18's last meaning says đi in a về context.
+These differences are not harmonized. Notes1–15 span casting/framing, Tạp Sự and Tinh
+Sát; suggested metrical corrections and note13's uncertain cát sát identification
+remain translator opinions, not recovered original editions. VI10 has four Hán lines
+but six reading/meaning lines; no extra Hán is supplied. VI8 repeats Kỷ without Ất.
+VI7's Đào Hoa/Tử Vi note gives only two explicit examples, not a new complete calendar.
+
+The fifteen criticisms distinguish target, proposition, illustrative example,
+reply/partial reconciliation and translator notes. Opposing works are not directly
+consulted: their positions are only what BPCT attributes to them. Credits conventionally
+associate the criticism chapter with Vương Hồng Tự and translation/notes with Vĩnh Cao;
+individual casting-supplement authorship is not established by the general phú credit.
+The old X-note9 citation and `term-matching-day-definition` are reused unchanged,
+without a duplicate claim/citation; neither stands for all ofX. V's rejection of
+Thiên Y coexists with VI-03's efficacy claim, VII's critique with VIII's conditional
+star use, and I's repeat-casting criticism with XII's praise for Dã Hạc's question-specific
+chung thân. XII retains its Sửu-child prediction discrepancy and later rationalization.
+XIV's two marriage stories and XV's partial concession are separately attributed,
+not validated outcomes. CriticismII-note4's Quái differs from the main text's Cấu.
+
+Medical, mortality, fertility/sex, marriage, theft, class/gender, human-ownership,
+legal, travel, gambling and wealth assertions are historical source positions, not
+advice, accusations, demonstrated efficacy or authority over people. No source
+prose/images, inferred missing content, calendar/interpretation behavior or UI changes
+are released. Prior authored records/citations, exclusions and global layer rosters
+remain semantically unchanged apart from validated058 cohort assignments. This is
+source comparison, not feat-091 audit, independent verification, certification,
+rights clearance or predictive efficacy. Those gates remain open work and report closed.

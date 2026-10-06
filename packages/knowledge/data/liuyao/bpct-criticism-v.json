@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "id": "article-bpct-criticism-v",
+  "type": "article",
+  "title": "BPCT phê bình V — Thiên Y",
+  "aliases": [],
+  "topicIds": ["topic-liuyao-advanced"],
+  "claims": [
+    {
+      "id": "article-bpct-criticism-v-bpct-criticism-v-target-proposition",
+      "kind": "author-interpretation",
+      "text": "Đoạn nhắm các thuật gia đương thời không nêu tên sách: Thiên Y hiện thì thầy/thuốc hiệu quả, vắng sao thì vô ích; bỏ hữu dụng của Ứng và vượng suy/động tĩnh Tử. Không gán đoạn này cho Bốc Dịch Toàn Thư chỉ vì ở cạnhIV.",
+      "citationIds": ["citation-bpct-criticism-v-target-proposition"],
+      "attribution": {
+        "author": "Thuật gia đương thời — không nêu tên riêng — được BPCT thuật lại, không đối chiếu trực tiếp sách bị phê bình",
+        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
+      },
+      "conditions": [
+        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
+      ]
+    },
+    {
+      "id": "article-bpct-criticism-v-bpct-criticism-v-example",
+      "kind": "author-interpretation",
+      "text": "Phản ví dụ giả định Thiên Y vắng nhưng Ứng lâm Tử động hữu khí, khắc Quỷ/sinh Thân: tác giả chất vấn vẫn gọi thuốc không hiệu quả. Không có outcome riêng được in.",
+      "citationIds": ["citation-bpct-criticism-v-example"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
+      },
+      "conditions": [
+        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
+      ]
+    },
+    {
+      "id": "article-bpct-criticism-v-bpct-criticism-v-reply",
+      "kind": "author-interpretation",
+      "text": "Người phê bình lấy Ứng cho thầy, Tử cho thuốc và xét hữu dụng thay dấu Thiên Y, nhấn nguy hại vì liên quan nhân mệnh. Giữ sự bất đồng với VI-03 phụ lục, không chọn một làm y tế thực chứng.",
+      "citationIds": ["citation-bpct-criticism-v-reply"],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
+      },
+      "conditions": [
+        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
+      ]
+    }
+  ],
+  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-06",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-bpct-criticism-v-target-proposition",
+      "citation-bpct-criticism-v-example",
+      "citation-bpct-criticism-v-reply",
+      "citation-bpct-front-credits-compilation",
+      "citation-bpct-front-credits-translation",
+      "citation-bpct-front-translator-preface-edition"
+    ],
+    "note": "Compared complete PyMuPDF extraction /tmp/feat058/{429..467}.txt and individually opened all39 full-page PNGs /tmp/feat058/{429..467}.png (1.5x,918x1188), plus boundary428 and credits1–3. SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a,467 pages. Printed388–416 on429–457 then366–374 on458–466;467 visually blank. II heading claims64 hexagrams/384 lines but only8 named entries/48 rows are observed before IV; no III. Remaining56 stable obligations are unresolved source-not-found placeholders, not source-reported omissions. IV has8 diagrams/56 transformation rows; V has18 cases and14 nested relational verses; VI has11 entries. Source layers, opposing propositions, examples/replies and translator notes are separate; no text/images, calculated fixtures or missing rows reconstructed. Existing criticismX note9 citation is reused unchanged. Source comparison only; feat-091 audit, source discovery/layer rosters, independent verification and certification remain open."
+  }
+}
