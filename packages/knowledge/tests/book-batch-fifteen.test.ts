@@ -51,7 +51,9 @@ describe('feat-048 integrated quẻ 57-60 and BPCT 41-48', () => {
       expect(listHexagrams().find(item => item.id === record.id)?.kingWenNumber).toBe(
         record.structure.kingWenNumber,
       );
-      expect(legacy.catalog.entities.some(item => item.id === record.id)).toBe(false);
+      expect(legacy.catalog.entities.some((item: { id: string }) => item.id === record.id)).toBe(
+        false,
+      );
       expect(record.lines.map(line => line.position)).toEqual([1, 2, 3, 4, 5, 6]);
       for (const line of record.lines) {
         for (const author of ['nhl', 'pbc', 'trinh-di', 'chu-hy']) {
@@ -234,12 +236,7 @@ describe('feat-048 integrated quẻ 57-60 and BPCT 41-48', () => {
         for (const id of item.citationIds) expect(record.review.evidenceCitationIds).toContain(id);
       }
     }
-    expect(manifest.nextBatch.hexagramIds).toEqual([
-      'hexagram-61',
-      'hexagram-62',
-      'hexagram-63',
-      'hexagram-64',
-    ]);
-    expect(manifest.nextBatch.note).toMatch(/49–56/);
+    expect(manifest.nextBatch.hexagramIds).toEqual([]);
+    expect(manifest.nextBatch.note).toMatch(/57–69/);
   });
 });

@@ -17,14 +17,14 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Quẻ 61: all six positions and each supplied commentary layer.
-- [ ] Quẻ 62: all six positions and each supplied commentary layer.
-- [ ] Quẻ 63: all six positions and each supplied commentary layer.
-- [ ] Quẻ 64: all six positions and each supplied commentary layer.
-- [ ] BPCT sentences 49–56: each numbered passage and its notes.
-- [ ] Replace the four legacy quẻ without changing stable IDs.
-- [ ] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [x] Quẻ 61: all six positions and each supplied commentary layer.
+- [x] Quẻ 62: all six positions and each supplied commentary layer.
+- [x] Quẻ 63: all six positions and each supplied commentary layer.
+- [x] Quẻ 64: all six positions and each supplied commentary layer.
+- [x] BPCT sentences 49–56: each numbered passage and its notes.
+- [x] Replace the four legacy quẻ without changing stable IDs.
+- [x] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
+- [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -45,9 +45,39 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Source-comparison evidence
+
+- Source inventory assigns NHL PDF 321–333, PBC 564–600 and NTT 895–936. All four local SHA-256 fingerprints match `packages/knowledge/data/sources.json`; no source edition metadata changed.
+- Read complete extracted classical passages, diagrams, context, PBC supplements and attached NTT notes; visually inspected contact sheets covering all assigned pages. Contact-sheet inspection is not individual full-size inspection of every page. Focused individual images at NHL 331, NTT 911/912/930/933 and PBC 655 resolve specific limitations. BPCT full extracted context at 1–3, 91–95 and 403, and individual images at 1–3, 92–94 and 403, establish verse/commentary boundaries and notes 10–11.
+- Four stable quẻ records replace the remaining legacy entities. All 24 positions contain NHL, PBC, Trình Di and Chu Hy selections; eight NTT numbered notes, named supplementary testimony, PBC PHỤ CHÚ and uncredited PBC endnote 21 stay separate. Missing Thoán/Tượng blocks and the empty Tiên Nho heading are not invented. The article keeps eight verses, eight commentaries, two attached notes and one separate dissent.
+- Canonical discrepancy, alternative-reading and exclusion findings: [book sources](../docs/references/book-sources.md#quẻ-61-64-and-bpct-49-56-selected-comparison). Publication source comparison does not close feat-083/085 audit, full layer/remainder mapping, independent verification or certification.
+- Manifest/release/legacy registration, source-inventory dispositions, expected-unit revision 7 and its inventory-byte hash are reconciled. BPCT 52's expected range now includes continuation PDF 93; all registry obligations, ownership, discovery and layer-roster states remain intact.
+- `book-batch-sixteen.test.ts` adds 11 executed test cases covering all four figures, author layers, notes, missing layers, discrepancies, passage bounds and lossless public package projection. Existing corpus count tests advance to 202 records, 2,398 claims and 2,662 citations; earlier batch absence tests require a typed callback now that the legacy entity array is empty.
+
+## Measured offline bundle
+
+A fresh knowledge-package build followed by the web build measured `assets/index-DtlSMMtK.js` at
+3,113,895 bytes (gzip 518.63 kB). This exceeds the former Workbox per-file cap of 2,949,120 bytes;
+the integrated build correctly failed rather than silently excluding it. A preceding web-only build
+used stale package `dist` and is not the measurement used for this decision.
+
+Per the authorization in `AGENTS.md`, raise only `maximumFileSizeToCacheInBytes` to 3,211,264 bytes
+(3 MiB + 64 KiB), the smallest 64-KiB-aligned cap allowing at least 64 KiB reserve. Measured headroom
+is 97,369 bytes. The next build precaches all 18 entries including this exact main asset; glob patterns,
+update prompt, cleanup, clientsClaim, skipWaiting and all other PWA behavior are unchanged.
+No speculative cap increase, PDF caching, split-bundle behavior or new UI is introduced.
+
+## Verification evidence
+
+- Baseline `./init.sh`: passed 482 tests (181 core + 301 knowledge), no worktree drift.
+- SHA-256 source checks and `validate:corpus --check-books --check`: baseline passed.
+- Knowledge package tests: passed 312 tests; newly authored batch contributes 11 cases.
+- Initial integration found typed `never[]` in empty legacy-array callbacks and the measured precache cap overflow. Both are bounded consequences of this batch and corrected; no unrelated failures were fixed.
+- Final full verification, package-export check and final diff inspection remain pending at this checkpoint.
+
 ## Handoff
 
-- State: active on `feat/049-reviewed-que-61-64-bpct-49-56`, based on `main` at `a55197d470c960b0a7b638aab519553559daa8d3`.
-- Evidence: feat-048 is merged and marked done; the selected batch authorizes feat-049. No implementation verification has run.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Inspect source pages for quẻ 61 and BPCT sentences 49–56, then implement only this feature.
+- State: active on `feat/049-reviewed-que-61-64-bpct-49-56`, initial HEAD `046149cebf108ca0cac0deb80b0c9a4af61513ad`; implementation complete, final verification pending.
+- Evidence: Source-comparison records and generated coverage reach 64/64 quẻ and 384/384 positions per source book. Coverage `complete` remains false; audit has 84 current prior decisions and 197 covered prior claims, not approval of this batch.
+- Blockers: none for selected authored claims. Ambiguous/missing source text and broad audit/verification remain visible and outside released authority.
+- Next: Run final `./init.sh`, supplied-book/freshness validation and package-export checks; inspect the diff, then record completion. Subsequent intended authoring is feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100).

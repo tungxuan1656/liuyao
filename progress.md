@@ -1107,3 +1107,12 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 167 local documentation targets, dependency checks, and diff checks passed. All 384 audit items, corpus data, application code, and previous statuses remain unchanged.
 - Blockers: None for planning. Extended contracts, web fidelity, volume checks, and specialist approval remain unimplemented or pending.
 - Next: Select feat-043 and build the source-to-record/exclusion crosswalk, then complete feat-101.
+
+## 2026-10-06 — feat-049 authored source-compared batch
+
+- Status: active; implementation complete, final verification pending.
+- Result: Added quẻ 61–64 with all 24 positions and actual author layers, plus BPCT 49–56 with separate verses/commentaries and notes 10–11. Preserved eight NTT notes, named/anonymous supplements, source discrepancies and missing text. Removed only the four remaining legacy entities without changing IDs.
+- Evidence: Baseline full verification passed 482 tests and source fingerprints; package tests now pass 312. Coverage is 202 records, 2,398 claims, 2,662 citations, 64 quẻ and 384 positions. Inventory and registry revision/hash reconcile only this batch.
+- Offline: Measured integrated main asset 3,113,895 bytes exceeded prior 2,949,120 cap. Authorized measured increase to 3,211,264 keeps all 18 entries precached with 97,369 bytes reserve; no other PWA behavior changes.
+- Limitations: Source comparison is not corpus certification. Missing/ambiguous passages, layer rosters, remainder and independent verification stay open. No medical, gender, ritual, calendar, scoring or automatic-interpretation authority added.
+- Next: Finish full verification, exact package-export evidence and diff inspection, then close feat-049.

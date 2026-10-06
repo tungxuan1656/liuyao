@@ -51,7 +51,9 @@ describe('feat-047 integrated quẻ 53-56 and BPCT 33-40', () => {
       expect(listHexagrams().find(item => item.id === record.id)?.kingWenNumber).toBe(
         record.structure.kingWenNumber,
       );
-      expect(legacy.catalog.entities.some(item => item.id === record.id)).toBe(false);
+      expect(legacy.catalog.entities.some((item: { id: string }) => item.id === record.id)).toBe(
+        false,
+      );
       expect(record.lines.map(line => line.position)).toEqual([1, 2, 3, 4, 5, 6]);
       for (const line of record.lines) {
         for (const author of ['nhl', 'pbc', 'trinh-di', 'chu-hy']) {

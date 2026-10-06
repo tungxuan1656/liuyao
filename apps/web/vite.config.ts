@@ -57,8 +57,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Keep the 60-quẻ reviewed bundle precached with ~75 KiB headroom in a 2 MiB + 832 KiB cap.
-        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024 + 832 * 1024,
+        // Keep the measured 64-quẻ bundle precached with ~95 KiB headroom in a 3 MiB + 64 KiB cap.
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024 + 64 * 1024,
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
         cleanupOutdatedCaches: true,
         clientsClaim: false,

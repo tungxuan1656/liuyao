@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 6,
+  "registryRevision": 7,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "8222cc563466b0d1cc7d6034817b196761b5f8f99a46b2458393fd3789e9ccce"
+    "sha256": "6f0c22b08321ef9c0edf9811fcaebfd875fc20f77b63f0bb127fce74798084e5"
   },
   "counts": {
     "overviewCells": 192,
@@ -6859,7 +6859,7 @@
       "group": "BPCT chapter 6 labels",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 92,
-      "pdfPageEnd": 92,
+      "pdfPageEnd": 93,
       "authorFeatureId": "feat-049",
       "auditFeatureId": "feat-085",
       "layerScopeIds": [
