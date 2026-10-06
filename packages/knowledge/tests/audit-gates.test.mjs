@@ -99,6 +99,62 @@ describe('evidence-derived audit gates', () => {
     expect(gates.totals.releasedClaimsRequired).toBe(2);
   });
 
+  it('indexes unexpected targets without rescanning the registry for each decision', () => {
+    const { context } = auditContext();
+    context.manifest.releaseIds = [];
+    const registry = minimalRegistry({ resolved: true });
+    registry.groups = Array.from({ length: 100 }, (_, index) => ({
+      ...registry.groups[0],
+      id: `source-unit-${index}`,
+    }));
+    registry.counts.groups = registry.groups.length;
+    let idReads = 0;
+    const unexpected = {
+      target: {
+        kind: 'sourceunit',
+        get id() {
+          idReads += 1;
+          return 'unrelated';
+        },
+      },
+    };
+    const gates = evaluateAuditGates({
+      registry,
+      ledgerState: { errors: [], current: [unexpected, unexpected] },
+      context,
+    });
+    const reads = idReads;
+    expect(gates.unexpectedCurrent).toEqual([unexpected, unexpected]);
+    // Count key reads instead of asserting a machine-dependent runtime.
+    expect(reads).toBeLessThan(20);
+  });
+
+  it('matches required target keys regardless of property order', () => {
+    const { context } = auditContext();
+    const registry = minimalRegistry({ resolved: true });
+    const required = {
+      target: { id: 'source-unit-test', kind: 'sourceunit' },
+      decision: {
+        id: 'decision-sourceunit',
+        disposition: 'accepted',
+        coveredClaimIds: [],
+        layerResolution: { status: 'resolved', layers: [{ layerId: 'layer-test' }] },
+        specialistReview: { status: 'pending' },
+      },
+      inputState: { current: true, stale: [] },
+    };
+    const gates = evaluateAuditGates({
+      registry,
+      ledgerState: { errors: [], current: [required] },
+      context,
+    });
+    expect(gates.unexpectedCurrent).toEqual([]);
+    expect(gates.accepted).toContainEqual({
+      target: { kind: 'sourceunit', id: 'source-unit-test' },
+      decisionId: 'decision-sourceunit',
+    });
+  });
+
   it('uses the same released lesson/prerequisite targets in gate and ledger validation', async () => {
     const { context, owner } = auditContext();
     owner.type = 'lesson';
@@ -940,7 +996,23 @@ describe('evidence-derived audit gates', () => {
   });
 });
 
+let syntheticAuditFixture;
+
 async function completeValidatedSyntheticAudit(context) {
+  if (!syntheticAuditFixture) {
+    const { context: fixtureContext } = auditContext();
+    syntheticAuditFixture = {
+      ...(await buildValidatedSyntheticAudit(fixtureContext)),
+      context: fixtureContext,
+    };
+  }
+  // Keep the validated corpus baseline private; every scenario mutates its own clone.
+  const fixture = structuredClone(syntheticAuditFixture);
+  Object.assign(context, fixture.context);
+  return fixture;
+}
+
+async function buildValidatedSyntheticAudit(context) {
   const registry = readJson('../../../docs/reviews/knowledge/expected-units.json');
   registry.layers.forEach(layer => (layer.rosterStatus = 'resolved'));
   registry.groups.forEach(group => (group.discoveryStatus = 'resolved'));

@@ -8,7 +8,8 @@ import {
   symlinkSync,
   writeFileSync,
 } from 'node:fs';
-import { spawnSync } from 'node:child_process';
+import { execFile, spawnSync } from 'node:child_process';
+import { promisify } from 'node:util';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,8 +20,9 @@ import { createSnapshotIdentity } from '../scripts/snapshot-identity.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const require = createRequire(import.meta.url);
+const execFileAsync = promisify(execFile);
 
-it('reproduces generated output and rejects stale or unlisted authoring files', () => {
+it('reproduces generated output and rejects stale or unlisted authoring files', async () => {
   const temporary = mkdtempSync(path.join(tmpdir(), 'liuyao-corpus-test-'));
   try {
     const repositoryRoot = path.join(temporary, 'repo');
@@ -45,28 +47,33 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
         path.dirname(require.resolve(`${name}/package.json`)),
         path.join(temporaryPackage, 'node_modules', name),
       );
-    const run = (...args) =>
-      spawnSync(
-        process.execPath,
-        [path.join(temporaryPackage, 'scripts/validate-corpus.mjs'), ...args],
-        {
-          encoding: 'utf8',
-          timeout: 30_000,
-        },
-      );
+    // Keep the worker responsive to Vitest RPC while the corpus CLI runs.
+    const run = async (...args) => {
+      try {
+        const output = await execFileAsync(
+          process.execPath,
+          [path.join(temporaryPackage, 'scripts/validate-corpus.mjs'), ...args],
+          { encoding: 'utf8', timeout: 30_000 },
+        );
+        return { status: 0, ...output };
+      } catch (error) {
+        if (typeof error.code !== 'number') throw error;
+        return { status: error.code, stdout: error.stdout, stderr: error.stderr };
+      }
+    };
     const generated = path.join(temporaryPackage, 'src/book-data.generated.ts');
     const releaseJson = path.join(temporaryPackage, 'src/book-release.generated.json');
     const auditStatus = path.join(temporaryPackage, 'reports/audit-status.json');
     const coverageReport = path.join(temporaryPackage, 'reports/coverage.json');
-    const first = run();
+    const first = await run();
     expect(first.status, first.stderr).toBe(0);
     const original = readFileSync(generated, 'utf8');
     const originalAudit = readFileSync(auditStatus, 'utf8');
     const originalCoverage = readFileSync(coverageReport, 'utf8');
     const originalRelease = readFileSync(releaseJson, 'utf8');
     const originalWrapper = readFileSync(generated, 'utf8');
-    expect(run('--check').status).toBe(0);
-    expect(run().status).toBe(0);
+    expect((await run('--check')).status).toBe(0);
+    expect((await run()).status).toBe(0);
     expect(readFileSync(generated, 'utf8')).toBe(original);
     expect(readFileSync(auditStatus, 'utf8')).toBe(originalAudit);
     writeFileSync(auditStatus, originalAudit);
@@ -98,15 +105,15 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     const protectedBytes = protectedFiles.map(file => readFileSync(file));
 
     writeFileSync(auditStatus, `${originalAudit.trim()} `);
-    const staleAudit = run('--check');
+    const staleAudit = await run('--check');
     expect(staleAudit.status).not.toBe(0);
     expect(staleAudit.stderr).toContain('Stale generated corpus output: reports/audit-status.json');
     writeFileSync(auditStatus, originalAudit);
-    const requireComplete = run('--require-complete');
+    const requireComplete = await run('--require-complete');
     expect(requireComplete.status).not.toBe(0);
     expect(requireComplete.stderr).toContain('Audit completion gates are closed');
     expect(readFileSync(auditStatus, 'utf8')).toBe(originalAudit);
-    const unknownOption = run('--unknown-audit-mode');
+    const unknownOption = await run('--unknown-audit-mode');
     expect(unknownOption.status).not.toBe(0);
     expect(unknownOption.stderr).toContain('Unknown corpus validation option');
 
@@ -119,19 +126,19 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     const mutatedRegistry = JSON.parse(registryBefore);
     mutatedRegistry.counts.groups -= 1;
     writeFileSync(expectedRegistry, JSON.stringify(mutatedRegistry, null, 2) + '\n');
-    const invalidRegistry = run();
+    const invalidRegistry = await run();
     expect(invalidRegistry.status).not.toBe(0);
     expect(invalidRegistry.stderr).toMatch(/Expected-unit registry invalid/);
     writeFileSync(expectedRegistry, registryBefore);
 
-    const standaloneCheckBooks = run('--check-books');
+    const standaloneCheckBooks = await run('--check-books');
     expect(standaloneCheckBooks.status).not.toBe(0);
     expect(standaloneCheckBooks.stderr).toContain('ENOENT');
 
     const changedRegistry = JSON.parse(registryBefore);
     changedRegistry.registryRevision += 1;
     writeFileSync(expectedRegistry, JSON.stringify(changedRegistry, null, 2) + '\n');
-    const changedRegistryResult = run();
+    const changedRegistryResult = await run();
     expect(changedRegistryResult.status, changedRegistryResult.stderr).toBe(0);
     const changedAudit = readFileSync(auditStatus, 'utf8');
     expect(changedAudit).not.toBe(originalAudit);
@@ -143,7 +150,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     const ledgerRoot = path.join(repositoryRoot, 'docs/reviews/knowledge/ledgers');
     const ledgerHold = `${ledgerRoot}.hold`;
     renameSync(ledgerRoot, ledgerHold);
-    const missingLedgerRoot = run();
+    const missingLedgerRoot = await run();
     expect(missingLedgerRoot.status).not.toBe(0);
     expect(missingLedgerRoot.stderr).toContain('Ledger root is required');
     renameSync(ledgerHold, ledgerRoot);
@@ -171,19 +178,19 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     writeFileSync(draftPath, JSON.stringify(draftRecord, null, 2) + '\n');
     manifest.recordFiles.push('terms/term-synthetic-c3-draft.json');
     writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
-    const updated = run();
+    const updated = await run();
     expect(updated.status, updated.stderr).toBe(0);
     const releaseAfterDraftEdit = readFileSync(releaseJson, 'utf8');
     expect(releaseAfterDraftEdit).not.toContain('UNIQUE_DRAFT_TITLE_MARKER');
     expect(releaseAfterDraftEdit).not.toContain('UNIQUE_DRAFT_PROSE_MARKER');
     expect(JSON.parse(releaseAfterDraftEdit).snapshotIdentity).toBe(beforeDraftIdentity);
     writeFileSync(generated, '// stale\n');
-    const stale = run('--check');
+    const stale = await run('--check');
     expect(stale.status).not.toBe(0);
     expect(stale.stderr).toContain('Stale generated corpus output');
-    expect(run().status).toBe(0);
+    expect((await run()).status).toBe(0);
     writeFileSync(path.join(temporaryPackage, 'data/terms/unlisted.json'), '{}');
-    const unlisted = run();
+    const unlisted = await run();
     expect(unlisted.status).not.toBe(0);
     expect(unlisted.stderr).toContain('Unlisted authored JSON: terms/unlisted.json');
     protectedFiles.forEach((file, index) =>

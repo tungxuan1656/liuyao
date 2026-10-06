@@ -35,6 +35,15 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 `pnpm test` enforces this placement policy before invoking each workspace package test script recursively.
 
+### Test cost and fixtures
+
+- Use small deterministic fixtures for behavior and branch tests.
+- Use full-corpus fixtures only when corpus-wide coverage or inventory closure is part of the assertion.
+- Avoid rebuilding full-corpus setup for each scenario. Keep shared baselines private and clone mutable state for each test.
+- When changing corpus-wide tests, measure focused and full-suite runtime.
+- For repeated CI timeouts, investigate fixture cost and algorithmic complexity before changing timeout limits.
+- Use deterministic operation counts for complexity regression tests, not machine-dependent timing assertions.
+
 ## Commands
 
 | Command                                                              | Scope                                                       |
