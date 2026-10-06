@@ -1213,3 +1213,23 @@ Lão Tử, Trình brothers, Lưu Thứ, Mã Dung, Quỷ Cốc’s Tôn Tẫn/Bà
 Dương Thì/Du Tạc stay attributed allusions, not verified fortune-telling case results. Physical
 punishment, class/gender and ability stereotypes, income and litigation assertions remain
 historical source claims, not modern education, discipline, medical or financial guidance.
+
+### Feat-053 marriage applications — chapter17
+
+The [marriage article](../../packages/knowledge/data/liuyao/bpct-chapter-seventeen-marriage.json)
+covers PDF200–211, printed169–180, opening, printed1–30/32–45 and three notes. The source
+skips31 without a reconstructed clause. Shared-page verse/reading continuations and later
+commentary starts remain separately located. Item04 phú's particular benefit differs from the
+Vietnamese negative rendering; item16 commentary both implies prior unfamiliarity under tam
+hợp and later says prior meeting. Item26 original wording, reading and commentary differ in
+hợp/hòa/hoá. These remain source-layer statements, not silent harmonizations. Item25 rejects
+season-only bản mệnh reasoning and invokes the commentator's own experience; that reported
+experience is not scientific verification.
+
+Items17/45 explicitly reject indiscriminate Tài=wife/Quan=husband and mortality inference
+from Không; parents, siblings and question context require their actual useful-spirit relations.
+Item19's in-law roles and item33's intervening matchmaker versus separate Ứng question stay
+intact. Coercion in07, gender authority in18, sexuality accusations in10/20, widowhood in21,
+beauty/class judgments, reproduction and historical attendants in26 remain attributed source
+beliefs, not current duties, consent evidence, diagnosis or advice. All45 printed-label slots
+except the observed31 gap are accounted for, with no efficacy or later audit claim.

@@ -184,3 +184,20 @@ describe('feat-053 teacher versus teaching-house roles', () => {
     expect(getBookCitation('citation-bpct-ch16-21-rendering')?.location.pdfPageStart).toBe(196);
   });
 });
+
+describe('feat-053 marriage limitations and source differences', () => {
+  it('does not universalize Tài/Quan, mortality, gender duties or contradictory layers', () => {
+    const record = getBookRecord('article-bpct-chapter-seventeen-marriage')!;
+    const text = (suffix: string) => record.claims.find(c => c.id.endsWith(suffix))!.text;
+    expect(text('bpct-ch17-17-commentary')).toMatch(/không được suy vợ\/chồng chết/);
+    expect(text('bpct-ch17-17-commentary')).toMatch(/Cha\/chú.*Tử.*anh hỏi em.*Huynh/);
+    expect(text('bpct-ch17-45-commentary')).toMatch(/bác lấy Quan\/Tài chung/);
+    expect(text('bpct-ch17-33-commentary')).toMatch(/riêng người mối.*Ứng, không gian/);
+    expect(text('bpct-ch17-07-commentary')).toMatch(/không chấp thuận cưỡng hôn/);
+    expect(text('bpct-ch17-18-commentary')).toMatch(/gia trưởng.*không nghĩa vụ phục tùng/);
+    expect(text('bpct-ch17-16-commentary')).toMatch(/chưa biết.*đã từng gặp.*giữ mâu thuẫn/);
+    expect(text('bpct-ch17-25-commentary')).toMatch(/bác chú cũ.*không thực chứng/);
+    expect(text('bpct-ch17-04-rendering')).toMatch(/khác sắc thái/);
+    expect(text('bpct-ch17-26-verse')).toMatch(/hợp Tài\/Quỷ hoà Quỷ.*hoá Quỷ/);
+  });
+});

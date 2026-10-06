@@ -91,10 +91,10 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Cover all passages, examples, qualifications, notes, and distinct source layers on PDF 200–211.
-- [ ] Preserve historical and culturally specific claims as attributed source summaries, not current relationship advice or coercive duties.
-- [ ] Keep contradictory source layers separate and test the withheld authority/non-efficacy boundary.
-- [ ] Run focused tests and corpus freshness checks; commit checkpoint.
+- [x] Cover all passages, examples, qualifications, notes, and distinct source layers on PDF 200–211.
+- [x] Preserve historical and culturally specific claims as attributed source summaries, not current relationship advice or coercive duties.
+- [x] Keep contradictory source layers separate and test the withheld authority/non-efficacy boundary.
+- [x] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 6: Author chapters 18–19 — Sản Dục and Tiến Nhân Khẩu
 

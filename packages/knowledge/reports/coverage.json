@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 228, "released": 228, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 4759, "missingCitationIds": [] },
-  "citations": { "total": 5005 },
+  "records": { "authored": 229, "released": 229, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 4897, "missingCitationIds": [] },
+  "citations": { "total": 5143 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -460,7 +460,8 @@
         "article-bpct-chapter-thirteen-loss",
         "article-bpct-chapter-fourteen-travel",
         "article-bpct-chapter-fifteen-teacher",
-        "article-bpct-chapter-sixteen-study"
+        "article-bpct-chapter-sixteen-study",
+        "article-bpct-chapter-seventeen-marriage"
       ]
     },
     {
@@ -1678,9 +1679,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2965,
+        "required": 2966,
         "current": 84,
-        "missing": 2881,
+        "missing": 2882,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1689,8 +1690,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1300 },
-        { "code": "missing-decision", "count": 2881 },
-        { "code": "released-claim-coverage-incomplete", "count": 4562 }
+        { "code": "missing-decision", "count": 2882 },
+        { "code": "released-claim-coverage-incomplete", "count": 4700 }
       ]
     },
     "certification": {
@@ -1698,7 +1699,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2965,
+        "required": 2966,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
