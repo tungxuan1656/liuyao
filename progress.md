@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-050 merged
+
+**State**: done and merged to `main` in PR #77 at `51bcdb956aacd434c7bceeb3893f10458db00eee`.
+**Done**: Added complete source-compared verse, Vietnamese meaning, commentary, notes, and closing for BPCT chapter 6 sentences 57–69. Reconciled all 13 unit dispositions and extended page-continuation bounds without changing prior released content.
+**Evidence**: Exact-head independent review returned `OK` with zero P0/P1/P2 findings. PR-head `verify`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 512 tests; corpus validation passed with 203 records, 2,459 claims, and 2,705 citations. Package-export and service-worker inclusion checks passed. See [feat-050](features/feat-050.md).
+**Coverage**: BPCT chapter 6 authoring now reaches sentence 69. Corpus audit and certification remain open. Workbox cap remains 3,211,264 bytes, with 20,077 bytes measured headroom.
+**Blockers**: none for feat-050.
+**Next**: Continue with selected feat-051 from updated `main`.
+
 ## 2026-10-06 — feat-049 merged
 
 **State**: done and merged to `main` in PR #76 at `c6357316a47d10ae9c1c143f2291d5bd0f9836fc`.

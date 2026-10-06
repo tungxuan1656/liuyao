@@ -76,7 +76,7 @@ PDF exclusion and every other PWA setting remain unchanged. `apps/web/vite.confi
 
 ## Handoff
 
-- State: active; local source-comparison implementation and required verification pass. Fresh independent branch acceptance review remains the next gate; parent owns completion.
-- Evidence: source boundaries, layer/note dispositions, release/registry/inventory, generator outputs and focused tests are current. No independent corpus audit, verification approval or certification is claimed.
-- Blockers: none for this batch; unresolved source wording and missing priority/algorithm details stay non-authoritative.
-- Next: Obtain fresh independent acceptance review of the final local checkpoint. No push or PR is made by this worker; parent owns feature completion and progress history.
+- State: done; merged to `main` in PR #77 at squash commit `51bcdb956aacd434c7bceeb3893f10458db00eee`.
+- Evidence: Fresh exact-head independent review at `f3ea74be58906b26cd43d57ce6b5b13e9972190b` returned `OK` with zero P0/P1/P2 findings. PR-head `verify`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 512 tests; corpus validation passed with 203 records, 2,459 claims and 2,705 citations; public package-export and precache checks passed.
+- Blockers: none for feat-050. Source-review and certification gates remain open; the 20,077-byte bundle headroom requires measurement for future knowledge additions.
+- Next: Continue with selected feat-051. No corpus audit or certification approval is claimed.
