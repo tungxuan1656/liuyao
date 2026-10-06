@@ -1277,7 +1277,7 @@ assigned parents, all mapped to seven articles with760 separately cited claims. 
 237 are numbered units, seven openings, two closings,28 notes and two folio-only non-content
 units. No missing numbered passage is fabricated. Prior released records/citations are semantically
 unchanged. Source review/certification remain closed; global discovery and later feat-087 review
-are unresolved. The next authoring batch is feat-054, PDF231–269, not executed here.
+are unresolved. At feat-053 completion, feat-054, PDF231–269, was the next authoring batch; its source comparison is recorded below.
 
 ## feat-054 source comparison
 
