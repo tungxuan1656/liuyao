@@ -39,7 +39,8 @@
     "citations/batch-seventeen-advanced.json",
     "citations/batch-eighteen-advanced.json",
     "citations/batch-nineteen-advanced.json",
-    "citations/batch-twenty-advanced.json"
+    "citations/batch-twenty-advanced.json",
+    "citations/batch-twenty-one-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -272,7 +273,11 @@
     "liuyao/bpct-chapter-sixteen-study.json",
     "liuyao/bpct-chapter-seventeen-marriage.json",
     "liuyao/bpct-chapter-eighteen-childbirth.json",
-    "liuyao/bpct-chapter-nineteen-household.json"
+    "liuyao/bpct-chapter-nineteen-household.json",
+    "liuyao/bpct-chapter-twenty-housing.json",
+    "liuyao/bpct-chapter-twenty-supplement.json",
+    "liuyao/bpct-chapter-twenty-one-boats.json",
+    "liuyao/bpct-chapter-twenty-two-xuong-gia.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -505,7 +510,11 @@
     "article-bpct-chapter-sixteen-study",
     "article-bpct-chapter-seventeen-marriage",
     "article-bpct-chapter-eighteen-childbirth",
-    "article-bpct-chapter-nineteen-household"
+    "article-bpct-chapter-nineteen-household",
+    "article-bpct-chapter-twenty-housing",
+    "article-bpct-chapter-twenty-supplement",
+    "article-bpct-chapter-twenty-one-boats",
+    "article-bpct-chapter-twenty-two-xuong-gia"
   ],
   "topics": [
     {
@@ -567,6 +576,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-054: BPCT chương20 và bổ túc Gia Trạch, chương21 Châu Thuyền, chương22 Xướng Gia, PDF231–269. Feat-053 đã có tóm tắt đối chiếu nguồn chương13–19, PDF166–230, giữ vai hỏi, lớp phú/nghĩa/lời bình,28 chú và khác biệt nguồn. Trang190/222 chỉ số in161/190, không phải đoạn tiếp; nhãn mở23 và khoảng số16/31/41 không được phục dựng. Chưa có kiểm chứng độc lập, phép lịch, diễn giải tự động, hướng dẫn sức khoẻ/an toàn/tài chính/xã hội hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
+    "note": "Dự kiến feat-055: BPCT chương23 Tật Bệnh/Bệnh Chứng, trang chuyển279, chương24 Bệnh Thể,25 Y Dược,26 Hành Nhân, PDF270–301. Feat-054 đã có tóm tắt đối chiếu nguồn Gia Trạch20 (cả Thuyền Gia Trạch), bổ túc Tân Tăng, Châu Thuyền21 và Xướng Gia22, PDF231–269; giữ vai hỏi, lớp phú/nghĩa/bình,18 chú, khác biệt nguồn và số28 vắng ở bổ túc. PDF265 có lời bình kết, không trang chỉ số. Chưa có kiểm chứng độc lập, phép lịch, diễn giải tự động, hướng dẫn sức khoẻ/an toàn/tài chính/xã hội hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
   }
 }

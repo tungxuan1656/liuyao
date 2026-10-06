@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 231, "released": 231, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 5120, "missingCitationIds": [] },
-  "citations": { "total": 5366 },
+  "records": { "authored": 235, "released": 235, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 5614, "missingCitationIds": [] },
+  "citations": { "total": 5860 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -463,7 +463,11 @@
         "article-bpct-chapter-sixteen-study",
         "article-bpct-chapter-seventeen-marriage",
         "article-bpct-chapter-eighteen-childbirth",
-        "article-bpct-chapter-nineteen-household"
+        "article-bpct-chapter-nineteen-household",
+        "article-bpct-chapter-twenty-housing",
+        "article-bpct-chapter-twenty-supplement",
+        "article-bpct-chapter-twenty-one-boats",
+        "article-bpct-chapter-twenty-two-xuong-gia"
       ]
     },
     {
@@ -1675,15 +1679,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-054: BPCT chương20 và bổ túc Gia Trạch, chương21 Châu Thuyền, chương22 Xướng Gia, PDF231–269. Feat-053 đã có tóm tắt đối chiếu nguồn chương13–19, PDF166–230, giữ vai hỏi, lớp phú/nghĩa/lời bình,28 chú và khác biệt nguồn. Trang190/222 chỉ số in161/190, không phải đoạn tiếp; nhãn mở23 và khoảng số16/31/41 không được phục dựng. Chưa có kiểm chứng độc lập, phép lịch, diễn giải tự động, hướng dẫn sức khoẻ/an toàn/tài chính/xã hội hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
+    "note": "Dự kiến feat-055: BPCT chương23 Tật Bệnh/Bệnh Chứng, trang chuyển279, chương24 Bệnh Thể,25 Y Dược,26 Hành Nhân, PDF270–301. Feat-054 đã có tóm tắt đối chiếu nguồn Gia Trạch20 (cả Thuyền Gia Trạch), bổ túc Tân Tăng, Châu Thuyền21 và Xướng Gia22, PDF231–269; giữ vai hỏi, lớp phú/nghĩa/bình,18 chú, khác biệt nguồn và số28 vắng ở bổ túc. PDF265 có lời bình kết, không trang chỉ số. Chưa có kiểm chứng độc lập, phép lịch, diễn giải tự động, hướng dẫn sức khoẻ/an toàn/tài chính/xã hội hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2968,
+        "required": 3157,
         "current": 84,
-        "missing": 2884,
+        "missing": 3073,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1691,9 +1695,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
-        { "code": "unresolved-source-discovery", "count": 1300 },
-        { "code": "missing-decision", "count": 2884 },
-        { "code": "released-claim-coverage-incomplete", "count": 4923 }
+        { "code": "unresolved-source-discovery", "count": 1485 },
+        { "code": "missing-decision", "count": 3073 },
+        { "code": "released-claim-coverage-incomplete", "count": 5417 }
       ]
     },
     "certification": {
@@ -1701,7 +1705,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2968,
+        "required": 3157,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
