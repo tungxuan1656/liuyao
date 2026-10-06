@@ -57,8 +57,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Precache the measured 5,523,385-byte integrated asset with ~46 KiB headroom.
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024 + 320 * 1024,
+        // Precache the measured 6,458,670-byte integrated asset with 94,930 bytes headroom.
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024 + 256 * 1024,
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
         cleanupOutdatedCaches: true,
         clientsClaim: false,

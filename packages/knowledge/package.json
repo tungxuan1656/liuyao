@@ -16,7 +16,7 @@
   "scripts": {
     "build": "pnpm validate:corpus && tsc",
     "typecheck": "pnpm validate:corpus && tsc --noEmit -p tsconfig.test.json",
-    "test": "vitest run --maxWorkers=2",
+    "test": "vitest run --maxWorkers=2 --no-file-parallelism",
     "validate:corpus": "node scripts/validate-corpus.mjs"
   },
   "license": "AGPL-3.0-only",

@@ -1150,3 +1150,131 @@ cases and25's critique of element-only season pricing do not produce a calendar 
 classifier. Source statements about profits, theft, disease, death, gambling, prices, ritual
 sincerity and prediction do not establish efficacy or give financial, veterinary, safety,
 legal, medical or religious advice. All prior selected records remain unchanged.
+
+### Feat-053 loss applications — chapter13
+
+The [loss article](../../packages/knowledge/data/liuyao/bpct-chapter-thirteen-loss.json)
+compares PDF166–175 (printed139–148), all37 numbered clauses, opening/closing and five
+translator notes. The exact BPCT SHA and467-page count were checked. Full extracted
+PDF166–230 passages and contact sheets165–231 were read; individual images1–3,174,190,219–222,227
+were inspected. This is not full-size image review of every page. No table/diagram occurs.
+Front credits conventionally associate phú with Lưu Bá Ôn, compilation/commentary with
+Vương Hồng Tự, translation/notes with Vĩnh Cao; individual passage authorship remains uncertain.
+
+Note2 on167 explicitly disputes clause03: phú puts tha/ngoại at neighbors while commentary
+puts the missing object outside and difficult to find, using intervening lines for neighbors.
+Note1 defines bản/tha as primary/changed in this local explanation; this is not a repair of
+palace calculation. Notes3/4/5 explain mistaken loan, religious names and the nã/na reading.
+Clause26 retains all12 branch-linked witness examples, without profiling people. Clause33
+separates catching a thief from locating concealed objects; clause34's Phi/Phục specifically
+means Thế/Quỷ, not every useful-spirit question. Clause37 switches to Phụ for vehicles,
+clothes/documents and Tử for animals. Historical identity, theft and capture assertions are
+not evidence of guilt, verified outcomes or safe pursuit instructions. No prior released record
+or citation is rewritten; later feat-087 audit, separate verification and certification stay open.
+
+### Feat-053 travel applications — chapter14
+
+The [travel article](../../packages/knowledge/data/liuyao/bpct-chapter-fourteen-travel.json)
+covers PDF176–183, printed148–155: opening,27 clauses and note1. The heading actually
+prints23 under chapter14; no missing22 is inferred. Item7 has no independent Vietnamese
+meaning, while item27's meaning extends to183. Item1 commentary crosses176–177, item10
+original/reading crosses178–179, and item13 commentary starts180 rather than179.
+Item13 phú names Tài/Phụ directions while commentary names Tài/Phúc; item16 meaning
+prints Thế against Thế where phú/reading has Thê against Thế. Neither is silently repaired.
+Note1 belongs to item10 and distinguishes xung Thế from xung the combining line. Roles
+remain self/destination/intervening route or companion, with item25 requiring the traveler’s
+actual relation and item18 excluding visits to officials from its favorable Phúc context.
+Travel, weather, theft, danger and trading outcomes remain historical claims, never route,
+safety, suspect-profile, calendar or investment authority. Inspection limits are those of the
+feat-053 loss section; the source-unit map and release are not later audit approval.
+
+### Feat-053 teacher and teaching-house applications — chapters15–16
+
+The [teacher article](../../packages/knowledge/data/liuyao/bpct-chapter-fifteen-teacher.json)
+covers PDF184–190, printed155–161, opening, printed1–15/17–25, closing and four notes.
+The [teaching-house article](../../packages/knowledge/data/liuyao/bpct-chapter-sixteen-study.json)
+covers PDF191–199, printed161–169, opening,34 clauses and eleven notes. Complete passages
+and contact sheets were inspected within the previously stated image boundary. Individually
+inspected PDF190 has only folio161: the earlier plan's short continuation was incorrect.
+Coordinator approval retains the184–190 parent interval but places closing wholly on189
+and a separate non-content accounting child on190. Chapter15 does not print16; no passage
+is reconstructed. Chapter16 clause34 original/reading spans198–199; note11 on197 belongs
+to clause24 on196. Chapter16 notes6/7 attach20/21, not the following clauses.
+
+Chapter15 self-seeking learner uses Thế as pupil/Phụ as teacher, whereas a parent inviting
+an unknown teacher uses Thế as parent/Tử as child/Ứng as teacher. Known relations and
+questions for others must use actual relation, including vocational or religious learning.
+Chapter16 asks about a teaching appointment: Thế is teacher, Ứng host, Phụ teaching books/
+place, Tử pupils, Tài pay; querying pay differs from querying the school. Chapter15 clause09
+phú names Long Đức while commentary names Bạch Hổ; chapter16 clause03 meaning says
+weak where original/reading says young, and clause23 meaning uses flourishing where
+original says Dưỡng. Separate summaries retain these differences. Biên Thiều/Hiếu Tiên,
+Lão Tử, Trình brothers, Lưu Thứ, Mã Dung, Quỷ Cốc’s Tôn Tẫn/Bàng Quyên and Y Xuyên’s
+Dương Thì/Du Tạc stay attributed allusions, not verified fortune-telling case results. Physical
+punishment, class/gender and ability stereotypes, income and litigation assertions remain
+historical source claims, not modern education, discipline, medical or financial guidance.
+
+### Feat-053 marriage applications — chapter17
+
+The [marriage article](../../packages/knowledge/data/liuyao/bpct-chapter-seventeen-marriage.json)
+covers PDF200–211, printed169–180, opening, printed1–30/32–45 and three notes. The source
+skips31 without a reconstructed clause. Shared-page verse/reading continuations and later
+commentary starts remain separately located. Item04 phú's particular benefit differs from the
+Vietnamese negative rendering; item16 commentary both implies prior unfamiliarity under tam
+hợp and later says prior meeting. Item26 original wording, reading and commentary differ in
+hợp/hòa/hoá. These remain source-layer statements, not silent harmonizations. Item25 rejects
+season-only bản mệnh reasoning and invokes the commentator's own experience; that reported
+experience is not scientific verification.
+
+Items17/45 explicitly reject indiscriminate Tài=wife/Quan=husband and mortality inference
+from Không; parents, siblings and question context require their actual useful-spirit relations.
+Item19's in-law roles and item33's intervening matchmaker versus separate Ứng question stay
+intact. Coercion in07, gender authority in18, sexuality accusations in10/20, widowhood in21,
+beauty/class judgments, reproduction and historical attendants in26 remain attributed source
+beliefs, not current duties, consent evidence, diagnosis or advice. All45 printed-label slots
+except the observed31 gap are accounted for, with no efficacy or later audit claim.
+
+### Feat-053 childbirth and household reception — chapters18–19
+
+The [childbirth article](../../packages/knowledge/data/liuyao/bpct-chapter-eighteen-childbirth.json)
+covers PDF212–222, printed180–190, opening, printed1–40/42, four notes and folio-only222.
+Individual image222 confirms no planned short fragment: item42 ends221; parent212–222 is
+unchanged with coordinator approval. No item41 is inferred. The
+[household article](../../packages/knowledge/data/liuyao/bpct-chapter-nineteen-household.json)
+covers PDF223–230, printed190–197, opening and30 clauses; chapter20 begins231 and remains
+outside this feature. No household footer note, table or diagram was observed. All passages and
+contact sheets were inspected; individual220 was additionally checked for note4 and item15
+of the household was compared to the extracted passage without supplying its unclear object.
+
+Childbirth note2 disputes the opening’s bow/towel placement against Nội tắc (boy’s bow left,
+girl’s towel right). Item04 phú uses Tài hoá Tử while commentary uses Tài hợp Phúc; item07
+phú/reading/meaning differ around Long/Thai as the joyous sign. Note4 reports Nội should be
+Ngoại, but the supplied image220 already prints Ngoại; the other original edition mentioned
+by the note is unavailable, so no reconstruction is claimed. Birth question Tử, pregnancy-existence
+question Thai, husband/self roles, third-party absent-father conditions and note3's month bound
+stay distinct. Intervening bà đỡ in a birth question differs from Tài when separately asking
+about a bà đỡ/vú em. Item32's devaluation of daughters and item40's revival promise are only
+historical source assertions, never endorsed values or efficacy evidence. No medical, pregnancy,
+feeding, sex-determination, due-date, delay, medication or emergency guidance is released.
+
+Household reception includes historical adoption, attendants and persons in distress with
+relation-specific roles, not modern rights to buy, retain or classify people. The opening’s tiện bế
+and Vietnamese affection wording remain distinct. Item15 commentary's incomplete object of
+hợp is not repaired. Item22 phú prints vi Phụ whereas reading/meaning/commentary say absent
+Phụ; the difference is explicit. Theft, character, health/death, contracts, money and abandoned-child
+claims remain non-authoritative source ideas, not safeguarding, legal or financial decisions.
+All seven units have bounded original summaries and unresolved later audit/verification gates.
+
+### Feat-053 final reconciliation
+
+Individual image174 confirms clause34 in chapter13 has no independently printed Vietnamese
+meaning, only phú/reading and commentary; the interim synthetic meaning was removed from the
+new batch before final release review. Along with chapter14 item7, it has an explicit absent
+meaning disposition and no translation-layer obligation. The final comparison inspected individual
+images1–3,174,190,219–222,227 in addition to contact sheets165–231, not every page individually.
+The registry retains all unrelated units and17 prior exclusions:276 stable children plus seven
+assigned parents, all mapped to seven articles with760 separately cited claims. Of the children,
+237 are numbered units, seven openings, two closings,28 notes and two folio-only non-content
+units. No missing numbered passage is fabricated. Prior released records/citations are semantically
+unchanged. Source review/certification remain closed; global discovery and later feat-087 review
+are unresolved. The next authoring batch is feat-054, PDF231–269, not executed here.

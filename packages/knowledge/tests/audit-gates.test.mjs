@@ -719,7 +719,7 @@ describe('evidence-derived audit gates', () => {
       expect.objectContaining({ reason: 'specialist-rejected' }),
     );
     await yieldToEventLoop();
-  }, 30_000);
+  }, 60_000);
 
   it('counts a source-compared released claim separately from specialist approval', async () => {
     const { context, owner } = auditContext();
@@ -923,7 +923,7 @@ describe('evidence-derived audit gates', () => {
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 1024,
+      groups: 1300,
       exclusions: 17,
     });
     expect(registry.layers.every(layer => layer.rosterStatus === 'unresolved')).toBe(true);

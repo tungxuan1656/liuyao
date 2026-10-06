@@ -77,12 +77,12 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 1024,
+      groups: 1300,
       exclusions: 17,
     });
     expect(audit.totals).toMatchObject({
       releasedClaimsCovered: 197,
-      releasedClaimsRequired: 4360,
+      releasedClaimsRequired: 5120,
       currentDecisions: 84,
     });
     expect(audit.gates.sourceReview.status).toBe('closed');
@@ -193,7 +193,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
   } finally {
     rmSync(temporary, { recursive: true, force: true });
   }
-}, 60_000);
+}, 120_000);
 
 it('projects only selected records and reachable citation editions without local paths', () => {
   const claim = (id, citationIds = []) => ({ id, kind: 'structural-fact', text: id, citationIds });

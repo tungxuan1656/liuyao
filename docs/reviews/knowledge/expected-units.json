@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 36,
+  "registryRevision": 43,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "c9d63e3edc8c4bc0cb060c2838272fcb0d207f1c65e3fb0e714dad8b6df92e9c"
+    "sha256": "85e5396a525dd115f8afc305a375f1f87832932a1dd35a63f7d034eaa46b18ae"
   },
   "counts": {
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 1024,
+    "groups": 1300,
     "exclusions": 17
   },
   "layers": [
@@ -3850,7 +3850,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
     },
     {
       "id": "bpct-part1-ch14",
@@ -3867,7 +3868,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-part1-ch15",
@@ -3884,7 +3886,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
     },
     {
       "id": "bpct-part1-ch16",
@@ -3901,7 +3904,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
     },
     {
       "id": "bpct-part1-ch17",
@@ -3918,7 +3922,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
     },
     {
       "id": "bpct-part1-ch18",
@@ -3935,7 +3940,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     },
     {
       "id": "bpct-part1-ch19",
@@ -3952,7 +3958,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
     },
     {
       "id": "bpct-part1-ch20",
@@ -21747,6 +21754,4822 @@
       "layerScopeIds": ["layer-bpct-author-commentary"],
       "discoveryStatus": "unresolved",
       "recordIds": ["article-bpct-chapter-nine-life"]
+    },
+    {
+      "id": "bpct-ch13-opening",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 166,
+      "pdfPageEnd": 166,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-01",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 166,
+      "pdfPageEnd": 166,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-02",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 166,
+      "pdfPageEnd": 166,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-03",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 166,
+      "pdfPageEnd": 167,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-04",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 167,
+      "pdfPageEnd": 167,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-05",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 167,
+      "pdfPageEnd": 167,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-06",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 167,
+      "pdfPageEnd": 167,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-07",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 167,
+      "pdfPageEnd": 168,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-08",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 168,
+      "pdfPageEnd": 168,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-09",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 168,
+      "pdfPageEnd": 168,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-10",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 168,
+      "pdfPageEnd": 168,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-11",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 168,
+      "pdfPageEnd": 168,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-12",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 169,
+      "pdfPageEnd": 169,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-13",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 169,
+      "pdfPageEnd": 169,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-14",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 169,
+      "pdfPageEnd": 169,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-15",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 169,
+      "pdfPageEnd": 169,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-16",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 170,
+      "pdfPageEnd": 170,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-17",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 170,
+      "pdfPageEnd": 170,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-18",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 170,
+      "pdfPageEnd": 170,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-19",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 170,
+      "pdfPageEnd": 170,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-20",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 171,
+      "pdfPageEnd": 171,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-21",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 171,
+      "pdfPageEnd": 171,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-22",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 171,
+      "pdfPageEnd": 171,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-23",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 171,
+      "pdfPageEnd": 172,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-24",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 172,
+      "pdfPageEnd": 172,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-25",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 172,
+      "pdfPageEnd": 172,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-26",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 172,
+      "pdfPageEnd": 172,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-27",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 172,
+      "pdfPageEnd": 172,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-28",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 173,
+      "pdfPageEnd": 173,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-29",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 173,
+      "pdfPageEnd": 173,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-30",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 173,
+      "pdfPageEnd": 173,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-31",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 173,
+      "pdfPageEnd": 173,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-32",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 32",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 173,
+      "pdfPageEnd": 173,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-33",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 33",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 173,
+      "pdfPageEnd": 174,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-34",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 34",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 174,
+      "pdfPageEnd": 174,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-author-commentary"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-35",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 35",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 174,
+      "pdfPageEnd": 174,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-36",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 36",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 174,
+      "pdfPageEnd": 174,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-37",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — 37",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 174,
+      "pdfPageEnd": 175,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-closing",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Thất Thoát — closing",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 175,
+      "pdfPageEnd": 175,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch14-opening",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 176,
+      "pdfPageEnd": 176,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-01",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 176,
+      "pdfPageEnd": 177,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-02",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 177,
+      "pdfPageEnd": 177,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-03",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 177,
+      "pdfPageEnd": 177,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-04",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 177,
+      "pdfPageEnd": 177,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-05",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 177,
+      "pdfPageEnd": 177,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-06",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 177,
+      "pdfPageEnd": 178,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-07",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 178,
+      "pdfPageEnd": 178,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-author-commentary"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-08",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 178,
+      "pdfPageEnd": 178,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-09",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 178,
+      "pdfPageEnd": 178,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-10",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 178,
+      "pdfPageEnd": 179,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-11",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 179,
+      "pdfPageEnd": 179,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-12",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 179,
+      "pdfPageEnd": 179,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-13",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 179,
+      "pdfPageEnd": 180,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-14",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 180,
+      "pdfPageEnd": 180,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-15",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 180,
+      "pdfPageEnd": 180,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-16",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 180,
+      "pdfPageEnd": 180,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-17",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 180,
+      "pdfPageEnd": 180,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-18",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 181,
+      "pdfPageEnd": 181,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-19",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 181,
+      "pdfPageEnd": 181,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-20",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 181,
+      "pdfPageEnd": 181,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-21",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 181,
+      "pdfPageEnd": 181,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-22",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 181,
+      "pdfPageEnd": 181,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-23",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 182,
+      "pdfPageEnd": 182,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-24",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 182,
+      "pdfPageEnd": 182,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-25",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 182,
+      "pdfPageEnd": 182,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-26",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 182,
+      "pdfPageEnd": 182,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch14-27",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Xuất Hành — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 182,
+      "pdfPageEnd": 183,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch15-opening",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 184,
+      "pdfPageEnd": 184,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-01",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 184,
+      "pdfPageEnd": 184,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-02",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 184,
+      "pdfPageEnd": 184,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-03",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 184,
+      "pdfPageEnd": 185,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-04",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 185,
+      "pdfPageEnd": 185,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-05",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 185,
+      "pdfPageEnd": 185,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-06",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 185,
+      "pdfPageEnd": 185,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-07",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 185,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-08",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 186,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-09",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 186,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-10",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 186,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-11",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 186,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-12",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 187,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-13",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 187,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-14",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 187,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-15",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 187,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-17",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 187,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-18",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 188,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-19",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 188,
+      "pdfPageEnd": 188,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-20",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 188,
+      "pdfPageEnd": 188,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-21",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 188,
+      "pdfPageEnd": 188,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-22",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 188,
+      "pdfPageEnd": 188,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-23",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 189,
+      "pdfPageEnd": 189,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-24",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 189,
+      "pdfPageEnd": 189,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-25",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 189,
+      "pdfPageEnd": 189,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-closing",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Cầu Sư — closing",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 189,
+      "pdfPageEnd": 189,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-folio-190",
+      "parentId": "bpct-part1-ch15",
+      "kind": "non-content",
+      "group": "Folio 161 only; chapter closing ends189",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 190,
+      "pdfPageEnd": 190,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-uncredited-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch16-opening",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 191,
+      "pdfPageEnd": 191,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-01",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 191,
+      "pdfPageEnd": 191,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-02",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 191,
+      "pdfPageEnd": 191,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-03",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 192,
+      "pdfPageEnd": 192,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-04",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 192,
+      "pdfPageEnd": 192,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-05",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 192,
+      "pdfPageEnd": 192,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-06",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 193,
+      "pdfPageEnd": 193,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-07",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 193,
+      "pdfPageEnd": 193,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-08",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 193,
+      "pdfPageEnd": 193,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-09",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 193,
+      "pdfPageEnd": 193,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-10",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 193,
+      "pdfPageEnd": 193,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-11",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 194,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-12",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 194,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-13",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 194,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-14",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 194,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-15",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 194,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-16",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 195,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-17",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 195,
+      "pdfPageEnd": 195,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-18",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 195,
+      "pdfPageEnd": 195,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-19",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 195,
+      "pdfPageEnd": 195,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-20",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 195,
+      "pdfPageEnd": 195,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-21",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 195,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-22",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-23",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-24",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 197,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-25",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 197,
+      "pdfPageEnd": 197,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-26",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 197,
+      "pdfPageEnd": 197,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-27",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 197,
+      "pdfPageEnd": 197,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-28",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 197,
+      "pdfPageEnd": 198,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-29",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 198,
+      "pdfPageEnd": 198,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-30",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 198,
+      "pdfPageEnd": 198,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-31",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 198,
+      "pdfPageEnd": 198,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-32",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 32",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 198,
+      "pdfPageEnd": 198,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-33",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 33",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 198,
+      "pdfPageEnd": 198,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-34",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Học Quán — 34",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 198,
+      "pdfPageEnd": 199,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch17-opening",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 200,
+      "pdfPageEnd": 200,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-01",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 200,
+      "pdfPageEnd": 200,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-02",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 200,
+      "pdfPageEnd": 201,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-03",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 201,
+      "pdfPageEnd": 201,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-04",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 201,
+      "pdfPageEnd": 201,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-05",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 201,
+      "pdfPageEnd": 201,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-06",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 201,
+      "pdfPageEnd": 202,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-07",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 202,
+      "pdfPageEnd": 202,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-08",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 202,
+      "pdfPageEnd": 202,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-09",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 202,
+      "pdfPageEnd": 202,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-10",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 202,
+      "pdfPageEnd": 202,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-11",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 202,
+      "pdfPageEnd": 203,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-12",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 203,
+      "pdfPageEnd": 203,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-13",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 203,
+      "pdfPageEnd": 203,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-14",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 203,
+      "pdfPageEnd": 203,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-15",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 203,
+      "pdfPageEnd": 204,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-16",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 204,
+      "pdfPageEnd": 204,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-17",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 204,
+      "pdfPageEnd": 204,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-18",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 204,
+      "pdfPageEnd": 205,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-19",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 205,
+      "pdfPageEnd": 205,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-20",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 205,
+      "pdfPageEnd": 205,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-21",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 205,
+      "pdfPageEnd": 205,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-22",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 206,
+      "pdfPageEnd": 206,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-23",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 206,
+      "pdfPageEnd": 206,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-24",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 206,
+      "pdfPageEnd": 206,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-25",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 206,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-26",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-27",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-28",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-29",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 208,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-30",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 208,
+      "pdfPageEnd": 208,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-32",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 32",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 208,
+      "pdfPageEnd": 208,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-33",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 33",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 208,
+      "pdfPageEnd": 208,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-34",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 34",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 208,
+      "pdfPageEnd": 209,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-35",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 35",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 209,
+      "pdfPageEnd": 209,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-36",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 36",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 209,
+      "pdfPageEnd": 209,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-37",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 37",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 209,
+      "pdfPageEnd": 209,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-38",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 38",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 209,
+      "pdfPageEnd": 209,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-39",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 39",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 209,
+      "pdfPageEnd": 210,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-40",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 40",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 210,
+      "pdfPageEnd": 210,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-41",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 41",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 210,
+      "pdfPageEnd": 210,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-42",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 42",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 210,
+      "pdfPageEnd": 210,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-43",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 43",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 210,
+      "pdfPageEnd": 210,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-44",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 44",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 210,
+      "pdfPageEnd": 211,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-45",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Hôn Nhân — 45",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 211,
+      "pdfPageEnd": 211,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch18-opening",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 212,
+      "pdfPageEnd": 212,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-01",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 213,
+      "pdfPageEnd": 213,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-02",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 213,
+      "pdfPageEnd": 213,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-03",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 213,
+      "pdfPageEnd": 213,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-04",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 213,
+      "pdfPageEnd": 214,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-05",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 214,
+      "pdfPageEnd": 214,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-06",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 214,
+      "pdfPageEnd": 214,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-07",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 214,
+      "pdfPageEnd": 214,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-08",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 214,
+      "pdfPageEnd": 214,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-09",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 214,
+      "pdfPageEnd": 215,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-10",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 215,
+      "pdfPageEnd": 215,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-11",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 215,
+      "pdfPageEnd": 215,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-12",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 215,
+      "pdfPageEnd": 215,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-13",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 215,
+      "pdfPageEnd": 215,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-14",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 215,
+      "pdfPageEnd": 216,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-15",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 216,
+      "pdfPageEnd": 216,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-16",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 216,
+      "pdfPageEnd": 216,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-17",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 216,
+      "pdfPageEnd": 216,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-18",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 216,
+      "pdfPageEnd": 216,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-19",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 216,
+      "pdfPageEnd": 216,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-20",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 216,
+      "pdfPageEnd": 217,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-21",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 217,
+      "pdfPageEnd": 217,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-22",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 217,
+      "pdfPageEnd": 217,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-23",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 217,
+      "pdfPageEnd": 217,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-24",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 217,
+      "pdfPageEnd": 218,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-25",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 218,
+      "pdfPageEnd": 218,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-26",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 218,
+      "pdfPageEnd": 218,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-27",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 218,
+      "pdfPageEnd": 218,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-28",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 218,
+      "pdfPageEnd": 218,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-29",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 218,
+      "pdfPageEnd": 219,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-30",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 219,
+      "pdfPageEnd": 219,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-31",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 219,
+      "pdfPageEnd": 219,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-32",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 32",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 219,
+      "pdfPageEnd": 219,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-33",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 33",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 219,
+      "pdfPageEnd": 220,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-34",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 34",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 220,
+      "pdfPageEnd": 220,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-35",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 35",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 220,
+      "pdfPageEnd": 220,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-36",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 36",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 220,
+      "pdfPageEnd": 220,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-37",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 37",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 221,
+      "pdfPageEnd": 221,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-38",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 38",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 221,
+      "pdfPageEnd": 221,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-39",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 39",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 221,
+      "pdfPageEnd": 221,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-40",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 40",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 221,
+      "pdfPageEnd": 221,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-42",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Sản Dục — 42",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 221,
+      "pdfPageEnd": 221,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-folio-222",
+      "parentId": "bpct-part1-ch18",
+      "kind": "non-content",
+      "group": "Folio 190 only; final printed item42 ends221",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 222,
+      "pdfPageEnd": 222,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-uncredited-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch19-opening",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 223,
+      "pdfPageEnd": 223,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-01",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 223,
+      "pdfPageEnd": 223,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-02",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 223,
+      "pdfPageEnd": 224,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-03",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 224,
+      "pdfPageEnd": 224,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-04",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 224,
+      "pdfPageEnd": 224,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-05",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 224,
+      "pdfPageEnd": 224,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-06",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 224,
+      "pdfPageEnd": 225,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-07",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 225,
+      "pdfPageEnd": 225,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-08",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 225,
+      "pdfPageEnd": 225,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-09",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 225,
+      "pdfPageEnd": 225,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-10",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 226,
+      "pdfPageEnd": 226,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-11",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 226,
+      "pdfPageEnd": 226,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-12",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 226,
+      "pdfPageEnd": 226,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-13",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 226,
+      "pdfPageEnd": 226,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-14",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 227,
+      "pdfPageEnd": 227,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-15",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 227,
+      "pdfPageEnd": 227,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-16",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 227,
+      "pdfPageEnd": 227,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-17",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 227,
+      "pdfPageEnd": 227,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-18",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 227,
+      "pdfPageEnd": 227,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-19",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 228,
+      "pdfPageEnd": 228,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-20",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 228,
+      "pdfPageEnd": 228,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-21",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 228,
+      "pdfPageEnd": 228,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-22",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 228,
+      "pdfPageEnd": 228,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-23",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 228,
+      "pdfPageEnd": 228,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-24",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 229,
+      "pdfPageEnd": 229,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-25",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 229,
+      "pdfPageEnd": 229,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-26",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 229,
+      "pdfPageEnd": 229,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-27",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 229,
+      "pdfPageEnd": 229,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-28",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 229,
+      "pdfPageEnd": 229,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-29",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 230,
+      "pdfPageEnd": 230,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch19-30",
+      "parentId": "bpct-part1-ch19",
+      "kind": "content",
+      "group": "Tiến Nhân Khẩu — 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 230,
+      "pdfPageEnd": 230,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-nineteen-household"]
+    },
+    {
+      "id": "bpct-ch13-note-01",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Bản cung / Tha cung",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 167,
+      "pdfPageEnd": 167,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-note-02",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Disagreement attached to03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 167,
+      "pdfPageEnd": 167,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-note-03",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Loan mistaken for loss",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 169,
+      "pdfPageEnd": 169,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-note-04",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "Tăng / Đạo",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 171,
+      "pdfPageEnd": 171,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch13-note-05",
+      "parentId": "bpct-part1-ch13",
+      "kind": "content",
+      "group": "nã / na",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 174,
+      "pdfPageEnd": 174,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-thirteen-loss"]
+    },
+    {
+      "id": "bpct-ch14-note-01",
+      "parentId": "bpct-part1-ch14",
+      "kind": "content",
+      "group": "Timing attached to10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 179,
+      "pdfPageEnd": 179,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
+    },
+    {
+      "id": "bpct-ch15-note-01",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Chuyên kinh / tạp học",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 185,
+      "pdfPageEnd": 185,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-note-02",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Biên Hiếu Tiên",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 186,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-note-03",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Lý Lão Đam",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 186,
+      "pdfPageEnd": 186,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch15-note-04",
+      "parentId": "bpct-part1-ch15",
+      "kind": "content",
+      "group": "Giả quán",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 187,
+      "pdfPageEnd": 187,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fifteen-teacher"]
+    },
+    {
+      "id": "bpct-ch16-note-01",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Trình Di / Trình Hạo",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 191,
+      "pdfPageEnd": 191,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-02",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Thi phệ",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 191,
+      "pdfPageEnd": 191,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-03",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Tây tịch",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 191,
+      "pdfPageEnd": 191,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-04",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Thư quán",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 193,
+      "pdfPageEnd": 193,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-05",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Quan phi",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 194,
+      "pdfPageEnd": 194,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-06",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Phụ cấp",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 195,
+      "pdfPageEnd": 195,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-07",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Chấp kinh",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-08",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Lưu Thứ",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-09",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Mã Dung",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-10",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Tôn Tẫn / Bàng Quyên",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 196,
+      "pdfPageEnd": 196,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch16-note-11",
+      "parentId": "bpct-part1-ch16",
+      "kind": "content",
+      "group": "Dương Thì / Du Tạc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 197,
+      "pdfPageEnd": 197,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-sixteen-study"]
+    },
+    {
+      "id": "bpct-ch17-note-01",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Quan hình",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-note-02",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Công môn",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch17-note-03",
+      "parentId": "bpct-part1-ch17",
+      "kind": "content",
+      "group": "Tì bộc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 207,
+      "pdfPageEnd": 207,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-seventeen-marriage"]
+    },
+    {
+      "id": "bpct-ch18-note-01",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Thái Hạo",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 212,
+      "pdfPageEnd": 212,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-note-02",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Disagreement with Nội tắc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 212,
+      "pdfPageEnd": 212,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-note-03",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Month qualification",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 217,
+      "pdfPageEnd": 217,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
+    },
+    {
+      "id": "bpct-ch18-note-04",
+      "parentId": "bpct-part1-ch18",
+      "kind": "content",
+      "group": "Nội / Ngoại correction",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 220,
+      "pdfPageEnd": 220,
+      "authorFeatureId": "feat-053",
+      "auditFeatureId": "feat-087",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-eighteen-childbirth"]
     }
   ],
   "exclusions": [

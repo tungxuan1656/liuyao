@@ -38,7 +38,8 @@
     "citations/batch-sixteen-advanced.json",
     "citations/batch-seventeen-advanced.json",
     "citations/batch-eighteen-advanced.json",
-    "citations/batch-nineteen-advanced.json"
+    "citations/batch-nineteen-advanced.json",
+    "citations/batch-twenty-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -264,7 +265,14 @@
     "liuyao/bpct-chapter-nine-life.json",
     "liuyao/bpct-chapter-ten-fame.json",
     "liuyao/bpct-chapter-eleven-office.json",
-    "liuyao/bpct-chapter-twelve-wealth.json"
+    "liuyao/bpct-chapter-twelve-wealth.json",
+    "liuyao/bpct-chapter-thirteen-loss.json",
+    "liuyao/bpct-chapter-fourteen-travel.json",
+    "liuyao/bpct-chapter-fifteen-teacher.json",
+    "liuyao/bpct-chapter-sixteen-study.json",
+    "liuyao/bpct-chapter-seventeen-marriage.json",
+    "liuyao/bpct-chapter-eighteen-childbirth.json",
+    "liuyao/bpct-chapter-nineteen-household.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -490,7 +498,14 @@
     "article-bpct-chapter-nine-life",
     "article-bpct-chapter-ten-fame",
     "article-bpct-chapter-eleven-office",
-    "article-bpct-chapter-twelve-wealth"
+    "article-bpct-chapter-twelve-wealth",
+    "article-bpct-chapter-thirteen-loss",
+    "article-bpct-chapter-fourteen-travel",
+    "article-bpct-chapter-fifteen-teacher",
+    "article-bpct-chapter-sixteen-study",
+    "article-bpct-chapter-seventeen-marriage",
+    "article-bpct-chapter-eighteen-childbirth",
+    "article-bpct-chapter-nineteen-household"
   ],
   "topics": [
     {
@@ -552,6 +567,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-053: BPCT chương13–19, PDF166–230 (Thất Thoát, Xuất Hành, Cầu Sư, Học Quán, Hôn Nhân, Sản Dục, Tiến Nhân Khẩu). Feat-052 đã có tóm tắt đối chiếu nguồn cho chương7, Niên Thời không đánh số, chương9–12, PDF101–165; phần chèn đời vận giữ riêng, trang165 chỉ số in139. Các vai hỏi, khác lớp nghĩa/lời bình và chú thích phản bác vẫn được giữ. Chưa có kiểm chứng độc lập, phép lịch, bộ phân loại, diễn giải tự động hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
+    "note": "Dự kiến feat-054: BPCT chương20 và bổ túc Gia Trạch, chương21 Châu Thuyền, chương22 Xướng Gia, PDF231–269. Feat-053 đã có tóm tắt đối chiếu nguồn chương13–19, PDF166–230, giữ vai hỏi, lớp phú/nghĩa/lời bình,28 chú và khác biệt nguồn. Trang190/222 chỉ số in161/190, không phải đoạn tiếp; nhãn mở23 và khoảng số16/31/41 không được phục dựng. Chưa có kiểm chứng độc lập, phép lịch, diễn giải tự động, hướng dẫn sức khoẻ/an toàn/tài chính/xã hội hoặc chứng nhận hiệu nghiệm; cổng toàn corpus vẫn đóng."
   }
 }
