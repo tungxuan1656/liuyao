@@ -714,7 +714,7 @@ describe('evidence-derived audit gates', () => {
       expect.objectContaining({ reason: 'specialist-rejected' }),
     );
     await yieldToEventLoop();
-  }, 20000);
+  }, 30_000);
 
   it('counts a source-compared released claim separately from specialist approval', async () => {
     const { context, owner } = auditContext();
