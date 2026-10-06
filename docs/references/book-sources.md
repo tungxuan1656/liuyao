@@ -1027,3 +1027,24 @@ new interpretation behavior, independent audit approval or certification is rele
 Chapter-two prose units have no individual signed author. Their attribution names the supplied
 Vương Hồng Tự compilation, not a claim that he composed every formula or paragraph.
 The edition's generic Phú credit is not used to assign these poems to Lưu Bá Ôn.
+
+### Feat-052 application comparison — Thiên Thời
+
+BPCT PDFs 101–110 (printed85–94) have 44 numbered passages. Full extracted passages
+and contact-sheet images were inspected; this is not full-size individual review of every page.
+The [weather article](../../packages/knowledge/data/liuyao/bpct-chapter-seven-weather.json)
+keeps the Phú/original-reading summary, Vĩnh Cao's separately printed meaning and
+Vương Hồng Tự's commentary distinct. Generic edition credits do not prove authorship of each verse.
+Note1 at109 attaches to trợ-Phụ in43, not Phụ Mẫu as a relative. No diagram/table occurs.
+
+Weather roles remain question-specific: Tài means tạnh, not automatically sun;
+Tử denotes sun/moon appearances, Huynh wind/cloud, Quan thunder/dimness, with explicit
+season, strength, movement, support and obstruction conditions. All fourteen timing
+cases in43 are separately represented, including the printed tĩnh Không gặp chờ with
+missing encounter object and the unclear Nguyên hợp cục khắc; neither is repaired.
+Verse37's Xà differs from commentary's Thanh Long/Thìn; meaning39's Phúc Mộc differs
+from commentary's Mộc Tài. Verse42's đồng nhân is glossed as Huynh, not a mandatory
+hexagram identity. Verse34 is not a three-yin/three-yang classifier. Eclipse, dragon,
+weather accuracy and divine imagery remain attributed doctrine, not established events,
+meteorology, astronomy, forecasts, calendar computation or efficacy. Existing source-compared
+records stay unchanged; later feat-086 layer/unit audit and global gates remain open.

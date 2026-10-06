@@ -47,10 +47,10 @@
 - Test: `packages/knowledge/tests/book-batch-nineteen.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover every chapter 7 passage, qualification, example, note, and source layer on PDF 101–110.
-- [ ] Preserve date/weather question roles and conditions as attributed source claims; do not derive calendar behavior or verified outcomes.
-- [ ] Add claim, citation, attribution, exclusion, and public-release tests for the complete unit.
-- [ ] Run focused tests and the corpus validator; commit this checkpoint.
+- [x] Cover every chapter 7 passage, qualification, example, note, and source layer on PDF 101–110.
+- [x] Preserve date/weather question roles and conditions as attributed source claims; do not derive calendar behavior or verified outcomes.
+- [x] Add claim, citation, attribution, exclusion, and public-release tests for the complete unit.
+- [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 3: Author the unnumbered Niên Thời section
 

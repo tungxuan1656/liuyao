@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 218, "released": 218, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 3419, "missingCitationIds": [] },
-  "citations": { "total": 3665 },
+  "records": { "authored": 219, "released": 219, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 3567, "missingCitationIds": [] },
+  "citations": { "total": 3813 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -450,7 +450,8 @@
         "article-timing-relatives-body-spirits-and-sincerity-context",
         "article-bpct-chapter-five-01-06",
         "article-bpct-chapter-five-07-12",
-        "article-bpct-chapter-five-13-18"
+        "article-bpct-chapter-five-13-18",
+        "article-bpct-chapter-seven-weather"
       ]
     },
     {
@@ -1668,9 +1669,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2679,
+        "required": 2680,
         "current": 84,
-        "missing": 2595,
+        "missing": 2596,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1679,8 +1680,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1024 },
-        { "code": "missing-decision", "count": 2595 },
-        { "code": "released-claim-coverage-incomplete", "count": 3222 }
+        { "code": "missing-decision", "count": 2596 },
+        { "code": "released-claim-coverage-incomplete", "count": 3370 }
       ]
     },
     "certification": {
@@ -1688,7 +1689,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2679,
+        "required": 2680,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
