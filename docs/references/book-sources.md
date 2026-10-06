@@ -896,7 +896,7 @@ feat-085 audit, global inventory reconciliation, separate verification or corpus
   The classical diagrams and commentary identify Lục ngũ.
   The selected advanced conditions do not depend on that example's label, timing, or reported outcome.
 - Section 18 ends before the separator on PDF 74.
-  The following inserted essay lacks clear author attribution and does not support released claims.
+  The following inserted essay lacks clear author attribution and does not support main-author or calculation-authority claims. Feat-051 separately summarizes it as an uncredited supplement without endorsing its efficacy assertions.
   The [proxy-context article](../../packages/knowledge/data/liuyao/divination-context-and-proxy-role.json) keeps religious and repetition judgments attributed.
   These judgments do not become an accuracy guarantee, user filter, ritual requirement, or recasting restriction.
 
@@ -959,3 +959,71 @@ The [knowledge quality contract](../product-specs/knowledge-quality.md) defines 
 - V1 rules and source mapping → [Liu Yao ruleset](../design-docs/liuyao-ruleset-v1.md)
 - Content acceptance → [Knowledge quality](../product-specs/knowledge-quality.md)
 - Data ownership and storage → [Knowledge model](../design-docs/knowledge-model.md)
+
+### Feat-051 front matter and chapter-one comparison
+
+Full extracted passages and each individual page image at BPCT PDFs 1–76 were inspected;
+77 is chapter-boundary context only. The verified fingerprint remains the source catalog's BPCT SHA.
+[Front voices](../../packages/knowledge/data/liuyao/bpct-front-voices.json) separates title credits,
+Vĩnh Cao, Trương Cảnh Tùng, all six Phàm lệ, seven footnotes, and Vương Hồng Tự's maxims.
+Credits are edition testimony, not historical authorship certification. Nhu Tuân Thì on the title
+and Nhu Tôn Thì in the preface remain distinct spellings.
+[Chapter one](../../packages/knowledge/data/liuyao/bpct-chapter-one-foundations.json) covers I–XXV,
+including two VI headings, thirty Nạp âm pairs and six inspected diagram/layout groups.
+Its Ghi chú has no separate signature: transmission through Vĩnh Cao does not prove authorship
+of every inserted line. Existing selected records, claims and corrections remain unchanged.
+
+Additional source limitations: XIX's meaning omits Tí in the Ất/Kỷ pair and the Canh/Tân line;
+XVIII has no Tân Lộc/Nhẫn row. XVII repeats Hỏa at Tị/Dần in the numbered starts and has
+lược marks for most stage rosters. XX has Mão-to-Ngọ beside Mão-to-Tí and Tí/Mão/Ngọ;
+no complete Hình table is inferred. XXV's ten points per watch, 24 minutes per point and
+3:24 example conflict with its two-hour watch statement. Original summaries report these
+without supplying missing words, a modern calendar, stage algorithm, ritual or body assessment.
+The source inventory records unit-by-unit authoring routes; feat-084 and global gates remain open.
+
+### Feat-051 complete boards and discussions 1–6
+
+All 64 board figures on PDFs 49–66 are separately represented by source-unit ID, heading,
+six image-read polarities and printed annotations, actual Phục/Quái thân/Thế/Ứng dispositions,
+and their own full commentary bounds. No expectations came from the core calculator.
+The inventory's per-board table retains missing or conflicting markers and relational labels,
+including Đại Hữu lục-Thế, Hằng nhị-Thế, Di's two Thế labels, Vị Tế's ngũ-Ứng,
+Phục's absent Thế, Độn/Bí/Tiệm/Đại Quá/Đại Tráng relatives, Lý's swapped exterior branches,
+Sư's swapped Hợi/Dậu and Tỉnh's Canh exterior stems. None repairs source images or replaces
+previously reviewed calculation tables. Tỉnh's footnote 1 is separate from Đại Quá.
+The closing Độn-to-Đồng Nhân example stays separate with its Tí/Dần wording conflict.
+
+Full ch5 discussions 1–6 at PDFs 67–69 now include all five Dụng rosters, both burial-question
+roles, all three question/answer contexts, Nguyên/Kỵ/Cừu compound conditions, six Phi meanings,
+Phục method/criticism/examples and attached notes 1–4. Existing selected claims remain unchanged;
+new full-passage records do not treat prior citations as complete coverage.
+
+Full ch5 discussions 7–12 at PDFs 69–71 preserve all six spirit descriptions and inserted
+star examples, all stage contrasts, Nguyệt phá and Tuần Không conditions, four directional
+Phản ngâm groups plus six opposing line pairs, and all fourteen Phục ngâm pairs in their
+both/outer/inner groups. Three translator notes remain separate. Note 6's purported twelve-stage
+list actually omits Tử (eleven names); no omitted name is inserted. Type-2 Phi, intrinsic
+Đằng Xà Mộc, Ngọ Lâm Quan, Dần điền thực, Phản ngâm uniqueness and the Phục ngâm
+closing scope remain explicitly unsupported as calculation authority, not silently fixed.
+
+### Feat-051 final discussions and inserted contribution
+
+Complete discussions 13–18 at PDFs 72–74 preserve both seasonal paragraphs, temporary strength,
+mixed hợp/khắc and the Thân/Tị exception, all three xung/hợp types in each direction, all four
+Tuyệt rescue examples, both Thổ cases and the Dậu/Dần control example, the seven Tiến/eight
+Thoái rosters, and the full proxy/repetition continuation. Note 8 remains Vĩnh Cao's separate
+terminology explanation. No missing forward Thìn/Mùi pair or seasonal state is inferred.
+
+The unnumbered italic essay starts after the separator on 74 and ends with address to vantinh
+on 76. Its six original summaries separately account for uncredited identity, cosmological
+certainty rhetoric, the political authority analogy, seasonal/group-strength examples,
+Nguyệt versus supported strength and leader/peer illustrations, timing and admission of
+complex overlapping cases. It is not Vương Hồng Tự's item 18 or an invented 19, and no signature
+is supplied by inference. This new evidence justifies a narrower exclusion statement: no
+main-author attribution or calculation authority, rather than no original summary of the essay.
+No source image, quoted passage, repaired source, calendar, classifier, medical/ritual advice,
+new interpretation behavior, independent audit approval or certification is released.
+
+Chapter-two prose units have no individual signed author. Their attribution names the supplied
+Vương Hồng Tự compilation, not a claim that he composed every formula or paragraph.
+The edition's generic Phú credit is not used to assign these poems to Lưu Bá Ôn.

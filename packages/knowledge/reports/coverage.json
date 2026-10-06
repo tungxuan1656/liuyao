@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 203, "released": 203, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 2459, "missingCitationIds": [] },
-  "citations": { "total": 2705 },
+  "records": { "authored": 218, "released": 218, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 3419, "missingCitationIds": [] },
+  "citations": { "total": 3665 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -355,7 +355,19 @@
         "term-branch-shen",
         "term-branch-you",
         "term-branch-xu",
-        "term-branch-hai"
+        "term-branch-hai",
+        "article-bpct-front-voices",
+        "article-bpct-chapter-one-foundations",
+        "article-bpct-chapter-two-ca-quyet",
+        "article-bpct-chapter-three-poems",
+        "article-bpct-boards-can",
+        "article-bpct-boards-kham",
+        "article-bpct-boards-can-mountain",
+        "article-bpct-boards-chan",
+        "article-bpct-boards-ton",
+        "article-bpct-boards-ly",
+        "article-bpct-boards-khon",
+        "article-bpct-boards-doai"
       ]
     },
     {
@@ -435,7 +447,10 @@
         "article-hidden-spirit-release-restraint-and-combination-context",
         "article-useful-spirit-avoidance-rescue-and-transformation-context",
         "article-adverse-support-store-intervening-lines-and-release-context",
-        "article-timing-relatives-body-spirits-and-sincerity-context"
+        "article-timing-relatives-body-spirits-and-sincerity-context",
+        "article-bpct-chapter-five-01-06",
+        "article-bpct-chapter-five-07-12",
+        "article-bpct-chapter-five-13-18"
       ]
     },
     {
@@ -1646,26 +1661,26 @@
   },
   "nextBatch": {
     "hexagramIds": [],
-    "topicIds": ["topic-liuyao-foundations"],
-    "note": "Dự kiến BPCT nền tảng và phần đầu sách (feat-051). Câu 57–69 (feat-050), PDF 94–100, đã có tóm tắt riêng phú, nghĩa tiếng Việt, bình, 12 mục ứng kỳ và chú 12–13; phần kết chương không đánh số giữ riêng. Các khác biệt và giới hạn nguồn không được sửa âm thầm. Các 64 quẻ và 384 vị trí vẫn chỉ là source comparison được chọn; audit từng unit/layer, kiểm chứng độc lập và chứng nhận corpus còn mở. Không phát hành phép lịch, classifier, dự báo sức khỏe hoặc nghi lễ ứng dụng."
+    "topicIds": ["topic-liuyao-advanced"],
+    "note": "Dự kiến BPCT ứng dụng Thiên Thời, Niên Thời, Thân Mệnh, Cầu Danh và Sĩ Hoạn (feat-052). Phần đầu và chương 1–5 (feat-051) đã có tóm tắt đầy đủ theo unit, công thức, lớp nghĩa/chú và 64 hình board quan sát riêng; bài thêm PDF 74–76 không ký tên giữ riêng. Các quẻ và câu phú trước vẫn là source comparison, không chứng nhận lịch, classifier, hiệu lực dự đoán, nghi lễ hoặc sức khỏe. Audit từng unit/layer, kiểm chứng độc lập và chứng nhận corpus còn mở."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2088,
+        "required": 2280,
         "current": 84,
-        "missing": 2004,
+        "missing": 2196,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
         "unresolved": 0
       },
       "reasons": [
-        { "code": "unresolved-layer-roster", "count": 15 },
-        { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 2004 },
-        { "code": "released-claim-coverage-incomplete", "count": 2262 }
+        { "code": "unresolved-layer-roster", "count": 18 },
+        { "code": "unresolved-source-discovery", "count": 625 },
+        { "code": "missing-decision", "count": 2196 },
+        { "code": "released-claim-coverage-incomplete", "count": 3222 }
       ]
     },
     "certification": {
@@ -1673,7 +1688,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2088,
+        "required": 2280,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

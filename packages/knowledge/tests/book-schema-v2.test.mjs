@@ -34,7 +34,10 @@ describe('version-2 book schema and typed fixtures', () => {
     const v1 = readJson('../data/manifest.json');
     expect(v1.schemaVersion).toBe(1);
     const records = v1.recordFiles.map(file => readJson(`../data/${file}`));
-    for (const record of records) expect(validateV1(record)).toBe(true);
+    for (const record of records.filter(record => record.schemaVersion === 1))
+      expect(validateV1(record)).toBe(true);
+    for (const record of records.filter(record => record.schemaVersion === 2))
+      expect(validateV2(record)).toBe(true);
     const mutated = structuredClone(records[0]);
     mutated.schemaVersion = 2;
     expect(validateV1(mutated)).toBe(false);

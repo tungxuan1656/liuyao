@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { checkCorpus } from '../scripts/corpus-checks.mjs';
+import { recordSchemaName } from '../scripts/record-schema-dispatch.mjs';
 import { coverageReport } from '../scripts/corpus-coverage.mjs';
 
 const readJson = file => JSON.parse(readFileSync(new URL(file, import.meta.url), 'utf8'));
@@ -17,7 +18,7 @@ const corpus = {
 const ajv = new Ajv({ allErrors: true, strictTypes: false, strictRequired: false });
 addFormats(ajv);
 const validators = Object.fromEntries(
-  ['manifest', 'sources', 'citations', 'record'].map(name => [
+  ['manifest', 'sources', 'citations', 'record', 'record-v2'].map(name => [
     name,
     ajv.compile(readJson(`../schema/${name}.schema.json`)),
   ]),
@@ -31,8 +32,8 @@ describe('book corpus publication boundary', () => {
     expect(validators.citations({ schemaVersion: 1, citations: corpus.citations })).toBe(true);
     for (const record of corpus.records)
       expect(
-        validators.record(record),
-        `${record.id}: ${ajv.errorsText(validators.record.errors)}`,
+        validators[recordSchemaName(record, record.id)](record),
+        `${record.id}: ${ajv.errorsText(validators[recordSchemaName(record, record.id)].errors)}`,
       ).toBe(true);
     const report = coverageReport({ ...corpus, checked: checkCorpus(corpus) });
     const claimCount = corpus.records.reduce(
@@ -46,7 +47,7 @@ describe('book corpus publication boundary', () => {
         ),
       0,
     );
-    expect(claimCount).toBe(2459);
+    expect(claimCount).toBe(3419);
     expect(report.complete).toBe(false);
     expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
     expect(
@@ -68,7 +69,7 @@ describe('book corpus publication boundary', () => {
       expect(record.claims.some(claim => claim.kind === 'structural-fact')).toBe(true);
     }
     expect(report.hexagrams.reviewed).toBe(64);
-    expect(report.records.released).toBe(203);
+    expect(report.records.released).toBe(218);
     expect(report.lines.reviewedPositions).toBe(384);
     expect(report.hexagrams.missingIds).toHaveLength(0);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({
