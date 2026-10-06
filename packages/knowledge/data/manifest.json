@@ -42,7 +42,8 @@
     "citations/batch-twenty-advanced.json",
     "citations/batch-twenty-one-advanced.json",
     "citations/batch-twenty-two-advanced.json",
-    "citations/batch-twenty-three-advanced.json"
+    "citations/batch-twenty-three-advanced.json",
+    "citations/batch-twenty-four-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -292,7 +293,27 @@
     "liuyao/bpct-chapter-thirty-two-state.json",
     "liuyao/bpct-chapter-thirty-three-conflict.json",
     "liuyao/bpct-chapter-thirty-four-disorder.json",
-    "liuyao/bpct-chapter-thirty-five-flight.json"
+    "liuyao/bpct-chapter-thirty-five-flight.json",
+    "liuyao/bpct-question-01.json",
+    "liuyao/bpct-question-02.json",
+    "liuyao/bpct-question-03.json",
+    "liuyao/bpct-question-04.json",
+    "liuyao/bpct-question-05.json",
+    "liuyao/bpct-question-06.json",
+    "liuyao/bpct-question-07.json",
+    "liuyao/bpct-question-08.json",
+    "liuyao/bpct-question-09.json",
+    "liuyao/bpct-question-10.json",
+    "liuyao/bpct-question-11.json",
+    "liuyao/bpct-question-12.json",
+    "liuyao/bpct-question-13.json",
+    "liuyao/bpct-question-14.json",
+    "liuyao/bpct-question-15.json",
+    "liuyao/bpct-question-16.json",
+    "liuyao/bpct-question-17.json",
+    "liuyao/bpct-question-18.json",
+    "liuyao/bpct-moving-lines-insertion.json",
+    "liuyao/bpct-ha-tri.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -542,7 +563,27 @@
     "article-bpct-chapter-thirty-two-state",
     "article-bpct-chapter-thirty-three-conflict",
     "article-bpct-chapter-thirty-four-disorder",
-    "article-bpct-chapter-thirty-five-flight"
+    "article-bpct-chapter-thirty-five-flight",
+    "article-bpct-question-01",
+    "article-bpct-question-02",
+    "article-bpct-question-03",
+    "article-bpct-question-04",
+    "article-bpct-question-05",
+    "article-bpct-question-06",
+    "article-bpct-question-07",
+    "article-bpct-question-08",
+    "article-bpct-question-09",
+    "article-bpct-question-10",
+    "article-bpct-question-11",
+    "article-bpct-question-12",
+    "article-bpct-question-13",
+    "article-bpct-question-14",
+    "article-bpct-question-15",
+    "article-bpct-question-16",
+    "article-bpct-question-17",
+    "article-bpct-question-18",
+    "article-bpct-moving-lines-insertion",
+    "article-bpct-ha-tri"
   ],
   "topics": [
     {
@@ -604,6 +645,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-057: BPCT Part II mười tám câu hỏi và Hà Tri Chương; theo các ranh đơn vị trong source inventory. feat-056 đã đối chiếu nguồn chương27–35 PDF302–364, giữ vai câu hỏi, nghĩa Việt riêng, chú/bất đồng28/14, hai23 ở29, thiếu5 ở35 và câu bị cụt. Không hiệu nghiệm, lời pháp lý/y tế/an toàn/tác chiến/truy bắt hoặc tính lịch/diễn giải tự động; audit090 và cổng corpus vẫn còn nghĩa vụ, chưa chứng nhận."
+    "note": "Dự kiến feat-058: BPCT Yếu Quyết Về Gieo Tiền PDF429–457 và phê bình I–XV PDF458–466; theo source inventory, không bịa mụcIII. feat-057 đối chiếu18 câu hỏi PDF365–412, bài chèn412, trang413 chỉ folio, Hà Tri60 câu/chú/kết PDF414–428. Giữ claim chọn trước/bất đồng/sai hẹn và thiếu nhãn; audit091, xác minh/certification còn mở. Không tính lịch, bộ diễn giải hay lời y tế/pháp lý/an toàn/tài chính."
   }
 }

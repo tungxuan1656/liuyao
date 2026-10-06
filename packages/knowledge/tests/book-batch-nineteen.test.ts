@@ -368,7 +368,7 @@ describe('feat-052 exact pre-authoring layer locator fixtures and release reconc
     expect(audit.complete).toBe(false);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
-    expect(manifest.nextBatch.note).toMatch(/feat-056.*PDF302–364/);
+    expect(manifest.nextBatch.note).toMatch(/feat-058.*PDF429–457/);
     for (const { record } of checkpoints) {
       expect(record.review.evidenceCitationIds).toContain('citation-bpct-front-credits-phu');
       expect(record.review.evidenceCitationIds).toContain(

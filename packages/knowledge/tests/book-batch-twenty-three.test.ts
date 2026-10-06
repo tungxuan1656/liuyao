@@ -119,7 +119,7 @@ describe('feat-056 inspected chapter27–35 source layers', () => {
     expect(locators.find(u => u.id === 'bpct-ch34-closing')?.originalReadingPages).toBeNull();
     expect(locators.find(u => u.id === 'bpct-ch34-closing')?.meaningPages).toBeNull();
     expect(registry.exclusions).toHaveLength(17);
-    expect(registry.groups).toHaveLength(1924);
+    expect(registry.groups).toHaveLength(2536);
     expect(citations.citations.every(c => c.location.pdfPageStart >= 302)).toBe(true);
     expect(citations.citations.every(c => c.location.pdfPageEnd <= 364)).toBe(true);
     expect(text('thirty-livestock', 'bpct-ch30-note-diep-discussion')).toMatch(/không ký/);
@@ -224,6 +224,6 @@ describe('feat-056 qualifications, source disagreements and question scope', () 
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
     expect(audit.complete).toBe(false);
-    expect(manifest.nextBatch.note).toMatch(/feat-057/);
+    expect(manifest.nextBatch.note).toMatch(/feat-058/);
   });
 });
