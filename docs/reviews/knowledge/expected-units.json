@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 44,
+  "registryRevision": 45,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "75b9ed23a838a7a080b8dfd04ac2bb038fec15f0221824fe31abd737b7859c9f"
+    "sha256": "fd7d6fa5e4158eca5baabbb0725d9ceebb0a03bc45a2690ac5c81c2a6977e0c4"
   },
   "counts": {
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 1485,
+    "groups": 1630,
     "exclusions": 17
   },
   "layers": [
@@ -214,6 +214,17 @@
       "sourceAnchor": {
         "inventoryAnchor": "bpct-ch05-postscript",
         "citationIds": ["citation-bpct-ch05-postscript-identity"]
+      },
+      "rosterStatus": "unresolved"
+    },
+    {
+      "id": "layer-bpct-dong-ta-supplement",
+      "editionId": "edition-bpct-supplied",
+      "class": "supplement",
+      "label": "Đông tà signed Vietnamese-only insertion on PDF278; identity/date unresolved",
+      "sourceAnchor": {
+        "inventoryAnchor": "bpct-ch23-dong-ta-opening",
+        "citationIds": ["citation-bpct-ch23-dong-ta-opening-discussion"]
       },
       "rosterStatus": "unresolved"
     }
@@ -4047,9 +4058,11 @@
         "layer-bpct-original-text",
         "layer-bpct-translation",
         "layer-bpct-author-commentary",
-        "layer-bpct-translator-note"
+        "layer-bpct-translator-note",
+        "layer-bpct-dong-ta-supplement"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
     },
     {
       "id": "bpct-transition-279",
@@ -4083,7 +4096,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
     },
     {
       "id": "bpct-part1-ch25",
@@ -4100,7 +4114,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
     },
     {
       "id": "bpct-part1-ch26",
@@ -4117,7 +4132,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
     },
     {
       "id": "bpct-part1-ch27",
@@ -29733,6 +29749,2496 @@
       "layerScopeIds": ["layer-bpct-translator-note"],
       "discoveryStatus": "unresolved",
       "recordIds": ["article-bpct-chapter-twenty-two-xuong-gia"]
+    },
+    {
+      "id": "bpct-ch23-opening",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 270,
+      "pdfPageEnd": 270,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-01",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 270,
+      "pdfPageEnd": 270,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-02",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 271,
+      "pdfPageEnd": 271,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-03",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 271,
+      "pdfPageEnd": 271,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-04",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 271,
+      "pdfPageEnd": 272,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-05",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 272,
+      "pdfPageEnd": 272,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-06",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 272,
+      "pdfPageEnd": 272,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-07",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 272,
+      "pdfPageEnd": 273,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-08",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 273,
+      "pdfPageEnd": 273,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-09",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 273,
+      "pdfPageEnd": 273,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-10",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 273,
+      "pdfPageEnd": 273,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-11",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 273,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-12",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 274,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-13",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 274,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-14",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 274,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-15",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 274,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-16",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 275,
+      "pdfPageEnd": 275,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-17",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 275,
+      "pdfPageEnd": 275,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-18",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 275,
+      "pdfPageEnd": 275,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-19",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 275,
+      "pdfPageEnd": 276,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-20",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 276,
+      "pdfPageEnd": 276,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-21",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 276,
+      "pdfPageEnd": 276,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-22",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 276,
+      "pdfPageEnd": 276,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-23",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 276,
+      "pdfPageEnd": 276,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-24",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 276,
+      "pdfPageEnd": 277,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-25",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 277,
+      "pdfPageEnd": 277,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-26",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 277,
+      "pdfPageEnd": 277,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-27",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 277,
+      "pdfPageEnd": 277,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-28",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-opening",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-01",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-02",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-03",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-04",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-05",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-06",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-07",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-08",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-09",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-10",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-dong-ta-11",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / dong-ta-11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 278,
+      "pdfPageEnd": 278,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-dong-ta-supplement"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-note-01",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / note-01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 273,
+      "pdfPageEnd": 273,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-note-02",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / note-02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 274,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch23-note-03",
+      "parentId": "bpct-part1-ch23",
+      "kind": "content",
+      "group": "BPCT chapter 23 / note-03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 274,
+      "pdfPageEnd": 274,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-three-illness"]
+    },
+    {
+      "id": "bpct-ch24-opening",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 280,
+      "pdfPageEnd": 280,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-01",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 280,
+      "pdfPageEnd": 280,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-02",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 280,
+      "pdfPageEnd": 280,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-03",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 280,
+      "pdfPageEnd": 280,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-04",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 281,
+      "pdfPageEnd": 281,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-05",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 281,
+      "pdfPageEnd": 281,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-06",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 281,
+      "pdfPageEnd": 281,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-07",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 281,
+      "pdfPageEnd": 281,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-08",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 281,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-09",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-10",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-11",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-12",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-13",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 283,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-14",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 283,
+      "pdfPageEnd": 283,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-15",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 283,
+      "pdfPageEnd": 283,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-16",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 283,
+      "pdfPageEnd": 283,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-17",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 283,
+      "pdfPageEnd": 283,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-18",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 283,
+      "pdfPageEnd": 283,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-19",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 283,
+      "pdfPageEnd": 284,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-20",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 284,
+      "pdfPageEnd": 284,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-21",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 284,
+      "pdfPageEnd": 284,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-22",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 284,
+      "pdfPageEnd": 284,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-23",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 284,
+      "pdfPageEnd": 284,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-24",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 284,
+      "pdfPageEnd": 285,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-25",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 285,
+      "pdfPageEnd": 285,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-26",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 285,
+      "pdfPageEnd": 285,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-note-01",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / note-01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch24-note-02",
+      "parentId": "bpct-part1-ch24",
+      "kind": "content",
+      "group": "BPCT chapter 24 / note-02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 282,
+      "pdfPageEnd": 282,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-four-condition"]
+    },
+    {
+      "id": "bpct-ch25-opening",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / opening",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 286,
+      "pdfPageEnd": 286,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-01",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 286,
+      "pdfPageEnd": 286,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-02",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 287,
+      "pdfPageEnd": 287,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-03",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 287,
+      "pdfPageEnd": 287,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-04",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 287,
+      "pdfPageEnd": 287,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-05",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 287,
+      "pdfPageEnd": 287,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-06",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 287,
+      "pdfPageEnd": 288,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-07",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 288,
+      "pdfPageEnd": 288,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-08",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 288,
+      "pdfPageEnd": 288,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-09",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 288,
+      "pdfPageEnd": 288,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-10",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 288,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-11",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 289,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-12",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 289,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-13",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 289,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-14",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 289,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-15",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 290,
+      "pdfPageEnd": 290,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-16",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 290,
+      "pdfPageEnd": 290,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-17",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 290,
+      "pdfPageEnd": 290,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-18",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 290,
+      "pdfPageEnd": 290,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-19",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 291,
+      "pdfPageEnd": 291,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-20",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 291,
+      "pdfPageEnd": 291,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-21",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 291,
+      "pdfPageEnd": 291,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-22",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 291,
+      "pdfPageEnd": 291,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-23",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 291,
+      "pdfPageEnd": 292,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-24",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 292,
+      "pdfPageEnd": 292,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-25",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 292,
+      "pdfPageEnd": 292,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-26",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 26",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 293,
+      "pdfPageEnd": 293,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-27",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 293,
+      "pdfPageEnd": 293,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-28",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 293,
+      "pdfPageEnd": 293,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-29",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 293,
+      "pdfPageEnd": 293,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-30",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 293,
+      "pdfPageEnd": 294,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-31",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 294,
+      "pdfPageEnd": 294,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-closing",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / closing",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 294,
+      "pdfPageEnd": 294,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-author-commentary"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-note-01",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / note-01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 288,
+      "pdfPageEnd": 288,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-note-02",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / note-02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 289,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-note-03",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / note-03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 289,
+      "pdfPageEnd": 289,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-note-04",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / note-04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 290,
+      "pdfPageEnd": 290,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-note-05",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / note-05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 290,
+      "pdfPageEnd": 290,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch25-note-06",
+      "parentId": "bpct-part1-ch25",
+      "kind": "content",
+      "group": "BPCT chapter 25 / note-06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 292,
+      "pdfPageEnd": 292,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-five-remedies"]
+    },
+    {
+      "id": "bpct-ch26-01",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 295,
+      "pdfPageEnd": 295,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-02",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 295,
+      "pdfPageEnd": 295,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-03",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 03",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 295,
+      "pdfPageEnd": 295,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-04",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 04",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 295,
+      "pdfPageEnd": 296,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-05",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 05",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 296,
+      "pdfPageEnd": 296,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-06",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 06",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 296,
+      "pdfPageEnd": 296,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-07",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 07",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 296,
+      "pdfPageEnd": 296,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-08",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 08",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 296,
+      "pdfPageEnd": 296,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-09",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 09",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 296,
+      "pdfPageEnd": 297,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-10",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 10",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 297,
+      "pdfPageEnd": 297,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-11",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 11",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 297,
+      "pdfPageEnd": 297,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-12",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 12",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 297,
+      "pdfPageEnd": 297,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-13",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 13",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 297,
+      "pdfPageEnd": 297,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-14",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 14",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 297,
+      "pdfPageEnd": 298,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-15",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 15",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 298,
+      "pdfPageEnd": 298,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-16",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 16",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 298,
+      "pdfPageEnd": 298,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-17",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 17",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 298,
+      "pdfPageEnd": 298,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-18",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 18",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 298,
+      "pdfPageEnd": 298,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-19",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 19",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 298,
+      "pdfPageEnd": 299,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-20",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 20",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 299,
+      "pdfPageEnd": 299,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-21",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 21",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 299,
+      "pdfPageEnd": 299,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-22",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 22",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 299,
+      "pdfPageEnd": 299,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-23",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 23",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 299,
+      "pdfPageEnd": 299,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-24",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 24",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 299,
+      "pdfPageEnd": 299,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-25",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 25",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 300,
+      "pdfPageEnd": 300,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-27",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 27",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 300,
+      "pdfPageEnd": 300,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-28",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 28",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 300,
+      "pdfPageEnd": 300,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-29",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 29",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 300,
+      "pdfPageEnd": 300,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-30",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 30",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 301,
+      "pdfPageEnd": 301,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-31",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / 31",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 301,
+      "pdfPageEnd": 301,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-closing",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / closing",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 301,
+      "pdfPageEnd": 301,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-note-01",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / note-01",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 297,
+      "pdfPageEnd": 297,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
+    },
+    {
+      "id": "bpct-ch26-note-02",
+      "parentId": "bpct-part1-ch26",
+      "kind": "content",
+      "group": "BPCT chapter 26 / note-02",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 300,
+      "pdfPageEnd": 300,
+      "authorFeatureId": "feat-055",
+      "auditFeatureId": "feat-089",
+      "layerScopeIds": ["layer-bpct-translator-note"],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-twenty-six-travellers"]
     }
   ],
   "exclusions": [

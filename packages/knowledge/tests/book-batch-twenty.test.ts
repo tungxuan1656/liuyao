@@ -288,9 +288,9 @@ describe('feat-053 final release accounting', () => {
     expect(audit.complete).toBe(false);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
-    expect(coverage.records.released).toBe(235);
-    expect(coverage.claims.total).toBe(5614);
-    expect(coverage.citations.total).toBe(5860);
-    expect(manifest.nextBatch.note).toMatch(/feat-055.*PDF270–301/);
+    expect(coverage.records.released).toBe(239);
+    expect(coverage.claims.total).toBe(5993);
+    expect(coverage.citations.total).toBe(6239);
+    expect(manifest.nextBatch.note).toMatch(/feat-056.*PDF302–364/);
   });
 });
