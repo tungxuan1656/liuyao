@@ -997,3 +997,11 @@ Full ch5 discussions 1–6 at PDFs 67–69 now include all five Dụng rosters, 
 roles, all three question/answer contexts, Nguyên/Kỵ/Cừu compound conditions, six Phi meanings,
 Phục method/criticism/examples and attached notes 1–4. Existing selected claims remain unchanged;
 new full-passage records do not treat prior citations as complete coverage.
+
+Full ch5 discussions 7–12 at PDFs 69–71 preserve all six spirit descriptions and inserted
+star examples, all stage contrasts, Nguyệt phá and Tuần Không conditions, four directional
+Phản ngâm groups plus six opposing line pairs, and all fourteen Phục ngâm pairs in their
+both/outer/inner groups. Three translator notes remain separate. Note 6's purported twelve-stage
+list actually omits Tử (eleven names); no omitted name is inserted. Type-2 Phi, intrinsic
+Đằng Xà Mộc, Ngọ Lâm Quan, Dần điền thực, Phản ngâm uniqueness and the Phục ngâm
+closing scope remain explicitly unsupported as calculation authority, not silently fixed.

@@ -336,3 +336,28 @@ describe('BPCT chapter-five discussions 1–6', () => {
     ).toMatchObject({ pdfPageStart: 67, pdfPageEnd: 68 });
   });
 });
+
+import middleDiscussions from '../data/liuyao/bpct-chapter-five-07-12.json';
+describe('BPCT chapter-five discussions 7–12', () => {
+  it('keeps every unit and compound condition, not selected citation coverage', () => {
+    expect(getBookRecord(middleDiscussions.id)).toEqual(middleDiscussions);
+    for (let n = 7; n <= 12; n++)
+      expect(
+        registry.groups.find(g => g.id === `bpct-ch05-${String(n).padStart(2, '0')}`)?.recordIds,
+      ).toContain(middleDiscussions.id);
+    expect(middleDiscussions.claims.filter(c => c.id.includes('ch05-11-'))).toHaveLength(6);
+    expect(middleDiscussions.claims.filter(c => c.id.includes('ch05-12-'))).toHaveLength(3);
+    expect(middleDiscussions.claims.find(c => c.id.endsWith('07-inserted-examples'))?.text).toMatch(
+      /tự ải.*không.*tự hại/,
+    );
+    expect(middleDiscussions.claims.find(c => c.id.endsWith('08-stage-examples'))?.text).toMatch(
+      /Ngọ Lâm Quan Ngọ Thoái/,
+    );
+    expect(middleDiscussions.claims.find(c => c.id.endsWith('note-07-note'))?.text).toMatch(
+      /Dần không cùng chi Thân/,
+    );
+    expect(middleDiscussions.claims.find(c => c.id.endsWith('note-06-note'))?.text).toMatch(
+      /thiếu Tử/,
+    );
+  });
+});

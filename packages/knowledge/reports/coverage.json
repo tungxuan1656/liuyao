@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 216, "released": 216, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 3364, "missingCitationIds": [] },
-  "citations": { "total": 3610 },
+  "records": { "authored": 217, "released": 217, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 3384, "missingCitationIds": [] },
+  "citations": { "total": 3630 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -448,7 +448,8 @@
         "article-useful-spirit-avoidance-rescue-and-transformation-context",
         "article-adverse-support-store-intervening-lines-and-release-context",
         "article-timing-relatives-body-spirits-and-sincerity-context",
-        "article-bpct-chapter-five-01-06"
+        "article-bpct-chapter-five-01-06",
+        "article-bpct-chapter-five-07-12"
       ]
     },
     {
@@ -1666,9 +1667,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2278,
+        "required": 2279,
         "current": 84,
-        "missing": 2194,
+        "missing": 2195,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1677,8 +1678,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 625 },
-        { "code": "missing-decision", "count": 2194 },
-        { "code": "released-claim-coverage-incomplete", "count": 3167 }
+        { "code": "missing-decision", "count": 2195 },
+        { "code": "released-claim-coverage-incomplete", "count": 3187 }
       ]
     },
     "certification": {
@@ -1686,7 +1687,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2278,
+        "required": 2279,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

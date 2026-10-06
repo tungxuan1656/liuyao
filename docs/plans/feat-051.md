@@ -153,10 +153,10 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Inspect complete items 7–12 on PDF 69–71, including examples, diagrams, and notes.
-- [ ] Keep each item separately attributable and preserve incomplete or conflicting source statements.
-- [ ] Add tests for each item's complete passage range, claim conditions, and non-authority limits.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect complete items 7–12 on PDF 69–71, including examples, diagrams, and notes.
+- [x] Keep each item separately attributable and preserve incomplete or conflicting source statements.
+- [x] Add tests for each item's complete passage range, claim conditions, and non-authority limits.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 10: Author chapter 5 items 13–18 and the postscript
 
