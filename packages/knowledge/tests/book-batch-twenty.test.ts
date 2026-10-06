@@ -121,3 +121,24 @@ for (const [chapter, name] of chapters) {
     );
   });
 }
+
+describe('feat-053 loss qualifications', () => {
+  it('keeps the note2 disagreement and question-specific useful spirits separate', () => {
+    const record = getBookRecord('article-bpct-chapter-thirteen-loss')!;
+    const text = (suffix: string) => record.claims.find(c => c.id.endsWith(suffix))!.text;
+    expect(text('bpct-ch13-03-verse')).toMatch(/láng giềng/);
+    expect(text('bpct-ch13-03-commentary')).toMatch(/gian hào/);
+    expect(text('bpct-ch13-note-02-discussion')).toMatch(/Hai lớp.*không chọn/);
+    expect(text('bpct-ch13-33-commentary')).toMatch(/đã hoá Quan.*không xét Phục/);
+    expect(text('bpct-ch13-34-commentary')).toMatch(/riêng Quỷ.*riêng Thế/);
+    expect(text('bpct-ch13-37-commentary')).toMatch(
+      /xe\/thuyền\/áo\/văn thư lấy Phụ.*chim\/thú lấy Tử/,
+    );
+    expect(text('bpct-ch13-26-commentary')).toMatch(
+      /Tí.*Sửu.*Dần.*Mão.*Thìn.*Tị.*Ngọ.*Mùi.*Thân.*Dậu.*Tuất.*Hợi/,
+    );
+    expect(record.review.note).toMatch(/Not individual full-size review/);
+    expect(record).not.toHaveProperty('tables');
+    expect(record).not.toHaveProperty('figures');
+  });
+});

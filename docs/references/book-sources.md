@@ -1150,3 +1150,24 @@ cases and25's critique of element-only season pricing do not produce a calendar 
 classifier. Source statements about profits, theft, disease, death, gambling, prices, ritual
 sincerity and prediction do not establish efficacy or give financial, veterinary, safety,
 legal, medical or religious advice. All prior selected records remain unchanged.
+
+### Feat-053 loss applications — chapter13
+
+The [loss article](../../packages/knowledge/data/liuyao/bpct-chapter-thirteen-loss.json)
+compares PDF166–175 (printed139–148), all37 numbered clauses, opening/closing and five
+translator notes. The exact BPCT SHA and467-page count were checked. Full extracted
+PDF166–230 passages and contact sheets165–231 were read; individual images1–3,190,219,222
+were inspected. This is not full-size image review of every page. No table/diagram occurs.
+Front credits conventionally associate phú with Lưu Bá Ôn, compilation/commentary with
+Vương Hồng Tự, translation/notes with Vĩnh Cao; individual passage authorship remains uncertain.
+
+Note2 on167 explicitly disputes clause03: phú puts tha/ngoại at neighbors while commentary
+puts the missing object outside and difficult to find, using intervening lines for neighbors.
+Note1 defines bản/tha as primary/changed in this local explanation; this is not a repair of
+palace calculation. Notes3/4/5 explain mistaken loan, religious names and the nã/na reading.
+Clause26 retains all12 branch-linked witness examples, without profiling people. Clause33
+separates catching a thief from locating concealed objects; clause34's Phi/Phục specifically
+means Thế/Quỷ, not every useful-spirit question. Clause37 switches to Phụ for vehicles,
+clothes/documents and Tử for animals. Historical identity, theft and capture assertions are
+not evidence of guilt, verified outcomes or safe pursuit instructions. No prior released record
+or citation is rewritten; later feat-087 audit, separate verification and certification stay open.

@@ -47,10 +47,10 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover complete passages, conditions, examples, notes, and source layers on PDF 166–175.
-- [ ] Keep loss/theft claims qualified and attributable; do not present outcomes as verified predictions.
-- [ ] Add tests for all mapped subunits, citations, attribution, exclusions, and release projection.
-- [ ] Run focused tests and corpus freshness checks; commit checkpoint.
+- [x] Cover complete passages, conditions, examples, notes, and source layers on PDF 166–175.
+- [x] Keep loss/theft claims qualified and attributable; do not present outcomes as verified predictions.
+- [x] Add tests for all mapped subunits, citations, attribution, exclusions, and release projection.
+- [x] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 3: Author chapter 14 — Xuất Hành
 
