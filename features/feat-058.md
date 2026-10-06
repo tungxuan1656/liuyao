@@ -86,7 +86,7 @@ New interpretation, calendar, or UI behavior.
       including one reused claim. I keeps four definitions under its original stable parent;
       II has48 observed rows, IV eight diagrams/56 rows, V18 cases/14 nested relational
       verses, VI11 entries, criticismsI–XV with separate opposing layers and notes;467 blank.
-- [x] Inventory/registry paired revision51:2861 groups,17 unchanged exclusions;
+- [x] Inventory/registry paired revision52:2861 groups,17 unchanged exclusions;
       feat058 has445 obligations,389 mapped,56 unobservedII placeholders unmapped.
       Added325 fine registry units (four I definitions stay claim-only). All19 layer
       rosters and discovery/audit statuses remain unresolved; all2416 non-cohort groups
@@ -108,7 +108,7 @@ New interpretation, calendar, or UI behavior.
       Asset `index-CrXjOlkh.js`:10,384,705 bytes;10,485,760-byte cap;101,055 headroom;
       18 precache entries (build total10766.10KiB); PWA config byte-identical to activation.
 
-- [x] Final locator self-check extends VI-03 framing to452–453 and VI-06 framing
+- [x] Final locator self-check increments the registry to revision52 and extends VI-03 framing to452–453 and VI-06 framing
       to454–455: headings precede their Vietnamese introductory propositions. Verse
       locators remain453 and455 respectively. Framing correction full init passes4499
       tests; knowledge99.13s. Bundle byte size/cap/headroom remain unchanged, fresh asset
