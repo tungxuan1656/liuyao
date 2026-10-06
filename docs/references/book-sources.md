@@ -1093,3 +1093,20 @@ not diagnoses, forecasts, facts about current people or ethical obligations.51's
 and53/55's fidelity/coercion language do not advise self-harm, victim blame or forced marriage.
 Historical examples are separately cited reports, never verified efficacy. No source correction,
 modern calendar, interpretation engine, psychological/medical assessment or global approval is added.
+
+### Feat-052 Cầu Danh
+
+The [fame article](../../packages/knowledge/data/liuyao/bpct-chapter-ten-fame.json) has the
+unnumbered opening/closing and26 observed labelled passages at142–148 (printed118–124).
+PDF143's individual image confirms two label5 blocks;05a/05b preserve these, not a renumbered
+26.1 and the closing have no commentary. Four Vĩnh Cao notes stay separate:1 attaches3,
+2 to9,3 to14,4 to the closing. Complete extracted context/contact sheets and focused143
+were inspected; no diagram/table appears. The21 historical illustration has its own obligation.
+
+The two Phụ/Quan roles, rival Huynh, assisting Nhật and differing question-owner roles stay
+conditional.7 allows Tài-only assistance with Phụ Không but rejects Tài/Quan both moving;
+23's phú says Không while commentary says Mộ/Tuyệt, not a silently repaired identity.
+24's Quái Thân differs from25's self-Thế or child-Tử. Contemporary exam success, appointments,
+recognition, bribery, travel safety, illness, lifespan, timing and predictive accuracy are not
+inferred from these historical claims. The final continuation of25 is on148, before the
+separate closing verse and note4; no next-chapter content is absorbed.

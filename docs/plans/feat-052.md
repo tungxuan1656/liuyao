@@ -91,10 +91,10 @@
 - Test: `packages/knowledge/tests/book-batch-nineteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Cover every passage, question-specific role, condition, example, disagreement, and note on PDF 142–148.
-- [ ] Keep claims about examination, office, or recognition within the source's stated conditions and attribution.
-- [ ] Add exact-unit, citation, attribution, and publication projection assertions.
-- [ ] Run focused tests and the corpus validator; commit this checkpoint.
+- [x] Cover every passage, question-specific role, condition, example, disagreement, and note on PDF 142–148.
+- [x] Keep claims about examination, office, or recognition within the source's stated conditions and attribution.
+- [x] Add exact-unit, citation, attribution, and publication projection assertions.
+- [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 6: Author chapter 11 — Sĩ Hoạn
 

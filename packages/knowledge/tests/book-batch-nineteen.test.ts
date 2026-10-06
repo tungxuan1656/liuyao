@@ -2,11 +2,13 @@ import { describe, expect, it } from 'vitest';
 import registry from '../../../docs/reviews/knowledge/expected-units.json';
 import nien from '../data/liuyao/bpct-nien-thoi.json';
 import life from '../data/liuyao/bpct-chapter-nine-life.json';
+import fame from '../data/liuyao/bpct-chapter-ten-fame.json';
 import weather from '../data/liuyao/bpct-chapter-seven-weather.json';
 import citations from '../data/citations/batch-nineteen-advanced.json';
 import { getBookCitation, getBookRecord, listBookSources } from '../src/index';
 
 const checkpoints = [
+  { prefix: 'bpct-ch10-', parent: 'bpct-part1-ch10', record: fame, bounds: [142, 148] },
   { prefix: 'bpct-ch09-', parent: 'bpct-part1-ch09', record: life, bounds: [119, 141] },
   { prefix: 'bpct-nien-', parent: 'bpct-part1-nien-thoi', record: nien, bounds: [111, 118] },
   { prefix: 'bpct-ch07-', parent: 'bpct-part1-ch07', record: weather, bounds: [101, 110] },
@@ -198,6 +200,40 @@ describe('feat-052 life passages, separate question roles and inserted essay', (
     ['supplement-closing-rendering', 141, 141],
   ])('preserves full layer continuation %s', (suffix, a, b) => {
     expect(getBookCitation(`citation-bpct-ch09-${suffix}`)?.location).toMatchObject({
+      pdfPageStart: a,
+      pdfPageEnd: b,
+    });
+  });
+});
+
+describe('feat-052 examinations and recognition', () => {
+  it('keeps both printed5 labels, opening and closing and all four notes', () => {
+    expect(fame.claims.filter(c => c.id.endsWith('-verse'))).toHaveLength(28);
+    expect(fame.claims.filter(c => c.id.endsWith('-commentary'))).toHaveLength(26);
+    expect(fame.claims.filter(c => c.id.includes('-note-'))).toHaveLength(4);
+    for (const label of ['05a', '05b'])
+      expect(registry.groups.find(g => g.id === `bpct-ch10-${label}`)).toBeDefined();
+    expect(registry.groups.some(g => g.id === 'bpct-ch10-26')).toBe(false);
+    expect(fame.claims.find(c => c.id.endsWith('07-commentary'))?.text).toMatch(
+      /Tài và Quan đều động.*lại xấu/,
+    );
+    expect(fame.claims.find(c => c.id.endsWith('23-commentary'))?.text).toMatch(
+      /khác Không với Mộ\/Tuyệt/,
+    );
+    expect(fame.claims.find(c => c.id.endsWith('25-commentary'))?.text).toMatch(
+      /hỏi cho con lấy Tử/,
+    );
+  });
+  it.each([
+    ['02-verse', 142, 143],
+    ['06-rendering', 144, 144],
+    ['11-verse', 144, 145],
+    ['16-commentary', 146, 146],
+    ['21-verse', 146, 147],
+    ['25-commentary', 148, 148],
+    ['closing-verse', 148, 148],
+  ])('preserves boundary %s', (suffix, a, b) => {
+    expect(getBookCitation(`citation-bpct-ch10-${suffix}`)?.location).toMatchObject({
       pdfPageStart: a,
       pdfPageEnd: b,
     });
