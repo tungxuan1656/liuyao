@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-059 merged
+
+**State**: done and merged to `main` in PR #87 at `b474aeb74bdabad5448b482e253993bbdd7c983f`; reviewed exact head `68d44f5a4610cf8a9ed7e36bd9697142d1a3a591`.
+**Done**: Added NHL foreword and chapters 1–7 (PDF 10–126), Part II framing (127–130), retrospective (389–392), and explicit front-matter/blank-page accounting. Eleven records contain 208 new source-attributed claims/citations, 213 child dispositions and five reused selections. Disputed traditional authorship, quoted voices, diagram/text differences, and orphan note markers remain attributed rather than repaired or inferred.
+**Evidence**: Independent exact-head review returned `OK`, no findings. Verify run `37518032396`/job `112455890038`, Cloudflare Pages, and GitGuardian passed. Pre-push `./init.sh` passed 4,719 tests (4,538 knowledge, 181 core); `validate:corpus --check-books --check`, package-export/type, and prior-corpus preservation checks passed. The measured 10,666,746-byte asset fits the 11 MiB Workbox cap with 867,590 bytes headroom; all 18 precache entries remain.
+**Coverage**: The supplied 393-page edition matches SHA-256 `9967d19f5ecd805ba6a14bad22e4456040a05d959a633452d3a85a14c92d619e`. Prior 287 authored records, 41 citation collections, 7,988 public citations, all 17 exclusions, and existing layer/cell rosters remain unchanged. Existing Hệ Từ Hạ 12 registry bounds are reconciled to PDF 386–388 without adding feat-059 claims or changing feat-062 ownership. Source audit 092, global review, verification/certification, publication year and rights remain open or unconfirmed. No efficacy or modern advice is claimed.
+**Blockers**: none for feat-059.
+**Next**: Continue with selected feat-060 from updated `main`.
+
 ## 2026-10-06 — feat-058 merged
 
 **State**: done and merged to `main` in PR #86 at `914bef4d7e98bd5784303a00cf37261b01e9abbe`; reviewed exact head `93f9e943fe0b0a2fe2b3c995b5b2f9ea38fe2fdf`.

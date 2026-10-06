@@ -26,7 +26,7 @@ New interpretation, calendar, or UI behavior.
 - [x] Front matter, Part II introduction, and retrospective.
 - [x] Separate historical/philosophical attribution from structural facts.
 - [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -57,10 +57,12 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/059-nhl-intro-chapters-framing`.
-- Evidence: source fingerprint and 393-page count match `packages/knowledge/data/sources.json`; `feat-058` is merged and main is clean at `931a035`.
+- State: done; merged to `main` in PR #87 at `b474aeb74bdabad5448b482e253993bbdd7c983f`, from reviewed head `68d44f5a4610cf8a9ed7e36bd9697142d1a3a591`.
+- Evidence: Fresh exact-head independent review returned `OK`, no findings. Verify run `37518032396`/job `112455890038`, Cloudflare Pages and GitGuardian passed. The pre-push `./init.sh` passed 4,719 tests (4,538 knowledge and 181 core); corpus/source fingerprints, production package exports/types and prior-corpus preservation checks passed. The measured 10,666,746-byte asset fits the 11 MiB Workbox cap with 867,590 bytes headroom; all 18 precache entries remain.
+- Coverage: Added 11 records, 208 new claims/citations, 213 child dispositions and five reused selections. Chapter4 claims remain limited; feat-084 is only a cross-reference for matching selections. The `nhl-he-tu-ha-12` page projection is corrected to PDF 386–388 without adding feat-059 content or changing its `feat-062` ownership.
+- Open gates: Source audit092, global layer review, verification/certification, publication year and rights remain open or unconfirmed. No efficacy or modern medical/legal/safety/political advice is claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Reconcile selected intro/chapter-4 claims, inspect the assigned source pages and diagrams, and implement the accepted scope.
+- Next: Continue with selected feat-060 from updated `main`.
 
 ## Implementation checkpoints
 
@@ -128,8 +130,8 @@ update is performed by this worker.
   subsequent worker verification entry, not inferred from baseline checks.
 
 Source audit092, global layer discovery/reconciliation094, separate verification
-095 and certification096 remain unfulfilled. Feature completion and final Handoff
-await coordinator review/publication; no independent approval is claimed here.
+095 and certification096 remain unfulfilled. Fresh independent review approved the
+exact head; see Handoff for PR and merge evidence.
 
 ### Resumed final verification
 
@@ -145,6 +147,5 @@ still18 precache entries. PartII title/number-warning children are classified
 non-content consistently, without changing their meaningful framing summaries.
 
 Final corpus/fingerprint/freshness and diff checks pass. Source fixture220 tests
-pass; all7950 claims/8196 citations remain structurally valid. The last acceptance
-checkbox remains pending only because final feature Handoff/publication/review is
-coordinator-owned. The exact committed review target is in the worker report.
+pass; all7950 claims/8196 citations remain structurally valid. Coordinator review,
+PR checks, merge and feature completion are recorded in the Handoff above.
