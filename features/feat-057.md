@@ -16,7 +16,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Questions 1–6.
+- [x] Questions 1–6.
 - [ ] Questions 7–12.
 - [ ] Questions 13–18.
 - [ ] Every Hà Tri Chương heading, explanation, and note.
@@ -50,6 +50,16 @@ New interpretation, calendar, or UI behavior.
 - Source: use `docs/books/Tăng bổ bốc phệ chính tông.pdf`, SHA-256 `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a` (467 pages); inspect assigned pages 365–428 and transitions 413/429. Keep PDF 413 as its image-checked folio-only disposition.
 - Planning: existing acceptance and inline plan are sufficient for this one-package authoring cohort; no API, migration, or workspace change is planned.
 - Boundaries: distinguish questions, attributed experiments/examples, and conditional rules; preserve existing claims and source differences. Authoring does not close source audit, verification, or corpus-certification gates.
+
+## Decision log
+
+- Preserve existing selected Q5/Q6 answer claims and citations; reuse Q5 answer rather than publish a duplicate. New records account for complete question contexts, dated/repeated experiments, separate selected chart annotations and translator notes. Full board reconstruction/calculation fixtures are explicitly excluded per chart; no source image is copied and no calculator-derived repair is made.
+- Treat the unsigned different-font insertion after Q18 on PDF412 as a separate supplement within the assigned page interval, not a nineteenth question or certain compiler/translator text.
+- Supervisor approved updating only the existing aggregate registry census expectations to the source-derived total, preserving assertion strength and all test/child-process timeouts. Final next-batch matches will move to actual feat-058, not preserve obsolete planning text.
+
+## Implementation checkpoints
+
+- Questions1–6: inspected all source passages/images, added six original-summary articles,41 dated/repeated example contexts and41 separate chart observations,10 notes, six queries, five new answer summaries plus reused Q5 answer. Checkpoint corpus validates254 records/6951 claims/7197 citations; new cohort145 claims with146 dispositions. Baseline `./init.sh` passed181 core and3366 knowledge tests. Full final gates remain pending.
 
 ## Handoff
 

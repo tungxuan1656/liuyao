@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 248, "released": 248, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 6806, "missingCitationIds": [] },
-  "citations": { "total": 7052 },
+  "records": { "authored": 254, "released": 254, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 6951, "missingCitationIds": [] },
+  "citations": { "total": 7197 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -480,7 +480,13 @@
         "article-bpct-chapter-thirty-two-state",
         "article-bpct-chapter-thirty-three-conflict",
         "article-bpct-chapter-thirty-four-disorder",
-        "article-bpct-chapter-thirty-five-flight"
+        "article-bpct-chapter-thirty-five-flight",
+        "article-bpct-question-01",
+        "article-bpct-question-02",
+        "article-bpct-question-03",
+        "article-bpct-question-04",
+        "article-bpct-question-05",
+        "article-bpct-question-06"
       ]
     },
     {
@@ -1698,9 +1704,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 3609,
+        "required": 3761,
         "current": 84,
-        "missing": 3525,
+        "missing": 3677,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1708,9 +1714,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 1924 },
-        { "code": "missing-decision", "count": 3525 },
-        { "code": "released-claim-coverage-incomplete", "count": 6609 }
+        { "code": "unresolved-source-discovery", "count": 2070 },
+        { "code": "missing-decision", "count": 3677 },
+        { "code": "released-claim-coverage-incomplete", "count": 6754 }
       ]
     },
     "certification": {
@@ -1718,7 +1724,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 3609,
+        "required": 3761,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
