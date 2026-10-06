@@ -17,15 +17,15 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Quẻ 57: all six positions and each supplied commentary layer.
-- [ ] Quẻ 58: all six positions and each supplied commentary layer.
-- [ ] Quẻ 59: all six positions and each supplied commentary layer.
-- [ ] Quẻ 60: all six positions and each supplied commentary layer.
-- [ ] BPCT sentences 41–48: each numbered passage and its notes.
-- [ ] Replace the four legacy quẻ without changing stable IDs.
-- [ ] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Quẻ 57: all six positions and each supplied commentary layer.
+- [x] Quẻ 58: all six positions and each supplied commentary layer.
+- [x] Quẻ 59: all six positions and each supplied commentary layer.
+- [x] Quẻ 60: all six positions and each supplied commentary layer.
+- [x] BPCT sentences 41–48: each numbered passage and its notes.
+- [x] Replace the four legacy quẻ without changing stable IDs.
+- [x] Review full passages, diagrams, attribution, discrepancies, and exclusions before release.
+- [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -47,11 +47,11 @@ New interpretation, calendar, or UI behavior.
 
 ## Decision log
 
-- **Workbox file-size limit** — Question: how to handle the measured 2,872,385-byte integrated asset exceeding the 2,686,976-byte cap? Decision: raise the cap to 2,949,120 bytes (2 MiB + 832 KiB), leaving 76,735 bytes of headroom. Alternatives: block feat-048 release or alter caching behavior. Rationale: the user explicitly authorized this bounded increase; the value is the smallest 64-KiB-aligned limit that provides at least 64 KiB of reserve. Evidence: user approval in this session and the measured production build. Effect: only the Workbox maximum and matching comment changed; precaching and all other PWA behavior remain unchanged. This approval applies to feat-048 only and does not establish a ceiling for later batches.
+- **Workbox file-size limit** — Question: how to handle the measured 2,872,385-byte integrated asset exceeding the 2,686,976-byte cap? Decision: raise the cap to 2,949,120 bytes (2 MiB + 832 KiB), leaving 76,735 bytes of headroom. Alternatives: block feat-048 release or alter caching behavior. Rationale: the user explicitly authorized this bounded increase; the value is the smallest 64-KiB-aligned limit that provides at least 64 KiB of reserve. Evidence: user approval in this session and the measured production build. Effect: only the Workbox maximum and matching comment changed; precaching and all other PWA behavior remain unchanged. The repository-wide rule in `AGENTS.md` now permits future measured increases for knowledge-driven bundle growth without separate approval.
 
 ## Handoff
 
-- State: active; source components and integration are committed on `feat/048-reviewed-que-57-60-bpct-41-48` at `b1613e7310ae6073cfdd72b715d4a2b22ad1d66b`.
-- Evidence: `./init.sh` passed with 482 tests; `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passed with 197 records, 2,207 claims and 2,392 citations. Independent source review and publication remain.
+- State: done; merged to `main` in PR #75 at squash commit `b662861d63ac65f167ed871f93cd890f5f7fface`.
+- Evidence: Exact-head fresh independent reviews at `378ea75e0131ecb9f47208fa940a7f6bb81b599e` and `3d3a1770f5e97f9be4863007020ed8eb99b6d7bc` returned `OK WITH NOTES`, with no P0/P1/P2 findings. PR-head `verify`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed with 482 tests; corpus `--check-books --check` passed with 197 records, 2,207 claims and 2,392 citations; package-export checks passed. Corpus-wide specialist audit and certification remain open.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Complete a fresh independent review, address findings, then publish one PR and verify exact-head CI before merge.
+- Next: Continue with selected feat-049.
