@@ -3,11 +3,13 @@ import registry from '../../../docs/reviews/knowledge/expected-units.json';
 import nien from '../data/liuyao/bpct-nien-thoi.json';
 import life from '../data/liuyao/bpct-chapter-nine-life.json';
 import fame from '../data/liuyao/bpct-chapter-ten-fame.json';
+import office from '../data/liuyao/bpct-chapter-eleven-office.json';
 import weather from '../data/liuyao/bpct-chapter-seven-weather.json';
 import citations from '../data/citations/batch-nineteen-advanced.json';
 import { getBookCitation, getBookRecord, listBookSources } from '../src/index';
 
 const checkpoints = [
+  { prefix: 'bpct-ch11-', parent: 'bpct-part1-ch11', record: office, bounds: [149, 155] },
   { prefix: 'bpct-ch10-', parent: 'bpct-part1-ch10', record: fame, bounds: [142, 148] },
   { prefix: 'bpct-ch09-', parent: 'bpct-part1-ch09', record: life, bounds: [119, 141] },
   { prefix: 'bpct-nien-', parent: 'bpct-part1-nien-thoi', record: nien, bounds: [111, 118] },
@@ -234,6 +236,35 @@ describe('feat-052 examinations and recognition', () => {
     ['closing-verse', 148, 148],
   ])('preserves boundary %s', (suffix, a, b) => {
     expect(getBookCitation(`citation-bpct-ch10-${suffix}`)?.location).toMatchObject({
+      pdfPageStart: a,
+      pdfPageEnd: b,
+    });
+  });
+});
+
+describe('feat-052 office roles and closing continuation', () => {
+  it('covers26 labels, a separate closing through155 and three notes', () => {
+    expect(office.claims.filter(c => c.id.endsWith('-verse'))).toHaveLength(27);
+    expect(office.claims.filter(c => c.id.endsWith('-commentary'))).toHaveLength(26);
+    expect(office.claims.filter(c => c.id.includes('-note-'))).toHaveLength(3);
+    expect(office.claims.find(c => c.id.endsWith('13-commentary'))?.text).toMatch(
+      /Giữ đảo chiều phú\/bình/,
+    );
+    expect(office.claims.find(c => c.id.endsWith('23-commentary'))?.text).toMatch(
+      /Hai loại câu hỏi giữ riêng/,
+    );
+    expect(office.claims.find(c => c.id.endsWith('26-commentary'))?.text).toMatch(
+      /không đánh giá thuốc/,
+    );
+  });
+  it.each([
+    ['03-rendering', 150, 150],
+    ['07-commentary', 151, 151],
+    ['17-commentary', 153, 153],
+    ['closing-verse', 154, 155],
+    ['closing-rendering', 155, 155],
+  ])('retains source boundary %s', (suffix, a, b) => {
+    expect(getBookCitation(`citation-bpct-ch11-${suffix}`)?.location).toMatchObject({
       pdfPageStart: a,
       pdfPageEnd: b,
     });

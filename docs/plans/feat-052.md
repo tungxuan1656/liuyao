@@ -105,10 +105,10 @@
 - Test: `packages/knowledge/tests/book-batch-nineteen.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover every passage and continuation on PDF 149–155, including the short continuation on PDF 155.
-- [ ] Preserve translator disagreements, attributed outcomes, conditions, and scope.
-- [ ] Add tests that prove PDF 155 is included and every mapped subunit has its own evidence.
-- [ ] Run focused tests and the corpus validator; commit this checkpoint.
+- [x] Cover every passage and continuation on PDF 149–155, including the short continuation on PDF 155.
+- [x] Preserve translator disagreements, attributed outcomes, conditions, and scope.
+- [x] Add tests that prove PDF 155 is included and every mapped subunit has its own evidence.
+- [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 7: Author chapter 12 — Cầu Tài
 

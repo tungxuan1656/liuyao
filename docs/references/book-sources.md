@@ -1110,3 +1110,20 @@ conditional.7 allows Tài-only assistance with Phụ Không but rejects Tài/Qua
 recognition, bribery, travel safety, illness, lifespan, timing and predictive accuracy are not
 inferred from these historical claims. The final continuation of25 is on148, before the
 separate closing verse and note4; no next-chapter content is absorbed.
+
+### Feat-052 Sĩ Hoạn
+
+The [office article](../../packages/knowledge/data/liuyao/bpct-chapter-eleven-office.json)
+accounts for26 labels and a separate closing verse starting154 and continuing155
+(printed129–130);155 was inspected in the contact sheet. Three notes at150/153 attach4,
+6 and19 respectively. Full extracted context and contact sheets were reviewed; no table or
+diagram appears. Each source layer and exact continuation has its own evidence.
+
+6 has the Tuế clause in reading/meaning but no separately printed original Hán line;
+no original is supplied.10's Phúc in phú differs from the Tài/Phụ conditions of commentary.
+13 reverses Huynh hóa Quỷ in phú to Quỷ hóa Huynh in commentary; both stay visible.
+5's hidden-Quan warning and16's retained-office Quan under Thế are not harmonized by rewriting.
+7's outside-patrol exception,9's patrol/administration movement contrast,23's ordinary office
+versus active military question and26's Tử for monks/Daoists/court physicians stay separate.
+These are historical opinions, not civil-service, legal, medical, military, bribery, ethnic,
+travel, mortality or supernatural authority. No reported outcome is independent efficacy evidence.
