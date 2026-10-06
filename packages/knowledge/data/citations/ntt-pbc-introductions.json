@@ -1,0 +1,1981 @@
+{
+  "schemaVersion": 1,
+  "citations": [
+    {
+      "id": "citation-pbc-cover-title-portrait-cover",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Bìa, nhan đề và chân dung",
+        "section": "pbc-cover-title-portrait-cover — non-content",
+        "pdfPageStart": 1,
+        "pdfPageEnd": 1
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-cover-title-portrait-title",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Bìa, nhan đề và chân dung",
+        "section": "pbc-cover-title-portrait-title — non-content",
+        "pdfPageStart": 2,
+        "pdfPageEnd": 2
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-cover-title-portrait-portrait",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Bìa, nhan đề và chân dung",
+        "section": "pbc-cover-title-portrait-portrait — non-content",
+        "pdfPageStart": 3,
+        "pdfPageEnd": 3
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-contents-navigation",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Mục lục",
+        "section": "pbc-contents-navigation — non-content",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-editorial-foreword-evaluation",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lời giới thiệu của Huỳnh Thúc Kháng",
+        "section": "pbc-editorial-foreword-evaluation — commentary",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Huỳnh Thúc Kháng"
+    },
+    {
+      "id": "citation-pbc-editorial-foreword-publication-framing",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lời giới thiệu của Huỳnh Thúc Kháng",
+        "section": "pbc-editorial-foreword-publication-framing — commentary",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 8
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Huỳnh Thúc Kháng"
+    },
+    {
+      "id": "citation-pbc-edition-history-manuscripts",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lịch sử văn bản qua Chương Thâu",
+        "section": "pbc-edition-history-manuscripts — commentary",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chương Thâu"
+    },
+    {
+      "id": "citation-pbc-edition-history-nghe-an",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lịch sử văn bản qua Chương Thâu",
+        "section": "pbc-edition-history-nghe-an — commentary",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chương Thâu"
+    },
+    {
+      "id": "citation-pbc-edition-history-hue-khai-tri",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lịch sử văn bản qua Chương Thâu",
+        "section": "pbc-edition-history-hue-khai-tri — commentary",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 10
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Chương Thâu"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-01 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-02 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-03 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-04 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-05",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-05 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-06",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-06 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-07",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-07 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-08",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-08 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-09",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-09 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-10",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-10 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-11",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-11 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-12",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-12 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-13",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-13 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-14",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-14 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-15",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-15 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-16",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-16 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-17",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-17 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-18",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-18 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-19",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-19 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-20",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-20 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-21",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-21 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-22",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-22 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-23",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-23 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-24",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-24 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-25",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-25 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-26",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-26 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-27",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-27 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-28",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-28 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-29",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-29 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-30",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-30 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-31",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-31 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-11-label-32",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-11-label-32 — diagram",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-01 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-02 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-03 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-04 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-05",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-05 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-06",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-06 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-07",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-07 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-08",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-08 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-09",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-09 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-10",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-10 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-11",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-11 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-12",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-12 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-13",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-13 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-14",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-14 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-15",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-15 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-16",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-16 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-17",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-17 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-18",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-18 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-19",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-19 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-20",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-20 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-21",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-21 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-22",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-22 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-23",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-23 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-24",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-24 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-25",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-25 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-26",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-26 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-27",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-27 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-28",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-28 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-29",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-29 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-30",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-30 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-31",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-31 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-image-plates-pbc-plate-12-label-32",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Hai bản hình 64 quẻ",
+        "section": "pbc-image-plates-pbc-plate-12-label-32 — diagram",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Bản hình cung cấp — người khắc/vẽ chưa xác định"
+    },
+    {
+      "id": "citation-pbc-author-preface-three-schools",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phát Đoan Từ",
+        "section": "pbc-author-preface-three-schools — commentary",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 13
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-author-preface-western-report",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phát Đoan Từ",
+        "section": "pbc-author-preface-western-report — commentary",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 13
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-author-preface-self-purpose",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phát Đoan Từ",
+        "section": "pbc-author-preface-self-purpose — commentary",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 14
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-author-preface-shao-quotation",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phát Đoan Từ",
+        "section": "pbc-author-preface-shao-quotation — quotation",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 13
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Thiệu Khang Tiết"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-i-authorship",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-i-authorship — commentary",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-ii-three-meanings",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-ii-three-meanings — commentary",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 17
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-iii-time",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-iii-time — commentary",
+        "pdfPageStart": 17,
+        "pdfPageEnd": 18
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-iv-numbers",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-iv-numbers — commentary",
+        "pdfPageStart": 18,
+        "pdfPageEnd": 20
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-v-images",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-v-images — commentary",
+        "pdfPageStart": 20,
+        "pdfPageEnd": 20
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-vi-order-exposition",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-vi-order-exposition — commentary",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 22
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-vi-circle-described",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-vi-circle-described — commentary",
+        "pdfPageStart": 22,
+        "pdfPageEnd": 23
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-cuong-linh-polarity",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-cuong-linh-polarity — commentary",
+        "pdfPageStart": 25,
+        "pdfPageEnd": 26
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-cuong-linh-omens",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-cuong-linh-omens — commentary",
+        "pdfPageStart": 26,
+        "pdfPageEnd": 26
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-cuong-linh-position",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-cuong-linh-position — commentary",
+        "pdfPageStart": 26,
+        "pdfPageEnd": 26
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-ii-cheng",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-ii-cheng — quotation",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Trình Di"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-iii-shao",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-iii-shao — quotation",
+        "pdfPageStart": 17,
+        "pdfPageEnd": 17
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Thiệu Khang Tiết"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do — diagram",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01 — diagram",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02 — diagram",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03 — diagram",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04 — diagram",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05 — diagram",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08 — diagram",
+        "pdfPageStart": 21,
+        "pdfPageEnd": 21
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08 — diagram",
+        "pdfPageStart": 24,
+        "pdfPageEnd": 24
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order — diagram",
+        "pdfPageStart": 25,
+        "pdfPageEnd": 25
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01 — diagram",
+        "pdfPageStart": 25,
+        "pdfPageEnd": 25
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02 — diagram",
+        "pdfPageStart": 25,
+        "pdfPageEnd": 25
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03 — diagram",
+        "pdfPageStart": 25,
+        "pdfPageEnd": 25
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Phàm Lệ và Cương Lĩnh",
+        "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04 — diagram",
+        "pdfPageStart": 25,
+        "pdfPageEnd": 25
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-thuyet-quai-chapter-01-gap",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Thuyết Quái còn lại",
+        "section": "pbc-thuyet-quai-chapter-01-gap — omission-notice",
+        "pdfPageStart": 649,
+        "pdfPageEnd": 649
+      },
+      "textLayer": "technical-exposition",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-thuyet-quai-chapter-02-original-reading",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Thuyết Quái còn lại",
+        "section": "pbc-thuyet-quai-chapter-02-original-reading — quotation",
+        "pdfPageStart": 649,
+        "pdfPageEnd": 649
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Thuyết Quái — tác giả truyền thống chưa xác lập"
+    },
+    {
+      "id": "citation-pbc-thuyet-quai-chapter-02-meaning",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Thuyết Quái còn lại",
+        "section": "pbc-thuyet-quai-chapter-02-meaning — translation",
+        "pdfPageStart": 649,
+        "pdfPageEnd": 649
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-thuyet-quai-phu-chu-comparison",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Thuyết Quái còn lại",
+        "section": "pbc-thuyet-quai-phu-chu-comparison — commentary",
+        "pdfPageStart": 649,
+        "pdfPageEnd": 650
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-thuyet-quai-phu-chu-knowing-doing",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Thuyết Quái còn lại",
+        "section": "pbc-thuyet-quai-phu-chu-knowing-doing — commentary",
+        "pdfPageStart": 650,
+        "pdfPageEnd": 650
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-thuyet-quai-chapters-03-11-notice",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Thuyết Quái còn lại",
+        "section": "pbc-thuyet-quai-chapters-03-11-notice — commentary",
+        "pdfPageStart": 650,
+        "pdfPageEnd": 650
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-tu-quai-notice",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lời báo khuyết dịch Tự Quái",
+        "section": "pbc-tu-quai-notice — commentary",
+        "pdfPageStart": 651,
+        "pdfPageEnd": 651
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-tap-quai-notice",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Lời báo khuyết Tạp Quái",
+        "section": "pbc-tap-quai-notice — commentary",
+        "pdfPageStart": 652,
+        "pdfPageEnd": 652
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-afterword-framing",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Đề Bạt Từ",
+        "section": "pbc-afterword-framing — commentary",
+        "pdfPageStart": 653,
+        "pdfPageEnd": 653
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-afterword-philosophy",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Đề Bạt Từ",
+        "section": "pbc-afterword-philosophy — commentary",
+        "pdfPageStart": 653,
+        "pdfPageEnd": 653
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-afterword-ethics",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Đề Bạt Từ",
+        "section": "pbc-afterword-ethics — commentary",
+        "pdfPageStart": 653,
+        "pdfPageEnd": 653
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-afterword-application",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Đề Bạt Từ",
+        "section": "pbc-afterword-application — commentary",
+        "pdfPageStart": 653,
+        "pdfPageEnd": 654
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-afterword-heritage-closing",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Đề Bạt Từ",
+        "section": "pbc-afterword-heritage-closing — commentary",
+        "pdfPageStart": 654,
+        "pdfPageEnd": 654
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Phan Bội Châu"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-01",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-01 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-02",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-02 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-03",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-03 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-04",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-04 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-05",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-05 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-06",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-06 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-07",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-07 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-08",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-08 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-09",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-09 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-10",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-10 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-11",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-11 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-12",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-12 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-14",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-14 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-15",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-15 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-16",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-16 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-17",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-17 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-18",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-18 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "1953snake — người chú điện tử"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-19",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-19 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    },
+    {
+      "id": "citation-pbc-endnotes-note-20",
+      "sourceId": "source-book-pbc",
+      "editionId": "edition-pbc-supplied",
+      "location": {
+        "chapter": "PBC — Chú cuối bản điện tử",
+        "section": "pbc-endnotes-note-20 — endnote",
+        "pdfPageStart": 655,
+        "pdfPageEnd": 655
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — người chú chưa xác định"
+    }
+  ]
+}

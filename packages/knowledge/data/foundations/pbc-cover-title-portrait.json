@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "id": "article-pbc-cover-title-portrait",
+  "type": "article",
+  "title": "PBC — Bìa, nhan đề và chân dung",
+  "aliases": [],
+  "topicIds": ["topic-classical-traditions"],
+  "claims": [
+    {
+      "id": "article-pbc-cover-title-portrait-pbc-cover-title-portrait-cover",
+      "kind": "author-interpretation",
+      "text": "Bìa nêu Sào Nam/Phan Bội Châu và Quốc Văn Chu Dịch Diễn Giải, không xác lập năm in.",
+      "citationIds": ["citation-pbc-cover-title-portrait-cover"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    },
+    {
+      "id": "article-pbc-cover-title-portrait-pbc-cover-title-portrait-title",
+      "kind": "author-interpretation",
+      "text": "Nhan đề và tên Sào Nam Phan Bội Châu là tín chỉ tác giả; không gán các lời giới thiệu hoặc chú điện tử cho ông.",
+      "citationIds": ["citation-pbc-cover-title-portrait-title"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    },
+    {
+      "id": "article-pbc-cover-title-portrait-pbc-cover-title-portrait-portrait",
+      "kind": "author-interpretation",
+      "text": "Trang3 là chân dung không có lời thuyết minh; không tạo domain figure hay suy danh tính người chụp.",
+      "citationIds": ["citation-pbc-cover-title-portrait-portrait"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-06",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-pbc-cover-title-portrait-cover",
+      "citation-pbc-cover-title-portrait-title",
+      "citation-pbc-cover-title-portrait-portrait"
+    ],
+    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
+  }
+}

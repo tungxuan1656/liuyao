@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 53,
+  "registryRevision": 54,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "fcca91fbd94763030be8676d1ab15772f7375bc8acee13963317195df0668944"
+    "sha256": "ae6590dd54b21a73f86e26eb9ce82a7aa3c872ae02fd1863c11f65dfa11c3859"
   },
   "counts": {
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 3074,
+    "groups": 3228,
     "exclusions": 17
   },
   "layers": [
@@ -10716,7 +10716,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-cover-title-portrait"]
     },
     {
       "id": "pbc-contents",
@@ -10732,7 +10733,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-contents"]
     },
     {
       "id": "pbc-editorial-foreword",
@@ -10748,7 +10750,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-editorial-foreword"]
     },
     {
       "id": "pbc-edition-history",
@@ -10764,7 +10767,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-edition-history"]
     },
     {
       "id": "pbc-image-plates",
@@ -10780,7 +10784,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
     },
     {
       "id": "pbc-author-preface",
@@ -10796,7 +10801,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-author-preface"]
     },
     {
       "id": "pbc-pham-le-and-cuong-linh",
@@ -10812,7 +10818,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
     },
     {
       "id": "pbc-kinh-introduction",
@@ -10860,7 +10867,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-afterword"]
     },
     {
       "id": "pbc-endnotes",
@@ -10876,7 +10884,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
     },
     {
       "id": "pbc-he-tu-thuong",
@@ -10924,7 +10933,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
     },
     {
       "id": "pbc-tu-quai",
@@ -10940,7 +10950,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-tu-quai"]
     },
     {
       "id": "pbc-tap-quai",
@@ -10956,7 +10967,8 @@
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-tap-quai"]
     },
     {
       "id": "pbc-he-tu-shang-01",
@@ -53980,6 +53992,2778 @@
       ],
       "discoveryStatus": "unresolved",
       "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "pbc-cover-title-portrait-cover",
+      "parentId": "pbc-cover-title-portrait",
+      "kind": "non-content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 1,
+      "pdfPageEnd": 1,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-cover-title-portrait"]
+    },
+    {
+      "id": "pbc-cover-title-portrait-title",
+      "parentId": "pbc-cover-title-portrait",
+      "kind": "non-content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 2,
+      "pdfPageEnd": 2,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-cover-title-portrait"]
+    },
+    {
+      "id": "pbc-cover-title-portrait-portrait",
+      "parentId": "pbc-cover-title-portrait",
+      "kind": "non-content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 3,
+      "pdfPageEnd": 3,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-cover-title-portrait"]
+    },
+    {
+      "id": "pbc-contents-navigation",
+      "parentId": "pbc-contents",
+      "kind": "non-content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 6,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-contents"]
+    },
+    {
+      "id": "pbc-editorial-foreword-evaluation",
+      "parentId": "pbc-editorial-foreword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 7,
+      "pdfPageEnd": 7,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-editorial-foreword"]
+    },
+    {
+      "id": "pbc-editorial-foreword-publication-framing",
+      "parentId": "pbc-editorial-foreword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 7,
+      "pdfPageEnd": 8,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-editorial-foreword"]
+    },
+    {
+      "id": "pbc-edition-history-manuscripts",
+      "parentId": "pbc-edition-history",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 9,
+      "pdfPageEnd": 9,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-edition-history"]
+    },
+    {
+      "id": "pbc-edition-history-nghe-an",
+      "parentId": "pbc-edition-history",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 9,
+      "pdfPageEnd": 9,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-edition-history"]
+    },
+    {
+      "id": "pbc-edition-history-hue-khai-tri",
+      "parentId": "pbc-edition-history",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 9,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-edition-history"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-01",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-02",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-03",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-04",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-05",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-06",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-07",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-08",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-09",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-10",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-11",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-12",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-13",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-14",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-15",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-16",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-17",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-18",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-19",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-20",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-21",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-22",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-23",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-24",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-25",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-26",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-27",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-28",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-29",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-30",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-31",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-11-label-32",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-01",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-02",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-03",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-04",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-05",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-06",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-07",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-08",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-09",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-10",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-11",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-12",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-13",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-14",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-15",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-16",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-17",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-18",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-19",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-20",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-21",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-22",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-23",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-24",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-25",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-26",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-27",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-28",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-29",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-30",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-31",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-image-plates-pbc-plate-12-label-32",
+      "parentId": "pbc-image-plates",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-image-plates"]
+    },
+    {
+      "id": "pbc-author-preface-three-schools",
+      "parentId": "pbc-author-preface",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-author-preface"]
+    },
+    {
+      "id": "pbc-author-preface-western-report",
+      "parentId": "pbc-author-preface",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-author-preface"]
+    },
+    {
+      "id": "pbc-author-preface-self-purpose",
+      "parentId": "pbc-author-preface",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 14,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-author-preface"]
+    },
+    {
+      "id": "pbc-author-preface-shao-quotation",
+      "parentId": "pbc-author-preface",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-author-preface"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-i-authorship",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-ii-three-meanings",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 16,
+      "pdfPageEnd": 17,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-iii-time",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 17,
+      "pdfPageEnd": 18,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-iv-numbers",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 18,
+      "pdfPageEnd": 20,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-v-images",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 20,
+      "pdfPageEnd": 20,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-vi-order-exposition",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 22,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-vi-circle-described",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 22,
+      "pdfPageEnd": 23,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-cuong-linh-polarity",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-cuong-linh-omens",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-cuong-linh-position",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-ii-cheng",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 16,
+      "pdfPageEnd": 16,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-iii-shao",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 17,
+      "pdfPageEnd": 17,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-ha-do",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04",
+      "parentId": "pbc-pham-le-and-cuong-linh",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-pham-le-and-cuong-linh"]
+    },
+    {
+      "id": "pbc-thuyet-quai-chapter-01-gap",
+      "parentId": "pbc-thuyet-quai",
+      "kind": "non-content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 649,
+      "pdfPageEnd": 649,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
+    },
+    {
+      "id": "pbc-thuyet-quai-chapter-02-original-reading",
+      "parentId": "pbc-thuyet-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 649,
+      "pdfPageEnd": 649,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
+    },
+    {
+      "id": "pbc-thuyet-quai-chapter-02-meaning",
+      "parentId": "pbc-thuyet-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 649,
+      "pdfPageEnd": 649,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
+    },
+    {
+      "id": "pbc-thuyet-quai-phu-chu-comparison",
+      "parentId": "pbc-thuyet-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 649,
+      "pdfPageEnd": 650,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
+    },
+    {
+      "id": "pbc-thuyet-quai-phu-chu-knowing-doing",
+      "parentId": "pbc-thuyet-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 650,
+      "pdfPageEnd": 650,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
+    },
+    {
+      "id": "pbc-thuyet-quai-chapters-03-11-notice",
+      "parentId": "pbc-thuyet-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 650,
+      "pdfPageEnd": 650,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-thuyet-quai"]
+    },
+    {
+      "id": "pbc-tu-quai-notice",
+      "parentId": "pbc-tu-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 651,
+      "pdfPageEnd": 651,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-tu-quai"]
+    },
+    {
+      "id": "pbc-tap-quai-notice",
+      "parentId": "pbc-tap-quai",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 652,
+      "pdfPageEnd": 652,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-tap-quai"]
+    },
+    {
+      "id": "pbc-afterword-framing",
+      "parentId": "pbc-afterword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 653,
+      "pdfPageEnd": 653,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-afterword"]
+    },
+    {
+      "id": "pbc-afterword-philosophy",
+      "parentId": "pbc-afterword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 653,
+      "pdfPageEnd": 653,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-afterword"]
+    },
+    {
+      "id": "pbc-afterword-ethics",
+      "parentId": "pbc-afterword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 653,
+      "pdfPageEnd": 653,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-afterword"]
+    },
+    {
+      "id": "pbc-afterword-application",
+      "parentId": "pbc-afterword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 653,
+      "pdfPageEnd": 654,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-afterword"]
+    },
+    {
+      "id": "pbc-afterword-heritage-closing",
+      "parentId": "pbc-afterword",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 654,
+      "pdfPageEnd": 654,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-afterword"]
+    },
+    {
+      "id": "pbc-endnotes-note-01",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-02",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-03",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-04",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-05",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-06",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-07",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-08",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-09",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-10",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-11",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-12",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-14",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-15",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-16",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-17",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-18",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-19",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-20",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-pbc-endnotes"]
+    },
+    {
+      "id": "pbc-endnotes-note-13",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["hexagram-12"]
+    },
+    {
+      "id": "pbc-endnotes-note-21",
+      "parentId": "pbc-endnotes",
+      "kind": "content",
+      "group": "NTT/PBC feat-060 inspected dispositions",
+      "editionId": "edition-pbc-supplied",
+      "pdfPageStart": 655,
+      "pdfPageEnd": 655,
+      "authorFeatureId": "feat-060",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-pbc-original-text",
+        "layer-pbc-translation",
+        "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["hexagram-61"]
     }
   ],
   "exclusions": [

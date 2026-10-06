@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 298, "released": 298, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 7950, "missingCitationIds": [] },
-  "citations": { "total": 8196 },
+  "records": { "authored": 310, "released": 310, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 8102, "missingCitationIds": [] },
+  "citations": { "total": 8348 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -538,7 +538,20 @@
       "title": "Nguồn gốc, phần kinh và phần truyện",
       "track": "classical",
       "status": "pending",
-      "releasedRecordIds": []
+      "releasedRecordIds": [
+        "article-pbc-cover-title-portrait",
+        "article-pbc-contents",
+        "article-pbc-editorial-foreword",
+        "article-pbc-edition-history",
+        "article-pbc-image-plates",
+        "article-pbc-author-preface",
+        "article-pbc-pham-le-and-cuong-linh",
+        "article-pbc-thuyet-quai",
+        "article-pbc-tu-quai",
+        "article-pbc-tap-quai",
+        "article-pbc-afterword",
+        "article-pbc-endnotes"
+      ]
     },
     {
       "id": "topic-learning",
@@ -1748,9 +1761,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 4809,
+        "required": 4981,
         "current": 84,
-        "missing": 4725,
+        "missing": 4897,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1758,9 +1771,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 3074 },
-        { "code": "missing-decision", "count": 4725 },
-        { "code": "released-claim-coverage-incomplete", "count": 7753 }
+        { "code": "unresolved-source-discovery", "count": 3228 },
+        { "code": "missing-decision", "count": 4897 },
+        { "code": "released-claim-coverage-incomplete", "count": 7905 }
       ]
     },
     "certification": {
@@ -1768,7 +1781,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 4809,
+        "required": 4981,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
