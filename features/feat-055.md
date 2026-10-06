@@ -45,7 +45,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- State: active; selected after feat-054 merged.
+- Evidence: Selection recorded; implementation has not started.
+- Dependencies: feat-054 is done; corpus-wide source review and certification remain closed.
+- Next: Inspect BPCT PDF 270–301 by actual chapter boundaries, then author and verify the four assigned units.
