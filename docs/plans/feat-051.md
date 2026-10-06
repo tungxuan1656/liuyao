@@ -124,11 +124,11 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Inspect the final 16 board headings and complete diagrams listed under chapter 4 in the source inventory.
-- [ ] Keep each board separate even when two boards share a page.
-- [ ] Reconcile all 64 board units with the printed order and the current table/figure contract.
-- [ ] Add tests that assert all eight palaces and 64 distinct board units have a disposition and resolvable evidence.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect the final 16 board headings and complete diagrams listed under chapter 4 in the source inventory.
+- [x] Keep each board separate even when two boards share a page.
+- [x] Reconcile all 64 board units with the printed order and the current table/figure contract.
+- [x] Add tests that assert all eight palaces and 64 distinct board units have a disposition and resolvable evidence.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 8: Author chapter 5 items 1–6
 

@@ -274,3 +274,45 @@ describe('BPCT Chấn, Tốn and Ly boards', () => {
     expect(lyBoards.claims.find(c => c.id.endsWith('board-44-line-5'))?.text).toMatch(/Ứng/);
   });
 });
+
+import khonBoards from '../data/liuyao/bpct-boards-khon.json';
+import doaiBoards from '../data/liuyao/bpct-boards-doai.json';
+const allBoards = [...firstBoards, chanBoards, tonBoards, lyBoards, khonBoards, doaiBoards];
+describe('BPCT all 64 distinct board evidence units', () => {
+  it('covers all eight palaces, six observed line labels per board and all own commentary bounds', () => {
+    const figures = allBoards.flatMap(r => r.figures);
+    expect(figures).toHaveLength(64);
+    expect(new Set(figures.map(f => f.id)).size).toBe(64);
+    expect(figures.flatMap(f => f.labels)).toHaveLength(384);
+    expect(new Set(figures.flatMap(f => f.sourceUnitIds)).size).toBe(64);
+    for (const record of allBoards) {
+      expect(getBookRecord(record.id)).toEqual(record);
+      for (const figure of record.figures) {
+        const unit = registry.groups.find(g => g.id === figure.sourceUnitIds[0])!;
+        expect(unit.recordIds).toContain(record.id);
+        const commentary = record.claims.find(c => c.id.endsWith(`${unit.id}-commentary`))!;
+        expect(getBookCitation(commentary.citationIds[0]!)?.location).toMatchObject({
+          pdfPageStart: unit.pdfPageStart,
+          pdfPageEnd: unit.pdfPageEnd,
+        });
+        for (const id of figure.claimIds) expect(record.claims.some(c => c.id === id)).toBe(true);
+      }
+    }
+    const dispositions = allBoards.flatMap(r =>
+      r.claims.filter(c => c.id.endsWith('annotation-disposition')),
+    );
+    expect(dispositions.filter(c => /Quái thân in ở hào/.test(c.text))).toHaveLength(7);
+  });
+  it('records actual absent markers and complete closing example without replacing reviewed authority', () => {
+    expect(
+      khonBoards.claims.find(c => c.id.endsWith('board-50-annotation-disposition'))?.text,
+    ).toMatch(/Thế in tại không có/);
+    expect(khonBoards.claims.find(c => c.id.endsWith('board-53-commentary'))?.text).toMatch(
+      /không có Phụ/,
+    );
+    expect(doaiBoards.claims.find(c => c.id.endsWith('ch04-closing-method'))?.text).toMatch(
+      /Độn sơ động.*Đồng Nhân/,
+    );
+    expect(doaiBoards.figures[7]?.labels).toHaveLength(6);
+  });
+});
