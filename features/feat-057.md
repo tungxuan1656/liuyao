@@ -43,9 +43,17 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Activation decisions
+
+- Selection: previously user-authorized in the feat-045–083 sequence; feat-056 is done and this feature is the next dependency-ready item.
+- Scope: retain the existing 18-question and Hà Tri Chương boundaries; inventory routes questions to audit091 and preserves selected prior coverage of Q5, Q6, Q10, and Q12–14.
+- Source: use `docs/books/Tăng bổ bốc phệ chính tông.pdf`, SHA-256 `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a` (467 pages); inspect assigned pages 365–428 and transitions 413/429. Keep PDF 413 as its image-checked folio-only disposition.
+- Planning: existing acceptance and inline plan are sufficient for this one-package authoring cohort; no API, migration, or workspace change is planned.
+- Boundaries: distinguish questions, attributed experiments/examples, and conditional rules; preserve existing claims and source differences. Authoring does not close source audit, verification, or corpus-certification gates.
+
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active on `feat/057-bpct-eighteen-questions-ha-tri-chuong`.
+- Evidence: Dependency feat-056 is merged; the supplied BPCT source hash matches the canonical reference.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Inspect the assigned source interval and existing selected claims, then implement the accepted scope.
