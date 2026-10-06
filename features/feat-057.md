@@ -81,7 +81,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/057-bpct-eighteen-questions-ha-tri-chuong`.
-- Evidence: Dependency feat-056 is merged; the supplied BPCT source hash matches the canonical reference.
+- State: done; merged to `main` in PR #85 at `1e1a5d53ecabd3344cd41c15cecc32068819ee0b`, from reviewed head `2e69eef1250f202f34be7e8244c1e8a0790201a3`.
+- Evidence: Fresh exact-head independent review returned `OK`, no findings. PR verify run `37494127883`/job `112374155807`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 4,163 tests (3,982 knowledge, 181 core); corpus validation and package-export checks passed. The measured 9,862,515-byte asset fits the 10 MiB Workbox cap with 623,245 bytes headroom; all 18 precache entries remain.
+- Coverage: Added 20 source-compared records and 608 claims/citations with 612 registry groups. Prior 248 records, 6,806 claims, 7,052 citations, 17 exclusions, and 19 layer rosters remain unchanged. feat-091 audit has0/813 current obligations; source audit and corpus certification remain open. No efficacy, medical, legal, or safety authority is claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Inspect the assigned source interval and existing selected claims, then implement the accepted scope.
+- Next: Continue with selected feat-058 from updated `main`.

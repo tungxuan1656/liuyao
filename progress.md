@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-057 merged
+
+**State**: done and merged to `main` in PR #85 at `1e1a5d53ecabd3344cd41c15cecc32068819ee0b`; reviewed exact head `2e69eef1250f202f34be7e8244c1e8a0790201a3`.
+**Done**: Added 18 BPCT questions, the unsigned moving-lines insertion, and Hà Tri Chương items 1–60 (PDF 365–428): 20 records, 608 new claims/citations, 611 locator dispositions plus one insertion parent. PDF 413 is an image-checked folio-only page. Preserved examples, translator disagreements, incomplete numbering, and source uncertainty; retained prior selected Q5, Q6, Q10, Q12–14 claims.
+**Evidence**: Independent exact-head review returned `OK`, no findings. PR verify run `37494127883`/job `112374155807`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 4,163 tests (3,982 knowledge, 181 core); `validate:corpus --check-books --check`, package-export checks, and generator freshness passed. Integrated asset 9,862,515 bytes under the 10 MiB Workbox cap with 623,245 bytes headroom; all 18 precache entries remain.
+**Coverage**: Added 612 registry groups (611 mapped dispositions plus one insertion parent), bringing the total to 2,536. Prior 248 records, 6,806 claims, 7,052 citations, 17 exclusions, and 19 layer rosters remain semantically unchanged. feat-091 audit remains 0/813; global source audit and corpus certification remain open. No efficacy or modern medical, legal, or safety authority is claimed.
+**Blockers**: none for feat-057.
+**Next**: Continue with selected feat-058 from updated `main`.
+
 ## 2026-10-06 — feat-056 merged
 
 **State**: done and merged to `main` in PR #84 at `bf6b0c09a5fe800259c5e7e59dd8a21166c08f8c`; reviewed exact head `2d4fa7b702754f9a380424935095e1a5ef109f0a`.
