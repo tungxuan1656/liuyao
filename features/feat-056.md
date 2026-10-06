@@ -48,9 +48,15 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Activation decisions
+
+- The existing acceptance scope is sufficient; keep the plan inline because this is one bounded knowledge-package cohort with no API, migration, or workspace changes.
+- Preserve the source inventory's nine chapter boundaries (PDF 302–364); retain author and translator layers, and treat divination outcomes only as attributed source claims.
+- Keep source audit and corpus certification gates open; chapter authoring does not certify the corpus or establish efficacy.
+
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active; implementation not started.
+- Evidence: Selected after feat-055 completed; dependencies are complete. Branch: `feat/056-bpct-applications-litigation-spirits-state-conflict-flight`.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Inspect the supplied source for chapter 27 (PDF 302–309), then map all nine assigned units and exclusions.
