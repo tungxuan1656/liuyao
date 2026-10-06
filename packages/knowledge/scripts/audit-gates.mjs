@@ -185,8 +185,9 @@ export function evaluateAuditGates({ registry, ledgerState, context, certificati
     sourceEvidenceComplete &&
     !contentSnapshotStale &&
     certificationStatus.current;
+  const requiredTargetKeys = new Set(targets.map(targetKey));
   const unexpectedCurrent = ledgerState.current.filter(
-    item => !targets.some(target => targetKey(target) === targetKey(item.target)),
+    item => !requiredTargetKeys.has(targetKey(item.target)),
   );
   return {
     valid: errors.length === 0,
