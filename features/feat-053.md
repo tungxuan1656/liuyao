@@ -32,13 +32,14 @@ New interpretation, calendar, or UI behavior.
 
 [Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
 [model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
-[licensing](../LICENSING.md), [verification](../docs/development.md).
+[licensing](../LICENSING.md), [verification](../docs/development.md),
+[implementation plan](../docs/plans/feat-053.md).
 
 ## Plan
 
-1. Map existing claims and uncovered sections.
-2. Review and commit each chapter/supplement checkpoint.
-3. Reconcile reused terms, exclusions, and group coverage.
+1. Map the actual source passages and compare existing claims.
+2. Review and commit one chapter checkpoint at a time.
+3. Reconcile all child-unit dispositions and combined release coverage.
 
 ## Verify
 
@@ -48,7 +49,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active on `feat/053-bpct-applications-loss-travel-study-marriage-household`, based on `main` at `06165bd55dd61e30b29ee4b79ac36e9027776180`.
+- Evidence: feat-052, feat-051, feat-050, and feat-101 are done. The selected feat-045–083 sequence authorizes this feature. Detailed source checkpoints are in the [implementation plan](../docs/plans/feat-053.md). No feat-053 content verification has run.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Verify the BPCT source fingerprint and inspect PDF 166–230 to map every assigned source unit before authoring.
