@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-053 merged
+
+**State**: done and merged to `main` in PR #80 at `b4f3ccf42fdb0f80e8ff116ef14af7e5e6282f82`; reviewed PR head `d9b080c03c8780f1eff713bed4f678bb4b9f9eda`.
+**Done**: Published seven BPCT Part I chapters 13–19 records with 760 source-compared claims/citations and 276 child source dispositions. Individually inspected PDFs 190 and 222 are folio-only; chapter 15 closes on 189 and chapter 18 item 42 ends on 221. Parent page intervals remain unchanged.
+**Evidence**: Fresh exact-head independent review returned `OK`, no findings. PR-head CI run 37435012519, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 2,901 tests (181 core, 2,720 knowledge); corpus freshness and package-export checks passed. Final asset 6,458,670 bytes fits the 6,553,600-byte Workbox per-file cap; all 18 assets remain precached. To address measured CI contention on the expanded registry, knowledge tests use serial file scheduling at two workers and two case-specific timeouts were raised; assertions and the generator child-process timeout remain unchanged.
+**Coverage**: 276 children and seven parent obligations remain discovery/audit-unresolved for feat-087; source review and certification gates remain closed. Prior 224 records and 4,606 citations remain semantically unchanged. Contact-sheet inspection limits and source ambiguities are documented; no efficacy or clinical/safety authority is implied.
+**Blockers**: none for feat-053.
+**Next**: Stop here as requested; wait for the user's explicit direction before starting feat-054.
+
 ## 2026-10-06 — feat-052 merged
 
 **State**: done and merged to `main` in PR #79 at `a01d4d3d94d91196cd8c220c435dd8e4a2e7e77a`.

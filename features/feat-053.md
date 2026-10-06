@@ -59,7 +59,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active; implementation and local checks complete on `feat/053-bpct-applications-loss-travel-study-marriage-household`, based on main `06165bd55dd61e30b29ee4b79ac36e9027776180`. Final reconciliation checkpoint records this evidence; keep active until exact-head independent acceptance review and merge.
-- Blockers: none for bounded authoring. General authorship credits do not certify each individual verse/commentary, reported source alternatives are not repaired, and unavailable originals cannot be reconstructed. Global discovery, feat-087 audit, independent verification and certification remain unresolved. No prediction, medical/safety/financial/social advice or copied source material is introduced.
-- Ownership: parent owns feature index and progress updates; neither is edited by this worker. No push or PR.
-- Next: Independent source-aware review of the exact final branch HEAD and all seven mapped units; only after acceptance/merge continue selection of feat-054 (BPCT PDF231–269).
+- State: done; merged to `main` in PR #80 at `b4f3ccf42fdb0f80e8ff116ef14af7e5e6282f82`. Reviewed PR head was `d9b080c03c8780f1eff713bed4f678bb4b9f9eda`.
+- Evidence: Fresh independent exact-head review returned `OK`, no findings. PR-head CI run `37435012519`, Cloudflare Pages, and GitGuardian all passed. Final `./init.sh` passed 2,901 tests (181 core, 2,720 knowledge); corpus freshness and package-export checks passed. CI-required test scheduling serializes files at two workers, and two measured per-test budgets now cover the expanded 1,300-group corpus; no assertions or child-process timeout changed.
+- Blockers: none for feat-053. General authorship credits do not certify each individual verse/commentary, reported source alternatives are not repaired, and unavailable originals cannot be reconstructed. Global discovery, feat-087 audit, independent verification, and certification remain unresolved. No prediction, medical/safety/financial/social advice or copied source material is introduced.
+- Next: Stop after feat-053 as requested; do not start feat-054 until the user asks.
