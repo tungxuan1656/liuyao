@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-047 merged
+
+**State**: done and merged to `main` in PR #74 at `6d9a7a00e0063e65629ddb3604bab7f4664f79ca`.
+**Done**: Added source-compared quẻ 53–56 and BPCT chapter 6 sentences 33–40, citations, attribution, source discrepancies, inventory routes, cohort tests, generated outputs, and legacy retirement. Applied the user-authorized Workbox cap adjustment for this measured cohort and raised two test-only timeouts after exact-head CI exposed limits under runner load.
+**Evidence**: Final PR head `08efc247ca2559591e5de8d04f7238c38a70e4f1` passed GitHub `verify`, Cloudflare Pages, and GitGuardian. Fresh independent review at both integration and final PR heads returned `OK WITH NOTES`, with no P0/P1/P2 findings. `./init.sh` passed with 472 tests; corpus `--check-books --check` passed with 192 records, 2,017 claims, and 2,123 citations. See [feat-047](features/feat-047.md); review reports `feat-047-final-independent-review.md` and `feat-047-ci-timeout-review.md` remain in the session artifact store.
+**Coverage**: 56/64 quẻ, 336/384 line positions. Full-corpus specialist review and certification remain separate open gates.
+**Blockers**: none for feat-047. The 2,686,976-byte Workbox cap leaves 71,384 bytes for this cohort; no authorization for later cap changes is inferred.
+**Next**: Continue at feat-048 from updated `main`; measure the integrated asset and obtain authorization before any further cap increase.
+
 ## 2026-10-05 — feat-046 merged
 
 **State**: done and merged to `main` in PR #73 at `eb862ff2c5a734dbb8306a7258e1c93b6b5eda16`.
