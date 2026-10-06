@@ -425,27 +425,27 @@ Each board expects its source heading, six-line image, six line annotations, hid
 
 Every row inherits author 051 and audit 084. The additional PDF 74–76 contribution is a separate unnumbered unit, not a nineteenth numbered discussion.
 
-| Stable child ID        | Item / source heading                                                                |   PDF | Disposition                                               |
-| ---------------------- | ------------------------------------------------------------------------------------ | ----: | --------------------------------------------------------- |
-| `bpct-ch05-01`         | Phân Loại Dụng Thần                                                                  |    67 | Selected coverage; full examples and layers open.         |
-| `bpct-ch05-02`         | Thế Ứng Làm Dụng Thần                                                                |    67 | Selected coverage; remainder open.                        |
-| `bpct-ch05-03`         | Hỏi Đáp Về Dụng Thần                                                                 | 67–68 | Selected coverage; remainder open.                        |
-| `bpct-ch05-04`         | Nguyên Thần, Cừu Thần, Kỵ Thần                                                       |    68 | Selected coverage; remainder open.                        |
-| `bpct-ch05-05`         | Phi Thần                                                                             | 68–69 | Selected coverage; remainder open.                        |
-| `bpct-ch05-06`         | Phục Thần Chính Truyền                                                               |    69 | Selected coverage; remainder open.                        |
-| `bpct-ch05-07`         | Lục Thú                                                                              |    69 | Selected coverage; remainder open.                        |
-| `bpct-ch05-08`         | Vị Trí Của Tứ Sinh                                                                   |    70 | Selected coverage; remainder open.                        |
-| `bpct-ch05-09`         | Nguyệt Phá                                                                           |    70 | Selected coverage; remainder open.                        |
-| `bpct-ch05-10`         | Tuần Không                                                                           |    70 | Selected coverage; remainder open.                        |
-| `bpct-ch05-11`         | Quẻ Phản Ngâm                                                                        | 70–71 | Selected coverage; remainder open.                        |
-| `bpct-ch05-12`         | Quẻ Phục Ngâm                                                                        |    71 | Selected coverage; remainder open.                        |
-| `bpct-ch05-13`         | Vượng Tướng Hưu Tù                                                                   |    72 | Selected coverage; remainder open.                        |
-| `bpct-ch05-14`         | Trong Hợp Có Khắc                                                                    |    72 | Selected coverage; remainder open.                        |
-| `bpct-ch05-15`         | Hợp Xứ Phùng Xung, Xung Trung Phùng Hợp                                              |    72 | Selected coverage; remainder open.                        |
-| `bpct-ch05-16`         | Tuyệt Xứ Phùng Sinh, Khắc Xứ Phùng Sinh                                              | 72–73 | Selected coverage; remainder open.                        |
-| `bpct-ch05-17`         | Biến Tiến Thần Và Biến Thoái Thần                                                    |    73 | Selected coverage; remainder open.                        |
-| `bpct-ch05-18`         | Quẻ Nghiệm Và Không Nghiệm                                                           | 73–74 | Selected coverage; ends before the separate contribution. |
-| `bpct-ch05-postscript` | Unnumbered `Tứ thời vượng tướng...` contribution, addressed to a forum correspondent | 74–76 | Uncovered as a separate layer; do not merge into item 18. |
+| Stable child ID        | Item / source heading                                                                |   PDF | Disposition                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------ | ----: | -------------------------------------------------------------------------------------------- |
+| `bpct-ch05-01`         | Phân Loại Dụng Thần                                                                  |    67 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-02`         | Thế Ứng Làm Dụng Thần                                                                |    67 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-03`         | Hỏi Đáp Về Dụng Thần                                                                 | 67–68 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-04`         | Nguyên Thần, Cừu Thần, Kỵ Thần                                                       |    68 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-05`         | Phi Thần                                                                             | 68–69 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-06`         | Phục Thần Chính Truyền                                                               |    69 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-07`         | Lục Thú                                                                              |    69 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-08`         | Vị Trí Của Tứ Sinh                                                                   |    70 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-09`         | Nguyệt Phá                                                                           |    70 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-10`         | Tuần Không                                                                           |    70 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-11`         | Quẻ Phản Ngâm                                                                        | 70–71 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-12`         | Quẻ Phục Ngâm                                                                        |    71 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-13`         | Vượng Tướng Hưu Tù                                                                   |    72 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-14`         | Trong Hợp Có Khắc                                                                    |    72 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-15`         | Hợp Xứ Phùng Xung, Xung Trung Phùng Hợp                                              |    72 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-16`         | Tuyệt Xứ Phùng Sinh, Khắc Xứ Phùng Sinh                                              | 72–73 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-17`         | Biến Tiến Thần Và Biến Thoái Thần                                                    |    73 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-18`         | Quẻ Nghiệm Và Không Nghiệm                                                           | 73–74 | Included full-passage original summaries in feat-051; audit open.                            |
+| `bpct-ch05-postscript` | Unnumbered `Tứ thời vượng tướng...` contribution, addressed to a forum correspondent | 74–76 | Included uncredited supplement separately in feat-051; no main-author/calculation authority. |
 
 ### Part I, chapter 6: printed labels 1–69
 
@@ -876,7 +876,7 @@ without a supplied author signature. The postscript remains a distinct supplemen
 | `bpct-ch05-note-05`             | `bpct-ch05-08`     | 70–70      | Vĩnh Cao — attached note 5                                                   | Included: `article-bpct-chapter-five-07-12`; complete original summaries, bounded source conflicts retained.      |
 | `bpct-ch05-note-06`             | `bpct-ch05-08`     | 70–70      | Vĩnh Cao — attached note 6                                                   | Included: `article-bpct-chapter-five-07-12`; complete original summaries, bounded source conflicts retained.      |
 | `bpct-ch05-note-07`             | `bpct-ch05-09`     | 70–70      | Vĩnh Cao — attached note 7                                                   | Included: `article-bpct-chapter-five-07-12`; complete original summaries, bounded source conflicts retained.      |
-| `bpct-ch05-note-08`             | `bpct-ch05-16`     | 72–72      | Vĩnh Cao — attached note 8                                                   | Pending original-summary authoring; full passage inspected.                                                       |
+| `bpct-ch05-note-08`             | `bpct-ch05-16`     | 72–72      | Vĩnh Cao — attached note 8                                                   | Included: `article-bpct-chapter-five-13-18`; complete original summaries, bounded source conflicts retained.      |
 
 All 64 existing `bpct-board-01` through `bpct-board-64` retain their IDs and printed palace order
 in the board register above. Their full commentary continuation ends (not just heading pages)

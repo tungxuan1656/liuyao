@@ -361,3 +361,33 @@ describe('BPCT chapter-five discussions 7–12', () => {
     );
   });
 });
+
+import finalDiscussions from '../data/liuyao/bpct-chapter-five-13-18.json';
+describe('BPCT chapter-five final discussions and distinct postscript', () => {
+  it('maps 13–18, all notes and the unnumbered supplement without creating item 19', () => {
+    expect(getBookRecord(finalDiscussions.id)).toEqual(finalDiscussions);
+    for (let n = 13; n <= 18; n++)
+      expect(registry.groups.find(g => g.id === `bpct-ch05-${n}`)?.recordIds).toContain(
+        finalDiscussions.id,
+      );
+    expect(registry.groups.find(g => g.id === 'bpct-ch05-postscript')?.recordIds).toContain(
+      finalDiscussions.id,
+    );
+    expect(registry.groups.some(g => g.id === 'bpct-ch05-19')).toBe(false);
+    expect(finalDiscussions.claims.filter(c => c.id.includes('postscript-'))).toHaveLength(6);
+    for (const c of finalDiscussions.claims.filter(c => c.id.includes('postscript-'))) {
+      expect(c.attribution.author).toMatch(/không ký tên/);
+      expect(getBookCitation(c.citationIds[0]!)?.textLayer).toBe('supplement');
+    }
+    expect(citations.citations.find(c => c.id.endsWith('ch05-18-proxy'))?.location).toMatchObject({
+      pdfPageStart: 73,
+      pdfPageEnd: 74,
+    });
+    expect(
+      citations.citations.find(c => c.id.endsWith('postscript-identity'))?.location,
+    ).toMatchObject({ pdfPageStart: 74, pdfPageEnd: 76 });
+    expect(finalDiscussions.claims.find(c => c.id.endsWith('17-advance'))?.text).toMatch(
+      /Không in Thìn→Mùi/,
+    );
+  });
+});

@@ -168,11 +168,11 @@
 - Update: `docs/reviews/knowledge/source-inventory.md`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Inspect complete items 13–18 on PDF 72–74, including continuations, examples, and notes.
-- [ ] Inspect the separate unnumbered `Tứ thời vượng tướng...` contribution on PDF 74–76.
-- [ ] Keep the postscript separate; do not treat it as item 19 or merge it into item 18.
-- [ ] Add tests for all six numbered items and the distinct postscript.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect complete items 13–18 on PDF 72–74, including continuations, examples, and notes.
+- [x] Inspect the separate unnumbered `Tứ thời vượng tướng...` contribution on PDF 74–76.
+- [x] Keep the postscript separate; do not treat it as item 19 or merge it into item 18.
+- [x] Add tests for all six numbered items and the distinct postscript.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 11: Reconcile release and verification surfaces
 

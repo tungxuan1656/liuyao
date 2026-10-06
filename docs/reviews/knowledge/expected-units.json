@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 24,
+  "registryRevision": 25,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "ee9213a6ba18ed8b41bde0dd5c4a5dfd1e754194c9e91f52b86fd87db83a89ea"
+    "sha256": "4987a5e14b798e308bacc4ad44de4d1517101036d07587a0b25629d6e3c634c3"
   },
   "counts": {
     "overviewCells": 192,
@@ -5841,7 +5841,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 13
+      "number": 13,
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch05-14",
@@ -5860,7 +5861,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 14
+      "number": 14,
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch05-15",
@@ -5879,7 +5881,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 15
+      "number": 15,
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch05-16",
@@ -5898,7 +5901,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 16
+      "number": 16,
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch05-17",
@@ -5917,7 +5921,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 17
+      "number": 17,
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch05-18",
@@ -5936,7 +5941,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch05",
-      "number": 18
+      "number": 18,
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch05-postscript",
@@ -5954,7 +5960,8 @@
         "layer-bpct-translator-note"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "bpct-part1-ch05"
+      "parentId": "bpct-part1-ch05",
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     },
     {
       "id": "bpct-ch06-01",
@@ -15207,7 +15214,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-five-13-18"]
     }
   ],
   "exclusions": [

@@ -896,7 +896,7 @@ feat-085 audit, global inventory reconciliation, separate verification or corpus
   The classical diagrams and commentary identify Lục ngũ.
   The selected advanced conditions do not depend on that example's label, timing, or reported outcome.
 - Section 18 ends before the separator on PDF 74.
-  The following inserted essay lacks clear author attribution and does not support released claims.
+  The following inserted essay lacks clear author attribution and does not support main-author or calculation-authority claims. Feat-051 separately summarizes it as an uncredited supplement without endorsing its efficacy assertions.
   The [proxy-context article](../../packages/knowledge/data/liuyao/divination-context-and-proxy-role.json) keeps religious and repetition judgments attributed.
   These judgments do not become an accuracy guarantee, user filter, ritual requirement, or recasting restriction.
 
@@ -1005,3 +1005,21 @@ both/outer/inner groups. Three translator notes remain separate. Note 6's purpor
 list actually omits Tử (eleven names); no omitted name is inserted. Type-2 Phi, intrinsic
 Đằng Xà Mộc, Ngọ Lâm Quan, Dần điền thực, Phản ngâm uniqueness and the Phục ngâm
 closing scope remain explicitly unsupported as calculation authority, not silently fixed.
+
+### Feat-051 final discussions and inserted contribution
+
+Complete discussions 13–18 at PDFs 72–74 preserve both seasonal paragraphs, temporary strength,
+mixed hợp/khắc and the Thân/Tị exception, all three xung/hợp types in each direction, all four
+Tuyệt rescue examples, both Thổ cases and the Dậu/Dần control example, the seven Tiến/eight
+Thoái rosters, and the full proxy/repetition continuation. Note 8 remains Vĩnh Cao's separate
+terminology explanation. No missing forward Thìn/Mùi pair or seasonal state is inferred.
+
+The unnumbered italic essay starts after the separator on 74 and ends with address to vantinh
+on 76. Its six original summaries separately account for uncredited identity, cosmological
+certainty rhetoric, the political authority analogy, seasonal/group-strength examples,
+Nguyệt versus supported strength and leader/peer illustrations, timing and admission of
+complex overlapping cases. It is not Vương Hồng Tự's item 18 or an invented 19, and no signature
+is supplied by inference. This new evidence justifies a narrower exclusion statement: no
+main-author attribution or calculation authority, rather than no original summary of the essay.
+No source image, quoted passage, repaired source, calendar, classifier, medical/ritual advice,
+new interpretation behavior, independent audit approval or certification is released.
