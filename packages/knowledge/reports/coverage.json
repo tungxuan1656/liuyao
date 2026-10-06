@@ -3,12 +3,12 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 192, "released": 192, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 2017, "missingCitationIds": [] },
-  "citations": { "total": 2123 },
+  "records": { "authored": 197, "released": 197, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 2207, "missingCitationIds": [] },
+  "citations": { "total": 2392 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
-    "reviewed": 56,
+    "reviewed": 60,
     "expected": 64,
     "reviewedIds": [
       "hexagram-01",
@@ -66,39 +66,34 @@
       "hexagram-53",
       "hexagram-54",
       "hexagram-55",
-      "hexagram-56"
-    ],
-    "missingIds": [
+      "hexagram-56",
       "hexagram-57",
       "hexagram-58",
       "hexagram-59",
-      "hexagram-60",
-      "hexagram-61",
-      "hexagram-62",
-      "hexagram-63",
-      "hexagram-64"
-    ]
+      "hexagram-60"
+    ],
+    "missingIds": ["hexagram-61", "hexagram-62", "hexagram-63", "hexagram-64"]
   },
   "lines": {
-    "reviewedPositions": 336,
+    "reviewedPositions": 360,
     "expected": 384,
     "byAuthor": [
       {
         "author": "Nguyễn Hiến Lê",
-        "overviewHexagrams": 56,
-        "reviewedLinePositions": 336,
+        "overviewHexagrams": 60,
+        "reviewedLinePositions": 360,
         "missingPilotPositions": []
       },
       {
         "author": "Phan Bội Châu",
-        "overviewHexagrams": 56,
-        "reviewedLinePositions": 336,
+        "overviewHexagrams": 60,
+        "reviewedLinePositions": 360,
         "missingPilotPositions": []
       },
       {
         "author": "Ngô Tất Tố",
-        "overviewHexagrams": 56,
-        "reviewedLinePositions": 336,
+        "overviewHexagrams": 60,
+        "reviewedLinePositions": 360,
         "missingPilotPositions": []
       }
     ]
@@ -197,7 +192,11 @@
         "hexagram-53",
         "hexagram-54",
         "hexagram-55",
-        "hexagram-56"
+        "hexagram-56",
+        "hexagram-57",
+        "hexagram-58",
+        "hexagram-59",
+        "hexagram-60"
       ]
     },
     {
@@ -261,7 +260,11 @@
         "hexagram-53",
         "hexagram-54",
         "hexagram-55",
-        "hexagram-56"
+        "hexagram-56",
+        "hexagram-57",
+        "hexagram-58",
+        "hexagram-59",
+        "hexagram-60"
       ]
     },
     {
@@ -417,7 +420,8 @@
         "article-shi-ying-interaction-context",
         "article-useful-spirit-rescue-empty-combination-context",
         "article-hidden-movement-store-strength-and-branch-context",
-        "article-hidden-spirit-release-restraint-and-combination-context"
+        "article-hidden-spirit-release-restraint-and-combination-context",
+        "article-useful-spirit-avoidance-rescue-and-transformation-context"
       ]
     },
     {
@@ -1472,35 +1476,93 @@
         "citation-pbc-q56-line-2-classical-text"
       ],
       "resolution": "Chọn nghĩa cẩn thận từ lời bình và chú giải riêng, giữ minh thuận và khác biệt vô cữu/vô vưu là chứng tích nguồn; không cung cấp bản kinh đã hiệu đính."
+    },
+    {
+      "recordId": "hexagram-57",
+      "id": "discrepancy-q57-negation-and-readings",
+      "status": "resolved",
+      "description": "NTT PDF 860 phần Dịch nghĩa của hào ngũ in không gì lợi, trong khi âm, lời kinh và hai lời bình nói vô bất lợi. NTT PDF 861 âm và nghĩa hào thượng không biểu thị trinh dù lời kinh có; NHL PDF 310 đọc vô sở hữu chung bên cạnh lời kinh và nghĩa không đầu có cuối.",
+      "citationIds": [
+        "citation-ntt-q57-line-5-classical-text",
+        "citation-ntt-q57-line-5-trinh-di",
+        "citation-ntt-q57-line-5-chu-hy",
+        "citation-ntt-q57-line-6-classical-text",
+        "citation-nhl-q57-line-5-classical-text"
+      ],
+      "resolution": "Giữ các dạng in là giới hạn nguồn. Chọn nghĩa có điều kiện từ từng lời bình, không sửa bản dịch hay cung cấp lời kinh đã tái dựng; không suy một kết quả bất lợi từ phủ định thiếu."
+    },
+    {
+      "recordId": "hexagram-58",
+      "id": "discrepancy-q58-thoan-and-line-readings",
+      "status": "resolved",
+      "description": "PBC PDF 540 phần lời kinh Thoán có dạng niệm bên cạnh âm và lời bình vong; NTT PDF 865 phần âm/nghĩa nói niệm, nghĩ chết, bên cạnh lời kinh và Trình Di giải quên nhọc, không ngại chết. NTT PDF 867 âm Tiểu Tượng sơ kết hối vong, trong khi lời kinh, nghĩa và bình giải hành vị nghi.",
+      "citationIds": [
+        "citation-pbc-q58-overview-thoan-pbc",
+        "citation-ntt-q58-overview-thoan-trinh-di",
+        "citation-ntt-q58-line-1-classical-text",
+        "citation-ntt-q58-line-1-trinh-di"
+      ],
+      "resolution": "Giữ khác biệt từng phần in. Tóm tắt lời bình có attribution, không dựng lại lời kinh hay thay âm in; không chọn một tâm lý về chết làm nghĩa chung mọi nguồn."
+    },
+    {
+      "recordId": "hexagram-59",
+      "id": "discrepancy-q59-fourth-line-witness",
+      "status": "resolved",
+      "description": "PBC PDF 552 PHỤ CHÚ gọi Cửu Tứ trong đoạn giải tứ. NTT PDF 881 lời kinh Tiểu Tượng tứ in nội dung vương cư chính vị của ngũ, nhưng âm, nghĩa và Trình Di ngay dưới giải hoán kỳ quần quang đại.",
+      "citationIds": [
+        "citation-pbc-q59-line-4-supplement-pbc",
+        "citation-ntt-q59-line-4-classical-text",
+        "citation-ntt-q59-line-4-trinh-di",
+        "citation-nhl-q59-overview-structure",
+        "citation-pbc-q59-overview-structure"
+      ],
+      "resolution": "Giữ tứ là âm theo hai hình và nhãn Lục Tứ nhất quán. Tóm tắt riêng lời bình được hỗ trợ, không chuyển nội dung Tiểu Tượng ngũ in nhầm thành nghĩa tứ, không sửa văn bản nguồn."
+    },
+    {
+      "recordId": "hexagram-59",
+      "id": "discrepancy-q59-overview-negation-and-positions",
+      "status": "resolved",
+      "description": "NTT PDF 875 Dịch nghĩa nói cứng lại mà cùng bên cạnh âm bất cùng và lời bình không cùng. NTT PDF 874 Chu Hy kể Sáu ngôi Ba và cùng Tư trong cách biến từ Tiệm, khác phần Trình Di 875 lấy nhu lên ngôi Tư.",
+      "citationIds": [
+        "citation-ntt-q59-overview-thoan-trinh-di",
+        "citation-ntt-q59-overview-chu-hy",
+        "citation-ntt-q59-overview-structure"
+      ],
+      "resolution": "Giữ chứng tích ngôn ngữ và cách kể riêng. Dùng cấu trúc Khảm dưới Tốn trên corroborated ở các nguồn; không suy thuật biến quẻ từ các lời kể bất nhất hoặc tái dựng phủ định bị thiếu."
+    },
+    {
+      "recordId": "hexagram-60",
+      "id": "discrepancy-q60-same-yang-and-conduct",
+      "status": "resolved",
+      "description": "NHL PDF 319 và PBC PDF 560 nói ngũ đồng dương, đồng đức giúp nhị; Trình Di NTT PDF 889 nói rõ nhị và ngũ không Âm Dương chính ứng. NTT 889–890 dùng mất đức cứng giữa hoặc mất cứng khi bình nhị, trong khi lời hào và cấu trúc đều là dương.",
+      "citationIds": [
+        "citation-nhl-q60-line-2-nhl",
+        "citation-pbc-q60-line-2-pbc",
+        "citation-ntt-q60-line-2-trinh-di",
+        "citation-ntt-q60-line-2-chu-hy",
+        "citation-nhl-q60-overview-structure"
+      ],
+      "resolution": "Giữ trợ lực đồng đức riêng với chính ứng. Nhị vẫn dương theo nhãn và hình; mất đức trong bình là phê cách xử, không bằng chứng đổi polarity hoặc thuật biến quẻ."
     }
   ],
   "unresolvedDiscrepancies": [],
   "legacyUnaudited": {
-    "entities": [
-      "hexagram-57",
-      "hexagram-58",
-      "hexagram-59",
-      "hexagram-60",
-      "hexagram-61",
-      "hexagram-62",
-      "hexagram-63",
-      "hexagram-64"
-    ],
+    "entities": ["hexagram-61", "hexagram-62", "hexagram-63", "hexagram-64"],
     "terms": ["term-ruleset", "term-primary-hexagram", "term-changed-hexagram", "term-line-value"],
     "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
   },
   "nextBatch": {
-    "hexagramIds": ["hexagram-57", "hexagram-58", "hexagram-59", "hexagram-60"],
+    "hexagramIds": ["hexagram-61", "hexagram-62", "hexagram-63", "hexagram-64"],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến tiếp tục Tốn, Đoài, Hoán, Tiết và BPCT Phần I, Chương 6, câu 41–48. Năm mươi sáu quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 33–40 giữ riêng phú, bình giải và chú thích 7–8. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution chưa rõ và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng Tam hình, phép lịch hoặc dự báo sức khỏe."
+    "note": "Dự kiến tiếp tục Trung Phu, Tiểu Quá, Ký Tế, Vị Tế và BPCT Phần I, Chương 6, câu 49–56 (feat-049). Sáu mươi quẻ đã có tổng quan và sáu vị trí với các diễn giải được chọn từ NHL, PBC, NTT; câu 41–48 giữ riêng phú, bình giải và chú thích 9. Không bổ sung Chu Hy ở hào sáu Tiết khi nguồn không có nhãn riêng. Đối chiếu nguồn không đóng audit, phê duyệt độc lập hoặc chứng nhận; attribution và các cách đọc khác nhau vẫn có giới hạn riêng. Không phát hành bảng giai đoạn đầy đủ, phép lịch hoặc dự báo sức khỏe."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2077,
+        "required": 2082,
         "current": 84,
-        "missing": 1993,
+        "missing": 1998,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1509,8 +1571,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 1993 },
-        { "code": "released-claim-coverage-incomplete", "count": 1820 }
+        { "code": "missing-decision", "count": 1998 },
+        { "code": "released-claim-coverage-incomplete", "count": 2010 }
       ]
     },
     "certification": {
@@ -1518,7 +1580,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2077,
+        "required": 2082,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
