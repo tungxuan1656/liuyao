@@ -83,6 +83,11 @@ New interpretation, calendar, or UI behavior.
   builds and package tests pass; 363 knowledge tests across 37 files and 181 core tests pass.
 - Final `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passes.
 - Final `pnpm --dir apps/web run check:package-exports` passes checker and package type compilation.
+- PR #78's first exact-head `verify` run hit the 60-second Vitest timeout in
+  `book-generator.test.mjs` after 67.6 seconds under full-suite load; it did not report a
+  failed assertion. The isolated test passed in 24.0 seconds locally. Its timeout is now 90
+  seconds; a fresh `./init.sh` passes, including all 363 knowledge and 181 core tests. CI must
+  pass again at the updated exact head before merge.
 - The first final full test run found two stale assumptions: all authored records were V1, and
   a synthetic record's layer scope equaled one group rather than its edition/record closure.
   Tests now dispatch V1/V2 and use the existing layer resolver; focused 28-test correction and
@@ -109,11 +114,13 @@ warnings remain non-blocking; this feature does not widen into unrelated UI/font
 
 - State: active on `feat/051-bpct-front-chapters-1-5`; implementation checkpoints and verification
   are complete, not feature-done or merged. Parent retains index/progress ownership.
-- Evidence: acceptance checkboxes record source-comparison and structural/publication evidence,
-  not fresh independent review. No UI, calendar, classifier, new interpretation behavior,
-  audit/certification behavior, source text/images, push or PR is introduced.
+- Evidence: Independent review of `4d530a19883875b5da6a3ace29019725ed3d1b6a` returned
+  OK WITH NOTES, with no P0/P1/P2 findings. The subsequent timeout-only correction has not yet
+  received fresh exact-head review. PR #78 is open; do not merge before updated-head review and
+  successful exact-head checks. No UI, calendar, classifier, new interpretation behavior,
+  audit/certification behavior, or source text/images are introduced.
 - Dependencies: feat-050 and feat-101 are done; see the unchanged feature index.
 - Blockers: none for implementation. Source ambiguities, missing labels/entries, unspecified
   authors and non-authoritative historical assertions remain explicit limitations.
-- Next: Fresh independent review of the exact final branch HEAD, all assigned source passages
-  and inventory/registry/claim/figure dispositions before merge or setting feat-051 done.
+- Next: Commit the evidence-based test-timeout correction, then obtain fresh independent review
+  and passing exact-head CI/Cloudflare/GitGuardian checks before merge or setting feat-051 done.
