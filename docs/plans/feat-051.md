@@ -93,12 +93,12 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Inspect each of the 24 board headings and full diagrams listed under chapter 4 in the source inventory.
-- [ ] Record each board's source title, six line images and annotations, hidden/flying annotations where printed, explanatory text, and actual absences.
-- [ ] Use the feat-101 evidence contract for every figure or table claim.
-- [ ] Preserve known source conflicts, including the incomplete Khảm list in chapter 1 and the correction in chapter 4.
-- [ ] Add tests for each board ID, exact citation coverage, figure links, and layer/absence claims.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect each of the 24 board headings and full diagrams listed under chapter 4 in the source inventory.
+- [x] Record each board's source title, six line images and annotations, hidden/flying annotations where printed, explanatory text, and actual absences.
+- [x] Use the feat-101 evidence contract for every figure or table claim.
+- [x] Preserve known source conflicts, including the incomplete Khảm list in chapter 1 and the correction in chapter 4.
+- [x] Add tests for each board ID, exact citation coverage, figure links, and layer/absence claims.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 6: Author Chấn, Tốn, and Ly palace boards
 

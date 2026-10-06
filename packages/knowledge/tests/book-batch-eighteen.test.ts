@@ -180,3 +180,58 @@ describe('BPCT chapter-three named poems', () => {
     );
   });
 });
+
+import canBoards from '../data/liuyao/bpct-boards-can.json';
+import khamBoards from '../data/liuyao/bpct-boards-kham.json';
+import mountainBoards from '../data/liuyao/bpct-boards-can-mountain.json';
+const firstBoards = [canBoards, khamBoards, mountainBoards];
+describe('BPCT Càn, Khảm and Cấn boards', () => {
+  it.each(firstBoards)('preserves all eight $id figures and exact own locators', record => {
+    expect(getBookRecord(record.id)).toEqual(record);
+    expect(record.figures).toHaveLength(8);
+    for (const figure of record.figures) {
+      const unitId = figure.sourceUnitIds[0]!;
+      const unit = registry.groups.find(g => g.id === unitId)!;
+      expect(unit.recordIds).toContain(record.id);
+      expect(figure.labels).toHaveLength(6);
+      expect(figure.labels.map(l => l.text.match(/^Hào (\d)/)?.[1])).toEqual([
+        '6',
+        '5',
+        '4',
+        '3',
+        '2',
+        '1',
+      ]);
+      for (const label of figure.labels) {
+        const claim = record.claims.find(c => c.id === label.claimIds[0])!;
+        const citation = getBookCitation(claim.citationIds[0]!)!;
+        expect(citation.location.pdfPageStart).toBe(unit.pdfPageStart);
+        expect(citation.location.pdfPageEnd).toBe(unit.pdfPageStart);
+        expect(citation.location.section).toMatch(/board/);
+      }
+      const commentary = record.claims.find(c => c.id.endsWith(`${unitId}-commentary`))!;
+      expect(getBookCitation(commentary.citationIds[0]!)?.location.pdfPageEnd).toBe(
+        unit.pdfPageEnd,
+      );
+      expect(
+        record.claims.find(c => c.id.endsWith(`${unitId}-annotation-disposition`)),
+      ).toBeDefined();
+    }
+  });
+  it('keeps observed marker/relative discrepancies and the missing chapter-one Cách visible', () => {
+    expect(canBoards.claims.find(c => c.id.endsWith('board-08-line-6'))?.text).toMatch(/Thế/);
+    expect(canBoards.claims.find(c => c.id.endsWith('board-03-line-2'))?.text).toMatch(
+      /Bính Ngọ; Tử/,
+    );
+    expect(khamBoards.claims.find(c => c.id.endsWith('board-13-heading'))?.text).toMatch(/CÁCH/);
+    expect(khamBoards.claims.find(c => c.id.endsWith('board-16-line-6'))?.text).toMatch(
+      /Quí Hợi; Phụ/,
+    );
+    expect(mountainBoards.claims.find(c => c.id.endsWith('board-24-line-5'))?.text).toMatch(
+      /Tân Tị; Tài/,
+    );
+    expect(mountainBoards.claims.find(c => c.id.endsWith('board-22-line-6'))?.text).toMatch(
+      /Nhâm Ngọ; Huynh/,
+    );
+  });
+});

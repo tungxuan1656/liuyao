@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 13,
+  "registryRevision": 16,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "6fca756f6d2ca4ee3152b7e2bd517cac1752e5851625b4e79bd4141c59e1a5b5"
+    "sha256": "e864c6cb811533565940e9e226c7fb2071efb1c8bf8038f11db55bcbc42f8a4f"
   },
   "counts": {
     "overviewCells": 192,
@@ -4321,7 +4321,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 1
+      "number": 1,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-02",
@@ -4340,7 +4341,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 2
+      "number": 2,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-03",
@@ -4359,7 +4361,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 3
+      "number": 3,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-04",
@@ -4378,7 +4381,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 4
+      "number": 4,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-05",
@@ -4397,7 +4401,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 5
+      "number": 5,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-06",
@@ -4416,7 +4421,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 6
+      "number": 6,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-07",
@@ -4435,7 +4441,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 7
+      "number": 7,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-08",
@@ -4454,7 +4461,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 8
+      "number": 8,
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-board-09",
@@ -4473,7 +4481,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 9
+      "number": 9,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-10",
@@ -4492,7 +4501,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 10
+      "number": 10,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-11",
@@ -4511,7 +4521,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 11
+      "number": 11,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-12",
@@ -4530,7 +4541,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 12
+      "number": 12,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-13",
@@ -4549,7 +4561,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 13
+      "number": 13,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-14",
@@ -4568,7 +4581,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 14
+      "number": 14,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-15",
@@ -4587,7 +4601,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 15
+      "number": 15,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-16",
@@ -4606,7 +4621,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 16
+      "number": 16,
+      "recordIds": ["article-bpct-boards-kham"]
     },
     {
       "id": "bpct-board-17",
@@ -4625,7 +4641,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 17
+      "number": 17,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-18",
@@ -4644,7 +4661,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 18
+      "number": 18,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-19",
@@ -4663,7 +4681,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 19
+      "number": 19,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-20",
@@ -4682,7 +4701,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 20
+      "number": 20,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-21",
@@ -4701,7 +4721,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 21
+      "number": 21,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-22",
@@ -4720,7 +4741,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 22
+      "number": 22,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-23",
@@ -4739,7 +4761,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 23
+      "number": 23,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-24",
@@ -4758,7 +4781,8 @@
       ],
       "discoveryStatus": "unresolved",
       "parentId": "bpct-part1-ch04",
-      "number": 24
+      "number": 24,
+      "recordIds": ["article-bpct-boards-can-mountain"]
     },
     {
       "id": "bpct-board-25",
@@ -14941,7 +14965,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-boards-can"]
     },
     {
       "id": "bpct-ch04-note-01",

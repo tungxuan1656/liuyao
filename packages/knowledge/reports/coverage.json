@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 207, "released": 207, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 2759, "missingCitationIds": [] },
-  "citations": { "total": 3005 },
+  "records": { "authored": 210, "released": 210, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 2976, "missingCitationIds": [] },
+  "citations": { "total": 3222 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -359,7 +359,10 @@
         "article-bpct-front-voices",
         "article-bpct-chapter-one-foundations",
         "article-bpct-chapter-two-ca-quyet",
-        "article-bpct-chapter-three-poems"
+        "article-bpct-chapter-three-poems",
+        "article-bpct-boards-can",
+        "article-bpct-boards-kham",
+        "article-bpct-boards-can-mountain"
       ]
     },
     {
@@ -1657,9 +1660,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2205,
+        "required": 2232,
         "current": 84,
-        "missing": 2121,
+        "missing": 2148,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1668,8 +1671,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 625 },
-        { "code": "missing-decision", "count": 2121 },
-        { "code": "released-claim-coverage-incomplete", "count": 2562 }
+        { "code": "missing-decision", "count": 2148 },
+        { "code": "released-claim-coverage-incomplete", "count": 2779 }
       ]
     },
     "certification": {
@@ -1677,7 +1680,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2205,
+        "required": 2232,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
