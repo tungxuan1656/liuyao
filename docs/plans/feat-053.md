@@ -13,7 +13,7 @@
 - Work only within `features/feat-053.md`: BPCT PDF 166–230.
 - Verify the supplied BPCT fingerprint in `packages/knowledge/data/sources.json` before authoring.
 - Inspect complete passages, page images, tables/diagrams if present, and adjacent pages at boundaries. State the actual image-inspection limits; do not claim every page was individually inspected when contact sheets were used.
-- Use actual chapter boundaries. Preserve the chapter 14 opening label 23 without inferring a missing 22. Include chapter 15's short continuation on PDF 190 and chapter 18's short fragment on PDF 222.
+- Use actual chapter boundaries. Preserve the chapter 14 opening label 23 without inferring a missing 22. Individually inspected PDF190/222 are folio-only (161/190), correcting the planned fragments with coordinator approval. Keep chapter15 closing on189 and chapter18 item42 on221, with unchanged parent intervals.
 - Keep source authorship/translation uncertainty visible. Preserve question roles, conditions, and author disagreements. Treat reported outcomes as historical source claims, not verified efficacy.
 - Use original summaries and follow `LICENSING.md`; do not copy source passages or images.
 - Preserve prior reviewed data. Do not add UI, calendar, automated interpretation, audit, or certification behavior; keep global review gates open.
@@ -30,13 +30,13 @@
 - Read: `packages/knowledge/data/sources.json`
 - Inspect: `docs/books/Tăng bổ bốc phệ chính tông.pdf`
 
-- [ ] Verify exact PDF fingerprint and page count.
-- [ ] Inspect PDF 166–230 plus boundary images for chapter openings, endings, and continuations.
-- [ ] Map each source passage, condition, example, note, named voice, and any table/diagram to child obligations under the existing seven parent intervals.
-- [ ] Reconcile selected earlier claims and citations as partial coverage; do not rewrite without fresh evidence.
-- [ ] Add exact PDF/printed-folio bounds, source-layer dispositions, and attribution uncertainties to `docs/reviews/knowledge/source-inventory.md`.
-- [ ] Bind expected-unit revision to the exact inventory bytes; preserve unrelated groups and dispositions.
-- [ ] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`; commit the source-unit map before content.
+- [x] Verify exact PDF fingerprint and page count.
+- [x] Inspect PDF 166–230 plus boundary images for chapter openings, endings, and continuations.
+- [x] Map each source passage, condition, example, note, named voice, and any table/diagram to child obligations under the existing seven parent intervals.
+- [x] Reconcile selected earlier claims and citations as partial coverage; do not rewrite without fresh evidence.
+- [x] Add exact PDF/printed-folio bounds, source-layer dispositions, and attribution uncertainties to `docs/reviews/knowledge/source-inventory.md`.
+- [x] Bind expected-unit revision to the exact inventory bytes; preserve unrelated groups and dispositions.
+- [x] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`; commit the source-unit map before content.
 
 ## Task 2: Author chapter 13 — Thất Thoát
 
@@ -76,10 +76,10 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover Cầu Sư PDF 184–190, including the short continuation on PDF 190.
+- [ ] Cover Cầu Sư PDF 184–190, including the folio-only PDF190 child (closing prose on189).
 - [ ] Cover Học Quán PDF 191–199, including every passage, condition, example, and note.
 - [ ] Preserve source role/context and translator disagreements; do not convert historical outcomes into claims of efficacy.
-- [ ] Test the continuation bounds, all source-unit locators, attribution, and withheld claims.
+- [ ] Test the closing and folio-only bounds, all source-unit locators, attribution, and withheld claims.
 - [ ] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 5: Author chapter 17 — Hôn Nhân
@@ -106,10 +106,10 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover Sản Dục PDF 212–222, including the short fragment on PDF 222.
+- [ ] Cover Sản Dục PDF 212–222, including the folio-only PDF222 child (item42 on221).
 - [ ] Cover Tiến Nhân Khẩu PDF 223–230 and its complete source boundary.
 - [ ] Preserve health, childbirth, household, safety, and outcome content as historical source claims, not medical, safety, financial, or predictive guidance.
-- [ ] Test all continuation bounds, notes, roles, attribution, exclusions, and release projection.
+- [ ] Test all closing and folio-only bounds, notes, roles, attribution, exclusions, and release projection.
 - [ ] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 7: Reconcile release and verify

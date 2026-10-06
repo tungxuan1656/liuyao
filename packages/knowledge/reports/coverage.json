@@ -1674,9 +1674,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2685,
+        "required": 2961,
         "current": 84,
-        "missing": 2601,
+        "missing": 2877,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1684,8 +1684,8 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
-        { "code": "unresolved-source-discovery", "count": 1024 },
-        { "code": "missing-decision", "count": 2601 },
+        { "code": "unresolved-source-discovery", "count": 1300 },
+        { "code": "missing-decision", "count": 2877 },
         { "code": "released-claim-coverage-incomplete", "count": 4163 }
       ]
     },
@@ -1694,7 +1694,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2685,
+        "required": 2961,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
