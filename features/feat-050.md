@@ -42,7 +42,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active on `feat/050-bpct-ch06-57-69`, based on `main` at `70d312abcb99b442621f98ca49200c68cbe2146c`.
+- Evidence: feat-049 is merged and marked done; this feature is within the user's selected feat-045–083 batch. No implementation verification has run.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Inspect BPCT pages 94–100 and identify complete verse, commentary, note, and exclusion boundaries for sentences 57–69.
