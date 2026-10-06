@@ -97,7 +97,7 @@ describe('feat-050 BPCT chapter 6 sentences 57–69', () => {
     expect(getBookSource('source-book-bpct')?.editions[0]?.sha256).toBe(
       '713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a',
     );
-    expect(manifest.nextBatch.note).toMatch(/feat-051/);
+    expect(manifest.nextBatch.note).toMatch(/feat-052/);
   });
 
   it('accounts for all twelve timing cases without a precedence or date algorithm', () => {

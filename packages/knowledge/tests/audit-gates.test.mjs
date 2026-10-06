@@ -548,7 +548,12 @@ describe('evidence-derived audit gates', () => {
     recordDecision.coveredClaimIds = releasedClaimIds;
     recordDecision.locator = sourceDecision.locator;
     recordDecision.sourceComparison.evidenceCitationIds = ['citation-bpct-p10-11-technical'];
-    recordDecision.layerResolution.layers = group.layerScopeIds.map(layerId => ({
+    recordDecision.layerResolution.layers = expectedLayersForTarget(
+      recordTarget,
+      registry,
+      context,
+      releasedClaimIds,
+    ).map(layerId => ({
       layerId,
       presence: 'present',
       citationIds: ['citation-bpct-p10-11-technical'],
@@ -918,7 +923,7 @@ describe('evidence-derived audit gates', () => {
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 518,
+      groups: 625,
       exclusions: 17,
     });
     expect(registry.layers.every(layer => layer.rosterStatus === 'unresolved')).toBe(true);

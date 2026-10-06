@@ -1023,3 +1023,7 @@ is supplied by inference. This new evidence justifies a narrower exclusion state
 main-author attribution or calculation authority, rather than no original summary of the essay.
 No source image, quoted passage, repaired source, calendar, classifier, medical/ritual advice,
 new interpretation behavior, independent audit approval or certification is released.
+
+Chapter-two prose units have no individual signed author. Their attribution names the supplied
+Vương Hồng Tự compilation, not a claim that he composed every formula or paragraph.
+The edition's generic Phú credit is not used to assign these poems to Lưu Bá Ôn.

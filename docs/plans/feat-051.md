@@ -50,7 +50,7 @@
 
 - [x] Author the front matter voices and credits on PDF 1–6 as separate claims.
 - [x] Author all numbered definitions, methods, and diagrams in chapter 1 on PDF 7–21.
-- [x] Cover the observed topics I–XXII without inferring that extraction gaps prove source absence.
+- [x] Cover every observed topic (I–XXV, including two VI headings) without inferring that extraction gaps prove source absence.
 - [x] Reconcile the already selected chapter 1 claims and the known examples at PDFs 8–15 without altering them absent new source evidence.
 - [x] Add tests for claim IDs, citations, attribution, diagram evidence, exclusions, and public release projection.
 - [x] Run the batch tests and corpus validator, then commit this checkpoint.
@@ -186,12 +186,25 @@
 - Regenerate through existing scripts: `packages/knowledge/src/book-release.generated.json` and `packages/knowledge/reports/`
 - Update: `features/feat-051.md`
 
-- [ ] Register only source-reviewed records and citations; retain existing record IDs and public contracts.
-- [ ] Account for every assigned unit and layer in the inventory and expected-unit registry.
-- [ ] Bind the registry revision to the exact source-inventory bytes without changing unrelated obligations or audit states.
-- [ ] Update `nextBatch` to feat-052 and assert the transition in tests.
-- [ ] Verify public projections preserve earlier records and citations; verify no local PDF path or copied source text enters release data.
-- [ ] Record any bundle measurement. Change only the measured Workbox per-file cap if the asset exceeds it.
-- [ ] Run `./init.sh`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `pnpm --dir apps/web run check:package-exports`.
-- [ ] Resolve introduced failures, inspect the complete diff, and record verification and limitations in the feature handoff.
-- [ ] Commit the final verification checkpoint; leave feat-051 active until fresh independent review and merge.
+- [x] Register only source-reviewed records and citations; retain existing record IDs and public contracts.
+- [x] Account for every assigned unit and layer in the inventory and expected-unit registry.
+- [x] Bind the registry revision to the exact source-inventory bytes without changing unrelated obligations or audit states.
+- [x] Update `nextBatch` to feat-052 and assert the transition in tests.
+- [x] Verify public projections preserve earlier records and citations; verify no local PDF path or copied source text enters release data.
+- [x] Record any bundle measurement. Change only the measured Workbox per-file cap if the asset exceeds it.
+- [x] Run `./init.sh`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `pnpm --dir apps/web run check:package-exports`.
+- [x] Resolve introduced failures, inspect the complete diff, and record verification and limitations in the feature handoff.
+- [x] Commit the final verification checkpoint; leave feat-051 active until fresh independent review and merge.
+
+## Checkpoint evidence
+
+The tested authoring checkpoints are `30e5e16` (unit map), `03be144` (front/ch1),
+`ae9dae0` (ch2), `42b412a` (ch3), `65f2c2c` (first 24 boards),
+`9ea9587` (locator correction), `94b92b8` (next 24 boards), `6fab579` (last 16 boards),
+`0c1e336` (discussions 1–6), `d8a3578` (7–12), and `b9d49eb` (13–18/postscript).
+The first board checkpoint was accidentally committed after its new locator test failed; the
+immediate separate corrective commit reconciles the pre-existing registry's incorrect starts
+against inspected headings and passes the same tests. No amend or source-content rewrite occurred.
+Each content checkpoint runs focused batch/publication tests and supplied-book corpus freshness.
+Final evidence and bundle measurement are in [feat-051](../../features/feat-051.md).
+Fresh independent review remains the delivery gate; this plan does not set the feature done.

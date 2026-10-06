@@ -277,6 +277,20 @@ describe('BPCT Chấn, Tốn and Ly boards', () => {
 
 import khonBoards from '../data/liuyao/bpct-boards-khon.json';
 import doaiBoards from '../data/liuyao/bpct-boards-doai.json';
+const commentaryStarts: Readonly<Record<number, number>> = {
+  7: 51,
+  10: 52,
+  14: 53,
+  21: 55,
+  28: 57,
+  35: 59,
+  43: 61,
+  47: 62,
+  51: 63,
+  55: 64,
+  59: 65,
+  63: 66,
+};
 const allBoards = [...firstBoards, chanBoards, tonBoards, lyBoards, khonBoards, doaiBoards];
 describe('BPCT all 64 distinct board evidence units', () => {
   it('covers all eight palaces, six observed line labels per board and all own commentary bounds', () => {
@@ -292,7 +306,7 @@ describe('BPCT all 64 distinct board evidence units', () => {
         expect(unit.recordIds).toContain(record.id);
         const commentary = record.claims.find(c => c.id.endsWith(`${unit.id}-commentary`))!;
         expect(getBookCitation(commentary.citationIds[0]!)?.location).toMatchObject({
-          pdfPageStart: unit.pdfPageStart,
+          pdfPageStart: commentaryStarts[Number(unit.id.split('-').at(-1))] ?? unit.pdfPageStart,
           pdfPageEnd: unit.pdfPageEnd,
         });
         for (const id of figure.claimIds) expect(record.claims.some(c => c.id === id)).toBe(true);
