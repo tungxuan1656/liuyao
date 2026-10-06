@@ -84,15 +84,16 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/052-bpct-applications-weather-life-career-wealth`, based on `main`
-  at `599b08006e34cf255e147840dc8535318e652409`; local implementation/source comparison
-  complete, independent acceptance review and merge pending.
-- Evidence: tasks1–8 completed with chapter checkpoints and final reconciliation; no
-  interpretation, calendar, classifier, UI, audit or certification behavior added.
-- Limitations: generic front credits do not certify authorship of each verse. Uncredited
+- State: done and merged to `main` in PR #79 at `a01d4d3d94d91196cd8c220c435dd8e4a2e7e77a`.
+- Evidence: Exact-head independent review of `9a8b9574f7b62fb2dae953386d44b42500fb84f4`
+  returned OK WITH NOTES with no P0/P1/P2 findings. PR-head `verify` run 37423315939,
+  Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 2,342 tests (2,161 knowledge,
+  181 core); corpus `--check-books --check` and package-export checks passed. The source
+  review and certification gates remain closed; no corpus audit or efficacy evidence is implied.
+- Limitations: Generic front credits do not certify authorship of each verse. Uncredited
   essay author/translator, malformed words, missing separately printed Hán clause, divergent
   meaning/commentary/name forms and historical outcome reports remain qualified. No
   predictive efficacy, safety/medical/financial authority, coercive duties or source repair.
-- Dependencies: See [feature index](../feature_index.json); parent owns index/progress state.
-- Next: Independent acceptance review of the exact final branch HEAD, then merge.
-  `nextBatch` points to feat-053 (BPCT PDF166–230) without activating it. No push/PR performed.
+- Dependencies: See the feature index.
+- Next: Continue with selected feat-053 from updated `main`. `nextBatch` points to feat-053
+  (BPCT PDF166–230); no future feature was activated by this delivery.

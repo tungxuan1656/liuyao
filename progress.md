@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-052 merged
+
+**State**: done and merged to `main` in PR #79 at `a01d4d3d94d91196cd8c220c435dd8e4a2e7e77a`.
+**Done**: Published six BPCT application units: chapter 7 Thiên Thời, unnumbered Niên Thời, and chapters 9–12. Added 941 source-compared claims/citations and mapped 399 child dispositions beneath the existing six parent intervals. Corrected the chapter 12 close to PDF 164 and recorded PDF 165 as folio-only non-content.
+**Evidence**: Exact-head independent review returned `OK WITH NOTES`, no P0/P1/P2 findings. PR-head `verify` run 37423315939, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 2,342 tests (2,161 knowledge, 181 core); corpus `--check-books --check` and package-export checks passed. Workbox cap is measured at 5,570,560 bytes for the 5,523,385-byte integrated asset; all 18 precache entries remain.
+**Coverage**: Historical divination outcomes remain attributed claims, not efficacy evidence. Source review and certification gates remain open; contact-sheet inspection limits are recorded, and full-size inspection of every page is not claimed.
+**Blockers**: none for feat-052; unattributed layers and source discrepancies remain explicitly documented.
+**Next**: Continue with selected feat-053 from updated `main`.
+
 ## 2026-10-06 — feat-051 merged
 
 **State**: done and merged to `main` in PR #78 at `2d30586b7989c255209750b0bac23cd9efca30aa`.
