@@ -1,18 +1,18 @@
 {
   "schemaVersion": 2,
-  "id": "article-pbc-tap-quai",
+  "id": "article-ntt-intro-index",
   "type": "article",
-  "title": "PBC — Lời báo khuyết Tạp Quái",
+  "title": "NTT — Mục lục",
   "aliases": [],
   "topicIds": ["topic-classical-traditions"],
   "claims": [
     {
-      "id": "article-pbc-tap-quai-pbc-tap-quai-notice",
+      "id": "article-ntt-intro-index-ntt-intro-index-accounting",
       "kind": "author-interpretation",
-      "text": "Trang Tạp Quái chỉ nói văn nghĩa khó hiểu nhiều chỗ nên tùng khuyết; dưới vẫn có dòng Hệ Từ Hạ Truyện/chung. Giữ dấu kết bất thường này, không coi là Hệ Từ thêm hoặc cung cấp Tạp Quái vắng.",
-      "citationIds": ["citation-pbc-tap-quai-notice"],
+      "text": "Mục lục nối mở đầu tới 64 quẻ, không ghi phụ lục Hệ Từ riêng. Mục lục là navigation, không thay đối chiếu thân trang hoặc chứng bản truyền thống không có Hệ Từ.",
+      "citationIds": ["citation-ntt-intro-index-accounting"],
       "attribution": {
-        "author": "Phan Bội Châu"
+        "author": "Ngô Tất Tố"
       },
       "conditions": [
         "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
@@ -29,7 +29,7 @@
     "reviewer": "Codex worker — AI source comparison",
     "reviewedAt": "2026-10-06",
     "method": "source-comparison",
-    "evidenceCitationIds": ["citation-pbc-tap-quai-notice"],
+    "evidenceCitationIds": ["citation-ntt-intro-index-accounting"],
     "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
   }
 }

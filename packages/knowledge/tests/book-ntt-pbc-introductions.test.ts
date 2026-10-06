@@ -3,7 +3,7 @@ import locators from './fixtures/ntt-pbc-introduction-locators.json';
 import registry from '../../../docs/reviews/knowledge/expected-units.json';
 import manifest from '../data/manifest.json';
 import audit from '../reports/audit-status.json';
-import { getBookCitation, getBookRecord } from '../src/index';
+import { getBookCitation, getBookRecord, type BookClaim, type BookClaimV2 } from '../src/index';
 
 const unit = (id: string) => locators.find(u => u.id === id)!;
 const text = (id: string) => {
@@ -28,11 +28,13 @@ describe('feat-060 NTT/PBC introductory source comparison', () => {
     for (const id of u.recordIds) expect(getBookRecord(id)).toBeDefined();
     for (const id of u.claimIds) {
       const claim = u.recordIds
-        .flatMap(r => {
+        .flatMap<BookClaim | BookClaimV2>(r => {
           const owner = getBookRecord(r)!;
           return [
             ...owner.claims,
-            ...(owner.type === 'hexagram' ? owner.lines.flatMap(l => l.claims) : []),
+            ...(owner.type === 'hexagram'
+              ? owner.lines.flatMap<BookClaim | BookClaimV2>(l => [...l.claims])
+              : []),
           ];
         })
         .find(c => c.id === id)!;
@@ -85,11 +87,11 @@ describe('feat-060 NTT/PBC introductory source comparison', () => {
     expect(plates.figures!.map(f => f.labels.length)).toEqual([32, 32]);
     expect(text('pbc-thuyet-quai-chapter-01-gap')).toContain('Khuyết');
     expect(text('pbc-thuyet-quai-chapter-02-original-reading')).toContain('Độc tiết');
-    expect(text('pbc-thuyet-quai-chapters-03-11-notice')).toContain('chương3 đến11');
+    expect(text('pbc-thuyet-quai-chapters-03-11-notice')).toContain('chương 3 đến 11');
     expect(text('pbc-tu-quai-notice')).toContain('thông báo');
     expect(text('pbc-tap-quai-notice')).toContain('Hệ Từ Hạ Truyện/chung');
     expect(text('pbc-pham-le-and-cuong-linh-vi-circle-described')).toContain(
-      'không có tấm vòng64/vuông64',
+      'không có tấm vòng 64/vuông 64',
     );
   });
 
@@ -101,8 +103,67 @@ describe('feat-060 NTT/PBC introductory source comparison', () => {
     const notes = getBookRecord('article-pbc-endnotes')!;
     expect(notes.claims).toHaveLength(19);
     expect(
-      notes.claims.some(c => c.citationIds.includes('citation-pbc-q61-line-6-edition-note-21')),
+      notes.claims.some(c =>
+        c.citationIds.some(id => id === 'citation-pbc-q61-line-6-edition-note-21'),
+      ),
     ).toBe(false);
+  });
+
+  it('accounts for every assigned page without authoring the next body sections', () => {
+    for (const [source, pages] of [
+      ['ntt', [...Array.from({ length: 79 }, (_, i) => i + 1), 938]],
+      [
+        'pbc',
+        [
+          ...Array.from({ length: 26 }, (_, i) => i + 1),
+          ...Array.from({ length: 7 }, (_, i) => i + 649),
+        ],
+      ],
+    ] as const) {
+      const assigned = locators.filter(u => u.id.startsWith(source));
+      const covered = new Set(
+        assigned.flatMap(u =>
+          Array.from({ length: u.pdfPages[1]! - u.pdfPages[0]! + 1 }, (_, i) => u.pdfPages[0]! + i),
+        ),
+      );
+      expect([...covered].sort((a, b) => a - b)).toEqual(pages);
+    }
+    expect(cohort()).toHaveLength(23);
+    expect(cohort().reduce((total, id) => total + getBookRecord(id)!.claims.length, 0)).toBe(487);
+    expect(registry.groups.find(g => g.id === 'ntt-upper-divider')).toMatchObject({
+      kind: 'content',
+      pdfPageStart: 79,
+      pdfPageEnd: 79,
+    });
+    expect(unit('ntt-upper-divider-heading').kind).toBe('non-content');
+    expect(unit('ntt-upper-divider-explanation').kind).toBe('content');
+  });
+
+  it('retains the nine named NTT figures plus separately inspected inline symbols', () => {
+    const owner = getBookRecord('article-ntt-chu-xi-diagrams')!;
+    if (owner.schemaVersion !== 2) throw new Error('Expected V2 NTT diagrams');
+    expect(owner.figures).toHaveLength(12);
+    const named = registry.groups.filter(g => g.id.startsWith('ntt-figure-'));
+    expect(named).toHaveLength(9);
+    for (const g of named)
+      expect(owner.figures!.some(f => f.sourceUnitIds.includes(g.id))).toBe(true);
+    expect(text('ntt-chu-xi-diagrams-phuc-hi-64-orientation')).toMatch(/Kiền ở trái.*Khôn phải/);
+    expect(text('ntt-chu-xi-diagrams-van-vuong-eight-order-label-04')).toContain('con gái nhỏ');
+    expect(text('ntt-chu-xi-diagrams-note-51')).toMatch(/lặp.*Khôn\/Chấn/);
+    expect(text('ntt-chu-xi-diagrams-casting-symbols-label-01')).toContain('còn 26');
+    expect(unit('ntt-chu-xi-diagrams-hexagram-transformations-alternative-1').pdfPages).toEqual([
+      62, 63,
+    ]);
+  });
+
+  it('keeps each note and printed colophon attribution separate', () => {
+    expect(locators.filter(u => /^ntt-chu-xi-diagrams-note-\d{2}$/.test(u.id))).toHaveLength(57);
+    expect(locators.filter(u => /^ntt-cuong-linh-notes-\d{2}$/.test(u.id))).toHaveLength(12);
+    expect(text('ntt-cuong-linh-notes-08')).toContain('X/XX');
+    expect(text('ntt-cuong-linh-notes-11')).toContain('Chu Hy');
+    expect(text('ntt-colophon-938-printing')).toMatch(/05\/12\/2003.*quý I 2004/);
+    expect(text('ntt-editorial-introduction-evaluation')).toContain('không ký');
+    expect(text('ntt-dich-thuyet-cuong-linh-trinh-time')).toContain('Hai đoạn đầu 65 còn Trình Di');
   });
 
   it('keeps source-review and certification gates closed', () => {

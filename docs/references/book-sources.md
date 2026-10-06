@@ -1711,3 +1711,80 @@ traditional author identities, source label conflicts and global layer discovery
 remain for later audit/edition reconciliation. No predictive efficacy, modern
 medical/legal/safety/financial/political advice, calendar, UI or core behavior is
 released, and no audit or certification gate is closed as completed work.
+
+## Feat-060 NTT and PBC introductory source comparison
+
+The worker compared complete extraction with every individually opened assigned
+page image: NTT1–79/938 (80 pages) and PBC1–26/649–655 (33 pages). Each rendering
+was opened at full-page resolution,1.5x (NTT893×1263,PBC918×1188); no contact sheet
+or pre-existing anchor substitutes for this inspection. Boundary NTT80/937 and
+PBC27 were additionally opened. PBC24 was also opened rotated90 degrees clockwise
+for its sideways chart. Local `/tmp/feat060/inspection-artifacts.json` records
+per-page extraction/image hashes and dimensions against the supplied938-/655-page
+fingerprints. The [passage register](../reviews/knowledge/source-inventory.md#feat-060-ntt-and-pbc-introductory-passage-register)
+owns the source-unit identities, locators, finer dispositions and released mappings.
+This is source comparison, not whole-book visual review, separate audit or certification.
+
+PBC11–12 are two image-only4×8 plates, with header groups Càn1 through Khôn8,
+not blank pages. Their64 named cells remain in column order. The other inspected
+figures occur at19,21,24 and25. The circle/square64 figure is described on22–23
+but no separate corresponding plate is present in1–26; it is not reconstructed.
+PBC19's Vietnamese image reads _nhất thất_ where its Hà Đồ image and extraction
+support _nhị thất_. The source's Phàm LệI wings count and its final Cương Lĩnh
+value associations remain attributed positions, not harmonized author history,
+science, moral classifications of people or interpretation behavior.
+
+PBC649 labels chapter1 **Khuyết**, while chapter2 **Độc tiết** survives with Hán,
+reading, Vietnamese explanation and a separate philosophical Phụ Chú.650 explicitly
+leaves chapters3–11 out because the author finds the trigram imagery difficult.
+651 says the Tự Quái sequence explanations were translated at quẻ heads, leaving
+this separate translation omitted;652 leaves Tạp Quái untranslated and also prints
+an incongruous Hệ Từ Hạ ending label. Only these surviving notices are represented;
+no omitted wing is recreated. Chương Thâu's report of four missing manuscript
+chapters is a distinct edition-history statement, not a replacement for these notices.
+
+All21 PBC655 notes have dispositions. Existing note13/Bĩ discrepancy and
+note21/Trung Phu line6 claim/citation retain their owners without duplicate selections.
+Only the explicitly signed notes receive1953snake attribution; unsigned notes are
+not assigned automatically to Phan Bội Châu or the electronic editor. Notes1–3
+refer to the introductory Cấu passages on22–23. Remaining body-note attachment
+reconciliation outside the assigned pages is not claimed. Reported historical
+stories, including Vị Sinh, are not verified history, efficacy or advice.
+
+NTT's nine named introductory figures have V2 ordered labels and claim support;
+inline generation, note10's two quái and the casting-symbol legend are separate
+figures.32's top Hán labels are intrinsically blurred: the legible structural bands
+are recorded, but no complete per-name glyph transcription is claimed or fabricated.
+35's ring labels place Kiền left/Khôn right and Ly below/Khảm above, unlike the
+prose's compass orientation; the64 ring labels and unlabelled8×8 interior are
+kept distinct.40 calls both Ly and Khảm children _nhỏ_; these labels are not
+silently changed to middle children.43–45 retain the actual panels and repeated
+names, not calculator-derived transformations. Hồ Song Hồ's note55 at62–63
+explicitly distinguishes the charts from most Bản Nghĩa transformations.
+
+NTT's notes remain separate: six translator-introduction notes, six preface notes,
+57 diagram/procedure notes and12 Cương Lĩnh notes. The numbered resets are not
+one global note sequence. Named classical voices retain their authors through
+Ngô Tất Tố's translation; unsigned editorial6 is not identified solely from the
+colophon's Phan Cự Đệ introduction credit. The Trình Di Cương Lĩnh block crosses
+64 into the first two paragraphs of65 before the explicit Chu Hy block. Note15
+of the diagram section has an imperfect marker at24; notes50/51 repeat the same
+Chấn example despite different attached sentences. Note8 at78 preserves itsX/XX
+blurred-glyph notice. Other visible differences (55/25,Âm1/Dương2 versus
+Dương1/Âm2,Cấn in the âm-origin passages,Chấn Thủy/Đoài Dần and the printed
+26 remaining stalks for Lão Dương) are not repaired into rules or fixtures.
+
+Individually inspected79 includes substantive Giải Nghĩa below the Thượng Kinh
+heading. With coordinator approval, its existing parent ID becomes content and
+separate heading/prose children retain the original range and060→092 route;
+80's Càn body remains outside scope.937 contains only the website footer and938
+is a colophon.938 prints permit1678/CXB dated05/12/2003 and completion/deposit
+inQ1 2004, not an independently inferred publication year. The supplied volume's
+lack of a separate full Hệ Từ appendix is a source-evidence finding only, not a
+new domain claim; quoted fragments do not create that appendix. The earlier
+end-criticism references remain unlocated/unresolved.
+
+Original summaries and structured observations are released, not copied prose,
+source images, a diagram DSL, new calendar/interpretation logic or UI behavior.
+Prior authored records/citations remain semantically unchanged. Global layer
+rosters,17 exclusions and source-audit/certification gates stay unresolved/closed.

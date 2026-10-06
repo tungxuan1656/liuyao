@@ -188,7 +188,7 @@ describe('feat-057 question, experiment, chart and source-layer locators', () =>
     expect(
       locators.every(u => u.pdfPages.length === 2 && u.pdfPages.every(p => p >= 365 && p <= 428)),
     ).toBe(true);
-    expect(manifest.nextBatch.note).toMatch(/feat-060.*PBC\/NTT/);
+    expect(manifest.nextBatch.note).toMatch(/feat-061.*Hệ Từ Thượng.*PBC.*NHL/);
     const articles = manifest.releaseIds.filter(id =>
       /^article-bpct-(question-\d+|ha-tri|moving-lines-insertion)$/.test(id),
     );

@@ -55,6 +55,7 @@ New interpretation, calendar, or UI behavior.
 - Figures: use the implemented feat-101 version-2 `figures` contract. Preserve source order, orientation, labels and attributed alternatives with supporting claim IDs; do not store image bytes or invent a generic diagram DSL. Do not treat visual-anchor inventories as exhaustive inspections.
 - Exclusions: record the PBC Thuyết Quái first-chapter gap as the source presents it; do not reconstruct it. NTT has no separate full Hệ Từ appendix; do not infer missing content. Feature 084 remains a cross-reference only for matching technical fixtures, not a co-owner of these source sections. All new sources route author 060 → audit 092.
 - Planning: keep the inline plan; no API, migration, workspace, calendar or UI changes are in scope.
+- Source-supported correction approved by coordinator during implementation: NTT PDF79 includes substantive Giải Nghĩa below its Thượng Kinh heading. Reclassify `ntt-upper-divider` as content while retaining its ID/range/060→092 route, and add separate heading/prose children. PDF80 is boundary-only and remains outside authoring scope.
 
 ## Handoff
 

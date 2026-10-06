@@ -1,30 +1,32 @@
 {
   "schemaVersion": 2,
-  "id": "article-pbc-editorial-foreword",
+  "id": "article-ntt-colophon-938",
   "type": "article",
-  "title": "PBC — Lời giới thiệu của Huỳnh Thúc Kháng",
+  "title": "NTT — Colophon938",
   "aliases": [],
   "topicIds": ["topic-classical-traditions"],
   "claims": [
     {
-      "id": "article-pbc-editorial-foreword-pbc-editorial-foreword-evaluation",
+      "id": "article-ntt-colophon-938-ntt-colophon-938-credits",
       "kind": "author-interpretation",
-      "text": "Huỳnh Thúc Kháng khen bản diễn giải thiên về vũ trụ quan/nhân sinh quan thay vì chỉ bói số, trong đối chiếu Đông/Tây thời ông. Lời khen không xác nhận hiệu lực bói hoặc lịch sử độc lập.",
-      "citationIds": ["citation-pbc-editorial-foreword-evaluation"],
+      "text": "Colophon nêu Lữ Huy Nguyên chủ biên, Phan Cự Đệ giới thiệu, Nguyễn Văn Lưu xuất bản, Nguyễn Cừ bản thảo, ban biên tập/phòng chế bản. Các vai khác nhau không tự gán người giới thiệu 6 hoặc tác giả chú cổ.",
+      "citationIds": ["citation-ntt-colophon-938-credits"],
       "attribution": {
-        "author": "Huỳnh Thúc Kháng"
+        "author": "Colophon bản cung cấp",
+        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
       },
       "conditions": [
         "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
       ]
     },
     {
-      "id": "article-pbc-editorial-foreword-pbc-editorial-foreword-publication-framing",
+      "id": "article-ntt-colophon-938-ntt-colophon-938-printing",
       "kind": "author-interpretation",
-      "text": "Lời giới thiệu nói mười quyển nhỏ, 64 quẻ và giải nghĩa Hào/Tượng/Soán nhưng chưa in vội; trang 8 chỉ chữ ký Minh Viên Huỳnh Thúc Kháng. Không coi tuyên bố bao quát là chứng nhận từng lớp của PDF.",
-      "citationIds": ["citation-pbc-editorial-foreword-publication-framing"],
+      "text": "Colophon ghi 700 cuốn 16 × 24 cm, Công ty in Thương mại/Bộ Thương mại, Giấy TNKHXB 1678/CXB ngày 05/12/2003, in xong/nộp lưu chiểu quý I 2004. Chỉ ngày in/deposit in thực, không suy ra năm xuất bản khác hoặc quyền phân phối.",
+      "citationIds": ["citation-ntt-colophon-938-printing"],
       "attribution": {
-        "author": "Huỳnh Thúc Kháng"
+        "author": "Colophon bản cung cấp",
+        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
       },
       "conditions": [
         "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
@@ -42,8 +44,8 @@
     "reviewedAt": "2026-10-06",
     "method": "source-comparison",
     "evidenceCitationIds": [
-      "citation-pbc-editorial-foreword-evaluation",
-      "citation-pbc-editorial-foreword-publication-framing"
+      "citation-ntt-colophon-938-credits",
+      "citation-ntt-colophon-938-printing"
     ],
     "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
   }

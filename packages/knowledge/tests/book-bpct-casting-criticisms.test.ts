@@ -228,13 +228,13 @@ describe('feat-058 BPCT casting supplements and criticism source dispositions', 
         expect(c.conditions?.join(' ')).toMatch(/Không dùng làm phép lịch/);
     }
     expect(registry.groups.filter(g => g.authorFeatureId === 'feat-058')).toHaveLength(445);
-    expect(registry.counts.groups).toBe(3074);
+    expect(registry.counts.groups).toBe(3551);
     expect(registry.exclusions).toHaveLength(17);
     expect(registry.layers.every(l => l.rosterStatus === 'unresolved')).toBe(true);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
     expect(audit.complete).toBe(false);
-    expect(manifest.nextBatch.note).toMatch(/feat-060.*PBC\/NTT/);
+    expect(manifest.nextBatch.note).toMatch(/feat-061.*Hệ Từ Thượng.*PBC.*NHL/);
     expect(getBookSource('source-book-bpct')!.editions[0]?.sha256).toBe(
       '713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a',
     );
