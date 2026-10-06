@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 205, "released": 205, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 2579, "missingCitationIds": [] },
-  "citations": { "total": 2825 },
+  "records": { "authored": 206, "released": 206, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 2653, "missingCitationIds": [] },
+  "citations": { "total": 2899 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -357,7 +357,8 @@
         "term-branch-xu",
         "term-branch-hai",
         "article-bpct-front-voices",
-        "article-bpct-chapter-one-foundations"
+        "article-bpct-chapter-one-foundations",
+        "article-bpct-chapter-two-ca-quyet"
       ]
     },
     {
@@ -1655,9 +1656,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2203,
+        "required": 2204,
         "current": 84,
-        "missing": 2119,
+        "missing": 2120,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1666,8 +1667,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
         { "code": "unresolved-source-discovery", "count": 625 },
-        { "code": "missing-decision", "count": 2119 },
-        { "code": "released-claim-coverage-incomplete", "count": 2382 }
+        { "code": "missing-decision", "count": 2120 },
+        { "code": "released-claim-coverage-incomplete", "count": 2456 }
       ]
     },
     "certification": {
@@ -1675,7 +1676,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2203,
+        "required": 2204,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

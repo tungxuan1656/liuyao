@@ -64,11 +64,11 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Inspect all numbered Ca Quyết formulas, explanations, examples, tables, and notes on PDF 22–42.
-- [ ] Include the sparse PDF 42 page and its printed label 35 as a source unit.
-- [ ] Keep each formula and its explanation linked to exact page locators and the correct source voice.
-- [ ] Add regression assertions for every numbered unit, its continuation, and any explicit omission.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Inspect all numbered Ca Quyết formulas, explanations, examples, tables, and notes on PDF 22–42.
+- [x] Include the sparse PDF 42 page and its printed label 35 as a source unit.
+- [x] Keep each formula and its explanation linked to exact page locators and the correct source voice.
+- [x] Add regression assertions for every numbered unit, its continuation, and any explicit omission.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 4: Author chapter 3
 

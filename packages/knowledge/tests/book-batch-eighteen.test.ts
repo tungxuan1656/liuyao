@@ -108,3 +108,40 @@ describe('BPCT front voices and chapter-one evidence', () => {
     );
   });
 });
+
+import caQuyet from '../data/liuyao/bpct-chapter-two-ca-quyet.json';
+describe('BPCT chapter-two complete formulas', () => {
+  it('covers every numbered formula and subordinate roster, with own evidence', () => {
+    for (const unit of registry.groups.filter(g => g.id.startsWith('bpct-ch02-'))) {
+      expect(unit.recordIds).toContain(caQuyet.id);
+    }
+    expect(getBookRecord(caQuyet.id)).toEqual(caQuyet);
+    expect(caQuyet.claims.filter(c => c.id.endsWith('-formula'))).toHaveLength(29);
+    expect(caQuyet.claims.filter(c => c.id.endsWith('-rendering'))).toHaveLength(29);
+    expect(caQuyet.claims.filter(c => c.id.includes('note-'))).toHaveLength(3);
+    for (const claim of caQuyet.claims)
+      for (const id of claim.citationIds) expect(getBookCitation(id)).toBeDefined();
+  });
+  it('keeps full continuations, meaning differences, uncredited variants and folio-only 42', () => {
+    expect(
+      citations.citations.find(c => c.id === 'citation-bpct-ch02-xi-formula')?.location,
+    ).toMatchObject({
+      pdfPageStart: 31,
+      pdfPageEnd: 32,
+      printedPageStart: '24',
+      printedPageEnd: '25',
+    });
+    expect(caQuyet.claims.find(c => c.id.endsWith('xi-rendering'))?.text).toMatch(
+      /bỏ điều kiện gặp xung/,
+    );
+    expect(caQuyet.claims.find(c => c.id.includes('variants-reading'))?.attribution.author).toMatch(
+      /không ký/,
+    );
+    expect(caQuyet.claims.find(c => c.id.endsWith('folio-42-folio'))?.text).toMatch(
+      /chỉ có số in 35/,
+    );
+    expect(caQuyet.claims.find(c => c.id.endsWith('xix-prose'))?.text).toMatch(
+      /Vũ Thủy.*Kinh Trập/,
+    );
+  });
+});
