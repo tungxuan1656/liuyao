@@ -604,7 +604,7 @@
     {
       "id": "article-bpct-chapter-twelve-wealth-bpct-ch12-15-commentary",
       "kind": "author-interpretation",
-      "text": "Vương Hồng Tự bác chú cũ đọc Huynh hóa Quan rồi khắc Thế: Huynh động khắc Thế hóa Quan hồi đầu khắc lại không hao/kiện. Ông nói đã thấy nghiệm; đọc liên là Huynh/Quan cùng động mới thị phi. Giữ lời trải nghiệm là testimony, không chứng minh hiệu lực.",
+      "text": "Vương Hồng Tự bác chú cũ đọc Huynh hóa Quan rồi khắc Thế: Huynh động khắc Thế hóa Quan hồi đầu khắc lại không hao/kiện. Ông nói đã thấy nghiệm; đọc liên là Huynh/Quan cùng động mới thị phi. Giữ lời trải nghiệm là lời chứng thuật của nguồn, không chứng minh hiệu lực.",
       "citationIds": ["citation-bpct-ch12-15-commentary"],
       "attribution": {
         "author": "Vương Hồng Tự",
@@ -1654,7 +1654,7 @@
     {
       "id": "article-bpct-chapter-twelve-wealth-bpct-ch12-folio-165-folio",
       "kind": "author-interpretation",
-      "text": "PDF165 được kiểm tra ảnh: chỉ số in139, không có câu kết hoặc đoạn văn. Câu kết đầy đủ ở164; giữ trang này là non-content dưới chương12, không suy mất đoạn hay nhập chương13 ở166.",
+      "text": "PDF165 được kiểm tra ảnh: chỉ số in139, không có câu kết hoặc đoạn văn. Câu kết đầy đủ ở164; giữ trang này là trang không có nội dung dưới chương12, không suy mất đoạn hay nhập chương13 ở166.",
       "citationIds": ["citation-bpct-ch12-folio-165-folio"],
       "attribution": {
         "author": "Phần chèn trong bản cung cấp — không ký tên",
@@ -1806,8 +1806,11 @@
       "citation-bpct-ch12-closing-rendering",
       "citation-bpct-ch12-note-01-discussion",
       "citation-bpct-ch12-note-02-discussion",
-      "citation-bpct-ch12-folio-165-folio"
+      "citation-bpct-ch12-folio-165-folio",
+      "citation-bpct-front-credits-compilation",
+      "citation-bpct-front-credits-phu",
+      "citation-bpct-front-credits-translation"
     ],
-    "note": "Complete assigned passages read; contact sheets covering PDF100–163 and individual pages164–166 inspected, with focused individual137/143. This is not individual full-size review of every page. Cầu Tài BPCT — chương 12: all mapped numbered passages, source layers, conditions, notes and illustrations compared. BPCT SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a, 467 pages. No diagram or table in these units. Original and Hán-Việt reading are summarized together; independently printed Vietnamese meaning is separate (citation enum lacks translation). Generic front credits do not certify individual verse authorship. Supplements and unspecific attributions remain explicit. No copied source text/images, source repair, new behavior or independent verification/certification; later layer discovery and feat-086 audit remain open."
+    "note": "Complete assigned passages read; contact sheets covering PDF100–163 and individual pages164–166 inspected, with focused individual137/143. This is not individual full-size review of every page. Cầu Tài BPCT — chương 12: all mapped numbered passages, source layers, conditions, notes and illustrations compared. BPCT SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a, 467 pages. No diagram or table in these units. Original and Hán-Việt reading are summarized together; independently printed Vietnamese meaning is separate (citation enum lacks translation). Generic front credits do not certify individual verse authorship. Supplements and unspecific attributions remain explicit. No copied source text/images, source repair, new behavior or independent verification/certification; later layer discovery and feat-086 audit remain open. Attribution rechecked against full extracted text and individual images at PDFs1–3; shared front-credit citations are review evidence, not newly authored front units."
   }
 }

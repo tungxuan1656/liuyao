@@ -923,7 +923,7 @@ describe('evidence-derived audit gates', () => {
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 625,
+      groups: 1024,
       exclusions: 17,
     });
     expect(registry.layers.every(layer => layer.rosterStatus === 'unresolved')).toBe(true);

@@ -17,7 +17,7 @@
 - Keep author prose, translator notes, source examples, and reported outcomes distinct. Do not imply that a reported result is verified or establishes efficacy.
 - Keep source summaries original and follow `LICENSING.md`; do not copy source prose or images.
 - Preserve prior reviewed claims unless new source evidence requires a narrow correction. Reuse concepts without rewriting their existing records unnecessarily.
-- Do not add interpretation, calendar, classifier, UI, audit, or certification behavior. Keep global review gates open.
+- Do not add interpretation, calendar, classifier, UI, audit, or certification behavior. Keep global review and certification gates closed.
 - Measure the fresh integrated bundle after knowledge rebuild. Raise only the per-file Workbox cap when the measured asset exceeds it; retain the main asset in precache and preserve all other PWA behavior.
 
 ## Task 1: Inspect and map assigned source units
@@ -122,7 +122,7 @@
 - [x] Cover every passage, question-specific role, condition, example, disagreement, and note on PDF 156–165.
 - [x] Include the closing prose on PDF 164 and the image-confirmed folio-only non-content page 165 under the unchanged chapter-12 parent (supervisor-approved source correction).
 - [x] Keep source claims about gain/loss attributed and conditional; do not present them as validated predictions.
-- [x] Add tests for full page bounds, closing fragment, notes, attribution, and exclusions.
+- [x] Add tests for full page bounds, closing prose, folio-only page, notes, attribution, and exclusions.
 - [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 8: Reconcile publication, registry, and final verification
@@ -137,12 +137,52 @@
 - Regenerate through existing scripts: `packages/knowledge/src/book-release.generated.json` and `packages/knowledge/reports/`
 - Update: `features/feat-052.md`
 
-- [ ] Register only source-compared records and citations. Preserve all previous record IDs, release contracts, and unrelated registry obligations.
-- [ ] Account for every assigned unit, layer, note, example, table, and diagram in inventory and expected-unit dispositions.
-- [ ] Bind the registry to the exact source-inventory bytes and retain unresolved discovery/audit states.
-- [ ] Set `nextBatch` to feat-053 and test the transition.
-- [ ] Verify old released claims and citations remain semantically identical and no local PDF path or copied source text enters the release.
-- [ ] Measure the fresh integrated asset after rebuilding knowledge. Change only the Workbox per-file cap if needed; record bytes, cap, headroom, and precache inclusion.
-- [ ] Run `./init.sh`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `pnpm --dir apps/web run check:package-exports`.
-- [ ] Inspect the complete diff. Record verification results, remaining source limits, and the independent-review handoff; keep the feature active through review and merge.
-- [ ] Commit the final verification checkpoint.
+- [x] Register only source-compared records and citations. Preserve all previous record IDs, release contracts, and unrelated registry obligations.
+- [x] Account for every assigned unit, layer, note, example, table, and diagram in inventory and expected-unit dispositions.
+- [x] Bind the registry to the exact source-inventory bytes and retain unresolved discovery/audit states.
+- [x] Set `nextBatch` to feat-053 and test the transition.
+- [x] Verify old released claims and citations remain semantically identical and no local PDF path or copied source text enters the release.
+- [x] Measure the fresh integrated asset after rebuilding knowledge. Change only the Workbox per-file cap if needed; record bytes, cap, headroom, and precache inclusion.
+- [x] Run `./init.sh`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `pnpm --dir apps/web run check:package-exports`.
+- [x] Inspect the complete diff. Record verification results, remaining source limits, and the independent-review handoff; keep the feature active through review and merge.
+- [x] Commit the final verification checkpoint.
+
+## Checkpoint Evidence And Review Handoff
+
+- Task1 unit map: `debc1e2`; fingerprint/page count verified and complete passage/visual
+  inspection boundaries recorded in the canonical inventory before authoring.
+- Task2 weather: `443e876`; focused217 tests and supplied-book corpus/freshness checks passed.
+- Task3 unnumbered Niên Thời: `e08690c`; focused401 tests and corpus/freshness passed.
+- Task4 life/inserted essay: `c60d5cb`; focused964 tests and corpus/freshness passed.
+- Task5 fame: `238fba2`; focused1093 tests and corpus/freshness passed.
+- Task6 office: `b5979cf`; focused1213 tests and corpus/freshness passed.
+- Task7 wealth: `29c7643`; focused1398 tests and corpus/freshness passed.
+- Final reconciliation: focused1798 tests; all2161 knowledge and181 core tests passed through
+  `./init.sh`, as did format, lint, length, typecheck, builds and package exports. Explicit
+  `validate:corpus --check-books --check` and web `check:package-exports` passed.
+- Existing fixed-census/nextBatch assertions in eight package tests were updated only to
+  the new224-record/4360-claim/1024-group/feat-053 totals. One intermediate full run failed
+  those nine stale assertions; the corrected focused and full runs pass. Concurrency stays2.
+- Before increasing the cap, fresh knowledge/web builds measured the final main asset at
+  5,523,385 bytes and Workbox rejected the old4,456,448-byte limit. Only the per-file cap
+  and its measurement comment changed to5,570,560 bytes; reserve47,175. The successful
+  generated SW includes `assets/index-D8w0dryh.js` and all18 precache entries. Other PWA
+  settings remain identical. No chunking or lazy loading was introduced.
+- All218 previous released records and3665 previous citations remain semantically identical;
+  prior authored record files remain byte-identical. All619 unrelated registry groups,
+  all17 exclusions and all layer definitions remain unchanged. The six parent intervals
+  stay intact;399 source-inspected children bind the405 assigned obligations.
+- Registry revision36 binds inventory SHA256
+  `c9d63e3edc8c4bc0cb060c2838272fcb0d207f1c65e3fb0e714dad8b6df92e9c`.
+  Source review/certification remain closed with no new audit or approval decisions.
+- Inspection: full extracted101–165 plus adjacent100/166 and attribution1–3; contact
+  sheets100–163; individual1–3,137,143,164–166. No individual-full-size inspection of
+  every application page is claimed. Source bounds, discrepancies and limitations stay in
+  canonical inventory/book-sources documents. PDF165's folio-only correction was explicitly
+  approved by the supervisor; no missing closing content is inferred.
+- Full diff and170 local documentation routes checked. Projection and integrated asset
+  contain no local PDF metadata/paths or source files. The asset still contains the existing
+  `localInputPath` rejection-guard string, not an exposed field.
+- Handoff: implementation/source comparison and local verification complete; feature remains
+  active pending independent acceptance review and merge. Parent owns feature_index/progress;
+  neither was edited. No push/PR or corpus certification performed.

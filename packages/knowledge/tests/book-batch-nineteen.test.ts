@@ -1,4 +1,7 @@
 import { describe, expect, it } from 'vitest';
+import sourceLocators from './fixtures/bpct-applications-locators.json';
+import manifest from '../data/manifest.json';
+import audit from '../reports/audit-status.json';
 import registry from '../../../docs/reviews/knowledge/expected-units.json';
 import nien from '../data/liuyao/bpct-nien-thoi.json';
 import life from '../data/liuyao/bpct-chapter-nine-life.json';
@@ -183,7 +186,7 @@ describe('feat-052 life passages, separate question roles and inserted essay', (
       /Tài hợp Thế không luận/,
     );
     expect(life.claims.find(c => c.id.endsWith('18-rejected-periods-discussion'))?.text).toMatch(
-      /30 năm.*60 năm.*testimony/,
+      /30 năm.*60 năm.*lời chứng thuật của nguồn/,
     );
     expect(registry.groups.some(g => g.id === 'bpct-ch09-81')).toBe(false);
   });
@@ -285,7 +288,7 @@ describe('feat-052 wealth conditions, dissent and folio-only165', () => {
       /chưa chắc nghiệm/,
     );
     expect(wealth.claims.find(c => c.id.endsWith('15-commentary'))?.text).toMatch(
-      /testimony.*không chứng minh/,
+      /lời chứng thuật của nguồn.*không chứng minh/,
     );
     expect(wealth.claims.find(c => c.id.endsWith('32-commentary'))?.text).toMatch(
       /quần áo\/sách.*dụng cụ.*tiền\/thực phẩm/,
@@ -326,5 +329,54 @@ describe('feat-052 wealth conditions, dissent and folio-only165', () => {
       pdfPageStart: a,
       pdfPageEnd: b,
     });
+  });
+});
+
+describe('feat-052 exact pre-authoring layer locator fixtures and release reconciliation', () => {
+  it.each(sourceLocators)(
+    'compares every citation for $id to independently mapped source layers',
+    unit => {
+      const record = checkpoints.find(x => unit.id.startsWith(x.prefix))!.record;
+      const own = record.claims.filter(
+        c =>
+          c.id.startsWith(`${record.id}-${unit.id}-`) &&
+          ['verse', 'rendering', 'commentary', 'discussion', 'identity', 'original', 'folio'].some(
+            suffix => c.id === `${record.id}-${unit.id}-${suffix}`,
+          ),
+      );
+      expect(own.length).toBeGreaterThan(0);
+      for (const claim of own) {
+        const suffix = claim.id.slice(`${record.id}-${unit.id}-`.length);
+        let expected = unit.commentaryPages;
+        if (suffix === 'verse' || suffix === 'original')
+          expected = unit.originalReadingPages ?? unit.commentaryPages;
+        if (suffix === 'rendering') expected = unit.meaningPages;
+        if (unit.id === 'bpct-ch09-supplement-closing')
+          expected = suffix === 'original' ? [138, 138] : [141, 141];
+        expect(expected).not.toBeNull();
+        for (const cid of claim.citationIds) {
+          const location = getBookCitation(cid)!.location;
+          expect([location.pdfPageStart, location.pdfPageEnd]).toEqual(expected);
+        }
+      }
+    },
+  );
+  it('accounts for405 assigned obligations without closing later review gates or changing other groups', () => {
+    expect(sourceLocators).toHaveLength(399);
+    expect(registry.groups.filter(g => g.authorFeatureId === 'feat-052')).toHaveLength(405);
+    expect(audit.featureCoverage['feat-086']).toEqual({ required: 405, current: 0 });
+    expect(audit.complete).toBe(false);
+    expect(audit.gates.sourceReview.status).toBe('closed');
+    expect(audit.gates.certification.status).toBe('closed');
+    expect(manifest.nextBatch.note).toMatch(/feat-053.*PDF166–230/);
+    for (const { record } of checkpoints) {
+      expect(record.review.evidenceCitationIds).toContain('citation-bpct-front-credits-phu');
+      expect(record.review.evidenceCitationIds).toContain(
+        'citation-bpct-front-credits-translation',
+      );
+    }
+    expect(citations.citations).toHaveLength(941);
+    const ids = checkpoints.flatMap(x => x.record.claims.flatMap(c => c.citationIds));
+    expect(new Set(ids).size).toBe(941);
   });
 });
