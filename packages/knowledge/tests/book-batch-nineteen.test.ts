@@ -1,11 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import registry from '../../../docs/reviews/knowledge/expected-units.json';
 import nien from '../data/liuyao/bpct-nien-thoi.json';
+import life from '../data/liuyao/bpct-chapter-nine-life.json';
 import weather from '../data/liuyao/bpct-chapter-seven-weather.json';
 import citations from '../data/citations/batch-nineteen-advanced.json';
 import { getBookCitation, getBookRecord, listBookSources } from '../src/index';
 
 const checkpoints = [
+  { prefix: 'bpct-ch09-', parent: 'bpct-part1-ch09', record: life, bounds: [119, 141] },
   { prefix: 'bpct-nien-', parent: 'bpct-part1-nien-thoi', record: nien, bounds: [111, 118] },
   { prefix: 'bpct-ch07-', parent: 'bpct-part1-ch07', record: weather, bounds: [101, 110] },
 ];
@@ -145,6 +147,57 @@ describe('feat-052 unnumbered Niên Thời', () => {
     ['36-rendering', 118, 118],
   ])('retains exact continuation %s', (suffix, a, b) => {
     expect(getBookCitation(`citation-bpct-nien-${suffix}`)?.location).toMatchObject({
+      pdfPageStart: a,
+      pdfPageEnd: b,
+    });
+  });
+});
+
+describe('feat-052 life passages, separate question roles and inserted essay', () => {
+  it('covers80 verses and meanings, five notes, six question contexts, and thirty bilingual supplement items', () => {
+    expect(life.claims.filter(c => c.id.endsWith('-verse'))).toHaveLength(80);
+    expect(
+      life.claims.filter(c => c.id.endsWith('-rendering') && !c.id.includes('supplement')),
+    ).toHaveLength(80);
+    expect(life.claims.filter(c => c.id.includes('-note-'))).toHaveLength(5);
+    expect(registry.groups.filter(g => g.parentId === 'bpct-ch09-18')).toHaveLength(6);
+    expect(life.claims.filter(c => /supplement-\d+-original$/.test(c.id))).toHaveLength(30);
+    expect(life.claims.filter(c => /supplement-\d+-rendering$/.test(c.id))).toHaveLength(30);
+    for (const c of life.claims.filter(c => c.id.includes('-supplement'))) {
+      expect(c.attribution.author).toMatch(/không ký tên/);
+      expect(getBookCitation(c.citationIds[0]!)?.textLayer).toBe('supplement');
+    }
+    expect(life.claims.find(c => c.id.endsWith('supplement-08-rendering'))?.text).toMatch(
+      /keo kiệt.*khác nghĩa nghèo/,
+    );
+    expect(life.claims.find(c => c.id.endsWith('51-examples-discussion'))?.text).toMatch(
+      /Không cổ vũ tự tử/,
+    );
+    expect(life.claims.find(c => c.id.endsWith('56-commentary'))?.text).toMatch(
+      /Tài hợp Thế không luận/,
+    );
+    expect(life.claims.find(c => c.id.endsWith('18-rejected-periods-discussion'))?.text).toMatch(
+      /30 năm.*60 năm.*testimony/,
+    );
+    expect(registry.groups.some(g => g.id === 'bpct-ch09-81')).toBe(false);
+  });
+  it.each([
+    ['03-verse', 119, 120],
+    ['18-commentary', 123, 124],
+    ['23-verse', 124, 125],
+    ['36-rendering', 128, 128],
+    ['47-rendering', 130, 130],
+    ['57-commentary', 131, 132],
+    ['62-commentary', 133, 133],
+    ['71-commentary', 135, 135],
+    ['76-verse', 135, 136],
+    ['80-rendering', 136, 137],
+    ['supplement-19-original', 137, 137],
+    ['supplement-19-rendering', 140, 140],
+    ['supplement-closing-original', 138, 138],
+    ['supplement-closing-rendering', 141, 141],
+  ])('preserves full layer continuation %s', (suffix, a, b) => {
+    expect(getBookCitation(`citation-bpct-ch09-${suffix}`)?.location).toMatchObject({
       pdfPageStart: a,
       pdfPageEnd: b,
     });

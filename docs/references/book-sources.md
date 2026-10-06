@@ -1065,3 +1065,31 @@ question roles. The geographic examples Tí/Tề, Sửu/Ngô, Dần/Yên are not
 Historical omen, dragon, earthquake, disease, warfare and imperial-administration accounts
 remain author testimony, not verified events, efficacy, modern politics or safety advice.
 The existing year/day/weather terms are cross-references, not merged source-unit identities.
+
+### Feat-052 Thân Mệnh and inserted lifetime essay
+
+The [life article](../../packages/knowledge/data/liuyao/bpct-chapter-nine-life.json) covers80
+numbered passages and all attached notes at PDF119–137, then the distinct inserted essay at
+137–141 (whole chapter printed101–123). Full extracted context and contact sheets were read;
+individual137 confirms the red inserted heading, website credit and30-item original roster.
+Thirty separately located Vietnamese items start at138 and end141; their individual translator
+is not identified. The essay is not verse81, Vương Hồng Tự's commentary or a signed Vĩnh Cao note.
+Note1 attaches to13,2 to25,3 to41,4 to43,5 to53. No table/diagram occurs.
+
+Six separate contexts in18 cover wealth, office, children, old age, lifespan and rejected
+periods. The rejection of Dịch Lâm Bổ Di's30/30/60-year scheme is the author's testimony,
+not proof of a replacement's efficacy. The inserted essay's item8 says a poor person in a rich
+house in the Hán source but the Vietnamese says a miser in a rich house. Other awkward/malformed
+words and repeated negatives are retained as limitations, not reconstructed critical text.
+Items19–23 of the supplement qualify each relative's Thế role, and20 allows fame without office;
+these are that supplement's opinions, not a rewrite of the80 main passages.
+
+Observed name differences remain source-specific:37 has Quách Uy in the phú versus Quách Anh
+in reading/meaning;42's Trần labels differ from its Trần Bình commentary;45's Hứa Tử Hòa differs
+from Hứa Bình Hòa;65's Lý Lệnh Bá differs from Lý Ngụy Công.58's Long/Phúc phrase is rendered
+using Long/Lộc Mã and inconsistent spouse wording.75's lung/voice,76's milk and all health,
+lifespan, disability, birth, marriage, adultery, rank and character claims stay historical views,
+not diagnoses, forecasts, facts about current people or ethical obligations.51's suicide account
+and53/55's fidelity/coercion language do not advise self-harm, victim blame or forced marriage.
+Historical examples are separately cited reports, never verified efficacy. No source correction,
+modern calendar, interpretation engine, psychological/medical assessment or global approval is added.

@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 220, "released": 220, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 3690, "missingCitationIds": [] },
-  "citations": { "total": 3936 },
+  "records": { "authored": 221, "released": 221, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 4059, "missingCitationIds": [] },
+  "citations": { "total": 4305 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -452,7 +452,8 @@
         "article-bpct-chapter-five-07-12",
         "article-bpct-chapter-five-13-18",
         "article-bpct-chapter-seven-weather",
-        "article-bpct-nien-thoi"
+        "article-bpct-nien-thoi",
+        "article-bpct-chapter-nine-life"
       ]
     },
     {
@@ -1670,9 +1671,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2681,
+        "required": 2682,
         "current": 84,
-        "missing": 2597,
+        "missing": 2598,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1681,8 +1682,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1024 },
-        { "code": "missing-decision", "count": 2597 },
-        { "code": "released-claim-coverage-incomplete", "count": 3493 }
+        { "code": "missing-decision", "count": 2598 },
+        { "code": "released-claim-coverage-incomplete", "count": 3862 }
       ]
     },
     "certification": {
@@ -1690,7 +1691,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2681,
+        "required": 2682,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

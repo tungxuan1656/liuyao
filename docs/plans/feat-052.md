@@ -76,11 +76,11 @@
 - Test: `packages/knowledge/tests/book-batch-nineteen.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover all passages, question roles, conditions, examples, disagreements, and notes on PDF 119–141.
-- [ ] Keep personal-life statements qualified and attributed; do not turn reported outcomes into efficacy claims or general rules.
-- [ ] Reuse existing terms and records where supported without changing earlier claims unnecessarily.
-- [ ] Add tests for all mapped source units, notes, exact page bounds, attribution, and withheld claims.
-- [ ] Run focused tests and the corpus validator; commit this checkpoint.
+- [x] Cover all passages, question roles, conditions, examples, disagreements, and notes on PDF 119–141.
+- [x] Keep personal-life statements qualified and attributed; do not turn reported outcomes into efficacy claims or general rules.
+- [x] Reuse existing terms and records where supported without changing earlier claims unnecessarily.
+- [x] Add tests for all mapped source units, notes, exact page bounds, attribution, and withheld claims.
+- [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 5: Author chapter 10 — Cầu Danh
 
