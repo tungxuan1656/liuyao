@@ -193,7 +193,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
   } finally {
     rmSync(temporary, { recursive: true, force: true });
   }
-}, 90_000);
+}, 60_000);
 
 it('projects only selected records and reachable citation editions without local paths', () => {
   const claim = (id, citationIds = []) => ({ id, kind: 'structural-fact', text: id, citationIds });

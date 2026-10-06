@@ -84,10 +84,12 @@ New interpretation, calendar, or UI behavior.
 - Final `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passes.
 - Final `pnpm --dir apps/web run check:package-exports` passes checker and package type compilation.
 - PR #78's first exact-head `verify` run hit the 60-second Vitest timeout in
-  `book-generator.test.mjs` after 67.6 seconds under full-suite load; it did not report a
-  failed assertion. The isolated test passed in 24.0 seconds locally. Its timeout is now 90
-  seconds; a fresh `./init.sh` passes, including all 363 knowledge and 181 core tests. CI must
-  pass again at the updated exact head before merge.
+  `book-generator.test.mjs` after 67.6 seconds under full-suite load, without a failed assertion.
+  After raising that timeout, a second run completed all 363 assertions but failed with a Vitest
+  worker `onTaskUpdate` RPC timeout. Limiting the knowledge suite to two workers passed locally
+  in 61.8 seconds (363 tests); the test-specific timeout is restored to 60 seconds. The package
+  test script now caps workers to reduce contention. Fresh `./init.sh` passes: 363 knowledge and
+  181 core tests. Exact-head CI must pass before merge.
 - The first final full test run found two stale assumptions: all authored records were V1, and
   a synthetic record's layer scope equaled one group rather than its edition/record closure.
   Tests now dispatch V1/V2 and use the existing layer resolver; focused 28-test correction and
