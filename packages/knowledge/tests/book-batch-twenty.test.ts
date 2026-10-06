@@ -142,3 +142,17 @@ describe('feat-053 loss qualifications', () => {
     expect(record).not.toHaveProperty('figures');
   });
 });
+
+describe('feat-053 travel context and source discrepancies', () => {
+  it('does not invent22, flatten Phụ/Phúc, or make all travel use Thế', () => {
+    const record = getBookRecord('article-bpct-chapter-fourteen-travel')!;
+    const text = (suffix: string) => record.claims.find(c => c.id.endsWith(suffix))!.text;
+    expect(text('bpct-ch14-opening-verse')).toMatch(/nhãn23.*không.*22/i);
+    expect(text('bpct-ch14-13-verse')).toMatch(/Tài\/Phụ/);
+    expect(text('bpct-ch14-13-commentary')).toMatch(/Tài\/Phúc.*giữ khác lớp/i);
+    expect(text('bpct-ch14-16-rendering')).toMatch(/Thế khắc Thế.*không sửa ngầm/);
+    expect(text('bpct-ch14-25-commentary')).toMatch(/con cháu dùng Tử.*không mặc định Thế/);
+    expect(text('bpct-ch14-18-commentary')).toMatch(/quyền quý riêng.*Tử động khắc Quan/);
+    expect(text('bpct-ch14-note-01-discussion')).toMatch(/xung Thế.*xung hào.*hợp/);
+  });
+});

@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 225, "released": 225, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 4480, "missingCitationIds": [] },
-  "citations": { "total": 4726 },
+  "records": { "authored": 226, "released": 226, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 4562, "missingCitationIds": [] },
+  "citations": { "total": 4808 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -457,7 +457,8 @@
         "article-bpct-chapter-ten-fame",
         "article-bpct-chapter-eleven-office",
         "article-bpct-chapter-twelve-wealth",
-        "article-bpct-chapter-thirteen-loss"
+        "article-bpct-chapter-thirteen-loss",
+        "article-bpct-chapter-fourteen-travel"
       ]
     },
     {
@@ -1675,9 +1676,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2962,
+        "required": 2963,
         "current": 84,
-        "missing": 2878,
+        "missing": 2879,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1686,8 +1687,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1300 },
-        { "code": "missing-decision", "count": 2878 },
-        { "code": "released-claim-coverage-incomplete", "count": 4283 }
+        { "code": "missing-decision", "count": 2879 },
+        { "code": "released-claim-coverage-incomplete", "count": 4365 }
       ]
     },
     "certification": {
@@ -1695,7 +1696,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2962,
+        "required": 2963,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

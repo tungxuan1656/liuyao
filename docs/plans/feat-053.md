@@ -61,10 +61,10 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Cover passages, travel conditions, examples, notes, and source layers on PDF 176–183.
-- [ ] Preserve the observed opening label 23; do not infer chapter absence from numbering.
-- [ ] Add locator, unit identity, attribution, and non-authority tests.
-- [ ] Run focused tests and corpus freshness checks; commit checkpoint.
+- [x] Cover passages, travel conditions, examples, notes, and source layers on PDF 176–183.
+- [x] Preserve the observed opening label 23; do not infer chapter absence from numbering.
+- [x] Add locator, unit identity, attribution, and non-authority tests.
+- [x] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 4: Author chapters 15–16 — Cầu Sư and Học Quán
 

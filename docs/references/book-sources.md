@@ -1171,3 +1171,19 @@ means Thế/Quỷ, not every useful-spirit question. Clause37 switches to Phụ 
 clothes/documents and Tử for animals. Historical identity, theft and capture assertions are
 not evidence of guilt, verified outcomes or safe pursuit instructions. No prior released record
 or citation is rewritten; later feat-087 audit, separate verification and certification stay open.
+
+### Feat-053 travel applications — chapter14
+
+The [travel article](../../packages/knowledge/data/liuyao/bpct-chapter-fourteen-travel.json)
+covers PDF176–183, printed148–155: opening,27 clauses and note1. The heading actually
+prints23 under chapter14; no missing22 is inferred. Item7 has no independent Vietnamese
+meaning, while item27's meaning extends to183. Item1 commentary crosses176–177, item10
+original/reading crosses178–179, and item13 commentary starts180 rather than179.
+Item13 phú names Tài/Phụ directions while commentary names Tài/Phúc; item16 meaning
+prints Thế against Thế where phú/reading has Thê against Thế. Neither is silently repaired.
+Note1 belongs to item10 and distinguishes xung Thế from xung the combining line. Roles
+remain self/destination/intervening route or companion, with item25 requiring the traveler’s
+actual relation and item18 excluding visits to officials from its favorable Phúc context.
+Travel, weather, theft, danger and trading outcomes remain historical claims, never route,
+safety, suspect-profile, calendar or investment authority. Inspection limits are those of the
+feat-053 loss section; the source-unit map and release are not later audit approval.

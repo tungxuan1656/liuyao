@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 38,
+  "registryRevision": 39,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "c93ce9e8d92cfb8362ff15b971b56ce3c32fb51d684ce2ed67d892531b776631"
+    "sha256": "541909b429eab9ecabcc82d73ffe6d0e32aa4ef52b3280e10a22d50040117276"
   },
   "counts": {
     "overviewCells": 192,
@@ -3868,7 +3868,8 @@
         "layer-bpct-author-commentary",
         "layer-bpct-translator-note"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-part1-ch15",
@@ -22454,7 +22455,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-01",
@@ -22471,7 +22473,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-02",
@@ -22488,7 +22491,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-03",
@@ -22505,7 +22509,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-04",
@@ -22522,7 +22527,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-05",
@@ -22539,7 +22545,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-06",
@@ -22556,7 +22563,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-07",
@@ -22569,7 +22577,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-author-commentary"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-08",
@@ -22586,7 +22595,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-09",
@@ -22603,7 +22613,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-10",
@@ -22620,7 +22631,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-11",
@@ -22637,7 +22649,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-12",
@@ -22654,7 +22667,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-13",
@@ -22671,7 +22685,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-14",
@@ -22688,7 +22703,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-15",
@@ -22705,7 +22721,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-16",
@@ -22722,7 +22739,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-17",
@@ -22739,7 +22757,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-18",
@@ -22756,7 +22775,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-19",
@@ -22773,7 +22793,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-20",
@@ -22790,7 +22811,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-21",
@@ -22807,7 +22829,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-22",
@@ -22824,7 +22847,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-23",
@@ -22841,7 +22865,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-24",
@@ -22858,7 +22883,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-25",
@@ -22875,7 +22901,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-26",
@@ -22892,7 +22919,8 @@
         "layer-bpct-translation",
         "layer-bpct-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch14-27",
@@ -22905,7 +22933,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-original-text", "layer-bpct-translation"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch15-opening",
@@ -26049,7 +26078,8 @@
       "authorFeatureId": "feat-053",
       "auditFeatureId": "feat-087",
       "layerScopeIds": ["layer-bpct-translator-note"],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-bpct-chapter-fourteen-travel"]
     },
     {
       "id": "bpct-ch15-note-01",
