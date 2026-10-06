@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-058 merged
+
+**State**: done and merged to `main` in PR #86 at `914bef4d7e98bd5784303a00cf37261b01e9abbe`; reviewed exact head `93f9e943fe0b0a2fe2b3c995b5b2f9ea38fe2fdf`.
+**Done**: Published 19 BPCT casting-supplement and criticism records for PDF 429–466, with 328 new source-attributed claims/citations and 329 dispositions including one reused note. Preserved source layers, repeated/conflicting labels, unprinted sections and differing printed folios without inference.
+**Evidence**: Independent exact-head review returned `OK`, no findings. PR verify run `37504128763`/job `112408327418`, Cloudflare Pages, and GitGuardian passed. The pre-push `./init.sh` passed 4,499 tests (4,318 knowledge, 181 core); corpus validation and package-export/preservation checks passed. The 10,384,705-byte integrated asset fits the 10 MiB Workbox cap with 101,055 bytes headroom; all 18 precache entries remain.
+**Coverage**: Section II's title claims 64 hexagrams/384 lines, but the supplied pages show only eight named entries/48 rows before IV. The other56 obligations remain unresolved pending source audit/edition reconciliation; they are not represented as source-reported omissions or invented entries. The cohort adds325 registry units; 445 obligations total with389 mapped. Source audit feat-091, global review, and certification remain open; no efficacy or modern medical/legal/safety advice is claimed.
+**Blockers**: none for feat-058.
+**Next**: Continue with selected feat-059 from updated `main`.
+
 ## 2026-10-06 — feat-057 merged
 
 **State**: done and merged to `main` in PR #85 at `1e1a5d53ecabd3344cd41c15cecc32068819ee0b`; reviewed exact head `2e69eef1250f202f34be7e8244c1e8a0790201a3`.

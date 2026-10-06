@@ -135,7 +135,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/058-bpct-casting-supplements-book-criticisms`.
-- Evidence: Dependency feat-057 is merged; source hash and page boundaries match the canonical source reference.
+- State: done; merged to `main` in PR #86 at `914bef4d7e98bd5784303a00cf37261b01e9abbe`, from reviewed head `93f9e943fe0b0a2fe2b3c995b5b2f9ea38fe2fdf`.
+- Evidence: Fresh exact-head independent review returned `OK`, no findings. PR verify run `37504128763`/job `112408327418`, Cloudflare Pages, and GitGuardian passed. The pre-push `./init.sh` passed 4,499 tests (4,318 knowledge, 181 core); corpus source/freshness and production package-export preservation checks passed. The measured 10,384,705-byte asset fits the 10 MiB Workbox cap by 101,055 bytes; all18 precache entries remain.
+- Coverage: Added19 records,328 claims/citations,325 registry units; feature cohort has445 obligations (389 mapped,56 unresolved II placeholders). The heading for II claims64 hexagrams/384 lines, while only eight named entries/48 rows appear in the supplied section. Keep II-09..64 unresolved pending source-audit/edition reconciliation. feat-091 audit, global source review, and corpus certification remain open; no modern advice or efficacy authority is claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Inspect assigned passages/images and existing selected citations, then implement the accepted scope.
+- Next: Continue with selected feat-059 from updated `main`.
