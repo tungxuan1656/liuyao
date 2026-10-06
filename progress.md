@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-054 merged
+
+**State**: done and merged to `main` in PR #81 at `7a9ceec25f5032f193149eab5894c768f126f4de`; reviewed PR head `f8530256ce39960ef64660f05b6e8a56eb929547`.
+**Done**: Added four source-compared BPCT Part I records for chapter 20 housing, its supplement, chapter 21 boats, and chapter 22 Xướng Gia (PDF 231–269): 494 claims/citations and 185 mapped child obligations. Preserved overlapping folios, actual layer boundaries, source gaps and uncertainties, and unresolved feat-088 audit obligations. Corrected the historical feat-053 handoff sentence in `docs/references/book-sources.md`.
+**Evidence**: Independent exact-head review returned `OK`, no P0–P2 findings. PR-head CI run 37447755511/job 112216577067, Cloudflare Pages, and GitGuardian passed. Parent `./init.sh` passed 3,093 tests (181 core, 2,912 knowledge); corpus freshness and package exports passed. Integrated asset 7,112,047 bytes under the 7,340,032-byte Workbox cap; all 18 precache entries remain. All 231 prior released records and 5,366 citations remain semantically unchanged. The independent review's initial path attribution error was corrected in its addendum; the verdict remained OK.
+**Coverage**: 185 children and four parent obligations remain unresolved for feat-088. Global source-review, audit, and certification obligations remain open. No efficacy, safety advice, rights clearance, or corpus certification is claimed.
+**Blockers**: none for feat-054.
+**Next**: Continue with selected feat-055 from updated `main`.
+
 ## 2026-10-06 — feat-053 merged
 
 **State**: done and merged to `main` in PR #80 at `b4f3ccf42fdb0f80e8ff116ef14af7e5e6282f82`; reviewed PR head `d9b080c03c8780f1eff713bed4f678bb4b9f9eda`.
