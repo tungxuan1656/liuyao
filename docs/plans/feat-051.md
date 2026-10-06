@@ -1,6 +1,6 @@
 # Complete BPCT foundational chapters and front matter Implementation Plan
 
-> **Execution:** Follow the repository's implementation and verification rules. Use the repository worker and reviewer flow; keep one writer at a time. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **Execution:** Follow the repository's implementation and verification rules. Use the repository worker and reviewer flow; keep one writer at a time. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Publish source-compared BPCT front matter and Part I chapters 1–5 with explicit source-unit dispositions.
 
@@ -31,13 +31,13 @@
 - Read: `packages/knowledge/data/sources.json`
 - Inspect: `docs/books/Tăng bổ bốc phệ chính tông.pdf`
 
-- [ ] Verify the PDF fingerprint and page count against `sources.json`.
-- [ ] Inspect pages 1–76 and adjacent page images where a passage continues across a page.
-- [ ] Map each front-matter voice, ch1 topic, ch2 formula, ch3 poem, ch4 board, ch5 item, footnote, table, and diagram to an inventory child.
-- [ ] Reconcile the map with existing released records and citations. Treat selected citations as partial coverage.
-- [ ] Record the exact page bounds, printed labels, attribution uncertainty, and source-reported omissions in `docs/reviews/knowledge/source-inventory.md`.
-- [ ] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` and confirm the source inventory remains consistent.
-- [ ] Commit the source-unit map before content authoring.
+- [x] Verify the PDF fingerprint and page count against `sources.json`.
+- [x] Inspect pages 1–76 and adjacent page images where a passage continues across a page.
+- [x] Map each front-matter voice, ch1 topic, ch2 formula, ch3 poem, ch4 board, ch5 item, footnote, table, and diagram to an inventory child.
+- [x] Reconcile the map with existing released records and citations. Treat selected citations as partial coverage.
+- [x] Record the exact page bounds, printed labels, attribution uncertainty, and source-reported omissions in `docs/reviews/knowledge/source-inventory.md`.
+- [x] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` and confirm the source inventory remains consistent.
+- [x] Commit the source-unit map before content authoring.
 
 ## Task 2: Author front matter and chapter 1
 

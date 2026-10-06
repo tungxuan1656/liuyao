@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "contentSnapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:d4090a2ae4abdc31be46097500d9f11494ce488f102bebae05a4dc4f0008f484",
   "registry": {
-    "sha256": "881e609e92f8e7133ef59c0f7c3f892bdb5439c27db08cff427baeb9d5e9df60",
-    "revision": 8,
+    "sha256": "08b04db9f60732e052e292e4159ec4253bfec787bf6bd28c269287d5e3179a43",
+    "revision": 9,
     "counts": {
       "overviewCells": 192,
       "positionCells": 1152,
       "hexagramCells": 1344,
       "specialPassages": 6,
-      "groups": 518,
+      "groups": 625,
       "exclusions": 17
     }
   },
@@ -19,9 +19,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2088,
+        "required": 2195,
         "current": 84,
-        "missing": 2004,
+        "missing": 2111,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -29,8 +29,8 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 15 },
-        { "code": "unresolved-source-discovery", "count": 518 },
-        { "code": "missing-decision", "count": 2004 },
+        { "code": "unresolved-source-discovery", "count": 625 },
+        { "code": "missing-decision", "count": 2111 },
         { "code": "released-claim-coverage-incomplete", "count": 2262 }
       ]
     },
@@ -39,7 +39,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2088,
+        "required": 2195,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
@@ -71,7 +71,7 @@
     "feat-081": { "required": 84, "current": 0 },
     "feat-082": { "required": 84, "current": 0 },
     "feat-083": { "required": 84, "current": 0 },
-    "feat-084": { "required": 89, "current": 0 },
+    "feat-084": { "required": 196, "current": 0 },
     "feat-085": { "required": 70, "current": 0 },
     "feat-086": { "required": 6, "current": 0 },
     "feat-087": { "required": 7, "current": 0 },
@@ -88,12 +88,12 @@
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 518,
+    "groups": 625,
     "exclusions": 17,
     "acceptedDecisions": 84,
     "approvedDecisions": 0,
     "currentDecisions": 84,
     "rejectedDecisions": 0,
-    "unresolvedDecisions": 2004
+    "unresolvedDecisions": 2111
   }
 }

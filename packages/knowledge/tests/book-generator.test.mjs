@@ -77,7 +77,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 518,
+      groups: 625,
       exclusions: 17,
     });
     expect(audit.totals).toMatchObject({

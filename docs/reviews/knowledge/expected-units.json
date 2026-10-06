@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 8,
+  "registryRevision": 9,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "379bd9bc70a607764ed13da8634e5499067aeb1b1a1c127fe96a4e8dc8b087ed"
+    "sha256": "c5e73ce402c37e3bb08c0e517d5b2413a8968b7a3caaf9b2e2c543f5ae8876df"
   },
   "counts": {
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 518,
+    "groups": 625,
     "exclusions": 17
   },
   "layers": [
@@ -4344,7 +4344,7 @@
       "group": "BPCT chapter 4 boards",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 49,
-      "pdfPageEnd": 49,
+      "pdfPageEnd": 50,
       "authorFeatureId": "feat-051",
       "auditFeatureId": "feat-084",
       "layerScopeIds": [
@@ -4420,7 +4420,7 @@
       "group": "BPCT chapter 4 boards",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 50,
-      "pdfPageEnd": 50,
+      "pdfPageEnd": 51,
       "authorFeatureId": "feat-051",
       "auditFeatureId": "feat-084",
       "layerScopeIds": [
@@ -4477,7 +4477,7 @@
       "group": "BPCT chapter 4 boards",
       "editionId": "edition-bpct-supplied",
       "pdfPageStart": 51,
-      "pdfPageEnd": 51,
+      "pdfPageEnd": 52,
       "authorFeatureId": "feat-051",
       "auditFeatureId": "feat-084",
       "layerScopeIds": [
@@ -13094,6 +13094,1932 @@
         "layer-pbc-original-text",
         "layer-pbc-translation",
         "layer-pbc-author-commentary"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-credits",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Title and contributor credits",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 1,
+      "pdfPageEnd": 2,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-translator-preface",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — Lời nói đầu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 2,
+      "pdfPageEnd": 3,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-preface",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Trương Cảnh Tùng — Lời tựa",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-pham-le-01",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Phàm lệ 1",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-pham-le-02",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Phàm lệ 2",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-pham-le-03",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Phàm lệ 3",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 5,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-pham-le-04",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Phàm lệ 4",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 5,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-pham-le-05",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Phàm lệ 5",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 5,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-pham-le-06",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Phàm lệ 6",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 5,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-cach-ngon",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vương Hồng Tự — Bốc Phệ Cách Ngôn",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 6,
+      "pdfPageEnd": 6,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-01",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 1",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-02",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 2",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-03",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 3",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-04",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 4",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-05",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 5",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 4,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-06",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 6",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 5,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-front-note-07",
+      "parentId": "bpct-front",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 7",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 5,
+      "pdfPageEnd": 5,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-i",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Nạp âm: 30 pairs",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 7,
+      "pdfPageEnd": 8,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-ii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Thiên can",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 8,
+      "pdfPageEnd": 8,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-iii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Địa chi and directional diagram",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 8,
+      "pdfPageEnd": 8,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-iv",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Ngũ hành sinh khắc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 9,
+      "pdfPageEnd": 9,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-v",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Lục thân and Wood example",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 9,
+      "pdfPageEnd": 9,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-vi-can",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "VI — Thiên can tương hợp",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 9,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-vi-chi",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "VI — Địa chi xung hợp",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 10,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-vii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Ngũ hành numbers",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 10,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-viii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Bát quái numbers",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 10,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-ix",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Eight trigram figures and elements",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 10,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-x",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Three coins; verse, rendering and moving lines",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 12,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xi",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Palace lists",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Nạp Giáp",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xiii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Thế/Ứng; author method and separate Ghi chú sequence",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xiv",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Lục thú verse and two-day placement table",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xv",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Nguyệt quái thân and split Bĩ figure",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 16,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xvi",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Tam hợp cục",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 16,
+      "pdfPageEnd": 16,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xvii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Twelve stages and hand diagram",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 16,
+      "pdfPageEnd": 17,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xviii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Lộc/Mã/Nhẫn; nine can rows, no Tân row",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 17,
+      "pdfPageEnd": 17,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xix",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Quý nhân verse, incomplete rendering and example",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 17,
+      "pdfPageEnd": 18,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xx",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Hình/Hại variants",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 18,
+      "pdfPageEnd": 18,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xxi",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Eight animal/body symbols",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 18,
+      "pdfPageEnd": 18,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xxii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Gian hào",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xxiii",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Month stems by year",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 20,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xxiv",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Hour stems by day",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 20,
+      "pdfPageEnd": 20,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-xxv",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Dần hour seasonal observations and inconsistent modern-hour gloss",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 20,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-note-01",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 1",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 8,
+      "pdfPageEnd": 8,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch01-note-02",
+      "parentId": "bpct-part1-ch01",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 2",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Trì Thế: general and five relatives",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 22,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-ii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Thế/Ứng relations and movement/Không",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-iii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Quái thân: three verse groups",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 27,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-iv",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Phi/Phục",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 27,
+      "pdfPageEnd": 28,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-v",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Do not rely on thần sát",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 28,
+      "pdfPageEnd": 29,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-vi",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "All static",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 29,
+      "pdfPageEnd": 29,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-vii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "All moving",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 29,
+      "pdfPageEnd": 29,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-viii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Kỵ thần",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 30,
+      "pdfPageEnd": 30,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-ix",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Nguyên thần",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 30,
+      "pdfPageEnd": 30,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-x",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Absent Dụng",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 31,
+      "pdfPageEnd": 31,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xi",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Không: both stanzas; reading/meaning discrepancy",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 31,
+      "pdfPageEnd": 32,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Moving Dụng",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 32,
+      "pdfPageEnd": 32,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Nhật thần",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 33,
+      "pdfPageEnd": 33,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiv",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Five moving relatives with six uncredited green variants",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 33,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xv",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Five transformed-relative rosters",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 38,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Six spirit poems",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 38,
+      "pdfPageEnd": 40,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Eight family-role symbols",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 40,
+      "pdfPageEnd": 41,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xviii",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Six Tuần Không pairs and examples",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 41,
+      "pdfPageEnd": 41,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xix",
+      "parentId": "bpct-part1-ch02",
+      "kind": "content",
+      "group": "Twelve Nguyệt phá rows; conflicting Mão solar term",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 41,
+      "pdfPageEnd": 41,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i-general",
+      "parentId": "bpct-ch02-i",
+      "kind": "content",
+      "group": "I — general",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 22,
+      "pdfPageEnd": 22,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i-phu",
+      "parentId": "bpct-ch02-i",
+      "kind": "content",
+      "group": "I — phu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 22,
+      "pdfPageEnd": 23,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i-tu",
+      "parentId": "bpct-ch02-i",
+      "kind": "content",
+      "group": "I — tu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 23,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i-quan",
+      "parentId": "bpct-ch02-i",
+      "kind": "content",
+      "group": "I — quan",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i-tai",
+      "parentId": "bpct-ch02-i",
+      "kind": "content",
+      "group": "I — tai",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-i-huynh",
+      "parentId": "bpct-ch02-i",
+      "kind": "content",
+      "group": "I — huynh",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-iii-phuc",
+      "parentId": "bpct-ch02-iii",
+      "kind": "content",
+      "group": "III — phuc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-iii-nguyen-dung",
+      "parentId": "bpct-ch02-iii",
+      "kind": "content",
+      "group": "III — nguyen-dung",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 27,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-iii-khong",
+      "parentId": "bpct-ch02-iii",
+      "kind": "content",
+      "group": "III — khong",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 27,
+      "pdfPageEnd": 27,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiv-phu",
+      "parentId": "bpct-ch02-xiv",
+      "kind": "content",
+      "group": "XIV — phu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 33,
+      "pdfPageEnd": 34,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiv-tu",
+      "parentId": "bpct-ch02-xiv",
+      "kind": "content",
+      "group": "XIV — tu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 34,
+      "pdfPageEnd": 35,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiv-quan",
+      "parentId": "bpct-ch02-xiv",
+      "kind": "content",
+      "group": "XIV — quan",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 35,
+      "pdfPageEnd": 35,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiv-tai",
+      "parentId": "bpct-ch02-xiv",
+      "kind": "content",
+      "group": "XIV — tai",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 36,
+      "pdfPageEnd": 36,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xiv-huynh",
+      "parentId": "bpct-ch02-xiv",
+      "kind": "content",
+      "group": "XIV — huynh",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 36,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xv-phu",
+      "parentId": "bpct-ch02-xv",
+      "kind": "content",
+      "group": "XV — phu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xv-tu",
+      "parentId": "bpct-ch02-xv",
+      "kind": "content",
+      "group": "XV — tu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xv-quan",
+      "parentId": "bpct-ch02-xv",
+      "kind": "content",
+      "group": "XV — quan",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xv-tai",
+      "parentId": "bpct-ch02-xv",
+      "kind": "content",
+      "group": "XV — tai",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xv-huynh",
+      "parentId": "bpct-ch02-xv",
+      "kind": "content",
+      "group": "XV — huynh",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 38,
+      "pdfPageEnd": 38,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi-long",
+      "parentId": "bpct-ch02-xvi",
+      "kind": "content",
+      "group": "XVI — long",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 38,
+      "pdfPageEnd": 38,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi-tuoc",
+      "parentId": "bpct-ch02-xvi",
+      "kind": "content",
+      "group": "XVI — tuoc",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 38,
+      "pdfPageEnd": 38,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi-cau-tran",
+      "parentId": "bpct-ch02-xvi",
+      "kind": "content",
+      "group": "XVI — cau-tran",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 39,
+      "pdfPageEnd": 39,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi-xa",
+      "parentId": "bpct-ch02-xvi",
+      "kind": "content",
+      "group": "XVI — xa",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 39,
+      "pdfPageEnd": 39,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi-ho",
+      "parentId": "bpct-ch02-xvi",
+      "kind": "content",
+      "group": "XVI — ho",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 39,
+      "pdfPageEnd": 40,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-xvi-vu",
+      "parentId": "bpct-ch02-xvi",
+      "kind": "content",
+      "group": "XVI — vu",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 40,
+      "pdfPageEnd": 40,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-note-01",
+      "parentId": "bpct-ch02-i-quan",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 1",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-note-02",
+      "parentId": "bpct-ch02-iv",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 2",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 28,
+      "pdfPageEnd": 28,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-note-03",
+      "parentId": "bpct-ch02-v",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 3",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 28,
+      "pdfPageEnd": 28,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-variants",
+      "parentId": "bpct-ch02-xiv",
+      "kind": "content",
+      "group": "Uncredited green parenthetical readings: two each for Tử, Quan, Tài",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 34,
+      "pdfPageEnd": 36,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch02-folio-42",
+      "parentId": "bpct-part1-ch02",
+      "kind": "non-content",
+      "group": "Folio-only page: printed 35",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 42,
+      "pdfPageEnd": 42,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch03-thong-huyen",
+      "parentId": "bpct-part1-ch03",
+      "kind": "content",
+      "group": "Thông Huyền Phú — original 43–44, reading 44–46, meaning 46",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 43,
+      "pdfPageEnd": 46,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch03-tuy-kim",
+      "parentId": "bpct-part1-ch03",
+      "kind": "content",
+      "group": "Túy Kim Phú — original 46–47, reading 47, meaning and closing explanation 48",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 46,
+      "pdfPageEnd": 48,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch04-intro",
+      "parentId": "bpct-part1-ch04",
+      "kind": "content",
+      "group": "Board-method framing",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 49,
+      "pdfPageEnd": 49,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch04-note-01",
+      "parentId": "bpct-part1-ch04",
+      "kind": "content",
+      "group": "Vĩnh Cao — xuất bộc note on Tỉnh",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 57,
+      "pdfPageEnd": 57,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch04-closing",
+      "parentId": "bpct-part1-ch04",
+      "kind": "content",
+      "group": "Closing method and Độn-to-Đồng Nhân example",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 66,
+      "pdfPageEnd": 66,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-01",
+      "parentId": "bpct-ch05-04",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 1",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 68,
+      "pdfPageEnd": 68,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-02",
+      "parentId": "bpct-ch05-04",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 2",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 68,
+      "pdfPageEnd": 68,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-03",
+      "parentId": "bpct-ch05-04",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 3",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 68,
+      "pdfPageEnd": 68,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-04",
+      "parentId": "bpct-ch05-04",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 4",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 68,
+      "pdfPageEnd": 68,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-05",
+      "parentId": "bpct-ch05-08",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 5",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 70,
+      "pdfPageEnd": 70,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-06",
+      "parentId": "bpct-ch05-08",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 6",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 70,
+      "pdfPageEnd": 70,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-07",
+      "parentId": "bpct-ch05-09",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 7",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 70,
+      "pdfPageEnd": 70,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
+      ],
+      "discoveryStatus": "unresolved"
+    },
+    {
+      "id": "bpct-ch05-note-08",
+      "parentId": "bpct-ch05-16",
+      "kind": "content",
+      "group": "Vĩnh Cao — attached note 8",
+      "editionId": "edition-bpct-supplied",
+      "pdfPageStart": 72,
+      "pdfPageEnd": 72,
+      "authorFeatureId": "feat-051",
+      "auditFeatureId": "feat-084",
+      "layerScopeIds": [
+        "layer-bpct-original-text",
+        "layer-bpct-translation",
+        "layer-bpct-author-commentary",
+        "layer-bpct-translator-note"
       ],
       "discoveryStatus": "unresolved"
     }

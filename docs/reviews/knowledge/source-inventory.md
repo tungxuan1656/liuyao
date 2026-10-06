@@ -741,3 +741,146 @@ Visual evidence recorded by the source-inspection lanes is limited to artifacts 
 These samples establish only the stated section and layer anchors, not visual review of every page. The following reconciliations remain open: the NHL introduction/framework groups above are not full passage maps; PBC's 64-heading contact-sheet checks do not validate the candidate per-quẻ layer list; NTT notes still lack passage links; BPCT chapter 6 and casting rows still need source-unit and layer dispositions; and none of the four source crosswalks substitutes for the 1,152 book-position audit cells. Unverified candidates remain navigation leads, not absence findings. Features 066 and 094 own global inventory/reconciliation tracking; routed audit features own only work within their recorded acceptance.
 
 The inspected source partitions total **BPCT 467 + PBC 655 + NTT 938 + NHL 393 = 2,453 PDF pages**. Visual inspection, extraction, source comparison, and independent review are separate evidence. This inventory does not certify every claim, diagram, translation, line, exclusion or printed folio. It does not claim specialist approval, predictive efficacy, or completed corpus coverage. Remaining finer layer maps and all 1,152 book-position audit cells stay visible under the feature owners above; no unfinished source section is silently excluded.
+
+### Feat-051 complete assigned-page unit map
+
+Source comparison: Codex worker (AI authoring comparison), 2026-10-06. SHA-256
+`713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`, 467 pages, matched.
+Read all extracted text and directly opened every individual full-page render at PDFs 1–76;
+PDF 77 was individually opened as adjacent chapter-boundary context only. No contact-sheet
+substitution, copied source text or image redistribution. Existing selected records remain unchanged.
+Every child below inherits author feat-051 and later audit feat-084. These authoring dispositions
+do not create audit decisions or independent verification/certification approval. Registry discovery
+and edition-wide layer rosters remain unresolved for those later gates.
+
+Front matter has no printed numerical folio. Chapter 1 folios are PDF minus 6 (1–15);
+chapter 2 is PDF minus 7 (15–35); chapter 3 is PDF minus 10 (33–38); chapter 4
+is PDF minus 11 (38–55); chapter 5 is PDF minus 12 (55–64). These overlaps are observed,
+not corrected. Ch1 contains I–XXV with two VI headings, not the provisional I–XXII.
+Ch1 Ghi chú at 14–15 is separate translator/editor framing; only the front credits
+and general footnote role establish Vĩnh Cao transmission, not proof of every inserted line's authorship.
+Ch2 has no board/image diagram. Prose-only II/VI/XV/XVII/XVIII/XIX do not acquire invented Hán verses.
+Ch3 has no numbered footnotes, diagrams or separately signed commentary author; do not apply
+the generic Phú credit to these named works as verified authorship. Ch4 has one attached note
+on Tỉnh and seven Quái thân annotations (Bĩ, Bác, Tấn, Đại Hữu, Tiết, Ký Tế, Phong).
+No Quái thân label is inferred on another board; all source conflicts remain readings, not repairs.
+Ch5 contains author discussion with eight numbered translator notes, no separate poem/diagram;
+its postscript changes typography after the separator at 74 and addresses vantinh at 76,
+without a supplied author signature. The postscript remains a distinct supplement, never item 19.
+
+| Stable child ID                 | Parent             | PDF bounds | Inspected unit / layer disposition                                           | Authoring disposition                                       |
+| ------------------------------- | ------------------ | ---------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| `bpct-front-credits`            | `bpct-front`       | 1–2        | Title and contributor credits                                                | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-translator-preface` | `bpct-front`       | 2–3        | Vĩnh Cao — Lời nói đầu                                                       | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-preface`            | `bpct-front`       | 4–4        | Trương Cảnh Tùng — Lời tựa                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-pham-le-01`         | `bpct-front`       | 4–4        | Vương Hồng Tự — Phàm lệ 1                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-pham-le-02`         | `bpct-front`       | 4–5        | Vương Hồng Tự — Phàm lệ 2                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-pham-le-03`         | `bpct-front`       | 5–5        | Vương Hồng Tự — Phàm lệ 3                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-pham-le-04`         | `bpct-front`       | 5–5        | Vương Hồng Tự — Phàm lệ 4                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-pham-le-05`         | `bpct-front`       | 5–5        | Vương Hồng Tự — Phàm lệ 5                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-pham-le-06`         | `bpct-front`       | 5–5        | Vương Hồng Tự — Phàm lệ 6                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-cach-ngon`          | `bpct-front`       | 6–6        | Vương Hồng Tự — Bốc Phệ Cách Ngôn                                            | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-01`            | `bpct-front`       | 4–4        | Vĩnh Cao — attached note 1                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-02`            | `bpct-front`       | 4–4        | Vĩnh Cao — attached note 2                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-03`            | `bpct-front`       | 4–4        | Vĩnh Cao — attached note 3                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-04`            | `bpct-front`       | 4–4        | Vĩnh Cao — attached note 4                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-05`            | `bpct-front`       | 4–4        | Vĩnh Cao — attached note 5                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-06`            | `bpct-front`       | 5–5        | Vĩnh Cao — attached note 6                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-front-note-07`            | `bpct-front`       | 5–5        | Vĩnh Cao — attached note 7                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-i`                   | `bpct-part1-ch01`  | 7–8        | Nạp âm: 30 pairs                                                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-ii`                  | `bpct-part1-ch01`  | 8–8        | Thiên can                                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-iii`                 | `bpct-part1-ch01`  | 8–8        | Địa chi and directional diagram                                              | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-iv`                  | `bpct-part1-ch01`  | 9–9        | Ngũ hành sinh khắc                                                           | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-v`                   | `bpct-part1-ch01`  | 9–9        | Lục thân and Wood example                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-vi-can`              | `bpct-part1-ch01`  | 9–10       | VI — Thiên can tương hợp                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-vi-chi`              | `bpct-part1-ch01`  | 10–10      | VI — Địa chi xung hợp                                                        | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-vii`                 | `bpct-part1-ch01`  | 10–10      | Ngũ hành numbers                                                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-viii`                | `bpct-part1-ch01`  | 10–10      | Bát quái numbers                                                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-ix`                  | `bpct-part1-ch01`  | 10–11      | Eight trigram figures and elements                                           | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-x`                   | `bpct-part1-ch01`  | 11–12      | Three coins; verse, rendering and moving lines                               | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xi`                  | `bpct-part1-ch01`  | 12–13      | Palace lists                                                                 | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xii`                 | `bpct-part1-ch01`  | 13–13      | Nạp Giáp                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xiii`                | `bpct-part1-ch01`  | 13–15      | Thế/Ứng; author method and separate Ghi chú sequence                         | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xiv`                 | `bpct-part1-ch01`  | 15–15      | Lục thú verse and two-day placement table                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xv`                  | `bpct-part1-ch01`  | 15–16      | Nguyệt quái thân and split Bĩ figure                                         | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xvi`                 | `bpct-part1-ch01`  | 16–16      | Tam hợp cục                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xvii`                | `bpct-part1-ch01`  | 16–17      | Twelve stages and hand diagram                                               | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xviii`               | `bpct-part1-ch01`  | 17–17      | Lộc/Mã/Nhẫn; nine can rows, no Tân row                                       | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xix`                 | `bpct-part1-ch01`  | 17–18      | Quý nhân verse, incomplete rendering and example                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xx`                  | `bpct-part1-ch01`  | 18–18      | Hình/Hại variants                                                            | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xxi`                 | `bpct-part1-ch01`  | 18–18      | Eight animal/body symbols                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xxii`                | `bpct-part1-ch01`  | 19–19      | Gian hào                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xxiii`               | `bpct-part1-ch01`  | 19–20      | Month stems by year                                                          | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xxiv`                | `bpct-part1-ch01`  | 20–20      | Hour stems by day                                                            | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-xxv`                 | `bpct-part1-ch01`  | 20–21      | Dần hour seasonal observations and inconsistent modern-hour gloss            | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-note-01`             | `bpct-part1-ch01`  | 8–8        | Vĩnh Cao — attached note 1                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch01-note-02`             | `bpct-part1-ch01`  | 11–11      | Vĩnh Cao — attached note 2                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i`                   | `bpct-part1-ch02`  | 22–26      | Trì Thế: general and five relatives                                          | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-ii`                  | `bpct-part1-ch02`  | 26–26      | Thế/Ứng relations and movement/Không                                         | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-iii`                 | `bpct-part1-ch02`  | 26–27      | Quái thân: three verse groups                                                | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-iv`                  | `bpct-part1-ch02`  | 27–28      | Phi/Phục                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-v`                   | `bpct-part1-ch02`  | 28–29      | Do not rely on thần sát                                                      | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-vi`                  | `bpct-part1-ch02`  | 29–29      | All static                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-vii`                 | `bpct-part1-ch02`  | 29–29      | All moving                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-viii`                | `bpct-part1-ch02`  | 30–30      | Kỵ thần                                                                      | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-ix`                  | `bpct-part1-ch02`  | 30–30      | Nguyên thần                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-x`                   | `bpct-part1-ch02`  | 31–31      | Absent Dụng                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xi`                  | `bpct-part1-ch02`  | 31–32      | Không: both stanzas; reading/meaning discrepancy                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xii`                 | `bpct-part1-ch02`  | 32–32      | Moving Dụng                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiii`                | `bpct-part1-ch02`  | 33–33      | Nhật thần                                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiv`                 | `bpct-part1-ch02`  | 33–37      | Five moving relatives with six uncredited green variants                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xv`                  | `bpct-part1-ch02`  | 37–38      | Five transformed-relative rosters                                            | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi`                 | `bpct-part1-ch02`  | 38–40      | Six spirit poems                                                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvii`                | `bpct-part1-ch02`  | 40–41      | Eight family-role symbols                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xviii`               | `bpct-part1-ch02`  | 41–41      | Six Tuần Không pairs and examples                                            | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xix`                 | `bpct-part1-ch02`  | 41–41      | Twelve Nguyệt phá rows; conflicting Mão solar term                           | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i-general`           | `bpct-ch02-i`      | 22–22      | I — general                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i-phu`               | `bpct-ch02-i`      | 22–23      | I — phu                                                                      | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i-tu`                | `bpct-ch02-i`      | 23–24      | I — tu                                                                       | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i-quan`              | `bpct-ch02-i`      | 24–24      | I — quan                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i-tai`               | `bpct-ch02-i`      | 24–25      | I — tai                                                                      | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-i-huynh`             | `bpct-ch02-i`      | 25–26      | I — huynh                                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-iii-phuc`            | `bpct-ch02-iii`    | 26–26      | III — phuc                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-iii-nguyen-dung`     | `bpct-ch02-iii`    | 26–27      | III — nguyen-dung                                                            | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-iii-khong`           | `bpct-ch02-iii`    | 27–27      | III — khong                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiv-phu`             | `bpct-ch02-xiv`    | 33–34      | XIV — phu                                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiv-tu`              | `bpct-ch02-xiv`    | 34–35      | XIV — tu                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiv-quan`            | `bpct-ch02-xiv`    | 35–35      | XIV — quan                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiv-tai`             | `bpct-ch02-xiv`    | 36–36      | XIV — tai                                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xiv-huynh`           | `bpct-ch02-xiv`    | 36–37      | XIV — huynh                                                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xv-phu`              | `bpct-ch02-xv`     | 37–37      | XV — phu                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xv-tu`               | `bpct-ch02-xv`     | 37–37      | XV — tu                                                                      | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xv-quan`             | `bpct-ch02-xv`     | 37–37      | XV — quan                                                                    | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xv-tai`              | `bpct-ch02-xv`     | 37–37      | XV — tai                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xv-huynh`            | `bpct-ch02-xv`     | 38–38      | XV — huynh                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi-long`            | `bpct-ch02-xvi`    | 38–38      | XVI — long                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi-tuoc`            | `bpct-ch02-xvi`    | 38–38      | XVI — tuoc                                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi-cau-tran`        | `bpct-ch02-xvi`    | 39–39      | XVI — cau-tran                                                               | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi-xa`              | `bpct-ch02-xvi`    | 39–39      | XVI — xa                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi-ho`              | `bpct-ch02-xvi`    | 39–40      | XVI — ho                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-xvi-vu`              | `bpct-ch02-xvi`    | 40–40      | XVI — vu                                                                     | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-note-01`             | `bpct-ch02-i-quan` | 24–24      | Vĩnh Cao — attached note 1                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-note-02`             | `bpct-ch02-iv`     | 28–28      | Vĩnh Cao — attached note 2                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-note-03`             | `bpct-ch02-v`      | 28–28      | Vĩnh Cao — attached note 3                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-variants`            | `bpct-ch02-xiv`    | 34–36      | Uncredited green parenthetical readings: two each for Tử, Quan, Tài          | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch02-folio-42`            | `bpct-part1-ch02`  | 42–42      | Folio-only page: printed 35                                                  | Non-content: inspected folio and spacing; no doctrine.      |
+| `bpct-ch03-thong-huyen`         | `bpct-part1-ch03`  | 43–46      | Thông Huyền Phú — original 43–44, reading 44–46, meaning 46                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch03-tuy-kim`             | `bpct-part1-ch03`  | 46–48      | Túy Kim Phú — original 46–47, reading 47, meaning and closing explanation 48 | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch04-intro`               | `bpct-part1-ch04`  | 49–49      | Board-method framing                                                         | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch04-note-01`             | `bpct-part1-ch04`  | 57–57      | Vĩnh Cao — xuất bộc note on Tỉnh                                             | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch04-closing`             | `bpct-part1-ch04`  | 66–66      | Closing method and Độn-to-Đồng Nhân example                                  | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-01`             | `bpct-ch05-04`     | 68–68      | Vĩnh Cao — attached note 1                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-02`             | `bpct-ch05-04`     | 68–68      | Vĩnh Cao — attached note 2                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-03`             | `bpct-ch05-04`     | 68–68      | Vĩnh Cao — attached note 3                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-04`             | `bpct-ch05-04`     | 68–68      | Vĩnh Cao — attached note 4                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-05`             | `bpct-ch05-08`     | 70–70      | Vĩnh Cao — attached note 5                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-06`             | `bpct-ch05-08`     | 70–70      | Vĩnh Cao — attached note 6                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-07`             | `bpct-ch05-09`     | 70–70      | Vĩnh Cao — attached note 7                                                   | Pending original-summary authoring; full passage inspected. |
+| `bpct-ch05-note-08`             | `bpct-ch05-16`     | 72–72      | Vĩnh Cao — attached note 8                                                   | Pending original-summary authoring; full passage inspected. |
+
+All 64 existing `bpct-board-01` through `bpct-board-64` retain their IDs and printed palace order
+in the board register above. Their full commentary continuation ends (not just heading pages)
+are now in the paired registry: 03→50, 07→51, 10→52, 14→53, 21→55, 28→57, 31→58,
+35→59, 43→61, 47→62, 51→63, 55→64, 59→65, 63→66; others end on their heading page.
+Each expects its own figure/annotation and commentary evidence, not the adjacent board's evidence.
+All eighteen existing ch5 IDs and the postscript retain their bounds and obligations.
