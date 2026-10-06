@@ -288,9 +288,9 @@ describe('feat-053 final release accounting', () => {
     expect(audit.complete).toBe(false);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
-    expect(coverage.records.released).toBe(287);
-    expect(coverage.claims.total).toBe(7742);
-    expect(coverage.citations.total).toBe(7988);
-    expect(manifest.nextBatch.note).toMatch(/feat-059.*NHL PDF1–126/);
+    expect(coverage.records.released).toBe(298);
+    expect(coverage.claims.total).toBe(7950);
+    expect(coverage.citations.total).toBe(8196);
+    expect(manifest.nextBatch.note).toMatch(/feat-060.*PBC\/NTT/);
   });
 });

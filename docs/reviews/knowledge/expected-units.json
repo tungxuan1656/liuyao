@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "registryId": "knowledge-expected-units-v1",
-  "registryRevision": 52,
+  "registryRevision": 53,
   "inventory": {
     "path": "docs/reviews/knowledge/source-inventory.md",
-    "sha256": "27d0a7595302e23415181c8c27c04fdc2552d18a631803a13bc39442c62387a1"
+    "sha256": "fcca91fbd94763030be8676d1ab15772f7375bc8acee13963317195df0668944"
   },
   "counts": {
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 2861,
+    "groups": 3074,
     "exclusions": 17
   },
   "layers": [
@@ -12069,7 +12069,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
     },
     {
       "id": "nhl-digital-copy-credit",
@@ -12085,7 +12086,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
     },
     {
       "id": "nhl-blank-003",
@@ -12101,7 +12103,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
     },
     {
       "id": "nhl-contents",
@@ -12117,7 +12120,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
     },
     {
       "id": "nhl-foreword-directions",
@@ -12133,7 +12137,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-foreword"]
     },
     {
       "id": "nhl-intro-ch01",
@@ -12149,7 +12154,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
     },
     {
       "id": "nhl-intro-ch02",
@@ -12165,7 +12171,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
     },
     {
       "id": "nhl-intro-ch03",
@@ -12181,7 +12188,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
     },
     {
       "id": "nhl-intro-ch04",
@@ -12197,7 +12205,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
     },
     {
       "id": "nhl-intro-ch05",
@@ -12213,7 +12222,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
     },
     {
       "id": "nhl-intro-ch06",
@@ -12229,7 +12239,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
     },
     {
       "id": "nhl-intro-ch07",
@@ -12245,7 +12256,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
     },
     {
       "id": "nhl-part2-framing",
@@ -12261,7 +12273,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
     },
     {
       "id": "nhl-he-tu-title",
@@ -12293,7 +12306,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
     },
     {
       "id": "nhl-blank-393",
@@ -12309,7 +12323,8 @@
         "layer-nhl-translation",
         "layer-nhl-author-commentary"
       ],
-      "discoveryStatus": "unresolved"
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
     },
     {
       "id": "nhl-intro-ch01-origin-kinh",
@@ -12326,7 +12341,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch01"
+      "parentId": "nhl-intro-ch01",
+      "recordIds": ["article-nhl-introduction-01"]
     },
     {
       "id": "nhl-intro-ch02-thap-duc",
@@ -12343,7 +12359,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch02"
+      "parentId": "nhl-intro-ch02",
+      "recordIds": ["article-nhl-introduction-02"]
     },
     {
       "id": "nhl-intro-ch03-schools-history",
@@ -12360,7 +12377,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch03"
+      "parentId": "nhl-intro-ch03",
+      "recordIds": ["article-nhl-introduction-03"]
     },
     {
       "id": "nhl-intro-ch04-terms-rules",
@@ -12377,7 +12395,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch04"
+      "parentId": "nhl-intro-ch04",
+      "recordIds": ["article-nhl-introduction-04"]
     },
     {
       "id": "nhl-intro-ch05-dao-troi",
@@ -12394,7 +12413,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch05"
+      "parentId": "nhl-intro-ch05",
+      "recordIds": ["article-nhl-introduction-05"]
     },
     {
       "id": "nhl-intro-ch06-viec-nguoi",
@@ -12411,7 +12431,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch06"
+      "parentId": "nhl-intro-ch06",
+      "recordIds": ["article-nhl-introduction-06"]
     },
     {
       "id": "nhl-intro-ch07-tu-than",
@@ -12428,7 +12449,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-intro-ch07"
+      "parentId": "nhl-intro-ch07",
+      "recordIds": ["article-nhl-introduction-07"]
     },
     {
       "id": "nhl-part-ii-intro",
@@ -12445,7 +12467,8 @@
         "layer-nhl-author-commentary"
       ],
       "discoveryStatus": "unresolved",
-      "parentId": "nhl-part2-framing"
+      "parentId": "nhl-part2-framing",
+      "recordIds": ["article-nhl-part2-framing"]
     },
     {
       "id": "nhl-he-tu-shang-01",
@@ -12844,7 +12867,7 @@
       "group": "NHL Hệ Từ ha chapters",
       "editionId": "edition-nhl-supplied",
       "pdfPageStart": 386,
-      "pdfPageEnd": 386,
+      "pdfPageEnd": 388,
       "authorFeatureId": "feat-062",
       "auditFeatureId": "feat-092",
       "layerScopeIds": [
@@ -50115,6 +50138,3848 @@
       "layerScopeIds": ["layer-bpct-author-commentary"],
       "discoveryStatus": "unresolved",
       "recordIds": ["article-bpct-criticism-xv"]
+    },
+    {
+      "id": "nhl-foreword-directions-purpose",
+      "parentId": "nhl-foreword-directions",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 10,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-foreword"]
+    },
+    {
+      "id": "nhl-foreword-directions-reading-order",
+      "parentId": "nhl-foreword-directions",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 10,
+      "pdfPageEnd": 10,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-foreword"]
+    },
+    {
+      "id": "nhl-foreword-directions-lookup-example",
+      "parentId": "nhl-foreword-directions",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 11,
+      "pdfPageEnd": 11,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-foreword"]
+    },
+    {
+      "id": "nhl-intro-ch01-opening",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 12,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-fuxi-tradition",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 13,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-hetu-quotation",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 13,
+      "pdfPageEnd": 14,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-observation-quotation",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 14,
+      "pdfPageEnd": 14,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-ouyang-objection",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 14,
+      "pdfPageEnd": 14,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-four-accounts",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 14,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-dragon-turtle",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-analects-omen",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-transmission-uncertainty",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 15,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-hetu-diagram",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 15,
+      "pdfPageEnd": 16,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-luoshu-diagram",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 16,
+      "pdfPageEnd": 16,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-magic-square",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 17,
+      "pdfPageEnd": 17,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-magic-square-evaluation",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 17,
+      "pdfPageEnd": 17,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-oracle-bone-plate",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 18,
+      "pdfPageEnd": 18,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-yarrow-history",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 18,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-seven-numbers",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 19,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-generation",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 19,
+      "pdfPageEnd": 20,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-trigram-associations",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 21,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-mnemonics",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 21,
+      "pdfPageEnd": 22,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-earlier-heaven",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 22,
+      "pdfPageEnd": 22,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-later-heaven",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 23,
+      "pdfPageEnd": 23,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-shuogua-pairs",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 23,
+      "pdfPageEnd": 23,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-cosmological-alternatives",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 23,
+      "pdfPageEnd": 24,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-doubling-authorship",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 24,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-market-allusion",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 25,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-earlier-order",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 25,
+      "pdfPageEnd": 26,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-later-order",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 26,
+      "pdfPageEnd": 27,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-palace-selection",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 27,
+      "pdfPageEnd": 28,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-tai-diagram",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 28,
+      "pdfPageEnd": 28,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-jiji-diagram",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 28,
+      "pdfPageEnd": 28,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-three-yi",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 29,
+      "pdfPageEnd": 29,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-wen-zhou-history",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 29,
+      "pdfPageEnd": 30,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-judgment-examples",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 30,
+      "pdfPageEnd": 30,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-kinh-structure",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 30,
+      "pdfPageEnd": 31,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-yi-etymology",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 31,
+      "pdfPageEnd": 32,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch01-zhou-etymology",
+      "parentId": "nhl-intro-ch01",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 32,
+      "pdfPageEnd": 32,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-01"]
+    },
+    {
+      "id": "nhl-intro-ch02-traditional-authorship",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 33,
+      "pdfPageEnd": 33,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-analects-reading",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 33,
+      "pdfPageEnd": 34,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-authorship-evaluation",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 34,
+      "pdfPageEnd": 34,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-seven-ten",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 34,
+      "pdfPageEnd": 35,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-tuan-example",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 35,
+      "pdfPageEnd": 36,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-tuan-evaluation",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 36,
+      "pdfPageEnd": 36,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-xiang-borrowings",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 36,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-xiang-vocabulary",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 37,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-xiang-qian",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 37,
+      "pdfPageEnd": 38,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-xiang-lu-jian",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 38,
+      "pdfPageEnd": 39,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-hetu-overview",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 39,
+      "pdfPageEnd": 40,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-hetu-zhu",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 39,
+      "pdfPageEnd": 40,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-wenyan-examples",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 40,
+      "pdfPageEnd": 41,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-shuogua-opening",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 41,
+      "pdfPageEnd": 41,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-shuogua-associations",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 41,
+      "pdfPageEnd": 42,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-xugua-order",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 42,
+      "pdfPageEnd": 43,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-xugua-counterexamples",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 43,
+      "pdfPageEnd": 43,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-zagua-examples",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 43,
+      "pdfPageEnd": 44,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch02-selection-presentation",
+      "parentId": "nhl-intro-ch02",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 44,
+      "pdfPageEnd": 44,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-02"]
+    },
+    {
+      "id": "nhl-intro-ch03-limits",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 45,
+      "pdfPageEnd": 45,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-han-lineages",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 45,
+      "pdfPageEnd": 46,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-han-examples",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 45,
+      "pdfPageEnd": 46,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-xiangshu-numbers",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 46,
+      "pdfPageEnd": 46,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-wei-tang",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 46,
+      "pdfPageEnd": 47,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-wang-shao-disagreement",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 47,
+      "pdfPageEnd": 48,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-chen-zhou-shao",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 47,
+      "pdfPageEnd": 48,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-cheng-zhang-zhu",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 48,
+      "pdfPageEnd": 48,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-qing",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 49,
+      "pdfPageEnd": 49,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-modern-china",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 49,
+      "pdfPageEnd": 50,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-vietnam",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 50,
+      "pdfPageEnd": 50,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-western-roster",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 50,
+      "pdfPageEnd": 51,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-lavier-translation",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 51,
+      "pdfPageEnd": 52,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-lavier-marriage",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 52,
+      "pdfPageEnd": 52,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-sung-algebra",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 52,
+      "pdfPageEnd": 53,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-leibniz-history",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 53,
+      "pdfPageEnd": 54,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-binary-chart",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 54,
+      "pdfPageEnd": 56,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-binary-fifty",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 55,
+      "pdfPageEnd": 56,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-jung-first",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 56,
+      "pdfPageEnd": 56,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-jung-second",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 57,
+      "pdfPageEnd": 57,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-becker-view",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 57,
+      "pdfPageEnd": 57,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch03-three-approaches",
+      "parentId": "nhl-intro-ch03",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 57,
+      "pdfPageEnd": 58,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-03"]
+    },
+    {
+      "id": "nhl-intro-ch04-term-list",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 59,
+      "pdfPageEnd": 60,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-jiji-weiji-labels",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 60,
+      "pdfPageEnd": 61,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-nine-six-origin",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 61,
+      "pdfPageEnd": 62,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-use-nine-six",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 62,
+      "pdfPageEnd": 62,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-four-virtues",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 62,
+      "pdfPageEnd": 62,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-feng-virtues",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 62,
+      "pdfPageEnd": 63,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-cao-virtues",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 63,
+      "pdfPageEnd": 63,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-omens-vocabulary",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 63,
+      "pdfPageEnd": 63,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-time-relation",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 63,
+      "pdfPageEnd": 64,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-chai-relation",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 64,
+      "pdfPageEnd": 64,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-lavier-relation",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 64,
+      "pdfPageEnd": 65,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-three-powers",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 65,
+      "pdfPageEnd": 65,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-polarity-stereotypes",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 65,
+      "pdfPageEnd": 66,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-central-correct",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 66,
+      "pdfPageEnd": 66,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-qian-central-chart",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 66,
+      "pdfPageEnd": 66,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-jiji-central-chart",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 66,
+      "pdfPageEnd": 67,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-zhang-xue",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 67,
+      "pdfPageEnd": 67,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-correspondence",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 68,
+      "pdfPageEnd": 69,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-adjacency",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 69,
+      "pdfPageEnd": 69,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-ruler-du-yang",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 69,
+      "pdfPageEnd": 70,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-ruler-guai-yin",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 70,
+      "pdfPageEnd": 70,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-ruler-exceptions",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 70,
+      "pdfPageEnd": 70,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-hetu-line-comparisons",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 71,
+      "pdfPageEnd": 71,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-quiet-tung-chart",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 72,
+      "pdfPageEnd": 72,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-fifth-change-chart",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 72,
+      "pdfPageEnd": 72,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-interpretation-method",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 73,
+      "pdfPageEnd": 74,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-natal-method",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 74,
+      "pdfPageEnd": 74,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-name-line-position",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 74,
+      "pdfPageEnd": 75,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-name-images",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 75,
+      "pdfPageEnd": 75,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-name-vessel-well",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 75,
+      "pdfPageEnd": 75,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-name-mouths",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 75,
+      "pdfPageEnd": 76,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch04-selected-line-order",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 59,
+      "pdfPageEnd": 61,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["term-line-position"]
+    },
+    {
+      "id": "nhl-intro-ch04-selected-polarity",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 59,
+      "pdfPageEnd": 61,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["term-yin", "term-yang", "term-polarity"]
+    },
+    {
+      "id": "nhl-intro-ch04-selected-coins-change",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 72,
+      "pdfPageEnd": 73,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": [
+        "article-three-coin-casting",
+        "rule-moving-line-change",
+        "rule-trigram-composition",
+        "term-moving-line",
+        "term-lower-trigram",
+        "term-upper-trigram",
+        "rule-line-position-order"
+      ]
+    },
+    {
+      "id": "nhl-intro-ch04-selected-tung-ly",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 73,
+      "pdfPageEnd": 73,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-tung-to-ly"]
+    },
+    {
+      "id": "nhl-intro-ch05-scope",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 77,
+      "pdfPageEnd": 77,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-yin-yang-glyphs",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 77,
+      "pdfPageEnd": 78,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-earthquake-account",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 78,
+      "pdfPageEnd": 78,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-qian-kun-origins",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 78,
+      "pdfPageEnd": 79,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-lao-comparison",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 79,
+      "pdfPageEnd": 80,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-taiji-wuji",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 79,
+      "pdfPageEnd": 81,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-four-diagrams",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 80,
+      "pdfPageEnd": 81,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-yinyang-quotes",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 81,
+      "pdfPageEnd": 82,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-mutual-generation-quotes",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 82,
+      "pdfPageEnd": 82,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-one-yin-one-yang",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 82,
+      "pdfPageEnd": 83,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-taiji-meaning",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 83,
+      "pdfPageEnd": 84,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-fuxi-gou-glyphs",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 84,
+      "pdfPageEnd": 84,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-month-chart",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 84,
+      "pdfPageEnd": 86,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-formation-destruction",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 84,
+      "pdfPageEnd": 86,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-complementarity",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 86,
+      "pdfPageEnd": 87,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-hegel-comparison",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 87,
+      "pdfPageEnd": 87,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-seeking-correspondence",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 87,
+      "pdfPageEnd": 88,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-both-move",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 88,
+      "pdfPageEnd": 89,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-change-order",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 89,
+      "pdfPageEnd": 90,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-gradual-sudden",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 90,
+      "pdfPageEnd": 91,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-su-water-moon",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 91,
+      "pdfPageEnd": 91,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-constant-law",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 91,
+      "pdfPageEnd": 92,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-loss-gain-examples",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 92,
+      "pdfPageEnd": 93,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-return-law",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 93,
+      "pdfPageEnd": 95,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-progress-question",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 95,
+      "pdfPageEnd": 96,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-modern-technics-report",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 95,
+      "pdfPageEnd": 96,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-fate-efficacy",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 96,
+      "pdfPageEnd": 96,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch05-fate-responses",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 97,
+      "pdfPageEnd": 97,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-05"]
+    },
+    {
+      "id": "nhl-intro-ch06-unity",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 98,
+      "pdfPageEnd": 98,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-social-frame",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 99,
+      "pdfPageEnd": 99,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-nourishment",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 99,
+      "pdfPageEnd": 99,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-character-friends",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 99,
+      "pdfPageEnd": 100,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-family-gender",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 100,
+      "pdfPageEnd": 100,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-education-case",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 100,
+      "pdfPageEnd": 100,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-filial-analects",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 100,
+      "pdfPageEnd": 101,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-gu-five-lines",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 101,
+      "pdfPageEnd": 101,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-litigation-two-readings",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 101,
+      "pdfPageEnd": 102,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-litigation-lines",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 102,
+      "pdfPageEnd": 102,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-travel-diagram",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 102,
+      "pdfPageEnd": 103,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-refugee-report",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 103,
+      "pdfPageEnd": 103,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-restraint-equality",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 103,
+      "pdfPageEnd": 104,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-penal-disagreement",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 104,
+      "pdfPageEnd": 104,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-army",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 104,
+      "pdfPageEnd": 105,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-unity-and-gathering",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 105,
+      "pdfPageEnd": 105,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-officials-cases",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 105,
+      "pdfPageEnd": 106,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-sincerity-cases",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 106,
+      "pdfPageEnd": 106,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-reform",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 106,
+      "pdfPageEnd": 107,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-relief",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 107,
+      "pdfPageEnd": 107,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch06-sacrifice",
+      "parentId": "nhl-intro-ch06",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 107,
+      "pdfPageEnd": 108,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-06"]
+    },
+    {
+      "id": "nhl-intro-ch07-layer-example",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 109,
+      "pdfPageEnd": 109,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-nine-virtues",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 109,
+      "pdfPageEnd": 110,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-modesty-quotes",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 110,
+      "pdfPageEnd": 110,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-modesty-cases",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 110,
+      "pdfPageEnd": 111,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-strength-cases",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 111,
+      "pdfPageEnd": 112,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-softness-cases",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 112,
+      "pdfPageEnd": 112,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-confucius-learning",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 112,
+      "pdfPageEnd": 112,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-lao-softness",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 113,
+      "pdfPageEnd": 113,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-compliance-limits",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 113,
+      "pdfPageEnd": 113,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-activity-stillness",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 113,
+      "pdfPageEnd": 114,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-ornament",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 114,
+      "pdfPageEnd": 115,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-zheng-summary",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 115,
+      "pdfPageEnd": 115,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-central-counterexamples",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 116,
+      "pdfPageEnd": 116,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-central-histories",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 116,
+      "pdfPageEnd": 117,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-moderation-cases",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 117,
+      "pdfPageEnd": 118,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-central-not-indecisive",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 118,
+      "pdfPageEnd": 119,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-time-includes-both",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 119,
+      "pdfPageEnd": 120,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-every-hexagram-time",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 120,
+      "pdfPageEnd": 121,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-social-melancholy",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 120,
+      "pdfPageEnd": 122,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-kinh-truyen-pessimism",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 122,
+      "pdfPageEnd": 122,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-small-times",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 122,
+      "pdfPageEnd": 123,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-same-position-other-time",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 123,
+      "pdfPageEnd": 123,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-only-time",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 124,
+      "pdfPageEnd": 124,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-gentleman-synthesis",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 124,
+      "pdfPageEnd": 125,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-optimism-conflict",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 125,
+      "pdfPageEnd": 126,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-intro-ch07-ending-date",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 126,
+      "pdfPageEnd": 126,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
+    },
+    {
+      "id": "nhl-part2-framing-title",
+      "parentId": "nhl-part2-framing",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 127,
+      "pdfPageEnd": 127,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
+    },
+    {
+      "id": "nhl-part2-framing-kinh-layers",
+      "parentId": "nhl-part2-framing",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 128,
+      "pdfPageEnd": 128,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
+    },
+    {
+      "id": "nhl-part2-framing-selective-wings",
+      "parentId": "nhl-part2-framing",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 128,
+      "pdfPageEnd": 128,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
+    },
+    {
+      "id": "nhl-part2-framing-consulted-authors",
+      "parentId": "nhl-part2-framing",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 128,
+      "pdfPageEnd": 129,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
+    },
+    {
+      "id": "nhl-part2-framing-method-limit",
+      "parentId": "nhl-part2-framing",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 128,
+      "pdfPageEnd": 129,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
+    },
+    {
+      "id": "nhl-part2-framing-number-warning",
+      "parentId": "nhl-part2-framing",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 130,
+      "pdfPageEnd": 130,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-part2-framing"]
+    },
+    {
+      "id": "nhl-retrospective-retirement",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 389,
+      "pdfPageEnd": 389,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-study-family",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 389,
+      "pdfPageEnd": 389,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-early-books",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 389,
+      "pdfPageEnd": 390,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-literary-roster",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 390,
+      "pdfPageEnd": 390,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-philosophy-method",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 390,
+      "pdfPageEnd": 390,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-pre1975-roster",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 390,
+      "pdfPageEnd": 391,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-post1975-roster",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 391,
+      "pdfPageEnd": 391,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-counts-evaluation",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 391,
+      "pdfPageEnd": 392,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-retrospective-closing",
+      "parentId": "nhl-retrospective",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 392,
+      "pdfPageEnd": 392,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-retrospective"]
+    },
+    {
+      "id": "nhl-cover-title-accounting",
+      "parentId": "nhl-cover-title",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 1,
+      "pdfPageEnd": 1,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
+    },
+    {
+      "id": "nhl-digital-copy-credit-accounting",
+      "parentId": "nhl-digital-copy-credit",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 2,
+      "pdfPageEnd": 2,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
+    },
+    {
+      "id": "nhl-blank-003-accounting",
+      "parentId": "nhl-blank-003",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 3,
+      "pdfPageEnd": 3,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
+    },
+    {
+      "id": "nhl-contents-accounting",
+      "parentId": "nhl-contents",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 4,
+      "pdfPageEnd": 9,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
+    },
+    {
+      "id": "nhl-blank-393-accounting",
+      "parentId": "nhl-blank-393",
+      "kind": "non-content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 393,
+      "pdfPageEnd": 393,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-front-end-accounting"]
+    },
+    {
+      "id": "nhl-intro-ch05-selected-seven-changes",
+      "parentId": "nhl-intro-ch05",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 94,
+      "pdfPageEnd": 94,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["hexagram-24"]
+    },
+    {
+      "id": "nhl-intro-ch04-orphan-note-marker",
+      "parentId": "nhl-intro-ch04",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 68,
+      "pdfPageEnd": 68,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-04"]
+    },
+    {
+      "id": "nhl-intro-ch07-orphan-note-marker",
+      "parentId": "nhl-intro-ch07",
+      "kind": "content",
+      "group": "NHL feat-059 inspected passage dispositions",
+      "editionId": "edition-nhl-supplied",
+      "pdfPageStart": 124,
+      "pdfPageEnd": 126,
+      "authorFeatureId": "feat-059",
+      "auditFeatureId": "feat-092",
+      "layerScopeIds": [
+        "layer-nhl-original-text",
+        "layer-nhl-translation",
+        "layer-nhl-author-commentary"
+      ],
+      "discoveryStatus": "unresolved",
+      "recordIds": ["article-nhl-introduction-07"]
     }
   ],
   "exclusions": [

@@ -1678,3 +1678,36 @@ are released. Prior authored records/citations, exclusions and global layer rost
 remain semantically unchanged apart from validated058 cohort assignments. This is
 source comparison, not feat-091 audit, independent verification, certification,
 rights clearance or predictive efficacy. Those gates remain open work and report closed.
+
+## Feat-059 source comparison
+
+The worker compared NHL foreword10–11, all seven chapters12–126, PartII
+framing127–130 and retrospective389–392 against every corresponding page image,
+with context1–9 and boundaries131/388/393. All137 individual page renderings were
+opened as unscaled full-resolution horizontal pairs (1.5x,918x1188 per page),
+except393 individually; no contact-sheet sample stands for assigned page review.
+Complete extracted passages were also compared; the local `/tmp/feat059/`
+`inspection-artifacts.json` binds rendered/extracted artifacts to the supplied
+393-page SHA. This is not whole-book visual review, independent verification or
+feat-092 audit. The [passage register](../reviews/knowledge/source-inventory.md#feat-059-nhl-introduction-and-framing-passage-register)
+owns all child IDs, locators, non-content accounting, selected reuse and source
+label/diagram discrepancies discovered in this direct record.
+
+The eleven new articles release original Vietnamese summaries, not copied text
+or images. Quoted classical works, reported scholars, traditional authorship and
+NHL's evaluations remain separate attributed claims. NHL's Thập Dực arguments
+and historical/social examples are positions/reports, not independently verified
+history. His PartII method describes selective translation and commentary; it
+cannot establish later full-layer coverage. The five reused selections retain
+prior chapter4 terminology/casting and chapter5 p94 evidence unchanged; neither
+selection nor old navigation anchors establish complete chapters by themselves.
+
+All corpus records/citations outside059 remain semantically unchanged. This
+cohort has213 dispositions,208 new claims/citations and five reused selections.
+Global layer rosters,17 exclusions and audit/certification status are retained;
+only the source-supported388 boundary projection is reconciled outside the new
+child mappings. Edition year/rights remain unconfirmed. Orphan note markers,
+traditional author identities, source label conflicts and global layer discovery
+remain for later audit/edition reconciliation. No predictive efficacy, modern
+medical/legal/safety/financial/political advice, calendar, UI or core behavior is
+released, and no audit or certification gate is closed as completed work.
