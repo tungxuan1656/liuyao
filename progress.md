@@ -16,6 +16,16 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-06 — feat-056 merged
+
+**State**: done and merged to `main` in PR #84 at `bf6b0c09a5fe800259c5e7e59dd8a21166c08f8c`; reviewed exact head `2d4fa7b702754f9a380424935095e1a5ef109f0a`.
+**Done**: Added nine source-compared BPCT application chapters 27–35 (PDF 302–364), with 294 child units and 813 claim-specific citations. Preserved source gaps, repeated labels, truncations, translation disagreements, and attribution uncertainty without reconstructing missing content or adding modern advice.
+**Evidence**: Fresh exact-head independent review returned `OK`, no findings. PR-head verify run `37481096035`/job `112329099531`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed 3,547 tests (3,366 knowledge, 181 core); corpus validation and generated package checks passed. Integrated asset 8,848,657 bytes under the 9 MiB Workbox cap with 588,527 bytes headroom; all 18 precache entries remain.
+**Coverage**: The 294 child units and nine chapter parents remain routed to feat-090; source audit and corpus certification remain open. Prior records, exclusions, and layer rosters remain unchanged; no efficacy, medical, legal, or safety authority is claimed.
+**CI adjustment**: Three synthetic audit-test deadlines increased from 20/45/25 seconds to 90 seconds after measured CI runtimes exceeded the originals; assertions and child-process timeouts are unchanged. After CI reported `[vitest-worker]: Timeout calling "onTaskUpdate"` despite all tests passing with two workers, the knowledge test command was changed to one worker; final PR checks passed.
+**Blockers**: none for feat-056.
+**Next**: Continue with selected feat-057 from updated `main`.
+
 ## 2026-10-06 — feat-055 merged
 
 **State**: done and merged to `main` in PR #83 at `d0848eb7de6e776b8e421acc21f53fa209ee7e2d`; reviewed head `ddc8c1932a62e00752bc6e7b6b3b09f31a3e8220`.
