@@ -1534,3 +1534,85 @@ and exclusions remain. This is feat-056 source comparison, not feat-090 source
 audit, separate verification, certification or predictive efficacy. No source
 text/images are redistributed and no UI, calculation or interpretation behaviour
 is added. The audit/certification gates retain their existing unfulfilled status.
+
+## feat-057 source comparison
+
+The worker read complete PyMuPDF extraction artifacts `/tmp/feat057/365.txt` through
+`/tmp/feat057/428.txt`, boundary364/429 and credits1–3, and individually opened every
+corresponding full-page PNG (1.5x render,918x1188). No contact sheet substitutes for
+an assigned page. This covers all64 assigned page images including dense charts and
+footnote overlaps, not an independent audit. The supplied467-page fingerprint remains
+`713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`.
+The [passage register](../reviews/knowledge/source-inventory.md#feat-057-questions-and-ha-tri-passage-register)
+owns unit IDs, individual locators, reused claims and fine dispositions.
+
+Questions1–18 occupy365–412. Their131 separate example contexts include repeated
+casts and repeated stories, with129 separately inspected charts; Q9's two religious
+stories on387 have no printed chart. Each question/query, answer rule, example context,
+attributed experiment, chart observation, printed note and separate concluding passage
+has its own disposition. Charts release only specifically selected image-read annotation
+summaries, not full board reconstructions or calculation fixtures. There are35 numbered
+question notes:1–18 before Q12, then1–17 with repeated labels after the reset. The
+unnumbered Ghi chú403 is a separate translator dissent, never full Q14 coverage.
+
+- Q1 distinguishes competing sinh/khắc from sufficient support: note11 in Q7 later
+  requires strength for xung Không. The Q1 Đại Quá chart prints Dậu as a relative label;
+  it is not silently replaced. Q2's Trung Phu chart shows a Tị transformation without
+  a movement marker while prose calls ngũ; selected annotation/prose remain separate.
+- Q3 note7 expressly says the casting year is unrecorded, so Thái Tuế cannot be supplied.
+  Q4 retains the one-impaired-member cục cases (quiet, Không, Phá, hợp, Mộ, Tuyệt),
+  incomplete printed transformation labels and stray line strokes without extra hào.
+  Its hụi story's Tài at Ứng is another person's wife, not indiscriminately the self's wife.
+- Q5/Q6 selected conditional claims remain unchanged and are reused. New contexts and
+  attributed outcomes extend, not replace, those selections. Q6's answer actually prints
+  nội Phản ngâm in its Phục ngâm discussion. Q7's Đồng Nhân prose says Hợi Quan at Thế,
+  while its chart puts Thế at Sửu Tử; no calculator repairs this difference.
+- Q7's corpse-search story fails the first Canh Thân prediction and later reports Nhâm
+  Thân. Its last rain story fails the proposed Ất Mão date before the later Tân Dậu account.
+  Q13's chronic-illness story predicts not today, yet reports death today; note10 gives
+  another rationale. Success language does not conceal these failures or certify efficacy.
+- Q10's complete three Tiến/three Thoái conditions reuse the existing four claims.
+  Q12's existing rescue-limit claim remains the owner of that conditional explanation;
+  the newly located dialogue/outcome is separate. Its Tổn chart repeats Ứng at both ends;
+  note4 states that the childbirth questioner is unknown and suggests only the baby died.
+- Q13 note9 retains its existing Tuất-versus-Thìn Dụng disagreement. Note11 separately
+  rejects the compiler's Phụ-khắc-Tử account in favour of hidden Tử restrained by Phi.
+  Q14's full answer/examples are not represented by the older403 objection alone.
+  Its Ghi chú gives another Hình roster and rejects the first example's reasoning; neither
+  roster becomes a harmonized Hình table. Self-Hình definition and the three differently
+  named branches of its second example are preserved, not silently made consistent.
+- Q16 prints mười sau. Its Li chart contains a Quan transformation although the passage
+  calls it tận tĩnh; another paragraph prints nên nên chôn beside an explicit warning
+  against burial. Q17's Sư→Hoán story has an unmarked six-line chart, not a reconstructed
+  moving board; Q18's Lữ→Cấn story likewise lacks drawn transformation annotations.
+  Q17 repeats Q7's Tiểu Súc context but adds giờ Tị and another Không annotation.
+  Q18 distinguishes stated question, actual purpose and who initiated proxy enquiry;
+  its claim that the questioner causes failed readings is author rhetoric, not established blame.
+
+PDF412's separately headed, unsigned **Một Cách Xem Lục Hào** follows Q18 after a
+separator. It has its own supplement article with18 separate framing, special-passage,
+0–6 moving-line rules and examples. References to Trương Lý, Chu tử and Thiệu Vĩ Hoa
+are attributed to that insertion, not signatures establishing its writer/translator.
+The Ký Tế→Quải example and the Lâm example choosing sơ despite calling for quiet lines
+remain as printed; the six-moving rule does not identify which quẻ's Soán to use.
+No missing subject, calculation correction or interpretation behavior is supplied.
+PDF413 contains only folio366. Hà Tri starts414 at printed375, not367; it ends428 at389.
+PDF429 starts the next casting supplement at printed388 and is excluded from feat-057.
+
+Hà Tri has all60 numbered verse/reading pairs and independently printed Vietnamese
+meanings, but no separately printed commentary/explanation. Item4's meaning begins415;
+21/25/29/42/46 cross page boundaries. Four notes attach12,17,23,54 respectively, and
+428 has a separately disposed closing verse/reading and meaning. General front phú
+credits do not establish individual Hà Tri authorship. The meaning adds giao trùng in6,
+omits explicit động in9, changes đắc vị to vượng in16, says Mộ Khố in17 where note2
+rejects nhập Mộ, and changes Hợi/Tí to Tị/Hợi in30. Item39's Quỷ vị xuyết differs from
+its meaning's bị Quỷ phá;40's meaning calling Tước Mộc is not a new fixed spirit element.
+49's đầu thuỷ question differs from its meaning's chết nước. These differences remain
+separately cited, not silently translated into agreement. The closing's claimed efficacy
+and kiếm cơm rhetoric are source assertions, not proof or advice.
+
+No supplied prose/images, reconstructed missing labels, certified outcomes, medical,
+legal, tactical, safety, financial, ritual, self-harm or human-ownership authority is
+released. All prior authored records/citations and exclusions remain semantically unchanged.
+Global layer rosters/discovery, feat-091 source audit, separate verification and corpus
+certification remain unfulfilled; this authoring comparison does not close their gates.

@@ -237,6 +237,6 @@ describe('feat-048 integrated quẻ 57-60 and BPCT 41-48', () => {
       }
     }
     expect(manifest.nextBatch.hexagramIds).toEqual([]);
-    expect(manifest.nextBatch.note).toMatch(/feat-056/);
+    expect(manifest.nextBatch.note).toMatch(/feat-058/);
   });
 });

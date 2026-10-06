@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 267, "released": 267, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 7287, "missingCitationIds": [] },
-  "citations": { "total": 7533 },
+  "records": { "authored": 268, "released": 268, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 7414, "missingCitationIds": [] },
+  "citations": { "total": 7660 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -499,7 +499,8 @@
         "article-bpct-question-16",
         "article-bpct-question-17",
         "article-bpct-question-18",
-        "article-bpct-moving-lines-insertion"
+        "article-bpct-moving-lines-insertion",
+        "article-bpct-ha-tri"
       ]
     },
     {
@@ -1711,15 +1712,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-057: BPCT Part II mười tám câu hỏi và Hà Tri Chương; theo các ranh đơn vị trong source inventory. feat-056 đã đối chiếu nguồn chương27–35 PDF302–364, giữ vai câu hỏi, nghĩa Việt riêng, chú/bất đồng28/14, hai23 ở29, thiếu5 ở35 và câu bị cụt. Không hiệu nghiệm, lời pháp lý/y tế/an toàn/tác chiến/truy bắt hoặc tính lịch/diễn giải tự động; audit090 và cổng corpus vẫn còn nghĩa vụ, chưa chứng nhận."
+    "note": "Dự kiến feat-058: BPCT Yếu Quyết Về Gieo Tiền PDF429–457 và phê bình I–XV PDF458–466; theo source inventory, không bịa mụcIII. feat-057 đối chiếu18 câu hỏi PDF365–412, bài chèn412, trang413 chỉ folio, Hà Tri60 câu/chú/kết PDF414–428. Giữ claim chọn trước/bất đồng/sai hẹn và thiếu nhãn; audit091, xác minh/certification còn mở. Không tính lịch, bộ diễn giải hay lời y tế/pháp lý/an toàn/tài chính."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 4113,
+        "required": 4241,
         "current": 84,
-        "missing": 4029,
+        "missing": 4157,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1727,9 +1728,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 2409 },
-        { "code": "missing-decision", "count": 4029 },
-        { "code": "released-claim-coverage-incomplete", "count": 7090 }
+        { "code": "unresolved-source-discovery", "count": 2536 },
+        { "code": "missing-decision", "count": 4157 },
+        { "code": "released-claim-coverage-incomplete", "count": 7217 }
       ]
     },
     "certification": {
@@ -1737,7 +1738,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 4113,
+        "required": 4241,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

@@ -49,10 +49,11 @@
     {
       "id": "article-bpct-question-06-bpct-question-06-example-01-experiment",
       "kind": "author-interpretation",
-      "text": "Nguồn phân Thế Ngọ/Ứng Tí cha mẹ được sinh tĩnh và Dần Huynh Phá/Phục ngâm; kể lánh đông bình an nhưng em bị hại trên đường thăm. Hướng đông/tây chỉ nhận định nguồn, không an toàn.",
+      "text": "Bối cảnh cả nhà trước quân sắp đến: tác giả liên hệ đông Mộc trợ Hoả/tây Kim trợ Phụ, gia đình đi đông; sau người hỏi kể bình an chỉ em bị hại trên đường thăm. Vai Thế/Ứng/Huynh khác nhau đã có article-repeated-chant-context-roles; hướng chỉ lời nguồn, không an toàn/di tản.",
       "citationIds": [
         "citation-bpct-question-06-example-01-experiment",
         "citation-bpct-question-06-example-01",
+        "citation-bpct-part2-repeated-chant-effects",
         "citation-bpct-question-06-example-01-chart"
       ],
       "attribution": {
@@ -61,7 +62,8 @@
       },
       "conditions": [
         "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
+      ],
+      "dependsOnClaimIds": ["article-repeated-chant-context-roles"]
     },
     {
       "id": "article-bpct-question-06-bpct-question-06-example-01-chart",
@@ -222,6 +224,7 @@
       "citation-bpct-question-06-answer",
       "citation-bpct-question-06-example-01",
       "citation-bpct-question-06-example-01-experiment",
+      "citation-bpct-part2-repeated-chant-effects",
       "citation-bpct-question-06-example-01-chart",
       "citation-bpct-question-06-example-02",
       "citation-bpct-question-06-example-02-experiment",

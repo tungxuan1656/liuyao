@@ -134,4 +134,65 @@ describe('feat-057 question, experiment, chart and source-layer locators', () =>
       layerScopeIds: ['layer-bpct-uncredited-supplement'],
     });
   });
+
+  it('accounts for all 18 questions, 60 Hà Tri entries, notes and absent layers', () => {
+    const counts = [5, 11, 4, 12, 5, 4, 14, 7, 7, 5, 8, 13, 10, 4, 7, 4, 5, 6];
+    expect(locators).toHaveLength(611);
+    expect(locators.filter(u => u.voice === 'question')).toHaveLength(18);
+    expect(locators.filter(u => u.voice === 'attributed-experiment')).toHaveLength(131);
+    expect(locators.filter(u => u.voice === 'chart-observation')).toHaveLength(129);
+    for (const [index, count] of counts.entries()) {
+      const q = index + 1;
+      expect(
+        locators.filter(u => u.recordId === record(q).id && u.voice === 'example-context'),
+      ).toHaveLength(count);
+    }
+    const haTri = getBookRecord('article-bpct-ha-tri')!;
+    expect(haTri.claims).toHaveLength(127);
+    for (let n = 1; n <= 60; n++) {
+      const id = `bpct-hatri-${String(n).padStart(2, '0')}`;
+      expect(registry.groups.find(g => g.id === id)).toMatchObject({
+        number: n,
+        recordIds: [haTri.id],
+        layerScopeIds: ['layer-bpct-original-text', 'layer-bpct-translation'],
+      });
+      expect(unit(`${id}-verse`).claimIds).toHaveLength(1);
+      expect(unit(`${id}-meaning`).claimIds).toHaveLength(1);
+      expect(locators.some(u => u.id === `${id}-commentary`)).toBe(false);
+    }
+    expect(unit('bpct-hatri-04-meaning').pdfPages).toEqual([415, 415]);
+    expect(unit('bpct-hatri-21-verse').pdfPages).toEqual([418, 419]);
+    expect(unit('bpct-hatri-25-verse').pdfPages).toEqual([419, 420]);
+    expect(unit('bpct-hatri-29-verse').pdfPages).toEqual([420, 421]);
+    expect(unit('bpct-hatri-42-verse').pdfPages).toEqual([423, 424]);
+    expect(unit('bpct-hatri-46-verse').pdfPages).toEqual([424, 425]);
+    for (const [note, entry] of [
+      ['01', '12'],
+      ['02', '17'],
+      ['03', '23'],
+      ['04', '54'],
+    ]) {
+      expect(unit(`bpct-hatri-note-${note}`).parentId).toBe(`bpct-hatri-${entry}`);
+    }
+    expect(haTri.claims.find(c => c.id.endsWith('06-meaning'))?.text).toMatch(/thêm.*giao trùng/);
+    expect(haTri.claims.find(c => c.id.endsWith('30-verse'))?.text).toMatch(/Hợi Tí/);
+    expect(haTri.claims.find(c => c.id.endsWith('30-meaning'))?.text).toMatch(/Tị Hợi thay Hợi Tí/);
+    expect(haTri.claims.find(c => c.id.endsWith('39-meaning'))?.text).toMatch(/khác vế chưa xuyết/);
+    expect(haTri.claims.find(c => c.id.endsWith('49-meaning'))?.text).toMatch(/khác đầu thuỷ/);
+    expect(registry.groups.find(g => g.id === 'bpct-transition-413')).toMatchObject({
+      kind: 'non-content',
+      pdfPageStart: 413,
+      pdfPageEnd: 413,
+      discoveryStatus: 'unresolved',
+    });
+    expect(
+      locators.every(u => u.pdfPages.length === 2 && u.pdfPages.every(p => p >= 365 && p <= 428)),
+    ).toBe(true);
+    expect(manifest.nextBatch.note).toMatch(/feat-058.*PDF429–457/);
+    const articles = manifest.releaseIds.filter(id =>
+      /^article-bpct-(question-\d+|ha-tri|moving-lines-insertion)$/.test(id),
+    );
+    expect(articles).toHaveLength(20);
+    expect(articles.reduce((n, id) => n + getBookRecord(id)!.claims.length, 0)).toBe(608);
+  });
 });

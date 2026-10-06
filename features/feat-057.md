@@ -19,11 +19,11 @@ New interpretation, calendar, or UI behavior.
 - [x] Questions 1–6.
 - [x] Questions 7–12.
 - [x] Questions 13–18.
-- [ ] Every Hà Tri Chương heading, explanation, and note.
-- [ ] Give each question and subordinate passage its own inventory disposition.
-- [ ] Distinguish the question, attributed experiment, example, and general conditional rule.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Every Hà Tri Chương heading, explanation, and note.
+- [x] Give each question and subordinate passage its own inventory disposition.
+- [x] Distinguish the question, attributed experiment, example, and general conditional rule.
+- [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -57,6 +57,9 @@ New interpretation, calendar, or UI behavior.
 - Treat the unsigned different-font insertion after Q18 on PDF412 as a separate supplement within the assigned page interval, not a nineteenth question or certain compiler/translator text.
 - Supervisor approved updating only the existing aggregate registry census expectations to the source-derived total, preserving assertion strength and all test/child-process timeouts. Final next-batch matches will move to actual feat-058, not preserve obsolete planning text.
 
+- The fresh integrated asset exceeded9MiB (9,437,184 bytes): measured9,862,515 bytes. Raise only `maximumFileSizeToCacheInBytes` to10MiB (10,485,760), keeping623,245 bytes reserve; retain18 precache entries and all other PWA settings.
+- Supervisor also approved refreshing the remaining existing aggregate registry/release/claim/citation expected literals to2536/268/7414/7660 and moving next-batch assertions tofeat-058. No test assertion is weakened and no test/child-process timeout changes.
+
 ## Implementation checkpoints
 
 - Questions1–6: inspected all source passages/images, added six original-summary articles,41 dated/repeated example contexts and41 separate chart observations,10 notes, six queries, five new answer summaries plus reused Q5 answer. Checkpoint corpus validates254 records/6951 claims/7197 citations; new cohort145 claims with146 dispositions. Baseline `./init.sh` passed181 core and3366 knowledge tests. Full final gates remain pending.
@@ -64,6 +67,17 @@ New interpretation, calendar, or UI behavior.
 - Questions7–12: checkpoint `bb12a1b` preserves Q1–6. Added six articles and54 separately located example contexts/experiments,52 charts (two Q9 passages have no chart),16 notes; Q10 answer reuses four existing claims. Cumulative332 new claims/334 dispositions,260 records/7138 claims/7384 citations,2258 registry groups. Source-specific tests retain two failed timing claims, different Thế/Ứng labels, repeated questioning and note disagreements.
 
 - Questions13–18: checkpoint `30f33a5` preserves Q1–12. Added six question articles,36 examples/experiments/charts, nine printed notes (Q13 note9 reuses the existing disagreement), Q12 separate conclusion, Q13 red emphasis and Q14 full detailed Ghi chú. The unsigned412 insertion has its own article and18 separate framing/rule/example/special dispositions using the existing uncredited-supplement layer. Cumulative481 new claims/484 mapped fine dispositions;267 records/7287 claims/7533 citations;2409 registry groups. Individual413 confirms folio-only366; Hà Tri release remains the next checkpoint.
+
+- Hà Tri and reconciliation: checkpoint `4bdbed4` preserves the18 questions; all60 verse/reading and meaning pairs, four notes, heading and two closing-layer summaries add127 claims. No independent commentary layer is synthesized. Q5/Q6/Q12 selected conditional claims remain their existing owners via supporting dependencies; new outcomes/dialogues add only remaining context. Cohort20 records/608 new claims/citations/611 fine mapped dispositions plus one insertion parent;612 new registry groups,2536 total, all19 global layer rosters and17 exclusions unchanged.
+
+## Worker verification evidence
+
+- Source: all64 assigned full-page images and extraction artifacts `/tmp/feat057/365..428.{png,txt}` individually inspected, plus364/429 boundaries and1–3 credits. Images are918x1188 at1.5x render, not contact sheets or all467 source pages. Question/example/experiment/chart/notes and all60 Hà Tri entry/layer dispositions are in the canonical register; detailed source limits stay in the source catalog.
+- Baseline full gate passed; checkpoint focused runs passed148/337/488 tests, final new-file focused run616 and six-file focused suite977. First final full run found only stale aggregate census expectations and a new-test array-index type error; narrow approved corrections preserve assertion strength/timeouts. Fresh package build and `validate:corpus --check-books --check` pass; corrected final `./init.sh` passed all gates and4163 tests (181 core/3982 knowledge).
+- Package export/preservation comparison `/tmp/feat057/check-exports.mjs` resolves the production `@liuyao/knowledge` export, compares all20 new records/608 citations and all248 prior records (6806 claims)/7052 citations, and checks1843 non-cohort groups,81 retained cohort parent IDs, all19 layer rosters and17 exclusions. All semantic preservation checks pass.
+- Final source-compared totals:268 released records/7414 claims/7660 citations;64 quẻ/384 positions unchanged. Snapshot `liuyao-knowledge-snapshot-v1:sha256:80df438c43029dc68830b61861cc58bad1a122c288ba34904d9f77245f682b99`. SourceReview/certification remain closed; feat-091 has0/813 current obligations; this is not feat-091 audit, separate verification or corpus certification.
+- PWA: fresh asset `index-hWzhFL3V.js`,9,862,515 bytes,10MiB cap,623,245-byte headroom. Build/compiled-export probe checks18 SW precache entries including that asset and byte-equivalent PWA configuration except the cap/comment.
+- Parent retains final review/status/handoff/publication/merge ownership; no `feature_index.json` or `progress.md` changes, branch switch, push or PR.
 
 ## Handoff
 
