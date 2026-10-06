@@ -920,3 +920,8 @@ Commentary is separately attributed to the compilation through Vĩnh Cao. Notes 
 | `bpct-board-22` | Cấn/6: Thiên Trạch LÝ            | 55 / 55–55                          | Phục: 5: Tài Tí; Quái thân: none; Thế: 5; Ứng: 2                    | Included: `article-bpct-boards-can-mountain`, `figure-bpct-board-22-board`; six observed lines and separate complete commentary; conflicts remain non-authoritative source readings. |
 | `bpct-board-23` | Cấn/7: Phong Trạch TRUNG PHU     | 55 / 55–55                          | Phục: 5: Tài Tí; 3: Tử Thân; Quái thân: none; Thế: 4; Ứng: 1        | Included: `article-bpct-boards-can-mountain`, `figure-bpct-board-23-board`; six observed lines and separate complete commentary; conflicts remain non-authoritative source readings. |
 | `bpct-board-24` | Cấn/8: Phong Sơn TIỆM            | 55 / 55–56                          | Phục: 5: Tài Tí; Quái thân: none; Thế: 3; Ứng: 6                    | Included: `article-bpct-boards-can-mountain`, `figure-bpct-board-24-board`; six observed lines and separate complete commentary; conflicts remain non-authoritative source readings. |
+
+The pre-existing expected-unit registry had provisional board starts differing from this canonical
+board-heading register (notably Phong, Cấn, Khuê, Tiệm, Chấn and subsequent shared-page starts).
+Feat-051 corrected every board registry start/end to the inspected heading and full commentary
+bounds. This is locator reconciliation, not board-content repair; no obligation or board ID is removed.
