@@ -1,0 +1,1761 @@
+{
+  "schemaVersion": 1,
+  "citations": [
+    {
+      "id": "citation-bpct-front-credits-compilation",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-credits — compilation",
+        "pdfPageStart": 1,
+        "pdfPageEnd": 1
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — tín chỉ"
+    },
+    {
+      "id": "citation-bpct-front-credits-phu",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-credits — phu",
+        "pdfPageStart": 1,
+        "pdfPageEnd": 1
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — tín chỉ"
+    },
+    {
+      "id": "citation-bpct-front-credits-translation",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-credits — translation",
+        "pdfPageStart": 2,
+        "pdfPageEnd": 2
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-translator-preface-history",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-translator-preface — history",
+        "pdfPageStart": 2,
+        "pdfPageEnd": 3
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-translator-preface-edition",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-translator-preface — edition",
+        "pdfPageStart": 3,
+        "pdfPageEnd": 3
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-preface-endorsement",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-preface — endorsement",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Trương Cảnh Tùng"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-01-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-01 — author",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-02-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-02 — author",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-03-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-03 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-04-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-04 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-05-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-05 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-06-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-06 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-note-01-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-01 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-02-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-02 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-03-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-03 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-04-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-04 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-05-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-05 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-06-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-06 — note",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-07-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-07 — note",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-cach-ngon-sincerity",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-cach-ngon — sincerity",
+        "pdfPageStart": 6,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-cach-ngon-exploitation",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-cach-ngon — exploitation",
+        "pdfPageStart": 6,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-cach-ngon-closing",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-cach-ngon — closing",
+        "pdfPageStart": 6,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — discussion",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 8,
+        "printedPageStart": "1",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ii — discussion",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — discussion",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iv — discussion",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9,
+        "printedPageStart": "3",
+        "printedPageEnd": "3"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-v-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-v — discussion",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9,
+        "printedPageStart": "3",
+        "printedPageEnd": "3"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-vi-can-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-vi-can — discussion",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 10,
+        "printedPageStart": "3",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-vi-chi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-vi-chi — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-vii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-vii — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-viii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-viii — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 11,
+        "printedPageStart": "4",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-x-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-x — discussion",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 12,
+        "printedPageStart": "5",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xi — discussion",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 13,
+        "printedPageStart": "6",
+        "printedPageEnd": "7"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xii — discussion",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 13,
+        "printedPageStart": "7",
+        "printedPageEnd": "7"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — discussion",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 14,
+        "printedPageStart": "7",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — discussion",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — discussion",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 16,
+        "printedPageStart": "9",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xvi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xvi — discussion",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xvii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xvii — discussion",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 17,
+        "printedPageStart": "10",
+        "printedPageEnd": "11"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xviii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xviii — discussion",
+        "pdfPageStart": 17,
+        "pdfPageEnd": 17,
+        "printedPageStart": "11",
+        "printedPageEnd": "11"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xix-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xix — discussion",
+        "pdfPageStart": 17,
+        "pdfPageEnd": 18,
+        "printedPageStart": "11",
+        "printedPageEnd": "12"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xx-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xx — discussion",
+        "pdfPageStart": 18,
+        "pdfPageEnd": 18,
+        "printedPageStart": "12",
+        "printedPageEnd": "12"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxi — discussion",
+        "pdfPageStart": 18,
+        "pdfPageEnd": 18,
+        "printedPageStart": "12",
+        "printedPageEnd": "12"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxii — discussion",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19,
+        "printedPageStart": "13",
+        "printedPageEnd": "13"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxiii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxiii — discussion",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 20,
+        "printedPageStart": "13",
+        "printedPageEnd": "14"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxiv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxiv — discussion",
+        "pdfPageStart": 20,
+        "pdfPageEnd": 20,
+        "printedPageStart": "14",
+        "printedPageEnd": "14"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxv — discussion",
+        "pdfPageStart": 20,
+        "pdfPageEnd": 21,
+        "printedPageStart": "14",
+        "printedPageEnd": "15"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-01",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-01",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-02",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-02",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-03",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-03",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-04",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-04",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-05",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-05",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-06",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-06",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-07",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-07",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-08",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-08",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-09",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-09",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-10",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-10",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-11",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-11",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-12",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-12",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-13",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-13",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-14",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-14",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-15",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-15",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-16",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-16",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-17",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-17",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-18",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-18",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-19",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-19",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-20",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-20",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-21",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-21",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-22",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-22",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-23",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-23",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-24",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-24",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-25",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-25",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-26",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-26",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-27",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-27",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-28",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-28",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-29",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-29",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-30",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-30",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-note-01-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-note-01 — note",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-note-02-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-note-02 — note",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-x-verse",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-x — verse",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 12,
+        "printedPageStart": "5",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Ca quyết phép tiền — không ghi tác giả riêng"
+    },
+    {
+      "id": "citation-bpct-ch01-x-rendering",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-x — rendering",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12,
+        "printedPageStart": "6",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-ghi-chu",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — ghi-chu",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 15,
+        "printedPageStart": "8",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-1",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-2",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-3",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-4",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-5",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-6",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-7",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-7",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-8",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-8",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-1",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-2",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-3",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-4",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-5",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-6",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-7",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-7",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-8",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-8",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-1",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-2",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-3",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-4",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-5",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-6",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-7",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-7",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-8",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-8",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-6",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-5",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-4",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-3",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-2",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-1",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-6",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-5",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-4",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-3",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-2",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-1",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xvii-hand",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xvii — hand",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    }
+  ]
+}

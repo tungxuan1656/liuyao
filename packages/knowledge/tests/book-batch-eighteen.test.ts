@@ -50,3 +50,61 @@ describe('feat-051 complete BPCT front matter and chapters 1–5', () => {
     expect(registry.groups.filter(g => g.parentId === 'bpct-part1-ch03')).toHaveLength(2);
   });
 });
+
+// Original summary checks complement corpus schema/link validation.
+import front from '../data/liuyao/bpct-front-voices.json';
+import foundations from '../data/liuyao/bpct-chapter-one-foundations.json';
+import citations from '../data/citations/batch-eighteen-advanced.json';
+import { getBookCitation, getBookRecord } from '../src/index';
+
+describe('BPCT front voices and chapter-one evidence', () => {
+  it.each([front, foundations])(
+    'projects reviewed $id with its own citations and no source images',
+    record => {
+      expect(getBookRecord(record.id)).toEqual(record);
+      expect(record.review.method).toBe('source-comparison');
+      for (const claim of record.claims) {
+        expect(claim.conditions.join(' ')).toMatch(/không phải kết quả thực chứng/);
+        expect(claim.text).not.toMatch(/[\p{Script=Han}]/u);
+        for (const id of claim.citationIds) {
+          expect(getBookCitation(id)).toBeDefined();
+          expect(record.review.evidenceCitationIds).toContain(id);
+        }
+      }
+    },
+  );
+  it('keeps named voices and all seven front notes independent', () => {
+    expect(front.claims.filter(c => c.id.includes('front-note-'))).toHaveLength(7);
+    expect(new Set(front.claims.map(c => c.attribution.author))).toContain('Trương Cảnh Tùng');
+    expect(front.claims.filter(c => c.id.includes('pham-le-'))).toHaveLength(6);
+    expect(front.claims.find(c => c.id.endsWith('credits-phu'))?.text).toMatch(
+      /không coi.*từng bài/,
+    );
+  });
+  it('accounts for all observed chapter-one units, complete Nạp âm and six diagram/layout groups', () => {
+    const units = registry.groups.filter(g => g.parentId === 'bpct-part1-ch01');
+    expect(units).toHaveLength(28);
+    for (const unit of units) expect(unit.recordIds).toContain(foundations.id);
+    expect(foundations.claims.filter(c => /-pair-\d+$/.test(c.id))).toHaveLength(30);
+    expect(foundations.figures).toHaveLength(6);
+    for (const figure of foundations.figures) {
+      expect(figure.inspectionStatus).toBe('visually-inspected');
+      expect(figure.sourceUnitIds).toHaveLength(1);
+      for (const label of figure.labels)
+        expect(figure.claimIds).toEqual(expect.arrayContaining(label.claimIds));
+    }
+    const b = foundations.figures.find(f => f.id.includes('xv-example'));
+    expect(b?.labels.map(l => l.text)).toEqual(
+      expect.arrayContaining(['Hào 6: dương; Ứng', 'Hào 3: âm; Thế']),
+    );
+    expect(
+      citations.citations.find(c => c.id === 'citation-bpct-ch01-xv-line-3')?.location.pdfPageStart,
+    ).toBe(16);
+    expect(foundations.claims.find(c => c.id.endsWith('xviii-discussion'))?.text).toMatch(
+      /Không có dòng Tân/,
+    );
+    expect(foundations.claims.find(c => c.id.endsWith('xxv-discussion'))?.text).toMatch(
+      /24 phút.*không khớp/,
+    );
+  });
+});

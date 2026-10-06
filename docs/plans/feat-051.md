@@ -48,12 +48,12 @@
 - Test: `packages/knowledge/tests/book-batch-eighteen.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Author the front matter voices and credits on PDF 1–6 as separate claims.
-- [ ] Author all numbered definitions, methods, and diagrams in chapter 1 on PDF 7–21.
-- [ ] Cover the observed topics I–XXII without inferring that extraction gaps prove source absence.
-- [ ] Reconcile the already selected chapter 1 claims and the known examples at PDFs 8–15 without altering them absent new source evidence.
-- [ ] Add tests for claim IDs, citations, attribution, diagram evidence, exclusions, and public release projection.
-- [ ] Run the batch tests and corpus validator, then commit this checkpoint.
+- [x] Author the front matter voices and credits on PDF 1–6 as separate claims.
+- [x] Author all numbered definitions, methods, and diagrams in chapter 1 on PDF 7–21.
+- [x] Cover the observed topics I–XXII without inferring that extraction gaps prove source absence.
+- [x] Reconcile the already selected chapter 1 claims and the known examples at PDFs 8–15 without altering them absent new source evidence.
+- [x] Add tests for claim IDs, citations, attribution, diagram evidence, exclusions, and public release projection.
+- [x] Run the batch tests and corpus validator, then commit this checkpoint.
 
 ## Task 3: Author chapter 2
 

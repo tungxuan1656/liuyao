@@ -959,3 +959,24 @@ The [knowledge quality contract](../product-specs/knowledge-quality.md) defines 
 - V1 rules and source mapping → [Liu Yao ruleset](../design-docs/liuyao-ruleset-v1.md)
 - Content acceptance → [Knowledge quality](../product-specs/knowledge-quality.md)
 - Data ownership and storage → [Knowledge model](../design-docs/knowledge-model.md)
+
+### Feat-051 front matter and chapter-one comparison
+
+Full extracted passages and each individual page image at BPCT PDFs 1–76 were inspected;
+77 is chapter-boundary context only. The verified fingerprint remains the source catalog's BPCT SHA.
+[Front voices](../../packages/knowledge/data/liuyao/bpct-front-voices.json) separates title credits,
+Vĩnh Cao, Trương Cảnh Tùng, all six Phàm lệ, seven footnotes, and Vương Hồng Tự's maxims.
+Credits are edition testimony, not historical authorship certification. Nhu Tuân Thì on the title
+and Nhu Tôn Thì in the preface remain distinct spellings.
+[Chapter one](../../packages/knowledge/data/liuyao/bpct-chapter-one-foundations.json) covers I–XXV,
+including two VI headings, thirty Nạp âm pairs and six inspected diagram/layout groups.
+Its Ghi chú has no separate signature: transmission through Vĩnh Cao does not prove authorship
+of every inserted line. Existing selected records, claims and corrections remain unchanged.
+
+Additional source limitations: XIX's meaning omits Tí in the Ất/Kỷ pair and the Canh/Tân line;
+XVIII has no Tân Lộc/Nhẫn row. XVII repeats Hỏa at Tị/Dần in the numbered starts and has
+lược marks for most stage rosters. XX has Mão-to-Ngọ beside Mão-to-Tí and Tí/Mão/Ngọ;
+no complete Hình table is inferred. XXV's ten points per watch, 24 minutes per point and
+3:24 example conflict with its two-hour watch statement. Original summaries report these
+without supplying missing words, a modern calendar, stage algorithm, ritual or body assessment.
+The source inventory records unit-by-unit authoring routes; feat-084 and global gates remain open.

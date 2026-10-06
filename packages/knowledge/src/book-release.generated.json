@@ -1,12 +1,14 @@
 {
   "schemaVersion": 1,
-  "recordSchemaVersions": [1],
+  "recordSchemaVersions": [1, 2],
   "corpusId": "book-backed-knowledge-v1",
   "language": "vi",
   "releaseIds": [
     "article-advancing-retreating-spirits",
     "article-adverse-support-store-intervening-lines-and-release-context",
     "article-balance-excess-and-deficiency",
+    "article-bpct-chapter-one-foundations",
+    "article-bpct-front-voices",
     "article-combination-control-context",
     "article-combination-opposition-turnarounds",
     "article-day-and-month-authority-context",
@@ -41306,6 +41308,2117 @@
         ],
         "note": "Read complete extracted BPCT context at PDFs 1–3 and 93–101; directly inspected each individual full-page image at all those pages. SHA-256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a matches the supplied 467-page edition. Full verse/read/meaning/commentary boundaries: 57 PDF 94 (printed 80); 58 original 94, reading/meaning/commentary and note 12 at 95 (81); 59 at 95; 60 original 95, reading/meaning/commentary 96 (82); 61–62 at 96; 63 original/reading 96–97, meaning/commentary and note 13 at 97 (83); 64 at 97; 65 original 97–98, reading/meaning 98 (84), commentary 98–99 (85); 66–68 at 99; 69 verse/meaning 99, commentary 99–100 (86). Unnumbered closing paragraph at 100 has its own citation/claim; no sentence 70 is invented. Twelve timing cases at 58 retain compound conditions and ambiguous chế sát wording; no precedence algorithm or calendar is inferred. Note 12 attaches to trị in 58, not 60; note 13 attaches to năm loại in 63, not 65. No other attached notes, diagrams or tables occur in 57–69. Distinct verse, supplied Vietnamese rendering, author commentary and translator-note claims preserve actual layers; textLayer original-text on rendering citations is the existing citation vocabulary, not an attribution to the verse author. Front credits establish supplied attribution and translator roles only, not full front-matter coverage. Retain 60 public/private scope tension, 62 combined rendering versus two commentary glosses, 63/64 unusual original glyphs without repair, 64 sự thể versus appearance example tension, and 65 negative Vietnamese rendering versus affirmative reading/commentary plus religious/medical/travel critique context. Sentence 66 tri tiền versus thông biến stays separate. Selected source-comparison dispositions do not close feat-085 discovery/layer audit or global inventory remainder. Sentences 54–56 and chapter 7 are boundary context only; no new claims about those units. No copied source text, replacement translation, source emendation, medical/mortality/class/gender judgment as fact, supernatural verification, ritual requirement, efficacy claim, automatic interpretation, new UI, independent verification approval or corpus certification."
       }
+    },
+    {
+      "schemaVersion": 2,
+      "id": "article-bpct-front-voices",
+      "type": "article",
+      "title": "Các tiếng nói trong phần đầu BPCT",
+      "aliases": [],
+      "topicIds": ["topic-liuyao-foundations"],
+      "claims": [
+        {
+          "id": "article-bpct-front-voices-bpct-front-credits-compilation",
+          "kind": "author-interpretation",
+          "text": "Trang nhan đề nêu Lâm Ốc Sơn Nhân Vương Hồng Tự biên tập; phần Cơ Bản, Thập Bát Luận và phê bình sách gán cho Vương Duy Đức tự Hồng Tự. Ba người tham đính được ghi là Nhu Tuân Thì, Ngô Tường Chung và Anh Tử Xán; lời nói đầu lại dùng Nhu Tôn Thì. Giữ hai dạng tên, không xác minh người lịch sử.",
+          "citationIds": ["citation-bpct-front-credits-compilation"],
+          "attribution": {
+            "author": "Bản cung cấp — tín chỉ"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-credits-phu",
+          "kind": "author-interpretation",
+          "text": "Tín chỉ riêng của phần Phú đoán gán người soạn cho Lưu Bá Ôn, phần chú thích cho Vương Hồng Tự; không coi đây là xác minh tác giả từng bài phú hay gán mọi bài ở chương 2–3 cho Lưu Bá Ôn.",
+          "citationIds": ["citation-bpct-front-credits-phu"],
+          "attribution": {
+            "author": "Bản cung cấp — tín chỉ"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-credits-translation",
+          "kind": "author-interpretation",
+          "text": "Trang kế nhan đề ghi Vĩnh Cao dịch và chú thích tiếng Việt; lớp chú cuối trang khác với lời biên tập và lời phú.",
+          "citationIds": ["citation-bpct-front-credits-translation"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-translator-preface-history",
+          "kind": "author-interpretation",
+          "text": "Vĩnh Cao thuật lại đời học Dịch, hành nghề vì hoàn cảnh và việc gom tư liệu của Vương Hồng Tự; Dương Quảng Hàm được kể là người truyền học. Ông phân biệt phần tác giả tự viết với tư liệu cổ sưu tầm, chú giải và phê bình; nêu ba người tham đính, mười bốn quyển và phú tạp sự ở quyển 4–12. Chuyện Quỷ Cốc đổi cỏ thi sang tiền và các lời khen ứng nghiệm là lời truyền thuật, không lịch sử hay hiệu lực được kiểm chứng.",
+          "citationIds": ["citation-bpct-front-translator-preface-history"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-translator-preface-edition",
+          "kind": "author-interpretation",
+          "text": "Vĩnh Cao nhận xét sách có phần chắp thêm, lý luận và nền tảng không đều, đối chiếu quan điểm một quẻ nhiều việc với Tăng San Bốc Dịch. Ông kể từng dịch tuyển trong thập niên 1970 rồi chuyển sang bản đầy đủ, kèm chữ Hán, chia chương và đặt các chủ đề gần nhau. Phê bình sách cùng Hà Tri và Yêu Nghiệt chuyển sang phụ lục, phần thêm Gia Trạch đặt sát Gia Trạch; chú cuối trang có ý kiến riêng. Ông nhận khả năng dịch sai, mời góp ý và ký Lạc Biên Phủ tháng chín Đinh Hợi; không quy đổi thành năm dương lịch.",
+          "citationIds": ["citation-bpct-front-translator-preface-edition"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-preface-endorsement",
+          "kind": "author-interpretation",
+          "text": "Trương Cảnh Tùng kể quan chức bốc phệ cổ, ca ngợi Hoàng Kim Sách và kinh nghiệm của người hàng xóm Vương Sơn nhân, thuật lại việc nhận sách từ Dương Quảng Hàm. Ông dùng quan hệ lý/số, sinh khắc và âm dương để biện hộ sách, ký Ngô Quận, Dung Giang Thảo đường, tháng mười Khang Hy Kỷ Sửu. Đây là lời tựa tán dương riêng, không lời Vĩnh Cao hay chứng minh dự đoán đúng.",
+          "citationIds": ["citation-bpct-front-preface-endorsement"],
+          "attribution": {
+            "author": "Trương Cảnh Tùng"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-pham-le-01-author",
+          "kind": "author-interpretation",
+          "text": "Tác giả giải thích tên Chính Tông bằng mong muốn giải nghi và tránh lối nói phỏng làm người sau nhầm; tự nhận trở về chính lý chứ không cung cấp bằng chứng thực nghiệm.",
+          "citationIds": ["citation-bpct-front-pham-le-01-author"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-pham-le-02-author",
+          "kind": "author-interpretation",
+          "text": "Tác giả nêu chuyện Quỷ Cốc dùng tiền và coi Dụng, Nguyên, Kỵ, Cừu, Phi/Phục, Tiến/Thoái, Phản/Phục ngâm, Không/Phá là cương lĩnh; gom vào Thập Bát Luận và khuyên đọc kỹ. Không biến lời đầy đủ của ông thành chứng nhận corpus.",
+          "citationIds": ["citation-bpct-front-pham-le-02-author"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-pham-le-03-author",
+          "kind": "author-interpretation",
+          "text": "Tác giả bác cách trao đổi Càn/Khôn và cách mỗi hào đều có Phi/Phục trong Dịch Lâm Bổ Di; tuyên bố sẽ an riêng từng quẻ cho dễ học. Đây là đối thoại qua lời ông, không khảo sát trực tiếp sách bị phê bình.",
+          "citationIds": ["citation-bpct-front-pham-le-03-author"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-pham-le-04-author",
+          "kind": "author-interpretation",
+          "text": "Ông đánh giá các bản chép Thông Huyền Phú có mâu thuẫn, đề cao Hoàng Kim Sách gán cho Lưu Thành Ý, và phê bình chú Diêu Tế Long. Việc tự nhận sửa đúng không xác minh bản cổ hay gán tên tác giả cho Thông Huyền Phú.",
+          "citationIds": ["citation-bpct-front-pham-le-04-author"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-pham-le-05-author",
+          "kind": "author-interpretation",
+          "text": "Ông kể học từ nhỏ và gặp Dương Quảng Hàm tại Tân An; nhận phần mười tám vấn đáp ở quyển 13–14 có lời thầy và kinh nghiệm của mình, đề nghị đọc cùng Thập Bát Luận và phê bình sách.",
+          "citationIds": ["citation-bpct-front-pham-le-05-author"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-pham-le-06-author",
+          "kind": "author-interpretation",
+          "text": "Ông kể hành nghề ở thị tứ, dự định trở về núi và giữ sách, đồng thời mời bậc giỏi chỉ bảo cho những ghi chép tự nhận nông cạn. Không dùng lời tự thuật làm sự kiện độc lập đã xác minh.",
+          "citationIds": ["citation-bpct-front-pham-le-06-author"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-01-note",
+          "kind": "author-interpretation",
+          "text": "Chú 1 nêu nhiều nhân vật lấy hiệu Tử Dương, chỉ phỏng đoán ở đây là Lý Bát Bách; không chốt danh tính.",
+          "citationIds": ["citation-bpct-front-note-01-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-02-note",
+          "kind": "author-interpretation",
+          "text": "Chú 2 giải Chu tử là Chu Hi, một học giả đời Tống; đây là giải danh của dịch giả.",
+          "citationIds": ["citation-bpct-front-note-02-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-03-note",
+          "kind": "author-interpretation",
+          "text": "Chú 3 nhận Vương Sơn nhân là Vương Hồng Tự.",
+          "citationIds": ["citation-bpct-front-note-03-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-04-note",
+          "kind": "author-interpretation",
+          "text": "Chú 4 thuật lại sách khác gọi Quỷ Cốc Tử là Vương Hủ thời Chu, không cung cấp chứng cứ riêng.",
+          "citationIds": ["citation-bpct-front-note-04-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-05-note",
+          "kind": "author-interpretation",
+          "text": "Chú 5 giải chuyện dùng ba đồng tiền thay cỏ thi và dẫn phụ lục, không mở rộng phạm vi kiểm tra phụ lục.",
+          "citationIds": ["citation-bpct-front-note-05-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-06-note",
+          "kind": "author-interpretation",
+          "text": "Chú 6 nhận Lưu Thành Ý là Lưu Cơ tự Bá Ôn, kể công với Minh Thái Tổ; lời chú không xác minh lịch sử.",
+          "citationIds": ["citation-bpct-front-note-06-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-note-07-note",
+          "kind": "author-interpretation",
+          "text": "Chú 7 báo phần vấn đáp đã được dịch chuyển sang Phần II cuối sách; không nhập vị trí cũ vào locators bản PDF.",
+          "citationIds": ["citation-bpct-front-note-07-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-cach-ngon-sincerity",
+          "kind": "author-interpretation",
+          "text": "Vương Hồng Tự trình bày bói như cảm thông thần minh, đặt lòng thành và trách nhiệm người đoán làm điều kiện. Ông phê bình rượu, ăn uống, tình dục và việc nhờ người khác không thành tâm; giữ đây là quan niệm lịch sử, không tiêu chuẩn đạo đức hay điều kiện dùng ứng dụng.",
+          "citationIds": ["citation-bpct-front-cach-ngon-sincerity"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-cach-ngon-exploitation",
+          "kind": "author-interpretation",
+          "text": "Ông lên án người đoán vì lợi liên kết tăng đạo bày lễ theo giàu nghèo khiến người nghèo mắc nợ, rồi quy khỏi bệnh cho lễ đủ và chết cho kinh thiếu; cũng phê bình thầy thuốc chưa hiểu y mà bày cúng. Đây là phê phán sự lợi dụng trong lời tác giả, không lời khuyên chữa bệnh hay sự kiện được xác minh.",
+          "citationIds": ["citation-bpct-front-cach-ngon-exploitation"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-front-voices-bpct-front-cach-ngon-closing",
+          "kind": "author-interpretation",
+          "text": "Ông tự nói viết sách để giải mê hoặc, mời người giỏi chỉ giáo, nhưng vẫn khẳng định khả năng ứng nghiệm và quy sai cho thiếu thành hoặc người đoán nhầm. Giữ sự căng giữa phê phán lạm dụng và tin thần minh, không chứng nhận hiệu quả hoặc đổ lỗi người dùng.",
+          "citationIds": ["citation-bpct-front-cach-ngon-closing"],
+          "attribution": {
+            "author": "Vương Hồng Tự"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex worker — AI source comparison",
+        "reviewedAt": "2026-10-06",
+        "method": "source-comparison",
+        "evidenceCitationIds": [
+          "citation-bpct-front-credits-compilation",
+          "citation-bpct-front-credits-phu",
+          "citation-bpct-front-credits-translation",
+          "citation-bpct-front-translator-preface-history",
+          "citation-bpct-front-translator-preface-edition",
+          "citation-bpct-front-preface-endorsement",
+          "citation-bpct-front-pham-le-01-author",
+          "citation-bpct-front-pham-le-02-author",
+          "citation-bpct-front-pham-le-03-author",
+          "citation-bpct-front-pham-le-04-author",
+          "citation-bpct-front-pham-le-05-author",
+          "citation-bpct-front-pham-le-06-author",
+          "citation-bpct-front-note-01-note",
+          "citation-bpct-front-note-02-note",
+          "citation-bpct-front-note-03-note",
+          "citation-bpct-front-note-04-note",
+          "citation-bpct-front-note-05-note",
+          "citation-bpct-front-note-06-note",
+          "citation-bpct-front-note-07-note",
+          "citation-bpct-front-cach-ngon-sincerity",
+          "citation-bpct-front-cach-ngon-exploitation",
+          "citation-bpct-front-cach-ngon-closing"
+        ],
+        "note": "Complete passages and every individual full-page image at BPCT PDFs 1–76 inspected; PDF 77 is boundary context only. Fingerprint 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a, 467 pages. Separate credits, translator preface, Trương Cảnh Tùng preface, all six Phàm lệ, seven notes and three maxims plus closing. Front folios absent; no numerical labels invented. Original summaries and structured source observations only; no copied passages or images. No independent verification approval or corpus certification; later audit rosters and decisions remain open."
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "id": "article-bpct-chapter-one-foundations",
+      "type": "article",
+      "title": "Phần Cơ Bản BPCT: định nghĩa, phép an và hình nguồn",
+      "aliases": [],
+      "topicIds": ["topic-liuyao-foundations"],
+      "claims": [
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-discussion",
+          "kind": "author-interpretation",
+          "text": "Nạp âm ghép sáu mươi can chi thành ba mươi cặp theo chuỗi Giáp Tí–Ất Sửu đến Nhâm Tuất–Quý Hợi. Tên và hành là dữ kiện bảng truyền thống, không niên lịch hay tính chất con người. Dòng Tỉnh tuyền có chữ Thủ thay Thủy; không sửa văn bản nguồn.",
+          "citationIds": ["citation-bpct-ch01-i-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ii-discussion",
+          "kind": "author-interpretation",
+          "text": "Mười can chia thành năm nhóm hành/phương: Giáp/Ất Mộc Đông, Bính/Đinh Hỏa Nam, Mậu/Kỷ Thổ giữa, Canh/Tân Kim Tây, Nhâm/Quý Thủy Bắc. Dương gồm Giáp Bính Mậu Canh Nhâm, âm gồm Ất Đinh Kỷ Tân Quý.",
+          "citationIds": ["citation-bpct-ch01-ii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-discussion",
+          "kind": "author-interpretation",
+          "text": "Mười hai chi đi theo Tí đến Hợi; Tí/Hợi Thủy, Dần/Mão Mộc, Tị/Ngọ Hỏa, Thân/Dậu Kim, Sửu/Thìn/Mùi/Tuất Thổ. Nhóm dương là Tí Dần Thìn Ngọ Thân Tuất; nhóm âm là sáu chi còn lại. Con vật nguồn: chuột, trâu, cọp, thỏ, rồng, rắn, ngựa, dê, khỉ, gà, chó, heo theo thứ tự đó.",
+          "citationIds": ["citation-bpct-ch01-iii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iv-discussion",
+          "kind": "author-interpretation",
+          "text": "Sinh đi theo Kim→Thủy→Mộc→Hỏa→Thổ→Kim; khắc đi theo Kim→Mộc→Thổ→Thủy→Hỏa→Kim. Đây là quan hệ hành trong sách, không lực vật lý.",
+          "citationIds": ["citation-bpct-ch01-iv-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-v-discussion",
+          "kind": "author-interpretation",
+          "text": "Lấy Ta làm chuẩn: sinh Ta là Phụ, Ta sinh là Tử, khắc Ta là Quan, Ta khắc là Tài, cùng hành là Huynh. Năm tên cộng Ta giải chữ sáu. Ví Ta Mộc: Thủy Phụ, Hỏa Tử, Thổ Tài, Mộc Huynh; đoạn ví nói Kim khắc Mộc nhưng lại gán Quan là Mộc, mâu thuẫn với chính định nghĩa. Không đưa nhãn sai vào phép tính.",
+          "citationIds": ["citation-bpct-ch01-v-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-vi-can-discussion",
+          "kind": "author-interpretation",
+          "text": "VI thứ nhất nêu hợp giữa can khác âm dương: Giáp/Kỷ, Ất/Canh, Bính/Tân, Đinh/Nhâm, Mậu/Quý. Không có hành hóa hay quy tắc lịch kèm theo.",
+          "citationIds": ["citation-bpct-ch01-vi-can-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-vi-chi-discussion",
+          "kind": "author-interpretation",
+          "text": "VI thứ hai giải chi xung bằng vị trí xuyên tâm và hợp bằng đối xứng trục Nam/Bắc. Hợp gồm Tí/Sửu, Dần/Hợi, Mão/Tuất, Thìn/Dậu, Tị/Thân, Ngọ/Mùi; xung gồm Tí/Ngọ, Sửu/Mùi, Dần/Thân, Mão/Dậu, Thìn/Tuất, Tị/Hợi.",
+          "citationIds": ["citation-bpct-ch01-vi-chi-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-vii-discussion",
+          "kind": "author-interpretation",
+          "text": "Thứ tự số của hành trong đoạn này là Thủy 1, Hỏa 2, Mộc 3, Kim 4, Thổ 5; không dùng như điểm mạnh/yếu.",
+          "citationIds": ["citation-bpct-ch01-vii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-viii-discussion",
+          "kind": "author-interpretation",
+          "text": "Thứ tự bát quái của đoạn: Càn 1, Đoài 2, Li 3, Chấn 4, Tốn 5, Khảm 6, Cấn 7, Khôn 8. Nguồn in Cần ở mục số 7; đó là dạng chữ nguồn, không quái thứ chín.",
+          "citationIds": ["citation-bpct-ch01-viii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-discussion",
+          "kind": "author-interpretation",
+          "text": "Tám ký hiệu được giải bằng hình tượng chậu/chén, rỗng/đầy, khuyết/đứt. Hành của quái: Càn/Đoài Kim, Khảm Thủy, Cấn/Khôn Thổ, Chấn/Tốn Mộc, Li Hỏa. Phần hình không phải lời tiên đoán.",
+          "citationIds": ["citation-bpct-ch01-ix-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-x-discussion",
+          "kind": "author-interpretation",
+          "text": "Phép ba tiền an từ dưới lên: một sấp là Đơn dương tĩnh, hai sấp là Sách âm tĩnh, ba sấp là Trùng dương động và ba ngửa là Giao âm động. Ba lần đầu lập nội quái, ba lần sau lập ngoại quái. Hào động đổi âm/dương; nghi thức hun tiền và khấn là lời nguồn, không yêu cầu ứng dụng.",
+          "citationIds": ["citation-bpct-ch01-x-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xi-discussion",
+          "kind": "author-interpretation",
+          "text": "Nguồn chia 64 quẻ thành tám cung, mỗi cung tám quẻ. Càn/Đoài Kim, Khảm Thủy, Cấn/Khôn Thổ, Chấn/Tốn Mộc, Li Hỏa. Riêng danh sách Khảm ở đây chỉ có bảy tên dù nói tám: thiếu Trạch Hỏa Cách; board thứ năm cung Khảm ở chương 4 có Cách. Các bảng đã duyệt vẫn giữ hiệu chỉnh có chứng cứ ấy.",
+          "citationIds": ["citation-bpct-ch01-xi-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xii-discussion",
+          "kind": "author-interpretation",
+          "text": "Nạp Giáp an từ sơ lên lục, mỗi quái có bộ nội/ngoại: Càn Giáp/Nhâm với Tí Dần Thìn/Ngọ Thân Tuất; Khảm Mậu/Mậu Dần Thìn Ngọ/Thân Tuất Tí; Cấn Bính/Bính Thìn Ngọ Thân/Tuất Tí Dần; Chấn Canh/Canh Tí Dần Thìn/Ngọ Thân Tuất; Tốn Tân/Tân Sửu Hợi Dậu/Mùi Tị Mão; Li Kỷ/Kỷ Mão Sửu Hợi/Dậu Mùi Tị; Khôn Ất/Quý Mùi Tị Mão/Sửu Hợi Dậu; Đoài Đinh/Đinh Tị Mão Sửu/Hợi Dậu Mùi. Dòng Khôn ghi mộc trái với hành Thổ tại danh sách cung và board; không sửa dãy can chi hay phát hành nhãn mộc ấy.",
+          "citationIds": ["citation-bpct-ch01-xii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-discussion",
+          "kind": "author-interpretation",
+          "text": "Phép an Thế dùng thứ tự cung: 6,1,2,3,4,5,4,3; quẻ thứ bảy Du hồn và thứ tám Quy hồn. Giữa Thế và Ứng có hai hào; các ví dụ Càn/Cấu cho vị trí 6/3 và 1/4. Đây là phương pháp nguồn, không một quy tắc mới.",
+          "citationIds": ["citation-bpct-ch01-xiii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-discussion",
+          "kind": "author-interpretation",
+          "text": "Ca an Lục thú khởi hào sơ theo can ngày: Giáp/Ất Thanh Long, Bính/Đinh Chu Tước, Mậu Câu Trần, Kỷ Đằng Xà, Canh/Tân Bạch Hổ, Nhâm/Quý Huyền Vũ. Hai cột ví dụ tiếp theo trình bày trật tự sáu hào, không đưa sao thành kết quả tốt/xấu.",
+          "citationIds": ["citation-bpct-ch01-xiv-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-discussion",
+          "kind": "author-interpretation",
+          "text": "Nguồn khởi Nguyệt quái thân ở sơ bằng Ngọ nếu Thế âm, Tí nếu Thế dương; đếm chi dương đến Thế rồi tìm chi ấy trong quẻ. Ví Bĩ: Ngọ, Thân, Tuất đến Thế tam, Tuất ở ngũ nên Quái thân tại ngũ. Hình bị chia qua trang 15–16; không phải chỉ ba hào. Nguồn nói có quẻ không có Quái thân, không phát hành thuật toán đặt mới.",
+          "citationIds": ["citation-bpct-ch01-xv-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xvi-discussion",
+          "kind": "author-interpretation",
+          "text": "Bốn nhóm tam hợp của đoạn: Thân/Tí/Thìn Thủy, Tị/Dậu/Sửu Kim, Dần/Ngọ/Tuất Hỏa, Hợi/Mão/Mùi Mộc. Không suy ra điều kiện cục khi động/tĩnh từ bảng tên này.",
+          "citationIds": ["citation-bpct-ch01-xvi-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xvii-discussion",
+          "kind": "author-interpretation",
+          "text": "Nguồn kể mười hai giai đoạn từ Trường Sinh, Mộc Dục, Quan Đới, Lâm Quan, Đế Vượng, Suy, Bệnh, Tử, Mộ, Tuyệt, Thai đến Dưỡng. Hỏa được liệt kê đầy hơn các hành khác vốn có dấu lược; Tử Hỏa ghi Tị ở đây khác Dậu trong chương 5. Sau hình bàn tay, mục 3 ghi Hỏa Sinh Tị và mục 4 lại Hỏa Sinh Dần; không tự sửa mục 3 thành Kim hay lấp các chỗ lược bằng bảng ngoài.",
+          "citationIds": ["citation-bpct-ch01-xvii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xviii-discussion",
+          "kind": "author-interpretation",
+          "text": "Lộc/Nhẫn nguồn chỉ có chín can: Giáp Dần/Mão; Ất Mão/Thìn; Bính và Mậu Tị/Ngọ; Đinh và Kỷ Ngọ/Mùi; Canh Thân/Dậu; Nhâm Hợi/Tí; Quý Tí/Sửu. Không có dòng Tân, không suy ra dòng thiếu. Mã của Thân/Tí/Thìn ở Dần, Tị/Dậu/Sửu ở Hợi, Dần/Ngọ/Tuất ở Thân, Hợi/Mão/Mùi ở Tị. Nguồn căn cứ Nhật thần, không chuyển thành lịch hay dự báo.",
+          "citationIds": ["citation-bpct-ch01-xviii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xix-discussion",
+          "kind": "author-interpretation",
+          "text": "Ca Quý nhân ghép Giáp/Mậu với Sửu/Mùi, Ất/Kỷ với Tí/Thân, Bính/Đinh với Hợi/Dậu, Nhâm/Quý với Mão/Tị, Canh/Tân với Ngọ/Dần. Dòng nghĩa thiếu Tí ở Ất/Kỷ và không có dòng nghĩa Canh/Tân; ví Giáp/Mậu có Sửu/Mùi dẫn sang người sinh can ấy. Không bổ sung bản dịch thiếu hay đánh giá mệnh người thật.",
+          "citationIds": ["citation-bpct-ch01-xix-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xx-discussion",
+          "kind": "author-interpretation",
+          "text": "Phần Hình giữ các nhóm Dần/Tị/Thân, Sửu/Tuất/Mùi, tự hình Thìn/Ngọ/Dậu/Hợi; phần Tí/Mão không nhất quán: dòng đọc ghi Mão hình Ngọ, nghĩa trong ngoặc ghi Mão hình Tí, kết lại gom Tí/Mão/Ngọ. Lục hại liệt kê Tí/Mùi, Sửu/Ngọ, Dần/Tị, Mão/Thìn, Thân/Hợi, Dậu/Tuất. Không chọn một bảng Tam hình hoàn chỉnh hay xóa ý kiến phản đối của dịch giả ở nơi khác.",
+          "citationIds": ["citation-bpct-ch01-xx-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xxi-discussion",
+          "kind": "author-interpretation",
+          "text": "Tượng quái theo hai bộ biểu trưng: Càn ngựa/đầu, Khôn trâu/bụng, Chấn rồng/chân, Tốn gà/đùi, Khảm heo/tai, Li trĩ/mắt, Cấn chó/tay, Đoài dê/miệng. Đây là liên tưởng cổ, không sinh học hay chẩn đoán.",
+          "citationIds": ["citation-bpct-ch01-xxi-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xxii-discussion",
+          "kind": "author-interpretation",
+          "text": "Ca xác định hai hào giữa Thế/Ứng là gian hào, cảnh báo Kỵ động liên kết và nêu Nguyên/Dụng động sinh phò Thế là thuận. Giữ điều kiện động và vai trò, không lời bảo đảm mọi việc sẽ tốt.",
+          "citationIds": ["citation-bpct-ch01-xxii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xxiii-discussion",
+          "kind": "author-interpretation",
+          "text": "Phép tháng theo can năm khởi Giêng ở Dần: Giáp/Kỷ Bính, Ất/Canh Mậu, Bính/Tân Canh, Đinh/Nhâm Nhâm, Mậu/Quý Giáp; tiếp can/chi theo tháng, ví Bính Dần sang Đinh Mão rồi Mậu Thìn. Đây là công thức nguồn, không chọn ranh giới năm/tháng, múi giờ hay đổi ngày.",
+          "citationIds": ["citation-bpct-ch01-xxiii-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xxiv-discussion",
+          "kind": "author-interpretation",
+          "text": "Phép giờ theo can ngày khởi ở Tí: Giáp/Kỷ Giáp, Ất/Canh Bính, Bính/Tân Mậu, Đinh/Nhâm Canh, Mậu/Quý Nhâm. Ví Giáp Tí sang Ất Sửu; không đặt múi giờ, giờ mặt trời hoặc thuật toán lịch.",
+          "citationIds": ["citation-bpct-ch01-xxiv-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xxv-discussion",
+          "kind": "author-interpretation",
+          "text": "Dần giờ theo mùa được mô tả: tháng 1/9 canh năm hai điểm; 2/8 canh năm bốn điểm; 3/7 vừa sáng; 4/6 mặt trời ló; 5 mặt trời cách đất ba trượng; 10/12 canh tư hai điểm; 11 đầu canh tư. Lời giải giờ hiện đại nói canh tư 1–3, canh năm 3–5, mười điểm/canh nhưng mỗi điểm 24 phút và hai điểm thành 3:24 không khớp. Giữ mâu thuẫn, không suy ra giờ Dần theo ngày hiện đại.",
+          "citationIds": ["citation-bpct-ch01-xxv-discussion"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-01",
+          "kind": "structural-fact",
+          "text": "Cặp 01 trong bảng Nạp âm: Giáp Tí/Ất Sửu; tên riêng Hải trung; hành ghi Kim.",
+          "citationIds": ["citation-bpct-ch01-i-pair-01"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-02",
+          "kind": "structural-fact",
+          "text": "Cặp 02 trong bảng Nạp âm: Bính Dần/Đinh Mão; tên riêng Lô trung; hành ghi Hỏa.",
+          "citationIds": ["citation-bpct-ch01-i-pair-02"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-03",
+          "kind": "structural-fact",
+          "text": "Cặp 03 trong bảng Nạp âm: Mậu Thìn/Kỷ Tị; tên riêng Đại lâm; hành ghi Mộc.",
+          "citationIds": ["citation-bpct-ch01-i-pair-03"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-04",
+          "kind": "structural-fact",
+          "text": "Cặp 04 trong bảng Nạp âm: Canh Ngọ/Tân Mùi; tên riêng Lộ bàng; hành ghi Thổ.",
+          "citationIds": ["citation-bpct-ch01-i-pair-04"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-05",
+          "kind": "structural-fact",
+          "text": "Cặp 05 trong bảng Nạp âm: Nhâm Thân/Quý Dậu; tên riêng Kiếm phong; hành ghi Kim.",
+          "citationIds": ["citation-bpct-ch01-i-pair-05"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-06",
+          "kind": "structural-fact",
+          "text": "Cặp 06 trong bảng Nạp âm: Giáp Tuất/Ất Hợi; tên riêng Sơn đầu; hành ghi Hỏa.",
+          "citationIds": ["citation-bpct-ch01-i-pair-06"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-07",
+          "kind": "structural-fact",
+          "text": "Cặp 07 trong bảng Nạp âm: Bính Tí/Đinh Sửu; tên riêng Giản hạ; hành ghi Thủy.",
+          "citationIds": ["citation-bpct-ch01-i-pair-07"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-08",
+          "kind": "structural-fact",
+          "text": "Cặp 08 trong bảng Nạp âm: Mậu Dần/Kỷ Mão; tên riêng Thành đầu; hành ghi Thổ.",
+          "citationIds": ["citation-bpct-ch01-i-pair-08"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-09",
+          "kind": "structural-fact",
+          "text": "Cặp 09 trong bảng Nạp âm: Canh Thìn/Tân Tị; tên riêng Bạch lạp; hành ghi Kim.",
+          "citationIds": ["citation-bpct-ch01-i-pair-09"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-10",
+          "kind": "structural-fact",
+          "text": "Cặp 10 trong bảng Nạp âm: Nhâm Ngọ/Quý Mùi; tên riêng Dương liễu; hành ghi Mộc.",
+          "citationIds": ["citation-bpct-ch01-i-pair-10"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-11",
+          "kind": "structural-fact",
+          "text": "Cặp 11 trong bảng Nạp âm: Giáp Thân/Ất Dậu; tên riêng Tỉnh tuyền; hành ghi Thủ (chữ nguồn).",
+          "citationIds": ["citation-bpct-ch01-i-pair-11"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-12",
+          "kind": "structural-fact",
+          "text": "Cặp 12 trong bảng Nạp âm: Bính Tuất/Đinh Hợi; tên riêng Ốc thượng; hành ghi Thổ.",
+          "citationIds": ["citation-bpct-ch01-i-pair-12"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-13",
+          "kind": "structural-fact",
+          "text": "Cặp 13 trong bảng Nạp âm: Mậu Tí/Kỷ Sửu; tên riêng Tích lịch; hành ghi Hỏa.",
+          "citationIds": ["citation-bpct-ch01-i-pair-13"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-14",
+          "kind": "structural-fact",
+          "text": "Cặp 14 trong bảng Nạp âm: Canh Dần/Tân Mão; tên riêng Tùng bá; hành ghi Mộc.",
+          "citationIds": ["citation-bpct-ch01-i-pair-14"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-15",
+          "kind": "structural-fact",
+          "text": "Cặp 15 trong bảng Nạp âm: Nhâm Thìn/Quý Tị; tên riêng Trường lưu; hành ghi Thủy.",
+          "citationIds": ["citation-bpct-ch01-i-pair-15"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-16",
+          "kind": "structural-fact",
+          "text": "Cặp 16 trong bảng Nạp âm: Giáp Ngọ/Ất Mùi; tên riêng Sa trung; hành ghi Kim.",
+          "citationIds": ["citation-bpct-ch01-i-pair-16"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-17",
+          "kind": "structural-fact",
+          "text": "Cặp 17 trong bảng Nạp âm: Bính Thân/Đinh Dậu; tên riêng Sơn hạ; hành ghi Hỏa.",
+          "citationIds": ["citation-bpct-ch01-i-pair-17"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-18",
+          "kind": "structural-fact",
+          "text": "Cặp 18 trong bảng Nạp âm: Mậu Tuất/Kỷ Hợi; tên riêng Bình địa; hành ghi Mộc.",
+          "citationIds": ["citation-bpct-ch01-i-pair-18"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-19",
+          "kind": "structural-fact",
+          "text": "Cặp 19 trong bảng Nạp âm: Canh Tí/Tân Sửu; tên riêng Bích thượng; hành ghi Thổ.",
+          "citationIds": ["citation-bpct-ch01-i-pair-19"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-20",
+          "kind": "structural-fact",
+          "text": "Cặp 20 trong bảng Nạp âm: Nhâm Dần/Quý Mão; tên riêng Kim bạc; hành ghi Kim.",
+          "citationIds": ["citation-bpct-ch01-i-pair-20"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-21",
+          "kind": "structural-fact",
+          "text": "Cặp 21 trong bảng Nạp âm: Giáp Thìn/Ất Tị; tên riêng Phú đăng; hành ghi Hỏa.",
+          "citationIds": ["citation-bpct-ch01-i-pair-21"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-22",
+          "kind": "structural-fact",
+          "text": "Cặp 22 trong bảng Nạp âm: Bính Ngọ/Đinh Mùi; tên riêng Thiên hà; hành ghi Thủy.",
+          "citationIds": ["citation-bpct-ch01-i-pair-22"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-23",
+          "kind": "structural-fact",
+          "text": "Cặp 23 trong bảng Nạp âm: Mậu Thân/Kỷ Dậu; tên riêng Đại dịch; hành ghi Thổ.",
+          "citationIds": ["citation-bpct-ch01-i-pair-23"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-24",
+          "kind": "structural-fact",
+          "text": "Cặp 24 trong bảng Nạp âm: Canh Tuất/Tân Hợi; tên riêng Thoa xuyến; hành ghi Kim.",
+          "citationIds": ["citation-bpct-ch01-i-pair-24"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-25",
+          "kind": "structural-fact",
+          "text": "Cặp 25 trong bảng Nạp âm: Nhâm Tí/Quý Sửu; tên riêng Tang giá; hành ghi Mộc.",
+          "citationIds": ["citation-bpct-ch01-i-pair-25"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-26",
+          "kind": "structural-fact",
+          "text": "Cặp 26 trong bảng Nạp âm: Giáp Dần/Ất Mão; tên riêng Đại khê; hành ghi Thủy.",
+          "citationIds": ["citation-bpct-ch01-i-pair-26"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-27",
+          "kind": "structural-fact",
+          "text": "Cặp 27 trong bảng Nạp âm: Bính Thìn/Đinh Tị; tên riêng Sa trung; hành ghi Thổ.",
+          "citationIds": ["citation-bpct-ch01-i-pair-27"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-28",
+          "kind": "structural-fact",
+          "text": "Cặp 28 trong bảng Nạp âm: Mậu Ngọ/Kỷ Mùi; tên riêng Thiên thượng; hành ghi Hỏa.",
+          "citationIds": ["citation-bpct-ch01-i-pair-28"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-29",
+          "kind": "structural-fact",
+          "text": "Cặp 29 trong bảng Nạp âm: Canh Thân/Tân Dậu; tên riêng Thạch lựu; hành ghi Mộc.",
+          "citationIds": ["citation-bpct-ch01-i-pair-29"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-i-pair-30",
+          "kind": "structural-fact",
+          "text": "Cặp 30 trong bảng Nạp âm: Nhâm Tuất/Quý Hợi; tên riêng Đại hải; hành ghi Thủy.",
+          "citationIds": ["citation-bpct-ch01-i-pair-30"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-note-01-note",
+          "kind": "author-interpretation",
+          "text": "Chú 1 của Vĩnh Cao nêu ở Việt Nam tượng Mão dùng mèo thay thỏ; không thay con vật dòng chính hay suy ra toàn bộ truyền thống đều giống nhau.",
+          "citationIds": ["citation-bpct-ch01-note-01-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-note-02-note",
+          "kind": "author-interpretation",
+          "text": "Chú 2 của Vĩnh Cao giải chữ Sách mang nghĩa xé/nứt; không biến chú từ ngữ thành một kết quả gieo khác.",
+          "citationIds": ["citation-bpct-ch01-note-02-note"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-x-verse",
+          "kind": "classical-meaning",
+          "text": "Ca kèm phép tiền nhắc hai sấp là Sách, tất cả sấp là Trùng, và lấy ba Đơn là Càn, ba Sách là Khôn, Đơn/Sách/Đơn là Li, Sách/Đơn/Sách là Khảm. Đó là ba vạch quái, không quẻ sáu hào.",
+          "citationIds": ["citation-bpct-ch01-x-verse"],
+          "attribution": {
+            "author": "Ca quyết phép tiền — không ghi tác giả riêng",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-x-rendering",
+          "kind": "author-interpretation",
+          "text": "Vĩnh Cao truyền nghĩa các ví Càn, Khôn, Li, Khảm theo ba vạch và chỉ phỏng theo cho quái khác; bản nghĩa không phải bảng đầy đủ sáu hào hay một bản dịch do dự án tạo lại.",
+          "citationIds": ["citation-bpct-ch01-x-rendering"],
+          "attribution": {
+            "author": "Vĩnh Cao"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-ghi-chu",
+          "kind": "author-interpretation",
+          "text": "Ghi chú riêng giải bát cung bằng động tích lũy từ Bát Thuần, nêu hình Càn đến Đại Hữu, Du/Quy hồn và hành cung khác hành chi từng hào. Danh sách hành cung trong chú thiếu Cấn dù phép đầu nêu tám; không coi là cung bị xóa. Nó phân quái dương Càn/Khảm/Cấn/Chấn và âm Tốn/Li/Khôn/Đoài, giải chiều thuận/nghịch của can chi và dẫn chương 4. Chú không ký riêng tác giả; giữ như lớp chú truyền qua Vĩnh Cao, không gán chắc cho người biên tập.",
+          "citationIds": ["citation-bpct-ch01-xiii-ghi-chu"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-1",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Ly ở Nam phía trên: Bính/Ngọ/Đinh; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-1"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-2",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Khôn ở Tây Nam phía trên phải: Mùi/Thân; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-2"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-3",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Đoài ở Tây phía phải: Dậu; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-3"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-4",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Càn ở Tây Bắc phía dưới phải: Tuất/Hợi; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-4"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-5",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Khảm ở Bắc phía dưới: Tí và Quý/Thủy/Nhâm; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-5"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-6",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Cấn ở Đông Bắc phía dưới trái: Sửu/Dần; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-6"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-7",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Chấn ở Đông phía trái: Mão; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-7"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-8",
+          "kind": "structural-fact",
+          "text": "Hình phương vị đặt Tốn ở Đông Nam phía trên trái: Thìn/Tị; hướng trên trang không phải bản đồ Bắc ở trên.",
+          "citationIds": ["citation-bpct-ch01-iii-direction-8"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-1",
+          "kind": "structural-fact",
+          "text": "Hình Càn, đọc từ dưới lên: dương/dương/dương.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-1"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-2",
+          "kind": "structural-fact",
+          "text": "Hình Khôn, đọc từ dưới lên: âm/âm/âm.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-2"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-3",
+          "kind": "structural-fact",
+          "text": "Hình Chấn, đọc từ dưới lên: dương/âm/âm.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-3"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-4",
+          "kind": "structural-fact",
+          "text": "Hình Cấn, đọc từ dưới lên: âm/âm/dương.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-4"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-5",
+          "kind": "structural-fact",
+          "text": "Hình Li, đọc từ dưới lên: dương/âm/dương.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-5"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-6",
+          "kind": "structural-fact",
+          "text": "Hình Khảm, đọc từ dưới lên: âm/dương/âm.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-6"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-7",
+          "kind": "structural-fact",
+          "text": "Hình Đoài, đọc từ dưới lên: dương/dương/âm.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-7"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-8",
+          "kind": "structural-fact",
+          "text": "Hình Tốn, đọc từ dưới lên: âm/dương/dương.",
+          "citationIds": ["citation-bpct-ch01-ix-pattern-8"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-1",
+          "kind": "structural-fact",
+          "text": "Hình thứ 1: Càn; bắt đầu; sáu vạch dưới lên 111111 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-1"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-2",
+          "kind": "structural-fact",
+          "text": "Hình thứ 2: Cấu; đổi sơ; sáu vạch dưới lên 011111 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-2"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-3",
+          "kind": "structural-fact",
+          "text": "Hình thứ 3: Độn; đổi thêm nhị; sáu vạch dưới lên 001111 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-3"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-4",
+          "kind": "structural-fact",
+          "text": "Hình thứ 4: Bĩ; đổi thêm tam; sáu vạch dưới lên 000111 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-4"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-5",
+          "kind": "structural-fact",
+          "text": "Hình thứ 5: Quan; đổi thêm tứ; sáu vạch dưới lên 000011 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-5"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-6",
+          "kind": "structural-fact",
+          "text": "Hình thứ 6: Bác; đổi thêm ngũ; sáu vạch dưới lên 000001 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-6"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-7",
+          "kind": "structural-fact",
+          "text": "Hình thứ 7: Tấn; đổi lại tứ; sáu vạch dưới lên 000101 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-7"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-8",
+          "kind": "structural-fact",
+          "text": "Hình thứ 8: Đại Hữu; đổi lại ba hào nội; sáu vạch dưới lên 111101 (1 liền, 0 đứt).",
+          "citationIds": ["citation-bpct-ch01-xiii-sequence-8"],
+          "attribution": {
+            "author": "Ghi chú không ký riêng — truyền qua Vĩnh Cao",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-6",
+          "kind": "structural-fact",
+          "text": "Hàng hào 6 của hai cột ví dụ: Giáp/Ất nhận Huyền Vũ; Bính/Đinh nhận Thanh Long.",
+          "citationIds": ["citation-bpct-ch01-xiv-table-line-6"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-5",
+          "kind": "structural-fact",
+          "text": "Hàng hào 5 của hai cột ví dụ: Giáp/Ất nhận Bạch Hổ; Bính/Đinh nhận Huyền Vũ.",
+          "citationIds": ["citation-bpct-ch01-xiv-table-line-5"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-4",
+          "kind": "structural-fact",
+          "text": "Hàng hào 4 của hai cột ví dụ: Giáp/Ất nhận Đằng Xà; Bính/Đinh nhận Bạch Hổ.",
+          "citationIds": ["citation-bpct-ch01-xiv-table-line-4"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-3",
+          "kind": "structural-fact",
+          "text": "Hàng hào 3 của hai cột ví dụ: Giáp/Ất nhận Câu Trần; Bính/Đinh nhận Đằng Xà.",
+          "citationIds": ["citation-bpct-ch01-xiv-table-line-3"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-2",
+          "kind": "structural-fact",
+          "text": "Hàng hào 2 của hai cột ví dụ: Giáp/Ất nhận Chu Tước; Bính/Đinh nhận Câu Trần.",
+          "citationIds": ["citation-bpct-ch01-xiv-table-line-2"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-1",
+          "kind": "structural-fact",
+          "text": "Hàng hào 1 của hai cột ví dụ: Giáp/Ất nhận Thanh Long; Bính/Đinh nhận Chu Tước.",
+          "citationIds": ["citation-bpct-ch01-xiv-table-line-1"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-6",
+          "kind": "structural-fact",
+          "text": "Hình Bĩ, hào 6: dương; Ứng. Phần âm của hình tiếp sang PDF 16.",
+          "citationIds": ["citation-bpct-ch01-xv-line-6"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-5",
+          "kind": "structural-fact",
+          "text": "Hình Bĩ, hào 5: dương; Tuất — Quái thân. Phần âm của hình tiếp sang PDF 16.",
+          "citationIds": ["citation-bpct-ch01-xv-line-5"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-4",
+          "kind": "structural-fact",
+          "text": "Hình Bĩ, hào 4: dương; không nhãn. Phần âm của hình tiếp sang PDF 16.",
+          "citationIds": ["citation-bpct-ch01-xv-line-4"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-3",
+          "kind": "structural-fact",
+          "text": "Hình Bĩ, hào 3: âm; Thế. Phần âm của hình tiếp sang PDF 16.",
+          "citationIds": ["citation-bpct-ch01-xv-line-3"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-2",
+          "kind": "structural-fact",
+          "text": "Hình Bĩ, hào 2: âm; không nhãn. Phần âm của hình tiếp sang PDF 16.",
+          "citationIds": ["citation-bpct-ch01-xv-line-2"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-1",
+          "kind": "structural-fact",
+          "text": "Hình Bĩ, hào 1: âm; không nhãn. Phần âm của hình tiếp sang PDF 16.",
+          "citationIds": ["citation-bpct-ch01-xv-line-1"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        },
+        {
+          "id": "article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand",
+          "kind": "structural-fact",
+          "text": "Hình bàn tay là phương tiện nhớ chi: ba cột ngón lần lượt Dần/Mão/Thìn/Tị, Ngọ, Mùi và Thân/Dậu/Tuất/Hợi phía phải; Sửu/Tí ở gốc. Chỉ ghi vị trí nhìn thấy, không tái tạo ảnh, giải phẫu hay an vận hạn.",
+          "citationIds": ["citation-bpct-ch01-xvii-hand"],
+          "attribution": {
+            "author": "Vương Hồng Tự",
+            "via": "Vĩnh Cao — dịch và chú giải"
+          },
+          "conditions": [
+            "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "figures": [
+        {
+          "id": "figure-bpct-ch01-iii-directions",
+          "kind": "placement",
+          "title": "Phương vị Can Chi Bát Quái",
+          "sourceUnitIds": ["bpct-ch01-iii"],
+          "labels": [
+            {
+              "id": "label-1",
+              "text": "Ly — Nam phía trên: Bính/Ngọ/Đinh",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-1"]
+            },
+            {
+              "id": "label-2",
+              "text": "Khôn — Tây Nam phía trên phải: Mùi/Thân",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-2"]
+            },
+            {
+              "id": "label-3",
+              "text": "Đoài — Tây phía phải: Dậu",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-3"]
+            },
+            {
+              "id": "label-4",
+              "text": "Càn — Tây Bắc phía dưới phải: Tuất/Hợi",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-4"]
+            },
+            {
+              "id": "label-5",
+              "text": "Khảm — Bắc phía dưới: Tí và Quý/Thủy/Nhâm",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-5"]
+            },
+            {
+              "id": "label-6",
+              "text": "Cấn — Đông Bắc phía dưới trái: Sửu/Dần",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-6"]
+            },
+            {
+              "id": "label-7",
+              "text": "Chấn — Đông phía trái: Mão",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-7"]
+            },
+            {
+              "id": "label-8",
+              "text": "Tốn — Đông Nam phía trên trái: Thìn/Tị",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-8"]
+            }
+          ],
+          "claimIds": [
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-1",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-2",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-3",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-4",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-5",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-6",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-7",
+            "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-8"
+          ],
+          "inspectionStatus": "visually-inspected",
+          "orientation": {
+            "description": "Theo hình nguồn: Nam trên, Bắc dưới, Đông trái, Tây phải; bắt đầu Ly rồi theo chiều kim đồng hồ.",
+            "claimIds": [
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-1",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-2",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-3",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-4",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-5",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-6",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-7",
+              "article-bpct-chapter-one-foundations-bpct-ch01-iii-direction-8"
+            ]
+          }
+        },
+        {
+          "id": "figure-bpct-ch01-ix-trigrams",
+          "kind": "sequence",
+          "title": "Tám hình quái theo thứ tự in",
+          "sourceUnitIds": ["bpct-ch01-ix"],
+          "labels": [
+            {
+              "id": "label-1",
+              "text": "Càn: dương/dương/dương",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-1"]
+            },
+            {
+              "id": "label-2",
+              "text": "Khôn: âm/âm/âm",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-2"]
+            },
+            {
+              "id": "label-3",
+              "text": "Chấn: dương/âm/âm",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-3"]
+            },
+            {
+              "id": "label-4",
+              "text": "Cấn: âm/âm/dương",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-4"]
+            },
+            {
+              "id": "label-5",
+              "text": "Li: dương/âm/dương",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-5"]
+            },
+            {
+              "id": "label-6",
+              "text": "Khảm: âm/dương/âm",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-6"]
+            },
+            {
+              "id": "label-7",
+              "text": "Đoài: dương/dương/âm",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-7"]
+            },
+            {
+              "id": "label-8",
+              "text": "Tốn: âm/dương/dương",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-8"]
+            }
+          ],
+          "claimIds": [
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-1",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-2",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-3",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-4",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-5",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-6",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-7",
+            "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-8"
+          ],
+          "inspectionStatus": "visually-inspected",
+          "orientation": {
+            "description": "Thứ tự hình: Càn, Khôn, Chấn, Cấn, Li, Khảm, Đoài, Tốn. Mỗi bộ ba hào đọc dưới lên.",
+            "claimIds": [
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-1",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-2",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-3",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-4",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-5",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-6",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-7",
+              "article-bpct-chapter-one-foundations-bpct-ch01-ix-pattern-8"
+            ]
+          }
+        },
+        {
+          "id": "figure-bpct-ch01-xiii-palace",
+          "kind": "transformation",
+          "title": "Chuỗi hình cung Càn trong Ghi chú",
+          "sourceUnitIds": ["bpct-ch01-xiii"],
+          "labels": [
+            {
+              "id": "label-1",
+              "text": "Càn 111111",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-1"]
+            },
+            {
+              "id": "label-2",
+              "text": "Cấu 011111",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-2"]
+            },
+            {
+              "id": "label-3",
+              "text": "Độn 001111",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-3"]
+            },
+            {
+              "id": "label-4",
+              "text": "Bĩ 000111",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-4"]
+            },
+            {
+              "id": "label-5",
+              "text": "Quan 000011",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-5"]
+            },
+            {
+              "id": "label-6",
+              "text": "Bác 000001",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-6"]
+            },
+            {
+              "id": "label-7",
+              "text": "Tấn 000101",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-7"]
+            },
+            {
+              "id": "label-8",
+              "text": "Đại Hữu 111101",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-8"]
+            }
+          ],
+          "claimIds": [
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-1",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-2",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-3",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-4",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-5",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-6",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-7",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-8"
+          ],
+          "inspectionStatus": "visually-inspected",
+          "orientation": {
+            "description": "Mũi tên trái sang phải; mỗi hình đọc hào từ dưới lên. Không đồng nhất các bước tích lũy với một lần đổi mọi hào.",
+            "claimIds": [
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-1",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-2",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-3",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-4",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-5",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-6",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-7",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiii-sequence-8"
+            ]
+          }
+        },
+        {
+          "id": "figure-bpct-ch01-xiv-table-layout",
+          "kind": "placement",
+          "title": "Bố trí hai cột an Lục thú",
+          "sourceUnitIds": ["bpct-ch01-xiv"],
+          "labels": [
+            {
+              "id": "label-1",
+              "text": "Hào 6: Giáp/Ất Huyền Vũ; Bính/Đinh Thanh Long",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-6"]
+            },
+            {
+              "id": "label-2",
+              "text": "Hào 5: Giáp/Ất Bạch Hổ; Bính/Đinh Huyền Vũ",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-5"]
+            },
+            {
+              "id": "label-3",
+              "text": "Hào 4: Giáp/Ất Đằng Xà; Bính/Đinh Bạch Hổ",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-4"]
+            },
+            {
+              "id": "label-4",
+              "text": "Hào 3: Giáp/Ất Câu Trần; Bính/Đinh Đằng Xà",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-3"]
+            },
+            {
+              "id": "label-5",
+              "text": "Hào 2: Giáp/Ất Chu Tước; Bính/Đinh Câu Trần",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-2"]
+            },
+            {
+              "id": "label-6",
+              "text": "Hào 1: Giáp/Ất Thanh Long; Bính/Đinh Chu Tước",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-1"]
+            }
+          ],
+          "claimIds": [
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-6",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-5",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-4",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-3",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-2",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-1"
+          ],
+          "inspectionStatus": "visually-inspected",
+          "orientation": {
+            "description": "Hàng nguồn từ lục xuống sơ, cột Giáp/Ất rồi Bính/Đinh. Dữ kiện bố trí, không DSL/bảng tính mới.",
+            "claimIds": [
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-6",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-5",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-4",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-3",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-2",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xiv-table-line-1"
+            ]
+          }
+        },
+        {
+          "id": "figure-bpct-ch01-xv-example",
+          "kind": "board",
+          "title": "Bĩ và Nguyệt quái thân",
+          "sourceUnitIds": ["bpct-ch01-xv"],
+          "labels": [
+            {
+              "id": "label-1",
+              "text": "Hào 6: dương; Ứng",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xv-line-6"]
+            },
+            {
+              "id": "label-2",
+              "text": "Hào 5: dương; Tuất — Quái thân",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xv-line-5"]
+            },
+            {
+              "id": "label-3",
+              "text": "Hào 4: dương; không nhãn",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xv-line-4"]
+            },
+            {
+              "id": "label-4",
+              "text": "Hào 3: âm; Thế",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xv-line-3"]
+            },
+            {
+              "id": "label-5",
+              "text": "Hào 2: âm; không nhãn",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xv-line-2"]
+            },
+            {
+              "id": "label-6",
+              "text": "Hào 1: âm; không nhãn",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xv-line-1"]
+            }
+          ],
+          "claimIds": [
+            "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-6",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-5",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-4",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-3",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-2",
+            "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-1"
+          ],
+          "inspectionStatus": "visually-inspected",
+          "orientation": {
+            "description": "Hình nguồn lục xuống sơ, nối đúng hai trang 15–16; không suy thêm nhãn can chi vắng mặt.",
+            "claimIds": [
+              "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-6",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-5",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-4",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-3",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-2",
+              "article-bpct-chapter-one-foundations-bpct-ch01-xv-line-1"
+            ]
+          }
+        },
+        {
+          "id": "figure-bpct-ch01-xvii-hand",
+          "kind": "placement",
+          "title": "Vị trí chi trên hình bàn tay",
+          "sourceUnitIds": ["bpct-ch01-xvii"],
+          "labels": [
+            {
+              "id": "label-1",
+              "text": "Dần — chân cột trái",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-2",
+              "text": "Mão — trên Dần",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-3",
+              "text": "Thìn — trên Mão",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-4",
+              "text": "Tị — trên Thìn",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-5",
+              "text": "Ngọ — đỉnh kế trái",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-6",
+              "text": "Mùi — đỉnh kế phải",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-7",
+              "text": "Thân — đầu cột phải",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-8",
+              "text": "Dậu — dưới Thân",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-9",
+              "text": "Tuất — dưới Dậu",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-10",
+              "text": "Hợi — chân cột phải",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-11",
+              "text": "Tí — gốc phía phải",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            },
+            {
+              "id": "label-12",
+              "text": "Sửu — gốc phía trái",
+              "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+            }
+          ],
+          "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"],
+          "inspectionStatus": "visually-inspected",
+          "orientation": {
+            "description": "Mô tả nhãn trên hình quan sát, không đo kích thước hoặc xác định tay người dùng.",
+            "claimIds": ["article-bpct-chapter-one-foundations-bpct-ch01-xvii-hand"]
+          }
+        }
+      ],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex worker — AI source comparison",
+        "reviewedAt": "2026-10-06",
+        "method": "source-comparison",
+        "evidenceCitationIds": [
+          "citation-bpct-ch01-i-discussion",
+          "citation-bpct-ch01-ii-discussion",
+          "citation-bpct-ch01-iii-discussion",
+          "citation-bpct-ch01-iv-discussion",
+          "citation-bpct-ch01-v-discussion",
+          "citation-bpct-ch01-vi-can-discussion",
+          "citation-bpct-ch01-vi-chi-discussion",
+          "citation-bpct-ch01-vii-discussion",
+          "citation-bpct-ch01-viii-discussion",
+          "citation-bpct-ch01-ix-discussion",
+          "citation-bpct-ch01-x-discussion",
+          "citation-bpct-ch01-xi-discussion",
+          "citation-bpct-ch01-xii-discussion",
+          "citation-bpct-ch01-xiii-discussion",
+          "citation-bpct-ch01-xiv-discussion",
+          "citation-bpct-ch01-xv-discussion",
+          "citation-bpct-ch01-xvi-discussion",
+          "citation-bpct-ch01-xvii-discussion",
+          "citation-bpct-ch01-xviii-discussion",
+          "citation-bpct-ch01-xix-discussion",
+          "citation-bpct-ch01-xx-discussion",
+          "citation-bpct-ch01-xxi-discussion",
+          "citation-bpct-ch01-xxii-discussion",
+          "citation-bpct-ch01-xxiii-discussion",
+          "citation-bpct-ch01-xxiv-discussion",
+          "citation-bpct-ch01-xxv-discussion",
+          "citation-bpct-ch01-i-pair-01",
+          "citation-bpct-ch01-i-pair-02",
+          "citation-bpct-ch01-i-pair-03",
+          "citation-bpct-ch01-i-pair-04",
+          "citation-bpct-ch01-i-pair-05",
+          "citation-bpct-ch01-i-pair-06",
+          "citation-bpct-ch01-i-pair-07",
+          "citation-bpct-ch01-i-pair-08",
+          "citation-bpct-ch01-i-pair-09",
+          "citation-bpct-ch01-i-pair-10",
+          "citation-bpct-ch01-i-pair-11",
+          "citation-bpct-ch01-i-pair-12",
+          "citation-bpct-ch01-i-pair-13",
+          "citation-bpct-ch01-i-pair-14",
+          "citation-bpct-ch01-i-pair-15",
+          "citation-bpct-ch01-i-pair-16",
+          "citation-bpct-ch01-i-pair-17",
+          "citation-bpct-ch01-i-pair-18",
+          "citation-bpct-ch01-i-pair-19",
+          "citation-bpct-ch01-i-pair-20",
+          "citation-bpct-ch01-i-pair-21",
+          "citation-bpct-ch01-i-pair-22",
+          "citation-bpct-ch01-i-pair-23",
+          "citation-bpct-ch01-i-pair-24",
+          "citation-bpct-ch01-i-pair-25",
+          "citation-bpct-ch01-i-pair-26",
+          "citation-bpct-ch01-i-pair-27",
+          "citation-bpct-ch01-i-pair-28",
+          "citation-bpct-ch01-i-pair-29",
+          "citation-bpct-ch01-i-pair-30",
+          "citation-bpct-ch01-note-01-note",
+          "citation-bpct-ch01-note-02-note",
+          "citation-bpct-ch01-x-verse",
+          "citation-bpct-ch01-x-rendering",
+          "citation-bpct-ch01-xiii-ghi-chu",
+          "citation-bpct-ch01-iii-direction-1",
+          "citation-bpct-ch01-iii-direction-2",
+          "citation-bpct-ch01-iii-direction-3",
+          "citation-bpct-ch01-iii-direction-4",
+          "citation-bpct-ch01-iii-direction-5",
+          "citation-bpct-ch01-iii-direction-6",
+          "citation-bpct-ch01-iii-direction-7",
+          "citation-bpct-ch01-iii-direction-8",
+          "citation-bpct-ch01-ix-pattern-1",
+          "citation-bpct-ch01-ix-pattern-2",
+          "citation-bpct-ch01-ix-pattern-3",
+          "citation-bpct-ch01-ix-pattern-4",
+          "citation-bpct-ch01-ix-pattern-5",
+          "citation-bpct-ch01-ix-pattern-6",
+          "citation-bpct-ch01-ix-pattern-7",
+          "citation-bpct-ch01-ix-pattern-8",
+          "citation-bpct-ch01-xiii-sequence-1",
+          "citation-bpct-ch01-xiii-sequence-2",
+          "citation-bpct-ch01-xiii-sequence-3",
+          "citation-bpct-ch01-xiii-sequence-4",
+          "citation-bpct-ch01-xiii-sequence-5",
+          "citation-bpct-ch01-xiii-sequence-6",
+          "citation-bpct-ch01-xiii-sequence-7",
+          "citation-bpct-ch01-xiii-sequence-8",
+          "citation-bpct-ch01-xiv-table-line-6",
+          "citation-bpct-ch01-xiv-table-line-5",
+          "citation-bpct-ch01-xiv-table-line-4",
+          "citation-bpct-ch01-xiv-table-line-3",
+          "citation-bpct-ch01-xiv-table-line-2",
+          "citation-bpct-ch01-xiv-table-line-1",
+          "citation-bpct-ch01-xv-line-6",
+          "citation-bpct-ch01-xv-line-5",
+          "citation-bpct-ch01-xv-line-4",
+          "citation-bpct-ch01-xv-line-3",
+          "citation-bpct-ch01-xv-line-2",
+          "citation-bpct-ch01-xv-line-1",
+          "citation-bpct-ch01-xvii-hand"
+        ],
+        "note": "Complete passages and every individual full-page image at BPCT PDFs 1–76 inspected; PDF 77 is boundary context only. Fingerprint 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a, 467 pages. All I–XXV including duplicated VI, two footnotes, 30 Nạp âm pairs, six inspected figure/layout groups and source omissions. The Ghi chú has no separate signature; do not retroactively reattribute prior claims. Contradictions include Wood Quan, Khôn mộc, Khảm missing Cách, stages, missing Tân, incomplete Quý nhân meanings, Hình wording and modern-hour gloss. Typed existing calculation tables remain unchanged; rosters not fitting those bounded kinds are original prose/figure-label facts, not new calculation tables. Original summaries and structured source observations only; no copied passages or images. No independent verification approval or corpus certification; later audit rosters and decisions remain open."
+      }
     }
   ],
   "citations": [
@@ -77639,6 +79752,1762 @@
       },
       "textLayer": "translator-note",
       "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-credits-compilation",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-credits — compilation",
+        "pdfPageStart": 1,
+        "pdfPageEnd": 1
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — tín chỉ"
+    },
+    {
+      "id": "citation-bpct-front-credits-phu",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-credits — phu",
+        "pdfPageStart": 1,
+        "pdfPageEnd": 1
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Bản cung cấp — tín chỉ"
+    },
+    {
+      "id": "citation-bpct-front-credits-translation",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-credits — translation",
+        "pdfPageStart": 2,
+        "pdfPageEnd": 2
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-translator-preface-history",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-translator-preface — history",
+        "pdfPageStart": 2,
+        "pdfPageEnd": 3
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-translator-preface-edition",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-translator-preface — edition",
+        "pdfPageStart": 3,
+        "pdfPageEnd": 3
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-preface-endorsement",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-preface — endorsement",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Trương Cảnh Tùng"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-01-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-01 — author",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-02-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-02 — author",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-03-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-03 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-04-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-04 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-05-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-05 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-pham-le-06-author",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-pham-le-06 — author",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-note-01-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-01 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-02-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-02 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-03-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-03 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-04-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-04 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-05-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-05 — note",
+        "pdfPageStart": 4,
+        "pdfPageEnd": 4
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-06-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-06 — note",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-note-07-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-note-07 — note",
+        "pdfPageStart": 5,
+        "pdfPageEnd": 5
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-front-cach-ngon-sincerity",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-cach-ngon — sincerity",
+        "pdfPageStart": 6,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-cach-ngon-exploitation",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-cach-ngon — exploitation",
+        "pdfPageStart": 6,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-front-cach-ngon-closing",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần đầu sách",
+        "section": "bpct-front-cach-ngon — closing",
+        "pdfPageStart": 6,
+        "pdfPageEnd": 6
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — discussion",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 8,
+        "printedPageStart": "1",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ii — discussion",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — discussion",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iv — discussion",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9,
+        "printedPageStart": "3",
+        "printedPageEnd": "3"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-v-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-v — discussion",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 9,
+        "printedPageStart": "3",
+        "printedPageEnd": "3"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-vi-can-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-vi-can — discussion",
+        "pdfPageStart": 9,
+        "pdfPageEnd": 10,
+        "printedPageStart": "3",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-vi-chi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-vi-chi — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-vii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-vii — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-viii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-viii — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — discussion",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 11,
+        "printedPageStart": "4",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-x-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-x — discussion",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 12,
+        "printedPageStart": "5",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xi — discussion",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 13,
+        "printedPageStart": "6",
+        "printedPageEnd": "7"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xii — discussion",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 13,
+        "printedPageStart": "7",
+        "printedPageEnd": "7"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — discussion",
+        "pdfPageStart": 13,
+        "pdfPageEnd": 14,
+        "printedPageStart": "7",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — discussion",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — discussion",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 16,
+        "printedPageStart": "9",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xvi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xvi — discussion",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xvii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xvii — discussion",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 17,
+        "printedPageStart": "10",
+        "printedPageEnd": "11"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xviii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xviii — discussion",
+        "pdfPageStart": 17,
+        "pdfPageEnd": 17,
+        "printedPageStart": "11",
+        "printedPageEnd": "11"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xix-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xix — discussion",
+        "pdfPageStart": 17,
+        "pdfPageEnd": 18,
+        "printedPageStart": "11",
+        "printedPageEnd": "12"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xx-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xx — discussion",
+        "pdfPageStart": 18,
+        "pdfPageEnd": 18,
+        "printedPageStart": "12",
+        "printedPageEnd": "12"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxi-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxi — discussion",
+        "pdfPageStart": 18,
+        "pdfPageEnd": 18,
+        "printedPageStart": "12",
+        "printedPageEnd": "12"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxii — discussion",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 19,
+        "printedPageStart": "13",
+        "printedPageEnd": "13"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxiii-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxiii — discussion",
+        "pdfPageStart": 19,
+        "pdfPageEnd": 20,
+        "printedPageStart": "13",
+        "printedPageEnd": "14"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxiv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxiv — discussion",
+        "pdfPageStart": 20,
+        "pdfPageEnd": 20,
+        "printedPageStart": "14",
+        "printedPageEnd": "14"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xxv-discussion",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xxv — discussion",
+        "pdfPageStart": 20,
+        "pdfPageEnd": 21,
+        "printedPageStart": "14",
+        "printedPageEnd": "15"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-01",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-01",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-02",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-02",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-03",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-03",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-04",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-04",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-05",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-05",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-06",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-06",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-07",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-07",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-08",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-08",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-09",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-09",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-10",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-10",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-11",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-11",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-12",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-12",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-13",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-13",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-14",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-14",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-15",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-15",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-16",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-16",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-17",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-17",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-18",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-18",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-19",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-19",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-20",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-20",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-21",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-21",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-22",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-22",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-23",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-23",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-24",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-24",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-25",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-25",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-26",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-26",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-27",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-27",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-28",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-28",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-29",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-29",
+        "pdfPageStart": 7,
+        "pdfPageEnd": 7,
+        "printedPageStart": "1",
+        "printedPageEnd": "1"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-i-pair-30",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-i — pair-30",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-note-01-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-note-01 — note",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-note-02-note",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-note-02 — note",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "translator-note",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-x-verse",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-x — verse",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 12,
+        "printedPageStart": "5",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Ca quyết phép tiền — không ghi tác giả riêng"
+    },
+    {
+      "id": "citation-bpct-ch01-x-rendering",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-x — rendering",
+        "pdfPageStart": 12,
+        "pdfPageEnd": 12,
+        "printedPageStart": "6",
+        "printedPageEnd": "6"
+      },
+      "textLayer": "original-text",
+      "attributedTo": "Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-ghi-chu",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — ghi-chu",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 15,
+        "printedPageStart": "8",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-1",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-2",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-3",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-4",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-5",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-6",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-7",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-7",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-iii-direction-8",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-iii — direction-8",
+        "pdfPageStart": 8,
+        "pdfPageEnd": 8,
+        "printedPageStart": "2",
+        "printedPageEnd": "2"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-1",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-2",
+        "pdfPageStart": 10,
+        "pdfPageEnd": 10,
+        "printedPageStart": "4",
+        "printedPageEnd": "4"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-3",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-4",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-5",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-6",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-7",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-7",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-ix-pattern-8",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-ix — pattern-8",
+        "pdfPageStart": 11,
+        "pdfPageEnd": 11,
+        "printedPageStart": "5",
+        "printedPageEnd": "5"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-1",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-2",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-3",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-4",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-5",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-6",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-7",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-7",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiii-sequence-8",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiii — sequence-8",
+        "pdfPageStart": 14,
+        "pdfPageEnd": 14,
+        "printedPageStart": "8",
+        "printedPageEnd": "8"
+      },
+      "textLayer": "supplement",
+      "attributedTo": "Ghi chú không ký riêng — truyền qua Vĩnh Cao"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-6",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-5",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-4",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-3",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-2",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xiv-table-line-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xiv — table-line-1",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-6",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-6",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-5",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-5",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-4",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-4",
+        "pdfPageStart": 15,
+        "pdfPageEnd": 15,
+        "printedPageStart": "9",
+        "printedPageEnd": "9"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-3",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-3",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-2",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-2",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xv-line-1",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xv — line-1",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
+    },
+    {
+      "id": "citation-bpct-ch01-xvii-hand",
+      "sourceId": "source-book-bpct",
+      "editionId": "edition-bpct-supplied",
+      "location": {
+        "chapter": "Phần I, Chương 1",
+        "section": "bpct-ch01-xvii — hand",
+        "pdfPageStart": 16,
+        "pdfPageEnd": 16,
+        "printedPageStart": "10",
+        "printedPageEnd": "10"
+      },
+      "textLayer": "author-commentary",
+      "attributedTo": "Vương Hồng Tự"
     }
   ],
   "sources": [
@@ -77784,5 +81653,5 @@
     }
   ],
   "projectContracts": [],
-  "snapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:d4090a2ae4abdc31be46097500d9f11494ce488f102bebae05a4dc4f0008f484"
+  "snapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:272136f74d4835c67a3e7861f8a0549f59e03a2399366ab5ce0977416c83af83"
 }
