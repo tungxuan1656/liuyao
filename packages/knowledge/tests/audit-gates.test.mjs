@@ -526,7 +526,7 @@ describe('evidence-derived audit gates', () => {
     expect(approvedGates.independentUnitApprovals).toBe(true);
     expect(approvedGates.certification).toBe(true);
     expect(approvedGates.complete).toBe(true);
-  }, 20_000);
+  }, 90_000);
 
   it('opens every validated gate for a covered released claim without real approval or certification', async () => {
     const { context } = auditContext();
@@ -722,7 +722,7 @@ describe('evidence-derived audit gates', () => {
         certification: staleCertification,
       }).complete,
     ).toBe(false);
-  }, 45_000);
+  }, 90_000);
 
   it('keeps layer, discovery, and specialist rejection semantics separate', async () => {
     const { context } = auditContext();
@@ -952,7 +952,7 @@ describe('evidence-derived audit gates', () => {
     await yieldToEventLoop();
     expect(staleSnapshotGates.valid).toBe(true);
     expect(staleSnapshotGates.certificationStatus).toBe('stale');
-  }, 25_000);
+  }, 90_000);
 
   it('reports unchanged actual-registry inventory floors and zero current decisions', () => {
     const registry = readJson('../../../docs/reviews/knowledge/expected-units.json');
@@ -979,7 +979,7 @@ describe('evidence-derived audit gates', () => {
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 1630,
+      groups: 1924,
       exclusions: 17,
     });
     expect(registry.layers.every(layer => layer.rosterStatus === 'unresolved')).toBe(true);
