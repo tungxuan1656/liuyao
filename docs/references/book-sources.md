@@ -1418,3 +1418,119 @@ This is feat-055 source comparison, not feat-089 audit, separate verification,
 certification, rights clearance, or medical/predictive efficacy. No source prose
 or images are redistributed, and no medical, legal, travel or safety advice or
 application behavior is added.
+
+## feat-056 source comparison
+
+Codex worker read the complete extracted passages and all 63 rendered BPCT pages
+302–364: 302–315 individually, 316–363 as full-resolution page pairs, and 364
+individually. Boundary images 301/365 and credits 1–3 were also inspected.
+The supplied 467-page edition retains SHA-256
+`713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`.
+The [passage register](../reviews/knowledge/source-inventory.md#feat-056-litigation-spirits-agriculture-state-conflict-and-flight-passage-register)
+owns exact child IDs, layer locators and dispositions. No diagrams or tables occur
+in the assigned interval; page 365's boards belong to Part II, not chapter 35.
+Printed folios overlap at chapter boundaries, jump from 272 to 275 at 315/316,
+and repeat at both head and foot of 323–329. This is an observed label gap, not
+evidence of missing PDF pages or a licence to invent omitted content.
+
+- Chapter 27 has an opening, 1–34 and one footnote. Opening/34 have no separate
+  commentary. Item 6's commentary stops after six quiet lines and Thế/Ứng not
+  sinh/hợp; do not complete the sentence or silently reconcile quiet quẻ with
+  moving Tử in the phú. Item 9 ends with the literal **x** for the second nearby
+  witness; no Ứng replacement is established. Item 3 distinguishes dominance
+  from victory: Thế khắc Ứng is insufficient without Quỷ, Nhật/Nguyệt or moving
+  line khắc Ứng. Item 14 still calls Tài Kỵ after using it as lý; 20's petition
+  role and 28's money-to-official role are different questions. Bribery, guilt,
+  punishment, imprisonment and release are attributed claims, not legal advice.
+  In 31 the reading has Nhật/Đức while the meaning has Nhật/Phúc; preserve both.
+- Chapter 28 has an opening, 1–25 and nine translator notes. Meaning 3 omits
+  Chấn; commentary still says Càn at this place belongs to Hoả, without silently
+  replacing Càn's established element. Meaning 10 prints **người khắc ta** for
+  elders where the reading/commentary have **sinh**. Item 11's vô tự becomes no
+  descendants in the meaning. Item 12's phú has Nhật/Nguyệt but commentary
+  explains Nhật only. Note 9 explicitly rejects commentary 14 as unrelated to
+  the phú: the compiler's adultery allegation and translator's household-spirit/
+  village-friend reading are separate. Item 21 repeats Huyền Vũ for strange and
+  stolen objects; do not substitute another Lục thần. Item 22's original and
+  commentary retain độc phát/kinh văn despite abbreviated reading/meaning.
+  Spirits, ritual, disease, carpenters and sexual accusations are beliefs in
+  the source, not evidence about real causes or persons.
+- Chapter 29 has an opening, 1–22, two distinct labels 23, then 24–27 and one
+  note. Children `23a`/`23b` preserve source order, not corrected numbering.
+  Tài must be present yet normally quiet in 1, with hoá Phúc exception; Huynh
+  motion in 4 is rescued by Tử motion. In 8, no injury to Thân/Thế with quiet
+  vượng Tài is an exception; 13 qualifies the general less-banking claim.
+  Item 16 literally includes Tài hoá Huynh Tử among adverse changes, yet later
+  favours vượng Tài hoá Tử; neither statement is deleted. Item 17 requires
+  separate questions by seed type. Item 26 has no Cấn explanation and says
+  Càn in nội is still not low, unlike 20's general nội/ngoại contrast. No soil,
+  weather, market, land title or agronomic recommendation is established.
+- Chapter 30 has 1–30, two footnotes and an unsigned inline diệp gloss in 7.
+  The gloss uses the general translation credit with uncertainty about its
+  individual author. Questions separate Tử life, Tài price/profit and cattle/
+  horse strength, purchase, breeding, treatment, betting and hunting/fishing.
+  Item 9 retains the malformed **Canmf** palace label and inconsistent second
+  example's body colour, not a reconstructed animal diagram. Item 18 prints
+  Nhật in commentary despite Quan in phú. Item 19's thô/tế becomes ít/tạp in
+  meaning/commentary. In 22, đạo lai chi súc suggests stolen-origin livestock,
+  while meaning/commentary talk about theft; keep the difference unresolved.
+  Item 23's commentary gives Quỷ hoá Huynh or both moving, not both directions
+  of transformation. No husbandry, veterinary, gambling, animal-fighting or
+  hunting practice is endorsed.
+- Chapter 31 has opening/1–20 and one note. Item 1 explicitly rejects fixed
+  Thuỷ Kỵ/Hoả Dụng; tằm, silk and leaf price use different question roles, while
+  Tài hợp Ứng or a moving line can mean the female keeper. Item 14 distinguishes
+  silk, leaf price and worms rather than claiming universal benefit from Huynh
+  Không. Items 15/18 distinguish spring/summer, with Tị/Ngọ indicating seasonal
+  strength and Thuỷ Tử favourable in summer. Item 20 says cục strength is not
+  bounded by season here: Phụ harms Tử; Quan harms its Nguyên Huynh. These are
+  source doctrines, not activated calendar/cục calculations. Claims about
+  supposedly impure people, women, pregnancy, infidelity, fire, illness and
+  silkworm rooms do not identify people or establish safety/causation.
+- Chapter 32 has 1–23 and two notes; 23 has no separate commentary. Courtier
+  enquiry in 1 gives Tuế king, its agreeing line queen, Nguyệt officials, Nhật
+  heir, Tử populace, Phụ state; royal self-enquiry in 4–6 instead uses Thế king
+  and Ứng queen. Tử tha cung is a minister in 9, bản cung heir in 12–16.
+  Item 18 retains cát thần khắc; 22 retains a generally adverse Càn→Tốn with
+  favourable stars. Historical allusions are what the edition reports, not
+  independently checked history, political predictions or moral accusations.
+- Chapter 33 has 1–26, an unnumbered closing phú and one note. In 2 Hán says
+  Kim hào while reading/meaning add Phụ. Item 4's commentary literally starts
+  Thế động sinh Thế/Thân; no Thuỷ replacement is inferred. In 9, afflicted Quan
+  in phú differs from vượng Quan in commentary. Item 11 needs many quiet Quan
+  and few strong moving Tử; 13 warns that victory need not prevent internal
+  destruction. Item 14's Tử hào is the death phase, not another Tử Tôn line.
+  Item 18's commentary prints Duy Dương versus Tuy Dương in phú; 19 prints
+  vượng Quỷ/weak Thế together. Military stories and numbers, arms, ambush,
+  siege, assassinations and surrender are source accounts, not instructions.
+- Chapter 34 has opening/1–42, a prose closing and four notes. Item 29 frames
+  30–42 as appended avoidance-of-misfortune material; no unprinted heading is
+  invented. Item 5's luyến đề khởi contrasts with commentary warning against
+  revived hidden Quỷ; note 2 says Tử Vong here means Tuần Không, not death.
+  Item 8 prioritizes usable xung-tán Quan, then sinh/hợp Thế when Tử is
+  ineffective. Item 13 retains **cũng cần** Huynh cục and distinct family/
+  property consequences; 27 includes the Phúc-vượng/Quan-suy rescue after its
+  child-cry allegation. In 32, the vượng moving subject is unnamed; in 33
+  Nhật động remains as printed. Calm quẻ in 38 still requires Quan not xung.
+  Ritual, directions, shelter, evacuation, arrest, sexual violence and survival
+  claims are not safety/legal guidance, accusations or victim blame.
+- Chapter 35 has opening/1–4/6–30 and seven notes. No 5 is reconstructed;
+  opening/30 have no separate commentary. Item 2 distinguishes stationary
+  current direction from moving changed direction. Item 12 distinguishes hợp
+  khởi/trú, 13 xung động/khai. Item 16's phú/reading/meaning say tương sinh,
+  commentary instead động xung; both remain with their own citations. Item
+  17 stops mid-sentence after biến sinh hợp Dụng before 18, whose commentary
+  uses hoá Thoái/khứ against phú hoá xuất; do not join or complete them. In 21,
+  phú uses Ứng but commentary uses Dụng. Item 23 is explicitly a fugitive's
+  self-enquiry, unlike enquiries about another person; 25 supports both enquiry
+  directions, and 22 concerns news. Item 29's meaning drops độc phát while
+  commentary specifies Huynh độc phát. No tracking, detention, fugitive safety,
+  evasion of law or modern legal authority is supplied.
+
+General phú/compilation/translation credits are conventional attribution, not a
+certain author roster for each passage. Distinct meanings and translator notes
+remain separate even when their summaries agree. All prior records, obligations
+and exclusions remain. This is feat-056 source comparison, not feat-090 source
+audit, separate verification, certification or predictive efficacy. No source
+text/images are redistributed and no UI, calculation or interpretation behaviour
+is added. The audit/certification gates retain their existing unfulfilled status.

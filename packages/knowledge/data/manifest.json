@@ -41,7 +41,8 @@
     "citations/batch-nineteen-advanced.json",
     "citations/batch-twenty-advanced.json",
     "citations/batch-twenty-one-advanced.json",
-    "citations/batch-twenty-two-advanced.json"
+    "citations/batch-twenty-two-advanced.json",
+    "citations/batch-twenty-three-advanced.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -282,7 +283,16 @@
     "liuyao/bpct-chapter-twenty-three-illness.json",
     "liuyao/bpct-chapter-twenty-four-condition.json",
     "liuyao/bpct-chapter-twenty-five-remedies.json",
-    "liuyao/bpct-chapter-twenty-six-travellers.json"
+    "liuyao/bpct-chapter-twenty-six-travellers.json",
+    "liuyao/bpct-chapter-twenty-seven-litigation.json",
+    "liuyao/bpct-chapter-twenty-eight-spirits.json",
+    "liuyao/bpct-chapter-twenty-nine-agriculture.json",
+    "liuyao/bpct-chapter-thirty-livestock.json",
+    "liuyao/bpct-chapter-thirty-one-sericulture.json",
+    "liuyao/bpct-chapter-thirty-two-state.json",
+    "liuyao/bpct-chapter-thirty-three-conflict.json",
+    "liuyao/bpct-chapter-thirty-four-disorder.json",
+    "liuyao/bpct-chapter-thirty-five-flight.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -523,7 +533,16 @@
     "article-bpct-chapter-twenty-three-illness",
     "article-bpct-chapter-twenty-four-condition",
     "article-bpct-chapter-twenty-five-remedies",
-    "article-bpct-chapter-twenty-six-travellers"
+    "article-bpct-chapter-twenty-six-travellers",
+    "article-bpct-chapter-twenty-seven-litigation",
+    "article-bpct-chapter-twenty-eight-spirits",
+    "article-bpct-chapter-twenty-nine-agriculture",
+    "article-bpct-chapter-thirty-livestock",
+    "article-bpct-chapter-thirty-one-sericulture",
+    "article-bpct-chapter-thirty-two-state",
+    "article-bpct-chapter-thirty-three-conflict",
+    "article-bpct-chapter-thirty-four-disorder",
+    "article-bpct-chapter-thirty-five-flight"
   ],
   "topics": [
     {
@@ -585,6 +604,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "Dự kiến feat-056: BPCT chương27–35, Từ Tụng, Quỷ Thần, Chủng Tác, Lục Súc, Tàm Tang, Quốc Triều, Chinh Chiến, Tị Loạn và Đào Vong, PDF302–364. Feat-055 có tóm tắt đối chiếu nguồn chương23–26, PDF270–301, giữ279 chỉ folio241,28 phú bệnh chứng và đoạn ký Đông tà1–11, nhãn13/14 lặp ở24, nhãn26 vắng ở26, vai hỏi và các lớp/chú/bất đồng. Không có bằng chứng hiệu nghiệm, hướng dẫn y tế/pháp lý/an toàn/du lịch, phép lịch hoặc diễn giải tự động; audit089 và cổng toàn corpus còn mở nghĩa vụ, chưa chứng nhận."
+    "note": "Dự kiến feat-057: BPCT Part II mười tám câu hỏi và Hà Tri Chương; theo các ranh đơn vị trong source inventory. feat-056 đã đối chiếu nguồn chương27–35 PDF302–364, giữ vai câu hỏi, nghĩa Việt riêng, chú/bất đồng28/14, hai23 ở29, thiếu5 ở35 và câu bị cụt. Không hiệu nghiệm, lời pháp lý/y tế/an toàn/tác chiến/truy bắt hoặc tính lịch/diễn giải tự động; audit090 và cổng corpus vẫn còn nghĩa vụ, chưa chứng nhận."
   }
 }

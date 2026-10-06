@@ -277,9 +277,9 @@ describe('feat-054 release without audit/certification', () => {
     expect(audit.complete).toBe(false);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
-    expect(coverage.records.released).toBe(239);
-    expect(coverage.claims.total).toBe(5993);
-    expect(coverage.citations.total).toBe(6239);
+    expect(coverage.records.released).toBe(248);
+    expect(coverage.claims.total).toBe(6806);
+    expect(coverage.citations.total).toBe(7052);
     expect(manifest.nextBatch.note).toMatch(/feat-056.*PDF302–364/);
   });
 });
