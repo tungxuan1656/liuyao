@@ -721,6 +721,71 @@ rescue guarantee. No copied verse, Han quotation, replacement translation, sourc
 stage/calendar table, scoring, automated interpretation or efficacy certification is published.
 Feat-085 discovery/layer audit, separate corpus verification and certification remain open.
 
+### BPCT 57-69 selected comparison
+
+[Batch-seventeen citations](../../packages/knowledge/data/citations/batch-seventeen-advanced.json)
+support the [timing, relatives, body, spirits and sincerity article](../../packages/knowledge/data/liuyao/timing-relatives-body-spirits-and-sincerity-context.json).
+The supplied BPCT SHA-256 is `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`.
+Complete extracted text and each individual full-page image at PDFs 1–3 and 93–101 were inspected.
+Pages 93 and 101 are neighboring context, not newly authored units; no selected diagram or table occurs.
+Printed labels for the assigned 94–100 are 80–86. PDF 101 restarts at printed 85;
+that next-chapter label does not alter the chapter-6 locators.
+
+Every numbered passage retains the edition-attributed Phú separately from Vĩnh Cao's Vietnamese
+meaning and Vương Hồng Tự's commentary through Vĩnh Cao. The citation enum has no translation value:
+rendering citations use `original-text` with an explicitly named Vietnamese-meaning section and
+Vĩnh Cao attribution, not attribution to the verse author. Credits at 1–3 establish edition roles,
+not verified historical authorship of each verse or complete front-matter coverage.
+The [inventory dispositions](../reviews/knowledge/source-inventory.md#feat-050-numbered-passage-dispositions)
+record exact original/reading/meaning/commentary continuations, note owners and selection limits.
+
+- Sentence 57 keeps all three sources of hợp trú (Nhật, self-transformation, moving line), both Dụng
+  and Kỵ, and delayed adverse as well as favorable response; xung does not guarantee good results.
+- Sentence 58 retains all twelve timing cases, the same-day variants in case 4, the xuất Tuần
+  prerequisites and case 12's immediate xung thực beside them. Chế sát remains unspecified;
+  overlapping cases and hợp as delay in 57 versus ứng kỳ in 58 have no supplied complete priority rule.
+  Note 12 belongs to trị in case 10, despite the footer below label 60, and explains matching branch
+  with a Dần-after-Tuần example. No calendar conversion, branch-stage table or classifier is released.
+- Sentence 59 distinguishes động khắc, động sinh and tĩnh sinh, then relative suy/vượng pace;
+  its accuracy assertion is testimony. Sentence 60's opening limits itself to public affairs,
+  but its second paragraph explicitly treats private affairs. Neither paragraph is suppressed.
+- Sentence 61 preserves Quan's seven question-specific examples and need for a present static Quan
+  as the author's opinion, not a structural rule rejecting boards without it. Sentence 62's meaning
+  says bị khắc nhiều, but commentary separately glosses Đa as many appearances and Phản as being
+  controlled. Both layers remain visible; medication/wealth illustrations are not medical/financial advice.
+- Sentence 63 retains all five roles and the author's ancestry, Huyền Vũ and competing-Huynh examples.
+  The original first line has an unusual Phu-form beside Phụ in the reading; no original is repaired.
+  Note 13 belongs to năm loại in 63, despite its footer after the beginning of 65: five relatives plus Ta
+  explain six, not five Lục thú. Class, ancestry and crime judgments are not facts about current people.
+- Sentence 64 expressly identifies Nguyệt quái thân and gives only the quoted starting convention,
+  not a released placement algorithm. Its original body glyph differs from the Quái thân reading;
+  preserve this without supplying a repaired source. Keep appearance/absence, two places,
+  collaborative/competing roles, static/moving/transformed/hidden contexts, authority at Thế/Ứng,
+  and both directions of khắc. The warning not to use it for thân mệnh sits beside a tướng mạo
+  illustration in the same paragraph; retain the tension without turning either into a body assessment.
+- Sentence 65 has seven verse clauses at 97–98 and a commentary continuation through 99, not a
+  short passage on 97. Vietnamese meaning says Huyền Vũ/Chu Tước không nên ở Quan/Huynh,
+  whereas reading and commentary require those co-locations for the theft/dispute meanings.
+  The Huyền Vũ original ends with a giao-form beside hào in its reading; no critical text is reconstructed.
+  Keep actual layers and the affirmative commentary as a bounded author reading, not unanimity.
+  Thiên Hỷ's illness and Vãng Vong's travel cases are critiques of star-only readings, not mortality
+  evidence or travel guidance. Lục thân as root, Lục thú as appearance/temperament, and lesser
+  Thiên Hỷ/Thiên Y/Tang xa remain distinct; no count-based score or personality diagnosis follows.
+- Sentence 66's tri tiền reading and thông biến meaning remain separate; its critique of rigid
+  Long/Hổ, Water/Fire, Không/Phá, Thân/Ứng readings is not a complete replacement classifier.
+  Sentence 67's short commentary defines the questioner's đạo by thành tâm, not a new audit process.
+  Sentence 68 preserves every stated ritual/proxy criticism as the author's religious/social opinion,
+  without efficacy endorsement, user blame, incense/clothing/handwashing rules or a proxy ban.
+- Sentence 69 continues at 100, rejecting a Tí-day taboo through attributed divine-response language;
+  no present-day calendar boundary or empirical validation is inferred. The unnumbered concluding
+  paragraph at 100 is a separate author-commentary claim/citation, not a verse or invented sentence 70.
+
+No copied verse, Han quotation, replacement translation, recovered absent text, source emendation,
+medical/mortality prediction, class/gender ranking, supernatural fact, ritual requirement, automated
+interpretation or new UI is published. Specific malformed words stay visible in review rather than
+being used as calculation evidence. These selections do not close chapter-wide layer discovery,
+feat-085 audit, global inventory reconciliation, separate verification or corpus certification.
+
 ### Classical exclusions
 
 - Phệ Hạp's second-line explanations use ứng for the fifth line, although both positions are yin.

@@ -451,19 +451,19 @@ Every row inherits author 051 and audit 084. The additional PDF 74–76 contribu
 
 The fresh image inspection confirmed every top-level printed label 1–69 in PDF 77–100, including label 11 on PDF 80 and label 60 on PDF 95. This confirms numbering and layout only. Each label, clause, example and translator note remains an independently disposable child. Existing completed authoring features own labels 1–11 as recorded; feat-042 is planning history, not a second passage owner. All 69 labels route to audit feature 085.
 
-| Stable child IDs   | Printed label starts by PDF page                      | Authoring owner                                                                   |
-| ------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `bpct-ch06-01..06` | 1–3: 77; 4–5: 78; 6: 79                               | 040 (1–6)                                                                         |
-| `bpct-ch06-07..11` | 7–8: 79; 9–11: 80                                     | 041 (7–11)                                                                        |
-| `bpct-ch06-12..16` | 12–14: 81; 15–16: 82                                  | 044 — passages inspected; separate verse/commentary citations; no attached notes. |
-| `bpct-ch06-17..24` | 17: 82; 18–21: 83; 22–24: 84                          | 045 — selected claims, separate verse/commentary and note 4; audit closure open.  |
-| `bpct-ch06-25..32` | 25–27: 85; 28–30: 86; 31–32: 87                       | 046 — selected verse/commentary and notes 5–6; audit closure open.                |
-| `bpct-ch06-33..40` | 33–34: 87; 35–37: 88; 38–40: 89                       | 047 — selected verse/commentary and notes 7–8; audit closure open.                |
-| `bpct-ch06-41..48` | 41: 89; 42–45: 90; 46–48: 91                          | 048                                                                               |
-| `bpct-ch06-49..56` | 49–52: 92; 53: 93; 54–56: 94                          | 049 — selected verse/commentary and notes 10–11; audit closure open.              |
-| `bpct-ch06-57..69` | 57–58: 94; 59–60: 95; 61–63: 96; 64–65: 97; 66–69: 99 | 050                                                                               |
+| Stable child IDs   | Printed label starts by PDF page                                                                     | Authoring owner                                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `bpct-ch06-01..06` | 1–3: 77; 4–5: 78; 6: 79                                                                              | 040 (1–6)                                                                         |
+| `bpct-ch06-07..11` | 7–8: 79; 9–11: 80                                                                                    | 041 (7–11)                                                                        |
+| `bpct-ch06-12..16` | 12–14: 81; 15–16: 82                                                                                 | 044 — passages inspected; separate verse/commentary citations; no attached notes. |
+| `bpct-ch06-17..24` | 17: 82; 18–21: 83; 22–24: 84                                                                         | 045 — selected claims, separate verse/commentary and note 4; audit closure open.  |
+| `bpct-ch06-25..32` | 25–27: 85; 28–30: 86; 31–32: 87                                                                      | 046 — selected verse/commentary and notes 5–6; audit closure open.                |
+| `bpct-ch06-33..40` | 33–34: 87; 35–37: 88; 38–40: 89                                                                      | 047 — selected verse/commentary and notes 7–8; audit closure open.                |
+| `bpct-ch06-41..48` | 41: 89; 42–45: 90; 46–48: 91                                                                         | 048                                                                               |
+| `bpct-ch06-49..56` | 49–52: 92; 53: 93; 54–56: 94                                                                         | 049 — selected verse/commentary and notes 10–11; audit closure open.              |
+| `bpct-ch06-57..69` | 57: 94; 58: 94–95; 59: 95; 60: 95–96; 61–62: 96; 63: 96–97; 64: 97; 65: 97–99; 66–68: 99; 69: 99–100 | 050 — full-passage selections and notes 12–13; later audit open.                  |
 
-These are exact top-level printed-label starts. Continuations include 3 on PDF 78; 11 on 81; 14 on 82; 17 on 83; 21 on 84; 24 on 85; 30 on 87; 34 on 88; 41 on 90; 45 on 91; 48 on 92; 52 on 93; 58 on 95; 60 on 96; 63 on 97; 65 on 98; and 69 on 100. Cohort ownership is unchanged; this list does not map every clause or note boundary.
+Earlier rows record exact printed-label starts; the 57–69 row now includes full inspected continuations. Continuations include 3 on PDF 78; 11 on 81; 14 on 82; 17 on 83; 21 on 84; 24 on 85; 30 on 87; 34 on 88; 41 on 90; 45 on 91; 48 on 92; 52 on 93; 58 on 95; 60 on 96; 63 on 97; 65 on 98–99; and 69 on 100. Cohort ownership is unchanged; this list does not map every clause or note boundary.
 
 Sentences 17–24 map to `article-useful-spirit-rescue-empty-combination-context`. The full selected bounds are 17: PDF 82–83; 18–20: 83; 21: 83–84; 22–23: 84; 24: 84–85. Note 4 on PDF 84 belongs to sentence 23 and points to chapter 1, XX at PDF 18. Note 5 on PDF 85 belongs to sentence 26 and remains outside this batch. The already-cited translator criticism at PDF 403 is a disagreement cross-reference, not new full coverage of question 14. These mappings do not close discovery, layer rosters or audit decisions.
 
@@ -653,6 +653,52 @@ Shared front-matter credits and separate PDF-403 dissent are reused, not new who
 Sentences 48/57 onward remain outside this batch. Thích nhật ambiguity, Thê/Thế and bát/bất forms
 remain visible; no source repair, full classifier, medical/gender prediction, calendar or efficacy claim
 is released. Feat-085 discovery, layer mapping and independent verification remain open.
+
+### Feat-050 numbered-passage dispositions
+
+Authoring comparison: Codex worker (AI source comparison), 2026-10-06, exact supplied BPCT edition.
+Complete text plus individual images at PDFs 1–3 and 93–101 were inspected; fingerprint and
+canonical limitations are in [book sources](../../references/book-sources.md#bpct-57-69-selected-comparison).
+These are fresh full-passage selections, not coverage inferred from older citations at 95/97/98–99.
+The record is [the BPCT 57–69 article](../../../packages/knowledge/data/liuyao/timing-relatives-body-spirits-and-sincerity-context.json);
+its ID is `article-timing-relatives-body-spirits-and-sincerity-context`.
+All citation IDs below use `citation-bpct-ch6-<number>-<layer>` in
+[batch seventeen](../../../packages/knowledge/data/citations/batch-seventeen-advanced.json).
+All claim IDs use `<record ID>-ch06-<number>-<layer>`; extra suffixes are explicitly listed.
+Each numbered unit includes separately attributed `verse`, `rendering` and `commentary` claims.
+The vocabulary `original-text` for rendering citations does not merge Vĩnh Cao with the verse author.
+
+| Source unit    | Full observed layer bounds (PDF; printed = PDF minus 14 here) | Included selection and explicit non-authority disposition                                                                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bpct-ch06-57` | Original, reading, meaning and commentary: 94                 | Three hợp trú sources; Dụng/Kỵ and both cát/hung delay; Dụng sinh Thế example included. No unconditional success or timing algorithm. No attached note.                                                                                                                                                                                                                                                    |
+| `bpct-ch06-58` | Original: 94; reading, meaning, commentary and note 12: 95    | Intro/conclusion plus all 12 cases in `commentary-case-01` through `commentary-case-12`; note in `note-12`. Case 4 includes both same-day variants. Chế sát wording and overlap stay unresolved as algorithmic authority; no priority/branch/date conversion is supplied.                                                                                                                                  |
+| `bpct-ch06-59` | All layers: 95                                                | Both verse clauses; three động/tĩnh relations and suy/vượng comparison included. Relative pace only, not predicted dates or certified accuracy. No attached note.                                                                                                                                                                                                                                          |
+| `bpct-ch06-60` | Original: 95; reading, meaning and commentary: 96             | Public Phụ/văn thư/Quan and private Tử/Tài paragraphs included separately within commentary; opening public-only scope is not silently reconciled with the private paragraph. No note 12 ownership, death claim or advice about real officials.                                                                                                                                                            |
+| `bpct-ch06-61` | All layers: 96                                                | Present/static versus hidden Quan and all seven question-role examples included. No real illness/crime/supernatural/financial finding or board-validity rule. No attached note.                                                                                                                                                                                                                            |
+| `bpct-ch06-62` | All layers: 96                                                | Both Đa/Phản glosses, công danh exception and thuốc/cầu tài examples included. Combined Vietnamese meaning remains distinct from two author glosses; no medication instruction or financial guarantee. No attached note.                                                                                                                                                                                   |
+| `bpct-ch06-63` | Original/reading: 96–97; meaning, commentary and note 13: 97  | All five roles, ancestry/Quý Nhân, Huyền Vũ and competing-Huynh examples included; `note-13` lists five relatives plus Ta. Unusual original Phu-form is not repaired; no class ranking, factual ancestry or crime accusation.                                                                                                                                                                              |
+| `bpct-ch06-64` | All layers: 97                                                | Nguyệt quái thân and starting convention, two-place/collaboration/competition included; `commentary-presence`, `commentary-scope`, `commentary-direction` retain all remaining contexts. Unusual original body glyph and sự thể/tướng mạo tension stay visible; no recovered text, placement algorithm or body/life prediction. No attached note.                                                          |
+| `bpct-ch06-65` | Original: 97–98; reading/meaning: 98; commentary: 98–99       | All seven clause groups included. `commentary-tiger-dragon`, `commentary-bird-tortoise`, `commentary-joy`, `commentary-travel` plus commentary ending keep every example and root/branch conclusion. Negative Vietnamese rendering versus affirmative reading/bình and giao/hào original/read difference are not repaired; no mortality/travel advice, score or personality finding. No note 13 ownership. |
+| `bpct-ch06-66` | All layers: 99                                                | All six rigid-reading examples and author praise included. Tri tiền and thông biến remain distinct; no complete classifier or historical authorship certification. No attached note.                                                                                                                                                                                                                       |
+| `bpct-ch06-67` | All layers: 99                                                | Verse/meaning and complete short commentary on questioner's đạo/thành tâm included. No additional absent explanation, efficacy validation or retrospective audit procedure invented. No attached note.                                                                                                                                                                                                     |
+| `bpct-ch06-68` | All layers: 99                                                | Divine/ritual language and every demeanor/clothing/incense/handwashing/proxy criticism included as attributed historical opinion. No user filter, ritual requirement, proxy ban, truth of supernatural claims or accuracy guarantee. No attached note.                                                                                                                                                     |
+| `bpct-ch06-69` | Verse/reading/meaning: 99; commentary: 99–100                 | Tí taboo and complete divine-response rationale included as opinion. `closing` accounts separately for unnumbered chapter conclusion at 100 using its own citation; not a new numbered unit. No calendar boundary or verified efficacy. No attached note.                                                                                                                                                  |
+
+Notes 12 and 13 are the only attached notes in this cohort. Their footers follow labels 60 and 65,
+but reference markers attach to 58's trị and 63's năm loại respectively. No separate diagram, table,
+missing-page notice or uncredited supplement occurs in these inspected passages. The unnumbered
+chapter conclusion is accounted for under existing `bpct-ch06-69`/`bpct-part1-ch06`, not a fabricated
+70th label. Blank remainder at 100 is non-doctrinal spacing, not missing verse content.
+Adjacent 54–56 at 94, prior continuation at 93 and chapter 7 at 101 are boundary context only;
+their substantive authoring remains with their existing owners. Front-matter credit/translator-role
+citations do not close front-matter units under 051/084.
+
+These are included original summaries with precise non-authority limits, not broad exclusions of
+unfinished passages. Expected-unit revision 8 maps all 13 existing source-unit IDs to the record,
+extends the inspected continuation bounds for 58/60/63/65/69, and binds the inventory-byte hash.
+All 518 group obligations, 17 registered exclusions, author/audit owners and unresolved discovery/layer
+rosters remain intact. Feat-085 owns later unit/layer audit; 066/094 own global remainder reconciliation.
+No audit decisions, separate verification approvals or certification artifacts are created.
 
 ## Ownership and crosswalk rules
 
