@@ -31,12 +31,12 @@
 - Read: `packages/knowledge/data/sources.json`
 - Inspect: `docs/books/Tăng bổ bốc phệ chính tông.pdf`
 
-- [ ] Confirm the source fingerprint and page count.
-- [ ] Inspect PDF 101–165 and relevant adjacent page images; distinguish actual chapter boundaries from printed folios.
-- [ ] Map every passage, example, condition, note, disagreement, table, diagram, and continuation under the six assigned source units.
-- [ ] Compare current claims and citations; treat selected earlier citations as partial, not full coverage.
-- [ ] Add stable child units and exact page/printed-folio bounds to the canonical source inventory. Keep the six top-level units and unrelated mappings unchanged.
-- [ ] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` and commit the unit map before authoring.
+- [x] Confirm the source fingerprint and page count.
+- [x] Inspect PDF 101–165 and relevant adjacent page images; distinguish actual chapter boundaries from printed folios.
+- [x] Map every passage, example, condition, note, disagreement, table, diagram, and continuation under the six assigned source units.
+- [x] Compare current claims and citations; treat selected earlier citations as partial, not full coverage.
+- [x] Add stable child units and exact page/printed-folio bounds to the canonical source inventory. Keep the six top-level units and unrelated mappings unchanged.
+- [x] Run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` and commit the unit map before authoring.
 
 ## Task 2: Author chapter 7 — Thiên Thời
 
@@ -120,7 +120,7 @@
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
 - [ ] Cover every passage, question-specific role, condition, example, disagreement, and note on PDF 156–165.
-- [ ] Include the short closing fragment on PDF 165 and assign it to chapter 12 only if the page image confirms that boundary.
+- [ ] Include the closing prose on PDF 164 and the image-confirmed folio-only non-content page 165 under the unchanged chapter-12 parent (supervisor-approved source correction).
 - [ ] Keep source claims about gain/loss attributed and conditional; do not present them as validated predictions.
 - [ ] Add tests for full page bounds, closing fragment, notes, attribution, and exclusions.
 - [ ] Run focused tests and the corpus validator; commit this checkpoint.
