@@ -4,11 +4,13 @@ import nien from '../data/liuyao/bpct-nien-thoi.json';
 import life from '../data/liuyao/bpct-chapter-nine-life.json';
 import fame from '../data/liuyao/bpct-chapter-ten-fame.json';
 import office from '../data/liuyao/bpct-chapter-eleven-office.json';
+import wealth from '../data/liuyao/bpct-chapter-twelve-wealth.json';
 import weather from '../data/liuyao/bpct-chapter-seven-weather.json';
 import citations from '../data/citations/batch-nineteen-advanced.json';
 import { getBookCitation, getBookRecord, listBookSources } from '../src/index';
 
 const checkpoints = [
+  { prefix: 'bpct-ch12-', parent: 'bpct-part1-ch12', record: wealth, bounds: [156, 165] },
   { prefix: 'bpct-ch11-', parent: 'bpct-part1-ch11', record: office, bounds: [149, 155] },
   { prefix: 'bpct-ch10-', parent: 'bpct-part1-ch10', record: fame, bounds: [142, 148] },
   { prefix: 'bpct-ch09-', parent: 'bpct-part1-ch09', record: life, bounds: [119, 141] },
@@ -265,6 +267,62 @@ describe('feat-052 office roles and closing continuation', () => {
     ['closing-rendering', 155, 155],
   ])('retains source boundary %s', (suffix, a, b) => {
     expect(getBookCitation(`citation-bpct-ch11-${suffix}`)?.location).toMatchObject({
+      pdfPageStart: a,
+      pdfPageEnd: b,
+    });
+  });
+});
+
+describe('feat-052 wealth conditions, dissent and folio-only165', () => {
+  it('covers41 labels, opening/closing and both translator disagreements', () => {
+    expect(wealth.claims.filter(c => c.id.endsWith('-verse'))).toHaveLength(43);
+    expect(wealth.claims.filter(c => c.id.endsWith('-commentary'))).toHaveLength(42);
+    expect(wealth.claims.filter(c => c.id.includes('-note-'))).toHaveLength(2);
+    expect(wealth.claims.find(c => c.id.endsWith('note-01-discussion'))?.text).toMatch(
+      /không chứng minh/,
+    );
+    expect(wealth.claims.find(c => c.id.endsWith('note-02-discussion'))?.text).toMatch(
+      /chưa chắc nghiệm/,
+    );
+    expect(wealth.claims.find(c => c.id.endsWith('15-commentary'))?.text).toMatch(
+      /testimony.*không chứng minh/,
+    );
+    expect(wealth.claims.find(c => c.id.endsWith('32-commentary'))?.text).toMatch(
+      /quần áo\/sách.*dụng cụ.*tiền\/thực phẩm/,
+    );
+    expect(wealth.claims.find(c => c.id.endsWith('24-commentary'))?.text).toMatch(/bảy trường hợp/);
+  });
+  it('retains the parent to165 but does not invent the previously assumed closing fragment', () => {
+    expect(registry.groups.find(g => g.id === 'bpct-ch12-folio-165')).toMatchObject({
+      kind: 'non-content',
+      parentId: 'bpct-part1-ch12',
+      pdfPageStart: 165,
+      pdfPageEnd: 165,
+    });
+    expect(getBookCitation('citation-bpct-ch12-closing-verse')?.location).toMatchObject({
+      pdfPageStart: 164,
+      pdfPageEnd: 164,
+      printedPageStart: '138',
+      printedPageEnd: '138',
+    });
+    expect(getBookCitation('citation-bpct-ch12-folio-165-folio')?.location).toMatchObject({
+      pdfPageStart: 165,
+      pdfPageEnd: 165,
+      printedPageStart: '139',
+      printedPageEnd: '139',
+    });
+    expect(wealth.claims.find(c => c.id.endsWith('folio-165-folio'))?.text).toMatch(
+      /không có câu kết/,
+    );
+  });
+  it.each([
+    ['03-verse', 156, 157],
+    ['13-verse', 158, 159],
+    ['17-commentary', 160, 160],
+    ['23-verse', 160, 161],
+    ['33-verse', 162, 163],
+  ])('keeps shared-page continuation %s', (suffix, a, b) => {
+    expect(getBookCitation(`citation-bpct-ch12-${suffix}`)?.location).toMatchObject({
       pdfPageStart: a,
       pdfPageEnd: b,
     });

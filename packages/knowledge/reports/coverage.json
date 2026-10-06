@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 223, "released": 223, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 4229, "missingCitationIds": [] },
-  "citations": { "total": 4475 },
+  "records": { "authored": 224, "released": 224, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 4360, "missingCitationIds": [] },
+  "citations": { "total": 4606 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -455,7 +455,8 @@
         "article-bpct-nien-thoi",
         "article-bpct-chapter-nine-life",
         "article-bpct-chapter-ten-fame",
-        "article-bpct-chapter-eleven-office"
+        "article-bpct-chapter-eleven-office",
+        "article-bpct-chapter-twelve-wealth"
       ]
     },
     {
@@ -1673,9 +1674,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 2684,
+        "required": 2685,
         "current": 84,
-        "missing": 2600,
+        "missing": 2601,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1684,8 +1685,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 18 },
         { "code": "unresolved-source-discovery", "count": 1024 },
-        { "code": "missing-decision", "count": 2600 },
-        { "code": "released-claim-coverage-incomplete", "count": 4032 }
+        { "code": "missing-decision", "count": 2601 },
+        { "code": "released-claim-coverage-incomplete", "count": 4163 }
       ]
     },
     "certification": {
@@ -1693,7 +1694,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 2684,
+        "required": 2685,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

@@ -119,11 +119,11 @@
 - Test: `packages/knowledge/tests/book-batch-nineteen.test.ts`
 - Update: `docs/reviews/knowledge/source-inventory.md`
 
-- [ ] Cover every passage, question-specific role, condition, example, disagreement, and note on PDF 156–165.
-- [ ] Include the closing prose on PDF 164 and the image-confirmed folio-only non-content page 165 under the unchanged chapter-12 parent (supervisor-approved source correction).
-- [ ] Keep source claims about gain/loss attributed and conditional; do not present them as validated predictions.
-- [ ] Add tests for full page bounds, closing fragment, notes, attribution, and exclusions.
-- [ ] Run focused tests and the corpus validator; commit this checkpoint.
+- [x] Cover every passage, question-specific role, condition, example, disagreement, and note on PDF 156–165.
+- [x] Include the closing prose on PDF 164 and the image-confirmed folio-only non-content page 165 under the unchanged chapter-12 parent (supervisor-approved source correction).
+- [x] Keep source claims about gain/loss attributed and conditional; do not present them as validated predictions.
+- [x] Add tests for full page bounds, closing fragment, notes, attribution, and exclusions.
+- [x] Run focused tests and the corpus validator; commit this checkpoint.
 
 ## Task 8: Reconcile publication, registry, and final verification
 

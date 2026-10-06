@@ -1127,3 +1127,26 @@ no original is supplied.10's Phúc in phú differs from the Tài/Phụ condition
 versus active military question and26's Tử for monks/Daoists/court physicians stay separate.
 These are historical opinions, not civil-service, legal, medical, military, bribery, ethnic,
 travel, mortality or supernatural authority. No reported outcome is independent efficacy evidence.
+
+### Feat-052 Cầu Tài and folio-only165 correction
+
+The [wealth article](../../packages/knowledge/data/liuyao/bpct-chapter-twelve-wealth.json)
+covers opening,41 labelled passages, closing and two Vĩnh Cao dissent notes at156–164
+(printed130–138). Complete extracted text and contact-sheet images156–163, plus individual
+164–166, were inspected. PDF165 has only printed139, not the previously assumed closing
+fragment. The closing prose/verse is complete on164. The inventory keeps the exclusive
+chapter12 parent156–165 and gives165 its own non-content child, not a source omission;
+chapter13 begins166. No table/diagram occurs. Notes1/2 on158 attach10/11, not following clauses.
+
+10's Huynh thái quá claim is distinct from Vĩnh Cao's objection that the example merely
+shows Huynh sinh Tử sinh Tài.11's Quái Thân authority remains beside his doubtful-efficacy
+and Thế-strength qualification.15's author rejects the old Huynh hóa Quan reading in favor
+of two moving relatives; his testimony is not verification.03's useful Quan movement and09's
+obstruction keep their different Tử/Huynh conditions.12 includes Tài khắc Thế as coming toward
+the self;26–32 retain partnership, public office, cửu lưu, livestock, lending, shop-opening
+and object-specific borrowing roles.29's huyết Tài versus Vietnamese khó kiếm tiền stays a
+layer discrepancy.20's Thê in commentary is not silently corrected to Thế.24's seven timing
+cases and25's critique of element-only season pricing do not produce a calendar or financial
+classifier. Source statements about profits, theft, disease, death, gambling, prices, ritual
+sincerity and prediction do not establish efficacy or give financial, veterinary, safety,
+legal, medical or religious advice. All prior selected records remain unchanged.
