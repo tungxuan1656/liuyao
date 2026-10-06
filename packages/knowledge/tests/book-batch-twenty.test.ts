@@ -156,3 +156,31 @@ describe('feat-053 travel context and source discrepancies', () => {
     expect(text('bpct-ch14-note-01-discussion')).toMatch(/xung Thế.*xung hào.*hợp/);
   });
 });
+
+describe('feat-053 teacher versus teaching-house roles', () => {
+  it('preserves actual roles, allusions and folio190 without inventing16', () => {
+    const teacher = getBookRecord('article-bpct-chapter-fifteen-teacher')!;
+    const study = getBookRecord('article-bpct-chapter-sixteen-study')!;
+    const text = (record: typeof teacher, suffix: string) =>
+      record.claims.find(c => c.id.endsWith(suffix))!.text;
+    expect(text(teacher, 'bpct-ch15-02-commentary')).toMatch(/chưa rõ.*Ứng.*Học trò.*Phụ/);
+    expect(text(teacher, 'bpct-ch15-18-commentary')).toMatch(
+      /tự hỏi dùng Thế.*cha\/anh hỏi dùng Tử/,
+    );
+    expect(text(teacher, 'bpct-ch15-21-commentary')).toMatch(
+      /Thế cho cha.*Tử cho con.*Ứng cho thầy/,
+    );
+    expect(text(teacher, 'bpct-ch15-closing-commentary')).toMatch(
+      /học nghề\/tu.*bạn\/anh em dùng Huynh/,
+    );
+    expect(text(teacher, 'bpct-ch15-folio-190-folio')).toMatch(/chỉ có số in161.*đã hết.*189/);
+    expect(text(teacher, 'bpct-ch15-09-commentary')).toMatch(/Long Đức.*Hổ.*không gộp/);
+    expect(text(study, 'bpct-ch16-01-commentary')).toMatch(/Thế cho thầy.*không học trò/);
+    expect(text(study, 'bpct-ch16-12-commentary')).toMatch(/Tài làm thu nhập.*Dụng thư quán/);
+    expect(text(study, 'bpct-ch16-03-rendering')).toMatch(/kém khoẻ.*khác thiếu tráng/);
+    expect(text(study, 'bpct-ch16-23-rendering')).toMatch(/vượng địa.*không ghi Dưỡng/);
+    expect(text(study, 'bpct-ch16-note-11-discussion')).toMatch(/Dương Thì\/Du Tạc.*24.*196.*197/);
+    expect(getBookCitation('citation-bpct-ch16-21-verse')?.location.pdfPageEnd).toBe(195);
+    expect(getBookCitation('citation-bpct-ch16-21-rendering')?.location.pdfPageStart).toBe(196);
+  });
+});

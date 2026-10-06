@@ -1187,3 +1187,29 @@ actual relation and item18 excluding visits to officials from its favorable Phú
 Travel, weather, theft, danger and trading outcomes remain historical claims, never route,
 safety, suspect-profile, calendar or investment authority. Inspection limits are those of the
 feat-053 loss section; the source-unit map and release are not later audit approval.
+
+### Feat-053 teacher and teaching-house applications — chapters15–16
+
+The [teacher article](../../packages/knowledge/data/liuyao/bpct-chapter-fifteen-teacher.json)
+covers PDF184–190, printed155–161, opening, printed1–15/17–25, closing and four notes.
+The [teaching-house article](../../packages/knowledge/data/liuyao/bpct-chapter-sixteen-study.json)
+covers PDF191–199, printed161–169, opening,34 clauses and eleven notes. Complete passages
+and contact sheets were inspected within the previously stated image boundary. Individually
+inspected PDF190 has only folio161: the earlier plan's short continuation was incorrect.
+Coordinator approval retains the184–190 parent interval but places closing wholly on189
+and a separate non-content accounting child on190. Chapter15 does not print16; no passage
+is reconstructed. Chapter16 clause34 original/reading spans198–199; note11 on197 belongs
+to clause24 on196. Chapter16 notes6/7 attach20/21, not the following clauses.
+
+Chapter15 self-seeking learner uses Thế as pupil/Phụ as teacher, whereas a parent inviting
+an unknown teacher uses Thế as parent/Tử as child/Ứng as teacher. Known relations and
+questions for others must use actual relation, including vocational or religious learning.
+Chapter16 asks about a teaching appointment: Thế is teacher, Ứng host, Phụ teaching books/
+place, Tử pupils, Tài pay; querying pay differs from querying the school. Chapter15 clause09
+phú names Long Đức while commentary names Bạch Hổ; chapter16 clause03 meaning says
+weak where original/reading says young, and clause23 meaning uses flourishing where
+original says Dưỡng. Separate summaries retain these differences. Biên Thiều/Hiếu Tiên,
+Lão Tử, Trình brothers, Lưu Thứ, Mã Dung, Quỷ Cốc’s Tôn Tẫn/Bàng Quyên and Y Xuyên’s
+Dương Thì/Du Tạc stay attributed allusions, not verified fortune-telling case results. Physical
+punishment, class/gender and ability stereotypes, income and litigation assertions remain
+historical source claims, not modern education, discipline, medical or financial guidance.

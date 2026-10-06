@@ -76,11 +76,11 @@
 - Test: `packages/knowledge/tests/book-batch-twenty.test.ts`
 - Update: `docs/references/book-sources.md`
 
-- [ ] Cover Cầu Sư PDF 184–190, including the folio-only PDF190 child (closing prose on189).
-- [ ] Cover Học Quán PDF 191–199, including every passage, condition, example, and note.
-- [ ] Preserve source role/context and translator disagreements; do not convert historical outcomes into claims of efficacy.
-- [ ] Test the closing and folio-only bounds, all source-unit locators, attribution, and withheld claims.
-- [ ] Run focused tests and corpus freshness checks; commit checkpoint.
+- [x] Cover Cầu Sư PDF 184–190, including the folio-only PDF190 child (closing prose on189).
+- [x] Cover Học Quán PDF 191–199, including every passage, condition, example, and note.
+- [x] Preserve source role/context and translator disagreements; do not convert historical outcomes into claims of efficacy.
+- [x] Test the closing and folio-only bounds, all source-unit locators, attribution, and withheld claims.
+- [x] Run focused tests and corpus freshness checks; commit checkpoint.
 
 ## Task 5: Author chapter 17 — Hôn Nhân
 
