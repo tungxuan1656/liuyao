@@ -77,12 +77,12 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
       positionCells: 1152,
       hexagramCells: 1344,
       specialPassages: 6,
-      groups: 1485,
+      groups: 1630,
       exclusions: 17,
     });
     expect(audit.totals).toMatchObject({
       releasedClaimsCovered: 197,
-      releasedClaimsRequired: 5614,
+      releasedClaimsRequired: 5993,
       currentDecisions: 84,
     });
     expect(audit.gates.sourceReview.status).toBe('closed');

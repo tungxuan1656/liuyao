@@ -33,9 +33,11 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Map existing claims and uncovered sections.
-2. Review and commit each chapter/supplement checkpoint.
-3. Reconcile reused terms, exclusions, and group coverage.
+1. Verify the supplied fingerprint and inspect complete text and individual images for PDF270–301, including credits and boundary pages.
+2. Map the four chapter units, actual source layers, notes, inserted material and folio-only279 without changing the source intervals or later audit ownership.
+3. Author concise Vietnamese summaries with claim-specific citations; preserve repeated/missing labels, question roles and translator disagreements.
+4. Reconcile the inventory register, expected-unit projection, manifest and generated reports; add package regressions and measure the offline bundle.
+5. Run the publication checks and full workflow, verify unchanged prior content, commit implementation and hand off for independent branch acceptance. Parent owns canonical completion/progress after merge.
 
 ## Verify
 
@@ -43,9 +45,20 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Worker Implementation Evidence
+
+- Four V2 articles cover chapter23 opening/1–28,3 notes and the Vietnamese-only Đông tà framing/1–11; chapter24 opening/1–26 and2 notes; chapter25 opening/1–31,6 notes/prose closing; chapter26 actual1–25/27–31,2 notes/unnumbered closing. 145 children and379 claim-specific citations; comparative claims additionally cite their opposing source layer/note.
+- Complete extracted text and all32 individual page images270–301 inspected, plus269/302 and credits1–3. Supplied SHA-256 remains `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`,467 pages. The [inventory register](../docs/reviews/knowledge/source-inventory.md#feat-055-illness-remedies-and-absent-travellers-passage-register) owns locators/dispositions; [source findings](../docs/references/book-sources.md#feat-055-source-comparison) own differences and attribution limits.
+- PDF279 is only folio241 and remains the existing non-content obligation. Chapter24 repeats13 at14; chapter26 skips26. No reconstruction, copied source prose/images, table/diagram, medical/legal/travel advice, calendar or new application interpretation is added. Đông tà is an observed signature, not an identified compiler/translator; its layer remains discovery-unresolved.
+- Corpus:239 released records,5,993 claims,6,239 citations,64 quẻ/384 positions; expected-unit revision45 contains1,630 groups and preserves17 exclusions. All four parent intervals and055 →089 ownership remain; all discoveries, separate verification and certification remain unresolved/closed.
+- Focused package regressions pass152 tests, covering every actual layer/locator, folios, absent/repeated labels, question roles, source alternatives, comparative evidence and non-advice scope. Existing aggregate/next-batch assertions are updated only for this batch. `./init.sh` passes all checks and3,245 tests (181 core +3,064 knowledge); explicit corpus/fingerprint freshness and package-export checks pass.
+- The integrated `index-CofnermX.js` asset measures7,613,685 bytes, exceeding the prior7 MiB cap. Only Workbox's authorized cap/comment changes to8 MiB, giving774,923-byte reserve and preserving all18 precache entries. No other PWA behavior changes.
+- Initial baseline workflow timed out after200 seconds while package tests were still running; no baseline failure is inferred. The measured rebuild rejected the old Workbox cap as expected. The first final workflow passed format/lint/typecheck/build/exports but four older queue assertions still expected feat-055; those assertions now follow intended feat-056. An added comparison test initially needed a readonly tuple annotation for strict TypeScript; the test was corrected without changing content. Final full verification passes. Existing lint/build warnings remain non-blocking.
+- No canonical completion state or progress entry is changed by the worker. Acceptance checkboxes remain intact for the parent's independent exact-head review/merge decision; source comparison is not feat-089 audit or corpus certification.
+
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- State: active; implementation and local verification complete, independent review pending.
+- Evidence: Source inspection and implementation details are recorded above. Parent `./init.sh` passed 181 core and 3,064 knowledge tests; `validate:corpus --check-books --check` passed for 239 records, 5,993 claims, and 6,239 citations. `git diff --check` passed.
+- Dependencies: feat-054 is done; feat-089 source audit and corpus-wide certification remain open.
+- Next: Review the committed exact head independently, then publish one PR and require all exact-head checks before merge.

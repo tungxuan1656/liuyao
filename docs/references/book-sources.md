@@ -1335,3 +1335,86 @@ uncertainty for unsigned inline notes. This is source comparison, not feat-088 a
 independent verification, corpus certification, rights clearance or predictive efficacy.
 All medical, safety, financial, gender/class, occupation and moral accusations remain
 attributed historical claims, not advice or authority over real people.
+
+## feat-055 source comparison
+
+Codex worker compared the complete extracted BPCT PDF270–301 passages and
+individually opened every page image, including279; boundary images269/302 and
+credits1–3 were also opened. SHA-256 remains
+`713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`,467 pages.
+The [inventory register](../reviews/knowledge/source-inventory.md#feat-055-illness-remedies-and-absent-travellers-passage-register)
+owns child IDs, exact layer page bounds and dispositions. Chapter23 is Tật Bệnh,
+subsection I Bệnh Chứng;24 Bệnh Thể;25 Y Dược;26 Hành Nhân. Page279 contains
+only printed241, not omitted medical prose. Folios232–240,240–245,246–254 and
+254–260 restart/overlap;294/295 repeat254 across the last two intervals. No
+source tables or diagrams occur; the Hằng example on284 is a textual example.
+
+- Chapter23 has28 numbered phú and3 translator notes. Item5 has no separate
+  commentary. Item4's Hán Quỷ/cách đọc Quan is retained without splitting
+  concepts. Item8's note defines bản cung as initial quẻ and tha quái as changed
+  quẻ, not automatically Bát cung. Item11 need not use Quan but must concern
+  Dụng; its printed account of cold/hot changes is not repaired. Item13's phú
+  says xung Tài while the commentary says khắc Tài; translator note3 explicitly
+  rejects Quan khắc Tài because Tài sinh Quan. Keep the disagreement, not a
+  corrected universal rule. Item14's meaning omits hoá Thổ;15 says cung Kim
+  instead of the phú's Đoài. Item17's Chấn at ngoại quái must not be fixed to
+  legs; its cổ medical term ung thư is not a modern cancer diagnosis. Item20
+  concerns Quỷ Tuyệt restored by sinh, unlike Dụng Tuyệt restored in24/16.
+- The closing portion of278 is a different-font Vietnamese-only insertion,
+  framing plus11 numbered observations, signed **Đông tà cẩn bút**. No separate
+  Hán text, reading, meaning or classical commentary is printed for it. Retain
+  the signature and a separate supplement layer; identity and insertion date
+  remain unknown, not compiler/translator authorship. Its directive to cast
+  again when Dụng is absent (except Nhật/Nguyệt Dụng) is only a source claim.
+- Chapter24 has26 printed labels and2 notes. Label14 repeats13's phú, meaning
+  and commentary, with a doubled14 in the image; no missing alternative is
+  reconstructed. Opening and25 have no separate commentary. Item1 has explicit
+  exceptions for parents/husband;7 needs Phụ motion for siblings despite its
+  general warning;18 is limited to parents, high official and husband, with
+  Quan both phục and Không even though the meaning omits phục. Item12 rejects
+  reading every Dụng hoá Quan as death: Quỷ sát here is Kỵ/hồi đầu khắc without
+  Nhật/Nguyệt/động rescue. Item26 similarly distinguishes Phúc=Tử narrowly or
+  Nguyên broadly, Quỷ sát=Kỵ rather than Quan. Item20's commentary prints
+  không xung khắc while the verse warns about xung khắc; preserve the
+  qualification/wording instead of deleting không. Item24 has an unclear
+  Dụng/động subject; no new subject is supplied. Item22's Hằng example is
+  attributed as a source example: tam/ngũ Quan around tứ Ngọ Tử, not a new
+  calculation fixture or independent prediction result. Item23 retains
+  visible/changed Mộ and the xung phá Mộ rescue qualification. Item19's
+  ritual names, âm/dương distinctions, onward reference to Quỷ Thần and
+  warning against costly careless divination are historical assertions.
+- Chapter25 has31 items,6 notes and prose closing. Item5's Phụ warning is not
+  separately explained by its commentary. Item6's broad Tử hoá Tử verse is
+  qualified by Tiến/Thoái and Phục ngâm in the commentary. Item9 distinguishes
+  Nhật Quan hiện/ẩn. Item13's meaning adds suy to Phụ phục; commentary's
+  không thể không tĩnh/không động is left as printed. Item17's Vietnamese
+  meaning has an either/or form rather than the commentary's element/thermal
+  pairings. Item18 has Sửu Dần in Hán/reading but Sửu Mùi in meaning. Item19
+  starts Mộc Tài but its fish/cold commentary uses Thuỷ, and explicitly forbids
+  careless application when Tài does not move. Item24 repeats Mộc for two
+  prohibitions; do not replace an occurrence with another element. Note6
+  identifies hoàn as pills, not a drug ingredient. Item28's phú/reading mạc
+  dục bế môn contrasts with the affirmative meaning/commentary; retain the
+  unresolved difference. Illness, prescriptions, food prohibitions, vomiting,
+  sweating, needles, moxibustion, stopping/spacing medicines and self-recovery
+  are summarized only as the source's historical views. Closing assertions
+  of always effective divination are not independent efficacy evidence.
+- Chapter26 has30 actual labels,1–25 then27–31; image300 confirms absent26.
+  No missing item is synthesized. Two translator notes and the unnumbered
+  closing phú/meaning are separate. Item1 assigns question-specific Lục thân
+  or Ứng outside them;29/30 are instead questions about letters, using Phụ as
+  Dụng. Items2/6 distinguish bare stillness from still Dụng sinh/hợp Thế.
+  Item3's Thế Không speed inference cannot override10's Dụng also Không;
+  4 requires unrestrained/unhidden moving Dụng,8 distinguishes hợp detention,
+  13 xung Phi versus Phi Không/hợp, and11 distinguishes distant enquiry from
+  nearby12. Item23's source alternates illness and imprisonment symbols;
+  25's criminal accusation remains attributed, not evidence about a traveller.
+  All timing formulas remain descriptive, not a calendar or return-date engine.
+
+General front credits establish conventional phú/compilation/translation
+attribution, not certain individual authorship of each passage. Translator notes
+remain separate; the observed Đông tà signature is not collapsed into them.
+This is feat-055 source comparison, not feat-089 audit, separate verification,
+certification, rights clearance, or medical/predictive efficacy. No source prose
+or images are redistributed, and no medical, legal, travel or safety advice or
+application behavior is added.
