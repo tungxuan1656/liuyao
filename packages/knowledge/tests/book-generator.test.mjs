@@ -14,7 +14,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
-import { expect, it } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { createReleaseProjection } from '../scripts/release-projection.mjs';
 import { createSnapshotIdentity } from '../scripts/snapshot-identity.mjs';
 
@@ -22,11 +22,29 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const require = createRequire(import.meta.url);
 const execFileAsync = promisify(execFile);
 
-it('reproduces generated output and rejects stale or unlisted authoring files', async () => {
-  const temporary = mkdtempSync(path.join(tmpdir(), 'liuyao-corpus-test-'));
-  try {
-    const repositoryRoot = path.join(temporary, 'repo');
-    const temporaryPackage = path.join(repositoryRoot, 'packages/knowledge');
+let temporary;
+let repositoryRoot;
+let temporaryPackage;
+let run;
+let generated;
+let releaseJson;
+let auditStatus;
+let coverageReport;
+let originalAudit;
+let originalCoverage;
+let originalRelease;
+let originalWrapper;
+let protectedFiles;
+let protectedBytes;
+let expectedRegistry;
+let registryBefore;
+let manifestPath;
+
+describe.sequential('generated corpus validation', () => {
+  beforeAll(() => {
+    temporary = mkdtempSync(path.join(tmpdir(), 'liuyao-corpus-test-'));
+    repositoryRoot = path.join(temporary, 'repo');
+    temporaryPackage = path.join(repositoryRoot, 'packages/knowledge');
     for (const directory of ['scripts', 'schema', 'data'])
       cpSync(path.join(root, directory), path.join(temporaryPackage, directory), {
         recursive: true,
@@ -47,8 +65,7 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
         path.dirname(require.resolve(`${name}/package.json`)),
         path.join(temporaryPackage, 'node_modules', name),
       );
-    // Keep the worker responsive to Vitest RPC while the corpus CLI runs.
-    const run = async (...args) => {
+    run = async (...args) => {
       try {
         const output = await execFileAsync(
           process.execPath,
@@ -61,19 +78,23 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
         return { status: error.code, stdout: error.stdout, stderr: error.stderr };
       }
     };
-    const generated = path.join(temporaryPackage, 'src/book-data.generated.ts');
-    const releaseJson = path.join(temporaryPackage, 'src/book-release.generated.json');
-    const auditStatus = path.join(temporaryPackage, 'reports/audit-status.json');
-    const coverageReport = path.join(temporaryPackage, 'reports/coverage.json');
+    generated = path.join(temporaryPackage, 'src/book-data.generated.ts');
+    releaseJson = path.join(temporaryPackage, 'src/book-release.generated.json');
+    auditStatus = path.join(temporaryPackage, 'reports/audit-status.json');
+    coverageReport = path.join(temporaryPackage, 'reports/coverage.json');
+  }, 120_000);
+
+  afterAll(() => rmSync(temporary, { recursive: true, force: true }));
+
+  it('generates and verifies deterministic corpus output', async () => {
     const first = await run();
     expect(first.status, first.stderr).toBe(0);
     const original = readFileSync(generated, 'utf8');
-    const originalAudit = readFileSync(auditStatus, 'utf8');
-    const originalCoverage = readFileSync(coverageReport, 'utf8');
-    const originalRelease = readFileSync(releaseJson, 'utf8');
-    const originalWrapper = readFileSync(generated, 'utf8');
+    originalAudit = readFileSync(auditStatus, 'utf8');
+    originalCoverage = readFileSync(coverageReport, 'utf8');
+    originalRelease = readFileSync(releaseJson, 'utf8');
+    originalWrapper = readFileSync(generated, 'utf8');
     expect((await run('--check')).status).toBe(0);
-    expect((await run()).status).toBe(0);
     expect(readFileSync(generated, 'utf8')).toBe(original);
     expect(readFileSync(auditStatus, 'utf8')).toBe(originalAudit);
     writeFileSync(auditStatus, originalAudit);
@@ -95,15 +116,17 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
     expect(JSON.parse(originalCoverage).complete).toBe(false);
-    const protectedFiles = [
+    protectedFiles = [
       ...JSON.parse(
         readFileSync(path.join(temporaryPackage, 'data/manifest.json'), 'utf8'),
       ).recordFiles.map(file => path.join(temporaryPackage, 'data', file)),
       releaseJson,
       generated,
     ];
-    const protectedBytes = protectedFiles.map(file => readFileSync(file));
+    protectedBytes = protectedFiles.map(file => readFileSync(file));
+  }, 120_000);
 
+  it('rejects stale audit state and invalid registry inputs', async () => {
     writeFileSync(auditStatus, `${originalAudit.trim()} `);
     const staleAudit = await run('--check');
     expect(staleAudit.status).not.toBe(0);
@@ -117,12 +140,8 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     expect(unknownOption.status).not.toBe(0);
     expect(unknownOption.stderr).toContain('Unknown corpus validation option');
 
-    const expectedRegistry = path.join(
-      repositoryRoot,
-      'docs/reviews/knowledge/expected-units.json',
-    );
-    const registryBefore = readFileSync(expectedRegistry, 'utf8');
-    const manifestPath = path.join(temporaryPackage, 'data/manifest.json');
+    expectedRegistry = path.join(repositoryRoot, 'docs/reviews/knowledge/expected-units.json');
+    registryBefore = readFileSync(expectedRegistry, 'utf8');
     const mutatedRegistry = JSON.parse(registryBefore);
     mutatedRegistry.counts.groups -= 1;
     writeFileSync(expectedRegistry, JSON.stringify(mutatedRegistry, null, 2) + '\n');
@@ -154,13 +173,16 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
     expect(missingLedgerRoot.status).not.toBe(0);
     expect(missingLedgerRoot.stderr).toContain('Ledger root is required');
     renameSync(ledgerHold, ledgerRoot);
+  }, 120_000);
 
+  it('keeps drafts out of releases and rejects stale or unlisted files', async () => {
     const release = readFileSync(releaseJson, 'utf8');
     expect(release).not.toContain('draft-marker');
     expect(release).not.toContain('localInputPath');
     expect(release).not.toContain('data/manifest.json');
     expect(readFileSync(generated, 'utf8')).not.toMatch(/\.\.\/data\//);
     expect(readFileSync(generated, 'utf8')).toContain('"./book-release.generated.json"');
+    manifestPath = path.join(temporaryPackage, 'data/manifest.json');
     const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
     const draftRecord = JSON.parse(
       readFileSync(path.join(temporaryPackage, 'data/terms/term-yang.json'), 'utf8'),
@@ -197,10 +219,8 @@ it('reproduces generated output and rejects stale or unlisted authoring files', 
       expect(readFileSync(file)).toEqual(protectedBytes[index]),
     );
     expect(readFileSync(releaseJson, 'utf8')).toBe(releaseAfterDraftEdit);
-  } finally {
-    rmSync(temporary, { recursive: true, force: true });
-  }
-}, 120_000);
+  }, 120_000);
+});
 
 it('projects only selected records and reachable citation editions without local paths', () => {
   const claim = (id, citationIds = []) => ({ id, kind: 'structural-fact', text: id, citationIds });

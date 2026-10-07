@@ -24,9 +24,21 @@ export function createAuditStatus({ context, review }) {
   ledgerState.contentSnapshotIdentity = context.contentSnapshotIdentity;
 
   const gates = evaluateAuditGates({ registry, ledgerState, context, certification });
+  const featureById = new Map(
+    [...registry.exclusions, ...registry.groups, ...registry.specialPassages].map(item => [
+      item.id,
+      item.auditFeatureId,
+    ]),
+  );
+  const hexagramFeatureById = new Map(
+    registry.hexagrams.map(item => [item.id, item.auditFeatureId]),
+  );
   const required = listRequiredAuditTargets(registry, context).map(target => ({
     target,
-    featureId: featureForTarget(target, registry),
+    featureId:
+      target.kind === 'cell'
+        ? hexagramFeatureById.get(target.hexagramId)
+        : featureById.get(target.id),
   }));
   const currentByTarget = new Map(ledgerState.current.map(item => [targetKey(item.target), item]));
   const currentDecisionCount = ledgerState.current.filter(item => item.inputState.current).length;
@@ -157,14 +169,4 @@ export function createAuditStatus({ context, review }) {
   };
 
   return status;
-}
-
-function featureForTarget(target, registry) {
-  if (target.kind === 'cell')
-    return registry.hexagrams.find(item => item.id === target.hexagramId)?.auditFeatureId;
-  for (const collection of ['specialPassages', 'groups', 'exclusions']) {
-    const item = registry[collection].find(candidate => candidate.id === target.id);
-    if (item) return item.auditFeatureId;
-  }
-  return undefined;
 }
