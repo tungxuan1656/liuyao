@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-065 merged
+
+**State**: done; merged to `main` in PR #93 at `8be7513287bbc642990d87f0c853249214b03244`; reviewed exact head `133009eda92d3f9e146f88999770c7ede3a10ca4`.
+**Done**: Added four ordered V2 lessons with 17 original Vietnamese blocks supported by existing released, reviewed claims, and three independently checked worked examples. No new claims, citations, book source units, or source exclusions were added.
+**Evidence**: Independent exact-head review returned `OK WITH NOTES` with no P0–P2 findings. Verify run `37586251857`/job `112676934117`, Cloudflare Pages and GitGuardian passed. Pre-push `./init.sh` passed 6,360 tests (6,179 knowledge, 181 core); corpus/books, package-export, deterministic core/table checks and prior-corpus preservation passed. Only lesson V2 may have an empty `claims` array; non-lesson V2 and V1 claim requirements remain unchanged.
+**Coverage**: Release has381 records,9,503 claims,9,744 citations; all377 prior records and9,744 citations are preserved. Source inventory and expected-units registry are unchanged. Required audit targets increase from6,471 to6,492 only for four lesson owners and17 blocks; feat-093 remains outstanding. The12,667,914-byte asset remains under the13 MiB Workbox cap with963,574 bytes headroom; all18 precache entries remain. Global source review, audit, verification and certification remain open/incomplete; no independent audit or certification is claimed.
+**Blockers**: none for feat-065.
+**Next**: Continue with selected feat-066 from updated `main`.
+
 ## 2026-10-07 — feat-064 merged
 
 **State**: done; merged to `main` in PR #92 at `681faef23facdb2b621019f4d752b2e50ae008b7`; reviewed exact head `6acf20dd0777b3e5217885f440c2c7f415547953`.

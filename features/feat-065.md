@@ -37,7 +37,7 @@ Keep the four records ordered by sequence 1–4. Each explanatory or worked-exam
 - [x] Persist block evidence, lesson sequence, and declared prerequisites through feat-101; reject unavailable support and prerequisite cycles.
 - [x] Reference content does not activate browser, calendar, or interpretation changes.
 - [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -72,11 +72,12 @@ Keep the four records ordered by sequence 1–4. Each explanatory or worked-exam
 - Source-review and certification gates remain closed; certification remains absent, coverage `complete` remains false. All 84 prior decisions stay current and zero stale; 197 of 9,503 released claims remain audit-covered. Generated required targets increase from 6,471 to 6,492 solely for four lesson owners and 17 blocks, with no new source units. Audit093 and corpus-wide verification remain outstanding.
 - Integrated asset `index-CAjNoJyd.js` measures 12,667,914 bytes. Existing Workbox cap remains 13,631,488 bytes (963,574 bytes headroom); all 18 precache entries remain, including the integrated asset. No PWA configuration or UI/calendar/interpretation behavior changes.
 - Released snapshot: `liuyao-knowledge-snapshot-v1:sha256:1eb03d3fbcc676617b8dfea37dfae441576068f5e4ef938198a8eba35a90c288`. This binds derivative content, not independent audit approval.
-- Verification evidence is recorded here; the final acceptance checkbox and Handoff remain reserved for parent review and canonical closeout. `feature_index.json` and `progress.md` are untouched; no push or PR is performed.
+- Final exact-head independent review returned `OK WITH NOTES` with no P0–P2 findings. P3 notes identify the parent-owned post-merge feature index/progress/handoff update and 21 remaining audit targets for feat-093; neither blocks delivery. PR #93 merged at `8be7513287bbc642990d87f0c853249214b03244` from reviewed head `133009eda92d3f9e146f88999770c7ede3a10ca4`. Verify run `37586251857`/job `112676934117`, Cloudflare Pages, and GitGuardian passed. The pre-push `./init.sh` passed 6,360 tests (6,179 knowledge, 181 core). Source audit and corpus-wide verification/certification remain open/incomplete.
 
 ## Handoff
 
-- State: active on `feat/065-ordered-lessons-worked-examples`; base `1de085b`.
-- Evidence: Dependencies feat-064 and feat-101 are done. User-approved four-lesson design and inline implementation plan are recorded above. No implementation verification yet.
+- State: done; merged to `main` in PR #93 at `8be7513287bbc642990d87f0c853249214b03244` from reviewed head `133009eda92d3f9e146f88999770c7ede3a10ca4`.
+- Evidence: Independent exact-head review returned `OK WITH NOTES`, with no P0–P2 findings. Exact-head verify run `37586251857`/job `112676934117`, Cloudflare Pages, and GitGuardian passed; the pre-push `./init.sh` passed 6,360 tests. Report: `/Users/tungdoan/.pi/agent/sessions/--Users-tungdoan-Projects-Web-liuyao--/subagent-artifacts/outputs/6cd668bc-d790-4348-a8cb-53d6fa4ac944/reports/feat-065-independent-review.md`.
+- Coverage: Four V2 lessons, 17 supported blocks, and three worked examples; no new source claims or units. Source audit, verification, and certification remain open/incomplete; the 21 derivative lesson audit targets remain assigned to feat-093.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Map reviewed claim support to the four lessons, then author the V2 records and verified worked examples.
+- Next: Continue with selected feat-066 from updated `main`.
