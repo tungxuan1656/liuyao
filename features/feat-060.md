@@ -16,16 +16,16 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] NTT translator introduction and Trình Di preface.
-- [ ] NTT Chu Hy diagrams (20–63).
-- [ ] NTT Dịch Thuyết Cương Lĩnh (64–79).
-- [ ] PBC introductions, Phàm Lệ, and end matter.
-- [ ] PBC surviving Thuyết Quái, Tự Quái, Tạp Quái.
-- [ ] Identify translator, commentator, and quoted-author roles.
-- [ ] Diagram units use the implemented feat-101 representation with orientation and supporting claims.
-- [ ] Record PBC’s absent Thuyết Quái chapter; NTT has no separate full Hệ Từ appendix.
-- [ ] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] NTT translator introduction and Trình Di preface.
+- [x] NTT Chu Hy diagrams (20–63).
+- [x] NTT Dịch Thuyết Cương Lĩnh (64–79).
+- [x] PBC introductions, Phàm Lệ, and end matter.
+- [x] PBC surviving Thuyết Quái, Tự Quái, Tạp Quái.
+- [x] Identify translator, commentator, and quoted-author roles.
+- [x] Diagram units use the implemented feat-101 representation with orientation and supporting claims.
+- [x] Record PBC’s absent Thuyết Quái chapter; NTT has no separate full Hệ Từ appendix.
+- [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -59,7 +59,9 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/060-ntt-pbc-intros-traditions-diagrams`.
-- Evidence: Clean main at `6ad1581`; dependencies feat-059 and feat-101 are done. PBC scope is reconciled to the canonical source inventory with user approval.
+- State: done; merged to `main` in PR #88 at `d082eeaad74affb181ec3f1904e312fd35f4a436`, from reviewed head `e2304267076afb81115c99c6fafd101f021fa29e`.
+- Evidence: Fresh exact-head independent review returned `OK`, no findings. Verify run `37549113356`/job `112560098877`, Cloudflare Pages, and GitGuardian passed. Both pre-push and post-merge `./init.sh` passed 5,215 tests (5,034 knowledge, 181 core); corpus/books, production package exports/types, and prior-corpus preservation checks passed. Post-merge verification added `.codegraph/` to `.prettierignore` because formatting had tried to read a missing transient `codegraph.lock` from local ignored CodeGraph state. The measured 11,346,876-byte bundle fits the unchanged 11 MiB Workbox limit with 187,460 bytes headroom; all 18 precache entries remain.
+- Coverage: Added 23 source-comparison articles, 487 new claims/citations, 489 dispositions including two reused selections, and 18 visually inspected figures with 235 evidence-backed labels. PBC scope is PDF 1–26 and 649–655; NTT is PDF 1–79 and 938. The PDF 79 Giải Nghĩa prose is represented separately from its heading while the parent ID/range/ownership remain stable; PDF 80 is outside scope. Existing PBC note 13 and 21 claims remain under their original quẻ owners.
+- Open gates: Source audit 092, global source review, and certification remain open; their approval gates remain closed. PBC publication year and rights remain unconfirmed; NTT colophon dates printing/deposit only. Missing source text and uncertain labels/notes remain explicit, with no efficacy or modern advice claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Inspect the assigned source images and complete the scoped NTT/PBC source comparison.
+- Next: Continue with selected feat-061 from updated `main`.

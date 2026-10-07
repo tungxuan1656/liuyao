@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-060 merged
+
+**State**: done and merged to `main` in PR #88 at `d082eeaad74affb181ec3f1904e312fd35f4a436`; reviewed exact head `e2304267076afb81115c99c6fafd101f021fa29e`.
+**Done**: Added 23 NTT/PBC source-comparison articles with 487 new claims/citations, 489 dispositions including two reused selections, and 18 visually inspected V2 figures with 235 supported labels. PBC scope includes PDF 1–26 and 649–655 after user approval to align with the canonical Phàm Lệ/Cương Lĩnh inventory; NTT scope is PDF 1–79 and 938. NTT PDF 79's heading and substantive Giải Nghĩa prose are separate dispositions; PDF 80 remains out of scope.
+**Evidence**: Independent exact-head review returned `OK`, no findings. Verify run `37549113356`/job `112560098877`, Cloudflare Pages and GitGuardian passed. Pre-push and post-merge `./init.sh` passed 5,215 tests (5,034 knowledge, 181 core); `validate:corpus --check-books --check`, package-export/types and production-preservation checks passed. Post-merge validation added `.codegraph/` to `.prettierignore` after Prettier attempted to read a missing transient `codegraph.lock` in local ignored CodeGraph state. The 11,346,876-byte asset fits the unchanged 11 MiB Workbox cap with 187,460 bytes headroom; all 18 precache entries remain.
+**Coverage**: Existing 298 released records and 8,196 citations are preserved; total release is 321 records/8,437 claims/8,683 citations. Note 13 and note 21 stay under existing PBC quẻ owners. PBC's missing-wing notices and NTT's lack of a separate full Hệ Từ appendix are recorded without reconstructing text. Source audit 092, global source review, and certification remain open; their approval gates remain closed. PBC year/rights remain unconfirmed. No efficacy or modern advice is claimed.
+**Blockers**: none for feat-060.
+**Next**: Continue with selected feat-061 from updated `main`.
+
 ## 2026-10-06 — feat-059 merged
 
 **State**: done and merged to `main` in PR #87 at `b474aeb74bdabad5448b482e253993bbdd7c983f`; reviewed exact head `68d44f5a4610cf8a9ed7e36bd9697142d1a3a591`.
