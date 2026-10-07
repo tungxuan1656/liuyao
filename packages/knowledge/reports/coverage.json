@@ -3,7 +3,7 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored content reviewed against supplied sources or accepted project contracts. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 377, "released": 377, "draftIds": [], "disputedIds": [] },
+  "records": { "authored": 381, "released": 381, "draftIds": [], "disputedIds": [] },
   "claims": { "total": 9503, "missingCitationIds": [] },
   "citations": { "total": 9744 },
   "trigrams": { "reviewed": 8, "expected": 8 },
@@ -182,7 +182,8 @@
         "term-changed-hexagram",
         "term-line-value",
         "rule-reading-result-fields",
-        "rule-line-polarity-values"
+        "rule-line-polarity-values",
+        "lesson-foundations"
       ]
     },
     {
@@ -199,7 +200,8 @@
         "trigram-water",
         "trigram-mountain",
         "trigram-earth",
-        "rule-trigram-composition"
+        "rule-trigram-composition",
+        "lesson-foundations"
       ]
     },
     {
@@ -271,7 +273,8 @@
         "hexagram-61",
         "hexagram-62",
         "hexagram-63",
-        "hexagram-64"
+        "hexagram-64",
+        "lesson-classical-reading"
       ]
     },
     {
@@ -343,7 +346,8 @@
         "hexagram-61",
         "hexagram-62",
         "hexagram-63",
-        "hexagram-64"
+        "hexagram-64",
+        "lesson-classical-reading"
       ]
     },
     {
@@ -357,7 +361,9 @@
         "article-three-coin-casting",
         "article-tung-to-ly",
         "article-bpct-casting-supplement",
-        "article-bpct-trigram-transformations"
+        "article-bpct-trigram-transformations",
+        "lesson-liuyao-board",
+        "lesson-worked-readings"
       ]
     },
     {
@@ -436,7 +442,9 @@
         "article-bpct-boards-ton",
         "article-bpct-boards-ly",
         "article-bpct-boards-khon",
-        "article-bpct-boards-doai"
+        "article-bpct-boards-doai",
+        "lesson-liuyao-board",
+        "lesson-worked-readings"
       ]
     },
     {
@@ -624,8 +632,13 @@
       "id": "topic-learning",
       "title": "Bài học theo trình tự",
       "track": "shared",
-      "status": "pending",
-      "releasedRecordIds": []
+      "status": "reviewed",
+      "releasedRecordIds": [
+        "lesson-foundations",
+        "lesson-classical-reading",
+        "lesson-liuyao-board",
+        "lesson-worked-readings"
+      ]
     }
   ],
   "resolvedDiscrepancies": [
@@ -1818,15 +1831,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 đã đối chiếu Hệ Từ Thượng PBC601–630 và NHL334–362. feat-062 đã đối chiếu Hệ Từ Hạ NHL363–388/PBC631–648; giữ chương khuyết,phần chọn và referrals riêng từng ấn bản. Audit092/verification/certification còn mở."
+    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 đã đối chiếu Hệ Từ Thượng PBC601–630 và NHL334–362. feat-062 đã đối chiếu Hệ Từ Hạ NHL363–388/PBC631–648; giữ chương khuyết,phần chọn và referrals riêng từng ấn bản. Audit092/verification/certification còn mở. feat-065 đã biên soạn bốn bài theo thứ tự, bằng claims đã phát hành và ba thực hành có kỳ vọng độc lập. feat-066 tiếp tục đóng authoring inventory; audit093,verification/certification còn mở."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 6471,
+        "required": 6492,
         "current": 84,
-        "missing": 6387,
+        "missing": 6408,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1835,7 +1848,7 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
         { "code": "unresolved-source-discovery", "count": 4638 },
-        { "code": "missing-decision", "count": 6387 },
+        { "code": "missing-decision", "count": 6408 },
         { "code": "released-claim-coverage-incomplete", "count": 9306 }
       ]
     },
@@ -1844,7 +1857,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 6471,
+        "required": 6492,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

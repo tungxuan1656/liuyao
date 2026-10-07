@@ -71,7 +71,7 @@ describe('book corpus publication boundary', () => {
       expect(record.claims.some(claim => claim.kind === 'structural-fact')).toBe(true);
     }
     expect(report.hexagrams.reviewed).toBe(64);
-    expect(report.records.released).toBe(377);
+    expect(report.records.released).toBe(381);
     expect(report.lines.reviewedPositions).toBe(384);
     expect(report.hexagrams.missingIds).toHaveLength(0);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({

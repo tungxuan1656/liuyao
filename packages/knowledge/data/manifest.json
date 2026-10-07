@@ -428,7 +428,11 @@
     "terms/term-changed-hexagram.json",
     "terms/term-line-value.json",
     "casting/rule-reading-result-fields.json",
-    "casting/rule-line-polarity-values.json"
+    "casting/rule-line-polarity-values.json",
+    "lessons/lesson-foundations.json",
+    "lessons/lesson-classical-reading.json",
+    "lessons/lesson-liuyao-board.json",
+    "lessons/lesson-worked-readings.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -807,7 +811,11 @@
     "term-changed-hexagram",
     "term-line-value",
     "rule-reading-result-fields",
-    "rule-line-polarity-values"
+    "rule-line-polarity-values",
+    "lesson-foundations",
+    "lesson-classical-reading",
+    "lesson-liuyao-board",
+    "lesson-worked-readings"
   ],
   "topics": [
     {
@@ -862,14 +870,14 @@
       "id": "topic-learning",
       "title": "Bài học theo trình tự",
       "track": "shared",
-      "status": "pending"
+      "status": "reviewed"
     }
   ],
   "coverageAuthors": ["Nguyễn Hiến Lê", "Phan Bội Châu", "Ngô Tất Tố"],
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 đã đối chiếu Hệ Từ Thượng PBC601–630 và NHL334–362. feat-062 đã đối chiếu Hệ Từ Hạ NHL363–388/PBC631–648; giữ chương khuyết,phần chọn và referrals riêng từng ấn bản. Audit092/verification/certification còn mở."
+    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 đã đối chiếu Hệ Từ Thượng PBC601–630 và NHL334–362. feat-062 đã đối chiếu Hệ Từ Hạ NHL363–388/PBC631–648; giữ chương khuyết,phần chọn và referrals riêng từng ấn bản. Audit092/verification/certification còn mở. feat-065 đã biên soạn bốn bài theo thứ tự, bằng claims đã phát hành và ba thực hành có kỳ vọng độc lập. feat-066 tiếp tục đóng authoring inventory; audit093,verification/certification còn mở."
   },
   "projectContracts": [
     {
