@@ -22,7 +22,7 @@ New interpretation, calendar, or UI behavior.
 - [x] Use the project contract for software fields; do not invent book citations.
 - [x] Persist convention evidence and reviewed specification revisions through the implemented feat-101 contract.
 - [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -106,7 +106,8 @@ Implementation evidence is recorded; independent acceptance review and final fea
 
 ## Handoff
 
-- State: active on `feat/064-project-contract-legacy-definitions`; base `b5d5dfa`.
-- Evidence: Dependencies feat-063 and feat-101 are done; the worktree was clean before activation. Feature selection and project-contract route are recorded above.
+- State: done; merged to `main` in PR #92 at `681faef23facdb2b621019f4d752b2e50ae008b7`, from reviewed head `6acf20dd0777b3e5217885f440c2c7f415547953`.
+- Evidence: Fresh exact-head independent review returned `OK`, no findings. Verify run `37577158278`/job `112648505629`, Cloudflare Pages, and GitGuardian passed. Pre-push `./init.sh` passed 6,339 tests (6,158 knowledge, 181 core); corpus/book validation, package exports, typecheck, and focused tests passed. All 371 prior released records and 9,744 citations are preserved. The measured 12,647,813-byte asset fits the existing 13 MiB Workbox cap; all 18 precache entries remain.
+- Coverage: Six stable legacy IDs now resolve to reviewed V2 project-convention records with `v1` project evidence and no invented book citations. No supplied-book source units or expected-unit groups were added; source audit, global review, and certification remain open/incomplete.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Implement the six V2 definitions and replace their unaudited legacy catalog entries without changing the existing core conventions.
+- Next: Continue with selected feat-065 from updated `main`.

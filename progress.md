@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-064 merged
+
+**State**: done; merged to `main` in PR #92 at `681faef23facdb2b621019f4d752b2e50ae008b7`; reviewed exact head `6acf20dd0777b3e5217885f440c2c7f415547953`.
+**Done**: Migrated four terms and two rules from the unaudited legacy catalog to V2 project-convention records, preserving all six stable IDs, with no invented book citations or source units. Updated the domain-model result fields to document the already-existing `ReadingResult.ruleset`.
+**Evidence**: Independent exact-head review returned `OK`, no findings. Verify run `37577158278`/job `112648505629`, Cloudflare Pages and GitGuardian passed. Pre-push `./init.sh` passed 6,339 tests (6,158 knowledge, 181 core); corpus/books validation, typecheck, package exports, 94 focused tests and prior-corpus preservation checks passed. V2 schema regression coverage accepts project `evidenceClaimIds` without weakening book-citation gates; V1 schema is unchanged.
+**Coverage**: Release has 377 records/9,503 claims/9,744 citations; all371 prior records and citations are preserved. Source inventory and expected units remain unchanged (revision57, 4,638 groups, 17 exclusions). The 12,647,813-byte bundle remains under the 13 MiB cap, with all18 precache entries. Source audit, global source review and certification remain open/incomplete.
+**Blockers**: none for feat-064.
+**Next**: Continue with selected feat-065 from updated `main`.
+
 ## 2026-10-07 — feat-063 merged
 
 **State**: done; merged to `main` in PR #91 at `7ecd2c127895dab81890d40250ec7168fb1ab48f`; reviewed exact head `89b36378161e1e2fd66449fc0a0b482aee27f705`.
