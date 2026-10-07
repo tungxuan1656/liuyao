@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-066 merged
+
+**State**: done; merged to `main` in PR #95 at `46af5cd9069c061ecd2986df1f6e1d220138da9d`; exact reviewed head `54977cc614c22041f62fddd61f18ffb7a2fa2ca2`.
+**Done**: Added a deterministic authoring crosswalk joining source units, expected-unit groups, released records, commentary routes, topics, legacy state, exclusions, and `nextBatch`. It reports 4,488 selected-only groups,108 unmapped content groups,42 non-content groups, and all4,638 discovery states unresolved. All17 existing exclusions are linked to basis units, but their rationale reviews remain pending. All381 released records are accounted for; 254 have direct mappings and127 remain unmapped and routed to feat-094. No source records, claims, citations, or exclusions were added.
+**Evidence**: Fresh exact-head review returned `OK`, no findings. Verify run `37599352568`/job `112719642987`, Cloudflare Pages, and GitGuardian passed. The pre-push `./init.sh` passed6,378 tests (6,197 knowledge,181 core); corpus/source fingerprint, package-export and focused18-test checks passed. The generated 3.6MiB report remains under `packages/knowledge/reports/`, outside runtime/PWA. The repository's auto-delete-on-merge setting was temporarily disabled to preserve the feature branch and restored to `true`; remote feature ref remains at the reviewed head.
+**Coverage**: All64 quẻ have six positions across each of three commentary books (1,152 cells). BPCT chapter6 labels1–16 and25–56 remain without direct mappings;17–24 and57–69 are mapped only to their selected records. `topic-classical-traditions` remains pending despite23 released records, routed to feat-094. Source discovery, audit, specialist review, and certification remain open/incomplete; no complete passage coverage or certification is claimed.
+**Blockers**: none for feat-066.
+**Next**: Continue with selected feat-068 from updated `main`.
+
 ## 2026-10-07 — feat-065 merged
 
 **State**: done; merged to `main` in PR #93 at `8be7513287bbc642990d87f0c853249214b03244`; reviewed exact head `133009eda92d3f9e146f88999770c7ede3a10ca4`.
