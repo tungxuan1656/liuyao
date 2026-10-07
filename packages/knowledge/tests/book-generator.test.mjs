@@ -55,6 +55,12 @@ describe.sequential('generated corpus validation', () => {
       path.join(repositoryRoot, 'docs/reviews/knowledge'),
       { recursive: true },
     );
+    for (const contract of JSON.parse(readFileSync(path.join(root, 'data/manifest.json'), 'utf8'))
+      .projectContracts ?? []) {
+      const destination = path.join(repositoryRoot, contract.documentPath);
+      mkdirSync(path.dirname(destination), { recursive: true });
+      cpSync(path.resolve(root, '../..', contract.documentPath), destination);
+    }
     cpSync(
       path.resolve(root, '../../feature_index.json'),
       path.join(repositoryRoot, 'feature_index.json'),
@@ -110,7 +116,7 @@ describe.sequential('generated corpus validation', () => {
     });
     expect(audit.totals).toMatchObject({
       releasedClaimsCovered: 197,
-      releasedClaimsRequired: 9497,
+      releasedClaimsRequired: 9503,
       currentDecisions: 84,
     });
     expect(audit.gates.sourceReview.status).toBe('closed');

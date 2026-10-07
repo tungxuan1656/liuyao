@@ -271,10 +271,12 @@
     "hexagram-64",
     "rule-branch-element",
     "rule-five-element-cycles",
+    "rule-line-polarity-values",
     "rule-line-position-order",
     "rule-moving-line-change",
     "rule-na-jia-assignment",
     "rule-palace-and-markers",
+    "rule-reading-result-fields",
     "rule-six-relative-classification",
     "rule-trigram-composition",
     "term-advancing-spirit",
@@ -291,6 +293,7 @@
     "term-branch-yin",
     "term-branch-you",
     "term-branch-zi",
+    "term-changed-hexagram",
     "term-combination-control",
     "term-combination-meets-opposition",
     "term-control-meets-generation",
@@ -318,6 +321,7 @@
     "term-leaving-decade",
     "term-line-position",
     "term-line-reverse-chant",
+    "term-line-value",
     "term-lower-trigram",
     "term-matching-day",
     "term-month-break",
@@ -329,6 +333,7 @@
     "term-palace-element",
     "term-peak-stage",
     "term-polarity",
+    "term-primary-hexagram",
     "term-prosperous-supported",
     "term-relative-child",
     "term-relative-official-ghost",
@@ -339,6 +344,7 @@
     "term-resting-confined",
     "term-retreating-spirit",
     "term-reverse-chant",
+    "term-ruleset",
     "term-shi-line",
     "term-six-relative",
     "term-six-spirits",
@@ -149203,6 +149209,249 @@
         ],
         "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
       }
+    },
+    {
+      "schemaVersion": 2,
+      "id": "term-ruleset",
+      "type": "term",
+      "title": "Quy ước tính",
+      "aliases": [],
+      "topicIds": ["topic-foundations"],
+      "claims": [
+        {
+          "id": "term-ruleset-definition",
+          "kind": "project-convention",
+          "text": "Bộ quy ước được dùng để tạo ra một kết quả gieo quẻ có thể tái lập.",
+          "citationIds": [],
+          "projectEvidence": [
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Stable IDs",
+              "revision": "v1"
+            },
+            {
+              "documentPath": "docs/design-docs/calculation-pipeline.md",
+              "section": "## Rules",
+              "revision": "v1"
+            }
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex",
+        "reviewedAt": "2026-10-07",
+        "method": "source-comparison",
+        "evidenceClaimIds": ["term-ruleset-definition"],
+        "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "id": "term-primary-hexagram",
+      "type": "term",
+      "title": "Quẻ chính",
+      "aliases": [],
+      "topicIds": ["topic-foundations"],
+      "claims": [
+        {
+          "id": "term-primary-hexagram-definition",
+          "kind": "project-convention",
+          "text": "Quẻ gồm sáu hào được xác định trực tiếp từ các giá trị đầu vào.",
+          "citationIds": [],
+          "projectEvidence": [
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Line contract",
+              "revision": "v1"
+            },
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Reading result",
+              "revision": "v1"
+            }
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex",
+        "reviewedAt": "2026-10-07",
+        "method": "source-comparison",
+        "evidenceClaimIds": ["term-primary-hexagram-definition"],
+        "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "applicableRuleIds": ["rule-trigram-composition"]
+    },
+    {
+      "schemaVersion": 2,
+      "id": "term-changed-hexagram",
+      "type": "term",
+      "title": "Quẻ biến",
+      "aliases": [],
+      "topicIds": ["topic-foundations"],
+      "claims": [
+        {
+          "id": "term-changed-hexagram-definition",
+          "kind": "project-convention",
+          "text": "Quẻ tạo ra khi đổi tính âm dương của từng hào động; không có quẻ biến nếu không có hào động.",
+          "citationIds": [],
+          "projectEvidence": [
+            {
+              "documentPath": "docs/design-docs/calculation-pipeline.md",
+              "section": "## Changed hexagram",
+              "revision": "v1"
+            }
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex",
+        "reviewedAt": "2026-10-07",
+        "method": "source-comparison",
+        "evidenceClaimIds": ["term-changed-hexagram-definition"],
+        "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "applicableRuleIds": ["rule-moving-line-change", "rule-trigram-composition"]
+    },
+    {
+      "schemaVersion": 2,
+      "id": "term-line-value",
+      "type": "term",
+      "title": "Giá trị hào",
+      "aliases": [],
+      "topicIds": ["topic-foundations"],
+      "claims": [
+        {
+          "id": "term-line-value-definition",
+          "kind": "project-convention",
+          "text": "Giá trị đầu vào 6, 7, 8 hoặc 9, biểu thị tính âm dương và trạng thái động của hào.",
+          "citationIds": [],
+          "projectEvidence": [
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Line contract",
+              "revision": "v1"
+            }
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex",
+        "reviewedAt": "2026-10-07",
+        "method": "source-comparison",
+        "evidenceClaimIds": ["term-line-value-definition"],
+        "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "applicableRuleIds": ["rule-line-polarity-values", "rule-moving-line-change"]
+    },
+    {
+      "schemaVersion": 2,
+      "id": "rule-reading-result-fields",
+      "type": "rule",
+      "title": "Các trường của kết quả gieo quẻ",
+      "aliases": [],
+      "topicIds": ["topic-foundations"],
+      "claims": [
+        {
+          "id": "rule-reading-result-fields-claim",
+          "kind": "project-convention",
+          "text": "Trong hợp đồng phần mềm V1, kết quả gồm mã quy ước tính, mã quẻ chính, mã quẻ biến khi có hào động, mã nội quái và ngoại quái, cung và ngũ hành của cung, vị trí hào Thế và hào Ứng, cùng sáu kết quả hào của quẻ chính. Mỗi hào ghi vị trí 1–6, giá trị đầu vào, tính âm dương, trạng thái động, can và chi Nạp Giáp, ngũ hành, Lục thân và dấu Thế hoặc Ứng khi có. Đây là mã định danh và dữ kiện có cấu trúc, không phải lời giải thích hay dự đoán.",
+          "citationIds": [],
+          "projectEvidence": [
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Stable IDs",
+              "revision": "v1"
+            },
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Reading result",
+              "revision": "v1"
+            }
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex",
+        "reviewedAt": "2026-10-07",
+        "method": "source-comparison",
+        "evidenceClaimIds": ["rule-reading-result-fields-claim"],
+        "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "ruleset": "liuyao-standard-v1",
+      "category": "metadata"
+    },
+    {
+      "schemaVersion": 2,
+      "id": "rule-line-polarity-values",
+      "type": "rule",
+      "title": "Giá trị hào và tính âm dương",
+      "aliases": [],
+      "topicIds": ["topic-foundations"],
+      "claims": [
+        {
+          "id": "rule-line-polarity-values-claim",
+          "kind": "project-convention",
+          "text": "Giá trị đầu vào 6 và 8 là âm; giá trị 7 và 9 là dương. Kết quả vẫn ghi lại giá trị đầu vào của hào trong quẻ chính.",
+          "citationIds": [],
+          "projectEvidence": [
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Line contract",
+              "revision": "v1"
+            },
+            {
+              "documentPath": "docs/design-docs/domain-model.md",
+              "section": "## Reading result",
+              "revision": "v1"
+            }
+          ]
+        }
+      ],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex",
+        "reviewedAt": "2026-10-07",
+        "method": "source-comparison",
+        "evidenceClaimIds": ["rule-line-polarity-values-claim"],
+        "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "ruleset": "liuyao-standard-v1",
+      "category": "classification"
     }
   ],
   "citations": [
@@ -289267,6 +289516,17 @@
       "status": "pending"
     }
   ],
-  "projectContracts": [],
-  "snapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:ae4cf07c76db4ea1a863c21222c3bf6506afa90e423d4c006a2a56b887b68854"
+  "projectContracts": [
+    {
+      "documentPath": "docs/design-docs/calculation-pipeline.md",
+      "revision": "v1",
+      "sections": ["## Changed hexagram", "## Rules"]
+    },
+    {
+      "documentPath": "docs/design-docs/domain-model.md",
+      "revision": "v1",
+      "sections": ["## Line contract", "## Reading result", "## Stable IDs"]
+    }
+  ],
+  "snapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:a7446c9cfb1f9816f3409d523efaed7865619ae5e7d3f02e7458773179388dee"
 }

@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
@@ -9,6 +10,7 @@ import { coverageReport } from '../scripts/corpus-coverage.mjs';
 const readJson = file => JSON.parse(readFileSync(new URL(file, import.meta.url), 'utf8'));
 const manifest = readJson('../data/manifest.json');
 const corpus = {
+  repositoryRoot: fileURLToPath(new URL('../../..', import.meta.url)),
   manifest,
   sources: readJson(`../data/${manifest.sourceFile}`).sources,
   citations: manifest.citationFiles.flatMap(file => readJson(`../data/${file}`).citations),
@@ -47,7 +49,7 @@ describe('book corpus publication boundary', () => {
         ),
       0,
     );
-    expect(claimCount).toBe(9497);
+    expect(claimCount).toBe(9503);
     expect(report.complete).toBe(false);
     expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
     expect(
@@ -69,7 +71,7 @@ describe('book corpus publication boundary', () => {
       expect(record.claims.some(claim => claim.kind === 'structural-fact')).toBe(true);
     }
     expect(report.hexagrams.reviewed).toBe(64);
-    expect(report.records.released).toBe(371);
+    expect(report.records.released).toBe(377);
     expect(report.lines.reviewedPositions).toBe(384);
     expect(report.hexagrams.missingIds).toHaveLength(0);
     expect(report.lines.byAuthor.find(row => row.author === 'Ngô Tất Tố')).toMatchObject({

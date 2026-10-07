@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "id": "term-ruleset",
+  "type": "term",
+  "title": "Quy ước tính",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "term-ruleset-definition",
+      "kind": "project-convention",
+      "text": "Bộ quy ước được dùng để tạo ra một kết quả gieo quẻ có thể tái lập.",
+      "citationIds": [],
+      "projectEvidence": [
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Stable IDs",
+          "revision": "v1"
+        },
+        {
+          "documentPath": "docs/design-docs/calculation-pipeline.md",
+          "section": "## Rules",
+          "revision": "v1"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-07",
+    "method": "source-comparison",
+    "evidenceClaimIds": ["term-ruleset-definition"],
+    "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  }
+}

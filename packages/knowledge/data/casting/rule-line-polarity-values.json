@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "id": "rule-line-polarity-values",
+  "type": "rule",
+  "title": "Giá trị hào và tính âm dương",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "rule-line-polarity-values-claim",
+      "kind": "project-convention",
+      "text": "Giá trị đầu vào 6 và 8 là âm; giá trị 7 và 9 là dương. Kết quả vẫn ghi lại giá trị đầu vào của hào trong quẻ chính.",
+      "citationIds": [],
+      "projectEvidence": [
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Line contract",
+          "revision": "v1"
+        },
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Reading result",
+          "revision": "v1"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-07",
+    "method": "source-comparison",
+    "evidenceClaimIds": ["rule-line-polarity-values-claim"],
+    "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "ruleset": "liuyao-standard-v1",
+  "category": "classification"
+}
