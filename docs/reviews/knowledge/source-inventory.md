@@ -89,7 +89,7 @@ The exclusive top-level partition is 1–3, 4–6, 7–8, 9–10, 11–12, 13–
 | `pbc-thuong-kinh`            |    30–308 | Quẻ 01–30; child ranges below.                                                                                             | Existing authors 032–041 → audits 068–075            | Selected coverage; gaps remain per quẻ and layer.                                       |
 | `pbc-ha-kinh-divider`        |       309 | Explicit Hạ Kinh divider.                                                                                                  | 060 → 092                                            | Non-content disposition.                                                                |
 | `pbc-ha-kinh`                |   310–600 | Quẻ 31–64; child ranges below.                                                                                             | 039–041 → 075–077 (31–40); 044–049 → 078–083 (41–64) | Quẻ 31–60 selected authoring coverage; source-unit remainder and quẻ 61–64 remain open. |
-| `pbc-he-tu-thuong`           |   601–630 | Hệ Từ Thượng introduction and chapters 1–12. Explicit omissions and selected translations remain distinct.                 | 061 → 092                                            | Partial/reduced source text; see chapter register.                                      |
+| `pbc-he-tu-thuong`           |   601–630 | Hệ Từ Thượng introduction and chapters 1–12. Explicit omissions and selected translations remain distinct.                 | 061 → 092                                            | Source-compared061; omissions/selection retained; audit092 unresolved.                  |
 | `pbc-he-tu-ha`               |   631–648 | Hệ Từ Hạ, explicitly “lược trích,” chapters 1–12.                                                                          | 062 → 092                                            | Partial/reduced source text; see chapter register.                                      |
 | `pbc-thuyet-quai`            |   649–650 | Chapter 1 marked missing; chapter 2 is the surviving translated chapter; chapters 3–11 are reported omitted by the author. | 060 → 092                                            | Source-compared060; see passage register. Audit092 unresolved.                          |
 | `pbc-tu-quai`                |       651 | Author says sequence explanations already appear at quẻ heads and leaves this separate translation omitted.                | 060 → 092                                            | Source-compared060; see passage register. Audit092 unresolved.                          |
@@ -286,19 +286,19 @@ The source body, not its contents pages, sets the quẻ starts. PDF 3 and PDF 39
 | `nhl-hexagram-62`         |   324–327 | Quẻ 62 Tiểu Quá.                                                                                         | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.    |
 | `nhl-hexagram-63`         |   328–330 | Quẻ 63 Ký Tế. Body heading PDF 328; contents points to printed page 326.                                 | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.    |
 | `nhl-hexagram-64`         |   331–333 | Quẻ 64 Vị Tế. Body heading PDF 331; contents points to printed page 329.                                 | 049 → 083                                        | Selected source-compared claims; audit layers and remainder open.    |
-| `nhl-he-tu-title`         |       334 | Hệ Từ Truyện / Đại Truyện title and transition; not a prose chapter.                                     | 061 → 092                                        | Non-content/title disposition.                                       |
-| `nhl-he-tu-shang-01`      |   335–337 | Hệ Từ Thượng chapter 1.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-02`      |   338–339 | Hệ Từ Thượng chapter 2.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-03`      |   340–341 | Hệ Từ Thượng chapter 3.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-04`      |   342–343 | Hệ Từ Thượng chapter 4.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-05`      |   344–345 | Hệ Từ Thượng chapter 5.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-06`      |       346 | Hệ Từ Thượng chapter 6. The source states that Phan Bội Châu omitted it; NHL text/commentary is present. | 061 → 092                                        | Present in NHL; do not transfer another edition's omission.          |
-| `nhl-he-tu-shang-07`      |       347 | Hệ Từ Thượng chapter 7.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-08`      |   348–351 | Hệ Từ Thượng chapter 8.                                                                                  | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-09`      |   352–355 | Hệ Từ Thượng chapter 9. The source states that Phan Bội Châu omitted it; NHL text/commentary is present. | 061 → 092                                        | Present in NHL; do not transfer another edition's omission.          |
-| `nhl-he-tu-shang-10`      |   356–357 | Hệ Từ Thượng chapter 10.                                                                                 | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-11`      |   358–360 | Hệ Từ Thượng chapter 11.                                                                                 | 061 → 092                                        | Uncovered chapter unit.                                              |
-| `nhl-he-tu-shang-12`      |   361–362 | Hệ Từ Thượng chapter 12.                                                                                 | 061 → 092                                        | Uncovered chapter unit.                                              |
+| `nhl-he-tu-title`         |       334 | Hệ Từ Truyện / Đại Truyện title and transition; not a prose chapter.                                     | 061 → 092                                        | Image-checked061 non-content title; fine disposition below.          |
+| `nhl-he-tu-shang-01`      |   335–337 | Hệ Từ Thượng chapter 1.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-02`      |   338–339 | Hệ Từ Thượng chapter 2.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-03`      |   340–341 | Hệ Từ Thượng chapter 3.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-04`      |   342–343 | Hệ Từ Thượng chapter 4.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-05`      |   344–345 | Hệ Từ Thượng chapter 5.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-06`      |       346 | Hệ Từ Thượng chapter 6. The source states that Phan Bội Châu omitted it; NHL text/commentary is present. | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-07`      |       347 | Hệ Từ Thượng chapter 7.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-08`      |   348–351 | Hệ Từ Thượng chapter 8.                                                                                  | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-09`      |   352–355 | Hệ Từ Thượng chapter 9. The source states that Phan Bội Châu omitted it; NHL text/commentary is present. | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-10`      |   356–357 | Hệ Từ Thượng chapter 10.                                                                                 | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-11`      |   358–360 | Hệ Từ Thượng chapter 11.                                                                                 | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
+| `nhl-he-tu-shang-12`      |   361–362 | Hệ Từ Thượng chapter 12.                                                                                 | 061 → 092                                        | Source-compared061; fine layers below; audit092 unresolved.          |
 | `nhl-he-tu-ha-01`         |   363–364 | Hệ Từ Hạ chapter 1.                                                                                      | 062 → 092                                        | Uncovered chapter unit.                                              |
 | `nhl-he-tu-ha-02`         |   365–368 | Hệ Từ Hạ chapter 2.                                                                                      | 062 → 092                                        | Uncovered chapter unit.                                              |
 | `nhl-he-tu-ha-03`         |       369 | Hệ Từ Hạ chapter 3.                                                                                      | 062 → 092                                        | Uncovered chapter unit.                                              |
@@ -4173,3 +4173,67 @@ Coordinator approved reclassifying `ntt-upper-divider` on individually inspected
 | `ntt-colophon-938-credits`                                          | `ntt-colophon-938`            | 938–938   | non-content; non-content accounting                          | `article-ntt-colophon-938`            |
 | `ntt-colophon-938-printing`                                         | `ntt-colophon-938`            | 938–938   | non-content; non-content accounting                          | `article-ntt-colophon-938`            |
 | `ntt-chu-xi-diagrams-shao-eight-directions`                         | `ntt-chu-xi-diagrams`         | 31–31     | cited-position; source-compared original summary             | `article-ntt-chu-xi-diagrams`         |
+
+<a id="feat-061-nhlpbc-he-tu-thuong-passage-register"></a>
+
+## Feat-061 NHL/PBC Hệ Từ Thượng passage register
+
+Author061 → audit092 for every child below. All29 NHL334–362 and30 PBC601–630
+pages were individually opened at full-page resolution (1.5x,918×1188 each),
+and their complete PyMuPDF extraction compared. No contact-sheet sample stands
+for a page. The local `/tmp/feat061/inspection-artifacts.json` records per-page
+image/text hashes and render dimensions. Source identities remain in
+[sources.json](../../../packages/knowledge/data/sources.json). This is batch
+source comparison, not independent audit or corpus certification. Global layer
+rosters and discovery remain unresolved. No prose or images from the PDFs are
+redistributed; released content is original Vietnamese summary.
+
+The [locator fixture](../../../packages/knowledge/tests/fixtures/nhl-pbc-he-tu-thuong-locators.json)
+owns the exact section/note/layer child IDs, PDF/printed bounds, claim/citation
+mappings and disposition. The matching released records are
+`article-nhl-he-tu-thuong-00..12` and `article-pbc-he-tu-thuong-00..12`.
+NHL printed folios334–362 match PDF numbering; no printed folios are visible
+on PBC601–630, and none are inferred. Website footers are not source prose.
+No diagrams or tables occur in either assigned interval.
+
+| Chapter       | NHL full passage PDF | PBC extant passage PDF | Edition-specific disposition                                                                                                                         |
+| ------------- | -------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Title/framing | 334                  | 601                    | NHL title only; PBC introductory authorship/framing is distinct from chapter1 on the same page.                                                      |
+| 1             | 335–337              | 601–605                | Eight sections each; original/reading, Vietnamese meaning, commentary and named alternatives separate.                                               |
+| 2             | 338–339              | 605–608                | NHL six labels; PBC seven, splitting NHL4 into its4/5. Do not align by label alone.                                                                  |
+| 3             | 340–341              | 608–610                | Five sections each; PBC3/4 reading-versus-explanation differences retained.                                                                          |
+| 4             | 342–343              | 611–614                | Four sections; Wilhelm's Dịch subject versus thánh nhân is only attributed through NHL.                                                              |
+| 5             | 344–345              | 614–618                | NHL nine; PBC eight. NHL8 chiêm/sự not present in PBC; PBC8 corresponds to NHL9.                                                                     |
+| 6             | 346                  | 619                    | NHL three extant sections plus notes. PBC Khuyết notice only; no absent layers fabricated.                                                           |
+| 7             | 347                  | 620                    | Two each; NHL original thành tín versus PBC thành tính and NHL translation tính retained.                                                            |
+| 8             | 348–351              | 620–622                | NHL1–11; PBC selects3–6. PBC5 only refers Trung Phu2 elsewhere;6 survives. Five other examples are referred elsewhere at622, not fully present here. |
+| 9             | 352–355              | 623                    | NHL ten labels plus notes; PBC Khuyết notice, sharing623 with10.                                                                                     |
+| 10            | 356–357              | 623–624                | NHL seven; PBC selects5–6 with a shared Vietnamese explanation.                                                                                      |
+| 11            | 358–360              | 625–627                | NHL sequence1–7a–7b–9 preserves doubled7. PBC selects1,2,4; even1/2 omit opening/closing clauses printed in NHL.                                     |
+| 12            | 361–362              | 628–630                | NHL1–7, but5 is an explicit non-repetition notice referring8/1–2, not a newly supplied translation. PBC five missing sections, only4/7 extant.       |
+
+NHL Hán-Việt readings and marked Dịch paragraphs have their own children.
+Original/Hán-Việt source wording is summarized, never transcribed. PBC prints
+Hán plus reading, then integrated Vietnamese meaning/commentary, not separately
+headed Dịch paragraphs; translation and commentary dispositions identify that
+shared layout rather than inventing independent printed blocks. Citation
+`textLayer: original-text` covers source text/translation, with the section
+field distinguishing each; NHL notes use `translator-note`. Existing layer
+scope IDs distinguish translation/commentary in expected units.
+
+All observed named voices receive separate child dispositions through the
+consulted edition. NHL notes retain Phan Bội Châu, Chu Hi, R.Wilhelm, J.Legge,
+Nguyễn Duy Tỉnh (Tinh at354), Lão Tử and the Trung Dung/Mạnh Tử comparison;
+unnamed books/alternative readings stay unnamed. Joint Wilhelm/Legge or
+PBC-following-Chu-Hi children preserve the joint attribution as printed, not
+a new consulted source. PBC notes retain Trang Tử, thầy Thiệu (without invented
+full identity), Luận Ngữ, Trung Dung, Mạnh Tử, Tuân Tử, Đổng Trọng Thư,
+Dương Hùng, Lão Tử, vua Thuấn and Dương Thành Trai. Tử viết remains
+traditional Confucius attribution, not established individual authorship.
+NTT is not an authoring source or evidence of NHL/PBC coverage.
+
+Specific source differences and uncorrected labels are owned by
+[book sources](../../references/book-sources.md#feat-061-he-tu-thuong-source-comparison).
+PBC represented-elsewhere notices do not imply a newly checked out-of-scope
+quẻ crosswalk. All missing/selected portions have explicit dispositions, not
+broad exclusions. No global exclusions or previously released claims change.

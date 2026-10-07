@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "article-nhl-he-tu-thuong-00",
+  "type": "article",
+  "title": "NHL — Trang tên Hệ Từ Truyện",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "article-nhl-he-tu-thuong-00-nhl-he-tu-title-title-accounting",
+      "kind": "author-interpretation",
+      "text": "Trang334 chỉ có tên Hệ Từ Truyện/Đại Truyện và lời ghi dịch/chú thích; không có văn chương. Thượng bắt đầu335.",
+      "citationIds": ["citation-nhl-he-tu-title-title-accounting"],
+      "attribution": {
+        "author": "Nguyễn Hiến Lê"
+      },
+      "conditions": [
+        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-07",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-nhl-he-tu-title-title-accounting"],
+    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
+  }
+}

@@ -10,8 +10,13 @@ const text = (id: string) => {
   const u = unit(id);
   return getBookRecord(u.recordIds[0]!)!.claims.find(c => c.id === u.claimIds[0])!.text;
 };
-const cohort = () =>
-  manifest.releaseIds.filter(id => id.startsWith('article-pbc-') || id.startsWith('article-ntt-'));
+// Later PBC batches share the prefix; only feat-060's locator owners belong here.
+const cohort = () => {
+  const ids = new Set(locators.flatMap(u => u.recordIds));
+  return manifest.releaseIds.filter(
+    id => ids.has(id) && (id.startsWith('article-pbc-') || id.startsWith('article-ntt-')),
+  );
+};
 
 describe('feat-060 NTT/PBC introductory source comparison', () => {
   it.each(locators)('binds the scoped disposition $id without audit approval', u => {
