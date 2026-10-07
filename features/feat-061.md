@@ -20,7 +20,7 @@ New interpretation, calendar, or UI behavior.
 - [x] Thượng chapters 7–12: both books and all named layers.
 - [x] Give each chapter and named layer its own disposition. Keep PBC's explicit omissions edition-specific; do not treat NHL's complete text or NTT (Ngô Tất Tố) excerpts as PBC coverage.
 - [x] Released claims pass the publication gate; inventory dispositions and coverage are current.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -52,7 +52,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Implementation evidence
 
-- Implementation checkpoint: `7d36f7fa73a7fceaecf502e6281777c79e83f96c`. The complete scoped batch is implemented; publication, independent branch acceptance review and the final merge handoff remain parent-owned. Feature state stays active; `feature_index.json` and `progress.md` are unchanged. The final acceptance checkbox remains for that parent handoff, not a failed implementation check.
+- Implementation checkpoint: `7d36f7fa73a7fceaecf502e6281777c79e83f96c`. Final evidence checkpoint: `125a3a4928d3c917db3338a1bfa9df28bd5a13f7`. Parent completed independent exact-head review, PR checks, merge and canonical status/progress updates; the parent-owned activation change is in `feature_index.json`.
 - Source inspection: Individually opened every one of the 59 assigned full-page images (PyMuPDF 1.5x, 918×1188 each) and compared complete extraction. Local `/tmp/feat061/inspection-artifacts.json` records edition identities and per-page extraction/render hashes. This does not constitute independent source audit or certification.
 - Source decisions: The [passage register](../docs/reviews/knowledge/source-inventory.md#feat-061-nhlpbc-he-tu-thuong-passage-register) and [source comparison](../docs/references/book-sources.md#feat-061-he-tu-thuong-source-comparison) own fine dispositions and uncorrected differences. All 24 chapter parents plus title/framing have released owners; 430 child dispositions route061→092. PBC integrated Vietnamese meaning/commentary and represented-elsewhere notices are not invented independent text blocks. NHL12/5 is its explicit non-repetition notice, not a fabricated translation.
 - Release: 26 new articles, 430 new claims/citations; integrated corpus347 records,8867 claims,9113 citations. Registry revision55 has3981 groups and retains17 exclusions. The [focused test](../packages/knowledge/tests/book-nhl-pbc-he-tu-thuong.test.ts) passes436 cases. Prior321 released records and8683 citations, their public projections, all non061 registry groups and global layers/exclusions remain semantically unchanged.
@@ -63,7 +63,9 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/061-nhl-pbc-he-tu-thuong`.
-- Evidence: Branch starts from clean, synced `main` at `6139d39`; feat-060 is done. Source identities, chapter boundaries and edition-specific omissions were checked against the local PDFs and canonical inventory.
+- State: done; merged to `main` in PR #89 at `eb66085cc62686686e388e23e7a2b5e4ba5f9ac4`, from reviewed head `125a3a4928d3c917db3338a1bfa9df28bd5a13f7`.
+- Evidence: Independent exact-head review returned `OK`, no findings. The review reconciled all 50 paths from base `6139d39` to HEAD, including the parent-owned feat-061 activation in `feature_index.json`; `progress.md` was not changed on the feature branch. Verify run `37556788220`/job `112584763898`, Cloudflare Pages, and GitGuardian passed. Pre-push `./init.sh` passed 5,651 tests (5,470 knowledge, 181 core); corpus/books, package exports, focused tests, preservation and offline checks passed.
+- Coverage: 26 records add 430 claims/citations for 12 NHL and 12 PBC chapter parents plus title/framing. All 321 prior records and 8,683 citations remain byte-identical. PBC omissions and partial sections are edition-specific; NHL chapters 6 and 9 remain present despite its parenthetical statements about PBC. The 11,892,554-byte asset fits the 12 MiB Workbox cap by 690,358 bytes; all 18 precache entries remain.
+- Open gates: Source audit 092, global source review and corpus certification remain closed/incomplete. No missing text was reconstructed and no predictive or modern medical/legal/safety authority is claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Inspect all assigned pages and named layers, starting with chapters1–6; keep the two editions' coverage and omissions separate.
+- Next: Continue with selected feat-062 from updated `main`.

@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-061 merged
+
+**State**: done and merged to `main` in PR #89 at `eb66085cc62686686e388e23e7a2b5e4ba5f9ac4`; reviewed exact head `125a3a4928d3c917db3338a1bfa9df28bd5a13f7`.
+**Done**: Added 26 source-comparison records for Hệ Từ Thượng across NHL PDF 334–362 and PBC PDF 601–630, with 430 source-attributed claims/citations. NHL and PBC dispositions remain edition-specific; no NTT (Ngô Tất Tố) text or citation is used. PBC's explicit missing notices, partial sections and cross-references are preserved without reconstruction.
+**Evidence**: Independent exact-head review returned `OK`, no findings; it reconciled 50 paths from base `6139d39`, including the parent-owned activation change. Verify run `37556788220`/job `112584763898`, Cloudflare Pages and GitGuardian passed. Pre-push `./init.sh` passed 5,651 tests (5,470 knowledge, 181 core); corpus/books, focused 436 cases, package exports, preservation and 194 offline documentation-route checks passed.
+**Coverage**: Total corpus is 347 records/8,867 claims/9,113 citations; prior 321 records/8,683 citations and public projections are byte-identical. Registry revision55 has3,981 groups and17 exclusions. The 11,892,554-byte integrated asset fits the measured 12 MiB Workbox cap by690,358 bytes; all18 precache entries remain. Source audit092, global source review and certification remain closed/incomplete; no efficacy or modern advice is claimed.
+**Blockers**: none for feat-061.
+**Next**: Continue with selected feat-062 from updated `main`.
+
 ## 2026-10-07 — feat-060 merged
 
 **State**: done and merged to `main` in PR #88 at `d082eeaad74affb181ec3f1904e312fd35f4a436`; reviewed exact head `e2304267076afb81115c99c6fafd101f021fa29e`.
