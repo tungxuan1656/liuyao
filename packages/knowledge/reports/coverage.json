@@ -4,8 +4,8 @@
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
   "records": { "authored": 371, "released": 371, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 9237, "missingCitationIds": [] },
-  "citations": { "total": 9483 },
+  "claims": { "total": 9497, "missingCitationIds": [] },
+  "citations": { "total": 9744 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -1822,9 +1822,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 6178,
+        "required": 6465,
         "current": 84,
-        "missing": 6094,
+        "missing": 6381,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1832,9 +1832,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 4351 },
-        { "code": "missing-decision", "count": 6094 },
-        { "code": "released-claim-coverage-incomplete", "count": 9040 }
+        { "code": "unresolved-source-discovery", "count": 4638 },
+        { "code": "missing-decision", "count": 6381 },
+        { "code": "released-claim-coverage-incomplete", "count": 9300 }
       ]
     },
     "certification": {
@@ -1842,7 +1842,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 6178,
+        "required": 6465,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

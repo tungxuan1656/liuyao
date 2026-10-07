@@ -23,7 +23,13 @@ for (const flag of process.argv.slice(2))
     throw new Error(`Unknown corpus validation option: ${flag}`);
 const ajv = new Ajv({ allErrors: true, strictTypes: false, strictRequired: false });
 addFormats(ajv);
-const readJson = async file => JSON.parse(await readFile(file, 'utf8'));
+const readJson = async file => {
+  try {
+    return JSON.parse(await readFile(file, 'utf8'));
+  } catch (cause) {
+    throw new Error(`Could not read valid JSON: ${path.relative(root, file)}`, { cause });
+  }
+};
 const validators = new Map();
 async function validateFile(file, schemaName) {
   const value = await readJson(file);
@@ -48,6 +54,17 @@ function resolveData(relative) {
 }
 const manifest = await validateFile(path.join(dataRoot, 'manifest.json'), 'manifest');
 const { sources } = await validateFile(resolveData(manifest.sourceFile), 'sources');
+if (process.argv.includes('--check-books')) {
+  for (const source of sources)
+    for (const edition of source.editions) {
+      const file = path.resolve(root, '../..', edition.localInputPath);
+      const hash = createHash('sha256')
+        .update(await readFile(file))
+        .digest('hex');
+      if (hash !== edition.sha256)
+        throw new Error(`${edition.id}: supplied PDF fingerprint changed`);
+    }
+}
 const citations = [];
 for (const file of manifest.citationFiles)
   citations.push(...(await validateFile(resolveData(file), 'citations')).citations);
@@ -85,17 +102,6 @@ const checked = checkCorpus({
   legacy,
   repositoryRoot,
 });
-if (process.argv.includes('--check-books')) {
-  for (const source of sources)
-    for (const edition of source.editions) {
-      const file = path.resolve(root, '../..', edition.localInputPath);
-      const hash = createHash('sha256')
-        .update(await readFile(file))
-        .digest('hex');
-      if (hash !== edition.sha256)
-        throw new Error(`${edition.id}: supplied PDF fingerprint changed`);
-    }
-}
 const review = await loadAuditReview({
   repositoryRoot,
   context: {

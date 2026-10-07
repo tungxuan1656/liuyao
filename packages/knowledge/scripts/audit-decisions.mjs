@@ -12,11 +12,24 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const packageRoot = fileURLToPath(new URL('../', import.meta.url));
-const ledgerSchema = JSON.parse(
-  readFileSync(path.join(packageRoot, 'schema/audit-ledger-v1.schema.json'), 'utf8'),
-);
+const ledgerSchema = (() => {
+  try {
+    return JSON.parse(
+      readFileSync(path.join(packageRoot, 'schema/audit-ledger-v1.schema.json'), 'utf8'),
+    );
+  } catch (cause) {
+    throw new Error('Could not load the audit-ledger-v1 schema.', { cause });
+  }
+})();
 const validateLedgerShape = createAuditSchemaValidator(ledgerSchema, 'audit-ledger-v1 schema');
 const targetKey = target => JSON.stringify(canonicalize(target));
+const parseTargetKey = key => {
+  try {
+    return JSON.parse(key);
+  } catch (cause) {
+    throw new Error('Invalid canonical audit target key.', { cause });
+  }
+};
 const hash = value =>
   createHash('sha256')
     .update(JSON.stringify(canonicalize(value)))
@@ -199,7 +212,7 @@ export async function validateAuditLedgers(ledgers, registry, context) {
     }
     if (heads.length === 1)
       current.push({
-        target: JSON.parse(key),
+        target: parseTargetKey(key),
         decision: heads[0].decision,
         inputState: heads[0].inputState,
       });
