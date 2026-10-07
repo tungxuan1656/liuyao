@@ -16,13 +16,13 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Every supplied section and later workload split has a source-inventory unit, source anchor, author owner, and audit owner.
-- [ ] Map released record IDs only where the authored record supports that exact unit; do not inherit a parent mapping as proof of child coverage. Keep selected-only, unmapped, or incomplete units visible and assigned to existing follow-up owners.
-- [ ] Cross-reference every existing exclusion to its source-inventory unit and specific stated basis; add no exclusions to hide unfinished content. Keep any unreviewed rationale open and assigned to its audit owner.
-- [ ] No source unit is unclassified or unowned; all 64 quẻ have six positions in each of the three commentary books.
-- [ ] Reconcile topics, legacy routes, and nextBatch without claiming full passage coverage or independent certification.
-- [ ] Keep source-review, specialist, and certification gates open/incomplete; do not resolve audit discovery states as part of this crosswalk.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Every supplied section and later workload split has a source-inventory unit, source anchor, author owner, and audit owner.
+- [x] Map released record IDs only where the authored record supports that exact unit; do not inherit a parent mapping as proof of child coverage. Keep selected-only, unmapped, or incomplete units visible and assigned to existing follow-up owners.
+- [x] Cross-reference every existing exclusion to its source-inventory unit and specific stated basis; add no exclusions to hide unfinished content. Keep any unreviewed rationale open and assigned to its audit owner.
+- [x] No source unit is unclassified or unowned; all 64 quẻ have six positions in each of the three commentary books.
+- [x] Reconcile topics, legacy routes, and nextBatch without claiming full passage coverage or independent certification.
+- [x] Keep source-review, specialist, and certification gates open/incomplete; do not resolve audit discovery states as part of this crosswalk.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Decision log
 
@@ -50,7 +50,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: implementation committed on `feat/066-authoring-inventory-crosswalk` at `961837fcbfec8f0034b7d82d58379d66c0033cf8`; exact-head independent review returned `OK`, no P0/P1/P2 findings.
+- State: implementation commit `961837fcbfec8f0034b7d82d58379d66c0033cf8`; fresh exact-head review of `ad409a3d4155e5310ebc8a6cac16157369346ed5` returned `OK WITH NOTES`, no P0/P1 findings. Both P2 notes (acceptance checkboxes and handoff SHA clarity) are addressed here.
 - Evidence: `./init.sh` passed 6,378 tests (6,197 knowledge, 181 core); corpus/source-fingerprint validation and package-export checks passed; focused crosswalk tests passed 18/18. Review report: `/tmp/feat066-independent-review.md`; worker report: `/Users/tungdoan/.pi/agent/sessions/--Users-tungdoan-Projects-Web-liuyao--/subagent-artifacts/outputs/d0af9d23-2abb-479b-8712-7279d95ccff0/reports/feat-066-worker-report.md`. The generated 3.6 MiB crosswalk stays under reports and has no runtime/PWA effect.
 - State remains incomplete: 4,638 source groups stay discovery-unresolved; 108 content groups lack direct released-record mappings, 127 released records lack direct unit mappings, and 17 exclusion rationales remain pending audit review. The pending classical-traditions topic stays unchanged and is routed to feat-094. No coverage, audit, specialist-review, or certification gate is claimed complete.
 - Dependencies: feat-065 is done; see [feature index](../feature_index.json).
