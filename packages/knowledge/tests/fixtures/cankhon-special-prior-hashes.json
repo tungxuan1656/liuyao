@@ -1,0 +1,75 @@
+[
+  {
+    "recordId": "hexagram-01",
+    "unchangedFields": {
+      "schemaVersion": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "id": "e804ae466eb62228e564161fa5d1a17b50b16a3fec3ecaf3ad6f5f30db476f4e",
+      "type": "6090c853e3885779f413e217e40aa3136757bf898f9712e69d7857bd24a26200",
+      "title": "323cf87bdf453370e5dc16f6e7df0bdbfe489781ebf70b1210dc18ffdc0ae9bf",
+      "aliases": "a12522df59eabb6f4a2aa08bf39b6cc121baefc35d87902e87db0542c9468f51",
+      "topicIds": "814e6da0e44a9a4ce29ab1c3db22e2e2f24b86dceee7c0d3c7b95abf5ace5dae",
+      "claims": "09e2536ee6c36d62b8ed3a4678a2e63f1f9e97f81f9f90b093c66e2a3543a69d",
+      "relatedIds": "c7b311b5706d41d86749e598559f49119c00ae1d0c851fb0b0819a49038914a5",
+      "rights": "8cc6511cc4212765c58e3c1ae46e7e6befd9843aabb3370d150999a7bcfabadd",
+      "structure": "9c69ca9ae3a7cdc3c2dc31bda1222cc2bf9e92d0a07fadceb8de3d9394e2ef24",
+      "lines": "5b1b6da325419c9e01affcfef16dcf385105a6c2c0174214e9e5b0e5f6207a7e"
+    },
+    "specialClaims": [
+      {
+        "id": "hexagram-01-special-nhl",
+        "sha256": "7c8176f0247499a6a9a77ceaeca89848c6b2f247b204765012a77c10501a457f"
+      },
+      {
+        "id": "hexagram-01-special-pbc-pbc",
+        "sha256": "8f6ea77ebb745852292dd4e4e161350235e10dd9f696e13cd93bf71e1d2a2063"
+      },
+      {
+        "id": "hexagram-01-special-ntt-trinh-di",
+        "sha256": "2f9c18bf958539204dfdbd42bee6b9fdeb6d454f38543ec00b82ed8c1e49479d"
+      },
+      {
+        "id": "hexagram-01-special-ntt-chu-hy",
+        "sha256": "14ca1d68b51857c77582aba735f4ed5e6c0bb6a9478724178df1e20ff9a8e218"
+      }
+    ],
+    "specialId": "hexagram-01-special",
+    "specialTitle": "D\u1ee5ng c\u1eedu"
+  },
+  {
+    "recordId": "hexagram-02",
+    "unchangedFields": {
+      "schemaVersion": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "id": "b3246eeb304c28b15ba38ae603f12ce21f619e31b1ec564fc78c9b0dcbb62063",
+      "type": "6090c853e3885779f413e217e40aa3136757bf898f9712e69d7857bd24a26200",
+      "title": "31f02ad0e221e9cd5ad8ee594083ed499e6c16f1066dbbb08391d9677aa6040f",
+      "aliases": "5de4f7303dec78d0ab623598321b6e3186a703f6e9df0c2f5fabb38c56a8faad",
+      "topicIds": "814e6da0e44a9a4ce29ab1c3db22e2e2f24b86dceee7c0d3c7b95abf5ace5dae",
+      "claims": "10eb63aa16d6b3d245a7061e7a0af41f9dccb34091aacdd5ec70c1b3a48aa2c9",
+      "relatedIds": "edf541362d0ffd99e53376f99a6428ca783a2e8b08f0a58dc4146be3d2393c0a",
+      "rights": "8cc6511cc4212765c58e3c1ae46e7e6befd9843aabb3370d150999a7bcfabadd",
+      "structure": "1e90104e93c3aab675b620cf2faa88a7212e7239f19e9ac5a33aa7ca098edc99",
+      "lines": "b2abe9caf4058df4a59210224df14bfde3e4287d85e67b2559ff9341a5d4cc23",
+      "discrepancies": "2ac1fce8372c359c0fdf5236194d4096ca7fa557637f1e88c5cb8b080797e9ec"
+    },
+    "specialClaims": [
+      {
+        "id": "hexagram-02-special-nhl",
+        "sha256": "62faeb263d209de6b3b60c588e76ccedd57e4a60da0ef3d2d4576e5b85aece37"
+      },
+      {
+        "id": "hexagram-02-special-pbc-pbc",
+        "sha256": "0a0386af048f69c127c77306ce6779ba3fc2530773bf362dc92017a5d43fc8dc"
+      },
+      {
+        "id": "hexagram-02-special-ntt-trinh-di",
+        "sha256": "3d4bf1b386fd23ed26294d9988c3b99569d4cc04127d3cfe3ecb27370742cc6d"
+      },
+      {
+        "id": "hexagram-02-special-ntt-chu-hy",
+        "sha256": "83a6d9c7edb2b82f9b13cac470ebc564715823bef35493f3b0a6e8f75e580f99"
+      }
+    ],
+    "specialId": "hexagram-02-special",
+    "specialTitle": "D\u1ee5ng l\u1ee5c"
+  }
+]

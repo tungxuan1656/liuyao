@@ -47,7 +47,7 @@ describe('book corpus publication boundary', () => {
         ),
       0,
     );
-    expect(claimCount).toBe(9237);
+    expect(claimCount).toBe(9497);
     expect(report.complete).toBe(false);
     expect(corpus.records.find(record => record.id === 'hexagram-41')).toBeDefined();
     expect(

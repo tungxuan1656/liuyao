@@ -1928,3 +1928,79 @@ bounded observations are released,no copied text/images or calendar/UI/core
 changes. Prior claims,citations,feat061 routes,17 global exclusions and global
 layer rosters remain unchanged. Source review,audit and certification stay open
 obligations with their gates closed.
+
+<a id="feat-063-cankhon-special-source-comparison"></a>
+
+## Feat-063 Càn/Khôn special source comparison
+
+The worker matched the exact supplied PBC,NTT and NHL fingerprints against
+[sources.json](../../packages/knowledge/data/sources.json),then individually opened
+all94 assigned page images at1.5x and compared complete extraction. PBC/NHL renders
+are918×1188 and NTT893×1263. The [inspection artifact](../reviews/knowledge/feat-063-page-inspection.json)
+records page hashes,dimensions,folios and findings; the [special-passage register](../reviews/knowledge/source-inventory.md#feat-063-cankhon-special-passage-register)
+owns precise boundaries,layer dispositions,reused selections and deferred context.
+NHL printed131–141 match PDF numbers; no printed folios are visible in the assigned
+PBC/NTT pages. Local images/text and PDF prose remain research inputs,not runtime assets.
+
+PBC Càn41–42 has Dụng cửu and its Tượng,not the Văn Ngôn43–57 outside the activated
+scope. PBC's numbered7 and talk of additional hào are source wording; special fields
+remain outside positions1–6. Its literal six-dương transformation and social
+six-epoch/đại đồng interpretation remain separate from NHL's selected report of PBC.
+Khôn67 has Dụng lục,Phụ Chú citing Trung Dung and Tượng before the Văn Ngôn heading.
+Khôn Văn Ngôn has overview then six line-related paragraphs,not a Dụng lục paragraph.
+The final Hán/reading comment72 claims absence in terms of phù dương/ức âm; it is
+unsigned and lacks a following Vietnamese explanation. Do not attribute it to
+Confucius or invent a named commentator. PBC Phụ Chú distinguishes đức phương from
+square-earth geometry,links kính/nghĩa with Trung Dung/Đại Học,and has three distinct
+Trung Dung sayings at71. Its thuận→thận note cites Chu Tử; integrated meaning does
+not become an independently headed translation.
+
+NTT Càn separates Dụng89–90 from ordinary Thoán starting below on90. Tiên Nho Chu Hy
+on89 differs in scope from Hồ Quảng on90,who combines original/changed quẻ rather
+than discarding the original. Dụng Tượng99–100 is separate from Văn Ngôn100–126.
+Văn Ngôn's six source-described sections preserve the repeated đức/ngôi/thì/khí
+series in order rather than merging their six line references. Not every clause has
+Bản nghĩa: Càn115–116's rồng bay clause has only original/reading/translation;
+Khôn150/151 has Trình Di and Tiên Nho,not an invented Bản nghĩa. Khôn151 prints
+Dịch truyện at Lục ngũ,so that label stays rather than automatically renamed Trình Di.
+All named Tiên Nho voices remain through Ngô Tất Tố,including Trình Hiệu,Hồ Vân Phong,
+Hồ Song Hồ,Dương Thành Trai,Ngô Lâm Xuyên,Sái Tiết Trai,Phùng Hậu Trai,Lã Đông Lai
+and Từ Tiến Trai. Mục Khương/Xuân Thu,Mạnh Tử,Kinh Thi and Thiệu Khang Tiết are
+reported quotations/attributions,not independently consulted works.
+
+- Càn110's Bản nghĩa explains excessive height with the printed Chín Năm label;
+  NHL134's embedded Thượng cửu paragraph also prints Hào5. Preserve both source
+  labels independently; no ordinary line/discrepancy correction is claimed here.
+- Càn113's Hán uses dụng cửu with the character meaning long duration,unlike116;
+  115 translates uyên as ruộng,116 translates kháng with vực. Do not repair these
+  into standardized source text. Malformed Hán/reading remains untranscribed.
+- Càn123 keeps the question mark at trùng cương for4 and Chu Hy's suspected surplus
+  trùng. That doubt is a commentary,not a reconstructed original.
+- Khôn145's Dụng Hán ends with nam while reading/translation says trinh. Khôn146–147
+  includes lợi marked with an asterisk,and154 note11 says it was added following
+  Trình truyện. Keep translator choice and original-text evidence separate.
+- Khôn147–148 retains Trình Di's thuận/growth reading beside Chu Hy's thận proposal;
+  153 Bản nghĩa prints vô with an equality gloss. Do not silently replace glyphs.
+- Càn128 note16 distinguishes Đại/Tiểu Tượng; note17 repeats Hồ Vân Phong at120 and
+  supports the same summary. Khôn154 notes12/13 gloss tý/hợi as month1/10 in Sái
+  Tiết Trai's passage,not a calendar rule. Ordinary notes remain outside this batch.
+
+NHL has embedded Văn Ngôn summaries and sometimes partial quotations/referrals,
+not the full NTT/PBC wing. Its Dụng cửu comparisons include Chu Hi,Legge,Wilhelm,
+PBC,Cao Hanh,Tào Thăng,Chu Tuấn Thanh,and Nghiêm Linh Phong's reports of Vương An
+Thạch/Đô Khiết/Ngô Nhân Kiệt. NHL's doubts and its assertion of extreme rarity are
+opinions,not independently established probability. Dụng lục141 keeps unnamed
+Tiên nho,Cao Hanh and Tào Thăng as three readings; no missing named author is inferred.
+At139 NHL's uncertain interpretation of bất cô as having friends differs from the
+Chu Hi size reading it reports. At140 the proposed alternative glyphs for huyền hoàng
+are visibly blank; do not restore them. Phụ Lục136 separately compares three recent
+readings of Sơ cửu and NHL's evaluation; its inline symbol actually has lower Tốn,
+upper Càn. Seasonal,81-scale and năng explanations are attributed,not new facts
+about dragons,nature,calendar or predictive success.
+
+Only original Vietnamese summaries and bounded observations are released. Earlier
+claim/citation IDs are preserved; six ordinary positions and unrelated records stay
+unchanged. Source hierarchies,gender/class roles,spiritual assertions,war stories and
+predictive claims are historical attributions,not modern medical/legal/political or
+other advice. Global layer discovery,17 exclusions,source audit068,global verification,
+certification and source rights remain unresolved with completion gates closed.
