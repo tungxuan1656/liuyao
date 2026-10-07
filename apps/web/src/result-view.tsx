@@ -66,9 +66,12 @@ export function ResultView() {
               Chưa có quẻ
             </EmptyTitle>
           </EmptyHeader>
-          <EmptyContent>
+          <EmptyContent className="flex gap-2">
             <Button size="lg" render={<Link to={ROUTES.home} />}>
               Đến trang gieo quẻ
+            </Button>
+            <Button variant="outline" size="lg" render={<Link to={ROUTES.history} />}>
+              Xem lịch sử đã lưu
             </Button>
           </EmptyContent>
         </Empty>
@@ -93,9 +96,14 @@ export function ResultView() {
             {reading.question || 'Kết quả'}
           </h1>
         </div>
-        <Button variant="outline" size="lg" render={<Link to={ROUTES.home} />}>
-          Trang gieo quẻ
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button variant="outline" size="lg" render={<Link to={ROUTES.history} />}>
+            Lịch sử
+          </Button>
+          <Button variant="outline" size="lg" render={<Link to={ROUTES.home} />}>
+            Trang gieo quẻ
+          </Button>
+        </div>
       </header>
 
       <div className="result-layout flex min-w-0 items-start gap-6">

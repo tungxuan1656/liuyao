@@ -1,12 +1,16 @@
 import { createContext, useContext, useRef, useState, type ReactNode } from 'react';
 import {
   createAutomaticTossSnapshot,
+  createStoredReadingRecord,
+  validateSixLines,
   type CastingMethod,
   type AutomaticTossSnapshot,
   type CoinTossResult,
   type LineValue,
   type ReadingResult,
+  type StoredReadingRecord,
 } from '@liuyao/core';
+import { saveStoredReadingRecord } from './lib/reading-history-storage';
 
 export type ReadingMethod = 'automatic' | 'manual' | 'direct';
 
@@ -46,6 +50,7 @@ type ReadingSessionValue = {
   setMethod: (method: ReadingMethod) => void;
   setDraft: (draft: ReadingDraft | null) => void;
   completeReading: (reading: ReadingCompletion) => void;
+  loadReadingIntoSession: (record: StoredReadingRecord) => void;
   clearReading: () => void;
   clearSession: () => void;
   updateAccepted: boolean;
@@ -90,6 +95,19 @@ export function ReadingSessionProvider({ children }: { children: ReactNode }) {
               result: nextReading.result,
               tosses,
             });
+
+            try {
+              const record = createStoredReadingRecord({
+                question: nextReading.question,
+                method: 'automatic',
+                lines: validateSixLines(nextReading.lines),
+                result: nextReading.result,
+                tosses,
+              });
+              saveStoredReadingRecord(record);
+            } catch {
+              // Storage failure does not disrupt the in-memory reading flow
+            }
           } else {
             setReading({
               question: nextReading.question,
@@ -97,8 +115,41 @@ export function ReadingSessionProvider({ children }: { children: ReactNode }) {
               lines: nextReading.lines,
               result: nextReading.result,
             });
+
+            try {
+              const record = createStoredReadingRecord({
+                question: nextReading.question,
+                method: nextReading.method,
+                lines: validateSixLines(nextReading.lines),
+                result: nextReading.result,
+              });
+              saveStoredReadingRecord(record);
+            } catch {
+              // Storage failure does not disrupt the in-memory reading flow
+            }
           }
           setDraft(null);
+        },
+        loadReadingIntoSession: record => {
+          setQuestion(record.question);
+          setMethod(record.method);
+          setDraft(null);
+          if (record.method === 'automatic' && record.tosses) {
+            setReading({
+              question: record.question,
+              method: 'automatic',
+              lines: record.lines,
+              result: record.result,
+              tosses: record.tosses,
+            });
+          } else if (record.method === 'manual' || record.method === 'direct') {
+            setReading({
+              question: record.question,
+              method: record.method,
+              lines: record.lines,
+              result: record.result,
+            });
+          }
         },
         clearReading: () => setReading(null),
         clearSession: () => {

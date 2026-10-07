@@ -1,11 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowLeft, BookOpen, House, Settings2 } from 'lucide-react';
+import { ArrowLeft, BookOpen, History, House, Settings2 } from 'lucide-react';
 import { ROUTES } from '../route-paths';
 import { cn } from '../lib/utils';
 import { buttonVariants } from './ui/button';
 
 const destinations = [
   { label: 'Gieo quẻ', path: ROUTES.home, icon: House },
+  { label: 'Lịch sử', path: ROUTES.history, icon: History },
   { label: 'Thư viện', path: ROUTES.library, icon: BookOpen },
   { label: 'Cài đặt', path: ROUTES.settings, icon: Settings2 },
 ] as const;
@@ -31,9 +32,11 @@ export function Navigation() {
       ? 'Lập quẻ'
       : pathname === ROUTES.result
         ? 'Kết quả'
-        : pathname.startsWith(`${ROUTES.library}/`)
-          ? 'Chi tiết thư viện'
-          : 'Lục Hào';
+        : pathname === ROUTES.history
+          ? 'Lịch sử'
+          : pathname.startsWith(`${ROUTES.library}/`)
+            ? 'Chi tiết thư viện'
+            : 'Lục Hào';
 
   return (
     <header data-app-header className="sticky top-0 z-20 isolate border-b bg-background">

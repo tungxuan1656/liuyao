@@ -1,5 +1,6 @@
 export const ROUTES = {
   home: '/',
+  history: '/history',
   library: '/library',
   settings: '/settings',
   casting: '/casting',

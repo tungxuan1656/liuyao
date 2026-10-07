@@ -9,6 +9,7 @@ export * from './palaces.js';
 export * from './na-jia.js';
 export * from './board.js';
 export * from './casting.js';
+export * from './history.js';
 
 import type { HexagramReadingInput, LineValue } from './contracts.js';
 import { isChangingLine } from './polarity.js';

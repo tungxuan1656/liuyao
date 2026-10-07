@@ -8,6 +8,7 @@ import { AppShell } from './components/app-shell';
 import { ROUTES } from './route-paths';
 import { LibraryDetailPage, LibraryPage } from './library';
 import { SettingsPage } from './settings';
+import { HistoryPage } from './history-page';
 import { PwaUpdateBanner } from './components/pwa-update-banner';
 
 export { ROUTES } from './route-paths';
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
     element: createElement(RouteLayout),
     children: [
       { path: ROUTES.home, element: createElement(App) },
+      { path: ROUTES.history, element: createElement(HistoryPage) },
       { path: ROUTES.library, element: createElement(LibraryPage) },
       { path: ROUTES.settings, element: createElement(SettingsPage) },
       { path: ROUTES.casting, element: createElement(CastingFlow) },
