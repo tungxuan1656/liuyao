@@ -1870,5 +1870,15 @@
         { "code": "specialist-review-pending", "count": 84 }
       ]
     }
+  },
+  "authoringCrosswalk": {
+    "path": "packages/knowledge/reports/authoring-crosswalk.json",
+    "groups": 4638,
+    "selectedOnly": 4488,
+    "unmapped": 108,
+    "nonContent": 42,
+    "discoveryUnresolved": 4638,
+    "exclusions": 17,
+    "evidenceNote": "Direct registry mappings support selected records only. Parent mappings never prove child coverage. Classification and ownership are not full passage coverage, source-layer closure, audit acceptance or certification."
   }
 }

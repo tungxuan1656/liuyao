@@ -11,6 +11,7 @@ import { recordSchemaName } from './record-schema-dispatch.mjs';
 import { createReleaseProjection } from './release-projection.mjs';
 import { loadAuditReview } from './audit-loader.mjs';
 import { createAuditStatus } from './audit-status.mjs';
+import { authoringCrosswalk } from './authoring-crosswalk.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dataRoot = path.join(root, 'data');
@@ -129,7 +130,22 @@ const auditStatus = createAuditStatus({
 if (requireComplete && !auditStatus.complete)
   throw new Error('Audit completion gates are closed (--require-complete)');
 const report = coverageReport({ manifest, records, citations, legacy, checked, auditStatus });
+const crosswalk = authoringCrosswalk({
+  registry: review.registry,
+  inventoryText: await readFile(path.join(repositoryRoot, review.registry.inventory.path), 'utf8'),
+  manifest,
+  records,
+  legacy,
+  checked,
+  coverage: report,
+});
+report.authoringCrosswalk = {
+  path: 'packages/knowledge/reports/authoring-crosswalk.json',
+  ...crosswalk.counts,
+  evidenceNote: crosswalk.evidenceNote,
+};
 await saveGenerated('reports/coverage.json', JSON.stringify(report));
+await saveGenerated('reports/authoring-crosswalk.json', JSON.stringify(crosswalk));
 await saveGenerated('reports/audit-status.json', JSON.stringify(auditStatus));
 await saveGenerated('src/book-release.generated.json', `${JSON.stringify(projection, null, 2)}\n`);
 const generated =

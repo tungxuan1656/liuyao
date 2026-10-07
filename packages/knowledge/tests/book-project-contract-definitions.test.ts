@@ -137,7 +137,7 @@ describe('feat-064 stable project-contract definitions', () => {
       releasedClaimsRequired: 9503,
       currentDecisions: 84,
     });
-    expect(registry.registryRevision).toBe(57);
+    expect(registry.registryRevision).toBe(58);
     expect(registry.counts).toEqual({
       overviewCells: 192,
       positionCells: 1152,
