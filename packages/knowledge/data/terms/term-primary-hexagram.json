@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "id": "term-primary-hexagram",
+  "type": "term",
+  "title": "Quẻ chính",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "term-primary-hexagram-definition",
+      "kind": "project-convention",
+      "text": "Quẻ gồm sáu hào được xác định trực tiếp từ các giá trị đầu vào.",
+      "citationIds": [],
+      "projectEvidence": [
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Line contract",
+          "revision": "v1"
+        },
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Reading result",
+          "revision": "v1"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedAt": "2026-10-07",
+    "method": "source-comparison",
+    "evidenceClaimIds": ["term-primary-hexagram-definition"],
+    "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "applicableRuleIds": ["rule-trigram-composition"]
+}

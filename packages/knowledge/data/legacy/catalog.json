@@ -4,51 +4,8 @@
   "note": "Compatibility content from the pre-book catalog. These records have not been certified against the supplied editions.",
   "catalog": {
     "entities": [],
-    "terms": [
-      {
-        "id": "term-ruleset",
-        "name": "Quy ước tính",
-        "aliases": [],
-        "definition": "Bộ quy ước được dùng để tạo ra một kết quả gieo quẻ có thể tái lập."
-      },
-      {
-        "id": "term-primary-hexagram",
-        "name": "Quẻ chính",
-        "aliases": [],
-        "definition": "Quẻ gồm sáu hào được xác định trực tiếp từ các giá trị đầu vào.",
-        "applicableRuleIds": ["rule-trigram-composition"]
-      },
-      {
-        "id": "term-changed-hexagram",
-        "name": "Quẻ biến",
-        "aliases": [],
-        "definition": "Quẻ tạo ra khi đổi tính âm dương của từng hào động; không có quẻ biến nếu không có hào động.",
-        "applicableRuleIds": ["rule-moving-line-change", "rule-trigram-composition"]
-      },
-      {
-        "id": "term-line-value",
-        "name": "Giá trị hào",
-        "aliases": [],
-        "definition": "Giá trị đầu vào 6, 7, 8 hoặc 9, biểu thị tính âm dương và trạng thái động của hào.",
-        "applicableRuleIds": ["rule-line-polarity-values", "rule-moving-line-change"]
-      }
-    ],
-    "rules": [
-      {
-        "id": "rule-reading-result-fields",
-        "ruleset": "liuyao-standard-v1",
-        "title": "Các trường của kết quả gieo quẻ",
-        "explanation": "Kết quả gồm mã quy ước tính, mã quẻ chính và quẻ biến, mã nội quái và ngoại quái, cung và ngũ hành của cung, cùng vị trí hào Thế và hào Ứng. Đây là các giá trị phân loại được tính ra, không phải lời dự đoán.",
-        "category": "metadata"
-      },
-      {
-        "id": "rule-line-polarity-values",
-        "ruleset": "liuyao-standard-v1",
-        "title": "Giá trị hào và tính âm dương",
-        "explanation": "Giá trị đầu vào 6 và 8 là âm; giá trị 7 và 9 là dương. Kết quả vẫn ghi lại giá trị đầu vào của hào trong quẻ chính.",
-        "category": "classification"
-      }
-    ],
+    "terms": [],
+    "rules": [],
     "sources": [
       {
         "id": "source-zhouyi",

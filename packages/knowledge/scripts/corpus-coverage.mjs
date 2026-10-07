@@ -14,7 +14,7 @@ export function coverageReport({ manifest, records, citations, legacy, checked, 
     corpusId: manifest.corpusId,
     complete: auditStatus?.complete ?? false,
     evidenceNote:
-      'Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.',
+      'Counts describe authored content reviewed against supplied sources or accepted project contracts. Codex review is recorded; independent specialist approval is not claimed.',
     records: {
       authored: records.length,
       released: reviewed.length,
@@ -23,7 +23,9 @@ export function coverageReport({ manifest, records, citations, legacy, checked, 
     },
     claims: {
       total: claims.length,
-      missingCitationIds: claims.filter(c => !c.citationIds.length).map(c => c.id),
+      missingCitationIds: claims
+        .filter(c => c.kind !== 'project-convention' && !c.citationIds.length)
+        .map(c => c.id),
     },
     citations: { total: citations.length },
     trigrams: { reviewed: reviewed.filter(r => r.type === 'trigram').length, expected: 8 },

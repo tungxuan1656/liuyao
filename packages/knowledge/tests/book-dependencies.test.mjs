@@ -81,6 +81,14 @@ function createCorpus(records) {
 const check = records => checkCorpus(createCorpus(records));
 
 describe('claim dependency and evidence contracts', () => {
+  it('does not let claim review evidence substitute for book citation review', () => {
+    const owner = record('article-owner', [claim('claim-owner')], {
+      review: { ...reviewed, evidenceClaimIds: ['claim-owner'] },
+    });
+    delete owner.review.evidenceCitationIds;
+    expect(() => check([owner])).toThrow(/review evidence omits citation-fixture/);
+  });
+
   it('accepts cross-record reviewed selected support and repeated source units', () => {
     const support = record('article-support', [claim('claim-support')]);
     const owner = record(

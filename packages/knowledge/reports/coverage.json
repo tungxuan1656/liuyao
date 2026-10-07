@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
-  "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 371, "released": 371, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 9497, "missingCitationIds": [] },
+  "evidenceNote": "Counts describe authored content reviewed against supplied sources or accepted project contracts. Codex review is recorded; independent specialist approval is not claimed.",
+  "records": { "authored": 377, "released": 377, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 9503, "missingCitationIds": [] },
   "citations": { "total": 9744 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
@@ -176,7 +176,13 @@
         "article-pbc-he-tu-ha-03",
         "article-pbc-he-tu-ha-04",
         "article-pbc-he-tu-ha-09",
-        "article-pbc-he-tu-ha-05"
+        "article-pbc-he-tu-ha-05",
+        "term-ruleset",
+        "term-primary-hexagram",
+        "term-changed-hexagram",
+        "term-line-value",
+        "rule-reading-result-fields",
+        "rule-line-polarity-values"
       ]
     },
     {
@@ -1808,11 +1814,7 @@
     }
   ],
   "unresolvedDiscrepancies": [],
-  "legacyUnaudited": {
-    "entities": [],
-    "terms": ["term-ruleset", "term-primary-hexagram", "term-changed-hexagram", "term-line-value"],
-    "rules": ["rule-reading-result-fields", "rule-line-polarity-values"]
-  },
+  "legacyUnaudited": { "entities": [], "terms": [], "rules": [] },
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
@@ -1822,9 +1824,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 6465,
+        "required": 6471,
         "current": 84,
-        "missing": 6381,
+        "missing": 6387,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1833,8 +1835,8 @@
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
         { "code": "unresolved-source-discovery", "count": 4638 },
-        { "code": "missing-decision", "count": 6381 },
-        { "code": "released-claim-coverage-incomplete", "count": 9300 }
+        { "code": "missing-decision", "count": 6387 },
+        { "code": "released-claim-coverage-incomplete", "count": 9306 }
       ]
     },
     "certification": {
@@ -1842,7 +1844,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 6465,
+        "required": 6471,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

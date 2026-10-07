@@ -51,6 +51,7 @@ The current contract accepts optional date and timezone fields. V1 calculation m
 
 A V1 result contains:
 
+- ruleset ID;
 - primary hexagram ID;
 - optional changed hexagram ID;
 - lower and upper trigram IDs;

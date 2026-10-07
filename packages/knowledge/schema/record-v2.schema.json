@@ -1271,7 +1271,8 @@
             }
           },
           "then": {
-            "required": ["reviewer", "reviewedAt", "method", "evidenceCitationIds", "note"]
+            "required": ["reviewer", "reviewedAt", "method", "note"],
+            "anyOf": [{ "required": ["evidenceCitationIds"] }, { "required": ["evidenceClaimIds"] }]
           }
         }
       ]

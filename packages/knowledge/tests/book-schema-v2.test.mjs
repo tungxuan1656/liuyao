@@ -30,6 +30,41 @@ describe('version-2 book schema and typed fixtures', () => {
     ]);
   });
 
+  it('accepts reviewed project-only evidence without fabricating review citations', () => {
+    const record = structuredClone(projectConventionFixture);
+    record.review = {
+      status: 'reviewed',
+      reviewer: 'Synthetic reviewer',
+      reviewedAt: '2026-10-07',
+      method: 'source-comparison',
+      evidenceClaimIds: ['claim-project-convention'],
+      note: 'Synthetic project contract comparison; not book evidence.',
+    };
+    expect(validateV2(record), ajv.errorsText(validateV2.errors)).toBe(true);
+    const withoutEvidence = structuredClone(record);
+    delete withoutEvidence.review.evidenceClaimIds;
+    expect(validateV2(withoutEvidence)).toBe(false);
+    for (const field of ['evidenceCitationIds', 'evidenceClaimIds']) {
+      const emptyEvidence = structuredClone(record);
+      emptyEvidence.review[field] = [];
+      expect(validateV2(emptyEvidence)).toBe(false);
+    }
+  });
+
+  it('still requires citations on book claims when the review names claim evidence', () => {
+    const record = structuredClone(bookV2Fixtures.find(record => record.type === 'rule'));
+    record.review = {
+      status: 'reviewed',
+      reviewer: 'Synthetic reviewer',
+      reviewedAt: '2026-10-07',
+      method: 'source-comparison',
+      evidenceClaimIds: ['claim-fixture'],
+      note: 'Synthetic book evidence.',
+    };
+    record.claims[0].citationIds = [];
+    expect(validateV2(record)).toBe(false);
+  });
+
   it('keeps V1 schema dispatch separate and rejects unsupported V1 mutations', () => {
     const v1 = readJson('../data/manifest.json');
     expect(v1.schemaVersion).toBe(1);

@@ -288,8 +288,8 @@ describe('feat-053 final release accounting', () => {
     expect(audit.complete).toBe(false);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
-    expect(coverage.records.released).toBe(371);
-    expect(coverage.claims.total).toBe(9497);
+    expect(coverage.records.released).toBe(377);
+    expect(coverage.claims.total).toBe(9503);
     expect(coverage.citations.total).toBe(9744);
     expect(manifest.nextBatch.note).toMatch(/feat-061.*Hệ Từ Thượng.*PBC.*NHL/);
   });
