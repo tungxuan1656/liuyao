@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "article-pbc-he-tu-ha-04",
+  "type": "article",
+  "title": "PBC — Hệ Từ Hạ, chương 4",
+  "aliases": [],
+  "topicIds": ["topic-foundations"],
+  "claims": [
+    {
+      "id": "article-pbc-he-tu-ha-04-pbc-he-tu-ha-04-missing-notice",
+      "kind": "author-interpretation",
+      "text": "PBC chương4 chỉ có tiêu đề Khuyết,không Hán/đọc,dịch hoặc commentary chương. NHL có chương riêng; không lấy nó hay NTT để điền.",
+      "citationIds": ["citation-pbc-he-tu-ha-04-missing-notice"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-07",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-pbc-he-tu-ha-04-missing-notice"],
+    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
+  }
+}

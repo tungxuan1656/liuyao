@@ -228,7 +228,7 @@ describe('feat-058 BPCT casting supplements and criticism source dispositions', 
         expect(c.conditions?.join(' ')).toMatch(/Không dùng làm phép lịch/);
     }
     expect(registry.groups.filter(g => g.authorFeatureId === 'feat-058')).toHaveLength(445);
-    expect(registry.counts.groups).toBe(3981);
+    expect(registry.counts.groups).toBe(4351);
     expect(registry.exclusions).toHaveLength(17);
     expect(registry.layers.every(l => l.rosterStatus === 'unresolved')).toBe(true);
     expect(audit.gates.sourceReview.status).toBe('closed');

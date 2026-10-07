@@ -1860,3 +1860,71 @@ unchanged. Original summaries, not copied prose/images, are released. Prior
 records/citations and17 exclusions remain semantically unchanged. Source rights,
 global layer discovery, source audit and independent verification/certification
 retain their existing unresolved/closed-gate status.
+
+<a id="feat-062-he-tu-ha-source-comparison"></a>
+
+## Feat-062 Hệ Từ Hạ source comparison
+
+All44 assigned NHL363–388/PBC631–648 full-page images were individually opened
+and compared with complete extraction,not only the parent's seven samples.
+The [page inspection artifact](../reviews/knowledge/feat-062-page-inspection.json)
+records fingerprints,render/text hashes,dimensions,folios and per-page findings.
+The [passage register](../reviews/knowledge/source-inventory.md#feat-062-nhlpbc-he-tu-ha-passage-register)
+owns chapter/layer/selection/referral dispositions. Batch source comparison does
+not establish independent audit092,whole-source review or certification.
+
+NHL has all twelve chapters. Its printed folios363–388 match PDF numbers;
+the retrospective at389 is outside scope. PBC has no visible printed folios
+in631–648 and explicitly labels Hạ lược trích. Its chapters3,4,9 only say Khuyết;
+chapter5 only refers eleven hào elsewhere and says đây tùng khuyết. These notices
+are not absent NHL chapters,not recovered text and not evidence from NTT.
+PBC's selected readings and integrated Vietnamese commentary have their own
+locators; no independent Dịch layer is invented. Out-of-scope Kinh attachments
+are referred,not newly certified or copied into Hạ.
+
+- NHL2 says PBC only translated1/5,but PBC632 actually labels1,2 Khuyết,and
+  reduced combined3/5. That reduced block omits plough/Ích and rũ áo/Càn Khôn.
+  Preserve both the NHL report and PBC's actual printed labels separately.
+- NHL365 extraction quan điểm is image quan điểu. Its reading tự nhiên hữu chi
+  at2/5 remains though its translation describes heaven's help; PBC632–633
+  reads tự thiên hữu/hựu. Do not repair one edition by the other.
+- NHL367 prints a six-line symbol with bottom-up âm,dương,âm,dương,âm,âm,
+  hence lower Khảm/upper Chấn (Giải),beside discussion of Dự (lower Khôn).
+  The bounded inspected figure preserves the printed symbol,not a repaired Dự.
+  NHL's critique of Chu Hi and Wilhelm about invention from quẻ is its opinion;
+  their cited works were not independently inspected here.
+- NHL5/6 image says nhắm bắn whereas extraction says nhắm mắt bắn; use the image.
+  NHL5/13 reading/translation concerns Tổn3 but its note calls Tốn3. NHL5/14
+  note calls Ích5 whereas PBC636 referral calls Thượng Cửu Ích. Keep these source
+  labels; no previously authored quẻ/line claim is silently corrected.
+- NHL6 doubts nhi vi hiển and another nhi,then follows Legge's acknowledged
+  guess. Suspected corrections remain notes,not reconstructed original text.
+  PBC6's punctuation joins việt through loại and selects1,2,4 only.
+- NHL7's bản đọc Tổn differs from Tốn in its note and parts of translation;
+  NHL Khiêm tốn versus PBC Khiêm tôn also stays. The nine virtues,qualities and
+  uses remain attributed,not a prediction matrix or empirical psychology.
+- NHL8 prints3 twice;3a/3b children preserve order,not a restored4. PBC8 selects
+  its1/4 and does not inherit NHL's doubled numbering. NHL380 image dương thăng
+  differs from extraction thẳng. NHL9 is present despite its PBC-omission notice.
+- NHL10 translates both sections despite questioning the last three sentences
+  of2. PBC10 prints1 plus first sentence2 under Tiết thứ nhất; no second heading
+  is fabricated. PBC11 prints hung in Hán/reading but explains hưng thịnh;
+  NHL11 reads hưng. Neither original is silently standardized.
+- NHL12 suspects hầu chi surplus,and cites Thượng1/6 exactly as printed.
+  PBC selects1,5,6,7 with5 reduced;2–4 and the final clause5 are absent.
+  NHL12/6 keeps PBC's human-moral reading apart from Wilhelm/Legge's relation
+  of hào; NHL considers both acceptable. PBC647's quoted động,tĩnh remains,
+  not harmonized to NHL's different passage wording.
+
+Named quoted voices retain consulted-edition attribution. NHL includes Chu Hi,
+Phan Bội Châu,R.Wilhelm,J.Legge,Luận Ngữ and Từ Hải; PBC includes Hán Thư,
+Luận Ngữ,Mạnh Tử and quoted Thượng/Truyện passages. Unnamed classical parallels
+remain unnamed. Tử viết is traditional attribution,not verified authorship.
+Spiritual/predictive assertions,gender/class rankings,punishment rhetoric,
+medicine metaphors and claims to infer a person's character from speech remain
+historical positions,not medical/legal/safety authority,violence endorsement,
+modern advice or efficacy claims. Only original Vietnamese summaries and
+bounded observations are released,no copied text/images or calendar/UI/core
+changes. Prior claims,citations,feat061 routes,17 global exclusions and global
+layer rosters remain unchanged. Source review,audit and certification stay open
+obligations with their gates closed.

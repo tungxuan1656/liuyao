@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 347, "released": 347, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 8867, "missingCitationIds": [] },
-  "citations": { "total": 9113 },
+  "records": { "authored": 371, "released": 371, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 9237, "missingCitationIds": [] },
+  "citations": { "total": 9483 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -152,7 +152,31 @@
         "article-pbc-he-tu-thuong-11",
         "article-pbc-he-tu-thuong-12",
         "article-pbc-he-tu-thuong-06",
-        "article-pbc-he-tu-thuong-09"
+        "article-pbc-he-tu-thuong-09",
+        "article-nhl-he-tu-ha-01",
+        "article-nhl-he-tu-ha-02",
+        "article-nhl-he-tu-ha-03",
+        "article-nhl-he-tu-ha-04",
+        "article-nhl-he-tu-ha-05",
+        "article-nhl-he-tu-ha-06",
+        "article-nhl-he-tu-ha-07",
+        "article-nhl-he-tu-ha-08",
+        "article-nhl-he-tu-ha-09",
+        "article-nhl-he-tu-ha-10",
+        "article-nhl-he-tu-ha-11",
+        "article-nhl-he-tu-ha-12",
+        "article-pbc-he-tu-ha-01",
+        "article-pbc-he-tu-ha-02",
+        "article-pbc-he-tu-ha-06",
+        "article-pbc-he-tu-ha-07",
+        "article-pbc-he-tu-ha-08",
+        "article-pbc-he-tu-ha-10",
+        "article-pbc-he-tu-ha-11",
+        "article-pbc-he-tu-ha-12",
+        "article-pbc-he-tu-ha-03",
+        "article-pbc-he-tu-ha-04",
+        "article-pbc-he-tu-ha-09",
+        "article-pbc-he-tu-ha-05"
       ]
     },
     {
@@ -1792,15 +1816,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 tiếp Hệ Từ Thượng PBC601–630 và NHL334–362. Audit092/verification/certification còn mở."
+    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 đã đối chiếu Hệ Từ Thượng PBC601–630 và NHL334–362. feat-062 đã đối chiếu Hệ Từ Hạ NHL363–388/PBC631–648; giữ chương khuyết,phần chọn và referrals riêng từng ấn bản. Audit092/verification/certification còn mở."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 5783,
+        "required": 6178,
         "current": 84,
-        "missing": 5699,
+        "missing": 6094,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1808,9 +1832,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 3981 },
-        { "code": "missing-decision", "count": 5699 },
-        { "code": "released-claim-coverage-incomplete", "count": 8670 }
+        { "code": "unresolved-source-discovery", "count": 4351 },
+        { "code": "missing-decision", "count": 6094 },
+        { "code": "released-claim-coverage-incomplete", "count": 9040 }
       ]
     },
     "certification": {
@@ -1818,7 +1842,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 5783,
+        "required": 6178,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
