@@ -12,6 +12,31 @@ const validateV2 = ajv.compile(readJson('../schema/record-v2.schema.json'));
 const validateManifest = ajv.compile(readJson('../schema/manifest.schema.json'));
 
 describe('version-2 book schema and typed fixtures', () => {
+  it('allows empty claims only on V2 lessons while retaining the required field', () => {
+    const lesson = structuredClone(bookV2Fixtures.find(record => record.type === 'lesson'));
+    lesson.claims = [];
+    expect(validateV2(lesson), ajv.errorsText(validateV2.errors)).toBe(true);
+    const withoutBlocks = structuredClone(lesson);
+    withoutBlocks.blocks = [];
+    expect(validateV2(withoutBlocks)).toBe(false);
+    for (const [index] of lesson.blocks.entries()) {
+      const withoutSupport = structuredClone(lesson);
+      withoutSupport.blocks[index].supportingClaimIds = [];
+      expect(validateV2(withoutSupport)).toBe(false);
+    }
+    delete lesson.claims;
+    expect(validateV2(lesson)).toBe(false);
+    for (const fixture of [...bookV2Fixtures, projectConventionFixture]) {
+      if (fixture.type === 'lesson') continue;
+      const record = structuredClone(fixture);
+      record.claims = [];
+      expect(validateV2(record), record.id).toBe(false);
+    }
+    const v1 = readJson('../data/casting/line-order.json');
+    v1.claims = [];
+    expect(validateV1(v1)).toBe(false);
+  });
+
   it('accepts typed fixtures for each record and figure kind', () => {
     for (const record of [...bookV2Fixtures, projectConventionFixture]) {
       expect(validateV2(record), `${record.id}: ${ajv.errorsText(validateV2.errors)}`).toBe(true);

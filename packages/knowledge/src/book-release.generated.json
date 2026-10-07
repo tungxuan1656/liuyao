@@ -269,6 +269,10 @@
     "hexagram-62",
     "hexagram-63",
     "hexagram-64",
+    "lesson-classical-reading",
+    "lesson-foundations",
+    "lesson-liuyao-board",
+    "lesson-worked-readings",
     "rule-branch-element",
     "rule-five-element-cycles",
     "rule-line-polarity-values",
@@ -149452,6 +149456,466 @@
       },
       "ruleset": "liuyao-standard-v1",
       "category": "classification"
+    },
+    {
+      "schemaVersion": 2,
+      "id": "lesson-foundations",
+      "type": "lesson",
+      "title": "Từ nét hào đến hình quẻ",
+      "aliases": [],
+      "topicIds": ["topic-learning", "topic-foundations", "topic-trigrams"],
+      "claims": [],
+      "relatedIds": [],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex worker — derivative lesson evidence comparison",
+        "reviewedAt": "2026-10-06",
+        "method": "source-comparison",
+        "evidenceClaimIds": [
+          "term-yin-definition",
+          "term-yang-definition",
+          "term-line-position-definition",
+          "rule-line-position-order-claim",
+          "trigram-heaven-pattern",
+          "trigram-lake-pattern",
+          "trigram-fire-pattern",
+          "trigram-thunder-pattern",
+          "trigram-wind-pattern",
+          "trigram-water-pattern",
+          "trigram-mountain-pattern",
+          "trigram-earth-pattern",
+          "rule-trigram-composition-claim",
+          "hexagram-06-structure",
+          "hexagram-01-structure"
+        ],
+        "evidenceCitationIds": [
+          "citation-nhl-p59-61-technical",
+          "citation-bpct-p11-12-technical",
+          "citation-nhl-p72-73-technical",
+          "citation-bpct-p10-11-technical",
+          "citation-bpct-p14-technical",
+          "citation-nhl-p153-commentary",
+          "citation-nhl-p131-commentary"
+        ],
+        "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "sequence": 1,
+      "prerequisiteLessonIds": [],
+      "blocks": [
+        {
+          "id": "polarity",
+          "kind": "prose",
+          "text": "Bắt đầu bằng hình nét: âm có chỗ ngắt, dương liền một nét. Khi đọc tên hào trong kinh văn, lục và cửu cho biết âm hay dương; đừng dùng riêng tên ấy để quyết định hào động.",
+          "supportingClaimIds": ["term-yin-definition", "term-yang-definition"],
+          "position": 1
+        },
+        {
+          "id": "positions",
+          "kind": "prose",
+          "text": "Đặt sáu vị trí theo chiều từ chân quẻ lên đỉnh: 1 là sơ, rồi 2, 3, 4, 5 và 6 là thượng. Ba vị trí 1–3 tạo nội quái; 4–6 tạo ngoại quái. Khi tự vẽ, ghi số trước để không đảo thứ tự.",
+          "supportingClaimIds": ["term-line-position-definition", "rule-line-position-order-claim"],
+          "position": 2
+        },
+        {
+          "id": "trigrams",
+          "kind": "prose",
+          "text": "Đọc mỗi nhóm ba nét cũng từ dưới lên. Tám mẫu là Càn: dương–dương–dương; Đoài: dương–dương–âm; Ly: dương–âm–dương; Chấn: dương–âm–âm; Tốn: âm–dương–dương; Khảm: âm–dương–âm; Cấn: âm–âm–dương; Khôn: âm–âm–âm. Tên quái gắn với cả mẫu, không chỉ một nét.",
+          "supportingClaimIds": [
+            "trigram-heaven-pattern",
+            "trigram-lake-pattern",
+            "trigram-fire-pattern",
+            "trigram-thunder-pattern",
+            "trigram-wind-pattern",
+            "trigram-water-pattern",
+            "trigram-mountain-pattern",
+            "trigram-earth-pattern"
+          ],
+          "position": 3
+        },
+        {
+          "id": "construction",
+          "kind": "prose",
+          "text": "Ghép nội quái dưới với ngoại quái trên để nhận quẻ sáu hào. Chẳng hạn, Khảm dưới và Càn trên là Thiên Thủy Tụng; Càn cả dưới lẫn trên là Thuần Càn. Đừng đọc tên quẻ như một thứ tự gieo: lần gieo đầu vẫn ở đáy.",
+          "supportingClaimIds": [
+            "rule-trigram-composition-claim",
+            "hexagram-06-structure",
+            "hexagram-01-structure"
+          ],
+          "position": 4
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
+      "id": "lesson-classical-reading",
+      "type": "lesson",
+      "title": "Đọc lời kinh và giữ riêng lời giảng",
+      "aliases": [],
+      "topicIds": ["topic-learning", "topic-hexagrams", "topic-line-commentary"],
+      "claims": [],
+      "relatedIds": ["lesson-foundations"],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex worker — derivative lesson evidence comparison",
+        "reviewedAt": "2026-10-06",
+        "method": "source-comparison",
+        "evidenceClaimIds": [
+          "article-nhl-part2-framing-nhl-part2-framing-kinh-layers",
+          "article-nhl-part2-framing-nhl-part2-framing-selective-wings",
+          "article-nhl-introduction-02-nhl-intro-ch02-tuan-example",
+          "article-nhl-introduction-02-nhl-intro-ch02-xiang-qian",
+          "term-line-position-definition",
+          "term-yang-definition",
+          "hexagram-01-line-1-nhl",
+          "hexagram-01-line-2-nhl",
+          "hexagram-01-line-3-nhl",
+          "hexagram-01-line-4-nhl",
+          "hexagram-01-line-5-nhl",
+          "hexagram-01-line-6-nhl",
+          "hexagram-01-nhl-overview",
+          "hexagram-01-pbc-overview",
+          "hexagram-01-ntt-overview",
+          "article-nhl-introduction-02-nhl-intro-ch02-hetu-zhu",
+          "article-nhl-introduction-02-nhl-intro-ch02-traditional-authorship"
+        ],
+        "evidenceCitationIds": [
+          "citation-nhl-part2-framing-kinh-layers",
+          "citation-nhl-part2-framing-selective-wings",
+          "citation-nhl-intro-ch02-tuan-example",
+          "citation-nhl-intro-ch02-xiang-qian",
+          "citation-nhl-p59-61-technical",
+          "citation-nhl-p132-commentary",
+          "citation-nhl-p133-commentary",
+          "citation-nhl-p133-134-commentary",
+          "citation-nhl-p134-commentary",
+          "citation-nhl-p131-commentary",
+          "citation-pbc-p30-31-commentary",
+          "citation-ntt-p80-81-commentary",
+          "citation-nhl-intro-ch02-hetu-zhu",
+          "citation-nhl-intro-ch02-traditional-authorship"
+        ],
+        "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "sequence": 2,
+      "prerequisiteLessonIds": ["lesson-foundations"],
+      "blocks": [
+        {
+          "id": "passage-types",
+          "kind": "prose",
+          "text": "Trước khi đọc nghĩa, xác định lớp văn bản. Quái từ nói ở cấp quẻ, Hào từ theo từng vị trí; Thoán Truyện là lớp giải quẻ. Đại Tượng dùng hình tượng ở cấp quẻ, Tiểu Tượng giải lời hào. Theo cách giới thiệu của Nguyễn Hiến Lê, kinh văn, lời dịch và phần giảng không phải cùng một lớp; ông chọn trích nhiều truyện chứ không dịch trọn tất cả.",
+          "supportingClaimIds": [
+            "article-nhl-part2-framing-nhl-part2-framing-kinh-layers",
+            "article-nhl-part2-framing-nhl-part2-framing-selective-wings",
+            "article-nhl-introduction-02-nhl-intro-ch02-tuan-example",
+            "article-nhl-introduction-02-nhl-intro-ch02-xiang-qian"
+          ],
+          "position": 1
+        },
+        {
+          "id": "six-positions",
+          "kind": "prose",
+          "text": "Tra lời hào đúng vị trí, không chọn theo thứ tự in từ trên xuống. Với Càn, sáu nhãn theo chiều đi lên là Sơ cửu, Cửu nhị, Cửu tam, Cửu tứ, Cửu ngũ, Thượng cửu. Lục/cửu trong nhãn vẫn là dấu âm/dương của kinh văn, không phải một lệnh biến hào.",
+          "supportingClaimIds": [
+            "term-line-position-definition",
+            "term-yang-definition",
+            "hexagram-01-line-1-nhl",
+            "hexagram-01-line-2-nhl",
+            "hexagram-01-line-3-nhl",
+            "hexagram-01-line-4-nhl",
+            "hexagram-01-line-5-nhl",
+            "hexagram-01-line-6-nhl"
+          ],
+          "position": 2
+        },
+        {
+          "id": "attributed-alternatives",
+          "kind": "prose",
+          "text": "Cùng đọc Càn nhưng cần giữ tên người giải: Nguyễn Hiến Lê chú ý sức cương kiện và đạo đức quân tử; Phan Bội Châu diễn các đức như những chặng phát triển, dùng cây làm ví dụ; Trình Di, qua bản dịch Ngô Tất Tố, tách hình thể trời khỏi tính mạnh mẽ của Càn và giảng các đức qua quá trình của muôn vật. Đây là các góc đọc có chủ thể, không một câu tổng hợp vô danh thay thế cả ba.",
+          "supportingClaimIds": [
+            "hexagram-01-nhl-overview",
+            "hexagram-01-pbc-overview",
+            "hexagram-01-ntt-overview"
+          ],
+          "position": 3
+        },
+        {
+          "id": "authorship-limits",
+          "kind": "prose",
+          "text": "Ngay cả cách gán tác giả cũng có ý kiến khác: Nguyễn Hiến Lê thuật cách Chu Hy phân lời kinh và Hệ Từ Truyện, rồi phản biện căn cứ của cách phân ấy và nghi nhiều người viết. Giữ dấu “được thuật” và người phát biểu; không biến truyền gán thành tên tác giả đã được chứng minh.",
+          "supportingClaimIds": [
+            "article-nhl-introduction-02-nhl-intro-ch02-hetu-zhu",
+            "article-nhl-introduction-02-nhl-intro-ch02-traditional-authorship"
+          ],
+          "position": 4
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
+      "id": "lesson-liuyao-board",
+      "type": "lesson",
+      "title": "Từ gieo quẻ đến các nhãn Lục Hào",
+      "aliases": [],
+      "topicIds": ["topic-learning", "topic-casting", "topic-liuyao-foundations"],
+      "claims": [],
+      "relatedIds": ["lesson-foundations"],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex worker — derivative lesson evidence comparison",
+        "reviewedAt": "2026-10-06",
+        "method": "source-comparison",
+        "evidenceClaimIds": [
+          "claim-three-coin-outcomes",
+          "rule-line-position-order-claim",
+          "rule-palace-and-markers-claim",
+          "rule-na-jia-assignment-claim",
+          "rule-branch-element-claim",
+          "rule-six-relative-classification-claim"
+        ],
+        "evidenceCitationIds": [
+          "citation-bpct-p11-12-technical",
+          "citation-nhl-p72-73-technical",
+          "citation-bpct-p12-14-technical",
+          "citation-bpct-p14-technical",
+          "citation-bpct-p52-technical",
+          "citation-bpct-p13-technical",
+          "citation-bpct-p8-technical",
+          "citation-bpct-p9-technical"
+        ],
+        "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "sequence": 3,
+      "prerequisiteLessonIds": ["lesson-foundations"],
+      "blocks": [
+        {
+          "id": "casting",
+          "kind": "prose",
+          "text": "Với cách gọi sấp/ngửa của các đoạn sách đã đối chiếu, ba tiền cho bốn kết quả: một sấp là dương tĩnh, hai sấp là âm tĩnh, ba sấp là dương động, không sấp là âm động. Sáu lần gieo lấp sáu vị trí từ dưới lên. Cách gọi mặt tiền này không tự xác lập mặt trời/mặt trăng của ứng dụng hay phép bốn tiền.",
+          "supportingClaimIds": ["claim-three-coin-outcomes", "rule-line-position-order-claim"],
+          "position": 1
+        },
+        {
+          "id": "palaces-markers",
+          "kind": "prose",
+          "text": "Sau khi nhận hình quẻ, tìm nó trong tám cung, mỗi cung có tám quẻ. Thứ tự cung không phải số thứ tự Văn Vương. Theo vị trí 1–8 trong một cung, Thế lần lượt ở 6, 1, 2, 3, 4, 5, 4, 3; Ứng nằm cách Thế ba vị trí. Cung còn cung cấp hành làm mốc khi phân Lục thân.",
+          "supportingClaimIds": ["rule-palace-and-markers-claim"],
+          "position": 2
+        },
+        {
+          "id": "na-jia",
+          "kind": "prose",
+          "text": "Nạp Giáp là bước gắn can chi vào từng hào: chọn dãy nội của quái dưới cho 1–3, chọn dãy ngoại của quái trên cho 4–6, rồi đọc từng dãy từ thấp lên cao. Không lấy dãy nội dùng lặp cho cả hai nửa.",
+          "supportingClaimIds": ["rule-na-jia-assignment-claim", "rule-line-position-order-claim"],
+          "position": 3
+        },
+        {
+          "id": "elements-relatives",
+          "kind": "prose",
+          "text": "Từ chi suy hành: Tý/Hợi là Thủy, Dần/Mão là Mộc, Tỵ/Ngọ là Hỏa, Thân/Dậu là Kim, Sửu/Thìn/Mùi/Tuất là Thổ. So hành hào với hành cung: cùng hành → Huynh đệ; cung sinh hào → Tử tôn; cung khắc hào → Thê tài; hào khắc cung → Quan quỷ; hào sinh cung → Phụ mẫu. Năm quan hệ tính cùng “Ta” được gọi là Lục thân; các nhãn quan hệ chưa phải kết luận cho một việc hỏi.",
+          "supportingClaimIds": [
+            "rule-branch-element-claim",
+            "rule-six-relative-classification-claim"
+          ],
+          "position": 4
+        }
+      ]
+    },
+    {
+      "schemaVersion": 2,
+      "id": "lesson-worked-readings",
+      "type": "lesson",
+      "title": "Thực hành kiểm hình quẻ và bảng hào",
+      "aliases": [],
+      "topicIds": ["topic-learning", "topic-casting", "topic-liuyao-foundations"],
+      "claims": [],
+      "relatedIds": ["lesson-classical-reading", "lesson-liuyao-board"],
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Codex worker — derivative lesson evidence comparison",
+        "reviewedAt": "2026-10-06",
+        "method": "source-comparison",
+        "evidenceClaimIds": [
+          "rule-line-polarity-values-claim",
+          "term-line-value-definition",
+          "term-primary-hexagram-definition",
+          "term-changed-hexagram-definition",
+          "rule-moving-line-change-claim",
+          "claim-tung-to-ly",
+          "hexagram-06-structure",
+          "hexagram-10-structure",
+          "rule-palace-and-markers-claim",
+          "rule-na-jia-assignment-claim",
+          "rule-branch-element-claim",
+          "rule-six-relative-classification-claim",
+          "article-bpct-boards-ly-bpct-board-47-heading",
+          "article-bpct-boards-ly-bpct-board-47-line-1",
+          "article-bpct-boards-ly-bpct-board-47-line-2",
+          "article-bpct-boards-ly-bpct-board-47-line-3",
+          "article-bpct-boards-ly-bpct-board-47-line-4",
+          "article-bpct-boards-ly-bpct-board-47-line-5",
+          "article-bpct-boards-ly-bpct-board-47-line-6",
+          "hexagram-01-structure",
+          "article-bpct-boards-can-bpct-board-01-heading",
+          "article-bpct-boards-can-bpct-board-01-line-1",
+          "article-bpct-boards-can-bpct-board-01-line-2",
+          "article-bpct-boards-can-bpct-board-01-line-3",
+          "article-bpct-boards-can-bpct-board-01-line-4",
+          "article-bpct-boards-can-bpct-board-01-line-5",
+          "article-bpct-boards-can-bpct-board-01-line-6",
+          "hexagram-02-structure",
+          "rule-moving-line-change-change-outcome",
+          "hexagram-06-nhl-overview",
+          "hexagram-06-pbc-overview",
+          "hexagram-06-ntt-overview"
+        ],
+        "evidenceCitationIds": [
+          "citation-bpct-p11-12-technical",
+          "citation-nhl-p72-73-technical",
+          "citation-bpct-ch6-moving-and-still",
+          "citation-nhl-p73-technical",
+          "citation-nhl-p153-commentary",
+          "citation-nhl-p59-61-technical",
+          "citation-nhl-p166-commentary",
+          "citation-bpct-p12-14-technical",
+          "citation-bpct-p14-technical",
+          "citation-bpct-p52-technical",
+          "citation-bpct-p13-technical",
+          "citation-bpct-p8-technical",
+          "citation-bpct-p9-technical",
+          "citation-bpct-board-47-heading",
+          "citation-bpct-board-47-line-1",
+          "citation-bpct-board-47-line-2",
+          "citation-bpct-board-47-line-3",
+          "citation-bpct-board-47-line-4",
+          "citation-bpct-board-47-line-5",
+          "citation-bpct-board-47-line-6",
+          "citation-nhl-p131-commentary",
+          "citation-bpct-board-01-heading",
+          "citation-bpct-board-01-line-1",
+          "citation-bpct-board-01-line-2",
+          "citation-bpct-board-01-line-3",
+          "citation-bpct-board-01-line-4",
+          "citation-bpct-board-01-line-5",
+          "citation-bpct-board-01-line-6",
+          "citation-nhl-p137-commentary",
+          "citation-nhl-p154-commentary",
+          "citation-pbc-p100-101-commentary",
+          "citation-ntt-p196-197-commentary"
+        ],
+        "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
+      },
+      "rights": {
+        "basis": "original-summary-and-structured-facts",
+        "license": "All Rights Reserved"
+      },
+      "sequence": 4,
+      "prerequisiteLessonIds": ["lesson-classical-reading", "lesson-liuyao-board"],
+      "blocks": [
+        {
+          "id": "input-convention",
+          "kind": "prose",
+          "text": "Các bài thực hành dưới đây cho sẵn sáu giá trị phần mềm, theo thứ tự 1–6 từ dưới lên và ruleset liuyao-standard-v1. Đây là quy ước nhập của dự án: 6 âm động, 7 dương tĩnh, 8 âm tĩnh, 9 dương động. Quẻ gốc dùng tính âm/dương trước biến; quẻ biến chỉ đổi các hào động. Khi không có động, trường quẻ biến là null, không phải một quẻ thứ hai có cùng tên.",
+          "supportingClaimIds": [
+            "rule-line-polarity-values-claim",
+            "term-line-value-definition",
+            "term-primary-hexagram-definition",
+            "term-changed-hexagram-definition",
+            "rule-moving-line-change-claim"
+          ],
+          "position": 1
+        },
+        {
+          "id": "tung-to-ly",
+          "kind": "worked-example",
+          "text": "Đầu vào [6, 7, 8, 7, 7, 7]: hào 1 động, còn 2–6 tĩnh. Hình gốc âm–dương–âm / dương–dương–dương là Khảm dưới, Càn trên: Tụng (hexagram-06). Đổi riêng vị trí 1 thành dương được dương–dương–âm / dương–dương–dương: Đoài dưới, Càn trên, tức Lý (hexagram-10), đúng ví dụ Nguyễn Hiến Lê. Bảng gốc thuộc cung Ly, Hỏa, Thế 4, Ứng 1. Theo chiều 1–6, các hàng can chi / hành / Lục thân là Mậu Dần / Mộc / Phụ mẫu; Mậu Thìn / Thổ / Tử tôn; Mậu Ngọ / Hỏa / Huynh đệ; Nhâm Ngọ / Hỏa / Huynh đệ; Nhâm Thân / Kim / Thê tài; Nhâm Tuất / Thổ / Tử tôn. Những hàng này là bảng của Tụng, không phải bảng của Lý.",
+          "supportingClaimIds": [
+            "claim-tung-to-ly",
+            "rule-moving-line-change-claim",
+            "hexagram-06-structure",
+            "hexagram-10-structure",
+            "rule-palace-and-markers-claim",
+            "rule-na-jia-assignment-claim",
+            "rule-branch-element-claim",
+            "rule-six-relative-classification-claim",
+            "article-bpct-boards-ly-bpct-board-47-heading",
+            "article-bpct-boards-ly-bpct-board-47-line-1",
+            "article-bpct-boards-ly-bpct-board-47-line-2",
+            "article-bpct-boards-ly-bpct-board-47-line-3",
+            "article-bpct-boards-ly-bpct-board-47-line-4",
+            "article-bpct-boards-ly-bpct-board-47-line-5",
+            "article-bpct-boards-ly-bpct-board-47-line-6"
+          ],
+          "position": 2
+        },
+        {
+          "id": "static-can",
+          "kind": "worked-example",
+          "text": "Đầu vào [7, 7, 7, 7, 7, 7]: không hào nào động. Càn ở cả hai nửa tạo Thuần Càn (hexagram-01); quẻ biến null. Bảng gốc thuộc cung Càn, Kim, Thế 6, Ứng 3. Đọc bảng gốc từ 1 đến 6: Giáp Tý / Thủy / Tử tôn; Giáp Dần / Mộc / Thê tài; Giáp Thìn / Thổ / Phụ mẫu; Nhâm Ngọ / Hỏa / Quan quỷ; Nhâm Thân / Kim / Huynh đệ; Nhâm Tuất / Thổ / Phụ mẫu. Đây là các nhãn phân loại, không phải lời dự báo.",
+          "supportingClaimIds": [
+            "hexagram-01-structure",
+            "rule-moving-line-change-claim",
+            "rule-palace-and-markers-claim",
+            "rule-na-jia-assignment-claim",
+            "rule-branch-element-claim",
+            "rule-six-relative-classification-claim",
+            "article-bpct-boards-can-bpct-board-01-heading",
+            "article-bpct-boards-can-bpct-board-01-line-1",
+            "article-bpct-boards-can-bpct-board-01-line-2",
+            "article-bpct-boards-can-bpct-board-01-line-3",
+            "article-bpct-boards-can-bpct-board-01-line-4",
+            "article-bpct-boards-can-bpct-board-01-line-5",
+            "article-bpct-boards-can-bpct-board-01-line-6"
+          ],
+          "position": 3
+        },
+        {
+          "id": "all-moving-can",
+          "kind": "worked-example",
+          "text": "Đầu vào [9, 9, 9, 9, 9, 9]: cả sáu vị trí 1–6 động, nhưng hình gốc vẫn là Thuần Càn (hexagram-01). Đổi đồng thời sáu nét dương sang âm được Thuần Khôn (hexagram-02), nội và ngoại đều Khôn. Bảng gốc vẫn là cung Càn, Kim, Thế 6, Ứng 3; can chi, hành và Lục thân ở sáu hàng giống bài Càn tĩnh phía trước, chỉ cờ động khác. Đây là bài ghép quy tắc biến với hai hình quẻ đã có bằng chứng, không gán ý nghĩa tốt/xấu cho sáu hào động.",
+          "supportingClaimIds": [
+            "hexagram-01-structure",
+            "hexagram-02-structure",
+            "rule-moving-line-change-claim",
+            "rule-moving-line-change-change-outcome",
+            "rule-palace-and-markers-claim",
+            "rule-na-jia-assignment-claim",
+            "rule-branch-element-claim",
+            "rule-six-relative-classification-claim",
+            "article-bpct-boards-can-bpct-board-01-heading",
+            "article-bpct-boards-can-bpct-board-01-line-1",
+            "article-bpct-boards-can-bpct-board-01-line-2",
+            "article-bpct-boards-can-bpct-board-01-line-3",
+            "article-bpct-boards-can-bpct-board-01-line-4",
+            "article-bpct-boards-can-bpct-board-01-line-5",
+            "article-bpct-boards-can-bpct-board-01-line-6"
+          ],
+          "position": 4
+        },
+        {
+          "id": "reading-boundary",
+          "kind": "prose",
+          "text": "Khi chuyển sang đọc lời kinh, hãy tra đúng quẻ và vị trí như bài 2, giữ lời Nguyễn Hiến Lê, Phan Bội Châu và Trình Di qua Ngô Tất Tố riêng nhau. Các bảng vừa kiểm chỉ cho hình quẻ, động/tĩnh và quan hệ trên bảng; chúng không biến lời giải cổ điển thành đáp án tự động. Ví dụ Tụng ở đây không phải tư vấn kiện tụng, và động không đồng nghĩa với có lợi.",
+          "supportingClaimIds": [
+            "hexagram-06-nhl-overview",
+            "hexagram-06-pbc-overview",
+            "hexagram-06-ntt-overview",
+            "rule-moving-line-change-change-outcome"
+          ],
+          "position": 5
+        }
+      ]
     }
   ],
   "citations": [
@@ -289514,6 +289978,12 @@
       "title": "Nguồn gốc, phần kinh và phần truyện",
       "track": "classical",
       "status": "pending"
+    },
+    {
+      "id": "topic-learning",
+      "title": "Bài học theo trình tự",
+      "track": "shared",
+      "status": "reviewed"
     }
   ],
   "projectContracts": [
@@ -289528,5 +289998,5 @@
       "sections": ["## Line contract", "## Reading result", "## Stable IDs"]
     }
   ],
-  "snapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:a7446c9cfb1f9816f3409d523efaed7865619ae5e7d3f02e7458773179388dee"
+  "snapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:1eb03d3fbcc676617b8dfea37dfae441576068f5e4ef938198a8eba35a90c288"
 }

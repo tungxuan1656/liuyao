@@ -122,7 +122,7 @@ describe('feat-064 stable project-contract definitions', () => {
   });
 
   it('reports project evidence without marking intentionally empty book citations missing', () => {
-    expect(coverage.records).toMatchObject({ authored: 377, released: 377 });
+    expect(coverage.records).toMatchObject({ authored: 381, released: 381 });
     expect(coverage.claims).toEqual({ total: 9503, missingCitationIds: [] });
     expect(coverage.citations.total).toBe(9744);
     expect(coverage.legacyUnaudited).toEqual({ entities: [], terms: [], rules: [] });

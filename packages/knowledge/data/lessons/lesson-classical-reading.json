@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "id": "lesson-classical-reading",
+  "type": "lesson",
+  "title": "Đọc lời kinh và giữ riêng lời giảng",
+  "aliases": [],
+  "topicIds": ["topic-learning", "topic-hexagrams", "topic-line-commentary"],
+  "claims": [],
+  "relatedIds": ["lesson-foundations"],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — derivative lesson evidence comparison",
+    "reviewedAt": "2026-10-06",
+    "method": "source-comparison",
+    "evidenceClaimIds": [
+      "article-nhl-part2-framing-nhl-part2-framing-kinh-layers",
+      "article-nhl-part2-framing-nhl-part2-framing-selective-wings",
+      "article-nhl-introduction-02-nhl-intro-ch02-tuan-example",
+      "article-nhl-introduction-02-nhl-intro-ch02-xiang-qian",
+      "term-line-position-definition",
+      "term-yang-definition",
+      "hexagram-01-line-1-nhl",
+      "hexagram-01-line-2-nhl",
+      "hexagram-01-line-3-nhl",
+      "hexagram-01-line-4-nhl",
+      "hexagram-01-line-5-nhl",
+      "hexagram-01-line-6-nhl",
+      "hexagram-01-nhl-overview",
+      "hexagram-01-pbc-overview",
+      "hexagram-01-ntt-overview",
+      "article-nhl-introduction-02-nhl-intro-ch02-hetu-zhu",
+      "article-nhl-introduction-02-nhl-intro-ch02-traditional-authorship"
+    ],
+    "evidenceCitationIds": [
+      "citation-nhl-part2-framing-kinh-layers",
+      "citation-nhl-part2-framing-selective-wings",
+      "citation-nhl-intro-ch02-tuan-example",
+      "citation-nhl-intro-ch02-xiang-qian",
+      "citation-nhl-p59-61-technical",
+      "citation-nhl-p132-commentary",
+      "citation-nhl-p133-commentary",
+      "citation-nhl-p133-134-commentary",
+      "citation-nhl-p134-commentary",
+      "citation-nhl-p131-commentary",
+      "citation-pbc-p30-31-commentary",
+      "citation-ntt-p80-81-commentary",
+      "citation-nhl-intro-ch02-hetu-zhu",
+      "citation-nhl-intro-ch02-traditional-authorship"
+    ],
+    "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
+  },
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "sequence": 2,
+  "prerequisiteLessonIds": ["lesson-foundations"],
+  "blocks": [
+    {
+      "id": "passage-types",
+      "kind": "prose",
+      "text": "Trước khi đọc nghĩa, xác định lớp văn bản. Quái từ nói ở cấp quẻ, Hào từ theo từng vị trí; Thoán Truyện là lớp giải quẻ. Đại Tượng dùng hình tượng ở cấp quẻ, Tiểu Tượng giải lời hào. Theo cách giới thiệu của Nguyễn Hiến Lê, kinh văn, lời dịch và phần giảng không phải cùng một lớp; ông chọn trích nhiều truyện chứ không dịch trọn tất cả.",
+      "supportingClaimIds": [
+        "article-nhl-part2-framing-nhl-part2-framing-kinh-layers",
+        "article-nhl-part2-framing-nhl-part2-framing-selective-wings",
+        "article-nhl-introduction-02-nhl-intro-ch02-tuan-example",
+        "article-nhl-introduction-02-nhl-intro-ch02-xiang-qian"
+      ],
+      "position": 1
+    },
+    {
+      "id": "six-positions",
+      "kind": "prose",
+      "text": "Tra lời hào đúng vị trí, không chọn theo thứ tự in từ trên xuống. Với Càn, sáu nhãn theo chiều đi lên là Sơ cửu, Cửu nhị, Cửu tam, Cửu tứ, Cửu ngũ, Thượng cửu. Lục/cửu trong nhãn vẫn là dấu âm/dương của kinh văn, không phải một lệnh biến hào.",
+      "supportingClaimIds": [
+        "term-line-position-definition",
+        "term-yang-definition",
+        "hexagram-01-line-1-nhl",
+        "hexagram-01-line-2-nhl",
+        "hexagram-01-line-3-nhl",
+        "hexagram-01-line-4-nhl",
+        "hexagram-01-line-5-nhl",
+        "hexagram-01-line-6-nhl"
+      ],
+      "position": 2
+    },
+    {
+      "id": "attributed-alternatives",
+      "kind": "prose",
+      "text": "Cùng đọc Càn nhưng cần giữ tên người giải: Nguyễn Hiến Lê chú ý sức cương kiện và đạo đức quân tử; Phan Bội Châu diễn các đức như những chặng phát triển, dùng cây làm ví dụ; Trình Di, qua bản dịch Ngô Tất Tố, tách hình thể trời khỏi tính mạnh mẽ của Càn và giảng các đức qua quá trình của muôn vật. Đây là các góc đọc có chủ thể, không một câu tổng hợp vô danh thay thế cả ba.",
+      "supportingClaimIds": [
+        "hexagram-01-nhl-overview",
+        "hexagram-01-pbc-overview",
+        "hexagram-01-ntt-overview"
+      ],
+      "position": 3
+    },
+    {
+      "id": "authorship-limits",
+      "kind": "prose",
+      "text": "Ngay cả cách gán tác giả cũng có ý kiến khác: Nguyễn Hiến Lê thuật cách Chu Hy phân lời kinh và Hệ Từ Truyện, rồi phản biện căn cứ của cách phân ấy và nghi nhiều người viết. Giữ dấu “được thuật” và người phát biểu; không biến truyền gán thành tên tác giả đã được chứng minh.",
+      "supportingClaimIds": [
+        "article-nhl-introduction-02-nhl-intro-ch02-hetu-zhu",
+        "article-nhl-introduction-02-nhl-intro-ch02-traditional-authorship"
+      ],
+      "position": 4
+    }
+  ]
+}

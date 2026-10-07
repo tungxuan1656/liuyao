@@ -43,7 +43,7 @@
       "items": {
         "$ref": "#/$defs/claim"
       },
-      "minItems": 1
+      "minItems": 0
     },
     "relatedIds": {
       "type": "array",
@@ -1764,6 +1764,9 @@
       },
       "else": {
         "properties": {
+          "claims": {
+            "minItems": 1
+          },
           "sequence": false,
           "prerequisiteLessonIds": false,
           "blocks": false
