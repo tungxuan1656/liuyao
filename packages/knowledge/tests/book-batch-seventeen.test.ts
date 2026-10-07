@@ -204,7 +204,7 @@ describe('feat-050 BPCT chapter 6 sentences 57–69', () => {
       location: { pdfPageStart: 100, pdfPageEnd: 100 },
     });
     expect(article.review.note).toMatch(/No other attached notes, diagrams or tables/);
-    expect(registry.groups).toHaveLength(3551);
+    expect(registry.groups).toHaveLength(3981);
     expect(registry.exclusions).toHaveLength(17);
   });
 });

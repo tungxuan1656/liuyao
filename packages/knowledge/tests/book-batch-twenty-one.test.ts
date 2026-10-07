@@ -277,9 +277,9 @@ describe('feat-054 release without audit/certification', () => {
     expect(audit.complete).toBe(false);
     expect(audit.gates.sourceReview.status).toBe('closed');
     expect(audit.gates.certification.status).toBe('closed');
-    expect(coverage.records.released).toBe(321);
-    expect(coverage.claims.total).toBe(8437);
-    expect(coverage.citations.total).toBe(8683);
+    expect(coverage.records.released).toBe(347);
+    expect(coverage.claims.total).toBe(8867);
+    expect(coverage.citations.total).toBe(9113);
     expect(manifest.nextBatch.note).toMatch(/feat-061.*Hệ Từ Thượng.*PBC.*NHL/);
   });
 });

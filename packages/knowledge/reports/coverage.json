@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 321, "released": 321, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 8437, "missingCitationIds": [] },
-  "citations": { "total": 8683 },
+  "records": { "authored": 347, "released": 347, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 8867, "missingCitationIds": [] },
+  "citations": { "total": 9113 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -126,7 +126,33 @@
         "article-nhl-introduction-07",
         "article-nhl-part2-framing",
         "article-nhl-retrospective",
-        "article-nhl-front-end-accounting"
+        "article-nhl-front-end-accounting",
+        "article-nhl-he-tu-thuong-01",
+        "article-nhl-he-tu-thuong-02",
+        "article-nhl-he-tu-thuong-03",
+        "article-nhl-he-tu-thuong-04",
+        "article-nhl-he-tu-thuong-05",
+        "article-nhl-he-tu-thuong-06",
+        "article-nhl-he-tu-thuong-07",
+        "article-nhl-he-tu-thuong-08",
+        "article-nhl-he-tu-thuong-09",
+        "article-nhl-he-tu-thuong-10",
+        "article-nhl-he-tu-thuong-11",
+        "article-nhl-he-tu-thuong-12",
+        "article-nhl-he-tu-thuong-00",
+        "article-pbc-he-tu-thuong-00",
+        "article-pbc-he-tu-thuong-01",
+        "article-pbc-he-tu-thuong-02",
+        "article-pbc-he-tu-thuong-03",
+        "article-pbc-he-tu-thuong-04",
+        "article-pbc-he-tu-thuong-05",
+        "article-pbc-he-tu-thuong-07",
+        "article-pbc-he-tu-thuong-08",
+        "article-pbc-he-tu-thuong-10",
+        "article-pbc-he-tu-thuong-11",
+        "article-pbc-he-tu-thuong-12",
+        "article-pbc-he-tu-thuong-06",
+        "article-pbc-he-tu-thuong-09"
       ]
     },
     {
@@ -1772,9 +1798,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 5327,
+        "required": 5783,
         "current": 84,
-        "missing": 5243,
+        "missing": 5699,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1782,9 +1808,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 3551 },
-        { "code": "missing-decision", "count": 5243 },
-        { "code": "released-claim-coverage-incomplete", "count": 8240 }
+        { "code": "unresolved-source-discovery", "count": 3981 },
+        { "code": "missing-decision", "count": 5699 },
+        { "code": "released-claim-coverage-incomplete", "count": 8670 }
       ]
     },
     "certification": {
@@ -1792,7 +1818,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 5327,
+        "required": 5783,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

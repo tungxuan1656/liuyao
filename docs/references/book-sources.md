@@ -1788,3 +1788,75 @@ Original summaries and structured observations are released, not copied prose,
 source images, a diagram DSL, new calendar/interpretation logic or UI behavior.
 Prior authored records/citations remain semantically unchanged. Global layer
 rosters,17 exclusions and source-audit/certification gates stay unresolved/closed.
+
+<a id="feat-061-he-tu-thuong-source-comparison"></a>
+
+## Feat-061 Hệ Từ Thượng source comparison
+
+The worker compared every assigned NHL334–362 and PBC601–630 page's complete
+PyMuPDF extraction with its individually opened full-page PNG (1.5x,918×1188).
+All59 pages, dense transitions and footers included, were opened individually;
+no contact sheet or prior navigation anchor substitutes for this inspection.
+The local `/tmp/feat061/inspection-artifacts.json` binds image/text hashes and
+render dimensions to the supplied393-/655-page books. Supplied fingerprints
+remain those in [sources.json](../../packages/knowledge/data/sources.json).
+The [passage register](../reviews/knowledge/source-inventory.md#feat-061-nhlpbc-he-tu-thuong-passage-register)
+owns each chapter/layer/notice disposition and released mapping. This is batch
+source comparison, not whole-book review, feat-092 audit or certification.
+
+NHL334 is a title, not chapter prose; its twelve chapters begin335 and end362.
+All printed folios in this interval match PDF page numbers. PBC601 contains
+introductory framing and chapter1. Shared chapter boundaries605,608,614,620,623
+are retained; PBC has no visible printed folio here. No diagrams or tables occur.
+PBC619/623 explicitly mark chapters6/9 Khuyết. NHL346/352 contain text and notes
+reporting PBC's omissions; those reports do not make NHL absent. PBC8 selects3–6,
+but5 is only a referral to Trung Phu2;6 is extant and622 refers five other
+examples to earlier Kinh passages. Those external attachments are not newly
+certified here. PBC10 selects5–6;11 selects1,2,4 with even1/2 reduced against
+NHL;12 says five missing and two translated, with only4/7 present. No missing
+text is borrowed from NHL or the separate NTT book.
+
+- Chapter2 NHL has six labels versus PBC seven: its4 includes what PBC splits
+  into4/5. NHL's order explanation is a process; PBC6 illustrates quẻ order.
+- Chapter5 NHL has nine labels, PBC eight; chiêm/sự at NHL8 is absent in PBC,
+  whose8 is âm dương bất trắc. NHL's PBC-omission statement remains NHL attribution.
+- NHL6/1 reads tĩnh but translates gần; no nhĩ replacement is supplied.
+  PBC10/6 reads bất tật/bất hành but the explanation ends with Bất tận/bất thành
+  at624; the source wording is not repaired. NHL1 reads đăng; PBC1 reads đãng.
+  NHL2/6 prints tự nhiên hữu chi in its
+  reading while its translation and PBC2/7 describe heavenly help. NHL7 reads
+  thành tín, translates tính; PBC7 reads thành tính. None is silently harmonized.
+- PBC3/3 reads biến cát hung versus NHL biện. PBC3/4's explanation ends tồn hồ
+  giới although its second original/reading clause says hối. Keep the difference.
+- NHL9/1's image reads tám at the earth8 clause where extraction says tam;
+  summaries follow the image. NHL9/5's Chu Hi explanation actually prints
+  Kinh Thi; do not replace it with Kinh Dịch. Arithmetic192×36+192×24=11520 is
+  attributed reasoning, not proof of the claimed correspondence to all things.
+- NHL9's alternatives keep Chu Hi pairings, Wilhelm/Legge readings and
+  Nguyễn Duy Tỉnh (printed Tinh at354) distinct. NHL admits not understanding
+  several numerological explanations; omitted derivations remain omitted.
+- NHL11 prints7 twice before9: children7a/7b preserve source order, not a repaired8.
+  Chu Hi's suspected missing word after lập is not restored. NHL12/5 explicitly
+  declines to repeat8/1–2; that notice is present, but no new independent source
+  reading/translation is fabricated. Suspected misplaced12/1, repeated Tử viết,
+  and proposed removal of tứ at11/9 remain NHL opinions, not source corrections.
+
+NHL commentary contrasts Chu Hi, Phan Bội Châu, R.Wilhelm, J.Legge and Nguyễn
+Duy Tỉnh with its own translation; named quotes are only consulted via NHL.
+PBC's separate cited voices include Trang Tử, thầy Thiệu, Trung Dung, Luận Ngữ,
+Mạnh Tử, Tuân Tử, Đổng Trọng Thư, Dương Hùng, Lão Tử, vua Thuấn and Dương
+Thành Trai. General/unnamed Buddhist comparisons and unnamed books do not acquire
+invented authors. Tử viết is traditional Confucius attribution, not verified
+history. Original/reading, NHL marked translation/notes and PBC integrated
+Vietnamese explanation have explicit layer dispositions, even when on one page.
+
+The seven NHL8 examples and NHL12/1 are new summaries of these actual passages,
+not mutations of existing quẻ claims/citations. Social/gender/class rankings,
+sexual-victim blame in Giải3, coercion, spiritual/medical implications and
+PBC's killing-one-to-save-many rationale remain historical positions, not
+modern guidance, justification or assertions about real people. Forecast and
+science claims are not independently validated. Calendar/UI/core behavior is
+unchanged. Original summaries, not copied prose/images, are released. Prior
+records/citations and17 exclusions remain semantically unchanged. Source rights,
+global layer discovery, source audit and independent verification/certification
+retain their existing unresolved/closed-gate status.
