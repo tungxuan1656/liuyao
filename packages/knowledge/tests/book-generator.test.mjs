@@ -30,6 +30,8 @@ let generated;
 let releaseJson;
 let auditStatus;
 let coverageReport;
+let authoringReport;
+let originalAuthoring;
 let originalAudit;
 let originalCoverage;
 let originalRelease;
@@ -88,6 +90,7 @@ describe.sequential('generated corpus validation', () => {
     releaseJson = path.join(temporaryPackage, 'src/book-release.generated.json');
     auditStatus = path.join(temporaryPackage, 'reports/audit-status.json');
     coverageReport = path.join(temporaryPackage, 'reports/coverage.json');
+    authoringReport = path.join(temporaryPackage, 'reports/authoring-crosswalk.json');
   }, 120_000);
 
   afterAll(() => rmSync(temporary, { recursive: true, force: true }));
@@ -98,6 +101,7 @@ describe.sequential('generated corpus validation', () => {
     const original = readFileSync(generated, 'utf8');
     originalAudit = readFileSync(auditStatus, 'utf8');
     originalCoverage = readFileSync(coverageReport, 'utf8');
+    originalAuthoring = readFileSync(authoringReport, 'utf8');
     originalRelease = readFileSync(releaseJson, 'utf8');
     originalWrapper = readFileSync(generated, 'utf8');
     expect((await run('--check')).status).toBe(0);
@@ -105,6 +109,8 @@ describe.sequential('generated corpus validation', () => {
     expect(readFileSync(auditStatus, 'utf8')).toBe(originalAudit);
     writeFileSync(auditStatus, originalAudit);
     expect(readFileSync(coverageReport, 'utf8')).toBe(originalCoverage);
+    expect(readFileSync(authoringReport, 'utf8')).toBe(originalAuthoring);
+    expect(JSON.parse(originalAuthoring).counts.discoveryUnresolved).toBe(4638);
     const audit = JSON.parse(originalAudit);
     expect(audit.registry.counts).toMatchObject({
       overviewCells: 192,
@@ -133,6 +139,13 @@ describe.sequential('generated corpus validation', () => {
   }, 120_000);
 
   it('rejects stale audit state and invalid registry inputs', async () => {
+    writeFileSync(authoringReport, `${originalAuthoring.trim()} `);
+    const staleAuthoring = await run('--check');
+    expect(staleAuthoring.status).not.toBe(0);
+    expect(staleAuthoring.stderr).toContain(
+      'Stale generated corpus output: reports/authoring-crosswalk.json',
+    );
+    writeFileSync(authoringReport, originalAuthoring);
     writeFileSync(auditStatus, `${originalAudit.trim()} `);
     const staleAudit = await run('--check');
     expect(staleAudit.status).not.toBe(0);
