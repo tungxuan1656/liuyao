@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-062 merged
+
+**State**: done; merged to `main` in PR #90 at `f08dd82241cf505c3e00c9b69497ea8d63ccadb0`; reviewed exact head `2d65e1e28aadb1ceb98c5326b5c740e1f7e95242`.
+**Done**: Added24 articles for NHL Hệ Từ Hạ PDF363–388 and PBC PDF631–648, with370 source-attributed claims/citations and370 child dispositions. All44 assigned pages were individually image-inspected and recorded. NHL and PBC states remain distinct; PBC's `lược trích`, missing sections and referrals are not transferred to NHL or reconstructed.
+**Evidence**: Independent exact-head review returned `OK with notes`, no findings. Verify run `37562090969`/job `112601424630`, Cloudflare Pages and GitGuardian passed. Pre-push `./init.sh` passed6,027 tests (5,846 knowledge,181 core); corpus/books validation, package exports, preservation,376 focused cases and199 offline documentation-route checks passed.
+**Coverage**: Release now has371 records,9,237 claims,9,483 citations; all347 prior records and9,113 citations remain byte-identical. Registry revision56 has4,351 groups and17 exclusions. The12,364,549-byte integrated JS remains under the unchanged12 MiB cap by218,363 bytes; all18 precache entries remain. Audit092, global source review, corpus verification/certification and rights remain unresolved/closed. No source attachment coverage, efficacy or modern advice is claimed.
+**Blockers**: none for feat-062.
+**Next**: Continue with selected feat-063 from updated `main`.
+
 ## 2026-10-07 — feat-061 merged
 
 **State**: done and merged to `main` in PR #89 at `eb66085cc62686686e388e23e7a2b5e4ba5f9ac4`; reviewed exact head `125a3a4928d3c917db3338a1bfa9df28bd5a13f7`.

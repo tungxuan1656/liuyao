@@ -66,7 +66,10 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/062-nhl-pbc-he-tu-ha`; implementation and local verification complete,pending independent exact-head acceptance review.
-- Evidence: Both acceptance blocks pass local authoring/source-comparison checks; see implementation evidence and durable worker report `/tmp/feat062-worker-report.md`. Source audit092,global review and certification gates remain closed. No push,PR,canonical feature-index/progress update or final done handoff is performed by the worker.
+- State: done; merged to `main` in PR #90 at `f08dd82241cf505c3e00c9b69497ea8d63ccadb0`, from reviewed head `2d65e1e28aadb1ceb98c5326b5c740e1f7e95242`.
+- Evidence: Fresh exact-head independent review returned `OK with notes`, no findings. The review verified all44 individual page-image/text inspection records, edition-specific boundaries and omissions, preservation, and closed audit gates. Verify run `37562090969`/job `112601424630`, Cloudflare Pages, and GitGuardian passed. `./init.sh` passed6,027 tests (5,846 knowledge,181 core); corpus/books, exports, focused tests, preservation and199 documentation-route/offline checks passed.
+- Coverage:24 articles add370 claims/citations and370 child dispositions for all12 NHL/PBC chapter pairs. NHL chapters1–12 remain present even where NHL says PBC omitted a chapter. PBC's `lược trích`, missing sections and referrals remain specific to that edition; no text was reconstructed or borrowed from NHL/NTT. Total release is371 records,9,237 claims,9,483 citations; prior347 records/9,113 citations remain byte-identical.
+- PWA: Integrated JS is12,364,549 bytes under the unchanged12 MiB cap by218,363 bytes; all18 precache entries remain.
+- Open gates: Source audit092, global review, independent corpus verification/certification and source rights remain unresolved/closed. Referred Kinh attachments are not newly certified; no modern advice or predictive efficacy is claimed.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Parent runs the required independent acceptance review against final HEAD and the44-page inspection evidence; then owns delivery and canonical post-merge state.
+- Next: Continue with selected feat-063 from updated `main`.
