@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 347, "released": 347, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 8867, "missingCitationIds": [] },
-  "citations": { "total": 9113 },
+  "records": { "authored": 359, "released": 359, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 9075, "missingCitationIds": [] },
+  "citations": { "total": 9321 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -152,7 +152,19 @@
         "article-pbc-he-tu-thuong-11",
         "article-pbc-he-tu-thuong-12",
         "article-pbc-he-tu-thuong-06",
-        "article-pbc-he-tu-thuong-09"
+        "article-pbc-he-tu-thuong-09",
+        "article-nhl-he-tu-ha-01",
+        "article-nhl-he-tu-ha-02",
+        "article-nhl-he-tu-ha-03",
+        "article-nhl-he-tu-ha-04",
+        "article-nhl-he-tu-ha-05",
+        "article-nhl-he-tu-ha-06",
+        "article-pbc-he-tu-ha-01",
+        "article-pbc-he-tu-ha-02",
+        "article-pbc-he-tu-ha-06",
+        "article-pbc-he-tu-ha-03",
+        "article-pbc-he-tu-ha-04",
+        "article-pbc-he-tu-ha-05"
       ]
     },
     {
@@ -1798,9 +1810,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 5783,
+        "required": 6004,
         "current": 84,
-        "missing": 5699,
+        "missing": 5920,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1808,9 +1820,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 3981 },
-        { "code": "missing-decision", "count": 5699 },
-        { "code": "released-claim-coverage-incomplete", "count": 8670 }
+        { "code": "unresolved-source-discovery", "count": 4189 },
+        { "code": "missing-decision", "count": 5920 },
+        { "code": "released-claim-coverage-incomplete", "count": 8878 }
       ]
     },
     "certification": {
@@ -1818,7 +1830,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 5783,
+        "required": 6004,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

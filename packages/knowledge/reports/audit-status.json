@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "contentSnapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:95c80cdd23b6c11ae78942078a96ea50c07e793e2b6cca6507024ebf162d2d77",
+  "contentSnapshotIdentity": "liuyao-knowledge-snapshot-v1:sha256:741f1a1ba53d83d510dfcad7bd629b4ad34b4f9745ee94f4ec5de647958d12ab",
   "registry": {
-    "sha256": "c8554920e2a783625a6acb8208932cdef95cc5d2ea8fa99fb928d4219e1e1605",
-    "revision": 55,
+    "sha256": "0ed58b616c27bbb66f38053717a0d4c0f4bb707cb4a41e47304aab80fd624d06",
+    "revision": 56,
     "counts": {
       "overviewCells": 192,
       "positionCells": 1152,
       "hexagramCells": 1344,
       "specialPassages": 6,
-      "groups": 3981,
+      "groups": 4189,
       "exclusions": 17
     }
   },
@@ -19,9 +19,9 @@
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 5783,
+        "required": 6004,
         "current": 84,
-        "missing": 5699,
+        "missing": 5920,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -29,9 +29,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 3981 },
-        { "code": "missing-decision", "count": 5699 },
-        { "code": "released-claim-coverage-incomplete", "count": 8670 }
+        { "code": "unresolved-source-discovery", "count": 4189 },
+        { "code": "missing-decision", "count": 5920 },
+        { "code": "released-claim-coverage-incomplete", "count": 8878 }
       ]
     },
     "certification": {
@@ -39,7 +39,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 5783,
+        "required": 6004,
         "missing": 1,
         "stale": 0,
         "rejected": 0,
@@ -79,21 +79,21 @@
     "feat-089": { "required": 150, "current": 0 },
     "feat-090": { "required": 303, "current": 0 },
     "feat-091": { "required": 1138, "current": 0 },
-    "feat-092": { "required": 1262, "current": 0 }
+    "feat-092": { "required": 1470, "current": 0 }
   },
   "totals": {
     "releasedClaimsCovered": 197,
-    "releasedClaimsRequired": 8867,
+    "releasedClaimsRequired": 9075,
     "overviewCells": 192,
     "positionCells": 1152,
     "hexagramCells": 1344,
     "specialPassages": 6,
-    "groups": 3981,
+    "groups": 4189,
     "exclusions": 17,
     "acceptedDecisions": 84,
     "approvedDecisions": 0,
     "currentDecisions": 84,
     "rejectedDecisions": 0,
-    "unresolvedDecisions": 5699
+    "unresolvedDecisions": 5920
   }
 }
