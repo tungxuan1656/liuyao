@@ -80,8 +80,29 @@ Implementation evidence is recorded; independent acceptance review and final fea
 - Question: How should the six legacy definitions be replaced without implying that a book establishes software fields or conventions?
 - Decision: Preserve the six stable IDs in V2 `term` and `rule` records. Mark their claims as `project-convention` with empty book citation lists; use project evidence and register only the accepted contract sections in `manifest.projectContracts`.
 - Alternatives: Keep the entries in the unaudited legacy catalog, assign new IDs, or attach book citations. Rejected: legacy entries do not satisfy V2 review requirements; new IDs would break existing references; no supplied passage is evidence for these software contracts.
-- Evidence: `docs/design-docs/domain-model.md` defines the V1 line/input/result contracts; `docs/design-docs/calculation-pipeline.md` defines deterministic and changed-hexagram behavior; `docs/product-specs/reading-flow.md` defines the V1 casting-to-line-value mapping. Use revision `v1` for the relevant sections in each document.
+- Evidence: `docs/design-docs/domain-model.md` `## Stable IDs`, `## Line contract`, and `## Reading result`; `docs/design-docs/calculation-pipeline.md` `## Rules` and `## Changed hexagram`. Register revision `v1` for these exact headings. No casting-input, presentation, or book-doctrine claim requires `reading-flow.md` or a book source.
 - Effect: No calculation, UI, calendar, or interpretive behavior changes. Book-source auditing and certification remain separate and open.
+
+### 2026-10-07 — Keep software definitions outside the book-source registry
+
+- Question: Where should the six software-only definitions be tracked when `expected-units.json` supports only edition-bound source groups?
+- Decision: Record the no-book-source disposition here and represent the accepted specification route in `manifest.projectContracts`. Do not add synthetic book units, change the source inventory, or alter expected-unit groups, layers, exclusions, or book obligations.
+- Alternatives: Invent source-page groups or widen the edition-bound registry to cover project contracts. Rejected because neither creates book evidence; changing the registry would mix project contracts with source-unit coverage.
+- Effect: The six claims contribute to project-convention coverage and audit obligations, while book-unit counts and source-review state stay unchanged.
+
+### 2026-10-07 — Align project evidence schema with the existing V2 contract
+
+- Question: How can reviewed project-convention records use the existing `evidenceClaimIds` contract without fabricated citations?
+- Decision: In the V2 JSON schema, make `evidenceCitationIds` optional but nonempty when present; require reviewed records to supply nonempty citation evidence or claim evidence. Preserve the V1 schema and the cross-file requirement that book claims have citations and valid citation-review coverage.
+- Alternatives: Invent book citations, change only the six records, or relax citation checks for book claims. Rejected because citations cannot substantiate software conventions and book evidence requirements must remain enforced.
+- Effect: Existing V2 project-evidence support is schema-valid; records with no review evidence remain invalid.
+
+### 2026-10-07 — Document the existing result ruleset field
+
+- Question: How should the `rule-reading-result-fields` claim represent `ruleset` when the domain-model result list omitted it?
+- Decision: Add the already implemented `ReadingResult.ruleset` field to `docs/design-docs/domain-model.md` `## Reading result`, matching `packages/liuyao-core/src/contracts.ts`.
+- Alternatives: Omit the field from the stable legacy definition or infer it from unrelated prose. Rejected because the core contract already defines it and the owning domain document should match.
+- Effect: Documentation now matches the existing V1 type; runtime behavior is unchanged.
 
 ## Handoff
 
