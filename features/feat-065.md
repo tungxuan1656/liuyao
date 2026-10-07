@@ -14,6 +14,19 @@ Complete this source group with reviewed records and explicit exclusions.
 
 New interpretation, calendar, or UI behavior.
 
+## Accepted design
+
+Author four V2 lesson records, one for each acceptance group, using original Vietnamese prose supported by existing released, reviewed claims:
+
+| Sequence | Lesson ID                  | Scope                                                            | Prerequisites        |
+| -------- | -------------------------- | ---------------------------------------------------------------- | -------------------- |
+| 1        | `lesson-foundations`       | Polarity, positions, trigrams, and hexagram building             | None                 |
+| 2        | `lesson-classical-reading` | Passage types, six positions, and attributed author alternatives | `lesson-foundations` |
+| 3        | `lesson-liuyao-board`      | Casting, palaces, Thế/Ứng, Na Jia, elements, relatives           | `lesson-foundations` |
+| 4        | `lesson-worked-readings`   | Explicit inputs, moving lines, changed quẻ, and board facts      | Lessons 2 and 3      |
+
+Keep the four records ordered by sequence 1–4. Each explanatory or worked-example block must name existing supporting claim IDs; lesson review evidence must cover those claims. Worked examples state explicit inputs and expected outputs, which focused tests independently check against deterministic core results. Do not add source claims or new source units. This content is derivative learning material, not new interpretation, calculation behavior, UI, or calendar behavior.
+
 ## Acceptance
 
 - [ ] Foundations: polarity, positions, trigrams, construction.
@@ -34,9 +47,11 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Confirm dependencies and source boundaries.
-2. Review each unit, record supported decisions, and commit each coherent checkpoint.
-3. Verify all acceptance items and record the handoff.
+1. Select existing released, reviewed claim IDs for each lesson block; add no new source claims or source units.
+2. Author the four V2 lesson records with sequence, evidence, and the approved prerequisite graph.
+3. Add worked-reading fixtures with explicit inputs and expected facts; independently verify outcomes against deterministic core results.
+4. Regenerate manifest coverage/release artifacts and test evidence closure, ordering, prerequisite validation, and public exports.
+5. Run the verification commands and record final acceptance evidence.
 
 ## Verify
 
@@ -46,7 +61,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active on `feat/065-ordered-lessons-worked-examples`; base `1de085b`.
+- Evidence: Dependencies feat-064 and feat-101 are done. User-approved four-lesson design and inline implementation plan are recorded above. No implementation verification yet.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Map reviewed claim support to the four lessons, then author the V2 records and verified worked examples.
