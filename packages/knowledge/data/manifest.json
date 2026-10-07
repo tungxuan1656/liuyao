@@ -45,7 +45,8 @@
     "citations/batch-twenty-three-advanced.json",
     "citations/batch-twenty-four-advanced.json",
     "citations/bpct-casting-criticisms.json",
-    "citations/nhl-introduction-framing.json"
+    "citations/nhl-introduction-framing.json",
+    "citations/ntt-pbc-introductions.json"
   ],
   "recordFiles": [
     "trigrams/trigram-heaven.json",
@@ -345,7 +346,30 @@
     "foundations/nhl-introduction-07.json",
     "foundations/nhl-part2-framing.json",
     "foundations/nhl-retrospective.json",
-    "foundations/nhl-front-end-accounting.json"
+    "foundations/nhl-front-end-accounting.json",
+    "foundations/pbc-cover-title-portrait.json",
+    "foundations/pbc-contents.json",
+    "foundations/pbc-editorial-foreword.json",
+    "foundations/pbc-edition-history.json",
+    "foundations/pbc-image-plates.json",
+    "foundations/pbc-author-preface.json",
+    "foundations/pbc-pham-le-and-cuong-linh.json",
+    "foundations/pbc-thuyet-quai.json",
+    "foundations/pbc-tu-quai.json",
+    "foundations/pbc-tap-quai.json",
+    "foundations/pbc-afterword.json",
+    "foundations/pbc-endnotes.json",
+    "foundations/ntt-cover.json",
+    "foundations/ntt-title.json",
+    "foundations/ntt-intro-index.json",
+    "foundations/ntt-editorial-introduction.json",
+    "foundations/ntt-translator-introduction.json",
+    "foundations/ntt-trinh-di-preface.json",
+    "foundations/ntt-chu-xi-diagrams.json",
+    "foundations/ntt-dich-thuyet-cuong-linh.json",
+    "foundations/ntt-cuong-linh-notes.json",
+    "foundations/ntt-upper-divider.json",
+    "foundations/ntt-colophon-938.json"
   ],
   "releaseIds": [
     "trigram-heaven",
@@ -645,7 +669,30 @@
     "article-nhl-introduction-07",
     "article-nhl-part2-framing",
     "article-nhl-retrospective",
-    "article-nhl-front-end-accounting"
+    "article-nhl-front-end-accounting",
+    "article-pbc-cover-title-portrait",
+    "article-pbc-contents",
+    "article-pbc-editorial-foreword",
+    "article-pbc-edition-history",
+    "article-pbc-image-plates",
+    "article-pbc-author-preface",
+    "article-pbc-pham-le-and-cuong-linh",
+    "article-pbc-thuyet-quai",
+    "article-pbc-tu-quai",
+    "article-pbc-tap-quai",
+    "article-pbc-afterword",
+    "article-pbc-endnotes",
+    "article-ntt-cover",
+    "article-ntt-title",
+    "article-ntt-intro-index",
+    "article-ntt-editorial-introduction",
+    "article-ntt-translator-introduction",
+    "article-ntt-trinh-di-preface",
+    "article-ntt-chu-xi-diagrams",
+    "article-ntt-dich-thuyet-cuong-linh",
+    "article-ntt-cuong-linh-notes",
+    "article-ntt-upper-divider",
+    "article-ntt-colophon-938"
   ],
   "topics": [
     {
@@ -707,6 +754,6 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "feat-059 đối chiếu NHL lời đầu/chương1–7 PDF10–126,framing127–130 và hồi tưởng389–392; front1–9/393 accounted,388 thuộc Hệ Từ Hạ. feat-060 tiếp PBC/NTT mở đầu,các hình và framing. Audit092/verification/certification còn mở; không tính lịch hay diễn giải tự động."
+    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 tiếp Hệ Từ Thượng PBC601–630 và NHL334–362. Audit092/verification/certification còn mở."
   }
 }

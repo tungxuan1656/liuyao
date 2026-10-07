@@ -97,7 +97,7 @@ describe('feat-050 BPCT chapter 6 sentences 57–69', () => {
     expect(getBookSource('source-book-bpct')?.editions[0]?.sha256).toBe(
       '713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a',
     );
-    expect(manifest.nextBatch.note).toMatch(/feat-059/);
+    expect(manifest.nextBatch.note).toMatch(/feat-061.*Hệ Từ Thượng.*PBC.*NHL/);
   });
 
   it('accounts for all twelve timing cases without a precedence or date algorithm', () => {
@@ -204,7 +204,7 @@ describe('feat-050 BPCT chapter 6 sentences 57–69', () => {
       location: { pdfPageStart: 100, pdfPageEnd: 100 },
     });
     expect(article.review.note).toMatch(/No other attached notes, diagrams or tables/);
-    expect(registry.groups).toHaveLength(3074);
+    expect(registry.groups).toHaveLength(3551);
     expect(registry.exclusions).toHaveLength(17);
   });
 });

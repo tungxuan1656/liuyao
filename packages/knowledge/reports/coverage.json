@@ -3,9 +3,9 @@
   "corpusId": "book-backed-knowledge-v1",
   "complete": false,
   "evidenceNote": "Counts describe authored, source-compared content. Codex review is recorded; independent specialist approval is not claimed.",
-  "records": { "authored": 298, "released": 298, "draftIds": [], "disputedIds": [] },
-  "claims": { "total": 7950, "missingCitationIds": [] },
-  "citations": { "total": 8196 },
+  "records": { "authored": 321, "released": 321, "draftIds": [], "disputedIds": [] },
+  "claims": { "total": 8437, "missingCitationIds": [] },
+  "citations": { "total": 8683 },
   "trigrams": { "reviewed": 8, "expected": 8 },
   "hexagrams": {
     "reviewed": 64,
@@ -538,7 +538,31 @@
       "title": "Nguồn gốc, phần kinh và phần truyện",
       "track": "classical",
       "status": "pending",
-      "releasedRecordIds": []
+      "releasedRecordIds": [
+        "article-pbc-cover-title-portrait",
+        "article-pbc-contents",
+        "article-pbc-editorial-foreword",
+        "article-pbc-edition-history",
+        "article-pbc-image-plates",
+        "article-pbc-author-preface",
+        "article-pbc-pham-le-and-cuong-linh",
+        "article-pbc-thuyet-quai",
+        "article-pbc-tu-quai",
+        "article-pbc-tap-quai",
+        "article-pbc-afterword",
+        "article-pbc-endnotes",
+        "article-ntt-cover",
+        "article-ntt-title",
+        "article-ntt-intro-index",
+        "article-ntt-editorial-introduction",
+        "article-ntt-translator-introduction",
+        "article-ntt-trinh-di-preface",
+        "article-ntt-chu-xi-diagrams",
+        "article-ntt-dich-thuyet-cuong-linh",
+        "article-ntt-cuong-linh-notes",
+        "article-ntt-upper-divider",
+        "article-ntt-colophon-938"
+      ]
     },
     {
       "id": "topic-learning",
@@ -1742,15 +1766,15 @@
   "nextBatch": {
     "hexagramIds": [],
     "topicIds": ["topic-liuyao-advanced"],
-    "note": "feat-059 đối chiếu NHL lời đầu/chương1–7 PDF10–126,framing127–130 và hồi tưởng389–392; front1–9/393 accounted,388 thuộc Hệ Từ Hạ. feat-060 tiếp PBC/NTT mở đầu,các hình và framing. Audit092/verification/certification còn mở; không tính lịch hay diễn giải tự động."
+    "note": "feat-060 đối chiếu NTT PDF1–79/938 và PBC1–26/649–655: mở đầu,đồ thuyết,Cương Lĩnh,chú và end matter; không phục dựng chương khuyết hay thuật toán. feat-061 tiếp Hệ Từ Thượng PBC601–630 và NHL334–362. Audit092/verification/certification còn mở."
   },
   "audit": {
     "sourceReview": {
       "status": "closed",
       "counts": {
-        "required": 4809,
+        "required": 5327,
         "current": 84,
-        "missing": 4725,
+        "missing": 5243,
         "stale": 0,
         "rejected": 0,
         "specialistRejected": 0,
@@ -1758,9 +1782,9 @@
       },
       "reasons": [
         { "code": "unresolved-layer-roster", "count": 19 },
-        { "code": "unresolved-source-discovery", "count": 3074 },
-        { "code": "missing-decision", "count": 4725 },
-        { "code": "released-claim-coverage-incomplete", "count": 7753 }
+        { "code": "unresolved-source-discovery", "count": 3551 },
+        { "code": "missing-decision", "count": 5243 },
+        { "code": "released-claim-coverage-incomplete", "count": 8240 }
       ]
     },
     "certification": {
@@ -1768,7 +1792,7 @@
       "state": "missing",
       "counts": {
         "current": 0,
-        "required": 4809,
+        "required": 5327,
         "missing": 1,
         "stale": 0,
         "rejected": 0,

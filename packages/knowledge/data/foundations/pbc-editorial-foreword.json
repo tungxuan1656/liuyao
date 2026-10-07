@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "id": "article-pbc-editorial-foreword",
+  "type": "article",
+  "title": "PBC — Lời giới thiệu của Huỳnh Thúc Kháng",
+  "aliases": [],
+  "topicIds": ["topic-classical-traditions"],
+  "claims": [
+    {
+      "id": "article-pbc-editorial-foreword-pbc-editorial-foreword-evaluation",
+      "kind": "author-interpretation",
+      "text": "Huỳnh Thúc Kháng khen bản diễn giải thiên về vũ trụ quan/nhân sinh quan thay vì chỉ bói số, trong đối chiếu Đông/Tây thời ông. Lời khen không xác nhận hiệu lực bói hoặc lịch sử độc lập.",
+      "citationIds": ["citation-pbc-editorial-foreword-evaluation"],
+      "attribution": {
+        "author": "Huỳnh Thúc Kháng"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    },
+    {
+      "id": "article-pbc-editorial-foreword-pbc-editorial-foreword-publication-framing",
+      "kind": "author-interpretation",
+      "text": "Lời giới thiệu nói mười quyển nhỏ, 64 quẻ và giải nghĩa Hào/Tượng/Soán nhưng chưa in vội; trang 8 chỉ chữ ký Minh Viên Huỳnh Thúc Kháng. Không coi tuyên bố bao quát là chứng nhận từng lớp của PDF.",
+      "citationIds": ["citation-pbc-editorial-foreword-publication-framing"],
+      "attribution": {
+        "author": "Huỳnh Thúc Kháng"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-06",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-pbc-editorial-foreword-evaluation",
+      "citation-pbc-editorial-foreword-publication-framing"
+    ],
+    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "id": "article-pbc-author-preface",
+  "type": "article",
+  "title": "PBC — Phát Đoan Từ",
+  "aliases": [],
+  "topicIds": ["topic-classical-traditions"],
+  "claims": [
+    {
+      "id": "article-pbc-author-preface-pbc-author-preface-three-schools",
+      "kind": "author-interpretation",
+      "text": "Phan Sào Nam so Phật, Dịch, Lão rồi ưu Dịch ở chỗ thiết thực, linh hoạt; nhận xét về tôn giáo và Đông/Tây là đánh giá của ông, không định nghĩa consensus.",
+      "citationIds": ["citation-pbc-author-preface-three-schools"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    },
+    {
+      "id": "article-pbc-author-preface-pbc-author-preface-western-report",
+      "kind": "author-interpretation",
+      "text": "Tác giả thuật Uy Lệ Hiên nghiên cứu Dịch hơn 20 năm, được vua Đức thưởng học vị và sách dùng giáo khoa. Các khẳng định này chưa được kiểm sử độc lập.",
+      "citationIds": ["citation-pbc-author-preface-western-report"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    },
+    {
+      "id": "article-pbc-author-preface-pbc-author-preface-self-purpose",
+      "kind": "author-interpretation",
+      "text": "Tác giả kể học khoa cử, đọc Nhật Văn Hán Dịch và tự nhận hiểu biết hữu hạn; ông dịch vì muốn chia sẻ học cũ, chứ không tự nhận phát minh Dịch lý. Trang 14 ký Phan Sào Nam.",
+      "citationIds": ["citation-pbc-author-preface-self-purpose"],
+      "attribution": {
+        "author": "Phan Bội Châu"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    },
+    {
+      "id": "article-pbc-author-preface-pbc-author-preface-shao-quotation",
+      "kind": "author-interpretation",
+      "text": "Thiệu Khang Tiết được dẫn so Trương Tử Phòng dùng Lão/Mạnh Kha dùng Dịch; chỉ lời qua PBC, không trực tiếp kiểm tác phẩm Thiệu.",
+      "citationIds": ["citation-pbc-author-preface-shao-quotation"],
+      "attribution": {
+        "author": "Thiệu Khang Tiết",
+        "via": "Phan Bội Châu — đoạn dẫn trong ấn bản cung cấp"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-06",
+    "method": "source-comparison",
+    "evidenceCitationIds": [
+      "citation-pbc-author-preface-three-schools",
+      "citation-pbc-author-preface-western-report",
+      "citation-pbc-author-preface-self-purpose",
+      "citation-pbc-author-preface-shao-quotation"
+    ],
+    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
+  }
+}

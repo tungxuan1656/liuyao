@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "id": "article-ntt-cover",
+  "type": "article",
+  "title": "NTT — Bìa",
+  "aliases": [],
+  "topicIds": ["topic-classical-traditions"],
+  "claims": [
+    {
+      "id": "article-ntt-cover-ntt-cover-accounting",
+      "kind": "author-interpretation",
+      "text": "Bìa ghi Ngô Tất Tố dịch/chú giải, Kinh Dịch trọn bộ và huy hiệu bát quái trang trí. Không suy bản hình bìa là lời cổ hoặc năm xuất bản.",
+      "citationIds": ["citation-ntt-cover-accounting"],
+      "attribution": {
+        "author": "Ngô Tất Tố"
+      },
+      "conditions": [
+        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "rights": {
+    "basis": "original-summary-and-structured-facts",
+    "license": "All Rights Reserved"
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewer": "Codex worker — AI source comparison",
+    "reviewedAt": "2026-10-06",
+    "method": "source-comparison",
+    "evidenceCitationIds": ["citation-ntt-cover-accounting"],
+    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
+  }
+}
