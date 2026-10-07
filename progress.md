@@ -16,6 +16,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Add each new block below this note. Do not edit older blocks. -->
 
+## 2026-10-07 — feat-063 merged
+
+**State**: done; merged to `main` in PR #91 at `7ecd2c127895dab81890d40250ec7168fb1ab48f`; reviewed exact head `89b36378161e1e2fd66449fc0a0b482aee27f705`.
+**Done**: Added edition-specific Càn/Khôn special-passage summaries for three editions across six owners, with 260 new original claims and261 exact-edition citations. All94 assigned pages were individually inspected. Added281 child dispositions/287 audit groups routed feat-063→feat-068; explicitly defer PBC Càn Văn Ngôn PDF43–57. Special passages remain outside the six-position line inventory.
+**Evidence**: Fresh exact-head review returned `OK`, no findings. Verify run37572313369/job112633450697,Cloudflare Pages and GitGuardian passed. Post-optimization and pre-push `./init.sh` passed6,321 tests (6,140 knowledge,181 core); focused generator suite passed7 tests in69.79s. All120s test/setup and30s child timeouts and assertions remain intact. Corpus/books validation,package exports/preservation,201 local documentation routes and offline precache checks passed.
+**Coverage**: Corpus has371 records/9,497 claims/9,744 citations and registry revision57 with4,638 groups/17 exclusions. Snapshot identity is `liuyao-knowledge-snapshot-v1:sha256:ae4cf07c76db4ea1a863c21222c3bf6506afa90e423d4c006a2a56b887b68854`. The12,641,410-byte integrated bundle fits the13 MiB Workbox cap by990,078 bytes; all18 precache entries remain. Audit068,global source/layer review and certification remain closed/incomplete. PBC year/rights and the explicitly deferred scope remain unresolved. No efficacy or modern advice is claimed.
+**Blockers**: none for feat-063.
+**Next**: Continue with selected feat-064 from updated `main`.
+
 ## 2026-10-07 — feat-062 merged
 
 **State**: done; merged to `main` in PR #90 at `f08dd82241cf505c3e00c9b69497ea8d63ccadb0`; reviewed exact head `2d65e1e28aadb1ceb98c5326b5c740e1f7e95242`.
