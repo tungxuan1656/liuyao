@@ -50,7 +50,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active on `feat/066-authoring-inventory-crosswalk`.
-- Evidence: User approved crosswalk-only scope; baseline counts and known BPCT chapter-6 mapping gaps are recorded above. No implementation or verification yet.
+- State: implementation committed on `feat/066-authoring-inventory-crosswalk` at `961837fcbfec8f0034b7d82d58379d66c0033cf8`; exact-head independent review returned `OK`, no P0/P1/P2 findings.
+- Evidence: `./init.sh` passed 6,378 tests (6,197 knowledge, 181 core); corpus/source-fingerprint validation and package-export checks passed; focused crosswalk tests passed 18/18. Review report: `/tmp/feat066-independent-review.md`; worker report: `/Users/tungdoan/.pi/agent/sessions/--Users-tungdoan-Projects-Web-liuyao--/subagent-artifacts/outputs/d0af9d23-2abb-479b-8712-7279d95ccff0/reports/feat-066-worker-report.md`. The generated 3.6 MiB crosswalk stays under reports and has no runtime/PWA effect.
+- State remains incomplete: 4,638 source groups stay discovery-unresolved; 108 content groups lack direct released-record mappings, 127 released records lack direct unit mappings, and 17 exclusion rationales remain pending audit review. The pending classical-traditions topic stays unchanged and is routed to feat-094. No coverage, audit, specialist-review, or certification gate is claimed complete.
 - Dependencies: feat-065 is done; see [feature index](../feature_index.json).
-- Next: Reconcile the inventory and release mappings while preserving explicit follow-up ownership and open audit gates.
+- Next: Commit this handoff, then push the reviewed branch and open one PR. Update canonical completion state only after merge.
