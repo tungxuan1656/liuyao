@@ -9,28 +9,17 @@ export const READING_HISTORY_STORAGE_KEY = 'liuyao:reading-history:v1';
 export const MAX_STORED_READINGS = 100;
 export const HISTORY_CHANGE_EVENT = 'liuyao:history-changed';
 
-function isBrowserStorageAvailable(): boolean {
-  try {
-    const testKey = '__liuyao_storage_test__';
-    window.localStorage.setItem(testKey, '1');
-    window.localStorage.removeItem(testKey);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
 function notifyHistoryChange(): void {
   window.dispatchEvent(new CustomEvent(HISTORY_CHANGE_EVENT));
 }
 
-/** Load all stored reading records from localStorage safely. */
+/** Load all stored reading records from localStorage safely without requiring write access. */
 export function loadStoredReadingHistory(): readonly StoredReadingRecord[] {
-  if (!isBrowserStorageAvailable()) {
-    return Object.freeze([]);
-  }
-
   try {
+    if (typeof window === 'undefined' || !window.localStorage) {
+      return Object.freeze([]);
+    }
+
     const raw = window.localStorage.getItem(READING_HISTORY_STORAGE_KEY);
     if (!raw) {
       return Object.freeze([]);
@@ -56,17 +45,17 @@ export function loadStoredReadingHistory(): readonly StoredReadingRecord[] {
   }
 }
 
-/** Persist array of records to localStorage with quota protection. */
-function persistRecords(records: readonly StoredReadingRecord[]): boolean {
-  if (!isBrowserStorageAvailable()) {
-    return false;
+/** Persist array of records to localStorage with quota protection. Returns actual saved count or null on failure. */
+function persistRecords(records: readonly StoredReadingRecord[]): number | null {
+  if (typeof window === 'undefined' || !window.localStorage) {
+    return null;
   }
 
   try {
     const serialized = JSON.stringify(records);
     window.localStorage.setItem(READING_HISTORY_STORAGE_KEY, serialized);
     notifyHistoryChange();
-    return true;
+    return records.length;
   } catch (error) {
     if (error instanceof DOMException && error.name === 'QuotaExceededError') {
       // If quota exceeded, trim the oldest half of records and retry once
@@ -74,12 +63,12 @@ function persistRecords(records: readonly StoredReadingRecord[]): boolean {
         const trimmed = records.slice(0, Math.max(10, Math.floor(records.length / 2)));
         window.localStorage.setItem(READING_HISTORY_STORAGE_KEY, JSON.stringify(trimmed));
         notifyHistoryChange();
-        return true;
+        return trimmed.length;
       } catch {
-        return false;
+        return null;
       }
     }
-    return false;
+    return null;
   }
 }
 
@@ -91,7 +80,7 @@ export function saveStoredReadingRecord(record: StoredReadingRecord): boolean {
     0,
     MAX_STORED_READINGS,
   );
-  return persistRecords(updated);
+  return persistRecords(updated) !== null;
 }
 
 /** Remove a single record by its ID. */
@@ -101,12 +90,12 @@ export function deleteStoredReadingRecord(id: string): boolean {
   if (filtered.length === current.length) {
     return false;
   }
-  return persistRecords(filtered);
+  return persistRecords(filtered) !== null;
 }
 
 /** Wipe all stored reading records. */
 export function clearAllStoredReadingHistory(): boolean {
-  if (!isBrowserStorageAvailable()) {
+  if (typeof window === 'undefined' || !window.localStorage) {
     return false;
   }
   try {
@@ -129,6 +118,7 @@ export function exportReadingHistoryArchive(): ReadingHistoryArchive {
 }
 
 export interface ImportResult {
+  readonly success: boolean;
   readonly importedCount: number;
   readonly totalCount: number;
 }
@@ -142,20 +132,36 @@ export function importReadingHistoryArchive(
   const incoming = validatedArchive.records;
 
   let combined: readonly StoredReadingRecord[];
+  let actuallyAddedCount = 0;
+
   if (mode === 'overwrite') {
     combined = incoming.slice(0, MAX_STORED_READINGS);
+    actuallyAddedCount = combined.length;
   } else {
     const current = loadStoredReadingHistory();
     const existingIds = new Set(current.map(r => r.id));
     const newItems = incoming.filter(r => !existingIds.has(r.id));
-    combined = [...newItems, ...current].slice(0, MAX_STORED_READINGS);
+    // In merge mode: prioritize keeping existing records on device,
+    // only fill remaining capacity up to MAX_STORED_READINGS with new items.
+    const availableSlots = Math.max(0, MAX_STORED_READINGS - current.length);
+    const addedItems = newItems.slice(0, availableSlots);
+    combined = [...addedItems, ...current];
+    actuallyAddedCount = addedItems.length;
   }
 
-  persistRecords(combined);
+  const savedCount = persistRecords(combined);
+  if (savedCount === null) {
+    return {
+      success: false,
+      importedCount: 0,
+      totalCount: loadStoredReadingHistory().length,
+    };
+  }
 
   return {
-    importedCount: incoming.length,
-    totalCount: combined.length,
+    success: true,
+    importedCount: actuallyAddedCount,
+    totalCount: savedCount,
   };
 }
 

@@ -135,6 +135,9 @@ export function validateStoredReadingRecord(value: unknown): StoredReadingRecord
       throw new InvalidReadingInputError('Automatic reading records require tosses array.');
     }
     tosses = createAutomaticTossSnapshot(value.tosses as readonly CoinTossResult[]);
+    if (tosses.some((toss, idx) => toss.line !== lines[idx])) {
+      throw new InvalidReadingInputError('Toss evidence does not match line sequence.');
+    }
   }
 
   const notes = typeof value.notes === 'string' ? value.notes.trim() : undefined;

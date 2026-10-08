@@ -93,6 +93,27 @@ describe('reading history contracts & validation', () => {
     ).toThrow(TypeError);
   });
 
+  it('rejects untrusted automatic record when toss evidence contradicts lines', () => {
+    const validTosses = [
+      { coins: [0, 0, 1], method: 'three-coin', coinCount: 3, line: 7 },
+      { coins: [0, 0, 1], method: 'three-coin', coinCount: 3, line: 7 },
+      { coins: [0, 0, 1], method: 'three-coin', coinCount: 3, line: 7 },
+      { coins: [0, 0, 1], method: 'three-coin', coinCount: 3, line: 7 },
+      { coins: [0, 0, 1], method: 'three-coin', coinCount: 3, line: 7 },
+      { coins: [0, 0, 1], method: 'three-coin', coinCount: 3, line: 7 },
+    ];
+    const untrustedRecord = {
+      id: 'mismatched-record-1',
+      createdAt: '2026-03-30T12:00:00.000Z',
+      question: 'Mismatch test',
+      method: 'automatic',
+      lines: [8, 8, 8, 8, 8, 8],
+      tosses: validTosses,
+    };
+
+    expect(() => validateStoredReadingRecord(untrustedRecord)).toThrow(InvalidReadingInputError);
+  });
+
   it('validates untrusted JSON record and re-calculates reading result', () => {
     const rawData = {
       id: 'valid-id-123',

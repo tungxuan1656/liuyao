@@ -65,6 +65,13 @@ export function HistoryExportImportDialog({ open, onClose, historyApi }: ExportI
         }
         const parsed = JSON.parse(rawContent);
         const result = historyApi.importArchive(parsed, importMergeMode);
+        if (!result.success) {
+          setStatusMessage({
+            type: 'error',
+            text: 'Không thể lưu dữ liệu vào bộ nhớ thiết bị. Vui lòng kiểm tra dung lượng.',
+          });
+          return;
+        }
         setStatusMessage({
           type: 'success',
           text: `Đã nhập ${result.importedCount} quẻ thành công (Tổng: ${result.totalCount}).`,
