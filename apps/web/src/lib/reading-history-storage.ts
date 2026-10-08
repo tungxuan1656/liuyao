@@ -45,42 +45,40 @@ export function loadStoredReadingHistory(): readonly StoredReadingRecord[] {
   }
 }
 
-/** Persist array of records to localStorage with quota protection. Returns actual saved count or null on failure. */
-function persistRecords(records: readonly StoredReadingRecord[]): number | null {
+/** Directly writes serialized records to localStorage. Returns true on success, false on quota/error. */
+function writeRawRecords(records: readonly StoredReadingRecord[]): boolean {
   if (typeof window === 'undefined' || !window.localStorage) {
-    return null;
+    return false;
   }
-
   try {
     const serialized = JSON.stringify(records);
     window.localStorage.setItem(READING_HISTORY_STORAGE_KEY, serialized);
     notifyHistoryChange();
-    return records.length;
-  } catch (error) {
-    if (error instanceof DOMException && error.name === 'QuotaExceededError') {
-      // If quota exceeded, trim the oldest half of records and retry once
-      try {
-        const trimmed = records.slice(0, Math.max(10, Math.floor(records.length / 2)));
-        window.localStorage.setItem(READING_HISTORY_STORAGE_KEY, JSON.stringify(trimmed));
-        notifyHistoryChange();
-        return trimmed.length;
-      } catch {
-        return null;
-      }
-    }
-    return null;
+    return true;
+  } catch {
+    return false;
   }
 }
 
-/** Save a new or updated reading record. Prepends to maintain newest-first order. */
+/** Save a new or updated reading record. Prepends to maintain newest-first order.
+ * If quota is exceeded, trims the oldest records one by one or in small batches to fit. */
 export function saveStoredReadingRecord(record: StoredReadingRecord): boolean {
   const current = loadStoredReadingHistory();
   // Filter out any existing record with the same ID, then prepend
-  const updated = [record, ...current.filter(r => r.id !== record.id)].slice(
+  let candidate = [record, ...current.filter(r => r.id !== record.id)].slice(
     0,
     MAX_STORED_READINGS,
   );
-  return persistRecords(updated) !== null;
+
+  while (candidate.length > 0) {
+    if (writeRawRecords(candidate)) {
+      return true;
+    }
+    // Storage quota exceeded: remove oldest record from candidate and retry
+    candidate = candidate.slice(0, candidate.length - 1);
+  }
+
+  return false;
 }
 
 /** Remove a single record by its ID. */
@@ -90,7 +88,7 @@ export function deleteStoredReadingRecord(id: string): boolean {
   if (filtered.length === current.length) {
     return false;
   }
-  return persistRecords(filtered) !== null;
+  return writeRawRecords(filtered);
 }
 
 /** Wipe all stored reading records. */
@@ -130,38 +128,64 @@ export function importReadingHistoryArchive(
 ): ImportResult {
   const validatedArchive = validateReadingHistoryArchive(archivePayload);
   const incoming = validatedArchive.records;
-
-  let combined: readonly StoredReadingRecord[];
-  let actuallyAddedCount = 0;
+  const current = loadStoredReadingHistory();
 
   if (mode === 'overwrite') {
-    combined = incoming.slice(0, MAX_STORED_READINGS);
-    actuallyAddedCount = combined.length;
-  } else {
-    const current = loadStoredReadingHistory();
-    const existingIds = new Set(current.map(r => r.id));
-    const newItems = incoming.filter(r => !existingIds.has(r.id));
-    // In merge mode: prioritize keeping existing records on device,
-    // only fill remaining capacity up to MAX_STORED_READINGS with new items.
-    const availableSlots = Math.max(0, MAX_STORED_READINGS - current.length);
-    const addedItems = newItems.slice(0, availableSlots);
-    combined = [...addedItems, ...current];
-    actuallyAddedCount = addedItems.length;
-  }
-
-  const savedCount = persistRecords(combined);
-  if (savedCount === null) {
+    let candidate = incoming.slice(0, MAX_STORED_READINGS);
+    while (candidate.length > 0) {
+      if (writeRawRecords(candidate)) {
+        return {
+          success: true,
+          importedCount: candidate.length,
+          totalCount: candidate.length,
+        };
+      }
+      candidate = candidate.slice(0, candidate.length - 1);
+    }
+    // Cannot write even 1 record
     return {
       success: false,
       importedCount: 0,
-      totalCount: loadStoredReadingHistory().length,
+      totalCount: current.length,
     };
   }
 
+  // mode === 'merge':
+  // NEVER delete or trim existing user records to make room for incoming ones.
+  const existingIds = new Set(current.map(r => r.id));
+  const newItems = incoming.filter(r => !existingIds.has(r.id));
+  const availableSlots = Math.max(0, MAX_STORED_READINGS - current.length);
+  let candidateNew = newItems.slice(0, availableSlots);
+
+  // If there are no new items to add, it's a no-op success
+  if (candidateNew.length === 0) {
+    return {
+      success: true,
+      importedCount: 0,
+      totalCount: current.length,
+    };
+  }
+
+  // Attempt to write [candidateNew + current]. If quota fails, reduce candidateNew until it fits.
+  while (candidateNew.length > 0) {
+    const combined = [...candidateNew, ...current];
+    if (writeRawRecords(combined)) {
+      return {
+        success: true,
+        importedCount: candidateNew.length,
+        totalCount: combined.length,
+      };
+    }
+    // Reduce incoming items to fit quota without touching current items
+    candidateNew = candidateNew.slice(0, candidateNew.length - 1);
+  }
+
+  // Storage is completely full, cannot even fit 1 new record without compromising existing records.
+  // Existing records remain 100% intact.
   return {
-    success: true,
-    importedCount: actuallyAddedCount,
-    totalCount: savedCount,
+    success: false,
+    importedCount: 0,
+    totalCount: current.length,
   };
 }
 
