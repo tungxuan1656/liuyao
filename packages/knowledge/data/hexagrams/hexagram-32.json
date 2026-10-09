@@ -12,71 +12,71 @@
       "references": [
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [233, 233],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["233", "233"]
+          "pdfPages": [233, 233]
         },
         {
           "sourceId": "source-book-pbc",
-          "pdfPages": [320, 324],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [320, 324]
         },
         {
           "sourceId": "source-book-ntt",
-          "pdfPages": [521, 526],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [521, 526]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [59, 61],
-          "section": "Thuật ngữ; Hào cửu — Hào lục",
-          "printedPages": ["59", "61"]
+          "pdfPages": [59, 61]
         }
       ]
     },
     {
-      "text": "Nguyễn Hiến Lê đọc Hằng theo sự lâu dài có đường chính, sấm gió giúp nhau và các hào âm dương ứng nhau. Hình ảnh gia đình đặt trong trật tự xã hội cổ; giữ lâu một cách sai không có giá trị chỉ vì bền.",
-      "references": [
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [233, 233],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["233", "233"]
-        }
-      ],
+      "text": "Nguyễn Hiến Lê giảng Hằng là đạo vợ chồng lâu dài tiếp sau quẻ Hàm. Cương Chấn ở trên, nhu Tốn ở dưới, sấm gió giúp nhau, động thuận theo nhau và ba hào âm dương đều ứng nhau nên giữ được đạo chính lâu dài.",
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
-      "condition": "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
-    },
-    {
-      "text": "Phan Bội Châu phân biệt nguyên tắc cần giữ với cách làm phải đổi theo thời. Hằng và biến hỗ trợ nhau: giữ điều chính để đi lâu, đồng thời có kết thúc và bắt đầu mới, tránh chết trơ ở một cách làm.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [320, 324],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-nhl",
+          "pdfPages": [233, 233]
         }
-      ],
+      ]
+    },
+    {
+      "text": "Phan Bội Châu giảng Hằng là trường cửu, giữ lòng thường mãi như một ngày. Ông phân biệt thể thường với dụng biến: tuần hoàn cùng thời biến, biến thời thông thì mới hằng lâu, không phải chết trơ một bề.",
       "attribution": {
         "author": "Phan Bội Châu"
       },
-      "condition": "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
-    },
-    {
-      "text": "Trình Di cho đạo hằng là điều đáng giữ lâu, khác cố giữ điều sai. Cần tùy thời biến đổi hành động mà vẫn có trung chính; hình ảnh vai vợ chồng và trị nước thuộc nền chú giải cổ.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [521, 526],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc",
+          "pdfPages": [320, 324]
         }
-      ],
+      ]
+    },
+    {
+      "text": "Trình Di cho Hằng là thường lâu, tiếp sau quẻ Hàm biểu hiện đạo thường của vợ chồng và lẽ thường của trời đất. Đạo hằng lấy trinh chính làm cốt; hằng không phải chỉ giữ một bề không đổi mà tùy thời biến đổi mới là đạo thường.",
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "condition": "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [521, 526]
+        }
+      ]
+    },
+    {
+      "text": "Chu Hy giải Hằng là thường lâu, có bốn điều: sấm gió cùng nhau, nhún mà động, Chấn cứng ở trên Tốn mềm ở dưới và các hào đều ứng. Chiêm đoán giữ lâu đạo ấy thì hanh và không lỗi, nhưng ắt lợi về nết trinh mới lợi có thửa đi.",
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [522, 525]
+        }
+      ]
     }
   ],
   "kingWenNumber": 32,
@@ -89,59 +89,54 @@
       "label": "Sơ lục",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê cho hào đầu mới và ở thấp nhưng đòi quan hệ quá sâu với hào bốn chưa hướng về mình. Cố giữ đòi hỏi ấy làm khó khăn kéo dài, không phải cứ bền là đúng.",
+          "text": "Nguyễn Hiến Lê giảng hào 1 ở địa vị quá thấp, lại bị hào 2 và 3 ngăn cách với hào 4 ở trên cao. Hào 4 dương cương chỉ trông lên không ngó xuống, hào 1 không biết phận mà cứ tiến sâu mong thân mật keo sơn là ngu; kiên cố giữ cách ấy thì xấu và không lợi gì.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [233, 233],
-              "section": "Hào 1 — diễn giải",
-              "printedPages": ["233", "233"]
+              "pdfPages": [233, 233]
             }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          ]
         },
         {
-          "text": "Phan Bội Châu đọc hào đầu theo người biết lẽ thường mà không xét tình thế đã đổi. Giao còn nông mà cầu sâu, lại giữ chặt yêu cầu ấy, là nghĩa bền mà xấu của lời hào.",
+          "text": "Phan Bội Châu giải hào Sơ ở dưới cùng là chính ứng của hào Tứ, nhưng nệ cách thường mà không biết biến. Địa vị quá thấp, mới giao mà toan đòi hỏi quá thân mật, giao tình cạn mà cầu sâu; chữ trinh ở đây là bền chặt, cố giữ chặt lối ấy thì hung và chẳng làm được gì thuận lợi.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [324, 324],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [324, 324]
             }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          ]
         },
         {
-          "text": "Trình Di xem hào đầu cứ trông hào bốn theo lẽ thường mà không tính khoảng cách, vật cản và ý của người trên. Cầu sâu ngay lúc đầu cho thấy thủ thường thiếu xét tình thế nên không lợi.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [526, 527],
-              "section": "Hào 1 — diễn giải"
-            }
-          ],
+          "text": "Trình Di cho hào Đầu ở dưới là chính ứng với hào Tư, nhưng chỉ biết giữ thói thường mà không đo đắn tình thế. Hào Tư tính cương ở ngôi cao chí muốn lên không muốn xuống, lại bị hai hào ngăn cách; hào Đầu câu nệ lẽ thường mà cầu mong người trên một cách sâu bền thì hung và không có lợi.",
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        },
-        {
-          "text": "Chu Hy cũng yêu cầu xét tình thế trước khi cầu sâu với người trên. Ông đọc trinh trong lời răn theo dù chính vẫn xấu nếu cầu sâu lúc mới đầu, khác Phan Bội Châu giải chữ ấy ở đây chỉ sự bền chặt.",
+          },
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [527, 527],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [526, 527]
             }
-          ],
+          ]
+        },
+        {
+          "text": "Chu Hy giảng hào Đầu với hào Tư là chính ứng, nhưng hào Đầu ở ngôi thấp, nhu ám không biết đo đắn tình thế, lại bị ngăn cách bởi hào Hai và hào Ba. Hào Đầu cứ theo lẽ thường mà cầu cạnh người trên một cách sâu sắc là tượng đào sâu sự thường; kẻ xem như thế tuy chính cũng hung và không lợi điều gì.",
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [527, 527]
+            }
+          ]
         }
       ]
     },
@@ -151,45 +146,54 @@
       "label": "Cửu nhị",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê cho hào hai dương ở vị âm nhưng có đức trung và ứng hào năm cũng trung. Giữ được đạo trung lâu giúp tiêu hối, không chỉ xét hợp hay lệch vị.",
+          "text": "Nguyễn Hiến Lê giảng hào 2 dương cương ở vị âm đáng lẽ có hối hận, nhưng nhờ đắc trung lại ứng với hào 5 cũng đắc trung nên giữ được đạo trung mà hối hận tiêu hết.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [233, 234],
-              "section": "Hào 2 — diễn giải",
-              "printedPages": ["233", "234"]
+              "pdfPages": [233, 234]
             }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          ]
         },
         {
-          "text": "Phan Bội Châu đặt sự mất hối của hào hai ở đức trung được giữ lâu và gặp người ứng cũng trung. Không quá mức hoặc thiếu mức là điều giúp sự bền có giá trị.",
+          "text": "Phan Bội Châu giải hào Cửu Nhị dương cương ở âm vị trái lẽ thường, đáng lẽ có hối; nhưng nhờ có đức trung ứng với hào Ngũ cũng đắc trung, lấy trung ứng trung và giữ lâu ở đạo trung nên không có gì phải ăn năn.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [324, 325],
-              "section": "Hào 2 — diễn giải"
+              "pdfPages": [324, 325]
             }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          ]
         },
         {
-          "text": "Trình Di cho đức trung của hào hai và người ứng giúp hành động lẫn ở yên đều có mức. Trong cách giảng riêng này, biết trọng đức trung giúp giải được sự mất hối dù hào dương ở vị âm.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [527, 528],
-              "section": "Hào 2 — diễn giải"
-            }
-          ],
+          "text": "Trình Di cho rằng hào Chín Hai dương ở ngôi âm đáng lẽ có ăn năn, nhưng lấy đức giữa ứng với hào Năm cũng ở ngôi giữa, ở yên hay cử động đều được mực giữa. Giữ lâu được đạo giữa thì không sai mất chính, đức ấy đủ làm mất sự ăn năn.",
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [527, 528]
+            }
+          ]
+        },
+        {
+          "text": "Chu Hy giải hào Chín Hai lấy chất dương ở ngôi âm đáng lẽ có ăn năn, nhưng nhờ giữ lâu được đức giữa nên mất sự ăn năn.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [528, 528]
+            }
+          ]
         }
       ]
     },
@@ -199,59 +203,54 @@
       "label": "Cửu tam",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê cho hào ba đúng vị nhưng quá cương, không trung và chạy theo hào cuối nên bỏ đức chính của mình. Chưa giữ được đức lâu thì đúng vị cũng không đủ tránh hổ thẹn.",
+          "text": "Nguyễn Hiến Lê giảng hào 3 dương ở vị dương là đắc chính, nhưng vì quá cương, bất trung, lại theo đòi muốn kết bạn với hào trên cùng âm nhu nên bỏ đức chính của mình. Không thường giữ được đức chính ấy thì tuy chính mà vẫn đáng tiếc, có khi bị xấu hổ.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [234, 234],
-              "section": "Hào 3 — diễn giải",
-              "printedPages": ["234", "234"]
+              "pdfPages": [234, 234]
             }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          ]
         },
         {
-          "text": "Phan Bội Châu xem hào ba có chính mà không hằng: chạy theo người khác làm mất điều đáng tự giữ. Lời đáng tiếc đặt ở sự bỏ chính ấy, không phủ nhận mọi sự thay đổi.",
+          "text": "Phan Bội Châu giải hào Cửu Tam đắc chính nhưng quá cương bất trung, lại toan len lỏi theo đòi với Thượng Lục âm nhu, bỏ đức cương chính của mình. Tự thủ không xong, chính mà bất hằng là bỏ mất chính nên e bị người dâng điều xấu hổ tới và mang tiếc lận.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [325, 325],
-              "section": "Hào 3 — diễn giải"
+              "pdfPages": [325, 325]
             }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          ]
         },
         {
-          "text": "Trình Di cho hào ba ở chỗ thường đúng nhưng không chịu giữ, muốn theo hào sáu nên thiếu đức hằng. Ông còn đọc trinh lận theo việc cố lấy sự bất hằng làm nết thường, giữ riêng với cách đọc đúng vị mà không bền.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [529, 530],
-              "section": "Hào 3 — diễn giải"
-            }
-          ],
+          "text": "Trình Di cho rằng hào Ba ở đúng ngôi thường nhưng không chịu yên ở, lại muốn theo hào Sáu Trên nên không có đức hằng và chuốc lấy hổ nhục. Ông giải câu trinh lận là cố giữ đức bất hằng để làm đức hằng thì đáng thẹn tiếc.",
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        },
-        {
-          "text": "Chu Hy đọc trinh lận theo chính mà không giữ đức hằng thì đáng tiếc. Cách đọc này giữ riêng với Trình Di nhấn mạnh cố giữ sự bất hằng, dù cùng răn thiếu tự giữ.",
+          },
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [529, 529],
-              "section": "Hào 3 — diễn giải"
+              "pdfPages": [529, 530]
             }
-          ],
+          ]
+        },
+        {
+          "text": "Chu Hy giải ngôi tuy chính nhưng quá cứng không trung, lại muốn theo hào Trên nên không thể ở lâu chỗ của mình mà chuốc lấy xấu hổ. Ông giảng trinh lận là chính mà không giữ đức hằng thì đáng tiếc, dùng làm lời răn cho kẻ xem.",
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [529, 529]
+            }
+          ]
         }
       ]
     },
@@ -261,45 +260,54 @@
       "label": "Cửu tứ",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê đọc săn không được thú theo người ở lâu chỗ không thích hợp. Mất công không vì chưa đủ lâu, mà vì cứ kéo dài việc không đúng chỗ.",
+          "text": "Nguyễn Hiến Lê giảng hào dương ở vị âm là không phải chỗ của mình mà cứ ở lâu chỗ đó, trong quẻ Hằng thì chẳng nên việc gì, chỉ mất công uổng phí như đi săn mà không được cầm thú.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [234, 234],
-              "section": "Hào 4 — diễn giải",
-              "printedPages": ["234", "234"]
+              "pdfPages": [234, 234]
             }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          ]
         },
         {
-          "text": "Phan Bội Châu lấy săn không được gì làm phép ví công sức đặt sai vị. Ông đối chiếu với hào hai: cùng lệch vị nhưng hào hai có trung, hào bốn thì không, nên không đồng kết quả.",
+          "text": "Phan Bội Châu giải hào dương ở vị âm là xử trái bản vị mà toan ở lâu chốn đó thì chẳng nên việc gì, ví như đi săn không được cầm thú, chỉ hao tổn tâm lực mà không thành công. Cùng ở sai vị nhưng hào Nhị đắc trung thì tốt, còn hào Tứ bất trung thì kết quả xấu.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [325, 326],
-              "section": "Hào 4 — diễn giải"
+              "pdfPages": [325, 326]
             }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          ]
         },
         {
-          "text": "Trình Di cho làm việc phải đạo mới có thể tích lâu mà thành, còn ở sai chỗ thì lâu cũng không ích. Đi săn là ví dụ của sự phí sức, không là hướng dẫn săn bắt.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [530, 531],
-              "section": "Hào 4 — diễn giải"
-            }
-          ],
+          "text": "Trình Di cho rằng lấy chất dương ở ngôi âm là ở không phải chỗ, việc làm không phải đạo thì dẫu thường lâu cũng không có ích gì. Ví như đi săn mà không được cầm thú, nghĩa là uổng phí sức mà không có công trạng.",
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [530, 531]
+            }
+          ]
+        },
+        {
+          "text": "Chu Hy giải chất dương ở ngôi âm tức là ở lâu chỗ không phải ngôi nên có tượng săn không được cầm thú. Kẻ xem nếu đi săn thì không được gì, mà việc khác cũng không đạt được điều mình mong cầu.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [530, 530]
+            }
+          ]
         }
       ]
     },
@@ -309,48 +317,54 @@
       "label": "Lục ngũ",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê đặt lời tốt cho phụ nữ và xấu cho đàn ông trong quan niệm phu xướng phụ tùy thời xưa. Ông nhấn mạnh người gánh việc phải xét lẽ đáng làm, thay vì chỉ theo một người mãi.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [234, 235],
-              "section": "Hào 5 — diễn giải",
-              "printedPages": ["234", "235"]
-            }
-          ],
+          "text": "Nguyễn Hiến Lê giảng hào 5 âm nhu đắc trung, ứng với hào 2 dương cương đắc trung; thuận tòng từ trước tới sau là bền mà chính đối với phụ nữ theo quan niệm xưa phu xướng phụ tùy. Nhưng đàn ông phải tự tìm ra điều đáng làm (phu tử chế nghĩa), nếu cứ một mực theo thì xấu.",
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "condition": "Giữ sự đối chiếu vai người theo quan niệm giới và trách nhiệm trong sách cổ, không dùng lời tốt xấu để đánh giá phẩm chất cố định của nam hoặc nữ hiện đại."
-        },
-        {
-          "text": "Phan Bội Châu đối chiếu thuận theo một bề với tự xét nghĩa theo thời trong khuôn vai giới cổ. Phần chế nghĩa được ông mở rộng sang việc cân nhắc điều phải trong hoàn cảnh đổi, không giữ một cách thuận theo cho mọi trách nhiệm.",
           "references": [
             {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [326, 327],
-              "section": "Hào 5 — diễn giải"
+              "sourceId": "source-book-nhl",
+              "pdfPages": [234, 235]
             }
-          ],
+          ]
+        },
+        {
+          "text": "Phan Bội Châu giải hào Lục Ngũ âm nhu cư trung ứng với Cửu Nhị dương cương cư trung, một mực thuận tòng từ đầu đến cuối là nết tòng nhất nhi chung của phụ nữ nên cát. Ngược lại, trượng phu phải tùy thời mà chế ra nghĩa, nếu chỉ biết thuận tòng như phụ nhân thì hung.",
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "condition": "Giữ sự đối chiếu vai người theo quan niệm giới và trách nhiệm trong sách cổ, không dùng lời tốt xấu để đánh giá phẩm chất cố định của nam hoặc nữ hiện đại."
-        },
-        {
-          "text": "Trình Di giảng hào năm mềm trung ứng hào hai cứng trung nhưng coi sự thuận theo lâu là nết của người vợ trong trật tự cổ. Người chủ việc, nhất là vua, cần tự xét nghĩa, không lấy sự nghe theo làm nết thường.",
           "references": [
             {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [531, 532],
-              "section": "Hào 5 — diễn giải"
+              "sourceId": "source-book-pbc",
+              "pdfPages": [326, 327]
             }
-          ],
+          ]
+        },
+        {
+          "text": "Trình Di cho rằng hào Năm âm mềm ở giữa ứng với hào Hai cứng giữa, lấy sự thuận theo làm nết thường là trinh chính của phụ nữ nên tốt. Đấng trượng phu hay người làm vua phải tự đặt ra nghĩa để hành xử, nếu lấy sự mềm thuận làm nết thường là mất nết chính cương thì hung.",
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "condition": "Giữ sự đối chiếu vai người theo quan niệm giới và trách nhiệm trong sách cổ, không dùng lời tốt xấu để đánh giá phẩm chất cố định của nam hoặc nữ hiện đại."
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [531, 532]
+            }
+          ]
+        },
+        {
+          "text": "Chu Hy giải hào Năm lấy chất mềm giữa ứng với kẻ cứng giữa, thường lâu không đổi thì chính mà bền. Nhưng đó là đạo đàn bà theo một bề trọn đời, không phải điều người đàn ông nên làm, nên tượng chiêm phân biệt đàn bà tốt mà đàn ông hung.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [531, 531]
+            }
+          ]
         }
       ]
     },
@@ -360,116 +374,111 @@
       "label": "Thượng lục",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê đọc hào cuối theo người ham động quá mức và không bền chí. Cứ xao động, không biết yên, làm mất khả năng giữ lâu điều đáng giữ.",
+          "text": "Nguyễn Hiến Lê giảng hào trên cùng ở chót quẻ Hằng và ngoại quái Chấn nên ham động quá, lại âm nhu không bền chí, ở yên không được nên thất bại và xấu.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [234, 234],
-              "section": "Hào 6 — diễn giải",
-              "printedPages": ["234", "234"]
+              "pdfPages": [234, 234]
             }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          ]
         },
         {
-          "text": "Phan Bội Châu cho hào cuối ở chót Chấn và chót Hằng, quá động lúc lẽ thường đã tới cuối. Cần xét khi động khi tĩnh; cứ nóng nảy làm càn thì không tạo được công.",
+          "text": "Phan Bội Châu giải Thượng Lục ở cuối cùng thể Chấn là động cùng cực, lại ở cuối thời Hằng là đến buổi bất thường. Đã ở trên người mà không biết lúc nên động nên tĩnh, chỉ lắc xắc lau chau và thường xuyên táo động thì ắt thất bại, không lập được công và chuốc hung họa.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [327, 328],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [327, 328]
             }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          ]
         },
         {
-          "text": "Trình Di xem hào cuối âm mềm, ở trên mà không tự giữ được nết thường, chỉ lấy xốc nổi làm thói quen. Quá động và thiếu tiết độ làm việc không thành, không phải lời cấm mọi vận động.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [532, 533],
-              "section": "Hào 6 — diễn giải"
-            }
-          ],
+          "text": "Trình Di cho rằng hào Sáu ở chót quẻ Hằng và cùng tột thể Chấn, sự thường đã cùng thì thành bất thường. Chất âm nhu ở ngôi trên không phải chỗ yên ổn, lại không giữ vững nết thường mà lấy xốc nổi vận động không tiết độ làm nết thường nên hung và không có công.",
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [532, 533]
+            }
+          ]
+        },
+        {
+          "text": "Chu Hy giải xốc là động nhanh chóng. Hào Sáu Trên ở cùng tột quẻ Hằng và chót thể Chấn, sự thường cùng tột thì thành bất thường, thể Chấn chót thì quá động; lại là chất âm mềm không thể giữ bền, ở ngôi trên không yên nên có tượng xốc thường mà lời đoán hung.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [533, 533]
+            }
+          ]
         }
       ]
     }
   ],
   "notes": [
     {
-      "text": "NHL PDF 233 tổng quan Hằng có câu Hàm trên Chấn dưới Tốn, khác cấu trúc Hàm trong cùng sách. Ảnh xác nhận chữ Hàm. Tiêu đề, hình quẻ, lời quẻ và hai sách khác xác định Hằng là Chấn trên Tốn; giữ Hằng, không đổi tên hoặc cấu trúc Hàm.",
+      "text": "NHL PDF 233 tổng quan Hằng có câu Hàm trên Chấn dưới Tốn, khác cấu trúc Hàm trong cùng sách. Ảnh PDF 233 xác nhận chữ Hàm. Tiêu đề, hình quẻ, lời quẻ và hai sách khác xác định Hằng là Chấn trên Tốn; giữ Hằng, không đổi tên hoặc cấu trúc Hàm.",
       "references": [
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [233, 233],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["233", "233"]
+          "pdfPages": [233, 233]
         },
         {
           "sourceId": "source-book-pbc",
-          "pdfPages": [320, 324],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [320, 324]
         },
         {
           "sourceId": "source-book-ntt",
-          "pdfPages": [521, 526],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [521, 526]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [230, 231],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["230", "231"]
+          "pdfPages": [230, 231]
         }
       ]
     },
     {
-      "text": "PBC PDF 327 đầu hào cuối ghi Thượng Lục nhưng dòng Hán và hai chỗ trong phần giảng lại gọi Thượng Cửu. Ảnh xác nhận cả nhãn Lục và các chỗ Cửu. Hình quẻ và ba phần giải đều cho hào cuối âm; giữ Thượng lục, không đổi cấu trúc Hằng.",
+      "text": "PBC PDF 327 đầu hào cuối ghi Thượng Lục nhưng dòng Hán và hai chỗ trong phần giảng lại gọi Thượng Cửu. Ảnh PDF 327 xác nhận cả nhãn Lục và các chỗ Cửu. Hình quẻ và ba phần giải đều cho hào cuối âm; giữ Thượng lục, không đổi cấu trúc Hằng.",
       "references": [
         {
           "sourceId": "source-book-pbc",
-          "pdfPages": [327, 328],
-          "section": "Hào 6 — diễn giải"
+          "pdfPages": [327, 328]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [234, 234],
-          "section": "Hào 6 — diễn giải",
-          "printedPages": ["234", "234"]
+          "pdfPages": [234, 234]
         },
         {
           "sourceId": "source-book-ntt",
-          "pdfPages": [532, 533],
-          "section": "Hào 6 — diễn giải"
+          "pdfPages": [532, 533]
         }
       ]
     },
     {
-      "text": "NTT PDF 532 hào cuối có dòng Hán Thượng Cửu và dịch nghĩa Hào Chín Trên, khác dịch âm Thượng lục và lời giảng hào Sáu. Ảnh xác nhận sự không khớp. Hình quẻ và ba lời giảng xác định hào cuối âm; giữ Thượng lục và nghĩa âm mềm quá động.",
+      "text": "NTT PDF 532 hào cuối có dòng Hán Thượng Cửu và dịch nghĩa Hào Chín Trên, khác dịch âm Thượng lục và lời giảng hào Sáu. Ảnh PDF 532 xác nhận sự không khớp. Hình quẻ và ba lời giảng xác định hào cuối âm; giữ Thượng lục và nghĩa âm mềm quá động.",
       "references": [
         {
           "sourceId": "source-book-ntt",
-          "pdfPages": [532, 533],
-          "section": "Hào 6 — diễn giải"
+          "pdfPages": [532, 533]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [234, 234],
-          "section": "Hào 6 — diễn giải",
-          "printedPages": ["234", "234"]
+          "pdfPages": [234, 234]
         },
         {
           "sourceId": "source-book-pbc",
-          "pdfPages": [327, 328],
-          "section": "Hào 6 — diễn giải"
+          "pdfPages": [327, 328]
         }
       ]
     }

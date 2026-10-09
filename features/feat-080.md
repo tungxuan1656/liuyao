@@ -122,3 +122,11 @@ New interpretation, calendar, or UI behavior.
   expecting again in this batch.
 - Dependencies: [feature index](../feature_index.json).
 - Next: review and merge PR #108; the rest of the batch (feat-081, feat-082, feat-083) is still `todo`.
+
+## Follow-up review and integration — 2026-10-09
+
+- The operator requested review and fixes on PR #108 while leaving it unmerged. Confirmed PR #112 / feat-079 already merged and fetched updated `main`; the feature index on `main` was `feat-080: todo`, `feat-081: done`, `feat-082: done`, `feat-083: todo`. Kept these later statuses and preserved the older `feat-074: active` entry without changing unrelated features.
+- Inspected four quẻ / 24 hào / citation shapes and re-read the disputed Ngô Tất Tố, Phan Bội Châu and Nguyễn Hiến Lê pages for quẻ 49–52. One further **source-content defect** was found in a previously reviewed cell: `hexagram-52.json`, Lục Nhị, Phan Bội Châu text states `cứu được tam nên không vui`, directly reversing his explanation. **PBC PDF 497** explicitly says `Nhị ... không sức chỉ được Tam`, `không thể chữa được` and `không cứu chửng được` in the Tiểu Tượng, so this entry now correctly says Nhị cannot restrain or repair Tam, must follow and is unhappy.
+- No further actionable source-text discrepancy was confirmed in the high-risk passages checked. Earlier reviewer reports and their limitations remain described above; this follow-up does not claim to redo the entire independent two-round audit.
+- Synchronized the branch with latest `main` via a merge commit preserving all new append-only `progress.md` entries, `feature_index.json` changes from other PRs, and the reviewed quẻ 49–52 data. No identity, polarity, author-layer count or reference shape changed; five source notes remain.
+- Marked `feat-080` **done** in the feature index on this PR, before operator merge as directed. Run CI against final branch head. PR remains open; the operator will squash merge manually.

@@ -170,7 +170,7 @@ been reached (reset after 29m 52s)` and `9router/ag/claude-sonnet-4-6` returned 
 
 ## Handoff
 
-- State: active — content reviewed and frozen at `f772018`; awaiting push, PR, exact-head CI and merge.
+- State: done — feat-081 content merged through PR #102 (merge `1b1aec7834177e0ced36ca0010c903e5207df451`); follow-up source-gloss and copy corrections are proposed separately.
 - Evidence: rounds 1–2 as recorded in `## Verify`; `./init.sh` passed (181 core + 97 knowledge tests);
   `validate:corpus --check-books --check` passed (381 records / 381 ready / 4 supplied books); structural
   invariants unchanged for all 4 files; all 15 image-dependent note claims verified from page images;
@@ -183,5 +183,4 @@ been reached (reset after 29m 52s)` and `9router/ag/claude-sonnet-4-6` returned 
   deletions — it was not a second exhaustive pass. Quẻ 54's Trình Di commentary is truncated mid-sentence
   in NTT 814, and the record states that gap instead of filling it.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: push `feat/081-hexagram-review-53-56`, open one PR, wait for exact-head CI, merge, then record the
-  merge SHA and set feat-081 to `done`.
+- Next: Review and merge the follow-up correction PR; its status and CI are tracked in that PR.

@@ -18,34 +18,34 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] 37 · Sơ (1).
-- [ ] 37 · Nhị (2).
-- [ ] 37 · Tam (3).
-- [ ] 37 · Tứ (4).
-- [ ] 37 · Ngũ (5).
-- [ ] 37 · Thượng (6).
-- [ ] 38 · Sơ (1).
-- [ ] 38 · Nhị (2).
-- [ ] 38 · Tam (3).
-- [ ] 38 · Tứ (4).
-- [ ] 38 · Ngũ (5).
-- [ ] 38 · Thượng (6).
-- [ ] 39 · Sơ (1).
-- [ ] 39 · Nhị (2).
-- [ ] 39 · Tam (3).
-- [ ] 39 · Tứ (4).
-- [ ] 39 · Ngũ (5).
-- [ ] 39 · Thượng (6).
-- [ ] 40 · Sơ (1).
-- [ ] 40 · Nhị (2).
-- [ ] 40 · Tam (3).
-- [ ] 40 · Tứ (4).
-- [ ] 40 · Ngũ (5).
-- [ ] 40 · Thượng (6).
-- [ ] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
-- [ ] Inspect full passages/images; review each source error and exclusion.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] 37 · Sơ (1).
+- [x] 37 · Nhị (2).
+- [x] 37 · Tam (3).
+- [x] 37 · Tứ (4).
+- [x] 37 · Ngũ (5).
+- [x] 37 · Thượng (6).
+- [x] 38 · Sơ (1).
+- [x] 38 · Nhị (2).
+- [x] 38 · Tam (3).
+- [x] 38 · Tứ (4).
+- [x] 38 · Ngũ (5).
+- [x] 38 · Thượng (6).
+- [x] 39 · Sơ (1).
+- [x] 39 · Nhị (2).
+- [x] 39 · Tam (3).
+- [x] 39 · Tứ (4).
+- [x] 39 · Ngũ (5).
+- [x] 39 · Thượng (6).
+- [x] 40 · Sơ (1).
+- [x] 40 · Nhị (2).
+- [x] 40 · Tam (3).
+- [x] 40 · Tứ (4).
+- [x] 40 · Ngũ (5).
+- [x] 40 · Thượng (6).
+- [x] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
+- [x] Inspect full passages/images; review each source error and exclusion.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -63,13 +63,83 @@ New interpretation, calendar, or UI behavior.
 
 ## Verify
 
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Confirm all assigned units and document routes.
+Executed at reviewed head `afe0a65f676e177d862a0b6f5c0d845863bdcd71` (content commit `75540faf1cedacad9854e8eba9fc641dbc5f60db`, PR [#101](https://github.com/tungxuan1656/liuyao/pull/101)):
+
+- `./init.sh` → `=== Verification passed ===`; 97 knowledge tests pass. Re-run green at the record commit
+  `8153f87` with no formatting drift.
+- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` → `Knowledge: 381 records; 381
+ready; 4 supplied books. Structural links and source pages valid.` Run the generating form
+  (`--check-books`, no `--check`) after any source edit, because `--check` compares the generated
+  `dist/` and `.generated/` outputs against the sources.
+- Structure comparison against baseline `b9d306d` (artifact `.agent-work/feat-077/invariants.md`): **0 of
+  4** files changed an invariant field; all 24 `(position, polarity, label)` tuples unchanged; no
+  `section`, `printedPages` or `condition` keys remain; every reference is exactly `{sourceId,
+pdfPages: [start, end]}`; each file has 5 overview entries and 4 entries on all six hào; all four
+  records `status: "ready"`.
+- Review rounds: 1 exhaustive (`70a9416d`, 28 of 28 attributed cells per quẻ) → 40 PASS, 37/38/39 FAIL
+  with 4 P1 findings → corrections applied and re-verified against the cited pages (`.agent-work/
+feat-077/fix3{7,8,9}.md`) → 2 verification of the corrections and their direct uses (`e0ccc0d3`)
+  → 37, 38, 39 all PASS, 0 new findings. Quẻ 40 owns no correction to verify and its file is
+  byte-identical (`3bf1eedf46ad1af4708f232ea6e3bd8a35408a2a`) to the revision round 1 passed, so round 2
+  had nothing to inspect there.
+- PDF images: 3 of the 4 notes assert something about a printed page image, which no reviewer can check.
+  The Leader rendered those pages with PyMuPDF and read them: NHL 249 (the hào-two gloss is `vô du
+loại`), NHL 252 (the hào heading is `Lục tam` while the gloss below says `dương mà ở vị âm`) and NTT
+  620 (Chu Hy writes `hào Sáu Năm`). 38's second note is a prose claim the extracted text already
+  attests (NTT 603).
+- Leader spot-checks of cells round 1 marked clean (NTT 600 Khổng Tử với Dương Hóa, NTT 629 `Chỉ có
+lánh mà đi mới khỏi`, NTT 631–632 `Kẻ tiểu nhân lui xuống, thì đấng quân tử tiến lên`) agreed with
+  the entries.
+- All four overview entries carry the inherited `source-book-nhl` `[59, 61]` declaration for `Hào được
+đếm từ dưới lên`; NHL 59 does state `Cách vạch và xét trùng quái: từ dưới lên`, so the declaration is
+  correct, and `hexagram-20.json` carries the same pair.
+
+## Decision log
+
+### `notes` stays absent where there is no source error
+
+- **Question:** quẻ 40 has no `notes` key at all after the review. Is that a defect?
+- **Decision:** leave it absent.
+- **Rationale:** `notes?` is optional in `packages/knowledge/src/content-schema.ts`, and 12 of the 64
+  hexagram records omit it, including merged records such as `hexagram-06.json` and `hexagram-07.json`.
+  Adding `"notes": []` would be an empty ledger, not knowledge.
+- **Evidence:** schema line 71 (`readonly notes?: readonly ContentEntry[]`), and a scan of
+  `packages/knowledge/data/hexagrams/`.
+
+### Round 2 ran on a different model than round 1
+
+- **Question:** the round-2 verifier children all failed on provider quota (`9router/cx/gpt-6.1-sol` HTTP
+  429; `9router/ag/claude-sonnet-4-6` unavailable), so the round could not run on the round-1 model.
+- **Decision:** keep the same `reviewer` agent and the same brief, and pass `9router/cx/gpt-6-luna` for
+  the round-2 children.
+- **Alternatives:** wait out the quota reset, or skip round 2 for these three quẻ.
+- **Rationale:** the round's value is a second independent read of the corrections, and the brief pins the
+  acceptance bar; the model is an implementation detail of the lane, not of the verdict.
+- **Evidence:** failed workflows `22506956` and `ede0f357` (all three children each), passing workflow
+  `e0ccc0d3`.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- State: done, verified at `8153f87`; feature PR [#101](https://github.com/tungxuan1656/liuyao/pull/101)
+  is open against `main` from branch `tungxuan1656/feat-077`.
+- Evidence: content commit `75540fa`, corrections `afe0a65`, records `8153f87`; `./init.sh` passed (97
+  knowledge tests); `validate:corpus --check-books --check` passed (381 records / 381 ready / 4 supplied
+  books); invariants unchanged for all 4 files; round 1 (4 reviewers) and round 2 (3 verifiers) recorded
+  above; 3 image-dependent notes verified by rendering the source pages.
+- Blockers: none.
+- Limits: reviewer children cannot see PDF page images and reported that plainly, so the 3 image claims
+  were verified by the Leader only; round 2 ran on `9router/cx/gpt-6-luna` rather than the round-1
+  `9router/cx/gpt-6.1-sol` because of provider quota. PR #101 CI is green on the reviewed content head
+  `d97fbeb` (`verify` pass, Cloudflare Pages pass, GitGuardian pass, `mergeStateStatus: CLEAN`);
+  human review is pending.
+- Dependencies: [feature index](../feature_index.json).
+- Next: resolve PR #101 CI and review feedback, then activate the next unstarted batch feature.
+
+## Follow-up review and merge preparation — 2026-10-09
+
+- Rechecked quẻ 37–40 and their 24 hào against the supplied book pages (Nguyễn Hiến Lê PDF 248–260, Phan Bội Châu PDF 358–394, Ngô Tất Tố PDF 583–634), in addition to the two earlier review rounds. The structural and source checks remained intact.
+- **Kiển Lục Tứ:** Ngô Tất Tố PDF 617 prints `Chín Hai` in Chu Hy's explanation where `Cửu Tam` is the adjacent yang line (see NTT PDF 616–617 and quẻ structure). Confirmed on the rendered page, corrected the explanation and recorded a separate note rather than silently modifying the source.
+- **Khuê Sơ Cửu/Cửu Tứ:** Ngô Tất Tố PDF 599–600 explicitly distinguishes their same-yang informal alliance from a formal yin–yang `chính ứng`; Nguyễn Hiến Lê PDF 252 and Phan Bội Châu PDF 373 use `ứng` to describe their cooperation. Added an editorial note preserving both readings.
+- **Restored meaningful cautionary context:** the original batch removed every `condition`, including displays that distinguish ancient family roles, coercion, fortune imagery, directionality and political violence from modern instructions. The canonical knowledge model continues to support conditions, and the web UI renders them. Reinstated 18 targeted inherited cautions across the four quẻ without bringing back repetitive boilerplate or the optional `section` / `printedPages` metadata.
+- Existing quẻ structures, 24 hào, 96 attributed line entries and author attributions remain unchanged. The two new notes bring total `notes` to 6 (1, 3, 2, 0).
+- Synchronized branch with current `main`, retained the newer append-only progress history and marked `feat-077` `done` for operator merge. PR #101 remains open; do not merge automatically. Run verification on the final head.
