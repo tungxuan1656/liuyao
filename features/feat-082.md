@@ -121,7 +121,8 @@ New interpretation, calendar, or UI behavior.
 ## Handoff
 
 - State: done.
-- Evidence: reviewed heads `3cd0363` (writer pass) and `c5141d8` (fix pass), one PR for this feature;
+- Evidence: PR #115 (one PR for this feature), reviewed heads `3cd0363` (writer pass) and `c5141d8` (fix
+  pass);
   `./init.sh` passed (181 core + 97 knowledge tests);
   `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passed
   (381 records / 381 ready / 4 supplied books); structure invariants unchanged for all 4 files
