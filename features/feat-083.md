@@ -93,7 +93,7 @@ Review evidence, all outside product commits:
 
 ## Independent retrospective round-2 review — 2026-10-10 (issue #118)
 
-**Verdict: PASS for all seven previously corrected findings, their tested direct uses, and nearby/high-risk passages.** This is a new, independently conducted source review of the *merged* record content, separate from feat-083's original writer and Leader. It did **not** run the originally prepared round-2 worker, enlist an external human scholar, or repeat all 128 round-1 comparisons. Those distinctions remain explicit; this targeted verification meets the written round-2 scope of checking fixes, their uses and risk cells, rather than claiming full new certification.
+**Verdict: PASS for all seven previously corrected findings, their tested direct uses, and nearby/high-risk passages.** This is a new, independently conducted source review of the _merged_ record content, separate from feat-083's original writer and Leader. It did **not** run the originally prepared round-2 worker, enlist an external human scholar, or repeat all 128 round-1 comparisons. Those distinctions remain explicit; this targeted verification meets the written round-2 scope of checking fixes, their uses and risk cells, rather than claiming full new certification.
 
 - Reviewed `main` SHA: `a4bffd2d729a9f465d938cf4d7d4490d62f99cde` (after PR #122).
 - Exact reviewed record blob SHAs: quẻ 61 `797fb751ff59f3b8779c64cbfcb8051ac619df0c`; 62 `947773f7eb3b8ca9ed9457437ce848da92d74df7`; 63 `166998fb676e6a2601bd9dbb18340eed720325c0`; 64 `fbf41d961721a8a1d7070aaf70ba56f215ac2198`.
@@ -102,11 +102,11 @@ Review evidence, all outside product commits:
 
 #### 61-1 — `entries[1]` NHL overview inverted the response relationship
 
-**PASS** — NHL PDF **321** explicitly has upper Tốn *thuận với người dưới* and lower Đoài *phục tòng người trên*. The corrected explanation preserves both directions and the *chính đạo* requirement.
+**PASS** — NHL PDF **321** explicitly has upper Tốn _thuận với người dưới_ and lower Đoài _phục tòng người trên_. The corrected explanation preserves both directions and the _chính đạo_ requirement.
 
 #### 61-2 — `entries[5].references` cited only the translator's final notes
 
-**PASS** — NTT **895** contains Tự Quái, NTT **899** contains hào-nhị's `ràng`, and NTT **904** footnotes **[1]–[2]** give the title gloss and *Dịch theo Chu Hy*. The entry now cites all relevant pages and retains Ngô Tất Tố's own attribution.
+**PASS** — NTT **895** contains Tự Quái, NTT **899** contains hào-nhị's `ràng`, and NTT **904** footnotes **[1]–[2]** give the title gloss and _Dịch theo Chu Hy_. The entry now cites all relevant pages and retains Ngô Tất Tố's own attribution.
 
 #### 61-3 — `lines[4].entries[3]` wrongly embedded a project polarity gloss in Chu Hy's reading
 
@@ -116,28 +116,27 @@ Review evidence, all outside product commits:
 
 **PASS** — NTT **899** (nhị) and **903** (ngũ) separately support the note; the current references include both, plus NHL **322** and PBC **568–569**.
 
-#### 62-1 — `entries[4]` assigned the three *Đại Tượng* examples to the wrong NTT source pages
+#### 62-1 — `entries[4]` assigned the three _Đại Tượng_ examples to the wrong NTT source pages
 
-**PASS** — Chu Hy's `ba điều đó` and its limits occur on NTT **909**, while footnote **[3]** defining them as *nết, tang và dùng* is at NTT **916**. The present references include both; `entries[5]` separately attributes the footnote expansion to Ngô Tất Tố.
+**PASS** — Chu Hy's `ba điều đó` and its limits occur on NTT **909**, while footnote **[3]** defining them as _nết, tang và dùng_ is at NTT **916**. The present references include both; `entries[5]` separately attributes the footnote expansion to Ngô Tất Tố.
 
 #### 62-2 — `lines[2].entries[0]` weakened NHL's hào-tam harm judgment
 
-**PASS** — NHL **326** says *bị chúng làm hại* and *bị vạ*, not merely “at risk.” Current line 3 preserves **`nên bị vạ`**. Neighbouring PBC **579–580** and NTT **911–912** were read without merging other authors' conditions into NHL's judgment.
+**PASS** — NHL **326** says _bị chúng làm hại_ and _bị vạ_, not merely “at risk.” Current line 3 preserves **`nên bị vạ`**. Neighbouring PBC **579–580** and NTT **911–912** were read without merging other authors' conditions into NHL's judgment.
 
 #### 64-1 — `notes[0].references` cited only NHL 331 for the complete six-line passage
 
 **PASS** — NHL **331** twice prints **5 hào** in overview prose, yet its quẻ diagram and the **six line sections run from NHL 331 through 333**. The corrected `[331,333]` range actually supports the claim; PBC **593–594** and NTT **928** independently confirm the six-line structure.
 
-
 ### Additional independent high-risk checks
 
-- **61**: NTT **899/903**, NHL **322**, PBC **568–569** support the distinct *same-yang tín ứng* wording; it does not create a structural *chính ứng*. NTT **900** explicitly names **Trương Trung Khê** as the extra tam commentator. PBC **655** endnote **[21]** gives the Vị Sinh anecdote but does not identify the endnote's author; `lines[5].entries[4]` correctly retains *người chú chưa xác định* instead of inventing authorship.
-- **62**: NHL **325**, PBC **578–579**, NTT **910–911** preserve the difference between the two **yin** nhị/ngũ lines *meeting* and the formal yin/yang correspondence rule. NTT **914** explicitly says they are not `ứng`; NTT **912** confirms yang tam's separate position and judgment. No polarity/line-order change is supported.
-- **63**: PBC **588** visibly begins the block with *Lục Nhị* but later prints *Cửu Nhị*, exactly as the current source-error note says. NTT **921** distinguishes Trình Di and Chu Hy's readings. NTT **926**, footnote **[2]**, distinguishes the translator's *khăn trùm* from Chu Hy's *mui xe*; the current Ngô Tất Tố attribution is warranted.
-- **64**: NHL **331–333** confirms the six printed hào and its two separate “5 hào” overview slips. NTT **930** prints the Chinese *濡其尾* and *nhu kỳ vĩ* (tail) while the adjacent printed Vietnamese translation and Trình Di explanation read *đầu* (head); `notes[1]` accurately keeps the textual discrepancy instead of silently emending the book.
+- **61**: NTT **899/903**, NHL **322**, PBC **568–569** support the distinct _same-yang tín ứng_ wording; it does not create a structural _chính ứng_. NTT **900** explicitly names **Trương Trung Khê** as the extra tam commentator. PBC **655** endnote **[21]** gives the Vị Sinh anecdote but does not identify the endnote's author; `lines[5].entries[4]` correctly retains _người chú chưa xác định_ instead of inventing authorship.
+- **62**: NHL **325**, PBC **578–579**, NTT **910–911** preserve the difference between the two **yin** nhị/ngũ lines _meeting_ and the formal yin/yang correspondence rule. NTT **914** explicitly says they are not `ứng`; NTT **912** confirms yang tam's separate position and judgment. No polarity/line-order change is supported.
+- **63**: PBC **588** visibly begins the block with _Lục Nhị_ but later prints _Cửu Nhị_, exactly as the current source-error note says. NTT **921** distinguishes Trình Di and Chu Hy's readings. NTT **926**, footnote **[2]**, distinguishes the translator's _khăn trùm_ from Chu Hy's _mui xe_; the current Ngô Tất Tố attribution is warranted.
+- **64**: NHL **331–333** confirms the six printed hào and its two separate “5 hào” overview slips. NTT **930** prints the Chinese _濡其尾_ and _nhu kỳ vĩ_ (tail) while the adjacent printed Vietnamese translation and Trình Di explanation read _đầu_ (head); `notes[1]` accurately keeps the textual discrepancy instead of silently emending the book.
 
-**Rendered-image checks actually performed by this reviewer:** NHL **331** (diagram and both 5-hào slips); NTT **911** (the Chinese tam Tiểu Tượng unexpectedly placed under the nhị discussion, next to a different Vietnamese gloss); NTT **930** (*đuôi* vs *đầu* in the same printed passage); PBC **588** (*Lục Nhị* heading vs later *Cửu Nhị*). Extracted-text checks on other cited pages are **not** presented as visual inspections.
+**Rendered-image checks actually performed by this reviewer:** NHL **331** (diagram and both 5-hào slips); NTT **911** (the Chinese tam Tiểu Tượng unexpectedly placed under the nhị discussion, next to a different Vietnamese gloss); NTT **930** (_đuôi_ vs _đầu_ in the same printed passage); PBC **588** (_Lục Nhị_ heading vs later _Cửu Nhị_). Extracted-text checks on other cited pages are **not** presented as visual inspections.
 
 **Independent structural inventory of current JSON:** 4 `ready` quẻ, 24 correctly ordered lines (1–6), 98 attributed line entries (26/24/24/24), six notes (1/2/1/2) and **281 valid in-bounds source references**. Additional scholarly voices, unknown contributors and optional `condition`, `section` and `printedPages` values remain unchanged. No established P0/P1 or source-fidelity defect warrants a data patch in this bounded review.
 
-**Handoff:** original feature `done` status remains unchanged, and original skipped round-2 history above is preserved. This *new* separate round-2 source check resolves the documented correction-verification gap **without** claiming a new 128-unit audit or external human certification. Final-head CI and operator review/merge remain required; no new feature is activated.
+**Handoff:** original feature `done` status remains unchanged, and original skipped round-2 history above is preserved. This _new_ separate round-2 source check resolves the documented correction-verification gap **without** claiming a new 128-unit audit or external human certification. Final-head CI and operator review/merge remain required; no new feature is activated.
