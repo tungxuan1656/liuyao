@@ -1,470 +1,486 @@
 {
-  "id": "hexagram-18",
-  "type": "hexagram",
-  "title": "Sơn Phong Cổ",
   "aliases": ["Cổ"],
-  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "relatedIds": ["trigram-wind", "trigram-mountain"],
-  "status": "ready",
   "entries": [
     {
-      "text": "Sơn Phong Cổ có ngoại quái Cấn và nội quái Tốn. Hào được đếm từ dưới lên.",
       "references": [
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [191, 191],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["191", "191"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [206, 209],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [346, 350],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [59, 61],
-          "section": "Thuật ngữ; Hào cửu — Hào lục",
-          "printedPages": ["59", "61"]
-        }
-      ]
-    },
-    {
-      "text": "Nguyễn Hiến Lê giải Cổ theo việc sửa điều hư hỏng đã tích lại. Trước và sau ngày Giáp được ông đọc như xét nguyên nhân trước khi sửa và dự phòng hậu quả về sau, không chỉ làm việc trước mắt.",
-      "references": [
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [191, 191],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["191", "191"]
+          "sourceId": "source-book-nhl"
         }
       ],
+      "text": "Sơn Phong Cổ có ngoại quái Cấn và nội quái Tốn. Hào được đếm từ dưới lên."
+    },
+    {
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      }
-    },
-    {
-      "text": "Phan Bội Châu đặt Cổ ở việc khắc phục tệ cũ bằng sức mạnh và sự chuẩn bị. Muốn sửa cần tìm nguyên nhân rồi lo cách giữ kết quả, không xem cảnh hư hỏng tự chuyển thành tốt.",
+      },
       "references": [
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [206, 209],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [191, 191],
+          "sourceId": "source-book-nhl"
         }
       ],
+      "text": "Nguyễn Hiến Lê giải Cổ theo việc sửa điều hư hỏng đã tích lại. Trước và sau ngày Giáp được ông đọc như xét nguyên nhân trước khi sửa và dự phòng hậu quả về sau, không chỉ làm việc trước mắt."
+    },
+    {
       "attribution": {
         "author": "Phan Bội Châu"
-      }
-    },
-    {
-      "text": "Trình Di lấy Cổ làm việc phải sửa và nhấn mạnh tìm nguyên nhân cùng phòng điều tái phát. Ông đọc Cấn trên Tốn như cách làm có trật tự, mềm thuận mà biết dừng cho đúng để trị Cổ.",
+      },
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [346, 350],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [206, 209],
+          "sourceId": "source-book-pbc"
         }
       ],
+      "text": "Phan Bội Châu đặt Cổ ở việc khắc phục tệ cũ bằng sức mạnh và sự chuẩn bị. Muốn sửa cần tìm nguyên nhân rồi lo cách giữ kết quả, không xem cảnh hư hỏng tự chuyển thành tốt."
+    },
+    {
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
-    },
-    {
-      "text": "Chu Hy lấy người dưới mềm theo và người trên dừng không làm làm nguyên nhân tích thành hư hỏng. Cách đọc Cấn–Tốn này khác Trình Di dùng hai thể để giảng phương pháp sửa Cổ.",
+      },
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [347, 348],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [346, 350],
+          "sourceId": "source-book-ntt"
         }
       ],
+      "text": "Trình Di lấy Cổ làm việc phải sửa và nhấn mạnh tìm nguyên nhân cùng phòng điều tái phát. Ông đọc Cấn trên Tốn như cách làm có trật tự, mềm thuận mà biết dừng cho đúng để trị Cổ."
+    },
+    {
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
+      },
+      "references": [
+        {
+          "pdfPages": [347, 348],
+          "sourceId": "source-book-ntt"
+        }
+      ],
+      "text": "Chu Hy lấy người dưới mềm theo và người trên dừng không làm làm nguyên nhân tích thành hư hỏng. Cách đọc Cấn–Tốn này khác Trình Di dùng hai thể để giảng phương pháp sửa Cổ."
     }
   ],
+  "id": "hexagram-18",
   "kingWenNumber": 18,
-  "upperTrigramId": "trigram-mountain",
-  "lowerTrigramId": "trigram-wind",
   "lines": [
     {
-      "position": 1,
-      "polarity": "yin",
-      "label": "Sơ lục",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê xem hào đầu gánh việc hỏng từ đời cha và biết sửa để giữ danh người trước. Cần thận trọng trước khó khăn mới có kết quả tốt.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [192, 192],
-              "section": "Hào 1 — diễn giải",
-              "printedPages": ["192", "192"]
-            }
-          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu mở nghĩa sửa việc cha sang việc khắc phục tệ do người trước để lại. Người kế tiếp phải lo và dè dặt khi sửa, không lấy thừa hưởng làm lý do tiếp tục điều hỏng.",
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
+              "pdfPages": [192, 192],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê xem hào đầu gánh việc hỏng từ đời cha và biết sửa để giữ danh người trước. Cần thận trọng trước khó khăn mới có kết quả tốt."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
               "pdfPages": [209, 210],
-              "section": "Hào 1 — diễn giải"
+              "sourceId": "source-book-pbc"
             }
           ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          "text": "Phan Bội Châu mở nghĩa sửa việc cha sang việc khắc phục tệ do người trước để lại. Người kế tiếp phải lo và dè dặt khi sửa, không lấy thừa hưởng làm lý do tiếp tục điều hỏng."
         },
         {
-          "text": "Trình Di đọc hào đầu theo người con sửa việc cha, khiến việc và danh của người trước được giữ. Biết khó mà cẩn thận là điều kiện tốt về cuối, không phải chấp nhận mọi việc cũ.",
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
               "pdfPages": [350, 352],
-              "section": "Hào 1 — diễn giải"
+              "sourceId": "source-book-ntt"
             }
           ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 2,
-      "polarity": "yang",
-      "label": "Cửu nhị",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê lấy mẹ làm hình ảnh người mềm ở hào năm mà hào hai mạnh cần giúp sửa. Cách sửa phải mềm và khéo, không áp sự cứng rắn tới mức làm tổn quan hệ.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [192, 192],
-              "section": "Hào 2 — diễn giải",
-              "printedPages": ["192", "192"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          "text": "Trình Di đọc hào đầu theo người con sửa việc cha, khiến việc và danh của người trước được giữ. Biết khó mà cẩn thận là điều kiện tốt về cuối, không phải chấp nhận mọi việc cũ."
         },
         {
-          "text": "Phan Bội Châu giải sửa việc mẹ theo phương pháp phù hợp người mềm và hoàn cảnh riêng. Cần giữ điều đúng nhưng tránh cố chấp cứng nhắc trong cách thực hiện.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [210, 210],
-              "section": "Hào 2 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di cho Chín Hai giúp sửa việc của Sáu Năm bằng cách mềm thuận. Không thể giữ cứng ở đây nói về phương pháp sửa, không phải cho phép bỏ lẽ đúng.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [352, 353],
-              "section": "Hào 2 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 3,
-      "polarity": "yang",
-      "label": "Cửu tam",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê xem hào ba quá cứng nên dễ nóng vội khi sửa việc cha. Có chút hối nhưng tài và lẽ đúng vẫn giúp tránh lỗi lớn.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [192, 192],
-              "section": "Hào 3 — diễn giải",
-              "printedPages": ["192", "192"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu đọc hào ba đủ sức sửa nhưng dễ quá tay vì cương mạnh. Biết theo lẽ đúng và còn đức thuận thì tuy có chút hối vẫn làm được việc.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [210, 211],
-              "section": "Hào 3 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di cho hào ba không ở giữa nên cách sửa dễ cứng quá. Tuy vậy, dương ở vị đúng và thuộc thể Tốn khiến có thể sửa được, chỉ có hối nhỏ mà không lỗi lớn.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [353, 354],
-              "section": "Hào 3 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 4,
-      "polarity": "yin",
-      "label": "Lục tứ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê xem hào bốn mềm yếu, trì hoãn và dung túng việc hỏng từ người trước. Để sự hư hỏng kéo dài khiến tiến làm việc gặp khó và đáng tiếc.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [192, 192],
-              "section": "Hào 4 — diễn giải",
-              "printedPages": ["192", "192"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu đọc hào bốn quá mềm nên nới cho tệ cũ tồn tại. Không quyết sửa mà cứ tiến trong tình trạng ấy thì việc khó thành.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [211, 211],
-              "section": "Hào 4 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di cho hào bốn mềm ở vị mềm có thể tự giữ trong việc thường nhưng không đủ sức gánh việc sửa Cổ. Chỉ nới và kéo dài việc cũ nên khi nhận trách nhiệm đặc biệt sẽ không làm nổi.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [354, 355],
-              "section": "Hào 4 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        },
-        {
-          "text": "Chu Hy đọc hào bốn như người không thể có hành động sửa mạnh nên để điều hỏng tiếp diễn. Lời ông tập trung vào sự dung hoãn, giữ riêng với phân biệt việc thường và việc đặc biệt của Trình Di.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [355, 355],
-              "section": "Hào 4 — diễn giải"
-            }
-          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "pdfPages": [351, 351],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải thích cán là gốc như gốc cây cho cành lá bám vào đứng vững, còn Cổ là việc đã hỏng của tiền nhân nên các hào đều có tượng cha mẹ. Hào Sáu Đầu sự hư hỏng chưa sâu nên việc dễ xong, có con gánh vác việc hỏng thì cha không lỗi nhưng việc vẫn có chỗ nguy; biết nguy mà lo sợ răn dè thì sau chót được tốt lành."
         }
-      ]
-    },
-    {
-      "position": 5,
+      ],
+      "label": "Sơ lục",
       "polarity": "yin",
-      "label": "Lục ngũ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê giải hào năm mềm mà trung, biết tin người có tài ở hào hai để sửa việc. Dùng đúng người giúp công việc được khen, không cần người đứng đầu tự làm hết.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [192, 192],
-              "section": "Hào 5 — diễn giải",
-              "printedPages": ["192", "192"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu đặt lời khen ở người kế nghiệp biết dùng người mạnh và giỏi để sửa. Cách giảng này nghiêng về chấn chỉnh việc đã có, khác vai dựng nền ban đầu.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [211, 212],
-              "section": "Hào 5 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di xem hào năm biết nhờ hào hai cương trung nên có thể sửa việc người trước. Được khen vì biết dùng người để chấn chỉnh sự nghiệp, không phải vì tự có sức làm mọi việc.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [355, 356],
-              "section": "Hào 5 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
+      "position": 1
     },
     {
-      "position": 6,
-      "polarity": "yang",
-      "label": "Thượng cửu",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê đọc hào cuối ở người có thể giữ đức ngoài việc làm quan. Không phụng sự quyền thế để cầu lợi là lựa chọn phù hợp vị cuối trong cách giảng này.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [193, 193],
-              "section": "Hào 6 — diễn giải",
-              "printedPages": ["193", "193"]
-            }
-          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu cho người ngoài trách nhiệm sửa Cổ có thể giữ chí bằng cách không cầu quan hoặc giàu. Tiến hay lui vẫn cần xét lúc nào nên làm, không biến việc ẩn lui thành quy tắc cho mọi người.",
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [212, 213],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [192, 192],
+              "sourceId": "source-book-nhl"
             }
           ],
+          "text": "Nguyễn Hiến Lê lấy mẹ làm hình ảnh người mềm ở hào năm mà hào hai mạnh cần giúp sửa. Cách sửa phải mềm và khéo, không áp sự cứng rắn tới mức làm tổn quan hệ."
+        },
+        {
           "attribution": {
             "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di giải hào cuối không còn gánh việc của quẻ nên có thể giữ chí ở ngoài chức vụ. Có nhiều lý do lui, nhưng cao thấp của chí và việc nên tiến hay lui phải xét theo thời.",
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [356, 357],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [210, 210],
+              "sourceId": "source-book-pbc"
             }
           ],
+          "text": "Phan Bội Châu giải sửa việc mẹ theo phương pháp phù hợp người mềm và hoàn cảnh riêng. Cần giữ điều đúng nhưng tránh cố chấp cứng nhắc trong cách thực hiện."
+        },
+        {
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "pdfPages": [352, 353],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho Chín Hai giúp sửa việc của Sáu Năm bằng cách mềm thuận. Không thể giữ cứng ở đây nói về phương pháp sửa, không phải cho phép bỏ lẽ đúng."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [352, 353],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải thích Chín Hai là hào cứng ở giữa, trên ứng với Sáu Năm, là tượng con gánh vác việc hư hỏng của mẹ mà được vừa phải. Kẻ cứng vâng theo người mềm để sửa sự hỏng nên hào từ răn không thể kiên trinh cố chấp."
         }
-      ]
+      ],
+      "label": "Cửu nhị",
+      "polarity": "yang",
+      "position": 2
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [192, 192],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê xem hào ba quá cứng nên dễ nóng vội khi sửa việc cha. Có chút hối nhưng tài và lẽ đúng vẫn giúp tránh lỗi lớn."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [210, 211],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu đọc hào ba đủ sức sửa nhưng dễ quá tay vì cương mạnh. Biết theo lẽ đúng và còn đức thuận thì tuy có chút hối vẫn làm được việc."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [353, 354],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho hào ba không ở giữa nên cách sửa dễ cứng quá. Tuy vậy, dương ở vị đúng và thuộc thể Tốn khiến có thể sửa được, chỉ có hối nhỏ mà không lỗi lớn."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [354, 354],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy chỉ rõ hào ba quá cứng mà không được trung đạo nên hơi có điều ăn năn. Nhưng nhờ ở thể Tốn mà được ngôi chính đính nên rốt cuộc không mắc lỗi lớn."
+        }
+      ],
+      "label": "Cửu tam",
+      "polarity": "yang",
+      "position": 3
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [192, 192],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê xem hào bốn mềm yếu, trì hoãn và dung túng việc hỏng từ người trước. Để sự hư hỏng kéo dài khiến tiến làm việc gặp khó và đáng tiếc."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [211, 211],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu đọc hào bốn quá mềm nên nới cho tệ cũ tồn tại. Không quyết sửa mà cứ tiến trong tình trạng ấy thì việc khó thành."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [354, 355],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho hào bốn mềm ở vị mềm có thể tự giữ trong việc thường nhưng không đủ sức gánh việc sửa Cổ. Chỉ nới và kéo dài việc cũ nên khi nhận trách nhiệm đặc biệt sẽ không làm nổi."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [355, 355],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải thích hào bốn là hào âm ở ngôi âm, không thể làm việc, đó là tượng rộng rãi khoan dung đối với việc hư hỏng. Như thế sự hư hỏng sẽ mỗi ngày một sâu thêm, cho nên nếu tiến đi thì thấy điều đáng tiếc; đó là lời răn kẻ xem không được như vậy."
+        }
+      ],
+      "label": "Lục tứ",
+      "polarity": "yin",
+      "position": 4
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [192, 192],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giải hào năm mềm mà trung, biết tin người có tài ở hào hai để sửa việc. Dùng đúng người giúp công việc được khen, không cần người đứng đầu tự làm hết."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [211, 212],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu đặt lời khen ở người kế nghiệp biết dùng người mạnh và giỏi để sửa. Cách giảng này nghiêng về chấn chỉnh việc đã có, khác vai dựng nền ban đầu."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [355, 356],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di xem hào năm biết nhờ hào hai cương trung nên có thể sửa việc người trước. Được khen vì biết dùng người để chấn chỉnh sự nghiệp, không phải vì tự có sức làm mọi việc."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [356, 356],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy chỉ rõ hào năm âm mềm ở giữa và ở ngôi tôn quý, được hào Chín Hai đem đức thuận theo phò tá. Lấy cách ấy mà gánh vác việc sửa sang tệ cũ của cha thì đem lại tiếng tăm khen ngợi."
+        }
+      ],
+      "label": "Lục ngũ",
+      "polarity": "yin",
+      "position": 5
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [193, 193],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê đọc hào cuối ở người có thể giữ đức ngoài việc làm quan. Không phụng sự quyền thế để cầu lợi là lựa chọn phù hợp vị cuối trong cách giảng này."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [212, 213],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu cho người ngoài trách nhiệm sửa Cổ có thể giữ chí bằng cách không cầu quan hoặc giàu. Tiến hay lui vẫn cần xét lúc nào nên làm, không biến việc ẩn lui thành quy tắc cho mọi người."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [356, 357],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di giải hào cuối không còn gánh việc của quẻ nên có thể giữ chí ở ngoài chức vụ. Có nhiều lý do lui, nhưng cao thấp của chí và việc nên tiến hay lui phải xét theo thời."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [357, 357],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy nhận định Thượng Cửu là hào dương cương ở ngôi trên cùng, tức là người ở ngoài công việc. Tượng hào là không thờ vương hầu mà nêu cao chí hướng của mình, lời chiêm đoán và lời răn dạy đều ngụ ở bên trong đó."
+        }
+      ],
+      "label": "Thượng cửu",
+      "polarity": "yang",
+      "position": 6
     }
   ],
+  "lowerTrigramId": "trigram-wind",
   "notes": [
     {
-      "text": "PBC PDF 210 lời Hán hào hai ghi sơ cửu trong khi bản dịch và phần giảng nói cửu nhị. Ảnh PDF 210 xác nhận chữ sơ cửu; vị hai, phần Dịch và hai sách khác đều là Chín Hai. Giữ lời hào ở vị hai, không chuyển thành hào đầu.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [210, 210],
-          "section": "Hào 2 — diễn giải"
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [192, 192],
-          "section": "Hào 2 — diễn giải",
-          "printedPages": ["192", "192"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [352, 353],
-          "section": "Hào 2 — diễn giải"
+          "sourceId": "source-book-ntt"
         }
-      ]
+      ],
+      "text": "PBC PDF 210 lời Hán hào hai ghi sơ cửu trong khi bản dịch và phần giảng nói cửu nhị. Ảnh PDF 210 xác nhận chữ sơ cửu; vị hai, phần Dịch và hai sách khác đều là Chín Hai. Giữ lời hào ở vị hai, không chuyển thành hào đầu."
     },
     {
-      "text": "NTT PDF 351 lời Tượng hào đầu ghi cán mẫu thay vì cán phụ. Ảnh PDF 351 xác nhận chữ mẫu nhưng lời kinh, phần Dịch và phần Trình Di tiếp ở PDF 352 đều nói việc cha. Giữ nghĩa sửa việc cha cho hào đầu; không trộn với hào hai.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [350, 352],
-          "section": "Hào 1 — diễn giải"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [192, 192],
-          "section": "Hào 1 — diễn giải",
-          "printedPages": ["192", "192"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [209, 210],
-          "section": "Hào 1 — diễn giải"
+          "sourceId": "source-book-pbc"
         }
-      ]
+      ],
+      "text": "NTT PDF 351 lời Tượng hào đầu ghi cán mẫu thay vì cán phụ. Ảnh PDF 351 xác nhận chữ mẫu nhưng lời kinh, phần Dịch và phần Trình Di tiếp ở PDF 352 đều nói việc cha. Giữ nghĩa sửa việc cha cho hào đầu; không trộn với hào hai."
     },
     {
-      "text": "NTT PDF 352–353 lời kinh và lời Tượng hào hai Cổ chép nội dung hào đầu Tùy. Ảnh hai trang xác nhận phần Hán bị chép nhầm. Bản Dịch và phần Trình Di vẫn giảng sửa việc mẹ, không giữ cứng, khớp hai sách khác. Tóm tắt giữ nội dung Cổ hào hai; không lấy lời Hán lỗi làm chứng cứ riêng.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [352, 353],
-          "section": "Hào 2 — diễn giải"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [337, 338],
-          "section": "Hào 1 — diễn giải"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [192, 192],
-          "section": "Hào 2 — diễn giải",
-          "printedPages": ["192", "192"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [210, 210],
-          "section": "Hào 2 — diễn giải"
+          "sourceId": "source-book-pbc"
         }
-      ]
+      ],
+      "text": "NTT PDF 352–353 lời kinh và lời Tượng hào hai Cổ chép nội dung hào đầu Tùy. Ảnh hai trang xác nhận phần Hán bị chép nhầm. Bản Dịch và phần Trình Di vẫn giảng sửa việc mẹ, không giữ cứng, khớp hai sách khác. Tóm tắt giữ nội dung Cổ hào hai; không lấy lời Hán lỗi làm chứng cứ riêng."
     }
-  ]
+  ],
+  "relatedIds": ["trigram-wind", "trigram-mountain"],
+  "status": "ready",
+  "title": "Sơn Phong Cổ",
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "type": "hexagram",
+  "upperTrigramId": "trigram-mountain"
 }

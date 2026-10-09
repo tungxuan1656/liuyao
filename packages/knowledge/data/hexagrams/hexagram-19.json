@@ -1,511 +1,520 @@
 {
-  "id": "hexagram-19",
-  "type": "hexagram",
-  "title": "Địa Trạch Lâm",
   "aliases": ["Lâm"],
-  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "relatedIds": ["trigram-lake", "trigram-earth"],
-  "status": "ready",
   "entries": [
     {
-      "text": "Địa Trạch Lâm có ngoại quái Khôn và nội quái Đoài. Hào được đếm từ dưới lên.",
       "references": [
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [194, 194],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["194", "194"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [214, 216],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [359, 362],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [59, 61],
-          "section": "Thuật ngữ; Hào cửu — Hào lục",
-          "printedPages": ["59", "61"]
-        }
-      ]
-    },
-    {
-      "text": "Nguyễn Hiến Lê giải Lâm theo dương đang lớn và việc đến gần người để giáo hóa, che chở. Ông chưa xác định chắc bát nguyệt là tháng tám hay tám tháng, chỉ giữ lời răn cần nghĩ trước lúc thế thịnh đổi.",
-      "references": [
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [194, 194],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["194", "194"]
+          "sourceId": "source-book-nhl"
         }
       ],
+      "text": "Địa Trạch Lâm có ngoại quái Khôn và nội quái Đoài. Hào được đếm từ dưới lên."
+    },
+    {
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      }
-    },
-    {
-      "text": "Phan Bội Châu nhấn mạnh lúc hai hào dương đang lớn vẫn phải phòng suy. Ông nêu hai cách hiểu bát nguyệt: tám tháng từ Phục đến Độn, hoặc tháng tám gắn với Quán; các cách đọc được giữ riêng.",
+      },
       "references": [
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [214, 216],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [194, 194],
+          "sourceId": "source-book-nhl"
         }
       ],
+      "text": "Nguyễn Hiến Lê giải Lâm theo dương đang lớn và việc đến gần người để giáo hóa, che chở. Ông chưa xác định chắc bát nguyệt là tháng tám hay tám tháng, chỉ giữ lời răn cần nghĩ trước lúc thế thịnh đổi."
+    },
+    {
       "attribution": {
         "author": "Phan Bội Châu"
-      }
-    },
-    {
-      "text": "Trình Di xem Lâm là đến gần trong thế dương đang lớn, cần ngay lúc thuận đã đề phòng sự suy. Ông giải tám tháng bằng cách đếm từ Phục đến Độn, không khuyên tự mãn vì thế hiện tại.",
+      },
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [359, 362],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [214, 216],
+          "sourceId": "source-book-pbc"
         }
       ],
+      "text": "Phan Bội Châu nhấn mạnh lúc hai hào dương đang lớn vẫn phải phòng suy. Ông nêu hai cách hiểu bát nguyệt: tám tháng từ Phục đến Độn, hoặc tháng tám gắn với Quán; các cách đọc được giữ riêng."
+    },
+    {
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
-    },
-    {
-      "text": "Chu Hy giữ cả cách đếm tám tháng từ Phục đến Độn và cách lấy tháng tám lịch Hạ ứng với Quán. Đây là hai lời giải truyền thống của câu quẻ, chưa phải phép tính mốc ứng nghiệm từ ngày gieo.",
+      },
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [360, 360],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [359, 362],
+          "sourceId": "source-book-ntt"
         }
       ],
+      "text": "Trình Di xem Lâm là đến gần trong thế dương đang lớn, cần ngay lúc thuận đã đề phòng sự suy. Ông giải tám tháng bằng cách đếm từ Phục đến Độn, không khuyên tự mãn vì thế hiện tại."
+    },
+    {
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      }
+      },
+      "references": [
+        {
+          "pdfPages": [360, 360],
+          "sourceId": "source-book-ntt"
+        }
+      ],
+      "text": "Chu Hy giải Lâm là tiến lên lấn bức khí âm, kẻ xem cả hanh và lợi về chính đính nhưng đến tám tháng thì có sự hung. Ông nêu hai thuyết: tám tháng từ Phục đến Độn khi khí âm lớn lên khí dương trốn đi, hoặc tháng thứ tám lịch nhà Hạ ứng với quẻ Quan phản đối với Lâm."
     }
   ],
+  "id": "hexagram-19",
   "kingWenNumber": 19,
-  "upperTrigramId": "trigram-earth",
-  "lowerTrigramId": "trigram-lake",
   "lines": [
     {
-      "position": 1,
-      "polarity": "yang",
-      "label": "Sơ cửu",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê theo Phan Bội Châu đọc hàm ở hào đầu theo việc hai hào dương cùng đến gần. Sự cùng tiến phải đi với chính bền mới phù hợp lời tốt.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [195, 195],
-              "section": "Hào 1 — diễn giải",
-              "printedPages": ["195", "195"]
-            }
-          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu giải hào đầu cùng hào hai chung sức tiến, nhưng cần tránh kết thành phe vì tình riêng. Chính đáng và bền là điều kiện của sự cùng đến gần.",
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [216, 217],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [195, 195],
+              "sourceId": "source-book-nhl"
             }
           ],
+          "text": "Nguyễn Hiến Lê giải trong quẻ chỉ có hai hào dương tới lấn bốn hào âm nên phải hợp lực cùng tới mới chiến thắng. Hào một đắc chính nên khuyên giữ chính đạo của mình thì tốt."
+        },
+        {
           "attribution": {
             "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di đọc hàm theo sự cảm ứng giữa hào đầu và hào bốn. Người mạnh ở dưới được người có vị trên ứng đúng giúp hành động; cách đọc này khác nghĩa cùng tiến của hai tác giả Việt Nam.",
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [362, 363],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [216, 217],
+              "sourceId": "source-book-pbc"
             }
           ],
+          "text": "Phan Bội Châu giải hào đầu cùng hào hai chung sức tiến, nhưng cần tránh kết thành phe vì tình riêng. Chính đáng và bền là điều kiện của sự cùng đến gần."
+        },
+        {
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "pdfPages": [362, 363],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di giải hàm nghĩa là cảm, hào đầu được ngôi chính cảm ứng với hào tư ở ngôi gần vua. Đó là người giữ chính đạo được người đương vị tin dùng để thực hành chí mình, thi hành chính đạo nên mới tốt."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy, được Nguyễn Hiến Lê dẫn lại"
+          },
+          "references": [
+            {
+              "pdfPages": [195, 195],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Chu Hy, theo Trình Di, cho chữ hàm ở đây có nghĩa là cảm; hào một dương ứng hợp với hào bốn âm, vì cảm ứng với hào bốn mà tới."
         }
-      ]
+      ],
+      "label": "Sơ cửu",
+      "polarity": "yang",
+      "position": 1
     },
     {
-      "position": 2,
-      "polarity": "yang",
-      "label": "Cửu nhị",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê đặt hào hai cương trung cùng hào đầu tiến, có người trên đáp ứng. Sự chung sức phù hợp đạo giúp việc tốt, không chỉ do vị dương đang tăng.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [195, 195],
-              "section": "Hào 2 — diễn giải",
-              "printedPages": ["195", "195"]
-            }
-          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu xem hai hào dương đồng lòng tạo kết quả, không buông việc cho số mệnh. Ông đọc chưa thuận mệnh như nhấn mạnh sự chủ động làm điều đúng.",
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [217, 218],
-              "section": "Hào 2 — diễn giải"
+              "pdfPages": [195, 195],
+              "sourceId": "source-book-nhl"
             }
           ],
+          "text": "Nguyễn Hiến Lê giải nghĩa hào hai cũng như hào một, dương cương đắc trung gặp lúc dương đang lên nên hiện tại tốt lành mà tương lai cũng thuận lợi, không gì không lợi."
+        },
+        {
           "attribution": {
             "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di đặt hào hai ở người cương trung đáp ứng hào năm. Chưa thuận mệnh được ông đọc là không chỉ nghe lệnh người trên, mà giúp người trên theo đạo đúng.",
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [363, 364],
-              "section": "Hào 2 — diễn giải"
+              "pdfPages": [217, 218],
+              "sourceId": "source-book-pbc"
             }
           ],
+          "text": "Phan Bội Châu xem hai hào dương đồng lòng tạo kết quả, không buông việc cho số mệnh. Ông đọc chưa thuận mệnh như nhấn mạnh sự chủ động làm điều đúng."
+        },
+        {
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        },
-        {
-          "text": "Chu Hy nói ông chưa rõ nghĩa chưa thuận mệnh trong lời Tượng hào hai. Sự chưa xác định này được giữ riêng với cách Trình Di và Phan Bội Châu đã giải, không gán cho ông một nghĩa kết luận.",
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [364, 364],
-              "section": "Hào 2 — diễn giải"
+              "pdfPages": [363, 364],
+              "sourceId": "source-book-ntt"
             }
           ],
+          "text": "Trình Di đặt hào hai ở người cương trung đáp ứng hào năm. Chưa thuận mệnh được ông đọc là không chỉ nghe lệnh người trên, mà giúp người trên theo đạo đúng."
+        },
+        {
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 3,
-      "polarity": "yin",
-      "label": "Lục tam",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê giải hào ba dùng lời ngọt để lấy lòng hai hào dương nên không có lợi. Biết lo và sửa cách ấy mới có thể tránh lỗi.",
+          },
           "references": [
             {
-              "sourceId": "source-book-nhl",
+              "pdfPages": [364, 364],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy đối với câu «vị thuận mệnh dã» ở Tượng truyện hào hai chỉ ghi rằng chưa rõ ý nghĩa ra sao."
+        }
+      ],
+      "label": "Cửu nhị",
+      "polarity": "yang",
+      "position": 2
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
               "pdfPages": [195, 195],
-              "section": "Hào 3 — diễn giải",
-              "printedPages": ["195", "195"]
+              "sourceId": "source-book-nhl"
             }
           ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          "text": "Nguyễn Hiến Lê giải hào ba dùng lời ngọt để lấy lòng hào hai nên không có lợi. Biết lo và sửa cách ấy mới có thể tránh lỗi."
         },
         {
-          "text": "Phan Bội Châu xem hào ba lấy cách ngọt ngào làm phương tiện gần người, chưa có đức thật. Tự nhận ra và lo sửa thì lỗi không tiếp tục kéo dài.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
               "pdfPages": [218, 219],
-              "section": "Hào 3 — diễn giải"
+              "sourceId": "source-book-pbc"
             }
           ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          "text": "Phan Bội Châu xem hào ba lấy cách ngọt ngào làm phương tiện gần người, chưa có đức thật. Tự nhận ra và lo sửa thì lỗi không tiếp tục kéo dài."
         },
         {
-          "text": "Trình Di cho hào ba mềm nịnh và không đúng vị nên cách đến gần không có lợi. Nếu biết sợ và thành thật đổi thì có thể tránh lỗi, thay vì chỉ sửa vẻ ngoài.",
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
               "pdfPages": [365, 366],
-              "section": "Hào 3 — diễn giải"
+              "sourceId": "source-book-ntt"
             }
           ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 4,
-      "polarity": "yin",
-      "label": "Lục tứ",
-      "entries": [
+          "text": "Trình Di cho hào ba mềm nịnh và không đúng vị nên cách đến gần không có lợi. Nếu biết sợ và thành thật đổi thì có thể tránh lỗi, thay vì chỉ sửa vẻ ngoài."
+        },
         {
-          "text": "Nguyễn Hiến Lê đọc chí lâm theo hào bốn ứng với hào đầu một cách thiết thực và thành thật. Quan hệ đúng người và đúng vị giúp tránh lỗi.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
           "references": [
             {
-              "sourceId": "source-book-nhl",
+              "pdfPages": [365, 365],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào ba âm nhu không trung chính mà ở trên thể dưới, là tượng lấy sự ngọt ngon vui đẹp tới người nên không có lợi. Nhưng nếu biết lo mà đổi thì không có lỗi, khuyên người rời sang đường thiện là dạy đời rất sâu."
+        }
+      ],
+      "label": "Lục tam",
+      "polarity": "yin",
+      "position": 3
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
               "pdfPages": [195, 196],
-              "section": "Hào 4 — diễn giải",
-              "printedPages": ["195", "196"]
+              "sourceId": "source-book-nhl"
             }
           ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          "text": "Nguyễn Hiến Lê đọc chí lâm theo hào bốn ứng với hào đầu một cách thiết thực và thành thật. Quan hệ đúng người và đúng vị giúp tránh lỗi."
         },
         {
-          "text": "Phan Bội Châu xem hào bốn gần gũi hết lòng với hào đầu và có vị phù hợp. Sự thành thật trong quan hệ ấy tạo điều kiện giúp nhau, không chỉ là danh nghĩa gần người.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
               "pdfPages": [219, 219],
-              "section": "Hào 4 — diễn giải"
+              "sourceId": "source-book-pbc"
             }
           ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          "text": "Phan Bội Châu xem hào bốn gần gũi hết lòng với hào đầu và có vị phù hợp. Sự thành thật trong quan hệ ấy tạo điều kiện giúp nhau, không chỉ là danh nghĩa gần người."
         },
         {
-          "text": "Trình Di đặt hào bốn ở ranh giới gần nội quái và biết dùng hào đầu có tài. Ở vị cao mà gần được người dưới thông qua quan hệ đúng giúp thực hiện đạo Lâm.",
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
               "pdfPages": [366, 366],
-              "section": "Hào 4 — diễn giải"
+              "sourceId": "source-book-ntt"
             }
           ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 5,
-      "polarity": "yin",
-      "label": "Lục ngũ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê cho hào năm biết dùng người cương trung ở hào hai là cách đến gần sáng suốt của người đứng đầu. Trí không nằm ở tự biết và tự làm mọi việc.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [196, 196],
-              "section": "Hào 5 — diễn giải",
-              "printedPages": ["196", "196"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          "text": "Trình Di đặt hào bốn ở ranh giới gần nội quái và biết dùng hào đầu có tài. Ở vị cao mà gần được người dưới thông qua quan hệ đúng giúp thực hiện đạo Lâm."
         },
         {
-          "text": "Phan Bội Châu giải trí lâm theo việc người ở ngôi cao tin và trao việc cho người có tài. Dùng đúng người là cách làm lớn hơn cố tự xử hết mọi việc.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
+              "pdfPages": [366, 366],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào bốn ở được đáng ngôi, phía dưới ứng nhau với hào chín đầu, tới nhau rất mực nên được không lỗi."
+        }
+      ],
+      "label": "Lục tứ",
+      "polarity": "yin",
+      "position": 4
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [196, 196],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê cho hào năm biết dùng người cương trung ở hào hai là cách đến gần sáng suốt của người đứng đầu. Trí không nằm ở tự biết và tự làm mọi việc."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
               "pdfPages": [219, 220],
-              "section": "Hào 5 — diễn giải"
+              "sourceId": "source-book-pbc"
             }
           ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          "text": "Phan Bội Châu giải trí lâm theo việc người ở ngôi cao tin và trao việc cho người có tài. Dùng đúng người là cách làm lớn hơn cố tự xử hết mọi việc."
         },
         {
-          "text": "Trình Di cho trí của người đứng đầu ở chỗ biết nhận và dùng hào hai trung chính. Sự sáng suốt ấy giúp hợp nhiều tài, vượt sức biết của một người.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [367, 368],
-              "section": "Hào 5 — diễn giải"
-            }
-          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "pdfPages": [367, 368],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho trí của người đứng đầu ở chỗ biết nhận và dùng hào hai trung chính. Sự sáng suốt ấy giúp hợp nhiều tài, vượt sức biết của một người."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [367, 367],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào năm lấy đức mềm ở chỗ giữa, bên dưới ứng nhau với hào chín hai; không tự dùng mình mà dùng người là việc của bậc trí và là điều đấng vua cả nên làm, tức là đạo tốt."
         }
-      ]
+      ],
+      "label": "Lục ngũ",
+      "polarity": "yin",
+      "position": 5
     },
     {
-      "position": 6,
-      "polarity": "yin",
-      "label": "Thượng lục",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê xem hào cuối mềm thuận, thật lòng theo hai hào dương và giúp người khác theo điều tốt. Lời tốt ở đức dày ấy dù không có cặp ứng riêng với hai hào dương.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [196, 196],
-              "section": "Hào 6 — diễn giải",
-              "printedPages": ["196", "196"]
-            }
-          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu đọc đôn lâm theo lòng dày và thành thật của hào cuối hướng về người có đức. Trường hợp tốt ở cuối Lâm không làm mọi cực điểm của quẻ đều tốt.",
+          },
           "references": [
             {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [220, 221],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [196, 196],
+              "sourceId": "source-book-nhl"
             }
           ],
+          "text": "Nguyễn Hiến Lê xem hào cuối mềm thuận, thật lòng theo hai hào dương và giúp người khác theo điều tốt. Lời tốt ở đức dày ấy dù không có cặp ứng riêng với hai hào dương."
+        },
+        {
           "attribution": {
             "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di giải hào cuối không có quan hệ ứng riêng với hai hào dương nhưng vẫn trọng họ vì đức. Mềm thuận và thật lòng đến gần là điều kiện tốt, khác theo người chỉ vì tư lợi.",
+          },
           "references": [
             {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [368, 369],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [220, 221],
+              "sourceId": "source-book-pbc"
             }
           ],
+          "text": "Phan Bội Châu đọc đôn lâm theo lòng dày và thành thật của hào cuối hướng về người có đức. Trường hợp tốt ở cuối Lâm không làm mọi cực điểm của quẻ đều tốt."
+        },
+        {
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "pdfPages": [368, 369],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di giải hào cuối không có quan hệ ứng riêng với hai hào dương nhưng vẫn trọng họ vì đức. Mềm thuận và thật lòng đến gần là điều kiện tốt, khác theo người chỉ vì tư lợi."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [368, 369],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào trên ở chót cuộc tới, dày dốc về sự tới nên tốt mà không lỗi. Ông giải chí ở trong là hào âm không dám tranh mà để chí ứng với hai hào dương trong quẻ chứ không riêng vì chính ứng."
         }
-      ]
+      ],
+      "label": "Thượng lục",
+      "polarity": "yin",
+      "position": 6
     }
   ],
+  "lowerTrigramId": "trigram-lake",
   "notes": [
     {
-      "text": "NHL PDF 194 nói Khôn có năm hào âm trước khi một rồi hai hào dương thay vào. Ảnh PDF 194 xác nhận số năm. Khôn có sáu hào âm; hình Lâm ở hai sách có hai dương dưới và bốn âm trên. Giữ hình quẻ đã đối chiếu, không dùng phép đếm sai trong đoạn.",
       "references": [
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [194, 194],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["194", "194"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [214, 216],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc"
         }
-      ]
+      ],
+      "text": "NHL PDF 194 nói Khôn có năm hào âm trước khi một rồi hai hào dương thay vào. Ảnh PDF 194 xác nhận số năm. Khôn có sáu hào âm; hình Lâm ở hai sách có hai dương dưới và bốn âm trên. Giữ hình quẻ đã đối chiếu, không dùng phép đếm sai trong đoạn."
     },
     {
-      "text": "PBC PDF 217 có câu hai dương lâm bức một âm, khác câu sau và hình Lâm. Ảnh PDF 217 phần sau cùng trang nói bốn âm; hình Lâm PDF 214 cũng có bốn âm. Giữ hai dương và bốn âm, không dùng số một làm cấu trúc.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [217, 218],
-          "section": "Hào 2 — diễn giải"
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [214, 216],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [194, 194],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["194", "194"]
+          "sourceId": "source-book-nhl"
         }
-      ]
+      ],
+      "text": "PBC PDF 217 có câu hai dương lâm bức một âm, khác câu sau và hình Lâm. Ảnh PDF 217 phần sau cùng trang nói bốn âm; hình Lâm PDF 214 cũng có bốn âm. Giữ hai dương và bốn âm, không dùng số một làm cấu trúc."
     },
     {
-      "text": "PBC PDF 219 nói tội lỗi cũng đến nỗi lớn sau khi đã lo sửa, trái lời không lỗi và ý không kéo dài. Ảnh PDF 219 xác nhận thiếu phủ định trong câu tiếng Việt. Lời hào và đoạn PDF 218, chữ bất trường cùng hai sách khác đều giải lo sửa thì lỗi không kéo dài; giữ nghĩa có điều kiện ấy.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [218, 219],
-          "section": "Hào 3 — diễn giải"
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [195, 195],
-          "section": "Hào 3 — diễn giải",
-          "printedPages": ["195", "195"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [365, 366],
-          "section": "Hào 3 — diễn giải"
+          "sourceId": "source-book-ntt"
         }
-      ]
+      ],
+      "text": "PBC PDF 219 nói tội lỗi cũng đến nỗi lớn sau khi đã lo sửa, trái lời không lỗi và ý không kéo dài. Ảnh PDF 219 xác nhận thiếu phủ định trong câu tiếng Việt. Lời hào và đoạn PDF 218, chữ bất trường cùng hai sách khác đều giải lo sửa thì lỗi không kéo dài; giữ nghĩa có điều kiện ấy."
     },
     {
-      "text": "NTT PDF 359 nói trên chằm có nước tạo Lâm, dù trước đó gọi đất trên chằm. Ảnh PDF 359 xác nhận chỗ không khớp. Tiêu đề, đoạn trước và lời Tượng PDF 361–362 đều cho đất trên chằm; giữ ngoại Khôn, nội Đoài.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [359, 362],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [194, 194],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["194", "194"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [214, 216],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc"
         }
-      ]
+      ],
+      "text": "NTT PDF 359 nói trên chằm có nước tạo Lâm, dù trước đó gọi đất trên chằm. Ảnh PDF 359 xác nhận chỗ không khớp. Tiêu đề, đoạn trước và lời Tượng PDF 361–362 đều cho đất trên chằm; giữ ngoại Khôn, nội Đoài."
     },
     {
-      "text": "NTT PDF 360 phần Chu Hy gọi Phục có một khí âm, khác đoạn tính tám tháng sau đó. Ảnh PDF 360 xác nhận chữ âm. Trình Di PDF 361 và PBC PDF 215 đều xác định dương bắt đầu ở Phục rồi tăng thành Lâm. Giữ nghĩa một dương của Phục khi mô tả cách đếm, không tự tính lịch.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [359, 362],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [360, 360],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-ntt"
         },
         {
-          "sourceId": "source-book-pbc",
           "pdfPages": [214, 216],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc"
         }
-      ]
+      ],
+      "text": "NTT PDF 360 phần Chu Hy gọi Phục có một khí âm, khác đoạn tính tám tháng sau đó. Ảnh PDF 360 xác nhận chữ âm. Trình Di PDF 361 và PBC PDF 215 đều xác định dương bắt đầu ở Phục rồi tăng thành Lâm. Giữ nghĩa một dương của Phục khi mô tả cách đếm, không tự tính lịch."
     },
     {
-      "text": "NTT PDF 363 phần Tượng hào đầu gọi đối tượng là hào Hai. Ảnh PDF 363 xác nhận tên Hai; câu giải dương ở ngôi lẻ và ứng hào bốn thuộc hào đầu PDF 362. Giữ lời giải ở vị một, không gán quan hệ ứng bốn cho hào hai.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
           "pdfPages": [362, 363],
-          "section": "Hào 1 — diễn giải"
+          "sourceId": "source-book-ntt"
         }
-      ]
+      ],
+      "text": "NTT PDF 363 phần Tượng hào đầu gọi đối tượng là hào Hai. Ảnh PDF 363 xác nhận tên Hai; câu giải dương ở ngôi lẻ và ứng hào bốn thuộc hào đầu PDF 362. Giữ lời giải ở vị một, không gán quan hệ ứng bốn cho hào hai."
     }
-  ]
+  ],
+  "relatedIds": ["trigram-lake", "trigram-earth"],
+  "status": "ready",
+  "title": "Địa Trạch Lâm",
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "type": "hexagram",
+  "upperTrigramId": "trigram-earth"
 }
