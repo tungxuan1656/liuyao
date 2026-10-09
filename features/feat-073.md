@@ -84,6 +84,14 @@ label)` tuples unchanged; every reference keeps the `{sourceId, pdfPages: [start
 lại`; NHL 206 Thoán truyện prints `ngoại quái là Chấn có nghĩa là ngưng`; NTT 418 chú thích [1] prints
   `Chữ 利 (Bác)`; PBC 235 prints `công việc Cửu Ngũ làm được đúng`; NTT 383 prints `trên động dưới sáng,
 dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
+- Independent final review of frozen `b71bb93` (workflow `fa127fdb`: content `15018001`, record audit
+  `49458f29`) → **FAIL 1 P2 + 3 unsupported claims**. The content reviewer confirmed all 13 corrections,
+  re-checked 19 entries that both earlier rounds had passed, and inspected all 10 page crops; its P2 was
+  that quẻ 21 alone still carried 20 copy-pasted `condition` disclaimers the other three records no
+  longer used. The record auditor found three unsupported claims in this file: `104 attributed entries`
+  (the records hold 105 entries, 92 with a named author), the quẻ 23 `condition` pointer (`lines[5]`,
+  actually `lines[4]`), and `zero condition keys remain`. All four were corrected after the freeze, in
+  the fix commit that carries this sentence and the 20 removed `condition` lines.
 
 ## Decision log
 
@@ -97,7 +105,7 @@ dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
 - **Rationale:** disjoint files, so no write conflict; matches feat-070 through feat-072.
 - **Evidence:** `hexagram-21.json` `463c126a`, `hexagram-22.json` `15aab480`, `hexagram-23.json`
   `503a566f` (resumed as `19c307dc`), `hexagram-24.json` `e63a26d6` (resumed as `6bdcddb5`).
-- **Effect:** 104 attributed entries reviewed, 27 + 26 + 24 + 28 provenance rows.
+- **Effect:** 105 entries reviewed (92 of them carrying a named author), 27 + 26 + 24 + 28 provenance rows.
 
 ### Resume a writer whose output stream was truncated instead of re-dispatching it
 
@@ -132,15 +140,19 @@ dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
 
 ### `condition` carries only a meaning-changing condition
 
-- **Question:** six entries (quẻ 23 lines[5] ×3, quẻ 24 lines[5] ×3) repeated one `condition` string
-  that disclaimed a literary image rather than changing the entry's meaning.
-- **Decision:** remove all six; keep the sentence's own framing in the entry text.
+- **Question:** 26 entries repeated a `condition` string that disclaimed a literary image or an ancient
+  setting rather than changing the entry's meaning: quẻ 21 lines[0–5] ×20 (every line entry of quẻ 21
+  carried the same "hình ngục cổ … không chuyển thành chỉ dẫn trừng phạt hiện đại" string), quẻ 23
+  lines[4] ×3, quẻ 24 lines[5] ×3.
+- **Decision:** remove all 26; keep the sentence's own framing in the entry text.
 - **Alternatives:** keep the repeats (contract noise) or rewrite them shorter.
-- **Rationale:** the knowledge model uses `condition` for a condition that changes the reading; a
-  disclaimer about imagery does not.
-- **Evidence:** the model contract in `docs/design-docs/knowledge-model.md`; round 2 re-read both lines
-  and found no meaning-changing condition lost.
-- **Effect:** zero `condition` keys remain in the four records.
+- **Rationale:** `docs/design-docs/knowledge-model.md:41` allows "a meaningful condition", and
+  `docs/product-specs/knowledge-content.md:31` splits entries when "a condition changes the meaning"; a
+  disclaimer about imagery is neither. This is the rule feat-072 applied to quẻ 17–20.
+- **Evidence:** the model contract; round 2 re-read the quẻ 23 and quẻ 24 lines and found no
+  meaning-changing condition lost; the independent final review flagged quẻ 21's 20 repeats as the last
+  contract violation of the batch.
+- **Effect:** zero `condition` keys remain in the four records (`grep -c condition` returns 0 on each).
 
 ### The Leader verifies image-dependent notes
 
@@ -159,7 +171,9 @@ dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
   `9router API error (503) … [codex/gpt-6.1-sol] [429]`, and the retry on
   `9router/ag/claude-sonnet-4-6` failed with `Unavailable (reset after 145h 6m)`.
 - **Decision:** run round 2 on `9router/ag/gemini-3.8-flash`, then give the feature's post-freeze
-  independent review to a fresh reviewer on the strongest model available at that time.
+  independent review to a fresh reviewer on the strongest model available at that time. That review ran
+  on `9router/ag/gemini-3.8-flash` as well, because `cx/gpt-6.1-sol` failed twice with
+  `502 fetch failed (cause: ETIMEDOUT)`.
 - **Alternatives:** wait ~22 minutes for the reviewer quota to reset.
 - **Rationale:** round 2 is a source check against quoted wording; the model family does not change what
   the pages say.
@@ -170,11 +184,11 @@ dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
 
 ## Handoff
 
-- State: active — implementation verified locally; independent review and PR pending.
-- Evidence: see Verify above; 4 records changed, 13 findings corrected, round 2 PASS.
+- State: active — implementation verified locally; independent review complete; PR pending.
+- Evidence: see Verify above; 4 records changed, 16 findings corrected across three rounds.
 - Blockers: none.
 - Limits: the reviewer children cannot see PDF page images and reported that plainly; the 10
   image-dependent notes were checked by the Leader instead. `pack/hexagram-24.md` omits NHL 94 and PBC
   244–247 even though the record cites them, so quẻ 24 reviewers read `$W/pdftext/*.txt` directly.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: commit, take a fresh independent review of the frozen SHA, then push and open the PR.
+- Next: push the branch and open the PR against `main`.
