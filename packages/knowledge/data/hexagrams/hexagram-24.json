@@ -35,7 +35,7 @@
       ]
     },
     {
-      "text": "Nguyễn Hiến Lê đọc Phục theo sự trở lại và lớn dần của khí dương, đồng thời giảng việc trở về điều thiện. Động mà thuận là điều kiện của sự sinh trưởng; hình ảnh nghỉ để nuôi mầm không thành lệnh nghỉ theo lịch của ứng dụng. Ở chương Đạo trời, ông đọc nhật theo hào hoặc lần biến và giải bằng chuỗi bảy quẻ từ Cấu tới Phục, tính cả hai đầu.",
+      "text": "Nguyễn Hiến Lê đọc Phục theo sự trở lại và lớn dần của khí dương, đồng thời giảng việc trở về điều thiện. Động mà thuận là điều kiện của sự sinh trưởng; tượng sấm nấp dưới đất gợi ý yên lặng để nuôi dưỡng khí dương mới sinh. Ở chương Đạo trời, ông đọc nhật theo hào hoặc lần biến và giải bằng chuỗi bảy quẻ từ Cấu tới Phục, tính cả hai đầu.",
       "references": [
         {
           "sourceId": "source-book-nhl",
@@ -73,7 +73,7 @@
       }
     },
     {
-      "text": "Trình Di xem Phục là quay lại đường thiện, khí mới sinh còn nhỏ cần nuôi và giữ khỏi tổn. Ông đọc bảy ngày theo bảy lần đổi từ Cấu tới Phục, giữ nghĩa này riêng với ngày chiêm của Chu Hy.",
+      "text": "Trình Di xem Phục là quay lại đường thiện, khí mới sinh còn nhỏ cần nuôi và giữ khỏi tổn. Ông đọc bảy ngày theo bảy lần đổi từ Cấu tới Phục, mỗi ngày tương ứng với một lần đổi hào.",
       "references": [
         {
           "sourceId": "source-book-ntt",
@@ -87,7 +87,7 @@
       }
     },
     {
-      "text": "Chu Hy cũng bàn chuỗi biến tới Phục nhưng còn đọc bảy ngày như kỳ trở lại của lời chiêm. Cách đọc thời hạn truyền thống này giữ theo tác giả, không dùng làm lịch dự báo chung.",
+      "text": "Chu Hy giải thích quẻ Phục thuộc tháng mười một khi một phần khí dương trở lại sau tháng mười thuần Khôn. Ông coi các lời quẻ như lời chiêm đoán: dương động thuận đi lên thì ra vào không tật; bảy ngày là kỳ trở lại của việc chiêm; đức cứng đang lớn dần nên đi đâu cũng có lợi.",
       "references": [
         {
           "sourceId": "source-book-ntt",
@@ -144,6 +144,16 @@
               "sourceId": "source-book-ntt",
               "pdfPages": [424, 425],
               "section": "Hào 1 — diễn giải"
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [210, 210],
+              "section": "Hào 1 — diễn giải"
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [256, 256],
+              "section": "Hào 1 — diễn giải"
             }
           ],
           "attribution": {
@@ -163,9 +173,9 @@
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [210, 210],
+              "pdfPages": [210, 211],
               "section": "Hào 2 — diễn giải",
-              "printedPages": ["210", "210"]
+              "printedPages": ["210", "211"]
             }
           ],
           "attribution": {
@@ -207,7 +217,7 @@
       "label": "Lục tam",
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê cho hào ba không bền chí, sửa rồi lại sai nên đáng lo. Vẫn biết trở về điều thiện là điều được khuyến khích, không phải cho phép cố tình lặp lỗi.",
+          "text": "Nguyễn Hiến Lê cho hào ba không bền chí, sửa rồi lại sai nên đáng lo. Nhưng vì vẫn biết phục thiện, sửa đi sửa lại nhiều lần, nên rốt cuộc không có lỗi.",
           "references": [
             {
               "sourceId": "source-book-nhl",
@@ -282,7 +292,7 @@
           }
         },
         {
-          "text": "Trình Di cho hào bốn có chí theo hào đầu nhưng chất mềm và sức người giúp còn nhỏ, chưa đủ nên việc. Vì vậy ông không đọc độc phục thành lời hứa thành công hoặc khẳng định hoàn toàn không lỗi.",
+          "text": "Trình Di cho hào bốn có chí theo hào đầu nhưng chất mềm và sức người giúp còn nhỏ, chưa đủ nên việc. Trong hoàn cảnh ấy, ông cho hào bốn rút lại không thể nên việc và không phải là không có lỗi.",
           "references": [
             {
               "sourceId": "source-book-ntt",
@@ -376,8 +386,7 @@
           ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
+          }
         },
         {
           "text": "Phan Bội Châu đọc hào cuối theo người lầm tới cùng mà vẫn không sửa, dùng sức chỉ làm hậu quả rộng hơn. Thập niên biểu thị cùng cục trong cách giảng của ông, không khóa kết quả vào một ngày lịch.",
@@ -390,8 +399,7 @@
           ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "condition": "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
+          }
         },
         {
           "text": "Trình Di giải hào cuối đã lạc đường mà không trở lại thì làm việc hoặc trị nước đều sai. Mười năm là ý cùng chót của số; lời hung thuộc sự không sửa, khác lời chung hanh của quẻ.",
@@ -405,8 +413,7 @@
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
+          }
         }
       ]
     }

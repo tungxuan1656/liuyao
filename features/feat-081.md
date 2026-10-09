@@ -186,5 +186,5 @@ been reached (reset after 29m 52s)` and `9router/ag/claude-sonnet-4-6` returned 
   deletions — it was not a second exhaustive pass. Quẻ 54's Trình Di commentary is truncated mid-sentence
   in NTT 814, and the record states that gap instead of filling it.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: no feature is active. feat-082 (quẻ 57–60), feat-073 (quẻ 21–24) and the other todo entries stay
-  `todo` until the operator selects one.
+- Next: no work remains inside feat-081; the next queued review record (feat-080 quẻ 49–52, feat-082 quẻ 57–60,
+  feat-083 quẻ 61–64) needs operator selection before activation.
