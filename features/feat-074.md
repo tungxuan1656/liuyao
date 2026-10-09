@@ -18,34 +18,34 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] 25 · Sơ (1).
-- [ ] 25 · Nhị (2).
-- [ ] 25 · Tam (3).
-- [ ] 25 · Tứ (4).
-- [ ] 25 · Ngũ (5).
-- [ ] 25 · Thượng (6).
-- [ ] 26 · Sơ (1).
-- [ ] 26 · Nhị (2).
-- [ ] 26 · Tam (3).
-- [ ] 26 · Tứ (4).
-- [ ] 26 · Ngũ (5).
-- [ ] 26 · Thượng (6).
-- [ ] 27 · Sơ (1).
-- [ ] 27 · Nhị (2).
-- [ ] 27 · Tam (3).
-- [ ] 27 · Tứ (4).
-- [ ] 27 · Ngũ (5).
-- [ ] 27 · Thượng (6).
-- [ ] 28 · Sơ (1).
-- [ ] 28 · Nhị (2).
-- [ ] 28 · Tam (3).
-- [ ] 28 · Tứ (4).
-- [ ] 28 · Ngũ (5).
-- [ ] 28 · Thượng (6).
-- [ ] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
-- [ ] Inspect full passages/images; review each source error and exclusion.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] 25 · Sơ (1).
+- [x] 25 · Nhị (2).
+- [x] 25 · Tam (3).
+- [x] 25 · Tứ (4).
+- [x] 25 · Ngũ (5).
+- [x] 25 · Thượng (6).
+- [x] 26 · Sơ (1).
+- [x] 26 · Nhị (2).
+- [x] 26 · Tam (3).
+- [x] 26 · Tứ (4).
+- [x] 26 · Ngũ (5).
+- [x] 26 · Thượng (6).
+- [x] 27 · Sơ (1).
+- [x] 27 · Nhị (2).
+- [x] 27 · Tam (3).
+- [x] 27 · Tứ (4).
+- [x] 27 · Ngũ (5).
+- [x] 27 · Thượng (6).
+- [x] 28 · Sơ (1).
+- [x] 28 · Nhị (2).
+- [x] 28 · Tam (3).
+- [x] 28 · Tứ (4).
+- [x] 28 · Ngũ (5).
+- [x] 28 · Thượng (6).
+- [x] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
+- [x] Inspect full passages/images; review each source error and exclusion.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -69,7 +69,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active.
-- Evidence: Writers running on quẻ 25–28; see `/Users/tungdoan/.cache/liuyao/feat-074/checkpoint.md`.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Consume the four writer outputs, run `validate:corpus`, freeze the revision, then dispatch round 1.
+- State: active. Implementation, round 1 review, the fix pass, and round 2 verification are complete on the feature branch; no PR, push, or merge was requested.
+- Evidence: reviewed at `074033c`, fixed in `7b29b62` (11 cells, only `text`/`pdfPages` changed). Round 1 (one reviewer per quẻ, 28/25/27/29 cells): PASS, PASS, PASS, FAIL — quẻ 28 `lines[5].entries[3]` cited NTT `[481,481]` where the passage is on PDF 482 (P0, inherited). Round 2 (`afb32196`, one reviewer per quẻ, different model): all four PASS, every hunk CONFIRMED, no new findings. `./init.sh` → `=== Verification passed ===`; `validate:corpus --check-books --check` → 381 records, 381 ready, 4 supplied books. Artifacts: `.agent-work/feat-074/{review-1,review-2}-h25..h28.md`, `fix-1.md`, `image-verify.md`, `leader-audit.md`, `cells.md` (git-ignored scratch).
+- Dependencies: feat-067 and feat-041 are done.
+- Next: obtain operator approval to open the branch/PR for the reviewed head and record the merge, then flip this feature to done.
