@@ -50,14 +50,16 @@ New interpretation, calendar, or UI behavior.
 ## Relevant docs
 
 [Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
+[batch policy](../docs/product-specs/knowledge-quality.md#hexagram-review-batches),
 [model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
 [licensing](../LICENSING.md), [verification](../docs/development.md).
 
 ## Plan
 
-1. Review and improve one quẻ at a time.
-2. Repair material content findings and check affected source passages.
-3. Verify all twenty-four positions before closing the feature.
+1. Four parallel writers, one per quẻ file, with per-entry provenance tables and no length target.
+2. Round 1 exhaustive review across all attributed entries against source texts.
+3. Round 2 verification of corrections and high-risk passages.
+4. Leader runs shared validation, verifies any image-dependent notes, and records evidence.
 
 ## Verify
 

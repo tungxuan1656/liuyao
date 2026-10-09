@@ -23,7 +23,7 @@ The old feat-068 branch retains useful additional source writing alongside large
 ## Sequence
 
 1. Feat-068: simplify contracts, validation, runtime output, and content structure; then improve quẻ 01–04 and their 24 positions.
-2. Feats 069–083: review and improve the remaining four-quẻ groups under the same concise content rules.
+2. Feats 069–083: review and improve the remaining four-quẻ groups under the [hexagram batch policy](../docs/product-specs/knowledge-quality.md#hexagram-review-batches).
 3. Feats 084–093: review the assigned Liu Yao and classical topic groups; preserve meaningful tables and source differences.
 4. Feat-094: resolve material content gaps, contradictions, and broken links.
 5. Feats 095–096: perform optional final editorial and learning-readiness passes when selected; no certification program.
@@ -43,5 +43,8 @@ Record only material findings and one concrete next action.
 Missing or unclear source text remains visible and does not block unrelated records.
 
 The [quality contract](../docs/product-specs/knowledge-quality.md#publication-gate) defines content acceptance.
+For hexagram review batches (feat-072–083), use the [hexagram batch policy](../docs/product-specs/knowledge-quality.md#hexagram-review-batches):
+four parallel writers with provenance tables and no length target, round 1 exhaustive clause comparison,
+round 2 verification, and Leader shared verification.
 A record does not need a machine decision per author layer, paragraph, or book page.
 Git preserves corrections; execution records do not duplicate the knowledge.
