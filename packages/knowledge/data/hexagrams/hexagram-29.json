@@ -21,6 +21,10 @@
         {
           "sourceId": "source-book-ntt",
           "pdfPages": [483, 486]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61]
         }
       ]
     },
@@ -424,7 +428,7 @@
   ],
   "notes": [
     {
-      "text": "NHL PDF 225 so hào hai Khảm với hào bốn Dự nhưng ghi Dư số 6, khác tên Dự và số 16 trong chính sách. Ảnh PDF 225 xác nhận số 6. Quẻ Dự được ba sách xác định số 16; giữ phép so sánh về thời quẻ, không chuyển nhận định ấy sang quẻ Tụng số 6.",
+      "text": "NHL PDF 225 so hào hai Khảm với hào bốn Dự nhưng ghi Dư số 6, khác tên Dự và số 16 trong chính sách. Ảnh PDF 225 xác nhận số 6. NHL PDF 185 và PBC PDF 189 xác định Dự là quẻ 16; giữ phép so sánh về thời quẻ, không chuyển nhận định ấy sang quẻ Tụng số 6.",
       "references": [
         {
           "sourceId": "source-book-nhl",
@@ -433,6 +437,14 @@
         {
           "sourceId": "source-book-pbc",
           "pdfPages": [298, 298]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [185, 185]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [189, 189]
         }
       ]
     },
