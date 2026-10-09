@@ -16,6 +16,18 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-09 — feat-071 reviewed and improved quẻ 13–16
+
+- Status: done; merged to `main` in `67e0565` (PR #99), squash-merged at the exact reviewed head `c5e78bf6c4be0b8e0f552bacd1a3efe61f1b9b79`.
+- Result: reviewed and improved all four assigned quẻ (13 Thiên Hỏa Đồng Nhân, 14 Hỏa Thiên Đại Hữu, 15 Địa Sơn Khiêm, 16 Lôi Địa Dự) and all twenty-four hào under the simplified knowledge model.
+- Content: five overview entries per quẻ and four attributed explanations on every hào — Nguyễn Hiến Lê, Phan Bội Châu, Trình Di and Chu Hy (the last two via “Ngô Tất Tố — dịch và chú giải”). Author-specific readings are kept distinct rather than harmonised and unresolved readings stay explicit. The legacy `section` and `printedPages` reference fields are gone from these four records; two reference ranges were widened where the cited passage continued onto a neighbouring page (`hexagram-14.json` `[308,309]` → `[306,309]`; `hexagram-15.json` `[317,317]` → `[316,317]`).
+- Defect class: **author-layer padding** — a writer working to a per-hào length target filled the short Nguyễn Hiến Lê layers with other commentators' explaining clauses, causal connectives, general premises and degree words. Seven review rounds found 10, 5, 11, 10, 15 and 18 instances; 69 clauses were removed and replaced with the source's own wording. The class did not converge under spot-fixing, because each broader audit found it in cells a narrower one had cleared.
+- Acceptance bar: after six non-converging rounds the operator fixed the governing standard — the **written acceptance criteria** (correct book/page references and no invented content), with a Vietnamese degree or superlative word where the source gives none treated as a style difference rather than a defect. All eighteen round-6 findings and the two baseline-era dispositions (`E01`, `E02`) were applied anyway. This is the only decision in the feature that changes what “pass” means and it now governs the rest of the batch.
+- Evidence: `./init.sh` passed via `=== Verification passed ===` (181 core tests + 97 knowledge tests; format, lint, typecheck, build). `validate:corpus --check-books --check` reported 381 records, 381 ready, 4 supplied books. Round 6 was the first fully exhaustive audit (all 112 attributed entries, 94 clean, plus 4 introductions and 8 notes); round 7 was verification-only and returned **PASS**, no P0, confirming all twenty corrections landed and the acceptance bar holds.
+- Limits: reviewers inspected extracted page text, not page images, and did not execute the test commands; the baseline-vs-final invariant comparison (0 of 4 files changed invariant fields, all line tuples unchanged) is Leader-generated.
+- Blockers: none for feat-071.
+- Next: activate feat-072 (Review and improve quẻ 17–20 and all twenty-four hào) from `main` at `67e0565`, using the writer and review briefs in `.agent-work/batch-writer-brief.md` and `.agent-work/batch-review-brief.md`.
+
 ## 2026-10-09 — feat-070 reviewed and improved quẻ 09–12
 
 - Status: done; merged to `main` in `9162858` (PR #98), squash-merged at the exact reviewed head `69375fd9b1f7d76046fd66a497e9874e3dd45ba3`.

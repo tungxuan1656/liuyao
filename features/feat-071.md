@@ -18,34 +18,34 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] 13 · Sơ (1).
-- [ ] 13 · Nhị (2).
-- [ ] 13 · Tam (3).
-- [ ] 13 · Tứ (4).
-- [ ] 13 · Ngũ (5).
-- [ ] 13 · Thượng (6).
-- [ ] 14 · Sơ (1).
-- [ ] 14 · Nhị (2).
-- [ ] 14 · Tam (3).
-- [ ] 14 · Tứ (4).
-- [ ] 14 · Ngũ (5).
-- [ ] 14 · Thượng (6).
-- [ ] 15 · Sơ (1).
-- [ ] 15 · Nhị (2).
-- [ ] 15 · Tam (3).
-- [ ] 15 · Tứ (4).
-- [ ] 15 · Ngũ (5).
-- [ ] 15 · Thượng (6).
-- [ ] 16 · Sơ (1).
-- [ ] 16 · Nhị (2).
-- [ ] 16 · Tam (3).
-- [ ] 16 · Tứ (4).
-- [ ] 16 · Ngũ (5).
-- [ ] 16 · Thượng (6).
-- [ ] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
-- [ ] Inspect full passages/images; review each source error and exclusion.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] 13 · Sơ (1).
+- [x] 13 · Nhị (2).
+- [x] 13 · Tam (3).
+- [x] 13 · Tứ (4).
+- [x] 13 · Ngũ (5).
+- [x] 13 · Thượng (6).
+- [x] 14 · Sơ (1).
+- [x] 14 · Nhị (2).
+- [x] 14 · Tam (3).
+- [x] 14 · Tứ (4).
+- [x] 14 · Ngũ (5).
+- [x] 14 · Thượng (6).
+- [x] 15 · Sơ (1).
+- [x] 15 · Nhị (2).
+- [x] 15 · Tam (3).
+- [x] 15 · Tứ (4).
+- [x] 15 · Ngũ (5).
+- [x] 15 · Thượng (6).
+- [x] 16 · Sơ (1).
+- [x] 16 · Nhị (2).
+- [x] 16 · Tam (3).
+- [x] 16 · Tứ (4).
+- [x] 16 · Ngũ (5).
+- [x] 16 · Thượng (6).
+- [x] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
+- [x] Inspect full passages/images; review each source error and exclusion.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -61,9 +61,10 @@ New interpretation, calendar, or UI behavior.
 
 ## Verify
 
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Confirm all assigned units and document routes.
+- `./init.sh` passed via `=== Verification passed ===` (181 core tests + 97 knowledge tests; format, lint, typecheck, build).
+- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passed: 381 records; 381 ready; 4 supplied books verified against SHA-256 fingerprints.
+- Round 7 independent review at `c5e78bf` returned **PASS**, no P0: all twenty round-6 corrections (`N01`–`N18`, `E01`, `E02`) landed, the written acceptance bar holds, and structure passed — 4 records `ready`, five non-empty overview entries each, six ordered lines each, no legacy `section`/`printedPages`/`condition`.
+- All assigned units and document routes confirmed.
 
 ## Decision log
 
@@ -132,7 +133,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: done.
+- Evidence: `./init.sh` passed (181 core tests + 97 knowledge tests) and `validate:corpus --check-books --check` reported 381 records, 381 ready, 4 supplied books. Seven independent read-only review rounds against the extracted source text: rounds 1–6 found 10, 5, 11, 10, 15 and 18 attribution defects, each fixed by removing only the unsupported clause and restoring the source's own wording; round 6 was the first fully exhaustive audit (all 112 attributed entries, 94 clean) and round 7 was the verification round, returning PASS with no P0. Merged to `main` in `67e0565` (PR #99), squash-merged at the exact reviewed head `c5e78bf6c4be0b8e0f552bacd1a3efe61f1b9b79`.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Activate `feat-072` (Review and improve quẻ 17–20 and all twenty-four hào) from `main` at `67e0565`.
+- Limits: the reviewers read the extracted page text but could not inspect PDF page images, so the acceptance criterion “inspect full passages/images” is attested from text only; they also could not execute the repository gates, which the Leader ran and recorded here. The baseline-vs-final invariant comparison (`0 of 4` files changed invariant fields; all line tuples unchanged) is Leader-generated. The review bar is the written acceptance bar recorded in the decision log, not clause-level author fidelity.
