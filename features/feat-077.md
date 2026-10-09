@@ -63,9 +63,10 @@ New interpretation, calendar, or UI behavior.
 
 ## Verify
 
-Executed at reviewed head `afe0a65f676e177d862a0b6f5c0d845863bdcd71` (content commit `75540faf1cedacad9854e8eba9fc641dbc5f60db`):
+Executed at reviewed head `afe0a65f676e177d862a0b6f5c0d845863bdcd71` (content commit `75540faf1cedacad9854e8eba9fc641dbc5f60db`, PR [#101](https://github.com/tungxuan1656/liuyao/pull/101)):
 
-- `./init.sh` → `=== Verification passed ===`; 97 knowledge tests pass.
+- `./init.sh` → `=== Verification passed ===`; 97 knowledge tests pass. Re-run green at the record commit
+  `8153f87` with no formatting drift.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` → `Knowledge: 381 records; 381
 ready; 4 supplied books. Structural links and source pages valid.` Run the generating form
   (`--check-books`, no `--check`) after any source edit, because `--check` compares the generated
@@ -119,16 +120,15 @@ lánh mà đi mới khỏi`, NTT 631–632 `Kẻ tiểu nhân lui xuống, thì 
 
 ## Handoff
 
-- State: done, verified locally at `afe0a65`; no PR opened from this Orca worktree (branch
-  `tungxuan1656/feat-077`, no upstream).
-- Evidence: content commit `75540fa`, corrections `afe0a65`; `./init.sh` passed (97 knowledge tests);
-  `validate:corpus --check-books --check` passed (381 records / 381 ready / 4 supplied books);
-  invariants unchanged for all 4 files; round 1 (4 reviewers) and round 2 (3 verifiers) recorded above;
-  3 image-dependent notes verified by rendering the source pages.
+- State: done, verified at `8153f87`; feature PR [#101](https://github.com/tungxuan1656/liuyao/pull/101)
+  is open against `main` from branch `tungxuan1656/feat-077`.
+- Evidence: content commit `75540fa`, corrections `afe0a65`, records `8153f87`; `./init.sh` passed (97
+  knowledge tests); `validate:corpus --check-books --check` passed (381 records / 381 ready / 4 supplied
+  books); invariants unchanged for all 4 files; round 1 (4 reviewers) and round 2 (3 verifiers) recorded
+  above; 3 image-dependent notes verified by rendering the source pages.
 - Blockers: none.
 - Limits: reviewer children cannot see PDF page images and reported that plainly, so the 3 image claims
   were verified by the Leader only; round 2 ran on `9router/cx/gpt-6-luna` rather than the round-1
-  `9router/cx/gpt-6.1-sol` because of provider quota.
+  `9router/cx/gpt-6.1-sol` because of provider quota; the PR awaits CI and review.
 - Dependencies: [feature index](../feature_index.json).
-- Next: push `tungxuan1656/feat-077` and open the feature PR; then activate the next unstarted batch
-  feature.
+- Next: resolve PR #101 CI and review feedback, then activate the next unstarted batch feature.
