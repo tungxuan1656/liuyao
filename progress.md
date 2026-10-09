@@ -16,6 +16,57 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-09 — feat-081 reviewed and improved quẻ 53–56
+
+- Status: done; merged to `main` in `1b1aec7` (PR #102), squash-merged at the exact reviewed head
+  `86d18a71d919a9c13286b51a4e111fd624c4973b`.
+- Result: reviewed and improved all four assigned quẻ (53 Phong Sơn Tiệm, 54 Lôi Trạch Quy Muội, 55 Lôi Hỏa
+  Phong, 56 Hỏa Sơn Lữ) and all twenty-four hào against the four supplied books.
+- Content: each record now carries one structure sentence plus four attributed overview layers (Nguyễn Hiến
+  Lê, Phan Bội Châu, Trình Di, Chu Hy) and four or more attributed explanations per hào. The legacy
+  multi-paragraph Ngô Tất Tố glossary lumps, which only recorded that a heading or glossary exists, and the
+  quoted Ngô Lâm Xuyên footnote are deleted, so `entries` goes 7/6/6/6 → 5; every reference is now exactly
+  `{sourceId, pdfPages: [start, end]}` with the old `section`, `printedPages` and `condition` keys gone (net
+  −1208 lines). Seven `notes[]` entries (1/1/2/3) record genuine source discrepancies: the Hán reading `lục`
+  against a Vietnamese `âm` that reads `lăng` (53), Ngô Tất Tố's Thoán translation dropping the negation of
+  `Thiên địa bất giao` (54), Nguyễn Hiến Lê's unsupported hào-tam/thượng correlation (55), Phan Bội Châu's
+  `Cửu Nhị` label inside the Lục Nhị commentary (55), Ngô Tất Tố's “Hào Sáu Trên ở ngôi Năm” and Phan Bội
+  Châu's `Cửu Nhị` on an âm hào (56), the Lục nhị–Lục ngũ “chính ứng” that Trình Di does not use (56), and
+  `minh thuận`/`無咎` against `minh thận`/`無尤` (56).
+- Review: two content rounds plus a two-pass delivery gate, under the batch acceptance bar the operator set
+  (reference correctness and no invented content; a Vietnamese degree or superlative where the source gives
+  none is a style difference, not a defect). Round 1 was exhaustive but split per quẻ — 29/31/30/33 units,
+  116 attributed entries plus 7 notes — and returned PASS, FAIL with one finding, PASS, PASS. The single
+  finding, that `hexagram-54.json` `entries[0].references[3]` (`nhl [59, 61]`) was a wrong page reference,
+  was rejected as a false positive: NHL 59 is the `THUẬT NGỮ VÀ QUI TẮC CẦN NHỚ` chapter stating `Cách vạch
+và xét trùng quái: từ dưới lên`, and 44 records including the accepted `hexagram-20.json` carry the same
+  convention citation. Round 2 verified and independently CONFIRMED that rejection and returned PASS with no
+  findings over the finding, all seven notes, the overview page ranges and the five deleted entries. Gate
+  round 3 returned FAIL with two findings (three note claims attested from extracted text only, and the
+  handoff not yet updated); both were corrected and gate round 4 returned PASS.
+- Lesson: a coverage claim must count units that exist — the first single-reviewer brief asserted 128 units
+  where 116 + 7 = 123, and that reviewer honestly reported reading 7 of them rather than claiming PASS. The
+  same applies to evidence: a provenance or image record must not describe text extracts as page-image
+  checks, which is exactly what gate round 3 caught. And a reviewer's “not in this quẻ's extract, therefore
+  wrong” assumption about a repository-wide convention citation is a false-positive shape to expect again.
+- Evidence: `./init.sh` passed via `=== Verification passed ===` (181 core tests + 97 knowledge tests;
+  format, lint, typecheck, build). `validate:corpus --check-books --check` reported 381 records, 381 ready, 4
+  supplied books. The invariants artifact recorded **0 of 4** files with changed invariant fields, all 24
+  `(position, polarity, label)` tuples unchanged, no legacy reference keys, and `notes` unchanged at
+  1/1/2/3. Fifteen printed-glyph or printed-label note claims, which no reviewer child can check, were
+  rendered with PyMuPDF and read by the Leader, and all fifteen held. Exact-head CI on `86d18a7` was green
+  (`verify`, Cloudflare Pages, GitGuardian) with `mergeStateStatus: CLEAN`. Writer provenance reports
+  (29/31/30/33 rows) and the review records are kept outside published JSON in
+  `workspaces/liuyao/.feat-081-work/checkpoint/`.
+- Limits: reviewer children inspect extracted page text only, never page images, and said so; the
+  printed-page claims rest on the Leader's rendering, not on independent review. Round 2 verified the
+  finding, the notes, the overview ranges and the deletions — it was not a second exhaustive pass. Quẻ 54's
+  Trình Di commentary is truncated mid-sentence in Ngô Tất Tố PDF 814; the record states the gap instead of
+  filling it.
+- Blockers: none for feat-081.
+- Next: no feature is active. feat-082 (quẻ 57–60), feat-073 (quẻ 21–24) and the other todo entries in the
+  batch stay `todo` until the operator selects one.
+
 ## 2026-10-09 — feat-072 reviewed and improved quẻ 17–20
 
 - Status: done; merged to `main` in `4092aae` (PR #100), squash-merged at the exact reviewed head `07b800dd6d1ae80fb059648633f9e08410f03433`.
