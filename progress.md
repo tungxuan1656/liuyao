@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-10 — feat-083 independent retrospective round-2 verification
+
+- **State**: feat-083 remains `done`; issue [#118](https://github.com/tungxuan1656/liuyao/issues/118) documents the prior independent review-evidence gap.
+- **Done**: a new read-only source review, separate from the original writer and Leader, independently rechecked all seven corrections to quẻ 61–64, their direct uses and selected risky passages. It visually inspected NHL 331, NTT 911/930 and PBC 588. No new actionable defect was established in the inspected scope; the original round-2 non-execution is still disclosed, not rewritten.
+- **Evidence**: `features/feat-083.md` records each exact pointer, book/PDF page and disposition against `main a4bffd2d`; local source fingerprints matched. Independent structure check: 4 ready quẻ, 24 ordered lines, 98 attributed line entries, six notes and 281 in-range references. This is not external scholarly approval or a new 128-item exhaustive review.
+- **Blockers**: none found in the bounded source comparison; final-head CI and operator PR review are pending.
+- **Next**: verify the documentation PR's exact-head CI, review and merge if approved; leave feat-084 `todo` until explicitly selected.
+
 ## 2026-10-10 — feat-074/075 merged-feature closeout and retired audit report
 
 - **State**: feat-074 and feat-075 `done` after the earlier operator merges; no feature remains `active` in `feature_index.json`. Feat-084 remains `todo`.
