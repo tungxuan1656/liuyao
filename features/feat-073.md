@@ -93,6 +93,60 @@ dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
   actually `lines[4]`), and `zero condition keys remain`. All four were corrected after the freeze, in
   the fix commit that carries this sentence and the 20 removed `condition` lines.
 
+### Reproduce the 10 PDF-page image checks
+
+The earlier review's `$W/images/*.png` crops were temporary, not committed evidence.
+The source catalog at `packages/knowledge/data/sources.json` contains the local PDF
+paths, SHA-256 fingerprints, and page counts for the supplied editions. Recreate the
+page images **locally** from the repo root with the same PDFs (PDF page numbers are
+one-based and include covers). PyMuPDF is required: `python -m pip install pymupdf`.
+
+The 10 inspected locations are: NHL 94, 203, 206; PBC 235; and NTT 383,
+418, 420, 425, 426, 431. Their corresponding claims are in the `notes` of
+`hexagram-21.json` through `hexagram-24.json` and in the PDF images bullet above.
+
+```bash
+python - <<'PY'
+import hashlib
+import json
+import tempfile
+from pathlib import Path
+
+import fitz  # PyMuPDF
+
+catalog = json.loads(Path("packages/knowledge/data/sources.json").read_text(encoding="utf-8"))
+editions = {source["id"]: source["editions"][0] for source in catalog["sources"]}
+pages = {
+    "source-book-nhl": [94, 203, 206],
+    "source-book-pbc": [235],
+    "source-book-ntt": [383, 418, 420, 425, 426, 431],
+}
+out = Path(tempfile.mkdtemp(prefix="liuyao-feat-073-pdf-"))
+for source_id, page_numbers in pages.items():
+    edition = editions[source_id]
+    pdf_path = Path(edition["localInputPath"])
+    if not pdf_path.is_file():
+        raise FileNotFoundError(f"Supply the licensed research PDF at {pdf_path}")
+    if hashlib.sha256(pdf_path.read_bytes()).hexdigest() != edition["sha256"]:
+        raise ValueError(f"PDF fingerprint mismatch: {pdf_path}")
+    with fitz.open(pdf_path) as pdf:
+        if len(pdf) != edition["pdfPageCount"]:
+            raise ValueError(f"PDF page count mismatch: {pdf_path}")
+        for page_number in page_numbers:
+            if not 1 <= page_number <= len(pdf):
+                raise ValueError(f"Invalid PDF page: {source_id} {page_number}")
+            dest = out / f"{source_id}-pdf-{page_number:03d}.png"
+            pdf[page_number - 1].get_pixmap(dpi=200, alpha=False).save(str(dest))
+print(f"Visually inspect the 10 PNGs in: {out}")
+PY
+```
+
+This reproduces the page images, **not** the original review verdict. A reviewer
+must inspect each rendered page against the corresponding `notes` claim and
+record any disagreement. Neither the books nor derived page screenshots belong
+in the public repository.
+
+
 ## Decision log
 
 ### Four parallel writers, one file each
@@ -184,11 +238,13 @@ dưới sấm trên chớp`; NHL 203 prints `quẻ Búi`.
 
 ## Handoff
 
-- State: active — implementation verified locally; independent review complete; PR pending.
-- Evidence: see Verify above; 4 records changed, 16 findings corrected across three rounds.
+- State: done — merged into `main` in PR #105.
+- Evidence: PR #105 (merge commit `cc68182ccfe2487ff7eb105db96ffd2b79a23c68`); see Verify above
+  for the reviewed source passages, checks, and corrected findings. The ten PDF-page images
+  can be regenerated using the instructions above.
 - Blockers: none.
-- Limits: the reviewer children cannot see PDF page images and reported that plainly; the 10
-  image-dependent notes were checked by the Leader instead. `pack/hexagram-24.md` omits NHL 94 and PBC
-  244–247 even though the record cites them, so quẻ 24 reviewers read `$W/pdftext/*.txt` directly.
+- Limits: reviewer children could not render PDF page images; the ten image-dependent claims were
+  inspected by the Leader and remain manual visual checks. `pack/hexagram-24.md` omitted NHL 94
+  and PBC 244–247, so reviewers read `$W/pdftext/*.txt` directly.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: push the branch and open the PR against `main`.
+- Next: hand off to feat-074 (quẻ 25–28) when scheduled.
