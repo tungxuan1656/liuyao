@@ -102,10 +102,12 @@ New interpretation, calendar, or UI behavior.
 ## Handoff
 
 - State: done.
-- Evidence: reviewed head `c78b044779194c891599d36fa7c75851640155f8` (complete corpus change; `ed0f7d6`
-  adds only the `feature_index.json` activation); open PR #108, not merged, exact-head CI green on
-  `ed0f7d6`. `./init.sh` passed with `=== Verification passed ===` (181 core tests + 97 knowledge tests;
-  format, lint, typecheck, build, package exports). `validate:corpus --check-books --check` reported 381
+- Evidence: reviewed corpus head `c78b044779194c891599d36fa7c75851640155f8` — the complete corpus change;
+  the commits that follow it add only records (`ed0f7d6` activation, `ba77b62` completion) and the `main`
+  merge. Open PR #108, **not merged**, exact-head CI green (`verify`, Cloudflare Pages, GitGuardian) with
+  `mergeStateStatus: CLEAN`. `./init.sh` passed with `=== Verification passed ===` (181 core tests + 97
+  knowledge tests; format, lint, typecheck, build, package exports). `validate:corpus --check-books --check`
+  reported 381
   records, 381 ready, 4 supplied books. Structure invariants unchanged against baseline `b9d306d`: 0 of 4
   files changed an invariant field, all 24 `(position, polarity, label)` tuples and every entry count
   unchanged; references 65→64 (Cách, duplicate dropped), 63→63, 57→57, 63→65 (Cấn, two Chu Hy pages
