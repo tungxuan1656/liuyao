@@ -134,3 +134,12 @@ lánh mà đi mới khỏi`, NTT 631–632 `Kẻ tiểu nhân lui xuống, thì 
   human review is pending.
 - Dependencies: [feature index](../feature_index.json).
 - Next: resolve PR #101 CI and review feedback, then activate the next unstarted batch feature.
+
+## Follow-up review and merge preparation — 2026-10-09
+
+- Rechecked quẻ 37–40 and their 24 hào against the supplied book pages (Nguyễn Hiến Lê PDF 248–260, Phan Bội Châu PDF 358–394, Ngô Tất Tố PDF 583–634), in addition to the two earlier review rounds. The structural and source checks remained intact.
+- **Kiển Lục Tứ:** Ngô Tất Tố PDF 617 prints `Chín Hai` in Chu Hy's explanation where `Cửu Tam` is the adjacent yang line (see NTT PDF 616–617 and quẻ structure). Confirmed on the rendered page, corrected the explanation and recorded a separate note rather than silently modifying the source.
+- **Khuê Sơ Cửu/Cửu Tứ:** Ngô Tất Tố PDF 599–600 explicitly distinguishes their same-yang informal alliance from a formal yin–yang `chính ứng`; Nguyễn Hiến Lê PDF 252 and Phan Bội Châu PDF 373 use `ứng` to describe their cooperation. Added an editorial note preserving both readings.
+- **Restored meaningful cautionary context:** the original batch removed every `condition`, including displays that distinguish ancient family roles, coercion, fortune imagery, directionality and political violence from modern instructions. The canonical knowledge model continues to support conditions, and the web UI renders them. Reinstated 18 targeted inherited cautions across the four quẻ without bringing back repetitive boilerplate or the optional `section` / `printedPages` metadata.
+- Existing quẻ structures, 24 hào, 96 attributed line entries and author attributions remain unchanged. The two new notes bring total `notes` to 6 (1, 3, 2, 0).
+- Synchronized branch with current `main`, retained the newer append-only progress history and marked `feat-077` `done` for operator merge. PR #101 remains open; do not merge automatically. Run verification on the final head.
