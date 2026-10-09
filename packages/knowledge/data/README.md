@@ -8,6 +8,7 @@ Edit one canonical JSON record. Git stores its revisions.
 - Structure and links → [Knowledge model](../../../docs/design-docs/knowledge-model.md)
 - Content scope → [Knowledge content](../../../docs/product-specs/knowledge-content.md)
 - Source review → [Knowledge quality](../../../docs/product-specs/knowledge-quality.md)
+- Hexagram batch briefs and review rounds → [Batch policy](../../../docs/product-specs/knowledge-quality.md#hexagram-review-batches)
 - Supplied editions → [Book sources](../../../docs/references/book-sources.md)
 - Source-use boundaries → [Licensing](../../../LICENSING.md)
 
@@ -37,6 +38,8 @@ Keep overview, six lines, and special passages in the same hexagram record.
 Keep differing interpretations attributed and common limitations in source metadata.
 Do not repeat audit procedures or general disclaimers in each paragraph.
 Do not create ledgers, hash snapshots, claim inventories, or certification artifacts.
+For hexagram review batches, follow the linked batch policy before writing or preparing review briefs.
+Temporary writer source-locator reports support that review; they do not change the published record contract.
 
 ## Verification
 

@@ -16,7 +16,10 @@ Supplied passage → original explanation → book/page reference → focused co
 Attach references to each substantive explanation, table, or example.
 Name the supplied book and the relevant PDF pages. Add printed pages or a section when they improve lookup.
 Keep the commentator or translator attribution when it affects meaning.
+When a book reports another author's view, cite the reporting book's actual page and identify the intermediary.
+Do not cite a missing commentary section in another book as support for that reported view.
 A reference can support a coherent explanation across several connected paragraphs.
+Include pages that support retained background facts, such as bottom-to-top line order.
 Do not assign a separate claim ID or citation record to every sentence.
 
 Inspect the full relevant passage and its necessary context before summarizing it.
@@ -31,6 +34,16 @@ Preserve disagreements between authors. Do not merge them into an unattributed r
 Keep unresolved readings as attributed uncertainty, not calculation authority.
 Document a material source error with its location and the supported reading.
 Do not fabricate missing passages, authors, or references.
+Keep each attributed explanation within the named author's supported reading.
+Do not borrow another author's facts, reasons, conditions, or conclusions to expand it.
+Judge original paraphrases by meaning and source support, not word-for-word agreement.
+Degree or emphasis alone is a style difference, unless it changes the source's judgment or claim.
+Changed causation, quantities, possibilities, or certainty remain content defects.
+
+Distinguish source errors from source gaps.
+For an error, record the incorrect passage, its location, and evidence for the correction.
+For a gap, state what is unavailable without inventing a replacement or calling the absence an error.
+Use a record note when the gap changes the reader's understanding; otherwise record it in the feature finding.
 
 Write original Vietnamese summaries under the licensing boundary.
 Put common source limitations in source metadata.
@@ -73,6 +86,25 @@ Publish a batch after source comparison, structural checks, and the relevant rep
 A separate content review can help with difficult material. It does not require a certification artifact or model identity per paragraph.
 Keep draft content outside the published library.
 Run the [development checks](../development.md) appropriate to the change.
+
+### Hexagram review batches
+
+For feat-072 through feat-083, use the bounded review policy selected in [feat-071](../../features/feat-071.md#operator-sets-the-acceptance-bar-and-the-review-policy-for-the-batch).
+
+- State the written acceptance bar in both writer and reviewer briefs. Do not silently replace it with literal clause fidelity.
+- Require a temporary writer report with one source-locator row per attributed entry: pointer, author, source/pages, and a short supporting excerpt.
+- Keep these reports outside published JSON. They locate passages; they are not evidence of accuracy or a certification ledger.
+- In round 1, compare every attributed overview and line entry against its source, clause by clause.
+- Also inspect general introductions, notes, and any special passages. Count actual entries; do not assume 112.
+- In round 2, verify corrections and their direct uses. Reuse round 1 coverage and inspect nearby or high-risk passages.
+- Report exact pointers, offending text, source wording, page locations, and the smallest correction for each finding.
+- Correct material inherited errors inside the selected records, not only errors introduced by the current diff.
+- If round 2 finds unresolved content defects, report the blocker. Obtain approval before extending the review budget or changing acceptance.
+- State which passages and images were inspected. A text-only review cannot attest image-dependent checks.
+- Record verification against the final revision. An earlier PASS does not override a later supported finding.
+
+The [writing unit](knowledge-content.md#writing-unit) governs explanation length and author coverage.
+The [data guide](../../packages/knowledge/data/README.md) owns authoring and verification commands.
 
 ## Migration history
 

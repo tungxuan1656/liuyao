@@ -79,8 +79,9 @@ It identifies primary and changed hexagrams, changing positions, and primary-boa
 The web layer adapts `crypto.getRandomValues` to the injected coin-bit source. The core uses no browser globals.
 
 The knowledge package validates authored JSON and exposes readonly lookup and normalized search APIs.
-The [knowledge model](docs/design-docs/knowledge-model.md) owns the intended simplified JSON structure and loading contract.
-The current web build imports the full generated book release. Feat-068 replaces that import with a small index and record assets.
+The [knowledge model](docs/design-docs/knowledge-model.md) owns the implemented JSON structure and loading contract.
+The web build imports compact metadata and loads validated content asynchronously by record ID.
+The ready library is precached for offline access; detailed records are not embedded in the startup JavaScript.
 The supplied PDFs are research inputs outside the runtime flow. They stay local under `docs/books/` and are not versioned.
 
 ## Verification ownership

@@ -18,34 +18,34 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] 17 · Sơ (1).
-- [ ] 17 · Nhị (2).
-- [ ] 17 · Tam (3).
-- [ ] 17 · Tứ (4).
-- [ ] 17 · Ngũ (5).
-- [ ] 17 · Thượng (6).
-- [ ] 18 · Sơ (1).
-- [ ] 18 · Nhị (2).
-- [ ] 18 · Tam (3).
-- [ ] 18 · Tứ (4).
-- [ ] 18 · Ngũ (5).
-- [ ] 18 · Thượng (6).
-- [ ] 19 · Sơ (1).
-- [ ] 19 · Nhị (2).
-- [ ] 19 · Tam (3).
-- [ ] 19 · Tứ (4).
-- [ ] 19 · Ngũ (5).
-- [ ] 19 · Thượng (6).
-- [ ] 20 · Sơ (1).
-- [ ] 20 · Nhị (2).
-- [ ] 20 · Tam (3).
-- [ ] 20 · Tứ (4).
-- [ ] 20 · Ngũ (5).
-- [ ] 20 · Thượng (6).
-- [ ] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
-- [ ] Inspect full passages/images; review each source error and exclusion.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] 17 · Sơ (1).
+- [x] 17 · Nhị (2).
+- [x] 17 · Tam (3).
+- [x] 17 · Tứ (4).
+- [x] 17 · Ngũ (5).
+- [x] 17 · Thượng (6).
+- [x] 18 · Sơ (1).
+- [x] 18 · Nhị (2).
+- [x] 18 · Tam (3).
+- [x] 18 · Tứ (4).
+- [x] 18 · Ngũ (5).
+- [x] 18 · Thượng (6).
+- [x] 19 · Sơ (1).
+- [x] 19 · Nhị (2).
+- [x] 19 · Tam (3).
+- [x] 19 · Tứ (4).
+- [x] 19 · Ngũ (5).
+- [x] 19 · Thượng (6).
+- [x] 20 · Sơ (1).
+- [x] 20 · Nhị (2).
+- [x] 20 · Tam (3).
+- [x] 20 · Tứ (4).
+- [x] 20 · Ngũ (5).
+- [x] 20 · Thượng (6).
+- [x] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
+- [x] Inspect full passages/images; review each source error and exclusion.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -61,9 +61,27 @@ New interpretation, calendar, or UI behavior.
 
 ## Verify
 
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Confirm all assigned units and document routes.
+Executed and passing at merge head `4092aae` (PR #100, squash of `07b800dd6d1ae80fb059648633f9e08410f03433`):
+
+- `./init.sh` → `=== Verification passed ===` — 181 core tests, 97 knowledge tests.
+- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` → `Knowledge: 381 records; 381
+ready; 4 supplied books. Structural links and source pages valid.`
+- Structure comparison against baseline `792fcaa1ac38a049a8227f74f18e7c7d21403ede` (artifact
+  `.agent-work/feat-072/invariants.md`): **0 of 4** files changed an invariant field; all 24
+  `(position, polarity, label)` tuples unchanged; no `section`, `printedPages` or `condition` keys remain;
+  every reference is exactly `{sourceId, pdfPages: [start, end]}`; all four records `status: "ready"`.
+  The only intended count change is quẻ 20's overview 4 → 5 (its missing Chu Hy layer).
+- Review rounds: 1 exhaustive (`fdb18901`) PASS 0 findings → 2 verification (`c51fd69d`) **FAIL 3 P1** →
+  3 verification of the corrections (`e388f248`) PASS 0 findings.
+- PDF images: 5 of the 13 notes assert something about a printed page image, which no reviewer can check.
+  The Leader rendered those pages with PyMuPDF and read them; all five held (NTT 333's `☵` before "Đoái",
+  PBC 210's `2. Cửu Nhị` above a `初九` Hán line, NTT 351's `Cán mẫu chi cổ`, NTT 352 reproducing Tùy's
+  `初九: 官有渝…`, PBC 219 printing `咎不長也` above a negation-less Vietnamese sentence). The other eight
+  notes make prose/numeral claims the extracted text already attests.
+- Exact-head CI on `07b800d`: `verify` pass, Cloudflare Pages pass, GitGuardian pass,
+  `mergeStateStatus: CLEAN`.
+- Distinguishing the two commits: `3c38ac7` is the reviewed content, `07b800d` the three round-2
+  corrections. Both are squashed into `4092aae`.
 
 ## Decision log
 
@@ -153,7 +171,16 @@ lại"}` with `references: [{"sourceId": "source-book-nhl", "pdfPages": [195, 19
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- State: done.
+- Evidence: merge head `4092aae` (PR #100, one PR for this feature); reviewed head
+  `07b800dd6d1ae80fb059648633f9e08410f03433`; `./init.sh` passed (181 core + 97 knowledge tests);
+  `validate:corpus --check-books --check` passed (381 records / 381 ready / 4 supplied books); structure
+  invariants unchanged for all 4 files; review rounds 1–3 recorded above; 5 note image claims verified by
+  rendering the source pages.
+- Blockers: none.
+- Limits: the reviewer children cannot see PDF page images and reported that plainly; 5 of 13 notes were
+  image-verified by the Leader and the remaining 8 rest on extracted text. Round 2 confirmed its finding
+  that one reference declaration (`hexagram-19.json` `entries[0].references`) was dropped by this
+  feature's own diff while the sentence needing it was retained — worth watching in later features.
+- Dependencies: [feature index](../feature_index.json).
+- Next: Activate feat-073 (quẻ 21–24).

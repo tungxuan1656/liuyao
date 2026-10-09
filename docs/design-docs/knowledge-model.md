@@ -40,8 +40,12 @@ Common fields:
 
 An entry contains text and references. It can also contain a title, attribution, or a meaningful condition.
 Use attribution with author and optional via when a translator or intermediary matters.
+Keep the commentator's name in author. Put translation or reported-speech context in via, not in the author name.
+For Trình Di or Chu Hy through NTT, use via: "Ngô Tất Tố — dịch và chú giải".
+For Chu Hy reported by NHL, use author: "Chu Hy", via: "Nguyễn Hiến Lê — dẫn lại", and cite NHL.
 A book reference contains sourceId and pdfPages as an inclusive start/end pair.
 Add printedPages or section only when known and useful.
+These optional reference fields and meaningful entry conditions remain supported; they are not legacy audit fields.
 Project conventions use a specification path and section instead of a fabricated book reference.
 
 Keep the text readable as Vietnamese prose. A string can contain paragraphs or short text lists.

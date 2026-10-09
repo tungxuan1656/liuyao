@@ -30,6 +30,8 @@ Write a coherent explanation of one idea, not one record for each sentence or ob
 A paragraph can summarize several connected source paragraphs and cite their page range.
 Split entries when authors disagree, a condition changes the meaning, or the reader needs a separate section.
 Preserve meaningful detail, examples, uncertainties, and source differences.
+Set no character or word target. When a source says little, write little without losing material meaning.
+Do not pad an author's explanation with another author's reasoning.
 Do not create content merely to record that a heading, translation, or commentary exists.
 
 One concept has one canonical record. Link that record from articles instead of copying its explanation.
@@ -39,6 +41,9 @@ Use Vietnamese prose and established names. Keep source terminology and source a
 
 Each hexagram contains its overview and six separately readable positions.
 Use all relevant supplied sources without forcing BPCT into classical commentary or assuming every author comments on every passage.
+For classical comparisons, present available views in this order: Nguyễn Hiến Lê, Phan Bội Châu, Trình Di, Chu Hy.
+Keep additional useful attributed views. Five overview entries and four line entries are not fixed quotas.
+If a commentary is absent, use a supported reported view with its intermediary or retain fewer views and explain the material gap.
 Organize additional material by its meaning and actual source heading.
 A useful library does not require an inventory decision for every book page, note, or blank.
 
