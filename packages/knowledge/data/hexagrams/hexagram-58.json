@@ -389,7 +389,8 @@
               "sourceId": "source-book-pbc"
             }
           ],
-          "text": "Phan Bội Châu xem Thượng Lục làm chủ cho quẻ Đoái ở cực điểm sự vui, dắt kéo dài sự vui ra. Hào không ghi hung hối lận vì hào Năm đã biết là bác không tin, hào Bốn thân với Năm, hào Hai ứng với Năm, Thượng muốn dẫn cũng chẳng dẫn được ai nên không hại đến thế đạo."
+          "text": "Phan Bội Châu xem Thượng Lục làm chủ cho quẻ Đoái ở cực điểm sự vui, dắt kéo dài sự vui ra. Hào không ghi hung hối lận vì hào Năm đã biết là bác không tin, hào Bốn thân với Năm, hào Hai ứng với Năm, Thượng muốn dẫn cũng chẳng dẫn được ai nên không hại đến thế đạo.",
+          "condition": "Chữ “ứng” ở đây được giữ theo cách nói của Phan Bội Châu (PDF 544); Cửu Nhị và Cửu Ngũ đều là hào dương, không tạo thành cặp chính ứng âm–dương."
         },
         {
           "attribution": {
@@ -446,6 +447,23 @@
         }
       ],
       "text": "NTT PDF 867 phần dịch âm Tiểu Tượng Sơ cửu in nhầm thành Hòa đoái chi cát, hối vong thay vì hành vị nghi dã. Phần dịch nghĩa và bản giải của Trình Di và Chu Hy trên cùng trang đều theo đúng câu đi chưa ngờ vậy."
+    },
+    {
+      "references": [
+        {
+          "pdfPages": [544, 544],
+          "sourceId": "source-book-pbc"
+        },
+        {
+          "pdfPages": [542, 542],
+          "sourceId": "source-book-pbc"
+        },
+        {
+          "pdfPages": [313, 313],
+          "sourceId": "source-book-nhl"
+        }
+      ],
+      "text": "PBC PDF 544 ở lời giải Thượng Lục viết “Nhị thời ứng với Ngũ”. Tuy nhiên Cửu Nhị và Cửu Ngũ của quẻ Đoài đều là hào dương (PBC PDF 542, 544; NHL PDF 313), nên chúng không phải một cặp chính ứng âm–dương theo vị trí hai–năm. Giữ chữ “ứng” như cách Phan Bội Châu mô tả sự liên hệ đồng đức, không diễn thành quan hệ chính ứng trong cấu trúc quẻ."
     }
   ],
   "relatedIds": ["trigram-lake"],
