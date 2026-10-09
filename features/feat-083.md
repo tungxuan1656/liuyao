@@ -100,15 +100,34 @@ Review evidence, all outside product commits:
 - SHA-256 of all four supplied PDFs was independently recomputed and matches `packages/knowledge/data/sources.json` exactly. Reviewed NHL (393 PDF pages), PBC (655), NTT (938); the BPCT file (467) was fingerprinted but was not a source for these four quẻ.
 - The original PR #107 supplied the **locations of the findings**, not the verdicts. The following conclusions come from a fresh comparison of current JSON with independently read source pages.
 
-| Historical finding and current pointer | Independent book evidence and result |
-| --- | --- |
-| **61-1** `entries[1]` NHL overview inverted the response relationship | **PASS** — NHL PDF **321** explicitly has upper Tốn *thuận với người dưới* and lower Đoài *phục tòng người trên*. The corrected explanation preserves both directions and the *chính đạo* requirement. |
-| **61-2** `entries[5].references` cited only the translator's final notes | **PASS** — NTT **895** contains Tự Quái, NTT **899** contains hào-nhị's `ràng`, and NTT **904** footnotes **[1]–[2]** give the title gloss and *Dịch theo Chu Hy*. The entry now cites all relevant pages and retains Ngô Tất Tố's own attribution. |
-| **61-3** `lines[4].entries[3]` wrongly embedded a project polarity gloss in Chu Hy's reading | **PASS** — NTT **903** credits Chu Hy with ngũ/nhị `ứng`; current line 5 attribution contains only that reading. The distinction from **formal chính ứng** lives separately in `notes[0]`; nhị and ngũ are both **yang**. |
-| **61-4** `notes[0].references` omitted the ngũ page | **PASS** — NTT **899** (nhị) and **903** (ngũ) separately support the note; the current references include both, plus NHL **322** and PBC **568–569**. |
-| **62-1** `entries[4]` assigned the three *Đại Tượng* examples to the wrong NTT source pages | **PASS** — Chu Hy's `ba điều đó` and its limits occur on NTT **909**, while footnote **[3]** defining them as *nết, tang và dùng* is at NTT **916**. The present references include both; `entries[5]` separately attributes the footnote expansion to Ngô Tất Tố. |
-| **62-2** `lines[2].entries[0]` weakened NHL's hào-tam harm judgment | **PASS** — NHL **326** says *bị chúng làm hại* and *bị vạ*, not merely “at risk.” Current line 3 preserves **`nên bị vạ`**. Neighbouring PBC **579–580** and NTT **911–912** were read without merging other authors' conditions into NHL's judgment. |
-| **64-1** `notes[0].references` cited only NHL 331 for the complete six-line passage | **PASS** — NHL **331** twice prints **5 hào** in overview prose, yet its quẻ diagram and the **six line sections run from NHL 331 through 333**. The corrected `[331,333]` range actually supports the claim; PBC **593–594** and NTT **928** independently confirm the six-line structure. |
+#### 61-1 — `entries[1]` NHL overview inverted the response relationship
+
+**PASS** — NHL PDF **321** explicitly has upper Tốn *thuận với người dưới* and lower Đoài *phục tòng người trên*. The corrected explanation preserves both directions and the *chính đạo* requirement.
+
+#### 61-2 — `entries[5].references` cited only the translator's final notes
+
+**PASS** — NTT **895** contains Tự Quái, NTT **899** contains hào-nhị's `ràng`, and NTT **904** footnotes **[1]–[2]** give the title gloss and *Dịch theo Chu Hy*. The entry now cites all relevant pages and retains Ngô Tất Tố's own attribution.
+
+#### 61-3 — `lines[4].entries[3]` wrongly embedded a project polarity gloss in Chu Hy's reading
+
+**PASS** — NTT **903** credits Chu Hy with ngũ/nhị `ứng`; current line 5 attribution contains only that reading. The distinction from **formal chính ứng** lives separately in `notes[0]`; nhị and ngũ are both **yang**.
+
+#### 61-4 — `notes[0].references` omitted the ngũ page
+
+**PASS** — NTT **899** (nhị) and **903** (ngũ) separately support the note; the current references include both, plus NHL **322** and PBC **568–569**.
+
+#### 62-1 — `entries[4]` assigned the three *Đại Tượng* examples to the wrong NTT source pages
+
+**PASS** — Chu Hy's `ba điều đó` and its limits occur on NTT **909**, while footnote **[3]** defining them as *nết, tang và dùng* is at NTT **916**. The present references include both; `entries[5]` separately attributes the footnote expansion to Ngô Tất Tố.
+
+#### 62-2 — `lines[2].entries[0]` weakened NHL's hào-tam harm judgment
+
+**PASS** — NHL **326** says *bị chúng làm hại* and *bị vạ*, not merely “at risk.” Current line 3 preserves **`nên bị vạ`**. Neighbouring PBC **579–580** and NTT **911–912** were read without merging other authors' conditions into NHL's judgment.
+
+#### 64-1 — `notes[0].references` cited only NHL 331 for the complete six-line passage
+
+**PASS** — NHL **331** twice prints **5 hào** in overview prose, yet its quẻ diagram and the **six line sections run from NHL 331 through 333**. The corrected `[331,333]` range actually supports the claim; PBC **593–594** and NTT **928** independently confirm the six-line structure.
+
 
 ### Additional independent high-risk checks
 
