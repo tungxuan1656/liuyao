@@ -1327,3 +1327,17 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Evidence: final ./init.sh passed (181 core + 97 knowledge tests; knowledge 2.14 seconds). Corpus/source freshness, Node access, 619 local links, and diff checks passed.
 - Initial JavaScript: 832.86 KB raw / 232.47 KB gzip. Full precache: 400 build entries, 5,473.54 KiB raw. Authored corpus content remains unchanged.
 - Status: done. Repairs are prepared on the existing PR branch; merge remains pending. No dependent feature was activated.
+
+## 2026-10-09 — feat-069 reviewed and improved quẻ 05–08
+
+- Status: done; reviewed and verified against supplied books.
+- Result: Reviewed and improved all four assigned quẻ (05 Thủy Thiên Nhu, 06 Thiên Thủy Tụng, 07 Địa Thủy Sư, 08 Thủy Địa Tỷ) and all twenty-four hào positions under the simplified knowledge model.
+- Content updates:
+  - Cleaned legacy `section` and `printedPages` fields across all four hexagrams; preserved required entry IDs in quẻ 06 for lesson link resolution.
+  - Enriched structural and thematic overviews across NHL, PBC, and NTT with distinct viewpoints (General, Nguyễn Hiến Lê, Phan Bội Châu, Trình Di, Chu Hy).
+  - Added and checked Chu Hy classical commentaries across overview entries and individual hào positions (quẻ 05 line 1, lines 2–6; quẻ 06 lines 1–6; quẻ 07 lines 1–6; quẻ 08 lines 1–6).
+  - Polished Vietnamese prose for natural readability, philosophical precision, and adherence to traditional I Ching doctrine.
+- Evidence: `./init.sh` passed 100% (181 core tests + 97 knowledge tests; knowledge suite ran in 2.15s). Full corpus validation with `--check-books` verified 381 records and all 4 supplied PDF fingerprints.
+- Coverage: All 4 assigned quẻ and 24 hào positions have complete, verified coverage.
+- Blockers: none for feat-069.
+- Next: User selection and activation of feat-070 (Review and improve quẻ 09–12 and all twenty-four hào).

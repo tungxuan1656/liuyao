@@ -4,74 +4,81 @@
   "title": "Thiên Thủy Tụng",
   "aliases": ["Tụng"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "relatedIds": ["trigram-water", "trigram-heaven"],
+  "relatedIds": ["trigram-heaven", "trigram-water"],
   "status": "ready",
   "entries": [
     {
-      "text": "Thiên Thủy Tụng có ngoại quái Càn và nội quái Khảm. Hào được đếm từ dưới lên.",
+      "text": "Thiên Thủy Tụng có ngoại quái Càn và nội quái Khảm. Hào được đếm từ dưới lên. Quẻ trên là Càn (trời) có xu hướng đi lên, quẻ dưới là Khảm (nước) có xu hướng chảy xuống thấp; phương hướng trái ngược, chí hướng bất đồng nên sinh tranh tụng. Nối tiếp quẻ Nhu (chờ đợi, ẩm thực), con người vì mưu cầu ăn uống mà nảy sinh tranh đoạt quyền lợi. Đạo xử tụng cốt ở lòng chí thành, giữ mức trung trinh, biết dừng đúng lúc khi đã tỏ rõ phân minh, cậy nhờ bậc đại nhân công minh soi xét và thận trọng mưu tính ngay từ đầu để dứt mối tranh chấp.",
       "references": [
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [153, 153],
-          "section": "Thiên Thủy Tụng — cấu tạo và Thoán từ",
-          "printedPages": ["153", "153"]
+          "pdfPages": [59, 61]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [59, 61],
-          "section": "Thuật ngữ; Hào cửu — Hào lục",
-          "printedPages": ["59", "61"]
+          "pdfPages": [153, 154]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [100, 104]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [196, 199]
         }
       ],
       "id": "structure"
     },
     {
-      "text": "Nguyễn Hiến Lê đọc Tụng như lời răn về tranh chấp: làm rõ điều oan rồi biết dừng, tìm người xét xử công minh và tránh đẩy vụ việc tới cùng. Ông cũng dẫn lời Đại tượng về việc cẩn thận từ lúc bắt đầu để giảm nguy cơ kiện tụng.",
+      "text": "Nguyễn Hiến Lê xem Tụng là bài học răn về việc tranh chấp kiện cáo. Quẻ tiếp sau Nhu vì lòng tham ăn uống sinh ra tranh giành. Vụ kiện chỉ nên nhằm minh oan cho nỗi ấm ức bị che lấp trong lo sợ; khi đã sáng tỏ thì giữ đạo trung mà dừng lại, quyết theo kiện tới cùng tất chuốc lấy tai họa. Ông nhấn mạnh lời khuyên tìm đến bậc đại nhân công minh ở hào năm để phân xử, tránh liều lĩnh vượt sông lớn nguy hiểm; đồng thời dẫn lời Đại tượng khuyên người quân tử phải cẩn thận mưu tính ngay từ lúc đầu.",
       "references": [
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [153, 153],
-          "section": "Thiên Thủy Tụng — cấu tạo và Thoán từ",
-          "printedPages": ["153", "153"]
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [154, 154],
-          "section": "Thiên Thủy Tụng — Hào 1; Thiên Thủy Tụng — Hào 2",
-          "printedPages": ["154", "154"]
+          "pdfPages": [153, 154]
         }
       ],
-      "id": "nhl-overview",
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      }
+      },
+      "id": "nhl-overview"
     },
     {
-      "text": "Phan Bội Châu giải thích Tụng là tranh biện hoặc kiện cáo khi sức mạnh ở trên gặp sự hiểm ở dưới. Việc kiện chỉ nhằm phân biệt đúng sai; sau khi đã rõ nên dừng và nhờ người có đức, có tài xét xử.",
+      "text": "Phan Bội Châu giải nghĩa Tụng là tranh biện hoặc kiện cáo, bắt nguồn từ xung đột quyền lợi và miếng ăn sinh tồn như vấn đề miếng bánh mì trong lịch sử nhân loại. Về hình tượng, Càn cương ở trên áp chế Khảm hiểm ở dưới, hoặc lòng dạ âm hiểm mà bề ngoài hung hăng nên tất sinh kiện tụng. Kiện là việc vạn bất đắc dĩ, chỉ cốt làm sáng tỏ lẽ cong ngay rồi lập tức dừng lại; không thể giải quyết bằng cách liều lĩnh lao vào vực sâu nguy hiểm mà phải tôn sùng bậc đại nhân trung chính ở hào Cửu ngũ. Ông cũng đề cao lời dạy tác sự mưu thỉ để trừ mầm mống tranh chấp ngay từ khi mới manh nha.",
       "references": [
         {
           "sourceId": "source-book-pbc",
-          "pdfPages": [100, 101],
-          "section": "Thiên Thủy Tụng — Soán từ"
+          "pdfPages": [100, 104]
         }
       ],
-      "id": "pbc-overview",
       "attribution": {
         "author": "Phan Bội Châu"
-      }
+      },
+      "id": "pbc-overview"
     },
     {
-      "text": "Trong bản Ngô Tất Tố dịch, Trình Di giải thích thế trời đi lên và nước đi xuống như hai xu hướng trái nhau. Tranh kiện phải dựa vào sự thật, giữ mức vừa phải và nhờ người công minh quyết đoán.",
+      "text": "Trình Di giải thích quẻ Tụng theo hình thế khí trời đi lên, tính nước chảy xuống, hai hướng trái nhau mà đi; bên trong hiểm trở, bên ngoài cương cường tiếp xúc nhau tất sinh tranh kiện. Kiện tụng cần có lòng chí thành, nhưng trong tranh chấp điều ngay thực dễ bị tắc lấp, sinh lòng lo sợ. Hào Chín Hai cứng cỏi từ ngoài tới mà đắc trung, tượng trưng cho việc giữ mức vừa phải, chỉ cốt phân biệt phải trái chứ không theo đuổi tới cùng. Kẻ đi kiện chuộng sự trung chính nên cần thấy bậc đại nhân cương minh ở hào Chín Năm quyết đoán; không nên hăm vào chốn nguy hiểm tự hãm mình vào vực thẳm. Người quân tử coi tượng trời nước đi trái nhau mà mưu tính thận trọng ngay từ đầu để dứt mối kiện.",
       "references": [
         {
           "sourceId": "source-book-ntt",
-          "pdfPages": [196, 197],
-          "section": "Thiên Thủy Tụng — Truyện của Trình Di; Bản nghĩa của Chu Hy"
+          "pdfPages": [196, 199]
         }
       ],
-      "id": "ntt-overview",
       "attribution": {
         "author": "Trình Di",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "id": "ntt-overview"
+    },
+    {
+      "text": "Chu Hy định nghĩa Tụng là tranh biện khi người trên lấy cứng chế kẻ dưới, kẻ dưới dùng sự hiểm nhòm ngó người trên. Về quái biến, quẻ Tụng do quẻ Độn biến đổi mà thành: hào cứng đến ở hào hai giữa quẻ dưới mà không có ứng viện, mang tượng có sự thực bị che lấp, biết lo sợ mà hợp với lẽ vừa phải. Hào Chín Trên quá cứng ở cuối quẻ là tượng theo kiện đến cùng chuốc xấu; Chín Năm cương minh ở ngôi tôn là tượng đại nhân; thể dương cương xéo vào chỗ hãm hiểm là tượng bất lợi khi sang sông lớn. Ông khuyên người xem chiêm phải tùy vị trí mà xét lành dữ, dấy việc phải mưu tính từ đầu để tuyệt trừ mối kiện.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [197, 199]
+        }
+      ],
+      "attribution": {
+        "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
@@ -86,13 +93,11 @@
       "label": "Sơ lục",
       "entries": [
         {
-          "text": "Tránh kéo dài tranh chấp dù có người mạnh đứng phía sau. Chấp nhận một ít lời trách và biết nhường có thể giúp vụ việc kết thúc ổn thỏa.",
+          "text": "Nguyễn Hiến Lê giải thích hào Sơ lục âm nhu ở dưới cùng, tuy được hào Cửu tứ cương kiện ở trên chính ứng viện trợ nhưng chớ nên ỷ thế mà kéo dài vụ kiện. Biết dừng lại đúng lúc thì dẫu có chịu chút lời quở trách nhỏ, việc vẫn được biện minh sáng tỏ và kết cục tốt lành.",
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [154, 154],
-              "section": "Thiên Thủy Tụng — Hào 1; Thiên Thủy Tụng — Hào 2",
-              "printedPages": ["154", "154"]
+              "pdfPages": [154, 154]
             }
           ],
           "attribution": {
@@ -100,12 +105,11 @@
           }
         },
         {
-          "text": "Phan Bội Châu khuyên người yếu ở hào đầu đừng dựa thế người hỗ trợ mà kéo dài tranh chấp. Chấp nhận lời trách nhỏ để việc được phân rõ và dừng lại là kết quả tốt của hào này.",
+          "text": "Phan Bội Châu nhấn mạnh thân phận âm nhu hèn yếu ở bước đầu tranh chấp. Dù có chỗ dựa vững chắc là hào Cửu tứ cương minh, người ở hào này chỉ nên liệu sức mình cầu lấy sự vô sự, tuyệt đối không dắt mối dây dưa. Chấp nhận chịu lời tiếng chê trách nhỏ để lẽ cong ngay được phân rõ và chấm dứt việc kiện là kết quả tốt của hào.",
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [104, 104],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [104, 104]
             }
           ],
           "attribution": {
@@ -113,16 +117,28 @@
           }
         },
         {
-          "text": "Trình Di giải lời hào đầu theo người yếu ở dưới nhưng có ứng viện. Không theo đuổi tranh chấp lâu dài giúp chỉ chịu điều tiếng nhỏ và tránh hậu quả lớn hơn.",
+          "text": "Trình Di cho rằng người mang tư cách âm nhu ở dưới không có tài lực để theo đuổi kiện tụng đến cùng. Nhờ có hào Chín Tư dương cương chính ứng ở trên biện lý công minh, lại biết không cố kéo dài việc kiện, nên tuy có chịu chút tai hại nhỏ từ điều tiếng dị nghị, rốt cuộc vẫn giữ được sự tốt lành.",
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [199, 201],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [199, 201]
             }
           ],
           "attribution": {
             "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "text": "Chu Hy chỉ rõ hào Sáu Đầu chất âm nhu ở dưới, không thể làm trọn việc kiện. Tượng và lời chiêm của hào răn người xem không được cậy thế kéo dài tranh chấp; biết tự lượng sức rút lui sớm thì tuy có phải chịu tai tiếng nhỏ ban đầu, kết cục việc vẫn được an lành.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [200, 201]
+            }
+          ],
+          "attribution": {
+            "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
@@ -134,13 +150,11 @@
       "label": "Cửu nhị",
       "entries": [
         {
-          "text": "Khi thế lực và hoàn cảnh không cho phép thắng kiện, nên lui về và tránh đối đầu. Lời giảng đặt sự an toàn của người ở thế yếu lên trước ý muốn tranh thắng.",
+          "text": "Nguyễn Hiến Lê nhận định hào hai và hào năm đều dương cương nên kị nhau, đối địch nhau. Hào hai ở dưới lại bị hai hào âm vây bọc, thế yếu không thể kiện hào năm vừa trung chính vừa ở ngôi cao; dưới kiện trên ví như trứng chọi đá. Thà lui về trốn tránh, tự thu mình vào ấp nhỏ ba trăm nóc nhà thì mới tránh được tai họa tự rước lấy. Ông cũng dẫn lời Phan Bội Châu về kế Hoành Sơn nhất đái của Trạng Trình giúp Nguyễn Hoàng tránh kình địch với Trịnh Kiểm.",
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [154, 154],
-              "section": "Thiên Thủy Tụng — Hào 1; Thiên Thủy Tụng — Hào 2",
-              "printedPages": ["154", "154"]
+              "pdfPages": [154, 154]
             }
           ],
           "attribution": {
@@ -148,12 +162,11 @@
           }
         },
         {
-          "text": "Phan Bội Châu giải lui về và tránh đi theo việc xét nghĩa, tài lực và thế lực thực tế. Khi không thể đối địch với phía mạnh hơn, thu mình vào vị trí nhỏ giúp tránh tự chuốc họa.",
+          "text": "Phan Bội Châu phân tích thế đối địch giữa hai hào dương cương Cửu nhị và Cửu ngũ. Kẻ dưới kiện người trên vừa trái lẽ vừa non thế trước bậc trung chính cư tôn. May thay Cửu nhị có đức cương trung, biết thời thế lượng sức mà lui tránh trước, tự xử vào địa vị thấp hẹp như ấp nhỏ ba trăm nóc nhà để khỏi tội. Ông dẫn điển tích Nguyễn Hoàng nghe lời khuyên của Nguyễn Bỉnh Khiêm vào trấn thủ Thuận Hóa để tránh đối đầu với chúa Trịnh làm ví dụ xác đáng cho việc lui tránh này.",
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [104, 105],
-              "section": "Hào 2 — diễn giải"
+              "pdfPages": [104, 105]
             }
           ],
           "attribution": {
@@ -161,16 +174,28 @@
           }
         },
         {
-          "text": "Trình Di đặt việc không thắng kiện trong thế hai hào cương đối đầu nhưng địa vị không ngang nhau. Lui về, tránh đối địch và tự ở quy mô nhỏ mới là điều kiện tránh lỗi.",
+          "text": "Trình Di giải thích hào Chín Hai từ ngoài tới, lấy đức cứng ở chỗ hiểm làm chủ việc kiện, chọi với Chín Năm là bậc trung chính ở ngôi vua. Dưới kiện trên là nghĩa trái thế kém, nếu ngoan cố tất rước lấy tai vạ như cúi nhặt đồ vật. Biết nghĩa không thể địch mà lui về trốn tránh, dùng sự kiệm ước tự xử trong ấp nhỏ ba trăm hộ để tránh đối đầu thì mới khỏi tội lỗi.",
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [201, 202],
-              "section": "Hào 2 — diễn giải"
+              "pdfPages": [201, 202]
             }
           ],
           "attribution": {
             "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "text": "Chu Hy xem Chín Hai mang tính dương cương làm chủ sự hiểm, vốn muốn kiện nhưng ở ngôi nhu và đắc trung quẻ dưới, trên lại đối đầu với Chín Năm ở ngôi tôn không thể địch nổi. Lời chiêm răn người xem tự xử một cách thấp hẹp, nhún nhường như ấp nhỏ ba trăm hộ để tránh tai hoạn. Ông cũng lưu ý ba trăm hộ là định số tượng trưng cho nơi nhỏ hẹp, cốt để người ta lánh chốn ganh đua chứ không nên gò gẫm từng con số.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [201, 202]
+            }
+          ],
+          "attribution": {
+            "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
@@ -182,13 +207,11 @@
       "label": "Lục tam",
       "entries": [
         {
-          "text": "Giữ nền nếp và điều tốt đã có, hành xử đúng mực với sự cảnh giác. Nếu phải tham gia việc của người trên, nên giữ bổn phận và tránh ham công trong tranh chấp.",
+          "text": "Nguyễn Hiến Lê giảng hào ba âm nhu bất chính, nằm chông chênh trên cùng quẻ Khảm hiểm độc và bị kẹp giữa hai hào dương thích gây sự kiện cáo, nên luôn phải lo sợ. Nếu biết yên phận giữ nếp cũ và ăn ở chính đáng thì rốt cuộc sẽ yên ổn. Khi bị hào Thượng cửu dương cương ở trên lôi kéo theo làm việc thì chỉ nên phục tùng giữ phận, đừng ham lập công riêng.",
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [154, 155],
-              "section": "Thiên Thủy Tụng — Hào 3",
-              "printedPages": ["154", "155"]
+              "pdfPages": [154, 155]
             }
           ],
           "attribution": {
@@ -196,12 +219,11 @@
           }
         },
         {
-          "text": "Phan Bội Châu xem hào ba là người không ham kiện, giữ phần lợi đã có và sống đúng mực giữa hoàn cảnh dễ tranh chấp. Nếu phải theo người trên thì không tìm công riêng trong vụ việc ấy.",
+          "text": "Phan Bội Châu xem Lục tam là người không ham tranh kiện, biết an thường thủ phận nương nhờ phúc ấm tổ tiên. Ở giữa hoàn cảnh chung quanh toàn kẻ hiếu tụng, hào này phải thường xuyên lo sợ cẩn trọng mới giữ mình được lành. Trường hợp bị chính ứng Thượng cửu lôi kéo gánh vác việc người trên thì tuyệt đối không chuốc lấy thành công về mình, bại không can hệ mà thành cũng chẳng màng công, giữ vẹn phận dưới mới là thượng sách.",
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [105, 106],
-              "section": "Hào 3 — diễn giải"
+              "pdfPages": [105, 106]
             }
           ],
           "attribution": {
@@ -209,16 +231,28 @@
           }
         },
         {
-          "text": "Trình Di hiểu hưởng đức cũ là giữ phận sẵn có, vẫn biết lo trong chỗ hiểm. Theo người trên làm việc thì phần thành công không từ mình mà ra; biết dừng việc kiện là điều được đề cao.",
+          "text": "Trình Di giải thích Lục tam chất vốn âm nhu ở chỗ hiểm nghèo, chen giữa hai hào cương nên phải lo sợ tự giữ. Hưởng đức cũ là xử theo bổn phận sẵn có; kiên cố giữ lòng ngay thẳng và biết lo lắng thì sau chót sẽ tốt. Khi theo việc người trên thì mềm thuận theo cứng, công thành thuộc về người trên chứ không từ mình mà ra; biết dừng việc kiện và không tranh công là đạo hay của hào.",
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [202, 204],
-              "section": "Hào 3 — diễn giải"
+              "pdfPages": [202, 204]
             }
           ],
           "attribution": {
             "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "text": "Chu Hy giải thích chữ thực nghĩa là hưởng lộc như thực ấp. Hào Sáu Ba âm nhu không phải kẻ biết kiện, lời chiêm khuyên giữ vững nếp cũ và nương theo lẽ ngay thẳng thì dù gặp nguy nan sau vẫn được tốt. Kẻ xem hào này nên an phận thủ thường, chớ đứng ra gánh vác công việc; việc gì tự chủ hành động đều không thành công, chỉ biết tòng phục người trên mới được cát lành.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [203, 204]
+            }
+          ],
+          "attribution": {
+            "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
@@ -230,13 +264,11 @@
       "label": "Cửu tứ",
       "entries": [
         {
-          "text": "Bỏ ý muốn tranh kiện và trở lại với lẽ phải. Thay đổi cách xử sự, giữ yên và bền chính là hướng được lời hào khuyến khích.",
+          "text": "Nguyễn Hiến Lê xem Cửu tứ là người dương cương bất trung bất chính mang tượng thích kiện cáo. Tuy nhiên hào này nhìn quanh không thể kiện ai: trên có hào năm ngôi tôn không dám đụng, dưới có hào ba nhu thuận chịu thua trước, hào hai sáng suốt đã lui tránh, còn hào một lại cùng phe. Không còn đất tranh giành, hào bốn đành bỏ tính ham kiện, trở lại phục tùng lẽ phải, đổi ý ở yên giữ điều chính bền thì được tốt.",
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [155, 155],
-              "section": "Thiên Thủy Tụng — Hào 4; Thiên Thủy Tụng — Hào 5",
-              "printedPages": ["155", "155"]
+              "pdfPages": [155, 155]
             }
           ],
           "attribution": {
@@ -244,12 +276,11 @@
           }
         },
         {
-          "text": "Phan Bội Châu đọc hào bốn như sự đổi tính ham kiện. Khi nhận ra không thể kiện, người ấy cần bình tâm, trở về lẽ phải và giữ cách sống chính đáng.",
+          "text": "Phan Bội Châu phân tích Cửu tứ vốn là tay hăng kiện nhưng lâm vào thế bị Cửu ngũ đè nén, Lục tam nhún nhường, Sơ lục cùng phe và Cửu nhị đã thoái lui. Nhờ đức cương nên sáng suốt, hào bốn biết đạc thế thẩm thời nhận ra không thể làm nên việc kiện, bèn noi gương Cửu nhị mà dừng kiện. Biết bình tâm hạ khí, biến đổi khí chất hung hăng để thuận nghe mệnh trời và an giữ đạo lý chính thì không chuốc lấy thất bại.",
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [106, 107],
-              "section": "Hào 4 — diễn giải"
+              "pdfPages": [106, 107]
             }
           ],
           "attribution": {
@@ -257,16 +288,28 @@
           }
         },
         {
-          "text": "Trình Di coi trở lại mệnh là trở lại lẽ chính. Người cương mà thiếu trung chính cần dẹp lòng nóng giận, đổi sự bất an thành yên với điều đúng mới được tốt.",
+          "text": "Trình Di giải thích hào Chín Tư tính cương mạnh không trung chính, vốn muốn đi kiện nhưng vâng theo Chín Năm, đè lên Sáu Ba, ứng với Sơ Lục nên không có kẻ đối địch, việc kiện không do đâu dấy lên được. Lại ở ngôi mềm ứng với hào mềm là mang ý nghĩa biết thôi. Nén lòng cương phẫn, quay về với chính lý, đổi tính nóng nảy thành an định giữ điều chính bền thì tránh được lỗi lầm và được tốt lành.",
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [204, 205],
-              "section": "Hào 4 — diễn giải"
+              "pdfPages": [204, 206]
             }
           ],
           "attribution": {
             "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "text": "Chu Hy định nghĩa tức là tới, mệnh là chính lý, du là biến đổi. Hào Chín Tư cứng mạnh mà cư ngôi nhu nên mang tượng vì không thể kiện mà quay về với lẽ chính, thay đổi tâm ý ham tranh để ở yên nơi chính đạo. Lời chiêm chỉ dẫn người xem nếu biết dẹp bỏ lòng hiếu tụng, đổi qua thuận theo thiên lý và giữ trọn sự chính bền thì vẹn toàn không mất mát.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [204, 206]
+            }
+          ],
+          "attribution": {
+            "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
@@ -278,13 +321,11 @@
       "label": "Cửu ngũ",
       "entries": [
         {
-          "text": "Vai trò xét xử được đặt vào người có tài đức, trung chính và công minh. Nguyễn Hiến Lê cũng giải thích rằng người đi kiện được gặp người xét xử như vậy là điều thuận lợi.",
+          "text": "Nguyễn Hiến Lê đặt hào Cửu ngũ ở ngôi chí tôn, vừa cương vừa minh, lại trung và chính. Đây là hình ảnh bậc thẩm phán công minh có tài có đức như Bao Công đứng ra xử kiện, hoặc người đi kiện may mắn gặp được quan tòa sáng suốt minh oan. Dù ở vai trò xét xử hay đương sự, gặp được hào này việc kiện đều đạt kết quả tốt đẹp tột bậc.",
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [155, 155],
-              "section": "Thiên Thủy Tụng — Hào 4; Thiên Thủy Tụng — Hào 5",
-              "printedPages": ["155", "155"]
+              "pdfPages": [155, 155]
             }
           ],
           "attribution": {
@@ -292,12 +333,11 @@
           }
         },
         {
-          "text": "Phan Bội Châu tách hai phía của lời tốt: người xử kiện cần tài sáng và đức công chính; người đi kiện được lợi khi gặp người xử như vậy. Đức trung chính của người xét xử là điều kiện quyết định.",
+          "text": "Phan Bội Châu ca ngợi Cửu ngũ là bậc nguyên thủ quốc gia kiêm người cầm cân nảy mực thính tụng rất mực công bình, minh đoán. Ngài xử việc bằng đạo trung chính: trung thì không thiên lệch cường quyền, chính thì dứt sạch tư tình hối lộ. Người xử kiện có đức tài này thì được điều tốt lớn nhất, mà người đi kiện gặp được bậc đại nhân này thì oan ức được soi tỏ như mặt trời rạng soi. Ông ví Cửu ngũ với Bao Long Đồ đời Tống thanh liêm, kẻ gian tà khiếp sợ mà người lương thiện được đội ơn.",
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [107, 108],
-              "section": "Hào 5 — diễn giải"
+              "pdfPages": [107, 108]
             }
           ],
           "attribution": {
@@ -305,16 +345,28 @@
           }
         },
         {
-          "text": "Trình Di xem hào năm là người có đức trung chính ở ngôi tôn để giải quyết tranh chấp. Lời tốt dựa vào việc xử kiện hợp đức ấy.",
+          "text": "Trình Di giải thích hào Chín Năm lấy đức dương cương trung chính ở ngôi chí tôn để trị việc kiện trong thiên hạ. Đạo trung chính thi thố vào việc gì cũng đem lại điều tốt lành lớn lao; xử đoán việc kiện đạt tới mức chí công vô tư nên được nguyên cát.",
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [206, 206],
-              "section": "Hào 5 — diễn giải"
+              "pdfPages": [206, 206]
             }
           ],
           "attribution": {
             "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "text": "Chu Hy nhấn mạnh tư cách trung chính của hào Năm: đức trung giúp nghe kiện không thiên vị một bề, đức chính giúp phán đoán đúng theo lẽ công. Chiêm đoán cho người xem: nếu đi kiện mà có lý ngay thẳng thì chắc chắn được giải tỏ nỗi oan khuất, đạt được điều tốt lành lớn nhất.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [206, 206]
+            }
+          ],
+          "attribution": {
+            "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
@@ -326,13 +378,11 @@
       "label": "Thượng cửu",
       "entries": [
         {
-          "text": "Thắng lợi bằng việc theo đuổi kiện tụng đến cùng có thể không bền. Hình ảnh phần thưởng vừa nhận đã mất nhắc về cái giá và sự bất ổn của tranh thắng cực đoan.",
+          "text": "Nguyễn Hiến Lê xem Thượng cửu là kẻ thích kiện tụng tột bậc, hiếu thắng đeo đuổi đến cùng. Ở ngôi chót lại bất chính, dù có may mắn thắng kiện được ban thưởng đai lớn của quan chức thì trong một buổi sáng cũng sẽ bị cướp đoạt ba lần. Điều đó răn rằng thắng kiện bằng tranh giành cực đoan thì cái được cũng tan biến mau chóng, rốt cuộc chỉ rước họa vào thân.",
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [155, 156],
-              "section": "Thiên Thủy Tụng — Hào 6",
-              "printedPages": ["155", "156"]
+              "pdfPages": [155, 156]
             }
           ],
           "attribution": {
@@ -340,12 +390,11 @@
           }
         },
         {
-          "text": "Phan Bội Châu xem phần thưởng do tranh kiện cực đoan như thứ có thể nhanh chóng mất đi. Thắng kiện hay được ban chức không tự tạo ra sự đáng kính nếu cách đạt được chúng là bất chính.",
+          "text": "Phan Bội Châu nghiêm khắc phê phán hạng người lấy nghề tranh kiện làm sinh kế, cậy sức lực kiện đến cùng cực ở hào Thượng cửu. Dẫu kẻ bất lương có nhờ khéo kiện mà may mắn đoạt được phẩm phục khen thưởng như mề đay, kim khánh, vinh hoa ấy cũng chỉ như chiếc đai da một buổi sớm bị lột tới ba lần. Ông dẫn lời Mạnh Tử về việc kẻ khác làm quý cho mình thì cũng có thể làm tiện mình, khẳng định tước lộc do tranh kiện mà có chẳng hề đáng kính trọng.",
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [108, 108],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [108, 109]
             }
           ],
           "attribution": {
@@ -353,16 +402,28 @@
           }
         },
         {
-          "text": "Trình Di răn người cương cực theo kiện đến cùng: phần thưởng do tranh thắng không thể bảo đảm yên ổn. Được ban phẩm phục bằng cách ấy cũng không đủ tạo sự kính trọng.",
+          "text": "Trình Di chỉ rõ Thượng cửu là kẻ cương cường tột bực, làm cho cùng tận việc kiện. Giả sử có nhờ khéo kiện mà thắng được mối lợi, được triều đình ban cho phẩm phục thì thứ của cải danh vị đoạt từ sự thù hận tranh chấp cũng không bao giờ giữ được yên ổn. Chưa hết một buổi sớm đã ba lần bị tước lột; phẩm phục nhận từ tranh kiện chẳng những không đủ để kính trọng mà còn chuốc lấy sự khinh ghét và tai họa khôn lường nối gót.",
           "references": [
             {
               "sourceId": "source-book-ntt",
-              "pdfPages": [207, 208],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [207, 208]
             }
           ],
           "attribution": {
             "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          }
+        },
+        {
+          "text": "Chu Hy giải thích dải lưng da là đồ trang sức thuộc phẩm phục vua ban, còn lột là cướp lại. Thượng cửu theo kiện đến cùng mà thắng nên có tượng được ban phẩm phục, nhưng của đoạt được nhờ tranh giành không thể yên lâu nên lại có tượng trong một buổi sáng bị tước lột ba lần. Lời chiêm răn rằng kẻ vô lý trong cơn kiện tụng có thể tạm thời thắng thế đoạt được lợi ích, nhưng cái đoạt được ấy rồi tất phải mất sạch; thánh nhân răn dạy việc hiếu tụng vô cùng sâu sắc.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [207, 208]
+            }
+          ],
+          "attribution": {
+            "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         }
