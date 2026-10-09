@@ -73,3 +73,31 @@ New interpretation, calendar, or UI behavior.
 - Evidence: reviewed at `074033c`, fixed in `7b29b62` (11 cells, only `text`/`pdfPages` changed). Round 1 (one reviewer per quẻ, 28/25/27/29 cells): PASS, PASS, PASS, FAIL — quẻ 28 `lines[5].entries[3]` cited NTT `[481,481]` where the passage is on PDF 482 (P0, inherited). Round 2 (`afb32196`, one reviewer per quẻ, different model): all four PASS, every hunk CONFIRMED, no new findings. `./init.sh` → `=== Verification passed ===`; `validate:corpus --check-books --check` → 381 records, 381 ready, 4 supplied books. Artifacts: `.agent-work/feat-074/{review-1,review-2}-h25..h28.md`, `fix-1.md`, `image-verify.md`, `leader-audit.md`, `cells.md` (git-ignored scratch).
 - Dependencies: feat-067 and feat-041 are done.
 - Next: obtain operator approval to open the branch/PR for the reviewed head and record the merge, then flip this feature to done.
+
+## Decision log
+
+- **Branch name.** Question: the delivery skill names feature branches `feat/<id>-<slug>`, while this checkout
+  is the operator-created worktree branch `tungxuan1656/feat-074`. Decision: publish that branch as it is.
+  Rationale: the parallel feature in the same batch shipped PR #101 from `tungxuan1656/feat-077`, so the
+  worktree naming is already the convention for this batch, and renaming the branch would remap the enclosing
+  worktree for no gain. Effect on scope or acceptance: none.
+- **Quẻ 25 and 26 keep the baseline text.** Question: both writers reported deleting the shared introduction
+  reference `source-book-nhl [59,61]`. Decision: keep the reference and the text unchanged. Rationale: NHL 59
+  ("Cách vạch và xét trùng quái: từ dưới lên.") and NHL 61 ("Hào cửu – Hào lục") do carry the retained
+  sentence "Hào được đếm từ dưới lên.", and the merged feat-072 records carry the same fourth reference;
+  the deletion was a writer regression, so review of these two quẻ became an inherited-error audit.
+- **Quẻ 27 keeps its two overview `condition` caveats.** Question: the writer had deleted the caveat
+  "Đây là quan điểm dưỡng thân, dưỡng đức trong sách cổ, không là chế độ dinh dưỡng hoặc phương pháp điều trị
+  hiện đại." from overview entries 1 and 2. Decision: restore both. Rationale: `condition` renders to users
+  (`apps/web/src/knowledge-entries.tsx:67-68`) and quẻ 28 keeps its analogous caveats, so removing the
+  guardrail was a regression, not a cleanup.
+- **Image-word trim extended past the reviewed locations.** Question: round 1 named the invented word
+  "mầm" in two quẻ 28 hào-2 cells only, but the same hào's Phan Bội Châu and Trình Di cells also said
+  "mầm"/"chồi". Decision: align all four cells to their own source wording (NHL 222, PBC 290, NTT 477).
+  Rationale: leaving one invented word in three of four parallel cells is incoherent; round 2 then checked the
+  two extra trims independently and confirmed neither went too far. Effect: two cells changed beyond the
+  findings list, both inside the same hào and the same acceptance bar.
+- **Two further book typos were not catalogued.** Question: NTT 438 prints "hữu du chung" for "hữu du vãng"
+  and NTT 470 prints 庚 where 慶 is meant. Decision: leave them out of `notes[]`. Rationale: the acceptance
+  bar requires every recorded source error to be correct, not that every typo in the books be catalogued;
+  both are single-glyph printing slips that do not change the reading.
