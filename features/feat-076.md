@@ -117,3 +117,8 @@ New interpretation, calendar, or UI behavior.
 - Re-checked the newly added Chu Hy layers and risk passages against NTT PDF 538–581, NHL PDF 236–247 and PBC PDF 329–357; no new actionable source-fidelity finding in the reviewed passages.
 - Reconciled append-only `progress.md` with current `main` instead of overwriting newer entries. Kept `feat-076` `todo` until merge; the separate feat-074 status cleanup is out of scope.
 - Rerun CI on this synchronised branch; verification quoted for `4e69953` applies only to that historical revision.
+
+## Operator sign-off — 2026-10-09
+
+- At the operator's request, `feat-076` was marked `done` in `feature_index.json` **before merging** so PR [#110](https://github.com/tungxuan1656/liuyao/pull/110) can be merged manually. This supersedes the earlier handoff's `todo until merge` convention.
+- The content review, source corrections, branch synchronisation and CI checks were completed in the PR. Do not merge automatically; the operator will merge it.

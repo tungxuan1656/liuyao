@@ -16,6 +16,13 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-09 — feat-076 marked done for operator merge
+
+- Status: `done` in `feature_index.json` on PR #110 by explicit operator request, ahead of the operator's manual merge. The PR stays open and unmerged by the agent.
+- Evidence: two content review rounds for quẻ 33–36, the follow-up review and current-main synchronisation in `3a56c91`, and successful CI on that revision. The sign-off intentionally supersedes the older `todo until merge` handoff; source details remain recorded in `features/feat-076.md`.
+- Next: operator merges PR #110 into `main` after the final check.
+
+
 ## 2026-10-09 — feat-076 reviewed and improved quẻ 33–36
 
 - Status: review complete; PR [#110](https://github.com/tungxuan1656/liuyao/pull/110) remains open on `tungxuan1656/feat-076` (historical reviewed head `4e69953`, now synchronised with `main`). `feat-076` stays `todo` until merge; `feat-074` currently holds the single `active` slot.
