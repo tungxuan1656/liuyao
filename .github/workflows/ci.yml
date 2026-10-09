@@ -39,5 +39,10 @@ jobs:
       - name: Run agent harness
         run: ./init.sh
 
+      - name: Diagnose Prettier drift (temporary)
+        run: |
+          git status --short
+          git diff -- features/feat-083.md
+
       - name: Require clean working tree
         run: test -z "$(git status --porcelain)"
