@@ -14,7 +14,59 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 -->
 
-<!-- Add each new block below this note. Do not edit older blocks. -->
+<!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
+
+## 2026-10-09 — feat-068 completed: simplified linked knowledge
+
+- Design approved. Migrated 381 canonical records to coherent entries, direct book/page references, and stable record/line/section links.
+- Removed claim/citation registries, review/hash ledgers, audit gates, source-unit inventories, and the committed monolithic release. Git retains prior history.
+- Rebuilt Càn, Khôn, Truân, Mông and 24 positions with distinct author views. Added source-checked Chu Hy Khôn views; retained the unlocated NTT Mông referral.
+- Detailed assets load by ID; compact metadata supports lookup/search. Node access, tables, worked examples, and current calculation behavior remain usable.
+- JavaScript: 832.67 KB raw / 232.14 KB gzip. Full offline precache: 5,346.54 KiB raw; 381 record assets included.
+- Verification: ./init.sh passed (181 core + 85 knowledge tests). Knowledge suite: 1.86 seconds versus 151.75 seconds at the main baseline. Corpus freshness and four supplied-PDF checks passed.
+- Direct browser checks covered offline routes/search/reload with the server stopped, interrupted-load recovery, articles, source references, and mobile hào anchors.
+- Documentation now describes the implemented model; the source guide was reduced to the supplied inventory, core discrepancies, and canonical-record routes.
+- Status: done; no blockers and no dependent feature activated. Source gaps remain record-level notes.
+- Handoff: [feat-068](features/feat-068.md). Changes remain uncommitted on feat/068-knowledge-simplification. Old branch remains unchanged at c80c38d.
+
+## 2026-10-09 — feat-068 pull request delivery
+
+- User requested a pull request into main from feat/068-knowledge-simplification.
+- Prepared the completed implementation and documentation for commit and branch publication.
+- Status remains done; merge is the next delivery action. No dependent feature has been activated.
+
+## 2026-10-09 — feat-068 PR #96 review repairs
+
+- Reproduced malformed-asset acceptance, duplicate rendered targets, and omitted table/figure sources with focused regression cases; corrected all three.
+- Loader uses the authored schema through a generated standalone validator. It loads with the selected asset, preserves failed-load retry, and adds a separate 14.11 KB gzip chunk.
+- Shared table IDs resolve consistently in validation and rendering. Metadata and compatibility references include every figure reference layer and tables.
+- Direct browser checks confirmed collapsed-entry deep links, custom table targets, malformed Mông recovery, mobile layout, and first-use offline validator loading after stopping the server.
+- Evidence: final ./init.sh passed (181 core + 97 knowledge tests; knowledge 2.14 seconds). Corpus/source freshness, Node access, 619 local links, and diff checks passed.
+- Initial JavaScript: 832.86 KB raw / 232.47 KB gzip. Full precache: 400 build entries, 5,473.54 KiB raw. Authored corpus content remains unchanged.
+- Status: done. Repairs are prepared on the existing PR branch; merge remains pending. No dependent feature was activated.
+
+## 2026-10-09 — feat-069 reviewed and improved quẻ 05–08
+
+- Status: done; reviewed and verified against supplied books.
+- Result: Reviewed and improved all four assigned quẻ (05 Thủy Thiên Nhu, 06 Thiên Thủy Tụng, 07 Địa Thủy Sư, 08 Thủy Địa Tỷ) and all twenty-four hào positions under the simplified knowledge model.
+- Content updates:
+  - Cleaned legacy `section` and `printedPages` fields across all four hexagrams; preserved required entry IDs in quẻ 06 for lesson link resolution.
+  - Enriched structural and thematic overviews across NHL, PBC, and NTT with distinct viewpoints (General, Nguyễn Hiến Lê, Phan Bội Châu, Trình Di, Chu Hy).
+  - Added and checked Chu Hy classical commentaries across overview entries and individual hào positions (quẻ 05 line 1, lines 2–6; quẻ 06 lines 1–6; quẻ 07 lines 1–6; quẻ 08 lines 1–6).
+  - Polished Vietnamese prose for natural readability, philosophical precision, and adherence to traditional I Ching doctrine.
+- Evidence: `./init.sh` passed 100% (181 core tests + 97 knowledge tests; knowledge suite ran in 2.15s). Full corpus validation with `--check-books` verified 381 records and all 4 supplied PDF fingerprints.
+- Coverage: All 4 assigned quẻ and 24 hào positions have complete, verified coverage.
+- Blockers: none for feat-069.
+- Next: User selection and activation of feat-070 (Review and improve quẻ 09–12 and all twenty-four hào).
+
+## 2026-10-08 — feat-068 simplified knowledge design
+
+- Status: active; written design complete, implementation pending design review.
+- Result: Started feat/068-knowledge-simplification from main. Replaced audit-first contracts with coherent JSON entries, direct book/page references, stable links, and small generated assets. Aligned future feature routes and marked old contracts historical.
+- Recovery: Preserved feat/068-audit-hexagrams-01-04 at c80c38d; existing writing remains recoverable.
+- Evidence: Baseline and post-documentation ./init.sh passed (181 core + 6,197 knowledge tests). Corpus/source freshness and 437 local documentation links passed.
+- Limitations: Runtime, authored data, and the large generated release still use the old implementation. No simplified payload or rebuilt quẻ is claimed.
+- Next: Review docs/design-docs/knowledge-model.md, implement the storage/runtime migration, then rebuild Càn, Khôn, Truân, and Mông.
 
 ## 2026-10-07 — feat-066 merged
 
@@ -197,6 +249,25 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none for feat-047. The 2,686,976-byte Workbox cap leaves 71,384 bytes for this cohort; no authorization for later cap changes is inferred.
 **Next**: Continue at feat-048 from updated `main`; measure the integrated asset and obtain authorization before any further cap increase.
 
+## 2026-10-06 — feat-049 authored source-compared batch
+
+- Status: active; implementation complete, final verification pending.
+- Result: Added quẻ 61–64 with all 24 positions and actual author layers, plus BPCT 49–56 with separate verses/commentaries and notes 10–11. Preserved eight NTT notes, named/anonymous supplements, source discrepancies and missing text. Removed only the four remaining legacy entities without changing IDs.
+- Evidence: Baseline full verification passed 482 tests and source fingerprints; package tests now pass 312. Coverage is 202 records, 2,398 claims, 2,662 citations, 64 quẻ and 384 positions. Inventory and registry revision/hash reconcile only this batch.
+- Offline: Measured integrated main asset 3,113,895 bytes exceeded prior 2,949,120 cap. Authorized measured increase to 3,211,264 keeps all 18 entries precached with 97,369 bytes reserve; no other PWA behavior changes.
+- Limitations: Source comparison is not corpus certification. Missing/ambiguous passages, layer rosters, remainder and independent verification stay open. No medical, gender, ritual, calendar, scoring or automatic-interpretation authority added.
+- Next: Finish full verification, exact package-export evidence and diff inspection, then close feat-049.
+
+## 2026-10-06 — feat-049 completed local acceptance and verification
+
+- Status: done; independent branch acceptance review remains the handoff gate, not corpus certification.
+- Result: Final classical authoring slots complete: 64 quẻ and 384 positions have selected source-compared coverage. BPCT 49–56 preserves all numbered verse/commentary layers and notes 10–11; actual absent commentary and source limitations remain explicit.
+- Commit: Implementation `0bd626a7406f7e26b01e820f54ac8afef21574ee`.
+- Evidence: Final `./init.sh` passed all checks and 493 tests (181 core + 312 knowledge). `validate:corpus --check-books --check`, format freshness, package-export comparison of five records/191 claims, SW precache inclusion, 153 documentation routes and final diff checks passed. All 197 prior released records and 2,392 prior citations remain semantically unchanged. Worktree had no unrelated changes.
+- Offline: `index-DtlSMMtK.js` is 3,113,895 bytes; cap 3,211,264; 97,369-byte reserve. All 18 assets stay precached and other PWA settings stay unchanged.
+- Limitations: Contact-sheet review is not full-size review of every classical page. Missing/ambiguous text, unlocated NHL reference, uncredited PBC note and author alternatives are retained without repair. Audit/verification/certification gates stay closed; no full corpus or efficacy approval claimed.
+- Next: Independent acceptance review of feat-049; then user selection of feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100).
+
 ## 2026-10-05 — feat-046 merged
 
 **State**: done and merged to `main` in PR #73 at `eb862ff2c5a734dbb8306a7258e1c93b6b5eda16`.
@@ -325,6 +396,15 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none.
 **Next**: None. Reopen if installed-PWA rendering or identity metadata regresses.
 
+## 2026-10-03 — feat-101–103 extended roadmap planning
+
+- Status: todo; planning recorded, implementation not started.
+- Result: Added extended-record/provenance contracts, package/web fidelity verification, and payload/offline snapshot hardening. Broadened Library plans to include trigrams, terms, rules, figures, and project conventions. The backlog now contains 61 execution features.
+- Decision: Sequence inventory → feat-101 → feat-067 → feat-097 before bulk authoring. Keep feat-066 closure required by final reconciliation. Web integration starts after feat-101 without waiting for full-corpus certification.
+- Evidence: `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 167 local documentation targets, dependency checks, and diff checks passed. All 384 audit items, corpus data, application code, and previous statuses remain unchanged.
+- Blockers: None for planning. Extended contracts, web fidelity, volume checks, and specialist approval remain unimplemented or pending.
+- Next: Select feat-043 and build the source-to-record/exclusion crosswalk, then complete feat-101.
+
 ## 2026-10-02 — feat-013 PR review follow-up
 
 **State**: active; review fixes are implemented and verified, with physical-device safe-area/blur retest still pending.
@@ -340,6 +420,154 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: Apple Safari HTML Reference documents that `apple-mobile-web-app-status-bar-style` applies to capable web apps, and that `default` leaves web content below the status bar (https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html). Librarian research found no authoritative guaranteed blur mechanism; opaque sticky/header coverage is the best user-corroborated experiment. Agent-browser checks at 390×844 and 1440×900 confirmed the sticky header remains at viewport top after scrolling, has a fully opaque theme-matched background in light/dark mode, and updates the dynamic `theme-color` meta value. On mobile, home, direct casting, Library navigation, and cancel-confirmation dialog were usable; Dialog remains above the header with its focus/modal behavior. The app has no modal navigation drawer. `./init.sh` passed format, lint (0 errors; four existing Fast Refresh warnings), typecheck, build, package exports, test-placement checks, 44 knowledge tests, and 181 core tests. Existing font-resolution, sourcemap, and chunk-size build warnings remain. `git diff --check` passed. Physical iOS behavior, including the reported persistent gradient blur, remains unverified; normal scroll and top overscroll recurrence are explicit native retest cases.
 **Blockers**: Native iOS installed-PWA retest, including top overscroll, and outstanding name-conflict, domain-availability, and obvious trademark-risk research; final terminology/copy review remains open.
 **Next**: Ask the Product Owner to retest the installed PWA on physical iOS with normal scroll and top overscroll, then inspect header controls and bottom spacing. Keep feat-013 active and do not publish from this lane.
+
+## 2026-10-02 — feat-035 four-quẻ group
+
+- Status: active.
+- Result: Added Đồng Nhân, Đại Hữu, Khiêm, and Dự with three-book overviews and 24 positions. Preserved distinct author readings, Ngô Tất Tố's selected translator note, and six supported source-error resolutions after visual inspection. Removed duplicate legacy records.
+- Coverage: 104 records, 525 claims, 398 locators; 16/64 quẻ and 96/384 positions in each commentary book. The remaining 48 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none.
+- Next: Commit this group, then review BPCT chapter 5, sections 8–10 and related evidence.
+
+## 2026-10-02 — feat-035 Tứ sinh, Nguyệt phá, and Tuần không group
+
+- Status: active.
+- Result: Added ten terms and three articles from BPCT chapter 5, sections 8–10. Cross-checked stage lists and calendar definitions, preserved compound conditions, and separated Vĩnh Cao's notes. Excluded the unclear Lâm Quan/Thoái sentence and the contradictory điền thực example.
+- Coverage: 117 records, 548 claims, 408 locators; 16/64 quẻ and 96/384 positions. Advanced coverage remains partial.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. Four-quẻ group committed as `be42a75`.
+- Blockers: none for selected claims. Excluded passages need clearer evidence before publication.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-035 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks. Added printed locators to 84 NHL citations across three batches and checked all 109 NHL citations against 59 footer labels. Reconciled source locations and exclusions, added chapter 6 cross-checks for Tuần Không, and corrected stale model and directory documentation. Content and quality contracts remain accurate.
+- Commits: Four quẻ `be42a75`; Tứ sinh, Nguyệt phá, and Tuần không `b964a5d`.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 51 local documentation targets, and diff checks passed. Coverage remains incomplete: 117 records, 548 claims, 411 locators; 16/64 quẻ and 96/384 positions in each commentary book.
+- Blockers: none for this batch. Ambiguous and contradictory source examples remain explicitly excluded; no independent specialist approval is claimed.
+- Next: Review Tùy, Cổ, Lâm, Quán and BPCT chapter 5, sections 11–12 (Phản ngâm, Phục ngâm; PDF 70–71).
+
+## 2026-10-02 — feat-036 four-quẻ group
+
+- Status: active.
+- Result: Added Tùy, Cổ, Lâm, and Quán with three-book overviews and 24 positions. Preserved author differences, uncertain readings, and 13 visually checked source-error resolutions. Removed duplicate legacy records and retained the existing Quan display name with Quán aliases.
+- Coverage: 121 records, 644 claims, 503 locators; 20/64 quẻ and 120/384 positions in each commentary book. The remaining 44 quẻ retain unaudited compatibility content.
+- Evidence: After correcting the display-name change caught by compatibility tests, `./init.sh` passed 263 tests. PDF fingerprints, generated-output freshness, and diff checks passed before commit.
+- Blockers: none.
+- Next: Commit this group, then finish BPCT chapter 5, sections 11–12 and related evidence.
+
+## 2026-10-02 — feat-036 Phản ngâm and Phục ngâm group
+
+- Status: active.
+- Result: Added three terms and two articles from BPCT chapter 5, sections 11–12. Preserved the distinction between directional examples and line-branch opposition. Checked 14 Phục ngâm pairs against Nạp Giáp, retained Dụng/Thế/Ứng conditions, and resolved a Cấn naming error. Ambiguous parentheticals and the mixed Phản/Phục name in question 6 remain excluded.
+- Coverage: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions. Advanced coverage remains partial.
+- Evidence: Final advanced `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit. Classical group committed as `ccf713b`.
+- Blockers: none for selected claims. Excluded wording needs clearer evidence before publication.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-036 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks and reconciled source locations, discrepancy routes, and advanced exclusions. Reviewed content, quality, model, and data-directory contracts remain accurate. Checked all 138 NHL citations across 71 cited pages and seven new BPCT printed locators.
+- Commits: Four quẻ `ccf713b`; Phản ngâm and Phục ngâm `09e8a9f`.
+- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 74 local document targets, and diff checks passed. Coverage remains incomplete: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions per commentary book.
+- Blockers: none for selected content. Ambiguous statements remain excluded; no independent specialist approval is claimed.
+- Next: Review Phệ Hạp, Bí, Bác, Phục and BPCT chapter 5, sections 13–14 (Vượng tướng hưu tù, Trong hợp có khắc; PDF 72).
+
+## 2026-10-02 — feat-037 four-quẻ group
+
+- Status: active.
+- Result: Added Phệ Hạp, Bí, Bác, and Phục with three-book overviews and all 24 positions. Preserved Trình Di/Chu Hy differences, historical context, and nine visually checked source-error resolutions. Used NHL's explicit seven-quẻ sequence and excluded unclear wording; removed duplicate legacy records.
+- Coverage: 130 records, 754 claims, 606 locators; 24/64 quẻ and 144/384 positions in each commentary book. Forty quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit.
+- Blockers: none for selected claims. Ambiguous wording remains excluded.
+- Next: Commit this group, then review BPCT chapter 5, sections 13–14 and related evidence.
+
+## 2026-10-02 — feat-037 seasonal strength and combination/control group
+
+- Status: active.
+- Result: Added three terms and two articles for BPCT chapter 5, sections 13–14. Kept compound conditions, the directional Thân-to-Tị exception, and Vĩnh Cao's Tam hình objection separate from main commentary. No calendar, scoring, or automatic interpretation was added.
+- Coverage: 135 records, 771 claims, 614 locators; 24/64 quẻ and 144/384 positions. Advanced coverage remains partial.
+- Evidence: Initial full verification hit the 304-line generated import inventory. Fix `159797e` exempts only that generated file; an isolated probe still rejects oversized authored TypeScript. The subsequent `./init.sh` passed 263 tests; PDF fingerprints, generated freshness, and diff checks passed. Classical group committed as `3e01c29`.
+- Blockers: none for selected claims. Unspecified Hưu/Tù assignments and mixed support/control cases remain outside general classifiers.
+- Next: Commit this group, reconcile source documentation, and complete the handoff.
+
+## 2026-10-02 — feat-037 completed source audit and handoff
+
+- Status: done.
+- Result: Completed both selected tracks. Reconciled source locations, nine discrepancy routes, and classical/advanced exclusions. Content, quality, model, and data-directory contracts remain accurate.
+- Commits: Classical `3e01c29`, generated-import verification `159797e`, BPCT `3dd5355`.
+- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, documentation targets, and diff checks passed. Checked all 167 NHL citations across 84 cited pages and eight new BPCT printed locators.
+- Coverage: 135 records, 771 cited claims, 614 locators. Classical coverage remains 24/64 quẻ and 144/384 positions per commentary book.
+- Blockers: none for selected claims. Ambiguous statements remain excluded. Full corpus and independent specialist review remain incomplete.
+- Next: Review Vô Vọng, Đại Súc, Di, Đại Quá and BPCT chapter 5, sections 15–16 (PDF 72–73).
+
+## 2026-10-02 — feat-038 completed source audit and handoff
+
+- Status: done.
+- Result: Added four reviewed quẻ and six BPCT records. Corrected Đại Súc's reversed display name. Preserved author differences, six visually checked source-error resolutions, conditional support, and translator objections. Reconciled source locators and exclusions.
+- Commits: Name `743b17e`, classical `2443953`, BPCT `31d8866`.
+- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 92 local documentation routes, and diff checks passed. Checked all 195 NHL citations across 96 cited pages and nine new BPCT printed locators.
+- Coverage: 145 records, 885 cited claims, 716 locators. Classical coverage is 28/64 quẻ and 168/384 positions per commentary book. Thirty-six quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Ambiguous passages, reported health outcomes, complete coverage, and independent specialist approval remain outside this completed batch.
+- Next: Review Khảm, Ly, Hàm, Hằng and BPCT chapter 5, sections 17–18 (PDF 73).
+
+## 2026-10-02 — feat-039 completed source audit and handoff
+
+- Status: done.
+- Result: Added Khảm, Ly, Hàm, Hằng and four BPCT records. Preserved author differences and nine visually checked source-error resolutions. Kept conditional Tiến/Thoái effects, proxy relationships, and the source's religious setting explicit. Reconciled source locations and exclusions.
+- Commits: Classical `3b9ab7e`; BPCT `b7fce51`.
+- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 101 local documentation routes, and diff checks passed. Checked all 223 NHL citations across 108 cited pages and five new BPCT printed locators.
+- Coverage: 153 records, 995 cited claims, 812 locators. Classical coverage is 32/64 quẻ and 192/384 positions per commentary book. Thirty-two quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. The missing Tiến entry, ambiguous attribution, unlocated reference, and reported outcomes remain outside released authority. Full coverage and independent specialist approval remain incomplete.
+- Next: Review Độn, Đại Tráng, Tấn, Minh Di and BPCT chapter 6, sentences 1–6 (PDF 77–79).
+
+## 2026-10-02 — feat-040 completed source audit and handoff
+
+- Status: done.
+- Result: Added Độn, Đại Tráng, Tấn, Minh Di and four BPCT records; extended moving-line evidence. Preserved distinct readings, seven source-discrepancy resolutions, conditional support, and Nhật thần scope. Tightened seven classical summaries and one advanced condition. Reconciled source locations and exclusions.
+- Commits: Classical `ea12e18`; BPCT `1610f8b`.
+- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 112 documentation routes, and diff checks passed. Checked 251 NHL citations across 120 pages and eight new BPCT printed locators.
+- Coverage: 161 records, 1,111 cited claims, 916 locators. Classical coverage is 36/64 quẻ and 216/384 positions per commentary book. Twenty-eight quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Unclear wording, incomplete tables, reported outcomes, full coverage, and independent specialist approval remain excluded or incomplete.
+- Next: Review Gia Nhân, Khuê, Kiển, Giải and BPCT chapter 6, sentences 7–11 (PDF 79–81).
+
+## 2026-10-02 — feat-041 completed source audit and handoff
+
+- Status: done.
+- Result: Added Gia Nhân, Khuê, Kiển, Giải and seven BPCT records. Preserved author differences, four visually checked source-error resolutions, conditional day, month, and year effects, and separate Thân meanings. Tightened seven classical summaries. Reconciled source locations and exclusions.
+- Commits: Classical `a73209e`; BPCT `f780804`.
+- Evidence: `./init.sh` passed 263 tests. Fingerprints, generated freshness, 121 documentation routes, and diff checks passed. Checked 279 NHL citations across 133 pages and six new BPCT printed locators.
+- Coverage: 172 records, 1,226 cited claims, 1,015 locators. Classical coverage is 40/64 quẻ and 240/384 positions per commentary book. Twenty-four quẻ retain unaudited compatibility content.
+- Blockers: none for selected claims. Unclear references, full coverage, calendar algorithms, and independent specialist approval remain excluded or incomplete.
+- Next: Review Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16 (PDF 81–82).
+
+## 2026-10-02 — feat-042 complete-corpus roadmap
+
+- Status: active.
+- Result: Created 55 intended execution features for remaining authoring, audit tooling, sixteen four-quẻ audits, ten group audits, and independent certification. Preserved 384 separate hào acceptance items. The roadmap lists all 24 missing quẻ, source ownership, and chapter checkpoints for separate commits.
+- Decision: Group coherent work in features; retain detailed quẻ, hào, and passage decisions in acceptance items and future ledgers.
+- Evidence: Baseline `./init.sh` passed 263 tests. Final graph, coverage-unit, route, fingerprint, and repository checks remain pending.
+- Blockers: None for planning. Future independent approval requires a named specialist.
+- Next: Verify and commit the backlog; keep execution features `todo`.
+
+## 2026-10-02 — feat-042 completed roadmap and verification
+
+- Status: done.
+- Result: Created the complete intended backlog, feat-043 through feat-097, and a linked roadmap. Consolidated the draft into 55 execution features, retaining chapter checkpoints, sixteen four-quẻ audits with 384 distinct hào items, and ten group audits. Added versioned evidence, independent approval, and correction gates.
+- Evidence: Final `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 158 local documentation targets, dependency graph, complete hào inventory, and diff checks passed. The prior 41 feature entries and current corpus remain unchanged.
+- Blockers: None for planning. No future content or audit feature has executed; specialist approval remains pending.
+- Next: Select feat-043 and build the source-to-record/exclusion crosswalk.
+
+## 2026-10-02 — feat-098–100 web integration planning
+
+- Status: todo; planning recorded, implementation not started.
+- Result: Added three web features for Library quẻ/hào details, contextual reading explanations, and topic/article/learning browsing with local search. Linked their intended contracts and dependencies into the roadmap. The backlog now contains 58 execution features.
+- Decision: Reuse released content without waiting for full-corpus certification. Complete feat-098 before its two dependents; future lessons do not block article browsing.
+- Evidence: `./init.sh` passed 263 tests with existing warnings. Corpus fingerprints, generated freshness, 163 local documentation targets, dependency graph, and diff checks passed. Prior feature entries, 384 audit items, corpus data, and application code remain unchanged.
+- Blockers: None for planning. Web behavior and direct UI checks remain unimplemented.
+- Next: Select feat-098 and assess implementation scope and external-plan criteria.
 
 ## 2026-10-01 — feat-013 identity approvals and iOS install observation
 
@@ -364,6 +592,230 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Evidence**: `@vite-pwa/assets-generator` produced 48×48 ICO, 192×192, 512×512, maskable 512×512 and Apple 180×180 PNG assets using 5% standard, 45% maskable-safe-area, and 30% Apple padding. Vite production build emitted a manifest with Lục Hào name/short name, the approved exact description, `lang: vi`, and correct icon paths. Production browser preview showed a 36px compact and 40px wide header logo; app rendered at 390×844 and 1440×900 in light and dark themes. Preview screenshots: `/private/var/folders/y_/7jmnw4n12f9686g6xqj07hj80000gn/T/opencode/feat-013-identity-preview.png`, `feat-013-header-mobile.png`, `feat-013-mobile-dark.png`, `feat-013-header-desktop.png`, and `feat-013-header-desktop-dark.png` in the same directory. `pnpm format:check`, `pnpm --filter @liuyao/web typecheck`, `pnpm lint` (four existing Fast Refresh warnings), `pnpm build`, `pnpm test` (225 package tests), and `./init.sh` passed. Manifest/favicon/192/maskable dev-server responses returned 200 when PWA dev mode was temporarily enabled; that generated `dev-dist` and caused lint errors, so the option was removed and generated artifacts cleaned before final verification. Native PWA install surface was not available in this headless browser.
 **Blockers**: Naming research, tagline decision, final Product Owner preview approval, editable vector master, theme/background-color approval, social sharing image and actual install UI audit remain open; creator is unidentified despite Product Owner usage-rights confirmation. The selected art appears small in the compact app header because the source includes substantial white margin around the bagua; no crop is made because the user explicitly required preserving the entire artwork.
 **Next**: Product Owner reviews `docs/product-specs/previews/feat-013-logo-preview.html` and decides whether to approve the selected art/wordmark treatment or request a specific change.
+
+## 2026-10-01 — feat-029 compact casting and header navigation
+
+**Result**: Completed the approved layout on `feat/compact-casting-mobile`. Both sequential workspaces place the hexagram beside the coins, with one outcome row and compact actions below. Mobile header icons replace bottom tabs. Connection status remains in Settings. Updated the canonical layout contract.
+
+**Evidence**: Final `./init.sh` passed with 225 package tests; `git diff --check` passed. Chromium review covered 320×568, 390×664, and 1440×900 without horizontal overflow. The automatic footer stayed at 517px through six busy/revealed states. Manual confirmation/revisit, reset, cancel, draft protection, reading retention, and keyboard coin activation passed.
+
+**Limits**: Physical-phone rendering and actual screen-reader announcements remain unverified. Existing verification warnings remain.
+
+**Next**: Review the interface on the user's phone. Changes remain uncommitted.
+
+## 2026-10-01 — feat-029 PR handoff
+
+**State**: PR #53 is open.
+**Done**: Pushed `feat/compact-casting-mobile` and opened PR #53.
+**Evidence**: The pre-push hook passed workspace typecheck and all 225 package tests. `git diff --check` passed. Browser review confirmed that the input group shows only its bottom focus border.
+**Blockers**: None.
+**Next**: Review PR #53.
+
+## 2026-10-01 — feat-030 Light and Dark theme preference
+
+**Result**: Added the F09-T11 theme preference. Settings gains a Giao diện card with Sáng/Tối choices; the choice persists on the device, applies to every route before first paint through an `index.html` bootstrap, and drives `color-scheme` and `theme-color`. The Dark palette now fills the canonical semantic tokens from `docs/product-specs/v1-mvp.md`; the Light palette is unchanged. The moving-line marker and four-coin labels moved onto tokens so both stay readable in Dark.
+
+**Evidence**: Final `./init.sh` passed (format, lint, typecheck, build, package exports, 225 package tests). Chromium reviewed the production build: default Light with empty storage; Tối set `html.dark` with body `#151B1E`, surface `#1E2629`, muted text `#B3C1BD`, and `theme-color` `#151b1e` on `/`, `/library`, `/settings`, and `/result`; reload restored the class by `DOMContentLoaded`; with the service worker active and the preview server stopped, `/` and `/settings` still loaded with the saved dark theme; 390×844 settings had no horizontal overflow. Light keeps `#8f2e24` for moving markers; Dark renders `#e8836f` (6.5:1, up from 2.1:1).
+
+**Limits**: PWA manifest theme colors and the favicon remain Light-only identity assets. Chromium-only review; physical-device rendering unverified. No package-level test exists for the theme module because app test files are not allowed.
+
+**Next**: Review the uncommitted theme changes and commit them.
+
+## 2026-10-01 — feat-030 storage-failure review fix
+
+**Result**: Updated the Settings appearance control to initialize from the active document theme, so route remounts keep the selection aligned when localStorage writes fail. Corrected the feat-030 handoff to include the committed implementation and this review fix.
+
+**Evidence**: With writes to `liuyao-theme` forced to fail, selecting Tối applied Dark; after navigating Home and returning to Settings, Tối remained active and selected, with no page errors. `./init.sh` passed format, lint, typecheck, build, package exports, and package tests.
+
+**Next**: Commit the review fix.
+
+## 2026-10-01 — feat-030 PR handoff
+
+**State**: PR #54 is open against `main`.
+**Done**: Pushed `feat/030` with the theme implementation and storage-failure review fix.
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The pre-push hook passed typecheck and all package tests. Chromium review covered persistence, offline launch, responsive Settings, theme contrast, and storage-write failure.
+**Blockers**: None.
+**Next**: Review PR #54.
+
+## 2026-10-01 — feat-031 book-backed domain documentation
+
+**Result**: Added the supplied-book source catalog, V1 board derivations, and intended knowledge quality contract. Documented current TypeScript storage and proposed JSON/database options. Updated canonical routes and the release evidence gate. Recorded four source discrepancies and the unresolved relationship between product coin symbols and traditional physical faces.
+
+**Evidence**: Fresh `./init.sh` passed with 225 package tests. Local documentation links and four PDF fingerprints passed. Documentation tables match eight trigram patterns, 64 palace memberships, and 48 Na Jia assignments in current code. `git diff --check` passed.
+
+**Limits**: This is focused documentation review. Runtime records and fixtures still need individual supplied-book provenance. Full commentary review and JSON migration are not implemented. Supplied PDFs remain user-provided inputs.
+
+**Next**: Select the supplied-book audit of runtime knowledge records and calculation fixtures.
+
+## 2026-10-01 — feat-032 JSON pilot and package migration
+
+**State**: done for the approved pilot.
+**Done**: Added four fingerprinted source editions, strict schemas, cited JSON records, release checks, generated coverage, and readonly book APIs. Existing lookups use reviewed JSON plus an explicitly unaudited compatibility snapshot.
+**Evidence**: `./init.sh` passes with 263 package tests. Corpus fingerprint/freshness checks and `git diff --check` pass. Codex compared pilot passages and rendered symbol/table pages. Chromium loaded Càn and edition metadata after the production server stopped.
+**Limits**: Coverage is 4/64 quẻ and 24/384 line positions. PBC/NTT line commentary and independent specialist approval remain missing. The main JS bundle is approximately 679kB, 197kB gzip. Existing build/lint warnings remain.
+**Next**: Continue Truân, Mông, Nhu, Sư and BPCT chapter 5, sections 1–4, PDF 67–68. Include the missing PBC/NTT pilot line comparisons. Changes remain uncommitted.
+
+## 2026-10-01 — feat-032 pre-commit source review
+
+**State**: done for the pilot.
+**Done**: Rechecked authored claims against their cited passages and inspected the PBC/NTT Lý diagrams. Added BPCT PDF 13 to the Thiên can and Địa chi definitions so their Nạp Giáp clauses have direct evidence.
+**Evidence**: The corpus still has 73 records, 119 claims, and 43 citations. Full verification and fingerprint checks run before the pilot commit.
+**Blockers**: None.
+**Next**: Continue the approved next batch in a separate feature and commit each reviewed content group.
+
+## 2026-10-01 — feat-033 pilot commentary comparisons
+
+**State**: active. The foundation is committed as `da4f1ab`.
+**Done**: Added PBC and NTT summaries for all 24 pilot line positions and separate Dụng cửu/Dụng lục readings. Preserved distinct Trình Di/Chu Hy interpretations. Recorded and visually confirmed the PBC PDF 66 and NTT PDF 144 Khôn label errors.
+**Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
+**Blockers**: None.
+**Next**: Verify and commit these comparisons, then author Truân, Mông, Nhu, and Sư.
+
+## 2026-10-01 — feat-033 four-quẻ source review
+
+- Status: active.
+- Result: Released Truân, Mông, Nhu, and Sư with three-book overviews and all six positions. Preserved selected Chu Hy differences, including Nhu's final line and Sư's “dư thi”. Recorded five source-label/reference discrepancies with visual and passage evidence. Corrected NTT's supplied-edition year from its PDF 938 colophon and recorded missing referenced end criticism.
+- Coverage: 77 records, 274 claims, 194 locators; 8/64 quẻ and 48/384 positions. The remaining 56 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed all 263 tests. PDF fingerprints match; generated imports and coverage were regenerated. No source PDF or core calculation changed.
+- Blockers: none.
+- Next: Commit this group, then author BPCT chapter 5, sections 1–4.
+
+## 2026-10-01 — feat-033 advanced BPCT group
+
+- Status: active.
+- Result: Added four Dụng/Nguyên/Kỵ/Cừu terms and three articles covering question-specific selection, Thế–Ứng roles, and conditional effects. Extended the existing Thế/Ứng terms. Kept Vĩnh Cao's footnotes separate from Vương Hồng Tự's chapter text; preserved dynamic, strength, calendar, and protection conditions.
+- Coverage: 84 records, 303 claims, 202 locators; advanced coverage is partial. No calendar or automated interpretation behavior was added.
+- Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `fb93a79`.
+- Blockers: none.
+- Next: Commit this group, then reconcile canonical documentation and complete the feature handoff.
+
+## 2026-10-01 — feat-033 completed handoff
+
+- Status: done.
+- Result: Completed both selected content tracks. Reconciled content, model, quality, and source documents with the released corpus. Retained explicit incomplete coverage and linked the manifest's next batch.
+- Commits: Foundation `da4f1ab`; pilot line comparisons `33c7097`; Truân–Mông–Nhu–Sư `fb93a79`; advanced BPCT `69c4683`.
+- Evidence: 84 released records, 303 cited claims, 202 locators; 8/64 quẻ and 48/384 positions in each of the three commentary books. Each group passed `./init.sh` with 263 tests, source fingerprints, generated-output freshness, and diff checks.
+- Blockers: none for this batch. Complete corpus review remains unfinished.
+- Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (Phi thần, Phục thần, Lục thú; PDF 68–69).
+
+## 2026-10-01 — feat-034 four-quẻ group
+
+- Status: active.
+- Result: Added Tỷ, Tiểu Súc, Thái, and Bĩ with three-book overviews and 24 positions. Preserved selected Trình Di/Chu Hy differences, source spelling variants, and seven visually checked source discrepancies. Removed the equivalent legacy records.
+- Coverage: 88 records, 401 claims, 297 locators; 12/64 quẻ and 72/384 positions in each commentary book. The remaining 52 quẻ retain unaudited compatibility content.
+- Evidence: `./init.sh` passed 263 tests; supplied PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none.
+- Next: Commit this group, then finish BPCT chapter 5, sections 5–7 with related passages.
+
+## 2026-10-01 — feat-034 Phi–Phục and Lục thú group
+
+- Status: active.
+- Result: Added nine terms and three articles from BPCT chapter 5, sections 5–7. Checked Phi–Phục examples against the chapter 4 boards and Lục thú conditions against chapter 6 commentary. Excluded the unclear type-2 Phi wording and Đằng Xà element attribution; selected historical examples retain their context.
+- Coverage: 100 records, 427 claims, 303 locators; 12/64 quẻ and 72/384 positions. Advanced coverage remains partial.
+- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. The four-quẻ group is committed as `c5bf201`.
+- Blockers: none for the selected claims. The two excluded passages need clearer evidence before later publication.
+- Next: Commit this group, then reconcile source documentation and complete the handoff.
+
+## 2026-10-01 — feat-034 completed handoff
+
+- Status: done.
+- Result: Completed both selected tracks and reconciled the source inventory with exact passage locations, seven supported discrepancy resolutions, and explicit advanced exclusions. Reviewed content, quality, and model documents remain accurate; they link the canonical coverage report.
+- Commits: Four quẻ `c5bf201`; Phi–Phục and Lục thú `5fa328c`.
+- Evidence: Final `./init.sh` passed 263 tests. Coverage remains incomplete: 100 records, 427 cited claims, 303 locators; 12/64 quẻ and 72/384 positions in each commentary book. PDF fingerprints, generated-output freshness, and diff checks passed.
+- Blockers: none for this batch. Phi thần type 2 and Đằng Xà’s own element remain excluded pending clearer source evidence.
+- Next: Review Đồng Nhân, Đại Hữu, Khiêm, Dự and BPCT chapter 5, sections 8–10 (Tứ sinh, Nguyệt phá, Tuần không; PDF 70).
+
+## 2026-09-30 — feat-028 casting layout and flow follow-up
+
+**State**: active on `feat/028-coin-casting`; broader acceptance remains open.
+**Done**: Implemented the shared sitewide spacing contract and refined casting UI. Parent browser QA verified four-coin one-press casting from 1/6 through 6/6, revisit preserving 2/6, result navigation, and visible desktop aside. Result widths matched the viewport content widths at 320px (305px), 390px (375px), and 1280px (1265px); board rows measured 48px.
+**Evidence**: Final `./init.sh` and `git diff --check` passed with 225 package tests. After the global 320px body minimum was removed, browser checks reconfirmed no horizontal overflow on Casting and Result at 320/390/1280px; Result rows remained 48px and its desktop inspector visible.
+**Blockers**: `pnpm test:release` is absent from the current root and web package scripts; its older 17/17 result does not verify this follow-up. User preview, physical-phone motion, and remaining feature criteria are unverified; no new evidence is claimed for manual mode, three-coin, reset-mid-animation, keyboard, or reduced motion.
+**Next**: Present the updated preview, verify remaining acceptance criteria, and resolve stale release-check references before marking the feature done.
+
+## 2026-09-30 — feat-028 shared manual casting workspace
+
+**Result**: Manual and automatic casting now share the same card structure, coin arrangement, result region, and action bar. Manual coins remain individually editable until confirmation; confirmed lines remain locked on revisit. The obsolete detached manual action card was removed.
+
+**Evidence**: `./init.sh` and `git diff --check` passed. Desktop browser review verified the shared layout; at 320px and 390px, four-coin manual casting had no horizontal overflow and preserved clearance for focus outlines. Browser interaction verified selection, confirmation, and next-line navigation.
+
+**Remaining**: User preview and the other unchecked feat-028 acceptance criteria still need verification. Do not mark the feature done from this UI follow-up alone.
+
+## 2026-09-30 — feat-028 shared footer and state review
+
+**Result**: Moved reset into both sequential workspaces. Fixed clipped mobile actions and vertical footer movement when a line appears. Kept direct-entry reset separate.
+
+**Evidence**: Final `./init.sh` and `git diff --check` passed. Browser QA at 320px completed six manual lines and opened Result; a confirmed line retained its faces on revisit. Reset required confirmation after input and cleared all lines. At 320px and 390px, all footer buttons fit the Card. At 320px the footer stayed at the same vertical position through automatic waiting, reduced-motion toss, reveal, and manual six-line completion. A completed result survived Library-to-Home navigation and was removed by confirmed “Lập mới.” Keyboard Space flipped a focused coin; Tab exposed its focus outline.
+
+**Remaining**: User preview, physical-phone motion, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and full visual flip review. Keep feat-028 active.
+
+## 2026-09-30 — feat-028 responsive bento redesign
+
+**Result**: Reorganized Home, casting, Result, Library, Library detail, and Settings around content-led shadcn cards. Added a mobile contextual back bar and persistent bottom tabs, including during casting; desktop uses a top navigation header without an application back link. Kept the installed Sera/Base UI preset, domain calculations, session behavior, and confirmation gates.
+
+**Evidence**: Final `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests; `git diff --check` passed. Direct browser review at 320px, 390px, and 1440px covered navigation, automatic and direct casting layouts, six-line direct completion, Result fact Sheet, Library search/list, a rule detail, Settings, and offline feedback. The inspected routes had no horizontal document overflow. Mobile Library tabs were changed to two rows at 320px, and result fact controls were made readable with a 44px minimum target.
+
+**Remaining**: Existing feat-028 acceptance still needs user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, and session-boundary checks. Keep the feature active.
+
+**Next**: Review the redesigned preview and complete the remaining casting acceptance checks before closing feat-028.
+
+## 2026-09-30 — feat-028 closure and PR handoff
+
+**Result**: Marked feat-028 done at the user's explicit request and prepared the responsive bento redesign for PR review. This is a directed closure with the unchecked acceptance criteria in `features/feat-028.md` still unverified.
+
+**Evidence**: Fresh `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The prior browser review covered 320px, 390px, and 1440px layouts and primary route flows.
+
+**Remaining**: Physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, complete desktop/mobile flip review, and user preview are unverified. `pnpm test:release` is not defined.
+
+**Next**: Review the PR and perform the remaining visual, assistive-technology, and session-boundary checks.
+
+## 2026-09-30 — PR #52 review fixes
+
+**Result**: Fixed the defects found while reviewing PR #52 against the shadcn and shadcn-ui skills. The automatic-casting primary action no longer clips against the card at 320px; the two-row Library tab list sizes to its content; search clear, rule filters, tab triggers, and remaining default-size buttons reach the 44px target; section titles expose heading roles; list rows use `divide-y`; the mobile casting border seam is 1px; and the dead `route-page--*` modifiers and stale canonical-doc statements are gone.
+
+**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. Chromium at 320px re-measured the fixed surfaces: footer buttons 0px clipped, tab list 100px with no label overlap and 44px triggers, clear button 44x44, filter toggles 44px, fact buttons 54px, heading roles level 2 (level 3 for Library records), 1px hexagram/coin seam, and no horizontal document overflow. Desktop at 1440px kept the 1280px wrapper, a 52px single-row tab list, and the three-column record grid. `pnpm dlx shadcn@latest preset resolve` confirmed preset `b59jumGwPA`.
+
+**Remaining**: Preview at 360-420px, user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and complete desktop/mobile flip review are still unverified. `pnpm test:release` is not defined.
+
+**Next**: Push the fixes to `refactor/ui-ux-web` for PR #52 review.
+
+## 2026-09-29 — feat-028 casting UX refinement
+
+**State**: implementation refined on `feat/028-coin-casting`; live visual review is still required before marking the feature done.
+**Changed**: Replaced bare 6/7/8/9 result headlines with Lão âm / Thiếu dương / Thiếu âm / Lão dương terminology, stabilized the automatic-casting result/action regions, simplified the shell/coin/dish visual language, shortened and staggered motion, and routed casting controls through the shared shadcn-style Button/Card/UI primitives. The destructive confirmation dialog now uses the shared alert-dialog primitive with centered overlay and open animation.
+**Tests**: Release E2E expectations were updated for canonical line names and a mobile regression test now checks that the automatic primary action does not shift vertically after a reveal.
+**Remaining**: Run repository verification and perform the required desktop/mobile live-animation visual review before checking feat-028 motion acceptance.
+
+## 2026-09-29 — feat-028 3D casting redesign
+
+**State**: active; implemented the user-approved replacement concept on PR #49.
+**Changed**: Replaced turtle/dish animation with a lazy Three.js bronze-coin stage, staggered launch/contact, camera reveal, and six-line forming hexagram. Removed numeric outcome copy from casting modes. Scene completion replaces the independent reveal timer; reset cancels motion. Added static fallback for unavailable/lost WebGL.
+**Evidence**: `./init.sh` passed with 225 package tests; release E2E passed 16/16. Direct desktop/mobile checks completed six fixed four-coin outcomes, revisit, and calculation with stationary actions. Reduced motion, fallback, context loss, reset, cancel, and production offline lazy loading passed. Reviewed launch/contact/reveal frame captures at both viewport sizes.
+**Limits**: Physical-phone frame pacing remains unverified; the 3D chunk adds approximately 133kB gzip. Feature remains active pending live preview motion acceptance.
+**Next**: Review the updated PR preview on desktop and a physical phone.
+
+## 2026-09-29 — feat-028 always-on motion and readable identities
+
+**State**: active; user requested three concrete follow-up changes on PR #49.
+**Changed**: Explicit tosses now animate regardless of reduced-motion preferences, including a cancellable DOM fallback. Added a shared `YaoSymbol` for automatic/manual/direct casting and result boards, with fixed 24px high-contrast SVG moving markers. Four-coin faces now share gold/blue/red/white palettes and large mountain/drop/flame/wind paths across textures, DOM controls, and a named legend.
+**Evidence**: `./init.sh` passed (225 package tests); release E2E passed 16/16. Reduced-motion browser checks verified changed flight pixels, animation-length reveal, both moving markers, mobile layout, and mid-flight reset in WebGL and fallback modes. Reviewed desktop/mobile face captures and mobile direct/result layouts; no horizontal overflow.
+**Next**: Review the updated preview on the user's device for motion and elemental-symbol readability; keep the feature active until visual acceptance.
+
+## 2026-09-29 — feat-028 Base UI replacement plan
+
+**State**: active on `feat/028-coin-casting`. The user superseded the 3D design and requested full-shadcn migration on this branch.
+**Done**: Replaced the execution plan with staged Base UI migration, fixed coin flips, page redesign, cleanup, and verification. The user selected six vertical direct-input rows. Canonical specs mark the new presentation as intended and the flip timing as proposed.
+**Evidence**: CLI decoded preset `b59jufSZGa` as Sera/Neutral/Lucide/Noto Sans/Noto Serif. `info --json` reports the existing base as Radix. CLI help confirms explicit `--base base`, `--pointer`, and reinstallation flags.
+**Limit**: Planning only. The application and dependencies still match commit `46441cc`.
+**Next**: Review `docs/plans/feat-028.md`, then execute Task 1 inline on the current branch.
+
+## 2026-09-29 — feat-028 Base UI migration verified
+
+**State**: active on `feat/028-coin-casting`; implementation is locally verified.
+**Done**: Completed the approved Sera/Base UI migration across casting modes, routes, and shared controls; replaced Three.js with predetermined DOM/CSS coin flips and fixed responsive layout defects found in browser review.
+**Evidence**: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audits at 320/390/1280px verified direct-choice sizing, manual action targets, Library tabs, stable coin centers, alternating faces under normal/reduced motion, and Home mouse/keyboard navigation.
+**Blockers**: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs report sourcemap-location and >500KB chunk warnings.
+**Next**: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.
 
 ## 2026-09-28 — feat-018 web localization and verification
 
@@ -429,181 +881,76 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: none.
 **Next**: Commit the knowledge package stage, then localize the reading and navigation UI.
 
-## 2026-09-25 — feat-001
+## 2026-09-28 — feat-019
 
-**State**: done, pending PR review and merge.
-**Done**: F00-T01–T05 web foundation: styling, shadcn tokens, routes, self-hosted fonts, and responsive AppShell primitives.
-**Evidence**: `./init.sh` and read-only verification passed; route, responsive, and local-font browser checks are recorded in `features/feat-001.md`.
-**Blockers**: none for F00; finished Reading/Library/Settings/Casting flows belong to later features.
-**Next**: Open the PR and resolve review feedback.
+- Result: Corrected changed-board labels so only moving lines announce a polarity change; added one-moving-line coverage for all six positions.
+- Verification: `./init.sh` passed; lint reported one pre-existing warning and zero errors.
+- Handoff: feat-019 implementation complete on `feat/019-static-line-annotations`; integration and issue #25 closure remain.
+- Next: Integrate feat-019 and confirm issue #25 closed before starting feat-020.
 
-## 2026-09-26 — feat-001
+## 2026-09-28 — feat-020
 
-**State**: active; follow-up PR pending review and merge.
-**Done**: PR #10 merged. Addressed the P2 review finding in the shared placeholder Return to home link without changing navigation.
-**Evidence**: `./init.sh` passed; the 390×844px route measurements, keyboard focus, and navigation checks are recorded in `features/feat-001.md`.
-**Blockers**: none for the fix; merge approval remains pending.
-**Next**: Review and merge the follow-up PR, then close feat-001.
+- Result: Install prompt is captured at application startup and retained across navigation until Settings uses it.
+- Verification: `./init.sh` passed. Headless Chromium simulated Home `beforeinstallprompt` → Settings use → dismissed outcome and cleared action; native install was not tested.
+- Handoff: feat-020 implementation complete on `feat/020-global-install-prompt`; integration and issue #26 closure remain.
+- Next: Integrate feat-020 and confirm issue #26 closed before starting feat-021.
 
-## 2026-09-26 — feat-001
+## 2026-09-28 — feat-021
 
-**State**: done; PR #11 merged as `2f2936c`.
-**Done**: Added 44×44px minimum target dimensions and visible keyboard focus to the shared placeholder Return to home link, preserving destinations; completed the follow-up handoff.
-**Evidence**: Fresh Codex review approved PR #11 at `052bd46`; GitHub `verify` and GitGuardian checks passed. `./init.sh` and the browser measurements/navigation checks are recorded in `features/feat-001.md`.
-**Blockers**: none.
-**Next**: Begin feat-002 domain contracts.
+- Result: Update bypass is armed only in the service-worker takeover reload callback, not when update acceptance is clicked; failed/no-op application and cancellation cannot arm it by code inspection.
+- Verification: `./init.sh` passed. Oracle reviewed the implementation. Headless Chrome 148 registered a waiting worker and cancellation was observed; a synthetic casting `beforeunload` was prevented. Successful takeover/reload and rejected/no-op acceptance were not runtime-tested. User approved code-inspection evidence for these gaps; automated regression is deferred to feat-025.
+- Handoff: feat-021 implementation complete on `feat/021-transient-update-bypass`; integration and issue #27 closure remain.
+- Next: Integrate feat-021 and confirm issue #27 closed, then start feat-022.
 
-## 2026-09-26 — feat-002
+## 2026-09-28 — feat-022
 
-**State**: done; PR #12 merged by squash at `8761e4aa84dcb4ef71816ca03e61f26871f576d9`.
-**Done**: F01-T01–T08 domain contracts, typed errors and validation, stable IDs, ordered positions, and reusable package fixtures.
-**Evidence**: `pnpm --filter @liuyao/core test` passed 29 tests; `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Details are in `features/feat-002.md`.
-**Blockers**: none; one pre-existing non-failing web lint warning remains outside F01 scope.
-**Next**: feat-003 is active; implement F02 after confirming its canonical task map and architecture constraints.
+- Result: Changed-board trigrams link to their Library identities instead of primary-result fact inspectors. Rule inspectors link internally to Library; source links remain separate.
+- Verification: `./init.sh` passed. No new fact mapping requires a test. Browser interaction was not verified; the navigation paths were inspected in source.
+- Handoff: feat-022 implementation complete on `feat/022-changed-result-facts`; integration and issue #28 closure remain.
+- Next: Integrate feat-022 and confirm issue #28 closed before starting feat-023.
 
-## 2026-09-26 — feat-003
+## 2026-09-28 — feat-023
 
-**State**: active; implementation locally verified, pending Orca review and merge.
-**Done**: F02-T01–T10 polarity, eight trigram patterns, 64 King Wen identities, moving-line transformations, and structured calculation API; retained F03 board work outside this scope.
-**Evidence**: `pnpm --filter @liuyao/core test` passed 113 tests, package typecheck passed, and `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Independent fixture provenance and source errata are recorded in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
-**Blockers**: none for local verification; review and merge remain.
-**Next**: Submit the verified F02 revision for Orca review.
+- Result: V1 Library term/entity details link explicitly modeled applicable rules. Source references support hexagrams and trigrams as well as terms and rules without conflating rules with sources.
+- Verification: `./init.sh` passed; knowledge regression tests cover accepted/retrievable figure references and broken targets. Browser interaction was not tested.
+- Handoff: feat-023 implementation complete on `feat/023-library-relationships`; integration and issue #30 closure remain.
+- Next: Integrate feat-023 and confirm issue #30 closed before starting feat-024.
 
-## 2026-09-26 — feat-003
+## 2026-09-28 — feat-024
 
-**State**: done; PR #13 squash-merged as `ef2a99b`.
-**Done**: Completed F02-T01–T10: polarity and trigram identification, the 64-hexagram mapping, moving-line transformations, and the structured calculation API. Updated the architecture summary to reflect F02 and reserved board calculations for F03.
-**Evidence**: Fresh Codex review approved PR #13 at `7ef963b`; GitHub `verify` and GitGuardian checks passed. The worker ran 113 core tests, package typecheck, and `./init.sh`; the reviewer ran 84 focused tests and core typecheck. Fixture provenance and source errata are documented in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
-**Blockers**: none.
-**Next**: Activate feat-004 Liu Yao board.
+- Result: Automatic casting now proceeds one line at a time; six immutable three-coin outcomes remain with the active reading, without invented manual/direct tosses.
+- Verification: `./init.sh` passed. Core package tests cover toss snapshot integrity. UI flow was inspected in source but not browser-tested; web E2E was not added.
+- Handoff: feat-024 implementation complete on `feat/024-automatic-toss-evidence`; integration and issue #29 closure remain.
+- Next: Integrate feat-024 and confirm issue #29 closed before starting feat-025.
 
-## 2026-09-26 — feat-004
+## 2026-09-28 — feat-025
 
-**State**: active; plan and implementation not started.
-**Done**: Activated F03 Liu Yao board after feat-003 merged; dependencies feat-002 and feat-003 are done.
-**Evidence**: Feature dependency records in `feature_index.json` and `features/feat-004.md` were checked before activation.
-**Blockers**: none.
-**Next**: Commit `docs/plans/feat-004.md` and obtain fresh Orca plan review.
+- Result: Added root Playwright release E2E with deterministic casting, Library, offline and real two-build PWA update scenarios; CI now runs the suite. Reassessed F11 gaps in feat-012 without claiming a full release matrix.
+- Verification: `pnpm test:release` passed 12/12 on Playwright 1.63.0 / Chromium 153.0.8010.12 / macOS 26.5.1. `./init.sh` passed. Synthetic install-event handling is not native installation; other unverified F11 items remain listed in feat-012.
+- Handoff: feat-025 implementation complete on `feat/025-release-e2e`; PR integration and issue #31 closure remain.
+- Next: Merge feat-025 after CI, close issue #31, then start feat-026.
 
-## 2026-09-26 — feat-004
+## 2026-09-28 — feat-026
 
-**State**: done locally; PR review and merge pending.
-**Done**: Completed F03-T01–T10: Eight Palace and Shi/Ying classification, Na Jia stems and branches, element mapping, Six Relatives, and six structured board lines; updated the product-scope and architecture summaries.
-**Evidence**: Parent-run `./init.sh` passed 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fixture and acceptance details remain linked in `features/feat-004.md` and `docs/product-specs/v1-task-map.md`.
-**Blockers**: Plan revision `28e13b6` is pending fresh feedback; PR review and merge are not complete.
-**Next**: Obtain fresh PR review feedback, address it, and merge after approval.
+- Result: The V1 result layout contract now uses the implemented 900px breakpoint, close/Escape/scrim drawer dismissal, and feat-024's per-line automatic casting panel. Feat-009 and feat-010 acceptance records now distinguish supported PR evidence from incomplete original task checks; feat-012 waivers remain unchecked.
+- Verification: `git diff --check` and targeted Prettier checks passed. No new runtime behavior was introduced or claimed.
+- Handoff: feat-026 documentation changes are complete on `feat/026-spec-evidence-reconciliation`; PR integration and issue #32 closure remain.
+- Next: Integrate feat-026 and confirm issue #32 closed before starting feat-027.
 
-## 2026-09-26 — feat-004 PR review follow-up
+## 2026-09-28 — feat-027
 
-**State**: done locally; PR #14 fresh review and merge pending.
-**Done**: Isolated public palace and Na Jia lookup results after reviewer found mutation could corrupt later board facts; added runtime mutation regressions.
-**Evidence**: `./init.sh` passed 127 core tests in 12 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing, non-failing web lint warning remains.
-**Blockers**: Updated PR head requires fresh review approval.
-**Next**: Request fresh PR #14 review on the corrected head and address any findings before merge.
+- Result: Library ID search now requires a full stable identifier; partial technical IDs no longer match by ID. Trigram details list all related hexagrams with a count.
+- Verification: `./init.sh` passed, including knowledge regression tests. The release suite passed 12/12 before the final test-only edit; no responsive browser visual check was performed.
+- Handoff: feat-027 implementation complete on `feat/027-library-search-relationships`; PR integration and issue #33 closure remain.
+- Next: Merge feat-027 after CI and confirm issue #33 closed.
 
-## 2026-09-26 — feat-004
+## 2026-09-28 — feat-028 implementation handoff
 
-**State**: done; PR #14 squash-merged as `994ba1afcc1dcf190808d693dd5f701f06eb4246`.
-**Done**: Completed F03-T01–T10 and addressed review findings for isolated readonly lookup results and feature documentation.
-**Evidence**: Fresh Codex review approved head `5dee51279af59c264fed6681ee0caa1d505685fe`; GitHub `verify` and GitGuardian passed. The worker passed `./init.sh` with 127 core tests and 2 knowledge tests, format, lint, typecheck, and build; final docs-only changes passed focused format/diff/pre-push checks.
-**Blockers**: none.
-**Next**: Activate feat-005 Casting core.
-
-## 2026-09-26 — feat-005
-
-**State**: active; feat-002 dependency is done.
-**Done**: Selected F04 Casting core from the user-approved feat-001–012 batch and confirmed its canonical task map and product scope.
-**Evidence**: `feature_index.json` records feat-002 done and feat-005 active; F04 tasks and acceptance are defined in `docs/product-specs/v1-task-map.md` and `features/feat-005.md`.
-**Blockers**: none.
-**Next**: Commit the implementation plan and request fresh plan review.
-
-## 2026-09-26 — feat-005
-
-**State**: done locally; PR review and merge pending.
-**Done**: Completed F04-T01–T07: deterministic three-coin outcomes, injected casting service, normalized direct/sequential inputs, and a web-only browser crypto adapter; updated observed architecture and product summaries.
-**Evidence**: Parent-run `./init.sh` passed with 152 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`. Plan and focused evidence are in `docs/plans/feat-005.md`.
-**Blockers**: Fresh PR review and merge remain outstanding; no PR approval is claimed.
-**Next**: Submit the verified changes for fresh PR review and address any findings.
-
-## 2026-09-26 — feat-005 PR review follow-up
-
-**State**: done locally; PR #15 fresh review and merge pending.
-**Done**: Corrected plan evidence chronology and rejected sparse three-coin arrays that could bypass iteration validation; added a regression.
-**Evidence**: `./init.sh` passed with 153 core tests in 13 files and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing non-failing web `react-refresh` warning remains.
-**Blockers**: Updated PR head requires fresh review approval.
-**Next**: Request fresh review of PR #15 on the corrected head and address any findings.
-
-## 2026-09-26 — feat-005 merged; feat-006 activated
-
-**State**: feat-005 done; feat-006 active.
-**Done**: Squash-merged PR #15 as `bcc89d0` after fresh plan and PR review approval of exact head `5e7815ae35cec1a94b4454f2cc5afac3cdc218c2`; activated feat-006 Knowledge from the user-approved batch.
-**Evidence**: The worker passed `./init.sh` with 153 core tests and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. GitHub `verify` and GitGuardian passed; one pre-existing non-failing web `react-refresh` warning remains.
-**Blockers**: none.
-**Next**: Read the canonical F05 requirements and licensing boundaries, then commit the feat-006 implementation plan and request review.
-
-## 2026-09-26 — feat-006
-
-**State**: done locally; PR review and merge pending.
-**Done**: Completed F05-T01–T12: typed schemas, stable IDs, 8/64 entity metadata, V1 terms and rules, source metadata, validated references, readonly lookups, and offline normalized search. Source locations remain absent where unverified.
-**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 31 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web `react-refresh` warning remains. The first web build failed on a missing optional native Tailwind binding; a forced frozen-lockfile reinstall restored it before the successful full run. Details: `docs/plans/feat-006.md`.
-**Blockers**: Fresh plan and PR review approval and merge remain; no unverified source locator was invented.
-**Next**: Submit the current head for fresh plan and PR review, address findings, then hand off for merge.
-
-## 2026-09-26 — feat-006 plan review follow-up
-
-**State**: done locally; fresh plan and PR review pending.
-**Done**: Resolved plan review findings with broken-term-reference validation, independent 64-hexagram identity fixtures, and exhaustive displayed-fact-to-rule coverage; removed duplicate task ownership of F05-T10.
-**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 34 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web Fast Refresh lint warning remains; details are in `docs/plans/feat-006.md`.
-**Blockers**: Current-head plan and PR approval and merge remain pending.
-**Next**: Request fresh plan review on the corrected head, then resolve any findings before requesting PR review.
-
-## 2026-09-26 — feat-006 merged
-
-**State**: done; PR #16 squash-merged as `691f80d724f332f49a2c295e4e484a3d6cbdcbe5`.
-**Done**: Completed F05-T01–T12 and addressed plan-review findings for broken-term validation, independent 64-hexagram fixtures, exhaustive fact-to-rule coverage, and accurate handoff status.
-**Evidence**: Fresh plan and PR reviews approved exact head `e6382698f88fdfdaa573b49a4c051cd6fa6409aa`; GitHub `verify` and GitGuardian passed. `./init.sh` passed with 34 knowledge tests and 153 core tests; one pre-existing non-failing web Fast Refresh warning remains. Evidence and sourcing limits are in `docs/plans/feat-006.md`.
-**Blockers**: none.
-**Next**: Stop after feat-006 as instructed; leave later features todo until selected again.
-
-## 2026-09-26 — feat-017 pre-flow hardening
-
-**State**: done locally; PR creation and fresh review pending.
-**Done**: Hardened core ID inventories and casting snapshots, completed the knowledge entity/rule/source model, added production fact-to-rule lookup and core drift tests, switched package defaults to built Node ESM, and expanded local CJK font coverage. Added feat-017 as a dependency of feat-007 and feat-008; both remain todo.
-**Evidence**: Final `./init.sh` passed with 155 core tests in 13 files and 41 knowledge tests in 7 files. Build, typecheck, Node package-export smoke check, test placement, formatting, and TypeScript length checks passed. The only lint output was one pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`. FontTools 4.66.0/Brotli 1.2.0 verified 92/92 manifest codepoints in each CJK font. Mutation regressions reproduced the bad hexagram mapping and mutable casting snapshot before the fixes.
-**Blockers**: PR creation and fresh review are pending; this branch has not been merged.
-**Next**: Push `feat/017-preflow-hardening` and open a PR targeting `main`.
-
-## 2026-09-26 — feat-017 PR handoff
-
-**State**: PR #17 is open against `main`; fresh review is pending.
-**Done**: Pushed `feat/017-preflow-hardening` and opened [PR #17](https://github.com/tungxuan1656/liuyao/pull/17). The PR contains the verified hardening work and is not merged.
-**Evidence**: GitHub reports the PR head and base as `feat/017-preflow-hardening` → `main`. Final `./init.sh`, explicit format/lint checks, pre-push typecheck/tests, Node package-export smoke check, and the CJK cmap verification passed.
-**Blockers**: Fresh PR review and approval are pending; no merge is claimed.
-**Next**: Address review feedback on PR #17 and wait for approval.
-
-## 2026-09-26 — feat-017 PR #17 review follow-up
-
-**State**: done locally; PR #17 is updated on `feat/017-preflow-hardening`, open against `main`, and awaiting fresh review.
-**Done**: Fixed clean-checkout TypeScript resolution while keeping runtime exports on built ESM; added declaration export smoke coverage; restored app UI glyph 六 to generated CJK coverage and renamed the subsets; added an automated WOFF2 cmap check to CI; corrected Zengshan Buyi attribution with Chinese Text Project provenance.
-**Evidence**: With both package `dist/` directories removed, `pnpm typecheck` passed and `./init.sh` passed typecheck before build, package runtime/declaration checks, test placement, all 155 core tests and 41 knowledge tests. FontTools 4.66.0 and Brotli 1.2.0 confirmed exact 96-codepoint cmap coverage in both bundled CJK app fonts. Lint reported the pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
-**Blockers**: Fresh review and approval are pending; PR #17 has not been merged.
-**Next**: Wait for fresh review of the updated PR head and address any new findings.
-
-## 2026-09-26 — feat-007 activated
-
-**State**: active; implementation plan pending commit and review.
-**Done**: Selected feat-007 Reading flow and confirmed its dependencies are done; scoped work to F06-T01–15 and the V1 reading completion condition.
-**Evidence**: `feature_index.json` and `features/feat-007.md` record feat-001, feat-004, feat-005, and feat-017 done; canonical acceptance is in `docs/product-specs/v1-task-map.md` and `docs/product-specs/reading-flow.md`.
-**Blockers**: none.
-**Next**: Commit `docs/plans/feat-007.md` and request plan review before implementing.
-
-## 2026-09-26 — feat-007 implementation verified
-
-**State**: active; implementation verified locally; PR pending plan review.
-**Done**: Implemented F06-T01–11 and T13–15: app/home shell, session-only draft, automatic/manual/direct casting, core calculation, recovery and confirmation dialogs, focused casting route, and active result retention across root tabs. F06-T12 remains blocked until Product Owner identity approval; retained current provisional Lục Hào/English copy without claiming approval.
-**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests; only the pre-existing `apps/web/src/components/ui/button.tsx:49` Fast Refresh warning remains. Direct browser evidence for 390×844 and 1024×576 layouts, all entry methods, reset/cancel/replacement safety, root-tab retention, and refresh recovery is in `docs/plans/feat-007.md`.
-**Blockers**: Plan review result pending; F06-T12 needs Product Owner approval through feat-013, which remains todo.
-**Next**: Obtain plan-review result, then commit/push the implementation and open a PR without marking feat-007 done until F06-T12 is approved.
+**State**: active on `feat/028-coin-casting`; automated verification passed, visual and complete-flow validation remain.
+**Done**: Implemented manual per-coin confirmation, direct six-line choices, and three-/four-coin automatic casting. Split casting presentation into focused components to meet the TypeScript file-size limit.
+**Evidence**: `./init.sh` passed after the split (format, lint with two warnings, typecheck, build, 225 package tests, and package exports). Browser checks sampled desktop/iPhone coin faces and stable stage heights (242px desktop; 220px mobile); non-reduced animation was active at 80/450/900/1400ms, revealed by 1900ms with unchanged stage height, while reduced motion revealed immediately. Core tests exhaustively cover three-/four-coin mappings. Manual/direct browser checks were partial; complete six-line completion/revisit/reset remains unverified.
+**Blockers**: Meaningful mobile and desktop live-animation visual review is still required; timing samples alone do not establish motion quality.
+**Next**: Record live-animation visual review on mobile and desktop, then validate full six-line completion, revisit, and reset before finalizing acceptance.
 
 ## 2026-09-27 — feat-007 draft PR
 
@@ -819,525 +1166,178 @@ Append-only history for repository-local tracked features. Do not record no-feat
 **Blockers**: None for feat-012. Release-matrix checks remain recommended separately and are not claimed complete.
 **Next**: No further feat-012 action; address remaining release-matrix checks separately if selected.
 
-# 2026-09-28 — feat-019
+## 2026-09-26 — feat-001
+
+**State**: active; follow-up PR pending review and merge.
+**Done**: PR #10 merged. Addressed the P2 review finding in the shared placeholder Return to home link without changing navigation.
+**Evidence**: `./init.sh` passed; the 390×844px route measurements, keyboard focus, and navigation checks are recorded in `features/feat-001.md`.
+**Blockers**: none for the fix; merge approval remains pending.
+**Next**: Review and merge the follow-up PR, then close feat-001.
 
-- Result: Corrected changed-board labels so only moving lines announce a polarity change; added one-moving-line coverage for all six positions.
-- Verification: `./init.sh` passed; lint reported one pre-existing warning and zero errors.
-- Handoff: feat-019 implementation complete on `feat/019-static-line-annotations`; integration and issue #25 closure remain.
-- Next: Integrate feat-019 and confirm issue #25 closed before starting feat-020.
+## 2026-09-26 — feat-001
+
+**State**: done; PR #11 merged as `2f2936c`.
+**Done**: Added 44×44px minimum target dimensions and visible keyboard focus to the shared placeholder Return to home link, preserving destinations; completed the follow-up handoff.
+**Evidence**: Fresh Codex review approved PR #11 at `052bd46`; GitHub `verify` and GitGuardian checks passed. `./init.sh` and the browser measurements/navigation checks are recorded in `features/feat-001.md`.
+**Blockers**: none.
+**Next**: Begin feat-002 domain contracts.
 
-# 2026-09-28 — feat-020
+## 2026-09-26 — feat-002
+
+**State**: done; PR #12 merged by squash at `8761e4aa84dcb4ef71816ca03e61f26871f576d9`.
+**Done**: F01-T01–T08 domain contracts, typed errors and validation, stable IDs, ordered positions, and reusable package fixtures.
+**Evidence**: `pnpm --filter @liuyao/core test` passed 29 tests; `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Details are in `features/feat-002.md`.
+**Blockers**: none; one pre-existing non-failing web lint warning remains outside F01 scope.
+**Next**: feat-003 is active; implement F02 after confirming its canonical task map and architecture constraints.
 
-- Result: Install prompt is captured at application startup and retained across navigation until Settings uses it.
-- Verification: `./init.sh` passed. Headless Chromium simulated Home `beforeinstallprompt` → Settings use → dismissed outcome and cleared action; native install was not tested.
-- Handoff: feat-020 implementation complete on `feat/020-global-install-prompt`; integration and issue #26 closure remain.
-- Next: Integrate feat-020 and confirm issue #26 closed before starting feat-021.
+## 2026-09-26 — feat-003
+
+**State**: active; implementation locally verified, pending Orca review and merge.
+**Done**: F02-T01–T10 polarity, eight trigram patterns, 64 King Wen identities, moving-line transformations, and structured calculation API; retained F03 board work outside this scope.
+**Evidence**: `pnpm --filter @liuyao/core test` passed 113 tests, package typecheck passed, and `./init.sh` passed format, lint, length check, typecheck, build, and package tests. Independent fixture provenance and source errata are recorded in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
+**Blockers**: none for local verification; review and merge remain.
+**Next**: Submit the verified F02 revision for Orca review.
 
-# 2026-09-28 — feat-021
+## 2026-09-26 — feat-003
+
+**State**: done; PR #13 squash-merged as `ef2a99b`.
+**Done**: Completed F02-T01–T10: polarity and trigram identification, the 64-hexagram mapping, moving-line transformations, and the structured calculation API. Updated the architecture summary to reflect F02 and reserved board calculations for F03.
+**Evidence**: Fresh Codex review approved PR #13 at `7ef963b`; GitHub `verify` and GitGuardian checks passed. The worker ran 113 core tests, package typecheck, and `./init.sh`; the reviewer ran 84 focused tests and core typecheck. Fixture provenance and source errata are documented in `features/feat-003.md` and `packages/liuyao-core/tests/hexagram-fixtures.ts`.
+**Blockers**: none.
+**Next**: Activate feat-004 Liu Yao board.
 
-- Result: Update bypass is armed only in the service-worker takeover reload callback, not when update acceptance is clicked; failed/no-op application and cancellation cannot arm it by code inspection.
-- Verification: `./init.sh` passed. Oracle reviewed the implementation. Headless Chrome 148 registered a waiting worker and cancellation was observed; a synthetic casting `beforeunload` was prevented. Successful takeover/reload and rejected/no-op acceptance were not runtime-tested. User approved code-inspection evidence for these gaps; automated regression is deferred to feat-025.
-- Handoff: feat-021 implementation complete on `feat/021-transient-update-bypass`; integration and issue #27 closure remain.
-- Next: Integrate feat-021 and confirm issue #27 closed, then start feat-022.
+## 2026-09-26 — feat-004
+
+**State**: active; plan and implementation not started.
+**Done**: Activated F03 Liu Yao board after feat-003 merged; dependencies feat-002 and feat-003 are done.
+**Evidence**: Feature dependency records in `feature_index.json` and `features/feat-004.md` were checked before activation.
+**Blockers**: none.
+**Next**: Commit `docs/plans/feat-004.md` and obtain fresh Orca plan review.
 
-# 2026-09-28 — feat-022
+## 2026-09-26 — feat-004
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F03-T01–T10: Eight Palace and Shi/Ying classification, Na Jia stems and branches, element mapping, Six Relatives, and six structured board lines; updated the product-scope and architecture summaries.
+**Evidence**: Parent-run `./init.sh` passed 125 core tests in 12 files and 2 knowledge tests; format, lint, TypeScript length check, typecheck, and build passed. Lint reported one pre-existing, non-failing web `react-refresh` warning. Fixture and acceptance details remain linked in `features/feat-004.md` and `docs/product-specs/v1-task-map.md`.
+**Blockers**: Plan revision `28e13b6` is pending fresh feedback; PR review and merge are not complete.
+**Next**: Obtain fresh PR review feedback, address it, and merge after approval.
 
-- Result: Changed-board trigrams link to their Library identities instead of primary-result fact inspectors. Rule inspectors link internally to Library; source links remain separate.
-- Verification: `./init.sh` passed. No new fact mapping requires a test. Browser interaction was not verified; the navigation paths were inspected in source.
-- Handoff: feat-022 implementation complete on `feat/022-changed-result-facts`; integration and issue #28 closure remain.
-- Next: Integrate feat-022 and confirm issue #28 closed before starting feat-023.
+## 2026-09-26 — feat-004 PR review follow-up
+
+**State**: done locally; PR #14 fresh review and merge pending.
+**Done**: Isolated public palace and Na Jia lookup results after reviewer found mutation could corrupt later board facts; added runtime mutation regressions.
+**Evidence**: `./init.sh` passed 127 core tests in 12 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing, non-failing web lint warning remains.
+**Blockers**: Updated PR head requires fresh review approval.
+**Next**: Request fresh PR #14 review on the corrected head and address any findings before merge.
 
-# 2026-09-28 — feat-023
+## 2026-09-26 — feat-004
+
+**State**: done; PR #14 squash-merged as `994ba1afcc1dcf190808d693dd5f701f06eb4246`.
+**Done**: Completed F03-T01–T10 and addressed review findings for isolated readonly lookup results and feature documentation.
+**Evidence**: Fresh Codex review approved head `5dee51279af59c264fed6681ee0caa1d505685fe`; GitHub `verify` and GitGuardian passed. The worker passed `./init.sh` with 127 core tests and 2 knowledge tests, format, lint, typecheck, and build; final docs-only changes passed focused format/diff/pre-push checks.
+**Blockers**: none.
+**Next**: Activate feat-005 Casting core.
 
-- Result: V1 Library term/entity details link explicitly modeled applicable rules. Source references support hexagrams and trigrams as well as terms and rules without conflating rules with sources.
-- Verification: `./init.sh` passed; knowledge regression tests cover accepted/retrievable figure references and broken targets. Browser interaction was not tested.
-- Handoff: feat-023 implementation complete on `feat/023-library-relationships`; integration and issue #30 closure remain.
-- Next: Integrate feat-023 and confirm issue #30 closed before starting feat-024.
-
-# 2026-09-28 — feat-024
-
-- Result: Automatic casting now proceeds one line at a time; six immutable three-coin outcomes remain with the active reading, without invented manual/direct tosses.
-- Verification: `./init.sh` passed. Core package tests cover toss snapshot integrity. UI flow was inspected in source but not browser-tested; web E2E was not added.
-- Handoff: feat-024 implementation complete on `feat/024-automatic-toss-evidence`; integration and issue #29 closure remain.
-- Next: Integrate feat-024 and confirm issue #29 closed before starting feat-025.
-
-# 2026-09-28 — feat-025
-
-- Result: Added root Playwright release E2E with deterministic casting, Library, offline and real two-build PWA update scenarios; CI now runs the suite. Reassessed F11 gaps in feat-012 without claiming a full release matrix.
-- Verification: `pnpm test:release` passed 12/12 on Playwright 1.63.0 / Chromium 153.0.8010.12 / macOS 26.5.1. `./init.sh` passed. Synthetic install-event handling is not native installation; other unverified F11 items remain listed in feat-012.
-- Handoff: feat-025 implementation complete on `feat/025-release-e2e`; PR integration and issue #31 closure remain.
-- Next: Merge feat-025 after CI, close issue #31, then start feat-026.
-
-# 2026-09-28 — feat-026
-
-- Result: The V1 result layout contract now uses the implemented 900px breakpoint, close/Escape/scrim drawer dismissal, and feat-024's per-line automatic casting panel. Feat-009 and feat-010 acceptance records now distinguish supported PR evidence from incomplete original task checks; feat-012 waivers remain unchecked.
-- Verification: `git diff --check` and targeted Prettier checks passed. No new runtime behavior was introduced or claimed.
-- Handoff: feat-026 documentation changes are complete on `feat/026-spec-evidence-reconciliation`; PR integration and issue #32 closure remain.
-- Next: Integrate feat-026 and confirm issue #32 closed before starting feat-027.
-
-# 2026-09-28 — feat-027
-
-- Result: Library ID search now requires a full stable identifier; partial technical IDs no longer match by ID. Trigram details list all related hexagrams with a count.
-- Verification: `./init.sh` passed, including knowledge regression tests. The release suite passed 12/12 before the final test-only edit; no responsive browser visual check was performed.
-- Handoff: feat-027 implementation complete on `feat/027-library-search-relationships`; PR integration and issue #33 closure remain.
-- Next: Merge feat-027 after CI and confirm issue #33 closed.
-
-## 2026-09-28 — feat-028 implementation handoff
-
-**State**: active on `feat/028-coin-casting`; automated verification passed, visual and complete-flow validation remain.
-**Done**: Implemented manual per-coin confirmation, direct six-line choices, and three-/four-coin automatic casting. Split casting presentation into focused components to meet the TypeScript file-size limit.
-**Evidence**: `./init.sh` passed after the split (format, lint with two warnings, typecheck, build, 225 package tests, and package exports). Browser checks sampled desktop/iPhone coin faces and stable stage heights (242px desktop; 220px mobile); non-reduced animation was active at 80/450/900/1400ms, revealed by 1900ms with unchanged stage height, while reduced motion revealed immediately. Core tests exhaustively cover three-/four-coin mappings. Manual/direct browser checks were partial; complete six-line completion/revisit/reset remains unverified.
-**Blockers**: Meaningful mobile and desktop live-animation visual review is still required; timing samples alone do not establish motion quality.
-**Next**: Record live-animation visual review on mobile and desktop, then validate full six-line completion, revisit, and reset before finalizing acceptance.
-
-## 2026-09-29 — feat-028 casting UX refinement
-
-**State**: implementation refined on `feat/028-coin-casting`; live visual review is still required before marking the feature done.
-**Changed**: Replaced bare 6/7/8/9 result headlines with Lão âm / Thiếu dương / Thiếu âm / Lão dương terminology, stabilized the automatic-casting result/action regions, simplified the shell/coin/dish visual language, shortened and staggered motion, and routed casting controls through the shared shadcn-style Button/Card/UI primitives. The destructive confirmation dialog now uses the shared alert-dialog primitive with centered overlay and open animation.
-**Tests**: Release E2E expectations were updated for canonical line names and a mobile regression test now checks that the automatic primary action does not shift vertically after a reveal.
-**Remaining**: Run repository verification and perform the required desktop/mobile live-animation visual review before checking feat-028 motion acceptance.
-
-## 2026-09-29 — feat-028 3D casting redesign
-
-**State**: active; implemented the user-approved replacement concept on PR #49.
-**Changed**: Replaced turtle/dish animation with a lazy Three.js bronze-coin stage, staggered launch/contact, camera reveal, and six-line forming hexagram. Removed numeric outcome copy from casting modes. Scene completion replaces the independent reveal timer; reset cancels motion. Added static fallback for unavailable/lost WebGL.
-**Evidence**: `./init.sh` passed with 225 package tests; release E2E passed 16/16. Direct desktop/mobile checks completed six fixed four-coin outcomes, revisit, and calculation with stationary actions. Reduced motion, fallback, context loss, reset, cancel, and production offline lazy loading passed. Reviewed launch/contact/reveal frame captures at both viewport sizes.
-**Limits**: Physical-phone frame pacing remains unverified; the 3D chunk adds approximately 133kB gzip. Feature remains active pending live preview motion acceptance.
-**Next**: Review the updated PR preview on desktop and a physical phone.
-
-## 2026-09-29 — feat-028 always-on motion and readable identities
-
-**State**: active; user requested three concrete follow-up changes on PR #49.
-**Changed**: Explicit tosses now animate regardless of reduced-motion preferences, including a cancellable DOM fallback. Added a shared `YaoSymbol` for automatic/manual/direct casting and result boards, with fixed 24px high-contrast SVG moving markers. Four-coin faces now share gold/blue/red/white palettes and large mountain/drop/flame/wind paths across textures, DOM controls, and a named legend.
-**Evidence**: `./init.sh` passed (225 package tests); release E2E passed 16/16. Reduced-motion browser checks verified changed flight pixels, animation-length reveal, both moving markers, mobile layout, and mid-flight reset in WebGL and fallback modes. Reviewed desktop/mobile face captures and mobile direct/result layouts; no horizontal overflow.
-**Next**: Review the updated preview on the user's device for motion and elemental-symbol readability; keep the feature active until visual acceptance.
-
-## 2026-09-29 — feat-028 Base UI replacement plan
-
-**State**: active on `feat/028-coin-casting`. The user superseded the 3D design and requested full-shadcn migration on this branch.
-**Done**: Replaced the execution plan with staged Base UI migration, fixed coin flips, page redesign, cleanup, and verification. The user selected six vertical direct-input rows. Canonical specs mark the new presentation as intended and the flip timing as proposed.
-**Evidence**: CLI decoded preset `b59jufSZGa` as Sera/Neutral/Lucide/Noto Sans/Noto Serif. `info --json` reports the existing base as Radix. CLI help confirms explicit `--base base`, `--pointer`, and reinstallation flags.
-**Limit**: Planning only. The application and dependencies still match commit `46441cc`.
-**Next**: Review `docs/plans/feat-028.md`, then execute Task 1 inline on the current branch.
-
-## 2026-09-29 — feat-028 Base UI migration verified
-
-**State**: active on `feat/028-coin-casting`; implementation is locally verified.
-**Done**: Completed the approved Sera/Base UI migration across casting modes, routes, and shared controls; replaced Three.js with predetermined DOM/CSS coin flips and fixed responsive layout defects found in browser review.
-**Evidence**: `./init.sh` passed with 225 package tests; `pnpm test:release` passed 17/17; `git diff --check` passed. Browser audits at 320/390/1280px verified direct-choice sizing, manual action targets, Library tabs, stable coin centers, alternating faces under normal/reduced motion, and Home mouse/keyboard navigation.
-**Blockers**: Physical-phone motion pacing and user review of the PR preview remain outstanding. Build logs report sourcemap-location and >500KB chunk warnings.
-**Next**: Present the updated PR #49 preview for user visual review after implementation changes are committed and pushed.
-
-## 2026-09-30 — feat-028 casting layout and flow follow-up
-
-**State**: active on `feat/028-coin-casting`; broader acceptance remains open.
-**Done**: Implemented the shared sitewide spacing contract and refined casting UI. Parent browser QA verified four-coin one-press casting from 1/6 through 6/6, revisit preserving 2/6, result navigation, and visible desktop aside. Result widths matched the viewport content widths at 320px (305px), 390px (375px), and 1280px (1265px); board rows measured 48px.
-**Evidence**: Final `./init.sh` and `git diff --check` passed with 225 package tests. After the global 320px body minimum was removed, browser checks reconfirmed no horizontal overflow on Casting and Result at 320/390/1280px; Result rows remained 48px and its desktop inspector visible.
-**Blockers**: `pnpm test:release` is absent from the current root and web package scripts; its older 17/17 result does not verify this follow-up. User preview, physical-phone motion, and remaining feature criteria are unverified; no new evidence is claimed for manual mode, three-coin, reset-mid-animation, keyboard, or reduced motion.
-**Next**: Present the updated preview, verify remaining acceptance criteria, and resolve stale release-check references before marking the feature done.
-
-## 2026-09-30 — feat-028 shared manual casting workspace
-
-**Result**: Manual and automatic casting now share the same card structure, coin arrangement, result region, and action bar. Manual coins remain individually editable until confirmation; confirmed lines remain locked on revisit. The obsolete detached manual action card was removed.
-
-**Evidence**: `./init.sh` and `git diff --check` passed. Desktop browser review verified the shared layout; at 320px and 390px, four-coin manual casting had no horizontal overflow and preserved clearance for focus outlines. Browser interaction verified selection, confirmation, and next-line navigation.
-
-**Remaining**: User preview and the other unchecked feat-028 acceptance criteria still need verification. Do not mark the feature done from this UI follow-up alone.
-
-## 2026-09-30 — feat-028 shared footer and state review
-
-**Result**: Moved reset into both sequential workspaces. Fixed clipped mobile actions and vertical footer movement when a line appears. Kept direct-entry reset separate.
-
-**Evidence**: Final `./init.sh` and `git diff --check` passed. Browser QA at 320px completed six manual lines and opened Result; a confirmed line retained its faces on revisit. Reset required confirmation after input and cleared all lines. At 320px and 390px, all footer buttons fit the Card. At 320px the footer stayed at the same vertical position through automatic waiting, reduced-motion toss, reveal, and manual six-line completion. A completed result survived Library-to-Home navigation and was removed by confirmed “Lập mới.” Keyboard Space flipped a focused coin; Tab exposed its focus outline.
-
-**Remaining**: User preview, physical-phone motion, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and full visual flip review. Keep feat-028 active.
-
-## 2026-09-30 — feat-028 responsive bento redesign
-
-**Result**: Reorganized Home, casting, Result, Library, Library detail, and Settings around content-led shadcn cards. Added a mobile contextual back bar and persistent bottom tabs, including during casting; desktop uses a top navigation header without an application back link. Kept the installed Sera/Base UI preset, domain calculations, session behavior, and confirmation gates.
-
-**Evidence**: Final `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests; `git diff --check` passed. Direct browser review at 320px, 390px, and 1440px covered navigation, automatic and direct casting layouts, six-line direct completion, Result fact Sheet, Library search/list, a rule detail, Settings, and offline feedback. The inspected routes had no horizontal document overflow. Mobile Library tabs were changed to two rows at 320px, and result fact controls were made readable with a 44px minimum target.
-
-**Remaining**: Existing feat-028 acceptance still needs user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, and session-boundary checks. Keep the feature active.
-
-**Next**: Review the redesigned preview and complete the remaining casting acceptance checks before closing feat-028.
-
-## 2026-09-30 — feat-028 closure and PR handoff
-
-**Result**: Marked feat-028 done at the user's explicit request and prepared the responsive bento redesign for PR review. This is a directed closure with the unchecked acceptance criteria in `features/feat-028.md` still unverified.
-
-**Evidence**: Fresh `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The prior browser review covered 320px, 390px, and 1440px layouts and primary route flows.
-
-**Remaining**: Physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, complete desktop/mobile flip review, and user preview are unverified. `pnpm test:release` is not defined.
-
-**Next**: Review the PR and perform the remaining visual, assistive-technology, and session-boundary checks.
-
-## 2026-09-30 — PR #52 review fixes
-
-**Result**: Fixed the defects found while reviewing PR #52 against the shadcn and shadcn-ui skills. The automatic-casting primary action no longer clips against the card at 320px; the two-row Library tab list sizes to its content; search clear, rule filters, tab triggers, and remaining default-size buttons reach the 44px target; section titles expose heading roles; list rows use `divide-y`; the mobile casting border seam is 1px; and the dead `route-page--*` modifiers and stale canonical-doc statements are gone.
-
-**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. Chromium at 320px re-measured the fixed surfaces: footer buttons 0px clipped, tab list 100px with no label overlap and 44px triggers, clear button 44x44, filter toggles 44px, fact buttons 54px, heading roles level 2 (level 3 for Library records), 1px hexagram/coin seam, and no horizontal document overflow. Desktop at 1440px kept the 1280px wrapper, a 52px single-row tab list, and the three-column record grid. `pnpm dlx shadcn@latest preset resolve` confirmed preset `b59jumGwPA`.
-
-**Remaining**: Preview at 360-420px, user preview, physical-phone flip review, actual screen-reader announcements, full keyboard traversal, fresh reload boundaries, and complete desktop/mobile flip review are still unverified. `pnpm test:release` is not defined.
-
-**Next**: Push the fixes to `refactor/ui-ux-web` for PR #52 review.
-
-## 2026-10-01 — feat-029 compact casting and header navigation
-
-**Result**: Completed the approved layout on `feat/compact-casting-mobile`. Both sequential workspaces place the hexagram beside the coins, with one outcome row and compact actions below. Mobile header icons replace bottom tabs. Connection status remains in Settings. Updated the canonical layout contract.
-
-**Evidence**: Final `./init.sh` passed with 225 package tests; `git diff --check` passed. Chromium review covered 320×568, 390×664, and 1440×900 without horizontal overflow. The automatic footer stayed at 517px through six busy/revealed states. Manual confirmation/revisit, reset, cancel, draft protection, reading retention, and keyboard coin activation passed.
-
-**Limits**: Physical-phone rendering and actual screen-reader announcements remain unverified. Existing verification warnings remain.
-
-**Next**: Review the interface on the user's phone. Changes remain uncommitted.
-
-## 2026-10-01 — feat-029 PR handoff
-
-**State**: PR #53 is open.
-**Done**: Pushed `feat/compact-casting-mobile` and opened PR #53.
-**Evidence**: The pre-push hook passed workspace typecheck and all 225 package tests. `git diff --check` passed. Browser review confirmed that the input group shows only its bottom focus border.
-**Blockers**: None.
-**Next**: Review PR #53.
-
-## 2026-10-01 — feat-030 Light and Dark theme preference
-
-**Result**: Added the F09-T11 theme preference. Settings gains a Giao diện card with Sáng/Tối choices; the choice persists on the device, applies to every route before first paint through an `index.html` bootstrap, and drives `color-scheme` and `theme-color`. The Dark palette now fills the canonical semantic tokens from `docs/product-specs/v1-mvp.md`; the Light palette is unchanged. The moving-line marker and four-coin labels moved onto tokens so both stay readable in Dark.
-
-**Evidence**: Final `./init.sh` passed (format, lint, typecheck, build, package exports, 225 package tests). Chromium reviewed the production build: default Light with empty storage; Tối set `html.dark` with body `#151B1E`, surface `#1E2629`, muted text `#B3C1BD`, and `theme-color` `#151b1e` on `/`, `/library`, `/settings`, and `/result`; reload restored the class by `DOMContentLoaded`; with the service worker active and the preview server stopped, `/` and `/settings` still loaded with the saved dark theme; 390×844 settings had no horizontal overflow. Light keeps `#8f2e24` for moving markers; Dark renders `#e8836f` (6.5:1, up from 2.1:1).
-
-**Limits**: PWA manifest theme colors and the favicon remain Light-only identity assets. Chromium-only review; physical-device rendering unverified. No package-level test exists for the theme module because app test files are not allowed.
-
-**Next**: Review the uncommitted theme changes and commit them.
-
-## 2026-10-01 — feat-030 storage-failure review fix
-
-**Result**: Updated the Settings appearance control to initialize from the active document theme, so route remounts keep the selection aligned when localStorage writes fail. Corrected the feat-030 handoff to include the committed implementation and this review fix.
-
-**Evidence**: With writes to `liuyao-theme` forced to fail, selecting Tối applied Dark; after navigating Home and returning to Settings, Tối remained active and selected, with no page errors. `./init.sh` passed format, lint, typecheck, build, package exports, and package tests.
-
-**Next**: Commit the review fix.
-
-## 2026-10-01 — feat-030 PR handoff
-
-**State**: PR #54 is open against `main`.
-**Done**: Pushed `feat/030` with the theme implementation and storage-failure review fix.
-**Evidence**: `./init.sh` passed format, lint, typecheck, build, package exports, and 225 package tests. The pre-push hook passed typecheck and all package tests. Chromium review covered persistence, offline launch, responsive Settings, theme contrast, and storage-write failure.
-**Blockers**: None.
-**Next**: Review PR #54.
-
-## 2026-10-01 — feat-031 book-backed domain documentation
-
-**Result**: Added the supplied-book source catalog, V1 board derivations, and intended knowledge quality contract. Documented current TypeScript storage and proposed JSON/database options. Updated canonical routes and the release evidence gate. Recorded four source discrepancies and the unresolved relationship between product coin symbols and traditional physical faces.
-
-**Evidence**: Fresh `./init.sh` passed with 225 package tests. Local documentation links and four PDF fingerprints passed. Documentation tables match eight trigram patterns, 64 palace memberships, and 48 Na Jia assignments in current code. `git diff --check` passed.
-
-**Limits**: This is focused documentation review. Runtime records and fixtures still need individual supplied-book provenance. Full commentary review and JSON migration are not implemented. Supplied PDFs remain user-provided inputs.
-
-**Next**: Select the supplied-book audit of runtime knowledge records and calculation fixtures.
-
-## 2026-10-01 — feat-032 JSON pilot and package migration
-
-**State**: done for the approved pilot.
-**Done**: Added four fingerprinted source editions, strict schemas, cited JSON records, release checks, generated coverage, and readonly book APIs. Existing lookups use reviewed JSON plus an explicitly unaudited compatibility snapshot.
-**Evidence**: `./init.sh` passes with 263 package tests. Corpus fingerprint/freshness checks and `git diff --check` pass. Codex compared pilot passages and rendered symbol/table pages. Chromium loaded Càn and edition metadata after the production server stopped.
-**Limits**: Coverage is 4/64 quẻ and 24/384 line positions. PBC/NTT line commentary and independent specialist approval remain missing. The main JS bundle is approximately 679kB, 197kB gzip. Existing build/lint warnings remain.
-**Next**: Continue Truân, Mông, Nhu, Sư and BPCT chapter 5, sections 1–4, PDF 67–68. Include the missing PBC/NTT pilot line comparisons. Changes remain uncommitted.
-
-## 2026-10-01 — feat-032 pre-commit source review
-
-**State**: done for the pilot.
-**Done**: Rechecked authored claims against their cited passages and inspected the PBC/NTT Lý diagrams. Added BPCT PDF 13 to the Thiên can and Địa chi definitions so their Nạp Giáp clauses have direct evidence.
-**Evidence**: The corpus still has 73 records, 119 claims, and 43 citations. Full verification and fingerprint checks run before the pilot commit.
-**Blockers**: None.
-**Next**: Continue the approved next batch in a separate feature and commit each reviewed content group.
-
-## 2026-10-01 — feat-033 pilot commentary comparisons
-
-**State**: active. The foundation is committed as `da4f1ab`.
-**Done**: Added PBC and NTT summaries for all 24 pilot line positions and separate Dụng cửu/Dụng lục readings. Preserved distinct Trình Di/Chu Hy interpretations. Recorded and visually confirmed the PBC PDF 66 and NTT PDF 144 Khôn label errors.
-**Evidence**: Fingerprint validation passes. Coverage reports 73 records, 175 claims, and 99 citations; all three commentary sources now cover the 24 pilot positions. Schema and passage review remain separate checks.
-**Blockers**: None.
-**Next**: Verify and commit these comparisons, then author Truân, Mông, Nhu, and Sư.
-
-## 2026-10-01 — feat-033 four-quẻ source review
-
-- Status: active.
-- Result: Released Truân, Mông, Nhu, and Sư with three-book overviews and all six positions. Preserved selected Chu Hy differences, including Nhu's final line and Sư's “dư thi”. Recorded five source-label/reference discrepancies with visual and passage evidence. Corrected NTT's supplied-edition year from its PDF 938 colophon and recorded missing referenced end criticism.
-- Coverage: 77 records, 274 claims, 194 locators; 8/64 quẻ and 48/384 positions. The remaining 56 quẻ retain unaudited compatibility content.
-- Evidence: `./init.sh` passed all 263 tests. PDF fingerprints match; generated imports and coverage were regenerated. No source PDF or core calculation changed.
-- Blockers: none.
-- Next: Commit this group, then author BPCT chapter 5, sections 1–4.
-
-## 2026-10-01 — feat-033 advanced BPCT group
-
-- Status: active.
-- Result: Added four Dụng/Nguyên/Kỵ/Cừu terms and three articles covering question-specific selection, Thế–Ứng roles, and conditional effects. Extended the existing Thế/Ứng terms. Kept Vĩnh Cao's footnotes separate from Vương Hồng Tự's chapter text; preserved dynamic, strength, calendar, and protection conditions.
-- Coverage: 84 records, 303 claims, 202 locators; advanced coverage is partial. No calendar or automated interpretation behavior was added.
-- Evidence: Full `./init.sh` passed 263 tests after the final passage review. PDF fingerprint/freshness checks and `git diff --check` passed. The four-quẻ group is committed as `fb93a79`.
-- Blockers: none.
-- Next: Commit this group, then reconcile canonical documentation and complete the feature handoff.
-
-## 2026-10-01 — feat-033 completed handoff
-
-- Status: done.
-- Result: Completed both selected content tracks. Reconciled content, model, quality, and source documents with the released corpus. Retained explicit incomplete coverage and linked the manifest's next batch.
-- Commits: Foundation `da4f1ab`; pilot line comparisons `33c7097`; Truân–Mông–Nhu–Sư `fb93a79`; advanced BPCT `69c4683`.
-- Evidence: 84 released records, 303 cited claims, 202 locators; 8/64 quẻ and 48/384 positions in each of the three commentary books. Each group passed `./init.sh` with 263 tests, source fingerprints, generated-output freshness, and diff checks.
-- Blockers: none for this batch. Complete corpus review remains unfinished.
-- Next: Review Tỷ, Tiểu Súc, Thái, Bĩ and BPCT chapter 5, sections 5–7 (Phi thần, Phục thần, Lục thú; PDF 68–69).
-
-## 2026-10-01 — feat-034 four-quẻ group
-
-- Status: active.
-- Result: Added Tỷ, Tiểu Súc, Thái, and Bĩ with three-book overviews and 24 positions. Preserved selected Trình Di/Chu Hy differences, source spelling variants, and seven visually checked source discrepancies. Removed the equivalent legacy records.
-- Coverage: 88 records, 401 claims, 297 locators; 12/64 quẻ and 72/384 positions in each commentary book. The remaining 52 quẻ retain unaudited compatibility content.
-- Evidence: `./init.sh` passed 263 tests; supplied PDF fingerprints, generated-output freshness, and diff checks passed.
-- Blockers: none.
-- Next: Commit this group, then finish BPCT chapter 5, sections 5–7 with related passages.
-
-## 2026-10-01 — feat-034 Phi–Phục and Lục thú group
-
-- Status: active.
-- Result: Added nine terms and three articles from BPCT chapter 5, sections 5–7. Checked Phi–Phục examples against the chapter 4 boards and Lục thú conditions against chapter 6 commentary. Excluded the unclear type-2 Phi wording and Đằng Xà element attribution; selected historical examples retain their context.
-- Coverage: 100 records, 427 claims, 303 locators; 12/64 quẻ and 72/384 positions. Advanced coverage remains partial.
-- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. The four-quẻ group is committed as `c5bf201`.
-- Blockers: none for the selected claims. The two excluded passages need clearer evidence before later publication.
-- Next: Commit this group, then reconcile source documentation and complete the handoff.
-
-## 2026-10-01 — feat-034 completed handoff
-
-- Status: done.
-- Result: Completed both selected tracks and reconciled the source inventory with exact passage locations, seven supported discrepancy resolutions, and explicit advanced exclusions. Reviewed content, quality, and model documents remain accurate; they link the canonical coverage report.
-- Commits: Four quẻ `c5bf201`; Phi–Phục and Lục thú `5fa328c`.
-- Evidence: Final `./init.sh` passed 263 tests. Coverage remains incomplete: 100 records, 427 cited claims, 303 locators; 12/64 quẻ and 72/384 positions in each commentary book. PDF fingerprints, generated-output freshness, and diff checks passed.
-- Blockers: none for this batch. Phi thần type 2 and Đằng Xà’s own element remain excluded pending clearer source evidence.
-- Next: Review Đồng Nhân, Đại Hữu, Khiêm, Dự and BPCT chapter 5, sections 8–10 (Tứ sinh, Nguyệt phá, Tuần không; PDF 70).
-
-## 2026-10-02 — feat-035 four-quẻ group
-
-- Status: active.
-- Result: Added Đồng Nhân, Đại Hữu, Khiêm, and Dự with three-book overviews and 24 positions. Preserved distinct author readings, Ngô Tất Tố's selected translator note, and six supported source-error resolutions after visual inspection. Removed duplicate legacy records.
-- Coverage: 104 records, 525 claims, 398 locators; 16/64 quẻ and 96/384 positions in each commentary book. The remaining 48 quẻ retain unaudited compatibility content.
-- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed.
-- Blockers: none.
-- Next: Commit this group, then review BPCT chapter 5, sections 8–10 and related evidence.
-
-## 2026-10-02 — feat-035 Tứ sinh, Nguyệt phá, and Tuần không group
-
-- Status: active.
-- Result: Added ten terms and three articles from BPCT chapter 5, sections 8–10. Cross-checked stage lists and calendar definitions, preserved compound conditions, and separated Vĩnh Cao's notes. Excluded the unclear Lâm Quan/Thoái sentence and the contradictory điền thực example.
-- Coverage: 117 records, 548 claims, 408 locators; 16/64 quẻ and 96/384 positions. Advanced coverage remains partial.
-- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed. Four-quẻ group committed as `be42a75`.
-- Blockers: none for selected claims. Excluded passages need clearer evidence before publication.
-- Next: Commit this group, reconcile source documentation, and complete the handoff.
-
-## 2026-10-02 — feat-035 completed source audit and handoff
-
-- Status: done.
-- Result: Completed both selected tracks. Added printed locators to 84 NHL citations across three batches and checked all 109 NHL citations against 59 footer labels. Reconciled source locations and exclusions, added chapter 6 cross-checks for Tuần Không, and corrected stale model and directory documentation. Content and quality contracts remain accurate.
-- Commits: Four quẻ `be42a75`; Tứ sinh, Nguyệt phá, and Tuần không `b964a5d`.
-- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 51 local documentation targets, and diff checks passed. Coverage remains incomplete: 117 records, 548 claims, 411 locators; 16/64 quẻ and 96/384 positions in each commentary book.
-- Blockers: none for this batch. Ambiguous and contradictory source examples remain explicitly excluded; no independent specialist approval is claimed.
-- Next: Review Tùy, Cổ, Lâm, Quán and BPCT chapter 5, sections 11–12 (Phản ngâm, Phục ngâm; PDF 70–71).
-
-## 2026-10-02 — feat-036 four-quẻ group
-
-- Status: active.
-- Result: Added Tùy, Cổ, Lâm, and Quán with three-book overviews and 24 positions. Preserved author differences, uncertain readings, and 13 visually checked source-error resolutions. Removed duplicate legacy records and retained the existing Quan display name with Quán aliases.
-- Coverage: 121 records, 644 claims, 503 locators; 20/64 quẻ and 120/384 positions in each commentary book. The remaining 44 quẻ retain unaudited compatibility content.
-- Evidence: After correcting the display-name change caught by compatibility tests, `./init.sh` passed 263 tests. PDF fingerprints, generated-output freshness, and diff checks passed before commit.
-- Blockers: none.
-- Next: Commit this group, then finish BPCT chapter 5, sections 11–12 and related evidence.
-
-## 2026-10-02 — feat-036 Phản ngâm and Phục ngâm group
-
-- Status: active.
-- Result: Added three terms and two articles from BPCT chapter 5, sections 11–12. Preserved the distinction between directional examples and line-branch opposition. Checked 14 Phục ngâm pairs against Nạp Giáp, retained Dụng/Thế/Ứng conditions, and resolved a Cấn naming error. Ambiguous parentheticals and the mixed Phản/Phục name in question 6 remain excluded.
-- Coverage: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions. Advanced coverage remains partial.
-- Evidence: Final advanced `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit. Classical group committed as `ccf713b`.
-- Blockers: none for selected claims. Excluded wording needs clearer evidence before publication.
-- Next: Commit this group, reconcile source documentation, and complete the handoff.
-
-## 2026-10-02 — feat-036 completed source audit and handoff
-
-- Status: done.
-- Result: Completed both selected tracks and reconciled source locations, discrepancy routes, and advanced exclusions. Reviewed content, quality, model, and data-directory contracts remain accurate. Checked all 138 NHL citations across 71 cited pages and seven new BPCT printed locators.
-- Commits: Four quẻ `ccf713b`; Phản ngâm and Phục ngâm `09e8a9f`.
-- Evidence: Final `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, 74 local document targets, and diff checks passed. Coverage remains incomplete: 126 records, 659 claims, 510 locators; 20/64 quẻ and 120/384 positions per commentary book.
-- Blockers: none for selected content. Ambiguous statements remain excluded; no independent specialist approval is claimed.
-- Next: Review Phệ Hạp, Bí, Bác, Phục and BPCT chapter 5, sections 13–14 (Vượng tướng hưu tù, Trong hợp có khắc; PDF 72).
-
-## 2026-10-02 — feat-037 four-quẻ group
-
-- Status: active.
-- Result: Added Phệ Hạp, Bí, Bác, and Phục with three-book overviews and all 24 positions. Preserved Trình Di/Chu Hy differences, historical context, and nine visually checked source-error resolutions. Used NHL's explicit seven-quẻ sequence and excluded unclear wording; removed duplicate legacy records.
-- Coverage: 130 records, 754 claims, 606 locators; 24/64 quẻ and 144/384 positions in each commentary book. Forty quẻ retain unaudited compatibility content.
-- Evidence: `./init.sh` passed 263 tests; PDF fingerprints, generated-output freshness, and diff checks passed before commit.
-- Blockers: none for selected claims. Ambiguous wording remains excluded.
-- Next: Commit this group, then review BPCT chapter 5, sections 13–14 and related evidence.
-
-## 2026-10-02 — feat-037 seasonal strength and combination/control group
-
-- Status: active.
-- Result: Added three terms and two articles for BPCT chapter 5, sections 13–14. Kept compound conditions, the directional Thân-to-Tị exception, and Vĩnh Cao's Tam hình objection separate from main commentary. No calendar, scoring, or automatic interpretation was added.
-- Coverage: 135 records, 771 claims, 614 locators; 24/64 quẻ and 144/384 positions. Advanced coverage remains partial.
-- Evidence: Initial full verification hit the 304-line generated import inventory. Fix `159797e` exempts only that generated file; an isolated probe still rejects oversized authored TypeScript. The subsequent `./init.sh` passed 263 tests; PDF fingerprints, generated freshness, and diff checks passed. Classical group committed as `3e01c29`.
-- Blockers: none for selected claims. Unspecified Hưu/Tù assignments and mixed support/control cases remain outside general classifiers.
-- Next: Commit this group, reconcile source documentation, and complete the handoff.
-
-## 2026-10-02 — feat-037 completed source audit and handoff
-
-- Status: done.
-- Result: Completed both selected tracks. Reconciled source locations, nine discrepancy routes, and classical/advanced exclusions. Content, quality, model, and data-directory contracts remain accurate.
-- Commits: Classical `3e01c29`, generated-import verification `159797e`, BPCT `3dd5355`.
-- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, documentation targets, and diff checks passed. Checked all 167 NHL citations across 84 cited pages and eight new BPCT printed locators.
-- Coverage: 135 records, 771 cited claims, 614 locators. Classical coverage remains 24/64 quẻ and 144/384 positions per commentary book.
-- Blockers: none for selected claims. Ambiguous statements remain excluded. Full corpus and independent specialist review remain incomplete.
-- Next: Review Vô Vọng, Đại Súc, Di, Đại Quá and BPCT chapter 5, sections 15–16 (PDF 72–73).
-
-## 2026-10-02 — feat-038 completed source audit and handoff
-
-- Status: done.
-- Result: Added four reviewed quẻ and six BPCT records. Corrected Đại Súc's reversed display name. Preserved author differences, six visually checked source-error resolutions, conditional support, and translator objections. Reconciled source locators and exclusions.
-- Commits: Name `743b17e`, classical `2443953`, BPCT `31d8866`.
-- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 92 local documentation routes, and diff checks passed. Checked all 195 NHL citations across 96 cited pages and nine new BPCT printed locators.
-- Coverage: 145 records, 885 cited claims, 716 locators. Classical coverage is 28/64 quẻ and 168/384 positions per commentary book. Thirty-six quẻ retain unaudited compatibility content.
-- Blockers: none for selected claims. Ambiguous passages, reported health outcomes, complete coverage, and independent specialist approval remain outside this completed batch.
-- Next: Review Khảm, Ly, Hàm, Hằng and BPCT chapter 5, sections 17–18 (PDF 73).
-
-## 2026-10-02 — feat-039 completed source audit and handoff
-
-- Status: done.
-- Result: Added Khảm, Ly, Hàm, Hằng and four BPCT records. Preserved author differences and nine visually checked source-error resolutions. Kept conditional Tiến/Thoái effects, proxy relationships, and the source's religious setting explicit. Reconciled source locations and exclusions.
-- Commits: Classical `3b9ab7e`; BPCT `b7fce51`.
-- Evidence: Final `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 101 local documentation routes, and diff checks passed. Checked all 223 NHL citations across 108 cited pages and five new BPCT printed locators.
-- Coverage: 153 records, 995 cited claims, 812 locators. Classical coverage is 32/64 quẻ and 192/384 positions per commentary book. Thirty-two quẻ retain unaudited compatibility content.
-- Blockers: none for selected claims. The missing Tiến entry, ambiguous attribution, unlocated reference, and reported outcomes remain outside released authority. Full coverage and independent specialist approval remain incomplete.
-- Next: Review Độn, Đại Tráng, Tấn, Minh Di and BPCT chapter 6, sentences 1–6 (PDF 77–79).
-
-## 2026-10-02 — feat-040 completed source audit and handoff
-
-- Status: done.
-- Result: Added Độn, Đại Tráng, Tấn, Minh Di and four BPCT records; extended moving-line evidence. Preserved distinct readings, seven source-discrepancy resolutions, conditional support, and Nhật thần scope. Tightened seven classical summaries and one advanced condition. Reconciled source locations and exclusions.
-- Commits: Classical `ea12e18`; BPCT `1610f8b`.
-- Evidence: `./init.sh` passed 263 tests. PDF fingerprints, generated freshness, 112 documentation routes, and diff checks passed. Checked 251 NHL citations across 120 pages and eight new BPCT printed locators.
-- Coverage: 161 records, 1,111 cited claims, 916 locators. Classical coverage is 36/64 quẻ and 216/384 positions per commentary book. Twenty-eight quẻ retain unaudited compatibility content.
-- Blockers: none for selected claims. Unclear wording, incomplete tables, reported outcomes, full coverage, and independent specialist approval remain excluded or incomplete.
-- Next: Review Gia Nhân, Khuê, Kiển, Giải and BPCT chapter 6, sentences 7–11 (PDF 79–81).
-
-## 2026-10-02 — feat-041 completed source audit and handoff
-
-- Status: done.
-- Result: Added Gia Nhân, Khuê, Kiển, Giải and seven BPCT records. Preserved author differences, four visually checked source-error resolutions, conditional day, month, and year effects, and separate Thân meanings. Tightened seven classical summaries. Reconciled source locations and exclusions.
-- Commits: Classical `a73209e`; BPCT `f780804`.
-- Evidence: `./init.sh` passed 263 tests. Fingerprints, generated freshness, 121 documentation routes, and diff checks passed. Checked 279 NHL citations across 133 pages and six new BPCT printed locators.
-- Coverage: 172 records, 1,226 cited claims, 1,015 locators. Classical coverage is 40/64 quẻ and 240/384 positions per commentary book. Twenty-four quẻ retain unaudited compatibility content.
-- Blockers: none for selected claims. Unclear references, full coverage, calendar algorithms, and independent specialist approval remain excluded or incomplete.
-- Next: Review Tổn, Ích, Quải, Cấu and BPCT chapter 6, sentences 12–16 (PDF 81–82).
-
-## 2026-10-02 — feat-042 complete-corpus roadmap
-
-- Status: active.
-- Result: Created 55 intended execution features for remaining authoring, audit tooling, sixteen four-quẻ audits, ten group audits, and independent certification. Preserved 384 separate hào acceptance items. The roadmap lists all 24 missing quẻ, source ownership, and chapter checkpoints for separate commits.
-- Decision: Group coherent work in features; retain detailed quẻ, hào, and passage decisions in acceptance items and future ledgers.
-- Evidence: Baseline `./init.sh` passed 263 tests. Final graph, coverage-unit, route, fingerprint, and repository checks remain pending.
-- Blockers: None for planning. Future independent approval requires a named specialist.
-- Next: Verify and commit the backlog; keep execution features `todo`.
-
-## 2026-10-02 — feat-042 completed roadmap and verification
-
-- Status: done.
-- Result: Created the complete intended backlog, feat-043 through feat-097, and a linked roadmap. Consolidated the draft into 55 execution features, retaining chapter checkpoints, sixteen four-quẻ audits with 384 distinct hào items, and ten group audits. Added versioned evidence, independent approval, and correction gates.
-- Evidence: Final `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 158 local documentation targets, dependency graph, complete hào inventory, and diff checks passed. The prior 41 feature entries and current corpus remain unchanged.
-- Blockers: None for planning. No future content or audit feature has executed; specialist approval remains pending.
-- Next: Select feat-043 and build the source-to-record/exclusion crosswalk.
-
-## 2026-10-02 — feat-098–100 web integration planning
-
-- Status: todo; planning recorded, implementation not started.
-- Result: Added three web features for Library quẻ/hào details, contextual reading explanations, and topic/article/learning browsing with local search. Linked their intended contracts and dependencies into the roadmap. The backlog now contains 58 execution features.
-- Decision: Reuse released content without waiting for full-corpus certification. Complete feat-098 before its two dependents; future lessons do not block article browsing.
-- Evidence: `./init.sh` passed 263 tests with existing warnings. Corpus fingerprints, generated freshness, 163 local documentation targets, dependency graph, and diff checks passed. Prior feature entries, 384 audit items, corpus data, and application code remain unchanged.
-- Blockers: None for planning. Web behavior and direct UI checks remain unimplemented.
-- Next: Select feat-098 and assess implementation scope and external-plan criteria.
-
-## 2026-10-03 — feat-101–103 extended roadmap planning
-
-- Status: todo; planning recorded, implementation not started.
-- Result: Added extended-record/provenance contracts, package/web fidelity verification, and payload/offline snapshot hardening. Broadened Library plans to include trigrams, terms, rules, figures, and project conventions. The backlog now contains 61 execution features.
-- Decision: Sequence inventory → feat-101 → feat-067 → feat-097 before bulk authoring. Keep feat-066 closure required by final reconciliation. Web integration starts after feat-101 without waiting for full-corpus certification.
-- Evidence: `./init.sh` passed 263 tests with existing warnings. Edition fingerprints, generated freshness, 167 local documentation targets, dependency checks, and diff checks passed. All 384 audit items, corpus data, application code, and previous statuses remain unchanged.
-- Blockers: None for planning. Extended contracts, web fidelity, volume checks, and specialist approval remain unimplemented or pending.
-- Next: Select feat-043 and build the source-to-record/exclusion crosswalk, then complete feat-101.
-
-## 2026-10-06 — feat-049 authored source-compared batch
-
-- Status: active; implementation complete, final verification pending.
-- Result: Added quẻ 61–64 with all 24 positions and actual author layers, plus BPCT 49–56 with separate verses/commentaries and notes 10–11. Preserved eight NTT notes, named/anonymous supplements, source discrepancies and missing text. Removed only the four remaining legacy entities without changing IDs.
-- Evidence: Baseline full verification passed 482 tests and source fingerprints; package tests now pass 312. Coverage is 202 records, 2,398 claims, 2,662 citations, 64 quẻ and 384 positions. Inventory and registry revision/hash reconcile only this batch.
-- Offline: Measured integrated main asset 3,113,895 bytes exceeded prior 2,949,120 cap. Authorized measured increase to 3,211,264 keeps all 18 entries precached with 97,369 bytes reserve; no other PWA behavior changes.
-- Limitations: Source comparison is not corpus certification. Missing/ambiguous passages, layer rosters, remainder and independent verification stay open. No medical, gender, ritual, calendar, scoring or automatic-interpretation authority added.
-- Next: Finish full verification, exact package-export evidence and diff inspection, then close feat-049.
-
-## 2026-10-06 — feat-049 completed local acceptance and verification
-
-- Status: done; independent branch acceptance review remains the handoff gate, not corpus certification.
-- Result: Final classical authoring slots complete: 64 quẻ and 384 positions have selected source-compared coverage. BPCT 49–56 preserves all numbered verse/commentary layers and notes 10–11; actual absent commentary and source limitations remain explicit.
-- Commit: Implementation `0bd626a7406f7e26b01e820f54ac8afef21574ee`.
-- Evidence: Final `./init.sh` passed all checks and 493 tests (181 core + 312 knowledge). `validate:corpus --check-books --check`, format freshness, package-export comparison of five records/191 claims, SW precache inclusion, 153 documentation routes and final diff checks passed. All 197 prior released records and 2,392 prior citations remain semantically unchanged. Worktree had no unrelated changes.
-- Offline: `index-DtlSMMtK.js` is 3,113,895 bytes; cap 3,211,264; 97,369-byte reserve. All 18 assets stay precached and other PWA settings stay unchanged.
-- Limitations: Contact-sheet review is not full-size review of every classical page. Missing/ambiguous text, unlocated NHL reference, uncredited PBC note and author alternatives are retained without repair. Audit/verification/certification gates stay closed; no full corpus or efficacy approval claimed.
-- Next: Independent acceptance review of feat-049; then user selection of feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100).
-
-## 2026-10-08 — feat-068 simplified knowledge design
-
-- Status: active; written design complete, implementation pending design review.
-- Result: Started feat/068-knowledge-simplification from main. Replaced audit-first contracts with coherent JSON entries, direct book/page references, stable links, and small generated assets. Aligned future feature routes and marked old contracts historical.
-- Recovery: Preserved feat/068-audit-hexagrams-01-04 at c80c38d; existing writing remains recoverable.
-- Evidence: Baseline and post-documentation ./init.sh passed (181 core + 6,197 knowledge tests). Corpus/source freshness and 437 local documentation links passed.
-- Limitations: Runtime, authored data, and the large generated release still use the old implementation. No simplified payload or rebuilt quẻ is claimed.
-- Next: Review docs/design-docs/knowledge-model.md, implement the storage/runtime migration, then rebuild Càn, Khôn, Truân, and Mông.
-
-## 2026-10-09 — feat-068 completed: simplified linked knowledge
-
-- Design approved. Migrated 381 canonical records to coherent entries, direct book/page references, and stable record/line/section links.
-- Removed claim/citation registries, review/hash ledgers, audit gates, source-unit inventories, and the committed monolithic release. Git retains prior history.
-- Rebuilt Càn, Khôn, Truân, Mông and 24 positions with distinct author views. Added source-checked Chu Hy Khôn views; retained the unlocated NTT Mông referral.
-- Detailed assets load by ID; compact metadata supports lookup/search. Node access, tables, worked examples, and current calculation behavior remain usable.
-- JavaScript: 832.67 KB raw / 232.14 KB gzip. Full offline precache: 5,346.54 KiB raw; 381 record assets included.
-- Verification: ./init.sh passed (181 core + 85 knowledge tests). Knowledge suite: 1.86 seconds versus 151.75 seconds at the main baseline. Corpus freshness and four supplied-PDF checks passed.
-- Direct browser checks covered offline routes/search/reload with the server stopped, interrupted-load recovery, articles, source references, and mobile hào anchors.
-- Documentation now describes the implemented model; the source guide was reduced to the supplied inventory, core discrepancies, and canonical-record routes.
-- Status: done; no blockers and no dependent feature activated. Source gaps remain record-level notes.
-- Handoff: [feat-068](features/feat-068.md). Changes remain uncommitted on feat/068-knowledge-simplification. Old branch remains unchanged at c80c38d.
-
-## 2026-10-09 — feat-068 pull request delivery
-
-- User requested a pull request into main from feat/068-knowledge-simplification.
-- Prepared the completed implementation and documentation for commit and branch publication.
-- Status remains done; merge is the next delivery action. No dependent feature has been activated.
-
-## 2026-10-09 — feat-068 PR #96 review repairs
-
-- Reproduced malformed-asset acceptance, duplicate rendered targets, and omitted table/figure sources with focused regression cases; corrected all three.
-- Loader uses the authored schema through a generated standalone validator. It loads with the selected asset, preserves failed-load retry, and adds a separate 14.11 KB gzip chunk.
-- Shared table IDs resolve consistently in validation and rendering. Metadata and compatibility references include every figure reference layer and tables.
-- Direct browser checks confirmed collapsed-entry deep links, custom table targets, malformed Mông recovery, mobile layout, and first-use offline validator loading after stopping the server.
-- Evidence: final ./init.sh passed (181 core + 97 knowledge tests; knowledge 2.14 seconds). Corpus/source freshness, Node access, 619 local links, and diff checks passed.
-- Initial JavaScript: 832.86 KB raw / 232.47 KB gzip. Full precache: 400 build entries, 5,473.54 KiB raw. Authored corpus content remains unchanged.
-- Status: done. Repairs are prepared on the existing PR branch; merge remains pending. No dependent feature was activated.
-
-## 2026-10-09 — feat-069 reviewed and improved quẻ 05–08
-
-- Status: done; reviewed and verified against supplied books.
-- Result: Reviewed and improved all four assigned quẻ (05 Thủy Thiên Nhu, 06 Thiên Thủy Tụng, 07 Địa Thủy Sư, 08 Thủy Địa Tỷ) and all twenty-four hào positions under the simplified knowledge model.
-- Content updates:
-  - Cleaned legacy `section` and `printedPages` fields across all four hexagrams; preserved required entry IDs in quẻ 06 for lesson link resolution.
-  - Enriched structural and thematic overviews across NHL, PBC, and NTT with distinct viewpoints (General, Nguyễn Hiến Lê, Phan Bội Châu, Trình Di, Chu Hy).
-  - Added and checked Chu Hy classical commentaries across overview entries and individual hào positions (quẻ 05 line 1, lines 2–6; quẻ 06 lines 1–6; quẻ 07 lines 1–6; quẻ 08 lines 1–6).
-  - Polished Vietnamese prose for natural readability, philosophical precision, and adherence to traditional I Ching doctrine.
-- Evidence: `./init.sh` passed 100% (181 core tests + 97 knowledge tests; knowledge suite ran in 2.15s). Full corpus validation with `--check-books` verified 381 records and all 4 supplied PDF fingerprints.
-- Coverage: All 4 assigned quẻ and 24 hào positions have complete, verified coverage.
-- Blockers: none for feat-069.
-- Next: User selection and activation of feat-070 (Review and improve quẻ 09–12 and all twenty-four hào).
+## 2026-09-26 — feat-005
+
+**State**: active; feat-002 dependency is done.
+**Done**: Selected F04 Casting core from the user-approved feat-001–012 batch and confirmed its canonical task map and product scope.
+**Evidence**: `feature_index.json` records feat-002 done and feat-005 active; F04 tasks and acceptance are defined in `docs/product-specs/v1-task-map.md` and `features/feat-005.md`.
+**Blockers**: none.
+**Next**: Commit the implementation plan and request fresh plan review.
+
+## 2026-09-26 — feat-005
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F04-T01–T07: deterministic three-coin outcomes, injected casting service, normalized direct/sequential inputs, and a web-only browser crypto adapter; updated observed architecture and product summaries.
+**Evidence**: Parent-run `./init.sh` passed with 152 core tests in 13 files, 2 knowledge tests, format, lint, TypeScript length check, typecheck, build, and package tests. One pre-existing non-failing web `react-refresh` warning remains at `apps/web/src/components/ui/button.tsx:49`. Plan and focused evidence are in `docs/plans/feat-005.md`.
+**Blockers**: Fresh PR review and merge remain outstanding; no PR approval is claimed.
+**Next**: Submit the verified changes for fresh PR review and address any findings.
+
+## 2026-09-26 — feat-005 PR review follow-up
+
+**State**: done locally; PR #15 fresh review and merge pending.
+**Done**: Corrected plan evidence chronology and rejected sparse three-coin arrays that could bypass iteration validation; added a regression.
+**Evidence**: `./init.sh` passed with 153 core tests in 13 files and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. One pre-existing non-failing web `react-refresh` warning remains.
+**Blockers**: Updated PR head requires fresh review approval.
+**Next**: Request fresh review of PR #15 on the corrected head and address any findings.
+
+## 2026-09-26 — feat-005 merged; feat-006 activated
+
+**State**: feat-005 done; feat-006 active.
+**Done**: Squash-merged PR #15 as `bcc89d0` after fresh plan and PR review approval of exact head `5e7815ae35cec1a94b4454f2cc5afac3cdc218c2`; activated feat-006 Knowledge from the user-approved batch.
+**Evidence**: The worker passed `./init.sh` with 153 core tests and 2 knowledge tests, format, lint, TypeScript length check, typecheck, and build. GitHub `verify` and GitGuardian passed; one pre-existing non-failing web `react-refresh` warning remains.
+**Blockers**: none.
+**Next**: Read the canonical F05 requirements and licensing boundaries, then commit the feat-006 implementation plan and request review.
+
+## 2026-09-26 — feat-006
+
+**State**: done locally; PR review and merge pending.
+**Done**: Completed F05-T01–T12: typed schemas, stable IDs, 8/64 entity metadata, V1 terms and rules, source metadata, validated references, readonly lookups, and offline normalized search. Source locations remain absent where unverified.
+**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 31 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web `react-refresh` warning remains. The first web build failed on a missing optional native Tailwind binding; a forced frozen-lockfile reinstall restored it before the successful full run. Details: `docs/plans/feat-006.md`.
+**Blockers**: Fresh plan and PR review approval and merge remain; no unverified source locator was invented.
+**Next**: Submit the current head for fresh plan and PR review, address findings, then hand off for merge.
+
+## 2026-09-26 — feat-006 plan review follow-up
+
+**State**: done locally; fresh plan and PR review pending.
+**Done**: Resolved plan review findings with broken-term-reference validation, independent 64-hexagram identity fixtures, and exhaustive displayed-fact-to-rule coverage; removed duplicate task ownership of F05-T10.
+**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, 34 knowledge tests in 6 files, and 153 core tests in 13 files. One pre-existing non-failing web Fast Refresh lint warning remains; details are in `docs/plans/feat-006.md`.
+**Blockers**: Current-head plan and PR approval and merge remain pending.
+**Next**: Request fresh plan review on the corrected head, then resolve any findings before requesting PR review.
+
+## 2026-09-26 — feat-006 merged
+
+**State**: done; PR #16 squash-merged as `691f80d724f332f49a2c295e4e484a3d6cbdcbe5`.
+**Done**: Completed F05-T01–T12 and addressed plan-review findings for broken-term validation, independent 64-hexagram fixtures, exhaustive fact-to-rule coverage, and accurate handoff status.
+**Evidence**: Fresh plan and PR reviews approved exact head `e6382698f88fdfdaa573b49a4c051cd6fa6409aa`; GitHub `verify` and GitGuardian passed. `./init.sh` passed with 34 knowledge tests and 153 core tests; one pre-existing non-failing web Fast Refresh warning remains. Evidence and sourcing limits are in `docs/plans/feat-006.md`.
+**Blockers**: none.
+**Next**: Stop after feat-006 as instructed; leave later features todo until selected again.
+
+## 2026-09-26 — feat-017 pre-flow hardening
+
+**State**: done locally; PR creation and fresh review pending.
+**Done**: Hardened core ID inventories and casting snapshots, completed the knowledge entity/rule/source model, added production fact-to-rule lookup and core drift tests, switched package defaults to built Node ESM, and expanded local CJK font coverage. Added feat-017 as a dependency of feat-007 and feat-008; both remain todo.
+**Evidence**: Final `./init.sh` passed with 155 core tests in 13 files and 41 knowledge tests in 7 files. Build, typecheck, Node package-export smoke check, test placement, formatting, and TypeScript length checks passed. The only lint output was one pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`. FontTools 4.66.0/Brotli 1.2.0 verified 92/92 manifest codepoints in each CJK font. Mutation regressions reproduced the bad hexagram mapping and mutable casting snapshot before the fixes.
+**Blockers**: PR creation and fresh review are pending; this branch has not been merged.
+**Next**: Push `feat/017-preflow-hardening` and open a PR targeting `main`.
+
+## 2026-09-26 — feat-017 PR handoff
+
+**State**: PR #17 is open against `main`; fresh review is pending.
+**Done**: Pushed `feat/017-preflow-hardening` and opened [PR #17](https://github.com/tungxuan1656/liuyao/pull/17). The PR contains the verified hardening work and is not merged.
+**Evidence**: GitHub reports the PR head and base as `feat/017-preflow-hardening` → `main`. Final `./init.sh`, explicit format/lint checks, pre-push typecheck/tests, Node package-export smoke check, and the CJK cmap verification passed.
+**Blockers**: Fresh PR review and approval are pending; no merge is claimed.
+**Next**: Address review feedback on PR #17 and wait for approval.
+
+## 2026-09-26 — feat-017 PR #17 review follow-up
+
+**State**: done locally; PR #17 is updated on `feat/017-preflow-hardening`, open against `main`, and awaiting fresh review.
+**Done**: Fixed clean-checkout TypeScript resolution while keeping runtime exports on built ESM; added declaration export smoke coverage; restored app UI glyph 六 to generated CJK coverage and renamed the subsets; added an automated WOFF2 cmap check to CI; corrected Zengshan Buyi attribution with Chinese Text Project provenance.
+**Evidence**: With both package `dist/` directories removed, `pnpm typecheck` passed and `./init.sh` passed typecheck before build, package runtime/declaration checks, test placement, all 155 core tests and 41 knowledge tests. FontTools 4.66.0 and Brotli 1.2.0 confirmed exact 96-codepoint cmap coverage in both bundled CJK app fonts. Lint reported the pre-existing Fast Refresh warning at `apps/web/src/components/ui/button.tsx:49`.
+**Blockers**: Fresh review and approval are pending; PR #17 has not been merged.
+**Next**: Wait for fresh review of the updated PR head and address any new findings.
+
+## 2026-09-26 — feat-007 activated
+
+**State**: active; implementation plan pending commit and review.
+**Done**: Selected feat-007 Reading flow and confirmed its dependencies are done; scoped work to F06-T01–15 and the V1 reading completion condition.
+**Evidence**: `feature_index.json` and `features/feat-007.md` record feat-001, feat-004, feat-005, and feat-017 done; canonical acceptance is in `docs/product-specs/v1-task-map.md` and `docs/product-specs/reading-flow.md`.
+**Blockers**: none.
+**Next**: Commit `docs/plans/feat-007.md` and request plan review before implementing.
+
+## 2026-09-26 — feat-007 implementation verified
+
+**State**: active; implementation verified locally; PR pending plan review.
+**Done**: Implemented F06-T01–11 and T13–15: app/home shell, session-only draft, automatic/manual/direct casting, core calculation, recovery and confirmation dialogs, focused casting route, and active result retention across root tabs. F06-T12 remains blocked until Product Owner identity approval; retained current provisional Lục Hào/English copy without claiming approval.
+**Evidence**: `./init.sh` passed format, lint/length, typecheck, build, package exports, test placement, 155 core tests, and 41 knowledge tests; only the pre-existing `apps/web/src/components/ui/button.tsx:49` Fast Refresh warning remains. Direct browser evidence for 390×844 and 1024×576 layouts, all entry methods, reset/cancel/replacement safety, root-tab retention, and refresh recovery is in `docs/plans/feat-007.md`.
+**Blockers**: Plan review result pending; F06-T12 needs Product Owner approval through feat-013, which remains todo.
+**Next**: Obtain plan-review result, then commit/push the implementation and open a PR without marking feat-007 done until F06-T12 is approved.
+
+## 2026-09-25 — feat-001
+
+**State**: done, pending PR review and merge.
+**Done**: F00-T01–T05 web foundation: styling, shadcn tokens, routes, self-hosted fonts, and responsive AppShell primitives.
+**Evidence**: `./init.sh` and read-only verification passed; route, responsive, and local-font browser checks are recorded in `features/feat-001.md`.
+**Blockers**: none for F00; finished Reading/Library/Settings/Casting flows belong to later features.
+**Next**: Open the PR and resolve review feedback.
