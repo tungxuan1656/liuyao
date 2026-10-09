@@ -1,4 +1,4 @@
-import { entriesOf } from './content-validation.mjs';
+import { referencesOf } from '../src/content-structure.ts';
 const TRIGRAM_ORDER = [
   'trigram-heaven',
   'trigram-lake',
@@ -27,11 +27,7 @@ export function projectCorpus(records, sources, bibliography) {
     summary: summary(record),
     topicIds: record.topicIds ?? [],
     sourceIds: [
-      ...new Set(
-        entriesOf(record).flatMap(entry =>
-          entry.references.flatMap(ref => ('sourceId' in ref ? [ref.sourceId] : [])),
-        ),
-      ),
+      ...new Set(referencesOf(record).flatMap(ref => ('sourceId' in ref ? [ref.sourceId] : []))),
     ],
     asset: 'knowledge/' + record.id + '.json',
   }));
@@ -94,7 +90,7 @@ export function projectCorpus(records, sources, bibliography) {
         ruleset: record.ruleset,
       });
     if (record.type === 'article') continue;
-    const refs = entriesOf(record).flatMap(entry => entry.references);
+    const refs = referencesOf(record);
     for (const sourceId of new Set(refs.map(ref => ref.sourceId ?? 'source-liuyao-v1-contract'))) {
       const ref = refs.find(ref => (ref.sourceId ?? 'source-liuyao-v1-contract') === sourceId);
       catalog.references.push({

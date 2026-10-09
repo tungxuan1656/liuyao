@@ -61,6 +61,14 @@
 - [x] Run ./init.sh and the replacement read-only corpus check. Record measurements and content findings.
 - [x] Complete the feature only when migration, content acceptance, and verification pass.
 
+## PR review follow-up
+
+- [x] Reuse the record schema for runtime validation before caching; preserve retry and measure payload cost.
+- [x] Enforce unique rendered anchors and one table-target ID rule across validation and UI.
+- [x] Collect all source references for metadata and compatibility references.
+- [x] Verify deep links into collapsed entries, custom table targets, and invalid-asset recovery in the browser.
+- [x] Run ./init.sh, record evidence, and prepare the repair for PR #96.
+
 ## Handoff
 
 State: done. The user approved the design on 2026-10-09; storage migration and four-quẻ editing are complete.

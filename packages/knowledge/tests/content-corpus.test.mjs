@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { describe, it, expect } from 'vitest';
+import validateRuntime from '../.generated/runtime/validate-record.ts';
 import { validateCorpus } from '../scripts/content-validation.mjs';
 const data = new URL('../data/', import.meta.url);
 function read(url) {
@@ -24,6 +25,10 @@ describe('authored corpus integration', () => {
         repositoryRoot: new URL('../../../', import.meta.url).pathname,
       }).ready,
     ).toBe(records.filter(r => r.status === 'ready').length));
+  it('accepts every published asset with the runtime schema validator', () => {
+    for (const record of records.filter(r => r.status === 'ready'))
+      expect(validateRuntime(record), record.id).toBe(true);
+  });
   it.each(['hexagram-01', 'hexagram-02', 'hexagram-03', 'hexagram-04'])(
     '%s has all six positions and separate supplied author views',
     id => {

@@ -78,9 +78,13 @@ Use position only for a hexagram and require a value from 1 through 6.
 Related links are navigation, not a claim-dependency graph.
 An entry can have a record-scoped id when another record needs to link that section.
 Use sectionId only when it resolves to that entry. Do not combine position and sectionId.
+All rendered anchors must be unique within the record, including entries, lines, tables, and figures.
+A table uses its optional authored id, or table- plus its kind when id is absent.
+Table targets use that same ID; figure targets use the figure id.
 
 A small in-memory map resolves record IDs.
 A metadata index supports title, alias, short-summary, topic, and source filters across files.
+Source filters include entries, notes, lines, special passages, tables, and all figure references.
 Detailed explanations load by record ID. Source comparisons filter the loaded record's entries by sourceId and attribution.
 No global paragraph IDs, dependency closure, citation registry, or persisted search database is required.
 
@@ -100,6 +104,7 @@ Generate only what removes manual duplication for the app:
 - A small metadata index with IDs, titles, aliases, short summaries, topics, sources, and record asset paths.
 - Deployable JSON assets per ready record, with local research metadata removed.
 - A small compatibility catalog when existing calculation screens need compact descriptions.
+- A lazy schema validator for loaded assets, compiled from the authored record schema.
 
 Generated output lives in build output and is reproducible from authored JSON.
 Do not commit a second full-corpus generated JSON or embed it in the main JavaScript bundle.
@@ -109,6 +114,9 @@ A small printed validation summary is sufficient for counts and broken links.
 ## Validation
 
 Check JSON shape, unique IDs, related links, source IDs, page bounds, and required hexagram structure.
+Before caching a loaded asset, validate it against the same schema used during authoring.
+A small generated validator loads with the first detailed record; Ajv stays in build tooling.
+Failed loads remain retryable. Cached content is immutable.
 Check source-derived table invariants and worked examples with focused package tests.
 Use small synthetic fixtures for validator behavior.
 Do not pin tests to the total number of paragraphs, citations, or review decisions.

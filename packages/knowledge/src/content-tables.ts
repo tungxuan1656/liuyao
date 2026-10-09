@@ -3,6 +3,7 @@ import type { ContentReference } from './content-schema.js';
 type BookElement = 'wood' | 'fire' | 'earth' | 'metal' | 'water';
 
 type Table<Kind extends string, Row> = {
+  readonly id?: string;
   readonly kind: Kind;
   readonly references: readonly ContentReference[];
   readonly rows: readonly Row[];

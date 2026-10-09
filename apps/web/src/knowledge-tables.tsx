@@ -1,4 +1,4 @@
-import { getKnowledgeEntity, getTerm } from '@liuyao/knowledge';
+import { getKnowledgeEntity, getTerm, getContentTableId } from '@liuyao/knowledge';
 import type { ContentTable, KnowledgeEntity } from '@liuyao/knowledge';
 import { KnowledgeReferences } from './knowledge-entries';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
@@ -77,7 +77,11 @@ export function KnowledgeTables({ tables }: { tables: readonly ContentTable[] })
       {tables.map(table => {
         const keys = Object.keys(table.rows[0] ?? {});
         return (
-          <Card key={table.kind} id={'table-' + table.kind} className="scroll-mt-24">
+          <Card
+            key={getContentTableId(table)}
+            id={getContentTableId(table)}
+            className="scroll-mt-24"
+          >
             <CardHeader>
               <CardTitle role="heading" aria-level={2}>
                 {titles[table.kind]}

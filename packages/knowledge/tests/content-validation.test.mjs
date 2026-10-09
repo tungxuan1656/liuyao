@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { validateCorpus } from '../scripts/content-validation.mjs';
+import { getContentTableId } from '../src/content-structure.ts';
 import { projectCorpus } from '../scripts/release-projection.mjs';
 const sources = [
   {
@@ -128,6 +129,85 @@ describe('simple content validation', () => {
   ])('rejects %s', (_name, change) =>
     expect(() => validateCorpus(change(article()), sources)).toThrow(),
   );
+  it('rejects table and entry IDs that share an HTML target', () => {
+    const r = article();
+    r.entries[0].id = 'table-branch-elements';
+    r.tables = [
+      {
+        kind: 'branch-elements',
+        references: [reference()],
+        rows: [{ branchId: 'term-ty', element: 'water' }],
+      },
+    ];
+    expect(() => validateCorpus([r], sources)).toThrow(/duplicate.*ID/);
+  });
+  it('resolves authored table IDs consistently and rejects the unused fallback', () => {
+    const r = article();
+    const table = {
+      id: 'custom-table',
+      kind: 'branch-elements',
+      references: [reference()],
+      rows: [{ branchId: 'term-ty', element: 'water' }],
+    };
+    r.tables = [table];
+    r.entries[0].target = { kind: 'table', recordId: r.id, id: getContentTableId(table) };
+    expect(getContentTableId(table)).toBe('custom-table');
+    expect(getContentTableId({ ...table, id: undefined })).toBe('table-branch-elements');
+    expect(() => validateCorpus([r], sources)).not.toThrow();
+    r.entries[0].target.id = 'table-branch-elements';
+    expect(() => validateCorpus([r], sources)).toThrow(/unknown lesson target/);
+    r.entries[0].target.id = 'custom-table';
+    r.tables.push({ ...table });
+    expect(() => validateCorpus([r], sources)).toThrow(/duplicate.*ID/);
+  });
+  it('rejects entry and figure IDs that share an HTML target', () => {
+    const r = article();
+    r.figures = [
+      {
+        id: 'intro',
+        kind: 'diagram',
+        title: 'Diagram',
+        references: [reference()],
+        orientation: { description: 'North up', references: [reference()] },
+        labels: [{ id: 'north', text: 'North', references: [reference()] }],
+      },
+    ];
+    expect(() => validateCorpus([r], sources)).toThrow(/duplicate.*ID/);
+  });
+  it('collects sources used only by tables and nested figure content', () => {
+    const r = article();
+    const extra = ['table', 'figure', 'orientation', 'label', 'alternative'].map(name => ({
+      ...sources[0],
+      id: 'source-' + name,
+    }));
+    const ref = name => ({ sourceId: 'source-' + name, pdfPages: [1, 2] });
+    r.tables = [
+      {
+        kind: 'branch-elements',
+        references: [ref('table')],
+        rows: [{ branchId: 'term-ty', element: 'water' }],
+      },
+    ];
+    r.figures = [
+      {
+        id: 'diagram',
+        kind: 'diagram',
+        title: 'Diagram',
+        references: [ref('figure')],
+        orientation: { description: 'North up', references: [ref('orientation')] },
+        labels: [{ id: 'north', text: 'North', references: [ref('label')] }],
+        authorAlternatives: [
+          { author: 'Author', description: 'Alternative', references: [ref('alternative')] },
+        ],
+      },
+    ];
+    validateCorpus([r], [...sources, ...extra]);
+    const result = projectCorpus([r], [...sources, ...extra], bibliography);
+    expect(result.metadata[0].sourceIds).toEqual([
+      'source-book-test',
+      ...extra.map(source => source.id),
+    ]);
+  });
   it('allows a record-scoped section link', () => {
     const r = article();
     r.links = [{ recordId: r.id, sectionId: 'intro' }];
@@ -163,7 +243,7 @@ describe('simple content validation', () => {
         position: index + 1,
         polarity,
         label: 'Hào',
-        entries: article().entries.map(({ id, ...entry }) => entry),
+        entries: article().entries.map(({ id: _id, ...entry }) => entry),
       })),
     };
     expect(() => validateCorpus([lower, upper, r], sources)).not.toThrow();
@@ -176,6 +256,9 @@ describe('simple content validation', () => {
     const short = structuredClone(r);
     short.lines.pop();
     expect(() => validateCorpus([lower, upper, short], sources)).toThrow();
+    const duplicate = structuredClone(r);
+    duplicate.entries[0].id = 'line-1';
+    expect(() => validateCorpus([lower, upper, duplicate], sources)).toThrow(/duplicate.*ID/);
     r.links = [{ recordId: r.id, position: 1, sectionId: 'intro' }];
     expect(() => validateCorpus([lower, upper, r], sources)).toThrow(/ambiguous/);
   });

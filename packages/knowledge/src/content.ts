@@ -55,15 +55,20 @@ export function createContentLoader(readAsset: ContentAssetReader) {
     const pending = cache.get(id);
     if (pending) return pending;
     const request = Promise.resolve()
-      .then(() => readAsset(item))
-      .then(value => {
+      .then(() =>
+        Promise.all([readAsset(item), import('../.generated/runtime/validate-record.js')]),
+      )
+      .then(([value, { default: validate }]) => {
         const record = value as ContentRecord;
         if (
+          !validate(value) ||
           !record ||
           record.id !== item.id ||
           record.type !== item.type ||
           record.status !== 'ready' ||
-          !Array.isArray(record.entries)
+          !record.entries.length ||
+          (record.type === 'hexagram' &&
+            record.lines.some((line, index) => line.position !== index + 1 || !line.entries.length))
         )
           throw new Error('Invalid knowledge asset: ' + id);
         return deepFreeze(record);

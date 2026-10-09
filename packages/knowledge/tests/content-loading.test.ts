@@ -35,6 +35,28 @@ describe('selected content loading', () => {
     expect(await load('missing')).toBeUndefined();
     expect(reader).toHaveBeenCalledOnce();
   });
+  it.each([
+    ['missing lines', ['lines'], undefined],
+    ['missing references', ['entries', '0', 'references'], undefined],
+    ['invalid references', ['entries', '0', 'references'], [{ sourceId: 'book' }]],
+    ['invalid line entries', ['lines', '0', 'entries'], null],
+    ['invalid figure', ['figures'], [{ id: 'diagram' }]],
+    ['invalid table', ['tables'], [{ kind: 'na-jia', rows: null }]],
+    ['unordered lines', ['lines', '0', 'position'], 6],
+  ] as const)('rejects %s before caching and permits recovery', async (_name, path, value) => {
+    const record = await loadContent('hexagram-01');
+    const malformed = structuredClone(record);
+    let target = malformed as unknown as Record<string, unknown>;
+    for (const part of path.slice(0, -1)) target = target[part] as Record<string, unknown>;
+    const field = path[path.length - 1]!;
+    if (value === undefined) delete target[field];
+    else target[field] = value;
+    const reader = vi.fn().mockResolvedValueOnce(malformed).mockResolvedValueOnce(record);
+    const load = createContentLoader(reader);
+    await expect(load('hexagram-01')).rejects.toThrow('Invalid knowledge asset');
+    expect(await load('hexagram-01')).toBe(record);
+    expect(reader).toHaveBeenCalledTimes(2);
+  });
   it('retries failed loads and rejects a wrong record response', async () => {
     const record = await loadContent('hexagram-01');
     let calls = 0;

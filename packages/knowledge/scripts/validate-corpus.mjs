@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
-import { validateCorpus } from './content-validation.mjs';
+import { validateCorpus, runtimeValidatorSource } from './content-validation.mjs';
 import { projectCorpus } from './release-projection.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const repositoryRoot = path.resolve(root, '../..');
@@ -51,6 +51,7 @@ const { metadata, catalog, ready } = projectCorpus(
   json(path.join(data, 'bibliography.json')),
 );
 const outputs = new Map([
+  [path.join(root, '.generated/runtime/validate-record.ts'), runtimeValidatorSource()],
   [path.join(root, '.generated/runtime/index.json'), JSON.stringify(metadata) + '\n'],
   [path.join(root, '.generated/runtime/catalog.json'), JSON.stringify(catalog) + '\n'],
   ...ready.map(record => [

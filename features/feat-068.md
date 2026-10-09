@@ -51,21 +51,32 @@ New prediction, calendar behavior, certification, PDF distribution, or a databas
 
 | Measurement           | Result                                                                              |
 | --------------------- | ----------------------------------------------------------------------------------- |
-| Initial JavaScript    | 832.67 KB raw; 232.14 KB gzip (main baseline about 12.7 MB / 1.12 MB)               |
+| Initial JavaScript    | 832.86 KB raw; 232.47 KB gzip (main baseline about 12.7 MB / 1.12 MB)               |
 | Metadata index        | 164,902 bytes raw; 33,743 bytes gzip                                                |
 | Ready record assets   | 381 assets; 4,002,186 bytes raw; 836,696 summed gzip bytes                          |
 | Largest record        | 127,302 bytes raw; 18,006 bytes gzip                                                |
-| Full Workbox precache | 399 build entries; 5,346.54 KiB raw                                                 |
+| Full Workbox precache | 400 build entries; 5,473.54 KiB raw                                                 |
 | Quẻ 01–04 assets      | 34,302 / 26,245 / 13,195 / 13,368 bytes raw                                         |
 | JSON parse sample     | Metadata 0.270 ms; compatibility data 0.191 ms; Càn 0.059 ms median on this machine |
 
 Compression figures describe build/local measurements, not a promise about hosting transfer settings.
 Parsing samples are diagnostics, not timing assertions or device budgets.
 
+## PR #96 review follow-up
+
+- Runtime assets use the same JSON schema as authored records before caching. The generated standalone validator loads alongside the first record request and adds a separate 129.85 KB raw / 14.11 KB gzip chunk.
+- Rendered entry, line, table, and figure anchors share one uniqueness check. Tables use their authored ID or the kind-based fallback consistently in validation and UI.
+- Metadata and compatibility references include tables, figures, orientation, labels, and author alternatives. The existing corpus had no omitted metadata sources or anchor collisions; synthetic regression cases cover both.
+- Regression tests first reproduced malformed-asset acceptance, anchor collisions, and omitted sources. The corrected suite passes 97 knowledge tests, including every published record against the runtime schema.
+- Direct browser checks confirm a real collapsed entry deep link opens its parent and clears the header at 390 pixels. No change to the existing details/hash effect was needed.
+- An injected missing-lines response shows the error/retry state; retry loads all six Mông positions. A synthetic custom table target renders and scrolls to its authored ID.
+- A fresh browser session precached all 381 records and the validator. With the preview server stopped, opening Càn for the first time loaded the validator from cache and rendered six positions.
+- Payload measurements above reflect this repair; corpus assets remain unchanged. Final ./init.sh passed all gates with 181 core and 97 knowledge tests; the knowledge suite took 2.14 seconds. Corpus/source freshness checks passed.
+
 ## Handoff
 
 - State: done. Contracts, corpus/runtime migration, and quẻ 01–04 content acceptance pass.
 - Blockers: none. Known source gaps remain explicit in their records.
 - Recovery: feat/068-audit-hexagrams-01-04 remains unchanged at c80c38d560a1bd904465db6a73cc7079b09e3c38.
-- Delivery: feat/068-knowledge-simplification was based on main 0b06640. Delivery is prepared for a pull request into main; merge remains pending.
+- Delivery: feat/068-knowledge-simplification was based on main 0b06640. [PR #96](https://github.com/tungxuan1656/liuyao/pull/96) is open into main; review repairs are prepared on the same branch. Merge remains pending.
 - Next: review and merge the pull request. No dependent feature has been activated.

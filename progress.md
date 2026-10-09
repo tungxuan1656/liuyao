@@ -1317,3 +1317,13 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - User requested a pull request into main from feat/068-knowledge-simplification.
 - Prepared the completed implementation and documentation for commit and branch publication.
 - Status remains done; merge is the next delivery action. No dependent feature has been activated.
+
+## 2026-10-09 — feat-068 PR #96 review repairs
+
+- Reproduced malformed-asset acceptance, duplicate rendered targets, and omitted table/figure sources with focused regression cases; corrected all three.
+- Loader uses the authored schema through a generated standalone validator. It loads with the selected asset, preserves failed-load retry, and adds a separate 14.11 KB gzip chunk.
+- Shared table IDs resolve consistently in validation and rendering. Metadata and compatibility references include every figure reference layer and tables.
+- Direct browser checks confirmed collapsed-entry deep links, custom table targets, malformed Mông recovery, mobile layout, and first-use offline validator loading after stopping the server.
+- Evidence: final ./init.sh passed (181 core + 97 knowledge tests; knowledge 2.14 seconds). Corpus/source freshness, Node access, 619 local links, and diff checks passed.
+- Initial JavaScript: 832.86 KB raw / 232.47 KB gzip. Full precache: 400 build entries, 5,473.54 KiB raw. Authored corpus content remains unchanged.
+- Status: done. Repairs are prepared on the existing PR branch; merge remains pending. No dependent feature was activated.

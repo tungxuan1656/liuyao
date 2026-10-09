@@ -1,4 +1,7 @@
 import Ajv from 'ajv';
+import standaloneCode from 'ajv/dist/standalone/index.js';
+import { entriesOf, anchorIdsOf, getContentTableId } from '../src/content-structure.ts';
+export { entriesOf } from '../src/content-structure.ts';
 import { readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -6,13 +9,16 @@ const schema = JSON.parse(
   readFileSync(new URL('../schema/record.schema.json', import.meta.url), 'utf8'),
 );
 const validate = new Ajv({ allErrors: true, strict: false }).compile(schema);
-export function entriesOf(record) {
-  return [
-    ...record.entries,
-    ...(record.notes ?? []),
-    ...(record.type === 'hexagram' ? record.lines.flatMap(line => line.entries) : []),
-    ...(record.specialPassages ?? []).flatMap(passage => passage.entries),
-  ];
+/** Compile the same schema for lazy browser/Node validation, without bundling Ajv. */
+export function runtimeValidatorSource() {
+  const ajv = new Ajv({ strict: false, inlineRefs: false, code: { esm: true, source: true } });
+  const code = standaloneCode(ajv, ajv.compile(schema));
+  return (
+    '// @ts-nocheck\n// Generated from record.schema.json; do not edit.\n' +
+    'import unicodeLength from "ajv/dist/runtime/ucs2length.js";\n' +
+    'const ucs2length = typeof unicodeLength === "function" ? unicodeLength : unicodeLength.default;\n' +
+    code.replace('require("ajv/dist/runtime/ucs2length").default', 'ucs2length')
+  );
 }
 function walk(value, visit) {
   if (Array.isArray(value)) {
@@ -43,8 +49,8 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
     if (!validate(record)) fail(record.id + ': ' + JSON.stringify(validate.errors.slice(0, 4)));
     if (byId.has(record.id)) fail('Duplicate record ' + record.id);
     byId.set(record.id, record);
-    const ids = entriesOf(record).flatMap(entry => (entry.id ? [entry.id] : []));
-    if (new Set(ids).size !== ids.length) fail(record.id + ': duplicate section ID');
+    const ids = anchorIdsOf(record);
+    if (new Set(ids).size !== ids.length) fail(record.id + ': duplicate content anchor ID');
     if (record.type === 'hexagram') {
       if (record.lines.some((line, index) => line.position !== index + 1))
         fail(record.id + ': line order must be 1–6');
@@ -137,7 +143,9 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
         const items = object.target.kind === 'figure' ? target.figures : target.tables;
         if (
           !items?.some(
-            item => item.id === object.target.id || 'table-' + item.kind === object.target.id,
+            item =>
+              (object.target.kind === 'table' ? getContentTableId(item) : item.id) ===
+              object.target.id,
           )
         )
           fail(record.id + ': unknown lesson target');
