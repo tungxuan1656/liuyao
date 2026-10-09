@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-10 — feat-074/075 merged-feature closeout and retired audit report
+
+- **State**: feat-074 and feat-075 `done` after the earlier operator merges; no feature remains `active` in `feature_index.json`. Feat-084 remains `todo`.
+- **Done**: reconciled feat-074's stale PR #104 merge handoff and feat-075's unchecked acceptance / unexecuted handoff against the merged evidence from [PR #104](https://github.com/tungxuan1656/liuyao/pull/104) and [PR #111](https://github.com/tungxuan1656/liuyao/pull/111). Removed the retired `audit-status.json` snapshot from the active tree and documented its historical Git retrieval; other legacy reports remain historical, not publication gates.
+- **Evidence**: PR #104 merged as `9ae0b1aee853c6ba8a361a6e4d3ee3fc0ff4f1e7`; PR #111 merged as `d427907ab75d62369ee112017e8a2ee2e4df5fe9`. This closeout checked current quẻ 29–32 structure (four ready records, 24 ordered hào, 96 author-attributed hào entries) and inspected 14 printed PDF pages relevant to source-error image notes. Original PRs report successful `./init.sh` and local four-book validation; these historical commands have **not** been rerun on this docs branch. Final PR CI remains required.
+- **Blockers**: none to the feature tracking closeout; separate [issue #118](https://github.com/tungxuan1656/liuyao/issues/118) covers feat-083's uncompleted independent round-2 sign-off.
+- **Next**: review this closeout PR, check CI on its exact head, and merge when approved; activate feat-084 only after explicit operator selection.
+
 ## 2026-10-09 — feat-083 reviewed and improved quẻ 61–64
 
 - Status: `done` on PR [#107](https://github.com/tungxuan1656/liuyao/pull/107), held open for operator merge after a supplementary review and source-image spot checks. Original independent round 2 did not run and is not falsely reported as an independent sign-off.
