@@ -16,6 +16,17 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-09 — feat-070 reviewed and improved quẻ 09–12
+
+- Status: done; merged to `main` in `9162858` (PR #98), squash-merged at the exact reviewed head `69375fd9b1f7d76046fd66a497e9874e3dd45ba3`.
+- Result: reviewed and improved all four assigned quẻ (09 Phong Thiên Tiểu Súc, 10 Thiên Trạch Lý, 11 Địa Thiên Thái, 12 Thiên Địa Bĩ) and all twenty-four hào under the simplified knowledge model.
+- Content: five overview entries per quẻ and four attributed explanations on every hào — Nguyễn Hiến Lê, Phan Bội Châu, Trình Di and Chu Hy (the last two via “Ngô Tất Tố — dịch và chú giải”). Author-specific readings are kept distinct rather than harmonised, unresolved readings stay explicit, and seven `notes[]` entries record genuine source discrepancies with page locators.
+- Model: removed the legacy `section` and `printedPages` reference fields from these four records. Of the twelve `condition` values dropped from quẻ 09 and 11, the two that carried substance moved into attributed prose; the rest were authoring boilerplate that `docs/product-specs/knowledge-quality.md` forbids repeating.
+- Evidence: `./init.sh` passed (181 core tests + 97 knowledge tests; format, lint, typecheck, build, package exports). `validate:corpus --check-books --check` reported 381 records, 381 ready, 4 supplied books. Four independent read-only review rounds: round 1 found 6 P1 and 4 P2; rounds 2–3 confirmed each fix and raised four further P2s in total; round 4 returned no findings.
+- Limits: reviewers inspected extracted page text, not page images, and did not execute the test commands; the baseline-vs-final invariant comparison (0 deviations, all 24 position/polarity/label tuples unchanged) is Leader-generated.
+- Blockers: none for feat-070.
+- Next: activate feat-071 (Review and improve quẻ 13–16 and all twenty-four hào) from `main` at `9162858`.
+
 ## 2026-10-09 — feat-068 completed: simplified linked knowledge
 
 - Design approved. Migrated 381 canonical records to coherent entries, direct book/page references, and stable record/line/section links.

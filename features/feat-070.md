@@ -18,34 +18,34 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] 09 · Sơ (1).
-- [ ] 09 · Nhị (2).
-- [ ] 09 · Tam (3).
-- [ ] 09 · Tứ (4).
-- [ ] 09 · Ngũ (5).
-- [ ] 09 · Thượng (6).
-- [ ] 10 · Sơ (1).
-- [ ] 10 · Nhị (2).
-- [ ] 10 · Tam (3).
-- [ ] 10 · Tứ (4).
-- [ ] 10 · Ngũ (5).
-- [ ] 10 · Thượng (6).
-- [ ] 11 · Sơ (1).
-- [ ] 11 · Nhị (2).
-- [ ] 11 · Tam (3).
-- [ ] 11 · Tứ (4).
-- [ ] 11 · Ngũ (5).
-- [ ] 11 · Thượng (6).
-- [ ] 12 · Sơ (1).
-- [ ] 12 · Nhị (2).
-- [ ] 12 · Tam (3).
-- [ ] 12 · Tứ (4).
-- [ ] 12 · Ngũ (5).
-- [ ] 12 · Thượng (6).
-- [ ] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
-- [ ] Inspect full passages/images; review each source error and exclusion.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] 09 · Sơ (1).
+- [x] 09 · Nhị (2).
+- [x] 09 · Tam (3).
+- [x] 09 · Tứ (4).
+- [x] 09 · Ngũ (5).
+- [x] 09 · Thượng (6).
+- [x] 10 · Sơ (1).
+- [x] 10 · Nhị (2).
+- [x] 10 · Tam (3).
+- [x] 10 · Tứ (4).
+- [x] 10 · Ngũ (5).
+- [x] 10 · Thượng (6).
+- [x] 11 · Sơ (1).
+- [x] 11 · Nhị (2).
+- [x] 11 · Tam (3).
+- [x] 11 · Tứ (4).
+- [x] 11 · Ngũ (5).
+- [x] 11 · Thượng (6).
+- [x] 12 · Sơ (1).
+- [x] 12 · Nhị (2).
+- [x] 12 · Tam (3).
+- [x] 12 · Tứ (4).
+- [x] 12 · Ngũ (5).
+- [x] 12 · Thượng (6).
+- [x] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
+- [x] Inspect full passages/images; review each source error and exclusion.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -96,11 +96,11 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active — all twenty-four hào and the four remaining criteria are implemented and reviewed; the remaining steps are the final exact-head review, the PR, exact-head CI, and the merge.
+- State: done — merged to `main` in `9162858` (PR #98, squash-merged at exact reviewed head `69375fd9b1f7d76046fd66a497e9874e3dd45ba3`).
 - Evidence:
   - Content: `packages/knowledge/data/hexagrams/hexagram-09.json` … `hexagram-12.json` at `HEAD`; five overview entries per quẻ and four attributed explanations on each of the 24 hào (Nguyễn Hiến Lê, Phan Bội Châu, Trình Di and Chu Hy via "Ngô Tất Tố — dịch và chú giải"); seven `notes[]` entries, each naming a real source discrepancy with a page locator; no legacy `section`/`printedPages`/`condition` fields remain.
   - Verification: `./init.sh` passes (181 core tests, 97 knowledge tests, format, lint, typecheck, build, package exports); `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passes with 381 records, 381 ready, 4 supplied books.
-  - Independent review: three read-only `reviewer` passes (rounds 1–3). Round 1 found 6 P1 and 4 P2, all fixed in `43a85cf`. Round 2 confirmed all ten fixed and left three P2, all fixed in `43a85cf`. Round 3 confirmed all three focus fixes against the extracted source, raised one further P2 in `hexagram-11.json` `lines[1].entries[0]` (an alternative reading presented as one settled instruction), and closed with "no P0/P1 findings".
+  - Independent review: four read-only `reviewer` passes (rounds 1–4). Round 1 found 6 P1 and 4 P2, all fixed in `43a85cf`. Round 2 confirmed all ten fixed and left three P2, all fixed in `43a85cf`. Round 3 confirmed all three focus fixes against the extracted source, raised one further P2 in `hexagram-11.json` `lines[1].entries[0]` (an alternative reading presented as one settled instruction), and closed with "no P0/P1 findings". Round 4 confirmed that final fix against NHL PDF 170 and returned **no findings**.
   - Estimator limits: the reviewers cannot inspect PDF page images or run test commands, and the baseline/frozen-SHA invariant comparison in `.agent-work/feat-070/invariants.md` is Leader-generated.
 - Dependencies: none outstanding; `feat-067` and the matching `feat-041`/`feat-044`–`feat-049` are `done`.
-- Next: complete the final exact-head review, push `feat/070-review-hexagrams-09-12`, open the single PR, wait for exact-head CI, merge, set `feature_index.json` to `done`, and record the result in `progress.md`.
+- Next: none for this feature. The batch continues with `feat-071` (quẻ 13–16); no in-batch feature depends on feat-070.
