@@ -85,6 +85,15 @@ New interpretation, calendar, or UI behavior.
 - **Evidence**: `.agent-work/feat-070-10-12-parallel.js`; workflow run `60095961`.
 - **Effect**: Quẻ 09–12 all reached five overview entries and four authors on all 24 hào. The single reviewer found 6 P1 and 4 P2 defects, which confirms one review pass over four quẻ still has enough coverage.
 
+### Leader applies the second-round review fixes directly
+
+- **Question**: The second review left three P2 findings (a missing NHL objection in the quẻ 09 overview, a misnamed source example in quẻ 10, and one too-narrow reference in quẻ 11). Dispatch another writer, or apply them as Leader?
+- **Decision**: The Leader applied the three fixes directly in commit `43a85cf`, each verified against the extracted source page before editing, and a fresh reviewer then re-checked the fix diff.
+- **Alternatives**: (a) dispatch a `worker` for the three edits; (b) leave them as accepted notes and merge.
+- **Rationale**: The findings are three single-string/reference corrections with the exact source pages already supplied by the review. The delivery contract's single-writer rule is about avoiding concurrent writers, and only the Leader was writing at that point. Delegating three line edits would have added a writer round trip without adding source discovery.
+- **Evidence**: `43a85cf063dca03801f72fdd257dd6d69b503a36`; NHL PDF 163 prints "Nhưng theo Hậu Thiên bát quái thì tốn là Đông Nam"; NTT PDF 253 prints "Tần Chính" with footnote `[4] Tần Thủy Hoàng` on PDF 258; NHL PDF 175 prints "Quẻ Thái, mới đến hào 3, còn thịnh cực".
+- **Effect**: `./init.sh` and `validate:corpus --check-books --check` both pass at `43a85cf`. The first-round P1/P2 count went to 0; no acceptance criterion is left unmet by the second review aside from these three items.
+
 ## Handoff
 
 - State: todo.
