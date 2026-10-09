@@ -65,6 +65,15 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+### Leader applies the round-2 review fixes directly
+
+- **Question**: The round-2 review left five content findings (four P1, one P2) that all take the same form — another author's explanation imported into Nguyễn Hiến Lê's layer, or a cause assigned to a phrase that the source does not give it. Dispatch another writer, or apply them as Leader?
+- **Decision**: The Leader applied all five directly in the commit `fix(knowledge): keep each author's own reading in quẻ 13–16`, verifying each against the cited extracted page before editing, and a fresh reviewer then re-checked the fix diff.
+- **Alternatives**: (a) dispatch a `worker` for the five edits; (b) accept them as known notes and merge.
+- **Rationale**: Each finding already carried the exact source page and the exact correction, so no source discovery was left. The two prior writer rounds had each introduced new instances of this same defect class while rewriting unflagged prose, so a further rewrite round carried more risk of a new import than of a fix. The delivery contract's single-writer rule is about avoiding concurrent writers, and only the Leader was writing at that point.
+- **Evidence**: NHL PDF 178 attaches the absent responding hào to the unfulfilled aspiration, not to `vô hối`; NHL PDF 184 gives "vì tài kém" as the only limit on Thượng lục's campaign; NHL PDF 187 grounds the hope of reform in `Chấn` meaning movement and never states `cùng tắc biến` or `cố tật`; NHL PDF 180 describes only a heavy cart travelling far, with no cargo-integrity gloss; NHL PDF 183 gives the reputation warning without the inner-to-outer or bird gloss.
+- **Effect**: All five found texts now read as their author wrote them. One further fidelity repair was made in the same commit on a sentence the review did not name: the quẻ 16 Thượng lục entry credited the closing Mạnh Tử quotation to NHL directly, while NHL PDF 187 credits it to Phan Bội Châu.
+
 ## Handoff
 
 - State: todo.
