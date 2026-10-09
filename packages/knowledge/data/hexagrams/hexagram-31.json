@@ -1,403 +1,471 @@
 {
-  "id": "hexagram-31",
-  "type": "hexagram",
-  "title": "Trạch Sơn Hàm",
   "aliases": ["Hàm"],
-  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "relatedIds": ["trigram-mountain", "trigram-lake"],
-  "status": "ready",
   "entries": [
     {
-      "text": "Trạch Sơn Hàm có ngoại quái Đoài và nội quái Cấn. Hào được đếm từ dưới lên.",
       "references": [
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [230, 231],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["230", "231"]
+          "pdfPages": [230, 231]
         },
         {
           "sourceId": "source-book-pbc",
-          "pdfPages": [310, 313],
-          "section": "Tổng quan và cấu trúc"
+          "pdfPages": [310, 313]
         },
         {
           "sourceId": "source-book-ntt",
-          "pdfPages": [508, 511],
-          "section": "Tổng quan và cấu trúc"
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [59, 61],
-          "section": "Thuật ngữ; Hào cửu — Hào lục",
-          "printedPages": ["59", "61"]
-        }
-      ]
-    },
-    {
-      "text": "Nguyễn Hiến Lê giảng Hàm theo sự cảm nhau bằng lòng thành, không dùng tính toán riêng để buộc người đáp lại. Núi dưới hồ gợi lòng trống rộng để tiếp nhận; hình ảnh trai gái mở phần Hạ Kinh thuộc cách tổ chức và quan niệm của sách cổ.",
-      "references": [
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [230, 231],
-          "section": "Tổng quan và cấu trúc",
-          "printedPages": ["230", "231"]
+          "pdfPages": [508, 511]
         }
       ],
+      "text": "Trạch Sơn Hàm có ngoại quái Đoài (trạch) và nội quái Cấn (sơn). Quẻ mở đầu phần Hạ Kinh của Chu Dịch, lấy tượng thiếu nam ở dưới thiếu nữ để biểu thị đạo giao cảm trong nhân sự."
+    },
+    {
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
-      "condition": "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
-    },
-    {
-      "text": "Phan Bội Châu xem Hàm theo cảm và ứng tự nhiên giữa người với người. Lòng không thiên riêng giúp tiếp nhận rộng; hình ảnh hôn phối và thứ tự quẻ được ông đặt trong phép ví nhân sự cổ.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [310, 313],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-nhl",
+          "pdfPages": [230, 231]
         }
       ],
+      "text": "Nguyễn Hiến Lê giảng quẻ Hàm mở đầu Hạ Kinh bàn về nhân sự, lấy đạo trai gái cảm nhau làm gốc. Chữ Hàm không có bộ tâm, chỉ sự tự nhiên tương hợp mà cảm nhau, không có tư ý, cốt ở hư tâm (lòng trống rỗng). Đại Tượng khuyên 'dĩ hư tâm thụ nhân' như trên núi trũng xuống đọng nước thành chằm; muốn giữ lòng tĩnh ('chỉ nhi duyệt') thì phải tự chủ, giữ lễ ('khắc kỉ phục lễ'), cảm nhau chân thành và tự nhiên."
+    },
+    {
       "attribution": {
         "author": "Phan Bội Châu"
       },
-      "condition": "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
-    },
-    {
-      "text": "Trình Di đặt cảm thông ở lòng thành và chính, không bị thành kiến riêng che. Hình ảnh núi có hồ gợi lòng biết nhận người, tránh chỉ nhận những người hợp sẵn ý mình.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [508, 511],
-          "section": "Tổng quan và cấu trúc"
+          "sourceId": "source-book-pbc",
+          "pdfPages": [310, 313]
         }
       ],
+      "text": "Phan Bội Châu giảng Hàm mở đầu Hạ Kinh, lấy việc thiếu nam hạ mình dưới thiếu nữ để chỉ nghĩa vợ chồng và đạo tương cảm trong nhân sự. Quẻ dùng chữ Hàm thay vì Cảm vì chữ Hàm không có bộ tâm, ngụ ý vô tâm vô tư mới là chân cảm. Cấn chỉ Đoài duyệt, yên lặng mà hòa duyệt như đạo 'khắc kỉ phục lễ'. Xem tượng trên núi có chằm, người quân tử giữ lòng rỗng không ('hư trung', vô ngã vô tư) để dung nhận người ('dĩ hư thụ nhân'), không để tư ý lợi dục làm nghẽn đầy ('trung mãn')."
+    },
+    {
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "condition": "Hình ảnh nam nữ, hôn phối và thứ bậc là bối cảnh của chú giải cổ, không quy định vai trò hoặc phẩm chất cố định theo giới tính hiện đại."
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [508, 511]
+        }
+      ],
+      "text": "Trình Di giảng quẻ Hàm chủ về sự đẹp lòng, lấy trai trẻ nhường gái trẻ, chí trai thành thực giao xuống và gái vui đẹp ứng lên làm đạo vợ chồng. Đạo cảm nhau lợi ở sự chính ('lợi trinh'), 'chỉ nhi duyệt' là đậu ở sự đẹp lòng, giữ gốc kiên nhẫn thành thật. Xem tượng chằm trên núi thông khí, người quân tử giữ lòng trống rỗng không ý riêng để tiếp nhận người; nếu trong lòng có sẵn chủ kiến hoặc chỉ chọn điều hợp ý mình mà nhận thì không phải đạo cảm thông của thánh nhân."
+    },
+    {
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [509, 511]
+        }
+      ],
+      "text": "Chu Hy giải thích Hàm là giao cảm: Cấn cứng ở dưới chủ đậu nên sự cảm chuyên nhất, Đoài mềm ở trên chủ đẹp lòng nên sự ứng tột bậc. Thiếu nam chịu dưới thiếu nữ là được chính đạo hôn nhân, nên lời chiêm hanh lợi trinh và lấy con gái thì tốt; nếu giao cảm không theo chính đạo thì mất hanh thông và việc đều hung. Tượng trên núi có chằm là nhờ khoảng trống rỗng mà khí thông suốt."
     }
   ],
+  "id": "hexagram-31",
   "kingWenNumber": 31,
-  "upperTrigramId": "trigram-lake",
-  "lowerTrigramId": "trigram-mountain",
   "lines": [
     {
-      "position": 1,
-      "polarity": "yin",
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [231, 231]
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giảng hào một ở dưới cùng, ứng với hào bốn ở trên cao. Sức cảm còn nhỏ, chưa động được lòng người, mới như ngón chân cái hơi động nên lời hào không khen cũng không chê."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [313, 314]
+            }
+          ],
+          "text": "Phan Bội Châu xem hào đầu ở dưới hết nội quái, tượng như ngón chân cái dưới cùng thân người. Hào ở chỗ thấp mà ứng với hào bốn ở xa trên cao, sức cảm còn hèn mọn, có chí hướng ra ngoài nhưng chưa thực sự động nên lời hào không định cát hung."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [512, 512]
+            }
+          ],
+          "text": "Trình Di giảng hào sơ ở dưới cùng ứng với hào bốn, ở bước đầu sự cảm chưa sâu nên chưa thể làm động lòng người. Ngón chân cái mới động thì chưa đủ sức tiến lên; chí tuy hướng ra ngoài để cảm ứng nhưng sức còn nông."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [512, 512]
+            }
+          ],
+          "text": "Chu Hy chỉ rõ quẻ Hàm lấy thân thể làm tượng, hào đầu ở dưới đất là tượng ngón chân cái. Sự cảm còn nông, muốn tiến chưa được nên lời hào không định cát hung; quẻ Hàm tuy chủ về giao cảm nhưng cả sáu hào đều nên giữ tĩnh chứ không nên động."
+        }
+      ],
       "label": "Sơ lục",
+      "polarity": "yin",
+      "position": 1
+    },
+    {
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê đọc ngón chân theo sự cảm mới nhỏ ở hào đầu, hướng tới hào bốn. Lời hào chưa đặt kết luận tốt hay xấu cho sự khởi ý ấy.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [231, 231],
-              "section": "Hào 1 — diễn giải",
-              "printedPages": ["231", "231"]
+              "pdfPages": [231, 231]
             }
           ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          "text": "Nguyễn Hiến Lê ví hào hai với bắp chân. Hào là âm, ở dưới thấp mà ứng với hào năm, nếu nóng lòng cầu thân thì xấu. Hào đắc trung đắc chính nên giữ nết ở yên không động thì mới tốt hợp đạo lý."
         },
         {
-          "text": "Phan Bội Châu cho hào đầu ở thấp, sự cảm mới nảy và còn ít sức, như ngón chân chưa làm cả thân động. Chưa tiến sâu nên lời hào chưa quyết tốt xấu.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [313, 314],
-              "section": "Hào 1 — diễn giải"
+              "pdfPages": [314, 315]
             }
           ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          "text": "Phan Bội Châu xem bắp chân sắp đi thì động trước, như người có tính nóng vội. Hào hai ở dưới mà ứng với hào năm ở trên, nếu nóng lòng cầu thân thì như bắp chân động trước khi chân bước nên e bị xấu; hào có đức trung chính nên biết tự trọng, ở yên chờ người trên tìm đến thì mới tốt lành."
         },
         {
-          "text": "Trình Di xem hào đầu ứng với hào bốn, nhưng sự cảm mới bắt đầu và còn ở chỗ thấp. Ngón chân là hình ảnh động nhỏ, chưa tới mức có lời tốt xấu rõ.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [512, 513],
-              "section": "Hào 1 — diễn giải"
-            }
-          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [513, 514]
+            }
+          ],
+          "text": "Trình Di ví bắp chân phải động trước rồi chân mới nhắc lên chứ không tự động được. Hào hai ở dưới mà ứng với hào năm, nếu không giữ đạo mà cứ động trước để đi tìm người trên thì là nóng nảy càn dở nên hung; nếu ở yên thuận lễ chờ người trên tìm mình thì hợp đạo tiến lui mà tốt."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [513, 513]
+            }
+          ],
+          "text": "Chu Hy ví bắp chân muốn đi thì động trước, là tượng kẻ nóng nảy không giữ bền. Hào hai âm mềm ở chỗ ấy nhưng có đức trung chính nên có thể ở yên nơi chốn của mình; vì vậy lời chiêm là động thì hung mà tĩnh thì tốt."
         }
-      ]
-    },
-    {
-      "position": 2,
-      "polarity": "yin",
+      ],
       "label": "Lục nhị",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê đọc bắp chân theo sự vội động trước, dễ chạy theo cảm xúc. Biết ở yên và tự giữ bằng đức trung chính giúp lời hào chuyển sang tốt.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [231, 231],
-              "section": "Hào 2 — diễn giải",
-              "printedPages": ["231", "231"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu cho hào hai dễ động trước khi cả thân đã quyết, nhưng có trung chính nên có thể tự giữ. Ở yên trong hoàn cảnh ấy là cách thuận lẽ, không phải cấm mọi hành động.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [314, 315],
-              "section": "Hào 2 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di đặt hào hai ở người có tài và đức trung chính nhưng dễ động đi tìm người trên trước. Giữ đạo và đợi quan hệ tới đúng nhịp là điều kiện của lời tốt trong phép ví vai người cổ.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [513, 514],
-              "section": "Hào 2 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 3,
-      "polarity": "yang",
-      "label": "Cửu tam",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê xem đùi như phần không tự chủ mà động theo chân. Hào ba cứ theo sự động của hào bốn thay vì giữ cách xử của mình, nên tiến như vậy đáng tiếc.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [231, 231],
-              "section": "Hào 3 — diễn giải",
-              "printedPages": ["231", "231"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu cho hào ba có tính nóng và dễ chạy theo sự động của hào bốn. Chấp lấy việc theo người làm chủ trương khiến mất tự chủ và đi tới hổ thẹn.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [315, 315],
-              "section": "Hào 3 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di đặt sự theo của hào ba ở việc bị cuốn theo hào sáu mà mình thích. Có tài cương nhưng không tự giữ đường chính, chỉ cảm người mình đẹp lòng là điều đáng tiếc.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [514, 515],
-              "section": "Hào 3 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        },
-        {
-          "text": "Chu Hy đọc hào ba theo việc chạy theo hai hào dưới đều đang muốn động. Đây là hướng theo khác Trình Di đặt ở hào sáu và hai tác giả Việt Nam đặt ở hào bốn; các cách đọc cùng răn không tự giữ nhưng không được gộp quan hệ.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [514, 515],
-              "section": "Hào 3 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 4,
-      "polarity": "yang",
-      "label": "Cửu tứ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê giảng hào bốn theo lòng cảm người không tính phần đáp lại cho mình. Lo qua lo lại bằng ý riêng chỉ quy tụ những người mình đã nhắm, chưa có sự rộng lớn.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [232, 232],
-              "section": "Hào 4 — diễn giải",
-              "printedPages": ["232", "232"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu xem hào bốn là chỗ của tâm, cần công chính và không tư riêng trong quan hệ. Cho để đợi trả, hoặc chỉ qua lại với người đã đáp mình, làm phạm vi cảm thông hẹp lại.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [315, 318],
-              "section": "Hào 4 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di đặt hào bốn ở trái tim của sự cảm, cần chính bền và lòng không vướng riêng. Nếu chỉ tính chỗ mình muốn người đáp, sự cảm giới hạn ở bè bạn cùng loại thay vì thông rộng.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [515, 517],
-              "section": "Hào 4 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 5,
-      "polarity": "yang",
-      "label": "Cửu ngũ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê đọc thịt lưng theo chỗ khó cảm và không chứa ý riêng, nên không hối tiếc. Ông nêu vấn đề khoảng cách giữa người ở ngôi cao với người dưới, giữ đó như câu hỏi trong lời giảng.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [232, 232],
-              "section": "Hào 5 — diễn giải",
-              "printedPages": ["232", "232"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
-        },
-        {
-          "text": "Phan Bội Châu lấy thịt lưng đối với tim làm hình ảnh bỏ tư tâm để cảm người. Hào năm còn vướng quan hệ riêng nên được răn dùng lòng thành và điều chính mới không hối.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [318, 318],
-              "section": "Hào 5 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
-        },
-        {
-          "text": "Trình Di cho người ở ngôi năm cần cảm thiên hạ bằng lòng thành, tránh chỉ vướng hào hai hoặc thích hào sáu. Thịt lưng trái tim gợi sự chống lại lòng riêng, không phải bỏ hết quan hệ với người.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [517, 518],
-              "section": "Hào 5 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        },
-        {
-          "text": "Chu Hy cho thịt lưng không cảm vật và không vướng riêng, nên có thể không hối dù chưa cảm được người. Cách đọc này giữ riêng với Trình Di yêu cầu chống tư tâm để mở rộng sự cảm.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [518, 518],
-              "section": "Hào 5 — diễn giải"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          }
-        }
-      ]
-    },
-    {
-      "position": 6,
       "polarity": "yin",
-      "label": "Thượng lục",
+      "position": 2
+    },
+    {
       "entries": [
         {
-          "text": "Nguyễn Hiến Lê xem mép, má và lưỡi theo việc dùng lời khéo thay lòng thành để động người. Lời giảng răn sự trống thật trong cách nói, không cho mọi lời nói đều thiếu thành.",
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
           "references": [
             {
               "sourceId": "source-book-nhl",
-              "pdfPages": [232, 232],
-              "section": "Hào 6 — diễn giải",
-              "printedPages": ["232", "232"]
+              "pdfPages": [231, 231]
             }
           ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          }
+          "text": "Nguyễn Hiến Lê ví hào ba ở trên cùng nội quái với bắp đùi. Hào dương cương ham tiến, muốn theo hào bốn cũng dương cương ở trên; trong thời Hàm nên tĩnh mà lại động theo người nên đi thì đáng chê trách."
         },
         {
-          "text": "Phan Bội Châu đọc hào cuối theo sự muốn cảm quá mức nhưng chỉ còn nịnh bằng miệng. Không có thực chất chân thành thì cách nói không đủ tạo cảm thông.",
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
           "references": [
             {
               "sourceId": "source-book-pbc",
-              "pdfPages": [318, 319],
-              "section": "Hào 6 — diễn giải"
+              "pdfPages": [315, 315]
             }
           ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          }
+          "text": "Phan Bội Châu ví hào ba với vế đùi không tự động được mà phải theo chân. Hào có tính cương táo, thấy hào bốn ở trên động thì động theo đến nỗi mất tự chủ; chỉ cầm giữ lấy thói theo người như thế mà đi mãi thì mắc lấy xấu hổ."
         },
         {
-          "text": "Trình Di cho hào cuối muốn làm người đẹp lòng tới cực điểm nhưng chỉ bày ra ở miệng. Sự mềm lời cần có lòng thành và việc thật mới phù hợp đạo cảm.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [519, 520],
-              "section": "Hào 6 — diễn giải"
-            }
-          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          }
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [514, 515]
+            }
+          ],
+          "text": "Trình Di giảng hào ba có chất dương cương làm chủ quẻ dưới, đáng lẽ phải tự giữ chính đạo để cảm người, nhưng lại ứng với hào sáu trên ở chỗ cùng tột sự cảm duyệt nên cảm mà theo đó. Đùi không thể tự do mà phải động theo thân thể, hào ba không tự chủ chỉ biết theo người mình đẹp lòng nên đi thì đáng thẹn tiếc."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [514, 515]
+            }
+          ],
+          "text": "Chu Hy giảng đùi là vật theo chân mà động chứ không tự chuyển. Hai hào âm ở dưới đều muốn động, hào ba dương cương ở chỗ cùng cực sự đậu đáng lẽ phải tĩnh nhưng lại không tự giữ được mà động theo hai hào dưới, nên đi thì đáng tiếc."
         }
-      ]
+      ],
+      "label": "Cửu tam",
+      "polarity": "yang",
+      "position": 3
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [232, 232]
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giảng hào bốn ở ngoại quái Đoài hòa duyệt nặng về cảm tính, ví với trái tim. Tình cảm phải chính đáng, chí công vô tư mới tốt và không phải ăn năn; nếu có óc tính toán có qua có lại thì bạn bè chỉ giới hạn trong số người mình nghĩ tới."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [315, 318]
+            }
+          ],
+          "text": "Phan Bội Châu xem hào bốn ở giữa thân người, đúng vào vị trí của tâm nên lời hào chuyên nói về tinh thần. Đạo cảm người phải chí công vô tư, hư trung vô ngã thì mới trinh cát và hết hối tiếc; nếu cảm bằng lòng săn sóc tính toán ('đồng đồng vãng lai'), mong người đáp lại thì sự kết giao hẹp hòi ('bằng tòng nhĩ tư'), chỉ quanh quẩn những người bụng mình nghĩ tới."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [515, 517]
+            }
+          ],
+          "text": "Trình Di xem hào bốn đứng giữa ở quẻ trên, đúng ngôi trái tim là chủ của sự cảm. Đạo cảm phải chính bền, trống lòng không ý riêng thì không gì không thông suốt; nếu đi lại săng sắc, dùng lòng riêng để cảm người thì chỉ cảm động được bè bạn đồng loại theo ý nghĩ của mình chứ không thể mở rộng sáng lớn."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [516, 517]
+            }
+          ],
+          "text": "Chu Hy giảng hào bốn ở giữa ba hào dương, là trái tim chủ sự cảm. Hào dương ở ngôi âm là mất chính và không bền nên lời hào răn phải chính bền mới tốt và mất ăn năn; nếu săng sắc bận lòng về sự cảm riêng có đi có lại thì chỉ bè bạn cùng loài theo mình chứ không thông tới chỗ xa."
+        }
+      ],
+      "label": "Cửu tứ",
+      "polarity": "yang",
+      "position": 4
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [232, 232]
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giảng thịt lưng ở trên lưng cao hơn tim và trái với tim, không cảm được vật nhưng cũng không có tư tâm tư ý nên không có gì hối hận. Ông nêu câu hỏi có lẽ vì hào ở ngôi cao trung chính, cách biệt dân chúng quá nên Chu Hy mới bảo là không cảm được vật."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [318, 318]
+            }
+          ],
+          "text": "Phan Bội Châu giảng 'muội' là đám thịt ở trên lưng trái với bụng, không thấy được tâm. Hào năm ở ngôi tôn muốn cảm được thiên hạ thì phải dùng đạo chí thành tự nhiên, không thấy được tư tâm thì mới không hối; Tiểu Tượng răn chí mạt vì hào năm còn vướng víu với hào hai và đẹp lòng với hào trên."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [517, 518]
+            }
+          ],
+          "text": "Trình Di giảng hào năm ở ngôi tôn phải lấy lòng chí thành cảm hóa thiên hạ. Thăn thịt ở lưng trái nhau với tim và mắt không trông thấy; người làm vua phải trái được lòng riêng, không thiên lệch vướng víu hào hai hay đẹp lòng hào trên thì mới hợp chính đạo cảm thiên hạ mà không ăn năn."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [518, 518]
+            }
+          ],
+          "text": "Chu Hy giải thích thăn thịt là thịt lưng ở trên tim và trái với tim, không thể cảm vật và cũng chẳng vướng víu riêng tư. Hào năm lấy tượng đó răn người xem: nếu giữ được như vậy thì tuy không cảm được người nhưng cũng không phải ăn năn."
+        }
+      ],
+      "label": "Cửu ngũ",
+      "polarity": "yang",
+      "position": 5
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [232, 232]
+            }
+          ],
+          "text": "Nguyễn Hiến Lê ví hào trên cùng với mép, má và lưỡi. Hào âm nhu ở quẻ Đoài vui vẻ, ham cảm người bằng miệng lưỡi mà thiếu lòng chân thành nên đáng chê trách."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [318, 319]
+            }
+          ],
+          "text": "Phan Bội Châu xem hào sáu trên âm nhu làm chủ thể Đoài đẹp lòng, ở chỗ cùng cực của sự cảm. Hào muốn cảm người quá mức nhưng không có lòng chí thành mà chỉ uốn nắn miệng lưỡi ('đằng khẩu thuyết'), dùng lời nói nịnh hót như thói thường của tiểu nhân thì không thể làm rung động lòng người."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [519, 520]
+            }
+          ],
+          "text": "Trình Di giảng hào trên cùng âm mềm làm chủ sự đẹp lòng, ở chỗ cùng tột muốn cảm người nhưng không lấy lòng chí thành mà chỉ phát hiện ở miệng lưỡi. Dùng sự mềm mỏng đưa đẩy ở miệng nói như thói thường của tiểu nhân thì không thể cảm động được người."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [519, 520]
+            }
+          ],
+          "text": "Chu Hy giải thích má, mép, lưỡi là bộ phận để nói ở trên thân thể. Hào sáu trên âm mềm ở cuối quẻ Đoài, cùng cực sự cảm mà chỉ cảm người bằng miệng lưỡi chứ không có sự thật, lời Tượng giải là ruổi miệng nói nên đủ biết là xấu (hung)."
+        }
+      ],
+      "label": "Thượng lục",
+      "polarity": "yin",
+      "position": 6
     }
-  ]
+  ],
+  "lowerTrigramId": "trigram-mountain",
+  "notes": [
+    {
+      "references": [
+        {
+          "pdfPages": [231, 231],
+          "sourceId": "source-book-nhl"
+        },
+        {
+          "pdfPages": [315, 315],
+          "sourceId": "source-book-pbc"
+        },
+        {
+          "pdfPages": [514, 515],
+          "sourceId": "source-book-ntt"
+        }
+      ],
+      "text": "Về đối tượng hào Cửu tam hướng theo ('chấp kì tùy'), có sự phân kỳ giữa các nhà chú giải: Nguyễn Hiến Lê (PDF 231) và Phan Bội Châu (PDF 315) cho rằng Cửu tam theo hào Cửu tứ dương cương ở trên nó; Trình Di (NTT PDF 514) cho rằng Cửu tam ứng và theo hào Thượng Lục ở trên cùng quẻ; Chu Hy (NTT PDF 514–515) lại cho rằng Cửu tam bị cuốn theo hai hào âm ở dưới (Sơ lục và Lục nhị) đều đang muốn động. Giữ nguyên góc nhìn riêng của từng tác giả trong từng mục diễn giải tương ứng."
+    },
+    {
+      "references": [
+        {
+          "pdfPages": [514, 517],
+          "sourceId": "source-book-ntt"
+        }
+      ],
+      "text": "Bản dịch Ngô Tất Tố in sai một số chữ Hán ở hào Cửu tam, Cửu tứ và Cửu ngũ: tại PDF 514, Hào từ Cửu tam in 執其雖 thay vì 執其隨 (phiên âm vẫn đúng là 'chấp kỳ tùy'); tại PDF 515, Hào từ Cửu tứ in chữ 思 thành 志 ('朋從爾志', nhưng phiên âm đúng là 'bằng tòng nhĩ tư') và in 憧撞 thay vì 憧憧 (phiên âm đúng là 'đồng vãng lai'); tại PDF 517, Tiểu Tượng Cửu tứ in nhầm '貞其悔亡' (thay vì 貞吉悔亡), '未感害美也' (thừa chữ 美), và '未光六也' (nhầm chữ 大 thành 六); tại PDF 517, Hào từ Cửu ngũ in nhầm chữ 脢 thành 腮 ('咸其腮', phiên âm ghi 'Hàm kỳ môi', dịch nghĩa 'thăn thịt'). Ảnh PDF 514 xác nhận chữ 雖 và ảnh PDF 515 xác nhận chữ 撞. Giữ cách đọc và nghĩa chuẩn theo kinh văn Chu Dịch."
+    },
+    {
+      "references": [
+        {
+          "pdfPages": [318, 318],
+          "sourceId": "source-book-pbc"
+        }
+      ],
+      "text": "Phan Bội Châu PDF 318 in chữ Hán Hào từ và Tiểu Tượng Cửu ngũ nhầm chữ 脢 thành chữ 腾 ('九五: 咸其腾, 无悔' và '象曰: 咸其腾, 志末也'). Phiên âm của tác giả vẫn ghi đúng là 'muội' và giải nghĩa chuẩn là đám thịt ở trên lưng trái với bụng."
+    },
+    {
+      "references": [
+        {
+          "pdfPages": [313, 313],
+          "sourceId": "source-book-pbc"
+        }
+      ],
+      "text": "Phan Bội Châu PDF 313 hai lần dùng cụm 'không rỗng trong lòng' khi giải thích 'hư trung' ở phần Đại Tượng của quẻ Hàm, trước mục Hào từ (không phải phần giảng hào Cửu tứ). Cách đặt chữ dễ bị hiểu thành phủ định của 'rỗng', nhưng cùng trang tác giả giải thích rõ 'hư trung' là vô ngã, vô tư, đối lập với 'trung mãn' (lòng bị tư ý lấp đầy). Giữ ý lòng trống rỗng để tiếp nhận người, không đọc thành lòng đầy."
+    }
+  ],
+  "relatedIds": ["trigram-mountain", "trigram-lake"],
+  "status": "ready",
+  "title": "Trạch Sơn Hàm",
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "type": "hexagram",
+  "upperTrigramId": "trigram-lake"
 }

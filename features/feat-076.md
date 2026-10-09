@@ -107,7 +107,13 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- **Status:** implementation, round-1 repair and round-2 verification are complete on branch `tungxuan1656/feat-076`; PR [#110](https://github.com/tungxuan1656/liuyao/pull/110) is open and awaiting merge. `feature_index.json` keeps this feature at `todo` because the single `active` slot is held by feat-073 and this repository marks a feature `done` only once it is merged.
+- **Status:** implementation, round-1 repair and round-2 verification are complete on branch `tungxuan1656/feat-076`; PR [#110](https://github.com/tungxuan1656/liuyao/pull/110) is open and awaiting merge. `feature_index.json` keeps this feature at `todo` because the single `active` slot is held by feat-074 (already merged in PR #104, still awaiting status cleanup) and this repository marks a feature `done` only once it is merged.
 - **Blockers:** none.
 - **Limits:** reviewer lanes read extracted page text only and never page images, so the seven image-dependent note claims remain Leader-verified; the invariant comparison and the page renders are Leader-generated; the round-2 model had to be changed after the reviewer provider returned “No active credentials for provider: codex”.
-- **Next action:** merge PR [#110](https://github.com/tungxuan1656/liuyao/pull/110), then set feat-076 to `done` in [feature index](../feature_index.json). Note for the operator: feat-073 (quẻ 21–24) is already merged to `main` at `cc68182` (PR [#105](https://github.com/tungxuan1656/liuyao/pull/105)) but its index entry is still `active` and its record is unwritten.
+- **Next action:** merge PR [#110](https://github.com/tungxuan1656/liuyao/pull/110), then set feat-076 to `done` in [feature index](../feature_index.json). Note for the operator: feat-073 (quẻ 21–24) is already `done`; feat-074 (quẻ 25–28) was merged in PR [#104](https://github.com/tungxuan1656/liuyao/pull/104), but its index entry is still `active` on `main`.
+
+## Follow-up review — 2026-10-09
+
+- Re-checked the newly added Chu Hy layers and risk passages against NTT PDF 538–581, NHL PDF 236–247 and PBC PDF 329–357; no new actionable source-fidelity finding in the reviewed passages.
+- Reconciled append-only `progress.md` with current `main` instead of overwriting newer entries. Kept `feat-076` `todo` until merge; the separate feat-074 status cleanup is out of scope.
+- Rerun CI on this synchronised branch; verification quoted for `4e69953` applies only to that historical revision.

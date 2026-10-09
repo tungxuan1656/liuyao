@@ -1,676 +1,457 @@
 {
-  "id": "hexagram-58",
-  "type": "hexagram",
-  "title": "Thuần Đoài",
   "aliases": ["Đoài", "Đoái", "Bát Thuần Đoái"],
-  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "relatedIds": ["trigram-lake"],
-  "status": "ready",
   "entries": [
     {
-      "text": "Thuần Đoài có nội quái Đoài, ngoại quái Đoài; sáu vị trí đếm từ dưới lên.",
       "references": [
         {
-          "sourceId": "source-book-nhl",
           "pdfPages": [312, 312],
-          "section": "Tên quẻ, quái trên/dưới và hình quẻ hoặc lời giải cấu trúc",
-          "printedPages": ["312", "312"]
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [312, 313],
-          "section": "Hào 1: nhãn vị trí, lời hào và lời Tượng khi có",
-          "printedPages": ["312", "313"]
+          "pdfPages": [539, 541],
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [313, 313],
-          "section": "Hào 2: nhãn vị trí, lời hào và lời Tượng khi có",
-          "printedPages": ["313", "313"]
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [313, 313],
-          "section": "Hào 3: nhãn vị trí, lời hào và lời Tượng khi có",
-          "printedPages": ["313", "313"]
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [313, 313],
-          "section": "Hào 4: nhãn vị trí, lời hào và lời Tượng khi có",
-          "printedPages": ["313", "313"]
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [313, 313],
-          "section": "Hào 5: nhãn vị trí, lời hào và lời Tượng khi có",
-          "printedPages": ["313", "313"]
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [313, 314],
-          "section": "Hào 6: nhãn vị trí, lời hào và lời Tượng khi có",
-          "printedPages": ["313", "314"]
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [539, 539],
-          "section": "Tên quẻ, quái trên/dưới và hình quẻ hoặc lời giải cấu trúc"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [542, 542],
-          "section": "Hào 1: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [542, 542],
-          "section": "Hào 2: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [542, 543],
-          "section": "Hào 3: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [543, 543],
-          "section": "Hào 4: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [543, 544],
-          "section": "Hào 5: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [544, 544],
-          "section": "Hào 6: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [864, 864],
-          "section": "Tên quẻ, quái trên/dưới và hình quẻ hoặc lời giải cấu trúc"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [866, 867],
-          "section": "Hào 1: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [868, 868],
-          "section": "Hào 2: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [869, 869],
-          "section": "Hào 3: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [869, 871],
-          "section": "Hào 4: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [871, 872],
-          "section": "Hào 5: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [872, 873],
-          "section": "Hào 6: nhãn vị trí, lời hào và lời Tượng khi có"
-        }
-      ]
-    },
-    {
-      "text": "Nguyễn Hiến Lê nối hòa duyệt sau nhập lòng của Tốn. Đoài có cương trong, nhu ngoài gợi thành thật trong lòng, hòa bên ngoài; vui chỉ hanh khi hợp chính. Lời Thoán nói cảm dân quên nhọc và chết là hình ảnh chính trị cổ; Đại Tượng khuyên bạn cùng bàn nghĩa và thực hành.\n\nNguyễn Hiến Lê tổng kết hai âm dụ bốn dương, nhưng bốn dương giữ chính; ông liên hệ lời Luận Ngữ về làm vui quân tử phải đúng đạo. Đây là tổng kết của NHL, không xác minh một luận thuyết giới tính hay cả tác phẩm được dẫn.",
-      "references": [
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [312, 312],
-          "section": "Mở quẻ, Tự Quái và lời quẻ: Nguyễn Hiến Lê",
-          "printedPages": ["312", "312"]
-        },
-        {
-          "sourceId": "source-book-nhl",
-          "pdfPages": [314, 314],
-          "section": "Tổng kết cuối quẻ: Nguyễn Hiến Lê",
-          "printedPages": ["314", "314"]
+          "pdfPages": [864, 866],
+          "sourceId": "source-book-ntt"
         }
       ],
+      "text": "Bát Thuần Đoài gồm hai thể Đoài trên dưới trùng nhau, tượng hai chằm bám sát giúp ích qua lại. Quẻ có đức đẹp lòng, ngoài nhu trong cương; sáu hào tính từ dưới lên trên."
+    },
+    {
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
-      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-    },
-    {
-      "text": "Phan Bội Châu giải Tốn nhập rồi Đoái duyệt, gợi thâm nhập nhau mới đồng tâm. Ông phân duyệt thật từ cương chính, nhu hòa với duyệt giả từ nịnh và vụ lợi; hanh cần trinh, không phải mọi sự hợp nhau ngoài mặt đều lợi.\n\nPHỤ CHÚ của Phan Bội Châu so ba quẻ mang tượng nữ với ba quẻ mang tượng nam, gắn lời răn trinh với nhận định âm nhu dễ xiêu. Giữ là quan niệm phân vai lịch sử của ông, không phẩm chất cố định hay bổn phận của phụ nữ ngày nay.\n\nPhan Bội Châu lấy cương trong và nhu ngoài giải thành thật cùng hòa nhã, hợp đạo chính nên thuận trời và lòng người. Dẫn dân quên nhọc, quên chết là lý tưởng huy động dân trong nguồn, không cho phép đặt người đọc vào hiểm nạn.\n\nPHỤ CHÚ của Phan Bội Châu nhấn hai chữ vong: không chỉ vui ở việc nhẹ, mà tin việc khó hướng tới lợi ích lâu dài. Ông nói không phải cưỡng bức, nhưng đoạn sau có chữ lừa dân; giữ sự căng ấy của nguồn, không chuyển thành thủ thuật lừa hay cổ vũ hy sinh.\n\nPhan Bội Châu đọc hai chằm giúp ích qua lại làm tượng bạn giảng và tập. Giảng mở hiểu biết, tập thử ở việc làm; nếu không thực hành được phải xét tinh lại lý luận, không chỉ bàn suông.\n\nPHỤ CHÚ cuối quẻ của Phan Bội Châu phân lời quẻ nói đạo duyệt chung với từng hào có chính, tư. Hai âm cầu duyệt nhưng bốn dương cùng giữ đức; lai là tìm tới, dẫn là kéo dài sự lôi cuốn. Ông răn phu vu bác bằng nguy cơ bị đẽo xẻ, không chứng thực tính xấu của người có hào âm.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [539, 540],
-          "section": "Mở quẻ, Tự Quái và lời quẻ: Phan Bội Châu"
+          "pdfPages": [312, 312],
+          "sourceId": "source-book-nhl"
         },
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [540, 540],
-          "section": "Mở quẻ, Tự Quái và lời quẻ: Phan Bội Châu (phụ chú hoặc lời dẫn riêng)"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [540, 541],
-          "section": "Thoán / Soán Truyện: Phan Bội Châu"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [541, 541],
-          "section": "Thoán / Soán Truyện: Phan Bội Châu (phụ chú hoặc lời dẫn riêng)"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [541, 541],
-          "section": "Đại Tượng: Phan Bội Châu"
-        },
-        {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [544, 545],
-          "section": "Tổng kết cuối quẻ: Phan Bội Châu (phụ chú hoặc lời dẫn riêng)"
+          "pdfPages": [314, 314],
+          "sourceId": "source-book-nhl"
         }
       ],
+      "text": "Nguyễn Hiến Lê nối Tốn là nhập vào, khi hiểu lòng nhau mới ưa nhau mà vui vẻ hòa duyệt. Đoài là chằm và thiếu nữ; trong cương ngoài nhu là trong lòng thành thực, ngoài mặt nhu hòa, vui vẻ hợp đạo chính thì hanh thông. Thoán truyện mở rộng đạo vui hợp chính khiến trên thuận trời dưới hợp người; đi trước dân thì dân quên nhọc, xông vào nguy hiểm thì dân quên chết. Đại Tượng khuyên quân tử họp bạn giảng nghĩa lý đạo đức rồi cùng nhau thực hành để giúp ích cho nhau. Cuối quẻ, ông tổng kết hai hào âm tiểu nhân dụ dỗ bốn hào dương quân tử, song bốn dương đều giữ được đạo chính; ông liên hệ lời Luận Ngữ (XIII 25) về việc muốn làm vui lòng người quân tử thì phải dùng chính đạo."
+    },
+    {
       "attribution": {
         "author": "Phan Bội Châu"
       },
-      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-    },
-    {
-      "text": "Trình Di lấy vào nhau rồi đẹp lòng nhau làm mạch nối sau Tốn. Đẹp lòng có thể mở hanh, nhưng trái đạo để cầu vui thành tà siểm và lỗi; lợi trinh răn cách làm vui phải chính.\n\nTrình Di giải dương trong là thành thực, nhu ngoài là tiếp người hòa mềm, vui chính thì hợp trời người. Dân vui phục nghĩa nên quên nhọc, không ngại chết là quan niệm của ông về trị dân, không hướng dẫn huy động hay bảo đảm sự phục tòng.\n\nTrình Di lấy hai chằm phụ bám, thấm nhuần đắp đổi làm ích, giải bạn giảng tập. Ông nhắc ý Tiên Nho cho đây là việc đáng vui, nhưng nhấn phải hiểu tượng làm ích qua lại; không gán người cụ thể cho lời dẫn không tên.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [864, 864],
-          "section": "Mở quẻ, Tự Quái và lời quẻ: Trình Di"
+          "pdfPages": [539, 541],
+          "sourceId": "source-book-pbc"
         },
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [865, 866],
-          "section": "Thoán / Soán Truyện: Trình Di"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [866, 866],
-          "section": "Đại Tượng: Trình Di"
+          "pdfPages": [544, 545],
+          "sourceId": "source-book-pbc"
         }
       ],
+      "text": "Phan Bội Châu giải Tốn là vào, ngầm thấm vào nhau rồi mới sinh hòa duyệt đồng tâm, muốn phục quần chúng trước phải thâm nhập quần chúng. Quẻ tượng nước chằm và thiếu nữ; ông phân biệt duyệt thật từ cương chính nhu hòa với duyệt giả vì thế lợi hay tư giao ngoài hợp trong lìa, đồng thời so ba quẻ nữ (Tốn, Li, Đoái) có tính âm nhu dễ xiêu nên phải răn trinh với ba quẻ nam. Thoán truyện nêu lòng thành thực trong và nhu hòa ngoài khiến thuận trời ứng người. Ông nhấn hai chữ vong không phải do cưỡng bức mà vì lợi ích lâu dài nên dân quên nhọc, và vì mưu hạnh phúc nên bất đắc dĩ phải lừa dân vào hiểm nạn khiến dân quên chết. Đại Tượng lấy hai chằm dầm thấm đắp đổi làm ích khuyên bạn bè giảng tập, giảng để rộng tri và tập để thực hành, lý luận tất cầu ở việc làm, nếu không thực hành được phải xét tinh lại lý luận chứ không bàn suông. Tổng kết cuối quẻ, ông phân biệt Quái từ nói đạo duyệt chung của thánh nhân với sáu hào có chính tà; hai hào âm cầu duyệt tiểu nhân bằng lối cấp bách tới trước hoặc dắt kéo lâu dài, nhưng bốn hào dương đồng đức giữ chính đạo không sụp vào bầy tiểu nhân, đồng thời răn phu vu bác là nguy cơ tiểu nhân muốn đẽo xẻ mình."
+    },
+    {
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-    },
-    {
-      "text": "Chu Hy giải âm ở trên hai dương là vui hiện ra ngoài, Đoài tượng chằm. Ông giữ hai cách phối nghĩa: cứng trong cho hanh, mềm ngoài cần trinh, hoặc mềm ngoài cho hanh còn cứng trong cho trinh; không ép một cách duy nhất.\n\nChu Hy xác định phần Thoán lấy thể quẻ giải lời quẻ đến cùng; lời bình ngắn không thêm một hệ thuật điều khiển lòng người.\n\nChu Hy giải chằm bám nhau tăng ích đôi bên, như bạn giảng tập; giữ hình học hỏi qua lại chứ không thêm kết quả tiên đoán.",
       "references": [
         {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [864, 865],
-          "section": "Mở quẻ, Tự Quái và lời quẻ: Chu Hy"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [866, 866],
-          "section": "Thoán / Soán Truyện: Chu Hy"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [866, 866],
-          "section": "Đại Tượng: Chu Hy"
+          "pdfPages": [864, 866],
+          "sourceId": "source-book-ntt"
         }
       ],
+      "text": "Trình Di nối Tự quái loài vật vào nhau thì đẹp lòng nhau nên quẻ Đoái tiếp quẻ Tốn. Đẹp lòng là cách đem đến hanh thông, nhưng đạo làm đẹp lòng lợi ở chính bền, nếu trái đạo cầu vui thì thành tà xiểm hối lỗi. Thể quẻ một âm ở trên hai dương, dương cứng ở trong là lòng thành thực, hòa mềm ở ngoài là tiếp người mềm hòa. Dùng đạo đẹp lòng đi trước dân thì dân quên nhọc, phạm vào hiểm nạn thì dân thực bụng vui phục nghĩa không ngại cái chết, cảm phục lòng người là gốc của đạo làm vua. Đại Tượng lấy hai chằm phụ bám thấm nhuần đắp đổi giúp ích khuyên bạn bè giảng tập để làm ích cho nhau; ông nhắc ý Tiên Nho cho rằng việc đẹp lòng trong thiên hạ không gì bằng bạn bè giảng tập, song nhấn mạnh phải hiểu rõ việc giúp ích qua lại."
+    },
+    {
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-    }
-  ],
-  "kingWenNumber": 58,
-  "upperTrigramId": "trigram-lake",
-  "lowerTrigramId": "trigram-lake",
-  "lines": [
-    {
-      "position": 1,
-      "polarity": "yang",
-      "label": "Sơ cửu",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê lấy sơ dương thấp là quân tử khiêm, không tư tình vì tứ cũng dương nên chẳng làm cặp âm dương. Hòa với người bằng đạo chính được đọc là tốt.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [312, 313],
-              "section": "Hào 1: lời bình và Tiểu Tượng khi có Nguyễn Hiến Lê",
-              "printedPages": ["312", "313"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Phan Bội Châu giải sơ cương ở thấp, không vướng tình riêng với người trên, chỉ ôn hòa làm vui. Tiểu Tượng nói hành vi mới đầu chưa có chỗ đáng ngờ, không phải chắc chắn không bao giờ lỗi.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [542, 542],
-              "section": "Hào 1: lời bình và Tiểu Tượng khi có Phan Bội Châu"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Trình Di giải dương không hèn, ở thấp biết nhún, không hệ ứng nên không thiên tư: hòa mà chính. Tiểu Tượng chỉ chưa thấy lỗi ở đầu thời; ông dùng cách nói không giữa chính theo ngữ cảnh này, không phủ nhận sơ là dương ở vị lẻ.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [867, 867],
-              "section": "Hào 1: lời bình và Tiểu Tượng khi có Trình Di"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Chu Hy giữ dương thấp và không hệ ứng làm căn cứ hòa duyệt; đầu quẻ sự vui chưa có điều ngờ. Nhãn Hiệu nghĩa ở đoạn đầu vẫn ghi rõ Chu Hy, không chuyển tác giả.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [867, 867],
-              "section": "Hào 1: lời bình và Tiểu Tượng khi có Chu Hy"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        }
-      ]
-    },
-    {
-      "position": 2,
-      "polarity": "yang",
-      "label": "cửu nhị",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê lấy nhị cương giữa, dù gần tam nhu vẫn thành thật và không nhiễm cái bị ông gọi xấu ở tam; vì vậy phu duyệt mất hối.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [313, 313],
-              "section": "Hào 2: lời bình và Tiểu Tượng khi có Nguyễn Hiến Lê",
-              "printedPages": ["313", "313"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Phan Bội Châu giải nhị gần tam có thể hối, nhưng giữ thành thực cương trung, hòa mà tự trọng thì cát và hối mất. Phu chỉ sự thật bên trong, không phải làm vừa lòng bằng mọi cách.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [542, 542],
-              "section": "Hào 2: lời bình và Tiểu Tượng khi có Phan Bội Châu"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Trình Di đọc nhị vâng sát âm mềm, vui theo nó sẽ hối; giữ phu tín trong và cương giữa thì tốt. Tín chí trong Tượng là chí đặt ở thành tín, không tự làm mất bản tính.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [868, 868],
-              "section": "Hào 2: lời bình và Tiểu Tượng khi có Trình Di"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Chu Hy phân cứng giữa là tín, ở ngôi âm là căn cứ có hối; lấy tín để vui thì cát và hối mất, giữ điều kiện của lời chiêm.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [868, 868],
-              "section": "Hào 2: lời bình và Tiểu Tượng khi có Chu Hy"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        }
-      ]
-    },
-    {
-      "position": 3,
-      "polarity": "yin",
-      "label": "lục tam",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê giải tam nhu không trung chính tìm vui xuống sơ nhị, nhưng hai hào ấy giữ chính hoặc giữa. Hình gái tìm trai là ví dụ trong tư tưởng nguồn, không quy kết phụ nữ hay quan hệ ngày nay.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [313, 313],
-              "section": "Hào 3: lời bình và Tiểu Tượng khi có Nguyễn Hiến Lê",
-              "printedPages": ["313", "313"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Phan Bội Châu đọc tam chen giữa bốn dương mà cầu vui không theo đạo, tự làm hèn nên hung; giữ phán xét của tác giả thay vì nhận là tính chất người mang hào âm.\n\nPHỤ CHÚ của Phan Bội Châu giải lai là quay xuống: còn ngại tứ, ngũ cao, mới cầu sơ, nhị đã không được vì họ giữ đức. Ông mở sang lời răn xu quyền phụ thế; không mở nghĩa lai thành mọi loại tiến tới.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [542, 543],
-              "section": "Hào 3: lời bình và Tiểu Tượng khi có Phan Bội Châu"
-            },
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [543, 543],
-              "section": "Hào 3: lời bình và Tiểu Tượng khi có Phan Bội Châu (phụ chú hoặc lời dẫn riêng)"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Trình Di lấy tam không trung chính, tự uốn để cầu vui với dương trong cùng thể là trái đạo; lai là đi vào trong và xuống dưới. Sai vị khiến không có người cùng nên cố cầu mới hung.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [869, 869],
-              "section": "Hào 3: lời bình và Tiểu Tượng khi có Trình Di"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Chu Hy giải tam âm không giữa chính, làm chủ vui nhưng trên không ứng, quay xuống hai dương để cầu vui. Đây là cách hung của sự cầu vui ấy, không một lời cảnh báo giới tính.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [869, 869],
-              "section": "Hào 3: lời bình và Tiểu Tượng khi có Chu Hy"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        }
-      ]
-    },
-    {
-      "position": 4,
-      "polarity": "yang",
-      "label": "cửu tứ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê đọc tứ cương ở vị âm còn phân vân giữa ngũ trung chính và tam. Nhờ cương cùng đức ngũ, quyết bỏ tà theo chính thì có mừng; giới tật không được dùng làm chẩn đoán bệnh.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [313, 313],
-              "section": "Hào 4: lời bình và Tiểu Tượng khi có Nguyễn Hiến Lê",
-              "printedPages": ["313", "313"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Phan Bội Châu giải thương là đong lường, chưa quyết vui phía nào; giới tật là quyết bỏ tam và theo ngũ. Mừng không chỉ riêng tứ mà ví phúc chung của vua tôi cùng đạo.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [543, 543],
-              "section": "Hào 4: lời bình và Tiểu Tượng khi có Phan Bội Châu"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Trình Di giữ điều kiện nếu kiên quyết chính và xa tà thì theo ngũ, có thể hành đạo và phúc tới người. Tứ cương nhưng không đúng vị, nên cân nhắc chưa yên, không sẵn bảo đảm mừng.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [870, 871],
-              "section": "Hào 4: lời bình và Tiểu Tượng khi có Trình Di"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Chu Hy đọc tứ vâng ngũ trung chính, sát tam nhu tà nên cân nhắc chưa định. Chất cương có thể giúp quyết giữ chính, ghét bỏ tà rồi mới có mừng; lời chiêm là lời răn.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [870, 870],
-              "section": "Hào 4: lời bình và Tiểu Tượng khi có Chu Hy"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        }
-      ]
-    },
-    {
-      "position": 5,
-      "polarity": "yang",
-      "label": "cửu ngũ",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê giữ ngũ cương trung chính, chí tôn vẫn có nguy nếu tin thượng ham vui làm hao đức. Đây là lời răn trị nước của tác giả, không chứng cứ người ở ngôi cao tất bị hại.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [313, 313],
-              "section": "Hào 5: lời bình và Tiểu Tượng khi có Nguyễn Hiến Lê",
-              "printedPages": ["313", "313"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Phan Bội Châu chỉ bác vào thượng âm có khả năng làm tiêu dương. Ngũ gần thượng nên phải được răn, không có nghĩa ngũ đã chắc tin nó hay đã gặp nguy.\n\nPHỤ CHÚ của Phan Bội Châu nhận hào ngũ không có chữ Đoái mà có Bác: ở vị chí tôn, vui lầm không chỉ hại bản thân mà cả nước. Đây là lý do ông tăng lời phòng bị, không một thuật nhận diện người hại.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [543, 544],
-              "section": "Hào 5: lời bình và Tiểu Tượng khi có Phan Bội Châu"
-            },
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [544, 544],
-              "section": "Hào 5: lời bình và Tiểu Tượng khi có Phan Bội Châu (phụ chú hoặc lời dẫn riêng)"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Trình Di giải bác là làm tiêu khí dương, chỉ thượng lục; ngũ gần thượng trong thời đẹp lòng nên răn đừng tin. Ông dùng chuyện vua Thuấn còn sợ lời khéo làm ví dụ, không xác minh riêng lịch sử đó.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [871, 872],
-              "section": "Hào 5: lời bình và Tiểu Tượng khi có Trình Di"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Chu Hy giữ ngũ cương trung chính nhưng ở ngôi tôn sát thượng, chủ vui tới cực có thể làm tiêu dương. Lời chiêm chỉ răn nếu tin thượng thì nguy, không biến thành sự kiện đã xảy ra.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [871, 871],
-              "section": "Hào 5: lời bình và Tiểu Tượng khi có Chu Hy"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        }
-      ]
-    },
-    {
-      "position": 6,
-      "polarity": "yin",
-      "label": "Thượng lục",
-      "entries": [
-        {
-          "text": "Nguyễn Hiến Lê đọc thượng âm ở cực vui là dụ người tìm vui bất chính, ông cho đã xấu nên không cần thêm lời hung. Giữ kết luận nghiêm này khác các lời NTT chưa định thiện ác.",
-          "references": [
-            {
-              "sourceId": "source-book-nhl",
-              "pdfPages": [313, 314],
-              "section": "Hào 6: lời bình và Tiểu Tượng khi có Nguyễn Hiến Lê",
-              "printedPages": ["313", "314"]
-            }
-          ],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Phan Bội Châu lấy thượng làm chủ vui và kéo vui tới cực. Không ghi hung hối lận vì theo ông ngũ biết bác không tin, tứ thân ngũ, nhị cùng ngũ nên thượng chẳng dụ được; lời nhị ứng ngũ không tạo chính ứng hai dương.",
-          "references": [
-            {
-              "sourceId": "source-book-pbc",
-              "pdfPages": [544, 544],
-              "section": "Hào 6: lời bình và Tiểu Tượng khi có Phan Bội Châu"
-            }
-          ],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Trình Di đọc vui tới cực vẫn kéo dài không thôi. Chưa nói hối lỗi vì chưa thấy sự vui thiện hay ác; trong Tiểu Tượng lại giải quá kéo dài thành vô vị và không sáng. Giữ cả hai mức nhận định, không thay bằng hung sẵn.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [872, 873],
-              "section": "Hào 6: lời bình và Tiểu Tượng khi có Trình Di"
-            }
-          ],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        },
-        {
-          "text": "Chu Hy nói thượng chủ sự vui, dẫn ba hào dương cùng vui mà không nhất định theo hào nào. Vì thế ngũ cần răn, nhưng thượng không ghi cát hung; không đổi số ba thành bốn dương toàn quẻ.",
-          "references": [
-            {
-              "sourceId": "source-book-ntt",
-              "pdfPages": [872, 872],
-              "section": "Hào 6: lời bình và Tiểu Tượng khi có Chu Hy"
-            }
-          ],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-        }
-      ]
-    }
-  ],
-  "notes": [
-    {
-      "text": "PBC PDF 540 phần lời kinh Thoán có dạng niệm bên cạnh âm và lời bình vong; NTT PDF 865 phần âm/nghĩa nói niệm, nghĩ chết, bên cạnh lời kinh và Trình Di giải quên nhọc, không ngại chết. NTT PDF 867 âm Tiểu Tượng sơ kết hối vong, trong khi lời kinh, nghĩa và bình giải hành vị nghi. Giữ khác biệt từng phần in. Tóm tắt lời bình có attribution, không dựng lại lời kinh hay thay âm in; không chọn một tâm lý về chết làm nghĩa chung mọi nguồn.",
       "references": [
         {
-          "sourceId": "source-book-pbc",
-          "pdfPages": [540, 541],
-          "section": "Thoán / Soán Truyện: Phan Bội Châu"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [865, 866],
-          "section": "Thoán / Soán Truyện: Trình Di"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [866, 867],
-          "section": "Hào 1: nhãn vị trí, lời hào và lời Tượng khi có"
-        },
-        {
-          "sourceId": "source-book-ntt",
-          "pdfPages": [867, 867],
-          "section": "Hào 1: lời bình và Tiểu Tượng khi có Trình Di"
+          "pdfPages": [864, 866],
+          "sourceId": "source-book-ntt"
         }
-      ]
+      ],
+      "text": "Chu Hy giải một âm tiến lên hai dương là sự mừng hiện ra ngoài; quẻ lấy tượng chằm làm đẹp lòng muôn vật, hoặc tượng nước Khảm lấp dòng dưới. Thể quẻ cứng trong mềm ngoài: cứng trong nên đẹp lòng mà hanh, mềm ngoài nên lời răn về chính bền; hoặc mềm ngoài nên hanh, cứng trong nên chính bền. Về Thoán truyện, ông nhận định đây là lấy thể quẻ giải thích lời quẻ nói cho thật cùng tột. Đại Tượng lấy hai chằm bám nhau đắp đổi thêm ích làm tượng cho bạn bè cùng nhau giảng tập."
     }
-  ]
+  ],
+  "id": "hexagram-58",
+  "kingWenNumber": 58,
+  "lines": [
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [312, 313],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giải hào Chín Đầu dương ở dưới cùng quẻ là quân tử khiêm hạ. Ở trên không có tư tình với ai vì hào Bốn cũng là dương, nên chỉ dùng đạo chính hòa thuận vui vẻ với mọi người, được tốt."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [542, 542],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu xem Sơ Cửu có đức dương cương ở dưới hết thể Đoái, có đức tốt mà khiêm ty, trên không tư tình dây dướng với ai. Đối phó chung quanh chỉ lấy ôn hòa làm duyệt, bắt đầu thời Đoái bằng đạo chính nên tính nết không có điều gì đáng ngờ."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [866, 867],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho hào Đầu là dương ở thể đẹp lòng, ở chỗ rất thấp và không có hệ ứng, biết nhún thấp hòa thuận mà không thiên tư. Lấy hòa thuận làm đẹp lòng không thiên tư là chính đáng trọng đạo; ông giải thích lời Tượng nói đi chưa ngờ là vì hào ở chỗ thấp mà không được giữa chính, nên hành vi chỉ là chưa thấy có lỗi."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [867, 867],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào Chín Đầu dương ở thể đẹp lòng lại ở chỗ rất thấp và không có hệ ứng; ở đầu quẻ sự đẹp lòng của hào chưa có điều nghi ngờ nên được tốt."
+        }
+      ],
+      "label": "Sơ cửu",
+      "polarity": "yang",
+      "position": 1
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [313, 313],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giải hào Hai ở gần hào Ba âm nhu tiểu nhân, song nhờ dương cương đắc trung nên có đức thành thực cương trung. Hào giữ lòng trung trực vui vẻ, không nhiễm thói xấu của hào Ba nên mất sự hối hận."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [542, 542],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu xem Cửu Nhị gần Lục Tam âm nhu tiểu nhân, nếu duyệt với Tam e có ăn năn, nhưng Nhị dương cương đắc trung chứa đức thành thực, tự giữ cách tự trọng như sen không nhuốm bùn. Tâm chí sẵn có đức chí thành nên tà tâm chẳng đổi dời, được tốt và mất điều hối hận."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [868, 868],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho hào Hai vâng liền hào âm mềm tiểu nhân, nếu đẹp lòng với nó tất có ăn năn. Nhờ đức cứng giữa và lòng phu tín đầy ở bên trong, hào tự giữ gìn chẳng mất đức cương trung nên mới tốt và hối hận mất đi."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [868, 868],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào Chín Hai cứng giữa là đức tin, ở ngôi âm là có ăn năn. Kẻ xem lấy đức tin thành thực làm đẹp lòng thì được tốt mà sự ăn năn mất đi."
+        }
+      ],
+      "label": "cửu nhị",
+      "polarity": "yang",
+      "position": 2
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [313, 313],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giải hào Ba âm nhu bất trung bất chính là hạng tiểu nhân tìm vui không giữ đạo, dùng ví dụ phận gái ở giữa bốn người con trai (hai ở trên, hai ở dưới). Cầu vui với hai hào dương trên thì không dám vì phận thấp, bèn quay lại cầu với hai hào ở dưới, nhưng hào Một và hào Hai cương trực giữ trung chính không thèm, nên kết quả hung."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [542, 543],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu xem Lục Tam âm nhu bất trung bất chính chen giữa bốn dương, cầu duyệt không theo đạo chính nên thân hèn giá rẻ. Lai là quay lại xuống dưới: vì ngại Tứ và Ngũ quá cao nên Tam quay cầu Sơ và Nhị, song Sơ cương chính và Nhị cương trung không thèm duyệt, lấy tính cách âm nhu cầu duyệt bậy nên mắc hung. Qua đó, ông mở rộng lời răn kẻ tự mình không ra gì mà xu quyền phụ thế cầu thân với người thật đáng trông gương hào Lục Tam này."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [869, 869],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di xem hào Ba âm mềm không trung chính là kẻ cầu đẹp lòng không theo đạo. Đi vào trong là lại: trên dưới đều là dương mà riêng đi vào trong vì cùng thể và tính âm thấp, tự uốn mình trái đạo đi xuống để cầu vui với hào dương bên dưới; ở chỗ không chính và không kẻ cùng theo mà cố liều cầu đẹp lòng nên mắc đạo hung."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [869, 869],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào Sáu Ba âm mềm chẳng giữa chẳng chính, làm chủ sự đẹp lòng nhưng trên không ứng, bèn trở lại với hai hào dương bên dưới để cầu đẹp lòng, đó là đạo hung."
+        }
+      ],
+      "label": "lục tam",
+      "polarity": "yin",
+      "position": 3
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [313, 313],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê xem hào Bốn dương cương ở vị âm nên ban đầu do dự cân nhắc giữa hào Năm trung chính ở trên và hào Ba tiểu nhân ở dưới. Nhờ bản chất dương cương đồng đức với hào Năm, hào quyết tâm bỏ tà theo chính nên có điều đáng mừng."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [543, 543],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu giải Cửu Tứ dương cương ở vị âm, trên thừa tiếp Cửu Ngũ trung chính, dưới gần Lục Tam nhu tà nên bồi hồi thương lượng đong lường chưa quyết. Nhờ bản chất dương cương đồng đức với Ngũ, Tứ cương quyết ghét bỏ Lục Tam theo về chính đạo, vua tôi tương đắc nước thịnh dân yên nên có phúc khánh mừng chung."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [869, 871],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di giải hào Bốn phía trên vâng hào Năm trung chính, phía dưới liền hào Ba âm tà; vì ở chỗ bất chính nên so sánh đắn đo chưa định. Nếu cương quyết giữ đường chính đính và xa ghét kẻ tà ác thì được vua tin dùng để hành đạo, đem phúc khánh tới người nên có sự mừng."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [870, 870],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào Chín Tư vâng hào Năm trung chính mà liền sát hào Ba nhu tà nên phải đắn đo cân nhắc chưa định. Chất vốn dương cương nên có thể kiên quyết giữ đường chính đính, ghét bỏ kẻ nhu tà, như thế thì có mừng."
+        }
+      ],
+      "label": "cửu tứ",
+      "polarity": "yang",
+      "position": 4
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [313, 313],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giải hào Năm dương cương trung chính ở địa vị chí tôn. Thời Đoài mà thân cận hào trên cùng âm nhu làm chủ sự vui, nếu ham vui bậy bạ mà tin kẻ tiểu nhân làm tiêu mòn hết đức trung chính thì nguy hại; đây là lời răn người trị nước."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [543, 544],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu xem Cửu Ngũ ở địa vị chí tôn mật cận Thượng Lục âm nhu xảo ngôn tiêu bác dương cương. Hào từ không dùng chữ Đoái mà dùng chữ Bác để răn quân tử phòng bị tiểu nhân, vì ngôi vua nếu duyệt lầm tai hại đến cả nước; vị chính nên răn để ngăn hiềm nghi."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [871, 872],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di giải đẽo là làm tiêu khí dương, chỉ hào Sáu Trên. Hào Năm ở thời đẹp lòng liền sát hào trên cùng nên có nguy cơ mê hoặc; ông dẫn ví dụ thánh như vua Thuấn còn sợ xảo ngôn lệnh sắc để răn sự đẹp lòng dễ mê hoặc người; ngôi của hào Năm là chính đáng nên phải răn đừng tin kẻ âm mềm làm tiêu mòn đức."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [871, 871],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải đẽo là âm đẽo được dương. Hào Chín Năm dương cương giữa chính ở ngôi tôn, liền sát hào Sáu Trên âm mềm làm chủ sự đẹp lòng tới cùng cực; lời chiêm chỉ răn nếu tin hào trên thì gặp nguy."
+        }
+      ],
+      "label": "cửu ngũ",
+      "polarity": "yang",
+      "position": 5
+    },
+    {
+      "entries": [
+        {
+          "attribution": {
+            "author": "Nguyễn Hiến Lê"
+          },
+          "references": [
+            {
+              "pdfPages": [313, 314],
+              "sourceId": "source-book-nhl"
+            }
+          ],
+          "text": "Nguyễn Hiến Lê giải hào Trên cùng âm nhu ở cực quẻ Đoài là kẻ chuyên siểm nịnh, dụ dỗ người ta tìm vui bất chính. Bản chất đã xấu nên lời hào không cần nói hung nữa."
+        },
+        {
+          "attribution": {
+            "author": "Phan Bội Châu"
+          },
+          "references": [
+            {
+              "pdfPages": [544, 544],
+              "sourceId": "source-book-pbc"
+            }
+          ],
+          "text": "Phan Bội Châu xem Thượng Lục làm chủ cho quẻ Đoái ở cực điểm sự vui, dắt kéo dài sự vui ra. Hào không ghi hung hối lận vì hào Năm đã biết là bác không tin, hào Bốn thân với Năm, hào Hai ứng với Năm, Thượng muốn dẫn cũng chẳng dẫn được ai nên không hại đến thế đạo."
+        },
+        {
+          "attribution": {
+            "author": "Trình Di",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [872, 873],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Trình Di cho hào Sáu Trên chủ làm thành cuộc đẹp lòng ở chỗ cùng cực không biết thôi, nên kéo dài sự vui ra. Chưa nói hối lỗi vì chưa rõ cái vui đó là thiện hay ác; song Tiểu Tượng chê chưa sáng sủa vì việc quá đà thì vô vị tệ hại, không thể sáng sủa."
+        },
+        {
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "pdfPages": [872, 872],
+              "sourceId": "source-book-ntt"
+            }
+          ],
+          "text": "Chu Hy giải hào Sáu Trên chủ cuộc đẹp lòng ở chỗ cùng cực, dẫn ba hào dương cùng làm vui mà không nhất định theo hào nào; vì vậy hào Chín Năm phải răn mà hào Thượng không nói cát hay hung."
+        }
+      ],
+      "label": "Thượng lục",
+      "polarity": "yin",
+      "position": 6
+    }
+  ],
+  "lowerTrigramId": "trigram-lake",
+  "notes": [
+    {
+      "references": [
+        {
+          "pdfPages": [865, 865],
+          "sourceId": "source-book-ntt"
+        },
+        {
+          "pdfPages": [540, 541],
+          "sourceId": "source-book-pbc"
+        }
+      ],
+      "text": "NTT PDF 865 in dịch âm Thoán truyện có câu dân niệm kỳ tử dịch thành dân nghĩ sự có chết. PBC PDF 540 có chữ Hán in 民念其死 bên cạnh phần dịch âm vong kì tử và lời bình giảng giải dân quên sự chết; Trình Di PDF 865 giải nghĩa cũng theo hướng không ngại sự chết. Giữ cách hiểu dân quên chết theo mạch giải của Trình Di và lời bình của Phan Bội Châu."
+    },
+    {
+      "references": [
+        {
+          "pdfPages": [867, 867],
+          "sourceId": "source-book-ntt"
+        }
+      ],
+      "text": "NTT PDF 867 phần dịch âm Tiểu Tượng Sơ cửu in nhầm thành Hòa đoái chi cát, hối vong thay vì hành vị nghi dã. Phần dịch nghĩa và bản giải của Trình Di và Chu Hy trên cùng trang đều theo đúng câu đi chưa ngờ vậy."
+    }
+  ],
+  "relatedIds": ["trigram-lake"],
+  "status": "ready",
+  "title": "Thuần Đoài",
+  "topicIds": ["topic-hexagrams", "topic-line-commentary"],
+  "type": "hexagram",
+  "upperTrigramId": "trigram-lake"
 }
