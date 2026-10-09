@@ -170,21 +170,17 @@ been reached (reset after 29m 52s)` and `9router/ag/claude-sonnet-4-6` returned 
 
 ## Handoff
 
-- State: done. Content reviewed and frozen at `86d18a71d919a9c13286b51a4e111fd624c4973b`; squash-merged to
-  `main` in `1b1aec7834177e0ced36ca0010c903e5207df451` (PR #102).
-- Evidence: merge head `1b1aec7` (PR #102, one PR for this feature); reviewed head `86d18a7`; rounds 1–2 as
-  recorded in `## Verify`; `./init.sh` passed (181 core + 97 knowledge tests);
+- State: done — feat-081 content merged through PR #102 (merge `1b1aec7834177e0ced36ca0010c903e5207df451`); follow-up source-gloss and copy corrections are proposed separately.
+- Evidence: rounds 1–2 as recorded in `## Verify`; `./init.sh` passed (181 core + 97 knowledge tests);
   `validate:corpus --check-books --check` passed (381 records / 381 ready / 4 supplied books); structural
   invariants unchanged for all 4 files; all 15 image-dependent note claims verified from page images;
   provenance reports (29/31/30/33 rows) kept outside published JSON in the batch checkpoint
   `workspaces/liuyao/.feat-081-work/checkpoint/`. PDF pages are rendered from `docs/books/`, symlinked to
-  the canonical copies in the main checkout. Exact-head CI on `86d18a7` was green (`verify`, Cloudflare
-  Pages, GitGuardian) with `mergeStateStatus: CLEAN`.
+  the canonical copies in the main checkout.
 - Blockers: none.
 - Limits: reviewer children cannot see PDF page images and said so; the printed-glyph checks rest on the
   Leader's rendering. Round 2 verified the finding, the seven notes, the overview page ranges and the
   deletions — it was not a second exhaustive pass. Quẻ 54's Trình Di commentary is truncated mid-sentence
   in NTT 814, and the record states that gap instead of filling it.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: no work remains inside feat-081; the next queued review record (feat-080 quẻ 49–52, feat-082 quẻ 57–60,
-  feat-083 quẻ 61–64) needs operator selection before activation.
+- Next: Review and merge the follow-up correction PR; its status and CI are tracked in that PR.
