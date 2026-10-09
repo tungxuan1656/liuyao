@@ -61,6 +61,9 @@ New interpretation, calendar, or UI behavior.
 3. Round 2 verification of corrections and high-risk passages.
 4. Leader runs shared validation, verifies any image-dependent notes, and records evidence.
 
+Dispatch briefs live outside product commits at `.agent-work/feat-081/brief.md` (writer) and
+`.agent-work/feat-081/review-brief.md` (reviewer).
+
 ## Verify
 
 - `./init.sh`
@@ -69,7 +72,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active.
+- Evidence: Not yet collected.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Round 1 exhaustive review of the four reviewed records.
