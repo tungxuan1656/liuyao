@@ -69,11 +69,12 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: active. Implementation and two review rounds completed; PR #104 is open and not merged.
+- State: done. [PR #104](https://github.com/tungxuan1656/liuyao/pull/104) was squash-merged into `main` on 2026-10-09 as `9ae0b1aee853c6ba8a361a6e4d3ee3fc0ff4f1e7`. This tracking closeout follows that merge; no quẻ data is changed here.
 - Evidence: reviewed at `074033c`, fixed in `7b29b62` (11 cells, only `text`/`pdfPages` changed). Round 1 (one reviewer per quẻ, 28/25/27/29 cells): PASS, PASS, PASS, FAIL — quẻ 28 `lines[5].entries[3]` cited NTT `[481,481]` where the passage is on PDF 482 (P0, inherited). Round 2 (`afb32196`, one reviewer per quẻ, different model): all four PASS, every hunk CONFIRMED, no new findings. `./init.sh` → `=== Verification passed ===`; `validate:corpus --check-books --check` → 381 records, 381 ready, 4 supplied books. Artifacts: `.agent-work/feat-074/{review-1,review-2}-h25..h28.md`, `fix-1.md`, `image-verify.md`, `leader-audit.md`, `cells.md` (git-ignored scratch).
 - Follow-up in PR #104: corrected NHL Sơ Cửu `printedPages` to `[213,214]`, updated summary counts, and integrated newer `main` without changing quẻ structures.
 - Dependencies: feat-067 and feat-041 are done.
-- Next: confirm PR #104 checks on its updated branch; merge only with operator approval, then flip this feature to done.
+- Verification boundary: `./init.sh` and `validate:corpus --check-books --check` above are the historical checks reported in PR #104, not reruns on this documentation-only closeout branch. New-branch CI must pass before merging this closeout.
+- Next: leave feat-074 as `done`; follow the separately tracked post-audit issues as needed. Feat-084 remains `todo` until the operator activates it.
 
 ## Decision log
 
