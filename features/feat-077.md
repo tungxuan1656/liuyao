@@ -129,6 +129,8 @@ lánh mà đi mới khỏi`, NTT 631–632 `Kẻ tiểu nhân lui xuống, thì 
 - Blockers: none.
 - Limits: reviewer children cannot see PDF page images and reported that plainly, so the 3 image claims
   were verified by the Leader only; round 2 ran on `9router/cx/gpt-6-luna` rather than the round-1
-  `9router/cx/gpt-6.1-sol` because of provider quota; the PR awaits CI and review.
+  `9router/cx/gpt-6.1-sol` because of provider quota. PR #101 CI is green on the reviewed content head
+  `d97fbeb` (`verify` pass, Cloudflare Pages pass, GitGuardian pass, `mergeStateStatus: CLEAN`);
+  human review is pending.
 - Dependencies: [feature index](../feature_index.json).
 - Next: resolve PR #101 CI and review feedback, then activate the next unstarted batch feature.
