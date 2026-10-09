@@ -65,6 +65,26 @@ New interpretation, calendar, or UI behavior.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
 - Confirm all assigned units and document routes.
 
+## Decision log
+
+### Entry `condition` fields in quẻ 09 and 11
+
+- **Question**: Review removed 12 `condition` values from quẻ 09 and 11. Restore them, or keep them removed?
+- **Decision**: Keep them removed as `condition` fields; carry the substantive part as entry prose (or a note).
+- **Alternatives**: (a) restore every `condition` unchanged; (b) delete them with no replacement; (c) move only the substantive ones into prose.
+- **Rationale**: [Knowledge quality](../docs/product-specs/knowledge-quality.md) limits entry conditions to conditions that change that entry's meaning and forbids repeating authoring instructions, review identity, or general disclaimers. Most removed values were authoring-review boilerplate ("Giữ … không chuyển thành chuẩn mực chung…"). Two carried substance: the Đế Ất marriage analogy is an unverified hypothesis (a material unresolved reading), and the "tây giao" hexagram-direction reading is a project convention.
+- **Evidence**: `packages/knowledge/data/hexagrams/hexagram-09.json` and `hexagram-11.json` at `HEAD`; `docs/product-specs/knowledge-quality.md`; the independent review finding on `hexagram-11.json` `lines[4]`.
+- **Effect**: `hexagram-11.json` `lines[4]` states Chu Hy's proposal as a reconstruction and PBC's nonliteral reading explicitly. The "tây giao" caveat stays implicit because all three readings are attributed and explicitly contrasted in the overview.
+
+### Parallel writers per quẻ instead of one sequential reviewer pass
+
+- **Question**: One writer for all four quẻ, or one writer per quẻ?
+- **Decision**: One writer per quẻ, three in parallel, writing disjoint files; one fresh read-only reviewer afterwards over all four quẻ.
+- **Alternatives**: (a) four sequential writers; (b) one writer for all four quẻ.
+- **Rationale**: The four files share no write surface, and the user asked for one worker per quẻ with a single combined review. Parallel writers keep each writer's source-reading context bounded.
+- **Evidence**: `.agent-work/feat-070-10-12-parallel.js`; workflow run `60095961`.
+- **Effect**: Quẻ 09–12 all reached five overview entries and four authors on all 24 hào. The single reviewer found 6 P1 and 4 P2 defects, which confirms one review pass over four quẻ still has enough coverage.
+
 ## Handoff
 
 - State: todo.
