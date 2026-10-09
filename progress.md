@@ -16,6 +16,20 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-09 — feat-078 audited quẻ 41–44
+
+- Status: done; merged to `main` in `025efaf` (PR #103), squash-merged at the exact reviewed head `d32735968fce8b51afe4e4445b6dcec89e27248d`.
+- Result: audited quẻ 41 Sơn Trạch Tổn, 42 Phong Lôi Ích, 43 Trạch Thiên Quải and 44 Thiên Phong Cấu — all twenty-four hào plus every overview entry — against the four supplied books, and repaired every material defect found.
+- Why reopened: the feature was `done` from the retired audit machinery, but feat-068 migrated these four records to the simplified model mechanically and never reviewed them; the batch checkpoint had recorded feat-078 as already done and skipped it.
+- Scope: operator-set bounded audit, not a restructure. Content correctness only — no five-overview / four-entry normalisation, no length target, and the optional `section`, `printedPages` and `condition` fields stay. All four records keep their pre-audit shape (overview 8/7/12/14 entries; hào counts 24–43 attributed entries per quẻ).
+- Defects: 22 findings over two exhaustive rounds — quẻ 41: 3 P1; 42: 2 P0 + 1 P1; 43: 6 P0; 44: 4 P0 + 6 P1. Dominant classes were changed certainty (“có thể” where the source says “quyết chắc”/“ắt”), changed causation or object (quẻ 44 `lines[4].entries[1]` turned PBC's restraint of Sơ into sheltering Sơ), omitted conditions, and quotes or instructions attributed to a page that does not carry them. Corrections are 27 `text` edits, 1 `condition` edit, 4 added references (PBC 403, NTT 683 notes 9–10, NTT 684) and one narrowed range (`hexagram-43.json` `entries[1].references[0]` 268–269 → 268, since NHL 269 carries only hào 1–4).
+- Review: four writers audited one quẻ each with a per-entry provenance table outside the JSON; then independent read-only reviewers ran a full round 1 over all 150 attributed entries, and a round 2 that re-checked every correction against the page that carries it. `r2-h41`, `r2-h42`, `r2-h43` and `r2-h44` all returned `PASS`, 0 new defects.
+- Evidence: `./init.sh` → `=== Verification passed ===` on the reviewed head (format, lint, typecheck, build, 181 core + 97 knowledge tests); `validate:corpus` → 381 records, 381 ready, 4 supplied books, source pages valid. Exact-head CI on `d327359` was green (`verify`, Cloudflare Pages, GitGuardian) with `mergeStateStatus: CLEAN`. Structure invariants (ids, `kingWenNumber`, trigrams, aliases, topics, relations, status, line tuples, entry and reference counts) are unchanged apart from the four added references.
+- Image claims: `notes[]` is empty in all four records, so no entry asserted a page image. The Leader still rendered the two pages a decision hinged on with PyMuPDF — NTT PDF 662 prints “hình thi, thì không thể thế.” (the quẻ-42 wording), and NTT PDF 676 shows the hào-3 Chinese line with visibly corrupt glyphs, which is why `hexagram-43.json` `lines[2].entries[2].condition` keeps the reading explicitly unresolved.
+- Limits: reviewers read extracted page text, never page images, and did not execute the gates; the structure invariant comparison and the image renders are Leader-generated. Quẻ 44's round-1 reviewer was killed by a provider usage limit and had to be re-dispatched, and its round-2 report was written to the managed artifact path rather than the reviewer directory.
+- Blockers: none.
+- Next: none inside this feature. The batch continues with the next queued hexagram record — feat-073 (Review and improve quẻ 21–24 and all twenty-four hào, dependencies feat-067 and feat-041 both done) — which needs operator selection before activation.
+
 ## 2026-10-09 — feat-072 reviewed and improved quẻ 17–20
 
 - Status: done; merged to `main` in `4092aae` (PR #100), squash-merged at the exact reviewed head `07b800dd6d1ae80fb059648633f9e08410f03433`.
