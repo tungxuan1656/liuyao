@@ -146,7 +146,6 @@ must inspect each rendered page against the corresponding `notes` claim and
 record any disagreement. Neither the books nor derived page screenshots belong
 in the public repository.
 
-
 ## Decision log
 
 ### Four parallel writers, one file each
