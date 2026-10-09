@@ -1,51 +1,39 @@
-# feat-096 — Certify corpus completion against the evidence gates
+# feat-096 — Review knowledge readiness for learning and reference
 
 ## Goal
 
-Mark the dataset complete only when all recorded evidence gates pass.
+Check whether the available library supports learning and reading reference.
 
 ## Scope
 
-**Intended work:**
-
-- The complete authored and independently audited dataset, generated coverage, and release manifest.
+The existing knowledge records, useful source explanations, links, and visible gaps.
+Use focused content review under the [quality contract](../docs/product-specs/knowledge-quality.md).
 
 ## Non-goals
 
-New interpretation, calendar, or UI behavior.
+A certification system, predictive efficacy claims, or a new calculation ruleset.
 
 ## Acceptance
 
-- [ ] Full source classification and complete in-scope coverage.
-- [ ] 64 quẻ, 384 positions, minimum 1,152 three-book cells, and special passages.
-- [ ] All group ledgers, fixtures, source fingerprints, and verification decisions under the [AI review policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence).
-- [ ] Run the implemented completion gates; any stale or missing evidence rejects certification.
-- [ ] Feat-097 correction probes passed before certification; the released snapshot matches all approval inputs.
-- [ ] Remove unaudited legacy fallback, or explicitly classify retained software conventions.
-- [ ] Record edition-bound accuracy and remaining source limitations; do not assert predictive efficacy or absolute certainty.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [ ] Check that the available 64 quẻ and 384 positions are readable and linked.
+- [ ] Check useful topic navigation, examples, related concepts, and source visibility.
+- [ ] List actual missing content and known source limitations in their owning records or features.
+- [ ] Report available coverage without certification, absolute accuracy, or predictive efficacy claims.
+- [ ] Relevant package checks and ./init.sh pass.
 
 ## Relevant docs
 
-[Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
-[model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
-[licensing](../LICENSING.md), [verification](../docs/development.md).
+[Content](../docs/product-specs/knowledge-content.md), [model](../docs/design-docs/knowledge-model.md),
+[quality](../docs/product-specs/knowledge-quality.md), [sources](../docs/references/book-sources.md).
 
 ## Plan
 
-1. Confirm all audit and verification decisions match the released snapshot.
-2. Run completion gates and inspect every required coverage total.
-3. Record source limitations, verify, and commit the certified snapshot.
-
-## Verify
-
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Confirm all assigned units and document routes.
+1. Select a coherent record/topic group and compare its explanations with relevant source passages.
+2. Correct material findings and check links and meaningful conditions.
+3. Record concise remaining gaps and the next action.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: todo; not activated.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Complete prerequisites and select this content pass when needed.

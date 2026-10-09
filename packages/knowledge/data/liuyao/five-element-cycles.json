@@ -1,37 +1,27 @@
 {
-  "schemaVersion": 1,
   "id": "rule-five-element-cycles",
   "type": "rule",
   "title": "Quan hệ tương sinh và tương khắc của ngũ hành",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
-    {
-      "id": "rule-five-element-cycles-claim",
-      "kind": "calculation-rule",
-      "text": "Tương sinh theo vòng Mộc → Hỏa → Thổ → Kim → Thủy → Mộc. Tương khắc theo vòng Mộc → Thổ → Thủy → Hỏa → Kim → Mộc. Chiều quan hệ phải được giữ đúng khi phân loại Lục thân.",
-      "citationIds": ["citation-bpct-p9-technical"]
-    }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p9-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "ruleset": "liuyao-standard-v1",
   "category": "classification",
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Tương sinh theo vòng Mộc → Hỏa → Thổ → Kim → Thủy → Mộc. Tương khắc theo vòng Mộc → Thổ → Thủy → Hỏa → Kim → Mộc. Chiều quan hệ phải được giữ đúng khi phân loại Lục thân.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        }
+      ]
+    }
+  ],
   "tables": [
     {
       "kind": "element-cycles",
-      "claimIds": ["rule-five-element-cycles-claim"],
       "rows": [
         {
           "from": "wood",
@@ -82,6 +72,14 @@
           "from": "metal",
           "relation": "controls",
           "to": "wood"
+        }
+      ],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
         }
       ]
     }

@@ -1,21 +1,9 @@
 {
-  "schemaVersion": 1,
   "id": "term-decade-empty",
   "type": "term",
   "title": "Tuần Không",
   "aliases": ["Lâm Không"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "term-decade-empty-definition",
-      "kind": "structural-fact",
-      "text": "BPCT giải Tuần Không theo hai địa chi không xuất hiện trong một tuần can chi gồm mười ngày. Ví dụ tuần Giáp Tí tới Quý Dậu thiếu Tuất và Hợi; tuần Giáp Dần tới Quý Hợi thiếu Tí và Sửu.",
-      "citationIds": ["citation-bpct-ch2-decade-empty-definition"],
-      "conditions": [
-        "Định nghĩa thuộc tuần can chi, không phải tuần bảy ngày; chưa cung cấp phép đổi lịch."
-      ]
-    }
-  ],
   "relatedIds": [
     "term-earthly-branch",
     "term-heavenly-stem",
@@ -23,16 +11,19 @@
     "term-leaving-decade",
     "article-decade-empty-conditions"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch2-decade-empty-definition"],
-    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "BPCT giải Tuần Không theo hai địa chi không xuất hiện trong một tuần can chi gồm mười ngày. Ví dụ tuần Giáp Tí tới Quý Dậu thiếu Tuất và Hợi; tuần Giáp Dần tới Quý Hợi thiếu Tí và Sửu.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [41, 41],
+          "section": "XVIII — Lục Giáp Tuần Không khởi lệ",
+          "printedPages": ["34", "34"]
+        }
+      ],
+      "condition": "Định nghĩa thuộc tuần can chi, không phải tuần bảy ngày; chưa cung cấp phép đổi lịch."
+    }
+  ]
 }

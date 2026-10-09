@@ -1,51 +1,46 @@
 {
-  "schemaVersion": 1,
   "id": "article-hexagram-body-context",
   "type": "article",
   "title": "Quái thân trong câu 11: việc hỏi và tác động lên Thân",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-hexagram-body-context-appearance-and-relations",
-      "kind": "author-interpretation",
-      "text": "Câu 11 yêu cầu xét Quái thân có hiện trong quẻ hay không, rồi xem tác động của Nhật thần, Nguyệt kiến và hào động. Sinh, phù, củng, hợp được đặt phía trợ, còn khắc, hại, hình, xung phía tổn; không chỉ dùng vị trí hiện của Thân để kết luận.",
-      "citationIds": ["citation-bpct-ch6-hexagram-body"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Chưa nhập phép an Quái thân, bảng vị trí hoặc kết quả cát hung tự động. Lập trường về Hình/Hại giữ theo từng lớp văn bản đã dẫn."
-      ]
-    },
-    {
-      "id": "article-hexagram-body-context-question-role",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự cho Thân biểu thị sự thể khi hỏi việc và nhân thân khi hỏi người. Cách đọc tùy đối tượng câu hỏi, không biến tên Thân thành chẩn đoán tình trạng cơ thể.",
-      "citationIds": ["citation-bpct-ch6-hexagram-body"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    }
-  ],
   "relatedIds": [
     "term-hexagram-body",
     "term-shi-line",
     "article-day-and-month-authority-context",
     "article-support-and-control-context"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch6-hexagram-body"],
-    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Câu 11 yêu cầu xét Quái thân có hiện trong quẻ hay không, rồi xem tác động của Nhật thần, Nguyệt kiến và hào động. Sinh, phù, củng, hợp được đặt phía trợ, còn khắc, hại, hình, xung phía tổn; không chỉ dùng vị trí hiện của Thân để kết luận.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [80, 81],
+          "section": "Câu 11 — Thân vị theo Nguyệt quái thân",
+          "printedPages": ["66", "67"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Chưa nhập phép an Quái thân, bảng vị trí hoặc kết quả cát hung tự động. Lập trường về Hình/Hại giữ theo từng lớp văn bản đã dẫn."
+    },
+    {
+      "text": "Vương Hồng Tự cho Thân biểu thị sự thể khi hỏi việc và nhân thân khi hỏi người. Cách đọc tùy đối tượng câu hỏi, không biến tên Thân thành chẩn đoán tình trạng cơ thể.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [80, 81],
+          "section": "Câu 11 — Thân vị theo Nguyệt quái thân",
+          "printedPages": ["66", "67"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ]
 }

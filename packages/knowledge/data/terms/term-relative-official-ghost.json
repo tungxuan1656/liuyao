@@ -1,30 +1,27 @@
 {
-  "schemaVersion": 1,
   "id": "term-relative-official-ghost",
   "type": "term",
   "title": "Quan quỷ",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
+  "applicableRuleIds": ["rule-six-relative-classification"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-relative-official-ghost-definition",
-      "kind": "structural-fact",
       "text": "Loại Lục thân được gán khi ngũ hành của hào khắc ngũ hành của cung.",
-      "citationIds": ["citation-bpct-p9-technical", "citation-bpct-p14-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        }
+      ]
     }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-bpct-p9-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "applicableRuleIds": ["rule-six-relative-classification"]
+  ]
 }

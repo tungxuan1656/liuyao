@@ -1,280 +1,223 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-introduction-02",
   "type": "article",
   "title": "NHL — Thập Dực: nội dung và tác giả",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-traditional-authorship",
-      "kind": "author-interpretation",
       "text": "Truyền thống gắn Thập Dực với Khổng Tử; Hán thư gắn ba thánh Phục Hy,Văn Vương,Khổng Tử và hai cách gán hào từ Văn Vương/Chu Công. Không coi truyền gán là tác giả đã chứng minh.",
-      "citationIds": ["citation-nhl-intro-ch02-traditional-authorship"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [33, 33],
+          "section": "nhl-intro-ch02-traditional-authorship — reported-tradition",
+          "printedPages": ["33", "33"]
+        }
+      ],
+      "id": "nhl-intro-ch02-traditional-authorship",
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-analects-reading",
-      "kind": "author-interpretation",
       "text": "Hai đoạn Luận Ngữ được NHL xét cùng cách đọc thay ngũ thập bằng tốt và dịch bằng diệc. Ngay đọc là học Dịch cũng chỉ chứng việc đọc, không việc viết; không chọn một văn bản phục nguyên.",
-      "citationIds": ["citation-nhl-intro-ch02-analects-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [33, 34],
+          "section": "nhl-intro-ch02-analects-reading — quotation",
+          "printedPages": ["33", "34"]
+        }
+      ],
       "attribution": {
         "author": "Kinh/Truyện và lời được dẫn tại nhl-intro-ch02",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-authorship-evaluation",
-      "kind": "author-interpretation",
-      "text": "NHL dựa nội dung pha Nho/Lão, chữ Tử viết và giọng văn khác nhau để nghi một tác giả. Ông thuật Âu Dương Tu/Diệp Thích và Khang Hữu Vi/Phùng Hữu Lan, nghi nhiều người Chiến Quốc tới đầu Hán; đây là đánh giá có lịch sử, không consensus được corpus chứng nhận.",
-      "citationIds": ["citation-nhl-intro-ch02-authorship-evaluation"],
+      "text": "NHL dựa nội dung pha Nho/Lão, chữ Tử viết và giọng văn khác nhau để nghi một tác giả. Ông thuật Âu Dương Tu/Diệp Thích và Khang Hữu Vi/Phùng Hữu Lan, nghi nhiều người Chiến Quốc tới đầu Hán; đây là đánh giá có lịch sử, không consensus được corpus chứng nhận.\n\nDanh sách bảy truyện thành mười thiên khi Thoán,Tượng,Hệ Từ mỗi hai; NHL so PBC và Legge có cách đếm khác và chọn gọi bảy truyện. Không ép mọi ấn bản vào một count.\n\nNHL qua Vũ Đồng đặt người viết Thoán sau Khổng Tử, qua Nghiêm Linh Phong so nội dung với Luận Ngữ/Trung Dung. Hai ví dụ trời vận hành và trung hòa là tương đồng được dẫn, không chứng niên đại độc lập.\n\nNHL tách tượng là hình thái/biểu tượng, rồi vật tượng/ý tượng; dẫn Wilhelm về Tiểu Tượng không liên quan ảnh toàn quẻ. Đó là phân loại và đánh giá qua NHL.\n\nNHL đối Lữ xử thế tha hương với Đại Tượng hình phạt, và Tiệm hào2 với lời đền đáp người giúp; ông cho là thêm luân lý/gượng ép. Không phát hành khuyên xét xử người hiện đại.\n\nNHL mô tả hai thiên Hệ Từ gom nhiều chủ đề: Càn Khôn, lập Dịch, âm dương, số/bói, đồ dùng, tuần hoàn, hào và tổng kết. Đây là bản giới thiệu, không record các24 chương thuộc061/062.\n\nNHL chất vấn nghĩa Truân, Quải→Cấu và khác nghĩa Nhu/Tiểu Súc/Đại Súc giữa Tự Quái và Quái/Hào từ, nhưng vẫn chọn trích đầu quẻ. Không hòa giải các nghĩa thành một.\n\nNHL xếp giá trị các truyện theo đánh giá riêng, ghi chỉ dịch Hệ Từ riêng, chọn các đoạn khác theo quẻ; theo PBC đặt Tự Quái đầu quẻ. Không coi tuyên bố method là chứng nhận các record sau đầy đủ.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [34, 34],
+          "section": "nhl-intro-ch02-authorship-evaluation — commentary",
+          "printedPages": ["34", "34"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [34, 35],
+          "section": "nhl-intro-ch02-seven-ten — commentary",
+          "printedPages": ["34", "35"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [36, 36],
+          "section": "nhl-intro-ch02-tuan-evaluation — cited-position",
+          "printedPages": ["36", "36"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [37, 37],
+          "section": "nhl-intro-ch02-xiang-vocabulary — commentary",
+          "printedPages": ["37", "37"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [38, 39],
+          "section": "nhl-intro-ch02-xiang-lu-jian — example",
+          "printedPages": ["38", "39"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [39, 40],
+          "section": "nhl-intro-ch02-hetu-overview — commentary",
+          "printedPages": ["39", "40"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [43, 43],
+          "section": "nhl-intro-ch02-xugua-counterexamples — commentary",
+          "printedPages": ["43", "43"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [44, 44],
+          "section": "nhl-intro-ch02-selection-presentation — commentary",
+          "printedPages": ["44", "44"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-seven-ten",
-      "kind": "author-interpretation",
-      "text": "Danh sách bảy truyện thành mười thiên khi Thoán,Tượng,Hệ Từ mỗi hai; NHL so PBC và Legge có cách đếm khác và chọn gọi bảy truyện. Không ép mọi ấn bản vào một count.",
-      "citationIds": ["citation-nhl-intro-ch02-seven-ten"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-tuan-example",
-      "kind": "author-interpretation",
       "text": "Thoán Truyện Càn được dẫn để giảng các đức nguyên/hanh/lợi/trinh, sáu thời và thái hòa; câu kinh ngắn và chú giải triết học là hai lớp khác nhau, không cùng tác giả suy ra.",
-      "citationIds": ["citation-nhl-intro-ch02-tuan-example"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [35, 36],
+          "section": "nhl-intro-ch02-tuan-example — quotation",
+          "printedPages": ["35", "36"]
+        }
+      ],
+      "id": "nhl-intro-ch02-tuan-example",
       "attribution": {
         "author": "Thoán Truyện — tác giả chưa xác lập",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-tuan-evaluation",
-      "kind": "author-interpretation",
-      "text": "NHL qua Vũ Đồng đặt người viết Thoán sau Khổng Tử, qua Nghiêm Linh Phong so nội dung với Luận Ngữ/Trung Dung. Hai ví dụ trời vận hành và trung hòa là tương đồng được dẫn, không chứng niên đại độc lập.",
-      "citationIds": ["citation-nhl-intro-ch02-tuan-evaluation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-xiang-borrowings",
-      "kind": "author-interpretation",
       "text": "Nguồn so sửa lỗi ở Luận Ngữ/Ích, giấu ác nêu thiện ở Trung Dung và minh đức ở Đại Học/Tấn, dùng để nhận màu luân lý Đại Tượng; không gộp thành câu của Khổng Tử.",
-      "citationIds": ["citation-nhl-intro-ch02-xiang-borrowings"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [36, 37],
+          "section": "nhl-intro-ch02-xiang-borrowings — quotation",
+          "printedPages": ["36", "37"]
+        }
+      ],
       "attribution": {
         "author": "Luận Ngữ,Trung Dung,Đại Học và Đại Tượng — được đối chiếu",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-xiang-vocabulary",
-      "kind": "author-interpretation",
-      "text": "NHL tách tượng là hình thái/biểu tượng, rồi vật tượng/ý tượng; dẫn Wilhelm về Tiểu Tượng không liên quan ảnh toàn quẻ. Đó là phân loại và đánh giá qua NHL.",
-      "citationIds": ["citation-nhl-intro-ch02-xiang-vocabulary"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-xiang-qian",
-      "kind": "author-interpretation",
       "text": "Đại Tượng Càn nói tự cường; Tiểu Tượng ba hào đầu giải ẩn dưới, đức phổ biến và trở lại đạo. NHL nhận nhiều chỗ lặp; lời hào và lời tượng không bị nhập một lớp.",
-      "citationIds": ["citation-nhl-intro-ch02-xiang-qian"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [37, 38],
+          "section": "nhl-intro-ch02-xiang-qian — quotation",
+          "printedPages": ["37", "38"]
+        }
+      ],
+      "id": "nhl-intro-ch02-xiang-qian",
       "attribution": {
         "author": "Đại/Tiểu Tượng Càn — tác giả chưa xác lập",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-xiang-lu-jian",
-      "kind": "author-interpretation",
-      "text": "NHL đối Lữ xử thế tha hương với Đại Tượng hình phạt, và Tiệm hào2 với lời đền đáp người giúp; ông cho là thêm luân lý/gượng ép. Không phát hành khuyên xét xử người hiện đại.",
-      "citationIds": ["citation-nhl-intro-ch02-xiang-lu-jian"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-hetu-overview",
-      "kind": "author-interpretation",
-      "text": "NHL mô tả hai thiên Hệ Từ gom nhiều chủ đề: Càn Khôn, lập Dịch, âm dương, số/bói, đồ dùng, tuần hoàn, hào và tổng kết. Đây là bản giới thiệu, không record các24 chương thuộc061/062.",
-      "citationIds": ["citation-nhl-intro-ch02-hetu-overview"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-hetu-zhu",
-      "kind": "author-interpretation",
       "text": "Chu Hy được thuật phân hệ từ kinh và Hệ Từ Truyện do Khổng Tử; NHL bác căn cứ phân ấy và nghi nhóm môn sinh nhiều thời, Vũ Đồng đặt sau Thoán/Tượng. Không đổi thành tác giả chắc chắn.",
-      "citationIds": ["citation-nhl-intro-ch02-hetu-zhu"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [39, 40],
+          "section": "nhl-intro-ch02-hetu-zhu — cited-position",
+          "printedPages": ["39", "40"]
+        }
+      ],
+      "id": "nhl-intro-ch02-hetu-zhu",
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-wenyan-examples",
-      "kind": "author-interpretation",
       "text": "Văn Ngôn Càn hào3 về tiến đức,thành,tận việc và các câu tiềm long lặp được NHL đối chiếu; ông khen đoạn sâu sắc nhưng chê độ không đều, chỉ chọn trích vào Càn/Khôn.",
-      "citationIds": ["citation-nhl-intro-ch02-wenyan-examples"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [40, 41],
+          "section": "nhl-intro-ch02-wenyan-examples — quotation",
+          "printedPages": ["40", "41"]
+        }
+      ],
       "attribution": {
         "author": "Văn Ngôn Càn — tác giả chưa xác lập",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-shuogua-opening",
-      "kind": "author-interpretation",
-      "text": "Nguồn trích Thuyết Quái chương đầu về cỏ thi và chương2 về tam tài trời/đất/người; đây là lời được dẫn, không toàn truyện hay phép casting mới.",
-      "citationIds": ["citation-nhl-intro-ch02-shuogua-opening"],
+      "text": "Nguồn trích Thuyết Quái chương đầu về cỏ thi và chương2 về tam tài trời/đất/người; đây là lời được dẫn, không toàn truyện hay phép casting mới.\n\nCác đoạn chương7/8/11 nêu đức tám quái, tám thú và các vật của Càn/Li. NHL nghi gom của thầy bói, không chứng minh tác giả; các tượng không là classifier vật/người.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [41, 41],
+          "section": "nhl-intro-ch02-shuogua-opening — quotation",
+          "printedPages": ["41", "41"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [41, 42],
+          "section": "nhl-intro-ch02-shuogua-associations — quotation",
+          "printedPages": ["41", "42"]
+        }
+      ],
       "attribution": {
         "author": "Thuyết Quái — tác giả chưa xác lập",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-shuogua-associations",
-      "kind": "author-interpretation",
-      "text": "Các đoạn chương7/8/11 nêu đức tám quái, tám thú và các vật của Càn/Li. NHL nghi gom của thầy bói, không chứng minh tác giả; các tượng không là classifier vật/người.",
-      "citationIds": ["citation-nhl-intro-ch02-shuogua-associations"],
-      "attribution": {
-        "author": "Thuyết Quái — tác giả chưa xác lập",
-        "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-xugua-order",
-      "kind": "author-interpretation",
       "text": "Tự Quái giải30/34 bằng trời đất/nhân sự và chuỗi Càn Khôn→Truân→Mông→Nhu→Tụng→Sư; NHL nêu quẻ nhân sự nằm thượng, vũ trụ nằm hạ và khó tin mối ăn uống/kiện cáo.",
-      "citationIds": ["citation-nhl-intro-ch02-xugua-order"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [42, 43],
+          "section": "nhl-intro-ch02-xugua-order — quotation",
+          "printedPages": ["42", "43"]
+        }
+      ],
       "attribution": {
         "author": "Tự Quái — tác giả chưa xác lập",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-xugua-counterexamples",
-      "kind": "author-interpretation",
-      "text": "NHL chất vấn nghĩa Truân, Quải→Cấu và khác nghĩa Nhu/Tiểu Súc/Đại Súc giữa Tự Quái và Quái/Hào từ, nhưng vẫn chọn trích đầu quẻ. Không hòa giải các nghĩa thành một.",
-      "citationIds": ["citation-nhl-intro-ch02-xugua-counterexamples"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-zagua-examples",
-      "kind": "author-interpretation",
       "text": "Tạp Quái có câu gộp Càn/Khôn,Tỷ/Sư,Lâm/Quán và Phệ Hạp/Bí; NHL thấy Bí vô sắc khó hiểu, giữ lời giải Chu Hy và Legge xem như trò trí. Không sửa tiêu đề VII dù câu mở gọi Tự Quái.",
-      "citationIds": ["citation-nhl-intro-ch02-zagua-examples"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [43, 44],
+          "section": "nhl-intro-ch02-zagua-examples — quotation",
+          "printedPages": ["43", "44"]
+        }
+      ],
       "attribution": {
         "author": "Tạp Quái và lời Chu Hy/Legge được thuật",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-02-nhl-intro-ch02-selection-presentation",
-      "kind": "author-interpretation",
-      "text": "NHL xếp giá trị các truyện theo đánh giá riêng, ghi chỉ dịch Hệ Từ riêng, chọn các đoạn khác theo quẻ; theo PBC đặt Tự Quái đầu quẻ. Không coi tuyên bố method là chứng nhận các record sau đầy đủ.",
-      "citationIds": ["citation-nhl-intro-ch02-selection-presentation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-intro-ch02-traditional-authorship",
-      "citation-nhl-intro-ch02-analects-reading",
-      "citation-nhl-intro-ch02-authorship-evaluation",
-      "citation-nhl-intro-ch02-seven-ten",
-      "citation-nhl-intro-ch02-tuan-example",
-      "citation-nhl-intro-ch02-tuan-evaluation",
-      "citation-nhl-intro-ch02-xiang-borrowings",
-      "citation-nhl-intro-ch02-xiang-vocabulary",
-      "citation-nhl-intro-ch02-xiang-qian",
-      "citation-nhl-intro-ch02-xiang-lu-jian",
-      "citation-nhl-intro-ch02-hetu-overview",
-      "citation-nhl-intro-ch02-hetu-zhu",
-      "citation-nhl-intro-ch02-wenyan-examples",
-      "citation-nhl-intro-ch02-shuogua-opening",
-      "citation-nhl-intro-ch02-shuogua-associations",
-      "citation-nhl-intro-ch02-xugua-order",
-      "citation-nhl-intro-ch02-xugua-counterexamples",
-      "citation-nhl-intro-ch02-zagua-examples",
-      "citation-nhl-intro-ch02-selection-presentation"
-    ],
-    "note": "Đối chiếu ảnh đầy trang 1.5x và extraction của các trang thuộc đơn vị. Chỉ source comparison059; audit092,verification/certification còn mở. Không xuất bản prose/ảnh nguồn."
-  }
+  ]
 }

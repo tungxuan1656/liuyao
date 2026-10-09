@@ -1,40 +1,33 @@
 {
-  "schemaVersion": 1,
   "id": "term-death-stage",
   "type": "term",
   "title": "Tử trong vòng Trường Sinh",
   "aliases": ["Tử"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "term-death-stage-definition",
-      "kind": "structural-fact",
-      "text": "Tử là một tên giai đoạn trong vòng Trường Sinh của BPCT, nằm sau Bệnh và trước Mộ. Tên thuộc hệ thống ngũ hành; không xác định sự chết của người hoặc kết quả y tế.",
-      "citationIds": [
-        "citation-bpct-ch1-life-cycle",
-        "citation-bpct-ch6-death-store-extinction-empty"
-      ]
-    }
-  ],
   "relatedIds": [
     "term-growth-stage",
     "term-store-stage",
     "term-extinction-stage",
     "article-death-store-extinction-empty-context"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch1-life-cycle",
-      "citation-bpct-ch6-death-store-extinction-empty"
-    ],
-    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Tử là một tên giai đoạn trong vòng Trường Sinh của BPCT, nằm sau Bệnh và trước Mộ. Tên thuộc hệ thống ngũ hành; không xác định sự chết của người hoặc kết quả y tế.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [16, 16],
+          "section": "XVII — Vòng Trường Sinh",
+          "printedPages": ["10", "10"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [79, 79],
+          "section": "Câu 7 — Tử, Mộ, Tuyệt, Không và phạm vi xét biến",
+          "printedPages": ["65", "65"]
+        }
+      ]
+    }
+  ]
 }

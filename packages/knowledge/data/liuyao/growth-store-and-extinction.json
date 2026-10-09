@@ -1,45 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-growth-store-and-extinction",
   "type": "article",
   "title": "Trường Sinh, Mộ và Tuyệt trong mục Tứ sinh",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-growth-store-and-extinction-priority",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự đặt trọng tâm vào Trường Sinh, Mộ và Tuyệt khi xét vòng ngũ hành trong quẻ. Việc cho các giai đoạn còn lại kém quan trọng là lập trường của mục 8, không phải kết luận chung cho mọi trường phái.",
-      "citationIds": ["citation-bpct-ch5-four-birthplaces"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-growth-store-and-extinction-shared-earth-water",
-      "kind": "author-interpretation",
-      "text": "Lệ ở mục này cho Thủy và Thổ cùng nơi Sinh ở Thân, Mộ ở Thìn và Tuyệt ở Tị. Không tách Thổ ra theo một vòng khác khi mô tả cách dùng của đoạn này.",
-      "citationIds": ["citation-bpct-ch5-four-birthplaces", "citation-bpct-ch1-life-cycle"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-growth-store-and-extinction-relations",
-      "kind": "author-interpretation",
-      "text": "Nguồn giải Hỏa gặp Mão theo tương sinh, gặp Thìn, Mùi hoặc Sửu theo tiết khí. Các ví dụ nhấn mạnh xét quan hệ ngũ hành thay cho chỉ đọc tên Mộc Dục, Quan Đới, Suy hoặc Dưỡng.",
-      "citationIds": ["citation-bpct-ch5-four-birthplaces"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Chỉ chọn các ví dụ đủ rõ; không nhận toàn bộ các câu Lâm Quan, Tiến và Thoái trong đoạn làm bảng quy tắc."
-      ]
-    }
-  ],
   "relatedIds": [
     "term-four-birthplaces",
     "term-growth-stage",
@@ -47,16 +10,44 @@
     "term-extinction-stage",
     "rule-five-element-cycles"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch5-four-birthplaces", "citation-bpct-ch1-life-cycle"],
-    "note": "Đã đọc và xem ảnh mục 8 PDF 70, đối chiếu XVII PDF 16–17. Hai lỗi danh sách được xử lý ở các thuật ngữ liên quan. Chưa nhập câu Ngọ có Lâm Quan ở Ngọ là Thoái thần hoặc toàn bộ ánh xạ mười hai giai đoạn; các lỗi và phần loại được ghi ở tài liệu nguồn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Vương Hồng Tự đặt trọng tâm vào Trường Sinh, Mộ và Tuyệt khi xét vòng ngũ hành trong quẻ. Việc cho các giai đoạn còn lại kém quan trọng là lập trường của mục 8, không phải kết luận chung cho mọi trường phái.\n\nLệ ở mục này cho Thủy và Thổ cùng nơi Sinh ở Thân, Mộ ở Thìn và Tuyệt ở Tị. Không tách Thổ ra theo một vòng khác khi mô tả cách dùng của đoạn này.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 8 — Vị trí Tứ sinh",
+          "printedPages": ["58", "58"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [16, 16],
+          "section": "XVII — Vòng Trường Sinh",
+          "printedPages": ["10", "10"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "text": "Nguồn giải Hỏa gặp Mão theo tương sinh, gặp Thìn, Mùi hoặc Sửu theo tiết khí. Các ví dụ nhấn mạnh xét quan hệ ngũ hành thay cho chỉ đọc tên Mộc Dục, Quan Đới, Suy hoặc Dưỡng.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 8 — Vị trí Tứ sinh",
+          "printedPages": ["58", "58"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Chỉ chọn các ví dụ đủ rõ; không nhận toàn bộ các câu Lâm Quan, Tiến và Thoái trong đoạn làm bảng quy tắc."
+    }
+  ]
 }

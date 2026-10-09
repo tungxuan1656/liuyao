@@ -1,212 +1,119 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-thuong-03",
   "type": "article",
   "title": "NHL — Hệ Từ Thượng, chương 3",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Thoán nói tượng, hào nói biến.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-01-original-reading"],
+      "text": "Thoán nói tượng, hào nói biến.\n\nCát hung nói đắc thất; hối lận nói lỗi nhỏ; vô cữu nói sửa lỗi.\n\nQuý tiện dựa vị; nhỏ lớn dựa quái; cát hung dựa từ.\n\nDự phòng hối lận ở giới, khởi vô cữu ở hối.\n\nQuẻ có nhỏ/lớn, lời có hiểm/dị, từ chỉ hướng đi.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-02-original-reading — original-reading",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-03-original-reading — original-reading",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-04-original-reading — original-reading",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-05-original-reading — original-reading",
+          "printedPages": ["340", "340"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL quy Thoán từ cho Văn Vương, hào từ cho Chu Công theo truyền thống; tượng gồm ý/hình.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-01-translation"],
+      "text": "NHL quy Thoán từ cho Văn Vương, hào từ cho Chu Công theo truyền thống; tượng gồm ý/hình.\n\nNHL dịch vô cữu là khéo sửa lỗi, không phải không từng phạm lỗi.\n\nBản dịch yêu cầu xét ngôi hào, tượng quẻ và lời đoán ở các câu khác nhau.\n\nNHL hiểu giới là ranh thiện/ác và chấn là lòng sửa lỗi bắt đầu hoạt động.\n\nBản dịch coi từ chỉ chiều diễn biến chứ không định mệnh bất biến.\n\nNHL ví ngũ sang/sơ hèn và Bĩ tiểu lai/Thái đại lai; là loại ngôi và âm dương cổ,không phẩm giá hiện tại.\n\nNHL gọi dương thịnh/âm suy quẻ lớn,ngược lại quẻ nhỏ,không thêm định lượng.\n\nNHL nhận từ chỉ hướng cũng là cách xử sự,và dè dặt suy Dịch có thiên mệnh/luật tự nhiên chứ không định mệnh. Không xác nhận mọi người tự kiểm mọi kết quả.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-01-translation — translation",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-02-translation — translation",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-03-translation — translation",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-04-translation — translation",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "section-05-translation — translation",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "s03-position-note — note",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "s05-large-note — note",
+          "printedPages": ["340", "340"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 341],
+          "section": "s05-agency-note — note",
+          "printedPages": ["340", "341"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Cát hung nói đắc thất; hối lận nói lỗi nhỏ; vô cữu nói sửa lỗi.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-02-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch vô cữu là khéo sửa lỗi, không phải không từng phạm lỗi.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-02-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-03-original-reading",
-      "kind": "author-interpretation",
-      "text": "Quý tiện dựa vị; nhỏ lớn dựa quái; cát hung dựa từ.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-03-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-03-translation",
-      "kind": "author-interpretation",
-      "text": "Bản dịch yêu cầu xét ngôi hào, tượng quẻ và lời đoán ở các câu khác nhau.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-03-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Dự phòng hối lận ở giới, khởi vô cữu ở hối.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-04-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-04-translation",
-      "kind": "author-interpretation",
-      "text": "NHL hiểu giới là ranh thiện/ác và chấn là lòng sửa lỗi bắt đầu hoạt động.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-04-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-05-original-reading",
-      "kind": "author-interpretation",
-      "text": "Quẻ có nhỏ/lớn, lời có hiểm/dị, từ chỉ hướng đi.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-05-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-section-05-translation",
-      "kind": "author-interpretation",
-      "text": "Bản dịch coi từ chỉ chiều diễn biến chứ không định mệnh bất biến.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-section-05-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-s02-anonymous-alternative",
-      "kind": "author-interpretation",
       "text": "NHL báo có sách giải hối là cơ được cát,lận là cơ hung; tên sách/tác giả không được bổ.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-s02-anonymous-alternative"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [340, 340],
+          "section": "s02-anonymous-alternative — note",
+          "printedPages": ["340", "340"]
+        }
+      ],
       "attribution": {
         "author": "Sách không nêu tên — lời được NHL dẫn",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-s03-position-note",
-      "kind": "author-interpretation",
-      "text": "NHL ví ngũ sang/sơ hèn và Bĩ tiểu lai/Thái đại lai; là loại ngôi và âm dương cổ,không phẩm giá hiện tại.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-s03-position-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-s05-large-note",
-      "kind": "author-interpretation",
-      "text": "NHL gọi dương thịnh/âm suy quẻ lớn,ngược lại quẻ nhỏ,không thêm định lượng.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-s05-large-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-03-nhl-he-tu-shang-03-s05-agency-note",
-      "kind": "author-interpretation",
-      "text": "NHL nhận từ chỉ hướng cũng là cách xử sự,và dè dặt suy Dịch có thiên mệnh/luật tự nhiên chứ không định mệnh. Không xác nhận mọi người tự kiểm mọi kết quả.",
-      "citationIds": ["citation-nhl-he-tu-shang-03-s05-agency-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-shang-03-section-01-original-reading",
-      "citation-nhl-he-tu-shang-03-section-01-translation",
-      "citation-nhl-he-tu-shang-03-section-02-original-reading",
-      "citation-nhl-he-tu-shang-03-section-02-translation",
-      "citation-nhl-he-tu-shang-03-section-03-original-reading",
-      "citation-nhl-he-tu-shang-03-section-03-translation",
-      "citation-nhl-he-tu-shang-03-section-04-original-reading",
-      "citation-nhl-he-tu-shang-03-section-04-translation",
-      "citation-nhl-he-tu-shang-03-section-05-original-reading",
-      "citation-nhl-he-tu-shang-03-section-05-translation",
-      "citation-nhl-he-tu-shang-03-s02-anonymous-alternative",
-      "citation-nhl-he-tu-shang-03-s03-position-note",
-      "citation-nhl-he-tu-shang-03-s05-large-note",
-      "citation-nhl-he-tu-shang-03-s05-agency-note"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

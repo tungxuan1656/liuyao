@@ -186,9 +186,11 @@ export function validateKnowledgeCatalog(catalog: KnowledgeCatalog): void {
       'publication',
       'rights',
       'provenance',
+      ...(raw && typeof raw === 'object' && 'limitations' in raw ? ['limitations'] : []),
     ]);
     id(item.id, `${path}.id`, 'source');
     sourceIds.add(register(item.id, path));
+    if (item.limitations !== undefined) stringArray(item.limitations, path + '.limitations');
     for (const field of ['title', 'author', 'publication', 'rights', 'provenance'])
       text(item[field], `${path}.${field}`);
   });

@@ -1,184 +1,88 @@
-import { readFile, writeFile, readdir, mkdir, rename } from 'node:fs/promises';
-import { createHash } from 'node:crypto';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import Ajv from 'ajv';
-import addFormats from 'ajv-formats';
-import { format, resolveConfig } from 'prettier';
-import { checkCorpus } from './corpus-checks.mjs';
-import { coverageReport } from './corpus-coverage.mjs';
-import { recordSchemaName } from './record-schema-dispatch.mjs';
-import { createReleaseProjection } from './release-projection.mjs';
-import { loadAuditReview } from './audit-loader.mjs';
-import { createAuditStatus } from './audit-status.mjs';
-import { authoringCrosswalk } from './authoring-crosswalk.mjs';
-
+import { createHash } from 'node:crypto';
+import { validateCorpus, runtimeValidatorSource } from './content-validation.mjs';
+import { projectCorpus } from './release-projection.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
-const dataRoot = path.join(root, 'data');
 const repositoryRoot = path.resolve(root, '../..');
-const checkOnly = process.argv.includes('--check');
-const requireComplete = process.argv.includes('--require-complete');
-const supportedFlags = new Set(['--check', '--check-books', '--require-complete']);
-for (const flag of process.argv.slice(2))
-  if (flag.startsWith('--') && !supportedFlags.has(flag))
-    throw new Error(`Unknown corpus validation option: ${flag}`);
-const ajv = new Ajv({ allErrors: true, strictTypes: false, strictRequired: false });
-addFormats(ajv);
-const readJson = async file => {
-  try {
-    return JSON.parse(await readFile(file, 'utf8'));
-  } catch (cause) {
-    throw new Error(`Could not read valid JSON: ${path.relative(root, file)}`, { cause });
-  }
-};
-const validators = new Map();
-async function validateFile(file, schemaName) {
-  const value = await readJson(file);
-  if (schemaName === 'record') schemaName = recordSchemaName(value, path.relative(root, file));
-  if (!validators.has(schemaName))
-    validators.set(
-      schemaName,
-      ajv.compile(await readJson(path.join(root, 'schema', `${schemaName}.schema.json`))),
-    );
-  const validate = validators.get(schemaName);
-  if (!validate(value))
-    throw new Error(
-      `${path.relative(root, file)}: ${ajv.errorsText(validate.errors, { separator: '\n' })}`,
-    );
-  return value;
+const data = path.join(root, 'data');
+const flags = new Set(process.argv.slice(2));
+for (const flag of flags)
+  if (!['--check', '--check-books'].includes(flag)) throw new Error('Unknown flag: ' + flag);
+function json(file) {
+  return JSON.parse(readFileSync(file, 'utf8'));
 }
-function resolveData(relative) {
-  const full = path.resolve(dataRoot, relative);
-  if (!full.startsWith(dataRoot + path.sep) || !relative.endsWith('.json'))
-    throw new Error(`Unsafe corpus path: ${relative}`);
-  return full;
+function recordFiles(dir) {
+  return readdirSync(dir, { withFileTypes: true }).flatMap(item =>
+    item.isDirectory()
+      ? recordFiles(path.join(dir, item.name))
+      : item.name.endsWith('.json')
+        ? [path.join(dir, item.name)]
+        : [],
+  );
 }
-const manifest = await validateFile(path.join(dataRoot, 'manifest.json'), 'manifest');
-const { sources } = await validateFile(resolveData(manifest.sourceFile), 'sources');
-if (process.argv.includes('--check-books')) {
-  for (const source of sources)
-    for (const edition of source.editions) {
-      const file = path.resolve(root, '../..', edition.localInputPath);
-      const hash = createHash('sha256')
-        .update(await readFile(file))
-        .digest('hex');
-      if (hash !== edition.sha256)
-        throw new Error(`${edition.id}: supplied PDF fingerprint changed`);
-    }
-}
-const citations = [];
-for (const file of manifest.citationFiles)
-  citations.push(...(await validateFile(resolveData(file), 'citations')).citations);
-const records = [];
-for (const file of manifest.recordFiles)
-  records.push(await validateFile(resolveData(file), 'record'));
-const listedFiles = new Set([...manifest.recordFiles, ...manifest.citationFiles]);
-for (const directory of [
+const directories = [
   'trigrams',
   'hexagrams',
   'terms',
   'casting',
   'liuyao',
+  'foundations',
   'lessons',
-  'citations',
-]) {
-  const entries = await readdir(path.join(dataRoot, directory), { withFileTypes: true }).catch(
-    error => {
-      if (error.code === 'ENOENT') return [];
-      throw error;
-    },
-  );
-  for (const entry of entries)
-    if (entry.name.endsWith('.json') && !listedFiles.has(`${directory}/${entry.name}`))
-      throw new Error(`Unlisted authored JSON: ${directory}/${entry.name}`);
-}
-const legacy = await readJson(path.join(dataRoot, 'legacy/catalog.json'));
-if (legacy.reviewStatus !== 'unaudited')
-  throw new Error('Compatibility snapshot must remain explicitly unaudited');
-const checked = checkCorpus({
-  manifest,
+];
+const files = directories.flatMap(dir => recordFiles(path.join(data, dir))).sort();
+const records = files.map(json);
+const sources = json(path.join(data, 'sources.json')).sources;
+const result = validateCorpus(records, sources, { repositoryRoot });
+if (flags.has('--check-books'))
+  for (const source of sources)
+    for (const edition of source.editions) {
+      if (!edition.sha256 || !edition.localInputPath) continue;
+      const digest = createHash('sha256')
+        .update(readFileSync(path.join(repositoryRoot, edition.localInputPath)))
+        .digest('hex');
+      if (digest !== edition.sha256)
+        throw new Error(source.id + ': local PDF differs from selected edition');
+    }
+const { metadata, catalog, ready } = projectCorpus(
+  records,
   sources,
-  citations,
-  records,
-  legacy,
-  repositoryRoot,
-});
-const review = await loadAuditReview({
-  repositoryRoot,
-  context: {
-    manifest,
-    records,
-    citations,
-    sources,
-    repositoryRoot,
-    fixtureBindings: [],
-  },
-});
-const projection = createReleaseProjection({ manifest, records, citations, sources });
-const auditStatus = createAuditStatus({
-  context: {
-    manifest,
-    records,
-    citations,
-    sources,
-    repositoryRoot,
-    fixtureBindings: [],
-    contentSnapshotIdentity: projection.snapshotIdentity,
-  },
-  review,
-});
-if (requireComplete && !auditStatus.complete)
-  throw new Error('Audit completion gates are closed (--require-complete)');
-const report = coverageReport({ manifest, records, citations, legacy, checked, auditStatus });
-const crosswalk = authoringCrosswalk({
-  registry: review.registry,
-  inventoryText: await readFile(path.join(repositoryRoot, review.registry.inventory.path), 'utf8'),
-  manifest,
-  records,
-  legacy,
-  checked,
-  coverage: report,
-});
-report.authoringCrosswalk = {
-  path: 'packages/knowledge/reports/authoring-crosswalk.json',
-  ...crosswalk.counts,
-  evidenceNote: crosswalk.evidenceNote,
-};
-await saveGenerated('reports/coverage.json', JSON.stringify(report));
-await saveGenerated('reports/authoring-crosswalk.json', JSON.stringify(crosswalk));
-await saveGenerated('reports/audit-status.json', JSON.stringify(auditStatus));
-await saveGenerated('src/book-release.generated.json', `${JSON.stringify(projection, null, 2)}\n`);
-const generated =
-  [
-    '// Generated by scripts/validate-corpus.mjs. Do not edit.',
-    "import type { BookCitation } from './book-schema.js';",
-    "import type { BookRecordVersioned, ReleasedBookManifest, ReleasedBookSource } from './book-schema-v2.js';",
-    "import release from './book-release.generated.json' with { type: 'json' };",
-    'export const BOOK_RECORDS = release.records as unknown as readonly BookRecordVersioned[];',
-    'export const BOOK_CITATIONS = release.citations as unknown as readonly BookCitation[];',
-    'export const BOOK_SOURCES = release.sources as unknown as readonly ReleasedBookSource[];',
-    'export const BOOK_MANIFEST = release as unknown as ReleasedBookManifest;',
-    'export const BOOK_SNAPSHOT_IDENTITY = release.snapshotIdentity as string;',
-  ].join('\n') + '\n';
-await saveGenerated('src/book-data.generated.ts', generated);
-console.log(
-  `Corpus valid: ${records.length} records, ${report.claims.total} claims, ${citations.length} citations; ${report.hexagrams.reviewed}/64 quẻ, ${report.lines.reviewedPositions}/384 line positions.`,
+  json(path.join(data, 'bibliography.json')),
 );
-console.log(
-  `Coverage: packages/knowledge/reports/coverage.json. Source fidelity requires passage review; schema success does not certify meaning.`,
-);
-
-async function saveGenerated(relative, content) {
-  const file = path.join(root, relative);
-  const formatted = await format(content, { ...(await resolveConfig(file)), filepath: file });
-  const previous = await readFile(file, 'utf8').catch(error => {
-    if (error.code === 'ENOENT') return null;
-    throw error;
-  });
-  if (previous === formatted) return;
-  if (checkOnly) throw new Error(`Stale generated corpus output: ${relative}`);
-  await mkdir(path.dirname(file), { recursive: true });
-  const temporary = `${file}.${process.pid}.tmp`;
-  await writeFile(temporary, formatted);
-  await rename(temporary, file);
+const outputs = new Map([
+  [path.join(root, '.generated/runtime/validate-record.ts'), runtimeValidatorSource()],
+  [path.join(root, '.generated/runtime/index.json'), JSON.stringify(metadata) + '\n'],
+  [path.join(root, '.generated/runtime/catalog.json'), JSON.stringify(catalog) + '\n'],
+  ...ready.map(record => [
+    path.join(root, 'dist/content', record.id + '.json'),
+    JSON.stringify(record) + '\n',
+  ]),
+]);
+for (const [file, text] of outputs) {
+  if (flags.has('--check')) {
+    if (!existsSync(file) || readFileSync(file, 'utf8') !== text)
+      throw new Error('Stale or missing build output: ' + path.relative(root, file));
+  } else {
+    mkdirSync(path.dirname(file), { recursive: true });
+    if (!existsSync(file) || readFileSync(file, 'utf8') !== text) writeFileSync(file, text);
+  }
 }
+const contentDir = path.join(root, 'dist/content');
+if (existsSync(contentDir))
+  for (const name of readdirSync(contentDir)) {
+    const file = path.join(contentDir, name);
+    if (!outputs.has(file)) {
+      if (flags.has('--check')) throw new Error('Unlisted content asset: ' + name);
+      else rmSync(file);
+    }
+  }
+console.log(
+  'Knowledge: ' +
+    result.records +
+    ' records; ' +
+    result.ready +
+    ' ready; ' +
+    sources.length +
+    ' supplied books. Structural links and source pages valid.',
+);

@@ -1,48 +1,41 @@
 {
-  "schemaVersion": 1,
   "id": "term-hexagram-body",
   "type": "term",
   "title": "Quái thân",
   "aliases": ["Nguyệt quái thân"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-shi-line", "article-hexagram-body-context"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-hexagram-body-definition",
-      "kind": "author-interpretation",
       "text": "Trong lời giải câu 11, Vương Hồng Tự gọi Thân là Nguyệt quái thân và lấy nó làm chỗ chủ của việc xét quẻ. Nghĩa này thuộc lời chú giải của ông, không tự đồng nhất Quái thân với hào Thế.",
-      "citationIds": ["citation-bpct-ch6-hexagram-body"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [80, 81],
+          "section": "Câu 11 — Thân vị theo Nguyệt quái thân",
+          "printedPages": ["66", "67"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       }
     },
     {
-      "id": "term-hexagram-body-translator-traditions",
-      "kind": "author-interpretation",
       "text": "Vĩnh Cao chú thích rằng cách hiểu Thân ở câu 11 là của Vương Hồng Tự trong tác phẩm này. Một số tác phẩm khác không coi trọng Quái thân và dùng Thân chỉ Thế; sự khác nhau còn có ở những câu phú khác.",
-      "citationIds": ["citation-bpct-ch6-body-traditions-note"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [81, 81],
+          "section": "Chú thích 3 — Vĩnh Cao phân biệt Quái thân và Thế theo tác phẩm",
+          "printedPages": ["67", "67"]
+        }
+      ],
       "attribution": {
         "author": "Vĩnh Cao"
       },
-      "conditions": [
-        "Chú thích không nêu tên các tác phẩm khác, nên không tự gán lập trường cho trường phái hoặc tác giả cụ thể."
-      ]
+      "condition": "Chú thích không nêu tên các tác phẩm khác, nên không tự gán lập trường cho trường phái hoặc tác giả cụ thể."
     }
-  ],
-  "relatedIds": ["term-shi-line", "article-hexagram-body-context"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch6-hexagram-body",
-      "citation-bpct-ch6-body-traditions-note"
-    ],
-    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

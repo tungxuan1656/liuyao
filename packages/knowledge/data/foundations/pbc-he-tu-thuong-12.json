@@ -1,131 +1,75 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-thuong-12",
   "type": "article",
   "title": "PBC — Hệ Từ Thượng, chương 12",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Đạo/khí,biến/thông,sự nghiệp.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-section-04-original-reading"],
+      "text": "Đạo/khí,biến/thông,sự nghiệp.\n\nBiến/thông,người,đức hạnh làm sáng và tin không lời.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [628, 628],
+          "section": "section-04-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [629, 629],
+          "section": "section-07-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-section-04-translation",
-      "kind": "author-interpretation",
-      "text": "PBC phân đạo lý vô hình và khí hữu tượng nhưng cùng lý; biến chế,tài và thông triển,hành đến dân.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-section-04-translation"],
+      "text": "PBC phân đạo lý vô hình và khí hữu tượng nhưng cùng lý; biến chế,tài và thông triển,hành đến dân.\n\nÔng phân tự nhiên với đương nhiên,sự trước hoàn thành/nghiệp sau hoàn thành; thân thể chỉ ví triết học không y tế.\n\nPBC coi đạo nhờ người gánh,không chỉ nét vạch/lời suông; tinh thành và tu thân kết Thượng.\n\nÔng nối Càn/Khôn/Ích/Tổn thành lý tưởng tu dưỡng; không lời chứng về người hiện tại. Dương Thành Trai được dẫn riêng.\n\nPBC chương12 ghi năm tiết khuyết,chỉ dịch hai; nhãn tồn tại là4 và7. Các tiết1,2,3,5,6 không được bổ từ NHL.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [628, 629],
+          "section": "section-04-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [628, 629],
+          "section": "section-04-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [629, 630],
+          "section": "section-07-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [629, 630],
+          "section": "section-07-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [628, 628],
+          "section": "selection-notice — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-section-04-commentary",
-      "kind": "author-interpretation",
-      "text": "Ông phân tự nhiên với đương nhiên,sự trước hoàn thành/nghiệp sau hoàn thành; thân thể chỉ ví triết học không y tế.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-section-04-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-section-07-original-reading",
-      "kind": "author-interpretation",
-      "text": "Biến/thông,người,đức hạnh làm sáng và tin không lời.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-section-07-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-section-07-translation",
-      "kind": "author-interpretation",
-      "text": "PBC coi đạo nhờ người gánh,không chỉ nét vạch/lời suông; tinh thành và tu thân kết Thượng.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-section-07-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-section-07-commentary",
-      "kind": "author-interpretation",
-      "text": "Ông nối Càn/Khôn/Ích/Tổn thành lý tưởng tu dưỡng; không lời chứng về người hiện tại. Dương Thành Trai được dẫn riêng.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-section-07-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-selection-notice",
-      "kind": "author-interpretation",
-      "text": "PBC chương12 ghi năm tiết khuyết,chỉ dịch hai; nhãn tồn tại là4 và7. Các tiết1,2,3,5,6 không được bổ từ NHL.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-selection-notice"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-12-pbc-he-tu-shang-12-s07-yang-chengzhai",
-      "kind": "author-interpretation",
       "text": "PBC dẫn ba Dịch:trời,vở,người; phân câu Càn/Khôn,thư bất tận ngôn và tồn người/đức hạnh. Không xem đoạn dẫn là PBC đã in đầy đủ tiết2 bị khuyết.",
-      "citationIds": ["citation-pbc-he-tu-shang-12-s07-yang-chengzhai"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [630, 630],
+          "section": "s07-yang-chengzhai — commentary"
+        }
+      ],
       "attribution": {
         "author": "Dương Thành Trai",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-shang-12-section-04-original-reading",
-      "citation-pbc-he-tu-shang-12-section-04-translation",
-      "citation-pbc-he-tu-shang-12-section-04-commentary",
-      "citation-pbc-he-tu-shang-12-section-07-original-reading",
-      "citation-pbc-he-tu-shang-12-section-07-translation",
-      "citation-pbc-he-tu-shang-12-section-07-commentary",
-      "citation-pbc-he-tu-shang-12-selection-notice",
-      "citation-pbc-he-tu-shang-12-s07-yang-chengzhai"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

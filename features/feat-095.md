@@ -1,50 +1,39 @@
-# feat-095 — Verify the full corpus with AI models
+# feat-095 — Review knowledge meaning and source attribution
 
 ## Goal
 
-Obtain explicit AI verification approval for the reviewed snapshot.
+Improve explanation quality through a focused editorial source pass.
 
 ## Scope
 
-**Intended work:**
-
-- Separate AI review runs and the frozen audit snapshot under the [verification policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence).
+The existing knowledge records, useful source explanations, links, and visible gaps.
+Use focused content review under the [quality contract](../docs/product-specs/knowledge-quality.md).
 
 ## Non-goals
 
-New interpretation, calendar, or UI behavior.
+A certification system, predictive efficacy claims, or a new calculation ruleset.
 
 ## Acceptance
 
-- [ ] All 64 quẻ and 384 positions, with three-book cells and actual commentator layers.
-- [ ] Every foundation, table, application, tradition, lesson, and exclusion ledger.
-- [ ] Record model provider, model ID, review-run identity, role, date, scope, hashes, findings, and explicit unit-level decisions.
-- [ ] Resolve rejected units and repeat affected reviews before approval.
-- [ ] AI review passes are separate from authoring and source comparison; a different model and human specialist review are optional.
-- [ ] Missing review remains pending; model names, automated tests, and synthetic approvals do not establish actual verification.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [ ] Read the selected records as a learner and check meaning against supporting passages.
+- [ ] Preserve distinct commentator/translator views and meaningful conditions.
+- [ ] Check difficult corrections with a fresh review when useful; record concrete findings.
+- [ ] Use concise source notes instead of unit-level reviewer identities, hashes, or approval artifacts.
+- [ ] Relevant package checks and ./init.sh pass.
 
 ## Relevant docs
 
-[Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
-[model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
-[licensing](../LICENSING.md), [verification](../docs/development.md).
+[Content](../docs/product-specs/knowledge-content.md), [model](../docs/design-docs/knowledge-model.md),
+[quality](../docs/product-specs/knowledge-quality.md), [sources](../docs/references/book-sources.md).
 
 ## Plan
 
-1. Freeze the completed audit snapshot and identify the AI reviewer model and review run.
-2. Review supplied passages and current inputs, record unit decisions, and resolve rejected findings.
-3. Obtain explicit verification approval for the corrected snapshot, verify, and record the handoff.
-
-## Verify
-
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Confirm all assigned units and document routes.
+1. Select a coherent record/topic group and compare its explanations with relevant source passages.
+2. Correct material findings and check links and meaningful conditions.
+3. Record concise remaining gaps and the next action.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: todo; not activated.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Complete prerequisites and select this content pass when needed.

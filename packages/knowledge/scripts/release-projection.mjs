@@ -1,119 +1,116 @@
-/** Build the public, release-only payload from a corpus that passed validation. */
-import { compareCanonicalStrings, createSnapshotIdentity } from './snapshot-identity.mjs';
-
-export function createReleaseProjection({ manifest, records, citations, sources }) {
-  const releaseIds = [...manifest.releaseIds].sort(compareCanonicalStrings);
-  const released = new Set(releaseIds);
-  const selectedRecords = records.filter(record => released.has(record.id));
-  const claimById = new Map();
-  for (const record of selectedRecords)
-    for (const claim of allClaims(record)) {
-      if (!claimById.has(claim.id)) claimById.set(claim.id, claim);
-    }
-
-  const citationIds = new Set();
-  const projectEvidence = new Map();
-  for (const record of selectedRecords) {
-    for (const claim of allClaims(record)) {
-      for (const id of claim.citationIds ?? []) citationIds.add(id);
-      for (const item of claim.projectEvidence ?? []) {
-        const sections = projectEvidence.get(item.documentPath) ?? new Set();
-        sections.add(item.section);
-        projectEvidence.set(item.documentPath, sections);
-      }
-    }
-    for (const id of record.review.evidenceCitationIds ?? []) citationIds.add(id);
-    for (const discrepancy of record.discrepancies ?? [])
-      for (const id of discrepancy.citationIds ?? []) citationIds.add(id);
-    for (const id of record.review.evidenceClaimIds ?? [])
-      if (!claimById.has(id))
-        throw new Error(
-          `Release projection review references unknown claim ${id} from ${record.id}`,
-        );
-      else if (!claimIsReleased(id, selectedRecords))
-        throw new Error(
-          `Release projection review depends on unselected claim ${id} from ${record.id}`,
-        );
-  }
-
-  const citationById = new Map(citations.map(citation => [citation.id, citation]));
-  const projectedCitations = citations.filter(citation => citationIds.has(citation.id));
-  for (const id of citationIds)
-    if (!citationById.has(id))
-      throw new Error(`Release projection references unknown citation ${id}`);
-
-  const editionsBySource = new Map();
-  for (const citation of projectedCitations) {
-    const editions = editionsBySource.get(citation.sourceId) ?? new Set();
-    editions.add(citation.editionId);
-    editionsBySource.set(citation.sourceId, editions);
-  }
-  const projectedSources = sources
-    .filter(source => editionsBySource.has(source.id))
-    .map(source => {
-      const editionIds = editionsBySource.get(source.id);
-      const editions = source.editions
-        .filter(edition => editionIds.has(edition.id))
-        .map(({ localInputPath: _localInputPath, ...edition }) => edition);
-      if (editions.length !== editionIds.size)
-        throw new Error(`Release projection references an unknown edition for ${source.id}`);
-      return { ...source, editions };
-    });
-
-  const topicsById = new Map(manifest.topics.map(topic => [topic.id, topic]));
-  const topicIds = new Set(selectedRecords.flatMap(record => record.topicIds));
-  const topics = manifest.topics.filter(topic => topicIds.has(topic.id));
-  for (const id of topicIds)
-    if (!topicsById.has(id)) throw new Error(`Release projection references unknown topic ${id}`);
-
-  const contractsByPath = new Map(
-    (manifest.projectContracts ?? []).map(contract => [contract.documentPath, contract]),
-  );
-  const projectContracts = [...projectEvidence]
-    .map(([documentPath, sections]) => {
-      const contract = contractsByPath.get(documentPath);
-      if (!contract)
-        throw new Error(`Release projection lacks accepted project contract ${documentPath}`);
-      return {
-        documentPath,
-        revision: contract.revision,
-        sections: [...sections].sort(compareCanonicalStrings),
-      };
-    })
-    .sort((left, right) => compareCanonicalStrings(left.documentPath, right.documentPath));
-
-  for (const [claimId, claim] of claimById)
-    for (const dependencyId of claim.dependsOnClaimIds ?? [])
-      if (!claimById.has(dependencyId))
-        throw new Error(
-          `Release projection is missing released dependency ${dependencyId} of ${claimId}`,
-        );
-
-  const projection = {
-    schemaVersion: manifest.schemaVersion,
-    recordSchemaVersions: [...new Set(selectedRecords.map(record => record.schemaVersion))].sort(
-      (left, right) => left - right,
-    ),
-    corpusId: manifest.corpusId,
-    language: manifest.language,
-    releaseIds,
-    records: selectedRecords,
-    citations: projectedCitations,
-    sources: projectedSources,
-    topics,
-    projectContracts,
+import { referencesOf } from '../src/content-structure.ts';
+const TRIGRAM_ORDER = [
+  'trigram-heaven',
+  'trigram-lake',
+  'trigram-fire',
+  'trigram-thunder',
+  'trigram-wind',
+  'trigram-water',
+  'trigram-mountain',
+  'trigram-earth',
+];
+export function summary(record) {
+  const text =
+    record.entries.find(entry => entry.attribution)?.text ??
+    record.entries[0]?.text ??
+    record.title;
+  const paragraph = text.split('\n\n')[0];
+  return paragraph.length <= 260 ? paragraph : paragraph.slice(0, 257).replace(/\s+\S*$/, '') + '…';
+}
+export function projectCorpus(records, sources, bibliography) {
+  const ready = records.filter(record => record.status === 'ready');
+  const metadata = ready.map(record => ({
+    id: record.id,
+    type: record.type,
+    title: record.title,
+    aliases: record.aliases ?? [],
+    summary: summary(record),
+    topicIds: record.topicIds ?? [],
+    sourceIds: [
+      ...new Set(referencesOf(record).flatMap(ref => ('sourceId' in ref ? [ref.sourceId] : []))),
+    ],
+    asset: 'knowledge/' + record.id + '.json',
+  }));
+  const catalog = {
+    entities: [],
+    terms: [],
+    rules: [],
+    sources: [...bibliography.sources],
+    references: [...bibliography.references],
   };
-  return { ...projection, snapshotIdentity: createSnapshotIdentity(projection) };
-}
-
-function allClaims(record) {
-  return [
-    ...(record.claims ?? []),
-    ...(record.lines ?? []).flatMap(line => line.claims ?? []),
-    ...(record.specialPassages ?? []).flatMap(passage => passage.claims ?? []),
-  ];
-}
-
-function claimIsReleased(id, records) {
-  return records.some(record => allClaims(record).some(claim => claim.id === id));
+  for (const source of sources)
+    catalog.sources.push({
+      id: source.id,
+      title: source.title,
+      author: [source.author, ...source.contributors].join('; '),
+      publication: source.editions
+        .map(e =>
+          [e.publication.publisher, e.publication.year, e.publication.note]
+            .filter(v => v !== null)
+            .join('; '),
+        )
+        .join('\n'),
+      rights: source.editions.map(e => e.rights.note).join('\n'),
+      limitations: source.limitations ?? [],
+      provenance: source.editions
+        .map(e => e.label + '; ' + e.pdfPageCount + ' trang PDF.')
+        .join('\n'),
+    });
+  for (const record of ready) {
+    const common = {
+      id: record.id,
+      name: record.title,
+      aliases: record.aliases ?? [],
+      explanation: summary(record),
+      ...(record.applicableRuleIds ? { applicableRuleIds: record.applicableRuleIds } : {}),
+    };
+    if (record.type === 'trigram') catalog.entities.push({ ...common, kind: 'trigram' });
+    if (record.type === 'hexagram')
+      catalog.entities.push({
+        ...common,
+        kind: 'hexagram',
+        kingWenNumber: record.kingWenNumber,
+        upperTrigramId: record.upperTrigramId,
+        lowerTrigramId: record.lowerTrigramId,
+      });
+    if (record.type === 'term')
+      catalog.terms.push({
+        id: record.id,
+        name: record.title,
+        aliases: record.aliases ?? [],
+        definition: summary(record),
+        ...(record.applicableRuleIds ? { applicableRuleIds: record.applicableRuleIds } : {}),
+      });
+    if (record.type === 'rule')
+      catalog.rules.push({
+        id: record.id,
+        title: record.title,
+        explanation: summary(record),
+        category: record.category,
+        ruleset: record.ruleset,
+      });
+    if (record.type === 'article') continue;
+    const refs = referencesOf(record);
+    for (const sourceId of new Set(refs.map(ref => ref.sourceId ?? 'source-liuyao-v1-contract'))) {
+      const ref = refs.find(ref => (ref.sourceId ?? 'source-liuyao-v1-contract') === sourceId);
+      catalog.references.push({
+        id: 'reference-' + record.id + '-' + sourceId,
+        sourceId,
+        targetIds: [record.id],
+        location: ref.pdfPages
+          ? 'PDF ' + ref.pdfPages.join('–') + (ref.section ? '; ' + ref.section : '')
+          : ref.documentPath + '; ' + ref.section,
+      });
+    }
+  }
+  catalog.entities.sort((a, b) =>
+    a.kind !== b.kind
+      ? a.kind === 'trigram'
+        ? -1
+        : 1
+      : a.kind === 'hexagram'
+        ? a.kingWenNumber - b.kingWenNumber
+        : TRIGRAM_ORDER.indexOf(a.id) - TRIGRAM_ORDER.indexOf(b.id),
+  );
+  return { metadata, catalog, ready };
 }

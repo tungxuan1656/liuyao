@@ -1,181 +1,107 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://liuyao.local/schemas/knowledge/record-v1.json",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": {
-      "const": 1
-    },
     "id": {
       "type": "string",
-      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+      "pattern": "^(trigram|hexagram|term|rule|article|lesson)-[a-z0-9-]+$"
     },
     "type": {
       "enum": ["trigram", "hexagram", "term", "rule", "article"]
     },
     "title": {
       "type": "string",
-      "minLength": 1,
-      "pattern": "\\S"
+      "minLength": 1
+    },
+    "status": {
+      "enum": ["draft", "ready"]
     },
     "aliases": {
       "type": "array",
       "items": {
         "type": "string",
-        "minLength": 1,
-        "pattern": "\\S"
+        "minLength": 1
       },
-      "minItems": 0,
       "uniqueItems": true
     },
     "topicIds": {
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        "minLength": 1
       },
-      "minItems": 1,
       "uniqueItems": true
-    },
-    "claims": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/claim"
-      },
-      "minItems": 1
     },
     "relatedIds": {
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+        "minLength": 1
       },
-      "minItems": 0,
       "uniqueItems": true
     },
-    "review": {
-      "$ref": "#/$defs/review"
-    },
-    "rights": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "basis": {
-          "enum": ["original-summary-and-structured-facts"]
-        },
-        "license": {
-          "const": "All Rights Reserved"
-        }
+    "applicableRuleIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
       },
-      "required": ["basis", "license"]
+      "uniqueItems": true
     },
-    "structure": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "lineOrder": {
-          "const": "bottom-to-top"
-        },
-        "lines": {
-          "type": "array",
-          "items": {
-            "enum": ["yin", "yang"]
-          },
-          "minItems": 3,
-          "maxItems": 6
-        },
-        "claimIds": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "symbol": {
-          "type": "string",
-          "minLength": 1,
-          "pattern": "\\S"
-        },
-        "element": {
-          "enum": ["wood", "fire", "earth", "metal", "water"]
-        },
-        "kingWenNumber": {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 64
-        },
-        "upperTrigramId": {
-          "type": "string",
-          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-        },
-        "lowerTrigramId": {
-          "type": "string",
-          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-        }
-      },
-      "required": ["lineOrder", "lines", "claimIds"]
-    },
-    "lines": {
+    "links": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "recordId": {
+            "type": "string",
+            "minLength": 1
+          },
           "position": {
             "type": "integer",
             "minimum": 1,
             "maximum": 6
           },
-          "polarity": {
-            "enum": ["yin", "yang"]
-          },
-          "label": {
+          "sectionId": {
             "type": "string",
-            "minLength": 1,
-            "pattern": "\\S"
-          },
-          "claims": {
-            "type": "array",
-            "items": {
-              "$ref": "#/$defs/claim"
-            },
-            "minItems": 1
+            "minLength": 1
           }
         },
-        "required": ["position", "polarity", "label", "claims"]
-      },
-      "minItems": 6,
-      "maxItems": 6
+        "required": ["recordId"]
+      }
     },
-    "specialPassages": {
+    "entries": {
       "type": "array",
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-          },
-          "title": {
-            "type": "string",
-            "minLength": 1,
-            "pattern": "\\S"
-          },
-          "claims": {
-            "type": "array",
-            "items": {
-              "$ref": "#/$defs/claim"
-            },
-            "minItems": 1
-          }
-        },
-        "required": ["id", "title", "claims"]
-      },
-      "minItems": 0
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "kingWenNumber": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "upperTrigramId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lowerTrigramId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "symbol": {
+      "type": "string",
+      "minLength": 1
+    },
+    "element": {
+      "enum": ["wood", "fire", "earth", "metal", "water"]
     },
     "ruleset": {
       "const": "liuyao-standard-v1"
@@ -183,14 +109,33 @@
     "category": {
       "enum": ["metadata", "structure", "transformation", "classification"]
     },
-    "applicableRuleIds": {
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "lines": {
+      "type": "array"
+    },
+    "specialPassages": {
       "type": "array",
       "items": {
-        "type": "string",
-        "pattern": "^rule-[a-z0-9]+(?:-[a-z0-9]+)*$"
-      },
-      "minItems": 0,
-      "uniqueItems": true
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/entry"
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["title", "entries"]
+      }
     },
     "tables": {
       "type": "array",
@@ -200,100 +145,13 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "kind": {
-                "const": "na-jia"
+              "id": {
+                "type": "string",
+                "minLength": 1
               },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
-              },
-              "rows": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "trigramId": {
-                      "enum": [
-                        "trigram-heaven",
-                        "trigram-lake",
-                        "trigram-fire",
-                        "trigram-thunder",
-                        "trigram-wind",
-                        "trigram-water",
-                        "trigram-mountain",
-                        "trigram-earth"
-                      ]
-                    },
-                    "inner": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "stemId": {
-                            "type": "string",
-                            "pattern": "^term-stem-[a-z]+$"
-                          },
-                          "branchId": {
-                            "type": "string",
-                            "pattern": "^term-branch-[a-z]+$"
-                          }
-                        },
-                        "required": ["stemId", "branchId"]
-                      },
-                      "minItems": 3,
-                      "maxItems": 3
-                    },
-                    "outer": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                          "stemId": {
-                            "type": "string",
-                            "pattern": "^term-stem-[a-z]+$"
-                          },
-                          "branchId": {
-                            "type": "string",
-                            "pattern": "^term-branch-[a-z]+$"
-                          }
-                        },
-                        "required": ["stemId", "branchId"]
-                      },
-                      "minItems": 3,
-                      "maxItems": 3
-                    }
-                  },
-                  "required": ["trigramId", "inner", "outer"]
-                },
-                "minItems": 1
-              }
-            },
-            "required": ["kind", "claimIds", "rows"]
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
               "kind": {
                 "const": "palaces"
               },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
-              },
               "rows": {
                 "type": "array",
                 "items": {
@@ -301,16 +159,8 @@
                   "additionalProperties": false,
                   "properties": {
                     "trigramId": {
-                      "enum": [
-                        "trigram-heaven",
-                        "trigram-lake",
-                        "trigram-fire",
-                        "trigram-thunder",
-                        "trigram-wind",
-                        "trigram-water",
-                        "trigram-mountain",
-                        "trigram-earth"
-                      ]
+                      "type": "string",
+                      "pattern": "^trigram-[a-z0-9-]+$"
                     },
                     "element": {
                       "enum": ["wood", "fire", "earth", "metal", "water"]
@@ -329,25 +179,103 @@
                   "required": ["trigramId", "element", "hexagramIds"]
                 },
                 "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           },
           {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "kind": {
-                "const": "markers"
+              "id": {
+                "type": "string",
+                "minLength": 1
               },
-              "claimIds": {
+              "kind": {
+                "const": "na-jia"
+              },
+              "rows": {
                 "type": "array",
                 "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "trigramId": {
+                      "type": "string",
+                      "pattern": "^trigram-[a-z0-9-]+$"
+                    },
+                    "inner": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "stemId": {
+                            "type": "string",
+                            "pattern": "^term-[a-z0-9-]+$"
+                          },
+                          "branchId": {
+                            "type": "string",
+                            "pattern": "^term-[a-z0-9-]+$"
+                          }
+                        },
+                        "required": ["stemId", "branchId"]
+                      },
+                      "minItems": 3,
+                      "maxItems": 3
+                    },
+                    "outer": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "stemId": {
+                            "type": "string",
+                            "pattern": "^term-[a-z0-9-]+$"
+                          },
+                          "branchId": {
+                            "type": "string",
+                            "pattern": "^term-[a-z0-9-]+$"
+                          }
+                        },
+                        "required": ["stemId", "branchId"]
+                      },
+                      "minItems": 3,
+                      "maxItems": 3
+                    }
+                  },
+                  "required": ["trigramId", "inner", "outer"]
                 },
-                "minItems": 1,
-                "uniqueItems": true
+                "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["kind", "rows", "references"]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "const": "markers"
               },
               "rows": {
                 "type": "array",
@@ -360,11 +288,6 @@
                       "minimum": 1,
                       "maximum": 8
                     },
-                    "stage": {
-                      "type": "string",
-                      "minLength": 1,
-                      "pattern": "\\S"
-                    },
                     "shiPosition": {
                       "type": "integer",
                       "minimum": 1,
@@ -374,30 +297,36 @@
                       "type": "integer",
                       "minimum": 1,
                       "maximum": 6
+                    },
+                    "stage": {
+                      "type": "string",
+                      "minLength": 1
                     }
                   },
-                  "required": ["palaceSequence", "stage", "shiPosition", "yingPosition"]
+                  "required": ["palaceSequence", "shiPosition", "yingPosition"]
+                },
+                "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
                 },
                 "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           },
           {
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
               "kind": {
                 "const": "branch-elements"
-              },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
               },
               "rows": {
                 "type": "array",
@@ -407,7 +336,7 @@
                   "properties": {
                     "branchId": {
                       "type": "string",
-                      "pattern": "^term-branch-[a-z]+$"
+                      "pattern": "^term-[a-z0-9-]+$"
                     },
                     "element": {
                       "enum": ["wood", "fire", "earth", "metal", "water"]
@@ -416,25 +345,27 @@
                   "required": ["branchId", "element"]
                 },
                 "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           },
           {
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
               "kind": {
                 "const": "element-cycles"
-              },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
               },
               "rows": {
                 "type": "array",
@@ -455,25 +386,27 @@
                   "required": ["from", "relation", "to"]
                 },
                 "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           },
           {
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
               "kind": {
                 "const": "relative-relations"
-              },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
               },
               "rows": {
                 "type": "array",
@@ -492,31 +425,33 @@
                     },
                     "relativeId": {
                       "type": "string",
-                      "pattern": "^term-relative-[a-z-]+$"
+                      "pattern": "^term-[a-z0-9-]+$"
                     }
                   },
                   "required": ["relation", "relativeId"]
                 },
                 "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           },
           {
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
               "kind": {
                 "const": "coin-outcomes"
-              },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
               },
               "rows": {
                 "type": "array",
@@ -547,25 +482,27 @@
                   "required": ["sapCount", "nguaCount", "lineClass", "polarity", "changing"]
                 },
                 "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           },
           {
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
               "kind": {
                 "const": "transformation"
-              },
-              "claimIds": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-                },
-                "minItems": 1,
-                "uniqueItems": true
               },
               "rows": {
                 "type": "array",
@@ -589,7 +526,6 @@
                         "maximum": 6
                       },
                       "minItems": 1,
-                      "maxItems": 6,
                       "uniqueItems": true
                     },
                     "primaryLines": {
@@ -618,15 +554,21 @@
                   ]
                 },
                 "minItems": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "required": ["kind", "claimIds", "rows"]
+            "required": ["kind", "rows", "references"]
           }
         ]
-      },
-      "minItems": 0
+      }
     },
-    "discrepancies": {
+    "figures": {
       "type": "array",
       "items": {
         "type": "object",
@@ -634,92 +576,127 @@
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            "minLength": 1
           },
-          "status": {
-            "enum": ["resolved", "unresolved"]
-          },
-          "description": {
+          "kind": {
             "type": "string",
-            "minLength": 1,
-            "pattern": "\\S"
+            "minLength": 1
           },
-          "citationIds": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "labels": {
             "type": "array",
             "items": {
-              "type": "string",
-              "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-            },
-            "minItems": 1,
-            "uniqueItems": true
-          },
-          "resolution": {
-            "type": "string",
-            "minLength": 1,
-            "pattern": "\\S"
-          }
-        },
-        "required": ["id", "status", "description", "citationIds"],
-        "allOf": [
-          {
-            "if": {
+              "type": "object",
+              "additionalProperties": false,
               "properties": {
-                "status": {
-                  "const": "resolved"
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "references": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/reference"
+                  },
+                  "minItems": 1
                 }
+              },
+              "required": ["id", "text", "references"]
+            },
+            "minItems": 1
+          },
+          "orientation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/reference"
+                },
+                "minItems": 1
               }
             },
-            "then": {
-              "required": ["resolution"]
+            "required": ["description", "references"]
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/reference"
+            },
+            "minItems": 1
+          },
+          "authorAlternatives": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "author": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "via": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "references": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/reference"
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": ["author", "description", "references"]
             }
           }
-        ]
-      },
-      "minItems": 0
+        },
+        "required": ["id", "kind", "title", "labels", "orientation", "references"]
+      }
     }
   },
-  "required": [
-    "schemaVersion",
-    "id",
-    "type",
-    "title",
-    "aliases",
-    "topicIds",
-    "claims",
-    "relatedIds",
-    "review",
-    "rights"
-  ],
+  "required": ["id", "type", "title", "status", "entries"],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Linked learning content",
   "$defs": {
-    "claim": {
+    "entry": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+          "minLength": 1
         },
-        "kind": {
-          "enum": [
-            "structural-fact",
-            "classical-meaning",
-            "author-interpretation",
-            "calculation-rule"
-          ]
+        "title": {
+          "type": "string",
+          "minLength": 1
         },
         "text": {
           "type": "string",
-          "minLength": 1,
-          "pattern": "\\S"
+          "minLength": 1
         },
-        "citationIds": {
+        "references": {
           "type": "array",
           "items": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+            "$ref": "#/$defs/reference"
           },
-          "minItems": 1,
-          "uniqueItems": true
+          "minItems": 1
         },
         "attribution": {
           "type": "object",
@@ -727,90 +704,112 @@
           "properties": {
             "author": {
               "type": "string",
-              "minLength": 1,
-              "pattern": "\\S"
+              "minLength": 1
             },
             "via": {
               "type": "string",
-              "minLength": 1,
-              "pattern": "\\S"
+              "minLength": 1
             }
           },
           "required": ["author"]
         },
-        "conditions": {
+        "condition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "links": {
           "type": "array",
           "items": {
-            "type": "string",
-            "minLength": 1,
-            "pattern": "\\S"
-          },
-          "minItems": 0
-        }
-      },
-      "required": ["id", "kind", "text", "citationIds"],
-      "allOf": [
-        {
-          "if": {
+            "type": "object",
+            "additionalProperties": false,
             "properties": {
-              "kind": {
-                "enum": ["classical-meaning", "author-interpretation"]
+              "recordId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "position": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 6
+              },
+              "sectionId": {
+                "type": "string",
+                "minLength": 1
               }
+            },
+            "required": ["recordId"]
+          }
+        },
+        "target": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": ["table", "figure"]
+            },
+            "recordId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
             }
           },
-          "then": {
-            "required": ["attribution"]
-          }
+          "required": ["kind", "recordId", "id"]
         }
-      ]
+      },
+      "required": ["text", "references"]
     },
-    "review": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "status": {
-          "enum": ["draft", "reviewed", "disputed", "superseded"]
-        },
-        "reviewer": {
-          "type": "string",
-          "minLength": 1,
-          "pattern": "\\S"
-        },
-        "reviewedAt": {
-          "type": "string",
-          "format": "date"
-        },
-        "method": {
-          "enum": ["source-comparison"]
-        },
-        "evidenceCitationIds": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "note": {
-          "type": "string",
-          "minLength": 1,
-          "pattern": "\\S"
-        }
-      },
-      "required": ["status"],
-      "allOf": [
+    "reference": {
+      "oneOf": [
         {
-          "if": {
-            "properties": {
-              "status": {
-                "const": "reviewed"
-              }
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sourceId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pdfPages": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "printedPages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "section": {
+              "type": "string",
+              "minLength": 1
             }
           },
-          "then": {
-            "required": ["reviewer", "reviewedAt", "method", "evidenceCitationIds", "note"]
-          }
+          "required": ["sourceId", "pdfPages"]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "documentPath": {
+              "type": "string",
+              "minLength": 1
+            },
+            "section": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": ["documentPath", "section"]
         }
       ]
     }
@@ -820,95 +819,43 @@
       "if": {
         "properties": {
           "type": {
-            "const": "trigram"
-          }
-        }
-      },
-      "then": {
-        "required": ["structure"],
-        "properties": {
-          "id": {
-            "enum": [
-              "trigram-heaven",
-              "trigram-lake",
-              "trigram-fire",
-              "trigram-thunder",
-              "trigram-wind",
-              "trigram-water",
-              "trigram-mountain",
-              "trigram-earth"
-            ]
-          },
-          "structure": {
-            "required": ["symbol", "element"],
-            "properties": {
-              "lines": {
-                "minItems": 3,
-                "maxItems": 3
-              },
-              "kingWenNumber": false,
-              "upperTrigramId": false,
-              "lowerTrigramId": false
-            }
-          },
-          "lines": false,
-          "specialPassages": false,
-          "ruleset": false,
-          "category": false
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "type": {
             "const": "hexagram"
           }
         }
       },
       "then": {
-        "required": ["structure", "lines", "specialPassages"],
+        "required": ["kingWenNumber", "upperTrigramId", "lowerTrigramId", "lines"],
         "properties": {
-          "id": {
-            "pattern": "^hexagram-(0[1-9]|[1-5][0-9]|6[0-4])$"
-          },
-          "structure": {
-            "required": ["kingWenNumber", "upperTrigramId", "lowerTrigramId"],
-            "properties": {
-              "lines": {
-                "minItems": 6,
-                "maxItems": 6
+          "lines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "position": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 6
+                },
+                "polarity": {
+                  "enum": ["yin", "yang"]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "entries": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/entry"
+                  }
+                }
               },
-              "symbol": false,
-              "element": false,
-              "upperTrigramId": {
-                "enum": [
-                  "trigram-heaven",
-                  "trigram-lake",
-                  "trigram-fire",
-                  "trigram-thunder",
-                  "trigram-wind",
-                  "trigram-water",
-                  "trigram-mountain",
-                  "trigram-earth"
-                ]
-              },
-              "lowerTrigramId": {
-                "enum": [
-                  "trigram-heaven",
-                  "trigram-lake",
-                  "trigram-fire",
-                  "trigram-thunder",
-                  "trigram-wind",
-                  "trigram-water",
-                  "trigram-mountain",
-                  "trigram-earth"
-                ]
-              }
-            }
-          },
-          "ruleset": false,
-          "category": false
+              "required": ["position", "polarity", "label", "entries"]
+            },
+            "minItems": 6,
+            "maxItems": 6
+          }
         }
       }
     },
@@ -916,20 +863,21 @@
       "if": {
         "properties": {
           "type": {
-            "const": "term"
+            "const": "trigram"
           }
         }
       },
       "then": {
+        "required": ["lines", "symbol", "element"],
         "properties": {
-          "id": {
-            "pattern": "^term-"
-          },
-          "structure": false,
-          "lines": false,
-          "specialPassages": false,
-          "ruleset": false,
-          "category": false
+          "lines": {
+            "type": "array",
+            "items": {
+              "enum": ["yin", "yang"]
+            },
+            "minItems": 3,
+            "maxItems": 3
+          }
         }
       }
     },
@@ -942,36 +890,7 @@
         }
       },
       "then": {
-        "required": ["ruleset", "category"],
-        "properties": {
-          "id": {
-            "pattern": "^rule-"
-          },
-          "structure": false,
-          "lines": false,
-          "specialPassages": false
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "type": {
-            "const": "article"
-          }
-        }
-      },
-      "then": {
-        "properties": {
-          "id": {
-            "pattern": "^article-"
-          },
-          "structure": false,
-          "lines": false,
-          "specialPassages": false,
-          "ruleset": false,
-          "category": false
-        }
+        "required": ["ruleset", "category"]
       }
     }
   ]

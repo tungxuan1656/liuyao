@@ -1,40 +1,32 @@
 {
-  "schemaVersion": 1,
   "id": "term-leaving-decade",
   "type": "term",
   "title": "Xuất Tuần",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-decade-empty", "term-matching-day", "article-decade-empty-conditions"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-leaving-decade-definition",
-      "kind": "author-interpretation",
       "text": "Trong lời luận Tuần Không, Vương Hồng Tự nói đợi ra khỏi tuần đang xét rồi gặp trị nhật. Cần phân biệt việc qua tuần với việc ngày có cùng chi của hào được xét.",
-      "citationIds": [
-        "citation-bpct-ch5-decade-empty",
-        "citation-bpct-ch2-decade-empty-definition"
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 10 — Tuần không",
+          "printedPages": ["58", "58"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [41, 41],
+          "section": "XVIII — Lục Giáp Tuần Không khởi lệ",
+          "printedPages": ["34", "34"]
+        }
       ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       },
-      "conditions": ["Chỉ giữ cách gọi và sự phân biệt trong đoạn; chưa suy thành lịch ứng nghiệm."]
+      "condition": "Chỉ giữ cách gọi và sự phân biệt trong đoạn; chưa suy thành lịch ứng nghiệm."
     }
-  ],
-  "relatedIds": ["term-decade-empty", "term-matching-day", "article-decade-empty-conditions"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-decade-empty",
-      "citation-bpct-ch2-decade-empty-definition"
-    ],
-    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

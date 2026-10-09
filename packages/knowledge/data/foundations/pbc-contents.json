@@ -1,35 +1,22 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-contents",
   "type": "article",
   "title": "PBC — Mục lục",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-contents-pbc-contents-navigation",
-      "kind": "author-interpretation",
       "text": "Mục lục ghi các quẻ và truyện; Chấn/Cấn cùng 51, không có 52. Đây là lỗi nhãn navigation, không một quẻ thứ 51 mới.",
-      "citationIds": ["citation-pbc-contents-navigation"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [4, 6],
+          "section": "pbc-contents-navigation — non-content"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-pbc-contents-navigation"],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

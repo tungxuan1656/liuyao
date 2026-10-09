@@ -1,172 +1,110 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-thuong-06",
   "type": "article",
   "title": "NHL — Hệ Từ Thượng, chương 6",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Bản đọc tiết1 ca ngợi Dịch rộng/lớn, nói viễn, rồi in tĩnh nhi chính trước vế khoảng trời đất; không tự thay tĩnh bằng nhĩ để khớp bản dịch.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-section-01-original-reading"],
+      "text": "Bản đọc tiết1 ca ngợi Dịch rộng/lớn, nói viễn, rồi in tĩnh nhi chính trước vế khoảng trời đất; không tự thay tĩnh bằng nhĩ để khớp bản dịch.\n\nCàn tĩnh chuyên/động trực sinh lớn; Khôn tĩnh hấp/động tịch sinh rộng.\n\nQuảng đại/trời đất, biến thông/bốn mùa, âm dương/nhật nguyệt, giản dị/chí đức được phối hợp.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "section-02-original-reading — original-reading",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "section-03-original-reading — original-reading",
+          "printedPages": ["346", "346"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch xa thì vô cùng, gần thì tĩnh/chính, khoảng trời đất thì bao đủ. Bản dịch gần khác chữ tĩnh ở bản đọc; chương vẫn extant dù đầu ghi PBC bỏ trọn.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-section-01-translation"],
+      "text": "NHL dịch xa thì vô cùng, gần thì tĩnh/chính, khoảng trời đất thì bao đủ. Bản dịch gần khác chữ tĩnh ở bản đọc; chương vẫn extant dù đầu ghi PBC bỏ trọn.\n\nBản dịch phân biệt chuyên nhất/tiến thẳng của Càn với thu lại/mở ra của Khôn.\n\nNHL dịch các sự tương ứng để đề cao Dịch, không đo hiệu quả hay vận hành lịch.\n\nNHL346 nói Phan Bội Châu bỏ trọn chương6,chứ không văn NHL vắng; ngay trang còn ba tiết đọc/dịch và chú.\n\nNHL nối giản với Khôn,dị với Càn và chỉ về chương1 tiết6.\n\nNHL đánh giá chương6 chỉ ca ngợi đạo Dịch, không thêm nghĩa; đây là nhận xét riêng không trạng thái mất text. Tiết1 đọc tĩnh nhưng dịch gần; không tự phục hồi một chữ nhĩ.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "section-01-translation — translation",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "section-02-translation — translation",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "section-03-translation — translation",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "pbc-omission-notice — note",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "s03-gian-di-note — note",
+          "printedPages": ["346", "346"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "closing-evaluation — note",
+          "printedPages": ["346", "346"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Càn tĩnh chuyên/động trực sinh lớn; Khôn tĩnh hấp/động tịch sinh rộng.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-section-02-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "Bản dịch phân biệt chuyên nhất/tiến thẳng của Càn với thu lại/mở ra của Khôn.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-section-02-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-section-03-original-reading",
-      "kind": "author-interpretation",
-      "text": "Quảng đại/trời đất, biến thông/bốn mùa, âm dương/nhật nguyệt, giản dị/chí đức được phối hợp.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-section-03-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-section-03-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch các sự tương ứng để đề cao Dịch, không đo hiệu quả hay vận hành lịch.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-section-03-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-pbc-omission-notice",
-      "kind": "author-interpretation",
-      "text": "NHL346 nói Phan Bội Châu bỏ trọn chương6,chứ không văn NHL vắng; ngay trang còn ba tiết đọc/dịch và chú.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-pbc-omission-notice"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-s03-gian-di-note",
-      "kind": "author-interpretation",
-      "text": "NHL nối giản với Khôn,dị với Càn và chỉ về chương1 tiết6.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-s03-gian-di-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-s03-legge",
-      "kind": "author-interpretation",
       "text": "NHL thuật Legge đọc chí đức thành tác dụng hoàn toàn.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-s03-legge"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "s03-legge — note",
+          "printedPages": ["346", "346"]
+        }
+      ],
       "attribution": {
         "author": "J. Legge",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-s03-wilhelm",
-      "kind": "author-interpretation",
       "text": "NHL thuật Wilhelm đọc chí đức thành năng lực tối cao,khác Legge.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-s03-wilhelm"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [346, 346],
+          "section": "s03-wilhelm — note",
+          "printedPages": ["346", "346"]
+        }
+      ],
       "attribution": {
         "author": "R. Wilhelm",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-06-nhl-he-tu-shang-06-closing-evaluation",
-      "kind": "author-interpretation",
-      "text": "NHL đánh giá chương6 chỉ ca ngợi đạo Dịch, không thêm nghĩa; đây là nhận xét riêng không trạng thái mất text. Tiết1 đọc tĩnh nhưng dịch gần; không tự phục hồi một chữ nhĩ.",
-      "citationIds": ["citation-nhl-he-tu-shang-06-closing-evaluation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-shang-06-section-01-original-reading",
-      "citation-nhl-he-tu-shang-06-section-01-translation",
-      "citation-nhl-he-tu-shang-06-section-02-original-reading",
-      "citation-nhl-he-tu-shang-06-section-02-translation",
-      "citation-nhl-he-tu-shang-06-section-03-original-reading",
-      "citation-nhl-he-tu-shang-06-section-03-translation",
-      "citation-nhl-he-tu-shang-06-pbc-omission-notice",
-      "citation-nhl-he-tu-shang-06-s03-gian-di-note",
-      "citation-nhl-he-tu-shang-06-s03-legge",
-      "citation-nhl-he-tu-shang-06-s03-wilhelm",
-      "citation-nhl-he-tu-shang-06-closing-evaluation"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

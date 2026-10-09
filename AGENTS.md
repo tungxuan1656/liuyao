@@ -9,7 +9,7 @@ LiuYao is a pnpm monorepo for an offline-first Liu Yao PWA. Keep deterministic d
 - Product scope and non-goals → `docs/product-specs/product-scope.md`
 - Quẻ and Liu Yao rules → `docs/design-docs/liuyao-ruleset-v1.md`
 - Knowledge evidence and supplied books → `docs/product-specs/knowledge-quality.md`
-- Knowledge completion and audit sequence → `features/knowledge-roadmap.md`
+- Knowledge delivery sequence → `features/knowledge-roadmap.md`
 - Development and verification → `docs/development.md`
 - Licensing boundaries → `LICENSING.md`
 - Feature state → `feature_index.json`
@@ -62,8 +62,8 @@ If baseline verification fails, record the failure. Fix it only when the current
 - Follow dependency and change-placement boundaries in `ARCHITECTURE.md`.
 - Follow test-placement and verification policy in `docs/development.md`.
 - Follow licensing boundaries in `LICENSING.md`.
-- When knowledge additions exceed Workbox's per-file size limit, agents can raise `maximumFileSizeToCacheInBytes` without separate approval. Measure the bundle, keep it precached, and preserve all other PWA behavior.
-- Knowledge authoring follows the [publication gate](docs/product-specs/knowledge-quality.md#publication-gate); corpus-wide verification and certification do not block sequential authoring.
+- Follow the [knowledge delivery contract](docs/design-docs/offline-pwa.md#knowledge-delivery). Measure payloads; split detailed knowledge by record instead of increasing a monolithic bundle cap. Preserve offline access and the existing update flow.
+- Knowledge authoring follows the [publication gate](docs/product-specs/knowledge-quality.md#publication-gate). Do not add audit ledgers, hash revisions, or certification requirements.
 - Treat future behavior as `Intended` or `Proposed`; never present it as implemented.
 - Treat `.agents/skills/` as installed tooling during product work unless the user asks to maintain skills.
 - Update `init.sh` when repository verification commands or declared workspaces change.

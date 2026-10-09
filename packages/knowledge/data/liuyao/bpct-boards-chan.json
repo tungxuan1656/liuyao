@@ -1,1543 +1,1949 @@
 {
-  "schemaVersion": 2,
   "id": "article-bpct-boards-chan",
   "type": "article",
   "title": "Tám bảng cung Chấn trong BPCT",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-bpct-boards-chan-bpct-board-25-heading",
-      "kind": "structural-fact",
-      "text": "Board 1 cung Chấn; tên in Bát thuần CHẤN; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-25-heading"],
+      "text": "Board 1 cung Chấn; tên in Bát thuần CHẤN; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 2 cung Chấn; tên in Lôi Địa DỰ; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 3 cung Chấn; tên in Lôi Thuỷ GIẢI; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 4 cung Chấn; tên in Lôi Phong HẰNG; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 5 cung Chấn; tên in Địa Phong THĂNG; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 6 cung Chấn; tên in Thuỷ Phong TỈNH; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 7 cung Chấn; tên in Trạch Phong ĐẠI QUÁ; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 8 cung Chấn; tên in Trạch Lôi TUỲ; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — nhan đề và hình",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — nhan đề và hình",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — nhan đề và hình",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — nhan đề và hình",
+          "printedPages": ["47", "47"]
+        }
+      ],
       "attribution": {
         "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
         "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-boards-chan-bpct-board-25-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-25-line-6"],
+      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Bát thuần CHẤN, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Bát thuần CHẤN, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Bát thuần CHẤN, ảnh nguồn cho Hào 3: âm; Canh Thìn; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Bát thuần CHẤN, ảnh nguồn cho Hào 2: âm; Canh Dần; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Bát thuần CHẤN, ảnh nguồn cho Hào 1: dương; Canh Tí; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Địa DỰ, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Địa DỰ, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Địa DỰ, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Địa DỰ, ảnh nguồn cho Hào 3: âm; Ất Mão; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Địa DỰ, ảnh nguồn cho Hào 2: âm; Ất Tị; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Địa DỰ, ảnh nguồn cho Hào 1: âm; Ất Mùi; Tài; Phục ghi Phụ Tí, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 3: âm; Mậu Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 2: dương; Mậu hìn; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 1: âm; Mậu Dần; Huynh; Phục ghi Phụ Tí. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Phong HẰNG, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Phong HẰNG, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Phong HẰNG, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Phong HẰNG, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Phong HẰNG, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Lôi Phong HẰNG, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Địa Phong THĂNG, ảnh nguồn cho Hào 6: âm; Quí Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Địa Phong THĂNG, ảnh nguồn cho Hào 5: âm; Quí Hợi; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Địa Phong THĂNG, ảnh nguồn cho Hào 4: âm; Quí Sửu; Tài; Phục ghi Tử Ngọ, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Địa Phong THĂNG, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Địa Phong THĂNG, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Địa Phong THĂNG, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 6: âm; Canh Tí; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 5: dương; Canh Tuất; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 4: âm; Canh Thân; Quan; Phục ghi Tử Ngọ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần, Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 6: âm; Đinh Mùi; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 5: dương; Đinh Dâu; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 4: dương; Đinh Hợi; Quan; Phục ghi Tử Ngọ, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Lôi TUỲ, ảnh nguồn cho Hào 6: âm; Đinh Mùi; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Lôi TUỲ, ảnh nguồn cho Hào 5: dương; Đinh Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Lôi TUỲ, ảnh nguồn cho Hào 4: dương; Đinh Hợi; Phụ; Phục ghi Tử Ngọ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Lôi TUỲ, ảnh nguồn cho Hào 3: âm; Canh Thìn; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Lôi TUỲ, ảnh nguồn cho Hào 2: âm; Canh Dần; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.\n\nỞ board Trạch Lôi TUỲ, ảnh nguồn cho Hào 1: dương; Canh Tí; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 6",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 5",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 4",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 3",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 2",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 1",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 6",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 5",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 4",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 3",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 2",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 1",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 6",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 5",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 4",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 3",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 2",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 1",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 6",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 5",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 4",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 3",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 2",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 1",
+          "printedPages": ["47", "47"]
+        }
+      ],
       "attribution": {
         "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
         "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-boards-chan-bpct-board-25-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-25-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-25-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-25-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-25-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 3: âm; Canh Thìn; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-25-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-25-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 2: âm; Canh Dần; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-25-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-25-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Bát thuần CHẤN, ảnh nguồn cho Hào 1: dương; Canh Tí; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-25-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-25-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Chấn là đầu cung, đủ năm loại; câu giải lại dùng tên Cấn khi nói động. Giữ khác tên như lỗi nguồn, không đổi cung của board.",
-      "citationIds": ["citation-bpct-board-25-commentary"],
+      "text": "Trong lời giải Chấn là đầu cung, đủ năm loại; câu giải lại dùng tên Cấn khi nói động. Giữ khác tên như lỗi nguồn, không đổi cung của board.\n\nTrong lời giải Dự gắn vui, thiếu Phụ: Tí sơ Chấn dưới Mùi sơ, Phi khắc Phục.\n\nTrong lời giải Giải gắn tán, thiếu Phụ: Tí sơ Chấn dưới Dần sơ tiết khí. Chi nhị in hìn, không dùng làm một chi mới hay phục hồi chữ nguồn.\n\nTrong lời giải Hằng gắn lâu dài, thiếu Huynh: Dần nhị Chấn dưới Hợi nhị được Phi sinh/Sinh. Hình in Thế nhị, Ứng ngũ, trái thứ tư cung trong phép ch1; giữ vị trí thực tế.\n\nTrong lời giải Thăng gắn tiến, thiếu Huynh/Tử; lời giải chỉ bàn Dần nhị Chấn dưới Hợi nhị được sinh/Sinh. Hình còn Tử Ngọ ở tứ nhưng lời giải không bàn tiếp Tử này; không tạo đoạn giải còn thiếu.\n\nTrong lời giải Tỉnh gắn lặng yên, thiếu Huynh/Tử: Ngọ tứ Chấn dưới Thân tứ khắc Phi xuất bộc, Dần nhị dưới Hợi nhị được sinh/Sinh. Can ngoại hình in Canh cho quái nước, khác Nạp Giáp Mậu ch1; giữ nguyên can quan sát.\n\nTrong lời giải Đại Quá gắn tai, Du hồn, thiếu Huynh/Tử: Dần nhị dưới Hợi nhị được sinh/Sinh; Ngọ tứ dưới Hợi tứ bị Tuyệt. Các nhãn ngoại Phụ tại Mùi, Tài tại Dậu, Quan tại Hợi trái quan hệ Mộc chung; không sửa chúng thành dữ kiện tính.\n\nTrong lời giải Tùy gắn thuận, Quy hồn, thiếu Tử: Ngọ tứ Chấn dưới Hợi tứ bị Tuyệt.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — toàn bộ lời giải",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — toàn bộ lời giải",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — toàn bộ lời giải",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — toàn bộ lời giải",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — toàn bộ lời giải",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — toàn bộ lời giải",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 58],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — toàn bộ lời giải",
+          "printedPages": ["46", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — toàn bộ lời giải",
+          "printedPages": ["47", "47"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-boards-chan-bpct-board-25-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Bát thuần CHẤN: không có nhãn Phục; không có nhãn Quái thân; Thế in tại 6; Ứng in tại 3. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-25-annotation-disposition"],
+      "text": "Hình Bát thuần CHẤN: không có nhãn Phục; không có nhãn Quái thân; Thế in tại 6; Ứng in tại 3. Không suy thêm marker hay lớp chú không in.\n\nHình Lôi Địa DỰ: Phục in ở 1: Phụ Tí; không có nhãn Quái thân; Thế in tại 1; Ứng in tại 4. Không suy thêm marker hay lớp chú không in.\n\nHình Lôi Thuỷ GIẢI: Phục in ở 1: Phụ Tí; không có nhãn Quái thân; Thế in tại 2; Ứng in tại 5. Không suy thêm marker hay lớp chú không in.\n\nHình Lôi Phong HẰNG: Phục in ở 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 2; Ứng in tại 5. Không suy thêm marker hay lớp chú không in.\n\nHình Địa Phong THĂNG: Phục in ở 4: Tử Ngọ; 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 4; Ứng in tại 1. Không suy thêm marker hay lớp chú không in.\n\nHình Thuỷ Phong TỈNH: Phục in ở 4: Tử Ngọ; 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 5; Ứng in tại 2. Không suy thêm marker hay lớp chú không in.\n\nHình Trạch Phong ĐẠI QUÁ: Phục in ở 4: Tử Ngọ; 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 4; Ứng in tại 1. Không suy thêm marker hay lớp chú không in.\n\nHình Trạch Lôi TUỲ: Phục in ở 4: Tử Ngọ; không có nhãn Quái thân; Thế in tại 3; Ứng in tại 6. Không suy thêm marker hay lớp chú không in.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-25 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-26 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-27 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-28 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-board-29 — annotation-disposition",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-board-30 — annotation-disposition",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-board-31 — annotation-disposition",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "bpct-board-32 — annotation-disposition",
+          "printedPages": ["47", "47"]
+        }
+      ],
       "attribution": {
         "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
         "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-boards-chan-bpct-board-26-heading",
-      "kind": "structural-fact",
-      "text": "Board 2 cung Chấn; tên in Lôi Địa DỰ; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-26-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Địa DỰ, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-26-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Địa DỰ, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-26-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Địa DỰ, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-26-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Địa DỰ, ảnh nguồn cho Hào 3: âm; Ất Mão; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-26-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Địa DỰ, ảnh nguồn cho Hào 2: âm; Ất Tị; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-26-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Địa DỰ, ảnh nguồn cho Hào 1: âm; Ất Mùi; Tài; Phục ghi Phụ Tí, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-26-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Dự gắn vui, thiếu Phụ: Tí sơ Chấn dưới Mùi sơ, Phi khắc Phục.",
-      "citationIds": ["citation-bpct-board-26-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-26-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Lôi Địa DỰ: Phục in ở 1: Phụ Tí; không có nhãn Quái thân; Thế in tại 1; Ứng in tại 4. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-26-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-heading",
-      "kind": "structural-fact",
-      "text": "Board 3 cung Chấn; tên in Lôi Thuỷ GIẢI; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-27-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-27-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-27-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-27-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 3: âm; Mậu Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-27-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 2: dương; Mậu hìn; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-27-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Thuỷ GIẢI, ảnh nguồn cho Hào 1: âm; Mậu Dần; Huynh; Phục ghi Phụ Tí. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-27-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Giải gắn tán, thiếu Phụ: Tí sơ Chấn dưới Dần sơ tiết khí. Chi nhị in hìn, không dùng làm một chi mới hay phục hồi chữ nguồn.",
-      "citationIds": ["citation-bpct-board-27-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-27-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Lôi Thuỷ GIẢI: Phục in ở 1: Phụ Tí; không có nhãn Quái thân; Thế in tại 2; Ứng in tại 5. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-27-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-heading",
-      "kind": "structural-fact",
-      "text": "Board 4 cung Chấn; tên in Lôi Phong HẰNG; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-28-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Phong HẰNG, ảnh nguồn cho Hào 6: âm; Canh Tuất; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-28-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Phong HẰNG, ảnh nguồn cho Hào 5: âm; Canh Thân; Quan; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-28-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Phong HẰNG, ảnh nguồn cho Hào 4: dương; Canh Ngọ; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-28-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Phong HẰNG, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-28-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Phong HẰNG, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-28-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Lôi Phong HẰNG, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-28-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Hằng gắn lâu dài, thiếu Huynh: Dần nhị Chấn dưới Hợi nhị được Phi sinh/Sinh. Hình in Thế nhị, Ứng ngũ, trái thứ tư cung trong phép ch1; giữ vị trí thực tế.",
-      "citationIds": ["citation-bpct-board-28-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-28-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Lôi Phong HẰNG: Phục in ở 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 2; Ứng in tại 5. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-28-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-heading",
-      "kind": "structural-fact",
-      "text": "Board 5 cung Chấn; tên in Địa Phong THĂNG; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-29-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Địa Phong THĂNG, ảnh nguồn cho Hào 6: âm; Quí Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-29-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Địa Phong THĂNG, ảnh nguồn cho Hào 5: âm; Quí Hợi; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-29-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Địa Phong THĂNG, ảnh nguồn cho Hào 4: âm; Quí Sửu; Tài; Phục ghi Tử Ngọ, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-29-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Địa Phong THĂNG, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-29-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Địa Phong THĂNG, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-29-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Địa Phong THĂNG, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-29-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Thăng gắn tiến, thiếu Huynh/Tử; lời giải chỉ bàn Dần nhị Chấn dưới Hợi nhị được sinh/Sinh. Hình còn Tử Ngọ ở tứ nhưng lời giải không bàn tiếp Tử này; không tạo đoạn giải còn thiếu.",
-      "citationIds": ["citation-bpct-board-29-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-29-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Địa Phong THĂNG: Phục in ở 4: Tử Ngọ; 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 4; Ứng in tại 1. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-29-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-heading",
-      "kind": "structural-fact",
-      "text": "Board 6 cung Chấn; tên in Thuỷ Phong TỈNH; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-30-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 6: âm; Canh Tí; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-30-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 5: dương; Canh Tuất; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-30-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 4: âm; Canh Thân; Quan; Phục ghi Tử Ngọ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-30-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-30-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần, Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-30-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Thuỷ Phong TỈNH, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-30-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Tỉnh gắn lặng yên, thiếu Huynh/Tử: Ngọ tứ Chấn dưới Thân tứ khắc Phi xuất bộc, Dần nhị dưới Hợi nhị được sinh/Sinh. Can ngoại hình in Canh cho quái nước, khác Nạp Giáp Mậu ch1; giữ nguyên can quan sát.",
-      "citationIds": ["citation-bpct-board-30-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-30-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Thuỷ Phong TỈNH: Phục in ở 4: Tử Ngọ; 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 5; Ứng in tại 2. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-30-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-heading",
-      "kind": "structural-fact",
-      "text": "Board 7 cung Chấn; tên in Trạch Phong ĐẠI QUÁ; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-31-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 6: âm; Đinh Mùi; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-31-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 5: dương; Đinh Dâu; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-31-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 4: dương; Đinh Hợi; Quan; Phục ghi Tử Ngọ, Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-31-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 3: dương; Tân Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-31-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-31-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Phong ĐẠI QUÁ, ảnh nguồn cho Hào 1: âm; Tân Sửu; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-31-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Đại Quá gắn tai, Du hồn, thiếu Huynh/Tử: Dần nhị dưới Hợi nhị được sinh/Sinh; Ngọ tứ dưới Hợi tứ bị Tuyệt. Các nhãn ngoại Phụ tại Mùi, Tài tại Dậu, Quan tại Hợi trái quan hệ Mộc chung; không sửa chúng thành dữ kiện tính.",
-      "citationIds": ["citation-bpct-board-31-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-31-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Trạch Phong ĐẠI QUÁ: Phục in ở 4: Tử Ngọ; 2: Huynh Dần; không có nhãn Quái thân; Thế in tại 4; Ứng in tại 1. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-31-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-heading",
-      "kind": "structural-fact",
-      "text": "Board 8 cung Chấn; tên in Trạch Lôi TUỲ; thuộc hành Mộc. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
-      "citationIds": ["citation-bpct-board-32-heading"],
-      "attribution": {
-        "author": "Bản cung cấp — nhan đề/hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-line-6",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Lôi TUỲ, ảnh nguồn cho Hào 6: âm; Đinh Mùi; Tài; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-32-line-6"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-line-5",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Lôi TUỲ, ảnh nguồn cho Hào 5: dương; Đinh Dậu; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-32-line-5"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-line-4",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Lôi TUỲ, ảnh nguồn cho Hào 4: dương; Đinh Hợi; Phụ; Phục ghi Tử Ngọ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-32-line-4"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-line-3",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Lôi TUỲ, ảnh nguồn cho Hào 3: âm; Canh Thìn; Tài; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-32-line-3"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-line-2",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Lôi TUỲ, ảnh nguồn cho Hào 2: âm; Canh Dần; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-32-line-2"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-line-1",
-      "kind": "structural-fact",
-      "text": "Ở board Trạch Lôi TUỲ, ảnh nguồn cho Hào 1: dương; Canh Tí; Phụ. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
-      "citationIds": ["citation-bpct-board-32-line-1"],
-      "attribution": {
-        "author": "Bản cung cấp — nhãn hình qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-commentary",
-      "kind": "author-interpretation",
-      "text": "Trong lời giải Tùy gắn thuận, Quy hồn, thiếu Tử: Ngọ tứ Chấn dưới Hợi tứ bị Tuyệt.",
-      "citationIds": ["citation-bpct-board-32-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-board-32-annotation-disposition",
-      "kind": "structural-fact",
-      "text": "Hình Trạch Lôi TUỲ: Phục in ở 4: Tử Ngọ; không có nhãn Quái thân; Thế in tại 3; Ứng in tại 6. Không suy thêm marker hay lớp chú không in.",
-      "citationIds": ["citation-bpct-board-32-annotation-disposition"],
-      "attribution": {
-        "author": "Bản cung cấp — bố cục qua Vĩnh Cao",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-boards-chan-bpct-ch04-note-01-note",
-      "kind": "author-interpretation",
       "text": "Chú 1 trên Tỉnh giải xuất bộc là lộ ra, thoát hào Phi kiềm chế; chú nằm dưới phần bắt đầu Đại Quá nhưng marker thuộc Tỉnh, không phải lời giải Đại Quá.",
-      "citationIds": ["citation-bpct-ch04-note-01-note"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-ch04-note-01 — note",
+          "printedPages": ["46", "46"]
+        }
+      ],
       "attribution": {
         "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Tóm tắt giáo thuyết và dữ kiện của bản cung cấp, không phải kết quả thực chứng, phép lịch, classifier, diễn giải tự động, dự báo sức khỏe/tử vong hoặc yêu cầu nghi lễ."
-      ]
+      }
     }
   ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "figures": [
     {
       "id": "figure-bpct-board-25-board",
       "kind": "board",
       "title": "Bát thuần CHẤN — hình nguồn",
-      "sourceUnitIds": ["bpct-board-25"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Canh Tuất; Tài; Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-25-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 6",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: âm; Canh Thân; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-25-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 5",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: dương; Canh Ngọ; Tử",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-25-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 4",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: âm; Canh Thìn; Tài; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-25-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 3",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: âm; Canh Dần; Huynh",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-25-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 2",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: dương; Canh Tí; Phụ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-25-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 1",
+              "printedPages": ["45", "45"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-25-heading",
-        "article-bpct-boards-chan-bpct-board-25-line-6",
-        "article-bpct-boards-chan-bpct-board-25-line-5",
-        "article-bpct-boards-chan-bpct-board-25-line-4",
-        "article-bpct-boards-chan-bpct-board-25-line-3",
-        "article-bpct-boards-chan-bpct-board-25-line-2",
-        "article-bpct-boards-chan-bpct-board-25-line-1",
-        "article-bpct-boards-chan-bpct-board-25-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-25-heading",
-          "article-bpct-boards-chan-bpct-board-25-line-6",
-          "article-bpct-boards-chan-bpct-board-25-line-5",
-          "article-bpct-boards-chan-bpct-board-25-line-4",
-          "article-bpct-boards-chan-bpct-board-25-line-3",
-          "article-bpct-boards-chan-bpct-board-25-line-2",
-          "article-bpct-boards-chan-bpct-board-25-line-1",
-          "article-bpct-boards-chan-bpct-board-25-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — nhan đề và hình",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 6",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 5",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 4",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 3",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 2",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 1",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "bpct-board-25 — annotation-disposition",
+            "printedPages": ["45", "45"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 1, Bát thuần CHẤN — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-25 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-26-board",
       "kind": "board",
       "title": "Lôi Địa DỰ — hình nguồn",
-      "sourceUnitIds": ["bpct-board-26"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Canh Tuất; Tài",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-26-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 6",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: âm; Canh Thân; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-26-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 5",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: dương; Canh Ngọ; Tử; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-26-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 4",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: âm; Ất Mão; Huynh",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-26-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 3",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: âm; Ất Tị; Tử",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-26-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 2",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: âm; Ất Mùi; Tài; Phục ghi Phụ Tí, Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-26-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 1",
+              "printedPages": ["45", "45"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-26-heading",
-        "article-bpct-boards-chan-bpct-board-26-line-6",
-        "article-bpct-boards-chan-bpct-board-26-line-5",
-        "article-bpct-boards-chan-bpct-board-26-line-4",
-        "article-bpct-boards-chan-bpct-board-26-line-3",
-        "article-bpct-boards-chan-bpct-board-26-line-2",
-        "article-bpct-boards-chan-bpct-board-26-line-1",
-        "article-bpct-boards-chan-bpct-board-26-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-26-heading",
-          "article-bpct-boards-chan-bpct-board-26-line-6",
-          "article-bpct-boards-chan-bpct-board-26-line-5",
-          "article-bpct-boards-chan-bpct-board-26-line-4",
-          "article-bpct-boards-chan-bpct-board-26-line-3",
-          "article-bpct-boards-chan-bpct-board-26-line-2",
-          "article-bpct-boards-chan-bpct-board-26-line-1",
-          "article-bpct-boards-chan-bpct-board-26-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — nhan đề và hình",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 6",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 5",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 4",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 3",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 2",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 1",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "bpct-board-26 — annotation-disposition",
+            "printedPages": ["45", "45"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 2, Lôi Địa DỰ — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-26 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-27-board",
       "kind": "board",
       "title": "Lôi Thuỷ GIẢI — hình nguồn",
-      "sourceUnitIds": ["bpct-board-27"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Canh Tuất; Tài",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-27-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 6",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: âm; Canh Thân; Quan; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-27-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 5",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: dương; Canh Ngọ; Tử",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-27-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 4",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: âm; Mậu Ngọ; Tử",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-27-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 3",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: dương; Mậu hìn; Tài; Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-27-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 2",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: âm; Mậu Dần; Huynh; Phục ghi Phụ Tí",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-27-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 1",
+              "printedPages": ["45", "45"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-27-heading",
-        "article-bpct-boards-chan-bpct-board-27-line-6",
-        "article-bpct-boards-chan-bpct-board-27-line-5",
-        "article-bpct-boards-chan-bpct-board-27-line-4",
-        "article-bpct-boards-chan-bpct-board-27-line-3",
-        "article-bpct-boards-chan-bpct-board-27-line-2",
-        "article-bpct-boards-chan-bpct-board-27-line-1",
-        "article-bpct-boards-chan-bpct-board-27-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-27-heading",
-          "article-bpct-boards-chan-bpct-board-27-line-6",
-          "article-bpct-boards-chan-bpct-board-27-line-5",
-          "article-bpct-boards-chan-bpct-board-27-line-4",
-          "article-bpct-boards-chan-bpct-board-27-line-3",
-          "article-bpct-boards-chan-bpct-board-27-line-2",
-          "article-bpct-boards-chan-bpct-board-27-line-1",
-          "article-bpct-boards-chan-bpct-board-27-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — nhan đề và hình",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 6",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 5",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 4",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 3",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 2",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 1",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "bpct-board-27 — annotation-disposition",
+            "printedPages": ["45", "45"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 3, Lôi Thuỷ GIẢI — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-27 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-28-board",
       "kind": "board",
       "title": "Lôi Phong HẰNG — hình nguồn",
-      "sourceUnitIds": ["bpct-board-28"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Canh Tuất; Tài",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-28-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 6",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: âm; Canh Thân; Quan; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-28-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 5",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: dương; Canh Ngọ; Tử",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-28-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 4",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: dương; Tân Dậu; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-28-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 3",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần, Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-28-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 2",
+              "printedPages": ["45", "45"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: âm; Tân Sửu; Tài",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-28-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [56, 56],
+              "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 1",
+              "printedPages": ["45", "45"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-28-heading",
-        "article-bpct-boards-chan-bpct-board-28-line-6",
-        "article-bpct-boards-chan-bpct-board-28-line-5",
-        "article-bpct-boards-chan-bpct-board-28-line-4",
-        "article-bpct-boards-chan-bpct-board-28-line-3",
-        "article-bpct-boards-chan-bpct-board-28-line-2",
-        "article-bpct-boards-chan-bpct-board-28-line-1",
-        "article-bpct-boards-chan-bpct-board-28-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-28-heading",
-          "article-bpct-boards-chan-bpct-board-28-line-6",
-          "article-bpct-boards-chan-bpct-board-28-line-5",
-          "article-bpct-boards-chan-bpct-board-28-line-4",
-          "article-bpct-boards-chan-bpct-board-28-line-3",
-          "article-bpct-boards-chan-bpct-board-28-line-2",
-          "article-bpct-boards-chan-bpct-board-28-line-1",
-          "article-bpct-boards-chan-bpct-board-28-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — nhan đề và hình",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 6",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 5",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 4",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 3",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 2",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 1",
+            "printedPages": ["45", "45"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [56, 56],
+            "section": "bpct-board-28 — annotation-disposition",
+            "printedPages": ["45", "45"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — nhan đề và hình",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 6",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 5",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 4",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 3",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 2",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "Cung Chấn, board 4, Lôi Phong HẰNG — hình hào 1",
+          "printedPages": ["45", "45"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [56, 56],
+          "section": "bpct-board-28 — annotation-disposition",
+          "printedPages": ["45", "45"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-29-board",
       "kind": "board",
       "title": "Địa Phong THĂNG — hình nguồn",
-      "sourceUnitIds": ["bpct-board-29"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Quí Dậu; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-29-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 6",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: âm; Quí Hợi; Phụ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-29-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 5",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: âm; Quí Sửu; Tài; Phục ghi Tử Ngọ, Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-29-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 4",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: dương; Tân Dậu; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-29-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 3",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-29-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 2",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: âm; Tân Sửu; Tài; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-29-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 1",
+              "printedPages": ["46", "46"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-29-heading",
-        "article-bpct-boards-chan-bpct-board-29-line-6",
-        "article-bpct-boards-chan-bpct-board-29-line-5",
-        "article-bpct-boards-chan-bpct-board-29-line-4",
-        "article-bpct-boards-chan-bpct-board-29-line-3",
-        "article-bpct-boards-chan-bpct-board-29-line-2",
-        "article-bpct-boards-chan-bpct-board-29-line-1",
-        "article-bpct-boards-chan-bpct-board-29-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-29-heading",
-          "article-bpct-boards-chan-bpct-board-29-line-6",
-          "article-bpct-boards-chan-bpct-board-29-line-5",
-          "article-bpct-boards-chan-bpct-board-29-line-4",
-          "article-bpct-boards-chan-bpct-board-29-line-3",
-          "article-bpct-boards-chan-bpct-board-29-line-2",
-          "article-bpct-boards-chan-bpct-board-29-line-1",
-          "article-bpct-boards-chan-bpct-board-29-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — nhan đề và hình",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 6",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 5",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 4",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 3",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 2",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 1",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "bpct-board-29 — annotation-disposition",
+            "printedPages": ["46", "46"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — nhan đề và hình",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 6",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 5",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 4",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 3",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 2",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 5, Địa Phong THĂNG — hình hào 1",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-board-29 — annotation-disposition",
+          "printedPages": ["46", "46"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-30-board",
       "kind": "board",
       "title": "Thuỷ Phong TỈNH — hình nguồn",
-      "sourceUnitIds": ["bpct-board-30"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Canh Tí; Phụ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-30-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 6",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: dương; Canh Tuất; Tài; Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-30-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 5",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: âm; Canh Thân; Quan; Phục ghi Tử Ngọ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-30-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 4",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: dương; Tân Dậu; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-30-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 3",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần, Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-30-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 2",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: âm; Tân Sửu; Tài",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-30-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 1",
+              "printedPages": ["46", "46"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-30-heading",
-        "article-bpct-boards-chan-bpct-board-30-line-6",
-        "article-bpct-boards-chan-bpct-board-30-line-5",
-        "article-bpct-boards-chan-bpct-board-30-line-4",
-        "article-bpct-boards-chan-bpct-board-30-line-3",
-        "article-bpct-boards-chan-bpct-board-30-line-2",
-        "article-bpct-boards-chan-bpct-board-30-line-1",
-        "article-bpct-boards-chan-bpct-board-30-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-30-heading",
-          "article-bpct-boards-chan-bpct-board-30-line-6",
-          "article-bpct-boards-chan-bpct-board-30-line-5",
-          "article-bpct-boards-chan-bpct-board-30-line-4",
-          "article-bpct-boards-chan-bpct-board-30-line-3",
-          "article-bpct-boards-chan-bpct-board-30-line-2",
-          "article-bpct-boards-chan-bpct-board-30-line-1",
-          "article-bpct-boards-chan-bpct-board-30-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — nhan đề và hình",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 6",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 5",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 4",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 3",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 2",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 1",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "bpct-board-30 — annotation-disposition",
+            "printedPages": ["46", "46"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — nhan đề và hình",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 6",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 5",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 4",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 3",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 2",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 6, Thuỷ Phong TỈNH — hình hào 1",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-board-30 — annotation-disposition",
+          "printedPages": ["46", "46"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-31-board",
       "kind": "board",
       "title": "Trạch Phong ĐẠI QUÁ — hình nguồn",
-      "sourceUnitIds": ["bpct-board-31"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Đinh Mùi; Phụ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-31-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 6",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: dương; Đinh Dâu; Tài",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-31-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 5",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: dương; Đinh Hợi; Quan; Phục ghi Tử Ngọ, Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-31-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 4",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: dương; Tân Dậu; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-31-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 3",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: dương; Tân Hợi; Phụ; Phục ghi Huynh Dần",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-31-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 2",
+              "printedPages": ["46", "46"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: âm; Tân Sửu; Tài; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-31-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [57, 57],
+              "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 1",
+              "printedPages": ["46", "46"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-31-heading",
-        "article-bpct-boards-chan-bpct-board-31-line-6",
-        "article-bpct-boards-chan-bpct-board-31-line-5",
-        "article-bpct-boards-chan-bpct-board-31-line-4",
-        "article-bpct-boards-chan-bpct-board-31-line-3",
-        "article-bpct-boards-chan-bpct-board-31-line-2",
-        "article-bpct-boards-chan-bpct-board-31-line-1",
-        "article-bpct-boards-chan-bpct-board-31-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-31-heading",
-          "article-bpct-boards-chan-bpct-board-31-line-6",
-          "article-bpct-boards-chan-bpct-board-31-line-5",
-          "article-bpct-boards-chan-bpct-board-31-line-4",
-          "article-bpct-boards-chan-bpct-board-31-line-3",
-          "article-bpct-boards-chan-bpct-board-31-line-2",
-          "article-bpct-boards-chan-bpct-board-31-line-1",
-          "article-bpct-boards-chan-bpct-board-31-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — nhan đề và hình",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 6",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 5",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 4",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 3",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 2",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 1",
+            "printedPages": ["46", "46"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [57, 57],
+            "section": "bpct-board-31 — annotation-disposition",
+            "printedPages": ["46", "46"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — nhan đề và hình",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 6",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 5",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 4",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 3",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 2",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "Cung Chấn, board 7, Trạch Phong ĐẠI QUÁ — hình hào 1",
+          "printedPages": ["46", "46"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [57, 57],
+          "section": "bpct-board-31 — annotation-disposition",
+          "printedPages": ["46", "46"]
+        }
+      ]
     },
     {
       "id": "figure-bpct-board-32-board",
       "kind": "board",
       "title": "Trạch Lôi TUỲ — hình nguồn",
-      "sourceUnitIds": ["bpct-board-32"],
       "labels": [
         {
           "id": "label-1",
           "text": "Hào 6: âm; Đinh Mùi; Tài; Ứng",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-32-line-6"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [58, 58],
+              "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 6",
+              "printedPages": ["47", "47"]
+            }
+          ]
         },
         {
           "id": "label-2",
           "text": "Hào 5: dương; Đinh Dậu; Quan",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-32-line-5"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [58, 58],
+              "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 5",
+              "printedPages": ["47", "47"]
+            }
+          ]
         },
         {
           "id": "label-3",
           "text": "Hào 4: dương; Đinh Hợi; Phụ; Phục ghi Tử Ngọ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-32-line-4"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [58, 58],
+              "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 4",
+              "printedPages": ["47", "47"]
+            }
+          ]
         },
         {
           "id": "label-4",
           "text": "Hào 3: âm; Canh Thìn; Tài; Thế",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-32-line-3"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [58, 58],
+              "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 3",
+              "printedPages": ["47", "47"]
+            }
+          ]
         },
         {
           "id": "label-5",
           "text": "Hào 2: âm; Canh Dần; Huynh",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-32-line-2"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [58, 58],
+              "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 2",
+              "printedPages": ["47", "47"]
+            }
+          ]
         },
         {
           "id": "label-6",
           "text": "Hào 1: dương; Canh Tí; Phụ",
-          "claimIds": ["article-bpct-boards-chan-bpct-board-32-line-1"]
+          "references": [
+            {
+              "sourceId": "source-book-bpct",
+              "pdfPages": [58, 58],
+              "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 1",
+              "printedPages": ["47", "47"]
+            }
+          ]
         }
       ],
-      "claimIds": [
-        "article-bpct-boards-chan-bpct-board-32-heading",
-        "article-bpct-boards-chan-bpct-board-32-line-6",
-        "article-bpct-boards-chan-bpct-board-32-line-5",
-        "article-bpct-boards-chan-bpct-board-32-line-4",
-        "article-bpct-boards-chan-bpct-board-32-line-3",
-        "article-bpct-boards-chan-bpct-board-32-line-2",
-        "article-bpct-boards-chan-bpct-board-32-line-1",
-        "article-bpct-boards-chan-bpct-board-32-annotation-disposition"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
-        "claimIds": [
-          "article-bpct-boards-chan-bpct-board-32-heading",
-          "article-bpct-boards-chan-bpct-board-32-line-6",
-          "article-bpct-boards-chan-bpct-board-32-line-5",
-          "article-bpct-boards-chan-bpct-board-32-line-4",
-          "article-bpct-boards-chan-bpct-board-32-line-3",
-          "article-bpct-boards-chan-bpct-board-32-line-2",
-          "article-bpct-boards-chan-bpct-board-32-line-1",
-          "article-bpct-boards-chan-bpct-board-32-annotation-disposition"
+        "references": [
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — nhan đề và hình",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 6",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 5",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 4",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 3",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 2",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 1",
+            "printedPages": ["47", "47"]
+          },
+          {
+            "sourceId": "source-book-bpct",
+            "pdfPages": [58, 58],
+            "section": "bpct-board-32 — annotation-disposition",
+            "printedPages": ["47", "47"]
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — nhan đề và hình",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 6",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 5",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 4",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 3",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 2",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "Cung Chấn, board 8, Trạch Lôi TUỲ — hình hào 1",
+          "printedPages": ["47", "47"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [58, 58],
+          "section": "bpct-board-32 — annotation-disposition",
+          "printedPages": ["47", "47"]
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-board-25-heading",
-      "citation-bpct-board-25-line-6",
-      "citation-bpct-board-25-line-5",
-      "citation-bpct-board-25-line-4",
-      "citation-bpct-board-25-line-3",
-      "citation-bpct-board-25-line-2",
-      "citation-bpct-board-25-line-1",
-      "citation-bpct-board-25-commentary",
-      "citation-bpct-board-25-annotation-disposition",
-      "citation-bpct-board-26-heading",
-      "citation-bpct-board-26-line-6",
-      "citation-bpct-board-26-line-5",
-      "citation-bpct-board-26-line-4",
-      "citation-bpct-board-26-line-3",
-      "citation-bpct-board-26-line-2",
-      "citation-bpct-board-26-line-1",
-      "citation-bpct-board-26-commentary",
-      "citation-bpct-board-26-annotation-disposition",
-      "citation-bpct-board-27-heading",
-      "citation-bpct-board-27-line-6",
-      "citation-bpct-board-27-line-5",
-      "citation-bpct-board-27-line-4",
-      "citation-bpct-board-27-line-3",
-      "citation-bpct-board-27-line-2",
-      "citation-bpct-board-27-line-1",
-      "citation-bpct-board-27-commentary",
-      "citation-bpct-board-27-annotation-disposition",
-      "citation-bpct-board-28-heading",
-      "citation-bpct-board-28-line-6",
-      "citation-bpct-board-28-line-5",
-      "citation-bpct-board-28-line-4",
-      "citation-bpct-board-28-line-3",
-      "citation-bpct-board-28-line-2",
-      "citation-bpct-board-28-line-1",
-      "citation-bpct-board-28-commentary",
-      "citation-bpct-board-28-annotation-disposition",
-      "citation-bpct-board-29-heading",
-      "citation-bpct-board-29-line-6",
-      "citation-bpct-board-29-line-5",
-      "citation-bpct-board-29-line-4",
-      "citation-bpct-board-29-line-3",
-      "citation-bpct-board-29-line-2",
-      "citation-bpct-board-29-line-1",
-      "citation-bpct-board-29-commentary",
-      "citation-bpct-board-29-annotation-disposition",
-      "citation-bpct-board-30-heading",
-      "citation-bpct-board-30-line-6",
-      "citation-bpct-board-30-line-5",
-      "citation-bpct-board-30-line-4",
-      "citation-bpct-board-30-line-3",
-      "citation-bpct-board-30-line-2",
-      "citation-bpct-board-30-line-1",
-      "citation-bpct-board-30-commentary",
-      "citation-bpct-board-30-annotation-disposition",
-      "citation-bpct-board-31-heading",
-      "citation-bpct-board-31-line-6",
-      "citation-bpct-board-31-line-5",
-      "citation-bpct-board-31-line-4",
-      "citation-bpct-board-31-line-3",
-      "citation-bpct-board-31-line-2",
-      "citation-bpct-board-31-line-1",
-      "citation-bpct-board-31-commentary",
-      "citation-bpct-board-31-annotation-disposition",
-      "citation-bpct-board-32-heading",
-      "citation-bpct-board-32-line-6",
-      "citation-bpct-board-32-line-5",
-      "citation-bpct-board-32-line-4",
-      "citation-bpct-board-32-line-3",
-      "citation-bpct-board-32-line-2",
-      "citation-bpct-board-32-line-1",
-      "citation-bpct-board-32-commentary",
-      "citation-bpct-board-32-annotation-disposition",
-      "citation-bpct-ch04-note-01-note"
-    ],
-    "note": "Complete passages and every individual full-page image at BPCT PDFs 1–76 inspected; PDF 77 is boundary context only. Fingerprint 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a, 467 pages. Every one of eight source boards separately maps heading, six line facts, figure/order, actual hidden/body/marker presence or absence, and full commentary continuation. Source labels may contradict Na Jia, element relations or marker rules. These are source observations, not doctrinal corrections or automated board authority. No copied images or commentary; note 1 and chapter framing/closing separately routed when present. Original summaries and structured source observations only; no copied passages or images. No independent verification approval or corpus certification; later audit rosters and decisions remain open."
-  }
+  ]
 }

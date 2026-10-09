@@ -11,18 +11,24 @@
       "development": "./src/index.ts",
       "import": "./dist/src/index.js",
       "default": "./dist/src/index.js"
+    },
+    "./node": {
+      "types": "./dist/src/node.d.ts",
+      "development": "./src/node.ts",
+      "import": "./dist/src/node.js",
+      "default": "./dist/src/node.js"
     }
   },
   "scripts": {
     "build": "pnpm validate:corpus && tsc",
     "typecheck": "pnpm validate:corpus && tsc --noEmit -p tsconfig.test.json",
-    "test": "vitest run --maxWorkers=1 --no-file-parallelism",
+    "test": "pnpm validate:corpus && vitest run --maxWorkers=1 --no-file-parallelism",
     "validate:corpus": "node scripts/validate-corpus.mjs"
   },
   "license": "AGPL-3.0-only",
   "devDependencies": {
-    "ajv": "^8.20.0",
-    "ajv-formats": "^3.0.1",
-    "@liuyao/core": "workspace:*"
+    "@liuyao/core": "workspace:*",
+    "@types/node": "^24.19.1",
+    "ajv": "^8.20.0"
   }
 }

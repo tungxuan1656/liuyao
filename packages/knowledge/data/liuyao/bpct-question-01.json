@@ -1,365 +1,254 @@
 {
-  "schemaVersion": 2,
   "id": "article-bpct-question-01",
   "type": "article",
   "title": "BPCT câu hỏi 1 — Tam Truyền",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-bpct-question-01-bpct-question-01-query",
-      "kind": "author-interpretation",
-      "text": "Câu hỏi thử xem một sinh một khắc có đủ gọi tham sinh quên khắc khi Tam Truyền cùng khắc Dụng; hỏi thêm Nhật và Nguyệt sinh/khắc trái nhau.",
-      "citationIds": ["citation-bpct-question-01-query"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-answer",
-      "kind": "author-interpretation",
-      "text": "Đáp không coi một sinh đủ chống nhiều khắc, nhất là hào sinh tự hoá khắc; Nguyệt khắc Nhật sinh hoặc ngược lại được xem ngang sức, phải xét thêm hào sinh/khắc.",
-      "citationIds": ["citation-bpct-question-01-answer"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-01",
-      "kind": "author-interpretation",
-      "text": "Ngữ cảnh nguồn: Bính Thân / Thìn — em lâm nguy, Ký Tế→Cách. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.",
-      "citationIds": ["citation-bpct-question-01-example-01"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-01-experiment",
-      "kind": "author-interpretation",
-      "text": "Nguồn chọn Hợi Huynh bị tháng khắc/ngày sinh và Thân động sinh, kể được cứu giờ Dậu/lành ngày Hợi; note1 giải thích Nguyệt còn sinh Nguyên.",
-      "citationIds": [
-        "citation-bpct-question-01-example-01-experiment",
-        "citation-bpct-question-01-example-01",
-        "citation-bpct-question-01-example-01-chart"
+      "text": "Câu hỏi thử xem một sinh một khắc có đủ gọi tham sinh quên khắc khi Tam Truyền cùng khắc Dụng; hỏi thêm Nhật và Nguyệt sinh/khắc trái nhau.\n\nĐáp không coi một sinh đủ chống nhiều khắc, nhất là hào sinh tự hoá khắc; Nguyệt khắc Nhật sinh hoặc ngược lại được xem ngang sức, phải xét thêm hào sinh/khắc.\n\nNgữ cảnh nguồn: Bính Thân / Thìn — em lâm nguy, Ký Tế→Cách. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.\n\nNguồn chọn Hợi Huynh bị tháng khắc/ngày sinh và Thân động sinh, kể được cứu giờ Dậu/lành ngày Hợi; note1 giải thích Nguyệt còn sinh Nguyên.\n\nNgữ cảnh nguồn: Đinh Mùi / Ngọ — em kiện, Khổn→Hằng. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.\n\nDậu Huynh Nguyệt khắc Nhật sinh nhưng Ngọ động khắc; Thái Tuế Thìn hợp được kể trì hoãn, năm Ngọ/tháng Thân bị trọng tội do hoá Thoái; không xác minh tội.\n\nNgữ cảnh nguồn: Mậu Thìn / Ngọ — em gái sinh, Tấn. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.\n\nDậu Huynh bị tháng khắc được ngày sinh, hợp Thìn chờ Mão xung; tác giả kể mẹ con bình an, note2 nhấn xung Dụng chứ không xung Nhật.\n\nNgữ cảnh nguồn: Ất Mùi / Tị — tự bệnh, Đại Quá→Đỉnh. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.\n\nHợi Thế nhận Dậu sinh/Mùi khắc nhưng Nhật khắc Nguyệt xung làm cứu vô gốc; kể chết ngày Mão khi Nguyên bị xung; note3 ưu tiên Nhật Nguyệt.\n\nNgữ cảnh nguồn: Mậu Tí / Thân — đất mộ, Bát. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.\n\nNhật Tử trì Thế được tháng sinh, nguồn liên hệ Long/Hổ, tả thuỷ, triều sơn và án; kể hai con đỗ sau táng. Chỉ là mô tả phong thuỷ và kết quả được kể, không thiết kế mộ.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-query — question",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-answer — conditional-rule",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-01 — example-context",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-01-experiment — attributed-experiment",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-01-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-02 — example-context",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-02-experiment — attributed-experiment",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-02-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 366],
+          "section": "bpct-question-01-example-03 — example-context",
+          "printedPages": ["318", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 366],
+          "section": "bpct-question-01-example-03-experiment — attributed-experiment",
+          "printedPages": ["318", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-03-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-04 — example-context",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-04-experiment — attributed-experiment",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-04-chart — chart-observation",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-05 — example-context",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-05-experiment — attributed-experiment",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-05-chart — chart-observation",
+          "printedPages": ["319", "319"]
+        }
       ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
+      }
     },
     {
-      "id": "article-bpct-question-01-bpct-question-01-example-01-chart",
-      "kind": "author-interpretation",
-      "text": "Ảnh bảng riêng: Thân Phụ động hoá Sửu Quan; Hợi Huynh trì Thế có phục Ngọ Tài, Mão Tử mang Quái Thân. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.",
-      "citationIds": ["citation-bpct-question-01-example-01-chart"],
-      "attribution": {
-        "author": "Bảng trong bản BPCT biên soạn — tác giả từng hình chưa xác lập"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-02",
-      "kind": "author-interpretation",
-      "text": "Ngữ cảnh nguồn: Đinh Mùi / Ngọ — em kiện, Khổn→Hằng. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.",
-      "citationIds": ["citation-bpct-question-01-example-02"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-02-experiment",
-      "kind": "author-interpretation",
-      "text": "Dậu Huynh Nguyệt khắc Nhật sinh nhưng Ngọ động khắc; Thái Tuế Thìn hợp được kể trì hoãn, năm Ngọ/tháng Thân bị trọng tội do hoá Thoái; không xác minh tội.",
-      "citationIds": [
-        "citation-bpct-question-01-example-02-experiment",
-        "citation-bpct-question-01-example-02",
-        "citation-bpct-question-01-example-02-chart"
+      "text": "Ảnh bảng riêng: Thân Phụ động hoá Sửu Quan; Hợi Huynh trì Thế có phục Ngọ Tài, Mão Tử mang Quái Thân. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.\n\nẢnh bảng riêng: Dậu Huynh hoá Thân; Ngọ Quan hoá Dậu, Dần Tài trì Thế. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.\n\nẢnh bảng riêng: Dậu Huynh trì Thế, Mùi Phụ ở Ứng, sáu hào không ghi động. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.\n\nẢnh bảng riêng: Dậu ở ngũ được in nhãn Dậu thay tên Lục thân; Mùi Tài hoá Tị, Hợi Phụ trì Thế, giữ nhãn không sửa. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.\n\nẢnh bảng riêng: Tí Tử trì Thế, Tị Quan Ứng; note4 đặt Thanh Long ở ngũ tức Tí trì Thế, đếm từ dưới lên. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-01-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-02-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-03-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-04-chart — chart-observation",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-05-chart — chart-observation",
+          "printedPages": ["319", "319"]
+        }
       ],
       "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-02-chart",
-      "kind": "author-interpretation",
-      "text": "Ảnh bảng riêng: Dậu Huynh hoá Thân; Ngọ Quan hoá Dậu, Dần Tài trì Thế. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.",
-      "citationIds": ["citation-bpct-question-01-example-02-chart"],
-      "attribution": {
         "author": "Bảng trong bản BPCT biên soạn — tác giả từng hình chưa xác lập"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
+      }
     },
     {
-      "id": "article-bpct-question-01-bpct-question-01-example-03",
-      "kind": "author-interpretation",
-      "text": "Ngữ cảnh nguồn: Mậu Thìn / Ngọ — em gái sinh, Tấn. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.",
-      "citationIds": ["citation-bpct-question-01-example-03"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-03-experiment",
-      "kind": "author-interpretation",
-      "text": "Dậu Huynh bị tháng khắc được ngày sinh, hợp Thìn chờ Mão xung; tác giả kể mẹ con bình an, note2 nhấn xung Dụng chứ không xung Nhật.",
-      "citationIds": [
-        "citation-bpct-question-01-example-03-experiment",
-        "citation-bpct-question-01-example-03",
-        "citation-bpct-question-01-example-03-chart"
-      ],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-03-chart",
-      "kind": "author-interpretation",
-      "text": "Ảnh bảng riêng: Dậu Huynh trì Thế, Mùi Phụ ở Ứng, sáu hào không ghi động. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.",
-      "citationIds": ["citation-bpct-question-01-example-03-chart"],
-      "attribution": {
-        "author": "Bảng trong bản BPCT biên soạn — tác giả từng hình chưa xác lập"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-04",
-      "kind": "author-interpretation",
-      "text": "Ngữ cảnh nguồn: Ất Mùi / Tị — tự bệnh, Đại Quá→Đỉnh. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.",
-      "citationIds": ["citation-bpct-question-01-example-04"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-04-experiment",
-      "kind": "author-interpretation",
-      "text": "Hợi Thế nhận Dậu sinh/Mùi khắc nhưng Nhật khắc Nguyệt xung làm cứu vô gốc; kể chết ngày Mão khi Nguyên bị xung; note3 ưu tiên Nhật Nguyệt.",
-      "citationIds": [
-        "citation-bpct-question-01-example-04-experiment",
-        "citation-bpct-question-01-example-04",
-        "citation-bpct-question-01-example-04-chart"
-      ],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-04-chart",
-      "kind": "author-interpretation",
-      "text": "Ảnh bảng riêng: Dậu ở ngũ được in nhãn Dậu thay tên Lục thân; Mùi Tài hoá Tị, Hợi Phụ trì Thế, giữ nhãn không sửa. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.",
-      "citationIds": ["citation-bpct-question-01-example-04-chart"],
-      "attribution": {
-        "author": "Bảng trong bản BPCT biên soạn — tác giả từng hình chưa xác lập"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-05",
-      "kind": "author-interpretation",
-      "text": "Ngữ cảnh nguồn: Mậu Tí / Thân — đất mộ, Bát. Ngày/ tháng được chép theo nhãn nguồn, không chuyển sang ngày dân sự hay coi là thí nghiệm được kiểm chứng.",
-      "citationIds": ["citation-bpct-question-01-example-05"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-05-experiment",
-      "kind": "author-interpretation",
-      "text": "Nhật Tử trì Thế được tháng sinh, nguồn liên hệ Long/Hổ, tả thuỷ, triều sơn và án; kể hai con đỗ sau táng. Chỉ là mô tả phong thuỷ và kết quả được kể, không thiết kế mộ.",
-      "citationIds": [
-        "citation-bpct-question-01-example-05-experiment",
-        "citation-bpct-question-01-example-05",
-        "citation-bpct-question-01-example-05-chart"
-      ],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không chắc từng đoạn do cùng người viết"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-example-05-chart",
-      "kind": "author-interpretation",
-      "text": "Ảnh bảng riêng: Tí Tử trì Thế, Tị Quan Ứng; note4 đặt Thanh Long ở ngũ tức Tí trì Thế, đếm từ dưới lên. Chỉ tóm tắt các nhãn được chọn; không sao hình, tái lập đủ đồ hình hoặc dùng làm fixture tính toán. Những nhãn thiếu/lặp hay khác prose giữ nguyên, không tính lại để sửa.",
-      "citationIds": ["citation-bpct-question-01-example-05-chart"],
-      "attribution": {
-        "author": "Bảng trong bản BPCT biên soạn — tác giả từng hình chưa xác lập"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-note-01",
-      "kind": "author-interpretation",
-      "text": "Chú1 giải Nguyệt kiến sinh Nguyên động và Huynh trì Thế làm ví dụ đầu dễ; không công nhận hiệu nghiệm.",
-      "citationIds": [
-        "citation-bpct-question-01-note-01",
-        "citation-bpct-question-01-example-01-experiment",
-        "citation-bpct-question-01-example-01-chart"
+      "text": "Chú1 giải Nguyệt kiến sinh Nguyên động và Huynh trì Thế làm ví dụ đầu dễ; không công nhận hiệu nghiệm.\n\nChú2 nói Mão phải xung Dụng, không thể xung khai Nhật; giữ khác biệt cách gọi trong tác giả.\n\nChú3 đề cao Nhật Nguyệt hơn động hào khi Nhật khắc/Nguyệt xung Dụng, không phép ưu tiên tính toán được phát hành.\n\nChú4 dựa can Mậu đặt Câu Trần sơ, gọi Thanh Long ngũ tức Thế; bảng có Tí Tử trì Thế ở ngũ đếm từ dưới lên, không biến note thành bảng lịch mới.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-note-01 — translator-note",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-01-experiment — attributed-experiment",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-01-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-note-02 — translator-note",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 366],
+          "section": "bpct-question-01-example-03-experiment — attributed-experiment",
+          "printedPages": ["318", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-question-01-example-03-chart — chart-observation",
+          "printedPages": ["318", "318"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-note-03 — translator-note",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-04-experiment — attributed-experiment",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-04-chart — chart-observation",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-note-04 — translator-note",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-05-experiment — attributed-experiment",
+          "printedPages": ["319", "319"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [366, 366],
+          "section": "bpct-question-01-example-05-chart — chart-observation",
+          "printedPages": ["319", "319"]
+        }
       ],
       "attribution": {
         "author": "Vĩnh Cao",
         "via": "Tín chỉ chung dịch/chú; không chữ ký riêng từng chú"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
+      }
     },
     {
-      "id": "article-bpct-question-01-bpct-question-01-note-02",
-      "kind": "author-interpretation",
-      "text": "Chú2 nói Mão phải xung Dụng, không thể xung khai Nhật; giữ khác biệt cách gọi trong tác giả.",
-      "citationIds": [
-        "citation-bpct-question-01-note-02",
-        "citation-bpct-question-01-example-03-experiment",
-        "citation-bpct-question-01-example-03-chart"
-      ],
-      "attribution": {
-        "author": "Vĩnh Cao",
-        "via": "Tín chỉ chung dịch/chú; không chữ ký riêng từng chú"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-note-03",
-      "kind": "author-interpretation",
-      "text": "Chú3 đề cao Nhật Nguyệt hơn động hào khi Nhật khắc/Nguyệt xung Dụng, không phép ưu tiên tính toán được phát hành.",
-      "citationIds": [
-        "citation-bpct-question-01-note-03",
-        "citation-bpct-question-01-example-04-experiment",
-        "citation-bpct-question-01-example-04-chart"
-      ],
-      "attribution": {
-        "author": "Vĩnh Cao",
-        "via": "Tín chỉ chung dịch/chú; không chữ ký riêng từng chú"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-question-01-note-04",
-      "kind": "author-interpretation",
-      "text": "Chú4 dựa can Mậu đặt Câu Trần sơ, gọi Thanh Long ngũ tức Thế; bảng có Tí Tử trì Thế ở ngũ đếm từ dưới lên, không biến note thành bảng lịch mới.",
-      "citationIds": [
-        "citation-bpct-question-01-note-04",
-        "citation-bpct-question-01-example-05-experiment",
-        "citation-bpct-question-01-example-05-chart"
-      ],
-      "attribution": {
-        "author": "Vĩnh Cao",
-        "via": "Tín chỉ chung dịch/chú; không chữ ký riêng từng chú"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-question-01-bpct-questions-heading",
-      "kind": "author-interpretation",
       "text": "Part II mở phần áp dụng với mười tám câu hỏi kèm chiêm nghiệm; không phải18 thí nghiệm có đối chứng. Tiêu đề Hán không chứng tác giả từng câu hỏi/đáp.",
-      "citationIds": ["citation-bpct-questions-heading"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [365, 365],
+          "section": "bpct-questions-heading — heading",
+          "printedPages": ["318", "318"]
+        }
+      ],
       "attribution": {
         "author": "Bản BPCT biên soạn Vương Hồng Tự — tín chỉ chung"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ chọn Dụng, diễn giải tự động, dự báo sinh tử/bệnh/tội/giá/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, truy tìm/bắt giữ người hay phương pháp tự hại. Những nhận định về giới, giai cấp, nô bộc, thê thiếp và lỗi người hỏi chỉ được thuật lại, không xác nhận quyền sở hữu người, buộc tội hoặc quy lỗi nạn nhân."
-      ]
+      }
     }
-  ],
-  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-question-01-query",
-      "citation-bpct-question-01-answer",
-      "citation-bpct-question-01-example-01",
-      "citation-bpct-question-01-example-01-experiment",
-      "citation-bpct-question-01-example-01-chart",
-      "citation-bpct-question-01-example-02",
-      "citation-bpct-question-01-example-02-experiment",
-      "citation-bpct-question-01-example-02-chart",
-      "citation-bpct-question-01-example-03",
-      "citation-bpct-question-01-example-03-experiment",
-      "citation-bpct-question-01-example-03-chart",
-      "citation-bpct-question-01-example-04",
-      "citation-bpct-question-01-example-04-experiment",
-      "citation-bpct-question-01-example-04-chart",
-      "citation-bpct-question-01-example-05",
-      "citation-bpct-question-01-example-05-experiment",
-      "citation-bpct-question-01-example-05-chart",
-      "citation-bpct-question-01-note-01",
-      "citation-bpct-question-01-note-02",
-      "citation-bpct-question-01-note-03",
-      "citation-bpct-question-01-note-04",
-      "citation-bpct-questions-heading",
-      "citation-bpct-front-credits-compilation",
-      "citation-bpct-front-credits-translation",
-      "citation-bpct-front-translator-preface-edition"
-    ],
-    "note": "Compared complete PyMuPDF extracted passages and individually opened full-page images /tmp/feat057/{365..428}.png, boundaries364/429 and credits1–3; all64 assigned pages, not contact sheets. SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a,467 pages. Questions365–412 have129 separate charts; selected image-read annotations are summarized, not full board reconstructions/calculation fixtures. Two Q9 examples have no printed chart. Questions and attributed experiments are distinct from conditional rules. Existing selected claims/citations are reused and unchanged; PDF403 criticism is dissent only, not complete Q14. Unsigned insertion412 is separate from Q18;413 is folio-only366. Folios318–366 then375–389 jump, with429 restarting388 outside scope. Hà Tri has60 numbered verse/reading and Vietnamese meaning units, four notes, closing; no separate commentary is printed. Missing/repeated labels, differing annotations, failed timing claims and attribution uncertainty are not repaired. Source comparison only; feat-091 audit, discoveries/layer rosters, independent verification and certification remain open."
-  }
+  ]
 }

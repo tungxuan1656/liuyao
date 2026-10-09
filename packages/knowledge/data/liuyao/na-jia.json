@@ -1,41 +1,28 @@
 {
-  "schemaVersion": 1,
   "id": "rule-na-jia-assignment",
   "type": "rule",
   "title": "Gán thiên can và địa chi theo Nạp Giáp",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
-    {
-      "id": "rule-na-jia-assignment-claim",
-      "kind": "calculation-rule",
-      "text": "An can chi từ hào sơ lên hào thượng. Nội quái dùng ba vị trí của phần nội; ngoại quái dùng ba vị trí của phần ngoại trong bảng Nạp Giáp tương ứng. Bảng này là dữ liệu tham khảo có dẫn nguồn, không thay thế bộ tính của ứng dụng.",
-      "citationIds": ["citation-bpct-p13-technical"]
-    }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-p13-technical",
-      "citation-bpct-p11-technical",
-      "citation-bpct-p62-technical"
-    ],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "ruleset": "liuyao-standard-v1",
   "category": "classification",
+  "status": "ready",
+  "entries": [
+    {
+      "text": "An can chi từ hào sơ lên hào thượng. Nội quái dùng ba vị trí của phần nội; ngoại quái dùng ba vị trí của phần ngoại trong bảng Nạp Giáp tương ứng. Bảng này là dữ liệu tham khảo có dẫn nguồn, không thay thế bộ tính của ứng dụng.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        }
+      ],
+      "id": "claim"
+    }
+  ],
   "tables": [
     {
       "kind": "na-jia",
-      "claimIds": ["rule-na-jia-assignment-claim"],
       "rows": [
         {
           "trigramId": "trigram-heaven",
@@ -285,20 +272,40 @@
             }
           ]
         }
+      ],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        }
       ]
     }
   ],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-bpct-khun-element",
-      "status": "resolved",
-      "description": "Bảng Nạp Giáp trang 13 ghi Khôn thuộc Mộc.",
-      "citationIds": [
-        "citation-bpct-p13-technical",
-        "citation-bpct-p11-technical",
-        "citation-bpct-p62-technical"
-      ],
-      "resolution": "Chuẩn hóa Khôn thuộc Thổ theo bảng ngũ hành của quái và mục Cung Khôn. Dãy can chi được giữ theo bảng Nạp Giáp."
+      "text": "Bảng Nạp Giáp trang 13 ghi Khôn thuộc Mộc. Chuẩn hóa Khôn thuộc Thổ theo bảng ngũ hành của quái và mục Cung Khôn. Dãy can chi được giữ theo bảng Nạp Giáp.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 11],
+          "section": "IX — Ngũ hành của Bát quái",
+          "printedPages": ["5", "5"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [62, 62],
+          "section": "Cung Khôn — Bát Thuần Khôn",
+          "printedPages": ["51", "51"]
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,7 @@
 # feat-067 — Implement versioned audit ledgers and completion gates
 
+> Historical implementation. The [simplified knowledge model](../docs/design-docs/knowledge-model.md#migration-history) supersedes the former audit and provenance machinery. Preserve completed evidence; do not extend that machinery.
+
 ## Goal
 
 Make audit completeness and stale-evidence rejection machine-checkable.
@@ -36,7 +38,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-Follow the [approved audit contract](../docs/design-docs/knowledge-model.md#approved-versioned-audit-contract) and [implementation plan](../docs/plans/feat-067.md). The audit tooling is implemented and verified; this does not claim real corpus review or specialist approval.
+Follow the [approved audit contract](../docs/design-docs/knowledge-model.md#migration-history) and [implementation plan](../docs/plans/feat-067.md). The audit tooling is implemented and verified; this does not claim real corpus review or specialist approval.
 
 ## Verify
 

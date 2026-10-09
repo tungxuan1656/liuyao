@@ -1,93 +1,126 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-29",
   "type": "hexagram",
   "title": "Thuần Khảm",
   "aliases": ["Khảm", "Bát Thuần Khảm", "Tập Khảm"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-water"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-29-structure",
-      "kind": "structural-fact",
       "text": "Thuần Khảm có ngoại quái Khảm và nội quái Khảm. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q29-overview-nhl",
-        "citation-pbc-q29-overview-pbc",
-        "citation-ntt-q29-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [224, 225],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["224", "225"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [294, 297],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [483, 486],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-29-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê đọc hai Khảm theo hiểm nối hiểm, cần lòng thành và đức trung của hào dương để hành động qua khó khăn. Hình ảnh nước chảy và việc luyện tập nhấn mạnh sự bền bỉ; lời giảng không bảo đảm người thành thật sẽ tránh được nguy hiểm thực tế.",
-      "citationIds": ["citation-nhl-q29-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [224, 225],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["224", "225"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-29-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu phân biệt thời gặp hiểm với việc biết dùng sự hiểm để phòng giữ. Khi hiểm chồng chất, lòng thành, đức trung và hành động có đường lối là trọng tâm; học và luyện lâu dài giúp hiểu cách ứng xử theo phép ví của sách.",
-      "citationIds": ["citation-pbc-q29-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [294, 297],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-29-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di đặt lòng tin ở đức cương trung không mất khi gặp hiểm, nhưng vẫn cần hành động tìm đường ra. Nước chảy tiếp gợi việc thực hành liên tục; việc dạy và học cũng cần lặp lại, không nóng vội mong thành ngay.",
-      "citationIds": ["citation-ntt-q29-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [483, 486],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-water"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yang", "yin", "yin", "yang", "yin"],
-    "kingWenNumber": 29,
-    "upperTrigramId": "trigram-water",
-    "lowerTrigramId": "trigram-water",
-    "claimIds": ["hexagram-29-structure"]
-  },
+  "kingWenNumber": 29,
+  "upperTrigramId": "trigram-water",
+  "lowerTrigramId": "trigram-water",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-29-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào đầu yếu ở đáy chỗ hiểm, không đủ sức thoát mà càng lún xuống. Hình ảnh hố sâu nói mức khó khăn tăng khi chưa có khả năng tự giữ.",
-          "citationIds": ["citation-nhl-q29-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [225, 225],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["225", "225"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-29-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cảnh báo sự quen với cảnh hiểm có thể làm người ta khinh suất, càng đi càng sa sâu. Hào đầu yếu và ở thấp nên thiếu sức cùng sự giúp đỡ để ra khỏi hoàn cảnh ấy.",
-          "citationIds": ["citation-pbc-q29-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [297, 298],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-29-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào đầu theo người yếu, thiếu tài và người ứng giúp, lại ở đáy hiểm. Đã ở trong hiểm mà tiếp tục đi sâu làm hoàn cảnh khó hơn, khác với giữ lòng tin để tìm đường thoát.",
-          "citationIds": ["citation-ntt-q29-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [486, 487],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -99,30 +132,43 @@
       "position": 2,
       "polarity": "yang",
       "label": "Cửu nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-29-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào hai cương trung nhưng vẫn bị hiểm bao quanh, chỉ nên mong việc nhỏ. So với hào bốn quẻ Dự, khác thời khiến kết quả khác dù có nét giống về vị trí.",
-          "citationIds": ["citation-nhl-q29-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [225, 225],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["225", "225"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-29-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt khả năng được chút ít ở đức cương trung giữa cảnh hiểm. Điều nhỏ tích dần có thể giúp tìm lối ra, nhưng lời hào chưa nói đã thoát hiểm hoặc có ngay thành công lớn.",
-          "citationIds": ["citation-pbc-q29-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [298, 298],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-29-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho đức giữa của hào hai giúp tránh chìm sâu thêm và được phần nhỏ. Vẫn ở trong hiểm nên chưa thể ra hẳn; giữ được mức ấy là điều lời hào chấp nhận.",
-          "citationIds": ["citation-ntt-q29-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [487, 488],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -134,30 +180,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-29-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào ba không trung chính, tiến hay lui đều gặp hiểm, chỗ tựa cũng không chắc. Lời chớ dùng được ông gắn với người và cách hành động không đủ sức gỡ cảnh này.",
-          "citationIds": ["citation-nhl-q29-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [225, 225],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["225", "225"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-29-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào ba theo thế tiến, lui hay ở đều khó yên, càng cố càng vào sâu. Không dùng cách ấy là lời răn trước tình thế và năng lực chưa thích hợp.",
-          "citationIds": ["citation-pbc-q29-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [298, 299],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-29-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào ba giữa hai thể hiểm, không có tài và vị đủ để ra khỏi nguy. Tự đi vào sâu hơn không tạo được đường thoát; lời không dùng thuộc hoàn cảnh của hào này.",
-          "citationIds": ["citation-ntt-q29-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [488, 490],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -169,56 +228,65 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-29-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc lễ vật đơn sơ theo lòng thành giữa lúc vua tôi cùng gặp hiểm. Ông còn bàn sự khéo léo và quyền biến trong cách kết nối, thay vì cậy nghi thức cầu kỳ.",
-          "citationIds": ["citation-nhl-q29-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [225, 226],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["225", "226"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
-          ]
+          "condition": "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
         },
         {
-          "id": "hexagram-29-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho lúc hiểm cần quan hệ chân thành hơn lễ vật nhiều. Hình ảnh cửa sổ gợi tìm chỗ sáng và cách thông hiểu để kết giao, đặt trong tình thế đặc biệt của lời hào.",
-          "citationIds": ["citation-pbc-q29-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [299, 300],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
-          ]
+          "condition": "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
         },
         {
-          "id": "hexagram-29-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem lễ bạc mà thành thật là cách giúp người ở ngôi cao khi hiểm. Cửa sổ ví chỗ người ấy đã hiểu: từ chỗ sáng ấy mà giảng thêm điều chưa rõ, tránh cố tranh ở chỗ họ chưa nhận ra.",
-          "citationIds": ["citation-ntt-q29-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [490, 492],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
-          ]
+          "condition": "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
         },
         {
-          "id": "hexagram-29-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc nhị trong lời hào theo nghĩa thêm lễ bằng lòng thành, khác cách Trình Di đếm hai đồ đựng thức ăn. Ông đặt hào bốn mềm gần hào năm cứng trong cảnh hiểm để nói sự giúp nhau; cách đọc chữ và ngắt câu được giữ riêng.",
-          "citationIds": ["citation-ntt-q29-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [491, 492],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
-          ]
+          "condition": "Lễ vật và cửa sổ là hình ảnh trong chú giải cổ, không thành yêu cầu nghi lễ hoặc lời khuyên bỏ quy trình để xử việc hiện đại."
         }
       ]
     },
@@ -226,40 +294,57 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-29-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào năm cương trung chính nhưng hiểm chưa hết. Chỉ khi nước đầy và trở lại mức bằng mới có thể ra hiểm và giúp người khác, nên không lỗi gắn với bước ấy.",
-          "citationIds": ["citation-nhl-q29-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [226, 226],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["226", "226"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-29-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào năm ở người có tài và vị nhưng còn phải qua một phần hiểm. Nước đầy rồi bằng gợi thời khó khăn đi tới mức có thể giải; lời không lỗi không nói hiểm đã hết ngay.",
-          "citationIds": ["citation-pbc-q29-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [300, 301],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-29-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di nhấn mạnh hào năm chưa ra hiểm và thiếu người giúp để cứu thiên hạ. Chỉ khi chỗ hiểm đã san bằng mới không lỗi; trong lúc ấy chưa thể nhận là đã thành công.",
-          "citationIds": ["citation-ntt-q29-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [493, 494],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-29-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy cho hào năm cương trung chính nhưng chưa ra khỏi hiểm; nước đầy bằng gợi khả năng cuối cùng có thể thoát. Đây là điều kiện và triển vọng của lời chiêm, không khẳng định đã thoát ngay.",
-          "citationIds": ["citation-ntt-q29-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [493, 493],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -271,116 +356,123 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-29-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc dây trói và bụi gai theo người ở cuối hiểm mà yếu, không có khả năng tự ra. Ba năm không thoát là hình ảnh cảnh mắc kẹt kéo dài trong lời hào.",
-          "citationIds": ["citation-nhl-q29-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [226, 226],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["226", "226"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Dây trói, giam và ba năm thuộc hình ảnh cổ của lời hào, không là dự báo án phạt hoặc kỳ hạn thoát khó khăn."
-          ]
+          "condition": "Dây trói, giam và ba năm thuộc hình ảnh cổ của lời hào, không là dự báo án phạt hoặc kỳ hạn thoát khó khăn."
         },
         {
-          "id": "hexagram-29-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào cuối ở người đã lún sâu mà không chịu đổi lỗi. Hình ảnh bị giam lâu cảnh báo việc làm hiểm thêm và bỏ cơ hội sửa mình.",
-          "citationIds": ["citation-pbc-q29-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [301, 301],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Dây trói, giam và ba năm thuộc hình ảnh cổ của lời hào, không là dự báo án phạt hoặc kỳ hạn thoát khó khăn."
-          ]
+          "condition": "Dây trói, giam và ba năm thuộc hình ảnh cổ của lời hào, không là dự báo án phạt hoặc kỳ hạn thoát khó khăn."
         },
         {
-          "id": "hexagram-29-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di dùng cảnh bị giam để giảng người yếu, không trung chính và ở cực điểm hiểm. Ông đọc ba năm theo sự lâu mà vẫn không thoát, không ấn định một kỳ hạn dự báo.",
-          "citationIds": ["citation-ntt-q29-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [494, 495],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Dây trói, giam và ba năm thuộc hình ảnh cổ của lời hào, không là dự báo án phạt hoặc kỳ hạn thoát khó khăn."
-          ]
+          "condition": "Dây trói, giam và ba năm thuộc hình ảnh cổ của lời hào, không là dự báo án phạt hoặc kỳ hạn thoát khó khăn."
         }
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-nhl-kham-comparison-number",
-      "status": "resolved",
-      "description": "NHL PDF 225 so hào hai Khảm với hào bốn Dự nhưng ghi Dư số 6, khác tên Dự và số 16 trong chính sách.",
-      "citationIds": [
-        "citation-nhl-q29-line-2-nhl",
-        "citation-nhl-q16-overview-nhl",
-        "citation-pbc-q29-line-2-pbc"
-      ],
-      "resolution": "Ảnh PDF 225 xác nhận số 6. Quẻ Dự được ba sách xác định số 16; giữ phép so về thời quẻ, không chuyển nhận định ấy sang quẻ Tụng số 6."
+      "text": "NHL PDF 225 so hào hai Khảm với hào bốn Dự nhưng ghi Dư số 6, khác tên Dự và số 16 trong chính sách. Ảnh PDF 225 xác nhận số 6. Quẻ Dự được ba sách xác định số 16; giữ phép so về thời quẻ, không chuyển nhận định ấy sang quẻ Tụng số 6.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [225, 225],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["225", "225"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [185, 185],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["185", "185"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [298, 298],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-nhl-kham-fifth-polarity",
-      "status": "resolved",
-      "description": "NHL PDF 226 bản dịch hào năm gọi âm, khác nhãn Cửu ngũ, hình quẻ và phần giảng dương cương ngay sau.",
-      "citationIds": [
-        "citation-nhl-q29-line-5-nhl",
-        "citation-pbc-q29-line-5-pbc",
-        "citation-ntt-q29-line-5-ntt"
-      ],
-      "resolution": "Ảnh xác nhận chữ âm trong bản dịch. Hình quẻ và ba sách đều xác định hào năm dương; giữ Cửu ngũ và nghĩa cương trung chính."
+      "text": "NHL PDF 226 bản dịch hào năm gọi âm, khác nhãn Cửu ngũ, hình quẻ và phần giảng dương cương ngay sau. Ảnh xác nhận chữ âm trong bản dịch. Hình quẻ và ba sách đều xác định hào năm dương; giữ Cửu ngũ và nghĩa cương trung chính.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [226, 226],
+          "section": "Hào 5 — diễn giải",
+          "printedPages": ["226", "226"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [300, 301],
+          "section": "Hào 5 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [493, 494],
+          "section": "Hào 5 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-kham-fourth-polarity",
-      "status": "resolved",
-      "description": "NTT PDF 491 phần Chu Hy gọi hào bốn Chín Tư, khác nhãn Lục Tứ và cấu trúc Khảm.",
-      "citationIds": [
-        "citation-ntt-q29-line-4-chu-hy",
-        "citation-ntt-q29-line-4-ntt",
-        "citation-nhl-q29-line-4-nhl",
-        "citation-pbc-q29-line-4-pbc"
-      ],
-      "resolution": "Ảnh xác nhận chữ Chín. Giữ hào bốn âm theo hình quẻ, nhãn đầu hào và hai sách khác; quan hệ cứng mềm của bốn và năm không đổi."
+      "text": "NTT PDF 491 phần Chu Hy gọi hào bốn Chín Tư, khác nhãn Lục Tứ và cấu trúc Khảm. Ảnh xác nhận chữ Chín. Giữ hào bốn âm theo hình quẻ, nhãn đầu hào và hai sách khác; quan hệ cứng mềm của bốn và năm không đổi.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [491, 492],
+          "section": "Hào 4 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [490, 492],
+          "section": "Hào 4 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [225, 226],
+          "section": "Hào 4 — diễn giải",
+          "printedPages": ["225", "226"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [299, 300],
+          "section": "Hào 4 — diễn giải"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q29-overview-nhl",
-      "citation-pbc-q29-overview-pbc",
-      "citation-ntt-q29-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-q29-line-1-nhl",
-      "citation-pbc-q29-line-1-pbc",
-      "citation-ntt-q29-line-1-ntt",
-      "citation-nhl-q29-line-2-nhl",
-      "citation-pbc-q29-line-2-pbc",
-      "citation-ntt-q29-line-2-ntt",
-      "citation-nhl-q29-line-3-nhl",
-      "citation-pbc-q29-line-3-pbc",
-      "citation-ntt-q29-line-3-ntt",
-      "citation-nhl-q29-line-4-nhl",
-      "citation-pbc-q29-line-4-pbc",
-      "citation-ntt-q29-line-4-ntt",
-      "citation-ntt-q29-line-4-chu-hy",
-      "citation-nhl-q29-line-5-nhl",
-      "citation-pbc-q29-line-5-pbc",
-      "citation-ntt-q29-line-5-ntt",
-      "citation-ntt-q29-line-5-chu-hy",
-      "citation-nhl-q29-line-6-nhl",
-      "citation-pbc-q29-line-6-pbc",
-      "citation-ntt-q29-line-6-ntt",
-      "citation-nhl-q16-overview-nhl"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Cách đọc khác nhau được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo."
-  }
+  ]
 }

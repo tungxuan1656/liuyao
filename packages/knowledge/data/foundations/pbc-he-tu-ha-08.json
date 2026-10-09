@@ -1,118 +1,70 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-ha-08",
   "type": "article",
   "title": "PBC — Hệ Từ Hạ, chương 8",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Dịch bất khả viễn,lũ thiên,biến động/lục hư,thăng giáng/cương nhu và điển yếu.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-section-01-original-reading"],
+      "text": "Dịch bất khả viễn,lũ thiên,biến động/lục hư,thăng giáng/cương nhu và điển yếu.\n\nNoi từ,quỵ phương,điển thường,phi kỳ nhân thì đạo bất hư hành.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [641, 641],
+          "section": "section-01-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [641, 641],
+          "section": "section-04-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-section-01-meaning-commentary",
-      "kind": "author-interpretation",
-      "text": "PBC diễn viễn như quên,lũ hăng hái/thiên hoạt động,mọi việc/vị có thể dùng; quẻ sáu vị âm dương đổi không khuôn cố định. Đây là lời PBC,không hiệu quả được chứng.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-section-01-meaning-commentary"],
+      "text": "PBC diễn viễn như quên,lũ hăng hái/thiên hoạt động,mọi việc/vị có thể dùng; quẻ sáu vị âm dương đổi không khuôn cố định. Đây là lời PBC,không hiệu quả được chứng.\n\nPBC giải quỵ đo lường,quy tắc ở lời/sách phải có người làm; trinh không chỉ chữ,cần thực hành Càn/Khôn. Không bổ các tiết2–3 vắng.\n\nPBC in Hán/đọc rồi văn Việt mang nghĩa và lời giảng liền nhau,không đoạn Dịch độc lập. Riêng chương5 chỉ referral,không in bản văn và diễn nghĩa của mười một hào tại đây. Không suy một translation layer độc lập từ đọc Hán-Việt.\n\nPBC lược dịch hai tiết,nhãn1 và4;2–3 không in. NHL381 in nhãn3 hai lần,nhưng không đổi nhãn4 PBC theo NHL.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [641, 641],
+          "section": "section-01-meaning-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [641, 642],
+          "section": "section-04-meaning-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [641, 642],
+          "section": "layer-accounting — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [641, 641],
+          "section": "selection-notice — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Noi từ,quỵ phương,điển thường,phi kỳ nhân thì đạo bất hư hành.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-section-04-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-section-04-meaning-commentary",
-      "kind": "author-interpretation",
-      "text": "PBC giải quỵ đo lường,quy tắc ở lời/sách phải có người làm; trinh không chỉ chữ,cần thực hành Càn/Khôn. Không bổ các tiết2–3 vắng.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-section-04-meaning-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-layer-accounting",
-      "kind": "author-interpretation",
-      "text": "PBC in Hán/đọc rồi văn Việt mang nghĩa và lời giảng liền nhau,không đoạn Dịch độc lập. Riêng chương5 chỉ referral,không in bản văn và diễn nghĩa của mười một hào tại đây. Không suy một translation layer độc lập từ đọc Hán-Việt.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-layer-accounting"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-selection-notice",
-      "kind": "author-interpretation",
-      "text": "PBC lược dịch hai tiết,nhãn1 và4;2–3 không in. NHL381 in nhãn3 hai lần,nhưng không đổi nhãn4 PBC theo NHL.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-selection-notice"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-08-pbc-he-tu-ha-08-s04-thuong-quote",
-      "kind": "author-interpretation",
       "text": "PBC dẫn thần nhi minh chi/tồn người rồi nối Càn tự cường,Khôn hậu đức; chỉ lời đang in trong Hạ,không sửa coverage Thượng061.",
-      "citationIds": ["citation-pbc-he-tu-ha-08-s04-thuong-quote"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [642, 642],
+          "section": "s04-thuong-quote — commentary"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — PBC dẫn",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-ha-08-section-01-original-reading",
-      "citation-pbc-he-tu-ha-08-section-01-meaning-commentary",
-      "citation-pbc-he-tu-ha-08-section-04-original-reading",
-      "citation-pbc-he-tu-ha-08-section-04-meaning-commentary",
-      "citation-pbc-he-tu-ha-08-layer-accounting",
-      "citation-pbc-he-tu-ha-08-selection-notice",
-      "citation-pbc-he-tu-ha-08-s04-thuong-quote"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

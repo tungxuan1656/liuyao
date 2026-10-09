@@ -1,330 +1,327 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-54",
   "type": "hexagram",
   "title": "Lôi Trạch Quy Muội",
   "aliases": ["Quy Muội", "Qui Muội", "Lôi Trạch Qui Muội"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-lake", "trigram-thunder"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-54-structure",
-      "kind": "structural-fact",
       "text": "Lôi Trạch Quy Muội có nội quái Đoài, ngoại quái Chấn; vị trí một đến sáu tính từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q54-overview-structure",
-        "citation-pbc-q54-overview-structure",
-        "citation-ntt-q54-overview-structure",
-        "citation-nhl-q54-line-1-classical-text",
-        "citation-nhl-q54-line-2-classical-text",
-        "citation-nhl-q54-line-3-classical-text",
-        "citation-nhl-q54-line-4-classical-text",
-        "citation-nhl-q54-line-5-classical-text",
-        "citation-nhl-q54-line-6-classical-text",
-        "citation-pbc-q54-line-1-classical-text",
-        "citation-pbc-q54-line-2-classical-text",
-        "citation-pbc-q54-line-3-classical-text",
-        "citation-pbc-q54-line-4-classical-text",
-        "citation-pbc-q54-line-5-classical-text",
-        "citation-pbc-q54-line-6-classical-text",
-        "citation-ntt-q54-line-1-classical-text",
-        "citation-ntt-q54-line-2-classical-text",
-        "citation-ntt-q54-line-3-classical-text",
-        "citation-ntt-q54-line-4-classical-text",
-        "citation-ntt-q54-line-5-classical-text",
-        "citation-ntt-q54-line-6-classical-text"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [300, 300],
+          "section": "Tên quẻ, quái trên/dưới và hình quẻ hoặc lời giải cấu trúc",
+          "printedPages": ["300", "300"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [508, 508],
+          "section": "Tên quẻ, quái trên/dưới và hình quẻ hoặc lời giải cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [814, 814],
+          "section": "Tên quẻ, quái trên/dưới và hình quẻ hoặc lời giải cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [300, 301],
+          "section": "Hào 1: lời hào, nhãn vị trí và lời Tượng",
+          "printedPages": ["300", "301"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [301, 301],
+          "section": "Hào 2: lời hào, nhãn vị trí và lời Tượng",
+          "printedPages": ["301", "301"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [301, 301],
+          "section": "Hào 3: lời hào, nhãn vị trí và lời Tượng",
+          "printedPages": ["301", "301"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [301, 301],
+          "section": "Hào 4: lời hào, nhãn vị trí và lời Tượng",
+          "printedPages": ["301", "301"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [301, 302],
+          "section": "Hào 5: lời hào, nhãn vị trí và lời Tượng",
+          "printedPages": ["301", "302"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [302, 302],
+          "section": "Hào 6: lời hào, nhãn vị trí và lời Tượng",
+          "printedPages": ["302", "302"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [510, 511],
+          "section": "Hào 1: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [511, 512],
+          "section": "Hào 2: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [512, 512],
+          "section": "Hào 3: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [513, 513],
+          "section": "Hào 4: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [513, 514],
+          "section": "Hào 5: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [514, 515],
+          "section": "Hào 6: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [817, 818],
+          "section": "Hào 1: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [818, 819],
+          "section": "Hào 2: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [820, 821],
+          "section": "Hào 3: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [821, 822],
+          "section": "Hào 4: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [822, 824],
+          "section": "Hào 5: lời hào, nhãn vị trí và lời Tượng"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [824, 825],
+          "section": "Hào 6: lời hào, nhãn vị trí và lời Tượng"
+        }
       ]
     },
     {
-      "id": "hexagram-54-overview-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê giải Quy Muội là gái trẻ về nhà chồng, Đoài vui theo Chấn động, nối sau Tiệm vì tiến có nơi tới. Ông đặt lời hung trong cách đọc phối hợp không cân xứng, cảm tình không chính, bốn vị giữa lệch và âm cưỡi dương. Đại Tượng xét cái tệ cuối từ đầu thiếu chính; đây là lễ quan của tác giả, không phán xét quan hệ hiện đại.",
-      "citationIds": ["citation-nhl-q54-overview-nhl"],
+      "text": "Nguyễn Hiến Lê giải Quy Muội là gái trẻ về nhà chồng, Đoài vui theo Chấn động, nối sau Tiệm vì tiến có nơi tới. Ông đặt lời hung trong cách đọc phối hợp không cân xứng, cảm tình không chính, bốn vị giữa lệch và âm cưỡi dương. Đại Tượng xét cái tệ cuối từ đầu thiếu chính; đây là lễ quan của tác giả, không phán xét quan hệ hiện đại.\n\nNguyễn Hiến Lê chọn hào năm là đẹp nhất của quẻ vì cao quý mà không tự phụ, quý đức hơn phục sức và giữ khiêm tốn. Nhận xét chọn vợ, chọn dâu của ông được giữ như giá trị lịch sử của lời bình, không thành tiêu chuẩn áp lên người dùng.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [300, 300],
+          "section": "Lời giải của Nguyễn Hiến Lê",
+          "printedPages": ["300", "300"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [302, 302],
+          "section": "Lời tổng kết",
+          "printedPages": ["302", "302"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
+      }
     },
     {
-      "id": "hexagram-54-overview-closing-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê chọn hào năm là đẹp nhất của quẻ vì cao quý mà không tự phụ, quý đức hơn phục sức và giữ khiêm tốn. Nhận xét chọn vợ, chọn dâu của ông được giữ như giá trị lịch sử của lời bình, không thành tiêu chuẩn áp lên người dùng.",
-      "citationIds": ["citation-nhl-q54-overview-closing-nhl"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải Quy Muội theo gái nhỏ, Chấn trưởng nam và Đoài thiếu nữ, tiến có đích sau Tiệm. Ông đối Tiệm dừng, thuận với Quy Muội vui rồi động, cho sự chủ động theo trai và vị không chính là lý do chinh hung. Giữ lập luận trong lễ nam nữ cổ của ông, không lấy nó làm đạo đức phổ quát.",
-      "citationIds": ["citation-pbc-q54-overview-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "PHỤ CHÚ của Phan Bội Châu đối Hàm với Quy Muội: cùng có tình nam nữ nhưng ông đánh giá khác do hướng cầu, thuận và chính ứng. Ông nhấn cảm tình phải chính trong lễ quan của mình, không phủ nhận vai trò cảm tình trong phối hợp và không suy thành lời khuyên quan hệ ngày nay.",
-      "citationIds": ["citation-pbc-q54-overview-supplement-pbc"],
+      "text": "Phan Bội Châu giải Quy Muội theo gái nhỏ, Chấn trưởng nam và Đoài thiếu nữ, tiến có đích sau Tiệm. Ông đối Tiệm dừng, thuận với Quy Muội vui rồi động, cho sự chủ động theo trai và vị không chính là lý do chinh hung. Giữ lập luận trong lễ nam nữ cổ của ông, không lấy nó làm đạo đức phổ quát.\n\nPHỤ CHÚ của Phan Bội Châu đối Hàm với Quy Muội: cùng có tình nam nữ nhưng ông đánh giá khác do hướng cầu, thuận và chính ứng. Ông nhấn cảm tình phải chính trong lễ quan của mình, không phủ nhận vai trò cảm tình trong phối hợp và không suy thành lời khuyên quan hệ ngày nay.\n\nPhan Bội Châu giải âm dương giao, nam nữ hợp là căn cứ nối sinh của loài người, nữ quy là cuối việc con gái và đầu sinh dục. Chinh hung vì bốn vị giữa không đúng; tam trên nhị, ngũ trên tứ và hình hai thể là nhu thừa cương. Ý áp chế trái lễ được quy rõ cho tác giả, không xác nhận bất bình đẳng giới làm quy tắc.\n\nPhan Bội Châu đọc sấm làm nước chằm động là tượng gái theo trai. Vĩnh chung là xét tới cuối để biết tệ có thể phát sinh vì đầu không thận trọng; ông mở từ hôn phối sang mọi việc. Không chuyển lý luận đầu-cuối này thành dự báo kết quả cụ thể.\n\nPhan Bội Châu liên hệ Đại Tượng Tụng lo từ đầu với Quy Muội xét tới cuối. Hai đoạn bổ sung nhau: muốn giữ cuối phải tính đầu và nhìn cuối để phòng điều hỏng. Giữ PHỤ CHÚ như so sánh văn bản chứ không thay lời của một quẻ bằng quẻ kia.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [508, 509],
+          "section": "Tự Quái và Soán từ"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [509, 509],
+          "section": "PHỤ CHÚ sau Soán từ"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [509, 510],
+          "section": "Soán truyện"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [510, 510],
+          "section": "Đại Tượng"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [510, 510],
+          "section": "PHỤ CHÚ sau Đại Tượng"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
+      }
     },
     {
-      "id": "hexagram-54-overview-thoan-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải âm dương giao, nam nữ hợp là căn cứ nối sinh của loài người, nữ quy là cuối việc con gái và đầu sinh dục. Chinh hung vì bốn vị giữa không đúng; tam trên nhị, ngũ trên tứ và hình hai thể là nhu thừa cương. Ý áp chế trái lễ được quy rõ cho tác giả, không xác nhận bất bình đẳng giới làm quy tắc.",
-      "citationIds": ["citation-pbc-q54-overview-thoan-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-dai-tuong-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu đọc sấm làm nước chằm động là tượng gái theo trai. Vĩnh chung là xét tới cuối để biết tệ có thể phát sinh vì đầu không thận trọng; ông mở từ hôn phối sang mọi việc. Không chuyển lý luận đầu-cuối này thành dự báo kết quả cụ thể.",
-      "citationIds": ["citation-pbc-q54-overview-dai-tuong-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-dai-tuong-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu liên hệ Đại Tượng Tụng lo từ đầu với Quy Muội xét tới cuối. Hai đoạn bổ sung nhau: muốn giữ cuối phải tính đầu và nhìn cuối để phòng điều hỏng. Giữ PHỤ CHÚ như so sánh văn bản chứ không thay lời của một quẻ bằng quẻ kia.",
-      "citationIds": ["citation-pbc-q54-overview-dai-tuong-supplement-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di giải tiến phải tới chỗ nên Quy Muội nối Tiệm. Chấn động trên Đoài vui dưới là trưởng nam, gái trẻ cảm nhau; sấm làm chằm động là tượng theo. Đoạn lời bình trực tiếp dưới lời quẻ trong bản cung cấp dừng giữa ý, nên không phục dựng phần vắng; phần Thoán còn lại cung cấp lý luận riêng.",
-      "citationIds": ["citation-ntt-q54-overview-trinh-di"],
+      "text": "Trình Di giải tiến phải tới chỗ nên Quy Muội nối Tiệm. Chấn động trên Đoài vui dưới là trưởng nam, gái trẻ cảm nhau; sấm làm chằm động là tượng theo. Đoạn lời bình trực tiếp dưới lời quẻ trong bản cung cấp dừng giữa ý, nên không phục dựng phần vắng; phần Thoán còn lại cung cấp lý luận riêng.\n\nTrình Di đặt nam nữ giao và sinh nối như nghĩa lớn âm dương của Thoán. Lời hung thuộc trường hợp theo tình riêng, vị sai và nhu cưỡi cương, trái thứ tự xướng tùy trong lễ của ông; không phải mọi phối hợp đều bị gọi hung.\n\nTrình Di đọc vĩnh chung vừa là sinh nối tiếp, vừa là giữ đạo vợ chồng lâu dài. Biết có lẽ hỏng để tìm cách nối, răn và thận trọng; hợp do vui dục không chính thì khó thường lâu. Giữ nghĩa nối và nghĩa phòng hỏng trong lời bình, không thu hết vào một nghĩa duy nhất.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [814, 814],
+          "section": "Lời giải của Trình Di"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [815, 816],
+          "section": "Thoán"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [816, 817],
+          "section": "Đại Tượng"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
+      }
     },
     {
-      "id": "hexagram-54-overview-chu-hy",
-      "kind": "author-interpretation",
-      "text": "Chu Hy đọc gái trẻ theo trưởng nam bằng vui rồi động là không theo chính đạo trong lễ cổ. Vị nhị đến ngũ không chính, tam và ngũ cưỡi cứng làm cơ sở lời đi hung, không lợi; không coi nhận xét ấy là quy tắc áp dụng cho mọi quan hệ.",
-      "citationIds": ["citation-ntt-q54-overview-chu-hy"],
+      "text": "Chu Hy đọc gái trẻ theo trưởng nam bằng vui rồi động là không theo chính đạo trong lễ cổ. Vị nhị đến ngũ không chính, tam và ngũ cưỡi cứng làm cơ sở lời đi hung, không lợi; không coi nhận xét ấy là quy tắc áp dụng cho mọi quan hệ.\n\nChu Hy giải nữ quy là kết thúc một giai đoạn của con gái, sinh nuôi mở đầu loài người. Trai gái giao vốn là lẽ chính; chỉ trường hợp thể quẻ này không chính, nên phải tách nghĩa tên quẻ với lời hung của tình thế.\n\nChu Hy đọc sấm động, chằm theo thành tượng nữ quy. Nhìn sự hợp không chính thì biết cuối có điều hỏng; ông mở lý ấy sang sự vật khác, giữ như cách đọc Đại Tượng chứ không tiên đoán cho cá nhân.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [815, 815],
+          "section": "Lời giải của Chu Hy"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [815, 816],
+          "section": "Thoán"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [817, 817],
+          "section": "Đại Tượng"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
+      }
     },
     {
-      "id": "hexagram-54-overview-thoan-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di đặt nam nữ giao và sinh nối như nghĩa lớn âm dương của Thoán. Lời hung thuộc trường hợp theo tình riêng, vị sai và nhu cưỡi cương, trái thứ tự xướng tùy trong lễ của ông; không phải mọi phối hợp đều bị gọi hung.",
-      "citationIds": ["citation-ntt-q54-overview-thoan-trinh-di"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-thoan-chu-hy",
-      "kind": "author-interpretation",
-      "text": "Chu Hy giải nữ quy là kết thúc một giai đoạn của con gái, sinh nuôi mở đầu loài người. Trai gái giao vốn là lẽ chính; chỉ trường hợp thể quẻ này không chính, nên phải tách nghĩa tên quẻ với lời hung của tình thế.",
-      "citationIds": ["citation-ntt-q54-overview-thoan-chu-hy"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-dai-tuong-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di đọc vĩnh chung vừa là sinh nối tiếp, vừa là giữ đạo vợ chồng lâu dài. Biết có lẽ hỏng để tìm cách nối, răn và thận trọng; hợp do vui dục không chính thì khó thường lâu. Giữ nghĩa nối và nghĩa phòng hỏng trong lời bình, không thu hết vào một nghĩa duy nhất.",
-      "citationIds": ["citation-ntt-q54-overview-dai-tuong-trinh-di"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-overview-dai-tuong-chu-hy",
-      "kind": "author-interpretation",
-      "text": "Chu Hy đọc sấm động, chằm theo thành tượng nữ quy. Nhìn sự hợp không chính thì biết cuối có điều hỏng; ông mở lý ấy sang sự vật khác, giữ như cách đọc Đại Tượng chứ không tiên đoán cho cá nhân.",
-      "citationIds": ["citation-ntt-q54-overview-dai-tuong-chu-hy"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-note-1-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải Quy Muội là em gái về nhà chồng.",
-      "citationIds": ["citation-ntt-q54-note-1-ntt"],
+      "text": "Ngô Tất Tố giải Quy Muội là em gái về nhà chồng.\n\nNgô Tất Tố chú gả xuống là cách gọi con gái vua chúa đi lấy chồng.\n\nNgô Tất Tố ghi giỏ xưa dùng chứa rau dưa dâng cúng. Đây là chú giải đồ tế, không hướng dẫn nghi lễ.\n\nNgô Tất Tố giải con sinh là vật dùng tế như bò, lợn; giữ như từ ngữ nghi lễ lịch sử.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [825, 825],
+          "section": "Chú thích 1"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [825, 825],
+          "section": "Chú thích 2"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [825, 825],
+          "section": "Chú thích 3"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [825, 825],
+          "section": "Chú thích 4"
+        }
+      ],
       "attribution": {
         "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-note-2-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố chú gả xuống là cách gọi con gái vua chúa đi lấy chồng.",
-      "citationIds": ["citation-ntt-q54-note-2-ntt"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-note-3-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố ghi giỏ xưa dùng chứa rau dưa dâng cúng. Đây là chú giải đồ tế, không hướng dẫn nghi lễ.",
-      "citationIds": ["citation-ntt-q54-note-3-ntt"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-54-note-4-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải con sinh là vật dùng tế như bò, lợn; giữ như từ ngữ nghi lễ lịch sử.",
-      "citationIds": ["citation-ntt-q54-note-4-ntt"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-      ]
+      }
     }
   ],
-  "relatedIds": ["trigram-lake", "trigram-thunder"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yang", "yin", "yang", "yin", "yin"],
-    "kingWenNumber": 54,
-    "upperTrigramId": "trigram-thunder",
-    "lowerTrigramId": "trigram-lake",
-    "claimIds": ["hexagram-54-structure"]
-  },
+  "kingWenNumber": 54,
+  "upperTrigramId": "trigram-thunder",
+  "lowerTrigramId": "trigram-lake",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-54-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê phân biệt lời quẻ xấu với tốt xấu từng hào theo hoàn cảnh. Sơ cương, thấp, không chính ứng là hình đệ đi theo vợ cả; thọt vẫn đi diễn giới hạn vị nhưng còn khả năng giúp việc. Ông giải tục em, cháu cô dâu theo về trong chế độ cổ, không đề nghị chế độ ấy ngày nay.",
-          "citationIds": ["citation-nhl-q54-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [300, 301],
+              "section": "Hào 1: Lời giải của Nguyễn Hiến Lê",
+              "printedPages": ["300", "301"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-1-pbc",
-          "kind": "author-interpretation",
-          "text": "Phan Bội Châu đọc sơ đức cương hiền mà thấp, không ứng nên ở phận đệ trợ vợ chính, không tự chuyên. Thọt hay đi là ví dụ địa vị hạn chế vẫn làm được việc hỗ trợ; chinh cát thuộc nghĩa riêng hào và khác chinh hung của quẻ.",
-          "citationIds": ["citation-pbc-q54-line-1-pbc"],
+          "text": "Phan Bội Châu đọc sơ đức cương hiền mà thấp, không ứng nên ở phận đệ trợ vợ chính, không tự chuyên. Thọt hay đi là ví dụ địa vị hạn chế vẫn làm được việc hỗ trợ; chinh cát thuộc nghĩa riêng hào và khác chinh hung của quẻ.\n\nPHỤ CHÚ của Phan Bội Châu giải đệ theo tục em hay cháu đi cùng cô dâu ở thời phong kiến. Ông nhấn một người động vì tư tình khác động vì phận vị; chữ tốt của sơ không bác lời hung chung mà minh họa nghĩa đổi theo mỗi vị.",
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [510, 511],
+              "section": "Hào 1: Lời giải của Phan Bội Châu"
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [511, 511],
+              "section": "PHỤ CHÚ hào sơ"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-1-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di coi dương cương ở đàn bà là đức hiền trinh, vị dưới không ứng là tượng vợ lẽ. Không thể làm việc xa lớn nhưng tự giữ và vâng giúp chồng thì tốt trong phận cổ; Tiểu Tượng nói giữ thường và giúp nhau, không phải lời khen sự theo dục của toàn quẻ.",
-          "citationIds": ["citation-ntt-q54-line-1-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [817, 818],
+              "section": "Hào 1: Lời giải của Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-1-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc sơ thấp không chính ứng thành tượng vợ lẽ, dương cương là đức hiền chính. Kẻ què còn đi chỉ phần trợ giúp có giới hạn; đi tốt là lời chiêm cho trường hợp ấy, không mở rộng thành tốt của mọi tiến đi.",
-          "citationIds": ["citation-ntt-q54-line-1-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [817, 818],
+              "section": "Hào 1: Lời giải của Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
-        },
-        {
-          "id": "hexagram-54-line-1-supplement-pbc",
-          "kind": "author-interpretation",
-          "text": "PHỤ CHÚ của Phan Bội Châu giải đệ theo tục em hay cháu đi cùng cô dâu ở thời phong kiến. Ông nhấn một người động vì tư tình khác động vì phận vị; chữ tốt của sơ không bác lời hung chung mà minh họa nghĩa đổi theo mỗi vị.",
-          "citationIds": ["citation-pbc-q54-line-1-supplement-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         }
       ]
     },
@@ -332,81 +329,80 @@
       "position": 2,
       "polarity": "yang",
       "label": "Cửu nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-54-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc nhị cương trung như gái hiền gặp ngũ nhu bất chính là chồng không giúp việc nhà. Chột còn thấy ví khả năng không đầy đủ, giữ trung trinh âm thầm vẫn là lợi; ông mở ra người có đức không gặp thời.",
-          "citationIds": ["citation-nhl-q54-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [301, 301],
+              "section": "Hào 2: Lời giải của Nguyễn Hiến Lê",
+              "printedPages": ["301", "301"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-2-pbc",
-          "kind": "author-interpretation",
-          "text": "Phan Bội Châu xem nhị cương trung nhưng ứng ngũ nhu bất chính nên không thể một mình làm đủ việc tề gia. Chột còn nhìn tượng chỉ làm được phần nhỏ; u nhân kín lặng giữ trinh khiến cảnh biến mà đạo thường không biến.",
-          "citationIds": ["citation-pbc-q54-line-2-pbc"],
+          "text": "Phan Bội Châu xem nhị cương trung nhưng ứng ngũ nhu bất chính nên không thể một mình làm đủ việc tề gia. Chột còn nhìn tượng chỉ làm được phần nhỏ; u nhân kín lặng giữ trinh khiến cảnh biến mà đạo thường không biến.\n\nTrong PHỤ CHÚ, Phan Bội Châu mở u nhân khỏi chuyện vợ chồng: tôi không gặp vua hay, tớ không gặp thầy tốt mà vẫn giữ chí tiết. Công nghiệp không nổi bật vẫn có giá trị theo cách đọc của ông.",
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [511, 512],
+              "section": "Hào 2: Lời giải của Phan Bội Châu"
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [512, 512],
+              "section": "PHỤ CHÚ hào hai"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-2-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di giải nhị cương trung hiền chính, ứng ngũ động theo vui nên không đủ sức làm trọn công nội trợ. Nhị tự giữ u tĩnh trinh chính, chưa mất đạo thường; chột trông được là hình giới hạn công dụng chứ không chỉ tình trạng thân thể.",
-          "citationIds": ["citation-ntt-q54-line-2-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [818, 819],
+              "section": "Hào 2: Lời giải của Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc gái hiền gặp chồng bất lương là không phát triển hết công việc, như chột còn nhìn. U nhân cũng có thể là người ôm đạo không gặp thời; lợi nằm ở chính bền, không ở ép hoàn cảnh phải đổi.",
-          "citationIds": ["citation-ntt-q54-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [818, 819],
+              "section": "Hào 2: Lời giải của Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-2-supplement-pbc",
-          "kind": "author-interpretation",
-          "text": "Trong PHỤ CHÚ, Phan Bội Châu mở u nhân khỏi chuyện vợ chồng: tôi không gặp vua hay, tớ không gặp thầy tốt mà vẫn giữ chí tiết. Công nghiệp không nổi bật vẫn có giá trị theo cách đọc của ông.",
-          "citationIds": ["citation-pbc-q54-line-2-supplement-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
-        },
-        {
-          "id": "hexagram-54-line-2-khau-kien-an",
-          "kind": "author-interpretation",
           "text": "Khâu Kiến An, trong Lời bàn của Tiên Nho, ghép hình thọt ở sơ với chột ở nhị để nói không lấn vợ cả và không chống chồng. Ông đọc hằng và chưa biến thường như giữ phận trong lễ thứ bậc cổ; không dùng lý luận hạn chế ấy làm chuẩn mực cho phụ nữ ngày nay.",
-          "citationIds": ["citation-ntt-q54-line-2-khau-kien-an"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [820, 820],
+              "section": "Lời bàn của Tiên Nho sau hào hai"
+            }
+          ],
           "attribution": {
             "author": "Khâu Kiến An",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         }
       ]
     },
@@ -414,69 +410,75 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-54-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc tu là chờ; tam nhu, không trung chính, ham vui nên không được cưới như địa vị đáng có, phải về làm đệ. Ông mở hình ấy sang cầu công danh phú quý thiếu tự trọng; đây là lời phê đạo đức trong nguồn, không phán đoán người chưa kết hôn.",
-          "citationIds": ["citation-nhl-q54-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [301, 301],
+              "section": "Hào 3: Lời giải của Nguyễn Hiến Lê",
+              "printedPages": ["301", "301"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc tu là chờ mãi. Tam ở trên nội quái vốn không thấp nhưng nhu bất trung chính, chủ Đoài vui nên nóng cầu mà không được nhận. Phản quy làm đệ tượng suy giảm thân phận; ông dùng thêm ví dụ cầu công danh để nhấn giữ chính và tự trọng.",
-          "citationIds": ["citation-pbc-q54-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [512, 512],
+              "section": "Hào 3: Lời giải của Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-3-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di coi tam vốn không thấp nhưng vị, đức, cách cầu đều không đáng, lại không chính ứng nên đợi chưa có nơi về. Tu là đợi; trở lại làm lẽ là hình không sánh chính được trong lễ quan của ông, không phải hướng dẫn cho người dùng.",
-          "citationIds": ["citation-ntt-q54-line-3-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [820, 821],
+              "section": "Hào 3: Lời giải của Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-3-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc tam nhu không trung chính, chủ vui, người không nhận nên tượng chưa lấy ai mà trở lại làm lẽ. Ông còn giữ lời có người giải tu là con gái hèn, không buộc dị giải ấy trùng với nghĩa chờ của Trình Di.",
-          "citationIds": ["citation-ntt-q54-line-3-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [820, 821],
+              "section": "Hào 3: Lời giải của Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-3-chu-han-thuong",
-          "kind": "author-interpretation",
           "text": "Chu Hán Thượng dẫn tên sao Tu nữ trong sách Thiên quan làm tiếng gọi hạng vợ lẽ; ông thuật lời Lục Chấn đối Chức Nữ sang với Tu nữ hèn để ủng hộ tu là con gái hèn. Giữ là dị giải từ tên sao được tác giả dẫn, không thành dữ kiện thiên văn hay chuẩn phân hạng phụ nữ.",
-          "citationIds": ["citation-ntt-q54-line-3-chu-han-thuong"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [820, 821],
+              "section": "Lời bàn của Tiên Nho hào ba"
+            }
+          ],
           "attribution": {
             "author": "Chu Hán Thượng",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         }
       ]
     },
@@ -484,56 +486,61 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-54-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem tứ cương ở ngoại quái là gái hiền và sang, không chính ứng nên lỡ thời. Chậm gả vì chờ bạn xứng chứ không như tam cầu gấp; lời gặp duyên lành là nghĩa cổ của hào, không hứa một cuộc hôn nhân.",
-          "citationIds": ["citation-nhl-q54-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [301, 301],
+              "section": "Hào 4: Lời giải của Nguyễn Hiến Lê",
+              "printedPages": ["301", "301"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đối tứ tự giữ với tam tự tiện. Tứ cương, vị trên, không ứng nên quá kỳ; chữ thời chỉ lúc gả. Chí đợi người tốt mới đi giải Tiểu Tượng, không phải thiếu giá trị vì chậm.",
-          "citationIds": ["citation-pbc-q54-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [513, 513],
+              "section": "Hào 4: Lời giải của Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-4-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc tứ hiền minh ở cao mà chưa chính ứng. Lỗi hẹn là vì chí mình đợi người tốt đôi, không do người khác từ bỏ; có đợi rồi đi giải sự chậm theo thời.",
-          "citationIds": ["citation-ntt-q54-line-4-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [821, 822],
+              "section": "Hào 4: Lời giải của Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy xem tứ cương thể trên không ứng là gái hiền không khinh suất theo người. Cố chậm để đợi tạo tương phản với tam; không nhập đợi ấy vào một thời hạn thực tế.",
-          "citationIds": ["citation-ntt-q54-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [821, 822],
+              "section": "Hào 4: Lời giải của Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         }
       ]
     },
@@ -541,68 +548,66 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-54-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê dùng chuyện Đế Ất gả em để giải ngũ nhu trung tôn quý mà ứng nhị thấp. Tay áo kém cô đi theo biểu hiện quý đức, không quý phục sức; trăng gần rằm là đẹp và chưa đầy, giữ khiêm hư.",
-          "citationIds": ["citation-nhl-q54-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [301, 302],
+              "section": "Hào 5: Lời giải của Nguyễn Hiến Lê",
+              "printedPages": ["301", "302"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-5-pbc",
-          "kind": "author-interpretation",
-          "text": "Phan Bội Châu coi công chúa hạ giá và tay áo thua người hầu là tượng đức hơn thế vị, tinh thần hơn vật chất. Trăng xấp xỉ rằm thịnh mà chưa đầy nên chưa khuyết, ngũ ở giữa và hành bằng đức trung; không xác nhận chuyện Đế Ất như lịch sử độc lập.",
-          "citationIds": ["citation-pbc-q54-line-5-pbc"],
+          "text": "Phan Bội Châu coi công chúa hạ giá và tay áo thua người hầu là tượng đức hơn thế vị, tinh thần hơn vật chất. Trăng xấp xỉ rằm thịnh mà chưa đầy nên chưa khuyết, ngũ ở giữa và hành bằng đức trung; không xác nhận chuyện Đế Ất như lịch sử độc lập.\n\nPHỤ CHÚ của Phan Bội Châu dùng hình công chúa áo kém người hầu để phê khoe quyền vị, vật chất và văn minh chỉ ở bề ngoài. Ông nhắc thịnh suy, đầy vơi để giữ chỗ dư, không biến việc đơn giản y phục thành thước đo đạo đức phổ quát.",
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [513, 514],
+              "section": "Hào 5: Lời giải của Phan Bội Châu"
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [514, 514],
+              "section": "PHỤ CHÚ hào năm"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-5-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc Đế Ất như người chỉnh lễ hôn nhân, gái quý gả xuống vẫn nhún theo lễ và không chuộng trang sức. Trăng gần vọng là chưa đầy tới mức chống dương; đây là cách giải tôn ty trong nguồn, không mệnh lệnh phục tùng áp dụng ngày nay.",
-          "citationIds": ["citation-ntt-q54-line-5-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [822, 824],
+              "section": "Hào 5: Lời giải của Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc ngũ mềm giữa, cao mà ứng nhị, chuộng đức hơn y phục. Trăng gần vọng còn biểu hiện đức thịnh của con gái; đi bằng đức giữa là quý thật, không phụ thuộc đồ trang sức.",
-          "citationIds": ["citation-ntt-q54-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [822, 824],
+              "section": "Hào 5: Lời giải của Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
-        },
-        {
-          "id": "hexagram-54-line-5-supplement-pbc",
-          "kind": "author-interpretation",
-          "text": "PHỤ CHÚ của Phan Bội Châu dùng hình công chúa áo kém người hầu để phê khoe quyền vị, vật chất và văn minh chỉ ở bề ngoài. Ông nhắc thịnh suy, đầy vơi để giữ chỗ dư, không biến việc đơn giản y phục thành thước đo đạo đức phổ quát.",
-          "citationIds": ["citation-pbc-q54-line-5-supplement-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         }
       ]
     },
@@ -610,148 +615,85 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-54-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải cuối quẻ, không chính ứng nên hữu danh vô thực. Giỏ không đồ và cắt cừu giả không huyết là hình việc tế không đủ để thành vợ chồng chính thức theo lễ cổ, không lời yêu cầu thực hành tế hoặc kết luận pháp lý hiện đại.",
-          "citationIds": ["citation-nhl-q54-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [302, 302],
+              "section": "Hào 6: Lời giải của Nguyễn Hiến Lê",
+              "printedPages": ["302", "302"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc thượng không ứng, hợp thiếu bền nên vợ và chồng không thực hiện nghĩa vụ tế: giỏ trống và cắt dê không máu. Ông quy lỗi gái trước trong lễ quan riêng rồi mở vô thực thành danh không có thực thì vô ích; không tán thành phân lỗi giới ấy làm chuẩn hiện đại.",
-          "citationIds": ["citation-pbc-q54-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [514, 515],
+              "section": "Hào 6: Lời giải của Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-6-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc thượng hết thời mà không ứng là nữ quy không có chót. Giỏ rau và huyết vật tế là việc vợ chồng cùng phụng tôn miếu; không vâng được thì quan hệ không trọn theo lễ của ông. Giữ nghĩa đoạn tuyệt trong lời bình, không làm lời khuyên chia tay hay tế vật.",
-          "citationIds": ["citation-ntt-q54-line-6-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [824, 825],
+              "section": "Hào 6: Lời giải của Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         },
         {
-          "id": "hexagram-54-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy lấy thượng nhu cuối thời và không ứng làm trường hợp đã hẹn kết hôn mà không hoàn tất. Tượng nghi lễ rỗng và lời không lợi thuộc sự không có chót ấy, không mở thành xấu của mọi hào nhu.",
-          "citationIds": ["citation-ntt-q54-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [824, 825],
+              "section": "Hào 6: Lời giải của Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Đây là cách giải văn bản cổ và quan niệm lịch sử của tác giả, không phải chuẩn mực quan hệ ngày nay, quy tắc Nạp Giáp, hướng dẫn y tế hoặc bảo đảm kết quả thực tế."
-          ]
+          }
         }
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-q54-supplied-overview",
-      "status": "resolved",
-      "description": "NTT PDF 814 dừng lời Trình Di dưới lời quẻ ở câu đang giải đẹp lòng mà động. PDF 815 dịch nghĩa trời đất giao nhau mà muôn vật chẳng dấy, khác với âm đọc bất giao và lời giải Trình Di về không giao thì không sinh.",
-      "citationIds": [
-        "citation-ntt-q54-overview-trinh-di",
-        "citation-ntt-q54-overview-thoan-trinh-di",
-        "citation-pbc-q54-overview-thoan-pbc"
-      ],
-      "resolution": "Không bổ sung đoạn bị cụt hay sửa bản dịch; tóm tắt ý giao và sinh theo lời giải có riêng locators, không dùng câu dịch bất nhất làm kết luận của dự án."
+      "text": "NTT PDF 814 dừng lời Trình Di dưới lời quẻ ở câu đang giải đẹp lòng mà động. PDF 815 dịch nghĩa trời đất giao nhau mà muôn vật chẳng dấy, khác với âm đọc bất giao và lời giải Trình Di về không giao thì không sinh. Không bổ sung đoạn bị cụt hay sửa bản dịch; tóm tắt ý giao và sinh theo lời giải có riêng locators, không dùng câu dịch bất nhất làm kết luận của dự án.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [814, 814],
+          "section": "Lời giải của Trình Di"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [815, 816],
+          "section": "Thoán"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [509, 510],
+          "section": "Soán truyện"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker (AI source comparison)",
-    "reviewedAt": "2026-10-05",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q54-overview-structure",
-      "citation-pbc-q54-overview-structure",
-      "citation-ntt-q54-overview-structure",
-      "citation-nhl-q54-line-1-classical-text",
-      "citation-nhl-q54-line-2-classical-text",
-      "citation-nhl-q54-line-3-classical-text",
-      "citation-nhl-q54-line-4-classical-text",
-      "citation-nhl-q54-line-5-classical-text",
-      "citation-nhl-q54-line-6-classical-text",
-      "citation-pbc-q54-line-1-classical-text",
-      "citation-pbc-q54-line-2-classical-text",
-      "citation-pbc-q54-line-3-classical-text",
-      "citation-pbc-q54-line-4-classical-text",
-      "citation-pbc-q54-line-5-classical-text",
-      "citation-pbc-q54-line-6-classical-text",
-      "citation-ntt-q54-line-1-classical-text",
-      "citation-ntt-q54-line-2-classical-text",
-      "citation-ntt-q54-line-3-classical-text",
-      "citation-ntt-q54-line-4-classical-text",
-      "citation-ntt-q54-line-5-classical-text",
-      "citation-ntt-q54-line-6-classical-text",
-      "citation-nhl-q54-overview-nhl",
-      "citation-nhl-q54-overview-closing-nhl",
-      "citation-pbc-q54-overview-pbc",
-      "citation-pbc-q54-overview-supplement-pbc",
-      "citation-pbc-q54-overview-thoan-pbc",
-      "citation-pbc-q54-overview-dai-tuong-pbc",
-      "citation-pbc-q54-overview-dai-tuong-supplement-pbc",
-      "citation-ntt-q54-overview-trinh-di",
-      "citation-ntt-q54-overview-chu-hy",
-      "citation-ntt-q54-overview-thoan-trinh-di",
-      "citation-ntt-q54-overview-thoan-chu-hy",
-      "citation-ntt-q54-overview-dai-tuong-trinh-di",
-      "citation-ntt-q54-overview-dai-tuong-chu-hy",
-      "citation-nhl-q54-line-1-nhl",
-      "citation-pbc-q54-line-1-pbc",
-      "citation-ntt-q54-line-1-trinh-di",
-      "citation-ntt-q54-line-1-chu-hy",
-      "citation-pbc-q54-line-1-supplement-pbc",
-      "citation-nhl-q54-line-2-nhl",
-      "citation-pbc-q54-line-2-pbc",
-      "citation-ntt-q54-line-2-trinh-di",
-      "citation-ntt-q54-line-2-chu-hy",
-      "citation-pbc-q54-line-2-supplement-pbc",
-      "citation-ntt-q54-line-2-khau-kien-an",
-      "citation-nhl-q54-line-3-nhl",
-      "citation-pbc-q54-line-3-pbc",
-      "citation-ntt-q54-line-3-trinh-di",
-      "citation-ntt-q54-line-3-chu-hy",
-      "citation-ntt-q54-line-3-chu-han-thuong",
-      "citation-nhl-q54-line-4-nhl",
-      "citation-pbc-q54-line-4-pbc",
-      "citation-ntt-q54-line-4-trinh-di",
-      "citation-ntt-q54-line-4-chu-hy",
-      "citation-nhl-q54-line-5-nhl",
-      "citation-pbc-q54-line-5-pbc",
-      "citation-ntt-q54-line-5-trinh-di",
-      "citation-ntt-q54-line-5-chu-hy",
-      "citation-pbc-q54-line-5-supplement-pbc",
-      "citation-nhl-q54-line-6-nhl",
-      "citation-pbc-q54-line-6-pbc",
-      "citation-ntt-q54-line-6-trinh-di",
-      "citation-ntt-q54-line-6-chu-hy",
-      "citation-ntt-q54-note-1-ntt",
-      "citation-ntt-q54-note-2-ntt",
-      "citation-ntt-q54-note-3-ntt",
-      "citation-ntt-q54-note-4-ntt"
-    ],
-    "note": "Compared complete assigned overview, six-line passages, supplements and attached notes with extracted supplied PDFs and rendered contact sheets: NHL 300–302; PBC 508–515; NTT 814–825. NHL and PBC heading diagrams were visually checked; NTT structures were checked from named quái and line labels, without assuming a diagram is present. Original Vietnamese selections only; no source prose or Han quotation redistributed. This source comparison is not independent verification approval, an audit ledger decision or certification. Full original-text/translation-layer mapping and audit closure remain open. Edition limitations: NTT 814 lời Trình Di dưới lời quẻ cụt, 815 câu dịch bất nhất với bất giao; 817–818 có chữ quẻ thay què trong câu dịch, 822 lời Hán Tiểu Tượng dùng trì quy nhưng âm và bình dùng khiên kỳ. Không phục dựng hay chuẩn hóa bản kinh. Đệ và lễ tế giữ như quan niệm xã hội lịch sử, không đề nghị đa thê hay nghĩa vụ giới hiện đại. Dị giải tu là chờ/con gái hèn giữ riêng."
-  }
+  ]
 }

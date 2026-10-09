@@ -46,25 +46,20 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 ## Commands
 
-| Command                                                              | Scope                                                       |
-| -------------------------------------------------------------------- | ----------------------------------------------------------- |
-| `pnpm dev`                                                           | Web development server                                      |
-| `pnpm build`                                                         | All workspace builds                                        |
-| `pnpm test`                                                          | Enforce placement + package tests                           |
-| `pnpm typecheck`                                                     | All workspace type checks                                   |
-| `pnpm lint`                                                          | Repository ESLint                                           |
-| `pnpm format`                                                        | Write Prettier formatting                                   |
-| `pnpm format:check`                                                  | Check Prettier formatting                                   |
-| `bash scripts/check_ts_length.sh`                                    | Enforce TypeScript file-size limits                         |
-| `pnpm --filter @liuyao/web generate:assets`                          | Regenerate the V1 PWA icon set from the approved source     |
-| `pnpm --filter @liuyao/knowledge validate:corpus --check`            | Check corpus, generated reports, and audit-status freshness |
-| `pnpm --filter @liuyao/knowledge validate:corpus --require-complete` | Require open source-review and certification gates          |
+| Command                                                   | Scope                                                   |
+| --------------------------------------------------------- | ------------------------------------------------------- |
+| `pnpm dev`                                                | Web development server                                  |
+| `pnpm build`                                              | All workspace builds                                    |
+| `pnpm test`                                               | Enforce placement + package tests                       |
+| `pnpm typecheck`                                          | All workspace type checks                               |
+| `pnpm lint`                                               | Repository ESLint                                       |
+| `pnpm format`                                             | Write Prettier formatting                               |
+| `pnpm format:check`                                       | Check Prettier formatting                               |
+| `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
+| `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
+| `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
 
 The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/luc-hao-icon-source.avif` because its configuration reads a public-directory path. The command removes that copy after success, failure, or a handled interrupt; it does not modify the approved source image. If an uncatchable termination leaves the temporary file behind, remove that exact file before retrying. Concurrent generator runs are not supported.
-
-The length check excludes `packages/knowledge/src/book-data.generated.ts`, the JSON import inventory.
-Corpus validation generates it; `validate:corpus --check` verifies its freshness.
-Authored TypeScript and the generator retain their existing checks.
 
 ## Git hooks
 
@@ -96,8 +91,9 @@ pnpm test
 pnpm build
 ```
 
-Knowledge build and type-check commands validate the JSON corpus and refresh generated imports and coverage.
-Use `pnpm --filter @liuyao/knowledge validate:corpus --check` to verify generated files without rewriting them. Normal validation permits structurally valid but incomplete audit evidence; `--require-complete` fails when either required audit gate is closed. `--check-books` remains a separate local supplied-PDF fingerprint check.
+Knowledge build, type-check, and test commands validate the JSON corpus and refresh ignored runtime metadata and record assets.
+Use pnpm --filter @liuyao/knowledge validate:corpus --check to check output freshness without rewriting files.
+Use --check-books separately to identify the local supplied PDF editions; no audit or certification gate runs.
 The [data guide](../packages/knowledge/data/README.md) defines the source-review workflow.
 
 CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the harness orchestration and prevents fixers from hiding tracked or untracked repository drift.

@@ -1,29 +1,20 @@
 {
-  "schemaVersion": 1,
   "id": "term-stem-bing",
   "type": "term",
   "title": "Bính",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-stem-bing-definition",
-      "kind": "structural-fact",
       "text": "Bính là một trong mười thiên can.",
-      "citationIds": ["citation-bpct-p8-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        }
+      ]
     }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p8-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

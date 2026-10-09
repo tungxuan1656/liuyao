@@ -1,831 +1,738 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-pham-le-and-cuong-linh",
   "type": "article",
   "title": "PBC — Phàm Lệ và Cương Lĩnh",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-i-authorship",
-      "kind": "author-interpretation",
-      "text": "Phàm Lệ I truyền gán Phục Hy tạo quẻ, Văn Vương Soán, Chu Công Hào, Khổng Tử Thập Dực; 64/384 không chứng tác giả lịch sử. Danh sách thực có 9 tên rồi nói Tự Quái chia thượng/hạ thành 10, giữ cách đếm nguồn chứ không sửa thành cách đếm khác.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-i-authorship"],
+      "text": "Phàm Lệ I truyền gán Phục Hy tạo quẻ, Văn Vương Soán, Chu Công Hào, Khổng Tử Thập Dực; 64/384 không chứng tác giả lịch sử. Danh sách thực có 9 tên rồi nói Tự Quái chia thượng/hạ thành 10, giữ cách đếm nguồn chứ không sửa thành cách đếm khác.\n\nPhàm Lệ II phân bất dịch như thể cố định, giao dịch như trao đổi, biến dịch như thay đổi rồi tuần hoàn. Ví điện, kim loại, tằm và nam/nữ là analogy của PBC, không khoa học hay chuẩn bản dạng giới; câu mượn nét thành Chấn/Khảm/Cấn không biến thành thuật toán mới.\n\nPhàm Lệ III xem Thì là buổi, mùa, giờ và yêu cầu đổi đúng hoàn cảnh; nhận xét không gian không biến rồi theo thời gian biến được giữ nguyên. Không sinh lịch hoặc quy tắc thời điểm phần mềm.\n\nPhàm Lệ IV gắn lẻ/dương/trắng, chẵn/âm/đen, 55 điểm và số sinh/thành 1–5/6–10. Lối kể Thủy→Hỏa→Mộc→Kim và ngưng khí thành đất là vũ trụ luận của nguồn, không cơ chế vật lý xác minh.\n\nPhàm Lệ V xem Tượng là mượn hữu hình để diễn lý vô hình, phản đối câu nệ tượng mà quên tinh thần; Càn/Khôn/Chấn/Tốn là ví dụ truyền thống, không classifier vật/người.\n\nPhàm Lệ VI giải tầng từ Thái Cực lên 64, gia ngoại quái lên nội Càn theo Càn, Đoài, Li, Chấn, Tốn, Khảm, Cấn, Khôn. Thứ tự là cách trình bày tượng số chứ không thời gian vật lý; không thay thứ tự quẻ chuẩn.\n\nVăn mô tả vòng ngoài/vuông trong: bên tả Phục→Càn, bên hữu Cấu→Khôn, vuông bốn lớp dưới/trên. Các ảnh đã xem 1–26 chỉ có plates 11/12, Hà Đồ 19, phương vị 8 trên 21, hoành đồ 24 và gia đình 25; không có tấm vòng 64/vuông 64 riêng để phục dựng. Chữ Cấu mang các chú 1–3 không bị sửa lại thành Cấn.\n\nCương Lĩnh phân dương/âm bằng cặp nam/nữ, cương/nhu, thiện/ác, lớn/nhỏ, quân tử/tiểu nhân, giàu/nghèo. Đây là phân loại giá trị lịch sử của PBC, không tính chất con người hoặc chuẩn đạo đức hiện đại.\n\nPBC phân cát, hung, hối, lẫn và ba nghĩa vô cựu; hung nặng hơn lẫn, lẫn hơn hối, nhưng vô cựu thường không hay/dở. Không dùng đánh giá hoặc dự báo người hiện tại.\n\nNguồn đặt trung ở 2/5, dương vị 1/3/5, âm vị 2/4/6 và chính khi thể khớp vị, nhấn trung hơn chính. Đoạn cuối nói chỉ đại cương, các lệ chưa ấn định do Dịch biến hóa; không chuyển thành thang tốt/xấu tự động.\n\nQuan sát hình Hà Đồ 55 điểm: Trên Nam, dưới Bắc, trái Đông, phải Tây; các nhãn Hán xoay theo phía. Ảnh ghi nhị thất trong khi chữ Việt nhìn trên 19 in nhất thất; extraction đọc nhị thất. Không âm thầm sửa khác biệt ảnh/chữ.\n\nTrên/Nam: 2, 7/Hỏa.\n\nDưới/Bắc: 1, 6/Thủy.\n\nTrái/Đông: 3, 8/Mộc.\n\nPhải/Tây: 4, 9/Kim.\n\nGiữa: 5, 10/Thổ.\n\nQuan sát hình Phục Hy 8 phương vị: Nam trên, Bắc dưới, Đông trái, Tây phải. Theo lời 21, trên/dưới dựa hình người đứng, không phương vị cố định của trời đất.\n\nTrên: Càn 1/Nam.\n\nTrên trái: Đoài 2/Đông Nam.\n\nTrái: Li 3/Đông.\n\nDưới trái: Chấn 4/Đông Bắc.\n\nTrên phải: Tốn 5/Tây Nam.\n\nPhải: Khảm 6/Tây.\n\nDưới phải: Cấn 7/Tây Bắc.\n\nDưới: Khôn 8/Bắc.\n\nQuan sát hình Hoành đồ 64: Ảnh PDF nằm ngang chữ, đầu sơ đồ hướng trái trang; xoay 90 độ thuận chiều kim đồng hồ để đọc tầng dưới→trên. Bản ghi giữ các tầng/nhóm nhìn thấy, không gán số Văn Vương hay sao chép ảnh.\n\nTầng nền: Thái Cực.\n\nTầng 2: Dương trái/Âm phải.\n\nTầng 3: Thái Dương, Thiếu Âm, Thiếu Dương, Thái Âm từ trái sang phải khi xoay ảnh 90 độ thuận chiều kim đồng hồ.\n\nTầng 4: Càn, Đoài, Li, Chấn, Tốn, Khảm, Cấn, Khôn.\n\nTầng 5: 16 phần.\n\nTầng 6: 32 phần.\n\nTầng 7: 64 phần.\n\nTầng tên 64: khởi Càn, kết Khôn; xen hai hàng tên Hán.\n\nQuan sát hình Văn Vương 8 thứ tự: Từ trên xuống; Càn ở trái, Khôn ở phải, các nhóm con ở tầng dưới theo trái→phải. Gia đình là tượng truyền thống, không quy định giới hoặc thứ bậc hiện đại.\n\nTrên trái: Càn/cha.\n\nDưới Càn trái→phải: Chấn/trưởng nam, Khảm/trung nam, Cấn/thiếu nam.\n\nTrên phải: Khôn/mẹ.\n\nDưới Khôn trái→phải: Tốn/trưởng nữ, Li/trung nữ, Đoài/thiếu nữ.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [15, 15],
+          "section": "pbc-pham-le-and-cuong-linh-i-authorship — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [16, 17],
+          "section": "pbc-pham-le-and-cuong-linh-ii-three-meanings — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [17, 18],
+          "section": "pbc-pham-le-and-cuong-linh-iii-time — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [18, 20],
+          "section": "pbc-pham-le-and-cuong-linh-iv-numbers — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [20, 20],
+          "section": "pbc-pham-le-and-cuong-linh-v-images — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 22],
+          "section": "pbc-pham-le-and-cuong-linh-vi-order-exposition — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [22, 23],
+          "section": "pbc-pham-le-and-cuong-linh-vi-circle-described — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 26],
+          "section": "pbc-pham-le-and-cuong-linh-cuong-linh-polarity — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [26, 26],
+          "section": "pbc-pham-le-and-cuong-linh-cuong-linh-omens — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [26, 26],
+          "section": "pbc-pham-le-and-cuong-linh-cuong-linh-position — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04 — diagram"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-ii-three-meanings",
-      "kind": "author-interpretation",
-      "text": "Phàm Lệ II phân bất dịch như thể cố định, giao dịch như trao đổi, biến dịch như thay đổi rồi tuần hoàn. Ví điện, kim loại, tằm và nam/nữ là analogy của PBC, không khoa học hay chuẩn bản dạng giới; câu mượn nét thành Chấn/Khảm/Cấn không biến thành thuật toán mới.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-ii-three-meanings"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-iii-time",
-      "kind": "author-interpretation",
-      "text": "Phàm Lệ III xem Thì là buổi, mùa, giờ và yêu cầu đổi đúng hoàn cảnh; nhận xét không gian không biến rồi theo thời gian biến được giữ nguyên. Không sinh lịch hoặc quy tắc thời điểm phần mềm.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-iii-time"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-iv-numbers",
-      "kind": "author-interpretation",
-      "text": "Phàm Lệ IV gắn lẻ/dương/trắng, chẵn/âm/đen, 55 điểm và số sinh/thành 1–5/6–10. Lối kể Thủy→Hỏa→Mộc→Kim và ngưng khí thành đất là vũ trụ luận của nguồn, không cơ chế vật lý xác minh.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-iv-numbers"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-v-images",
-      "kind": "author-interpretation",
-      "text": "Phàm Lệ V xem Tượng là mượn hữu hình để diễn lý vô hình, phản đối câu nệ tượng mà quên tinh thần; Càn/Khôn/Chấn/Tốn là ví dụ truyền thống, không classifier vật/người.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-v-images"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-vi-order-exposition",
-      "kind": "author-interpretation",
-      "text": "Phàm Lệ VI giải tầng từ Thái Cực lên 64, gia ngoại quái lên nội Càn theo Càn, Đoài, Li, Chấn, Tốn, Khảm, Cấn, Khôn. Thứ tự là cách trình bày tượng số chứ không thời gian vật lý; không thay thứ tự quẻ chuẩn.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-vi-order-exposition"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-vi-circle-described",
-      "kind": "author-interpretation",
-      "text": "Văn mô tả vòng ngoài/vuông trong: bên tả Phục→Càn, bên hữu Cấu→Khôn, vuông bốn lớp dưới/trên. Các ảnh đã xem 1–26 chỉ có plates 11/12, Hà Đồ 19, phương vị 8 trên 21, hoành đồ 24 và gia đình 25; không có tấm vòng 64/vuông 64 riêng để phục dựng. Chữ Cấu mang các chú 1–3 không bị sửa lại thành Cấn.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-vi-circle-described"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-cuong-linh-polarity",
-      "kind": "author-interpretation",
-      "text": "Cương Lĩnh phân dương/âm bằng cặp nam/nữ, cương/nhu, thiện/ác, lớn/nhỏ, quân tử/tiểu nhân, giàu/nghèo. Đây là phân loại giá trị lịch sử của PBC, không tính chất con người hoặc chuẩn đạo đức hiện đại.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-cuong-linh-polarity"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-cuong-linh-omens",
-      "kind": "author-interpretation",
-      "text": "PBC phân cát, hung, hối, lẫn và ba nghĩa vô cựu; hung nặng hơn lẫn, lẫn hơn hối, nhưng vô cựu thường không hay/dở. Không dùng đánh giá hoặc dự báo người hiện tại.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-cuong-linh-omens"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-cuong-linh-position",
-      "kind": "author-interpretation",
-      "text": "Nguồn đặt trung ở 2/5, dương vị 1/3/5, âm vị 2/4/6 và chính khi thể khớp vị, nhấn trung hơn chính. Đoạn cuối nói chỉ đại cương, các lệ chưa ấn định do Dịch biến hóa; không chuyển thành thang tốt/xấu tự động.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-cuong-linh-position"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-ii-cheng",
-      "kind": "author-interpretation",
       "text": "PBC dẫn thầy Trình về sách Dịch đổi theo thời cho đúng đạo; lời dẫn riêng với phần giải ba nghĩa của PBC.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-ii-cheng"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [16, 16],
+          "section": "pbc-pham-le-and-cuong-linh-ii-cheng — quotation"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Phan Bội Châu — đoạn dẫn trong ấn bản cung cấp"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-iii-shao",
-      "kind": "author-interpretation",
       "text": "PBC dẫn Thiệu Khang Tiết tóm toàn bộ Dịch bằng chữ Thì; đó là lời được thuật qua PBC.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-iii-shao"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [17, 17],
+          "section": "pbc-pham-le-and-cuong-linh-iii-shao — quotation"
+        }
+      ],
       "attribution": {
         "author": "Thiệu Khang Tiết",
         "via": "Phan Bội Châu — đoạn dẫn trong ấn bản cung cấp"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do",
-      "kind": "author-interpretation",
-      "text": "Quan sát hình Hà Đồ 55 điểm: Trên Nam, dưới Bắc, trái Đông, phải Tây; các nhãn Hán xoay theo phía. Ảnh ghi nhị thất trong khi chữ Việt nhìn trên 19 in nhất thất; extraction đọc nhị thất. Không âm thầm sửa khác biệt ảnh/chữ.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-ha-do"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01",
-      "kind": "author-interpretation",
-      "text": "Trên/Nam: 2, 7/Hỏa.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02",
-      "kind": "author-interpretation",
-      "text": "Dưới/Bắc: 1, 6/Thủy.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03",
-      "kind": "author-interpretation",
-      "text": "Trái/Đông: 3, 8/Mộc.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04",
-      "kind": "author-interpretation",
-      "text": "Phải/Tây: 4, 9/Kim.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05",
-      "kind": "author-interpretation",
-      "text": "Giữa: 5, 10/Thổ.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation",
-      "kind": "author-interpretation",
-      "text": "Quan sát hình Phục Hy 8 phương vị: Nam trên, Bắc dưới, Đông trái, Tây phải. Theo lời 21, trên/dưới dựa hình người đứng, không phương vị cố định của trời đất.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01",
-      "kind": "author-interpretation",
-      "text": "Trên: Càn 1/Nam.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02",
-      "kind": "author-interpretation",
-      "text": "Trên trái: Đoài 2/Đông Nam.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03",
-      "kind": "author-interpretation",
-      "text": "Trái: Li 3/Đông.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04",
-      "kind": "author-interpretation",
-      "text": "Dưới trái: Chấn 4/Đông Bắc.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05",
-      "kind": "author-interpretation",
-      "text": "Trên phải: Tốn 5/Tây Nam.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06",
-      "kind": "author-interpretation",
-      "text": "Phải: Khảm 6/Tây.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07",
-      "kind": "author-interpretation",
-      "text": "Dưới phải: Cấn 7/Tây Bắc.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08",
-      "kind": "author-interpretation",
-      "text": "Dưới: Khôn 8/Bắc.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal",
-      "kind": "author-interpretation",
-      "text": "Quan sát hình Hoành đồ 64: Ảnh PDF nằm ngang chữ, đầu sơ đồ hướng trái trang; xoay 90 độ thuận chiều kim đồng hồ để đọc tầng dưới→trên. Bản ghi giữ các tầng/nhóm nhìn thấy, không gán số Văn Vương hay sao chép ảnh.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01",
-      "kind": "author-interpretation",
-      "text": "Tầng nền: Thái Cực.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02",
-      "kind": "author-interpretation",
-      "text": "Tầng 2: Dương trái/Âm phải.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03",
-      "kind": "author-interpretation",
-      "text": "Tầng 3: Thái Dương, Thiếu Âm, Thiếu Dương, Thái Âm từ trái sang phải khi xoay ảnh 90 độ thuận chiều kim đồng hồ.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04",
-      "kind": "author-interpretation",
-      "text": "Tầng 4: Càn, Đoài, Li, Chấn, Tốn, Khảm, Cấn, Khôn.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05",
-      "kind": "author-interpretation",
-      "text": "Tầng 5: 16 phần.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06",
-      "kind": "author-interpretation",
-      "text": "Tầng 6: 32 phần.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07",
-      "kind": "author-interpretation",
-      "text": "Tầng 7: 64 phần.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08",
-      "kind": "author-interpretation",
-      "text": "Tầng tên 64: khởi Càn, kết Khôn; xen hai hàng tên Hán.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order",
-      "kind": "author-interpretation",
-      "text": "Quan sát hình Văn Vương 8 thứ tự: Từ trên xuống; Càn ở trái, Khôn ở phải, các nhóm con ở tầng dưới theo trái→phải. Gia đình là tượng truyền thống, không quy định giới hoặc thứ bậc hiện đại.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01",
-      "kind": "author-interpretation",
-      "text": "Trên trái: Càn/cha.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02",
-      "kind": "author-interpretation",
-      "text": "Dưới Càn trái→phải: Chấn/trưởng nam, Khảm/trung nam, Cấn/thiếu nam.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03",
-      "kind": "author-interpretation",
-      "text": "Trên phải: Khôn/mẹ.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04",
-      "kind": "author-interpretation",
-      "text": "Dưới Khôn trái→phải: Tốn/trưởng nữ, Li/trung nữ, Đoài/thiếu nữ.",
-      "citationIds": ["citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
   ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-pham-le-and-cuong-linh-i-authorship",
-      "citation-pbc-pham-le-and-cuong-linh-ii-three-meanings",
-      "citation-pbc-pham-le-and-cuong-linh-iii-time",
-      "citation-pbc-pham-le-and-cuong-linh-iv-numbers",
-      "citation-pbc-pham-le-and-cuong-linh-v-images",
-      "citation-pbc-pham-le-and-cuong-linh-vi-order-exposition",
-      "citation-pbc-pham-le-and-cuong-linh-vi-circle-described",
-      "citation-pbc-pham-le-and-cuong-linh-cuong-linh-polarity",
-      "citation-pbc-pham-le-and-cuong-linh-cuong-linh-omens",
-      "citation-pbc-pham-le-and-cuong-linh-cuong-linh-position",
-      "citation-pbc-pham-le-and-cuong-linh-ii-cheng",
-      "citation-pbc-pham-le-and-cuong-linh-iii-shao",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03",
-      "citation-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04"
-    ],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  },
   "figures": [
     {
       "id": "figure-pbc-ha-do",
       "kind": "placement",
       "title": "Hà Đồ55 điểm",
-      "sourceUnitIds": ["pbc-pham-le-and-cuong-linh-pbc-ha-do"],
       "labels": [
         {
           "id": "figure-pbc-ha-do-label-01",
           "text": "Trên/Nam: 2, 7/Hỏa.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [19, 19],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-ha-do-label-02",
           "text": "Dưới/Bắc: 1, 6/Thủy.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [19, 19],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-ha-do-label-03",
           "text": "Trái/Đông: 3, 8/Mộc.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [19, 19],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-ha-do-label-04",
           "text": "Phải/Tây: 4, 9/Kim.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [19, 19],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-ha-do-label-05",
           "text": "Giữa: 5, 10/Thổ.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [19, 19],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05 — diagram"
+            }
           ]
         }
       ],
-      "claimIds": [
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Trên Nam, dưới Bắc, trái Đông, phải Tây; các nhãn Hán xoay theo phía. Ảnh ghi nhị thất trong khi chữ Việt nhìn trên 19 in nhất thất; extraction đọc nhị thất. Không âm thầm sửa khác biệt ảnh/chữ.",
-        "claimIds": ["article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-ha-do"]
-      }
+        "references": [
+          {
+            "sourceId": "source-book-pbc",
+            "pdfPages": [19, 19],
+            "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do — diagram"
+          }
+        ]
+      },
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-04 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [19, 19],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-ha-do-label-05 — diagram"
+        }
+      ]
     },
     {
       "id": "figure-pbc-phuc-hi-eight-orientation",
       "kind": "placement",
       "title": "Phục Hy8 phương vị",
-      "sourceUnitIds": ["pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation"],
       "labels": [
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-01",
           "text": "Trên: Càn 1/Nam.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-02",
           "text": "Trên trái: Đoài 2/Đông Nam.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-03",
           "text": "Trái: Li 3/Đông.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-04",
           "text": "Dưới trái: Chấn 4/Đông Bắc.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-05",
           "text": "Trên phải: Tốn 5/Tây Nam.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-06",
           "text": "Phải: Khảm 6/Tây.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-07",
           "text": "Dưới phải: Cấn 7/Tây Bắc.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-eight-orientation-label-08",
           "text": "Dưới: Khôn 8/Bắc.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [21, 21],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08 — diagram"
+            }
           ]
         }
       ],
-      "claimIds": [
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Nam trên, Bắc dưới, Đông trái, Tây phải. Theo lời 21, trên/dưới dựa hình người đứng, không phương vị cố định của trời đất.",
-        "claimIds": [
-          "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation"
+        "references": [
+          {
+            "sourceId": "source-book-pbc",
+            "pdfPages": [21, 21],
+            "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation — diagram"
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-04 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-05 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-06 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-07 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [21, 21],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-eight-orientation-label-08 — diagram"
+        }
+      ]
     },
     {
       "id": "figure-pbc-phuc-hi-64-horizontal",
       "kind": "sequence",
       "title": "Hoành đồ64",
-      "sourceUnitIds": ["pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal"],
       "labels": [
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-01",
           "text": "Tầng nền: Thái Cực.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-02",
           "text": "Tầng 2: Dương trái/Âm phải.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-03",
           "text": "Tầng 3: Thái Dương, Thiếu Âm, Thiếu Dương, Thái Âm từ trái sang phải khi xoay ảnh 90 độ thuận chiều kim đồng hồ.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-04",
           "text": "Tầng 4: Càn, Đoài, Li, Chấn, Tốn, Khảm, Cấn, Khôn.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-05",
           "text": "Tầng 5: 16 phần.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-06",
           "text": "Tầng 6: 32 phần.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-07",
           "text": "Tầng 7: 64 phần.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-phuc-hi-64-horizontal-label-08",
           "text": "Tầng tên 64: khởi Càn, kết Khôn; xen hai hàng tên Hán.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [24, 24],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08 — diagram"
+            }
           ]
         }
       ],
-      "claimIds": [
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Ảnh PDF nằm ngang chữ, đầu sơ đồ hướng trái trang; xoay 90 độ thuận chiều kim đồng hồ để đọc tầng dưới→trên. Bản ghi giữ các tầng/nhóm nhìn thấy, không gán số Văn Vương hay sao chép ảnh.",
-        "claimIds": [
-          "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal"
+        "references": [
+          {
+            "sourceId": "source-book-pbc",
+            "pdfPages": [24, 24],
+            "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal — diagram"
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-04 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-05 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-06 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-07 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [24, 24],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-phuc-hi-64-horizontal-label-08 — diagram"
+        }
+      ]
     },
     {
       "id": "figure-pbc-van-vuong-eight-order",
       "kind": "sequence",
       "title": "Văn Vương8 thứ tự",
-      "sourceUnitIds": ["pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order"],
       "labels": [
         {
           "id": "figure-pbc-van-vuong-eight-order-label-01",
           "text": "Trên trái: Càn/cha.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [25, 25],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-van-vuong-eight-order-label-02",
           "text": "Dưới Càn trái→phải: Chấn/trưởng nam, Khảm/trung nam, Cấn/thiếu nam.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [25, 25],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-van-vuong-eight-order-label-03",
           "text": "Trên phải: Khôn/mẹ.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [25, 25],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03 — diagram"
+            }
           ]
         },
         {
           "id": "figure-pbc-van-vuong-eight-order-label-04",
           "text": "Dưới Khôn trái→phải: Tốn/trưởng nữ, Li/trung nữ, Đoài/thiếu nữ.",
-          "claimIds": [
-            "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04"
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [25, 25],
+              "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04 — diagram"
+            }
           ]
         }
       ],
-      "claimIds": [
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03",
-        "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04"
-      ],
-      "inspectionStatus": "visually-inspected",
       "orientation": {
         "description": "Từ trên xuống; Càn ở trái, Khôn ở phải, các nhóm con ở tầng dưới theo trái→phải. Gia đình là tượng truyền thống, không quy định giới hoặc thứ bậc hiện đại.",
-        "claimIds": [
-          "article-pbc-pham-le-and-cuong-linh-pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order"
+        "references": [
+          {
+            "sourceId": "source-book-pbc",
+            "pdfPages": [25, 25],
+            "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order — diagram"
+          }
         ]
-      }
+      },
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-01 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-02 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-03 — diagram"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [25, 25],
+          "section": "pbc-pham-le-and-cuong-linh-pbc-van-vuong-eight-order-label-04 — diagram"
+        }
+      ]
     }
   ]
 }

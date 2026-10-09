@@ -1,5 +1,7 @@
 # feat-078 — Audit quẻ 41–44 and all twenty-four hào
 
+> Historical implementation. The [simplified knowledge model](../docs/design-docs/knowledge-model.md#migration-history) supersedes the former audit and provenance machinery. Preserve completed evidence; do not extend that machinery.
+
 ## Goal
 
 Accept or reject each quẻ and each position separately.
@@ -11,7 +13,7 @@ Accept or reject each quẻ and each position separately.
 - 41 Sơn Trạch Tổn; 42 Phong Lôi Ích; 43 Trạch Thiên Quải; 44 Thiên Phong Cấu.
 - Each line checkbox requires NHL/PBC/NTT cells and all actual commentator/translator layers.
 - Intended ledgers: docs/reviews/knowledge/hexagram-XX.md, one per quẻ.
-- Canonical decisions: [q41](../docs/reviews/knowledge/ledgers/hexagram-41.json), [q42](../docs/reviews/knowledge/ledgers/hexagram-42.json), [q43](../docs/reviews/knowledge/ledgers/hexagram-43.json), [q44](../docs/reviews/knowledge/ledgers/hexagram-44.json). Summaries: [q41](../docs/reviews/knowledge/hexagram-41.md), [q42](../docs/reviews/knowledge/hexagram-42.md), [q43](../docs/reviews/knowledge/hexagram-43.md), [q44](../docs/reviews/knowledge/hexagram-44.md).
+- Canonical decisions: [q41](../docs/reviews/knowledge/README.md), [q42](../docs/reviews/knowledge/README.md), [q43](../docs/reviews/knowledge/README.md), [q44](../docs/reviews/knowledge/README.md). Summaries: [q41](../docs/reviews/knowledge/README.md), [q42](../docs/reviews/knowledge/README.md), [q43](../docs/reviews/knowledge/README.md), [q44](../docs/reviews/knowledge/README.md).
 
 ## Non-goals
 

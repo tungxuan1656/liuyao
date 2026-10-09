@@ -1,33 +1,25 @@
 {
-  "schemaVersion": 1,
   "id": "term-adverse-spirit",
   "type": "term",
   "title": "Kỵ thần",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-useful-spirit", "article-origin-adverse-and-enemy-spirits"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-adverse-spirit-definition",
-      "kind": "author-interpretation",
       "text": "Vương Hồng Tự gọi hào khắc Dụng thần là Kỵ thần. Vai trò được xác định đối với Dụng thần đã chọn; tác động còn phụ thuộc trạng thái hào, sự trợ giúp và các hào khác.",
-      "citationIds": ["citation-bpct-ch5-adverse"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Kỵ thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       }
     }
-  ],
-  "relatedIds": ["term-useful-spirit", "article-origin-adverse-and-enemy-spirits"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch5-adverse"],
-    "note": "Đã đọc đầy đủ Chương 5, mục 1–4 và các chú thích ở PDF 67–68, đối chiếu lời giới thiệu về tác giả và người dịch ở PDF 2–3. Đã xem ảnh trang và số trang in. Đây là diễn giải học thuật có điều kiện, không phải kết quả luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

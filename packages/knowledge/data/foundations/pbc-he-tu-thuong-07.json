@@ -1,104 +1,65 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-thuong-07",
   "type": "article",
   "title": "PBC — Hệ Từ Thượng, chương 7",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-thuong-07-pbc-he-tu-shang-07-section-01-original-reading",
-      "kind": "author-interpretation",
       "text": "Tử viết:Dịch đề cao đức/nghiệp,trí cao/lễ khiêm.",
-      "citationIds": ["citation-pbc-he-tu-shang-07-section-01-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [620, 620],
+          "section": "section-01-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định; Tử viết được truyền gán Khổng Tử",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-07-pbc-he-tu-shang-07-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "PBC diễn theo trời ở cao,theo đất ở thấp.",
-      "citationIds": ["citation-pbc-he-tu-shang-07-section-01-translation"],
+      "text": "PBC diễn theo trời ở cao,theo đất ở thấp.\n\nLời gán Khổng Tử không chứng minh người viết thực.\n\nPBC diễn lý bẩm thành tính rồi sinh sinh,tồn tồn mở đạo/nghĩa.\n\nBản đọc dùng thành tính,khác thành tín của NHL; cửa nối lý trong và việc ngoài.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [620, 620],
+          "section": "section-01-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [620, 620],
+          "section": "section-01-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [620, 620],
+          "section": "section-02-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [620, 620],
+          "section": "section-02-commentary — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-07-pbc-he-tu-shang-07-section-01-commentary",
-      "kind": "author-interpretation",
-      "text": "Lời gán Khổng Tử không chứng minh người viết thực.",
-      "citationIds": ["citation-pbc-he-tu-shang-07-section-01-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-07-pbc-he-tu-shang-07-section-02-original-reading",
-      "kind": "author-interpretation",
       "text": "Thiên địa thiết vị,Dịch giữa,thành tính tồn tồn.",
-      "citationIds": ["citation-pbc-he-tu-shang-07-section-02-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [620, 620],
+          "section": "section-02-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-07-pbc-he-tu-shang-07-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "PBC diễn lý bẩm thành tính rồi sinh sinh,tồn tồn mở đạo/nghĩa.",
-      "citationIds": ["citation-pbc-he-tu-shang-07-section-02-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-07-pbc-he-tu-shang-07-section-02-commentary",
-      "kind": "author-interpretation",
-      "text": "Bản đọc dùng thành tính,khác thành tín của NHL; cửa nối lý trong và việc ngoài.",
-      "citationIds": ["citation-pbc-he-tu-shang-07-section-02-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-shang-07-section-01-original-reading",
-      "citation-pbc-he-tu-shang-07-section-01-translation",
-      "citation-pbc-he-tu-shang-07-section-01-commentary",
-      "citation-pbc-he-tu-shang-07-section-02-original-reading",
-      "citation-pbc-he-tu-shang-07-section-02-translation",
-      "citation-pbc-he-tu-shang-07-section-02-commentary"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

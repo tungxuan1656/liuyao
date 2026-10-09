@@ -9,11 +9,11 @@ import {
   getApplicableRules,
   getReferences,
   getRelatedFigures,
-  recordDescription,
   recordName,
   recordPath,
 } from './library-data';
 import { getLinePresentation } from './line-value-presentation';
+import { KnowledgeContent } from './knowledge-content';
 
 function formatName(name: string) {
   return ['6', '7', '8', '9'].includes(name) ? getLinePresentation(Number(name)).name : name;
@@ -77,15 +77,8 @@ export function LibraryDetailPage() {
         {recordMeta && <Badge variant="outline">{recordMeta}</Badge>}
       </header>
 
+      <KnowledgeContent key={id} id={id} />
       <div className="grid items-start gap-6 lg:grid-cols-12">
-        {!('kingWenNumber' in record) && (
-          <Card className="min-w-0 lg:col-span-12">
-            <CardContent>
-              <p className="font-serif text-lg leading-relaxed">{recordDescription(record)}</p>
-            </CardContent>
-          </Card>
-        )}
-
         {trigramIds.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>
@@ -188,6 +181,12 @@ export function LibraryDetailPage() {
                         Thông tin nguồn
                       </summary>
                       <dl className="grid gap-3">
+                        {reference.source.limitations?.length ? (
+                          <div>
+                            <dt className="text-muted-foreground">Phạm vi diễn giải</dt>
+                            <dd>{reference.source.limitations.join(' ')}</dd>
+                          </div>
+                        ) : null}
                         <div>
                           <dt className="text-muted-foreground">Tác giả</dt>
                           <dd className="break-words">{reference.source.author}</dd>

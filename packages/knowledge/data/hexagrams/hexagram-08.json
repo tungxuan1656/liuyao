@@ -1,139 +1,141 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-08",
   "type": "hexagram",
   "title": "Thủy Địa Tỷ",
   "aliases": ["Tỷ", "Tỉ", "Tỵ", "Thủy Địa Tỉ", "Thủy Địa Tỵ"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-earth", "trigram-water"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-08-structure",
-      "kind": "structural-fact",
       "text": "Thủy Địa Tỷ có ngoại quái Khảm và nội quái Khôn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q08-overview-nhl",
-        "citation-pbc-q08-overview-pbc",
-        "citation-ntt-q08-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [160, 160],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [119, 121],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [222, 225],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-08-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giải Tỷ là gần gũi và liên kết để giúp nhau. Người làm đầu ở hào năm cần đức tốt, bền lâu và chính đáng; việc tự xét kỹ giúp lựa chọn sự gắn bó phù hợp.",
-      "citationIds": ["citation-nhl-q08-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [160, 160],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["160", "160"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-08-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu đặt Tỷ trong việc người và cộng đồng tìm nhau để tương trợ. Người đứng đầu phải có đức tốt, bền và chính; sự kết hợp cần đúng người, đúng lúc và thành thật từ đầu.",
-      "citationIds": ["citation-pbc-q08-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [119, 121],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-08-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di giải Tỷ theo sự thân cận và giúp đỡ lẫn nhau. Ông đọc “phệ” ở đây là suy xét, không nhất thiết dùng cỏ thi hay mai rùa; cả người tìm chỗ theo và người nhận người khác đều cần giữ chính.",
-      "citationIds": ["citation-ntt-q08-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [222, 225],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-08-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy đọc “nguyên phệ” theo việc bói lại để tự xét phẩm chất của người làm đầu. Có đức tốt, bền lâu và chính đáng mới đáng cho người khác theo; cách đọc này khác lời suy xét của Trình Di.",
-      "citationIds": ["citation-ntt-q08-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [223, 223],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Đây là cách đọc của Chu Hy, không phải chính sách hỏi hoặc gieo lại quẻ của sản phẩm."
-      ]
+      "condition": "Đây là cách đọc của Chu Hy, không phải chính sách hỏi hoặc gieo lại quẻ của sản phẩm."
     }
   ],
-  "relatedIds": ["trigram-earth", "trigram-water"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q08-overview-nhl",
-      "citation-pbc-q08-overview-pbc",
-      "citation-ntt-q08-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q08-overview-chu-hy",
-      "citation-nhl-q08-line-1-nhl",
-      "citation-pbc-q08-line-1-pbc",
-      "citation-ntt-q08-line-1-ntt",
-      "citation-nhl-q08-line-2-nhl",
-      "citation-pbc-q08-line-2-pbc",
-      "citation-ntt-q08-line-2-ntt",
-      "citation-nhl-q08-line-3-nhl",
-      "citation-pbc-q08-line-3-pbc",
-      "citation-ntt-q08-line-3-ntt",
-      "citation-nhl-q08-line-4-nhl",
-      "citation-pbc-q08-line-4-pbc",
-      "citation-ntt-q08-line-4-ntt",
-      "citation-nhl-q08-line-5-nhl",
-      "citation-pbc-q08-line-5-pbc",
-      "citation-ntt-q08-line-5-ntt",
-      "citation-nhl-q08-line-6-nhl",
-      "citation-pbc-q08-line-6-pbc",
-      "citation-ntt-q08-line-6-ntt",
-      "citation-ntt-q08-line-6-chu-hy"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép. Các cách đọc Trình Di, Chu Hy và hai tác giả Việt Nam được giữ riêng khi có khác biệt. Bộ dữ liệu chọn các diễn giải, không chứng nhận toàn bộ chú giải hoặc giả thuyết lịch sử; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yin", "yin", "yang", "yin"],
-    "kingWenNumber": 8,
-    "upperTrigramId": "trigram-water",
-    "lowerTrigramId": "trigram-earth",
-    "claimIds": ["hexagram-08-structure"]
-  },
+  "kingWenNumber": 8,
+  "upperTrigramId": "trigram-water",
+  "lowerTrigramId": "trigram-earth",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-08-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt thành tín ở đầu việc kết bạn. Hình ảnh đầy chiếc ang nhấn mạnh lòng thật bên trong; sự chân thành ấy còn có thể đem lại điều tốt từ người khác.",
-          "citationIds": ["citation-nhl-q08-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [160, 161],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["160", "161"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-08-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu coi lòng thành là gốc của sự liên kết. Chiếc ang mộc mạc mà đầy ví với người không cần tô vẻ bên ngoài; giữ lòng thật từ đầu giúp mở rộng tình thân về sau.",
-          "citationIds": ["citation-pbc-q08-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [121, 122],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-08-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc chiếc vò đầy như lòng tin thực chất, không cần trang sức. Thành tín phải có ngay khi bắt đầu gần nhau; giả ý để cầu người khác theo không tạo được sự gắn bó lâu dài.",
-          "citationIds": ["citation-ntt-q08-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [225, 227],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -145,30 +147,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-08-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải hào hai giữ đạo bên trong rồi hợp với người có đức ở hào năm. Sự gần gũi ấy dựa vào phẩm chất phù hợp, tránh cầu thân chỉ vì quyền thế.",
-          "citationIds": ["citation-nhl-q08-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [161, 161],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["161", "161"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-08-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào hai và hào năm cùng có đức trung chính nên tìm nhau. Người ở dưới cần giữ nhân cách, không hạ phẩm giá để cầu người trên ban lợi.",
-          "citationIds": ["citation-pbc-q08-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [122, 123],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-08-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào hai giữ trung chính để chờ người xứng đáng tìm đến. Theo người hợp đạo giúp giữ phẩm giá; chủ động lấy lòng vì địa vị làm mất sự chính đáng ấy.",
-          "citationIds": ["citation-ntt-q08-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [227, 228],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -180,30 +195,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-08-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc hào ba như người thiếu trung chính mà quanh mình cũng không có người đáng theo. Liên kết với người không phù hợp khiến hoàn cảnh thêm khó.",
-          "citationIds": ["citation-nhl-q08-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [161, 161],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["161", "161"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-08-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt việc gần người không đáng gần trong hoàn cảnh riêng của hào ba. Ông lưu ý người ở hào hai vốn tốt, nhưng quan hệ với hào ba không phù hợp; ý nghĩa thay đổi theo vị và tình thế.",
-          "citationIds": ["citation-pbc-q08-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [123, 124],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-08-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào ba chọn những quan hệ không đúng đạo. Ông phân biệt phẩm chất riêng của hào hai với vai của nó trong quan hệ hào ba, tránh coi cùng một hào luôn mang một ý nghĩa cố định.",
-          "citationIds": ["citation-ntt-q08-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [228, 229],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -215,30 +243,43 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-08-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào bốn mềm nhưng đúng vị, gần người hiền ở hào năm. Biết chọn theo người xứng đáng ở trên là điều kiện của lời tốt.",
-          "citationIds": ["citation-nhl-q08-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [161, 161],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["161", "161"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-08-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải chữ ngoài theo việc hào bốn theo hào năm ở phía trên. Người nhu thuận, đúng vị tìm người cương minh để giúp việc là sự kết hợp có chính đạo.",
-          "citationIds": ["citation-pbc-q08-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [124, 124],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-08-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào bốn trong thế không có chính ứng với hào đầu nhưng gần hào năm đáng theo. Chọn người hiền để thân cận khác với xu phụ quyền thế.",
-          "citationIds": ["citation-ntt-q08-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [229, 230],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -250,30 +291,43 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-08-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải người đứng đầu trung chính bằng cuộc săn để hở một phía. Không ép người đến hay ngăn người đi tạo sự gắn bó tự nguyện, thay vì dùng sức buộc người khác theo.",
-          "citationIds": ["citation-nhl-q08-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [161, 161],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["161", "161"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-08-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu lấy cuộc săn ba mặt làm hình ảnh người đứng đầu không cưỡng ép. Có đức sáng để người tự theo, giữ thành tín và công bằng mới là cách liên kết tốt.",
-          "citationIds": ["citation-pbc-q08-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [124, 125],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-08-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào năm là người đứng đầu giữ trung chính và không thiên tư. Hình ảnh cuộc săn để người tự đi hoặc ở nhấn mạnh sự thuận hợp tự nguyện, không riêng yêu một phía mà ép phía khác.",
-          "citationIds": ["citation-ntt-q08-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [230, 233],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -285,40 +339,57 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-08-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc “vô thủ” là thiếu sự gắn bó đúng đắn từ lúc đầu. Chọn thầy bạn sai hoặc không gây dựng nền tảng khiến kết cuộc khó tốt.",
-          "citationIds": ["citation-nhl-q08-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [161, 162],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["161", "162"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-08-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu phân biệt “thủ” ở đây là bước đầu với nghĩa người đứng đầu ở quẻ Càn. Không lo nền tảng ngay khi kết hợp thì khó giữ kết quả tốt về sau.",
-          "citationIds": ["citation-pbc-q08-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [125, 126],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-08-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải “thủ” theo lúc bắt đầu thân cận. Thiếu khởi đầu đúng thì không thể có kết cuộc tốt; ông còn lưu ý khởi đầu tốt vẫn chưa tự bảo đảm kết cuộc tốt.",
-          "citationIds": ["citation-ntt-q08-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [233, 234],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-08-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc “vô thủ” theo thế hào âm ở trên cùng không có đầu mối để liên kết xuống dưới. Lời chiêm của ông đặt ở sự kết hợp không có chỗ bắt đầu nên không thể hoàn thành.",
-          "citationIds": ["citation-ntt-q08-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [233, 234],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -327,14 +398,21 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-ntt-ty-second-line",
-      "status": "resolved",
-      "description": "NTT PDF 228 gọi Hào Ba là trung chính trong lời Tượng đang giảng hào hai.",
-      "citationIds": ["citation-ntt-q08-line-2-ntt", "citation-ntt-q08-line-3-ntt"],
-      "resolution": "Ảnh PDF 228 và lời hào hai trên PDF 227 xác nhận đoạn đầu đang giảng Sáu Hai. Đoạn kế trên PDF 228 gọi hào ba không trung chính; giữ dẫn chiếu hào hai trong bản tóm tắt."
+      "text": "NTT PDF 228 gọi Hào Ba là trung chính trong lời Tượng đang giảng hào hai. Ảnh PDF 228 và lời hào hai trên PDF 227 xác nhận đoạn đầu đang giảng Sáu Hai. Đoạn kế trên PDF 228 gọi hào ba không trung chính; giữ dẫn chiếu hào hai trong bản tóm tắt.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [227, 228],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [228, 229],
+          "section": "Hào 3 — diễn giải"
+        }
+      ]
     }
   ]
 }

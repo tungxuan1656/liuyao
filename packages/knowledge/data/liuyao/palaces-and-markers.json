@@ -1,45 +1,40 @@
 {
-  "schemaVersion": 1,
   "id": "rule-palace-and-markers",
   "type": "rule",
   "title": "Bát cung và vị trí Thế–Ứng",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
-    {
-      "id": "rule-palace-and-markers-claim",
-      "kind": "calculation-rule",
-      "text": "Mỗi cung có tám quẻ theo thứ tự riêng, đứng đầu là quẻ Bát thuần. Thế của tám vị trí lần lượt ở hào 6, 1, 2, 3, 4, 5, 4, 3; Ứng cách Thế ba vị trí. Thứ tự Bát cung khác thứ tự 64 quẻ trong phần kinh.",
-      "citationIds": [
-        "citation-bpct-p12-14-technical",
-        "citation-bpct-p14-technical",
-        "citation-bpct-p52-technical"
-      ]
-    }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-p12-14-technical",
-      "citation-bpct-p14-technical",
-      "citation-bpct-p52-technical"
-    ],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "ruleset": "liuyao-standard-v1",
   "category": "classification",
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Mỗi cung có tám quẻ theo thứ tự riêng, đứng đầu là quẻ Bát thuần. Thế của tám vị trí lần lượt ở hào 6, 1, 2, 3, 4, 5, 4, 3; Ứng cách Thế ba vị trí. Thứ tự Bát cung khác thứ tự 64 quẻ trong phần kinh.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        }
+      ],
+      "id": "claim"
+    }
+  ],
   "tables": [
     {
       "kind": "palaces",
-      "claimIds": ["rule-palace-and-markers-claim"],
       "rows": [
         {
           "trigramId": "trigram-heaven",
@@ -153,11 +148,30 @@
             "hexagram-08"
           ]
         }
+      ],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        }
       ]
     },
     {
       "kind": "markers",
-      "claimIds": ["rule-palace-and-markers-claim"],
       "rows": [
         {
           "palaceSequence": 1,
@@ -207,16 +221,46 @@
           "shiPosition": 3,
           "yingPosition": 6
         }
+      ],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        }
       ]
     }
   ],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-bpct-kham-omission",
-      "status": "resolved",
-      "description": "Danh sách cung Khảm ở trang 13 chỉ có bảy tên dù ghi tám quẻ.",
-      "citationIds": ["citation-bpct-p12-14-technical", "citation-bpct-p52-technical"],
-      "resolution": "Bổ sung Trạch Hỏa Cách ở vị trí thứ năm theo mục tương ứng trong Chương 4, trang PDF 52."
+      "text": "Danh sách cung Khảm ở trang 13 chỉ có bảy tên dù ghi tám quẻ. Bổ sung Trạch Hỏa Cách ở vị trí thứ năm theo mục tương ứng trong Chương 4, trang PDF 52.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        }
+      ]
     }
   ]
 }

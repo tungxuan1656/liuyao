@@ -1,75 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-reverse-chant-context",
   "type": "article",
   "title": "Phản ngâm: phạm vi và điều kiện của Dụng thần",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-reverse-chant-context-directions",
-      "kind": "author-interpretation",
-      "text": "Mục 11 nêu bốn cặp quái đối phương vị: Càn–Tốn, Khảm–Ly, Cấn–Khôn và Chấn–Đoài. Các chi gắn với phương vị trong đoạn giúp giải hình ảnh đối nhau; đây là cách trình bày của nguồn.",
-      "citationIds": ["citation-bpct-ch5-reverse-chant-directions"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Không dùng danh sách phương vị để thay bảng Nạp Giáp hoặc tạo bộ nhận diện tự động."
-      ]
-    },
-    {
-      "id": "article-reverse-chant-context-examples",
-      "kind": "author-interpretation",
-      "text": "Ví dụ theo phương vị gồm Càn vi Thiên đổi Tốn vi Phong và Cấu đổi Tiểu Súc; Khảm đổi Ly và Ký Tế đổi Vị Tế. Đoạn còn nêu Cấn đổi Khôn, Bác đổi Khiêm, Chấn đổi Đoài, Quy Muội đổi Tùy, đều có chiều ngược lại.",
-      "citationIds": ["citation-bpct-ch5-reverse-chant-directions"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-reverse-chant-context-line-scope",
-      "kind": "author-interpretation",
-      "text": "Phản ngâm của hào dùng sáu cặp chi xung và hai chiều biến. Cần phân biệt cặp chi ở hào với cặp quái được nguồn đặt theo phương vị, thay vì chuyển mọi ví dụ sang cùng một phép xét.",
-      "citationIds": [
-        "citation-bpct-ch5-reverse-chant-definition",
-        "citation-bpct-ch5-line-reverse-chant",
-        "citation-bpct-ch5-reverse-chant-directions"
-      ],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-reverse-chant-context-useful-spirit",
-      "kind": "author-interpretation",
-      "text": "Câu hỏi 5 cho trường hợp Phản ngâm mà Dụng không biến thành xung khắc vẫn có thể thành việc sau sự tráo trở. Dụng bị xung khắc được nguồn luận bất lợi hơn; tên quẻ riêng lẻ chưa đủ cho kết luận ấy.",
-      "citationIds": ["citation-bpct-part2-reverse-chant-effects"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Giữ điều kiện của Dụng thần; đây là lời luận truyền thống, không xác nhận kết quả của một việc hỏi."
-      ]
-    },
-    {
-      "id": "article-reverse-chant-context-support",
-      "kind": "author-interpretation",
-      "text": "Ví dụ Tiểu Súc biến Càn ở PDF 376 còn xét Thế và Tài được Nhật thần giúp, cùng hào Ứng hóa hồi đầu sinh. Nguồn dùng tổ hợp ấy để luận có lợi dù gọi quẻ Phản ngâm, thay vì cho mọi Phản ngâm một kết quả giống nhau.",
-      "citationIds": ["citation-bpct-part2-reverse-chant-effects"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Chỉ giữ yếu tố được tác giả xét; không chứng nhận chuyện bán hàng hoặc mức lợi kể trong ví dụ."
-      ]
-    }
-  ],
   "relatedIds": [
     "term-reverse-chant",
     "term-line-reverse-chant",
@@ -78,35 +11,102 @@
     "term-ying-line",
     "rule-na-jia-assignment"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-reverse-chant-directions",
-      "citation-bpct-ch5-reverse-chant-definition",
-      "citation-bpct-ch5-line-reverse-chant",
-      "citation-bpct-part2-reverse-chant-effects",
-      "citation-bpct-p13-technical",
-      "citation-bpct-ch1-mountain-palace-name"
-    ],
-    "note": "Đã đọc mục 11 PDF 70–71 và câu hỏi 5 cùng ví dụ PDF 375–376; xem ảnh và đối chiếu Nạp Giáp PDF 13. Giữ cách mô tả theo phương vị riêng với hào chi xung. Câu trong ngoặc PDF 70 nêu cặp Không–Tốn duy nhất còn mơ hồ, không phát hành thành danh sách độc quyền hoặc bộ nhận diện. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "discrepancies": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "discrepancy-bpct-reverse-chant-northeast",
-      "status": "resolved",
-      "description": "BPCT PDF 71 đoạn quái Đông Bắc ghi Càn, rồi ghi Cần vi Sơn và kết Càn–Khôn.",
-      "citationIds": [
-        "citation-bpct-ch5-reverse-chant-directions",
-        "citation-bpct-ch1-mountain-palace-name"
+      "text": "Mục 11 nêu bốn cặp quái đối phương vị: Càn–Tốn, Khảm–Ly, Cấn–Khôn và Chấn–Đoài. Các chi gắn với phương vị trong đoạn giúp giải hình ảnh đối nhau; đây là cách trình bày của nguồn.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 11 — Các cặp theo phương vị",
+          "printedPages": ["59", "59"]
+        }
       ],
-      "resolution": "Ảnh PDF 71 xác nhận các tên không khớp. Đoạn gắn Đông Bắc với Sửu, Dần, rồi nêu Sơn Địa Bác và Địa Sơn Khiêm. Danh sách cung ở XI PDF 13 xác định Cấn vi Sơn; giữ cặp Cấn–Khôn, không tạo Càn ở Đông Bắc."
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không dùng danh sách phương vị để thay bảng Nạp Giáp hoặc tạo bộ nhận diện tự động."
+    },
+    {
+      "text": "Ví dụ theo phương vị gồm Càn vi Thiên đổi Tốn vi Phong và Cấu đổi Tiểu Súc; Khảm đổi Ly và Ký Tế đổi Vị Tế. Đoạn còn nêu Cấn đổi Khôn, Bác đổi Khiêm, Chấn đổi Đoài, Quy Muội đổi Tùy, đều có chiều ngược lại.\n\nPhản ngâm của hào dùng sáu cặp chi xung và hai chiều biến. Cần phân biệt cặp chi ở hào với cặp quái được nguồn đặt theo phương vị, thay vì chuyển mọi ví dụ sang cùng một phép xét.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 11 — Các cặp theo phương vị",
+          "printedPages": ["59", "59"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 11 — Quẻ và hào Phản ngâm",
+          "printedPages": ["58", "58"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 11 — Sáu cặp chi của hào Phản ngâm",
+          "printedPages": ["59", "59"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "text": "Câu hỏi 5 cho trường hợp Phản ngâm mà Dụng không biến thành xung khắc vẫn có thể thành việc sau sự tráo trở. Dụng bị xung khắc được nguồn luận bất lợi hơn; tên quẻ riêng lẻ chưa đủ cho kết luận ấy.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [375, 376],
+          "section": "Câu hỏi 5 — Dụng thần và Phản ngâm",
+          "printedPages": ["328", "329"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Giữ điều kiện của Dụng thần; đây là lời luận truyền thống, không xác nhận kết quả của một việc hỏi."
+    },
+    {
+      "text": "Ví dụ Tiểu Súc biến Càn ở PDF 376 còn xét Thế và Tài được Nhật thần giúp, cùng hào Ứng hóa hồi đầu sinh. Nguồn dùng tổ hợp ấy để luận có lợi dù gọi quẻ Phản ngâm, thay vì cho mọi Phản ngâm một kết quả giống nhau.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [375, 376],
+          "section": "Câu hỏi 5 — Dụng thần và Phản ngâm",
+          "printedPages": ["328", "329"]
+        }
+      ],
+      "id": "support",
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Chỉ giữ yếu tố được tác giả xét; không chứng nhận chuyện bán hàng hoặc mức lợi kể trong ví dụ."
+    }
+  ],
+  "notes": [
+    {
+      "text": "BPCT PDF 71 đoạn quái Đông Bắc ghi Càn, rồi ghi Cần vi Sơn và kết Càn–Khôn. Ảnh PDF 71 xác nhận các tên không khớp. Đoạn gắn Đông Bắc với Sửu, Dần, rồi nêu Sơn Địa Bác và Địa Sơn Khiêm. Danh sách cung ở XI PDF 13 xác định Cấn vi Sơn; giữ cặp Cấn–Khôn, không tạo Càn ở Đông Bắc.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 11 — Các cặp theo phương vị",
+          "printedPages": ["59", "59"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XI — Cung Cấn và tên Cấn vi Sơn",
+          "printedPages": ["7", "7"]
+        }
+      ]
     }
   ]
 }

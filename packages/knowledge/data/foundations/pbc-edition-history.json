@@ -1,63 +1,32 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-edition-history",
   "type": "article",
   "title": "PBC — Lịch sử văn bản qua Chương Thâu",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-edition-history-pbc-edition-history-manuscripts",
-      "kind": "author-interpretation",
-      "text": "Chương Thâu thuật bản thảo hơn 1000 trang, ba bản chép khoảng 30 vở, giới thiệu Tiếng Dân cuối 1937 và Phan Văn Hùm trích 1943; ông không biết bản của Phan Văn Hùm còn hay không. Đây là lịch sử văn bản được thuật, không đối chiếu các bản gốc.",
-      "citationIds": ["citation-pbc-edition-history-manuscripts"],
+      "text": "Chương Thâu thuật bản thảo hơn 1000 trang, ba bản chép khoảng 30 vở, giới thiệu Tiếng Dân cuối 1937 và Phan Văn Hùm trích 1943; ông không biết bản của Phan Văn Hùm còn hay không. Đây là lịch sử văn bản được thuật, không đối chiếu các bản gốc.\n\nNguồn thuật phát hiện 16/30 tập ở Nghệ An 1967, Nguyễn Văn Yêm giữ/tặng bản rồi thất lạc một phần. Không lấy số tập này làm số chương còn của PDF.\n\nNguồn thuật Tống Châu Phu sao từ bản Phan Nghi Đệ, trưng bày Huế 1967 rồi Khai Trí 1969 in 2 tập 1224 trang. Bản gốc được nói đã thất lạc; bản Khai Trí tương đối đầy đủ nhưng thiếu 4 chương và khó bổ khuyết. Không đồng nhất thiếu 4 chương với mọi lời chủ động khuyết dịch cuối sách.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [9, 9],
+          "section": "pbc-edition-history-manuscripts — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [9, 9],
+          "section": "pbc-edition-history-nghe-an — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [9, 10],
+          "section": "pbc-edition-history-hue-khai-tri — commentary"
+        }
+      ],
       "attribution": {
         "author": "Chương Thâu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-edition-history-pbc-edition-history-nghe-an",
-      "kind": "author-interpretation",
-      "text": "Nguồn thuật phát hiện 16/30 tập ở Nghệ An 1967, Nguyễn Văn Yêm giữ/tặng bản rồi thất lạc một phần. Không lấy số tập này làm số chương còn của PDF.",
-      "citationIds": ["citation-pbc-edition-history-nghe-an"],
-      "attribution": {
-        "author": "Chương Thâu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-pbc-edition-history-pbc-edition-history-hue-khai-tri",
-      "kind": "author-interpretation",
-      "text": "Nguồn thuật Tống Châu Phu sao từ bản Phan Nghi Đệ, trưng bày Huế 1967 rồi Khai Trí 1969 in 2 tập 1224 trang. Bản gốc được nói đã thất lạc; bản Khai Trí tương đối đầy đủ nhưng thiếu 4 chương và khó bổ khuyết. Không đồng nhất thiếu 4 chương với mọi lời chủ động khuyết dịch cuối sách.",
-      "citationIds": ["citation-pbc-edition-history-hue-khai-tri"],
-      "attribution": {
-        "author": "Chương Thâu"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-edition-history-manuscripts",
-      "citation-pbc-edition-history-nghe-an",
-      "citation-pbc-edition-history-hue-khai-tri"
-    ],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

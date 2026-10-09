@@ -1,48 +1,30 @@
-# feat-102 — Verify released knowledge fidelity across package and web flows
+# feat-102 — Check knowledge presentation across package and web flows
 
 ## Goal
 
-Trace every released explanation from public lookup to the correct web context and supporting evidence.
+Show each explanation in the correct quẻ, position, or article context with its source references.
 
 ## Scope
 
-**Intended work:** Reusable projection checks, route/context evidence, direct UI review, and a snapshot-bound fidelity report.
-
-## Non-goals
-
-Repeating source audits, specialist certification, prediction, and browser automation suites.
+Package adapters, record/line links, table presentation, and direct web checks.
 
 ## Acceptance
 
-- [ ] Satisfy the [runtime fidelity contract](../docs/product-specs/knowledge-quality.md#intended-runtime-fidelity) for every released record type.
-- [ ] Record and claim identities, conditions, attribution, tables, diagrams, and evidence remain reachable without mismatched sources.
-- [ ] Primary/changed quẻ and positions 1–6 resolve against explicit expected contexts, including static and moving cases.
-- [ ] Missing content, unpublished targets, accepted conventions, and recorded review scope render distinct states.
-- [ ] Direct compact/wide, keyboard, and offline checks cover each presentation branch.
-- [ ] Checks reject omitted claims, dropped conditions, swapped contexts, and wrong citations through isolated fixtures.
-- [ ] Report binds release membership, snapshot identity, and projection revision; relevant changes require re-verification.
-- [ ] Required verification and direct web evidence are recorded.
+- [ ] Satisfy the [runtime fidelity contract](../docs/product-specs/knowledge-quality.md#runtime-fidelity).
+- [ ] Text, meaningful conditions, attribution, tables, diagrams, and references survive presentation.
+- [ ] Primary/changed quẻ and positions 1–6 resolve against explicit expected contexts.
+- [ ] Missing content and project conventions remain clear to the reader.
+- [ ] Focused package cases reject swapped contexts, dropped conditions, and wrong sources.
+- [ ] Compact/wide, keyboard, and offline checks cover the changed web flows.
+- [ ] Relevant checks and ./init.sh pass.
 
 ## Relevant docs
 
 [Library](../docs/product-specs/knowledge-browser.md), [result](../docs/product-specs/reading-result.md),
 [model](../docs/design-docs/knowledge-model.md), [verification](../docs/development.md).
 
-## Plan
-
-1. Enumerate released records, declared routes, and independent expected context/evidence mappings.
-2. Add package checks for reusable projections and snapshot freshness, with rejection fixtures.
-3. Review rendered branches directly and record their evidence; commit the fidelity gate.
-
-## Verify
-
-- `./init.sh`
-- Package projection, release-set, and context checks.
-- Direct UI and offline checks under the development contract.
-
 ## Handoff
 
-- State: todo.
-- Evidence: Planning recorded; implementation has not started.
-- Dependencies: See [feature index](../feature_index.json); full-corpus certification is not required.
-- Next: Complete feat-098–100, select this feature, and assess external-plan criteria before coding.
+- State: todo; not activated.
+- Dependencies: See [feature index](../feature_index.json).
+- Next: Complete the affected web flows, then select this presentation check.

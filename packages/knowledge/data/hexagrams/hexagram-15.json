@@ -1,103 +1,140 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-15",
   "type": "hexagram",
   "title": "Địa Sơn Khiêm",
   "aliases": ["Khiêm"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-mountain", "trigram-earth"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-15-structure",
-      "kind": "structural-fact",
       "text": "Địa Sơn Khiêm có ngoại quái Khôn và nội quái Cấn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q15-overview-nhl",
-        "citation-pbc-q15-overview-pbc",
-        "citation-ntt-q15-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [182, 182],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["182", "182"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [181, 184],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [310, 313],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-15-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê lấy núi ở dưới đất làm tượng người có tài mà không tự cao. Khiêm cần giữ bền và đi cùng việc bớt chỗ quá, bù chỗ thiếu để tạo cân bằng.",
-      "citationIds": ["citation-nhl-q15-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [182, 182],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["182", "182"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-15-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu giải Khiêm là có đức mà không tự nhận mình hơn người. Sự nhún phải thực chất và bền tới cuối đời, không dùng vẻ khiêm để cầu lợi hoặc địa vị.",
-      "citationIds": ["citation-pbc-q15-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [181, 184],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-15-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di đặt Khiêm ở người có đức mà không tự nhận, nhờ đó người khác tự tôn trọng. Người quân tử giữ được sự khiêm tới cuối; đối xử cần giảm phần quá và thêm phần thiếu cho phù hợp.",
-      "citationIds": ["citation-ntt-q15-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [310, 313],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-15-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy đọc có cuối theo thế trước thu lại rồi sau mở ra. Cách giải tiến trình ấy được giữ riêng với lời nhấn mạnh giữ khiêm trọn đời của Trình Di và Phan Bội Châu.",
-      "citationIds": ["citation-ntt-q15-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [311, 311],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-mountain", "trigram-earth"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yang", "yin", "yin", "yin"],
-    "kingWenNumber": 15,
-    "upperTrigramId": "trigram-earth",
-    "lowerTrigramId": "trigram-mountain",
-    "claimIds": ["hexagram-15-structure"]
-  },
+  "kingWenNumber": 15,
+  "upperTrigramId": "trigram-earth",
+  "lowerTrigramId": "trigram-mountain",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-15-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc hào đầu mềm ở thấp như khiêm thêm nữa để tự nuôi đức. Nhờ giữ phẩm chất ấy, người quân tử có thể vượt hoàn cảnh nguy hiểm.",
-          "citationIds": ["citation-nhl-q15-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [182, 183],
+              "section": "Hào 1 — diễn giải và chú thích",
+              "printedPages": ["182", "183"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-15-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải sự khiêm ở vị thấp như phương pháp tự rèn để vượt gian nan. Ông phân biệt cách dùng đức khiêm với lời báo điều kiện thuận lợi có sẵn.",
-          "citationIds": ["citation-pbc-q15-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [184, 185],
+              "section": "Hào 1 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-15-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho người dưới biết hạ mình vì chưa có chỗ thi hành lớn. Khiêm khiến người khác giúp nên có thể vượt hiểm; người quân tử mới dùng đức ấy đúng đạo.",
-          "citationIds": ["citation-ntt-q15-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [313, 314],
+              "section": "Hào 1 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -109,30 +146,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-15-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào hai có đức khiêm được người biết đến nhưng vẫn cần giữ chính bền. Không vì danh mà giả khiêm hoặc nịnh người khác mới phù hợp lời tốt.",
-          "citationIds": ["citation-nhl-q15-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [183, 183],
+              "section": "Hào 2 — diễn giải và chú thích",
+              "printedPages": ["183", "183"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-15-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải danh tiếng ở hào hai là kết quả tự nhiên của đức thật bên trong. Cách hạ mình để lấy lòng hay cầu tiếng không phải đức khiêm ấy.",
-          "citationIds": ["citation-pbc-q15-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [185, 185],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-15-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc tiếng khiêm là phẩm chất bên trong biểu lộ ra dáng vẻ và lời nói. Chân thành và trung chính khiến người nhận biết, không phải cố tạo tiếng khiêm để cầu danh.",
-          "citationIds": ["citation-ntt-q15-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [314, 315],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -144,30 +194,43 @@
       "position": 3,
       "polarity": "yang",
       "label": "Cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-15-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào ba có tài và công, được năm hào âm tin theo nhưng không tự khoe. Giữ sự khiêm đến cuối giúp bảo toàn phẩm chất và công việc.",
-          "citationIds": ["citation-nhl-q15-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [183, 183],
+              "section": "Hào 3 — diễn giải và chú thích",
+              "printedPages": ["183", "183"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-15-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt lao khiêm ở người làm được việc mà không cậy công hơn người. Khiêm thật vẫn có giá trị khi danh hoặc ngôi thay đổi, không chỉ làm phương tiện tiến thân.",
-          "citationIds": ["citation-pbc-q15-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [185, 186],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-15-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào ba mạnh, có công và được trên dưới cùng theo. Người quân tử không tự nhận công, giữ nhún bền tới cuối nên mới được lời tốt.",
-          "citationIds": ["citation-ntt-q15-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [315, 316],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -179,30 +242,43 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-15-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt hào bốn giữa người có công ở hào ba và người đứng đầu ở hào năm. Mọi việc cần phát huy sự khiêm đúng mức để quan hệ ấy không thành lỗi.",
-          "citationIds": ["citation-nhl-q15-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [183, 183],
+              "section": "Hào 4 — diễn giải và chú thích",
+              "printedPages": ["183", "183"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-15-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải mọi động tác của hào bốn phải giữ khiêm vì ở trên người có công mà dưới người đứng đầu. Khiêm cần phù hợp phép tắc, không làm quá thành giả hoặc sai mức.",
-          "citationIds": ["citation-pbc-q15-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [186, 187],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-15-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào bốn gần ngôi cao mà phía dưới có người đáng trọng ở hào ba. Tiến lui, động nghỉ đều cần khiêm cho đúng chỗ; quá mức cũng không phải đạo khiêm.",
-          "citationIds": ["citation-ntt-q15-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [316, 317],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -214,43 +290,50 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-15-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho người đứng đầu được theo vì đức, không cần giàu để lôi kéo. Khiêm vẫn phải có uy; hình ảnh dùng quân đặt ở việc xử người chưa chịu theo trong bối cảnh lời hào.",
-          "citationIds": ["citation-nhl-q15-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [183, 184],
+              "section": "Hào 5 — diễn giải và chú thích",
+              "printedPages": ["183", "184"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-15-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào năm kết hợp đức khiêm với uy để giữ trật tự, không nhờ tiền của mua lòng người. Lời dùng quân chỉ đặt vào việc cần xử kẻ không phục trong hoàn cảnh lịch sử của lời giảng.",
-          "citationIds": ["citation-pbc-q15-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [187, 187],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-15-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải người đứng đầu lấy đức khiêm để cùng người xung quanh mà không cần của cải. Nhún không đủ cho mọi việc trị dân, nên lời hào còn nói tới uy và xử kẻ không thuận trong bối cảnh ấy.",
-          "citationIds": ["citation-ntt-q15-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [318, 319],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         }
       ]
     },
@@ -258,92 +341,67 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-15-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc hào cuối có tiếng khiêm nhưng tài còn yếu và không ở ngôi làm chủ. Nếu dùng quân thì chỉ trong vùng của mình, không mở rộng ra xa.",
-          "citationIds": ["citation-nhl-q15-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [184, 184],
+              "section": "Hào 6 — diễn giải và chú thích",
+              "printedPages": ["184", "184"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-15-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giới hạn việc quân của hào cuối ở phạm vi mình vì mềm yếu và không có ngôi. Ông còn dặn không viện chữ xâm phạt làm phép cho các nước đời sau xâm chiếm nhau.",
-          "citationIds": ["citation-pbc-q15-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [187, 188],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-15-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải ấp quốc theo lòng riêng của chính mình khi người không có ngôi chưa thể trị thiên hạ. Sự mạnh ở đây dùng để sửa mình, không phải mệnh lệnh đem quân chiếm nơi khác.",
-          "citationIds": ["citation-ntt-q15-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [319, 320],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-15-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc lời hào theo việc quân chỉ giới hạn ở ấp của mình. Hào mềm, không có ngôi và sức ít nên không thể đi rộng; giữ cách đọc địa phương này riêng với phép tự trị lòng của Trình Di.",
-          "citationIds": ["citation-ntt-q15-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [319, 320],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         }
       ]
     }
-  ],
-  "specialPassages": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q15-overview-nhl",
-      "citation-pbc-q15-overview-pbc",
-      "citation-ntt-q15-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q15-overview-chu-hy",
-      "citation-nhl-q15-line-1-nhl",
-      "citation-pbc-q15-line-1-pbc",
-      "citation-ntt-q15-line-1-ntt",
-      "citation-nhl-q15-line-2-nhl",
-      "citation-pbc-q15-line-2-pbc",
-      "citation-ntt-q15-line-2-ntt",
-      "citation-nhl-q15-line-3-nhl",
-      "citation-pbc-q15-line-3-pbc",
-      "citation-ntt-q15-line-3-ntt",
-      "citation-nhl-q15-line-4-nhl",
-      "citation-pbc-q15-line-4-pbc",
-      "citation-ntt-q15-line-4-ntt",
-      "citation-nhl-q15-line-5-nhl",
-      "citation-pbc-q15-line-5-pbc",
-      "citation-ntt-q15-line-5-ntt",
-      "citation-nhl-q15-line-6-nhl",
-      "citation-pbc-q15-line-6-pbc",
-      "citation-ntt-q15-line-6-ntt",
-      "citation-ntt-q15-line-6-chu-hy"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép được ghi nhận. Các cách đọc khác nhau được giữ theo tác giả; chú thích Ngô Tất Tố là lớp riêng. Bộ dữ liệu chọn diễn giải, không chứng nhận toàn bộ sách hoặc giả thuyết lịch sử; chưa có xác nhận của chuyên gia độc lập."
-  }
+  ]
 }

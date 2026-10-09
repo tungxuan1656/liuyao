@@ -70,7 +70,7 @@ This flow is planned. Current fact inspectors do not render complete quẻ or h�
 - Use the selected position directly; visual row reversal must not change its identity.
 - If no line changes, offer no changed-quẻ context.
 - Preserve moving/static labels and the current changed-board fact boundary.
-- Load explanations through released knowledge APIs, using the [Library content contract](knowledge-browser.md#intended-book-backed-expansion).
+- Load explanations through released knowledge APIs, using the [Library content contract](knowledge-browser.md#book-backed-content).
 - Preserve each fact rule's conditions, attribution, and supporting evidence when reusing that presentation.
 - Identify project-convention explanations through their specification evidence.
 - If the selected context has no reviewed commentary, show an unavailable state and retain the result.

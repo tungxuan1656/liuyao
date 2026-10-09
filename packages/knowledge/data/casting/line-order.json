@@ -1,31 +1,29 @@
 {
-  "schemaVersion": 1,
   "id": "rule-line-position-order",
   "type": "rule",
   "title": "Thứ tự các hào",
-  "aliases": [],
   "topicIds": ["topic-casting", "topic-foundations"],
-  "claims": [
-    {
-      "id": "rule-line-position-order-claim",
-      "kind": "calculation-rule",
-      "text": "Lập quẻ từ dưới lên: lần đầu là hào sơ, lần thứ sáu là hào thượng. Ba hào đầu thuộc nội quái, ba hào sau thuộc ngoại quái.",
-      "citationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"]
-    }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p11-12-technical", "citation-nhl-p72-73-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "ruleset": "liuyao-standard-v1",
-  "category": "structure"
+  "category": "structure",
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Lập quẻ từ dưới lên: lần đầu là hào sơ, lần thứ sáu là hào thượng. Ba hào đầu thuộc nội quái, ba hào sau thuộc ngoại quái.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        }
+      ],
+      "id": "claim"
+    }
+  ]
 }

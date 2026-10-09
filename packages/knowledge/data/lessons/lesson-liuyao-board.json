@@ -1,71 +1,137 @@
 {
-  "schemaVersion": 2,
   "id": "lesson-liuyao-board",
-  "type": "lesson",
+  "type": "article",
   "title": "Từ gieo quẻ đến các nhãn Lục Hào",
-  "aliases": [],
   "topicIds": ["topic-learning", "topic-casting", "topic-liuyao-foundations"],
-  "claims": [],
   "relatedIds": ["lesson-foundations"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — derivative lesson evidence comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceClaimIds": [
-      "claim-three-coin-outcomes",
-      "rule-line-position-order-claim",
-      "rule-palace-and-markers-claim",
-      "rule-na-jia-assignment-claim",
-      "rule-branch-element-claim",
-      "rule-six-relative-classification-claim"
-    ],
-    "evidenceCitationIds": [
-      "citation-bpct-p11-12-technical",
-      "citation-nhl-p72-73-technical",
-      "citation-bpct-p12-14-technical",
-      "citation-bpct-p14-technical",
-      "citation-bpct-p52-technical",
-      "citation-bpct-p13-technical",
-      "citation-bpct-p8-technical",
-      "citation-bpct-p9-technical"
-    ],
-    "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "sequence": 3,
-  "prerequisiteLessonIds": ["lesson-foundations"],
-  "blocks": [
+  "status": "ready",
+  "entries": [
     {
       "id": "casting",
-      "kind": "prose",
       "text": "Với cách gọi sấp/ngửa của các đoạn sách đã đối chiếu, ba tiền cho bốn kết quả: một sấp là dương tĩnh, hai sấp là âm tĩnh, ba sấp là dương động, không sấp là âm động. Sáu lần gieo lấp sáu vị trí từ dưới lên. Cách gọi mặt tiền này không tự xác lập mặt trời/mặt trăng của ứng dụng hay phép bốn tiền.",
-      "supportingClaimIds": ["claim-three-coin-outcomes", "rule-line-position-order-claim"],
-      "position": 1
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        }
+      ],
+      "links": [
+        {
+          "recordId": "article-three-coin-casting",
+          "sectionId": "claim-three-coin-outcomes"
+        },
+        {
+          "recordId": "rule-line-position-order",
+          "sectionId": "claim"
+        }
+      ]
     },
     {
       "id": "palaces-markers",
-      "kind": "prose",
       "text": "Sau khi nhận hình quẻ, tìm nó trong tám cung, mỗi cung có tám quẻ. Thứ tự cung không phải số thứ tự Văn Vương. Theo vị trí 1–8 trong một cung, Thế lần lượt ở 6, 1, 2, 3, 4, 5, 4, 3; Ứng nằm cách Thế ba vị trí. Cung còn cung cấp hành làm mốc khi phân Lục thân.",
-      "supportingClaimIds": ["rule-palace-and-markers-claim"],
-      "position": 2
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        }
+      ],
+      "links": [
+        {
+          "recordId": "rule-palace-and-markers",
+          "sectionId": "claim"
+        }
+      ]
     },
     {
       "id": "na-jia",
-      "kind": "prose",
       "text": "Nạp Giáp là bước gắn can chi vào từng hào: chọn dãy nội của quái dưới cho 1–3, chọn dãy ngoại của quái trên cho 4–6, rồi đọc từng dãy từ thấp lên cao. Không lấy dãy nội dùng lặp cho cả hai nửa.",
-      "supportingClaimIds": ["rule-na-jia-assignment-claim", "rule-line-position-order-claim"],
-      "position": 3
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        }
+      ],
+      "links": [
+        {
+          "recordId": "rule-na-jia-assignment",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-line-position-order",
+          "sectionId": "claim"
+        }
+      ]
     },
     {
       "id": "elements-relatives",
-      "kind": "prose",
       "text": "Từ chi suy hành: Tý/Hợi là Thủy, Dần/Mão là Mộc, Tỵ/Ngọ là Hỏa, Thân/Dậu là Kim, Sửu/Thìn/Mùi/Tuất là Thổ. So hành hào với hành cung: cùng hành → Huynh đệ; cung sinh hào → Tử tôn; cung khắc hào → Thê tài; hào khắc cung → Quan quỷ; hào sinh cung → Phụ mẫu. Năm quan hệ tính cùng “Ta” được gọi là Lục thân; các nhãn quan hệ chưa phải kết luận cho một việc hỏi.",
-      "supportingClaimIds": ["rule-branch-element-claim", "rule-six-relative-classification-claim"],
-      "position": 4
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        }
+      ],
+      "links": [
+        {
+          "recordId": "rule-branch-element",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-six-relative-classification",
+          "sectionId": "claim"
+        }
+      ]
     }
-  ]
+  ],
+  "sequence": 3
 }

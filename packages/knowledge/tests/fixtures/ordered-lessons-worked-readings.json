@@ -5,23 +5,6 @@
       "id": "tung-to-ly",
       "lessonId": "lesson-worked-readings",
       "blockId": "tung-to-ly",
-      "supportingClaimIds": [
-        "claim-tung-to-ly",
-        "rule-moving-line-change-claim",
-        "hexagram-06-structure",
-        "hexagram-10-structure",
-        "rule-palace-and-markers-claim",
-        "rule-na-jia-assignment-claim",
-        "rule-branch-element-claim",
-        "rule-six-relative-classification-claim",
-        "article-bpct-boards-ly-bpct-board-47-heading",
-        "article-bpct-boards-ly-bpct-board-47-line-1",
-        "article-bpct-boards-ly-bpct-board-47-line-2",
-        "article-bpct-boards-ly-bpct-board-47-line-3",
-        "article-bpct-boards-ly-bpct-board-47-line-4",
-        "article-bpct-boards-ly-bpct-board-47-line-5",
-        "article-bpct-boards-ly-bpct-board-47-line-6"
-      ],
       "input": {
         "ruleset": "liuyao-standard-v1",
         "lines": [6, 7, 8, 7, 7, 7]
@@ -119,21 +102,6 @@
       "id": "static-can",
       "lessonId": "lesson-worked-readings",
       "blockId": "static-can",
-      "supportingClaimIds": [
-        "hexagram-01-structure",
-        "rule-moving-line-change-claim",
-        "rule-palace-and-markers-claim",
-        "rule-na-jia-assignment-claim",
-        "rule-branch-element-claim",
-        "rule-six-relative-classification-claim",
-        "article-bpct-boards-can-bpct-board-01-heading",
-        "article-bpct-boards-can-bpct-board-01-line-1",
-        "article-bpct-boards-can-bpct-board-01-line-2",
-        "article-bpct-boards-can-bpct-board-01-line-3",
-        "article-bpct-boards-can-bpct-board-01-line-4",
-        "article-bpct-boards-can-bpct-board-01-line-5",
-        "article-bpct-boards-can-bpct-board-01-line-6"
-      ],
       "input": {
         "ruleset": "liuyao-standard-v1",
         "lines": [7, 7, 7, 7, 7, 7]
@@ -228,23 +196,6 @@
       "id": "all-moving-can",
       "lessonId": "lesson-worked-readings",
       "blockId": "all-moving-can",
-      "supportingClaimIds": [
-        "hexagram-01-structure",
-        "hexagram-02-structure",
-        "rule-moving-line-change-claim",
-        "rule-moving-line-change-change-outcome",
-        "rule-palace-and-markers-claim",
-        "rule-na-jia-assignment-claim",
-        "rule-branch-element-claim",
-        "rule-six-relative-classification-claim",
-        "article-bpct-boards-can-bpct-board-01-heading",
-        "article-bpct-boards-can-bpct-board-01-line-1",
-        "article-bpct-boards-can-bpct-board-01-line-2",
-        "article-bpct-boards-can-bpct-board-01-line-3",
-        "article-bpct-boards-can-bpct-board-01-line-4",
-        "article-bpct-boards-can-bpct-board-01-line-5",
-        "article-bpct-boards-can-bpct-board-01-line-6"
-      ],
       "input": {
         "ruleset": "liuyao-standard-v1",
         "lines": [9, 9, 9, 9, 9, 9]

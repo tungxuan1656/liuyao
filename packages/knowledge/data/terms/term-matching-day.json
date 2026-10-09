@@ -1,44 +1,37 @@
 {
-  "schemaVersion": 1,
   "id": "term-matching-day",
   "type": "term",
   "title": "Trị nhật",
   "aliases": ["Ngày trị"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "term-matching-day-definition",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao giải trị nhật là ngày có cùng địa chi với hào Dụng thần đang xét. Chú thích sau sách lấy hào Dần và ngày Dần làm ví dụ, phân biệt với ngày Hợi hợp Dần.",
-      "citationIds": [
-        "citation-bpct-ch5-matching-day-note",
-        "citation-bpct-appendix-matching-day-note"
-      ],
-      "attribution": {
-        "author": "Vĩnh Cao"
-      },
-      "conditions": ["Định nghĩa ngày trị không tự xác nhận một ngày ứng nghiệm cụ thể."]
-    }
-  ],
   "relatedIds": [
     "term-earthly-branch",
     "term-useful-spirit",
     "article-month-break-conditions",
     "article-decade-empty-conditions"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-matching-day-note",
-      "citation-bpct-appendix-matching-day-note"
-    ],
-    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Vĩnh Cao giải trị nhật là ngày có cùng địa chi với hào Dụng thần đang xét. Chú thích sau sách lấy hào Dần và ngày Dần làm ví dụ, phân biệt với ngày Hợi hợp Dần.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Chú thích 1 — Trị nhật",
+          "printedPages": ["56", "56"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [462, 462],
+          "section": "X — Chú thích 9, trị nhật và ngày hợp",
+          "printedPages": ["370", "370"]
+        }
+      ],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      },
+      "condition": "Định nghĩa ngày trị không tự xác nhận một ngày ứng nghiệm cụ thể."
+    }
+  ]
 }

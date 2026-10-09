@@ -1,103 +1,140 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-19",
   "type": "hexagram",
   "title": "Địa Trạch Lâm",
   "aliases": ["Lâm"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-lake", "trigram-earth"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-19-structure",
-      "kind": "structural-fact",
       "text": "Địa Trạch Lâm có ngoại quái Khôn và nội quái Đoài. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q19-overview-nhl",
-        "citation-pbc-q19-overview-pbc",
-        "citation-ntt-q19-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [194, 194],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["194", "194"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [214, 216],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [359, 362],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-19-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giải Lâm theo dương đang lớn và việc đến gần người để giáo hóa, che chở. Ông chưa xác định chắc bát nguyệt là tháng tám hay tám tháng, chỉ giữ lời răn cần nghĩ trước lúc thế thịnh đổi.",
-      "citationIds": ["citation-nhl-q19-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [194, 194],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["194", "194"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-19-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu nhấn mạnh lúc hai hào dương đang lớn vẫn phải phòng suy. Ông nêu hai cách hiểu bát nguyệt: tám tháng từ Phục đến Độn, hoặc tháng tám gắn với Quán; các cách đọc được giữ riêng.",
-      "citationIds": ["citation-pbc-q19-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [214, 216],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-19-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di xem Lâm là đến gần trong thế dương đang lớn, cần ngay lúc thuận đã đề phòng sự suy. Ông giải tám tháng bằng cách đếm từ Phục đến Độn, không khuyên tự mãn vì thế hiện tại.",
-      "citationIds": ["citation-ntt-q19-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [359, 362],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-19-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy giữ cả cách đếm tám tháng từ Phục đến Độn và cách lấy tháng tám lịch Hạ ứng với Quán. Đây là hai lời giải truyền thống của câu quẻ, chưa phải phép tính mốc ứng nghiệm từ ngày gieo.",
-      "citationIds": ["citation-ntt-q19-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [360, 360],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-lake", "trigram-earth"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yang", "yin", "yin", "yin", "yin"],
-    "kingWenNumber": 19,
-    "upperTrigramId": "trigram-earth",
-    "lowerTrigramId": "trigram-lake",
-    "claimIds": ["hexagram-19-structure"]
-  },
+  "kingWenNumber": 19,
+  "upperTrigramId": "trigram-earth",
+  "lowerTrigramId": "trigram-lake",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-19-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê theo Phan Bội Châu đọc hàm ở hào đầu theo việc hai hào dương cùng đến gần. Sự cùng tiến phải đi với chính bền mới phù hợp lời tốt.",
-          "citationIds": ["citation-nhl-q19-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [195, 195],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["195", "195"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-19-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải hào đầu cùng hào hai chung sức tiến, nhưng cần tránh kết thành phe vì tình riêng. Chính đáng và bền là điều kiện của sự cùng đến gần.",
-          "citationIds": ["citation-pbc-q19-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [216, 217],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-19-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hàm theo sự cảm ứng giữa hào đầu và hào bốn. Người mạnh ở dưới được người có vị trên ứng đúng giúp hành động; cách đọc này khác nghĩa cùng tiến của hai tác giả Việt Nam.",
-          "citationIds": ["citation-ntt-q19-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [362, 363],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -109,40 +146,57 @@
       "position": 2,
       "polarity": "yang",
       "label": "Cửu nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-19-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt hào hai cương trung cùng hào đầu tiến, có người trên đáp ứng. Sự chung sức phù hợp đạo giúp việc tốt, không chỉ do vị dương đang tăng.",
-          "citationIds": ["citation-nhl-q19-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [195, 195],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["195", "195"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-19-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hai hào dương đồng lòng tạo kết quả, không buông việc cho số mệnh. Ông đọc chưa thuận mệnh như nhấn mạnh sự chủ động làm điều đúng.",
-          "citationIds": ["citation-pbc-q19-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [217, 218],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-19-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào hai ở người cương trung đáp ứng hào năm. Chưa thuận mệnh được ông đọc là không chỉ nghe lệnh người trên, mà giúp người trên theo đạo đúng.",
-          "citationIds": ["citation-ntt-q19-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [363, 364],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-19-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy nói ông chưa rõ nghĩa chưa thuận mệnh trong lời Tượng hào hai. Sự chưa xác định này được giữ riêng với cách Trình Di và Phan Bội Châu đã giải, không gán cho ông một nghĩa kết luận.",
-          "citationIds": ["citation-ntt-q19-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [364, 364],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -154,30 +208,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-19-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải hào ba dùng lời ngọt để lấy lòng hai hào dương nên không có lợi. Biết lo và sửa cách ấy mới có thể tránh lỗi.",
-          "citationIds": ["citation-nhl-q19-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [195, 195],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["195", "195"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-19-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào ba lấy cách ngọt ngào làm phương tiện gần người, chưa có đức thật. Tự nhận ra và lo sửa thì lỗi không tiếp tục kéo dài.",
-          "citationIds": ["citation-pbc-q19-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [218, 219],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-19-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào ba mềm nịnh và không đúng vị nên cách đến gần không có lợi. Nếu biết sợ và thành thật đổi thì có thể tránh lỗi, thay vì chỉ sửa vẻ ngoài.",
-          "citationIds": ["citation-ntt-q19-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [365, 366],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -189,30 +256,43 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-19-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc chí lâm theo hào bốn ứng với hào đầu một cách thiết thực và thành thật. Quan hệ đúng người và đúng vị giúp tránh lỗi.",
-          "citationIds": ["citation-nhl-q19-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [195, 196],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["195", "196"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-19-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào bốn gần gũi hết lòng với hào đầu và có vị phù hợp. Sự thành thật trong quan hệ ấy tạo điều kiện giúp nhau, không chỉ là danh nghĩa gần người.",
-          "citationIds": ["citation-pbc-q19-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [219, 219],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-19-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào bốn ở ranh giới gần nội quái và biết dùng hào đầu có tài. Ở vị cao mà gần được người dưới thông qua quan hệ đúng giúp thực hiện đạo Lâm.",
-          "citationIds": ["citation-ntt-q19-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [366, 366],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -224,30 +304,43 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-19-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào năm biết dùng người cương trung ở hào hai là cách đến gần sáng suốt của người đứng đầu. Trí không nằm ở tự biết và tự làm mọi việc.",
-          "citationIds": ["citation-nhl-q19-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [196, 196],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["196", "196"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-19-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải trí lâm theo việc người ở ngôi cao tin và trao việc cho người có tài. Dùng đúng người là cách làm lớn hơn cố tự xử hết mọi việc.",
-          "citationIds": ["citation-pbc-q19-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [219, 220],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-19-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho trí của người đứng đầu ở chỗ biết nhận và dùng hào hai trung chính. Sự sáng suốt ấy giúp hợp nhiều tài, vượt sức biết của một người.",
-          "citationIds": ["citation-ntt-q19-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [367, 368],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -259,30 +352,43 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-19-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào cuối mềm thuận, thật lòng theo hai hào dương và giúp người khác theo điều tốt. Lời tốt ở đức dày ấy dù không có cặp ứng riêng với hai hào dương.",
-          "citationIds": ["citation-nhl-q19-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [196, 196],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["196", "196"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-19-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc đôn lâm theo lòng dày và thành thật của hào cuối hướng về người có đức. Trường hợp tốt ở cuối Lâm không làm mọi cực điểm của quẻ đều tốt.",
-          "citationIds": ["citation-pbc-q19-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [220, 221],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-19-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào cuối không có quan hệ ứng riêng với hai hào dương nhưng vẫn trọng họ vì đức. Mềm thuận và thật lòng đến gần là điều kiện tốt, khác theo người chỉ vì tư lợi.",
-          "citationIds": ["citation-ntt-q19-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [368, 369],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -291,98 +397,115 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-nhl-lam-earth-count",
-      "status": "resolved",
-      "description": "NHL PDF 194 nói Khôn có năm hào âm trước khi một rồi hai hào dương thay vào.",
-      "citationIds": ["citation-nhl-q19-overview-nhl", "citation-pbc-q19-overview-pbc"],
-      "resolution": "Ảnh PDF 194 xác nhận số năm. Khôn có sáu hào âm; hình Lâm ở hai sách có hai dương dưới và bốn âm trên. Giữ hình quẻ đã đối chiếu, không dùng phép đếm sai trong đoạn."
+      "text": "NHL PDF 194 nói Khôn có năm hào âm trước khi một rồi hai hào dương thay vào. Ảnh PDF 194 xác nhận số năm. Khôn có sáu hào âm; hình Lâm ở hai sách có hai dương dưới và bốn âm trên. Giữ hình quẻ đã đối chiếu, không dùng phép đếm sai trong đoạn.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [194, 194],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["194", "194"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [214, 216],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-pbc-lam-yin-count",
-      "status": "resolved",
-      "description": "PBC PDF 217 có câu hai dương lâm bức một âm, khác câu sau và hình Lâm.",
-      "citationIds": [
-        "citation-pbc-q19-line-2-pbc",
-        "citation-pbc-q19-overview-pbc",
-        "citation-nhl-q19-overview-nhl"
-      ],
-      "resolution": "Ảnh PDF 217 phần sau cùng trang nói bốn âm; hình Lâm PDF 214 cũng có bốn âm. Giữ hai dương và bốn âm, không dùng số một làm cấu trúc."
+      "text": "PBC PDF 217 có câu hai dương lâm bức một âm, khác câu sau và hình Lâm. Ảnh PDF 217 phần sau cùng trang nói bốn âm; hình Lâm PDF 214 cũng có bốn âm. Giữ hai dương và bốn âm, không dùng số một làm cấu trúc.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [217, 218],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [214, 216],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [194, 194],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["194", "194"]
+        }
+      ]
     },
     {
-      "id": "discrepancy-pbc-lam-third-negation",
-      "status": "resolved",
-      "description": "PBC PDF 219 nói tội lỗi cũng đến nỗi lớn sau khi đã lo sửa, trái lời không lỗi và ý không kéo dài.",
-      "citationIds": [
-        "citation-pbc-q19-line-3-pbc",
-        "citation-nhl-q19-line-3-nhl",
-        "citation-ntt-q19-line-3-ntt"
-      ],
-      "resolution": "Ảnh PDF 219 xác nhận thiếu phủ định trong câu tiếng Việt. Lời hào và đoạn PDF 218, chữ bất trường cùng hai sách khác đều giải lo sửa thì lỗi không kéo dài; giữ nghĩa có điều kiện ấy."
+      "text": "PBC PDF 219 nói tội lỗi cũng đến nỗi lớn sau khi đã lo sửa, trái lời không lỗi và ý không kéo dài. Ảnh PDF 219 xác nhận thiếu phủ định trong câu tiếng Việt. Lời hào và đoạn PDF 218, chữ bất trường cùng hai sách khác đều giải lo sửa thì lỗi không kéo dài; giữ nghĩa có điều kiện ấy.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [218, 219],
+          "section": "Hào 3 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [195, 195],
+          "section": "Hào 3 — diễn giải",
+          "printedPages": ["195", "195"]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [365, 366],
+          "section": "Hào 3 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-lam-earth-image",
-      "status": "resolved",
-      "description": "NTT PDF 359 nói trên chằm có nước tạo Lâm, dù trước đó gọi đất trên chằm.",
-      "citationIds": [
-        "citation-ntt-q19-overview-ntt",
-        "citation-nhl-q19-overview-nhl",
-        "citation-pbc-q19-overview-pbc"
-      ],
-      "resolution": "Ảnh PDF 359 xác nhận chỗ không khớp. Tiêu đề, đoạn trước và lời Tượng PDF 361–362 đều cho đất trên chằm; giữ ngoại Khôn, nội Đoài."
+      "text": "NTT PDF 359 nói trên chằm có nước tạo Lâm, dù trước đó gọi đất trên chằm. Ảnh PDF 359 xác nhận chỗ không khớp. Tiêu đề, đoạn trước và lời Tượng PDF 361–362 đều cho đất trên chằm; giữ ngoại Khôn, nội Đoài.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [359, 362],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [194, 194],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["194", "194"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [214, 216],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-lam-return-polarity",
-      "status": "resolved",
-      "description": "NTT PDF 360 phần Chu Hy gọi Phục có một khí âm, khác đoạn tính tám tháng sau đó.",
-      "citationIds": [
-        "citation-ntt-q19-overview-ntt",
-        "citation-ntt-q19-overview-chu-hy",
-        "citation-pbc-q19-overview-pbc"
-      ],
-      "resolution": "Ảnh PDF 360 xác nhận chữ âm. Trình Di PDF 361 và PBC PDF 215 đều xác định dương bắt đầu ở Phục rồi tăng thành Lâm. Giữ nghĩa một dương của Phục khi mô tả cách đếm, không tự tính lịch."
+      "text": "NTT PDF 360 phần Chu Hy gọi Phục có một khí âm, khác đoạn tính tám tháng sau đó. Ảnh PDF 360 xác nhận chữ âm. Trình Di PDF 361 và PBC PDF 215 đều xác định dương bắt đầu ở Phục rồi tăng thành Lâm. Giữ nghĩa một dương của Phục khi mô tả cách đếm, không tự tính lịch.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [359, 362],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [360, 360],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [214, 216],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-lam-first-label",
-      "status": "resolved",
-      "description": "NTT PDF 363 phần Tượng hào đầu gọi đối tượng là hào Hai.",
-      "citationIds": ["citation-ntt-q19-line-1-ntt"],
-      "resolution": "Ảnh PDF 363 xác nhận tên Hai; câu giải dương ở ngôi lẻ và ứng hào bốn thuộc hào đầu PDF 362. Giữ lời giải ở vị một, không gán quan hệ ứng bốn cho hào hai."
+      "text": "NTT PDF 363 phần Tượng hào đầu gọi đối tượng là hào Hai. Ảnh PDF 363 xác nhận tên Hai; câu giải dương ở ngôi lẻ và ứng hào bốn thuộc hào đầu PDF 362. Giữ lời giải ở vị một, không gán quan hệ ứng bốn cho hào hai.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [362, 363],
+          "section": "Hào 1 — diễn giải"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q19-overview-nhl",
-      "citation-pbc-q19-overview-pbc",
-      "citation-ntt-q19-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q19-overview-chu-hy",
-      "citation-nhl-q19-line-1-nhl",
-      "citation-pbc-q19-line-1-pbc",
-      "citation-ntt-q19-line-1-ntt",
-      "citation-nhl-q19-line-2-nhl",
-      "citation-pbc-q19-line-2-pbc",
-      "citation-ntt-q19-line-2-ntt",
-      "citation-ntt-q19-line-2-chu-hy",
-      "citation-nhl-q19-line-3-nhl",
-      "citation-pbc-q19-line-3-pbc",
-      "citation-ntt-q19-line-3-ntt",
-      "citation-nhl-q19-line-4-nhl",
-      "citation-pbc-q19-line-4-pbc",
-      "citation-ntt-q19-line-4-ntt",
-      "citation-nhl-q19-line-5-nhl",
-      "citation-pbc-q19-line-5-pbc",
-      "citation-ntt-q19-line-5-ntt",
-      "citation-nhl-q19-line-6-nhl",
-      "citation-pbc-q19-line-6-pbc",
-      "citation-ntt-q19-line-6-ntt"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép được ghi nhận. Các cách đọc khác nhau và chỗ tác giả chưa xác định được giữ riêng. Nhãn trang NHL được kiểm tra trên PDF; không chứng nhận toàn bộ sách, giả thuyết lịch sử hoặc phép tính lịch, chưa có xác nhận của chuyên gia độc lập."
-  }
+  ]
 }

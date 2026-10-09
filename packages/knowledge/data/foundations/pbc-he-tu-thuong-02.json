@@ -1,304 +1,131 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-thuong-02",
   "type": "article",
   "title": "PBC — Hệ Từ Thượng, chương 2",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Lập quẻ/xem tượng/hệ từ để rõ cát hung.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-01-original-reading"],
+      "text": "Lập quẻ/xem tượng/hệ từ để rõ cát hung.\n\nCương nhu đẩy nhau sinh biến hóa.\n\nCát hung/đắc thất và hối lận/ưu ngu.\n\nBiến/tấn thối, cương nhu/trú dạ.\n\nSáu hào động là tam cực.\n\nQuân tử an nhờ Dịch tự, vui ngoạn hào từ.\n\nTĩnh quan tượng/từ, động quan biến/chiêm và hựu.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [605, 605],
+          "section": "section-01-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-02-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-03-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-04-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-05-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-06-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-07-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "PBC giải lời gắn dưới quẻ/hào.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-01-translation"],
+      "text": "PBC giải lời gắn dưới quẻ/hào.\n\nTiết1 thuộc chương2 ngay605, không phần kết chương1.\n\nPBC đọc âm dương hữu hình ở quái hào chuyển nhau.\n\nKhông thêm quy tắc máy ngoài văn.\n\nPBC hiểu hối/lận là lúc chưa hẳn hung/cát, biết hối thì chuyển.\n\nÔng tả chuỗi lận→hung→hối→cát; chỉ diễn nghĩa cổ, không thuật toán kết luận.\n\nPBC phân nhu thành cương là tiến, cương thành nhu là thoái.\n\nVí dụ nửa đêm Tý/nửa ngày Ngọ là diễn thuyết của PBC, không kích hoạt lịch.\n\nPBC phân sơ/nhị đất, tam/tứ người, ngũ/thượng trời.\n\nMỗi tài đủ một lý cực; riêng tiết5, không tự buộc số tiết khớp NHL.\n\nPBC hiểu thứ tự quẻ bằng Thái/Bĩ,Bác/Phục, rồi thứ tự sáu hào Càn.\n\nCách hiểu danh mục/thứ tự khác NHL thiên về trình tự đạo Dịch; vẫn giữ cả hai.\n\nPBC tách cư lúc tổng động tĩnh ở trên với cư đối động ở đây.\n\nÔng nối tu dưỡng và ứng thời với trợ giúp trời như lời nguồn, không bảo đảm dự đoán.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [605, 605],
+          "section": "section-01-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [605, 605],
+          "section": "section-01-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-02-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-02-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-03-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-03-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-04-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [606, 606],
+          "section": "section-04-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-05-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-05-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-06-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 607],
+          "section": "section-06-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 608],
+          "section": "section-07-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [607, 608],
+          "section": "section-07-commentary — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-01-commentary",
-      "kind": "author-interpretation",
-      "text": "Tiết1 thuộc chương2 ngay605, không phần kết chương1.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-01-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Cương nhu đẩy nhau sinh biến hóa.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-02-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "PBC đọc âm dương hữu hình ở quái hào chuyển nhau.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-02-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-02-commentary",
-      "kind": "author-interpretation",
-      "text": "Không thêm quy tắc máy ngoài văn.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-02-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-03-original-reading",
-      "kind": "author-interpretation",
-      "text": "Cát hung/đắc thất và hối lận/ưu ngu.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-03-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-03-translation",
-      "kind": "author-interpretation",
-      "text": "PBC hiểu hối/lận là lúc chưa hẳn hung/cát, biết hối thì chuyển.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-03-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-03-commentary",
-      "kind": "author-interpretation",
-      "text": "Ông tả chuỗi lận→hung→hối→cát; chỉ diễn nghĩa cổ, không thuật toán kết luận.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-03-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Biến/tấn thối, cương nhu/trú dạ.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-04-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-04-translation",
-      "kind": "author-interpretation",
-      "text": "PBC phân nhu thành cương là tiến, cương thành nhu là thoái.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-04-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-04-commentary",
-      "kind": "author-interpretation",
-      "text": "Ví dụ nửa đêm Tý/nửa ngày Ngọ là diễn thuyết của PBC, không kích hoạt lịch.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-04-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-05-original-reading",
-      "kind": "author-interpretation",
-      "text": "Sáu hào động là tam cực.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-05-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-05-translation",
-      "kind": "author-interpretation",
-      "text": "PBC phân sơ/nhị đất, tam/tứ người, ngũ/thượng trời.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-05-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-05-commentary",
-      "kind": "author-interpretation",
-      "text": "Mỗi tài đủ một lý cực; riêng tiết5, không tự buộc số tiết khớp NHL.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-05-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-06-original-reading",
-      "kind": "author-interpretation",
-      "text": "Quân tử an nhờ Dịch tự, vui ngoạn hào từ.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-06-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-06-translation",
-      "kind": "author-interpretation",
-      "text": "PBC hiểu thứ tự quẻ bằng Thái/Bĩ,Bác/Phục, rồi thứ tự sáu hào Càn.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-06-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-06-commentary",
-      "kind": "author-interpretation",
-      "text": "Cách hiểu danh mục/thứ tự khác NHL thiên về trình tự đạo Dịch; vẫn giữ cả hai.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-06-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-07-original-reading",
-      "kind": "author-interpretation",
-      "text": "Tĩnh quan tượng/từ, động quan biến/chiêm và hựu.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-07-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-07-translation",
-      "kind": "author-interpretation",
-      "text": "PBC tách cư lúc tổng động tĩnh ở trên với cư đối động ở đây.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-07-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-02-pbc-he-tu-shang-02-section-07-commentary",
-      "kind": "author-interpretation",
-      "text": "Ông nối tu dưỡng và ứng thời với trợ giúp trời như lời nguồn, không bảo đảm dự đoán.",
-      "citationIds": ["citation-pbc-he-tu-shang-02-section-07-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-shang-02-section-01-original-reading",
-      "citation-pbc-he-tu-shang-02-section-01-translation",
-      "citation-pbc-he-tu-shang-02-section-01-commentary",
-      "citation-pbc-he-tu-shang-02-section-02-original-reading",
-      "citation-pbc-he-tu-shang-02-section-02-translation",
-      "citation-pbc-he-tu-shang-02-section-02-commentary",
-      "citation-pbc-he-tu-shang-02-section-03-original-reading",
-      "citation-pbc-he-tu-shang-02-section-03-translation",
-      "citation-pbc-he-tu-shang-02-section-03-commentary",
-      "citation-pbc-he-tu-shang-02-section-04-original-reading",
-      "citation-pbc-he-tu-shang-02-section-04-translation",
-      "citation-pbc-he-tu-shang-02-section-04-commentary",
-      "citation-pbc-he-tu-shang-02-section-05-original-reading",
-      "citation-pbc-he-tu-shang-02-section-05-translation",
-      "citation-pbc-he-tu-shang-02-section-05-commentary",
-      "citation-pbc-he-tu-shang-02-section-06-original-reading",
-      "citation-pbc-he-tu-shang-02-section-06-translation",
-      "citation-pbc-he-tu-shang-02-section-06-commentary",
-      "citation-pbc-he-tu-shang-02-section-07-original-reading",
-      "citation-pbc-he-tu-shang-02-section-07-translation",
-      "citation-pbc-he-tu-shang-02-section-07-commentary"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

@@ -82,7 +82,7 @@ update is performed by this worker.
    Eleven new article owners have208 new claim-specific citations/claims,
    with213 child dispositions including five reused selections. All chapters,
    sections, diagram/quotation/example clusters and non-content units are mapped
-   in the [passage register](../docs/reviews/knowledge/source-inventory.md#feat-059-nhl-introduction-and-framing-passage-register).
+   in the [passage register](../docs/reviews/knowledge/README.md).
    The registry retains unresolved discovery/audit obligations;52→53 is its
    revision change, not audit approval. The existing Hệ Từ Hạ12 projection is
    reconciled from386-only to386–388 without adding out-of-scope content.

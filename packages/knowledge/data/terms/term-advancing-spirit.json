@@ -1,41 +1,38 @@
 {
-  "schemaVersion": 1,
   "id": "term-advancing-spirit",
   "type": "term",
   "title": "Tiến thần",
   "aliases": ["Tấn thần"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["article-advancing-retreating-spirits", "rule-moving-line-change"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-advancing-spirit-definition",
-      "kind": "author-interpretation",
       "text": "Tiến thần gọi một hướng biến của hào động sang chi cùng hành trong cách luận truyền thống. Mục 17 nói cả mặt tốt và mặt xấu đều có thể tăng sức; tên Tiến không tự mang kết luận có lợi cho việc hỏi.",
-      "citationIds": [
-        "citation-bpct-ch5-advancing-retreating-spirits",
-        "citation-bpct-ch6-same-element-transition",
-        "citation-bpct-part2-advance-retreat-conditions"
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [73, 73],
+          "section": "Mục 17 — biến Tiến thần và biến Thoái thần",
+          "printedPages": ["61", "61"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [92, 93],
+          "section": "Câu 52 — động biến cùng hành, Tiến và Thoái",
+          "printedPages": ["78", "79"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [388, 388],
+          "section": "Câu hỏi 10 — ba phép Tiến, ba phép Thoái",
+          "printedPages": ["341", "341"]
+        }
       ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       }
     }
-  ],
-  "relatedIds": ["article-advancing-retreating-spirits", "rule-moving-line-change"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-advancing-retreating-spirits",
-      "citation-bpct-ch6-same-element-transition",
-      "citation-bpct-part2-advance-retreat-conditions"
-    ],
-    "note": "Đã đọc toàn bộ mục 17–18 PDF 73–74, câu 52 PDF 92–93 và câu hỏi 10 PDF 388–389; đối chiếu mục 4 PDF 68 về sức Nguyên thần. Xem ảnh các trang được chọn và kiểm tra nhãn trang in. Phần sau dấu phân cách PDF 74 không được gán cho chính văn mục 18. Chỉ chọn điều kiện và bối cảnh của nguồn, chưa xác nhận chuyện ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

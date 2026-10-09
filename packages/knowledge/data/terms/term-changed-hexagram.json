@@ -1,37 +1,20 @@
 {
-  "schemaVersion": 2,
   "id": "term-changed-hexagram",
   "type": "term",
   "title": "Quẻ biến",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "applicableRuleIds": ["rule-moving-line-change", "rule-trigram-composition"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-changed-hexagram-definition",
-      "kind": "project-convention",
       "text": "Quẻ tạo ra khi đổi tính âm dương của từng hào động; không có quẻ biến nếu không có hào động.",
-      "citationIds": [],
-      "projectEvidence": [
+      "references": [
         {
           "documentPath": "docs/design-docs/calculation-pipeline.md",
-          "section": "## Changed hexagram",
-          "revision": "v1"
+          "section": "## Changed hexagram"
         }
-      ]
+      ],
+      "id": "definition"
     }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceClaimIds": ["term-changed-hexagram-definition"],
-    "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "applicableRuleIds": ["rule-moving-line-change", "rule-trigram-composition"]
+  ]
 }

@@ -57,24 +57,32 @@ Check at least:
 - offline direct route reload;
 - update while a reading draft exists.
 
-## Intended knowledge scale and updates
+## Knowledge delivery
 
-Released snapshot → measured assets and local queries → cached routes → user-accepted snapshot update.
+**Observed:** The browser uses small metadata and separate JSON record assets. Workbox precaches ready content during installation.
 
-These checks extend the existing PWA contract; they have not been implemented for the expanded corpus.
+- Keep calculation data and compact V1 reference lookup available at startup.
+- Load a selected quẻ or article as its own JSON asset.
+- Keep the metadata index small; do not include every paragraph in list or search data.
+- Precache ready record assets, references, and required images in the background.
+- Include JSON in the service worker asset rules.
+- After the complete offline set is cached, the full published library works without a network.
+- If asset retrieval stops early, retain cached content and retry incomplete assets online.
+- Preserve the existing user-accepted update flow and reading-draft protection.
+- Use deployment asset versions and the normal service worker cache; do not add a semantic hash graph.
 
-- Freeze numerical budgets and test devices before changing the knowledge loading strategy.
-- Measure raw/compressed payload, precache size, storage, cold loading, query latency, and peak memory.
-- Check actual released builds and separately labelled volume fixtures covering all inventoried groups, 64 quẻ, and 384 positions.
-- Keep synthetic volume content outside released knowledge and source-review evidence.
-- Enforce asset budgets mechanically; check runtime budgets on the recorded devices and browsers.
-- Verify all required knowledge assets are cached after one successful online load, including assets introduced by split loading.
-- Keep displayed content, citations, review metadata, and snapshot identity from the same immutable release.
-- Test two-version updates, interrupted asset retrieval, and rollback without mixing snapshots.
-- Preserve the existing draft-safe update acceptance flow.
-- Show the active snapshot identity offline in diagnostics.
+Split assets reduce startup parsing and allow focused loading. They do not reduce the total full-library offline download automatically.
+The browser receives authored explanations and relevant bibliography, not source PDFs, audit ledgers, or reviewer histories.
 
-Repeat budget and offline checks when corpus size, schema, assets, or loading behavior changes.
-Before claiming full-volume delivery, test the actual complete authored snapshot; fixture results do not establish that claim.
-The [knowledge model](knowledge-model.md#intended-snapshot-identity) owns snapshot identity.
-The [release contract](../release.md) owns browser versions, hosting rollback, and production evidence.
+## Payload verification
+
+Measure the actual production build after knowledge or loading changes:
+
+- raw and gzip bytes for the initial JavaScript, metadata, and largest record;
+- total precached asset bytes and complete offline cache contents;
+- cold startup, record opening, local search, and memory on a representative browser.
+
+Keep detailed corpus data out of the initial JavaScript bundle.
+Use one meaningful corpus/build check instead of a synthetic certification or snapshot approval framework.
+Check direct offline routes and interrupted retrieval before claiming offline delivery.
+The [knowledge model](knowledge-model.md#generated-files) owns generated output and package access.

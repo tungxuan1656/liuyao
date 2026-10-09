@@ -1,4 +1,4 @@
-# feat-091 — Audit BPCT questions Hà Tri casting supplements and criticisms
+# feat-091 — Review and improve BPCT questions Hà Tri casting supplements and criticisms
 
 ## Goal
 
@@ -8,7 +8,7 @@ Record current evidence for every assigned review unit.
 
 **Intended work:**
 
-- Intended group ledgers under docs/reviews/knowledge/; enumerate every assigned inventory unit.
+- Review the assigned concepts, examples, and tables; record material content findings.
 
 ## Non-goals
 
@@ -25,7 +25,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] All eleven Tinh Sát sections.
 - [ ] All fifteen criticisms and closing pages.
 - [ ] Each numbered unit needs a separate decision; preserve objections and their target authors.
-- [ ] Decisions have current hashes, exact locators, findings, and reviewer identity; rejected units stay open.
+- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -36,8 +36,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Create the complete unit checklist for this group.
-2. Review and commit each section/table checkpoint with current hashes and findings.
+1. Identify the useful explanations and tables in this group.
+2. Review each section/table and record its material content findings.
 3. Verify all unit decisions and close only after rejected units are repaired.
 
 ## Verify

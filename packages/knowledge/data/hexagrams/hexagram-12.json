@@ -1,137 +1,140 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-12",
   "type": "hexagram",
   "title": "Thiên Địa Bĩ",
   "aliases": ["Bĩ"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-earth", "trigram-heaven"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-12-structure",
-      "kind": "structural-fact",
       "text": "Thiên Địa Bĩ có ngoại quái Càn và nội quái Khôn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q12-overview-nhl",
-        "citation-pbc-q12-overview-pbc",
-        "citation-ntt-q12-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [173, 173],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["173", "173"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [154, 157],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [273, 275],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-12-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê xem Bĩ là bế tắc do trên dưới không thông nhau, trái với Thái. Người giữ đạo nên thu đức và tránh chạy theo lợi lộc; cách xử còn tùy lúc có cơ hội làm việc trở lại.",
-      "citationIds": ["citation-nhl-q12-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [173, 173],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["173", "173"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-12-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu giải Bĩ theo sự cách tuyệt giữa trên dưới khiến đạo người không thi hành được. Giữ mình và chờ cơ hội khác với buông xuôi; ông phân biệt lúc bế tắc đã nặng với khó khăn mới khởi như Truân.",
-      "citationIds": ["citation-pbc-q12-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [154, 157],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-12-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di đặt Bĩ trong thế hai phía không giao thông, người giữ đạo bị đẩy ra ngoài. Thu đức để tránh nạn và không coi lộc vị là vinh giúp giữ sự chính đáng khi chưa thể tiến.",
-      "citationIds": ["citation-ntt-q12-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [273, 275],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-earth", "trigram-heaven"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q12-overview-nhl",
-      "citation-pbc-q12-overview-pbc",
-      "citation-ntt-q12-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-q12-line-1-nhl",
-      "citation-pbc-q12-line-1-pbc",
-      "citation-ntt-q12-line-1-ntt",
-      "citation-ntt-q12-line-1-chu-hy",
-      "citation-nhl-q12-line-2-nhl",
-      "citation-pbc-q12-line-2-pbc",
-      "citation-ntt-q12-line-2-ntt",
-      "citation-nhl-q12-line-3-nhl",
-      "citation-pbc-q12-line-3-pbc",
-      "citation-ntt-q12-line-3-ntt",
-      "citation-nhl-q12-line-4-nhl",
-      "citation-pbc-q12-line-4-pbc",
-      "citation-ntt-q12-line-4-ntt",
-      "citation-ntt-q12-line-4-chu-hy",
-      "citation-nhl-q12-line-5-nhl",
-      "citation-pbc-q12-line-5-pbc",
-      "citation-ntt-q12-line-5-ntt",
-      "citation-nhl-q12-line-6-nhl",
-      "citation-pbc-q12-line-6-pbc",
-      "citation-ntt-q12-line-6-ntt",
-      "citation-pbc-q12-count-endnote"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép. Các cách đọc Trình Di, Chu Hy và hai tác giả Việt Nam được giữ riêng khi có khác biệt. Bộ dữ liệu chọn các diễn giải, không chứng nhận toàn bộ chú giải hoặc giả thuyết lịch sử; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yin", "yang", "yang", "yang"],
-    "kingWenNumber": 12,
-    "upperTrigramId": "trigram-heaven",
-    "lowerTrigramId": "trigram-earth",
-    "claimIds": ["hexagram-12-structure"]
-  },
+  "kingWenNumber": 12,
+  "upperTrigramId": "trigram-heaven",
+  "lowerTrigramId": "trigram-earth",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-12-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho nhóm yếu ở đầu thời Bĩ còn có thể chuyển sang đường chính. Dắt nhau nhưng giữ chính mới tốt, khác lời cùng tiến ở đầu quẻ Thái.",
-          "citationIds": ["citation-nhl-q12-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [173, 174],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["173", "174"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-12-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào đầu như người mới ra đời còn có thể bỏ tà tâm. Lời hào khuyên nhóm cùng theo đường chính và hướng tới người đáng theo, thay vì kết bè phá điều tốt.",
-          "citationIds": ["citation-pbc-q12-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [157, 158],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-12-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào đầu theo người quân tử ở dưới cùng đồng loại giữ tiết tháo. Giữ đạo để chờ lúc có thể giúp đời, không tiến theo lợi riêng trong cảnh bế tắc.",
-          "citationIds": ["citation-ntt-q12-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [275, 277],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-12-line-1-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc hào đầu như người nhỏ mà điều xấu chưa hình thành, còn có thể giữ chính để thành quân tử. Ông không đồng ý cách Trình Di lấy hào này ngay làm người quân tử tự giữ ở dưới.",
-          "citationIds": ["citation-ntt-q12-line-1-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [276, 277],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -143,30 +146,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-12-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho người nhỏ biết thuận người có đức thì tốt cho mình. Người lớn vẫn cần giữ phẩm cách trong cảnh khó, không vì được đón nhận mà nhập vào phe sai đạo.",
-          "citationIds": ["citation-nhl-q12-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [174, 174],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["174", "174"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-12-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu phân biệt việc người nhỏ cầu thuận để có lợi với đạo của người lớn. Giữ cảnh cùng nhưng không hòa vào nhóm trái đạo thì thân có thể bế tắc mà đạo vẫn thông.",
-          "citationIds": ["citation-pbc-q12-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [158, 159],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-12-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho người nhỏ vâng thuận để cầu lợi, còn người lớn không nên cong đạo để được yên. Tự giữ chính tiết trong cảnh khó khiến đạo vẫn thông dù bản thân chưa thuận.",
-          "citationIds": ["citation-ntt-q12-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [277, 278],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -178,30 +194,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-12-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào ba yếu, thiếu trung chính mà đứng trên nhóm yếu là chỗ đáng xấu hổ. Tài và cách giữ mình không phù hợp với vị khiến việc thêm bế tắc.",
-          "citationIds": ["citation-nhl-q12-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [174, 174],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["174", "174"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-12-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt sự xấu hổ ở người yếu chí, thiếu trung chính trong hoàn cảnh xấu. Ông nhấn mạnh vị và thời có thể đẩy người thiếu vững vàng sang hành vi trái đạo.",
-          "citationIds": ["citation-pbc-q12-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [159, 159],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-12-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào ba không giữ đạo, thiếu trung chính mà gần người trên. Những mưu tính cong queo trong cảnh ấy là điều đáng thẹn; vị không đáng phản ánh cách làm không theo đạo.",
-          "citationIds": ["citation-ntt-q12-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [278, 279],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -213,40 +242,57 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-12-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc “mệnh” theo thời vận khi Bĩ đã quá nửa. Người có tài hành động đúng cơ hội và tránh lỗi thì các bạn cùng chí cũng được hưởng kết quả.",
-          "citationIds": ["citation-nhl-q12-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [174, 174],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["174", "174"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-12-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem “mệnh” là cơ hội và thời vận để người cương có thể xoay tình thế. Đúng lúc mới tiến, còn phải tránh lỗi để người cùng chí cùng được phúc.",
-          "citationIds": ["citation-pbc-q12-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [160, 160],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-12-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc “mệnh” là mệnh vua: người gần ngôi cao không nên tự cậy công và quyền. Làm theo sự giao phó, giữ uy quyền ở người trên mới tránh lỗi và thực hiện được chí vượt Bĩ.",
-          "citationIds": ["citation-ntt-q12-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [279, 280],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-12-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc “mệnh” là mệnh trời khi Bĩ đã quá giữa và sắp thông. Người cương ở vị mềm không dùng sức quá mức; cách giải này khác mệnh vua của Trình Di.",
-          "citationIds": ["citation-ntt-q12-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [280, 280],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -258,30 +304,43 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-12-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem người cương trung chính ở ngôi cao có thể chấm dứt bế tắc. Vẫn phải nhớ nguy cơ mất và gốc dâu bền như lời răn phòng họa trong lúc đang phục hồi.",
-          "citationIds": ["citation-nhl-q12-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [174, 175],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["174", "175"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-12-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt khả năng dừng Bĩ ở người đủ tài đức và có ngôi, gặp lúc gần đổi thời. Chưa ra hẳn cảnh Bĩ nên vẫn phải nghĩ xa, phòng mất và làm nền tảng vững.",
-          "citationIds": ["citation-pbc-q12-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [160, 161],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-12-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào năm có đức và ngôi để dần đưa bế tắc về thông thuận. Sự phục hồi chưa đồng nghĩa đã yên; cần thường tự cảnh tỉnh và củng cố nền tảng để Bĩ không trở lại.",
-          "citationIds": ["citation-ntt-q12-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [280, 282],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -293,30 +352,43 @@
       "position": 6,
       "polarity": "yang",
       "label": "Thượng cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-12-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải hào cuối theo người có sức cương, cùng các hào bốn và năm đánh đổ bế tắc. Trước lo, sau vui phụ thuộc việc biết dùng tài và đúng thời.",
-          "citationIds": ["citation-nhl-q12-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [175, 175],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["175", "175"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-12-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào cuối gặp lúc Bĩ đã cực nhưng vẫn phải có tài cương và người cùng giúp mới xoay được. Ông nhắc chuẩn bị từ hào bốn, không chờ ngồi nhìn sự đổi thời.",
-          "citationIds": ["citation-pbc-q12-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [161, 162],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-12-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải Bĩ tới cuối phải đổi nhưng việc chuyển nguy thành yên còn cần tài cương. Vì thế hào cuối Bĩ có thể làm nghiêng bế tắc, khác hào cuối Truân thiếu sức đổi cảnh.",
-          "citationIds": ["citation-ntt-q12-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [282, 283],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -325,41 +397,74 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-ntt-bi-negation",
-      "status": "resolved",
-      "description": "NTT PDF 273 và phần dịch nghĩa PDF 274 có câu trời đất giao nhau trong đoạn giải Bĩ, trái lời phủ định ở các phần kế cận.",
-      "citationIds": [
-        "citation-ntt-q12-overview-ntt",
-        "citation-nhl-q12-overview-nhl",
-        "citation-pbc-q12-overview-pbc"
-      ],
-      "resolution": "Cùng PDF 273 phân biệt giao nhau là Thái với cách tuyệt là Bĩ. Phiên âm PDF 274, lời giảng PDF 274–275 và hai sách khác xác định Bĩ là không giao; bản tóm tắt giữ sự bế tắc ấy."
+      "text": "NTT PDF 273 và phần dịch nghĩa PDF 274 có câu trời đất giao nhau trong đoạn giải Bĩ, trái lời phủ định ở các phần kế cận. Cùng PDF 273 phân biệt giao nhau là Thái với cách tuyệt là Bĩ. Phiên âm PDF 274, lời giảng PDF 274–275 và hai sách khác xác định Bĩ là không giao; bản tóm tắt giữ sự bế tắc ấy.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [273, 275],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [173, 173],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["173", "173"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [154, 157],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-bi-inner-lines",
-      "status": "resolved",
-      "description": "NTT PDF 276 ghi ba hào âm quẻ Bĩ ở trên trong lời Trình Di giảng hào đầu.",
-      "citationIds": [
-        "citation-ntt-q12-line-1-ntt",
-        "citation-ntt-q12-overview-ntt",
-        "citation-nhl-q12-overview-nhl"
-      ],
-      "resolution": "Ảnh cấu trúc NHL PDF 173 và tiêu đề NTT PDF 273 cho Khôn dưới, Càn trên. Chu Hy ngay PDF 276 cũng ghi ba âm ở dưới; giữ ba âm ở quẻ dưới."
+      "text": "NTT PDF 276 ghi ba hào âm quẻ Bĩ ở trên trong lời Trình Di giảng hào đầu. Ảnh cấu trúc NHL PDF 173 và tiêu đề NTT PDF 273 cho Khôn dưới, Càn trên. Chu Hy ngay PDF 276 cũng ghi ba âm ở dưới; giữ ba âm ở quẻ dưới.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [275, 277],
+          "section": "Hào 1 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [273, 275],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [173, 173],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["173", "173"]
+        }
+      ]
     },
     {
-      "id": "discrepancy-pbc-bi-outer-count",
-      "status": "resolved",
-      "description": "PBC PDF 160 ghi ngoại Tứ dương; chú thích 13 ở PDF 655 cho rằng ngoại Tam trong sách in là sai.",
-      "citationIds": [
-        "citation-pbc-q12-line-4-pbc",
-        "citation-pbc-q12-overview-pbc",
-        "citation-pbc-q12-count-endnote",
-        "citation-nhl-q12-overview-nhl"
-      ],
-      "resolution": "Ảnh cấu trúc PBC PDF 154 và lời giảng hào bốn trên PDF 160 chỉ có ba dương ở vị bốn, năm, sáu. Giữ số lượng ba; Tứ là vị của hào đang giảng, không phải số hào ngoại quái. Không nhận sửa chữa điện tử này làm bằng chứng cấu trúc."
+      "text": "PBC PDF 160 ghi ngoại Tứ dương; chú thích 13 ở PDF 655 cho rằng ngoại Tam trong sách in là sai. Ảnh cấu trúc PBC PDF 154 và lời giảng hào bốn trên PDF 160 chỉ có ba dương ở vị bốn, năm, sáu. Giữ số lượng ba; Tứ là vị của hào đang giảng, không phải số hào ngoại quái. Không nhận sửa chữa điện tử này làm bằng chứng cấu trúc.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [160, 160],
+          "section": "Hào 4 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [154, 157],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [655, 655],
+          "section": "Chú thích 13 — số hào ngoại quái Bĩ"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [173, 173],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["173", "173"]
+        }
+      ]
     }
   ]
 }

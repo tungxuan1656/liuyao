@@ -1,37 +1,34 @@
 {
-  "schemaVersion": 1,
   "id": "rule-branch-element",
   "type": "rule",
   "title": "Ngũ hành gắn với địa chi",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
-    {
-      "id": "rule-branch-element-claim",
-      "kind": "calculation-rule",
-      "text": "Ngũ hành của hào được xác định theo địa chi: Tý, Hợi thuộc Thủy; Dần, Mão thuộc Mộc; Tỵ, Ngọ thuộc Hỏa; Thân, Dậu thuộc Kim; Sửu, Thìn, Mùi, Tuất thuộc Thổ.",
-      "citationIds": ["citation-bpct-p8-technical", "citation-bpct-p14-technical"]
-    }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-bpct-p8-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "ruleset": "liuyao-standard-v1",
   "category": "classification",
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Ngũ hành của hào được xác định theo địa chi: Tý, Hợi thuộc Thủy; Dần, Mão thuộc Mộc; Tỵ, Ngọ thuộc Hỏa; Thân, Dậu thuộc Kim; Sửu, Thìn, Mùi, Tuất thuộc Thổ.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        }
+      ],
+      "id": "claim"
+    }
+  ],
   "tables": [
     {
       "kind": "branch-elements",
-      "claimIds": ["rule-branch-element-claim"],
       "rows": [
         {
           "branchId": "term-branch-zi",
@@ -80,6 +77,20 @@
         {
           "branchId": "term-branch-hai",
           "element": "water"
+        }
+      ],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
         }
       ]
     }

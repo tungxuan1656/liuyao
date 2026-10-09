@@ -1,125 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-origin-adverse-and-enemy-spirits",
   "type": "article",
   "title": "Điều kiện tác dụng của Nguyên, Kỵ và Cừu thần",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-origin-support",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự xét Dụng thần đang Không, Phá, suy hoặc ẩn mà được Nguyên thần động sinh, hay được Nhật thần hoặc Nguyệt kiến sinh. Trong cách luận của ông, cần đợi Dụng thần ra khỏi trạng thái cản trở và đến trị nhật mới xét thời điểm có tác dụng.",
-      "citationIds": ["citation-bpct-ch5-origin"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Phải có sự sinh trợ thực tế trong tình cảnh được nêu, không chỉ có tên Nguyên thần.",
-        "Các trạng thái lịch và thời điểm ứng chưa được tính trong sản phẩm."
-      ]
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-origin-disabled",
-      "kind": "author-interpretation",
-      "text": "Sách cảnh báo Nguyên thần chưa chắc giúp được: hưu tù mà bất động, động rồi hóa Mộ, Tuyệt, khắc, Phá hoặc Thoái, hay bị Nhật thần hoặc Nguyệt kiến chế khắc. Những trạng thái ấy làm mất khả năng sinh trợ dù Dụng thần đang vượng.",
-      "citationIds": ["citation-bpct-ch5-origin"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Phải xét động–tĩnh, sức hào và kết quả biến hóa; không đồng nhất mọi quan hệ sinh với trợ giúp hữu hiệu."
-      ]
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-direct-control",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự đặt trường hợp bị khắc khi Kỵ thần phát động, còn Dụng thần hiện ra và không lâm Không. Lời luận này có đủ điều kiện về động, hiện và Không; không chỉ dựa vào quan hệ khắc giữa hai hành.",
-      "citationIds": ["citation-bpct-ch5-adverse"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-redirected-generation",
-      "kind": "author-interpretation",
-      "text": "Nếu Nguyên thần động sinh Dụng thần, sách xét Kỵ thần chuyển sang sinh Nguyên thần thay vì khắc Dụng thần. Đây là tình thế riêng được gọi theo ý ham sinh mà quên khắc, không phải sự miễn khắc trong mọi quẻ.",
-      "citationIds": ["citation-bpct-ch5-adverse"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Điều kiện của đoạn là có Nguyên thần phát động sinh Dụng thần."]
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-temporary-avoidance",
-      "kind": "author-interpretation",
-      "text": "Với Kỵ thần độc phát, sách đọc Dụng thần lâm Không là tạm tránh nhờ Không, còn ẩn là tránh hung. Nhật thần hoặc Nguyệt kiến sinh Dụng thần được xem như cứu trợ; các tình thế này cần đối chiếu trường hợp Kỵ thần được tăng sức ở cùng mục.",
-      "citationIds": ["citation-bpct-ch5-adverse"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Không và phục tàng không tự bảo đảm tránh hại mãi."]
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-adverse-constrained",
-      "kind": "author-interpretation",
-      "text": "Sách xét Kỵ thần bị hồi đầu khắc, bị Nhật thần hoặc Nguyệt kiến khắc xung, hay bị hào động chế như sức gây hại đã bị ngăn trước. Cần giữ đúng tác nhân chế Kỵ thần trong từng trường hợp.",
-      "citationIds": ["citation-bpct-ch5-adverse"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-adverse-reinforced",
-      "kind": "author-interpretation",
-      "text": "Nếu Nhật thần hoặc Nguyệt kiến sinh phò Kỵ thần, hay có nhiều Kỵ thần cùng khắc, Vương Hồng Tự cảnh báo Dụng thần chỉ tạm tránh khi Không hoặc ẩn. Đến lúc xuất Không hoặc xuất lộ, sức khắc vẫn có thể gây hại trong cách luận này.",
-      "citationIds": ["citation-bpct-ch5-adverse"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Đối chiếu cả khả năng sinh trợ và chế ngự ở các đoạn trước; không rút một trạng thái riêng thành kết quả tất định."
-      ]
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-enemy-active",
-      "kind": "author-interpretation",
-      "text": "Trong tình thế Cừu thần phát động, Vương Hồng Tự luận Nguyên thần bị tổn và Kỵ thần được tăng sức, khiến Dụng thần mất nguồn sinh trợ. Đoạn này mô tả tác động của Cừu thần đang động, không chỉ sự tồn tại của một hào mang tên ấy.",
-      "citationIds": ["citation-bpct-ch5-enemy"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-matching-day",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao chú thích trị nhật là ngày có cùng địa chi với Dụng thần, dùng ví dụ hào Dần gặp Không đợi ngày Dần. Đây là lời giải từ người dịch cho thuật ngữ thời điểm trong đoạn Nguyên thần.",
-      "citationIds": ["citation-bpct-ch5-matching-day-note"],
-      "attribution": {
-        "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Giải nghĩa thuật ngữ; chưa cung cấp cách tính lịch hoặc dự đoán ngày xảy ra việc."
-      ]
-    },
-    {
-      "id": "article-origin-adverse-and-enemy-spirits-avoidance-notes",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao giải độc phát là chỉ Kỵ thần động một mình; Tị không là tránh nhờ Không, Tị hung là tránh điều hung. Các chú thích này giải từ cho đoạn Kỵ thần, cần đọc cùng những trường hợp cứu trợ và tăng sức của chính đoạn đó.",
-      "citationIds": ["citation-bpct-ch5-avoidance-notes"],
-      "attribution": {
-        "author": "Vĩnh Cao"
-      }
-    }
-  ],
   "relatedIds": [
     "term-useful-spirit",
     "term-origin-spirit",
@@ -127,22 +10,137 @@
     "term-enemy-spirit",
     "rule-five-element-cycles"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-origin",
-      "citation-bpct-ch5-adverse",
-      "citation-bpct-ch5-enemy",
-      "citation-bpct-ch5-matching-day-note",
-      "citation-bpct-ch5-avoidance-notes"
-    ],
-    "note": "Đã đọc đầy đủ Chương 5, mục 1–4 và các chú thích ở PDF 67–68, đối chiếu lời giới thiệu về tác giả và người dịch ở PDF 2–3. Đã xem ảnh trang và số trang in. Đây là diễn giải học thuật có điều kiện, không phải kết quả luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Vương Hồng Tự xét Dụng thần đang Không, Phá, suy hoặc ẩn mà được Nguyên thần động sinh, hay được Nhật thần hoặc Nguyệt kiến sinh. Trong cách luận của ông, cần đợi Dụng thần ra khỏi trạng thái cản trở và đến trị nhật mới xét thời điểm có tác dụng.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Nguyên thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Phải có sự sinh trợ thực tế trong tình cảnh được nêu, không chỉ có tên Nguyên thần.\nCác trạng thái lịch và thời điểm ứng chưa được tính trong sản phẩm."
+    },
+    {
+      "text": "Sách cảnh báo Nguyên thần chưa chắc giúp được: hưu tù mà bất động, động rồi hóa Mộ, Tuyệt, khắc, Phá hoặc Thoái, hay bị Nhật thần hoặc Nguyệt kiến chế khắc. Những trạng thái ấy làm mất khả năng sinh trợ dù Dụng thần đang vượng.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Nguyên thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Phải xét động–tĩnh, sức hào và kết quả biến hóa; không đồng nhất mọi quan hệ sinh với trợ giúp hữu hiệu."
+    },
+    {
+      "text": "Vương Hồng Tự đặt trường hợp bị khắc khi Kỵ thần phát động, còn Dụng thần hiện ra và không lâm Không. Lời luận này có đủ điều kiện về động, hiện và Không; không chỉ dựa vào quan hệ khắc giữa hai hành.\n\nSách xét Kỵ thần bị hồi đầu khắc, bị Nhật thần hoặc Nguyệt kiến khắc xung, hay bị hào động chế như sức gây hại đã bị ngăn trước. Cần giữ đúng tác nhân chế Kỵ thần trong từng trường hợp.\n\nTrong tình thế Cừu thần phát động, Vương Hồng Tự luận Nguyên thần bị tổn và Kỵ thần được tăng sức, khiến Dụng thần mất nguồn sinh trợ. Đoạn này mô tả tác động của Cừu thần đang động, không chỉ sự tồn tại của một hào mang tên ấy.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Kỵ thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Cừu thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "text": "Nếu Nguyên thần động sinh Dụng thần, sách xét Kỵ thần chuyển sang sinh Nguyên thần thay vì khắc Dụng thần. Đây là tình thế riêng được gọi theo ý ham sinh mà quên khắc, không phải sự miễn khắc trong mọi quẻ.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Kỵ thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Điều kiện của đoạn là có Nguyên thần phát động sinh Dụng thần."
+    },
+    {
+      "text": "Với Kỵ thần độc phát, sách đọc Dụng thần lâm Không là tạm tránh nhờ Không, còn ẩn là tránh hung. Nhật thần hoặc Nguyệt kiến sinh Dụng thần được xem như cứu trợ; các tình thế này cần đối chiếu trường hợp Kỵ thần được tăng sức ở cùng mục.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Kỵ thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không và phục tàng không tự bảo đảm tránh hại mãi."
+    },
+    {
+      "text": "Nếu Nhật thần hoặc Nguyệt kiến sinh phò Kỵ thần, hay có nhiều Kỵ thần cùng khắc, Vương Hồng Tự cảnh báo Dụng thần chỉ tạm tránh khi Không hoặc ẩn. Đến lúc xuất Không hoặc xuất lộ, sức khắc vẫn có thể gây hại trong cách luận này.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Kỵ thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Đối chiếu cả khả năng sinh trợ và chế ngự ở các đoạn trước; không rút một trạng thái riêng thành kết quả tất định."
+    },
+    {
+      "text": "Vĩnh Cao chú thích trị nhật là ngày có cùng địa chi với Dụng thần, dùng ví dụ hào Dần gặp Không đợi ngày Dần. Đây là lời giải từ người dịch cho thuật ngữ thời điểm trong đoạn Nguyên thần.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Chú thích 1 — Trị nhật",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      },
+      "condition": "Giải nghĩa thuật ngữ; chưa cung cấp cách tính lịch hoặc dự đoán ngày xảy ra việc."
+    },
+    {
+      "text": "Vĩnh Cao giải độc phát là chỉ Kỵ thần động một mình; Tị không là tránh nhờ Không, Tị hung là tránh điều hung. Các chú thích này giải từ cho đoạn Kỵ thần, cần đọc cùng những trường hợp cứu trợ và tăng sức của chính đoạn đó.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Chú thích 2–4 — Độc phát, Tị không, Tị hung",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vĩnh Cao"
+      }
+    }
+  ]
 }

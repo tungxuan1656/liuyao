@@ -1,117 +1,61 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-thuong-10",
   "type": "article",
   "title": "PBC — Hệ Từ Thượng, chương 10",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-section-05-original-reading",
-      "kind": "author-interpretation",
-      "text": "Dịch để cực thâm/nghiên cơ.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-section-05-original-reading"],
+      "text": "Dịch để cực thâm/nghiên cơ.\n\nThâm thông chí,cơ thành vụ,thần không vội/không đi mà tới.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 623],
+          "section": "section-05-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 623],
+          "section": "section-06-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-section-05-translation",
-      "kind": "author-interpretation",
-      "text": "PBC nối thâm là lý tinh sâu với cơ là dấu trước đắc/thất.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-section-05-translation"],
+      "text": "PBC nối thâm là lý tinh sâu với cơ là dấu trước đắc/thất.\n\nHai tiết5–6 có phần giải chung; không tạo một bình giảng độc lập chỉ tiết5.\n\nPBC diễn thâm/cơ/thần như bản thể/tác dụng/kết quả và đúng lúc không hấp tấp.\n\nÔng nói thần là Dịch/thánh nhân không quỷ thần; tuyên bố biết trước vẫn không chứng minh hiệu nghiệm. Đọc/Hán in bất tật/bất hành nhưng câu diễn cuối624 in Bất tận/bất thành; giữ sai khác chữ nguồn, không sửa theo bản đọc.\n\nChương10 PBC ghi lược dịch hai tiết,đánh nhãn5 và6. Các tiết1–4 và7 không có ở phần này; không ghép với văn NHL để gọi đầy đủ.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 623],
+          "section": "section-05-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 623],
+          "section": "section-05-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 624],
+          "section": "section-06-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 624],
+          "section": "section-06-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [623, 623],
+          "section": "selection-notice — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-section-05-commentary",
-      "kind": "author-interpretation",
-      "text": "Hai tiết5–6 có phần giải chung; không tạo một bình giảng độc lập chỉ tiết5.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-section-05-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-section-06-original-reading",
-      "kind": "author-interpretation",
-      "text": "Thâm thông chí,cơ thành vụ,thần không vội/không đi mà tới.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-section-06-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-section-06-translation",
-      "kind": "author-interpretation",
-      "text": "PBC diễn thâm/cơ/thần như bản thể/tác dụng/kết quả và đúng lúc không hấp tấp.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-section-06-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-section-06-commentary",
-      "kind": "author-interpretation",
-      "text": "Ông nói thần là Dịch/thánh nhân không quỷ thần; tuyên bố biết trước vẫn không chứng minh hiệu nghiệm. Đọc/Hán in bất tật/bất hành nhưng câu diễn cuối624 in Bất tận/bất thành; giữ sai khác chữ nguồn, không sửa theo bản đọc.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-section-06-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-10-pbc-he-tu-shang-10-selection-notice",
-      "kind": "author-interpretation",
-      "text": "Chương10 PBC ghi lược dịch hai tiết,đánh nhãn5 và6. Các tiết1–4 và7 không có ở phần này; không ghép với văn NHL để gọi đầy đủ.",
-      "citationIds": ["citation-pbc-he-tu-shang-10-selection-notice"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-shang-10-section-05-original-reading",
-      "citation-pbc-he-tu-shang-10-section-05-translation",
-      "citation-pbc-he-tu-shang-10-section-05-commentary",
-      "citation-pbc-he-tu-shang-10-section-06-original-reading",
-      "citation-pbc-he-tu-shang-10-section-06-translation",
-      "citation-pbc-he-tu-shang-10-section-06-commentary",
-      "citation-pbc-he-tu-shang-10-selection-notice"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

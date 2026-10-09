@@ -1,46 +1,52 @@
 {
-  "schemaVersion": 1,
   "id": "term-four-birthplaces",
   "type": "term",
   "title": "Tứ sinh",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-growth-stage", "term-five-elements", "article-growth-store-and-extinction"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-four-birthplaces-definition",
-      "kind": "structural-fact",
       "text": "BPCT đặt bốn nơi khởi Trường Sinh ở Dần, Tị, Thân và Hợi. Hỏa khởi ở Dần, Kim ở Tị, Thủy và Thổ cùng ở Thân, Mộc ở Hợi.",
-      "citationIds": ["citation-bpct-ch5-four-birthplaces", "citation-bpct-ch1-life-cycle"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 8 — Vị trí Tứ sinh",
+          "printedPages": ["58", "58"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [16, 16],
+          "section": "XVII — Vòng Trường Sinh",
+          "printedPages": ["10", "10"]
+        }
+      ]
     }
   ],
-  "relatedIds": ["term-growth-stage", "term-five-elements", "article-growth-store-and-extinction"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-four-birthplaces",
-      "citation-bpct-ch1-life-cycle",
-      "citation-bpct-ch1-life-cycle-continuation"
-    ],
-    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-bpct-four-birthplaces-fire-metal",
-      "status": "resolved",
-      "description": "BPCT PDF 17 dòng ba ghi Hỏa có Trường Sinh tại Tị, dòng bốn lại ghi Hỏa tại Dần.",
-      "citationIds": [
-        "citation-bpct-ch1-life-cycle-continuation",
-        "citation-bpct-ch1-life-cycle",
-        "citation-bpct-ch5-four-birthplaces"
-      ],
-      "resolution": "Ảnh PDF 16 phần liệt kê và PDF 70 mục 8 đều ghi Kim tại Tị, Hỏa tại Dần. Giữ bốn nơi khởi và năm hành theo hai đoạn đầy đủ; không tạo hai nơi khởi cho Hỏa."
+      "text": "BPCT PDF 17 dòng ba ghi Hỏa có Trường Sinh tại Tị, dòng bốn lại ghi Hỏa tại Dần. Ảnh PDF 16 phần liệt kê và PDF 70 mục 8 đều ghi Kim tại Tị, Hỏa tại Dần. Giữ bốn nơi khởi và năm hành theo hai đoạn đầy đủ; không tạo hai nơi khởi cho Hỏa.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [17, 17],
+          "section": "XVII — Hai dòng tiếp của Tứ sinh",
+          "printedPages": ["11", "11"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [16, 16],
+          "section": "XVII — Vòng Trường Sinh",
+          "printedPages": ["10", "10"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 8 — Vị trí Tứ sinh",
+          "printedPages": ["58", "58"]
+        }
+      ]
     }
   ]
 }

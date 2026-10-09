@@ -1,93 +1,126 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-28",
   "type": "hexagram",
   "title": "Trạch Phong Đại Quá",
   "aliases": ["Đại Quá"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-wind", "trigram-lake"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-28-structure",
-      "kind": "structural-fact",
       "text": "Trạch Phong Đại Quá có ngoại quái Đoài và nội quái Tốn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q28-overview-nhl",
-        "citation-pbc-q28-overview-pbc",
-        "citation-ntt-q28-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [221, 222],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["221", "222"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [286, 289],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [472, 476],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-28-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê đọc Đại Quá theo dương nhiều và công việc lớn khác thường. Hai đầu yếu làm hình ảnh cột cong, nhưng trung và cách làm hòa thuận mở khả năng hành động; đức vượt thường vẫn cần hợp đạo.",
-      "citationIds": ["citation-nhl-q28-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [221, 222],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["221", "222"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-28-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu phân biệt dương quá nhiều với đức nghiệp vượt thường. Để làm việc lớn cần tích lũy trước, hợp thời và dùng sự trung, nhún thuận, hòa duyệt; không ngồi chờ khí số thay việc làm.",
-      "citationIds": ["citation-pbc-q28-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [286, 289],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-28-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di cho dương mạnh ở giữa và âm yếu hai đầu tạo hình ảnh gánh nặng khó chống. Tài trung và nhún thuận, hòa duyệt là điều kiện để làm việc khác thường, không đồng nghĩa cứ quá mạnh là tốt.",
-      "citationIds": ["citation-ntt-q28-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [472, 476],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-wind", "trigram-lake"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yang", "yang", "yang", "yang", "yin"],
-    "kingWenNumber": 28,
-    "upperTrigramId": "trigram-lake",
-    "lowerTrigramId": "trigram-wind",
-    "claimIds": ["hexagram-28-structure"]
-  },
+  "kingWenNumber": 28,
+  "upperTrigramId": "trigram-lake",
+  "lowerTrigramId": "trigram-wind",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-28-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy cỏ trắng lót vật làm hình ảnh cẩn thận thêm cả khi đặt xuống đất đã đủ. Thái độ kính cẩn là trọng tâm của lời không lỗi.",
-          "citationIds": ["citation-nhl-q28-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["222", "222"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-28-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào đầu sức và vị còn thấp, nên lấy kính cẩn làm nền trước khi gánh việc lớn. Vật nhỏ như cỏ lót vẫn có ích khi biết dùng đúng trong phép ví này.",
-          "citationIds": ["citation-pbc-q28-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [289, 290],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-28-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào đầu mềm ở dưới theo sự cẩn thận hơn thường. Lót vật bằng cỏ trắng diễn tả kính thận giúp tránh lỗi, không phải bản thân vật lót quyết định kết quả.",
-          "citationIds": ["citation-ntt-q28-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [476, 477],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -99,43 +132,50 @@
       "position": 2,
       "polarity": "yang",
       "label": "Cửu nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-28-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào hai cương mà có nhu, lại trung và gần hào đầu mềm, nên có sự giúp nhau. Rễ mới từ cây khô là hình ảnh sức sống được phục hồi trong lời giảng.",
-          "citationIds": ["citation-nhl-q28-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["222", "222"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
-          ]
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
         },
         {
-          "id": "hexagram-28-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào hai biết dùng nhu và có trung, kết hợp hào đầu để bớt quá cứng. Rễ mới và đôi vợ chồng khác tuổi là hai phép ví sự bổ trợ, không là lời dự báo sinh sản.",
-          "citationIds": ["citation-pbc-q28-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [290, 290],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
-          ]
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
         },
         {
-          "id": "hexagram-28-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào hai theo cương biết tự xử vừa phải và dùng mềm giúp mình. Ông phân biệt không gì không lợi với lời cát, không nâng hai cách nói thành cùng một mức đánh giá.",
-          "citationIds": ["citation-ntt-q28-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [477, 478],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
-          ]
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
         }
       ]
     },
@@ -143,30 +183,43 @@
       "position": 3,
       "polarity": "yang",
       "label": "Cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-28-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào ba dương ở vị dương là quá cứng, không chịu nhận sự giúp của hào trên. Hình ảnh cột cong ở hào riêng mang lời xấu, khác lời chung của cả quẻ.",
-          "citationIds": ["citation-nhl-q28-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["222", "222"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-28-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào ba quá cương và tự cậy nên không gánh nổi việc lớn. Có quan hệ ứng không đủ nếu người ấy không chịu nghe và nhận giúp.",
-          "citationIds": ["citation-pbc-q28-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [290, 291],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-28-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào ba ở người quá cứng, thiếu trung hòa, làm mất lòng nên không có người cùng giúp. Cột gãy ví việc không chịu nổi trách nhiệm nặng.",
-          "citationIds": ["citation-ntt-q28-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [478, 479],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -178,30 +231,43 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-28-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào bốn cương ở vị mềm nên vừa sức gánh việc. Quyến luyến thêm với hào đầu có thể làm quá mềm và sinh tiếc, dù ban đầu có lời tốt.",
-          "citationIds": ["citation-nhl-q28-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 223],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["222", "223"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-28-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào bốn có cương nhu thích hợp nên cột vững. Ông răn không để sự ràng buộc với hào đầu làm nghiêng thêm về nhu khi đang cần giữ sức gánh việc lớn.",
-          "citationIds": ["citation-pbc-q28-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 292],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-28-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào bốn biết dùng mềm giúp cứng nên gánh được trách nhiệm. Có ý buộc thêm với hào đầu sẽ làm lụy sự cương, là lý do lời tốt vẫn kèm lời tiếc.",
-          "citationIds": ["citation-ntt-q28-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [479, 480],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -213,43 +279,50 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-28-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê phân biệt hoa trên cây khô với rễ mới của hào hai: hoa không giúp sức sống bền. Cương quá ở hào năm và nhu quá ở hào trên không bổ trợ được công việc dù có đức trung chính.",
-          "citationIds": ["citation-nhl-q28-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["223", "223"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
-          ]
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
         },
         {
-          "id": "hexagram-28-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào năm theo phần rực rỡ không bền, khác sức sinh lại từ rễ. Gần người quá nhu không giải được sự quá cương; không lỗi chưa có nghĩa được khen.",
-          "citationIds": ["citation-pbc-q28-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [292, 293],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
-          ]
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
         },
         {
-          "id": "hexagram-28-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào năm không có ứng giúp ở dưới, còn hào trên không giúp nên công. Hoa trên cây khô chỉ vẻ sinh tạm, nên lời hào phân biệt không lỗi với không được khen.",
-          "citationIds": ["citation-ntt-q28-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [480, 481],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
-          ]
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
         }
       ]
     },
@@ -257,91 +330,67 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-28-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc hào cuối theo tài yếu mà gánh việc quá lớn nên nguy. Ông đánh giá ý muốn cứu đời riêng với kết quả xấu, từ đó giảng không lỗi theo đạo nghĩa cổ.",
-          "citationIds": ["citation-nhl-q28-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["223", "223"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
-          ]
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
         },
         {
-          "id": "hexagram-28-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào cuối sức yếu lại ở cực thời Đại Quá nên khó tránh nguy. Ông phân biệt kết quả hung của việc với đánh giá ý nghĩa, không lấy không lỗi để xóa sự nguy hiểm.",
-          "citationIds": ["citation-pbc-q28-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [293, 293],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
-          ]
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
         },
         {
-          "id": "hexagram-28-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào cuối theo người nóng nảy vượt lý tự chuốc nguy. Không lỗi được ông giảng theo không thể đổ trách nhiệm cho người khác, khác cách đọc vì đạo nghĩa của Chu Hy.",
-          "citationIds": ["citation-ntt-q28-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [481, 482],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
-          ]
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
         },
         {
-          "id": "hexagram-28-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy cho hào cuối tài hèn không nên công nhưng xét ý nghĩa thì không có lỗi. Ông giữ đánh giá đạo nghĩa riêng với kết quả hung, khác lời Trình Di quy về tự gây tai vạ.",
-          "citationIds": ["citation-ntt-q28-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [481, 481],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
-          ]
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
         }
       ]
     }
-  ],
-  "specialPassages": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q28-overview-nhl",
-      "citation-pbc-q28-overview-pbc",
-      "citation-ntt-q28-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-q28-line-1-nhl",
-      "citation-pbc-q28-line-1-pbc",
-      "citation-ntt-q28-line-1-ntt",
-      "citation-nhl-q28-line-2-nhl",
-      "citation-pbc-q28-line-2-pbc",
-      "citation-ntt-q28-line-2-ntt",
-      "citation-nhl-q28-line-3-nhl",
-      "citation-pbc-q28-line-3-pbc",
-      "citation-ntt-q28-line-3-ntt",
-      "citation-nhl-q28-line-4-nhl",
-      "citation-pbc-q28-line-4-pbc",
-      "citation-ntt-q28-line-4-ntt",
-      "citation-nhl-q28-line-5-nhl",
-      "citation-pbc-q28-line-5-pbc",
-      "citation-ntt-q28-line-5-ntt",
-      "citation-nhl-q28-line-6-nhl",
-      "citation-pbc-q28-line-6-pbc",
-      "citation-ntt-q28-line-6-ntt",
-      "citation-ntt-q28-line-6-chu-hy"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Các cách đọc được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo."
-  }
+  ]
 }

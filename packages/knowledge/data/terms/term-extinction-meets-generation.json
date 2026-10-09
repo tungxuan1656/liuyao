@@ -1,19 +1,32 @@
 {
-  "schemaVersion": 1,
   "id": "term-extinction-meets-generation",
   "type": "term",
   "title": "Tuyệt xứ phùng sinh",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-extinction-stage", "article-extinction-control-support"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-extinction-meets-generation-definition",
-      "kind": "author-interpretation",
       "text": "Tuyệt xứ phùng sinh chỉ hào ở thế Tuyệt mà gặp nguồn sinh phò trong cách luận của mục 16. Tên Tuyệt không đủ kết luận kết quả khi chưa xét sự trợ giúp và sức của nguồn sinh.",
-      "citationIds": [
-        "citation-bpct-ch5-extinction-control-support",
-        "citation-bpct-ch6-extinction-meets-support",
-        "citation-bpct-part2-extinction-support-limits"
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [72, 73],
+          "section": "Mục 16 — Tuyệt xứ phùng sinh, Khắc xứ phùng sinh",
+          "printedPages": ["60", "61"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [94, 94],
+          "section": "Câu 56 — Tuyệt gặp sinh phù",
+          "printedPages": ["80", "80"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [395, 395],
+          "section": "Câu hỏi 12 — ví dụ Thân Kim, sức Nguyên thần và hồi đầu khắc",
+          "printedPages": ["348", "348"]
+        }
       ],
       "attribution": {
         "author": "Vương Hồng Tự",
@@ -21,31 +34,18 @@
       }
     },
     {
-      "id": "term-extinction-meets-generation-translator-stage",
-      "kind": "author-interpretation",
       "text": "Vĩnh Cao giải Tuyệt trong chú thích 8 là một giai đoạn của vòng Trường Sinh thuộc ngũ hành. Lối nói Kim Tuyệt ở Dần gọi tắt hành và vị trí của giai đoạn ấy.",
-      "citationIds": ["citation-bpct-ch5-extinction-stage-note"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [72, 72],
+          "section": "Chú thích 8 — Tuyệt trong vòng Trường Sinh",
+          "printedPages": ["60", "60"]
+        }
+      ],
       "attribution": {
         "author": "Vĩnh Cao"
       }
     }
-  ],
-  "relatedIds": ["term-extinction-stage", "article-extinction-control-support"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-extinction-control-support",
-      "citation-bpct-ch6-extinction-meets-support",
-      "citation-bpct-part2-extinction-support-limits",
-      "citation-bpct-ch5-extinction-stage-note"
-    ],
-    "note": "Đã đọc toàn bộ mục 15–16 PDF 72–73 và chú thích 8; đối chiếu câu 4 PDF 78, câu 21 PDF 84, câu 56 PDF 94, cùng câu hỏi 12–13 PDF 393–401 và chú thích. Xem ảnh các trang được chọn, kiểm tra nhãn trang in. Chỉ chọn điều kiện luận giải; chưa xác nhận chuyện ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

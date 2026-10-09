@@ -1,127 +1,219 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-41",
   "type": "hexagram",
   "title": "Sơn Trạch Tổn",
   "aliases": ["Tổn"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-mountain", "trigram-lake"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-41-structure",
-      "kind": "structural-fact",
       "text": "Sơn Trạch Tổn có nội quái Đoài và ngoại quái Cấn; sáu hào được ghi theo thứ tự từ dưới lên.",
-      "citationIds": [
-        "citation-pbc-q41-overview-classical-text",
-        "citation-nhl-q41-overview-classical-text",
-        "citation-ntt-q41-overview-classical-text",
-        "citation-nhl-q41-line-1-classical-text",
-        "citation-nhl-q41-line-2-classical-text",
-        "citation-nhl-q41-line-3-classical-text",
-        "citation-nhl-q41-line-4-classical-text",
-        "citation-nhl-q41-line-5-classical-text",
-        "citation-nhl-q41-line-6-classical-text",
-        "citation-pbc-q41-line-1-classical-text",
-        "citation-pbc-q41-line-2-classical-text",
-        "citation-pbc-q41-line-3-classical-text",
-        "citation-pbc-q41-line-4-classical-text",
-        "citation-pbc-q41-line-5-classical-text",
-        "citation-pbc-q41-line-6-classical-text",
-        "citation-ntt-q41-line-1-classical-text",
-        "citation-ntt-q41-line-2-classical-text",
-        "citation-ntt-q41-line-3-classical-text",
-        "citation-ntt-q41-line-4-classical-text",
-        "citation-ntt-q41-line-5-classical-text",
-        "citation-ntt-q41-line-6-classical-text"
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [395, 397],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [261, 261],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["261", "261"]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [636, 640],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [262, 262],
+          "section": "Hào 1 — diễn giải",
+          "printedPages": ["262", "262"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [262, 262],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["262", "262"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [262, 262],
+          "section": "Hào 3 — diễn giải",
+          "printedPages": ["262", "262"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [263, 263],
+          "section": "Hào 4 — diễn giải",
+          "printedPages": ["263", "263"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [263, 263],
+          "section": "Hào 5 — diễn giải",
+          "printedPages": ["263", "263"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [263, 263],
+          "section": "Hào 6 — diễn giải",
+          "printedPages": ["263", "263"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [398, 398],
+          "section": "Hào 1 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [399, 399],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [399, 400],
+          "section": "Hào 3 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [401, 401],
+          "section": "Hào 4 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [402, 402],
+          "section": "Hào 5 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [402, 403],
+          "section": "Hào 6 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [641, 642],
+          "section": "Hào 1 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [643, 644],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [644, 646],
+          "section": "Hào 3 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [646, 647],
+          "section": "Hào 4 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [647, 648],
+          "section": "Hào 5 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [648, 650],
+          "section": "Hào 6 — diễn giải"
+        }
       ]
     },
     {
-      "id": "hexagram-41-overview-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê cho rằng giảm bớt cần có lòng thành và tùy hoàn cảnh; ông liên hệ Tổn với việc bớt giận và lòng ham muốn.",
-      "citationIds": ["citation-nhl-q41-overview-nhl"],
+      "text": "Nguyễn Hiến Lê cho rằng giảm bớt cần có lòng thành và tùy hoàn cảnh; ông liên hệ Tổn với việc bớt giận và lòng ham muốn.\n\nNguyễn Hiến Lê kết quẻ bằng cách nói Tổn không mặc nhiên xấu, Ích cũng không mặc nhiên tốt; nên xét việc và thời, giảm khi quá, thêm khi thiếu, và chịu phần thiệt của mình để giúp người.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [261, 262],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["261", "262"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [263, 264],
+          "section": "Đại ý quẻ — kết luận",
+          "printedPages": ["263", "264"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-41-overview-nhl-closing",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê kết quẻ bằng cách nói Tổn không mặc nhiên xấu, Ích cũng không mặc nhiên tốt; nên xét việc và thời, giảm khi quá, thêm khi thiếu, và chịu phần thiệt của mình để giúp người.",
-      "citationIds": ["citation-nhl-q41-overview-closing"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      }
-    },
-    {
-      "id": "hexagram-41-overview-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải Tổn qua việc giảm dưới để thêm trên và nhấn mạnh phải xét lòng thành, mức độ, thời điểm cùng hệ quả xã hội.",
-      "citationIds": ["citation-pbc-q41-overview-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      }
-    },
-    {
-      "id": "hexagram-41-overview-pbc-dai-tuong-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải lời Đại Tượng về trừng phẫn, trất dục là sửa cơn giận do khí huyết và lấp tư dục; ông phân biệt tình cảm hợp thiên lý với phẫn, dục do tư tình, rồi nêu thầy Nhan làm gương về sửa giận và lỗi.",
-      "citationIds": [
-        "citation-pbc-q41-overview-dai-tuong-classical-text",
-        "citation-pbc-q41-overview-dai-tuong-pbc"
+      "text": "Phan Bội Châu giải Tổn qua việc giảm dưới để thêm trên và nhấn mạnh phải xét lòng thành, mức độ, thời điểm cùng hệ quả xã hội.\n\nPhan Bội Châu giải lời Đại Tượng về trừng phẫn, trất dục là sửa cơn giận do khí huyết và lấp tư dục; ông phân biệt tình cảm hợp thiên lý với phẫn, dục do tư tình, rồi nêu thầy Nhan làm gương về sửa giận và lỗi.\n\nTrong Phụ chú, Phan Bội Châu phân biệt Tổn kỉ, Tổn nhân và bỏ điều xấu để thêm điều lành; ở hào Thượng, ông nói nghĩa Tổn chuyển thành Ích, khác với nghĩa ở hào Nhị.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [395, 398],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [397, 398],
+          "section": "Đại Tượng Truyện — kinh văn"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [397, 398],
+          "section": "Đại Tượng Truyện — tổng quan"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [403, 403],
+          "section": "Phụ chú — tổng kết ba nghĩa của Tổn"
+        }
       ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-41-overview-pbc-phu-chu",
-      "kind": "author-interpretation",
-      "text": "Trong Phụ chú, Phan Bội Châu phân biệt Tổn kỉ, Tổn nhân và bỏ điều xấu để thêm điều lành; ở hào Thượng, ông nói nghĩa Tổn chuyển thành Ích, khác với nghĩa ở hào Nhị.",
-      "citationIds": ["citation-pbc-q41-overview-phu-chu"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      }
-    },
-    {
-      "id": "hexagram-41-overview-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di nối Tổn với quẻ Giải và giải núi trên chằm là giảm phía dưới để ích phía trên; ông cũng bàn về mức giảm và thời điểm.",
-      "citationIds": ["citation-ntt-q41-overview-trinh-di"],
+      "text": "Trình Di nối Tổn với quẻ Giải và giải núi trên chằm là giảm phía dưới để ích phía trên; ông cũng bàn về mức giảm và thời điểm.\n\nTrình Di giải hình tượng núi dưới chằm là bớt ở dưới để thêm ở trên; trong việc sửa mình, ông khuyên răn giận và lấp hết ham muốn.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [636, 640],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [641, 641],
+          "section": "Đại Tượng Truyện — tổng quan"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [641, 641],
+          "section": "Đại Tượng Truyện — giải nghĩa"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-41-overview-ntt-dai-tuong-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di giải hình tượng núi dưới chằm là bớt ở dưới để thêm ở trên; trong việc sửa mình, ông khuyên răn giận và lấp hết ham muốn.",
-      "citationIds": [
-        "citation-ntt-q41-overview-dai-tuong-classical-text",
-        "citation-ntt-q41-overview-dai-tuong-trinh-di"
-      ],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      }
-    },
-    {
-      "id": "hexagram-41-overview-chu-hy",
-      "kind": "author-interpretation",
-      "text": "Chu Hy giải Tổn qua sự chuyển đổi hào giữa hai quái và ví dụ lễ tế; ông giữ riêng cách giải của mình với Trình Di.",
-      "citationIds": ["citation-ntt-q41-overview-chu-hy"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      }
-    },
-    {
-      "id": "hexagram-41-overview-ntt-dai-tuong-chu-hy",
-      "kind": "author-interpretation",
-      "text": "Trong Bản nghĩa về Đại Tượng, Chu Hy nhấn mạnh quân tử phải tự sửa mình ở những điều cần giảm; đây là lời riêng, không nhập vào phần giải của Trình Di.",
-      "citationIds": [
-        "citation-ntt-q41-overview-dai-tuong-classical-text",
-        "citation-ntt-q41-overview-dai-tuong-chu-hy"
+      "text": "Chu Hy giải Tổn qua sự chuyển đổi hào giữa hai quái và ví dụ lễ tế; ông giữ riêng cách giải của mình với Trình Di.\n\nTrong Bản nghĩa về Đại Tượng, Chu Hy nhấn mạnh quân tử phải tự sửa mình ở những điều cần giảm; đây là lời riêng, không nhập vào phần giải của Trình Di.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [636, 641],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [641, 641],
+          "section": "Đại Tượng Truyện — tổng quan"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [641, 641],
+          "section": "Đại Tượng Truyện — Bản nghĩa"
+        }
       ],
       "attribution": {
         "author": "Chu Hy",
@@ -129,186 +221,147 @@
       }
     },
     {
-      "id": "hexagram-41-overview-ntt-q41-overview-tien-nho-tu-tien-trai",
-      "kind": "author-interpretation",
       "text": "Từ Tiến Trai tách lời hỏi và lời đáp trong câu về hai quỹ, và giải chữ “hưởng” là sự phụng sự phía trên, không chỉ lễ tế.",
-      "citationIds": ["citation-ntt-q41-overview-tien-nho-tu-tien-trai"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [638, 638],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Từ Tiến Trai",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-41-overview-ntt-q41-overview-ho-van-phong",
-      "kind": "author-interpretation",
       "text": "Hồ Vân Phong nói việc lấy bớt của dưới không phải để cung phụng riêng người trên; ông giải nghĩa hưởng và số quỹ theo nếp lễ cổ.",
-      "citationIds": ["citation-ntt-q41-overview-ho-van-phong"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [638, 638],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Hồ Vân Phong",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-41-note-1",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải nghĩa tên quẻ Tổn là bớt đi, hao tổn; ông đối chiếu nghĩa này với tên quẻ Ích.",
-      "citationIds": ["citation-ntt-q41-note-1"],
+      "text": "Ngô Tất Tố giải nghĩa tên quẻ Tổn là bớt đi, hao tổn; ông đối chiếu nghĩa này với tên quẻ Ích.\n\nNgô Tất Tố dẫn người đọc tới chú thích trước đó về quẻ Khảm.\n\nNgô Tất Tố cho biết bản dịch theo Trình Di; theo Chu Hy, từ ở đây nghĩa là “thôi”, không phải “đã”.\n\nNgô Tất Tố cho biết bản dịch theo Trình Di; theo Chu Hy, từ “thượng” ở đây phải dịch như ở phần trên.\n\nNgô Tất Tố xác định cụm được chú thích là nói về Đoài.\n\nNgô Tất Tố cho biết bản dịch theo cách hiểu của Chu Hy.\n\nNgô Tất Tố giải hình ảnh là việc bói cũng xác nhận kết quả.\n\nNgô Tất Tố giải “mười bằng” qua một cách tính tiền tệ lịch sử gắn với mai rùa.\n\nNgô Tất Tố giải hình ảnh các hào ghép bằng cách đối chiếu dạng hào liên quan với quẻ Ly.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [650, 650],
+          "section": "Chú thích 1"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [650, 650],
+          "section": "Chú thích 2"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [650, 650],
+          "section": "Chú thích 3"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [650, 650],
+          "section": "Chú thích 4"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [650, 650],
+          "section": "Chú thích 5"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [651, 651],
+          "section": "Chú thích 6"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [651, 651],
+          "section": "Chú thích 7"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [651, 651],
+          "section": "Chú thích 8"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [651, 651],
+          "section": "Chú thích 9"
+        }
+      ],
       "attribution": {
         "author": "Ngô Tất Tố"
       },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-2",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố dẫn người đọc tới chú thích trước đó về quẻ Khảm.",
-      "citationIds": ["citation-ntt-q41-note-2"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-3",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố cho biết bản dịch theo Trình Di; theo Chu Hy, từ ở đây nghĩa là “thôi”, không phải “đã”.",
-      "citationIds": ["citation-ntt-q41-note-3"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-4",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố cho biết bản dịch theo Trình Di; theo Chu Hy, từ “thượng” ở đây phải dịch như ở phần trên.",
-      "citationIds": ["citation-ntt-q41-note-4"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-5",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố xác định cụm được chú thích là nói về Đoài.",
-      "citationIds": ["citation-ntt-q41-note-5"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-6",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố cho biết bản dịch theo cách hiểu của Chu Hy.",
-      "citationIds": ["citation-ntt-q41-note-6"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-7",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải hình ảnh là việc bói cũng xác nhận kết quả.",
-      "citationIds": ["citation-ntt-q41-note-7"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-8",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải “mười bằng” qua một cách tính tiền tệ lịch sử gắn với mai rùa.",
-      "citationIds": ["citation-ntt-q41-note-8"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
-    },
-    {
-      "id": "hexagram-41-note-9",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải hình ảnh các hào ghép bằng cách đối chiếu dạng hào liên quan với quẻ Ly.",
-      "citationIds": ["citation-ntt-q41-note-9"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
-      ]
+      "condition": "Đây là chú thích của người dịch; phân biệt với lời giải của Trình Di, Chu Hy và các lời bàn Tiên Nho có nêu tên."
     }
   ],
-  "relatedIds": ["trigram-mountain", "trigram-lake"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yang", "yin", "yin", "yin", "yang"],
-    "kingWenNumber": 41,
-    "upperTrigramId": "trigram-mountain",
-    "lowerTrigramId": "trigram-lake",
-    "claimIds": ["hexagram-41-structure"]
-  },
+  "kingWenNumber": 41,
+  "upperTrigramId": "trigram-mountain",
+  "lowerTrigramId": "trigram-lake",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-41-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Hào dưới nên giúp hào bốn sớm nhưng phải cân nhắc mức giúp để không tự làm hại mình.",
-          "citationIds": ["citation-nhl-q41-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [262, 262],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["262", "262"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-41-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Hào dưới giúp hào bốn nhưng cần lượng sức; sự giúp đỡ không nên quá ít hoặc quá mức.",
-          "citationIds": ["citation-pbc-q41-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [398, 399],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-41-line-1-trinh-di",
-          "kind": "author-interpretation",
           "text": "Người giúp nên hoàn tất việc rồi lui, không nhận công; mức giúp cần cân nhắc để tránh quá hoặc thiếu.",
-          "citationIds": ["citation-ntt-q41-line-1-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [641, 642],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-1-chu-hy",
-          "kind": "author-interpretation",
           "text": "Hào đầu giúp hào bốn đúng lúc nhưng cần đong lường sự giúp đỡ.",
-          "citationIds": ["citation-ntt-q41-line-1-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [641, 643],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -320,40 +373,57 @@
       "position": 2,
       "polarity": "yang",
       "label": "Cửu nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-41-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Hào hai giữ sự cứng và trung, không chiều yêu cầu không thích đáng của hào năm; giữ chuẩn mực cũng có thể giúp người trên.",
-          "citationIds": ["citation-nhl-q41-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [262, 262],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["262", "262"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-41-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Hào hai không nên bỏ sự cứng và trung để chiều đòi hỏi của hào năm; giữ chính là một cách giúp người trên.",
-          "citationIds": ["citation-pbc-q41-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [399, 399],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-41-line-2-trinh-di",
-          "kind": "author-interpretation",
           "text": "Hào hai giữ đức cứng và trung, không thuận theo người trên một cách sai lệch; giữ mình có thể ích cho người trên.",
-          "citationIds": ["citation-ntt-q41-line-2-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [643, 644],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Hào hai giữ điều mình nắm chắc và không tiến càn; giữ chính khác với tiến lên.",
-          "citationIds": ["citation-ntt-q41-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [643, 644],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -365,60 +435,85 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-41-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Ông giải hình ảnh ba người và một người qua sự kết đôi và phần dư, rồi liên hệ với Hệ Từ; đây là cách giải riêng của ông.",
-          "citationIds": ["citation-nhl-q41-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [262, 263],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["262", "263"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-41-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Ông mở rộng hình ảnh ba và một thành luận giải về số lượng, cặp đôi và các ví dụ xã hội, chính trị thuộc riêng lời bàn của ông.",
-          "citationIds": ["citation-pbc-q41-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [399, 401],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-41-line-3-trinh-di",
-          "kind": "author-interpretation",
           "text": "Ông giải ba người và một người bằng sự chuyển đổi các nhóm hào, giảm phần thừa và ghép những gì thích hợp.",
-          "citationIds": ["citation-ntt-q41-line-3-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [644, 646],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-3-chu-hy",
-          "kind": "author-interpretation",
           "text": "Ông giải hình ảnh ba và một qua sự thay đổi của các quái và lời răn giữ chuyên nhất.",
-          "citationIds": ["citation-ntt-q41-line-3-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [644, 646],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-3-ntt-q41-line-3-truong-trung-khe",
-          "kind": "author-interpretation",
           "text": "Trương Trung Khê xem sự thêm người thứ ba là nguồn sinh nghi; giữ đây là một lời bàn riêng trong Tiên Nho.",
-          "citationIds": ["citation-ntt-q41-line-3-truong-trung-khe"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [645, 645],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trương Trung Khê",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-3-ntt-q41-line-3-ho-van-phong",
-          "kind": "author-interpretation",
           "text": "Hồ Vân Phong giải hào ba bằng các cặp hào hình thành qua biến đổi; không nhập cách giải này với Trương Trung Khê.",
-          "citationIds": ["citation-ntt-q41-line-3-ho-van-phong"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [645, 646],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Hồ Vân Phong",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -430,40 +525,57 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-41-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Hào bốn có điều cần sửa; sự cứng của hào đầu giúp bỏ khuyết điểm ấy nhanh chóng.",
-          "citationIds": ["citation-nhl-q41-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [263, 263],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["263", "263"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-41-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Khuyết điểm của hào bốn cần được sửa sớm nhờ hào đầu; lời tốt dựa vào sự sửa đổi ấy.",
-          "citationIds": ["citation-pbc-q41-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [401, 402],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-41-line-4-trinh-di",
-          "kind": "author-interpretation",
           "text": "“Tật” là điều không phải cần bỏ; sửa nhanh thì lỗi chưa sâu và đáng mừng.",
-          "citationIds": ["citation-ntt-q41-line-4-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [646, 647],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Sự cứng của hào đầu giúp hào bốn bớt khuyết điểm mềm yếu; nên sửa vừa mức.",
-          "citationIds": ["citation-ntt-q41-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [646, 647],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -475,60 +587,85 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-41-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Ông xem rùa quý là hình ảnh tốt, nhưng ghi nhận nhiều cách hiểu về “mười bằng” và không chọn một cách làm nghĩa duy nhất.",
-          "citationIds": ["citation-nhl-q41-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [263, 263],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["263", "263"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-41-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Ông dùng cách định lượng xưa “mười bằng” để chỉ món lợi cực lớn, khó từ chối, rồi ví với rùa quý được đem tới bất ngờ.",
-          "citationIds": ["citation-pbc-q41-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [402, 402],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-41-line-5-trinh-di",
-          "kind": "author-interpretation",
           "text": "Hào năm mềm và ở ngôi tôn, biết nhận sự giúp từ dưới; sự đồng thuận rộng được xem là dấu hiệu tốt.",
-          "citationIds": ["citation-ntt-q41-line-5-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [647, 648],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Ông liên hệ sự tốt với ngôi mềm, trung ở vị trí tôn và hình ảnh rùa là vật quý.",
-          "citationIds": ["citation-ntt-q41-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [647, 648],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-5-ntt-q41-line-5-tien-nho",
-          "kind": "author-interpretation",
           "text": "Chu Hy xem hình tượng rùa trong Kinh Dịch là một phép tượng có nhiều ví dụ, trong đó quẻ Tổn và Ích đều nói đến rùa; đây là lời Tiên Nho, không phải Bản nghĩa tại chỗ.",
-          "citationIds": ["citation-ntt-q41-line-5-tien-nho"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [648, 648],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy, được dẫn trong lời Tiên Nho",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-5-ntt-q41-line-5-uong-nghien-chuong",
-          "kind": "author-interpretation",
           "text": "Uông Nghiện Chương xem Ly là rùa và cho rằng tuy Tổn, Ích không phải quẻ Ly, thông thể của chúng vẫn giống Ly.",
-          "citationIds": ["citation-ntt-q41-overview-tien-nho-uong-nghien-chuong"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [648, 648],
+              "section": "Lời bàn Tiên Nho — hào 5"
+            }
+          ],
           "attribution": {
             "author": "Uông Nghiện Chương",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -540,40 +677,57 @@
       "position": 6,
       "polarity": "yang",
       "label": "Thượng cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-41-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Ông nói lời hào cuối khó hiểu, nêu các cách giải khác nhau và theo cách đọc của Phan Bội Châu rằng có thể giúp người mà không tự tổn.",
-          "citationIds": ["citation-nhl-q41-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [263, 263],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["263", "263"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-41-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Ông đọc hào cuối là có thể làm lợi cho người khác mà không giảm thêm phần mình; giữ đây là cách giải của ông giữa các dị bản.",
-          "citationIds": ["citation-pbc-q41-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [402, 403],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-41-line-6-trinh-di",
-          "kind": "author-interpretation",
           "text": "Ông phân biệt ba nghĩa của Tổn và cho rằng đến cuối quá trình nên thôi giảm người dưới, chuyển sang làm lợi cho họ.",
-          "citationIds": ["citation-ntt-q41-line-6-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [648, 650],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-41-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Hào cuối có thể làm lợi cho người dưới mà không cần tự giảm trước, nếu giữ cách làm đúng.",
-          "citationIds": ["citation-ntt-q41-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [648, 650],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -581,86 +735,5 @@
         }
       ]
     }
-  ],
-  "specialPassages": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Oracle subagent (AI source comparison)",
-    "reviewedAt": "2026-10-05",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-q41-overview-classical-text",
-      "citation-ntt-q41-overview-classical-text",
-      "citation-nhl-q41-line-1-classical-text",
-      "citation-nhl-q41-line-2-classical-text",
-      "citation-nhl-q41-line-3-classical-text",
-      "citation-nhl-q41-line-4-classical-text",
-      "citation-nhl-q41-line-5-classical-text",
-      "citation-nhl-q41-line-6-classical-text",
-      "citation-pbc-q41-line-1-classical-text",
-      "citation-pbc-q41-line-2-classical-text",
-      "citation-pbc-q41-line-3-classical-text",
-      "citation-pbc-q41-line-4-classical-text",
-      "citation-pbc-q41-line-5-classical-text",
-      "citation-pbc-q41-line-6-classical-text",
-      "citation-ntt-q41-line-1-classical-text",
-      "citation-ntt-q41-line-2-classical-text",
-      "citation-ntt-q41-line-3-classical-text",
-      "citation-ntt-q41-line-4-classical-text",
-      "citation-ntt-q41-line-5-classical-text",
-      "citation-ntt-q41-line-6-classical-text",
-      "citation-nhl-q41-overview-classical-text",
-      "citation-nhl-q41-overview-nhl",
-      "citation-nhl-q41-overview-closing",
-      "citation-pbc-q41-overview-dai-tuong-pbc",
-      "citation-pbc-q41-overview-dai-tuong-classical-text",
-      "citation-pbc-q41-overview-phu-chu",
-      "citation-pbc-q41-overview-pbc",
-      "citation-ntt-q41-overview-trinh-di",
-      "citation-ntt-q41-overview-chu-hy",
-      "citation-ntt-q41-overview-dai-tuong-trinh-di",
-      "citation-ntt-q41-overview-dai-tuong-chu-hy",
-      "citation-ntt-q41-overview-dai-tuong-classical-text",
-      "citation-ntt-q41-overview-tien-nho-tu-tien-trai",
-      "citation-ntt-q41-overview-ho-van-phong",
-      "citation-ntt-q41-note-1",
-      "citation-ntt-q41-note-2",
-      "citation-ntt-q41-note-3",
-      "citation-ntt-q41-note-4",
-      "citation-ntt-q41-note-5",
-      "citation-ntt-q41-note-6",
-      "citation-ntt-q41-note-7",
-      "citation-ntt-q41-note-8",
-      "citation-ntt-q41-note-9",
-      "citation-nhl-q41-line-1-nhl",
-      "citation-pbc-q41-line-1-pbc",
-      "citation-ntt-q41-line-1-trinh-di",
-      "citation-ntt-q41-line-1-chu-hy",
-      "citation-nhl-q41-line-2-nhl",
-      "citation-pbc-q41-line-2-pbc",
-      "citation-ntt-q41-line-2-trinh-di",
-      "citation-ntt-q41-line-2-chu-hy",
-      "citation-nhl-q41-line-3-nhl",
-      "citation-pbc-q41-line-3-pbc",
-      "citation-ntt-q41-line-3-trinh-di",
-      "citation-ntt-q41-line-3-chu-hy",
-      "citation-ntt-q41-line-3-truong-trung-khe",
-      "citation-ntt-q41-line-3-ho-van-phong",
-      "citation-nhl-q41-line-4-nhl",
-      "citation-pbc-q41-line-4-pbc",
-      "citation-ntt-q41-line-4-trinh-di",
-      "citation-ntt-q41-line-4-chu-hy",
-      "citation-nhl-q41-line-5-nhl",
-      "citation-pbc-q41-line-5-pbc",
-      "citation-ntt-q41-line-5-trinh-di",
-      "citation-ntt-q41-line-5-chu-hy",
-      "citation-ntt-q41-line-5-tien-nho",
-      "citation-ntt-q41-overview-tien-nho-uong-nghien-chuong",
-      "citation-nhl-q41-line-6-nhl",
-      "citation-pbc-q41-line-6-pbc",
-      "citation-ntt-q41-line-6-trinh-di",
-      "citation-ntt-q41-line-6-chu-hy"
-    ],
-    "note": "Đối chiếu nguồn theo phạm vi trong báo cáo q41: các tóm lược và dẫn liệu đã chọn được so sánh với trang nguồn ghi nhận; không xác nhận toàn bộ các phần còn lại. citation-ntt-q41-overview-tien-nho-uong-nghien-chuong thuộc vị trí hào 5 (NTT PDF 648), dù tiền tố ID có chữ overview. Đây không phải phê duyệt chuyên gia độc lập, kiểm toán hoàn tất, xác nhận quyền sử dụng hoặc chứng nhận dự báo."
-  }
+  ]
 }

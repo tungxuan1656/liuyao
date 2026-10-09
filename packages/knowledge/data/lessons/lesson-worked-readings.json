@@ -1,185 +1,662 @@
 {
-  "schemaVersion": 2,
   "id": "lesson-worked-readings",
-  "type": "lesson",
+  "type": "article",
   "title": "Thực hành kiểm hình quẻ và bảng hào",
-  "aliases": [],
   "topicIds": ["topic-learning", "topic-casting", "topic-liuyao-foundations"],
-  "claims": [],
   "relatedIds": ["lesson-classical-reading", "lesson-liuyao-board"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — derivative lesson evidence comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceClaimIds": [
-      "rule-line-polarity-values-claim",
-      "term-line-value-definition",
-      "term-primary-hexagram-definition",
-      "term-changed-hexagram-definition",
-      "rule-moving-line-change-claim",
-      "claim-tung-to-ly",
-      "hexagram-06-structure",
-      "hexagram-10-structure",
-      "rule-palace-and-markers-claim",
-      "rule-na-jia-assignment-claim",
-      "rule-branch-element-claim",
-      "rule-six-relative-classification-claim",
-      "article-bpct-boards-ly-bpct-board-47-heading",
-      "article-bpct-boards-ly-bpct-board-47-line-1",
-      "article-bpct-boards-ly-bpct-board-47-line-2",
-      "article-bpct-boards-ly-bpct-board-47-line-3",
-      "article-bpct-boards-ly-bpct-board-47-line-4",
-      "article-bpct-boards-ly-bpct-board-47-line-5",
-      "article-bpct-boards-ly-bpct-board-47-line-6",
-      "hexagram-01-structure",
-      "article-bpct-boards-can-bpct-board-01-heading",
-      "article-bpct-boards-can-bpct-board-01-line-1",
-      "article-bpct-boards-can-bpct-board-01-line-2",
-      "article-bpct-boards-can-bpct-board-01-line-3",
-      "article-bpct-boards-can-bpct-board-01-line-4",
-      "article-bpct-boards-can-bpct-board-01-line-5",
-      "article-bpct-boards-can-bpct-board-01-line-6",
-      "hexagram-02-structure",
-      "rule-moving-line-change-change-outcome",
-      "hexagram-06-nhl-overview",
-      "hexagram-06-pbc-overview",
-      "hexagram-06-ntt-overview"
-    ],
-    "evidenceCitationIds": [
-      "citation-bpct-p11-12-technical",
-      "citation-nhl-p72-73-technical",
-      "citation-bpct-ch6-moving-and-still",
-      "citation-nhl-p73-technical",
-      "citation-nhl-p153-commentary",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-p166-commentary",
-      "citation-bpct-p12-14-technical",
-      "citation-bpct-p14-technical",
-      "citation-bpct-p52-technical",
-      "citation-bpct-p13-technical",
-      "citation-bpct-p8-technical",
-      "citation-bpct-p9-technical",
-      "citation-bpct-board-47-heading",
-      "citation-bpct-board-47-line-1",
-      "citation-bpct-board-47-line-2",
-      "citation-bpct-board-47-line-3",
-      "citation-bpct-board-47-line-4",
-      "citation-bpct-board-47-line-5",
-      "citation-bpct-board-47-line-6",
-      "citation-nhl-p131-commentary",
-      "citation-bpct-board-01-heading",
-      "citation-bpct-board-01-line-1",
-      "citation-bpct-board-01-line-2",
-      "citation-bpct-board-01-line-3",
-      "citation-bpct-board-01-line-4",
-      "citation-bpct-board-01-line-5",
-      "citation-bpct-board-01-line-6",
-      "citation-nhl-p137-commentary",
-      "citation-nhl-p154-commentary",
-      "citation-pbc-p100-101-commentary",
-      "citation-ntt-p196-197-commentary"
-    ],
-    "note": "Bản hướng dẫn tiếng Việt mới, đối chiếu từng khối với các claims đã phát hành và bảng kỳ vọng độc lập; không thêm mệnh đề nguồn hay đơn vị nguồn. Quy ước giá trị phần mềm được ghi riêng. Không tuyên bố kiểm lại toàn bộ PDF, audit093, verification hay certification."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "sequence": 4,
-  "prerequisiteLessonIds": ["lesson-classical-reading", "lesson-liuyao-board"],
-  "blocks": [
+  "status": "ready",
+  "entries": [
     {
       "id": "input-convention",
-      "kind": "prose",
       "text": "Các bài thực hành dưới đây cho sẵn sáu giá trị phần mềm, theo thứ tự 1–6 từ dưới lên và ruleset liuyao-standard-v1. Đây là quy ước nhập của dự án: 6 âm động, 7 dương tĩnh, 8 âm tĩnh, 9 dương động. Quẻ gốc dùng tính âm/dương trước biến; quẻ biến chỉ đổi các hào động. Khi không có động, trường quẻ biến là null, không phải một quẻ thứ hai có cùng tên.",
-      "supportingClaimIds": [
-        "rule-line-polarity-values-claim",
-        "term-line-value-definition",
-        "term-primary-hexagram-definition",
-        "term-changed-hexagram-definition",
-        "rule-moving-line-change-claim"
+      "references": [
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Line contract"
+        },
+        {
+          "documentPath": "docs/design-docs/domain-model.md",
+          "section": "## Reading result"
+        },
+        {
+          "documentPath": "docs/design-docs/calculation-pipeline.md",
+          "section": "## Changed hexagram"
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [77, 77],
+          "section": "Câu 1 — Giao, Trùng, Đơn, Sách và động biến",
+          "printedPages": ["63", "63"]
+        }
       ],
-      "position": 1
+      "links": [
+        {
+          "recordId": "rule-line-polarity-values",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "term-line-value",
+          "sectionId": "definition"
+        },
+        {
+          "recordId": "term-primary-hexagram",
+          "sectionId": "definition"
+        },
+        {
+          "recordId": "term-changed-hexagram",
+          "sectionId": "definition"
+        },
+        {
+          "recordId": "rule-moving-line-change",
+          "sectionId": "claim"
+        }
+      ]
     },
     {
       "id": "tung-to-ly",
-      "kind": "worked-example",
       "text": "Đầu vào [6, 7, 8, 7, 7, 7]: hào 1 động, còn 2–6 tĩnh. Hình gốc âm–dương–âm / dương–dương–dương là Khảm dưới, Càn trên: Tụng (hexagram-06). Đổi riêng vị trí 1 thành dương được dương–dương–âm / dương–dương–dương: Đoài dưới, Càn trên, tức Lý (hexagram-10), đúng ví dụ Nguyễn Hiến Lê. Bảng gốc thuộc cung Ly, Hỏa, Thế 4, Ứng 1. Theo chiều 1–6, các hàng can chi / hành / Lục thân là Mậu Dần / Mộc / Phụ mẫu; Mậu Thìn / Thổ / Tử tôn; Mậu Ngọ / Hỏa / Huynh đệ; Nhâm Ngọ / Hỏa / Huynh đệ; Nhâm Thân / Kim / Thê tài; Nhâm Tuất / Thổ / Tử tôn. Những hàng này là bảng của Tụng, không phải bảng của Lý.",
-      "supportingClaimIds": [
-        "claim-tung-to-ly",
-        "rule-moving-line-change-claim",
-        "hexagram-06-structure",
-        "hexagram-10-structure",
-        "rule-palace-and-markers-claim",
-        "rule-na-jia-assignment-claim",
-        "rule-branch-element-claim",
-        "rule-six-relative-classification-claim",
-        "article-bpct-boards-ly-bpct-board-47-heading",
-        "article-bpct-boards-ly-bpct-board-47-line-1",
-        "article-bpct-boards-ly-bpct-board-47-line-2",
-        "article-bpct-boards-ly-bpct-board-47-line-3",
-        "article-bpct-boards-ly-bpct-board-47-line-4",
-        "article-bpct-boards-ly-bpct-board-47-line-5",
-        "article-bpct-boards-ly-bpct-board-47-line-6"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [73, 73],
+          "section": "Động và biến — Tụng đổi hào sơ thành Lý",
+          "printedPages": ["73", "73"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [77, 77],
+          "section": "Câu 1 — Giao, Trùng, Đơn, Sách và động biến",
+          "printedPages": ["63", "63"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [153, 153],
+          "section": "Thiên Thủy Tụng — cấu tạo và Thoán từ",
+          "printedPages": ["153", "153"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [166, 166],
+          "section": "Thiên Trạch Lý — cấu tạo và Thoán từ",
+          "printedPages": ["166", "166"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — nhan đề và hình",
+          "printedPages": ["50", "50"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — hình hào 1",
+          "printedPages": ["50", "50"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — hình hào 2",
+          "printedPages": ["50", "50"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — hình hào 3",
+          "printedPages": ["50", "50"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — hình hào 4",
+          "printedPages": ["50", "50"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — hình hào 5",
+          "printedPages": ["50", "50"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [61, 61],
+          "section": "Cung Li, board 7, Thiên Thuỷ TỤNG — hình hào 6",
+          "printedPages": ["50", "50"]
+        }
       ],
-      "position": 2
+      "links": [
+        {
+          "recordId": "article-tung-to-ly",
+          "sectionId": "claim-tung-to-ly"
+        },
+        {
+          "recordId": "rule-moving-line-change",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "hexagram-06",
+          "sectionId": "structure"
+        },
+        {
+          "recordId": "hexagram-10",
+          "sectionId": "structure"
+        },
+        {
+          "recordId": "rule-palace-and-markers",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-na-jia-assignment",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-branch-element",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-six-relative-classification",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-heading"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-line-1"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-line-2"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-line-3"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-line-4"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-line-5"
+        },
+        {
+          "recordId": "article-bpct-boards-ly",
+          "sectionId": "bpct-board-47-line-6"
+        }
+      ],
+      "title": "Bài thực hành"
     },
     {
       "id": "static-can",
-      "kind": "worked-example",
       "text": "Đầu vào [7, 7, 7, 7, 7, 7]: không hào nào động. Càn ở cả hai nửa tạo Thuần Càn (hexagram-01); quẻ biến null. Bảng gốc thuộc cung Càn, Kim, Thế 6, Ứng 3. Đọc bảng gốc từ 1 đến 6: Giáp Tý / Thủy / Tử tôn; Giáp Dần / Mộc / Thê tài; Giáp Thìn / Thổ / Phụ mẫu; Nhâm Ngọ / Hỏa / Quan quỷ; Nhâm Thân / Kim / Huynh đệ; Nhâm Tuất / Thổ / Phụ mẫu. Đây là các nhãn phân loại, không phải lời dự báo.",
-      "supportingClaimIds": [
-        "hexagram-01-structure",
-        "rule-moving-line-change-claim",
-        "rule-palace-and-markers-claim",
-        "rule-na-jia-assignment-claim",
-        "rule-branch-element-claim",
-        "rule-six-relative-classification-claim",
-        "article-bpct-boards-can-bpct-board-01-heading",
-        "article-bpct-boards-can-bpct-board-01-line-1",
-        "article-bpct-boards-can-bpct-board-01-line-2",
-        "article-bpct-boards-can-bpct-board-01-line-3",
-        "article-bpct-boards-can-bpct-board-01-line-4",
-        "article-bpct-boards-can-bpct-board-01-line-5",
-        "article-bpct-boards-can-bpct-board-01-line-6"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [131, 131],
+          "section": "Thuần Càn — cấu tạo và Thoán từ",
+          "printedPages": ["131", "131"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [77, 77],
+          "section": "Câu 1 — Giao, Trùng, Đơn, Sách và động biến",
+          "printedPages": ["63", "63"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — nhan đề và hình",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 1",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 2",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 3",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 4",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 5",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 6",
+          "printedPages": ["38", "38"]
+        }
       ],
-      "position": 3
+      "links": [
+        {
+          "recordId": "hexagram-01",
+          "sectionId": "structure"
+        },
+        {
+          "recordId": "rule-moving-line-change",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-palace-and-markers",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-na-jia-assignment",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-branch-element",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-six-relative-classification",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-heading"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-1"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-2"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-3"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-4"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-5"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-6"
+        }
+      ],
+      "title": "Bài thực hành"
     },
     {
       "id": "all-moving-can",
-      "kind": "worked-example",
       "text": "Đầu vào [9, 9, 9, 9, 9, 9]: cả sáu vị trí 1–6 động, nhưng hình gốc vẫn là Thuần Càn (hexagram-01). Đổi đồng thời sáu nét dương sang âm được Thuần Khôn (hexagram-02), nội và ngoại đều Khôn. Bảng gốc vẫn là cung Càn, Kim, Thế 6, Ứng 3; can chi, hành và Lục thân ở sáu hàng giống bài Càn tĩnh phía trước, chỉ cờ động khác. Đây là bài ghép quy tắc biến với hai hình quẻ đã có bằng chứng, không gán ý nghĩa tốt/xấu cho sáu hào động.",
-      "supportingClaimIds": [
-        "hexagram-01-structure",
-        "hexagram-02-structure",
-        "rule-moving-line-change-claim",
-        "rule-moving-line-change-change-outcome",
-        "rule-palace-and-markers-claim",
-        "rule-na-jia-assignment-claim",
-        "rule-branch-element-claim",
-        "rule-six-relative-classification-claim",
-        "article-bpct-boards-can-bpct-board-01-heading",
-        "article-bpct-boards-can-bpct-board-01-line-1",
-        "article-bpct-boards-can-bpct-board-01-line-2",
-        "article-bpct-boards-can-bpct-board-01-line-3",
-        "article-bpct-boards-can-bpct-board-01-line-4",
-        "article-bpct-boards-can-bpct-board-01-line-5",
-        "article-bpct-boards-can-bpct-board-01-line-6"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [131, 131],
+          "section": "Thuần Càn — cấu tạo và Thoán từ",
+          "printedPages": ["131", "131"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [137, 137],
+          "section": "Thuần Khôn — cấu tạo và Thoán từ",
+          "printedPages": ["137", "137"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 12],
+          "section": "X — Phép dùng đồng tiền thay cỏ thi",
+          "printedPages": ["5", "6"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [77, 77],
+          "section": "Câu 1 — Giao, Trùng, Đơn, Sách và động biến",
+          "printedPages": ["63", "63"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [12, 14],
+          "section": "XI–XIII — Bát cung và an Thế Ứng",
+          "printedPages": ["6", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [52, 52],
+          "section": "Cung Khảm — Trạch Hỏa Cách",
+          "printedPages": ["41", "41"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — nhan đề và hình",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 1",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 2",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 3",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 4",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 5",
+          "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [49, 49],
+          "section": "Cung Càn, board 1, Bát Thuần CÀN — hình hào 6",
+          "printedPages": ["38", "38"]
+        }
       ],
-      "position": 4
+      "links": [
+        {
+          "recordId": "hexagram-01",
+          "sectionId": "structure"
+        },
+        {
+          "recordId": "hexagram-02",
+          "sectionId": "structure"
+        },
+        {
+          "recordId": "rule-moving-line-change",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-moving-line-change",
+          "sectionId": "change-outcome"
+        },
+        {
+          "recordId": "rule-palace-and-markers",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-na-jia-assignment",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-branch-element",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "rule-six-relative-classification",
+          "sectionId": "claim"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-heading"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-1"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-2"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-3"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-4"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-5"
+        },
+        {
+          "recordId": "article-bpct-boards-can",
+          "sectionId": "bpct-board-01-line-6"
+        }
+      ],
+      "title": "Bài thực hành"
     },
     {
       "id": "reading-boundary",
-      "kind": "prose",
       "text": "Khi chuyển sang đọc lời kinh, hãy tra đúng quẻ và vị trí như bài 2, giữ lời Nguyễn Hiến Lê, Phan Bội Châu và Trình Di qua Ngô Tất Tố riêng nhau. Các bảng vừa kiểm chỉ cho hình quẻ, động/tĩnh và quan hệ trên bảng; chúng không biến lời giải cổ điển thành đáp án tự động. Ví dụ Tụng ở đây không phải tư vấn kiện tụng, và động không đồng nghĩa với có lợi.",
-      "supportingClaimIds": [
-        "hexagram-06-nhl-overview",
-        "hexagram-06-pbc-overview",
-        "hexagram-06-ntt-overview",
-        "rule-moving-line-change-change-outcome"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [153, 153],
+          "section": "Thiên Thủy Tụng — cấu tạo và Thoán từ",
+          "printedPages": ["153", "153"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [154, 154],
+          "section": "Thiên Thủy Tụng — Hào 1; Thiên Thủy Tụng — Hào 2",
+          "printedPages": ["154", "154"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [100, 101],
+          "section": "Thiên Thủy Tụng — Soán từ"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [196, 197],
+          "section": "Thiên Thủy Tụng — Truyện của Trình Di; Bản nghĩa của Chu Hy"
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [77, 77],
+          "section": "Câu 1 — Giao, Trùng, Đơn, Sách và động biến",
+          "printedPages": ["63", "63"]
+        }
       ],
-      "position": 5
+      "links": [
+        {
+          "recordId": "hexagram-06",
+          "sectionId": "nhl-overview"
+        },
+        {
+          "recordId": "hexagram-06",
+          "sectionId": "pbc-overview"
+        },
+        {
+          "recordId": "hexagram-06",
+          "sectionId": "ntt-overview"
+        },
+        {
+          "recordId": "rule-moving-line-change",
+          "sectionId": "change-outcome"
+        }
+      ]
     }
-  ]
+  ],
+  "sequence": 4
 }

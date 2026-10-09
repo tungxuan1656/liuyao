@@ -1,5 +1,7 @@
 # feat-097 — Verify audit invalidation and future correction workflow
 
+> Historical implementation. The [simplified knowledge model](../docs/design-docs/knowledge-model.md#migration-history) supersedes the former audit and provenance machinery. Preserve completed evidence; do not extend that machinery.
+
 ## Goal
 
 Prove that future corrections reopen affected approvals.

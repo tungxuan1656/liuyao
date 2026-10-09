@@ -44,4 +44,4 @@ Automated interpretation, calendars, UI changes, and complete corpus certificati
 - Verification: `./init.sh` passes 263 tests; fingerprints, generated freshness, and 101 local documentation routes pass. Checked 223 NHL citations and five new BPCT printed locators.
 - Commits: Classical `3b9ab7e`; BPCT `b7fce51`.
 - Blockers: none for selected content.
-- Next: Review the [manifest's next batch](../packages/knowledge/data/manifest.json).
+- Next: Review the [manifest's next batch](../docs/reviews/knowledge/README.md).
