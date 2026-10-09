@@ -69,7 +69,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: active.
+- Evidence: Writers running on quẻ 25–28; see `/Users/tungdoan/.cache/liuyao/feat-074/checkpoint.md`.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Consume the four writer outputs, run `validate:corpus`, freeze the revision, then dispatch round 1.
