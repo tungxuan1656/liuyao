@@ -96,7 +96,11 @@ New interpretation, calendar, or UI behavior.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
-- Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- State: active — all twenty-four hào and the four remaining criteria are implemented and reviewed; the remaining steps are the final exact-head review, the PR, exact-head CI, and the merge.
+- Evidence:
+  - Content: `packages/knowledge/data/hexagrams/hexagram-09.json` … `hexagram-12.json` at `HEAD`; five overview entries per quẻ and four attributed explanations on each of the 24 hào (Nguyễn Hiến Lê, Phan Bội Châu, Trình Di and Chu Hy via "Ngô Tất Tố — dịch và chú giải"); seven `notes[]` entries, each naming a real source discrepancy with a page locator; no legacy `section`/`printedPages`/`condition` fields remain.
+  - Verification: `./init.sh` passes (181 core tests, 97 knowledge tests, format, lint, typecheck, build, package exports); `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` passes with 381 records, 381 ready, 4 supplied books.
+  - Independent review: three read-only `reviewer` passes (rounds 1–3). Round 1 found 6 P1 and 4 P2, all fixed in `43a85cf`. Round 2 confirmed all ten fixed and left three P2, all fixed in `43a85cf`. Round 3 confirmed all three focus fixes against the extracted source, raised one further P2 in `hexagram-11.json` `lines[1].entries[0]` (an alternative reading presented as one settled instruction), and closed with "no P0/P1 findings".
+  - Estimator limits: the reviewers cannot inspect PDF page images or run test commands, and the baseline/frozen-SHA invariant comparison in `.agent-work/feat-070/invariants.md` is Leader-generated.
+- Dependencies: none outstanding; `feat-067` and the matching `feat-041`/`feat-044`–`feat-049` are `done`.
+- Next: complete the final exact-head review, push `feat/070-review-hexagrams-09-12`, open the single PR, wait for exact-head CI, merge, set `feature_index.json` to `done`, and record the result in `progress.md`.
