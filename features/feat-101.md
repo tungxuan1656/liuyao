@@ -1,5 +1,7 @@
 # feat-101 — Extended knowledge contracts
 
+> Historical implementation. The [simplified knowledge model](../docs/design-docs/knowledge-model.md#migration-history) supersedes the former audit and provenance machinery. Preserve completed evidence; do not extend that machinery.
+
 ## Goal
 
 Represent versioned knowledge records and evidence.
@@ -10,7 +12,7 @@ Implement versioned schemas, V1 upcast, evidence checks, release projection, and
 
 ## Acceptance
 
-- [x] Implement the approved [record](../docs/design-docs/knowledge-model.md#approved-extended-record-contract) and [release](../docs/design-docs/knowledge-model.md#approved-release-projection-and-snapshot-identity) contracts.
+- [x] Implement the approved [record](../docs/design-docs/knowledge-model.md#record-contract) and [release](../docs/design-docs/knowledge-model.md#generated-files) contracts.
 - [x] Validate lesson evidence, ordering, prerequisites, targets, and cycles at build time and runtime.
 - [x] Preserve figure/table evidence, orientation, and alternatives.
 - [x] Validate project-convention evidence against registered sections and revisions without fabricated book citations.

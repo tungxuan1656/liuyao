@@ -1,1144 +1,544 @@
 {
-  "schemaVersion": 2,
   "id": "article-bpct-chapter-fifteen-teacher",
   "type": "article",
   "title": "Cầu Sư BPCT — chương 15",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-opening-verse",
-      "kind": "author-interpretation",
-      "text": "Phú phân công cha nuôi và thầy khai mở điều lành; đây là khuôn giáo dục lịch sử, không nghĩa vụ giới hiện nay.",
-      "citationIds": ["citation-bpct-ch15-opening-verse"],
+      "text": "Phú phân công cha nuôi và thầy khai mở điều lành; đây là khuôn giáo dục lịch sử, không nghĩa vụ giới hiện nay.\n\nPhú muốn tìm thầy thì xét Văn thư.\n\nDụng suy/vượng được phú gắn không/có mô phạm.\n\nHình hại được phú gắn roi răn.\n\nPhú gặp Tuế/Thân gắn sống bằng bổng dạy.\n\nĐoài/Chấn/Tốn đối Li/Càn/Khôn được phú gắn tạp học/chuyên kinh.\n\nBản/nội gần quê và tha/ngoại xa được phú phân.\n\nSinh Thế được phú gắn thân hay bạn.\n\nDụng hoá Quan được phú gắn quý hiển.\n\nTĩnh hợp Phúc gắn dạy khéo; động Long Đức được phú gắn nghiêm.\n\nPhụ Mộ được phú ví thầy như Biên Hiếu Tiên ngủ nhiều.\n\nVăn ở Thân được phú ví hiểu rộng như Lý Lão Đam.\n\nPhụ hoá Tử được phú gắn thơ phú.\n\nHuynh–Quỷ được phú gắn gian trá.\n\nDụng Không động được phú gắn lời/lòng trái nhau.\n\nThế/Ứng động được phú gắn nhiều nhà mời.\n\nỨng Phụ sinh Thế được phú gắn học nhờ.\n\nPhụ ngoại hợp Phúc được phú gắn học trò mang hòm theo thầy.\n\nQuỷ hoá Văn khắc Thế được phú gắn tranh tụng vì học.\n\nPhúc được Nhật/Nguyệt giúp được phú gắn trò hơn thầy.\n\nPhú đặt Phụ/Tử bị thương đối với Quan được sinh giúp.\n\nPhụ bị xung kích được phú gắn không lâu.\n\nThế/Thân Không hoặc hãm được phú gắn khó thành.\n\nTài hoá Phụ được phú gắn họ vợ giới thiệu thầy.\n\nPhụ phục Phúc được phú gắn thầy từng dạy ở chùa.\n\nPhú kết bằng tìm lý qua sáu hào và coi trọng đọc sách.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-opening — Phú và cách đọc",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-01 — Phú và cách đọc",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-02 — Phú và cách đọc",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 185],
+          "section": "bpct-ch15-03 — Phú và cách đọc",
+          "printedPages": ["155", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-04 — Phú và cách đọc",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-05 — Phú và cách đọc",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-06 — Phú và cách đọc",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 186],
+          "section": "bpct-ch15-07 — Phú và cách đọc",
+          "printedPages": ["156", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-08 — Phú và cách đọc",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-09 — Phú và cách đọc",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-10 — Phú và cách đọc",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-11 — Phú và cách đọc",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-12 — Phú và cách đọc",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-13 — Phú và cách đọc",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-14 — Phú và cách đọc",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-15 — Phú và cách đọc",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-17 — Phú và cách đọc",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 188],
+          "section": "bpct-ch15-18 — Phú và cách đọc",
+          "printedPages": ["158", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-19 — Phú và cách đọc",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-20 — Phú và cách đọc",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-21 — Phú và cách đọc",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-22 — Phú và cách đọc",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-23 — Phú và cách đọc",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-24 — Phú và cách đọc",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-25 — Phú và cách đọc",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-closing — Phú và cách đọc",
+          "printedPages": ["160", "160"]
+        }
+      ],
       "attribution": {
         "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
         "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-opening-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phú phân công cha nuôi và thầy khai mở điều lành; đây là khuôn giáo dục lịch sử, không nghĩa vụ giới hiện nay.",
-      "citationIds": ["citation-bpct-ch15-opening-rendering"],
+      "text": "Nghĩa Việt trình bày ý: Phú phân công cha nuôi và thầy khai mở điều lành; đây là khuôn giáo dục lịch sử, không nghĩa vụ giới hiện nay.\n\nNghĩa Việt trình bày ý: Phú muốn tìm thầy thì xét Văn thư.\n\nNghĩa Việt trình bày ý: Dụng suy/vượng được phú gắn không/có mô phạm.\n\nNghĩa Việt trình bày ý: Hình hại được phú gắn roi răn.\n\nNghĩa Việt trình bày ý: Phú gặp Tuế/Thân gắn sống bằng bổng dạy.\n\nNghĩa Việt trình bày ý: Đoài/Chấn/Tốn đối Li/Càn/Khôn được phú gắn tạp học/chuyên kinh.\n\nNghĩa Việt trình bày ý: Bản/nội gần quê và tha/ngoại xa được phú phân.\n\nNghĩa Việt trình bày ý: Sinh Thế được phú gắn thân hay bạn.\n\nNghĩa Việt trình bày ý: Dụng hoá Quan được phú gắn quý hiển.\n\nNghĩa Việt trình bày ý: Tĩnh hợp Phúc gắn dạy khéo; động Long Đức được phú gắn nghiêm.\n\nNghĩa Việt trình bày ý: Phụ Mộ được phú ví thầy như Biên Hiếu Tiên ngủ nhiều.\n\nNghĩa Việt trình bày ý: Văn ở Thân được phú ví hiểu rộng như Lý Lão Đam.\n\nNghĩa Việt trình bày ý: Phụ hoá Tử được phú gắn thơ phú.\n\nNghĩa Việt trình bày ý: Huynh–Quỷ được phú gắn gian trá.\n\nNghĩa Việt trình bày ý: Dụng Không động được phú gắn lời/lòng trái nhau.\n\nNghĩa Việt trình bày ý: Thế/Ứng động được phú gắn nhiều nhà mời.\n\nNghĩa Việt trình bày ý: Ứng Phụ sinh Thế được phú gắn học nhờ.\n\nNghĩa Việt trình bày ý: Phụ ngoại hợp Phúc được phú gắn học trò mang hòm theo thầy.\n\nNghĩa Việt trình bày ý: Quỷ hoá Văn khắc Thế được phú gắn tranh tụng vì học.\n\nNghĩa Việt trình bày ý: Phúc được Nhật/Nguyệt giúp được phú gắn trò hơn thầy.\n\nNghĩa Việt trình bày ý: Phú đặt Phụ/Tử bị thương đối với Quan được sinh giúp.\n\nNghĩa Việt trình bày ý: Phụ bị xung kích được phú gắn không lâu.\n\nNghĩa Việt trình bày ý: Thế/Thân Không hoặc hãm được phú gắn khó thành.\n\nNghĩa Việt trình bày ý: Tài hoá Phụ được phú gắn họ vợ giới thiệu thầy.\n\nNghĩa Việt trình bày ý: Phụ phục Phúc được phú gắn thầy từng dạy ở chùa.\n\nNghĩa Việt trình bày ý: Phú kết bằng tìm lý qua sáu hào và coi trọng đọc sách.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-opening — Nghĩa tiếng Việt",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-01 — Nghĩa tiếng Việt",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-02 — Nghĩa tiếng Việt",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-03 — Nghĩa tiếng Việt",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-04 — Nghĩa tiếng Việt",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-05 — Nghĩa tiếng Việt",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-06 — Nghĩa tiếng Việt",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-07 — Nghĩa tiếng Việt",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-08 — Nghĩa tiếng Việt",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-09 — Nghĩa tiếng Việt",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-10 — Nghĩa tiếng Việt",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-11 — Nghĩa tiếng Việt",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-12 — Nghĩa tiếng Việt",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-13 — Nghĩa tiếng Việt",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-14 — Nghĩa tiếng Việt",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-15 — Nghĩa tiếng Việt",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-17 — Nghĩa tiếng Việt",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-18 — Nghĩa tiếng Việt",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-19 — Nghĩa tiếng Việt",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-20 — Nghĩa tiếng Việt",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-21 — Nghĩa tiếng Việt",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-22 — Nghĩa tiếng Việt",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-23 — Nghĩa tiếng Việt",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-24 — Nghĩa tiếng Việt",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-25 — Nghĩa tiếng Việt",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-closing — Nghĩa tiếng Việt",
+          "printedPages": ["160", "160"]
+        }
+      ],
       "attribution": {
         "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-01-verse",
-      "kind": "author-interpretation",
-      "text": "Phú muốn tìm thầy thì xét Văn thư.",
-      "citationIds": ["citation-bpct-ch15-01-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-01-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phú muốn tìm thầy thì xét Văn thư.",
-      "citationIds": ["citation-bpct-ch15-01-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-01-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải gọi Văn thư là Phụ Mẫu, dùng cho sách, học quán và thành tích học. Không đo năng lực học thật bằng hào.",
-      "citationIds": ["citation-bpct-ch15-01-commentary"],
+      "text": "Bình giải gọi Văn thư là Phụ Mẫu, dùng cho sách, học quán và thành tích học. Không đo năng lực học thật bằng hào.\n\nThầy mời chưa rõ danh phận dùng Ứng; có danh phận xét theo quan hệ. Học trò tự tìm thầy lấy Phụ dù tuổi nào. Suy/vượng gắn học lực kém/uyên bác; không mặc định mọi câu hỏi dùng Ứng.\n\nHạ sở là roi; Dụng Hình/Hại cùng Bạch Hổ, vượng tăng được nguồn gắn nóng nảy/roi vọt. Không hợp thức hoá trừng phạt thân thể hoặc nhận định giáo viên qua bói.\n\nDụng ở Quái thân hoặc trì Thái Tuế được nguồn gắn thầy dùng nghiêm khắc làm nghề nuôi nhà. Giữ câu diễn nghề ở nghĩa Việt riêng, không đo động cơ thầy thật.\n\nBình giải mở nhóm tạp học ra Chấn/Tốn/Cấn/Khảm/Đoài, chuyên kinh Li/Càn/Khôn; chú1 định chuyên kinh là Nho, tạp học gồm Nho/Y/Lý/Số. Không coi là phân loại học thuật hiện đại.\n\nBình giải riêng bản cung ngoại quái là người cùng quê ở xa, tha cung nội quái là người khác quận ở gần. Không lược hai tổ hợp chéo này.\n\nSinh hợp Thế gắn bà con; không cùng cung Thế gắn bạn quen. Không xác minh quan hệ gia đình.\n\nBình giải giữ hoá Quan; Hổ/hình hại lại gắn bệnh; Nguyệt kiến/Thanh Long gắn tương lai tốt. Không bảo đảm thành công hay chẩn đoán.\n\nDụng hợp Tử gắn thầy trò hợp, dạy dần; Phụ động khắc Tử cùng Hổ/hình hại gắn nghiêm khó cho trò. Phú nêu Long Đức còn bình giải nêu Hổ, không gộp hai biểu tượng thành một.\n\nPhụ nhập Mộ hoặc Không hoá Mộ gắn nhác dạy/học kém; Nhật phá Mộ lại gắn học lực khác thường. Chú2 nhận diện Biên Thiều tự Hiếu Tiên; ví dụ là điển tích, không kết quả nghiệm chứng.\n\nVăn thư dùng cho khả năng thầy; vắng gắn kém, tĩnh Quái thân hoặc sinh vượng gắn giỏi. Chú3 nhận Lý Lão Đam là Lão Tử, không khẳng định thật có khả năng tương đương.\n\nPhụ hoá Phúc gắn văn giỏi, Hình/Hại/bệnh bại gắn sơ hở; Tử Nguyệt kiến/Long gắn xuất khẩu thành văn. Tử hợp Phụ còn gắn thầy mang con theo; không bỏ nghĩa phụ này.\n\nHuynh hoá Quỷ hoặc Quỷ hoá Huynh gắn gian trá, khắc Thế thêm thị phi. Không đánh giá đạo đức hoặc buộc tội thầy qua quẻ.\n\nTác giả muốn tĩnh/vượng chứ không động/Không: động Không gắn không thật, tĩnh Không gắn nhác dạy, hoá Không cũng vậy. Không đo sự thành thực.\n\nCùng động gắn hai nơi mời thầy, cùng Không gắn cả hai không thành; không bảo có đúng hai lời mời thật.\n\nBình giải đặt Phụ tại Ứng, Thế động sinh hợp Phụ: học theo ở nhà người khác. Chú4 nói giả quán không phải nhà mình. Nguồn nhảy15 sang17; không tạo16.\n\nTrò tự hỏi dùng Thế, cha/anh hỏi dùng Tử cho học trò. Phụ ngoại ở tha cung tĩnh và Tử động hợp Phụ mới gắn du học xa; không chỉ mọi Phụ ngoại đều du học.\n\nQuỷ hoá Phụ khắc Thế, Phụ hoá Quỷ hoặc Quan/Phụ cùng động khắc Thế được bình giải gắn kiện về sau. Không dự báo pháp lý.\n\nTử cần hữu khí bất Không, được Nhật Nguyệt/động sinh hợp để gắn tiến bộ; Dụng thầy suy mới gắn trò hơn thầy. Không đo học lực.\n\nCha mời thầy dùng Thế cho cha, Tử cho con, Ứng cho thầy. Thế/Tử cùng bị hình khắc gắn hại; Quan khắc cả hai mà được Tài trợ bị coi không tốt. Không lẫn chữ Phụ trong phú với mặc định thầy ở mọi câu hỏi.\n\nPhụ cần hữu khí nhưng không nên động vì khắc Tử; nguồn gắn việc dạy không bền. Không ấn định thời hạn hợp đồng.\n\nBình giải bao gồm Thế/Ứng/Thân Không và xung khắc, không chỉ một hào. Không bảo kết quả thật.\n\nPhụ do Tài bản cung hoá thành gắn họ vợ giới thiệu trong ngày; Huynh hoá Phụ riêng là bạn giới thiệu. Không dùng bói dự báo giới thiệu.\n\nPhụ phục Tử gắn đã mở dạy tại chùa, Phụ phục Thế gắn thầy cũ. Giữ hai vị trí, không xem là lịch sử cá nhân xác thực.\n\nBình giải mở câu hỏi ngoài đạo học sang học nghề/tu: tự hỏi vẫn dùng Phụ cho thầy, Thế cho trò; người khác hỏi phải xét quan hệ, bạn/anh em dùng Huynh. Thầy trò sinh hợp bị coi thuận, khắc xung nghịch; không biến thành lời khuyên chọn nghề/tôn giáo.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-01 — Lời bình",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [184, 184],
+          "section": "bpct-ch15-02 — Lời bình",
+          "printedPages": ["155", "155"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-03 — Lời bình",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-04 — Lời bình",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-05 — Lời bình",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-06 — Lời bình",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-07 — Lời bình",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-08 — Lời bình",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-09 — Lời bình",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-10 — Lời bình",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-11 — Lời bình",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-12 — Lời bình",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-13 — Lời bình",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-14 — Lời bình",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-15 — Lời bình",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-17 — Lời bình",
+          "printedPages": ["158", "158"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-18 — Lời bình",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-19 — Lời bình",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-20 — Lời bình",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-21 — Lời bình",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [188, 188],
+          "section": "bpct-ch15-22 — Lời bình",
+          "printedPages": ["159", "159"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-23 — Lời bình",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-24 — Lời bình",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-25 — Lời bình",
+          "printedPages": ["160", "160"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [189, 189],
+          "section": "bpct-ch15-closing — Lời bình",
+          "printedPages": ["160", "160"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-02-verse",
-      "kind": "author-interpretation",
-      "text": "Dụng suy/vượng được phú gắn không/có mô phạm.",
-      "citationIds": ["citation-bpct-ch15-02-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-02-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Dụng suy/vượng được phú gắn không/có mô phạm.",
-      "citationIds": ["citation-bpct-ch15-02-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-02-commentary",
-      "kind": "author-interpretation",
-      "text": "Thầy mời chưa rõ danh phận dùng Ứng; có danh phận xét theo quan hệ. Học trò tự tìm thầy lấy Phụ dù tuổi nào. Suy/vượng gắn học lực kém/uyên bác; không mặc định mọi câu hỏi dùng Ứng.",
-      "citationIds": ["citation-bpct-ch15-02-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-03-verse",
-      "kind": "author-interpretation",
-      "text": "Hình hại được phú gắn roi răn.",
-      "citationIds": ["citation-bpct-ch15-03-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-03-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Hình hại được phú gắn roi răn.",
-      "citationIds": ["citation-bpct-ch15-03-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-03-commentary",
-      "kind": "author-interpretation",
-      "text": "Hạ sở là roi; Dụng Hình/Hại cùng Bạch Hổ, vượng tăng được nguồn gắn nóng nảy/roi vọt. Không hợp thức hoá trừng phạt thân thể hoặc nhận định giáo viên qua bói.",
-      "citationIds": ["citation-bpct-ch15-03-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-04-verse",
-      "kind": "author-interpretation",
-      "text": "Phú gặp Tuế/Thân gắn sống bằng bổng dạy.",
-      "citationIds": ["citation-bpct-ch15-04-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-04-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phú gặp Tuế/Thân gắn sống bằng bổng dạy.",
-      "citationIds": ["citation-bpct-ch15-04-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-04-commentary",
-      "kind": "author-interpretation",
-      "text": "Dụng ở Quái thân hoặc trì Thái Tuế được nguồn gắn thầy dùng nghiêm khắc làm nghề nuôi nhà. Giữ câu diễn nghề ở nghĩa Việt riêng, không đo động cơ thầy thật.",
-      "citationIds": ["citation-bpct-ch15-04-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-05-verse",
-      "kind": "author-interpretation",
-      "text": "Đoài/Chấn/Tốn đối Li/Càn/Khôn được phú gắn tạp học/chuyên kinh.",
-      "citationIds": ["citation-bpct-ch15-05-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-05-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Đoài/Chấn/Tốn đối Li/Càn/Khôn được phú gắn tạp học/chuyên kinh.",
-      "citationIds": ["citation-bpct-ch15-05-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-05-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải mở nhóm tạp học ra Chấn/Tốn/Cấn/Khảm/Đoài, chuyên kinh Li/Càn/Khôn; chú1 định chuyên kinh là Nho, tạp học gồm Nho/Y/Lý/Số. Không coi là phân loại học thuật hiện đại.",
-      "citationIds": ["citation-bpct-ch15-05-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-06-verse",
-      "kind": "author-interpretation",
-      "text": "Bản/nội gần quê và tha/ngoại xa được phú phân.",
-      "citationIds": ["citation-bpct-ch15-06-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-06-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Bản/nội gần quê và tha/ngoại xa được phú phân.",
-      "citationIds": ["citation-bpct-ch15-06-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-06-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải riêng bản cung ngoại quái là người cùng quê ở xa, tha cung nội quái là người khác quận ở gần. Không lược hai tổ hợp chéo này.",
-      "citationIds": ["citation-bpct-ch15-06-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-07-verse",
-      "kind": "author-interpretation",
-      "text": "Sinh Thế được phú gắn thân hay bạn.",
-      "citationIds": ["citation-bpct-ch15-07-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-07-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Sinh Thế được phú gắn thân hay bạn.",
-      "citationIds": ["citation-bpct-ch15-07-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-07-commentary",
-      "kind": "author-interpretation",
-      "text": "Sinh hợp Thế gắn bà con; không cùng cung Thế gắn bạn quen. Không xác minh quan hệ gia đình.",
-      "citationIds": ["citation-bpct-ch15-07-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-08-verse",
-      "kind": "author-interpretation",
-      "text": "Dụng hoá Quan được phú gắn quý hiển.",
-      "citationIds": ["citation-bpct-ch15-08-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-08-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Dụng hoá Quan được phú gắn quý hiển.",
-      "citationIds": ["citation-bpct-ch15-08-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-08-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải giữ hoá Quan; Hổ/hình hại lại gắn bệnh; Nguyệt kiến/Thanh Long gắn tương lai tốt. Không bảo đảm thành công hay chẩn đoán.",
-      "citationIds": ["citation-bpct-ch15-08-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-09-verse",
-      "kind": "author-interpretation",
-      "text": "Tĩnh hợp Phúc gắn dạy khéo; động Long Đức được phú gắn nghiêm.",
-      "citationIds": ["citation-bpct-ch15-09-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-09-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Tĩnh hợp Phúc gắn dạy khéo; động Long Đức được phú gắn nghiêm.",
-      "citationIds": ["citation-bpct-ch15-09-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-09-commentary",
-      "kind": "author-interpretation",
-      "text": "Dụng hợp Tử gắn thầy trò hợp, dạy dần; Phụ động khắc Tử cùng Hổ/hình hại gắn nghiêm khó cho trò. Phú nêu Long Đức còn bình giải nêu Hổ, không gộp hai biểu tượng thành một.",
-      "citationIds": ["citation-bpct-ch15-09-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-10-verse",
-      "kind": "author-interpretation",
-      "text": "Phụ Mộ được phú ví thầy như Biên Hiếu Tiên ngủ nhiều.",
-      "citationIds": ["citation-bpct-ch15-10-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-10-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phụ Mộ được phú ví thầy như Biên Hiếu Tiên ngủ nhiều.",
-      "citationIds": ["citation-bpct-ch15-10-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-10-commentary",
-      "kind": "author-interpretation",
-      "text": "Phụ nhập Mộ hoặc Không hoá Mộ gắn nhác dạy/học kém; Nhật phá Mộ lại gắn học lực khác thường. Chú2 nhận diện Biên Thiều tự Hiếu Tiên; ví dụ là điển tích, không kết quả nghiệm chứng.",
-      "citationIds": ["citation-bpct-ch15-10-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-11-verse",
-      "kind": "author-interpretation",
-      "text": "Văn ở Thân được phú ví hiểu rộng như Lý Lão Đam.",
-      "citationIds": ["citation-bpct-ch15-11-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-11-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Văn ở Thân được phú ví hiểu rộng như Lý Lão Đam.",
-      "citationIds": ["citation-bpct-ch15-11-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-11-commentary",
-      "kind": "author-interpretation",
-      "text": "Văn thư dùng cho khả năng thầy; vắng gắn kém, tĩnh Quái thân hoặc sinh vượng gắn giỏi. Chú3 nhận Lý Lão Đam là Lão Tử, không khẳng định thật có khả năng tương đương.",
-      "citationIds": ["citation-bpct-ch15-11-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-12-verse",
-      "kind": "author-interpretation",
-      "text": "Phụ hoá Tử được phú gắn thơ phú.",
-      "citationIds": ["citation-bpct-ch15-12-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-12-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phụ hoá Tử được phú gắn thơ phú.",
-      "citationIds": ["citation-bpct-ch15-12-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-12-commentary",
-      "kind": "author-interpretation",
-      "text": "Phụ hoá Phúc gắn văn giỏi, Hình/Hại/bệnh bại gắn sơ hở; Tử Nguyệt kiến/Long gắn xuất khẩu thành văn. Tử hợp Phụ còn gắn thầy mang con theo; không bỏ nghĩa phụ này.",
-      "citationIds": ["citation-bpct-ch15-12-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-13-verse",
-      "kind": "author-interpretation",
-      "text": "Huynh–Quỷ được phú gắn gian trá.",
-      "citationIds": ["citation-bpct-ch15-13-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-13-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Huynh–Quỷ được phú gắn gian trá.",
-      "citationIds": ["citation-bpct-ch15-13-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-13-commentary",
-      "kind": "author-interpretation",
-      "text": "Huynh hoá Quỷ hoặc Quỷ hoá Huynh gắn gian trá, khắc Thế thêm thị phi. Không đánh giá đạo đức hoặc buộc tội thầy qua quẻ.",
-      "citationIds": ["citation-bpct-ch15-13-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-14-verse",
-      "kind": "author-interpretation",
-      "text": "Dụng Không động được phú gắn lời/lòng trái nhau.",
-      "citationIds": ["citation-bpct-ch15-14-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-14-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Dụng Không động được phú gắn lời/lòng trái nhau.",
-      "citationIds": ["citation-bpct-ch15-14-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-14-commentary",
-      "kind": "author-interpretation",
-      "text": "Tác giả muốn tĩnh/vượng chứ không động/Không: động Không gắn không thật, tĩnh Không gắn nhác dạy, hoá Không cũng vậy. Không đo sự thành thực.",
-      "citationIds": ["citation-bpct-ch15-14-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-15-verse",
-      "kind": "author-interpretation",
-      "text": "Thế/Ứng động được phú gắn nhiều nhà mời.",
-      "citationIds": ["citation-bpct-ch15-15-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-15-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Thế/Ứng động được phú gắn nhiều nhà mời.",
-      "citationIds": ["citation-bpct-ch15-15-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-15-commentary",
-      "kind": "author-interpretation",
-      "text": "Cùng động gắn hai nơi mời thầy, cùng Không gắn cả hai không thành; không bảo có đúng hai lời mời thật.",
-      "citationIds": ["citation-bpct-ch15-15-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-17-verse",
-      "kind": "author-interpretation",
-      "text": "Ứng Phụ sinh Thế được phú gắn học nhờ.",
-      "citationIds": ["citation-bpct-ch15-17-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-17-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Ứng Phụ sinh Thế được phú gắn học nhờ.",
-      "citationIds": ["citation-bpct-ch15-17-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-17-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải đặt Phụ tại Ứng, Thế động sinh hợp Phụ: học theo ở nhà người khác. Chú4 nói giả quán không phải nhà mình. Nguồn nhảy15 sang17; không tạo16.",
-      "citationIds": ["citation-bpct-ch15-17-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-18-verse",
-      "kind": "author-interpretation",
-      "text": "Phụ ngoại hợp Phúc được phú gắn học trò mang hòm theo thầy.",
-      "citationIds": ["citation-bpct-ch15-18-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-18-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phụ ngoại hợp Phúc được phú gắn học trò mang hòm theo thầy.",
-      "citationIds": ["citation-bpct-ch15-18-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-18-commentary",
-      "kind": "author-interpretation",
-      "text": "Trò tự hỏi dùng Thế, cha/anh hỏi dùng Tử cho học trò. Phụ ngoại ở tha cung tĩnh và Tử động hợp Phụ mới gắn du học xa; không chỉ mọi Phụ ngoại đều du học.",
-      "citationIds": ["citation-bpct-ch15-18-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-19-verse",
-      "kind": "author-interpretation",
-      "text": "Quỷ hoá Văn khắc Thế được phú gắn tranh tụng vì học.",
-      "citationIds": ["citation-bpct-ch15-19-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-19-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Quỷ hoá Văn khắc Thế được phú gắn tranh tụng vì học.",
-      "citationIds": ["citation-bpct-ch15-19-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-19-commentary",
-      "kind": "author-interpretation",
-      "text": "Quỷ hoá Phụ khắc Thế, Phụ hoá Quỷ hoặc Quan/Phụ cùng động khắc Thế được bình giải gắn kiện về sau. Không dự báo pháp lý.",
-      "citationIds": ["citation-bpct-ch15-19-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-20-verse",
-      "kind": "author-interpretation",
-      "text": "Phúc được Nhật/Nguyệt giúp được phú gắn trò hơn thầy.",
-      "citationIds": ["citation-bpct-ch15-20-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-20-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phúc được Nhật/Nguyệt giúp được phú gắn trò hơn thầy.",
-      "citationIds": ["citation-bpct-ch15-20-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-20-commentary",
-      "kind": "author-interpretation",
-      "text": "Tử cần hữu khí bất Không, được Nhật Nguyệt/động sinh hợp để gắn tiến bộ; Dụng thầy suy mới gắn trò hơn thầy. Không đo học lực.",
-      "citationIds": ["citation-bpct-ch15-20-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-21-verse",
-      "kind": "author-interpretation",
-      "text": "Phú đặt Phụ/Tử bị thương đối với Quan được sinh giúp.",
-      "citationIds": ["citation-bpct-ch15-21-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-21-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phú đặt Phụ/Tử bị thương đối với Quan được sinh giúp.",
-      "citationIds": ["citation-bpct-ch15-21-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-21-commentary",
-      "kind": "author-interpretation",
-      "text": "Cha mời thầy dùng Thế cho cha, Tử cho con, Ứng cho thầy. Thế/Tử cùng bị hình khắc gắn hại; Quan khắc cả hai mà được Tài trợ bị coi không tốt. Không lẫn chữ Phụ trong phú với mặc định thầy ở mọi câu hỏi.",
-      "citationIds": ["citation-bpct-ch15-21-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-22-verse",
-      "kind": "author-interpretation",
-      "text": "Phụ bị xung kích được phú gắn không lâu.",
-      "citationIds": ["citation-bpct-ch15-22-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-22-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phụ bị xung kích được phú gắn không lâu.",
-      "citationIds": ["citation-bpct-ch15-22-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-22-commentary",
-      "kind": "author-interpretation",
-      "text": "Phụ cần hữu khí nhưng không nên động vì khắc Tử; nguồn gắn việc dạy không bền. Không ấn định thời hạn hợp đồng.",
-      "citationIds": ["citation-bpct-ch15-22-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-23-verse",
-      "kind": "author-interpretation",
-      "text": "Thế/Thân Không hoặc hãm được phú gắn khó thành.",
-      "citationIds": ["citation-bpct-ch15-23-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-23-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Thế/Thân Không hoặc hãm được phú gắn khó thành.",
-      "citationIds": ["citation-bpct-ch15-23-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-23-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải bao gồm Thế/Ứng/Thân Không và xung khắc, không chỉ một hào. Không bảo kết quả thật.",
-      "citationIds": ["citation-bpct-ch15-23-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-24-verse",
-      "kind": "author-interpretation",
-      "text": "Tài hoá Phụ được phú gắn họ vợ giới thiệu thầy.",
-      "citationIds": ["citation-bpct-ch15-24-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-24-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Tài hoá Phụ được phú gắn họ vợ giới thiệu thầy.",
-      "citationIds": ["citation-bpct-ch15-24-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-24-commentary",
-      "kind": "author-interpretation",
-      "text": "Phụ do Tài bản cung hoá thành gắn họ vợ giới thiệu trong ngày; Huynh hoá Phụ riêng là bạn giới thiệu. Không dùng bói dự báo giới thiệu.",
-      "citationIds": ["citation-bpct-ch15-24-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-25-verse",
-      "kind": "author-interpretation",
-      "text": "Phụ phục Phúc được phú gắn thầy từng dạy ở chùa.",
-      "citationIds": ["citation-bpct-ch15-25-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-25-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phụ phục Phúc được phú gắn thầy từng dạy ở chùa.",
-      "citationIds": ["citation-bpct-ch15-25-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-25-commentary",
-      "kind": "author-interpretation",
-      "text": "Phụ phục Tử gắn đã mở dạy tại chùa, Phụ phục Thế gắn thầy cũ. Giữ hai vị trí, không xem là lịch sử cá nhân xác thực.",
-      "citationIds": ["citation-bpct-ch15-25-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-closing-verse",
-      "kind": "author-interpretation",
-      "text": "Phú kết bằng tìm lý qua sáu hào và coi trọng đọc sách.",
-      "citationIds": ["citation-bpct-ch15-closing-verse"],
-      "attribution": {
-        "author": "Phú trong bản biên soạn Vương Hồng Tự — tín chỉ chung Lưu Bá Ôn",
-        "via": "Vĩnh Cao — phiên âm; chưa xác lập tác giả riêng từng câu"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-closing-rendering",
-      "kind": "author-interpretation",
-      "text": "Nghĩa Việt trình bày ý: Phú kết bằng tìm lý qua sáu hào và coi trọng đọc sách.",
-      "citationIds": ["citation-bpct-ch15-closing-rendering"],
-      "attribution": {
-        "author": "Vĩnh Cao — nghĩa tiếng Việt"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-closing-commentary",
-      "kind": "author-interpretation",
-      "text": "Bình giải mở câu hỏi ngoài đạo học sang học nghề/tu: tự hỏi vẫn dùng Phụ cho thầy, Thế cho trò; người khác hỏi phải xét quan hệ, bạn/anh em dùng Huynh. Thầy trò sinh hợp bị coi thuận, khắc xung nghịch; không biến thành lời khuyên chọn nghề/tôn giáo.",
-      "citationIds": ["citation-bpct-ch15-closing-commentary"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải; tín chỉ chung không bảo đảm từng đoạn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-folio-190-folio",
-      "kind": "author-interpretation",
       "text": "Trang chỉ có số in161; phần kết Cầu Sư đã hết ở PDF189. Không thêm lời bình hoặc đoạn tiếp nối.",
-      "citationIds": ["citation-bpct-ch15-folio-190-folio"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [190, 190],
+          "section": "bpct-ch15-folio-190 — Chỉ số trang",
+          "printedPages": ["161", "161"]
+        }
+      ],
       "attribution": {
         "author": "Bản cung cấp — trình bày không ký tên"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
+      }
     },
     {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-note-01-discussion",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao giải chuyên kinh là học kinh Nho; tạp học gồm nhiều ngành Nho, Y, Lý, Số. Chú là định bối cảnh thuật ngữ, không một chuẩn giáo dục hiện nay.",
-      "citationIds": ["citation-bpct-ch15-note-01-discussion"],
+      "text": "Vĩnh Cao giải chuyên kinh là học kinh Nho; tạp học gồm nhiều ngành Nho, Y, Lý, Số. Chú là định bối cảnh thuật ngữ, không một chuẩn giáo dục hiện nay.\n\nVĩnh Cao ghi Biên Thiều tự Hiếu Tiên thời Đông Hán, nổi tiếng văn học nhiều người theo, cùng giai thoại giả ngủ và trò chế nhạo; đây là điển tích attached10, không chứng minh hiệu nghiệm quẻ.\n\nVĩnh Cao xác định Lý Lão Đam trong11 là Lão Tử, không tạo lớp chú của Lão Tử cho chương này.\n\nVĩnh Cao giải giả quán trong17 là nơi học không ở nhà mình mà ở nhà người khác; không hiểu chữ giả thành gian trá.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [185, 185],
+          "section": "bpct-ch15-note-01 — Chú cuối trang",
+          "printedPages": ["156", "156"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-note-02 — Chú cuối trang",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [186, 186],
+          "section": "bpct-ch15-note-03 — Chú cuối trang",
+          "printedPages": ["157", "157"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [187, 187],
+          "section": "bpct-ch15-note-04 — Chú cuối trang",
+          "printedPages": ["158", "158"]
+        }
+      ],
       "attribution": {
         "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-note-02-discussion",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao ghi Biên Thiều tự Hiếu Tiên thời Đông Hán, nổi tiếng văn học nhiều người theo, cùng giai thoại giả ngủ và trò chế nhạo; đây là điển tích attached10, không chứng minh hiệu nghiệm quẻ.",
-      "citationIds": ["citation-bpct-ch15-note-02-discussion"],
-      "attribution": {
-        "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-note-03-discussion",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao xác định Lý Lão Đam trong11 là Lão Tử, không tạo lớp chú của Lão Tử cho chương này.",
-      "citationIds": ["citation-bpct-ch15-note-03-discussion"],
-      "attribution": {
-        "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
-    },
-    {
-      "id": "article-bpct-chapter-fifteen-teacher-bpct-ch15-note-04-discussion",
-      "kind": "author-interpretation",
-      "text": "Vĩnh Cao giải giả quán trong17 là nơi học không ở nhà mình mà ở nhà người khác; không hiểu chữ giả thành gian trá.",
-      "citationIds": ["citation-bpct-ch15-note-04-discussion"],
-      "attribution": {
-        "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm; không dùng làm phép lịch, diễn giải tự động, truy tìm/nhận dạng nghi phạm, dự báo sức khỏe/sinh sản/tử vong/tài chính, hướng dẫn an toàn, nghĩa vụ giới/giai cấp hoặc yêu cầu nghi lễ."
-      ]
+      }
     }
-  ],
-  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch15-opening-verse",
-      "citation-bpct-ch15-opening-rendering",
-      "citation-bpct-ch15-01-verse",
-      "citation-bpct-ch15-01-rendering",
-      "citation-bpct-ch15-01-commentary",
-      "citation-bpct-ch15-02-verse",
-      "citation-bpct-ch15-02-rendering",
-      "citation-bpct-ch15-02-commentary",
-      "citation-bpct-ch15-03-verse",
-      "citation-bpct-ch15-03-rendering",
-      "citation-bpct-ch15-03-commentary",
-      "citation-bpct-ch15-04-verse",
-      "citation-bpct-ch15-04-rendering",
-      "citation-bpct-ch15-04-commentary",
-      "citation-bpct-ch15-05-verse",
-      "citation-bpct-ch15-05-rendering",
-      "citation-bpct-ch15-05-commentary",
-      "citation-bpct-ch15-06-verse",
-      "citation-bpct-ch15-06-rendering",
-      "citation-bpct-ch15-06-commentary",
-      "citation-bpct-ch15-07-verse",
-      "citation-bpct-ch15-07-rendering",
-      "citation-bpct-ch15-07-commentary",
-      "citation-bpct-ch15-08-verse",
-      "citation-bpct-ch15-08-rendering",
-      "citation-bpct-ch15-08-commentary",
-      "citation-bpct-ch15-09-verse",
-      "citation-bpct-ch15-09-rendering",
-      "citation-bpct-ch15-09-commentary",
-      "citation-bpct-ch15-10-verse",
-      "citation-bpct-ch15-10-rendering",
-      "citation-bpct-ch15-10-commentary",
-      "citation-bpct-ch15-11-verse",
-      "citation-bpct-ch15-11-rendering",
-      "citation-bpct-ch15-11-commentary",
-      "citation-bpct-ch15-12-verse",
-      "citation-bpct-ch15-12-rendering",
-      "citation-bpct-ch15-12-commentary",
-      "citation-bpct-ch15-13-verse",
-      "citation-bpct-ch15-13-rendering",
-      "citation-bpct-ch15-13-commentary",
-      "citation-bpct-ch15-14-verse",
-      "citation-bpct-ch15-14-rendering",
-      "citation-bpct-ch15-14-commentary",
-      "citation-bpct-ch15-15-verse",
-      "citation-bpct-ch15-15-rendering",
-      "citation-bpct-ch15-15-commentary",
-      "citation-bpct-ch15-17-verse",
-      "citation-bpct-ch15-17-rendering",
-      "citation-bpct-ch15-17-commentary",
-      "citation-bpct-ch15-18-verse",
-      "citation-bpct-ch15-18-rendering",
-      "citation-bpct-ch15-18-commentary",
-      "citation-bpct-ch15-19-verse",
-      "citation-bpct-ch15-19-rendering",
-      "citation-bpct-ch15-19-commentary",
-      "citation-bpct-ch15-20-verse",
-      "citation-bpct-ch15-20-rendering",
-      "citation-bpct-ch15-20-commentary",
-      "citation-bpct-ch15-21-verse",
-      "citation-bpct-ch15-21-rendering",
-      "citation-bpct-ch15-21-commentary",
-      "citation-bpct-ch15-22-verse",
-      "citation-bpct-ch15-22-rendering",
-      "citation-bpct-ch15-22-commentary",
-      "citation-bpct-ch15-23-verse",
-      "citation-bpct-ch15-23-rendering",
-      "citation-bpct-ch15-23-commentary",
-      "citation-bpct-ch15-24-verse",
-      "citation-bpct-ch15-24-rendering",
-      "citation-bpct-ch15-24-commentary",
-      "citation-bpct-ch15-25-verse",
-      "citation-bpct-ch15-25-rendering",
-      "citation-bpct-ch15-25-commentary",
-      "citation-bpct-ch15-closing-verse",
-      "citation-bpct-ch15-closing-rendering",
-      "citation-bpct-ch15-closing-commentary",
-      "citation-bpct-ch15-folio-190-folio",
-      "citation-bpct-ch15-note-01-discussion",
-      "citation-bpct-ch15-note-02-discussion",
-      "citation-bpct-ch15-note-03-discussion",
-      "citation-bpct-ch15-note-04-discussion",
-      "citation-bpct-front-credits-compilation",
-      "citation-bpct-front-credits-phu",
-      "citation-bpct-front-credits-translation"
-    ],
-    "note": "Complete extracted PDF166–230 passages read; contact sheets165–231 inspected, individual images1–3/174/190/219–222/227 inspected. Not individual full-size review of every page. Cầu Sư on PDF184–190: numbered passages, actual source layers, conditions, examples and notes compared. SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a, 467 pages. No tables/diagrams. PDF190 and222 are folio-only, correcting planned fragments; chapter15 closing is189 and chapter18 item42 is221. Chapter14 opens with label23; chapter15 skips16, chapter17 skips31, chapter18 skips41, without reconstructed passages. Original text/reading summarized together; independently printed Vietnamese meaning is separate (citation enum lacks translation); chapter13 item34 and chapter14 item7 have no separate meaning. Front credits support conventional attribution, not certainty for every verse/commentary. Footnotes retain separate Vĩnh Cao attribution and disagreement; no copied source prose/images, PDF runtime path, calculation behavior, safety/medical/social/financial guidance or efficacy verification. Layer discovery, feat-087 audit, independent verification and certification remain open."
-  }
+  ]
 }

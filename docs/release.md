@@ -114,8 +114,8 @@ After every production deployment, verify:
 ## Intended expanded knowledge release
 
 If a release includes expanded knowledge views, bind its fidelity, budget, and offline evidence to the frozen build and corpus snapshot.
-Use the [knowledge quality contract](product-specs/knowledge-quality.md#intended-runtime-fidelity) and
-[PWA scale contract](design-docs/offline-pwa.md#intended-knowledge-scale-and-updates) for those planned checks.
+Use the [knowledge quality contract](product-specs/knowledge-quality.md#runtime-fidelity) and
+[PWA scale contract](design-docs/offline-pwa.md#knowledge-delivery) for those planned checks.
 Repeat them against the actual complete authored corpus before claiming full-volume delivery.
 Partial reviewed content can ship with its actual coverage and review scope stated.
 Full-corpus certification remains a separate evidence claim.

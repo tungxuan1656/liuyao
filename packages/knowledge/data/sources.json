@@ -1,5 +1,4 @@
 {
-  "schemaVersion": 1,
   "sources": [
     {
       "id": "source-book-bpct",
@@ -21,9 +20,12 @@
           "rights": {
             "status": "unconfirmed",
             "use": "research-only",
-            "note": "unconfirmed/research-only mô tả quyền phân phối PDF, bản dịch và chú giải nguồn, không phải trạng thái của nội dung do dự án tự viết. Theo LICENSING.md, các cờ này không chặn authoring, publication hoặc audit bản tóm tắt tự viết, dữ kiện có cấu trúc và dẫn nguồn. Không phân phối sách hoặc sao chép nguyên văn nguồn."
+            "note": "PDF và bản dịch dùng để nghiên cứu tại chỗ; không phân phối sách. Nội dung dự án là tóm tắt tự viết và dữ kiện có dẫn nguồn."
           }
         }
+      ],
+      "limitations": [
+        "Nội dung diễn giải quan điểm của nguồn và bối cảnh lịch sử; không xác minh hiệu nghiệm hoặc tự động tạo dự báo."
       ]
     },
     {
@@ -46,9 +48,12 @@
           "rights": {
             "status": "unconfirmed",
             "use": "research-only",
-            "note": "unconfirmed/research-only mô tả quyền phân phối PDF, bản dịch và chú giải nguồn, không phải trạng thái của nội dung do dự án tự viết. Theo LICENSING.md, các cờ này không chặn authoring, publication hoặc audit bản tóm tắt tự viết, dữ kiện có cấu trúc và dẫn nguồn. Không phân phối sách hoặc sao chép nguyên văn nguồn."
+            "note": "PDF và bản dịch dùng để nghiên cứu tại chỗ; không phân phối sách. Nội dung dự án là tóm tắt tự viết và dữ kiện có dẫn nguồn."
           }
         }
+      ],
+      "limitations": [
+        "Nội dung diễn giải quan điểm của nguồn và bối cảnh lịch sử; không xác minh hiệu nghiệm hoặc tự động tạo dự báo."
       ]
     },
     {
@@ -71,9 +76,12 @@
           "rights": {
             "status": "unconfirmed",
             "use": "research-only",
-            "note": "unconfirmed/research-only mô tả quyền phân phối PDF, bản dịch và chú giải nguồn, không phải trạng thái của nội dung do dự án tự viết. Theo LICENSING.md, các cờ này không chặn authoring, publication hoặc audit bản tóm tắt tự viết, dữ kiện có cấu trúc và dẫn nguồn. Không phân phối sách hoặc sao chép nguyên văn nguồn."
+            "note": "PDF và bản dịch dùng để nghiên cứu tại chỗ; không phân phối sách. Nội dung dự án là tóm tắt tự viết và dữ kiện có dẫn nguồn."
           }
         }
+      ],
+      "limitations": [
+        "Nội dung diễn giải quan điểm của nguồn và bối cảnh lịch sử; không xác minh hiệu nghiệm hoặc tự động tạo dự báo."
       ]
     },
     {
@@ -96,9 +104,12 @@
           "rights": {
             "status": "unconfirmed",
             "use": "research-only",
-            "note": "unconfirmed/research-only mô tả quyền phân phối PDF, bản dịch và chú giải nguồn, không phải trạng thái của nội dung do dự án tự viết. Theo LICENSING.md, các cờ này không chặn authoring, publication hoặc audit bản tóm tắt tự viết, dữ kiện có cấu trúc và dẫn nguồn. Không phân phối sách hoặc sao chép nguyên văn nguồn."
+            "note": "PDF và bản dịch dùng để nghiên cứu tại chỗ; không phân phối sách. Nội dung dự án là tóm tắt tự viết và dữ kiện có dẫn nguồn."
           }
         }
+      ],
+      "limitations": [
+        "Nội dung diễn giải quan điểm của nguồn và bối cảnh lịch sử; không xác minh hiệu nghiệm hoặc tự động tạo dự báo."
       ]
     }
   ]

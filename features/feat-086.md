@@ -1,4 +1,4 @@
-# feat-086 — Audit BPCT applications — Weather life career and wealth
+# feat-086 — Review and improve BPCT applications — Weather life career and wealth
 
 ## Goal
 
@@ -8,7 +8,7 @@ Record current evidence for every assigned review unit.
 
 **Intended work:**
 
-- Intended group ledgers under docs/reviews/knowledge/; enumerate every assigned inventory unit.
+- Review the assigned concepts, examples, and tables; record material content findings.
 
 ## Non-goals
 
@@ -23,7 +23,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Chapter 11 — Sĩ Hoạn: every passage, condition, example, and note.
 - [ ] Chapter 12 — Cầu Tài: every passage, condition, example, and note.
 - [ ] Preserve reported outcomes as attributed claims; reconcile reused rules and explicit exclusions.
-- [ ] Decisions have current hashes, exact locators, findings, and reviewer identity; rejected units stay open.
+- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -34,8 +34,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Create the complete unit checklist for this group.
-2. Review and commit each section/table checkpoint with current hashes and findings.
+1. Identify the useful explanations and tables in this group.
+2. Review each section/table and record its material content findings.
 3. Verify all unit decisions and close only after rejected units are repaired.
 
 ## Verify

@@ -1,44 +1,39 @@
 {
-  "schemaVersion": 1,
   "id": "term-reverse-chant",
   "type": "term",
   "title": "Phản ngâm",
   "aliases": ["Quẻ Phản ngâm"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-line-reverse-chant", "article-reverse-chant-context", "term-repeated-chant"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-reverse-chant-definition",
-      "kind": "author-interpretation",
       "text": "Mục 11 phân biệt Phản ngâm ở quẻ với Phản ngâm ở hào. Phần quẻ được trình bày theo sự biến sang quái đối phương vị; phần hào xét địa chi của hào biến xung với địa chi ban đầu.",
-      "citationIds": [
-        "citation-bpct-ch5-reverse-chant-definition",
-        "citation-bpct-ch5-reverse-chant-directions",
-        "citation-bpct-ch5-line-reverse-chant"
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 11 — Quẻ và hào Phản ngâm",
+          "printedPages": ["58", "58"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 11 — Các cặp theo phương vị",
+          "printedPages": ["59", "59"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 11 — Sáu cặp chi của hào Phản ngâm",
+          "printedPages": ["59", "59"]
+        }
       ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       },
-      "conditions": [
-        "Giữ hai cách mô tả ở đúng phạm vi; không tự đồng nhất quái đối phương vị với mọi cặp chi Nạp Giáp xung."
-      ]
+      "condition": "Giữ hai cách mô tả ở đúng phạm vi; không tự đồng nhất quái đối phương vị với mọi cặp chi Nạp Giáp xung."
     }
-  ],
-  "relatedIds": ["term-line-reverse-chant", "article-reverse-chant-context", "term-repeated-chant"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-reverse-chant-definition",
-      "citation-bpct-ch5-reverse-chant-directions",
-      "citation-bpct-ch5-line-reverse-chant"
-    ],
-    "note": "Đã đọc và xem ảnh mục 11–12 PDF 70–71; đối chiếu bảng Nạp Giáp PDF 13 và toàn bộ câu hỏi 5–6 cùng ví dụ PDF 375–378. Các điều kiện và phạm vi được giữ theo đoạn; chỉ chọn diễn giải đủ rõ, chưa xác nhận chiêm nghiệm hoặc toàn bộ học thuyết, chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

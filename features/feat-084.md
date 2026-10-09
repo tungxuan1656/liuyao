@@ -1,14 +1,14 @@
-# feat-084 — Audit sources shared foundations casting and Liu Yao tables
+# feat-084 — Review and improve sources shared foundations casting and Liu Yao tables
 
 ## Goal
 
-Audit each assigned unit.
+Review and improve the assigned knowledge content.
 
 ## Scope
 
 **Intended work:**
 
-- Intended group ledgers under docs/reviews/knowledge/; enumerate every assigned inventory unit.
+- Review the assigned concepts, examples, and tables; record material content findings.
 
 ## Non-goals
 
@@ -16,7 +16,7 @@ New interpretation, calendar, or UI behavior.
 
 ## Acceptance
 
-- [ ] Four edition fingerprints, exact citations, and original summaries under the [publication gate](../docs/product-specs/knowledge-quality.md#publication-gate).
+- [ ] Correct supplied-edition references and original summaries under the [publication gate](../docs/product-specs/knowledge-quality.md#publication-gate).
 - [ ] Vocabulary, aliases, and the six project definitions.
 - [ ] All eight trigram patterns and attributed associations.
 - [ ] Casting, moving lines, and every supplied transformation example.
@@ -30,9 +30,9 @@ New interpretation, calendar, or UI behavior.
 - [ ] Đoài palace: all eight boards and every line annotation.
 - [ ] 48 Na Jia pairs, twelve branch elements, 25 element relations.
 - [ ] Ten stems, six spirits, and sourced table exceptions.
-- [ ] BPCT chapters 1–5 and front matter: all inventory dispositions.
+- [ ] BPCT chapters 1–5 and front matter: useful sourced explanations.
 - [ ] Use source-derived fixtures independent of liuyao-core.
-- [ ] Decisions have current hashes, exact locators, findings, and reviewer identity; rejected units stay open.
+- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -43,9 +43,9 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Create the complete unit checklist for this group.
-2. Review and commit each section/table checkpoint with current hashes and findings.
-3. Resolve rejected units and verify every decision.
+1. Identify the useful explanations and tables in this group.
+2. Review each section/table and record its material content findings.
+3. Resolve supported corrections and check useful content and links.
 
 ## Verify
 

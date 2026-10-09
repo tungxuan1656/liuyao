@@ -1,91 +1,60 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-ha-11",
   "type": "article",
   "title": "PBC — Hệ Từ Hạ, chương 11",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-ha-11-pbc-he-tu-ha-11-section-01-original-reading",
-      "kind": "author-interpretation",
       "text": "Độc tiết về cuối Ân,đức Chu,Văn Vương/Trụ,nguy/bình,dị/khuynh và chung thỉ/vô cựu.",
-      "citationIds": ["citation-pbc-he-tu-ha-11-section-01-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [645, 645],
+          "section": "section-01-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-ha-11-pbc-he-tu-ha-11-section-01-meaning-commentary",
-      "kind": "author-interpretation",
-      "text": "PBC bản đọc in hung và Hán chữ hung,nhưng diễn là hưng thịnh;từ bắt đầu Văn Vương,lo trước làm yên,khinh làm nghiêng là lý tự nhiên chứ Dịch không cố ý sai khiến. Không sửa original theo diễn.",
-      "citationIds": ["citation-pbc-he-tu-ha-11-section-01-meaning-commentary"],
+      "text": "PBC bản đọc in hung và Hán chữ hung,nhưng diễn là hưng thịnh;từ bắt đầu Văn Vương,lo trước làm yên,khinh làm nghiêng là lý tự nhiên chứ Dịch không cố ý sai khiến. Không sửa original theo diễn.\n\nPBC in Hán/đọc rồi văn Việt mang nghĩa và lời giảng liền nhau,không đoạn Dịch độc lập. Riêng chương5 chỉ referral,không in bản văn và diễn nghĩa của mười một hào tại đây. Không suy một translation layer độc lập từ đọc Hán-Việt.\n\nẢnh PBC645 in Dịch chi hung dã,chữ Hán hung; diễn lại hưng thịnh. Extraction cũng báo hung. Không đổi hung thành hưng theo NHL hoặc theo ý nghĩa.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [645, 645],
+          "section": "section-01-meaning-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [645, 645],
+          "section": "layer-accounting — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [645, 645],
+          "section": "reading-hung-versus-meaning — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-ha-11-pbc-he-tu-ha-11-layer-accounting",
-      "kind": "author-interpretation",
-      "text": "PBC in Hán/đọc rồi văn Việt mang nghĩa và lời giảng liền nhau,không đoạn Dịch độc lập. Riêng chương5 chỉ referral,không in bản văn và diễn nghĩa của mười một hào tại đây. Không suy một translation layer độc lập từ đọc Hán-Việt.",
-      "citationIds": ["citation-pbc-he-tu-ha-11-layer-accounting"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-11-pbc-he-tu-ha-11-reading-hung-versus-meaning",
-      "kind": "author-interpretation",
-      "text": "Ảnh PBC645 in Dịch chi hung dã,chữ Hán hung; diễn lại hưng thịnh. Extraction cũng báo hung. Không đổi hung thành hưng theo NHL hoặc theo ý nghĩa.",
-      "citationIds": ["citation-pbc-he-tu-ha-11-reading-hung-versus-meaning"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-11-pbc-he-tu-ha-11-anonymous-classical-parallels",
-      "kind": "author-interpretation",
       "text": "PBC dùng sinh ở ưu hoạn/chết ở an lạc và tài giả bồi chi/khuynh giả phúc chi để giải nguy/bình. Trang không đặt tên sách cho hai parallels,không tự thêm.",
-      "citationIds": ["citation-pbc-he-tu-ha-11-anonymous-classical-parallels"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [645, 645],
+          "section": "anonymous-classical-parallels — commentary"
+        }
+      ],
       "attribution": {
         "author": "Câu cổ không nêu tác phẩm — PBC dẫn",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-ha-11-section-01-original-reading",
-      "citation-pbc-he-tu-ha-11-section-01-meaning-commentary",
-      "citation-pbc-he-tu-ha-11-layer-accounting",
-      "citation-pbc-he-tu-ha-11-reading-hung-versus-meaning",
-      "citation-pbc-he-tu-ha-11-anonymous-classical-parallels"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

@@ -1,349 +1,142 @@
 {
-  "schemaVersion": 2,
   "id": "article-ntt-translator-introduction",
   "type": "article",
   "title": "NTT — Những Điều Nên Biết",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-origin",
-      "kind": "author-interpretation",
-      "text": "NTT thuật cựu truyền từ Hán tới Minh về Phục Hy/Bào Hy, long mã và 1→2→4→8→64 vạch; gọi ông vua thần thoại, không biết cách mấy nghìn/mấy vạn năm. Không chứng tác giả hoặc niên đại lịch sử.",
-      "citationIds": ["citation-ntt-translator-introduction-origin"],
+      "text": "NTT thuật cựu truyền từ Hán tới Minh về Phục Hy/Bào Hy, long mã và 1→2→4→8→64 vạch; gọi ông vua thần thoại, không biết cách mấy nghìn/mấy vạn năm. Không chứng tác giả hoặc niên đại lịch sử.\n\nNguồn truyền gán Văn Vương đặt tên/lời quẻ và Chu Công/Cơ Đán đặt lời hào; các mẫu Càn/Khôn minh họa lớp Kinh, không lời Khổng Tử. Không tự sửa glyph Hán lỗi trong extraction.\n\nNTT gọi sáu thứ nhưng thực kê bảy loại Thoán, Tượng, Văn Ngôn, Hệ Từ, Thuyết, Tự, Tạp; ba loại có thượng/hạ làm 10 thiên. Công dụng từng loại được giới thiệu, không xuất bản các truyện vắng của bản này.\n\nNTT thuật Phí Trực/Trịnh Huyền nhập truyện vào Kinh, Chu Hy phục cũ mà không được theo; có chỗ gọi 7 thiên/3 thiên. Đây là lời truyền/lịch sử nguồn, không bằng chứng PDF có ba phụ lục cuối riêng.\n\nQuẻ đơn ba vạch/quẻ kép sáu vạch cùng gọi quái nhưng khác cấu tạo; tám quái chồng nhau thành 64. Đây là giải thuật ngữ, không API hay thuật toán mới.\n\nHào từ dưới lên đầu, hai, ba, tư, năm, trên; nét liền dương/đứt âm, tên chín/sáu gắn già 9/6, trẻ 7/8. Ví Chuân có dương 1/5, không thêm hào 7.\n\nNguồn kê Kiền mạnh, Khôn thuận, Chấn động, Tốn nhún, Cấn đậu, Đoài vui, Ly sáng/rỗng, Khảm hiểm/đặc rồi lại in động cho Cấn. Không chữa chữ đó để tạo bảng nhất quán hay mô tả người.\n\nTượng tám quái dùng trời, rồng, đất, trâu, sấm, cây, nước, mây, mưa, gió, lửa, núi, chằm. Hào riêng không chuyên tượng vật; giữa Khảm đặc/Ly rỗng do nét, không classifier chẩn đoán.\n\nNTT chia ứng dụng thành thì, ngôi, người; thì thường là giai đoạn từ hào đầu tới cuối nhưng Tốn/Ích/Tỷ/Tụng có thể là công cuộc. Không biến thời thành lịch phần mềm.\n\nCác ngôi được tiên nho đọc dân/tư mục/khanh/đại thần/vua/lão thành chỉ đại khái, không mọi quẻ theo lệ đó. Không áp vị trí vào quyền lực/nghề nghiệp người hiện tại.\n\nChính khi dương ở lẻ, âm ở chẵn; trung ở 2/5; ứng 1/4, 2/5, 3/6 chỉ khi khác thể. Đây là ứng của bình giải cổ, không đồng nhất với marker Thế/Ứng Bát cung.\n\nDương/quân tử/nam, âm/tiểu nhân/nữ được NTT thuật là thường lệ, không hết thảy. Giữ hạn chế và attribution, không giá trị/giới/cá tính người hiện tại.\n\nTheo ý Chu Hy, Tượng khác Chiêm; tiềm long là tượng, vật dụng là chiêm. NTT xếp các cấp cát/hanh/lợi/vô hối/vô cữu và hung/lệ/vô du lợi/lận/hữu cữu/hữu hối; có hào chỉ một lớp, không universal score.\n\nNTT chọn Chu Dịch Đại Toàn của Hồ Quảng/Kim Âu Tư theo mệnh Minh Thành Tổ, trọng Trình truyện/Chu Bản Nghĩa, tiên nho phụ. Đầy đủ là lượng chứ không phẩm, không certify mọi ý đúng.\n\nKhi Trình/Chu khác nhau, NTT chọn cách hợp văn pháp Nho hơn, không phán một người đúng; thêm tiên nho nếu ý khác. Không hòa các lớp thành một chủ thuyết vô chủ.\n\nNTT cố dùng tiếng cổ để giữ nhiều nghĩa/lời rời rã, tránh ép người đọc theo mình. Đây là lý do dịch, không chép lại văn nguồn hoặc tuyên bố ý nghĩa đã giải quyết.\n\nThửa trước động từ tương đương sở, cái/kẻ mà; trước danh từ tương đương kỳ, của nó/người, có thể ba ngôi. Tóm tắt cách dùng trong bản dịch.\n\nChưng đầu câu như chi làm trọn nghĩa, ít dùng; sau động từ như ư/vu, ở. Phân hai ngữ cảnh, không tự sửa body thành tiếng hiện đại.\n\nHay có thể biết/được; khá có thể có thể/đáng. NTT kết hẹn nói ý kiến cuối sách; hẹn không chứng đoạn ấy tồn tại hoặc cho phép phục dựng.\n\nChú 1 gắn marker trên PDF 7: Long mã là thú thần thoại, không con vật lịch sử.\n\nChú 2 gắn marker trên PDF 7: Tám quẻ là quẻ đơn.\n\nChú 3 gắn marker trên PDF 7: Quẻ kép: chú giữ ý kiến khác rằng Văn Vương mới đặt 64, Phục Hy chỉ 8.\n\nChú 4 gắn marker trên PDF 7: Chú giữ ý kiến khác rằng Phục Hy đã đặt tên 64, trái cách kể chưa có tên trong lời đầu.\n\nChú 5 gắn marker trên PDF 7: Lời Thoán Văn Vương ở đầu quẻ khác Thoán Truyện bắt Lời Thoán nói rằng, truyền gán Khổng Tử.\n\nChú 6 gắn marker trên PDF 8: Lời Tượng Chu Công ngay đầu hào khác Tượng Truyện bắt Lời Tượng nói rằng, truyền gán Khổng Tử.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [7, 7],
+          "section": "ntt-translator-introduction-origin — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [7, 8],
+          "section": "ntt-translator-introduction-wen-zhou — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [8, 9],
+          "section": "ntt-translator-introduction-wings — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [9, 9],
+          "section": "ntt-translator-introduction-transmission — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [9, 10],
+          "section": "ntt-translator-introduction-trigrams-hexagrams — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [10, 10],
+          "section": "ntt-translator-introduction-lines — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [10, 10],
+          "section": "ntt-translator-introduction-natures — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [11, 11],
+          "section": "ntt-translator-introduction-images — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [11, 11],
+          "section": "ntt-translator-introduction-time — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [11, 12],
+          "section": "ntt-translator-introduction-rank — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [12, 12],
+          "section": "ntt-translator-introduction-central-correct — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [12, 12],
+          "section": "ntt-translator-introduction-person — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [13, 13],
+          "section": "ntt-translator-introduction-image-omen — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [13, 14],
+          "section": "ntt-translator-introduction-translation-base — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [14, 14],
+          "section": "ntt-translator-introduction-translation-alternatives — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [14, 15],
+          "section": "ntt-translator-introduction-translation-diction — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [15, 15],
+          "section": "ntt-translator-introduction-thua — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [15, 16],
+          "section": "ntt-translator-introduction-chung — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [16, 16],
+          "section": "ntt-translator-introduction-hay-kha — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [16, 16],
+          "section": "ntt-translator-introduction-note-01 — translator-note"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [16, 16],
+          "section": "ntt-translator-introduction-note-02 — translator-note"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [16, 16],
+          "section": "ntt-translator-introduction-note-03 — translator-note"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [16, 16],
+          "section": "ntt-translator-introduction-note-04 — translator-note"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [16, 16],
+          "section": "ntt-translator-introduction-note-05 — translator-note"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [17, 17],
+          "section": "ntt-translator-introduction-note-06 — translator-note"
+        }
+      ],
       "attribution": {
         "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-wen-zhou",
-      "kind": "author-interpretation",
-      "text": "Nguồn truyền gán Văn Vương đặt tên/lời quẻ và Chu Công/Cơ Đán đặt lời hào; các mẫu Càn/Khôn minh họa lớp Kinh, không lời Khổng Tử. Không tự sửa glyph Hán lỗi trong extraction.",
-      "citationIds": ["citation-ntt-translator-introduction-wen-zhou"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-wings",
-      "kind": "author-interpretation",
-      "text": "NTT gọi sáu thứ nhưng thực kê bảy loại Thoán, Tượng, Văn Ngôn, Hệ Từ, Thuyết, Tự, Tạp; ba loại có thượng/hạ làm 10 thiên. Công dụng từng loại được giới thiệu, không xuất bản các truyện vắng của bản này.",
-      "citationIds": ["citation-ntt-translator-introduction-wings"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-transmission",
-      "kind": "author-interpretation",
-      "text": "NTT thuật Phí Trực/Trịnh Huyền nhập truyện vào Kinh, Chu Hy phục cũ mà không được theo; có chỗ gọi 7 thiên/3 thiên. Đây là lời truyền/lịch sử nguồn, không bằng chứng PDF có ba phụ lục cuối riêng.",
-      "citationIds": ["citation-ntt-translator-introduction-transmission"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-trigrams-hexagrams",
-      "kind": "author-interpretation",
-      "text": "Quẻ đơn ba vạch/quẻ kép sáu vạch cùng gọi quái nhưng khác cấu tạo; tám quái chồng nhau thành 64. Đây là giải thuật ngữ, không API hay thuật toán mới.",
-      "citationIds": ["citation-ntt-translator-introduction-trigrams-hexagrams"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-lines",
-      "kind": "author-interpretation",
-      "text": "Hào từ dưới lên đầu, hai, ba, tư, năm, trên; nét liền dương/đứt âm, tên chín/sáu gắn già 9/6, trẻ 7/8. Ví Chuân có dương 1/5, không thêm hào 7.",
-      "citationIds": ["citation-ntt-translator-introduction-lines"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-natures",
-      "kind": "author-interpretation",
-      "text": "Nguồn kê Kiền mạnh, Khôn thuận, Chấn động, Tốn nhún, Cấn đậu, Đoài vui, Ly sáng/rỗng, Khảm hiểm/đặc rồi lại in động cho Cấn. Không chữa chữ đó để tạo bảng nhất quán hay mô tả người.",
-      "citationIds": ["citation-ntt-translator-introduction-natures"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-images",
-      "kind": "author-interpretation",
-      "text": "Tượng tám quái dùng trời, rồng, đất, trâu, sấm, cây, nước, mây, mưa, gió, lửa, núi, chằm. Hào riêng không chuyên tượng vật; giữa Khảm đặc/Ly rỗng do nét, không classifier chẩn đoán.",
-      "citationIds": ["citation-ntt-translator-introduction-images"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-time",
-      "kind": "author-interpretation",
-      "text": "NTT chia ứng dụng thành thì, ngôi, người; thì thường là giai đoạn từ hào đầu tới cuối nhưng Tốn/Ích/Tỷ/Tụng có thể là công cuộc. Không biến thời thành lịch phần mềm.",
-      "citationIds": ["citation-ntt-translator-introduction-time"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-rank",
-      "kind": "author-interpretation",
-      "text": "Các ngôi được tiên nho đọc dân/tư mục/khanh/đại thần/vua/lão thành chỉ đại khái, không mọi quẻ theo lệ đó. Không áp vị trí vào quyền lực/nghề nghiệp người hiện tại.",
-      "citationIds": ["citation-ntt-translator-introduction-rank"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-central-correct",
-      "kind": "author-interpretation",
-      "text": "Chính khi dương ở lẻ, âm ở chẵn; trung ở 2/5; ứng 1/4, 2/5, 3/6 chỉ khi khác thể. Đây là ứng của bình giải cổ, không đồng nhất với marker Thế/Ứng Bát cung.",
-      "citationIds": ["citation-ntt-translator-introduction-central-correct"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-person",
-      "kind": "author-interpretation",
-      "text": "Dương/quân tử/nam, âm/tiểu nhân/nữ được NTT thuật là thường lệ, không hết thảy. Giữ hạn chế và attribution, không giá trị/giới/cá tính người hiện tại.",
-      "citationIds": ["citation-ntt-translator-introduction-person"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-image-omen",
-      "kind": "author-interpretation",
-      "text": "Theo ý Chu Hy, Tượng khác Chiêm; tiềm long là tượng, vật dụng là chiêm. NTT xếp các cấp cát/hanh/lợi/vô hối/vô cữu và hung/lệ/vô du lợi/lận/hữu cữu/hữu hối; có hào chỉ một lớp, không universal score.",
-      "citationIds": ["citation-ntt-translator-introduction-image-omen"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-translation-base",
-      "kind": "author-interpretation",
-      "text": "NTT chọn Chu Dịch Đại Toàn của Hồ Quảng/Kim Âu Tư theo mệnh Minh Thành Tổ, trọng Trình truyện/Chu Bản Nghĩa, tiên nho phụ. Đầy đủ là lượng chứ không phẩm, không certify mọi ý đúng.",
-      "citationIds": ["citation-ntt-translator-introduction-translation-base"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-translation-alternatives",
-      "kind": "author-interpretation",
-      "text": "Khi Trình/Chu khác nhau, NTT chọn cách hợp văn pháp Nho hơn, không phán một người đúng; thêm tiên nho nếu ý khác. Không hòa các lớp thành một chủ thuyết vô chủ.",
-      "citationIds": ["citation-ntt-translator-introduction-translation-alternatives"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-translation-diction",
-      "kind": "author-interpretation",
-      "text": "NTT cố dùng tiếng cổ để giữ nhiều nghĩa/lời rời rã, tránh ép người đọc theo mình. Đây là lý do dịch, không chép lại văn nguồn hoặc tuyên bố ý nghĩa đã giải quyết.",
-      "citationIds": ["citation-ntt-translator-introduction-translation-diction"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-thua",
-      "kind": "author-interpretation",
-      "text": "Thửa trước động từ tương đương sở, cái/kẻ mà; trước danh từ tương đương kỳ, của nó/người, có thể ba ngôi. Tóm tắt cách dùng trong bản dịch.",
-      "citationIds": ["citation-ntt-translator-introduction-thua"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-chung",
-      "kind": "author-interpretation",
-      "text": "Chưng đầu câu như chi làm trọn nghĩa, ít dùng; sau động từ như ư/vu, ở. Phân hai ngữ cảnh, không tự sửa body thành tiếng hiện đại.",
-      "citationIds": ["citation-ntt-translator-introduction-chung"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-hay-kha",
-      "kind": "author-interpretation",
-      "text": "Hay có thể biết/được; khá có thể có thể/đáng. NTT kết hẹn nói ý kiến cuối sách; hẹn không chứng đoạn ấy tồn tại hoặc cho phép phục dựng.",
-      "citationIds": ["citation-ntt-translator-introduction-hay-kha"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-note-01",
-      "kind": "author-interpretation",
-      "text": "Chú 1 gắn marker trên PDF 7: Long mã là thú thần thoại, không con vật lịch sử.",
-      "citationIds": ["citation-ntt-translator-introduction-note-01"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-note-02",
-      "kind": "author-interpretation",
-      "text": "Chú 2 gắn marker trên PDF 7: Tám quẻ là quẻ đơn.",
-      "citationIds": ["citation-ntt-translator-introduction-note-02"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-note-03",
-      "kind": "author-interpretation",
-      "text": "Chú 3 gắn marker trên PDF 7: Quẻ kép: chú giữ ý kiến khác rằng Văn Vương mới đặt 64, Phục Hy chỉ 8.",
-      "citationIds": ["citation-ntt-translator-introduction-note-03"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-note-04",
-      "kind": "author-interpretation",
-      "text": "Chú 4 gắn marker trên PDF 7: Chú giữ ý kiến khác rằng Phục Hy đã đặt tên 64, trái cách kể chưa có tên trong lời đầu.",
-      "citationIds": ["citation-ntt-translator-introduction-note-04"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-note-05",
-      "kind": "author-interpretation",
-      "text": "Chú 5 gắn marker trên PDF 7: Lời Thoán Văn Vương ở đầu quẻ khác Thoán Truyện bắt Lời Thoán nói rằng, truyền gán Khổng Tử.",
-      "citationIds": ["citation-ntt-translator-introduction-note-05"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-translator-introduction-ntt-translator-introduction-note-06",
-      "kind": "author-interpretation",
-      "text": "Chú 6 gắn marker trên PDF 8: Lời Tượng Chu Công ngay đầu hào khác Tượng Truyện bắt Lời Tượng nói rằng, truyền gán Khổng Tử.",
-      "citationIds": ["citation-ntt-translator-introduction-note-06"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-ntt-translator-introduction-origin",
-      "citation-ntt-translator-introduction-wen-zhou",
-      "citation-ntt-translator-introduction-wings",
-      "citation-ntt-translator-introduction-transmission",
-      "citation-ntt-translator-introduction-trigrams-hexagrams",
-      "citation-ntt-translator-introduction-lines",
-      "citation-ntt-translator-introduction-natures",
-      "citation-ntt-translator-introduction-images",
-      "citation-ntt-translator-introduction-time",
-      "citation-ntt-translator-introduction-rank",
-      "citation-ntt-translator-introduction-central-correct",
-      "citation-ntt-translator-introduction-person",
-      "citation-ntt-translator-introduction-image-omen",
-      "citation-ntt-translator-introduction-translation-base",
-      "citation-ntt-translator-introduction-translation-alternatives",
-      "citation-ntt-translator-introduction-translation-diction",
-      "citation-ntt-translator-introduction-thua",
-      "citation-ntt-translator-introduction-chung",
-      "citation-ntt-translator-introduction-hay-kha",
-      "citation-ntt-translator-introduction-note-01",
-      "citation-ntt-translator-introduction-note-02",
-      "citation-ntt-translator-introduction-note-03",
-      "citation-ntt-translator-introduction-note-04",
-      "citation-ntt-translator-introduction-note-05",
-      "citation-ntt-translator-introduction-note-06"
-    ],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

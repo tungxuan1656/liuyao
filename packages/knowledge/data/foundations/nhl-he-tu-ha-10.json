@@ -1,131 +1,83 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-ha-10",
   "type": "article",
   "title": "NHL — Hệ Từ Hạ, chương 10",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Dịch đủ thiên/nhân/địa,kiêm tam tài lưỡng thành sáu.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-section-01-original-reading"],
+      "text": "Dịch đủ thiên/nhân/địa,kiêm tam tài lưỡng thành sáu.\n\nBiến gọi hào,hào bậc/vật,vật hạp/văn,văn bất đáng sinh cát hung.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["384", "384"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "section-02-original-reading — original-reading",
+          "printedPages": ["384", "384"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch ba ngôi nhân đôi thành sáu hào; chú có hai cách xếp tài,không một sơ đồ độc quyền.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-section-01-translation"],
+      "text": "NHL dịch ba ngôi nhân đôi thành sáu hào; chú có hai cách xếp tài,không một sơ đồ độc quyền.\n\nNHL dịch miễn cưỡng bậc/đặc tính/vị,hứa tốt xấu chỉ thuộc source; nói có thể bỏ ba câu sau nhưng thực tế NHL có dịch.\n\nNHL chú đơn quái dưới đất/giữa người/trên trời,rồi trùng quái đôi nội/ngoại. Còn cách xét toàn trùng quái chia1–2 đất,3–4 người,5–6 trời; giữ cả hai.\n\nNHL báo tối nghĩa,miễn cưỡng dịch văn/vật;bảo PBC chỉ câu đầu và có lẽ mình cũng nên bỏ ba câu sau nhưng thực tế có in/dịch đủ.\n\nNHL giải hào là âm dương giao nhau,sinh biến; chỉ diễn nghĩa,không thay logic core.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "section-01-translation — translation",
+          "printedPages": ["384", "384"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "section-02-translation — translation",
+          "printedPages": ["384", "384"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "s01-two-tam-tai — note",
+          "printedPages": ["384", "384"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "s02-doubt-and-pbc — note",
+          "printedPages": ["384", "384"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "s02-hao-gloss — note",
+          "printedPages": ["384", "384"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Biến gọi hào,hào bậc/vật,vật hạp/văn,văn bất đáng sinh cát hung.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-section-02-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch miễn cưỡng bậc/đặc tính/vị,hứa tốt xấu chỉ thuộc source; nói có thể bỏ ba câu sau nhưng thực tế NHL có dịch.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-section-02-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-s01-two-tam-tai",
-      "kind": "author-interpretation",
-      "text": "NHL chú đơn quái dưới đất/giữa người/trên trời,rồi trùng quái đôi nội/ngoại. Còn cách xét toàn trùng quái chia1–2 đất,3–4 người,5–6 trời; giữ cả hai.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-s01-two-tam-tai"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-s02-doubt-and-pbc",
-      "kind": "author-interpretation",
-      "text": "NHL báo tối nghĩa,miễn cưỡng dịch văn/vật;bảo PBC chỉ câu đầu và có lẽ mình cũng nên bỏ ba câu sau nhưng thực tế có in/dịch đủ.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-s02-doubt-and-pbc"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-s02-chu-hi-unexplained",
-      "kind": "author-interpretation",
       "text": "NHL nói Chu Hi không giảng văn nghĩa gì; không dựng giải thích của ông.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-s02-chu-hi-unexplained"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [384, 384],
+          "section": "s02-chu-hi-unexplained — note",
+          "printedPages": ["384", "384"]
+        }
+      ],
       "attribution": {
         "author": "Chu Hi",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-10-nhl-he-tu-ha-10-s02-hao-gloss",
-      "kind": "author-interpretation",
-      "text": "NHL giải hào là âm dương giao nhau,sinh biến; chỉ diễn nghĩa,không thay logic core.",
-      "citationIds": ["citation-nhl-he-tu-ha-10-s02-hao-gloss"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-ha-10-section-01-original-reading",
-      "citation-nhl-he-tu-ha-10-section-01-translation",
-      "citation-nhl-he-tu-ha-10-section-02-original-reading",
-      "citation-nhl-he-tu-ha-10-section-02-translation",
-      "citation-nhl-he-tu-ha-10-s01-two-tam-tai",
-      "citation-nhl-he-tu-ha-10-s02-doubt-and-pbc",
-      "citation-nhl-he-tu-ha-10-s02-chu-hi-unexplained",
-      "citation-nhl-he-tu-ha-10-s02-hao-gloss"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

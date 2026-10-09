@@ -118,8 +118,8 @@ New interpretation, calendar, or UI behavior.
 ## Implementation evidence and limitations
 
 - Canonical source fidelity findings and dispositions are in the
-  [book source comparison](../docs/references/book-sources.md#feat-058-source-comparison)
-  and [passage register](../docs/reviews/knowledge/source-inventory.md#feat-058-casting-supplements-and-criticisms-passage-register).
+  [book source comparison](../docs/reviews/knowledge/README.md)
+  and [passage register](../docs/reviews/knowledge/README.md).
   The fixture/test preserves their per-claim PDF/printed locators and attributed layers.
 - Publication state is source-comparison only, not source-audit/independent verification
   or certification approval. No new audit ledgers are created. Existing84 decisions

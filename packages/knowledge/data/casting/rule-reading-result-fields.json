@@ -1,43 +1,24 @@
 {
-  "schemaVersion": 2,
   "id": "rule-reading-result-fields",
   "type": "rule",
   "title": "Các trường của kết quả gieo quẻ",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "ruleset": "liuyao-standard-v1",
+  "category": "metadata",
+  "status": "ready",
+  "entries": [
     {
-      "id": "rule-reading-result-fields-claim",
-      "kind": "project-convention",
       "text": "Trong hợp đồng phần mềm V1, kết quả gồm mã quy ước tính, mã quẻ chính, mã quẻ biến khi có hào động, mã nội quái và ngoại quái, cung và ngũ hành của cung, vị trí hào Thế và hào Ứng, cùng sáu kết quả hào của quẻ chính. Mỗi hào ghi vị trí 1–6, giá trị đầu vào, tính âm dương, trạng thái động, can và chi Nạp Giáp, ngũ hành, Lục thân và dấu Thế hoặc Ứng khi có. Đây là mã định danh và dữ kiện có cấu trúc, không phải lời giải thích hay dự đoán.",
-      "citationIds": [],
-      "projectEvidence": [
+      "references": [
         {
           "documentPath": "docs/design-docs/domain-model.md",
-          "section": "## Stable IDs",
-          "revision": "v1"
+          "section": "## Stable IDs"
         },
         {
           "documentPath": "docs/design-docs/domain-model.md",
-          "section": "## Reading result",
-          "revision": "v1"
+          "section": "## Reading result"
         }
       ]
     }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceClaimIds": ["rule-reading-result-fields-claim"],
-    "note": "Đối chiếu định nghĩa với đúng các mục đặc tả dự án V1 đã được chấp nhận và ghi trong projectEvidence. Đây là quy ước phần mềm của dự án, không phải chứng cứ giáo lý từ sách; không khẳng định đã kiểm định nguồn sách hay chứng nhận độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "ruleset": "liuyao-standard-v1",
-  "category": "metadata"
+  ]
 }

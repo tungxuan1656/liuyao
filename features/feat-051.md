@@ -64,8 +64,8 @@ New interpretation, calendar, or UI behavior.
   All 18 layer rosters and all group discovery states remain unresolved for later audit.
   Observed chapter-one labels extend to XXV with two VI headings; no calendar behavior follows.
 - Unit/layer/note/diagram dispositions and actual source conflicts are in
-  [source inventory](../docs/reviews/knowledge/source-inventory.md#feat-051-complete-assigned-page-unit-map);
-  [book sources](../docs/references/book-sources.md#feat-051-front-matter-and-chapter-one-comparison)
+  [source inventory](../docs/reviews/knowledge/README.md);
+  [book sources](../docs/reviews/knowledge/README.md)
   owns detailed comparisons. Front voices, the two named poems, green uncredited readings,
   all eight ch5 notes and the unnumbered PDF 74–76 supplement remain separate.
 - Byte comparison against initial HEAD preserves all 203 prior authored records and 33 citation

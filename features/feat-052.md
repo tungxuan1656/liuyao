@@ -49,7 +49,7 @@ New interpretation, calendar, or UI behavior.
 ## Source Evidence
 
 - Six source-compared V2 articles release941 new original summaries/citations. Coverage is
-  224 records,4360 claims and4606 citations. The [source inventory](../docs/reviews/knowledge/source-inventory.md#feat-052-application-passage-dispositions)
+  224 records,4360 claims and4606 citations. The [source inventory](../docs/reviews/knowledge/README.md)
   records399 children under the six unchanged parent intervals; registry revision36 keeps
   discovery/audit unresolved and binds exact inventory bytes.
 - SHA256 `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`,

@@ -1,139 +1,85 @@
 {
-  "schemaVersion": 2,
   "id": "article-bpct-criticism-xiv",
   "type": "article",
   "title": "BPCT phê bình XIV — Hôn nhân — Dịch Lâm Bổ Di",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-target-proposition",
-      "kind": "author-interpretation",
       "text": "Dịch Lâm Bổ Di bị dẫn vừa Nội/Ngoại vừa Thế/Ứng làm vợ/chồng đổi theo nam/nữ,thêm âm/dương,Tài/Quan,không phân ai hỏi. Tác giả giả định Ngoại hung/Ứng tốt gây kết luận trái.",
-      "citationIds": ["citation-bpct-criticism-xiv-target-proposition"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [465, 465],
+          "section": "bpct-criticism-XIV-target-proposition — criticized-proposition",
+          "printedPages": ["373", "373"]
+        }
+      ],
       "attribution": {
         "author": "Trương Tinh Nguyên — Dịch Lâm Bổ Di — được BPCT thuật lại, không đối chiếu trực tiếp sách bị phê bình",
         "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
+      }
     },
     {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-reply-self",
-      "kind": "author-interpretation",
-      "text": "Tác giả phân Thế nhà ta/Ứng nhà kia;tự hỏi nữ dùng Quan chồng/Thế mình,nam Tài vợ/Thế mình,sinh/hợp và cực tính được gán thuận. Vai này giới hạn tự hỏi,không áp cha mẹ hỏi con hay quy định giới thực tế.",
-      "citationIds": ["citation-bpct-criticism-xiv-reply-self"],
+      "text": "Tác giả phân Thế nhà ta/Ứng nhà kia;tự hỏi nữ dùng Quan chồng/Thế mình,nam Tài vợ/Thế mình,sinh/hợp và cực tính được gán thuận. Vai này giới hạn tự hỏi,không áp cha mẹ hỏi con hay quy định giới thực tế.\n\nBậc trưởng hỏi con dùng Tử;Thế ở Tử/tượng dương nhà trai,Ứng ở Tử/tượng âm nhà gái theo đoạn. Hỏi em dùng Huynh. Nguồn còn gán Thế thương hình cha chồng/Tài sinh ích mẹ chồng; không đạo đức,quy lỗi hay quyền ép hôn.\n\nNgày Mão/tháng Ngọ cha hỏi gả con gái,Bỉ tĩnh: người đem quẻ khen âmThế/dươngỨng,Quan vượng,Lục hợp,Tài-Nhật sinhQuan. Tác giả gán Tí Tử dưới Mùi không thọ,rồi kể sau cưới chết bệnh. Cách quy cho Trương có claim riêng; lời outcome nguồn không xác minh sinh tử.\n\nGiáp Ngọ/tháng Thân chọn vợ cho con,Phục→Phệ Hạp:tác giả gán Ứng Tử cục sinhThế giàu/hiếu. Nguồn kể cưới nămTị,20 năm sau cha mẹ/vợ chồng sống tốt,có con/cháu; cách quy cho Trương nằm claim riêng. Chỉ phản ví dụ tự thuật,không chứng minh đức hạnh người dâu hay lỗi.\n\nTác giả dặn đừng bỏ cát thành hung theo phân vai sai; đây là kết luận phê bình trước XV,không lời bảo chứng hôn phối.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [465, 465],
+          "section": "bpct-criticism-XIV-reply-self — reply",
+          "printedPages": ["373", "373"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [465, 465],
+          "section": "bpct-criticism-XIV-reply-proxy — reply",
+          "printedPages": ["373", "373"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [465, 466],
+          "section": "bpct-criticism-XIV-example-bi — example",
+          "printedPages": ["373", "374"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [466, 466],
+          "section": "bpct-criticism-XIV-example-phuc — example",
+          "printedPages": ["374", "374"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [466, 466],
+          "section": "bpct-criticism-XIV-closing — reply",
+          "printedPages": ["374", "374"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
+      }
     },
     {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-reply-proxy",
-      "kind": "author-interpretation",
-      "text": "Bậc trưởng hỏi con dùng Tử;Thế ở Tử/tượng dương nhà trai,Ứng ở Tử/tượng âm nhà gái theo đoạn. Hỏi em dùng Huynh. Nguồn còn gán Thế thương hình cha chồng/Tài sinh ích mẹ chồng; không đạo đức,quy lỗi hay quyền ép hôn.",
-      "citationIds": ["citation-bpct-criticism-xiv-reply-proxy"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-example-bi",
-      "kind": "author-interpretation",
-      "text": "Ngày Mão/tháng Ngọ cha hỏi gả con gái,Bỉ tĩnh: người đem quẻ khen âmThế/dươngỨng,Quan vượng,Lục hợp,Tài-Nhật sinhQuan. Tác giả gán Tí Tử dưới Mùi không thọ,rồi kể sau cưới chết bệnh. Cách quy cho Trương có claim riêng; lời outcome nguồn không xác minh sinh tử.",
-      "citationIds": ["citation-bpct-criticism-xiv-example-bi"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-example-phuc",
-      "kind": "author-interpretation",
-      "text": "Giáp Ngọ/tháng Thân chọn vợ cho con,Phục→Phệ Hạp:tác giả gán Ứng Tử cục sinhThế giàu/hiếu. Nguồn kể cưới nămTị,20 năm sau cha mẹ/vợ chồng sống tốt,có con/cháu; cách quy cho Trương nằm claim riêng. Chỉ phản ví dụ tự thuật,không chứng minh đức hạnh người dâu hay lỗi.",
-      "citationIds": ["citation-bpct-criticism-xiv-example-phuc"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-example-bi-opposing",
-      "kind": "author-interpretation",
-      "text": "Vương nói nếu theo Trương,Bỉ này là giai ngẫu,Tử phục Tuần Không tất vô con; đây là kết luận ông quy cho cách kia, không kết quả của bài phê bình hay tư vấn sinh sản.",
-      "citationIds": ["citation-bpct-criticism-xiv-example-bi-opposing"],
+      "text": "Vương nói nếu theo Trương,Bỉ này là giai ngẫu,Tử phục Tuần Không tất vô con; đây là kết luận ông quy cho cách kia, không kết quả của bài phê bình hay tư vấn sinh sản.\n\nVương nói nếu theo Trương lấy Quan làm chồng thì Dần Mộc Nguyệt phá/bị Kim cục khắc sẽ khắc chồng; giữ phương án bị bác riêng với Ứng Tử cục.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [466, 466],
+          "section": "bpct-criticism-XIV-example-bi-opposing — criticized-proposition",
+          "printedPages": ["374", "374"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [466, 466],
+          "section": "bpct-criticism-XIV-example-phuc-opposing — criticized-proposition",
+          "printedPages": ["374", "374"]
+        }
+      ],
       "attribution": {
         "author": "Trương Tinh Nguyên — phép được Vương Hồng Tự quy gán — được BPCT thuật lại, không đối chiếu trực tiếp sách bị phê bình",
         "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-example-phuc-opposing",
-      "kind": "author-interpretation",
-      "text": "Vương nói nếu theo Trương lấy Quan làm chồng thì Dần Mộc Nguyệt phá/bị Kim cục khắc sẽ khắc chồng; giữ phương án bị bác riêng với Ứng Tử cục.",
-      "citationIds": ["citation-bpct-criticism-xiv-example-phuc-opposing"],
-      "attribution": {
-        "author": "Trương Tinh Nguyên — phép được Vương Hồng Tự quy gán — được BPCT thuật lại, không đối chiếu trực tiếp sách bị phê bình",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xiv-bpct-criticism-xiv-closing",
-      "kind": "author-interpretation",
-      "text": "Tác giả dặn đừng bỏ cát thành hung theo phân vai sai; đây là kết luận phê bình trước XV,không lời bảo chứng hôn phối.",
-      "citationIds": ["citation-bpct-criticism-xiv-closing"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
+      }
     }
-  ],
-  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-criticism-xiv-target-proposition",
-      "citation-bpct-criticism-xiv-reply-self",
-      "citation-bpct-criticism-xiv-reply-proxy",
-      "citation-bpct-criticism-xiv-example-bi",
-      "citation-bpct-criticism-xiv-example-phuc",
-      "citation-bpct-criticism-xiv-example-bi-opposing",
-      "citation-bpct-criticism-xiv-example-phuc-opposing",
-      "citation-bpct-criticism-xiv-closing",
-      "citation-bpct-front-credits-compilation",
-      "citation-bpct-front-credits-translation",
-      "citation-bpct-front-translator-preface-edition"
-    ],
-    "note": "Compared complete PyMuPDF extraction /tmp/feat058/{429..467}.txt and individually opened all39 full-page PNGs /tmp/feat058/{429..467}.png (1.5x,918x1188), plus boundary428 and credits1–3. SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a,467 pages. Printed388–416 on429–457 then366–374 on458–466;467 visually blank. II heading claims64 hexagrams/384 lines but only8 named entries/48 rows are observed before IV; no III. Remaining56 stable obligations are unresolved source-not-found placeholders, not source-reported omissions. IV has8 diagrams/56 transformation rows; V has18 cases and14 nested relational verses; VI has11 entries. Source layers, opposing propositions, examples/replies and translator notes are separate; no text/images, calculated fixtures or missing rows reconstructed. Existing criticismX note9 citation is reused unchanged. Source comparison only; feat-091 audit, source discovery/layer rosters, independent verification and certification remain open."
-  }
+  ]
 }

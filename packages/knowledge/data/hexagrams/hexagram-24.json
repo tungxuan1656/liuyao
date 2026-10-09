@@ -1,106 +1,151 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-24",
   "type": "hexagram",
   "title": "Địa Lôi Phục",
   "aliases": ["Phục"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-thunder", "trigram-earth"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-24-structure",
-      "kind": "structural-fact",
       "text": "Địa Lôi Phục có ngoại quái Khôn và nội quái Chấn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q24-overview-nhl",
-        "citation-pbc-q24-overview-pbc",
-        "citation-ntt-q24-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [209, 209],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["209", "209"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [252, 256],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [419, 424],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-24-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê đọc Phục theo sự trở lại và lớn dần của khí dương, đồng thời giảng việc trở về điều thiện. Động mà thuận là điều kiện của sự sinh trưởng; hình ảnh nghỉ để nuôi mầm không thành lệnh nghỉ theo lịch của ứng dụng. Ở chương Đạo trời, ông đọc nhật theo hào hoặc lần biến và giải bằng chuỗi bảy quẻ từ Cấu tới Phục, tính cả hai đầu.",
-      "citationIds": [
-        "citation-nhl-q24-overview-nhl",
-        "citation-nhl-q24-overview-seven-changes-nhl"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [209, 209],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["209", "209"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [94, 94],
+          "section": "Vòng tiêu trưởng Cấu đến Phục",
+          "printedPages": ["94", "94"]
+        }
       ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-24-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu giải Phục theo sự sinh lại và việc sửa mình sau suy hoặc sai. Ông phân biệt vận chung với hành vi từng người: cùng một thời vẫn có tốt xấu khác nhau tùy cách trở về điều đúng.",
-      "citationIds": ["citation-pbc-q24-overview-pbc", "citation-pbc-q24-overview-conclusion-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [252, 256],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [260, 260],
+          "section": "Kết luận — thời vận và hành vi từng người"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-24-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di xem Phục là quay lại đường thiện, khí mới sinh còn nhỏ cần nuôi và giữ khỏi tổn. Ông đọc bảy ngày theo bảy lần đổi từ Cấu tới Phục, giữ nghĩa này riêng với ngày chiêm của Chu Hy.",
-      "citationIds": ["citation-ntt-q24-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [419, 424],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-24-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy cũng bàn chuỗi biến tới Phục nhưng còn đọc bảy ngày như kỳ trở lại của lời chiêm. Cách đọc thời hạn truyền thống này giữ theo tác giả, không dùng làm lịch dự báo chung.",
-      "citationIds": ["citation-ntt-q24-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [420, 422],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-thunder", "trigram-earth"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yin", "yin", "yin", "yin", "yin"],
-    "kingWenNumber": 24,
-    "upperTrigramId": "trigram-earth",
-    "lowerTrigramId": "trigram-thunder",
-    "claimIds": ["hexagram-24-structure"]
-  },
+  "kingWenNumber": 24,
+  "upperTrigramId": "trigram-earth",
+  "lowerTrigramId": "trigram-thunder",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-24-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào đầu biết nhận sai và sửa ngay trước khi đi xa. Tự tu và không lặp lại lỗi là ý tốt lớn của lời hào.",
-          "citationIds": ["citation-nhl-q24-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [210, 210],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["210", "210"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-24-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào đầu theo sự đổi lỗi nhanh, không chờ sai đã lâu mới trở lại. Giá trị nằm ở công phu tự sửa, không chỉ ở việc là hào dương đầu tiên.",
-          "citationIds": ["citation-pbc-q24-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [256, 256],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-24-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho sai chưa xa mà đổi ngay thì chưa tới phải ăn năn. Ông đọc chữ chi theo nghĩa đến, khác hai tác giả Việt Nam giải chữ kì theo nghĩa lớn.",
-          "citationIds": ["citation-ntt-q24-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [424, 425],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -112,30 +157,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-24-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào hai nhu trung chính, ở gần người tốt ở hào đầu nên vui theo điều nhân. Biết gần và học điều đúng giúp sự trở lại tốt đẹp.",
-          "citationIds": ["citation-nhl-q24-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [210, 210],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["210", "210"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-24-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào hai ở người biết hạ mình gần hào đầu và làm điều nhân. Hưu phục không chỉ là trở lại, mà là cách trở lại tốt nhờ quan hệ và phẩm chất ấy.",
-          "citationIds": ["citation-pbc-q24-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [256, 257],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-24-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào hai theo người biết nhún với người có đức nhân ở hào đầu. Sự trung chính và chịu theo điều thiện khiến lời hào nói đẹp và tốt.",
-          "citationIds": ["citation-ntt-q24-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [425, 426],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -147,30 +205,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-24-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào ba không bền chí, sửa rồi lại sai nên đáng lo. Vẫn biết trở về điều thiện là điều được khuyến khích, không phải cho phép cố tình lặp lỗi.",
-          "citationIds": ["citation-nhl-q24-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [210, 210],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["210", "210"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-24-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu phân biệt nguy do nhiều lần sai với không lỗi ở việc mỗi lần lại chịu sửa. Hai vế thuộc hai hành động khác nhau, không xóa nguy của sự thiếu bền.",
-          "citationIds": ["citation-pbc-q24-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [257, 258],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-24-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt nguy ở sự thường mất điều đúng, còn không lỗi ở việc trở lại. Ông không vì người thường sai mà ngăn họ tiếp tục sửa mình.",
-          "citationIds": ["citation-ntt-q24-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [426, 427],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -182,40 +253,57 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-24-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào bốn ở giữa các hào âm nhưng riêng ứng với hào đầu nên theo người thiện. Lời một mình trở lại khen việc chọn đúng dù người chung quanh chọn khác.",
-          "citationIds": ["citation-nhl-q24-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [210, 210],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["210", "210"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-24-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu phân biệt ở giữa nhóm với đắc trung của vị hào. Ông khen hào bốn một mình theo đúng nhưng không gán cát khi hoàn cảnh và sức còn chưa bảo đảm kết quả.",
-          "citationIds": ["citation-pbc-q24-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [258, 258],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-24-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào bốn có chí theo hào đầu nhưng chất mềm và sức người giúp còn nhỏ, chưa đủ nên việc. Vì vậy ông không đọc độc phục thành lời hứa thành công hoặc khẳng định hoàn toàn không lỗi.",
-          "citationIds": ["citation-ntt-q24-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [427, 428],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-24-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc độc phục theo việc một người trong nhóm vẫn chọn đường thiện. Dương còn nhỏ nên không nói tốt, nhưng lẽ phải vẫn đáng theo; ông đặt việc đúng lên trước bàn kết quả tốt xấu.",
-          "citationIds": ["citation-ntt-q24-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [428, 428],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -227,30 +315,43 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-24-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải hào năm nhu thuận, trung và có đức dày, biết tự sửa về thiện. Sự phục thiện thật giúp tránh hối, không chỉ là ngôi cao.",
-          "citationIds": ["citation-nhl-q24-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [210, 211],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["210", "211"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-24-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào năm lấy đạo trung tự làm nên mình, giữ việc sửa thiện dày và bền. Khác hai và bốn nhờ hào đầu, lời này nhấn mạnh công phu tự xét.",
-          "citationIds": ["citation-pbc-q24-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [259, 259],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-24-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào năm dùng đức trung thuận để tự làm nên mình nên không ăn năn. Dương còn nhỏ và không có người giúp dưới khiến ông chưa gọi đó là hanh tốt.",
-          "citationIds": ["citation-ntt-q24-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [428, 429],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -262,131 +363,148 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-24-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt hào cuối ở người mê mà không chịu quay về điều đúng, còn cậy sức nên gây hại thêm. Ông đọc mười năm theo ý cùng chót, không nhất định một hạn mười năm.",
-          "citationIds": ["citation-nhl-q24-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [211, 211],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["211", "211"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
-          ]
+          "condition": "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
         },
         {
-          "id": "hexagram-24-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào cuối theo người lầm tới cùng mà vẫn không sửa, dùng sức chỉ làm hậu quả rộng hơn. Thập niên biểu thị cùng cục trong cách giảng của ông, không khóa kết quả vào một ngày lịch.",
-          "citationIds": ["citation-pbc-q24-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [259, 260],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
-          ]
+          "condition": "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
         },
         {
-          "id": "hexagram-24-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào cuối đã lạc đường mà không trở lại thì làm việc hoặc trị nước đều sai. Mười năm là ý cùng chót của số; lời hung thuộc sự không sửa, khác lời chung hanh của quẻ.",
-          "citationIds": ["citation-ntt-q24-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [429, 431],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
-          ]
+          "condition": "Hình ảnh dùng quân và trị nước thuộc bối cảnh cổ; mười năm được tác giả đọc theo nghĩa cùng chót, không là hạn dự báo của ứng dụng."
         }
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-nhl-ntt-return-first-yin-name",
-      "status": "resolved",
-      "description": "NHL PDF 94 và NTT PDF 420 phần Chu Hy gọi quẻ một âm mới sinh là Cấn trong chuỗi tới Phục.",
-      "citationIds": [
-        "citation-nhl-q24-overview-seven-changes-nhl",
-        "citation-ntt-q24-overview-chu-hy",
-        "citation-ntt-q24-overview-ntt",
-        "citation-pbc-q23-overview-pbc"
-      ],
-      "resolution": "Ảnh hai trang xác nhận chữ Cấn. Đoạn trước ở NHL 94, Trình Di ở NTT 420 và PBC 245 đều dùng Cấu cho quẻ một âm đầu tiên. Giữ Cấu trong cách đếm truyền thống, không đổi cấu trúc Cấn hay thêm phép tính lịch."
+      "text": "NHL PDF 94 và NTT PDF 420 phần Chu Hy gọi quẻ một âm mới sinh là Cấn trong chuỗi tới Phục. Ảnh hai trang xác nhận chữ Cấn. Đoạn trước ở NHL 94, Trình Di ở NTT 420 và PBC 245 đều dùng Cấu cho quẻ một âm đầu tiên. Giữ Cấu trong cách đếm truyền thống, không đổi cấu trúc Cấn hay thêm phép tính lịch.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [94, 94],
+          "section": "Vòng tiêu trưởng Cấu đến Phục",
+          "printedPages": ["94", "94"]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [420, 422],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [419, 424],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [244, 247],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-return-first-image-text",
-      "status": "resolved",
-      "description": "NTT PDF 425 phần Hán của Tượng hào đầu lặp lời kinh và nguyên cát, khác bản dịch để tu thân.",
-      "citationIds": [
-        "citation-ntt-q24-line-1-ntt",
-        "citation-nhl-q24-line-1-nhl",
-        "citation-pbc-q24-line-1-pbc"
-      ],
-      "resolution": "Ảnh PDF 425 xác nhận phần chép lặp. Bản dịch và lời Trình Di cùng giải việc tu thân, khớp hai sách khác; tóm tắt giữ ý tự sửa, không coi lời Hán bị lặp là một Tượng khác."
+      "text": "NTT PDF 425 phần Hán của Tượng hào đầu lặp lời kinh và nguyên cát, khác bản dịch để tu thân. Ảnh PDF 425 xác nhận phần chép lặp. Bản dịch và lời Trình Di cùng giải việc tu thân, khớp hai sách khác; tóm tắt giữ ý tự sửa, không coi lời Hán bị lặp là một Tượng khác.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [424, 425],
+          "section": "Hào 1 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [210, 210],
+          "section": "Hào 1 — diễn giải",
+          "printedPages": ["210", "210"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [256, 256],
+          "section": "Hào 1 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-return-second-humility",
-      "status": "resolved",
-      "description": "NTT PDF 426 bản dịch lời Tượng hào hai nói biết lớn với kẻ nhân, khác chữ hạ và lời Trình Di nhún mình.",
-      "citationIds": [
-        "citation-ntt-q24-line-2-ntt",
-        "citation-nhl-q24-line-2-nhl",
-        "citation-pbc-q24-line-2-pbc"
-      ],
-      "resolution": "Ảnh PDF 426 xác nhận chữ lớn. Lời Hán, phần Trình Di và PBC cùng giảng hạ mình gần người nhân; giữ ý nhún với người có đức, không chuyển thành tự nâng mình."
+      "text": "NTT PDF 426 bản dịch lời Tượng hào hai nói biết lớn với kẻ nhân, khác chữ hạ và lời Trình Di nhún mình. Ảnh PDF 426 xác nhận chữ lớn. Lời Hán, phần Trình Di và PBC cùng giảng hạ mình gần người nhân; giữ ý nhún với người có đức, không chuyển thành tự nâng mình.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [425, 426],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [210, 210],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["210", "210"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [256, 257],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-return-footnote-glyph",
-      "status": "resolved",
-      "description": "NTT PDF 431 chú thích 1 gọi chữ 後 là Phục.",
-      "citationIds": [
-        "citation-ntt-q24-footnote-glyph-ngo",
-        "citation-ntt-q24-overview-ntt",
-        "citation-nhl-q24-overview-nhl",
-        "citation-pbc-q24-overview-pbc"
-      ],
-      "resolution": "Ảnh PDF 431 xác nhận chữ 後 trong chú thích. Lời quẻ Phục dùng 復; giữ tên và nghĩa trở lại từ lời quẻ, không nhập chữ gọi nhầm trong chú thích."
+      "text": "NTT PDF 431 chú thích 1 gọi chữ 後 là Phục. Ảnh PDF 431 xác nhận chữ 後 trong chú thích. Lời quẻ Phục dùng 復; giữ tên và nghĩa trở lại từ lời quẻ, không nhập chữ gọi nhầm trong chú thích.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [431, 431],
+          "section": "Chú thích 1 — chữ Hán được gọi tên"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [419, 424],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [209, 209],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["209", "209"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [252, 256],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q24-overview-nhl",
-      "citation-pbc-q24-overview-pbc",
-      "citation-ntt-q24-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-q24-overview-seven-changes-nhl",
-      "citation-pbc-q24-overview-conclusion-pbc",
-      "citation-ntt-q24-overview-chu-hy",
-      "citation-nhl-q24-line-1-nhl",
-      "citation-pbc-q24-line-1-pbc",
-      "citation-ntt-q24-line-1-ntt",
-      "citation-nhl-q24-line-2-nhl",
-      "citation-pbc-q24-line-2-pbc",
-      "citation-ntt-q24-line-2-ntt",
-      "citation-nhl-q24-line-3-nhl",
-      "citation-pbc-q24-line-3-pbc",
-      "citation-ntt-q24-line-3-ntt",
-      "citation-nhl-q24-line-4-nhl",
-      "citation-pbc-q24-line-4-pbc",
-      "citation-ntt-q24-line-4-ntt",
-      "citation-ntt-q24-line-4-chu-hy",
-      "citation-nhl-q24-line-5-nhl",
-      "citation-pbc-q24-line-5-pbc",
-      "citation-ntt-q24-line-5-ntt",
-      "citation-nhl-q24-line-6-nhl",
-      "citation-pbc-q24-line-6-pbc",
-      "citation-ntt-q24-line-6-ntt",
-      "citation-pbc-q23-overview-pbc",
-      "citation-ntt-q24-footnote-glyph-ngo"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Giữ riêng cách đọc tác giả và bối cảnh cổ. Nhãn trang NHL được kiểm tra trên PDF; chưa có xác nhận chuyên gia độc lập và không chứng nhận toàn bộ sách hay giả thuyết lịch sử. Cách đếm Cấu tới Phục dùng đoạn NHL PDF 94; chuỗi diễn đạt ở PDF 209 và tham chiếu (1) chưa tìm được nội dung chú thích không làm chứng cứ cho lịch dự báo."
-  }
+  ]
 }

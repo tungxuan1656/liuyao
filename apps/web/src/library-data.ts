@@ -8,16 +8,19 @@ import {
   listSourceReferences,
   listTerms,
   searchKnowledge,
+  listContent,
+  getContentMetadata,
 } from '@liuyao/knowledge';
 import type { KnowledgeEntity, KnowledgeRule, KnowledgeTerm } from '@liuyao/knowledge';
 import { ROUTES } from './route-paths';
 
-export type Category = 'hexagrams' | 'trigrams' | 'terms' | 'rules';
+export type Category = 'hexagrams' | 'trigrams' | 'terms' | 'rules' | 'articles';
 export const categories: readonly { id: Category; label: string }[] = [
   { id: 'hexagrams', label: 'Quẻ' },
   { id: 'trigrams', label: 'Quái' },
   { id: 'terms', label: 'Thuật ngữ' },
   { id: 'rules', label: 'Quy tắc' },
+  { id: 'articles', label: 'Bài viết' },
 ];
 export const ruleCategories = [
   'all',
@@ -27,10 +30,18 @@ export const ruleCategories = [
   'classification',
 ] as const;
 export type RuleFilter = (typeof ruleCategories)[number];
-export type LibraryRecord = KnowledgeEntity | KnowledgeTerm | KnowledgeRule;
+type LibraryArticle = { type: 'article'; id: string; title: string; explanation: string };
+export type LibraryRecord = KnowledgeEntity | KnowledgeTerm | KnowledgeRule | LibraryArticle;
 
 export function recordPath(record: LibraryRecord) {
-  const type = 'kind' in record ? record.kind : 'definition' in record ? 'term' : 'rule';
+  const type =
+    'type' in record
+      ? record.type
+      : 'kind' in record
+        ? record.kind
+        : 'definition' in record
+          ? 'term'
+          : 'rule';
   return ROUTES.libraryDetail(type, record.id);
 }
 
@@ -43,6 +54,12 @@ export function recordDescription(record: LibraryRecord) {
 }
 
 export function getRecord(type: string, id: string) {
+  if (type === 'article') {
+    const item = getContentMetadata(id);
+    return item?.type === 'article'
+      ? { type: 'article' as const, id: item.id, title: item.title, explanation: item.summary }
+      : undefined;
+  }
   if (type === 'term') return getTerm(id as KnowledgeTerm['id']);
   if (type === 'rule') return getRule(id as KnowledgeRule['id']);
   if (type === 'trigram' || type === 'hexagram') {
@@ -72,6 +89,13 @@ export function getApplicableRules(record: LibraryRecord): KnowledgeRule[] {
 }
 
 export function getLibraryRecords(category: Category, query: string): readonly LibraryRecord[] {
+  if (category === 'articles')
+    return listContent({ type: 'article', query }).map(item => ({
+      type: 'article' as const,
+      id: item.id,
+      title: item.title,
+      explanation: item.summary,
+    }));
   const matches = query.trim() ? searchKnowledge(query) : null;
   return matches
     ? matches

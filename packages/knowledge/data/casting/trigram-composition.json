@@ -1,31 +1,29 @@
 {
-  "schemaVersion": 1,
   "id": "rule-trigram-composition",
   "type": "rule",
   "title": "Cấu tạo quẻ từ hai quái",
-  "aliases": [],
   "topicIds": ["topic-foundations", "topic-trigrams"],
-  "claims": [
-    {
-      "id": "rule-trigram-composition-claim",
-      "kind": "calculation-rule",
-      "text": "Một quẻ sáu hào gồm nội quái ở dưới và ngoại quái ở trên. Mỗi quái có ba hào; tổ hợp hai quái xác định hình của quẻ.",
-      "citationIds": ["citation-bpct-p14-technical", "citation-nhl-p72-73-technical"]
-    }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p14-technical", "citation-nhl-p72-73-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "ruleset": "liuyao-standard-v1",
-  "category": "structure"
+  "category": "structure",
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Một quẻ sáu hào gồm nội quái ở dưới và ngoại quái ở trên. Mỗi quái có ba hào; tổ hợp hai quái xác định hình của quẻ.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [72, 73],
+          "section": "Động và biến",
+          "printedPages": ["72", "73"]
+        }
+      ],
+      "id": "claim"
+    }
+  ]
 }

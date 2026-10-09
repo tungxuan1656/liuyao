@@ -1,51 +1,36 @@
 {
-  "schemaVersion": 2,
   "id": "article-ntt-upper-divider",
   "type": "article",
   "title": "NTT — Thượng Kinh và Giải Nghĩa",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-ntt-upper-divider-ntt-upper-divider-heading",
-      "kind": "author-interpretation",
       "text": "Trang 79 mở Chu Dịch Thượng Kinh bằng nhan Việt/Hán; ngay bên dưới có Giải Nghĩa, không phải trang trống. Càn bắt 80 và ngoài phạm vi.",
-      "citationIds": ["citation-ntt-upper-divider-heading"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [79, 79],
+          "section": "ntt-upper-divider-heading — non-content"
+        }
+      ],
       "attribution": {
         "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-ntt-upper-divider-ntt-upper-divider-explanation",
-      "kind": "author-interpretation",
       "text": "Giải Nghĩa phân Chu triều đại/Dịch tên giao biến, truyền gán quẻ Phục Hy, lời Văn/Chu, hai Kinh/mười Truyện tổng 12 thiên rồi họ Triều/họ Lã phục cũ. Không xác định thêm tên danh/chắc chắn tác giả đoạn vì 79 không ký; đây là bình giải được dịch qua NTT, không gán chắc Chu Hy chỉ theo vị trí.",
-      "citationIds": ["citation-ntt-upper-divider-explanation"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [79, 79],
+          "section": "ntt-upper-divider-explanation — commentary"
+        }
+      ],
       "attribution": {
         "author": "Bản cung cấp — bình giải không ký, qua Ngô Tất Tố",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-ntt-upper-divider-heading",
-      "citation-ntt-upper-divider-explanation"
-    ],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

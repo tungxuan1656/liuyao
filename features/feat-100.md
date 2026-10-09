@@ -14,7 +14,7 @@ Lesson authoring, complete-corpus certification, remote search, PDF distribution
 
 ## Acceptance
 
-- [ ] Implement the [topic/article contract](../docs/product-specs/knowledge-browser.md#topics-and-articles).
+- [ ] Implement the [topic/article contract](../docs/product-specs/knowledge-browser.md#intended-topic-browsing-and-article-improvements).
 - [ ] Topic collections use manifest definitions and released records' `topicIds` through public APIs.
 - [ ] Article explanations retain named layers, conditions, citations, and declared relationships.
 - [ ] Learning blocks follow declared sequence; unreleased related targets show unavailable states without draft prose.

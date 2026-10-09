@@ -1,184 +1,104 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-thuong-11",
   "type": "article",
   "title": "PBC — Hệ Từ Thượng, chương 11",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-01-original-reading",
-      "kind": "author-interpretation",
       "text": "Tử viết:Dịch khai vật/thành vụ,trùm đạo thiên hạ.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-01-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 625],
+          "section": "section-01-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định; Tử viết được truyền gán Khổng Tử",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "PBC tập trung mở trí/chí,dân sinh và đổi cũ/mới.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-01-translation"],
+      "text": "PBC tập trung mở trí/chí,dân sinh và đổi cũ/mới.\n\nBản đọc tiết1 không có phần thông chí/định nghiệp/đoán nghi hiện trong NHL; không điền từ NHL.\n\nPBC diễn tĩnh rửa lòng/giấu lý,động cùng vui/lo và uy võ thần diệu.\n\nTiết2 bắt đầu tẩy tâm,không phần thi viên/quái phương/sáu hào có ở NHL. Ông vừa nói không giết vừa viện giết một người cứu nhiều người; giữ căng thẳng,không biện minh bạo lực.\n\nPBC giải thần là công dụng chung cho dân,không riêng nhà/người.\n\nÔng ví tàu/ngầm/phương tiện rồi phê lợi cho đại tư bản mà chưa mọi dân dùng; là ý kiến lịch sử,không hiệu năng hay chính sách được xác minh.\n\nPBC chương11 ghi lược dịch1,2,4. Phần còn lại không in; ngay tiết1/2 được chọn cũng không bao hết văn tương ứng của NHL.\n\nPBC thuật vua Thang đánh Kiệt mà dân Hạ ví gặp mưa,vận vào thần võ; chuyện chỉ như nguồn kể. Không chứng nhận sử học hay dùng để biện hộ chiến tranh.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 625],
+          "section": "section-01-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 625],
+          "section": "section-01-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 626],
+          "section": "section-02-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 626],
+          "section": "section-02-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [626, 627],
+          "section": "section-04-translation — translation"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [626, 627],
+          "section": "section-04-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 625],
+          "section": "selection-notice — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [626, 626],
+          "section": "section-02-tang-story — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-01-commentary",
-      "kind": "author-interpretation",
-      "text": "Bản đọc tiết1 không có phần thông chí/định nghiệp/đoán nghi hiện trong NHL; không điền từ NHL.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-01-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Tẩy tâm,tàng mật,cùng lo cát hung,biết lai/vãng,thần võ bất sát.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-02-original-reading"],
+      "text": "Tẩy tâm,tàng mật,cùng lo cát hung,biết lai/vãng,thần võ bất sát.\n\nKhép Khôn/mở Càn→biến/thông→tượng/khí/pháp→dân cùng dùng/thần.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [625, 625],
+          "section": "section-02-original-reading — original-reading"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [626, 626],
+          "section": "section-04-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "PBC diễn tĩnh rửa lòng/giấu lý,động cùng vui/lo và uy võ thần diệu.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-02-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-02-commentary",
-      "kind": "author-interpretation",
-      "text": "Tiết2 bắt đầu tẩy tâm,không phần thi viên/quái phương/sáu hào có ở NHL. Ông vừa nói không giết vừa viện giết một người cứu nhiều người; giữ căng thẳng,không biện minh bạo lực.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-02-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Khép Khôn/mở Càn→biến/thông→tượng/khí/pháp→dân cùng dùng/thần.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-04-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-04-translation",
-      "kind": "author-interpretation",
-      "text": "PBC giải thần là công dụng chung cho dân,không riêng nhà/người.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-04-translation"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-04-commentary",
-      "kind": "author-interpretation",
-      "text": "Ông ví tàu/ngầm/phương tiện rồi phê lợi cho đại tư bản mà chưa mọi dân dùng; là ý kiến lịch sử,không hiệu năng hay chính sách được xác minh.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-04-commentary"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-selection-notice",
-      "kind": "author-interpretation",
-      "text": "PBC chương11 ghi lược dịch1,2,4. Phần còn lại không in; ngay tiết1/2 được chọn cũng không bao hết văn tương ứng của NHL.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-selection-notice"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-s02-shun",
-      "kind": "author-interpretation",
       "text": "PBC dẫn dùng hình nhằm không dụng hình,kèm biện luận có lúc giết một người để nhiều người sống; là rhetoric cổ,không thẩm quyền pháp lý hay hướng dẫn sát hại.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-s02-shun"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [626, 626],
+          "section": "s02-shun — commentary"
+        }
+      ],
       "attribution": {
         "author": "Vua Thuấn — lời được PBC dẫn",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-thuong-11-pbc-he-tu-shang-11-section-02-tang-story",
-      "kind": "author-interpretation",
-      "text": "PBC thuật vua Thang đánh Kiệt mà dân Hạ ví gặp mưa,vận vào thần võ; chuyện chỉ như nguồn kể. Không chứng nhận sử học hay dùng để biện hộ chiến tranh.",
-      "citationIds": ["citation-pbc-he-tu-shang-11-section-02-tang-story"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-shang-11-section-01-original-reading",
-      "citation-pbc-he-tu-shang-11-section-01-translation",
-      "citation-pbc-he-tu-shang-11-section-01-commentary",
-      "citation-pbc-he-tu-shang-11-section-02-original-reading",
-      "citation-pbc-he-tu-shang-11-section-02-translation",
-      "citation-pbc-he-tu-shang-11-section-02-commentary",
-      "citation-pbc-he-tu-shang-11-section-04-original-reading",
-      "citation-pbc-he-tu-shang-11-section-04-translation",
-      "citation-pbc-he-tu-shang-11-section-04-commentary",
-      "citation-pbc-he-tu-shang-11-selection-notice",
-      "citation-pbc-he-tu-shang-11-s02-shun",
-      "citation-pbc-he-tu-shang-11-section-02-tang-story"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

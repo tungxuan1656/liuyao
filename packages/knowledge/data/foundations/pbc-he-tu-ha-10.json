@@ -1,77 +1,46 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-ha-10",
   "type": "article",
   "title": "PBC — Hệ Từ Hạ, chương 10",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-ha-10-pbc-he-tu-ha-10-section-01-and-02-sentence-original-reading",
-      "kind": "author-interpretation",
       "text": "Dịch đủ thiên/nhân/địa,tam tài lưỡng thành sáu và câu đạo biến động gọi hào.",
-      "citationIds": ["citation-pbc-he-tu-ha-10-section-01-and-02-sentence-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [644, 644],
+          "section": "section-01-and-02-sentence-original-reading — original-reading"
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Phan Bội Châu — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-pbc-he-tu-ha-10-pbc-he-tu-ha-10-section-01-and-02-sentence-meaning-commentary",
-      "kind": "author-interpretation",
-      "text": "PBC in cả tiết1 và câu đầu2 dưới nhãn Tiết thứ nhất; giảng mỗi tài có âm/dương,chia sáu vị1–2 đất,3–4 người,5–6 trời. Không tạo tiêu đề2 riêng không có trên ảnh.",
-      "citationIds": ["citation-pbc-he-tu-ha-10-section-01-and-02-sentence-meaning-commentary"],
+      "text": "PBC in cả tiết1 và câu đầu2 dưới nhãn Tiết thứ nhất; giảng mỗi tài có âm/dương,chia sáu vị1–2 đất,3–4 người,5–6 trời. Không tạo tiêu đề2 riêng không có trên ảnh.\n\nPBC in Hán/đọc rồi văn Việt mang nghĩa và lời giảng liền nhau,không đoạn Dịch độc lập. Riêng chương5 chỉ referral,không in bản văn và diễn nghĩa của mười một hào tại đây. Không suy một translation layer độc lập từ đọc Hán-Việt.\n\nPBC chọn tiết1 và một câu của2; chung nhãn Tiết thứ nhất,không thêm nhãn2 và không dựng ba câu cuối tiết2.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [644, 644],
+          "section": "section-01-and-02-sentence-meaning-commentary — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [644, 644],
+          "section": "layer-accounting — commentary"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [644, 644],
+          "section": "selection-notice — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-10-pbc-he-tu-ha-10-layer-accounting",
-      "kind": "author-interpretation",
-      "text": "PBC in Hán/đọc rồi văn Việt mang nghĩa và lời giảng liền nhau,không đoạn Dịch độc lập. Riêng chương5 chỉ referral,không in bản văn và diễn nghĩa của mười một hào tại đây. Không suy một translation layer độc lập từ đọc Hán-Việt.",
-      "citationIds": ["citation-pbc-he-tu-ha-10-layer-accounting"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-pbc-he-tu-ha-10-pbc-he-tu-ha-10-selection-notice",
-      "kind": "author-interpretation",
-      "text": "PBC chọn tiết1 và một câu của2; chung nhãn Tiết thứ nhất,không thêm nhãn2 và không dựng ba câu cuối tiết2.",
-      "citationIds": ["citation-pbc-he-tu-ha-10-selection-notice"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-pbc-he-tu-ha-10-section-01-and-02-sentence-original-reading",
-      "citation-pbc-he-tu-ha-10-section-01-and-02-sentence-meaning-commentary",
-      "citation-pbc-he-tu-ha-10-layer-accounting",
-      "citation-pbc-he-tu-ha-10-selection-notice"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

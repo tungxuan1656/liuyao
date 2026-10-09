@@ -1,35 +1,27 @@
 {
-  "schemaVersion": 1,
   "id": "article-tung-to-ly",
   "type": "article",
   "title": "Tụng động hào sơ thành Lý",
-  "aliases": [],
   "topicIds": ["topic-casting"],
-  "claims": [
+  "relatedIds": ["hexagram-06", "hexagram-10", "rule-moving-line-change"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "claim-tung-to-ly",
-      "kind": "structural-fact",
       "text": "Ví dụ của Nguyễn Hiến Lê giữ ngoại Càn và đổi hào sơ âm của nội Khảm thành dương. Nội quái trở thành Đoài, nên Thiên Thủy Tụng biến thành Thiên Trạch Lý.",
-      "citationIds": ["citation-nhl-p73-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [73, 73],
+          "section": "Động và biến — Tụng đổi hào sơ thành Lý",
+          "printedPages": ["73", "73"]
+        }
+      ],
+      "id": "claim-tung-to-ly"
     }
   ],
-  "relatedIds": ["hexagram-06", "hexagram-10", "rule-moving-line-change"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-nhl-p73-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
   "tables": [
     {
       "kind": "transformation",
-      "claimIds": ["claim-tung-to-ly"],
       "rows": [
         {
           "primaryHexagramId": "hexagram-06",
@@ -37,6 +29,14 @@
           "movingPositions": [1],
           "primaryLines": ["yin", "yang", "yin", "yang", "yang", "yang"],
           "changedLines": ["yang", "yang", "yin", "yang", "yang", "yang"]
+        }
+      ],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [73, 73],
+          "section": "Động và biến — Tụng đổi hào sơ thành Lý",
+          "printedPages": ["73", "73"]
         }
       ]
     }

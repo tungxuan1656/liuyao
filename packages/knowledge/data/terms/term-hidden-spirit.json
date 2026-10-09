@@ -1,38 +1,31 @@
 {
-  "schemaVersion": 1,
   "id": "term-hidden-spirit",
   "type": "term",
   "title": "Phục thần",
   "aliases": ["Phục hào"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "term-hidden-spirit-definition",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự gọi Dụng thần không hiện trong quẻ mà phải tìm chỗ ẩn là Phục thần. Ông tìm hào ấy từ quẻ Bát Thuần đứng đầu cung của quẻ đang xét.",
-      "citationIds": ["citation-bpct-ch5-hidden-spirit"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    }
-  ],
   "relatedIds": [
     "term-useful-spirit",
     "term-flying-spirit",
     "term-palace",
     "article-hidden-spirit-method"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch5-hidden-spirit"],
-    "note": "Đã đọc Chương 5, mục 5–7 cùng các đoạn liên quan; đối chiếu ảnh bảng Phi–Phục ở PDF 49–50 và lời chú giải Lục thú ở PDF 98–99. Diễn giải có điều kiện được giữ theo lớp tác giả. Đây là phần kiến thức mô tả được chọn, không phải luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Vương Hồng Tự gọi Dụng thần không hiện trong quẻ mà phải tìm chỗ ẩn là Phục thần. Ông tìm hào ấy từ quẻ Bát Thuần đứng đầu cung của quẻ đang xét.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ sáu — Phục thần chính truyền",
+          "printedPages": ["57", "57"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ]
 }

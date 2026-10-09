@@ -1,68 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-death-store-extinction-empty-context",
   "type": "article",
   "title": "Tử, Mộ, Tuyệt, Không: điều kiện và phạm vi xét",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-death-store-extinction-empty-context-different-systems",
-      "kind": "author-interpretation",
-      "text": "Câu 7 phân biệt Tử, Mộ và Tuyệt khởi từ vòng Trường Sinh, còn Không là Tuần Không. Bốn tên cùng xuất hiện trong lời phú nhưng không thành bốn giai đoạn liên tiếp của một vòng.",
-      "citationIds": [
-        "citation-bpct-ch6-death-store-extinction-empty",
-        "citation-bpct-ch1-life-cycle",
-        "citation-bpct-ch2-decade-empty-definition"
-      ],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-death-store-extinction-empty-context-unsupported-useful",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự đặt hình ảnh bất lợi ở Dụng thần không được sinh, phù, củng, hợp mà lại gặp Tử, Mộ, Tuyệt hoặc Không. Cần giữ điều kiện thiếu trợ; không chỉ từ một tên mà suy ra kết quả của việc hỏi.",
-      "citationIds": ["citation-bpct-ch6-death-store-extinction-empty"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Địa ngục, chết và mồ là phép ví của nguồn, không xác nhận thế giới sau chết hoặc dự báo sống chết."
-      ]
-    },
-    {
-      "id": "article-death-store-extinction-empty-context-day-and-transformation-scope",
-      "kind": "author-interpretation",
-      "text": "Câu 7 đặt Trường Sinh, Mộ và Tuyệt vào việc xét Nhật thần và biến hào. Chín tên còn lại không dùng để xét ở biến hào trong đoạn này; với động biến, tác giả chuyển sang sinh khắc, xung hợp, Tiến/Thoái và Phản/Phục ngâm.",
-      "citationIds": ["citation-bpct-ch6-death-store-extinction-empty"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Không mở sự loại trừ ở biến hào thành việc bỏ mọi giai đoạn trong mọi ngữ cảnh của Nhật thần."
-      ]
-    },
-    {
-      "id": "article-death-store-extinction-empty-context-sixth-sentence-boundary",
-      "kind": "author-interpretation",
-      "text": "Câu 6 chỉ xét lợi của Trường Sinh và Đế Vượng tại Nhật thần; câu 7 lại nêu phạm vi Trường Sinh, Mộ, Tuyệt khi xem biến hào. Hai đoạn giữ phạm vi riêng: không lấy câu 6 để phủ nhận mọi Trường Sinh ở biến hào.",
-      "citationIds": [
-        "citation-bpct-ch6-death-store-extinction-empty",
-        "citation-bpct-ch6-growth-and-peak"
-      ],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Phân biệt nơi xét giai đoạn với quan hệ của hào gốc và hào biến; chưa lập thứ tự ưu tiên tự động."
-      ]
-    }
-  ],
   "relatedIds": [
     "term-death-stage",
     "term-growth-stage",
@@ -74,21 +14,88 @@
     "article-growth-store-and-extinction",
     "article-decade-empty-conditions"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch6-death-store-extinction-empty",
-      "citation-bpct-ch1-life-cycle",
-      "citation-bpct-ch2-decade-empty-definition",
-      "citation-bpct-ch6-growth-and-peak"
-    ],
-    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Câu 7 phân biệt Tử, Mộ và Tuyệt khởi từ vòng Trường Sinh, còn Không là Tuần Không. Bốn tên cùng xuất hiện trong lời phú nhưng không thành bốn giai đoạn liên tiếp của một vòng.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [79, 79],
+          "section": "Câu 7 — Tử, Mộ, Tuyệt, Không và phạm vi xét biến",
+          "printedPages": ["65", "65"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [16, 16],
+          "section": "XVII — Vòng Trường Sinh",
+          "printedPages": ["10", "10"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [41, 41],
+          "section": "XVIII — Lục Giáp Tuần Không khởi lệ",
+          "printedPages": ["34", "34"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "text": "Vương Hồng Tự đặt hình ảnh bất lợi ở Dụng thần không được sinh, phù, củng, hợp mà lại gặp Tử, Mộ, Tuyệt hoặc Không. Cần giữ điều kiện thiếu trợ; không chỉ từ một tên mà suy ra kết quả của việc hỏi.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [79, 79],
+          "section": "Câu 7 — Tử, Mộ, Tuyệt, Không và phạm vi xét biến",
+          "printedPages": ["65", "65"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Địa ngục, chết và mồ là phép ví của nguồn, không xác nhận thế giới sau chết hoặc dự báo sống chết."
+    },
+    {
+      "text": "Câu 7 đặt Trường Sinh, Mộ và Tuyệt vào việc xét Nhật thần và biến hào. Chín tên còn lại không dùng để xét ở biến hào trong đoạn này; với động biến, tác giả chuyển sang sinh khắc, xung hợp, Tiến/Thoái và Phản/Phục ngâm.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [79, 79],
+          "section": "Câu 7 — Tử, Mộ, Tuyệt, Không và phạm vi xét biến",
+          "printedPages": ["65", "65"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không mở sự loại trừ ở biến hào thành việc bỏ mọi giai đoạn trong mọi ngữ cảnh của Nhật thần."
+    },
+    {
+      "text": "Câu 6 chỉ xét lợi của Trường Sinh và Đế Vượng tại Nhật thần; câu 7 lại nêu phạm vi Trường Sinh, Mộ, Tuyệt khi xem biến hào. Hai đoạn giữ phạm vi riêng: không lấy câu 6 để phủ nhận mọi Trường Sinh ở biến hào.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [79, 79],
+          "section": "Câu 7 — Tử, Mộ, Tuyệt, Không và phạm vi xét biến",
+          "printedPages": ["65", "65"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [79, 79],
+          "section": "Câu 6 — Trường Sinh, Đế Vượng ở Nhật thần",
+          "printedPages": ["65", "65"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Phân biệt nơi xét giai đoạn với quan hệ của hào gốc và hào biến; chưa lập thứ tự ưu tiên tự động."
+    }
+  ]
 }

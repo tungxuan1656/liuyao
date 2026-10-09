@@ -1,36 +1,23 @@
 {
-  "schemaVersion": 2,
   "id": "article-ntt-editorial-introduction",
   "type": "article",
   "title": "NTT — Lời giới thiệu không ký",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-ntt-editorial-introduction-ntt-editorial-introduction-evaluation",
-      "kind": "author-interpretation",
       "text": "Lời giới thiệu không ký khen khảo cứu/dịch thuật NTT và đánh giá duy vật/khoa học, tư tưởng tu-tề-trị-bình. Không gán lời chúng tôi này tự động cho NTT hoặc Phan Cự Đệ chỉ vì colophon có tên người giới thiệu; đánh giá không là xác nhận khoa học của corpus.",
-      "citationIds": ["citation-ntt-editorial-introduction-evaluation"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [6, 6],
+          "section": "ntt-editorial-introduction-evaluation — commentary"
+        }
+      ],
       "attribution": {
         "author": "Bản cung cấp — người giới thiệu chưa xác định",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-ntt-editorial-introduction-evaluation"],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

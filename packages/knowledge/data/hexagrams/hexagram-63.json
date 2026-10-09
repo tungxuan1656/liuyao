@@ -1,304 +1,326 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-63",
   "type": "hexagram",
   "title": "Thủy Hỏa Ký Tế",
   "aliases": ["Ký Tế", "Kí Tế"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-fire", "trigram-water"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-63-structure",
-      "kind": "structural-fact",
       "text": "Thủy Hỏa Ký Tế có nội quái Ly, ngoại quái Khảm; sáu vị trí đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q63-overview-structure",
-        "citation-nhl-q63-line-1-classical-text",
-        "citation-nhl-q63-line-2-classical-text",
-        "citation-nhl-q63-line-3-classical-text",
-        "citation-nhl-q63-line-4-classical-text",
-        "citation-nhl-q63-line-5-classical-text",
-        "citation-nhl-q63-line-6-classical-text",
-        "citation-pbc-q63-overview-structure",
-        "citation-pbc-q63-line-1-classical-text",
-        "citation-pbc-q63-line-2-classical-text",
-        "citation-pbc-q63-line-3-classical-text",
-        "citation-pbc-q63-line-4-classical-text",
-        "citation-pbc-q63-line-5-classical-text",
-        "citation-pbc-q63-line-6-classical-text",
-        "citation-ntt-q63-overview-structure",
-        "citation-ntt-q63-line-1-classical-text",
-        "citation-ntt-q63-line-2-classical-text",
-        "citation-ntt-q63-line-3-classical-text",
-        "citation-ntt-q63-line-4-classical-text",
-        "citation-ntt-q63-line-5-classical-text",
-        "citation-ntt-q63-line-6-classical-text"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [328, 328],
+          "section": "Tên quẻ, quái trên/dưới và hình hoặc lời giải cấu trúc",
+          "printedPages": ["328", "328"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [328, 329],
+          "section": "Hào 1: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["328", "329"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [329, 329],
+          "section": "Hào 2: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["329", "329"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [329, 329],
+          "section": "Hào 3: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["329", "329"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [329, 329],
+          "section": "Hào 4: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["329", "329"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [329, 330],
+          "section": "Hào 5: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["329", "330"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [330, 330],
+          "section": "Hào 6: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["330", "330"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [583, 583],
+          "section": "Tên quẻ, quái trên/dưới và hình hoặc lời giải cấu trúc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [587, 588],
+          "section": "Hào 1: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [588, 589],
+          "section": "Hào 2: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [589, 589],
+          "section": "Hào 3: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [589, 590],
+          "section": "Hào 4: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [590, 590],
+          "section": "Hào 5: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [590, 591],
+          "section": "Hào 6: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [917, 917],
+          "section": "Tên quẻ, quái trên/dưới và hình hoặc lời giải cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [919, 920],
+          "section": "Hào 1: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [921, 922],
+          "section": "Hào 2: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [922, 923],
+          "section": "Hào 3: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [923, 924],
+          "section": "Hào 4: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [924, 925],
+          "section": "Hào 5: nhãn, lời hào và Tiểu Tượng khi có"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [925, 926],
+          "section": "Hào 6: nhãn, lời hào và Tiểu Tượng khi có"
+        }
       ]
     },
     {
-      "id": "hexagram-63-overview-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê đọc đã xong: lửa dưới nước giao giúp nhau, sáu hào đúng vị và có ứng. Việc lớn xong còn cần hoàn tất việc nhỏ, giữ thành quả và phòng suy. Ông chọn cách Phan Bội Châu về hanh tiểu hơn đề nghị tiểu hanh của Chu Hy; nhu trung ở nhị gợi đầu tốt, ngừng đề phòng gợi cuối loạn.",
-      "citationIds": ["citation-nhl-q63-overview-nhl"],
+      "text": "Nguyễn Hiến Lê đọc đã xong: lửa dưới nước giao giúp nhau, sáu hào đúng vị và có ứng. Việc lớn xong còn cần hoàn tất việc nhỏ, giữ thành quả và phòng suy. Ông chọn cách Phan Bội Châu về hanh tiểu hơn đề nghị tiểu hanh của Chu Hy; nhu trung ở nhị gợi đầu tốt, ngừng đề phòng gợi cuối loạn.\n\nNguyễn Hiến Lê so ba hào đầu khá tốt với ba hào sau càng lên càng xấu: ngũ kém phúc nhị, ướt đầu nguy hơn ướt đuôi. Lời tổng kết nhắc thịnh cần phòng suy.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [328, 328],
+          "section": "overview nhl",
+          "printedPages": ["328", "328"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [330, 330],
+          "section": "overview closing nhl",
+          "printedPages": ["330", "330"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
+      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
     },
     {
-      "id": "hexagram-63-overview-closing-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê so ba hào đầu khá tốt với ba hào sau càng lên càng xấu: ngũ kém phúc nhị, ướt đầu nguy hơn ướt đuôi. Lời tổng kết nhắc thịnh cần phòng suy.",
-      "citationIds": ["citation-nhl-q63-overview-closing-nhl"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu phân Vị Tế phá hoại, Tương Tế tạo nhân, Ký Tế kết quả. Nước lửa giao dùng nhau, hào đúng vị ứng nhau gợi đâu vào đó; việc lớn đã hanh còn cần việc nhỏ hoàn toàn, thủ thành bằng trinh cố, lo tương lai chứ không chỉ mừng hiện tại.",
-      "citationIds": ["citation-pbc-q63-overview-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-framing-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "PHỤ CHÚ của Phan Bội Châu đọc đầu Càn Khôn, cuối Thượng Kinh Khảm Ly, cuối toàn Kinh hai quẻ phối Khảm Ly để nói tương đối, tiếp xúc, tương khắc rồi tương thành. Ông dùng than, hơi nước, điện cơ làm ví; giữ là luận triết học lịch sử, không định luật vật lý.",
-      "citationIds": ["citation-pbc-q63-overview-framing-supplement-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-cycles-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "PHỤ CHÚ của Phan Bội Châu nối Thái/Bĩ và Ký/Vị Tế thành các vận giao hoặc không giao, trước sau khác nhau. Ông nhấn nhân sự có thể chuyển vận, không đổ lỗi Dịch số; không cung cấp thời hạn hay chu kỳ tính được.",
-      "citationIds": ["citation-pbc-q63-overview-cycles-supplement-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-thoan-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải sáu hào cương nhu đúng vị, sơ cát nhờ nhị nhu trung, còn chung chỉ tắc loạn nhấn chữ chỉ: không tiến thì lùi. Giữ đạo gồm thiên vận và nhân sự, dự phòng khi chưa loạn chứ không tất định đã xong phải thất bại.",
-      "citationIds": ["citation-pbc-q63-overview-thoan-pbc"],
+      "text": "Phan Bội Châu phân Vị Tế phá hoại, Tương Tế tạo nhân, Ký Tế kết quả. Nước lửa giao dùng nhau, hào đúng vị ứng nhau gợi đâu vào đó; việc lớn đã hanh còn cần việc nhỏ hoàn toàn, thủ thành bằng trinh cố, lo tương lai chứ không chỉ mừng hiện tại.\n\nPHỤ CHÚ của Phan Bội Châu đọc đầu Càn Khôn, cuối Thượng Kinh Khảm Ly, cuối toàn Kinh hai quẻ phối Khảm Ly để nói tương đối, tiếp xúc, tương khắc rồi tương thành. Ông dùng than, hơi nước, điện cơ làm ví; giữ là luận triết học lịch sử, không định luật vật lý.\n\nPHỤ CHÚ của Phan Bội Châu nối Thái/Bĩ và Ký/Vị Tế thành các vận giao hoặc không giao, trước sau khác nhau. Ông nhấn nhân sự có thể chuyển vận, không đổ lỗi Dịch số; không cung cấp thời hạn hay chu kỳ tính được.\n\nPhan Bội Châu giải sáu hào cương nhu đúng vị, sơ cát nhờ nhị nhu trung, còn chung chỉ tắc loạn nhấn chữ chỉ: không tiến thì lùi. Giữ đạo gồm thiên vận và nhân sự, dự phòng khi chưa loạn chứ không tất định đã xong phải thất bại.\n\nPHỤ CHÚ của Phan Bội Châu so nhị Ký Tế với nhị Thái: nhu trung và cương trung khác tài đức nhưng cùng ở đoạn đầu nên tương tự về thành tựu; lời so không thêm một phép tính vận.\n\nPHỤ CHÚ của Phan Bội Châu dùng tâm hỏa, thận thủy và khí huyết làm ví sự vận chuyển không ngừng, rồi trở về việc thiên hạ không nên chỉ. Các lời bệnh quan cách, trướng thũng là y lý lịch sử ông viện, không chẩn đoán, sinh lý đã xác minh hoặc khuyên chữa bệnh.\n\nPhan Bội Châu giải nước trên lửa vừa đun vừa chế nhau; đang thấy phúc cần nghĩ mầm họa và phòng sẵn để giữ Ký Tế lâu.\n\nPhan Bội Châu đối ba hào ngoại với ba hào nội để nhắc vui trước, lo sau và quý trung; ông dẫn Thiệu Khang Tiết về rượu, hoa để ví đắc ý quá độ. Lời thơ được truyền qua PBC, không chép lại hoặc xác minh toàn tác phẩm.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [583, 585],
+          "section": "overview pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [583, 584],
+          "section": "overview framing supplement pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [585, 585],
+          "section": "overview cycles supplement pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [586, 587],
+          "section": "overview thoan pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [586, 586],
+          "section": "overview thoan time supplement pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [587, 587],
+          "section": "overview thoan body supplement pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [587, 587],
+          "section": "overview dai tuong pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [591, 591],
+          "section": "overview closing supplement pbc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
+      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
     },
     {
-      "id": "hexagram-63-overview-thoan-time-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "PHỤ CHÚ của Phan Bội Châu so nhị Ký Tế với nhị Thái: nhu trung và cương trung khác tài đức nhưng cùng ở đoạn đầu nên tương tự về thành tựu; lời so không thêm một phép tính vận.",
-      "citationIds": ["citation-pbc-q63-overview-thoan-time-supplement-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-thoan-body-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "PHỤ CHÚ của Phan Bội Châu dùng tâm hỏa, thận thủy và khí huyết làm ví sự vận chuyển không ngừng, rồi trở về việc thiên hạ không nên chỉ. Các lời bệnh quan cách, trướng thũng là y lý lịch sử ông viện, không chẩn đoán, sinh lý đã xác minh hoặc khuyên chữa bệnh.",
-      "citationIds": ["citation-pbc-q63-overview-thoan-body-supplement-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-dai-tuong-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải nước trên lửa vừa đun vừa chế nhau; đang thấy phúc cần nghĩ mầm họa và phòng sẵn để giữ Ký Tế lâu.",
-      "citationIds": ["citation-pbc-q63-overview-dai-tuong-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-closing-supplement-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu đối ba hào ngoại với ba hào nội để nhắc vui trước, lo sau và quý trung; ông dẫn Thiệu Khang Tiết về rượu, hoa để ví đắc ý quá độ. Lời thơ được truyền qua PBC, không chép lại hoặc xác minh toàn tác phẩm.",
-      "citationIds": ["citation-pbc-q63-overview-closing-supplement-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di đọc nước lửa giao, mỗi vật đúng công dụng thành đã sang. Cái lớn hanh rồi còn cái nhỏ; ông không nhận nhỏ hanh cùng nghĩa với hanh tiểu, và nhấn giữ chính bền, đầu tốt nhưng tới cực có đổi.",
-      "citationIds": ["citation-ntt-q63-overview-trinh-di"],
+      "text": "Trình Di đọc nước lửa giao, mỗi vật đúng công dụng thành đã sang. Cái lớn hanh rồi còn cái nhỏ; ông không nhận nhỏ hanh cùng nghĩa với hanh tiểu, và nhấn giữ chính bền, đầu tốt nhưng tới cực có đổi.\n\nTrình Di nghi dưới tế sót tiểu, rồi đọc cương nhu đúng vị thành lời giữ chính. Nhu giữa ở nhị tạo đầu tốt; tới cuối dừng không tiến thì suy loạn, tài ngũ không phải không hay nhưng thời cực đạo cùng phải biến.\n\nTrình Di đọc nước lửa giao đúng dùng là đã sang; nghĩ trước và ngăn sẵn hoạn mới tránh loạn sau yên. Không có đoạn Chu Hy riêng dưới Đại Tượng trong trang đã xét.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [917, 917],
+          "section": "overview trinh di"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [918, 919],
+          "section": "overview thoan trinh di"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [919, 919],
+          "section": "overview dai tuong trinh di"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
+      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
     },
     {
-      "id": "hexagram-63-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy giải việc đã nên, nước lửa dùng nhau, sáu vị chính; ông đề nghị đổi hanh nhỏ thành nhỏ hanh, coi quẻ và lời sáu hào đều răn vì thời ấy cần thế. Đề nghị không sửa văn bản hay hòa với Trình Di.",
-      "citationIds": ["citation-ntt-q63-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [917, 918],
+          "section": "overview chu hy"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
+      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
     },
     {
-      "id": "hexagram-63-overview-thoan-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di nghi dưới tế sót tiểu, rồi đọc cương nhu đúng vị thành lời giữ chính. Nhu giữa ở nhị tạo đầu tốt; tới cuối dừng không tiến thì suy loạn, tài ngũ không phải không hay nhưng thời cực đạo cùng phải biến.",
-      "citationIds": ["citation-ntt-q63-overview-thoan-trinh-di"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-overview-dai-tuong-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di đọc nước lửa giao đúng dùng là đã sang; nghĩ trước và ngăn sẵn hoạn mới tránh loạn sau yên. Không có đoạn Chu Hy riêng dưới Đại Tượng trong trang đã xét.",
-      "citationIds": ["citation-ntt-q63-overview-dai-tuong-trinh-di"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-note-1-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố giải Ký Tế bằng sang sông, đã nên hoặc xong việc theo lời chú cung cấp.",
-      "citationIds": ["citation-ntt-q63-note-1-ntt"],
+      "text": "Ngô Tất Tố giải Ký Tế bằng sang sông, đã nên hoặc xong việc theo lời chú cung cấp.\n\nNgô Tất Tố ghi khăn trùm dịch theo Trình Di, còn phất theo Chu Hy là mui xe. Chú gắn nhị, không hòa hai vật thành cùng nghĩa.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [926, 926],
+          "section": "note 1 ntt"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [926, 926],
+          "section": "note 2 ntt"
+        }
+      ],
       "attribution": {
         "author": "Ngô Tất Tố"
       },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
-    },
-    {
-      "id": "hexagram-63-note-2-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố ghi khăn trùm dịch theo Trình Di, còn phất theo Chu Hy là mui xe. Chú gắn nhị, không hòa hai vật thành cùng nghĩa.",
-      "citationIds": ["citation-ntt-q63-note-2-ntt"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-      ]
+      "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
     }
   ],
-  "relatedIds": ["trigram-fire", "trigram-water"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yin", "yang", "yin", "yang", "yin"],
-    "claimIds": ["hexagram-63-structure"],
-    "kingWenNumber": 63,
-    "upperTrigramId": "trigram-water",
-    "lowerTrigramId": "trigram-fire"
-  },
+  "kingWenNumber": 63,
+  "upperTrigramId": "trigram-water",
+  "lowerTrigramId": "trigram-fire",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-63-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc sơ dương Ly nóng tiến lúc mới xong nên phải chậm, hãm bánh, như chồn ướt đuôi chưa sang để khỏi lỗi.",
-          "citationIds": ["citation-nhl-q63-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [328, 329],
+              "section": "line 1 nhl",
+              "printedPages": ["328", "329"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu lấy sơ tài cương chính ứng tứ, muốn tiến nhưng cần nhìn trước sau; đuôi xuống nước gợi chưa qua chứ không phải bất Tế, biết từ từ thì vô lỗi.",
-          "citationIds": ["citation-pbc-q63-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [587, 588],
+              "section": "line 1 pbc"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-1-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di giải sơ Ly ứng tứ muốn tiến, thời đã sang nên ngăn tiến mới vô lỗi; kéo bánh, ướt đuôi đều ngăn bước đi.",
-          "citationIds": ["citation-ntt-q63-line-1-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [919, 920],
+              "section": "line 1 trinh di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-1-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy lấy bánh ở dưới, đuôi ở sau tượng sơ; biết cẩn thận kéo lại, chưa sang là cách tránh lỗi, không khuyên mạo hiểm.",
-          "citationIds": ["citation-ntt-q63-line-1-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [919, 920],
+              "section": "line 1 chu hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         }
       ]
     },
@@ -306,56 +328,65 @@
       "position": 2,
       "polarity": "yin",
       "label": "lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-63-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc nhị văn minh trung chính ứng ngũ nhưng ngũ việc xong không đoái, như mất màn xe chưa đi được. Trung chính không bỏ lâu nên đừng chạy tìm, chờ thì tự được.",
-          "citationIds": ["citation-nhl-q63-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [329, 329],
+              "section": "line 2 nhl",
+              "printedPages": ["329", "329"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc nhị muốn đắc dụng nhưng ngũ tôn không hạ hiền, mất phất che xe gợi thiếu phương tiện tiến. Sáu vị tới bảy biến gợi thời thông, không bỏ đạo chính để tìm; bản nguồn xen tên Cửu Nhị không đổi nhị yin.",
-          "citationIds": ["citation-pbc-q63-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [588, 589],
+              "section": "line 2 pbc"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-2-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di lấy phất là khăn trùm che người ra cửa, mất là nhị chưa được ngũ dùng. Đuổi vật khác sẽ mất điều giữ; bảy ngày gợi sáu ngôi tới bảy biến, không thời gian thực tính sẵn.",
-          "citationIds": ["citation-ntt-q63-line-2-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [921, 922],
+              "section": "line 2 trinh di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc nhị sáng trung chính chưa được ngũ trọng hiền; vật che đi mất nhưng đạo không bỏ mãi, thời đổi lại dùng. Note dịch giả phân mui xe theo Chu Hy với khăn trùm theo Trình Di.",
-          "citationIds": ["citation-ntt-q63-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [921, 922],
+              "section": "line 2 chu hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         }
       ]
     },
@@ -363,68 +394,70 @@
       "position": 3,
       "polarity": "yang",
       "label": "cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-63-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê coi tam quá cương cần thận trọng như chuyện Cao Tông đánh Quỷ Phương ba năm; chớ dùng tiểu nhân là răn chung, không gọi tam chính là tiểu nhân.",
-          "citationIds": ["citation-nhl-q63-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [329, 329],
+              "section": "line 3 nhl",
+              "printedPages": ["329", "329"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-3-pbc",
-          "kind": "author-interpretation",
-          "text": "Phan Bội Châu dùng cuộc đánh lâu để răn khinh dụng cương; tiểu nhân là hạng nóng tham ở thời ấy, không riêng tam. Bái nhấn binh hung chiến nguy, không phải lệnh dùng binh.",
-          "citationIds": ["citation-pbc-q63-line-3-pbc"],
+          "text": "Phan Bội Châu dùng cuộc đánh lâu để răn khinh dụng cương; tiểu nhân là hạng nóng tham ở thời ấy, không riêng tam. Bái nhấn binh hung chiến nguy, không phải lệnh dùng binh.\n\nHai PHỤ CHÚ của Phan Bội Châu nối lời chớ dùng tiểu nhân ở Sư với Ký Tế; phê tham công sinh sự làm hại dân khi đã yên. Thuốc độc làm tổn thân là ví cảnh báo dụng binh, không chỉ dẫn dùng thuốc, và Cao Tông là ví gian nan chứ không khuyên khởi chiến.",
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [589, 589],
+              "section": "line 3 pbc"
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [589, 589],
+              "section": "line 3 supplement pbc"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-3-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di cho phép cuộc đánh cứu dân bởi vua thánh hiền nhưng phản đối phô oai, tham đất hại dân; ba năm nhấn nhọc mệt. Giữ là quan điểm chiến tranh lịch sử của ông, không chính đáng hóa bạo lực hiện nay.",
-          "citationIds": ["citation-ntt-q63-line-3-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [922, 923],
+              "section": "line 3 trinh di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-3-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc ba năm mới được để răn hành động khinh suất, chớ dùng tiểu nhân so với thượng Sư; không biến câu thành lịch chiến dịch.",
-          "citationIds": ["citation-ntt-q63-line-3-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [922, 923],
+              "section": "line 3 chu hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
-        },
-        {
-          "id": "hexagram-63-line-3-supplement-pbc",
-          "kind": "author-interpretation",
-          "text": "Hai PHỤ CHÚ của Phan Bội Châu nối lời chớ dùng tiểu nhân ở Sư với Ký Tế; phê tham công sinh sự làm hại dân khi đã yên. Thuốc độc làm tổn thân là ví cảnh báo dụng binh, không chỉ dẫn dùng thuốc, và Cao Tông là ví gian nan chứ không khuyên khởi chiến.",
-          "citationIds": ["citation-pbc-q63-line-3-supplement-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         }
       ]
     },
@@ -432,56 +465,65 @@
       "position": 4,
       "polarity": "yin",
       "label": "lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-63-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy vào Khảm hiểm cần có giẻ bít thuyền và răn suốt ngày; nhu đúng vị biết lo phòng trước.",
-          "citationIds": ["citation-nhl-q63-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [329, 329],
+              "section": "line 4 nhl",
+              "printedPages": ["329", "329"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc tứ từ Ly sang Khảm, việc tế bắt đầu động giao, cần chuẩn bị giẻ trước và luôn cảnh giác; không quên nguy lúc an.",
-          "citationIds": ["citation-pbc-q63-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [589, 590],
+              "section": "line 4 pbc"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-4-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc tứ thể nước như người gánh trách nhiệm gần vua, sửa chữ nhu để hiểu thấm dò thuyền, có áo giẻ sẵn còn răn. Đổi chữ là đề nghị của ông, không sửa nguồn.",
-          "citationIds": ["citation-ntt-q63-line-4-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [923, 924],
+              "section": "line 4 trinh di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc nhu ở nhu trong thời đã sang, biết chuẩn bị, lo sợ nên có tượng áo giẻ và răn.",
-          "citationIds": ["citation-ntt-q63-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [923, 924],
+              "section": "line 4 chu hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         }
       ]
     },
@@ -489,56 +531,65 @@
       "position": 5,
       "polarity": "yang",
       "label": "cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-63-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy đông ngũ, tây nhị cùng trung chính chí thành mà khác thời; nhị đầu còn tiến nên lễ nhỏ hưởng hơn ngũ gần cuối hiểm, lễ lớn không bù thời.",
-          "citationIds": ["citation-nhl-q63-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [329, 330],
+              "section": "line 5 nhl",
+              "printedPages": ["329", "330"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc đông ngũ dương, tây nhị âm; đức đồng nhưng nhị đầu tiến, ngũ sau suy nên hưởng khác. Không phải ngũ không phúc, chỉ kém nhị đúng thời.",
-          "citationIds": ["citation-pbc-q63-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [590, 590],
+              "section": "line 5 pbc"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-5-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di coi ngũ giữa thực có tín, nhị giữa rỗng có thành nên cùng tượng tế; khác thời chứ không tài đức kém: nhị còn tiến, ngũ chỉ giữ khỏi trái lại.",
-          "citationIds": ["citation-ntt-q63-line-5-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [924, 925],
+              "section": "line 5 trinh di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc ngũ tôn nhưng quá thời, nhị dưới mới được thời; ông thêm ví vua Văn và Trụ, giữ là liên hệ của ông chứ không định ngày hay xác minh lễ.",
-          "citationIds": ["citation-ntt-q63-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [924, 925],
+              "section": "line 5 chu hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         }
       ]
     },
@@ -546,144 +597,95 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-63-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy âm cuối Ký Tế trên Khảm hiểm càng nguy như lội ngập đầu, nhắc phòng suy lúc thịnh.",
-          "citationIds": ["citation-nhl-q63-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [330, 330],
+              "section": "line 6 nhl",
+              "printedPages": ["330", "330"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc thượng là đầu, sơ là đuôi; nhu cuối Ký Tế trên Khảm nguy đến chìm, giống Thái sắp Bĩ, nên không lâu.",
-          "citationIds": ["citation-pbc-q63-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [590, 591],
+              "section": "line 6 pbc"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-6-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di lấy chót đã sang vốn nguy, nhu ở trên hiểm tượng ướt đầu; sự bại hoại của tiểu nhân ở vị ấy là phán lịch sử của ông.",
-          "citationIds": ["citation-ntt-q63-line-6-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [925, 926],
+              "section": "line 6 trinh di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         },
         {
-          "id": "hexagram-63-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy lấy nhu cuối trên hiểm như cáo lội ướt đầu, người xem không biết răn sợ đi vào nguy.",
-          "citationIds": ["citation-ntt-q63-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [925, 926],
+              "section": "line 6 chu hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
-          ]
+          "condition": "Đây là diễn giải văn bản và quan niệm lịch sử của tác giả, không phải dự báo hiện tại, chuẩn mực xã hội ngày nay, chỉ dẫn y tế, phép tính lịch hoặc quy tắc Nạp Giáp."
         }
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-q63-yin-two",
-      "status": "resolved",
-      "description": "PBC PDF 588 gọi Cửu Nhị trong bình và Tiểu Tượng dù đầu đoạn là Lục Nhị; NHL/NTT và hình quẻ đều nhị âm.",
-      "citationIds": [
-        "citation-pbc-q63-line-2-pbc",
-        "citation-pbc-q63-overview-structure",
-        "citation-nhl-q63-line-2-classical-text",
-        "citation-ntt-q63-line-2-classical-text"
-      ],
-      "resolution": "Giữ nhị yin và Lục nhị theo hình, nhãn, chứng song song; không lặp nhãn Cửu vào dữ kiện hoặc sửa nguồn."
+      "text": "PBC PDF 588 gọi Cửu Nhị trong bình và Tiểu Tượng dù đầu đoạn là Lục Nhị; NHL/NTT và hình quẻ đều nhị âm. Giữ nhị yin và Lục nhị theo hình, nhãn, chứng song song; không lặp nhãn Cửu vào dữ kiện hoặc sửa nguồn.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [588, 589],
+          "section": "line 2 pbc"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [583, 583],
+          "section": "Tên quẻ, quái trên/dưới và hình hoặc lời giải cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [329, 329],
+          "section": "Hào 2: nhãn, lời hào và Tiểu Tượng khi có",
+          "printedPages": ["329", "329"]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [921, 922],
+          "section": "Hào 2: nhãn, lời hào và Tiểu Tượng khi có"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker (AI source comparison)",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q63-overview-structure",
-      "citation-nhl-q63-line-1-classical-text",
-      "citation-nhl-q63-line-2-classical-text",
-      "citation-nhl-q63-line-3-classical-text",
-      "citation-nhl-q63-line-4-classical-text",
-      "citation-nhl-q63-line-5-classical-text",
-      "citation-nhl-q63-line-6-classical-text",
-      "citation-pbc-q63-overview-structure",
-      "citation-pbc-q63-line-1-classical-text",
-      "citation-pbc-q63-line-2-classical-text",
-      "citation-pbc-q63-line-3-classical-text",
-      "citation-pbc-q63-line-4-classical-text",
-      "citation-pbc-q63-line-5-classical-text",
-      "citation-pbc-q63-line-6-classical-text",
-      "citation-ntt-q63-overview-structure",
-      "citation-ntt-q63-line-1-classical-text",
-      "citation-ntt-q63-line-2-classical-text",
-      "citation-ntt-q63-line-3-classical-text",
-      "citation-ntt-q63-line-4-classical-text",
-      "citation-ntt-q63-line-5-classical-text",
-      "citation-ntt-q63-line-6-classical-text",
-      "citation-nhl-q63-overview-nhl",
-      "citation-nhl-q63-overview-closing-nhl",
-      "citation-pbc-q63-overview-pbc",
-      "citation-pbc-q63-overview-framing-supplement-pbc",
-      "citation-pbc-q63-overview-cycles-supplement-pbc",
-      "citation-pbc-q63-overview-thoan-pbc",
-      "citation-pbc-q63-overview-thoan-time-supplement-pbc",
-      "citation-pbc-q63-overview-thoan-body-supplement-pbc",
-      "citation-pbc-q63-overview-dai-tuong-pbc",
-      "citation-pbc-q63-overview-closing-supplement-pbc",
-      "citation-ntt-q63-overview-trinh-di",
-      "citation-ntt-q63-overview-chu-hy",
-      "citation-ntt-q63-overview-thoan-trinh-di",
-      "citation-ntt-q63-overview-dai-tuong-trinh-di",
-      "citation-ntt-q63-note-1-ntt",
-      "citation-ntt-q63-note-2-ntt",
-      "citation-nhl-q63-line-1-nhl",
-      "citation-pbc-q63-line-1-pbc",
-      "citation-ntt-q63-line-1-trinh-di",
-      "citation-ntt-q63-line-1-chu-hy",
-      "citation-nhl-q63-line-2-nhl",
-      "citation-pbc-q63-line-2-pbc",
-      "citation-ntt-q63-line-2-trinh-di",
-      "citation-ntt-q63-line-2-chu-hy",
-      "citation-nhl-q63-line-3-nhl",
-      "citation-pbc-q63-line-3-pbc",
-      "citation-ntt-q63-line-3-trinh-di",
-      "citation-ntt-q63-line-3-chu-hy",
-      "citation-pbc-q63-line-3-supplement-pbc",
-      "citation-nhl-q63-line-4-nhl",
-      "citation-pbc-q63-line-4-pbc",
-      "citation-ntt-q63-line-4-trinh-di",
-      "citation-ntt-q63-line-4-chu-hy",
-      "citation-nhl-q63-line-5-nhl",
-      "citation-pbc-q63-line-5-pbc",
-      "citation-ntt-q63-line-5-trinh-di",
-      "citation-ntt-q63-line-5-chu-hy",
-      "citation-nhl-q63-line-6-nhl",
-      "citation-pbc-q63-line-6-pbc",
-      "citation-ntt-q63-line-6-trinh-di",
-      "citation-ntt-q63-line-6-chu-hy"
-    ],
-    "note": "Compared full extracted passages at NHL 328–330, PBC 583–591, NTT 917–926; visually inspected contact sheets covering every assigned page in the four-quẻ batch (NHL 321–333, PBC 564–600, NTT 895–936). This is not individual full-size review of all pages. NHL/PBC diagrams and NTT named quái and six line headings are separate witnesses. NHL printed footer labels match PDF pages; no PBC/NTT numeric folio inferred. Additional full-size checks: NHL 331; NTT 911, 912, 930, 933; PBC 655 note 21. Original Vietnamese summaries and structured facts only; no source passage, Han quotation or PDF path redistributed. This is bounded source comparison, not independent verification approval, complete per-cell/layer audit, source-unit closure or certification. NTT Thoán 918–919 and Đại Tượng 919 have no separate Chu Hy paragraph; none is invented. Keep hanh tiểu versus tiểu hanh proposals and phất cloth versus vehicle-cover note 2 separate; notes 1–2 at 926 are represented. NTT 924 original line five omits thược while reading/commentary retains it; NTT 922–923 chờ/chớ variation, 923 unusual thăm dò wording, PBC 590 truncated thược gloss and 591 cửu/cứu ending do not support emended source text. PBC medical and technology analogies are historical opinion only. No ritual efficacy, chronology or campaign instruction is verified. Political, punishment, military, gender, medical, mortality, religious, astronomical and animal imagery remains historical source testimony, not current duty, scientific evidence, calendar, automatic interpretation or predictive efficacy."
-  }
+  ]
 }

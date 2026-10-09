@@ -1,52 +1,28 @@
 {
-  "schemaVersion": 2,
   "id": "article-ntt-colophon-938",
   "type": "article",
   "title": "NTT — Colophon938",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-ntt-colophon-938-ntt-colophon-938-credits",
-      "kind": "author-interpretation",
-      "text": "Colophon nêu Lữ Huy Nguyên chủ biên, Phan Cự Đệ giới thiệu, Nguyễn Văn Lưu xuất bản, Nguyễn Cừ bản thảo, ban biên tập/phòng chế bản. Các vai khác nhau không tự gán người giới thiệu 6 hoặc tác giả chú cổ.",
-      "citationIds": ["citation-ntt-colophon-938-credits"],
+      "text": "Colophon nêu Lữ Huy Nguyên chủ biên, Phan Cự Đệ giới thiệu, Nguyễn Văn Lưu xuất bản, Nguyễn Cừ bản thảo, ban biên tập/phòng chế bản. Các vai khác nhau không tự gán người giới thiệu 6 hoặc tác giả chú cổ.\n\nColophon ghi 700 cuốn 16 × 24 cm, Công ty in Thương mại/Bộ Thương mại, Giấy TNKHXB 1678/CXB ngày 05/12/2003, in xong/nộp lưu chiểu quý I 2004. Chỉ ngày in/deposit in thực, không suy ra năm xuất bản khác hoặc quyền phân phối.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [938, 938],
+          "section": "ntt-colophon-938-credits — non-content"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [938, 938],
+          "section": "ntt-colophon-938-printing — non-content"
+        }
+      ],
       "attribution": {
         "author": "Colophon bản cung cấp",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-colophon-938-ntt-colophon-938-printing",
-      "kind": "author-interpretation",
-      "text": "Colophon ghi 700 cuốn 16 × 24 cm, Công ty in Thương mại/Bộ Thương mại, Giấy TNKHXB 1678/CXB ngày 05/12/2003, in xong/nộp lưu chiểu quý I 2004. Chỉ ngày in/deposit in thực, không suy ra năm xuất bản khác hoặc quyền phân phối.",
-      "citationIds": ["citation-ntt-colophon-938-printing"],
-      "attribution": {
-        "author": "Colophon bản cung cấp",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-ntt-colophon-938-credits",
-      "citation-ntt-colophon-938-printing"
-    ],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

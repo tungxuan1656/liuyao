@@ -1,269 +1,321 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-46",
   "type": "hexagram",
   "title": "Địa Phong Thăng",
   "aliases": ["Thăng"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-wind", "trigram-earth"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-46-structure",
-      "kind": "structural-fact",
       "text": "Địa Phong Thăng gồm nội quái Tốn và ngoại quái Khôn; sáu vị trí được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q46-overview-structure",
-        "citation-pbc-q46-overview-structure",
-        "citation-ntt-q46-overview-structure",
-        "citation-nhl-q46-line-1-classical-text",
-        "citation-nhl-q46-line-2-classical-text",
-        "citation-nhl-q46-line-3-classical-text",
-        "citation-nhl-q46-line-4-classical-text",
-        "citation-nhl-q46-line-5-classical-text",
-        "citation-nhl-q46-line-6-classical-text",
-        "citation-pbc-q46-line-1-classical-text",
-        "citation-pbc-q46-line-2-classical-text",
-        "citation-pbc-q46-line-3-classical-text",
-        "citation-pbc-q46-line-4-classical-text",
-        "citation-pbc-q46-line-5-classical-text",
-        "citation-pbc-q46-line-6-classical-text",
-        "citation-ntt-q46-line-1-classical-text",
-        "citation-ntt-q46-line-2-classical-text",
-        "citation-ntt-q46-line-3-classical-text",
-        "citation-ntt-q46-line-4-classical-text",
-        "citation-ntt-q46-line-5-classical-text",
-        "citation-ntt-q46-line-6-classical-text"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [277, 277],
+          "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp",
+          "printedPages": ["277", "277"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [440, 440],
+          "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [714, 714],
+          "section": "Tổng quan — Chu Dịch — hình quẻ và nhãn quái trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [277, 277],
+          "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+          "printedPages": ["277", "277"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [277, 278],
+          "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+          "printedPages": ["277", "278"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [278, 278],
+          "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+          "printedPages": ["278", "278"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [278, 278],
+          "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+          "printedPages": ["278", "278"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [278, 278],
+          "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+          "printedPages": ["278", "278"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [278, 279],
+          "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp",
+          "printedPages": ["278", "279"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [442, 443],
+          "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [443, 443],
+          "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [443, 444],
+          "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [444, 444],
+          "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [444, 445],
+          "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [445, 446],
+          "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [716, 717],
+          "section": "Hào 1 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [717, 719],
+          "section": "Hào 2 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [719, 720],
+          "section": "Hào 3 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [720, 721],
+          "section": "Hào 4 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [721, 722],
+          "section": "Hào 5 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [722, 723],
+          "section": "Hào 6 — Chu Dịch — Hào từ và Tiểu Tượng khi có trong bản cung cấp"
+        }
       ]
     },
     {
-      "id": "hexagram-46-overview-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê lấy cây mọc dưới đất để giải Thăng, theo tính nhún và thuận cùng hai–năm hỗ trợ nhau. Nam chinh là tiến phía trước chứ không chỉ đi hướng nam; Đại Tượng khuyên sửa đức từng ít một để tích thành cao lớn.",
-      "citationIds": ["citation-nhl-q46-overview-nhl"],
+      "text": "Nguyễn Hiến Lê lấy cây mọc dưới đất để giải Thăng, theo tính nhún và thuận cùng hai–năm hỗ trợ nhau. Nam chinh là tiến phía trước chứ không chỉ đi hướng nam; Đại Tượng khuyên sửa đức từng ít một để tích thành cao lớn.\n\nNguyễn Hiến Lê kết rằng năm hào dưới thuận lợi, riêng hào trên xấu ở lòng ham danh lợi và địa vị không biết dừng. Đây là cách đánh giá của ông trong Thăng.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [277, 277],
+          "section": "Tổng quan — Nguyễn Hiến Lê",
+          "printedPages": ["277", "277"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [279, 279],
+          "section": "Tổng quan — Nguyễn Hiến Lê",
+          "printedPages": ["279", "279"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
+      "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
     },
     {
-      "id": "hexagram-46-overview-closing-nhl",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê kết rằng năm hào dưới thuận lợi, riêng hào trên xấu ở lòng ham danh lợi và địa vị không biết dừng. Đây là cách đánh giá của ông trong Thăng.",
-      "citationIds": ["citation-nhl-q46-overview-closing-nhl"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-overview-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu nối tích tụ với cao lên và cây mọc khỏi đất. Gặp người đủ tài đức giúp sự tiến triển, nam chinh là hướng trước chứ không chấp phương nam. PHỤ CHÚ so Thăng với Đại Hữu và Đỉnh qua hai cương–năm nhu cùng đắc trung và ứng nhau để giải thời thuận hành đạo.",
-      "citationIds": ["citation-pbc-q46-overview-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-overview-thoan-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu giải nhu lên là Khôn thuận thời ở trên Tốn; hai cương trung và năm nhu trung ứng nhau. Thời thuận vẫn cần nhân sự, người lớn ở đây chỉ hào hai; tiến lên có nghĩa thi hành chí, không chỉ đạt địa vị.",
-      "citationIds": ["citation-pbc-q46-overview-thoan-pbc"],
+      "text": "Phan Bội Châu nối tích tụ với cao lên và cây mọc khỏi đất. Gặp người đủ tài đức giúp sự tiến triển, nam chinh là hướng trước chứ không chấp phương nam. PHỤ CHÚ so Thăng với Đại Hữu và Đỉnh qua hai cương–năm nhu cùng đắc trung và ứng nhau để giải thời thuận hành đạo.\n\nPhan Bội Châu giải nhu lên là Khôn thuận thời ở trên Tốn; hai cương trung và năm nhu trung ứng nhau. Thời thuận vẫn cần nhân sự, người lớn ở đây chỉ hào hai; tiến lên có nghĩa thi hành chí, không chỉ đạt địa vị.\n\nPhan Bội Châu đọc thuận đức là thuận đường đạo đức rồi tích việc nhỏ. PHỤ CHÚ lấy bậc thang và nền tháp để nhấn mạnh không thể bỏ điều thiện nhỏ mà đòi sự nghiệp lớn, dẫn lời Lưu Huyền Đức và Trung Dung trong lời bàn của ông.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [440, 441],
+          "section": "Tổng quan — Phan Bội Châu"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [441, 442],
+          "section": "Tổng quan — Phan Bội Châu"
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [442, 442],
+          "section": "Tổng quan — Phan Bội Châu"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
+      "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
     },
     {
-      "id": "hexagram-46-overview-dai-tuong-pbc",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu đọc thuận đức là thuận đường đạo đức rồi tích việc nhỏ. PHỤ CHÚ lấy bậc thang và nền tháp để nhấn mạnh không thể bỏ điều thiện nhỏ mà đòi sự nghiệp lớn, dẫn lời Lưu Huyền Đức và Trung Dung trong lời bàn của ông.",
-      "citationIds": ["citation-pbc-q46-overview-dai-tuong-pbc"],
-      "attribution": {
-        "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-overview-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di nối vật tích tụ với tiến lên, hình cây lớn trong đất. Tài quẻ khéo khiến có thể hanh, dùng đạo ấy để gặp người lớn; nam chinh được giải là tiến phía trước.",
-      "citationIds": ["citation-ntt-q46-overview-trinh-di"],
+      "text": "Trình Di nối vật tích tụ với tiến lên, hình cây lớn trong đất. Tài quẻ khéo khiến có thể hanh, dùng đạo ấy để gặp người lớn; nam chinh được giải là tiến phía trước.\n\nTrình Di giải mềm lên bằng Khôn thuận thời, dưới nhún trên thuận và hai–năm tương ứng. Người lớn giúp thăng về ngôi hoặc về đạo, phúc lan cả người khác; tiến trước là thi hành chí. Nhận định nguyên hanh/đại hanh là ý kiến của ông, không tự sửa chữ của edition.\n\nTrình Di lấy cây lớn từ đất để giải sửa đức và tích những điều nhỏ: học nghiệp và đạo đức cao sâu do chứa chất mà thành, không phải bước nhảy bỏ nền tảng.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [714, 714],
+          "section": "Tổng quan — Trình Di"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [715, 716],
+          "section": "Tổng quan — Trình Di"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [716, 716],
+          "section": "Tổng quan — Trình Di"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
+      "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
     },
     {
-      "id": "hexagram-46-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy dùng thuyết Thăng từ Giải, chất mềm lên ngôi bốn, trong nhún ngoài thuận và hào hai cương trung ứng năm để giải lời chiêm. Nam chinh cũng được ông đọc là tiến về phía trước.",
-      "citationIds": ["citation-ntt-q46-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [714, 714],
+          "section": "Tổng quan — Chu Hy"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Thuyết nguồn quẻ là cách giải của Chu Hy, không phải thao tác biến hào khi gieo hay chỉ dẫn hành trình địa lý."
-      ]
+      "condition": "Thuyết nguồn quẻ là cách giải của Chu Hy, không phải thao tác biến hào khi gieo hay chỉ dẫn hành trình địa lý."
     },
     {
-      "id": "hexagram-46-overview-thoan-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di giải mềm lên bằng Khôn thuận thời, dưới nhún trên thuận và hai–năm tương ứng. Người lớn giúp thăng về ngôi hoặc về đạo, phúc lan cả người khác; tiến trước là thi hành chí. Nhận định nguyên hanh/đại hanh là ý kiến của ông, không tự sửa chữ của edition.",
-      "citationIds": ["citation-ntt-q46-overview-thoan-trinh-di"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-overview-dai-tuong-trinh-di",
-      "kind": "author-interpretation",
-      "text": "Trình Di lấy cây lớn từ đất để giải sửa đức và tích những điều nhỏ: học nghiệp và đạo đức cao sâu do chứa chất mà thành, không phải bước nhảy bỏ nền tảng.",
-      "citationIds": ["citation-ntt-q46-overview-dai-tuong-trinh-di"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch và chú giải"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-overview-dai-tuong-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy thuật bản Vương Túc dùng thận thay thuận và cho rằng ý rõ hơn, hai chữ thông dụng trong cổ văn. Đây là lời báo dị bản của Chu Hy qua NTT, không phải bằng chứng đã xem bản Vương Túc.",
-      "citationIds": ["citation-ntt-q46-overview-dai-tuong-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [716, 716],
+          "section": "Tổng quan — Chu Hy"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Giữ thuận/thận thành hai cách đọc có attribution, không sửa chữ Đại Tượng trong các bản cung cấp."
-      ]
+      "condition": "Giữ thuận/thận thành hai cách đọc có attribution, không sửa chữ Đại Tượng trong các bản cung cấp."
     },
     {
-      "id": "hexagram-46-note-1-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố chú Thăng theo nghĩa đi lên.",
-      "citationIds": ["citation-ntt-q46-note-1-ntt"],
+      "text": "Ngô Tất Tố chú Thăng theo nghĩa đi lên.\n\nNgô Tất Tố ghi cách đọc hưởng trong hào bốn là theo Chu Hy; chú này không gán cùng cách đọc cho Trình Di.\n\nNgô Tất Tố nêu thêm cách dịch giai ở hào năm; edition in lên tháng, nghĩa của dạng in ấy chưa rõ, không tự đổi thành một từ khác.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [723, 723],
+          "section": "Chú thích 1 — Ngô Tất Tố"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [723, 723],
+          "section": "Chú thích 2 — Ngô Tất Tố"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [723, 723],
+          "section": "Chú thích 3 — Ngô Tất Tố"
+        }
+      ],
       "attribution": {
         "author": "Ngô Tất Tố"
       },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-note-2-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố ghi cách đọc hưởng trong hào bốn là theo Chu Hy; chú này không gán cùng cách đọc cho Trình Di.",
-      "citationIds": ["citation-ntt-q46-note-2-ntt"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
-    },
-    {
-      "id": "hexagram-46-note-3-ntt",
-      "kind": "author-interpretation",
-      "text": "Ngô Tất Tố nêu thêm cách dịch giai ở hào năm; edition in lên tháng, nghĩa của dạng in ấy chưa rõ, không tự đổi thành một từ khác.",
-      "citationIds": ["citation-ntt-q46-note-3-ntt"],
-      "attribution": {
-        "author": "Ngô Tất Tố"
-      },
-      "conditions": [
-        "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-      ]
+      "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
     }
   ],
-  "relatedIds": ["trigram-wind", "trigram-earth"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yang", "yang", "yin", "yin", "yin"],
-    "kingWenNumber": 46,
-    "upperTrigramId": "trigram-earth",
-    "lowerTrigramId": "trigram-wind",
-    "claimIds": ["hexagram-46-structure"]
-  },
+  "kingWenNumber": 46,
+  "upperTrigramId": "trigram-earth",
+  "lowerTrigramId": "trigram-wind",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-46-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải hào đầu khiêm tốn, mềm thuận và tin hai hào dương trên, được họ dắt cùng lên. Doãn biểu thị lòng tin hai chiều; hợp chí trong Tiểu Tượng là nền của điều tốt.",
-          "citationIds": ["citation-nhl-q46-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [277, 277],
+              "section": "Hào 1 — Nguyễn Hiến Lê",
+              "printedPages": ["277", "277"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải hào đầu làm chủ Tốn nên biết thuận hai dương trên để được dắt lên; Tiểu Tượng lấy hợp chí làm nền. PHỤ CHÚ so chúng doãn ở Tấn với doãn thăng để nhấn mạnh sự tin nhau khi cùng làm việc, không phải cứ tương đồng âm dương là đủ.",
-          "citationIds": ["citation-pbc-q46-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [442, 443],
+              "section": "Hào 1 — Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-1-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào đầu không tự lên được nên tin theo riêng hào hai cương trung, người gánh cuộc tiến và ứng với vua. Tiểu Tượng hợp chí cũng chỉ hai, khác cách NHL và Chu Hy nói cả hai hào dương.",
-          "citationIds": ["citation-ntt-q46-line-1-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [717, 717],
+              "section": "Hào 1 — Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-1-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy giải đầu mềm thuận làm chủ Tốn, cần nhún với cả hai hào dương trên trong thời lên; người xem có cách ấy mới chắc được điều tốt.",
-          "citationIds": ["citation-ntt-q46-line-1-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [717, 717],
+              "section": "Hào 1 — Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         }
       ]
     },
@@ -271,69 +323,55 @@
       "position": 2,
       "polarity": "yang",
       "label": "Cửu nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-46-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê nói hai cương ở dưới và năm nhu ở trên tuy khác tính và vị nhưng chí thành ứng nhau để cộng tác trong thời Thăng. Vì chân thành nên lễ vật nhỏ vẫn đủ, không cần phô trương.",
-          "citationIds": ["citation-nhl-q46-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [277, 278],
+              "section": "Hào 2 — Nguyễn Hiến Lê",
+              "printedPages": ["277", "278"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải hai–năm khác tính và vị nhưng phải cảm thông bằng chí thành thay vì hình thức. Tế Thược minh họa lòng thành hơn đồ lễ; Tiểu Tượng mở rộng niềm vui đến khả năng làm ơn cho thiên hạ.",
-          "citationIds": ["citation-pbc-q46-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [443, 443],
+              "section": "Hào 2 — Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-2-chu-hy-printed-long",
-          "kind": "author-interpretation",
-          "text": "Đoạn dài NTT in dưới tên Chu Hy đặt hai cương dưới năm nhu, cảnh báo quan hệ chỉ do thế bắt buộc mà thiếu lòng thành không bền. Lòng thành bên trong thay hình thức bên ngoài, tế Thược minh họa sự thành kính; đây là attribution được in, chưa được xác định độc lập.",
-          "citationIds": ["citation-ntt-q46-line-2-chu-hy-printed-long"],
+          "text": "Đoạn dài NTT in dưới tên Chu Hy đặt hai cương dưới năm nhu, cảnh báo quan hệ chỉ do thế bắt buộc mà thiếu lòng thành không bền. Lòng thành bên trong thay hình thức bên ngoài, tế Thược minh họa sự thành kính; đây là attribution được in, chưa được xác định độc lập.\n\nĐoạn ngắn tiếp theo, cũng in dưới tên Chu Hy, dẫn người đọc trở lại câu tương ứng trong Tụy. Không nhập nó với đoạn dài liền trước.\n\nLời Tiểu Tượng in dưới tên Chu Hy giải sự tin của hào hai là cách phụng sự người trên không lỗi và thi hành đạo cương trung để ơn tới thiên hạ.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [718, 718],
+              "section": "Hào 2 — Chu Hy"
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [719, 719],
+              "section": "Hào 2 — Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "NTT PDF 718–719 in cả đoạn dài, câu dẫn lại Tụy và lời Tiểu Tượng dưới tên Chu Hy. Giữ từng nhãn in, chưa xác định tác giả thực của đoạn dài và Tiểu Tượng; không chuyển sang Trình Di."
-          ]
-        },
-        {
-          "id": "hexagram-46-line-2-chu-hy-printed-short",
-          "kind": "author-interpretation",
-          "text": "Đoạn ngắn tiếp theo, cũng in dưới tên Chu Hy, dẫn người đọc trở lại câu tương ứng trong Tụy. Không nhập nó với đoạn dài liền trước.",
-          "citationIds": ["citation-ntt-q46-line-2-chu-hy-printed-short"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "NTT PDF 718–719 in cả đoạn dài, câu dẫn lại Tụy và lời Tiểu Tượng dưới tên Chu Hy. Giữ từng nhãn in, chưa xác định tác giả thực của đoạn dài và Tiểu Tượng; không chuyển sang Trình Di."
-          ]
-        },
-        {
-          "id": "hexagram-46-line-2-chu-hy-printed-tuong",
-          "kind": "author-interpretation",
-          "text": "Lời Tiểu Tượng in dưới tên Chu Hy giải sự tin của hào hai là cách phụng sự người trên không lỗi và thi hành đạo cương trung để ơn tới thiên hạ.",
-          "citationIds": ["citation-ntt-q46-line-2-chu-hy-printed-tuong"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "NTT PDF 718–719 in cả đoạn dài, câu dẫn lại Tụy và lời Tiểu Tượng dưới tên Chu Hy. Giữ từng nhãn in, chưa xác định tác giả thực của đoạn dài và Tiểu Tượng; không chuyển sang Trình Di."
-          ]
+          "condition": "NTT PDF 718–719 in cả đoạn dài, câu dẫn lại Tụy và lời Tiểu Tượng dưới tên Chu Hy. Giữ từng nhãn in, chưa xác định tác giả thực của đoạn dài và Tiểu Tượng; không chuyển sang Trình Di."
         }
       ]
     },
@@ -341,56 +379,65 @@
       "position": 3,
       "polarity": "yang",
       "label": "Cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-46-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải ba đúng vị và có tài ở đầu Tốn, thuận theo các âm ở trên nên được dẫn lên dễ như vào ấp vắng, không có người cản.",
-          "citationIds": ["citation-nhl-q46-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [278, 278],
+              "section": "Hào 3 — Nguyễn Hiến Lê",
+              "printedPages": ["278", "278"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải ba dương đúng vị và biết nhún, được ba âm trên thuận giúp nên tiến dễ như vào ấp trống. Tiểu Tượng nói không nghi vì tài, đức, bạn giúp và thời đều thuận.",
-          "citationIds": ["citation-pbc-q46-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [443, 444],
+              "section": "Hào 3 — Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-3-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di giải ba cương, đúng vị, nhún, được phía trên thuận và có ứng viện, nên tiến như vào làng vắng không còn trở ngại. Tiểu Tượng nói không nghi vì không ai chống cuộc tiến ấy.",
-          "citationIds": ["citation-ntt-q46-line-3-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [719, 720],
+              "section": "Hào 3 — Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-3-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy giải ba dương đặc tiến vào thể Khôn âm rỗng có tượng làng nước, bởi vậy thành hình ảnh làng trống. Đây là phép đọc tượng của ông, không phải một sự kiện di dân.",
-          "citationIds": ["citation-ntt-q46-line-3-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [719, 719],
+              "section": "Hào 3 — Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         }
       ]
     },
@@ -398,56 +445,65 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-46-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê dùng Văn Vương làm chư hầu ở Kì Sơn để giải bốn thuận và đúng vị: giúp thiên tử, dẫn người hiền lên, nhờ vậy sự nghiệp hanh thịnh, không lỗi.",
-          "citationIds": ["citation-nhl-q46-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [278, 278],
+              "section": "Hào 4 — Nguyễn Hiến Lê",
+              "printedPages": ["278", "278"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc bốn như chư hầu Văn Vương ở Kì Sơn, thuận trên và dẫn hiền dưới. PHỤ CHÚ nhận xét không có chữ thăng là tránh áp sát ngôi năm; Tiểu Tượng thuận sự giữ bổn phận, không phải lời cho phép lật ngôi trên.",
-          "citationIds": ["citation-pbc-q46-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [444, 444],
+              "section": "Hào 4 — Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-4-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di lấy Văn Vương dưới Kì Sơn để giải bốn: giúp vua ở trên, đưa hiền dưới tiến, tự giữ ngôi không vượt phận. Tiểu Tượng thuận sự nói thuận thời, trên, dưới và nghĩa của mình; giữ nghĩa hanh thịnh này khác cách tế núi của Chu Hy.",
-          "citationIds": ["citation-ntt-q46-line-4-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [720, 721],
+              "section": "Hào 4 — Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Bản nghĩa Chu Hy dẫn lại nghĩa đã gặp ở Tùy; lời bàn Tiên Nho của ông đọc hanh là hưởng, nói việc tế núi sông. Lời chú Tiểu Tượng cũng lấy thuận lên làm tượng lên tế núi, khác cách Văn Vương hanh thịnh của Trình Di.",
-          "citationIds": ["citation-ntt-q46-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [720, 721],
+              "section": "Hào 4 — Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         }
       ]
     },
@@ -455,82 +511,95 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-46-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải năm tuy mềm nhưng ở giữa, có hào hai hiền giúp nên đạt chí như bước lên thềm; giữ đạo chính là điều kiện của lời tốt.",
-          "citationIds": ["citation-nhl-q46-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [278, 278],
+              "section": "Hào 5 — Nguyễn Hiến Lê",
+              "printedPages": ["278", "278"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải năm cần giữ chính và tín nhiệm hào hai cương trung, các hiền thần thành bậc thềm nâng mình. PHỤ CHÚ đọc đại đắc chí là chí vì thiên hạ chứ không chỉ nâng danh vị bản thân.",
-          "citationIds": ["citation-pbc-q46-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [444, 445],
+              "section": "Hào 5 — Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-5-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di giải năm nhờ hiền cương trung bên dưới nhưng phải bền chính để tin và dùng hiền đến cuối. Bậc thềm chỉ sự dựa hiền dễ tiến; Tiểu Tượng đặt chí ở cuộc đại trị của thiên hạ.",
-          "citationIds": ["citation-ntt-q46-line-5-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [721, 722],
+              "section": "Hào 5 — Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy giải năm âm ở ngôi dương, ở ngôi cao trong thời tiến nên phải chính bền mới tốt. Thềm là chỗ dễ lên, nhưng không bỏ điều kiện trinh.",
-          "citationIds": ["citation-ntt-q46-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [721, 721],
+              "section": "Hào 5 — Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-5-trinh-sa-tuy",
-          "kind": "author-interpretation",
           "text": "Trình Sa Tùy đọc bậc thềm là hình ảnh vua nâng người hiền từ ngôi hai lên năm. Đây là người hiền được nâng, khác trọng tâm vua dựa hiền để lên trong Trình Di.",
-          "citationIds": ["citation-ntt-q46-line-5-trinh-sa-tuy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [722, 722],
+              "section": "Hào 5 — Trình Sa Tùy"
+            }
+          ],
           "attribution": {
             "author": "Trình Sa Tùy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-5-ho-loi",
-          "kind": "author-interpretation",
           "text": "Họ Lôi giải trinh trước rồi mới lên ngôi thiên tử; giữ cách đọc lên ngôi này riêng với thềm như đường tiến dễ.",
-          "citationIds": ["citation-ntt-q46-line-5-ho-loi"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [722, 722],
+              "section": "Hào 5 — Họ Lôi"
+            }
+          ],
           "attribution": {
             "author": "Họ Lôi",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         }
       ]
     },
@@ -538,129 +607,67 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-46-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải sáu đã ở tận cao mà còn ham lên là hôn ám. Chuyển ham địa vị sang tự cường và sửa đức không nghỉ là cách biến điều bất lợi thành có ích.",
-          "citationIds": ["citation-nhl-q46-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [278, 279],
+              "section": "Hào 6 — Nguyễn Hiến Lê",
+              "printedPages": ["278", "279"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải sáu ham tiến dù thời lên đã cực; chuyển ý ấy sang đạo đức, không ngừng tự cường thì tốt. PHỤ CHÚ phân biệt cầu vị và tiến đức; Tiểu Tượng tiêu, bất phú là không còn thêm cao, phải biết giới hạn.",
-          "citationIds": ["citation-pbc-q46-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [445, 446],
+              "section": "Hào 6 — Phan Bội Châu"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-6-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di giải sáu chỉ biết tiến, không biết lui; dùng lòng tiến mãi vào chính đạo và sửa đức thì lại lợi. Tiểu Tượng nói cực cao không biết dừng sẽ hao đi, không còn thêm ích.",
-          "citationIds": ["citation-ntt-q46-line-6-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [722, 723],
+              "section": "Hào 6 — Trình Di"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         },
         {
-          "id": "hexagram-46-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy giải sáu là tối tăm ở cực thời lên; đi nữa không lợi. Chỉ nên quay lòng không thôi hướng ra ngoài thành thực hành điều chính đáng không nghỉ.",
-          "citationIds": ["citation-ntt-q46-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [723, 723],
+              "section": "Hào 6 — Chu Hy"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
-          ]
+          "condition": "Đây là lời giải trong văn cảnh cổ của quẻ, không phải quy tắc Nạp Giáp, phán đoán người hiện đại hoặc bảo đảm kết quả thực tế."
         }
       ]
     }
-  ],
-  "specialPassages": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker (AI source comparison)",
-    "reviewedAt": "2026-10-05",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q46-overview-structure",
-      "citation-pbc-q46-overview-structure",
-      "citation-ntt-q46-overview-structure",
-      "citation-nhl-q46-line-1-classical-text",
-      "citation-nhl-q46-line-2-classical-text",
-      "citation-nhl-q46-line-3-classical-text",
-      "citation-nhl-q46-line-4-classical-text",
-      "citation-nhl-q46-line-5-classical-text",
-      "citation-nhl-q46-line-6-classical-text",
-      "citation-pbc-q46-line-1-classical-text",
-      "citation-pbc-q46-line-2-classical-text",
-      "citation-pbc-q46-line-3-classical-text",
-      "citation-pbc-q46-line-4-classical-text",
-      "citation-pbc-q46-line-5-classical-text",
-      "citation-pbc-q46-line-6-classical-text",
-      "citation-ntt-q46-line-1-classical-text",
-      "citation-ntt-q46-line-2-classical-text",
-      "citation-ntt-q46-line-3-classical-text",
-      "citation-ntt-q46-line-4-classical-text",
-      "citation-ntt-q46-line-5-classical-text",
-      "citation-ntt-q46-line-6-classical-text",
-      "citation-nhl-q46-overview-nhl",
-      "citation-nhl-q46-overview-closing-nhl",
-      "citation-pbc-q46-overview-pbc",
-      "citation-pbc-q46-overview-thoan-pbc",
-      "citation-pbc-q46-overview-dai-tuong-pbc",
-      "citation-ntt-q46-overview-trinh-di",
-      "citation-ntt-q46-overview-chu-hy",
-      "citation-ntt-q46-overview-thoan-trinh-di",
-      "citation-ntt-q46-overview-dai-tuong-trinh-di",
-      "citation-ntt-q46-overview-dai-tuong-chu-hy",
-      "citation-ntt-q46-note-1-ntt",
-      "citation-ntt-q46-note-2-ntt",
-      "citation-ntt-q46-note-3-ntt",
-      "citation-nhl-q46-line-1-nhl",
-      "citation-pbc-q46-line-1-pbc",
-      "citation-ntt-q46-line-1-trinh-di",
-      "citation-ntt-q46-line-1-chu-hy",
-      "citation-nhl-q46-line-2-nhl",
-      "citation-pbc-q46-line-2-pbc",
-      "citation-ntt-q46-line-2-chu-hy-printed-long",
-      "citation-ntt-q46-line-2-chu-hy-printed-short",
-      "citation-ntt-q46-line-2-chu-hy-printed-tuong",
-      "citation-nhl-q46-line-3-nhl",
-      "citation-pbc-q46-line-3-pbc",
-      "citation-ntt-q46-line-3-trinh-di",
-      "citation-ntt-q46-line-3-chu-hy",
-      "citation-nhl-q46-line-4-nhl",
-      "citation-pbc-q46-line-4-pbc",
-      "citation-ntt-q46-line-4-trinh-di",
-      "citation-ntt-q46-line-4-chu-hy",
-      "citation-nhl-q46-line-5-nhl",
-      "citation-pbc-q46-line-5-pbc",
-      "citation-ntt-q46-line-5-trinh-di",
-      "citation-ntt-q46-line-5-chu-hy",
-      "citation-ntt-q46-line-5-trinh-sa-tuy",
-      "citation-ntt-q46-line-5-ho-loi",
-      "citation-nhl-q46-line-6-nhl",
-      "citation-pbc-q46-line-6-pbc",
-      "citation-ntt-q46-line-6-trinh-di",
-      "citation-ntt-q46-line-6-chu-hy"
-    ],
-    "note": "Compared full supplied passages, page images, named commentary and notes for this quẻ. Original Vietnamese selections retain author differences and edition limitations; NTT translation blocks were inspected with their own printed labels. This is source comparison, not an audit decision, independent verification approval, rights clearance or certification. Unrepresented wording and audit layer closure remain open."
-  }
+  ]
 }

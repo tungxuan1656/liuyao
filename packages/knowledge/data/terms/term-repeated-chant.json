@@ -1,35 +1,27 @@
 {
-  "schemaVersion": 1,
   "id": "term-repeated-chant",
   "type": "term",
   "title": "Phục ngâm",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "term-repeated-chant-definition",
-      "kind": "structural-fact",
-      "text": "Mục 12 trình bày Phục ngâm bằng các ví dụ đổi giữa Càn và Chấn nhưng giữ địa chi tại phần quái tương ứng. Có phạm vi cả nội và ngoại, chỉ ngoại, hoặc chỉ nội.",
-      "citationIds": ["citation-bpct-ch5-repeated-chant", "citation-bpct-p13-technical"]
-    },
-    {
-      "id": "term-repeated-chant-branches-not-stems",
-      "kind": "structural-fact",
-      "text": "Bảng Nạp Giáp cho Càn và Chấn cùng dãy chi Tí, Dần, Thìn ở nội và Ngọ, Thân, Tuất ở ngoại. Càn dùng Giáp hoặc Nhâm, Chấn dùng Canh; việc lặp chi không có nghĩa mọi can chi hoặc hình quẻ giữ nguyên.",
-      "citationIds": ["citation-bpct-ch5-repeated-chant", "citation-bpct-p13-technical"]
-    }
-  ],
   "relatedIds": ["rule-na-jia-assignment", "term-reverse-chant", "article-repeated-chant-context"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch5-repeated-chant", "citation-bpct-p13-technical"],
-    "note": "Đã đọc và xem ảnh mục 11–12 PDF 70–71; đối chiếu bảng Nạp Giáp PDF 13 và toàn bộ câu hỏi 5–6 cùng ví dụ PDF 375–378. Các điều kiện và phạm vi được giữ theo đoạn; chỉ chọn diễn giải đủ rõ, chưa xác nhận chiêm nghiệm hoặc toàn bộ học thuyết, chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Mục 12 trình bày Phục ngâm bằng các ví dụ đổi giữa Càn và Chấn nhưng giữ địa chi tại phần quái tương ứng. Có phạm vi cả nội và ngoại, chỉ ngoại, hoặc chỉ nội.\n\nBảng Nạp Giáp cho Càn và Chấn cùng dãy chi Tí, Dần, Thìn ở nội và Ngọ, Thân, Tuất ở ngoại. Càn dùng Giáp hoặc Nhâm, Chấn dùng Canh; việc lặp chi không có nghĩa mọi can chi hoặc hình quẻ giữ nguyên.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [71, 71],
+          "section": "Mục 12 — Ba phạm vi Phục ngâm",
+          "printedPages": ["59", "59"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        }
+      ]
+    }
+  ]
 }

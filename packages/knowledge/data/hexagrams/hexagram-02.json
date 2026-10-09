@@ -1,209 +1,135 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-02",
   "type": "hexagram",
   "title": "Thuần Khôn",
   "aliases": ["Bát Thuần Khôn", "Khôn vi Địa"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-earth"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-02-structure",
-      "kind": "structural-fact",
       "text": "Thuần Khôn có ngoại quái Khôn và nội quái Khôn. Hào được đếm từ dưới lên.",
-      "citationIds": ["citation-nhl-p137-commentary", "citation-nhl-p59-61-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [137, 137]
+        }
+      ],
+      "id": "structure"
     },
     {
-      "id": "hexagram-02-nhl-overview",
-      "kind": "author-interpretation",
-      "text": "Nguyễn Hiến Lê trình bày Khôn qua tính nhu thuận và khả năng nuôi dưỡng, thành hình của đất. Lời khuyên theo sau và giữ sự bền chính được đặt trong hoàn cảnh người ở vị thế cần phối hợp với người khởi xướng.",
-      "citationIds": ["citation-nhl-p137-commentary"],
+      "text": "Nguyễn Hiến Lê trình bày Khôn qua tính nhu thuận và khả năng nuôi dưỡng, thành hình của đất. Theo sau và giữ chính được đặt trong quan hệ phối hợp với người khởi xướng. Ông ghi nhiều cách hiểu “bằng” và phương hướng, không coi đó là chỉ dẫn phương hướng tuyệt đối.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [137, 138]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-02-pbc-overview",
-      "kind": "author-interpretation",
-      "text": "Phan Bội Châu nhấn mạnh sự phối hợp giữa đức kiện của Càn và đức thuận của Khôn. Ông đọc lời về được bạn và mất bạn như lời nhắc chọn người cùng chí hướng, không hạn định thành chỉ dẫn phương hướng tuyệt đối.",
-      "citationIds": ["citation-pbc-p58-59-commentary"],
+      "text": "Phan Bội Châu nhấn mạnh Càn và Khôn cần phối hợp: kiện để khởi xướng, thuận để làm thành, nhưng cả hai đều giữ chính. Ngựa cái vừa thuận vừa đi mạnh không nghỉ; tượng đất dày chở vật giúp giảng đức dung người.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [58, 61]
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-02-ntt-overview",
-      "kind": "author-interpretation",
-      "text": "Trong bản Ngô Tất Tố dịch, Trình Di phân biệt sự bền chính của Càn với sự bền chính mang tính mềm thuận của Khôn. Hình ảnh ngựa cái kết hợp khả năng đi mạnh với tính thuận, làm rõ cách hành động của quẻ.",
-      "citationIds": ["citation-ntt-p129-130-commentary"],
+      "text": "Trình Di phân biệt chính bền mang tính cương của Càn với chính bền mềm thuận của Khôn. Ngựa cái kết hợp đi mạnh với tính thuận; đi sau và phối hợp đúng đạo làm rõ cách hành động của quẻ.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [129, 130]
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
+    },
+    {
+      "text": "Chu Hy đọc Khôn qua tính mềm thuận, có thể làm thành công việc theo người khởi xướng. Chính bền của ngựa cái là điều kiện của lời tốt, không phải sự thuận theo vô điều kiện.",
+      "attribution": {
+        "author": "Chu Hy",
+        "via": "Ngô Tất Tố — dịch và chú giải"
+      },
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [132, 135]
+        }
+      ]
     }
   ],
-  "relatedIds": ["trigram-earth"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — feat-063 source comparison (AI)",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-p137-commentary",
-      "citation-nhl-p59-61-technical",
-      "citation-pbc-p58-59-commentary",
-      "citation-ntt-p129-130-commentary",
-      "citation-nhl-p138-commentary",
-      "citation-pbc-p61-62-pilot-lines",
-      "citation-ntt-p136-138-pilot-lines",
-      "citation-nhl-p138-139-commentary",
-      "citation-pbc-p63-pilot-lines",
-      "citation-ntt-p138-139-pilot-lines",
-      "citation-nhl-p139-commentary",
-      "citation-pbc-p63-64-pilot-lines",
-      "citation-ntt-p140-141-pilot-lines",
-      "citation-pbc-p64-65-pilot-lines",
-      "citation-ntt-p141-142-pilot-lines",
-      "citation-nhl-p139-140-commentary",
-      "citation-pbc-p65-66-pilot-lines",
-      "citation-ntt-p142-144-pilot-lines",
-      "citation-ntt-p143-pilot-lines",
-      "citation-nhl-p140-commentary",
-      "citation-pbc-p66-67-pilot-lines",
-      "citation-ntt-p144-145-pilot-lines",
-      "citation-nhl-p140-141-commentary",
-      "citation-pbc-p67-pilot-lines",
-      "citation-ntt-p145-146-pilot-lines",
-      "citation-pbc-p66-pilot-lines",
-      "citation-ntt-p144-pilot-lines",
-      "citation-pbc-cankhon-special-02-dung-original-reading",
-      "citation-ntt-cankhon-special-02-dung-original-reading",
-      "citation-ntt-cankhon-special-02-dung-translation",
-      "citation-nhl-cankhon-special-02-dung-original-reading",
-      "citation-nhl-cankhon-special-02-dung-translation",
-      "citation-pbc-cankhon-special-02-dung-phu-chu-trung-dung",
-      "citation-pbc-cankhon-special-02-dung-tuong-original-reading",
-      "citation-pbc-cankhon-special-02-dung-tuong-pbc",
-      "citation-ntt-cankhon-special-02-dung-tuong-original-reading",
-      "citation-ntt-cankhon-special-02-dung-tuong-translation",
-      "citation-ntt-cankhon-special-02-dung-tuong-trinh-di",
-      "citation-ntt-cankhon-special-02-dung-tuong-chu-hy",
-      "citation-ntt-cankhon-special-02-dung-tuong-tien-nho-chu-hy",
-      "citation-ntt-cankhon-special-02-overview-original-reading",
-      "citation-ntt-cankhon-special-02-overview-translation",
-      "citation-ntt-cankhon-special-02-overview-trinh-di",
-      "citation-ntt-cankhon-special-02-overview-chu-hy",
-      "citation-ntt-cankhon-special-02-line-01-original-reading",
-      "citation-ntt-cankhon-special-02-line-01-translation",
-      "citation-ntt-cankhon-special-02-line-01-trinh-di",
-      "citation-ntt-cankhon-special-02-line-01-chu-hy",
-      "citation-ntt-cankhon-special-02-line-02-original-reading",
-      "citation-ntt-cankhon-special-02-line-02-translation",
-      "citation-ntt-cankhon-special-02-line-02-trinh-di",
-      "citation-ntt-cankhon-special-02-line-02-chu-hy",
-      "citation-ntt-cankhon-special-02-line-02-tien-nho-chu-hy",
-      "citation-ntt-cankhon-special-02-line-03-original-reading",
-      "citation-ntt-cankhon-special-02-line-03-translation",
-      "citation-ntt-cankhon-special-02-line-03-trinh-di",
-      "citation-ntt-cankhon-special-02-line-03-tien-nho-chu-hy",
-      "citation-ntt-cankhon-special-02-line-04-original-reading",
-      "citation-ntt-cankhon-special-02-line-04-translation",
-      "citation-ntt-cankhon-special-02-line-04-trinh-di",
-      "citation-ntt-cankhon-special-02-line-04-la-dong-lai",
-      "citation-ntt-cankhon-special-02-line-05-original-reading",
-      "citation-ntt-cankhon-special-02-line-05-translation",
-      "citation-ntt-cankhon-special-02-line-05-dich-truyen",
-      "citation-ntt-cankhon-special-02-line-05-chu-hy",
-      "citation-ntt-cankhon-special-02-line-05-tu-tien-trai",
-      "citation-ntt-cankhon-special-02-line-06-original-reading",
-      "citation-ntt-cankhon-special-02-line-06-translation",
-      "citation-ntt-cankhon-special-02-line-06-trinh-di",
-      "citation-ntt-cankhon-special-02-line-06-chu-hy",
-      "citation-ntt-cankhon-special-02-line-06-sai-tiet-trai",
-      "citation-ntt-cankhon-special-02-note-11",
-      "citation-ntt-cankhon-special-02-note-12",
-      "citation-ntt-cankhon-special-02-note-13",
-      "citation-pbc-cankhon-special-02-overview-original-reading",
-      "citation-pbc-cankhon-special-02-overview-pbc",
-      "citation-pbc-cankhon-special-02-line-01-original-reading",
-      "citation-pbc-cankhon-special-02-line-01-pbc",
-      "citation-pbc-cankhon-special-02-line-02-original-reading",
-      "citation-pbc-cankhon-special-02-line-02-pbc",
-      "citation-pbc-cankhon-special-02-line-03-original-reading",
-      "citation-pbc-cankhon-special-02-line-03-pbc",
-      "citation-pbc-cankhon-special-02-line-04-original-reading",
-      "citation-pbc-cankhon-special-02-line-04-pbc",
-      "citation-pbc-cankhon-special-02-line-05-original-reading",
-      "citation-pbc-cankhon-special-02-line-05-pbc",
-      "citation-pbc-cankhon-special-02-line-06-original-reading",
-      "citation-pbc-cankhon-special-02-line-06-pbc",
-      "citation-pbc-cankhon-special-02-overview-phu-chu",
-      "citation-pbc-cankhon-special-02-line-01-chu-tu-reading-choice",
-      "citation-pbc-cankhon-special-02-line-02-phu-chu",
-      "citation-pbc-cankhon-special-02-line-04-phu-chu",
-      "citation-pbc-cankhon-special-02-line-05-phu-chu-trung-dung",
-      "citation-pbc-cankhon-special-02-closing-unsigned-comment",
-      "citation-nhl-cankhon-special-02-overview-embedded-selection",
-      "citation-nhl-cankhon-special-02-line-01-embedded-selection",
-      "citation-nhl-cankhon-special-02-line-03-embedded-selection",
-      "citation-nhl-cankhon-special-02-line-04-embedded-selection",
-      "citation-nhl-cankhon-special-02-line-05-embedded-selection",
-      "citation-nhl-cankhon-special-02-line-06-embedded-selection",
-      "citation-nhl-cankhon-special-02-line-02-chu-hi",
-      "citation-nhl-cankhon-special-02-line-02-nhl-doubt",
-      "citation-nhl-cankhon-special-02-line-05-nhl-comparison",
-      "citation-nhl-cankhon-special-02-line-06-cao-hanh-unclear-glyph",
-      "citation-nhl-cankhon-special-02-dung-tien-nho",
-      "citation-nhl-cankhon-special-02-dung-cao-hanh",
-      "citation-nhl-cankhon-special-02-dung-tao-thang",
-      "citation-nhl-cankhon-special-02-dung-closing-notice"
-    ],
-    "note": "Rà lại các nhận định pilot và bổ sung diễn giải hào PBC/NTT sau khi đọc đoạn đầy đủ. Giữ riêng Trình Di, Chu Hy và đoạn Dụng cửu/Dụng lục. Đã xem ảnh trang có lỗi nhãn Khôn. Chưa có xác nhận của chuyên gia độc lập. Feat-063: đối chiếu94 ảnh trang trong sáu owner đặc biệt; bổ sung đúng các lớp riêng,giữ các claim cũ và sáu vị trí. Không phải audit068 hoặc chứng nhận toàn corpus."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yin", "yin", "yin", "yin"],
-    "kingWenNumber": 2,
-    "upperTrigramId": "trigram-earth",
-    "lowerTrigramId": "trigram-earth",
-    "claimIds": ["hexagram-02-structure"]
-  },
+  "kingWenNumber": 2,
+  "upperTrigramId": "trigram-earth",
+  "lowerTrigramId": "trigram-earth",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-line-1-nhl",
-          "kind": "author-interpretation",
-          "text": "Từ sương mỏng có thể nhận ra quá trình dẫn tới băng dày. Nguyễn Hiến Lê đọc hào này như lời nhắc nhận biết dấu hiệu sớm và đề phòng ngay từ đầu.",
-          "citationIds": ["citation-nhl-p138-commentary"],
+          "text": "Từ sương mỏng có thể nhận ra quá trình dẫn tới băng dày. Nguyễn Hiến Lê đọc hào này như lời nhắc nhận biết dấu hiệu sớm và đề phòng ngay từ đầu. Ông đối chiếu hào đầu Càn với Khôn rồi phê bình sự trọng dương hơn âm trong các lời giảng cổ.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [138, 138]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu dùng quá trình từ sương đến băng để nhắc phòng ngừa khi mầm họa còn nhỏ. Sự tích lũy theo thời gian khiến việc bỏ qua dấu hiệu ban đầu có thể dẫn đến hậu quả lớn.",
-          "citationIds": ["citation-pbc-p61-62-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [61, 62]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc dấu sương như lời cảnh báo khi sự phát triển còn rất nhỏ. Ông liên hệ hình ảnh ấy với việc ngăn mầm xấu từ đầu, trước khi nó tăng thành thế lực lớn.",
-          "citationIds": ["citation-ntt-p136-138-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [136, 138]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
+        },
+        {
+          "text": "Chu Hy phân biệt số sáu của âm già với số tám của âm trẻ trong cách gọi hào. Sương rồi băng là hình ảnh sự tăng trưởng cần nhận biết sớm; cách “nâng dương, nén âm” trong lời bàn thuộc quan niệm lịch sử của ông.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [136, 138]
+            }
+          ]
         }
       ]
     },
@@ -211,34 +137,56 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Các hình ảnh thẳng, vuông và lớn diễn tả phẩm chất ngay thẳng, đúng mực và rộng rãi. Phần giảng gắn việc tu dưỡng với lòng kính và nghĩa trong giao tiếp.",
-          "citationIds": ["citation-nhl-p138-139-commentary"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [138, 139]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-line-2-pbc",
-          "kind": "author-interpretation",
-          "text": "Phan Bội Châu gắn sự ngay thẳng bên trong, đúng mực bên ngoài và độ lượng rộng với trung chính. Ông nhấn mạnh rằng nhu thuận chỉ tốt trong điều kiện ấy, không phải mọi sự mềm thuận đều tốt.",
-          "citationIds": ["citation-pbc-p63-pilot-lines"],
+          "text": "Phan Bội Châu gắn sự ngay thẳng bên trong, đúng mực bên ngoài và độ lượng rộng với trung chính. Ông nhấn mạnh rằng nhu thuận chỉ tốt trong điều kiện ấy, không phải mọi sự mềm thuận đều tốt. Trung chính là điều kiện: nhu thuận mà thiếu ngay thẳng và đúng mực không tự thành tốt.",
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [63, 63]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di lấy thẳng, vuông và lớn để mô tả đạo Khôn trung chính. Không phải tập được ông giải theo sự tự nhiên của đạo Khôn và cách hành động ung dung, đúng đạo của thánh nhân.",
-          "citationIds": ["citation-ntt-p138-139-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [138, 139]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
+        },
+        {
+          "text": "Chu Hy giải thẳng là ngay bên trong, vuông là đúng mực bên ngoài; hai phẩm chất ấy khiến đức lớn lên. Lời không cần tập mà không bất lợi chỉ được đặt cho người có đức ấy.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [138, 139]
+            }
+          ]
         }
       ]
     },
@@ -246,34 +194,56 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Giữ đức tốt bên trong và làm tròn phần việc khi theo người trên. Hào này khuyên hoàn thành trách nhiệm mà không nhận hết công về mình.",
-          "citationIds": ["citation-nhl-p139-commentary"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [139, 139]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Theo Phan Bội Châu, người có điều tốt cần biết giữ kín, nhưng vẫn phát huy đúng lúc. Khi theo người trên làm việc, nên hoàn thành nghĩa vụ và nhường công thay vì tự nhận hết thành quả.",
-          "citationIds": ["citation-pbc-p63-64-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [63, 64]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải việc giữ điều tốt bên trong theo đạo người ở dưới: làm trọn chức trách mà không nhận công. Giữ kín không có nghĩa là né việc; khi điều nghĩa cần làm xuất hiện thì phải hành động đúng lúc.",
-          "citationIds": ["citation-ntt-p140-141-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [140, 141]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
+        },
+        {
+          "text": "Chu Hy đọc hào ba âm ở vị dương, trên cùng của thể dưới nên không thể mãi giữ kín. Người làm việc có thể phát huy điều tốt đúng lúc, không nhận công về mình mà vẫn hoàn thành đến chót.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [140, 141]
+            }
+          ]
         }
       ]
     },
@@ -281,34 +251,56 @@
       "position": 4,
       "polarity": "yin",
       "label": "Lục tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-line-4-nhl",
-          "kind": "author-interpretation",
-          "text": "Miệng túi được buộc kín tượng trưng cho sự giữ gìn lời nói và hành động. Trong hoàn cảnh khó xử, kín đáo giúp tránh lỗi dù chưa tạo được danh tiếng.",
-          "citationIds": ["citation-nhl-p139-commentary"],
+          "text": "Miệng túi được buộc kín tượng trưng cho sự giữ gìn lời nói và hành động. Trong hoàn cảnh khó xử, kín đáo giúp tránh lỗi dù chưa tạo được danh tiếng. So với hào bốn Càn, cùng vị trí nhưng khác tài và tình thế nên cách xử khác nhau.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [139, 139]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào bốn vào hoàn cảnh tài lực thấp mà địa vị gần người trên. Giữ kín và thận trọng giúp tránh lỗi; không có tiếng khen là giới hạn của cách tự giữ ấy.",
-          "citationIds": ["citation-pbc-p64-65-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [64, 65]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hình ảnh thắt túi trong lúc quan hệ trên dưới bị ngăn cách. Giấu kín khả năng và giữ mình cẩn mật giúp tránh hại, đồng thời không tạo ra danh tiếng.",
-          "citationIds": ["citation-ntt-p141-142-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [141, 142]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
+        },
+        {
+          "text": "Chu Hy đọc miệng túi buộc kín như sự cẩn mật của hào âm ở vị âm, không đắc trung. Lời này có thể ứng với giữ kín công việc hoặc lui lại khi thời thế cần, không hứa tạo danh tiếng.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [141, 142]
+            }
+          ]
         }
       ]
     },
@@ -316,40 +308,52 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Hình ảnh xiêm vàng biểu thị đức trung và thái độ khiêm hạ. Ở vị trí cao, phẩm chất bên trong cần thể hiện ra công việc mà vẫn giữ sự nhún nhường.",
-          "citationIds": ["citation-nhl-p139-140-commentary"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [139, 140]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải xiêm vàng qua đức trung và thái độ khiêm hạ. Ông phân biệt vẻ đẹp bên ngoài với đạo đức bên trong, yêu cầu phẩm chất bên trong làm gốc cho sự biểu hiện ra ngoài.",
-          "citationIds": ["citation-pbc-p65-66-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [65, 66]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc xiêm vàng như lời răn giữ đức trung chính và phận ở dưới theo đạo làm tôi. Ông không dùng lời tốt của hào này để biện hộ việc tự chiếm ngôi tôn; đây là cách giảng riêng trong hệ quan niệm của ông.",
-          "citationIds": ["citation-ntt-p142-144-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [142, 144]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-02-line-5-ntt-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy giải hào năm theo đức trung thuận bên trong biểu hiện ra ngoài dù ở ngôi tôn. Ông giữ điều kiện người xem có phẩm chất trung tín, cung kính và làm việc phù hợp; lời tốt không bảo đảm cho mục đích phản loạn hay mạo hiểm.",
-          "citationIds": ["citation-ntt-p143-pilot-lines"],
+          "text": "Chu Hy giải hào năm theo đức trung thuận bên trong biểu hiện ra ngoài dù ở ngôi tôn. Lời tốt chỉ đặt cho người trung tín, cung kính và làm việc phù hợp; câu chuyện Nam Khoái cho thấy không thể dùng nó để bảo đảm một việc phản loạn.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [143, 143]
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -361,1143 +365,455 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Cuộc giao tranh giữa rồng ở đồng nội biểu thị sự đối kháng khi phát triển tới cực điểm. Nguyễn Hiến Lê nhấn mạnh tổn hại cho cả hai phía khi tranh chấp vượt giới hạn.",
-          "citationIds": ["citation-nhl-p140-commentary"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [140, 140]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem giao tranh ở hào cuối là hậu quả của hai phía cùng phát triển đến cực điểm và đối kháng. Cả hai đều tổn hại; biết dừng và biến thông trước khi quá mức là trọng tâm lời răn.",
-          "citationIds": ["citation-pbc-p66-67-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [66, 67]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào cuối là âm đã đến cực điểm mà vẫn tiến, nên phát sinh tranh giành với dương. Hình ảnh máu hai màu diễn tả tổn thương của cả hai bên khi không biết dừng.",
-          "citationIds": ["citation-ntt-p144-145-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [144, 145]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
+        },
+        {
+          "text": "Chu Hy xem âm phát triển đến cực rồi tranh với dương là tượng giao chiến cùng bị thương. Trong lời chiêm ông đọc đây là cảnh báo xấu, nối với yêu cầu nhận biết mầm từ hào đầu.",
+          "attribution": {
+            "author": "Chu Hy",
+            "via": "Ngô Tất Tố — dịch và chú giải"
+          },
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [144, 145]
+            }
+          ]
         }
       ]
     }
   ],
   "specialPassages": [
     {
-      "id": "hexagram-02-special",
       "title": "Dụng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-02-special-nhl",
-          "kind": "author-interpretation",
-          "text": "Nguyễn Hiến Lê trình bày nhiều cách giải thích Dụng lục. Cách hiểu của tiên nho về sáu hào âm cùng biến được đặt cạnh các thuyết khác; ý nghĩa chính bền lâu dài cần được đọc trong từng cách giải, không tự động trở thành một quy tắc đoán duy nhất.",
-          "citationIds": ["citation-nhl-p140-141-commentary"],
+          "text": "Nguyễn Hiến Lê trình bày nhiều cách giải thích Dụng lục. Cách hiểu của tiên nho về sáu hào âm cùng biến được đặt cạnh các thuyết khác; ý nghĩa chính bền lâu dài cần được đọc trong từng cách giải, không tự động trở thành một quy tắc đoán duy nhất.\n\nBản dịch nhấn vào thời gian kéo dài và sự chính bền; nó không tự xác định chỉ một phương pháp chiêm trong các thuyết tiếp theo.\n\nChú ý cuối quẻ Khôn giới hạn Văn Ngôn và Dụng cửu/lục ở Càn/Khôn; không áp một danh mục đặc biệt này sang các quẻ 3–64.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [140, 141]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-02-special-pbc-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu hiểu Dụng lục qua sáu âm của Khôn biến thành sáu dương của Càn. Ông liên hệ sự chính bền lâu dài với công phu học tập và thực hành giúp thay đổi khí chất từ nhu nhược sang cương cường.",
-          "citationIds": ["citation-pbc-p67-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [67, 67]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-02-special-ntt-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di xem Dụng lục là cách dùng tính âm vốn mềm và khó giữ thường. Lợi ở sự chính bền lâu dài, nhờ đó có thể đi đến kết quả lớn ở cuối.",
-          "citationIds": ["citation-ntt-p145-146-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [145, 146]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-02-special-ntt-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đặt Dụng lục trong trường hợp sáu âm của Khôn đều biến thành dương. Đổi sang tính cương giúp giữ chính lâu dài; đây là cách giải về lời chiêm có điều kiện, không thay thế các quan điểm khác.",
-          "citationIds": ["citation-ntt-p145-146-pilot-lines"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [145, 146]
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "claim-pbc-cankhon-special-02-dung-original-reading",
-          "kind": "classical-meaning",
-          "text": "Đoạn Dụng lục có chữ Hán và cách đọc riêng. Lời về giữ chính lâu dài thuộc đoạn bổ sung; nhãn 7 trong bản PBC là thứ tự in của đoạn bổ sung, không một vạch mới.",
-          "citationIds": ["citation-pbc-cankhon-special-02-dung-original-reading"],
-          "attribution": {
-            "author": "Dụng — lời Kinh, truyền gán Chu Công",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-dung-original-reading",
-          "kind": "classical-meaning",
-          "text": "Đoạn Dụng lục có chữ Hán và cách đọc riêng. Lời về giữ chính lâu dài thuộc đoạn bổ sung; mục Dụng trong bản NTT đứng riêng sau Thượng, không mang nhãn số 7. Bản NTT in chữ nam ở cuối lời Hán, trong khi phiên âm và Dịch nghĩa vẫn là trinh; không sửa chữ nguồn.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-original-reading"],
-          "attribution": {
-            "author": "Dụng — lời Kinh, truyền gán Chu Công",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-dung-translation",
-          "kind": "author-interpretation",
           "text": "Bản dịch nhấn vào thời gian kéo dài và sự chính bền; nó không tự xác định chỉ một phương pháp chiêm trong các thuyết tiếp theo.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-translation"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [145, 145]
+            }
+          ],
           "attribution": {
             "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-dung-original-reading",
-          "kind": "classical-meaning",
-          "text": "Đoạn Dụng lục có chữ Hán và cách đọc riêng. Lời về giữ chính lâu dài thuộc đoạn bổ sung; nhãn 7 trong bản NHL là thứ tự in của đoạn bổ sung, không một vạch mới.",
-          "citationIds": ["citation-nhl-cankhon-special-02-dung-original-reading"],
-          "attribution": {
-            "author": "Dụng — lời Kinh, truyền gán Chu Công",
-            "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-dung-translation",
-          "kind": "author-interpretation",
-          "text": "Bản dịch nhấn vào thời gian kéo dài và sự chính bền; nó không tự xác định chỉ một phương pháp chiêm trong các thuyết tiếp theo.",
-          "citationIds": ["citation-nhl-cankhon-special-02-dung-translation"],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-dung-phu-chu-trung-dung",
-          "kind": "author-interpretation",
           "text": "Phụ Chú dùng lời Trung Dung về học hỏi và thực hành để minh họa thay đổi khí chất; đây là dẫn chứng của PBC, không phải một quy luật đánh giá năng lực hoặc lời chiêm được kiểm chứng.",
-          "citationIds": ["citation-pbc-cankhon-special-02-dung-phu-chu-trung-dung"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [67, 67]
+            }
+          ],
           "attribution": {
             "author": "Trung Dung — PBC dẫn trong Phụ Chú",
             "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-dung-tien-nho",
-          "kind": "author-interpretation",
           "text": "NHL đặt thuyết sáu âm biến dương, Khôn thành Càn, cương thay nhu như một trong ba cách giảng Dụng lục; không tự gán thuyết vô danh này cho Chu Hi hoặc PBC.",
-          "citationIds": ["citation-nhl-cankhon-special-02-dung-tien-nho"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [141, 141]
+            }
+          ],
           "attribution": {
             "author": "Tiên nho không nêu tên — NHL dẫn",
             "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-dung-cao-hanh",
-          "kind": "author-interpretation",
           "text": "NHL dẫn Cao Hanh đặt việc hỏi cát/hung lâu dài làm điều kiện nhận lời lợi của đoạn Dụng lục; không kết hợp với phương pháp biến sáu hào của tiên nho.",
-          "citationIds": ["citation-nhl-cankhon-special-02-dung-cao-hanh"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [141, 141]
+            }
+          ],
           "attribution": {
             "author": "Cao Hanh",
             "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-dung-tao-thang",
-          "kind": "author-interpretation",
           "text": "NHL dẫn Tào Thăng giải lợi do Khôn thuận Càn, mở khi động, đóng khi tĩnh, chính bền nói đạo Khôn giản dị tác thành vật. Giữ chữ Không in trong lời nguồn là dấu bản cung cấp, không dựng quy tắc khác.",
-          "citationIds": ["citation-nhl-cankhon-special-02-dung-tao-thang"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [141, 141]
+            }
+          ],
           "attribution": {
             "author": "Tào Thăng",
             "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-dung-closing-notice",
-          "kind": "author-interpretation",
-          "text": "Chú ý cuối quẻ Khôn giới hạn Văn Ngôn và Dụng cửu/lục ở Càn/Khôn; không áp một danh mục đặc biệt này sang các quẻ 3–64.",
-          "citationIds": ["citation-nhl-cankhon-special-02-dung-closing-notice"],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         }
       ]
     },
     {
-      "id": "hexagram-02-special-tuong",
       "title": "Tượng của đoạn Dụng",
-      "claims": [
+      "entries": [
         {
-          "id": "claim-pbc-cankhon-special-02-dung-tuong-original-reading",
-          "kind": "classical-meaning",
-          "text": "Tượng gắn chính bền của Dụng lục với cái lớn ở cuối. Lời Hán/phiên âm là lớp riêng, không phải Tiểu Tượng của một vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-dung-tuong-original-reading"],
-          "attribution": {
-            "author": "Tượng truyện — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-dung-tuong-pbc",
-          "kind": "author-interpretation",
           "text": "PBC lấy đại là dương, tiểu là âm, đọc cuối cùng lớn lên qua biến hóa, rồi mở rộng sang người tạo thời thế; không áp dụng hệ tôn ti ấy cho con người hiện đại.",
-          "citationIds": ["citation-pbc-cankhon-special-02-dung-tuong-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [67, 67]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-dung-tuong-original-reading",
-          "kind": "classical-meaning",
-          "text": "Tượng gắn chính bền của Dụng lục với cái lớn ở cuối. Lời Hán/phiên âm là lớp riêng, không phải Tiểu Tượng của một vị trí thứ 7.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-tuong-original-reading"],
-          "attribution": {
-            "author": "Tượng truyện — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-dung-tuong-translation",
-          "kind": "author-interpretation",
           "text": "Dịch nghĩa giữ sự chính đính dài lâu và lớn đến chót như lời Tượng của đoạn Dụng, tách với Văn Ngôn bắt đầu sau đó.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-tuong-translation"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [145, 146]
+            }
+          ],
           "attribution": {
             "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-dung-tuong-trinh-di",
-          "kind": "author-interpretation",
           "text": "Trình Di bàn sự chính bền như điều kiện đi tới chót: lớn ở cuối và giữ chính lâu dài được giải cùng nhau.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-tuong-trinh-di"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [146, 146]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-dung-tuong-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy đọc đại chung là ban đầu âm rồi sau thành dương; đây là giải thích riêng của ông ở Bản nghĩa.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-tuong-chu-hy"],
+          "text": "Chu Hy đọc đại chung là ban đầu âm rồi sau thành dương; đây là giải thích riêng của ông ở Bản nghĩa.\n\nTiên Nho dẫn Chu Hy phân biệt đại/tiểu theo dương/âm và lấy biến hóa trước nhỏ sau lớn để giảng đại chung; không khẳng định giá trị của giới tính hoặc địa vị xã hội.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [146, 146]
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-dung-tuong-tien-nho-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Tiên Nho dẫn Chu Hy phân biệt đại/tiểu theo dương/âm và lấy biến hóa trước nhỏ sau lớn để giảng đại chung; không khẳng định giá trị của giới tính hoặc địa vị xã hội.",
-          "citationIds": ["citation-ntt-cankhon-special-02-dung-tuong-tien-nho-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         }
       ]
     },
     {
-      "id": "hexagram-02-special-van-ngon",
-      "title": "Văn Ngôn — các lớp nguồn độc lập",
-      "claims": [
+      "title": "Văn Ngôn: tu đức và hành động hợp thời",
+      "entries": [
         {
-          "id": "claim-ntt-cankhon-special-02-overview-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn Khôn chí nhu; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-overview-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-overview-translation",
-          "kind": "author-interpretation",
-          "text": "Bản dịch giữ Khôn mềm mà động cứng, tĩnh mà đức vuông, sau được, chủ lợi và có thường, ngậm vật mà hóa sáng; thuận trời và làm theo thời.",
-          "citationIds": ["citation-ntt-cankhon-special-02-overview-translation"],
+          "text": "Văn Ngôn triển khai nhu thuận thành cách tu dưỡng: nhận biết sự tích lũy từ nhỏ, giữ kính bên trong và nghĩa bên ngoài, có điều tốt mà không nhận hết công, cẩn mật lúc bế tắc và để đức trong hiện ra việc làm. Hình ảnh đất, vợ, bề tôi thuộc hệ vai trò của lời cổ.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [146, 154]
+            }
+          ],
           "attribution": {
             "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-overview-trinh-di",
-          "kind": "author-interpretation",
-          "text": "Trình Di phân động cứng ứng Càn với đức vuông sinh vật có thường; ông ghi thiếu lợi dưới chủ. Hóa sáng là công/đức Khôn thuận trời.",
-          "citationIds": ["citation-ntt-cankhon-special-02-overview-trinh-di"],
+          "text": "Trình Di giảng Khôn mềm mà tác dụng cứng khi ứng với Càn, giữ kính và nghĩa để đức lớn lên. Cần ngăn mầm xấu từ đầu, hoàn thành phần việc mà không nhận công, kín đáo khi trên dưới cách tuyệt và dừng trước khi tiến đến tranh chấp.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [146, 151]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [153, 153]
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-overview-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy giải cương/phương về trinh ngựa cái, hàm vật hóa quang về hanh và thuận trời; ông dẫn sửa thiếu lợi của Trình truyện. Sửa đề nghị không trở thành nguyên văn độc lập.",
-          "citationIds": ["citation-ntt-cankhon-special-02-overview-chu-hy"],
+          "text": "Chu Hy phân biệt kính là giữ mình với nghĩa là xét và quyết đoán khi có việc. Ông đọc “bất cô” là lớn và đề nghị đọc “thuận” thành “thận” ở đoạn nhận biết mầm nhỏ. Các cách đọc này giữ riêng với lời Trình Di và bản dịch.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [147, 150]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [152, 153]
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-line-01-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn tích lũy Sơ lục; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-01-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-01-translation",
-          "kind": "author-interpretation",
-          "text": "Bản dịch dùng tích thiện/bất thiện và tai họa vua/tôi, cha/con để giảng việc lớn đến từ tích lũy; phiên âm giữ thuận kèm dấu hỏi.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-01-translation"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-01-trinh-di",
-          "kind": "author-interpretation",
-          "text": "Trình Di đọc thuận là thế thuận tiện lớn dần, cho phân biệt sớm chặn ác nhỏ thành lớn. Phúc/vạ truyền đời là quan niệm nguồn, không quy trách tai họa cho gia đình thực.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-01-trinh-di"],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-01-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy cho thuận/thận dùng lẫn tiếng cổ và đề nghị đọc thận, nhấn phân biệt từ nhỏ. Giữ khác với Trình Di, không sửa bản gốc.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-01-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-02-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn kính nghĩa Lục nhị; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-02-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-02-translation",
-          "kind": "author-interpretation",
-          "text": "Bản dịch phân thẳng là chính, vuông là nghĩa; giữ kính bên trong, nghĩa ngoài, đức không cô và không nghi việc làm.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-02-translation"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-02-trinh-di",
-          "kind": "author-interpretation",
-          "text": "Trình Di nhấn nghĩa hiện ngoài nhưng không vì thế ở ngoài; kính/nghĩa dựng làm đức tự thịnh lớn.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-02-trinh-di"],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-02-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy giải chính là bản thể, nghĩa là ngăn chế, kính giữ bản thể; bất cô là lớn, không nghi nên không phải tập.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-02-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-02-tien-nho-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Tiên Nho Chu Hy phân kính là trì thủ, nghĩa là giảng học/quyết đoán khi có việc; ví kính như gương và nghĩa như tính soi. Giữ nghĩa bất cô là lớn trong cách giảng của Chu Hy ở bản này.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-02-tien-nho-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-03-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn hàm mỹ Lục tam; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-03-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-03-translation",
-          "kind": "author-interpretation",
-          "text": "Lời dịch đặt điều đẹp ngậm lại, theo việc vua không nhận thành công, đạo đất/vợ/tôi thay làm tới chót; đó là hệ vai trò trong nguồn, không chuẩn giới tính hiện đại.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-03-translation"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-03-trinh-di",
-          "kind": "author-interpretation",
-          "text": "Trình Di đặt đất thay trời làm trọn vật nhưng công ở trời, cũng ví đạo người dưới/vợ không nhận công.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-03-trinh-di"],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-03-tien-nho-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chỉ Tiên Nho Chu Hy riêng, không có Bản nghĩa: 3/5 âm ở dương, nhưng 3 tiến chưa giữa nên ngậm, 5 ở chính ngôi nên biểu lộ; khác nhau theo thời/ngôi, không định giá giới tính.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-03-tien-nho-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-04-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn thiên địa bế Lục tứ; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-04-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-04-translation",
-          "kind": "author-interpretation",
-          "text": "Bản dịch đối trời đất biến hóa cỏ cây tốt với đóng khép người hiền ẩn; thắt túi là thận trọng, không tiếng khen.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-04-translation"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-04-trinh-di",
-          "kind": "author-interpretation",
-          "text": "Trình Di lấy 4 gần vua không tương đắc làm tượng cách tuyệt, giữ kín để không lỗi.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-04-trinh-di"],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-04-la-dong-lai",
-          "kind": "author-interpretation",
           "text": "Lã Đông Lai cho người và trời đất cùng khí, khí tới hiền nhân tự biết, không phải tính toán thời thế thành hai việc. Đây là ý riêng khác lời Trình Di, không xác nhận khả năng cảm nhận siêu nhiên.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-04-la-dong-lai"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [151, 151]
+            }
+          ],
           "attribution": {
             "author": "Lã Đông Lai",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-line-05-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn hoàng trung Lục ngũ; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-05-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-05-translation",
-          "kind": "author-interpretation",
-          "text": "Bản dịch nối cái đẹp chứa trong, thông lý, chính vị ở thể với biểu hiện ở bốn chi và sự nghiệp.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-05-translation"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-05-dich-truyen",
-          "kind": "author-interpretation",
-          "text": "Nguồn chỉ in Dịch truyện ở đoạn này: giải văn vẻ trong và đạt lý, ở chính ngôi không mất thể dưới. Giữ nhãn ấy, không tự đổi tên thành Trình Di.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-05-dich-truyen"],
-          "attribution": {
-            "author": "Dịch truyện — nhãn nguồn NTT",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-05-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy phân hoàng là đức trung bên trong, thường là tôn vị nhưng giữ thể dưới; cái đẹp trong và bốn chi nhắc lại chữ tương ứng.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-05-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-05-tu-tien-trai",
-          "kind": "author-interpretation",
           "text": "Từ Tiến Trai phân đức chứa trong đến thịnh và hiện ngoài xứng đáng; hàm dưỡng/giữ bền phải kèm đạt lý thông suốt, không chỉ ôn hòa thuần hậu.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-05-tu-tien-trai"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [152, 152]
+            }
+          ],
           "attribution": {
             "author": "Từ Tiến Trai",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-line-06-original-reading",
-          "kind": "classical-meaning",
-          "text": "Văn Ngôn có Lời Kinh chữ Hán và Dịch âm tại đoạn âm nghi dương Thượng lục; lớp này là lời Truyện bổ sung, không nhập vào Hào từ hoặc vị trí mới. Không khôi phục các chữ Hán lỗi từ bản khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-06-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-06-translation",
-          "kind": "author-interpretation",
-          "text": "Lời dịch giải tranh dương, xưng rồng, xưng máu và huyền hoàng qua âm chưa rời loài, sắc trời đất trộn; không nhập vào một hào bổ sung.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-06-translation"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-06-trinh-di",
-          "kind": "author-interpretation",
-          "text": "Trình Di giảng âm tới cực ngang dương, tiến không thôi dẫn tranh và cả hai bị thương; hệ lớn/nhỏ là quan niệm cổ.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-06-trinh-di"],
-          "attribution": {
-            "author": "Trình Di",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-06-chu-hy",
-          "kind": "author-interpretation",
-          "text": "Chu Hy in vô là ngang đều, không phân lớn nhỏ; Khôn không hào dương không có nghĩa dương tuyệt mất. Khí dương/máu âm là ví dụ nguồn, không sinh lý y học.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-06-chu-hy"],
-          "attribution": {
-            "author": "Chu Hy",
-            "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-line-06-sai-tiet-trai",
-          "kind": "author-interpretation",
           "text": "Sái Tiết Trai nói tháng Khôn/10 thuần âm nhưng dương đã khởi từ hợi trước khi thành hào ở tý; tháng 10 gọi tháng Dương theo ông. Giữ đây là thuyết theo mùa, không quy tắc lịch của ứng dụng.",
-          "citationIds": ["citation-ntt-cankhon-special-02-line-06-sai-tiet-trai"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [153, 153]
+            }
+          ],
           "attribution": {
             "author": "Sái Tiết Trai",
             "via": "Ngô Tất Tố — dịch và chú giải"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-ntt-cankhon-special-02-note-11",
-          "kind": "author-interpretation",
-          "text": "Chú thích 11 nói chữ lợi không có trong Kinh văn và bản theo Trình truyện thêm; được giữ là lựa chọn biên dịch, không gọi chữ được thêm là bằng chứng nguyên bản.",
-          "citationIds": ["citation-ntt-cankhon-special-02-note-11"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-note-12",
-          "kind": "author-interpretation",
-          "text": "Chú thích 12 giải tháng tý là tháng một trong lời Sái Tiết Trai; không chuyển thành lịch hoặc nhãn tháng chung của các nguồn khác.",
-          "citationIds": ["citation-ntt-cankhon-special-02-note-12"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-ntt-cankhon-special-02-note-13",
-          "kind": "author-interpretation",
-          "text": "Chú thích 13 giải tháng hợi là tháng mười trong lời Sái Tiết Trai; đây là nhãn tháng của đoạn dẫn, không suy thêm lịch ngày.",
-          "citationIds": ["citation-ntt-cankhon-special-02-note-13"],
-          "attribution": {
-            "author": "Ngô Tất Tố"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-overview-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Khôn chí nhu, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-overview-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-overview-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC chia sáu câu thành bốn đợt: nhu nhưng tác dụng cương, tĩnh và đức vuông, chủ lợi có thường, hàm vật hóa quang, thuận trời và tiến theo thời.",
-          "citationIds": ["citation-pbc-cankhon-special-02-overview-pbc"],
+          "text": "Phan Bội Châu nối kính và nghĩa, điều tốt chứa bên trong với việc làm biểu hiện ra ngoài. Nhận biết tích lũy sớm, làm việc không nhận hết công và giữ trung giúp giảng đạo Khôn; các vai đất, vợ, bề tôi là hình tượng theo quan niệm lịch sử của ông.",
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [68, 72]
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-pbc-cankhon-special-02-line-01-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Sơ lục, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-01-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-01-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC dùng tích lũy từ nhỏ đến lớn để giảng phúc/vạ và chuyện thí nghịch; ông khuyên thận từ đầu theo cách đổi thuận của Chu Tử. Đây là hệ đạo đức truyền đời trong nguồn, không phán xét người thực.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-01-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-02-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Lục nhị, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-02-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-02-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC giảng kính giữ chính trực trong, nghĩa làm vuông ngoài, thể/dụng và nội/ngoại nhất trí; đức không cô và không nghi việc làm là kết quả của kính/nghĩa theo ông.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-02-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-03-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Lục tam, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-03-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-03-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC đặt hàm chương ở giữ đẹp bên trong rồi làm việc không nhận công; ông ví địa đạo, thê đạo, thần đạo. Đây là hệ vai trò cổ, không quan niệm bắt buộc cho phụ nữ hoặc người làm việc hôm nay.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-03-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-04-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Lục tứ, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-04-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-04-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC đọc thiên địa bế là âm/dương cách nhau, người hiền ở dưới ẩn theo thời; không lấy lời này làm dự báo sự suy của xã hội.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-04-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-05-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Lục ngũ, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-05-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-05-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC phân chữ hoàng theo trung bên trong, thường theo thể dưới, bốn chi theo phát ra ngoài; vẻ đẹp biểu hiện thành sự nghiệp nhưng ở cao vẫn giữ khiêm.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-05-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-06-original-reading",
-          "kind": "classical-meaning",
-          "text": "PBC in lời Hán và phiên âm Văn Ngôn tại Thượng lục, tách với diễn giải theo sau; không có Dịch nghĩa độc lập hoặc vị trí thứ 7.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-06-original-reading"],
-          "attribution": {
-            "author": "Văn Ngôn — truyền gán Khổng Tử",
-            "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-06-pbc",
-          "kind": "author-interpretation",
-          "text": "PBC giải xưng rồng để không ngờ quẻ Khôn vắng dương, máu vì chưa rời loài âm; sắc lẫn là cả hai thương. Giữ đây là lời Truyện với diễn giải PBC, không tái phát hành dự báo giao tranh.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-06-pbc"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-overview-phu-chu",
-          "kind": "author-interpretation",
-          "text": "Phụ Chú phân đức vuông là định hình các vật, không hình thể đất vuông; ông phản đối cách nhận lầm địa phương thành hình học. Không dùng đoạn ấy để xác minh khoa học của sách.",
-          "citationIds": ["citation-pbc-cankhon-special-02-overview-phu-chu"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-01-chu-tu-reading-choice",
-          "kind": "author-interpretation",
           "text": "Ghi chú trong ngoặc nói nguyên văn thuận khó hiểu nên theo Chu Tử đổi thận. Đây là lời giải về lựa chọn cách đọc, không sửa chữ Hán được in trong dữ liệu phát hành.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-01-chu-tu-reading-choice"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [68, 68]
+            }
+          ],
           "attribution": {
             "author": "Chu Tử — PBC dẫn",
             "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-pbc-cankhon-special-02-line-02-phu-chu",
-          "kind": "author-interpretation",
-          "text": "Phụ Chú liên hệ kính/nghĩa với thành ý, thận độc, trí trung hòa, minh minh đức của Trung Dung/Đại Học; giải việc giữ ý và nết từ trong ra ngoài, không tạo phương pháp tu luyện bắt buộc.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-02-phu-chu"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-04-phu-chu",
-          "kind": "author-interpretation",
-          "text": "Phụ Chú lấy nghĩa riêng của 4 chứ không toàn thể quẻ Khôn, lý giải âm không dương thành thiên địa bế; so với tôi/vua, vợ/chồng, nữ/nam, tiểu nhân/quân tử. Các thứ bậc và phán đoán xã hội ấy là ý tác giả, không phân loại người hoặc lời khuyên hiện đại.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-04-phu-chu"],
-          "attribution": {
-            "author": "Phan Bội Châu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-pbc-cankhon-special-02-line-05-phu-chu-trung-dung",
-          "kind": "author-interpretation",
           "text": "Ba lời Trung Dung về áo gấm có áo ngoài che, bên trong kín mà càng sáng, bề ngoài lòe mà ngày suy được PBC dùng để giảng chất tốt phải làm gốc của văn bên ngoài. Không thêm các lời này vào Văn Ngôn nguyên bản.",
-          "citationIds": ["citation-pbc-cankhon-special-02-line-05-phu-chu-trung-dung"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [71, 71]
+            }
+          ],
           "attribution": {
             "author": "Trung Dung — PBC dẫn trong Phụ Chú",
             "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-pbc-cankhon-special-02-closing-unsigned-comment",
-          "kind": "author-interpretation",
           "text": "Sau diễn giải Thượng lục, bản PBC in một đoạn Hán/phiên âm riêng về Khổng Tử không thích Dụng lục trong Văn Ngôn, đặt trong ý phù dương/ức âm để tránh tranh. Không có tên tác giả hoặc đoạn quốc-ngữ diễn giải theo sau; không gán đoạn này thành lời Khổng Tử hay phụ thêm Văn Ngôn Dụng lục.",
-          "citationIds": ["citation-pbc-cankhon-special-02-closing-unsigned-comment"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [72, 72]
+            }
+          ],
           "attribution": {
             "author": "Lời bình chữ Hán không ký tên — bản PBC",
             "via": "Phan Bội Châu — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-overview-embedded-selection",
-          "kind": "author-interpretation",
-          "text": "NHL nói Văn Ngôn chỉ tóm đạo Khôn thuận trời và tiến không ngừng; không có bản Hán/Dịch riêng cho một chương Văn Ngôn đầy đủ trong quẻ này.",
-          "citationIds": ["citation-nhl-cankhon-special-02-overview-embedded-selection"],
+          "text": "NHL nói Văn Ngôn chỉ tóm đạo Khôn thuận trời và tiến không ngừng; không có bản Hán/Dịch riêng cho một chương Văn Ngôn đầy đủ trong quẻ này.\n\nNHL dẫn Văn Ngôn về tích thiện/bất thiện và tai họa tới vua/cha tăng dần; được thuật trong nguồn cổ, không quy trách tai họa đời sau cho gia đình thật.\n\nNHL thuật Văn Ngôn 3 ví giữ đẹp theo việc trên và không nhận công với đất/vợ/bề tôi; đó là vai trò cổ được dẫn, không quy tắc giới tính cho hiện tại.\n\nNHL thuật Văn Ngôn 4 dùng thiên địa bế khi âm cách dương và hiền nhân ẩn; đoạn diễn giải được chọn không sao chép đầy đủ chữ Hán Truyện từ ấn bản khác.\n\nNHL thuật Văn Ngôn 5 về đức trung/đạt lý, ở cao vẫn thể dưới, cái đẹp bên trong hiện ra bốn chi và sự nghiệp. Cách giảng đạo đức đã chọn ở hào 5 được tái dùng, không thay đổi nhận định cũ.\n\nNHL nói Văn Ngôn 6 không giảng thêm ngoài huyền hoàng là sắc trời đất/âm dương; không mượn các bình luận dài của NTT hoặc PBC vào đoạn NHL chọn.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [138, 140]
+            }
+          ],
           "attribution": {
             "author": "Văn Ngôn — NHL thuật, tác giả cổ không xác định",
             "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-line-01-embedded-selection",
-          "kind": "author-interpretation",
-          "text": "NHL dẫn Văn Ngôn về tích thiện/bất thiện và tai họa tới vua/cha tăng dần; được thuật trong nguồn cổ, không quy trách tai họa đời sau cho gia đình thật.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-01-embedded-selection"],
-          "attribution": {
-            "author": "Văn Ngôn — NHL thuật, tác giả cổ không xác định",
-            "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-line-03-embedded-selection",
-          "kind": "author-interpretation",
-          "text": "NHL thuật Văn Ngôn 3 ví giữ đẹp theo việc trên và không nhận công với đất/vợ/bề tôi; đó là vai trò cổ được dẫn, không quy tắc giới tính cho hiện tại.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-03-embedded-selection"],
-          "attribution": {
-            "author": "Văn Ngôn — NHL thuật, tác giả cổ không xác định",
-            "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-line-04-embedded-selection",
-          "kind": "author-interpretation",
-          "text": "NHL thuật Văn Ngôn 4 dùng thiên địa bế khi âm cách dương và hiền nhân ẩn; đoạn diễn giải được chọn không sao chép đầy đủ chữ Hán Truyện từ ấn bản khác.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-04-embedded-selection"],
-          "attribution": {
-            "author": "Văn Ngôn — NHL thuật, tác giả cổ không xác định",
-            "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-line-05-embedded-selection",
-          "kind": "author-interpretation",
-          "text": "NHL thuật Văn Ngôn 5 về đức trung/đạt lý, ở cao vẫn thể dưới, cái đẹp bên trong hiện ra bốn chi và sự nghiệp. Cách giảng đạo đức đã chọn ở hào 5 được tái dùng, không thay đổi nhận định cũ.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-05-embedded-selection"],
-          "attribution": {
-            "author": "Văn Ngôn — NHL thuật, tác giả cổ không xác định",
-            "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-line-06-embedded-selection",
-          "kind": "author-interpretation",
-          "text": "NHL nói Văn Ngôn 6 không giảng thêm ngoài huyền hoàng là sắc trời đất/âm dương; không mượn các bình luận dài của NTT hoặc PBC vào đoạn NHL chọn.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-06-embedded-selection"],
-          "attribution": {
-            "author": "Văn Ngôn — NHL thuật, tác giả cổ không xác định",
-            "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-line-02-chu-hi",
-          "kind": "author-interpretation",
           "text": "NHL báo Chu Hi giải bất cô là to lớn, qua kính/trực, nghĩa/phương và đủ thì đại; đây khác nghĩa không lẻ loi của NHL. Chỉ dẫn qua NHL, không viện ấn bản NTT để hỗ trợ nhận định này.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-02-chu-hi"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [139, 139]
+            }
+          ],
           "attribution": {
             "author": "Chu Hi",
             "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-line-02-nhl-doubt",
-          "kind": "author-interpretation",
-          "text": "NHL chọn nghĩa người có đức có bạn thay cho to lớn, liên hệ bạn là 5 ứng 2, nhưng ông tự nói chưa biết đúng không. Giữ nghi vấn, không lấy câu ấy thành thẩm quyền tính ứng của quẻ Khôn.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-02-nhl-doubt"],
+          "text": "NHL chọn nghĩa người có đức có bạn thay cho to lớn, liên hệ bạn là 5 ứng 2, nhưng ông tự nói chưa biết đúng không. Giữ nghi vấn, không lấy câu ấy thành thẩm quyền tính ứng của quẻ Khôn.\n\nNHL đọc lời tốt 5 của Khôn như sự coi trọng khiêm nhu, văn hơn võ và hiếu hòa dù Dịch tôn dương hơn âm. Đó là đánh giá riêng của ông, không định giá con người theo giới tính/âm dương.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [138, 140]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         },
         {
-          "id": "claim-nhl-cankhon-special-02-line-05-nhl-comparison",
-          "kind": "author-interpretation",
-          "text": "NHL đọc lời tốt 5 của Khôn như sự coi trọng khiêm nhu, văn hơn võ và hiếu hòa dù Dịch tôn dương hơn âm. Đó là đánh giá riêng của ông, không định giá con người theo giới tính/âm dương.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-05-nhl-comparison"],
-          "attribution": {
-            "author": "Nguyễn Hiến Lê"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
-        },
-        {
-          "id": "claim-nhl-cankhon-special-02-line-06-cao-hanh-unclear-glyph",
-          "kind": "author-interpretation",
           "text": "NHL báo Cao Hanh ngờ huyền hoàng có âm đọc như một nhóm chữ khác mang nghĩa máu chảy ròng; nhóm thay thế in trống trong ngoặc. NHL chưa quyết thuyết đúng; không dựng lại chữ hoặc nghĩa chắc chắn.",
-          "citationIds": ["citation-nhl-cankhon-special-02-line-06-cao-hanh-unclear-glyph"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [140, 140]
+            }
+          ],
           "attribution": {
             "author": "Cao Hanh",
             "via": "Nguyễn Hiến Lê — bản được đối chiếu"
-          },
-          "conditions": [
-            "Tóm tắt nguồn cổ và ý kiến được dẫn; không xác minh lịch sử, dự báo, khoa học hay hiệu nghiệm; không phải lời khuyên hiện đại hoặc quy tắc tính toán."
-          ]
+          }
         }
       ]
     }
   ],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-nhl-khun-line-four",
-      "status": "resolved",
-      "description": "Bản PDF phiên âm hào bốn thành “Lục cửu”, trong khi tiêu đề chữ và phần dịch xác định hào bốn là âm.",
-      "citationIds": ["citation-nhl-p139-commentary"],
-      "resolution": "Chuẩn hóa nhãn thành Lục tứ theo vị trí thứ tư và tính âm của hào; giữ dấu vết lỗi bản cung cấp."
+      "text": "Bản PDF phiên âm hào bốn thành “Lục cửu”, trong khi tiêu đề chữ và phần dịch xác định hào bốn là âm. Chuẩn hóa nhãn thành Lục tứ theo vị trí thứ tư và tính âm của hào; giữ dấu vết lỗi bản cung cấp.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [139, 139]
+        }
+      ]
     },
     {
-      "id": "discrepancy-pbc-khun-line-six",
-      "status": "resolved",
-      "description": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn.",
-      "citationIds": ["citation-pbc-p66-pilot-lines"],
-      "resolution": "Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai."
+      "text": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn. Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [66, 66]
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-khun-line-six",
-      "status": "resolved",
-      "description": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn.",
-      "citationIds": ["citation-ntt-p144-pilot-lines"],
-      "resolution": "Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai."
+      "text": "Tiêu đề chữ Hán của hào cuối ghi Thượng cửu dù phiên âm và lời giảng xác định đây là Thượng lục, hào âm cuối quẻ Khôn. Giữ nhãn Thượng lục theo vị trí, tính âm và phần phiên âm/lời giảng; không nhập nhãn chữ Hán bị sai.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [144, 144]
+        }
+      ]
     }
   ]
 }

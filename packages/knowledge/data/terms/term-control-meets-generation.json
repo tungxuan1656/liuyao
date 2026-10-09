@@ -1,33 +1,25 @@
 {
-  "schemaVersion": 1,
   "id": "term-control-meets-generation",
   "type": "term",
   "title": "Khắc xứ phùng sinh",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["rule-five-element-cycles", "article-extinction-control-support"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-control-meets-generation-definition",
-      "kind": "author-interpretation",
       "text": "Khắc xứ phùng sinh chỉ hào chịu khắc nhưng đồng thời được sinh trong ví dụ của mục 16. Cần giữ rõ hào bị khắc và hào sinh nó, không chỉ nhận ra trong quẻ có một quan hệ sinh bất kỳ.",
-      "citationIds": ["citation-bpct-ch5-extinction-control-support"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [72, 73],
+          "section": "Mục 16 — Tuyệt xứ phùng sinh, Khắc xứ phùng sinh",
+          "printedPages": ["60", "61"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       }
     }
-  ],
-  "relatedIds": ["rule-five-element-cycles", "article-extinction-control-support"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch5-extinction-control-support"],
-    "note": "Đã đọc toàn bộ mục 15–16 PDF 72–73 và chú thích 8; đối chiếu câu 4 PDF 78, câu 21 PDF 84, câu 56 PDF 94, cùng câu hỏi 12–13 PDF 393–401 và chú thích. Xem ảnh các trang được chọn, kiểm tra nhãn trang in. Chỉ chọn điều kiện luận giải; chưa xác nhận chuyện ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

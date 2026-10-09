@@ -1,46 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-year-authority-context",
   "type": "article",
   "title": "Tuế quân: điều kiện tĩnh, động và vai hào",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-year-authority-context-adverse-moving",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự giới hạn lời Tuế quân nên tĩnh ở hào Thái Tuế làm Kỵ thần, phát động đến xung khắc Thế thân hoặc Dụng hào. Không bỏ vai Kỵ và chiều gây hại để kết luận mọi Tuế quân động đều bất lợi.",
-      "citationIds": ["citation-bpct-ch6-year-authority"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Lời tai ách và xáo trộn trong năm là nhận định truyền thống, không xác định tai nạn, sức khỏe hoặc sự kiện chắc xảy ra."
-      ]
-    },
-    {
-      "id": "article-year-authority-context-helpful-moving",
-      "kind": "author-interpretation",
-      "text": "Nếu Thái Tuế động đến sinh hợp Thế thân, câu 10 lại đọc theo phía thuận và cho động là thích hợp. Cùng tên Tuế quân có kết luận khác vì đối tượng và chiều tác động khác.",
-      "citationIds": ["citation-bpct-ch6-year-authority"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Không dùng lời may mắn và hỉ khánh làm lời hứa về kết quả hoặc thời điểm."]
-    },
-    {
-      "id": "article-year-authority-context-imperial-context",
-      "kind": "author-interpretation",
-      "text": "Câu 10 gắn Dụng thần lâm Thái Tuế với việc triều đình; Nhật thần hoặc hào động xung Dụng được ví với phạm thượng. Phép ví giải lý do thận trọng trong hệ thống chính trị cổ, không xác định cơ quan hoặc nghĩa vụ pháp lý hiện đại.",
-      "citationIds": ["citation-bpct-ch6-year-authority"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    }
-  ],
   "relatedIds": [
     "term-year-authority",
     "term-adverse-spirit",
@@ -48,16 +10,54 @@
     "term-shi-line",
     "article-day-and-month-authority-context"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch6-year-authority"],
-    "note": "Đã đọc đầy đủ câu 7–11 và chú thích 3 PDF 79–81; đối chiếu câu 4–6 PDF 78–79, vòng Trường Sinh và Quái thân PDF 15–17, Tuần Không và Nguyệt phá PDF 41, vai Dụng/Kỵ PDF 68 và mục Tứ sinh/Không/Phá PDF 70. Xem ảnh PDF 79–81 và kiểm tra nhãn trang in. Giữ điều kiện cùng lớp Vương Hồng Tự, Vĩnh Cao riêng; chưa có phê duyệt chuyên gia độc lập hoặc xác nhận ứng nghiệm."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Vương Hồng Tự giới hạn lời Tuế quân nên tĩnh ở hào Thái Tuế làm Kỵ thần, phát động đến xung khắc Thế thân hoặc Dụng hào. Không bỏ vai Kỵ và chiều gây hại để kết luận mọi Tuế quân động đều bất lợi.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [80, 80],
+          "section": "Câu 10 — Tuế quân ở vai Kỵ hoặc sinh hợp Thế",
+          "printedPages": ["66", "66"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Lời tai ách và xáo trộn trong năm là nhận định truyền thống, không xác định tai nạn, sức khỏe hoặc sự kiện chắc xảy ra."
+    },
+    {
+      "text": "Nếu Thái Tuế động đến sinh hợp Thế thân, câu 10 lại đọc theo phía thuận và cho động là thích hợp. Cùng tên Tuế quân có kết luận khác vì đối tượng và chiều tác động khác.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [80, 80],
+          "section": "Câu 10 — Tuế quân ở vai Kỵ hoặc sinh hợp Thế",
+          "printedPages": ["66", "66"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không dùng lời may mắn và hỉ khánh làm lời hứa về kết quả hoặc thời điểm."
+    },
+    {
+      "text": "Câu 10 gắn Dụng thần lâm Thái Tuế với việc triều đình; Nhật thần hoặc hào động xung Dụng được ví với phạm thượng. Phép ví giải lý do thận trọng trong hệ thống chính trị cổ, không xác định cơ quan hoặc nghĩa vụ pháp lý hiện đại.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [80, 80],
+          "section": "Câu 10 — Tuế quân ở vai Kỵ hoặc sinh hợp Thế",
+          "printedPages": ["66", "66"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    }
+  ]
 }

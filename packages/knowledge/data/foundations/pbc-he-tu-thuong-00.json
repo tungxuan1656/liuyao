@@ -1,35 +1,22 @@
 {
-  "schemaVersion": 2,
   "id": "article-pbc-he-tu-thuong-00",
   "type": "article",
   "title": "PBC — Dẫn nhập Hệ Từ Thượng",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-pbc-he-tu-thuong-00-pbc-he-tu-thuong-introductory-framing",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu phân lời Kinh gắn dưới quẻ/hào với Truyện riêng giải toàn Kinh; ông quy Kinh cho Văn Vương/Chu Công và Truyện cho Khổng Tử theo truyền thống. Dẫn nhập ở601 không phải tiết1.",
-      "citationIds": ["citation-pbc-he-tu-thuong-introductory-framing"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [601, 601],
+          "section": "introductory-framing — commentary"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-pbc-he-tu-thuong-introductory-framing"],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

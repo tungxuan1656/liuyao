@@ -1,39 +1,32 @@
 {
-  "schemaVersion": 1,
   "id": "term-combination-meets-opposition",
   "type": "term",
   "title": "Hợp xứ phùng xung",
   "aliases": ["Hợp gặp xung"],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["article-combination-opposition-turnarounds"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-combination-meets-opposition-definition",
-      "kind": "author-interpretation",
       "text": "Hợp xứ phùng xung gọi thế hợp gặp xung trong cách luận của mục 15. Nguồn xét ở cấp quẻ, tác động Nhật Nguyệt và hào động biến; ý tan sau thành cần đọc cùng mục tiêu của việc hỏi.",
-      "citationIds": [
-        "citation-bpct-ch5-combination-opposition-turnarounds",
-        "citation-bpct-ch6-combination-opposition-goal"
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [72, 72],
+          "section": "Mục 15 — Hợp xứ phùng xung, Xung trung phùng hợp",
+          "printedPages": ["60", "60"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [84, 84],
+          "section": "Câu 21 — mục tiêu thành hoặc tán",
+          "printedPages": ["70", "70"]
+        }
       ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       }
     }
-  ],
-  "relatedIds": ["article-combination-opposition-turnarounds"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-combination-opposition-turnarounds",
-      "citation-bpct-ch6-combination-opposition-goal"
-    ],
-    "note": "Đã đọc toàn bộ mục 15–16 PDF 72–73 và chú thích 8; đối chiếu câu 4 PDF 78, câu 21 PDF 84, câu 56 PDF 94, cùng câu hỏi 12–13 PDF 393–401 và chú thích. Xem ảnh các trang được chọn, kiểm tra nhãn trang in. Chỉ chọn điều kiện luận giải; chưa xác nhận chuyện ứng nghiệm hoặc có phê duyệt chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

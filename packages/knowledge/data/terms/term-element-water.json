@@ -1,29 +1,20 @@
 {
-  "schemaVersion": 1,
   "id": "term-element-water",
   "type": "term",
   "title": "Thủy",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-element-water-definition",
-      "kind": "structural-fact",
       "text": "Thủy là một trong năm hành dùng làm thuộc tính phân loại theo quy ước này.",
-      "citationIds": ["citation-bpct-p9-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [9, 9],
+          "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
+          "printedPages": ["3", "3"]
+        }
+      ]
     }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p9-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

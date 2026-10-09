@@ -1,54 +1,39 @@
-# feat-094 — Close all topic audits contradictions and exclusions
+# feat-094 — Resolve material knowledge gaps and contradictions
 
 ## Goal
 
-Close corpus-wide topic coverage and source-fidelity findings.
+Reconcile useful content and source differences across the knowledge library.
 
 ## Scope
 
-**Intended work:**
-
-- Source inventory, generated coverage, all quẻ/group ledgers, discrepancies, and exclusions.
+The existing knowledge records, useful source explanations, links, and visible gaps.
+Use focused content review under the [quality contract](../docs/product-specs/knowledge-quality.md).
 
 ## Non-goals
 
-New interpretation, calendar, or UI behavior.
+A certification system, predictive efficacy claims, or a new calculation ruleset.
 
 ## Acceptance
 
-- [ ] Foundations and trigrams.
-- [ ] Hexagrams and line commentary.
-- [ ] Casting and Liu Yao foundations.
-- [ ] Advanced Liu Yao.
-- [ ] Classical traditions and learning.
-- [ ] Every discrepancy, alternative reading, and exclusion.
-- [ ] Every assigned source unit and claim has a current accepted decision, or a specifically reviewed exclusion.
-- [ ] Feat-066 authoring closure and all required unit audits are complete for the same snapshot.
-- [ ] Report 64 quẻ, 384 positions, and at least 1,152 book-position cells; count extra author layers separately.
-- [ ] A separate AI review run rechecks source corrections under the [verification policy](../docs/product-specs/knowledge-quality.md#group-units-and-independent-evidence); preserve legitimate disagreements.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [ ] Check foundations, quẻ/hào, casting, Liu Yao topics, classical context, and learning articles.
+- [ ] Correct material contradictions and source-location errors without hiding legitimate author differences.
+- [ ] Resolve broken record/line links and identify genuinely missing explanations.
+- [ ] Describe remaining unavailable source material precisely; do not block unrelated supported content.
+- [ ] Relevant package checks and ./init.sh pass.
 
 ## Relevant docs
 
-[Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
-[model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
-[licensing](../LICENSING.md), [verification](../docs/development.md).
+[Content](../docs/product-specs/knowledge-content.md), [model](../docs/design-docs/knowledge-model.md),
+[quality](../docs/product-specs/knowledge-quality.md), [sources](../docs/references/book-sources.md).
 
 ## Plan
 
-1. Confirm dependencies and source boundaries.
-2. Review each unit, record supported decisions, and commit each coherent checkpoint.
-3. Verify all acceptance items and record the handoff.
-
-## Verify
-
-- `./init.sh`
-- `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
-- Confirm all assigned units and document routes.
+1. Select a coherent record/topic group and compare its explanations with relevant source passages.
+2. Correct material findings and check links and meaningful conditions.
+3. Record concise remaining gaps and the next action.
 
 ## Handoff
 
-- State: todo.
-- Evidence: Not executed.
+- State: todo; not activated.
 - Dependencies: See [feature index](../feature_index.json).
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
+- Next: Complete prerequisites and select this content pass when needed.

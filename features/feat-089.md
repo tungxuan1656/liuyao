@@ -1,4 +1,4 @@
-# feat-089 — Audit BPCT applications — Illness remedies and absent travellers
+# feat-089 — Review and improve BPCT applications — Illness remedies and absent travellers
 
 ## Goal
 
@@ -8,7 +8,7 @@ Record current evidence for every assigned review unit.
 
 **Intended work:**
 
-- Intended group ledgers under docs/reviews/knowledge/; enumerate every assigned inventory unit.
+- Review the assigned concepts, examples, and tables; record material content findings.
 
 ## Non-goals
 
@@ -21,7 +21,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] Chapter 25 — Y Dược: every passage, condition, example, and note.
 - [ ] Chapter 26 — Hành Nhân: every passage, condition, example, and note.
 - [ ] Preserve reported outcomes as attributed claims; reconcile reused rules and explicit exclusions.
-- [ ] Decisions have current hashes, exact locators, findings, and reviewer identity; rejected units stay open.
+- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -32,8 +32,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Create the complete unit checklist for this group.
-2. Review and commit each section/table checkpoint with current hashes and findings.
+1. Identify the useful explanations and tables in this group.
+2. Review each section/table and record its material content findings.
 3. Verify all unit decisions and close only after rejected units are repaired.
 
 ## Verify

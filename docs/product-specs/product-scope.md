@@ -53,7 +53,7 @@ The current runtime catalog is not fully audited against the supplied PDF editio
 ## Later phases
 
 **Intended reference expansion:** Released book commentary, topic articles, and learning content can extend local browsing and reading explanations.
-The [Library](knowledge-browser.md#intended-book-backed-expansion) and [reading result](reading-result.md#intended-book-reference-contexts) specifications own these planned flows.
+The [Library](knowledge-browser.md#book-backed-content) and [reading result](reading-result.md#intended-book-reference-contexts) specifications own these planned flows.
 This expansion adds source reference views. Automated interpretation and calendar-derived analysis retain their separate scope boundaries.
 
 Later work can add local reading history and backup, advanced Liu Yao analysis, calendar-derived facts, optional cloud services, and AI assistance.

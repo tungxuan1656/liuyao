@@ -1,57 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-month-break-conditions",
   "type": "article",
   "title": "Nguyệt phá và điều kiện còn tác dụng",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-month-break-conditions-moving-and-changed",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự không coi hào gặp Nguyệt phá là mất mọi tác dụng. Hào Phá phát động vẫn có thể sinh hoặc khắc hào khác; hào biến gặp Phá có thể sinh hoặc khắc hào đã biến ra nó.",
-      "citationIds": ["citation-bpct-ch5-month-break"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Phân biệt hào động với hào biến và giữ chiều tác động được nguồn nêu."]
-    },
-    {
-      "id": "article-month-break-conditions-later-conditions",
-      "kind": "author-interpretation",
-      "text": "Nguồn phân biệt đang Phá trong tháng với lúc qua tháng hoặc gặp trị nhật; hợp và điền thực cũng là điều kiện cần xét. Mốc năm, tháng, ngày hoặc giờ còn tùy khoảng gần xa của việc hỏi.",
-      "citationIds": ["citation-bpct-ch5-month-break"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Chỉ mô tả điều kiện luận truyền thống, chưa chọn mốc lịch hoặc bảo đảm kết quả của việc hỏi."
-      ]
-    },
-    {
-      "id": "article-month-break-conditions-adverse-combination",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự còn nêu trường hợp Chân Phá khi hào Phá an tĩnh lại Không, suy nhược và bị các nguồn động, Nguyệt, Nhật khắc hại. Việc có hào Phá không tự đồng nghĩa đã đủ tổ hợp bất lợi này.",
-      "citationIds": ["citation-bpct-ch5-month-break"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-month-break-conditions-role",
-      "kind": "author-interpretation",
-      "text": "Được sinh phò hoặc ra khỏi tình trạng Phá còn phải đặt theo vai của hào. Mục Nguyên–Kỵ phân biệt giúp Dụng với giúp Kỵ; hỗ trợ Kỵ có thể làm hại Dụng thay vì tạo lời tốt.",
-      "citationIds": ["citation-bpct-ch5-origin", "citation-bpct-ch5-adverse"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Không đồng nhất còn khả năng tác động với kết quả có lợi cho người hỏi."]
-    }
-  ],
   "relatedIds": [
     "term-month-break",
     "term-true-month-break",
@@ -59,20 +10,76 @@
     "term-useful-spirit",
     "term-adverse-spirit"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch5-month-break",
-      "citation-bpct-ch5-origin",
-      "citation-bpct-ch5-adverse"
-    ],
-    "note": "Đã đọc và xem ảnh mục 9 PDF 70, bảng chi tháng PDF 41, chú thích 1 PDF 68 và chú thích 9 PDF 462. Chú thích 7 PDF 70 gọi Dần là điền thực cho hào Thân còn mâu thuẫn với định nghĩa trị nhật; không phát hành ví dụ ấy hoặc thời điểm ứng nghiệm. Các điều kiện thân bài được giữ riêng với chú thích người dịch; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Vương Hồng Tự không coi hào gặp Nguyệt phá là mất mọi tác dụng. Hào Phá phát động vẫn có thể sinh hoặc khắc hào khác; hào biến gặp Phá có thể sinh hoặc khắc hào đã biến ra nó.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 9 — Nguyệt phá",
+          "printedPages": ["58", "58"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Phân biệt hào động với hào biến và giữ chiều tác động được nguồn nêu."
+    },
+    {
+      "text": "Nguồn phân biệt đang Phá trong tháng với lúc qua tháng hoặc gặp trị nhật; hợp và điền thực cũng là điều kiện cần xét. Mốc năm, tháng, ngày hoặc giờ còn tùy khoảng gần xa của việc hỏi.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 9 — Nguyệt phá",
+          "printedPages": ["58", "58"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Chỉ mô tả điều kiện luận truyền thống, chưa chọn mốc lịch hoặc bảo đảm kết quả của việc hỏi."
+    },
+    {
+      "text": "Vương Hồng Tự còn nêu trường hợp Chân Phá khi hào Phá an tĩnh lại Không, suy nhược và bị các nguồn động, Nguyệt, Nhật khắc hại. Việc có hào Phá không tự đồng nghĩa đã đủ tổ hợp bất lợi này.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 9 — Nguyệt phá",
+          "printedPages": ["58", "58"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "text": "Được sinh phò hoặc ra khỏi tình trạng Phá còn phải đặt theo vai của hào. Mục Nguyên–Kỵ phân biệt giúp Dụng với giúp Kỵ; hỗ trợ Kỵ có thể làm hại Dụng thay vì tạo lời tốt.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Nguyên thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [68, 68],
+          "section": "Mục 4 — Kỵ thần và các điều kiện",
+          "printedPages": ["56", "56"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không đồng nhất còn khả năng tác động với kết quả có lợi cho người hỏi."
+    }
+  ]
 }

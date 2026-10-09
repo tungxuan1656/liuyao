@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react';
+import { knowledgeAssets } from './knowledge-assets';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
@@ -25,6 +26,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    knowledgeAssets(),
     VitePWA({
       registerType: 'prompt',
       injectRegister: null,
@@ -57,9 +59,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Precache the measured 12,641,410-byte integrated asset with 990,078 bytes headroom.
-        maximumFileSizeToCacheInBytes: 13 * 1024 * 1024,
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2,json}'],
         cleanupOutdatedCaches: true,
         clientsClaim: false,
         skipWaiting: false,

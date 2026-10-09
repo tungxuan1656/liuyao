@@ -1,93 +1,126 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-30",
   "type": "hexagram",
   "title": "Thuần Ly",
   "aliases": ["Ly", "Li", "Bát Thuần Ly", "Bát Thuần Li"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-fire"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-30-structure",
-      "kind": "structural-fact",
       "text": "Thuần Ly có ngoại quái Ly và nội quái Ly. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q30-overview-nhl",
-        "citation-pbc-q30-overview-pbc",
-        "citation-ntt-q30-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [227, 228],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["227", "228"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [302, 305],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [496, 499],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-30-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giảng Ly vừa là nương tựa vừa là sáng. Cần nương điều đúng và giữ sự mềm thuận trong sáng suốt; hình ảnh bò cái răn bớt sự xét nét quá gắt, không lấy sáng làm lý do áp người.",
-      "citationIds": ["citation-nhl-q30-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [227, 228],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["227", "228"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-30-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu xem sự sáng phải nương nơi chính và được nuôi bằng đức thuận. Trung và chính được bàn theo riêng hoàn cảnh quẻ Ly, không biến lời giảng hào năm thành quy tắc đổi tính âm dương của vị trí.",
-      "citationIds": ["citation-pbc-q30-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [302, 305],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-30-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di đọc Ly theo sự gắn nương và sáng rõ, cần chọn nơi đáng nương và nuôi đức mềm thuận. Hai lần sáng còn gợi sự tiếp nối: trong hình ảnh trị nước cổ, người sau nối việc soi sáng của người trước.",
-      "citationIds": ["citation-ntt-q30-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [496, 499],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-fire"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yin", "yang", "yang", "yin", "yang"],
-    "kingWenNumber": 30,
-    "upperTrigramId": "trigram-fire",
-    "lowerTrigramId": "trigram-fire",
-    "claimIds": ["hexagram-30-structure"]
-  },
+  "kingWenNumber": 30,
+  "upperTrigramId": "trigram-fire",
+  "lowerTrigramId": "trigram-fire",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-30-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào đầu cương mà mới vào việc, dễ đi gấp và lúng túng. Kính cẩn và thận trọng giúp tránh lỗi lúc chưa đủ kinh nghiệm.",
-          "citationIds": ["citation-nhl-q30-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [228, 228],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["228", "228"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-30-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc dấu chân rối theo người mạnh ở lúc mới bước vào công việc, chưa biết nhịp thích hợp. Tự giữ bằng sự cẩn trọng là điều kiện của lời không lỗi.",
-          "citationIds": ["citation-pbc-q30-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [305, 305],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-30-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào đầu muốn tiến lên quá sớm, dù chưa đi xa đã có sự xáo động. Biết giữ phận hiện tại và kính cẩn trong hành động giúp tránh lỗi do nóng nảy.",
-          "citationIds": ["citation-ntt-q30-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [499, 500],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -99,30 +132,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-30-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy màu vàng ở hào hai làm hình ảnh sáng mà vừa phải, không quá gắt. Nhu trung chính là trọng tâm của lời tốt lớn.",
-          "citationIds": ["citation-nhl-q30-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [228, 228],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["228", "228"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-30-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giảng màu vàng theo đức trung, đi cùng tính nhu và sự sáng của Ly. Hào hai được đọc là sáng đúng mức và đúng chỗ; lời tốt phụ thuộc các phẩm chất ấy.",
-          "citationIds": ["citation-pbc-q30-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [305, 306],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-30-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho màu vàng biểu thị mức giữa, hào hai nhu mà trung chính nên có sự sáng tốt. Ông còn đặt hai hào giữa trong sự đồng đức, không đổi hai hào âm thành một cặp chính ứng trái tính.",
-          "citationIds": ["citation-ntt-q30-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [500, 501],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -134,40 +180,57 @@
       "position": 3,
       "polarity": "yang",
       "label": "Cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-30-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc buổi chiều theo sự sáng tới lúc suy: vui không đúng lúc hoặc chỉ than thở đều không thích hợp. Ông cũng dẫn cách Chu Hy hiểu việc biết yên với thời già, nhưng giữ hai cách giải riêng.",
-          "citationIds": ["citation-nhl-q30-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [228, 228],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["228", "228"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-30-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào ba ở lúc ánh sáng sắp hết, cần biết hạn và giữ tinh thần phù hợp. Chỉ vui bừa hoặc chỉ than buồn đều thiếu sự tự chủ trước chuyển đổi ấy.",
-          "citationIds": ["citation-pbc-q30-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [306, 307],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-30-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt ánh sáng xế chiều trong cảnh người ở ngôi cao tới lúc cuối. Cần biết nghỉ và lo người nối việc; không chấp nhận sự chuyển thời thì chỉ còn than tuổi già và bất an.",
-          "citationIds": ["citation-ntt-q30-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [501, 502],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-30-line-3-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy xem buổi chiều theo tuổi già, nên biết vui với sinh hoạt thường và yên với phần thời của mình. Cách đọc này giữ riêng với nghĩa vui sai lúc hoặc than sai lúc của hai tác giả Việt Nam.",
-          "citationIds": ["citation-ntt-q30-line-3-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [501, 501],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -179,43 +242,50 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-30-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào bốn quá cương, muốn tiến gấp và lấn người ở ngôi năm. Lửa bùng rồi tắt cùng hình ảnh bị bỏ nói sự thiếu điều hòa và hậu quả của hành động đột ngột.",
-          "citationIds": ["citation-nhl-q30-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [228, 229],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["228", "229"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
-          ]
+          "condition": "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-30-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào bốn theo người mạnh quá mức mà thiếu trung chính, nóng nảy ép ngôi trên. Hình ảnh cháy và bị bỏ là lời răn trong bối cảnh quyền lực cổ.",
-          "citationIds": ["citation-pbc-q30-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [307, 307],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
-          ]
+          "condition": "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-30-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào bốn ở người cương quá, bốc lên đột ngột và lấn người mềm ở ngôi cao. Sự dữ dội ấy không được chấp nhận trong cách giảng đạo kế tiếp của quẻ.",
-          "citationIds": ["citation-ntt-q30-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [502, 503],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
-          ]
+          "condition": "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
         }
       ]
     },
@@ -223,30 +293,43 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-30-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào năm mềm ở ngôi cao, biết khó và lo trước sức mạnh chung quanh. Nỗi lo thúc sự giữ gìn và sửa mình, là điều kiện được tốt chứ không phải khóc tự đem lại may.",
-          "citationIds": ["citation-nhl-q30-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [229, 229],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["229", "229"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-30-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào năm có đức trung nhưng thiếu sức, lại đứng giữa những người mạnh. Biết nguy, suy nghĩ kỹ và tự giữ giúp giảm sai trong trách nhiệm ở ngôi cao.",
-          "citationIds": ["citation-pbc-q30-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [307, 308],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-30-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho người mềm ở ngôi tôn cần hiểu khó khăn của mình, lo sợ và giữ chính. Đức sáng làm biết phải dè dặt, khác với yên tâm chỉ vì đã có vị cao.",
-          "citationIds": ["citation-ntt-q30-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [503, 504],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -258,114 +341,122 @@
       "position": 6,
       "polarity": "yang",
       "label": "Thượng cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-30-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt hào cuối trong việc ra quân sửa điều sai của nhà vua, phân biệt cách xử kẻ đầu sỏ với kẻ theo. Lời không lỗi gắn với sự biết phân biệt ấy trong hệ thống xử phạt cổ.",
-          "citationIds": ["citation-nhl-q30-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [229, 229],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["229", "229"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
-          ]
+          "condition": "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-30-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào cuối theo việc trừ người chủ gây hại, không truy hết những người bị ép đi theo. Sáng suốt ở chỗ giới hạn việc xử, không dùng sức mạnh tràn lan.",
-          "citationIds": ["citation-pbc-q30-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [308, 309],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
-          ]
+          "condition": "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-30-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào cuối có sự sáng và quyết đoán giúp chỉnh việc nước, nhưng phải phân biệt người chủ gây ác với người bị lây hoặc đi theo. Không đuổi trị hết mọi người là điều kiện của lời không lỗi.",
-          "citationIds": ["citation-ntt-q30-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [504, 505],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
-          ]
+          "condition": "Giữ hình ảnh dùng quân, hình phạt và quyền lực trong bối cảnh chú giải cổ, không chuyển thành chỉ dẫn gây hại hoặc xử phạt người hiện đại."
         }
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-pbc-ly-second-polarity",
-      "status": "resolved",
-      "description": "PBC PDF 306 trong lời giảng hào hai dùng Cửu Nhị, khác Lục Nhị ở đầu hào và cùng đoạn.",
-      "citationIds": [
-        "citation-pbc-q30-line-2-pbc",
-        "citation-nhl-q30-line-2-nhl",
-        "citation-ntt-q30-line-2-ntt"
-      ],
-      "resolution": "Ảnh xác nhận chữ Cửu. Hình quẻ và ba sách đều cho hào hai âm; giữ Lục nhị, không đổi đức nhu trung thành hào dương."
+      "text": "PBC PDF 306 trong lời giảng hào hai dùng Cửu Nhị, khác Lục Nhị ở đầu hào và cùng đoạn. Ảnh xác nhận chữ Cửu. Hình quẻ và ba sách đều cho hào hai âm; giữ Lục nhị, không đổi đức nhu trung thành hào dương.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [305, 306],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [228, 228],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["228", "228"]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [500, 501],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-ly-second-glyph",
-      "status": "resolved",
-      "description": "NTT PDF 500 dòng Hán đầu hào hai ghi Lục nhất, khác dịch âm Lục Nhị và dịch nghĩa Hào Sáu Hai.",
-      "citationIds": [
-        "citation-ntt-q30-line-2-ntt",
-        "citation-nhl-q30-line-2-nhl",
-        "citation-pbc-q30-line-2-pbc"
-      ],
-      "resolution": "Ảnh xác nhận chữ nhất ở dòng Hán. Giữ vị trí hai theo bản dịch, phần giảng và hai sách khác; không tạo vị trí hào mới từ chữ chép khác."
+      "text": "NTT PDF 500 dòng Hán đầu hào hai ghi Lục nhất, khác dịch âm Lục Nhị và dịch nghĩa Hào Sáu Hai. Ảnh xác nhận chữ nhất ở dòng Hán. Giữ vị trí hai theo bản dịch, phần giảng và hai sách khác; không tạo vị trí hào mới từ chữ chép khác.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [500, 501],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [228, 228],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["228", "228"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [305, 306],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-ly-final-reference",
-      "status": "resolved",
-      "description": "NTT PDF 505 phần Trình Di dưới Tượng hào cuối gọi đức của Chín Năm, trong khi hào năm Ly là âm.",
-      "citationIds": [
-        "citation-ntt-q30-line-6-ntt",
-        "citation-nhl-q30-line-6-nhl",
-        "citation-pbc-q30-line-6-pbc",
-        "citation-ntt-q30-line-5-ntt"
-      ],
-      "resolution": "Ảnh xác nhận nhãn Chín Năm. Tượng và toàn đoạn đang bàn hào dương trên cùng, khớp hai sách khác; giữ nhận định ở hào sáu, không gán nó cho Lục ngũ."
+      "text": "NTT PDF 505 phần Trình Di dưới Tượng hào cuối gọi đức của Chín Năm, trong khi hào năm Ly là âm. Ảnh xác nhận nhãn Chín Năm. Tượng và toàn đoạn đang bàn hào dương trên cùng, khớp hai sách khác; giữ nhận định ở hào sáu, không gán nó cho Lục ngũ.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [504, 505],
+          "section": "Hào 6 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [229, 229],
+          "section": "Hào 6 — diễn giải",
+          "printedPages": ["229", "229"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [308, 309],
+          "section": "Hào 6 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [503, 504],
+          "section": "Hào 5 — diễn giải"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q30-overview-nhl",
-      "citation-pbc-q30-overview-pbc",
-      "citation-ntt-q30-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-q30-line-1-nhl",
-      "citation-pbc-q30-line-1-pbc",
-      "citation-ntt-q30-line-1-ntt",
-      "citation-nhl-q30-line-2-nhl",
-      "citation-pbc-q30-line-2-pbc",
-      "citation-ntt-q30-line-2-ntt",
-      "citation-nhl-q30-line-3-nhl",
-      "citation-pbc-q30-line-3-pbc",
-      "citation-ntt-q30-line-3-ntt",
-      "citation-ntt-q30-line-3-chu-hy",
-      "citation-nhl-q30-line-4-nhl",
-      "citation-pbc-q30-line-4-pbc",
-      "citation-ntt-q30-line-4-ntt",
-      "citation-nhl-q30-line-5-nhl",
-      "citation-pbc-q30-line-5-pbc",
-      "citation-ntt-q30-line-5-ntt",
-      "citation-nhl-q30-line-6-nhl",
-      "citation-pbc-q30-line-6-pbc",
-      "citation-ntt-q30-line-6-ntt"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các trang có lỗi được ghi nhận. Cách đọc khác nhau được giữ theo tác giả. Nhãn trang NHL đã kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận các chuyện lịch sử hoặc khả năng dự báo. PDF 499 có hai đoạn liên tiếp cùng nhãn Trình Di ở hào đầu. Chỉ dùng đoạn đầu có nhãn rõ; không đổi đoạn sau thành Chu Hy khi chưa kiểm tra bản nền. Hai hào giữa đều âm, đồng đức trong lời giảng không bị đổi thành chính ứng trái tính."
-  }
+  ]
 }

@@ -1,103 +1,140 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-33",
   "type": "hexagram",
   "title": "Thiên Sơn Độn",
   "aliases": ["Độn"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-mountain", "trigram-heaven"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-33-structure",
-      "kind": "structural-fact",
       "text": "Thiên Sơn Độn có ngoại quái Càn và nội quái Cấn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q33-overview-nhl",
-        "citation-pbc-q33-overview-pbc",
-        "citation-ntt-q33-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [236, 236],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["236", "236"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [329, 331],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [534, 538],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-33-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê đọc Độn theo việc rút lui đúng lúc để tránh thế âm đang tiến. Bốn hào dương còn đủ sức nên vẫn có thể làm việc nhỏ hợp lẽ; rút lui không đồng nghĩa từ bỏ mọi việc.",
-      "citationIds": ["citation-nhl-q33-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [236, 236],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["236", "236"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-33-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu cho lui để giữ đạo cũng là cách làm việc theo thời. Khi thế đối nghịch mới lớn, việc nhỏ còn có thể làm nếu giữ chính; không biến lời quẻ thành yêu cầu luôn đi hoặc luôn ở.",
-      "citationIds": ["citation-pbc-q33-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [329, 331],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-33-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di đặt việc lui ở giữ đạo khi thế âm tăng, tránh dây dưa hoặc gây thêm sự chống đối. Việc nhỏ còn có thể sửa đúng lúc; giữ khoảng cách có phẩm chất khác với thái độ khinh ghét người.",
-      "citationIds": ["citation-ntt-q33-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [534, 538],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-33-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy đọc chữ tiểu theo người thuộc phía âm đang tiến, được răn giữ chính và không ép phía dương. Cách đọc này khác việc nhỏ trong ba lời giảng còn lại; không gộp hai đối tượng của lời quẻ.",
-      "citationIds": ["citation-ntt-q33-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [535, 535],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-mountain", "trigram-heaven"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yang", "yang", "yang", "yang"],
-    "kingWenNumber": 33,
-    "upperTrigramId": "trigram-heaven",
-    "lowerTrigramId": "trigram-mountain",
-    "claimIds": ["hexagram-33-structure"]
-  },
+  "kingWenNumber": 33,
+  "upperTrigramId": "trigram-heaven",
+  "lowerTrigramId": "trigram-mountain",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-33-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào đầu ở cuối đoàn lui, chất yếu nên dễ gặp nguy nếu còn tiến. Không tìm chỗ làm tiếp là cách tránh khó khăn trong thời phải rút.",
-          "citationIds": ["citation-nhl-q33-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [237, 237],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["237", "237"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-33-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào đầu ở phía sau trong thời lui, sức chưa đủ để tự đi xa. Ẩn và đợi lúc thích hợp giúp tránh nguy do cố tiến.",
-          "citationIds": ["citation-pbc-q33-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [331, 332],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-33-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải đuôi của cuộc lui theo người đã ở sau mà còn đi tiếp thì gặp nguy. Không tiến trong tình thế ấy là điều kiện tránh tai vạ, không phải cấm mọi hành động về sau.",
-          "citationIds": ["citation-ntt-q33-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [539, 539],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -109,40 +146,57 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-33-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy da bò vàng làm hình ảnh mối gắn bó chắc giữa hào hai nhu trung chính và hào năm cương trung chính. Hai và năm còn muốn giữ nhau, khác việc vội rời quan hệ ấy.",
-          "citationIds": ["citation-nhl-q33-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [237, 237],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["237", "237"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-33-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc da bò vàng theo đạo trung thuận khiến quan hệ hai và năm bền chặt. Hào hai giữ sự gắn bó chính đáng trong thời lui, không chỉ do vật buộc bên ngoài.",
-          "citationIds": ["citation-pbc-q33-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [332, 332],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-33-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào hai và năm cùng trung chính nên lòng và chí gắn chặt. Màu vàng và da bò biểu thị đức trung thuận bền, khiến mối giữ nhau khó bị tháo.",
-          "citationIds": ["citation-ntt-q33-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [539, 540],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-33-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc vật buộc chắc theo ý chí rút lui được giữ vững. Hào hai mềm trung thuận nên tự giữ chắc việc lui; cách đọc này khác mối giữ nhau với hào năm của Trình Di và hai tác giả Việt Nam.",
-          "citationIds": ["citation-ntt-q33-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [539, 539],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -154,43 +208,50 @@
       "position": 3,
       "polarity": "yang",
       "label": "Cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-33-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào ba vướng tình với hào hai nên không thể lui nhanh. Tình riêng có thể hợp với việc chăm người phụ thuộc trong bối cảnh gia đình cổ, nhưng không đủ để gánh việc lớn.",
-          "citationIds": ["citation-nhl-q33-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [237, 237],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["237", "237"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Vai thần thiếp, sự mỏi và bệnh thuộc phép ví của chú giải gia đình và việc công cổ; không quy định quan hệ phụ thuộc hiện đại hoặc chẩn đoán bệnh."
-          ]
+          "condition": "Vai thần thiếp, sự mỏi và bệnh thuộc phép ví của chú giải gia đình và việc công cổ; không quy định quan hệ phụ thuộc hiện đại hoặc chẩn đoán bệnh."
         },
         {
-          "id": "hexagram-33-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt nguy của hào ba ở sự quyến luyến làm mất tự do rút lui. Cách giữ người gần chỉ có ích trong việc nhỏ theo vai phụ thuộc cổ, khác năng lực đảm đương việc lớn.",
-          "citationIds": ["citation-pbc-q33-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [332, 333],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Vai thần thiếp, sự mỏi và bệnh thuộc phép ví của chú giải gia đình và việc công cổ; không quy định quan hệ phụ thuộc hiện đại hoặc chẩn đoán bệnh."
-          ]
+          "condition": "Vai thần thiếp, sự mỏi và bệnh thuộc phép ví của chú giải gia đình và việc công cổ; không quy định quan hệ phụ thuộc hiện đại hoặc chẩn đoán bệnh."
         },
         {
-          "id": "hexagram-33-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho sự vướng víu làm hào ba mỏi và nguy khi cần lui. Lòng yêu riêng có thể dùng trong việc nuôi người phụ thuộc theo quan niệm cổ, nhưng không thể đảm đương việc lớn.",
-          "citationIds": ["citation-ntt-q33-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [540, 541],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Vai thần thiếp, sự mỏi và bệnh thuộc phép ví của chú giải gia đình và việc công cổ; không quy định quan hệ phụ thuộc hiện đại hoặc chẩn đoán bệnh."
-          ]
+          "condition": "Vai thần thiếp, sự mỏi và bệnh thuộc phép ví của chú giải gia đình và việc công cổ; không quy định quan hệ phụ thuộc hiện đại hoặc chẩn đoán bệnh."
         }
       ]
     },
@@ -198,30 +259,43 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-33-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào bốn dù có tình với hào đầu vẫn cần lui theo nghĩa phải làm. Biết đặt nghĩa trên sự quyến luyến là điều kiện lời tốt, không phải bỏ mọi quan hệ riêng.",
-          "citationIds": ["citation-nhl-q33-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [237, 237],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["237", "237"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-33-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào bốn theo người có thể cắt sự ham thích khi tình thế cần lui. Người chỉ theo tình riêng khó làm được; sự phân biệt đặt ở cách xử việc của từng người.",
-          "citationIds": ["citation-pbc-q33-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [334, 334],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-33-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào bốn có điều ưa thích nhưng biết theo nghĩa để lui. Không bị tình riêng giữ lại là cách tự xử được khen trong hoàn cảnh quẻ.",
-          "citationIds": ["citation-ntt-q33-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [541, 542],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -233,30 +307,43 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-33-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào năm trung chính, ứng hào hai cũng trung chính nên không bị tư tình làm vướng. Lui khi nên lui và giữ đúng là điều kiện của cuộc lui tốt đẹp.",
-          "citationIds": ["citation-nhl-q33-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [238, 238],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["238", "238"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-33-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào năm có quan hệ chính với hào hai nhưng không vì thân tình mà bỏ việc đáng làm. Giữ chính và xét thời giúp việc lui phù hợp đạo.",
-          "citationIds": ["citation-pbc-q33-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [334, 335],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-33-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào năm theo cách ở hoặc đi đều trung chính. Hào hai và năm có sự ứng nhau nhưng không vướng riêng, nên việc lui được gọi tốt đẹp.",
-          "citationIds": ["citation-ntt-q33-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [542, 543],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -268,30 +355,43 @@
       "position": 6,
       "polarity": "yang",
       "label": "Thượng cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-33-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt hào cuối ở xa phía âm, không có chính ứng níu kéo nên lui rộng và thong thả. Không bị ràng buộc là bối cảnh của lời không gì bất lợi.",
-          "citationIds": ["citation-nhl-q33-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [238, 238],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["238", "238"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-33-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào cuối đã ở ngoài sự quyến luyến và không còn chỗ bị vướng. Cuộc lui ung dung được đặt ở sự tự do ấy, khác lời hứa mọi việc của quẻ đều thuận.",
-          "citationIds": ["citation-pbc-q33-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [335, 336],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-33-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào cuối cứng và ở ngoài, dưới không có ứng nên không bị ràng buộc. Lui rộng rãi, lòng không nghi ngại, là nghĩa cuộc lui thuận trong lời hào.",
-          "citationIds": ["citation-ntt-q33-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [543, 544],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -300,63 +400,53 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-ntt-don-third-negation",
-      "status": "resolved",
-      "description": "NTT PDF 541 lời Trình Di dưới Tượng hào ba ghi có thể đương nổi việc lớn, trái lời Tượng không thể và phần giải trước.",
-      "citationIds": [
-        "citation-ntt-q33-line-3-ntt",
-        "citation-nhl-q33-line-3-nhl",
-        "citation-pbc-q33-line-3-pbc"
-      ],
-      "resolution": "Ảnh xác nhận chỗ thiếu phủ định. Giữ nghĩa không thể gánh việc lớn theo lời Tượng, phần giảng liền trước và hai sách khác; không đọc tình riêng ở hào ba thành năng lực việc lớn."
+      "text": "NTT PDF 541 lời Trình Di dưới Tượng hào ba ghi có thể đương nổi việc lớn, trái lời Tượng không thể và phần giải trước. Ảnh xác nhận chỗ thiếu phủ định. Giữ nghĩa không thể gánh việc lớn theo lời Tượng, phần giảng liền trước và hai sách khác; không đọc tình riêng ở hào ba thành năng lực việc lớn.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [540, 541],
+          "section": "Hào 3 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [237, 237],
+          "section": "Hào 3 — diễn giải",
+          "printedPages": ["237", "237"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [332, 333],
+          "section": "Hào 3 — diễn giải"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-don-second-label",
-      "status": "resolved",
-      "description": "NTT PDF 543 Trình Di gọi người ứng với hào năm là Chín Hai, khác Lục Nhị và hình quẻ.",
-      "citationIds": [
-        "citation-ntt-q33-line-5-ntt",
-        "citation-ntt-q33-line-2-ntt",
-        "citation-nhl-q33-line-2-nhl",
-        "citation-pbc-q33-line-2-pbc"
-      ],
-      "resolution": "Ảnh xác nhận nhãn Chín Hai. Hào hai là âm ở cả ba hình quẻ và đầu hào; giữ Lục nhị, không đổi chính ứng hai và năm."
+      "text": "NTT PDF 543 Trình Di gọi người ứng với hào năm là Chín Hai, khác Lục Nhị và hình quẻ. Ảnh xác nhận nhãn Chín Hai. Hào hai là âm ở cả ba hình quẻ và đầu hào; giữ Lục nhị, không đổi chính ứng hai và năm.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [542, 543],
+          "section": "Hào 5 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [539, 540],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [237, 237],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["237", "237"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [332, 332],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q33-overview-nhl",
-      "citation-pbc-q33-overview-pbc",
-      "citation-ntt-q33-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q33-overview-chu-hy",
-      "citation-nhl-q33-line-1-nhl",
-      "citation-pbc-q33-line-1-pbc",
-      "citation-ntt-q33-line-1-ntt",
-      "citation-nhl-q33-line-2-nhl",
-      "citation-pbc-q33-line-2-pbc",
-      "citation-ntt-q33-line-2-ntt",
-      "citation-ntt-q33-line-2-chu-hy",
-      "citation-nhl-q33-line-3-nhl",
-      "citation-pbc-q33-line-3-pbc",
-      "citation-ntt-q33-line-3-ntt",
-      "citation-nhl-q33-line-4-nhl",
-      "citation-pbc-q33-line-4-pbc",
-      "citation-ntt-q33-line-4-ntt",
-      "citation-nhl-q33-line-5-nhl",
-      "citation-pbc-q33-line-5-pbc",
-      "citation-ntt-q33-line-5-ntt",
-      "citation-nhl-q33-line-6-nhl",
-      "citation-pbc-q33-line-6-pbc",
-      "citation-ntt-q33-line-6-ntt"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Cách đọc khác nhau giữ theo tác giả. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận chuyện lịch sử hoặc khả năng dự báo. Đoạn đầu hào một trong NTT PDF 538 không có nhãn tác giả; chỉ chọn phần Trình Di ghi rõ dưới Tượng ở PDF 539. Tháng của quẻ khác giữa NHL và hai sách khác không được nhập làm quy tắc lịch."
-  }
+  ]
 }

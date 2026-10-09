@@ -1,64 +1,44 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-ha-11",
   "type": "article",
   "title": "NHL — Hệ Từ Hạ, chương 11",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-ha-11-nhl-he-tu-ha-11-section-01-original-reading",
-      "kind": "author-interpretation",
       "text": "Độc tiết về Dịch hưng cuối Ân/thịnh Chu,Văn Vương/Trụ,nguy/bình,dị/khuynh và chung thủy/vô cữu.",
-      "citationIds": ["citation-nhl-he-tu-ha-11-section-01-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [385, 385],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["385", "385"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-11-nhl-he-tu-ha-11-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch thành câu hỏi nguồn gốc và đạo lo từ đầu/cuối; chữ hưng được hiểu có Dịch trước mà tới Văn Vương thịnh lên,không chứng niên đại.",
-      "citationIds": ["citation-nhl-he-tu-ha-11-section-01-translation"],
+      "text": "NHL dịch thành câu hỏi nguồn gốc và đạo lo từ đầu/cuối; chữ hưng được hiểu có Dịch trước mà tới Văn Vương thịnh lên,không chứng niên đại.\n\nNHL cho hưng ngầm có Dịch từ Phục Hi trước,Văn Vương làm thịnh,nguy là vụ giam Dữu Lý; PBC645 bản đọc hung nhưng giải hưng,chưa sửa source.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [385, 385],
+          "section": "section-01-translation — translation",
+          "printedPages": ["385", "385"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [385, 385],
+          "section": "hung-and-origin-note — note",
+          "printedPages": ["385", "385"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-11-nhl-he-tu-ha-11-hung-and-origin-note",
-      "kind": "author-interpretation",
-      "text": "NHL cho hưng ngầm có Dịch từ Phục Hi trước,Văn Vương làm thịnh,nguy là vụ giam Dữu Lý; PBC645 bản đọc hung nhưng giải hưng,chưa sửa source.",
-      "citationIds": ["citation-nhl-he-tu-ha-11-hung-and-origin-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-ha-11-section-01-original-reading",
-      "citation-nhl-he-tu-ha-11-section-01-translation",
-      "citation-nhl-he-tu-ha-11-hung-and-origin-note"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

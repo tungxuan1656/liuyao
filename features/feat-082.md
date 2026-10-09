@@ -1,16 +1,16 @@
-# feat-082 — Audit quẻ 57–60 and all twenty-four hào
+# feat-082 — Review and improve quẻ 57–60 and all twenty-four hào
 
 ## Goal
 
-Accept or reject each quẻ and each position separately.
+Improve each quẻ and position as readable source-backed knowledge.
 
 ## Scope
 
 **Intended work:**
 
 - 57 Thuần Tốn; 58 Thuần Đoài; 59 Phong Thủy Hoán; 60 Thủy Trạch Tiết.
-- Each line checkbox requires NHL/PBC/NTT cells and all actual commentator/translator layers.
-- Intended ledgers: docs/reviews/knowledge/hexagram-XX.md, one per quẻ.
+- Each line checkbox requires a useful explanation with relevant sources and meaningful author differences.
+- Use a concise content checklist; follow the simplified knowledge model.
 
 ## Non-goals
 
@@ -44,7 +44,7 @@ New interpretation, calendar, or UI behavior.
 - [ ] 60 · Thượng (6).
 - [ ] All four names, aliases, structures, overviews, Thoán/Tượng, notes, and author layers pass.
 - [ ] Inspect full passages/images; review each source error and exclusion.
-- [ ] Decisions have current hashes, exact locators, findings, and reviewer identity; rejected units stay open.
+- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -55,8 +55,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Review and commit one quẻ ledger at a time.
-2. Repair rejected units and recheck affected evidence.
+1. Review and improve one quẻ at a time.
+2. Repair material content findings and check affected source passages.
 3. Verify all twenty-four positions before closing the feature.
 
 ## Verify

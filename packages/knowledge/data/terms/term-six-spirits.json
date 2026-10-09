@@ -1,29 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "term-six-spirits",
   "type": "term",
   "title": "Lục thú",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "term-six-spirits-names",
-      "kind": "structural-fact",
-      "text": "Lục thú gồm Thanh Long, Chu Tước, Câu Trần, Đằng Xà, Bạch Hổ và Huyền Vũ.",
-      "citationIds": ["citation-bpct-ch1-six-spirits-names", "citation-bpct-ch5-six-spirits"]
-    },
-    {
-      "id": "term-six-spirits-role",
-      "kind": "author-interpretation",
-      "text": "Trong chú giải Hoàng Kim Sách, Vương Hồng Tự đặt Lục thú ở vai gợi tính tình và hình trạng. Việc tốt xấu, được mất trong cách luận ấy lấy sinh khắc của Lục thân làm chính.",
-      "citationIds": ["citation-bpct-ch6-six-spirits-context"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Không lấy riêng tên một Lục thú để kết luận tốt xấu."]
-    }
-  ],
   "relatedIds": [
     "term-six-relative",
     "term-useful-spirit",
@@ -35,20 +14,40 @@
     "term-spirit-baihu",
     "term-spirit-xuanwu"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch1-six-spirits-names",
-      "citation-bpct-ch5-six-spirits",
-      "citation-bpct-ch6-six-spirits-context"
-    ],
-    "note": "Đã đọc Chương 5, mục 5–7 cùng các đoạn liên quan; đối chiếu ảnh bảng Phi–Phục ở PDF 49–50 và lời chú giải Lục thú ở PDF 98–99. Diễn giải có điều kiện được giữ theo lớp tác giả. Đây là phần kiến thức mô tả được chọn, không phải luận đoán tự động; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Lục thú gồm Thanh Long, Chu Tước, Câu Trần, Đằng Xà, Bạch Hổ và Huyền Vũ.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [15, 15],
+          "section": "XIV — Lục thú ca",
+          "printedPages": ["9", "9"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ bảy — Luận về Lục thú",
+          "printedPages": ["57", "57"]
+        }
+      ]
+    },
+    {
+      "text": "Trong chú giải Hoàng Kim Sách, Vương Hồng Tự đặt Lục thú ở vai gợi tính tình và hình trạng. Việc tốt xấu, được mất trong cách luận ấy lấy sinh khắc của Lục thân làm chính.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [98, 99],
+          "section": "65 — Chú giải sinh khắc và vai Lục thú",
+          "printedPages": ["84", "85"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không lấy riêng tên một Lục thú để kết luận tốt xấu."
+    }
+  ]
 }

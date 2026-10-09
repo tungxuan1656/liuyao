@@ -1,93 +1,126 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-13",
   "type": "hexagram",
   "title": "Thiên Hỏa Đồng Nhân",
   "aliases": ["Đồng Nhân"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-fire", "trigram-heaven"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-13-structure",
-      "kind": "structural-fact",
       "text": "Thiên Hỏa Đồng Nhân có ngoại quái Càn và nội quái Ly. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q13-overview-nhl",
-        "citation-pbc-q13-overview-pbc",
-        "citation-ntt-q13-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [176, 176],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["176", "176"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [163, 166],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [284, 289],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-13-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giải Đồng Nhân theo việc cùng người trên phạm vi rộng, vượt khỏi họ hàng và phe riêng. Sáng suốt bên trong, mạnh mẽ bên ngoài và biết phân biệt khả năng của từng người giúp tạo sự hòa hợp.",
-      "citationIds": ["citation-nhl-q13-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [176, 176],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["176", "176"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-13-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu đặt Đồng Nhân trong sự hợp tác công bằng giữa nhiều người và cộng đồng. Muốn cùng nhau vẫn cần nhận biết các khác biệt và khả năng, không ép mọi người thành giống nhau.",
-      "citationIds": ["citation-pbc-q13-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [163, 166],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-13-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di lấy đồng rộng làm hình ảnh cùng người theo lẽ công, không chỉ vì tình thân hoặc lợi riêng. Sự sáng rõ và mạnh mẽ phải đi cùng chính đạo mới có thể vượt trở ngại.",
-      "citationIds": ["citation-ntt-q13-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [284, 289],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-fire", "trigram-heaven"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yin", "yang", "yang", "yang", "yang"],
-    "kingWenNumber": 13,
-    "upperTrigramId": "trigram-heaven",
-    "lowerTrigramId": "trigram-fire",
-    "claimIds": ["hexagram-13-structure"]
-  },
+  "kingWenNumber": 13,
+  "upperTrigramId": "trigram-heaven",
+  "lowerTrigramId": "trigram-fire",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-13-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc ra ngoài cửa như bước đầu mở quan hệ với người khác. Cùng người vượt khỏi phạm vi riêng là việc không có lỗi trong lời hào này.",
-          "citationIds": ["citation-nhl-q13-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [177, 177],
+              "section": "Hào 1 — diễn giải và chú thích",
+              "printedPages": ["177", "177"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-13-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải ra cửa là mở lòng ra ngoài sự ràng buộc của gia đình. Cùng người một cách công bằng ngay từ đầu phù hợp với đạo Đồng Nhân.",
-          "citationIds": ["citation-pbc-q13-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [166, 167],
+              "section": "Hào 1 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-13-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào đầu không bị quan hệ ứng riêng trói buộc. Ra ngoài cửa để cùng người theo lẽ công, không thiên lệch vì tình riêng, là điều kiện tránh lỗi.",
-          "citationIds": ["citation-ntt-q13-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [289, 290],
+              "section": "Hào 1 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -99,30 +132,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-13-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào hai chỉ ứng với hào năm như sự kết hợp bó hẹp trong họ hoặc đảng phái. Dù có trung chính, cách cùng người ấy vẫn hẹp so với ý chung của quẻ.",
-          "citationIds": ["citation-nhl-q13-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [177, 177],
+              "section": "Hào 2 — diễn giải và chú thích",
+              "printedPages": ["177", "177"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-13-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt chữ tông ở quan hệ riêng giữa hào hai và năm. Chỉ gần nhóm của mình trái với việc cùng người rộng rãi nên lời hào gọi là đáng thẹn.",
-          "citationIds": ["citation-pbc-q13-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [167, 168],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-13-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào hai cùng hào năm bằng sự gần gũi riêng, thiếu lòng công rộng. Ông không dùng ngôi năm làm mẫu vua trong lời này, vì tình riêng chưa đạt đạo chung của người đứng đầu.",
-          "citationIds": ["citation-ntt-q13-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [290, 291],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -134,55 +180,64 @@
       "position": 3,
       "polarity": "yang",
       "label": "Cửu tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-13-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào ba quá cứng mà muốn giành hào hai đang ứng với hào năm. Giấu quân và nhìn lên gò cao biểu thị sự lo sợ đối thủ mạnh, khiến ý muốn tiến không thực hiện được.",
-          "citationIds": ["citation-nhl-q13-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [177, 177],
+              "section": "Hào 3 — diễn giải và chú thích",
+              "printedPages": ["177", "177"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải hào ba muốn chiếm quan hệ của hai và năm nhưng biết sức mình không đủ. Việc chưa dám phát quân khiến sự sai trái còn bị ngăn, không phải lời khuyến khích tranh đoạt.",
-          "citationIds": ["citation-pbc-q13-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [168, 169],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào ba theo ý muốn giành hào hai nhưng sợ hào năm mạnh và chính đáng hơn. Hình ảnh ba năm không dấy biểu thị sự không thể hành động vì thế sai, chưa phải một mốc lịch tính toán.",
-          "citationIds": ["citation-ntt-q13-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [291, 292],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-3-ngo",
-          "kind": "author-interpretation",
           "text": "Ngô Tất Tố ghi rõ cách dịch ý không thể tiến theo Trình Di và Chu Hy ở chú thích bốn. Ông phân biệt cách giảng đó với nghĩa chữ Hán có thể đọc là lặng lẽ mà đi; chú thích không xác định lịch ba năm.",
-          "citationIds": ["citation-ntt-q13-line-3-ngo"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [296, 296],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Ngô Tất Tố"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         }
       ]
     },
@@ -190,56 +245,65 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-13-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy hào ba làm bức tường ngăn hào bốn đến với hào hai. Hào bốn biết xét lại, không tấn công và trở về phép tắc nên mới được lời tốt.",
-          "citationIds": ["citation-nhl-q13-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [177, 177],
+              "section": "Hào 4 — diễn giải và chú thích",
+              "printedPages": ["177", "177"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải hào bốn nhận ra việc giành hào hai là trái lẽ. Không đánh là sự biết dừng theo nguyên tắc, không chỉ là thiếu sức để đánh.",
-          "citationIds": ["citation-pbc-q13-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [169, 170],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc bức tường trong thế hào bốn định chống hào năm nhưng không có lẽ đúng. Trở lại phép tắc và bỏ việc đánh mới đổi được hướng sai thành điều tốt.",
-          "citationIds": ["citation-ntt-q13-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [292, 293],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy lấy hào ba làm chướng ngại giữa bốn và hai. Hào bốn mềm vị nên có thể tự xét, bỏ việc tranh giành và trở lại lẽ đúng; cách đặt bức tường khác Trình Di.",
-          "citationIds": ["citation-ntt-q13-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [293, 293],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         }
       ]
     },
@@ -247,56 +311,65 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-13-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê giải hai và năm vốn hợp nhau nhưng bị hào ba và bốn ngăn. Khóc rồi cười và quân lớn gặp nhau nói về nỗ lực vượt cản trở trước khi có thể đoàn tụ.",
-          "citationIds": ["citation-nhl-q13-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [177, 178],
+              "section": "Hào 5 — diễn giải và chú thích",
+              "printedPages": ["177", "178"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt việc trước khóc sau cười ở hai người trung chính bị kẻ khác chia cách. Hình ảnh quân lớn nhấn mạnh sức và quyết tâm cần có để vượt trở ngại trong bối cảnh lời hào.",
-          "citationIds": ["citation-pbc-q13-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [170, 171],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hai và năm tuy trung chính nhưng vẫn gắn bó theo tình riêng, chưa phải lòng công của người đứng đầu. Có sức vượt sự ngăn của ba và bốn mới gặp nhau; kết quả ấy chưa làm quan hệ riêng thành đạo đại đồng.",
-          "citationIds": ["citation-ntt-q13-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [293, 295],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         },
         {
-          "id": "hexagram-13-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy nhấn mạnh hai và năm cùng trung chính nên cuối cùng có thể hợp nhau. Ba và bốn mạnh cùng ngăn khiến phải có sức lớn để thắng; lời này giữ riêng với phê bình tình riêng của Trình Di.",
-          "citationIds": ["citation-ntt-q13-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [294, 294],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
-          ]
+          "condition": "Giữ vai người và hình ảnh quyền lực hoặc việc quân trong bối cảnh chú giải; không chuyển thành chỉ dẫn xâm phạt hoặc chuẩn mực quyền lực hiện đại."
         }
       ]
     },
@@ -304,30 +377,43 @@
       "position": 6,
       "polarity": "yang",
       "label": "Thượng cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-13-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê phân biệt giao là vùng ngoài thành với dã là đồng rộng. Hào cuối cùng người trong phạm vi còn hẹp, không phải hối tiếc nhưng chí chung rộng chưa đạt.",
-          "citationIds": ["citation-nhl-q13-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [178, 178],
+              "section": "Hào 6 — diễn giải và chú thích",
+              "printedPages": ["178", "178"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-13-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc vùng ngoài thành như sự mở rộng hơn cửa nhà và dòng họ nhưng chưa tới đồng rộng. Không hối chưa đồng nghĩa lý tưởng cùng người đã hoàn thành.",
-          "citationIds": ["citation-pbc-q13-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [171, 172],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-13-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào cuối ở xa và không có người ứng nên chưa có người cùng theo. Không có quan hệ sai để hối tiếc, nhưng chí muốn cùng người vẫn chưa đạt.",
-          "citationIds": ["citation-ntt-q13-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [295, 296],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -336,75 +422,68 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-nhl-dong-nhan-negation",
-      "status": "resolved",
-      "description": "NHL PDF 177 phần Giảng hào đầu nói muốn cùng người thì có lỗi, trái ngay phần Dịch và câu hỏi không đáng trách.",
-      "citationIds": [
-        "citation-nhl-q13-line-1-nhl",
-        "citation-pbc-q13-line-1-pbc",
-        "citation-ntt-q13-line-1-ntt"
-      ],
-      "resolution": "Ảnh PDF 177 xác nhận lỗi nằm trong văn bản, không chỉ trong trích xuất. Phần Dịch cùng trang, chữ vô cựu và hai sách khác đều xác định không lỗi khi ra ngoài cửa cùng người; tóm tắt giữ nghĩa đó."
+      "text": "NHL PDF 177 phần Giảng hào đầu nói muốn cùng người thì có lỗi, trái ngay phần Dịch và câu hỏi không đáng trách. Ảnh PDF 177 xác nhận lỗi nằm trong văn bản, không chỉ trong trích xuất. Phần Dịch cùng trang, chữ vô cựu và hai sách khác đều xác định không lỗi khi ra ngoài cửa cùng người; tóm tắt giữ nghĩa đó.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [177, 177],
+          "section": "Hào 1 — diễn giải và chú thích",
+          "printedPages": ["177", "177"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [166, 167],
+          "section": "Hào 1 — diễn giải và chú thích"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [289, 290],
+          "section": "Hào 1 — diễn giải và chú thích"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-dong-nhan-inner-trigram",
-      "status": "resolved",
-      "description": "NTT PDF 284 gọi hào hai là chủ quẻ Khôn dù tiêu đề và đoạn trước nói Ly dưới.",
-      "citationIds": [
-        "citation-ntt-q13-overview-ntt",
-        "citation-nhl-q13-overview-nhl",
-        "citation-pbc-q13-overview-pbc"
-      ],
-      "resolution": "Ảnh PDF 284, phần Chu Hy PDF 285 và lời giải PDF 286 xác nhận Sáu Hai là hào giữa nội Ly. Giữ ngoại Càn, nội Ly; không đổi nội quái thành Khôn."
+      "text": "NTT PDF 284 gọi hào hai là chủ quẻ Khôn dù tiêu đề và đoạn trước nói Ly dưới. Ảnh PDF 284, phần Chu Hy PDF 285 và lời giải PDF 286 xác nhận Sáu Hai là hào giữa nội Ly. Giữ ngoại Càn, nội Ly; không đổi nội quái thành Khôn.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [284, 289],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [176, 176],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["176", "176"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [163, 166],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-dong-nhan-fifth-polarity",
-      "status": "resolved",
-      "description": "NTT PDF 285 phần Chu Hy ghi Sáu Hai ứng Sáu Năm dù quẻ chỉ có một âm.",
-      "citationIds": [
-        "citation-ntt-q13-overview-response-chu-hy",
-        "citation-ntt-q13-overview-ntt",
-        "citation-ntt-q13-line-5-chu-hy"
-      ],
-      "resolution": "Ảnh PDF 286 ngay phần Chu Hy xác định Kiền chỉ Chín Năm; lời hào năm PDF 294 cũng là Chín Năm. Giữ hào năm dương và cặp Sáu Hai–Chín Năm."
+      "text": "NTT PDF 285 phần Chu Hy ghi Sáu Hai ứng Sáu Năm dù quẻ chỉ có một âm. Ảnh PDF 286 ngay phần Chu Hy xác định Kiền chỉ Chín Năm; lời hào năm PDF 294 cũng là Chín Năm. Giữ hào năm dương và cặp Sáu Hai–Chín Năm.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [285, 286],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [284, 289],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [294, 294],
+          "section": "Hào 5 — diễn giải và chú thích"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q13-overview-nhl",
-      "citation-pbc-q13-overview-pbc",
-      "citation-ntt-q13-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-nhl-q13-line-1-nhl",
-      "citation-pbc-q13-line-1-pbc",
-      "citation-ntt-q13-line-1-ntt",
-      "citation-nhl-q13-line-2-nhl",
-      "citation-pbc-q13-line-2-pbc",
-      "citation-ntt-q13-line-2-ntt",
-      "citation-nhl-q13-line-3-nhl",
-      "citation-pbc-q13-line-3-pbc",
-      "citation-ntt-q13-line-3-ntt",
-      "citation-ntt-q13-line-3-ngo",
-      "citation-nhl-q13-line-4-nhl",
-      "citation-pbc-q13-line-4-pbc",
-      "citation-ntt-q13-line-4-ntt",
-      "citation-ntt-q13-line-4-chu-hy",
-      "citation-nhl-q13-line-5-nhl",
-      "citation-pbc-q13-line-5-pbc",
-      "citation-ntt-q13-line-5-ntt",
-      "citation-ntt-q13-line-5-chu-hy",
-      "citation-nhl-q13-line-6-nhl",
-      "citation-pbc-q13-line-6-pbc",
-      "citation-ntt-q13-line-6-ntt",
-      "citation-ntt-q13-overview-response-chu-hy"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép được ghi nhận. Các cách đọc khác nhau được giữ theo tác giả; chú thích Ngô Tất Tố là lớp riêng. Bộ dữ liệu chọn diễn giải, không chứng nhận toàn bộ sách hoặc giả thuyết lịch sử; chưa có xác nhận của chuyên gia độc lập."
-  }
+  ]
 }

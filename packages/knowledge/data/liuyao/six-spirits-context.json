@@ -1,85 +1,8 @@
 {
-  "schemaVersion": 1,
   "id": "article-six-spirits-context",
   "type": "article",
   "title": "Luận Lục thú theo vai hào và sinh khắc",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
-    {
-      "id": "article-six-spirits-context-hierarchy",
-      "kind": "author-interpretation",
-      "text": "Trong chú giải mục 65 Hoàng Kim Sách, Vương Hồng Tự phản bác việc gặp Long thì luận vui, gặp Hổ thì luận buồn. Ông lấy Lục thân làm gốc, Lục thú làm ngọn và đặt sinh khắc trước tên gọi cát hung.",
-      "citationIds": ["citation-bpct-ch6-six-spirits-context"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Không chuyển câu nhiều cát hay nhiều hung ở cuối mục Lục thú thành phép đếm các tên để chấm điểm."
-      ]
-    },
-    {
-      "id": "article-six-spirits-context-long-tiger",
-      "kind": "author-interpretation",
-      "text": "Thanh Long ở Kỵ thần hoặc khắc hại Dụng không tự có lợi; Bạch Hổ sinh Dụng vẫn có thể được luận tốt. Hai ví dụ cho thấy vai của hào và quan hệ sinh khắc có thể đổi lời luận thường gắn với tên.",
-      "citationIds": ["citation-bpct-ch5-six-spirits", "citation-bpct-ch6-six-spirits-context"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      }
-    },
-    {
-      "id": "article-six-spirits-context-zhuque",
-      "kind": "author-interpretation",
-      "text": "Mục Lục thú phân biệt Chu Tước khắc Thân gắn khẩu thiệt với Chu Tước sinh Dụng gắn văn thư. Chú giải Hoàng Kim Sách còn yêu cầu xem Huynh Đệ đi kèm trước khi luận khẩu thiệt.",
-      "citationIds": ["citation-bpct-ch5-six-spirits", "citation-bpct-ch6-six-spirits-context"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Giữ Thân đúng nguyên từ của đoạn; không tự đồng nhất Thân với Thế hoặc với người hỏi."
-      ]
-    },
-    {
-      "id": "article-six-spirits-context-gouchen",
-      "kind": "author-interpretation",
-      "text": "Mục Lục thú gắn Câu Trần lâm Không với ruộng vườn kém thu hoạch. Trường hợp mạnh và khắc Thế được giảng riêng theo nguy cơ công sai; các điều kiện ấy không được bỏ khi tóm tắt.",
-      "citationIds": ["citation-bpct-ch5-six-spirits"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Giữ đây là các ví dụ luận đoán truyền thống, không phải kết luận nông nghiệp hay pháp lý về một trường hợp hiện tại."
-      ]
-    },
-    {
-      "id": "article-six-spirits-context-xuanwu",
-      "kind": "author-interpretation",
-      "text": "Vương Hồng Tự không coi Huyền Vũ luôn báo trộm cướp hoặc liên lụy. Mục 7 nêu Quan có Huyền Vũ sinh Thế và an tĩnh là trường hợp không đáng sợ; chú giải mục 65 cũng yêu cầu xét Quan trước khi luận trộm cướp.",
-      "citationIds": ["citation-bpct-ch5-six-spirits", "citation-bpct-ch6-six-spirits-context"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": ["Mục 65 không cho lấy riêng Huyền Vũ để xác định có trộm cướp."]
-    },
-    {
-      "id": "article-six-spirits-context-question-context",
-      "kind": "author-interpretation",
-      "text": "Trong riêng đề tài sinh sản, mục 7 khuyên kiêng Bạch Hổ phát động; với Chu Tước hóa Thủy ở cung Ngọ, đoạn lại không lo tai họa về lửa. Các ví dụ giữ đề tài, cung, biến hóa và động tĩnh đi cùng lời luận.",
-      "citationIds": ["citation-bpct-ch5-six-spirits"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch và chú giải"
-      },
-      "conditions": [
-        "Giữ ví dụ sinh sản trong bối cảnh lịch sử, không dùng nó làm đánh giá sức khỏe hoặc hướng dẫn xử trí."
-      ]
-    }
-  ],
   "relatedIds": [
     "term-six-spirits",
     "term-six-relative",
@@ -94,19 +17,120 @@
     "term-spirit-baihu",
     "term-spirit-xuanwu"
   ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-ch6-six-spirits-context",
-      "citation-bpct-ch5-six-spirits"
-    ],
-    "note": "Đã đọc và xem ảnh PDF 69, đối chiếu lời tác giả trong PDF 98–99 cùng giới thiệu về lớp chú giải ở PDF 2–3. Không nhập phép đếm tên cát hung, bảng an theo ngày, hay gán ngũ hành riêng cho Đằng Xà từ câu thuộc Mộc còn mơ hồ. Bài chỉ chọn các ví dụ để giữ điều kiện, không chép toàn bộ các câu về bệnh, tự hại, cầu đảo hoặc hình phạt; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  "status": "ready",
+  "entries": [
+    {
+      "text": "Trong chú giải mục 65 Hoàng Kim Sách, Vương Hồng Tự phản bác việc gặp Long thì luận vui, gặp Hổ thì luận buồn. Ông lấy Lục thân làm gốc, Lục thú làm ngọn và đặt sinh khắc trước tên gọi cát hung.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [98, 99],
+          "section": "65 — Chú giải sinh khắc và vai Lục thú",
+          "printedPages": ["84", "85"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Không chuyển câu nhiều cát hay nhiều hung ở cuối mục Lục thú thành phép đếm các tên để chấm điểm."
+    },
+    {
+      "text": "Thanh Long ở Kỵ thần hoặc khắc hại Dụng không tự có lợi; Bạch Hổ sinh Dụng vẫn có thể được luận tốt. Hai ví dụ cho thấy vai của hào và quan hệ sinh khắc có thể đổi lời luận thường gắn với tên.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ bảy — Luận về Lục thú",
+          "printedPages": ["57", "57"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [98, 99],
+          "section": "65 — Chú giải sinh khắc và vai Lục thú",
+          "printedPages": ["84", "85"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      }
+    },
+    {
+      "text": "Mục Lục thú phân biệt Chu Tước khắc Thân gắn khẩu thiệt với Chu Tước sinh Dụng gắn văn thư. Chú giải Hoàng Kim Sách còn yêu cầu xem Huynh Đệ đi kèm trước khi luận khẩu thiệt.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ bảy — Luận về Lục thú",
+          "printedPages": ["57", "57"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [98, 99],
+          "section": "65 — Chú giải sinh khắc và vai Lục thú",
+          "printedPages": ["84", "85"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Giữ Thân đúng nguyên từ của đoạn; không tự đồng nhất Thân với Thế hoặc với người hỏi."
+    },
+    {
+      "text": "Mục Lục thú gắn Câu Trần lâm Không với ruộng vườn kém thu hoạch. Trường hợp mạnh và khắc Thế được giảng riêng theo nguy cơ công sai; các điều kiện ấy không được bỏ khi tóm tắt.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ bảy — Luận về Lục thú",
+          "printedPages": ["57", "57"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Giữ đây là các ví dụ luận đoán truyền thống, không phải kết luận nông nghiệp hay pháp lý về một trường hợp hiện tại."
+    },
+    {
+      "text": "Vương Hồng Tự không coi Huyền Vũ luôn báo trộm cướp hoặc liên lụy. Mục 7 nêu Quan có Huyền Vũ sinh Thế và an tĩnh là trường hợp không đáng sợ; chú giải mục 65 cũng yêu cầu xét Quan trước khi luận trộm cướp.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ bảy — Luận về Lục thú",
+          "printedPages": ["57", "57"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [98, 99],
+          "section": "65 — Chú giải sinh khắc và vai Lục thú",
+          "printedPages": ["84", "85"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Mục 65 không cho lấy riêng Huyền Vũ để xác định có trộm cướp."
+    },
+    {
+      "text": "Trong riêng đề tài sinh sản, mục 7 khuyên kiêng Bạch Hổ phát động; với Chu Tước hóa Thủy ở cung Ngọ, đoạn lại không lo tai họa về lửa. Các ví dụ giữ đề tài, cung, biến hóa và động tĩnh đi cùng lời luận.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [69, 69],
+          "section": "Thứ bảy — Luận về Lục thú",
+          "printedPages": ["57", "57"]
+        }
+      ],
+      "attribution": {
+        "author": "Vương Hồng Tự",
+        "via": "Vĩnh Cao — dịch và chú giải"
+      },
+      "condition": "Giữ ví dụ sinh sản trong bối cảnh lịch sử, không dùng nó làm đánh giá sức khỏe hoặc hướng dẫn xử trí."
+    }
+  ]
 }

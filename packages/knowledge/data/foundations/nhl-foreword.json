@@ -1,63 +1,35 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-foreword",
   "type": "article",
   "title": "NHL — Lời đầu và cách đọc",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-foreword-nhl-foreword-directions-purpose",
-      "kind": "author-interpretation",
-      "text": "Tác giả hướng sách tới vũ trụ quan, nhân sinh quan và cách xử thế, chủ động giảm phần bói toán/huyền bí. Lời đầu nói sáu chương nhưng thân sách thực có bảy; không sửa tín hiệu không nhất quán này.",
-      "citationIds": ["citation-nhl-foreword-directions-purpose"],
+      "text": "Tác giả hướng sách tới vũ trụ quan, nhân sinh quan và cách xử thế, chủ động giảm phần bói toán/huyền bí. Lời đầu nói sáu chương nhưng thân sách thực có bảy; không sửa tín hiệu không nhất quán này.\n\nLộ trình đọc của tác giả ưu tiên chương I/II và IV, đọc chậm các quẻ rồi trở lại thuật ngữ, sau đó V/VII và đọc lại; đây là hướng dẫn của sách, không chứng nhận đã bao quát nội dung.\n\nVí dụ tra Tiểu Quá số62 dùng Lôi ở trên, Sơn ở dưới; lời hướng dẫn trỏ bảng tên và đồ biểu. Không suy ra rằng các phụ lục được trỏ đều hiện diện trong bản PDF.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [10, 10],
+          "section": "nhl-foreword-directions-purpose — commentary",
+          "printedPages": ["10", "10"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [10, 10],
+          "section": "nhl-foreword-directions-reading-order — commentary",
+          "printedPages": ["10", "10"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [11, 11],
+          "section": "nhl-foreword-directions-lookup-example — diagram",
+          "printedPages": ["11", "11"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-foreword-nhl-foreword-directions-reading-order",
-      "kind": "author-interpretation",
-      "text": "Lộ trình đọc của tác giả ưu tiên chương I/II và IV, đọc chậm các quẻ rồi trở lại thuật ngữ, sau đó V/VII và đọc lại; đây là hướng dẫn của sách, không chứng nhận đã bao quát nội dung.",
-      "citationIds": ["citation-nhl-foreword-directions-reading-order"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-foreword-nhl-foreword-directions-lookup-example",
-      "kind": "author-interpretation",
-      "text": "Ví dụ tra Tiểu Quá số62 dùng Lôi ở trên, Sơn ở dưới; lời hướng dẫn trỏ bảng tên và đồ biểu. Không suy ra rằng các phụ lục được trỏ đều hiện diện trong bản PDF.",
-      "citationIds": ["citation-nhl-foreword-directions-lookup-example"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-foreword-directions-purpose",
-      "citation-nhl-foreword-directions-reading-order",
-      "citation-nhl-foreword-directions-lookup-example"
-    ],
-    "note": "Đối chiếu ảnh đầy trang 1.5x và extraction của các trang thuộc đơn vị. Chỉ source comparison059; audit092,verification/certification còn mở. Không xuất bản prose/ảnh nguồn."
-  }
+  ]
 }

@@ -14,7 +14,7 @@ This file routes repository documentation. Each durable fact has one canonical o
 | You change result UI                               | `docs/product-specs/reading-result.md`    | Result content and fact presentation             |
 | You change reference browsing                      | `docs/product-specs/knowledge-browser.md` | Library and rule-explanation behavior            |
 | You review domain content or evidence              | `docs/product-specs/knowledge-quality.md` | Supplied-book evidence and content acceptance    |
-| You plan the expanded book corpus                  | `docs/product-specs/knowledge-content.md` | Proposed content taxonomy, coverage, and batches |
+| You plan the expanded book corpus                  | `docs/product-specs/knowledge-content.md` | Learning content scope and writing units         |
 | You change settings                                | `docs/product-specs/settings.md`          | V1 settings and diagnostics                      |
 | You change UI layout, navigation, or design tokens | `docs/product-specs/ui-layout.md`         | Web UI layout, navigation, and component tokens  |
 
@@ -27,7 +27,7 @@ This file routes repository documentation. Each durable fact has one canonical o
 | You change domain types                  | `docs/design-docs/domain-model.md`         | V1 domain contracts and line conventions   |
 | You change calculation logic             | `docs/design-docs/calculation-pipeline.md` | V1 deterministic calculation pipeline      |
 | You inspect board rules or derivations   | `docs/design-docs/liuyao-ruleset-v1.md`    | Calculation tables and supporting passages |
-| You change knowledge data                | `docs/design-docs/knowledge-model.md`      | Knowledge ownership, schema, and sources   |
+| You change knowledge data                | `docs/design-docs/knowledge-model.md`      | Knowledge structure, links, and loading    |
 | You consult the supplied books           | `docs/references/book-sources.md`          | PDF editions, locators, and discrepancies  |
 | You change PWA behavior                  | `docs/design-docs/offline-pwa.md`          | Offline and update behavior                |
 | You change development verification      | `docs/development.md`                      | Commands, test placement, CI contract      |

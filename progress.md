@@ -1289,3 +1289,31 @@ Append-only history for repository-local tracked features. Do not record no-feat
 - Offline: `index-DtlSMMtK.js` is 3,113,895 bytes; cap 3,211,264; 97,369-byte reserve. All 18 assets stay precached and other PWA settings stay unchanged.
 - Limitations: Contact-sheet review is not full-size review of every classical page. Missing/ambiguous text, unlocated NHL reference, uncredited PBC note and author alternatives are retained without repair. Audit/verification/certification gates stay closed; no full corpus or efficacy approval claimed.
 - Next: Independent acceptance review of feat-049; then user selection of feat-050, BPCT chapter 6 sentences 57–69 (PDF 94–100).
+
+## 2026-10-08 — feat-068 simplified knowledge design
+
+- Status: active; written design complete, implementation pending design review.
+- Result: Started feat/068-knowledge-simplification from main. Replaced audit-first contracts with coherent JSON entries, direct book/page references, stable links, and small generated assets. Aligned future feature routes and marked old contracts historical.
+- Recovery: Preserved feat/068-audit-hexagrams-01-04 at c80c38d; existing writing remains recoverable.
+- Evidence: Baseline and post-documentation ./init.sh passed (181 core + 6,197 knowledge tests). Corpus/source freshness and 437 local documentation links passed.
+- Limitations: Runtime, authored data, and the large generated release still use the old implementation. No simplified payload or rebuilt quẻ is claimed.
+- Next: Review docs/design-docs/knowledge-model.md, implement the storage/runtime migration, then rebuild Càn, Khôn, Truân, and Mông.
+
+## 2026-10-09 — feat-068 completed: simplified linked knowledge
+
+- Design approved. Migrated 381 canonical records to coherent entries, direct book/page references, and stable record/line/section links.
+- Removed claim/citation registries, review/hash ledgers, audit gates, source-unit inventories, and the committed monolithic release. Git retains prior history.
+- Rebuilt Càn, Khôn, Truân, Mông and 24 positions with distinct author views. Added source-checked Chu Hy Khôn views; retained the unlocated NTT Mông referral.
+- Detailed assets load by ID; compact metadata supports lookup/search. Node access, tables, worked examples, and current calculation behavior remain usable.
+- JavaScript: 832.67 KB raw / 232.14 KB gzip. Full offline precache: 5,346.54 KiB raw; 381 record assets included.
+- Verification: ./init.sh passed (181 core + 85 knowledge tests). Knowledge suite: 1.86 seconds versus 151.75 seconds at the main baseline. Corpus freshness and four supplied-PDF checks passed.
+- Direct browser checks covered offline routes/search/reload with the server stopped, interrupted-load recovery, articles, source references, and mobile hào anchors.
+- Documentation now describes the implemented model; the source guide was reduced to the supplied inventory, core discrepancies, and canonical-record routes.
+- Status: done; no blockers and no dependent feature activated. Source gaps remain record-level notes.
+- Handoff: [feat-068](features/feat-068.md). Changes remain uncommitted on feat/068-knowledge-simplification. Old branch remains unchanged at c80c38d.
+
+## 2026-10-09 — feat-068 pull request delivery
+
+- User requested a pull request into main from feat/068-knowledge-simplification.
+- Prepared the completed implementation and documentation for commit and branch publication.
+- Status remains done; merge is the next delivery action. No dependent feature has been activated.

@@ -1,103 +1,140 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-17",
   "type": "hexagram",
   "title": "Trạch Lôi Tùy",
   "aliases": ["Tùy", "Tuỳ", "Trạch Lôi Tuỳ"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-thunder", "trigram-lake"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-17-structure",
-      "kind": "structural-fact",
       "text": "Trạch Lôi Tùy có ngoại quái Đoài và nội quái Chấn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q17-overview-nhl",
-        "citation-pbc-q17-overview-pbc",
-        "citation-ntt-q17-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [188, 188],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["188", "188"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [197, 200],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [333, 337],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-17-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giải Tùy theo việc người theo mình và mình theo người, đều cần đúng lẽ và đúng thời. Ông đọc sự thông lớn đi cùng điều kiện chính bền, không coi mọi sự thuận theo đều tốt.",
-      "citationIds": ["citation-nhl-q17-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [188, 188],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["188", "188"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-17-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu đặt sự theo ở điều tốt và lợi chung, tránh chạy theo quyền thế hoặc tình riêng. Theo đúng người còn cần giữ lẽ đúng, bền chí và biết xét thời.",
-      "citationIds": ["citation-pbc-q17-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [197, 200],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-17-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di xem Tùy là theo lẽ phải phù hợp hoàn cảnh, gồm cả mình theo người và người theo mình. Tùy thời không có nghĩa bỏ nguyên tắc để chiều theo điều sai.",
-      "citationIds": ["citation-ntt-q17-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [333, 337],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-17-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy đề nghị đọc thiên hạ theo người đúng đạo thay cho thiên hạ theo thời ở một câu của Thoán truyện. Ông chuyển chữ thời sang câu bàn nghĩa quẻ; đây là lựa chọn văn bản riêng, không xóa cách đọc theo thời của Trình Di.",
-      "citationIds": ["citation-ntt-q17-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [335, 336],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-thunder", "trigram-lake"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yin", "yin", "yang", "yang", "yin"],
-    "kingWenNumber": 17,
-    "upperTrigramId": "trigram-lake",
-    "lowerTrigramId": "trigram-thunder",
-    "claimIds": ["hexagram-17-structure"]
-  },
+  "kingWenNumber": 17,
+  "upperTrigramId": "trigram-lake",
+  "lowerTrigramId": "trigram-thunder",
   "lines": [
     {
       "position": 1,
       "polarity": "yang",
       "label": "Sơ cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-17-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc sự đổi ở hào đầu theo việc thay chủ trương hoặc người mình theo. Giữ đúng lẽ và ra ngoài phạm vi riêng để giao tiếp giúp tránh thiên lệch vì tình thân.",
-          "citationIds": ["citation-nhl-q17-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [189, 189],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["189", "189"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-17-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải người mạnh ở đầu quẻ đổi từ vị làm chủ sang thế thuận theo. Sự thay đổi cần chính đáng; ra ngoài giao tiếp biểu thị không bị tình riêng trói buộc.",
-          "citationIds": ["citation-pbc-q17-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [200, 201],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-17-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào đầu ở bước đổi cách tự xử khi bắt đầu theo người. Phải lấy lẽ đúng làm chuẩn và mở quan hệ ra ngoài tình riêng mới có thể theo đúng.",
-          "citationIds": ["citation-ntt-q17-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [337, 338],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -109,30 +146,43 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-17-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy đứa trẻ và người lớn làm hình ảnh cho hào đầu và hào năm trong quan hệ với hào hai. Bám người gần ở hào đầu khiến mất người trung chính đang ứng ở hào năm.",
-          "citationIds": ["citation-nhl-q17-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [189, 189],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["189", "189"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-17-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu cho hào hai không thể đồng thời theo hào đầu và hào năm. Chọn chỗ gần vì tình riêng khiến bỏ mất quan hệ tốt hơn với người trung chính.",
-          "citationIds": ["citation-pbc-q17-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [201, 201],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-17-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào hai theo người gần là hào đầu nên xa người ứng đúng là hào năm. Hình ảnh trẻ và người lớn phân biệt hai lựa chọn trong lời hào, không phân loại cố định mọi hào đầu là người kém.",
-          "citationIds": ["citation-ntt-q17-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [338, 339],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -144,30 +194,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-17-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào ba bỏ hào đầu để theo hào bốn nên có thể được điều mình tìm. Tuy vậy, cần giữ chính bền để sự theo không thành cầu giàu hoặc nịnh người có thế.",
-          "citationIds": ["citation-nhl-q17-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [189, 189],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["189", "189"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-17-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc hào ba theo người lớn ở hào bốn, khác sự chọn người gần của hào hai. Có lợi từ quan hệ ấy vẫn phải giữ nguyên tắc, không dùng việc theo người làm đường cầu quyền lợi.",
-          "citationIds": ["citation-pbc-q17-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [201, 202],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-17-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào ba theo hào bốn có khả năng được đáp ứng. Cần tự giữ điều đúng, không vì được lợi mà đổi lẽ hoặc cầu mong quá mức.",
-          "citationIds": ["citation-ntt-q17-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [339, 341],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -179,30 +242,43 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-17-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đặt hào bốn ở người có công và được nhiều người theo, gần ngôi năm nên dễ bị nghi lấn quyền. Thành tín, đúng lẽ và sáng suốt là điều kiện để tránh lỗi trong thế ấy.",
-          "citationIds": ["citation-nhl-q17-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [189, 190],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["189", "190"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-17-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu nhấn mạnh người có quyền lớn ở hào bốn có thể gặp nguy dù tự cho mình chính đáng. Lòng tin, cách xử hợp đạo và sự sáng rõ giúp tránh nghi ngờ từ người trên.",
-          "citationIds": ["citation-pbc-q17-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [202, 203],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-17-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đọc hào bốn như bề tôi được lòng người nhưng dễ khiến sự theo tập trung vào mình. Giữ lòng thành và hành động theo đạo, hiểu rõ bổn phận, mới tránh lỗi trong cách giảng này.",
-          "citationIds": ["citation-ntt-q17-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [341, 342],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -214,30 +290,43 @@
       "position": 5,
       "polarity": "yang",
       "label": "Cửu ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-17-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào năm trung chính tin theo điều tốt, gắn với hào hai cũng trung chính. Lời tốt phụ thuộc đối tượng đáng tin, không chỉ phụ thuộc sự tin mạnh.",
-          "citationIds": ["citation-nhl-q17-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [190, 190],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["190", "190"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-17-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải người ở ngôi năm lấy lòng thành theo điều thiện và kết hợp với hào hai. Sự tin cần hướng tới người và việc đúng mới phù hợp đạo Tùy.",
-          "citationIds": ["citation-pbc-q17-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [203, 204],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-17-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào năm tin điều thiện qua quan hệ với Sáu Hai. Hai hào đều trung chính nên lòng tin ấy là sự theo đúng đạo, không phải tin tùy tiện.",
-          "citationIds": ["citation-ntt-q17-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [342, 343],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -249,40 +338,57 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-17-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê theo Phan Bội Châu đọc sự ràng buộc bền ở hào cuối như lòng người theo đức Thái Vương tại núi Kỳ. Cách giảng nói sự gắn bó với người đáng theo, không suy mọi sự theo đến cùng đều đúng.",
-          "citationIds": ["citation-nhl-q17-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [190, 190],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["190", "190"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-17-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào cuối ở sự theo đã bền chặt, gắn với đức Thái Vương và việc gây dựng cơ nghiệp ở Kỳ Sơn. Ý tốt này tùy hoàn cảnh riêng của Tùy, không thành phép chung cho mọi hào cuối.",
-          "citationIds": ["citation-pbc-q17-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [204, 205],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-17-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải sự theo bền bằng việc Thái Vương gây dựng cơ nghiệp nhờ đức khiến lòng người cùng theo. Ông giới hạn nghĩa đặc biệt ấy trong việc của bậc vương, không dùng để biện hộ mọi sự ràng buộc quá mức.",
-          "citationIds": ["citation-ntt-q17-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [343, 344],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-17-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc hình ảnh núi Tây theo lễ tế hưởng ở Kỳ Sơn, phía tây đất Chu. Lòng thành bền là ý chính của hình ảnh nghi lễ; cách đọc này giữ riêng với lời giải cơ nghiệp Thái Vương của Trình Di.",
-          "citationIds": ["citation-ntt-q17-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [344, 344],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -291,65 +397,58 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-ntt-tuy-lake-glyph",
-      "status": "resolved",
-      "description": "NTT PDF 333 đặt ký hiệu Khảm bên tên Đoài trong lời giải cấu trúc Tùy.",
-      "citationIds": [
-        "citation-ntt-q17-overview-ntt",
-        "citation-nhl-q17-overview-nhl",
-        "citation-pbc-q17-overview-pbc"
-      ],
-      "resolution": "Ảnh PDF 333 xác nhận ký hiệu không khớp chữ Đoài. Hai sách khác và hình quẻ đều cho ngoại Đoài, nội Chấn; giữ cấu trúc đó, không đổi ngoại quái thành Khảm."
+      "text": "NTT PDF 333 đặt ký hiệu Khảm bên tên Đoài trong lời giải cấu trúc Tùy. Ảnh PDF 333 xác nhận ký hiệu không khớp chữ Đoài. Hai sách khác và hình quẻ đều cho ngoại Đoài, nội Chấn; giữ cấu trúc đó, không đổi ngoại quái thành Khảm.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [333, 337],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [188, 188],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["188", "188"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [197, 200],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ]
     },
     {
-      "id": "discrepancy-pbc-tuy-name",
-      "status": "resolved",
-      "description": "PBC PDF 197 có một chỗ ghi tên quẻ Tây trong thân bài.",
-      "citationIds": ["citation-pbc-q17-overview-pbc", "citation-nhl-q17-overview-nhl"],
-      "resolution": "Ảnh PDF 197 xác nhận chữ Tây; tiêu đề và toàn bộ đoạn giải đều là Tùy. Giữ tên Tùy và không thêm Tây làm bí danh."
+      "text": "PBC PDF 197 có một chỗ ghi tên quẻ Tây trong thân bài. Ảnh PDF 197 xác nhận chữ Tây; tiêu đề và toàn bộ đoạn giải đều là Tùy. Giữ tên Tùy và không thêm Tây làm bí danh.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [197, 200],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [188, 188],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["188", "188"]
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-tuy-second-polarity",
-      "status": "resolved",
-      "description": "NTT PDF 342 giải hào năm nhưng gọi hào ứng là Chín Hai.",
-      "citationIds": ["citation-ntt-q17-line-5-ntt", "citation-ntt-q17-line-2-ntt"],
-      "resolution": "NTT PDF 343 ngay phần tiếp nói Sáu Hai, và lời hào hai PDF 338 cũng là Sáu Hai. Giữ hào hai âm; lỗi tên không đổi quan hệ ứng hai–năm."
+      "text": "NTT PDF 342 giải hào năm nhưng gọi hào ứng là Chín Hai. NTT PDF 343 ngay phần tiếp nói Sáu Hai, và lời hào hai PDF 338 cũng là Sáu Hai. Giữ hào hai âm; lỗi tên không đổi quan hệ ứng hai–năm.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [342, 343],
+          "section": "Hào 5 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [338, 339],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q17-overview-nhl",
-      "citation-pbc-q17-overview-pbc",
-      "citation-ntt-q17-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q17-overview-chu-hy",
-      "citation-nhl-q17-line-1-nhl",
-      "citation-pbc-q17-line-1-pbc",
-      "citation-ntt-q17-line-1-ntt",
-      "citation-nhl-q17-line-2-nhl",
-      "citation-pbc-q17-line-2-pbc",
-      "citation-ntt-q17-line-2-ntt",
-      "citation-nhl-q17-line-3-nhl",
-      "citation-pbc-q17-line-3-pbc",
-      "citation-ntt-q17-line-3-ntt",
-      "citation-nhl-q17-line-4-nhl",
-      "citation-pbc-q17-line-4-pbc",
-      "citation-ntt-q17-line-4-ntt",
-      "citation-nhl-q17-line-5-nhl",
-      "citation-pbc-q17-line-5-pbc",
-      "citation-ntt-q17-line-5-ntt",
-      "citation-nhl-q17-line-6-nhl",
-      "citation-pbc-q17-line-6-pbc",
-      "citation-ntt-q17-line-6-ntt",
-      "citation-ntt-q17-line-6-chu-hy"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép được ghi nhận. Các cách đọc khác nhau và chỗ tác giả chưa xác định được giữ riêng. Nhãn trang NHL được kiểm tra trên PDF; không chứng nhận toàn bộ sách, giả thuyết lịch sử hoặc phép tính lịch, chưa có xác nhận của chuyên gia độc lập."
-  }
+  ]
 }

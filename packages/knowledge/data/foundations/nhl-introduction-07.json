@@ -1,386 +1,269 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-introduction-07",
   "type": "article",
   "title": "NHL — Tu thân và Thời",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-layer-example",
-      "kind": "author-interpretation",
       "text": "Đại Súc được NHL so Quái từ bói lợi/chính,Thoán chứa đức Càn/Cấn và Đại Tượng học lời/hành xưa; nhận thêm luân lý là NHL, không quy cả ba về một tác giả.",
-      "citationIds": ["citation-nhl-intro-ch07-layer-example"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [109, 109],
+          "section": "nhl-intro-ch07-layer-example — quotation",
+          "printedPages": ["109", "109"]
+        }
+      ],
       "attribution": {
         "author": "Đại Súc Quái từ,Thoán và Đại Tượng — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-nine-virtues",
-      "kind": "author-interpretation",
       "text": "Hệ Từ Hạ nêu chín đức qua Lý nền,Khiêm cán,Phục gốc,Hằng bền,Tổn trau,Ích đầy,Khốn nghiệm,Tỉnh dày,Tốn chế. Không checklist đạo đức xác định giá trị người hiện tại.",
-      "citationIds": ["citation-nhl-intro-ch07-nine-virtues"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [109, 110],
+          "section": "nhl-intro-ch07-nine-virtues — quotation",
+          "printedPages": ["109", "110"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — chín đức được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-modesty-quotes",
-      "kind": "author-interpretation",
       "text": "Thoán/Tiểu Tượng Khiêm và so Đạo Đức Kinh7/66 được nguồn đọc hạ mình/đức sáng; đó là lời được trích kèm so của NHL, không causal bảo đảm vượt tai nạn.",
-      "citationIds": ["citation-nhl-intro-ch07-modesty-quotes"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [110, 110],
+          "section": "nhl-intro-ch07-modesty-quotes — quotation",
+          "printedPages": ["110", "110"]
+        }
+      ],
       "attribution": {
         "author": "Khiêm Kinh/Truyện và Đạo Đức Kinh — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-modesty-cases",
-      "kind": "author-interpretation",
-      "text": "Đại Hữu4,Quy Muội5 chuyện em Đế Ất,Minh Di giấu sáng và Đạo Đức Kinh71 minh họa khiêm; cổ nhân hôn phối là allusion nguồn, không chuẩn ép hôn hay xác minh hôn nhân.",
-      "citationIds": ["citation-nhl-intro-ch07-modesty-cases"],
+      "text": "Đại Hữu4,Quy Muội5 chuyện em Đế Ất,Minh Di giấu sáng và Đạo Đức Kinh71 minh họa khiêm; cổ nhân hôn phối là allusion nguồn, không chuẩn ép hôn hay xác minh hôn nhân.\n\nNHL đọc Tốn chỉ theo đại nhân có tài đức,vừa phải,không siểm nịnh hào6; ông xem kết hợp cương/nhu là dung hòa Khổng/Lão. Không khuyên tuân mọi quyền lực.\n\nNHL gom đức thành Chính/Trung, phân trinh chính+bền trong Kinh với chính ở Truyện; ví Lý,Phục,Vô Vọng nhưng không dùng để tính tai nạn/lợi ích.\n\nNHL lấy Đại Tráng2/Hằng2 cùng dương ở vị âm vẫn được khen nhờ trung, trỏ Tốn2/Vị Tế2 và PBC. Trung đạo đức ở đây không đồng nhất chính-vị cơ học đã định ở chương4.\n\nHuệ Đồng qua Phùng Hữu Lan đếm35 Thoán/36 Tượng có Trung,PBC giải thứ tự chữ trung/chính; Luận Ngữ Nghiêu/Thuấn/Vũ,Tử Trương/Tử Hạ,cuồng/quyên và Tử Tư/Trung Dung được nguồn nêu. NHL giữ nghi lời truyền từ Nghiêu/Thuấn có thật không.\n\nCàn/Thái thượng suy,Bĩ/Thăng cuối,Đại Quá cương/nhu,Tiết thái quá và Trung Phu,Sư là các case NHL dùng phản cực đoan; không lấy lời NHL Sư làm chiến thuật hay áp nhãn yếu/mạnh người. PDF118 gọi Đại Quá3/6 quá cương rồi lại6 quá nhu,Tiết5 khổ tiết; giữ nhãn lặp/lệch, không sửa bằng record quẻ.\n\nNHL phân Trung với lưng chừng/nhu nhược: Càn tiến tới5 rồi ngừng,Sư không hiếu chiến nhưng tự vệ. Đây là đọc theo nguồn, không chỉ dẫn đánh trận hay xác minh character.\n\nHuệ Đồng được thuật đếm24 Thoán/6 Tượng có Thời,PBC nói11 quẻ; NHL phân đếm chữ với64 quẻ mỗi quẻ một tình thế, không harmonize thành một count.\n\nCâu Hệ Từ Hạ7 về người lập Dịch lo được NHL gắn Văn Vương/Dữu Ly, rồi ông liệt bảy thời vui/thịnh vẫn cảnh báo và nhiều nghịch. Đó là cách đọc/allusion, không census trạng thái xã hội đã chứng minh.\n\nCàn/Tiệm,Nhu/Bác có tuần tự,nhưng Lữ không theo trước/sau thời gian, mỗi hào một hoàn cảnh. PDF122 lặp hào5 cho rút lui sau thành công5; giữ lỗi nhãn, không sửa hào6 vào source claim.\n\nNguồn so Càn5/Truân5,Càn2–5/Lý2–5,Ký Tế1/Vị Tế1,Tùy4,Khốn2/5,Phong1–4/Tụng2–5 để cho ý hào tùy toàn quẻ. Đồng nét/vị không đủ suy cùng kết quả; không rewriting commentary quẻ đã có.\n\nNHL kết Thời đi cùng giữ Trung/Chính và nhận tùy thời khó,cần trí/đức. Tăng không luôn tốt,giảm không luôn xấu và thành tín cũng cần biến thông; không algorithm đầu tư/đời người.\n\nNHL gọi Đạo Dịch thực tế,không linh hồn/kiếp trước sau,tu thân/hành động có mức và biết ẩn chờ; khái quát lịch sử hòa Nho/Lão và dân tộc là đánh giá nguồn, không sự kiện consensus.\n\nNHL đọc Lâm/Cấu,Truân/Kiển/Khốn,Tụy/Đại Súc/Quải,Phục/Bác và người chuyển phe như truyện thiện/ác lạc quan; đem kháng Pháp/Mỹ làm analogy chính nghĩa của mình. Không xác minh lịch sử hay thúc bạo lực/hy sinh/nhắm kẻ tiểu nhân.\n\nNguồn thừa nhận thiện và ác đều có lúc thắng, vẫn trọng bài học quân tử; kết mùa xuân Kỷ Mùi1979. Date này là phần viết, không xác lập năm xuất bản hay rights.\n\nPDF124 có dấu(1) cạnh không thần bí nhưng không thấy nội dung note riêng ở124–126; không dựng chú thích hoặc nhận đã mất từ bản in khác.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [110, 111],
+          "section": "nhl-intro-ch07-modesty-cases — example",
+          "printedPages": ["110", "111"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [113, 113],
+          "section": "nhl-intro-ch07-compliance-limits — commentary",
+          "printedPages": ["113", "113"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [115, 115],
+          "section": "nhl-intro-ch07-zheng-summary — commentary",
+          "printedPages": ["115", "115"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [116, 116],
+          "section": "nhl-intro-ch07-central-counterexamples — example",
+          "printedPages": ["116", "116"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [116, 117],
+          "section": "nhl-intro-ch07-central-histories — cited-position",
+          "printedPages": ["116", "117"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [117, 118],
+          "section": "nhl-intro-ch07-moderation-cases — example",
+          "printedPages": ["117", "118"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [118, 119],
+          "section": "nhl-intro-ch07-central-not-indecisive — commentary",
+          "printedPages": ["118", "119"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [120, 121],
+          "section": "nhl-intro-ch07-every-hexagram-time — cited-position",
+          "printedPages": ["120", "121"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [120, 122],
+          "section": "nhl-intro-ch07-social-melancholy — commentary",
+          "printedPages": ["120", "122"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [122, 123],
+          "section": "nhl-intro-ch07-small-times — example",
+          "printedPages": ["122", "123"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [123, 123],
+          "section": "nhl-intro-ch07-same-position-other-time — example",
+          "printedPages": ["123", "123"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [124, 124],
+          "section": "nhl-intro-ch07-only-time — commentary",
+          "printedPages": ["124", "124"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [124, 125],
+          "section": "nhl-intro-ch07-gentleman-synthesis — commentary",
+          "printedPages": ["124", "125"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [125, 126],
+          "section": "nhl-intro-ch07-optimism-conflict — example",
+          "printedPages": ["125", "126"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [126, 126],
+          "section": "nhl-intro-ch07-ending-date — commentary",
+          "printedPages": ["126", "126"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [124, 126],
+          "section": "nhl-intro-ch07-orphan-note-marker — marker accounting",
+          "printedPages": ["124", "126"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-strength-cases",
-      "kind": "author-interpretation",
-      "text": "Càn Đại Tượng/hào3,Mông,Hằng,Nhu,Đại Hữu,Đại Súc được nguồn dùng tự cường; ý nghĩa toàn quẻ/đức khác nhau được NHL kể, không đảm bảo thành công.",
-      "citationIds": ["citation-nhl-intro-ch07-strength-cases"],
+      "text": "Càn Đại Tượng/hào3,Mông,Hằng,Nhu,Đại Hữu,Đại Súc được nguồn dùng tự cường; ý nghĩa toàn quẻ/đức khác nhau được NHL kể, không đảm bảo thành công.\n\nKhôn,Hằng,Tùy cho nhu/thuận và lúc cương lúc nhu; NHL vẫn nêu cách gán nam/nữ,trên/dưới theo xã hội cổ, không phẩm chất bắt buộc hay bất bình đẳng người hiện tại.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [111, 112],
+          "section": "nhl-intro-ch07-strength-cases — quotation",
+          "printedPages": ["111", "112"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [112, 112],
+          "section": "nhl-intro-ch07-softness-cases — quotation",
+          "printedPages": ["112", "112"]
+        }
+      ],
       "attribution": {
         "author": "Kinh/Truyện Chu Dịch — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-softness-cases",
-      "kind": "author-interpretation",
-      "text": "Khôn,Hằng,Tùy cho nhu/thuận và lúc cương lúc nhu; NHL vẫn nêu cách gán nam/nữ,trên/dưới theo xã hội cổ, không phẩm chất bắt buộc hay bất bình đẳng người hiện tại.",
-      "citationIds": ["citation-nhl-intro-ch07-softness-cases"],
-      "attribution": {
-        "author": "Kinh/Truyện Chu Dịch — lời được dẫn",
-        "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-confucius-learning",
-      "kind": "author-interpretation",
       "text": "Luận Ngữ Thái Bá17 và Nhân Hồi ở Tử Hãn10 được dẫn minh họa học không thôi; lời nghĩa lý Khổng và gán trường phái là nguồn thuật, không kiểm sử giáo dục.",
-      "citationIds": ["citation-nhl-intro-ch07-confucius-learning"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [112, 112],
+          "section": "nhl-intro-ch07-confucius-learning — quotation",
+          "printedPages": ["112", "112"]
+        }
+      ],
       "attribution": {
         "author": "Luận Ngữ — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-lao-softness",
-      "kind": "author-interpretation",
       "text": "Đạo Đức Kinh35/78/76 được nguồn dùng nước yếu thắng cứng và sống mềm/chết cứng; NHL so Khổng hữu vi/Lão vô vi, không xác lập sinh học hay ưu thế thể lực.",
-      "citationIds": ["citation-nhl-intro-ch07-lao-softness"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [113, 113],
+          "section": "nhl-intro-ch07-lao-softness — quotation",
+          "printedPages": ["113", "113"]
+        }
+      ],
       "attribution": {
         "author": "Đạo Đức Kinh — truyền gán Lão Tử",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-compliance-limits",
-      "kind": "author-interpretation",
-      "text": "NHL đọc Tốn chỉ theo đại nhân có tài đức,vừa phải,không siểm nịnh hào6; ông xem kết hợp cương/nhu là dung hòa Khổng/Lão. Không khuyên tuân mọi quyền lực.",
-      "citationIds": ["citation-nhl-intro-ch07-compliance-limits"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-activity-stillness",
-      "kind": "author-interpretation",
       "text": "Luận Ngữ nước chảy và Đạo Đức Kinh26/37/16/45 được NHL so động/tĩnh; Cấn chỉ/ngừng và đi đúng thời thành hạn chế tĩnh thuần Lão. Không practice y tế/thở hay lời bỏ hoạt động.",
-      "citationIds": ["citation-nhl-intro-ch07-activity-stillness"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [113, 114],
+          "section": "nhl-intro-ch07-activity-stillness — quotation",
+          "printedPages": ["113", "114"]
+        }
+      ],
       "attribution": {
         "author": "Luận Ngữ,Đạo Đức Kinh và Cấn Truyện — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-ornament",
-      "kind": "author-interpretation",
       "text": "NHL so Lão19/28 bỏ văn minh với Luận Ngữ văn/chất; Bí Quái/Thoán/Đại Tượng,hào5/6 hạn trang sức,trọng chất. Đây là khác cách đọc, không khuyên vật chất/giai cấp hiện tại.",
-      "citationIds": ["citation-nhl-intro-ch07-ornament"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [114, 115],
+          "section": "nhl-intro-ch07-ornament — quotation",
+          "printedPages": ["114", "115"]
+        }
+      ],
       "attribution": {
         "author": "Đạo Đức Kinh,Luận Ngữ và Bí Kinh/Truyện — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-zheng-summary",
-      "kind": "author-interpretation",
-      "text": "NHL gom đức thành Chính/Trung, phân trinh chính+bền trong Kinh với chính ở Truyện; ví Lý,Phục,Vô Vọng nhưng không dùng để tính tai nạn/lợi ích.",
-      "citationIds": ["citation-nhl-intro-ch07-zheng-summary"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-central-counterexamples",
-      "kind": "author-interpretation",
-      "text": "NHL lấy Đại Tráng2/Hằng2 cùng dương ở vị âm vẫn được khen nhờ trung, trỏ Tốn2/Vị Tế2 và PBC. Trung đạo đức ở đây không đồng nhất chính-vị cơ học đã định ở chương4.",
-      "citationIds": ["citation-nhl-intro-ch07-central-counterexamples"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-central-histories",
-      "kind": "author-interpretation",
-      "text": "Huệ Đồng qua Phùng Hữu Lan đếm35 Thoán/36 Tượng có Trung,PBC giải thứ tự chữ trung/chính; Luận Ngữ Nghiêu/Thuấn/Vũ,Tử Trương/Tử Hạ,cuồng/quyên và Tử Tư/Trung Dung được nguồn nêu. NHL giữ nghi lời truyền từ Nghiêu/Thuấn có thật không.",
-      "citationIds": ["citation-nhl-intro-ch07-central-histories"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-moderation-cases",
-      "kind": "author-interpretation",
-      "text": "Càn/Thái thượng suy,Bĩ/Thăng cuối,Đại Quá cương/nhu,Tiết thái quá và Trung Phu,Sư là các case NHL dùng phản cực đoan; không lấy lời NHL Sư làm chiến thuật hay áp nhãn yếu/mạnh người. PDF118 gọi Đại Quá3/6 quá cương rồi lại6 quá nhu,Tiết5 khổ tiết; giữ nhãn lặp/lệch, không sửa bằng record quẻ.",
-      "citationIds": ["citation-nhl-intro-ch07-moderation-cases"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-central-not-indecisive",
-      "kind": "author-interpretation",
-      "text": "NHL phân Trung với lưng chừng/nhu nhược: Càn tiến tới5 rồi ngừng,Sư không hiếu chiến nhưng tự vệ. Đây là đọc theo nguồn, không chỉ dẫn đánh trận hay xác minh character.",
-      "citationIds": ["citation-nhl-intro-ch07-central-not-indecisive"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-time-includes-both",
-      "kind": "author-interpretation",
       "text": "Nguồn nối Hệ Từ biến thích với Thời gồm Trung/Chính, Tùy nghĩa thời, Đại Hữu,Tổn,Cấn,Văn Ngôn,Cách nói hành/đi/ngừng/kịp. Không cấp calendar hoặc quy thời-vị vào ngày tháng tự động.",
-      "citationIds": ["citation-nhl-intro-ch07-time-includes-both"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [119, 120],
+          "section": "nhl-intro-ch07-time-includes-both — quotation",
+          "printedPages": ["119", "120"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ,Văn Ngôn và Thoán — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-every-hexagram-time",
-      "kind": "author-interpretation",
-      "text": "Huệ Đồng được thuật đếm24 Thoán/6 Tượng có Thời,PBC nói11 quẻ; NHL phân đếm chữ với64 quẻ mỗi quẻ một tình thế, không harmonize thành một count.",
-      "citationIds": ["citation-nhl-intro-ch07-every-hexagram-time"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-social-melancholy",
-      "kind": "author-interpretation",
-      "text": "Câu Hệ Từ Hạ7 về người lập Dịch lo được NHL gắn Văn Vương/Dữu Ly, rồi ông liệt bảy thời vui/thịnh vẫn cảnh báo và nhiều nghịch. Đó là cách đọc/allusion, không census trạng thái xã hội đã chứng minh.",
-      "citationIds": ["citation-nhl-intro-ch07-social-melancholy"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-kinh-truyen-pessimism",
-      "kind": "author-interpretation",
       "text": "Bĩ/Đại Hữu lời kinh so Đại Tượng được NHL dùng nói người chú giải gửi tâm sự bi quan hơn; không trộn lời kinh với người giảng hay xác minh mức loạn từng thời.",
-      "citationIds": ["citation-nhl-intro-ch07-kinh-truyen-pessimism"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [122, 122],
+          "section": "nhl-intro-ch07-kinh-truyen-pessimism — quotation",
+          "printedPages": ["122", "122"]
+        }
+      ],
       "attribution": {
         "author": "Bĩ/Đại Hữu Kinh và Đại Tượng — lời được dẫn",
         "via": "Nguyễn Hiến Lê — đoạn dẫn/diễn giải trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-small-times",
-      "kind": "author-interpretation",
-      "text": "Càn/Tiệm,Nhu/Bác có tuần tự,nhưng Lữ không theo trước/sau thời gian, mỗi hào một hoàn cảnh. PDF122 lặp hào5 cho rút lui sau thành công5; giữ lỗi nhãn, không sửa hào6 vào source claim.",
-      "citationIds": ["citation-nhl-intro-ch07-small-times"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-same-position-other-time",
-      "kind": "author-interpretation",
-      "text": "Nguồn so Càn5/Truân5,Càn2–5/Lý2–5,Ký Tế1/Vị Tế1,Tùy4,Khốn2/5,Phong1–4/Tụng2–5 để cho ý hào tùy toàn quẻ. Đồng nét/vị không đủ suy cùng kết quả; không rewriting commentary quẻ đã có.",
-      "citationIds": ["citation-nhl-intro-ch07-same-position-other-time"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-only-time",
-      "kind": "author-interpretation",
-      "text": "NHL kết Thời đi cùng giữ Trung/Chính và nhận tùy thời khó,cần trí/đức. Tăng không luôn tốt,giảm không luôn xấu và thành tín cũng cần biến thông; không algorithm đầu tư/đời người.",
-      "citationIds": ["citation-nhl-intro-ch07-only-time"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-gentleman-synthesis",
-      "kind": "author-interpretation",
-      "text": "NHL gọi Đạo Dịch thực tế,không linh hồn/kiếp trước sau,tu thân/hành động có mức và biết ẩn chờ; khái quát lịch sử hòa Nho/Lão và dân tộc là đánh giá nguồn, không sự kiện consensus.",
-      "citationIds": ["citation-nhl-intro-ch07-gentleman-synthesis"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-optimism-conflict",
-      "kind": "author-interpretation",
-      "text": "NHL đọc Lâm/Cấu,Truân/Kiển/Khốn,Tụy/Đại Súc/Quải,Phục/Bác và người chuyển phe như truyện thiện/ác lạc quan; đem kháng Pháp/Mỹ làm analogy chính nghĩa của mình. Không xác minh lịch sử hay thúc bạo lực/hy sinh/nhắm kẻ tiểu nhân.",
-      "citationIds": ["citation-nhl-intro-ch07-optimism-conflict"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-ending-date",
-      "kind": "author-interpretation",
-      "text": "Nguồn thừa nhận thiện và ác đều có lúc thắng, vẫn trọng bài học quân tử; kết mùa xuân Kỷ Mùi1979. Date này là phần viết, không xác lập năm xuất bản hay rights.",
-      "citationIds": ["citation-nhl-intro-ch07-ending-date"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-introduction-07-nhl-intro-ch07-orphan-note-marker",
-      "kind": "author-interpretation",
-      "text": "PDF124 có dấu(1) cạnh không thần bí nhưng không thấy nội dung note riêng ở124–126; không dựng chú thích hoặc nhận đã mất từ bản in khác.",
-      "citationIds": ["citation-nhl-intro-ch07-orphan-note-marker"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt quan điểm và ví dụ lịch sử của nguồn, không xác minh tác giả truyền gán, niên đại, efficacy hay khoa học. Không dùng làm lịch, thuật toán diễn giải, dự báo bệnh/tai nạn, tư vấn y tế/pháp lý/an toàn/tài chính/chính trị hoặc chuẩn giới/giai cấp, cáo buộc, ép buộc hay hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-intro-ch07-layer-example",
-      "citation-nhl-intro-ch07-nine-virtues",
-      "citation-nhl-intro-ch07-modesty-quotes",
-      "citation-nhl-intro-ch07-modesty-cases",
-      "citation-nhl-intro-ch07-strength-cases",
-      "citation-nhl-intro-ch07-softness-cases",
-      "citation-nhl-intro-ch07-confucius-learning",
-      "citation-nhl-intro-ch07-lao-softness",
-      "citation-nhl-intro-ch07-compliance-limits",
-      "citation-nhl-intro-ch07-activity-stillness",
-      "citation-nhl-intro-ch07-ornament",
-      "citation-nhl-intro-ch07-zheng-summary",
-      "citation-nhl-intro-ch07-central-counterexamples",
-      "citation-nhl-intro-ch07-central-histories",
-      "citation-nhl-intro-ch07-moderation-cases",
-      "citation-nhl-intro-ch07-central-not-indecisive",
-      "citation-nhl-intro-ch07-time-includes-both",
-      "citation-nhl-intro-ch07-every-hexagram-time",
-      "citation-nhl-intro-ch07-social-melancholy",
-      "citation-nhl-intro-ch07-kinh-truyen-pessimism",
-      "citation-nhl-intro-ch07-small-times",
-      "citation-nhl-intro-ch07-same-position-other-time",
-      "citation-nhl-intro-ch07-only-time",
-      "citation-nhl-intro-ch07-gentleman-synthesis",
-      "citation-nhl-intro-ch07-optimism-conflict",
-      "citation-nhl-intro-ch07-ending-date",
-      "citation-nhl-intro-ch07-orphan-note-marker"
-    ],
-    "note": "Đối chiếu ảnh đầy trang 1.5x và extraction của các trang thuộc đơn vị. Chỉ source comparison059; audit092,verification/certification còn mở. Không xuất bản prose/ảnh nguồn."
-  }
+  ]
 }

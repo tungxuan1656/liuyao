@@ -1,115 +1,144 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-35",
   "type": "hexagram",
   "title": "Hỏa Địa Tấn",
   "aliases": ["Tấn"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-earth", "trigram-fire"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-35-structure",
-      "kind": "structural-fact",
       "text": "Hỏa Địa Tấn có ngoại quái Ly và nội quái Khôn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q35-overview-nhl",
-        "citation-pbc-q35-overview-pbc",
-        "citation-ntt-q35-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [242, 242],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["242", "242"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [344, 346],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [558, 560],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-35-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giảng Tấn theo ánh sáng lên trên đất, người dưới thuận theo người trên sáng. Ngựa ban và ba lần tiếp trong ngày là hình ảnh được trọng đãi ở trật tự cổ, không phải lời báo số phần thưởng.",
-      "citationIds": ["citation-nhl-q35-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [242, 242],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["242", "242"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       },
-      "conditions": [
-        "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
-      ]
+      "condition": "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
     },
     {
-      "id": "hexagram-35-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu cho sự tiến cần người dưới thuận và người trên sáng, có lòng giúp việc chung. Ông đọc nhu tiến theo ngôi năm vốn của Càn được nhu thay thế; đó là lớp giải tượng của tác giả.",
-      "citationIds": ["citation-pbc-q35-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [344, 346],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       },
-      "conditions": [
-        "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
-      ]
+      "condition": "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
     },
     {
-      "id": "hexagram-35-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di đọc Tấn theo ánh sáng lên trên đất và đức sáng ngày càng phát. Có người trên sáng, người dưới thuận cùng góp việc là bối cảnh hình ảnh trọng đãi trong lời quẻ.",
-      "citationIds": ["citation-ntt-q35-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [558, 560],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
-      ]
+      "condition": "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
     },
     {
-      "id": "hexagram-35-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy giải nhu tiến bằng cách so với Quán, đưa hào âm bốn lên vị năm. Đây là phép giải nguồn hình quẻ trong chú giải, khác Phan Bội Châu đặt ở ngôi năm của Càn; không là thao tác đổi hào gieo của ứng dụng.",
-      "citationIds": ["citation-ntt-q35-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [559, 559],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       },
-      "conditions": [
-        "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
-      ]
+      "condition": "Ngựa ban, tiếp kiến và ngôi vua thuộc bối cảnh chú giải cổ; không dự báo phần thưởng, công việc hoặc thao tác đổi quẻ gieo."
     }
   ],
-  "relatedIds": ["trigram-earth", "trigram-fire"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yin", "yang", "yin", "yang"],
-    "kingWenNumber": 35,
-    "upperTrigramId": "trigram-fire",
-    "lowerTrigramId": "trigram-earth",
-    "claimIds": ["hexagram-35-structure"]
-  },
+  "kingWenNumber": 35,
+  "upperTrigramId": "trigram-fire",
+  "lowerTrigramId": "trigram-earth",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-35-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào đầu muốn tiến nhưng người ứng ở hào bốn không trung chính nên không giúp được, như bị chặn. Khi chưa được tin, tự sửa và giữ bình tĩnh giúp tránh lỗi.",
-          "citationIds": ["citation-nhl-q35-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [242, 243],
+              "section": "Hào 1 — diễn giải",
+              "printedPages": ["242", "243"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-35-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào đầu ở lúc tiến bị dừng, người trên chưa tin mình. Biết tự giữ chính và rộng lòng, không vội ép sự tín nhiệm, là điều kiện tốt của lời hào.",
-          "citationIds": ["citation-pbc-q35-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [346, 346],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-35-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào đầu chưa được tin thì nên khoan thai tự sửa, không vội cầu hợp. Lời chưa chịu mệnh giới hạn tình huống này ở người chưa nhận trách nhiệm; không cho người đã nhận việc bỏ phận sự.",
-          "citationIds": ["citation-ntt-q35-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [561, 562],
+              "section": "Hào 1 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -121,40 +150,57 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-35-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào hai trung chính muốn tiến nhưng không có chính ứng với năm nên lo. Hào năm cùng đức trung được ví với bà ở ngôi cao: không giúp trực tiếp trong việc nhưng vẫn có thể ban phúc trong cách giảng của ông.",
-          "citationIds": ["citation-nhl-q35-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [243, 243],
+              "section": "Hào 2 — diễn giải",
+              "printedPages": ["243", "243"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-35-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt lo của hào hai ở việc chưa có chính ứng. Giữ trung chính có thể khiến người trên cùng đức tìm đến; hình ảnh bà ở ngôi cao không biến thành dự báo phúc từ tổ tiên.",
-          "citationIds": ["citation-pbc-q35-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [346, 347],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-35-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào hai và năm đều âm nên không chính ứng, nhưng cùng trung chính. Đức được giữ lâu và gặp người trên sáng là bối cảnh của việc được giúp về sau.",
-          "citationIds": ["citation-ntt-q35-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [562, 563],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-35-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy cho hào hai mềm trung chính nhưng không có ứng nên lo khi muốn tiến. Ông còn đọc vương mẫu trong lời chiêm cúng bà theo nghi lễ cổ; giữ chính là điều kiện, không thành yêu cầu nghi lễ cho người dùng.",
-          "citationIds": ["citation-ntt-q35-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [563, 563],
+              "section": "Hào 2 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -166,30 +212,43 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-35-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào ba không trung chính nhưng cùng hai hào dưới muốn tiến và được họ tin. Sự tin và đồng lòng ấy giải lời mất hối trong tình thế riêng của quẻ.",
-          "citationIds": ["citation-nhl-q35-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [243, 243],
+              "section": "Hào 3 — diễn giải",
+              "printedPages": ["243", "243"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-35-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc sự tin của nhóm dưới theo đồng chí tiến làm điều phải. Hào ba được giúp bởi sự đồng lòng ấy, không phải cứ nhiều người tin thì mọi việc thành đúng.",
-          "citationIds": ["citation-pbc-q35-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [347, 347],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-35-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào ba ở đầu nhóm thuận, cùng người dưới có chí tiến lên nên được tin. Hết hối thuộc việc theo người sáng và điều phải, không xóa yêu cầu tự xét đúng sai.",
-          "citationIds": ["citation-ntt-q35-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [564, 564],
+              "section": "Hào 3 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -201,40 +260,57 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-35-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê ví hào bốn với chuột tham và sợ: đã ở sai chỗ còn muốn giữ lợi, sợ người dưới tiến. Cố bền trong cách xử ấy là điều nguy, khác giữ đường chính.",
-          "citationIds": ["citation-nhl-q35-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [243, 243],
+              "section": "Hào 4 — diễn giải",
+              "printedPages": ["243", "243"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-35-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc chuột theo người tham vị, nghi sợ và cản người khác tiến. Trinh ở lời răn này được ông hiểu là cố giữ nết xấu, nên càng bền càng nguy.",
-          "citationIds": ["citation-pbc-q35-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [347, 348],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-35-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào bốn ở vị không đáng, lo mất chỗ mà muốn ngăn người dưới. Giữ mãi lòng tham và sợ ấy là nghĩa chính vào điều xấu trong cách đọc của ông.",
-          "citationIds": ["citation-ntt-q35-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [564, 565],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-35-line-4-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc nguy ở vị hào bốn không đáng, dù người xem có chính cũng còn nguy trong thế ấy. Cách đọc này giữ riêng với ba lời giảng đặt trinh ở sự cố giữ lòng tham và sợ.",
-          "citationIds": ["citation-ntt-q35-line-4-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [565, 565],
+              "section": "Hào 4 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -246,40 +322,57 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-35-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào năm nhu trung ở thể sáng, có người dưới theo nên không cần lo riêng được mất. Giữ đức sáng là điều kiện việc tiến thuận trong lời giảng.",
-          "citationIds": ["citation-nhl-q35-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [244, 244],
+              "section": "Hào 5 — diễn giải",
+              "printedPages": ["244", "244"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-35-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào năm ở người sáng giữa ngôi cao, cả trên dưới thuận theo. Bỏ sự tính riêng lợi hại để giữ đức sáng là cách làm mất hối trong tình thế này.",
-          "citationIds": ["citation-pbc-q35-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [348, 348],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-35-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di cho hào năm sáng và được nhiều người theo thì nên tin người giúp, tránh tự kiểm soát mọi việc vì sợ được mất. Lòng không vướng tính riêng giúp việc chung tiến; đức sáng và sự hỗ trợ vẫn là điều kiện.",
-          "citationIds": ["citation-ntt-q35-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [566, 567],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-35-line-5-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy cho hào năm nhu trung trong thể sáng có thể bỏ lo được mất để tiến. Người xem cần có đức như hình hào mới hợp lời ấy; không hứa kết quả chỉ vì ngừng lo.",
-          "citationIds": ["citation-ntt-q35-line-5-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [566, 566],
+              "section": "Hào 5 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -291,109 +384,95 @@
       "position": 6,
       "polarity": "yang",
       "label": "Thượng cửu",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-35-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc sừng theo người cương và ham tiến tới quá mức, chỉ còn đủ lo phần việc riêng nhỏ. Dù việc giới hạn ấy có thể thành và không lỗi, chưa đủ làm việc lớn nên vẫn đáng tiếc.",
-          "citationIds": ["citation-nhl-q35-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [244, 244],
+              "section": "Hào 6 — diễn giải",
+              "printedPages": ["244", "244"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           },
-          "conditions": [
-            "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
-          ]
+          "condition": "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-35-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt hào cuối ở sự tiến đã quá, sức chỉ hợp việc trong phạm vi nhỏ của mình. Lời tốt và không lỗi có giới hạn ấy; cậy cương để mở rộng quá mức vẫn đáng thẹn.",
-          "citationIds": ["citation-pbc-q35-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [348, 349],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           },
-          "conditions": [
-            "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
-          ]
+          "condition": "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-35-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giảng phạt ấp theo tự sửa điều riêng trong mình, thay vì dùng cương để xử rộng người khác. Việc tự sửa có thể đúng nhưng quá mạnh, thiếu trung hòa vẫn là điều đáng tiếc.",
-          "citationIds": ["citation-ntt-q35-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [567, 568],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
-          ]
+          "condition": "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
         },
         {
-          "id": "hexagram-35-line-6-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy đọc phạt ấp theo việc dùng sức với phần ấp riêng trong bối cảnh quyền lực cổ. Dù chính vẫn còn quá cương và đáng tiếc; cách đọc việc bên ngoài này khác Trình Di nhấn tự sửa bên trong.",
-          "citationIds": ["citation-ntt-q35-line-6-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [567, 567],
+              "section": "Hào 6 — diễn giải"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
-          "conditions": [
-            "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
-          ]
+          "condition": "Phạt ấp được giữ theo nghĩa riêng của tác giả trong bối cảnh cổ, không thành chỉ dẫn xử phạt người hiện đại."
         }
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-ntt-tan-second-label",
-      "status": "resolved",
-      "description": "NTT PDF 563 Chu Hy mở đoạn hào hai bằng Hào Sáu Năm, khác Lục Nhị ở đầu hào và bối cảnh không có ứng phía trên.",
-      "citationIds": [
-        "citation-ntt-q35-line-2-chu-hy",
-        "citation-ntt-q35-line-2-ntt",
-        "citation-nhl-q35-line-2-nhl",
-        "citation-pbc-q35-line-2-pbc"
-      ],
-      "resolution": "Ảnh xác nhận nhãn Năm. Giữ nhận định ở hào hai theo đầu hào và bối cảnh cả ba sách; hào năm vẫn là đối tượng vương mẫu được đoạn này nhắc tới."
+      "text": "NTT PDF 563 Chu Hy mở đoạn hào hai bằng Hào Sáu Năm, khác Lục Nhị ở đầu hào và bối cảnh không có ứng phía trên. Ảnh xác nhận nhãn Năm. Giữ nhận định ở hào hai theo đầu hào và bối cảnh cả ba sách; hào năm vẫn là đối tượng vương mẫu được đoạn này nhắc tới.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [563, 563],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [562, 563],
+          "section": "Hào 2 — diễn giải"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [243, 243],
+          "section": "Hào 2 — diễn giải",
+          "printedPages": ["243", "243"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [346, 347],
+          "section": "Hào 2 — diễn giải"
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q35-overview-nhl",
-      "citation-pbc-q35-overview-pbc",
-      "citation-ntt-q35-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q35-overview-chu-hy",
-      "citation-nhl-q35-line-1-nhl",
-      "citation-pbc-q35-line-1-pbc",
-      "citation-ntt-q35-line-1-ntt",
-      "citation-nhl-q35-line-2-nhl",
-      "citation-pbc-q35-line-2-pbc",
-      "citation-ntt-q35-line-2-ntt",
-      "citation-ntt-q35-line-2-chu-hy",
-      "citation-nhl-q35-line-3-nhl",
-      "citation-pbc-q35-line-3-pbc",
-      "citation-ntt-q35-line-3-ntt",
-      "citation-nhl-q35-line-4-nhl",
-      "citation-pbc-q35-line-4-pbc",
-      "citation-ntt-q35-line-4-ntt",
-      "citation-ntt-q35-line-4-chu-hy",
-      "citation-nhl-q35-line-5-nhl",
-      "citation-pbc-q35-line-5-pbc",
-      "citation-ntt-q35-line-5-ntt",
-      "citation-ntt-q35-line-5-chu-hy",
-      "citation-nhl-q35-line-6-nhl",
-      "citation-pbc-q35-line-6-pbc",
-      "citation-ntt-q35-line-6-ntt",
-      "citation-ntt-q35-line-6-chu-hy"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh tiêu đề, cấu trúc và các lỗi nguồn được ghi nhận. Cách đọc khác nhau giữ theo tác giả. Nhãn trang NHL kiểm tra trên PDF. Chưa có phê duyệt chuyên gia độc lập, không xác nhận chuyện lịch sử hoặc khả năng dự báo."
-  }
+  ]
 }

@@ -1,4 +1,4 @@
-# feat-093 — Audit ordered lessons and every worked example
+# feat-093 — Review and improve ordered lessons and every worked example
 
 ## Goal
 
@@ -8,7 +8,7 @@ Record current evidence for every assigned review unit.
 
 **Intended work:**
 
-- Intended group ledgers under docs/reviews/knowledge/; enumerate every assigned inventory unit.
+- Review the assigned concepts, examples, and tables; record material content findings.
 
 ## Non-goals
 
@@ -19,9 +19,9 @@ New interpretation, calendar, or UI behavior.
 - [ ] Foundations lessons.
 - [ ] Classical-reading lessons.
 - [ ] Liu Yao-board lessons.
-- [ ] Every worked example, input, claim route, and independently expected result.
-- [ ] Review every explanatory block against its supporting claims and the intended audience.
-- [ ] Decisions have current hashes, exact locators, findings, and reviewer identity; rejected units stay open.
+- [ ] Every worked example, input, source route, and independently expected result.
+- [ ] Review every explanatory block against its supporting records and source passages and the intended audience.
+- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
@@ -32,8 +32,8 @@ New interpretation, calendar, or UI behavior.
 
 ## Plan
 
-1. Create the complete unit checklist for this group.
-2. Review and commit each section/table checkpoint with current hashes and findings.
+1. Identify the useful explanations and tables in this group.
+2. Review each section/table and record its material content findings.
 3. Verify all unit decisions and close only after rejected units are repaired.
 
 ## Verify

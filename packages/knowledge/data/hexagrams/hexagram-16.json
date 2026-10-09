@@ -1,103 +1,140 @@
 {
-  "schemaVersion": 1,
   "id": "hexagram-16",
   "type": "hexagram",
   "title": "Lôi Địa Dự",
   "aliases": ["Dự"],
   "topicIds": ["topic-hexagrams", "topic-line-commentary"],
-  "claims": [
+  "relatedIds": ["trigram-earth", "trigram-thunder"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "hexagram-16-structure",
-      "kind": "structural-fact",
       "text": "Lôi Địa Dự có ngoại quái Chấn và nội quái Khôn. Hào được đếm từ dưới lên.",
-      "citationIds": [
-        "citation-nhl-q16-overview-nhl",
-        "citation-pbc-q16-overview-pbc",
-        "citation-ntt-q16-overview-ntt",
-        "citation-nhl-p59-61-technical"
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [185, 185],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["185", "185"]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [189, 191],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [321, 325],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61],
+          "section": "Thuật ngữ; Hào cửu — Hào lục",
+          "printedPages": ["59", "61"]
+        }
       ]
     },
     {
-      "id": "hexagram-16-overview-nhl",
-      "kind": "author-interpretation",
       "text": "Nguyễn Hiến Lê giải Dự theo niềm vui khi hành động hợp lẽ và được mọi người thuận theo. Một hào dương ở vị bốn dẫn việc; lời quẻ đặt niềm vui chung vào việc tổ chức và hành động trong bối cảnh lịch sử.",
-      "citationIds": ["citation-nhl-q16-overview-nhl"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [185, 185],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["185", "185"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
       }
     },
     {
-      "id": "hexagram-16-overview-pbc",
-      "kind": "author-interpretation",
       "text": "Phan Bội Châu lấy Chấn động trên Khôn thuận làm tượng hành động được người cùng theo. Niềm vui chung cần hợp lẽ và hợp thời, khác với mỗi người chỉ say vui riêng.",
-      "citationIds": ["citation-pbc-q16-overview-pbc"],
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [189, 191],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu"
       }
     },
     {
-      "id": "hexagram-16-overview-ntt",
-      "kind": "author-interpretation",
       "text": "Trình Di giải Dự là động mà thuận lẽ, được trên dưới hưởng ứng. Ông dùng việc chư hầu, quân chúng và âm nhạc để giảng sự hòa vui chung trong bối cảnh cổ.",
-      "citationIds": ["citation-ntt-q16-overview-ntt"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [321, 325],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     },
     {
-      "id": "hexagram-16-overview-chu-hy",
-      "kind": "author-interpretation",
       "text": "Chu Hy phân biệt lời quẻ nói nhiều người cùng vui với phần lớn lời hào nói sự vui riêng. Ngoài hào bốn, vui riêng còn có điều tốt xấu tùy cách tự giữ, không thể suy tất cả đều tốt từ tên Dự.",
-      "citationIds": ["citation-ntt-q16-overview-chu-hy"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [325, 325],
+          "section": "Tổng quan và cấu trúc"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch và chú giải"
       }
     }
   ],
-  "relatedIds": ["trigram-earth", "trigram-thunder"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yin", "yin", "yin", "yang", "yin", "yin"],
-    "kingWenNumber": 16,
-    "upperTrigramId": "trigram-thunder",
-    "lowerTrigramId": "trigram-earth",
-    "claimIds": ["hexagram-16-structure"]
-  },
+  "kingWenNumber": 16,
+  "upperTrigramId": "trigram-thunder",
+  "lowerTrigramId": "trigram-earth",
   "lines": [
     {
       "position": 1,
       "polarity": "yin",
       "label": "Sơ lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-16-line-1-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê cho hào đầu được hào bốn hỗ trợ mà khoe niềm vui riêng. Sự kiêu và nông nổi trong hoàn cảnh ấy là nguyên nhân của lời xấu.",
-          "citationIds": ["citation-nhl-q16-line-1-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [185, 186],
+              "section": "Hào 1 — diễn giải và chú thích",
+              "printedPages": ["185", "186"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-16-line-1-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đặt lỗi ở người có chỗ dựa nơi hào bốn nên tự reo khoe và cậy thế. Tiếng vui tự phô khác với tiếng khiêm tự nhiên do đức thật.",
-          "citationIds": ["citation-pbc-q16-line-1-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [191, 192],
+              "section": "Hào 1 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-16-line-1-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di xem hào đầu không giữ trung chính mà được người trên yêu nên vui tới mức phát tiếng. Lòng quá đầy dễ thành kiêu và hành động càn, là điều lời hào răn.",
-          "citationIds": ["citation-ntt-q16-line-1-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [325, 326],
+              "section": "Hào 1 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -109,40 +146,57 @@
       "position": 2,
       "polarity": "yin",
       "label": "Lục nhị",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-16-line-2-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc tiết tháo như đá theo sự vững bên trong, không nịnh trên hoặc khinh dưới. Nhận ra dấu hiệu sớm thì dừng nhanh, không để niềm vui kéo dài thành sai.",
-          "citationIds": ["citation-nhl-q16-line-2-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [186, 186],
+              "section": "Hào 2 — diễn giải và chú thích",
+              "printedPages": ["186", "186"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-16-line-2-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem hào hai giữ trung chính nên nhận dấu hiệu biến đổi mà trở lại đúng đường sớm. Không trọn ngày nhấn mạnh sự kịp thời, không lập thành giờ hạn dự báo.",
-          "citationIds": ["citation-pbc-q16-line-2-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [192, 193],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-16-line-2-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào hai giữ tiết tháo vững trong khi dễ bị vui chơi cuốn đi. Có trung chính thì bỏ sự vui sai rất nhanh, không lần lữa chờ hết ngày.",
-          "citationIds": ["citation-ntt-q16-line-2-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [326, 327],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-16-line-2-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy nhấn mạnh đức yên tĩnh và vững khiến sự suy xét sáng rõ, nhận ra cơ vi mà không đợi trọn ngày. Ông giữ lời chiêm tốt ở điều kiện trung chính ấy.",
-          "citationIds": ["citation-ntt-q16-line-2-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [327, 327],
+              "section": "Hào 2 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -154,40 +208,57 @@
       "position": 3,
       "polarity": "yin",
       "label": "Lục tam",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-16-line-3-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào ba nhìn lên hào bốn để cầu giàu và thế nên phải hối lại. Biết quay về đường đúng sớm giúp tránh hối tiếc do chậm sửa.",
-          "citationIds": ["citation-nhl-q16-line-3-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [186, 186],
+              "section": "Hào 3 — diễn giải và chú thích",
+              "printedPages": ["186", "186"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-16-line-3-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc việc nhìn lên hào bốn như cậy người có quyền để vui về lợi riêng. Phải sửa ngay ý ấy; chậm quay lại càng thêm hối.",
-          "citationIds": ["citation-pbc-q16-line-3-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [193, 194],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-16-line-3-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào ba ở thế tiến cũng hối mà chậm tiến cũng hối vì tự xử không trung chính. Ông không chỉ giải câu chậm có hối thành chậm rút khỏi việc cầu vui.",
-          "citationIds": ["citation-ntt-q16-line-3-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [327, 328],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
           }
         },
         {
-          "id": "hexagram-16-line-3-chu-hy",
-          "kind": "author-interpretation",
           "text": "Chu Hy khuyên hào ba hối lại mau khi nhìn lên người làm chủ niềm vui mà mê về vui riêng. Chậm sửa gây hối tiếc, khác cách Trình Di nhấn mạnh tiến lui đều hối vì thế không chính.",
-          "citationIds": ["citation-ntt-q16-line-3-chu-hy"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [328, 328],
+              "section": "Hào 3 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Chu Hy",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -199,30 +270,43 @@
       "position": 4,
       "polarity": "yang",
       "label": "Cửu tứ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-16-line-4-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê xem hào bốn một mình có tài và được mọi người theo để tạo niềm vui chung. Chân thành, bỏ nghi ngại và cùng bạn giúp việc mới đáp được trách nhiệm ấy.",
-          "citationIds": ["citation-nhl-q16-line-4-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [186, 186],
+              "section": "Hào 4 — diễn giải và chú thích",
+              "printedPages": ["186", "186"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-16-line-4-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu giải hào bốn có tài, được trên dưới tin nhưng khó một mình gánh việc lớn. Lòng thành và không nghi giúp người cùng chí nhanh chóng tụ lại.",
-          "citationIds": ["citation-pbc-q16-line-4-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [194, 195],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-16-line-4-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di đặt hào bốn ở người gánh việc cho vua mềm, khiến thiên hạ được vui. Chỗ trách nhiệm ấy dễ sinh ngờ lo; hết lòng thành thay cho nghi mới có người cùng giúp.",
-          "citationIds": ["citation-ntt-q16-line-4-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [328, 329],
+              "section": "Hào 4 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -234,30 +318,43 @@
       "position": 5,
       "polarity": "yin",
       "label": "Lục ngũ",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-16-line-5-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê lấy bệnh dai dẳng mà không chết làm hình ảnh người đứng đầu yếu, quyền vào tay hào bốn nhưng ngôi còn. Đây là phép giảng về thế chính trị, không phải lời xác định bệnh hay sống chết của người hỏi.",
-          "citationIds": ["citation-nhl-q16-line-5-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [186, 187],
+              "section": "Hào 5 — diễn giải và chú thích",
+              "printedPages": ["186", "187"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-16-line-5-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu đọc trinh trong hào này theo sự kéo dài: người ở ngôi cao không có thực quyền nhưng chưa mất ngôi. Hình ảnh bệnh dai dẳng nói về hoàn cảnh quyền lực trong lời chú giải.",
-          "citationIds": ["citation-pbc-q16-line-5-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [195, 195],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-16-line-5-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải hào năm là người đứng đầu mê vui và yếu, bị người dưới có sức lấn át. Có tật mà chưa chết ví với mất quyền nhưng còn ngôi, không phải quy tắc chẩn đoán hoặc tiên đoán tuổi thọ.",
-          "citationIds": ["citation-ntt-q16-line-5-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [330, 331],
+              "section": "Hào 5 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -269,30 +366,43 @@
       "position": 6,
       "polarity": "yin",
       "label": "Thượng lục",
-      "claims": [
+      "entries": [
         {
-          "id": "hexagram-16-line-6-nhl",
-          "kind": "author-interpretation",
           "text": "Nguyễn Hiến Lê đọc hào cuối theo người say vui tới mờ tối. Dù lỗi đã thành, thuộc thể động nên biết thay đổi vẫn có thể tránh lỗi tiếp.",
-          "citationIds": ["citation-nhl-q16-line-6-nhl"],
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [187, 187],
+              "section": "Hào 6 — diễn giải và chú thích",
+              "printedPages": ["187", "187"]
+            }
+          ],
           "attribution": {
             "author": "Nguyễn Hiến Lê"
           }
         },
         {
-          "id": "hexagram-16-line-6-pbc",
-          "kind": "author-interpretation",
           "text": "Phan Bội Châu xem cuộc vui tới cuối dễ thành mê tối nhưng còn khả năng sửa đổi. Lời không lỗi phụ thuộc sự cải quá, không tự có khi cứ giữ niềm vui cũ.",
-          "citationIds": ["citation-pbc-q16-line-6-pbc"],
+          "references": [
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [195, 196],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Phan Bội Châu"
           }
         },
         {
-          "id": "hexagram-16-line-6-ntt",
-          "kind": "author-interpretation",
           "text": "Trình Di giải niềm vui đã thành mê đắm nhưng ở cuối có nghĩa chuyển đổi. Sửa nhanh để trở lại điều đúng mới mở khả năng không lỗi.",
-          "citationIds": ["citation-ntt-q16-line-6-ntt"],
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [331, 332],
+              "section": "Hào 6 — diễn giải và chú thích"
+            }
+          ],
           "attribution": {
             "author": "Trình Di",
             "via": "Ngô Tất Tố — dịch và chú giải"
@@ -301,55 +411,38 @@
       ]
     }
   ],
-  "specialPassages": [],
-  "discrepancies": [
+  "notes": [
     {
-      "id": "discrepancy-pbc-du-upper-trigram",
-      "status": "resolved",
-      "description": "PBC PDF 189 tiêu đề Dự ghi Cấn trên, Khôn dưới, trái phần giải nghĩa ngay trang đó.",
-      "citationIds": ["citation-pbc-q16-overview-pbc", "citation-nhl-q16-overview-nhl"],
-      "resolution": "Ảnh tiêu đề NHL PDF 185 và hình quẻ PBC PDF 189 cho hào bốn dương, các hào còn lại âm. Cả phần giải nghĩa PBC PDF 189 và NTT PDF 321 đều nói Chấn trên Khôn dưới; giữ ngoại Chấn."
+      "text": "PBC PDF 189 tiêu đề Dự ghi Cấn trên, Khôn dưới, trái phần giải nghĩa ngay trang đó. Ảnh tiêu đề NHL PDF 185 và hình quẻ PBC PDF 189 cho hào bốn dương, các hào còn lại âm. Cả phần giải nghĩa PBC PDF 189 và NTT PDF 321 đều nói Chấn trên Khôn dưới; giữ ngoại Chấn.",
+      "references": [
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [189, 191],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [185, 185],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["185", "185"]
+        }
+      ]
     },
     {
-      "id": "discrepancy-ntt-du-upper-trigram",
-      "status": "resolved",
-      "description": "NTT PDF 321 tiêu đề Dự ghi Cấn trên, Khôn dưới, trái phần giải nghĩa ngay trang đó.",
-      "citationIds": ["citation-ntt-q16-overview-ntt", "citation-nhl-q16-overview-nhl"],
-      "resolution": "Ảnh tiêu đề NHL PDF 185 và hình quẻ PBC PDF 189 cho hào bốn dương, các hào còn lại âm. Cả phần giải nghĩa PBC PDF 189 và NTT PDF 321 đều nói Chấn trên Khôn dưới; giữ ngoại Chấn."
+      "text": "NTT PDF 321 tiêu đề Dự ghi Cấn trên, Khôn dưới, trái phần giải nghĩa ngay trang đó. Ảnh tiêu đề NHL PDF 185 và hình quẻ PBC PDF 189 cho hào bốn dương, các hào còn lại âm. Cả phần giải nghĩa PBC PDF 189 và NTT PDF 321 đều nói Chấn trên Khôn dưới; giữ ngoại Chấn.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [321, 325],
+          "section": "Tổng quan và cấu trúc"
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [185, 185],
+          "section": "Tổng quan và cấu trúc",
+          "printedPages": ["185", "185"]
+        }
+      ]
     }
-  ],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-q16-overview-nhl",
-      "citation-pbc-q16-overview-pbc",
-      "citation-ntt-q16-overview-ntt",
-      "citation-nhl-p59-61-technical",
-      "citation-ntt-q16-overview-chu-hy",
-      "citation-nhl-q16-line-1-nhl",
-      "citation-pbc-q16-line-1-pbc",
-      "citation-ntt-q16-line-1-ntt",
-      "citation-nhl-q16-line-2-nhl",
-      "citation-pbc-q16-line-2-pbc",
-      "citation-ntt-q16-line-2-ntt",
-      "citation-ntt-q16-line-2-chu-hy",
-      "citation-nhl-q16-line-3-nhl",
-      "citation-pbc-q16-line-3-pbc",
-      "citation-ntt-q16-line-3-ntt",
-      "citation-ntt-q16-line-3-chu-hy",
-      "citation-nhl-q16-line-4-nhl",
-      "citation-pbc-q16-line-4-pbc",
-      "citation-ntt-q16-line-4-ntt",
-      "citation-nhl-q16-line-5-nhl",
-      "citation-pbc-q16-line-5-pbc",
-      "citation-ntt-q16-line-5-ntt",
-      "citation-nhl-q16-line-6-nhl",
-      "citation-pbc-q16-line-6-pbc",
-      "citation-ntt-q16-line-6-ntt"
-    ],
-    "note": "Đã đọc toàn bộ đoạn quẻ, sáu hào và chú thích trong ba bản sách; xem ảnh các tiêu đề, cấu trúc và trang có lỗi chép được ghi nhận. Các cách đọc khác nhau được giữ theo tác giả; chú thích Ngô Tất Tố là lớp riêng. Bộ dữ liệu chọn diễn giải, không chứng nhận toàn bộ sách hoặc giả thuyết lịch sử; chưa có xác nhận của chuyên gia độc lập."
-  }
+  ]
 }

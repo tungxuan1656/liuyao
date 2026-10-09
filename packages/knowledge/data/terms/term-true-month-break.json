@@ -1,36 +1,26 @@
 {
-  "schemaVersion": 1,
   "id": "term-true-month-break",
   "type": "term",
   "title": "Chân Phá",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-month-break", "term-decade-empty", "article-month-break-conditions"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-true-month-break-definition",
-      "kind": "author-interpretation",
       "text": "Trong mục 9, Vương Hồng Tự gọi Chân Phá ở tổ hợp hào đã Phá, an tĩnh lại lâm Không, suy nhược và gặp động hào, Nguyệt kiến, Nhật thần khắc hại. Cần giữ cả hoàn cảnh đi kèm, không lấy riêng một dấu hiệu để kết luận cuối cùng bị Phá.",
-      "citationIds": ["citation-bpct-ch5-month-break"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [70, 70],
+          "section": "Mục 9 — Nguyệt phá",
+          "printedPages": ["58", "58"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch và chú giải"
       },
-      "conditions": [
-        "Giữ nguyên tổ hợp được nguồn nêu; chưa lập điều kiện đủ hoặc bộ phân loại tự động."
-      ]
+      "condition": "Giữ nguyên tổ hợp được nguồn nêu; chưa lập điều kiện đủ hoặc bộ phân loại tự động."
     }
-  ],
-  "relatedIds": ["term-month-break", "term-decade-empty", "article-month-break-conditions"],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-02",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-ch5-month-break"],
-    "note": "Đã đọc mục 8–10 Chương 5 và các đoạn liên quan; xem ảnh PDF 16–17, 41, 68, 70 và chú thích 9 PDF 462. Giữ điều kiện và lớp tác giả riêng với chú thích Vĩnh Cao. Chỉ phát hành diễn giải được chọn, chưa xác nhận toàn bộ các phép xét lịch hoặc các chiêm nghiệm; chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  }
+  ]
 }

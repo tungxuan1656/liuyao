@@ -154,6 +154,7 @@ export interface KnowledgeSource {
   readonly publication: string;
   readonly rights: string;
   readonly provenance: string;
+  readonly limitations?: readonly string[];
 }
 
 export interface SourceReference {

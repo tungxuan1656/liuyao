@@ -1,201 +1,131 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-ha-04",
   "type": "article",
   "title": "NHL — Hệ Từ Hạ, chương 4",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Quẻ dương nhiều âm,quẻ âm nhiều dương.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-section-01-original-reading"],
+      "text": "Quẻ dương nhiều âm,quẻ âm nhiều dương.\n\nGiải nguyên cớ bằng cơ/ngẫu.\n\nDương một quân/hai dân; âm hai quân/một dân,gắn quân tử/tiểu nhân.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "section-02-original-reading — original-reading",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "section-03-original-reading — original-reading",
+          "printedPages": ["370", "370"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch sự đối nhau ở đơn quái; chú giải nhận Chấn/Khảm/Cấn dương,Tốn/Ly/Đoài âm.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-section-01-translation"],
+      "text": "NHL dịch sự đối nhau ở đơn quái; chú giải nhận Chấn/Khảm/Cấn dương,Tốn/Ly/Đoài âm.\n\nNHL dịch quẻ dương lẻ,âm chẵn; chú giữ cách đếm nét của Chu Hi và cách lấy ít làm chủ khác nhau.\n\nBản dịch giữ ẩn dụ vua/dân và đánh giá cổ,không xếp hạng phẩm giá người hiện tại.\n\nNHL chú Chấn/Khảm/Cấn có một dương hai âm,Tốn/Ly/Đoài một âm hai dương; không dùng số nét như số hào.\n\nNHL phê thiếu nhất trí,nói Wilhelm không giảng ở tiết3 và PBC bỏ trọn chương; đây không phải NHL omission.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "section-01-translation — translation",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "section-02-translation — translation",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "section-03-translation — translation",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s01-trigram-accounting — note",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s03-judgment-omission — note",
+          "printedPages": ["370", "370"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Giải nguyên cớ bằng cơ/ngẫu.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-section-02-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch quẻ dương lẻ,âm chẵn; chú giữ cách đếm nét của Chu Hi và cách lấy ít làm chủ khác nhau.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-section-02-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-section-03-original-reading",
-      "kind": "author-interpretation",
-      "text": "Dương một quân/hai dân; âm hai quân/một dân,gắn quân tử/tiểu nhân.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-section-03-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-section-03-translation",
-      "kind": "author-interpretation",
-      "text": "Bản dịch giữ ẩn dụ vua/dân và đánh giá cổ,không xếp hạng phẩm giá người hiện tại.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-section-03-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s01-trigram-accounting",
-      "kind": "author-interpretation",
-      "text": "NHL chú Chấn/Khảm/Cấn có một dương hai âm,Tốn/Ly/Đoài một âm hai dương; không dùng số nét như số hào.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s01-trigram-accounting"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s02-chu-hi-strokes",
-      "kind": "author-interpretation",
-      "text": "NHL thuật Chu Hi đếm5 nét Khảm là lẻ,4 nét Ly là chẵn,khác cách đếm ba hào ở tiết3.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s02-chu-hi-strokes"],
+      "text": "NHL thuật Chu Hi đếm5 nét Khảm là lẻ,4 nét Ly là chẵn,khác cách đếm ba hào ở tiết3.\n\nNHL dẫn Khảm một vua/hai dân,Ly hai vua/một dân của Chu Hi,rồi phê đổi từ đếm nét sang đếm hào; không áp thứ bậc ấy cho người nay.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s02-chu-hi-strokes — note",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s03-chu-hi-ranks — note",
+          "printedPages": ["370", "370"]
+        }
+      ],
       "attribution": {
         "author": "Chu Hi",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s02-anonymous-minority",
-      "kind": "author-interpretation",
       "text": "NHL thuật cách lấy ít làm chủ:Khảm hai âm/một dương lấy dương; Ly lấy âm. PhầnI/chươngIV chỉ referral,không mới duyệt phần ấy.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s02-anonymous-minority"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s02-anonymous-minority — note",
+          "printedPages": ["370", "370"]
+        }
+      ],
       "attribution": {
         "author": "Người giải không nêu tên — NHL dẫn",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s02-wilhelm-unrepeated",
-      "kind": "author-interpretation",
-      "text": "NHL chỉ báo Wilhelm giảng khác,rắc rối,nên không chép; không tái dựng giải thích vắng.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s02-wilhelm-unrepeated"],
+      "text": "NHL chỉ báo Wilhelm giảng khác,rắc rối,nên không chép; không tái dựng giải thích vắng.\n\nNHL nói Wilhelm đọc hành và hiểu đức hành là bản chất/hành động; bản đọc NHL vẫn hạnh.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s02-wilhelm-unrepeated — note",
+          "printedPages": ["370", "370"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [370, 370],
+          "section": "s03-wilhelm-hanh — note",
+          "printedPages": ["370", "370"]
+        }
+      ],
       "attribution": {
         "author": "R. Wilhelm",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s03-wilhelm-hanh",
-      "kind": "author-interpretation",
-      "text": "NHL nói Wilhelm đọc hành và hiểu đức hành là bản chất/hành động; bản đọc NHL vẫn hạnh.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s03-wilhelm-hanh"],
-      "attribution": {
-        "author": "R. Wilhelm",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s03-chu-hi-ranks",
-      "kind": "author-interpretation",
-      "text": "NHL dẫn Khảm một vua/hai dân,Ly hai vua/một dân của Chu Hi,rồi phê đổi từ đếm nét sang đếm hào; không áp thứ bậc ấy cho người nay.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s03-chu-hi-ranks"],
-      "attribution": {
-        "author": "Chu Hi",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-04-nhl-he-tu-ha-04-s03-judgment-omission",
-      "kind": "author-interpretation",
-      "text": "NHL phê thiếu nhất trí,nói Wilhelm không giảng ở tiết3 và PBC bỏ trọn chương; đây không phải NHL omission.",
-      "citationIds": ["citation-nhl-he-tu-ha-04-s03-judgment-omission"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-ha-04-section-01-original-reading",
-      "citation-nhl-he-tu-ha-04-section-01-translation",
-      "citation-nhl-he-tu-ha-04-section-02-original-reading",
-      "citation-nhl-he-tu-ha-04-section-02-translation",
-      "citation-nhl-he-tu-ha-04-section-03-original-reading",
-      "citation-nhl-he-tu-ha-04-section-03-translation",
-      "citation-nhl-he-tu-ha-04-s01-trigram-accounting",
-      "citation-nhl-he-tu-ha-04-s02-chu-hi-strokes",
-      "citation-nhl-he-tu-ha-04-s02-anonymous-minority",
-      "citation-nhl-he-tu-ha-04-s02-wilhelm-unrepeated",
-      "citation-nhl-he-tu-ha-04-s03-wilhelm-hanh",
-      "citation-nhl-he-tu-ha-04-s03-chu-hi-ranks",
-      "citation-nhl-he-tu-ha-04-s03-judgment-omission"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

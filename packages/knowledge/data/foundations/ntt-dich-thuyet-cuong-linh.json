@@ -1,416 +1,194 @@
 {
-  "schemaVersion": 2,
   "id": "article-ntt-dich-thuyet-cuong-linh",
   "type": "article",
   "title": "NTT — Dịch Thuyết Cương Lĩnh",
-  "aliases": [],
   "topicIds": ["topic-classical-traditions"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-trinh-the-ly-dung",
-      "kind": "author-interpretation",
-      "text": "Trình Di phân thể Dịch, lý Đạo, dụng Thần; âm/dương khép/ngỏ và ví cối xay không đều. Đây là lý luận cổ, không physical mechanism.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-trinh-the-ly-dung"],
+      "text": "Trình Di phân thể Dịch, lý Đạo, dụng Thần; âm/dương khép/ngỏ và ví cối xay không đều. Đây là lý luận cổ, không physical mechanism.\n\nĐáp Trương Hoành Trung, Trình Di bác nghĩa khởi Số, ưu Lý→Tượng→Số và Lời tỏ Lý; phê thuật số Quản Lộ/Quách Phác. Đây là quan điểm không viết lại core.\n\nTrình Di trước xem thời/quẻ rồi tài/lời hệ; các loại người/vua/tôi đều có chỗ dùng, một hào bao hàm nhiều ý và có lúc chỉ nói thời. Hai đoạn đầu 65 còn Trình Di, không gán Chu Hy.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [64, 64],
+          "section": "ntt-dich-thuyet-cuong-linh-trinh-the-ly-dung — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [64, 64],
+          "section": "ntt-dich-thuyet-cuong-linh-trinh-numbers — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [64, 65],
+          "section": "ntt-dich-thuyet-cuong-linh-trinh-time — commentary"
+        }
+      ],
       "attribution": {
         "author": "Trình Di",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-trinh-numbers",
-      "kind": "author-interpretation",
-      "text": "Đáp Trương Hoành Trung, Trình Di bác nghĩa khởi Số, ưu Lý→Tượng→Số và Lời tỏ Lý; phê thuật số Quản Lộ/Quách Phác. Đây là quan điểm không viết lại core.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-trinh-numbers"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-trinh-time",
-      "kind": "author-interpretation",
-      "text": "Trình Di trước xem thời/quẻ rồi tài/lời hệ; các loại người/vua/tôi đều có chỗ dùng, một hào bao hàm nhiều ý và có lúc chỉ nói thời. Hai đoạn đầu 65 còn Trình Di, không gán Chu Hy.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-trinh-time"],
-      "attribution": {
-        "author": "Trình Di",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-origin",
-      "kind": "author-interpretation",
-      "text": "Chu Hy xem lý âm/dương có Tượng/Số, lẻ/chẵn gấp 2 thành quẻ; gắn Hà/Lạc rồi Phục Hy, Văn Vương, Chu Công. Sự lành dữ không sai là claim của ông, không chứng hiệu lực.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-origin"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-names",
-      "kind": "author-interpretation",
-      "text": "Chu Hy gán Phục Hy tên quẻ từ hình Bác/Phục/Đỉnh/Tỉnh, Văn Vương Thoán, Chu Công Hào; khác NTT lời đầu gán Văn Vương đặt tên. Không hòa các nguồn.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-names"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-use",
-      "kind": "author-interpretation",
-      "text": "Chu Hy nói Thái Bốc giữ sách Hạ/Thương/Chu, dùng bói dạy nhân sự; Tượng mượn vật để giải lý nhưng mỗi quẻ/hào không chỉ một việc, ngoại lệ kiến hầu/tế tự. Không modern advice.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-use"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-confucius",
-      "kind": "author-interpretation",
-      "text": "Chu Hy tách thuyết Phu Tử theo Lý khỏi Hy/Văn; không lấy một voice là bản ý của người khác. Danh tính truyền thống không được kiểm chắc.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-confucius"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-yinyang",
-      "kind": "author-interpretation",
-      "text": "Chu Hy so động/tĩnh, nhân/nghĩa, cương/nhu, vươn/thu như âm/dương và thuật Dương Quí Sơn vẽ vòng nửa bôi đen ở nhà Thiềm Quí Lỗ. Chỉ có chuyện văn, không ảnh này để phục dựng hình.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-yinyang"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-do-question",
-      "kind": "author-interpretation",
-      "text": "Đáp Thoán/Do: phân Kinh Thoán, Thoán Truyện, Hào từ, Đại/Tiểu Tượng và Hệ Từ thượng/hạ; Do/hệ được giải ngữ nguyên ngờ rằng, chứ không critical text chắc chắn.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-do-question"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-image-disagreement",
-      "kind": "author-interpretation",
-      "text": "Chu Hy phê Hán nho tìm Tượng cứng và Vương Bật suy Dụng không căn; dẫn Vương/Trình nhưng giữ nguồn Tượng Thái Bốc thất lạc không thể kê cứu. Không bịa roster Tượng vắng hoặc chọn consensus.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-image-disagreement"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-image-three",
-      "kind": "author-interpretation",
-      "text": "Chu Hy nêu 3 loại Tượng: nét tự nhiên, bắt vật thực, tự mượn hình giả ý; nên thấy chỗ Tượng/Số trước Lý suông. Đây là phân loại cổ, không nguồn thực nghiệm khoa học.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-image-three"],
+      "text": "Chu Hy xem lý âm/dương có Tượng/Số, lẻ/chẵn gấp 2 thành quẻ; gắn Hà/Lạc rồi Phục Hy, Văn Vương, Chu Công. Sự lành dữ không sai là claim của ông, không chứng hiệu lực.\n\nChu Hy gán Phục Hy tên quẻ từ hình Bác/Phục/Đỉnh/Tỉnh, Văn Vương Thoán, Chu Công Hào; khác NTT lời đầu gán Văn Vương đặt tên. Không hòa các nguồn.\n\nChu Hy nói Thái Bốc giữ sách Hạ/Thương/Chu, dùng bói dạy nhân sự; Tượng mượn vật để giải lý nhưng mỗi quẻ/hào không chỉ một việc, ngoại lệ kiến hầu/tế tự. Không modern advice.\n\nChu Hy tách thuyết Phu Tử theo Lý khỏi Hy/Văn; không lấy một voice là bản ý của người khác. Danh tính truyền thống không được kiểm chắc.\n\nChu Hy so động/tĩnh, nhân/nghĩa, cương/nhu, vươn/thu như âm/dương và thuật Dương Quí Sơn vẽ vòng nửa bôi đen ở nhà Thiềm Quí Lỗ. Chỉ có chuyện văn, không ảnh này để phục dựng hình.\n\nĐáp Thoán/Do: phân Kinh Thoán, Thoán Truyện, Hào từ, Đại/Tiểu Tượng và Hệ Từ thượng/hạ; Do/hệ được giải ngữ nguyên ngờ rằng, chứ không critical text chắc chắn.\n\nChu Hy phê Hán nho tìm Tượng cứng và Vương Bật suy Dụng không căn; dẫn Vương/Trình nhưng giữ nguồn Tượng Thái Bốc thất lạc không thể kê cứu. Không bịa roster Tượng vắng hoặc chọn consensus.\n\nChu Hy nêu 3 loại Tượng: nét tự nhiên, bắt vật thực, tự mượn hình giả ý; nên thấy chỗ Tượng/Số trước Lý suông. Đây là phân loại cổ, không nguồn thực nghiệm khoa học.\n\nNguồn so Hỏa châu lâm(?) chỉ hào/không lời, truyền gán Phục Hy→Văn→Chu→Khổng và phê đọc Hệ mà quên hào. Giữ dấu hỏi của nguồn, không Liu Yao implementation.\n\nChu Hy dẫn Chu Lễ quan Thái Bốc giữ Liên Sơn/Qui Tàng/Chu Dịch và nói không bị Tần đốt vì bói. Là history claimqua NTT, không verified history.\n\nChu Hy dùng bói khi hai cách xử trí/chưa chắc, chứ điều theo lý đã nên/không nên không cần hỏi; nguồn ưu Dương nhưng vẫn nói Dương hung nếu làm không nên. Không quy tắc đạo đức hoặc dự báo.\n\nLợi trinh/trinh cát gắn chính đính; Trương Hoàng Cừ được dẫn Dịch mưu cho quân tử không tiểu nhân. Giá trị/class-source không phán người hiện tại.\n\nLợi sang sông, đi, tế tự, săn bắn, triều cận, lập vua, dời nước/xâm phạt là ví chữ lợi theo người xem. Không tư vấn vận chuyển, chiến thuật, tôn giáo, pháp lý.\n\nChu Hy phân Phục Hy Tượng, Văn/Chu Lời, Khổng Truyện; bốn đức Càn là đọc sau mà không tự đồng nhất bản ý.73 lặp câu Kiền như 74 không được chữa thành đoạn mới.\n\nChu Hy muốn đọc như bói được quẻ, giữ lòng rỗng, từ Lời→Tượng→Lý→việc làm rồi ưu đọc chính văn; Trình Truyện là Dịch của Trình. Là method tác giả, không mandatory học đọc UI.\n\nChu Hy phân Dịch từ hư không/tĩnh trước vạch với Kinh Thư chính sự/Kinh Thi nhân tình; Lễ được dẫn khiết tĩnh/tinhvi. Không phải kết luận siêu hình được xác minh.\n\nChu Hy phê thêm chữ thực mượn Dịch nói ý mình, khuyên chỉ chữ hư và tránh tiểu xảo/câu to; rồng không nhất thiết rồng thực, ngôn ngữ không bao quát.75 lẻ/chẵn tuyên một vạch chẵn/hai vạch lẻ khác nét nguồn, nên không sửa thành bộ phân loại hình.\n\nChu Hy nêu 4 ngày/quẻ, một ngày quẻ/Thoán/Tượng, hai ngày 6 hào, một ngày toàn quẻ; phê Hòa Tĩnh mỗi ngày một hào vì quẻ liền mảnh và ưu Càn/Khôn. Không yêu cầu lịch học.\n\nChu Hy coi học Dịch lúc bình cư để tự tỉnh không đợi gặp việc bói; phân đọc Thánh/người thường. Không claim authority đối với người hiện tại.\n\nHỏi nên đọc thế nào: đáp giữ lòng trống rỗng không thành kiến; method tác giả chứ không phương pháp đo diễn giải khách quan.\n\nHỏi chưa thụ dụng: đáp giữ sáng, tĩnh và cần từng trải, chỉ một hai chữ nhiều lý. Câu Khổng Tử thích lúc về già bị lặp; không suy ra certainty.\n\nHỏi Bản Nghĩa trọng bói: đáp đọc chính văn không chú, thuật Vương Bật ghép Truyện, và kết đọc Bản Nghĩa của mỗ trước Trình Truyện. Khác 9 gán Phí Trực/Trịnh Huyền; không silently reconcile.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [65, 66],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-origin — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [66, 66],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-names — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [66, 67],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-use — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [67, 67],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-confucius — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [67, 68],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-yinyang — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [68, 68],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-do-question — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [68, 70],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-image-disagreement — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [70, 70],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-image-three — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [70, 71],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-divination — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [71, 71],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-history — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [72, 72],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-doubt-decision — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [72, 73],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-trinh — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [73, 73],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-loi-examples — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [73, 74],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-three-levels — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [74, 74],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-reading-method — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [74, 75],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-empty-form — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [75, 76],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-commentary-limit — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [76, 76],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-reading-pace — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [76, 76],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-reflection — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [76, 77],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-qa-read — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [77, 77],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-qa-experience — commentary"
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [77, 77],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-qa-benye — commentary"
+        }
+      ],
       "attribution": {
         "author": "Chu Hy",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-divination",
-      "kind": "author-interpretation",
-      "text": "Nguồn so Hỏa châu lâm(?) chỉ hào/không lời, truyền gán Phục Hy→Văn→Chu→Khổng và phê đọc Hệ mà quên hào. Giữ dấu hỏi của nguồn, không Liu Yao implementation.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-divination"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-history",
-      "kind": "author-interpretation",
-      "text": "Chu Hy dẫn Chu Lễ quan Thái Bốc giữ Liên Sơn/Qui Tàng/Chu Dịch và nói không bị Tần đốt vì bói. Là history claimqua NTT, không verified history.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-history"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-doubt-decision",
-      "kind": "author-interpretation",
-      "text": "Chu Hy dùng bói khi hai cách xử trí/chưa chắc, chứ điều theo lý đã nên/không nên không cần hỏi; nguồn ưu Dương nhưng vẫn nói Dương hung nếu làm không nên. Không quy tắc đạo đức hoặc dự báo.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-doubt-decision"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-trinh",
-      "kind": "author-interpretation",
-      "text": "Lợi trinh/trinh cát gắn chính đính; Trương Hoàng Cừ được dẫn Dịch mưu cho quân tử không tiểu nhân. Giá trị/class-source không phán người hiện tại.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-trinh"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-loi-examples",
-      "kind": "author-interpretation",
-      "text": "Lợi sang sông, đi, tế tự, săn bắn, triều cận, lập vua, dời nước/xâm phạt là ví chữ lợi theo người xem. Không tư vấn vận chuyển, chiến thuật, tôn giáo, pháp lý.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-loi-examples"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-three-levels",
-      "kind": "author-interpretation",
-      "text": "Chu Hy phân Phục Hy Tượng, Văn/Chu Lời, Khổng Truyện; bốn đức Càn là đọc sau mà không tự đồng nhất bản ý.73 lặp câu Kiền như 74 không được chữa thành đoạn mới.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-three-levels"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-reading-method",
-      "kind": "author-interpretation",
-      "text": "Chu Hy muốn đọc như bói được quẻ, giữ lòng rỗng, từ Lời→Tượng→Lý→việc làm rồi ưu đọc chính văn; Trình Truyện là Dịch của Trình. Là method tác giả, không mandatory học đọc UI.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-reading-method"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-empty-form",
-      "kind": "author-interpretation",
-      "text": "Chu Hy phân Dịch từ hư không/tĩnh trước vạch với Kinh Thư chính sự/Kinh Thi nhân tình; Lễ được dẫn khiết tĩnh/tinhvi. Không phải kết luận siêu hình được xác minh.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-empty-form"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-commentary-limit",
-      "kind": "author-interpretation",
-      "text": "Chu Hy phê thêm chữ thực mượn Dịch nói ý mình, khuyên chỉ chữ hư và tránh tiểu xảo/câu to; rồng không nhất thiết rồng thực, ngôn ngữ không bao quát.75 lẻ/chẵn tuyên một vạch chẵn/hai vạch lẻ khác nét nguồn, nên không sửa thành bộ phân loại hình.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-commentary-limit"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-reading-pace",
-      "kind": "author-interpretation",
-      "text": "Chu Hy nêu 4 ngày/quẻ, một ngày quẻ/Thoán/Tượng, hai ngày 6 hào, một ngày toàn quẻ; phê Hòa Tĩnh mỗi ngày một hào vì quẻ liền mảnh và ưu Càn/Khôn. Không yêu cầu lịch học.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-reading-pace"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-reflection",
-      "kind": "author-interpretation",
-      "text": "Chu Hy coi học Dịch lúc bình cư để tự tỉnh không đợi gặp việc bói; phân đọc Thánh/người thường. Không claim authority đối với người hiện tại.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-reflection"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-qa-read",
-      "kind": "author-interpretation",
-      "text": "Hỏi nên đọc thế nào: đáp giữ lòng trống rỗng không thành kiến; method tác giả chứ không phương pháp đo diễn giải khách quan.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-qa-read"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-qa-experience",
-      "kind": "author-interpretation",
-      "text": "Hỏi chưa thụ dụng: đáp giữ sáng, tĩnh và cần từng trải, chỉ một hai chữ nhiều lý. Câu Khổng Tử thích lúc về già bị lặp; không suy ra certainty.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-qa-experience"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-qa-benye",
-      "kind": "author-interpretation",
-      "text": "Hỏi Bản Nghĩa trọng bói: đáp đọc chính văn không chú, thuật Vương Bật ghép Truyện, và kết đọc Bản Nghĩa của mỗ trước Trình Truyện. Khác 9 gán Phí Trực/Trịnh Huyền; không silently reconcile.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-qa-benye"],
-      "attribution": {
-        "author": "Chu Hy",
-        "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
-    },
-    {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-trinh-quotation",
-      "kind": "author-interpretation",
       "text": "Trương Hoàng Cừ được Chu Hy dẫn rằng Dịch mưu quân tử không mưu tiểu nhân; không tán thành phân giai cấp người.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-trinh-quotation"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [73, 73],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-trinh-quotation — quotation"
+        }
+      ],
       "attribution": {
         "author": "Trương Hoàng Cừ — lời được Chu Hy dẫn",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-wang-quotation",
-      "kind": "author-interpretation",
       "text": "Chu Hy dẫn Vương Bật nói nghĩa/hào hợp mạnh/thuận không buộc Kiền/ngựa, Khôn/trâu; không kiểm tác phẩm Vương trực tiếp.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-wang-quotation"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [69, 69],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-wang-quotation — quotation"
+        }
+      ],
       "attribution": {
         "author": "Vương Bật",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     },
     {
-      "id": "article-ntt-dich-thuyet-cuong-linh-ntt-dich-thuyet-cuong-linh-chu-cheng-quotation",
-      "kind": "author-interpretation",
       "text": "Chu Hy dẫn Trình Tử dùng Tượng tỏ Lý vô hình rồi đánh giá lời ấy chưa hết ý; giữ tiếng Trình riêng với Chu.",
-      "citationIds": ["citation-ntt-dich-thuyet-cuong-linh-chu-cheng-quotation"],
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [69, 69],
+          "section": "ntt-dich-thuyet-cuong-linh-chu-cheng-quotation — quotation"
+        }
+      ],
       "attribution": {
         "author": "Trình Tử",
         "via": "Ngô Tất Tố — dịch/chú giải ấn bản cung cấp; không trực tiếp kiểm tác phẩm gốc"
-      },
-      "conditions": [
-        "Mô tả văn bản và quan điểm lịch sử của nguồn, không chứng minh truyền gán tác giả, niên đại, khoa học hoặc hiệu lực chiêm đoán. Không dùng làm lịch, thuật toán diễn giải, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực/tự hại."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-ntt-dich-thuyet-cuong-linh-trinh-the-ly-dung",
-      "citation-ntt-dich-thuyet-cuong-linh-trinh-numbers",
-      "citation-ntt-dich-thuyet-cuong-linh-trinh-time",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-origin",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-names",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-use",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-confucius",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-yinyang",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-do-question",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-image-disagreement",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-image-three",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-divination",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-history",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-doubt-decision",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-trinh",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-loi-examples",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-three-levels",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-reading-method",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-empty-form",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-commentary-limit",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-reading-pace",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-reflection",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-qa-read",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-qa-experience",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-qa-benye",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-trinh-quotation",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-wang-quotation",
-      "citation-ntt-dich-thuyet-cuong-linh-chu-cheng-quotation"
-    ],
-    "note": "Đối chiếu toàn extraction và từng ảnh đầy trang1.5x của phạm vi060. Chỉ source comparison,không audit092 hoặc verification/certification. Không phát hành prose/ảnh nguồn."
-  }
+  ]
 }

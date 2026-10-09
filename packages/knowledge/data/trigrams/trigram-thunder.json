@@ -1,42 +1,35 @@
 {
-  "schemaVersion": 1,
   "id": "trigram-thunder",
   "type": "trigram",
   "title": "Chấn",
-  "aliases": [],
   "topicIds": ["topic-trigrams", "topic-liuyao-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "trigram-thunder-pattern",
-      "kind": "structural-fact",
       "text": "Quái Chấn có ba hào; đọc từ dưới lên là dương, âm, âm.",
-      "citationIds": ["citation-bpct-p10-11-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [10, 11],
+          "section": "IX — Tượng của Bát quái",
+          "printedPages": ["4", "5"]
+        }
+      ],
+      "id": "pattern"
     },
     {
-      "id": "trigram-thunder-element",
-      "kind": "structural-fact",
       "text": "Trong hệ ngũ hành dùng để lập bảng Lục Hào, Chấn thuộc Mộc.",
-      "citationIds": ["citation-bpct-p11-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [11, 11],
+          "section": "IX — Ngũ hành của Bát quái",
+          "printedPages": ["5", "5"]
+        }
+      ]
     }
   ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p10-11-technical", "citation-bpct-p11-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "structure": {
-    "lineOrder": "bottom-to-top",
-    "lines": ["yang", "yin", "yin"],
-    "symbol": "☳",
-    "element": "wood",
-    "claimIds": ["trigram-thunder-pattern", "trigram-thunder-element"]
-  }
+  "lines": ["yang", "yin", "yin"],
+  "symbol": "☳",
+  "element": "wood"
 }

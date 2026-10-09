@@ -1,30 +1,27 @@
 {
-  "schemaVersion": 1,
   "id": "term-earthly-branch",
   "type": "term",
   "title": "Địa chi",
-  "aliases": [],
   "topicIds": ["topic-liuyao-foundations"],
-  "claims": [
+  "applicableRuleIds": ["rule-na-jia-assignment", "rule-branch-element"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "term-earthly-branch-definition",
-      "kind": "structural-fact",
       "text": "Một trong mười hai chi; trong Nạp Giáp, địa chi được gán cho hào theo quái.",
-      "citationIds": ["citation-bpct-p8-technical", "citation-bpct-p13-technical"]
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [8, 8],
+          "section": "III — Địa chi; II — Thiên can",
+          "printedPages": ["2", "2"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [13, 13],
+          "section": "XII — Nạp Giáp trang quái ca",
+          "printedPages": ["7", "7"]
+        }
+      ]
     }
-  ],
-  "relatedIds": [],
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex",
-    "reviewedAt": "2026-10-01",
-    "method": "source-comparison",
-    "evidenceCitationIds": ["citation-bpct-p8-technical", "citation-bpct-p13-technical"],
-    "note": "Đối chiếu trực tiếp đoạn sách và ngữ cảnh; bản diễn giải do Codex biên soạn. Chưa có xác nhận của chuyên gia độc lập."
-  },
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "applicableRuleIds": ["rule-na-jia-assignment", "rule-branch-element"]
+  ]
 }

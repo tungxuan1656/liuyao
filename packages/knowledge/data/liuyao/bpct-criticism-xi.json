@@ -1,110 +1,63 @@
 {
-  "schemaVersion": 2,
   "id": "article-bpct-criticism-xi",
   "type": "article",
   "title": "BPCT phê bình XI — Hỗ Quái",
-  "aliases": [],
   "topicIds": ["topic-liuyao-advanced"],
-  "claims": [
+  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-bpct-criticism-xi-bpct-criticism-xi-target-proposition",
-      "kind": "author-interpretation",
-      "text": "Đoạn không nêu một sách bị chỉ đích danh: quy cho cổ Thánh phép cỏ thi dùng Thể/Dụng/Hỗ/Hào từ; Thế ở đâu Thể ở đó,Ứng ở đâu Dụng ở đó. Đây là cách tác giả kể, không xác lập lịch sử.",
-      "citationIds": ["citation-bpct-criticism-xi-target-proposition"],
+      "text": "Đoạn không nêu một sách bị chỉ đích danh: quy cho cổ Thánh phép cỏ thi dùng Thể/Dụng/Hỗ/Hào từ; Thế ở đâu Thể ở đó,Ứng ở đâu Dụng ở đó. Đây là cách tác giả kể, không xác lập lịch sử.\n\nBỉ lấy tam Thế ở Khôn Nội làm Thể,lục Ứng ở Càn Ngoại làm Dụng; Thổ sinh Kim bị gán bất lợi. Giữ nguồn gọi lục dương là thượng lục ở đoạn Hỗ, không sửa nhãn.\n\nBỉ bỏ sơ/lục,lấy2–4 âm/âm/dương làm Cấn Nội và3–5 âm/dương/dương làm Tốn Ngoại; Tốn Mộc Tài cung Càn,Dụng khắc Thể được gán tốt khi hỏi thê tài. Không tính Hỗ tự động hay hài hoà với ví dụ Thể sinh Dụng trước.\n\nTác giả minh hoạ Hào từ bằng sơ Càn,sơ Bỉ,tứ Bỉ,phân Đơn dương Cửu/Chiết âm Lục; không chép Hào từ hoặc gộp thành một phép Lục hào.\n\nĐoạn quy cho Quỷ Cốc chuyển tiền thay thi dùng Lục thân/Nguyên-Dụng-Cừu-Kỵ. Tác giả nói phép đoán khác: cỏ thi cần Hỗ/Thể/Dụng/Hào từ, tiền không nghiệm nếu dùng vậy. Đây là phân biệt chủ trương, không chứng nhận hiệu nghiệm hoặc xác lập Quỷ Cốc sáng chế.",
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [463, 463],
+          "section": "bpct-criticism-XI-target-proposition — historical-account",
+          "printedPages": ["371", "371"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [463, 463],
+          "section": "bpct-criticism-XI-example-bi-body — example",
+          "printedPages": ["371", "371"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [463, 463],
+          "section": "bpct-criticism-XI-example-bi-mutual — example",
+          "printedPages": ["371", "371"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [463, 463],
+          "section": "bpct-criticism-XI-example-line-words — example",
+          "printedPages": ["371", "371"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [463, 463],
+          "section": "bpct-criticism-XI-reconciliation — reply",
+          "printedPages": ["371", "371"]
+        }
+      ],
       "attribution": {
         "author": "Vương Hồng Tự",
         "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
+      }
     },
     {
-      "id": "article-bpct-criticism-xi-bpct-criticism-xi-example-bi-body",
-      "kind": "author-interpretation",
-      "text": "Bỉ lấy tam Thế ở Khôn Nội làm Thể,lục Ứng ở Càn Ngoại làm Dụng; Thổ sinh Kim bị gán bất lợi. Giữ nguồn gọi lục dương là thượng lục ở đoạn Hỗ, không sửa nhãn.",
-      "citationIds": ["citation-bpct-criticism-xi-example-bi-body"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xi-bpct-criticism-xi-example-bi-mutual",
-      "kind": "author-interpretation",
-      "text": "Bỉ bỏ sơ/lục,lấy2–4 âm/âm/dương làm Cấn Nội và3–5 âm/dương/dương làm Tốn Ngoại; Tốn Mộc Tài cung Càn,Dụng khắc Thể được gán tốt khi hỏi thê tài. Không tính Hỗ tự động hay hài hoà với ví dụ Thể sinh Dụng trước.",
-      "citationIds": ["citation-bpct-criticism-xi-example-bi-mutual"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xi-bpct-criticism-xi-example-line-words",
-      "kind": "author-interpretation",
-      "text": "Tác giả minh hoạ Hào từ bằng sơ Càn,sơ Bỉ,tứ Bỉ,phân Đơn dương Cửu/Chiết âm Lục; không chép Hào từ hoặc gộp thành một phép Lục hào.",
-      "citationIds": ["citation-bpct-criticism-xi-example-line-words"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xi-bpct-criticism-xi-reconciliation",
-      "kind": "author-interpretation",
-      "text": "Đoạn quy cho Quỷ Cốc chuyển tiền thay thi dùng Lục thân/Nguyên-Dụng-Cừu-Kỵ. Tác giả nói phép đoán khác: cỏ thi cần Hỗ/Thể/Dụng/Hào từ, tiền không nghiệm nếu dùng vậy. Đây là phân biệt chủ trương, không chứng nhận hiệu nghiệm hoặc xác lập Quỷ Cốc sáng chế.",
-      "citationIds": ["citation-bpct-criticism-xi-reconciliation"],
-      "attribution": {
-        "author": "Vương Hồng Tự",
-        "via": "Vĩnh Cao — dịch/chú; tín chỉ chung, không xác lập tác giả riêng từng đoạn"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
-    },
-    {
-      "id": "article-bpct-criticism-xi-bpct-criticism-xi-note-11",
-      "kind": "author-interpretation",
       "text": "Chú11 giải Đơn vạch liền,Sách vạch đứt trong câu Hào từ; không thêm hào thứ bảy.",
-      "citationIds": ["citation-bpct-criticism-xi-note-11"],
+      "references": [
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [463, 463],
+          "section": "bpct-criticism-XI-note-11 — translator-note",
+          "printedPages": ["371", "371"]
+        }
+      ],
       "attribution": {
         "author": "Vĩnh Cao"
-      },
-      "conditions": [
-        "Đây là tóm tắt quan điểm lịch sử của nguồn, không phải kết quả thực chứng hay xác minh hiệu nghiệm. Không dùng làm phép lịch, bộ diễn giải tự động, dự báo bệnh/sinh tử/tội/lợi nhuận, lời y tế/pháp lý/an toàn/tác chiến/tài chính/nghi lễ, hoặc chỉ dẫn tìm bắt người. Không xác nhận quyền sở hữu người, định kiến giới/giai cấp, cáo buộc hay quy lỗi nạn nhân."
-      ]
+      }
     }
-  ],
-  "relatedIds": ["term-useful-spirit", "term-shi-line", "term-ying-line"],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-06",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-bpct-criticism-xi-target-proposition",
-      "citation-bpct-criticism-xi-example-bi-body",
-      "citation-bpct-criticism-xi-example-bi-mutual",
-      "citation-bpct-criticism-xi-example-line-words",
-      "citation-bpct-criticism-xi-reconciliation",
-      "citation-bpct-criticism-xi-note-11",
-      "citation-bpct-front-credits-compilation",
-      "citation-bpct-front-credits-translation",
-      "citation-bpct-front-translator-preface-edition"
-    ],
-    "note": "Compared complete PyMuPDF extraction /tmp/feat058/{429..467}.txt and individually opened all39 full-page PNGs /tmp/feat058/{429..467}.png (1.5x,918x1188), plus boundary428 and credits1–3. SHA256 713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a,467 pages. Printed388–416 on429–457 then366–374 on458–466;467 visually blank. II heading claims64 hexagrams/384 lines but only8 named entries/48 rows are observed before IV; no III. Remaining56 stable obligations are unresolved source-not-found placeholders, not source-reported omissions. IV has8 diagrams/56 transformation rows; V has18 cases and14 nested relational verses; VI has11 entries. Source layers, opposing propositions, examples/replies and translator notes are separate; no text/images, calculated fixtures or missing rows reconstructed. Existing criticismX note9 citation is reused unchanged. Source comparison only; feat-091 audit, source discovery/layer rosters, independent verification and certification remain open."
-  }
+  ]
 }

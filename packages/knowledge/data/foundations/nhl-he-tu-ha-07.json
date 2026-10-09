@@ -1,184 +1,98 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-ha-07",
   "type": "article",
   "title": "NHL — Hệ Từ Hạ, chương 7",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-01-original-reading",
-      "kind": "author-interpretation",
-      "text": "Hưng Dịch trung cổ và ưu hoạn của người tác Dịch.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-01-original-reading"],
+      "text": "Hưng Dịch trung cổ và ưu hoạn của người tác Dịch.\n\nChín quẻ Lý,Khiêm,Phục,Hằng,Tổn,Ích,Khốn,Tỉnh,Tốn được nối đức.\n\nChín quẻ có hòa/chí,tốn/quang,tiểu/biện,tạp/bất yếm,nan/dị,dụ/bất thiết,cùng/thông,cư/thiên,xứng/ẩn.\n\nChín quẻ được dùng cho hòa hạnh,chế lễ,tự tri,nhất đức,viễn hại,hưng lợi,quả oán,biện nghĩa,hành quyền.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-02-original-reading — original-reading",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-03-original-reading — original-reading",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-04-original-reading — original-reading",
+          "printedPages": ["378", "378"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Hạ — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch thành hai câu hỏi; chú quy thời Văn Vương bị Trụ giam Dữu Lý theo truyền thống.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-01-translation"],
+      "text": "NHL dịch thành hai câu hỏi; chú quy thời Văn Vương bị Trụ giam Dữu Lý theo truyền thống.\n\nNHL dịch nền,cán,gốc,bền,tu,dụ,nghiệm,dày/chế đức,không hệ thống dự đoán.\n\nNHL dịch tính chất chín quẻ và công dụng tự nhiên; chỗ đọc Khiêm tốn,bản dịch hiểu tự hạ rồi tôn trọng. Không đổi đọc theo PBC tôn.\n\nNHL dịch công dụng tu dưỡng,tri là làm chủ; bản đọc Tổn nhưng bản dịch in quẻ Tốn ở viễn hại,không lặng lẽ sửa nhãn nguồn.\n\nNHL quy ưu hoạn ở tiết1 cho Văn Vương bị Trụ giam,Dữu Lý và làm Thoán; không lịch sử đã chứng.\n\nNHL giảng Lý lễ,Khiêm tốn,Phục hồi thiên lý,Hằng bền,Tổn bớt dục/giận,Ích tăng,Khốn nghiệm,Tỉnh nước cho mọi người,Tốn thuận/chế. Chú in Tốn ở bớt dục,khác bản đọc Tổn; không lặng sửa.\n\nNHL đọc Khổn/biển và Khiêm tốn trong câu,chỗ dịch lại giải Khốn/biện và tự hạ; giữ dị dạng của nguồn,không chỉnh theo PBC.\n\nNHL chú tri nghĩa làm chủ trong Phục/tự tri; không chỉ tri thức. Dịch viễn hại in Tốn nhưng bản đọc Tổn; chỉ thuật source difference.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-01-translation — translation",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-02-translation — translation",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "section-03-translation — translation",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 379],
+          "section": "section-04-translation — translation",
+          "printedPages": ["378", "379"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "s01-van-vuong — note",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "s02-nine-virtues — note",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [378, 378],
+          "section": "s03-source-readings — note",
+          "printedPages": ["378", "378"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [379, 379],
+          "section": "s04-tri-note — note",
+          "printedPages": ["379", "379"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Chín quẻ Lý,Khiêm,Phục,Hằng,Tổn,Ích,Khốn,Tỉnh,Tốn được nối đức.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-02-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch nền,cán,gốc,bền,tu,dụ,nghiệm,dày/chế đức,không hệ thống dự đoán.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-02-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-03-original-reading",
-      "kind": "author-interpretation",
-      "text": "Chín quẻ có hòa/chí,tốn/quang,tiểu/biện,tạp/bất yếm,nan/dị,dụ/bất thiết,cùng/thông,cư/thiên,xứng/ẩn.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-03-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-03-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch tính chất chín quẻ và công dụng tự nhiên; chỗ đọc Khiêm tốn,bản dịch hiểu tự hạ rồi tôn trọng. Không đổi đọc theo PBC tôn.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-03-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Chín quẻ được dùng cho hòa hạnh,chế lễ,tự tri,nhất đức,viễn hại,hưng lợi,quả oán,biện nghĩa,hành quyền.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-04-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Hạ — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-section-04-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch công dụng tu dưỡng,tri là làm chủ; bản đọc Tổn nhưng bản dịch in quẻ Tốn ở viễn hại,không lặng lẽ sửa nhãn nguồn.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-section-04-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-s01-van-vuong",
-      "kind": "author-interpretation",
-      "text": "NHL quy ưu hoạn ở tiết1 cho Văn Vương bị Trụ giam,Dữu Lý và làm Thoán; không lịch sử đã chứng.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-s01-van-vuong"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-s02-nine-virtues",
-      "kind": "author-interpretation",
-      "text": "NHL giảng Lý lễ,Khiêm tốn,Phục hồi thiên lý,Hằng bền,Tổn bớt dục/giận,Ích tăng,Khốn nghiệm,Tỉnh nước cho mọi người,Tốn thuận/chế. Chú in Tốn ở bớt dục,khác bản đọc Tổn; không lặng sửa.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-s02-nine-virtues"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-s03-source-readings",
-      "kind": "author-interpretation",
-      "text": "NHL đọc Khổn/biển và Khiêm tốn trong câu,chỗ dịch lại giải Khốn/biện và tự hạ; giữ dị dạng của nguồn,không chỉnh theo PBC.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-s03-source-readings"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-ha-07-nhl-he-tu-ha-07-s04-tri-note",
-      "kind": "author-interpretation",
-      "text": "NHL chú tri nghĩa làm chủ trong Phục/tự tri; không chỉ tri thức. Dịch viễn hại in Tốn nhưng bản đọc Tổn; chỉ thuật source difference.",
-      "citationIds": ["citation-nhl-he-tu-ha-07-s04-tri-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-ha-07-section-01-original-reading",
-      "citation-nhl-he-tu-ha-07-section-01-translation",
-      "citation-nhl-he-tu-ha-07-section-02-original-reading",
-      "citation-nhl-he-tu-ha-07-section-02-translation",
-      "citation-nhl-he-tu-ha-07-section-03-original-reading",
-      "citation-nhl-he-tu-ha-07-section-03-translation",
-      "citation-nhl-he-tu-ha-07-section-04-original-reading",
-      "citation-nhl-he-tu-ha-07-section-04-translation",
-      "citation-nhl-he-tu-ha-07-s01-van-vuong",
-      "citation-nhl-he-tu-ha-07-s02-nine-virtues",
-      "citation-nhl-he-tu-ha-07-s03-source-readings",
-      "citation-nhl-he-tu-ha-07-s04-tri-note"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL363–388/PBC631–648. Chỉ source comparison062; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }

@@ -1,418 +1,236 @@
 {
-  "schemaVersion": 2,
   "id": "article-nhl-he-tu-thuong-11",
   "type": "article",
   "title": "NHL — Hệ Từ Thượng, chương 11",
-  "aliases": [],
   "topicIds": ["topic-foundations"],
-  "claims": [
+  "status": "ready",
+  "entries": [
     {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-01-original-reading",
-      "kind": "author-interpretation",
       "text": "Tử viết hỏi Dịch, khai vật/thành vụ và thông chí/định nghiệp/đoán nghi.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-01-original-reading"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-01-original-reading — original-reading",
+          "printedPages": ["358", "358"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định; Tử viết được truyền gán Khổng Tử",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-01-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch mở trí/chí và công việc, có cả câu cuối thông/định/đoán mà bản PBC không in ở tiết1.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-01-translation"],
+      "text": "NHL dịch mở trí/chí và công việc, có cả câu cuối thông/định/đoán mà bản PBC không in ở tiết1.\n\nNHL dịch cả phần thi/quái/sáu hào trước đoạn tẩy tâm; PBC tiết2 bắt đầu ở tẩy tâm.\n\nNHL có dịch tiết3; PBC bản chọn không có tiết ấy.\n\nNHL dịch chuỗi đóng mở đến công dụng hàng ngày, không sơ đồ phép tính.\n\nBản dịch vẫn có tiết5; không lấy phần lược PBC làm trạng thái vắng NHL.\n\nNHL dịch sự nối nhau của quái/cát hung/nghiệp là lời nguồn.\n\nNHL có tiết in7 lần đầu về mẫu/công dụng bói; lời ích/cát hung không được xác nhận.\n\nNHL in7 lần thứ hai cho đoạn thần vật, không tự sửa số thành8 hay thêm một tiết.\n\nNHL dịch tứ tượng nhưng chú thích ủng hộ Wilhelm bỏ tứ; khác biệt không được xóa.\n\nNHL nói PBC lại bỏ tiết3,nhưng NHL dịch thần vật/trai giới vẫn hiện.\n\nNHL cho thái cực mới Chiến Quốc/Hán,vô cực thêm Tống,và báo PBC bỏ từ5 xuống; niên đại vẫn quan điểm nguồn.\n\nNHL đánh giá chương11 đề cao bói,không sâu; nhãn7 lặp không được sửa thành thứ tự chuẩn.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-01-translation — translation",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-02-translation — translation",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-03-translation — translation",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 359],
+          "section": "section-04-translation — translation",
+          "printedPages": ["358", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-05-translation — translation",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-06-translation — translation",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-07a-translation — translation",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 360],
+          "section": "section-07b-translation — translation",
+          "printedPages": ["359", "360"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [360, 360],
+          "section": "section-09-translation — translation",
+          "printedPages": ["360", "360"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "s03-pbc-omission-note — note",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "s05-dating-pbc-note — note",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [360, 360],
+          "section": "closing-evaluation — note",
+          "printedPages": ["360", "360"]
+        }
+      ],
       "attribution": {
         "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-02-original-reading",
-      "kind": "author-interpretation",
-      "text": "Thi viên/quái phương/sáu hào cống, tẩy tâm/tàng mật, biết lai/vãng và thần vũ bất sát.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-02-original-reading"],
+      "text": "Thi viên/quái phương/sáu hào cống, tẩy tâm/tàng mật, biết lai/vãng và thần vũ bất sát.\n\nHiểu đạo trời/dân, tạo thần vật cho dân dùng và trai giới.\n\nKhép Khôn/mở Càn, biến/thông/tượng/khí/pháp và dân cùng dùng gọi thần.\n\nThái cực sinh lưỡng nghi, tứ tượng rồi bát quái.\n\nBát quái định cát hung và sinh đại nghiệp.\n\nMẫu trời đất, mùa, nhật nguyệt, giàu quý, thánh nhân và thi/quy.\n\nThần vật, biến hóa, thiên tượng, Hà Đồ/Lạc Thư được thánh nhân làm theo.\n\nTứ tượng để thị, hệ từ để cáo, cát hung để đoán.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-02-original-reading — original-reading",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-03-original-reading — original-reading",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "section-04-original-reading — original-reading",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-05-original-reading — original-reading",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-06-original-reading — original-reading",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-07a-original-reading — original-reading",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "section-07b-original-reading — original-reading",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [360, 360],
+          "section": "section-09-original-reading — original-reading",
+          "printedPages": ["360", "360"]
+        }
+      ],
       "attribution": {
         "author": "Hệ Từ Thượng — tác giả cổ không xác định",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-02-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch cả phần thi/quái/sáu hào trước đoạn tẩy tâm; PBC tiết2 bắt đầu ở tẩy tâm.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-02-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-03-original-reading",
-      "kind": "author-interpretation",
-      "text": "Hiểu đạo trời/dân, tạo thần vật cho dân dùng và trai giới.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-03-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-03-translation",
-      "kind": "author-interpretation",
-      "text": "NHL có dịch tiết3; PBC bản chọn không có tiết ấy.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-03-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-04-original-reading",
-      "kind": "author-interpretation",
-      "text": "Khép Khôn/mở Càn, biến/thông/tượng/khí/pháp và dân cùng dùng gọi thần.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-04-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-04-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch chuỗi đóng mở đến công dụng hàng ngày, không sơ đồ phép tính.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-04-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-05-original-reading",
-      "kind": "author-interpretation",
-      "text": "Thái cực sinh lưỡng nghi, tứ tượng rồi bát quái.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-05-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-05-translation",
-      "kind": "author-interpretation",
-      "text": "Bản dịch vẫn có tiết5; không lấy phần lược PBC làm trạng thái vắng NHL.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-05-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-06-original-reading",
-      "kind": "author-interpretation",
-      "text": "Bát quái định cát hung và sinh đại nghiệp.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-06-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-06-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch sự nối nhau của quái/cát hung/nghiệp là lời nguồn.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-06-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-07a-original-reading",
-      "kind": "author-interpretation",
-      "text": "Mẫu trời đất, mùa, nhật nguyệt, giàu quý, thánh nhân và thi/quy.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-07a-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-07a-translation",
-      "kind": "author-interpretation",
-      "text": "NHL có tiết in7 lần đầu về mẫu/công dụng bói; lời ích/cát hung không được xác nhận.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-07a-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-07b-original-reading",
-      "kind": "author-interpretation",
-      "text": "Thần vật, biến hóa, thiên tượng, Hà Đồ/Lạc Thư được thánh nhân làm theo.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-07b-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-07b-translation",
-      "kind": "author-interpretation",
-      "text": "NHL in7 lần thứ hai cho đoạn thần vật, không tự sửa số thành8 hay thêm một tiết.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-07b-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-09-original-reading",
-      "kind": "author-interpretation",
-      "text": "Tứ tượng để thị, hệ từ để cáo, cát hung để đoán.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-09-original-reading"],
-      "attribution": {
-        "author": "Hệ Từ Thượng — tác giả cổ không xác định",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-section-09-translation",
-      "kind": "author-interpretation",
-      "text": "NHL dịch tứ tượng nhưng chú thích ủng hộ Wilhelm bỏ tứ; khác biệt không được xóa.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-section-09-translation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s02-pbc-bat-sat",
-      "kind": "author-interpretation",
       "text": "NHL theo PBC dịch thần vũ bất sát là dùng uy võ thần diệu mà không tàn sát; khác lời Chu Hi/Wilhelm.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s02-pbc-bat-sat"],
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "s02-pbc-bat-sat — note",
+          "printedPages": ["358", "358"]
+        }
+      ],
       "attribution": {
         "author": "Phan Bội Châu",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s02-chu-hi",
-      "kind": "author-interpretation",
-      "text": "Qua NHL,Chu Hi giảng thần vũ bất sát là hợp lẽ không đối vật nào; không đồng nhất bản PBC.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s02-chu-hi"],
+      "text": "Qua NHL,Chu Hi giảng thần vũ bất sát là hợp lẽ không đối vật nào; không đồng nhất bản PBC.\n\nNHL thuật Chu Hi nghi sau lập thiếu chữ. Không thêm chữ hoặc phục hồi văn.\n\nNHL thuật Chu Hi hiểu phú quý trỏ ngôi vua; không quy sang chuẩn giá trị người.\n\nTheo NHL,Chu Hi nói ngờ vực thì không làm,nhờ bói tin/quyết rồi cố gắng; đây là giải nguồn,không chứng minh bói.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "s02-chu-hi — note",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "s07a-chu-hi-lost-word — note",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "s07a-chu-hi-rank — note",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "s07a-chu-hi-effort — note",
+          "printedPages": ["359", "359"]
+        }
+      ],
       "attribution": {
         "author": "Chu Hi",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     },
     {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s02-wilhelm",
-      "kind": "author-interpretation",
-      "text": "NHL thuật Wilhelm dịch thần quyền không giảm,khác uy võ không sát.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s02-wilhelm"],
+      "text": "NHL thuật Wilhelm dịch thần quyền không giảm,khác uy võ không sát.\n\nNHL thuật Wilhelm hiểu pháp tượng là hình tượng thiết yếu nhất.\n\nNHL nói Wilhelm không dịch tứ ở tứ tượng và cho có lý; giữ chữ trong bản dịch NHL.",
+      "references": [
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [358, 358],
+          "section": "s02-wilhelm — note",
+          "printedPages": ["358", "358"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [359, 359],
+          "section": "s07a-wilhelm-image — note",
+          "printedPages": ["359", "359"]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [360, 360],
+          "section": "s09-wilhelm-tu — note",
+          "printedPages": ["360", "360"]
+        }
+      ],
       "attribution": {
         "author": "R. Wilhelm",
         "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s03-pbc-omission-note",
-      "kind": "author-interpretation",
-      "text": "NHL nói PBC lại bỏ tiết3,nhưng NHL dịch thần vật/trai giới vẫn hiện.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s03-pbc-omission-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s05-dating-pbc-note",
-      "kind": "author-interpretation",
-      "text": "NHL cho thái cực mới Chiến Quốc/Hán,vô cực thêm Tống,và báo PBC bỏ từ5 xuống; niên đại vẫn quan điểm nguồn.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s05-dating-pbc-note"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s07a-chu-hi-lost-word",
-      "kind": "author-interpretation",
-      "text": "NHL thuật Chu Hi nghi sau lập thiếu chữ. Không thêm chữ hoặc phục hồi văn.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s07a-chu-hi-lost-word"],
-      "attribution": {
-        "author": "Chu Hi",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s07a-wilhelm-image",
-      "kind": "author-interpretation",
-      "text": "NHL thuật Wilhelm hiểu pháp tượng là hình tượng thiết yếu nhất.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s07a-wilhelm-image"],
-      "attribution": {
-        "author": "R. Wilhelm",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s07a-chu-hi-rank",
-      "kind": "author-interpretation",
-      "text": "NHL thuật Chu Hi hiểu phú quý trỏ ngôi vua; không quy sang chuẩn giá trị người.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s07a-chu-hi-rank"],
-      "attribution": {
-        "author": "Chu Hi",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s07a-chu-hi-effort",
-      "kind": "author-interpretation",
-      "text": "Theo NHL,Chu Hi nói ngờ vực thì không làm,nhờ bói tin/quyết rồi cố gắng; đây là giải nguồn,không chứng minh bói.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s07a-chu-hi-effort"],
-      "attribution": {
-        "author": "Chu Hi",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-s09-wilhelm-tu",
-      "kind": "author-interpretation",
-      "text": "NHL nói Wilhelm không dịch tứ ở tứ tượng và cho có lý; giữ chữ trong bản dịch NHL.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-s09-wilhelm-tu"],
-      "attribution": {
-        "author": "R. Wilhelm",
-        "via": "Nguyễn Hiến Lê — lời được dẫn trong ấn bản cung cấp; không đối chiếu trực tiếp tác phẩm được dẫn"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
-    },
-    {
-      "id": "article-nhl-he-tu-thuong-11-nhl-he-tu-shang-11-closing-evaluation",
-      "kind": "author-interpretation",
-      "text": "NHL đánh giá chương11 đề cao bói,không sâu; nhãn7 lặp không được sửa thành thứ tự chuẩn.",
-      "citationIds": ["citation-nhl-he-tu-shang-11-closing-evaluation"],
-      "attribution": {
-        "author": "Nguyễn Hiến Lê"
-      },
-      "conditions": [
-        "Tóm tắt nguyên tác, bản dịch và ý kiến được nguồn dẫn; không xác minh tác giả truyền gán, lịch sử, khoa học hay hiệu nghiệm. Không dùng làm thuật toán, lịch, diễn giải tự động, tư vấn y tế/pháp lý/an toàn/tài chính, chuẩn giới/giai cấp, cáo buộc hoặc hướng dẫn bạo lực."
-      ]
+      }
     }
-  ],
-  "relatedIds": [],
-  "rights": {
-    "basis": "original-summary-and-structured-facts",
-    "license": "All Rights Reserved"
-  },
-  "review": {
-    "status": "reviewed",
-    "reviewer": "Codex worker — AI source comparison",
-    "reviewedAt": "2026-10-07",
-    "method": "source-comparison",
-    "evidenceCitationIds": [
-      "citation-nhl-he-tu-shang-11-section-01-original-reading",
-      "citation-nhl-he-tu-shang-11-section-01-translation",
-      "citation-nhl-he-tu-shang-11-section-02-original-reading",
-      "citation-nhl-he-tu-shang-11-section-02-translation",
-      "citation-nhl-he-tu-shang-11-section-03-original-reading",
-      "citation-nhl-he-tu-shang-11-section-03-translation",
-      "citation-nhl-he-tu-shang-11-section-04-original-reading",
-      "citation-nhl-he-tu-shang-11-section-04-translation",
-      "citation-nhl-he-tu-shang-11-section-05-original-reading",
-      "citation-nhl-he-tu-shang-11-section-05-translation",
-      "citation-nhl-he-tu-shang-11-section-06-original-reading",
-      "citation-nhl-he-tu-shang-11-section-06-translation",
-      "citation-nhl-he-tu-shang-11-section-07a-original-reading",
-      "citation-nhl-he-tu-shang-11-section-07a-translation",
-      "citation-nhl-he-tu-shang-11-section-07b-original-reading",
-      "citation-nhl-he-tu-shang-11-section-07b-translation",
-      "citation-nhl-he-tu-shang-11-section-09-original-reading",
-      "citation-nhl-he-tu-shang-11-section-09-translation",
-      "citation-nhl-he-tu-shang-11-s02-pbc-bat-sat",
-      "citation-nhl-he-tu-shang-11-s02-chu-hi",
-      "citation-nhl-he-tu-shang-11-s02-wilhelm",
-      "citation-nhl-he-tu-shang-11-s03-pbc-omission-note",
-      "citation-nhl-he-tu-shang-11-s05-dating-pbc-note",
-      "citation-nhl-he-tu-shang-11-s07a-chu-hi-lost-word",
-      "citation-nhl-he-tu-shang-11-s07a-wilhelm-image",
-      "citation-nhl-he-tu-shang-11-s07a-chu-hi-rank",
-      "citation-nhl-he-tu-shang-11-s07a-chu-hi-effort",
-      "citation-nhl-he-tu-shang-11-s09-wilhelm-tu",
-      "citation-nhl-he-tu-shang-11-closing-evaluation"
-    ],
-    "note": "Đã so sánh extraction và từng ảnh đầy trang 1.5x của NHL334–362/PBC601–630. Chỉ source comparison061; audit092, verification và certification chưa hoàn tất. Không phát hành văn/ảnh nguồn."
-  }
+  ]
 }
