@@ -60,7 +60,7 @@ Do not implement until the owner approves this issue/plan.
 - `pnpm --filter @liuyao/knowledge validate:corpus --check` after build
 - `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` when the four ignored local PDF editions are available
 - Source-independent fixtures, link/route regression checks, affected browser/offline checks and payload comparison
-- Independent source review of changed explanatory content against the *final* revision
+- Independent source review of changed explanatory content against the _final_ revision
 
 ## Handoff
 

@@ -32,9 +32,9 @@ These entries are hypotheses for an implementation inventory, **not preapproval 
 
 ## Ownership and canonical boundaries
 
-- `docs/product-specs/knowledge-content.md`: *what reader-useful content belongs in the library*; when to split an entry, preserve author disagreement, trim duplication, and keep unsupported claims out.
-- `docs/product-specs/knowledge-quality.md`: *how a source-backed change becomes ready*; source locator and attribution requirements, reviewed meaning, changed-content independent reviewer gate, blockers, and final-head verification.
-- `docs/design-docs/knowledge-model.md`: *how records, links, table/figure structures, deployment and loading work*; do not put editorial decisions here.
+- `docs/product-specs/knowledge-content.md`: _what reader-useful content belongs in the library_; when to split an entry, preserve author disagreement, trim duplication, and keep unsupported claims out.
+- `docs/product-specs/knowledge-quality.md`: _how a source-backed change becomes ready_; source locator and attribution requirements, reviewed meaning, changed-content independent reviewer gate, blockers, and final-head verification.
+- `docs/design-docs/knowledge-model.md`: _how records, links, table/figure structures, deployment and loading work_; do not put editorial decisions here.
 - `docs/references/book-sources.md`: human-readable edition-level and known-discrepancy notes. `packages/knowledge/data/sources.json`: machine-readable four supplied editions and fingerprints; no PDF payloads. `bibliography.json`: distinct legacy bibliography/compatibility material where required.
 - `docs/design-docs/liuyao-ruleset-v1.md`: project's implemented computation conventions and supporting explanation. `packages/liuyao-core/`: pure deterministic implementation. `packages/knowledge/data/`: sourced explanation and original observed tables/figures (including known discrepancies).
 - `apps/web/`: UI/Library route and offline rendering; knowledge content and business rules are not authored in components.
@@ -76,7 +76,7 @@ Avoid introducing `docs/knowledge/`, a second data manifest, `reports/current/`,
 
 - Trace uses of `packages/knowledge/reports/authoring-crosswalk.json` and `coverage.json` in package scripts/tests, CI, docs, feature plans, hardcoded links and non-code consumers visible to the repository.
 - Where genuinely unused, remove the tracked reports from the active tree; preserve recovery details in the single historical review README and Git. Do not move their bytes into `docs/`, build outputs or a new registry.
-- If any live functionality depends on them, replace *that function* with existing canonical record/projection access, verify its tests, then retire the report. Defer if it would trigger a large schema migration.
+- If any live functionality depends on them, replace _that function_ with existing canonical record/projection access, verify its tests, then retire the report. Defer if it would trigger a large schema migration.
 - Inspect `packages/knowledge/data/*.ts` exports and `src/catalog.ts`/adapter before considering changes. Compatibility re-exports are not duplicated editorial prose; do not remove merely for tidy naming.
 - Verify `sources.json` and `bibliography.json` semantics, IDs, source association and legacy APIs. No automatic merge.
 
