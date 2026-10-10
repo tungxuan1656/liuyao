@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-10 — feat-104 PR follow-up completed
+
+**State**: feat-104 `done`; this approved follow-up supersedes the original whole-folder lint exclusion and dropped document-format coverage.
+**Done**: Fixed duplicate trigram keys and restored the `100vh` fallback with an `@supports` override. Enabled shadcn lint with three bounded accessibility exceptions, preserved formatter/assist exclusions, fixed `field.tsx`, and converted type-only imports. Enabled experimental HTML formatting and restored Prettier only for Markdown/YAML in scripts and staged-file hooks. Updated the development contract.
+**Evidence**: Follow-up commit `3d41c8d` is pushed to PR #126. Lint checks 541 files with zero errors; format checks pass. The committed-tree `./init.sh` run passes all phases and 181 core + 103 knowledge tests, with an empty working tree afterward. A one-off assertion covers all eight repeated-trigram hexagrams; direct Chrome computer-use confirms both Thuần Càn links navigate independently to Càn.
+**Blockers**: none. Experimental HTML and the skipped oversized crosswalk remain documented limits.
+**Next**: Review and merge PR #126.
+
 ## 2026-10-10 — feat-104 implemented
 
 **State**: feat-104 `done`; the repository runs Biome 2.5.15 as its only formatter and linter.

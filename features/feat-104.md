@@ -26,7 +26,7 @@ Replace ESLint with Biome 2.5.15. Use Biome for supported source formats and Pre
 - [x] HTML, Markdown, and YAML participate in formatting and staged-file hooks.
 - [x] ESLint remains removed; Prettier runs only for Markdown/YAML.
 - [x] Lint, format checks, full harness, and direct library smoke check pass.
-- [ ] Follow-up is pushed to PR #126; committed tree remains clean after verification.
+- [x] Follow-up is pushed to PR #126; committed tree remains clean after verification.
 
 ## Plan
 
@@ -37,7 +37,7 @@ Replace ESLint with Biome 2.5.15. Use Biome for supported source formats and Pre
 
 ## Evidence
 
-- Original migration and shell-format commits: `3c05416`, `8109c67`.
+- Original migration and shell-format commits: `3c05416`, `8109c67`. Follow-up commit `3d41c8d` is pushed to PR #126; its full harness run leaves `git status --porcelain` empty.
 - User approved the follow-up design after the read-only HTML/UI lint probe.
 - Original supplied-config baseline: 542 files, 251 errors, 78 warnings, 71 infos; scratch safe fixes left 35 errors. Prettier-compatible formatting reduced 149 reformatted files to five union-layout differences plus required import organization.
 - Baseline and follow-up `./init.sh` passed: format, lint, typecheck, build, package exports, placement check, 181 core and 103 knowledge tests.
@@ -48,5 +48,6 @@ Replace ESLint with Biome 2.5.15. Use Biome for supported source formats and Pre
 
 ## Handoff
 
-- State: active; implementation and local verification pass, with no blockers.
-- Next: commit and push the follow-up, then confirm the committed tree remains clean after the harness.
+- State: done; implementation, verification, committed-tree stability, and push are complete.
+- Blockers: none.
+- Next: review and merge PR #126.
