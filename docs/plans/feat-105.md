@@ -14,19 +14,19 @@ At the planning snapshot (2026-10-10, `main`), `docs/` contains 46 committed fil
 
 ### Concrete risks and treatment
 
-| Observed artifact | Risk to autonomous agents | Initial disposition (verify before changes) |
-| --- | --- | --- |
-| `docs/index.md`, `ARCHITECTURE.md`, `AGENTS.md` | Conflicting routing or repeating policies can cause agents to place knowledge in docs or use historical plans as current contracts | Keep; refresh owner map and make links authoritative |
-| `docs/plans/feat-067.md`, `feat-101.md`, `docs/reviews/knowledge/`, `progress.md` | Historical audit/provenance text looks actionable | Preserve history; label/index as historical, never rewrite old append-only logs |
-| `packages/knowledge/reports/authoring-crosswalk.json` and `coverage.json` | Large retired artifacts and obsolete claims/counts accidentally become acceptance gates | Find all readers; if unused, delete from active tree, recover from Git; no replacement report |
-| `data/foundations/ntt-cover.json`, `ntt-title.json`, `ntt-intro-index.json`, `pbc-contents.json`, `nhl-front-end-accounting.json` | Edition/front-matter accounting presented as learner-facing Articles merely because status is ready | Review purpose/links; keep meaningful provenance/source errors but route/index appropriately; don't infer deletion from title |
-| `data/liuyao/bpct-boards-*.json` | 64 figure boards / 384 label facts plus repetitive paraphrases; agent may multiply text during feat-084 | Pilot and measure; retain one canonical structured representation plus only distinct supported explanation/exception |
-| `data/foundations/ntt-chu-xi-diagrams.json`, other large articles | Automated size thresholds invite lossy splitting or artificial fragmentation | Keep unless a concrete, independently demonstrated content/consumer problem exists |
-| `data/sources.json` and `data/bibliography.json` | Inaccurate assumption that the two lists are duplicates | Keep their different supplied-edition vs compatibility/broader bibliography duties; document and test separation |
-| `data/*.ts` compatibility exports / `src/content-adapter.ts` | Runtime consumers could break if shims are deleted just because JSON is canonical | Keep until consumers are identified and migrations are separately justified |
-| `docs/design-docs/batquai.avif` | Source artwork seems misplaced but moving it can break the approved PWA icon generator and rights/source record | Default keep; move only after establishing concrete benefit and updating generator references |
-| `docs/design-docs/liuyao-ruleset-v1.md`, `@liuyao/core`, rule JSON tables | Unclear source vs implemented convention leads to silent calculation changes | Keep boundaries explicit; compare source-derived fixtures to core; never let an editorial change rewrite core behavior |
-| Feat-084–093 goals and checklists | Literal "every unit decision" may recreate per-paragraph audit ledgers and huge reports | Preserve their actual scholarly scope, replace logging quota with bounded review/material findings and explicit owner gate |
+| Observed artifact                                                                                                                 | Risk to autonomous agents                                                                                                          | Initial disposition (verify before changes)                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `docs/index.md`, `ARCHITECTURE.md`, `AGENTS.md`                                                                                   | Conflicting routing or repeating policies can cause agents to place knowledge in docs or use historical plans as current contracts | Keep; refresh owner map and make links authoritative                                                                          |
+| `docs/plans/feat-067.md`, `feat-101.md`, `docs/reviews/knowledge/`, `progress.md`                                                 | Historical audit/provenance text looks actionable                                                                                  | Preserve history; label/index as historical, never rewrite old append-only logs                                               |
+| `packages/knowledge/reports/authoring-crosswalk.json` and `coverage.json`                                                         | Large retired artifacts and obsolete claims/counts accidentally become acceptance gates                                            | Find all readers; if unused, delete from active tree, recover from Git; no replacement report                                 |
+| `data/foundations/ntt-cover.json`, `ntt-title.json`, `ntt-intro-index.json`, `pbc-contents.json`, `nhl-front-end-accounting.json` | Edition/front-matter accounting presented as learner-facing Articles merely because status is ready                                | Review purpose/links; keep meaningful provenance/source errors but route/index appropriately; don't infer deletion from title |
+| `data/liuyao/bpct-boards-*.json`                                                                                                  | 64 figure boards / 384 label facts plus repetitive paraphrases; agent may multiply text during feat-084                            | Pilot and measure; retain one canonical structured representation plus only distinct supported explanation/exception          |
+| `data/foundations/ntt-chu-xi-diagrams.json`, other large articles                                                                 | Automated size thresholds invite lossy splitting or artificial fragmentation                                                       | Keep unless a concrete, independently demonstrated content/consumer problem exists                                            |
+| `data/sources.json` and `data/bibliography.json`                                                                                  | Inaccurate assumption that the two lists are duplicates                                                                            | Keep their different supplied-edition vs compatibility/broader bibliography duties; document and test separation              |
+| `data/*.ts` compatibility exports / `src/content-adapter.ts`                                                                      | Runtime consumers could break if shims are deleted just because JSON is canonical                                                  | Keep until consumers are identified and migrations are separately justified                                                   |
+| `docs/design-docs/batquai.avif`                                                                                                   | Source artwork seems misplaced but moving it can break the approved PWA icon generator and rights/source record                    | Default keep; move only after establishing concrete benefit and updating generator references                                 |
+| `docs/design-docs/liuyao-ruleset-v1.md`, `@liuyao/core`, rule JSON tables                                                         | Unclear source vs implemented convention leads to silent calculation changes                                                       | Keep boundaries explicit; compare source-derived fixtures to core; never let an editorial change rewrite core behavior        |
+| Feat-084–093 goals and checklists                                                                                                 | Literal "every unit decision" may recreate per-paragraph audit ledgers and huge reports                                            | Preserve their actual scholarly scope, replace logging quota with bounded review/material findings and explicit owner gate    |
 
 These entries are hypotheses for an implementation inventory, **not preapproval to delete/move**.
 
@@ -144,14 +144,14 @@ Avoid introducing `docs/knowledge/`, a second data manifest, `reports/current/`,
 
 ## Agent coordination and ownership
 
-| Role | File scope | Proof of completion |
-| --- | --- | --- |
-| Leader | Feature state, plan, cross-package integration, final verification | Base/final SHA, assigned ownership, no concurrent feature, blocking findings resolved |
-| Docs reviewer/writer | `docs/index.md`, owning product/design docs, `ARCHITECTURE.md`, `AGENTS.md` | No duplicate canonical policies, historical plans clearly routed |
-| Knowledge content writer | Selected `packages/knowledge/data/` records only | Exact source/page/image locators, changed-text diff, preserved exceptions |
-| Independent source reviewer | Read-only pass on changed content and direct uses | Material findings with record ID/pointer/pages, correction verified on final diff |
-| Knowledge/core test writer | `packages/knowledge/tests/`, existing validation scripts | New relevant failure-mode tests; no unrelated core behavior changed |
-| Web integration verifier | `apps/web/` Library and PWA routes, if actually affected | Deep links, accessibility, offline and payload evidence |
+| Role                        | File scope                                                                  | Proof of completion                                                                   |
+| --------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Leader                      | Feature state, plan, cross-package integration, final verification          | Base/final SHA, assigned ownership, no concurrent feature, blocking findings resolved |
+| Docs reviewer/writer        | `docs/index.md`, owning product/design docs, `ARCHITECTURE.md`, `AGENTS.md` | No duplicate canonical policies, historical plans clearly routed                      |
+| Knowledge content writer    | Selected `packages/knowledge/data/` records only                            | Exact source/page/image locators, changed-text diff, preserved exceptions             |
+| Independent source reviewer | Read-only pass on changed content and direct uses                           | Material findings with record ID/pointer/pages, correction verified on final diff     |
+| Knowledge/core test writer  | `packages/knowledge/tests/`, existing validation scripts                    | New relevant failure-mode tests; no unrelated core behavior changed                   |
+| Web integration verifier    | `apps/web/` Library and PWA routes, if actually affected                    | Deep links, accessibility, offline and payload evidence                               |
 
 Where multiple agents operate, assign **non-overlapping file ownership**; integrate sequentially before final checks. A writer does not approve its own semantic correctness. Treat absent source access as a specific blocker, not a reason to invent a substitute.
 
@@ -166,16 +166,16 @@ Where multiple agents operate, assign **non-overlapping file ownership**; integr
 
 ## Verification and acceptance matrix
 
-| Area | Method | Evidence recorded |
-| --- | --- | --- |
-| Docs ownership and history | Inspect owner map, all changed links/headings and historical references | List of canonical owners and corrected routes |
-| Source fidelity | Independent changed-entry/source comparison incl. images for diagrams | Book, PDF page, exact record pointer and verified correction |
-| Structural graph | JSON schema + corpus checks | Unique ID/anchor and valid related/table/figure/position links |
-| Deterministic calculations | Knowledge table fixtures + core regression tests | Independent expected values, no behavior delta |
-| Public Library | Direct page/deep link/hidden metadata tests | No lost records/meaning or broken navigation |
-| Offline/payload | Production build + browser offline/retry checks | Raw/gzip deltas, precache inventory, usable cached records |
-| Repository integrity | `./init.sh` + clean worktree CI | Final commit SHA and pass/fail details |
-| Scope/agent contract | Review updated feat-084–093 and `AGENTS.md` routing | No per-unit decision ledger, all scope still covered |
+| Area                       | Method                                                                  | Evidence recorded                                              |
+| -------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Docs ownership and history | Inspect owner map, all changed links/headings and historical references | List of canonical owners and corrected routes                  |
+| Source fidelity            | Independent changed-entry/source comparison incl. images for diagrams   | Book, PDF page, exact record pointer and verified correction   |
+| Structural graph           | JSON schema + corpus checks                                             | Unique ID/anchor and valid related/table/figure/position links |
+| Deterministic calculations | Knowledge table fixtures + core regression tests                        | Independent expected values, no behavior delta                 |
+| Public Library             | Direct page/deep link/hidden metadata tests                             | No lost records/meaning or broken navigation                   |
+| Offline/payload            | Production build + browser offline/retry checks                         | Raw/gzip deltas, precache inventory, usable cached records     |
+| Repository integrity       | `./init.sh` + clean worktree CI                                         | Final commit SHA and pass/fail details                         |
+| Scope/agent contract       | Review updated feat-084–093 and `AGENTS.md` routing                     | No per-unit decision ledger, all scope still covered           |
 
 **Definition of done:** All [feat-105 acceptance](../../features/feat-105.md#acceptance) criteria pass on the final revision, with explicit unresolved gaps and no material content blocker. A passing schema alone never certifies interpretations or efficacy.
 
