@@ -72,14 +72,20 @@ run_parallel() {
 
     if [ "${#pids[@]}" -ge "$MAX_JOBS" ]; then
       for pid in "${pids[@]}"; do
-        wait "$pid" || { STATUS=1; phase_status=1; }
+        wait "$pid" || {
+          STATUS=1
+          phase_status=1
+        }
       done
       pids=()
     fi
   done
 
   for pid in "${pids[@]}"; do
-    wait "$pid" || { STATUS=1; phase_status=1; }
+    wait "$pid" || {
+      STATUS=1
+      phase_status=1
+    }
   done
 
   return "$phase_status"
