@@ -255,7 +255,9 @@ describe('simple content validation', () => {
     expect(() => validateCorpus([lower, upper, order], sources)).toThrow(/order/);
     const repeatedPosition = structuredClone(r);
     repeatedPosition.lines[1].position = 1;
-    expect(() => validateCorpus([lower, upper, repeatedPosition], sources)).toThrow(/order/);
+    expect(() => validateCorpus([lower, upper, repeatedPosition], sources)).toThrow(
+      /duplicate content anchor ID/,
+    );
     const missingLineReference = structuredClone(r);
     missingLineReference.lines[0].entries[0].references = [];
     expect(() => validateCorpus([lower, upper, missingLineReference], sources)).toThrow();
