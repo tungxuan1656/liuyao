@@ -518,7 +518,7 @@
       "id": "feat-084",
       "title": "Review and improve sources shared foundations casting and Liu Yao tables",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-051", "feat-058", "feat-064"]
+      "depends_on": ["feat-067", "feat-051", "feat-058", "feat-064", "feat-105"]
     },
     {
       "id": "feat-085",
@@ -534,56 +534,57 @@
         "feat-047",
         "feat-048",
         "feat-049",
-        "feat-050"
+        "feat-050",
+        "feat-105"
       ]
     },
     {
       "id": "feat-086",
       "title": "Review and improve BPCT applications — Weather life career and wealth",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-052"]
+      "depends_on": ["feat-067", "feat-052", "feat-105"]
     },
     {
       "id": "feat-087",
       "title": "Review and improve BPCT applications — Loss travel study marriage and household members",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-053"]
+      "depends_on": ["feat-067", "feat-053", "feat-105"]
     },
     {
       "id": "feat-088",
       "title": "Review and improve BPCT applications — Housing boats and Xướng Gia",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-054"]
+      "depends_on": ["feat-067", "feat-054", "feat-105"]
     },
     {
       "id": "feat-089",
       "title": "Review and improve BPCT applications — Illness remedies and absent travellers",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-055"]
+      "depends_on": ["feat-067", "feat-055", "feat-105"]
     },
     {
       "id": "feat-090",
       "title": "Review and improve BPCT applications — Litigation spirits agriculture state conflict and flight",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-056"]
+      "depends_on": ["feat-067", "feat-056", "feat-105"]
     },
     {
       "id": "feat-091",
       "title": "Review and improve BPCT questions Hà Tri casting supplements and criticisms",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-057", "feat-058"]
+      "depends_on": ["feat-067", "feat-057", "feat-058", "feat-105"]
     },
     {
       "id": "feat-092",
       "title": "Review and improve classical traditions diagrams and all Hệ Từ chapters",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-059", "feat-060", "feat-061", "feat-062"]
+      "depends_on": ["feat-067", "feat-059", "feat-060", "feat-061", "feat-062", "feat-105"]
     },
     {
       "id": "feat-093",
       "title": "Review and improve ordered lessons and every worked example",
       "status": "todo",
-      "depends_on": ["feat-067", "feat-065"]
+      "depends_on": ["feat-067", "feat-065", "feat-105"]
     },
     {
       "id": "feat-094",
@@ -678,6 +679,12 @@
       "title": "Migrate linting and formatting to Biome",
       "status": "done",
       "depends_on": []
+    },
+    {
+      "id": "feat-105",
+      "title": "Consolidate Docs/Knowledge ownership and harden agent quality gates",
+      "status": "todo",
+      "depends_on": ["feat-068", "feat-097", "feat-101", "feat-104"]
     }
   ]
 }
