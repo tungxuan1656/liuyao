@@ -13,7 +13,7 @@ V1 exposes local reference content for:
 - core Liu Yao terms;
 - V1 rule explanations;
 - source metadata;
-- ready articles and learning sections.
+- listed ready articles and learning sections.
 
 The browser does not contain automated divination conclusions.
 
@@ -59,6 +59,7 @@ Source references identify a work, section, chapter, or page when that informati
 
 Keep stable IDs for lookup and routing. Do not show them as interface labels.
 Show source titles and reference locations directly. Collapse author, publication, rights, and provenance metadata until the user requests it.
+A direct link resolves any ready record by stable ID. Catalog lists and local article search include listed records only.
 
 ## Book-backed content
 

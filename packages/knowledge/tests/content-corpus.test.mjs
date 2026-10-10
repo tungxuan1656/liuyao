@@ -114,6 +114,26 @@ describe('authored corpus integration', () => {
     expect(positions).toBe(384);
   });
 
+  it('keeps each BPCT palace board as eight figures with six referenced labels', () => {
+    const boards = records.filter(record => record.id.startsWith('article-bpct-boards-'));
+    expect(boards).toHaveLength(8);
+    const labelIds = ['label-1', 'label-2', 'label-3', 'label-4', 'label-5', 'label-6'];
+    for (const board of boards) {
+      expect(board.figures, board.id).toHaveLength(8);
+      for (const figure of board.figures) {
+        expect(figure.id).toMatch(/^figure-bpct-board-\d{2}-board$/);
+        expect(
+          figure.labels.map(label => label.id),
+          figure.id,
+        ).toEqual(labelIds);
+        for (const label of figure.labels) {
+          expect(label.text.trim().length, label.id).toBeGreaterThan(0);
+          expect(label.references.length, label.id).toBeGreaterThan(0);
+        }
+      }
+    }
+  });
+
   it('keeps the independently checked Chu Hy Đại Quá Thượng Lục locator on NTT PDF 482', () => {
     // Supplied Ngô Tất Tố PDF 482 contains "Bản nghĩa của Chu Hy" for quẻ 28, hào 6.
     const record = hexagrams.find(record => record.id === 'hexagram-28');
