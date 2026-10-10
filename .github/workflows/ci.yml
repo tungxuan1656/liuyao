@@ -39,11 +39,5 @@ jobs:
       - name: Run agent harness
         run: ./init.sh
 
-      - name: Diagnose formatter changes (temporary)
-        if: always()
-        run: |
-          git status --short
-          git diff -- packages/knowledge/tests/content-corpus.test.mjs packages/knowledge/tests/content-validation.test.mjs
-
       - name: Require clean working tree
         run: test -z "$(git status --porcelain)"

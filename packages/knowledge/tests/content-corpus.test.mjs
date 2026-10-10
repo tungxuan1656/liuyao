@@ -55,13 +55,16 @@ describe('authored corpus integration', () => {
       expect(record.kingWenNumber, id).toBe(index + 1);
       expect(record.status, id).toBe('ready');
       expect(record.entries.length, id).toBeGreaterThan(0);
-      expect(record.lines.map(line => line.position), id).toEqual(expectedPositions);
+      expect(
+        record.lines.map(line => line.position),
+        id,
+      ).toEqual(expectedPositions);
       const lower = byId.get(record.lowerTrigramId);
       const upper = byId.get(record.upperTrigramId);
-      expect(record.lines.map(line => line.polarity), id).toEqual([
-        ...lower.lines,
-        ...upper.lines,
-      ]);
+      expect(
+        record.lines.map(line => line.polarity),
+        id,
+      ).toEqual([...lower.lines, ...upper.lines]);
       for (const line of record.lines) {
         positions++;
         expect(line.entries.length, id + ' line ' + line.position).toBeGreaterThan(0);
@@ -101,9 +104,10 @@ describe('authored corpus integration', () => {
       const source = authored.get(id);
       expect(record.id, id).toBe(id);
       expect(record.kingWenNumber, id).toBe(source.kingWenNumber);
-      expect(record.lines.map(line => [line.position, line.polarity, line.entries.length]), id).toEqual(
-        source.lines.map(line => [line.position, line.polarity, line.entries.length]),
-      );
+      expect(
+        record.lines.map(line => [line.position, line.polarity, line.entries.length]),
+        id,
+      ).toEqual(source.lines.map(line => [line.position, line.polarity, line.entries.length]));
       positions += record.lines.length;
     }
     expect(positions).toBe(384);
