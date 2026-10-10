@@ -3,7 +3,7 @@ import type { ContentTable } from './content-tables.js';
 
 /** Tables use their authored ID, or a stable kind-based fallback. */
 export function getContentTableId(table: ContentTable): string {
-  return table.id ?? 'table-' + table.kind;
+  return table.id ?? `table-${table.kind}`;
 }
 export function entriesOf(record: ContentRecord) {
   return [
@@ -28,7 +28,7 @@ export function referencesOf(record: ContentRecord): readonly ContentReference[]
 export function anchorIdsOf(record: ContentRecord): readonly string[] {
   return [
     ...entriesOf(record).flatMap(entry => (entry.id ? [entry.id] : [])),
-    ...(record.type === 'hexagram' ? record.lines.map(line => 'line-' + line.position) : []),
+    ...(record.type === 'hexagram' ? record.lines.map(line => `line-${line.position}`) : []),
     ...(record.tables ?? []).map(getContentTableId),
     ...(record.figures ?? []).map(figure => figure.id),
   ];

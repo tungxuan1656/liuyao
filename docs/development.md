@@ -63,11 +63,11 @@ The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/lu
 
 ## Formatting ownership
 
-Biome 2.5.15 checks JavaScript, TypeScript, JSON, CSS, and experimental HTML. Prettier formats only Markdown and YAML through scripts and hooks.
+Biome 2.5.15 checks JavaScript, TypeScript, JSON, CSS, and experimental HTML. Its 4 MiB file limit includes the authoring crosswalk report; this limit does not change runtime knowledge payload budgets. Prettier formats only Markdown and YAML through scripts and hooks.
 
-Generated shadcn components in `apps/web/src/components/ui/**` retain their formatting and import order, but Biome lint remains enabled. Three accessibility rules are disabled there: `useSemanticElements` (composed group roles), `useKeyWithClickEvents` (input-focus containers), and `noLabelWithoutControl` (control IDs supplied by callers). All other applicable rules remain enabled.
+Shadcn components in `apps/web/src/components/ui/**` use the same Biome formatting, lint, and import organization as other source files. Keep accessibility exceptions local, with explained suppressions for composed groups, pointer-only input-focus shortcuts, and caller-supplied label associations.
 
-`init.sh` applies safe lint fixes, including type-only imports in generated components. Registry updates must retain the local `field.tsx` strict equality and deduplicated-message key fixes.
+`init.sh` applies safe lint fixes, including type-only imports in shadcn components. After registry updates, run Biome and review changes. Retain explained suppressions and the local `field.tsx` strict equality and deduplicated-message key fixes.
 
 HTML support is experimental; review changes to `apps/web/index.html` and verify the web build after Biome upgrades. Prettier ignores generated assets, local books, agent tooling, and the lockfile.
 

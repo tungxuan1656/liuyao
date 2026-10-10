@@ -47,9 +47,11 @@ export function calculateReading(input: unknown): ReadingResult {
   const innerAssignments = assignNaJia(calculation.lowerTrigramId, 'inner');
   const outerAssignments = assignNaJia(calculation.upperTrigramId, 'outer');
 
+  // SAFETY: Validated input contains six lines; map preserves their bottom-to-top order.
   const primaryLines = lines.map((inputValue, index): PrimaryLineResult => {
     const position = (index + 1) as ResultLinePosition;
-    const assignment = index < 3 ? innerAssignments[index]! : outerAssignments[index - 3]!;
+    const assignment = index < 3 ? innerAssignments[index] : outerAssignments[index - 3];
+    if (!assignment) throw new Error(`Missing Na Jia assignment for line ${position}.`);
     const element = branchElement(assignment.branch);
     const shiYing =
       position === palace.shiPosition

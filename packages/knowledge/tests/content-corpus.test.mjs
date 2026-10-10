@@ -10,18 +10,18 @@ function read(url) {
 function files(url) {
   return readdirSync(url, { withFileTypes: true }).flatMap(item =>
     item.isDirectory()
-      ? files(new URL(item.name + '/', url))
+      ? files(new URL(`${item.name}/`, url))
       : item.name.endsWith('.json')
         ? [new URL(item.name, url)]
         : [],
   );
 }
 const records = ['trigrams', 'hexagrams', 'terms', 'casting', 'liuyao', 'foundations', 'lessons']
-  .flatMap(dir => files(new URL(dir + '/', data)))
+  .flatMap(dir => files(new URL(`${dir}/`, data)))
   .map(read);
 const expectedHexagramIds = Array.from(
   { length: 64 },
-  (_, index) => 'hexagram-' + String(index + 1).padStart(2, '0'),
+  (_, index) => `hexagram-${String(index + 1).padStart(2, '0')}`,
 );
 const expectedPositions = [1, 2, 3, 4, 5, 6];
 const hexagrams = records.filter(record => record.type === 'hexagram');
@@ -68,16 +68,16 @@ describe('authored corpus integration', () => {
       ).toEqual([...lower.lines, ...upper.lines]);
       for (const line of record.lines) {
         positions++;
-        expect(line.entries.length, id + ' line ' + line.position).toBeGreaterThan(0);
+        expect(line.entries.length, `${id} line ${line.position}`).toBeGreaterThan(0);
         for (const entry of line.entries) {
-          expect(entry.text.trim().length, id + ' line ' + line.position).toBeGreaterThan(0);
-          expect(entry.references.length, id + ' line ' + line.position).toBeGreaterThan(0);
+          expect(entry.text.trim().length, `${id} line ${line.position}`).toBeGreaterThan(0);
+          expect(entry.references.length, `${id} line ${line.position}`).toBeGreaterThan(0);
         }
         expect(
           line.entries.some(entry =>
             entry.references.some(reference => reference.sourceId?.startsWith('source-book-')),
           ),
-          id + ' line ' + line.position,
+          `${id} line ${line.position}`,
         ).toBe(true);
       }
     }
@@ -100,8 +100,8 @@ describe('authored corpus integration', () => {
     let positions = 0;
     for (const id of expectedHexagramIds) {
       const item = published.find(record => record.id === id);
-      expect(item.asset, id).toBe('knowledge/' + id + '.json');
-      const record = read(new URL('../dist/content/' + id + '.json', import.meta.url));
+      expect(item.asset, id).toBe(`knowledge/${id}.json`);
+      const record = read(new URL(`../dist/content/${id}.json`, import.meta.url));
       const source = authored.get(id);
       expect(record.id, id).toBe(id);
       expect(record.kingWenNumber, id).toBe(source.kingWenNumber);

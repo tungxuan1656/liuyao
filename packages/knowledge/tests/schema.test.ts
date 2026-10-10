@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { describe, expect, it } from 'vitest';
 import type { KnowledgeCatalog } from '../src/schema';
 import { validateKnowledgeCatalog } from '../src/validation';
@@ -175,17 +176,21 @@ describe('knowledge schema and validation', () => {
   it.each([
     [
       'missing rule category',
-      (catalog: KnowledgeCatalog) => ({
-        ...catalog,
-        rules: [
-          {
-            id: catalog.rules[0]!.id,
-            ruleset: catalog.rules[0]!.ruleset,
-            title: catalog.rules[0]!.title,
-            explanation: catalog.rules[0]!.explanation,
-          },
-        ],
-      }),
+      (catalog: KnowledgeCatalog) => {
+        const rule = catalog.rules[0];
+        assert(rule !== undefined);
+        return {
+          ...catalog,
+          rules: [
+            {
+              id: rule.id,
+              ruleset: rule.ruleset,
+              title: rule.title,
+              explanation: rule.explanation,
+            },
+          ],
+        };
+      },
     ],
     [
       'unknown rule category',

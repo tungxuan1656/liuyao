@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { describe, expect, it } from 'vitest';
 import {
   getHexagram,
@@ -43,8 +44,9 @@ describe('knowledge catalog lookup', () => {
 
   it('freezes list results, records, and nested arrays', () => {
     const list = listKnowledgeEntities();
-    const trigram = getTrigram('trigram-heaven')!;
-    const rule = getRule('rule-line-position-order')!;
+    const trigram = getTrigram('trigram-heaven');
+    const rule = getRule('rule-line-position-order');
+    assert(trigram !== undefined && rule !== undefined);
 
     expect(Object.isFrozen(list)).toBe(true);
     expect(Object.isFrozen(trigram)).toBe(true);
@@ -64,11 +66,11 @@ describe('knowledge catalog lookup', () => {
     expect(Object.isFrozen(knowledgeCatalog.entities[0]?.aliases)).toBe(true);
     expect(Object.isFrozen(knowledgeCatalog.references[0]?.targetIds)).toBe(true);
 
+    const entity = knowledgeCatalog.entities[0];
+    assert(entity !== undefined);
     expect(() => (knowledgeCatalog.entities as unknown as unknown[]).pop()).toThrow();
-    expect(() =>
-      (knowledgeCatalog.entities[0]!.aliases as unknown as string[]).push('mutable'),
-    ).toThrow();
-    expect(() => Object.assign(knowledgeCatalog.entities[0]!, { name: 'changed' })).toThrow();
+    expect(() => (entity.aliases as unknown as string[]).push('mutable')).toThrow();
+    expect(() => Object.assign(entity, { name: 'changed' })).toThrow();
     expect(getTrigram('trigram-heaven')?.name).toBe('Càn');
   });
 });

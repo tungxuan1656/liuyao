@@ -40,37 +40,37 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
   for (const source of sources) {
     if (!source.id || sourceById.has(source.id)) fail('Duplicate or missing source ID');
     if (!source.title || !source.author || !source.editions?.length)
-      fail(source.id + ': missing bibliography');
+      fail(`${source.id}: missing bibliography`);
     for (const edition of source.editions) {
       if (!Number.isInteger(edition.pdfPageCount) || edition.pdfPageCount < 1)
-        fail(source.id + ': invalid PDF page count');
+        fail(`${source.id}: invalid PDF page count`);
     }
     sourceById.set(source.id, source);
   }
   for (const record of records) {
-    if (!validate(record)) fail(record.id + ': ' + JSON.stringify(validate.errors.slice(0, 4)));
-    if (byId.has(record.id)) fail('Duplicate record ' + record.id);
+    if (!validate(record)) fail(`${record.id}: ${JSON.stringify(validate.errors.slice(0, 4))}`);
+    if (byId.has(record.id)) fail(`Duplicate record ${record.id}`);
     byId.set(record.id, record);
     const ids = anchorIdsOf(record);
-    if (new Set(ids).size !== ids.length) fail(record.id + ': duplicate content anchor ID');
+    if (new Set(ids).size !== ids.length) fail(`${record.id}: duplicate content anchor ID`);
     if (record.type === 'hexagram') {
       if (record.lines.some((line, index) => line.position !== index + 1))
-        fail(record.id + ': line order must be 1–6');
-      if (record.id !== 'hexagram-' + String(record.kingWenNumber).padStart(2, '0'))
-        fail(record.id + ': incorrect King Wen number');
+        fail(`${record.id}: line order must be 1–6`);
+      if (record.id !== `hexagram-${String(record.kingWenNumber).padStart(2, '0')}`)
+        fail(`${record.id}: incorrect King Wen number`);
     }
     if (
       record.status === 'ready' &&
       (!record.entries.length ||
         (record.type === 'hexagram' && record.lines.some(line => !line.entries.length)))
     )
-      fail(record.id + ': ready content must have explanations');
+      fail(`${record.id}: ready content must have explanations`);
   }
   function checkTarget(id, owner) {
     const target = byId.get(id);
-    if (!target) fail(owner.id + ': unknown linked record ' + id);
+    if (!target) fail(`${owner.id}: unknown linked record ${id}`);
     if (owner.status === 'ready' && target.status !== 'ready')
-      fail(owner.id + ': ready record links to draft ' + id);
+      fail(`${owner.id}: ready record links to draft ${id}`);
     return target;
   }
   for (const record of records) {
@@ -80,22 +80,22 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
       const lower = checkTarget(record.lowerTrigramId, record);
       const upper = checkTarget(record.upperTrigramId, record);
       if (lower.type !== 'trigram' || upper.type !== 'trigram')
-        fail(record.id + ': invalid trigram target');
+        fail(`${record.id}: invalid trigram target`);
       if (
         record.lines.some(
           (line, index) => line.polarity !== [...lower.lines, ...upper.lines][index],
         )
       )
-        fail(record.id + ': polarity does not match trigrams');
+        fail(`${record.id}: polarity does not match trigrams`);
     }
     walk(record, object => {
       if (object.references) {
         if (!Array.isArray(object.references) || !object.references.length)
-          fail(record.id + ': source references required');
+          fail(`${record.id}: source references required`);
         for (const ref of object.references) {
           if (ref.sourceId) {
             const source = sourceById.get(ref.sourceId);
-            if (!source) fail(record.id + ': unknown source ' + ref.sourceId);
+            if (!source) fail(`${record.id}: unknown source ${ref.sourceId}`);
             const pages = ref.pdfPages;
             if (
               !Array.isArray(pages) ||
@@ -105,20 +105,20 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
               pages[1] < pages[0] ||
               pages[1] > source.editions[0].pdfPageCount
             )
-              fail(record.id + ': invalid PDF page bounds');
+              fail(`${record.id}: invalid PDF page bounds`);
           } else if (ref.documentPath) {
             if (
               !ref.section ||
               !ref.documentPath.startsWith('docs/') ||
               ref.documentPath.includes('..')
             )
-              fail(record.id + ': invalid specification reference');
+              fail(`${record.id}: invalid specification reference`);
             if (repositoryRoot) {
               const file = path.join(repositoryRoot, ref.documentPath);
               if (!existsSync(file) || !readFileSync(file, 'utf8').includes(ref.section))
-                fail(record.id + ': missing specification section');
+                fail(`${record.id}: missing specification section`);
             }
-          } else fail(record.id + ': invalid source reference');
+          } else fail(`${record.id}: invalid source reference`);
         }
       }
       if (object.links)
@@ -131,14 +131,14 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
               link.position < 1 ||
               link.position > 6)
           )
-            fail(record.id + ': invalid line link');
+            fail(`${record.id}: invalid line link`);
           if (
             link.sectionId !== undefined &&
             !entriesOf(target).some(entry => entry.id === link.sectionId)
           )
-            fail(record.id + ': unknown section link');
+            fail(`${record.id}: unknown section link`);
           if (link.position !== undefined && link.sectionId !== undefined)
-            fail(record.id + ': ambiguous link');
+            fail(`${record.id}: ambiguous link`);
         }
       if (object.target) {
         const target = checkTarget(object.target.recordId, record);
@@ -150,7 +150,7 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
               object.target.id,
           )
         )
-          fail(record.id + ': unknown lesson target');
+          fail(`${record.id}: unknown lesson target`);
       }
     });
   }

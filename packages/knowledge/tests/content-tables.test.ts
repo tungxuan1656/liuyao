@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import type { EarthlyBranch, FiveElement } from '@liuyao/core';
 import {
   assignNaJia,
@@ -38,7 +39,9 @@ describe('book tables and deterministic core compatibility', () => {
     for (const record of listBookRecords()) {
       if (record.type !== 'trigram') continue;
       const lines = record.lines.map(line => (line === 'yin' ? 8 : 7));
-      expect(identifyTrigram([lines[0]!, lines[1]!, lines[2]!])).toBe(record.id);
+      const [line0, line1, line2] = lines;
+      assert(line0 !== undefined && line1 !== undefined && line2 !== undefined);
+      expect(identifyTrigram([line0, line1, line2])).toBe(record.id);
     }
     for (const row of table('rule-na-jia-assignment', 'na-jia').rows) {
       for (const side of ['inner', 'outer'] as const) {
@@ -55,7 +58,8 @@ describe('book tables and deterministic core compatibility', () => {
     const markers = table('rule-palace-and-markers', 'markers').rows;
     for (const row of table('rule-palace-and-markers', 'palaces').rows) {
       row.hexagramIds.forEach((id, index) => {
-        const marker = markers.find(marker => marker.palaceSequence === index + 1)!;
+        const marker = markers.find(marker => marker.palaceSequence === index + 1);
+        assert(marker !== undefined);
         expect(identifyPalace(id), id).toEqual({
           palaceId: row.trigramId.replace('trigram-', 'palace-'),
           palaceElement: row.element,
@@ -79,15 +83,18 @@ describe('book tables and deterministic core compatibility', () => {
       for (const line of elements) {
         const forward = cycles.find(row => row.from === palace && row.to === line);
         const backward = cycles.find(row => row.from === line && row.to === palace);
-        const relation =
-          palace === line
-            ? 'same'
-            : forward
-              ? `palace-${forward.relation}-line`
-              : `line-${backward!.relation}-palace`;
-        const expected = relatives
-          .find(row => row.relation === relation)!
-          .relativeId.slice('term-relative-'.length);
+        let relation: string;
+        if (palace === line) {
+          relation = 'same';
+        } else if (forward) {
+          relation = `palace-${forward.relation}-line`;
+        } else {
+          assert(backward !== undefined);
+          relation = `line-${backward.relation}-palace`;
+        }
+        const relative = relatives.find(row => row.relation === relation);
+        assert(relative !== undefined);
+        const expected = relative.relativeId.slice('term-relative-'.length);
         expect(sixRelative(palace, line), `${palace}/${line}`).toBe(expected);
       }
   });

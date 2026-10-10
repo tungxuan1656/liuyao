@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import type { HexagramId, SixLines, TrigramId } from '../src/contracts';
 
 /**
@@ -88,11 +89,15 @@ const SOURCE_TRIGRAMS: Record<string, TrigramId> = {
 };
 
 export const HEXAGRAM_FIXTURES = SOURCE_CODES.map((code, index) => {
-  const [lowerCode, upperCode] = code.split(' ') as [string, string];
+  const [lowerCode, upperCode] = code.split(' ');
+  assert(lowerCode !== undefined && upperCode !== undefined);
+  const lower = SOURCE_TRIGRAMS[lowerCode];
+  const upper = SOURCE_TRIGRAMS[upperCode];
+  assert(lower !== undefined && upper !== undefined);
   return {
     id: `hexagram-${String(index + 1).padStart(2, '0')}` as HexagramId,
-    lower: SOURCE_TRIGRAMS[lowerCode]!,
-    upper: SOURCE_TRIGRAMS[upperCode]!,
+    lower,
+    upper,
     lines: [...code.replace(' ', '')].map(symbol =>
       symbol === 'u' ? 7 : 8,
     ) as unknown as SixLines,

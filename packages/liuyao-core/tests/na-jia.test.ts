@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { describe, expect, it } from 'vitest';
 import { calculateReading } from '../src/board';
 import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from '../src/contracts';
@@ -228,8 +229,10 @@ describe('Na Jia', () => {
       branch: string;
     }[];
 
-    exposed[0]!.stem = 'gui';
-    exposed[0]!.branch = 'hai';
+    const firstAssignment = exposed[0];
+    assert(firstAssignment !== undefined);
+    firstAssignment.stem = 'gui';
+    firstAssignment.branch = 'hai';
     exposed.reverse();
     exposed.push({ stem: 'yi', branch: 'mao' });
 

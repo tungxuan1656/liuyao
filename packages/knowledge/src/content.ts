@@ -22,7 +22,8 @@ export function getContentMetadata(id: string): ContentMetadata | undefined {
   return byId.get(id);
 }
 export function listContent(filters: ContentFilters = {}): readonly ContentMetadata[] {
-  const query = normalizeKnowledgeQuery(filters.query ?? '');
+  const rawQuery = filters.query ?? '';
+  const query = normalizeKnowledgeQuery(rawQuery);
   const candidates = metadata.filter(
     record =>
       (!filters.type || record.type === filters.type) &&
@@ -34,14 +35,14 @@ export function listContent(filters: ContentFilters = {}): readonly ContentMetad
   const matches = candidates.filter(
     record =>
       fields(record).some(text => normalizeKnowledgeQuery(text).includes(query)) ||
-      exact(record.id) === exact(filters.query!),
+      exact(record.id) === exact(rawQuery),
   );
-  const accented = exact(filters.query!) !== query;
+  const accented = exact(rawQuery) !== query;
   const preferred = accented
     ? matches.filter(
         record =>
-          fields(record).some(text => exact(text).includes(exact(filters.query!))) ||
-          exact(record.id) === exact(filters.query!),
+          fields(record).some(text => exact(text).includes(exact(rawQuery))) ||
+          exact(record.id) === exact(rawQuery),
       )
     : [];
   return deepFreeze(preferred.length ? preferred : matches);
@@ -71,7 +72,7 @@ export function createContentLoader(readAsset: ContentAssetReader) {
           (record.type === 'hexagram' &&
             record.lines.some((line, index) => line.position !== index + 1 || !line.entries.length))
         )
-          throw new Error('Invalid knowledge asset: ' + id);
+          throw new Error(`Invalid knowledge asset: ${id}`);
         return deepFreeze(record);
       })
       .catch(error => {
@@ -83,7 +84,7 @@ export function createContentLoader(readAsset: ContentAssetReader) {
   };
 }
 export const loadContent = createContentLoader(async item => {
-  const response = await fetch('/' + item.asset);
-  if (!response.ok) throw new Error('Knowledge unavailable: ' + item.id);
+  const response = await fetch(`/${item.asset}`);
+  if (!response.ok) throw new Error(`Knowledge unavailable: ${item.id}`);
   return response.json();
 });
