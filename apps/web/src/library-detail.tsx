@@ -1,19 +1,19 @@
 import { Link, useParams } from 'react-router-dom';
-import { ROUTES } from './route-paths';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { Empty, EmptyContent, EmptyHeader, EmptyTitle } from './components/ui/empty';
+import { KnowledgeContent } from './knowledge-content';
 import {
-  getRecord,
   getApplicableRules,
+  getRecord,
   getReferences,
   getRelatedFigures,
   recordName,
   recordPath,
 } from './library-data';
 import { getLinePresentation } from './line-value-presentation';
-import { KnowledgeContent } from './knowledge-content';
+import { ROUTES } from './route-paths';
 
 function formatName(name: string) {
   return ['6', '7', '8', '9'].includes(name) ? getLinePresentation(Number(name)).name : name;
@@ -92,7 +92,7 @@ export function LibraryDetailPage() {
                 return (
                   trigram && (
                     <Button
-                      key={`${index}-${trigramId}`}
+                      key={trigramId}
                       variant="outline"
                       size="lg"
                       className="h-auto min-h-11 min-w-0 whitespace-normal text-left"

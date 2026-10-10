@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { FiveElement } from '../src/contracts';
-import { InvalidReadingInputError, RULE_SET_ID, calculateReading, sixRelative } from '../src/index';
+import { calculateReading, InvalidReadingInputError, RULE_SET_ID, sixRelative } from '../src/index';
 import { PURE_BOARD_FIXTURES } from './pure-board-fixtures';
 
 const ELEMENTS: readonly FiveElement[] = ['wood', 'fire', 'earth', 'metal', 'water'];

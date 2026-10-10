@@ -1,7 +1,7 @@
-import { Link, useLocation } from 'react-router-dom';
 import { ArrowLeft, BookOpen, House, Settings2 } from 'lucide-react';
-import { ROUTES } from '../route-paths';
+import { Link, useLocation } from 'react-router-dom';
 import { cn } from '../lib/utils';
+import { ROUTES } from '../route-paths';
 import { buttonVariants } from './ui/button';
 
 const destinations = [

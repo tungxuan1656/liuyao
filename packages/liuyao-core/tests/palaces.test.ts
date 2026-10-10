@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { HEXAGRAM_IDS, PALACE_IDS, type FiveElement } from '../src/contracts';
 import { calculateReading } from '../src/board';
+import { type FiveElement, HEXAGRAM_IDS, PALACE_IDS } from '../src/contracts';
 import { identifyPalace } from '../src/palaces';
 import { PALACE_FIXTURES } from './palace-fixtures';
 

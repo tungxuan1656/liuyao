@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { HEXAGRAMS } from '../data/hexagrams';
-import { TRIGRAMS } from '../data/trigrams';
 import { RULES } from '../data/rules';
-import type { KnowledgeCatalog } from '../src/schema';
+import { TRIGRAMS } from '../data/trigrams';
 import { knowledgeCatalog } from '../src/catalog';
+import type { KnowledgeCatalog } from '../src/schema';
 import { validateKnowledgeCatalog } from '../src/validation';
 
 // Independent display fixture: upper trigram per row, lower trigram per column.

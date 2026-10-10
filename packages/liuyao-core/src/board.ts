@@ -1,3 +1,4 @@
+import { calculateHexagram } from './calculation.js';
 import type {
   FiveElement,
   PrimaryLineResult,
@@ -6,10 +7,9 @@ import type {
   SixPrimaryLineResults,
   SixRelative,
 } from './contracts.js';
-import { calculateHexagram } from './calculation.js';
-import { branchElement, assignNaJia } from './na-jia.js';
-import { isChangingLine, linePolarity } from './polarity.js';
+import { assignNaJia, branchElement } from './na-jia.js';
 import { identifyPalace } from './palaces.js';
+import { isChangingLine, linePolarity } from './polarity.js';
 import { validateReadingInput } from './validation.js';
 
 /** Classify a line element by its five-element relation to the palace element. */

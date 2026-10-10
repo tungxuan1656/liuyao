@@ -2,6 +2,7 @@ import index from '../.generated/runtime/index.json' with { type: 'json' };
 import type { ContentMetadata, ContentRecord } from './content-schema.js';
 import { deepFreeze } from './immutable.js';
 import { normalizeKnowledgeQuery } from './search.js';
+
 const metadata = deepFreeze(index as ContentMetadata[]);
 const byId = new Map(metadata.map(record => [record.id, record]));
 export interface ContentFilters {

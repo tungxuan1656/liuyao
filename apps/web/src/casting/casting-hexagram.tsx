@@ -1,7 +1,7 @@
 import type { LineValue } from '@liuyao/core';
-import { getLinePresentation } from '../line-value-presentation';
 import { YaoSymbol } from '../components/yao-symbol';
 import { cn } from '../lib/utils';
+import { getLinePresentation } from '../line-value-presentation';
 
 export function CastingHexagram({
   lines,

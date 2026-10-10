@@ -22,6 +22,7 @@ export function YaoSymbol({ polarity, changing = false, className = '' }: Props)
       <span className="yao-marker" aria-hidden="true">
         {changing && (
           <svg
+            aria-hidden="true"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

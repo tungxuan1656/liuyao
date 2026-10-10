@@ -52,9 +52,9 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | `pnpm build`                                              | All workspace builds                                    |
 | `pnpm test`                                               | Enforce placement + package tests                       |
 | `pnpm typecheck`                                          | All workspace type checks                               |
-| `pnpm lint`                                               | Repository ESLint                                       |
-| `pnpm format`                                             | Write Prettier formatting                               |
-| `pnpm format:check`                                       | Check Prettier formatting                               |
+| `pnpm lint`                                              | Repository Biome checks                                  |
+| `pnpm format`                                            | Write Biome formatting                                   |
+| `pnpm format:check`                                      | Check Biome formatting                                   |
 | `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
 | `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
 | `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
@@ -73,8 +73,8 @@ The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/lu
 
 It performs:
 
-1. Prettier write.
-2. ESLint fix and TypeScript length checks.
+1. Biome format write.
+2. Biome lint fix and TypeScript length checks.
 3. Type-check, build, and package tests.
 
 The script does not install dependencies. Run `pnpm install` separately when the workspace is not bootstrapped.

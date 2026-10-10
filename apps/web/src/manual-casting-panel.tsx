@@ -1,8 +1,8 @@
-import { mapCoinsToLine, type CastingMethod, type CoinTossResult } from '@liuyao/core';
+import { type CastingMethod, type CoinTossResult, mapCoinsToLine } from '@liuyao/core';
 import { ArrowLeft, RotateCcw } from 'lucide-react';
-import { CoinFace } from './casting/coin-face';
 import { CastingHexagram } from './casting/casting-hexagram';
 import { CastingOutcome } from './casting/casting-outcome';
+import { CoinFace } from './casting/coin-face';
 import { coinIdentities } from './casting/coin-identities';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
@@ -94,6 +94,7 @@ export function ManualCastingPanel({
           </ToggleGroupItem>
         </ToggleGroup>
         <span
+          role="status"
           className="text-sm text-muted-foreground whitespace-nowrap"
           aria-label={`${draft.manualConfirmed?.filter(Boolean).length ?? 0} trên 6 hào đã xác nhận`}
         >
@@ -118,6 +119,7 @@ export function ManualCastingPanel({
                 type="button"
                 variant="ghost"
                 className="manual-coin-button"
+                // biome-ignore lint/suspicious/noArrayIndexKey: coin slots are positional; the arrangement never reorders.
                 key={index}
                 aria-pressed={Boolean(coin)}
                 disabled={confirmed}

@@ -2,20 +2,20 @@ import { listSources } from './catalog.js';
 export const KNOWLEDGE_PACKAGE_VERSION = '0.1.0';
 export * from './catalog.js';
 export * from './content.js';
-export { getContentTableId } from './content-structure.js';
-export * from './search.js';
 export type * from './content-schema.js';
+export { getContentTableId } from './content-structure.js';
 export type { ContentTable } from './content-tables.js';
 export type {
   FactDefinition,
   KnowledgeEntity,
+  KnowledgeFactId,
   KnowledgeRule,
   KnowledgeRuleCategory,
-  KnowledgeTerm,
   KnowledgeSource,
+  KnowledgeTerm,
   SourceReference,
-  KnowledgeFactId,
 } from './schema.js';
+export * from './search.js';
 export interface KnowledgeMetadata {
   name: string;
   description: string;

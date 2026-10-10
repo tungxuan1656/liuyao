@@ -1,4 +1,4 @@
-import { RULE_SET_ID, type HexagramReadingInput, type SixLines } from './contracts.js';
+import { type HexagramReadingInput, RULE_SET_ID, type SixLines } from './contracts.js';
 
 export type DomainErrorCode = 'INVALID_READING_INPUT' | 'UNSUPPORTED_RULESET';
 

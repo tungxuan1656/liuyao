@@ -66,7 +66,7 @@ pnpm dev
 | Command             | Purpose                        |
 | ------------------- | ------------------------------ |
 | `pnpm format:check` | Check formatting               |
-| `pnpm lint`         | Run ESLint                     |
+| `pnpm lint`         | Run Biome checks               |
 | `pnpm typecheck`    | Type-check all workspaces      |
 | `pnpm test`         | Run package tests              |
 | `pnpm build`        | Build packages and the web app |

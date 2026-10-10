@@ -1,8 +1,10 @@
 import Ajv from 'ajv';
 import standaloneCode from 'ajv/dist/standalone/index.js';
-import { entriesOf, anchorIdsOf, getContentTableId } from '../src/content-structure.ts';
+import { anchorIdsOf, entriesOf, getContentTableId } from '../src/content-structure.ts';
+
 export { entriesOf } from '../src/content-structure.ts';
-import { readFileSync, existsSync } from 'node:fs';
+
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 const schema = JSON.parse(

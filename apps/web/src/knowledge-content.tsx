@@ -1,13 +1,14 @@
+import type { ContentEntry, ContentRecord } from '@liuyao/knowledge';
+import { createContentLoader, getContentMetadata } from '@liuyao/knowledge';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { createContentLoader, getContentMetadata } from '@liuyao/knowledge';
-import type { ContentRecord, ContentEntry } from '@liuyao/knowledge';
-import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
+import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
 import { Button } from './components/ui/button';
-import { Alert, AlertTitle, AlertDescription } from './components/ui/alert';
-import { ROUTES } from './route-paths';
+import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { KnowledgeEntries, KnowledgeReferences } from './knowledge-entries';
 import { KnowledgeTables } from './knowledge-tables';
+import { ROUTES } from './route-paths';
+
 const load = createContentLoader(async item => {
   const response = await fetch(import.meta.env.BASE_URL + item.asset);
   if (!response.ok) throw new Error('Knowledge unavailable');
@@ -112,8 +113,8 @@ export function KnowledgeContent({ id }: { id: string }) {
           />
         ))}
       {record.type === 'hexagram' &&
-        record.specialPassages?.map((passage, index) => (
-          <ContentSection key={index} title={passage.title} entries={passage.entries} />
+        record.specialPassages?.map(passage => (
+          <ContentSection key={passage.title} title={passage.title} entries={passage.entries} />
         ))}
       {record.tables?.length ? <KnowledgeTables tables={record.tables} /> : null}
       {record.figures?.map(figure => (
@@ -131,8 +132,8 @@ export function KnowledgeContent({ id }: { id: string }) {
               ))}
             </ul>
             <KnowledgeReferences references={figure.references} />
-            {figure.authorAlternatives?.map((view, index) => (
-              <div key={index}>
+            {figure.authorAlternatives?.map(view => (
+              <div key={view.author}>
                 <p>
                   {view.author} · {view.description}
                 </p>

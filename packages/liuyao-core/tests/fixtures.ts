@@ -1,7 +1,7 @@
 import {
-  RULE_SET_ID,
   type HexagramReadingInput,
   type LineValue,
+  RULE_SET_ID,
   type SixLines,
 } from '../src/index';
 import type { LinePosition } from '../src/positions';

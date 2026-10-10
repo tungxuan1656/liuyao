@@ -1,5 +1,5 @@
-import type { HexagramId, TrigramId, KnowledgeRuleCategory, KnowledgeSource } from './schema.js';
 import type { ContentTable } from './content-tables.js';
+import type { HexagramId, KnowledgeRuleCategory, KnowledgeSource, TrigramId } from './schema.js';
 
 export type ContentReference =
   | {
@@ -104,7 +104,11 @@ export interface ContentTerm extends ContentBase {
   readonly id: `term-${string}`;
 }
 export type ContentRecord =
-  ContentHexagram | ContentTrigram | ContentRule | ContentArticle | ContentTerm;
+  | ContentHexagram
+  | ContentTrigram
+  | ContentRule
+  | ContentArticle
+  | ContentTerm;
 export interface ContentMetadata {
   readonly id: string;
   readonly type: ContentRecord['type'];

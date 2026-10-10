@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import type { EarthlyBranch, FiveElement } from '@liuyao/core';
 import {
   assignNaJia,
   branchElement,
@@ -6,9 +6,10 @@ import {
   identifyTrigram,
   sixRelative,
 } from '@liuyao/core';
-import type { EarthlyBranch, FiveElement } from '@liuyao/core';
+import { describe, expect, it } from 'vitest';
 import { listContent } from '../src/content';
 import { loadContent } from '../src/node';
+
 const records = (
   await Promise.all(
     listContent()
@@ -18,6 +19,7 @@ const records = (
 ).filter(record => record !== undefined);
 const getBookRecord = (id: string) => records.find(record => record.id === id);
 const listBookRecords = () => records;
+
 import type { ContentTable } from '../src/index';
 
 function table<Kind extends ContentTable['kind']>(

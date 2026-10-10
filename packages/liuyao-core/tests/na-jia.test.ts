@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from '../src/contracts';
 import { calculateReading } from '../src/board';
+import type { EarthlyBranch, FiveElement, HeavenlyStem, TrigramId } from '../src/contracts';
 import { assignNaJia, branchElement } from '../src/na-jia';
 
 interface ExpectedNaJia {

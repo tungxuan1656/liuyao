@@ -1,6 +1,7 @@
-import { describe, it, expect, vi } from 'vitest';
-import { createContentLoader, listContent, getContentMetadata } from '../src/content';
+import { describe, expect, it, vi } from 'vitest';
+import { createContentLoader, getContentMetadata, listContent } from '../src/content';
 import { loadContent } from '../src/node';
+
 describe('selected content loading', () => {
   it('filters small metadata by Vietnamese title, source, and topic', () => {
     expect(listContent({ type: 'hexagram', query: 'thuần càn' }).map(r => r.id)).toEqual([

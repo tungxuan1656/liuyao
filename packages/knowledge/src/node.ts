@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { createContentLoader } from './content.js';
-export { listContent, getContentMetadata } from './content.js';
+
+export { getContentMetadata, listContent } from './content.js';
 export const loadContent = createContentLoader(async item => {
   return JSON.parse(
     await readFile(

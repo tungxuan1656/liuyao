@@ -17,7 +17,9 @@ function publish(update: Partial<PwaInstallSnapshot>): void {
   const next = { ...snapshot, ...update };
   if (next.prompt === snapshot.prompt && next.installed === snapshot.installed) return;
   snapshot = next;
-  subscribers.forEach(subscriber => subscriber());
+  subscribers.forEach(subscriber => {
+    subscriber();
+  });
 }
 
 export function initPwaInstall(): void {

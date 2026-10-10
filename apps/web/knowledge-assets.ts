@@ -1,6 +1,7 @@
-import { readFileSync, readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import type { Plugin } from 'vite';
+
 const directory = fileURLToPath(new URL('../../packages/knowledge/dist/content/', import.meta.url));
 /** Serve the same per-record JSON in development and production. */
 export function knowledgeAssets(): Plugin {

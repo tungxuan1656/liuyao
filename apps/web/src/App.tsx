@@ -1,10 +1,6 @@
+import { ArrowRight, BookOpen } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, BookOpen } from 'lucide-react';
-import { useReadingSession } from './reading-session';
-import { ROUTES } from './route-paths';
-import { getLinePresentation } from './line-value-presentation';
-import { hexagramLabel } from './result-labels';
 import { ConfirmationDialog } from './components/confirmation-dialog';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
@@ -29,6 +25,10 @@ import {
 import { RadioGroup, RadioGroupItem } from './components/ui/radio-group';
 import { Separator } from './components/ui/separator';
 import { Textarea } from './components/ui/textarea';
+import { getLinePresentation } from './line-value-presentation';
+import { useReadingSession } from './reading-session';
+import { hexagramLabel } from './result-labels';
+import { ROUTES } from './route-paths';
 import './components/route-layout.css';
 
 const methods = [

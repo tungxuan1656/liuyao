@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
 import type { CoinTossResult } from '@liuyao/core';
+import { useEffect, useRef, useState } from 'react';
 import { CoinFace } from './coin-face';
 import { coinIdentities } from './coin-identities';
 
@@ -52,7 +52,7 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
     : (revealed ?? toss?.coins ?? []);
 
   return (
-    <div
+    <section
       className="flex items-center justify-center w-full h-full"
       aria-label={busy ? 'Đang gieo đồng xu' : 'Kết quả đồng xu'}
     >
@@ -60,6 +60,7 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
         className={`coin-arrangement ${count === 3 ? 'coin-arrangement--three' : 'coin-arrangement--four'} ${busy ? 'opacity-70' : 'opacity-100'} transition-opacity`}
       >
         {Array.from({ length: count }, (_, index) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: coin slots are positional; the arrangement never reorders.
           <div key={index} className="coin-position flex flex-col items-center gap-1.5">
             <CoinFace value={faces[index] ?? 0} identityIndex={count === 4 ? index : undefined} />
             {count === 4 && (
@@ -68,6 +69,6 @@ export function CoinStage({ count, toss, busy, onComplete }: Props) {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

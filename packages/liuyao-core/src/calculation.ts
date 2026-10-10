@@ -1,7 +1,7 @@
 import {
-  RULE_SET_ID,
   type HexagramCalculationResult,
   type ResultLinePosition,
+  RULE_SET_ID,
 } from './contracts.js';
 import { identifyHexagram } from './hexagrams.js';
 import { isChangingLine, transformChangingLines } from './polarity.js';

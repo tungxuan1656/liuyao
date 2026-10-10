@@ -672,6 +672,12 @@
       "title": "Check knowledge payload and offline delivery",
       "status": "todo",
       "depends_on": ["feat-102", "feat-011"]
+    },
+    {
+      "id": "feat-104",
+      "title": "Migrate linting and formatting to Biome",
+      "status": "done",
+      "depends_on": []
     }
   ]
 }

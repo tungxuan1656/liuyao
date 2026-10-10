@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
-import { KNOWLEDGE_PACKAGE_VERSION } from '@liuyao/knowledge';
 import { RULE_SET_ID } from '@liuyao/core';
-import { getPwaUpdateSnapshot, subscribePwaUpdate, type PwaUpdateSnapshot } from './lib/pwa-update';
+import { KNOWLEDGE_PACKAGE_VERSION } from '@liuyao/knowledge';
+import { useEffect, useState } from 'react';
+import { AppearanceSetting } from './components/appearance-setting';
+import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
+import { Button } from './components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card';
 import {
   getPwaInstallSnapshot,
   subscribePwaInstall,
   triggerPwaInstallPrompt,
 } from './lib/pwa-install';
-import { Button } from './components/ui/button';
-import { Alert, AlertTitle, AlertDescription } from './components/ui/alert';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card';
-import { AppearanceSetting } from './components/appearance-setting';
+import { getPwaUpdateSnapshot, type PwaUpdateSnapshot, subscribePwaUpdate } from './lib/pwa-update';
 
 const appVersion = __APP_VERSION__;
 const coreVersion = __CORE_VERSION__;

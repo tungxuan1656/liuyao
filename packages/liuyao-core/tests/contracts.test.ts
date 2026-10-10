@@ -1,20 +1,20 @@
 import { describe, expect, it } from 'vitest';
 import {
-  HEXAGRAM_IDS,
-  PALACE_IDS,
-  RULE_SET_ID,
-  TRIGRAM_IDS,
-  type HexagramReadingInput,
-  type ResultLinePosition,
-  type LineValue,
-  type PrimaryLineResult,
-  type ReadingResult,
-  type SixPrimaryLineResults,
-  type SixLines,
-  type HeavenlyStem,
   type EarthlyBranch,
   type FiveElement,
+  HEXAGRAM_IDS,
+  type HeavenlyStem,
+  type HexagramReadingInput,
+  type LineValue,
+  PALACE_IDS,
+  type PrimaryLineResult,
+  type ReadingResult,
+  type ResultLinePosition,
+  RULE_SET_ID,
+  type SixLines,
+  type SixPrimaryLineResults,
   type SixRelative,
+  TRIGRAM_IDS,
 } from '../src';
 
 const lines: SixLines = [6, 7, 8, 9, 6, 7];
