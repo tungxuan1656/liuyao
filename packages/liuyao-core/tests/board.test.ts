@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { describe, expect, it } from 'vitest';
 import type { FiveElement } from '../src/contracts';
 import { calculateReading, InvalidReadingInputError, RULE_SET_ID, sixRelative } from '../src/index';
@@ -16,10 +17,10 @@ const RELATIVE_MATRIX: readonly (readonly string[])[] = [
 describe('Six Relatives', () => {
   it('classifies every palace/line element pair using the five relations', () => {
     for (const [palaceIndex, palaceElement] of ELEMENTS.entries()) {
+      const relations = RELATIVE_MATRIX[palaceIndex];
+      assert(relations !== undefined);
       for (const [lineIndex, lineElement] of ELEMENTS.entries()) {
-        expect(sixRelative(palaceElement, lineElement)).toBe(
-          RELATIVE_MATRIX[palaceIndex]![lineIndex],
-        );
+        expect(sixRelative(palaceElement, lineElement)).toBe(relations[lineIndex]);
       }
     }
   });

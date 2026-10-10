@@ -179,9 +179,9 @@ describe('simple content validation', () => {
     const r = article();
     const extra = ['table', 'figure', 'orientation', 'label', 'alternative'].map(name => ({
       ...sources[0],
-      id: 'source-' + name,
+      id: `source-${name}`,
     }));
-    const ref = name => ({ sourceId: 'source-' + name, pdfPages: [1, 2] });
+    const ref = name => ({ sourceId: `source-${name}`, pdfPages: [1, 2] });
     r.tables = [
       {
         kind: 'branch-elements',

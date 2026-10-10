@@ -7,7 +7,7 @@ function linkPath(link: ContentLink) {
   const target = getContentMetadata(link.recordId);
   return target
     ? ROUTES.libraryDetail(target.type, target.id) +
-        (link.position ? '#line-' + link.position : link.sectionId ? '#' + link.sectionId : '')
+        (link.position ? `#line-${link.position}` : link.sectionId ? `#${link.sectionId}` : '')
     : undefined;
 }
 export function KnowledgeReferences({ references }: { references: readonly ContentReference[] }) {
@@ -30,8 +30,8 @@ export function KnowledgeReferences({ references }: { references: readonly Conte
                       ? ref.printedPages[0]
                       : ref.printedPages.join('–'))
                   : '') +
-                (ref.section ? ' · ' + ref.section : '')
-              : 'Quy ước dự án · ' + ref.section.replace(/^#+\s*/, '')}
+                (ref.section ? ` · ${ref.section}` : '')
+              : `Quy ước dự án · ${ref.section.replace(/^#+\s*/, '')}`}
           </li>
         ))}
       </ul>
@@ -41,7 +41,7 @@ export function KnowledgeReferences({ references }: { references: readonly Conte
 function TargetLink({ target }: { target: NonNullable<ContentEntry['target']> }) {
   const item = getContentMetadata(target.recordId);
   return item ? (
-    <Link className="underline" to={ROUTES.libraryDetail(item.type, item.id) + '#' + target.id}>
+    <Link className="underline" to={`${ROUTES.libraryDetail(item.type, item.id)}#${target.id}`}>
       {item.title} · {target.kind === 'table' ? 'Bảng tham chiếu' : 'Hình tham chiếu'}
     </Link>
   ) : null;
@@ -62,7 +62,7 @@ export function KnowledgeEntries({
           {entry.attribution && (
             <p className="text-muted-foreground">
               {entry.attribution.author}
-              {entry.attribution.via ? ' · ' + entry.attribution.via : ''}
+              {entry.attribution.via ? ` · ${entry.attribution.via}` : ''}
             </p>
           )}
           <p className="whitespace-pre-line font-serif text-lg leading-relaxed">{entry.text}</p>
@@ -79,7 +79,7 @@ export function KnowledgeEntries({
                   <li key={href}>
                     <Link className="underline" to={href}>
                       {getContentMetadata(link.recordId)?.title}
-                      {link.position ? ' · Hào ' + link.position : ''}
+                      {link.position ? ` · Hào ${link.position}` : ''}
                     </Link>
                   </li>
                 ) : null;

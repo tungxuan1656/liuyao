@@ -13,7 +13,7 @@ export function knowledgeAssets(): Plugin {
         const match = pathname.match(/^\/knowledge\/([a-z0-9-]+\.json)$/);
         if (!match) return next();
         try {
-          const content = readFileSync(directory + '/' + match[1]);
+          const content = readFileSync(`${directory}/${match[1]}`);
           response.setHeader('Content-Type', 'application/json; charset=utf-8');
           response.end(content);
         } catch {
@@ -27,8 +27,8 @@ export function knowledgeAssets(): Plugin {
         if (name.endsWith('.json'))
           this.emitFile({
             type: 'asset',
-            fileName: 'knowledge/' + name,
-            source: readFileSync(directory + '/' + name),
+            fileName: `knowledge/${name}`,
+            source: readFileSync(`${directory}/${name}`),
           });
       }
     },

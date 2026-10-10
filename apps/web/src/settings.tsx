@@ -48,7 +48,7 @@ export function SettingsPage() {
     const unsubscribeInstall = subscribePwaInstall(() => {
       const next = getPwaInstallSnapshot();
       setInstallSnapshot(next);
-      setInstallSupported(next.prompt ? true : false);
+      setInstallSupported(!!next.prompt);
     });
     window.addEventListener('online', updateNetwork);
     window.addEventListener('offline', updateNetwork);

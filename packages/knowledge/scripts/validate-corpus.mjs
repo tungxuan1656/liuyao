@@ -10,7 +10,7 @@ const repositoryRoot = path.resolve(root, '../..');
 const data = path.join(root, 'data');
 const flags = new Set(process.argv.slice(2));
 for (const flag of flags)
-  if (!['--check', '--check-books'].includes(flag)) throw new Error('Unknown flag: ' + flag);
+  if (!['--check', '--check-books'].includes(flag)) throw new Error(`Unknown flag: ${flag}`);
 function json(file) {
   return JSON.parse(readFileSync(file, 'utf8'));
 }
@@ -44,7 +44,7 @@ if (flags.has('--check-books'))
         .update(readFileSync(path.join(repositoryRoot, edition.localInputPath)))
         .digest('hex');
       if (digest !== edition.sha256)
-        throw new Error(source.id + ': local PDF differs from selected edition');
+        throw new Error(`${source.id}: local PDF differs from selected edition`);
     }
 const { metadata, catalog, ready } = projectCorpus(
   records,
@@ -53,17 +53,17 @@ const { metadata, catalog, ready } = projectCorpus(
 );
 const outputs = new Map([
   [path.join(root, '.generated/runtime/validate-record.ts'), runtimeValidatorSource()],
-  [path.join(root, '.generated/runtime/index.json'), JSON.stringify(metadata) + '\n'],
-  [path.join(root, '.generated/runtime/catalog.json'), JSON.stringify(catalog) + '\n'],
+  [path.join(root, '.generated/runtime/index.json'), `${JSON.stringify(metadata)}\n`],
+  [path.join(root, '.generated/runtime/catalog.json'), `${JSON.stringify(catalog)}\n`],
   ...ready.map(record => [
-    path.join(root, 'dist/content', record.id + '.json'),
-    JSON.stringify(record) + '\n',
+    path.join(root, 'dist/content', `${record.id}.json`),
+    `${JSON.stringify(record)}\n`,
   ]),
 ]);
 for (const [file, text] of outputs) {
   if (flags.has('--check')) {
     if (!existsSync(file) || readFileSync(file, 'utf8') !== text)
-      throw new Error('Stale or missing build output: ' + path.relative(root, file));
+      throw new Error(`Stale or missing build output: ${path.relative(root, file)}`);
   } else {
     mkdirSync(path.dirname(file), { recursive: true });
     if (!existsSync(file) || readFileSync(file, 'utf8') !== text) writeFileSync(file, text);
@@ -74,16 +74,10 @@ if (existsSync(contentDir))
   for (const name of readdirSync(contentDir)) {
     const file = path.join(contentDir, name);
     if (!outputs.has(file)) {
-      if (flags.has('--check')) throw new Error('Unlisted content asset: ' + name);
+      if (flags.has('--check')) throw new Error(`Unlisted content asset: ${name}`);
       else rmSync(file);
     }
   }
-console.log(
-  'Knowledge: ' +
-    result.records +
-    ' records; ' +
-    result.ready +
-    ' ready; ' +
-    sources.length +
-    ' supplied books. Structural links and source pages valid.',
+process.stdout.write(
+  `Knowledge: ${result.records} records; ${result.ready} ready; ${sources.length} supplied books. Structural links and source pages valid.\n`,
 );

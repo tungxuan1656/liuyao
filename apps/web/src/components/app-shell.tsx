@@ -10,6 +10,7 @@ type AppShellProps = {
 export function AppShell({ children }: AppShellProps) {
   const { pathname } = useLocation();
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: Path changes intentionally trigger scrolling, including back/forward navigation.
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);

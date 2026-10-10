@@ -39,7 +39,7 @@ function ContentSection({
 export function KnowledgeContent({ id }: { id: string }) {
   const { hash } = useLocation();
   const [attempt, setAttempt] = useState(0);
-  const key = id + ':' + attempt;
+  const key = `${id}:${attempt}`;
   const [state, setState] = useState<{ key: string; record?: ContentRecord; error?: boolean }>();
   useEffect(() => {
     let active = true;
@@ -107,8 +107,8 @@ export function KnowledgeContent({ id }: { id: string }) {
         record.lines.map(line => (
           <ContentSection
             key={line.position}
-            id={'line-' + line.position}
-            title={'Hào ' + line.position + ' · ' + line.label}
+            id={`line-${line.position}`}
+            title={`Hào ${line.position} · ${line.label}`}
             entries={line.entries}
           />
         ))}

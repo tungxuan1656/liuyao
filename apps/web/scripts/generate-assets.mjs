@@ -2,6 +2,7 @@ import { spawn } from 'node:child_process';
 import { copyFileSync, constants as fsConstants, rmSync } from 'node:fs';
 import { constants as osConstants } from 'node:os';
 import { resolve } from 'node:path';
+import { format } from 'node:util';
 
 const sourcePath = resolve('../../docs/design-docs/batquai.avif');
 const temporarySourcePath = resolve('public/luc-hao-icon-source.avif');
@@ -43,13 +44,13 @@ try {
       ? 128 + osConstants.signals[result.signal]
       : (result.code ?? 1);
 } catch (error) {
-  console.error(error);
+  process.stderr.write(`${format(error)}\n`);
   exitCode = 1;
 } finally {
   try {
     if (ownsTemporarySource) rmSync(temporarySourcePath, { force: true });
   } catch (error) {
-    console.error(`Could not remove temporary icon source: ${error}`);
+    process.stderr.write(`Could not remove temporary icon source: ${error}\n`);
     exitCode ||= 1;
   }
 

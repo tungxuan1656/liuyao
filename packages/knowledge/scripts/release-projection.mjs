@@ -16,7 +16,7 @@ export function summary(record) {
     record.entries[0]?.text ??
     record.title;
   const paragraph = text.split('\n\n')[0];
-  return paragraph.length <= 260 ? paragraph : paragraph.slice(0, 257).replace(/\s+\S*$/, '') + '…';
+  return paragraph.length <= 260 ? paragraph : `${paragraph.slice(0, 257).replace(/\s+\S*$/, '')}…`;
 }
 export function projectCorpus(records, sources, bibliography) {
   const ready = records.filter(record => record.status === 'ready');
@@ -30,7 +30,7 @@ export function projectCorpus(records, sources, bibliography) {
     sourceIds: [
       ...new Set(referencesOf(record).flatMap(ref => ('sourceId' in ref ? [ref.sourceId] : []))),
     ],
-    asset: 'knowledge/' + record.id + '.json',
+    asset: `knowledge/${record.id}.json`,
   }));
   const catalog = {
     entities: [],
@@ -53,9 +53,7 @@ export function projectCorpus(records, sources, bibliography) {
         .join('\n'),
       rights: source.editions.map(e => e.rights.note).join('\n'),
       limitations: source.limitations ?? [],
-      provenance: source.editions
-        .map(e => e.label + '; ' + e.pdfPageCount + ' trang PDF.')
-        .join('\n'),
+      provenance: source.editions.map(e => `${e.label}; ${e.pdfPageCount} trang PDF.`).join('\n'),
     });
   for (const record of ready) {
     const common = {
@@ -95,12 +93,12 @@ export function projectCorpus(records, sources, bibliography) {
     for (const sourceId of new Set(refs.map(ref => ref.sourceId ?? 'source-liuyao-v1-contract'))) {
       const ref = refs.find(ref => (ref.sourceId ?? 'source-liuyao-v1-contract') === sourceId);
       catalog.references.push({
-        id: 'reference-' + record.id + '-' + sourceId,
+        id: `reference-${record.id}-${sourceId}`,
         sourceId,
         targetIds: [record.id],
         location: ref.pdfPages
-          ? 'PDF ' + ref.pdfPages.join('–') + (ref.section ? '; ' + ref.section : '')
-          : ref.documentPath + '; ' + ref.section,
+          ? `PDF ${ref.pdfPages.join('–')}${ref.section ? `; ${ref.section}` : ''}`
+          : `${ref.documentPath}; ${ref.section}`,
       });
     }
   }

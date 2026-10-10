@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { describe, expect, it } from 'vitest';
 import {
   appendAutomaticToss,
@@ -52,7 +53,9 @@ describe('casting core', () => {
         0 | 1,
       ];
       const line = mapCoinsToLine(coins);
-      counts.set(line, counts.get(line)! + 1);
+      const count = counts.get(line);
+      assert(count !== undefined);
+      counts.set(line, count + 1);
       expect(line).toBe(value === 0 ? 6 : value <= 5 ? 7 : value <= 12 ? 8 : 9);
     }
     expect([...counts.values()]).toEqual([1, 5, 7, 3]);
@@ -154,8 +157,10 @@ describe('casting core', () => {
       expect(Object.isFrozen(toss.coins)).toBe(true);
     }
 
+    const firstToss = mutableResult.tosses[0];
+    assert(firstToss !== undefined);
     expect(() => {
-      mutableResult.tosses[0]!.coins[0] = 1;
+      firstToss.coins[0] = 1;
     }).toThrow();
     expect(() => {
       mutableResult.input.lines[0] = 9;

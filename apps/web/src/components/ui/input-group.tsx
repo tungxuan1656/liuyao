@@ -1,6 +1,6 @@
-import type * as React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from 'cn';
+import type * as React from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 
 function InputGroup({ className, ...props }: React.ComponentProps<'div'>) {
   return (
+    // biome-ignore lint/a11y/useSemanticElements: This inline input wrapper retains the shadcn group composition rather than fieldset semantics.
     <div
       data-slot="input-group"
       role="group"
@@ -45,6 +46,8 @@ function InputGroupAddon({
   ...props
 }: React.ComponentProps<'div'> & VariantProps<typeof inputGroupAddonVariants>) {
   return (
+    // biome-ignore lint/a11y/useSemanticElements: An inline input addon is a composed group, not a fieldset.
+    // biome-ignore lint/a11y/useKeyWithClickEvents: This pointer-only focus shortcut leaves the input and child buttons keyboard-accessible.
     <div
       role="group"
       data-slot="input-group-addon"
@@ -138,7 +141,7 @@ export {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupText,
   InputGroupInput,
+  InputGroupText,
   InputGroupTextarea,
 };

@@ -9,7 +9,9 @@ export function createBrowserCoinSource(): CoinBitSource {
   return () => {
     const bytes = new Uint8Array(1);
     globalThis.crypto.getRandomValues(bytes);
-    return (bytes[0]! & 1) as 0 | 1;
+    const byte = bytes[0];
+    if (byte === undefined) throw new Error('Secure random generation returned no byte.');
+    return (byte & 1) as 0 | 1;
   };
 }
 

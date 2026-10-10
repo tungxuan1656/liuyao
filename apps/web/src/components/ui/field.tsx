@@ -1,8 +1,8 @@
 'use client';
 
-import { useMemo } from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from 'cn';
+import { useMemo } from 'react';
 
 import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
@@ -72,6 +72,7 @@ function Field({
   ...props
 }: React.ComponentProps<'div'> & VariantProps<typeof fieldVariants>) {
   return (
+    // biome-ignore lint/a11y/useSemanticElements: A composable field wrapper is not a fieldset; FieldSet handles that semantic.
     <div
       role="group"
       data-slot="field"
@@ -212,13 +213,13 @@ function FieldError({
 
 export {
   Field,
-  FieldLabel,
+  FieldContent,
   FieldDescription,
   FieldError,
   FieldGroup,
+  FieldLabel,
   FieldLegend,
   FieldSeparator,
   FieldSet,
-  FieldContent,
   FieldTitle,
 };

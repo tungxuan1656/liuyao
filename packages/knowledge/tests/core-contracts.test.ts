@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { HEXAGRAMS } from '../data/hexagrams';
@@ -12,15 +13,25 @@ function coreInventory(source: string, name: string): string[] {
     new RegExp(`export const ${name} = (?:Object\\.freeze\\()?\\[([\\s\\S]*?)\\] as const\\)?;`),
   )?.[1];
   if (!body) throw new Error(`Missing ${name} in core contracts`);
-  return [...body.matchAll(/'([^']+)'/g)].map(match => match[1]!);
+  return [...body.matchAll(/'([^']+)'/g)].map(match => {
+    const id = match[1];
+    assert(id !== undefined);
+    return id;
+  });
 }
 
 function coreHexagramGrid(source: string): string[][] {
   const body = source.match(/const HEXAGRAM_BY_UPPER_AND_LOWER = \[([\s\S]*?)\] as const;/)?.[1];
   if (!body) throw new Error('Missing core King Wen grid');
-  return [...body.matchAll(/\[([^\]]+)\]/g)].map(row =>
-    [...row[1]!.matchAll(/'([0-9]{2})'/g)].map(cell => cell[1]!),
-  );
+  return [...body.matchAll(/\[([^\]]+)\]/g)].map(row => {
+    const cells = row[1];
+    assert(cells !== undefined);
+    return [...cells.matchAll(/'([0-9]{2})'/g)].map(cell => {
+      const number = cell[1];
+      assert(number !== undefined);
+      return number;
+    });
+  });
 }
 
 describe('knowledge and core source contracts', () => {

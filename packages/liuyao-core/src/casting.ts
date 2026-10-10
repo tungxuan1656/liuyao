@@ -52,11 +52,15 @@ function copyValidatedToss(toss: CoinTossResult, method?: CastingMethod): CoinTo
     toss.method !== expectedMethod ||
     toss.coinCount !== count ||
     (method !== undefined && toss.method !== method) ||
-    mapCoinsToLine(copiedCoins as unknown as CoinSet) !== toss.line
+    mapCoinsToLine(
+      // SAFETY: expectedMethod checks the tuple length; mapCoinsToLine validates the bits.
+      copiedCoins as unknown as CoinSet,
+    ) !== toss.line
   ) {
     throw new TypeError('Each toss method, coin count, and line must match its coin evidence.');
   }
   return Object.freeze({
+    // SAFETY: The checks above validate both the tuple length and each coin bit.
     coins: Object.freeze(copiedCoins) as unknown as CoinSet,
     method: toss.method,
     coinCount: toss.coinCount,
@@ -73,6 +77,7 @@ export function createAutomaticTossSnapshot(
   }
 
   const method = tosses[0]?.method;
+  // SAFETY: The length check guarantees six tosses; map validates and preserves each entry.
   const snapshot = tosses.map(toss =>
     copyValidatedToss(toss, method),
   ) as unknown as AutomaticTossSnapshot;
@@ -113,8 +118,7 @@ export function mapCoinsToLine(coins: CoinSet, method?: CastingMethod): LineValu
     const total = coins.reduce((sum, bit) => sum + (bit === 0 ? 2 : 3), 0);
     return total as LineValue;
   }
-  const weights = [8, 4, 2, 1] as const;
-  const total = coins.reduce((sum, bit, index) => sum + bit * weights[index]!, 0);
+  const total = coins.reduce((sum, bit) => sum * 2 + bit, 0);
   return (total === 0 ? 6 : total <= 5 ? 7 : total <= 12 ? 8 : 9) as LineValue;
 }
 
@@ -147,14 +151,20 @@ export class CastingService {
       coins[index] = bit;
     }
     return Object.freeze({
+      // SAFETY: coinCount fixes the tuple length and the loop validates every bit.
       coins: Object.freeze(coins) as unknown as CoinSet,
       method,
       coinCount,
-      line: mapCoinsToLine(coins as unknown as CoinSet, method),
+      line: mapCoinsToLine(
+        // SAFETY: coinCount fixes the tuple length and the loop validates every bit.
+        coins as unknown as CoinSet,
+        method,
+      ),
     });
   }
 
   cast(method: CastingMethod = 'three-coin'): CastingResult {
+    // SAFETY: Array.from creates exactly six validated tosses.
     const tosses = Object.freeze(
       Array.from({ length: 6 }, () => this.toss(method)) as unknown as CastingResult['tosses'],
     );

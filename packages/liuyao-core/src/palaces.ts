@@ -130,7 +130,8 @@ const SHI_POSITIONS: readonly ResultLinePosition[] = [6, 1, 2, 3, 4, 5, 4, 3];
 const CLASSIFICATIONS = new Map<HexagramId, PalaceClassification>(
   PALACE_ROWS.flatMap(([palaceId, hexagramIds]) =>
     hexagramIds.map((hexagramId, index) => {
-      const shiPosition = SHI_POSITIONS[index]!;
+      const shiPosition = SHI_POSITIONS[index];
+      if (shiPosition === undefined) throw new Error(`Missing Shi position for ${hexagramId}.`);
       return [
         hexagramId,
         {

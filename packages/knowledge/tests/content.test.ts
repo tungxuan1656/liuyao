@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { FACTS } from '../data/facts';
@@ -16,7 +17,11 @@ function contractFields(interfaceName: string): string[] {
   );
   const body = contracts.match(new RegExp(`export interface ${interfaceName} \\{([^}]+)\\}`))?.[1];
   if (!body) throw new Error(`Missing ${interfaceName} in core contracts`);
-  return [...body.matchAll(/^\s*(\w+)\??:/gm)].map(match => match[1]!);
+  return [...body.matchAll(/^\s*(\w+)\??:/gm)].map(match => {
+    const field = match[1];
+    assert(field !== undefined);
+    return field;
+  });
 }
 
 describe('curated V1 content', () => {

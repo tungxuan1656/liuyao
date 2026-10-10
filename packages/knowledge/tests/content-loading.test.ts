@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { describe, expect, it, vi } from 'vitest';
 import { createContentLoader, getContentMetadata, listContent } from '../src/content';
 import { loadContent } from '../src/node';
@@ -49,7 +50,8 @@ describe('selected content loading', () => {
     const malformed = structuredClone(record);
     let target = malformed as unknown as Record<string, unknown>;
     for (const part of path.slice(0, -1)) target = target[part] as Record<string, unknown>;
-    const field = path[path.length - 1]!;
+    const field = path[path.length - 1];
+    assert(field !== undefined);
     if (value === undefined) delete target[field];
     else target[field] = value;
     const reader = vi.fn().mockResolvedValueOnce(malformed).mockResolvedValueOnce(record);
