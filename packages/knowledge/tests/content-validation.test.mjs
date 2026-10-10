@@ -253,6 +253,17 @@ describe('simple content validation', () => {
     const order = structuredClone(r);
     order.lines.reverse();
     expect(() => validateCorpus([lower, upper, order], sources)).toThrow(/order/);
+    const repeatedPosition = structuredClone(r);
+    repeatedPosition.lines[1].position = 1;
+    expect(() => validateCorpus([lower, upper, repeatedPosition], sources)).toThrow(/order/);
+    const missingLineReference = structuredClone(r);
+    missingLineReference.lines[0].entries[0].references = [];
+    expect(() => validateCorpus([lower, upper, missingLineReference], sources)).toThrow();
+    const invalidLinePage = structuredClone(r);
+    invalidLinePage.lines[0].entries[0].references[0].pdfPages = [99, 101];
+    expect(() => validateCorpus([lower, upper, invalidLinePage], sources)).toThrow(
+      /invalid PDF page bounds/,
+    );
     const short = structuredClone(r);
     short.lines.pop();
     expect(() => validateCorpus([lower, upper, short], sources)).toThrow();
