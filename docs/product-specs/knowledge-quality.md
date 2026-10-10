@@ -80,10 +80,27 @@ Resolve related-record and line links without substituting unrelated evidence.
 Keep missing content explicit. Preserve table values and line positions.
 Check affected web routes and offline behavior when presentation or loading changes.
 
+## Agent execution gate
+
+Writers and reviewers follow this gate for every knowledge change. It bounds the work; it does not add a second review program.
+
+1. Read the assigned feature record, the canonical documents it links, and the exact source passages or page images behind each changed assertion before writing.
+2. Separate supplied facts, source errors, attributed interpretations, translator comments, and project conventions. Only project conventions may be stated without a source.
+3. Write one coherent explanation of one idea. Do not add a decision, ledger row, reviewer identity, or hash for each sentence or claim.
+4. Preserve conditions, disagreements, worked examples, source exceptions, and `via` attribution together with their book and PDF pages.
+5. Give an independent reviewer — not the writer — the changed assertions, their direct uses, the pointer, and the inspected passages or images. Record each finding as the pointer, the smallest repair, and whether imagery was inspected. A finding without a smallest repair is not ready.
+6. Run the automated invariants. Inspect expected table and worked-example values independently; never derive expected values from the calculation under test.
+7. Fail closed. An unresolved material defect, a missing source, or an unapproved schema, record-ID, route, or core change blocks publication. Report the blocker instead of widening scope.
+8. Re-verify the final revision after the last repair and record a short handoff: what changed, what was verified, what remains uncertain.
+
+The assigned chapters, tables, figures, clauses, and conditions must all be covered. A decision per sentence is not required. Edit only what the finding supports; unrelated refactors, record splits, ID or route changes, and edits outside the assigned group stay out of the change.
+
 ## Publication gate
 
 Publish a batch after source comparison, structural checks, and the relevant repository verification pass.
-A separate content review can help with difficult material. It does not require a certification artifact or model identity per paragraph.
+The agent execution gate above defines how the writer and reviewer prepare that batch.
+Someone other than the writer checks the materially changed assertions. Additional content review can help with difficult material.
+It does not require a certification artifact or model identity per paragraph.
 Keep draft content outside the published library.
 Run the [development checks](../development.md) appropriate to the change.
 

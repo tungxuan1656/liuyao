@@ -35,3 +35,13 @@ This file routes repository documentation. Each durable fact has one canonical o
 | You add knowledge content                | `LICENSING.md`                             | Licensing boundary                         |
 
 Execution status does not live in `docs/`. Use `features/`, `feature_index.json`, and `progress.md` when tracked work needs persistent state.
+
+## Historical and local material
+
+| Read when                                        | Source                             | Owns                                            |
+| ------------------------------------------------ | ---------------------------------- | ----------------------------------------------- |
+| You need a retired review or accounting artifact | `docs/reviews/knowledge/README.md` | Historical notes and Git recovery paths         |
+| You need the intent recorded for earlier work    | `docs/plans/`                      | Plan-time intent for one tracked feature        |
+| You compare a claim with a supplied edition      | `docs/books/`                      | Local PDFs, ignored by Git, never redistributed |
+
+Files routed above hold the current contract. Authored source records live in `packages/knowledge/data/`. Generated runtime output lives in build directories and is never a truth source. A historical plan, review note, or progress block records what was decided then; the canonical document wins when they disagree.

@@ -20,18 +20,24 @@ export function summary(record) {
 }
 export function projectCorpus(records, sources, bibliography) {
   const ready = records.filter(record => record.status === 'ready');
-  const metadata = ready.map(record => ({
-    id: record.id,
-    type: record.type,
-    title: record.title,
-    aliases: record.aliases ?? [],
-    summary: summary(record),
-    topicIds: record.topicIds ?? [],
-    sourceIds: [
-      ...new Set(referencesOf(record).flatMap(ref => ('sourceId' in ref ? [ref.sourceId] : []))),
-    ],
-    asset: `knowledge/${record.id}.json`,
-  }));
+  const metadata = ready.map(record => {
+    const entry = {
+      id: record.id,
+      type: record.type,
+      title: record.title,
+      aliases: record.aliases ?? [],
+      summary: summary(record),
+      listed: record.listed ?? true,
+      topicIds: record.topicIds ?? [],
+      sourceIds: [
+        ...new Set(referencesOf(record).flatMap(ref => ('sourceId' in ref ? [ref.sourceId] : []))),
+      ],
+      asset: `knowledge/${record.id}.json`,
+    };
+    // The metadata index is inlined into the app bundle, so the default value stays off the wire.
+    if (record.listed !== false) delete entry.listed;
+    return entry;
+  });
   const catalog = {
     entities: [],
     terms: [],

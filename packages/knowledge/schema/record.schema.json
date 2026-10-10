@@ -16,6 +16,9 @@
     "status": {
       "enum": ["draft", "ready"]
     },
+    "listed": {
+      "type": "boolean"
+    },
     "aliases": {
       "type": "array",
       "items": {

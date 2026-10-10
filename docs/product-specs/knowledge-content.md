@@ -20,6 +20,7 @@ Read the relevant book passage → write a useful Vietnamese explanation → att
 - Càn/Khôn special passages alongside their parent hexagram; never a seventh line.
 - Casting, Liu Yao concepts, tables, conditions, and worked examples from BPCT and relevant classical passages.
 - Articles and learning sequences that link existing concepts, rules, hexagrams, and positions.
+- Bibliographic notes about a supplied edition, such as cover credits, contents pages, or blank pages. They stay published for provenance lookup under `listed: false`; they are not learner articles.
 
 The calculation package owns implemented board rules. Knowledge explains those rules and the books' interpretations.
 Adding a historical interpretation does not activate automatic prediction or calendar behavior.

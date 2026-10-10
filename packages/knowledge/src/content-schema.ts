@@ -60,6 +60,8 @@ interface ContentBase {
   readonly type: 'hexagram' | 'trigram' | 'term' | 'rule' | 'article';
   readonly title: string;
   readonly status: 'draft' | 'ready';
+  /** Ready content with `listed: false` stays loadable by ID but is no catalog entry. */
+  readonly listed?: boolean;
   readonly aliases?: readonly string[];
   readonly topicIds?: readonly string[];
   readonly relatedIds?: readonly string[];
@@ -115,6 +117,8 @@ export interface ContentMetadata {
   readonly title: string;
   readonly aliases: readonly string[];
   readonly summary: string;
+  /** Emitted only for ready content that stays loadable by ID but out of catalog lists. */
+  readonly listed?: boolean;
   readonly topicIds: readonly string[];
   readonly sourceIds: readonly string[];
   readonly asset: string;

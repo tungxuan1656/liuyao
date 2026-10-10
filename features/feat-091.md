@@ -12,7 +12,8 @@ Record current evidence for every assigned review unit.
 
 ## Non-goals
 
-New interpretation, calendar, or UI behavior.
+New interpretation, calendar, or UI behavior. No unrelated refactors, record splits, ID or
+route changes, or edits outside the assigned group.
 
 ## Acceptance
 
@@ -24,13 +25,13 @@ New interpretation, calendar, or UI behavior.
 - [ ] All eighteen Tạp Sự cases.
 - [ ] All eleven Tinh Sát sections.
 - [ ] All fifteen criticisms and closing pages.
-- [ ] Each numbered unit needs a separate decision; preserve objections and their target authors.
+- [ ] Every materially changed assertion names its exact source passage; objections and their target authors are preserved.
 - [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
 - [ ] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
-[Content](../docs/product-specs/knowledge-content.md), [quality](../docs/product-specs/knowledge-quality.md),
+[Content](../docs/product-specs/knowledge-content.md), [quality and agent execution gate](../docs/product-specs/knowledge-quality.md#agent-execution-gate),
 [model](../docs/design-docs/knowledge-model.md), [sources](../docs/references/book-sources.md),
 [licensing](../LICENSING.md), [verification](../docs/development.md).
 
@@ -38,7 +39,7 @@ New interpretation, calendar, or UI behavior.
 
 1. Identify the useful explanations and tables in this group.
 2. Review each section/table and record its material content findings.
-3. Verify all unit decisions and close only after rejected units are repaired.
+3. Resolve every gate finding: repair supported defects, then re-verify the final revision.
 
 ## Verify
 
