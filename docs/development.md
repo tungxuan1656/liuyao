@@ -52,14 +52,24 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | `pnpm build`                                              | All workspace builds                                    |
 | `pnpm test`                                               | Enforce placement + package tests                       |
 | `pnpm typecheck`                                          | All workspace type checks                               |
-| `pnpm lint`                                              | Repository Biome checks                                  |
-| `pnpm format`                                            | Write Biome formatting                                   |
-| `pnpm format:check`                                      | Check Biome formatting                                   |
+| `pnpm lint`                                               | Repository Biome checks                                 |
+| `pnpm format`                                             | Write Biome + Markdown/YAML formatting                  |
+| `pnpm format:check`                                       | Check Biome + Markdown/YAML formatting                  |
 | `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
 | `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
 | `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
 
 The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/luc-hao-icon-source.avif` because its configuration reads a public-directory path. The command removes that copy after success, failure, or a handled interrupt; it does not modify the approved source image. If an uncatchable termination leaves the temporary file behind, remove that exact file before retrying. Concurrent generator runs are not supported.
+
+## Formatting ownership
+
+Biome 2.5.15 checks JavaScript, TypeScript, JSON, CSS, and experimental HTML. Prettier formats only Markdown and YAML through scripts and hooks.
+
+Generated shadcn components in `apps/web/src/components/ui/**` retain their formatting and import order, but Biome lint remains enabled. Three accessibility rules are disabled there: `useSemanticElements` (composed group roles), `useKeyWithClickEvents` (input-focus containers), and `noLabelWithoutControl` (control IDs supplied by callers). All other applicable rules remain enabled.
+
+`init.sh` applies safe lint fixes, including type-only imports in generated components. Registry updates must retain the local `field.tsx` strict equality and deduplicated-message key fixes.
+
+HTML support is experimental; review changes to `apps/web/index.html` and verify the web build after Biome upgrades. Prettier ignores generated assets, local books, agent tooling, and the lockfile.
 
 ## Git hooks
 
@@ -73,7 +83,7 @@ The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/lu
 
 It performs:
 
-1. Biome format write.
+1. Biome format write and Prettier Markdown/YAML format write.
 2. Biome lint fix and TypeScript length checks.
 3. Type-check, build, and package tests.
 

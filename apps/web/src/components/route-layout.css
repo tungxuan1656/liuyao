@@ -10,9 +10,15 @@
 }
 
 [data-app-shell] {
-  min-height: 100dvh;
+  min-height: 100vh;
   box-sizing: border-box;
   padding-block-end: var(--app-safe-area-bottom);
+}
+
+@supports (min-height: 100dvh) {
+  [data-app-shell] {
+    min-height: 100dvh;
+  }
 }
 
 .route-page {

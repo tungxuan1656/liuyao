@@ -41,6 +41,12 @@
       "tailwindDirectives": true
     }
   },
+  "html": {
+    "experimentalFullSupportEnabled": true,
+    "formatter": {
+      "enabled": true
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -86,7 +92,14 @@
         "enabled": false
       },
       "linter": {
-        "enabled": false
+        "enabled": true,
+        "rules": {
+          "a11y": {
+            "useSemanticElements": "off",
+            "useKeyWithClickEvents": "off",
+            "noLabelWithoutControl": "off"
+          }
+        }
       },
       "assist": {
         "enabled": false

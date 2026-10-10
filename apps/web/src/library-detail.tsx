@@ -92,7 +92,7 @@ export function LibraryDetailPage() {
                 return (
                   trigram && (
                     <Button
-                      key={trigramId}
+                      key={index === 0 ? 'upper' : 'lower'}
                       variant="outline"
                       size="lg"
                       className="h-auto min-h-11 min-w-0 whitespace-normal text-left"
