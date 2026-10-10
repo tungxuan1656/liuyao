@@ -1,11 +1,10 @@
 import type { ReadingResult } from '@liuyao/core';
 import { Link } from 'react-router-dom';
-import { YaoSymbol } from './components/yao-symbol';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card';
 import { Separator } from './components/ui/separator';
+import { YaoSymbol } from './components/yao-symbol';
 import { FactButton, type FactSelection } from './result-facts';
-import { ROUTES } from './route-paths';
 import {
   branchName,
   elementName,
@@ -14,6 +13,7 @@ import {
   stemName,
   trigramLabel,
 } from './result-labels';
+import { ROUTES } from './route-paths';
 
 export function HexagramBoard({
   result,

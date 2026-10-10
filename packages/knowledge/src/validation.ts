@@ -56,7 +56,9 @@ function text(value: unknown, path: string): asserts value is string {
 
 function stringArray(value: unknown, path: string): asserts value is readonly string[] {
   if (!Array.isArray(value)) fail(path, 'expected an array');
-  value.forEach((entry, index) => text(entry, `${path}[${index}]`));
+  value.forEach((entry, index) => {
+    text(entry, `${path}[${index}]`);
+  });
 }
 
 function id(value: unknown, path: string, kind: string): asserts value is KnowledgeRecordId {

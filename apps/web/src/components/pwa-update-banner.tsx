@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
 import { RefreshCw, WifiOff } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import {
   applyPwaUpdate,
   getPwaUpdateSnapshot,
-  subscribePwaUpdate,
   type PwaUpdateSnapshot,
+  subscribePwaUpdate,
 } from '../lib/pwa-update';
 import { useReadingSession } from '../reading-session';
 import { ConfirmationDialog } from './confirmation-dialog';

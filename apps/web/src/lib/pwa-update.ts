@@ -26,7 +26,9 @@ function publish(update: Partial<PwaUpdateSnapshot>) {
   }
 
   snapshot = next;
-  subscribers.forEach(subscriber => subscriber());
+  subscribers.forEach(subscriber => {
+    subscriber();
+  });
 }
 
 export function initPwaUpdate(): void {

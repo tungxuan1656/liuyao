@@ -1,12 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
 import { getHexagram } from '@liuyao/knowledge';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ROUTES } from './route-paths';
-import { useReadingSession } from './reading-session';
-import { FactButton, FactInspector, type FactSelection } from './result-facts';
-import { HexagramBoard } from './result-board';
-import { YaoSymbol } from './components/yao-symbol';
-import { branchName, elementName, relativeName, stemName } from './result-labels';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
@@ -18,6 +12,12 @@ import {
   SheetHeader,
   SheetTitle,
 } from './components/ui/sheet';
+import { YaoSymbol } from './components/yao-symbol';
+import { useReadingSession } from './reading-session';
+import { HexagramBoard } from './result-board';
+import { FactButton, FactInspector, type FactSelection } from './result-facts';
+import { branchName, elementName, relativeName, stemName } from './result-labels';
+import { ROUTES } from './route-paths';
 import './components/route-layout.css';
 import './result-view.css';
 

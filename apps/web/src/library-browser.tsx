@@ -1,17 +1,6 @@
+import { ArrowRight, Search, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Search, X } from 'lucide-react';
-import {
-  categories,
-  filterRules,
-  getLibraryRecords,
-  recordDescription,
-  recordName,
-  recordPath,
-  ruleCategories,
-} from './library-data';
-import type { Category, RuleFilter } from './library-data';
-import { getLinePresentation } from './line-value-presentation';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import {
@@ -32,6 +21,17 @@ import {
 } from './components/ui/input-group';
 import { Tabs, TabsList, TabsTrigger } from './components/ui/tabs';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
+import type { Category, RuleFilter } from './library-data';
+import {
+  categories,
+  filterRules,
+  getLibraryRecords,
+  recordDescription,
+  recordName,
+  recordPath,
+  ruleCategories,
+} from './library-data';
+import { getLinePresentation } from './line-value-presentation';
 
 const ruleLabels = {
   all: 'Tất cả',

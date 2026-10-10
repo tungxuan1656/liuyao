@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import {
-  CastingService,
   appendAutomaticToss,
-  createAutomaticTossSnapshot,
-  InvalidReadingInputError,
+  CastingService,
   calculateHexagram,
   calculateReading,
+  createAutomaticTossSnapshot,
+  InvalidReadingInputError,
   mapCoinsToLine,
   normalizeCastingInput,
   normalizeDirectInput,

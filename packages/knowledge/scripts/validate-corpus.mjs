@@ -1,9 +1,10 @@
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import path from 'node:path';
 import { createHash } from 'node:crypto';
-import { validateCorpus, runtimeValidatorSource } from './content-validation.mjs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { runtimeValidatorSource, validateCorpus } from './content-validation.mjs';
 import { projectCorpus } from './release-projection.mjs';
+
 const root = fileURLToPath(new URL('../', import.meta.url));
 const repositoryRoot = path.resolve(root, '../..');
 const data = path.join(root, 'data');

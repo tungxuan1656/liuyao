@@ -1,28 +1,28 @@
 <!doctype html>
 <html lang="vi">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta
       name="description"
       content="Lập quẻ, tra cứu và lưu kết quả Lục Hào ngay trên thiết bị của bạn."
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    >
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <script>
-      // Restore the saved theme before first paint. Keep the key in sync with src/lib/theme.ts.
-      try {
-        if (localStorage.getItem('liuyao-theme') === 'dark') {
-          document.documentElement.classList.add('dark');
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#151b1e');
-        }
-      } catch {
-        // Storage unavailable: keep the default light theme.
+    // Restore the saved theme before first paint. Keep the key in sync with src/lib/theme.ts.
+    try {
+      if (localStorage.getItem('liuyao-theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#151b1e');
       }
+    } catch {
+      // Storage unavailable: keep the default light theme.
+    }
     </script>
-    <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
     <title>Lục Hào</title>
   </head>
   <body>

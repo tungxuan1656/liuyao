@@ -1,4 +1,3 @@
-import { describe, expect, it } from 'vitest';
 import {
   calculateHexagram,
   calculateReading,
@@ -7,8 +6,10 @@ import {
   transformChangingLines,
   validateReadingInput,
 } from '@liuyao/core';
+import { describe, expect, it } from 'vitest';
 import { listContent } from '../src/content';
 import { loadContent } from '../src/node';
+
 const records = (
   await Promise.all(
     listContent()
@@ -32,6 +33,7 @@ const records = (
 ).filter(record => record !== undefined);
 const getBookRecord = (id: string) => records.find(record => record.id === id);
 const listBookRecords = () => records;
+
 import type { ContentArticle, ContentTable } from '../src/index';
 import fixture from './fixtures/ordered-lessons-worked-readings.json';
 

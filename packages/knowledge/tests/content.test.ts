@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
+import { describe, expect, it } from 'vitest';
 import { FACTS } from '../data/facts';
 import { HEXAGRAMS } from '../data/hexagrams';
 import { REFERENCES } from '../data/references';

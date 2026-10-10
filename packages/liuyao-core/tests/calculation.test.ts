@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { InvalidReadingInputError, RULE_SET_ID, calculateHexagram } from '../src/index';
+import { calculateHexagram, InvalidReadingInputError, RULE_SET_ID } from '../src/index';
 import { HEXAGRAM_FIXTURES } from './hexagram-fixtures';
 
 const MOVING_LINE_GOLDENS = [

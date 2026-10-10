@@ -1,6 +1,6 @@
-import { constants as fsConstants, copyFileSync, rmSync } from 'node:fs';
-import { constants as osConstants } from 'node:os';
 import { spawn } from 'node:child_process';
+import { copyFileSync, constants as fsConstants, rmSync } from 'node:fs';
+import { constants as osConstants } from 'node:os';
 import { resolve } from 'node:path';
 
 const sourcePath = resolve('../../docs/design-docs/batquai.avif');

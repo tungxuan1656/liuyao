@@ -1,5 +1,6 @@
-import type { HexagramId, TrigramId } from './schema.js';
 import type { ContentReference } from './content-schema.js';
+import type { HexagramId, TrigramId } from './schema.js';
+
 type BookElement = 'wood' | 'fire' | 'earth' | 'metal' | 'water';
 
 type Table<Kind extends string, Row> = {

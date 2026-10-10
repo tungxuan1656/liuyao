@@ -1,16 +1,17 @@
-import { HEXAGRAMS } from '../data/hexagrams.js';
 import { FACTS } from '../data/facts.js';
+import { HEXAGRAMS } from '../data/hexagrams.js';
 import { REFERENCES } from '../data/references.js';
 import { RULES } from '../data/rules.js';
 import { SOURCES } from '../data/sources.js';
 import { TERMS } from '../data/terms.js';
 import { TRIGRAMS } from '../data/trigrams.js';
+import { deepFreeze } from './immutable.js';
 import type {
   HexagramEntity,
   HexagramId,
-  KnowledgeFactId,
   KnowledgeCatalog,
   KnowledgeEntity,
+  KnowledgeFactId,
   KnowledgeRule,
   KnowledgeSource,
   KnowledgeTerm,
@@ -19,8 +20,6 @@ import type {
   TrigramId,
 } from './schema.js';
 import { validateKnowledgeCatalog } from './validation.js';
-
-import { deepFreeze } from './immutable.js';
 
 // The content records are authored separately; the schema validator is the runtime boundary.
 export const knowledgeCatalog: KnowledgeCatalog = {

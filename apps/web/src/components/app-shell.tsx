@@ -1,4 +1,4 @@
-import { useEffect, type ReactNode } from 'react';
+import { type ReactNode, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navigation } from './navigation';
 import './route-layout.css';

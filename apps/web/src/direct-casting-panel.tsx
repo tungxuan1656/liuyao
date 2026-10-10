@@ -1,10 +1,10 @@
-import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
+import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter } from './components/ui/card';
 import { Separator } from './components/ui/separator';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
-import { getLinePresentation } from './line-value-presentation';
 import { YaoSymbol } from './components/yao-symbol';
+import { getLinePresentation } from './line-value-presentation';
 
 const validValues = [6, 7, 8, 9] as const;
 

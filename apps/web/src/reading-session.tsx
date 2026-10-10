@@ -1,12 +1,12 @@
-import { createContext, useContext, useRef, useState, type ReactNode } from 'react';
 import {
-  createAutomaticTossSnapshot,
-  type CastingMethod,
   type AutomaticTossSnapshot,
+  type CastingMethod,
   type CoinTossResult,
+  createAutomaticTossSnapshot,
   type LineValue,
   type ReadingResult,
 } from '@liuyao/core';
+import { createContext, type ReactNode, useContext, useRef, useState } from 'react';
 
 export type ReadingMethod = 'automatic' | 'manual' | 'direct';
 
@@ -124,7 +124,6 @@ export function ReadingSessionProvider({ children }: { children: ReactNode }) {
   );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components -- keep the context hook with its provider.
 export function useReadingSession() {
   const session = useContext(ReadingSessionContext);
   if (!session) throw new Error('ReadingSessionProvider is missing.');

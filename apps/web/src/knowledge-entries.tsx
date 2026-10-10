@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
-import { getSource, getContentMetadata } from '@liuyao/knowledge';
 import type { ContentEntry, ContentLink, ContentReference } from '@liuyao/knowledge';
+import { getContentMetadata, getSource } from '@liuyao/knowledge';
+import { Link } from 'react-router-dom';
 import { ROUTES } from './route-paths';
+
 function linkPath(link: ContentLink) {
   const target = getContentMetadata(link.recordId);
   return target
@@ -17,6 +18,7 @@ export function KnowledgeReferences({ references }: { references: readonly Conte
       </summary>
       <ul>
         {references.map((ref, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: references carry no identifier of their own; the list is static.
           <li key={i}>
             {'sourceId' in ref
               ? (getSource(ref.sourceId)?.title ?? ref.sourceId) +
@@ -71,10 +73,10 @@ export function KnowledgeEntries({
           {entry.target ? <TargetLink target={entry.target} /> : null}
           {entry.links?.length ? (
             <ul>
-              {entry.links.map((link, i) => {
+              {entry.links.map(link => {
                 const href = linkPath(link);
                 return href ? (
-                  <li key={i}>
+                  <li key={href}>
                     <Link className="underline" to={href}>
                       {getContentMetadata(link.recordId)?.title}
                       {link.position ? ' · Hào ' + link.position : ''}

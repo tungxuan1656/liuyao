@@ -1,4 +1,5 @@
 import { referencesOf } from '../src/content-structure.ts';
+
 const TRIGRAM_ORDER = [
   'trigram-heaven',
   'trigram-lake',

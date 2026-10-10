@@ -1,7 +1,8 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { validateCorpus } from '../scripts/content-validation.mjs';
-import { getContentTableId } from '../src/content-structure.ts';
 import { projectCorpus } from '../scripts/release-projection.mjs';
+import { getContentTableId } from '../src/content-structure.ts';
+
 const sources = [
   {
     id: 'source-book-test',

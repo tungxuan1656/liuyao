@@ -1,7 +1,8 @@
-import { getKnowledgeEntity, getTerm, getContentTableId } from '@liuyao/knowledge';
 import type { ContentTable, KnowledgeEntity } from '@liuyao/knowledge';
+import { getContentTableId, getKnowledgeEntity, getTerm } from '@liuyao/knowledge';
+import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { KnowledgeReferences } from './knowledge-entries';
-import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
+
 const labels: Record<string, string> = {
   trigramId: 'Quái',
   element: 'Ngũ hành',
@@ -100,6 +101,7 @@ export function KnowledgeTables({ tables }: { tables: readonly ContentTable[] })
                 </thead>
                 <tbody>
                   {table.rows.map((row, index) => (
+                    // biome-ignore lint/suspicious/noArrayIndexKey: reference rows are static corpus data and never reordered.
                     <tr key={index}>
                       {keys.map(key => (
                         <td key={key} className="p-3 align-top">

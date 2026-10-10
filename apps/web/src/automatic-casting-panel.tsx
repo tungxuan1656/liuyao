@@ -1,11 +1,11 @@
 import type { CastingMethod, CoinTossResult } from '@liuyao/core';
 import { ArrowLeft, RotateCcw } from 'lucide-react';
+import { CastingHexagram } from './casting/casting-hexagram';
+import { CastingOutcome } from './casting/casting-outcome';
+import { CoinStage } from './casting/coin-stage';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from './components/ui/card';
 import { ToggleGroup, ToggleGroupItem } from './components/ui/toggle-group';
-import { CoinStage } from './casting/coin-stage';
-import { CastingHexagram } from './casting/casting-hexagram';
-import { CastingOutcome } from './casting/casting-outcome';
 import './casting/casting-workspace.css';
 
 type Props = {
@@ -62,6 +62,7 @@ export function AutomaticCastingPanel({
           </ToggleGroupItem>
         </ToggleGroup>
         <span
+          role="status"
           className="text-sm text-muted-foreground whitespace-nowrap"
           aria-label={`${revealedCount} trên 6 hào đã gieo`}
         >

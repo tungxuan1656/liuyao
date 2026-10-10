@@ -6,7 +6,8 @@ export type CoinBitSource = () => CoinBit;
 export type CoinCount = 3 | 4;
 export type CastingMethod = 'three-coin' | 'four-coin';
 export type CoinSet =
-  readonly [CoinBit, CoinBit, CoinBit] | readonly [CoinBit, CoinBit, CoinBit, CoinBit];
+  | readonly [CoinBit, CoinBit, CoinBit]
+  | readonly [CoinBit, CoinBit, CoinBit, CoinBit];
 export type ThreeCoinSet = readonly [CoinBit, CoinBit, CoinBit];
 export type FourCoinSet = readonly [CoinBit, CoinBit, CoinBit, CoinBit];
 

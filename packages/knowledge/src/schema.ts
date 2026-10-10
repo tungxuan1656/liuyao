@@ -77,7 +77,10 @@ export type HexagramNumber =
 export type HexagramId = `hexagram-${HexagramNumber}`;
 export type KnowledgeEntityId = TrigramId | HexagramId;
 export type KnowledgeRecordId =
-  `term-${string}` | `rule-${string}` | `source-${string}` | `reference-${string}`;
+  | `term-${string}`
+  | `rule-${string}`
+  | `source-${string}`
+  | `reference-${string}`;
 export type KnowledgeId = KnowledgeEntityId | KnowledgeRecordId;
 
 export interface TrigramEntity {
@@ -162,7 +165,9 @@ export interface SourceReference {
   readonly sourceId: KnowledgeSource['id'];
   /** At least one target; each ID must name an entity, term, or rule in this catalog. */
   readonly targetIds: readonly (
-    KnowledgeEntity['id'] | KnowledgeTerm['id'] | KnowledgeRule['id']
+    | KnowledgeEntity['id']
+    | KnowledgeTerm['id']
+    | KnowledgeRule['id']
   )[];
   readonly location?: string;
 }

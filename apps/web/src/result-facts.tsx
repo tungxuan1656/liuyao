@@ -1,14 +1,15 @@
-import type { RefObject } from 'react';
-import { getSource, getRulesForFact, listSourceReferences } from '@liuyao/knowledge';
 import type { KnowledgeFactId } from '@liuyao/knowledge';
+import { getRulesForFact, getSource, listSourceReferences } from '@liuyao/knowledge';
+import type { RefObject } from 'react';
 import { Link } from 'react-router-dom';
-import { ROUTES } from './route-paths';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
+import { ROUTES } from './route-paths';
 
 type FactLibraryTarget =
-  { kind: 'hexagram'; id: `hexagram-${string}` } | { kind: 'trigram'; id: `trigram-${string}` };
+  | { kind: 'hexagram'; id: `hexagram-${string}` }
+  | { kind: 'trigram'; id: `trigram-${string}` };
 
 export type FactSelection = {
   id: KnowledgeFactId;

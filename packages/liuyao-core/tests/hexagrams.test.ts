@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import {
+  calculateHexagram,
   HEXAGRAM_IDS,
+  identifyHexagram,
   PALACE_IDS,
   TRIGRAM_IDS,
-  calculateHexagram,
-  identifyHexagram,
 } from '../src/index';
 import { HEXAGRAM_FIXTURES } from './hexagram-fixtures';
 

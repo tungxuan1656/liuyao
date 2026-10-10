@@ -100,10 +100,30 @@ export const PALACE_IDS = Object.freeze([
 export type PalaceId = (typeof PALACE_IDS)[number];
 
 export type HeavenlyStem =
-  'jia' | 'yi' | 'bing' | 'ding' | 'wu' | 'ji' | 'geng' | 'xin' | 'ren' | 'gui';
+  | 'jia'
+  | 'yi'
+  | 'bing'
+  | 'ding'
+  | 'wu'
+  | 'ji'
+  | 'geng'
+  | 'xin'
+  | 'ren'
+  | 'gui';
 
 export type EarthlyBranch =
-  'zi' | 'chou' | 'yin' | 'mao' | 'chen' | 'si' | 'wu' | 'wei' | 'shen' | 'you' | 'xu' | 'hai';
+  | 'zi'
+  | 'chou'
+  | 'yin'
+  | 'mao'
+  | 'chen'
+  | 'si'
+  | 'wu'
+  | 'wei'
+  | 'shen'
+  | 'you'
+  | 'xu'
+  | 'hai';
 
 export type FiveElement = 'wood' | 'fire' | 'earth' | 'metal' | 'water';
 export type SixRelative = 'sibling' | 'child' | 'wealth' | 'official-ghost' | 'parent';

@@ -31,6 +31,6 @@ Do not create future apps, packages, contracts, or service layers only to reserv
 ## Enforcement
 
 - Package tests protect deterministic behavior.
-- TypeScript and ESLint protect static contracts.
+- TypeScript and Biome protect static contracts.
 - `scripts/check_ts_length.sh` limits oversized TypeScript files.
 - `ARCHITECTURE.md` defines allowed and forbidden dependency direction.

@@ -1,7 +1,8 @@
-import { readFileSync, readdirSync } from 'node:fs';
-import { describe, it, expect } from 'vitest';
+import { readdirSync, readFileSync } from 'node:fs';
+import { describe, expect, it } from 'vitest';
 import validateRuntime from '../.generated/runtime/validate-record.ts';
 import { validateCorpus } from '../scripts/content-validation.mjs';
+
 const data = new URL('../data/', import.meta.url);
 function read(url) {
   return JSON.parse(readFileSync(url, 'utf8'));

@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest';
 import {
-  knowledgeCatalog,
   getHexagram,
   getKnowledgeEntity,
   getRule,
@@ -8,11 +7,12 @@ import {
   getSourceReference,
   getTerm,
   getTrigram,
+  knowledgeCatalog,
   listHexagrams,
   listKnowledgeEntities,
   listRules,
-  listSources,
   listSourceReferences,
+  listSources,
   listTerms,
   listTrigrams,
 } from '../src/catalog';
@@ -66,7 +66,7 @@ describe('knowledge catalog lookup', () => {
 
     expect(() => (knowledgeCatalog.entities as unknown as unknown[]).pop()).toThrow();
     expect(() =>
-      (knowledgeCatalog.entities[0]?.aliases as unknown as string[]).push('mutable'),
+      (knowledgeCatalog.entities[0]!.aliases as unknown as string[]).push('mutable'),
     ).toThrow();
     expect(() => Object.assign(knowledgeCatalog.entities[0]!, { name: 'changed' })).toThrow();
     expect(getTrigram('trigram-heaven')?.name).toBe('Càn');
