@@ -16,6 +16,14 @@ Append-only history for repository-local tracked features. Do not record no-feat
 
 <!-- Newest entry first. Add each new block directly below this note, above older blocks. Do not edit older blocks. -->
 
+## 2026-10-10 — feat-105 PR review follow-up completed
+
+**State**: feat-105 `done`; the four PR #130 review findings are closed inside the same feature scope.
+**Done**: Rewrote the agent execution gate so a review returns a supported defect with its smallest repair, a recorded source gap or uncertainty, or a block on the affected claim only — a missing, illegible or disputed passage no longer holds back a batch or demands an invented repair — and so a project convention records a specification path and section instead of a book page. Restricted `listed` to articles: `validateCorpus` rejects the flag on any other record type, closing the divergence between `listContent` and the compatibility catalog, and the schema plus `knowledge-model.md` state the limit. Extended the BPCT guard to require all 64 board numbers once each, ascending figure order per palace, labels in Hào 6 → Hào 1 order, and two boards pinned to values read from the supplied page. Added the reviewer-evidence requirement to `AGENTS.md`'s feature-done checklist, `.github/PULL_REQUEST_TEMPLATE.md` and gate rule 8.
+**Evidence**: `pnpm --filter @liuyao/knowledge test` reports 12 files / 107 tests (105 before), including the new non-article `listed` rejection and the two source-pinned boards; `./init.sh` passes every phase on the revision that carries them with a clean tree, and CI is green on the pushed revision. Board 49 (`Bát Thuần KHÔN`) and board 51 (`Đia Trạch LÂM`) rows were re-read from BPCT PDF 62 / printed page 51 rather than derived from the record.
+**Blockers**: none. Two boards are pinned to the source page instead of all 64; the remaining labels are protected by structure and order invariants only.
+**Next**: Owner re-reviews PR #130.
+
 ## 2026-10-10 — feat-105 ownership consolidation and agent gate
 
 **State**: feat-105 `done`; planned scope executed under Product Owner authorization ([Issue #128](https://github.com/tungxuan1656/liuyao/issues/128)).

@@ -89,6 +89,7 @@ A tracked feature is done only when:
 - [ ] Every acceptance criterion passes.
 - [ ] `./init.sh` passes.
 - [ ] The feature records verification evidence.
+- [ ] Knowledge changes record the reviewer's inspected scope, sources or pages, any remaining finding, and the verified revision.
 - [ ] The feature handoff records status, blockers, and the next action.
 - [ ] `progress.md` records the material result.
 

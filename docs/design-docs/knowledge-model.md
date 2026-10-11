@@ -34,7 +34,7 @@ Common fields:
 - type: trigram, hexagram, term, rule, or article.
 - title: Vietnamese display title.
 - status: draft or ready.
-- listed: optional flag; when false, ready content stays loadable by ID but is not a catalog entry.
+- listed: optional article flag; when false, a ready article stays loadable by ID but is not a catalog entry.
 - entries: coherent explanations with direct source references.
 - aliases, topicIds, and relatedIds: optional navigation and search fields.
 - links: optional targets for a particular line or named section.
@@ -101,7 +101,7 @@ The library loads the selected quẻ or article rather than importing every expl
 Package access keeps IDs and structured data reusable outside React.
 Missing IDs return an explicit unavailable result.
 Draft records do not appear in published lists, search, or payloads.
-Ready records with `listed: false` stay published and loadable by ID while listContent and local search omit them.
+Ready articles with `listed: false` stay published and loadable by ID while listContent and local search omit them. No other record type accepts the flag, so the metadata index, the compatibility catalog, and search cannot disagree about it.
 
 ## Generated files
 

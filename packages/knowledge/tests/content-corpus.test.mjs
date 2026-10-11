@@ -114,24 +114,62 @@ describe('authored corpus integration', () => {
     expect(positions).toBe(384);
   });
 
-  it('keeps each BPCT palace board as eight figures with six referenced labels', () => {
+  it('keeps all 64 BPCT palace boards once each, with labels ordered from Hào 6 to Hào 1', () => {
     const boards = records.filter(record => record.id.startsWith('article-bpct-boards-'));
     expect(boards).toHaveLength(8);
     const labelIds = ['label-1', 'label-2', 'label-3', 'label-4', 'label-5', 'label-6'];
     for (const board of boards) {
       expect(board.figures, board.id).toHaveLength(8);
+      const ids = board.figures.map(figure => figure.id);
+      expect(ids, board.id).toEqual([...ids].sort());
       for (const figure of board.figures) {
         expect(figure.id).toMatch(/^figure-bpct-board-\d{2}-board$/);
         expect(
           figure.labels.map(label => label.id),
           figure.id,
         ).toEqual(labelIds);
-        for (const label of figure.labels) {
-          expect(label.text.trim().length, label.id).toBeGreaterThan(0);
+        figure.labels.forEach((label, index) => {
+          expect(label.text, label.id).toMatch(new RegExp(`^Hào ${6 - index}: `));
           expect(label.references.length, label.id).toBeGreaterThan(0);
-        }
+        });
       }
     }
+    // Source order is top-down, so label-1 is Hào 6 and the figure number equals the board number.
+    const boardNumbers = boards
+      .flatMap(board => board.figures)
+      .map(figure => figure.id.slice('figure-bpct-board-'.length, -'-board'.length));
+    expect(boardNumbers.length).toBe(64);
+    expect([...boardNumbers].sort()).toEqual(
+      Array.from({ length: 64 }, (_, index) => String(index + 1).padStart(2, '0')),
+    );
+  });
+
+  it('keeps the independently checked labels of two BPCT palace boards', () => {
+    // Expected values read from BPCT PDF 62 (printed page 51): cung Khôn board 1 (Bát Thuần KHÔN)
+    // and board 3 (Đia Trạch LÂM). Do not re-derive them from the record under test.
+    const figureOf = board =>
+      records
+        .flatMap(record => record.figures ?? [])
+        .find(figure => figure.id === `figure-bpct-board-${board}-board`);
+    const labelsOf = board => figureOf(board)?.labels.map(label => label.text);
+    expect(figureOf('49')?.title).toBe('Bát Thuần KHÔN — hình nguồn');
+    expect(labelsOf('49')).toEqual([
+      'Hào 6: âm; Quí Dậu; Tử; Thế',
+      'Hào 5: âm; Quí Hợi; Tài',
+      'Hào 4: âm; Quí Sửu; Huynh',
+      'Hào 3: âm; Ất Mão; Quan; Ứng',
+      'Hào 2: âm; Ất Tị; Phụ',
+      'Hào 1: âm; Ất Mùi; Huynh',
+    ]);
+    expect(figureOf('51')?.title).toBe('Đia Trạch LÂM — hình nguồn');
+    expect(labelsOf('51')).toEqual([
+      'Hào 6: âm; Quí Dậu; Tử',
+      'Hào 5: âm; Quí Hợi; Tài; Ứng',
+      'Hào 4: âm; Quí Sửu; Huynh',
+      'Hào 3: âm; Đinh Sửu; Huynh',
+      'Hào 2: dương; Đinh Mão; Quan; Thế',
+      'Hào 1: dương; Đinh Tị; Phụ',
+    ]);
   });
 
   it('keeps the independently checked Chu Hy Đại Quá Thượng Lục locator on NTT PDF 482', () => {
