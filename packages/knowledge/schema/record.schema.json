@@ -16,6 +16,10 @@
     "status": {
       "enum": ["draft", "ready"]
     },
+    "listed": {
+      "type": "boolean",
+      "description": "Articles only. When false, a ready article stays loadable by ID without being listed as a catalog entry."
+    },
     "aliases": {
       "type": "array",
       "items": {

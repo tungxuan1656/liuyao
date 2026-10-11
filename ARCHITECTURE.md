@@ -95,4 +95,5 @@ The supplied PDFs are research inputs outside the runtime flow. They stay local 
 - Domain derivations → `docs/design-docs/liuyao-ruleset-v1.md`
 - Knowledge storage → `docs/design-docs/knowledge-model.md`
 - Development and verification → `docs/development.md`
+- Documentation map, historical material and local sources → `docs/index.md`
 - Agent operating contract → `AGENTS.md`

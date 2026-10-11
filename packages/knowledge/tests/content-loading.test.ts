@@ -22,6 +22,20 @@ describe('selected content loading', () => {
     ).toBe(true);
     expect(getContentMetadata('missing')).toBeUndefined();
   });
+  it('keeps unlisted records loadable by ID without listing them as catalog entries', async () => {
+    const listed = listContent({ type: 'article' }).map(item => item.id);
+    for (const id of [
+      'article-ntt-cover',
+      'article-ntt-title',
+      'article-ntt-intro-index',
+      'article-pbc-contents',
+      'article-nhl-front-end-accounting',
+    ]) {
+      expect(getContentMetadata(id)?.listed).toBe(false);
+      expect(listed).not.toContain(id);
+      expect(await loadContent(id)).toBeTruthy();
+    }
+  });
   it('loads one selected asset, shares pending work, and freezes content', async () => {
     const record = await loadContent('hexagram-01');
     const reader = vi.fn(async (_metadata: unknown) => record);

@@ -26,6 +26,7 @@ export function listContent(filters: ContentFilters = {}): readonly ContentMetad
   const query = normalizeKnowledgeQuery(rawQuery);
   const candidates = metadata.filter(
     record =>
+      record.listed !== false &&
       (!filters.type || record.type === filters.type) &&
       (!filters.topicId || record.topicIds.includes(filters.topicId)) &&
       (!filters.sourceId || record.sourceIds.includes(filters.sourceId)),

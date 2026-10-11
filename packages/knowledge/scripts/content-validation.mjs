@@ -49,6 +49,8 @@ export function validateCorpus(records, sources, { repositoryRoot } = {}) {
   }
   for (const record of records) {
     if (!validate(record)) fail(`${record.id}: ${JSON.stringify(validate.errors.slice(0, 4))}`);
+    if (record.listed !== undefined && record.type !== 'article')
+      fail(`${record.id}: listed is only supported on article records`);
     if (byId.has(record.id)) fail(`Duplicate record ${record.id}`);
     byId.set(record.id, record);
     const ids = anchorIdsOf(record);

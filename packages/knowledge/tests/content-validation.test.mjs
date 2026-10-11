@@ -127,6 +127,13 @@ describe('simple content validation', () => {
         return [r];
       },
     ],
+    [
+      'listed on a non-article record',
+      r => {
+        const term = { ...r, id: 'term-test', type: 'term', listed: false };
+        return [term];
+      },
+    ],
   ])('rejects %s', (_name, change) =>
     expect(() => validateCorpus(change(article()), sources)).toThrow(),
   );

@@ -11,6 +11,7 @@ LiuYao is a pnpm monorepo for an offline-first Liu Yao PWA. Keep deterministic d
 - Knowledge evidence and supplied books → `docs/product-specs/knowledge-quality.md`
 - Knowledge delivery sequence → `features/knowledge-roadmap.md`
 - Development and verification → `docs/development.md`
+- Documentation map, historical material and local sources → `docs/index.md`
 - Licensing boundaries → `LICENSING.md`
 - Feature state → `feature_index.json`
 - Session continuity → `progress.md`
@@ -88,6 +89,7 @@ A tracked feature is done only when:
 - [ ] Every acceptance criterion passes.
 - [ ] `./init.sh` passes.
 - [ ] The feature records verification evidence.
+- [ ] Knowledge changes record the reviewer's inspected scope, sources or pages, any remaining finding, and the verified revision.
 - [ ] The feature handoff records status, blockers, and the next action.
 - [ ] `progress.md` records the material result.
 

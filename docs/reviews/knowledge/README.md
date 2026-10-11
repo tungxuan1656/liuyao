@@ -14,9 +14,19 @@ git show f610f5957407a1f784277c4e609dc8540085df44:packages/knowledge/reports/aud
 ```
 
 Its `complete: false`, closed source-review gate and closed certification gate described the **retired**
-claim-ledger/certification system, **not** the current JSON corpus publication state. Other retained
-files under `packages/knowledge/reports/` are likewise historical and must not be used as release gates.
-Current validation and publishing use the simplified source-backed record model and the quality contract.
+claim-ledger/certification system, **not** the current JSON corpus publication state. Current validation
+and publishing use the simplified source-backed record model and the quality contract.
+
+The remaining reports `authoring-crosswalk.json` (3.75 MB) and `coverage.json` (88 KB) left the active
+tree for the same reason: no script, test, build, or documentation link consumed them as input. They
+remain recoverable from Git:
+
+```sh
+git show 9b5ea2b:packages/knowledge/reports/authoring-crosswalk.json
+git show 9b5ea2b:packages/knowledge/reports/coverage.json
+```
+
+`packages/knowledge/reports/` now holds no active file. Do not recreate an accounting or coverage report.
 
 Recover an earlier file with git show <revision>:<path> when a specific source observation is useful.
 Put the useful fact into its canonical record with a direct book/page reference.
