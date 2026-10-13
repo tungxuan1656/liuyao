@@ -67,7 +67,7 @@ Biome 2.5.15 checks JavaScript, TypeScript, JSON, CSS, and experimental HTML. It
 
 Shadcn components in `apps/web/src/components/ui/**` use the same Biome formatting, lint, and import organization as other source files. Keep accessibility exceptions local, with explained suppressions for composed groups, pointer-only input-focus shortcuts, and caller-supplied label associations.
 
-`init.sh` applies safe lint fixes, including type-only imports in shadcn components. After registry updates, run Biome and review changes. Retain explained suppressions and the local `field.tsx` strict equality and deduplicated-message key fixes.
+`init.sh` checks source files without fixing them. After registry updates, run the formatter or safe Biome fixes explicitly and review changes. Retain explained suppressions and the local `field.tsx` strict equality and deduplicated-message key fixes.
 
 HTML support is experimental; review changes to `apps/web/index.html` and verify the web build after Biome upgrades. Prettier ignores generated assets, local books, agent tooling, and the lockfile.
 
@@ -79,15 +79,21 @@ HTML support is experimental; review changes to `apps/web/index.html` and verify
 
 ## Agent harness
 
-`./init.sh` is the agent-facing full workflow. It uses repository-supported fixers first, then runs independent verification with bounded parallelism.
+`./init.sh` is the agent-facing full source-check workflow. It resolves the repository directory and runs explicit checks sequentially, stopping at the first failure with its exit code.
 
 It performs:
 
-1. Biome format write and Prettier Markdown/YAML format write.
-2. Biome lint fix and TypeScript length checks.
-3. Type-check, build, and package tests.
+1. `pnpm format:check`.
+2. `pnpm lint`.
+3. `bash scripts/check_ts_length.sh`.
+4. `pnpm typecheck`.
+5. `pnpm build`.
+6. `pnpm --dir apps/web run check:package-exports`.
+7. `pnpm test`, including test-placement enforcement.
 
-The script does not install dependencies. Run `pnpm install` separately when the workspace is not bootstrapped.
+The script does not fix source, install dependencies, generate command scripts, or schedule jobs. Build, type-check, and test tools can refresh ignored outputs. Run `pnpm install` separately when the workspace is not bootstrapped.
+
+Execution state belongs to the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) holds links only; legacy feature/index/progress records are [frozen history](../features/README.md). Use relevant focused checks for bounded changes; run the full workflow before merging.
 
 ## Full verification
 
@@ -106,4 +112,4 @@ Use pnpm --filter @liuyao/knowledge validate:corpus --check to check output fres
 Use --check-books separately to identify the local supplied PDF editions; no audit or certification gate runs.
 The [data guide](../packages/knowledge/data/README.md) defines the source-review workflow.
 
-CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the harness orchestration and prevents fixers from hiding tracked or untracked repository drift.
+CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the same check-only workflow and detects tracked or untracked repository drift; ignored generated outputs are outside that clean-tree check.

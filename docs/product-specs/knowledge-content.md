@@ -59,5 +59,5 @@ Do not invent an explanation to fill a count. Missing source material does not b
 - Source-derived tables and examples agree with the inspected evidence.
 - [Publication checks](knowledge-quality.md#publication-gate) pass.
 
-[The roadmap](../../features/knowledge-roadmap.md) owns execution order.
+[The roadmap](../../tasks/knowledge-roadmap.md) owns execution order.
 Feature records track unfinished work. Git records revisions; content does not carry audit history.
