@@ -28,7 +28,7 @@ All current runtime behavior is local to the browser. The repository has no back
 | `packages/knowledge/data` | Curated knowledge content and source material                                    | Application behavior                                                     |
 | `docs/`                   | Durable product and engineering truth                                            | Volatile execution state                                                 |
 | `tasks/`                  | Task-local execution state, roadmap navigation, and handoff                      | Durable architecture or product rules                                    |
-| `scripts/`, `init.sh`     | Mechanical repository verification                                               | Domain behavior                                                          |
+| `scripts/`, `init.sh`     | Mechanical repository tooling and verification                                   | Domain behavior                                                          |
 
 ## Dependency direction
 

@@ -24,12 +24,13 @@ Read only the documents relevant to the current task.
 - Link a separate plan only for necessary sequencing, coordination, recovery, or high-impact controls; file count is not a threshold.
 - Reuse an approved task or adequate external tracker; do not duplicate tracker state.
 - Local tasks own status, owner, start dependencies, integration gates, acceptance, evidence, blockers, and next action.
-- `tasks/index.md` contains navigation only. Never mirror task status into an index or root progress log.
+- `tasks/index.md` is a generated navigation/readiness view, not editable tracker state. Never update its rows by hand.
+- After changing tasks, run `pnpm tasks:index`; `pnpm tasks:check` checks freshness and readiness self-checks. See `docs/development.md` for the metadata contract.
 - Use `todo`, `active`, `blocked`, or `done`. Start work only after user approval and required start dependencies are complete.
 - Independent tasks can be active concurrently. Agree file ownership or integration order before overlapping edits; task records are not locks.
 - Inspect the working tree, read the selected task and its canonical sources, then run relevant baseline checks before implementation.
 - Keep bounded plans inline. Retain existing linked plan paths when useful; current task state and canonical policy override historical instructions.
-- At handoff, update only the selected task or tracker with actual evidence, blockers, and one concrete next action.
+- At handoff, update the selected task or tracker with actual evidence, blockers, and one concrete next action; regenerate the index when task inputs change.
 - Mark done only when acceptance and relevant checks pass. Knowledge evidence includes the reviewer's inspected scope, sources/pages, remaining findings, and verified revision.
 - `features/`, `feature_index.json`, and `progress.md` are frozen pre-v2 history, not live instructions or writable state.
 

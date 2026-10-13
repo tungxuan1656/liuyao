@@ -34,7 +34,7 @@ This file routes repository documentation. Each durable fact has one canonical o
 | You deploy or release production         | `docs/release.md`                          | Environments, deploy, rollback, smoke test |
 | You add knowledge content                | `LICENSING.md`                             | Licensing boundary                         |
 
-Execution status does not live in `docs/`. Use the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) owns links only; each task owns status, dependencies, evidence, and handoff.
+Execution status does not live in `docs/`. Use the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) is a generated status/dependency and start-candidate view; each task remains the source of truth for status, dependencies, evidence, and handoff.
 
 ## Historical and local material
 

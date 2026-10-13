@@ -19,6 +19,7 @@ run_check() {
 }
 
 run_check "format" pnpm format:check
+run_check "task index" pnpm tasks:check
 run_check "lint" pnpm lint
 run_check "TypeScript length" bash scripts/check_ts_length.sh
 run_check "typecheck" pnpm typecheck

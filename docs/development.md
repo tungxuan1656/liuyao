@@ -55,6 +55,8 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | `pnpm lint`                                               | Repository Biome checks                                 |
 | `pnpm format`                                             | Write Biome + Markdown/YAML formatting                  |
 | `pnpm format:check`                                       | Check Biome + Markdown/YAML formatting                  |
+| `pnpm tasks:index`                                        | Regenerate task navigation and start candidates         |
+| `pnpm tasks:check`                                        | Task-index self-checks and read-only freshness check    |
 | `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
 | `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
 | `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
@@ -84,16 +86,28 @@ HTML support is experimental; review changes to `apps/web/index.html` and verify
 It performs:
 
 1. `pnpm format:check`.
-2. `pnpm lint`.
-3. `bash scripts/check_ts_length.sh`.
-4. `pnpm typecheck`.
-5. `pnpm build`.
-6. `pnpm --dir apps/web run check:package-exports`.
-7. `pnpm test`, including test-placement enforcement.
+2. `pnpm tasks:check`, including task-index self-checks and freshness.
+3. `pnpm lint`.
+4. `bash scripts/check_ts_length.sh`.
+5. `pnpm typecheck`.
+6. `pnpm build`.
+7. `pnpm --dir apps/web run check:package-exports`.
+8. `pnpm test`, including test-placement enforcement.
 
 The script does not fix source, install dependencies, generate command scripts, or schedule jobs. Build, type-check, and test tools can refresh ignored outputs. Run `pnpm install` separately when the workspace is not bootstrapped.
 
-Execution state belongs to the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) holds links only; legacy feature/index/progress records are [frozen history](../features/README.md). Use relevant focused checks for bounded changes; run the full workflow before merging.
+Execution state belongs to the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) is a generated view, never a second editable tracker. Legacy feature/index/progress records are [frozen history](../features/README.md). Use relevant focused checks for bounded changes; run the full workflow before merging.
+
+### Task index
+
+`scripts/task-index.mjs` reads `tasks/task-*.md` and renders `tasks/index.md`. After changing task inputs, run `pnpm tasks:index`. Verification uses `pnpm tasks:check` without rewriting the index.
+
+- Use `# ID - Title`, one `- Status: todo|active|blocked|done` line, and one `- Required to start:` line before the first section.
+- Start dependencies are Markdown links to sibling task files, or `none`. Other prose is an unassessed manual start gate.
+- Record current blockers as `- Blockers:` directly under `## Handoff`, before historical subsections. `none` means assessed and clear; missing or unassessed blockers require review.
+- Start candidates have `todo` status and all start dependencies `done`, with no explicit blocker or manual gate. Unassessed blockers are labelled `review blockers`, not cleared automatically.
+- Readiness grants no approval or priority. Integration/release gates do not prevent starting; they remain in each task.
+- Generation fails on invalid status, duplicate IDs, missing metadata, unknown dependencies, or self-dependencies. Tool self-checks use small in-script fixtures, not domain/package test suites.
 
 ## Full verification
 
@@ -101,6 +115,7 @@ Verification before merging:
 
 ```bash
 pnpm format:check
+pnpm tasks:check
 pnpm lint
 pnpm typecheck
 pnpm test
