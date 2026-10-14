@@ -1,5 +1,5 @@
-import type { ContentHexagram, ContentRecord } from '@liuyao/knowledge';
-import { resolveReadingReferenceContext } from '@liuyao/knowledge';
+import type { ContentHexagram, ContentRecord, KnowledgeFactId } from '@liuyao/knowledge';
+import { getRulesForFact, resolveReadingReferenceContext } from '@liuyao/knowledge';
 import { type RefObject, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
@@ -8,7 +8,11 @@ import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
 import { loadContentRecord } from './knowledge-content';
 import { KnowledgeEntries } from './knowledge-entries';
-import type { FactSelection, HexagramKnowledgeContext } from './result-facts';
+import {
+  FactRulesContent,
+  type FactSelection,
+  type HexagramKnowledgeContext,
+} from './result-facts';
 import { ROUTES } from './route-paths';
 
 function getYaoName(value?: number) {
@@ -87,6 +91,9 @@ export function ResultKnowledgeInspector({
       : undefined;
   const currentSpecial =
     record && specialIndex !== undefined ? record.specialPassages?.[specialIndex] : undefined;
+
+  const isCalculatedFact = fact.id !== 'context.hexagram' && fact.id !== 'context.line';
+  const rules = isCalculatedFact ? getRulesForFact(fact.id as KnowledgeFactId) : [];
 
   const resolvedContext = resolveReadingReferenceContext({
     contextType: context.contextType,
@@ -237,6 +244,17 @@ export function ResultKnowledgeInspector({
           >
             Xem trong thư viện
           </Button>
+
+          {isCalculatedFact && rules.length > 0 && (
+            <details className="group flex flex-col gap-3 rounded-lg border p-3.5 text-sm">
+              <summary className="cursor-pointer font-medium select-none text-foreground hover:underline">
+                Quy tắc tính & nguồn tham khảo ({rules.length})
+              </summary>
+              <div className="mt-2">
+                <FactRulesContent factId={fact.id as KnowledgeFactId} />
+              </div>
+            </details>
+          )}
         </div>
       )}
     </section>

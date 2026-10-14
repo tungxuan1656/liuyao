@@ -57,6 +57,20 @@ export function ResultView() {
     requestAnimationFrame(() => returnFocus.current?.focus());
   };
 
+  useEffect(() => {
+    if (!selectedFact || compact) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeInspector();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedFact, compact]);
+
   if (!reading)
     return (
       <main className="route-page">
