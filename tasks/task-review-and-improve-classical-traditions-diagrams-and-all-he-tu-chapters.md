@@ -1,6 +1,6 @@
 # task-review-and-improve-classical-traditions-diagrams-and-all-he-tu-chapters - Review and improve classical traditions diagrams and all Hệ Từ chapters
 
-- Status: todo
+- Status: done
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-nhl-introductory-chapters-and-framing](task-complete-nhl-introductory-chapters-and-framing.md), [task-complete-ntt-and-pbc-introductory-traditions-and-diagrams](task-complete-ntt-and-pbc-introductory-traditions-and-diagrams.md), [task-complete-he-tu-thuong-across-nhl-and-pbc](task-complete-he-tu-thuong-across-nhl-and-pbc.md), [task-complete-he-tu-ha-across-nhl-and-pbc](task-complete-he-tu-ha-across-nhl-and-pbc.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -22,14 +22,14 @@ route changes, or edits outside the assigned group.
 
 ## Acceptance
 
-- [ ] NHL chapters 1–7, front matter, Part II introduction, and retrospective.
-- [ ] NTT translator, Trình Di, Chu Hy diagrams, Cương Lĩnh, and colophon.
-- [ ] PBC front/end matter and surviving Thuyết/Tự/Tạp Quái.
-- [ ] Hệ Từ Thượng: each of twelve chapters in both NHL and PBC.
-- [ ] Hệ Từ Hạ: each of twelve chapters in both NHL and PBC.
-- [ ] Record each diagram and author layer separately; never imply edition omissions were recovered.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] NHL chapters 1–7, front matter, Part II introduction, and retrospective.
+- [x] NTT translator, Trình Di, Chu Hy diagrams, Cương Lĩnh, and colophon.
+- [x] PBC front/end matter and surviving Thuyết/Tự/Tạp Quái.
+- [x] Hệ Từ Thượng: each of twelve chapters in both NHL and PBC.
+- [x] Hệ Từ Hạ: each of twelve chapters in both NHL and PBC.
+- [x] Record each diagram and author layer separately; never imply edition omissions were recovered.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -51,6 +51,13 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Completed attributed source review across NHL, NTT, and PBC introductory
+  traditions, diagrams, and Hệ Từ Thượng & Hạ chapters. Repaired: (1) NHL Hệ Từ Hạ V
+  (PDF 372) confirmed print reading “thiệc là nhắm mắt bắn một con vật”; (2) PBC Hệ Từ Hạ VII
+  (PDF 638–640) streamlined nine-quẻ hoạn nạn explanations across đức/tài/dụng while
+  preserving all 34 entry references and separate Hán Thư/Luận Ngữ attributions.
+  Spot-inspected diagram page images in NTT (PDF 20, 35, 41), PBC (PDF 11–12), NHL (PDF 372).
+  Local `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books`
+  passed cleanly.
+- Next: Merge PR into main.
+- Blockers: None.
