@@ -202,6 +202,33 @@ describe('task-author-ordered-lessons-and-reviewed-worked-examples independently
     },
   );
 
+  it('retains the inspected BPCT hidden-spirit note and NHL all-moving Càn exception', () => {
+    const boardLesson = lesson('lesson-liuyao-board');
+    const palaceBlock = boardLesson.entries.find(block => block.id === 'palaces-markers');
+    const naJiaBlock = boardLesson.entries.find(block => block.id === 'na-jia');
+    assert(palaceBlock !== undefined && naJiaBlock !== undefined);
+    expect(palaceBlock.text).toContain('1–4, 2–5, 3–6');
+    expect(naJiaBlock.text).toContain('Mậu Dần, Mậu Thìn, Mậu Ngọ');
+    expect(naJiaBlock.text).toContain('Nhâm Ngọ, Nhâm Thân, Nhâm Tuất');
+
+    const worked = lesson('lesson-worked-readings');
+    const tung = worked.entries.find(block => block.id === 'tung-to-ly');
+    const staticCan = worked.entries.find(block => block.id === 'static-can');
+    const movingCan = worked.entries.find(block => block.id === 'all-moving-can');
+    assert(tung !== undefined && staticCan !== undefined && movingCan !== undefined);
+    expect(tung.text).toContain('Phục thần Quan Quỷ Hợi Thủy');
+    expect(tung.text).toContain('hào 3 Mậu Ngọ');
+    expect(tung.references).toContainEqual(
+      expect.objectContaining({ sourceId: 'source-book-bpct', pdfPages: [61, 61] }),
+    );
+    expect(staticCan.text).toContain('Kim sinh hành Thủy');
+    expect(movingCan.text).toContain('Dụng cửu');
+    expect(movingCan.references).toContainEqual(
+      expect.objectContaining({ sourceId: 'source-book-nhl', pdfPages: [134, 135] }),
+    );
+    expect(movingCan.links).toContainEqual({ recordId: 'hexagram-01' });
+  });
+
   it('keeps the single moving-line case anchored to the existing NHL expected transformation', () => {
     const example = fixture.examples.find(example => example.id === 'tung-to-ly');
     assert(example !== undefined);
