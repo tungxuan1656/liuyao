@@ -6,7 +6,7 @@
   "status": "ready",
   "entries": [
     {
-      "text": "Board 1 cung Càn; tên in Bát Thuần CÀN; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
+      "text": "Board 1 cung Càn; tên in Bát Thuần CÀN; thuộc hành Kim.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 6: dương; Nhâm Tuất; Phụ; Thế. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 6: dương; Nhâm Tuất; Phụ; Thế.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -38,7 +38,7 @@
       }
     },
     {
-      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 5: dương; Nhâm Thân; Huynh. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 5: dương; Nhâm Thân; Huynh.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 4: dương; Nhâm Ngọ; Quan. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 4: dương; Nhâm Ngọ; Quan.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -70,7 +70,7 @@
       }
     },
     {
-      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 3: dương; Giáp Thìn; Phụ; Ứng. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 3: dương; Giáp Thìn; Phụ; Ứng.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -86,7 +86,7 @@
       }
     },
     {
-      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 2: dương; Giáp Dàn; Tài. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 2: dương; Giáp Dàn; Tài.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -102,7 +102,7 @@
       }
     },
     {
-      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 1: dương; Giáp Tí; Tử. Nhãn và chữ chi này là dữ kiện quan sát nguồn, không hiệu chỉnh bằng quan hệ chung.",
+      "text": "Ở board Bát Thuần CÀN, ảnh nguồn cho Hào 1: dương; Giáp Tí; Tử.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -173,6 +173,18 @@
           "pdfPages": [49, 49],
           "section": "bpct-ch04-intro — framing",
           "printedPages": ["38", "38"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [14, 14],
+          "section": "XIII — An Thế Ứng quyết",
+          "printedPages": ["8", "8"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [15, 15],
+          "section": "XV — An nguyệt Quái thân quyết; ví dụ Thiên Địa Bỉ",
+          "printedPages": ["9", "9"]
         }
       ],
       "attribution": {
@@ -181,7 +193,7 @@
       }
     },
     {
-      "text": "Hình Bát Thuần CÀN: không có nhãn Phục; không có nhãn Quái thân; Thế in tại 6; Ứng in tại 3. Không suy thêm marker hay lớp chú không in.\n\nHình Thiên Phong CẤU: Phục in ở 2: Tài - Dần; không có nhãn Quái thân; Thế in tại 1; Ứng in tại 4. Không suy thêm marker hay lớp chú không in.\n\nHình Thiên Sơn ĐỘN: Phục in ở 2: Tài Dần; 1: Tử Tí; không có nhãn Quái thân; Thế in tại 2; Ứng in tại 5. Không suy thêm marker hay lớp chú không in.\n\nHình Thiên địa BỈ: Phục in ở 1: Tử Tí; Quái thân in ở hào 5; Thế in tại 3; Ứng in tại 6. Không suy thêm marker hay lớp chú không in.\n\nHình Phong Địa QUAN: Phục in ở 5: Huynh Thân; 1: Tử Tí; không có nhãn Quái thân; Thế in tại 4; Ứng in tại không có vị trí. Không suy thêm marker hay lớp chú không in.\n\nHình Sơn Địa BÁC: Phục in ở 5: Huynh Thân; Quái thân in ở hào 4; Thế in tại 5; Ứng in tại 2. Không suy thêm marker hay lớp chú không in.\n\nHình Hoả Địa TẤN: Phục in ở 1: Tử Tí; Quái thân in ở hào 4; Thế in tại 4; Ứng in tại 1. Không suy thêm marker hay lớp chú không in.\n\nHình Hoả Thiên ĐẠI HỮU: không có nhãn Phục; Quái thân in ở hào 2; Thế in tại 6; Ứng in tại 3. Không suy thêm marker hay lớp chú không in.",
+      "text": "Hình Bát Thuần CÀN: không có nhãn Phục; không có nhãn Quái thân; Thế in tại 6; Ứng in tại 3.\n\nHình Thiên Phong CẤU: Phục in ở 2: Tài - Dần; không có nhãn Quái thân; Thế in tại 1; Ứng in tại 4.\n\nHình Thiên Sơn ĐỘN: Phục in ở 2: Tài Dần; 1: Tử Tí; không có nhãn Quái thân; Thế in tại 2; Ứng in tại 5.\n\nHình Thiên địa BỈ: Phục in ở 1: Tử Tí; Quái thân in ở hào 5; Thế in tại 3; Ứng in tại 6.\n\nHình Phong Địa QUAN: Phục in ở 5: Huynh Thân; 1: Tử Tí; không có nhãn Quái thân; Thế in tại 4; Ứng in tại không có vị trí.\n\nHình Sơn Địa BÁC: Phục in ở 5: Huynh Thân; Quái thân in ở hào 4; Thế in tại 5; Ứng in tại 2.\n\nHình Hoả Địa TẤN: Phục in ở 1: Tử Tí; Quái thân in ở hào 4; Thế in tại 4; Ứng in tại 1.\n\nHình Hoả Thiên ĐẠI HỮU: không có nhãn Phục; Quái thân in ở hào 2; Thế in tại 6; Ứng in tại 3.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -238,7 +250,7 @@
       }
     },
     {
-      "text": "Board 2 cung Càn; tên in Thiên Phong CẤU; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 3 cung Càn; tên in Thiên Sơn ĐỘN; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 4 cung Càn; tên in Thiên địa BỈ; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 5 cung Càn; tên in Phong Địa QUAN; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 6 cung Càn; tên in Sơn Địa BÁC; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 7 cung Càn; tên in Hoả Địa TẤN; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.\n\nBoard 8 cung Càn; tên in Hoả Thiên ĐẠI HỮU; thuộc hành Kim. Sáu vạch được mô tả riêng theo ảnh nguồn, không thay bảng đã duyệt.",
+      "text": "Board 2 cung Càn; tên in Thiên Phong CẤU; thuộc hành Kim.\n\nBoard 3 cung Càn; tên in Thiên Sơn ĐỘN; thuộc hành Kim.\n\nBoard 4 cung Càn; tên in Thiên địa BỈ; thuộc hành Kim.\n\nBoard 5 cung Càn; tên in Phong Địa QUAN; thuộc hành Kim.\n\nBoard 6 cung Càn; tên in Sơn Địa BÁC; thuộc hành Kim.\n\nBoard 7 cung Càn; tên in Hoả Địa TẤN; thuộc hành Kim.\n\nBoard 8 cung Càn; tên in Hoả Thiên ĐẠI HỮU; thuộc hành Kim.",
       "references": [
         {
           "sourceId": "source-book-bpct",
@@ -369,7 +381,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -551,7 +563,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -733,7 +745,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -915,7 +927,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -1097,7 +1109,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -1279,7 +1291,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -1461,7 +1473,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",
@@ -1643,7 +1655,7 @@
         }
       ],
       "orientation": {
-        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm. Vị trí domain vẫn được ghi bằng số 1–6, không hoán vị nhãn nguồn.",
+        "description": "Sáu nhãn theo thứ tự nguồn lục xuống sơ; liền là dương, đứt là âm.",
         "references": [
           {
             "sourceId": "source-book-bpct",

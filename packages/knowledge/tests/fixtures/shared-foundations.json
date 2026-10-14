@@ -1,0 +1,48 @@
+{
+  "sourceId": "source-book-bpct",
+  "pdfPages": [8, 15],
+  "basis": "Hand-transcribed from BPCT II–V, IX, XII–XIV; trigram images on PDF 10–11 and Na Jia on PDF 13 inspected. Arrays run bottom to top. The 25 relative cells apply the general rule on PDF 9, not its erroneous Wood/Quan quỷ example.",
+  "trigrams": {
+    "heaven": ["yang", "yang", "yang"],
+    "lake": ["yang", "yang", "yin"],
+    "fire": ["yang", "yin", "yang"],
+    "thunder": ["yang", "yin", "yin"],
+    "wind": ["yin", "yang", "yang"],
+    "water": ["yin", "yang", "yin"],
+    "mountain": ["yin", "yin", "yang"],
+    "earth": ["yin", "yin", "yin"]
+  },
+  "naJia": {
+    "heaven": ["jia/zi", "jia/yin", "jia/chen", "ren/wu", "ren/shen", "ren/xu"],
+    "water": ["wu/yin", "wu/chen", "wu/wu", "wu/shen", "wu/xu", "wu/zi"],
+    "mountain": ["bing/chen", "bing/wu", "bing/shen", "bing/xu", "bing/zi", "bing/yin"],
+    "thunder": ["geng/zi", "geng/yin", "geng/chen", "geng/wu", "geng/shen", "geng/xu"],
+    "wind": ["xin/chou", "xin/hai", "xin/you", "xin/wei", "xin/si", "xin/mao"],
+    "fire": ["ji/mao", "ji/chou", "ji/hai", "ji/you", "ji/wei", "ji/si"],
+    "earth": ["yi/wei", "yi/si", "yi/mao", "gui/chou", "gui/hai", "gui/you"],
+    "lake": ["ding/si", "ding/mao", "ding/chou", "ding/hai", "ding/you", "ding/wei"]
+  },
+  "branchElements": {
+    "zi": "water",
+    "chou": "earth",
+    "yin": "wood",
+    "mao": "wood",
+    "chen": "earth",
+    "si": "fire",
+    "wu": "fire",
+    "wei": "earth",
+    "shen": "metal",
+    "you": "metal",
+    "xu": "earth",
+    "hai": "water"
+  },
+  "elements": ["wood", "fire", "earth", "metal", "water"],
+  "relativesByPalace": {
+    "wood": ["sibling", "child", "wealth", "official-ghost", "parent"],
+    "fire": ["parent", "sibling", "child", "wealth", "official-ghost"],
+    "earth": ["official-ghost", "parent", "sibling", "child", "wealth"],
+    "metal": ["wealth", "official-ghost", "parent", "sibling", "child"],
+    "water": ["child", "wealth", "official-ghost", "parent", "sibling"]
+  },
+  "markers": [[6, 3], [1, 4], [2, 5], [3, 6], [4, 1], [5, 2], [4, 1], [3, 6]]
+}
