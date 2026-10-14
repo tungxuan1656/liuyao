@@ -9,11 +9,12 @@ import { KnowledgeEntries, KnowledgeReferences } from './knowledge-entries';
 import { KnowledgeTables } from './knowledge-tables';
 import { ROUTES } from './route-paths';
 
-const load = createContentLoader(async item => {
+export const loadContentRecord = createContentLoader(async item => {
   const response = await fetch(import.meta.env.BASE_URL + item.asset);
   if (!response.ok) throw new Error('Knowledge unavailable');
   return response.json();
 });
+const load = loadContentRecord;
 function ContentSection({
   title,
   entries,

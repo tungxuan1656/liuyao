@@ -58,11 +58,11 @@ V1 renders facts and rules. V1 does not generate interpretations.
 
 When a fact has an explanation, link it to a stable rule or knowledge entity ID.
 
-## Intended book-reference contexts
+## Book-reference contexts
 
 Result → select primary/changed quẻ → overview → select hào → attributed explanation → canonical Library detail.
 
-This flow is planned. Current fact inspectors do not render complete quẻ or hào commentary.
+This flow connects calculated reading results to contextual book-backed commentary in `@liuyao/knowledge`.
 
 - Identify a quẻ context with its displayed stable ID.
 - For a hào context, add its domain position, numbered 1–6.

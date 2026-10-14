@@ -1,21 +1,36 @@
-import type { KnowledgeFactId } from '@liuyao/knowledge';
+import type { HexagramId, KnowledgeFactId } from '@liuyao/knowledge';
 import { getRulesForFact, getSource, listSourceReferences } from '@liuyao/knowledge';
 import type { RefObject } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
+import { ResultKnowledgeInspector } from './result-knowledge-inspector';
 import { ROUTES } from './route-paths';
 
 type FactLibraryTarget =
   | { kind: 'hexagram'; id: `hexagram-${string}` }
   | { kind: 'trigram'; id: `trigram-${string}` };
 
+export type HexagramKnowledgeContext = {
+  contextType: 'primary' | 'changed';
+  hexagramId: HexagramId;
+  position?: number;
+  lines?: readonly {
+    position: number;
+    polarity: 'yin' | 'yang';
+    changing: boolean;
+    inputValue: number;
+  }[];
+  selectionToken?: number;
+};
+
 export type FactSelection = {
-  id: KnowledgeFactId;
+  id: KnowledgeFactId | 'context.hexagram' | 'context.line';
   label: string;
   value: string;
   libraryTarget?: FactLibraryTarget;
+  context?: HexagramKnowledgeContext;
 };
 
 export function FactButton({
@@ -43,6 +58,96 @@ export function FactButton({
   );
 }
 
+export function FactRulesContent({ factId }: { factId: KnowledgeFactId }) {
+  const rules = getRulesForFact(factId);
+  const references = listSourceReferences().filter(reference =>
+    rules.some(rule => reference.targetIds.includes(rule.id)),
+  );
+
+  if (rules.length === 0) return null;
+
+  return (
+    <div className="flex flex-col gap-4">
+      <section className="flex flex-col gap-2">
+        <h4 className="font-semibold text-xs tracking-wider uppercase text-muted-foreground">
+          Quy tắc
+        </h4>
+        <div className="flex flex-col divide-y">
+          {rules.map(rule => (
+            <article key={rule.id} className="flex flex-col gap-1.5 py-2.5 first:pt-0 last:pb-0">
+              <h5 className="font-medium text-foreground">{rule.title}</h5>
+              <p className="text-muted-foreground">{rule.explanation}</p>
+              <Button
+                variant="link"
+                size="sm"
+                className="h-auto p-0 text-left font-normal"
+                render={<Link to={ROUTES.libraryDetail('rule', rule.id)} />}
+              >
+                Xem quy tắc
+              </Button>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {references.length > 0 && (
+        <section className="flex flex-col gap-2">
+          <h4 className="font-semibold text-xs tracking-wider uppercase text-muted-foreground">
+            Nguồn tham khảo
+          </h4>
+          <div className="flex flex-col divide-y">
+            {references.map(reference => {
+              const source = getSource(reference.sourceId);
+              if (!source) return null;
+              const isProjectConvention = source.id === 'source-liuyao-v1-contract';
+              const url = sourceUrl(source.provenance);
+              return (
+                <article
+                  key={reference.id}
+                  className="flex flex-col gap-1.5 py-2.5 first:pt-0 last:pb-0"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h5 className="font-medium text-foreground">{source.title}</h5>
+                    {isProjectConvention && (
+                      <Badge variant="outline" className="text-xs">
+                        Quy ước dự án
+                      </Badge>
+                    )}
+                  </div>
+                  <p className="text-muted-foreground">
+                    {source.author}
+                    {reference.location ? ` · ${reference.location}` : ''}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Button
+                      variant="link"
+                      size="sm"
+                      className="h-auto p-0 text-left font-normal"
+                      render={<Link to={ROUTES.libraryDetail('source', source.id)} />}
+                    >
+                      Chi tiết nguồn
+                    </Button>
+                    {url ? (
+                      <Button
+                        variant="link"
+                        size="sm"
+                        className="h-auto p-0 text-left font-normal"
+                        render={<a href={url} target="_blank" rel="noreferrer" />}
+                      >
+                        Tài liệu tham khảo
+                      </Button>
+                    ) : null}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
+
 export function FactInspector({
   fact,
   close,
@@ -52,10 +157,18 @@ export function FactInspector({
   close: () => void;
   closeRef?: RefObject<HTMLButtonElement | null>;
 }) {
-  const rules = getRulesForFact(fact.id);
-  const references = listSourceReferences().filter(reference =>
-    rules.some(rule => reference.targetIds.includes(rule.id)),
-  );
+  if (fact.context) {
+    return (
+      <ResultKnowledgeInspector
+        key={`${fact.context.contextType}-${fact.context.hexagramId}-${fact.context.selectionToken ?? fact.context.position ?? 'overview'}`}
+        fact={fact as FactSelection & { context: HexagramKnowledgeContext }}
+        close={close}
+        closeRef={closeRef}
+      />
+    );
+  }
+
+  const isCustomFact = fact.id === 'context.hexagram' || fact.id === 'context.line';
 
   return (
     <div className="flex min-w-0 flex-col gap-6">
@@ -75,66 +188,7 @@ export function FactInspector({
         </Button>
       </div>
       <Separator />
-      <section className="flex flex-col gap-3">
-        <h3 className="font-semibold">Quy tắc</h3>
-        {rules.length ? (
-          <div className="flex flex-col divide-y">
-            {rules.map(rule => (
-              <article key={rule.id} className="flex flex-col gap-2 py-3 first:pt-0 last:pb-0">
-                <h4 className="font-medium">{rule.title}</h4>
-                <p className="text-muted-foreground">{rule.explanation}</p>
-                <Button
-                  variant="link"
-                  size="lg"
-                  className="h-auto min-h-11 whitespace-normal text-left"
-                  render={<Link to={ROUTES.libraryDetail('rule', rule.id)} />}
-                >
-                  Xem quy tắc
-                </Button>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <p className="text-muted-foreground">Chưa có quy tắc liên quan.</p>
-        )}
-      </section>
-      <Separator />
-      <section className="flex flex-col gap-3">
-        <h3 className="font-semibold">Nguồn tham khảo</h3>
-        {references.length ? (
-          <div className="flex flex-col divide-y">
-            {references.map(reference => {
-              const source = getSource(reference.sourceId);
-              if (!source) return null;
-              const url = sourceUrl(source.provenance);
-              return (
-                <article
-                  key={reference.id}
-                  className="flex flex-col gap-2 py-3 first:pt-0 last:pb-0"
-                >
-                  <h4 className="font-medium">{source.title}</h4>
-                  <p className="text-muted-foreground">
-                    {source.author}
-                    {reference.location ? ` · ${reference.location}` : ''}
-                  </p>
-                  {url ? (
-                    <Button
-                      variant="link"
-                      size="lg"
-                      className="h-auto min-h-11 whitespace-normal text-left"
-                      render={<a href={url} target="_blank" rel="noreferrer" />}
-                    >
-                      Xem nguồn
-                    </Button>
-                  ) : null}
-                </article>
-              );
-            })}
-          </div>
-        ) : (
-          <p className="text-muted-foreground">Chưa có nguồn tham khảo.</p>
-        )}
-      </section>
+      {!isCustomFact && <FactRulesContent factId={fact.id as KnowledgeFactId} />}
       {fact.libraryTarget && (
         <>
           <Separator />
@@ -154,6 +208,6 @@ export function FactInspector({
   );
 }
 
-function sourceUrl(provenance: string) {
+export function sourceUrl(provenance: string) {
   return provenance.match(/https?:\/\/[^\s]+/)?.[0]?.replace(/[),.;]+$/, '') ?? null;
 }

@@ -5,8 +5,11 @@ export * from './content.js';
 export type * from './content-schema.js';
 export { getContentTableId } from './content-structure.js';
 export type { ContentTable } from './content-tables.js';
+export * from './context.js';
 export type {
   FactDefinition,
+  HexagramEntity,
+  HexagramId,
   KnowledgeEntity,
   KnowledgeFactId,
   KnowledgeRule,
@@ -14,6 +17,8 @@ export type {
   KnowledgeSource,
   KnowledgeTerm,
   SourceReference,
+  TrigramEntity,
+  TrigramId,
 } from './schema.js';
 export * from './search.js';
 export interface KnowledgeMetadata {

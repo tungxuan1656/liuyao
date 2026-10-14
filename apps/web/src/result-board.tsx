@@ -47,6 +47,12 @@ export function HexagramBoard({
               label: changed ? 'Quẻ biến' : 'Quẻ chính',
               value: hexagramLabel(hexagramId),
               libraryTarget: { kind: 'hexagram', id: hexagramId },
+              context: {
+                contextType: changed ? 'changed' : 'primary',
+                hexagramId,
+                lines: result.lines,
+                selectionToken: Date.now(),
+              },
             }}
             onSelect={select}
           />
@@ -106,30 +112,84 @@ export function HexagramBoard({
           {lines.map(line => {
             const polarity =
               changed && line.changing ? (line.polarity === 'yin' ? 'yang' : 'yin') : line.polarity;
+            const lineFact: FactSelection | undefined = hexagramId
+              ? {
+                  id: 'context.line',
+                  label: changed
+                    ? `Hào ${line.position} · Quẻ biến`
+                    : `Hào ${line.position} · Quẻ chính`,
+                  value: changed
+                    ? `${hexagramLabel(hexagramId)} · Hào ${line.position}`
+                    : `${hexagramLabel(hexagramId)} · Hào ${line.position}${
+                        line.position === result.shiPosition
+                          ? ' (Thế)'
+                          : line.position === result.yingPosition
+                            ? ' (Ứng)'
+                            : ''
+                      }`,
+                  context: {
+                    contextType: changed ? 'changed' : 'primary',
+                    hexagramId,
+                    position: line.position,
+                    lines: result.lines,
+                    selectionToken: Date.now(),
+                  },
+                }
+              : undefined;
+
             return (
-              <li
-                key={line.position}
-                className="grid min-h-12 min-w-0 grid-cols-[2rem_5rem_minmax(0,1fr)] items-center gap-2"
-              >
-                <span className="text-sm font-medium">
-                  {changed
-                    ? line.position
-                    : line.position === result.shiPosition
-                      ? 'Thế'
-                      : line.position === result.yingPosition
-                        ? 'Ứng'
-                        : line.position}
-                </span>
-                <YaoSymbol polarity={polarity} changing={!changed && line.changing} />
-                <span className="min-w-0 truncate text-sm text-muted-foreground">
-                  {changed ? (
-                    <span className={line.changing ? undefined : 'sr-only'}>
+              <li key={line.position} className="min-w-0">
+                {lineFact ? (
+                  <Button
+                    variant="ghost"
+                    type="button"
+                    className="grid min-h-12 w-full min-w-0 grid-cols-[2rem_5rem_minmax(0,1fr)] items-center gap-2 rounded-none px-2 py-1.5 text-left font-normal hover:bg-accent focus-visible:ring-1"
+                    onClick={() => select(lineFact)}
+                    aria-label={`Hào ${line.position}${
+                      !changed && line.position === result.shiPosition
+                        ? ' (Thế)'
+                        : !changed && line.position === result.yingPosition
+                          ? ' (Ứng)'
+                          : ''
+                    }: ${
+                      changed
+                        ? line.changing
+                          ? 'Biến từ hào động'
+                          : 'Hào tĩnh'
+                        : line.changing
+                          ? 'Động'
+                          : 'Tĩnh'
+                    }. Xem giải nghĩa hào.`}
+                  >
+                    <span className="text-sm font-medium">
+                      {changed
+                        ? line.position
+                        : line.position === result.shiPosition
+                          ? 'Thế'
+                          : line.position === result.yingPosition
+                            ? 'Ứng'
+                            : line.position}
+                    </span>
+                    <YaoSymbol polarity={polarity} changing={!changed && line.changing} />
+                    <span className="min-w-0 truncate text-sm text-muted-foreground">
+                      {changed ? (
+                        <span className={line.changing ? undefined : 'sr-only'}>
+                          {line.changing ? 'Đổi âm dương' : 'Giữ nguyên'}
+                        </span>
+                      ) : (
+                        `${stemName(line.naJiaStem)} ${branchName(line.naJiaBranch)} · ${elementName(line.element)} · ${relativeName(line.relative)}`
+                      )}
+                    </span>
+                  </Button>
+                ) : (
+                  <div className="grid min-h-12 min-w-0 grid-cols-[2rem_5rem_minmax(0,1fr)] items-center gap-2 px-2 py-1.5">
+                    <span className="text-sm font-medium">{line.position}</span>
+                    <YaoSymbol polarity={polarity} changing={!changed && line.changing} />
+                    <span className="min-w-0 truncate text-sm text-muted-foreground">
                       {line.changing ? 'Đổi âm dương' : 'Giữ nguyên'}
                     </span>
-                  ) : (
-                    `${stemName(line.naJiaStem)} ${branchName(line.naJiaBranch)} · ${elementName(line.element)} · ${relativeName(line.relative)}`
-                  )}
-                </span>
+                  </div>
+                )}
               </li>
             );
           })}

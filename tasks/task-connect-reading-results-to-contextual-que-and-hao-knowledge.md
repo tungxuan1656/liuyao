@@ -1,7 +1,7 @@
 # task-connect-reading-results-to-contextual-que-and-hao-knowledge - Connect reading results to contextual quẻ and hào knowledge
 
-- Status: todo
-- Owner: Product Owner (repository maintainer); implementation assigned on selection
+- Status: done
+- Owner: Agent
 - Required to start: [task-integrate-reviewed-reference-records-into-library-details](task-integrate-reviewed-reference-records-into-library-details.md), [task-result-view](task-result-view.md), [task-correct-changed-result-facts-and-library-links](task-correct-changed-result-facts-and-library-links.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
 
@@ -19,15 +19,15 @@ Changing core results, generating predictions, adding calendar analysis, or auth
 
 ## Acceptance
 
-- [ ] Implement the [result reference contract](../docs/product-specs/reading-result.md#intended-book-reference-contexts).
-- [ ] Quẻ overviews use the displayed ID; hào explanations also use the domain position, including 1 and 6.
-- [ ] Primary/changed contexts, moving/static labels, and no-change behavior remain distinct.
-- [ ] Selected commentary retains attribution, conditions, and citations from task-integrate-reviewed-reference-records-into-library-details presentation.
-- [ ] Fact-rule explanations preserve their own supporting records and distinguish accepted project conventions.
-- [ ] Unavailable commentary preserves the result and offers a clear recovery path.
-- [ ] Library round trips preserve the active reading and reach the same quẻ/position.
-- [ ] Compact/wide interactions, keyboard dismissal, and focus restoration pass.
-- [ ] Required verification and implementation evidence are recorded.
+- [x] Implement the [result reference contract](../docs/product-specs/reading-result.md#book-reference-contexts).
+- [x] Quẻ overviews use the displayed ID; hào explanations also use the domain position, including 1 and 6.
+- [x] Primary/changed contexts, moving/static labels, and no-change behavior remain distinct.
+- [x] Selected commentary retains attribution, conditions, and citations from task-integrate-reviewed-reference-records-into-library-details presentation.
+- [x] Fact-rule explanations preserve their own supporting records and distinguish accepted project conventions.
+- [x] Unavailable commentary preserves the result and offers a clear recovery path.
+- [x] Library round trips preserve the active reading and reach the same quẻ/position.
+- [x] Compact/wide interactions, keyboard dismissal, and focus restoration pass.
+- [x] Required verification and implementation evidence are recorded.
 
 ## Relevant docs
 
@@ -48,6 +48,6 @@ Changing core results, generating predictions, adding calendar analysis, or auth
 
 ## Handoff
 
-- Evidence: Design recorded; implementation and web verification have not started.
-- Next: Complete task-integrate-reviewed-reference-records-into-library-details, select this feature, and assess external-plan criteria before coding.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Added `resolveReadingReferenceContext` in `@liuyao/knowledge` with comprehensive tests (`packages/knowledge/tests/context.test.ts`). Integrated `ResultKnowledgeInspector` in web app reusing `KnowledgeEntries` for quẻ overview and hào lines with explicit position navigation, attribution, conditions, and deep links to Library details. Connected `HexagramBoard` and `ResultView` line items to contextual inspector. Added project convention badge and source detail links for fact rules. Verified via `./init.sh`.
+- Next: Advance to the next scheduled task in the roadmap.
+- Blockers: none.
