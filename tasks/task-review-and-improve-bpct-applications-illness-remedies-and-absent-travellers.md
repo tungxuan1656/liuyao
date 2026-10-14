@@ -1,6 +1,6 @@
 # task-review-and-improve-bpct-applications-illness-remedies-and-absent-travellers - Review and improve BPCT applications — Illness remedies and absent travellers
 
-- Status: todo
+- Status: done
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-bpct-applications-illness-remedies-and-absent-travellers](task-complete-bpct-applications-illness-remedies-and-absent-travellers.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -22,13 +22,13 @@ route changes, or edits outside the assigned group.
 
 ## Acceptance
 
-- [ ] Chapter 23 — Tật Bệnh: every passage, condition, example, and note.
-- [ ] Chapter 24 — Bệnh Thể: every passage, condition, example, and note.
-- [ ] Chapter 25 — Y Dược: every passage, condition, example, and note.
-- [ ] Chapter 26 — Hành Nhân: every passage, condition, example, and note.
-- [ ] Preserve reported outcomes as attributed claims; reconcile reused rules and explicit exclusions.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Chapter 23 — Tật Bệnh: every passage, condition, example, and note.
+- [x] Chapter 24 — Bệnh Thể: every passage, condition, example, and note.
+- [x] Chapter 25 — Y Dược: every passage, condition, example, and note.
+- [x] Chapter 26 — Hành Nhân: every passage, condition, example, and note.
+- [x] Preserve reported outcomes as attributed claims; reconcile reused rules and explicit exclusions.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -50,6 +50,12 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Completed attributed source review of BPCT chapters 23–26 (PDF 270–301,
+  145 child units). Repaired five textual findings: (1) ch 23 §5 (PDF 272) "thương thực hoặc đói";
+  (2) ch 23 §25 (PDF 277) "Hào tam lâm Không gắn lưng yếu/đau"; (3) ch 25 §19 (PDF 291)
+  reconciled phú 'hưng' vs translation 'vượng'; (4) ch 26 §21 (PDF 299) "Hào ngũ có Quỷ"
+  distinguished from spirit Ngũ Quỷ; (5) ch 26 §28 (PDF 300) separated day branch from
+  moving lines. Local `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books`
+  passed cleanly.
+- Next: Merge PR into main.
+- Blockers: None.
