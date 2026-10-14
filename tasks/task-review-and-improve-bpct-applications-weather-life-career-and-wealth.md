@@ -1,6 +1,6 @@
 # task-review-and-improve-bpct-applications-weather-life-career-and-wealth - Review and improve BPCT applications — Weather life career and wealth
 
-- Status: todo
+- Status: active
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-bpct-applications-weather-life-career-and-wealth](task-complete-bpct-applications-weather-life-career-and-wealth.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -52,6 +52,17 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Started an attributed source review of the six published BPCT articles for PDF
+  101–165 (Thiên Thời, Niên Thời, Thân Mệnh and its unsigned insertion, Cầu Danh, Sĩ
+  Hoạn, Cầu Tài). Checked all 941 paragraph/source-reference mappings mechanically:
+  each entry's paragraph count matches its citations and all page intervals remain inside
+  its assigned section. Inspected representative source text and 17 PDF page images at
+  unit boundaries, the Thân Mệnh insertion and chapter 12's folio-only PDF 165. Repaired
+  one material condition change in Sĩ Hoạn, câu 10 (PDF 151 / printed 126):
+  source "Tài lâm, Phúc động" had been compressed to "Tài và Phúc động".
+  This is a partial content review, not an assertion that all clauses were inspected.
+- Next: Complete clause-by-clause source comparison for every assigned section and its
+  notes and examples; obtain independent review of the changed claim and direct uses.
+  Run `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`,
+  re-verify the PR head, then check the acceptance items before marking done.
+- Blockers: Independent content review and full local/CI verification remain pending.
