@@ -2,8 +2,14 @@
   "id": "lesson-liuyao-board",
   "type": "article",
   "title": "Từ gieo quẻ đến các nhãn Lục Hào",
-  "topicIds": ["topic-learning", "topic-casting", "topic-liuyao-foundations"],
-  "relatedIds": ["lesson-foundations"],
+  "topicIds": [
+    "topic-learning",
+    "topic-casting",
+    "topic-liuyao-foundations"
+  ],
+  "relatedIds": [
+    "lesson-foundations"
+  ],
   "status": "ready",
   "entries": [
     {
@@ -12,15 +18,27 @@
       "references": [
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [11, 12],
+          "pdfPages": [
+            11,
+            12
+          ],
           "section": "X — Phép dùng đồng tiền thay cỏ thi",
-          "printedPages": ["5", "6"]
+          "printedPages": [
+            "5",
+            "6"
+          ]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [72, 73],
+          "pdfPages": [
+            72,
+            73
+          ],
           "section": "Động và biến",
-          "printedPages": ["72", "73"]
+          "printedPages": [
+            "72",
+            "73"
+          ]
         }
       ],
       "links": [
@@ -36,25 +54,43 @@
     },
     {
       "id": "palaces-markers",
-      "text": "Sau khi nhận hình quẻ, tìm nó trong tám cung, mỗi cung có tám quẻ. Thứ tự cung không phải số thứ tự Văn Vương. Theo vị trí 1–8 trong một cung, Thế lần lượt ở 6, 1, 2, 3, 4, 5, 4, 3; Ứng nằm cách Thế ba vị trí. Cung còn cung cấp hành làm mốc khi phân Lục thân.",
+      "text": "Sau khi nhận hình quẻ, tìm nó trong tám cung, mỗi cung có tám quẻ. Thứ tự cung không phải số thứ tự Văn Vương. Theo vị trí 1–8 trong một cung, Thế lần lượt ở 6, 1, 2, 3, 4, 5, 4, 3; Các cặp vị trí Thế–Ứng đối nhau qua ba hào: 1–4, 2–5, 3–6 (theo cả hai chiều). Cung còn cung cấp hành làm mốc khi phân Lục thân.",
       "references": [
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [12, 14],
+          "pdfPages": [
+            12,
+            14
+          ],
           "section": "XI–XIII — Bát cung và an Thế Ứng",
-          "printedPages": ["6", "8"]
+          "printedPages": [
+            "6",
+            "8"
+          ]
         },
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [14, 14],
+          "pdfPages": [
+            14,
+            14
+          ],
           "section": "XIII — An Thế Ứng quyết",
-          "printedPages": ["8", "8"]
+          "printedPages": [
+            "8",
+            "8"
+          ]
         },
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [52, 52],
+          "pdfPages": [
+            52,
+            52
+          ],
           "section": "Cung Khảm — Trạch Hỏa Cách",
-          "printedPages": ["41", "41"]
+          "printedPages": [
+            "41",
+            "41"
+          ]
         }
       ],
       "links": [
@@ -66,25 +102,43 @@
     },
     {
       "id": "na-jia",
-      "text": "Nạp Giáp là bước gắn can chi vào từng hào: chọn dãy nội của quái dưới cho 1–3, chọn dãy ngoại của quái trên cho 4–6, rồi đọc từng dãy từ thấp lên cao. Không lấy dãy nội dùng lặp cho cả hai nửa.",
+      "text": "Nạp Giáp là bước gắn can chi vào từng hào: chọn dãy nội của quái dưới cho 1–3, chọn dãy ngoại của quái trên cho 4–6, rồi đọc từng dãy từ thấp lên cao. Không lấy dãy nội dùng lặp cho cả hai nửa. Ví dụ với Tụng: Khảm dưới lần lượt là Mậu Dần, Mậu Thìn, Mậu Ngọ; Càn trên là Nhâm Ngọ, Nhâm Thân, Nhâm Tuất.",
       "references": [
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [13, 13],
+          "pdfPages": [
+            13,
+            13
+          ],
           "section": "XII — Nạp Giáp trang quái ca",
-          "printedPages": ["7", "7"]
+          "printedPages": [
+            "7",
+            "7"
+          ]
         },
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [11, 12],
+          "pdfPages": [
+            11,
+            12
+          ],
           "section": "X — Phép dùng đồng tiền thay cỏ thi",
-          "printedPages": ["5", "6"]
+          "printedPages": [
+            "5",
+            "6"
+          ]
         },
         {
           "sourceId": "source-book-nhl",
-          "pdfPages": [72, 73],
+          "pdfPages": [
+            72,
+            73
+          ],
           "section": "Động và biến",
-          "printedPages": ["72", "73"]
+          "printedPages": [
+            "72",
+            "73"
+          ]
         }
       ],
       "links": [
@@ -100,25 +154,43 @@
     },
     {
       "id": "elements-relatives",
-      "text": "Từ chi suy hành: Tý/Hợi là Thủy, Dần/Mão là Mộc, Tỵ/Ngọ là Hỏa, Thân/Dậu là Kim, Sửu/Thìn/Mùi/Tuất là Thổ. So hành hào với hành cung: cùng hành → Huynh đệ; cung sinh hào → Tử tôn; cung khắc hào → Thê tài; hào khắc cung → Quan quỷ; hào sinh cung → Phụ mẫu. Năm quan hệ tính cùng “Ta” được gọi là Lục thân; các nhãn quan hệ chưa phải kết luận cho một việc hỏi.",
+      "text": "Từ chi suy hành: Tý/Hợi là Thủy, Dần/Mão là Mộc, Tỵ/Ngọ là Hỏa, Thân/Dậu là Kim, Sửu/Thìn/Mùi/Tuất là Thổ. So hành hào với hành cung: cùng hành → Huynh đệ; cung sinh hào → Tử tôn; cung khắc hào → Thê tài; hào khắc cung → Quan quỷ; hào sinh cung → Phụ mẫu. Sách gọi là Lục thân khi tính cả “Ta” cùng năm quan hệ này; các nhãn trên bảng chỉ phân loại mối quan hệ, chưa phải kết luận cho một việc hỏi.",
       "references": [
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [8, 8],
+          "pdfPages": [
+            8,
+            8
+          ],
           "section": "III — Địa chi; II — Thiên can",
-          "printedPages": ["2", "2"]
+          "printedPages": [
+            "2",
+            "2"
+          ]
         },
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [14, 14],
+          "pdfPages": [
+            14,
+            14
+          ],
           "section": "XIII — An Thế Ứng quyết",
-          "printedPages": ["8", "8"]
+          "printedPages": [
+            "8",
+            "8"
+          ]
         },
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [9, 9],
+          "pdfPages": [
+            9,
+            9
+          ],
           "section": "IV–V — Ngũ hành sinh khắc và Lục thân sinh khắc",
-          "printedPages": ["3", "3"]
+          "printedPages": [
+            "3",
+            "3"
+          ]
         }
       ],
       "links": [
