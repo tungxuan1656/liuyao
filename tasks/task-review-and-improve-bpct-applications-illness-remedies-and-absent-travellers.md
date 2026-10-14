@@ -75,7 +75,7 @@ Source-attributed medical outcomes, ritual proposals, allegations about travelle
 and date judgments are historical claims, **not** clinical guidance or verified forecasts.
 
 **Review gate remains open:** the writer's source comparison is not an independent
-review; source-image sampling covered PDF 279 only. Automated repository tests and
+review; page images were inspected for PDFs 277, 279, 283, 291, 299, and 300 (not all 32 pages). Automated repository tests and
 the complete source-image inspection have not been performed in this environment.
 This task remains `todo` until the PR's independent review and verification are
 accepted; no review PASS or publication certificate is claimed.
