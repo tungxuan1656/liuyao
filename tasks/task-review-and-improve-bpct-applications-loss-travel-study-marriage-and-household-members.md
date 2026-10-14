@@ -1,6 +1,6 @@
 # task-review-and-improve-bpct-applications-loss-travel-study-marriage-and-household-members - Review and improve BPCT applications — Loss travel study marriage and household members
 
-- Status: todo
+- Status: active
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-bpct-applications-loss-travel-study-marriage-and-household-members](task-complete-bpct-applications-loss-travel-study-marriage-and-household-members.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -53,6 +53,6 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Started after confirming all three required-to-start tasks are marked done on `main`. Checked the seven BPCT chapter record structures against the supplied PDF boundaries (PDF 166–230): 246 main-section locators, 28 note locators, and two folio-only observations (= 276 child locators). Each published entry's paragraph count matches its reference count; all citations remain within the assigned PDF range. Inspected source text and commentary for PDF 166–168, 176–180, 191–194, 200–204, 208–210, 212–215, and 223–230. Verified the deliberate numbering gaps (chapter 15 lacks 16; chapter 17 lacks 31; chapter 18 lacks 41) and folio-only PDFs 190/222. Material finding: chapter 19, item 15 (PDF 227, printed 194), has a truncated object after “hợp với ư”. Fixed the published Lời bình paraphrase so it does not invent a specific line or party for this incomplete construction. These are *structural* and *sampled semantic* checks, **not** a complete clause-by-clause sign-off for 276 source units.
+- Blockers: Full clause-by-clause review of every passage and remaining notes, an independent review of materially changed assertions, source-page image checks where typography affects meaning, and final-head repository verification are outstanding. Do not mark the seven chapter acceptance boxes or this task done before those gates pass.
+- Next: Have an independent reviewer inspect chapter 19 item 15 on PDF 227 against the changed text and complete remaining full-source checks across chapters 13–19; then run `pnpm tasks:index`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `./init.sh` on the final revision and record results.
