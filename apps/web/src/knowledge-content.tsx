@@ -56,12 +56,16 @@ export function KnowledgeContent({ id }: { id: string }) {
   }, [id, key]);
   useEffect(() => {
     if (!state?.record || state.key !== key || !hash) return;
-    const target = document.getElementById(decodeURIComponent(hash.slice(1)));
-    if (!target) return;
-    for (let parent = target.parentElement; parent; parent = parent.parentElement) {
-      if (parent instanceof HTMLDetailsElement) parent.open = true;
+    try {
+      const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+      if (!target) return;
+      for (let parent = target.parentElement; parent; parent = parent.parentElement) {
+        if (parent instanceof HTMLDetailsElement) parent.open = true;
+      }
+      target.scrollIntoView();
+    } catch {
+      // Ignore malformed URL fragments
     }
-    target.scrollIntoView();
   }, [hash, key, state]);
   if (state?.key !== key) return <p role="status">Đang tải nội dung…</p>;
   if (state.error || !state.record)
@@ -119,7 +123,10 @@ export function KnowledgeContent({ id }: { id: string }) {
                 const target = getContentMetadata(id);
                 return target ? (
                   <li key={id}>
-                    <Link className="underline" to={ROUTES.libraryDetail(target.type, target.id)}>
+                    <Link
+                      className="inline-flex min-h-11 items-center underline"
+                      to={ROUTES.libraryDetail(target.type, target.id)}
+                    >
                       {target.title}
                     </Link>
                   </li>
@@ -174,7 +181,8 @@ export function KnowledgeContent({ id }: { id: string }) {
             {figure.authorAlternatives?.map(view => (
               <div key={view.author}>
                 <p>
-                  {view.author} · {view.description}
+                  {view.author}
+                  {view.via ? ` · qua ${view.via}` : ''} · {view.description}
                 </p>
                 <KnowledgeReferences references={view.references} />
               </div>
