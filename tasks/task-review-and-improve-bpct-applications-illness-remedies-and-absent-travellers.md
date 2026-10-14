@@ -60,13 +60,18 @@ All 145 child units have source locators; the chapter-unit coverage is 44 + 29 +
 PDF 279 was visually checked and contains only printed folio 241. Chapter 24 repeats item
 14, and chapter 26 skips item 26: preserve these source features rather than inventing text.
 
-| Finding | Source locator | Minimal repair |
-| --- | --- | --- |
-| Chapter 23 / item 5 | BPCT PDF 272, printed 234 | Replace vague “đói/no” with the source distinction “thương thực hoặc đói”. |
-| Chapter 23 / item 25 | BPCT PDF 277, printed 239 | Say *hào tam lâm Không*, not ambiguous “Tam Không” (which could mean three empty lines). |
-| Chapter 25 / item 19 | BPCT PDF 291, printed 251 | Keep the phú’s “Mộc đới Tài hưng” distinct from the Vietnamese gloss’s “vượng”; the commentary separately conditions its reading on Tài moving. These historical statements are not dietary instructions. |
-| Chapter 26 / item 21 | BPCT PDF 299, printed 258 | Specify *hào ngũ có Quỷ*, not “Ngũ Quỷ” as though this were a five-ghost category. |
-| Chapter 26 / item 28 | BPCT PDF 300, printed 259 | Preserve “Nhật tính, Kỵ hưng” and “Thân lâm, Dụng phát” instead of treating Nhật as a moving line or the phrase as a single “Thân Dụng” condition. |
+- Chapter 23 / item 5 (BPCT PDF 272, printed 234): Replace vague “đói/no” with
+  the source distinction “thương thực hoặc đói”.
+- Chapter 23 / item 25 (PDF 277, printed 239): Say *hào tam lâm Không*, not
+  ambiguous “Tam Không” (which could mean three empty lines).
+- Chapter 25 / item 19 (PDF 291, printed 251): Keep the phú’s “Mộc đới Tài hưng”
+  distinct from the Vietnamese gloss’s “vượng”; the commentary separately
+  conditions its reading on Tài moving. These are historical claims, not dietary instructions.
+- Chapter 26 / item 21 (PDF 299, printed 258): Specify *hào ngũ có Quỷ*, not
+  “Ngũ Quỷ” as though it were a five-ghost category.
+- Chapter 26 / item 28 (PDF 300, printed 259): Preserve “Nhật tính, Kỵ hưng”
+  and “Thân lâm, Dụng phát” instead of treating Nhật as a moving line or
+  the phrase as a single “Thân Dụng” condition.
 
 Chapters 23–26 retain their phú, Vietnamese rendering, commentary, and Vĩnh Cao note
 layers; chapter 23 additionally keeps the separate unsigned “Đông tà” insertion.
@@ -75,7 +80,8 @@ Source-attributed medical outcomes, ritual proposals, allegations about travelle
 and date judgments are historical claims, **not** clinical guidance or verified forecasts.
 
 **Review gate remains open:** the writer's source comparison is not an independent
-review; page images were inspected for PDFs 277, 279, 283, 291, 299, and 300 (not all 32 pages). Automated repository tests and
-the complete source-image inspection have not been performed in this environment.
+review; page images were inspected for PDFs 277, 279, 283, 291, 299, and 300
+(not all 32 pages). Automated repository tests and complete source-image inspection
+have not been performed in this environment.
 This task remains `todo` until the PR's independent review and verification are
 accepted; no review PASS or publication certificate is claimed.
