@@ -19,7 +19,7 @@ Changing core results, generating predictions, adding calendar analysis, or auth
 
 ## Acceptance
 
-- [x] Implement the [result reference contract](../docs/product-specs/reading-result.md#intended-book-reference-contexts).
+- [x] Implement the [result reference contract](../docs/product-specs/reading-result.md#book-reference-contexts).
 - [x] Quẻ overviews use the displayed ID; hào explanations also use the domain position, including 1 and 6.
 - [x] Primary/changed contexts, moving/static labels, and no-change behavior remain distinct.
 - [x] Selected commentary retains attribution, conditions, and citations from task-integrate-reviewed-reference-records-into-library-details presentation.

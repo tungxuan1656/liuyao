@@ -244,18 +244,18 @@ export function ResultKnowledgeInspector({
           >
             Xem trong thư viện
           </Button>
-
-          {isCalculatedFact && rules.length > 0 && (
-            <details className="group flex flex-col gap-3 rounded-lg border p-3.5 text-sm">
-              <summary className="cursor-pointer font-medium select-none text-foreground hover:underline">
-                Quy tắc tính & nguồn tham khảo ({rules.length})
-              </summary>
-              <div className="mt-2">
-                <FactRulesContent factId={fact.id as KnowledgeFactId} />
-              </div>
-            </details>
-          )}
         </div>
+      )}
+
+      {isCalculatedFact && rules.length > 0 && (
+        <details className="group flex flex-col gap-3 rounded-lg border p-3.5 text-sm">
+          <summary className="cursor-pointer font-medium select-none text-foreground hover:underline">
+            Quy tắc tính & nguồn tham khảo ({rules.length})
+          </summary>
+          <div className="mt-2">
+            <FactRulesContent factId={fact.id as KnowledgeFactId} />
+          </div>
+        </details>
       )}
     </section>
   );
