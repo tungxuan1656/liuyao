@@ -1,6 +1,6 @@
 # task-review-and-improve-classical-traditions-diagrams-and-all-he-tu-chapters - Review and improve classical traditions diagrams and all Hệ Từ chapters
 
-- Status: todo
+- Status: active
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-nhl-introductory-chapters-and-framing](task-complete-nhl-introductory-chapters-and-framing.md), [task-complete-ntt-and-pbc-introductory-traditions-and-diagrams](task-complete-ntt-and-pbc-introductory-traditions-and-diagrams.md), [task-complete-he-tu-thuong-across-nhl-and-pbc](task-complete-he-tu-thuong-across-nhl-and-pbc.md), [task-complete-he-tu-ha-across-nhl-and-pbc](task-complete-he-tu-ha-across-nhl-and-pbc.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -51,6 +51,6 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: All six start dependencies are `done` on main. This branch has an initial source-fidelity repair in NHL Hệ Từ Hạ V: rendered NHL PDF 372 confirms `nhắm mắt` (the inherited claim `nhắm mà` was false); retained its page reference and author attribution. PBC Hệ Từ Hạ VII was re-read directly at PDF 638–640 and the repetitive nine-quẻ paragraphs rewritten as coherent notes on đức/tài/dụng, preserving all 34 entry references and separate Hán Thư/Luận Ngữ attributions. Spot-inspected images: NTT PDF 20, 35 and 41 (Hà/Lạc, 64-quẻ round/square, Văn Vương's compass); PBC PDF 11–12 (two 32-cell diagrams); NHL PDF 372. This is an initial focused pass, **not** completion of every T12 unit, and **not** an independent review.
+- Blockers: Independent source review of the two changed assertions and the remaining assigned chapter/figure units is pending. The full repository verification workflow has not been executed in this GitHub-connected session; validate on the PR's exact head. No final publication sign-off.
+- Next: Review the corrected NHL PDF 372 reading and revised PBC PDF 638–640 explanation independently, then inspect and resolve the remaining assigned NHL/NTT/PBC chapters and diagrams. Run `./init.sh` and the book-backed corpus validator on the exact final revision before checking acceptance boxes and marking this task done.
