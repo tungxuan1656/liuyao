@@ -53,6 +53,21 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Started after confirming all three required-to-start tasks are marked done on `main`. Checked the seven BPCT chapter record structures against the supplied PDF boundaries (PDF 166–230): 246 main-section locators, 28 note locators, and two folio-only observations (= 276 child locators). Each published entry's paragraph count matches its reference count; all citations remain within the assigned PDF range. Inspected source text and commentary for PDF 166–168, 176–180, 191–194, 200–204, 208–210, 212–215, and 223–230. Verified the deliberate numbering gaps (chapter 15 lacks 16; chapter 17 lacks 31; chapter 18 lacks 41) and folio-only PDFs 190/222. Material finding: chapter 19, item 15 (PDF 227, printed 194), has a truncated object after “hợp với ư”; a rendered PDF page image confirms the exact incomplete text, not just a text-extraction artifact. Fixed the published Lời bình paraphrase so it does not invent a specific line or party for this incomplete construction. These are *structural* and *sampled semantic* checks, **not** a complete clause-by-clause sign-off for 276 source units.
-- Blockers: Full clause-by-clause review of every passage and remaining notes, an independent review of materially changed assertions, source-page image checks where typography affects meaning, and final-head repository verification are outstanding. Do not mark the seven chapter acceptance boxes or this task done before those gates pass.
-- Next: Have an independent reviewer inspect chapter 19 item 15 on PDF 227 against the changed text and complete remaining full-source checks across chapters 13–19; then run `pnpm tasks:index`, `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`, and `./init.sh` on the final revision and record results.
+- Evidence: All three prerequisites are marked done on `main`. Inspected the seven chapter
+  records against BPCT PDF 166–230: 246 section, 28 note and two folio-only locators (276
+  child units). Each entry's paragraph count matches its references; all citations are in
+  range. Compared sampled source text on PDF 166–168, 176–180, 191–194, 200–204,
+  208–210, 212–215 and 223–230. Confirmed numbering gaps at chapter 15 item 16,
+  chapter 17 item 31, chapter 18 item 41, plus folio-only PDF 190 and 222.
+  Chapter 19 item 15 (PDF 227 / printed 194) contains the truncated wording
+  “hợp với ư” in the *rendered page image* as well as extracted text. Corrected
+  its Lời bình paraphrase without guessing the missing object. This is structural
+  and sampled content review, **not** a complete 276-unit semantic audit.
+- Blockers: Clause-by-clause source review of the remaining units; independent review
+  of changed knowledge; outstanding source-image checks; final-head verification.
+  Keep the seven chapter acceptance items unchecked and the task active until
+  all gates pass.
+- Next: Independently review the chapter 19 item 15 correction against PDF 227,
+  complete chapter 13–19 source checks, regenerate `tasks/index.md` with
+  `pnpm tasks:index`, and run `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
+  plus `./init.sh`. Record the final revision and outcomes.
