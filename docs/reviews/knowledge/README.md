@@ -1,8 +1,8 @@
 # Historical knowledge reviews
 
-Feat-068 retired source inventories, hash ledgers, page accounting, and generated audit reports.
+[task-simplify-knowledge-and-rebuild-que-01-04](../../../tasks/task-simplify-knowledge-and-rebuild-que-01-04.md) retired source inventories, hash ledgers, page accounting, and generated audit reports.
 Git preserves these files; they are not authoring or runtime inputs.
-The branch feat/068-audit-hexagrams-01-04 at c80c38d preserves earlier quẻ 01–04 work.
+Earlier quẻ 01–04 work is preserved in git history.
 
 ## Retired report snapshots
 

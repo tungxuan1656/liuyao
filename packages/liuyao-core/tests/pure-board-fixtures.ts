@@ -37,7 +37,7 @@ type PureBoardFixture = {
  * Independent golden values cross-checked against the named-trigram codes in
  * hexagram-fixtures.ts, the explicit inner/outer assignments in na-jia.test.ts,
  * and the sourced palace/marker rows in palace-fixtures.ts. Six Relatives use
- * the rules documented in docs/plans/feat-004.md:28. Line tuples are ordered
+ * the rules documented in docs/plans/task-liu-yao-board.md:28. Line tuples are ordered
  * bottom-to-top as [stem, branch, branch element, relative, marker].
  */
 export const PURE_BOARD_FIXTURES: readonly PureBoardFixture[] = [

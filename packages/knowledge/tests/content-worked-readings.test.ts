@@ -56,7 +56,7 @@ function table<Kind extends ContentTable['kind']>(
 
 // The JSON expected facts are hand-authored from released source-reviewed records,
 // not captured from the core calculator.
-describe('feat-065 independently expected worked readings', () => {
+describe('task-author-ordered-lessons-and-reviewed-worked-examples independently expected worked readings', () => {
   it('exports immutable complete lessons without changing compatibility entities', () => {
     const lessons = listBookRecords()
       .filter(record => record.id.startsWith('lesson-'))

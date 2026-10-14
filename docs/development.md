@@ -96,7 +96,7 @@ It performs:
 
 The script does not fix source, install dependencies, generate command scripts, or schedule jobs. Build, type-check, and test tools can refresh ignored outputs. Run `pnpm install` separately when the workspace is not bootstrapped.
 
-Execution state belongs to the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) is a generated view, never a second editable tracker. Legacy feature/index/progress records are [frozen history](../features/README.md). Use relevant focused checks for bounded changes; run the full workflow before merging.
+Execution state belongs to the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) is a generated view, never a second editable tracker. Use relevant focused checks for bounded changes; run the full workflow before merging.
 
 ### Task index
 

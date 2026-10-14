@@ -106,7 +106,7 @@ Run the [development checks](../development.md) appropriate to the change.
 
 ### Hexagram review batches
 
-For feat-072 through feat-083, use the bounded review policy selected in [feat-071](../../features/feat-071.md#operator-sets-the-acceptance-bar-and-the-review-policy-for-the-batch).
+For task-review-and-improve-que-17-20-and-all-twenty-four-hao through task-review-and-improve-que-61-64-and-all-twenty-four-hao, use the bounded review policy selected in [task-review-and-improve-que-13-16-and-all-twenty-four-hao](../../tasks/task-review-and-improve-que-13-16-and-all-twenty-four-hao.md#operator-sets-the-acceptance-bar-and-the-review-policy-for-the-batch).
 
 - State the written acceptance bar in both writer and reviewer briefs. Do not silently replace it with literal clause fidelity.
 - Require a temporary writer report with one source-locator row per attributed entry: pointer, author, source/pages, and a short supporting excerpt.
@@ -125,6 +125,6 @@ The [data guide](../../packages/knowledge/data/README.md) owns authoring and ver
 
 ## Migration history
 
-Feat-068 replaced V1/V2 audit metadata and validation with the [simplified model](../design-docs/knowledge-model.md).
+[task-simplify-knowledge-and-rebuild-que-01-04](../../tasks/task-simplify-knowledge-and-rebuild-que-01-04.md) replaced V1/V2 audit metadata and validation with the [simplified model](../design-docs/knowledge-model.md).
 Useful source observations remain as explanations or concise source-gap notes.
 [Historical artifacts](../reviews/knowledge/README.md) explain recovery of earlier accounting material from Git.

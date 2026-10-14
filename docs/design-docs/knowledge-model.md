@@ -5,7 +5,7 @@ The target is a small JSON library for learning and reading reference.
 
 ## Status
 
-**Observed:** Feat-068 implements this model. Authored JSON records contain direct source references and stable links.
+**Observed:** [task-simplify-knowledge-and-rebuild-que-01-04](../../tasks/task-simplify-knowledge-and-rebuild-que-01-04.md) implements this model. Authored JSON records contain direct source references and stable links.
 Structural validation produces ignored metadata, compact compatibility data, and one asset per ready record.
 The browser loads detailed content asynchronously. The audit runtime and full-corpus release have been removed.
 
@@ -139,6 +139,6 @@ Use normal deployment versions and asset URLs for cache updates. No semantic has
 
 ## Migration history
 
-[Feat-068](../../features/feat-068.md) records migration evidence and payload measurements.
+[task-simplify-knowledge-and-rebuild-que-01-04](../../tasks/task-simplify-knowledge-and-rebuild-que-01-04.md) records migration evidence and payload measurements.
 Git preserves old schemas, ledgers, generated releases, and execution history.
 Do not copy those artifacts into authored content or create a parallel certification system.

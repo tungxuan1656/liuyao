@@ -23,7 +23,7 @@ Preserve original feature, index, progress, and plan evidence. Do not activate p
 ## Sources and plan
 
 [Harness v2 migration](../.agents/skills/harness/references/migration-v2.md),
-[legacy mapping](../features/README.md), [verification](../docs/development.md).
+[verification](../docs/development.md).
 
 1. Inspect stack, skills, consumers, and historical state.
 2. Install reviewed missing guidance and migrate state/routes while preserving history.
