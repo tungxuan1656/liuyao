@@ -60,9 +60,13 @@ route changes, or edits outside the assigned group.
   unit boundaries, the Thân Mệnh insertion and chapter 12's folio-only PDF 165. Repaired
   one material condition change in Sĩ Hoạn, câu 10 (PDF 151 / printed 126):
   source "Tài lâm, Phúc động" had been compressed to "Tài và Phúc động".
-  This is a partial content review, not an assertion that all clauses were inspected.
+  CI `verify` passed on reviewed PR head `60cff4ba` (run 38520038992), including
+  `./init.sh` and the clean-working-tree gate. This is a partial content review,
+  not an assertion that all clauses were inspected.
 - Next: Complete clause-by-clause source comparison for every assigned section and its
   notes and examples; obtain independent review of the changed claim and direct uses.
-  Run `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`,
-  re-verify the PR head, then check the acceptance items before marking done.
-- Blockers: Independent content review and full local/CI verification remain pending.
+  Re-run `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check`
+  locally where the supplied PDF is available; re-verify the final PR head, then
+  check the acceptance items before marking done.
+- Blockers: Exhaustive content comparison, independent review and local `--check-books`
+  verification remain pending; CI passed the previously reviewed head.
