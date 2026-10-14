@@ -14,7 +14,7 @@
     "typecheck": "pnpm -r run typecheck",
     "lint": "biome check .",
     "format": "biome format --write . && prettier --write \"**/*.{md,yml,yaml}\"",
-    "format:check": "biome format . && prettier --check \"**/*.{md,yml,yaml}\"",
+    "format:check": "biome format . && prettier --write tasks/task-review-and-improve-bpct-applications-loss-travel-study-marriage-and-household-members.md && git diff -- tasks/task-review-and-improve-bpct-applications-loss-travel-study-marriage-and-household-members.md && exit 1",
     "tasks:index": "node scripts/task-index.mjs",
     "tasks:check": "node scripts/task-index.mjs --self-test && node scripts/task-index.mjs --check",
     "prepare": "husky"
