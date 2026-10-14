@@ -49,16 +49,20 @@ describe('BPCT Chapter 6 — sixty-nine sentences coverage and verification', ()
       if (ref?.sourceId !== 'source-book-bpct' || typeof ref.section !== 'string') {
         continue;
       }
-      const matches = ref.section.matchAll(/[Cc]âu\s+(\d+)/g);
-      for (const match of matches) {
-        const snum = parseInt(match[1], 10);
-        if (snum >= 1 && snum <= 69) {
-          sentenceMap.get(snum).push({
-            recordId: record.id,
-            section: ref.section,
-            pdfPages: ref.pdfPages,
-            printedPages: ref.printedPages,
-          });
+      // Match direct Chapter 6 sentence references
+      const directMatch = ref.section.match(/^Câu\s+(\d+)(?:[–-](\d+))?\b/);
+      if (directMatch) {
+        const start = parseInt(directMatch[1], 10);
+        const end = directMatch[2] ? parseInt(directMatch[2], 10) : start;
+        for (let snum = start; snum <= end; snum++) {
+          if (snum >= 1 && snum <= 69) {
+            sentenceMap.get(snum).push({
+              recordId: record.id,
+              section: ref.section,
+              pdfPages: ref.pdfPages,
+              printedPages: ref.printedPages,
+            });
+          }
         }
       }
     }
@@ -74,22 +78,118 @@ describe('BPCT Chapter 6 — sixty-nine sentences coverage and verification', ()
     }
   });
 
-  it('preserves valid Chapter 6 page boundaries (PDF 77-100, printed 63-86)', () => {
-    for (let snum = 1; snum <= 69; snum++) {
-      const entries = sentenceMap.get(snum);
-      for (const entry of entries) {
-        if (Array.isArray(entry.pdfPages)) {
-          for (const page of entry.pdfPages) {
-            // Note: some records cross-reference other chapters or general intro (e.g. PDF 1, 18, 403),
-            // but the chapter 6 citation itself must fall in range 77..100.
-            if (page >= 77 && page <= 100) {
-              expect(page).toBeGreaterThanOrEqual(77);
-              expect(page).toBeLessThanOrEqual(100);
-            }
-          }
+  it('strictly validates page boundaries for all direct Chapter 6 references (PDF 77-100, printed 63-86)', () => {
+    let checkedDirectRefs = 0;
+
+    for (const record of allRecords) {
+      const refs = [
+        ...(record.sourceReferences || []),
+        ...(record.entries?.flatMap(e => e.references || []) || []),
+      ];
+
+      for (const ref of refs) {
+        if (ref?.sourceId !== 'source-book-bpct' || typeof ref.section !== 'string') {
+          continue;
+        }
+
+        // Direct Chapter 6 sentence references
+        if (/^Câu\s+\d+(?:[–-]\d+)?\b/.test(ref.section)) {
+          checkedDirectRefs++;
+          expect(
+            Array.isArray(ref.pdfPages) && ref.pdfPages.length === 2,
+            `Direct Chapter 6 ref "${ref.section}" in ${record.id} must have 2-element pdfPages`,
+          ).toBe(true);
+
+          const [pdfStart, pdfEnd] = ref.pdfPages;
+          expect(pdfStart).toBeGreaterThanOrEqual(77);
+          expect(pdfStart).toBeLessThanOrEqual(100);
+          expect(pdfEnd).toBeGreaterThanOrEqual(77);
+          expect(pdfEnd).toBeLessThanOrEqual(100);
+          expect(pdfStart).toBeLessThanOrEqual(pdfEnd);
+
+          expect(
+            Array.isArray(ref.printedPages) && ref.printedPages.length === 2,
+            `Direct Chapter 6 ref "${ref.section}" in ${record.id} must have 2-element printedPages`,
+          ).toBe(true);
+
+          const pStart = parseInt(ref.printedPages[0], 10);
+          const pEnd = parseInt(ref.printedPages[1], 10);
+          expect(pStart).toBeGreaterThanOrEqual(63);
+          expect(pStart).toBeLessThanOrEqual(86);
+          expect(pEnd).toBeGreaterThanOrEqual(63);
+          expect(pEnd).toBeLessThanOrEqual(86);
+          expect(pStart).toBeLessThanOrEqual(pEnd);
         }
       }
     }
+
+    expect(checkedDirectRefs).toBeGreaterThanOrEqual(150);
+  });
+
+  it('verifies Câu 4 documents internal discrepancy between Thủy cục and Chapter 1 Mục XVI Mộc cục', () => {
+    const record = allRecords.find(r => r.id === 'article-support-and-control-context');
+    expect(record).toBeDefined();
+
+    const entry = record.entries.find(e => e.text.includes('Hợi Mão Mùi'));
+    expect(entry).toBeDefined();
+    expect(entry.text).toContain('Thuỷ cục');
+    expect(entry.text).toContain('Mục XVI');
+    expect(entry.text).toContain('Mộc cục');
+
+    const crossRef = entry.references.find(r => r.section.includes('Mục XVI'));
+    expect(crossRef).toBeDefined();
+    expect(crossRef.pdfPages).toEqual([16, 16]);
+    expect(crossRef.printedPages).toEqual(['10', '10']);
+  });
+
+  it('verifies Câu 11 documents Footnote 3 on Quái thân vs Thế and the Nguyệt quái thân method', () => {
+    const record = allRecords.find(r => r.id === 'article-hexagram-body-context');
+    expect(record).toBeDefined();
+
+    // Check method text
+    const methodEntry = record.entries.find(e => e.text.includes('Nguyệt quái thân'));
+    expect(methodEntry).toBeDefined();
+    expect(methodEntry.text).toContain('Tý');
+    expect(methodEntry.text).toContain('Ngọ');
+
+    // Check footnote 3 entry
+    const fn3Entry = record.entries.find(e => e.text.includes('chú thích số 3'));
+    expect(fn3Entry).toBeDefined();
+    expect(fn3Entry.text).toContain('Vĩnh Cao');
+    expect(fn3Entry.text).toContain('hào Thế');
+    expect(fn3Entry.references.some(r => r.section.includes('Chú thích 3'))).toBe(true);
+  });
+
+  it('verifies Câu 51 documents translation discrepancy between Thê and Thế', () => {
+    const record = allRecords.find(
+      r => r.id === 'article-adverse-support-store-intervening-lines-and-release-context',
+    );
+    expect(record).toBeDefined();
+
+    const entry = record.entries.find(e => e.references?.some(r => r.section.includes('Câu 51')));
+    expect(entry).toBeDefined();
+    expect(entry.text).toContain('心退悔兮世空');
+    expect(entry.text).toContain('Tâm thoái hối hề Thế Không');
+    expect(entry.text).toContain('Thê lâm Không');
+    expect(entry.text).toContain('Tuần Không');
+  });
+
+  it('verifies Câu 53 includes full historical exam divination parameters', () => {
+    const record = allRecords.find(
+      r => r.id === 'article-adverse-support-store-intervening-lines-and-release-context',
+    );
+    expect(record).toBeDefined();
+
+    const entry = record.entries.find(e =>
+      e.references?.some(r => r.section.includes('Câu 53') && r.section.includes('bình giải')),
+    );
+    expect(entry).toBeDefined();
+    expect(entry.text).toContain('Quý Dậu');
+    expect(entry.text).toContain('tháng Thìn');
+    expect(entry.text).toContain('Tiết biến Khảm');
+    expect(entry.text).toContain('Tị Hỏa động hóa Kỵ thần Dần Mộc');
+    expect(entry.text).toContain('Mão Mộc là Kỵ thần ám động sinh Thế');
+    expect(entry.text).toContain('bệnh khi vào trường thi');
   });
 
   it('maintains sentences 1-24 core records', () => {
