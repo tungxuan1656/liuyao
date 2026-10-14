@@ -1,3 +1,4 @@
+import { getContentMetadata } from '@liuyao/knowledge';
 import { Link, useParams } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
@@ -9,6 +10,7 @@ import {
   getRecord,
   getReferences,
   getRelatedFigures,
+  recordDescription,
   recordName,
   recordPath,
 } from './library-data';
@@ -51,6 +53,7 @@ export function LibraryDetailPage() {
 
   const related = getRelatedFigures(record);
   const applicableRules = getApplicableRules(record);
+  const isSource = 'type' in record && record.type === 'source';
   const recordMeta =
     'kingWenNumber' in record
       ? `Quẻ ${String(record.kingWenNumber).padStart(2, '0')}`
@@ -77,8 +80,58 @@ export function LibraryDetailPage() {
         {recordMeta && <Badge variant="outline">{recordMeta}</Badge>}
       </header>
 
-      <KnowledgeContent key={id} id={id} />
+      {getContentMetadata(id) ? (
+        <KnowledgeContent key={id} id={id} />
+      ) : !isSource ? (
+        <Card className="min-w-0">
+          <CardHeader>
+            <CardTitle role="heading" aria-level={2}>
+              Thông tin tra cứu cơ sở
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="whitespace-pre-line leading-relaxed text-muted-foreground">
+              {recordDescription(record)}
+            </p>
+          </CardContent>
+        </Card>
+      ) : null}
       <div className="grid items-start gap-6 lg:grid-cols-12">
+        {isSource && (
+          <Card className="min-w-0 lg:col-span-12">
+            <CardHeader>
+              <CardTitle role="heading" aria-level={2}>
+                Thông tin thư mục
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <dl className="grid gap-3">
+                <div>
+                  <dt className="text-muted-foreground">Tác giả</dt>
+                  <dd className="break-words">{record.author}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted-foreground">Thông tin xuất bản</dt>
+                  <dd className="break-words">{record.publication}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted-foreground">Quyền sử dụng</dt>
+                  <dd className="break-words">{record.rights}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted-foreground">Xuất xứ bản nguồn</dt>
+                  <dd className="break-words">{record.provenance}</dd>
+                </div>
+                {record.limitations?.length ? (
+                  <div>
+                    <dt className="text-muted-foreground">Phạm vi diễn giải</dt>
+                    <dd>{record.limitations.join(' ')}</dd>
+                  </div>
+                ) : null}
+              </dl>
+            </CardContent>
+          </Card>
+        )}
         {trigramIds.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>

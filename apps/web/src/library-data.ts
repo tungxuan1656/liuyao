@@ -1,4 +1,9 @@
-import type { KnowledgeEntity, KnowledgeRule, KnowledgeTerm } from '@liuyao/knowledge';
+import type {
+  KnowledgeEntity,
+  KnowledgeRule,
+  KnowledgeSource,
+  KnowledgeTerm,
+} from '@liuyao/knowledge';
 import {
   getContentMetadata,
   getKnowledgeEntity,
@@ -31,7 +36,16 @@ export const ruleCategories = [
 ] as const;
 export type RuleFilter = (typeof ruleCategories)[number];
 type LibraryArticle = { type: 'article'; id: string; title: string; explanation: string };
-export type LibraryRecord = KnowledgeEntity | KnowledgeTerm | KnowledgeRule | LibraryArticle;
+export type LibrarySource = KnowledgeSource & {
+  type: 'source';
+  explanation: string;
+};
+export type LibraryRecord =
+  | KnowledgeEntity
+  | KnowledgeTerm
+  | KnowledgeRule
+  | LibraryArticle
+  | LibrarySource;
 
 export function recordPath(record: LibraryRecord) {
   const type =
@@ -60,18 +74,31 @@ export function getRecord(type: string, id: string) {
       ? { type: 'article' as const, id: item.id, title: item.title, explanation: item.summary }
       : undefined;
   }
+  if (type === 'source') {
+    const source = getSource(id as KnowledgeSource['id']);
+    return source
+      ? ({
+          type: 'source' as const,
+          ...source,
+          explanation: source.publication,
+        } satisfies LibrarySource)
+      : undefined;
+  }
   if (type === 'term') return getTerm(id as KnowledgeTerm['id']);
   if (type === 'rule') return getRule(id as KnowledgeRule['id']);
   if (type === 'trigram' || type === 'hexagram') {
     const entity = getKnowledgeEntity(id as KnowledgeEntity['id']);
     return entity?.kind === type ? entity : undefined;
   }
+  if (type === 'entity') {
+    return getKnowledgeEntity(id as KnowledgeEntity['id']);
+  }
   return undefined;
 }
 
 export function getReferences(id: string) {
   return listSourceReferences()
-    .filter(reference => reference.targetIds.includes(id as never))
+    .filter(reference => reference.targetIds.includes(id as never) || reference.sourceId === id)
     .map(reference => ({ ...reference, source: getSource(reference.sourceId) }))
     .filter(
       (

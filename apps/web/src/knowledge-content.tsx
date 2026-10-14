@@ -24,7 +24,7 @@ function ContentSection({
   id?: string;
 }) {
   return (
-    <Card id={id} className="min-w-0 scroll-mt-24">
+    <Card id={id} className="min-w-0 scroll-mt-24 target:ring-2 target:ring-primary">
       <CardHeader>
         <CardTitle role="heading" aria-level={2}>
           {title}
@@ -80,6 +80,32 @@ export function KnowledgeContent({ id }: { id: string }) {
   return (
     <section className="flex min-w-0 flex-col gap-6" aria-label="Nội dung tham khảo">
       <ContentSection title="Tổng quan" entries={record.entries} />
+      {record.type === 'hexagram' && (
+        <nav aria-label="Chuyển nhanh đến hào" className="flex flex-wrap gap-2">
+          {record.lines.map(line => (
+            <Button
+              key={line.position}
+              variant="outline"
+              size="lg"
+              className="h-auto min-h-11 min-w-0 whitespace-normal text-left"
+              render={<a href={`#line-${line.position}`} />}
+            >
+              Hào {line.position} · {line.label}
+            </Button>
+          ))}
+          {record.specialPassages?.map((passage, index) => (
+            <Button
+              key={passage.title}
+              variant="outline"
+              size="lg"
+              className="h-auto min-h-11 min-w-0 whitespace-normal text-left"
+              render={<a href={`#special-${index}`} />}
+            >
+              {passage.title}
+            </Button>
+          ))}
+        </nav>
+      )}
       {record.relatedIds?.length && record.type !== 'hexagram' && record.type !== 'trigram' ? (
         <Card>
           <CardHeader>
@@ -97,7 +123,11 @@ export function KnowledgeContent({ id }: { id: string }) {
                       {target.title}
                     </Link>
                   </li>
-                ) : null;
+                ) : (
+                  <li key={id} className="text-muted-foreground">
+                    Mục liên quan chưa phát hành
+                  </li>
+                );
               })}
             </ul>
           </CardContent>
@@ -113,12 +143,21 @@ export function KnowledgeContent({ id }: { id: string }) {
           />
         ))}
       {record.type === 'hexagram' &&
-        record.specialPassages?.map(passage => (
-          <ContentSection key={passage.title} title={passage.title} entries={passage.entries} />
+        record.specialPassages?.map((passage, index) => (
+          <ContentSection
+            key={passage.title}
+            id={`special-${index}`}
+            title={passage.title}
+            entries={passage.entries}
+          />
         ))}
       {record.tables?.length ? <KnowledgeTables tables={record.tables} /> : null}
       {record.figures?.map(figure => (
-        <Card key={figure.id} id={figure.id} className="scroll-mt-24">
+        <Card
+          key={figure.id}
+          id={figure.id}
+          className="scroll-mt-24 target:ring-2 target:ring-primary"
+        >
           <CardHeader>
             <CardTitle role="heading" aria-level={2}>
               {figure.title}

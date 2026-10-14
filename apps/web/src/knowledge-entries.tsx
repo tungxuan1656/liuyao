@@ -11,6 +11,9 @@ function linkPath(link: ContentLink) {
     : undefined;
 }
 export function KnowledgeReferences({ references }: { references: readonly ContentReference[] }) {
+  if (!references || references.length === 0) {
+    return <p className="text-sm text-muted-foreground">Chưa có trích dẫn nguồn cho mục này.</p>;
+  }
   return (
     <details>
       <summary className="min-h-11 cursor-pointer content-center text-muted-foreground">
@@ -44,7 +47,9 @@ function TargetLink({ target }: { target: NonNullable<ContentEntry['target']> })
     <Link className="underline" to={`${ROUTES.libraryDetail(item.type, item.id)}#${target.id}`}>
       {item.title} · {target.kind === 'table' ? 'Bảng tham chiếu' : 'Hình tham chiếu'}
     </Link>
-  ) : null;
+  ) : (
+    <span className="text-sm text-muted-foreground">Tài liệu tham chiếu chưa phát hành</span>
+  );
 }
 export function KnowledgeEntries({
   entries,
@@ -53,6 +58,11 @@ export function KnowledgeEntries({
   entries: readonly ContentEntry[];
   expanded?: boolean;
 }) {
+  if (!entries || entries.length === 0) {
+    return (
+      <p className="text-sm text-muted-foreground">Chưa có chú giải phát hành cho phần này.</p>
+    );
+  }
   const visible = expanded ? entries : entries.slice(0, 4);
   return (
     <div className="flex flex-col gap-6">
