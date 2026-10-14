@@ -16,7 +16,7 @@ import { YaoSymbol } from './components/yao-symbol';
 import { useReadingSession } from './reading-session';
 import { HexagramBoard } from './result-board';
 import { FactButton, FactInspector, type FactSelection } from './result-facts';
-import { branchName, elementName, relativeName, stemName } from './result-labels';
+import { branchName, elementName, hexagramLabel, relativeName, stemName } from './result-labels';
 import { ROUTES } from './route-paths';
 import './components/route-layout.css';
 import './result-view.css';
@@ -141,24 +141,55 @@ export function ResultView() {
                   className="flex min-w-0 flex-col gap-3 py-4 first:pt-0 last:pb-0"
                   aria-label={`Hào ${line.position}`}
                 >
-                  <div className="flex min-w-0 flex-wrap items-center gap-3">
-                    <Badge variant="outline">Hào {line.position}</Badge>
-                    <YaoSymbol polarity={line.polarity} changing={line.changing} />
-                    <span className="font-medium">
-                      {getYaoName(line.inputValue)}
-                      {line.changing ? ' · động' : ''}
-                    </span>
-                    {line.position === reading.result.shiPosition && (
-                      <Badge variant="secondary">Thế</Badge>
-                    )}
-                    {line.position === reading.result.yingPosition && (
-                      <Badge variant="secondary">Ứng</Badge>
-                    )}
-                    {line.changing && (
-                      <span className="text-muted-foreground">
-                        → {line.polarity === 'yin' ? 'Dương' : 'Âm'}
+                  <div className="flex min-w-0 flex-wrap items-center justify-between gap-3">
+                    <div className="flex min-w-0 flex-wrap items-center gap-3">
+                      <Badge variant="outline">Hào {line.position}</Badge>
+                      <YaoSymbol polarity={line.polarity} changing={line.changing} />
+                      <span className="font-medium">
+                        {getYaoName(line.inputValue)}
+                        {line.changing ? ' · động' : ''}
                       </span>
-                    )}
+                      {line.position === reading.result.shiPosition && (
+                        <Badge variant="secondary">Thế</Badge>
+                      )}
+                      {line.position === reading.result.yingPosition && (
+                        <Badge variant="secondary">Ứng</Badge>
+                      )}
+                      {line.changing && (
+                        <span className="text-muted-foreground">
+                          → {line.polarity === 'yin' ? 'Dương' : 'Âm'}
+                        </span>
+                      )}
+                    </div>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-11"
+                      onClick={() =>
+                        selectFact({
+                          id: 'context.line',
+                          label: `Hào ${line.position} · Quẻ chính`,
+                          value: `${hexagramLabel(reading.result.primaryHexagramId)} · Hào ${line.position}`,
+                          context: {
+                            contextType: 'primary',
+                            hexagramId: reading.result.primaryHexagramId,
+                            position: line.position,
+                            lineInfo: {
+                              polarity: line.polarity,
+                              changing: line.changing,
+                              inputValue: line.inputValue,
+                              transformedPolarity: line.changing
+                                ? line.polarity === 'yin'
+                                  ? 'yang'
+                                  : 'yin'
+                                : undefined,
+                            },
+                          },
+                        })
+                      }
+                    >
+                      Giải nghĩa hào
+                    </Button>
                   </div>
                   <div className="grid min-w-0 gap-2 sm:grid-cols-3">
                     <FactButton

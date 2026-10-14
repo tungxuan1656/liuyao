@@ -1,21 +1,35 @@
-import type { KnowledgeFactId } from '@liuyao/knowledge';
+import type { HexagramId, KnowledgeFactId } from '@liuyao/knowledge';
 import { getRulesForFact, getSource, listSourceReferences } from '@liuyao/knowledge';
 import type { RefObject } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
+import { ResultKnowledgeInspector } from './result-knowledge-inspector';
 import { ROUTES } from './route-paths';
 
 type FactLibraryTarget =
   | { kind: 'hexagram'; id: `hexagram-${string}` }
   | { kind: 'trigram'; id: `trigram-${string}` };
 
+export type HexagramKnowledgeContext = {
+  contextType: 'primary' | 'changed';
+  hexagramId: HexagramId;
+  position?: number;
+  lineInfo?: {
+    polarity: 'yin' | 'yang';
+    changing: boolean;
+    inputValue: number;
+    transformedPolarity?: 'yin' | 'yang';
+  };
+};
+
 export type FactSelection = {
-  id: KnowledgeFactId;
+  id: KnowledgeFactId | 'context.hexagram' | 'context.line';
   label: string;
   value: string;
   libraryTarget?: FactLibraryTarget;
+  context?: HexagramKnowledgeContext;
 };
 
 export function FactButton({
@@ -52,7 +66,19 @@ export function FactInspector({
   close: () => void;
   closeRef?: RefObject<HTMLButtonElement | null>;
 }) {
-  const rules = getRulesForFact(fact.id);
+  if (fact.context) {
+    return (
+      <ResultKnowledgeInspector
+        key={`${fact.context.contextType}-${fact.context.hexagramId}`}
+        fact={fact as FactSelection & { context: HexagramKnowledgeContext }}
+        close={close}
+        closeRef={closeRef}
+      />
+    );
+  }
+
+  const rules =
+    fact.id === 'context.hexagram' || fact.id === 'context.line' ? [] : getRulesForFact(fact.id);
   const references = listSourceReferences().filter(reference =>
     rules.some(rule => reference.targetIds.includes(rule.id)),
   );
@@ -106,27 +132,41 @@ export function FactInspector({
             {references.map(reference => {
               const source = getSource(reference.sourceId);
               if (!source) return null;
+              const isProjectConvention = source.id === 'source-liuyao-v1-contract';
               const url = sourceUrl(source.provenance);
               return (
                 <article
                   key={reference.id}
                   className="flex flex-col gap-2 py-3 first:pt-0 last:pb-0"
                 >
-                  <h4 className="font-medium">{source.title}</h4>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h4 className="font-medium">{source.title}</h4>
+                    {isProjectConvention && <Badge variant="outline">Quy ước dự án</Badge>}
+                  </div>
                   <p className="text-muted-foreground">
                     {source.author}
                     {reference.location ? ` · ${reference.location}` : ''}
                   </p>
-                  {url ? (
+                  <div className="flex flex-wrap items-center gap-2">
                     <Button
                       variant="link"
                       size="lg"
                       className="h-auto min-h-11 whitespace-normal text-left"
-                      render={<a href={url} target="_blank" rel="noreferrer" />}
+                      render={<Link to={ROUTES.libraryDetail('source', source.id)} />}
                     >
-                      Xem nguồn
+                      Chi tiết nguồn
                     </Button>
-                  ) : null}
+                    {url ? (
+                      <Button
+                        variant="link"
+                        size="lg"
+                        className="h-auto min-h-11 whitespace-normal text-left"
+                        render={<a href={url} target="_blank" rel="noreferrer" />}
+                      >
+                        Tài liệu tham khảo
+                      </Button>
+                    ) : null}
+                  </div>
                 </article>
               );
             })}
