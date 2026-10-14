@@ -50,6 +50,32 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Source-comparison pass on supplied BPCT PDF 270–301 (verified SHA-256: `713f6f5b170a8e9e2dc39c137a2d18488bb5f185cdac1ade621953b5fa3f897a`): 145 child units across chapters 23–26 (44/29/39/33), four chapter units, and PDF 279 folio-only. Five source-specific wording defects repaired in three existing articles. JSON parsing and unchanged identifiers, reference arrays, and attributions checked on each edited record; an independent source review and repository verification have not yet been completed.
+- Next: Ask an independent reviewer to inspect the five repairs and nearby source contexts, run `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` on the PR head, then record exact-head acceptance and close the task only when both pass.
+- Blockers: not assessed: independent source review and required repository checks pending.
+
+## T09 source-comparison findings (PR candidate, not acceptance)
+
+All 145 child units have source locators; the chapter-unit coverage is 44 + 29 + 39 + 33.
+PDF 279 was visually checked and contains only printed folio 241. Chapter 24 repeats item
+14, and chapter 26 skips item 26: preserve these source features rather than inventing text.
+
+| Finding | Source locator | Minimal repair |
+| --- | --- | --- |
+| Chapter 23 / item 5 | BPCT PDF 272, printed 234 | Replace vague “đói/no” with the source distinction “thương thực hoặc đói”. |
+| Chapter 23 / item 25 | BPCT PDF 277, printed 239 | Say *hào tam lâm Không*, not ambiguous “Tam Không” (which could mean three empty lines). |
+| Chapter 25 / item 19 | BPCT PDF 291, printed 251 | Keep the phú’s “Mộc đới Tài hưng” distinct from the Vietnamese gloss’s “vượng”; the commentary separately conditions its reading on Tài moving. These historical statements are not dietary instructions. |
+| Chapter 26 / item 21 | BPCT PDF 299, printed 258 | Specify *hào ngũ có Quỷ*, not “Ngũ Quỷ” as though this were a five-ghost category. |
+| Chapter 26 / item 28 | BPCT PDF 300, printed 259 | Preserve “Nhật tính, Kỵ hưng” and “Thân lâm, Dụng phát” instead of treating Nhật as a moving line or the phrase as a single “Thân Dụng” condition. |
+
+Chapters 23–26 retain their phú, Vietnamese rendering, commentary, and Vĩnh Cao note
+layers; chapter 23 additionally keeps the separate unsigned “Đông tà” insertion.
+Chapter 24 was source-compared with no material content amendment warranted in this pass.
+Source-attributed medical outcomes, ritual proposals, allegations about travellers,
+and date judgments are historical claims, **not** clinical guidance or verified forecasts.
+
+**Review gate remains open:** the writer's source comparison is not an independent
+review; source-image sampling covered PDF 279 only. Automated repository tests and
+the complete source-image inspection have not been performed in this environment.
+This task remains `todo` until the PR's independent review and verification are
+accepted; no review PASS or publication certificate is claimed.
