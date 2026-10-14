@@ -1,6 +1,6 @@
 # task-review-and-improve-ordered-lessons-and-every-worked-example - Review and improve ordered lessons and every worked example
 
-- Status: todo
+- Status: done
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-author-ordered-lessons-and-reviewed-worked-examples](task-author-ordered-lessons-and-reviewed-worked-examples.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -22,13 +22,13 @@ route changes, or edits outside the assigned group.
 
 ## Acceptance
 
-- [ ] Foundations lessons.
-- [ ] Classical-reading lessons.
-- [ ] Liu Yao-board lessons.
-- [ ] Every worked example, input, source route, and independently expected result.
-- [ ] Review every explanatory block against its supporting records and source passages and the intended audience.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Foundations lessons.
+- [x] Classical-reading lessons.
+- [x] Liu Yao-board lessons.
+- [x] Every worked example, input, source route, and independently expected result.
+- [x] Review every explanatory block against its supporting records and source passages and the intended audience.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -50,6 +50,14 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Completed attributed source review of all 17 lesson blocks across four ordered
+  lessons and independently inspected all three worked examples (input values, six positions,
+  moving patterns, primary/changed quẻ, palace, Thế/Ứng, Nạp Giáp, elemental relations, and
+  source routes). Inspected supplied book passages: NHL PDF pp. 35–40, 59–61, 72–73, 128,
+  131–135, 153, 166; PBC pp. 30–31; NTT pp. 80–81; BPCT pp. 8–14, 49, 61.
+  Repaired: (1) BPCT PDF p. 61 (printed p. 50) Tụng's third line hidden Quan Quỷ Hợi Thủy
+  (Phục thần) below Ngọ Hỏa; (2) NHL pp. 134–135 Càn's six changing lines with Dụng cửu
+  attributed commentary. Added regression test assertions in `content-worked-readings.test.ts`.
+  Passed full `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books`.
+- Next: Merge PR into main.
+- Blockers: None.

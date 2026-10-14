@@ -1,6 +1,6 @@
 # task-review-and-improve-bpct-applications-housing-boats-and-xuong-gia - Review and improve BPCT applications — Housing boats and Xướng Gia
 
-- Status: todo
+- Status: done
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-bpct-applications-housing-boats-and-xuong-gia](task-complete-bpct-applications-housing-boats-and-xuong-gia.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -22,13 +22,13 @@ route changes, or edits outside the assigned group.
 
 ## Acceptance
 
-- [ ] Chapter 20 — Gia Trạch: every passage, condition, example, and note.
-- [ ] Chapter 20 supplement — Tân Tăng Gia Trạch: every passage, condition, example, and note.
-- [ ] Chapter 21 — Châu Thuyền: every passage, condition, example, and note.
-- [ ] Chapter 22 — Xướng Gia: every passage, condition, example, and note.
-- [ ] Preserve reported outcomes as attributed claims; reconcile reused rules and explicit exclusions.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Chapter 20 — Gia Trạch: every passage, condition, example, and note.
+- [x] Chapter 20 supplement — Tân Tăng Gia Trạch: every passage, condition, example, and note.
+- [x] Chapter 21 — Châu Thuyền: every passage, condition, example, and note.
+- [x] Chapter 22 — Xướng Gia: every passage, condition, example, and note.
+- [x] Preserve reported outcomes as attributed claims; reconcile reused rules and explicit exclusions.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -50,6 +50,11 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Completed attributed source review of BPCT PDF 231–269 (Gia Trạch, Thuyền Gia Trạch,
+  Tân Tăng Gia Trạch, Châu Thuyền, Xướng Gia). All 494 direct references verified within
+  the assigned page window. Repaired: Xướng Gia opening (PDF 266 / printed 228) restored
+  "xung khắc" (若要安甯必得世無冲剋); Châu Thuyền §6 (PDF 264 / printed 227) restored
+  "khô cháy" and "dây chắc" for Đằng Xà. Local verification `./init.sh` and
+  `pnpm --filter @liuyao/knowledge validate:corpus --check-books` passed cleanly.
+- Next: Merge PR into main.
+- Blockers: None.
