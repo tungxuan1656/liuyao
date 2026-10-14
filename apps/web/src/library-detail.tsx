@@ -10,10 +10,13 @@ import {
   getRecord,
   getReferences,
   getRelatedFigures,
+  getSourceContents,
+  getSourceReferences,
   recordDescription,
   recordName,
   recordPath,
 } from './library-data';
+import { LibrarySourceSections } from './library-source-detail';
 import { getLinePresentation } from './line-value-presentation';
 import { ROUTES } from './route-paths';
 
@@ -31,7 +34,11 @@ const ruleCategories = {
 export function LibraryDetailPage() {
   const { entityType = '', id = '' } = useParams();
   const record = getRecord(entityType, id);
-  const references = getReferences(record?.id ?? '');
+  const sourceRecord = record && 'type' in record && record.type === 'source' ? record : undefined;
+  const isSource = Boolean(sourceRecord);
+  const references = !isSource && record ? getReferences(record.id) : [];
+  const sourceContents = isSource ? getSourceContents(id) : [];
+  const sourceReferences = isSource ? getSourceReferences(id) : [];
 
   if (!record)
     return (
@@ -53,7 +60,6 @@ export function LibraryDetailPage() {
 
   const related = getRelatedFigures(record);
   const applicableRules = getApplicableRules(record);
-  const isSource = 'type' in record && record.type === 'source';
   const recordMeta =
     'kingWenNumber' in record
       ? `Quẻ ${String(record.kingWenNumber).padStart(2, '0')}`
@@ -97,40 +103,12 @@ export function LibraryDetailPage() {
         </Card>
       ) : null}
       <div className="grid items-start gap-6 lg:grid-cols-12">
-        {isSource && (
-          <Card className="min-w-0 lg:col-span-12">
-            <CardHeader>
-              <CardTitle role="heading" aria-level={2}>
-                Thông tin thư mục
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <dl className="grid gap-3">
-                <div>
-                  <dt className="text-muted-foreground">Tác giả</dt>
-                  <dd className="break-words">{record.author}</dd>
-                </div>
-                <div>
-                  <dt className="text-muted-foreground">Thông tin xuất bản</dt>
-                  <dd className="break-words">{record.publication}</dd>
-                </div>
-                <div>
-                  <dt className="text-muted-foreground">Quyền sử dụng</dt>
-                  <dd className="break-words">{record.rights}</dd>
-                </div>
-                <div>
-                  <dt className="text-muted-foreground">Xuất xứ bản nguồn</dt>
-                  <dd className="break-words">{record.provenance}</dd>
-                </div>
-                {record.limitations?.length ? (
-                  <div>
-                    <dt className="text-muted-foreground">Phạm vi diễn giải</dt>
-                    <dd>{record.limitations.join(' ')}</dd>
-                  </div>
-                ) : null}
-              </dl>
-            </CardContent>
-          </Card>
+        {sourceRecord && (
+          <LibrarySourceSections
+            source={sourceRecord}
+            contents={sourceContents}
+            references={sourceReferences}
+          />
         )}
         {trigramIds.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
@@ -224,7 +202,14 @@ export function LibraryDetailPage() {
                     className="flex flex-col gap-3 py-4 first:pt-0 last:pb-0"
                   >
                     <div>
-                      <h3 className="font-semibold">{reference.source.title}</h3>
+                      <h3 className="font-semibold">
+                        <Link
+                          to={ROUTES.libraryDetail('source', reference.source.id)}
+                          className="inline-flex min-h-11 items-center underline"
+                        >
+                          {reference.source.title}
+                        </Link>
+                      </h3>
                       {reference.location && (
                         <p className="text-muted-foreground">{reference.location}</p>
                       )}

@@ -24,16 +24,23 @@ export function KnowledgeReferences({ references }: { references: readonly Conte
           // biome-ignore lint/suspicious/noArrayIndexKey: references carry no identifier of their own; the list is static.
           <li key={i}>
             {'sourceId' in ref ? (
-              (getSource(ref.sourceId)?.title ?? ref.sourceId) +
-              ' · PDF ' +
-              (ref.pdfPages[0] === ref.pdfPages[1] ? ref.pdfPages[0] : ref.pdfPages.join('–')) +
-              (ref.printedPages
-                ? ' · Trang in ' +
-                  (ref.printedPages[0] === ref.printedPages[1]
-                    ? ref.printedPages[0]
-                    : ref.printedPages.join('–'))
-                : '') +
-              (ref.section ? ` · ${ref.section}` : '')
+              <>
+                <Link
+                  className="inline-flex min-h-11 items-center underline"
+                  to={ROUTES.libraryDetail('source', ref.sourceId)}
+                >
+                  {getSource(ref.sourceId)?.title ?? ref.sourceId}
+                </Link>
+                {' · PDF ' +
+                  (ref.pdfPages[0] === ref.pdfPages[1] ? ref.pdfPages[0] : ref.pdfPages.join('–')) +
+                  (ref.printedPages
+                    ? ' · Trang in ' +
+                      (ref.printedPages[0] === ref.printedPages[1]
+                        ? ref.printedPages[0]
+                        : ref.printedPages.join('–'))
+                    : '') +
+                  (ref.section ? ` · ${ref.section}` : '')}
+              </>
             ) : (
               <a
                 className="inline-flex min-h-11 items-center underline"

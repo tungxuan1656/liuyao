@@ -55,5 +55,10 @@ Corpus authoring or certification, automated interpretation, calendar analysis, 
   - Preserved existing entity, term, rule, and source compatibility routes; bibliographic details rendered for sources; explicit fallback text rendered for unreleased/missing commentary or target links without audit badges or certification ledgers.
   - Verified with `agent-browser` on desktop and mobile viewports (360x640), testing `#line-1` anchor jump, special passages, tables (`rule-branch-element`), figures (`article-nhl-he-tu-ha-02`), source bibliographies (`source-zhouyi`), and 404 recovery (`hexagram-99`).
   - Verified full test and build suite with `./init.sh` (all lint, format, check-ts-length, check-test-placement, check-package-exports, and unit/corpus tests passing).
+  - Verified corpus and supplied books with `pnpm --filter @liuyao/knowledge validate:corpus --check-books --check` (`Knowledge: 381 records; 381 ready; 4 supplied books. Structural links and source pages valid.`).
+  - Addressed PR review feedback:
+    - Separated source detail page presentation: source metadata displayed once at top; reverse references cleanly divided into "Nội dung sử dụng nguồn" (covering articles, lessons via `listContent({ sourceId })`) and "Mục từ tham chiếu" (resolved entity/rule/term targets via `listSourceReferences()`), removing redundant source title repetitions.
+    - Linked citation source titles in `KnowledgeReferences` to `/library/source/:id` with >=44px touch targets.
+    - Added unit test in `packages/knowledge/tests/content.test.ts` for reverse content lookup by `sourceId`.
 - Next: Advance to `task-connect-reading-results-to-contextual-que-and-hao-knowledge` (Step 6 Task 099).
 - Blockers: none.

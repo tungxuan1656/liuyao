@@ -98,7 +98,7 @@ export function getRecord(type: string, id: string) {
 
 export function getReferences(id: string) {
   return listSourceReferences()
-    .filter(reference => reference.targetIds.includes(id as never) || reference.sourceId === id)
+    .filter(reference => reference.targetIds.includes(id as never))
     .map(reference => ({ ...reference, source: getSource(reference.sourceId) }))
     .filter(
       (
@@ -106,6 +106,55 @@ export function getReferences(id: string) {
       ): reference is typeof reference & { source: NonNullable<typeof reference.source> } =>
         Boolean(reference.source),
     );
+}
+
+export interface ResolvedTarget {
+  readonly id: string;
+  readonly title: string;
+  readonly type: string;
+  readonly path: string;
+}
+
+export function resolveTarget(id: string): ResolvedTarget | undefined {
+  const content = getContentMetadata(id);
+  if (content)
+    return {
+      id,
+      title: content.title,
+      type: content.type,
+      path: ROUTES.libraryDetail(content.type, content.id),
+    };
+  const entity = getKnowledgeEntity(id as never);
+  if (entity)
+    return {
+      id,
+      title: entity.name,
+      type: entity.kind,
+      path: ROUTES.libraryDetail(entity.kind, entity.id),
+    };
+  const term = getTerm(id as never);
+  if (term)
+    return { id, title: term.name, type: 'term', path: ROUTES.libraryDetail('term', term.id) };
+  const rule = getRule(id as never);
+  if (rule)
+    return { id, title: rule.title, type: 'rule', path: ROUTES.libraryDetail('rule', rule.id) };
+  return undefined;
+}
+
+export function getSourceContents(sourceId: string) {
+  return listContent({ sourceId });
+}
+
+export function getSourceReferences(sourceId: string) {
+  return listSourceReferences()
+    .filter(reference => reference.sourceId === sourceId)
+    .map(reference => ({
+      ...reference,
+      targets: reference.targetIds
+        .map(resolveTarget)
+        .filter((target): target is ResolvedTarget => Boolean(target)),
+    }))
+    .filter(reference => reference.targets.length > 0);
 }
 
 export function getApplicableRules(record: LibraryRecord): KnowledgeRule[] {
