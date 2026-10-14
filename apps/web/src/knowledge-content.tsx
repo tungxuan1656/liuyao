@@ -56,16 +56,28 @@ export function KnowledgeContent({ id }: { id: string }) {
   }, [id, key]);
   useEffect(() => {
     if (!state?.record || state.key !== key || !hash) return;
+    let cleanup: (() => void) | undefined;
     try {
-      const target = document.getElementById(decodeURIComponent(hash.slice(1)));
-      if (!target) return;
-      for (let parent = target.parentElement; parent; parent = parent.parentElement) {
-        if (parent instanceof HTMLDetailsElement) parent.open = true;
+      const targetId = decodeURIComponent(hash.slice(1));
+      const target = document.getElementById(targetId);
+      if (target) {
+        for (let parent = target.parentElement; parent; parent = parent.parentElement) {
+          if (parent instanceof HTMLDetailsElement) parent.open = true;
+        }
+        target.scrollIntoView();
+        const previous = document.querySelectorAll('.ring-primary.ring-2');
+        for (const el of previous) {
+          el.classList.remove('ring-2', 'ring-primary');
+        }
+        target.classList.add('ring-2', 'ring-primary');
+        cleanup = () => {
+          target.classList.remove('ring-2', 'ring-primary');
+        };
       }
-      target.scrollIntoView();
     } catch {
       // Ignore malformed URL fragments
     }
+    return cleanup;
   }, [hash, key, state]);
   if (state?.key !== key) return <p role="status">Đang tải nội dung…</p>;
   if (state.error || !state.record)
