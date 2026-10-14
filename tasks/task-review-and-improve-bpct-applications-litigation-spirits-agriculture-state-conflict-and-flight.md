@@ -1,6 +1,6 @@
 # task-review-and-improve-bpct-applications-litigation-spirits-agriculture-state-conflict-and-flight - Review and improve BPCT applications — Litigation spirits agriculture state conflict and flight
 
-- Status: todo
+- Status: active
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-bpct-applications-litigation-spirits-agriculture-state-conflict-and-flight](task-complete-bpct-applications-litigation-spirits-agriculture-state-conflict-and-flight.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -55,6 +55,6 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: Not executed.
-- Next: Confirm dependencies, select this feature, then inspect its first unit.
-- Blockers: not evaluated until owner selection and dependency check.
+- Evidence: Started a bounded, source-backed pass through all nine chapter overviews. Compared the cited passages in *Tăng Bổ Bốc Phệ Chính Tông*, PDF 302–364; the edited rules are located at PDF 302–303, 310, 316–317, 323, 330, 335–336, 340, 347, 357–358 and 364. Inspected PDF 330 as a page image; other edited claims were checked in the PDF text. Repaired omitted conditions in the existing overview layer only, preserving all IDs, reference pointers and other attributed layers. This is not yet a complete 294-unit clause-by-clause audit.
+- Next: Finish the full 294-unit source and note review, request an independent review of the changed assertions, run `./init.sh` and the book-aware corpus check in the supported workspace, and only then close the remaining acceptance items.
+- Blockers: Complete source comparison, independent review and full workspace verification remain outstanding; the available runtime lacks the complete Node 24/pnpm 12 checkout. Do not mark this task done or claim the publication gate passed.
