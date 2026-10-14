@@ -18,6 +18,5 @@ code is bundled here.
 documentation, scripts, templates, and references are maintained here and may
 diverge from the listed sources. The existing README identifies walkinglabs as
 the original prototype and the Anthropic/OpenAI material as lessons applied by
-this project; it does not identify any file as a verbatim copy. Locally maintained
-skill files follow the repository [licensing boundary](../../../LICENSING.md):
-AGPL-3.0-only unless a file states otherwise.
+this project; it does not identify any file as a verbatim copy. The local
+repository declares the MIT license for this skill.

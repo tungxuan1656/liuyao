@@ -28,6 +28,7 @@ Read only the documents relevant to the current task.
 - After changing tasks, run `pnpm tasks:index`; `pnpm tasks:check` checks freshness and readiness self-checks. See `docs/development.md` for the metadata contract.
 - Use `todo`, `active`, `blocked`, or `done`. Start work only after user approval and required start dependencies are complete.
 - Independent tasks can be active concurrently. Agree file ownership or integration order before overlapping edits; task records are not locks.
+- When asked what to do next or choosing unblocked work, check candidates (`todo`, completed start requirements, no blockers) via `node .agents/skills/harness/scripts/task-ready.mjs tasks/`. Do not run when assigned a specific task; technical readiness does not bypass user approval.
 - Inspect the working tree, read the selected task and its canonical sources, then run relevant baseline checks before implementation.
 - Keep bounded plans inline. Retain existing linked plan paths when useful; current task state and canonical policy override historical instructions.
 - At handoff, update the selected task or tracker with actual evidence, blockers, and one concrete next action; regenerate the index when task inputs change.
@@ -55,4 +56,4 @@ Read only the documents relevant to the current task.
 - Ask when requirements, ownership, dependency meaning, or scope remains materially ambiguous.
 - Stop and report repeated verification failures.
 
-<!-- harness 2.0.0 | migrated 2026-10-13 | managed harness lifecycle; preserve repository-specific routes and rules -->
+<!-- harness 2.1.0 | updated 2026-10-14 | managed harness lifecycle; preserve repository-specific routes and rules -->
