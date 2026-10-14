@@ -42,7 +42,6 @@ Execution status does not live in `docs/`. Use the selected task under `tasks/` 
 | ------------------------------------------------ | ---------------------------------- | ----------------------------------------------------------------------------------------------- |
 | You need a retired review or accounting artifact | `docs/reviews/knowledge/README.md` | Historical notes and Git recovery paths                                                         |
 | You need the intent recorded for earlier work    | `docs/plans/`                      | Retained execution plans; current task and canonical policy override old lifecycle instructions |
-| You need pre-v2 feature or progress evidence     | `features/README.md`               | Frozen history and the complete task-path mapping                                               |
 | You compare a claim with a supplied edition      | `docs/books/`                      | Local PDFs, ignored by Git, never redistributed                                                 |
 
 Files routed above hold the current contract. Authored source records live in `packages/knowledge/data/`. Generated runtime output lives in build directories and is never a truth source. A historical plan, review note, or progress block records what was decided then; the canonical document wins when they disagree.

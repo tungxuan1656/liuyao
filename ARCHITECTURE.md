@@ -64,7 +64,7 @@ Packages currently have no runtime dependency on each other. Add a package edge 
 | Executable agent verification workflow        | `init.sh`                                 |
 | Temporary task execution state                | `tasks/` or the selected external tracker |
 
-Do not move durable facts into task records. Pre-v2 feature/index/progress files remain [read-only history](features/README.md), not current execution state.
+Do not move durable facts into task records. Task execution state belongs under `tasks/` or the selected external tracker.
 
 ## Runtime flow
 

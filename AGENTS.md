@@ -32,7 +32,6 @@ Read only the documents relevant to the current task.
 - Keep bounded plans inline. Retain existing linked plan paths when useful; current task state and canonical policy override historical instructions.
 - At handoff, update the selected task or tracker with actual evidence, blockers, and one concrete next action; regenerate the index when task inputs change.
 - Mark done only when acceptance and relevant checks pass. Knowledge evidence includes the reviewer's inspected scope, sources/pages, remaining findings, and verified revision.
-- `features/`, `feature_index.json`, and `progress.md` are frozen pre-v2 history, not live instructions or writable state.
 
 ## Repository rules
 

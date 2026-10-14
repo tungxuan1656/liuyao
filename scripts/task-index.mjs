@@ -114,10 +114,6 @@ function renderIndex(tasks) {
     '',
     table(tasks),
     '',
-    '## Legacy History',
-    '',
-    '[Retention and ID mapping](../features/README.md). Do not update the frozen feature index or root progress log.',
-    '',
   ].join('\n');
 }
 
