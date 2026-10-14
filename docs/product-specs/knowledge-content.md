@@ -48,7 +48,7 @@ If a commentary is absent, use a supported reported view with its intermediary o
 Organize additional material by its meaning and actual source heading.
 A useful library does not require an inventory decision for every book page, note, or blank.
 
-Record a missing passage or unresolved interpretation as a concise content note or feature finding.
+Record a missing passage or unresolved interpretation as a concise content note or task finding.
 Do not invent an explanation to fill a count. Missing source material does not block unrelated content.
 
 ## Batch acceptance
@@ -60,4 +60,4 @@ Do not invent an explanation to fill a count. Missing source material does not b
 - [Publication checks](knowledge-quality.md#publication-gate) pass.
 
 [The roadmap](../../tasks/knowledge-roadmap.md) owns execution order.
-Feature records track unfinished work. Git records revisions; content does not carry audit history.
+[Task records](../../tasks/index.md) track unfinished work. Git records revisions; content does not carry audit history.

@@ -69,6 +69,17 @@ function renderIndex(tasks) {
       assert.notEqual(dependency, task.file, `${task.file}: task depends on itself`);
     }
   }
+  const visited = new Set();
+  const visiting = new Set();
+  const visit = file => {
+    if (visited.has(file)) return;
+    assert(!visiting.has(file), `Dependency cycle: ${[...visiting, file].join(' -> ')}`);
+    visiting.add(file);
+    for (const dependency of byFile.get(file).dependencies) visit(dependency);
+    visiting.delete(file);
+    visited.add(file);
+  };
+  for (const task of tasks) visit(task.file);
   const cell = value => value.replace(/\|/g, '\\|');
   const table = selected =>
     [
@@ -138,6 +149,29 @@ function selfCheck() {
     /unknown dependency/,
   );
   assert.throws(() => renderIndex([fixture('a', 'todo', '[a](task-a.md)')]), /depends on itself/);
+  assert.throws(
+    () =>
+      renderIndex([fixture('a', 'todo', '[b](task-b.md)'), fixture('b', 'todo', '[a](task-a.md)')]),
+    /Dependency cycle: task-a\.md -> task-b\.md -> task-a\.md/,
+  );
+  assert.throws(
+    () =>
+      renderIndex([
+        done,
+        fixture('b', 'todo', '[c](task-c.md)'),
+        fixture('c', 'active', '[d](task-d.md)'),
+        fixture('d', 'blocked', '[b](task-b.md)'),
+      ]),
+    /Dependency cycle: task-b\.md -> task-c\.md -> task-d\.md -> task-b\.md/,
+  );
+  assert.doesNotThrow(() =>
+    renderIndex([
+      done,
+      ready,
+      fixture('c', 'todo', '[a](task-a.md)'),
+      fixture('d', 'todo', '[b](task-b.md), [c](task-c.md)'),
+    ]),
+  );
   assert.throws(() => renderIndex([done, done]), /Duplicate task IDs/);
   assert.throws(() => fixture('a', 'unknown'), /invalid status/);
   assert.throws(

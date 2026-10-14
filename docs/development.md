@@ -107,7 +107,7 @@ Execution state belongs to the selected task under `tasks/` or an adequate exter
 - Record current blockers as `- Blockers:` directly under `## Handoff`, before historical subsections. `none` means assessed and clear; missing or unassessed blockers require review.
 - Start candidates have `todo` status and all start dependencies `done`, with no explicit blocker or manual gate. Unassessed blockers are labelled `review blockers`, not cleared automatically.
 - Readiness grants no approval or priority. Integration/release gates do not prevent starting; they remain in each task.
-- Generation fails on invalid status, duplicate IDs, missing metadata, unknown dependencies, or self-dependencies. Tool self-checks use small in-script fixtures, not domain/package test suites.
+- Generation fails on invalid status, duplicate IDs, missing metadata, unknown dependencies, self-dependencies, or dependency cycles. Tool self-checks use small in-script fixtures, not domain/package test suites.
 
 ## Full verification
 

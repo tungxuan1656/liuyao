@@ -133,4 +133,4 @@ V1 is launched only when all production checks pass:
 - Production delivery → `docs/release.md`
 - Implementation tasks → `docs/product-specs/v1-task-map.md`
 
-Use repository feature records only when execution state needs persistence.
+Use [repository task records](../../tasks/index.md) only when execution state needs persistence.
