@@ -11,6 +11,9 @@ function linkPath(link: ContentLink) {
     : undefined;
 }
 export function KnowledgeReferences({ references }: { references: readonly ContentReference[] }) {
+  if (!references || references.length === 0) {
+    return <p className="text-sm text-muted-foreground">Chưa có trích dẫn nguồn cho mục này.</p>;
+  }
   return (
     <details>
       <summary className="min-h-11 cursor-pointer content-center text-muted-foreground">
@@ -20,18 +23,34 @@ export function KnowledgeReferences({ references }: { references: readonly Conte
         {references.map((ref, i) => (
           // biome-ignore lint/suspicious/noArrayIndexKey: references carry no identifier of their own; the list is static.
           <li key={i}>
-            {'sourceId' in ref
-              ? (getSource(ref.sourceId)?.title ?? ref.sourceId) +
-                ' · PDF ' +
-                (ref.pdfPages[0] === ref.pdfPages[1] ? ref.pdfPages[0] : ref.pdfPages.join('–')) +
-                (ref.printedPages
-                  ? ' · Trang in ' +
-                    (ref.printedPages[0] === ref.printedPages[1]
-                      ? ref.printedPages[0]
-                      : ref.printedPages.join('–'))
-                  : '') +
-                (ref.section ? ` · ${ref.section}` : '')
-              : `Quy ước dự án · ${ref.section.replace(/^#+\s*/, '')}`}
+            {'sourceId' in ref ? (
+              <>
+                <Link
+                  className="inline-flex min-h-11 items-center underline"
+                  to={ROUTES.libraryDetail('source', ref.sourceId)}
+                >
+                  {getSource(ref.sourceId)?.title ?? ref.sourceId}
+                </Link>
+                {' · PDF ' +
+                  (ref.pdfPages[0] === ref.pdfPages[1] ? ref.pdfPages[0] : ref.pdfPages.join('–')) +
+                  (ref.printedPages
+                    ? ' · Trang in ' +
+                      (ref.printedPages[0] === ref.printedPages[1]
+                        ? ref.printedPages[0]
+                        : ref.printedPages.join('–'))
+                    : '') +
+                  (ref.section ? ` · ${ref.section}` : '')}
+              </>
+            ) : (
+              <a
+                className="inline-flex min-h-11 items-center underline"
+                href={`https://github.com/tungxuan1656/liuyao/blob/main/${ref.documentPath}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Quy ước dự án · {ref.documentPath} · {ref.section.replace(/^#+\s*/, '')}
+              </a>
+            )}
           </li>
         ))}
       </ul>
@@ -41,10 +60,15 @@ export function KnowledgeReferences({ references }: { references: readonly Conte
 function TargetLink({ target }: { target: NonNullable<ContentEntry['target']> }) {
   const item = getContentMetadata(target.recordId);
   return item ? (
-    <Link className="underline" to={`${ROUTES.libraryDetail(item.type, item.id)}#${target.id}`}>
+    <Link
+      className="inline-flex min-h-11 items-center underline"
+      to={`${ROUTES.libraryDetail(item.type, item.id)}#${target.id}`}
+    >
       {item.title} · {target.kind === 'table' ? 'Bảng tham chiếu' : 'Hình tham chiếu'}
     </Link>
-  ) : null;
+  ) : (
+    <span className="text-sm text-muted-foreground">Tài liệu tham chiếu chưa phát hành</span>
+  );
 }
 export function KnowledgeEntries({
   entries,
@@ -53,11 +77,20 @@ export function KnowledgeEntries({
   entries: readonly ContentEntry[];
   expanded?: boolean;
 }) {
+  if (!entries || entries.length === 0) {
+    return (
+      <p className="text-sm text-muted-foreground">Chưa có chú giải phát hành cho phần này.</p>
+    );
+  }
   const visible = expanded ? entries : entries.slice(0, 4);
   return (
     <div className="flex flex-col gap-6">
       {visible.map((entry, index) => (
-        <article key={entry.id ?? index} id={entry.id} className="flex scroll-mt-24 flex-col gap-3">
+        <article
+          key={entry.id ?? index}
+          id={entry.id}
+          className="flex scroll-mt-24 flex-col gap-3 target:ring-2 target:ring-primary"
+        >
           {entry.title && <h3 className="font-semibold">{entry.title}</h3>}
           {entry.attribution && (
             <p className="text-muted-foreground">
@@ -77,7 +110,7 @@ export function KnowledgeEntries({
                 const href = linkPath(link);
                 return href ? (
                   <li key={href}>
-                    <Link className="underline" to={href}>
+                    <Link className="inline-flex min-h-11 items-center underline" to={href}>
                       {getContentMetadata(link.recordId)?.title}
                       {link.position ? ` · Hào ${link.position}` : ''}
                     </Link>

@@ -1,4 +1,9 @@
-import type { KnowledgeEntity, KnowledgeRule, KnowledgeTerm } from '@liuyao/knowledge';
+import type {
+  KnowledgeEntity,
+  KnowledgeRule,
+  KnowledgeSource,
+  KnowledgeTerm,
+} from '@liuyao/knowledge';
 import {
   getContentMetadata,
   getKnowledgeEntity,
@@ -31,7 +36,16 @@ export const ruleCategories = [
 ] as const;
 export type RuleFilter = (typeof ruleCategories)[number];
 type LibraryArticle = { type: 'article'; id: string; title: string; explanation: string };
-export type LibraryRecord = KnowledgeEntity | KnowledgeTerm | KnowledgeRule | LibraryArticle;
+export type LibrarySource = KnowledgeSource & {
+  type: 'source';
+  explanation: string;
+};
+export type LibraryRecord =
+  | KnowledgeEntity
+  | KnowledgeTerm
+  | KnowledgeRule
+  | LibraryArticle
+  | LibrarySource;
 
 export function recordPath(record: LibraryRecord) {
   const type =
@@ -60,11 +74,24 @@ export function getRecord(type: string, id: string) {
       ? { type: 'article' as const, id: item.id, title: item.title, explanation: item.summary }
       : undefined;
   }
+  if (type === 'source') {
+    const source = getSource(id as KnowledgeSource['id']);
+    return source
+      ? ({
+          type: 'source' as const,
+          ...source,
+          explanation: source.publication,
+        } satisfies LibrarySource)
+      : undefined;
+  }
   if (type === 'term') return getTerm(id as KnowledgeTerm['id']);
   if (type === 'rule') return getRule(id as KnowledgeRule['id']);
   if (type === 'trigram' || type === 'hexagram') {
     const entity = getKnowledgeEntity(id as KnowledgeEntity['id']);
     return entity?.kind === type ? entity : undefined;
+  }
+  if (type === 'entity') {
+    return getKnowledgeEntity(id as KnowledgeEntity['id']);
   }
   return undefined;
 }
@@ -79,6 +106,55 @@ export function getReferences(id: string) {
       ): reference is typeof reference & { source: NonNullable<typeof reference.source> } =>
         Boolean(reference.source),
     );
+}
+
+export interface ResolvedTarget {
+  readonly id: string;
+  readonly title: string;
+  readonly type: string;
+  readonly path: string;
+}
+
+export function resolveTarget(id: string): ResolvedTarget | undefined {
+  const content = getContentMetadata(id);
+  if (content)
+    return {
+      id,
+      title: content.title,
+      type: content.type,
+      path: ROUTES.libraryDetail(content.type, content.id),
+    };
+  const entity = getKnowledgeEntity(id as never);
+  if (entity)
+    return {
+      id,
+      title: entity.name,
+      type: entity.kind,
+      path: ROUTES.libraryDetail(entity.kind, entity.id),
+    };
+  const term = getTerm(id as never);
+  if (term)
+    return { id, title: term.name, type: 'term', path: ROUTES.libraryDetail('term', term.id) };
+  const rule = getRule(id as never);
+  if (rule)
+    return { id, title: rule.title, type: 'rule', path: ROUTES.libraryDetail('rule', rule.id) };
+  return undefined;
+}
+
+export function getSourceContents(sourceId: string) {
+  return listContent({ sourceId });
+}
+
+export function getSourceReferences(sourceId: string) {
+  return listSourceReferences()
+    .filter(reference => reference.sourceId === sourceId)
+    .map(reference => ({
+      ...reference,
+      targets: reference.targetIds
+        .map(resolveTarget)
+        .filter((target): target is ResolvedTarget => Boolean(target)),
+    }))
+    .filter(reference => reference.targets.length > 0);
 }
 
 export function getApplicableRules(record: LibraryRecord): KnowledgeRule[] {

@@ -24,7 +24,7 @@ function ContentSection({
   id?: string;
 }) {
   return (
-    <Card id={id} className="min-w-0 scroll-mt-24">
+    <Card id={id} className="min-w-0 scroll-mt-24 target:ring-2 target:ring-primary">
       <CardHeader>
         <CardTitle role="heading" aria-level={2}>
           {title}
@@ -56,12 +56,28 @@ export function KnowledgeContent({ id }: { id: string }) {
   }, [id, key]);
   useEffect(() => {
     if (!state?.record || state.key !== key || !hash) return;
-    const target = document.getElementById(decodeURIComponent(hash.slice(1)));
-    if (!target) return;
-    for (let parent = target.parentElement; parent; parent = parent.parentElement) {
-      if (parent instanceof HTMLDetailsElement) parent.open = true;
+    let cleanup: (() => void) | undefined;
+    try {
+      const targetId = decodeURIComponent(hash.slice(1));
+      const target = document.getElementById(targetId);
+      if (target) {
+        for (let parent = target.parentElement; parent; parent = parent.parentElement) {
+          if (parent instanceof HTMLDetailsElement) parent.open = true;
+        }
+        target.scrollIntoView();
+        const previous = document.querySelectorAll('.ring-primary.ring-2');
+        for (const el of previous) {
+          el.classList.remove('ring-2', 'ring-primary');
+        }
+        target.classList.add('ring-2', 'ring-primary');
+        cleanup = () => {
+          target.classList.remove('ring-2', 'ring-primary');
+        };
+      }
+    } catch {
+      // Ignore malformed URL fragments
     }
-    target.scrollIntoView();
+    return cleanup;
   }, [hash, key, state]);
   if (state?.key !== key) return <p role="status">Đang tải nội dung…</p>;
   if (state.error || !state.record)
@@ -80,6 +96,32 @@ export function KnowledgeContent({ id }: { id: string }) {
   return (
     <section className="flex min-w-0 flex-col gap-6" aria-label="Nội dung tham khảo">
       <ContentSection title="Tổng quan" entries={record.entries} />
+      {record.type === 'hexagram' && (
+        <nav aria-label="Chuyển nhanh đến hào" className="flex flex-wrap gap-2">
+          {record.lines.map(line => (
+            <Button
+              key={line.position}
+              variant="outline"
+              size="lg"
+              className="h-auto min-h-11 min-w-0 whitespace-normal text-left"
+              render={<a href={`#line-${line.position}`} />}
+            >
+              Hào {line.position} · {line.label}
+            </Button>
+          ))}
+          {record.specialPassages?.map((passage, index) => (
+            <Button
+              key={passage.title}
+              variant="outline"
+              size="lg"
+              className="h-auto min-h-11 min-w-0 whitespace-normal text-left"
+              render={<a href={`#special-${index}`} />}
+            >
+              {passage.title}
+            </Button>
+          ))}
+        </nav>
+      )}
       {record.relatedIds?.length && record.type !== 'hexagram' && record.type !== 'trigram' ? (
         <Card>
           <CardHeader>
@@ -93,11 +135,18 @@ export function KnowledgeContent({ id }: { id: string }) {
                 const target = getContentMetadata(id);
                 return target ? (
                   <li key={id}>
-                    <Link className="underline" to={ROUTES.libraryDetail(target.type, target.id)}>
+                    <Link
+                      className="inline-flex min-h-11 items-center underline"
+                      to={ROUTES.libraryDetail(target.type, target.id)}
+                    >
                       {target.title}
                     </Link>
                   </li>
-                ) : null;
+                ) : (
+                  <li key={id} className="text-muted-foreground">
+                    Mục liên quan chưa phát hành
+                  </li>
+                );
               })}
             </ul>
           </CardContent>
@@ -113,12 +162,21 @@ export function KnowledgeContent({ id }: { id: string }) {
           />
         ))}
       {record.type === 'hexagram' &&
-        record.specialPassages?.map(passage => (
-          <ContentSection key={passage.title} title={passage.title} entries={passage.entries} />
+        record.specialPassages?.map((passage, index) => (
+          <ContentSection
+            key={passage.title}
+            id={`special-${index}`}
+            title={passage.title}
+            entries={passage.entries}
+          />
         ))}
       {record.tables?.length ? <KnowledgeTables tables={record.tables} /> : null}
       {record.figures?.map(figure => (
-        <Card key={figure.id} id={figure.id} className="scroll-mt-24">
+        <Card
+          key={figure.id}
+          id={figure.id}
+          className="scroll-mt-24 target:ring-2 target:ring-primary"
+        >
           <CardHeader>
             <CardTitle role="heading" aria-level={2}>
               {figure.title}
@@ -135,7 +193,8 @@ export function KnowledgeContent({ id }: { id: string }) {
             {figure.authorAlternatives?.map(view => (
               <div key={view.author}>
                 <p>
-                  {view.author} · {view.description}
+                  {view.author}
+                  {view.via ? ` · qua ${view.via}` : ''} · {view.description}
                 </p>
                 <KnowledgeReferences references={view.references} />
               </div>

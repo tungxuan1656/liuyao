@@ -1,3 +1,4 @@
+import { getContentMetadata } from '@liuyao/knowledge';
 import { Link, useParams } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
@@ -9,9 +10,13 @@ import {
   getRecord,
   getReferences,
   getRelatedFigures,
+  getSourceContents,
+  getSourceReferences,
+  recordDescription,
   recordName,
   recordPath,
 } from './library-data';
+import { LibrarySourceSections } from './library-source-detail';
 import { getLinePresentation } from './line-value-presentation';
 import { ROUTES } from './route-paths';
 
@@ -29,7 +34,11 @@ const ruleCategories = {
 export function LibraryDetailPage() {
   const { entityType = '', id = '' } = useParams();
   const record = getRecord(entityType, id);
-  const references = getReferences(record?.id ?? '');
+  const sourceRecord = record && 'type' in record && record.type === 'source' ? record : undefined;
+  const isSource = Boolean(sourceRecord);
+  const references = !isSource && record ? getReferences(record.id) : [];
+  const sourceContents = isSource ? getSourceContents(id) : [];
+  const sourceReferences = isSource ? getSourceReferences(id) : [];
 
   if (!record)
     return (
@@ -77,8 +86,30 @@ export function LibraryDetailPage() {
         {recordMeta && <Badge variant="outline">{recordMeta}</Badge>}
       </header>
 
-      <KnowledgeContent key={id} id={id} />
+      {getContentMetadata(id) ? (
+        <KnowledgeContent key={id} id={id} />
+      ) : !isSource ? (
+        <Card className="min-w-0">
+          <CardHeader>
+            <CardTitle role="heading" aria-level={2}>
+              Thông tin tra cứu cơ sở
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="whitespace-pre-line leading-relaxed text-muted-foreground">
+              {recordDescription(record)}
+            </p>
+          </CardContent>
+        </Card>
+      ) : null}
       <div className="grid items-start gap-6 lg:grid-cols-12">
+        {sourceRecord && (
+          <LibrarySourceSections
+            source={sourceRecord}
+            contents={sourceContents}
+            references={sourceReferences}
+          />
+        )}
         {trigramIds.length > 0 && (
           <Card className="min-w-0 lg:col-span-6">
             <CardHeader>
@@ -171,7 +202,14 @@ export function LibraryDetailPage() {
                     className="flex flex-col gap-3 py-4 first:pt-0 last:pb-0"
                   >
                     <div>
-                      <h3 className="font-semibold">{reference.source.title}</h3>
+                      <h3 className="font-semibold">
+                        <Link
+                          to={ROUTES.libraryDetail('source', reference.source.id)}
+                          className="inline-flex min-h-11 items-center underline"
+                        >
+                          {reference.source.title}
+                        </Link>
+                      </h3>
                       {reference.location && (
                         <p className="text-muted-foreground">{reference.location}</p>
                       )}

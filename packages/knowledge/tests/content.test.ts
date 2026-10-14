@@ -9,6 +9,7 @@ import { SOURCES } from '../data/sources';
 import { TERMS } from '../data/terms';
 import { TRIGRAMS } from '../data/trigrams';
 import { getRule, getRulesForFact, getSourceReference } from '../src/catalog';
+import { listContent } from '../src/index';
 
 function contractFields(interfaceName: string): string[] {
   const contracts = readFileSync(
@@ -294,5 +295,14 @@ describe('curated V1 content', () => {
     expect(getSourceReference('reference-zhouyi-trigram-associations')?.targetIds).toContain(
       'trigram-heaven',
     );
+  });
+
+  it('allows querying released content metadata by sourceId, including articles', () => {
+    const nhlArticles = listContent({ sourceId: 'source-book-nhl', type: 'article' });
+    expect(nhlArticles.length).toBeGreaterThan(0);
+    expect(nhlArticles.some(item => item.id === 'article-nhl-he-tu-ha-02')).toBe(true);
+
+    const bpctContent = listContent({ sourceId: 'source-book-bpct' });
+    expect(bpctContent.length).toBeGreaterThan(0);
   });
 });

@@ -81,7 +81,7 @@ export function KnowledgeTables({ tables }: { tables: readonly ContentTable[] })
           <Card
             key={getContentTableId(table)}
             id={getContentTableId(table)}
-            className="scroll-mt-24"
+            className="scroll-mt-24 target:ring-2 target:ring-primary"
           >
             <CardHeader>
               <CardTitle role="heading" aria-level={2}>
@@ -105,6 +105,7 @@ export function KnowledgeTables({ tables }: { tables: readonly ContentTable[] })
                     <tr key={index}>
                       {keys.map(key => (
                         <td key={key} className="p-3 align-top">
+                          {/* SAFETY: table.rows contains validated JSON record objects indexable by key. */}
                           {display((row as unknown as Record<string, unknown>)[key])}
                         </td>
                       ))}
