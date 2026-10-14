@@ -55,6 +55,8 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | `pnpm lint`                                               | Repository Biome checks                                 |
 | `pnpm format`                                             | Write Biome + Markdown/YAML formatting                  |
 | `pnpm format:check`                                       | Check Biome + Markdown/YAML formatting                  |
+| `pnpm tasks:index`                                        | Regenerate task navigation and start candidates         |
+| `pnpm tasks:check`                                        | Task-index self-checks and read-only freshness check    |
 | `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
 | `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
 | `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
@@ -67,7 +69,7 @@ Biome 2.5.15 checks JavaScript, TypeScript, JSON, CSS, and experimental HTML. It
 
 Shadcn components in `apps/web/src/components/ui/**` use the same Biome formatting, lint, and import organization as other source files. Keep accessibility exceptions local, with explained suppressions for composed groups, pointer-only input-focus shortcuts, and caller-supplied label associations.
 
-`init.sh` applies safe lint fixes, including type-only imports in shadcn components. After registry updates, run Biome and review changes. Retain explained suppressions and the local `field.tsx` strict equality and deduplicated-message key fixes.
+`init.sh` checks source files without fixing them. After registry updates, run the formatter or safe Biome fixes explicitly and review changes. Retain explained suppressions and the local `field.tsx` strict equality and deduplicated-message key fixes.
 
 HTML support is experimental; review changes to `apps/web/index.html` and verify the web build after Biome upgrades. Prettier ignores generated assets, local books, agent tooling, and the lockfile.
 
@@ -79,15 +81,33 @@ HTML support is experimental; review changes to `apps/web/index.html` and verify
 
 ## Agent harness
 
-`./init.sh` is the agent-facing full workflow. It uses repository-supported fixers first, then runs independent verification with bounded parallelism.
+`./init.sh` is the agent-facing full source-check workflow. It resolves the repository directory and runs explicit checks sequentially, stopping at the first failure with its exit code.
 
 It performs:
 
-1. Biome format write and Prettier Markdown/YAML format write.
-2. Biome lint fix and TypeScript length checks.
-3. Type-check, build, and package tests.
+1. `pnpm format:check`.
+2. `pnpm tasks:check`, including task-index self-checks and freshness.
+3. `pnpm lint`.
+4. `bash scripts/check_ts_length.sh`.
+5. `pnpm typecheck`.
+6. `pnpm build`.
+7. `pnpm --dir apps/web run check:package-exports`.
+8. `pnpm test`, including test-placement enforcement.
 
-The script does not install dependencies. Run `pnpm install` separately when the workspace is not bootstrapped.
+The script does not fix source, install dependencies, generate command scripts, or schedule jobs. Build, type-check, and test tools can refresh ignored outputs. Run `pnpm install` separately when the workspace is not bootstrapped.
+
+Execution state belongs to the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) is a generated view, never a second editable tracker. Legacy feature/index/progress records are [frozen history](../features/README.md). Use relevant focused checks for bounded changes; run the full workflow before merging.
+
+### Task index
+
+`scripts/task-index.mjs` reads `tasks/task-*.md` and renders `tasks/index.md`. After changing task inputs, run `pnpm tasks:index`. Verification uses `pnpm tasks:check` without rewriting the index.
+
+- Use `# ID - Title`, one `- Status: todo|active|blocked|done` line, and one `- Required to start:` line before the first section.
+- Start dependencies are Markdown links to sibling task files, or `none`. Other prose is an unassessed manual start gate.
+- Record current blockers as `- Blockers:` directly under `## Handoff`, before historical subsections. `none` means assessed and clear; missing or unassessed blockers require review.
+- Start candidates have `todo` status and all start dependencies `done`, with no explicit blocker or manual gate. Unassessed blockers are labelled `review blockers`, not cleared automatically.
+- Readiness grants no approval or priority. Integration/release gates do not prevent starting; they remain in each task.
+- Generation fails on invalid status, duplicate IDs, missing metadata, unknown dependencies, self-dependencies, or dependency cycles. Tool self-checks use small in-script fixtures, not domain/package test suites.
 
 ## Full verification
 
@@ -95,6 +115,7 @@ Verification before merging:
 
 ```bash
 pnpm format:check
+pnpm tasks:check
 pnpm lint
 pnpm typecheck
 pnpm test
@@ -106,4 +127,4 @@ Use pnpm --filter @liuyao/knowledge validate:corpus --check to check output fres
 Use --check-books separately to identify the local supplied PDF editions; no audit or certification gate runs.
 The [data guide](../packages/knowledge/data/README.md) defines the source-review workflow.
 
-CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the harness orchestration and prevents fixers from hiding tracked or untracked repository drift.
+CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the same check-only workflow and detects tracked or untracked repository drift; ignored generated outputs are outside that clean-tree check.

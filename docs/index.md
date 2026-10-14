@@ -34,14 +34,15 @@ This file routes repository documentation. Each durable fact has one canonical o
 | You deploy or release production         | `docs/release.md`                          | Environments, deploy, rollback, smoke test |
 | You add knowledge content                | `LICENSING.md`                             | Licensing boundary                         |
 
-Execution status does not live in `docs/`. Use `features/`, `feature_index.json`, and `progress.md` when tracked work needs persistent state.
+Execution status does not live in `docs/`. Use the selected task under `tasks/` or an adequate external tracker. [Task navigation](../tasks/index.md) is a generated status/dependency and start-candidate view; each task remains the source of truth for status, dependencies, evidence, and handoff.
 
 ## Historical and local material
 
-| Read when                                        | Source                             | Owns                                            |
-| ------------------------------------------------ | ---------------------------------- | ----------------------------------------------- |
-| You need a retired review or accounting artifact | `docs/reviews/knowledge/README.md` | Historical notes and Git recovery paths         |
-| You need the intent recorded for earlier work    | `docs/plans/`                      | Plan-time intent for one tracked feature        |
-| You compare a claim with a supplied edition      | `docs/books/`                      | Local PDFs, ignored by Git, never redistributed |
+| Read when                                        | Source                             | Owns                                                                                            |
+| ------------------------------------------------ | ---------------------------------- | ----------------------------------------------------------------------------------------------- |
+| You need a retired review or accounting artifact | `docs/reviews/knowledge/README.md` | Historical notes and Git recovery paths                                                         |
+| You need the intent recorded for earlier work    | `docs/plans/`                      | Retained execution plans; current task and canonical policy override old lifecycle instructions |
+| You need pre-v2 feature or progress evidence     | `features/README.md`               | Frozen history and the complete task-path mapping                                               |
+| You compare a claim with a supplied edition      | `docs/books/`                      | Local PDFs, ignored by Git, never redistributed                                                 |
 
 Files routed above hold the current contract. Authored source records live in `packages/knowledge/data/`. Generated runtime output lives in build directories and is never a truth source. A historical plan, review note, or progress block records what was decided then; the canonical document wins when they disagree.

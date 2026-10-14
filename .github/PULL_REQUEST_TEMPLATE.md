@@ -19,7 +19,7 @@
 <!-- Source-backed knowledge changed? Record the reviewer evidence. Write "N/A" if none. -->
 
 - [ ] A reviewer other than the writer checked the materially changed assertions.
-- [ ] The feature handoff names the inspected scope, the source pages or images, any remaining finding, and the verified final revision.
+- [ ] The task or tracker handoff names the inspected scope, the source pages or images, any remaining finding, and the verified final revision.
 
 ## Checklist
 
