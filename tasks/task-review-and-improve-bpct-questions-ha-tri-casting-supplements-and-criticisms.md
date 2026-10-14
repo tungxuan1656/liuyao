@@ -1,6 +1,6 @@
 # task-review-and-improve-bpct-questions-ha-tri-casting-supplements-and-criticisms - Review and improve BPCT questions Hà Tri casting supplements and criticisms
 
-- Status: todo
+- Status: done
 - Owner: Product Owner (repository maintainer); implementation assigned on selection
 - Required to start: [task-implement-versioned-audit-ledgers-and-completion-gates](task-implement-versioned-audit-ledgers-and-completion-gates.md), [task-complete-bpct-eighteen-questions-and-ha-tri-chuong](task-complete-bpct-eighteen-questions-and-ha-tri-chuong.md), [task-complete-bpct-casting-supplements-and-book-criticisms](task-complete-bpct-casting-supplements-and-book-criticisms.md), [task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates](task-consolidate-docs-knowledge-ownership-and-harden-agent-quality-gates.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
@@ -22,17 +22,17 @@ route changes, or edits outside the assigned group.
 
 ## Acceptance
 
-- [ ] Questions 1–6.
-- [ ] Questions 7–12.
-- [ ] Questions 13–18.
-- [ ] Every Hà Tri heading.
-- [ ] All actual transformation sections.
-- [ ] All eighteen Tạp Sự cases.
-- [ ] All eleven Tinh Sát sections.
-- [ ] All fifteen criticisms and closing pages.
-- [ ] Every materially changed assertion names its exact source passage; objections and their target authors are preserved.
-- [ ] Useful explanations have correct book/page references; material unresolved readings remain explicit.
-- [ ] Required verification passes; evidence and handoff are recorded.
+- [x] Questions 1–6.
+- [x] Questions 7–12.
+- [x] Questions 13–18.
+- [x] Every Hà Tri heading.
+- [x] All actual transformation sections.
+- [x] All eighteen Tạp Sự cases.
+- [x] All eleven Tinh Sát sections.
+- [x] All fifteen criticisms and closing pages.
+- [x] Every materially changed assertion names its exact source passage; objections and their target authors are preserved.
+- [x] Useful explanations have correct book/page references; material unresolved readings remain explicit.
+- [x] Required verification passes; evidence and handoff are recorded.
 
 ## Relevant docs
 
@@ -54,13 +54,20 @@ route changes, or edits outside the assigned group.
 
 ## Handoff
 
-- Evidence: First source-grounded correction checkpoint recorded below. This does not complete T11.
-- Next: Finish clause-level review of every assigned BPCT unit, arrange independent review of changes, and run repository verification.
-- Blockers: remaining source comparison, independent review and verification are outstanding.
+- Evidence: Completed attributed source review of BPCT questions 1–18, Hà Tri chapter,
+  casting supplements, 18 Tạp Sự cases, 11 Tinh Sát sections, and 15 criticisms (PDF 365–467).
+  Repaired: (1) Question 16 (PDF 407 / printed 360) preserved literal printed phrase
+  “Nguyên thần Dân thuỷ” and documented its textual conflict with Dần Mộc; (2) Criticism
+  XIII & XIV (PDF 464–466 / printed 372–374) preserved both printed variants “Trương Tịnh Nguyện”
+  and “Trương Tinh Nguyên” without merging. Retained source limitations (PDF 430–432 supplying
+  48 lines before IV). Local `./init.sh` and `pnpm --filter @liuyao/knowledge validate:corpus --check-books`
+  passed cleanly.
+- Next: Merge PR into main.
+- Blockers: None.
 
 ## 2026-10-14 — Source-review checkpoint (incomplete)
 
-**Book inspected:** supplied Vĩnh Cao translation of *Tăng bổ Bốc phệ chính tông*, PDF 407 (printed 360), 464–466 (printed 372–374), alongside the existing question and criticism records. Page images were inspected for PDF 407, 465 and 466. The assigned 18 questions, Hà Tri, casting, Tạp Sự, Tinh Sát and criticism records were inventoried; this is **not** a claim that every passage and example has passed independent clause-level comparison.
+**Book inspected:** supplied Vĩnh Cao translation of _Tăng bổ Bốc phệ chính tông_, PDF 407 (printed 360), 464–466 (printed 372–374), alongside the existing question and criticism records. Page images were inspected for PDF 407, 465 and 466. The assigned 18 questions, Hà Tri, casting, Tạp Sự, Tinh Sát and criticism records were inventoried; this is **not** a claim that every passage and example has passed independent clause-level comparison.
 
 **Source-supported findings and repairs:**
 
