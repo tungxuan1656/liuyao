@@ -60,7 +60,7 @@ route changes, or edits outside the assigned group.
   208–210, 212–215 and 223–230. Confirmed numbering gaps at chapter 15 item 16,
   chapter 17 item 31, chapter 18 item 41, plus folio-only PDF 190 and 222.
   Chapter 19 item 15 (PDF 227 / printed 194) contains the truncated wording
-  “hợp với ư” in the *rendered page image* as well as extracted text. Corrected
+  “hợp với ư” in the _rendered page image_ as well as extracted text. Corrected
   its Lời bình paraphrase without guessing the missing object. This is structural
   and sampled content review, **not** a complete 276-unit semantic audit.
 - Blockers: Clause-by-clause source review of the remaining units; independent review
