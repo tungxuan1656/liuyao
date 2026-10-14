@@ -2,6 +2,7 @@
   "id": "term-six-spirits",
   "type": "term",
   "title": "Lục thú",
+  "aliases": ["Lục thần"],
   "topicIds": ["topic-liuyao-advanced"],
   "relatedIds": [
     "term-six-relative",
@@ -30,6 +31,12 @@
           "pdfPages": [69, 69],
           "section": "Thứ bảy — Luận về Lục thú",
           "printedPages": ["57", "57"]
+        },
+        {
+          "sourceId": "source-book-bpct",
+          "pdfPages": [164, 164],
+          "section": "Kinh doanh — câu 38, tên Lục thần với Bạch Hổ và Huyền Vũ",
+          "printedPages": ["138", "138"]
         }
       ]
     },
@@ -38,9 +45,9 @@
       "references": [
         {
           "sourceId": "source-book-bpct",
-          "pdfPages": [98, 99],
+          "pdfPages": [97, 99],
           "section": "65 — Chú giải sinh khắc và vai Lục thú",
-          "printedPages": ["84", "85"]
+          "printedPages": ["83", "85"]
         }
       ],
       "attribution": {
