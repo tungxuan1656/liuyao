@@ -49,7 +49,7 @@ export function ResultKnowledgeInspector({
   useEffect(() => {
     setSelectedPosition(context.position);
     setSpecialIndex(undefined);
-  }, [context.position]);
+  }, [context.position, context.selectionToken]);
 
   useEffect(() => {
     let active = true;
@@ -80,6 +80,10 @@ export function ResultKnowledgeInspector({
   const currentLine =
     record && selectedPosition !== undefined
       ? record.lines.find(l => l.position === selectedPosition)
+      : undefined;
+  const currentLineData =
+    selectedPosition !== undefined
+      ? context.lines?.find(l => l.position === selectedPosition)
       : undefined;
   const currentSpecial =
     record && specialIndex !== undefined ? record.specialPassages?.[specialIndex] : undefined;
@@ -112,21 +116,21 @@ export function ResultKnowledgeInspector({
                 ? currentSpecial.title
                 : hexagramTitle}
           </p>
-          {selectedPosition !== undefined && context.lineInfo && (
+          {selectedPosition !== undefined && currentLineData && (
             <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
               {context.contextType === 'primary' ? (
                 <>
                   <span className="font-medium text-foreground">
-                    {getYaoName(context.lineInfo.inputValue)}
+                    {getYaoName(currentLineData.inputValue)}
                   </span>
-                  <span>· {context.lineInfo.changing ? 'Hào động' : 'Hào tĩnh'}</span>
-                  <span>· {context.lineInfo.polarity === 'yin' ? 'Âm' : 'Dương'}</span>
+                  <span>· {currentLineData.changing ? 'Hào động' : 'Hào tĩnh'}</span>
+                  <span>· {currentLineData.polarity === 'yin' ? 'Âm' : 'Dương'}</span>
                 </>
               ) : (
                 <span>
-                  {context.lineInfo.changing
-                    ? `Biến từ hào động → ${context.lineInfo.transformedPolarity === 'yin' ? 'Âm' : 'Dương'}`
-                    : `Hào tĩnh · ${context.lineInfo.polarity === 'yin' ? 'Âm' : 'Dương'}`}
+                  {currentLineData.changing
+                    ? `Biến từ hào động → ${currentLineData.polarity === 'yin' ? 'Dương' : 'Âm'}`
+                    : `Hào tĩnh · ${currentLineData.polarity === 'yin' ? 'Âm' : 'Dương'}`}
                 </span>
               )}
             </div>
@@ -151,6 +155,7 @@ export function ResultKnowledgeInspector({
           size="sm"
           className="min-h-11"
           type="button"
+          aria-pressed={selectedPosition === undefined && specialIndex === undefined}
           onClick={() => {
             setSelectedPosition(undefined);
             setSpecialIndex(undefined);
@@ -165,6 +170,7 @@ export function ResultKnowledgeInspector({
             size="sm"
             className="min-h-11"
             type="button"
+            aria-pressed={selectedPosition === pos}
             onClick={() => {
               setSelectedPosition(pos);
               setSpecialIndex(undefined);
@@ -180,6 +186,7 @@ export function ResultKnowledgeInspector({
             size="sm"
             className="min-h-11"
             type="button"
+            aria-pressed={specialIndex === idx}
             onClick={() => {
               setSelectedPosition(undefined);
               setSpecialIndex(idx);

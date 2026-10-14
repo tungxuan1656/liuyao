@@ -174,16 +174,8 @@ export function ResultView() {
                             contextType: 'primary',
                             hexagramId: reading.result.primaryHexagramId,
                             position: line.position,
-                            lineInfo: {
-                              polarity: line.polarity,
-                              changing: line.changing,
-                              inputValue: line.inputValue,
-                              transformedPolarity: line.changing
-                                ? line.polarity === 'yin'
-                                  ? 'yang'
-                                  : 'yin'
-                                : undefined,
-                            },
+                            lines: reading.result.lines,
+                            selectionToken: Date.now(),
                           },
                         })
                       }

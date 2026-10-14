@@ -50,6 +50,8 @@ export function HexagramBoard({
               context: {
                 contextType: changed ? 'changed' : 'primary',
                 hexagramId,
+                lines: result.lines,
+                selectionToken: Date.now(),
               },
             }}
             onSelect={select}
@@ -129,16 +131,8 @@ export function HexagramBoard({
                     contextType: changed ? 'changed' : 'primary',
                     hexagramId,
                     position: line.position,
-                    lineInfo: {
-                      polarity: line.polarity,
-                      changing: line.changing,
-                      inputValue: line.inputValue,
-                      transformedPolarity: line.changing
-                        ? line.polarity === 'yin'
-                          ? 'yang'
-                          : 'yin'
-                        : undefined,
-                    },
+                    lines: result.lines,
+                    selectionToken: Date.now(),
                   },
                 }
               : undefined;

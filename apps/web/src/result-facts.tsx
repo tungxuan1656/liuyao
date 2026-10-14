@@ -16,12 +16,13 @@ export type HexagramKnowledgeContext = {
   contextType: 'primary' | 'changed';
   hexagramId: HexagramId;
   position?: number;
-  lineInfo?: {
+  lines?: readonly {
+    position: number;
     polarity: 'yin' | 'yang';
     changing: boolean;
     inputValue: number;
-    transformedPolarity?: 'yin' | 'yang';
-  };
+  }[];
+  selectionToken?: number;
 };
 
 export type FactSelection = {
@@ -69,7 +70,7 @@ export function FactInspector({
   if (fact.context) {
     return (
       <ResultKnowledgeInspector
-        key={`${fact.context.contextType}-${fact.context.hexagramId}`}
+        key={`${fact.context.contextType}-${fact.context.hexagramId}-${fact.context.selectionToken ?? fact.context.position ?? 'overview'}`}
         fact={fact as FactSelection & { context: HexagramKnowledgeContext }}
         close={close}
         closeRef={closeRef}
