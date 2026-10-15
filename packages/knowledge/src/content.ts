@@ -31,6 +31,7 @@ export function listContent(filters: ContentFilters = {}): readonly ContentMetad
       (!filters.topicId || record.topicIds.includes(filters.topicId)) &&
       (!filters.sourceId || record.sourceIds.includes(filters.sourceId)),
   );
+  candidates.sort((a, b) => (a.sequence ?? Infinity) - (b.sequence ?? Infinity));
   if (!query) return deepFreeze(candidates);
   const fields = (record: ContentMetadata) => [record.title, ...record.aliases, record.summary];
   const matches = candidates.filter(

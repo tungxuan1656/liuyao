@@ -112,6 +112,7 @@ export type ContentRecord =
   | ContentArticle
   | ContentTerm;
 export interface ContentMetadata {
+  readonly sequence?: number;
   readonly id: string;
   readonly type: ContentRecord['type'];
   readonly title: string;
