@@ -1,6 +1,7 @@
+import { getContentMetadata, getTopic } from '@liuyao/knowledge';
 import { ArrowRight, Search, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import {
@@ -31,7 +32,9 @@ import {
   recordPath,
   ruleCategories,
 } from './library-data';
+import { LibraryTopics } from './library-topics';
 import { getLinePresentation } from './line-value-presentation';
+import { ROUTES } from './route-paths';
 
 const ruleLabels = {
   all: 'Tất cả',
@@ -46,22 +49,70 @@ function formatName(name: string) {
 }
 
 export function LibraryPage() {
-  const [category, setCategory] = useState<Category>('hexagrams');
-  const [query, setQuery] = useState('');
+  const { topicId } = useParams();
+  const topic = topicId ? getTopic(topicId) : undefined;
+  const [params, setParams] = useSearchParams();
+  const navigate = useNavigate();
+  const selected = params.get('category');
+  const category: Category = topicId
+    ? 'articles'
+    : (categories.find(item => item.id === selected)?.id ?? 'hexagrams');
+  const query = params.get('q') ?? '';
+  const setQuery = (value: string) => {
+    setParams(
+      previous => {
+        if (value) previous.set('q', value);
+        else previous.delete('q');
+        return previous;
+      },
+      { replace: true },
+    );
+  };
   const [ruleFilter, setRuleFilter] = useState<RuleFilter>('all');
-  const records = useMemo(() => getLibraryRecords(category, query), [category, query]);
+  const records = useMemo(
+    () => getLibraryRecords(category, query, topicId),
+    [category, query, topicId],
+  );
   const shown = category === 'rules' ? filterRules(records, ruleFilter) : records;
   const categoryLabel = categories.find(item => item.id === category)?.label ?? 'Thư viện';
+
+  if (topicId && !topic)
+    return (
+      <main className="route-page">
+        <Empty>
+          <EmptyHeader>
+            <EmptyTitle role="heading" aria-level={1}>
+              Chủ đề không tồn tại
+            </EmptyTitle>
+          </EmptyHeader>
+          <EmptyContent>
+            <Button size="lg" render={<Link to={ROUTES.library} />}>
+              Mở thư viện
+            </Button>
+          </EmptyContent>
+        </Empty>
+      </main>
+    );
 
   return (
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
-        <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">Thư viện</h1>
+        <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
+          {topic?.title ?? 'Thư viện'}
+        </h1>
       </header>
 
       <Card>
         <CardContent className="flex min-w-0 flex-col gap-6">
-          <Tabs value={category} onValueChange={value => value && setCategory(value as Category)}>
+          <Tabs
+            value={category}
+            onValueChange={value => {
+              if (!value) return;
+              const next = new URLSearchParams(params);
+              next.set('category', value);
+              navigate({ pathname: ROUTES.library, search: next.toString() });
+            }}
+          >
             <TabsList
               variant="line"
               className="grid h-auto! w-full grid-cols-2 sm:flex sm:w-fit"
@@ -74,6 +125,7 @@ export function LibraryPage() {
               ))}
             </TabsList>
           </Tabs>
+          {category === 'articles' && <LibraryTopics topicId={topicId} />}
           <Field>
             <FieldLabel htmlFor="library-search" className="sr-only">
               Tìm kiếm
@@ -151,6 +203,9 @@ export function LibraryPage() {
                     </CardDescription>
                   )}
                   <CardAction className="flex items-center gap-3 self-center">
+                    {getContentMetadata(record.id)?.sequence !== undefined && (
+                      <Badge variant="outline">Bài {getContentMetadata(record.id)?.sequence}</Badge>
+                    )}
                     {'kingWenNumber' in record && (
                       <Badge variant="outline">
                         {String(record.kingWenNumber).padStart(2, '0')}
@@ -167,7 +222,7 @@ export function LibraryPage() {
         <Empty>
           <EmptyHeader>
             <EmptyTitle role="heading" aria-level={2}>
-              Không tìm thấy mục nào
+              {topicId && !query ? 'Chưa có bài viết được phát hành' : 'Không tìm thấy mục nào'}
             </EmptyTitle>
           </EmptyHeader>
           {query && (

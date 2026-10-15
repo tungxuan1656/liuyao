@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
-import { KnowledgeEntries, KnowledgeReferences } from './knowledge-entries';
+import { KnowledgeEntries, KnowledgeLinks, KnowledgeReferences } from './knowledge-entries';
 import { KnowledgeTables } from './knowledge-tables';
 import { ROUTES } from './route-paths';
 
@@ -19,7 +19,9 @@ function ContentSection({
   title,
   entries,
   id,
+  expanded = false,
 }: {
+  expanded?: boolean;
   title: string;
   entries: readonly ContentEntry[];
   id?: string;
@@ -32,7 +34,7 @@ function ContentSection({
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <KnowledgeEntries entries={entries} />
+        <KnowledgeEntries entries={entries} expanded={expanded} />
       </CardContent>
     </Card>
   );
@@ -96,7 +98,27 @@ export function KnowledgeContent({ id }: { id: string }) {
   const record = state.record;
   return (
     <section className="flex min-w-0 flex-col gap-6" aria-label="Nội dung tham khảo">
-      <ContentSection title="Tổng quan" entries={record.entries} />
+      <ContentSection
+        title={
+          record.type === 'article' && record.sequence !== undefined
+            ? `Bài ${record.sequence}`
+            : 'Tổng quan'
+        }
+        entries={record.entries}
+        expanded={record.type === 'article'}
+      />
+      {record.links?.length ? (
+        <Card>
+          <CardHeader>
+            <CardTitle role="heading" aria-level={2}>
+              Liên kết tham khảo
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <KnowledgeLinks links={record.links} />
+          </CardContent>
+        </Card>
+      ) : null}
       {record.type === 'hexagram' && (
         <nav aria-label="Chuyển nhanh đến hào" className="flex flex-wrap gap-2">
           {record.lines.map(line => (
@@ -123,6 +145,18 @@ export function KnowledgeContent({ id }: { id: string }) {
           ))}
         </nav>
       )}
+      {record.type === 'article' && record.applicableRuleIds?.length ? (
+        <Card>
+          <CardHeader>
+            <CardTitle role="heading" aria-level={2}>
+              Quy tắc áp dụng
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <KnowledgeLinks links={record.applicableRuleIds.map(recordId => ({ recordId }))} />
+          </CardContent>
+        </Card>
+      ) : null}
       {record.relatedIds?.length && record.type !== 'hexagram' && record.type !== 'trigram' ? (
         <Card>
           <CardHeader>

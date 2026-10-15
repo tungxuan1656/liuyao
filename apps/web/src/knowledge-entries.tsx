@@ -10,6 +10,27 @@ function linkPath(link: ContentLink) {
         (link.position ? `#line-${link.position}` : link.sectionId ? `#${link.sectionId}` : '')
     : undefined;
 }
+export function KnowledgeLinks({ links }: { links: readonly ContentLink[] }) {
+  return (
+    <ul>
+      {links.map(link => {
+        const href = linkPath(link);
+        return (
+          <li key={`${link.recordId}:${link.position ?? link.sectionId ?? ''}`}>
+            {href ? (
+              <Link className="inline-flex min-h-11 items-center underline" to={href}>
+                {getContentMetadata(link.recordId)?.title}
+                {link.position ? ` · Hào ${link.position}` : ''}
+              </Link>
+            ) : (
+              <span className="text-muted-foreground">Mục liên quan chưa phát hành</span>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 export function KnowledgeReferences({ references }: { references: readonly ContentReference[] }) {
   if (!references || references.length === 0) {
     return <p className="text-sm text-muted-foreground">Chưa có trích dẫn nguồn cho mục này.</p>;
@@ -104,21 +125,7 @@ export function KnowledgeEntries({
           )}
           <KnowledgeReferences references={entry.references} />
           {entry.target ? <TargetLink target={entry.target} /> : null}
-          {entry.links?.length ? (
-            <ul>
-              {entry.links.map(link => {
-                const href = linkPath(link);
-                return href ? (
-                  <li key={href}>
-                    <Link className="inline-flex min-h-11 items-center underline" to={href}>
-                      {getContentMetadata(link.recordId)?.title}
-                      {link.position ? ` · Hào ${link.position}` : ''}
-                    </Link>
-                  </li>
-                ) : null;
-              })}
-            </ul>
-          ) : null}
+          {entry.links?.length ? <KnowledgeLinks links={entry.links} /> : null}
         </article>
       ))}
       {!expanded && entries.length > 4 && (

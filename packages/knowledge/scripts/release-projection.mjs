@@ -27,6 +27,9 @@ export function projectCorpus(records, sources, bibliography) {
       title: record.title,
       aliases: record.aliases ?? [],
       summary: summary(record),
+      ...(record.type === 'article' && record.sequence !== undefined
+        ? { sequence: record.sequence }
+        : {}),
       listed: record.listed ?? true,
       topicIds: record.topicIds ?? [],
       sourceIds: [

@@ -31,9 +31,11 @@ export function Navigation() {
       ? 'Lập quẻ'
       : pathname === ROUTES.result
         ? 'Kết quả'
-        : pathname.startsWith(`${ROUTES.library}/`)
-          ? 'Chi tiết thư viện'
-          : 'Lục Hào';
+        : pathname.startsWith(`${ROUTES.library}/topic/`)
+          ? 'Chủ đề thư viện'
+          : pathname.startsWith(`${ROUTES.library}/`)
+            ? 'Chi tiết thư viện'
+            : 'Lục Hào';
 
   return (
     <header data-app-header className="sticky top-0 z-20 isolate border-b bg-background">

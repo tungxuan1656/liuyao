@@ -1,4 +1,4 @@
-import { getContentMetadata } from '@liuyao/knowledge';
+import { getContentMetadata, getTopic } from '@liuyao/knowledge';
 import { Link, useParams } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
@@ -84,6 +84,21 @@ export function LibraryDetailPage() {
           {formatName(recordName(record))}
         </h1>
         {recordMeta && <Badge variant="outline">{recordMeta}</Badge>}
+        {getContentMetadata(id)?.type === 'article' && (
+          <nav aria-label="Chủ đề bài viết" className="flex flex-wrap gap-2">
+            {getContentMetadata(id)?.topicIds.map(topicId => (
+              <Button
+                key={topicId}
+                variant="outline"
+                size="lg"
+                className="h-auto min-h-11 whitespace-normal text-left"
+                render={<Link to={ROUTES.libraryTopic(topicId)} />}
+              >
+                {getTopic(topicId)?.title ?? 'Chủ đề liên quan'}
+              </Button>
+            ))}
+          </nav>
+        )}
       </header>
 
       {getContentMetadata(id) ? (

@@ -21,6 +21,7 @@ export type {
   TrigramId,
 } from './schema.js';
 export * from './search.js';
+export * from './topics.js';
 export interface KnowledgeMetadata {
   name: string;
   description: string;
