@@ -24,6 +24,7 @@ A certification system, predictive efficacy claims, or a new calculation ruleset
 - [x] Check useful topic navigation, examples, related concepts, and source visibility.
 - [x] List actual missing content and known source limitations in their owning records or features.
 - [x] Report available coverage without certification, absolute accuracy, or predictive efficacy claims.
+- [x] Compare a coherent group with its supplied passages, including conditions and source errors.
 - [x] Relevant package checks and ./init.sh pass.
 
 ## Relevant docs
@@ -33,7 +34,7 @@ A certification system, predictive efficacy claims, or a new calculation ruleset
 
 ## Plan
 
-1. Verify released coverage, six-position structure, links, learning sequence, and documented source limits.
+1. Compare the lesson's Lục thân explanation and its three classification rules with the relevant BPCT passages; retain coverage checks.
 2. Inspect representative wide/compact learning and reference flows; repair only confirmed in-scope defects.
 3. Record coverage, actual gaps, verification limits, and the next action.
 
@@ -46,10 +47,25 @@ A certification system, predictive efficacy claims, or a new calculation ruleset
 - Existing source gaps stay explicit: [PBC Thuyết Quái](../packages/knowledge/data/foundations/pbc-thuyet-quai.json) preserves omissions; [Thăng](../packages/knowledge/data/hexagrams/hexagram-46.json) preserves provisional attribution at NTT PDF 718–719, also observed in compact UI. [Book sources](../docs/references/book-sources.md#known-discrepancies) owns shared discrepancies.
 - These checks establish available coverage, not complete book transcription, absolute accuracy, or predictive efficacy.
 
+## Focused source comparison
+
+PR #150 review reopened completion because structural and UI checks did not satisfy the original source-comparison step. Scope remains unchanged.
+Compared the `elements-relatives` entry in [lesson 3](../packages/knowledge/data/lessons/lesson-liuyao-board.json) and the following rules, including their explanations, tables, references, and source-error note:
+
+| Record                                                                            | BPCT passage                                        | Result                                                                                            |
+| --------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Branch elements](../packages/knowledge/data/liuyao/branch-elements.json)         | PDF 8, printed 2, III; PDF 14, printed 8, XIII note | All 12 branch assignments agree; line elements follow branches, not the palace element.           |
+| [Five Element cycles](../packages/knowledge/data/liuyao/five-element-cycles.json) | PDF 9, printed 3, IV–V                              | All ten directed relations agree; rotating the cycle's starting point changes no relationship.    |
+| [Six Relatives](../packages/knowledge/data/liuyao/six-relatives.json)             | PDF 9, printed 3, V; PDF 14, printed 8, XIII note   | All five relations agree when the palace element is “Ta”; counting Ta explains the name Lục thân. |
+
+The lesson preserves these directions and the palace/line distinction. Its no-prediction caveat limits application; it does not assert source-proven efficacy.
+PDF 9's Wood example contradicts its general rule. The existing rule note and [BPCT-03](../docs/references/book-sources.md#known-discrepancies) retain the supported Metal-as-Quan-quỷ reading; no new prose correction was needed.
+Read complete PDF 8–10 and 13–15 for context; inspected page images 8, 9, and 14, including section boundaries and the example. No table value came from calculator output.
+
 ## Handoff
 
 - Blockers: none.
-- Evidence: final `./init.sh` passed (181 core, 142 knowledge tests). The new prerequisite-link regression failed before repair and passed afterward.
-- Review: independent reviewer inspected all four lessons, their principal rule/example targets, Càn, source metadata, and web renderers. Re-review accepted the link repair at `2277367`; no confirmed finding remains in that scope.
-- Limits: no PDF passage/image re-audit, exhaustive visual inspection, physical-device or screen-reader assessment, or repeated offline matrix. Source prose and runtime code are unchanged.
+- Evidence: final `./init.sh` passed (181 core, 142 knowledge tests); `validate:corpus --check-books` verified the supplied editions. The prerequisite-link regression was red before repair and green afterward.
+- Review: independent source reviewer inspected the four named records against the same complete passages and three page images at data revision `fe8e456`. No material discrepancy remains in that scope. Earlier navigation review accepted the link repair at `2277367`.
+- Limits: this pass covers only the named lesson entry and three rules, not the whole lesson, all quẻ, or the surrounding diagrams. No repeated UI/offline matrix, physical-device or screen-reader assessment. Source prose and runtime code are unchanged.
 - Next: Maintainer review of this assessment; broader source re-review remains separately scoped.
