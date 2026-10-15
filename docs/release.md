@@ -45,17 +45,15 @@ Before release, review the preview, perform the recovery drill, and complete the
 
 ## Delivery flow
 
-`main` candidate
-→ full CI
-→ production build
-→ preview verification
-→ pre-deploy release-candidate gate
-→ production deploy
-→ production smoke test
-→ post-deploy launch gate
-→ release record
+Pull Request
+→ CI (`verify`) + Cloudflare preview deployment
+→ PR review + pre-deploy release-candidate acceptance
+→ Merge into `main`
+→ Cloudflare Pages checked build (`bash scripts/build-pages.sh`) → auto-deploy
+→ Production smoke test + post-deploy launch acceptance
+→ Release record
 
-Do not deploy a revision that fails the applicable pre-deploy release-candidate checks in `docs/product-specs/v1-mvp.md`.
+Do not merge a PR that fails the applicable pre-deploy release-candidate checks in `docs/product-specs/v1-mvp.md`.
 
 Evaluate the post-deploy launch gate only after the production deployment exists.
 

@@ -15,7 +15,7 @@ const corePackage = JSON.parse(
   readFileSync(path.resolve(__dirname, '../../packages/liuyao-core/package.json'), 'utf8'),
 ) as { version: string };
 
-const buildRevision = process.env.GITHUB_SHA ?? process.env.CF_PAGES_COMMIT_SHA ?? 'local';
+const buildRevision = process.env.CF_PAGES_COMMIT_SHA ?? process.env.GITHUB_SHA ?? 'local';
 if (buildRevision !== 'local' && !/^[a-f0-9]{40}$/.test(buildRevision)) {
   throw new Error('Build revision must be a full Git commit SHA');
 }

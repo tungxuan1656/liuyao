@@ -32,10 +32,12 @@ for (const value of [
 ])
   assert(headers.includes(value), `Missing deployment directive: ${value}`);
 const script = html.match(/<script\b[^>]*src="([^"]+)"/)[1];
-const revision = process.env.GITHUB_SHA ?? process.env.CF_PAGES_COMMIT_SHA ?? 'local';
+const revision = process.env.CF_PAGES_COMMIT_SHA ?? process.env.GITHUB_SHA ?? 'local';
+const bundledScript = read(script.replace(/^\//, ''));
+// Verify the exact stringified revision is embedded in the compiled bundle.
 assert(
-  read(script.replace(/^\//, '')).includes(revision),
-  'Build revision missing from application',
+  bundledScript.includes(JSON.stringify(revision)),
+  'Build revision literal missing from application bundle',
 );
 process.stdout.write(
   `Deployment artifact verified (${production ? 'production' : 'preview'}, ${revision})\n`,

@@ -19,12 +19,13 @@ try {
   );
   writeFileSync(
     join(root, 'bin/git'),
-    '#!/bin/sh\ncase "$1" in\nstatus) printf "%s" "${DIRTY:-}";;\nls-remote) printf "%s\\trefs/heads/main\\n" "$REMOTE_SHA";;\n*) exit 90;;\nesac\n',
+    '#!/bin/sh\ncase "$1" in\nrev-parse) printf "%s\\n" "${HEAD_SHA:-$CF_PAGES_COMMIT_SHA}";;\nstatus) printf "%s" "${DIRTY:-}";;\nls-remote) printf "%s\\trefs/heads/main\\n" "$REMOTE_SHA";;\n*) exit 90;;\nesac\n',
     { mode: 0o755 },
   );
   const cases = [
     { name: 'preview', branch: 'feature', mode: 'preview', ok: true },
     { name: 'current main', branch: 'main', mode: 'production', ok: true },
+    { name: 'mismatched HEAD SHA', branch: 'main', mode: '', env: { HEAD_SHA: 'c'.repeat(40) } },
     { name: 'failed verification', branch: 'main', mode: 'production', env: { CHECK_EXIT: '7' } },
     { name: 'dirty source', branch: 'main', mode: 'production', env: { DIRTY: ' M source.ts' } },
     { name: 'stale main', branch: 'main', mode: 'production', env: { REMOTE_SHA: 'b'.repeat(40) } },
