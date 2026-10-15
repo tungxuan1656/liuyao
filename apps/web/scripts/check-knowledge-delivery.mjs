@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { gzipSync } from 'node:zlib';
 
 const dist = new URL('../dist/', import.meta.url);
@@ -21,6 +21,16 @@ const precached = new Set(
   ),
 );
 assert(precached.size > metadata.length, 'Missing production precache manifest');
+const applicationAssets = new Set([
+  'index.html',
+  script.replace(/^\//, ''),
+  stylesheet.replace(/^\//, ''),
+  ...readdirSync(new URL('assets/', dist), { recursive: true })
+    .filter(asset => /\.(js|css)$/.test(asset))
+    .map(asset => `assets/${asset}`),
+]);
+for (const asset of applicationAssets)
+  assert(precached.has(asset), `Application asset not precached: ${asset}`);
 let paragraphs = 0;
 function inspect(value, id) {
   if (!value || typeof value !== 'object') return;
