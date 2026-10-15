@@ -50,6 +50,7 @@ function formatName(name: string) {
 
 export function LibraryPage() {
   const { topicId } = useParams();
+  const topic = topicId ? getTopic(topicId) : undefined;
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
   const selected = params.get('category');
@@ -75,11 +76,29 @@ export function LibraryPage() {
   const shown = category === 'rules' ? filterRules(records, ruleFilter) : records;
   const categoryLabel = categories.find(item => item.id === category)?.label ?? 'Thư viện';
 
+  if (topicId && !topic)
+    return (
+      <main className="route-page">
+        <Empty>
+          <EmptyHeader>
+            <EmptyTitle role="heading" aria-level={1}>
+              Chủ đề không tồn tại
+            </EmptyTitle>
+          </EmptyHeader>
+          <EmptyContent>
+            <Button size="lg" render={<Link to={ROUTES.library} />}>
+              Mở thư viện
+            </Button>
+          </EmptyContent>
+        </Empty>
+      </main>
+    );
+
   return (
     <main className="route-page flex flex-col gap-6">
       <header className="flex flex-col gap-2">
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-5xl">
-          {topicId ? (getTopic(topicId)?.title ?? 'Chủ đề không tồn tại') : 'Thư viện'}
+          {topic?.title ?? 'Thư viện'}
         </h1>
       </header>
 
@@ -87,7 +106,12 @@ export function LibraryPage() {
         <CardContent className="flex min-w-0 flex-col gap-6">
           <Tabs
             value={category}
-            onValueChange={value => value && navigate(`${ROUTES.library}?category=${value}`)}
+            onValueChange={value => {
+              if (!value) return;
+              const next = new URLSearchParams(params);
+              next.set('category', value);
+              navigate({ pathname: ROUTES.library, search: next.toString() });
+            }}
           >
             <TabsList
               variant="line"
