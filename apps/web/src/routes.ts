@@ -5,8 +5,10 @@ import { CastingFlow } from './casting-flow';
 import { AppShell } from './components/app-shell';
 import { PwaUpdateBanner } from './components/pwa-update-banner';
 import { LibraryDetailPage, LibraryPage } from './library';
+import { ProductInformationPage } from './product-information';
 import { ReadingSessionProvider } from './reading-session';
 import { ResultView } from './result-view';
+import { RouteErrorPage } from './route-error';
 import { ROUTES } from './route-paths';
 import { SettingsPage } from './settings';
 
@@ -23,14 +25,22 @@ function RouteLayout() {
 export const router = createBrowserRouter([
   {
     element: createElement(RouteLayout),
+    errorElement: createElement(AppShell, null, createElement(RouteErrorPage)),
     children: [
-      { path: ROUTES.home, element: createElement(App) },
-      { path: ROUTES.library, element: createElement(LibraryPage) },
-      { path: ROUTES.settings, element: createElement(SettingsPage) },
-      { path: ROUTES.casting, element: createElement(CastingFlow) },
-      { path: ROUTES.result, element: createElement(ResultView) },
-      { path: '/library/topic/:topicId', element: createElement(LibraryPage) },
-      { path: '/library/:entityType/:id', element: createElement(LibraryDetailPage) },
+      {
+        errorElement: createElement(RouteErrorPage),
+        children: [
+          { path: ROUTES.home, element: createElement(App) },
+          { path: ROUTES.library, element: createElement(LibraryPage) },
+          { path: ROUTES.settings, element: createElement(SettingsPage) },
+          { path: ROUTES.productInformation, element: createElement(ProductInformationPage) },
+          { path: ROUTES.casting, element: createElement(CastingFlow) },
+          { path: ROUTES.result, element: createElement(ResultView) },
+          { path: '/library/topic/:topicId', element: createElement(LibraryPage) },
+          { path: '/library/:entityType/:id', element: createElement(LibraryDetailPage) },
+          { path: '*', element: createElement(RouteErrorPage) },
+        ],
+      },
     ],
   },
 ]);

@@ -12,6 +12,22 @@ This document owns the user-facing language and terminology rules for the Lục 
 - Keep bibliographic descriptions in Vietnamese. Use Vietnamese or Latin-script titles and names; retain source URLs as links.
 - Keep implementation errors and developer diagnostics in English only when they are not shown to users. Map user-visible errors to clear Vietnamese messages in the web layer.
 
+## V1 navigation and action copy
+
+The F14 copy review freezes these existing labels for V1. Keep action-specific confirmation and recovery text in its owning component rather than replacing it with a generic action label.
+
+| Surface              | Display copy                                                  |
+| -------------------- | ------------------------------------------------------------- |
+| Primary navigation   | Gieo quẻ; Thư viện; Cài đặt                                   |
+| Entry methods        | Gieo tự động; Gieo thủ công; Nhập trực tiếp                   |
+| Start / calculate    | Bắt đầu gieo quẻ; Tính quẻ                                    |
+| Cancel / reset entry | Hủy phiên gieo; Xóa các hào                                   |
+| Update offer         | Cập nhật ngay; Để sau                                         |
+| Result disclaimer    | Tìm hiểu thêm                                                 |
+| Product information  | Giới thiệu; Giấy phép; Quyền riêng tư; Lưu ý sử dụng; Bảo mật |
+
+Unknown routes and unexpected route errors use Vietnamese recovery copy, not framework diagnostics. Third-party license texts and external reference titles retain their legally required original wording; application labels introducing them remain Vietnamese.
+
 ## Terminology control
 
 Use the following canonical display names for trigrams and hexagrams. They follow the Vietnamese names in the listed reference; the table is a name glossary, not an endorsement of interpretations on that page.

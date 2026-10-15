@@ -3,6 +3,7 @@ export const ROUTES = {
   library: '/library',
   libraryTopic: (id: string) => `/library/topic/${encodeURIComponent(id)}`,
   settings: '/settings',
+  productInformation: '/settings/about',
   casting: '/casting',
   result: '/result',
   libraryDetail: (entityType: string, id: string) =>

@@ -1,6 +1,7 @@
 import { getHexagram } from '@liuyao/knowledge';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Alert, AlertDescription } from './components/ui/alert';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
@@ -111,6 +112,13 @@ export function ResultView() {
           Trang gieo quẻ
         </Button>
       </header>
+
+      <Alert role="note">
+        <AlertDescription>
+          Kết quả chỉ để học tập và tham khảo, không thay thế tư vấn chuyên môn.{' '}
+          <Link to={`${ROUTES.productInformation}#disclaimer`}>Tìm hiểu thêm</Link>
+        </AlertDescription>
+      </Alert>
 
       <div className="result-layout flex min-w-0 items-start gap-6">
         <div className="grid min-w-0 w-full flex-1 gap-6">

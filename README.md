@@ -2,9 +2,9 @@
 
 [![CI](https://github.com/tungxuan1656/liuyao/actions/workflows/ci.yml/badge.svg)](https://github.com/tungxuan1656/liuyao/actions/workflows/ci.yml)
 
-Lập quẻ, tra cứu và lưu kết quả Lục Hào ngay trên thiết bị của bạn.
+Lập quẻ và tra cứu kiến thức Lục Hào ngay trên thiết bị của bạn.
 
-> **Status:** early development. The repository currently provides the monorepo foundation, PWA shell, minimal deterministic line logic, and knowledge-package scaffolding. It is not yet a complete divination application.
+> **Status:** V1 flows are implemented: six-line casting and entry, deterministic reading facts, a structured knowledge library, Settings, and offline PWA support. Production hosting and launch verification remain pending; automated interpretation is outside the V1 scope.
 
 ## V1 direction
 

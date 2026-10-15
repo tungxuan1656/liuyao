@@ -15,6 +15,7 @@ const corePackage = JSON.parse(
 ) as { version: string };
 
 export default defineConfig({
+  build: { license: { fileName: 'third-party-licenses.txt' } },
   define: {
     // biome-ignore lint/style/useNamingConvention: Vite replaces these globals by exact name (see vite-env.d.ts).
     __APP_VERSION__: JSON.stringify(appPackage.version),
@@ -32,13 +33,19 @@ export default defineConfig({
     VitePWA({
       registerType: 'prompt',
       injectRegister: null,
-      includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png'],
+      includeAssets: [
+        'favicon.ico',
+        'apple-touch-icon-180x180.png',
+        'fonts/NOTICE.md',
+        'fonts/Noto-OFL.txt',
+        'fonts/Cinzel-OFL.txt',
+      ],
       manifest: {
         lang: 'vi',
         name: 'Lục Hào',
         // biome-ignore lint/style/useNamingConvention: Web App Manifest keys are fixed by the spec.
         short_name: 'Lục Hào',
-        description: 'Lập quẻ, tra cứu và lưu kết quả Lục Hào ngay trên thiết bị của bạn.',
+        description: 'Lập quẻ và tra cứu kiến thức Lục Hào ngay trên thiết bị của bạn.',
         // biome-ignore lint/style/useNamingConvention: Web App Manifest keys are fixed by the spec.
         theme_color: '#ffffff',
         // biome-ignore lint/style/useNamingConvention: Web App Manifest keys are fixed by the spec.
@@ -65,7 +72,7 @@ export default defineConfig({
       },
       workbox: {
         maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2,json}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2,json,txt}'],
         cleanupOutdatedCaches: true,
         clientsClaim: false,
         skipWaiting: false,
