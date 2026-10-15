@@ -8,7 +8,10 @@ export function ProductInformationPage() {
   const { hash } = useLocation();
 
   useEffect(() => {
-    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
+    if (!hash) return;
+    const target = document.getElementById(hash.slice(1));
+    target?.scrollIntoView();
+    target?.focus({ preventScroll: true });
   }, [hash]);
 
   return (
@@ -22,9 +25,15 @@ export function ProductInformationPage() {
         </Button>
       </header>
 
-      <Card id="about" className="scroll-mt-24">
+      <Card>
         <CardHeader>
-          <CardTitle role="heading" aria-level={2}>
+          <CardTitle
+            id="about"
+            className="scroll-mt-24"
+            role="heading"
+            aria-level={2}
+            tabIndex={-1}
+          >
             Giới thiệu Lục Hào
           </CardTitle>
         </CardHeader>
@@ -42,6 +51,8 @@ export function ProductInformationPage() {
           </p>
           <p>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline underline-offset-4"
               href="https://github.com/tungxuan1656/liuyao"
             >
@@ -51,9 +62,15 @@ export function ProductInformationPage() {
         </CardContent>
       </Card>
 
-      <Card id="privacy" className="scroll-mt-24">
+      <Card>
         <CardHeader>
-          <CardTitle role="heading" aria-level={2}>
+          <CardTitle
+            id="privacy"
+            className="scroll-mt-24"
+            role="heading"
+            aria-level={2}
+            tabIndex={-1}
+          >
             Quyền riêng tư
           </CardTitle>
         </CardHeader>
@@ -78,9 +95,15 @@ export function ProductInformationPage() {
         </CardContent>
       </Card>
 
-      <Card id="disclaimer" className="scroll-mt-24">
+      <Card>
         <CardHeader>
-          <CardTitle role="heading" aria-level={2}>
+          <CardTitle
+            id="disclaimer"
+            className="scroll-mt-24"
+            role="heading"
+            aria-level={2}
+            tabIndex={-1}
+          >
             Lưu ý sử dụng
           </CardTitle>
         </CardHeader>
@@ -93,9 +116,15 @@ export function ProductInformationPage() {
         </CardContent>
       </Card>
 
-      <Card id="licensing" className="scroll-mt-24">
+      <Card>
         <CardHeader>
-          <CardTitle role="heading" aria-level={2}>
+          <CardTitle
+            id="licensing"
+            className="scroll-mt-24"
+            role="heading"
+            aria-level={2}
+            tabIndex={-1}
+          >
             Giấy phép
           </CardTitle>
         </CardHeader>
@@ -115,36 +144,66 @@ export function ProductInformationPage() {
           </p>
           <p className="flex flex-wrap gap-4">
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline underline-offset-4"
               href="https://github.com/tungxuan1656/liuyao/blob/main/LICENSE"
             >
               Giấy phép phần mềm
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline underline-offset-4"
               href="https://github.com/tungxuan1656/liuyao/blob/main/LICENSING.md"
             >
               Phạm vi quyền nội dung
             </a>
-            <a className="underline underline-offset-4" href="/fonts/NOTICE.md">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4"
+              href="/fonts/NOTICE.md"
+            >
               Ghi nhận phông chữ
             </a>
-            <a className="underline underline-offset-4" href="/third-party-licenses.txt">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4"
+              href="/third-party-licenses.txt"
+            >
               Giấy phép thư viện phần mềm
             </a>
-            <a className="underline underline-offset-4" href="/css-LICENSES.txt">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4"
+              href="/css-LICENSES.txt"
+            >
               Giấy phép giao diện
             </a>
-            <a className="underline underline-offset-4" href="/workbox-LICENSE.txt">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4"
+              href="/workbox-LICENSE.txt"
+            >
               Giấy phép bộ nhớ ngoại tuyến
             </a>
           </p>
         </CardContent>
       </Card>
 
-      <Card id="security" className="scroll-mt-24">
+      <Card>
         <CardHeader>
-          <CardTitle role="heading" aria-level={2}>
+          <CardTitle
+            id="security"
+            className="scroll-mt-24"
+            role="heading"
+            aria-level={2}
+            tabIndex={-1}
+          >
             Báo cáo vấn đề bảo mật
           </CardTitle>
         </CardHeader>
@@ -156,6 +215,8 @@ export function ProductInformationPage() {
           </p>
           <p>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline underline-offset-4"
               href="https://github.com/tungxuan1656/liuyao/blob/main/SECURITY.md"
             >
