@@ -46,21 +46,22 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 
 ## Commands
 
-| Command                                                   | Scope                                                   |
-| --------------------------------------------------------- | ------------------------------------------------------- |
-| `pnpm dev`                                                | Web development server                                  |
-| `pnpm build`                                              | All workspace builds                                    |
-| `pnpm test`                                               | Enforce placement + package tests                       |
-| `pnpm typecheck`                                          | All workspace type checks                               |
-| `pnpm lint`                                               | Repository Biome checks                                 |
-| `pnpm format`                                             | Write Biome + Markdown/YAML formatting                  |
-| `pnpm format:check`                                       | Check Biome + Markdown/YAML formatting                  |
-| `pnpm tasks:index`                                        | Regenerate task navigation and start candidates         |
-| `pnpm tasks:check`                                        | Task-index self-checks and read-only freshness check    |
-| `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
-| `pnpm --dir apps/web check:knowledge-delivery`            | Check built knowledge, font URLs and payload sizes      |
-| `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
-| `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
+| Command                                                   | Scope                                                      |
+| --------------------------------------------------------- | ---------------------------------------------------------- |
+| `pnpm dev`                                                | Web development server                                     |
+| `pnpm build`                                              | All workspace builds                                       |
+| `pnpm test`                                               | Enforce placement + package tests                          |
+| `pnpm typecheck`                                          | All workspace type checks                                  |
+| `pnpm lint`                                               | Repository Biome checks                                    |
+| `pnpm format`                                             | Write Biome + Markdown/YAML formatting                     |
+| `pnpm format:check`                                       | Check Biome + Markdown/YAML formatting                     |
+| `pnpm tasks:index`                                        | Regenerate task navigation and start candidates            |
+| `pnpm tasks:check`                                        | Task-index self-checks and read-only freshness check       |
+| `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                        |
+| `pnpm --dir apps/web check:deployment`                    | Check built Pages metadata, headers, manifest and revision |
+| `pnpm --dir apps/web check:knowledge-delivery`            | Check built knowledge, font URLs and payload sizes         |
+| `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source    |
+| `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness           |
 
 The icon generator copies `docs/design-docs/batquai.avif` to `apps/web/public/luc-hao-icon-source.avif` because its configuration reads a public-directory path. The command removes that copy after success, failure, or a handled interrupt; it does not modify the approved source image. If an uncatchable termination leaves the temporary file behind, remove that exact file before retrying. Concurrent generator runs are not supported.
 
@@ -90,11 +91,13 @@ It performs:
 2. `pnpm tasks:check`, including task-index self-checks and freshness.
 3. `pnpm lint`.
 4. `bash scripts/check_ts_length.sh`.
-5. `pnpm typecheck`.
-6. `pnpm build`.
-7. `pnpm --dir apps/web run check:package-exports`.
-8. `pnpm --dir apps/web run check:knowledge-delivery` (requires the production build).
-9. `pnpm test`, including test-placement enforcement.
+5. `node scripts/check-pages-build.mjs` (isolated fixtures for Pages branch mode and failure gates).
+6. `pnpm typecheck`.
+7. `pnpm build`.
+8. `pnpm --dir apps/web run check:package-exports`.
+9. `pnpm --dir apps/web run check:deployment` (requires the production build).
+10. `pnpm --dir apps/web run check:knowledge-delivery` (requires the production build).
+11. `pnpm test`, including test-placement enforcement.
 
 The script does not fix source, install dependencies, generate command scripts, or schedule jobs. Build, type-check, and test tools can refresh ignored outputs. Run `pnpm install` separately when the workspace is not bootstrapped.
 
@@ -128,5 +131,7 @@ Knowledge build, type-check, and test commands validate the JSON corpus and refr
 Use pnpm --filter @liuyao/knowledge validate:corpus --check to check output freshness without rewriting files.
 Use --check-books separately to identify the local supplied PDF editions; no audit or certification gate runs.
 The [data guide](../packages/knowledge/data/README.md) defines the source-review workflow.
+
+[Cloudflare delivery](release.md#activate-the-checked-build-command) reuses `./init.sh` through `scripts/build-pages.sh`; it does not add another publishing workflow.
 
 CI runs `./init.sh` end-to-end on pull requests and pushes to `main`, then requires `git status --porcelain` to be empty. This verifies the same check-only workflow and detects tracked or untracked repository drift; ignored generated outputs are outside that clean-tree check.

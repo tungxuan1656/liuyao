@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { deployment } from './deployment';
 import { knowledgeAssets } from './knowledge-assets';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -14,11 +15,18 @@ const corePackage = JSON.parse(
   readFileSync(path.resolve(__dirname, '../../packages/liuyao-core/package.json'), 'utf8'),
 ) as { version: string };
 
+const buildRevision = process.env.CF_PAGES_COMMIT_SHA ?? process.env.GITHUB_SHA ?? 'local';
+if (buildRevision !== 'local' && !/^[a-f0-9]{40}$/.test(buildRevision)) {
+  throw new Error('Build revision must be a full Git commit SHA');
+}
+
 export default defineConfig({
   build: { license: { fileName: 'third-party-licenses.txt' } },
   define: {
     // biome-ignore lint/style/useNamingConvention: Vite replaces these globals by exact name (see vite-env.d.ts).
     __APP_VERSION__: JSON.stringify(appPackage.version),
+    // biome-ignore lint/style/useNamingConvention: Vite build-time diagnostic global.
+    __BUILD_REVISION__: JSON.stringify(buildRevision),
     // biome-ignore lint/style/useNamingConvention: Vite replaces these globals by exact name (see vite-env.d.ts).
     __CORE_VERSION__: JSON.stringify(corePackage.version),
   },
@@ -30,6 +38,7 @@ export default defineConfig({
   plugins: [
     react(),
     knowledgeAssets(),
+    deployment(),
     VitePWA({
       registerType: 'prompt',
       injectRegister: null,

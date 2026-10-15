@@ -7,8 +7,9 @@ This document owns the V1 production delivery, deployment, rollback, and post-de
 - The web application builds with Vite.
 - The product is a static offline-first PWA.
 - CI verifies repository quality.
-- The repository has no production deploy workflow.
-- No production host or domain is yet canonical.
+- Cloudflare Pages project `kinhdichluchao` and `https://kinhdichluchao.pages.dev` are the approved host and origin.
+- The existing Cloudflare Git integration automatically builds PR previews and publishes `main` to production. No second deploy workflow is needed.
+- GitHub Cloudflare checks confirm successful PR and main deployments. Hardened host build-command activation and deployed launch verification remain pending.
 
 ## Environments
 
@@ -20,21 +21,39 @@ Use three delivery contexts:
 | Preview    | Review a production build before merge or release       |
 | Production | Public V1 deployment from the approved release revision |
 
-The hosting provider and production domain remain release decisions until the Product Owner selects them.
+Keep the existing Git integration and `main` production branch. No deploy token or duplicate GitHub Actions publisher is required.
+
+### Activate the checked build command
+
+Owner-operated settings, not actions performed by repository checks:
+
+| Pages setting    | Required value                                                  |
+| ---------------- | --------------------------------------------------------------- |
+| Root directory   | Repository root                                                 |
+| Build command    | `pnpm install --frozen-lockfile && bash scripts/build-pages.sh` |
+| Output directory | `apps/web/dist`                                                 |
+| `NODE_VERSION`   | `24`                                                            |
+| `PNPM_VERSION`   | `12.5.1`                                                        |
+
+Apply the command to both production and preview contexts. Do not set `DEPLOY_ENV` manually. `scripts/build-pages.sh` selects production only when `CF_PAGES_BRANCH=main`; all other branches select preview. Pages supplies `CF_PAGES_COMMIT_SHA` for diagnostics.
+
+The script runs the same full `./init.sh` checks as GitHub CI and requires a clean source tree. Any failed check exits before Pages publishes output. A main build also refuses a commit that no longer matches the remote main head. This is a host-side verification gate, not a dependency on the GitHub check-run status. Verify it with an intentionally failing disposable preview before claiming activation.
+
+Configure GitHub rules to require PR approval and `verify` before merging into `main`. Existing direct auto-deploy alone does not prove approved revisions or blocked failing checks. Dashboard settings and branch protection require owner verification; do not claim them from source configuration.
+
+Before release, review the preview, perform the recovery drill, and complete the pre-deploy gate. Record the main SHA, provider deployment ID, URL and smoke result.
 
 ## Delivery flow
 
-`main` candidate
-→ full CI
-→ production build
-→ preview verification
-→ pre-deploy release-candidate gate
-→ production deploy
-→ production smoke test
-→ post-deploy launch gate
-→ release record
+Pull Request
+→ CI (`verify`) + Cloudflare preview deployment
+→ PR review + pre-deploy release-candidate acceptance
+→ Merge into `main`
+→ Cloudflare Pages checked build (`bash scripts/build-pages.sh`) → auto-deploy
+→ Production smoke test + post-deploy launch acceptance
+→ Release record
 
-Do not deploy a revision that fails the applicable pre-deploy release-candidate checks in `docs/product-specs/v1-mvp.md`.
+Do not merge a PR that fails the applicable pre-deploy release-candidate checks in `docs/product-specs/v1-mvp.md`.
 
 Evaluate the post-deploy launch gate only after the production deployment exists.
 
@@ -54,6 +73,10 @@ Use long-lived caching for fingerprinted assets.
 
 Do not give `index.html` or service-worker entry files an immutable cache policy.
 
+`apps/web/deployment.ts` emits Pages `_headers`: hashed `/assets/*` receive one-year immutable caching; `/`, HTML, `sw.js`, manifest and robots revalidate. Other files retain Pages default revalidation. Keep top-level `404.html` absent so Pages supplies its SPA fallback.
+
+Headers add `nosniff`, frame denial, no-referrer, disabled camera/microphone/geolocation, and a limited CSP for base URI, objects and frame ancestors. This is not a strict script CSP. Confirm effective headers on the host; Vite preview does not interpret `_headers`.
+
 ## Production configuration
 
 Production must not require runtime secrets for V1 core flows.
@@ -61,15 +84,17 @@ Production must not require runtime secrets for V1 core flows.
 Keep:
 
 - product version visible in Settings;
-- build revision available for diagnostics;
+- full build revision available in Settings → Chi tiết kỹ thuật → Mã bản dựng (`GITHUB_SHA`, otherwise `CF_PAGES_COMMIT_SHA`, otherwise `local`);
 - production base paths correct for the selected domain;
 - manifest and canonical metadata pointed at production URLs.
 
 ## Metadata and crawl gate
 
-The current pre-domain build deliberately publishes `noindex, nofollow` and `robots.txt` with `Disallow: /`. It includes Vietnamese title/description, Open Graph, and summary-card metadata using the approved identity, without the waived social image. It publishes no invented canonical URL, `og:url`, or sitemap.
+All builds retain `noindex, nofollow`, `robots.txt` with `Disallow: /`, and an `X-Robots-Tag` block until deployed launch checks and public-page indexing policy are approved. Domain selection alone does not open crawling. No sitemap is published yet.
 
-F13 must replace the crawl block only after selecting the production origin and public page policy, then add canonical/absolute social URLs and the appropriate sitemap. Verify the deployed HTML and robots behavior together; a source-only change is not a production crawl check. Preview deployments must remain non-indexable.
+`DEPLOY_ENV=production` adds the approved root canonical and absolute `og:url` to the shared SPA shell. Other builds omit them. This is not per-record SEO. Vietnamese identity and summary-card metadata remain unchanged.
+
+Before opening crawling, approve public routes and route-specific metadata, then update HTML, robots, headers and sitemap together. Preview deployments must remain non-indexable.
 
 Recheck the privacy statement against the selected host's operational logging and retention policy before launch. The application does not send reading questions or results, but that is not a claim about host request logs.
 
@@ -77,7 +102,11 @@ Recheck the privacy statement against the selected host's operational logging an
 
 Before the first production launch, exercise the host rollback mechanism in Preview.
 
-Use two known-good preview deployments or another provider-supported rollback drill. Confirm that the restored revision activates its service worker safely and passes the smoke flow.
+Pages only permits **Rollback to this deployment** for successful production deployments, not previews. In Preview, exercise equivalent recovery by re-uploading a known-good artifact to the same preview branch. Do not claim this tests the production rollback action.
+
+Record artifacts A and B, SHAs and URLs. Deploy A, then B, then A to a dedicated preview branch. Check Settings revision and the update prompt with an existing draft at each transition. Cancel must retain the draft; confirmed update must load the restored revision. Repeat offline reload.
+
+For production recovery: pause automatic production branch deployments, cancel queued builds, open Pages **Deployments**, select a successful known-good production deployment, and choose **Rollback to this deployment**. Confirm and run the smoke flow. Record deployment IDs and Settings SHA. Installed service-worker clients still require normal update confirmation; server rollback does not immediately replace them.
 
 After each production deployment:
 
@@ -111,7 +140,10 @@ PWA installation is required only on a supported browser and platform that expos
 After every production deployment, verify:
 
 - home loads over HTTPS;
-- direct navigation works;
+- direct navigation and refresh work at `/casting`, `/result`, `/library/topic/topic-learning`, `/library/hexagram/hexagram-01#line-1`, and `/settings/about#privacy`;
+- headers for `/`, `/index.html`, `/sw.js`, manifest, hashed JS/CSS and knowledge assets match the cache/security contract;
+- Settings version and full SHA match the release record;
+- manifest URLs, canonical, `og:url`, robots and crawl headers match the environment;
 - all three reading-entry methods can reach a result;
 - knowledge lookup works;
 - PWA installation works where the supported-browser contract requires it;

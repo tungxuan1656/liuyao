@@ -22,9 +22,11 @@ run_check "format" pnpm format:check
 run_check "task index" pnpm tasks:check
 run_check "lint" pnpm lint
 run_check "TypeScript length" bash scripts/check_ts_length.sh
+run_check "Pages build gate" node scripts/check-pages-build.mjs
 run_check "typecheck" pnpm typecheck
 run_check "build" pnpm build
 run_check "package exports" pnpm --dir apps/web run check:package-exports
+run_check "deployment artifact" pnpm --dir apps/web run check:deployment
 run_check "knowledge delivery" pnpm --dir apps/web run check:knowledge-delivery
 run_check "tests" pnpm test
 
