@@ -1,10 +1,11 @@
 import type { HexagramId, KnowledgeFactId } from '@liuyao/knowledge';
-import { getRulesForFact, getSource, listSourceReferences } from '@liuyao/knowledge';
+import { getRulesForFact } from '@liuyao/knowledge';
 import type { RefObject } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
+import { KnowledgeContent } from './knowledge-content';
 import { ResultKnowledgeInspector } from './result-knowledge-inspector';
 import { ROUTES } from './route-paths';
 
@@ -60,9 +61,6 @@ export function FactButton({
 
 export function FactRulesContent({ factId }: { factId: KnowledgeFactId }) {
   const rules = getRulesForFact(factId);
-  const references = listSourceReferences().filter(reference =>
-    rules.some(rule => reference.targetIds.includes(rule.id)),
-  );
 
   if (rules.length === 0) return null;
 
@@ -76,7 +74,7 @@ export function FactRulesContent({ factId }: { factId: KnowledgeFactId }) {
           {rules.map(rule => (
             <article key={rule.id} className="flex flex-col gap-1.5 py-2.5 first:pt-0 last:pb-0">
               <h5 className="font-medium text-foreground">{rule.title}</h5>
-              <p className="text-muted-foreground">{rule.explanation}</p>
+              <KnowledgeContent id={rule.id} referencesExpanded />
               <Button
                 variant="link"
                 size="sm"
@@ -89,61 +87,6 @@ export function FactRulesContent({ factId }: { factId: KnowledgeFactId }) {
           ))}
         </div>
       </section>
-
-      {references.length > 0 && (
-        <section className="flex flex-col gap-2">
-          <h4 className="font-semibold text-xs tracking-wider uppercase text-muted-foreground">
-            Nguồn tham khảo
-          </h4>
-          <div className="flex flex-col divide-y">
-            {references.map(reference => {
-              const source = getSource(reference.sourceId);
-              if (!source) return null;
-              const isProjectConvention = source.id === 'source-liuyao-v1-contract';
-              const url = sourceUrl(source.provenance);
-              return (
-                <article
-                  key={reference.id}
-                  className="flex flex-col gap-1.5 py-2.5 first:pt-0 last:pb-0"
-                >
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h5 className="font-medium text-foreground">{source.title}</h5>
-                    {isProjectConvention && (
-                      <Badge variant="outline" className="text-xs">
-                        Quy ước dự án
-                      </Badge>
-                    )}
-                  </div>
-                  <p className="text-muted-foreground">
-                    {source.author}
-                    {reference.location ? ` · ${reference.location}` : ''}
-                  </p>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <Button
-                      variant="link"
-                      size="sm"
-                      className="h-auto p-0 text-left font-normal"
-                      render={<Link to={ROUTES.libraryDetail('source', source.id)} />}
-                    >
-                      Chi tiết nguồn
-                    </Button>
-                    {url ? (
-                      <Button
-                        variant="link"
-                        size="sm"
-                        className="h-auto p-0 text-left font-normal"
-                        render={<a href={url} target="_blank" rel="noreferrer" />}
-                      >
-                        Tài liệu tham khảo
-                      </Button>
-                    ) : null}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-      )}
     </div>
   );
 }
@@ -206,8 +149,4 @@ export function FactInspector({
       )}
     </div>
   );
-}
-
-export function sourceUrl(provenance: string) {
-  return provenance.match(/https?:\/\/[^\s]+/)?.[0]?.replace(/[),.;]+$/, '') ?? null;
 }

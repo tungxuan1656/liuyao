@@ -31,12 +31,18 @@ export function KnowledgeLinks({ links }: { links: readonly ContentLink[] }) {
     </ul>
   );
 }
-export function KnowledgeReferences({ references }: { references: readonly ContentReference[] }) {
+export function KnowledgeReferences({
+  references,
+  expanded = false,
+}: {
+  references: readonly ContentReference[];
+  expanded?: boolean;
+}) {
   if (!references || references.length === 0) {
     return <p className="text-sm text-muted-foreground">Chưa có trích dẫn nguồn cho mục này.</p>;
   }
   return (
-    <details>
+    <details open={expanded}>
       <summary className="min-h-11 cursor-pointer content-center text-muted-foreground">
         Nguồn tham khảo
       </summary>
@@ -94,9 +100,11 @@ function TargetLink({ target }: { target: NonNullable<ContentEntry['target']> })
 export function KnowledgeEntries({
   entries,
   expanded = false,
+  referencesExpanded = false,
 }: {
   entries: readonly ContentEntry[];
   expanded?: boolean;
+  referencesExpanded?: boolean;
 }) {
   if (!entries || entries.length === 0) {
     return (
@@ -123,7 +131,7 @@ export function KnowledgeEntries({
           {entry.condition && (
             <p className="whitespace-pre-line text-muted-foreground">{entry.condition}</p>
           )}
-          <KnowledgeReferences references={entry.references} />
+          <KnowledgeReferences references={entry.references} expanded={referencesExpanded} />
           {entry.target ? <TargetLink target={entry.target} /> : null}
           {entry.links?.length ? <KnowledgeLinks links={entry.links} /> : null}
         </article>
@@ -133,7 +141,11 @@ export function KnowledgeEntries({
           <summary className="min-h-11 cursor-pointer content-center">
             Chú giải và các cách đọc khác
           </summary>
-          <KnowledgeEntries entries={entries.slice(4)} expanded />
+          <KnowledgeEntries
+            entries={entries.slice(4)}
+            expanded
+            referencesExpanded={referencesExpanded}
+          />
         </details>
       )}
     </div>
