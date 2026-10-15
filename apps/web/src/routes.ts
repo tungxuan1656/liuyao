@@ -29,6 +29,7 @@ export const router = createBrowserRouter([
       { path: ROUTES.settings, element: createElement(SettingsPage) },
       { path: ROUTES.casting, element: createElement(CastingFlow) },
       { path: ROUTES.result, element: createElement(ResultView) },
+      { path: '/library/topic/:topicId', element: createElement(LibraryPage) },
       { path: '/library/:entityType/:id', element: createElement(LibraryDetailPage) },
     ],
   },

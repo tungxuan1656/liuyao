@@ -164,9 +164,13 @@ export function getApplicableRules(record: LibraryRecord): KnowledgeRule[] {
     .filter((rule): rule is KnowledgeRule => Boolean(rule));
 }
 
-export function getLibraryRecords(category: Category, query: string): readonly LibraryRecord[] {
+export function getLibraryRecords(
+  category: Category,
+  query: string,
+  topicId?: string,
+): readonly LibraryRecord[] {
   if (category === 'articles')
-    return listContent({ type: 'article', query }).map(item => ({
+    return listContent({ type: 'article', query, topicId }).map(item => ({
       type: 'article' as const,
       id: item.id,
       title: item.title,
