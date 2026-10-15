@@ -219,9 +219,13 @@ export function KnowledgeContent({ id }: { id: string }) {
           </CardHeader>
           <CardContent className="flex flex-col gap-3">
             <p>{figure.orientation.description}</p>
+            <KnowledgeReferences references={figure.orientation.references} />
             <ul>
               {figure.labels.map(label => (
-                <li key={label.id}>{label.text}</li>
+                <li key={label.id}>
+                  <p>{label.text}</p>
+                  <KnowledgeReferences references={label.references} />
+                </li>
               ))}
             </ul>
             <KnowledgeReferences references={figure.references} />
