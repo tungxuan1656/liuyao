@@ -9,12 +9,11 @@
     "preview": "vite preview",
     "generate:assets": "node scripts/generate-assets.mjs",
     "typecheck": "tsc --noEmit",
+    "check:knowledge-delivery": "node scripts/check-knowledge-delivery.mjs",
     "check:package-exports": "node scripts/check-package-exports.mjs && tsc --noEmit -p tsconfig.package-types.json"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
-    "@fontsource-variable/noto-sans": "^5.3.0",
-    "@fontsource-variable/noto-serif": "^5.3.0",
     "@liuyao/core": "workspace:*",
     "@liuyao/knowledge": "workspace:*",
     "class-variance-authority": "^0.7.1",

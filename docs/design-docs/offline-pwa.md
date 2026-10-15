@@ -83,6 +83,10 @@ Measure the actual production build after knowledge or loading changes:
 - cold startup, record opening, local search, and memory on a representative browser.
 
 Keep detailed corpus data out of the initial JavaScript bundle.
+After `pnpm build`, run `pnpm --dir apps/web check:knowledge-delivery`.
+It measures raw/gzip bytes and checks ready-record precaching, long-prose separation, and local font assets.
+The prose check samples authored text over 300 characters; inspect the import path when changing loading behavior.
+Gzip totals sum separately compressed responses; they exclude HTTP headers and cache-storage overhead.
 Use one meaningful corpus/build check instead of a synthetic certification or snapshot approval framework.
 Check direct offline routes and interrupted retrieval before claiming offline delivery.
 The [knowledge model](knowledge-model.md#generated-files) owns generated output and package access.

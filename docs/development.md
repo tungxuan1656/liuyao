@@ -58,6 +58,7 @@ If application code contains reusable Liu Yao logic that needs unit tests, move 
 | `pnpm tasks:index`                                        | Regenerate task navigation and start candidates         |
 | `pnpm tasks:check`                                        | Task-index self-checks and read-only freshness check    |
 | `bash scripts/check_ts_length.sh`                         | Enforce TypeScript file-size limits                     |
+| `pnpm --dir apps/web check:knowledge-delivery`            | Check built knowledge, font URLs and payload sizes      |
 | `pnpm --filter @liuyao/web generate:assets`               | Regenerate the V1 PWA icon set from the approved source |
 | `pnpm --filter @liuyao/knowledge validate:corpus --check` | Check the current corpus and generated freshness        |
 
@@ -92,7 +93,8 @@ It performs:
 5. `pnpm typecheck`.
 6. `pnpm build`.
 7. `pnpm --dir apps/web run check:package-exports`.
-8. `pnpm test`, including test-placement enforcement.
+8. `pnpm --dir apps/web run check:knowledge-delivery` (requires the production build).
+9. `pnpm test`, including test-placement enforcement.
 
 The script does not fix source, install dependencies, generate command scripts, or schedule jobs. Build, type-check, and test tools can refresh ignored outputs. Run `pnpm install` separately when the workspace is not bootstrapped.
 
