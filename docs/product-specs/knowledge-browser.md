@@ -21,7 +21,7 @@ The browser does not contain automated divination conclusions.
 
 Thư viện
 → Quái, Quẻ, Thuật ngữ, Quy tắc hoặc Bài viết
-→ List or search
+→ Topic collection, list, or search
 → Detail
 
 A rule link from a reading result can open the same canonical detail content.
@@ -67,7 +67,8 @@ Quẻ detail → overview → six hào → attributed explanations → book/page
 Topic group → ready article → related knowledge and sources.
 
 **Observed:** Detail routes render attributed entries, six hào, special passages, tables, figure descriptions, sources, and linked articles. Long supplementary commentary can be expanded.
-**Intended:** Dedicated topic browsing and richer lesson/diagram presentation remain future feature work.
+**Observed:** Topic collections and ordered lessons use the same local catalog and article routes. Lesson prose stays expanded.
+**Intended:** Richer diagram presentation remains future feature work.
 
 ### Quẻ and hào
 
@@ -89,16 +90,17 @@ Topic group → ready article → related knowledge and sources.
 - Identify accepted project conventions and link their reviewed specification evidence.
 - Preserve compatibility navigation without using flattened prose as reviewed commentary.
 
-### Intended topic browsing and article improvements
+### Topic browsing and articles
 
-- Add topic browsing and article details alongside existing entity, term, and rule routes.
-- Derive topics and lists from the small content index; load detailed record assets when opened.
+- Browse topics at `/library/topic/:topicId` and articles at `/library/article/:id`, alongside existing reference routes.
+- Use the package topic catalog for labels and released metadata for collection membership. Load detailed record assets when opened.
 - Search ready article titles, aliases, and short Vietnamese summaries locally.
 - Preserve the existing Vietnamese normalization and exact-ID search contract.
 - Show explicit empty states for topics without released content, including future learning articles.
 - When an article is released, include it through the existing collection contract.
 - Preserve declared related-record and rule links without inventing associations.
-- Render learning sections in their declared sequence, with links to supporting records or positions.
+- Order lessons by their declared sequence and preserve authored entry order, with links to supporting records or positions.
+- Keep selected category and search query in the URL so reloads and browser history preserve the collection.
 - If a related target is not released, show an unavailable target without exposing draft prose or inventing a replacement.
 
 ### Shared presentation

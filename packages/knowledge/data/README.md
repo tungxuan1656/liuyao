@@ -16,6 +16,8 @@ Edit one canonical JSON record. Git stores its revisions.
 
 The validator discovers JSON records directly in the content directories.
 No author-maintained manifest or separate citation registry is required.
+`../src/topics.ts` owns topic labels; released records declare membership through `topicIds`.
+Article `sequence` orders lessons within the catalog; authored entry order remains unchanged.
 Sources.json identifies the four supplied books and their local PDF editions.
 Bibliography.json retains lightweight bibliography used by existing lookups.
 TypeScript files here contain compatibility configuration, not duplicate authored prose.
