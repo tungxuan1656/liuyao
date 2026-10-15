@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "generate:assets": "node scripts/generate-assets.mjs",
     "typecheck": "tsc --noEmit",
+    "check:knowledge-delivery": "node scripts/check-knowledge-delivery.mjs",
     "check:package-exports": "node scripts/check-package-exports.mjs && tsc --noEmit -p tsconfig.package-types.json"
   },
   "dependencies": {

@@ -25,6 +25,7 @@ run_check "TypeScript length" bash scripts/check_ts_length.sh
 run_check "typecheck" pnpm typecheck
 run_check "build" pnpm build
 run_check "package exports" pnpm --dir apps/web run check:package-exports
+run_check "knowledge delivery" pnpm --dir apps/web run check:knowledge-delivery
 run_check "tests" pnpm test
 
 echo "=== Verification passed ==="
