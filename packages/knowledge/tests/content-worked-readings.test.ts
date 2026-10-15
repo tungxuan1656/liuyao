@@ -88,6 +88,14 @@ describe('task-author-ordered-lessons-and-reviewed-worked-examples independently
     );
   });
 
+  it('links the classification lesson to the prerequisite Five Element cycles', () => {
+    const entry = lesson('lesson-liuyao-board').entries.find(
+      block => block.id === 'elements-relatives',
+    );
+    expect(entry?.links).toContainEqual({ recordId: 'rule-five-element-cycles' });
+    expect(table('rule-five-element-cycles', 'element-cycles').rows).toHaveLength(10);
+  });
+
   it.each(fixture.examples)(
     '$id agrees with deterministic APIs in every expected field',
     example => {
