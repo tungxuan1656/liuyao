@@ -74,7 +74,7 @@ export function FactRulesContent({ factId }: { factId: KnowledgeFactId }) {
           {rules.map(rule => (
             <article key={rule.id} className="flex flex-col gap-1.5 py-2.5 first:pt-0 last:pb-0">
               <h5 className="font-medium text-foreground">{rule.title}</h5>
-              <KnowledgeContent id={rule.id} />
+              <KnowledgeContent id={rule.id} referencesExpanded />
               <Button
                 variant="link"
                 size="sm"

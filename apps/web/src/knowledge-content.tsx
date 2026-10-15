@@ -20,8 +20,10 @@ function ContentSection({
   entries,
   id,
   expanded = false,
+  referencesExpanded = false,
 }: {
   expanded?: boolean;
+  referencesExpanded?: boolean;
   title: string;
   entries: readonly ContentEntry[];
   id?: string;
@@ -34,12 +36,22 @@ function ContentSection({
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <KnowledgeEntries entries={entries} expanded={expanded} />
+        <KnowledgeEntries
+          entries={entries}
+          expanded={expanded}
+          referencesExpanded={referencesExpanded}
+        />
       </CardContent>
     </Card>
   );
 }
-export function KnowledgeContent({ id }: { id: string }) {
+export function KnowledgeContent({
+  id,
+  referencesExpanded = false,
+}: {
+  id: string;
+  referencesExpanded?: boolean;
+}) {
   const { hash } = useLocation();
   const [attempt, setAttempt] = useState(0);
   const key = `${id}:${attempt}`;
@@ -106,6 +118,7 @@ export function KnowledgeContent({ id }: { id: string }) {
         }
         entries={record.entries}
         expanded={record.type === 'article'}
+        referencesExpanded={referencesExpanded}
       />
       {record.links?.length ? (
         <Card>
@@ -194,6 +207,7 @@ export function KnowledgeContent({ id }: { id: string }) {
             id={`line-${line.position}`}
             title={`Hào ${line.position} · ${line.label}`}
             entries={line.entries}
+            referencesExpanded={referencesExpanded}
           />
         ))}
       {record.type === 'hexagram' &&
@@ -203,6 +217,7 @@ export function KnowledgeContent({ id }: { id: string }) {
             id={`special-${index}`}
             title={passage.title}
             entries={passage.entries}
+            referencesExpanded={referencesExpanded}
           />
         ))}
       {record.tables?.length ? <KnowledgeTables tables={record.tables} /> : null}
@@ -242,7 +257,11 @@ export function KnowledgeContent({ id }: { id: string }) {
         </Card>
       ))}
       {record.notes?.length ? (
-        <ContentSection title="Ghi chú và khác biệt nguồn" entries={record.notes} />
+        <ContentSection
+          title="Ghi chú và khác biệt nguồn"
+          entries={record.notes}
+          referencesExpanded={referencesExpanded}
+        />
       ) : null}
     </section>
   );
