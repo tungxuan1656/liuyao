@@ -65,6 +65,14 @@ Keep:
 - production base paths correct for the selected domain;
 - manifest and canonical metadata pointed at production URLs.
 
+## Metadata and crawl gate
+
+The current pre-domain build deliberately publishes `noindex, nofollow` and `robots.txt` with `Disallow: /`. It includes Vietnamese title/description, Open Graph, and summary-card metadata using the approved identity, without the waived social image. It publishes no invented canonical URL, `og:url`, or sitemap.
+
+F13 must replace the crawl block only after selecting the production origin and public page policy, then add canonical/absolute social URLs and the appropriate sitemap. Verify the deployed HTML and robots behavior together; a source-only change is not a production crawl check. Preview deployments must remain non-indexable.
+
+Recheck the privacy statement against the selected host's operational logging and retention policy before launch. The application does not send reading questions or results, but that is not a claim about host request logs.
+
 ## Rollback
 
 Before the first production launch, exercise the host rollback mechanism in Preview.
