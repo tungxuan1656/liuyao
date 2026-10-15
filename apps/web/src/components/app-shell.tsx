@@ -8,12 +8,12 @@ type AppShellProps = {
 };
 
 export function AppShell({ children }: AppShellProps) {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: Path changes intentionally trigger scrolling, including back/forward navigation.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: Path changes intentionally reset scroll; anchored content owns its target scroll.
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (!hash) window.scrollTo(0, 0);
+  }, [pathname, hash]);
 
   return (
     <div data-app-shell className="flex min-h-dvh flex-col bg-muted/30">

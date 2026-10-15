@@ -4,7 +4,7 @@ This document owns the public V1 product identity and release assets.
 
 ## Release decisions
 
-The Product Owner approved **Lục Hào** as the final public product name on 2026-09-27 and approved **Lục Hào** as the PWA short name on 2026-10-01. The approved one-sentence description is **“Lập quẻ, tra cứu và lưu kết quả Lục Hào ngay trên thiết bị của bạn.”** On 2026-09-28, the Product Owner approved Vietnamese as the only user-facing language, including the knowledge catalog, with no Han characters displayed. `docs/product-specs/vietnamese-language.md` owns the language and terminology rules.
+The Product Owner approved **Lục Hào** as the final public product name on 2026-09-27 and approved **Lục Hào** as the PWA short name on 2026-10-01. On 2026-10-15, the Product Owner approved the corrected one-sentence description **“Lập quẻ và tra cứu kiến thức Lục Hào ngay trên thiết bị của bạn.”** This replaces the earlier saving claim: V1 keeps readings in memory only. On 2026-09-28, the Product Owner approved Vietnamese as the only user-facing language, including the knowledge catalog, with no Han characters displayed. `docs/product-specs/vietnamese-language.md` owns the language and terminology rules.
 
 On 2026-10-01, the Product Owner approved the supplied `docs/design-docs/batquai.avif` bagua artwork, its current wordmark treatment shown in `docs/product-specs/previews/task-product-identity-logo-preview.html`, and the current application theme and background colors. Use the supplied artwork as-is: do not redraw, trace, crop, or remove its bagua. The Product Owner confirmed project usage rights for this asset on 2026-10-01; this is not an independent legal audit. The Product Owner approved no tagline for V1.
 

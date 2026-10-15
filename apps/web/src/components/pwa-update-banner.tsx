@@ -8,7 +8,7 @@ import {
 } from '../lib/pwa-update';
 import { useReadingSession } from '../reading-session';
 import { ConfirmationDialog } from './confirmation-dialog';
-import { Alert, AlertTitle } from './ui/alert';
+import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { Button } from './ui/button';
 
 export function PwaUpdateBanner() {
@@ -22,6 +22,7 @@ export function PwaUpdateBanner() {
   const [snapshot, setSnapshot] = useState<PwaUpdateSnapshot>(getPwaUpdateSnapshot);
   const [dismissed, setDismissed] = useState(false);
   const [confirming, setConfirming] = useState(false);
+  const [updateFailed, setUpdateFailed] = useState(false);
   const [online, setOnline] = useState(() => navigator.onLine);
 
   useEffect(() => {
@@ -42,13 +43,14 @@ export function PwaUpdateBanner() {
 
   async function acceptUpdate() {
     setConfirming(false);
+    setUpdateFailed(false);
     try {
       await applyPwaUpdate(() => {
         signalUpdateAccepted();
         window.location.reload();
       });
     } catch {
-      // Keep the current page and any in-memory reading when the update fails.
+      setUpdateFailed(true);
     }
   }
 
@@ -70,6 +72,11 @@ export function PwaUpdateBanner() {
         >
           <RefreshCw aria-hidden="true" />
           <AlertTitle id="pwa-update-title">Có bản cập nhật</AlertTitle>
+          {updateFailed && (
+            <AlertDescription role="alert">
+              Chưa thể cập nhật. Quẻ hiện tại vẫn được giữ. Bạn có thể thử lại.
+            </AlertDescription>
+          )}
           <div className="col-span-full flex flex-wrap gap-2">
             <Button variant="outline" size="lg" type="button" onClick={() => setDismissed(true)}>
               Để sau

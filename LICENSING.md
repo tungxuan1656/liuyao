@@ -26,6 +26,12 @@ Do not add third-party material to `packages/knowledge/data/` unless its provena
 
 Consulted research editions are used for local inspection and fact verification; their text is not redistributed in the repository. Knowledge authoring produces original summaries, structured domain facts, and source citations. Knowledge authoring, publication, and audit do not require a separate rights-clearance approval. Retain source rights metadata and the third-party material boundaries above.
 
+## Distributed dependency notices
+
+The production build emits `third-party-licenses.txt` using Vite's bundled-dependency license collector. `apps/web/public/css-LICENSES.txt` retains the installed Tailwind CSS, tw-animate-css, and shadcn CSS notices; `apps/web/public/workbox-LICENSE.txt` retains the shared notice for the generated Workbox service-worker runtime. Font notices and OFL texts live under `apps/web/public/fonts/`. The product-information page links to these files, and the PWA precaches them.
+
+When changing those CSS or service-worker dependencies, compare and refresh their distributed license texts from the installed packages. Inspect the generated JavaScript license report after changes to bundled dependencies; build-time-only package inventory is not a substitute for checking what ships. These notices do not license the curated content or establish rights to third-party books or branding.
+
 ## Trademarks
 
 The software license does not grant rights to project names, logos, product branding, or other trademarks.

@@ -1,6 +1,7 @@
 import { RULE_SET_ID } from '@liuyao/core';
 import { KNOWLEDGE_PACKAGE_VERSION } from '@liuyao/knowledge';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AppearanceSetting } from './components/appearance-setting';
 import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
 import { Button } from './components/ui/button';
@@ -11,6 +12,8 @@ import {
   triggerPwaInstallPrompt,
 } from './lib/pwa-install';
 import { getPwaUpdateSnapshot, type PwaUpdateSnapshot, subscribePwaUpdate } from './lib/pwa-update';
+
+import { ROUTES } from './route-paths';
 
 const appVersion = __APP_VERSION__;
 const coreVersion = __CORE_VERSION__;
@@ -204,50 +207,27 @@ export function SettingsPage() {
           </CardHeader>
           <CardContent>
             <p id="settings-privacy" className="text-muted-foreground">
-              Tải lại trang sẽ xóa quẻ và câu hỏi. Dữ liệu không được gửi lên mạng.
+              Tải lại trang sẽ xóa quẻ và câu hỏi. Ứng dụng không gửi câu hỏi hay kết quả lên mạng.
             </p>
           </CardContent>
           <CardFooter>
             <nav aria-label="Thông tin sản phẩm" className="flex flex-wrap gap-3">
-              <Button
-                variant="link"
-                size="lg"
-                render={
-                  <a
-                    href="https://github.com/tungxuan1656/liuyao#readme"
-                    target="_blank"
-                    rel="noreferrer"
-                  />
-                }
-              >
-                Giới thiệu
-              </Button>
-              <Button
-                variant="link"
-                size="lg"
-                render={
-                  <a
-                    href="https://github.com/tungxuan1656/liuyao/blob/main/LICENSE"
-                    target="_blank"
-                    rel="noreferrer"
-                  />
-                }
-              >
-                Giấy phép
-              </Button>
-              <Button
-                variant="link"
-                size="lg"
-                render={
-                  <a
-                    href="https://github.com/tungxuan1656/liuyao/blob/main/SECURITY.md"
-                    target="_blank"
-                    rel="noreferrer"
-                  />
-                }
-              >
-                Bảo mật
-              </Button>
+              {[
+                ['about', 'Giới thiệu'],
+                ['licensing', 'Giấy phép'],
+                ['privacy', 'Quyền riêng tư'],
+                ['disclaimer', 'Lưu ý sử dụng'],
+                ['security', 'Bảo mật'],
+              ].map(([anchor, label]) => (
+                <Button
+                  key={anchor}
+                  variant="link"
+                  size="lg"
+                  render={<Link to={`${ROUTES.productInformation}#${anchor}`} />}
+                >
+                  {label}
+                </Button>
+              ))}
             </nav>
           </CardFooter>
         </Card>
