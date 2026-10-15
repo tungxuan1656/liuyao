@@ -170,6 +170,10 @@ export function SettingsPage() {
                 Chi tiết kỹ thuật
               </summary>
               <dl className="grid gap-4">
+                <div className="flex flex-col gap-1">
+                  <dt className="text-muted-foreground">Mã bản dựng</dt>
+                  <dd className="break-all font-mono text-xs">{__BUILD_REVISION__}</dd>
+                </div>
                 <div className="flex flex-wrap justify-between gap-2">
                   <dt className="text-muted-foreground">@liuyao/core</dt>
                   <dd className="font-medium">{coreVersion}</dd>
