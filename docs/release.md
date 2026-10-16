@@ -19,7 +19,7 @@ Core and knowledge keep their independent package versions. The selected task ow
 
 ### Release notes
 
-- Create a six-line reading with coin casting, direct line entry or direct hexagram selection.
+- Create a six-line reading with automatic coin casting, manual coin recording or direct six-line entry.
 - Inspect primary/changed hexagrams, deterministic Liu Yao facts and linked rule explanations.
 - Browse 64 hexagrams and their 384 positions, eight trigrams, terms, rules, nine topics and four ordered lessons.
 - Search locally, read supplied-book references and use cached knowledge offline after readiness completes.
