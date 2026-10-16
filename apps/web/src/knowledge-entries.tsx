@@ -1,6 +1,8 @@
 import type { ContentEntry, ContentLink, ContentReference } from '@liuyao/knowledge';
 import { getContentMetadata, getSource } from '@liuyao/knowledge';
+import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { ROUTES } from './route-paths';
 
 function linkPath(link: ContentLink) {
@@ -33,20 +35,23 @@ export function KnowledgeLinks({ links }: { links: readonly ContentLink[] }) {
 }
 export function KnowledgeReferences({
   references,
+  summary,
   expanded = false,
 }: {
-  references: readonly ContentReference[];
+  references?: readonly ContentReference[];
+  summary?: ReactNode;
   expanded?: boolean;
 }) {
   if (!references || references.length === 0) {
+    if (summary) return <div>{summary}</div>;
     return <p className="text-sm text-muted-foreground">Chưa có trích dẫn nguồn cho mục này.</p>;
   }
   return (
     <details open={expanded}>
-      <summary className="min-h-11 cursor-pointer content-center text-muted-foreground">
-        Nguồn tham khảo
+      <summary className="group min-h-11 cursor-pointer content-center text-muted-foreground hover:text-foreground">
+        {summary ?? <span>Nguồn tham khảo</span>}
       </summary>
-      <ul>
+      <ul className="ps-5 text-sm text-muted-foreground">
         {references.map((ref, i) => (
           // biome-ignore lint/suspicious/noArrayIndexKey: references carry no identifier of their own; the list is static.
           <li key={i}>
@@ -97,14 +102,44 @@ function TargetLink({ target }: { target: NonNullable<ContentEntry['target']> })
     <span className="text-sm text-muted-foreground">Tài liệu tham chiếu chưa phát hành</span>
   );
 }
+function entrySummary(entry: ContentEntry) {
+  if (entry.title && entry.attribution) {
+    return (
+      <span className="inline-flex flex-wrap items-baseline gap-x-2">
+        <span className="font-semibold text-foreground">{entry.title}</span>
+        <span className="text-muted-foreground group-hover:text-foreground">
+          {entry.attribution.author}
+          {entry.attribution.via ? ` · ${entry.attribution.via}` : ''}
+        </span>
+      </span>
+    );
+  }
+  if (entry.title) {
+    return <span className="font-semibold text-foreground">{entry.title}</span>;
+  }
+  if (entry.attribution) {
+    return (
+      <span className="text-muted-foreground group-hover:text-foreground">
+        {entry.attribution.author}
+        {entry.attribution.via ? ` · ${entry.attribution.via}` : ''}
+      </span>
+    );
+  }
+  return entry.references?.length ? (
+    <span className="text-muted-foreground group-hover:text-foreground">Nguồn tham khảo</span>
+  ) : null;
+}
+
 export function KnowledgeEntries({
   entries,
   expanded = false,
   referencesExpanded = false,
+  suppressReferences = false,
 }: {
   entries: readonly ContentEntry[];
   expanded?: boolean;
   referencesExpanded?: boolean;
+  suppressReferences?: boolean;
 }) {
   if (!entries || entries.length === 0) {
     return (
@@ -114,28 +149,30 @@ export function KnowledgeEntries({
   const visible = expanded ? entries : entries.slice(0, 4);
   return (
     <div className="flex flex-col gap-6">
-      {visible.map((entry, index) => (
-        <article
-          key={entry.id ?? index}
-          id={entry.id}
-          className="flex scroll-mt-24 flex-col gap-3 target:ring-2 target:ring-primary"
-        >
-          {entry.title && <h3 className="font-semibold">{entry.title}</h3>}
-          {entry.attribution && (
-            <p className="text-muted-foreground">
-              {entry.attribution.author}
-              {entry.attribution.via ? ` · ${entry.attribution.via}` : ''}
-            </p>
-          )}
-          <p className="whitespace-pre-line font-serif text-lg leading-relaxed">{entry.text}</p>
-          {entry.condition && (
-            <p className="whitespace-pre-line text-muted-foreground">{entry.condition}</p>
-          )}
-          <KnowledgeReferences references={entry.references} expanded={referencesExpanded} />
-          {entry.target ? <TargetLink target={entry.target} /> : null}
-          {entry.links?.length ? <KnowledgeLinks links={entry.links} /> : null}
-        </article>
-      ))}
+      {visible.map((entry, index) => {
+        const summary = suppressReferences ? null : entrySummary(entry);
+        return (
+          <article
+            key={entry.id ?? index}
+            id={entry.id}
+            className="flex scroll-mt-24 flex-col gap-3 target:ring-2 target:ring-primary"
+          >
+            {summary ? (
+              <KnowledgeReferences
+                references={entry.references}
+                summary={summary}
+                expanded={referencesExpanded}
+              />
+            ) : null}
+            <p className="whitespace-pre-line font-serif text-lg leading-relaxed">{entry.text}</p>
+            {entry.condition && (
+              <p className="whitespace-pre-line text-muted-foreground">{entry.condition}</p>
+            )}
+            {entry.target ? <TargetLink target={entry.target} /> : null}
+            {entry.links?.length ? <KnowledgeLinks links={entry.links} /> : null}
+          </article>
+        );
+      })}
       {!expanded && entries.length > 4 && (
         <details>
           <summary className="min-h-11 cursor-pointer content-center">
@@ -149,5 +186,72 @@ export function KnowledgeEntries({
         </details>
       )}
     </div>
+  );
+}
+
+export function ContentSection({
+  title,
+  entries,
+  id,
+  expanded = false,
+  referencesExpanded = false,
+}: {
+  expanded?: boolean;
+  referencesExpanded?: boolean;
+  title: string;
+  entries: readonly ContentEntry[];
+  id?: string;
+}) {
+  const [firstEntry] = entries;
+  const singleEntry =
+    entries.length === 1 && firstEntry && !firstEntry.title && !firstEntry.attribution
+      ? firstEntry
+      : null;
+
+  if (singleEntry?.references?.length) {
+    return (
+      <Card id={id} className="min-w-0 scroll-mt-24 target:ring-2 target:ring-primary">
+        <CardHeader>
+          <KnowledgeReferences
+            references={singleEntry.references}
+            summary={
+              <CardTitle
+                role="heading"
+                aria-level={2}
+                className="inline-block text-foreground group-hover:underline"
+              >
+                {title}
+              </CardTitle>
+            }
+            expanded={referencesExpanded}
+          />
+        </CardHeader>
+        <CardContent>
+          <KnowledgeEntries
+            entries={entries}
+            expanded={expanded}
+            referencesExpanded={referencesExpanded}
+            suppressReferences
+          />
+        </CardContent>
+      </Card>
+    );
+  }
+
+  return (
+    <Card id={id} className="min-w-0 scroll-mt-24 target:ring-2 target:ring-primary">
+      <CardHeader>
+        <CardTitle role="heading" aria-level={2}>
+          {title}
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <KnowledgeEntries
+          entries={entries}
+          expanded={expanded}
+          referencesExpanded={referencesExpanded}
+        />
+      </CardContent>
+    </Card>
   );
 }

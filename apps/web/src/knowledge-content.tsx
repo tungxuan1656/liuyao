@@ -1,11 +1,11 @@
-import type { ContentEntry, ContentRecord } from '@liuyao/knowledge';
+import type { ContentRecord } from '@liuyao/knowledge';
 import { createContentLoader, getContentMetadata } from '@liuyao/knowledge';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
-import { KnowledgeEntries, KnowledgeLinks, KnowledgeReferences } from './knowledge-entries';
+import { ContentSection, KnowledgeLinks, KnowledgeReferences } from './knowledge-entries';
 import { KnowledgeTables } from './knowledge-tables';
 import { ROUTES } from './route-paths';
 
@@ -15,36 +15,7 @@ export const loadContentRecord = createContentLoader(async item => {
   return response.json();
 });
 const load = loadContentRecord;
-function ContentSection({
-  title,
-  entries,
-  id,
-  expanded = false,
-  referencesExpanded = false,
-}: {
-  expanded?: boolean;
-  referencesExpanded?: boolean;
-  title: string;
-  entries: readonly ContentEntry[];
-  id?: string;
-}) {
-  return (
-    <Card id={id} className="min-w-0 scroll-mt-24 target:ring-2 target:ring-primary">
-      <CardHeader>
-        <CardTitle role="heading" aria-level={2}>
-          {title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <KnowledgeEntries
-          entries={entries}
-          expanded={expanded}
-          referencesExpanded={referencesExpanded}
-        />
-      </CardContent>
-    </Card>
-  );
-}
+
 export function KnowledgeContent({
   id,
   referencesExpanded = false,
@@ -233,24 +204,38 @@ export function KnowledgeContent({
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-3">
+            <KnowledgeReferences
+              references={figure.orientation.references}
+              summary={
+                <span className="text-muted-foreground group-hover:text-foreground">
+                  Định hướng hình vẽ
+                </span>
+              }
+            />
             <p>{figure.orientation.description}</p>
-            <KnowledgeReferences references={figure.orientation.references} />
             <ul>
               {figure.labels.map(label => (
                 <li key={label.id}>
-                  <p>{label.text}</p>
-                  <KnowledgeReferences references={label.references} />
+                  <KnowledgeReferences
+                    references={label.references}
+                    summary={<span>{label.text}</span>}
+                  />
                 </li>
               ))}
             </ul>
             <KnowledgeReferences references={figure.references} />
             {figure.authorAlternatives?.map(view => (
-              <div key={view.author}>
-                <p>
-                  {view.author}
-                  {view.via ? ` · qua ${view.via}` : ''} · {view.description}
-                </p>
-                <KnowledgeReferences references={view.references} />
+              <div key={view.author} className="flex flex-col gap-2">
+                <KnowledgeReferences
+                  references={view.references}
+                  summary={
+                    <span className="text-muted-foreground group-hover:text-foreground">
+                      {view.author}
+                      {view.via ? ` · qua ${view.via}` : ''}
+                    </span>
+                  }
+                />
+                <p className="whitespace-pre-line font-serif leading-relaxed">{view.description}</p>
               </div>
             ))}
           </CardContent>

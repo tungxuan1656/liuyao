@@ -25,7 +25,7 @@
   width: min(100%, 80rem);
   box-sizing: border-box;
   margin-inline: auto;
-  padding: 1rem calc(1rem + var(--app-safe-area-right)) 1.5rem
+  padding: 1.5rem calc(1rem + var(--app-safe-area-right)) 2rem
     calc(1rem + var(--app-safe-area-left));
 }
 
@@ -41,7 +41,7 @@
 
 @media (min-width: 768px) {
   .route-page {
-    padding: 1.5rem calc(1.5rem + var(--app-safe-area-right)) 2rem
+    padding: 2rem calc(1.5rem + var(--app-safe-area-right)) 2.5rem
       calc(1.5rem + var(--app-safe-area-left));
   }
 
