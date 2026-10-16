@@ -47,12 +47,15 @@ export function Navigation() {
           {mobileParent ? (
             <Link
               to={mobileParent}
-              className={buttonVariants({ variant: 'ghost', size: 'icon-lg' })}
+              className={cn(
+                buttonVariants({ variant: 'ghost', size: 'icon-lg' }),
+                'border-none! justify-start w-8 pl-2',
+              )}
               aria-label={
                 mobileParent === ROUTES.library ? 'Quay lại thư viện' : 'Quay lại trang gieo quẻ'
               }
             >
-              <ArrowLeft aria-hidden="true" />
+              <ArrowLeft aria-hidden="true" className="size-4.5" />
             </Link>
           ) : null}
           {mobileParent ? (
