@@ -1,5 +1,7 @@
-# Font asset notices
+# Font notice
 
-The WOFF2 files in this directory are modified subsets of the upstream fonts listed in `README.md`, generated from the exact pinned Google Fonts commit recorded there. All are distributed under the SIL Open Font License 1.1. The complete upstream OFL texts, including each font's copyright line, are included alongside the assets: `Noto-OFL.txt` (Noto Sans and Noto Serif) and `Cinzel-OFL.txt` (Cinzel).
+`source-serif-4-roman.woff2` is an unmodified copy of Adobe's Source Serif 4 variable Roman font. See `README.md` for the pinned upstream source.
 
-The Noto faces were subsetted to Latin/Vietnamese coverage. The verbatim upstream notices are: “Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)” for Noto Sans and Noto Serif, and “Copyright 2020 The Cinzel Project Authors (https://github.com/NDISCOVER/Cinzel)” for Cinzel. Cinzel was subsetted to Latin characters and renamed internally to **Liuyao Cinzel** / **Liuyao-Cinzel** to respect the OFL Reserved Font Name. These files are not the original unmodified upstream fonts. Full upstream OFL texts and notices are retained in the corresponding files above.
+Copyright 2014 - 2023 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe in the United States and/or other countries.
+
+Distributed under the SIL Open Font License 1.1. The complete upstream notice and license are retained in `SourceSerif4-OFL.txt`.
