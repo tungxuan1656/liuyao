@@ -1,7 +1,7 @@
 # task-launch - Launch
 
-- Status: todo
-- Owner: Product Owner (repository maintainer); implementation assigned on selection
+- Status: active
+- Owner: Coding agent (candidate preparation and available checks); Product Owner (release approval and unavailable platform checks)
 - Required to start: [task-quality-hardening](task-quality-hardening.md), [task-production-delivery](task-production-delivery.md), [task-product-polish-and-trust](task-product-polish-and-trust.md)
 - Required to integrate/release: no additional gate recorded; see acceptance
 
@@ -32,6 +32,16 @@ Release candidate is versioned, deployed, smoke-tested, documented, and usable i
 - `docs/product-specs/product-scope.md`
 - `ARCHITECTURE.md`
 
+## Execution plan
+
+Approved on 2026-10-16: prepare F15 on `release/v1-launch`. F13 is closed by explicit owner override, not full verification.
+
+1. Inspect launch contracts and run the baseline checks.
+2. Prepare the web application's 1.0.0 candidate and release notes; retain independent core/knowledge versions.
+3. Verify available repository and browser/PWA checks, record missing gates, commit in parts and open a PR.
+
+Freeze the candidate after implementation. Do not publish a tag, mark README as released, or deploy main before applicable release acceptance.
+
 ## Tasks
 
 - [ ] F15-T01 — Freeze the release candidate revision
@@ -57,6 +67,6 @@ Task details and evidence remain canonical in `docs/product-specs/v1-task-map.md
 
 ## Handoff
 
-- Evidence: —
-- Next: Verify dependencies, then select this feature for implementation.
-- Blockers: not evaluated until owner selection and dependency check.
+- Blockers: none for candidate preparation; full supported-platform QA and production launch acceptance remain required before release.
+- Evidence: all three start dependencies are done; F13 contains explicit owner waivers. Baseline `./init.sh` passed on 2026-10-16 (181 core and 142 knowledge tests).
+- Next: prepare the versioned candidate and release notes, then verify it without claiming public V1 release.
