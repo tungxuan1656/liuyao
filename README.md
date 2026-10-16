@@ -4,7 +4,7 @@
 
 Lập quẻ và tra cứu kiến thức Lục Hào ngay trên thiết bị của bạn.
 
-> **Status:** V1 flows are implemented: six-line casting and entry, deterministic reading facts, a structured knowledge library, Settings, and offline PWA support. Cloudflare preview and main deployment are connected; checked-build activation and launch verification remain pending; automated interpretation is outside the V1 scope.
+> **Status:** Preparing the 1.0.0 web release candidate; V1 is not yet declared released. Casting, deterministic reading facts, the knowledge library, Settings and offline PWA support are implemented. Production delivery is connected; remaining launch checks and accepted delivery risks are recorded in [release notes](docs/release.md#v1-release-candidate). Automated interpretation is outside V1.
 
 ## V1 direction
 

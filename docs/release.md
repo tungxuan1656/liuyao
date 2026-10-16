@@ -9,7 +9,37 @@ This document owns the V1 production delivery, deployment, rollback, and post-de
 - CI verifies repository quality.
 - Cloudflare Pages project `kinhdichluchao` and `https://kinhdichluchao.pages.dev` are the approved host and origin.
 - The existing Cloudflare Git integration automatically builds PR previews and publishes `main` to production. No second deploy workflow is needed.
-- GitHub Cloudflare checks confirm successful PR and main deployments. Hardened host build-command activation and deployed launch verification remain pending.
+- The owner reported checked-command activation. Production checks on 2026-10-16 confirmed main `0c7ebe4bb884ffef750649d4ae468ec91d53f9e0`, canonical metadata and cache/security headers.
+- GitHub reports `main-protection` active. Deployed failing-build rejection, preview recovery and host logging review were waived for F13 closure, not verified.
+
+## V1 release candidate
+
+The web application candidate version is **1.0.0**. This is preparation, not a published release or completed launch acceptance.
+Core and knowledge keep their independent package versions. The selected task owns the frozen candidate SHA and verification evidence.
+
+### Release notes
+
+- Create a six-line reading with coin casting, direct line entry or direct hexagram selection.
+- Inspect primary/changed hexagrams, deterministic Liu Yao facts and linked rule explanations.
+- Browse 64 hexagrams and their 384 positions, eight trigrams, terms, rules, nine topics and four ordered lessons.
+- Search locally, read supplied-book references and use cached knowledge offline after readiness completes.
+- Inspect versions, theme, offline readiness and privacy/licensing/disclaimer information in Settings.
+
+### Known limitations and release risks
+
+- Reading questions and results live in memory only. Reloading or closing the app discards them; there is no saved-reading history.
+- No automated divination conclusions, accounts, cloud sync, backend, analytics SDK or AI service are provided.
+- Offline first visit is unsupported; complete the first online load and wait for readiness. Updates require confirmation to protect active drafts.
+- Source notes preserve book discrepancies and provisional attributions; release preparation is not corpus-wide source certification.
+- Crawling remains blocked. Canonical/og:url describe the shared shell, not individual records; no sitemap or social-card image is published.
+- F13 was force-closed by owner instruction. Deployed failing-build rejection, preview recovery and host logging review remain unverified.
+- Supported-platform launch QA, installed-PWA/update checks and production acceptance must be recorded before calling V1 released.
+
+### Recovery target
+
+Before this candidate, production served `0c7ebe4bb884ffef750649d4ae468ec91d53f9e0` at `https://kinhdichluchao.pages.dev`.
+This SHA identifies the previous source, not a recorded provider deployment ID or tested rollback target.
+Record the successful deployment ID and recovery action before publishing the release; follow [Rollback](#rollback).
 
 ## Environments
 
@@ -84,7 +114,7 @@ Production must not require runtime secrets for V1 core flows.
 Keep:
 
 - product version visible in Settings;
-- full build revision available in Settings → Chi tiết kỹ thuật → Mã bản dựng (`GITHUB_SHA`, otherwise `CF_PAGES_COMMIT_SHA`, otherwise `local`);
+- full build revision available in Settings → Chi tiết kỹ thuật → Mã bản dựng (`CF_PAGES_COMMIT_SHA`, otherwise `GITHUB_SHA`, otherwise `local`);
 - production base paths correct for the selected domain;
 - manifest and canonical metadata pointed at production URLs.
 
