@@ -46,8 +46,7 @@ export default defineConfig({
         'favicon.ico',
         'apple-touch-icon-180x180.png',
         'fonts/NOTICE.md',
-        'fonts/Noto-OFL.txt',
-        'fonts/Cinzel-OFL.txt',
+        'fonts/SourceSerif4-OFL.txt',
       ],
       manifest: {
         lang: 'vi',
