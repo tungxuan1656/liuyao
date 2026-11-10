@@ -8,6 +8,86 @@
   "status": "ready",
   "entries": [
     {
+      "id": "teaching-introduction",
+      "title": "1. Nhận diện và câu hỏi dẫn đường",
+      "text": "Đại Quá, Trạch Phong Đại Quá, là quẻ số 28. Nội quái Tốn, gió, cũng lấy tượng cây, tính nhún; ngoại quái Đoài, chằm, tính duyệt:\n\nThứ tự từ dưới lên: hào 1 Sơ lục, hào 2 Cửu nhị, hào 3 Cửu tam, hào 4 Cửu tứ, hào 5 Cửu ngũ, hào 6 Thượng lục.\n\nBốn dương giữa, hai âm đầu cuối: phần lớn vượt phần nhỏ, giữa mạnh mà gốc ngọn yếu. Đại Quá còn chỉ công việc vượt thường, cần tài khác thường; hai nghĩa không tự đồng nhất với làm quá đạo lý.\n\nCâu hỏi dẫn đường: Khi gánh nặng đã vượt sức nâng thông thường, làm sao tăng khả năng chịu đựng mà không thêm quá cứng, quá mềm hoặc lấy hy sinh thay việc xét sức?",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [472, 474]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [286, 287]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
+      "id": "teaching-judgment",
+      "title": "2.1. Thoán từ và các cách đọc",
+      "text": "Đại Quá: Đống nạo, lợi hữu du vãng, hanh.\n\nDịch: Lớn quá: đòn chịu lực cong xuống; lợi có chỗ tiến hành, hanh thông. Các bản Việt gọi đống là cột; bài dùng đòn chịu lực để giữ chức năng gánh nặng, không dùng cách dựng nhà hiện đại quyết nghĩa cổ.\n\nHai vế đặt nguy cơ và khả năng cùng nhau. Chu Hy giải dương tuy quá nhưng Nhị, Ngũ có trung, trong nhún ngoài duyệt nên còn cách làm. Trình Di và Phan Bội Châu cũng xét trung của Nhị, Ngũ và Tốn–duyệt; họ còn dùng dương thịnh, âm suy theo mô hình quân tử tiến để giải lời thuận. Đây là các bước lập luận khác nhau, không phải cứ thấy tải quá là nên tiến.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [472, 474]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [221, 221]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [287, 288]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
+      "id": "teaching-central-idea",
+      "title": "2.2. Tư tưởng trung tâm",
+      "text": "Thoán truyện nói bản mạt nhược, gốc ngọn yếu, và cương quá nhi trung. Vấn đề không chỉ ít sức: có thể khối giữa rất mạnh nhưng hệ nâng không cân, hoặc người giỏi quá cương khiến không tiếp nhận phần giúp cần thiết. Hai hào về cột sẽ làm rõ khác biệt ấy.\n\nĐại Tượng nói:\n\nTrạch diệt mộc, Đại Quá; quân tử dĩ độc lập bất cụ, độn thế vô muộn.\n\nChằm ngập cây; quân tử đứng riêng không sợ, lui khỏi đời không buồn. Trình Di giải không vì bị chê hoặc không được biết tới mà bỏ điều giữ; Chu Hy cũng lấy không sợ, không buồn làm nết vượt thường. Đây là sức giữ đạo, không phải chứng cứ mọi ý kiến cô độc đều đúng.\n\nNguyễn Hiến Lê nhận xét tên quẻ Đại Quá nhưng các hào răn quá cương, quá nhu, đề cao điều hòa. Tổng hợp của người biên soạn: Công việc vượt thường có thể cần cách làm khác thường mà vẫn hợp lý; nó không miễn kiểm năng lực, hỗ trợ và hậu quả. Sáu hào giúp phân biệt phòng kỹ, gây lại gốc, chịu tải được và vượt sức.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [473, 476]
+        },
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [478, 480]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [223, 223]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
+      "id": "teaching-reading-tools",
+      "title": "3. Công cụ đọc sáu hào",
+      "text": "Tam, Ngũ, Thượng đắc chính; Nhị, Ngũ đắc trung. Sơ–Tứ, Tam–Thượng chính ứng; Nhị–Ngũ cùng dương. Ở thời cương quá, Nhị và Tứ dương cư âm lại được đánh giá tốt vì giúp bớt quá cứng; đúng vị chưa tự tốt hơn sai vị.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [477, 481]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
       "text": "Trạch Phong Đại Quá có ngoại quái Đoài và nội quái Tốn. Hào được đếm từ dưới lên.",
       "references": [
         {
@@ -100,6 +180,74 @@
       "label": "Sơ lục",
       "entries": [
         {
+          "id": "teaching-line-1-text",
+          "title": "Sơ Lục — Quá về kính thận có thể thích hợp — Lời hào",
+          "text": "Sơ Lục: Tạ dụng bạch mao, vô cữu.\n\nDịch: Lót bằng cỏ mao trắng, không lỗi. Tạ là trải lót; bạch mao là vật sạch, mềm dùng đỡ vật khác.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [476, 477]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-1-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Âm vị 1, không chính, ở thấp, đầu Tốn. Mềm bên dưới tạo tượng lớp lót, tính nhún giúp dựng nghĩa kính cẩn vượt thường trước việc nặng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [476, 477]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-1-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di giải đặt vật xuống đất đã được, còn trải thêm là rất thận; vật nhỏ có công dụng giữ an. Chu Hy cũng xem trong thời Đại Quá, quá sợ hãi cẩn thận ở chỗ thấp vẫn không lỗi. Không phải mọi “quá” đều bị cùng một phán đoán.\n\nNguyễn Hiến Lê dẫn lời Hệ Từ mở hình tượng ấy thành cẩn thận để khỏi đổ vỡ. Tổng hợp của người biên soạn: Sơ khác sự hăng vượt sức ở Thượng: phần thêm của Sơ là một điều kiện đỡ, chưa làm tăng gánh vượt khả năng. Cần xét phần cẩn thận có bảo vệ việc thật hay chỉ kéo dài nghi thức.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [476, 477]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-1-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Một việc nhỏ làm đúng chức năng nâng đỡ có thể quan trọng hơn vẻ lớn lao của hành động.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [476, 477]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Nguyễn Hiến Lê dẫn Hệ từ thượng truyện (chương VIII), Khổng Tử giải thích: đặt vật xuống đất cũng đã được, mà còn dùng cỏ mao trắng kê lót thì rất cẩn thận, không sợ gì đổ vỡ nữa. Hào 1 âm nhu ở dưới cùng, nhờ giữ thái độ hết sức kính cẩn, cẩn thận nên không có lỗi.",
           "references": [
             {
@@ -161,6 +309,72 @@
       "polarity": "yang",
       "label": "Cửu nhị",
       "entries": [
+        {
+          "id": "teaching-line-2-text",
+          "title": "Cửu Nhị — Bổ sung ở gốc để có khả năng sống lại — Lời hào",
+          "text": "Cửu Nhị: Khô dương sinh đề, lão phu đắc kỳ nữ thê, vô bất lợi.\n\nDịch: Cây dương khô sinh rễ mới, người chồng già được vợ trẻ, không gì không lợi. Đề được các nguồn dùng giải sự tươi mới từ dưới gốc.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [477, 478]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
+        },
+        {
+          "id": "teaching-line-2-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 2, cương trung, không chính, kề Sơ âm; không chính ứng Ngũ. Ở nhu vị và dùng nhu ở gần giúp điều hòa cương đang quá; mối kề có tác dụng khác cặp ứng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [477, 478]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-2-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di giải quá cương không làm nổi việc, nhưng biết dùng mềm thì có thể gây công vượt thường. Cây khô mọc rễ hàm khả năng nuôi lại phần trên; Chu Hy cũng nhấn tươi dưới rồi mới mọc trên. Lời thuận có căn cứ ở cơ phục hồi thực, khác hoa thoáng nở ở Ngũ.\n\nHình hôn phối được chú giải theo công sinh dục trong quan niệm cổ. Tổng hợp của người biên soạn: Điều giảng ở đây là phối hợp bù được chỗ thiếu để tái tạo năng lực; không từ tượng ấy đề ra chuẩn tuổi tác hay giá trị con người theo khả năng sinh con. Nhị cần nhu để sức mạnh không tự làm mình khô kiệt.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [477, 478]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
+        },
+        {
+          "id": "teaching-line-2-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Phục hồi bền cần phần nuôi lại gốc, không chỉ biểu hiện đẹp xuất hiện ở trên.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [477, 478]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
         {
           "text": "Nguyễn Hiến Lê giảng Cửu Nhị dương cương ở vị âm là cương mà có chút nhu, lại đắc trung, thân cận với hào 1 âm thành ra cương nhu tương tế, bớt cứng đi. Tượng như cây dương khô đâm rễ mới rồi cành lá sẽ tươi tốt, ví với người già lấy được vợ trẻ nên không gì không lợi.",
           "references": [
@@ -228,6 +442,82 @@
       "label": "Cửu tam",
       "entries": [
         {
+          "id": "teaching-line-3-text",
+          "title": "Cửu Tam — Quá cứng khiến trợ giúp không vào được — Lời hào",
+          "text": "Cửu Tam: Đống nạo, hung.\n\nDịch: Đòn chịu lực cong xuống, xấu. Cùng hình lời quẻ nhưng ở đây có lời hung riêng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [478, 479]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-3-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 3, đắc chính, trùng cương, không trung, ở giữa toàn hình chịu tải. Chính ứng Thượng âm nhưng quá cương làm quan hệ không trở thành trợ lực hữu dụng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [478, 479]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 291]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-3-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di giải cứng quá mất trung hòa, mất lòng người nên không gánh nổi việc. Tiểu Tượng bất khả dĩ hữu phụ không chỉ là không ai tồn tại để giúp: người không chịu theo người khác khiến họ không thể gần giúp, như cột đã cong gãy khó đỡ.\n\nPhan Bội Châu trực tiếp hỏi sao bỏ chính ứng Thượng, rồi đáp Tam có chịu nghe ai đâu. Tổng hợp của người biên soạn: Đúng vị và có một mối liên hệ tiềm năng không thay được thái độ tiếp nhận. Nhị giảm cứng để dùng được nhu, Tam giữ cứng tới mức chính sức mạnh ấy làm hỏng khả năng cùng gánh.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [478, 479]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 291]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-3-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Thiếu trợ lực có khi do cách mình làm việc khiến trợ lực không phát huy được, không chỉ do người khác không có tài.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [478, 479]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 222]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 291]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Nguyễn Hiến Lê nhận định Cửu Tam dương ở vị dương là quá cương, toan gánh việc quá lớn trong thời Đại Quá thì cột cong oằn và gãy, việc ắt hỏng. Hào từ xét riêng từng hào nên chê hung; hào này quá cương lại không chịu nhận sự giúp đỡ của hào trên cùng dẫu có quan hệ ứng hợp.",
           "references": [
             {
@@ -290,6 +580,74 @@
       "label": "Cửu tứ",
       "entries": [
         {
+          "id": "teaching-line-4-text",
+          "title": "Cửu Tứ — Đủ mềm để chịu tải, đừng thêm mềm quá — Lời hào",
+          "text": "Cửu Tứ: Đống long, cát; hữu tha, lận.\n\nDịch: Đòn chịu lực vươn vững, tốt; có ý khác thì đáng tiếc. Long đối với nạo: nâng được thay vì cong sụp.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [479, 480]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 291]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-4-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 4, không trung, không chính, gần ngôi tôn; cương ở nhu vị giúp bớt quá. Chính ứng Sơ âm, nhưng thêm nghiêng về âm có thể phá mức đang vừa.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [479, 480]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-4-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di, Chu Hy cùng lấy cương nhu phù hợp để giải gánh nổi trách nhiệm. Hữu tha được họ nối việc xuống quyến Sơ: vốn đã có phần nhu điều hòa, thêm ràng buộc có thể thành quá mềm. Chính ứng vì vậy là điều cần xem cách dùng, không phải lợi tự động.\n\nPhan Bội Châu giải bất nạo hồ hạ là không vì dưới mà nao. Tổng hợp của người biên soạn: Tứ khác Nhị dù đều kề hoặc ứng âm: Nhị cần bù cái khô, Tứ đã giữ được cơ cấu chịu tải nên cần tránh thêm quá. Không thể lấy “cương nhu tương tế” làm công thức cứ tăng nhu là tốt.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [479, 480]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 292]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-4-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Biết bù còn cần biết đủ; phần hỗ trợ thêm có thể làm hỏng một mức cân bằng đang có.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [479, 480]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 292]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Nguyễn Hiến Lê giải thích Cửu Tứ hào dương ở vị âm nên vừa cương vừa nhu, như cây cột lớn vững chãi đỡ nổi nhà, làm được việc lớn không lo thất bại nên được tốt (cát). Tuy nhiên hào ứng với Sơ Lục âm ở dưới, sợ quyến luyến quá mà sinh lòng khác làm lụy đức cương nên Hào từ răn có ý khác thì hối tiếc (hữu tha, lận).",
           "references": [
             {
@@ -351,6 +709,84 @@
       "polarity": "yang",
       "label": "Cửu ngũ",
       "entries": [
+        {
+          "id": "teaching-line-5-text",
+          "title": "Cửu Ngũ — Có hoa chưa chắc đã có sức hồi sinh — Lời hào",
+          "text": "Cửu Ngũ: Khô dương sinh hoa, lão phụ đắc kỳ sĩ phu, vô cữu vô dự.\n\nDịch: Cây dương khô sinh hoa, người vợ già được chồng trai tráng; không lỗi, không được khen. Dự là tiếng khen.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [480, 481]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
+        },
+        {
+          "id": "teaching-line-5-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 5, trung chính, ngôi tôn, không chính ứng Nhị, liền Thượng âm ở cuối. Thời Đại Quá khiến chính vị cương thêm cương; âm cuối cũng không được xem là nguồn bù đủ sức tái sinh.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [481, 481]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-5-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di phân rễ mới giúp cây sống với hoa không chữa phần khô; Ngũ có liên kết nhưng chưa làm nên công vượt thường. Chu Hy nói tượng, chiêm đối với Nhị. Không được thấy cùng khô dương rồi đoán cùng một kiểu phục hồi.\n\nPhan Bội Châu, Nguyễn Hiến Lê cùng nhấn vẻ nở cuối chưa bền. Tổng hợp của người biên soạn: Hình vợ chồng là phép ví trong quan niệm sinh dục cổ; trọng tâm không phải chê người lớn tuổi mà là phân kết hợp tạo thêm sức với kết hợp chỉ có danh, vẻ. Vô cữu chưa đủ thành hữu dự: tránh lỗi khác với tạo được công dụng cần có.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [481, 481]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [292, 292]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Giữ hình ảnh hôn phối và tuổi tác theo phép ví cổ của tác giả, không dự báo khả năng sinh sản hoặc quy định phẩm chất theo giới tính."
+        },
+        {
+          "id": "teaching-line-5-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Một dấu hiệu sáng lên phải được kiểm xem có làm mạnh nền sống hay chỉ tiêu nốt nguồn lực còn lại.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [480, 481]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [292, 292]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
         {
           "text": "Nguyễn Hiến Lê phân tích Cửu Ngũ dương cương trung chính ở ngôi tôn, nhưng thời Đại Quá thì thành ra quá cương. Ở gần Thượng Lục quá nhu không giúp gì được cho nhau, ví như cây dương khô ra hoa cuối mùa sắp tiều tụy, như bà già lấy chồng trai tráng chẳng mong sinh đẻ được; hào 2 đâm rễ mới nên tốt còn hào 5 ra hoa nhựa sắp kiệt nên không chê cũng không khen.",
           "references": [
@@ -418,6 +854,86 @@
       "label": "Thượng lục",
       "entries": [
         {
+          "id": "teaching-line-6-text",
+          "title": "Thượng Lục — Hung và vô cữu có thể xét hai mặt khác nhau — Lời hào",
+          "text": "Thượng Lục: Quá thiệp diệt đính, hung, vô cữu.\n\nDịch: Lội quá, ngập đầu; xấu, không lỗi. Cách hiểu vô cữu khác hẳn giữa Trình Di và Chu Hy, không nên tự thêm “hy sinh cao quý” vào bản dịch sát.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [481, 482]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
+        },
+        {
+          "id": "teaching-line-6-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Âm vị 6, đắc chính nhưng cuối Đại Quá, ở Đoài chằm, sức nhu gặp thế vượt hạn. Tượng lội nước nối trực tiếp với chằm trong toàn quẻ. Không lấy quan hệ đối vị với Tam làm nguyên nhân của lời hung: phần giải Thượng ở các trang dẫn không nêu lý do ấy.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [482, 482]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [293, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
+        },
+        {
+          "id": "teaching-line-6-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Chu Hy giải tài chưa đủ làm việc nhưng xét nghĩa không lỗi, như sát thân thành nhân; Nguyễn Hiến Lê, Phan Bội Châu theo hướng cứu đời gặp thế nguy. Hung đánh giá tổn hại, vô cữu xét ý nghĩa đạo đức, nên không buộc hai lời loại nhau.\n\nTrình Di lại xem đây là tiểu nhân cuồng nóng tự chuốc họa, không còn trách người khác; khác biệt được đối chiếu ở phần 4.1. Tổng hợp của người biên soạn: Dù theo hướng nào, không có lời bảo đảm vượt sức sẽ thành công. Cần tách việc có thể kính trọng một lựa chọn với việc khuyên mọi người lặp lại nó.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [482, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [293, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
+        },
+        {
+          "id": "teaching-line-6-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Kết quả tai hại và đánh giá trách nhiệm là hai câu hỏi; phải xác định đúng tác giả đang trả lời câu nào.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [481, 482]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [293, 293]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          },
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
+        },
+        {
           "text": "Nguyễn Hiến Lê nhận định Thượng Lục bản chất âm nhu, tài hèn mà ở cuối thời Đại Quá muốn làm việc lớn thì rất nguy thân, như người lội qua chỗ nước sâu ngập đầu (quá thiệp diệt đính) nên xấu (hung). Nhưng hành động nguy hiểm ấy là để cứu đời, thuộc hạng người sát thân dĩ thành nhân (hy sinh để thành điều nhân), đáng phục chứ không chê được nên không có lỗi (vô cữu).",
           "references": [
             {
@@ -475,6 +991,257 @@
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
           "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng."
+        }
+      ]
+    }
+  ],
+  "specialPassages": [
+    {
+      "title": "3.7. Tổng hợp sáu hào và phương pháp đọc",
+      "entries": [
+        {
+          "id": "teaching-six-line-summary",
+          "title": "Tổng hợp và cách đọc",
+          "text": "Sơ Lục: Ở nền dưới; yếu tố quyết định: Kính thận thêm; ý nghĩa riêng: Phần nhỏ bảo vệ việc lớn.\nCửu Nhị: Khô nhưng còn cơ sinh; yếu tố quyết định: Nhu giúp cương trung; ý nghĩa riêng: Gây lại gốc.\nCửu Tam: Gánh nặng, quá cứng; yếu tố quyết định: Không nhận được giúp; ý nghĩa riêng: Mạnh riêng chưa đủ chịu tải.\nCửu Tứ: Cương nhu vừa; yếu tố quyết định: Không thêm nghiêng; ý nghĩa riêng: Giữ mức nâng được.\nCửu Ngũ: Có hoa, chưa thêm gốc; yếu tố quyết định: Xét sức bền; ý nghĩa riêng: Biểu hiện khác phục hồi.\nThượng Lục: Vượt hạn tới nguy thân; yếu tố quyết định: Phân kết quả, nghĩa; ý nghĩa riêng: Giữ bất đồng về vô cữu.\n\nTổng hợp của người biên soạn: Nhị–Ngũ so rễ và hoa, Tam–Tứ so cong và nâng; Sơ–Thượng đặt hai kiểu vượt thường khác nhau về sức, chức năng và hậu quả.\n\nPhương pháp đọc Dịch rút ra từ quẻ\n\n1. Cùng tượng ở Thoán từ và Hào từ có phạm vi khác, không bắt buộc cùng lời đoán.\n2. Trung chính và chính ứng chỉ có ích khi phù hợp điều thời đang cần.\n3. Vô cữu cần xác định chủ thể được miễn trách hoặc đối tượng không còn bị đổ lỗi.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [476, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [222, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        }
+      ]
+    },
+    {
+      "title": "4. Những vấn đề sâu và khác biệt chú giải",
+      "entries": [
+        {
+          "id": "teaching-comparison-1",
+          "condition": "Đây là cách đánh giá lời hào trong chú giải cổ. Lời không lỗi không xóa nguy hiểm và không khuyến khích tự gây hại hoặc chấp nhận nguy cơ cho tính mạng.",
+          "title": "4.1. Thượng là người đáng kính hay người tự chuốc họa?",
+          "text": "1. Câu hỏi: Vô cữu là không đáng trách người lội, hay người lội không được trách ai?\n\n2. Các cách giải: Trình Di gọi kẻ tiểu nhân vượt lý, tự làm tự chịu, vô cữu theo nghĩa không thể oán người. Chu Hy nói xét nghĩa không lỗi, sát thân thành nhân. Nguyễn Hiến Lê, Phan Bội Châu theo hướng người cứu đời gặp gian nguy; Phan Bội Châu còn nhấn không oán vì đã cầu nhân.\n\n3. Khác biệt: Đánh giá đạo đức đối với chính người hành động đổi hẳn, không chỉ mức khen. Hai cách còn gặp nhau ở không đổ lỗi nhưng không vì vậy đồng ý nhân vật là quân tử.\n\n4. Kết luận có giới hạn: Bài không hòa giải thành một người vừa được tất cả khen vừa bị tất cả chê. Hào từ vắn chưa chỉ rõ động cơ cứu đời; đó là bước giải của một hướng có tên nguồn.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [482, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [223, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [293, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-comparison-2",
+          "title": "4.2. Vì sao lời quẻ còn hanh mà Tam chỉ hung?",
+          "text": "1. Câu hỏi: Cùng đống nạo có mâu thuẫn lời đoán?\n\n2. Các cách giải: Ở toàn quẻ, cả Trình Di, Chu Hy và Phan Bội Châu đều xét trung của Nhị, Ngũ và Tốn–duyệt. Trình Di và Phan Bội Châu còn xét dương thịnh tạo khả năng làm việc. Riêng Tam trùng cương bất trung, không dùng được trợ lực nên không còn những điều kiện ấy.\n\n3. Khác biệt: Đây là khác phạm vi giải, không phải tranh luận giả giữa các tác giả. Tượng chỉ nguy chưa quyết một kết quả nếu điều kiện toàn thể còn cách khắc phục.\n\n4. Kết luận có giới hạn: Tổng hợp của người biên soạn: Không dùng lời hanh chung để bác lời hung riêng, cũng không lấy một hào hung phủ hết khả năng toàn quẻ. Phải tìm điều kiện nào đã có hoặc mất.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 474]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [478, 479]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [287, 288]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 291]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        }
+      ]
+    },
+    {
+      "title": "5. Bài học nhân sinh và vận dụng",
+      "entries": [
+        {
+          "id": "teaching-application-1",
+          "title": "5.1. Việc tăng gấp đôi thì phải đổi cách chia",
+          "text": "Ví dụ giả định do người biên soạn xây dựng, không phải tình huống có sẵn trong sách. Các trang dẫn hỗ trợ ý nghĩa quẻ được mượn để vận dụng, không phải các bước xử lý hiện đại trong ví dụ.\n\nChuyện thường gặp: Nhóm viết tài liệu nhận gấp đôi số bài. Tuy vậy, mọi bài vẫn chỉ được một người đọc duyệt, nên cả nhóm thường chờ tới khuya mà chưa được làm tiếp.\n\nCách áp dụng:\n\n1. Liệt kê việc nào đang chờ người giỏi nhất quyết.\n2. Giao một phần cho người khác, kèm thông tin và quyền xử lý cần thiết.\n3. Bớt việc chưa cần, theo dõi chỗ vẫn tắc thay vì chỉ yêu cầu làm thêm giờ.\n\nLiên hệ với lời quẻ: Đại Quá dùng cây đỡ chịu quá tải làm tượng. Khi cách nâng yếu, thêm sức làm riêng lẻ chưa đủ; cần sửa nơi công việc đang dồn nặng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 474]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [286, 288]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-application-2",
+          "title": "5.2. Nói trôi chảy rồi thì thử câu hỏi ngoài bài mẫu",
+          "text": "Ví dụ giả định do người biên soạn xây dựng, không phải tình huống có sẵn trong sách. Các trang dẫn hỗ trợ ý nghĩa quẻ được mượn để vận dụng, không phải các bước xử lý hiện đại trong ví dụ.\n\nChuyện thường gặp: Một người học được nhiều câu mẫu để trình bày trôi chảy nhưng gặp câu hỏi mới lại không hiểu nguyên lý.\n\nCách áp dụng:\n\n1. Nhờ bạn đặt một câu hỏi khác những câu đã học thuộc.\n2. Tự giải thích lý do, ghi lại bước mình chưa hiểu.\n3. Quay lại học phần nền ấy rồi thử một câu mới, không chỉ luyện nói mượt hơn.\n\nLiên hệ với lời quẻ: Cửu Nhị sinh mầm ở gốc khác Cửu Ngũ chỉ có hoa. Khả năng hiểu tình huống mới là phần cần nuôi, còn vẻ trình bày chưa chứng nền đã phục hồi.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [477, 478]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [480, 481]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-application-3",
+          "title": "5.3. Chăm người thân thì chia việc để còn chăm lâu dài",
+          "text": "Ví dụ giả định do người biên soạn xây dựng, không phải tình huống có sẵn trong sách. Các trang dẫn hỗ trợ ý nghĩa quẻ được mượn để vận dụng, không phải các bước xử lý hiện đại trong ví dụ.\n\nChuyện thường gặp: Một người nhận hết việc chăm người thân, từ chối mọi hỗ trợ vì nghĩ chia việc là thiếu tận tâm.\n\nCách áp dụng:\n\n1. Ghi đủ việc cần làm trong ngày, gồm cả giờ người chăm được nghỉ.\n2. Hỏi từng người nhận một phần cụ thể như mua đồ, nấu hoặc trông thay.\n3. Giữ lịch thay và báo sớm khi quá sức để điều chỉnh.\n\nLiên hệ với lời quẻ: Đại Quá đặt vấn đề gánh nặng vượt sức. Lòng tận tâm cần một cách chăm có người nâng đỡ; chịu tổn hại càng nhiều chưa bảo đảm việc chăm tốt hơn.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 474]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [286, 288]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        }
+      ]
+    },
+    {
+      "title": "6. Tổng kết và tự kiểm tra",
+      "entries": [
+        {
+          "id": "teaching-recap-1",
+          "title": "6.1. Một câu kết tinh",
+          "text": "Gánh việc vượt thường cần gây lại nền, phối hợp đúng mức và xét sức thật, không lấy cứng cỏi hay hy sinh thay khả năng chịu tải.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [221, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [287, 288]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-recap-2",
+          "title": "6.2. Ba điều cần ghi nhớ",
+          "text": "1. Giữa mạnh mà gốc ngọn yếu vẫn có thể cong sụp.\n2. Nhị–Ngũ, Tam–Tứ cho thấy tác dụng khác của quan hệ và cách dùng cương nhu.\n3. Trình Di và Chu Hy không thống nhất đánh giá người ở Thượng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [221, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [287, 288]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-recap-3",
+          "title": "6.3. Hai ngộ nhận cần tránh",
+          "text": "1. Đại Quá là làm gì cũng nên quá: Quẻ răn chính sự quá cương, quá nhu không thích hợp.\n2. Vô cữu nghĩa là kết quả an toàn: Thượng đồng thời có hung; cần phân điều được đánh giá.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [221, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [287, 288]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-recap-4",
+          "title": "6.4. Ba câu hỏi tự kiểm tra",
+          "text": "1. Vì sao gốc ngọn yếu vẫn đặt cạnh lợi tiến và hanh thông?\n2. Quan hệ với âm giúp Nhị mà có thể làm Tứ lận; điều kiện nào đã khác?\n3. Hai cách giải vô cữu ở Thượng dẫn tới hai đánh giá đạo đức nào, và vì sao không nên gộp chúng?",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [472, 482]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [221, 223]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [287, 288]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [291, 293]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
         }
       ]
     }

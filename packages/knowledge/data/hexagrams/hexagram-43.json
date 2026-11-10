@@ -8,6 +8,86 @@
   "status": "ready",
   "entries": [
     {
+      "id": "teaching-introduction",
+      "title": "1. Nhận diện và câu hỏi dẫn đường",
+      "text": "Quải, Trạch Thiên Quải, là quẻ số 43. Nội quái Càn, trời, tính kiện; ngoại quái Đoài, chằm, tính duyệt:\n\nThứ tự từ dưới lên: hào 1 Sơ cửu, hào 2 Cửu nhị, hào 3 Cửu tam, hào 4 Cửu tứ, hào 5 Cửu ngũ, hào 6 Thượng lục.\n\nQuải là quyết, có nghĩa quyết dứt và khơi tháo, vỡ ra. Trình Di dùng nước chằm lên cao có thế vỡ, cùng năm dương tiến quyết một âm, giải tên. Trong hệ chú giải, đó là quân tử quyết trừ đạo tiểu nhân; không phải phép chứng minh số đông mặc nhiên có chính nghĩa.\n\nCâu hỏi dẫn đường: Khi cần dứt một điều gây hại, làm sao vừa đủ quyết, vừa biết tự sửa, phòng bị và giữ hòa để không biến trừ hại thành làm hại?",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [668, 670]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [415, 416]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [59, 61]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
+      "id": "teaching-judgment",
+      "title": "2.1. Thoán từ và các cách đọc",
+      "text": "Quải: Dương vu vương đình, phu hiệu hữu lệ, cáo tự ấp, bất lợi tức nhung, lợi hữu du vãng.\n\nDịch: Quyết: nêu ở sân vua, thành thực hô gọi, có nguy; báo từ ấp mình; không lợi chuyên tới việc binh, lợi có việc tiến hành. Trong chú giải, điều được nêu là tội hại cần làm rõ, còn cáo tự ấp được mở thành sửa phần mình trước.\n\nDương là nêu rõ, không phải chữ dương chỉ hào. Phu là tín thực; hiệu là hô gọi, ban lời. Lệ giữ sự cảnh giác ngay lúc đang mạnh. Trình Di, Chu Hy cùng hiểu bất lợi tức nhung là không chuyên chuộng uy vũ, chưa phải cứ bỏ hết hành động thì tốt.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [668, 670]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [415, 416]
+        },
+        {
+          "sourceId": "source-book-nhl",
+          "pdfPages": [268, 268]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
+      "id": "teaching-central-idea",
+      "title": "2.2. Tư tưởng trung tâm",
+      "text": "Thoán truyện nói kiện nhi duyệt, quyết nhi hòa: cương kiện mà hòa duyệt, quyết mà hòa. Càn cung cấp sức hành động, Đoài đặt yêu cầu hòa; vì vậy quyết dứt không đồng nghĩa cứng đến không biết nghe, còn hòa không đồng nghĩa giữ nguyên điều sai.\n\nĐại Tượng nói:\n\nTrạch thượng ư thiên, Quải; quân tử dĩ thí lộc cập hạ, cư đức tắc kỵ.\n\nVế đầu khuyên ban lộc tới dưới, để nguồn lợi được thông thay vì tụ hết phía trên. Vế cư đức tắc kỵ chưa được các nhà chú giải hiểu thống nhất; Chu Hy nói chưa rõ, sẽ đối chiếu ở phần 4.2. Không nên đưa một cách dịch thuận vào rồi gọi là cả ba sách đồng ý.\n\nPhan Bội Châu nhấn phe đang thịnh càng phải tự trị và phòng bị; Trình Di nói tự sửa để điều thiện của mình có sức đổi điều bất thiện. Tổng hợp của người biên soạn: Sáu hào phân nóng tiến, biết phòng, mắc tình riêng, thiếu sức, đủ vị mà còn tư và thế cùng. Cùng đứng phía năm dương chưa bảo đảm mỗi người đều xử việc đúng.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [669, 674]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [416, 417]
+        },
+        {
+          "sourceId": "source-book-pbc",
+          "pdfPages": [423, 423]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
+      "id": "teaching-reading-tools",
+      "title": "3. Công cụ đọc sáu hào",
+      "text": "Sơ, Tam, Ngũ, Thượng đắc chính; Nhị, Ngũ đắc trung. Chỉ Tam–Thượng chính ứng; Sơ–Tứ, Nhị–Ngũ cùng dương. Quẻ cho trường hợp chính ứng lại bị răn phải dứt tư tình, còn đắc chính ở Thượng không cứu được thế cùng.",
+      "references": [
+        {
+          "sourceId": "source-book-ntt",
+          "pdfPages": [674, 681]
+        }
+      ],
+      "attribution": {
+        "author": "Người biên soạn"
+      }
+    },
+    {
       "text": "Trạch Thiên Quải có nội quái Càn và ngoại quái Đoài; sáu hào được ghi theo thứ tự từ dưới lên.",
       "references": [
         {
@@ -351,6 +431,74 @@
       "label": "Sơ cửu",
       "entries": [
         {
+          "id": "teaching-line-1-text",
+          "title": "Sơ Cửu — Quyết tâm chưa thay được thế và sức — Lời hào",
+          "text": "Sơ Cửu: Tráng vu tiền chỉ, vãng bất thắng vi cữu.\n\nDịch: Mạnh ở ngón chân tiến trước, đi mà không thắng được thì thành lỗi. Tiểu Tượng đảo thành bất thắng nhi vãng, nhấn phải xét khả năng trước khi đi.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [674, 675]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 418]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-1-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 1, chính, không trung, đầu Càn, không chính ứng Tứ. Tính cương cùng thời quyết làm nóng tiến, trong khi vị thấp chưa đủ sức và điều kiện tự gánh. Ngón chân biểu hiện lực dồn vào bước đi trước.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [674, 675]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-1-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di giải lỗi nằm ở quyết quá, chưa cân nhắc điều có thể làm. Chu Hy cũng lấy ở thấp mà tự dùng hăng làm nguyên nhân không thắng. Đáng trách không phải mọi người thua cuộc, mà là biết chưa đủ khả năng vẫn liều khiến việc chung hỏng.\n\nPhan Bội Châu phân toàn quẻ năm quyết một với riêng Sơ vị thấp sức yếu: thuận thế chung chưa đủ làm nhiệm vụ riêng. Ông đọc lời Tượng như cách phòng lỗi trước lúc đi. Tổng hợp của người biên soạn: Cần biết phần mình có thể làm, chỗ phải phối hợp và tiêu chuẩn đủ chuẩn bị, không chỉ lấy khí thế chung để đo năng lực cá nhân.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [674, 675]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 418]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-1-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Quyết định đúng phải gồm sự liệu sức và chuẩn bị; mục đích đáng làm chưa miễn trách nhiệm về cách làm.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [674, 675]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 418]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Hào ở thấp chưa đủ chuẩn bị; không nên tiến chỉ vì nóng lòng khi thắng lợi chưa chắc.",
           "references": [
             {
@@ -413,6 +561,82 @@
       "label": "Cửu nhị",
       "entries": [
         {
+          "id": "teaching-line-2-text",
+          "title": "Cửu Nhị — Chuẩn bị lúc yên để có thể bình tĩnh lúc biến — Lời hào",
+          "text": "Cửu Nhị: Dịch hào, mộ dạ hữu nhung, vật tuất.\n\nDịch: Lo sợ mà hô gọi; đêm có việc binh, chớ lo. Mộ chỉ chiều tối, đêm. Theo chú thích số 3 dẫn cách đọc của Chu Hy trong bản dịch Ngô Tất Tố, chữ ở hào đọc hào, khác hiệu ở Thoán từ; các chú thích khác chưa thống nhất về số chữ đọc theo mỗi âm.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [675, 676]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [682, 683]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 419]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-2-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 2, trung nhưng bất chính, ở nhu vị trong Càn; không chính ứng Ngũ. Có sức mà được trung, lại không quá cứng, nên cảnh giác có thể thành chuẩn bị chứ không chỉ thúc tiến.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [675, 676]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-2-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di, Chu Hy nối trong lòng biết lo với ngoài có lời cảnh báo, làm sự ngăn ngừa đủ trước khi biến đến. Vật tuất là kết quả của khéo tự xử, không phải bảo vô tâm hoặc hứa đêm nào cũng không nguy. Trình Di khen đạo trung ở đây không làm Nhị đổi thành đắc chính vị.\n\nPhan Bội Châu phân hai lỗi: lúc chưa có việc thì hững hờ, đến lúc có việc lại kinh hoảng. Tổng hợp của người biên soạn: Nhị khác Sơ ở chỗ sức được dùng cho chuẩn bị và phối hợp; người biết lo đúng có thể ít hoảng hơn, vì đã biết sẽ làm gì và ai cần biết việc. Nỗi lo chỉ lặp trong đầu chưa có tác dụng như dịch hào.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [675, 676]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [419, 419]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-2-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Cảnh giác cần thành bước dự phòng và thông tin dùng được; bình tĩnh có thể là kết quả của chuẩn bị.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [675, 676]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [682, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 419]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Cảnh giác và báo cho mọi người chuẩn bị khiến nguy cơ bị đánh bất ngờ ban đêm bớt đáng ngại.",
           "references": [
             {
@@ -474,6 +698,90 @@
       "polarity": "yang",
       "label": "Cửu tam",
       "entries": [
+        {
+          "id": "teaching-line-3-text",
+          "title": "Cửu Tam — Quyết điều sai trong chính mối thân của mình — Lời hào",
+          "text": "Cửu Tam: Tráng vu quỳ, hữu hung; quân tử quải quải, độc hành ngộ vũ, nhược nhu hữu uẩn, vô cữu.\n\nDịch giữ thứ tự bản truyền: Mạnh ở gò má, có hung; quân tử quyết sự quyết, đi một mình gặp mưa, như bị ướt, có giận, không lỗi. Ai giận ai và vị trí các vế được Trình Di, Chu Hy giải khác, xét ở phần 4.1.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 269]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 677]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-3-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 3, chính, trùng cương, không trung, cuối Càn; riêng ứng Thượng âm. Có nguy cơ vừa lộ cương bạo ra mặt, vừa bị quan hệ riêng giữ lại. Hai yếu tố này làm việc quyết khó hơn một khẩu hiệu cùng phe.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 677]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-3-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di, Chu Hy đều lấy gò má làm sức cứng hiện trên nét mặt, chưa phải cách quyết có hòa. Gặp mưa được nối với âm dương tương hợp của Tam–Thượng; chính sự hợp riêng đặt câu hỏi có dứt điều sai khi nó nằm ở người thân không. Vô cữu cần khả năng quyết theo nghĩa thay vì bị tình riêng chi phối.\n\nPhan Bội Châu mở sang việc bề ngoài còn ở gần nhưng lòng giữ chính, Nguyễn Hiến Lê nhấn sửa chỗ thân lầm trước đó. Đây là các bước triển khai, không phải Kinh kể sẵn một vụ nội gián. Tổng hợp của người biên soạn: Quan hệ phải được xét qua hành động có thể kiểm; chỉ tự nhận lòng tốt chưa trả lời nghi ngờ chính đáng của người khác.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 678]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [420, 420]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [423, 423]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 269]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-3-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Dứt điều sai thường khó nhất ở mối có tình riêng; sự cương bạo trên mặt chưa chứng minh đã quyết được trong lòng.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 269]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 678]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [420, 420]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [423, 423]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
         {
           "text": "Ông nói cụm mở đầu khó hiểu và sách giải khác nhau; cách ông đọc sự kết giao riêng với hào trên là một cách giải, không phải nghĩa chữ đã xác định.",
           "references": [
@@ -540,6 +848,86 @@
       "label": "Cửu tứ",
       "entries": [
         {
+          "id": "teaching-line-4-text",
+          "title": "Cửu Tứ — Biết theo sau có thể là cách tham gia đúng sức — Lời hào",
+          "text": "Cửu Tứ: Đồn vô phu, kỳ hành tư thư, khiên dương hối vong, văn ngôn bất tín.\n\nDịch: Mông không da, đi chật vật; dắt dê thì hối mất, nghe lời mà không tin. Phu được Phan Bội Châu giải phần thịt dưới da; tư thư có bản phiên từ thư, chỉ dáng khó đi.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 270]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [678, 679]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [421, 421]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-4-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 4, bất trung bất chính, đầu Đoài; không chính ứng Sơ. Dương ở nhu vị được lời chú dùng giải thiếu quyết: dưới đều tiến nên không ngồi yên, muốn theo lại chưa đủ sức, thành cả đứng lẫn đi đều khó.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [678, 679]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-4-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di giải tự kéo theo đàn cùng đi; Chu Hy cụ thể hóa người dắt dê nên để dê trước, mình theo sau. Phan Bội Châu, Nguyễn Hiến Lê cũng chọn nhường người khác tiến trước, tiếp phần mình. Hối vong là một đường sửa còn mở, không khẳng định Tứ đã làm theo.\n\nVăn ngôn bất tín chỉ chỗ khó: vừa muốn tiến cho bằng người, vừa không đủ sáng để nhận lời. Tổng hợp của người biên soạn: Tứ không nhất thiết phải thành người dẫn đầu mới có ích. Nghe được giới hạn của mình và làm tốt vai hỗ trợ có thể giúp cả nhóm hơn cố giành nhịp của người mạnh hơn; nhưng không biến theo sau thành miễn suy xét điều nhóm đang làm.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [678, 678]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [421, 421]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-4-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Nhận đúng vai không phải tự hạ giá trị; điều đáng ngại là thiếu sức mà còn từ chối lời chỉ đường có căn cứ.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 270]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [678, 679]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [421, 421]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Hào bốn không vững và tiến khó; theo người khác thay vì dẫn đầu có thể tránh hối, nếu chịu nghe lời.",
           "references": [
             {
@@ -602,6 +990,78 @@
       "label": "Cửu ngũ",
       "entries": [
         {
+          "id": "teaching-line-5-text",
+          "title": "Cửu Ngũ — Đủ tài đức vẫn phải xét chỗ mình đang thiên vị — Lời hào",
+          "text": "Cửu Ngũ: Nghiễn lục quải quải, trung hành vô cữu.\n\nDịch giữ tượng: Rau nghiễn lục, quyết sự quyết; theo trung đạo thì không lỗi. Các bản giải nghiễn lục là rau sam, dùng đặc điểm cảm khí âm và dễ dứt để dựng nghĩa; không phải lời khuyên thực vật học.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [679, 680]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-5-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Dương vị 5, trung chính, ngôi chủ quyết, gần Thượng âm duyệt. Không ứng Nhị vì cùng dương; mối kề Thượng mới là vấn đề. Người có trách nhiệm chính vẫn có thể bị điều thân cận làm thiên lệch.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [679, 680]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-5-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di giải cần dễ dứt chỗ vướng như rau sam; Chu Hy thêm không quá dữ để hợp trung đạo. Không chỉ hỏi đã trừ được chưa, mà phải hỏi có dùng quá sức trong việc trừ không. Đắc trung là nền có sẵn, trung hành còn là cách thật sự phải làm.\n\nTiểu Tượng trung vị quang giữ mức đánh giá: bên ngoài có thể đúng mà lòng còn chút muốn riêng thì đạo trung chưa sáng rộng. Phan Bội Châu nhấn nếu mầm tư còn, điều xấu có thể sinh lại. Tổng hợp của người biên soạn: Tam vướng mối ứng, Ngũ vướng thân cận; càng có quyền quyết càng cần kiểm chỗ mình đang ưu ái và tiêu chuẩn mình có áp đều không.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [679, 680]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [422, 422]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-5-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Quyết đúng một lần chưa chứng lòng đã hết tư; cần giữ tiêu chuẩn nhất quán cả với người gần mình.",
+          "references": [
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [679, 680]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [422, 422]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
           "text": "Hình ảnh rau sam chỉ hào âm gần bên; cần dứt sự bịn rịn với hào trên cùng và giữ đường giữa theo cách giải của tác giả.",
           "references": [
             {
@@ -663,6 +1123,90 @@
       "polarity": "yin",
       "label": "Thượng lục",
       "entries": [
+        {
+          "id": "teaching-line-6-text",
+          "title": "Thượng Lục — Chỗ dựa của một đường gây hại đã cùng — Lời hào",
+          "text": "Thượng Lục: Vô hào, chung hữu hung.\n\nDịch theo hướng chú giải: Kêu cũng không ích, cuối có hung. Mặt chữ là không kêu; Trình Di nói không cần kêu gào, Chu Hy giải không còn ai để kêu nhờ.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [681, 682]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-6-position",
+          "title": "Thời – Vị – Tượng",
+          "text": "Âm vị 6, đắc chính kỹ thuật nhưng không trung, cuối Quải, một âm trên năm dương. Có chính ứng Tam, song trong nghĩa quẻ Tam phải quyết điều sai, không nên thành viện trợ bảo vệ nó. Thế cô không có nghĩa hình quẻ bỗng mất cặp ứng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 677]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [681, 681]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-6-explanation",
+          "title": "Vì sao Hào từ nói như vậy?",
+          "text": "Trình Di, Chu Hy giải đường âm tiểu nhân đã tới cùng nên không duy trì lâu. Phan Bội Châu, Nguyễn Hiến Lê có lời triển khai tới chết; riêng Trình Di trả lời rõ quyết trừ đạo tiểu nhân không phải giết hết, có thể làm người ấy thay đổi. Không nên lấy cách triển khai mạnh nhất làm nghĩa duy nhất của chữ hung.\n\nChu Hy còn răn người chiêm phải thật có đạo quân tử, nếu không thì phía chịu hung có thể đổi. Tổng hợp của người biên soạn: Như vậy tự nhận mình thuộc số đông hay phe đúng chưa đủ dùng lời hào để kết án đối phương. Vận dụng cần xác định hành vi gây hại, chứng cứ và cách chấm dứt hành vi ấy, không dựng một loại người phải bị tiêu diệt.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [681, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [422, 422]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-line-6-takeaway",
+          "title": "Điều cần ghi nhớ",
+          "text": "Điều cần quyết là đường gây hại; sự thay đổi của người và sự chấm dứt điều sai có thể đi cùng.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 677]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [681, 682]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [422, 422]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
         {
           "text": "Hào âm cô độc ở trên không có người cứu giúp; Nguyễn Hiến Lê kết lời hào bằng hình ảnh người ấy cuối cùng sẽ chết.",
           "references": [
@@ -730,6 +1274,264 @@
             "via": "Ngô Tất Tố — dịch và chú giải"
           },
           "condition": "Đây là lời giải cổ của Chu Hy; không đọc như dự báo cho cá nhân hiện đại."
+        }
+      ]
+    }
+  ],
+  "specialPassages": [
+    {
+      "title": "3.7. Tổng hợp sáu hào và phương pháp đọc",
+      "entries": [
+        {
+          "id": "teaching-six-line-summary",
+          "title": "Tổng hợp và cách đọc",
+          "text": "Sơ Cửu: Hăng hơn sức thực; yếu tố quyết định: Liệu trước khi tiến; ý nghĩa riêng: Thế chung chưa là tài riêng.\nCửu Nhị: Cương mà có trung; yếu tố quyết định: Phòng bị lúc yên; ý nghĩa riêng: Bình tĩnh có chuẩn bị.\nCửu Tam: Vướng mối ứng riêng; yếu tố quyết định: Quyết theo nghĩa; ý nghĩa riêng: Đừng nhầm nét mặt với lòng.\nCửu Tứ: Tiến dở, ở không yên; yếu tố quyết định: Tin lời, nhận vai; ý nghĩa riêng: Theo sau vẫn có công dụng.\nCửu Ngũ: Chủ quyết, gần đối tượng; yếu tố quyết định: Trung hành, bớt tư; ý nghĩa riêng: Đúng ngoài chưa hết mầm trong.\nThượng Lục: Đường gây hại thế cùng; yếu tố quyết định: Không còn nền duy trì; ý nghĩa riêng: Hung chưa chỉ một kết cục.\n\nTổng hợp của người biên soạn: Nhị khác Sơ ở phòng bị; Tam và Ngũ cùng cần quyết mối riêng nhưng khác quan hệ; Tứ có đường sửa bằng nghe. Lời răn tập trung cả ở phía đang mạnh, không chỉ phía bị quyết.\n\nPhương pháp đọc Dịch rút ra từ quẻ\n\n1. Tách sức của toàn quẻ với khả năng thật của một hào.\n2. Chính ứng, đắc chính chưa quyết giá trị đạo đức của một quan hệ hay hành động.\n3. Giữ riêng văn bản đang có, đề nghị đổi thứ tự và lời diễn nghĩa sau khi đổi.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [674, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 423]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        }
+      ]
+    },
+    {
+      "title": "4. Những vấn đề sâu và khác biệt chú giải",
+      "entries": [
+        {
+          "id": "teaching-comparison-1",
+          "title": "4.1. Có cần đảo câu Tam để hiểu người giận là ai?",
+          "text": "1. Câu hỏi: Nhược nhu hữu uẩn nối liền với gặp mưa hay với quyết dứt quan hệ?\n\n2. Các cách giải: Trình Di nghi lời hào sai thứ tự, bàn cả đề nghị Hồ An Định rồi đề nghị sắp lại; ông giải người quân tử như bị làm ướt bẩn nên giận mà quyết dứt. Chu Hy giữ thứ tự bản truyền, giải Tam bị các quân tử giận vì còn gần Thượng nhưng cuối vẫn quyết được. Phan Bội Châu, Nguyễn Hiến Lê gần hướng Tam chịu người khác giận.\n\n3. Khác biệt: Đổi thứ tự kéo theo đổi chủ thể của giận và quan hệ giữa các vế. Đây là nghi vấn văn bản có ảnh hưởng nghĩa, không chỉ hai cách diễn đạt cùng một chuyện.\n\n4. Kết luận có giới hạn: Bài giữ thứ tự theo Nguyễn Hiến Lê, không tự hiệu đính Kinh; giới thiệu đề nghị Trình Di như đề nghị. Các bản đang có chưa đủ xác định lịch sử truyền chép hoặc kết một nhân vật duy nhất mang mọi nét của các lời chú.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [676, 678]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [419, 420]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 269]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-comparison-2",
+          "title": "4.2. Cư đức tắc kỵ là giữ đức có phòng hay đừng giữ ơn lại?",
+          "text": "1. Câu hỏi: Vế cuối Đại Tượng tiếp hay đối ý với ban lộc xuống dưới?\n\n2. Các cách giải: Trình Di đọc ở yên với đức và có phép ngừa; Phan Bội Châu giải an ở đạo đức mà thường kiêng sợ. Trương Trung Khê được bản dịch Ngô Tất Tố dẫn giải ngừng đức, không ban ơn xuống là điều phải kiêng. Chu Hy nói chưa rõ; Hồ Vân Phong phê các cách giải và khen để khuyết.\n\n3. Khác biệt: Chữ cư mang nghĩa ở hay giữ chứa; tắc kỵ được nối thành sự phòng ngừa hoặc lời chê việc giữ lại. Cùng cảnh báo thế vỡ chưa có nghĩa đã thống nhất cú pháp.\n\n4. Kết luận có giới hạn: Có thể xác định vế thí lộc cập hạ khuyên nguồn lợi tới dưới. Vế sau cần giữ mức chưa rõ của Chu Hy, không ép thành một bản dịch chắc chắn rồi gán cho cả ba nguồn.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [673, 674]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [683, 683]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [417, 417]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        }
+      ]
+    },
+    {
+      "title": "5. Bài học nhân sinh và vận dụng",
+      "entries": [
+        {
+          "id": "teaching-application-1",
+          "title": "5.1. Muốn bớt mua theo hứng thì chuẩn bị trước lúc dễ mua",
+          "text": "Ví dụ giả định do người biên soạn xây dựng, không phải tình huống có sẵn trong sách. Các trang dẫn hỗ trợ ý nghĩa quẻ được mượn để vận dụng, không phải các bước xử lý hiện đại trong ví dụ.\n\nChuyện thường gặp: Một người muốn ngừng mua theo cảm xúc, xóa ứng dụng rồi lại cài khi mệt và tiếp tục tự nhận mình thiếu ý chí.\n\nCách áp dụng:\n\n1. Ghi lúc mình thường mua, chẳng hạn tối mệt hoặc sau khi buồn.\n2. Để món muốn mua vào danh sách chờ, rời màn hình và nghỉ trước.\n3. Hôm sau xem còn cần không; nếu cứ phá hẹn thì sửa cách nghỉ và chặn lối mua dễ nhất.\n\nLiên hệ với lời quẻ: Quải coi trọng quyết nhưng cũng cần liệu sức và phòng trước. Một lời thề mạnh khó giữ nếu những lúc dễ quay lại thói quen vẫn không được chuẩn bị.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [674, 676]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [418, 419]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [269, 269]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-application-2",
+          "title": "5.2. Chia việc công bằng thì đừng để cơn giận xóa lịch",
+          "text": "Ví dụ giả định do người biên soạn xây dựng, không phải tình huống có sẵn trong sách. Các trang dẫn hỗ trợ ý nghĩa quẻ được mượn để vận dụng, không phải các bước xử lý hiện đại trong ví dụ.\n\nChuyện thường gặp: Trong nhà, một người liên tục được miễn việc vì mọi người ngại họ nổi giận; phần còn lại dồn lên một người vốn ít phản đối.\n\nCách áp dụng:\n\n1. Cùng ghi công việc và khả năng thực tế của từng người.\n2. Chia phần rõ, ai cần đổi phải nói sớm và nhận phần thay phù hợp.\n3. Khi có người nổi giận, tạm nghỉ lời qua lại rồi trở lại thỏa thuận đã ghi.\n\nLiên hệ với lời quẻ: Quải quyết mà vẫn hòa, lại nhắc xét phía mình. Giữ lời tôn trọng cần đi cùng sửa sự thiên vị đang đẩy việc lên người ít phản đối.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [669, 671]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [679, 680]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [416, 416]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [422, 422]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [268, 268]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [270, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-application-3",
+          "title": "5.3. Đặt đồ chung thì ghi rõ ai đã đóng tiền",
+          "text": "Ví dụ giả định do người biên soạn xây dựng, không phải tình huống có sẵn trong sách. Các trang dẫn hỗ trợ ý nghĩa quẻ được mượn để vận dụng, không phải các bước xử lý hiện đại trong ví dụ.\n\nChuyện thường gặp: Nhóm đặt áo chung, mọi người chỉ nhắn đã chuyển tiền trong cuộc trò chuyện. Tới lúc thanh toán, người giữ tiền không biết khoản nào của ai, nhưng cả nhóm ngại thêm việc ghi chép.\n\nCách áp dụng:\n\n1. Lập danh sách tên, số áo, số tiền và người nhận tiền.\n2. Chỉ đánh dấu đã đóng khi người giữ tiền xác nhận; hỏi riêng khoản còn chưa rõ.\n3. Cho nhóm xem danh sách trước khi đặt, rồi giữ lại xác nhận để tra sau.\n\nLiên hệ với lời quẻ: Quải cần công khai điều phải sửa và có cách thực hiện. Muốn bỏ cách ghi thiếu căn cứ thì cần một cách mới đơn giản mà cả người giao lẫn người nhận làm được.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [668, 670]
+            },
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [675, 676]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [415, 416]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [268, 268]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        }
+      ]
+    },
+    {
+      "title": "6. Tổng kết và tự kiểm tra",
+      "entries": [
+        {
+          "id": "teaching-recap-1",
+          "title": "6.1. Một câu kết tinh",
+          "text": "Quải đúng là quyết điều gây hại bằng lý do rõ, tự sửa và chuẩn bị đủ, đồng thời giữ trung hòa để sức mạnh không trở thành nguồn hại mới.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [668, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [415, 423]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [268, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-recap-2",
+          "title": "6.2. Ba điều cần ghi nhớ",
+          "text": "1. Cương quyết cần hòa và cảnh giác, kể cả khi thế chung đang thuận.\n2. Liệu sức, phòng bị, dứt tư tình và nhận vai là những công việc khác nhau.\n3. Trừ đạo tiểu nhân trong lời Trình Di chưa đồng nghĩa giết người bị coi là tiểu nhân.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [668, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [415, 423]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [268, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-recap-3",
+          "title": "6.3. Hai ngộ nhận cần tránh",
+          "text": "1. Năm thắng một thì không cần thận trọng: Lời quẻ và các hào đều răn chính phía đang mạnh.\n2. Ngũ trung chính nên đã hết tư: Tiểu Tượng vẫn giữ trung vị quang, cần xét cả tâm lẫn việc.",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [668, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [415, 423]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [268, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
+        },
+        {
+          "id": "teaching-recap-4",
+          "title": "6.4. Ba câu hỏi tự kiểm tra",
+          "text": "1. Vì sao lợi hữu du vãng cùng đứng với bất lợi tức nhung và quyết nhi hòa?\n2. Vì sao Nhị không lo nhờ biết lo, Tứ cần theo sau, còn Tam và Ngũ phải quyết mối riêng?\n3. Nếu cần chấm dứt một cách làm sai, bạn sẽ chuẩn bị chứng cứ, phần tự sửa và đường thay thế như thế nào để không chỉ dựa khí thế?",
+          "references": [
+            {
+              "sourceId": "source-book-ntt",
+              "pdfPages": [668, 682]
+            },
+            {
+              "sourceId": "source-book-pbc",
+              "pdfPages": [415, 423]
+            },
+            {
+              "sourceId": "source-book-nhl",
+              "pdfPages": [268, 270]
+            }
+          ],
+          "attribution": {
+            "author": "Người biên soạn"
+          }
         }
       ]
     }

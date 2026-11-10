@@ -186,6 +186,84 @@ describe('authored corpus integration', () => {
     ).toBe(true);
   });
 
+  it.each([
+    [
+      'hexagram-01',
+      [
+        'Dụng cửu',
+        'Tượng của đoạn Dụng',
+        'Văn Ngôn: tu đức và hành động hợp thời',
+        'Phụ Lục — các cách đọc được NHL dẫn',
+      ],
+    ],
+    ['hexagram-02', ['Dụng lục', 'Tượng của đoạn Dụng', 'Văn Ngôn: tu đức và hành động hợp thời']],
+    ['hexagram-28', []],
+    ...expectedHexagramIds
+      .filter(id => !['hexagram-01', 'hexagram-02', 'hexagram-28'].includes(id))
+      .map(id => [id, []]),
+  ])(
+    '%s presents teaching first without replacing classical commentary or anchors',
+    (id, classicalTitles) => {
+      const record = hexagrams.find(record => record.id === id);
+      expect(record.entries.slice(0, 4).map(entry => entry.id)).toEqual([
+        'teaching-introduction',
+        'teaching-judgment',
+        'teaching-central-idea',
+        'teaching-reading-tools',
+      ]);
+      const pilot = ['hexagram-01', 'hexagram-02', 'hexagram-28'].includes(id);
+      expect(record.entries.slice(4).length).toBeGreaterThanOrEqual(pilot ? 5 : 4);
+      const additions = [...record.entries.slice(0, 4)];
+      for (const line of record.lines) {
+        expect(line.entries.slice(0, 4).map(entry => entry.id)).toEqual(
+          ['text', 'position', 'explanation', 'takeaway'].map(
+            part => `teaching-line-${line.position}-${part}`,
+          ),
+        );
+        const authors = line.entries.slice(4).map(entry => entry.attribution?.author);
+        expect(authors.slice(0, 3)).toEqual(['Nguyễn Hiến Lê', 'Phan Bội Châu', 'Trình Di']);
+        if (pilot)
+          expect(authors).toEqual(['Nguyễn Hiến Lê', 'Phan Bội Châu', 'Trình Di', 'Chu Hy']);
+        additions.push(...line.entries.slice(0, 4));
+      }
+      expect(
+        record.specialPassages.slice(0, classicalTitles.length).map(section => section.title),
+      ).toEqual(classicalTitles);
+      const study = record.specialPassages.slice(classicalTitles.length);
+      expect(study.map(section => section.title)).toEqual([
+        '3.7. Tổng hợp sáu hào và phương pháp đọc',
+        '4. Những vấn đề sâu và khác biệt chú giải',
+        '5. Bài học nhân sinh và vận dụng',
+        '6. Tổng kết và tự kiểm tra',
+      ]);
+      expect(study[2].entries).toHaveLength(3);
+      expect(study[3].entries).toHaveLength(4);
+      for (const example of study[2].entries) expect(example.text).toContain('Ví dụ giả định');
+      additions.push(...study.flatMap(section => section.entries));
+      for (const entry of additions) {
+        expect(entry.attribution).toEqual({ author: 'Người biên soạn' });
+        expect(entry.references.length).toBeGreaterThan(0);
+        expect(entry.text).not.toMatch(/[\p{Script=Han}]|```|\*\*|^#{1,6} |^\||\bmục [ABCD]\b/mu);
+      }
+      if (id === 'hexagram-01') {
+        for (const anchor of ['structure', 'nhl-overview', 'pbc-overview', 'ntt-overview'])
+          expect(record.entries.some(entry => entry.id === anchor)).toBe(true);
+      }
+      if (id === 'hexagram-26') {
+        const comparison = study[1].entries.find(entry => entry.id === 'teaching-comparison-1');
+        expect(comparison.text).toContain('đổi viết thành nhật');
+        expect(comparison.text).not.toContain('nhật nên đọc là viết');
+      }
+      if (id === 'hexagram-28') {
+        const safety = record.lines[5].entries[4].condition;
+        expect(safety).toContain('không khuyến khích tự gây hại');
+        expect(study[1].entries[0].condition).toBe(safety);
+        for (const entry of record.lines[5].entries.slice(0, 4))
+          expect(entry.condition).toBe(safety);
+      }
+    },
+  );
+
   it('accepts every published asset with the runtime schema validator', () => {
     for (const record of records.filter(r => r.status === 'ready'))
       expect(validateRuntime(record), record.id).toBe(true);
