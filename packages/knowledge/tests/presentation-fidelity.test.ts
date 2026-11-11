@@ -11,8 +11,10 @@ async function authored(path: string): Promise<ContentRecord> {
 
 describe('released presentation fidelity', () => {
   it.each([
-    'hexagrams/hexagram-01',
-    'hexagrams/hexagram-44',
+    ...Array.from(
+      { length: 64 },
+      (_, index) => `hexagrams/hexagram-${String(index + 1).padStart(2, '0')}`,
+    ),
     'liuyao/advancing-retreating-spirits',
     'liuyao/na-jia',
     'foundations/pbc-image-plates',
