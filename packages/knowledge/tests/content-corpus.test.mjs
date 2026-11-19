@@ -221,7 +221,19 @@ describe('authored corpus integration', () => {
           ),
         );
         const authors = line.entries.slice(4).map(entry => entry.attribution?.author);
-        expect(authors.slice(0, 3)).toEqual(['Nguyễn Hiến Lê', 'Phan Bội Châu', 'Trình Di']);
+        if (id === 'hexagram-46' && line.position === 2) {
+          // The edition labels both passages Chu Hy; the summaries do not settle authorship.
+          expect(authors).toEqual([
+            'Nguyễn Hiến Lê',
+            'Phan Bội Châu',
+            'Người biên soạn',
+            'Người biên soạn',
+          ]);
+          for (const entry of line.entries.slice(6))
+            expect(entry.attribution.via).toBe('Ngô Tất Tố — bản in gắn nhãn Chu Hy');
+        } else {
+          expect(authors.slice(0, 3)).toEqual(['Nguyễn Hiến Lê', 'Phan Bội Châu', 'Trình Di']);
+        }
         if (pilot)
           expect(authors).toEqual(['Nguyễn Hiến Lê', 'Phan Bội Châu', 'Trình Di', 'Chu Hy']);
         additions.push(...line.entries.slice(0, 4));
